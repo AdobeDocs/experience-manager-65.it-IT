@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione delle finestre di dialogo degli errori
 seo-title: Personalizzazione delle finestre di dialogo degli errori
-description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro AEM Forms di LiveCycle per aggiungere descrizioni di errore diverse.
-seo-description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro AEM Forms di LiveCycle per aggiungere descrizioni di errore diverse.
+description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro di LiveCycle  AEM Forms per aggiungere descrizioni di errore diverse.
+seo-description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro di LiveCycle  AEM Forms per aggiungere descrizioni di errore diverse.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,11 +19,11 @@ ht-degree: 4%
 
 # Personalizzazione delle finestre di dialogo degli errori {#customizing-error-dialogs}
 
-L’area di lavoro AEM Forms consente di personalizzare le finestre di dialogo degli errori. Per personalizzare l’area di lavoro dei AEM Forms, eseguite i passaggi [](/help/forms/using/generic-steps-html-workspace-customization.md) Generici, seguiti dai passaggi indicati di seguito, per personalizzare le finestre di dialogo degli errori.
+’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Per personalizzare le finestre di dialogo degli errori, eseguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md), quindi eseguite i passaggi indicati di seguito.
 
 ## Personalizzazione del testo {#customizing-text}
 
-1. Nel `/apps/ws/locales/en-US/translation.json` file, modificate i valori di `wserror` in base ai valori personalizzati. Ad esempio:
+1. Nel file `/apps/ws/locales/en-US/translation.json`, modificate i valori di `wserror` in base ai valori personalizzati. Esempio:
 
    ```json
    "wserror" : {
@@ -51,9 +51,9 @@ L’area di lavoro AEM Forms consente di personalizzare le finestre di dialogo d
    >
    >Aggiungete le coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
-## Personalizzazione dei CSS {#customizing-css}
+## Personalizzazione di CSS {#customizing-css}
 
-1. Per aggiornare la finestra di dialogo, l’intestazione, l’area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali, è possibile aggiungere nel `/apps/ws/css/newStyle.css` file il seguente frammento:
+1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali aggiungendo il seguente frammento nel file `/apps/ws/css/newStyle.css`:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +188,7 @@ L’area di lavoro AEM Forms consente di personalizzare le finestre di dialogo d
    }
    ```
 
-1. Per l&#39;estensione del pulsante della barra del piede, separare le estensioni `.error-dialog` e `.foot-bar` il pulsante dall&#39;elenco composito. Per apportare questa modifica, aggiungere quanto segue nel file newStyle.css:
+1. Per l&#39;estensione del pulsante della barra del piede, separare le estensioni dei pulsanti `.error-dialog` e `.foot-bar` dall&#39;elenco composito. Per apportare questa modifica, aggiungere quanto segue nel file newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -225,7 +225,7 @@ L’area di lavoro AEM Forms consente di personalizzare le finestre di dialogo d
 
 >[!NOTE]
 >
->Se fate riferimento ad altre immagini, aggiungetele alla gerarchia desiderata sotto `/apps/ws/images`.
+>Se fate riferimento a immagini aggiuntive, aggiungetele alla gerarchia desiderata in `/apps/ws/images`.
 
 ## Esempi {#examples}
 
