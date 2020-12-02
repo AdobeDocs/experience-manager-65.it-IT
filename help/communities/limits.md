@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Limiti Di Contributo {#member-contribution-limits}
+# Limiti contributi membri {#member-contribution-limits}
 
 ## Panoramica {#overview}
 
@@ -26,11 +26,11 @@ La funzione Limiti contributi permette di limitare i contributi dei membri della
 
 Quando un membro è limitato, qualsiasi post che supera il numero consentito di contributi darà luogo a un avviso in cui viene segnalato che il limite è stato superato e il post viene rifiutato. Il membro della comunità può quindi rivolgersi al centro di messaggi della Comunità e contattare un responsabile della comunità, che può rimuovere i limiti se necessario.
 
-I limiti dei contributi possono essere attivati singolarmente dalla console [](members.md) Membri e/o configurati per essere attivati automaticamente quando i visitatori del sito diventano nuovi membri.
+I limiti dei contributi possono essere attivati individualmente dalla [console Membri](members.md) e/o configurati in modo da essere automaticamente attivati quando i visitatori del sito diventano nuovi membri.
 
 Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in modo proattivo per un membro da un manager della community in qualsiasi momento, o rimossi in modo reattivo quando un membro invia un messaggio a un manager della community che effettua tale richiesta.
 
-## Configurazione Limiti Di Contributo Generati Dall’Utente AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+##  Configurazione Limiti di contributi di contenuto generati dagli utenti AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Questa configurazione OSGi:
 
@@ -42,18 +42,18 @@ Per raggiungere questa configurazione OSGi:
 
 * Nell&#39;editore principale:
 * Effettuate l&#39;accesso con privilegi di amministratore.
-* Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web.
+* Accedere alla [console Web](../../help/sites-deploying/configuring-osgi.md).
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Individua `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Individuare `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selezionate l’icona di modifica.
 
 ![configure-limits](assets/configure-limits.png)
 
 * **[!UICONTROL Applica automaticamente limiti contributi UGC]**
 
-   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere attivato/disabilitato dalla console [](members.md)dei membri. I nuovi membri con un indirizzo e-mail da un  inserire nell&#39;elenco Consentiti di domini non sono mai vincolati.
+   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Questo si riflette nel profilo del membro della community e può essere abilitato/disabilitato dalla [console dei membri](members.md). I nuovi membri con un indirizzo e-mail da un  inserire nell&#39;elenco Consentiti di domini non sono mai vincolati.
 
    Il valore predefinito è deselezionato.
 
@@ -73,7 +73,7 @@ Per raggiungere questa configurazione OSGi:
 
    Un  elenco inserire nell&#39;elenco Consentiti di uno o più domini e-mail. Selezionate l’icona + per aggiungere altre voci.
 
-   Gli utenti con indirizzi e-mail nel inserire nell&#39;elenco Consentiti  di domini non vengono interessati dall’applicazione automatica dei limiti di contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail non `me@mycompany.com` viene mai imposto il divieto di pubblicazione.
+   Gli utenti con indirizzi e-mail nel inserire nell&#39;elenco Consentiti  di domini non vengono interessati dall’applicazione automatica dei limiti di contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail `me@mycompany.com` non viene mai imposto il divieto di pubblicazione.
 
    Il valore predefinito è un inserire nell&#39;elenco Consentiti  vuoto.
 
