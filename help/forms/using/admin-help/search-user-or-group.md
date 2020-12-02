@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f345e42c-82d9-4970-9169-156ea4505097
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
@@ -18,5 +21,5 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 # Cercare un utente o un gruppo {#search-for-a-user-or-group}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Utenti e gruppi.
-1. Specificate le informazioni per limitare la ricerca e fate clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Potete ordinare l’elenco facendo clic su una delle intestazioni di colonna. Vengono restituiti al massimo 1000 risultati.
+1. Specificate le informazioni per limitare la ricerca e fate clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Potete ordinare l’elenco facendo clic su una delle intestazioni di colonna. Viene restituito un massimo di 1000 risultati.
 
