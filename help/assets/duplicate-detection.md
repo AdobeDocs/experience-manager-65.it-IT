@@ -11,13 +11,13 @@ ht-degree: 0%
 ---
 
 
-# Abilita rilevamento delle risorse duplicate {#enable-detection-of-duplicate-assets}
+# Abilita il rilevamento delle risorse duplicate {#enable-detection-of-duplicate-assets}
 
 Se tentate di caricare una risorsa esistente in [!DNL Adobe Experience Manager Assets], la funzione di rilevamento duplicato la identifica come duplicato. Per impostazione predefinita, il rilevamento di duplicati è disabilitato. Per attivare la funzione, effettuare le seguenti operazioni:
 
-1. Aprite la pagina di configurazione della console [!DNL Experience Manager] Web accedendo al `https://[aem_server]:[port]/system/console/configMgr`.
+1. Aprite la [!DNL Experience Manager] pagina di configurazione della console Web accedendo a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Modificate la configurazione per il servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Selezionate l’opzione **[!UICONTROL Rileva duplicati]** e fate clic su **[!UICONTROL Salva]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Rileva duplicato]**, quindi fare clic su **[!UICONTROL Salva]**.
 
    ![Selezionate l’opzione Rileva duplicato nel servlet](assets/chlimage_1-377.png)
 
