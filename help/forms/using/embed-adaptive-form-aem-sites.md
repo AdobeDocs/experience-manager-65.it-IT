@@ -17,27 +17,29 @@ ht-degree: 0%
 ---
 
 
-# Incorporare un modulo adattivo o una comunicazione interattiva nella pagina AEM siti {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+# Incorporare un modulo adattivo o una comunicazione interattiva AEM pagina dei siti {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
 ## Panoramica {#overview}
 
  AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli adattivi e comunicazioni interattive in una pagina AEM Sites  o in una pagina Web ospitata all&#39;esterno di AEM. Il modulo adattivo incorporato e la comunicazione interattiva sono completamente funzionanti e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente agli utenti di restare nel contesto di altri elementi della pagina Web e di interagire contemporaneamente con il modulo o la comunicazione interattiva.
 
-Per informazioni sull&#39;incorporazione di un modulo adattivo in una pagina Web esterna, vedere [Incorporare un modulo adattivo in una pagina](/help/forms/using/embed-adaptive-form-external-web-page.md)Web esterna.
+Per informazioni sull&#39;incorporamento di un modulo adattivo in una pagina Web esterna, vedere [Incorporare un modulo adattivo in una pagina Web esterna](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
  pagina AEM Sites, è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando:
 
-* **[componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** Contenitore AEM Forms AEM Forms fornisce un componente che potete aggiungere alle pagine del sito. Il componente Contenitore di AEM Forms  consente di incorporare un modulo adattivo e una comunicazione interattiva.
+* **[](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+componente Contenitore AEM FormsAEM Forms fornisce un componente che potete aggiungere alle pagine del sito. Il componente Contenitore di AEM Forms  consente di incorporare un modulo adattivo e una comunicazione interattiva.
 
-* **[Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** risorse Tutti i moduli e le comunicazioni interattive creati sono disponibili in Risorse. È possibile trascinare il modulo come risorsa sulla pagina.
+* **[Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+risorse: tutti i moduli e le comunicazioni interattive creati sono disponibili in Risorse. È possibile trascinare il modulo come risorsa sulla pagina.
 
 ## Prerequisiti {#prerequisites}
 
-Per incorporare un modulo adattivo o una comunicazione interattiva in una pagina AEM siti che utilizza un modello modificabile, assicurarsi che il componente Modulo AEM sia configurato come componente consentito nel modello associato. Per ulteriori informazioni, vedere la sezione **Criteri e proprietà (Contenitore di layout)** in [Creazione di modelli](/help/sites-authoring/templates.md)di pagina.
+Per incorporare un modulo adattivo o una comunicazione interattiva in una pagina AEM siti che utilizza un modello modificabile, assicurarsi che il componente Modulo AEM sia configurato come componente consentito nel modello associato. Per ulteriori informazioni, vedere la sezione **Criteri e proprietà (Contenitore di layout)** in [Creazione di modelli di pagina](/help/sites-authoring/templates.md).
 
 Nel caso di una pagina Siti che utilizza un modello statico, è necessario configurarla nel sistema paragrafo della pagina del sito. Per ulteriori informazioni, consulta [Configurazione dei componenti in modalità Progettazione](/help/sites-authoring/default-components-designmode.md).
 
-## Incorporazione di un modulo adattivo o comunicazione interattiva {#af-component}
+## Incorporazione di un modulo adattivo o di una comunicazione interattiva {#af-component}
 
 Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando  componente Contenitore di AEM Forms:
 
@@ -50,10 +52,10 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando  
    >
    >Più componenti contenitore AEM Forms  in una pagina non sono supportati.
 
-1. Toccate il componente  AEM Forms Container incorporato nella pagina dei siti, quindi toccate ![settings_icon](assets/settings_icon.png) sulla barra delle azioni. Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica  contenitore]** AEM Forms.
+1. Toccate il componente  contenitore AEM Forms incorporato nella pagina dei siti, quindi toccate ![settings_icon](assets/settings_icon.png) nella barra delle azioni. Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica  contenitore AEM Forms]**.
 1. Nella finestra di dialogo Modifica  contenitore AEM Forms, specificate quanto segue.
 
-   * **Tipo risorsa:** Selezionate il tipo di risorsa da incorporare. Le opzioni sono moduli adattivi e comunicazione interattiva
+   * **Tipo risorsa:** selezionate il tipo di risorsa da incorporare. Le opzioni sono moduli adattivi e comunicazione interattiva
    * **Percorso** risorsa: Sfogliate e selezionate il modulo adattivo o la comunicazione interattiva da incorporare. Viene compilata automaticamente se viene rilasciata dal browser Risorse.
    * (Solo modulo adattivo) **Post-invio**: Selezionare l&#39;azione da attivare all&#39;invio del modulo. Potete scegliere di visualizzare un messaggio di ringraziamento o una pagina di ringraziamento.
 
@@ -88,7 +90,7 @@ Per modificare qualsiasi configurazione o proprietà del modulo adattivo incorpo
 >
 >Le modifiche apportate al modulo adattivo originale o alla comunicazione interattiva si riflettono automaticamente nel modulo incorporato. Tuttavia, ripubblicate il modulo adattivo, la comunicazione interattiva o la pagina del sito per riflettere le modifiche apportate alla pagina pubblicata.
 
-## Considerations and best practices {#considerations-and-best-practices}
+## Considerazioni e best practice {#considerations-and-best-practices}
 
 Quando si incorporano moduli adattivi nelle AEM pagine dei siti, tenere presente quanto segue:
 
