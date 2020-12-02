@@ -36,15 +36,15 @@ Per il servizio Task Manager sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Non è possibile cercare le attività assegnate agli utenti utilizzando l&#39;API del servizio Web. Il motivo è che non è possibile richiamare il `taskList` metodo, che è una chiamata di metodo necessaria per eseguire l&#39;attività.
+>Non è possibile cercare le attività assegnate agli utenti utilizzando l&#39;API del servizio Web. Il motivo è che non è possibile richiamare il metodo `taskList`, che è una chiamata di metodo necessaria per eseguire questa attività.
 
 >[!NOTE]
 >
->La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM Forms, si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Quick Start situato in Programmazione con  AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Assegnazione di attività tramite l&#39;API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -502,7 +502,7 @@ L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da 
 
 ## Avvio rapido (modalità SOAP): Modifica dei dati del modulo mediante l&#39;API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con dati che si trova nel file *FormData.xml* .
+Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con dati che si trova nel file *FormData.xml*.
 
 ```java
  /*
@@ -610,7 +610,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo 
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero di allegati da attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero degli allegati di file dalle attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli allegati di file. Ogni allegato viene salvato come file TXT.
 
@@ -714,9 +714,9 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli alle
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero delle informazioni sull&#39;attività mediante l&#39;API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *Mutuo*- Pregenerato. Lo stato di ogni attività restituita viene controllato per verificare che si tratti di un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
+Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *mutui ipotecariPrestito - Prebuild*. Lo stato di ogni attività restituita viene controllato per verificare che si tratti di un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
 
 ```java
  /*
