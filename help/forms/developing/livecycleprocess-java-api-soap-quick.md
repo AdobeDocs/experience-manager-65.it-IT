@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Avvio rapido API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+# Avvio rapido di LiveCycleProcess Java API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Java API(SOAP) Quick Start è disponibile per i processi. Un&#39;istanza *di* processo è un&#39;occorrenza di un processo specifico avviato da un metodo di chiamata, ad esempio l&#39;API di vocazione o dall&#39;interno di Workspace.
+Java API(SOAP) Quick Start è disponibile per i processi. Un&#39;istanza di processo *è un&#39;occorrenza di un processo specifico avviato da un metodo di chiamata come l&#39;API di vocazione o dall&#39;interno di Workspace.*
 
 [Avvio rapido (modalità SOAP): Ricerca di istanze di processo tramite Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -34,15 +34,15 @@ Java API(SOAP) Quick Start è disponibile per i processi. Un&#39;istanza *di* pr
 
 [Avvio rapido (modalità SOAP): Recupero dello stato di un processo tramite l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
+>Avvio rapido in Programmazione con  AEM Forms si basa sull&#39;Forms se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Avvio rapido (modalità SOAP): Ricerca di istanze di processo tramite Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono cercate le istanze di processo basate sul processo *mutuo* - Pregenerato.
+Nell&#39;esempio di codice Java riportato di seguito vengono ricercate le istanze di processo basate sul processo *mutuoIpotecario - Pregenerato*.
 
 ```java
  /*
@@ -158,7 +158,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono cercate le istanze 
  
 ```
 
-## Avvio rapido (modalità SOAP): Sospensione delle istanze del processo tramite l&#39;API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Avvio rapido (modalità SOAP): Sospensione delle istanze del processo utilizzando l&#39;API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene sospesa un&#39;istanza di processo. Per sospendere con successo un’istanza di processo, è necessario l’identificatore di chiamata del processo che può essere ottenuto quando si richiama un processo di lunga durata utilizzando l’API di vocazione.
 
@@ -338,7 +338,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene avviata un&#39;istanz
  
 ```
 
-## Avvio rapido (modalità SOAP): Chiusura delle istanze del processo tramite l&#39;API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Avvio rapido (modalità SOAP): Chiusura delle istanze del processo utilizzando l&#39;API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 Nell’esempio di codice Java riportato di seguito viene terminata un’istanza di processo con il valore di identificatore 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -536,9 +536,9 @@ Il seguente codice Java elimina i dati da un processo denominato *SecureDocument
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero dello stato di un processo tramite l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero dello stato di un processo tramite l&#39;API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene recuperato lo stato dei processi con 10 AEM Forms.
+Nell’esempio di codice seguente viene recuperato lo stato di 10 processi AEM Forms .
 
 ```java
  /*
