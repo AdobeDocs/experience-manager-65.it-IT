@@ -11,11 +11,14 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
 
-# Limitazioni per l’editor{#editor-limitations}
+# Limitazioni per l&#39;editor{#editor-limitations}
 
 L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell&#39;utilizzo dell&#39;editor che per gli sviluppatori. In questa pagina vengono riepilogati questi limiti e vengono fornite soluzioni o soluzioni alternative, laddove possibile.
 
@@ -27,11 +30,11 @@ Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l�
 
 Durante la [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
 
-* [Passate alla modalità **Anteprima** per](/help/sites-authoring/editing-content.md#preview-mode) spostarsi utilizzando i collegamenti presenti nel contenuto.
+* [Passate a  **** ](/help/sites-authoring/editing-content.md#preview-mode) Anteprima per navigare utilizzando i collegamenti presenti nel contenuto.
 
 ### Pagine struttura {#structure-pages}
 
-Le pagine non possono essere denominate `structure`. Le pagine denominate `structure` non saranno modificabili nell’editor pagina.
+Le pagine non possono essere denominate `structure`. Le pagine denominate `structure` non saranno modificabili nell&#39;editor pagina.
 
 ## Limitazioni CSS {#css-limitations}
 
@@ -51,9 +54,9 @@ Gli elementi posizionati in modo assoluto possono causare problemi nella posizio
 
 Le immagini di sfondo fisse potrebbero non essere visualizzate come fisse durante lo scorrimento a causa del fatto che sono incorporate all&#39;interno di un iframe.
 
-* Selezionando **Visualizza pagina come pubblicata** nelle azioni della barra dell’intestazione, la pagina viene visualizzata correttamente.
+* Se si seleziona **Visualizza pagina come pubblicata** nelle azioni della barra di intestazione, la pagina viene visualizzata correttamente.
 
-### 100% Height {#height}
+### Altezza 100% {#height}
 
 Altezza 100% non supportata nell&#39;elemento body di una pagina.
 
@@ -69,7 +72,7 @@ body {
 }
 ```
 
-### Riduzione margini {#margin-collapsing}
+### Margine di riduzione {#margin-collapsing}
 
 I problemi di riduzione del margine possono essere visti se il primo elemento figlio dell&#39;elemento body ha un margine.
 
