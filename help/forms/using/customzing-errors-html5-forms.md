@@ -38,8 +38,8 @@ Dopo aver estratto il pacchetto, aprite la cartella CustomErrorManager-1.0-SNAPS
 
 Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;div> per ciascun campo di errore e di avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al tag &lt;div>. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
 
-1. Andate alla `CustomErrorManager-1.0-SNAPSHOT`cartella e aprite la `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella.
-1. Open the `customErrorManager.js` file for editing. La `markError` funzione nel file accetta i seguenti parametri:
+1. Andate alla cartella `CustomErrorManager-1.0-SNAPSHOT`e aprite la cartella `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Aprire il file `customErrorManager.js` per la modifica. La funzione `markError` nel file accetta i seguenti parametri:
 
    |  |  |
    |---|---|
@@ -77,7 +77,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;d
    ```
 
 1. Salvate e chiudete il file.
-1. Andate alla `CustomErrorManager-1.0-SNAPSHOT` cartella e create un archivio delle cartelle jcr_root e META-INF. Rinominare l&#39;archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Andate alla cartella `CustomErrorManager-1.0-SNAPSHOT` e create un archivio delle cartelle jcr_root e META-INF. Rinominare l&#39;archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizzate il gestore pacchetti per caricare e installare il pacchetto.
 
 ## Visualizza messaggi di errore per più campi  {#display-error-messages-for-multiple-fields-nbsp}
