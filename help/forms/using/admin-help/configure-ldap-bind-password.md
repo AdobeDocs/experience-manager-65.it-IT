@@ -24,7 +24,7 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Per esportare l’impostazione di configurazione corrente in un file, fate clic su Esporta e salvate il file di configurazione in un’altra posizione.
-1. Nel file, individuare il `Domains` > *[Nome]* dominio > `DirectoryConfigs` > `LDAPGroupConfig` nodo. Di seguito è riportato un esempio:
+1. Nel file, individuare il nodo `Domains` > *[Nome del dominio]* > `DirectoryConfigs` > `LDAPGroupConfig`. Di seguito è riportato un esempio:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +39,7 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
 
    Digitare un valore per `bindpassword` e salvare le modifiche.
 
-1. Nel file, individuare il `Domains` > *[Nome]* dominio > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. Di seguito è riportato un esempio:
+1. Nel file, individuare il nodo `Domains` > *[Nome del dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Di seguito è riportato un esempio:
 
    ```xml
     <node name="LDAPUserConfig">
