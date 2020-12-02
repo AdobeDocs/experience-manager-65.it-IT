@@ -1,8 +1,8 @@
 ---
-title: Console strumenti
-seo-title: Console strumenti
-description: Scopri le diverse console di strumenti in AEM.
-seo-description: Scopri le diverse console di strumenti in AEM.
+title: Console Strumenti
+seo-title: Console Strumenti
+description: Informazioni sulle diverse console Strumenti disponibili in AEM.
+seo-description: Informazioni sulle diverse console Strumenti disponibili in AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,16 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 44%
 
 ---
 
 
-# Console strumenti{#tools-consoles}
+# Console Strumenti{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. A seconda dell’interfaccia in uso, la console **Strumenti** offre due funzioni:
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Esistono attualmente due versioni della console **Strumenti** a seconda dell&#39;interfaccia in uso:
 
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
@@ -27,7 +30,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 >[!NOTE]
 >
->È possibile accedere a tali console dal pannello [Strumenti della navigazione](/help/sites-authoring/basic-handling.md#tools-panel)globale.
+>Puoi accedere a tali console mediante il [pannello Strumenti della navigazione globale](/help/sites-authoring/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
@@ -57,7 +60,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Assegnazione di tag</td>
+   <td>Assegnazione tag</td>
   </tr>
   <tr>
    <td> </td>
@@ -196,7 +199,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configurazione DAM remoto</td>
   </tr>
   <tr>
-   <td>Risorse</td>
+   <td>Riferimenti</td>
    <td> </td>
   </tr>
   <tr>
@@ -205,10 +208,10 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Risorse per sviluppatori</td>
+   <td>Riferimenti per sviluppatori</td>
   </tr>
   <tr>
-   <td>Distribuzione</td>
+   <td>Implementazione</td>
    <td> </td>
   </tr>
   <tr>
@@ -257,7 +260,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Autorizzazioni</td>
+   <td>Autorizzazioni </td>
   </tr>
   <tr>
    <td> </td>
@@ -272,7 +275,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configurazioni Adobe IMS</td>
   </tr>
   <tr>
-   <td>Servizi cloud<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -380,7 +383,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Configurazioni servizi cloud<br /> </td>
-   <td>Contiene configurazioni correlate all'integrazione con Adobe Marketing Cloud.</td>
+   <td>Contiene le configurazioni relative all'integrazione con l'Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Impostazioni cloud<br /> </td>
@@ -444,7 +447,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Segmentazione</td>
-   <td>I visitatori che arrivano a un sito hanno interessi e obiettivi diversi. Per il successo di operazioni di marketing online, è importante comprendere tali obiettivi e soddisfare le aspettative dei visitatori. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td>
+   <td>I visitatori che arrivano a un sito hanno interessi e obiettivi diversi. Per il successo di operazioni di marketing online, è importante comprendere tali obiettivi e soddisfare le aspettative dei visitatori. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td>
   </tr>
   <tr>
    <td>inquilini</td>
