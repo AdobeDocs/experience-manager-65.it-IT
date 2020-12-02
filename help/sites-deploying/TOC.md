@@ -15,7 +15,7 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.5 Deploying User Guide {#deploying}
+# AEM 6.5 Guida utente alla distribuzione {#deploying}
 
 + [Guida utente per la distribuzione](home.md)
 + Introduzione alla piattaforma AEM {#introduction}
@@ -62,7 +62,7 @@ ht-degree: 18%
    + [Guida alle prestazioni di Risorse](assets-performance-sizing.md)
    + [Articoli guida alla configurazione](ht-deploy.md)
    + [Configurazione della console Web](configuring-web-console.md)
-+ Upgrading to AEM 6.5 {#upgrading}
++ Aggiornamento a AEM 6.5 {#upgrading}
    + [Aggiornamento a AEM 6.5](upgrade.md)
    + [Pianificazione dell&#39;aggiornamento](upgrade-planning.md)
    + [Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern](pattern-detector.md)
