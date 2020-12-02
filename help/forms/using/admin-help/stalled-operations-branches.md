@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -26,17 +29,17 @@ Quando un processo si arresta, non vengono eseguite ulteriori operazioni finché
 
 Per ogni elemento in stallo, l&#39;elenco mostra le seguenti informazioni:
 
-**** Nome operazione o Nome ramo: Nome dell&#39;operazione o del ramo.
+**Nome operazione o Nome ramo:** il nome dell&#39;operazione o del ramo.
 
-**** Stato: Sempre STALLED per gli elementi in stallo.
+**Stato:** Sempre STALLATO per gli elementi in stallo.
 
-**** Errore: Breve descrizione del problema.
+**Errore:** breve descrizione del problema.
 
-**** ID processo: Numero intero positivo assegnato dal flusso di lavoro del modulo quando viene creata un&#39;istanza del processo (ovvero quando un utente o un passaggio automatico avvia un processo). Potete utilizzare questo identificatore per tenere traccia dell’istanza di processo nel corso del suo ciclo di vita.
+**ID processo:** il numero intero positivo assegnato dal flusso di lavoro del modulo quando viene creata un&#39;istanza del processo (ovvero quando un utente o un passaggio automatico avvia un processo). Potete utilizzare questo identificatore per tenere traccia dell’istanza di processo nel corso del suo ciclo di vita.
 
-**** Nome processo - Versione: Nome del processo assegnato in Workbench.
+**Nome processo - Versione:** il nome del processo assegnato in Workbench.
 
-**** Data di arresto: La data e l&#39;ora in cui l&#39;operazione o il ramo si è bloccata.
+**Data di arresto:** la data e l&#39;ora in cui l&#39;operazione o il ramo è bloccato.
 
 Nella pagina Operazioni bloccate o Brani bloccati potete effettuare le seguenti operazioni:
 
@@ -63,7 +66,7 @@ Quando si ripete un&#39;operazione, al flusso di lavoro Forms viene inviata una 
 1. Nella console di amministrazione, fare clic su Servizi > flusso di lavoro moduli, quindi fare clic su Errori operazioni in stato o Errori rami in stato di arresto.
 1. Nella pagina Operazioni in stallo o Rami in stallo, selezionare l&#39;elemento da riprovare e fare clic su Riprova.
 
-## Visualizzazione dei dettagli degli errori relativi alle operazioni o ai rami in stallo {#viewing-error-details-about-stalled-operations-or-branches}
+## Visualizzazione dei dettagli degli errori relativi alle operazioni in stallo o ai rami {#viewing-error-details-about-stalled-operations-or-branches}
 
 Se si seleziona un errore dall&#39;elenco degli elementi in stallo nella pagina Operazioni in stallo o Branches in stallo, viene visualizzata la pagina Dettagli errore, che mostra i dettagli sull&#39;errore che può essere utile per risolvere il problema.
 
@@ -71,14 +74,14 @@ La casella nella parte inferiore della pagina contiene le informazioni sull’er
 
 Dalla pagina Dettagli errore è inoltre possibile terminare o riprovare le operazioni in stallo e riprovare i rami in stallo.
 
-## Il processo non si arresta quando l&#39;utente di inoltro non esiste {#process-does-not-stall-when-escalation-user-does-not-exist}
+## Il processo non si arresta quando l&#39;utente di escalation non esiste {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Gli errori si verificano quando l’operazione Assegna attività nei moduli AEM è configurata per inoltrare l’attività a un altro utente dopo un determinato periodo di tempo e l’utente dell’inoltro viene eliminato dopo l’esecuzione dell’operazione Assegna attività ma prima che si verifichi l’escalation.
+Gli errori si verificano quando l&#39;operazione Assegna attività nei moduli AEM Il servizio Utente è configurato per inoltrare l&#39;attività a un altro utente dopo un determinato periodo di tempo e l&#39;utente dell&#39;inoltro viene eliminato dopo l&#39;esecuzione dell&#39;operazione Assegna attività ma prima che l&#39;inoltro venga eseguito.
 
-Quando si verifica questa situazione, lo stato del processo e dell&#39;attività non cambia al momento dell&#39;inoltro configurato e l&#39;inoltro non si verifica ma il processo non si arresta. Nel registro server viene visualizzato il seguente messaggio:
+Quando si verifica questa situazione, lo stato del processo e dell&#39;attività non cambia al momento dell&#39;escalation configurata, e l&#39;escalation non si verifica ma il processo non si arresta. Nel registro del server viene visualizzato il seguente messaggio:
 
-&quot;L&#39;entità specificata per l&#39;inoltro non è valida, per taskID: *numero*, coda specificata: *numero*.&quot;
+&quot;L&#39;entità specificata per l&#39;inoltro non è valida, per taskID: *number*, coda specificata: *number*.&quot;
 
 Se l&#39;utente dell&#39;escalation viene eliminato prima della generazione dell&#39;attività (prima dell&#39;esecuzione dell&#39;operazione Assign Task), il processo si arresta o viene generato l&#39;evento di eccezione InvalidPrincipal.
 
-Per evitare questo problema, quando eliminate un utente, cercate le attività che appartengono a tale utente e gestitele di conseguenza. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Per evitare questo problema, quando eliminate un utente, cercate le attività che appartengono a tale utente e gestitele di conseguenza. (Vedere [Uso delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
