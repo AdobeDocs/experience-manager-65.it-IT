@@ -28,33 +28,33 @@ La funzione di calendario supporta la fornitura di informazioni sull&#39;evento 
 Questa sezione della documentazione descrive
 
 * Aggiunta della funzione calendario a un sito AEM
-* Impostazioni di configurazione per `Calendar` i componenti
+* Impostazioni di configurazione per i componenti `Calendar`
 
-## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
+## Aggiunta di un calendario a una pagina {#adding-a-calendar-to-a-page}
 
-Per aggiungere un `Calendar` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un componente `Calendar` a una pagina in modalità di creazione, usate il browser componenti per individuare
 
 * `Communities / Calendar`
 
 e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione che gli utenti potranno rivedere.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
-Quando vengono incluse le librerie [lato client](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) richieste, viene visualizzato così il `Calendar` componente.
+Quando vengono incluse le [librerie lato client ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side), viene visualizzato il componente `Calendar`.
 
 ![calendario-componente](assets/calendar-component.png)
 
 ### Configurazione del calendario {#configuring-calendar}
 
-Selezionate il `Calendar` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Calendar` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![configure](assets/configure-new.png)
 
 ![configure-Calendar](assets/configure-calendar1.png)
 
-#### scheda Impostazioni {#settings-tab}
+#### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **Impostazioni** , specificare se consentire o meno l&#39;applicazione dei tag alle voci del calendario.
+Nella scheda **Impostazioni**, specificare se consentire o meno l&#39;applicazione dei tag alle voci del calendario.
 
 * **Eventi per pagina**
 
@@ -74,7 +74,7 @@ Nella scheda **Impostazioni** , specificare se consentire o meno l&#39;applicazi
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, consentite ai membri di aggiungere etichette di tag agli eventi inseriti (consultate la scheda Campo **** tag ). Il valore predefinito è selezionato.
+   Se questa opzione è selezionata, consentire ai membri di aggiungere etichette di tag agli eventi inseriti (vedere la scheda **Campo tag**). Il valore predefinito è selezionato.
 
 * **Consenti caricamenti file**
 
@@ -86,11 +86,11 @@ Nella scheda **Impostazioni** , specificare se consentire o meno l&#39;applicazi
 
 * **Dimensione file massima**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+   Rilevante solo se è selezionato `Allow File Uploads`. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Rilevante solo se è selezionato `Allow File Uploads`. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
@@ -98,7 +98,7 @@ Nella scheda **Impostazioni** , specificare se consentire o meno l&#39;applicazi
 
 * **Tipi di immagine di copertina consentiti**
 
-   Elenco separato da virgole di estensioni di file immagine con il separatore &quot;punto&quot;. Default is `.jpg,.jpeg,.png,.gif,.bmp`.
+   Elenco separato da virgole di estensioni di file immagine con il separatore &quot;punto&quot;. Il valore predefinito è `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **Consenti risposte concatenate**
 
@@ -122,9 +122,9 @@ Nella scheda **Impostazioni** , specificare se consentire o meno l&#39;applicazi
 
 * **Consenti contenuto in primo piano**
 
-   Se questa opzione è selezionata, l’idea può essere identificata come contenuto [](/help/communities/featured.md)disponibile. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, l&#39;idea può essere identificata come [contenuto in evidenza](/help/communities/featured.md). Il valore predefinito è deselezionato.
 
-Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gli argomenti e le risposte inviati (contenuto generato dall’utente). Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Nella scheda **Moderazione utente**, specificare la modalità di gestione degli argomenti e delle risposte inviati (contenuto generato dall&#39;utente). Per ulteriori informazioni, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -158,11 +158,11 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **Impostazioni** , sono limitati in base agli spazi dei nomi selezionati.
+Nella scheda **Tag field** (Campo tag), i tag che possono essere applicati, se consentiti nella scheda **Settings** (Impostazioni), sono limitati in base agli spazi dei nomi scelti.
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato nella scheda **Settings**. I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
@@ -170,17 +170,17 @@ Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti n
 
 >[!NOTE]
 >
->Per informazioni su come aggiungere un nuovo spazio nomi tag (tassonomia), visitate [Amministrazione tag](/help/sites-administering/tags.md) .
+>Per informazioni su come aggiungere un nuovo spazio nomi tag (tassonomia), visitare [Administering Tags](/help/sites-administering/tags.md).
 
 #### Scheda Traduzione {#translation-tab}
 
-Nella scheda **Traduzione** , se la traduzione è abilitata per il sito della comunità, la traduzione può essere impostata per tradurre l&#39;intero thread (evento e commenti) invece di post specifici.
+Nella scheda **Translation**, se la traduzione è abilitata per il sito della community, è possibile impostare la traduzione in modo da tradurre l&#39;intero thread (evento e commenti) invece di post specifici.
 
 * **Traduci tutto**
 
    Se questa opzione è attivata, l&#39;evento e i commenti vengono tradotti nella lingua preferita dell&#39;utente. Il valore predefinito è selezionato.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatori del sito {#site-visitor-experience}
 
 Nell&#39;ambiente di pubblicazione, la funzione calendario visualizzerà un campo di ricerca con un intervallo di date predefinito, nonché tutti gli eventi di calendario che rientrano in tale intervallo.
 
@@ -190,13 +190,13 @@ Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore
 
 ### Moderatori e amministratori {#moderators-and-administrators}
 
-Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderatore o amministratore, può eseguire attività [di](/help/communities/moderate-ugc.md) moderazione (come consentito dalla configurazione del componente) su tutti gli eventi del calendario e i commenti inviati a un evento.
+Quando l&#39;utente che ha effettuato l&#39;accesso dispone di privilegi di moderatore o amministratore, può eseguire [attività di moderazione](/help/communities/moderate-ugc.md) (come consentito dalla configurazione del componente) su tutti gli eventi del calendario e i commenti pubblicati su un evento.
 
 ![moderatori-vista](assets/moderators-view.png)
 
 #### Membri {#members}
 
-Quando l&#39;utente che ha effettuato l&#39;accesso è un membro della community o un membro [](/help/communities/users.md#privileged-members-group) privilegiato (a seconda della configurazione), può selezionare `New Event` di creare e pubblicare un nuovo evento del calendario.
+Quando l&#39;utente che ha effettuato l&#39;accesso è un membro della community o un membro [privilegiato](/help/communities/users.md#privileged-members-group) (a seconda della configurazione), è in grado di selezionare `New Event` per creare e pubblicare un nuovo evento del calendario.
 
 In particolare, essi possono:
 
@@ -220,8 +220,8 @@ I visitatori del sito che non hanno effettuato l&#39;accesso possono solo legger
 
 Ulteriori informazioni sono disponibili nella pagina [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) per gli sviluppatori.
 
-Per la moderazione degli eventi del calendario e dei commenti, vedere [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Per la moderazione degli eventi del calendario e dei commenti, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli eventi e ai commenti del calendario, consulta [Assegnazione di tag ai contenuti](/help/communities/tag-ugc.md)generati dagli utenti.
+Per assegnare tag agli eventi del calendario e ai commenti, vedere [Assegnazione tag a contenuti generati dall&#39;utente](/help/communities/tag-ugc.md).
 
-Per la traduzione di eventi e commenti del calendario, vedere [Traduzione di contenuti](/help/communities/translate-ugc.md)generati dagli utenti.
+Per la traduzione di eventi e commenti del calendario, vedere [Traduzione di contenuti generati dall&#39;utente](/help/communities/translate-ugc.md).
