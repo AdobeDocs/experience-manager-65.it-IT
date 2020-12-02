@@ -12,10 +12,13 @@ discoiquuid: 23386353-b2bf-49f1-947a-dd7587bba175
 noindex: true
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
 
-# Limitazioni per il backup di PDF Generator {#pdf-generator-backup-limitations}
+# Limitazioni per il backup del generatore PDF {#pdf-generator-backup-limitations}
 
 Non è possibile eseguire il backup della directory temporanea utilizzata da PDF Generator per convertire i file. Anche se il servizio verrà ripristinato correttamente, i dati possono andare persi perché PDF Generator rivede e cancella il contenuto della directory temporanea a intervalli impostati.
