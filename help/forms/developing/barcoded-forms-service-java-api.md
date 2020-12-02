@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Avvio rapido API Java di Forms Service con codice a barre (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Avvio rapido dell&#39;API Java del servizio Forms con codice a barre (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
 Java API Quick Start(SOAP) è disponibile per il servizio Forms con codice a barre:
 
@@ -27,11 +27,11 @@ Java API Quick Start(SOAP) è disponibile per il servizio Forms con codice a bar
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul server Forms implementato in JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili in Programmazione con  AEM Forms si basano sul server Forms implementato in JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Decodifica dei dati del modulo con codice a barre tramite l&#39;API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Il seguente codice Java decodifica i dati del modulo che si trova in un modulo PDF salvato come Loan.pdf. I dati decodificati vengono salvati come file XML denominato extractData.xml. Questo esempio di codice converte un `org.w3c.dom.Document` &#39;oggetto in un `com.adobe.idp.Document` oggetto. (Vedere [Decodifica dei dati](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)del modulo con codice a barre.)
+Il seguente codice Java decodifica i dati del modulo che si trova in un modulo PDF salvato come Loan.pdf. I dati decodificati vengono salvati come file XML denominato extractData.xml. Questo esempio di codice converte un oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document`. (Vedere [Decodifica dati modulo con codice a barre](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -220,5 +220,5 @@ Il seguente codice Java decodifica i dati del modulo che si trova in un modulo P
 
 >[!NOTE]
 >
->Se si utilizza un `org.w3c.dom.Document` oggetto e un `com.adobe.idp.Document` oggetto nella stessa logica dell&#39;applicazione, è buona norma qualificare entrambi gli oggetti.
+>Se si utilizza sia un oggetto `org.w3c.dom.Document` che un oggetto `com.adobe.idp.Document` nella stessa logica dell&#39;applicazione, è buona norma qualificare entrambi gli oggetti.
 
