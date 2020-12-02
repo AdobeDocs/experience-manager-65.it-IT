@@ -27,13 +27,13 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
 | GLB | Trasmissione GL binario | model/gltf-binary |  |
-| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
+| GLTF | Formato di trasmissione GL | model/gltf+json | Vedere **Nota** di seguito. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | DN |  Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 | USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 
-**Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertatevi che siano denominati correttamente e che si trovino in una `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
+**Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertatevi che siano denominati correttamente e che si trovino in una  `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
 
     Risorsa (cartella)
     model.
@@ -42,7 +42,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     Material_0_baseColor.
     jpegMaterial_0_normal.jpeg
 
-## Considerazioni sulle prestazioni per l’anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni per l&#39;anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
 
@@ -51,8 +51,8 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D in AEM**
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
-Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
-1. Da AEM, nella pagina di **[!UICONTROL navigazione]** toccate **[!UICONTROL Risorse > File.]**
+Consultate [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
+1. Da AEM, nella pagina **[!UICONTROL Navigazione]**, toccare **[!UICONTROL Risorse > File.]**
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
@@ -72,13 +72,13 @@ Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-asset
    * **Scorrimento della videocamera**: consente di scorrere la vista verso sinistra, destra, verso l’alto o verso il basso.
       * _Mouse_: Fare clic con il pulsante destro del mouse e trascinare.
       * _Touch screen_: Premere due dita e trascinare.
-   * **Zoom della fotocamera**- Zoom della fotocamera per spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D.
+   * **Zoom della fotocamera** - Zoom della fotocamera per spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
       * _Touch screen_: Pizzicotto a due dita.
    * **Rientra la fotocamera**: consente di rientrare la fotocamera in un punto della scena 3D.
       * _Mouse_: Fate doppio clic.
       * _Touch screen_: Doppio tocco.
-   * **Ripristina**(Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
+   * **Ripristina** (Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
    * **Modalità** Schermo intero: per passare alla modalità Schermo intero, nell&#39;angolo inferiore destro della pagina toccate l&#39;icona Schermo intero.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**
+1. Al termine, nell&#39;angolo superiore destro della pagina, toccare **[!UICONTROL Chiudi.]**
