@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
@@ -23,24 +26,24 @@ Gli endpoint di Task Manager consentono agli utenti di Workspace di richiamare i
 
 Utilizzare le seguenti impostazioni per configurare un endpoint di Task Manager.
 
-**** Nome: (Obbligatorio) Identifica l’endpoint. Il nome viene visualizzato nella vista a schede in Workspace. Non includete un carattere &lt; perché troncherà il nome visualizzato in Workspace. Se immettete un URL come nome dell’endpoint, accertatevi che sia conforme alle regole di sintassi specificate in RFC1738.
+**Nome:** (obbligatorio) Identifica l’endpoint. Il nome viene visualizzato nella vista a schede in Workspace. Non includete un carattere &lt; perché troncherà il nome visualizzato in Workspace. Se immettete un URL come nome dell’endpoint, accertatevi che sia conforme alle regole di sintassi specificate in RFC1738.
 
-**** Descrizione: Una descrizione dell&#39;endpoint. Non includete un carattere &lt; perché troncherà la descrizione visualizzata in Workspace.
+**Descrizione:** una descrizione dell’endpoint. Non includete un carattere &lt; perché troncherà la descrizione visualizzata in Workspace.
 
-**** Istruzioni attività: Istruzioni per l’utente che avvia il flusso di lavoro.
+**Istruzioni attività:** istruzioni per l&#39;utente che avvia il flusso di lavoro.
 
-**** Proprietario processo: Nome della persona responsabile del processo.
+**Proprietario processo:** il nome della persona responsabile del processo.
 
-**** L&#39;Utente Può Inoltrare L&#39;Attività: Consente all&#39;utente di inoltrare l&#39;attività iniziale.
+**L&#39;utente può inoltrare l&#39;attività:** consente all&#39;utente di inoltrare l&#39;attività iniziale.
 
-**** Mostra finestra allegati: Consente all&#39;utente di visualizzare la finestra dell&#39;allegato.
+**Mostra finestra allegati:** consente all&#39;utente di visualizzare la finestra degli allegati.
 
-**** Consenti aggiunta allegati: Consente all&#39;utente di aggiungere allegati e note.
+**Consenti aggiunta allegati:** Consente all&#39;utente di aggiungere allegati e note.
 
-**** Attività inizialmente bloccata: Blocca l&#39;attività iniziale.
+**Attività inizialmente bloccata:** blocca l&#39;attività iniziale.
 
-**** Aggiungere ACL per le code condivise: L&#39;attività iniziale viene creata con ACL per gli utenti della coda condivisa.
+**Aggiungi ACL per code condivise:** l&#39;attività iniziale viene creata con ACL per gli utenti della coda condivisa.
 
-**** Categorizzazione: (Obbligatorio) La categoria in cui l&#39;utente visualizzerà il modulo in Workspace. Selezionare una categoria dall&#39;elenco oppure selezionare Nuova categoria per aggiungere una categoria.
+**Categorizzazione:** (Obbligatorio) La categoria in cui l&#39;utente visualizzerà il modulo in Workspace. Selezionare una categoria dall&#39;elenco oppure selezionare Nuova categoria per aggiungere una categoria.
 
-**** Nome operazione: (Obbligatorio) Elenco di operazioni che possono essere assegnate all&#39;endpoint.
+**Nome operazione:** (obbligatorio) Elenco di operazioni che possono essere assegnate all&#39;endpoint.
