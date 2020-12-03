@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2807'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,23 @@ In questo articolo vengono evidenziate le funzionalità incluse nell&#39;ultimo 
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] i pacchetti aggiuntivi sono disponibili una settimana dopo il rilascio pianificato di  [!DNL Experience Manager] Service Pack. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) è previsto per il 26 novembre 2020.
+>[!DNL Experience Manager Forms] i pacchetti aggiuntivi sono disponibili una settimana dopo il rilascio pianificato di  [!DNL Experience Manager] Service Pack.
+
+### Miglioramenti delle prestazioni {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms migliora le prestazioni per:
+
+* Convalida dei valori dei campi sul server al momento dell&#39;invio di un modulo adattivo.
+
+* Conversione di un modulo PDF in un modulo adattivo utilizzando il simbolo [!DNL Automated Forms Conversion service].
+
+### Configurazione client HTTP del modello dati modulo per ottimizzare le prestazioni {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] il modello dati del modulo durante l&#39;integrazione con i servizi Web RESTful come origine dati ora include configurazioni client HTTP per l&#39;ottimizzazione delle prestazioni.
+
+### Disponibilità dell&#39;opzione Reimposta per ciascun componente in modalità Layout {#reset-option-layout-mode}
+
+È ora possibile utilizzare l&#39;opzione di ripristino per ciascun componente in modalità Layout di un modulo adattivo. Quando definite un layout a più colonne per un pannello, potete usare questa funzione per ripristinare i singoli componenti all’interno del pannello.
 
 ## Funzioni principali nei precedenti [!DNL Experience Manager] Service Pack 6.5 {#key-features-previous-service-packs}
 
