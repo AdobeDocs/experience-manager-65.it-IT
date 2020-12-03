@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
+source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
 workflow-type: tm+mt
-source-wordcount: '3789'
+source-wordcount: '4201'
 ht-degree: 5%
 
 ---
@@ -38,6 +38,16 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 * Gli utenti possono ordinare le risorse digitali nelle viste a schede e a colonne.
 
 * [!DNL Assets] e  [!DNL Dynamic Media] fornire diversi miglioramenti a livello di accessibilità. I miglioramenti riguardano la navigazione tramite tastiera, l&#39;uso di assistenti vocali e la possibilità per gli utenti di utilizzare una tecnologia di supporto (AT) simile. Vedere [[!DNL Assets] miglioramenti](#assets-6570) e [[!DNL Dynamic Media] miglioramenti](#dynamic-media-6570).
+
+* Configurazione del client HTTP per il modello dati modulo per ottimizzare le prestazioni.
+
+* Disponibilità dell’opzione Reimposta per ciascun componente in modalità Layout
+
+* [!DNL Experience Manager] 6.5 Service Pack 7 Forms migliora le prestazioni per:
+
+   * Convalida dei valori dei campi sul server al momento dell&#39;invio di un modulo adattivo.
+
+   * Conversione di un modulo PDF in un modulo adattivo utilizzando il simbolo [!DNL Automated Forms Conversion service].
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.22.5.
 
@@ -299,6 +309,48 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] rilascia i pacchetti del componente aggiuntivo una settimana dopo la data di rilascio pianificata per  [!DNL Experience Manager] Service Pack.
+
+**Moduli adattivi**
+
+* Impossibile modificare un modulo adattivo utilizzando l&#39;interfaccia classica dopo l&#39;applicazione di [!DNL Experience Manager] Service Pack 6 (NPR-35126).
+
+* Quando si converte un PDF in un modulo adattivo, non è possibile impostare un valore per un pannello nidificato utilizzando un modello dati modulo sul layout a schede. Inoltre, si sono verificati dei problemi durante l&#39;impostazione dinamica di un valore per i gruppi di pulsanti di scelta con un array statico che utilizza l&#39;editor di codice (NPR-35062).
+
+* Quando si immettono caratteri giapponesi in un componente campo di testo in un modulo adattivo, è possibile specificare più caratteri del limite massimo di 35 caratteri (NPR-35039).
+
+* Il modulo adattivo visualizza i parametri indesiderati, ad esempio `owner` e `status`, sulla pagina **[!UICONTROL Grazie]** visualizzata dopo l&#39;invio del modulo (NPR-34989).
+
+* La finestra di dialogo [!UICONTROL Selezione file] per il componente [!UICONTROL Allegato] visualizza i tipi di file non supportati e per la selezione, con conseguente errore durante l&#39;invio del modulo adattivo (NPR-34970).
+
+* Quando si inserisce un modulo adattivo in una pagina [!DNL Experience Manager Sites] contenente testo prima del modulo, il cursore si sposta direttamente sul modulo anziché sul testo prima del modulo (NPR-34947).
+
+* [!UICONTROL L&#39;opzione Anteprima con ] dati per precompilare un modulo adattivo utilizzando un file XML di dati  [!DNL Experience Manager] 6.2 non funziona correttamente (NPR-35087).
+
+* Quando si aggiorna il dizionario dati per un modulo adattivo, il modulo non viene convertito in quanto restituisce valori memorizzati nella cache (NPR-34845).
+
+* Il caricamento dei frammenti in un modulo adattivo richiede più tempo a causa dell&#39;annullamento della validità della cache (NPR-34567).
+
+* La navigazione mediante tabulazione non funziona correttamente per gli assistenti vocali in un modulo adattivo (NPR-34544).
+
+**Gestione della corrispondenza**
+
+* Impossibile salvare i valori per i tag XML con dati numerici, che includono il tipo mobile, come bozza (NPR-35050).
+
+* Quando si esegue la migrazione delle risorse da ES3, le risorse includono due condizioni predefinite non modificabili (NPR-34972).
+
+* Quando si modifica un dizionario dati in una lettera, la sezione [!UICONTROL Contenuto latente] visualizza rettangoli rotanti invece di informazioni utili (NPR-34853).
+
+**Comunicazione interattiva**
+
+* Il nome della configurazione rollout per la comunicazione interattiva, disponibile dopo l&#39;installazione del pacchetto aggiuntivo [!DNL Forms], duplica il nome della configurazione rollout standard (NPR-34976).
+
+**Sicurezza dei documenti**
+
+* Quando si salva un nuovo criterio di protezione del documento,  Experience Manager Forms visualizza il messaggio di errore `Relative validity period is required` (NPR-34679).
+
+* Quando si salva un nuovo criterio di protezione del documento,  Experience Manager Forms visualizza il messaggio di errore `Invalid filed value.Numeric value is required` (NPR-34678).
+
+* Document Security non è in grado di proteggere i documenti PDF 2.0 (CQ-4305851).
 
 Per informazioni sugli aggiornamenti della sicurezza, vedere [ pagina dei bollettini sulla sicurezza degli Experienci Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
