@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 4%
 
 ---
@@ -53,13 +53,13 @@ Più precisamente, le seguenti modifiche di configurazione verranno eseguite qua
 1. Il pacchetto **Apache Sling Simple WebDAV Access to repository** ( `org.apache.sling.jcr.webdav`) sarà disponibile solo sulle istanze **author**.
 
 1. Gli utenti appena creati dovranno cambiare la password al primo login. Ciò non vale per l&#39;utente amministratore.
-1. **Genera** informazioni di debug disattivate per il gestore **di script Java** Apache.
+1. **Genera** informazioni di debug disattivate per il gestore **JavaScript** Apache Sling.
 
 1. **Contenuto mappato** e  **Genera** informazioni di debug disattivate per il gestore **di script JSP** Apache Sling.
 
 1. Il filtro **Day CQ WCM Filter** è impostato su `edit` nelle istanze **author** e `disabled` in **publish**.
 
-1. **Adobe Granite HTML Library** Manager è configurato con le seguenti impostazioni:
+1. Il **Adobe Granite HTML Library Manager** è configurato con le seguenti impostazioni:
 
    1. **Riduci:** `enabled`
    1. **Debug:** `disabled`
