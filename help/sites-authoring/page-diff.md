@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 97%
 
 ---
 
@@ -61,10 +61,6 @@ Vengono rilevate le modifiche apportate a livello di componente e di codice HTML
 
 * Verde chiaro - Componente aggiunto
 * Rosa - Componente rimosso
-* Blu - Componente modificato
-* Blu - Componente spostato
-
-Nota: il colore dei componenti modificati e spostati è lo stesso.
 
 **Modifiche HTML**
 
@@ -96,9 +92,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
 * Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
-* Le eventuali modifiche apportate a un’immagine, ad esempio agli attributi alt, title o src, vengono evidenziate in blu. Tuttavia, in alcuni casi le immagini hanno una rappresentazione Base64 dell’attributo src e, nonostante siano uguali, vengono contrassegnate come diverse a causa dei differenti attributi src.
-* Il confronto non è in grado di rilevare la rotazione di un’immagine.
+* Per le versioni, la diff non ricrea i criteri di controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
 
    * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
