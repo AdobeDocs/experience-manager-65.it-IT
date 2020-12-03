@@ -3,15 +3,15 @@ title: Rapporti sull’utilizzo e la condivisione delle risorse
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l'utilizzo, l'attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 10%
+source-wordcount: '1131'
+ht-degree: 9%
 
 ---
 
 
-# Rapporti su risorse {#asset-reports}
+# Rapporti sulle risorse {#asset-reports}
 
 Il reporting delle risorse consente di valutare l&#39;utilità della distribuzione [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] potete generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali risorse vengono scaricate e condivise.
 
@@ -152,3 +152,11 @@ Per rimuovere i rapporti non più necessari, configura il servizio Rimozione rap
 1. Aprire la configurazione **[!UICONTROL DAM Report Purge Service]**.
 1. Specificare la frequenza (intervallo di tempo) per il servizio di eliminazione nel campo `scheduler.expression.name`. Puoi anche configurare la soglia di età e quantità per i rapporti.
 1. Salva le modifiche.
+
+## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
+
+* Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, accertatevi che il servizio [!UICONTROL Giornata CQ DAM Event Recorder] sia attivato.
+
+* Rimuovete i rapporti non più richiesti. Utilizzate le opzioni di configurazione nel servizio DAM Report Purge per configurare i criteri per l&#39;eliminazione dei rapporti.
+
+* Se il rapporto sull&#39;uso del disco non viene generato e si utilizza [!DNL Dynamic Media], assicurarsi che tutte le risorse procedano correttamente. Per risolvere il problema, rielaborare le risorse e generare di nuovo il rapporto.
