@@ -27,10 +27,8 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 >Selezione multipla su un dispositivo desktop:
 >
 >* Windows: **Ctrl**+**clic** sui componenti richiesti.
-   >
-   >
-* Mac: **Comando**+**clic** sui componenti richiesti.
-
+>
+>* Mac: **Comando**+**clic** sui componenti richiesti.
 >
 
 
