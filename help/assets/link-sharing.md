@@ -3,10 +3,10 @@ title: Condivisione di risorse tramite un collegamento
 description: Condividete risorse, cartelle e raccolte come URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 6%
+source-wordcount: '1056'
+ht-degree: 5%
 
 ---
 
@@ -57,9 +57,9 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    >
    >Se immettete un ID e-mail di un utente che non è membro dell&#39;organizzazione, le parole [!UICONTROL Utente esterno] hanno il prefisso dell&#39;ID e-mail dell&#39;utente.
 
-1. Nel campo **[!UICONTROL Oggetto]**, inserire un oggetto.
+1. Nella casella **[!UICONTROL Oggetto]**, inserite l’oggetto della risorsa da condividere.
 
-1. Nel campo **[!UICONTROL Messaggio]**, immettere un messaggio facoltativo.
+1. Nella casella **[!UICONTROL Messaggio]**, immettere un messaggio facoltativo.
 
 1. Nel campo **[!UICONTROL Scadenza]**, specificare una data e un&#39;ora di scadenza affinché il collegamento smetta di funzionare. Per impostazione predefinita, la data di scadenza è impostata per una settimana dalla data di condivisione del collegamento.
 
@@ -69,9 +69,9 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 1. Fate clic su **[!UICONTROL Condividi]**. Un messaggio conferma la condivisione del collegamento con gli utenti tramite e-mail.
 
-1. Per visualizzare la risorsa condivisa, fate clic sul collegamento contenuto nell&#39;e-mail inviata all&#39;utente. La risorsa condivisa viene visualizzata nella pagina **[!UICONTROL Adobe Marketing Cloud]**.
+1. Per visualizzare la risorsa condivisa, fate clic sul collegamento contenuto nell&#39;e-mail inviata all&#39;utente. La risorsa condivisa viene visualizzata nella pagina [!UICONTROL Adobe Marketing Cloud].
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Le risorse condivise sono disponibili in Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. Per generare un’anteprima della risorsa, fate clic sulla risorsa condivisa. Per chiudere l&#39;anteprima e tornare alla pagina **[!UICONTROL Marketing Cloud]**, fare clic su **[!UICONTROL Indietro]** nella barra degli strumenti. Se avete condiviso una cartella, fate clic su **[!UICONTROL Cartella principale]** per tornare alla cartella principale.
 
@@ -83,7 +83,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 1. Per scaricare la risorsa condivisa, fate clic su **[!UICONTROL Seleziona]** nella barra degli strumenti, fate clic sulla risorsa, quindi su **[!UICONTROL Scarica]** dalla barra degli strumenti.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Opzione della barra degli strumenti per scaricare la risorsa condivisa](assets/chlimage_1-547.png)
 
 1. Per visualizzare le risorse condivise come collegamenti, passate all&#39;interfaccia utente [!DNL Assets] e fate clic sul logo [!DNL Experience Manager]. Scegliere **[!UICONTROL Navigazione]**. Nel riquadro di navigazione, scegliete **[!UICONTROL Collegamenti condivisi]** per visualizzare un elenco delle risorse condivise.
 
