@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Questa pagina descrive l’utilizzo dei widget nell’interfaccia classica, obsoleto in AEM 6.4.
 >
-> Adobe consiglia di utilizzare l&#39;interfaccia touch moderna [basata su [interfaccia utente Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e [interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).](/help/sites-developing/touch-ui-concepts.md)
+>Adobe consiglia di utilizzare la moderna interfaccia [touch basata sull’interfaccia utente](/help/sites-developing/touch-ui-concepts.md) [Coral e l’interfaccia utente](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 L&#39;interfaccia basata su Web di Adobe Experience Manager utilizza AJAX e altre moderne tecnologie di browser per consentire la modifica e la formattazione WYSIWYG dei contenuti da parte degli autori direttamente sulla pagina Web.
 
