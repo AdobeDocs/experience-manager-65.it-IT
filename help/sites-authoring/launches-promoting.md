@@ -60,7 +60,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
 
    * la console **Sites**:
 
-      1. Aprite la barra dei riferimenti [a1/> e selezionate la pagina di origine desiderata utilizzando la modalità di selezione [a3/> (oppure selezionate e aprite la barra dei riferimenti, l&#39;ordine non è importante). ](/help/sites-authoring/basic-handling.md)](/help/sites-authoring/author-environment-tools.md#showingpagereferences) Verranno visualizzati tutti i riferimenti.
+      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Verranno visualizzati tutti i riferimenti.
 
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
