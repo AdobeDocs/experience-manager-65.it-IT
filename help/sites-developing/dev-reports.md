@@ -404,7 +404,7 @@ default: `9` (è anche il massimo consentito)
 
 Ogni rapporto può avere una finestra di dialogo di configurazione, che consente all&#39;utente di specificare vari parametri per il rapporto. Questa finestra di dialogo è accessibile tramite il pulsante **Modifica** all&#39;apertura della pagina del rapporto.
 
-Questa finestra di dialogo è una finestra di dialogo standard di CQ [e può essere configurata come tale (vedere [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).](/help/sites-developing/components-basics.md#dialogs)
+Questa finestra di dialogo è una [finestra](/help/sites-developing/components-basics.md#dialogs) standard di CQ e può essere configurata come tale (per ulteriori informazioni, vedere [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) ).
 
 Esempio di finestra di dialogo:
 
