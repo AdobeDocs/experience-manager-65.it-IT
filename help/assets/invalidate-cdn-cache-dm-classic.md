@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 24%
@@ -50,7 +50,7 @@ Vedere anche [Panoramica della cache in Dynamic Media Classic (Scene7)](https://
    Se il modello contiene solo `<ID>`, l&#39;elemento multimediale dinamico si riempie in `https://<server>/is/image` dove `<server>` è il nome del server di pubblicazione definito in Impostazioni generali e &lt;ID> è la risorsa o le risorse selezionate per essere annullate.
 
 1. Nell&#39;angolo inferiore destro della pagina, fare clic su **[!UICONTROL Chiudi.]**
-1. Nell’interfaccia utente di Dynamic Media Classic (Scene7), selezionate una o più risorse, quindi fate clic su **[!UICONTROL File > Annulla validità CDN.]** Vedrete un elenco di uno o più URL generati dal modello e dalle risorse selezionate. Utilizza l’URL del server elencato in &quot;Nome server pubblicato&quot; nelle Impostazioni generali applicazione.
+1. Nell’interfaccia utente di Dynamic Media Classic, selezionate una o più risorse, quindi fate clic su **[!UICONTROL File > Annulla validità CDN.]** Vedrete un elenco di uno o più URL generati dal modello e dalle risorse selezionate. Utilizza l’URL del server elencato in &quot;Nome server pubblicato&quot; nelle Impostazioni generali applicazione.
 
    Ad esempio, con il modello di annullamento validità CDN impostato nel passaggio precedente, supponete di aver selezionato una singola immagine di risorsa immagine denominata `Backpack_B`. Quando si fa clic su **[!UICONTROL File > Annulla validità CDN]**, nell&#39;interfaccia utente di annullamento validità CDN viene generato il seguente URL:
 
