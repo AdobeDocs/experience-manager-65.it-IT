@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 17%
@@ -227,7 +227,7 @@ Il valore esatto restituito dall&#39;elemento dati dipende dal contesto. Se l&#3
    * Utilizza l&#39;evento di pressione tasti dall&#39;estensione Core  Adobe Launch come attivatore.
    * Invia il valore di **[!UICONTROL ZoomScale]** Data Element a  Adobe Analytics.
 
-A questo punto, si supponga che l’utente finale carichi la pagina Web con i due visualizzatori. In *visualizzatore1*, lo zoom viene effettuato su una scala del 50%; quindi, in *viewer2*, viene applicato lo zoom in una scala del 25%. In *viewer1*, l&#39;immagine viene spostata e infine premere un tasto sulla tastiera.
+A questo punto, si supponga che l’utente finale carichi la pagina Web con i due visualizzatori. In *visualizzatore1*, lo zoom viene effettuato su una scala del 50%; quindi, in *viewer2*, viene applicato lo zoom in una scala del 25%. In *viewer1*, l&#39;immagine viene spostata e infine viene selezionato un tasto sulla tastiera.
 
 L&#39;attività dell&#39;utente finale determina l&#39;effettuazione di due chiamate di tracciamento a  Adobe Analytics:
 
