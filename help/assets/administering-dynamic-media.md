@@ -1,14 +1,14 @@
 ---
 title: Impostazione di contenuti multimediali dinamici
-description: Per impostare i contenuti multimediali dinamici, è necessario configurare i contenuti multimediali dinamici e gestire i predefiniti per immagini e visualizzatori
+description: Per configurare gli elementi multimediali dinamici, dovete configurare gli elementi multimediali dinamici e gestire i predefiniti per immagini e visualizzatori.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questa documentazione descrive le funzionalità per contenuti multimediali dinamici, integrate direttamente in AEM. Se utilizzi Dynamic Media Classic (precedentemente denominato Scene7) integrato in AEM, consulta la sezione [Documentazione sull&#39;integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Questa documentazione descrive le funzionalità per contenuti multimediali dinamici, integrate direttamente in AEM. Se utilizzi Dynamic Media Classic integrato in AEM, consulta la sezione [Documentazione di integrazione Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
 >Per informazioni sui casi in cui è possibile utilizzare AEM integrato con Dynamic Media Classic con i contenuti multimediali dinamici, vedere [Scenario a doppio uso](/help/sites-administering/scene7.md#dual-use-scenario).
 
