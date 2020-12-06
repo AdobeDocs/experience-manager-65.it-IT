@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7
-description: Risoluzione di problemi relativi a contenuti multimediali dinamici in modalità di esecuzione Scene7.
+description: Risoluzione dei problemi relativi ai contenuti multimediali dinamici in esecuzione in modalità Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Verificate che l’elemento multimediale dinamico sia stato configurato corretta
 * Tutti i pacchetti di correzioni AEM 6.4 cumulative (CFP) sono stati installati prima *prima di* tutti i pacchetti di funzioni per elementi multimediali dinamici disponibili.
 * È installato Feature Pack 18912 opzionale.
 
-   Questo pacchetto di funzioni opzionale è disponibile per il supporto FTP o se state eseguendo la migrazione delle risorse a contenuti multimediali dinamici da Dynamic Media Classic (Scene7).
+   Questo pacchetto di funzioni opzionale è disponibile per il supporto FTP o se state eseguendo la migrazione delle risorse a contenuti multimediali dinamici da Dynamic Media Classic.
 
 * Andate all&#39;interfaccia utente dei Cloud Services e verificate che l&#39;account di provisioning sia visualizzato in **[!UICONTROL Configurazioni disponibili.]**
 * Assicurarsi che l&#39;agente di replica `Dynamic Media Asset Activation (scene7)` sia abilitato.
