@@ -3,10 +3,10 @@ title: Facet di ricerca per filtrare i risultati di ricerca
 description: Come creare, modificare e utilizzare i facet di ricerca in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 18%
+source-wordcount: '2424'
+ht-degree: 17%
 
 ---
 
@@ -38,15 +38,15 @@ Per le ricerche full-text, aggiungere il predicato [!UICONTROL Fulltext] al modu
    >
    >1. Passare a `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
    >1. Eliminare il nodo **type**.
-   >1. Dal percorso */libs/settings/dam/search/facets/assets/jcr:content/items*, copia i nodi **asset, directory, typeor, excludepaths** e **searchtype** nel percorso indicato al passaggio 1.
+   >1. Dal percorso `/libs/settings/dam/search/facets/assets/jcr:content/items`, copiare i nodi `asset`, `directory`, `typeor`, `excludepaths` e `searchtype` nel percorso indicato al punto 1.
    >1. Salva le modifiche.
 
 
 1. Nella pagina [!UICONTROL Edit Search Forms] (Modifica ricerca), trascinare un predicato dalla scheda **[!UICONTROL Select Predicate]** al riquadro principale. Ad esempio, trascinare **[!UICONTROL Predicato proprietà]**.
 
-   ![Premere e spostare un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
+   ![Selezionate e spostate un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
 
-   *Figura: Premere e spostare un predicato per personalizzare i filtri di ricerca.*
+   *Figura: Selezionate e spostate un predicato per personalizzare i filtri di ricerca.*
 
 1. Nella scheda [!UICONTROL Impostazioni], immettete un&#39;etichetta di campo, un testo segnaposto e una descrizione per il predicato. Specificate un nome valido per la proprietà di metadati che desiderate associare al predicato. L&#39;etichetta dell&#39;intestazione nella scheda [!UICONTROL Impostazioni] identifica il tipo di predicato selezionato.
 
