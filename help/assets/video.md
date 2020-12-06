@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11812'
 ht-degree: 8%
 
 ---
@@ -146,7 +146,7 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 
 Vedere [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) esempio.
 
-Consultate anche [Visualizzatori per  AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizzatori per AEM risorse](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento  visualizzatori Adobe Scene7.
+Consultate anche [Visualizzatori per  AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori per AEM solo risorse](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente l
 
 Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione in HTML5 e CSS, di usufruire di riproduzione incorporata e di utilizzare lo streaming adattativo e progressivo a seconda delle funzionalità del browser, i contenuti multimediali potranno essere visti dagli utenti desktop e mobili e potranno così godere di un’esperienza video ottimizzata.
 
-Consultate anche [I visualizzatori HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7 .
+Consultate anche [I visualizzatori HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS è uno standard Apple per lo streaming di video adattivi che regola automati
 
 Il video progressivo viene distribuito scaricando e memorizzando localmente il video sul sistema desktop o sul dispositivo mobile di un utente.
 
-La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano il visualizzatore video Scene7.
+La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili mediante il visualizzatore video per contenuti multimediali dinamici.
 
 <table>
  <tbody>
@@ -1005,9 +1005,9 @@ Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i
 
 Se utilizzate un visualizzatore video predefinito fornito da Contenuti multimediali dinamici, o se avete creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video integrato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’SDK per visualizzatori HTML5 di Scene7, effettuate le seguenti operazioni per fare in modo che il visualizzatore video invii eventi di tracciamento a rapporti video per elementi multimediali dinamici.
 
-Per creare visualizzatori video personalizzati, usate Scene7 Viewers Reference e l’SDK per visualizzatori Scene7 HTML5.
+Per creare visualizzatori video personalizzati, usate Dynamic Media Viewers Reference (Riferimento visualizzatori contenuti multimediali dinamici) e Scene7 HTML5 Viewers SDK.
 
-Consultate la [Guida di riferimento dei visualizzatori Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 <!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
