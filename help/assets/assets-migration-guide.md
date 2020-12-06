@@ -3,9 +3,9 @@ title: Migrazione delle risorse in blocco
 description: Descrive come inserire risorse in  [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -79,7 +79,7 @@ Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessi
 
 ### Elabora rappresentazioni {#processing-renditions}
 
-Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio generazione PTIFF Scene7 o integrazione [!DNL InDesign Server].
+Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione di Dynamic Media PTIFF o l&#39;integrazione con [!DNL InDesign Server].
 
 Dopo aver configurato il flusso di lavoro in base alle esigenze, potete eseguire il flusso di lavoro in due modi:
 
