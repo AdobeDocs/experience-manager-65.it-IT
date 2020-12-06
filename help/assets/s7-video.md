@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1586'
 ht-degree: 55%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 55%
 
 # Video {#video}
 
-Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic (Scene7) e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
+Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
 
 L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
 
 * Il componente **[!UICONTROL Scene7 Video]** esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato corretto e la qualità video corretta su computer desktop, tablet e dispositivi mobili.
-* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows. Per ulteriori informazioni, vedi [la documentazione di Scene7 sui set di video adattivi](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows.
 
 ## Informazioni su FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -60,11 +60,11 @@ Se avete bisogno di un flusso di lavoro o di un controllo delle versioni per le 
 1. In AEM, accedi alle risorse video in WCM nella scheda **[!UICONTROL Filmati]** del Content Finder.
 1. Creazione con il componente **[!UICONTROL Scene7 Video]** o **[!UICONTROL Foundation Video]**.
 
-### Se stai caricando il video in Scene7 {#if-you-are-uploading-your-video-to-scene}
+### Se state caricando il video in Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Se non hai bisogno di un flusso di lavoro o di gestire le versioni delle tue risorse, caricale in Scene7. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. In Dynamic Media Classic, [impostare un caricamento e una codifica FTP pianificati su Scene7 (automatizzato del sistema)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. In Dynamic Media Classic, [impostare un caricamento e una codifica FTP pianificati su Scene7 (automatizzato del sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 1. In AEM, accedi alle risorse video in WCM della scheda **[!UICONTROL Scene7]** del Content Finder.
 1. Creare contenuti con il componente **[!UICONTROL Scene7 Video]**.
 
@@ -85,7 +85,7 @@ Per configurare i predefiniti universali:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul significato dei predefiniti per video, consultate la [Documentazione di Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Per ulteriori informazioni sul significato dei predefiniti per video, consultate la [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe consiglia di selezionare entrambi i set video adattivi per la configurazione dei predefiniti universali o di selezionare l’opzione **[!UICONTROL Codifica video adattiva]**.
 
