@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9565'
+source-wordcount: '9562'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Prima di caricare una risorsa, accertatevi che sia in un [formato](/help/assets/
 
    ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
-   Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
+   Per selezionare più file, selezionate il tasto `Ctrl` o `Command` e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
 
    Potete mettere in pausa il caricamento di risorse di grandi dimensioni (superiori a 500 MB) e riprenderlo più tardi dalla stessa pagina. Fate clic su **[!UICONTROL Pausa]** accanto alla barra di avanzamento che viene visualizzata all&#39;avvio del caricamento.
 
@@ -355,13 +355,13 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 1. Dall&#39;interfaccia utente [!DNL Assets], andate alla risorsa desiderata utilizzando `Tab` e i tasti freccia.
 
-1. Premere il tasto `Enter` sulla risorsa desiderata per aprirla. Potete ingrandire le risorse in modalità di anteprima.
+1. Selezionate il tasto `Enter` sulla risorsa desiderata per aprirla. Potete ingrandire le risorse in modalità di anteprima.
 
 1. Per ingrandire la risorsa:
    1. Utilizzate il tasto `Tab` per spostare lo stato attivo sull&#39;opzione di zoom in.
    1. Utilizzate il tasto `Enter` per ingrandire l&#39;immagine.
 
-   Per ridurre la visualizzazione, utilizzate il tasto `Tab` per spostare la messa a fuoco sull&#39;opzione di zoom out e premete `Enter`.
+   Per ridurre la visualizzazione, utilizzate il tasto `Tab` per spostare la messa a fuoco sull&#39;opzione di zoom out e selezionate `Enter`.
 
 1. Utilizzare i tasti `Shift` + `Tab` per spostare nuovamente lo stato attivo sull&#39;immagine.
 
@@ -395,7 +395,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 1. Per disattivare la risorsa dopo una determinata durata, scegliete la data/ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora di disattivazione]**. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo la [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l&#39;interfaccia Web [!DNL Assets] o tramite l&#39;API HTTP.
 
-1. Nel campo **[!UICONTROL Tag]**, selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in [!DNL Experience Manager]. [!DNL YouTube] richiede i tag per la pubblicazione. Consultate [pubblicare video su YouTube](video.md#publishing-videos-to-youtube).
+1. Nel campo **[!UICONTROL Tag]**, selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e selezionate `Enter`. Il nuovo tag viene salvato in [!DNL Experience Manager]. [!DNL YouTube] richiede i tag per la pubblicazione. Consultate [pubblicare video su YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
