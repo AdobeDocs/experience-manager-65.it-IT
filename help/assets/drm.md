@@ -3,9 +3,9 @@ title: Digital Rights Management di attività
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1398'
 ht-degree: 6%
 
 ---
@@ -50,7 +50,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 1. Nella console [!DNL Assets], fare clic su **[!UICONTROL Cerca]** nella barra degli strumenti per visualizzare la casella di ricerca Omnisearch.
 
-1. Con il cursore nella casella di ricerca Omnice, premere il tasto Invio per visualizzare la pagina dei risultati della ricerca.
+1. Con il cursore nella casella di ricerca Omnice, selezionate il tasto `Enter` per visualizzare la pagina dei risultati della ricerca.
 1. Aprite il pannello di ricerca nella barra a sinistra. Fare clic sull&#39;opzione **[!UICONTROL Stato scadenza]** per espanderla.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -110,7 +110,7 @@ La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. Per cercare le risorse in base al loro stato, fate clic su **[!UICONTROL Cerca]** ![opzione di ricerca](assets/do-not-localize/search_icon.png) per visualizzare la barra di ricerca Omnisearch.
-1. Premere Invio e fare clic su [!DNL Experience Manager] per visualizzare il pannello di ricerca.
+1. Selezionare `Return` e fare clic su [!DNL Experience Manager] per visualizzare il pannello di ricerca.
 1. Nel pannello di ricerca, fate clic su **[!UICONTROL Stato pubblicazione]** e selezionate **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
