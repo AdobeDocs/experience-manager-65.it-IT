@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '4353'
+source-wordcount: '4346'
 ht-degree: 15%
 
 ---
@@ -55,7 +55,7 @@ Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e 
 
 Diverse pagine Web hanno esigenze diverse. Ad esempio, a volte desiderate una pagina Web che fornisca un collegamento per aprire il visualizzatore HTML5 in una finestra browser separata. In altri casi, potrebbe essere necessario incorporare il visualizzatore HTML5 direttamente nella pagina host. In quest’ultimo caso, la pagina Web potrebbe avere un layout statico. Oppure può essere &quot;reattivo&quot; e può essere visualizzato in modo diverso su diversi dispositivi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti forniti con Dynamic Media supportano sia le pagine Web statiche che quelle reattive.
 
-Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate [Libreria immagini reattive](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) nella *Guida API di Scene7 Image Serving*.
+Per ulteriori informazioni su come incorporare visualizzatori reattivi nelle pagine Web, consultate [Libreria immagini reattive](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in .
 
 >[!NOTE]
 >
