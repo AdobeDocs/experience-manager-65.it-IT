@@ -4,9 +4,9 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2176'
 ht-degree: 11%
 
 ---
@@ -80,7 +80,7 @@ Per creare una raccolta dinamica, effettuate le seguenti operazioni:
 
 1. Passate all&#39;interfaccia utente [!DNL Assets] e fate clic su Cerca.
 
-1. Digitate la parola chiave di ricerca nella casella corrispondente e premete `Enter`. Aprite il pannello Filtri e applicate un filtro di ricerca.
+1. Digitate la parola chiave di ricerca nella casella corrispondente e selezionate `Enter`. Aprite il pannello Filtri e applicate un filtro di ricerca.
 
 1. Dall&#39;elenco **[!UICONTROL File e cartelle]**, selezionare **[!UICONTROL File]**.
 
@@ -120,7 +120,7 @@ In alternativa, puoi trascinare la risorsa nell&#39;area **[!UICONTROL Rilascia 
 Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della [ricerca salvata](#saved-searches).
 
 1. Nell&#39;interfaccia utente [!DNL Assets], fare clic sull&#39;opzione di ricerca ![opzione di ricerca](assets/do-not-localize/search_icon.png) nella barra degli strumenti.
-1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
+1. Con il cursore nella casella di ricerca Omnice, selezionare il tasto `Return`.
 1. Nell&#39;interfaccia [!DNL Experience Manager], aprire il pannello Filtri.
 1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
 
@@ -249,7 +249,7 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
 1. Nell&#39;interfaccia utente [!DNL Assets] fare clic su Cerca ![opzione di ricerca](assets/do-not-localize/search_icon.png).
-1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
+1. Con il cursore nel campo Omnisearch, selezionare il tasto `Return`.
 1. Nell&#39;interfaccia [!DNL Experience Manager], aprire il pannello Filtri.
 1. Nell&#39;elenco **[!UICONTROL Ricerche salvate]**, fare clic su **[!UICONTROL Elimina]** accanto alla raccolta dinamica da eliminare.
 
