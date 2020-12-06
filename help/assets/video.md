@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
 workflow-type: tm+mt
 source-wordcount: '11812'
 ht-degree: 8%
@@ -404,7 +404,7 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
 |--- |--- |--- |--- |
 | Origine | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 3 |
+| Codificato | 640 x 360 | 3 | 1 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato di file video codificato {#encoded-video-file-format}
@@ -991,13 +991,13 @@ Per visualizzare i rapporti video:
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi, nella barra a sinistra, seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video.]**
 1. Nella pagina Rapporti video, effettuate una delle seguenti operazioni:
 
-   * Nell&#39;angolo superiore destro, toccate l&#39;icona **Aggiorna rapporto video **.
+   * Nell&#39;angolo superiore destro, toccate l&#39;icona **Aggiorna rapporto video**.
 È necessario utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo, potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
-   * Vicino all&#39;angolo superiore destro, toccare l&#39;icona **Date Picker **.
+   * Vicino all&#39;angolo superiore destro, toccate l&#39;icona **Date Picker**.
 Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto.]**
 
-   La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
+   La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i video *pubblicati* presenti nel sito.
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
