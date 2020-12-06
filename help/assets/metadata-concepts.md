@@ -3,9 +3,9 @@ title: Comprendere i concetti dei metadati
 description: Scoprite la necessità e i tipi di metadati che consentono di semplificare la categorizzazione e l’organizzazione delle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 6%
 
 ---
@@ -178,7 +178,7 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa D
 | descrizione | Ulteriori informazioni sulla risorsa. |
 | format | Il formato file, il supporto fisico o le dimensioni della risorsa. [!DNL Experience Manager] utilizza  `dc:format` per indicare il tipo MIME della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
-| language | La lingua della risorsa (ad esempio, en per l’inglese). |
+| language | La lingua della risorsa (ad esempio, `en` per l’inglese). |
 | publisher | La persona o la società responsabile della messa a disposizione della risorsa. |
 | relation | Una risorsa correlata. |
 | rights | Informazioni su chi dispone dei diritti per questa risorsa. |
