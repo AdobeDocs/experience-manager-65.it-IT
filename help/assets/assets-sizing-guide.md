@@ -3,9 +3,9 @@ title: '[!DNL Assets] guida al ridimensionamento'
 description: Procedure ottimali per determinare metriche efficienti per stimare l'infrastruttura e le risorse necessarie per distribuire [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Considerati questi fattori, è necessaria una metodologia per calcolare uno spaz
 1. Consente di determinare la dimensione e il numero di risorse che verranno caricate nel sistema.
 1. Ottenete un esempio rappresentativo delle risorse da caricare in [!DNL Experience Manager]. Ad esempio, se intendete caricare nel sistema file PSD, JPG, AI e PDF, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi esempi devono essere rappresentativi delle diverse dimensioni di file e complessità delle immagini.
 1. Definire le rappresentazioni da utilizzare.
-1. Create le rappresentazioni in [!DNL Experience Manager] utilizzando le applicazioni [!DNL ImageMagick] o [!DNL Adobe Creative Cloud]. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Scene7, potete utilizzare il binario IC per generare le rappresentazioni PTIFF da memorizzare  Experience Manager.
+1. Create le rappresentazioni in [!DNL Experience Manager] utilizzando le applicazioni [!DNL ImageMagick] o [!DNL Adobe Creative Cloud]. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano i file multimediali dinamici, potete usare il binario IC per generare le rappresentazioni PTIFF da memorizzare nel  Experience Manager.
 1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati.
 1. Confrontate le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generate rappresentazioni e risorse secondarie con una dimensione combinata di 3 GB dopo aver elaborato 1 GB di risorse, il fattore di crescita della rappresentazione è 3.
 1. Determinate il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.
