@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+source-git-commit: 97c93a95cd7fe63b306d80fe127388a209b727c7
 workflow-type: tm+mt
-source-wordcount: '4989'
+source-wordcount: '4974'
 ht-degree: 1%
 
 ---
@@ -803,10 +803,7 @@ Visualizza un messaggio nella finestra Avvio rapido.
 
 Argomenti:
 
-* p1: Un valore `String` che rappresenta il messaggio da visualizzare. L&#39;illustrazione seguente mostra il risultato della chiamata di `log` con un valore p1 di `this is a log message`.
-
-![launcheruilog](assets/launcheruilog.png)
-
+* p1: Un valore `String` che rappresenta il messaggio da visualizzare.
 * Valore restituito: none
 
 **startupFinished**
@@ -821,12 +818,8 @@ Chiama il metodo startupFinished dell&#39;avvio del server. Il metodo tenta di a
 Imposta il valore di completamento del processo di avvio del server. La barra di avanzamento nella finestra Avvio rapido rappresenta il valore di completamento.
 
 * Argomenti:
-
    * p1: Un valore Mobile che rappresenta la quantità di completamento del processo di avvio, espressa in frazione. Il valore deve essere compreso tra zero e uno. Ad esempio, 0,3 indica che il 30% è completato.
-
 * Valore restituito: Nessuno.
-
-![launcherprogress](assets/launcherprogress.png)
 
 ## Servizi di terze parti {#third-party-services}
 
