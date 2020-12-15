@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -51,15 +51,15 @@ Per le informazioni necessarie, visitare [Community Components Basics](basics.md
 
 Quando vengono incluse le [librerie lato client ](essentials-featured.md#essentials-for-client-side), viene visualizzato il componente `Featured Content`:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![featuredcontent](assets/featuredcontent.png)
 
 ## Configurazione del contenuto disponibile {#configuring-featured-content}
 
 Selezionare il componente `Featured Content` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### Scheda Impostazioni {#settings-tab}
 
@@ -83,13 +83,13 @@ La capacità di contrassegnare il contenuto come contenuto in primo piano richie
 
 Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di moderazione contestuale, che includono il nuovo flag `Feature`.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-visitor-experience](assets/site-visitor-experience.png)
 
 Una volta contrassegnata come feature, il flag di modem diventa `Unfeature`.
 
 La pagina contenente il componente `Featured Content` ora includerà questo post.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-visitor-experience1](assets/site-visitor-experience1.png)
 
 `Read More` è un collegamento al post effettivo.
 
