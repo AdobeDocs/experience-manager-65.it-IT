@@ -2,9 +2,9 @@
 title: Creazione e sincronizzazione di Live Copy
 description: Scoprite come creare e sincronizzare Live Copy.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Per creare una configurazione di blueprint:
 1. [Dal ](/help/sites-authoring/basic-handling.md#global-navigation) menu  **** Strumenti, selezionare il  **** menu Siti.
 1. Selezionare **Blueprint** per aprire la console **Configurazioni Blueprint**:
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Seleziona **Crea**.
 1. Selezionare il modello di blueprint, quindi **Next** per continuare.
@@ -66,14 +66,12 @@ Per creare una configurazione di blueprint:
 1. [Dal ](/help/sites-authoring/basic-handling.md#global-navigation) menu  **** Strumenti, selezionare il  **** menu Siti.
 1. Selezionare **Blueprint** per aprire la console **Configurazioni Blueprint**:
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Selezionate la configurazione della blueprint richiesta; le azioni appropriate saranno disponibili nella barra degli strumenti:
 
    * **Proprietà**; è possibile utilizzare questa opzione per visualizzare e quindi modificare le proprietà della configurazione.
    * **Elimina**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Creazione della Live Copy {#creating-a-live-copy}
 
@@ -154,7 +152,7 @@ Per creare una copia dal vivo di un sito da una configurazione blueprint:
 1. Nella console **Siti**, selezionare **Crea**, quindi **Sito** dal selettore a discesa.
 1. Selezionate la configurazione della blueprint da usare come origine della live copy e procedete con **Next**:
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Utilizzate il selettore **Lingue iniziali** per specificare la lingua o le lingue del sito blueprint da utilizzare per la Live Copy.
 
