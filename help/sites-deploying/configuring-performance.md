@@ -677,7 +677,7 @@ La configurazione AEM colloca il repository e il datastore sullo stesso volume l
 Nella tabella seguente sono illustrate le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene installato per primo, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui viene eseguito il backup. I backup verranno creati con incrementi specifici per rappresentare un aumento significativo del contenuto e di ciò che può essere prodotto in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) si baserà approssimativamente sulla composizione realistica delle risorse di produzione. Pagine, immagini e tag possono essere limitati a un massimo di 800 pagine figlie. Ogni pagina includerà i componenti titolo, Flash, testo/immagine, video, presentazione, modulo, tabella, cloud e carosello. Le immagini verranno caricate da un pool di 400 file unici, di dimensioni comprese tra 37 kB e 594 kB.
 
 |Contenuto|Nodi|Pagine|Immagini|Tag|
-|—|—|—|—|—|
+|---|---|---|---|---|
 |Installazione di base|69 610|562|256|237|
 |Contenuto piccolo per il backup incrementale||+100|+2|+2|
 |Grande contenuto per il backup completo||+10 000|+100|+100|
