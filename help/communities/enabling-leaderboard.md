@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
@@ -44,15 +44,15 @@ Per le informazioni necessarie, visitare [Community Components Basics](/help/com
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![classifica](assets/leaderboard.png)
 
 ### Configurazione della classifica {#configuring-leaderboard}
 
 Selezionare il componente `Leaderboard` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-leaderboard](assets/configure-leaderboard.png)
 
 #### Scheda Impostazioni {#settings-tab}
 
@@ -120,7 +120,7 @@ Configurazione del componente della classifica:
    * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite di visualizzazione = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![leader dei partecipanti](assets/participants-leaderboard.png)
 
 ### Esempio: Leaderboard di esperti {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Configurazione del componente della classifica:
    * Regola assegnazione badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite di visualizzazione = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![esperti](assets/experts-leaderboard.png)
 
 ### Informazioni aggiuntive {#additional-information}
 
