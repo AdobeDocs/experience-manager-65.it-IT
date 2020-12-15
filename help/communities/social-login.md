@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
@@ -391,13 +391,13 @@ Ad esempio, http://localhost:4503/system/console/configMgr
 * Selezionate per aprire la configurazione per la modifica.
 * Seleziona **[!UICONTROL Salva]**.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![graniteoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Fare attenzione a non confondere il gestore di autenticazione con un&#39;istanza Facebook o Twitter di *Adobe Granite OAuth Application and Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![graniteoauth1](assets/graniteoauth1.png)
 
 ###  applicazione e provider OAuth Granite del Adobe {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ Per individuare l&#39;istanza creata per un&#39;app Facebook o Twitter:
 
    * Individuate l&#39;istanza in cui l&#39; **[!UICONTROL ID client]** corrisponde all&#39; **[!UICONTROL ID app]**.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![graniteoauth2](assets/graniteoauth2.png)
 
       Ad eccezione delle seguenti proprietà, lasciare invariate le altre proprietà della configurazione:
 
@@ -493,7 +493,7 @@ Per un’istanza di authoring, effettuate l’accesso con privilegi amministrati
 
 * Per **name** `oauthid-123`, sostituire *123* con la ***App ID*** o Twitter ***Consumer (API) Key*** che è il valore di **Client ID** nel [ Configurazione applicazione e provider OAuth Granite di Adobe](social-login.md#adobe-granite-oauth-application-and-provider).
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 Per ulteriori informazioni e strumenti, fare riferimento a [Query e indicizzazione quercia](../../help/sites-deploying/queries-and-indexing.md).
 
