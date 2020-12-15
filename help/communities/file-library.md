@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 9%
@@ -42,15 +42,15 @@ Per le informazioni necessarie, visitare [Community Components Basics](/help/com
 
 Quando vengono incluse le [librerie lato client ](/help/communities/essentials-file-library.md#essentials-for-client-side), viene visualizzato il componente `File Library`:
 
-![chlimage_1-430](assets/chlimage_1-430.png)
+![file-library1](assets/file-library1.png)
 
 ### Configurazione della libreria di file {#configuring-file-library}
 
 Selezionare il componente `File Library` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
-![chlimage_1-431](assets/chlimage_1-431.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-432](assets/chlimage_1-432.png)
+![file-library2](assets/file-library2.png)
 
 #### Scheda Commenti {#comments-tab}
 
