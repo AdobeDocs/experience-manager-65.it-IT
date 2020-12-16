@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 22%
+source-wordcount: '753'
+ht-degree: 21%
 
 ---
 
@@ -37,8 +37,12 @@ Per abilitare i modelli di frammenti di contenuto è necessario:
 
 Per [creare un nuovo modello di frammento di contenuto](#creating-a-content-fragment-model) **è necessario** prima attivarlo utilizzando Gestione configurazione:
 
+>[!CAUTION]
+>
+>Le sottoconfigurazioni (una configurazione nidificata all&#39;interno di una configurazione) non sono supportate per l&#39;uso con i frammenti di contenuto.
+
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
-1. Selezionate la posizione appropriata per il sito Web.
+
 1. Utilizzate **Create** per aprire la finestra di dialogo in cui:
 
    1. Specificare un **Titolo**.
@@ -47,6 +51,8 @@ Per [creare un nuovo modello di frammento di contenuto](#creating-a-content-frag
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selezionare **Crea** per salvare la definizione.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Applica la configurazione alla cartella delle risorse {#apply-the-configuration-to-your-assets-folder}
 
