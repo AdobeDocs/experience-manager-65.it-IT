@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
+source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -294,7 +294,7 @@ La funzione della classifica è una pagina con un componente [Leaderboard](/help
 
 Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![classifica di dialogo](assets/leaderboard-dialog.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -325,7 +325,7 @@ La funzione QnA è una pagina con un componente [QnA](/help/communities/working-
 
 Quando viene aggiunta a un modello, la configurazione consente restrizioni ai membri privilegiati:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -353,11 +353,11 @@ Quando viene aggiunta a un modello, la configurazione consente restrizioni ai me
 
 È possibile creare una funzione community selezionando l&#39;icona `Create Community Function` nella parte superiore della console Funzioni community. Possono essere create più funzioni basate sulla stessa Blueprint AEM e successivamente personalizzate in modo univoco aprendo la modalità di modifica dell’autore.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![funzione create-community](assets/create-community-function.png)
 
 ### Nome funzione community {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 Nel pannello Nome funzione community, sono configurati un nome, una descrizione e se la funzione è abilitata o disabilitata:
 
@@ -375,7 +375,7 @@ Nel pannello Nome funzione community, sono configurati un nome, una descrizione 
 
 ### Blueprint AEM {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem-blueprint](assets/aem-blueprint.png)
 
 Nel pannello `AEM Blueprint` è possibile selezionare il modello che è l&#39;implementazione sottostante della funzione community.
 
@@ -387,13 +387,13 @@ Vedere anche [Multi Site Manager](/help/sites-administering/msm.md).
 
 ### Miniatura  {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![funzione-miniatura](assets/funtion-thumbnail.png)
 
 Nel pannello Miniature, è possibile caricare un&#39;immagine da visualizzare nella [console Funzioni community](#community-functions-console).
 
 ## Apri funzione community {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![open-function](assets/open-function.png)
 
 Selezionate l&#39;icona `Open Community Function` per passare alla modalità di modifica dell&#39;autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
 
@@ -409,6 +409,6 @@ Per informazioni dettagliate sulla configurazione, visitare [Community Component
 
 ## Funzione modifica per community {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![edit-function](assets/edit-function.png)
 
 Selezionare l&#39;icona `Edit Community Function` per modificare le proprietà della funzione utilizzando gli stessi pannelli di [creazione di una funzione community](#create-community-function), compresa l&#39;attivazione o la disattivazione della funzione.
