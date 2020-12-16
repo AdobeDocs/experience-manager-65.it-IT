@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -90,7 +90,7 @@ Se il profilo utente non è stato creato mediante autoregistrazione, la prima vo
 
 Al successivo accesso del membro, viene visualizzata la pagina principale, identificata dalla prima voce di menu.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![iscritto](assets/enrolled-member.png)
 
 ### Assegnazioni {#assignments}
 
@@ -106,11 +106,11 @@ Ogni assegnazione fornisce informazioni di base su:
 
 Il tipo di assegnazione è indicato da un&#39;icona nell&#39;angolo superiore sinistro della scheda. L&#39;immagine di una strada è per un percorso di apprendimento con il numero di risorse di abilitazione incluse.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![assegnazione1](assets/assignment1.png)
 
 Selezionando *Lezioni di sci* verranno visualizzate le due risorse di abilitazione a cui fa riferimento il percorso di apprendimento.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![assegnazione2](assets/assignment2.png)
 
 Selezionando *Lezione sci 1* si aprirà la pagina dei dettagli della risorsa di abilitazione.
 
@@ -118,7 +118,7 @@ Dalla pagina dei dettagli, il membro è in grado di apprendere, [valutare](ratin
 
 Le interazioni con la risorsa di abilitazione saranno riportate nella sezione Rapporto accessibile nell’ambiente di authoring.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![assegnazione3](assets/assignment3.png)
 
 ### Catalogo sci {#ski-catalog}
 
@@ -126,7 +126,7 @@ La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo s
 
 Se a un membro non sono state assegnate risorse di abilitazione, direttamente o attraverso un percorso di apprendimento, è possibile interagire con le risorse di abilitazione presenti in un catalogo e fornire feedback attraverso commenti e valutazioni.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![ski-catalog](assets/ski-catalog.png)
 
 ### Discussioni {#discussions}
 
@@ -138,7 +138,7 @@ Disconnettetevi ed effettuate l&#39;accesso come Sidney Croft (sidney / password
 
 Notate che, oltre alla moderazione in linea, ci sono opzioni per condividere l&#39;argomento sui social media o per inviare l&#39;argomento via e-mail.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![discussioni](assets/discussions.png)
 
 ### Novità {#what-s-new}
 
@@ -146,7 +146,7 @@ La voce di menu `What's New` è il titolo dato dalla [funzione di flusso di atti
 
 Sempre con accesso come Sidney, selezionate il collegamento `What's New` per mostrare l&#39;attività.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![whats-new-menu](assets/whats-new-menu.png)
 
 ## Membro della community trusted {#trusted-community-member}
 
@@ -159,7 +159,7 @@ Accedi con
 
 Una volta effettuato l&#39;accesso, viene visualizzata una nuova voce di menu, `Administration`, in quanto al membro è stato assegnato il ruolo di moderatore.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![homepage di trusted](assets/trusted-member-homepage.png)
 
 La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto con le risorse di moderatore e abilitazione e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
 
@@ -171,7 +171,7 @@ Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per
 
 Passando il puntatore su una scheda di commento vengono visualizzate le azioni di moderazione.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![administration](assets/administration.png)
 
 ## Report sull&#39;autore {#reports-on-author}
 
@@ -213,7 +213,7 @@ Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Anal
 
 #### Rapporto sulle risorse delle lezioni di sci {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![racconto sulle lezioni di sci](assets/ski-lessons-report.png)
 
 #### Rapporto utente sulle lezioni di sci {#ski-lessons-user-report}
 
@@ -223,7 +223,7 @@ Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Anal
 * Open card `Ski Lessons`
 * Seleziona `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![ski-learning-user-report](assets/ski-lessons-user-report.png)
 
 ### Console Rapporti {#reports-console}
 
@@ -245,7 +245,7 @@ Per i rapporti sulle assegnazioni:
 
 * Selezionare **[!UICONTROL Generate]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![assegnazione report](assets/report-assignment.png)
 
 Per i rapporti sulle visualizzazioni:
 
@@ -259,6 +259,6 @@ Per i rapporti sulle visualizzazioni:
 
 * Selezionare **[!UICONTROL Generate]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![report-views](assets/report-views.png)
 
 **[⇐ creare e assegnare risorse di abilitazione](resource.md)**
