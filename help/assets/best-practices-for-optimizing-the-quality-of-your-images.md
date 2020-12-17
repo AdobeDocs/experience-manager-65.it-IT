@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1449'
 ht-degree: 5%
 
 ---
@@ -20,12 +20,12 @@ ht-degree: 5%
 
 L’ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono a ottenere risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell’immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi per la distribuzione di immagini per elementi multimediali dinamici per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
+AEM include più di 100 comandi Dynamic Media per la distribuzione delle immagini per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
 
 ## Procedure ottimali per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * I formati JPG o PNG rappresentano la scelta migliore per la distribuzione di immagini di buona qualità e con dimensioni e peso gestibili.
-* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini multimediali dinamiche.
+* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini Dynamic Media.
 * Il formato JPG si comprime con un rapporto di 10:1 e in genere produce file di dimensioni ridotte. Il formato PNG viene compresso con un rapporto di circa 2:1, tranne in alcuni casi, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, i file PNG sono di dimensioni maggiori rispetto ai file JPG.
 * Il formato JPG utilizza la compressione con perdita di dati, ossia durante la compressione vengono omessi gli elementi dell&#39;immagine (pixel). Il formato PNG utilizza invece la compressione senza perdita di dati.
 * Il formato JPG spesso comprime le immagini fotografiche con una fedeltà migliore rispetto alle immagini sintetiche con bordi netti e contrasto elevato.
@@ -46,7 +46,7 @@ Come procedura ottimale per il ridimensionamento delle immagini, utilizzate `&wi
 
 La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito Web e in cui si verificano numerosi errori. Dedica il tempo necessario per scoprire come funzionano la nitidezza e la maschera di contrasto in AEM, facendo riferimento alle seguenti risorse utili:
 
-Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/s7_sharpening_images.pdf) si applica anche a AEM.
+Il white paper sulle procedure ottimali [La nitidezza delle immagini in  Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) si applica anche a AEM.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -72,7 +72,7 @@ Esistono due metodi per rendere le immagini più nitide:
 
       AEM argomento della guida sulla nitidezza di un’immagine.
 
-      White paper sulle procedure ottimali [Nitidezza delle immagini in  Adobe Scene7 Publishing System e su Image Server](/help/assets/assets/s7_sharpening_images.pdf).
+      White paper sulle procedure ottimali [Nitidezza delle immagini in  Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
    * AEM inoltre consente di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell’immagine utilizzando il valore 1.
 
@@ -124,7 +124,7 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggi
 
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
-* Provate a utilizzare parametri diversi in tempo reale, direttamente su un URL o utilizzando la funzionalità di regolazione delle immagini di Scene7 Publishing System, che fornisce anteprime in tempo reale per le operazioni di regolazione.
-* Come procedura ottimale, potete raggruppare i comandi Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
+* Provate e testate i diversi parametri in tempo reale, direttamente su un URL.
+* Come procedura ottimale, potete raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
 * AEM inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio l’applicazione della nitidezza alle immagini durante l’assimilazione. Per i casi d&#39;uso avanzati in cui questa può essere un&#39;opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può essere di aiuto con approfondimenti personalizzati e procedure ottimali.
 
