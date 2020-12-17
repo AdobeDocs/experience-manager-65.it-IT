@@ -1,6 +1,6 @@
 ---
-title: Gestione dei predefiniti per immagini per contenuti multimediali dinamici
-description: Comprendere i predefiniti per immagini per contenuti multimediali dinamici e imparare a creare, modificare e gestire i predefiniti per immagini
+title: Gestione dei predefiniti per immagini Dynamic Media
+description: Comprendere i predefiniti per immagini di Dynamic Media e imparare a creare, modificare e gestire i predefiniti per immagini
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,15 +10,15 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
 workflow-type: tm+mt
-source-wordcount: '3867'
+source-wordcount: '3866'
 ht-degree: 10%
 
 ---
 
 
-# Gestione dei predefiniti per immagini per contenuti multimediali dinamici{#managing-image-presets}
+# Gestione dei predefiniti per immagini Dynamic Media{#managing-image-presets}
 
 I predefiniti per immagini consentono a  AEM Assets di distribuire dinamicamente immagini di diverse dimensioni, in diversi formati o con altre proprietà immagine generate in modo dinamico. Ciascun predefinito per immagini rappresenta una raccolta di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando create un predefinito per immagini, scegliete una dimensione per la distribuzione delle immagini. Potete anche scegliere i comandi di formattazione in modo che l’aspetto dell’immagine venga ottimizzato quando l’immagine viene trasmessa per la visualizzazione.
 
@@ -32,13 +32,13 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 >
 >La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](/help/assets/imaging-faq.md).
 
-## Predefiniti immagine per contenuti multimediali dinamici {#understanding-image-presets}
+## I predefiniti per immagini Dynamic Media {#understanding-image-presets}
 
 Analogamente a una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponete che nel vostro sito Web ciascuna immagine di prodotto venga visualizzata in dimensioni diverse, in formati diversi e con tassi di compressione per la distribuzione desktop e mobile.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagine.
+>In Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse di immagine.
 
 Potete creare due predefiniti per immagini: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. Potete creare due predefiniti per immagini, uno denominato `Enlarge` per visualizzare le immagini a 500x500 pixel e uno denominato `Thumbnail` per visualizzare le immagini a 150x150 pixel. Per distribuire le immagini nelle dimensioni `Enlarge` e `Thumbnail`, AEM cercare la definizione del predefinito per immagini Ingrandimento e Miniatura. Quindi AEM genera in modo dinamico un’immagine secondo le specifiche di ridimensionamento e formattazione di ciascun predefinito per immagini.
 
@@ -46,7 +46,7 @@ Le immagini la cui dimensione viene ridotta quando vengono trasmesse in modo din
 
 Gli amministratori possono creare dei predefiniti per immagini. Per creare un predefinito per immagini, potete partire da zero o iniziare da uno esistente e salvarlo con un nuovo nome.
 
-## Gestione dei predefiniti per immagini per elementi multimediali dinamici {#managing-image-presets-1}
+## Gestione dei predefiniti per immagini Dynamic Media {#managing-image-presets-1}
 
 Per gestire i predefiniti per immagini in AEM, toccate o fate clic sul logo AEM per accedere alla console di navigazione globale, quindi toccate o fate clic sull&#39;icona Strumenti e andate a **[!UICONTROL Risorse > Predefiniti immagini.]**
 
@@ -56,9 +56,9 @@ Per gestire i predefiniti per immagini in AEM, toccate o fate clic sul logo AEM 
 >
 >Eventuali predefiniti per immagini creati sono disponibili anche come rappresentazioni dinamiche per l’anteprima o la distribuzione delle risorse.
 >
->In *Contenuti multimediali dinamici - Modalità Scene7*, *non* è necessario pubblicare i predefiniti per immagini come predefiniti per immagini vengono pubblicati automaticamente.
+>In *Dynamic Media - Modalità Scene7*, *non* è necessario pubblicare i predefiniti per immagini come predefiniti per immagini vengono pubblicati automaticamente.
 >
->In *Contenuti multimediali dinamici - Modalità ibrida*, è necessario pubblicare manualmente i predefiniti per immagini.
+>In *Dynamic Media - Modalità ibrida*, è necessario pubblicare manualmente i predefiniti per immagini.
 >
 >Consultate [Pubblicazione dei predefiniti per immagini.](#publishing-image-presets)
 
@@ -70,7 +70,7 @@ Per gestire i predefiniti per immagini in AEM, toccate o fate clic sul logo AEM 
 
 >[!NOTE]
 >
->Questo argomento è applicabile solo a Contenuti multimediali dinamici - Modalità ibrida.
+>Questo argomento è applicabile solo alla modalità ibrida Dynamic Media.
 
 Se intendete supportare l’assimilazione di file AI, EPS e PDF in modo da poter generare rappresentazioni dinamiche di questi formati di file, prima di creare i predefiniti per immagini potrebbe essere utile consultare le seguenti informazioni.
 
@@ -85,7 +85,7 @@ Vedere anche [Visualizzazione delle pagine di un file con più pagine](/help/ass
 
 Potete visualizzare le risorse secondarie o le pagine quando aprite la risorsa, toccare il menu Contenuto e selezionare **[!UICONTROL Risorse secondarie]** o **[!UICONTROL Pagine.]** Le attività secondarie sono attività reali. In altre parole, le pagine PDF vengono estratte dal componente del flusso di lavoro `Create Sub Asset`. Vengono quindi memorizzati come `page1.pdf`, `page2.pdf` e così via sotto la risorsa principale. Una volta memorizzati, il flusso di lavoro `DAM Update Asset` li elabora.
 
-Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, EPS o PDF, sono necessari i seguenti passaggi di elaborazione:
+Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, EPS o PDF, sono necessari i seguenti passaggi di elaborazione:
 
 1. Nel flusso di lavoro `DAM Update Asset`, il componente di processo `Rasterize PDF/AI Image Preview Rendition` rasterizza la prima pagina della risorsa originale, utilizzando la risoluzione configurata, in una rappresentazione `cqdam.preview.png`.
 
@@ -162,7 +162,7 @@ Il componente Processo estrazione file multimediali nel flusso di lavoro `DAM Up
 
 I percorsi ExtendScript  negli argomenti del componente Processo estrazione file multimediali nel flusso di lavoro [!UICONTROL DAM Update Asset].
 
-I seguenti script sono utilizzati dall&#39;integrazione di Dynamic Media:
+I seguenti script sono utilizzati dall&#39;integrazione Dynamic Media:
 
 <table>
  <tbody>
@@ -191,7 +191,7 @@ I seguenti script sono utilizzati dall&#39;integrazione di Dynamic Media:
 
 ## Configurazione delle dimensioni delle miniature delle immagini {#configuring-image-thumbnail-size}
 
-Per configurare la dimensione delle miniature, è possibile configurare tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]**. Nel flusso di lavoro, potete configurare la dimensione delle miniature delle risorse immagine in due passaggi. Sebbene per le risorse di immagini dinamiche venga utilizzato un (**[!UICONTROL Dynamic Media Process Image Assets]**) e l&#39;altro (**[!UICONTROL Process Thumbnails]**) per la generazione di miniature statiche o quando tutti gli altri processi non generano miniature, *entrambi i processi devono avere le stesse impostazioni.*
+Per configurare la dimensione delle miniature, è possibile configurare tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]**. Nel flusso di lavoro, potete configurare la dimensione delle miniature delle risorse immagine in due passaggi. Sebbene per le risorse di immagini dinamiche sia utilizzato un (**[!UICONTROL Dynamic Media Process Image Assets]**) e un altro (**[!UICONTROL Process Thumbnails]**) per la generazione di miniature statiche o quando tutti gli altri processi non generano miniature, *entrambi i processi devono avere le stesse impostazioni.*
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
@@ -211,7 +211,7 @@ Il ridimensionamento delle miniature è definito nel seguente formato: **[!UICON
 **Per configurare le dimensioni** delle miniature di immagine:
 
 1. Toccate **[!UICONTROL Strumenti > Flusso di lavoro > Modelli > DAM Update Asset > Edit (Aggiorna risorsa DAM).]**
-1. Toccate il passaggio **[!UICONTROL Risorse immagine processo multimediale dinamico]** e toccate o fate clic sulla scheda **[!UICONTROL Miniature]**. Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK.]**
+1. Toccate il passaggio **[!UICONTROL Dynamic Media Process Image Assets]** e toccate o fate clic sulla scheda **[!UICONTROL Miniature]**. Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK.]**
 
    ![6_5_dynamicmediaprocessimageassets-mininailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -223,11 +223,11 @@ Il ridimensionamento delle miniature è definito nel seguente formato: **[!UICON
 
 1. Toccate **[!UICONTROL Salva]** per salvare le modifiche nel flusso di lavoro.
 
-### Aumento o riduzione del numero di predefiniti per immagini per file multimediali dinamici visualizzati {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Aumento o riduzione del numero di predefiniti per immagini Dynamic Media visualizzati {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 I predefiniti per immagini creati sono disponibili come rappresentazioni dinamiche per l’anteprima delle risorse. AEM mostra diverse rappresentazioni dinamiche quando visualizzate una risorsa da **[!UICONTROL Visualizzazione dettagli > Rappresentazioni.]** Potete aumentare o diminuire il limite di rappresentazioni visualizzate.
 
-**Per aumentare o diminuire il numero di predefiniti per immagini per file multimediali dinamici visualizzati**:
+**Per aumentare o diminuire il numero di predefiniti per immagini Dynamic Media visualizzati**:
 
 1. Andate al CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Andate al nodo di elenco dei predefiniti per immagini in `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -242,9 +242,9 @@ I predefiniti per immagini creati sono disponibili come rappresentazioni dinamic
 1. Nella proprietà limit, modificare il numero in base al numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toccare **[!UICONTROL Salva tutto.]**
 
-## Creazione di un predefinito per immagini per file multimediali dinamici {#creating-image-presets}
+## Creazione di un predefinito per immagini Dynamic Media {#creating-image-presets}
 
-La creazione di un predefinito per immagini per contenuti multimediali dinamici consente di applicare tali impostazioni a tutte le immagini al momento della visualizzazione in anteprima o della pubblicazione.
+La creazione di un predefinito per immagini Dynamic Media consente di applicare tali impostazioni a tutte le immagini al momento della visualizzazione in anteprima o della pubblicazione.
 
 >[!NOTE]
 >
@@ -258,9 +258,9 @@ Vedere [ InDesign (INDD) formato file](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Per creare i predefiniti per immagini per contenuti multimediali dinamici, è necessario disporre dei privilegi di amministratore in qualità di amministratore AEM o amministratore  Admin Console.
+>Per creare i predefiniti per immagini Dynamic Media, è necessario disporre dei privilegi di amministratore in qualità di amministratore AEM o  amministratore Admin Console.
 
-**Per creare un predefinito** per immagini per file multimediali dinamici:
+**Per creare un predefinito** per immagini Dynamic Media:
 
 1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale, quindi toccate **[!UICONTROL Strumenti > Risorse > Predefiniti immagine.]**
 1. Fai clic su **[!UICONTROL Crea.]** Viene visualizzata la finestra  **[!UICONTROL Modifica]** predefinito immagine.
@@ -291,9 +291,9 @@ Lasciandoli vuoti, AEM che questo predefinito per immagini è reattivo. Potete r
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->In modalità Dynamic Media - Scene7, i predefiniti per immagini e le risorse di immagini vengono pubblicati automaticamente.
+>In Dynamic Media - Scene7, i predefiniti per immagini e le risorse di immagini vengono pubblicati automaticamente.
 >
->In modalità Elemento multimediale dinamico - ibrido, è necessario pubblicare manualmente i predefiniti per immagini e le risorse immagine.
+>In Dynamic Media - Modalità ibrida, è necessario pubblicare manualmente i predefiniti per immagini e le risorse immagine.
 
 ### Opzioni dei predefiniti per immagini {#image-preset-options}
 
@@ -407,7 +407,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
     </ul>
     <div>
       La nitidezza è descritta in
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Immagini di nitidezza</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Immagini di nitidezza</a>.
     </div> </td>
   </tr>
   <tr>
@@ -427,7 +427,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Image Modifiers</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori immagini</strong>. Questi parametri sono definiti nel <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">riferimento al comando Image Server Protocol</a>.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
@@ -436,7 +436,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Servizi per contenuti multimediali dinamici non core: SVG, Image Rendering e Web-stampa</li>
+     <li>Servizi Dynamic Media non core: SVG, Image Rendering e Web-stampa</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -501,13 +501,13 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 1. Selezionate un predefinito e fate clic su **[!UICONTROL Modifica.]** Viene visualizzata la finestra  **[!UICONTROL Modifica]** predefinito immagine.
 1. Apportate le modifiche desiderate e fate clic su **[!UICONTROL Salva]** per salvare le modifiche oppure su **[!UICONTROL Annulla]** per annullare le modifiche.
 
-## Pubblicazione dei predefiniti per immagini per elementi multimediali dinamici {#publishing-image-presets}
+## Pubblicazione dei predefiniti per immagini Dynamic Media {#publishing-image-presets}
 
-Se state eseguendo la modalità Elemento multimediale dinamico - Ibrido, dovete pubblicare manualmente i predefiniti per immagini.
+Se è in esecuzione Dynamic Media - Modalità ibrida, è necessario pubblicare manualmente i predefiniti per immagini.
 
-(Se state eseguendo Dynamic Media - Modalità Scene7, i predefiniti per immagini vengono pubblicati automaticamente; non è necessario completare questi passaggi.)
+Se utilizzate la modalità Dynamic Media - Scene7, i predefiniti per immagini vengono pubblicati automaticamente; non è necessario completare questi passaggi.)
 
-**Per pubblicare i predefiniti per immagini in modalità** Elemento multimediale dinamico - Ibrido:
+**Per pubblicare i predefiniti per immagini in Dynamic Media - Modalità** ibrida:
 
 1. In AEM, toccate o fate clic sul logo AEM per accedere alla console di navigazione globale e toccate o fate clic sull&#39;icona Strumenti, quindi andate a **[!UICONTROL Risorse > Predefiniti immagine.]**
 1. Selezionate il predefinito per immagini o più predefiniti per immagini dall’elenco dei predefiniti per immagini e toccate o fate clic su **[!UICONTROL Pubblica.]**
@@ -515,9 +515,9 @@ Se state eseguendo la modalità Elemento multimediale dinamico - Ibrido, dovete 
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Eliminazione dei predefiniti per immagini per file multimediali dinamici {#deleting-image-presets}
+## Eliminazione dei predefiniti per immagini Dynamic Media {#deleting-image-presets}
 
 1. In AEM, toccate o fate clic sul logo AEM per accedere alla console di navigazione globale.
 1. Toccate l&#39;icona **[!UICONTROL Strumenti]**, quindi andate a **[!UICONTROL Risorse > Predefiniti immagine.]**
-1. Selezionate un predefinito, quindi fate clic su **[!UICONTROL Elimina]**. Elemento multimediale dinamico conferma l’eliminazione. Toccare **[!UICONTROL Elimina]** per eliminare o toccare **[!UICONTROL Annulla]** per interrompere.
+1. Selezionate un predefinito, quindi fate clic su **[!UICONTROL Elimina]**. Dynamic Media conferma che si desidera eliminarla. Toccare **[!UICONTROL Elimina]** per eliminare o toccare **[!UICONTROL Annulla]** per interrompere.
 
