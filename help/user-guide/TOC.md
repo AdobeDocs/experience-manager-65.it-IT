@@ -7,8 +7,8 @@ user-guide-description: Panoramica di tutte le risorse essenziali per comprender
 translation-type: tm+mt
 source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
