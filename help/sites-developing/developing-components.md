@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -287,6 +287,14 @@ Ad esempio, vedete:
 Nell’interfaccia classica con ExtJS, nella struttura del contenuto era solito inserire i listener per un determinato widget. La stessa procedura nell’interfaccia touch è diversa, in quanto il codice listener JS (o qualsiasi altro codice) non è più definito nel contenuto.
 
 La struttura del contenuto descrive la struttura semantica; non deve implicare la natura del widget sottostante. Se il codice JS non è presente nella struttura del contenuto, potete modificare i dettagli di implementazione senza dover modificare la struttura del contenuto. In altre parole, potete modificare la libreria dei widget senza dover toccare la struttura del contenuto.
+
+#### Rilevamento della disponibilità della finestra di dialogo {#dialog-ready}
+
+Se si dispone di un JavaScript personalizzato che deve essere eseguito solo quando la finestra di dialogo è disponibile e pronta, è necessario ascoltare l&#39;evento `dialog-ready`.
+
+Questo evento viene attivato ogni volta che la finestra di dialogo viene caricata (o ricaricata) ed è pronta per l’uso, il che significa che ogni volta che si verifica una modifica (creazione/aggiornamento) nel DOM della finestra di dialogo.
+
+`dialog-ready` può essere utilizzato per collegare in JavaScript codice personalizzato che esegue personalizzazioni sui campi all&#39;interno di una finestra di dialogo o attività simili.
 
 ### Convalida del campo {#field-validation}
 
