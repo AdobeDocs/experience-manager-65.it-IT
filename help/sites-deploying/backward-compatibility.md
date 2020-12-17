@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c863e438df45fd54c29c1b99114eea07aaeb6162
+source-git-commit: 303841896717448947aa48ece7ae86519a5450d5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 1%
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +63,7 @@ La modalità legacy è per i clienti con interfacce personalizzate basate su cod
 
 ## Configurazione {#how-to-set-up}
 
-Il pacchetto di compatibilità AEM 6.3 sarà installato come pacchetto utilizzando Package Manager in questo [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Il pacchetto di compatibilità AEM 6.3 può essere installato come pacchetto utilizzando Package Manager. È possibile scaricare il pacchetto di compatibilità [AEM 6.3 dal sito di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Una volta installato il pacchetto di compatibilità, il routing può essere abilitato o disabilitato utilizzando uno switch nella configurazione OSGI come mostrato di seguito:
 
