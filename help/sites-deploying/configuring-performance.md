@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6658'
 ht-degree: 2%
 
 ---
@@ -388,9 +388,9 @@ In entrambi i casi, è possibile definire il numero previsto di transazioni al s
 
 | Componente | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Homepage Utente Singolo | Media | 1 | 1 |  |  |
+| Homepage Utente Singolo | Media | 1 | 3 |  |  |
 |  | Picco | 3 | 3 |  |  |
-| Homepage 100 utenti | Media | 100 | 3 |  |  |
+| Homepage 100 utenti | Media | 100 | 1 |  |  |
 |  | Picco | 100 | 1 |  |
 
 #### Test combinati dei componenti {#combined-component-tests}
@@ -399,11 +399,11 @@ La verifica dei componenti in combinazione offre una migliore riflessione sul co
 
 | Scenario | Componente | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Media mista | Home page | 10 | 3 |  |  |
+| Media mista | Home page | 10 | 1 |  |  |
 |  | Ricerca | 10 | 3 |  |  |
 |  | Notizie | 10 | 2 |  |  |
 |  | Eventi | 10 | 1 |  |  |
-|  | Activations | 10 | 1 |  | Simulazione del comportamento dell’autore. |
+|  | Activations | 10 | 3 |  | Simulazione del comportamento dell’autore. |
 | Picco misto | Home page | 100 | 5 |  |  |
 |  | Ricerca | 50 | 5 |  |  |
 |  | Notizie | 100 | 10 |  |  |
@@ -435,8 +435,8 @@ Nel concepire questi test si dovrebbe ricordare che non tutti gli scenari si ver
 |---|---|---|---|---|---|
 | Sovraccarico del componente di ricerca | Cerca nei caratteri jolly globali (asterisco) | 10 | 3 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
 |  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto. |
-|  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
-|  | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |
+|  | Stringa vuota | 10 | 3 |  | Ricerca di una stringa vuota. |
+|  | Caratteri speciali | 10 | 3 |  | Ricerca di caratteri speciali. |
 
 #### Test di resistenza {#endurance-tests}
 
@@ -444,10 +444,10 @@ Alcuni problemi si verificheranno solo dopo che il sistema è stato in funzione 
 
 | Scenario | Tipo di test | No. di Utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Prova di resistenza (72 ore) | Home page | 10 | 3 |  |  |
-|  | Ricerca | 10 | 3 |  |  |
+| Prova di resistenza (72 ore) | Home page | 10 | 1 |  |  |
+|  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 20 | 2 |  |  |
-|  | Eventi | 10 | 3 |  |  |
+|  | Eventi | 10 | 1 |  |  |
 |  | Activations | 1 | 1 |  | Simulazione del comportamento dell’autore. |
 
 ### Ottimizzazione {#optimization}
@@ -676,11 +676,11 @@ La configurazione AEM colloca il repository e il datastore sullo stesso volume l
 
 Nella tabella seguente sono illustrate le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene installato per primo, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui viene eseguito il backup. I backup verranno creati con incrementi specifici per rappresentare un aumento significativo del contenuto e di ciò che può essere prodotto in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) si baserà approssimativamente sulla composizione realistica delle risorse di produzione. Pagine, immagini e tag possono essere limitati a un massimo di 800 pagine figlie. Ogni pagina includerà i componenti titolo, Flash, testo/immagine, video, presentazione, modulo, tabella, cloud e carosello. Le immagini verranno caricate da un pool di 400 file unici, di dimensioni comprese tra 37 kB e 594 kB.
 
-|Contenuto|Nodi|Pagine|Immagini|Tag|
+| Contenuto | Nodi | Pagine | Immagini | Tag |
 |---|---|---|---|---|
-|Installazione di base|69 610|562|256|237|
-|Contenuto piccolo per il backup incrementale||+100|+2|+2|
-|Grande contenuto per il backup completo||+10 000|+100|+100|
+| Installazione di base | 69.610 | 562 | 256 | 237 |
+| Piccoli contenuti per il backup incrementale |  | +100 | +2 | +2 |
+| Contenuti di grandi dimensioni per il backup completo |  | +10 000 | +100 | +100 |
 
 Il benchmark di backup viene ripetuto con i set di contenuti aggiuntivi aggiunti a ogni ripetizione.
 
