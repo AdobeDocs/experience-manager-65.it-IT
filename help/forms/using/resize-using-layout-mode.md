@@ -2,9 +2,9 @@
 title: Utilizzare la modalità Layout per ridimensionare i componenti per i moduli adattivi
 description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,16 @@ Selezionare **Layout** dall&#39;elenco a discesa visualizzato nella parte superi
 1. In modalità Layout, toccate il componente per ridimensionarlo. I punti blu vengono visualizzati all&#39;inizio e alla fine della griglia reattiva.
 1. Trascinate e rilasciate i punti blu per definire la posizione del componente nella griglia reattiva.
 
-   ![Ridimensionamento mediante la modalità Layout](assets/layout_mode_resize_new_updated.png)
+   ![Ridimensionamento mediante la modalità Layout](assets/layout_mode_resize_new_updated1.png)
 
    La barra degli strumenti visualizzata dopo aver toccato i componenti è composta dalle seguenti opzioni:
 
    * **Elemento padre:** selezionare l’elemento padre di un componente.
    * **Mobile in nuova riga:** sposta il componente sulla riga successiva se all’interno della stessa riga sono presenti più componenti.
 
-   È possibile annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente componenti ridimensionati utilizzando l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
+   Inoltre, è possibile annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente i componenti ridimensionati utilizzando l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
+
+   Potete toccare il componente e utilizzare l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** per annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito a livello di componente.
 
    >[!NOTE]
    >
