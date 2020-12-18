@@ -2,9 +2,9 @@
 title: Controllo collegamenti
 description: Il controllo collegamenti consente di convalidare i collegamenti interni ed esterni e di riscrivere i collegamenti.
 translation-type: tm+mt
-source-git-commit: 861cd74e1b2fd3d210647d83dee5d9a6fcead22a
+source-git-commit: 8a551cce581056cb274b1d8567f579fc73a95d3c
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -65,14 +65,14 @@ Per utilizzare il controllo collegamenti esterni:
 1. Utilizzando **Navigazione**, selezionare **Strumenti**, quindi **Siti**.
 1. Selezionare **Controllo collegamenti esterni** e viene visualizzato un elenco di tutti i collegamenti esterni.
 
-![](assets/external-link-checker.png)
+![La finestra Controllo collegamenti esterni](assets/external-link-checker.png)
 
 Vengono visualizzate le informazioni seguenti:
 
-* **Stato**  - Stato di convalida del collegamento
+* **Stato** : lo stato di convalida del collegamento che può essere uno dei seguenti:
    * **Valido** : il collegamento esterno è raggiungibile dal controllo collegamenti
    * **In sospeso** : il collegamento esterno è stato aggiunto al contenuto del sito, ma non è ancora stato convalidato dal controllo collegamenti
-   * **Non valido** : il collegamento esterno non è raggiungibile dal controllo collegamenti.
+   * **Non valido** : il collegamento esterno non è raggiungibile dal controllo collegamenti
 * **URL**  - Collegamento esterno
 * **Referente** : la pagina del contenuto contenente il collegamento esterno
    * Viene popolato solo [se configurato.](#configuring)
@@ -80,7 +80,7 @@ Vengono visualizzate le informazioni seguenti:
    * La frequenza di controllo dei collegamenti [è configurabile.](#configuring)
 * **Ultimo stato**  - L&#39;ultimo codice di stato HTML restituito quando il collegamento controllato per l&#39;ultima volta ha selezionato il collegamento esterno
 * **Ultima disponibilità** : ora dell’ultima volta che il collegamento è stato disponibile per il controllo collegamenti
-* **Ultimo accesso** : ora dell’ultimo accesso al collegamento da parte del controllo collegamenti
+* **Ultimo accesso** : l’ora dell’ultimo accesso alla pagina con il collegamento esterno nell’interfaccia di authoring
 
 È possibile modificare il contenuto della finestra utilizzando i due pulsanti nella parte superiore dell&#39;elenco di collegamenti:
 
