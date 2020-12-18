@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2818'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ In questo articolo vengono evidenziate le funzionalità incluse nell&#39;ultimo 
 
 ### Configurazione client HTTP del modello dati modulo per ottimizzare le prestazioni {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] il modello dati del modulo durante l&#39;integrazione con i servizi Web RESTful come origine dati ora include configurazioni client HTTP per l&#39;ottimizzazione delle prestazioni.
+[!DNL Experience Manager Forms] il modello dati del modulo durante l&#39;integrazione con i servizi Web RESTful come origine dati ora include configurazioni client HTTP per l&#39;ottimizzazione delle prestazioni. Vedere [Configurare le origini dati](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Disponibilità dell&#39;opzione Reimposta per ciascun componente in modalità Layout {#reset-option-layout-mode}
 
-È ora possibile utilizzare l&#39;opzione di ripristino per ciascun componente in modalità Layout di un modulo adattivo. Quando definite un layout a più colonne per un pannello, potete usare questa funzione per ripristinare i singoli componenti all’interno del pannello.
+È ora possibile utilizzare l&#39;opzione di ripristino per ciascun componente in modalità Layout di un modulo adattivo. Quando definite un layout a più colonne per un pannello, potete usare questa funzione per ripristinare i singoli componenti all’interno del pannello. Vedere [Utilizzare la modalità di layout per ridimensionare i componenti](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Funzioni principali nei precedenti [!DNL Experience Manager] Service Pack 6.5 {#key-features-previous-service-packs}
 
@@ -211,11 +211,11 @@ Ora potete utilizzare l&#39;interfaccia utente [!DNL Dynamic Media] per annullar
 
 Ora potete scegliere di pubblicare o annullare la pubblicazione selettiva delle risorse in [!DNL Experience Manager] o [!DNL Dynamic Media] utilizzando la procedura guidata [!UICONTROL Pubblicazione rapida] o [!UICONTROL Gestisci pubblicazione]. È inoltre possibile impostare la modalità `Publish` o `Unpublish` a livello di cartella.
 
-#### Immagini intelligenti per contenuti multimediali dinamici {#smart-imaging}
+#### Immagini intelligenti per Dynamic Media {#smart-imaging}
 
 Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento. La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Vedere [Immagini intelligenti](../assets/imaging-faq.md).
 
-#### Ritaglio avanzato nei profili video per contenuti multimediali dinamici (6.5.3.0) {#smart-crop-video}
+#### Ritaglio avanzato nei profili video per Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 La funzione di ritaglio avanzato per i video - una funzione opzionale disponibile nei profili video - è uno strumento che utilizza l&#39;intelligenza artificiale di  Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni. Consultate [L&#39;utilizzo del ritaglio avanzato nei profili video](../assets/video-profiles.md).
 
