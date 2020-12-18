@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Scopri come lavorare con i video in Contenuti multimediali dinamici
+description: Scopri come lavorare con i video in Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '11812'
+source-wordcount: '11277'
 ht-degree: 8%
 
 ---
@@ -19,28 +19,28 @@ ht-degree: 8%
 
 # Video in Dynamic Media {#video}
 
-In questa sezione viene descritto come lavorare con i video in Contenuti multimediali dinamici.
+Questa sezione descrive come lavorare con i video in Dynamic Media.
 
 ## Avvio rapido: Video {#quick-start-videos}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente i set video adattivi in Contenuti multimediali dinamici. Dopo ogni passaggio sono presenti riferimenti incrociati alle intestazioni degli argomenti in cui è possibile trovare ulteriori informazioni.
+La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente i set video adattivi in Dynamic Media. Dopo ogni passaggio sono presenti riferimenti incrociati alle intestazioni degli argomenti in cui è possibile trovare ulteriori informazioni.
 
 >[!NOTE]
 >
->Prima di usare i video in Contenuti multimediali dinamici, accertatevi che l’amministratore AEM abbia già attivato e configurato Cloud Services Contenuti multimediali dinamici in modalità Dynamic Media - Scene7 o Dynamic Media - Hybrid.
+>Prima di lavorare con i video in Dynamic Media, accertatevi che l’amministratore AEM abbia già attivato e configurato Cloud Services Dynamic Media in modalità Dynamic Media - Scene7 o Dynamic Media - Hybrid.
 >
->* Consultate [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
+>* Vedere [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - modalità Scene7 e [Risoluzione dei problemi di Dynamic Media - modalità Scene7.](/help/assets/troubleshoot-dms7.md)
    >
    >
-* Consultate [Configurazione di Cloud Services di contenuti multimediali dinamici](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di contenuti multimediali dinamici - Modalità ibrida.
+* Vedere [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - modalità ibrida.
 
 >
 
 
 
-1. **Caricate i** video per contenuti multimediali dinamici effettuando le seguenti operazioni:
+1. **Caricate i** video Dynamic Media effettuando le seguenti operazioni:
 
-   * Create un profilo di codifica video personalizzato. Oppure, potete semplicemente utilizzare il profilo _Codifica video adattiva_ predefinito fornito con i file multimediali dinamici.
+   * Create un profilo di codifica video personalizzato. Oppure, potete semplicemente utilizzare il profilo _Codifica video adattiva_ predefinito fornito con Dynamic Media.
 
       * [Creazione di un profilo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) di codifica video.
       * Ulteriori informazioni sulle [Best practice per la codifica video](#best-practices-for-encoding-videos).
@@ -58,7 +58,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 
 
 
-1. **Per gestire i** video per contenuti multimediali dinamici, effettuate una delle seguenti operazioni:
+1. **Per gestire i** video Dynamic Media, effettuate una delle seguenti operazioni:
 
    * Organizzare, sfogliare ed effettuare ricerche nelle risorse video
 
@@ -98,7 +98,7 @@ risorse digitaliUlteriori informazioni sulle  [procedure ottimali per l’organi
 
 
 
-1. **Pubblicate i** video per contenuti multimediali dinamici effettuando una delle seguenti operazioni:
+1. **Pubblicate i** video Dynamic Media effettuando una delle seguenti operazioni:
 
    * Se utilizzate Adobe Experience Manager come sistema di gestione dei contenuti Web, potete aggiungere video direttamente alle pagine Web.
 
@@ -117,13 +117,13 @@ risorse digitaliUlteriori informazioni sulle  [procedure ottimali per l’organi
 
 
 
-## Utilizzo di video in elementi multimediali dinamici {#working-with-video-in-dynamic-media}
+## Utilizzo di video in Dynamic Media {#working-with-video-in-dynamic-media}
 
 Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su schermi diversi, inclusi desktop, iOS, Android, Blackberry e dispositivi mobili Windows. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
 Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi, seleziona automaticamente il video con la codifica corretta tra i vari bitrate video presenti nel set video adattivo. Il video viene trasmesso in streaming a computer desktop, dispositivi mobili o tablet.
 
-Inoltre, la qualità video viene modificata automaticamente in modo dinamico se le condizioni della rete cambiano sul desktop o sul dispositivo mobile. Inoltre, se un cliente passa alla modalità a schermo intero su un computer desktop, il set video adattivo risponde utilizzando una risoluzione migliore, in modo da migliorare l’esperienza di visualizzazione del cliente. L’utilizzo di set video adattivi rappresenta la soluzione ottimale per i clienti che riproducono video per contenuti multimediali dinamici su schermi e dispositivi diversi.
+Inoltre, la qualità video viene modificata automaticamente in modo dinamico se le condizioni della rete cambiano sul desktop o sul dispositivo mobile. Inoltre, se un cliente passa alla modalità a schermo intero su un computer desktop, il set video adattivo risponde utilizzando una risoluzione migliore, in modo da migliorare l’esperienza di visualizzazione del cliente. L’utilizzo di set video adattivi offre la migliore riproduzione possibile per i clienti che riproducono video Dynamic Media su schermi e dispositivi diversi.
 
 La logica utilizzata da un lettore video per determinare quale video codificato riprodurre o selezionare durante la riproduzione si basa sul seguente algoritmo:
 
@@ -146,13 +146,13 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate la [Guida di riferimento dei visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Per un elenco dei dispositivi Windows che supportano questo formato video, consultate: [Formati video supportati su Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Riproducete il video utilizzando i predefiniti per visualizzatori video per file multimediali dinamici, inclusi i seguenti elementi:
+* Riproducete il video usando i predefiniti per visualizzatori video di Dynamic Media, inclusi i seguenti:
 
    * Visualizzatori per singoli video.
    * Visualizzatori per file multimediali diversi che combinano video e immagini.
@@ -162,11 +162,11 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 
 Vedere [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) esempio.
 
-Consultate anche [Visualizzatori per  AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori per AEM solo risorse](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Consultate anche [Visualizzatori per  AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori solo per AEM risorse](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
-I predefiniti per visualizzatori video HTML5 per contenuti multimediali dinamici sono lettori video affidabili. Potete utilizzarli per evitare molte delle problematiche più comuni relative alla riproduzione di video HTML5 e ai dispositivi mobili, ad esempio la mancanza di distribuzione con streaming adattivo e la portata limitata del browser desktop.
+I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. Potete utilizzarli per evitare molte delle problematiche più comuni relative alla riproduzione di video HTML5 e ai dispositivi mobili, ad esempio la mancanza di distribuzione con streaming adattivo e la portata limitata del browser desktop.
 
 Dal punto di vista della progettazione del lettore, è possibile progettare tutte le funzionalità del lettore video utilizzando gli strumenti di sviluppo Web standard. Ad esempio, potete progettare pulsanti, controlli e sfondo personalizzato con immagine poster utilizzando HTML5 e CSS per raggiungere i clienti con un aspetto personalizzato.
 
@@ -191,7 +191,7 @@ HLS è uno standard Apple per lo streaming di video adattivi che regola automati
 
 Il video progressivo viene distribuito scaricando e memorizzando localmente il video sul sistema desktop o sul dispositivo mobile di un utente.
 
-La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili mediante il visualizzatore video per contenuti multimediali dinamici.
+La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano il visualizzatore video Dynamic Media.
 
 <table>
  <tbody>
@@ -265,7 +265,7 @@ La tabella seguente riassume il dispositivo, il browser e il metodo di riproduzi
 
 ## Architettura della soluzione video Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei video caricati e codificati tramite DMGGateway (in modalità Dynamic Media Hybrid) e resi disponibili per l’uso pubblico.
+L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei video caricati e codificati tramite DMGGateway (in modalità ibrida Dynamic Media) e resi disponibili per l’uso pubblico.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -404,7 +404,7 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
 |--- |--- |--- |--- |
 | Origine | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 1 |
+| Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato di file video codificato {#encoded-video-file-format}
@@ -417,9 +417,9 @@ Potete pubblicare risorse video locali AEM direttamente su un canale YouTube pre
 
 Per pubblicare le risorse video su YouTube, potete impostare  AEM Assets con i tag . Potete associare questi tag a un canale YouTube. Se il tag di una risorsa video corrisponde al tag di un canale YouTube, il video viene pubblicato su YouTube. La pubblicazione su YouTube avviene insieme alla normale pubblicazione del video, purché venga utilizzato un tag associato.
 
-YouTube esegue la propria codifica. Pertanto, il file video originale caricato in AEM viene pubblicato su YouTube invece di qualsiasi rappresentazione video creata dalla codifica per contenuti multimediali dinamici. Anche se non è necessario elaborare i video mediante l’uso di elementi multimediali dinamici, questi dovranno essere elaborati qualora sia necessario un predefinito per visualizzatori per la riproduzione.
+YouTube esegue la propria codifica. Pertanto, il file video originale caricato in AEM viene pubblicato su YouTube invece di qualsiasi rappresentazione video creata dalla codifica Dynamic Media. Anche se non è necessario elaborare i video con Dynamic Media, è probabile che lo faranno qualora sia necessario un predefinito per visualizzatori per la riproduzione.
 
-Se bypassate il profilo di elaborazione video e pubblicate direttamente su YouTube, significa semplicemente che la risorsa video in AEM risorsa potrebbe non ottenere una miniatura visualizzabile. Questo significa anche che se eseguite in modalità di esecuzione Dynamic Media o dynamicmedia_scene7, i video non codificati non funzioneranno con nessuno dei tipi di risorse Contenuti multimediali dinamici.
+Se bypassate il profilo di elaborazione video e pubblicate direttamente su YouTube, significa semplicemente che la risorsa video in AEM risorsa potrebbe non ottenere una miniatura visualizzabile. Significa anche che se eseguite in modalità di esecuzione dynamicmedia o dynamicmedia_scene7, i video non codificati non funzioneranno con nessuno dei tipi di risorse Dynamic Media.
 
 La pubblicazione di risorse video sui server YouTube comporta l’esecuzione delle seguenti attività per garantire l’autenticazione sicura da server a server con YouTube:
 
@@ -588,7 +588,7 @@ A partire da AEM 6.4, è stato introdotto un nuovo metodo di interfaccia utente 
 
 #### Configurazione di YouTube in AEM 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
 
-1. Accertatevi di accedere all’istanza di Contenuti multimediali dinamici come amministratore.
+1. Assicuratevi di accedere all’istanza di Dynamic Media come amministratore.
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi sulla barra a sinistra tocca **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione pubblicazione su YouTube.]**
 1. Toccare **[!UICONTROL global]** (non selezionarlo).
 
@@ -635,7 +635,7 @@ Lasciate aperta la pagina Crea configurazione YouTube; ritornerete su di esso tr
 
 #### Configurazione di YouTube in AEM prima del 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Accertatevi di accedere all’istanza di Contenuti multimediali dinamici come amministratore.
+1. Assicuratevi di accedere all’istanza di Dynamic Media come amministratore.
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Services.]**
 1. Sotto l&#39;intestazione Servizi di terze parti, sotto YouTube, toccare **[!UICONTROL Configura ora.]**
@@ -748,9 +748,9 @@ A questo punto potete associare i tag aggiunti in precedenza alle risorse video.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, la pubblicazione immediata non viene automaticamente pubblicata su YouTube. Quando è impostata la modalità Dynamic Media - Scene7, è possibile scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL Al momento dell&#39;attivazione.]**
+>In modalità Dynamic Media - Scene7, la pubblicazione immediata non viene automaticamente pubblicata su YouTube. Quando è impostata la modalità Dynamic Media - Scene7, potete scegliere tra due opzioni di pubblicazione: **[!UICONTROL Immediatamente]** o **[!UICONTROL Al momento dell&#39;attivazione.]**
 >
->**[!UICONTROL Pubblica]** immediatamente significa che la risorsa caricata, una volta sincronizzata con IPS, viene pubblicata automaticamente nel sistema di distribuzione. Anche se questo è vero per i contenuti multimediali dinamici, non è vero per YouTube. Per pubblicare contenuti su YouTube, devi pubblicarli tramite AEM Author.
+>**[!UICONTROL Pubblica]** immediatamente significa che la risorsa caricata, una volta sincronizzata con IPS, viene pubblicata automaticamente nel sistema di distribuzione. Anche se questo è vero per Dynamic Media, non è vero per YouTube. Per pubblicare contenuti su YouTube, devi pubblicarli tramite AEM Author.
 
 >[!NOTE]
 >
@@ -790,7 +790,7 @@ Dopo otto ore se viene ancora visualizzato un messaggio di stato in cui è indic
 
 ### Collegamento degli URL di YouTube all&#39;applicazione Web {#linking-youtube-urls-to-your-web-application}
 
-Potete ottenere una stringa URL di YouTube generata da elementi multimediali dinamici dopo la pubblicazione del video. Quando copiate l’URL di YouTube, questo viene inserito negli Appunti e può quindi essere incollato nelle pagine del sito Web o dell’applicazione.
+Potete ottenere una stringa URL di YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copiate l’URL di YouTube, questo viene inserito negli Appunti e può quindi essere incollato nelle pagine del sito Web o dell’applicazione.
 
 >[!NOTE]
 >
@@ -960,7 +960,7 @@ La modalità di configurazione delle notifiche dipende dal tipo di notifiche per
 
 >[!NOTE]
 >
->I rapporti sui video sono disponibili solo quando si esegue la modalità Dynamic Media - Hybrid.
+>I rapporti video sono disponibili solo quando si esegue Dynamic Media - Modalità ibrida.
 
 I rapporti video mostrano diverse metriche aggregate in un determinato periodo di tempo per monitorare che *i video pubblicati *singoli e aggregati abbiano le stesse prestazioni previste. I seguenti dati delle metriche principali sono aggregati per tutti i video pubblicati nell’intero sito Web:
 
@@ -974,17 +974,17 @@ I rapporti video mostrano diverse metriche aggregate in un determinato periodo d
 
 Quando toccate un nome video nell’elenco, questo mostra il rapporto di mantenimento (a discesa) del video sotto forma di grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento di tempo durante la riproduzione del video. Quando si riproduce il video, la barra verticale tiene traccia della sincronizzazione con l’indicatore del tempo presente nel lettore. Le perdite nei dati del grafico a linee indicano dove il pubblico si allontana dal suo disinteresse.
 
-Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Media, il grafico a discesa di mantenimento dell&#39;audience e i dati Percentuale di riproduzione nella tabella non sono disponibili.
+Se il video è stato codificato all’esterno di Adobe Experience Manager Dynamic Media, il grafico a discesa di mantenimento dell’audience e i dati Percentuale riproduzione nella tabella non sono disponibili.
 
-Vedere anche [Configurazione di Cloud Services di contenuti multimediali dinamici](/help/assets/config-dynamic.md).
+Vedere anche [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
->I dati di tracciamento e reporting si basano esclusivamente sull’utilizzo del lettore video di Dynamic Media e del relativo predefinito per lettori video. Non è quindi possibile tenere traccia e generare rapporti sui video riprodotti da altri lettori video.
+>I dati di monitoraggio e reporting si basano esclusivamente sull’utilizzo del lettore video Dynamic Media e del relativo predefinito per lettori video. Non è quindi possibile tenere traccia e generare rapporti sui video riprodotti da altri lettori video.
 
 Per impostazione predefinita, la prima volta che inserite i rapporti video, il rapporto mostra i dati video a partire dal primo del mese corrente e termina con la data del mese corrente. Tuttavia, puoi ignorare l’intervallo di date predefinito specificando il tuo intervallo di date. La volta successiva che immettete Rapporti video, viene utilizzato l’intervallo di date specificato.
 
-Affinché i rapporti video possano funzionare correttamente, viene automaticamente creato un ID Suite di rapporti quando sono configurati Cloud Services per elementi multimediali dinamici. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione in modo che sia disponibile per la funzione Copia URL quando visualizzate in anteprima le risorse. Tuttavia, questo richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è impostato, potete comunque pubblicare il rapporto video, ma dovrete tornare alla configurazione di Dynamic Media Cloud e toccare **[!UICONTROL OK.]**
+Affinché i rapporti video funzionino correttamente, viene automaticamente creato un ID Suite di rapporti quando sono configurati Cloud Services Dynamic Media. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione in modo che sia disponibile per la funzione Copia URL quando visualizzate in anteprima le risorse. Tuttavia, questo richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è impostato, potete comunque pubblicare il rapporto video, ma dovrete tornare alla configurazione di Dynamic Media Cloud e toccare **[!UICONTROL OK.]**
 
 Per visualizzare i rapporti video:
 
@@ -1001,66 +1001,67 @@ Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
-### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+<!-- OBSOLETE CONTENT ### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se utilizzate un visualizzatore video predefinito fornito da Contenuti multimediali dinamici, o se avete creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video integrato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’SDK per visualizzatori HTML5 di Scene7, effettuate le seguenti operazioni per fare in modo che il visualizzatore video invii eventi di tracciamento a rapporti video per elementi multimediali dinamici.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Per creare visualizzatori video personalizzati, usate Dynamic Media Viewers Reference (Riferimento visualizzatori contenuti multimediali dinamici) e Scene7 HTML5 Viewers SDK.
+Use the Dynamic Media Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
 
-Consultate la [Guida di riferimento dei visualizzatori per contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). -->
 
-<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
+<!-- OBSOLETE CONTENT Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Scene7:
+<!-- OBSOLETE CONTENT To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
-1. Passate a qualsiasi risorsa video pubblicata.
-1. Nell&#39;angolo superiore sinistro della pagina della risorsa, selezionate **[!UICONTROL Visualizzatori dall&#39;elenco a discesa.]**
-1. Selezionate un predefinito per visualizzatori video e copiate il codice da incorporare.
-1. Nel codice da incorporare, trovate la riga con quanto segue:
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers.]**
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il parametro `config2` consente il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics  specifiche per il cliente.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   Il valore corretto per il parametro config2 si trova sia nella funzione **Embed Code **che nella funzione copy **URL **. Nell&#39;URL dal comando copy **URL **con il comando copy, il parametro da cercare è `&config2=<value>` . Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
+   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. Nel codice del visualizzatore video personalizzato, aggiungete AppMeasurementBridge .jsp alla pagina del visualizzatore effettuando le seguenti operazioni:
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * Innanzitutto, stabilite se è necessario il parametro `&preset`.
-Se il parametro `config2` è `companypreset`, non è necessario `&preset=parameter`.
-Se `config2` non è altro, impostate il parametro predefinito come parametro `config2`. Ad esempio, se `config2=companypreset-2`, aggiungi `&param2=companypreset-2` all&#39;URL AppMeasurementBridge.jsp.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * Quindi, aggiungete lo script AppMeasurementBridge.jsp:
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Create il componente TrackingManager effettuando le seguenti operazioni:
+1. Create the TrackingManager component by doing the following:
 
-   * Dopo aver chiamato `s7sdk.Utils.init();` create un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Connetti i componenti a TrackingManager effettuando le seguenti operazioni:
-Nel gestore di eventi `s7sdk.Event.SDK_READY`, allegare il componente che si desidera tracciare a TrackingManager.
-Ad esempio, se il componente è `videoPlayer`, aggiungi
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-per allegare il componente a trackingManager. Per tenere traccia di più visualizzatori su una pagina, utilizzate più componenti di gestione del tracciamento.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * Create l&#39;oggetto AppMeasurementBridge aggiungendo quanto segue:
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Aggiungete la funzione di tracciamento aggiungendo quanto segue:
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   L&#39;oggetto appMeasurementBridge dispone di una funzione di tracciamento incorporata. Tuttavia, puoi fornire un supporto personalizzato per più sistemi di monitoraggio o altre funzionalità.
 
-   Per ulteriori informazioni, vedere *Utilizzo del componente TrackingManager* nella *Guida utente dell&#39;SDK per visualizzatori HTML5 di Scene7* disponibile per il download da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Aggiunta di sottotitoli a video {#adding-captions-to-video}
 
@@ -1072,9 +1073,9 @@ I sottotitoli consentono inoltre una maggiore accessibilità mediante l’uso di
 >
 >Il lettore video utilizzato deve supportare la visualizzazione delle didascalie.
 
-Elemento multimediale dinamico è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
+Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) (Distribuzione di contenuti statici (non immagini)) nella *Guida API di Scene7 Image Serving*.
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) (Distribuzione di contenuti statici (non immagini) in *Dynamic Media Image Serving and Rendering API Help*).
 
 Per aggiungere sottotitoli o sottotitoli al video:
 
@@ -1127,9 +1128,9 @@ Per semplificare la visualizzazione e la navigazione dei video di formato esteso
 
 >[!NOTE]
 >
->Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video per contenuti multimediali dinamici supportano i marcatori di capitolo, ma l’utilizzo di lettori video di terze parti potrebbe non essere supportato.
+>Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
-Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nella guida  Adobe Scene7 Viewer SDK for HTML5 fate riferimento all’intestazione &quot;Customizing Behavior Using Modifiers&quot; (Personalizzazione del comportamento mediante i modificatori) nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`.  Adobe Scene7 Viewer SDK è disponibile come download da [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!-- OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Potete creare un elenco di capitoli per il video nello stesso modo in cui create le didascalie. In altre parole, potete creare un file WebVTT. Tuttavia, si noti che questo file deve essere separato da qualsiasi file di sottotitoli WebVTT eventualmente utilizzato; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 
@@ -1199,7 +1200,7 @@ Vedere [WebVTT: Il formato Web Video Text Tracks](https://dev.w3.org/html5/webvt
      </tbody>
    </table>
 
-## Informazioni sulle miniature video in Contenuti multimediali dinamici - Modalità Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Le miniature video in Dynamic Media - Modalità Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Una miniatura video è una versione ridotta di un fotogramma video o di una risorsa immagine che rappresenta il video per il cliente. La miniatura deve essere utile per incoraggiare un cliente a fare clic sul video.
 
@@ -1211,11 +1212,11 @@ Una miniatura video personalizzata selezionata da un video non viene estratta e 
 
 La possibilità di personalizzare una miniatura video è disponibile solo dopo che avete applicato un profilo video alla cartella in cui si trova il video.
 
-Vedere anche [Le miniature video in Dynamic Media - Hybrid mode](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Vedere anche [Le miniature video in Dynamic Media - Modalità ibrida](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
 
-Questi passaggi si applicano solo agli elementi multimediali dinamici in esecuzione in modalità &quot;Dynamicmedia_Scene7&quot;.
+Questi passaggi si applicano solo ad Dynamic Media in esecuzione in modalità &quot;Dynamicmedia_Scene7&quot;.
 
 T **per aggiungere una miniatura video personalizzata**,
 
@@ -1247,77 +1248,77 @@ T **per aggiungere una miniatura video personalizzata**,
 1. Nella pagina Modifica miniatura, toccare **[!UICONTROL Salva modifica.]**
 1. Nella pagina Proprietà del video, nell&#39;angolo superiore destro, toccate **[!UICONTROL Salva e chiudi.]**
 
-## Informazioni sulle miniature video in Dynamic Media - Modalità ibrida {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## Le miniature video in Dynamic Media - Modalità ibrida {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-Potete scegliere tra dieci immagini in miniatura generate automaticamente da Contenuti multimediali dinamici e aggiungerle al video. Il lettore video visualizza la miniatura selezionata quando una risorsa video viene utilizzata con il componente Contenuti multimediali dinamici nell’ambiente di authoring di  AEM Sites,  AEM Mobile o  AEM Screens. La miniatura funge da immagine statica che rappresenta al meglio il contenuto dell’intero video e incoraggia ulteriormente gli utenti a fare clic sul pulsante Riproduci.
+Potete scegliere tra dieci immagini in miniatura generate automaticamente da Dynamic Media e aggiunte al video. Il lettore video visualizza la miniatura selezionata quando una risorsa video viene utilizzata con il componente Dynamic Media nell’ambiente di authoring  AEM Sites,  AEM Mobile o  AEM Screens. La miniatura funge da immagine statica che rappresenta al meglio il contenuto dell’intero video e incoraggia ulteriormente gli utenti a fare clic sul pulsante Riproduci.
 
-In base al tempo totale del video, Contenuti multimediali dinamici acquisisce dieci immagini in miniatura (impostazione predefinita) a 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono e se successivamente scegliete un’altra miniatura, non è necessario rigenerare la serie. Visualizzate l’anteprima delle dieci miniature, quindi selezionate quella da usare con il video. Se desiderate passare all’impostazione predefinita, potete usare CRXDE Lite per configurare l’intervallo di tempo in cui vengono generate le miniature. Ad esempio, se desiderate generare solo una serie di quattro immagini in miniatura con spaziatura uniforme dal video, potete configurare l’intervallo temporale a 24%, 49%, 74% e 99%.
+In base al tempo totale del video, Dynamic Media cattura dieci immagini in miniatura (impostazione predefinita) a 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono e se successivamente scegliete un’altra miniatura, non è necessario rigenerare la serie. Visualizzate l’anteprima delle dieci miniature, quindi selezionate quella da usare con il video. Se desiderate passare all’impostazione predefinita, potete usare CRXDE Lite per configurare l’intervallo di tempo in cui vengono generate le miniature. Ad esempio, se desiderate generare solo una serie di quattro immagini in miniatura con spaziatura uniforme dal video, potete configurare l’intervallo temporale a 24%, 49%, 74% e 99%.
 
 È consigliabile aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul sito Web.
 
-Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video invece di usare una miniatura generata da Contenuti multimediali dinamici. Ad esempio, potete creare una miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
+Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video anziché utilizzare una miniatura generata da Dynamic Media. Ad esempio, potete creare una miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
 
-Vedere anche [Le miniature video in Contenuti multimediali dinamici - Modalità Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Vedere anche [Le miniature video in Dynamic Media - Modalità Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Aggiunta di una miniatura video {#adding-a-video-thumbnail}
 
-Questi passaggi si applicano solo ai file multimediali dinamici in esecuzione in modalità ibrida.
+Questi passaggi si applicano solo ad Dynamic Media in modalità ibrida.
 
 T **per aggiungere una miniatura video**,
 
 1. Passate a una risorsa video caricata per la quale desiderate aggiungere una miniatura video.
-1. Nella modalità di selezione delle risorse dalla vista Elenco o a schede, toccate la risorsa video.
-1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente un &quot;i&quot;).
-1. Nella pagina Proprietà del video, toccare **[!UICONTROL Cambia miniatura.]**
-1. Nella pagina Modifica miniatura, sulla barra degli strumenti, toccare **[!UICONTROL Seleziona fotogramma.]**
+1. Nella modalità di selezione delle risorse dalla vista Elenco o dalla vista Scheda, toccate la risorsa video.
+1. Nella barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio con un &quot;i&quot; al suo interno).
+1. Nella pagina Proprietà del video, toccate **[!UICONTROL Modifica miniatura.]**
+1. Nella pagina Modifica miniature, sulla barra degli strumenti, toccare **[!UICONTROL Seleziona fotogramma.]**
 
-   Dynamic Media genera le miniature di una serie dal video, in base all’intervallo di tempo predefinito o all’intervallo personalizzato.
+   Dynamic Media genera immagini in miniatura di serie dal video, in base all&#39;intervallo di tempo predefinito o all&#39;intervallo di tempo personalizzato.
 
-1. Visualizzate l’anteprima delle miniature generate, quindi selezionate quella da aggiungere al video.
-1. Toccare **[!UICONTROL Salva modifica.]**
+1. Visualizzate in anteprima le miniature generate, quindi selezionate quella da aggiungere al video.
+1. Toccate **[!UICONTROL Salva modifica.]**
 
-   L’immagine in miniatura del video viene aggiornata con la miniatura selezionata. Se successivamente si decide di modificare l&#39;immagine in miniatura, è possibile tornare alla pagina **[!UICONTROL Change Thumbnail]** e selezionarne una nuova.
+   L&#39;immagine della miniatura del video viene aggiornata in modo da utilizzare la miniatura selezionata. Se successivamente decidete di modificare l&#39;immagine della miniatura, potete tornare alla pagina **[!UICONTROL Modifica miniatura]** e selezionarne una nuova.
 
-   Se avete configurato nuovi intervalli di tempo predefiniti, oppure avete caricato un nuovo video per sostituire il video esistente, dovrete fare in modo che i file multimediali dinamici rigenerino le miniature.
+   Se avete configurato nuovi intervalli di tempo predefiniti o avete caricato un nuovo video per sostituire il video esistente, dovrete fare in modo che Dynamic Media rigeneri le miniature.
 
-   Consultate [Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+   Vedere [Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
 #### Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Quando configurate e salvate il nuovo intervallo di tempo predefinito, la modifica viene applicata automaticamente solo ai video caricati in futuro. Il nuovo predefinito non viene applicato automaticamente ai video caricati in precedenza. Per i video esistenti, dovete rigenerare le miniature.
+Quando configurate e salvate il nuovo intervallo di tempo predefinito, la modifica viene applicata automaticamente solo ai video caricati in futuro. Il nuovo predefinito non viene applicato automaticamente ai video caricati in precedenza. Per i video esistenti, è necessario rigenerare le miniature.
 
 Consultate [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
 
-**Per configurare l’intervallo di tempo predefinito per la generazione delle miniature video,**
+**Per configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video,**
 
 1. In AEM, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite.]**
 
-1. Nella pagina CRXDE Lite, nel pannello delle directory a sinistra, andate a `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Nella pagina CRXDE Lite, nel pannello directory a sinistra, individuate `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    se il pannello della directory non è visibile, potrebbe essere necessario toccare l&#39;icona >> a sinistra della scheda Home.
 
-1. Nel pannello inferiore destro, nella scheda Proprietà, toccate due volte `thumbnailtime`.
-1. Nella finestra di dialogo Modifica miniatura, usate i campi di testo per immettere valori di intervallo come percentuali.
+1. Nel pannello in basso a destra, nella scheda Proprietà, toccate due volte `thumbnailtime`.
+1. Nella finestra di dialogo Modifica tempo miniatura, utilizzare i campi di testo per immettere valori di intervallo come percentuali.
 
-   * Toccate l&#39;icona più (+) per aggiungere uno o più campi del valore dell&#39;intervallo. Potrebbe essere necessario scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
-   * Toccate l&#39;icona meno (-) a destra del campo del valore di un intervallo per eliminarlo dall&#39;elenco.
-   * Toccate l’icona freccia su e freccia giù per riordinare i valori degli intervalli.
+   * Toccate l&#39;icona del segno più (+) per aggiungere uno o più campi del valore dell&#39;intervallo. Potrebbe essere necessario scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
+   * Toccate l&#39;icona del segno meno (-) a destra di un campo del valore dell&#39;intervallo per eliminarlo dall&#39;elenco.
+   * Toccate l&#39;icona freccia su e l&#39;icona freccia giù per riordinare i valori dell&#39;intervallo.
 
 1. Toccate **[!UICONTROL OK]** per tornare alla scheda Proprietà.
-1. Vicino all&#39;angolo superiore sinistro della pagina CRXDE Lite, toccare **[!UICONTROL Salva tutto]**, quindi toccare l&#39;icona Indietro Home nell&#39;angolo superiore sinistro per tornare alla AEM.
+1. Vicino all&#39;angolo superiore sinistro della pagina dei CRXDE Lite, toccare **[!UICONTROL Salva tutto]**, quindi toccare l&#39;icona Indietro nella parte superiore sinistra per tornare a AEM.
 
    Vedere [Aggiunta di una miniatura video.](#adding-a-video-thumbnail)
 
 ### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
 
-Questi passaggi si applicano solo ai file multimediali dinamici in esecuzione in modalità ibrida.
+Questi passaggi sono validi solo per Dynamic Media in modalità ibrida.
 
 T **per aggiungere una miniatura video personalizzata**,
 
-1. Passate a una risorsa video caricata che desiderate aggiungere una miniatura video personalizzata.
-1. Nella modalità di selezione delle risorse dalla vista Elenco o a schede, toccate la risorsa video.
-1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente un &quot;i&quot;).
-1. Nella pagina Proprietà del video, toccare **[!UICONTROL Cambia miniatura.]**
+1. Individuate una risorsa video caricata da aggiungere a una miniatura video personalizzata.
+1. Nella modalità di selezione delle risorse dalla vista Elenco o dalla vista Scheda, toccate la risorsa video.
+1. Nella barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio con un &quot;i&quot; al suo interno).
+1. Nella pagina Proprietà del video, toccate **[!UICONTROL Modifica miniatura.]**
 1. Nella pagina Modifica miniatura, sulla barra degli strumenti, toccate **[!UICONTROL Carica nuova miniatura.]**
 1. Individuate la miniatura da usare, selezionatela, quindi toccate **[!UICONTROL Apri]** per iniziare a caricare l&#39;immagine in AEM. Dopo il caricamento, accertatevi di pubblicare l’immagine.
 1. Dopo aver caricato e pubblicato l&#39;immagine, nella pagina Modifica miniatura, toccate **[!UICONTROL Salva modifiche.]**
