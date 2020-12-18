@@ -2,9 +2,9 @@
 title: Note sulla versione di  [!DNL Adobe Experience Manager Assets] 6.5.
 description: Nuove funzionalità e miglioramenti a [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 41%
 
 ---
@@ -68,7 +68,7 @@ Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web 
 
 [!DNL Dynamic Media] offre funzionalità avanzate di authoring e distribuzione  [!DNL Experience Manager Assets] per contenuti multimediali per creare esperienze all&#39;avanguardia coinvolgenti e personalizzate. Caricando una singola risorsa principale di alta qualità e utilizzando il rendering cloud e i visualizzatori avanzati, potete distribuire al volo qualsiasi combinazione di rappresentazioni per supportare la strategia media aziendale.
 
-Per ulteriori dettagli sulle nuove funzioni [!DNL Dynamic Media], vedere [Note sulla versione di contenuti multimediali dinamici](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Per ulteriori dettagli sulle nuove funzioni [!DNL Dynamic Media], vedere [Note sulla versione di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Supporto video 360 {#video-support}
 
@@ -80,7 +80,7 @@ Gestite i file video a 360° direttamente in [!DNL Experience Manager] utilizzan
 
 ### Miglioramenti dell’accessibilità {#accessibility-enhancements}
 
-[!DNL Dynamic Media] i visualizzatori ora supportano funzioni di accessibilità avanzate come Aria-support, assistenti vocali e Alt-text. Per ulteriori dettagli, consulta le [note sulla versione per i visualizzatori di Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] i visualizzatori ora supportano funzioni di accessibilità avanzate come Aria-support, assistenti vocali e Alt-text. Per ulteriori dettagli, consulta le [note sulla versione per i visualizzatori di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Miglioramento dell’esperienza di ricerca {#experience-enhancement-for-searching}
 
