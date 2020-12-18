@@ -1,13 +1,13 @@
 ---
-title: Accessibilità in elementi multimediali dinamici
-description: Informazioni sull’accessibilità nei visualizzatori per contenuti multimediali dinamici e per contenuti multimediali dinamici
+title: Accessibilità in Dynamic Media
+description: Informazioni sul supporto dell'accessibilità nei visualizzatori Dynamic Media e Dynamic Media
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -52,12 +52,12 @@ Vedere [Modifica del ritaglio avanzato o del campione avanzato di una singola im
 
 Tutti i componenti [!DNL Dynamic Media] visualizzatori integrati supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consultate [Accessibilità e navigazione da tastiera](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori per contenuti multimediali dinamici.
+Consultate [Accessibilità e navigazione da tastiera](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella guida di riferimento dei visualizzatori Dynamic Media.
 
 ## Supporto della tecnologia di assistenza nei visualizzatori [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
 
 Tutti i componenti [!DNL Dynamic Media] del visualizzatore supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie di supporto come gli assistenti vocali.
-Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento per i visualizzatori per contenuti multimediali dinamici. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento dei visualizzatori Dynamic Media. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
 
 >[!MORELIKETHIS]
 >
