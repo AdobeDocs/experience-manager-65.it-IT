@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
 workflow-type: tm+mt
 source-wordcount: '6605'
 ht-degree: 17%
@@ -34,7 +34,7 @@ Per ulteriori informazioni sulle estensioni, vedere [ Adobe Extension](https://e
 * &#39;integrazione Lancio Adobe per i visualizzatori Dynamic Media non funziona nel nodo di creazione AEM. Non è possibile visualizzare alcun tracciamento da una pagina WCM finché non viene pubblicata.
 * ’integrazione Lancio Adobe per i visualizzatori Dynamic Media non è supportata per la modalità operativa a comparsa, in cui l’URL del visualizzatore viene ottenuto utilizzando il pulsante &quot;URL&quot; nella pagina Dettagli risorsa.
 * &#39;integrazione Lancio Adobe non può essere utilizzata simultaneamente con l&#39;integrazione dei visualizzatori precedenti Analytics (tramite il parametro `config2=`).
-* Il supporto per il tracciamento video è limitato solo al tracciamento della riproduzione di base, come descritto in [Panoramica del tracciamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particolare, il monitoraggio di QoS, Annunci, Capitolo/Segmenti o Errori non è supportato.
+* Il supporto per il tracciamento video è limitato solo al tracciamento della &quot;riproduzione principale&quot;, come descritto in [Panoramica del tracciamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particolare, il monitoraggio di QoS, Annunci, Capitolo/Segmenti o Errori non è supportato.
 * La configurazione della durata dell&#39;archiviazione per gli elementi dati non è supportata per gli elementi dati che utilizzano l&#39;estensione *Dynamic Media Viewers*. La durata dell&#39;archiviazione deve essere impostata su **[!UICONTROL None]**.
 
 ### Casi di utilizzo per l&#39;integrazione {#use-cases-for-the-integration}
@@ -141,7 +141,7 @@ Per tenere traccia dei visualizzatori Dynamic Media in  AEM Sites, è necessario
 
 In base alla configurazione corretta, qualsiasi visualizzatore Dynamic Media aggiunto a una pagina Siti, utilizzando un componente WCM supportato da Dynamic Media, tiene traccia automaticamente dei dati  Adobe Analytics,  Adobe Analytics per i video o entrambi.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -155,7 +155,7 @@ Dopo la corretta configurazione, potete aggiungere  supporto per Lancio Adobe a 
 
 Per ulteriori informazioni sull&#39;utilizzo  codice da incorporare della libreria Lancio, vedere [Aggiungere il codice da incorporare della libreria Lancio](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch).
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
 -->
 
@@ -221,8 +221,7 @@ Il valore esatto restituito dall&#39;elemento dati dipende dal contesto. Se l&#3
    * Utilizza l&#39;evento Dynamic Media Viewer **[!UICONTROL PAN]** come attivatore.
    * Invia il valore di **[!UICONTROL ZoomScale]** Data Element a  Adobe Analytics.
 
-* 
-   * **** TrackKeyRule con le seguenti caratteristiche:
+* **** TrackKeyRule con le seguenti caratteristiche:
 
    * Utilizza l&#39;evento di pressione tasti dall&#39;estensione Core  Adobe Launch come attivatore.
    * Invia il valore di **[!UICONTROL ZoomScale]** Data Element a  Adobe Analytics.
