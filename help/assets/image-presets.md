@@ -1,6 +1,6 @@
 ---
 title: Applicazione dei predefiniti per le immagini Dynamic Media
-description: Scoprite come applicare i predefiniti per immagini in Contenuti multimediali dinamici
+description: Scoprite come applicare i predefiniti per immagini in Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 14%
 
 ---
@@ -32,9 +32,9 @@ Potete applicare un predefinito per immagini a un’immagine ogni volta che la v
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagine.
+>In Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse di immagine.
 
-**Per applicare i predefiniti per immagini per contenuti multimediali dinamici**
+**Per applicare i predefiniti per immagini di Dynamic Media**
 
 1. Aprite la risorsa e, nella barra a sinistra, toccate il menu a discesa, quindi toccate **[!UICONTROL Rappresentazioni.]**
 
@@ -57,5 +57,5 @@ Potete applicare un predefinito per immagini a un’immagine ogni volta che la v
    >
    >Se la risorsa *e* il predefinito immagine non sono ancora stati pubblicati, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se presente) non è disponibile.
    >
-   >I predefiniti per immagini vengono inoltre pubblicati automaticamente su un server Dynamic Media S7.
+   >I predefiniti per immagini vengono inoltre pubblicati automaticamente su un server Dynamic Media.
 
