@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per i Service Pack  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
+source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
 workflow-type: tm+mt
-source-wordcount: '14804'
+source-wordcount: '14953'
 ht-degree: 20%
 
 ---
@@ -31,7 +31,7 @@ Le funzioni chiave e i miglioramenti introdotti in Adobe Experience Manager 6.5.
 
 * Viene fornita una nuova impostazione aziendale per riflettere lo stato del connettore [!DNL Dynamic Media].
 
-* Le opzioni predefinite per `test` e `aiprocess` vengono aggiornate su `Thumbnail`, da `Rasterize` in precedenza in Contenuti multimediali dinamici, per garantire che gli utenti debbano creare solo una miniatura e ignorare l&#39;estrazione della pagina e l&#39;estrazione delle parole chiave.
+* Le opzioni predefinite per `test` e `aiprocess` vengono aggiornate su `Thumbnail`, da `Rasterize` in precedenza in Dynamic Media, per garantire che gli utenti debbano creare solo una miniatura e ignorare l&#39;estrazione della pagina e l&#39;estrazione delle parole chiave.
 
 * [Precompilare un modulo adattivo presso il client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
@@ -91,10 +91,19 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La creazione di un marchio in `/content/campaign` determina una struttura che non consente di creare campagne. [!UICONTROL Create ] Brandoption lascia il marchio appena creato senza la possibilità di creare  [!UICONTROL Offerte e ] Attività, in quanto non è disponibile l&#39;opzione   Createoption (NPR-34113).
 * È possibile sospendere la [!DNL Live Copy] di una pagina e l&#39;ereditarietà viene interrotta come mostrato in modalità Editor. Nelle proprietà della pagina, l&#39;icona che rappresenta l&#39;ereditarietà indica erroneamente che l&#39;ereditarietà esiste e non è interrotta (NPR-34017).
 * Le pagine con molti riferimenti non possono essere spostate in modo asincrono e talvolta l&#39;operazione di spostamento non riesce (CQ-4297969).
-* Una pagina Web con il carattere `/` nell’URL non risponde durante la creazione. Quando un componente viene aggiunto durante l’authoring, l’utilizzo della CPU aumenta e il browser smette di rispondere (CQ-4295749).
+* Una pagina Web con un carattere `/` nell’URL non risponde durante la creazione. Quando un componente viene aggiunto durante l’authoring, l’utilizzo della CPU aumenta e il browser smette di rispondere (CQ-4295749).
 * In modalità Sfoglia, NVDA non narra un valore selezionato dall&#39;opzione di menu Tipo/Dimensione. L&#39;elemento visivo non è attivo sull&#39;elemento selezionato. Gli utenti che si affidano a un assistente vocale non possono utilizzare la modalità Sfoglia (CQ-4294993).
 * Quando si crea una pagina Web, gli utenti possono selezionare il modello [!UICONTROL Pagina contenuto]. Nella scheda [!UICONTROL Social Media], gli utenti possono selezionare una [!UICONTROL variante XF preferita]. Per selezionare un frammento esperienza in modalità di ricerca NVDA, gli utenti non possono utilizzare i tasti di scelta rapida (CQ-4292669).
 * Aggiornamento della libreria handlebars alla versione più sicura v4.7.3 (NPR-34484).
+* Più istanze di script tra siti nei componenti [!DNL Experience Manager Sites] (NPR-33925).
+* Il campo del nome della cartella durante la creazione di una nuova cartella è vulnerabile agli script tra siti memorizzati (GRANITE-30094).
+* I risultati della ricerca nella pagina [!UICONTROL  Welcome] e nel modello di completamento del percorso sono vulnerabili agli script tra siti diversi (NPR-33719, NPR-33718).
+* La creazione di una proprietà binaria su un nodo non strutturato determina lo scripting tra siti nella finestra di dialogo delle proprietà binarie (NPR-33717).
+* Cross-site scripting quando si utilizza l&#39;opzione [!UICONTROL Access Control Test] nell&#39;interfaccia CRX DE (NPR-33716).
+* Gli input dell&#39;utente non vengono codificati correttamente per vari componenti quando inviano informazioni al client (NPR-33695).
+* Cross-site scripting nella visualizzazione Calendario per  Casella in entrata Experience Manager (NPR-33545).
+* Un URL che termina con `childrenlist.html` visualizza una pagina HTML invece di una risposta 404. Tali URL sono vulnerabili agli script tra siti diversi (NPR-33441).
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -201,7 +210,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La copia in fase di esecuzione del modello di flusso di lavoro personalizzato delle risorse (creato in `/var/workflow/models/dam`) viene eliminata quando si installa [!DNL Experience Manager] 6.5 Service Pack 5 o una versione precedente su [!DNL Experience Manager] 6.5 (NPR-34532). Per recuperare la copia in fase di esecuzione, sincronizzate la copia in fase di progettazione del modello di workflow con la copia in fase di esecuzione mediante l’API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
-**Problemi risolti in Contenuti multimediali dinamici**
+**Problemi risolti in Dynamic Media**
 
 * Se l’utente definisce le impostazioni di codifica nelle modifiche dopo la creazione del profilo video, le impostazioni di ritaglio avanzato vengono rimosse dai profili video (CQ-4299177).
 
@@ -281,6 +290,8 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Gli utenti esistenti di un gruppo di community aggiunto tramite Admin Console vengono rimossi dall&#39;elenco di utenti in caso di modifiche nella console del gruppo di community (NPR-34315).
 
+* La `TagFilterServlet` perde dati potenzialmente sensibili (NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -329,6 +340,8 @@ Dopo l&#39;installazione del pacchetto del componente aggiuntivo [!DNL Experienc
 
 * Durante l&#39;invio di un modulo adattivo, gli utenti possono modificare i metadati di invio, ad esempio `afPath`, `afSubmissionTime` e `signers`. Per risolvere il problema, i valori dei metadati vengono rimossi dai dati di invio del modulo sul lato client. Gli utenti possono utilizzare l&#39;oggetto `FormSubmitInfo` per recuperare questi valori dal server (NPR-33654).
 
+* Gli input dell&#39;utente non vengono codificati correttamente per i componenti [!DNL Forms] quando inviano informazioni al client (NPR-33611).
+
 **Flusso di lavoro**
 
 * Quando un approvatore di workflow carica un allegato, l&#39;allegato viene rinominato in `undefined` (NPR-33699).
@@ -351,7 +364,7 @@ Dopo l&#39;installazione del pacchetto del componente aggiuntivo [!DNL Experienc
 
 * Copiare il contenuto da un documento [!DNL Microsoft Word] a un frammento di documento di testo in una lettera provoca problemi di formattazione (NPR-33536).
 
-**Servizi basati su documenti**
+**Servizi documentali**
 
 * Quando si genera un file PDF da un file XDP utilizzando i servizi Output e Forms, il testo risulta mancante e sovrapposto (NPR-34237, CQ-4299331).
 
@@ -391,7 +404,7 @@ Alcune funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Mana
 
 * È stata migliorata la gestione delle eccezioni nel flusso dell&#39;interfaccia utente [!DNL Adobe Experience Manager Assets].
 
-* Per ottenere l’URL di pubblicazione per Scene7 multimediale dinamico, all’interfaccia `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` viene aggiunto un nuovo metodo `getRemoteAssetPublishURL`.
+* Per ottenere l&#39;URL di pubblicazione per Dynamic Media Scene7, all&#39;interfaccia `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` viene aggiunto un nuovo metodo `getRemoteAssetPublishURL`.
 
 * [Miglioramenti ](#assets-6550) dell&#39;accessibilità  [!DNL Adobe Experience Manager Assets] in conformità alle linee guida WCAG (Web Content Accessibility Guidelines).
 
@@ -557,7 +570,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Gli avvisi relativi alle transizioni sono riportati nei registri relativi all&#39;apertura di una raccolta intelligente contenente più di 10.000 risorse (NPR-32980).
 
-* I nomi delle risorse vengono modificati in lettere minuscole quando si spostano le risorse da una cartella all&#39;altra in [!DNL Adobe Experience Manager] utilizzando la modalità di esecuzione di Dynamic Media Scene7 (NPR-32995).
+* I nomi delle risorse vengono modificati in lettere minuscole quando si spostano risorse da una cartella all&#39;altra in [!DNL Adobe Experience Manager] in modalità di esecuzione Dynamic Media Scene7 (NPR-32995).
 
 * Una risorsa ricercata non può essere eliminata dopo aver navigato nelle sue proprietà dai risultati della ricerca e poi essere tornata ai risultati della ricerca per eliminarla (NPR-32998).
 
@@ -571,11 +584,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Eccezione nei registri relativi all&#39;apertura della barra delle rappresentazioni per un PDF in una cartella con profilo di ritaglio avanzato (CQ-4294201).
 
-* I predefiniti per immagini non vengono pubblicati se la modalità di sincronizzazione di [!UICONTROL elementi multimediali dinamici] è disattivata per impostazione predefinita  Experience Manager con la modalità di esecuzione di Scene7 per contenuti multimediali dinamici (CQ-4294200).
+* I predefiniti per immagini non vengono pubblicati se la modalità di sincronizzazione [!UICONTROL Dynamic Media] è disattivata per impostazione predefinita  Experience Manager con Dynamic Media Scene7 runmode (CQ-4294200).
 
 * L&#39;elaborazione delle risorse durante il caricamento in blocco si blocca e l&#39;istanza del flusso di lavoro mostra le istanze bloccate della risorsa di aggiornamento DAM (CQ-4293916).
 
-* La creazione di una configurazione per file multimediali dinamici su  Experience Manager funziona, ma nell’interfaccia utente non accade nulla se si seleziona Salva (CQ-4292442).
+* La creazione di una configurazione Dynamic Media sul Experience Manager  funziona, ma nell&#39;interfaccia utente non accade nulla quando si seleziona Salva (CQ-4292442).
 
 * L&#39;anteprima delle risorse video F4V non funziona nella riproduzione progressiva su Safari/Mac (CQ-4289844).
 
@@ -587,11 +600,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * I problemi di prestazioni risolti in 6.5.5.0 sono (CQ-4279206):
 
-   * Il caricamento di file binari di grandi dimensioni sui server di elaborazione immagini per file multimediali dinamici richiede troppo tempo.
+   * Il caricamento di file binari di grandi dimensioni sui server Dynamic Media Image Processing richiede troppo tempo.
 
-   * Il tempo di generazione delle miniature  Experience Manager aumenta a causa dell’architettura Dynamic Media Scene7.
+   * Il tempo di generazione delle miniature sul  Experience Manager aumenta a causa dell&#39;architettura Dynamic Media Scene7.
 
-* I problemi di migrazione di Dynamic Media Scene7 non riescono per i clienti con un numero elevato di risorse (CQ-4279206).
+* I problemi di migrazione ad Dynamic Media Scene7 non vanno a buon fine per i clienti con un numero elevato di risorse (CQ-4279206).
 
 * Il layout del visualizzatore video 360 viene interrotto se si utilizza `setVideo` e il video si sposta verso il basso utilizzando `video= modifier` (CQ-4263201).
 
@@ -703,7 +716,7 @@ Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.8.
 
-* Ora è possibile sincronizzare le sottostrutture per contenuti selettivi su *Contenuti multimediali dinamici - Modalità Scene7* invece di tutti i contenuti disponibili in `content/dam`.
+* Ora è possibile sincronizzare le sottostrutture di contenuto selettivo su *Dynamic Media - Scene7 mode* invece di tutte le strutture disponibili in `content/dam`.
 
 * L&#39;integrazione del modello dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
@@ -759,7 +772,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * Il pulsante per attivare il flusso di lavoro nella pagina di raccolta delle risorse è disattivato (NPR-32471).
 
-* Una cartella senza nome viene creata in SPS (Scene7 Publishing System) mentre si sposta una risorsa da una cartella all’altra in  Experience Manager con configurazione Scene7 per file multimediali dinamici (NPR-32440).
+* In SPS (Scene7 Publishing System) viene creata una cartella senza nome durante lo spostamento di una risorsa da una cartella all’altra in  Experience Manager con configurazione Dynamic Media Scene7 (NPR-32440).
 
 * L’azione per spostare tutte le risorse (tramite Seleziona tutto e quindi Sposta) in una cartella contenente le risorse pubblicate non riesce e ha esito negativo (NPR-32366).
 
@@ -791,11 +804,11 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31307).
 
-* La pagina dei dettagli delle risorse PDF non mostra i pulsanti delle azioni tranne I pulsanti Raccolta e Aggiungi rappresentazione nell&#39;Experience Manager  esecuzione in modalità di esecuzione di Dynamic Media Scene7 (CQ-4286705).
+* La pagina dei dettagli delle risorse PDF non mostra i pulsanti delle azioni eccetto A raccolta e Aggiungi rappresentazione nell&#39;Experience Manager  esecuzione in modalità Scene7 Dynamic Media (CQ-4286705).
 
 * L&#39;elaborazione delle risorse richiede troppo tempo durante il processo di caricamento batch di Scene7 (CQ-4286445).
 
-* Il pulsante Salva non importa il set remoto quando l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client per contenuti multimediali dinamici (CQ-4285690).
+* Il pulsante Salva non importa il set remoto se l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client Dynamic Media (CQ-4285690).
 
 * La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato  Experience Manager (CQ-4283701).
 
@@ -803,7 +816,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * L’altezza contenitore errata di un modello 3D caricato visualizzato in anteprima nel visualizzatore 3D viene visualizzata nella pagina dei dettagli della risorsa (CQ-4283309).
 
-* Carosello Editor non si apre in IE 11 in modalità ibrida  Experience Manager Dynamic Media (CQ-4255590).
+* Carosello Editor non si apre in IE 11 in modalità ibrida Dynamic Media  Experience Manager (CQ-4255590).
 
 * Lo stato attivo si blocca nel menu a discesa E-mail nella finestra di dialogo Download, nei browser Chrome e Safari (NPR-32067).
 
