@@ -1,8 +1,8 @@
 ---
 title: Creazione di applicazioni Flash Builder che eseguono l'autenticazione SSO utilizzando token HTTP
 seo-title: Creazione di applicazioni Flash Builder che eseguono l'autenticazione SSO utilizzando token HTTP
-description: 'null'
-seo-description: 'null'
+description: Create un'applicazione client utilizzando un Flash Builder che esegue l'autenticazione Single Sign-On (SSO) tramite token HTTP. Eseguire l'autenticazione di un utente per un'operazione una volta e utilizzare tale autenticazione per eseguire più operazioni AEM Forms .
+seo-description: Create un'applicazione client utilizzando un Flash Builder che esegue l'autenticazione Single Sign-On (SSO) tramite token HTTP. Eseguire l'autenticazione di un utente per un'operazione una volta e utilizzare tale autenticazione per eseguire più operazioni AEM Forms .
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ All&#39;avvio di un&#39;applicazione client, potete effettuare una richiesta POS
 
 Se il servlet di sicurezza individua un token valido che corrisponde a un utente, il servlet di sicurezza consente di continuare e risponde con `authstate=COMPLETE`. In caso contrario, il servlet di sicurezza risponde con `authstate=CREDENTIAL_CHALLENGE`. Nell&#39;elenco seguente sono illustrati i seguenti valori:
 
-* `Case authstate=COMPLETE`: Indica che l&#39;utente è autenticato e che il  `assertionid` valore contiene l&#39;identificatore di asserzione per l&#39;utente. In questa fase, l&#39;applicazione client può connettersi a  AEM Forms. Il servlet configurato per tale URL può ottenere il `AuthResult` per l&#39;utente richiamando il metodo `AuthenticationManager.authenticate(HttpRequestToken)`. L&#39;istanza `AuthResult` può creare il contesto del manager utente e memorizzarlo nella sessione.
+* `Case authstate=COMPLETE`: Indica che l&#39;utente è autenticato e che il  `assertionid` valore contiene l&#39;identificatore di asserzione per l&#39;utente. In questa fase, l&#39;applicazione client può connettersi a  AEM Forms. Il servlet configurato per tale URL può ottenere il `AuthResult` per l&#39;utente richiamando il metodo `AuthenticationManager.authenticate(HttpRequestToken)`. L&#39;istanza `AuthResult` può creare il contesto del manager utente e archiviarlo nella sessione.
 * `Case authstate=CREDENTIAL_CHALLENGE`: Indica che il servlet di sicurezza richiede le credenziali dell&#39;utente. Come risposta, l&#39;applicazione client può visualizzare la schermata di accesso all&#39;utente e inviare le credenziali ottenute al servlet di sicurezza (ad esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`. Se l&#39;autenticazione ha esito positivo, il servlet di sicurezza risponde con `authstate=COMPLETE`.
 
 Se l&#39;autenticazione non riesce, il servlet di sicurezza risponde con `authstate=FAILED`. Per rispondere a questo valore, l&#39;applicazione client può visualizzare un messaggio per ottenere nuovamente le credenziali.
