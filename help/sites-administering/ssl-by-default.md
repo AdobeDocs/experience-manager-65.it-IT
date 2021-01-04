@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ In alternativa, potete automatizzare la configurazione SSL caricando un pacchett
 
 ### Generazione di una coppia chiave/certificato privata da utilizzare con la procedura guidata {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Di seguito è riportato un esempio per la creazione di un certificato autofirmato in formato DER utilizzabile dalla procedura guidata SSL.
+Di seguito è riportato un esempio per la creazione di un certificato autofirmato in formato DER utilizzabile dalla procedura guidata SSL. Installate OpenSSL basato sul sistema operativo, aprite il prompt dei comandi OpenSSL e modificate la directory nella cartella in cui desiderate generare la chiave privata/certificato.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
 1. Quindi, generate una richiesta di firma dei certificati (CSR) utilizzando la chiave privata:
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Generate il certificato SSL e firmatelo con la chiave privata. In questo esempio, scadrà tra un anno:
