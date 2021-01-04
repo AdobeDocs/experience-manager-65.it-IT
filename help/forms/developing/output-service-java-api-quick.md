@@ -1,8 +1,8 @@
 ---
 title: Avvio rapido API Java del servizio di output (SOAP)
 seo-title: Avvio rapido API Java del servizio di output (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio Output Java API Quick Start (SOAP) per creare un documento PDF, creare un documento PDF basato su file XDP dell'applicazione, creare un documento PDF/A, passare documenti al servizio Output, passare un documento situato nell'archivio di AEM Forms  al servizio Output, creare un documento PDF basato sui frammenti, stampare su un file, inviare un flusso di stampa a una stampante di rete, creare più file PDF, creare regole di ricerca, trasformare un documento PDF.
+seo-description: Utilizzare il servizio Output Java API Quick Start (SOAP) per creare un documento PDF, creare un documento PDF basato su file XDP dell'applicazione, creare un documento PDF/A, passare documenti al servizio Output, passare un documento situato nell'archivio di AEM Forms  al servizio Output, creare un documento PDF basato sui frammenti, stampare su un file, inviare un flusso di stampa a una stampante di rete, creare più file PDF, creare regole di ricerca, trasformare un documento PDF.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
