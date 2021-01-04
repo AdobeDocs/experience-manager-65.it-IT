@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 3%
@@ -159,11 +159,11 @@ Consente di trascinare gli elementi del modello di modulo nel modulo adattivo. G
    <td>Aggiunge un campo in cui sono elencati tutti gli allegati caricati utilizzando il componente File allegato.</td>
   </tr>
   <tr>
-   <td>Piè di pagina<br /> </td>
+   <td>Intestazione<br /> </td>
    <td>Aggiunge l'intestazione della pagina che in genere include il logo di una società, il titolo del modulo e il riepilogo.<br /> </td>
   </tr>
   <tr>
-   <td>Intestazione</td>
+   <td>Piè di pagina</td>
    <td>Aggiunge il piè di pagina di pagina che in genere include informazioni sul copyright e collegamenti ad altre pagine. </td>
   </tr>
   <tr>
