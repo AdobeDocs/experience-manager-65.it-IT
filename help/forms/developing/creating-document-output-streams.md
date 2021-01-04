@@ -1,8 +1,8 @@
 ---
 title: Creazione di flussi di output dei documenti
 seo-title: Creazione di flussi di output dei documenti
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio Output per convertire i documenti in formato PDF (inclusi i documenti PDF/A), PostScript, PCL (Printer Control Language) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - formati di etichetta TPCL.
+seo-description: Utilizzare il servizio Output per convertire i documenti in formato PDF (inclusi i documenti PDF/A), PostScript, PCL (Printer Control Language) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - formati di etichetta TPCL.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '18972'
+source-wordcount: '19030'
 ht-degree: 0%
 
 ---
