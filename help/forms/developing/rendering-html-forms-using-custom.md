@@ -1,8 +1,8 @@
 ---
 title: Rendering HTML Forms con file CSS personalizzati
 seo-title: Rendering HTML Forms con file CSS personalizzati
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da parte di un browser Web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l'API Java e l'API del servizio Web.
+seo-description: Utilizzare il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da parte di un browser Web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l'API Java e l'API del servizio Web.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
