@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di  archivio AEM Forms
 seo-title: Utilizzo di  archivio AEM Forms
-description: 'null'
-seo-description: 'null'
+description: Gestire  repository AEM Forms per creare cartelle, scrivere, elencare, leggere, aggiornare e cercare risorse tramite l'API Java e l'API dei servizi Web. Inoltre, scoprite come creare relazioni tra le risorse, bloccare ed eliminare le risorse.
+seo-description: Gestire  repository AEM Forms per creare cartelle, scrivere, elencare, leggere, aggiornare risorse e cercare utilizzando l'API Java e l'API del servizio Web. Inoltre, scoprite come creare relazioni tra le risorse, bloccare ed eliminare le risorse.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '9076'
+source-wordcount: '9143'
 ht-degree: 0%
 
 ---
