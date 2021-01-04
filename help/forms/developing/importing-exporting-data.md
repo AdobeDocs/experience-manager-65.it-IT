@@ -1,8 +1,8 @@
 ---
 title: Importazione ed esportazione di dati
 seo-title: Importazione ed esportazione di dati
-description: 'null'
-seo-description: 'null'
+description: Utilizzare il servizio di integrazione dei dati modulo per importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l'API Java e l'API del servizio Web.
+seo-description: Utilizzare il servizio di integrazione dei dati modulo per importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l'API Java e l'API del servizio Web.
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2796'
 ht-degree: 0%
 
 ---
