@@ -1,8 +1,8 @@
 ---
 title: Scomposizione programmatica dei documenti PDF
 seo-title: Scomposizione programmatica dei documenti PDF
-description: 'null'
-seo-description: 'null'
+description: Il servizio Assembler consente di smontare un singolo documento PDF in più documenti PDF utilizzando l'API Java e l'API del servizio Web.
+seo-description: Il servizio Assembler consente di smontare un singolo documento PDF in più documenti PDF utilizzando l'API Java e l'API del servizio Web.
 uuid: d71cc044-e948-4b7a-b598-b041723b69e9
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
