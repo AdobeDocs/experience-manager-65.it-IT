@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -299,7 +299,7 @@ quindi [configurare l&#39;agente di replica](#replication-agents-on-author)
 
 Esistono due funzionalità di  AEM Communities che richiedono che tutte AEM istanze del server utilizzino le stesse chiavi di crittografia. Si tratta di [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
 
-A partire dal AEM 6.3, il materiale chiave è memorizzato nel file system e non più nella directory archivio.
+A partire dal AEM 6.3, il materiale chiave viene memorizzato nel file system e non più nella directory archivio.
 
 Per copiare il materiale chiave dall’autore a tutte le altre istanze, è necessario:
 
