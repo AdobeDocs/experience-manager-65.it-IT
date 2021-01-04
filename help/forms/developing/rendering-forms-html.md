@@ -1,8 +1,8 @@
 ---
 title: Rendering di Forms come HTML
 seo-title: Rendering di Forms come HTML
-description: 'null'
-seo-description: 'null'
+description: Il servizio Forms consente di eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP inoltrata da un browser Web. È possibile utilizzare l'API Java e l'API Web Service per eseguire il rendering dei moduli come HTML.
+seo-description: Il servizio Forms consente di eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP inoltrata da un browser Web. È possibile utilizzare l'API Java e l'API Web Service per eseguire il rendering dei moduli come HTML.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4174'
 ht-degree: 1%
 
 ---
