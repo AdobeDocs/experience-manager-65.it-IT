@@ -1,8 +1,8 @@
 ---
 title: Rendering di Forms
 seo-title: Rendering di Forms
-description: 'null'
-seo-description: 'null'
+description: Il servizio Forms consente di creare applicazioni client di acquisizione dei dati interattive per convalidare, elaborare, trasformare e distribuire i moduli generalmente creati in Designer. Gli autori dei moduli possono sviluppare una singola struttura del modulo che il servizio Forms esegue in PDF, SWF o HTML in vari ambienti del browser.
+seo-description: Il servizio Forms consente di creare applicazioni client di acquisizione dei dati interattive per convalidare, elaborare, trasformare e distribuire i moduli generalmente creati in Designer. Gli autori dei moduli possono sviluppare una singola struttura del modulo che il servizio Forms esegue in PDF, SWF o HTML in vari ambienti del browser.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
