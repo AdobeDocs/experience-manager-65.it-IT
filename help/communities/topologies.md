@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -110,6 +110,6 @@ Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzio
 
    In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per le risorse, un archivio dati può essere configurato per memorizzare dati binari. Per Communities, è necessario configurare uno store comune per selezionare l&#39;SRP.
 
-* [Elementi di storage in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementi di archiviazione](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Descrive le implementazioni di storage a due nodi: Tar e MongoDB.
