@@ -1,8 +1,8 @@
 ---
 title: Assemblare documenti PDF con segnalibri
 seo-title: Assemblare documenti PDF con segnalibri
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il servizio Assembler per modificare un documento PDF che contiene segnalibri per includere segnalibri tramite l'API Java e l'API del servizio Web.
+seo-description: Utilizzate il servizio Assembler per modificare un documento PDF che contiene segnalibri per includere segnalibri tramite l'API Java e l'API del servizio Web.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
