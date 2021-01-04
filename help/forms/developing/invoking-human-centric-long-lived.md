@@ -1,8 +1,8 @@
 ---
 title: Richiamo di processi a lunga durata basati sull'uomo
 seo-title: Richiamo di processi a lunga durata basati sull'uomo
-description: 'null'
-seo-description: 'null'
+description: È possibile invocare a livello di codice i processi longevi incentrati sull'uomo creati in Workbench utilizzando un'applicazione client basata su Web Java che utilizza l'API Invocation, un'applicazione ASP.NET che utilizza i servizi Web e un'applicazione client integrata con Flex che utilizza Remoting.
+seo-description: È possibile invocare a livello di codice i processi longevi incentrati sull'uomo creati in Workbench utilizzando un'applicazione client basata su Web Java che utilizza l'API Invocation, un'applicazione ASP.NET che utilizza i servizi Web e un'applicazione client integrata con Flex che utilizza Remoting.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3739'
 ht-degree: 0%
 
 ---
