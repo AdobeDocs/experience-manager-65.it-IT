@@ -1,8 +1,8 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Avvio rapido
 seo-title: LiveCycleProcess Java API(SOAP)Avvio rapido
-description: 'null'
-seo-description: 'null'
+description: 'Utilizzare l''API Java di LiveCycleProcess (SOAP) Quick Start per cercare le istanze del processo, sospendere le istanze del processo, avviare le istanze del processo sospese, terminare le istanze del processo, eliminare i dati del processo e recuperare lo stato di un processo. '
+seo-description: Utilizzare l'API Java di LiveCycleProcess (SOAP) Quick Start per cercare le istanze del processo, sospendere le istanze del processo, avviare le istanze del processo sospese, terminare le istanze del processo, eliminare i dati del processo e recuperare lo stato di un processo.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
