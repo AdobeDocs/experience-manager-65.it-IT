@@ -1,8 +1,8 @@
 ---
 title: Rendering di PDF forms interattivi
 seo-title: Rendering di PDF forms interattivi
-description: 'null'
-seo-description: 'null'
+description: Utilizzate il servizio Forms per eseguire il rendering dei PDF forms interattivi sui dispositivi client, in genere sui browser Web, per raccogliere informazioni dagli utenti. È possibile utilizzare il servizio Forms per eseguire il rendering dei moduli interattivi utilizzando l'API Java e l'API del servizio Web.
+seo-description: Utilizzate il servizio Forms per eseguire il rendering dei PDF forms interattivi sui dispositivi client, in genere sui browser Web, per raccogliere informazioni dagli utenti. È possibile utilizzare il servizio Forms per eseguire il rendering dei moduli interattivi utilizzando l'API Java e l'API del servizio Web.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
