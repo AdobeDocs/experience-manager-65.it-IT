@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per i Service Pack  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14953'
 ht-degree: 20%
@@ -66,7 +66,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
    ![Screenshot per illustrare il problema dei menu mancanti nell’interfaccia classica](assets/33949_missing_menu.png)
 
 * Non è possibile utilizzare un elemento [!DNL Content Fragment] come `TemplatedResource` poiché non funziona in `ContentFragmentUsePojo` (NPR-33911).
-* Le operazioni di spostamento sincrone e asincrone possono causare errori a causa di trasferimenti simultanei. Le operazioni di spostamento delle pagine sono limitate allo spostamento sincrono. Consente lo spostamento simultaneo di pagine (NPR-33875).
+* Le operazioni di spostamento sincrone e asincrone possono causare errori a causa di trasferimenti simultanei. Le operazioni di spostamento delle pagine sono limitate solo allo spostamento asincrono. Consente lo spostamento simultaneo di pagine (NPR-33875).
 * [!UICONTROL L&#39;operazione Gestisci ] pubblicazione per replicare il contenuto dall&#39;istanza Author a Publish non riesce e genera un errore JavaScript (NPR-33872).
 * Quando per creare versioni sono selezionate più pagine o risorse, la nuova versione viene creata solo per l’ultima pagina o risorsa selezionata (NPR-33866).
 * Spostate una pagina di blueprint con copie in tempo reale in un’altra cartella. Quando si sposta nella cartella originale, l&#39;operazione di spostamento non riesce senza errori (NPR-33864).
@@ -364,7 +364,7 @@ Dopo l&#39;installazione del pacchetto del componente aggiuntivo [!DNL Experienc
 
 * Copiare il contenuto da un documento [!DNL Microsoft Word] a un frammento di documento di testo in una lettera provoca problemi di formattazione (NPR-33536).
 
-**Servizi documentali**
+**Document Services**
 
 * Quando si genera un file PDF da un file XDP utilizzando i servizi Output e Forms, il testo risulta mancante e sovrapposto (NPR-34237, CQ-4299331).
 
