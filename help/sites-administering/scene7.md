@@ -1,6 +1,6 @@
 ---
-title: Integrazione con Dynamic Media Classic (Scene7)
-seo-title: Integrazione con Dynamic Media Classic (Scene7)
+title: Integrazione con Dynamic Media Classic
+seo-title: Integrazione con Dynamic Media Classic
 description: Scopri come integrare AEM con Dynamic Media Classic.
 seo-description: Scopri come integrare AEM con Dynamic Media Classic.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '5485'
+source-wordcount: '5464'
 ht-degree: 2%
 
 ---
 
 
-# Integrazione con Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integrazione con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[ Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis è una soluzione in hosting per la gestione, il miglioramento, la pubblicazione e la distribuzione di risorse multimediali su display e stampe Web, mobili, e-mail e connessi a Internet.
+ Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali su schermi e stampe Web, mobili, e-mail e connessi a Internet.
 
 Per utilizzare Dynamic Media Classic, è necessario configurare la configurazione cloud in modo che Dynamic Media Classic e  AEM Assets possano interagire tra loro. Questo documento descrive come configurare AEM e Dynamic Media Classic.
 
@@ -363,7 +363,7 @@ Per attivarla:
 
 ### Aggiunta di timeout configurabile al flusso di lavoro di caricamento Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Quando un’istanza di AEM è configurata per gestire la codifica video tramite Dynamic Media Classic (Scene7), per impostazione predefinita viene impostato un timeout di 35 minuti per qualsiasi processo di caricamento. Per disporre di processi di codifica video potenzialmente più lunghi, potete configurare questa impostazione:
+Quando un’istanza di AEM è configurata per gestire la codifica video tramite Dynamic Media Classic, per impostazione predefinita viene applicato un timeout di 35 minuti a qualsiasi processo di caricamento. Per disporre di processi di codifica video potenzialmente più lunghi, potete configurare questa impostazione:
 
 1. Andate a **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
