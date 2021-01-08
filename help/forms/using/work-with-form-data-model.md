@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ba42f1e85216f6be4ae0dd90891e1b2d1d559bd8
 workflow-type: tm+mt
 source-wordcount: '4148'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Per aggiungere oggetti e servizi del modello dati:
 
    >[!NOTE]
    >
-   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
+   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#work-with-navigation-properties-of-odata-services).
 
 1. Toccare **[!UICONTROL Salva]** per salvare l&#39;oggetto modello di modulo.
 
@@ -146,7 +146,7 @@ Per leggere e scrivere i dati per un oggetto modello dati, effettuare le seguent
    >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Quando si aggiunge un&#39;origine dati del servizio OData a un modello dati modulo, è disponibile un servizio nel modello dati modulo per tutte le proprietà di navigazione in un oggetto modello dati. È possibile utilizzare questo servizio per leggere le proprietà di navigazione dell&#39;oggetto modello dati corrispondente.
    >
    >
-   >Per ulteriori informazioni sull&#39;utilizzo del servizio, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
+   >Per ulteriori informazioni sull&#39;utilizzo del servizio, vedere [Uso delle proprietà di navigazione di OData services](#work-with-navigation-properties-of-odata-services).
 
 1. Attivare/disattivare l&#39;oggetto di livello principale **[!UICONTROL Oggetto di livello principale]** per specificare se l&#39;oggetto del modello dati è un oggetto modello di livello principale.
 
@@ -244,7 +244,7 @@ Per aggiungere un&#39;associazione:
 
    >[!NOTE]
    >
-   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. È possibile utilizzare queste proprietà di navigazione quando si aggiungono associazioni nel modello dati modulo. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
+   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. È possibile utilizzare queste proprietà di navigazione quando si aggiungono associazioni nel modello dati modulo. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#work-with-navigation-properties-of-odata-services).
 
    Viene visualizzata la finestra di dialogo Aggiungi associazione.
 
