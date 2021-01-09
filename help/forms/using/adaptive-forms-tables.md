@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2428'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,14 @@ Per abilitare l&#39;ordinamento:
    Analogamente, un&#39;intestazione di colonna con una freccia rivolta verso il basso rappresenta la visualizzazione dei valori della colonna in ordine decrescente.
 
    È inoltre possibile apportare modifiche alla tabella in modalità **Anteprima** e fare di nuovo clic sull&#39;intestazione della colonna per ordinare i valori della colonna.
+
+## Impostare la larghezza della colonna per una tabella {#set-column-width}
+
+Per impostare la larghezza della colonna per una tabella, procedere come segue:
+
+1. Nella scheda **[!UICONTROL Contenuto]**, toccate il componente **[!UICONTROL Tabella]** e toccate l&#39;icona Configura (![Configura](assets/configure-icon.svg)).
+
+1. Immettere l&#39;elenco di valori separati da virgola nel campo **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel campo **[!UICONTROL Larghezza colonna]** si ottiene l&#39;impostazione della larghezza delle colonne come 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 come la larghezza per la prima colonna fa riferimento a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
 
 ## Configurare lo stile di tabella {#configure}
 
