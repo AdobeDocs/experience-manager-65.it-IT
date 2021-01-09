@@ -2,9 +2,9 @@
 title: Utilizzare la modalità Layout per ridimensionare i componenti per i moduli adattivi
 description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Selezionare **Layout** dall&#39;elenco a discesa visualizzato nella parte superi
 
    La barra degli strumenti visualizzata dopo aver toccato i componenti è composta dalle seguenti opzioni:
 
-   * **Elemento padre:** selezionare l’elemento padre di un componente.
-   * **Mobile in nuova riga:** sposta il componente sulla riga successiva se all’interno della stessa riga sono presenti più componenti.
+   * **[!UICONTROL Elemento padre]**: Selezionate l’elemento padre di un componente.
+   * **[!UICONTROL Ripristina layout]** punto di interruzione: Annulla tutte le modifiche di ridimensionamento e applica il layout predefinito al componente.
+   * **[!UICONTROL Mobile in nuova riga]**: Se sono presenti più componenti nella stessa riga, sposta il componente sulla riga successiva.
 
-   Inoltre, è possibile annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente i componenti ridimensionati utilizzando l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
-
-   Potete toccare il componente e utilizzare l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** per annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito a livello di componente.
+   È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)) a livello di pannello per annullare tutte le modifiche al ridimensionamento.
 
    >[!NOTE]
    >
