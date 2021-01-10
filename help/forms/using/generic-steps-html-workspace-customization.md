@@ -11,29 +11,29 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: e863089a4328b7222b60429c82ca3df2b8e1dd05
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '317'
 ht-degree: 1%
 
 ---
 
 
-# Passaggi generici per  personalizzazione dell&#39;area di lavoro AEM Forms{#generic-steps-for-aem-forms-workspace-customization}
+# Passaggi generici per  personalizzazione dell&#39;area di lavoro AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 I passaggi generici per eseguire eventuali personalizzazioni sono:
 
 1. Accedete al CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Create una cartella denominata `ws`in `/apps`, se non esiste. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Create una cartella `sling:Folder` denominata `ws` in `/apps`, se non esiste. Per creare una cartella `sling:Folder`, fare clic con il pulsante destro del mouse sulla cartella `apps` e selezionare **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Specificare il nome come `ws`, selezionare il tipo come `sling:Folder` e fare clic su **[!UICONTROL OK]**. Fare clic su **[!UICONTROL Salva tutto]**.
 1. Accedere a `/apps/ws` e passare alla scheda **[!UICONTROL Controllo accesso]**.
-1. Nell&#39;elenco **[!UICONTROL Controllo accesso]**, fare clic su **[!UICONTROL +]** per aggiungere una nuova voce. Fare di nuovo clic su **[!UICONTROL +]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Repository]**. Nell&#39;elenco **[!UICONTROL Controllo accesso]**, fare clic su **[!UICONTROL +]** per aggiungere una nuova voce. Fare di nuovo clic su **[!UICONTROL +]**.
 1. Cercare e selezionare l&#39;entità **PERM_WORKSPACE_USER**.
 
    ![Selezionate l&#39;entità PERM_WORKSPACE_USER come parte dei passaggi generici per personalizzare l&#39;area di lavoro HTML](assets/perm_workspace_user.png)
 
 1. Assegnare il privilegio `jcr:read` al Principal.
 1. Fare clic su **[!UICONTROL Salva tutto]**.
-1. Copiate i file `GET.jsp` e `html.jsp`dalla cartella `/libs/ws`alla cartella `/apps/ws`.
+1. Copiate i file `GET.jsp`, `index` e `html.jsp` dalla cartella `/libs/ws` alla cartella `/apps/ws`.
 1. Copiate la cartella `/libs/ws/locales` nella cartella `/apps/ws`. Fare clic su **[!UICONTROL Salva tutto]**.
 1. Aggiornare i riferimenti e i percorsi relativi nel file `GET.jsp`, come illustrato di seguito, quindi fare clic su **[!UICONTROL Salva tutto]**.
 
@@ -45,7 +45,7 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
    1. Andate alla cartella `/apps/ws` e create una nuova cartella denominata `css`.
 
-   1. Nella cartella `css`creare un nuovo file denominato `newStyle.css`.
+   1. Nella cartella `css`, create un nuovo file denominato `newStyle.css`.
 
    1. Apri `/apps/ws/html`.jsp e cambia da
 
@@ -64,7 +64,7 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
    >[!NOTE]
    >
-   >Inserite la voce del file CSS definito dall&#39;utente dopo la voce newStyle.css, come illustrato sopra.
+   >Inserite la voce del file CSS definito dall&#39;utente dopo la voce style.css, come illustrato sopra.
 
 1. Nel file /apps/ws/html.jsp, modificare da
 
@@ -80,13 +80,11 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
 1. Effettua le seguenti operazioni:
 
-   1. Create una cartella denominata `js`in `/apps/ws`. Fare clic su **[!UICONTROL Salva tutto]**.
+   1. Create una cartella denominata `js` in `/apps/ws`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Create una cartella denominata `libs`in `/apps/ws/js`. Fare clic su **[!UICONTROL Salva tutto]**.
+   1. Create una cartella denominata `libs` in `/apps/ws/js`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-   1. Create una cartella denominata `jqueryui`in `/apps/ws/js/libs`. Fare clic su **[!UICONTROL Salva tutto]**.
-
-   1. Copiare `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` in `/apps/ws/js/libs/jqueryui`. Fare clic su **[!UICONTROL Salva tutto]**.
+   1. Copiate la cartella `/libs/ws/js/libs/jqueryui` in `/apps/ws/js/libs`. Fare clic su **[!UICONTROL Salva tutto]**.
 
 1. Effettuate le seguenti operazioni per le personalizzazioni HTML:
 
