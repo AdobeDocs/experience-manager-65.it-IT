@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 1%
 Il [componente Video](/help/sites-authoring/default-components-foundation.md#video) consente di inserire una risorsa video predefinita out-of-the-box (OOOTB) nella pagina.
 
 Affinché venga eseguita la transcodifica corretta, l&#39;amministratore installa separatamente FFmpeg. Vedere [Installare FFmpeg e configurare AEM](#install-ffmpeg). Gli amministratori inoltre [Configura profili video](#configure-video-profiles) per l&#39;utilizzo con elementi HTML5.
+
+>[!CAUTION]
+>
+>Questo componente di base è stato dichiarato obsoleto.  Adobe consiglia di utilizzare il componente [Componenti di base Incorpora componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
 
 ## Configurare i profili video {#configure-video-profiles}
 
