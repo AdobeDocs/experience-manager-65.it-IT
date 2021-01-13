@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando 
 
 * È consigliabile utilizzare moduli adattivi basati sullo schema XSD su moduli adattivi basati su XFA per configurare il caricamento pigro sui moduli di grandi dimensioni. Il guadagno di prestazioni dovuto all&#39;implementazione pigra del caricamento nei moduli adattivi basati su XFA è relativamente inferiore al guadagno nei moduli adattivi basati su XSD.
 * Non configurare il caricamento pigro sui frammenti in un modulo adattivo che utilizza **[!UICONTROL Responsive -tutto in una pagina senza il layout]** di navigazione per il pannello principale. A seguito della configurazione di layout reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. Può anche causare un peggioramento delle prestazioni.
+* Si consiglia di non configurare il caricamento pigro sul primo frammento in un modulo adattivo.
 * Si consiglia di non configurare il caricamento pigro sui frammenti nel primo pannello visualizzato al caricamento del modulo adattivo.
 * Il caricamento dei layout è supportato fino a due livelli nella gerarchia dei frammenti.
 * Assicurarsi che i campi contrassegnati come globali siano univoci all&#39;interno di un modulo adattivo.
