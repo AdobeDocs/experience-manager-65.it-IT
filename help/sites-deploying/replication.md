@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8adbf52b29cf6e548bf14df57bc12b44821c9def
+source-git-commit: 17d70e532ab5d825dd4dc0ea4c891c5b7cb8d345
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3443'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ AEM [Communities](/help/communities/overview.md) non utilizza mai la replica per
 
 Il sito Web Web di vendita al dettaglio incluso in un&#39;installazione standard di AEM può essere utilizzato per illustrare la replica.
 
-Per seguire questo esempio e utilizzare gli agenti di replica predefiniti è necessario installare AEM[ con:](/help/sites-deploying/deploy.md)
+Per seguire questo esempio e utilizzare gli agenti di replica predefiniti è necessario installare AEM](/help/sites-deploying/deploy.md) con:[
 
 * l&#39;ambiente di authoring sulla porta `4502`
 * l&#39;ambiente di pubblicazione sulla porta `4503`
@@ -593,19 +593,3 @@ L&#39;editore decomprimerà tutti gli elementi, li salverà e riferirà all&#39;
 ## Risorse aggiuntive {#additional-resources}
 
 Per informazioni dettagliate sulla risoluzione dei problemi, è possibile consultare la pagina [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md).
-
-Per ulteriori informazioni,  Adobe dispone di una serie di articoli Knowledge Base relativi alla replica:
-
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
-[...E000](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
