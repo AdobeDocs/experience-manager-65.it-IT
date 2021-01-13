@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,9 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare [!
    **na1** fa riferimento alla condivisione di database predefinita.
 
    È possibile modificare il valore per la condivisione del database. Riavviate il server per poter utilizzare il nuovo valore per la condivisione del database.
+
+   >[!NOTE]
+   Verificate che le configurazioni dell’istanza di creazione e pubblicazione puntino alla stessa condivisione. Se create più configurazioni Adobe Sign  per un&#39;organizzazione, accertatevi che tutte le configurazioni utilizzino la stessa condivisione.
 
 1. Specificate l&#39; **ID client** (altrimenti denominato ID applicazione) e il **Segreto client** copiato al punto 8. Selezionare l&#39;opzione **[!UICONTROL Abilita  Adobe Sign per gli allegati anche]** per aggiungere i file allegati a un modulo adattivo al documento [!DNL Adobe Sign] corrispondente inviato per la firma.
 
