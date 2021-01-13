@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 0a6f50457efda42a9d496c0c9202cb7d7b8f6eb9
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4974'
 ht-degree: 1%
 
 ---
@@ -609,6 +609,39 @@ Nella directory archivio sono presenti diverse configurazioni. È possibile cerc
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
+### Segnaposto componente {#component-placeholders}
+
+I componenti devono sempre eseguire il rendering di codice HTML visibile all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall&#39;interfaccia dell&#39;editor, rendendola tecnicamente presente ma invisibile sulla pagina e nell&#39;editor. In tal caso, gli autori non potranno selezionare e interagire con il componente vuoto.
+
+Per questo motivo, i componenti devono eseguire il rendering di un segnaposto purché non rendano alcun output visibile quando la pagina viene sottoposta a rendering nell&#39;editor pagina (quando la modalità WCM è `edit` o `preview`).
+La marcatura HTML tipica di un segnaposto è la seguente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Lo script HTL tipico che esegue il rendering del codice HTML segnaposto riportato sopra è il seguente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+Nell&#39;esempio precedente, `isEmpty` è una variabile che è vera solo quando il componente non ha contenuto ed è invisibile all&#39;autore.
+
+Per evitare ripetizioni,  Adobe consiglia agli implementatori di componenti di utilizzare un modello HTL per questi segnaposto, [come quello fornito dai componenti core.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+L’utilizzo del modello nel collegamento precedente viene quindi effettuato con la seguente riga di HTL:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+Nell&#39;esempio precedente, `model.text` è la variabile che è true solo quando il contenuto ha contenuto ed è visibile.
+
+Un esempio di utilizzo di questo modello può essere visualizzato nei componenti core, [come nel componente titolo.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+
 ### Configurazione con cq:EditConfig Properties {#configuring-with-cq-editconfig-properties}
 
 ### cq:azioni {#cq-actions}
@@ -1014,7 +1047,7 @@ L&#39;esempio seguente è equivalente alla configurazione `REFRESH_INSERTED`:
 
 >[!NOTE]
 >
->Per l&#39;interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, fare riferimento alla sezione degli eventi `before<action>` e `after<action>` di [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover)&lt;a7/>.
+>Per l&#39;interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, fare riferimento alla sezione degli eventi `before<action>` e `after<action>` di [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Con la seguente configurazione, la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
 
