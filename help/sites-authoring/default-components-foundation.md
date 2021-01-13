@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '7287'
-ht-degree: 86%
+source-wordcount: '7364'
+ht-degree: 85%
 
 ---
 
@@ -308,6 +308,10 @@ L’applicazione esterna viene integrata nel sistema paragrafo della pagina AEM,
 >
 >Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
 
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
+
 Il componente Flash permette di caricare un filmato Flash. Puoi trascinare una risorsa Flash da Content Finder sul componente oppure usare la finestra di dialogo:
 
 * **Flash**
@@ -518,6 +522,10 @@ Nell’esempio seguente, un componente **Elenco** visualizza una serie di pagine
 >
 >Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
 
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
+
 Forniscono i campi nome utente e password.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
@@ -553,6 +561,10 @@ Puoi configurare i parametri seguenti:
       Testo per indicare che l’utente ha già eseguito l’accesso.
 
 ### Stato dell’ordine {#order-status}
+
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
 
 * **Titolo**
 
@@ -677,7 +689,7 @@ L’esempio seguente mostra un termine di ricerca con errore ortografico e non d
 
 >[!CAUTION]
 >
->Questo componente di base è stato dichiarato obsoleto.  Adobe consiglia di utilizzare i [componenti di base &lt;a0/>Navigazione](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navigazione lingua](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html) e [Breadcrumb](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html).
+>Questo componente di base è stato dichiarato obsoleto.  Adobe consiglia di utilizzare i [componenti di base Navigazione](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navigazione lingua](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html) e [Breadcrumb](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html).
 
 Un elenco automatico di tipo sitemap, con impostazioni predefinite, include tutte le pagine, (sotto forma di collegamenti attivi), presenti nel sito Web corrente. Ad esempio, un estratto mostra quanto segue:
 
@@ -695,7 +707,11 @@ Se necessario è possibile configurare:
 
 >[!CAUTION]
 >
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html).
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
 
 Questo componente permette di caricare una serie di immagini da visualizzare sulla pagina sotto forma di slideshow. Puoi aggiungere o rimuovere immagini e assegnare un titolo a ognuna di esse. In Avanzate è inoltre possibile specificare la dimensione dell’area di visualizzazione.
 
@@ -880,7 +896,11 @@ L’esempio seguente mostra un componente **Titolo** visualizzato in base al CSS
 
 >[!CAUTION]
 >
->Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+>Questo componente di base è stato dichiarato obsoleto.  Adobe consiglia di utilizzare il componente [Componenti di base Incorpora componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
 
 Il componente **Video** consente di inserire un elemento video predefinito, disponibile out-of-the-box, nella pagina.
 
@@ -1308,6 +1328,10 @@ Il componente è configurato per l’utilizzo immediato, ma puoi modificare la c
 >[!CAUTION]
 >
 >Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (“core”).
+
+>[!CAUTION]
+>
+>Non è più previsto che questo componente funzioni automaticamente senza un&#39;ampia personalizzazione a livello di progetto.
 
 Il componente Captcha richiede all’utente di inserire la stringa alfanumerica visualizzata sullo schermo. Con ogni aggiornamento della schermata viene visualizzata una stringa diversa.
 
