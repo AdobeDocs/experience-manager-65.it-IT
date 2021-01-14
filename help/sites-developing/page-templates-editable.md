@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3285'
 ht-degree: 8%
 
 ---
@@ -130,6 +130,16 @@ Durante la creazione di un nuovo modello modificabile:
 
    Per informazioni tecniche sulla creazione di pagine con modelli modificabili, consultare [Pagine di contenuti risultanti](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in questo documento.
 
+>[!TIP]
+>
+>Non inserire mai informazioni che devono essere internazionalizzate in un modello. A scopo di internalizzazione, si consiglia di usare la funzione di localizzazione [dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>
+> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+
 >[!NOTE]
 >
 >La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto, e se è assente, si verificherà l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -137,10 +147,6 @@ Durante la creazione di un nuovo modello modificabile:
 >Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse include automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo spazio dei nomi `cq.shared`.
 >
 >Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](/help/sites-developing/clientlibs.md).
-
->[!CAUTION]
->
->Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello.
 
 ## Cartelle modello {#template-folders}
 
@@ -214,7 +220,7 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
 1. Andate a **Navigazione globale** -> **Strumenti** > **Browser di configurazione**.
 
-   Le cartelle esistenti sono elencate a sinistra, inclusa la cartella **globa** l.
+   Le cartelle esistenti sono elencate a sinistra, inclusa la cartella **globale**.
 
 1. Fai clic su **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** è necessario configurare i seguenti campi:
