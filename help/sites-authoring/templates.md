@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '4833'
-ht-degree: 97%
+source-wordcount: '4901'
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!CAUTION]
 >
->Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello.
+>Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello. A scopo di internalizzazione, si consigliano le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -208,6 +208,12 @@ Per visualizzare e/o modificare le proprietà:
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Visualizza proprietà** dalla barra degli strumenti o le opzioni rapide per aprire la finestra di dialogo.
 1. Ora è possibile visualizzare o modificare le proprietà del modello.
+
+>[!NOTE]
+>
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>
+> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
 >[!NOTE]
 >
