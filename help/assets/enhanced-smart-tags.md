@@ -3,9 +3,9 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1514'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Comprendere, applicare e curare i tag avanzati {#enhanced-smart-tags}
 
-Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una determinata classe. L’assegnazione di tag alle risorse con un vocabolario controllato dalla tassonomia ne consente l’identificazione e il recupero tramite ricerche basate sui tag.
+Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una determinata classe. L’assegnazione di tag alle risorse con un vocabolario controllato dalla tassonomia garantisce che le risorse vengano identificate e recuperate con facilità.
 
 Rispetto ai vocabolari di lingua naturale, l’assegnazione di tag alle risorse digitali in base alla tassonomia aziendale consente di allinearle al business di un’azienda e garantisce che le risorse più rilevanti vengano visualizzate nelle ricerche.
 
@@ -25,7 +25,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza  framework Adobe Sensei AI per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su  Adobe I/O. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione [!DNL Experience Manager] con  Adobe I/O.
+Smart Content Service è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione [!DNL Experience Manager] con [!DNL Adobe I/O].
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -34,19 +34,19 @@ Di seguito sono riportati i passaggi principali per utilizzare Smart Content Ser
 * Formazione di Smart Content Service
 * Assegnazione tag automatica
 
-![diagramma](assets/flowchart.gif)
+![Diagramma di flusso](assets/flowchart.gif)
 
 ## Prerequisiti {#prerequisites}
 
-Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su Adobe I/O:
+Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su [!DNL Adobe I/O]:
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
-* È possibile aggiungere il pacchetto di base Smart Content Services solo a una distribuzione in cui sono stati concessi in licenza i componenti aggiuntivi [!DNL Sites] e [!DNL Assets].
+* È possibile aggiungere il pacchetto di base Smart Content Services solo a una distribuzione in cui sono stati concessi in licenza i componenti aggiuntivi [!DNL Adobe Experience Manager Sites] e [!DNL Assets].
 
 ## Onboarding {#onboarding}
 
-Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento a  Adobe I/O.
+Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
 
 L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con [!DNL Experience Manager]. Per integrare il servizio con [!DNL Experience Manager Assets], vedere [Configurare i tag avanzati](config-smart-tagging.md).
 
@@ -73,17 +73,17 @@ Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla 
 
 ## Comprendere i risultati della ricerca [!DNL Experience Manager] con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una clausola `OR` aggiuntiva per individuare i termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Per impostazione predefinita, le risorse con una semplice parola chiave `woman` o semplicemente `running` nei metadati non vengono visualizzate nei risultati di ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` che utilizza gli smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una clausola `OR` aggiuntiva per individuare i termini di ricerca relativi agli smart tag. Ad esempio, è consigliabile cercare `woman running`. Per impostazione predefinita, le risorse con una semplice parola chiave `woman` o semplicemente `running` nei metadati non vengono visualizzate nei risultati di ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` che utilizza gli smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
-* risorse con `woman` e `running` parole chiave nei metadati.
+* Risorse con `woman` e `running` parole chiave nei metadati.
 
-* assets smart tag con una delle parole chiave.
+* Risorse con tag avanzati a una delle parole chiave.
 
 I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a uno qualsiasi dei termini di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
-1. corrispondenze di `woman running` nei vari campi di metadati.
-1. corrispondenze di `woman running` negli smart tag.
-1. corrispondenze di `woman` o di `running` negli smart tag.
+1. Corrisponde a `woman running` nei vari campi di metadati.
+1. Corrisponde a `woman running` negli smart tag.
+1. Corrisponde a `woman` o `running` negli smart tag.
 
 >[!CAUTION]
 >
@@ -140,7 +140,7 @@ Potete attivare il flusso di lavoro dei tag dalla console del flusso di lavoro o
 
 >[!NOTE]
 >
->Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
+>Nei successivi cicli di assegnazione dei tag, solo le risorse modificate vengono nuovamente etichettate con tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i sei mesi.
 
 ## Cura o moderazione degli smart tag applicati {#manage-smart-tags}
 
