@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4742'
+source-wordcount: '4743'
 ht-degree: 1%
 
 ---
@@ -465,7 +465,7 @@ Gli amministratori possono fornire agli utenti AEM autorizzazioni di analisi ese
 
 Per installare e configurare  AEM Forms con l&#39;Forms del Adobe , gli utenti dello strumento di conversione devono disporre delle seguenti caratteristiche.
 
-1. Accesso  I/O Adobe.
+1. Accesso a  Adobe I/O.
 
 1. Autorizzazione per creare un&#39;integrazione con  servizio Forms Conversion di Adobe.
 
