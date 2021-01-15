@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6596'
 ht-degree: 17%
 
 ---
@@ -418,7 +418,7 @@ L&#39;integrazione verrà configurata nei seguenti prodotti  Adobe:
 
 Inoltre, se questa soluzione di integrazione viene utilizzata con  AEM Sites, è necessario eseguire anche la seguente configurazione:
 
-*  Adobe I/O Console: l&#39;integrazione viene creata per  lancio Adobe.
+* [!DNL Adobe I/O] Console: l&#39;integrazione viene creata per  lancio Adobe.
 * AEM nodo di authoring: configurazione IMS e configurazione  Adobe Launch cloud.
 
 Come parte della configurazione, accertatevi di avere accesso a una società in Adobe Experience Cloud che ha già  Adobe Analytics e  lancio Adobe già attivato.
@@ -693,7 +693,7 @@ La configurazione AEM è composta dai due passaggi principali seguenti:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. In una nuova scheda del browser, andate alla [ Adobe I/O Console](https://console.adobe.io/integrations).
+1. In una nuova scheda del browser, andate alla [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. Dalla pagina **[!UICONTROL Adobe I/O Console Integrations]**, accanto all&#39;angolo superiore destro, fare clic su **[!UICONTROL Nuova integrazione]**.
 1. Nella finestra di dialogo **[!UICONTROL Create a new integration (Crea una nuova integrazione)]**, accertati che sia selezionato il pulsante di scelta **[!UICONTROL Access an API (Accesso a un API)]**, quindi fai clic su **[!UICONTROL Continua]**.
@@ -850,4 +850,4 @@ Al momento, AEM autore non supporta l’integrazione dei visualizzatori Dynamic 
 
 È possibile ovviare a questo limite specificando l&#39;URL di sviluppo o di gestione temporanea della libreria di lancio di  Adobe nella configurazione  Adobe Launch Cloud per AEM pubblicazione precedente. In questo modo, il nodo di pubblicazione AEM utilizza la versione Sviluppo o Gestione temporanea della libreria  Lancio Adobe.
 
-Per ulteriori informazioni sulla configurazione  Adobe di Launch Cloud Configuration, vedere [Integrare AEM con  Adobe Launch tramite  Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html).
+Per ulteriori informazioni sull&#39;impostazione  configurazione di Launch Cloud Adobe Adobe, vedere [Integrazione AEM con  lancio tramite  [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html).
