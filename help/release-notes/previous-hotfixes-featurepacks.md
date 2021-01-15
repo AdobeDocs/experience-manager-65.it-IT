@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per i Service Pack  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 20%
 
 ---
@@ -91,7 +91,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La creazione di un marchio in `/content/campaign` determina una struttura che non consente di creare campagne. [!UICONTROL Create ] Brandoption lascia il marchio appena creato senza la possibilità di creare  [!UICONTROL Offerte e ] Attività, in quanto non è disponibile l&#39;opzione   Createoption (NPR-34113).
 * È possibile sospendere la [!DNL Live Copy] di una pagina e l&#39;ereditarietà viene interrotta come mostrato in modalità Editor. Nelle proprietà della pagina, l&#39;icona che rappresenta l&#39;ereditarietà indica erroneamente che l&#39;ereditarietà esiste e non è interrotta (NPR-34017).
 * Le pagine con molti riferimenti non possono essere spostate in modo asincrono e talvolta l&#39;operazione di spostamento non riesce (CQ-4297969).
-* Una pagina Web con un carattere `/` nell’URL non risponde durante la creazione. Quando un componente viene aggiunto durante l’authoring, l’utilizzo della CPU aumenta e il browser smette di rispondere (CQ-4295749).
+* Una pagina Web con il carattere `/` nell’URL non risponde durante la creazione. Quando un componente viene aggiunto durante l’authoring, l’utilizzo della CPU aumenta e il browser smette di rispondere (CQ-4295749).
 * In modalità Sfoglia, NVDA non narra un valore selezionato dall&#39;opzione di menu Tipo/Dimensione. L&#39;elemento visivo non è attivo sull&#39;elemento selezionato. Gli utenti che si affidano a un assistente vocale non possono utilizzare la modalità Sfoglia (CQ-4294993).
 * Quando si crea una pagina Web, gli utenti possono selezionare il modello [!UICONTROL Pagina contenuto]. Nella scheda [!UICONTROL Social Media], gli utenti possono selezionare una [!UICONTROL variante XF preferita]. Per selezionare un frammento esperienza in modalità di ricerca NVDA, gli utenti non possono utilizzare i tasti di scelta rapida (CQ-4292669).
 * Aggiornamento della libreria handlebars alla versione più sicura v4.7.3 (NPR-34484).
@@ -139,7 +139,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Per le opzioni interattive nell&#39;interfaccia utente, l&#39;assistente vocale ne annuncia lo scopo invece dei nomi letterali delle icone (CQ-4272943).
 
-* Lo stato attivo della tastiera ora si sposta correttamente su [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark&lt;a1/> e [!UICONTROL Opzioni ZoomVertical_light] durante la navigazione mediante il tasto Tab della tastiera nei dettagli delle risorse [!UICONTROL Visualizzatori] in [!DNL Dynamic Media] (CQ-4290605).]
+* Lo stato attivo della tastiera ora si sposta correttamente su [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark] e [!UICONTROL Opzioni ZoomVertical_light] durante la navigazione mediante il tasto Tab della tastiera nei dettagli delle risorse [!UICONTROL Visualizzatori] in [!DNL Dynamic Media] (CQ-4290605).
 
 * [!UICONTROL È ora possibile accedere all&#39;opzione Salva e ] chiudi nella   pagina Proprietà risorsa tramite i tasti di scelta rapida (NPR-34107).
 
@@ -633,7 +633,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La cache interna viene cancellata quando viene pubblicata una pagina con un componente Adobe Target  (NPR-33162).
 * L&#39;integrazione con  Adobe Target non funziona su [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Durante la configurazione  Adobe Target, i campi [!UICONTROL Company] e [!UICONTROL Report Suite] non vengono visualizzati quando si seleziona un&#39;origine di reporting (NPR-32502).
-* Quando si esporta [!DNL Experience Fragments] utilizzando  Adobe I/O, i metadati come Prodotto di origine non vengono esportati  Adobe Target (NPR-32159).
+* Quando si esporta [!DNL Experience Fragments] utilizzando [!DNL Adobe I/O], i metadati come Prodotto di origine non vengono esportati in  Adobe Target (NPR-32159).
 * Gli utenti IMS autorizzati nel gruppo di amministrazione  Experience Manager locale non possono creare o modificare configurazioni IMS (NPR-33045).
 *  pagina Configurazioni lancio Adobe non visualizza tutti i record (NPR-33011).
 * Gli utenti del gruppo di autori di contenuti non possono modificare le proprietà di un componente Adobe Target  a causa di un errore JavaScript (NPR-32996).
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuov
 
 Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.4.0 includono:
 
-* Adobe Experience Manager Assets è ora configurato con Brand Portal tramite  Adobe I/O Console.
+* Adobe Experience Manager Assets è ora configurato con Brand Portal tramite la console [!DNL Adobe I/O].
 
 * È ora disponibile un nuovo passaggio [Genera output stampabile](../forms/using/aem-forms-workflow-step-reference.md) per  flussi di lavoro Adobe Experience Manager Forms.
 
@@ -868,7 +868,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi su [!DNL Assets] durante l’aggiornamento ad  Adobe I/O all’Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata all&#39; Experience Manager 6.5.4, si consiglia di [scaricare l&#39;hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell&#39;istanza di creazione.
+* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi in [!DNL Assets] all&#39;aggiornamento a [!DNL Adobe I/O] all&#39; Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata all&#39; Experience Manager 6.5.4, si consiglia di [scaricare l&#39;hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell&#39;istanza di creazione.
 
 * I valori popup dello schema di metadati non sono visibili nelle proprietà delle risorse (CQ-4283287).
 
