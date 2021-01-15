@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2815'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ Il supporto per le immagini 3D in [!DNL Dynamic Media] consente ai clienti di pu
 
 #### Configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Viene modificato il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal]. In precedenza, [!DNL Brand Portal] era stato configurato nell&#39;interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione. [!DNL Experience Manager Assets] è ora configurato con  [!DNL Brand Portal] tramite  Adobe I/O, che fornisce un token IMS per l&#39;autorizzazione del  [!DNL Brand Portal] tenant.
+Viene modificato il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal]. In precedenza, [!DNL Brand Portal] era stato configurato nell&#39;interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione. [!DNL Experience Manager Assets] è ora configurato con  [!DNL Brand Portal] through  [!DNL Adobe I/O], che fornisce un token IMS per l&#39;autorizzazione del  [!DNL Brand Portal] tenant.
 
 I passaggi per configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] sono diversi a seconda della versione [!DNL Experience Manager] in uso e se si sta configurando per la prima volta, oppure aggiornando le configurazioni esistenti. Per informazioni, consultate [Configurare  risorse Experience Manager con il portale dei marchi](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
 
