@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 45%
+source-wordcount: '1719'
+ht-degree: 43%
 
 ---
 
@@ -34,7 +34,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 | Risorse | Se un utente non dispone di autorizzazioni sufficienti (lettura e scrittura) per `/content/dam/collections`, non può creare una raccolta. | Rispetta le impostazioni di controllo dell’accesso dell’utente e verifica le autorizzazioni appropriate. |
 | Adobe Search&amp;Promote | L&#39;integrazione con  Adobe Search&amp;Promote è obsoleta. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione con Search&amp;Promote. Nota: l’integrazione con Search&amp;Promote rimane completamente supportata anche se obsoleta. |  |
 | Gestione tag DTM | L’integrazione con DTM (Dynamic Tag Manager) è obsoleta. | Inizia a utilizzare Adobe Experience Platform Launch come gestore di tag. |
-| Adobe Target | Poiché in AEM 6.5 è possibile connettere AEM al servizio Adobe Target tramite le API per Adobe Target Standard basate su I/O (API REST), il metodo API per Target Classic (XML) è stato dichiarato obsoleto. | Riconfigurare l&#39;integrazione in [utilizzare la nuova API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
+| Adobe Target | Con l&#39;aggiunta della capacità di AEM di connettersi  servizio Adobe Target utilizzando l&#39;API Adobe Target Standard (API Rest) basata su [!DNL Adobe I/O] in AEM 6.5, la modalità API di Target Classic (XML) è obsoleta. | Riconfigurare l&#39;integrazione in [utilizzare la nuova API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
 |  Adobe Target | L&#39;utilizzo dell&#39;integrazione basata su `mbox.js` con  Adobe Target in AEM è obsoleto. | Passare a `at.js` 1.x. |
 | Commerce | [CIF ](https://github.com/adobe/commerce-cif-api) REST è stato fornito nel 2018 come set di microservizi per consentire l&#39;integrazione tra i motori AEM e commerciali. Dopo che  Adobe ha acquisito il Magento a metà del 2018,  Adobe ha deciso di modificare il suo approccio per due motivi. Il Magento dispone di un proprio set di API Commerce (REST e GraphQL) e non è buona norma mantenere due set di API. Le tendenze del mercato hanno indicato che i clienti si stavano spostando verso GraphQL, perché è un modo più efficiente di interrogare i dati. Nel 2019,  Adobe ha rilasciato il nuovo Commerce Integration Framework utilizzando le API GraphQL di Magento  come fonte di verità.  Adobe non prevede ulteriori investimenti in CIF REST. Ai clienti viene consigliato di utilizzare la soluzione sostitutiva. | Per le integrazioni AEM-Magento, passate a [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) e [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). Vedere Integrazione AEM e Magento [utilizzando Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). Il sostegno alle integrazioni di terze parti (diverse da quelle dei Magenti) con il nuovo approccio è nella nostra tabella di marcia. |
 | Componenti (AEM Sites) | Adobe non prevede di apportare ulteriori miglioramenti alla maggior parte dei componenti di base in `/libs/foundation/components`. Cercare la proprietà `cq:deprecated` e `cq:deprecatedReason` nella cartella del componente. AEM 6.5 include i componenti di base e i clienti che effettuano l&#39;aggiornamento da versioni precedenti possono continuare a utilizzarli così com&#39;è. Inoltre, Foundation Components è completamente supportato anche se obsoleto. |  Adobe consiglia di utilizzare i componenti core per progetti futuri. I siti esistenti possono rimanere invariati o utilizzare la [AEM Modernizza Tools Suite](https://github.com/adobe/aem-modernize-tools) per riorientare il sito in modo che utilizzi i componenti core. |
