@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -34,5 +34,4 @@ Le opzioni Filtro disposizione contenuto forniscono le seguenti funzionalità:
 
 * Percorsi risorsa esclusi: un elenco di risorse escluse, ogni percorso di risorsa deve essere specificato come percorso assoluto e completo. La corrispondenza del prefisso/i caratteri jolly non sono supportati.
 
-* Abilita Per Tutti I Percorsi Delle Risorse: questo flag controlla se abilitare questo filtro per tutti i percorsi, fatta eccezione per i percorsi di risorse esclusi definiti da Percorsi risorsa esclusi. Impostando questo valore su &quot;true&quot; si ignorano i percorsi di disposizione dei contenuti. Indipendentemente dalla configurazione sono coperti solo i percorsi delle risorse che contengono una proprietà denominata &#39;jcr:data&#39; o &#39;jcr:content jcr:data&#39;.
-
+* Abilita Per Tutti I Percorsi Delle Risorse: questo flag controlla se abilitare questo filtro per tutti i percorsi, fatta eccezione per i percorsi di risorse esclusi definiti da Percorsi risorsa esclusi. Impostando questo valore su &quot;true&quot; si ignorano i percorsi di disposizione dei contenuti. Indipendentemente dalla configurazione, vengono coperti solo i percorsi delle risorse che contengono una proprietà denominata &#39;jcr:data&#39; o &#39;jcr:content/jcr:data&#39;.
