@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3755'
+source-wordcount: '3827'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Per aggiungere campi a un modulo adattivo e personalizzare le varie opzioni rela
    >[!NOTE]
    >
    >    * L&#39;utilizzo del blocco [!DNL Adobe Sign] non è obbligatorio per utilizzare [!DNL Adobe Sign] in un modulo adattivo. Se non si utilizza il blocco [!DNL Adobe Sign] e non si aggiungono campi per i firmatari, il campo firma predefinito viene visualizzato nella parte inferiore dei documenti da firmare.
-   >    * Utilizzare il blocco [!DNL Adobe Sign] solo per i moduli adattivi che generano automaticamente il documento di registrazione. Se si utilizza un XDP personalizzato per la generazione di un modulo adattivo basato su un documento o un modello di modulo, il blocco [!DNL Adobe Sign] non è obbligatorio.
+   >    * Utilizzare il blocco [!DNL Adobe Sign] solo per i moduli adattivi che generano automaticamente il documento di registrazione. Se si utilizza un XDP personalizzato per la generazione di un modulo adattivo basato su un documento o un modello di modulo, il blocco [!DNL Adobe Sign] non è supportato.
 
 
 1. Selezionare il componente **[!UICONTROL blocco Adobe Sign]** e toccare l&#39;icona **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png). Visualizza le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
@@ -300,7 +300,8 @@ Per configurare il componente Passaggio firma, effettuare le operazioni seguenti
       > Alcune best practice:
    > * Il pannello dei moduli adattivi contenente il passaggio Firma si trova sempre nell&#39;ultimo o secondo pannello di un modulo adattivo. Può essere il secondo ultimo pannello solo quando l’ultimo pannello contiene il passaggio Riepilogo.
    > * Il pannello contenente il componente Passaggio firma o Riepilogo non può contenere altri componenti.
-   > * Per i moduli adattivi contenenti il Passaggio firma non è possibile utilizzare il pulsante di invio. L&#39;invio viene gestito tramite un servizio in background o il passaggio Riepilogo.
+   > * Per i moduli adattivi contenenti il Passaggio firma non è possibile utilizzare il pulsante di invio.
+   > * L&#39;invio per i moduli adattivi contenenti il passaggio Firma viene gestito tramite un servizio in background o il passaggio Riepilogo. Se un firmatario configurato sta compilando anche il modulo, il vantaggio di gestire l&#39;invio del modulo adattivo mediante il passaggio Riepilogo è che valuta immediatamente che il firmatario ha firmato il modulo e richiama l&#39;azione di invio. Un servizio in background richiede più tempo per valutare se tutti i firmatari configurati hanno firmato il modulo e ritarda l&#39;invio del modulo adattivo.
    > * Creare un modulo che non consenta all&#39;utente di tornare indietro da un pannello contenente il passaggio Firma o Riepilogo.
 
 
