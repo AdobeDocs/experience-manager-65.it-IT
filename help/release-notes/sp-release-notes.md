@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '4274'
+source-wordcount: '4255'
 ht-degree: 5%
 
 ---
@@ -30,8 +30,6 @@ ht-degree: 5%
 [!DNL Adobe Experience Manager] 6.5.7.0 è un aggiornamento importante che include nuove funzioni, miglioramenti fondamentali richiesti dai clienti, e miglioramenti in termini di prestazioni, stabilità e sicurezza, rilasciati a partire dalla versione 6.5 di aprile 2019. Il service pack è installato in [!DNL Adobe Experience Manager] 6.5.
 
 Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manager] 6.5.7.0 includono:
-
-* Ordinare le pagine Live Copy disponibili per l&#39;implementazione utilizzando le proprietà [!UICONTROL Name], [!UICONTROL Last modified date,] e [!UICONTROL Last rollout date].
 
 * L&#39;esecuzione degli spostamenti di pagina e dei rollout MSM come operazioni asincrone per ridurre il loro impatto sulle prestazioni del runtime.
 
