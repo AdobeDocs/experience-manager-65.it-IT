@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9562'
+source-wordcount: '9590'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Potete caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) 
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file pari o inferiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
 
 Potete scegliere di caricare le risorse nelle cartelle a cui è stato assegnato o meno un profilo di elaborazione.
 
@@ -153,11 +153,11 @@ Per impostazione predefinita, il caricamento seriale delle risorse è attivato. 
 
 ### Caricare le risorse mediante FTP {#uploading-assets-using-ftp}
 
-Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
+Dynamic Media consente il caricamento in batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file pari o inferiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
 
 >[!NOTE]
 >
@@ -168,8 +168,12 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 **Per caricare le risorse tramite FTP**
 
 1. Utilizzando il client FTP desiderato, effettuate l&#39;accesso al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
-1. [Accedete a Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicmediante le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
 
+1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), quindi accedi al tuo account.
+
+   Le credenziali e l&#39;accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
+
+1. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
 1. Nella pagina Carica, accanto all&#39;angolo superiore sinistro, fate clic sulla scheda **[!UICONTROL Mediante FTP]**.
 1. Sul lato sinistro della pagina, scegliete una cartella FTP da cui caricare i file; sul lato destro della pagina, scegliete una cartella di destinazione.
 1. Nell’angolo inferiore destro della pagina, fate clic su **[!UICONTROL Opzioni processo]** e impostate le opzioni desiderate in base alle risorse nella cartella selezionata.
@@ -178,12 +182,12 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
    >[!NOTE]
    >
-   >Quando caricate le risorse tramite FTP, le opzioni del processo di caricamento impostate in Dynamic Media Classic (S7) hanno la precedenza rispetto ai parametri di elaborazione delle risorse impostati in [!DNL Experience Manager].
+   >Quando caricate le risorse tramite FTP, le opzioni del processo di caricamento impostate in Dynamic Media Classic (S7) hanno un precedente rispetto ai parametri di elaborazione delle risorse impostati in [!DNL Experience Manager].
 
 1. Nell’angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento, fate clic su **[!UICONTROL Salva]**.
 1. Nell’angolo inferiore destro della pagina Carica, fate clic su **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare in [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso.
+   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare in [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso di elaborazione.
 Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL Annulla]** accanto alla durata.
 
 #### Opzioni processo di caricamento {#upload-job-options}
@@ -252,7 +256,7 @@ Quando caricate i file immagine PostScript (EPS) o  Illustrator (AI), potete for
 
 I file Photoshop Document (PSD) vengono utilizzati più spesso per creare modelli di immagine. Quando caricate un file PSD, potete creare automaticamente dal file un modello di immagine (selezionate l&#39;opzione [!UICONTROL Crea modello] nella schermata Carica).
 
-Dynamic Media crea più immagini da un file PSD con livelli, se usate il file per creare un modello; crea un’immagine per ciascun livello.
+Dynamic Media crea più immagini da un file PSD con livelli, se utilizzate il file per creare un modello; crea un’immagine per ciascun livello.
 
 Utilizzate le [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni profilo colore] descritte sopra, con le opzioni di caricamento Photoshop.
 
@@ -369,7 +373,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 >[!MORELIKETHIS]
 >
->* [Visualizzare l’anteprima delle risorse](/help/assets/previewing-assets.md) multimediali dinamiche.
+>* [Anteprima delle risorse](/help/assets/previewing-assets.md) Dynamic Media.
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets) secondarie.
 
 
@@ -583,7 +587,7 @@ Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-asse
 
 >[!NOTE]
 >
->Per ulteriori informazioni specifiche per gli elementi multimediali dinamici, consultate [Pubblicazione di risorse multimediali dinamiche.](/help/assets/publishing-dynamicmedia-assets.md)
+>Per ulteriori informazioni specifiche su Dynamic Media, consultate [Pubblicazione di risorse Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
 
@@ -736,7 +740,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 >[!NOTE]
 >
->Per i frammenti di contenuto, nell&#39;editor frammento [ vengono create delle annotazioni.](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+>Per i frammenti di contenuto, nell&#39;editor frammento ](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) vengono create delle annotazioni.[
 
 1. Andate alla posizione della risorsa alla quale desiderate aggiungere delle annotazioni.
 1. Fate clic sull&#39;opzione **[!UICONTROL Annota]** tra le seguenti:
