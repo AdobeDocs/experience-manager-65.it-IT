@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '763'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ Vedere anche [Utilizzo dell&#39;immagine &#39;asset&#39; invece di &#39;is&#39; 
 
 1. Accedi all&#39;applicazione desktop [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   Le credenziali e l&#39;accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Caricate il file del set di regole effettuando le seguenti operazioni:
 
