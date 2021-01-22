@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '11277'
+source-wordcount: '11740'
 ht-degree: 8%
 
 ---
@@ -160,7 +160,7 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 * Configurate i lettori video per soddisfare le vostre esigenze di branding.
 * Integrare video nel sito Web, nel sito mobile o nell’applicazione mobile con un semplice URL o codice da incorporare.
 
-Vedere [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) esempio.
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Consultate anche [Visualizzatori per  AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizzatori solo per AEM risorse](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
@@ -402,7 +402,7 @@ Ad esempio, supponete che il video sorgente sia 1920 x 1080. Nella tabella segue
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 1 |
+| Origine | 1920x1080 | 1 | 3 |
 | Codificato | 960 x 540 | 2 | 2 |
 | Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
@@ -1001,67 +1001,68 @@ Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
 
-<!-- OBSOLETE CONTENT ### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
+Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato un predefinito per visualizzatori basato su un visualizzatore video preconfigurato, non è necessario effettuare ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se avete creato un visualizzatore video personalizzato basato sull’API SDK per visualizzatori HTML5, utilizzate i seguenti passaggi per fare in modo che il visualizzatore video invii eventi di tracciamento ad Dynamic Media Video Reports.
 
-Use the Dynamic Media Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
+Per creare visualizzatori video personalizzati, utilizzate la [ Guida di riferimento visualizzatori Dynamic Media per Adobi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e l&#39;API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).[
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). -->
+Per visualizzare i rapporti video basati su un visualizzatore video creato mediante l’API SDK per visualizzatori HTML5:
 
-<!-- OBSOLETE CONTENT Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
-
-See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
-
-<!-- OBSOLETE CONTENT To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
-
-1. Navigate to any published video asset.
-1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers.]**
-1. Select any video viewer preset and copy the embed code.
-1. In the embed code, find the line with the following:
+1. Passate a qualsiasi risorsa video pubblicata.
+1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
+1. Selezionate un predefinito per visualizzatori video e copiate il codice da incorporare.
+1. Nel codice da incorporare, trovate la riga con quanto segue:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
+   Il parametro `config2` consente il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics  specifiche per il cliente.
 
-   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
+   Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[!UICONTROL URL]**. Nell’URL dal comando di copia **[!UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
-1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
+1. Nel codice del visualizzatore video personalizzato, aggiungete AppMeasurementBridge .jsp alla pagina del visualizzatore effettuando le seguenti operazioni:
 
-    * First, determine if you need the `&preset` parameter.
-      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
-      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
+   * Innanzitutto, stabilite se è necessario il parametro `&preset`.
 
-    * Then, add the AppMeasurementBridge.jsp script:
+      Se il parametro `config2` è `companypreset`, *non* è necessario `&preset=parameter`.
+
+      Se `config2` non è altro, impostate il parametro predefinito come parametro `config2`. Ad esempio, se `config2=companypreset-2`, aggiungi `&param2=companypreset-2` all&#39;URL AppMeasurementBridge.jsp.
+
+   * Quindi, aggiungete lo script AppMeasurementBridge.jsp:
+
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Create the TrackingManager component by doing the following:
+1. Create il componente TrackingManager effettuando le seguenti operazioni:
 
-    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
+   * Dopo aver chiamato `s7sdk.Util.init();` create un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
+
       `var trackingManager = new s7sdk.TrackingManager();`
 
-    * Connect components to TrackingManager by doing the following:
-      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
-      For example, if the component is `videoPlayer`, add
-      `trackingManager.attach(videoPlayer);`
-      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
+   * Connetti i componenti a TrackingManager effettuando le seguenti operazioni:
 
-    * Create the AppMeasurementBridge object by adding the following:
+      Nel gestore di eventi `s7sdk.Event.SDK_READY`, allegare il componente che si desidera tracciare a TrackingManager.
+
+      Ad esempio, se il componente è `videoPlayer`, aggiungi
+
+      `trackingManager.attach(videoPlayer);`
+
+      per allegare il componente a trackingManager. Per tenere traccia di più visualizzatori su una pagina, utilizzate più componenti di gestione del tracciamento.
+
+   * Create l&#39;oggetto AppMeasurementBridge aggiungendo quanto segue:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-    * Add the tracking function by adding the following:
+   * Aggiungete la funzione di tracciamento aggiungendo quanto segue:
 
       ```
-      trackingManager.setCallback(appMeasurementBridge.track,
+      trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+   L&#39;oggetto appMeasurementBridge dispone di una funzione di tracciamento incorporata. Tuttavia, puoi fornire un supporto personalizzato per più sistemi di monitoraggio o altre funzionalità.
 
-   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
-
-   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Aggiunta di sottotitoli a video {#adding-captions-to-video}
 
@@ -1077,7 +1078,7 @@ Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (J
 
 Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) (Distribuzione di contenuti statici (non immagini) in *Dynamic Media Image Serving and Rendering API Help*).
 
-Per aggiungere sottotitoli o sottotitoli al video:
+**Per aggiungere sottotitoli o sottotitoli al video**:
 
 1. Usate un’applicazione o un servizio di terze parti per creare il file di sottotitoli o sottotitoli video.
 
@@ -1130,7 +1131,9 @@ Per semplificare la visualizzazione e la navigazione dei video di formato esteso
 >
 >Il lettore video utilizzato deve supportare l’uso di marcatori di capitolo. I lettori video Dynamic Media supportano i marcatori capitolo, ma l&#39;utilizzo di lettori video di terze parti potrebbe non essere supportato.
 
-<!-- OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+Potete anche creare e personalizzare con capitoli il vostro visualizzatore video anziché utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 con navigazione dei capitoli, nell’API SDK per visualizzatori HTML5  Adobe, fate riferimento all’intestazione &quot;Personalizzazione del comportamento mediante modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consultate la documentazione [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
+
+<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Potete creare un elenco di capitoli per il video nello stesso modo in cui create le didascalie. In altre parole, potete creare un file WebVTT. Tuttavia, si noti che questo file deve essere separato da qualsiasi file di sottotitoli WebVTT eventualmente utilizzato; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 
@@ -1267,58 +1270,58 @@ Questi passaggi si applicano solo ad Dynamic Media in modalità ibrida.
 T **per aggiungere una miniatura video**,
 
 1. Passate a una risorsa video caricata per la quale desiderate aggiungere una miniatura video.
-1. Nella modalità di selezione delle risorse dalla vista Elenco o dalla vista Scheda, toccate la risorsa video.
-1. Nella barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio con un &quot;i&quot; al suo interno).
-1. Nella pagina Proprietà del video, toccate **[!UICONTROL Modifica miniatura.]**
-1. Nella pagina Modifica miniature, sulla barra degli strumenti, toccare **[!UICONTROL Seleziona fotogramma.]**
+1. Nella modalità di selezione delle risorse dalla vista Elenco o a schede, toccate la risorsa video.
+1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente un &quot;i&quot;).
+1. Nella pagina Proprietà del video, toccare **[!UICONTROL Cambia miniatura.]**
+1. Nella pagina Modifica miniatura, sulla barra degli strumenti, toccare **[!UICONTROL Seleziona fotogramma.]**
 
-   Dynamic Media genera immagini in miniatura di serie dal video, in base all&#39;intervallo di tempo predefinito o all&#39;intervallo di tempo personalizzato.
+   Dynamic Media genera le miniature di una serie dal video, in base all’intervallo di tempo predefinito o all’intervallo personalizzato.
 
-1. Visualizzate in anteprima le miniature generate, quindi selezionate quella da aggiungere al video.
-1. Toccate **[!UICONTROL Salva modifica.]**
+1. Visualizzate l’anteprima delle miniature generate, quindi selezionate quella da aggiungere al video.
+1. Toccare **[!UICONTROL Salva modifica.]**
 
-   L&#39;immagine della miniatura del video viene aggiornata in modo da utilizzare la miniatura selezionata. Se successivamente decidete di modificare l&#39;immagine della miniatura, potete tornare alla pagina **[!UICONTROL Modifica miniatura]** e selezionarne una nuova.
+   L’immagine in miniatura del video viene aggiornata con la miniatura selezionata. Se successivamente si decide di modificare l&#39;immagine in miniatura, è possibile tornare alla pagina **[!UICONTROL Change Thumbnail]** e selezionarne una nuova.
 
    Se avete configurato nuovi intervalli di tempo predefiniti o avete caricato un nuovo video per sostituire il video esistente, dovrete fare in modo che Dynamic Media rigeneri le miniature.
 
-   Vedere [Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+   Consultate [Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
 #### Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Quando configurate e salvate il nuovo intervallo di tempo predefinito, la modifica viene applicata automaticamente solo ai video caricati in futuro. Il nuovo predefinito non viene applicato automaticamente ai video caricati in precedenza. Per i video esistenti, è necessario rigenerare le miniature.
+Quando configurate e salvate il nuovo intervallo di tempo predefinito, la modifica viene applicata automaticamente solo ai video caricati in futuro. Il nuovo predefinito non viene applicato automaticamente ai video caricati in precedenza. Per i video esistenti, dovete rigenerare le miniature.
 
 Consultate [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
 
-**Per configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video,**
+**Per configurare l’intervallo di tempo predefinito per la generazione delle miniature video,**
 
 1. In AEM, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite.]**
 
-1. Nella pagina CRXDE Lite, nel pannello directory a sinistra, individuate `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Nella pagina CRXDE Lite, nel pannello delle directory a sinistra, andate a `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    se il pannello della directory non è visibile, potrebbe essere necessario toccare l&#39;icona >> a sinistra della scheda Home.
 
-1. Nel pannello in basso a destra, nella scheda Proprietà, toccate due volte `thumbnailtime`.
-1. Nella finestra di dialogo Modifica tempo miniatura, utilizzare i campi di testo per immettere valori di intervallo come percentuali.
+1. Nel pannello inferiore destro, nella scheda Proprietà, toccate due volte `thumbnailtime`.
+1. Nella finestra di dialogo Modifica miniatura, usate i campi di testo per immettere valori di intervallo come percentuali.
 
-   * Toccate l&#39;icona del segno più (+) per aggiungere uno o più campi del valore dell&#39;intervallo. Potrebbe essere necessario scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
-   * Toccate l&#39;icona del segno meno (-) a destra di un campo del valore dell&#39;intervallo per eliminarlo dall&#39;elenco.
-   * Toccate l&#39;icona freccia su e l&#39;icona freccia giù per riordinare i valori dell&#39;intervallo.
+   * Toccate l&#39;icona più (+) per aggiungere uno o più campi del valore dell&#39;intervallo. Potrebbe essere necessario scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
+   * Toccate l&#39;icona meno (-) a destra del campo del valore di un intervallo per eliminarlo dall&#39;elenco.
+   * Toccate l’icona freccia su e freccia giù per riordinare i valori degli intervalli.
 
 1. Toccate **[!UICONTROL OK]** per tornare alla scheda Proprietà.
-1. Vicino all&#39;angolo superiore sinistro della pagina dei CRXDE Lite, toccare **[!UICONTROL Salva tutto]**, quindi toccare l&#39;icona Indietro nella parte superiore sinistra per tornare a AEM.
+1. Vicino all&#39;angolo superiore sinistro della pagina CRXDE Lite, toccare **[!UICONTROL Salva tutto]**, quindi toccare l&#39;icona Indietro Home nell&#39;angolo superiore sinistro per tornare alla AEM.
 
    Vedere [Aggiunta di una miniatura video.](#adding-a-video-thumbnail)
 
 ### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
 
-Questi passaggi sono validi solo per Dynamic Media in modalità ibrida.
+Questi passaggi si applicano solo ad Dynamic Media in modalità ibrida.
 
 T **per aggiungere una miniatura video personalizzata**,
 
-1. Individuate una risorsa video caricata da aggiungere a una miniatura video personalizzata.
-1. Nella modalità di selezione delle risorse dalla vista Elenco o dalla vista Scheda, toccate la risorsa video.
-1. Nella barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio con un &quot;i&quot; al suo interno).
-1. Nella pagina Proprietà del video, toccate **[!UICONTROL Modifica miniatura.]**
+1. Passate a una risorsa video caricata che desiderate aggiungere una miniatura video personalizzata.
+1. Nella modalità di selezione delle risorse dalla vista Elenco o a schede, toccate la risorsa video.
+1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente un &quot;i&quot;).
+1. Nella pagina Proprietà del video, toccare **[!UICONTROL Cambia miniatura.]**
 1. Nella pagina Modifica miniatura, sulla barra degli strumenti, toccate **[!UICONTROL Carica nuova miniatura.]**
 1. Individuate la miniatura da usare, selezionatela, quindi toccate **[!UICONTROL Apri]** per iniziare a caricare l&#39;immagine in AEM. Dopo il caricamento, accertatevi di pubblicare l’immagine.
 1. Dopo aver caricato e pubblicato l&#39;immagine, nella pagina Modifica miniatura, toccate **[!UICONTROL Salva modifiche.]**
