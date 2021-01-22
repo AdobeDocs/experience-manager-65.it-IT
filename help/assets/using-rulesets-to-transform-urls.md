@@ -1,16 +1,14 @@
 ---
 title: Utilizzo dei set di regole per trasformare gli URL
 description: Potete implementare i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -61,11 +59,9 @@ Vedere anche [Utilizzo dell&#39;immagine &#39;asset&#39; invece di &#39;is&#39; 
 
 **Per distribuire i set di regole XML:**
 
-1. Accedete al vostro account Dynamic Media Classic:
+1. Accedi all&#39;applicazione desktop [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
+   Le credenziali e l&#39;accesso sono stati forniti dal  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Caricate il file del set di regole effettuando le seguenti operazioni:
 
