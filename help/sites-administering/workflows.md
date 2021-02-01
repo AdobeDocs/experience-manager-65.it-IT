@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Un flusso di lavoro può avere uno dei seguenti stati:
 * **ESECUZIONE**: L&#39;istanza del flusso di lavoro è in esecuzione.
 * **COMPLETATO**: L&#39;istanza del flusso di lavoro è stata terminata.
 
-* **SOSPESO**: L&#39;istanza del flusso di lavoro è stata sospesa.
+* **SOSPESO**: Contrassegna il flusso di lavoro come sospeso. Tuttavia, consultate la nota di attenzione riportata di seguito su un problema relativo a questo stato.
 * **ABORTO**: L&#39;istanza del flusso di lavoro è stata terminata.
 * **STALLO**: La progressione dell&#39;istanza del flusso di lavoro richiede l&#39;esecuzione di un processo in background, ma il processo non può essere trovato nel sistema. Questa situazione può verificarsi quando si verifica un errore durante l&#39;esecuzione del flusso di lavoro.
 
@@ -107,7 +107,12 @@ Un flusso di lavoro può avere uno dei seguenti stati:
 
 A seconda dello stato corrente, potete eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella progressione normale di un’istanza del flusso di lavoro:
 
-* **Sospendi**: Arresta temporaneamente l&#39;esecuzione del flusso di lavoro. La sospensione è utile in casi eccezionali in cui non si desidera che il flusso di lavoro continui, ad esempio per la manutenzione. La sospensione modifica lo stato del flusso di lavoro in Sospeso.
+* **Sospendi**: La sospensione modifica lo stato del flusso di lavoro in Sospeso. Consulta la sezione Cautela di seguito:
+
+>[!CAUTION]
+>
+>Il problema noto è se si contrassegna lo stato di un flusso di lavoro su &quot;Sospendi&quot;. In questo stato è possibile intervenire sugli elementi del flusso di lavoro sospeso in una casella in entrata.
+
 * **Riprendi**: Riavvia un flusso di lavoro sospeso nello stesso punto di esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
 * **Termina**: Termina l&#39;esecuzione del flusso di lavoro e cambia lo stato in  **ABORTED**. Impossibile riavviare un&#39;istanza del flusso di lavoro interrotta.
 
