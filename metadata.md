@@ -4,7 +4,7 @@ solution-title: Informazioni e supporto
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Guida introduttiva
-getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Esercitazioni
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
@@ -13,7 +13,7 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: 5f9fb08a59dd7cac5436b9c7836fb45de9cda007
+source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 9%
