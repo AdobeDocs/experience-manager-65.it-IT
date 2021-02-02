@@ -7,10 +7,10 @@ user-guide-title: Guida utente all’authoring di AEM 6.5
 breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: a74be2627dd63c246eaf4576827f1b2ea16d3146
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 90%
+source-wordcount: '298'
+ht-degree: 88%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 90%
    + [Partecipazione ai flussi di lavoro](workflows-participating.md)
    + [Utilizzo dei flussi di lavoro del progetto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Prestazioni pagina {#page-performance}
-   + [Approfondimenti contenuto](content-insights.md)
+   + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Analisi delle prestazioni della pagina](ci-analyze.md)
    + [Visualizzazione dei dati analitici sulle pagine](pa-using.md)
    + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](search-and-promote.md)
