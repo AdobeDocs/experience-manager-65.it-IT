@@ -5,12 +5,12 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.5
 breadcrumb-title: Guida alla distribuzione
-user-guide-description: Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5, inclusa la distribuzione cloud di Adobe Managed Services.
+user-guide-description: Informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5, inclusa la distribuzione cloud di Adobe Managed Services.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 18%
+source-wordcount: '352'
+ht-degree: 17%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 18%
    + [Scaricamento dei processi](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Mapping delle risorse](resource-mapping.md)
-   + [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md)
+   + [Abilitazione di HTTP su SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
    + [Controlli di coerenza e di transito](consistency-check.md)
    + [Linee guida sulle prestazioni](performance-guidelines.md)
    + [Ottimizzazione delle prestazioni](configuring-performance.md)
@@ -84,7 +84,7 @@ ht-degree: 18%
    + [Ristrutturazione comune dell&#39;archivio in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell&#39;archivio siti in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository delle risorse in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Ristrutturazione Dynamic Media Repository in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell&#39;archivio Forms in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository di e-commerce in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository per  AEM Communities in 6.5](communities-repository-restructuring-in-aem-6-5.md)
