@@ -2,25 +2,25 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente ad AEM 6.5 Communities
-breadcrumb-title: Guida a Communities
+user-guide-title: Guida utente di AEM 6.5 Communities
+breadcrumb-title: Guida di Communities
 user-guide-description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 11%
+source-wordcount: '501'
+ht-degree: 10%
 
 ---
 
 
 # Guida di Adobe Experience Manager 6.5 Communities {#communities}
 
-+ [Guida a Communities](home.md)
++ [Guida di Communities](home.md)
 + Introduzione a  AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
    + [ Panoramica di AEM Communities](overview.md)
-   + [Note sulla versione di AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Note sulla versione di AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Guida introduttiva di AEM Communities](getting-started.md)
    + [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
@@ -38,7 +38,7 @@ ht-degree: 11%
    + [Configurazione del dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
    + [Servizio di gestione di utenti e UGC in  AEM Communities](user-ugc-management-service.md)
-   + [Siti community](administer-landing.md)
+   + [Siti community](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Console community](consoles.md)
    + [Configurazione di Analytics per le funzioni Community](analytics.md)
    + [Configurazione delle funzioni di abilitazione](enablement.md)
@@ -165,4 +165,4 @@ ht-degree: 11%
    + [Tendenze attività](trends.md)
    + [Utilizzo di Social Tag Cloud](tagcloud.md)
    + [Utilizzo della votazione](voting.md)
-   + [Creare una pagina di esempio](create-sample-page.md)
+   + [Creare una pagina di esempio](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
