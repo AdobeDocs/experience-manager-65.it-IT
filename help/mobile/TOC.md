@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente ad AEM 6.5 Mobile
-breadcrumb-title: Guida a Mobile
+user-guide-title: Guida utente di AEM 6.5 Mobile
+breadcrumb-title: Guida di Mobile
 user-guide-description: Crea e gestisci contenuti per le app mobili.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 11%
 
 ---
 
 
-# Guida utente ad AEM 6.5 Mobile {#mobile}
+# Guida utente di AEM 6.5 Mobile {#mobile}
 
 + [Panoramica della Guida utente per dispositivi mobili](home.md)
 + Introduzione a  AEM Mobile {#introduction}
@@ -82,7 +82,7 @@ ht-degree: 11%
    + [Modelli di pagina per app mobili](phonegap-apps-arch-page-templates.md)
    + [Configurazione  Cloud Service Adobe Target](aem-mobile-configuring-cloud-service.md)
    + [Applicazioni a pagina singola](phonegap-single-page-applications.md)
-   + [Modelli nell&#39;archivio](administer-mobile-apps.md)
+   + [Modelli nell&#39;archivio](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [Avvio AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Verifica delle app mobili](develop-mobile-apps-testing.md)
    + [Struttura di un&#39;app](phonegap-structure-an-app.md)
