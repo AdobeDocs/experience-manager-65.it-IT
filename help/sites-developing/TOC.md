@@ -7,10 +7,10 @@ user-guide-title: Guida utente allo sviluppo in AEM 6.5
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 13%
+source-wordcount: '905'
+ht-degree: 12%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 13%
       + [Sviluppo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componenti{#components}
    + [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
-   + [Sistema di stili](/help/sites-authoring/style-system.md)
+   + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Panoramica sui componenti](components.md)
    + [Componenti AEM - Nozioni di base](components-basics.md)
    + [Sviluppo di componenti AEM](developing-components.md)
@@ -101,7 +101,7 @@ ht-degree: 13%
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e ibrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Abilitazione dell&#39;esportazione JSON per un componente](json-exporter-components.md)
+   + [Abilitazione dell&#39;esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Applicazioni a pagina singola{#spas}
       + [Introduzione SPA e Procedura dettagliata](spa-walkthrough.md)
       + [SPA Esercitazione WKND](spa-wknd.md)
@@ -118,9 +118,9 @@ ht-degree: 13%
       + [Integrazione Adobe Experience Platform Launch SPA e ](spa-launch.md)
       + [Rendering lato SPA e lato server](spa-ssr.md)
       + [Materiali di riferimento SPA](spa-reference-materials.md)
-   + [API HTTP](/help/assets/mac-api-assets.md)
-   + [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
-   + [Frammenti esperienza](/help/sites-authoring/experience-fragments.md)
+   + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
+   + [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Informazioni sui frammenti di contenuto e i servizi di contenuto in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Strumenti di sviluppo{#devtools}
    + [Strumenti di sviluppo](dev-tools.md)
@@ -181,12 +181,12 @@ ht-degree: 13%
       + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
       + [Creazione di un modello di pagina AEM personalizzato con  componenti modulo Adobe Campaign](extending-campaign-custom-template.md)
       + [Richiedi script di analisi](analyze-request.md)
-   + [Integrazione dei servizi con la console JMX](jmx-integration.md)
-   + [Sviluppo dell’editor di massa](dev-bulk-editor.md)
+   + [Integrazione dei servizi con la console JMX](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
+   + [Sviluppo dell’editor di massa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
    + Estensione dell&#39;interfaccia classica{#extending-classic-ui}
       + [Personalizzazione della console Siti Web (interfaccia classica)](customizing-siteadmin.md)
       + [Personalizzazione della console di benvenuto (interfaccia classica)](customizing-the-welcome-console.md)
-      + [Sviluppo di report](dev-reports.md)
+      + [Sviluppo di report](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Test{#testing}
    + [Pianificazione](planning.md)
    + [Quali ambienti di test saranno necessari?](test-environments.md)
@@ -199,10 +199,10 @@ ht-degree: 13%
    + [La prossima release...](the-next-release.md)
    + [Elenchi di controllo](checklists.md)
    + [Giorno Duro](tough-day.md)
-   + [Verifica dell’interfaccia](hobbes.md)
+   + [Verifica dell’interfaccia](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + Best practice  {#bestpractices}
    + [Panoramica sulle best practice](best-practices.md)
-   + [Linee guida per lo sviluppo AEM e migliori prassi](dev-guidelines-bestpractices.md)
+   + [Linee guida per lo sviluppo AEM e migliori prassi](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
    + [Architettura dei contenuti](content-architecture.md)
    + [Architettura del software](software-architecture.md)
