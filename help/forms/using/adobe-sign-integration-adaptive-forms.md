@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -122,5 +122,5 @@ L&#39;intervallo predefinito per la sincronizzazione dello stato di [!DNL Adobe 
 
 * [Utilizzo di  Adobe Sign in un modulo adattivo](../../forms/using/working-with-adobe-sign.md)
 * [Utilizzo  Adobe Sign con  AEM Forms (video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
-* [Integrare  Adobe Sign con  AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
+
 
