@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,6 @@ L’ambiente è configurato per l’utilizzo della cache per moduli adattivi e r
 ### Prerequisiti {#pre-requisites}
 
 * Abilitare l&#39;opzione [unione o precompilazione dei dati in client](prepopulate-adaptive-form-fields.md#prefill-at-client). Consente di unire dati univoci per ogni istanza di un modulo precompilato.
-* [Attivate l’agente di scaricamento per ogni istanza](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) di pubblicazione. Consente di ottenere migliori prestazioni di memorizzazione nella cache per i moduli adattivi. L&#39;URL predefinito degli agenti di scaricamento è `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Considerazioni sulla memorizzazione nella cache dei moduli adattivi in un dispatcher {#considerations}
 
@@ -57,13 +56,13 @@ L’ambiente è configurato per l’utilizzo della cache per moduli adattivi e r
    * Utilizzate il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * [Disattivate l’utilizzo del browser ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) locale per gli URL con formato  `http://host:port/content/forms/af/<adaptivefName>.html`.
    * Se si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa lingua browser]** in Gestione configurazione è disabilitato, viene servita la versione non localizzata del modulo adattivo. La lingua non localizzata è quella utilizzata per lo sviluppo del modulo adattivo. Le impostazioni internazionali configurate per il browser (impostazioni internazionali del browser) non vengono prese in considerazione e viene servita una versione non localizzata del modulo adattivo.
-   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa lingua browser]** in Gestione configurazione è attivato, viene fornita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni internazionali configurate per il browser in uso (impostazione internazionale del browser). Può causare la memorizzazione nella cache di una sola prima istanza di un modulo adattivo [. ] Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa lingua browser]** in Gestione configurazione è attivato, viene fornita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni internazionali configurate per il browser in uso (impostazione internazionale del browser). Può causare la memorizzazione nella cache di una sola prima istanza di un modulo adattivo ]. [ Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Attivazione della memorizzazione nella cache al dispatcher
 
 Per attivare e configurare la memorizzazione nella cache dei moduli adattivi nel dispatcher, effettuare le operazioni riportate di seguito.
 
-1. Aprite il seguente URL per ogni istanza di pubblicazione dell’ambiente e configurate l’agente di replica:
+1. Aprite il seguente URL per ogni istanza di pubblicazione dell&#39;ambiente e [attivate l&#39;agente di scaricamento per le istanze di pubblicazione dell&#39;ambiente ](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Aggiungi quanto segue al file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -143,17 +142,7 @@ Quando selezionate e aggiungete immagini o video tramite il browser risorse a un
 
 Dopo aver pubblicato le immagini e il video, annullate esplicitamente la pubblicazione e pubblicate i moduli adattivi che fanno riferimento a tali risorse.
 
-### Alcuni moduli adattivi contenenti frammenti di contenuto o frammenti esperienza non vengono invalidati automaticamente dalla cache del dispatcher {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Problema {#issue2}
-
-Quando si aggiunge un frammento di contenuto o un frammento esperienza a un modulo adattivo e queste risorse vengono modificate e pubblicate in modo indipendente, i moduli adattivi contenenti tali risorse non vengono invalidati automaticamente dalla cache del dispatcher.
-
-#### Soluzione {#Solution2}
-
-Dopo aver pubblicato un frammento di contenuto aggiornato o un frammento esperienza, è possibile annullare la pubblicazione in modo esplicito e pubblicare i moduli adattivi che utilizzano tali risorse.
-
-### Solo la prima istanza di un modulo adattivo è memorizzata nella cache{#only-first-insatnce-of-adptive-forms-is-cached}
+### Nella cache è memorizzata solo la prima istanza di un modulo adattivo{#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problema {#issue3}
 
