@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3859'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ In uno scenario di moduli [!DNL Adobe Sign] tipici e adattativi, un utente compi
 * Firma dei moduli come utente anonimo o connesso
 * Processi di firma dinamici (integrazione con AEM [!DNL Forms] workflow)
 * Autenticazione tramite una knowledge base, telefoni e profili social
+
+Scopri le [procedure ottimali per utilizzare  Adobe Sign con moduli adattivi](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) per creare esperienze di firma migliori.
 
 ## Prerequisiti {#prerequisites}
 
@@ -358,5 +360,5 @@ ProblemaSe  [!DNL Adobe Sign] è configurato per un modulo adattivo, il flusso d
 ## Articoli correlati {#related-articles}
 
 * [Integrare  Adobe Sign con  AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Utilizzo di  Adobe Sign in un modulo adattivo](../../forms/using/working-with-adobe-sign.md)
+* [Procedure ottimali per l&#39;uso  Adobe Sign con moduli adattivi](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [Utilizzo  Adobe Sign con  AEM Forms (video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
