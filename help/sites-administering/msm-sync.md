@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 79%
+source-wordcount: '2707'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,11 @@ Esegui le operazioni seguenti per controllare come e quando vengono sincronizzat
 
 Questa sezione fornisce informazioni sulle configurazioni di rollout installate e sulle azioni di sincronizzazione che utilizzano, nonché su come creare configurazioni personalizzate, se richiesto.
 
-### Attivatori di rollout  {#rollout-triggers}
+>[!CAUTION]
+>
+>L&#39;aggiornamento o la modifica di una configurazione di rollout (installata) è **non** consigliata. Se è necessaria un&#39;azione live personalizzata, questa deve essere aggiunta in una configurazione di rollout personalizzata.
+
+### Attivatori di rollout {#rollout-triggers}
 
 Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che determina l’esecuzione dell’implementazione. Le configurazioni di rollout possono utilizzare uno dei seguenti attivatori:
 
