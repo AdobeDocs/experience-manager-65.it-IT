@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '4302'
+source-wordcount: '4308'
 ht-degree: 5%
 
 ---
@@ -46,6 +46,8 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
    * Convalida dei valori dei campi sul server al momento dell&#39;invio di un modulo adattivo.
 
    * Conversione di un modulo PDF in un modulo adattivo utilizzando il simbolo [!DNL Automated Forms Conversion service].
+
+* Supporto per Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.22.5.
 
