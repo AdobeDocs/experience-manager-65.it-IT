@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2780'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,10 @@ In questo articolo vengono evidenziate le funzionalità incluse nell&#39;ultimo 
 ### Disponibilità dell&#39;opzione Reimposta per ciascun componente in modalità Layout {#reset-option-layout-mode}
 
 È ora possibile utilizzare l&#39;opzione di ripristino per ciascun componente in modalità Layout di un modulo adattivo. Quando definite un layout a più colonne per un pannello, potete usare questa funzione per ripristinare i singoli componenti all’interno del pannello. Vedere [Utilizzare la modalità di layout per ridimensionare i componenti](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+
+### Supporto per Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] ora supporta Microsoft SQL Server 2019.
 
 ## Funzioni principali nei precedenti [!DNL Experience Manager] Service Pack 6.5 {#key-features-previous-service-packs}
 
