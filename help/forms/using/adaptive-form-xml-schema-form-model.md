@@ -1,34 +1,30 @@
 ---
-title: Creazione di moduli adattivi tramite lo schema XML
-seo-title: Creazione di moduli adattivi tramite lo schema XML
-description: I moduli adattivi possono utilizzare lo schema XML come modello di modulo, consentendo di utilizzare i modelli XSD esistenti per creare moduli adattivi. È possibile trascinare gli elementi dello schema da XSD al modulo adattivo.
-seo-description: I moduli adattivi possono utilizzare lo schema XML come modello di modulo, consentendo di utilizzare i modelli XSD esistenti per creare moduli adattivi. È possibile trascinare gli elementi dello schema da XSD al modulo adattivo.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: Come creare un Forms adattivo utilizzando lo schema XML?
+description: Scoprite come utilizzare lo schema XML come modello di modulo in un modulo adattivo. È possibile applicare modelli XSD esistenti per creare moduli adattivi e trascinare elementi dello schema da XSD al modulo adattivo. Approfondisci un esempio di schema XML, aggiungi proprietà speciali ai campi utilizzando lo schema XML e limiti valori accettabili per un componente modulo adattivo.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1073'
 ht-degree: 5%
 
 ---
 
 
-# Creazione di moduli adattivi utilizzando lo schema XML{#creating-adaptive-forms-using-xml-schema}
+# Creazione di moduli adattivi utilizzando lo schema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisiti {#prerequisites}
 
 Per creare un modulo adattivo utilizzando uno schema XML come modello di modulo, è necessario conoscere gli schemi XML di base. Inoltre, si consiglia di consultare il contenuto seguente prima di questo articolo.
 
-* [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
+* [Creazione di un modulo adattivo](creating-adaptive-form.md)
 * [Schema XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso di uno schema XML come modello di modulo {#using-an-xml-schema-as-form-model}
 
- AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione.
+[!DNL Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione.
 
 Le caratteristiche principali dell&#39;utilizzo di uno schema XML sono:
 
@@ -293,7 +289,7 @@ Ad esempio, se si aggiunge l&#39;elemento dello schema `userFirstName`, la didas
 
 **Come si fa a sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando si fa doppio clic su un elemento in Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando fate doppio clic su un elemento in Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
 
 ![Un campo associato a un elemento dello schema XML](assets/dblclick.png)
 
@@ -305,7 +301,7 @@ Il campo bindRef</code> mostra l&#39;associazione tra un elemento ad albero e un
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
-In un sottomodulo ripetibile, è necessario utilizzare il sottomodulo completo. Se desiderate solo campi selettivi, utilizzate l&#39;intera struttura ed eliminate quelli indesiderati.
+In un sottomodulo ripetibile, è necessario utilizzare il sottomodulo Completa. Se desiderate solo campi selettivi, utilizzate l&#39;intera struttura ed eliminate quelli indesiderati.
 
 **In Content Finder ho una struttura complessa molto lunga. Come posso trovare un elemento specifico?**
 
