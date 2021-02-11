@@ -2,9 +2,9 @@
 title: Creazione e sincronizzazione di Live Copy
 description: Scoprite come creare e sincronizzare Live Copy.
 translation-type: tm+mt
-source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
+source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4170'
 ht-degree: 2%
 
 ---
@@ -356,6 +356,10 @@ Potete sospendere l’ereditarietà Live Copy per una pagina Live Copy in modo d
 >
 >È inoltre possibile [scollegare una Live Copy](#detaching-a-live-copy) dal relativo blueprint per rimuovere tutte le connessioni. L&#39;azione Scollega è permanente e non reversibile.
 
+>[!NOTE]
+>
+>Se il componente è contrassegnato come contenitore, le azioni di annullamento e sospensione non si applicano ai componenti secondari. Per ulteriori informazioni, vedere anche [Best practice MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+
 #### Sospensione dell&#39;ereditarietà dalle proprietà pagina {#suspending-inheritance-from-page-properties}
 
 Per sospendere l’ereditarietà su una pagina:
@@ -459,6 +463,10 @@ Per specificare o modificare la profondità:
 ### Annullamento dell&#39;ereditarietà per un componente {#cancelling-inheritance-for-a-component}
 
 Annulla l’ereditarietà Live Copy per un componente in modo che il componente non venga più sincronizzato con il componente di origine. Se necessario, potete abilitare l&#39;ereditarietà in un momento successivo.
+
+>[!NOTE]
+>
+>Se il componente è contrassegnato come contenitore, le azioni di annullamento e sospensione non si applicano ai componenti secondari. Per ulteriori informazioni, vedere anche [Best practice MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
 
 >[!NOTE]
 >
