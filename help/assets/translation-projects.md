@@ -3,9 +3,9 @@ title: Creazione di progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1878'
 ht-degree: 18%
 
 ---
@@ -19,13 +19,11 @@ Per creare una copia per lingua, attivare uno dei seguenti flussi di lavoro di c
 
 * **Aggiorna copie** della lingua: Eseguite questo flusso di lavoro per tradurre un altro gruppo di risorse e includerlo in una copia per lingua per una lingua specifica. In questo caso, le risorse convertite vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->I file binari di risorse vengono tradotti solo se il provider di servizi di traduzione supporta la traduzione dei file binari.
+>* Gli utenti che creano progetti di traduzione sono membri del gruppo `projects-administrators`.
+>* Il provider di servizi di traduzione supporta la traduzione di file binari.
 
->[!NOTE]
->
->Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e [!DNL Adobe InDesign], le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
 
 ## Crea e traduci flusso di lavoro {#create-and-translate-workflow}
 
@@ -40,17 +38,14 @@ Per creare una copia per lingua, attivare uno dei seguenti flussi di lavoro di c
 Utilizza l’opzione **[!UICONTROL Crea solo struttura]** per creare una gerarchia di cartelle di destinazione all’interno della directory principale lingua di destinazione, in modo che corrisponda alla gerarchia della cartella di origine all’interno della directory principale lingua di origine. In questo caso, le risorse di origine vengono copiate nella cartella di destinazione. Tuttavia, non viene generato alcun progetto di traduzione.
 
 1. Nell&#39;interfaccia [!DNL Assets], selezionate la cartella di origine per la quale desiderate creare una struttura nella directory principale della lingua di destinazione.
+
 1. Aprire il riquadro **[!UICONTROL Riferimenti]** e fare clic su **[!UICONTROL Copie lingua]** in **[!UICONTROL Copie]**.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Copie per lingua](assets/translation-language-copies.png)
 
-1. Fare clic su **[!UICONTROL Crea e trascina]** in basso.
-
-1. Nell&#39;elenco **[!UICONTROL Lingue di destinazione]**, selezionate la lingua per la quale desiderate creare una struttura di cartelle.
+1. Fare clic su **[!UICONTROL Crea e traduci]**. Nell&#39;elenco **[!UICONTROL Lingue di destinazione]**, selezionate la lingua per la quale desiderate creare una struttura di cartelle.
 
 1. Dall’elenco **[!UICONTROL Progetto]**, scegli **[!UICONTROL Crea solo struttura]**.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. Fai clic su **[!UICONTROL Crea]**. La nuova struttura per la lingua di destinazione è elencata in **[!UICONTROL Copie della lingua]**.
 
@@ -109,7 +104,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    Per ulteriori informazioni sugli stati del processo, vedere [Monitoraggio dello stato di un processo di traduzione](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Andate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
+1. Passate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina [!UICONTROL Proprietà] per ciascuna delle risorse convertite per visualizzare i metadati convertiti.
 
    ![visualizzare i metadati convertiti nella pagina Proprietà della risorsa](assets/translated-metadata-asset-properties.png)
 
@@ -117,7 +112,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    >[!NOTE]
    >
-   >Questa funzione è disponibile sia per le risorse che per le cartelle. Quando una risorsa viene selezionata al posto di una cartella, viene copiata l’intera gerarchia di cartelle fino alla radice della lingua per creare una copia della lingua per la risorsa.
+   >Questa funzione è disponibile sia per le risorse che per le cartelle. Quando una risorsa viene selezionata al posto di una cartella, viene copiata l’intera gerarchia di cartelle fino alla directory principale della lingua per creare una copia della lingua per la risorsa.
 
 ### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project}
 
@@ -131,8 +126,6 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
 
 1. Dall’elenco **[!UICONTROL Progetto]**, seleziona **[!UICONTROL Aggiungi al progetto di traduzione esistente]** per eseguire il flusso di lavoro di traduzione nella cartella.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
@@ -157,10 +150,6 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 
    >[!NOTE]
    >
-   >Se utilizzate Traduzione automatica, i file binari delle risorse non vengono tradotti.
-
-   >[!NOTE]
-   >
    >Se la risorsa aggiunta al processo di conversione include risorse secondarie, selezionate le risorse secondarie e rimuoverle affinché la conversione possa proseguire senza problemi.
 
 1. Per avviare la conversione delle risorse, fate clic sulla freccia nella sezione **[!UICONTROL Processo di traduzione]** e selezionate **[!UICONTROL Start]** dall&#39;elenco.
@@ -175,7 +164,7 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 
    Per ulteriori dettagli, vedere [Monitoraggio dello stato di un processo di traduzione](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Al termine della traduzione, lo stato diventa Pronto per la revisione. Andate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
+1. Al termine della traduzione, lo stato diventa Pronto per la revisione. Passate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
 
 ## Aggiorna copie per lingua {#update-language-copies}
 
@@ -197,8 +186,6 @@ Se utilizzate questa opzione, viene creato un progetto di traduzione per il set 
 1. Fare clic su **[!UICONTROL Aggiorna copie lingua]** in basso.
 
 1. Nell&#39;elenco **[!UICONTROL Progetto]**, scegliere **[!UICONTROL Crea un nuovo progetto di traduzione]**.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. Nel campo **[!UICONTROL Titolo progetto]**, inserisci un titolo.
 
@@ -227,7 +214,7 @@ Se utilizzate questa opzione, viene creato un progetto di traduzione per il set 
 
    Per ulteriori informazioni sugli stati del processo, vedere [Monitoraggio dello stato di un processo di traduzione](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Andate all&#39;interfaccia utente [!DNL Assets] e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
+1. Passate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
 
 ### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project-1}
 
@@ -279,7 +266,7 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
 
 1. Per visualizzare i metadati convertiti, andate alla console [!DNL Assets] e aprite la pagina [!UICONTROL Proprietà] per ciascuna risorsa convertita.
 
->[!MORELIKETHIS]
->
->* [Suggerimenti per tradurre in modo efficiente i metadati](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+## Suggerimenti e limitazioni {#tips-limitations}
 
+* Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e [!DNL Adobe InDesign], le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
+* Se utilizzate la conversione automatica, i file binari delle risorse non vengono tradotti.
