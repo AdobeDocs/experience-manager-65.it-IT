@@ -1,34 +1,30 @@
 ---
-title: Creazione di moduli adattivi con lo schema JSON
-seo-title: Creazione di moduli adattivi con lo schema JSON
-description: I moduli adattivi possono utilizzare lo schema JSON come modello di modulo, consentendo di sfruttare gli schemi JSON esistenti per creare moduli adattivi.
-seo-description: I moduli adattivi possono utilizzare lo schema JSON come modello di modulo, consentendo di sfruttare gli schemi JSON esistenti per creare moduli adattivi.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
+title: Come creare un Forms adattivo utilizzando lo schema JSON?
+description: Scoprite come creare moduli adattivi utilizzando lo schema JSON come modello di modulo. È possibile utilizzare schemi JSON esistenti per creare moduli adattivi. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente modulo adattivo e scopri i costrutti non supportati.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 5%
+source-wordcount: '1448'
+ht-degree: 6%
 
 ---
 
 
-# Creazione di moduli adattivi con lo schema JSON{#creating-adaptive-forms-using-json-schema}
+# Creazione di moduli adattivi con lo schema JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Prerequisiti {#prerequisites}
 
 Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo, è necessario conoscere a fondo lo schema JSON. Si consiglia di leggere il contenuto seguente prima di questo articolo.
 
-* [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
+* [Creazione di un modulo adattivo](creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
 ## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
 
- AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le caratteristiche chiave dell&#39;utilizzo di uno schema JSON sono:
 
@@ -82,7 +78,7 @@ La mappatura degli elementi JSON con componenti per moduli adattivi è la seguen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -112,16 +108,16 @@ La mappatura degli elementi JSON con componenti per moduli adattivi è la seguen
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ciascun campo generato. In particolare:
 
-* La proprietà title funge da etichetta per i componenti per modulo adattivo.
-* La proprietà description è impostata come descrizione lunga per un componente modulo adattivo.
-* La proprietà predefinita funge da valore iniziale di un campo modulo adattivo.
-* La proprietà maxLength è impostata come attributo maxlength del componente Campo di testo.
-* Per il componente Casella numerica vengono utilizzate le proprietà minima, massima, esclusivaMinimum ed esclusivaMaximum.
-* Per supportare l&#39;intervallo per il componente DatePicker, vengono fornite ulteriori proprietà dello schema JSON: minDate e maxDate.
-* Le proprietà minItems e maxItems vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
-* La proprietà readOnly imposta l’attributo di sola lettura di un componente modulo adattivo.
-* La proprietà richiesta contrassegna il campo modulo adattivo come obbligatorio, mentre nel caso del pannello (dove type è object), i dati JSON inviati finali hanno campi con un valore vuoto corrispondente a tale oggetto.
-* La proprietà pattern è impostata come pattern di convalida (espressione regolare) in forma adattiva.
+* La proprietà `title` funge da etichetta per i componenti per modulo adattivo.
+* La proprietà `description` viene impostata come descrizione lunga per un componente modulo adattivo.
+* La proprietà `default` funge da valore iniziale di un campo modulo adattivo.
+* La proprietà `maxLength` è impostata come attributo `maxlength` del componente Campo di testo.
+* Per il componente Casella numerica vengono utilizzate le proprietà `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum`.
+* Per supportare l&#39;intervallo per `DatePicker component` ulteriori proprietà dello schema JSON `minDate` e `maxDate` vengono forniti.
+* Le proprietà `minItems` e `maxItems` vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
+* La proprietà `readOnly` imposta l&#39;attributo `readonly` di un componente modulo adattivo.
+* La proprietà `required` contrassegna il campo modulo adattivo come obbligatorio, mentre nel pannello (dove type è object), i dati JSON inviati finali hanno campi con un valore vuoto corrispondente a tale oggetto.
+* La proprietà `pattern` viene impostata come pattern di convalida (espressione regolare) in forma adattiva.
 * L&#39;estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio, &lt;nomefile>.schema.json.
 
 ## Schema JSON di esempio {#sample-json-schema}
@@ -361,7 +357,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente dispon
 
 ## Configurare script o espressioni per gli oggetti modulo {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. È possibile pre-configurare gli oggetti modulo in modo che [valuti un&#39;espressione](../../forms/using/adaptive-form-expressions.md) in un evento del modulo.
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. È possibile pre-configurare gli oggetti modulo in modo che [valuti un&#39;espressione](adaptive-form-expressions.md) in un evento del modulo.
 
 Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di modulo adattivo o gli script per i componenti modulo adattivi. Ad esempio, quando si attiva l&#39;evento initialize, il codice seguente imposta il valore del campo telefonico e stampa un valore nel registro:
 
@@ -381,7 +377,7 @@ Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di m
 }
 ```
 
-Per configurare script o espressioni per l&#39;oggetto modulo, è necessario essere membri del gruppo [forms-power-user](/help/forms/using/forms-groups-privileges-tasks.md). Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
+Per configurare script o espressioni per l&#39;oggetto modulo, è necessario essere membri del gruppo [forms-power-user](forms-groups-privileges-tasks.md). Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
 
 <table>
  <tbody>
@@ -485,7 +481,7 @@ Per configurare script o espressioni per l&#39;oggetto modulo, è necessario ess
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>A Discesa</td>
+   <td>A discesa</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -586,9 +582,9 @@ Per configurare script o espressioni per l&#39;oggetto modulo, è necessario ess
  </tbody>
 </table>
 
-Alcuni esempi dell&#39;utilizzo degli eventi in un JSON nascondono un campo in corrispondenza dell&#39;evento initialize e configurano il valore di un altro campo in corrispondenza dell&#39;evento value commit. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere [Espressioni modulo adattive](../../forms/using/adaptive-form-expressions.md).
+Alcuni esempi dell&#39;utilizzo degli eventi in un JSON nascondono un campo in corrispondenza dell&#39;evento initialize e configurano il valore di un altro campo in corrispondenza dell&#39;evento value commit. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere [Espressioni modulo adattive](adaptive-form-expressions.md).
 
-Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
+Di seguito è riportato il codice JSON di esempio per gli esempi precedentemente citati.
 
 ### Nascondere un campo all&#39;evento di inizializzazione {#hiding-a-field-on-initialize-event}
 
@@ -711,15 +707,15 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>Stringa</td>
-   <td>Specifica il numero massimo di elementi in un array. Gli elementi massimi devono essere uguali o maggiori di zero.</td>
+   <td>Specifica il numero massimo di elementi in una matrice. Gli elementi massimi devono essere uguali o maggiori di zero.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>Stringa</td>
-   <td>Specifica il numero minimo di elementi in un array. Gli elementi minimi devono essere uguali o maggiori di zero.</td>
+   <td>Specifica il numero minimo di elementi in una matrice. Gli elementi minimi devono essere uguali o maggiori di zero.</td>
    <td> </td>
   </tr>
  </tbody>
