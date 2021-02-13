@@ -3,9 +3,9 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2125'
 ht-degree: 1%
 
 ---
@@ -268,7 +268,7 @@ Il Modulo metadati è un modulo che include un’azione iniziale e finale. Nel f
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Per creare un&#39;azione finale, fare clic su **Modifica** nell&#39;area Fine del modulo. Ad esempio, potete creare un pulsante **Invia** per consentire agli utenti di inviare le modifiche ai metadati. Facoltativamente, potete aggiungere un pulsante **Reimposta** per ripristinare lo stato originale dei metadati.
+1. Per creare un&#39;azione finale, fare clic su **Modifica** nell&#39;area Fine del modulo. Ad esempio, potete creare un&#39;opzione **[!UICONTROL Invia]** per consentire agli utenti di inviare le modifiche ai metadati. Facoltativamente, potete aggiungere un&#39;opzione **Reimposta** per ripristinare lo stato originale dei metadati.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -381,7 +381,7 @@ Sono disponibili le azioni seguenti:
 | [!UICONTROL Riferimenti] | Fare clic qui per visualizzare le pagine   la risorsa è in uso. |
 | [!UICONTROL Gestione versioni] | Consente di creare e ripristinare   versioni di una risorsa. |
 
-1. Trascinare l&#39;azione appropriata nell&#39;area **Azioni** della pagina. In questo modo viene creato un pulsante utilizzato per eseguire l&#39;azione.
+1. Trascinare l&#39;azione appropriata nell&#39;area **Azioni** della pagina. Crea un&#39;opzione utilizzata per eseguire l&#39;azione trascinata sulla pagina.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
