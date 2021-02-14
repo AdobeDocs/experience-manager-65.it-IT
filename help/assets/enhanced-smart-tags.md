@@ -3,10 +3,10 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 4%
+source-wordcount: '1610'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza  framework Adobe Sensei AI per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione [!DNL Experience Manager] con [!DNL Adobe I/O].
+Smart Content Service è un servizio cloud ospitato su [!DNL Adobe Developer Console]. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -36,13 +36,40 @@ Di seguito sono riportati i passaggi principali per utilizzare Smart Content Ser
 
 ![Diagramma di flusso](assets/flowchart.gif)
 
-## Prerequisiti {#prerequisites}
+## Prerequisiti e formati supportati {#prerequisites}
 
-Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su [!DNL Adobe I/O]:
+Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su [!DNL Adobe Developer Console]:
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 * È possibile aggiungere il pacchetto di base Smart Content Services solo a una distribuzione in cui sono stati concessi in licenza i componenti aggiuntivi [!DNL Adobe Experience Manager Sites] e [!DNL Assets].
+
+I tag avanzati vengono applicati solo alle risorse con i seguenti tipi MIME:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portatili-anymap
+* image/x-portatili-bitmap
+* immagine/x-portabile-grigio
+* image/x-portatile-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+L&#39;assegnazione di tag avanzati alle rappresentazioni di risorse è supportata solo per i seguenti tipi MIME:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Onboarding {#onboarding}
 
@@ -162,3 +189,4 @@ Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza r
 
 * L&#39;utilizzo di Smart Content Services è limitato a 2 milioni di immagini con tag all&#39;anno. Qualsiasi immagine duplicata elaborata e con tag viene conteggiata come immagine con tag.
 * Se eseguite il flusso di lavoro dei tag dalla timeline, potete applicare tag a un massimo di 15 risorse alla volta.
+* I tag avanzati funzionano solo per i formati di immagine PNG e JPG. Le risorse supportate con rappresentazioni create in questi due formati vengono quindi etichettate con Smart Tags.
