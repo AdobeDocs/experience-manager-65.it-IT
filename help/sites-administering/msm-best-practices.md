@@ -10,9 +10,9 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1639'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 1%
 MSM è un framework configurabile per l&#39;automazione della distribuzione dei contenuti. Le implementazioni spesso coinvolgono parti importanti di un sito Web e organizzazioni e geografie. Si consiglia quindi vivamente di pianificare le implementazioni MSM con la stessa attenzione con cui pianificate il sito Web:
 
 * Attento **struttura del piano e flussi di contenuto** prima di avviare l&#39;implementazione.
+* **Mantenete al minimo la quantità di copie live.** L&#39;elaborazione delle copie live richiede molte risorse. Più copie dal vivo esistono nel sistema, più le prestazioni possono essere influenzate: dall&#39;elaborazione di indici di Live Copy interni, da operazioni di live copy come i rollout, alle operazioni dell&#39;interfaccia utente come la visualizzazione di relazioni Live Copy nella barra laterale Riferimenti amministratore siti. Come procedura ottimale si consiglia di creare copie in diretta di siti o rami di un sito, dove le relazioni di Live Copy vengono ereditate alle pagine del sito o del ramo. Evitate di creare singole copie dal vivo per le pagine di un sito o di un ramo quando l&#39;intera struttura può essere trasformata in una Live Copy.
 * **Personalizzare il più possibile, ma il meno possibile.** MSM supporta un elevato grado di personalizzazione (ad es. configurazioni di rollout), ma in genere la best practice per prestazioni, affidabilità e aggiornamento del sito Web è quella di ridurre al minimo la personalizzazione.
 * Stabilire un modello **governance** in anticipo e formare gli utenti di conseguenza, per garantire il successo. Una best practice da un punto di vista di governance è quella di **ridurre al minimo l&#39;autorità che i produttori di contenuti locali hanno** per allocare/collegare il contenuto ad altri utenti locali e alle rispettive copie dal vivo. Ciò è dovuto al fatto che le eredità concatenate non gestite possono aumentare notevolmente la complessità di una struttura MSM e comprometterne le prestazioni e l&#39;affidabilità.
 
@@ -59,7 +60,7 @@ Tenere presente che una Live Copy può essere creata utilizzando [pagine normali
 
 L’utilizzo di una configurazione blueprint comporta inoltre i seguenti vantaggi:
 
-* Consentite all&#39;autore di utilizzare l&#39;opzione **Rollout** su un blueprint - per (esplicitamente) inviare le modifiche push alle Live Copy che ereditano da questo blueprint.
+* Consentite all&#39;autore di utilizzare l&#39;opzione **Rollout** in un blueprint - per (in modo esplicito) le modifiche push alle Live Copy che ereditano da questo blueprint.
 * Consentire all&#39;autore di utilizzare **Crea sito**; questo consente all&#39;utente di selezionare facilmente le lingue e configurare la struttura della Live Copy.
 * Definite una configurazione di rollout predefinita per le copie live che hanno una relazione con il progetto.
 
