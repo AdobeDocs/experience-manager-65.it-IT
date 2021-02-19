@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -64,4 +64,4 @@ Con le autorizzazioni predefinite:
 
 ## Protect contro attacchi di contraffazione delle richieste cross-site {#protect-against-cross-site-request-forgery-attacks}
 
-Per ulteriori informazioni sui meccanismi di sicurezza AEM utilizzati per attenuare gli attacchi CSRF, vedere la sezione [Filtro referente Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) dell&#39;elenco di controllo della sicurezza e la documentazione relativa al quadro di protezione CSRF](/help/sites-developing/csrf-protection.md).[
+Per ulteriori informazioni sui meccanismi di sicurezza AEM utilizzati per attenuare gli attacchi CSRF, vedere la sezione [Filtro di riferimento Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) dell&#39;elenco di controllo della sicurezza e la documentazione relativa al quadro di protezione CSRF](/help/sites-developing/csrf-protection.md).[
