@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 349568af561ca170ee000fbb0d1b40d3470ebe98
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4261'
 ht-degree: 5%
 
 ---
@@ -193,7 +193,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Il simbolo `%>` viene visualizzato nella pagina delle raccolte (NPR-34499).
 
-* Nella vista a colonne, [!DNL Assets] visualizza nomi duplicati di cartelle e risorse quando si scorre verso l&#39;alto e il basso prima che vengano visualizzate tutte le risorse (NPR-34464).
+* Nella vista a colonne, [!DNL Assets] visualizza nomi duplicati di cartelle e risorse quando si scorre verso l’alto o il basso prima che vengano visualizzate tutte le risorse (NPR-34464).
 
 * Se create una cartella privata subito dopo la creazione di una cartella pubblica, questa utilizza le impostazioni della cartella privata (NPR-34415).
 
@@ -463,12 +463,10 @@ Verifica se utilizzi una funzione o una funzionalità in una distribuzione. Pian
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrations (Integrazioni) | La schermata **[!UICONTROL consenso dei servizi cloud AEM]** è obsoleta. Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API di Target Standard, che utilizza l&#39;autenticazione tramite  IMS Adobe e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurare le connessioni di sistema,  l&#39;autenticazione IMS del Adobe e le integrazioni [!DNL Adobe I/O] tramite i rispettivi servizi cloud AEM. |
+| Integrations (Integrazioni) | La schermata **[!UICONTROL consenso dei servizi cloud AEM]** è obsoleta. Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API di Target Standard, che utilizza l&#39;autenticazione tramite  IMS Adobe e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurate le connessioni di sistema,  l&#39;autenticazione IMS del Adobe e le integrazioni [!DNL Adobe I/O] tramite i rispettivi servizi cloud AEM. |
 | Connettori | Il connettore JCR  Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013 non è più supportato per AEM 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
-
-* Se si verificano dei problemi nella risposta [!DNL Experience Manager] a causa del timer del Registro di sistema dei componenti bloccato, [installare il pacchetto](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). La risoluzione di questi problemi è prevista per essere inclusa nella prossima [ versione di Experience Manager Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services).
 
 * Ignorare gli errori seguenti nel file `error.log` durante l&#39;installazione dell&#39; Experience Manager 6.5.7.0:
 
