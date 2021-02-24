@@ -3,9 +3,9 @@ title: Elaborazione delle risorse tramite flussi di lavoro
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '961'
 ht-degree: 3%
 
 ---
@@ -106,5 +106,4 @@ Per un modello di workflow, gli utenti possono creare un modulo di avvio che lo 
 >* [Creare modelli di workflow ed estendere le funzionalità dei flussi di lavoro](/help/sites-developing/workflows.md)
 >* [Metodi per eseguire i flussi di lavoro](/help/sites-administering/workflows-starting.md)
 >* [Best practice per i flussi di lavoro](/help/sites-developing/workflows-best-practices.md)
->* [Articolo della community sulla modifica delle risorse mediante il flusso di lavoro](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
