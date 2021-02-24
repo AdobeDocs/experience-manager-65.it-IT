@@ -3,10 +3,10 @@ title: Flusso di attività delle risorse digitali nella visualizzazione timeline
 description: Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 23%
+source-wordcount: '215'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +26,7 @@ Le seguenti operazioni vengono registrate nel flusso di attività:
 * Rifiuta
 * Sposta
 
-I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro. Inoltre, l&#39;attività della cronologia viene registrata quando vengono caricate nuove risorse o le risorse esistenti vengono modificate e sottoposte a Check-In in [ collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o [&#39;app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).[!DNL Experience Manager]
+I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro. Inoltre, l&#39;attività della cronologia viene registrata quando vengono caricate nuove risorse o le risorse esistenti vengono modificate e sottoposte a Check-In in [ collegamento risorsa Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [&#39;app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).[!DNL Experience Manager]
 
 >[!NOTE]
 >
