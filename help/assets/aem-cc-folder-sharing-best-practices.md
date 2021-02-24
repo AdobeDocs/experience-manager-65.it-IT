@@ -3,9 +3,9 @@ title: 'Condivisione delle cartelle con le procedure ottimali [!DNL Adobe Creati
 description: Configurare [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] per scambiare cartelle con utenti Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La funzione [!DNL Experience Manager] per [!DNL Creative Cloud] Condivisione cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti come [ collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [ Experience Manager app desktop di ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Ulteriori informazioni sono disponibili in [ procedure ottimali per l&#39;integrazione di Experienci Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione [!DNL Experience Manager] per [!DNL Creative Cloud] Condivisione cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti come [ collegamento risorsa Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) o [ Experience Manager app desktop di ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Ulteriori informazioni sono disponibili in [ procedure ottimali per l&#39;integrazione di Experienci Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] può essere configurato per consentire  [!DNL Assets] agli utenti di condividere cartelle con gli utenti di  [!DNL Adobe Creative Cloud] app, in modo che siano disponibili come cartelle condivise nel servizio  [!DNL Adobe Creative Cloud] Risorse. La funzione può essere utilizzata per scambiare file tra team creativi e utenti [!DNL Assets], soprattutto quando gli utenti creativi non hanno accesso alla [!DNL Assets] distribuzione (non sono sulla rete aziendale).
 
@@ -26,7 +26,7 @@ Questo tipo di integrazione può essere utilizzato nei seguenti casi di utilizzo
 
 >[!NOTE]
 >
->Prima di leggere questo documento, è possibile esaminare le procedure ottimali per l&#39;integrazione di Experienci Manager e Creative Cloud [ nel complesso per una panoramica dell&#39;integrazione.](/help/assets/aem-cc-integration-best-practices.md)
+>Prima di leggere questo documento, è possibile esaminare le procedure ottimali per l&#39;integrazione di Experienci Manager e Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md) nel complesso per una panoramica dell&#39;integrazione.[
 
 ## Panoramica {#overview}
 
