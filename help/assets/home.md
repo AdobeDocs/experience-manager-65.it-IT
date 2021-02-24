@@ -1,17 +1,17 @@
 ---
-title: Guida ad Assets
+title: Guida di Assets
 description: Questa guida descrive tutte  attività relative alle risorse di Experience Manager, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
-user-guide-title: Guida ad Assets
+user-guide-title: Guida di Assets
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '321'
 ht-degree: 12%
 
 ---
 
 
-# Guida ad Assets
+# Guida di Assets
 
 Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 
@@ -20,7 +20,6 @@ Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad es
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
 
-* [Guida introduttiva  Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [ Experience Manager 6.5 - Note sulla versione](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Elenco di controllo protezione](/help/sites-administering/security-checklist.md)
@@ -44,9 +43,9 @@ Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad es
 
 ## Risorse [!DNL Experience Manager] chiave
 
-* [ Tutorials video Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [ Tutorials video Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum della community di  Assets Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guida utente del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [Guida utente HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
