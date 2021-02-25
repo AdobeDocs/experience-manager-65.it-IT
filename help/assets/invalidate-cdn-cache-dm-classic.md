@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '720'
 ht-degree: 17%
 
 ---
@@ -20,7 +20,7 @@ Le risorse Dynamic Media sono memorizzate nella cache dalla rete CDN (Content De
 
 >[!NOTE]
 >
->I clienti devono usare il CDN fornito con Adobe Experience Manager Dynamic Media per beneficiare dell’annullamento della validità della cache CDN.
+>Questa funzione richiede l’utilizzo del CDN fornito con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
 >[!IMPORTANT]
 >
