@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '6123'
+source-wordcount: '6083'
 ht-degree: 5%
 
 ---
@@ -31,14 +31,15 @@ Con la nuova architettura,  Experience Manager è responsabile delle risorse di 
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->I clienti che non utilizzano la CDN inclusa nel bundle con  Experience Manager Dynamic Media non beneficiano delle seguenti funzionalità:
->* [Imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Annullamento cache](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Protezione collegamento ipertestuale](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [Distribuzione di contenuti HTTP/2](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Integrazione dei visualizzatori Dynamic Media con  Adobe Analytics e Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>Il seguente elenco di funzioni richiede l’utilizzo del CDN predefinito fornito con Adobe Experience Manager - Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con queste funzioni.
+>
+>* [Imaging avanzato](/help/assets/imaging-faq.md)
+>* [Annullamento cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Protezione collegamento ipertestuale](/help/assets/hotlink-protection.md)
+>* [Distribuzione di contenuti HTTP/2](/help/assets/http2.md)
+>* [Integrazione dei visualizzatori Dynamic Media con  Adobe Analytics e Experience Platform Launch](/help/assets/launch.md)
 >* Reindirizzamento URL a livello CDN
 >* Akamai ChinaCDN (per una consegna ottimale in Cina)
 
@@ -143,7 +144,7 @@ Se desiderate personalizzare ulteriormente la configurazione, potete eventualmen
 
 ## (Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media - Modalità Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Per personalizzare ulteriormente la configurazione e l&#39;impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, è possibile completare una o più delle seguenti attività *facoltative*:
+Per personalizzare ulteriormente la configurazione e l&#39;impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, è possibile completare una o più delle seguenti *attività facoltative*:
 
 * [(Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni modalità Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
