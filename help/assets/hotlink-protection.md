@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ Il collegamento a caldo si verifica quando un sito Web di terze parti utilizza i
 
 >[!NOTE]
 >
->Per proteggere i collegamenti sensibili è necessario utilizzare  CDN bundle del Adobe. Per attivare la protezione dei collegamenti ipertestuali, un amministratore deve creare un ticket di assistenza per richiedere la modifica alla configurazione dell’account Dynamic Media. Non sono previsti costi aggiuntivi per l&#39;attivazione della protezione tramite collegamento a caldo.
+>Questa funzione richiede l’utilizzo del CDN fornito con Adobe Experience Manager Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione. Per attivare la protezione tramite collegamento caldo, un amministratore deve creare un ticket di assistenza clienti  Adobe per richiedere la modifica alla configurazione dell&#39;account Dynamic Media. Non sono previsti costi aggiuntivi per l&#39;attivazione della protezione tramite collegamento a caldo.
