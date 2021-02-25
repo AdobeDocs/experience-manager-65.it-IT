@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6257'
 ht-degree: 0%
 
 ---
 
 
 # Gestione degli utenti {#managing-users}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Gestione utente**
 
@@ -654,12 +656,12 @@ Per gestire ruoli e autorizzazioni utilizzando l’API di Gestione autorizzazion
 
 1. Richiama le operazioni di ruolo o autorizzazione appropriate.
 
-   Per assegnare un ruolo a un&#39;entità, richiamare il metodo `AuthorizationManagerServiceClient` dell&#39;oggetto &lt;a1/> e passare i seguenti valori:`assignRole`
+   Per assegnare un ruolo a un&#39;entità, richiamare il metodo `assignRole` dell&#39;oggetto `AuthorizationManagerServiceClient` e passare i seguenti valori:
 
    * Un oggetto `java.lang.String` che contiene l&#39;identificatore del ruolo
    * Un array di oggetti `java.lang.String` contenenti gli identificatori principali.
 
-   Per rimuovere un ruolo da un&#39;entità, richiamare il metodo `AuthorizationManagerServiceClient` dell&#39;oggetto &lt;a1/> e passare i seguenti valori:`unassignRole`
+   Per rimuovere un ruolo da un&#39;entità, richiamare il metodo `unassignRole` dell&#39;oggetto `AuthorizationManagerServiceClient` e passare i seguenti valori:
 
    * Un oggetto `java.lang.String` che contiene l&#39;identificatore del ruolo.
    * Un array di oggetti `java.lang.String` contenenti gli identificatori principali.
@@ -702,12 +704,12 @@ Gestire ruoli e autorizzazioni utilizzando l’API del servizio Gestione autoriz
 
 1. Richiama le operazioni di ruolo o autorizzazione appropriate.
 
-   Per assegnare un ruolo a un&#39;entità, richiamare il metodo `AuthorizationManagerServiceClient` dell&#39;oggetto &lt;a1/> e passare i seguenti valori:`assignRole`
+   Per assegnare un ruolo a un&#39;entità, richiamare il metodo `assignRole` dell&#39;oggetto `AuthorizationManagerServiceClient` e passare i seguenti valori:
 
    * Un oggetto `string` che contiene l&#39;identificatore del ruolo
    * Un oggetto `MyArrayOf_xsd_string` che contiene gli identificatori principali.
 
-   Per rimuovere un ruolo da un&#39;entità, richiamare il metodo `AuthorizationManagerServiceService` dell&#39;oggetto &lt;a1/> e passare i seguenti valori:`unassignRole`
+   Per rimuovere un ruolo da un&#39;entità, richiamare il metodo `unassignRole` dell&#39;oggetto `AuthorizationManagerServiceService` e passare i seguenti valori:
 
    * Un oggetto `string` che contiene l&#39;identificatore del ruolo.
    * Un array di oggetti `string` contenenti gli identificatori principali.
@@ -752,7 +754,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma
    <td><p>Le credenziali utente sono autenticate con il servizio Authentication Manager. Se le credenziali utente sono valide, il flusso di lavoro procede al passaggio 3. In caso contrario, all'utente viene inviato un messaggio in cui si attesta che l'utente non è un utente autorizzato.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Le informazioni utente e una struttura del modulo vengono recuperate da un database enterprise protetto. </p></td>
   </tr>
   <tr>
@@ -843,7 +845,7 @@ Autenticazione di un utente tramite l&#39;API Authentication Manager Service (se
 
    * Un oggetto `string` che contiene il nome dell&#39;utente
    * Un array di byte (un oggetto `byte[]`) contenente la password dell&#39;utente. È possibile ottenere l&#39;oggetto `byte[]` convertendo un oggetto `string` contenente la password in un array `byte[]` utilizzando la logica illustrata nell&#39;esempio seguente.
-   * Il valore restituito sarà un oggetto `AuthResult`, che può essere utilizzato per recuperare informazioni sull&#39;utente. Nell&#39;esempio seguente, le informazioni dell&#39;utente vengono recuperate prima ottenendo il campo `AuthResult` dell&#39;oggetto `authenticatedUser` e successivamente ottenendo i campi `User` e `canonicalName` dell&#39;oggetto risultante.`domainName`
+   * Il valore restituito sarà un oggetto `AuthResult`, che può essere utilizzato per recuperare informazioni sull&#39;utente. Nell&#39;esempio seguente, le informazioni dell&#39;utente vengono recuperate prima ottenendo il campo `authenticatedUser` dell&#39;oggetto `User` e successivamente ottenendo i campi `canonicalName` e `domainName` dell&#39;oggetto risultante.`AuthResult`
 
 **Consulta anche**
 
@@ -878,7 +880,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma
    <td><p> AEM Forms esegue un'operazione di sincronizzazione.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Le informazioni utente vengono aggiornate.</p></td>
   </tr>
   <tr>
