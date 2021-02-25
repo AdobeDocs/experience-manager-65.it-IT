@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1263'
 ht-degree: 3%
 
 ---
 
 
 # Avvio rapido API di richiamo {#invocation-api-quick-starts}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Sono disponibili le seguenti soluzioni di avvio rapido per invocare a livello di programmazione  servizi AEM Forms:
 
