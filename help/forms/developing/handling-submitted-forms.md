@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
 
 
 # Gestione Forms inviata {#handling-submitted-forms}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Per le applicazioni basate sul Web che consentono a un utente di compilare moduli interattivi è necessario che i dati vengano inviati nuovamente al server. Il servizio Forms consente di recuperare i dati immessi dall&#39;utente in un modulo interattivo. Dopo aver recuperato i dati, puoi elaborarli per soddisfare i requisiti aziendali. Ad esempio, è possibile memorizzare i dati in un database, inviare i dati a un&#39;altra applicazione, inviare i dati a un altro servizio, unire i dati in una struttura del modulo, visualizzare i dati in un browser Web e così via.
 
@@ -96,7 +98,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
    <td><p>Il servizio Forms esegue il rendering di un modulo PDF interattivo nel browser Web del client.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>L'utente compila un modulo interattivo e fa clic su un pulsante di invio. Il modulo viene inviato nuovamente al servizio Forms come dati PDF. Questa opzione è impostata in Designer.</p></td>
   </tr>
   <tr>
@@ -212,7 +214,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 
    >[!NOTE]
    >
-   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il metodo `RenderOptionsSpec` dell&#39;oggetto &lt;a1/> e passando `setPDF2XDP`, nonché chiamando `true` e passando `setXMLData`. `true` È quindi possibile richiamare il metodo `FormsResult` dell&#39;oggetto `getOutputXML` per recuperare i dati XML che corrispondono ai dati XDP/XML. (L&#39;oggetto `FormsResult` viene restituito dal metodo `processFormSubmission`, illustrato nel passaggio secondario successivo.)
+   >È possibile indicare al servizio Forms di creare dati XDP o XML dal contenuto PDF inviato richiamando il metodo `setPDF2XDP` dell&#39;oggetto `RenderOptionsSpec` e passando `true`, nonché chiamando `setXMLData` e passando `true`. È quindi possibile richiamare il metodo `FormsResult` dell&#39;oggetto `getOutputXML` per recuperare i dati XML che corrispondono ai dati XDP/XML. (L&#39;oggetto `FormsResult` viene restituito dal metodo `processFormSubmission`, illustrato nel passaggio secondario successivo.)
 
    * Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
 
@@ -230,7 +232,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 1. Determinare se l&#39;invio del modulo contiene file allegati
 
    * Richiamare il metodo `FormsResult` dell&#39;oggetto `getAttachments`. Questo metodo restituisce un oggetto `java.util.List` che contiene i file inviati con il modulo.
-   * Iterate l&#39;oggetto `java.util.List` per determinare se sono presenti allegati di file. Se sono presenti allegati, ogni elemento è un&#39;istanza `com.adobe.idp.Document`. È possibile salvare gli allegati richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando un oggetto &lt;a2/>.`java.io.File`
+   * Iterate l&#39;oggetto `java.util.List` per determinare se sono presenti allegati di file. Se sono presenti allegati, ogni elemento è un&#39;istanza `com.adobe.idp.Document`. È possibile salvare gli allegati richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando un oggetto `com.adobe.idp.Document`.
 
    >[!NOTE]
    >
@@ -250,7 +252,7 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
 
       * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
       * Creare un oggetto `java.io.File` utilizzando il relativo costruttore pubblico. Accertatevi di specificare PDF come estensione del nome file.
-      * Compilare il file PDF richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando l&#39;oggetto &lt;a2/>.`java.io.File`
+      * Compilare il file PDF richiamando il metodo `copyToFile` dell&#39;oggetto `java.io.File` e passando l&#39;oggetto `com.adobe.idp.Document`.
 
 
 **Consulta anche**
