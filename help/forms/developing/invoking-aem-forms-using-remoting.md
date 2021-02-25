@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4647'
+source-wordcount: '4661'
 ht-degree: 0%
 
 ---
 
 
 # Chiamata  AEM Forms tramite Remoting {#invoking-aem-forms-using-remoting}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 I processi creati in Workbench possono essere richiamati utilizzando la funzione Remoting. In altre parole, potete richiamare un processo AEM Forms  da un&#39;applicazione client integrata con Flex. Questa funzione è basata su Data Services.
 
