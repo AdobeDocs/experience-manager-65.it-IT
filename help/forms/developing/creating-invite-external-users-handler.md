@@ -2,15 +2,17 @@
 title: Creazione di un gestore di utenti esterni per l’invito
 description: Creazione di un gestore di utenti esterni per l’invito
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 
 # Creazione di un gestore di utenti esterni di invito {#create-invite-external-users-handler}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Potete creare un gestore Invita utenti esterni per il servizio Rights Management. Un gestore Invita utenti esterni consente al servizio Rights Management di invitare utenti esterni a diventare utenti del Rights Management. Quando un utente diventa un utente di Rights Management, può eseguire attività quali l&#39;apertura di un documento PDF protetto tramite criterio. Dopo che il gestore Invita utenti esterni è stato distribuito in  AEM Forms, potete usare la console di amministrazione per interagire con esso.
 
@@ -207,7 +209,7 @@ Per distribuire il gestore di utenti esterni dell&#39;invito a  AEM Forms, dovet
 >
 >Nell&#39;illustrazione seguente, viene visualizzata una classe `BootstrapImpl`. In questa sezione non viene illustrato come creare una classe `BootstrapImpl`.
 
-L&#39;illustrazione seguente mostra il contenuto del progetto Java incluso nel pacchetto nel file JAR del gestore di utenti esterni dell&#39;invito.
+L&#39;illustrazione seguente mostra il contenuto del progetto Java incluso nel pacchetto del file JAR del gestore di utenti esterni dell&#39;invito.
 
 ![Invitare gli utenti](assets/ci_ci_InviteUsers.png)
 
