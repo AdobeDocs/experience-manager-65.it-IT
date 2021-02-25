@@ -6,17 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 24%
+source-wordcount: '710'
+ht-degree: 17%
 
 ---
 
 
 # Annullamento della validità della cache CDN tramite Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Le risorse Dynamic Media vengono memorizzate nella cache dalla rete CDN per una distribuzione rapida. Tuttavia, quando apportate gli aggiornamenti a una risorsa, potreste desiderare che tali modifiche diventino effettive immediatamente. L’annullamento della validità della rete CDN (Content Delivery Network) nei contenuti memorizzati nella cache consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
+Le risorse Dynamic Media sono memorizzate nella cache dalla rete CDN (Content Delivery Network) per una distribuzione rapida. Tuttavia, quando apportate gli aggiornamenti a una risorsa, desiderate che tali modifiche diventino effettive immediatamente. L’annullamento della validità del contenuto della cache CDN consente di aggiornare rapidamente le risorse distribuite da Dynamic Media, anziché attendere la scadenza della cache.
+
+>[!NOTE]
+>
+>I clienti devono usare il CDN fornito con Adobe Experience Manager Dynamic Media per beneficiare dell’annullamento della validità della cache CDN.
 
 >[!IMPORTANT]
 >
@@ -39,20 +43,20 @@ Vedere anche [Panoramica della cache in Dynamic Media Classic (Scene7)](https://
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Se il modello contiene solo `<ID>`, Dynamic Media compila `https://<server>/is/image` dove `<server>` è il nome del server di pubblicazione definito in Impostazioni generali e &lt;ID> è la risorsa o le risorse selezionate per essere annullate.
+   Se il modello contiene solo `<ID>`, Dynamic Media compila `https://<server>/is/image` dove `<server>` è il nome del server di pubblicazione definito in Impostazioni generali e &lt;ID> è la risorsa selezionata per l&#39;annullamento della validità.
 
 1. Nell&#39;angolo inferiore destro della pagina, fare clic su **[!UICONTROL Chiudi.]**
-1. Nell’interfaccia utente di Dynamic Media Classic, selezionate una o più risorse, quindi fate clic su **[!UICONTROL File > Annulla validità CDN.]** Vedrete un elenco di uno o più URL generati dal modello e dalle risorse selezionate. Utilizza l’URL del server elencato in &quot;Nome server pubblicato&quot; nelle Impostazioni generali applicazione.
+1. Nell’interfaccia utente di Dynamic Media Classic, selezionate una o più risorse, quindi fate clic su **[!UICONTROL File > Annulla validità CDN.]** Viene visualizzato un elenco di uno o più URL generati dal modello e dalle risorse selezionate. Utilizza l’URL del server elencato in &quot;Nome server pubblicato&quot; nelle Impostazioni generali applicazione.
 
-   Ad esempio, con il modello di annullamento validità CDN impostato nel passaggio precedente, supponete di aver selezionato una singola immagine di risorsa immagine denominata `Backpack_B`. Quando si fa clic su **[!UICONTROL File > Annulla validità CDN]**, nell&#39;interfaccia utente di annullamento validità CDN viene generato il seguente URL:
+   Ad esempio, con il modello di annullamento validità CDN impostato nel passaggio precedente, supponete di aver selezionato una singola immagine di risorsa immagine denominata `Backpack_B`. Toccando **[!UICONTROL File > Annulla validità CDN]**, si ottiene il seguente URL generato nell’interfaccia utente di annullamento validità CDN:
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. Nella casella di riepilogo URL, fate clic su **[!UICONTROL Continue]** per cancellare la cache per ciascun URL specifico. Potete modificare un URL o aggiungere un URL digitandolo o incollandolo nella casella di riepilogo URL; non è necessario impostare precedentemente CDN Annulla validità modello.
+1. Nella casella di riepilogo URL, toccate **[!UICONTROL Continue]** per cancellare la cache per ciascun URL specifico. Potete modificare un URL o aggiungere un URL digitandolo o incollandolo nella casella di riepilogo URL; non è necessario impostare precedentemente CDN Annulla validità modello.
 
    Dopo aver fatto clic su **[!UICONTROL Continue]**, viene visualizzato un indicatore che fornisce una stima del tempo necessario per cancellare la cache.
 
-   Se hai selezionato più risorse e poi hai selezionato **[!UICONTROL File > Annulla validità CDN]**, nell’**[!UICONTROL URL del modello salvato viene fatto riferimento a ciascuna risorsa.]** Di conseguenza, puoi definire un **[!UICONTROL Modello di annullamento validità CDN]** facendo riferimento a ciascun predefinito dell’URL immagine a cui viene fatto riferimento nel tuo sito web (ad esempio dettagli del prodotto, risultati di ricerca e così via). Quindi, quando selezioni una o più immagini della cache di cui annullare la validità, gli URL compilano automaticamente l’interfaccia.
+   Se avete selezionato più risorse, quindi toccato **[!UICONTROL File > Annulla validità CDN]**, a ciascuna risorsa viene fatto riferimento nell&#39;URL del modello salvato.**** Di conseguenza, potete definire un  **[!UICONTROL modello]** di annullamento validità CDN che faccia riferimento a ciascun predefinito per immagini URL presente nel sito Web (ad esempio dettagli del prodotto e risultati della ricerca). Quindi, quando selezioni una o più immagini della cache di cui annullare la validità, gli URL compilano automaticamente l’interfaccia.
 
    >[!NOTE]
    >
