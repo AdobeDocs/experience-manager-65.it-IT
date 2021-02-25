@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
 
 
 # Preparazione  AEM Forms per il backup {#preparing-aem-forms-for-backup}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Informazioni sul servizio di backup e ripristino {#about-the-backup-and-restore-service}
 
@@ -133,7 +135,7 @@ Accedete alla modalità di backup utilizzando l&#39;API del servizio Backup e ri
    * Un valore `int` che specifica il numero di minuti per rimanere in modalità di backup. È possibile specificare un valore compreso tra `1` e `10080` (il numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
    * Un valore `Boolean` che specifica se eseguire il backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti di permanenza in modalità di backup viene ignorato.
 
-      La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Un valore di `False` indica che la modalità di backup continuo non viene utilizzata e, dopo aver lasciato la modalità di backup, l&#39;eliminazione dei file dal GDS riprende.
+      La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Un valore di `False` indica che la modalità di backup continuo non viene utilizzata e, dopo aver lasciato la modalità di backup, la rimozione dei file dal GDS riprende.
 
 1. Ottenere informazioni sulla sessione della modalità di backup sul server
 
@@ -168,7 +170,7 @@ Accedete alla modalità di backup utilizzando il servizio Web fornito dall&#39;A
    * Un valore `Uint32` che specifica il numero di minuti per rimanere in modalità di backup. È possibile specificare un valore compreso tra `1` e `10080` (numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
    * Un valore `Boolean` che specifica se eseguire il backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti di permanenza in modalità di backup viene ignorato. La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente.
 
-      Un valore di `False` indica che la modalità di backup continuo non viene utilizzata e, dopo aver lasciato la modalità di backup, l&#39;eliminazione dei file dal GDS riprende.
+      Un valore di `False` indica che la modalità di backup continuo non viene utilizzata e, dopo aver lasciato la modalità di backup, la rimozione dei file dal GDS riprende.
 
 1. Ottenere informazioni sulla sessione della modalità di backup sul server
 
