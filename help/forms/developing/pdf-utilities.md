@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2606'
 ht-degree: 1%
 
 ---
 
 
 # Utilizzo delle utility PDF {#working-with-pdf-utilities}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Informazioni sul servizio Utilità PDF**
 
@@ -350,7 +352,7 @@ Dopo che il servizio Utilità PDF ha impostato la modalità di salvataggio speci
 
 >[!NOTE]
 >
->La sezione Avvio rapido associata a questa sezione imposta la modalità `FAST_WEB_VIEW` e quindi passa il documento PDF all&#39;operazione `encryptUsingPassword` del servizio di cifratura.
+>La sezione Avvio rapido associata a questa sezione imposta la modalità `FAST_WEB_VIEW`, quindi passa il documento PDF all&#39;operazione `encryptUsingPassword` del servizio di cifratura.
 
 **Consulta anche**
 
@@ -419,7 +421,7 @@ Per impostare le opzioni di salvataggio del documento PDF, utilizzare l&#39;API 
 1. Impostare la modalità Salva
 
    * Creare un oggetto `PDFUtilitySaveMode` utilizzando il relativo costruttore.
-   * Impostare la modalità di salvataggio assegnando un valore stringa al metodo `PDFUtilitySaveMode` dell&#39;oggetto &lt;a1/> che specifica la modalità di salvataggio. `saveStyle` Ad esempio, per salvare la visualizzazione Web in modo rapido, specificate `FAST_WEB_VIEW`.
+   * Impostare la modalità di salvataggio assegnando un valore stringa al metodo `saveStyle` dell&#39;oggetto `PDFUtilitySaveMode` che specifica la modalità di salvataggio. Ad esempio, per salvare la visualizzazione Web in modo rapido, specificate `FAST_WEB_VIEW`.
 
 1. Richiamo dell&#39;operazione di salvataggio dello stile
 
