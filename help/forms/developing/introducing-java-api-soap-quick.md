@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 
 # Introduzione a Java API Quick Start {#introducing-java-api-quickstart}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
  Adobe  AEM Forms API Quick Start consente di accelerare i vostri sforzi per sviluppare programmi che interagiscono con  servizi AEM Forms. *Gli* avvii rapidi sono programmi completi che puoi copiare e incollare nei tuoi progetti e utilizzare come punto di partenza. Potete eseguire una Avvio rapido per vedere come si comporta e modificarla in base alle vostre esigenze.
 
