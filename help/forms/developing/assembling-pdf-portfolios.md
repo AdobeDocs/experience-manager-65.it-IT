@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 
 # Assemblaggio di Portfoli PDF {#assembling-pdf-portfolios}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 È possibile assemblare un Portfolio PDF utilizzando l&#39;Assembler Java e l&#39;API del servizio Web. Un portfolio può combinare diversi documenti di vari tipi, tra cui file Word, file immagine (ad esempio, un file jpeg) e documenti PDF. Il layout del portfolio può essere impostato su stili diversi come la *Griglia con Preview*, il *Su un layout Immagine* o anche *Rivoluzione*.
 
@@ -117,7 +119,7 @@ Per assemblare un Portfolio PDF, è necessario chiamare l&#39;operazione `invoke
 
 **Salva il portafoglio assemblato**
 
-Un Portfolio PDF viene restituito all&#39;interno di un oggetto raccolta. Iterare l&#39;oggetto raccolta e salvare l&#39;Portfolio PDF come file PDF.
+Un Portfolio PDF viene restituito all&#39;interno di un oggetto raccolta. Iterate l&#39;oggetto della raccolta e salvate l&#39;Portfolio PDF come file PDF.
 
 **Consulta anche**
 
