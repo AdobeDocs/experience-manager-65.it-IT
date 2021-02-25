@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
 
 # Importazione ed esportazione di dati {#importing-and-exporting-data}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Informazioni su Form Data Integration Service {#about-the-form-data-integration-service}
 
@@ -335,7 +337,7 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 1. Esportare i dati dal modulo PDF.
 
-   Esportare i dati del modulo richiamando il metodo `FormDataIntegrationClient` dell&#39;oggetto `exportData` e passando l&#39;oggetto &lt;a2/> che memorizza il modulo PDF. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `com.adobe.idp.Document` che memorizza i dati del modulo come schema XML.
+   Esportare i dati del modulo richiamando il metodo `exportData` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `FormDataIntegrationClient` che memorizza il modulo PDF. Questo metodo restituisce un oggetto `com.adobe.idp.Document` che memorizza i dati del modulo come schema XML.
 
 1. Salvare il modulo PDF come file PDF.
 
@@ -385,7 +387,7 @@ Esportare i dati del modulo utilizzando l&#39;API di integrazione dei dati del m
 
 1. Esportare i dati dal modulo PDF.
 
-   Importare dati nel modulo PDF richiamando il metodo `FormDataIntegrationClient` dell&#39;oggetto `exportData` e passando l&#39;oggetto &lt;a2/> che memorizza il modulo PDF. `BLOB` Questo metodo restituisce un oggetto `BLOB` che memorizza i dati del modulo come schema XML.
+   Importare dati nel modulo PDF richiamando il metodo `exportData` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `FormDataIntegrationClient` che memorizza il modulo PDF. Questo metodo restituisce un oggetto `BLOB` che memorizza i dati del modulo come schema XML.
 
 1. Salvare il modulo PDF come file PDF.
 
