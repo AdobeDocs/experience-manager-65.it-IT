@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6072'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,6 @@ Con la nuova architettura,  Experience Manager è responsabile delle risorse di 
 >* [Annullamento cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Protezione collegamento ipertestuale](/help/assets/hotlink-protection.md)
 >* [Distribuzione di contenuti HTTP/2](/help/assets/http2.md)
->* [Integrazione dei visualizzatori Dynamic Media con  Adobe Analytics e Experience Platform Launch](/help/assets/launch.md)
 >* Reindirizzamento URL a livello CDN
 >* Akamai ChinaCDN (per una consegna ottimale in Cina)
 
