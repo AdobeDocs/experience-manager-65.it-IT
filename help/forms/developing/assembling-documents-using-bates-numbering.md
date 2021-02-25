@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1941'
 ht-degree: 0%
 
 ---
 
 
 # Assemblare documenti utilizzando la numerazione Bates {#assembling-documents-using-bates-numbering}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 È possibile assemblare documenti PDF che contengono identificatori di pagina univoci utilizzando la numerazione Bates. *La* numerazione Bates è un metodo per applicare identificatori univoci a un batch di documenti correlati. A ogni pagina del documento (o set di documenti) viene assegnato un numero Bates che identifica in modo univoco la pagina. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico incrementato sequenzialmente e un prefisso e un suffisso facoltativi. Il prefisso + suffisso numerico + è denominato *pattern di bates*.
 
@@ -96,7 +98,7 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 **Riferimento a documenti PDF in input**
 
-Per assemblare un documento PDF è necessario fare riferimento ai documenti PDF di input. Ad esempio, per assemblare questi documenti PDF in un singolo documento PDF è necessario fare riferimento ai documenti map.pdf e directional.pdf.
+Per assemblare un documento PDF è necessario fare riferimento ai documenti PDF di input. Ad esempio, per assemblare questi documenti PDF in un singolo documento PDF è necessario fare riferimento ai documenti map.pdf e guidelines.pdf.
 
 **Impostare il valore numero Bates iniziale**
 
@@ -153,7 +155,7 @@ Assemblate un documento PDF che utilizza identificatori di pagina univoci (numer
 1. Impostate il valore numero Bates iniziale.
 
    * Creare un oggetto `AssemblerOptionSpec` che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare il numero Bates iniziale richiamando l&#39;oggetto `AssemblerOptionSpec` e passando un valore numerico che specifica il valore iniziale.`setFirstBatesNumber`
+   * Impostare il numero Bates iniziale richiamando l&#39;oggetto `setFirstBatesNumber` e passando un valore numerico che specifica il valore iniziale.`AssemblerOptionSpec`
 
 1. Assemblare i documenti PDF di input.
 
