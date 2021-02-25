@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
 
 
 # Rendering PDF forms interattivi {#rendering-interactive-pdf-forms}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Il servizio Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere sui browser Web, per raccogliere informazioni dagli utenti. Dopo aver eseguito il rendering di un modulo interattivo, l&#39;utente può immettere i dati nei campi del modulo e fare clic su un pulsante di invio situato sul modulo per inviare le informazioni al servizio Forms.  Adobe Reader o  Acrobat deve essere installato sul computer in cui è installato il browser Web client per rendere visibile un modulo PDF interattivo.
 
@@ -168,7 +170,7 @@ Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calc
 
 **Rendering di un modulo PDF interattivo**
 
-Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con  Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `FormsServiceClient` dell&#39;oggetto `renderPDFForm` o il metodo &lt;a2/>.`renderPDFForm2`
+Per eseguire il rendering di un modulo, utilizzare una struttura del modulo creata in Designer e salvata come file XDP o PDF. È inoltre possibile eseguire il rendering di un modulo creato con  Acrobat e salvato come file PDF. Per eseguire il rendering di un modulo PDF interattivo, richiamare il metodo `renderPDFForm` dell&#39;oggetto `renderPDFForm2` o il metodo `FormsServiceClient`.
 
 L&#39;oggetto `renderPDFForm` utilizza un oggetto `URLSpec`. Il livello principale del contenuto del file XDP viene passato al servizio Forms utilizzando il metodo `URLSpec` dell&#39;oggetto `setContentRootURI`. Il nome della struttura del modulo ( `formQuery`) viene passato come valore di parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla struttura del modulo.
 
