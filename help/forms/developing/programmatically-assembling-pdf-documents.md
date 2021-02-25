@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2152'
 ht-degree: 0%
 
 ---
 
 
 # Assemblaggio di documenti PDF a livello di programmazione {#programmatically-assembling-pdf-documents}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 È possibile utilizzare l&#39;API Assembler Service per assemblare più documenti PDF in un singolo documento PDF. L&#39;illustrazione seguente mostra tre documenti PDF uniti in un singolo documento PDF.
 
