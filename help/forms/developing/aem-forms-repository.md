@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 0%
 
 ---
 
 
 # Utilizzo  repository AEM Forms {#working-with-aem-forms-repository}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Informazioni su Repository Service**
 
@@ -295,12 +297,12 @@ Scrivere una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 1. Specificare il contenuto della risorsa
 
-   Per creare contenuto per la risorsa, richiamare il metodo `RepositoryInfomodelFactoryBean` dell&#39;oggetto `newResourceContent`, che restituisce un oggetto &lt;a2/>. `com.adobe.repository.infomodel.bean.ResourceContent` Aggiungere contenuto all&#39;oggetto `ResourceContent`. In questo esempio, questo si ottiene eseguendo le seguenti operazioni:
+   Per creare contenuto per la risorsa, richiamare il metodo `newResourceContent` dell&#39;oggetto `com.adobe.repository.infomodel.bean.ResourceContent`, che restituisce un oggetto `RepositoryInfomodelFactoryBean`. Aggiungere contenuto all&#39;oggetto `ResourceContent`. In questo esempio, questo si ottiene eseguendo le seguenti operazioni:
 
    * Chiamata del metodo `ResourceContent` dell&#39;oggetto `setDataDocument` e trasmissione di un oggetto `com.adobe.idp.Document`
    * Chiamata del metodo `ResourceContent` dell&#39;oggetto `setSize` e trasmissione delle dimensioni in byte dell&#39;oggetto `Document`
 
-   Aggiungete il contenuto alla risorsa richiamando il metodo `Resource` dell&#39;oggetto `setContent` e passando l&#39;oggetto &lt;a2/>. `ResourceContent` Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   Aggiungete il contenuto alla risorsa richiamando il metodo `setContent` dell&#39;oggetto `ResourceContent` e passando l&#39;oggetto `Resource`. Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Scrivere la risorsa nella cartella di destinazione
 
@@ -655,7 +657,7 @@ Aggiornare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
 1. Aggiornare la risorsa
 
-   Aggiornare le informazioni dell&#39;oggetto `Resource`. In questo esempio, per aggiornare la descrizione, richiamare il metodo `Resource` dell&#39;oggetto &lt;a1/> e passare la nuova stringa di descrizione come parametro.`setDescription`
+   Aggiornare le informazioni dell&#39;oggetto `Resource`. In questo esempio, per aggiornare la descrizione, richiamare il metodo `setDescription` dell&#39;oggetto `Resource` e passare la nuova stringa di descrizione come parametro.
 
    Quindi, richiamare il metodo `ServiceClientFactory` dell&#39;oggetto `updateResource` e trasmettere i seguenti parametri:
 
@@ -814,9 +816,9 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
    * Operatore che contiene la condizione utilizzata nella ricerca dell&#39;attributo. L&#39;operatore deve essere una delle costanti statiche nella classe `Query.Statement`. In questo esempio viene utilizzato il valore statico `Query.Statement.OPERATOR_BEGINS_WITH`.
    * Un operando a destra contenente il valore dell&#39;attributo su cui eseguire la ricerca. In questo esempio, viene utilizzato l&#39;attributo name, un `String` contenente il valore `"testResource"`.
 
-   Specificare lo spazio dei nomi dell&#39;operando sinistro richiamando il metodo `Query.Statement` dell&#39;oggetto `setNamespace` e passando uno dei valori statici contenuti nella classe &lt;a2/>. `com.adobe.repository.infomodel.bean.ResourceProperty` In questo esempio viene utilizzato `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`.
+   Specificare lo spazio dei nomi dell&#39;operando sinistro richiamando il metodo `setNamespace` dell&#39;oggetto `com.adobe.repository.infomodel.bean.ResourceProperty` e passando uno dei valori statici contenuti nella classe `Query.Statement`. In questo esempio viene utilizzato `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`.
 
-   Aggiungete ogni istruzione alla query richiamando il metodo `Query` dell&#39;oggetto `addStatement` e passando l&#39;oggetto &lt;a2/>.`Query.Statement`
+   Aggiungete ogni istruzione alla query richiamando il metodo `addStatement` dell&#39;oggetto `Query.Statement` e passando l&#39;oggetto `Query`.
 
 1. Creare l’ordinamento per i risultati della ricerca
 
@@ -824,7 +826,7 @@ Cercare una risorsa utilizzando l&#39;API del servizio Repository (Java):
 
    Per creare un elemento per l&#39;ordinamento, richiamare uno dei costruttori per la classe `com.adobe.repository.query.sort.SortOrder.Element`. In questo esempio, poiché il nome della risorsa è utilizzato come base per la ricerca, il valore statico `Resource.ATTRIBUTE_NAME` viene utilizzato come primo parametro, mentre l&#39;ordine crescente (un valore `boolean` di `true`) viene specificato come secondo parametro.
 
-   Aggiungete ciascun elemento all&#39;ordinamento richiamando il metodo `SortOrder` dell&#39;oggetto `addSortElement` e passando l&#39;oggetto &lt;a2/>.`SortOrder.Element`
+   Aggiungete ciascun elemento all&#39;ordinamento richiamando il metodo `addSortElement` dell&#39;oggetto `SortOrder.Element` e passando l&#39;oggetto `SortOrder`.
 
 1. Ricerca delle risorse
 
