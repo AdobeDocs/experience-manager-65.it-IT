@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
 
 
 # Rendering HTML Forms con file CSS personalizzati {#rendering-html-forms-using-custom-css-files}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Il servizio Forms esegue il rendering dei moduli HTML in risposta a una richiesta HTTP inviata da un browser Web. Durante il rendering di un modulo HTML, il servizio Forms può fare riferimento a un file CSS personalizzato. È possibile creare un file CSS personalizzato per soddisfare i requisiti aziendali e fare riferimento a tale file CSS quando si utilizza il servizio Forms per eseguire il rendering dei moduli HTML.
 
@@ -107,7 +109,7 @@ Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato 
 1. Riferimento al file CSS
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore di stringa che specifica la posizione e il nome del file CSS.`setCustomCSSURI`
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell&#39;oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
 
 1. Eseguire il rendering di un modulo HTML
 
@@ -159,7 +161,7 @@ Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato 
 1. Riferimento al file CSS
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore di stringa che specifica la posizione e il nome del file CSS.`setCustomCSSURI`
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell&#39;oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
 
 1. Eseguire il rendering di un modulo HTML
 
