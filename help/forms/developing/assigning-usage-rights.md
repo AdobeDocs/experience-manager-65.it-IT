@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3951'
 ht-degree: 0%
 
 ---
 
 
 # Assegnazione di diritti di utilizzo {#assigning-usage-rights}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Informazioni su Acrobat Reader DC extensions Service {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -125,8 +127,8 @@ Applicazione dei diritti di utilizzo a un documento PDF tramite l&#39;API Acroba
    * Creare un oggetto `ReaderExtensionsOptionSpec` utilizzando il relativo costruttore. Questo oggetto contiene le opzioni di esecuzione richieste dal servizio di estensione Acrobat Reader DC. Quando si richiama questo costruttore, è necessario specificare i seguenti valori:
 
       * L&#39;oggetto `UsageRights` che contiene i diritti di utilizzo da applicare al documento.
-      * Una valore di stringa che specifica un messaggio visualizzato dall&#39;utente all&#39;apertura in  Adobe Reader 7.x del documento PDF abilitato per i diritti. Questo messaggio non viene visualizzato in  Adobe Reader 8.0.
-   * Per applicare i diritti di utilizzo al documento PDF, richiamare il metodo `ReaderExtensionsServiceClient` dell&#39;oggetto &lt;a1/> e passare i valori seguenti:`applyUsageRights`
+      * Valore stringa che specifica un messaggio visualizzato dall&#39;utente all&#39;apertura in  Adobe Reader 7.x del documento PDF con diritti. Questo messaggio non viene visualizzato in  Adobe Reader 8.0.
+   * Per applicare i diritti di utilizzo al documento PDF, richiamare il metodo `applyUsageRights` dell&#39;oggetto `ReaderExtensionsServiceClient` e passare i valori seguenti:
 
       * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF a cui sono applicati i diritti di utilizzo.
       * Valore stringa che specifica l&#39;alias della credenziale che consente di applicare diritti di utilizzo.
@@ -193,7 +195,7 @@ Applicazione dei diritti di utilizzo a un documento PDF tramite l&#39;API delle 
    * Creare un oggetto `ReaderExtensionsOptionSpec` utilizzando il relativo costruttore. Questo oggetto contiene le opzioni di esecuzione richieste dal servizio di estensione Acrobat Reader DC.
    * Assegnare l&#39;oggetto `UsageRights` al membro di dati `ReaderExtensionsOptionSpec` dell&#39;oggetto `usageRights`.
    * Assegnare un valore di stringa che specifica il messaggio visualizzato dall&#39;utente all&#39;apertura del documento PDF con diritti in  Adobe Reader al membro di dati `ReaderExtensionsOptionSpec` dell&#39;oggetto `message`.
-   * Per applicare i diritti di utilizzo al documento PDF, richiamare il metodo `ReaderExtensionsServiceClient` dell&#39;oggetto &lt;a1/> e passare i valori seguenti:`applyUsageRights`
+   * Per applicare i diritti di utilizzo al documento PDF, richiamare il metodo `applyUsageRights` dell&#39;oggetto `ReaderExtensionsServiceClient` e passare i valori seguenti:
 
       * L&#39;oggetto `BLOB` che contiene il documento PDF a cui sono applicati i diritti di utilizzo.
       * Valore stringa che specifica l&#39;alias della credenziale che consente di applicare diritti di utilizzo.
@@ -288,7 +290,7 @@ Per rimuovere i diritti di utilizzo da un documento PDF abilitato per i diritti,
 
 1. Rimuovere i diritti di utilizzo dal documento PDF.
 
-   Rimuovere i diritti di utilizzo dal documento PDF richiamando il metodo `ReaderExtensionsServiceClient` dell&#39;oggetto `removeUsageRights` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF abilitato per i diritti. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF che non dispone dei diritti di utilizzo.
+   Rimuovere i diritti di utilizzo dal documento PDF richiamando il metodo `removeUsageRights` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `ReaderExtensionsServiceClient` che contiene il documento PDF abilitato per i diritti. Questo metodo restituisce un oggetto `com.adobe.idp.Document` contenente un documento PDF che non dispone dei diritti di utilizzo.
 
 1. Applicare i diritti di utilizzo al documento PDF.
 
@@ -340,7 +342,7 @@ Per rimuovere i diritti di utilizzo da un documento PDF abilitato per i diritti,
 
 1. Rimuovere i diritti di utilizzo dal documento PDF.
 
-   Rimuovere i diritti di utilizzo dal documento PDF richiamando il metodo `ReaderExtensionsServiceClient` dell&#39;oggetto `removeUsageRights` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF abilitato per i diritti. `BLOB` Questo metodo restituisce un oggetto `BLOB` contenente un documento PDF che non dispone dei diritti di utilizzo.
+   Rimuovere i diritti di utilizzo dal documento PDF richiamando il metodo `removeUsageRights` dell&#39;oggetto `BLOB` e passando l&#39;oggetto `ReaderExtensionsServiceClient` che contiene il documento PDF abilitato per i diritti. Questo metodo restituisce un oggetto `BLOB` contenente un documento PDF che non dispone dei diritti di utilizzo.
 
 1. Applicare i diritti di utilizzo al documento PDF.
 
