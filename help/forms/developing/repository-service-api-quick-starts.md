@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 
 # Avvio rapido API Servizio repository {#repository-service-api-quick-starts}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Per il servizio  archivio AEM Forms sono disponibili i seguenti avvii rapidi.
 
@@ -46,7 +48,7 @@ Per il servizio  archivio AEM Forms sono disponibili i seguenti avvii rapidi.
 
 **Applicazioni/FormsApplication**
 
-La maggior parte  servizio repository di AEM Forms avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,`, come illustrato nella figura seguente.
+La maggior parte  servizio repository di AEM Forms avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
 
 La cartella FormsFolder è un percorso nell&#39;archivio di AEM Forms . Ad esempio, potete aggiungere questa cartella a livello di programmazione a `Applications/FormsApplication`. (Vedere [Avvio rapido (modalità SOAP): Creazione di una cartella tramite Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).
 
