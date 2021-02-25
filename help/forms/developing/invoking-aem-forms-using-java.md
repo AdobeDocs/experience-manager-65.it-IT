@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5494'
 ht-degree: 0%
 
 ---
 
 
 # Chiamata  AEM Forms mediante l&#39;API Java {#invoking-aem-forms-using-the-javaapi}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
  AEM Forms può essere invocato utilizzando l&#39;API Java  AEM Forms. Quando utilizzate l&#39;API Java di AEM Forms , potete utilizzare l&#39;API di vocazione o le librerie client Java. Le librerie client Java sono disponibili per servizi come il servizio di Rights Management. Queste API fortemente tipizzate consentono di sviluppare applicazioni Java che richiamano  AEM Forms.
 
@@ -89,107 +91,107 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare  serviz
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Deve essere sempre incluso nel percorso di classe di un'applicazione client Java.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Deve essere sempre incluso nel percorso di classe di un'applicazione client Java.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>Deve essere sempre incluso nel percorso di classe di un'applicazione client Java.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Application Manager.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Assembler. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Richiesto per richiamare l'API del servizio Backup e ripristino.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio moduli con codice a barre. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Converti PDF. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Distiller.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio DocConverter.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Document Management.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Richiesto per richiamare il servizio di cifratura.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Forms.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Richiesto per richiamare il servizio di integrazione dei dati del modulo.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>Richiesto per richiamare il servizio Generate PDF.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>Richiesto per richiamare il servizio Genera PDF 3D.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Job Manager. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Output.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Utilità PDF o Utilità XMP.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio di estensione Acrobat Reader DC.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Repository.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs\thirdparty</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs\thirdparty<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +206,22 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare  serviz
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Obbligatorio per richiamare il servizio Rights Management.</p><p>Se  AEM Forms è distribuito su JBoss, includete tutti questi file. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>Directory lib specifica per JBoss</p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>Directory lib specifica per JBoss</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Signature.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>Richiesto per richiamare il servizio Task Manager. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Obbligatorio per richiamare il servizio Archivio attendibili. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +263,7 @@ Nella tabella seguente sono elencati i file JAR che dipendono dalla modalità di
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>se  AEM Forms viene richiamato utilizzando la modalità SOAP, includete questi file JAR.</p> </td>
-   <td><p>&lt;&gt;install directory<em>&gt;/sdk/client-libs/third-party</em></p> </td>
+   <td><p>&lt;&gt;install directory</em>&gt;/sdk/client-libs/third-party<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
@@ -1001,7 +1003,7 @@ Anche se ottenere un `ServiceClientFactory` è in genere veloce, alcuni sovracca
 1. Impostare il tipo MIME del file XDP da aggiungere all&#39;archivio richiamando il metodo `ResourceContent` dell&#39;oggetto `setMimeType` e passando `application/vnd.adobe.xdp+xml`.
 1. Aggiungete il contenuto dell&#39;oggetto `ResourceContent` all&#39;oggetto `Resource` richiamando il metodo `Resource` object ‘s `setContent` e passando l&#39;oggetto `ResourceContent`.
 1. Aggiungete una descrizione della risorsa richiamando l&#39;oggetto `Resource` ‘s `setDescription` e passando un valore di stringa che rappresenta una descrizione della risorsa.
-1. Aggiungere la struttura del modulo all&#39;archivio richiamando il metodo `ResourceRepositoryClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`writeResource`
+1. Aggiungere la struttura del modulo all&#39;archivio richiamando il metodo `writeResource` dell&#39;oggetto `ResourceRepositoryClient` e passando i valori seguenti:
 
    * Valore stringa che specifica il percorso della raccolta di risorse contenente la nuova risorsa
    * L&#39;oggetto `Resource` creato
@@ -1016,7 +1018,7 @@ Anche se ottenere un `ServiceClientFactory` è in genere veloce, alcuni sovracca
 
 ## Richiamo di un processo di breve durata mediante l&#39;API di incitamento {#invoking-a-short-lived-process-using-the-invocation-api}
 
-Potete richiamare un processo di breve durata utilizzando l&#39;API Java Invocation. Quando si richiama un processo di breve durata utilizzando l&#39;API di vocazione, i valori dei parametri richiesti vengono passati utilizzando un oggetto `java.util.HashMap`. Per ogni parametro da passare a un servizio, richiamare il metodo `java.util.HashMap` dell&#39;oggetto &lt;a1/> e specificare la coppia nome-valore richiesta dal servizio per eseguire l&#39;operazione specificata. `put` Specificate il nome esatto dei parametri che appartengono al processo di breve durata.
+Potete richiamare un processo di breve durata utilizzando l&#39;API Java Invocation. Quando si richiama un processo di breve durata utilizzando l&#39;API di vocazione, i valori dei parametri richiesti vengono passati utilizzando un oggetto `java.util.HashMap`. Per ogni parametro da passare a un servizio, richiamare il metodo `put` dell&#39;oggetto `java.util.HashMap` e specificare la coppia nome-valore richiesta dal servizio per eseguire l&#39;operazione specificata. Specificate il nome esatto dei parametri che appartengono al processo di breve durata.
 
 >[!NOTE]
 >
@@ -1058,13 +1060,13 @@ Richiamate il processo di breve durata `MyApplication/EncryptDocument` utilizzan
    * L&#39;oggetto `java.util.HashMap` che contiene i valori dei parametri richiesti dall&#39;operazione del servizio.
    * Un valore booleano che specifica `true`, che crea una richiesta sincrona (questo valore è applicabile per richiamare un processo di breve durata).
 
-1. Inviare la richiesta di chiamata al servizio richiamando il metodo `ServiceClient` dell&#39;oggetto `invoke` e passando l&#39;oggetto &lt;a2/>. `InvocationRequest` Il metodo `invoke` restituisce un oggetto `InvocationReponse`.
+1. Inviare la richiesta di chiamata al servizio richiamando il metodo `invoke` dell&#39;oggetto `InvocationRequest` e passando l&#39;oggetto `ServiceClient`. Il metodo `invoke` restituisce un oggetto `InvocationReponse`.
 
    >[!NOTE]
    >
    >Un processo di lunga durata può essere invocato trasmettendo il valore `false`come quarto parametro del metodo `createInvocationRequest`. Passando il valore `false`*viene creata una richiesta asincrona.*
 
-1. Recuperare il valore restituito dal processo richiamando il metodo `InvocationReponse` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che specifica il nome del parametro di output. `getOutputParameter` In questa situazione, specificare `outDoc` ( `outDoc` è il nome del parametro di output per il processo `MyApplication/EncryptDocument`). Inserite il valore restituito in `Document`, come illustrato nell&#39;esempio seguente.
+1. Recuperare il valore restituito dal processo richiamando il metodo `getOutputParameter` dell&#39;oggetto `InvocationReponse` e passando un valore di stringa che specifica il nome del parametro di output. In questa situazione, specificare `outDoc` ( `outDoc` è il nome del parametro di output per il processo `MyApplication/EncryptDocument`). Inserite il valore restituito in `Document`, come illustrato nell&#39;esempio seguente.
 
    ```java
     InvocationResponse response = myServiceClient.invoke(request);
