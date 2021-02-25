@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2588'
 ht-degree: 0%
 
 ---
 
 
 # Assemblaggio di documenti PDF con segnalibri {#assembling-pdf-documents-with-bookmarks}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 È possibile assemblare un documento PDF contenente segnalibri. Ad esempio, si supponga di disporre di un documento PDF che non contenga segnalibri e si desidera modificarlo inserendo dei segnalibri. Il servizio Assembler consente di trasmettere un documento PDF che non contiene segnalibri e di recuperare un documento PDF contenente segnalibri.
 
@@ -322,7 +324,7 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
 
    * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` che contiene i documenti PDF risultanti.
    * Iterate l&#39;oggetto `Map` fino a trovare la chiave che corrisponde al nome del documento risultante. Quindi, inserire l&#39;elemento `value` del membro della matrice in un elemento `BLOB`.
-   * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo campo `BLOB` dell&#39;oggetto &lt;a1/>. `MTOM` Questo restituisce un array di byte che è possibile scrivere in un file PDF.
+   * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo campo `MTOM` dell&#39;oggetto `BLOB`. Questo restituisce un array di byte che è possibile scrivere in un file PDF.
 
 **Consulta anche**
 
