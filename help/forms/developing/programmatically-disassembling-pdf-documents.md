@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
 
 
 # Scomposizione programmatica dei documenti PDF {#programmatically-disassembling-pdf-documents}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 È possibile smontare un documento PDF trasferendolo al servizio Assembler. In genere, questa attività è utile quando il documento PDF è stato creato originariamente da molti documenti, ad esempio una raccolta di istruzioni. Nell&#39;illustrazione seguente, DocA è diviso in più documenti risultanti, dove il segnalibro di primo livello 1 in una pagina identifica l&#39;inizio di un nuovo documento risultante.
 
