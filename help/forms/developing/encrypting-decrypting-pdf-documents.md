@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '8244'
+source-wordcount: '8258'
 ht-degree: 0%
 
 ---
 
 
 # Cifratura e decrittografia di documenti PDF {#encrypting-and-decrypting-pdf-documents}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Informazioni sul servizio di cifratura**
 
@@ -138,11 +140,11 @@ Crittografare un documento PDF con una password utilizzando l&#39;API di cifratu
 1. Impostare le opzioni di esecuzione della crittografia.
 
    * Creare un oggetto `PasswordEncryptionOptionSpec` richiamandone il costruttore.
-   * Specificare le risorse del documento PDF da cifrare richiamando il metodo `PasswordEncryptionOptionSpec` dell&#39;oggetto `setEncryptOption` e passando un valore di enumerazione &lt;a2/> che specifica le risorse del documento da cifrare. `PasswordEncryptionOption` Ad esempio, per cifrare l&#39;intero documento PDF, inclusi i metadati e gli allegati, specificare `PasswordEncryptionOption.ALL`.
+   * Specificare le risorse del documento PDF da cifrare richiamando il metodo `setEncryptOption` dell&#39;oggetto `PasswordEncryptionOption` e passando un valore di enumerazione `PasswordEncryptionOptionSpec` che specifica le risorse del documento da cifrare. Ad esempio, per cifrare l&#39;intero documento PDF, inclusi i metadati e gli allegati, specificare `PasswordEncryptionOption.ALL`.
    * Creare un oggetto `java.util.List` che memorizza le autorizzazioni di cifratura utilizzando il costruttore `ArrayList`.
    * Specificate un&#39;autorizzazione richiamando il metodo `java.util.List` dell&#39;oggetto ‘s `add` e passando un valore di enumerazione che corrisponde all&#39;autorizzazione che desiderate impostare. Ad esempio, per impostare l&#39;autorizzazione che consente a un utente di copiare i dati presenti nel documento PDF, specificare `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. Ripetete questo passaggio per ogni autorizzazione da impostare.
    * Specificate l&#39;opzione di compatibilità  Acrobat richiamando il metodo `setCompatability` dell&#39;oggetto `PasswordEncryptionOptionSpec` e passando un valore di enumerazione che specifica il livello di compatibilità  Acrobat. Ad esempio, è possibile specificare `PasswordEncryptionCompatability.ACRO_7`.
-   * Specificare il valore della password che consente all&#39;utente di aprire il documento PDF crittografato richiamando il metodo `PasswordEncryptionOptionSpec` dell&#39;oggetto &lt;a1/> e passando un valore di stringa che rappresenta la password aperta.`setDocumentOpenPassword`
+   * Specificare il valore della password che consente all&#39;utente di aprire il documento PDF crittografato richiamando il metodo `setDocumentOpenPassword` dell&#39;oggetto `PasswordEncryptionOptionSpec` e passando un valore di stringa che rappresenta la password aperta.
    * Specificare il valore della password master che consente a un utente di rimuovere la cifratura dal documento PDF richiamando il metodo `PasswordEncryptionOptionSpec` dell&#39;oggetto `setPermissionPassword` e passando un valore di stringa che rappresenta la password master.
 
 1. Aggiungete la password.
@@ -342,7 +344,7 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 1. Fate riferimento al certificato.
 
    * Creare un oggetto `java.util.List` che memorizza le informazioni sulle autorizzazioni utilizzando il relativo costruttore.
-   * Specificare l&#39;autorizzazione associata al documento crittografato richiamando il metodo `java.util.List` dell&#39;oggetto `add` e passando un valore di enumerazione &lt;a2/> che rappresenta le autorizzazioni concesse all&#39;utente che apre il documento PDF protetto. `CertificateEncryptionPermissions` Ad esempio, per specificare tutte le autorizzazioni, passare `CertificateEncryptionPermissions.PKI_ALL_PERM`.
+   * Specificare l&#39;autorizzazione associata al documento crittografato richiamando il metodo `add` dell&#39;oggetto `CertificateEncryptionPermissions` e passando un valore di enumerazione `java.util.List` che rappresenta le autorizzazioni concesse all&#39;utente che apre il documento PDF protetto. Ad esempio, per specificare tutte le autorizzazioni, passare `CertificateEncryptionPermissions.PKI_ALL_PERM`.
    * Creare un oggetto `Recipient` utilizzando il relativo costruttore.
    * Creare un oggetto `java.io.FileInputStream` che rappresenta il certificato utilizzato per cifrare il documento PDF utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del certificato.
    * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream` che rappresenta il certificato.
@@ -356,12 +358,12 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 1. Impostare le opzioni di esecuzione della crittografia.
 
    * Creare un oggetto `CertificateEncryptionOptionSpec` richiamandone il costruttore.
-   * Specificare le risorse del documento PDF da cifrare richiamando il metodo `CertificateEncryptionOptionSpec` dell&#39;oggetto `setOption` e passando un valore di enumerazione &lt;a2/> che specifica le risorse del documento da cifrare. `CertificateEncryptionOption` Ad esempio, per cifrare l&#39;intero documento PDF, inclusi i metadati e gli allegati, specificare `CertificateEncryptionOption.ALL`.
-   * Specificate l&#39;opzione di compatibilità  Acrobat richiamando il metodo `CertificateEncryptionOptionSpec` dell&#39;oggetto `setCompat` e passando un valore di enumerazione &lt;a2/> che specifica il livello di compatibilità  Acrobat. `CertificateEncryptionCompatibility` Ad esempio, è possibile specificare `CertificateEncryptionCompatibility.ACRO_7`.
+   * Specificare le risorse del documento PDF da cifrare richiamando il metodo `setOption` dell&#39;oggetto `CertificateEncryptionOption` e passando un valore di enumerazione `CertificateEncryptionOptionSpec` che specifica le risorse del documento da cifrare. Ad esempio, per cifrare l&#39;intero documento PDF, inclusi i metadati e gli allegati, specificare `CertificateEncryptionOption.ALL`.
+   * Specificate l&#39;opzione di compatibilità  Acrobat richiamando il metodo `setCompat` dell&#39;oggetto `CertificateEncryptionCompatibility` e passando un valore di enumerazione `CertificateEncryptionOptionSpec` che specifica il livello di compatibilità  Acrobat. Ad esempio, è possibile specificare `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Creare un documento PDF cifrato da certificato.
 
-   Crittografare il documento PDF con un certificato richiamando il metodo `EncryptionServiceClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`encryptPDFUsingCertificates`
+   Crittografare il documento PDF con un certificato richiamando il metodo `encryptPDFUsingCertificates` dell&#39;oggetto `EncryptionServiceClient` e passando i valori seguenti:
 
    * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF da cifrare.
    * L&#39;oggetto `java.util.List` che memorizza le informazioni sul certificato.
@@ -433,12 +435,12 @@ Crittografare un documento PDF con un certificato utilizzando l&#39;API di cifra
 1. Impostare le opzioni di esecuzione della crittografia.
 
    * Creare un oggetto `CertificateEncryptionOptionSpec` utilizzando il relativo costruttore.
-   * Specificare le risorse del documento PDF da cifrare assegnando un valore di enumerazione `CertificateEncryptionOption` al membro di dati `CertificateEncryptionOptionSpec` dell&#39;oggetto `option`. Per cifrare l&#39;intero documento PDF, inclusi i relativi metadati e gli allegati, assegnare `CertificateEncryptionOption.ALL` al membro di dati.
+   * Specificare le risorse del documento PDF da cifrare assegnando un valore di enumerazione `CertificateEncryptionOption` al membro di dati `CertificateEncryptionOptionSpec` dell&#39;oggetto `option`. Per cifrare l&#39;intero documento PDF, inclusi i relativi metadati e i relativi allegati, assegnare `CertificateEncryptionOption.ALL` al membro di dati.
    * Specificate l&#39;opzione di compatibilità Acrobat  assegnando un valore di enumerazione `CertificateEncryptionCompatibility` al membro di dati `CertificateEncryptionOptionSpec` dell&#39;oggetto `compat`. Ad esempio, assegnare `CertificateEncryptionCompatibility.ACRO_7` a questo membro dati.
 
 1. Creare un documento PDF cifrato da certificato.
 
-   Crittografare il documento PDF con un certificato richiamando il metodo `EncryptionServiceService` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`encryptPDFUsingCertificates`
+   Crittografare il documento PDF con un certificato richiamando il metodo `encryptPDFUsingCertificates` dell&#39;oggetto `EncryptionServiceService` e passando i valori seguenti:
 
    * L&#39;oggetto `BLOB` che contiene il documento PDF da cifrare.
    * L&#39;array `Object` che memorizza le informazioni sul certificato.
@@ -1022,7 +1024,7 @@ Determinare il tipo di cifratura che protegge un documento PDF utilizzando l&#39
 
 1. Determinare il tipo di crittografia.
 
-   * Determinare il tipo di cifratura richiamando il metodo `EncryptionServiceClient` dell&#39;oggetto `getPDFEncryption` e passando l&#39;oggetto &lt;a2/> che contiene il documento PDF. `com.adobe.idp.Document` Questo metodo restituisce un oggetto `EncryptionTypeResult`.
+   * Determinare il tipo di cifratura richiamando il metodo `getPDFEncryption` dell&#39;oggetto `com.adobe.idp.Document` e passando l&#39;oggetto `EncryptionServiceClient` che contiene il documento PDF. Questo metodo restituisce un oggetto `EncryptionTypeResult`.
    * Richiamare il metodo `EncryptionTypeResult` dell&#39;oggetto `getEncryptionType`. Questo metodo restituisce un valore enum `EncryptionType` che specifica il tipo di crittografia. Ad esempio, se il documento PDF è protetto con crittografia basata su password, questo metodo restituisce `EncryptionType.PASSWORD`.
 
 **Consulta anche**
