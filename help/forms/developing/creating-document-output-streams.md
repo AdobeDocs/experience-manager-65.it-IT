@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19044'
 ht-degree: 0%
 
 ---
 
 
 # Creazione di flussi di output dei documenti {#creating-document-output-streams}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Informazioni su Output Service**
 
@@ -234,7 +236,7 @@ Creare un documento PDF utilizzando l&#39;API di output (Java):
 1. Impostare le opzioni di esecuzione del rendering.
 
    * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore.
-   * Memorizzare nella cache la struttura del modulo per migliorare le prestazioni del servizio Output richiamando l&#39;oggetto `RenderOptionsSpec` `setCacheEnabled` e passando &lt;a2/>.`true`
+   * Memorizzare nella cache la struttura del modulo per migliorare le prestazioni del servizio Output richiamando l&#39;oggetto `setCacheEnabled` `true` e passando `RenderOptionsSpec`.
 
    >[!NOTE]
    >
@@ -267,7 +269,7 @@ Creare un documento PDF utilizzando l&#39;API di output (Java):
 
    >[!NOTE]
    >
-   >È inoltre possibile creare un documento PDF richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/>. `generatePDFOutput2` (Vedere [Trasmissione di documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedere [Trasmissione di documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperare i risultati dell&#39;operazione.
 
@@ -334,11 +336,11 @@ Creare un documento PDF utilizzando l&#39;API di Output (servizio Web):
 
    >[!NOTE]
    >
-   >Non è possibile impostare la versione del documento PDF utilizzando il metodo `setPdfVersion` dell&#39;oggetto `RenderOptionsSpec` se il documento di input è un modulo Acrobat  (un modulo creato in  Acrobat) o un documento XFA firmato o certificato. Il documento PDF di output conserva la versione PDF originale. Allo stesso modo, non è possibile impostare l&#39;opzione relativa ai tag  Adobe PDF richiamando il metodo `RenderOptionsSpec`* dell&#39;oggetto &lt;a1/> se il documento di input è un modulo Acrobat  o un documento XFA firmato o certificato.*`setTaggedPDF`
+   >Non è possibile impostare la versione del documento PDF utilizzando il metodo `setPdfVersion` dell&#39;oggetto `RenderOptionsSpec` se il documento di input è un modulo Acrobat  (un modulo creato in  Acrobat) o un documento XFA firmato o certificato. Il documento PDF di output conserva la versione PDF originale. Allo stesso modo, non è possibile impostare l&#39;opzione relativa ai tag  Adobe PDF richiamando il metodo `setTaggedPDF`* dell&#39;oggetto `RenderOptionsSpec` se il documento di input è un modulo Acrobat  o un documento XFA firmato o certificato.*
 
    >[!NOTE]
    >
-   >Non è possibile impostare l&#39;opzione PDF linearizzato utilizzando il membro dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. `linearizedPDF` (Vedere [Firma digitale di documenti PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Non è possibile impostare l&#39;opzione PDF linearizzato utilizzando il membro dell&#39;oggetto `linearizedPDF` se il documento PDF di input è certificato o firmato digitalmente. `RenderOptionsSpec` (Vedere [Firma digitale di documenti PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generare un documento PDF.
 
@@ -360,12 +362,12 @@ Creare un documento PDF utilizzando l&#39;API di Output (servizio Web):
 
    >[!NOTE]
    >
-   >È inoltre possibile creare un documento PDF richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/>. `generatePDFOutput2` (Vedere [Trasmissione di documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedere [Trasmissione di documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperare i risultati dell&#39;operazione.
 
    * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta un percorso di file XML contenente i dati dei risultati. Accertatevi che l’estensione del nome del file sia .xml.
-   * Creare un array di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` compilato con i dati dei risultati dal metodo `OutputServiceService` dell&#39;oggetto `generatePDFOutput` (l&#39;ottavo parametro). Compilare l&#39;array di byte ottenendo il valore dell&#39;oggetto `BLOB` `MTOM` dell&#39;oggetto &lt;a1/>.`field`
+   * Creare un array di byte che memorizza il contenuto dei dati dell&#39;oggetto `BLOB` compilato con i dati dei risultati dal metodo `OutputServiceService` dell&#39;oggetto `generatePDFOutput` (l&#39;ottavo parametro). Compilare l&#39;array di byte ottenendo il valore dell&#39;oggetto `MTOM` `field` dell&#39;oggetto `BLOB`.
    * Creare un oggetto `System.IO.BinaryWriter` richiamandone il costruttore e passando l&#39;oggetto `System.IO.FileStream`.
    * Scrivere il contenuto dell&#39;array di byte nel file XML richiamando il metodo `System.IO.BinaryWriter` dell&#39;oggetto `Write` e passando l&#39;array di byte.
 
@@ -389,7 +391,7 @@ La specifica PDF/A-1 è costituita da due livelli di conformità, vale a dire a 
 
 Sebbene PDF/A sia lo standard per l&#39;archiviazione di documenti PDF, non è obbligatorio utilizzare i PDF/A per l&#39;archiviazione se un documento PDF standard soddisfa le esigenze aziendali. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo, oltre a soddisfare i requisiti di conservazione dei documenti. Ad esempio, un URL non può essere incorporato in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
 
-L&#39;organizzazione deve valutare le proprie esigenze, il tempo di conservazione del documento, le dimensioni del file e determinare la propria strategia di archiviazione. È possibile determinare a livello di programmazione se un documento PDF è conforme allo standard PDF/A utilizzando il servizio DocConverter. (Vedere [Determinazione programmatica della conformità PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+L&#39;organizzazione deve valutare le proprie esigenze, la durata di conservazione del documento, le dimensioni del file e determinare la propria strategia di archiviazione. È possibile determinare a livello di programmazione se un documento PDF è conforme allo standard PDF/A utilizzando il servizio DocConverter. (Vedere [Determinazione programmatica della conformità PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 Un documento PDF/A deve utilizzare il font specificato nella struttura del modulo e i font non possono essere sostituiti. Di conseguenza, se un font che si trova all&#39;interno di un documento PDF non è disponibile nel sistema operativo host (OS), si verifica un&#39;eccezione.
 
@@ -451,7 +453,7 @@ Il valore `PDFARevisionNumber` si riferisce al numero di revisione di un documen
 
 >[!NOTE]
 >
->Durante la creazione di un documento PDF/A 1A non è possibile impostare l&#39;opzione  Adobe PDF con tag su `false`. PDF/A 1A sarà sempre un documento PDF con tag. Inoltre, non è possibile impostare l&#39;opzione  Adobe PDF con tag su `true` durante la creazione di un documento PDF/A 1B. PDF/A 1B sarà sempre un documento PDF senza tag.
+>Durante la creazione di un documento PDF/A 1A non è possibile impostare l&#39;opzione Adobe PDF con tag su `false`. PDF/A 1A sarà sempre un documento PDF con tag. Inoltre, non è possibile impostare l&#39;opzione  Adobe PDF con tag su `true` durante la creazione di un documento PDF/A 1B. PDF/A 1B sarà sempre un documento PDF senza tag.
 
 **Genera un documento PDF/A**
 
@@ -508,7 +510,7 @@ Creare un documento PDF/A utilizzando l&#39;API di output (Java):
 
 1. Generare un documento PDF/A.
 
-   Creare un documento PDF/A richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`generatePDFOutput`
+   Creare un documento PDF/A richiamando il metodo `generatePDFOutput` dell&#39;oggetto `OutputClient` e passando i seguenti valori:
 
    * Un valore di enumerazione `TransformationFormat`. Per generare un documento PDF/A, specificare `TransformationFormat.PDFA`.
    * Una stringa che specifica il nome della struttura del modulo.
@@ -717,7 +719,7 @@ Trasferite un documento recuperato da Content Services (obsoleto) utilizzando il
    Richiamare il metodo `OutputClient` dell&#39;oggetto `generatePDFOutput2` e trasmettere i seguenti valori:
 
    * Un valore di enumerazione `TransformationFormat`. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
    * Un oggetto `com.adobe.idp.Document` che rappresenta la struttura del modulo (utilizzare l&#39;istanza restituita dal metodo `CRCResult` dell&#39;oggetto `getDocument`).
    * Un oggetto `PDFOutputOptionsSpec` che contiene le opzioni di esecuzione PDF.
    * Un oggetto `RenderOptionsSpec` che contiene le opzioni di rendering in fase di esecuzione.
@@ -793,7 +795,7 @@ Trasferite un documento recuperato da Content Services (obsoleto) utilizzando il
    Richiamare il metodo `OutputServiceClient` dell&#39;oggetto `generatePDFOutput2` e trasmettere i seguenti valori:
 
    * Un valore di enumerazione `TransformationFormat`. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
    * Un oggetto `BLOB` che rappresenta la struttura del modulo (utilizzare l&#39;istanza `BLOB` restituita da Content Services (obsoleto)).
    * Un oggetto `PDFOutputOptionsSpec` che contiene le opzioni di esecuzione PDF.
    * Un oggetto `RenderOptionsSpec` che contiene le opzioni di rendering in fase di esecuzione.
@@ -911,7 +913,7 @@ Trasmettere un documento recuperato dall&#39;archivio utilizzando il servizio Ou
    Richiamare il metodo `OutputClient` dell&#39;oggetto `generatePDFOutput2` e trasmettere i seguenti valori:
 
    * Un valore di enumerazione `TransformationFormat`. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini. Esempio, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini. Esempio, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
    * Un oggetto `com.adobe.idp.Document` che rappresenta la struttura del modulo (utilizzare l&#39;istanza restituita dal metodo `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent`).
    * Un oggetto `PDFOutputOptionsSpec` che contiene le opzioni di esecuzione PDF.
    * Un oggetto `RenderOptionsSpec` che contiene le opzioni di rendering in fase di esecuzione.
@@ -1406,7 +1408,7 @@ Per stampare un documento contenente dati, è necessario fare riferimento a un&#
 * **Copie**: Specifica il numero di copie da inviare alla stampante. Il valore predefinito è 1.
 * **Anello**: Quando si utilizza uno stapler, viene impostata un&#39;opzione XCI. Questa opzione può essere specificata nel modello di configurazione dall&#39;elemento di base e viene utilizzata solo per le stampanti PS e PCL.
 * **OutputJog**: L&#39;opzione XCI viene impostata quando le pagine di output devono essere bloccate (fisicamente spostate nel vassoio di output). Questa opzione è disponibile solo per le stampanti PS e PCL.
-* **OutputBin**: Valore XCI utilizzato per consentire al driver di stampa di selezionare il raccoglitore di uscita appropriato.
+* **OutputBin**: Valore XCI utilizzato per consentire al driver di stampa di selezionare il bin di output appropriato.
 
 >[!NOTE]
 >
@@ -1539,7 +1541,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
 1. Recuperare un documento da stampare
 
-   * Recuperare un documento da stampare richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`generatePrintedOutput`
+   * Recuperare un documento da stampare richiamando il metodo `generatePrintedOutput` dell&#39;oggetto `OutputClient` e passando i seguenti valori:
 
       * Un valore di enumerazione `PrintFormat` che specifica il flusso di stampa. Ad esempio, per creare un flusso di stampa PostScript, passare `PrintFormat.PostScript`.
       * Una stringa che specifica il nome della struttura del modulo.
@@ -1555,7 +1557,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
 1. Inviare il flusso di stampa a una stampante di rete
 
-   Inviare il flusso di stampa a una stampante di rete richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`sendToPrinter`
+   Inviare il flusso di stampa a una stampante di rete richiamando il metodo `sendToPrinter` dell&#39;oggetto `OutputClient` e passando i seguenti valori:
 
    * Un oggetto `com.adobe.idp.Document` che rappresenta il flusso di stampa da inviare alla stampante.
    * Un valore di enumerazione `PrinterProtocol` che specifica il protocollo della stampante da utilizzare. Ad esempio, per specificare il protocollo SharedPrinter, passare `PrinterProtocol.SharedPrinter`.
@@ -1595,7 +1597,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
    * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare i dati del modulo.
    * Creare un oggetto `System.IO.FileStream` richiamandone il costruttore. Passa un valore di stringa che specifica la posizione del file XML che contiene i dati del modulo.
-   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la lunghezza dell&#39;array di byte ottenendo la proprietà `System.IO.FileStream` dell&#39;oggetto &lt;a1/>.`Length`
+   * Creare un array di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. Determinare la lunghezza dell&#39;array di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
    * Compilare l&#39;array di byte con i dati del flusso richiamando il metodo `Read` dell&#39;oggetto `System.IO.FileStream` e passando l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` con il contenuto dell&#39;array di byte.
 
@@ -1609,7 +1611,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
 1. Recuperare un documento da stampare.
 
-   * Recuperare un documento da stampare richiamando il metodo `OutputServiceService` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`generatePrintedOutput`
+   * Recuperare un documento da stampare richiamando il metodo `generatePrintedOutput` dell&#39;oggetto `OutputServiceService` e passando i seguenti valori:
 
       * Un valore di enumerazione `PrintFormat` che specifica il flusso di stampa. Ad esempio, per creare un flusso di stampa PostScript, passare `PrintFormat.PostScript`.
       * Una stringa che specifica il nome della struttura del modulo.
@@ -1625,7 +1627,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
 1. Inviare il flusso di stampa a una stampante di rete.
 
-   Inviare il flusso di stampa a una stampante di rete richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/> e passando i seguenti valori:`sendToPrinter`
+   Inviare il flusso di stampa a una stampante di rete richiamando il metodo `sendToPrinter` dell&#39;oggetto `OutputClient` e passando i seguenti valori:
 
    * Un oggetto `BLOB` che rappresenta il flusso di stampa da inviare alla stampante.
    * Un valore di enumerazione `PrinterProtocol` che specifica il protocollo della stampante da utilizzare. Ad esempio, per specificare il protocollo SharedPrinter, passare `PrinterProtocol.SharedPrinter`.
@@ -1748,7 +1750,7 @@ Per creare correttamente più file basati su un&#39;origine dati XML, è necessa
 
 * **Molti file**: Specifica se il servizio Output crea uno o più documenti. Potete specificare true o false. Per creare un documento separato per ciascun record di dati nell&#39;origine dati XML, specificare true.
 * **URI** file: Specifica la posizione dei file generati dal servizio Output. Ad esempio, si supponga di specificare C:\\Adobe\forms\Loan.pdf. In questa situazione, il servizio Output crea un file denominato Loan.pdf e inserisce il file nella cartella C:\\Adobe\forms folder. In presenza di più file, i nomi dei file sono Loan0001.pdf, Loan0002.pdf, Loan0003.pdf e così via. Se si specifica un percorso di file, i file vengono inseriti sul server, non sul computer client.
-* **Nome** record: Specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, nell&#39;origine dati XML di esempio visualizzata in precedenza in questa sezione, l&#39;elemento XML che separa i record di dati è denominato `LoanRecord`. Anziché impostare l&#39;opzione di runtime Nome record, potete impostare il livello di record assegnandogli un valore numerico che indica il livello dell&#39;elemento che contiene i record di dati. Tuttavia, potete impostare solo il Nome record o il Livello record. Non è possibile impostare entrambi i valori.
+* **Nome** record: Specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, nell&#39;origine dati XML di esempio visualizzata in precedenza in questa sezione, l&#39;elemento XML che separa i record di dati è denominato `LoanRecord`. Anziché impostare l&#39;opzione di runtime Nome record, potete impostare il livello di record assegnandogli un valore numerico che indica il livello di elemento contenente i record di dati. Tuttavia, potete impostare solo il Nome record o il Livello record. Non è possibile impostare entrambi i valori.
 
 **Impostazione delle opzioni di esecuzione del rendering**
 
@@ -1824,14 +1826,14 @@ Creare più file PDF utilizzando l&#39;API di output (Java):
 1. Impostazione delle opzioni di esecuzione PDF
 
    * Creare un oggetto `PDFOutputOptionsSpec` utilizzando il relativo costruttore.
-   * Impostate l&#39;opzione Molti file richiamando il metodo `PDFOutputOptionsSpec` dell&#39;oggetto &lt;a1/>. `setGenerateManyFiles` Ad esempio, passare il valore `true` per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. (Se si passa `false`, il servizio Output genera un singolo documento PDF contenente tutti i record).
+   * Impostate l&#39;opzione Molti file richiamando il metodo `setGenerateManyFiles` dell&#39;oggetto `PDFOutputOptionsSpec`. Ad esempio, passare il valore `true` per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. (Se si passa `false`, il servizio Output genera un singolo documento PDF contenente tutti i record).
    * Impostare l&#39;opzione URI del file richiamando il metodo `setFileUri` dell&#39;oggetto `PDFOutputOptionsSpec` e passando un valore di stringa che specifica la posizione dei file generati dal servizio Output. L&#39;opzione URI file è relativa al server applicazione J2EE che ospita  AEM Forms, non al computer client.
    * Impostare l&#39;opzione Nome record richiamando il metodo `setRecordName` dell&#39;oggetto `OutputOptionsSpec` e passando un valore di stringa che specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, si consideri l&#39;origine dati XML mostrata in precedenza in questa sezione. Il nome dell&#39;elemento XML che separa i record di dati è LoanRecord).
 
 1. Impostazione delle opzioni di esecuzione del rendering
 
    * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore.
-   * Memorizzare nella cache la struttura del modulo per migliorare le prestazioni del servizio Output richiamando l&#39;oggetto `RenderOptionsSpec` dell&#39;oggetto `setCacheEnabled` e passando un valore &lt;a2/> di `Boolean`.`true`
+   * Memorizzare nella cache la struttura del modulo per migliorare le prestazioni del servizio Output richiamando l&#39;oggetto `setCacheEnabled` dell&#39;oggetto `Boolean` e passando un valore `RenderOptionsSpec` di `true`.
 
 1. Generare più file PDF
 
@@ -1897,7 +1899,7 @@ Creare più file PDF utilizzando l&#39;API di Output (servizio Web):
 1. Impostare le opzioni di esecuzione PDF.
 
    * Creare un oggetto `PDFOutputOptionsSpec` utilizzando il relativo costruttore.
-   * Impostate l&#39;opzione Molti file assegnando un valore booleano al membro di dati `OutputOptionsSpec` dell&#39;oggetto. `generateManyFiles` Ad esempio, assegnare il valore `true` a questo membro dati per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. Se si assegna `false` a questo membro di dati, il servizio Output genera un singolo PDF contenente tutti i record.
+   * Impostate l&#39;opzione Molti file assegnando un valore booleano al membro di dati `generateManyFiles` dell&#39;oggetto. `OutputOptionsSpec` Ad esempio, assegnare il valore `true` a questo membro dati per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. Se si assegna `false` a questo membro di dati, il servizio Output genera un singolo PDF contenente tutti i record.
    * Impostate l&#39;opzione URI del file assegnando un valore di stringa che specifica la posizione dei file generati dal servizio Output al membro di dati `OutputOptionsSpec` dell&#39;oggetto `fileURI`. L&#39;opzione URI file è relativa al server applicazione J2EE che ospita  AEM Forms, non al computer client.
    * Impostare l&#39;opzione del nome del record assegnando un valore di stringa che specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati dal membro `OutputOptionsSpec` dell&#39;oggetto `recordName`.
    * Impostare l&#39;opzione delle copie assegnando un valore intero che specifica il numero di copie generato dal servizio Output al membro di dati `OutputOptionsSpec` dell&#39;oggetto `copies`.
@@ -2065,7 +2067,7 @@ Create le regole di ricerca utilizzando l&#39;API di output (Java):
 
 1. Generare un documento PDF.
 
-   Generare un documento PDF basato su più strutture del modulo richiamando il metodo `OutputClient` dell&#39;oggetto &lt;a1/> e passando i valori seguenti:`generatePDFOutput`
+   Generare un documento PDF basato su più strutture del modulo richiamando il metodo `generatePDFOutput` dell&#39;oggetto `OutputClient` e passando i valori seguenti:
 
    * Un valore di enumerazione `TransformationFormat`. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
    * Una stringa che specifica il nome della struttura del modulo predefinita. ovvero la struttura del modulo utilizzata se non si trova un pattern di testo.
@@ -2160,7 +2162,7 @@ Create le regole di ricerca utilizzando l&#39;API di Output (servizio Web):
 
    >[!NOTE]
    >
-   >Non è possibile impostare l&#39;opzione PDF linearizzato utilizzando il membro dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. `linearizedPDF` Per ulteriori informazioni, vedere [Firma digitale di documenti PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
+   >Non è possibile impostare l&#39;opzione PDF linearizzato utilizzando il membro dell&#39;oggetto `linearizedPDF` se il documento PDF di input è certificato o firmato digitalmente. `RenderOptionsSpec` Per ulteriori informazioni, vedere [Firma digitale di documenti PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
 
 1. Generazione di un documento PDF
 
