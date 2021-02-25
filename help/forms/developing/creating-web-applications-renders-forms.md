@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
 
 
 # Creazione di applicazioni Web per il rendering di Forms {#creating-web-applications-thatrenders-forms}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Creazione di applicazioni Web per il rendering di Forms {#creating-web-applications-that-renders-forms}
 
@@ -67,7 +69,7 @@ I file di dati XML utilizzati dall&#39;applicazione Web sono stati spostati dall
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
-Per creare un&#39;applicazione basata sul Web che esegue il rendering di moduli basati sui frammenti, procedere come segue:
+Per creare un&#39;applicazione basata sul Web che esegue il rendering di moduli basati su frammenti, procedere come segue:
 
 1. Crea un nuovo progetto Web.
 1. Creare una logica di applicazione Java che rappresenta il servlet Java.
