@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
 
 # Ottimizzazione delle prestazioni del servizio Forms {#optimizing-the-performance-of-theforms-service}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Ottimizzazione delle prestazioni del servizio Forms {#optimizing-the-performance-of-the-forms-service}
 
@@ -97,7 +99,7 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
 1. Impostazione delle opzioni di esecuzione delle prestazioni
 
    * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
-   * Impostare l&#39;opzione della cache del modulo richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto `setCacheEnabled` e passando &lt;a2/>.`true`
+   * Impostare l&#39;opzione della cache del modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `true` e passando `PDFFormRenderSpec`.
    * Impostare l&#39;opzione linearizzata richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto `setLinearizedPDF` e passando `true.`
 
 1. Eseguire il rendering del modulo
@@ -146,7 +148,7 @@ Eseguire il rendering di un modulo con prestazioni ottimizzate utilizzando l&#39
    * Creare un oggetto `PDFFormRenderSpec` utilizzando il relativo costruttore.
    * Impostare l&#39;opzione della cache del modulo richiamando il metodo `setCacheEnabled` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
    * Impostate l&#39;opzione standalone richiamando il metodo `setStandAlone` dell&#39;oggetto `PDFFormRenderSpec` e passando true.
-   * Impostate l&#39;opzione linearizzata richiamando il metodo `PDFFormRenderSpec` dell&#39;oggetto e passando true.`setLinearizedPDF`
+   * Impostate l&#39;opzione linearizzata richiamando il metodo `setLinearizedPDF` dell&#39;oggetto e passando true.`PDFFormRenderSpec`
 
 1. Eseguire il rendering del modulo
 
