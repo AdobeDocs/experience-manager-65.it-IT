@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
 
 
 # Utilizzo di XMP Utilities {#working-with-xmp-utilities}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 **Informazioni sul servizio Utilità XMP**
 
@@ -281,9 +283,9 @@ Esportate XMP metadati utilizzando l&#39;API XMP Utilities (Java):
 
 1. Richiamo dell’operazione di importazione dei metadati XMP
 
-   Per esaminare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportMetadata` e passare un oggetto &lt;a2/> che rappresenta il file PDF. `com.adobe.idp.Document` Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
+   Per esaminare i metadati XMP, richiamare il metodo `exportMetadata` dell&#39;oggetto `com.adobe.idp.Document` e passare un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
 
-   Per recuperare e salvare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportXMP` e trasmettere un oggetto &lt;a2/> che rappresenta il file PDF. `com.adobe.idp.Document` Il metodo restituisce un oggetto `com.adobe.idp.Document` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
+   Per recuperare e salvare i metadati XMP, richiamare il metodo `exportXMP` dell&#39;oggetto `com.adobe.idp.Document` e trasmettere un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `com.adobe.idp.Document` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
 
 **Consulta anche**
 
@@ -308,9 +310,9 @@ Esportate XMP metadati utilizzando l&#39;API XMP Utilities (servizio Web):
 
 1. Richiamo dell’operazione di importazione dei metadati XMP
 
-   Per esaminare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportMetadata` e passare un oggetto &lt;a2/> che rappresenta il file PDF. `BLOB` Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
+   Per esaminare i metadati XMP, richiamare il metodo `exportMetadata` dell&#39;oggetto `BLOB` e passare un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `XMPUtilityMetadata` che contiene i metadati recuperati.
 
-   Per recuperare e salvare i metadati XMP, richiamare il metodo `XMPUtilityServiceClient` dell&#39;oggetto `exportXMP` e trasmettere un oggetto &lt;a2/> che rappresenta il file PDF. `BLOB` Il metodo restituisce un oggetto `BLOB` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
+   Per recuperare e salvare i metadati XMP, richiamare il metodo `exportXMP` dell&#39;oggetto `BLOB` e trasmettere un oggetto `XMPUtilityServiceClient` che rappresenta il file PDF. Il metodo restituisce un oggetto `BLOB` che contiene i metadati recuperati, che potete successivamente salvare su disco come file XML.
 
 **Consulta anche**
 
