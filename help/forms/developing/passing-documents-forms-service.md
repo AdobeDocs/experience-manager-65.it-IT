@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
 
 # Invio di documenti al servizio Forms {#passing-documents-to-the-formsservice}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Il servizio  AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere sui browser Web, per raccogliere informazioni dagli utenti. Un modulo PDF interattivo si basa su una struttura del modulo che in genere viene salvata come file XDP e creata in Designer. A partire da  AEM Forms, è possibile trasmettere al servizio Forms un oggetto `com.adobe.idp.Document` contenente la struttura del modulo. Il servizio Forms esegue quindi il rendering della struttura del modulo situata nell&#39;oggetto `com.adobe.idp.Document`.
 
