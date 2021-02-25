@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4188'
 ht-degree: 1%
 
 ---
 
 
 # Rendering di Forms come HTML {#rendering-forms-as-html}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 Il servizio Forms esegue il rendering dei moduli come HTML in risposta a una richiesta HTTP inviata da un browser Web. Il rendering di un modulo come HTML apporta un vantaggio in quanto il computer in cui si trova il browser Web del client non richiede  Adobe Reader,  Acrobat o Flash Player (per Guide modulo (obsoleto)).
 
@@ -31,7 +33,7 @@ Per eseguire il rendering di un modulo come HTML, la struttura del modulo deve e
 
 >[!NOTE]
 >
->Quando si esegue il rendering di un modulo che contiene immagini TIFF utilizzando i metodi `FormServiceClient` dell&#39;oggetto &lt;a1/> e `(Deprecated) renderHTMLForm` dell&#39;oggetto, le immagini TIFF non sono visibili nel modulo HTML di cui è stato eseguito il rendering, visualizzato nei browser Internet Explorer o Mozilla Firefox. `renderHTMLForm2` Questi browser non forniscono supporto nativo per le immagini TIFF.
+>Quando si esegue il rendering di un modulo che contiene immagini TIFF utilizzando i metodi `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormServiceClient` e `renderHTMLForm2` dell&#39;oggetto, le immagini TIFF non sono visibili nel modulo HTML di cui è stato eseguito il rendering, visualizzato nei browser Internet Explorer o Mozilla Firefox. Questi browser non forniscono supporto nativo per le immagini TIFF.
 
 ## Pagine HTML {#html-pages}
 
@@ -96,7 +98,7 @@ In un modulo con più pagine, le modifiche apportate da JavaScript a una pagina 
 
 È possibile richiamare script personalizzati prima di inviare il modulo. Questa funzione funziona su tutti i browser disponibili. Tuttavia, può essere utilizzato solo quando gli utenti eseguono il rendering del modulo HTML con la proprietà `Output Type` impostata su `Form Body`. Non funzionerà se `Output Type` è `Full HTML`. Per i passaggi necessari per configurare questa funzione, fare riferimento alla sezione Configurazione dei moduli nella guida di amministrazione.
 
-È innanzitutto necessario definire una funzione di callback chiamata prima di inviare il modulo, dove il nome della funzione è `_user_onsubmit`. Si presume che la funzione non genererà alcuna eccezione, o in caso contrario, che l&#39;eccezione venga ignorata. Si consiglia di inserire la funzione JavaScript nella sezione head del codice html; tuttavia, è possibile dichiararlo ovunque prima della fine dei tag script che includono `xfasubset.js`.
+È innanzitutto necessario definire una funzione di callback chiamata prima di inviare il modulo, dove il nome della funzione è `_user_onsubmit`. Si presume che la funzione non genererà alcuna eccezione, o in caso contrario, che l&#39;eccezione venga ignorata. Si consiglia di inserire la funzione JavaScript nella sezione head del html; tuttavia, è possibile dichiararlo ovunque prima della fine dei tag script che includono `xfasubset.js`.
 
 Quando formserver esegue il rendering di un XDP contenente un elenco a discesa, oltre alla creazione dell&#39;elenco a discesa, crea anche due campi di testo nascosti. Questi campi di testo memorizzano i dati dell&#39;elenco a discesa (uno memorizza il nome visualizzato delle opzioni e l&#39;altro memorizza il valore per le opzioni). Pertanto, ogni volta che un utente invia il modulo, vengono inviati tutti i dati dell&#39;elenco a discesa. Presupponendo che non si desideri inviare la maggior parte dei dati ogni volta, è possibile scrivere uno script personalizzato per disattivarlo. Ad esempio: Il nome dell&#39;elenco a discesa è `drpOrderedByStateProv` e viene racchiuso nell&#39;intestazione del sottomodulo. Il nome dell&#39;elemento di input HTML sarà `header[0].drpOrderedByStateProv[0]`. Il nome dei campi nascosti che archiviano e inviano i dati del menu a discesa ha i seguenti nomi: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -271,9 +273,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
 1. Impostazione delle opzioni di runtime HTML
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore stringa che specifica il valore delle impostazioni internazionali. `setLocale` (Questa è un&#39;impostazione opzionale).
-   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setOutputType` e passare &lt;a2/>. `OutputType.FullHTMLTags` (Questa è un&#39;impostazione opzionale).
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passare un valore stringa che specifica il valore delle impostazioni internazionali. (Questa è un&#39;impostazione opzionale).
+   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `setOutputType` dell&#39;oggetto `OutputType.FullHTMLTags` e passare `HTMLRenderSpec`. (Questa è un&#39;impostazione opzionale).
 
    >[!NOTE]
    Il rendering Forms non viene eseguito correttamente in HTML quando l&#39;opzione `StandAlone` è `true` e l&#39; `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il valore `ApplicationWebRoot` viene specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm`). Se `ApplicationWebRoot` è un altro server da quello che ospita  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
@@ -328,9 +330,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API di Forms (servizio
 1. Impostazione delle opzioni di runtime HTML
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setHTMLToolbar` e passare un valore enum &lt;a2/>. `HTMLToolbar` Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto &lt;a1/> e passare un valore stringa che specifica il valore delle impostazioni internazionali. `setLocale` Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `HTMLRenderSpec` dell&#39;oggetto `setOutputType` e passare &lt;a2/>.`OutputType.FullHTMLTags`
+   * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo `setHTMLToolbar` dell&#39;oggetto `HTMLToolbar` e passare un valore enum `HTMLRenderSpec`. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo `setLocale` dell&#39;oggetto `HTMLRenderSpec` e passare un valore stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, vedere [ Guida di riferimento delle API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo `setOutputType` dell&#39;oggetto `OutputType.FullHTMLTags` e passare `HTMLRenderSpec`.
 
    >[!NOTE]
    Il rendering Forms non viene eseguito correttamente in HTML quando l&#39;opzione `StandAlone` è `true` e l&#39; `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE che ospita  AEM Forms (il valore `ApplicationWebRoot` viene specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm`). Se `ApplicationWebRoot` è un altro server da quello che ospita  AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l’URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
