@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
 
 
 # Uso dei moduli con codice a barre {#working-with-barcoded-forms}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 ## Informazioni sul servizio moduli codici a barre {#about-the-barcoded-forms-service}
 
@@ -160,7 +162,7 @@ Decodificare i dati del modulo utilizzando l&#39;API dei moduli con codice a bar
 
    * Iterate l&#39;oggetto `java.util.List` per ottenere ogni oggetto `org.w3c.dom.Document` presente nell&#39;elenco.
    * Per ciascun elemento nell&#39;elenco, convertire l&#39;oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document`. (La logica dell&#39;applicazione che converte un oggetto `org.w3c.dom.Document` in un oggetto `com.adobe.idp.Document` viene mostrata nei dati del modulo con codice a barre decodifica utilizzando l&#39;esempio di API Java).
-   * Salvare i dati XML come file XML richiamando l&#39;oggetto `com.adobe.idp.Document` e passando un oggetto File che rappresenta il file XML.`copyToFile`
+   * Salvare i dati XML come file XML richiamando l&#39;oggetto `copyToFile` e passando un oggetto File che rappresenta il file XML.`com.adobe.idp.Document`
 
 **Consulta anche**
 
