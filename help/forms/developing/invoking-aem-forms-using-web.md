@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9990'
+source-wordcount: '10004'
 ht-degree: 0%
 
 ---
 
 
 # Chiamata  AEM Forms tramite servizi Web {#invoking-aem-forms-using-web-services}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 La maggior parte  servizi AEM Forms nel contenitore di servizi sono configurati per esporre un servizio Web, con il supporto completo per la generazione del linguaggio WSDL (Web Service Definition Language). In altre parole, potete creare oggetti proxy che utilizzano lo stack SOAP nativo di un servizio AEM Forms . Di conseguenza,  servizi AEM Forms possono scambiare ed elaborare i seguenti messaggi SOAP:
 
@@ -1120,7 +1122,7 @@ Dopo aver creato un riferimento Web, è possibile utilizzare nel progetto .NET i
 1. Richiamare il metodo `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` e passare l&#39;oggetto `Microsoft.Web.Services2.Dime.DimeAttachment`.
 1. Richiamare il processo `MyApplication/EncryptDocument` richiamando il metodo `EncryptDocumentServiceWse` dell&#39;oggetto `invoke` e passando l&#39;oggetto `BLOB` che contiene l&#39;allegato DIME. Questo processo restituisce un documento PDF crittografato all&#39;interno di un oggetto `BLOB`.
 1. Ottenere il valore dell&#39;identificatore allegato ottenendo il valore del membro di dati `BLOB` dell&#39;oggetto `attachmentID` restituito.
-1. Per ottenere il documento PDF crittografato, è possibile utilizzare l&#39;identificatore allegato in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e spostarsi tra gli allegati presenti in &lt;a0/>.
+1. Per ottenere il documento PDF crittografato, è possibile utilizzare l&#39;identificatore allegato in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e spostarsi tra gli allegati presenti in .
 1. Ottenere un oggetto `System.IO.Stream` ottenendo il valore del membro di dati `Attachment` dell&#39;oggetto `Stream`.
 1. Create un array di byte e passate tale array di byte al metodo `System.IO.Stream` dell&#39;oggetto `Read`. Questo metodo popola l&#39;array di byte con un flusso di dati che rappresenta il documento PDF crittografato.
 1. Creare un oggetto `System.IO.FileStream` richiamandone il costruttore e passando un valore di stringa che rappresenta una posizione di file PDF. Questo oggetto rappresenta il documento PDF crittografato.
@@ -1155,7 +1157,7 @@ Per richiamare il servizio `MyApplication/EncryptDocument` (incorporato in Workb
 1. Recuperare il documento PDF da inviare al servizio `MyApplication/EncryptDocument` creando un oggetto `java.io.File`. Passa un valore di stringa che specifica la posizione del documento PDF.
 1. Creare un oggetto `javax.activation.DataHandler` utilizzando il relativo costruttore e passando un oggetto `javax.activation.FileDataSource`. È possibile creare l&#39;oggetto `javax.activation.FileDataSource` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.File` che rappresenta il documento PDF.
 1. Creare un oggetto `org.apache.axis.attachments.AttachmentPart` utilizzando il relativo costruttore e passando l&#39;oggetto `javax.activation.DataHandler`.
-1. Allegare l&#39;allegato richiamando il metodo `EncryptDocumentSoapBindingStub` dell&#39;oggetto `addAttachment` e passando l&#39;oggetto &lt;a2/>.`org.apache.axis.attachments.AttachmentPart`
+1. Allegare l&#39;allegato richiamando il metodo `addAttachment` dell&#39;oggetto `org.apache.axis.attachments.AttachmentPart` e passando l&#39;oggetto `EncryptDocumentSoapBindingStub`.
 1. Creare un oggetto `BLOB` utilizzando il relativo costruttore. Compilare l&#39;oggetto `BLOB` con il valore dell&#39;identificatore allegato richiamando il metodo `BLOB` dell&#39;oggetto `setAttachmentID` e passando il valore dell&#39;identificatore allegato. Questo valore può essere ottenuto richiamando il metodo `org.apache.axis.attachments.AttachmentPart` dell&#39;oggetto `getContentId`.
 1. Richiamare il processo `MyApplication/EncryptDocument` richiamando il metodo `EncryptDocumentSoapBindingStub` dell&#39;oggetto `invoke`. Passare l&#39;oggetto `BLOB` che contiene l&#39;allegato DIME. Questo processo restituisce un documento PDF crittografato all&#39;interno di un oggetto `BLOB`.
 1. Ottenere il valore dell&#39;identificatore allegato richiamando il metodo `BLOB` dell&#39;oggetto restituito `getAttachmentID`. Questo metodo restituisce un valore di stringa che rappresenta il valore identificatore dell&#39;allegato restituito.
