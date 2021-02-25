@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
 
 
 # Rendering di Forms per valore {#rendering-forms-by-value}
+
+**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
 
 In genere, una struttura del modulo creata in Designer viene trasmessa facendo riferimento al servizio Forms. Le strutture del modulo possono essere di grandi dimensioni e, di conseguenza, è più efficiente passarle mediante riferimento per evitare di dover eseguire il marshalling dei byte delle strutture del modulo in base al valore. Il servizio Forms può anche memorizzare nella cache la struttura del modulo, in modo che, se memorizzata nella cache, non debba essere continuamente letta.
 
