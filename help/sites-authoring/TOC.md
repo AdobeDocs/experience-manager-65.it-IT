@@ -18,7 +18,7 @@ ht-degree: 88%
 # Guida utente all’authoring di AEM 6.5 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per AEM authoring {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring di AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
@@ -90,7 +90,7 @@ ht-degree: 88%
    + [Gestione dei tipi di pubblico](managing-audiences.md)
    + [Creazione e gestione delle offerte](offerlib.md)
    + [Segmentazione](segmentation-overview.md)
-+ AEM e  Adobe Campaign {#aem-adobe-campaign}
++ AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
    + [Targeting con Adobe Campaign](target-adobe-campaign.md)
