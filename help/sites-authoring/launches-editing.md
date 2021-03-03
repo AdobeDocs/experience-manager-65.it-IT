@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 99%
+source-wordcount: '551'
+ht-degree: 93%
 
 ---
 
@@ -28,6 +28,13 @@ Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile m
 
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
 1. Seleziona **Vai a pagina** per aprire la pagina e modificarla.
+
+>[!NOTE]
+>
+>Non puoi spostare una pagina all’interno di un lancio. Il tentativo di eseguire questa azione attiva un messaggio di avviso:
+>
+>* Avviso: Questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
+
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -45,7 +52,7 @@ Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di orig
 
 Per ulteriori informazioni, consulta [Modifica del contenuto per Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
-## Confronto tra una pagina di lancio e la relativa pagina sorgente  {#comparing-a-launch-page-to-its-source-page}
+## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
