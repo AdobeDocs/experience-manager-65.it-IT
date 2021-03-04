@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
+source-git-commit: 06cb3a7cdd9b6de00aff67c66327abadce3e0920
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3309'
 ht-degree: 1%
 
 ---
@@ -552,13 +552,12 @@ Per ulteriori requisiti consulta:
 
 ### Designer {#designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft Windows 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 * Processore da 1 GHz o più veloce con supporto per PAE, NX e SSE2.
 * 1 GB di RAM per sistemi operativi a 64 bit o 32 bit o 2 GB di RAM
 * 16 GB di spazio su disco per 32 bit o 20 GB per sistemi operativi a 64 bit
 * Memoria grafica - 128 MB di GPU (256 MB consigliati)
 * 2,35 GB di spazio disponibile su disco rigido
-* Unità DVD-ROM
 * Risoluzione del monitor di 1024 X 768 pixel o superiore
 * Accelerazione hardware video (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC.
