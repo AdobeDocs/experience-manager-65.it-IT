@@ -1,8 +1,8 @@
 ---
-title: Concedere l'accesso all'editor di regole a gruppi di utenti selezionati
-seo-title: Concedere l'accesso all'editor di regole a gruppi di utenti selezionati
-description: Concedere accesso limitato all'editor delle regole per selezionare gruppi di utenti.
-seo-description: Concedere accesso limitato all'editor delle regole per selezionare gruppi di utenti.
+title: Concedere l’accesso all’editor di regole a specifici gruppi di utenti
+seo-title: Concedere l’accesso all’editor di regole a specifici gruppi di utenti
+description: Concedi l'accesso limitato all'editor di regole per selezionare i gruppi di utenti.
+seo-description: Concedi l'accesso limitato all'editor di regole per selezionare i gruppi di utenti.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -10,53 +10,53 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '336'
+ht-degree: 8%
 
 ---
 
 
-# Concedere l&#39;accesso all&#39;editor di regole a gruppi di utenti selezionati{#grant-rule-editor-access-to-select-user-groups}
+# Concedere l’accesso all’editor di regole a specifici gruppi di utenti{#grant-rule-editor-access-to-select-user-groups}
 
 ## Panoramica {#overview}
 
-Potete avere diversi tipi di utenti con competenze diverse che funzionano con Forms adattivo. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
+È possibile utilizzare diversi tipi di utenti con competenze diverse per i moduli adattivi. Anche se gli utenti esperti possono avere le conoscenze necessarie per lavorare con script e regole complesse, potrebbero esserci utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
 
- AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione Forms adattivo, potete specificare i [gruppi di utenti](/help/sites-administering/security.md) che possono visualizzare e accedere all&#39;editor delle regole.
+AEM Forms consente di limitare l’accesso all’editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione dei moduli adattivi, puoi specificare i [gruppi di utenti](/help/sites-administering/security.md) che possono visualizzare e accedere all’editor di regole.
 
-## Specificare i gruppi di utenti che possono accedere all&#39;editor delle regole {#specify-user-groups-that-can-access-rule-editor}
+## Specifica i gruppi di utenti che possono accedere all&#39;editor di regole {#specify-user-groups-that-can-access-rule-editor}
 
-1. Accedete a  AEM Forms come amministratore.
-1. Nell&#39;istanza di authoring, fare clic su ![adobeexperience emanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Operazioni > Console Web. La console Web si apre in una nuova finestra.
+1. Accedi ad AEM Forms come amministratore.
+1. Nell&#39;istanza dell&#39;autore, fai clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Operazioni > Console web. La console Web viene visualizzata in una nuova finestra.
 
    ![1-2](assets/1-2.png)
 
-1. Nella finestra Console Web, individuare e fare clic su **Servizio configurazione modulo adattivo**. **Viene visualizzata** la finestra di dialogo Servizio configurazione modulo adattivo. Non modificare alcun valore e fare clic su **Salva**.
+1. Nella finestra Console web, individuare e fare clic su **[!UICONTROL Configurazione canale web per moduli adattivi e comunicazioni interattive]**. **[!UICONTROL Viene visualizzata la finestra di dialogo]** Configurazione canale web per modulo adattivo e comunicazione interattiva. Non modificare alcun valore e fare clic su **Salva**.
 
    Crea un file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
 
-1. Accedete a CRXDE come amministratore. Aprite il file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config per la modifica.
-1. Utilizzare la proprietà seguente per specificare il nome di un gruppo che può accedere all&#39;editor di regole (ad esempio, RuleEditorsUserGroup) e fare clic su **Salva tutto**.
+1. Accedi a CRXDE come amministratore. Apri il file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config per la modifica.
+1. Utilizzare la seguente proprietà per specificare il nome di un gruppo che può accedere all&#39;editor di regole (ad esempio, RuleEditorsUserGroup) e fare clic su **Salva tutto**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Per abilitare l&#39;accesso a più gruppi, specificate un elenco di valori separati da virgola:
+   Per abilitare l&#39;accesso per più gruppi, specifica un elenco di valori separati da virgole:
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
    ![Crea utente](assets/create_user_new.png)
 
-   Ora, quando un utente che non fa parte di un gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l&#39;icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile per l&#39;utente nella barra degli strumenti dei componenti:
+   Ora, quando un utente che non fa parte di un gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile per lei nella barra degli strumenti dei componenti:
 
    ![componentstoolbarwith](assets/componentstoolbarwithre.png)
 
-   Barra degli strumenti Componenti visibile a un utente con accesso all&#39;editor di regole
+   Barra degli strumenti Componenti visibile a un utente con accesso all’editor di regole
 
    ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
-   Barra degli strumenti dei componenti visibile a un utente senza accesso all&#39;editor di regole
+   Barra degli strumenti dei componenti visibile per un utente senza accesso all’editor di regole
 
-   Per istruzioni sull&#39;aggiunta di utenti ai gruppi, consultate [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
+   Per istruzioni su come aggiungere utenti ai gruppi, consulta [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
 
