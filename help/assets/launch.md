@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 02937bb85792e2ae9dcdeee3b860f800812a4461
+source-git-commit: 0a4708800e00eb34042e6979eb0703ca7816c7e1
 workflow-type: tm+mt
 source-wordcount: '6627'
 ht-degree: 9%
@@ -18,6 +18,8 @@ ht-degree: 9%
 # Integrazione dei visualizzatori Dynamic Media con Adobe Analytics ed Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Cos’è l’integrazione dei visualizzatori Dynamic Media con Adobe Analytics ed Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
 
 La nuova estensione *Dynamic Media Viewers* per Platform Launch e Dynamic Media Viewers 5.13 consente ai clienti di Adobe Analytics e Platform Launch di utilizzare eventi e dati specifici per i visualizzatori nella configurazione di Platform Launch.
 
@@ -844,7 +846,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
 Attualmente, AEM Author non supporta l’integrazione dei visualizzatori Dynamic Media con Experience Platform Launch.
 
-È tuttavia supportato nel nodo di pubblicazione di Experience Manager. Utilizzando le impostazioni predefinite di Configurazione cloud di Platform Launch, il nodo di pubblicazione di Experience Manager utilizza l’ambiente di produzione di Experience Platform Launch. Di conseguenza, è necessario inviare ogni volta durante il test gli aggiornamenti della libreria Experience Platform Launch da Sviluppo all’ambiente di produzione.
+È tuttavia supportato nel nodo di pubblicazione di Experience Manager. Utilizzando le impostazioni predefinite di Configurazione cloud di Platform Launch, il nodo di pubblicazione di Experience Manager utilizza l’ambiente di produzione di Experience Platform Launch. Di conseguenza, è necessario inviare ogni volta durante il test gli aggiornamenti della libreria Experience Platform Launch dallo Sviluppo all’ambiente di produzione.
 
 È possibile aggirare questa limitazione. Specifica l’URL di sviluppo o staging della libreria Platform Launch nella configurazione Platform Launch Cloud per il nodo di pubblicazione Experience Manager di cui sopra. In questo modo il nodo di pubblicazione Experience Manager utilizza la versione di sviluppo o staging della libreria Platform Launch.
 
