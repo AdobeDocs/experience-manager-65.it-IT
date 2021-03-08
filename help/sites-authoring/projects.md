@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 85%
+source-wordcount: '1399'
+ht-degree: 84%
 
 ---
 
 
 # Progetti{#projects}
 
-La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le sezioni possono includere informazioni su progetto e team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Sezioni progetto.](#project-tiles)
+La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le porzioni possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Porzioni del progetto.](#project-tiles)
 
 >[!CAUTION]
 >
->Affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono disporre dell&#39;accesso in lettura su **/home/users** e **/home/groups**. Il modo più semplice per implementarlo consiste nel fornire agli **project-users** gruppi l&#39;accesso in lettura a **/home/users** e**/home/groups*.
+>Affinché gli utenti dei progetti possano vedere altri utenti/gruppi utilizzando le funzionalità Progetti come creazione di progetti, creazione di attività/flussi di lavoro, visualizzazione e gestione del team, questi utenti devono avere accesso in lettura a **/home/users** e **/home/groups**. Il modo più semplice per implementarlo è quello di consentire al gruppo **projects-users** di accedere in lettura a **/home/users** e**/home/groups**.
 
 Come utente, puoi effettuare le seguenti operazioni:
 
@@ -53,7 +53,7 @@ Dalla console dei progetti è possibile accedere ai tuoi progetti e gestirli in 
 * **Mostra/Nascondi progetti attivi** consente di passare da tutti i progetti a solo quelli che sono attivi.
 * **Mostra vista statistiche** consente di visualizzare le statistiche del progetto in relazione alle attività completate.
 
-## Porzioni del progetto {#project-tiles}
+## Porzioni del progetto  {#project-tiles}
 
 Da Progetti, è possibile associare diversi tipi di informazioni ai progetti. Questi elementi vengono definiti **Porzioni**. In questa sezione, sono descritte le porzioni e il tipo di informazioni che contengono.
 
@@ -98,7 +98,7 @@ Le icone indicano quale tipo di esperienza è rappresentata: sito web, app mobil
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
-Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate nella sezione **Esperienze**.
+Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate insieme nella sezione **Esperienze** .
 
 ### Collegamenti {#links}
 
@@ -126,7 +126,7 @@ Dalla porzione Processo di traduzione puoi iniziare una traduzione e visualizzar
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Fate clic sui puntini di sospensione nella parte inferiore della scheda **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
+Fai clic sull’ellissi nella parte inferiore della scheda **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -136,7 +136,7 @@ In questa porzione, è possibile specificare i membri del team del progetto. Dur
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-Puoi aggiungere ed eliminare membri dal team. Inoltre, potete modificare il [ruolo utente](#userroles) assegnato al membro del team.
+Puoi aggiungere ed eliminare membri dal team. Inoltre, puoi modificare il [ruolo utente](#userroles) assegnato al membro del team.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -174,18 +174,18 @@ La porzione Lanci mostra tutti i lanci richiesti con un [Flusso di lavoro di ric
 
 ### Attività {#tasks}
 
-Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. Le attività sono descritte in dettaglio in [Utilizzo di Task](/help/sites-authoring/task-content.md).
+Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. Le attività vengono descritte in dettaglio in [Utilizzo delle attività](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Modelli di progetto {#project-templates}
 
-AEM navi con tre diversi modelli:
+AEM viene fornito con tre modelli diversi:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
-* Un progetto multimediale - Un progetto di esempio di riferimento per le attività relative ai supporti. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
-* [Progetto](/help/sites-authoring/managing-product-information.md)  per fototessere di prodotto - Un esempio di riferimento per la gestione della fotografia di prodotti correlati a eCommerce. Include ruoli per fotografi, editor, ritoccatori foto, proprietari, direttori creativi, responsabili marketing per social media, Marketing Manager, revisori e osservatori.
-* [Un progetto di traduzione:](/help/sites-administering/translation.md) un esempio di riferimento per la gestione delle attività di traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui si accede nell’interfaccia utente Flussi di lavoro.
+* Un progetto multimediale: un progetto di esempio di riferimento per attività correlate ai contenuti multimediali. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
+* [Progetto servizio fotografico per prodotto](/help/sites-authoring/managing-product-information.md) : un esempio di riferimento per la gestione della fotografia di prodotti correlati all’e-commerce. Include ruoli per fotografi, editor, ritoccatori foto, proprietari, direttori creativi, responsabili marketing per social media, Marketing Manager, revisori e osservatori.
+* [Un progetto di traduzione:](/help/sites-administering/translation.md) un esempio di riferimento per la gestione delle attività di traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui è possibile accedere nell’interfaccia utente Flussi di lavoro.
 
 In base al modello selezionato, sono disponibili diverse opzioni, in particolare riguardo ai ruoli dell’utente e ai flussi di lavoro.
 
@@ -203,7 +203,7 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
   <tr>
    <td><p><strong>Ruolo</strong></p> </td>
    <td><p><strong>Descrizione</strong></p> </td>
-   <td><p><strong>Autorizzazioni </strong></p> </td>
+   <td><p><strong>Autorizzazioni</strong></p> </td>
    <td><p><strong>Iscrizione al gruppo</strong></p> </td>
   </tr>
   <tr>
@@ -233,8 +233,8 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
     </ul> </td>
    <td>
     <ul>
-     <li>Gruppo di utenti DAM (per creare un progetto)</li>
-     <li>gruppo project-Administrators (per spostare le risorse)</li>
+     <li>Gruppo utenti DAM (per poter creare un progetto)</li>
+     <li>gruppo amministratori di progetto (per creare un progetto e spostare risorse)</li>
     </ul> </td>
   </tr>
  </tbody>
