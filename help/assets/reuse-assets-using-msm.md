@@ -4,10 +4,10 @@ description: Utilizzare risorse su più pagine/cartelle derivate e collegate a r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 10%
+source-wordcount: '3366'
+ht-degree: 9%
 
 ---
 
@@ -70,7 +70,7 @@ Per creare Live Copy utilizzando il primo metodo, effettua le seguenti operazion
 
 1. Seleziona le risorse o le cartelle sorgente. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]**.
 
-   ![Creare una Live Copy dall’interfaccia di Experience Manager](assets/create_lc1.png)
+   ![Creare una Live Copy dall’ [!DNL Experience Manager] interfaccia](assets/create_lc1.png)
 
    *Figura: Crea una Live Copy dall’ [!DNL Experience Manager] interfaccia di .*
 
@@ -82,7 +82,7 @@ Per creare Live Copy utilizzando il secondo metodo, effettua le seguenti operazi
 
 1. Nell&#39;interfaccia [!DNL Experience Manager], nell&#39;angolo in alto a destra, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]**.
 
-   ![Creare una Live Copy dall’interfaccia di Experience Manager](assets/create_lc2.png)
+   ![Creare una Live Copy dall’ [!DNL Experience Manager] interfaccia](assets/create_lc2.png)
 
    *Figura: Crea una Live Copy dall’ [!DNL Experience Manager] interfaccia di .*
 
@@ -106,7 +106,7 @@ I due metodi seguenti funzionano per le risorse e le cartelle:
 
 >[!TIP]
 >
->Per controllare lo stato di alcune Live Copy separate, utilizza il primo metodo per controllare la pagina [!UICONTROL Proprietà] . Per controllare lo stato di molte Live Copy, utilizza il secondo metodo per controllare la pagina **[!UICONTROL Stato di relazione]**.
+>Per controllare lo stato di alcune Live Copy separate, utilizza il primo metodo per controllare la pagina **[!UICONTROL Proprietà]** . Per controllare lo stato di molte Live Copy, utilizza il secondo metodo per controllare la pagina **[!UICONTROL Stato di relazione]**.
 
 ### Informazioni e stato di una Live Copy {#statuslcasset}
 
@@ -189,8 +189,9 @@ Dopo la modifica di un’origine, le modifiche possono essere propagate alle Liv
 Puoi avviare un’azione di rollout dalla risorsa sorgente e aggiornare tutte o alcune Live Copy selezionate.
 
 1. Seleziona una risorsa Live Copy o una cartella. Fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti. In alternativa, utilizza la scelta rapida da tastiera `p`.
-1. Fai clic su **[!UICONTROL Origine Live Copy]**. Nella barra degli strumenti della parte superiore, fai clic su **[!UICONTROL Rollout]**.
-1. Seleziona le Live Copy da aggiornare. Fare clic su **[!UICONTROL Rollout]**. Per eseguire il rollout degli aggiornamenti apportati alle risorse figlio, seleziona **[!UICONTROL Origine rollout e tutti gli elementi figlio]**.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Fai clic su **[!UICONTROL Rollout]** nella barra degli strumenti.
+1. Seleziona le Live Copy da aggiornare. Fare clic su **[!UICONTROL Rollout]**.
+1. Per eseguire il rollout degli aggiornamenti apportati alle risorse figlio, seleziona **[!UICONTROL Origine rollout e tutti gli elementi figlio]**.
 
    ![Implementa le modifiche dell’origine su alcune o tutte le Live Copy](assets/livecopy_rollout_page.png)
 
