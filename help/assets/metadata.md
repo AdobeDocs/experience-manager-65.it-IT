@@ -1,17 +1,17 @@
 ---
 title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
-description: Scoprite i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
+source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2384'
 ht-degree: 11%
 
 ---
 
 
-# Gestione dei metadati delle risorse digitali {#managing-metadata-for-digital-assets}
+# Gestire i metadati delle risorse digitali {#managing-metadata-for-digital-assets}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -19,79 +19,74 @@ ht-degree: 11%
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] mantiene i metadati per ogni risorsa. Consente una classificazione e un’organizzazione più semplici delle risorse e aiuta le persone che cercano una risorsa specifica. Grazie alla possibilità di estrarre i metadati dai file caricati in [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di conservare e gestire i metadati insieme alle risorse, potete organizzare ed elaborare automaticamente le risorse in base ai metadati.
+[!DNL Adobe Experience Manager Assets] conserva i metadati per ogni risorsa. Consente di organizzare e classificare più facilmente le risorse e aiuta le persone che cercano una specifica risorsa. Grazie alla possibilità di estrarre i metadati dai file caricati su [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di mantenere e gestire i metadati con le risorse, puoi organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 
 ## Metadati e relativa origine {#how-to-edit-or-add-metadata}
 
-I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene aggiunto alle risorse e in [!DNL Experience Manager] viene elaborato quando caricate una risorsa. Potete modificare i metadati esistenti e aggiungere nuove proprietà di metadati ai campi esistenti. Le organizzazioni hanno bisogno di vocabolari di metadati controllati e affidabili. Di conseguenza, [!DNL Experience Manager Assets] non consente l&#39;aggiunta su richiesta di nuove proprietà di metadati. Solo gli amministratori e gli sviluppatori possono aggiungere nuove proprietà o campi che contengono metadati. Gli utenti possono compilare i campi esistenti con i metadati.
+I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene aggiunto alle risorse e in [!DNL Experience Manager] viene elaborato quando carichi una risorsa. Puoi modificare i metadati esistenti, aggiungere nuove proprietà di metadati ai campi esistenti. Le organizzazioni hanno bisogno di vocabolari di metadati controllati e affidabili. Pertanto [!DNL Experience Manager Assets] non consente l&#39;aggiunta on-demand di nuove proprietà di metadati. Solo gli amministratori e gli sviluppatori possono aggiungere nuove proprietà o campi contenenti metadati. Gli utenti possono compilare i campi esistenti con i metadati.
 
-Per aggiungere metadati alle risorse digitali potete usare i metodi seguenti:
+Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti metodi:
 
-* Per iniziare, le applicazioni native che creano le risorse vi aggiungono alcuni metadati. Ad esempio, [ Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) ai file PDF o una fotocamera aggiunge alcuni metadati di base alle fotografie. Durante la generazione delle risorse, potete aggiungere i metadati direttamente nelle applicazioni native. Ad esempio, potete [aggiungere metadati IPTC in  Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Per iniziare, le applicazioni native che creano risorse aggiungono alcuni metadati. Ad esempio, [Acrobat aggiunge alcuni metadati](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) ai file PDF o una fotocamera aggiunge alcuni metadati di base alle fotografie. Quando si generano le risorse, è possibile aggiungere i metadati nelle applicazioni native. Ad esempio, è possibile [aggiungere metadati IPTC in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Prima di caricare una risorsa in [!DNL Experience Manager], potete modificare i metadati utilizzando l&#39;applicazione nativa utilizzata per creare una risorsa o utilizzando un&#39;altra applicazione di modifica dei metadati. Quando caricate una risorsa in  Experience Manager, i metadati vengono elaborati. Ad esempio, vedere come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e vedere il pannello [tag per [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Prima di caricare una risorsa su [!DNL Experience Manager], puoi modificare i metadati utilizzando l’applicazione nativa utilizzata per creare una risorsa o utilizzando altre applicazioni di modifica dei metadati. Quando carichi una risorsa in Experience Manager, i metadati vengono elaborati. Ad esempio, scopri come [lavorare con i metadati in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e guarda il pannello [tag per [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
-* In [!DNL Experience Manager Assets], potete aggiungere o modificare manualmente i metadati delle risorse nella pagina [!UICONTROL Proprietà].
+* In [!DNL Experience Manager Assets] puoi aggiungere o modificare manualmente i metadati delle risorse nella pagina [!UICONTROL Proprietà] .
 
-* Potete utilizzare la funzionalità [profili di metadati](/help/assets/metadata-config.md#metadata-profiles) di [!DNL Experience Manager Assets] per aggiungere automaticamente i metadati quando le risorse vengono caricate in DAM.
+* Puoi sfruttare la funzionalità [profili metadati](/help/assets/metadata-config.md#metadata-profiles) di [!DNL Experience Manager Assets] per aggiungere automaticamente i metadati quando le risorse vengono caricate in DAM.
 
 ## Aggiungere o modificare i metadati in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
-Per modificare i metadati di una risorsa nell&#39;interfaccia utente di [!DNL Assets], effettuate le seguenti operazioni:
+Per modificare i metadati di una risorsa nell’interfaccia utente di [!DNL Assets], effettua le seguenti operazioni:
 
 1. Effettua una delle operazioni seguenti:
 
-   * Dall&#39;interfaccia [!DNL Assets], selezionate la risorsa e fate clic su **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
-   * Dalla miniatura della risorsa, selezionate l&#39;azione rapida **[!UICONTROL Visualizza proprietà]**.
-   * Dalla pagina della risorsa, fate clic sull&#39;icona **[!UICONTROL Visualizza proprietà]** ![Informazioni risorse](assets/do-not-localize/info-circle-icon.png) nella barra degli strumenti.
+   * Dall’interfaccia [!DNL Assets], seleziona la risorsa e fai clic su **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
+   * Dalla miniatura della risorsa, seleziona l’azione rapida **[!UICONTROL Visualizza proprietà]** .
+   * Dalla pagina della risorsa, fai clic su **[!UICONTROL Visualizza proprietà]** ![Icona Informazioni risorse](assets/do-not-localize/info-circle-icon.png) nella barra degli strumenti.
 
-   Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. I metadati vengono estratti quando la risorsa viene caricata (assimilata) in [!DNL Experience Manager].
+   Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. I metadati vengono estratti quando la risorsa viene caricata (acquisita) in [!DNL Experience Manager].
 
-   ![Selezionate Proprietà di una risorsa per visualizzarne i metadati](assets/asset-metadata.png)
+   ![Seleziona Proprietà di una risorsa per visualizzarne i metadati](assets/asset-metadata.png)
 
-   *Figura: Modificate o aggiungete i metadati nella pagina delle   proprietà della risorsa.*
+   *Figura: Modifica o aggiungi metadati nella pagina   Proprietà delle risorse.*
 
-1. Apportate le modifiche necessarie ai metadati sotto le varie schede e, al termine, fate clic su **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche. Fare clic su **[!UICONTROL Chiudi]** per tornare all&#39;interfaccia Web [!DNL Assets].
+1. Apporta le modifiche necessarie ai metadati nelle varie schede e, al termine, fai clic su **[!UICONTROL Salva]** nella barra degli strumenti per salvare le modifiche. Fai clic su **[!UICONTROL Chiudi]** per tornare all&#39;interfaccia Web [!DNL Assets].
 
    >[!NOTE]
    >
-   >Se un campo di testo è vuoto, non esiste alcun set di metadati. Potete immettere un valore nel campo e salvarlo per aggiungere la proprietà dei metadati.
+   >Se un campo di testo è vuoto, non sono presenti metadati esistenti. È possibile immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei dati XMP. Il flusso di lavoro per la riscrittura dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le nuove proprietà (incluse quelle personalizzate come `cq:tags`) vengono aggiunte con lo schema.
+Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei suoi dati XMP. Il flusso di lavoro di write-back dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le nuove proprietà (comprese le proprietà personalizzate come `cq:tags`) vengono aggiunte con lo schema.
 
-XMP riscrittura è supportata e abilitata per le piattaforme e i formati di file descritti in [requisiti tecnici.](/help/sites-deploying/technical-requirements.md)
+XMP write-back è supportato e abilitato per le piattaforme e i formati di file descritti in [requisiti tecnici.](/help/sites-deploying/technical-requirements.md)
 
 ## Modificare le proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
 
-[!DNL Adobe Enterprise Manager Assets] consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in gruppo. Potete anche modificare i metadati per più raccolte in blocco. Utilizzate la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
+[!DNL Adobe Enterprise Manager Assets] consente di modificare contemporaneamente i metadati di più risorse, in modo da poter rapidamente propagare le comuni modifiche dei metadati alle risorse in blocco. Puoi anche modificare i metadati per più raccolte in blocco. Utilizza la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
-* Cambiare le proprietà dei metadati impostando un valore comune
-* Aggiunta o modifica di tag
+* Cambiare le proprietà dei metadati in un valore comune
+* Aggiungere o modificare i tag
 
-Per personalizzare la pagina delle proprietà dei metadati, compresa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzate l&#39; [editor dello schema](metadata-config.md#folder-metadata-schema).
+Per personalizzare la pagina delle proprietà dei metadati, tra cui l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizza l&#39; [editor dello schema](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
->I metodi di modifica collettiva funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è possibile [aggiornare in massa i metadati dopo la ricerca](search-assets.md#metadataupdates).
+>I metodi di modifica collettiva funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili nelle cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](search-assets.md#metadataupdates).
 
-1. Nell&#39;interfaccia utente di [!DNL Assets], andate alla posizione delle risorse da modificare.
-1. Selezionate le risorse per le quali desiderate modificare le proprietà comuni.
-1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
-
-   >[!NOTE]
-   >
-   >Quando selezionate più risorse, per le risorse viene selezionato il modulo padre più basso comune. In altre parole, nella pagina delle proprietà vengono visualizzati solo i campi di metadati comuni nelle pagine delle proprietà di tutte le singole risorse.
-
-1. Modificate le proprietà dei metadati per le risorse selezionate nelle varie schede.
-1. Per visualizzare l’editor di metadati per una risorsa specifica, deselezionate le risorse rimanenti nell’elenco. I campi dell’editor di metadati vengono compilati con i metadati della risorsa in questione.
+1. Nell’interfaccia utente di [!DNL Assets] , individua il percorso delle risorse da modificare.
+1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà per le risorse selezionate.
+1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
+1. Per visualizzare l’editor di metadati per una risorsa specifica, deseleziona le risorse rimanenti nell’elenco. I campi dell’editor di metadati sono compilati con i metadati per la risorsa in questione.
 
    >[!NOTE]
    >
-   >* Nella pagina delle proprietà potete rimuovere le risorse dall’elenco delle risorse deselezionandole. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati delle risorse rimosse dall’elenco non vengono aggiornati.
-   >* Nella parte superiore dell&#39;elenco delle risorse, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per passare alla selezione delle risorse e alla cancellazione dell&#39;elenco.
+   >* Nella pagina delle proprietà, puoi rimuovere le risorse dall’elenco delle risorse deselezionandole. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati per le risorse rimosse dall’elenco non vengono aggiornati.
+   >* Nella parte superiore dell’elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle risorse alla cancellazione dell’elenco.
 
 
-1. Per selezionare uno schema di metadati diverso per le risorse, fate clic su **[!UICONTROL Settings]** nella barra degli strumenti e selezionate lo schema desiderato.
+1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** nella barra degli strumenti e seleziona lo schema desiderato.
 1. Salva le modifiche.
 1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fare clic su **[!UICONTROL Invia]**.
 
@@ -101,107 +96,107 @@ Per personalizzare la pagina delle proprietà dei metadati, compresa l&#39;aggiu
 
 ## Importa metadati {#import-metadata}
 
-[!DNL Assets] consente di importare in massa i metadati delle risorse mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
+[!DNL Assets] consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+L’importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse a causa dell’attività di XMP write-back se è selezionato il flag del flusso di lavoro. Pianifica un&#39;importazione di questo tipo durante l&#39;utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
 
 >[!NOTE]
 >
->Per importare i metadati negli spazi dei nomi personalizzati, registrate prima gli spazi dei nomi.
+>Per importare i metadati negli spazi dei nomi personalizzati, registra innanzitutto gli spazi dei nomi.
 
-1. Passare all&#39;interfaccia utente [!DNL Assets] e fare clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
-1. Dal menu, selezionare **[!UICONTROL Metadati]**.
-1. Nella pagina **[!UICONTROL Importazione metadati]**, fare clic su **[!UICONTROL Seleziona file]**. Scegli il file CSV con i metadati.
-1. Specificate i seguenti parametri. Consultate un file CSV di esempio in [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
+1. Passa all&#39; [!DNL Assets] interfaccia utente e fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
+1. Dal menu, seleziona **[!UICONTROL Metadati]**.
+1. Nella pagina **[!UICONTROL Importazione metadati]**, fai clic su **[!UICONTROL Seleziona file]**. Scegli il file CSV con i metadati.
+1. Specifica i seguenti parametri. Consulta un file CSV di esempio in [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Parametri di importazione metadati | Descrizione |
    |:---|:---|
-   | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per cui importare i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
+   | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per cui devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | [!UICONTROL Separatore di campi] | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
-   | [!UICONTROL Delimitatore valori multipli] | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
-   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Se impostate su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro [!UICONTROL WriteBack di metadati DAM] (che scrive i metadati nei dati XMP binari). L&#39;attivazione dei flussi di lavoro di avvio rallenta il sistema. |
-   | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna per il file CSV con le risorse. |
+   | [!UICONTROL Delimitatore valori multipli] | Separatore dei valori dei metadati. Il valore predefinito è `|`. |
+   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro [!UICONTROL DAM Metadata WriteBack] (che scrive i metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio rallenta il sistema. |
+   | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna del file CSV con le risorse. |
 
-1. Fare clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Dopo l&#39;importazione dei metadati, nella inbox [!UICONTROL Notification] viene visualizzata una notifica.
+1. Fai clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Dopo l&#39;importazione dei metadati, una notifica viene visualizzata nella casella in entrata [!UICONTROL Notifica].
 
-1. Per verificare la corretta importazione, andate alla pagina [!UICONTROL Properties] di una risorsa e verificate i valori nei campi.
+1. Per verificare la corretta importazione, passa alla pagina [!UICONTROL Proprietà] di una risorsa e verifica i valori nei campi.
 
-Per aggiungere data e marca temporale durante l&#39;importazione dei metadati, utilizzate il formato `YYYY-MM-DDThh:mm:ss.fff-00:00` per la data e l&#39;ora. Data e ora sono separate da `T`, `hh` è ore in formato 24 ore, `fff` è nanosecondi e `-00:00` è l&#39;offset del fuso orario. Ad esempio, `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 orario PST.
+Per aggiungere data e marca temporale durante l’importazione dei metadati, utilizza il formato `YYYY-MM-DDThh:mm:ss.fff-00:00` per la data e l’ora. La data e l’ora sono separate da `T`, `hh` è ore in formato 24 ore, `fff` è nanosecondi e `-00:00` è l’offset del fuso orario. Ad esempio, `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 ora PST.
 
 >[!CAUTION]
 >
->Se il formato della data non corrisponde a `YYYY-MM-DDThh:mm:ss.fff-00:00`, i valori della data non vengono impostati. I formati data del file CSV di metadati esportato sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desiderate importarlo, convertitelo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
+>Se il formato della data non corrisponde a `YYYY-MM-DDThh:mm:ss.fff-00:00`, i valori della data non vengono impostati. I formati di data del file CSV dei metadati esportati sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Per importarlo, convertirlo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
 
-## Esportare i metadati {#export-metadata}
+## Esporta metadati {#export-metadata}
 
-Potete esportare i metadati per più risorse in formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, [!DNL Experience Manager] attraversa le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi secondari ed esporta le proprietà dei metadati in un file CSV.
+Puoi esportare i metadati per più risorse in un formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, [!DNL Experience Manager] analizza le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi figlio ed esporta le proprietà dei metadati in un file CSV.
 
-Alcuni esempi di utilizzo per l’esportazione di metadati in massa sono:
+Alcuni casi d&#39;uso per esportare i metadati in blocco sono:
 
-* Importate i metadati in un sistema di terze parti durante la migrazione delle risorse.
-* Condividete i metadati delle risorse con un team di progetto più ampio.
-* Verificate o verificate la conformità dei metadati.
-* Esternalizzate i metadati per localizzarli separatamente.
+* Importa i metadati in un sistema di terze parti durante la migrazione delle risorse.
+* Condividi i metadati delle risorse con un team di progetto più ampio.
+* Verifica o controlla i metadati per verificarne la conformità.
+* Esternalizzare i metadati per localizzarli separatamente.
 
-1. Selezionate la cartella di risorse che contiene le risorse per le quali desiderate esportare i metadati. Dalla barra degli strumenti, selezionate **[!UICONTROL Esporta metadati]**.
+1. Seleziona la cartella di risorse che contiene le risorse di cui desideri esportare i metadati. Dalla barra degli strumenti, seleziona **[!UICONTROL Esporta metadati]**.
 
-1. Nella finestra di dialogo [!UICONTROL Esportazione metadati], specificate un nome per il file CSV. Per esportare i metadati delle risorse nelle sottocartelle, selezionate **[!UICONTROL Includi risorse nelle sottocartelle]**.
+1. Nella finestra di dialogo [!UICONTROL Esportazione metadati] , specifica un nome per il file CSV. Per esportare i metadati per le risorse nelle sottocartelle, seleziona **[!UICONTROL Includi risorse nelle sottocartelle]**.
 
-   ![Interfaccia e opzioni per l’esportazione dei metadati di tutte le risorse di una ](assets/export_metadata_page.png "cartellaInterfaccia e opzioni per l’esportazione dei metadati di tutte le risorse di una cartella")
+   ![Interfaccia e opzioni per l’esportazione dei metadati di tutte le risorse in una ](assets/export_metadata_page.png "cartellaInterfaccia e opzioni per l’esportazione dei metadati di tutte le risorse in una cartella")
 
-1. Selezionate le opzioni desiderate. Specificare un nome di file e, se necessario, una data.
+1. Seleziona le opzioni desiderate. Fornire un nome file e, se necessario, una data.
 
-1. Nel campo **[!UICONTROL Proprietà da esportare]**, specificare se si desidera esportare tutte le proprietà o solo proprietà specifiche. Se scegliete le proprietà selettive da esportare, aggiungete le proprietà desiderate.
+1. Nel campo **[!UICONTROL Proprietà da esportare]** , specifica se esportare tutte le proprietà o specifiche. Se scegli Proprietà selettive da esportare, aggiungi le proprietà desiderate.
 
-1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Esporta]**. Viene visualizzato un messaggio di conferma dell’esportazione dei metadati. Chiudi il messaggio.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Esporta]**. Un messaggio conferma l’esportazione dei metadati. Chiudi il messaggio.
 
-1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, fate clic su **[!UICONTROL Download CSV]** dalla barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
+1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, fai clic su **[!UICONTROL Scarica CSV]** nella barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
 
-   ![Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa](assets/csv_download.png)
+   ![Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco](assets/csv_download.png)
 
-   *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa.*
+   *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco.*
 
-## Modificare i metadati delle raccolte {#collections-metadata}
+## Modifica metadati delle raccolte {#collections-metadata}
 
-Per informazioni dettagliate, consultate [visualizzare e modificare i metadati della raccolta](/help/assets/manage-collections.md#view-edit-collection-metadata) e [modificare i metadati di più raccolte in massa](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
+Per informazioni dettagliate, consulta [visualizzare e modificare i metadati della raccolta](/help/assets/manage-collections.md#view-edit-collection-metadata) e [modificare i metadati di più raccolte in blocco](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Applicare un profilo di metadati alle cartelle {#applying-a-metadata-profile-to-folders}
 
 <!-- TBD: Review this overview.
 -->
 
-Quando assegnate un profilo di metadati a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla cartella principale. Questo significa che potete assegnare un solo profilo di metadati a una cartella. Considerate quindi attentamente la struttura delle cartelle in cui caricare, memorizzare, usare e archiviare le risorse.
+Quando assegni un profilo di metadati a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla relativa cartella padre. Ciò significa che puoi assegnare un solo profilo di metadati a una cartella. Considera attentamente la struttura delle cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
 
-Se avete assegnato un profilo di metadati diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse di cartella esistenti in precedenza restano invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
+Se hai assegnato un profilo di metadati diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse della cartella esistenti in precedenza rimangono invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
 
 Le cartelle a cui è assegnato un profilo sono indicate nell&#39;interfaccia utente in base al nome del profilo visualizzato nel nome della scheda.
 
 ![Nella vista a schede viene visualizzato il profilo di metadati applicato a una cartella](assets/metadata-profile-card-view-display.png)
 
-Potete applicare i profili di metadati a cartelle specifiche o globalmente a tutte le risorse.
+Puoi applicare i profili di metadati a cartelle specifiche o globalmente a tutte le risorse.
 
-Potete rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
+Puoi rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
 Puoi applicare un profilo di metadati a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili di metadati alle cartelle con entrambe le soluzioni.
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
+Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-### Applicazione di profili di metadati alle cartelle dall&#39;interfaccia utente [!UICONTROL Profili] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Applicare profili di metadati alle cartelle dall&#39;interfaccia utente [!UICONTROL Profili] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-Seguite i passaggi per applicare il profilo di metadati:
+Segui i passaggi per applicare il profilo metadati:
 
-1. Fare clic sul logo [!DNL Experience Manager] e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]**.
-1. Selezionate il profilo di metadati da applicare a una o più cartelle.
-1. Fate clic su **[!UICONTROL Applica profilo metadati alle cartelle]**, selezionate la cartella o più cartelle da utilizzare per ricevere le risorse appena caricate e fate clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Fai clic sul logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]**.
+1. Seleziona il profilo di metadati da applicare a una o più cartelle.
+1. Fai clic su **[!UICONTROL Applica profilo metadati a cartelle]**, seleziona la cartella o le cartelle multiple da utilizzare per ricevere le risorse appena caricate e fai clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 ### Applicare profili di metadati alle cartelle da [!UICONTROL Proprietà] {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Nella barra a sinistra, fate clic su **[!UICONTROL Risorse]**, quindi individuate la cartella a cui desiderate applicare un profilo di metadati.
-1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Properties]**.
+1. Nella barra a sinistra, fai clic su **[!UICONTROL Risorse]**, quindi individua la cartella a cui desideri applicare un profilo di metadati.
+1. Nella cartella, fai clic sul segno di spunta per selezionarlo, quindi fai clic su **[!UICONTROL Proprietà]**.
 
-1. Selezionate la scheda **[!UICONTROL Profili metadati]**, quindi selezionate il profilo dal menu a comparsa e fate clic su **[!UICONTROL Salva]**.
+1. Seleziona la scheda **[!UICONTROL Profili metadati]** e seleziona il profilo dal menu a comparsa, quindi fai clic su **[!UICONTROL Salva]**.
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
@@ -213,37 +208,37 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Rimuovere un profilo di metadati dalle cartelle {#removing-a-metadata-profile-from-folders}
 
-Quando rimuovete un profilo di metadati da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla cartella principale. Tuttavia, l&#39;elaborazione dei file che si è verificata all&#39;interno delle cartelle rimane intatta.
+Quando rimuovi un profilo di metadati da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla relativa cartella principale. Tuttavia, l’elaborazione dei file che si è verificata all’interno delle cartelle rimane intatta.
 
-È possibile rimuovere un profilo di metadati da una cartella dal menu **[!UICONTROL Strumenti]** o dalle proprietà **[!UICONTROL Proprietà]** all&#39;interno della cartella.
+Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure dalle proprietà **[!UICONTROL Proprietà]** all’interno della cartella.
 
-#### Rimuovere i profili di metadati dalle cartelle tramite l&#39;interfaccia utente Profili {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Rimuovere i profili di metadati dalle cartelle tramite l’interfaccia utente Profiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Fare clic sul logo [!DNL Experience Manager] e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]**.
-1. Selezionate il profilo di metadati da rimuovere da una o più cartelle.
-1. Fate clic su **[!UICONTROL Rimuovi profilo metadati dalle cartelle]**, selezionate la cartella o le cartelle da cui desiderate rimuovere un profilo e fate clic su **[!UICONTROL Fine]**.
+1. Fai clic sul logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]**.
+1. Seleziona il profilo di metadati da rimuovere da una o più cartelle.
+1. Fai clic su **[!UICONTROL Rimuovi profilo metadati da cartelle]**, seleziona la cartella o le cartelle multiple da cui vuoi rimuovere un profilo e fai clic su **[!UICONTROL Fine]**.
 
-   Potete confermare che il profilo di metadati non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
+   Puoi confermare che il profilo di metadati non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 #### Rimuovere i profili di metadati dalle cartelle tramite Proprietà {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Fate clic sul logo [!DNL Experience Manager], quindi individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
-1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Properties]**.
+1. Fai clic sul logo [!DNL Experience Manager] e passa a **[!UICONTROL Risorse]**, quindi alla cartella da cui desideri rimuovere un profilo di metadati.
+1. Nella cartella, fai clic sul segno di spunta per selezionarlo, quindi fai clic su **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 ## Suggerimenti e limitazioni {#best-practices-limitations}
 
-* Gli aggiornamenti dei metadati tramite l&#39;interfaccia utente modificano le proprietà dei metadati nello spazio dei nomi `dc`. Qualsiasi aggiornamento effettuato tramite l&#39;API HTTP modifica le proprietà dei metadati nello spazio dei nomi `jcr`. Consultate [come aggiornare i metadati utilizzando l&#39;API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Gli aggiornamenti dei metadati tramite l’interfaccia utente modificano le proprietà dei metadati nello spazio dei nomi `dc`. Eventuali aggiornamenti effettuati tramite l’API HTTP modificano le proprietà dei metadati nello spazio dei nomi `jcr` . Consulta [come aggiornare i metadati utilizzando l&#39;API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
-* Il file CSV per l’importazione dei metadati delle risorse è in un formato molto specifico. Per risparmiare tempo e sforzi ed evitare errori non intenzionali, potete iniziare a creare il CSV utilizzando il formato di un file CSV esportato.
+* Il file CSV per l’importazione dei metadati delle risorse è in un formato molto specifico. Per risparmiare tempo e fatica ed evitare errori non intenzionali, puoi iniziare a creare il CSV utilizzando il formato di un file CSV esportato.
 
-* Quando importate dei metadati utilizzando un file CSV, il formato di data richiesto è `YYYY-MM-DDThh:mm:ss.fff-00:00`. Se viene utilizzato un altro formato, i valori data non vengono impostati. I formati data del file CSV di metadati esportato sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desiderate importarlo, convertitelo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
+* Quando si importano metadati utilizzando un file CSV, il formato di data richiesto è `YYYY-MM-DDThh:mm:ss.fff-00:00`. Se viene utilizzato un altro formato, i valori della data non vengono impostati. I formati di data del file CSV dei metadati esportati sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Per importarlo, convertirlo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
 
 >[!MORELIKETHIS]
 >
 >* [Concetti di metadati e comprensione](metadata-concepts.md).
 >* [Modifica delle proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importazione ed esportazione di metadati in  risorse Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
