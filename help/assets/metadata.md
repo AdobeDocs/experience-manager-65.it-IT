@@ -3,9 +3,9 @@ title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Mana
 description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2388'
 ht-degree: 11%
 
 ---
@@ -78,11 +78,11 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l&#39;aggiun
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà per le risorse selezionate.
 1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
-1. Per visualizzare l’editor di metadati per una risorsa specifica, deseleziona le risorse rimanenti nell’elenco. I campi dell’editor di metadati sono compilati con i metadati per la risorsa in questione.
+1. Per visualizzare l’editor di metadati per una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. I campi dell’editor di metadati sono compilati con i metadati per la risorsa in questione.
 
    >[!NOTE]
    >
-   >* Nella pagina delle proprietà, puoi rimuovere le risorse dall’elenco delle risorse deselezionandole. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati per le risorse rimosse dall’elenco non vengono aggiornati.
+   >* Nella pagina delle proprietà, puoi rimuovere le risorse dall’elenco delle risorse annullando la selezione. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati per le risorse rimosse dall’elenco non vengono aggiornati.
    >* Nella parte superiore dell’elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle risorse alla cancellazione dell’elenco.
 
 
