@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
+source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 3%
@@ -100,7 +100,7 @@ Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca
 
 * **operation**
 
-   &quot;`equals`&quot; per la corrispondenza esatta, &quot;`!=`&quot; per il confronto di disuguaglianza, &quot;`greater`&quot; per la proprietà1 maggiore di property2, &quot;`>=`&quot; per la proprietà1 maggiore o uguale a property2. Il valore predefinito è &quot;`equals`&quot;.
+   &quot; `equals`&quot; per corrispondenza esatta, &quot; `!=`&quot; per confronto di disuguaglianza, &quot; `greater`&quot; per la proprietà1 maggiore di property2, &quot; `>=`&quot; per la proprietà1 maggiore o uguale a property2. Il valore predefinito è &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -370,7 +370,7 @@ Supporta l’estrazione dei facet. Fornirà bucket per ogni valore di proprietà
 
 * **funzionamento**
 
-   &quot;`equals`&quot; per corrispondenza esatta (impostazione predefinita), &quot;`unequals`&quot; per confronto di disuguaglianza, &quot;`like`&quot; per l&#39;utilizzo della funzione xpath `jcr:like` (facoltativo), &quot; `not`&quot; per nessuna corrispondenza (esempio &quot;`not(@prop)`&quot; in xpath, il parametro del valore verrà ignorato) o &quot;`exists`&quot; per il controllo dell&#39;esistenza (il valore può essere true - la proprietà deve esistere, il valore predefinito - o false - lo stesso di &quot;`not`&quot;)
+   &quot;`equals`&quot; per corrispondenza esatta (impostazione predefinita), &quot; `unequals`&quot; per confronto di disuguaglianza, &quot; `like`&quot; per l&#39;utilizzo della funzione xpath `jcr:like` (facoltativo), &quot; `not`&quot; per nessuna corrispondenza (esempio &quot;`not(@prop)`&quot; in xpath, il parametro del valore verrà ignorato) o &quot; `exists`&quot; per il controllo dell&#39;esistenza (il valore può essere true - la proprietà deve esistere, il valore predefinito - o false - lo stesso di &quot; `not`&quot;)
 
 * **profondità**
 
