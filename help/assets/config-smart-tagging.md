@@ -3,9 +3,9 @@ title: Configurare l’assegnazione tag delle risorse tramite Smart Content Serv
 description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati migliorati in [!DNL Adobe Experience Manager] utilizzando il Servizio di contenuti avanzati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2170'
 ht-degree: 33%
 
 ---
@@ -20,14 +20,11 @@ Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue:
 * [Integrare con Adobe Developer Console](#integrate-adobe-io).
 * [Formazione del Servizio di contenuti avanzati](#training-the-smart-content-service).
 
-   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
-  -->
-
-* Installa l&#39;ultimo [Service Pack di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installa l&#39;ultimo [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integrare con Adobe Developer Console {#integrate-adobe-io}
 
-Quando ti integri con Adobe Developer Console, il server [!DNL Experience Manager] autentica le credenziali del servizio con il gateway di Adobe Developer Console prima di inoltrare la richiesta al Servizio di contenuti avanzati. Per eseguire l’integrazione, è necessario un account Adobe ID con privilegi di amministratore per l’organizzazione e la licenza del servizio di contenuti avanzati acquistata e abilitata per l’organizzazione.
+Quando si esegue l’integrazione con Adobe Developer Console, il server [!DNL Experience Manager] autentica le credenziali del servizio con il gateway Adobe Developer Console prima di inoltrare la richiesta al Servizio di contenuti avanzati. Per eseguire l’integrazione, è necessario un account Adobe ID con privilegi di amministratore per l’organizzazione e la licenza Servizio di contenuti avanzati acquistata e abilitata per l’organizzazione.
 
 Per configurare il Servizio di contenuti avanzati, segui questi passaggi principali:
 
@@ -98,7 +95,7 @@ Dopo la scadenza di un certificato, non è più attendibile. Non è possibile ri
 
 ### Creare l’integrazione con Adobe Developer Console {#create-adobe-i-o-integration}
 
-Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione in Adobe Developer Console per ottenere [!UICONTROL Chiave API] (generata nel campo [!UICONTROL ID CLIENT] dell’integrazione di Adobe Developer Console), [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE] e [!UICONTROL CLIENT SECT RET] per [!UICONTROL Impostazioni del servizio di assegnazione tag avanzati risorse] della configurazione cloud in [!DNL Experience Manager].
+Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione in Adobe Developer Console per ottenere [!UICONTROL Chiave API] (generata nel campo [!UICONTROL ID CLIENT] dell’integrazione Adobe Developer Console), [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE] e [!UICONTROL ID ACCOUNT CLIENT SECRET] per [!UICONTROL Assets Smart Tagging Service Settings] della configurazione cloud in [!DNL Experience Manager].
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io/) in un browser. Seleziona l’account appropriato e verifica che il ruolo aziendale associato sia quello di amministratore di sistema.
 
@@ -125,13 +122,13 @@ Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione
 
 Per configurare l’integrazione, utilizza i valori dei campi [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL CLIENT SECRET] e [!UICONTROL ID CLIENT] dall’integrazione di Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l’autenticazione delle richieste API dalla distribuzione [!DNL Experience Manager].
 
-1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Servizi cloud precedenti]** per aprire la console [!UICONTROL Cloud Services].
+1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services precedenti]** per aprire la console [!UICONTROL Cloud Services].
 
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Servizio di contenuti avanzati AEM]**, utilizza i valori precompilati per i campi **[!UICONTROL URL servizio]** e **[!UICONTROL Server autorizzazioni]**.
 
-1. Per i campi [!UICONTROL Chiave API], [!UICONTROL ID account tecnico], [!UICONTROL ID organizzazione] e [!UICONTROL Segreto client], copia e utilizza i seguenti valori generati in [Integrazione di Adobe Developer Console](#create-adobe-i-o-integration).
+1. Per i campi [!UICONTROL Chiave API], [!UICONTROL ID account tecnico], [!UICONTROL ID organizzazione] e [!UICONTROL Segreto client], copia e utilizza i seguenti valori generati in [Integrazione Adobe Developer Console](#create-adobe-i-o-integration).
 
    | [!UICONTROL Impostazioni servizio tag avanzati di Assets] | [!DNL Adobe Developer Console] campi di integrazione |
    |--- |--- |
@@ -215,7 +212,7 @@ Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag `my-pa
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](/help/assets/assets/do-not-localize/coherence.png)
 
-**Copertura**: Utilizza una varietà sufficiente nelle immagini del corso di formazione. L’idea è di fornire alcuni esempi, ma ragionevolmente diversi, in modo che Experience Manager impari a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
+**Copertura**: Utilizza una varietà sufficiente nelle immagini del corso di formazione. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che l&#39;Experience Manager impari a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
 
 Ad esempio, per il tag *model-down-pose*, includi più immagini di formazione simili all&#39;immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
 
@@ -233,7 +230,7 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 >[!NOTE]
 >
->La capacità del Servizio di contenuti avanzati di addestrare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere risultati ottimali, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>La capacità del Servizio di contenuti avanzati di addestrare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per ottenere risultati ottimali, l’Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
 
 ### Formazione periodica {#periodic-training}
 
