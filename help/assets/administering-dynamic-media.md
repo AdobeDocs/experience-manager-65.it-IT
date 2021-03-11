@@ -1,12 +1,12 @@
 ---
-title: Impostazione di contenuti multimediali dinamici
-description: Per configurare gli elementi multimediali dinamici, dovete configurare gli elementi multimediali dinamici e gestire i predefiniti per immagini e visualizzatori.
+title: Configurazione di Dynamic Media
+description: Per configurare Dynamic Media, devi configurare Dynamic Media e gestire i predefiniti per immagini e visualizzatori.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -14,23 +14,23 @@ ht-degree: 0%
 ---
 
 
-# Impostazione di contenuti multimediali dinamici {#setting-up-dynamic-media}
+# Configurazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Mediaconsente di gestire le risorse distribuendo su richiesta risorse di marketing e merchandising visivi avanzate, ridimensionate automaticamente per essere utilizzate sui siti Web, mobili e social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 >[!NOTE]
 >
->Questa documentazione descrive le funzionalità per contenuti multimediali dinamici, integrate direttamente in AEM. Se utilizzi Dynamic Media Classic integrato in AEM, consulta la sezione [Documentazione di integrazione Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Questa documentazione descrive le funzionalità di Dynamic Media, integrate direttamente in AEM. Se utilizzi Dynamic Media Classic integrato in AEM, consulta la [documentazione sull&#39;integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
->Per informazioni sui casi in cui è possibile utilizzare AEM integrato con Dynamic Media Classic con i contenuti multimediali dinamici, vedere [Scenario a doppio uso](/help/sites-administering/scene7.md#dual-use-scenario).
+>Consulta [Scenario doppio utilizzo](/help/sites-administering/scene7.md#dual-use-scenario) per i casi in cui desideri utilizzare AEM integrato con Dynamic Media Classic e Dynamic Media.
 
-Se state amministrando i contenuti multimediali dinamici, i seguenti argomenti sono di interesse:
+Se stai amministrando Dynamic Media, i seguenti argomenti sono di interesse:
 
-* [Configurazione della modalità](config-dms7.md)  Dynamic Media-Scene7 Utilizzate questa configurazione se siete un nuovo cliente di Dynamic Media.
-* [Configurazione della modalità](config-dynamic.md)  Dynamic Media-Hybrid Utilizzate questa configurazione se siete già un AEM di aggiornamento per i clienti di Dynamic Media.
+* [Configurazione della modalità](config-dms7.md)  Dynamic Media-Scene7: utilizza questa configurazione se sei un nuovo cliente Dynamic Media.
+* [Configurazione della modalità](config-dynamic.md)  Dynamic Media-Hybrid: utilizza questa configurazione se sei un AEM di aggiornamento cliente Dynamic Media esistente.
 * [Gestione dei predefiniti per immagini](managing-image-presets.md)
 * [Gestione dei predefiniti per visualizzatori](managing-viewer-presets.md)
-* [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+* [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
 
 Vedi anche i seguenti argomenti:
 
@@ -39,6 +39,6 @@ Vedi anche i seguenti argomenti:
 
 >[!NOTE]
 >
->**Se state effettuando l&#39;aggiornamento:**
+>**Per l&#39;aggiornamento:**
 >
->* Dopo aver AEM e aver eseguito il caricamento, tutte le risorse caricate dispongono di elementi Contenuti multimediali dinamici attivati automaticamente (a meno che non siano stati esplicitamente disattivati dall’amministratore di sistema). Se usate un’istanza aggiornata di AEM e non avete mai usato gli elementi multimediali dinamici, potrebbe essere necessario rielaborare le risorse per consentirne l’abilitazione.
+>* Dopo l’AEM e l’esecuzione, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di AEM e nuove per Dynamic Media, potrebbe essere necessario rielaborare le risorse per renderle abilitate per Dynamic Media.
