@@ -3,7 +3,7 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 29%
@@ -225,4 +225,4 @@ Per risolvere eventuali errori comuni, procedi come segue:
 
 * Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, verifica se la distribuzione di Sites è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l&#39;implementazione tenta due volte di stabilire la connessione con  [!DNL Sites] l&#39;implementazione e quindi segnala un errore.
 
-![impossibile ritentare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
+   ![impossibile ritentare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
