@@ -4,7 +4,7 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d96730eed6447815c40307a8d60b6ffc9ff45c2e
+source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 5%
@@ -36,7 +36,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * Quando utilizzi la funzionalità [Risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md), ora puoi visualizzare un elenco di tutte le [!DNL Sites] pagine che utilizzano la risorsa. Questi riferimenti a una risorsa sono disponibili nella pagina [!UICONTROL Proprietà] di una risorsa. Questo consente agli amministratori, agli esperti di marketing e ai bibliotecari di visualizzare in modo completo l’utilizzo delle risorse, consentendo un migliore monitoraggio, gestione e coerenza del marchio.
 
-* Quando si elimina una risorsa a cui si fa riferimento in una pagina web, in [!DNL Experience Manager] viene visualizzato un avviso. Puoi forzare l’eliminazione di una risorsa di riferimento oppure controllare e modificare i riferimenti visualizzati nella pagina [!DNL Properties] della risorsa. Facendo clic sui riferimenti vengono aperte le pagine locali e remote [!DNL Sites] .
+* Quando si elimina una risorsa a cui viene fatto riferimento in una pagina web, [!DNL Experience Manager] [visualizza un avviso](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references). Puoi forzare l’eliminazione di una risorsa di riferimento oppure controllare e modificare i riferimenti visualizzati nella pagina [!DNL Properties] della risorsa. Facendo clic sui riferimenti vengono aperte le pagine locali e remote [!DNL Sites] .
 
 * Ordinamento delle pagine Live Copy disponibili per il rollout utilizzando le proprietà [!UICONTROL Name], [!UICONTROL Last modified date,] e [!UICONTROL Last rollout date] .
 
