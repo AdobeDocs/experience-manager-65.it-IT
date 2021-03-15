@@ -3,9 +3,9 @@ title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Mana
 description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 31dcf48691fa849f757579e2e57dc3a9c2bbbbee
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2340'
 ht-degree: 11%
 
 ---
@@ -78,21 +78,15 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l&#39;aggiun
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà per le risorse selezionate.
 1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
-1. Per visualizzare l’editor di metadati per una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. I campi dell’editor di metadati sono compilati con i metadati per la risorsa in questione.
-
-   >[!NOTE]
-   >
-   >* Nella pagina delle proprietà, puoi rimuovere le risorse dall’elenco delle risorse annullando la selezione. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati per le risorse rimosse dall’elenco non vengono aggiornati.
-   >* Nella parte superiore dell’elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle risorse alla cancellazione dell’elenco.
-
-
-1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** nella barra degli strumenti e seleziona lo schema desiderato.
-1. Salva le modifiche.
+1. Per visualizzare i metadati di una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. Se annulli la selezione di alcune risorse nella pagina [!UICONTROL Proprietà], i metadati di tali risorse non vengono aggiornati.
+1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** nella barra degli strumenti e seleziona uno schema. Fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fare clic su **[!UICONTROL Invia]**.
 
-   >[!CAUTION]
-   >
-   >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
+![Applicazione in blocco dello schema metadati a più risorse](assets/metadata-schema-bulk-edit.gif)
+
+>[!CAUTION]
+>
+>Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
 ## Importa metadati {#import-metadata}
 
