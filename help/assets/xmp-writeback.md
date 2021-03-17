@@ -3,9 +3,9 @@ title: Write-back XMP per le rappresentazioni
 description: Scopri in che modo la funzione di XMP write-back propaga le modifiche ai metadati di una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 7faa6638eff422599450946a257e53970d25189c
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '784'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 5%
 
 # Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
-La funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati delle risorse alle rappresentazioni della risorsa. Quando modifichi i metadati di una risorsa da [!DNL Experience Manager Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa in CRXDe. La funzione di XMP write-back propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
+Questa funzione di XMP write-back in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati alle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo di metadati nella gerarchia delle risorse.
+
+La funzione di XMP write-back consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. La funzione riscrive solo le proprietà dei metadati che utilizzano lo spazio dei nomi `jcr`, ovvero viene riscritta una proprietà denominata `dc:title` ma non una proprietà denominata `mytitle`.
 
 Considera uno scenario in cui modifichi la proprietà [!UICONTROL Title] della risorsa denominata `Classic Leather` in `Nylon`.
 
@@ -23,11 +25,9 @@ In questo caso, il [!DNL Experience Manager Assets] salva le modifiche alla prop
 
 ![metadata_memorizzati](assets/metadata_stored.png)
 
-Tuttavia, [!DNL Experience Manager Assets] non propaga automaticamente eventuali modifiche ai metadati delle rappresentazioni di una risorsa.
+Tuttavia, [!DNL Experience Manager Assets] non propaga automaticamente eventuali modifiche ai metadati delle rappresentazioni di una risorsa. Vedere [come abilitare XMP writeback](#enable-xmp-writeback).
 
-La funzione Writeback di XMP consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa. Tuttavia, le modifiche non vengono memorizzate sotto il nodo di metadati nella gerarchia delle risorse. Questa funzione incorpora invece le modifiche nei file binari per le rappresentazioni.
-
-## Abilitazione XMP writeback {#enabling-xmp-writeback}
+## Abilita XMP writeback {#enable-xmp-writeback}
 
 Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni della risorsa durante il caricamento, modifica la configurazione **[!UICONTROL Adobe CQ DAM Rendition Maker]** in Configuration Manager.
 
@@ -47,7 +47,7 @@ Per la funzione Writeback di XMP per la propagazione dei metadati alle miniature
 1. Dalla pagina Modelli , apri il modello di flusso di lavoro **[!UICONTROL Writeback di metadati DAM]** .
 1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
 1. Nella finestra di dialogo [!UICONTROL Proprietà passaggio], fare clic sulla scheda **[!UICONTROL Processo]**.
-1. Nella casella **Argomenti**, aggiungere `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi fare clic su **OK**.
+1. Nella casella **Argomenti**, aggiungere `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` e fare clic su **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
@@ -68,11 +68,11 @@ Le modifiche ai metadati vengono propagate alle rappresentazioni miniature.140.1
 
 ## Filtro dei metadati XMP {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] supporta sia l’elenco bloccato che l’elenco consentito di filtri di proprietà/nodi per XMP metadati letti dai binari delle risorse e memorizzati in JCR quando le risorse vengono acquisite.
+[!DNL Experience Manager Assets] supporta sia il filtro elenco Bloccati che elenco Consentiti di proprietà/nodi per XMP metadati letti dai binari delle risorse e memorizzati in JCR quando le risorse vengono acquisite.
 
-Il filtro tramite un elenco bloccato consente di importare tutte le proprietà dei metadati XMP eccetto le proprietà specificate per l’esclusione. Tuttavia, per i tipi di risorse come i file INDD con grandi quantità di metadati XMP (ad esempio 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtro applicato a un elenco bloccato consente l’importazione di un gran numero di risorse con numerosi metadati XMP, la distribuzione [!DNL Experience Manager] può incontrare problemi di stabilità, ad esempio code di osservazione intasate.
+Il filtro mediante un elenco Bloccati consente di importare tutte le proprietà dei metadati XMP eccetto le proprietà specificate per l’esclusione. Tuttavia, per i tipi di risorse come i file INDD con grandi quantità di metadati XMP (ad esempio 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtraggio mediante un elenco Bloccati consente l’importazione di un numero elevato di risorse con numerosi metadati XMP, la distribuzione [!DNL Experience Manager] può incontrare problemi di stabilità, ad esempio code di osservazione intasate.
 
-Il filtro dei metadati XMP tramite l’elenco consentiti risolve questo problema consentendo di definire le proprietà XMP da importare. In questo modo, qualsiasi altra proprietà XMP o sconosciuta viene ignorata. Per la compatibilità con le versioni precedenti, puoi aggiungere alcune di queste proprietà al filtro che utilizza un elenco bloccato.
+Il filtro dei metadati XMP tramite elenco Consentiti risolve questo problema consentendo di definire le proprietà XMP da importare. In questo modo, qualsiasi altra proprietà XMP o sconosciuta viene ignorata. Per la compatibilità con le versioni precedenti, puoi aggiungere alcune di queste proprietà al filtro che utilizza un elenco Bloccati.
 
 >[!NOTE]
 >
@@ -80,14 +80,14 @@ Il filtro dei metadati XMP tramite l’elenco consentiti risolve questo problema
 
 1. Per aprire Configuration Manager, accedere a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Apri la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. Per applicare un filtro tramite un elenco consentito, selezionare **[!UICONTROL Applica elenco consentiti a XMP proprietà]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per XMP filtro]**.
+1. Per applicare un filtro tramite un elenco Consentiti, selezionare **[!UICONTROL Applica Inserì nell&#39;elenco Consentiti a proprietà XMP]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per XMP filtro]**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Per filtrare le proprietà bloccate XMP dopo aver applicato il filtro tramite l&#39;elenco Consentiti, specificare quelle nella casella **[!UICONTROL Nomi XML bloccati per XMP filtro]**.
+1. Per filtrare le proprietà bloccate XMP dopo aver applicato il filtro tramite elenco Consentiti, specificale nella casella **[!UICONTROL Nomi XML bloccati per XMP filtro]**.
 
    >[!NOTE]
    >
-   >L&#39;opzione **[!UICONTROL Applica elenco Bloccati a XMP proprietà]** è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è abilitato per impostazione predefinita. Per disattivare questo filtro, annulla la selezione dell&#39;opzione **[!UICONTROL Applica elenco Bloccati a XMP proprietà]** .
+   >L&#39;opzione **[!UICONTROL Applica Inserii nell&#39;elenco Bloccati a proprietà XMP]** è selezionata per impostazione predefinita. In altre parole, il filtro utilizzando un elenco Bloccati è abilitato per impostazione predefinita. Per disattivare questo filtro, annulla la selezione dell&#39;opzione **[!UICONTROL Applica Inserii nell&#39;elenco Bloccati a proprietà XMP]**.
 
 1. Salva le modifiche.
