@@ -7,9 +7,9 @@ user-guide-title: Guida utente all’amministrazione di AEM 6.5
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 translation-type: tm+mt
-source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
+source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '662'
 ht-degree: 19%
 
 ---
@@ -114,7 +114,6 @@ ht-degree: 19%
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [Commerce Cloud SAP](sap-commerce-cloud.md)
    + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
-   + [AEM Commerce - Preparazione all’RGPD](gdpr-compliance-commerce.md)
 + Integrazione {#integration}
    + [Integrazione con i servizi di terze parti](third-party-services.md)
    + [Integrazione con Salesforce](salesforce.md)
@@ -163,8 +162,7 @@ ht-degree: 19%
    + [Best practice MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - Preparazione all’RGPD](gdpr-compliance-sites.md)
    + [Gestione delle richieste RGPD per la AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-   + [AEM Commerce - Preparazione all’RGPD](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
-+ Gestione dei contenuti {#contentmanagement}
+   + [AEM Commerce - Preparazione all’RGPD](gdpr-compliance-commerce.md)
    + [Come lavorare con i pacchetti](package-manager.md)
    + [Amministrazione dei tag](tags.md)
    + [Esportatore di pagine](page-exporter.md)
