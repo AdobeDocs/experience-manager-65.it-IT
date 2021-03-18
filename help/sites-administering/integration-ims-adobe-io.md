@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
+source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ Per confermare che la configurazione funziona come previsto:
 1. Immetti i dettagli nella scheda **Impostazioni Adobe Target** :
 
    * **Autenticazione**: IMS
-   * **ID tenant**: ID tenant Adobe IMS. Consulta anche la sezione [ID tenant e codice client](#tenant-client) di seguito.
+   * **ID tenant**: ID tenant Adobe IMS. Vedi anche la sezione [ID tenant e codice client](#tenant-client) .
 
       >[!NOTE]
       >
@@ -242,7 +242,7 @@ Per confermare che la configurazione funziona come previsto:
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Quindi si utilizza `yourtenantid`.
-   * **Codice** client: Consulta la  [sezione ID tenant e ](#tenant-client) codice client di seguito.
+   * **Codice** client: Consulta la sezione ID  [tenant e ](#tenant-client) codice client .
    * **Configurazione** IMS: seleziona il nome della configurazione IMS
    * **Tipo** API: REST
    * **Configurazione** di A4T Analytics Cloud: Seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se non visualizzi la configurazione cloud, consulta la nota in [Configurazione di A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
