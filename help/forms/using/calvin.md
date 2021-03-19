@@ -1,44 +1,45 @@
 ---
 title: Verifica automatica dei moduli adattivi
 seo-title: Verifica automatica dei moduli adattivi
-description: Con Calvin è possibile creare test case in CRXDE ed eseguire test dell'interfaccia utente direttamente nel browser Web per testare accuratamente i moduli adattivi.
-seo-description: Con Calvin è possibile creare test case in CRXDE ed eseguire test dell'interfaccia utente direttamente nel browser Web per testare accuratamente i moduli adattivi.
+description: Utilizzando Calvin è possibile creare casi di test in CRXDE ed eseguire i test dell’interfaccia utente direttamente nel browser web per testare a fondo i moduli adattivi.
+seo-description: Utilizzando Calvin è possibile creare casi di test in CRXDE ed eseguire i test dell’interfaccia utente direttamente nel browser web per testare a fondo i moduli adattivi.
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
 
 
-# Test automatico dei moduli adattivi{#automate-testing-of-adaptive-forms}
+# Verifica automatica dei moduli adattivi{#automate-testing-of-adaptive-forms}
 
 ## Panoramica {#overview}
 
-I moduli adattivi sono parte integrante delle interazioni con i clienti. È importante verificare i moduli adattivi con tutte le modifiche apportate, ad esempio durante l&#39;implementazione di un nuovo fix pack o la modifica di una regola nel modulo. Tuttavia, la verifica funzionale dei moduli adattivi e di tutti i campi al loro interno può risultare noiosa.
+I moduli adattivi sono parte integrante delle interazioni dei clienti. È importante testare i moduli adattivi con ogni modifica apportata, ad esempio durante il rollout di un nuovo fix pack o la modifica di una regola nel modulo. Tuttavia, la verifica funzionale dei moduli adattivi e di tutti i campi in essi contenuti può risultare noiosa.
 
-Calvin consente di automatizzare il test dei moduli adattivi nel browser Web. Calvin utilizza l&#39;interfaccia utente di [Hobbes](/help/sites-developing/hobbes.md) per eseguire i test e fornisce i seguenti strumenti:
+Calvin consente di automatizzare i test dei moduli adattivi nel browser web. Calvin utilizza l&#39;interfaccia utente di [Hobbes](/help/sites-developing/hobbes.md) per eseguire i test e fornisce i seguenti strumenti:
 
 * API JavaScript per la creazione di test.
-* Interfaccia utente per l&#39;esecuzione di test.
+* Interfaccia utente per l’esecuzione di test.
 
-Con Calvin è possibile creare test case in CRXDE ed eseguire test dell&#39;interfaccia utente direttamente nel browser Web per verificare accuratamente i seguenti aspetti dei moduli adattivi:
+Utilizzando Calvin, puoi creare casi di test in CRXDE ed eseguire i test dell’interfaccia utente direttamente nel browser web per testare a fondo i seguenti aspetti dei moduli adattivi:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Aspetto modulo adattivo per il test</strong></td>
+   <td><strong>Aspetto del modulo adattivo da testare</strong></td>
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>Esperienza di precompilazione di un modulo adattivo</td>
+   <td>Precompilare l’esperienza di un modulo adattivo</td>
    <td>
     <ul>
      <li>Il modulo viene precompilato come previsto in base al tipo di modello dati?</li>
@@ -46,40 +47,40 @@ Con Calvin è possibile creare test case in CRXDE ed eseguire test dell&#39;inte
     </ul> </td>
   </tr>
   <tr>
-   <td>Invio dell'esperienza di un modulo adattivo</td>
+   <td>Inviare l’esperienza di un modulo adattivo</td>
    <td>
     <ul>
-     <li>I dati corretti vengono generati durante l'invio?</li>
-     <li>Il modulo viene convalidato nuovamente sul server durante l'invio?</li>
-     <li>L'azione di invio è configurata per l'esecuzione del modulo?</li>
+     <li>I dati corretti vengono generati durante l’invio?</li>
+     <li>Il modulo viene convalidato nuovamente sul server durante l’invio?</li>
+     <li>L’azione di invio è configurata per il modulo in esecuzione?</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Regole di espressione</p> <p> </p> </td>
    <td>
     <ul>
-     <li>Le espressioni associate agli oggetti modulo, ad esempio calculate, visibili, eseguono gli script dopo l'uscita da un campo, durante l'esecuzione delle relative operazioni dell'interfaccia utente?<br /> </li>
+     <li>Le espressioni associate agli oggetti modulo, come calculate, visibili, eseguono gli script dopo l'uscita da un campo, in esecuzione dopo aver eseguito le relative operazioni dell'interfaccia utente?<br /> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Convalide</td>
+   <td>Convalida</td>
    <td>
     <ul>
-     <li>Le convalide dei campi vengono eseguite come previsto dopo l'esecuzione delle operazioni?</li>
+     <li>Le convalide dei campi vengono eseguite come previsto dopo l’esecuzione delle operazioni?</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Caricamento Lazy</p> <p> </p> </td>
+   <td><p>Caricamento pigro</p> <p> </p> </td>
    <td>
     <ul>
-     <li>Quando si fa clic sulle schede (o su qualsiasi elemento di navigazione di un pannello), il codice HTML che viene recuperato dal server viene recuperato in base alla configurazione di caricamento pigro?</li>
+     <li>Quando si fa clic su schede (o su qualsiasi elemento di navigazione di un pannello), l’HTML viene recuperato dal server in base alla configurazione di caricamento pigro?</li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Interazione interfaccia</p> </td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Interazione dell'interfaccia utente con gli oggetti modulo adattivo</a></li>
+     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Verifica dell’interazione dell’interfaccia utente con gli oggetti modulo adattivo</a></li>
     </ul> </td>
   </tr>
  </tbody>
@@ -89,20 +90,20 @@ Con Calvin è possibile creare test case in CRXDE ed eseguire test dell&#39;inte
 
 Prima di utilizzare questo articolo per creare i casi di test, è necessario conoscere quanto segue:
 
-* Creazione di suite di test ed esecuzione di casi di test con [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
+* Creazione di suite di test ed esecuzione di casi di test utilizzando [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [API JavaScript di Hobbes](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
-* [API JavaScript Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+* [API JavaScript di Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Esempio: Creare una suite di test per un modulo adattivo utilizzando Hobbes come framework di test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Esempio: Crea una suite di test per un modulo adattivo utilizzando Hobbes come framework di test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
-L&#39;esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo passaggi simili a quelli indicati di seguito e modificando il codice JavaScript al punto 11, è possibile creare una suite di test personalizzata per verificare i moduli adattivi.
+L’esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo passaggi simili a quelli seguenti e modificando il codice JavaScript al passaggio 11, puoi creare una tua suite di test per testare i moduli adattivi.
 
-1. Andate al CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
-1. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo**. Immettete un nome (in questo caso afTestRegistration), specificate il tipo di nodo come cq:ClientLibraryFolder, quindi fate clic su **OK.**
+1. Passa a CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
+1. Fai clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e fai clic su **Crea** > **Crea nodo**. Immetti un nome (qui afTestRegistration), specifica il tipo di nodo come cq:ClientLibraryFolder, quindi fai clic su **OK.**
 
-   La cartella clientlibs contiene l’aspetto di registrazione dell’applicazione (JS e Init). Si consiglia di registrare tutti gli oggetti delle suite di test di Hobbes specifici per un modulo nella cartella clientlibs.
+   La cartella clientlibs contiene l&#39;aspetto di registrazione dell&#39;applicazione (JS e Init). È consigliabile registrare tutti gli oggetti delle suite di test Hobbes specifici per un modulo nella cartella clientlibs.
 
-1. Specificare i seguenti valori di proprietà nel nodo appena creato (qui afTestRegistration), quindi fare clic su **Save All**. Queste proprietà consentono a Hobbes di riconoscere la cartella come un test. Per riutilizzare la libreria client come dipendenza in altre librerie client, denominatela granite.testing.calvin.test.
+1. Specifica i seguenti valori di proprietà nel nodo appena creato (qui afTestRegistration), quindi fai clic su **Salva tutto**. Queste proprietà consentono ad Hobbes di riconoscere la cartella come un test. Per riutilizzare questa libreria client come dipendenza in altre librerie client, denominala come granite.testing.calvin.test.
 
 <table>
  <tbody>
@@ -126,21 +127,21 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 
 >[!NOTE]
 >
->La clientlib granite.testing.calvin.af contiene tutte le API dei moduli adattivi. Queste API fanno parte dello spazio dei nomi di calvin.
+>La clientlib granite.testing.calvin.af contiene tutte le API dei moduli adattivi. Queste API fanno parte dello spazio dei nomi calvin.
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)**, quindi fare clic su **Create** > **Create File**. Denominate il file js.txt e fate clic su **OK**.
-1. Nel file js.txt aggiungete il testo seguente:
+1. Fai clic con il pulsante destro del mouse sul nodo del test (qui **afTestRegistration)**, quindi fai clic su **Crea** > **Crea file**. Denomina il file js.txt e fai clic su **OK**.
+1. Nel file js.txt, aggiungi il seguente testo:
 
    ```javascript
    #base=.
    js.txt
    ```
 
-1. Fate clic su **Salva tutto**, quindi chiudete il file js.txt.
-1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** e fare clic su **Create** > **Create File**. Denominate il file init.js e fate clic su **OK**.
-1. Copiate il codice seguente nel file init.js e fate clic su **Salva tutto**:
+1. Fai clic su **Salva tutto**, quindi chiudi il file js.txt.
+1. Fai clic con il pulsante destro del mouse sul nodo del test (qui **afTestRegistration)** e fai clic su **Crea** > **Crea file**. Denomina il file init.js e fai clic su **OK**.
+1. Copia il seguente codice nel file init.js e fai clic su **Salva tutto**:
 
    ```javascript
    (function(window, hobs) {
@@ -156,29 +157,29 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    }(window, window.hobs));
    ```
 
-   Il codice riportato sopra crea una suite di test denominata **Modulo adattivo - Demo Test**. Per creare una suite di test con un nome diverso, modificate di conseguenza il nome.
+   Il codice riportato sopra crea una suite di test denominata **Modulo adattivo - Test demo**. Per creare una suite di test con un nome diverso, modifica il nome di conseguenza.
 
-1. Fare clic su **Crea** > **Crea nodo** per creare un nodo sotto la cartella clientlib per ciascun modulo da verificare. In questo esempio viene utilizzato un nodo denominato **testForm** per testare un modulo adattivo denominato **testForm**. Specificate le seguenti proprietà e fate clic su **OK**:
+1. Fai clic su **Crea** > **Crea nodo** per creare un nodo sotto la cartella clientlib per ciascun modulo da testare. Questo esempio utilizza un nodo denominato **testForm** per testare un modulo adattivo denominato **testForm**. Specifica le seguenti proprietà e fai clic su **OK**:
 
    * Nome: testForm (nome del modulo)
    * Tipo: cq:ClientLibraryFolder
 
-1. Aggiungete le seguenti proprietà al nodo appena creato (qui testForm) per verificare un modulo adattivo:
+1. Aggiungi le seguenti proprietà al nodo appena creato (qui testForm) per testare un modulo adattivo:
 
    | **Proprietà** | **Tipo** | **Valore** |
    |---|---|---|
-   | categorie | Stringa[] | granite.testing.hobbes.test, granite.testing.hobbes.test.testForm |
+   | categorie | Stringa[] | granite.testing.hobbes.test, granite.testing.hobbes.test.test.testForm |
    | dipendenze | Stringa[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
-   >In questo esempio viene utilizzata una dipendenza da client lib granite.testing.calvin.test per una migliore gestione. In questo esempio viene aggiunta anche una categoria client lib, &quot;granite.testing.hobbes.test.testForm&quot;, per riutilizzare, se necessario, questa versione client.
+   >In questo esempio viene utilizzata una dipendenza da client lib granite.testing.calvin.test per una migliore gestione. Questo esempio aggiunge anche una categoria client lib, &quot;granite.testing.hobbes.test.testForm&quot; per riutilizzare questa libreria client, se necessario.
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. Fare clic con il pulsante destro del mouse sulla cartella creata per il modulo di prova (qui testForm) e selezionare **Crea** > **Crea file**. Assegnare al file il nome scriptingTest.js e aggiungere il codice seguente, quindi fare clic su **Salva tutto.**
+1. Fare clic con il pulsante destro del mouse sulla cartella creata per il modulo di test (qui testForm) e selezionare **Crea** > **Crea file**. Denomina il file scriptingTest.js e aggiungi il seguente codice al file, quindi fai clic su **Salva tutto.**
 
-   Per utilizzare il codice seguente per testare un altro modulo adattivo, modificare il percorso e il nome del modulo in **navigateTo** (righe 11, 36 e 62) e i rispettivi casi di test. Per ulteriori informazioni sulle API per il test di diversi aspetti dei moduli e degli oggetti modulo, vedere [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Per utilizzare il codice seguente per testare un altro modulo adattivo, modifica il percorso e il nome del modulo in **navigaA** (righe 11, 36 e 62) e i rispettivi casi di test. Per ulteriori informazioni sulle API per il test di diversi aspetti dei moduli e degli oggetti modulo, vedere [API Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,41 +273,41 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
     }(window, window.hobs));
    ```
 
-   Viene creato il test case. Per testare i moduli adattivi tramite Hobbes, eseguite il test case. Per i passaggi per l&#39;esecuzione dei casi di test, vedere [Esecuzione di test nell&#39;interfaccia utente tramite test automatizzati](/help/sites-developing/hobbes.md).
+   Viene creato il test case. Procedi con l’esecuzione del test case per testare i moduli adattivi tramite Hobbes. Per i passaggi per l’esecuzione dei casi di test, consulta [Esecuzione di test in Test della propria interfaccia utente tramite l’uso di test automatici](/help/sites-developing/hobbes.md).
 
-Potete anche installare il pacchetto nel file allegato SampleTestPackage.zip per ottenere gli stessi risultati dei passaggi descritti in Esempio: Creare una suite di test per un modulo adattivo utilizzando Hobbes come framework di test.
+Puoi anche installare il pacchetto nel file allegato SampleTestPackage.zip per ottenere gli stessi risultati dei passaggi descritti in Esempio: Crea una suite di test per un modulo adattivo utilizzando Hobbes come framework di test.
 
 [Ottieni file](assets/sampletestpackage.zip)
 
-## Test dell&#39;interfaccia utente mediante test automatici {#testing-your-ui-using-automated-tests}
+## Test della vostra interfaccia utente tramite l&#39;uso di test automatici {#testing-your-ui-using-automated-tests}
 
-### Esecuzione di una singola suite di test {#running-a-single-test-suite}
+### Esecuzione di una suite di test singola {#running-a-single-test-suite}
 
-Le suite di test possono essere eseguite singolarmente. Quando eseguite una suite di test, la pagina cambia man mano che vengono eseguiti i casi di test e le relative azioni, e i risultati vengono visualizzati dopo il completamento del test. Le icone indicano i risultati.
+Le suite di test possono essere eseguite singolarmente. Quando esegui una suite di test, la pagina cambia man mano che vengono eseguiti i casi di test e le relative azioni e i risultati vengono visualizzati dopo il completamento del test. Le icone indicano i risultati.
 
-Un&#39;icona a forma di segno di spunta indica un test superato: ![segno di spunta](assets/checkmark.png)
+Un’icona a forma di segno di spunta indica un test superato: ![segno di spunta](assets/checkmark.png)
 
-Un&#39;icona &quot;X&quot; indica un test non riuscito: ![incrocio](assets/cross.png)
+Un&#39;icona &quot;X&quot; indica un test non riuscito: ![croce](assets/cross.png)
 
 Per eseguire una suite di test:
 
-1. Nel pannello Test, fate clic o toccate il nome del test case da eseguire per espandere i dettagli delle azioni.
+1. Nel pannello Test , tocca o fai clic sul nome del Test Case da eseguire per espandere i dettagli delle azioni.
 
    ![1_tapnameoftestcase](assets/1_tapnameoftestcase.png)
 
-1. Tocca o fai clic sul pulsante Esegui test. ![runtestcase](assets/runtestcase.png)
+1. Tocca o fai clic sul pulsante Esegui test . ![raccoglitore](assets/runtestcase.png)
 
    ![2_clickrun](assets/2_clickrun.png)
 
-1. Il segnaposto viene sostituito con il contenuto della pagina durante l&#39;esecuzione del test.
+1. Il segnaposto viene sostituito con il contenuto della pagina durante l’esecuzione del test.
 
    ![3_pagecontent](assets/3_pagecontent.png)
 
-1. Esaminare i risultati del test case toccando o facendo clic sulla descrizione per aprire il pannello Risultati. Toccando o facendo clic sul nome del test case nel pannello Risultati vengono visualizzati tutti i dettagli.
+1. Rivedi i risultati del Test Case toccando o facendo clic sulla descrizione per aprire il pannello Risultato. Per visualizzare tutti i dettagli, tocca o fai clic sul nome del test case nel pannello Risultato .
 
-   ![4_reviewResults](assets/4_reviewresults.png)
+   ![4_risultati di revisione](assets/4_reviewresults.png)
 
-La verifica dei AEM moduli adattivi è simile alla verifica dell&#39;interfaccia utente AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, consultare i seguenti argomenti in [Verifica dell&#39;interfaccia utente](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+I passaggi per testare i moduli adattivi AEM sono simili ai passaggi per testare l’interfaccia utente AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, consulta i seguenti argomenti in [Verifica dell&#39;interfaccia utente](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualizzazione delle suite di test
 * Esecuzione di più test
@@ -325,15 +326,15 @@ La verifica dei AEM moduli adattivi è simile alla verifica dell&#39;interfaccia
   </tr>
   <tr>
    <td><p>Caso di prova</p> </td>
-   <td><p>Un test case rappresenta un'attività eseguita dall'utente utilizzando l'interfaccia utente. Aggiungete i casi di test alla suite di test per verificare le attività eseguite dagli utenti.</p> </td>
+   <td><p>Un test case rappresenta un'attività eseguita dall'utente utilizzando l'interfaccia utente. Aggiungi i casi di test alla suite di test per testare le attività eseguite dagli utenti.</p> </td>
   </tr>
   <tr>
    <td><p>Azioni</p> </td>
-   <td><p>Le azioni sono metodi che eseguono un gesto nell'interfaccia utente, ad esempio facendo clic su un pulsante o riempiendo una casella di input con un valore.</p> <p>I metodi delle classi hobs.actions.Asserts, hobs.actions.Core e hobs.utils.af sono azioni utilizzabili nei test. Tutte le azioni vengono eseguite in modo sincrono.</p> </td>
+   <td><p>Le azioni sono metodi che eseguono un gesto nell’interfaccia utente, ad esempio fare clic su un pulsante o riempire una casella di input con un valore.</p> <p>I metodi delle classi hobs.actions.Asserts, hobs.actions.Core e hobs.utils.af sono azioni che puoi utilizzare nei test. Tutte le azioni vengono eseguite in modo sincrono.</p> </td>
   </tr>
   <tr>
    <td><p>Ambiente di authoring o pubblicazione</p> </td>
-   <td><p>In generale, i moduli possono essere sottoposti a test in ambiente di creazione e pubblicazione. In caso di ambiente di pubblicazione, per impostazione predefinita, l'accesso per eseguire il test è limitato. Questo perché tutte le librerie client correlate al runtime di test si trovano all'interno della struttura /libs nella struttura JCR.</p> </td>
+   <td><p>In generale, i moduli possono essere testati nell’ambiente di authoring o di pubblicazione. In caso di ambiente di pubblicazione, per impostazione predefinita, l’accesso per eseguire il test è limitato. Questo perché tutte le librerie client relative al runner di test si trovano all'interno di /libs nella struttura JCR.</p> </td>
   </tr>
  </tbody>
 </table>
