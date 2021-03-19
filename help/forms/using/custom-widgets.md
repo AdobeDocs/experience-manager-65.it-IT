@@ -1,8 +1,8 @@
 ---
-title: Creazione di un aspetto personalizzato nei moduli HTML5
-seo-title: Creazione di un aspetto personalizzato nei moduli HTML5
-description: Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
-seo-description: Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+title: Creare un aspetto personalizzato nei moduli HTML5
+seo-title: Creare un aspetto personalizzato nei moduli HTML5
+description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+seo-description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -10,32 +10,33 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
+feature: Forms Mobile
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
 
-# Creare un aspetto personalizzato nei moduli HTML5{#create-custom-appearances-in-html-forms}
+# Crea aspetto personalizzato nei moduli HTML5{#create-custom-appearances-in-html-forms}
 
-Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per ulteriori informazioni, vedere [Struttura di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
+Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework appearances. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere [Struttura di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
 
-![Un esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
+![Esempio di widget predefiniti e personalizzati](assets/custom-widgets.jpg)
 
-Un esempio di widget predefinito e personalizzato
+Esempio di widget predefiniti e personalizzati
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Creazione di un profilo  {#create-a-profile-nbsp}
+### Creare un profilo  {#create-a-profile-nbsp}
 
-Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, vedere [Creazione di un profilo personalizzato](/help/forms/using/custom-profile.md).
+Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, consulta [Creazione di un profilo personalizzato](/help/forms/using/custom-profile.md).
 
 ### Creare un widget {#create-a-widget}
 
-I moduli HTML5 forniscono un&#39;implementazione del framework di widget che può essere esteso per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/sostituendo le funzioni elencate di seguito.
+I moduli HTML5 forniscono un’implementazione del framework di widget che può essere esteso per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/ignorando le funzioni di seguito menzionate.
 
 <table>
  <tbody>
@@ -45,40 +46,40 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
   </tr>
   <tr>
    <td>rendering</td>
-   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L'elemento HTML predefinito deve essere di tipo attivabile. Ad esempio, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (focus, click) richiedono delle modifiche. </td>
+   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L'elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e che XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è l'evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
-   <td>Restituisce una mappa che fornisce informazioni dettagliate sulle azioni da eseguire in caso di modifica di un'opzione. Le chiavi sono le opzioni fornite al widget e i valori sono le funzioni che vengono chiamate ogni volta che viene rilevata una modifica in tale opzione. Il widget fornisce handler per tutte le opzioni comuni (tranne valore e displayValue)</td>
+   <td>Restituisce una mappa che fornisce dettagli sull'azione da eseguire in caso di modifica di un'opzione. Le chiavi sono le opzioni fornite al widget e i valori sono le funzioni che vengono chiamate ogni volta che viene rilevata una modifica in tale opzione. Il widget fornisce gestori per tutte le opzioni comuni (ad eccezione di value e displayValue)</td>
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAM (ad esempio, in corrispondenza dell'evento exit di un oggetto textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td>
+   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAM (ad esempio, in caso di uscita da un evento textField). L'implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l’opzione .</td>
   </tr>
   <tr>
    <td>showValue</td>
-   <td>Per impostazione predefinita, in XFA all'evento enter, viene visualizzato il valore rawValue del campo. Questa funzione viene chiamata per mostrare il valore rawValue all'utente. </td>
+   <td>Per impostazione predefinita, in XFA all’evento enter viene visualizzato il valore rawValue del campo. Questa funzione viene chiamata per mostrare il rawValue all'utente. </td>
   </tr>
   <tr>
    <td>showDisplayValue</td>
-   <td>Per impostazione predefinita, in XFA all'uscita, viene visualizzato il valore formattedValue del campo. Questa funzione viene chiamata per mostrare l'oggetto formattedValue all'utente. </td>
+   <td>Per impostazione predefinita, in XFA all'evento di uscita viene visualizzato il valore formattedValue del campo. Questa funzione viene chiamata per mostrare l'oggetto formattedValue all'utente. </td>
   </tr>
  </tbody>
 </table>
 
-Per creare un widget personalizzato, nel profilo creato sopra, includete i riferimenti del file JavaScript che contiene funzioni sostituite e funzioni aggiunte di recente. Ad esempio, *sliderNumericFieldWidget* è un widget per i campi numerici. Per utilizzare il widget nel profilo nella sezione di intestazione, includi la seguente riga:
+Per creare un widget personalizzato, nel profilo creato sopra, includi i riferimenti del file JavaScript che contiene funzioni ignorate e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per i campi numerici. Per utilizzare il widget nel tuo profilo nella sezione intestazione, includi la seguente riga:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registrazione di un widget personalizzato con il motore di script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registra widget personalizzato con motore di scripting XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando il codice widget personalizzato è pronto, registrare il widget con il motore di script utilizzando l&#39;API `registerConfig`per [Form Bridge](/help/forms/using/form-bridge-apis.md). È necessario widgetConfigObject come input.
+Quando il codice del widget personalizzato è pronto, registra il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). Richiede widgetConfigObject come input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -90,7 +91,7 @@ window.formBridge.registerConfig("widgetConfig",
 
 #### widgetConfigObject {#widgetconfigobject}
 
-La configurazione del widget è fornita come oggetto JSON (una raccolta di coppie di valori chiave) in cui la chiave identifica i campi e il valore rappresenta il widget da utilizzare con tali campi. Esempio di configurazione:
+La configurazione del widget viene fornita come un oggetto JSON (una raccolta di coppie di valori chiave) in cui la chiave identifica i campi e il valore rappresenta il widget da utilizzare con tali campi. Esempio di configurazione:
 
 ```
 *{*
@@ -101,10 +102,10 @@ La configurazione del widget è fornita come oggetto JSON (una raccolta di coppi
 }*
 ```
 
-dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un particolare campo, un set di campi di un particolare tipo o tutti i campi. Di seguito è riportato il valore dell’identificatore in diversi casi:
+dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un particolare campo, un insieme di campi di un particolare tipo o tutti i campi. Di seguito è riportato un elenco del valore dell’identificatore in diversi casi:
 
 | Tipo di identificatore | modulo | Descrizione |
 |---|---|---|
 | Campo particolare con nome campo | Identificatore:&quot;div.fieldname&quot; | Viene eseguito il rendering di tutti i campi con il nome &quot;nome campo&quot; utilizzando il widget. |
-| Tutti i campi di tipo &quot;type&quot;(dove type è NumericField, DateField e così via): | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield in quanto questi campi non sono supportati. |
+| Tutti i campi di tipo &quot;type&quot; (in cui il tipo è NumericField, DateField e così via).: | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield perché questi campi non sono supportati. |
 | Tutti i campi | Identificatore: &quot;div.field&quot; |  |
