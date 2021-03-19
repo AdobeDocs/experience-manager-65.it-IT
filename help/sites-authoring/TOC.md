@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guida utente all’authoring di AEM 6.5
 breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
+feature-set: Experience Manager Sites
+feature: 'Authoring  '
+role: Professionista
 translation-type: tm+mt
-source-git-commit: a74be2627dd63c246eaf4576827f1b2ea16d3146
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 88%
+source-wordcount: '301'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +21,7 @@ ht-degree: 88%
 # Guida utente all’authoring di AEM 6.5 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per l’authoring di AEM {#essentials}
++ Attività, strumenti e concetti essenziali per AEM authoring {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
