@@ -1,29 +1,30 @@
 ---
-title: Parole chiave moduli adattivi
-seo-title: Parole chiave moduli adattivi
+title: Parole chiave per moduli adattivi
+seo-title: Parole chiave per moduli adattivi
 description: Non è possibile utilizzare queste parole riservate come identificatori nei moduli adattivi.
 seo-description: Non è possibile utilizzare queste parole riservate come identificatori nei moduli adattivi.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 15%
+source-wordcount: '225'
+ht-degree: 16%
 
 ---
 
 
 # Parole chiave per moduli adattivi {#adaptive-forms-keywords}
 
-Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
+Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
 
 <table>
  <tbody>
   <tr>
-   <td><p>intializzare</p> </td>
+   <td><p>intiualizzare</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccur</p> </td>
   </tr>
@@ -55,7 +56,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   <tr>
    <td><p>calcExp</p> </td>
    <td><p>queueExpressions</p> </td>
-   <td><p>instance</p> </td>
+   <td><p>istanze</p> </td>
   </tr>
   <tr>
    <td><p>titolo</p> </td>
@@ -65,7 +66,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visit</p> </td>
+   <td><p>visita</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -104,7 +105,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   </tr>
   <tr>
    <td><p>mandatory</p> </td>
-   <td><p>panel</p> </td>
+   <td><p>pannello</p> </td>
    <td><p>templateId</p> </td>
   </tr>
   <tr>
@@ -135,7 +136,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   <tr>
    <td><p>altezza</p> </td>
    <td><p>showComment</p> </td>
-   <td><p>visible</p> </td>
+   <td><p>visibile</p> </td>
   </tr>
   <tr>
    <td><p>cssClassName</p> </td>
@@ -188,33 +189,33 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
    <td><p>setFocus</p> </td>
   </tr>
   <tr>
-   <td><p>completionExp</p> </td>
+   <td><p>completeExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>activeInstance</p> </td>
   </tr>
   <tr>
-   <td><p>completionExpReq</p> </td>
-   <td><p>completionScript</p> </td>
+   <td><p>completeExpReq</p> </td>
+   <td><p>completeScript</p> </td>
    <td><p>activePart</p> </td>
   </tr>
   <tr>
    <td><p>toolbar</p> </td>
-   <td><p>completionBeforeMessage</p> </td>
+   <td><p>completeBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>completionAfterMessage</p> </td>
+   <td><p>completeAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceIndex</p> </td>
-   <td><p>completionSuccessScript</p> </td>
+   <td><p>completeSuccessScript</p> </td>
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
-   <td><p>summary</p> </td>
-   <td><p>completionFailedScript</p> </td>
+   <td><p>sommario</p> </td>
+   <td><p>completeFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
@@ -224,11 +225,11 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   </tr>
   <tr>
    <td><p>fetchedFromService</p> </td>
-   <td><p>ripetablePanelId</p> </td>
+   <td><p>repeatPanelId</p> </td>
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>ripetablePanelPath</p> </td>
+   <td><p>repeatPanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
@@ -240,4 +241,4 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate sopra, evitare di utilizzare nomi simili a [moduli adattivi API JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate sopra, evita di utilizzare nomi simili alle [API JavaScript per moduli adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
