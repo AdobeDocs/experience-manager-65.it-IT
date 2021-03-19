@@ -8,10 +8,11 @@ topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6820'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-La funzione editor di regole in Adobe Experience Manager Forms consente agli utenti aziendali e agli sviluppatori di moduli di scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni preimpostate, input dell’utente e azioni dell’utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
+La funzione editor di regole in Adobe Experience Manager Forms consente agli utenti aziendali e agli sviluppatori di Forms di scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni preimpostate, input dell’utente e azioni dell’utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
 L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L’editor delle regole offre un editor visivo per tutti gli utenti. Inoltre, solo per i moduli che alimentano gli utenti, l&#39;editor di regole fornisce un editor di codice per scrivere regole e script. Alcune delle azioni chiave che è possibile eseguire sugli oggetti modulo adattivo utilizzando le regole sono:
 
@@ -98,7 +99,7 @@ L&#39;editor di regole fornisce un set di tipi di regole predefiniti che è poss
 
 ### Quando {#whenruletype}
 
-Il tipo di regola **When** segue il costrutto di regola **condition-action-alternate action** o talvolta solo il costrutto **condition-action**. In questo tipo di regola, devi prima specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione è soddisfatta ( `True`). Quando utilizzi il tipo di regola When, puoi utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
+Il tipo di regola **When** segue il costrutto di regola **condition-action-alternate action** o talvolta solo il costrutto **condition-action**. In questo tipo di regola è innanzitutto necessario specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione è soddisfatta ( `True`). Quando utilizzi il tipo di regola When, puoi utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
 Utilizzando il tipo di regola When, è possibile valutare una condizione di un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
@@ -138,11 +139,11 @@ Quando scrivi una regola When, puoi attivare l&#39;azione Clear Value Of (Cancel
 
 Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio modello dati modulo presenta molti vantaggi e l’approccio consigliato per richiamare un servizio.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, consulta [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedere [Integrazione dati di AEM Forms](/help/forms/using/data-integration.md).
 
-**Imposta il valore** diComputes e imposta il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output di un servizio del modello dati di modulo configurato. Quando scegli l’opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati modulo nell’istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
+**Imposta il valore** diComputes e imposta il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output di un servizio del modello dati di modulo configurato. Quando si sceglie l’opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati modulo nell’istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, consulta [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedere [Integrazione dati di AEM Forms](/help/forms/using/data-integration.md).
 
 Il tipo di regola **Imposta proprietà** consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione condizione.
 
@@ -350,7 +351,7 @@ Visualizza il titolo dell’oggetto modulo adattivo attraverso il quale è stato
 
 ### B. Oggetti e funzioni del modulo {#b-form-objects-and-functions-br}
 
-Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti modulo]** e **[!UICONTROL Funzioni]**.
+Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti Forms]** e **[!UICONTROL Funzioni]**.
 
 La scheda Oggetti modulo mostra una visualizzazione gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Quando si scrive una regola, è possibile trascinare gli oggetti modulo nell’editor di regole. Durante la creazione o la modifica di una regola quando si trascina un oggetto o una funzione in un segnaposto, il segnaposto assume automaticamente il tipo di valore appropriato.
 
@@ -362,7 +363,7 @@ La scheda Funzioni include un set di funzioni integrate quali Somma di, Min di, 
 
 >[!NOTE]
 >
->È possibile eseguire una ricerca di testo sui nomi e i titoli di oggetti e funzioni nelle schede Oggetti e funzioni di Forms.
+>È possibile eseguire la ricerca del testo sui nomi e i titoli di oggetti e funzioni nelle schede Oggetti e Funzioni di Forms.
 
 Nella struttura ad albero a sinistra degli oggetti modulo è possibile toccare gli oggetti modulo per visualizzare le regole applicate a ciascuno di essi. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, consulta [Copia-incolla regole](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
 
@@ -382,7 +383,7 @@ Gli utenti del gruppo forms-power-users possono accedere all&#39;editor di codic
 
 AEM Forms tiene traccia della modalità editor regole utilizzata per ultima per scrivere una regola. Quando avvii l&#39;editor di regole la prossima volta, questo si apre in quella modalità. Tuttavia, puoi anche configurare una modalità predefinita per aprire l’editor di regole nella modalità specificata. Per eseguire questa operazione:
 
-1. Vai alla console web AEM all’indirizzo `https://[host]:[port]/system/console/configMgr`.
+1. Vai AEM console Web all&#39;indirizzo `https://[host]:[port]/system/console/configMgr`.
 1. Fare clic per modificare **[!UICONTROL Configurazione canale web per moduli adattivi e comunicazioni interattive]**.
 1. scegli **[!UICONTROL Editor visivo]** o **[!UICONTROL Editor di codice]** dal menu a discesa **[!UICONTROL Modalità predefinita per Editor regole]**
 
@@ -475,11 +476,11 @@ Esegui i seguenti passaggi per scrivere le regole:
 
 1. Nel campo espressione:
 
-   * Seleziona o trascina dalla scheda Oggetto Forms il campo **Stipendio** nel primo oggetto **Rilascia o seleziona qui** .
+   * Seleziona o trascina dalla scheda Oggetto Forms il campo **Salario** nel primo oggetto **Rilascia o seleziona qui** .
 
    * Selezionare **Più** dal campo **Seleziona operatore**.
 
-   * Selezionare o trascinare il contenuto dalla scheda Oggetto Forms nel campo **Stipendio del coniuge** nell’altro oggetto **Rilascia o selezionare qui**.
+   * Seleziona o trascina la selezione dalla scheda Oggetto Forms nel campo **Stipendio del coniuge** nell’altro oggetto **Rilascia o seleziona qui** .
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -503,7 +504,7 @@ Esegui i seguenti passaggi per scrivere le regole:
 
    Nell’istruzione When:
 
-   * Selezionare o trascinare la selezione dalla scheda Oggetto Forms nel campo **Stato civile** del primo oggetto **Drop oppure selezionare qui**.
+   * Seleziona o trascina dalla scheda Oggetto Forms il campo **Stato civile** nel primo oggetto **Rilascia o seleziona qui** .
 
    * Seleziona i **s uguale a** dal campo **Seleziona operatore**.
 
@@ -771,7 +772,7 @@ Se l&#39;utente indica di aver soggiornato presso il suo indirizzo residenziale 
 
 ## Impatto dell&#39;editor di regole sugli script esistenti {#impact-of-rule-editor-on-existing-scripts}
 
-Nelle versioni di AEM Forms precedenti al feature pack 1 di AEM 6.1 Forms , gli autori e gli sviluppatori dei moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamento dinamico ai moduli adattivi. La scheda Script viene ora sostituita dall’editor di regole.
+Nelle versioni AEM Forms precedenti al feature pack 1 di Forms 6.1, gli autori e gli sviluppatori dei moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere un comportamento dinamico ai moduli adattivi. La scheda Script viene ora sostituita dall’editor di regole.
 
 Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell’editor di regole. Sebbene non sia possibile visualizzarli o modificarli nell&#39;editor visivo, se fai parte del gruppo utenti di forms-power-users puoi modificare gli script nell&#39;editor di codice.
 
@@ -793,7 +794,7 @@ In un modulo di domanda di prestito, si desidera acquisire se il richiedente è 
 
 * Un pulsante di scelta **Sei un cliente Geometrixx esistente?**, che fornisce le opzioni Sì e No. Il valore per Sì è **0** e No è **1**.
 
-* Un campo di testo, **ID cliente Geometrixx**, per specificare l’ID cliente.
+* Un campo di testo **Geometrixx ID cliente** per specificare l&#39;ID cliente.
 
 Quando scrivi una regola When sul pulsante di scelta per implementare questo comportamento, la regola viene visualizzata come segue nell’editor di regole visive.  ![esempio di regola](assets/when-rule-example.png)
 
