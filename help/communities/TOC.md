@@ -5,24 +5,27 @@ audience: end-user
 user-guide-title: Guida utente di AEM 6.5 Communities
 breadcrumb-title: Guida di Communities
 user-guide-description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
+feature-set: Experience Manager
+feature: Communities
+role: Professionista
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 10%
+source-wordcount: '504'
+ht-degree: 12%
 
 ---
 
 
-# Guida di Adobe Experience Manager 6.5 Communities {#communities}
+# Guida a Adobe Experience Manager 6.5 Communities {#communities}
 
 + [Guida di Communities](home.md)
-+ Introduzione a AEM Communities {#introduction}
++ Introduzione ad AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
    + [Panoramica di AEM Communities](overview.md)
    + [Note sulla versione di AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Guida introduttiva di AEM Communities](getting-started.md)
-   + [Guida introduttiva ad AEM Communities per l’abilitazione](getting-started-enablement.md)
+   + [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
    + [Creare un nuovo sito della community](create-site.md)
    + [Esperienza con il sito pubblicato](published-site.md)
@@ -46,10 +49,10 @@ ht-degree: 10%
    + [Moderazione dei contenuti della community](moderate-ugc.md)
    + [Configurazione e-mail](email.md)
    + [Notifiche di Communities](notifications.md)
-   + [Abbonamenti community](subscriptions.md)
+   + [Iscrizioni alle community](subscriptions.md)
    + [Punteggio e badge delle community](implementing-scoring.md)
    + [Gestione di utenti e gruppi di utenti](users.md)
-   + [Console Gruppi community](groups.md)
+   + [Console Gruppi per community](groups.md)
    + [Accesso social con Facebook e Twitter](social-login.md)
    + [SRP - Archiviazione dei contenuti della community](working-with-srp.md)
    + [Console Sites di Communities](sites-console.md)
@@ -67,7 +70,7 @@ ht-degree: 10%
    + [FFmpeg per Communities](ffmpeg.md)
    + [Moderazione nel contesto](in-context.md)
    + [Punteggio e badge avanzati](advanced.md)
-   + [ASRP - Provider di risorse di archiviazione Adobe](asrp.md)
+   + [ASRP - Provider risorsa di archiviazione Adobe](asrp.md)
    + [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md)
    + [Come impostare MongoDB per la demo](demo-mongo.md)
    + [DSRP - Provider risorsa di archiviazione database relazionale](dsrp.md)
