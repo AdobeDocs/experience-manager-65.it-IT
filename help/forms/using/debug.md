@@ -1,34 +1,35 @@
 ---
-title: Debug di moduli HTML5
-seo-title: Debug di moduli HTML5
-description: L'elenco dei documenti consente di risolvere diversi problemi noti.
-seo-description: L'elenco dei documenti consente di risolvere diversi problemi noti.
+title: Debug dei moduli HTML5
+seo-title: Debug dei moduli HTML5
+description: L'elenco dei documenti descrive i passaggi necessari per risolvere i vari problemi noti.
+seo-description: L'elenco dei documenti descrive i passaggi necessari per risolvere i vari problemi noti.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
+feature: Forms Mobile
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
 
 
-# Debug di moduli HTML5 {#debugging-html-forms}
+# Debug dei moduli HTML5 {#debugging-html-forms}
 
-Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il logger per ottenere e rivedere i registri per individuare eventuali errori o avvisi. Per ulteriori dettagli sulla registrazione dei moduli HTML5, vedere [Generazione di registri per i moduli HTML5](/help/forms/using/enable-logs.md).
+Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il logger per ottenere e rivedere i registri in caso di errori/avvisi. Per ulteriori dettagli sulla registrazione dei moduli HTML5, vedere [Generazione di registri per i moduli HTML5](/help/forms/using/enable-logs.md).
 
-## Problema: Quando si esegue il rendering del modulo, viene visualizzata la pagina di eccezione org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
+## Problema: Quando esegui il rendering del modulo, visualizzo la pagina di eccezione org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-Nei dettagli dell&#39;eccezione, cercare la parola **causata da**.
+Nei dettagli dell&#39;eccezione, cerca la parola **causata da**.
 
 È probabile che uno o più parametri nell’URL non siano corretti.
 
-Controllate i seguenti parametri:
+Verifica i seguenti parametri:
 
 <table>
  <tbody>
@@ -38,7 +39,7 @@ Controllate i seguenti parametri:
   </tr>
   <tr>
    <td>template</td>
-   <td>Nome del file del modello</td>
+   <td>Il nome del file del modello</td>
   </tr>
   <tr>
    <td>contentRoot</td>
@@ -46,7 +47,7 @@ Controllate i seguenti parametri:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: Percorso definisce il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: Il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -57,41 +58,41 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile eseguire il rendering di un modulo (viene visualizzato un messaggio di errore) {#problem-unable-to-render-form}
 
-1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, vedere [Parametri di rendering](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Accedete a CRX Package Manager (all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/packmgr/index.jsp) e verificate che i pacchetti seguenti siano installati correttamente:
+1. Assicurati che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consulta [Parametri di rendering](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
+1. Accedi a CRX Package Manager (all&#39;indirizzo https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) e controlla se i seguenti pacchetti sono correttamente installati:
 
-   * adobe-lc-forms-content-pkg-&lt;versione>.zip
-   * adobe-lc-forms-runtime-pkg-&lt;versione>.zip
+   * adobe-lc-forms-content-pkg-&lt;version>.zip
+   * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Accedete alla console Web di CQ (console Felix) all&#39;indirizzo https://&lt;server>:&lt;porta>/sistema/console/bundle.
+1. Accedi alla console Web CQ (console Felix) all&#39;indirizzo https://&lt;server>:&lt;port>/system/console/bundles.
 
-   Verificate che lo stato dei seguenti bundle sia &quot;attivo&quot;:
+   Assicurati che lo stato dei seguenti bundle sia &quot;attivo&quot;:
 
    * scala-lang.bundle [osgi]
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   *  Modulo di rendering Forms XFA Adobe
+   * Adobe XFA Forms Renderer
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   *  Adobe XFA Forms LC Connector
+   * Connettore Adobe XFA Forms LC
 
-   (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
+   (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
-## Problema: Rendering del modulo senza stili {#problem-form-renders-without-styles}
+## Problema: Rendering di moduli senza stili {#problem-form-renders-without-styles}
 
-1. Nel browser, aprire **Developer Tools**. Verifica che profile.css sia disponibile.
-1. Se il file profile.css non è disponibile, accedete a CRX DE all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/de.
-1. Nella gerarchia delle cartelle a sinistra, andate a /etc/clientlibs/fd/xfaforms/. Aprite i file css.txt elencati nelle cartelle.
+1. Nel browser, apri **Strumenti di sviluppo**. Assicurati che profile.css sia disponibile.
+1. Se il file profile.css non è disponibile, accedi a CRX DE all&#39;indirizzo https://&lt;server>:&lt;port>/crx/de.
+1. Nella gerarchia delle cartelle a sinistra, vai a /etc/clientlibs/fd/xfaforms/. Apri i file css.txt elencati nelle cartelle.
 
    * profilo
    * runtime
-   * scrollnav
+   * scorrimento
    * toolbar
    * xfalib
 
-1. Verificate che i file citati in css.txt siano presenti in CRX DE lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/xfalib/css.
+1. Verifica che i file menzionati all&#39;interno di css.txt siano presenti in CRX DE lite in /libs/fd/xfaforms/clientlibs/xfalib/css.
 
    ```css
    #base=css
@@ -102,43 +103,43 @@ Controllate i seguenti parametri:
    listboxwidget.css
    ```
 
-1. Se i file indicati non sono disponibili, installate di nuovo il pacchetto adobe-lc-forms-runtime-pkg-&lt;versione>.zip.
+1. Se i file menzionati non sono disponibili, installa di nuovo il pacchetto adobe-lc-forms-runtime-pkg-&lt;version>.zip.
 
-### Problema: Errore imprevisto rilevato {#problem-unexpected-error-encountered}
+### Problema: Errore imprevisto {#problem-unexpected-error-encountered}
 
-1. Nell&#39;URL del modulo, aggiungere un parametro di query debugClientLibs e impostarne il valore su true (ad esempio: https://&lt;server>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;percorso>&amp;template=&lt;nome del file xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. Nel browser desktop come Chrome, andate a Strumenti per sviluppatori -> Console.
-1. Aprire i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, vedere [registri per i moduli HTML5](/help/forms/using/enable-logs.md).
-1. Vai a Strumenti per sviluppatori > Console. Utilizzare la traccia dello stack per individuare il codice che causa l&#39;errore. Eseguire il debug dell&#39;errore per risolvere il problema.
+1. Nell’URL del modulo, aggiungere un parametro di query debugClientLibs e impostarne il valore su true (ad esempio: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;nome del file xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Nel browser desktop come chrome, vai a Strumenti per sviluppatori -> Console.
+1. Apri i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, consulta [registri per i moduli HTML5](/help/forms/using/enable-logs.md).
+1. Vai a Strumenti per sviluppatori -> Console. Utilizza la traccia dello stack per individuare il codice che sta causando l’errore. Esegui il debug dell&#39;errore per risolvere il problema.
 
    >[!NOTE]
    >
-   >Se si verifica un errore di script, verificare se lo stesso problema si verifica anche durante la rappresentazione PDF del modulo. In caso affermativo, la logica di script del modulo presenta un problema.
+   >Se si tratta di un errore di script, verificare se lo stesso problema si verifica anche durante il rendering PDF del modulo. Se sì, si verifica un problema nella logica di script del modulo.
 
 ## Problema: Impossibile inviare il modulo {#problem-unable-to-submit-the-form}
 
-1. Verificate di disporre dei diritti di accesso al server AEM e di essere connessi al server.
-1. Verificate che il parametro submitUrl sia corretto.
-1. Abilitare i registri lato client come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md) utilizzando l&#39;opzione di debug come **1-a5-b5-c5**. Quindi, eseguite il rendering del modulo e fate clic su Invia. Aprite la console di debug del browser e verificate se si è verificato un errore.
-1. Individuare i registri del server come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md). Verificare se si è verificato un errore nei registri del server durante l&#39;invio.
+1. Assicurati di disporre dei diritti per accedere al server AEM e di essere connesso al server.
+1. Verifica che il parametro submitUrl sia corretto.
+1. Abilita i registri lato client come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md) utilizzando l’opzione di debug come **1-a5-b5-c5**. Quindi, esegui il rendering del modulo e fai clic su Invia. Apri la console di debug del browser e controlla se si verifica un errore.
+1. Individua i registri del server come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md). Controlla se si è verificato un errore nei log del server durante l&#39;invio.
 
 ## Problema: I messaggi di errore localizzati non vengono visualizzati {#problem-localized-error-messages-do-not-display}
 
-1. Eseguire il rendering del modulo con il parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi passare a Strumenti per sviluppatori -> Risorse e verificare il file I18N.css.
-1. Se il file non è disponibile, accedete a CRX DE all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/de.
-1. Nella gerarchia delle cartelle a sinistra, andate a /libs/fd/xfaforms/clientlibs/I18N e verificate che siano presenti i file e le cartelle seguenti:
+1. Esegui il rendering del modulo con il parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi vai a Strumenti di sviluppo -> Risorse e controlla il file I18N.css.
+1. Se il file non è disponibile, accedi a CRX DE all&#39;indirizzo https://&lt;server>:&lt;port>/crx/de.
+1. Nella gerarchia delle cartelle a sinistra, vai a /libs/fd/xfaforms/clientlibs/I18N e assicurati che siano presenti i seguenti file e cartelle:
 
    * Namespace.js
    * LogMessages.js
    * Cartelle per le lingue
 
-1. Se uno dei file o delle cartelle di cui sopra non esiste, installate di nuovo il pacchetto **adobe-lc-forms-runtime-pkg-&lt;versione>.zip**.
-1. Individuate la cartella che ha lo stesso nome delle impostazioni internazionali e verificarne il contenuto. La cartella deve contenere i file seguenti:
+1. Se uno dei file o delle cartelle di cui sopra non esiste, installa di nuovo il pacchetto **adobe-lc-forms-runtime-pkg-&lt;version>.zip**.
+1. Passa alla cartella che ha lo stesso nome delle impostazioni internazionali e ne controlla il contenuto. La cartella deve contenere i file seguenti:
 
    * I18N.js
    * js.txt
 
-1. Controllate il contenuto di js.txt e accertatevi che contenga le voci seguenti.
+1. Controlla il contenuto di js.txt e assicurati che contenga le seguenti voci.
 
    ```javascript
    ../Namespace.js
@@ -148,13 +149,13 @@ Controllate i seguenti parametri:
 
 ## Problema: Immagine che non viene visualizzata {#problem-image-not-showing-up}
 
-1. Accertatevi che l’URL dell’immagine sia corretto.
-1. Verificate se il browser supporta questo tipo di immagine.
-1. Nei dettagli dell&#39;eccezione, cercare la parola **causata da**.
+1. Assicurati che l&#39;URL dell&#39;immagine sia corretto.
+1. Controlla se il browser supporta questo tipo di immagine.
+1. Nei dettagli dell&#39;eccezione, cerca la parola **causata da**.
 
    È probabile che uno o più parametri nell’URL non siano corretti.
 
-   Controllate i seguenti parametri:
+   Verifica i seguenti parametri:
 Testo del passaggio
 
 <table>
@@ -165,7 +166,7 @@ Testo del passaggio
   </tr>
   <tr>
    <td>template</td>
-   <td>Nome del file del modello</td>
+   <td>Il nome del file del modello</td>
   </tr>
   <tr>
    <td>contentRoot</td>
@@ -173,15 +174,15 @@ Testo del passaggio
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: Percorso definisce il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: Il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
-   <td>data</td>
+   <td>dati</td>
    <td>Byte di dati codificati UTF-8 uniti al modello.</td>
   </tr>
  </tbody>
 </table>
 
-1. Nel browser desktop, accedete a Strumenti per sviluppatori -> Risorse.
+1. Nel browser desktop, accedi a Strumenti per sviluppatori -> Risorse.
 
-   Se l&#39;immagine viene visualizzata, selezionate Cornici a sinistra.
+   Se l&#39;immagine viene visualizzata, seleziona il lato sinistro in Frame.
