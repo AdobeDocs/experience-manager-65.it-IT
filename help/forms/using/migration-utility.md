@@ -1,8 +1,8 @@
 ---
-title: Migrazione  risorse e documenti AEM Forms
-seo-title: Migrazione  risorse e documenti AEM Forms
-description: L’utility Migrazione consente di migrare  risorse e documenti AEM Forms da AEM 6.3 Forms o versioni precedenti a AEM 6.4 Forms.
-seo-description: L’utility Migrazione consente di migrare  risorse e documenti AEM Forms da AEM 6.3 Forms o versioni precedenti a AEM 6.4 Forms.
+title: Migrare risorse e documenti AEM Forms
+seo-title: Migrare risorse e documenti AEM Forms
+description: L’utility Migration ti consente di migrare risorse e documenti AEM Forms da Forms 6.3 o versioni precedenti a AEM Forms 6.4.
+seo-description: L’utility Migration ti consente di migrare risorse e documenti AEM Forms da Forms 6.3 o versioni precedenti a AEM Forms 6.4.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -11,117 +11,118 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 2%
+source-wordcount: '1810'
+ht-degree: 3%
 
 ---
 
 
-# Migrazione  risorse e documenti AEM Forms{#migrate-aem-forms-assets-and-documents}
+# Migrare risorse e documenti AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-L&#39;utility Migrazione converte le risorse [Forms adattive](../../forms/using/introduction-forms-authoring.md), [configurazioni cloud](/help/sites-developing/extending-cloud-config.md) e [Risorse per la gestione della corrispondenza](/help/forms/using/cm-overview.md) dal formato utilizzato nelle versioni precedenti al formato utilizzato in AEM 6.5 Forms. Quando si esegue l&#39;utility di migrazione, vengono migrati i seguenti elementi:
+L&#39;utility Migration converte le [risorse Forms adattive](../../forms/using/introduction-forms-authoring.md), [configurazioni cloud](/help/sites-developing/extending-cloud-config.md) e [risorse di gestione della corrispondenza](/help/forms/using/cm-overview.md) dal formato utilizzato nelle versioni precedenti al formato utilizzato in AEM 6.5 Forms. Quando esegui l&#39;utilità di migrazione, vengono migrati i seguenti elementi:
 
 * Componenti personalizzati per i moduli adattivi
 * Moduli adattivi e modelli di gestione della corrispondenza
 * Configurazioni cloud
-* Gestione della corrispondenza e risorse per moduli adattivi
+* Gestione della corrispondenza e risorse dei moduli adattivi
 
 >[!NOTE]
 >
->In caso di aggiornamento non aggiornato, per le risorse di Gestione della corrispondenza potete eseguire la migrazione ogni volta che importate le risorse. Per la migrazione alla gestione della corrispondenza è necessario che sia installato il pacchetto di compatibilità Forms.
+>In caso di aggiornamento fuori luogo, per le risorse di Gestione Corrispondenza, puoi eseguire la migrazione ogni volta che importi le risorse. Per la migrazione alla gestione della corrispondenza è necessario che sia installato il pacchetto di compatibilità Forms.
 
 ## Approccio alla migrazione {#approach-to-migration}
 
-È possibile [aggiornare](../../forms/using/upgrade.md) alla versione più recente di  AEM Forms 6.5 da  AEM Forms 6.4, 6.3 o 6.2 oppure eseguire una nuova installazione. A seconda se avete aggiornato l’installazione precedente o eseguito una nuova installazione, dovete effettuare una delle seguenti operazioni:
+È possibile [aggiornare](../../forms/using/upgrade.md) all&#39;ultima versione di AEM Forms 6.5 da AEM Forms 6.4, 6.3 o 6.2 oppure eseguire una nuova installazione. A seconda che sia stata aggiornata l&#39;installazione precedente o eseguita una nuova installazione, è necessario effettuare una delle seguenti operazioni:
 
-**In caso di aggiornamento locale**
+**In caso di aggiornamento sul posto**
 
-Se avete eseguito un aggiornamento locale, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, dovrete installare [pacchetto di compatibilità AEMFD](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) (compreso il pacchetto di compatibilità per la gestione della corrispondenza)
+Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, dovrai installare [pacchetto di compatibilità AEMFD](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) (incluso il pacchetto di compatibilità per la gestione della corrispondenza)
 
 Quindi devi aggiornare le risorse e i documenti [eseguendo l&#39;utility di migrazione](#runningmigrationutility).
 
 **In caso di installazione fuori luogo**
 
-Se si tratta di un&#39;installazione obsoleta (fresca), prima di poter utilizzare le risorse e i documenti, dovrete installare [pacchetto di compatibilità AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (compreso il pacchetto di compatibilità per la gestione della corrispondenza).
+Se si tratta di un&#39;installazione obsoleta (nuova), prima di poter utilizzare le risorse e i documenti, dovrai installare [Pacchetto compatibilità AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (include il pacchetto Compatibilità di gestione della corrispondenza).
 
-Quindi è necessario importare il pacchetto di risorse (zip o cmp) nella nuova configurazione e aggiornare le risorse e i documenti [eseguendo l&#39;utility Migrazione](#runningmigrationutility).  Adobe consiglia di creare nuove risorse nella nuova configurazione solo dopo l’esecuzione dell’utility di migrazione.
+Quindi devi importare il pacchetto risorse (zip o cmp) nella nuova configurazione e quindi aggiornare le risorse e i documenti [eseguendo l&#39;utility Migrazione](#runningmigrationutility). Adobe consiglia di creare nuove risorse nella nuova configurazione solo dopo aver eseguito l&#39;utilità di migrazione.
 
-A causa di [modifiche relative alla compatibilità precedente](/help/sites-deploying/backward-compatibility.md), le posizioni di alcune cartelle nell&#39;archivio crx vengono modificate. Esportate e importate manualmente le dipendenze (librerie e risorse personalizzate) dalla configurazione precedente all’ambiente nuovo.
+A causa di [modifiche relative alla compatibilità con le versioni precedenti](/help/sites-deploying/backward-compatibility.md), le posizioni di alcune cartelle in crx-repository vengono modificate. Esporta e importa manualmente le dipendenze (librerie e risorse personalizzate) dalla configurazione precedente all’ambiente nuovo.
 
 ## Leggi prima di procedere con la migrazione {#prerequisites}
 
-Per le risorse Gestione corrispondenza:
+Per le attività di gestione della corrispondenza:
 
-* Per le risorse importate dalla piattaforma precedente, viene aggiunta una proprietà: **fd:version=1.0**.
-* Dal AEM 6.1 Forms, i commenti non sono disponibili. I commenti aggiunti in precedenza sono disponibili nelle risorse ma non sono automaticamente visibili nell’interfaccia. Per rendere visibili i commenti, è necessario personalizzare la proprietà extensionProperties nell&#39;interfaccia utente  AEM Forms.
-* In alcune versioni precedenti, come l&#39;LiveCycle ES4, il testo veniva modificato utilizzando Flex RichTextEditor, ma AEM 6.1 Forms viene utilizzato l&#39;editor HTML. A causa di questo rendering e dell&#39;aspetto dei font, le dimensioni dei font e i margini dei font possono essere diversi dalle versioni precedenti dell&#39;interfaccia utente di Author. Tuttavia, le lettere hanno lo stesso aspetto durante il rendering.
-* Gli elenchi nei moduli di testo vengono migliorati e ora il rendering è diverso. Potrebbero esserci delle differenze visive. È consigliabile eseguire il rendering e visualizzare le lettere in cui si utilizzano gli elenchi nei moduli di testo.
-* Poiché i moduli di contenuto immagine sono convertiti in risorse DAM, layout e frammenti vengono aggiunti ai moduli durante la migrazione, la proprietà Aggiornato da di per questi moduli diventa admin.
-* La cronologia delle versioni delle risorse non viene migrata e non è disponibile dopo la migrazione. La cronologia successiva della versione viene mantenuta dopo la migrazione.
-* Lo stato Pronto per la pubblicazione è obsoleto a partire dall’Forms AEM 6.1, pertanto tutte le risorse in stato Pronto per la pubblicazione vengono modificate in stato Modificato.
-* Poiché l&#39;interfaccia utente è aggiornata in  AEM Forms 6.3, anche i passaggi per eseguire le personalizzazioni sono diversi. Se state eseguendo la migrazione da una versione precedente alla 6.3, dovete ripristinare la personalizzazione.
-* I frammenti di layout si spostano da /content/apps/cm/layouts/fragmentlayouts/1001 a /content/apps/cm/module/fragmentlayouts. Il riferimento al dizionario dati nelle risorse visualizza il percorso del dizionario dati invece del nome.
-* Eventuali spazi tabulazione utilizzati per l&#39;allineamento nei moduli di testo devono essere regolati. Per ulteriori informazioni, vedere [Gestione della corrispondenza - Utilizzo della spaziatura tra le schede per disporre il testo](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
-* Le configurazioni di Asset Composer (Compositore risorse) vengono modificate nelle configurazioni di Correspondence Management.
+* Per le risorse importate dalla piattaforma precedente, viene aggiunta una proprietà : **fd:version=1.0**.
+* A partire AEM 6.1 Forms, i commenti non sono disponibili. I commenti aggiunti in precedenza sono disponibili nelle risorse ma non sono visibili automaticamente nell’interfaccia. Per rendere visibili i commenti, è necessario personalizzare la proprietà ExtendedProperties nell’interfaccia utente di AEM Forms.
+* In alcune delle versioni precedenti, come LiveCycle ES4, il testo veniva modificato utilizzando Flex RichTextEditor, ma a partire da AEM 6.1 Forms viene utilizzato l&#39;editor HTML. A causa di questo rendering e dell’aspetto dei font, delle dimensioni dei font e dei margini dei font, le versioni precedenti dell’interfaccia utente di Author potrebbero essere diverse. Tuttavia, durante il rendering le lettere hanno lo stesso aspetto.
+* Gli elenchi nei moduli di testo vengono migliorati e ora vengono sottoposti a rendering in modo diverso. Ci possono essere differenze visive. È consigliabile eseguire il rendering e visualizzare le lettere in cui si utilizzano gli elenchi nei moduli di testo.
+* Poiché i moduli di contenuto immagine sono convertiti in risorse DAM e i layout e i frammenti vengono aggiunti ai moduli durante la migrazione, la proprietà Updated By per per questi moduli diventa admin.
+* La cronologia delle versioni delle risorse non viene migrata e non è disponibile dopo la migrazione. Viene mantenuta la cronologia delle versioni successive dopo la migrazione.
+* Lo stato Ready to Publish (Pronto per la pubblicazione) è obsoleto a partire da Forms 6.1, pertanto tutte le risorse nello stato Ready to Publish (Pronto per la pubblicazione) vengono modificate in Modified state (Stato modificato).
+* Poiché l’interfaccia utente è aggiornata in AEM Forms 6.3, anche i passaggi per eseguire le personalizzazioni sono diversi. Se effettui la migrazione da una versione precedente alla 6.3, devi ripristinare la personalizzazione.
+* I frammenti di layout si spostano da /content/apps/cm/layouts/fragmentlayouts/1001 a /content/apps/cm/modules/fragmentlayouts. Il riferimento al dizionario dati nelle risorse visualizza il percorso del dizionario dati anziché il nome.
+* Eventuali spazi tabulazione utilizzati per l’allineamento nei moduli di testo devono essere regolati. Per ulteriori informazioni, consulta [Gestione corrispondenza - Utilizzo della spaziatura tra le tabulazioni per disporre il testo](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Le configurazioni del compositore risorse cambiano nelle configurazioni di Gestione Corrispondenza.
 * Le risorse vengono spostate in cartelle con nomi quali Testo esistente ed Elenco esistente.
 
 ## Utilizzo dell&#39;utility di migrazione {#using-the-migration-utility}
 
 ### Esecuzione dell&#39;utility di migrazione {#runningmigrationutility}
 
-Eseguite l’utility di migrazione prima di apportare modifiche alle risorse o di crearle. È consigliabile non eseguire l&#39;utility dopo aver apportato modifiche o creato risorse. Accertatevi che l’interfaccia utente Gestione corrispondenza o Risorse Forms adattive non sia aperta durante il processo di migrazione.
+Esegui l’utility Migrazione prima di apportare modifiche alle risorse o di crearle. Si consiglia di non eseguire l&#39;utilità dopo aver apportato modifiche o creato risorse. Assicurati che l’interfaccia utente Gestione Corrispondenza o Risorse Forms adattive non sia aperta durante l’esecuzione del processo di migrazione.
 
-Quando si esegue l&#39;utility di migrazione per la prima volta, viene creato un registro con il percorso e il nome seguenti: \[directory-installazione-aem]\cq-quickstart\logs\aem-forms-migration.log. Questo registro continua ad essere aggiornato con le informazioni di gestione della corrispondenza e di migrazione Forms adattiva, come lo spostamento delle risorse.
+Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato un registro con il percorso e il nome seguenti: \[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log. Questo registro continua ad essere aggiornato con le informazioni relative alla gestione della corrispondenza e alla migrazione adattiva di Forms, ad esempio lo spostamento delle risorse.
 
 >[!NOTE]
 >
->Prima di eseguire l&#39;utility di migrazione, assicurarsi di aver eseguito un backup del repository crx.
+>Prima di eseguire l&#39;utility di migrazione, assicurati di aver effettuato un backup del tuo archivio crx.
 
-1. In una sessione del browser, accedete a AEM’istanza di creazione come Amministratore.
+1. In una sessione del browser, accedi AEM’istanza di authoring come Amministratore.
 
-1. Aprite il seguente URL nel browser:
+1. Apri il seguente URL nel browser:
 
    https://[*hostname*]:[*port*]/[*context_path*]/libs/fd/foundation/gui/content/migration.html
 
-   Il browser presenta quattro opzioni:
+   Il browser visualizza quattro opzioni:
 
    * Migrazione risorse AEM Forms
    * Migrazione adattata dei componenti personalizzati Forms
-   * Migrazione di modelli Forms adattivi
+   * Migrazione dei modelli Forms adattivi
    * Migrazione configurazioni AEM Forms Cloud
 
-1. Per eseguire la migrazione, effettuate le seguenti operazioni:
+1. Per eseguire la migrazione, procedi come segue:
 
-   * Per migrare **risorse**, tocca  migrazione risorse AEM Forms e, nella schermata successiva, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+   * Per migrare **risorse**, tocca Migrazione risorse AEM Forms e, nella schermata successiva, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
       * Moduli adattivi
-      * Frammenti di documenti
+      * Frammenti di documento
       * Temi
       * Lettere
       * Dizionari dati
 
    >[!NOTE]
    >
-   >Durante la migrazione delle risorse, è possibile che vengano visualizzati messaggi di avviso come &quot;Conflitto trovato per...&quot;. Tali messaggi indicano che non è stato possibile migrare le regole per alcuni componenti nei moduli adattivi. Ad esempio, se il componente ha un evento con regole e script, se le regole si verificano dopo uno script nessuna delle regole per il componente viene migrata. Tuttavia, tali regole possono essere migrate aprendo l’editor delle regole nella creazione di moduli adattivi.
+   >Durante la migrazione delle risorse, potresti trovare messaggi di avviso come &quot;Conflict found for...&quot; (Conflitto trovato per...). Tali messaggi indicano che non è stato possibile eseguire la migrazione delle regole per alcuni dei componenti nei moduli adattivi. Ad esempio, se il componente ha un evento con entrambe le regole e gli script, se le regole si verificano dopo uno script, nessuna delle regole per il componente viene migrata. Tuttavia, è possibile migrare tali regole aprendo l’editor di regole nella creazione di moduli adattivi.
    >
    >
-   >Per migrare questi componenti, apriteli in Editor regole nell’editor Forms adattivo.
+   >È possibile migrare questi componenti aprendoli nell’editor di regole nell’editor di Forms adattivo.
    >
    >
    >
-   >    * Per migrare regole e script (non richiesti se si esegue l&#39;aggiornamento dalla versione 6.3) in componenti personalizzati, toccate Migrazione adattata dei componenti personalizzati Forms e, nella schermata successiva, toccate Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:    >
+   >    * Per eseguire la migrazione di regole e script (non necessari se si esegue l’aggiornamento dalla versione 6.3) nei componenti personalizzati, tocca Migrazione componenti personalizzati Forms adattivi e, nella schermata successiva, tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:    >
       >
       >
       >        
 
-      * Regole e script creati con l&#39;editor di regole (6.1 FP1 e versioni successive)
-      >        * Script creati utilizzando la scheda Script nell&#39;interfaccia utente di 6.1 e versioni precedenti
+      * Regole e script creati con l’editor di regole (6.1 FP1 e versioni successive)
+      >        * Script creati utilizzando la scheda Script nell’interfaccia utente di 6.1 e versioni precedenti
    >
    >
-   >    * Per migrare i modelli (non richiesti se si esegue l&#39;aggiornamento dalla versione 6.3 e 6.4), toccate Migrazione modelli Forms adattivi e, nella schermata successiva, toccate Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
+   >    * Per migrare i modelli (non necessari se si esegue l’aggiornamento dalla versione 6.3 e 6.4), tocca Migrazione modelli di Forms adattivi e, nella schermata successiva, tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
 
       >
       >
@@ -129,28 +130,28 @@ Quando si esegue l&#39;utility di migrazione per la prima volta, viene creato un
       >        
 
 
-      * Vecchi modelli: i modelli di moduli adattivi creati in /apps con AEM 6.1 Forms o versioni precedenti. Sono inclusi gli script definiti nei componenti modello.
-      >        * Nuovi modelli: modelli di moduli adattivi creati utilizzando l&#39;editor modelli in /conf. Ciò include la migrazione di regole e script creati utilizzando l&#39;editor di regole.
+      * Modelli precedenti - i modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Ciò include gli script definiti nei componenti del modello.
+      >        * Nuovi modelli: modelli di moduli adattivi creati utilizzando l’editor di modelli in /conf. Ciò include la migrazione di regole e script creati utilizzando l&#39;editor di regole.
 
 
-   * Per migrare i componenti personalizzati per moduli adattivi, toccare **Migrazione adattata dei componenti personalizzati Forms** e nella pagina Migrazione dei componenti personalizzati, toccare **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+   * Per eseguire la migrazione dei componenti personalizzati per moduli adattivi, tocca **Migrazione componenti personalizzati Forms adattivi** e, nella pagina Migrazione componenti personalizzati , tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
-      * Componenti personalizzati creati per Forms adattivo
-      * Eventuali sovrapposizioni di componenti.
-   * Per migrare i modelli di modulo adattivo, toccare **Migrazione adattata dei modelli Forms** e nella pagina Migrazione dei componenti personalizzati toccare **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+      * Componenti personalizzati scritti per Forms adattivo
+      * Eventuali sovrapposizioni dei componenti.
+   * Per migrare i modelli di modulo adattivo, tocca **Migrazione dei modelli di Forms adattivi** e, nella pagina Migrazione dei componenti personalizzati, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
-      * Modelli di moduli adattivi creati con /apps o /conf utilizzando AEM Editor modelli.
-   * Migra  servizi di configurazione di AEM Forms Cloud per sfruttare il nuovo paradigma del servizio cloud basato sul contesto, che include l’interfaccia touch (in /conf). Quando si esegue la migrazione  servizi di configurazione di AEM Forms Cloud, i servizi cloud in /etc vengono spostati in /conf. Se non disponete di personalizzazioni dei servizi cloud che dipendono dai percorsi legacy (/etc), è consigliabile eseguire l&#39;utility di migrazione subito dopo l&#39;aggiornamento alla versione 6.5 e utilizzare l&#39;interfaccia utente touch della configurazione cloud per qualsiasi ulteriore lavoro. Se disponete di personalizzazioni dei servizi cloud esistenti, continuate a utilizzare l&#39;interfaccia classica durante l&#39;aggiornamento fino a quando le personalizzazioni non vengono aggiornate in modo da allinearsi ai percorsi migrati (/conf) ed eseguire l&#39;utility di migrazione.
+      * Modelli di moduli adattivi creati sotto /apps o /conf utilizzando AEM Editor modelli.
+   * Esegui la migrazione dei servizi di configurazione di AEM Forms Cloud per sfruttare il nuovo paradigma di servizio cloud consapevole del contesto, che include l’interfaccia utente touch (in /conf). Quando esegui la migrazione dei servizi di configurazione cloud di AEM Forms, i servizi cloud in /etc vengono spostati in /conf. Se non disponi di personalizzazioni dei servizi cloud che dipendono dai percorsi legacy (/etc), è consigliabile eseguire l&#39;utility di migrazione subito dopo l&#39;aggiornamento alla versione 6.5 e utilizzare la configurazione cloud Interfaccia touch per ulteriori informazioni. Se disponi di personalizzazioni esistenti per i servizi cloud, continua a utilizzare l’interfaccia classica durante la configurazione aggiornata fino a quando le personalizzazioni non vengono aggiornate per allinearsi ai percorsi migrati (/conf) e quindi esegui l’utility di migrazione.
 
-   Per migrare **servizi cloud AEM Forms**, che includono quanto segue, toccate  migrazione alla configurazione di AEM Forms Cloud (la migrazione alla configurazione cloud è indipendente dal pacchetto di compatibilità AEMFD), toccate  Migrazione alle configurazioni di AEM Forms Cloud e, nella pagina Migrazione alla configurazione, toccate **Avvia migrazione**:
+   Per migrare **AEM Forms cloud services**, che includono quanto segue, tocca Migrazione configurazione cloud AEM Forms (la migrazione della configurazione cloud è indipendente dal pacchetto di compatibilità AEM FD), tocca Migrazione configurazioni cloud AEM Forms e quindi nella pagina Migrazione configurazione , tocca **Avvia migrazione**:
 
-   * Servizi cloud per il modello dati modulo
+   * Servizi cloud del modello dati modulo
 
       * Percorso di origine: /etc/cloudservices/fdm
       * Percorso di destinazione: /conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
-      * Percorso di origine: /etc/cloudservices/acquistcha
+      * Percorso di origine: /etc/cloudservices/ricontcha
       * Percorso di destinazione: /conf/global/settings/cloudconfigs/ricontcha
    * Adobe Sign
 
@@ -161,17 +162,15 @@ Quando si esegue l&#39;utility di migrazione per la prima volta, viene creato un
       * Percorso di origine: /etc/cloudservices/typekit
       * Percorso di destinazione: /conf/global/settings/cloudconfigs/typekit
 
-   La finestra del browser visualizza quanto segue durante il processo di migrazione:
+   La finestra del browser mostra quanto segue durante il processo di migrazione:
 
-   * Quando le risorse vengono aggiornate: Risorse aggiornate.
+   * Quando le risorse vengono aggiornate: Aggiornamento delle risorse completato.
    * Una volta completata la migrazione: Migrazione delle risorse completata.
 
-   Una volta eseguita, l&#39;utilità di migrazione effettua le seguenti operazioni:
+   Quando viene eseguita, l’utility di migrazione effettua le seguenti operazioni:
 
-   * **Aggiunge i tag alle risorse**: Aggiunge il tag &quot;Correspondence Management: Risorse migrate&quot; / &quot;Forms adattivo: Risorse migrate&quot;. alle risorse migrate, in modo che gli utenti possano identificare le risorse migrate. Quando eseguite l&#39;utility Migrazione, tutte le risorse esistenti nel sistema vengono contrassegnate come Migrate.
-   * **Genera tag**: Le categorie e le sottocategorie presenti nel sistema precedente vengono create come tag, quindi questi tag sono associati alle risorse di Gestione della corrispondenza rilevanti in AEM. Ad esempio, come tag vengono generati una categoria (attestazioni) e una sottocategoria (attestazioni) di un modello di lettera.
-
-
+   * **Aggiunge i tag alle risorse**: Aggiunge il tag &quot;Gestione della corrispondenza : Risorse migrate&quot; / &quot;Forms adattivo: Risorse migrate&quot;. alle risorse migrate, in modo che gli utenti possano identificare le risorse migrate. Quando esegui l&#39;utility Migrazione, tutte le risorse esistenti nel sistema vengono contrassegnate come Migrazione.
+   * **Genera i tag**: Le categorie e le sottocategorie presenti nel sistema precedente vengono create come tag e quindi tali tag sono associati alle relative risorse di Gestione Corrispondenza in AEM. Ad esempio, come tag vengono generati una categoria (attestazioni) e una sottocategoria (attestazioni) di un modello di lettera.
 
 
 
@@ -187,19 +186,21 @@ Quando si esegue l&#39;utility di migrazione per la prima volta, viene creato un
 
 
 
-1. Al termine dell&#39;esecuzione dell&#39;utility di migrazione, passare alle [attività di pulizia](#housekeepingtasks).
 
-### Attività di pulizia dopo l&#39;esecuzione dell&#39;utility di migrazione {#housekeepingtasks}
 
-Dopo aver eseguito l&#39;utility Migrazione, effettua le seguenti operazioni di pulizia: [](../../forms/using/import-export-forms-templates.md)
+1. Al termine dell&#39;esecuzione dell&#39;utility di migrazione, procedi alle [attività di pulizia](#housekeepingtasks).
 
-1. Verificate che la versione XFA di layout e layout di frammenti sia 3.3 o successiva. Se si utilizzano layout e layout di frammenti di una versione precedente, potrebbero verificarsi problemi durante il rendering della lettera. Per aggiornare la versione di un XFA precedente all&#39;ultima versione, effettua i seguenti passaggi:
+### Attività di gestione delle famiglie dopo l&#39;esecuzione dell&#39;utility di migrazione {#housekeepingtasks}
 
-   1. [Scaricate XFA come ](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) file zip dall&#39;interfaccia utente di Forms.
-   1. Estrarre il file.
-   1. Aprire il file XFA nella versione più recente di Designer e salvarlo. La versione di XFA viene aggiornata alla versione più recente.
-   1. Caricate l&#39;XFA nell&#39;interfaccia utente di Forms.
+Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività di gestione: [](../../forms/using/import-export-forms-templates.md)
 
-1. Pubblicate tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo nell’istanza di creazione e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione, è necessario pubblicare le risorse.
-1. In  AEM Forms 6.4 e 6.5, alcuni dei diritti dei gruppi di utenti dei moduli vengono modificati. Se si desidera che gli utenti siano in grado di caricare gli script XDP e Forms adattivo o di utilizzare l&#39;editor di codice, è necessario aggiungerli al gruppo di utenti che alimentano i moduli. Analogamente, gli autori dei modelli non possono più utilizzare l&#39;editor di codice nell&#39;Editor regole. Per consentire agli utenti di utilizzare l’editor di codice, aggiungili al gruppo af-template-script-writers. Per istruzioni sull&#39;aggiunta di utenti ai gruppi, consultate [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
+1. Assicurati che la versione XFA dei layout di layout e frammenti sia 3.3 o successiva. Se utilizzi layout e layout di frammenti di una versione precedente, potrebbero esserci problemi nel rendering della lettera. Per aggiornare la versione di un XFA precedente alla versione più recente, completa i passaggi seguenti:
+
+   1. [Scarica XFA come file zip ](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) dall’interfaccia utente di Forms.
+   1. Estrai il file.
+   1. Apri il file XFA nella versione più recente di Designer e salvalo. La versione di XFA viene aggiornata a quella più recente.
+   1. Carica l&#39;XFA nell&#39;interfaccia utente di Forms.
+
+1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza di authoring e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
+1. In AEM Forms 6.4 e 6.5, alcuni dei diritti dei gruppi di utenti dei moduli vengono modificati. Se desideri che uno qualsiasi dei tuoi utenti sia in grado di caricare XDP e Adaptive Forms contenenti script o utilizzare l&#39;editor di codice, devi aggiungerli al gruppo utenti di forms-power-users. Allo stesso modo, gli autori di modelli non possono più utilizzare l&#39;editor di codice nell&#39;editor di regole. Per consentire agli utenti di utilizzare l’editor di codice, aggiungili al gruppo af-template-script-writers. Per istruzioni su come aggiungere utenti ai gruppi, consulta [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
