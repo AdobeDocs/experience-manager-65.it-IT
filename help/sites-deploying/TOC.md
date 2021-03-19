@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.5
 breadcrumb-title: Guida alla distribuzione
 user-guide-description: Informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5, inclusa la distribuzione cloud di Adobe Managed Services.
+feature-set: Experience Manager Sites
+feature: Distribuzione
+role: Architetto
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 17%
+source-wordcount: '354'
+ht-degree: 18%
 
 ---
 
@@ -21,7 +24,7 @@ ht-degree: 17%
 + Introduzione alla piattaforma AEM {#introduction}
    + [Introduzione alla piattaforma AEM](platform.md)
    + [Requisiti tecnici](technical-requirements.md)
-   + [Elementi di archiviazione in AEM 6.5](storage-elements-in-aem-6.md)
+   + [Elementi di storage in AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
 + Implementazione di AEM {#deploying}
    + [Implementazione e manutenzione](deploy.md)
@@ -29,17 +32,17 @@ ht-degree: 17%
    + [Installazione dell’applicazione da server](application-server-install.md)
    + [Installazione personalizzata indipendente](custom-standalone-install.md)
    + [Avvio e interruzione da riga di comando](command-line-start-and-stop.md)
-   + [Configurazione degli archivi di nodi e degli archivi di dati in AEM 6](data-store-config.md)
+   + [Configurazione degli archivi di nodi e degli archivi di dati nel AEM 6](data-store-config.md)
    + [Pulizia revisioni](revision-cleanup.md)
    + [Query e indicizzazione Oak](queries-and-indexing.md)
-   + [Come eseguire AEM con lo standby a freddo di TarMK](tarmk-cold-standby.md)
+   + [Come eseguire AEM con lo standby a freddo TarMK](tarmk-cold-standby.md)
    + [Supporto RDBMS in AEM 6.5](rdbms-support-in-aem.md)
    + [Indicizzazione tramite Oak-run Jar](indexing-via-the-oak-run-jar.md)
    + [Casi d&#39;uso dell&#39;indicizzazione Oak-run.jar](oak-run-indexing-usecases.md)
    + [Risoluzione dei problemi degli indici Oak](troubleshooting-oak-indexes.md)
    + [Consenso alla raccolta di statistiche di utilizzo aggregate](opt-in-aggregated-usage-statistics.md)
    + [Risoluzione dei problemi](troubleshooting.md)
-+ Configurazione di AEM {#configuring}
++ Configurazione AEM {#configuring}
    + [Concetti di configurazione di base](configuring.md)
    + [Registrazione](configure-logging.md)
    + [Configurazione di OSGi](configuring-osgi.md)
@@ -74,7 +77,7 @@ ht-degree: 17%
    + [Utilizzo dello strumento di migrazione CRX2Oak](using-crx2oak.md)
    + [Attività di manutenzione pre-aggiornamento](pre-upgrade-maintenance-tasks.md)
    + [Controlli e risoluzione dei problemi post-aggiornamento](post-upgrade-checks-and-troubleshooting.md)
-   + [Aggiornamento dei moduli di ricerca personalizzati](upgrading-custom-search-forms.md)
+   + [Aggiornamento di Custom Search Forms](upgrading-custom-search-forms.md)
    + [Aggiornamenti sostenibili](sustainable-upgrades.md)
    + [Aggiornamento di codice e personalizzazioni](upgrading-code-and-customizations.md)
    + [Passaggi di aggiornamento per le installazioni di Application Server](app-server-upgrade.md)
@@ -84,19 +87,19 @@ ht-degree: 17%
    + [Ristrutturazione dell’archivio comune in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio siti in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio risorse in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Ristrutturazione di Dynamic Media Repository in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [Ristrutturazione dell’archivio dei moduli in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
+   + [Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Ristrutturazione dell&#39;archivio Forms in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio di e-commerce in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio per AEM Communities nella versione 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
    + [Panoramica di eCommerce](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best practice   {#practices}
    + [Best practice di distribuzione](best-practices.md)
    + [Struttura delle prestazioni](performance-tree.md)
    + [Tecniche consigliate per il test delle prestazioni](best-practices-for-performance-testing.md)
    + [Tecniche consigliate per query e indicizzazione](best-practices-for-queries-and-indexing.md)
-   + [Raccomandazioni in merito all’interfaccia utente per clienti](ui-recommendations.md)
+   + [Interfaccia utente Recommendations per clienti](ui-recommendations.md)
    + [Prestazioni e scalabilità](performance.md)
