@@ -8,36 +8,37 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
 
-# Avvio rapido JavaAPI di Application Manager Service (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Guida rapida a JavaAPI (SOAP) di Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start(SOAP) è disponibile per il servizio Application Manager.
+Java API Quick Start (SOAP) è disponibile per il servizio Application Manager.
 
-[Avvio rapido: Distribuzione di applicazioni tramite Java API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Avvio rapido: Distribuzione di applicazioni tramite l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Avvio rapido: Rimozione di un&#39;applicazione tramite Java API(SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
-
->[!NOTE]
->
->Le API di Application Manager supportano solo  file AEM Forms LCA. Non supporta i file LCA degli LiveCycli ES2 e ES4.
-
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+[Avvio rapido: Rimozione di un&#39;applicazione utilizzando l&#39;API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
->Java API(SOAP) Avvio rapido disponibile nella programmazione con moduli AEM si basa sull&#39;Forms se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le API di gestione applicazioni supportano solo i file LCA di AEM Forms. Non supporta i file LCA dei LiveCycli ES2 e ES4.
 
-## Avvio rapido (modalità SOAP): Distribuzione di applicazioni mediante l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-Nell&#39;esempio di codice Java riportato di seguito viene importata un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
+>[!NOTE]
+>
+>La procedura rapida Java API(SOAP) disponibile in Programmazione con moduli AEM si basa su Forms se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+
+## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+
+Il seguente esempio di codice Java importa un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
 
 ```java
  /*
@@ -137,9 +138,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene importata un&#39;appl
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione utilizzando l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#39;applicazione denominata *EncryptDocument*.
+Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denominata *EncryptDocument*.
 
 ```java
  /*
