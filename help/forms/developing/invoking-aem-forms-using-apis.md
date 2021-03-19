@@ -1,35 +1,36 @@
 ---
-title: Chiamata  AEM Forms tramite API
-seo-title: Chiamata  AEM Forms tramite API
-description: Chiamata  AEM Forms tramite API
+title: Richiamo di AEM Forms tramite API
+seo-title: Richiamo di AEM Forms tramite API
+description: Richiamo di AEM Forms tramite API
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
 
-# Chiamata  AEM Forms tramite API {#invoking-aem-forms-using-apis}
+# Richiamo di AEM Forms tramite API {#invoking-aem-forms-using-apis}
 
-**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
+**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
 
- Adobe Experience Manager Forms è un software aziendale basato su J2EE che consiste in servizi che operano all&#39;interno di un&#39;infrastruttura condivisa. Le operazioni di assistenza in genere consumano o producono documenti. Utilizzando  AEM Forms, è possibile combinare il flusso di lavoro dei moduli con moduli elettronici, la protezione dei documenti e la generazione di documenti in un set di servizi integrato e coerente. È possibile accedere a questi servizi dall&#39;interno e dall&#39;esterno del firewall.
+Adobe Experience Manager Forms è un software aziendale basato su J2EE costituito da servizi che operano all&#39;interno di un&#39;infrastruttura condivisa. Le operazioni di servizio generalmente consumano o producono documenti. Utilizzando AEM Forms, è possibile combinare il flusso di lavoro dei moduli con i moduli elettronici, la sicurezza dei documenti e la generazione di documenti in un set di servizi integrato e coerente. Questi servizi sono accessibili dall&#39;interno e dall&#39;esterno del firewall.
 
-Le applicazioni client possono invocare  servizi AEM Forms a livello di programmazione utilizzando un&#39;API Java, servizi Web, Remoting e REST. Utilizzando la console di amministrazione, è possibile configurare un servizio per esporre un endpoint che consente  servizi AEM Forms invocato a livello di programmazione. Per impostazione predefinita, la maggior parte dei servizi è preconfigurata per esporre endpoint di tipo Remoting, Java e servizi Web.
+Le applicazioni client possono richiamare i servizi AEM Forms in modo programmatico utilizzando un’API Java, servizi web, Remoting e REST. Utilizzando la console di amministrazione, puoi configurare un servizio per esporre un endpoint che consente ai servizi AEM Forms di essere richiamati a livello di programmazione. Per impostazione predefinita, la maggior parte dei servizi è preconfigurata per esporre endpoint di tipo Remoting, Java e servizi Web.
 
-I requisiti aziendali determinano quale metodo di chiamata utilizzare. Ad esempio, utilizzando l&#39;API Java, potete integrare  funzionalità AEM Forms nelle applicazioni aziendali Java, ad esempio Java Entity e MessageFave. Allo stesso modo, è possibile integrare  funzionalità AEM Forms in progetti .NET (o altri progetti sviluppati con ambienti di sviluppo che supportano gli standard dei servizi Web) utilizzando i servizi Web.
+I requisiti aziendali determinano quale metodo di chiamata utilizzare. Ad esempio, utilizzando l’API Java, puoi integrare la funzionalità AEM Forms nelle applicazioni aziendali Java, ad esempio Java Entity e Message beans. Allo stesso modo, è possibile integrare le funzionalità di AEM Forms in progetti .NET (o altri progetti sviluppati con ambienti di sviluppo che supportano gli standard di servizi Web) utilizzando i servizi Web.
 
-I servizi richiedono l&#39;esecuzione di un contenitore di servizi, in modo simile a quello in cui Enterprise JavaBeans™ (EJB) richiede un contenitore J2EE.  AEM Forms include solo un&#39;implementazione di un contenitore di servizi. Il contenitore del servizio è responsabile della gestione della durata di un servizio, inclusa la distribuzione e l&#39;invio di tutte le richieste al servizio corretto. Gestisce inoltre i documenti che un servizio può consumare o produrre.
+I servizi richiedono l’esecuzione di un contenitore di servizi, in modo analogo a come Enterprise JavaBeans™ (EJBs) richiede un contenitore J2EE. AEM Forms include una sola implementazione di un contenitore di servizi. Il contenitore di servizi è responsabile della gestione della durata di un servizio, inclusa la distribuzione e l’invio di tutte le richieste al servizio corretto. Gestisce anche i documenti che un servizio consuma o produce.
 
 >[!NOTE]
 >
->La programmazione con AEM moduli non include informazioni su come richiamare  AEM Forms utilizzando Cartelle esaminate o e-mail.
+>La programmazione con AEM moduli non include informazioni su come richiamare AEM Forms utilizzando Cartelle controllate o posta elettronica.
 
