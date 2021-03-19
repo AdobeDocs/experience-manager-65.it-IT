@@ -1,40 +1,41 @@
 ---
-title: Avvio rapido JavaAPI di Form Data Integration Service (SOAP)
-seo-title: Avvio rapido JavaAPI di Form Data Integration Service (SOAP)
-description: Il servizio di integrazione dei dati modulo consente di importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l'API Java.
-seo-description: Il servizio di integrazione dei dati modulo consente di importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l'API Java.
+title: Guida rapida a JavaAPI per l’integrazione dei dati dei moduli (SOAP)
+seo-title: Guida rapida a JavaAPI per l’integrazione dei dati dei moduli (SOAP)
+description: Utilizzare il servizio di integrazione dei dati modulo per importare i dati in un modulo PDF ed esportare i dati da un modulo PDF utilizzando l’API Java.
+seo-description: Utilizzare il servizio di integrazione dei dati modulo per importare i dati in un modulo PDF ed esportare i dati da un modulo PDF utilizzando l’API Java.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 
-# Avvio rapido API Java Form Data Integration Service (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+# Guida rapida all’API Java del servizio per l’integrazione dei dati dei moduli (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
-Per il servizio di integrazione dei dati modulo sono disponibili i seguenti Avvio rapido.
+I seguenti Quick Starts sono disponibili per il servizio di integrazione dei dati del modulo.
 
-[Avvio rapido (modalità SOAP): Importazione di dati del modulo tramite l&#39;API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Avvio rapido (modalità SOAP): Importazione di dati del modulo tramite l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Esportazione dei dati del modulo tramite l&#39;API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Avvio rapido (modalità SOAP): Esportazione dei dati modulo tramite l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM moduli, si basa sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Guida rapida disponibile in Programmazione con moduli AEM si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Importazione di dati del modulo tramite l&#39;API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Avvio rapido (modalità SOAP): Importazione di dati del modulo utilizzando l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono importati i dati in un modulo PDF. I dati si trovano in un file XML denominato *Loan_data.xml* e il modulo PDF viene salvato come file PDF denominato *ResultLoanForm.pdf*. (Vedere [Importazione di dati del modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+Nell’esempio di codice Java seguente vengono importati i dati in un modulo PDF. I dati si trovano in un file XML denominato *Loan_data.xml* e il modulo PDF viene salvato come file PDF denominato *ResultLoanForm.pdf*. (Consultare [Importazione di dati modulo](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -134,9 +135,9 @@ Nell&#39;esempio di codice Java riportato di seguito vengono importati i dati in
  
 ```
 
-## Avvio rapido (modalità SOAP): Esportazione dei dati del modulo tramite l&#39;API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Avvio rapido (modalità SOAP): Esportazione dei dati del modulo utilizzando l’API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono esportati i dati da un modulo PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (Vedere [Esportazione dei dati del modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+L’esempio di codice Java seguente esporta dati da un modulo PDF. I dati del modulo vengono salvati come file XML denominato *Loan_data.xml*. (Vedere [Esportazione di dati modulo](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*
