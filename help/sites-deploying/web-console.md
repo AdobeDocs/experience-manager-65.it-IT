@@ -1,40 +1,41 @@
 ---
 title: Console Web
 seo-title: Console Web
-description: Scoprite come utilizzare la console Web AEM.
-seo-description: Scoprite come utilizzare la console Web AEM.
+description: Scopri come utilizzare la console web AEM.
+seo-description: Scopri come utilizzare la console web AEM.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+feature: Configurazione
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '729'
+ht-degree: 3%
 
 ---
 
 
 # Console Web{#web-console}
 
-La console Web in AEM si basa sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della comunità per implementare OSGi R4 Service Platform, che include il framework OSGi e i servizi standard.
+La console Web in AEM si basa sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della comunità per implementare la piattaforma di servizi OSGi R4, che include il framework OSGi e i servizi standard.
 
 >[!NOTE]
 >
->Nella console Web tutte le descrizioni che fanno riferimento alle impostazioni predefinite si riferiscono alle impostazioni predefinite di Sling.
+>Nella console Web tutte le descrizioni che fanno riferimento alle impostazioni predefinite si riferiscono ai valori predefiniti di Sling.
 >
->AEM ha le proprie impostazioni predefinite, pertanto le impostazioni predefinite potrebbero essere diverse da quelle documentate nella console.
+>AEM dispone di valori predefiniti personalizzati e pertanto i valori predefiniti impostati potrebbero essere diversi da quelli documentati nella console.
 
-La console Web offre una serie di schede per la manutenzione dei bundle OSGi, tra cui:
+La console Web offre una selezione di schede per la manutenzione dei bundle OSGi, tra cui:
 
-* [Configurazione](#configuration): utilizzato per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare AEM parametri di sistema
-* [Bundle](#bundles): utilizzati per l&#39;installazione dei bundle
-* [Componenti](#components): utilizzato per controllare lo stato dei componenti richiesti per AEM
+* [Configurazione](#configuration): utilizzato per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare i parametri di sistema AEM
+* [Bundle](#bundles): utilizzato per l&#39;installazione dei bundle
+* [Componenti](#components): utilizzato per controllare lo stato dei componenti necessari per AEM
 
-Eventuali modifiche apportate vengono applicate immediatamente al sistema in esecuzione. Non è necessario riavviare.
+Tutte le modifiche apportate vengono immediatamente applicate al sistema in esecuzione. Non è necessario riavviare il sistema.
 
 È possibile accedere alla console da `../system/console`; ad esempio:
 
@@ -42,62 +43,62 @@ Eventuali modifiche apportate vengono applicate immediatamente al sistema in ese
 
 ## Configurazione {#configuration}
 
-La scheda **Configuration** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare AEM parametri di sistema.
+La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per la configurazione AEM parametri di sistema.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md).
+>Per ulteriori informazioni, consulta [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md) .
 
-È possibile accedere alla scheda **Configuration** tramite:
+La scheda **Configurazione** è accessibile da:
 
-* Il menu a discesa:
+* Menu a discesa:
 
    **OSGi >**
 
-* L’URL; ad esempio:
+* URL; ad esempio:
 
    `http://localhost:4502/system/console/configMgr`
 
-Verrà visualizzato un elenco delle configurazioni:
+Verrà visualizzato un elenco di configurazioni:
 
 ![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
 
-Negli elenchi a discesa di questa schermata sono disponibili due tipi di configurazioni:
+Sono disponibili due tipi di configurazioni dagli elenchi a discesa in questa schermata:
 
 * ****
-Configurazioni: consente di aggiornare le configurazioni esistenti. Questi hanno un&#39;identità persistente (PID) e possono essere:
+ConfigurazioniConsente di aggiornare le configurazioni esistenti. Hanno un identificatore di identità persistente (PID) e possono essere:
 
-   * standard e integrale a AEM; se eliminati, i valori torneranno alle impostazioni predefinite.
-   * istanze create da Configurazioni in fabbrica; queste istanze vengono create dall&#39;utente. L&#39;eliminazione rimuove l&#39;istanza.
+   * standard e integrale a AEM; se vengono eliminati, i valori vengono ripristinati alle impostazioni predefinite.
+   * istanze create da configurazioni di fabbrica; queste istanze vengono create dall&#39;utente, l&#39;eliminazione rimuove l&#39;istanza.
 
 * **Configurazioni**
-di fabbrica: consente di creare un&#39;istanza dell&#39;oggetto di funzionalità richiesto.
+di fabbricaConsente di creare un&#39;istanza dell&#39;oggetto funzionalità richiesto.
 
-   A questo verrà assegnata un&#39;identità persistente, che verrà quindi elencata nell&#39;elenco a discesa Configurazioni.
+   A questo verrà assegnata un’identità persistente ed è quindi elencata nell’elenco a discesa Configurazioni .
 
-Selezionando una voce dagli elenchi, verranno visualizzati i parametri relativi a tale configurazione:
+Selezionando una voce dagli elenchi verranno visualizzati i parametri relativi a tale configurazione:
 
 ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-Potete quindi aggiornare i parametri come richiesto e:
+Puoi quindi aggiornare i parametri come richiesto e:
 
 * **Salva**
 
-   Salvare le modifiche apportate.
+   Salva le modifiche apportate.
 
-   Per una configurazione di fabbrica, verrà creata una nuova istanza con un&#39;identità persistente. La nuova istanza verrà quindi elencata in Configurazioni.
+   Per una configurazione di fabbrica, creerà una nuova istanza con un’identità persistente. La nuova istanza verrà quindi elencata in Configurazioni.
 
 * **Ripristina**
 
-   Ripristinare gli ultimi parametri visualizzati sullo schermo.
+   Reimposta i parametri visualizzati sullo schermo su quelli salvati per ultimi.
 
 * **Elimina**
 
-   Elimina la configurazione corrente. Se standard, i parametri vengono restituiti alle impostazioni predefinite. Se creata da una configurazione di fabbrica, l&#39;istanza specifica viene eliminata.
+   Elimina la configurazione corrente. Se standard, i parametri vengono restituiti alle impostazioni predefinite. Se creato da una configurazione di fabbrica, l&#39;istanza specifica viene eliminata.
 
 * **Separa**
 
-   Separate la configurazione corrente dal bundle.
+   Separa la configurazione corrente dal bundle.
 
 * **Annulla**
 
@@ -105,25 +106,25 @@ Potete quindi aggiornare i parametri come richiesto e:
 
 ## Bundle {#bundles}
 
-La scheda **Bundles** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda tramite uno dei seguenti metodi:
+La scheda **Bundle** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda utilizzando uno dei seguenti metodi:
 
-* Il menu a discesa:
+* Menu a discesa:
 
    **OSGi >**
 
-* L’URL; ad esempio:
+* URL; ad esempio:
 
    `http://localhost:4502/system/console/bundles`
 
-Verrà visualizzato un elenco di bundle:
+Verrà visualizzato un elenco dei bundle:
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
 Questa scheda consente di:
 
-* **Installazione o aggiornamento**
+* **Installa o aggiorna**
 
-   È possibile **Browse** individuare il file che contiene il pacchetto e specificare se deve iniziare **Start** immediatamente e a quale **Livello iniziale**.
+   Puoi **Sfoglia** per trovare il file contenente il tuo bundle e specificare se deve **Avviare** immediatamente e in quale **Livello iniziale**.
 
 * **Ricarica**
 
@@ -133,7 +134,7 @@ Questa scheda consente di:
 
    Questo controllerà i riferimenti di tutti i pacchetti e aggiornerà se necessario.
 
-   Ad esempio, dopo un aggiornamento potrebbe essere ancora in esecuzione sia la versione precedente che quella nuova a causa di riferimenti precedenti. Questa opzione consente di controllare e spostare tutti i riferimenti alla nuova versione, consentendo l&#39;interruzione della versione precedente.
+   Ad esempio, dopo un aggiornamento potrebbe essere ancora in esecuzione sia la versione precedente che quella nuova a causa di riferimenti precedenti. Questa opzione consente di controllare e spostare tutti i riferimenti alla nuova versione, consentendo l’arresto della versione precedente.
 
 * **Avvia**
 
@@ -141,7 +142,7 @@ Questa scheda consente di:
 
 * **Arresta**
 
-   Interrompe il bundle.
+   Arresta il bundle.
 
 * **Disinstalla**
 
@@ -149,35 +150,35 @@ Questa scheda consente di:
 
 * **vedere lo stato**
 
-   L&#39;elenco specifica lo stato corrente del bundle; fate clic sul nome di un pacchetto specifico con ulteriori informazioni.
+   L&#39;elenco specifica lo stato attuale del bundle; cliccando sul nome di un bundle specifico con mostra ulteriori informazioni.
 
 >[!NOTE]
 >
->Dopo **Update** si consiglia di eseguire un **Refresh Packages**.
+>Dopo **Aggiorna** si consiglia di eseguire un **Aggiorna pacchetti**.
 
 ## Componenti {#components}
 
-La scheda **Componenti** consente di abilitare e/o disabilitare i vari componenti. È possibile accedervi tramite:
+La scheda **Componenti** consente di abilitare e/o disabilitare i vari componenti. È accessibile da:
 
-* Il menu a discesa:
+* Menu a discesa:
 
    **Principale >**
 
-* L’URL; ad esempio:
+* URL; ad esempio:
 
    `http://localhost:4502/system/console/components`
 
-Verrà visualizzato un elenco di componenti. Sono disponibili diverse icone che consentono di abilitare, disabilitare o (se del caso) aprire i dettagli di configurazione per un componente specifico.
+Verrà visualizzato un elenco di componenti. Sono disponibili diverse icone per abilitare, disabilitare o (se appropriato) aprire i dettagli di configurazione di un componente specifico.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Facendo clic sul nome di un particolare componente vengono visualizzate ulteriori informazioni sullo stato. Qui è inoltre possibile attivare, disattivare o ricaricare il componente.
+Facendo clic sul nome di un particolare componente verranno visualizzate ulteriori informazioni sullo stato. Qui puoi anche abilitare, disabilitare o ricaricare il componente.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
->L’attivazione o la disattivazione di un componente viene applicata solo fino al riavvio di AEM/CRX.
+>L’abilitazione o la disattivazione di un componente viene applicata solo fino al riavvio di AEM/CRX.
 >
->Lo stato iniziale è definito nel descrittore del componente, che viene generato durante lo sviluppo e memorizzato nel bundle al momento della creazione del bundle.
+>Lo stato di avvio è definito nel descrittore del componente, che viene generato durante lo sviluppo e memorizzato nel bundle al momento della creazione del bundle.
 
