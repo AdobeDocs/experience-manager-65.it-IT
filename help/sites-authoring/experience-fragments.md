@@ -1,7 +1,7 @@
 ---
-title: Frammenti esperienza
-seo-title: Frammenti esperienza
-description: 'null'
+title: Frammenti di esperienza
+seo-title: Frammenti di esperienza
+description: Frammenti di esperienza
 seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 97%
 
 ---
 
 
-# Frammenti esperienza{#experience-fragments}
+# Frammenti di esperienza{#experience-fragments}
 
 Un Frammento esperienza è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine. Possono contenere qualsiasi componente.
 
