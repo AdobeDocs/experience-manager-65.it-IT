@@ -1,41 +1,42 @@
 ---
 title: Personalizza ed estendi [!DNL Assets]
-description: Scoprite come personalizzare ed estendere l’Editor risorse e condivisione di risorse, che offre agli utenti un’interfaccia e un set di funzionalità specifici.
+description: Scopri come personalizzare ed estendere Asset Share e Asset Editor, che offre agli utenti un’interfaccia e un set di funzionalità personalizzati.
 contentOwner: AG
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 
-# Personalizzare ed estendere [!DNL Assets] {#customizing-and-extending-assets}
+# Personalizza ed estendi [!DNL Assets] {#customizing-and-extending-assets}
 
-Asset Editor è il principale punto di accesso che gli utenti di un sito Web Enterprise Manager  utilizzeranno per trovare, visualizzare e manipolare le risorse digitali presenti nell’archivio.
+Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
 
-In qualità di [!DNL Experience Manager] sviluppatore, potete personalizzare ed estendere l’Editor risorse in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+In qualità di sviluppatore [!DNL Experience Manager], puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
 * [Estendi editor risorse](asseteditorx.md)
 * [Estendi ricerca risorse](searchx.md)
-* [Elabora risorse tramite gestori e flussi di lavoro](media-handlers.md)
+* [Elabora risorse utilizzando gestori di contenuti multimediali e flussi di lavoro](media-handlers.md)
 * [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
-* [Sviluppo proxy delle risorse](proxy.md)
-* [Procedure ottimali per la configurazione di ImageMagick](best-practices-for-imagemagick.md)
+* [Sviluppo proxy risorse](proxy.md)
+* [Best practice per configurare ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzare l&#39;aspetto {#customizing-the-look-and-feel}
+## Personalizza l&#39;aspetto {#customizing-the-look-and-feel}
 
-È possibile personalizzare i seguenti aspetti dell’aspetto e del comportamento dell’Editor risorse:
+Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di Asset Editor:
 
-* Logo: È possibile aggiungere il logo aziendale all&#39;interfaccia.
-* Colori e font: È possibile modificare i colori e i font utilizzati nell&#39;interfaccia.
-* Codice HTML: Per una personalizzazione più completa, potete modificare il codice HTML sottostante che definisce le interfacce.
+* Logo: Puoi aggiungere all’interfaccia il logo della tua organizzazione.
+* Colori e caratteri: È possibile modificare i colori e i font utilizzati nell’interfaccia.
+* Codice HTML: Per una personalizzazione più completa è possibile modificare il codice HTML sottostante che definisce le interfacce.
 
 ## Personalizzare le rappresentazioni {#customizing-renditions}
 
-In [!DNL Experience Manager Assets] terminologia, una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
+Nella terminologia [!DNL Experience Manager Assets] un rendering è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
 
-Le rappresentazioni in cui è disponibile una particolare risorsa possono essere personalizzate e create nuove rappresentazioni.
+Le rappresentazioni disponibili in una particolare risorsa possono essere personalizzate e possono essere create nuove rappresentazioni.
