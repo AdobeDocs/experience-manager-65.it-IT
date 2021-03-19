@@ -1,17 +1,18 @@
 ---
-title: Contenitore di servizi
-seo-title: Contenitore di servizi
-description: ' servizi AEM Forms situati nel contenitore di servizi'
+title: Contenitore di servizio
+seo-title: Contenitore di servizio
+description: Servizi AEM Forms situati nel contenitore di servizi
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -19,11 +20,11 @@ ht-degree: 0%
 
 # Contenitore di servizi {#service-container}
 
-**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
+**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
 
- servizi AEM Forms situati nel contenitore di servizi (compresi i servizi standard quali il servizio di cifratura, i processi di lunga durata e di breve durata) possono essere invocati tramite diversi fornitori, ad esempio un provider EJB. Un provider EJB consente di richiamare  servizi AEM Forms attraverso RMI/IIOP. Un provider di servizi Web espone i servizi come servizi Web (generazione WSDL) utilizzando standard quali SOAP/HTTP e SOAP/JMS.
+I servizi AEM Forms situati nel contenitore di servizi (inclusi i servizi standard come il servizio di crittografia, i processi a lunga durata e quelli a breve durata) possono essere richiamati utilizzando vari provider, ad esempio un provider EJB. Un provider EJB consente di richiamare i servizi AEM Forms tramite RMI/IIOP. Un provider di servizi web espone i servizi come servizi web (generazione WSDL) utilizzando standard quali SOAP/HTTP e SOAP/JMS.
 
-Nella tabella seguente sono descritti i diversi modi in cui è possibile invocare  servizi AEM Forms a livello di programmazione.
+Nella tabella seguente sono descritti i diversi modi in cui è possibile richiamare i servizi AEM Forms a livello di programmazione.
 
 <table>
  <thead>
@@ -35,64 +36,64 @@ Nella tabella seguente sono descritti i diversi modi in cui è possibile invocar
  <tbody>
   <tr>
    <td><p>Integrazione remota</p></td>
-   <td><p>L'integrazione remota consente ai client Flex di richiamare le operazioni del servizio. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Richiamo  AEM Forms utilizzando (obsoleto per AEM moduli)  AEM Forms Remoting</a>.)</p></td>
+   <td><p>L'integrazione remota consente ai client Flex di richiamare le operazioni del servizio. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Richiamo di AEM Forms utilizzando (obsoleto per i moduli AEM) AEM Forms Remoting</a>.)</p></td>
   </tr>
   <tr>
    <td><p>API Java</p></td>
-   <td><p>Un'API Java può richiamare un servizio AEM Forms . L'API Java è organizzata nelle librerie client e nell'API Java Invocation. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Chiamata  AEM Forms tramite Java API</a>.)</p></td>
+   <td><p>Un’API Java può richiamare un servizio AEM Forms. L’API Java è organizzata in librerie client e nell’API Java Invocation. (Consulta <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Richiamo di AEM Forms tramite l'API Java</a>.)</p></td>
   </tr>
   <tr>
-   <td><p>Servizi Web</p></td>
-   <td><p> AEM Forms supporta gli standard dei servizi Web come SOAP/HTTP. Un servizio può essere esposto come servizio Web, con il WSDL conforme agli standard di servizio Web definiti da W3C.</p><p>È possibile richiamare un servizio da qualsiasi stack di servizi Web, incluso .NET Framework e Sun™ Web Services SDK. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Chiamata  AEM Forms tramite servizi Web</a>.)</p></td>
+   <td><p>Servizi web</p></td>
+   <td><p>AEM Forms supporta gli standard dei servizi web come SOAP/HTTP. Un servizio può essere esposto come servizio Web, con il WSDL conforme agli standard di servizio Web definiti da W3C.</p><p>È possibile richiamare un servizio da qualsiasi stack di servizi Web, inclusi .NET Framework e Sun™ Web Services SDK. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Richiamo di AEM Forms tramite Web Services</a>.)</p></td>
   </tr>
   <tr>
    <td><p>Richieste REST</p></td>
-   <td><p> AEM Forms supporta le richieste REST. Un servizio può essere richiamato direttamente da una pagina HTML. (Vedere <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Chiamata  AEM Forms mediante richieste REST</a>.)</p></td>
+   <td><p>AEM Forms supporta le richieste REST. Un servizio può essere richiamato direttamente da una pagina HTML. (Consulta <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Richiamo di AEM Forms utilizzando le richieste REST</a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
-L&#39;illustrazione seguente fornisce una rappresentazione visiva dei diversi modi in cui  servizi AEM Forms possono essere invocati a livello di programmazione.
+L’illustrazione seguente fornisce una rappresentazione visiva dei diversi modi in cui i servizi AEM Forms possono essere richiamati a livello di programmazione.
 
 >[!NOTE]
 >
->Oltre a usare l’SDK per AEM Forms  per creare applicazioni client che possono richiamare  servizi AEM Forms, potete anche creare componenti che possono essere distribuiti nel contenitore dei servizi. Ad esempio, è possibile creare un componente Banca che contiene tipi di dati personalizzati utilizzabili nei processi. In altre parole, è possibile creare un tipo di dati come `com.adobe.idp.BankAccount`. Potete quindi creare `com.adobe.idp.BankAccount` istanze nelle applicazioni client.
+>Oltre a utilizzare l’SDK per AEM Forms per creare applicazioni client che possono richiamare i servizi AEM Forms, puoi anche creare componenti che possono essere distribuiti nel contenitore di servizi. Ad esempio, puoi creare un componente Banca contenente tipi di dati personalizzati che possono essere utilizzati nei processi. In altre parole, puoi creare un tipo di dati come `com.adobe.idp.BankAccount`. Puoi quindi creare istanze `com.adobe.idp.BankAccount` nelle applicazioni client.
 
-Il contenitore del servizio fornisce le seguenti funzionalità:
+Il contenitore di servizi fornisce le seguenti funzionalità:
 
-* Consente di richiamare  servizi AEM Forms utilizzando metodi diversi. Puoi configurare un servizio impostando gli endpoint in modo che possa essere invocato utilizzando tutti i metodi: Remoto, API Java, servizi Web e REST. (Vedere [Gestione programmatica degli endpoint](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Converte un messaggio in un formato normalizzato denominato richiesta di chiamata. Una richiesta di chiamata viene inviata da un&#39;applicazione client (o da un altro servizio) a un servizio che si trova nel contenitore del servizio. Una richiesta di chiamata contiene informazioni quali il nome del servizio da richiamare e i valori dei dati necessari per eseguire l&#39;operazione. Molti servizi richiedono un documento per eseguire un&#39;operazione. Di conseguenza, una richiesta di chiamata in genere contiene un documento, che può essere dati PDF, dati XDP, dati XML e così via.
-* Invia le richieste di chiamata ai servizi appropriati (il nome del servizio da richiamare fa parte della richiesta di chiamata).
-* Esegue attività quali determinare se il chiamante dispone dell&#39;autorizzazione per richiamare l&#39;operazione del servizio specificata. La richiesta di chiamata deve contenere un nome utente e una password validi per i moduli AEM.
+* Consente di richiamare i servizi AEM Forms con metodi diversi. Puoi configurare un servizio impostando gli endpoint in modo che possa essere richiamato utilizzando tutti i metodi: Remoto, API Java, servizi web e REST. (Vedere [Gestione programmatica degli endpoint](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
+* Converte un messaggio in un formato normalizzato denominato richiesta di chiamata. Una richiesta di chiamata viene inviata da un&#39;applicazione client (o da un altro servizio) a un servizio situato nel contenitore del servizio. Una richiesta di chiamata contiene informazioni quali il nome del servizio da richiamare e i valori dei dati necessari per eseguire l&#39;operazione. Molti servizi richiedono un documento per eseguire un&#39;operazione. Pertanto, una richiesta di chiamata di solito contiene un documento, che può essere dati PDF, dati XDP, dati XML e così via.
+* Esegue le richieste di chiamata ai servizi appropriati (il nome del servizio da richiamare fa parte della richiesta di chiamata).
+* Esegue attività quali determinare se il chiamante dispone dell&#39;autorizzazione per richiamare l&#39;operazione di servizio specificata. La richiesta di chiamata deve contenere un nome utente e una password validi AEM forms.
 
-   Esistono diversi modi per inviare una richiesta di chiamata a un servizio. Inoltre, esistono diversi modi per inviare i valori di input richiesti al servizio. Ad esempio, si supponga di utilizzare l&#39;API Java per richiamare un servizio che richiede un documento PDF. Il metodo Java corrispondente contiene un parametro che accetta un documento PDF. In questa situazione, il tipo di dati del parametro è `com.adobe.idp.Document`. (Vedere [Trasmissione di dati a  servizi AEM Forms tramite Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+   Esistono diversi modi per inviare una richiesta di chiamata a un servizio. Inoltre, esistono diversi modi per inviare i valori di input richiesti al servizio. Ad esempio, si supponga di utilizzare l’API Java per richiamare un servizio che richiede un documento PDF. Il metodo Java corrispondente contiene un parametro che accetta un documento PDF. In questa situazione, il tipo di dati del parametro è `com.adobe.idp.Document`. (Consulta [Trasmissione di dati ai servizi AEM Forms tramite l&#39;API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-   Se richiamate un servizio utilizzando le cartelle esaminate, quando inserite un file in una cartella esaminata configurata viene inviata una richiesta di chiamata. Se richiamate un servizio tramite e-mail, una richiesta di chiamata viene inviata a un servizio quando un messaggio e-mail arriva in una inbox configurata.
+   Se invochi un servizio utilizzando cartelle controllate, viene inviata una richiesta di chiamata quando inserisci un file in una cartella controllata configurata. Se invochi un servizio tramite e-mail, una richiesta di chiamata viene inviata a un servizio quando un messaggio di posta elettronica arriva in una casella in entrata configurata.
 
-   Il contenitore del servizio invia una risposta di chiamata una volta eseguita l&#39;operazione. Una risposta di chiamata contiene informazioni quali i risultati dell&#39;operazione. Ad esempio, se l&#39;operazione modifica un documento PDF, la risposta di chiamata contiene il documento PDF modificato. Se l&#39;operazione non ha avuto esito positivo, la risposta di chiamata contiene un messaggio di errore.
+   Il contenitore di servizi invia una risposta di chiamata dopo l&#39;esecuzione dell&#39;operazione. Una risposta di chiamata contiene informazioni quali i risultati dell&#39;operazione. Ad esempio, se l’operazione modifica un documento PDF, la risposta di chiamata contiene il documento PDF modificato. Se l&#39;operazione non è riuscita, la risposta alla chiamata contiene un messaggio di errore.
 
-   Una risposta di chiamata può essere recuperata nello stesso modo in cui viene inviata una richiesta di chiamata. In altre parole, se la richiesta di chiamata viene inviata utilizzando l&#39;API Java, è possibile recuperare una risposta di chiamata utilizzando l&#39;API Java. Si supponga, ad esempio, che un&#39;operazione modifichi un documento PDF. È possibile recuperare il documento PDF modificato ottenendo il valore restituito dal metodo Java che ha richiamato il servizio.
+   Una risposta di chiamata può essere recuperata nello stesso modo in cui viene inviata una richiesta di chiamata. In altre parole, se la richiesta di chiamata viene inviata utilizzando l&#39;API Java, è possibile recuperare una risposta di chiamata utilizzando l&#39;API Java. Si supponga, ad esempio, che un’operazione modifichi un documento PDF. È possibile recuperare il documento PDF modificato ottenendo il valore restituito dal metodo Java che ha richiamato il servizio.
 
-   Quando viene richiamato un processo di lunga durata, una risposta di chiamata contiene un valore di identificatore associato alla richiesta di chiamata. Utilizzando questo valore di identificatore, potete controllare lo stato del processo in un secondo momento. Ad esempio, si consideri il servizio di lunga durata di mutuo ipotecario. Utilizzando il valore dell&#39;identificatore, potete verificare se il processo è stato completato correttamente. (Vedere [Richiamo di processi a lunga durata basati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+   Quando si richiama un processo di lunga durata, una risposta di chiamata contiene un valore di identificatore associato alla richiesta di chiamata. Utilizzando questo valore di identificatore, puoi controllare lo stato del processo in un secondo momento. Ad esempio, consideriamo il servizio a lungo termine mutuo ipotecario. Utilizzando il valore dell&#39;identificatore, puoi verificare se il processo è stato completato correttamente. (Vedere [Richiamo di processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-   Il diagramma seguente mostra un&#39;applicazione client (che utilizza l&#39;API Java) che richiama un servizio.
+   Il diagramma seguente mostra un’applicazione client (che utilizza l’API Java) che richiama un servizio.
 
    Quando un&#39;applicazione client richiama un servizio, si verificano tre eventi:
 
    1. Un&#39;applicazione client invia una richiesta di chiamata a un servizio.
    1. Il servizio esegue l&#39;operazione specificata nella richiesta di chiamata.
-   1. Il contenitore del servizio restituisce una risposta di chiamata all&#39;applicazione client.
+   1. Il contenitore di servizi restituisce una risposta di chiamata all&#39;applicazione client.
 
 **Consulta anche**
 
-[Informazioni  processi AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
+[Informazioni sui processi AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
 
-[Richiamo  AEM Forms utilizzando (obsoleto per AEM moduli)  AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
+[Richiamo di AEM Forms utilizzando (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Chiamata  AEM Forms tramite l&#39;API Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Richiamo di AEM Forms tramite l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Chiamata  AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+[Richiamo di AEM Forms tramite i servizi web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
-[Richiamo di processi a lunga durata basati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
+[Richiamo dei processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
-[Chiamata  AEM Forms tramite richieste REST](/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests)
+[Richiamo di AEM Forms utilizzando le richieste REST](/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests)
