@@ -1,72 +1,73 @@
 ---
 title: Registrazione come utente
 seo-title: Registrazione come utente
-description: Scoprite come utilizzare i documenti protetti tramite criterio che ricevete da un utente di protezione dei documenti, anche se siete esterni all'organizzazione dell'utente.
-seo-description: Scoprite come utilizzare i documenti protetti tramite criterio che ricevete da un utente di protezione dei documenti, anche se siete esterni all'organizzazione dell'utente.
+description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
+seo-description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
+feature: Sicurezza dei documenti
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '730'
+ht-degree: 6%
 
 ---
 
 
 # Registrazione come utente {#registering-as-a-user}
 
-Potete utilizzare i documenti protetti tramite criterio che ricevete da un utente di protezione dei documenti, anche se siete esterni all&#39;organizzazione dell&#39;utente. Per utilizzare un documento protetto tramite criterio, è necessario registrarsi con Document Security. Se non si è precedentemente invitati a registrarsi, Document Security avvia il processo di registrazione quando si verificano questi eventi:
+È possibile utilizzare documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all&#39;organizzazione dell&#39;utente. Per utilizzare un documento protetto da policy, è necessario registrarsi con la protezione del documento. Se non si è stati precedentemente invitati a registrarsi, la sicurezza dei documenti avvia il processo di registrazione quando si verificano questi eventi:
 
-* Un utente di Document Security che desidera inviarvi un documento protetto tramite criterio vi aggiunge a un criterio.
-* Un amministratore di Document Security crea un account per voi.
+* Un utente che desidera inviare un documento protetto da policy ti aggiunge a un criterio.
+* Un amministratore della sicurezza dei documenti crea un account.
 
-   Dopo aver registrato e attivato l&#39;account, potete utilizzare i documenti protetti tramite criterio che siete autorizzati a utilizzare tramite un criterio. Se l&#39;amministratore di Document Security abilita queste funzioni per gli utenti invitati, potete disporre dell&#39;autorizzazione per effettuare le seguenti operazioni:
+   Dopo la registrazione e l&#39;attivazione dell&#39;account, puoi utilizzare documenti protetti da policy che ti sono autorizzati a utilizzare tramite un criterio. Se l&#39;amministratore della sicurezza dei documenti abilita le seguenti funzionalità per gli utenti invitati, è possibile disporre dell&#39;autorizzazione necessaria per eseguire le operazioni seguenti:
 
 * Documenti Protect utilizzando i criteri di protezione dei documenti.
 * Creare criteri utente personalizzati da applicare ai documenti.
-* Invitate altri utenti esterni a utilizzare un documento protetto tramite criterio aggiungendolo al criterio.
+* Invita altri utenti esterni a utilizzare un documento protetto da policy tramite l&#39;aggiunta di tali documenti al criterio.
 
-   Inoltre, al momento della registrazione, non è necessario registrarsi nuovamente per utilizzare altri documenti protetti tramite criterio. L&#39;account rimane attivo fino a quando un amministratore dei criteri non lo disattiva o non lo elimina.
+   Inoltre, al momento della registrazione, non è necessario registrarsi nuovamente per utilizzare altri documenti protetti da policy. L&#39;account rimane attivo finché un amministratore dei criteri non lo disabilita o lo elimina.
 
 >[!NOTE]
 >
->Se ricevete un documento protetto tramite criterio ma non ricevete un invito e-mail di registrazione, contattate la persona che vi ha inviato il documento per ulteriori informazioni.
+>Se ricevi un documento protetto da policy ma non ricevi un invito e-mail di registrazione, contatta la persona che ti ha inviato il documento per ulteriori informazioni.
 
 ## Registrati come utente invitato {#register-as-an-invited-user}
 
-Se siete un utente invitato e ricevete un messaggio di registrazione e-mail da Document Security, potete registrarvi utilizzando l&#39;URL contenuto nel messaggio per aprire la pagina di registrazione online. Dopo la registrazione, riceverete un secondo avviso sull&#39;attivazione dell&#39;account.
+Se sei un utente invitato e ricevi un messaggio di registrazione via e-mail da Document Security, puoi registrarti utilizzando l’URL nel messaggio per aprire la pagina di registrazione online. Dopo la registrazione, riceverai un secondo avviso sull’attivazione dell’account.
 
-1. Aprite il messaggio e-mail di registrazione per la protezione del documento. L&#39;URL contenuto nel messaggio contiene un collegamento alla pagina Registrazione utenti esterni in Document Security.
-1. Fate clic sull’URL o copiatelo e incollatelo nel browser. Viene visualizzata la pagina Registrazione utenti esterni.
-1. Digitare il nome, il numero di telefono, l&#39;indirizzo, l&#39;organizzazione e la password nelle caselle appropriate, quindi digitare nuovamente la password nella casella Conferma password. La password può contenere una combinazione qualsiasi di otto caratteri.
-1. Fai clic su Salva. Viene visualizzato un messaggio di ringraziamento per informarvi di controllare l’e-mail di posta elettronica relativa a un messaggio di attivazione. È ora necessario attivare l&#39;account per completare la procedura di registrazione.
+1. Apri l&#39;e-mail di registrazione della sicurezza dei documenti. L’URL contenuto nel messaggio è un collegamento alla pagina Registrazione utenti esterni nella sicurezza dei documenti.
+1. Fai clic sull’URL oppure copialo e incollalo nel browser. Viene visualizzata la pagina Registrazione utenti esterni.
+1. Digitare il nome, il numero di telefono, l&#39;indirizzo, l&#39;organizzazione e la password nelle caselle appropriate, quindi digitare nuovamente la password nella casella Conferma password. La password può essere costituita da una qualsiasi combinazione di otto caratteri.
+1. Fai clic su Salva. Viene visualizzato un messaggio di ringraziamento per informarti di controllare l’e-mail per ricevere un messaggio e-mail di attivazione. Ora devi attivare il tuo account per completare il processo di registrazione.
 
-## Attivare l&#39;account utente invitato {#activate-your-invited-user-account}
+## Attiva l&#39;account utente invitato {#activate-your-invited-user-account}
 
-Dopo la registrazione, Document Security invia un messaggio e-mail di attivazione. Devi attivare il tuo account utilizzando l&#39;URL contenuto nel messaggio. È quindi possibile accedere a Document Security per utilizzare i documenti protetti tramite criterio a cui si ha accesso. A seconda delle funzioni abilitate dall&#39;amministratore per gli utenti esterni, potete disporre dell&#39;autorizzazione per creare criteri, applicare criteri ai documenti e aggiungere altri utenti esterni ai criteri.
+Dopo la registrazione, la sicurezza dei documenti invia un messaggio e-mail di attivazione. Devi attivare il tuo account utilizzando l’URL nel messaggio. È quindi possibile accedere a Document Security per utilizzare documenti protetti da policy a cui si ha accesso. A seconda delle funzioni abilitate dall&#39;amministratore per gli utenti esterni, è possibile disporre delle autorizzazioni necessarie per creare criteri, applicare criteri ai documenti e aggiungere altri utenti esterni ai criteri.
 
 L’account rimane attivo finché l’amministratore non lo disattiva o lo elimina.
 
-1. Aprite il messaggio e-mail di conferma della registrazione per la protezione del documento.
-1. Fate clic sull’URL che appare nel messaggio. Viene visualizzata la pagina di attivazione della protezione del documento.
-1. Fate clic sulla parola Qui per passare alla pagina di login.
-1. Nella casella Nome utente, digitate l&#39;indirizzo e-mail con cui vi siete registrati in Document Security. Questo indirizzo e-mail è il vostro nome utente predefinito per la protezione dei documenti.
-1. Nella casella Password, digitare la password creata al momento della registrazione, quindi fare clic su Login.
+1. Apri l&#39;e-mail di conferma della registrazione della sicurezza del documento.
+1. Fai clic sull’URL che appare nel messaggio. Viene visualizzata la pagina di attivazione della protezione dei documenti.
+1. Fai clic sulla parola Qui per passare alla pagina di accesso.
+1. Nella casella Nome utente digitare l&#39;indirizzo e-mail registrato con la protezione del documento. Questo indirizzo e-mail è il nome utente predefinito per la sicurezza dei documenti.
+1. Nella casella Password digitare la password creata al momento della registrazione, quindi fare clic su Accesso.
 
 ## Reimposta la password {#reset-your-password}
 
-Se avete dimenticato la password, l&#39;amministratore del criterio può reimpostarla automaticamente. Reimpostando una password si genera un messaggio e-mail che invita a effettuare l’accesso utilizzando una password temporanea. Potete quindi creare una nuova password.
+Se dimentichi la password, l&#39;amministratore dei criteri può reimpostarla automaticamente. La reimpostazione di una password genera un messaggio e-mail che ti invita ad accedere utilizzando una password temporanea. Puoi quindi creare una nuova password.
 
-Per informazioni su come contattare un amministratore di Document Security per ottenere una nuova password, controllate le notifiche e-mail di attivazione o altre notifiche dell’organizzazione che vi ha invitato a registrarvi.
+Per informazioni su come contattare un amministratore della sicurezza dei documenti per ottenere una nuova password, controlla l’avviso e-mail di attivazione o altri avvisi dell’organizzazione che ti ha invitato a registrarti.
 
-1. Informate l&#39;amministratore del criterio che è necessaria una nuova password.
-1. Quando ricevete il messaggio e-mail con la password di protezione del documento, apritelo e ottenete la nuova password temporanea.
-1. Accedete a Document Security utilizzando la nuova password temporanea.
-1. Fare clic su Opzioni nell&#39;angolo superiore destro della pagina. Viene visualizzata la pagina Utenti esterni.
-1. Selezionare Modifica password e digitare la password temporanea nella casella Password precedente.
-1. Nella casella Nuova password, digitate una nuova password e immettetela nuovamente nella casella Conferma password.
+1. Notifica all&#39;amministratore dei criteri la necessità di una nuova password.
+1. Quando ricevi l&#39;e-mail con la password di sicurezza del documento, aprila e ottieni la nuova password temporanea.
+1. Accedi alla protezione dei documenti utilizzando la nuova password temporanea.
+1. Fai clic su Opzioni nell’angolo superiore destro della pagina. Viene visualizzata la pagina Utenti esterni.
+1. Selezionare Cambia password e digitare la password temporanea nella casella Vecchia password.
+1. Nella casella Nuova password, digitare una nuova password e quindi ridigitarla nella casella Conferma password.
 
