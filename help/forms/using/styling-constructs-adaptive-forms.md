@@ -1,48 +1,49 @@
 ---
-title: Stili di costruzione per i moduli adattivi
-seo-title: Stili di costruzione per i moduli adattivi
-description: Utilizzare il framework LESS per personalizzare l'aspetto dei moduli adattivi.
-seo-description: Utilizzare il framework LESS per personalizzare l'aspetto dei moduli adattivi.
+title: Costruzioni di stile per i moduli adattivi
+seo-title: Costruzioni di stile per i moduli adattivi
+description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
+seo-description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2324'
 ht-degree: 3%
 
 ---
 
 
-# Costruttori di stile per moduli adattivi{#styling-constructs-for-adaptive-forms}
+# Costruzioni di stile per i moduli adattivi{#styling-constructs-for-adaptive-forms}
 
 ## Prerequisiti {#prerequisites}
 
-Conoscenza dei CSS e del framework LESS.
+Conoscenza del CSS e del framework LESS.
 
-## Cosa è possibile personalizzare {#what-can-be-customized}
+## Che cosa può essere personalizzato {#what-can-be-customized}
 
-L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per definire lo stile di vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, non rientra nell’ambito di questo articolo. Utilizzate questi costrutti di stile per creare stili (utilizzando CSS o Less) solo quando non è possibile creare stili di componenti utilizzando l&#39;editor di temi [editor di temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile sfruttare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o Meno) solo quando non sei in grado di assegnare uno stile ai componenti utilizzando [editor di temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
-Il framework LESS semplifica l&#39;uso di maiuscole e minuscole per personalizzare gli stili nei moduli adattivi. Il framework consente di definire gli stili mediante un set di variabili e funzioni (mixin). Il framework LESS consente di ridurre le dimensioni del codice bundle e di aumentarne la riutilizzabilità.
+Il framework LESS semplifica il caso d’uso per personalizzare gli stili nei moduli adattivi. Il framework consente di definire gli stili utilizzando un set di variabili e funzioni (mixin). Il framework LESS aiuta a ridurre le dimensioni del codice bundle e ne aumenta la riutilizzabilità.
 
-È possibile personalizzare gli stili di modulo adattivi nei seguenti modi:
+Puoi personalizzare gli stili dei moduli adattivi nei seguenti modi:
 
 * Modificare il tema
 * Modificare lo stile del componente
 
 ## Modifica del tema {#changing-theme}
 
-È possibile modificare il tema di un modulo adattivo per assicurare che l&#39;aspetto sia coerente con le pagine Web in cui il modulo adattivo è incorporato.
+È possibile modificare il tema di un modulo adattivo per assicurarne la coerenza con le pagine web in cui è incorporato il modulo adattivo.
 
-Le modifiche nell&#39;aspetto generale del modulo adattivo che utilizzano le proprietà CSS in genere fanno parte di modifiche ai temi. Le modifiche principali allo &quot;ok&quot; e al funzionamento del modulo adattivo, come le modifiche nel layout e nella posizione dei componenti, non sono considerate modifiche ai temi.
+Le modifiche nell’aspetto generale del modulo adattivo che utilizzano le proprietà CSS fanno generalmente parte di modifiche al tema. Le modifiche principali al &quot;ok&quot; del modulo adattivo, come le modifiche al layout e al posizionamento dei componenti, non sono considerate modifiche del tema.
 
-In base al programma di avvio, il seguente set di proprietà CSS definisce il tema di una pagina Web:
+In base al bootstrap, il seguente set di proprietà CSS definisce il tema di una pagina web:
 
 * Colore sfondo
 * Bordo (tipo, colore, spessore)
@@ -50,23 +51,23 @@ In base al programma di avvio, il seguente set di proprietà CSS definisce il te
 * Riempimento
 * immagine
 * Dimensione font
-* LineHeight
+* AltezzaLinea
 
-Attualmente, le variabili LESS sono definite solo per queste proprietà dei vari elementi di un modulo adattivo.
+Attualmente, le variabili LESS sono definite solo per queste proprietà dei vari elementi in un modulo adattivo.
 
 ## Modifica dello stile del componente {#changing-component-style}
 
-Potete apportare modifiche all’aspetto, al layout, al posizionamento e alla visibilità degli elementi. Per eseguire questa operazione, create o aggiornate i file .css personalizzati in modo da includere i costrutti di stile elencati in questo articolo.
+È possibile modificare l’aspetto, il layout, il posizionamento e la visibilità degli elementi. Per eseguire questa operazione, crea o aggiorna i file .css personalizzati per includere i costrutti di stile elencati in questo articolo.
 
-Per applicare uno stile a un modulo adattivo, aprire il modulo adattivo in per la modifica, aprire le proprietà del contenitore di modulo adattivo, specificare il percorso del file CSS personalizzato nella scheda di base. I costrutti di stile predefiniti del modulo adattivo vengono sostituiti con i costrutti elencati nel file .css personalizzato.
+Per applicare uno stile a un modulo adattivo, apri il modulo adattivo in per la modifica, apri le proprietà del contenitore di moduli adattivi, specifica il percorso del file CSS personalizzato nella scheda di base. costrutti di stile predefiniti del modulo adattivo e sostituiti con i costrutti elencati nel file .css personalizzato.
 
 ## Componenti {#components}
 
-I componenti descritti in questo articolo dispongono di classi CSS predefinite. È possibile modificare le variabili per modificare gli stili nelle classi CSS. In alternativa, è possibile riscrivere l&#39;intera classe. Questa sezione descrive le classi all&#39;interno di componenti e stili che è possibile modificare utilizzando le variabili.
+I componenti descritti in questo articolo hanno le loro classi CSS predefinite. Puoi modificare le variabili per modificare gli stili nelle classi CSS. In alternativa, è possibile riscrivere l&#39;intera classe. Questa sezione descrive le classi all’interno di componenti e stili che è possibile modificare utilizzando le variabili.
 
-## Stile contenitore {#container-styling}
+## Stile del contenitore {#container-styling}
 
-Un contenitore è il componente di primo livello. Altri pannelli e campi si trovano sotto il componente contenitore.
+Un contenitore è il componente di primo livello. Altri pannelli e campi si trovano sotto il componente contenitore .
 
 <table>
  <tbody>
@@ -93,7 +94,7 @@ Un contenitore è il componente di primo livello. Altri pannelli e campi si trov
   </tr>
   <tr>
    <td><p><code>container-margin</code></p> </td>
-   <td><p>Margine per il contenitore</p> </td>
+   <td><p>Margine del contenitore</p> </td>
   </tr>
   <tr>
    <td><p><code>container-fontColor</code></p> </td>
@@ -104,9 +105,9 @@ Un contenitore è il componente di primo livello. Altri pannelli e campi si trov
 
 ## Stile del campo {#field-styling}
 
-I moduli adattivi includono vari tipi di campi. Ogni campo ha un nome di classe univoco, che è il nome del campo. Il campo ha anche un nome di classe comune `guideFieldNode`.
+I moduli adattivi includono vari tipi di campi. Ogni campo ha un nome di classe univoco, corrispondente al nome del campo. Il campo ha anche un nome di classe comune `guideFieldNode`.
 
-I campi includono etichette, widget, descrizione dell’Aiuto (descrizione lunga e breve) e icone della Guida dei campi (punto interrogativo).
+I campi includono etichette, widget, descrizione della Guida (lunga e breve) e icone della Guida dei campi (punto interrogativo).
 
 <table>
  <tbody>
@@ -129,18 +130,18 @@ I campi includono etichette, widget, descrizione dell’Aiuto (descrizione lunga
   </tr>
   <tr>
    <td><p><code>field-error-font-color</code></p> </td>
-   <td><p>Colore del font del messaggio di errore del campo</p> </td>
+   <td><p>Colore del carattere del messaggio di errore del campo</p> </td>
   </tr>
   <tr>
    <td><p><code>field-error-font-size</code></p> </td>
-   <td><p>Dimensione del font del messaggio di errore del campo</p> </td>
+   <td><p>Dimensione del carattere del messaggio di errore del campo</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Stile etichetta {#label-styling}
 
-L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o in basso a sinistra.
+L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o in basso.
 
 <table>
  <tbody>
@@ -159,32 +160,32 @@ L&#39;elemento HTML **label** utilizzato per il campo include le classi **left**
   </tr>
   <tr>
    <td><p><code>label-font-color</code></p> </td>
-   <td><p>Colore del font per l'etichetta del campo</p> </td>
+   <td><p>Colore del font per l’etichetta del campo</p> </td>
   </tr>
   <tr>
    <td><p><code>label-font-size</code></p> </td>
-   <td><p>Dimensione del font per l'etichetta del campo</p> </td>
+   <td><p>Dimensione del font per l’etichetta del campo</p> </td>
   </tr>
   <tr>
    <td><p><code>label-line-height</code></p> </td>
-   <td>Proprietà di altezza riga CSS per l'etichetta del campo </td>
+   <td>Proprietà di altezza riga CSS per l’etichetta del campo </td>
   </tr>
   <tr>
    <td><p><code>label-font-weight</code></p> </td>
-   <td>Proprietà spessore font CSS per l'etichetta del campo </td>
+   <td>Proprietà di spessore del font CSS per l’etichetta del campo </td>
   </tr>
   <tr>
    <td><p><code>label-margin</code></p> </td>
-   <td><p>Margine per l'etichetta del campo</p> </td>
+   <td><p>Margine per l’etichetta del campo</p> </td>
   </tr>
  </tbody>
 </table>
 
-Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel**. Se siete un autore, ignorate questa regola per rendere visibili le modifiche personalizzate.
+Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel** . Se sei un autore, sovrascrivi questa regola per rendere visibili le modifiche personalizzate.
 
 ## Stile dei widget {#widgets-styling}
 
-A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono la classe `guideFieldWidget`. I widget forniti con HTML normalmente utilizzano l&#39;input standard dell&#39;elemento HTML e selezionano. Lo stile viene applicato di conseguenza. Non è possibile formattare un widget personalizzato modificando le variabili.
+A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono la classe `guideFieldWidget` . I widget che vengono forniti con HTML normalmente utilizzano l’input dell’elemento HTML standard e selezionano. Lo stile viene eseguito di conseguenza. Non puoi assegnare uno stile a un widget personalizzato modificando le variabili.
 
 <table>
  <tbody>
@@ -203,7 +204,7 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Colore di sfondo per i widget (Non funziona per le caselle di controllo e i pulsanti di scelta)</td>
+   <td>Colore di sfondo per i widget (Non funziona per la casella di controllo e il pulsante di scelta)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -231,15 +232,15 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
   </tr>
   <tr>
    <td><p><code>widgets-font-color</code></p> </td>
-   <td><p>Colore del testo all’interno del widget</p> </td>
+   <td><p>Colore del testo all'interno del widget</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-font-size</code></p> </td>
-   <td><p>Dimensione del testo all’interno del widget</p> </td>
+   <td><p>Dimensioni del testo all'interno del widget</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-line-height</code></p> </td>
-   <td>Proprietà lineheight CSS per il widget </td>
+   <td>Proprietà CSS lineheight per il widget </td>
   </tr>
   <tr>
    <td><p><code>widgets-padding</code></p> </td>
@@ -259,23 +260,23 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
   </tr>
   <tr>
    <td><p><code>widgets-disabled-bg-color</code></p> </td>
-   <td><p>Colore di sfondo per il widget quando il campo è disattivato</p> </td>
+   <td><p>Colore di sfondo del widget quando il campo è disabilitato</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-disabled-font-color</code></p> </td>
-   <td><p>Colore del font per il widget quando il campo è disabilitato</p> </td>
+   <td><p>Colore del carattere del widget quando il campo è disabilitato</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-disabled-border-color</code></p> </td>
-   <td><p>Colore del bordo del widget quando il campo è disattivato</p> </td>
+   <td><p>Colore del bordo del widget quando il campo è disabilitato</p> </td>
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Altezza del widget (non funziona per casella di controllo e pulsante di scelta)</td>
+   <td>Altezza del widget (non funziona per le caselle di controllo e i pulsanti di scelta)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
-   <td><p>Altezza per la casella di controllo e il pulsante di scelta.</p> </td>
+   <td><p>Altezza della casella di controllo e del pulsante di scelta.</p> </td>
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
@@ -284,13 +285,13 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
  </tbody>
 </table>
 
-### Limitazioni nello stile del widget {#limitations-in-widget-styling}
+### Limitazioni nello stile dei widget {#limitations-in-widget-styling}
 
-Lo stile per i campi attivi, obbligatori e disattivati è limitato utilizzando le variabili. Tuttavia, potete modificarlo ignorando gli stili. L&#39;utilizzo di variabili è limitato principalmente per mantenere sotto controllo il numero di variabili. La limitazione può essere attenuata se l&#39;aspetto di un campo cambia drasticamente perché si trova in uno degli stati discussi in precedenza.
+Lo stile dei campi mirati, obbligatori e disabilitati è limitato utilizzando le variabili. Tuttavia, è possibile modificarlo ignorando gli stili. Le restrizioni che utilizzano le variabili sono fornite principalmente per mantenere il numero di variabili sotto controllo. La restrizione può essere attenuata se l&#39;aspetto di un campo cambia drasticamente perché si trova in uno degli stati discussi in precedenza.
 
 ## Descrizione della Guida {#help-description}
 
-Un autore può specificare il contenuto della Guida nei campi utilizzando i componenti Descrizione breve e lungo. Entrambi i componenti hanno una classe comune `.guideHelpDescription` e un&#39;altra classe `.long`/ `.short`, a seconda del tipo di descrizione. Il contenuto della Guida è racchiuso in un elemento paragrafo per sostituire lo stile della descrizione. La descrizione della Guida (lunga e breve) viene modificata utilizzando variabili che iniziano con widgetshelp, come indicato nella tabella seguente:
+Un autore può specificare il contenuto della Guida nei campi utilizzando i componenti Descrizione breve e lunga. Entrambi i componenti hanno una classe comune `.guideHelpDescription` e un&#39;altra classe `.long`/ `.short`, a seconda del tipo di descrizione. Il contenuto della Guida è racchiuso in un elemento paragrafo per sostituire lo stile della descrizione. La descrizione della Guida (lunga e breve) viene modificata utilizzando le variabili che iniziano con widgetshelp, come indicato nella tabella seguente:
 
 <table>
  <tbody>
@@ -308,7 +309,7 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
   </tr>
   <tr>
    <td><p><code>widgets-help-long-border-indicator-color</code></p> </td>
-   <td><p>Colore del bordo dell'indicatore sinistro della Guida lunga dei widget</p> </td>
+   <td><p>Colore bordo indicatore sinistro della Guida lunga dei widget</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-bg-color</code></p> </td>
@@ -316,22 +317,22 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
   </tr>
   <tr>
    <td><p><code>widgets-help-short-color</code></p> </td>
-   <td><p>Colore dei font della breve Guida dei widget</p> </td>
+   <td><p>Colore del carattere della breve Guida dei widget</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td>
-   <td><p>Colore di sfondo della breve descrizione dei widget</p> </td>
+   <td><p>Colore di sfondo della breve descrizione dei widget Aiuto</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td>
-   <td><p>Colore dei font della breve descrizione comandi dei widget</p> </td>
+   <td><p>Colore del carattere della breve descrizione comandi dei widget Aiuto</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Condizioni d’uso {#terms-and-conditions}
 
-Il widget Condizioni generali (TnC `` ``) consente di specificare termini e condizioni. Potete personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
+Il widget Termini e Condizioni (TnC `` ``) consente di specificare termini e condizioni. Puoi personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
 
 <table>
  <tbody>
@@ -341,22 +342,22 @@ Il widget Condizioni generali (TnC `` ``) consente di specificare termini e cond
   </tr>
   <tr>
    <td><code>tnc-unvisited</code></td>
-   <td>Colore del font del collegamento tnc non visitato.</td>
+   <td>Colore font del collegamento tnc non visitato.</td>
   </tr>
   <tr>
    <td><code>tnc-visited</code></td>
-   <td>Colore del font del collegamento tnc visitato.</td>
+   <td>Colore font del collegamento tnc visitato.</td>
   </tr>
  </tbody>
 </table>
 
 ## Pulsante {#button}
 
-I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. Nei moduli adattivi, uno dei seguenti è un pulsante:
+I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. Nei moduli adattivi, uno dei seguenti costituisce un pulsante:
 
 * input[type = text]
 * pulsante
-* element with class .button
+* elemento con classe .button
 
 Codice HTML per il pulsante:
 
@@ -397,11 +398,11 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-border-size</code></p> </td>
-   <td><p>Dimensione del bordo dei pulsanti</p> </td>
+   <td><p>Dimensioni del bordo dei pulsanti</p> </td>
   </tr>
   <tr>
    <td><p><code>button-border-type</code></p> </td>
-   <td><p>Tipo bordo</p> </td>
+   <td><p>Tipo di bordo</p> </td>
   </tr>
   <tr>
    <td><p><code>button-padding</code></p> </td>
@@ -409,15 +410,15 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-font-size</code></p> </td>
-   <td><p>Dimensione del font per il pulsante</p> </td>
+   <td><p>Dimensione del carattere del pulsante</p> </td>
   </tr>
   <tr>
    <td><p><code>button-background-color</code></p> </td>
-   <td><p>Colore di sfondo per il pulsante</p> </td>
+   <td><p>Colore di sfondo del pulsante</p> </td>
   </tr>
   <tr>
    <td><p><code>button-font-color</code></p> </td>
-   <td><p>Colore del font del pulsante</p> </td>
+   <td><p>Colore del carattere del pulsante</p> </td>
   </tr>
   <tr>
    <td><p><code>button-border-color</code></p> </td>
@@ -425,19 +426,19 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-large-padding</code></p> </td>
-   <td><p>Spaziatura per i pulsanti grandi (pulsanti con classe .buttonlarge)</p> </td>
+   <td><p>Spaziatura per i pulsanti di grandi dimensioni (pulsanti con classe .buttonlarge)</p> </td>
   </tr>
   <tr>
    <td><p><code>button-large-font-size</code></p> </td>
-   <td><p>Dimensione del font per i pulsanti di grandi dimensioni</p> </td>
+   <td><p>Dimensione del carattere per i pulsanti di grandi dimensioni</p> </td>
   </tr>
   <tr>
    <td><p><code>button-small-padding</code></p> </td>
-   <td><p>Spaziatura per i pulsanti piccoli (pulsanti con classe .buttonsmall)</p> </td>
+   <td><p>Spaziatura per i piccoli pulsanti (pulsanti con classe .bottonsmall)</p> </td>
   </tr>
   <tr>
    <td><p><code>button-small-font-size</code></p> </td>
-   <td><p>Dimensione del font per i pulsanti di piccole dimensioni</p> </td>
+   <td><p>Dimensione del carattere per i pulsanti di piccole dimensioni</p> </td>
   </tr>
   <tr>
    <td><p><code>button-info-background-color</code></p> </td>
@@ -445,7 +446,7 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-info-font-color</code></p> </td>
-   <td><p>Colore font per i pulsanti informativi</p> </td>
+   <td><p>Colore del carattere per i pulsanti informativi</p> </td>
   </tr>
   <tr>
    <td><p><code>button-info-border-color</code></p> </td>
@@ -453,15 +454,15 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-warning-background-color</code></p> </td>
-   <td><p>Colore di sfondo per i pulsanti con lo stile dell'avviso (pulsanti con la classe .buttonwarning)</p> </td>
+   <td><p>Colore di sfondo per i pulsanti con stili di avviso (pulsanti con classe .buttonwarning)</p> </td>
   </tr>
   <tr>
    <td><p><code>button-warning-font-color</code></p> </td>
-   <td><p>Colore font per i pulsanti con lo stile dell'avviso</p> </td>
+   <td><p>Colore del carattere per i pulsanti con stile di avviso</p> </td>
   </tr>
   <tr>
    <td><p><code>button-warning-border-color</code></p> </td>
-   <td><p>Colore del bordo per i pulsanti con lo stile dell'avviso</p> </td>
+   <td><p>Colore del bordo per i pulsanti con stile avviso</p> </td>
   </tr>
   <tr>
    <td><p><code>button-alert-background-color</code></p> </td>
@@ -469,18 +470,18 @@ Codice HTML per il pulsante:
   </tr>
   <tr>
    <td><p><code>button-alert-font-color</code></p> </td>
-   <td><p>Colore font per i pulsanti di avviso</p> </td>
+   <td><p>Colore dei font per i pulsanti di avviso</p> </td>
   </tr>
   <tr>
    <td><p><code>button-alert-border-color</code></p> </td>
-   <td><p>Colore del bordo per i pulsanti di avviso</p> </td>
+   <td><p>Colore del bordo dei pulsanti di avviso</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Punto interrogativo {#question-mark}
 
-Per i widget, viene visualizzato un punto interrogativo quando un autore aggiunge una lunga descrizione al contenuto della Guida. Viene utilizzata l&#39;icona predefinita fornita in bootstrap. Per utilizzare un&#39;icona personalizzata, potete personalizzare le icone di avvio.
+Per i widget, viene visualizzato un punto interrogativoMark quando un autore aggiunge una lunga descrizione nel contenuto della Guida. Viene utilizzata l&#39;icona predefinita fornita in bootstrap. Per utilizzare un’icona personalizzata, puoi personalizzare le icone del bootstrap.
 
 <table>
  <tbody>
@@ -499,18 +500,18 @@ Per i widget, viene visualizzato un punto interrogativo quando un autore aggiung
   </tr>
   <tr>
    <td><p><code>questionmark-font-color</code></p> </td>
-   <td><p>Colore dell'icona</p> </td>
+   <td><p>Colore dell’icona</p> </td>
   </tr>
   <tr>
    <td><p><code>questionmark-hover-font-color</code></p> </td>
-   <td><p>Colore dell’icona quando il mouse vi si trova sopra</p> </td>
+   <td><p>Colore dell'icona quando il mouse passa sopra di essa</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Tabella {#table}
 
-È possibile modificare il tema colore per le righe di intestazione e corpo di una tabella utilizzando le seguenti variabili.
+È possibile modificare il tema del colore per le righe di intestazione e corpo di una tabella utilizzando le seguenti variabili.
 
 <table>
  <tbody>
@@ -535,7 +536,7 @@ Per i widget, viene visualizzato un punto interrogativo quando un autore aggiung
 
 ## Allegato file {#file-attachment}
 
-Il widget Allegato file dei moduli adattivi consente di caricare i file. Potete inoltre personalizzare il widget utilizzando le variabili.
+Il widget File allegato di moduli adattivi consente di caricare file. Puoi anche personalizzare il widget utilizzando le variabili .
 
 <table>
  <tbody>
@@ -549,15 +550,15 @@ Il widget Allegato file dei moduli adattivi consente di caricare i file. Potete 
   </tr>
   <tr>
    <td><p><code>fileItemBackground</code></p> </td>
-   <td><p>Colore di sfondo per l’elemento del file</p> </td>
+   <td><p>Colore di sfondo per l’elemento file</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemBorderColor</code></p> </td>
-   <td><p>Colore del bordo per il bordo superiore</p> </td>
+   <td><p>Colore del bordo del bordo superiore</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemColor</code></p> </td>
-   <td><p>Colore del font per l’elemento del file</p> </td>
+   <td><p>Colore font per l’elemento file</p> </td>
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
@@ -565,14 +566,14 @@ Il widget Allegato file dei moduli adattivi consente di caricare i file. Potete 
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
-   <td><p>Altezza del commento per l’elemento del file</p> </td>
+   <td><p>Altezza del commento per l’elemento file</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Stili di navigazione {#navigator-styles}
+## Stili navigatore {#navigator-styles}
 
-Esistono quattro tipi di schede di navigazione. Tra queste, le schede a sinistra, in alto, nella procedura guidata e nella fisarmonica. Ogni navigatore ha una classe diversa.
+Sono disponibili quattro tipi di schede di navigazione. Sono disponibili schede a sinistra, in alto, nella procedura guidata e a soffietto. Ogni navigatore ha una classe diversa.
 
 <table>
  <tbody>
@@ -582,11 +583,11 @@ Esistono quattro tipi di schede di navigazione. Tra queste, le schede a sinistra
   </tr>
   <tr>
    <td><p><code>Accordion</code></p> </td>
-   <td><p>.Accordion-navigators</p> </td>
+   <td><p>navigatori a fisarmonica</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs on the left</code></p> </td>
-   <td><p>.tab-navigators-vertical</p> </td>
+   <td><p>.tab-navigators-verticali</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs on the top</code></p> </td>
@@ -594,12 +595,12 @@ Esistono quattro tipi di schede di navigazione. Tra queste, le schede a sinistra
   </tr>
   <tr>
    <td><p><code>Wizard</code></p> </td>
-   <td><p>.Wizard-navigators</p> </td>
+   <td><p>navigatori</p> </td>
   </tr>
  </tbody>
 </table>
 
-Di seguito è riportato il codice HTML per l&#39;elemento del navigatore tabulazione (simile alle schede di avvio):
+Di seguito è riportato il codice HTML per l&#39;elemento navigatore scheda (simile alle schede bootstrap):
 
 `<li>`
 
@@ -641,9 +642,9 @@ Di seguito è riportato il codice HTML per l&#39;elemento del navigatore tabulaz
 
 `</div>`
 
-Potete modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendenti**. Ad esempio, per aggiungere uno stile decorativo di testo al tag di ancoraggio:
+Puoi modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendente** . Ad esempio, per aggiungere uno stile decorativo testo al tag di ancoraggio:
 
-Navigatore tabulazioni in alto:
+Navigatore a schede in alto:
 
 `.tab-navigators`
 
@@ -689,7 +690,7 @@ Navigatore tabulazioni in alto:
 
 `}`
 
-Inoltre, esistono classi per assegnare uno stile ai navigatori tabulazione (sia a sinistra che in alto) in base al fatto che abbiano navigatori nidificati/secondari/secondari.
+Inoltre, esistono classi per i navigatori a schede di stile (sia a sinistra che in alto) in base al fatto che abbiano navigatori nidificati/secondari/secondari.
 
 <table>
  <tbody>
@@ -699,16 +700,16 @@ Inoltre, esistono classi per assegnare uno stile ai navigatori tabulazione (sia 
   </tr>
   <tr>
    <td><p><code>nested_true</code></p> </td>
-   <td><p>Navigatori tabulazione (sinistra e superiore) con navigatori nidificati/secondari/secondari</p> </td>
+   <td><p>Navigatori a schede (sinistra e superiore) con navigatori nidificati/secondari/secondari</p> </td>
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Navigatori tabulazione (sinistra e superiore) senza navigatori nidificati/secondari/secondari</p> </td>
+   <td><p>Navigatori schede (sinistra e superiore) privi di navigatori nidificati/secondari/secondari</p> </td>
   </tr>
  </tbody>
 </table>
 
-La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle schede (sia sinistro che superiore) e ai navigatori della procedura guidata.
+La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori a schede (sia sinistro che superiore) e ai navigatori della procedura guidata.
 
 <table>
  <tbody>
@@ -721,7 +722,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
 
 >[!NOTE]
 >
->Potete modificare l&#39;icona di un particolare navigatore fornendo una classe CSS nel pannello in fase di creazione, ad esempio &lt;CLASS_NAME>. Per l&#39;icona del navigatore è possibile aggiungere un **&lt;CLASS_NAME>_nav**.
+>Puoi modificare l’icona di un particolare navigatore fornendo una classe CSS nel pannello in authoring, ad esempio &lt;CLASS_NAME>. Aggiungi un **&lt;CLASS_NAME>_nav** per l&#39;icona del navigatore.
 
 <table>
  <tbody>
@@ -730,12 +731,12 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
    <td><p><strong>Descrizione</strong></p> </td>
   </tr>
   <tr>
-   <td><p><strong>Navigatori tabulazione</strong></p> </td>
+   <td><p><strong>Navigatori schede</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><p><code>navigator-bg-color</code></p> </td>
-   <td><p>Colore di sfondo per l'intero navigatore tabulazione</p> </td>
+   <td><p>Colore di sfondo per l’intero navigatore schede</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-bg-color</code></p> </td>
@@ -743,7 +744,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>tabs-font-color</code></p> </td>
-   <td><p>Colore del font per la scheda</p> </td>
+   <td><p>Colore font per la scheda</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-hover-bg-color</code></p> </td>
@@ -751,7 +752,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>tabs-hover-font-color</code></p> </td>
-   <td><p>Colore font per la scheda al passaggio del mouse</p> </td>
+   <td><p>Colore del carattere per la scheda al passaggio del mouse</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-active-bg-color</code></p> </td>
@@ -763,19 +764,19 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>tabs-completed-bg-color</code></p> </td>
-   <td><p>Colore di sfondo quando l'espressione di completamento del pannello restituisce true</p> </td>
+   <td><p>Colore di sfondo quando l’espressione di completamento del pannello restituisce true</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-completed-font-color</code></p> </td>
-   <td><p>Colore del font quando l'espressione di completamento del pannello restituisce true</p> </td>
+   <td><p>Colore del carattere quando l'espressione di completamento del pannello restituisce true</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-stepped-bg-color</code></p> </td>
-   <td>Colore di sfondo quando il pannello è stato attivo una volta ma l'espressione di completamento restituisce falso </td>
+   <td>Colore di sfondo quando il pannello è stato attivato una volta ma l'espressione di completamento restituisce falso </td>
   </tr>
   <tr>
    <td><p><code>tabs-stepped-font-color</code></p> </td>
-   <td>Colore del font quando il pannello è stato attivo una volta ma l'espressione di completamento restituisce falso </td>
+   <td>Colore del carattere quando il pannello è stato attivato una volta ma l'espressione di completamento restituisce falso </td>
   </tr>
   <tr>
    <td><p><code>tabs-border-color</code></p> </td>
@@ -783,7 +784,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>tabs-font-size</code></p> </td>
-   <td><p>Dimensione del font per la scheda</p> </td>
+   <td><p>Dimensione del carattere della scheda</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-padding</code></p> </td>
@@ -791,7 +792,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>tabs-margin</code></p> </td>
-   <td><p>Margine per la scheda</p> </td>
+   <td><p>Margine della scheda</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-vertical-margin</code></p> </td>
@@ -810,7 +811,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
    <td><p>Rientro delle schede nidificate</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Navigatori procedura guidata</strong></p> </td>
+   <td><p><strong>Navigatori della procedura guidata</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
@@ -831,23 +832,23 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-font-color</code></p> </td>
-   <td><p>Colore del font quando il pannello è attivo (attivo)</p> </td>
+   <td><p>Colore del carattere quando il pannello è attivo (a fuoco)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td>
-   <td><p>Colore di sfondo quando l'espressione di completamento del pannello restituisce true</p> </td>
+   <td><p>Colore di sfondo quando l’espressione di completamento del pannello restituisce true</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td>
-   <td><p>Colore del font quando l'espressione di completamento del pannello restituisce true</p> </td>
+   <td><p>Colore del carattere quando l'espressione di completamento del pannello restituisce true</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td>
-   <td>Colore di sfondo quando il pannello è stato attivo una volta ma l'espressione di completamento restituisce falso</td>
+   <td>Colore di sfondo quando il pannello è stato messo a fuoco una volta ma l'espressione di completamento restituisce falso</td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td>
-   <td><p>Colore del font quando il pannello è stato attivato una volta ma l'espressione di completamento restituisce falso</p> </td>
+   <td><p>Colore del carattere quando il pannello è stato attivato una volta ma l'espressione di completamento restituisce falso</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-border-color</code></p> </td>
@@ -855,35 +856,35 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori delle sch
   </tr>
   <tr>
    <td><p><code>wizard-tabs-font-size</code></p> </td>
-   <td><p>Dimensione font per la procedura guidata</p> </td>
+   <td><p>Dimensione del carattere per la procedura guidata</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-padding</code></p> </td>
-   <td><p>Margine per la procedura guidata</p> </td>
+   <td><p>Aggiunta della creazione guidata</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-border-thickness</code></p> </td>
-   <td><p>Dimensione del bordo per la procedura guidata</p> </td>
+   <td><p>Dimensioni del bordo della procedura guidata</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-nav-bullet-border</code></p> </td>
-   <td><p>Colore del bordo del punto elenco dello strumento di navigazione guidato (prefisso della didascalia/etichetta)</p> </td>
+   <td><p>Colore del bordo del punto elenco del navigatore della procedura guidata (predefinizione della didascalia/etichetta)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-progress-bg-color</code></p> </td>
-   <td><p>Colore di sfondo della barra di avanzamento della procedura guidata</p> </td>
+   <td><p>Colore di sfondo della barra di avanzamento del navigatore guidato</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-progress-color</code></p> </td>
    <td><p>Colore di riempimento per la barra di avanzamento</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Navigatori Accordion</strong></p> </td>
+   <td><p><strong>Navigatori a soffietto</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><p><code>accordion-tabs-padding</code></p> </td>
-   <td><p>Spaziatura per la struttura a soffietto</p> </td>
+   <td><p>Spaziatura per pannello a soffietto</p> </td>
   </tr>
  </tbody>
 </table>
@@ -917,15 +918,15 @@ Un pannello include una barra degli strumenti opzionale e il relativo contenuto.
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>Colore del font per il testo del pannello<br /> </p> </td>
+   <td><p>Colore font per il testo del pannello<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
-   <td><p>Margine nel pannello</p> </td>
+   <td><p>Spaziatura all’interno del pannello</p> </td>
   </tr>
   <tr>
    <td><p><code>panel-description-font-size</code></p> </td>
-   <td><p>Dimensione del font della descrizione del pannello</p> </td>
+   <td><p>Dimensione del carattere della descrizione del pannello</p> </td>
   </tr>
   <tr>
    <td><p><code>panel-description-padding</code></p> </td>
@@ -937,20 +938,20 @@ Un pannello include una barra degli strumenti opzionale e il relativo contenuto.
   </tr>
   <tr>
    <td><p><code>panel-help-border-indicator-color</code></p> </td>
-   <td><p>Colore del bordo indicatore per la guida del pannello</p> </td>
+   <td><p>Colore del bordo dell’indicatore per la guida del pannello</p> </td>
   </tr>
  </tbody>
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. `` `` non esiste un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. Non esiste un componente di stile separato per il contenuto. `` `` Le variabili descritte vengono applicate sia al navigatore che al contenuto.
 
-Il pannello superiore (RootPanel) non dispone di questa classe.
+La classe non è presente nel pannello principale (RootPanel).
 
 ## Stile mobile {#mobile-styling}
 
 ## Barra delle intestazioni {#header-bar}
 
-Queste variabili influenzano la barra dell’intestazione visibile su un dispositivo mobile o su dispositivi con schermo piccolo che contengono il titolo del pannello e i navigatori successivi e posteriori.
+Queste variabili influenzano la barra dell’intestazione visibile su un dispositivo mobile o su dispositivi a schermo piccolo che contengono il titolo del pannello e i navigatori successivi e posteriori.
 
 <table>
  <tbody>
@@ -969,11 +970,11 @@ Queste variabili influenzano la barra dell’intestazione visibile su un disposi
   </tr>
   <tr>
    <td><p><code>headerbar-background-color</code></p> </td>
-   <td><p>Colore di sfondo per la barra di intestazione</p> </td>
+   <td><p>Colore di sfondo per la barra dell’intestazione</p> </td>
   </tr>
   <tr>
    <td><p><code>headerbar-font-color</code></p> </td>
-   <td><p>Colore del font per il testo all’interno della barra dell’intestazione</p> </td>
+   <td><p>Colore del carattere del testo all’interno della barra dell’intestazione</p> </td>
   </tr>
   <tr>
    <td><p><code>headerbar-padding</code></p> </td>
@@ -984,7 +985,7 @@ Queste variabili influenzano la barra dell’intestazione visibile su un disposi
 
 ## Indicatore di scorrimento {#scroll-indicator}
 
-Queste variabili influenzano l’indicatore di scorrimento, ossia una freccia arancione che viene visualizzata su un dispositivo mobile o su un dispositivo a schermo piccolo. Un indicatore di scorrimento indica che è presente del contenuto oltre la parte visibile dello schermo. Potete scorrere verso il basso per visualizzarlo. Quando si tocca la fine del contenuto, la freccia scompare.
+Queste variabili influenzano l’indicatore di scorrimento, che è una freccia arancione visualizzata su un dispositivo mobile o su piccoli schermi. Un indicatore di scorrimento indica che il contenuto è presente oltre la parte visibile dello schermo. Puoi scorrere verso il basso per vederlo. Quando premi la fine del contenuto, la freccia scompare.
 
 <table>
  <tbody>
@@ -1015,14 +1016,14 @@ Queste variabili influenzano l’indicatore di scorrimento, ossia una freccia ar
   </tr>
   <tr>
    <td><p><code>scrollIndicatorHeight</code></p> </td>
-   <td><p>Altezza dello scorrevole</p> </td>
+   <td><p>Altezza dello scrollindicatore</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Variabili del layout fisso della barra degli strumenti mobile {#mobile-fixed-toolbar-layout-specific-variables}
+## Variabili specifiche del layout della barra degli strumenti fissa mobile {#mobile-fixed-toolbar-layout-specific-variables}
 
-Queste variabili nella tabella seguente influiscono sul layout della barra degli strumenti fissa per dispositivi mobili.
+Queste variabili nella tabella seguente influenzano il layout fisso della barra degli strumenti mobile.
 
 <table>
  <tbody>
@@ -1061,11 +1062,11 @@ Queste variabili nella tabella seguente influiscono sul layout della barra degli
   </tr>
   <tr>
    <td><p><code>mobileButtonIconWidth</code></p> </td>
-   <td><p>Larghezza dell'icona dei pulsanti della barra degli strumenti sul dispositivo mobile</p> </td>
+   <td><p>Larghezza dell’icona dei pulsanti della barra degli strumenti sul dispositivo mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconHeight</code></p> </td>
-   <td><p>Altezza dell'icona dei pulsanti della barra degli strumenti sul dispositivo mobile</p> </td>
+   <td><p>Altezza dell’icona dei pulsanti della barra degli strumenti sul dispositivo mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td>
@@ -1076,7 +1077,7 @@ Queste variabili nella tabella seguente influiscono sul layout della barra degli
 
 ## Variabile specifica per il tema {#theme-specific-variable}
 
-Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetema/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` presentano alcune variabili. Se desiderate creare un tema per migliorare la semplice iscrizione, potete utilizzare le seguenti &quot;variabili aggiuntive:
+Il tema **Semplice iscrizione** in /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` introducono anche alcune variabili. Se si desidera creare un tema che incrementa la semplice iscrizione, è possibile utilizzare le seguenti &quot;variabili extra:
 
 <table>
  <tbody>
@@ -1086,7 +1087,7 @@ Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetema/simpleE
   </tr>
   <tr>
    <td><p><code>button-focus-bg-color</code></p> </td>
-   <td><p>Colore di sfondo per il pulsante attivo</p> </td>
+   <td><p>Colore di sfondo per pulsante attivo</p> </td>
   </tr>
   <tr>
    <td><p><code>button-hover-bg-color</code></p> </td>
@@ -1098,11 +1099,11 @@ Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetema/simpleE
   </tr>
   <tr>
    <td><p><code>navigation-button-bg-color</code></p> </td>
-   <td><p>Colore di sfondo per i pulsanti di navigazione (Indietro/Avanti)</p> </td>
+   <td><p>Colore di sfondo per i pulsanti di navigazione (indietro/avanti)</p> </td>
   </tr>
   <tr>
    <td><p><code>navigation-button-bg-hover-color</code></p> </td>
-   <td><p>Colore di sfondo per i pulsanti di navigazione (Indietro/Avanti) al passaggio del mouse</p> </td>
+   <td><p>Colore di sfondo per i pulsanti di navigazione (indietro/avanti) al passaggio del mouse</p> </td>
   </tr>
   <tr>
    <td><p><code>initial-nav-color</code></p> </td>
@@ -1114,19 +1115,19 @@ Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetema/simpleE
   </tr>
   <tr>
    <td><p><code>visited-nav-color</code></p> </td>
-   <td><p>Colore di sfondo per i navigatori della procedura guidata e la barra di avanzamento corrispondente visitata.</p> </td>
+   <td><p>Colore di sfondo per i navigatori della procedura guidata e la barra di avanzamento corrispondente, visitati.</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-bifercating-border-color</code></p> </td>
-   <td><p>Bordo bipolazione del contenitore in navigatori e pannelli</p> </td>
+   <td><p>Contenitore biforcazione colore bordo in navigatori e pannelli</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-navigator-separator-color</code></p> </td>
-   <td><p>Colore del bordo inferiore che separa le schede per le schede a sinistra (navigatori tabulazione).</p> </td>
+   <td><p>Schede che separano i colori dei bordi inferiori delle schede a sinistra (navigatori schede).</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-child-nav-bg-color</code></p> </td>
-   <td><p>Colore di sfondo per i navigatori nidificati/secondari/secondari</p> </td>
+   <td><p>Colore di sfondo per i navigatori nidificati/secondari/secondari del navigatore</p> </td>
   </tr>
  </tbody>
 </table>
