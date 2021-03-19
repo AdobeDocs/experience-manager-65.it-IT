@@ -1,8 +1,8 @@
 ---
 title: Abilitare la registrazione per i moduli HTML5
 seo-title: Abilitare la registrazione per i moduli HTML5
-description: L'utilità logger consente di registrare un modulo e consente di eseguire il debug dei problemi relativi al modulo.
-seo-description: L'utilità logger consente di registrare un modulo e consente di eseguire il debug dei problemi relativi al modulo.
+description: L'utilità logger abilita la registrazione di un modulo e consente di eseguire il debug dei problemi relativi al modulo.
+seo-description: L'utilità logger abilita la registrazione di un modulo e consente di eseguire il debug dei problemi relativi al modulo.
 uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
@@ -10,65 +10,66 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
+feature: Forms Mobile
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 6%
 
 ---
 
 
-# Abilita registrazione per moduli HTML5{#enable-logging-for-html-forms}
+# Abilita la registrazione per i moduli HTML5{#enable-logging-for-html-forms}
 
-È possibile configurare l&#39;utilità di registrazione per avviare la creazione di registri per i moduli HTML5. L&#39;utilità logger ha vari livelli, è possibile impostare un livello in base ai requisiti. I moduli HTML5 hanno componenti server e client. Potete configurare i registri per entrambi i componenti.
+È possibile configurare l&#39;utilità logger per iniziare a creare registri per i moduli HTML5. L&#39;utilità logger ha vari livelli, è possibile impostare un livello in base alle proprie esigenze. I moduli HTML5 hanno componenti server e client. Puoi configurare i registri per entrambi i componenti.
 
 ## Configurazione della registrazione lato server {#configuring-server-side-logging}
 
-Per configurare i registri lato server, effettuate le seguenti operazioni:
+Esegui i seguenti passaggi per configurare i registri lato server:
 
-1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individuate e aprite l&#39;opzione *Configurazione del logger di registrazione di Apple Sling*. Viene visualizzata una finestra di dialogo:
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione del logger di registrazione di Apache Sling* . Viene visualizzata una finestra di dialogo:
 
-   ![ Apace Sling logging logger, finestra di dialogo di configurazione](assets/logconfig.png)
+   ![ Finestra di dialogo delle opzioni di configurazione del logger di registrazione di Apache Sling](assets/logconfig.png)
 
-   Opzione di configurazione del logger di registrazione di Apace Sling
+   Opzione di configurazione del logger di registrazione di Apache Sling
 
-1. Modificare il **Livello di registro** in **Debug**.
+1. Cambia il **Livello di log** in **Debug**.
 
-1. Specificare il nome e il percorso del **file di registro**.
+1. Specificare il nome e il percorso del **File di log**.
 
    >[!NOTE]
    >
-   >Per generare i registri nella directory di registro dei moduli HTML5, aggiungere ../logs/ prima del nome del file.
+   >Per generare i registri nella directory di registro dei moduli HTML5, aggiungi ../logs/ prima del nome del file.
 
-1. Modificate **Logger** in **HTMLFormsPerfLogger**. Fai clic su **Salva**.
+1. Cambia **Logger** in **HTMLFormsPerfLogger**. Fai clic su **Salva**.
 
 ## Configurazione della registrazione client {#configuring-client-logging}
 
-Per abilitare la registrazione lato client nei moduli HTML5 è possibile utilizzare i metodi seguenti:
+Per abilitare la registrazione lato client nei moduli HTML5 è possibile utilizzare i seguenti metodi:
 
-* Utilizzo del parametro di richiesta denominato `log`
+* Utilizzando il parametro della richiesta denominato `log`
 * Utilizzo di CQ Configuration Manager
 
-### Abilitazione della registrazione mediante il parametro di richiesta {#enabling-logging-using-request-parameter}
+### Abilitazione della registrazione utilizzando il parametro di richiesta {#enabling-logging-using-request-parameter}
 
-Utilizzando questo metodo, potete generare file di registro per una particolare richiesta. Il nome del parametro di richiesta è `log. L’URL del registro è il seguente:
+Utilizzando questo metodo, puoi generare registri per una particolare richiesta. Il nome del parametro della richiesta è `log. L’URL del registro è il seguente:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
 La configurazione del registro è composta dal livello di registro e dalla categoria logger.
 
-#### Destinazione registro {#log-destination}
+#### Destinazione log {#log-destination}
 
 <table>
  <tbody>
   <tr>
-   <th><strong>Destinazione registro</strong></th>
+   <th><strong>Destinazione log</strong></th>
    <th><strong>Descrizione</strong></th>
   </tr>
   <tr>
    <td>1</td>
-   <td>I registri sono indirizzati al browser <strong>Console</strong></td>
+   <td>I registri vengono indirizzati al browser <strong>Console</strong></td>
   </tr>
   <tr>
    <td>2</td>
@@ -102,7 +103,7 @@ La configurazione del registro è composta dal livello di registro e dalla categ
    <td>ERRORE<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>AVVISO<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -124,7 +125,7 @@ La configurazione del registro è composta dal livello di registro e dalla categ
  </tbody>
 </table>
 
-#### Categorie di registri {#logger-categories}
+#### Categorie di logger {#logger-categories}
 
 <table>
  <tbody>
@@ -134,11 +135,11 @@ La configurazione del registro è composta dal livello di registro e dalla categ
   </tr>
   <tr>
    <td>una sessione lavagna </td>
-   <td>xfa (registri relativi ai motori di script)</td>
+   <td>xfa (registri relativi al motore di script)</td>
   </tr>
   <tr>
    <td>b</td>
-   <td>xfaView (registri relativi ai motori di layout)<br type="_moz" /> </td>
+   <td>xfaView (registri relativi al motore di layout)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>c</td>
@@ -149,7 +150,7 @@ La configurazione del registro è composta dal livello di registro e dalla categ
 
 #### Configurazione del registro {#log-configuration}
 
-Nell’URL del registro, il parametro della stringa della query di configurazione del registro è definito come segue:
+Nell’URL del registro, il parametro della stringa di query per la configurazione del registro è definito come segue:
 
 `{destination}-{a level}-{b level}-{c level}`
 
@@ -163,25 +164,25 @@ Esempio:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destinazione: Livello server<br /> xfa: Livello INFO<br /> xfaView: DEBUG<br /> livello xfaPerf: TRACE</td>
+   <td>Destinazione: Livello server<br /> xfa: Livello INFO<br /> xfaView: Livello DEBUG<br /> xfaPerf: TRACE</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Il livello di registro predefinito per ciascuna categoria di registro a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli di registro per le diverse categorie sono:
->a (xfa): 2 (ERRORE di livello predefinito)
+>Il livello di log predefinito per ogni categoria di log a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli di log per le diverse categorie sono:
+>a (xfa): 2 (livello predefinito ERROR)
 >b (xfaView): 6 (TRACE specificato dall&#39;utente)
->a (xfaPerf): 2 (ERRORE di livello predefinito)
+>a (xfaPerf): 2 (livello predefinito ERROR)
 
-### Abilitazione dell&#39;accesso tramite Configuration Manager {#enabling-logging-using-configuration-manager}
+### Abilitazione della registrazione tramite Configuration Manager {#enabling-logging-using-configuration-manager}
 
-Se utilizzate Configuration Manager per abilitare la registrazione, vengono generati dei registri per ogni richiesta di rendering finché la registrazione non viene nuovamente disattivata.
+Se si utilizza Configuration Manager per abilitare la registrazione, vengono generati i registri per ogni richiesta di rendering fino a quando la registrazione non viene nuovamente disabilitata.
 
-1. Accedete a CQ Configuration Manager all&#39;indirizzo `https://'[server]:[port]'/system/console/configMgr` ed effettuate l&#39;accesso con le credenziali di amministratore.
-1. Cercare e fare clic su **Configurazioni Forms mobili**.
-1. Nella casella di testo Opzioni debug, immettere le configurazioni del registro come descritto nella sezione precedente, ad esempio **2-a4-b5-c6**
+1. Accedi a CQ Configuration Manager all&#39;indirizzo `https://'[server]:[port]'/system/console/configMgr` e accedi con le credenziali di amministratore.
+1. Cerca e fai clic su **Configurazioni Forms mobili**.
+1. Nella casella di testo Opzioni di debug, immetti le configurazioni del registro come descritto nella sezione precedente, ad esempio **2-a4-b5-c6**
 
    ![Configurazione dei moduli](assets/forms_configuration.png)
 
@@ -189,23 +190,23 @@ Se utilizzate Configuration Manager per abilitare la registrazione, vengono gene
 
 ## Caricamento dei registri {#uploading-logs}
 
-Se la destinazione è impostata su 1, tutti i messaggi del registro script client vengono indirizzati alla console. Se un amministratore richiede questi registri insieme ai registri del server, imposta il livello di destinazione su 2. A questo livello, tutti i registri vengono raccolti in un oggetto JS sul lato client e, se viene eseguito il rendering del modulo con il profilo predefinito, nella barra degli strumenti viene visualizzato un pulsante **Invia registri** a sinistra di **Evidenzia campi esistenti**. Quando l&#39;utente fa clic sul collegamento, tutti i registri raccolti vengono inviati al server e registrati nel file di registro degli errori configurato sul server.
+Se la destinazione è impostata su 1, tutti i messaggi di log degli script client vengono indirizzati alla console. Se un amministratore richiede questi registri insieme ai registri del server, imposta il livello di destinazione su 2. A questo livello, tutti i registri vengono raccolti in un oggetto JS sul lato client e, se viene eseguito il rendering del modulo con il profilo predefinito, viene visualizzato un pulsante **Invia registri** a sinistra del pulsante **Evidenzia campi esistenti** nella barra degli strumenti. Quando l&#39;utente fa clic sul collegamento, tutti i registri raccolti vengono inviati al server e vengono registrati nel file di registro degli errori configurato sul server.
 
-Per impostazione predefinita, tutte le informazioni vengono aggiunte al file error.log nella directory /crx-repository/logs/.
+Per impostazione predefinita, tutte le informazioni vengono aggiunte al file error.log nella directory /crx-repository/logs/ .
 
-Per modificare il percorso e il nome del file di registro:
+Per modificare la posizione e il nome del file di log:
 
-1. Accedete a Configuration Manager come amministratore. L&#39;URL predefinito di Configuration Manager è `https://'[server]:[port]'/system/console/configMgr`.
-1. Fare clic su **Configurazione del log di registrazione Apache Sling**. Viene visualizzata una finestra di dialogo.
+1. Accedi a Configuration Manager come amministratore. L’URL predefinito di Configuration Manager è `https://'[server]:[port]'/system/console/configMgr`.
+1. Fai clic su **Configurazione logger di registrazione Sling Apache**. Viene visualizzata una finestra di dialogo.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Modificate il **Livello di registro** in Debug.
+1. Cambia il **Livello di log** in Debug.
 
-1. Specificare percorso e nome del **file di registro**.
+1. Specificare il percorso e il nome del **File di log**.
 
    >[!NOTE]
    >
-   >Per creare file di registro nella stessa directory in cui sono conservati gli altri file di registro, specificare ../logs/&lt;nomefile> nella proprietà File di registro.
+   >Per creare i registri nella stessa directory in cui vengono conservati gli altri file di registro, specifica ../logs/&lt;filename> nella proprietà File di registro.
 
-1. Modificate **Logger** in **HTMLFormsPerfLogger** e fate clic su **Salva**.
+1. Cambia il **logger** in **HTMLFormsPerfLogger** e fai clic su **Salva**.
