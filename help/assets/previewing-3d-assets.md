@@ -3,11 +3,12 @@ title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
+feature: Risorse 3D
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 15%
+source-wordcount: '566'
+ht-degree: 16%
 
 ---
 
@@ -24,61 +25,61 @@ Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle 
 
 L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 
-| Estensione dei file 3D | Formato file | Tipo MIME | Note |
+| Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
-| GLB | Trasmissione GL binario | model/gltf-binary |  |
-| GLTF | Formato di trasmissione GL | model/gltf+json | Vedere **Nota** di seguito. |
-| OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
+| GLB | Trasmissione GL binaria | model/gltf binario |  |
+| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
+| OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| DN |  Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
-| USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
+| DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;acquisizione; anteprima non disponibile. |
+| USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | Sostegno solo all&#39;acquisizione; anteprima non disponibile. |
 
-**Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertatevi che siano denominati correttamente e che si trovino in una  `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
+**Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, assicurarsi che siano denominati correttamente e che si trovino in una  `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
 
     Risorsa (cartella)
     model.
     gltfmodel.
     bintextures (cartella)
-    Material_0_baseColor.
-    jpegMaterial_0_normal.jpeg
+    material_0_baseColor.
+    jpegmaterial_0_Normal.jpeg
 
-## Considerazioni sulle prestazioni per l&#39;anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni durante l&#39;anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
 
-Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
+Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori, come la larghezza di banda, la complessità delle immagini e le latenze al server.
 
-Inoltre, le funzionalità del computer client, come una workstation, un notebook o un dispositivo touch mobile, sono importanti anche quando si modifica la telecamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
+Inoltre, le funzionalità del computer client, come una workstation, un notebook o un dispositivo touch mobile, sono importanti anche quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
 
 **Per visualizzare in anteprima le risorse 3D in AEM**
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
-Consultate [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
-1. Da AEM, nella pagina **[!UICONTROL Navigazione]**, toccare **[!UICONTROL Risorse > File.]**
+Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
+1. Da AEM, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse > File.]**
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
 1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
    ![Selezione scheda 3D](/help/assets/assets-dm/3d-card-select.png)
-   _Nella vista a schede, toccate la scheda della risorsa 3D da visualizzare in anteprima._
+   _Nella Vista a schede, tocca la scheda della risorsa 3D da visualizzare in anteprima._
 
-1. Toccate la scheda della risorsa 3D per aprirla nella pagina di visualizzazione dei dettagli della risorsa.
+1. Tocca la scheda della risorsa 3D per aprirla nella pagina di visualizzazione dei dettagli della risorsa.
 
    ![Anteprima 3D interattiva](/help/assets/assets-dm/3d-preview.png)
    _Anteprima interattiva di una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa._
-1. Nella pagina di visualizzazione dei dettagli della risorsa 3D, effettuate una delle seguenti operazioni:
-   * **Ruotare la fotocamera**: orbita la vista intorno alla scena e agli oggetti 3D.
-      * _Mouse_: Fare clic con il pulsante sinistro del mouse e trascinare.
-      * _Touch screen_: Premere un dito singolo e trascinare.
-   * **Scorrimento della videocamera**: consente di scorrere la vista verso sinistra, destra, verso l’alto o verso il basso.
-      * _Mouse_: Fare clic con il pulsante destro del mouse e trascinare.
-      * _Touch screen_: Premere due dita e trascinare.
-   * **Zoom della fotocamera** - Zoom della fotocamera per spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D.
+1. Nella pagina di visualizzazione dei dettagli della risorsa 3D, effettua una delle seguenti operazioni:
+   * **Girare la fotocamera** - Rotazione la visualizzazione intorno alla scena e agli oggetti 3D.
+      * _Mouse_: Clic a sinistra + trascinamento.
+      * _Schermata_ touch: Premere un dito singolo + trascinare.
+   * **Panning della videocamera**: effettua il panning della vista a sinistra, a destra, su o giù.
+      * _Mouse_: Fai clic con il pulsante destro del mouse e trascina.
+      * _Schermata_ touch: Premere due dita + trascinare.
+   * **Zoom della fotocamera** (Zoom della fotocamera) - Consente di ingrandire e ridurre le aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
-      * _Touch screen_: Pizzicotto a due dita.
-   * **Rientra la fotocamera**: consente di rientrare la fotocamera in un punto della scena 3D.
-      * _Mouse_: Fate doppio clic.
-      * _Touch screen_: Doppio tocco.
-   * **Ripristina** (Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
-   * **Modalità** Schermo intero: per passare alla modalità Schermo intero, nell&#39;angolo inferiore destro della pagina toccate l&#39;icona Schermo intero.
+      * _Schermata_ touch: Pizzico a due dita.
+   * **Ricentrate la fotocamera** (Recenter your camera) - Riposizionate la fotocamera in un punto della scena 3D.
+      * _Mouse_: Fare doppio clic.
+      * _Schermata_ touch: Tocca due volte.
+   * **Ripristina** - Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
+   * **Modalità** a schermo intero - Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina.
 
-1. Al termine, nell&#39;angolo superiore destro della pagina, toccare **[!UICONTROL Chiudi.]**
+1. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Chiudi.]**
