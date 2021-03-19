@@ -7,10 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
+feature: Gestione risorse
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '336'
 ht-degree: 12%
 
 ---
@@ -18,17 +20,17 @@ ht-degree: 12%
 
 # Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
-Utilizzate la funzione di codice reattivo quando desiderate condividere il codice per il servizio reattivo con il vostro sviluppatore Web. Copiate negli Appunti il codice reattivo (**[!UICONTROL RESS]**) in modo da poterlo condividere con lo sviluppatore Web.
+Utilizza la funzione Codice reattivo quando desideri condividere il codice per il servizio reattivo con il tuo sviluppatore web. Puoi copiare il codice reattivo (**[!UICONTROL RESS]**) negli appunti per condividerlo con lo sviluppatore web.
 
-Questa funzione è utile se il sito Web si trova su un sito Web WCM di terze parti. Tuttavia, se il sito Web è AEM, un server immagini esterno esegue il rendering dell’immagine e la trasmette alla pagina Web.
+Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in AEM, un server di immagini fuori sede esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
-Consultate anche [Incorporamento del visualizzatore video in una pagina Web.](embed-code.md)
+Vedere anche [Incorporamento del visualizzatore video in una pagina web.](embed-code.md)
 
 Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
 
 **Per fornire immagini ottimizzate per un sito** reattivo:
 
-1. Andate all&#39;immagine per la quale desiderate fornire il codice reattivo e, nel menu a discesa, toccate **[!UICONTROL Renditions]**.
+1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, tocca **[!UICONTROL Rendering]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -40,17 +42,17 @@ Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-you
    >
    >Per poter rendere disponibili i pulsanti **[!UICONTROL URL]** o **[!UICONTROL RESS]**, la risorsa selezionata *e* il predefinito immagine o il predefinito visualizzatore devono essere pubblicati.
    >
-   >Contenuti multimediali dinamici - La modalità ibrida richiede la pubblicazione di predefiniti per immagini; Contenuti multimediali dinamici - La modalità Scene7 pubblica automaticamente i predefiniti per immagini.
+   >Dynamic Media - La modalità ibrida richiede la pubblicazione di predefiniti per immagini; Dynamic Media - La modalità Scene7 pubblica automaticamente i predefiniti per immagini.
 
 1. Toccare **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Incorpora immagine reattiva]**, selezionate e copiate il testo del codice reattivo, quindi incollatelo nel sito Web per accedere alla risorsa reattiva.
-1. Modificate i punti di interruzione predefiniti nel codice da incorporare in modo che corrispondano a quelli del sito Web reattivo direttamente nel codice. Inoltre, provate le diverse risoluzioni immagine trasmesse in punti di interruzione di pagina diversi.
+1. Nella finestra di dialogo **[!UICONTROL Incorpora immagine reattiva]** , seleziona e copia il testo del codice reattivo e incollalo nel sito Web per accedere alla risorsa reattiva.
+1. Modifica i punti di interruzione predefiniti nel codice di incorporamento in modo che corrispondano a quelli del sito web reattivo direttamente nel codice. Inoltre, prova le diverse risoluzioni immagine fornite in diversi punti di interruzione della pagina.
 
-## Utilizzo di HTTP/2 per distribuire le risorse multimediali dinamiche {#using-http-to-delivery-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per la distribuzione delle risorse Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 è il nuovo protocollo Web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media è supportata mediante HTTP/2, che fornisce una risposta e tempi di caricamento migliori.
+HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui i browser e i server comunicano. Fornisce un trasferimento più rapido delle informazioni e riduce la quantità di potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media è supportata tramite HTTP/2, che fornisce tempi di risposta e caricamento migliori.
 
-Per informazioni dettagliate sull&#39;utilizzo di HTTP/2 con l&#39;account Dynamic Media, consultate [HTTP2 Delivery of Content](http2.md) (Distribuzione di contenuti HTTP2&lt;a1/>).
+Per informazioni dettagliate su come iniziare a utilizzare HTTP/2 con il tuo account Dynamic Media, consulta [Distribuzione di contenuti HTTP2](http2.md) .
