@@ -1,8 +1,8 @@
 ---
-title: COMMERCE CLOUD SAP
-seo-title: COMMERCE CLOUD SAP
-description: Scopri come distribuire eCommerce con SAP Commerce Cloud.
-seo-description: Scopri come distribuire eCommerce con SAP Commerce Cloud.
+title: Commerce Cloud SAP
+seo-title: Commerce Cloud SAP
+description: Scopri come implementare eCommerce con SAP Commerce Cloud.
+seo-description: Scopri come implementare eCommerce con SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,37 +10,38 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
+feature: Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: 328e13eb2ce034b0b1ec7e5e0fb184de9435d1bc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 0%
+source-wordcount: '736'
+ht-degree: 2%
 
 ---
 
 
-# COMMERCE CLOUD SAP{#sap-commerce-cloud}
+# Commerce Cloud SAP{#sap-commerce-cloud}
 
 >[!NOTE]
 >
->Questa pagina contiene collegamenti al sito Web hybris. Per alcune pagine sarà necessario un account per accedere.
+>Questa pagina contiene i collegamenti al sito web hybris. Per alcune pagine sarà necessario un account per effettuare l’accesso.
 
-## Distribuzione di eCommerce con Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
+## Distribuzione di eCommerce con SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
->Nelle seguenti procedure viene utilizzato il seguente catalogo dimostrativo per illustrare la distribuzione:
+>Per illustrare la distribuzione, le procedure seguenti utilizzano il seguente catalogo dimostrativo:
 >
 >`Geometrixx Outdoors Site English (US)`
 
-L&#39;implementazione dei [pacchetti eCommerce necessari](#packages-needed-for-ecommerce-with-hybris) fornirà tutte le funzionalità del framework eCommerce, insieme a un&#39;implementazione di riferimento della funzionalità eCommerce come fornito con un&#39;implementazione hybris (incluso un catalogo dimostrativo)
+La distribuzione dei [pacchetti eCommerce necessari](#packages-needed-for-ecommerce-with-hybris) fornirà tutte le funzionalità del framework eCommerce, insieme a un&#39;implementazione di riferimento della funzionalità eCommerce fornita con un&#39;implementazione ibrida (incluso un catalogo dimostrativo)
 
-Questo è disponibile nella sezione inglese (US) ( `/content/geometrixx-outdoors/en_US`) del sito Geometrixx Outdoors:
+Questo è disponibile sotto il ramo inglese (US) ( `/content/geometrixx-outdoors/en_US`) del sito Geometrixx Outdoors:
 
-* [Informazioni](#productinformationwithcolorvariants)  sul prodotto (con eventuali varianti di colore)
+* [Informazioni sul prodotto](#productinformationwithcolorvariants)  (con varianti di colore se appropriato)
 
-* [Sovrapposizioni di contenuti del carrello](#shoppingcartcontentoverview)
-* [Accesso ](#customersignup) e accesso  [del cliente](#customersignin)
+* [Panoramica dei contenuti del carrello](#shoppingcartcontentoverview)
+* [Accesso del cliente ](#customersignup) e accesso  [del cliente](#customersignin)
 
 * [Accesso alla console di gestione ibrida](#accesstothehybrismanagementconsole)
 
@@ -52,7 +53,7 @@ L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata p
 >
 >* Supporta le versioni 18.11 e successive.
 >* Sarà necessario Java 7 per eseguire il server [hybris 5.](https://www.hybris.com/en/architecture-technology)
->* Il componente aggiuntivo hybris, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), non è supportato dall&#39;estensione AEM.
+>* L&#39;estensione AEM non supporta il componente aggiuntivo hybris [Telco Accelerator](https://www.hybris.com/en/products/telecommunication).
 
 >
 
@@ -60,14 +61,14 @@ L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata p
 
 ### Pacchetti necessari per eCommerce con hybris {#packages-needed-for-ecommerce-with-hybris}
 
-Per installare la funzionalità eCommerce è necessario disporre di:
+Per installare la funzionalità eCommerce è necessario:
 
-* Il server hybris
-* AEM eCommerce framework:
+* Il tuo server ibrido
+* Quadro AEM eCommerce:
 
    * fa parte di un&#39;installazione standard AEM
 
-* AEM pacchetto di Geometrixx:
+* AEM pacchetto tutto Geometrixx:
 
    * `cq-geometrixx-all-pkg`
 
@@ -78,26 +79,26 @@ Per installare la funzionalità eCommerce è necessario disporre di:
    * `cq-geometrixx-hybris-content-6.3.2`
    * un&#39;implementazione di riferimento per illustrare l&#39;uso dell&#39;hybris ( `geometrixx-outdoors/en_US`)
 
-### Installazione di eCommerce con hybris {#installation-of-ecommerce-with-hybris}
+### Installazione di e-commerce con hybris {#installation-of-ecommerce-with-hybris}
 
-Per installare una configurazione completa (utilizzando il catalogo dimostrativo, Geometrixx Outdoors), i passaggi di base sono:
+Per installare una configurazione completa (utilizzando il catalogo dimostrativo, Geometrixx Outdoors), i passaggi fondamentali sono i seguenti:
 
-1. [Installare AEM](/help/sites-deploying/deploy.md).
-1. Installare il pacchetto di Geometrixx
+1. [Installa AEM](/help/sites-deploying/deploy.md).
+1. Installa il pacchetto Geometrixx-all
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installate i pacchetti di contenuto dimostrativo utilizzando il gestore [pacchetti](/help/sites-administering/package-manager.md):
+1. Installa i pacchetti di contenuti dimostrativi utilizzando il [gestore di pacchetti](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [Scaricate e create il server](#download-and-build-your-hybris-server) hybris.
+1. [Scarica e genera il tuo hybris Server](#download-and-build-your-hybris-server).
 1. Crea il catalogo nel tuo motore eCommerce:
 
-   1. [Installare il Geometrixx per esterni](#setup-the-geometrixx-outdoors-store).
+   1. [Imposta il Negozio](#setup-the-geometrixx-outdoors-store) per esterni Geometrixx.
 
-1. [Consente di ](/help/sites-authoring/qg-page-authoring.md) immettere le pagine supplementari necessarie in AEM.
+1. [](/help/sites-authoring/qg-page-authoring.md) Autorizza le pagine supplementari necessarie in AEM.
 
 >[!CAUTION]
 >
@@ -105,11 +106,11 @@ Per installare una configurazione completa (utilizzando il catalogo dimostrativo
 
 >[!NOTE]
 >
->Per gli sviluppatori [Documentazione API](/help/sites-developing/ecommerce.md#api-documentation) è disponibile anche per il download.
+>Per gli sviluppatori [È disponibile anche la documentazione API](/help/sites-developing/ecommerce.md#api-documentation) per il download.
 
-### Scaricare e creare il server hybris {#download-and-build-your-hybris-server}
+### Scarica e genera il tuo server hybris {#download-and-build-your-hybris-server}
 
-I passaggi descritti in questa procedura consentono di scaricare e creare il server hybris. Inoltre, verranno effettuate le configurazioni iniziali necessarie per i collegamenti tra hybris e cq. L&#39;estensione sarà quindi utilizzabile con le impostazioni predefinite.
+I passaggi descritti in questa procedura consentono di scaricare e creare il server hybris. Sarà anche fare le configurazioni iniziali necessarie per le connessioni tra hybris e cq. L&#39;estensione sarà quindi utilizzabile con le impostazioni predefinite.
 
 >[!CAUTION]
 >
@@ -117,16 +118,16 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
 
 >[!NOTE]
 >
->Per completare questa operazione, è necessario installare [Groovy](https://groovy-lang.org/) nel sistema.
+>Per completare questa operazione, è necessario [Groovy](https://groovy-lang.org/) installato sul sistema.
 
-1. Scaricate la distribuzione **hybris Commerce Suite** dal sito di download di hybris.
+1. Scarica la distribuzione **hybris Commerce Suite** dal sito di download di hybris.
 
    >[!CAUTION]
    >
-   >Sarà necessario un account (da hybris) per accedere a questo.
+   >Per accedere a questo, è necessario un account (da hybris).
 
-1. Decomprimete il file di distribuzione nel percorso richiesto (denominato &lt;directory-radice-hybris>).
-1. Dalla riga di comando, eseguire le operazioni seguenti:
+1. Decomprimere il file di distribuzione nella posizione richiesta (indicata come &lt;hybris-root-directory>).
+1. Dalla riga di comando, esegui quanto segue:
 
    ```shell
    cd <hybris-root-directory>/bin/platform
@@ -143,7 +144,7 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
    >
    >Premere `Return` quando necessario.
 
-1. Scaricate i seguenti file nella cartella principale della distribuzione degli ibridi estratti,
+1. Scarica i seguenti file nella cartella principale della distribuzione di hybris estratta,
 
    ```
        <hybris-root-directory>
@@ -160,9 +161,9 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
 
    [Ottieni file](assets/setup-1.groovy)
 
-1. Dalla riga di comando, eseguite quanto segue:
+1. Dalla riga di comando, esegui quanto segue in:
 
-   * aggiornare la configurazione del server hybris (come richiesto dall&#39;estensione)
+   * aggiorna la configurazione del server hybris (come richiesto dall&#39;estensione)
    * ricreare il server hybris con la configurazione modificata
    * avviare il server
 
@@ -175,60 +176,60 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
 
    >[!NOTE]
    >
-   >A seconda del sistema in uso, il completamento di diversi passaggi potrebbe richiedere alcuni minuti.
+   >A seconda del sistema, il completamento di alcuni di questi passaggi potrebbe richiedere alcuni minuti.
 
-1. Nel browser, andate alla **console di amministrazione ibrida** all&#39;indirizzo:
+1. Nel browser, accedi alla **console di amministrazione ibrida** all&#39;indirizzo:
 
    [Http://localhost:9002](Http://localhost:9002)
 
 1. Fare clic su **Inizializza**, quindi confermare l&#39;azione di inizializzazione (in quanto eliminerà i dati esistenti).
 
-   L&#39;avanzamento verrà visualizzato sulla console, con `FINISHED` indica il completamento.
+   L’avanzamento viene visualizzato nella console e `FINISHED` indica il completamento.
 
    >[!NOTE]
    >
-   >A seconda del sistema, il completamento dell&#39;operazione potrebbe richiedere alcuni minuti.
+   >A seconda del sistema, il completamento dell’operazione potrebbe richiedere alcuni minuti.
 
-### Configurazione dell&#39;archivio Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
+### Imposta l&#39;archivio Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 
-Questa procedura consente di caricare e configurare il negozio dimostrativo - Geometrixx online.
+Questa procedura consente di caricare e configurare l&#39;archivio dimostrativo - Geometrixx Online.
 
-1. Avviate l’istanza hybris. Dalla riga di comando, eseguire le operazioni seguenti:
+1. Avvia la tua istanza di hybris. Dalla riga di comando, esegui quanto segue:
 
    ```shell
    cd <hybris-root-directory>/bin/platform
    sh hybrisserver.sh
    ```
 
-1. Nel browser, andate alla **console di gestione ibrida** all&#39;indirizzo:
+1. Nel browser, accedi alla **console di gestione ibrida** all&#39;indirizzo:
 
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
-   Utilizzate le seguenti credenziali:
-   * username: admin
+   Utilizzare le seguenti credenziali:
+   * nome utente: admin
    * password: nimda
 
-1. Dalla navigazione della barra laterale, esplorare e **System** e **Tools**. Selezionare quindi **Importa** per aprire la **procedura guidata: Finestra Importazione CSV**.
-1. Nella scheda **Configuration**, **Upload** il seguente file **Import**:
+1. Dalla navigazione della barra laterale, esplora **System** e **Tools**. Quindi selezionare **Importa** per aprire la procedura guidata **: Finestra Importazione CSV**.
+1. Nella scheda **Configurazione**, **Carica** il seguente **File di importazione**:
 
    [Ottieni file](assets/geometrixx-outdoors-export.csv)
 
-1. Impostare l&#39;impostazione **Impostazioni internazionali** su:
+1. Imposta le **impostazioni internazionali** su:
 
    `en_US - English (United States)`
 
-1. Aprire la scheda **Risorse**.
-1. **Caricate** il file  **ZIP** seguente:
+1. Apri la scheda **Risorse** .
+1. **** Carica il seguente file  **multimediale-ZIP**:
 
    [Ottieni file](assets/geometrixx-outdoors-images.zip)
 
-1. Fare clic su **Start** per importare i file specificati. Nella scheda **Result** vengono visualizzate tutte le voci di registro.
+1. Fare clic su **Start** per importare i file specificati. La scheda **Risultato** mostrerà tutte le voci di registro.
 
-1. Fate clic su **Fine** per chiudere la finestra di importazione.
+1. Fai clic su **Fine** per chiudere la finestra di importazione.
 
-1. Dalla barra laterale, selezionare **Sistema**, quindi **Strumenti**, quindi **Importa**.
+1. Dalla barra laterale selezionare **Sistema**, quindi **Strumenti**, quindi **Importa**.
 
-1. **Carica** il file **di** importazione seguente:
+1. **** Carica il seguente file  **di importazione**:
 
    [Ottieni file](assets/base-store.csv)
 
@@ -236,13 +237,13 @@ Questa procedura consente di caricare e configurare il negozio dimostrativo - Ge
 
    [Ottieni file](assets/base-store-5_7.csv)
 
-1. Impostare l&#39;impostazione **Impostazioni internazionali** su:
+1. Imposta le **impostazioni internazionali** su:
 
    `en_US - English (United States)`
 
-1. Fare clic su **Start** per importare i file specificati. Nella scheda **Result** vengono visualizzate tutte le voci di registro.
+1. Fare clic su **Start** per importare i file specificati. La scheda **Risultato** mostrerà tutte le voci di registro.
 
-1. Fate clic su **Fine** per chiudere la finestra di importazione.
+1. Fai clic su **Fine** per chiudere la finestra di importazione.
 
 1. È ora possibile utilizzare il cockpit prodotto per visualizzare i cataloghi e i prodotti importati:
 
