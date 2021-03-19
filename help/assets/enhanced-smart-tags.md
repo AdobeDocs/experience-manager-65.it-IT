@@ -1,11 +1,13 @@
 ---
-title: Tag avanzati migliorati
-description: Tag avanzati migliorati
+title: Sono stati migliorati i tag avanzati
+description: Sono stati migliorati i tag avanzati
 contentOwner: AG
+feature: Tag avanzati, ricerca
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1602'
 ht-degree: 4%
 
 ---
@@ -95,7 +97,7 @@ Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagi
 >
 >1. La formazione è un processo irrevocabile. Adobe consiglia di rivedere i tag nel set di risorse curato molto prima di addestrare il Servizio di contenuti avanzati sui tag.
 >1. Prima di formazione su un tag, consulta le [linee guida per la formazione Servizio di contenuti avanzati](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
->1. Quando formi il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
+>1. Quando si prepara il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 
 ## Comprendere i risultati della ricerca [!DNL Experience Manager] con tag avanzati {#understandsearch}
