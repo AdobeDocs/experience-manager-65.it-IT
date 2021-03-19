@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
+feature: Video interattivi
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '6056'
+source-wordcount: '6061'
 ht-degree: 5%
 
 ---
@@ -19,153 +21,153 @@ ht-degree: 5%
 
 # Video interattivi{#interactive-videos}
 
-Potete creare facilmente dei video interattivi, noti anche come video acquistabili, che guidano la conversione direttamente dal video. Il coinvolgimento dei clienti con il video si svolge in un pannello accanto al lettore video, dove vengono visualizzate le relative miniature di servizi, informazioni o prodotti in base alle funzioni presenti nel video. I clienti possono toccare la miniatura ed essere collegati direttamente al servizio oppure aggiungere l&#39;elemento a un carrello per un acquisto immediato, oppure essere collegati a una pagina Web per ulteriori informazioni.
+Puoi creare facilmente video interattivi - noti anche come video acquistabili - che guidano la conversione direttamente dal video. Il coinvolgimento dei clienti con il video si svolge in un pannello accanto al lettore video, dove vengono visualizzate informazioni o miniature relative a servizi, prodotti in base alle funzioni presenti nel video. I clienti possono toccare la miniatura ed essere collegati direttamente al servizio oppure aggiungere l’articolo a un carrello per un acquisto immediato, oppure essere collegati a una pagina web per ulteriori informazioni.
 
-Al termine del video, viene visualizzato un riepilogo visivo di tutte le offerte per avviare una chiamata all&#39;azione. I clienti hanno un&#39;altra opportunità di toccare l&#39;elemento desiderato. Esperienze fruibili e specifiche come queste aumentano il coinvolgimento e la conversione dei clienti.
+Al termine del video, viene visualizzato un riepilogo visivo di tutte le offerte per attivare una chiamata all’azione. I clienti hanno un’altra opportunità di toccare l’elemento desiderato. Esperienze specifiche e fruibili, come queste, aumentano il coinvolgimento e la conversione dei clienti.
 
 Vedere anche [Immagini interattive](/help/assets/interactive-images.md).
 
 ## Video interattivo in azione {#interactive-video-in-action}
 
-Per visualizzare un video interattivo e commerciabile in azione, fate clic su [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scorrete fino al titolo **[!UICONTROL Shoppable Media]** nella pagina, quindi fate clic sul video shoppable.
+Per visualizzare un video interattivo e acquistabile in azione, fai clic su [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scorri fino all&#39;intestazione **[!UICONTROL Shoppable Media]** nella pagina, quindi fai clic sul video acquistabile.
 
-* Durante la riproduzione, quando i prodotti vengono utilizzati nel video, il prodotto identico appare a destra come una miniatura.
+* Durante la riproduzione, quando i prodotti vengono utilizzati nel video, il prodotto identico viene visualizzato a destra come immagine in miniatura.
 
-* Fate clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fate clic sulla miniatura di KitchenAid nel video per vedere la rotazione a 360 gradi del mixer oppure ingrandite per visualizzare i dettagli del mixer.
+* Fai clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fai clic sull&#39;immagine della miniatura di KitchenAid nel video per visualizzare una visualizzazione a 360 gradi del mixer, oppure ingrandisci per vedere i dettagli del mixer.
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Fotogramma da un ](assets/chlimage_1-126.png) *video interattivo acquistabileAcquisizione di un fotogramma video da un video interattivo acquistabile.*
+![Un fotogramma da un ](assets/chlimage_1-126.png) *video interattivo e acquistabileUn fotogramma video da un video interattivo acquistabile.*
 
 >[!NOTE]
 >
->Se create un video interattivo per avviare una pagina Web quando un utente fa clic su una miniatura, alcuni dispositivi impediranno l’apertura della pagina Web a comparsa. In tali casi, è necessario modificare l&#39;impostazione del blocco dei pop-up sul dispositivo. Ad esempio, su un iPhone 6 Apple, toccate **[!UICONTROL Settings]** > **Safari** > **Blocca finestre a comparsa**, quindi fate scorrere il controllo su **[!UICONTROL Disattivato]**. Ora, quando riproducete un video interattivo e fate clic su una miniatura, viene richiesto se desiderate aprire la finestra a comparsa. Se accettate, viene visualizzata la pagina Web.
+>Se crei un video interattivo per avviare una pagina web quando un utente fa clic su un&#39;immagine in miniatura, alcuni dispositivi bloccheranno l&#39;apertura della pagina web a comparsa. In questi casi, è necessario modificare l&#39;impostazione di blocco dei popup sul dispositivo. Ad esempio, su un Apple iPhone 6, tocca **[!UICONTROL Impostazioni]** > **Safari** > **Blocca popup**, quindi sposta il controllo su **[!UICONTROL Disattivato]**. Ora, quando si riproduce un video interattivo e si fa clic su una miniatura, viene richiesto se si desidera aprire il pop-up. Se si accetta, viene visualizzata la pagina web.
 
 ### Guarda come vengono creati i video interattivi {#watch-how-interactive-videos-are-created}
 
 Segui la procedura dettagliata della durata di 7 minuti e 30, durante la quale [avviene la creazione dei video interattivi](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 Anche se la procedura dettagliata per i video è contrassegnata con la dicitura Assets on Demand, i principi e i passaggi illustrati restano validi per i video interattivi di AEM Assets.
 
-### Webinar  successo cliente Adobe {#adobe-customer-success-webinar}
+### Adobe webinar sul successo del cliente {#adobe-customer-success-webinar}
 
-Il webinar &quot;Using Interactive Video, Link Sharing, and YouTube sharing in  AEM Assets&quot; (Utilizzo di video interattivi, condivisione di collegamenti e condivisione di YouTube in) spiega come usare video interattivi e altre funzioni per collegare gli eventi basati sulla conversione ai contenuti di marketing dei video.
+Il webinar &quot;Utilizzo di video interattivi, condivisione collegamenti e condivisione YouTube in AEM Assets&quot; illustra come utilizzare i video interattivi e altre funzioni per collegare gli eventi basati sulla conversione ai contenuti di marketing video.
 
 >[!NOTE]
-[Utilizzo di video interattivi, condivisione di collegamenti e condivisione di YouTube in  AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[Utilizzo di video interattivi, condivisione dei collegamenti e condivisione YouTube in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Avvio rapido: Video interattivi {#quick-start-interactive-videos}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata creata per consentirvi di imparare a usare rapidamente i video interattivi in Contenuti multimediali dinamici.
+La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare i video interattivi in Dynamic Media.
 
-Cercare l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di Avvio rapido. Contiene una breve esercitazione basata su questa pagina Web della demo iniziale che *non* contiene ancora interattività:
+Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa pagina web dimostrativa iniziale a cui *non* è ancora stata aggiunta l’interattività:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
 Gli **esempi** illustrano i passaggi necessari per integrare i video interattivi nel sito web.
 
-Al termine dell&#39;esercitazione nell&#39;ultima sezione Esempio, la pagina Web della demo finale con il video interattivo completamente integrato avrà il seguente aspetto:
+Al termine dell’esercitazione nell’ultima sezione Esempio , la pagina Web demo finale con il video interattivo completamente integrato si presenta così:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
 Passaggi video interattivi:
 
-1. **(Facoltativo) Identificazione delle variabili**  Quickview - Iniziate identificando le variabili dinamiche utilizzate dall’implementazione esistente di Quickview. Le variabili vengono utilizzate per mappare le miniature dei prodotti sulla visualizzazione rapida del prodotto corrispondente al momento della creazione del video interattivo. Vedere [(facoltativo) Identificazione delle variabili di visualizzazione rapida](#optional-identifying-quickview-variables).
-   *Questo passaggio è obbligatorio solo se tutte le informazioni seguenti sono vere*: ・ Per aggiungere interattività al video, attivate la visualizzazione rapida.
-・ L&#39;implementazione di AEM non utilizza *un* framework di integrazione di eCommerce per estrarre i dati di prodotto in AEM da qualsiasi soluzione di eCommerce come IBM Websfera Commerce, Elastic Path, hybris o Intershop. Vedere [Concetti di eCommerce in  AEM Assets](/help/sites-administering/concepts.md).
+1. **(Facoltativo) Identificazione delle variabili**  Quickview - Inizia identificando le variabili dinamiche utilizzate dall&#39;implementazione esistente di Quickview. Puoi utilizzare le variabili per mappare le miniature dei prodotti sulla visualizzazione rapida del prodotto corrispondente al momento della creazione del video interattivo. Consulta [(Facoltativo) Identificazione delle variabili Quickview](#optional-identifying-quickview-variables).
+   *Tieni presente che questo passaggio è necessario solo se sono soddisfatte* tutte le seguenti condizioni: ・ Per aggiungere interattività al video, attiva le visualizzazioni rapide.
+・ La tua implementazione di AEM utilizza *not* un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
 
-1. **(Facoltativo) Creazione di un predefinito**  per visualizzatori video interattivi - Personalizzate l’aspetto e il comportamento di vari componenti che compongono il lettore, ad esempio la barra di scorrimento video e le miniature interattive.
-La creazione di un predefinito per visualizzatori video interattivi non è necessaria se intendete utilizzare i predefiniti per visualizzatori video interattivi forniti con il prodotto `Shoppable_Video_Light` o `Shoppable_Video_Dark`.
-Consultate [Creazione di un nuovo predefinito per visualizzatori](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (facoltativo) e [Considerazioni speciali per la creazione di un predefinito per visualizzatori interattivi](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+1. **(Facoltativo) Creazione di un predefinito**  visualizzatore video interattivo: personalizza l’aspetto e il comportamento di vari componenti che compongono il lettore, come lo scorrimento video e le miniature interattive.
+La creazione di un proprio predefinito per visualizzatori video interattivi non è necessaria se invece desideri utilizzare i predefiniti per visualizzatori video interattivi `Shoppable_Video_Light` o `Shoppable_Video_Dark`.
+Consulta [Creazione di un nuovo predefinito visualizzatore](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (facoltativo) e [Considerazioni speciali per la creazione di un predefinito visualizzatore interattivo](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Caricamento di un video e delle relative risorse**  immagine associate - Caricamento di un video e delle immagini associate da rendere interattive.
-Consultate [Caricamento di un video e delle relative risorse di miniature associate](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **Caricamento di un video e delle relative risorse di immagine**  associate - Caricamento di un video e delle immagini associate da rendere interattive.
+Consulta [Caricamento di un video e delle relative miniature associate](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Aggiunta di interattività al video** : aggiungete uno o più segmenti di tempo al video. Quindi, associate le miniature delle immagini all’interno di tali segmenti di tempo. Assegnate ciascuna miniatura immagine a un’azione come un collegamento ipertestuale, una visualizzazione rapida o un frammento esperienza.
-Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
-Per terminare, pubblicate le risorse video interattive. Con la pubblicazione viene creato il codice o l&#39;URL da copiare e applicare alla pagina di destinazione del sito Web.Vedere [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
-Consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
+1. **Aggiunta di interattività al video**  - Aggiungi uno o più segmenti di tempo al video. Quindi, associa le miniature delle immagini all’interno di tali segmenti di tempo. Assegna a ciascuna miniatura immagine un’azione come un collegamento ipertestuale, una visualizzazione rapida o un frammento esperienza.
+Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
+Per terminare, pubblica le risorse video interattive. La pubblicazione crea il codice di incorporamento o l’URL che verrà successivamente copiato e applicato alla pagina di destinazione del sito web.Consulta [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
+Consulta [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Aggiunta di un video interattivo al sito Web o al sito Web in**
-AEMIse utilizzate  AEM Sites, AEM eCommerce o entrambi, potete aggiungere il video interattivo direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. Consultate [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/adding-dynamic-media-assets-to-pages.md)
-Usate il codice o l’URL da incorporare per integrare il video interattivo con le esperienze del sito Web. Consultate [Integrazione di un video interattivo con il sito Web](#integrating-an-interactive-video-with-your-website).
-Se utilizzate un WCM di terze parti (Web Content Manager), dovete integrare il nuovo video interattivo con l’implementazione esistente di Quickview utilizzata sul vostro sito Web. Consultate [Integrazione di un video interattivo con una visualizzazione rapida esistente](#integrating-an-interactive-video-with-an-existing-quickview).
+1. **Aggiunta di un video interattivo al sito web o al sito web in**
+AEMIse utilizzi AEM Sites, eCommerce AEM o entrambi, puoi aggiungere il video interattivo direttamente a una pagina web in AEM trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Utilizza il codice di incorporamento o l’URL per integrare il video interattivo con le esperienze del sito web. Consulta [Integrazione di un video interattivo con il sito web](#integrating-an-interactive-video-with-your-website).
+Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo video interattivo con l’implementazione Quickview esistente utilizzata sul sito web. Consulta [Integrazione di un video interattivo con una visualizzazione rapida esistente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Aggiunta di Risorse multimediali dinamiche alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Facoltativo) Identificazione delle variabili Quickview {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
-* Per aggiungere interattività al video, attivate l’opzione Visualizzazione rapida.
-* L&#39;implementazione di AEM non utilizza *un* framework di integrazione eCommerce per estrarre i dati di prodotto in AEM da qualsiasi soluzione di eCommerce come IBM Webferfera Commerce, Elastic Path, hybris o Intershop. Vedere [Concetti di eCommerce in  AEM Assets](/help/sites-administering/concepts.md).
+* Per aggiungere interattività al video, attiva le Quickview.
+* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
 
-Se l&#39;implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all&#39;attività successiva.
+Se l’implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
-Per iniziare, identificate le variabili dinamiche utilizzate dall’implementazione esistente di Quickview in modo da mappare le miniature dei prodotti sul prodotto corrispondente Quickview durante il processo di creazione di video interattivi.
+Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione di Quickview esistente in modo da poter mappare le miniature dei prodotti sul prodotto corrispondente Quickview durante il processo di creazione di video interattivo.
 
-Quando aggiungete segmenti di tempo a un video, assegnate uno SKU ed eventuali variabili aggiuntive a ciascuna miniatura che aggiungete a un segmento. Tali variabili vengono utilizzate successivamente per visualizzare il prodotto Quickview corretto.
+Quando aggiungi segmenti di tempo a un video, assegni un SKU e qualsiasi variabile aggiuntiva a ogni miniatura che aggiungi a un segmento. Tali variabili vengono utilizzate in seguito per visualizzare il prodotto Quickview corretto.
 
 È importante identificare correttamente le variabili necessarie per attivare in modo univoco una visualizzazione rapida del prodotto.
 
-A volte può essere sufficiente consultare gli specialisti IT responsabili dell&#39;implementazione di QuickView esistente. È probabile che conoscano il set minimo di dati necessario per identificare Quickview nel sistema. Tuttavia, nella maggior parte dei casi è anche possibile analizzare semplicemente il comportamento esistente del codice front-end.
+A volte può essere sufficiente consultare gli specialisti IT responsabili dell&#39;implementazione di Quickview esistente. È probabile che conoscano il set minimo di dati necessari per identificare Quickview nel sistema. Tuttavia, nella maggior parte dei casi è anche possibile analizzare semplicemente il comportamento esistente del codice front-end.
 
 La maggior parte delle implementazioni di Quickview utilizza il seguente paradigma:
 
 * L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, facendo clic su un pulsante &quot;Quickview&quot;.
-* Il sito Web invia una richiesta Ajax al back-end per caricare i dati o il contenuto della visualizzazione rapida, se necessario.
-* I dati della visualizzazione rapida vengono convertiti nel contenuto in preparazione del rendering sulla pagina Web.
-* Infine, il codice front-end esegue visivamente il rendering di tali contenuti sullo schermo.
+* Il sito web invia una richiesta Ajax al backend per caricare i dati o il contenuto della visualizzazione rapida, se necessario.
+* I dati Quickview vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
+* Infine, il codice front-end esegue il rendering visivo di tali contenuti sullo schermo.
 
-L’approccio consiste quindi nel visitare diverse aree del sito Web in cui è implementata la visualizzazione rapida, attivare la visualizzazione rapida e acquisire l’URL Ajax inviato dalla pagina Web per caricare i dati o il contenuto della visualizzazione rapida.
+L’approccio, quindi, consiste nel visitare diverse aree del sito web esistente in cui è implementata Quickview, attivare la Quickview e acquisire l’URL Ajax inviato dalla pagina web per caricare i dati o il contenuto della Quickview.
 
-Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser Web moderni dispongono di ispettori Web che eseguono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser Web che includono ispettori Web:
+Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premere **F12** (Windows) o **Comando+Opzioni+I** (Mac) per aprire il pannello Strumenti per sviluppatori, quindi fare clic sulla scheda **Rete**.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi **F12** (Windows) o **Comando+Opzioni+I** (Mac) per aprire il pannello Strumenti per sviluppatori, quindi fai clic sulla scheda **Rete** .
 
-* In Firefox, è possibile attivare il plug-in Firebug premendo **F12** (Windows) o **Comando+Opzione+I** (Mac) e utilizzare la relativa scheda **`[Net]`** oppure è possibile utilizzare lo strumento Ispettore incorporato e la relativa scheda Rete.
+* In Firefox, è possibile attivare il plug-in Firebug premendo **F12** (Windows) o **Comando+Opzione+I** (Mac) e utilizzando la relativa scheda **`[Net]`** oppure è possibile utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
 
-* In Internet Explorer attivare lo strumento debugger premendo **F12**.
+* In Internet Explorer attivare lo strumento di debug premendo **F12**.
 
-Quando il monitoraggio della rete è attivato nel browser, attivare la visualizzazione rapida sulla pagina.
+Quando il monitoraggio della rete è attivato nel browser, attiva la visualizzazione rapida nella pagina.
 
-Ora trova l’URL Ajax di Quickview nel registro di rete e copia l’URL registrato per l’analisi futura. Nella maggior parte dei casi, quando si attiva la visualizzazione rapida, vengono inviate al server numerose richieste. In genere, l’URL Ajax della visualizzazione rapida è uno dei primi nell’elenco. Dispone di una porzione o di un percorso di una stringa di query complessa e il tipo MIME della risposta è `text/html`, `text/xml` o `text/javascript`.
+Ora trova l&#39;URL Ajax Quickview nel registro di rete e copia l&#39;URL registrato per analisi future. Nella maggior parte dei casi, quando si attiva la visualizzazione rapida sono presenti numerose richieste inviate al server. In genere, l’URL Ajax Quickview è uno dei primi dell’elenco. Dispone di una porzione o di un percorso complesso della stringa di query e il relativo tipo MIME di risposta è `text/html`, `text/xml` o `text/javascript`.
 
-Durante questo processo è importante visitare diverse aree del sito Web, con diverse categorie e tipi di prodotti. Il motivo è che gli URL di visualizzazione rapida possono avere parti comuni per una determinata categoria di sito Web, ma possono essere modificati solo se visitate un’area diversa del sito Web.
+Durante questo processo è importante visitare diverse aree del sito web, con diverse categorie di prodotti e tipi. Il motivo è che gli URL Quickview possono avere parti comuni per una determinata categoria di siti web, ma possono essere modificati solo se visiti un’area diversa del sito web.
 
-Nel caso più semplice, l’unica parte variabile dell’URL di visualizzazione rapida è lo SKU del prodotto. In questo caso, il valore SKU del prodotto è l’unico dato necessario per aggiungere miniature a un segmento di tempo nel video interattivo in AEM.
+Nel caso più semplice, l’unica parte variabile nell’URL Quickview è lo SKU del prodotto. In questo caso, il valore SKU del prodotto è l’unico elemento dati necessario per aggiungere miniature a un segmento di tempo nel video interattivo in AEM.
 
-Tuttavia, in casi complessi, l’URL Quickview presenta elementi diversi oltre allo SKU del prodotto, come ID categoria, codice colore e così via. In tali casi, ogni elemento di questo tipo diventa una variabile separata nella definizione dei dati delle miniature in AEM.
+Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi diversi rispetto allo SKU del prodotto, come ID categoria, codice colore e così via. In tali casi, ogni elemento di questo tipo diventa una variabile separata nella definizione dei dati di miniatura in AEM.
 
-Considerate i seguenti esempi di URL di visualizzazione rapida e le relative variabili di miniatura:
+Prendi in considerazione i seguenti esempi di URL di Quickview e le relative variabili di miniatura risultanti:
 
 <table>
   <tbody>
   <tr>
-    <td><p>SKU singolo, trovato nella stringa di query.</p> </td>
-    <td><p>Gli URL della visualizzazione rapida registrati includono quanto segue:</p>
+    <td><p>SKU singolo, trovato nella stringa query.</p> </td>
+    <td><p>Gli URL registrati di Quickview includono quanto segue:</p>
     <ul>
       <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>L'unica parte variabile dell'URL è il valore del parametro della stringa di query <code>productId=</code>, che è chiaramente un valore SKU. Pertanto, le miniature devono essere compilate solo con campi SKU contenenti valori quali <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>L’unica parte variabile nell’URL è il valore del parametro della stringa di query <code>productId=</code> ed è chiaramente un valore SKU. Pertanto, le miniature devono essere compilate solo da campi SKU con valori come <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
-    <td><p>SKU singolo, trovato nel percorso dell’URL.</p> </td>
-    <td><p>Gli URL della visualizzazione rapida registrati includono quanto segue:</p>
+    <td><p>SKU singolo, trovato nel percorso URL.</p> </td>
+    <td><p>Gli URL registrati di Quickview includono quanto segue:</p>
     <ul>
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>La parte variabile si trova nell’ultima parte del percorso e diventa il valore SKU AEM miniature: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>La parte variabile si trova nell’ultima parte del percorso e diventa il valore SKU delle miniature AEM: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
-    <td><p>SKU e ID categoria nella stringa di query.</p> </td>
-    <td><p>Gli URL della visualizzazione rapida registrati includono quanto segue:</p>
+    <td><p>SKU e ID categoria nella stringa query.</p> </td>
+    <td><p>Gli URL registrati di Quickview includono quanto segue:</p>
     <ul>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU è memorizzato nel parametro <code>prodId</code> e l'ID categoria è memorizzato nel parametro <code>category=</code>.</p> <p>Di conseguenza, le definizioni delle miniature sono coppie. ovvero un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
+    </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU viene memorizzato nel parametro <code>prodId</code> e l’ID categoria nel parametro <code>category=</code> .</p> <p>Di conseguenza, le definizioni delle miniature sono coppie. In altre parole, un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
     <ul>
       <li>SKU è <code>305466</code> e <code>categoryId</code> è <code>1100004</code></li>
       <li>SKU è <code>310181</code> e <code>categoryId</code> è <code>1100004</code></li>
@@ -177,11 +179,11 @@ Considerate i seguenti esempi di URL di visualizzazione rapida e le relative var
 
 **Esempio**
 
-Quando l&#39;approccio di cui sopra è applicato al nostro sito Web Esempio, abbiamo una pagina Web con una serie di miniature di prodotto, ognuna con un pulsante &quot;SEE MORE&quot;:
+Quando l&#39;approccio di cui sopra viene applicato al nostro sito web Example, abbiamo una pagina web con una serie di miniature di prodotto, ognuna con un pulsante &quot;SEE MORE&quot;:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
-Dopo aver attivato tutte le Visualizzazioni rapide del prodotto disponibili sulla pagina, viene visualizzato il seguente elenco di richieste Quickview effettuate sul back-end:
+Dopo aver attivato tutte le Quickview del prodotto disponibili sulla pagina, ottieni il seguente elenco di richieste Quickview effettuate al backend:
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -204,100 +206,100 @@ Dopo aver attivato tutte le Visualizzazioni rapide del prodotto disponibili sull
 * datafeed/glassware-233916550.json
 * datafeed/glassware-233916597.json
 
-Osservando queste chiamate al server, le informazioni specifiche per il prodotto sono presenti solo nel percorso della richiesta. Si noti inoltre che la stringa di query non viene utilizzata e che sono coinvolti due tipi distinti di dati:
+Osservando queste chiamate al server, puoi vedere che le informazioni specifiche per il prodotto sono presenti solo nel percorso della richiesta. Noterai inoltre che la stringa di query non viene utilizzata e che sono coinvolti due tipi distinti di elementi di dati:
 
-* Il primo tipo è candele, cuscini, mobili e oggetti di vetro. Puoi chiamare questa &quot;categoria di prodotti&quot;.
-* Il secondo tipo è il codice del prodotto, ad esempio 233916597. È possibile supporre che si tratti di &quot;product SKU&quot;.
+* Il primo tipo è candele, cuscini, mobili e oggetti di vetro. Puoi chiamare questa &quot;categoria di prodotto&quot;.
+* Il secondo tipo è il codice del prodotto, ad esempio 233916597. Si può presumere che sia &quot;SKU prodotto&quot;.
 
-Considerate queste informazioni, l’intero URL di Quickview presenta il seguente pattern:
+Considerate queste informazioni, l&#39;intero URL della visualizzazione rapida ha il seguente pattern:
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-In base a tale analisi, si conclude che per le miniature è possibile usare le due variabili seguenti: `categoryId` e `SKU`.
+In base a tale analisi, si conclude che per le miniature è possibile utilizzare le due variabili seguenti: `categoryId` e `SKU`.
 
-Ora potete caricare un video e le relative risorse di miniature.
+Ora puoi caricare un video e le relative risorse di miniatura associate.
 
-## (Facoltativo) Creazione di un predefinito per visualizzatori video interattivi {#optional-creating-an-interactive-video-viewer-preset}
+## (Facoltativo) Creazione di un predefinito visualizzatore video interattivo {#optional-creating-an-interactive-video-viewer-preset}
 
-Potete saltare questa attività e continuare a eseguire la procedura successiva se intendete utilizzare uno dei tipi predefiniti per visualizzatori video interattivi predefiniti forniti con il prodotto `Shoppable_Video_dark` o `Shoppable_Video_light`.
+Puoi saltare questa attività e passare all’attività successiva se vuoi utilizzare uno dei tipi predefiniti predefiniti per visualizzatori video interattivi `Shoppable_Video_dark` o `Shoppable_Video_light` predefiniti.
 
-Quando si fa clic su una miniatura nell’ambiente di authoring viene visualizzata un’anteprima della finestra di dialogo Visualizzazione rapida.
+Quando si fa clic su una miniatura nell’ambiente di authoring, viene visualizzata un’anteprima della finestra di dialogo Quickview.
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
-Facoltativamente, potete creare un predefinito personalizzato per visualizzatori video interattivi. Potete determinare, tra l’altro, lo stile del lettore video, le miniature interattive e la visualizzazione griglia delle miniature che viene visualizzata alla fine del video.
+Facoltativamente, puoi creare il tuo predefinito visualizzatore video interattivo personalizzato. È possibile determinare, tra l’altro, lo stile del lettore video, le miniature interattive e la vista a griglia delle miniature visualizzata alla fine del video.
 
-Un predefinito per visualizzatori video interattivi esegue correttamente il rendering del video e di tutti i segmenti della timeline aggiunti. Utilizza anche una visualizzazione rapida predefinita di esempio quando fai clic sulla miniatura di un prodotto in modalità Anteprima per verificarne l’interattività prima della pubblicazione.
+Un predefinito per visualizzatori video interattivi esegue correttamente il rendering del video e di tutti i segmenti della timeline aggiunti. Utilizza anche un esempio di Quickview predefinito quando fai clic su una miniatura di prodotto in modalità Anteprima per verificarne l’interattività prima della pubblicazione.
 
 Dopo aver salvato il predefinito visualizzatore, lo stato relativo viene impostato automaticamente su **On **nella pagina Predefiniti visualizzatore. Lo stato indica che è visibile nel componente Dynamic Media e ogni volta che lo si utilizza per visualizzare l’anteprima di un video. Accertati anche di pubblicare manualmente il nuovo predefinito visualizzatore.
 
-Consultate [Creazione di un nuovo predefinito per visualizzatori](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) per creare un predefinito per visualizzatori video interattivi personalizzato.
+Consulta [Creazione di un nuovo predefinito visualizzatore](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) per creare un proprio predefinito visualizzatore video interattivo.
 
-## Caricamento di un video e delle relative risorse di miniature associate {#uploading-a-video-and-its-associated-thumbnail-assets}
+## Caricamento delle risorse video e delle miniature associate {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-Se avete già caricato il video e le risorse delle miniature, passate a [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
+Se hai già caricato il video e le risorse miniature, procedi a [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
 
-Se avete caricato i video o le immagini errati o desiderate eliminare i video o le immagini caricati e non più necessari, consultate [Eliminazione delle risorse](/help/assets/manage-assets.md#deleting-assets).
+Se hai caricato i video o le immagini errati o desideri eliminare i video o le immagini caricati di cui non hai più bisogno, consulta [Eliminazione delle risorse](/help/assets/manage-assets.md#deleting-assets).
 
-Per caricare un video e le relative risorse di miniatura:
+Per caricare un video e le relative risorse di miniatura associate:
 
-1. Caricate il video e le relative risorse di miniature nella cartella o nelle cartelle desiderate.
+1. Carica il video e le relative miniature nella cartella o nelle cartelle desiderate.
 
-   Consultate [Caricamento delle risorse](/help/assets/manage-assets.md).
-Consultate [Caricamento delle risorse tramite la pianificazione dei processi FTP](/help/assets/manage-assets.md).
+   Consulta [Caricamento delle risorse](/help/assets/manage-assets.md).
+Consulta [Caricamento delle risorse tramite la pianificazione dei processi FTP](/help/assets/manage-assets.md).
 
-   Ora aggiungete interattività al video.
+   Aggiungi ora l’interattività al video.
 
 ## Aggiunta di interattività al video {#adding-interactivity-to-your-video}
 
-Per aggiungere segmenti della timeline a un video, usate l’editor visivo diretto nella pagina Crea video interattivo.
+Puoi aggiungere segmenti della timeline a un video utilizzando l’editor visivo nella posizione nella pagina Crea video interattivo.
 
-Dopo aver aggiunto i segmenti della timeline, potete aggiungere delle miniature all’interno di ciascun segmento. Per ogni miniatura aggiunta, viene applicata un’azione. Ad esempio, potete applicare una visualizzazione rapida alla miniatura, oppure assegnare un collegamento ipertestuale ad essa o un frammento esperienza.
+Dopo aver aggiunto i segmenti della timeline, aggiungi immagini in miniatura all’interno di ciascun segmento. Per ogni miniatura aggiunta, applichi un’azione ad essa. Ad esempio, puoi applicare una visualizzazione rapida alla miniatura, oppure assegnare un collegamento ipertestuale ad essa o un frammento esperienza.
 
-Vedere [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
-
->[!NOTE]
-Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorpori il visualizzatore in un Frammento esperienza. Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
 
-Le opzioni Annulla e Ripristina, accanto all’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
+>[!NOTE]
+Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
 
-Dopo aver salvato il video interattivo, il video viene immediatamente aperto in Anteprima. Da qui potete selezionare un predefinito per visualizzatori video interattivi e riprodurre il video per vedere una rappresentazione approssimativa di come apparirà ai clienti.
+Le opzioni Annulla e Ripristina, situate nell’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
+
+Dopo aver salvato il video interattivo, il video viene immediatamente aperto in Anteprima. Da qui, puoi selezionare un predefinito visualizzatore video interattivo e riprodurre il video per vedere una rappresentazione approssimativa di come apparirà ai clienti.
 
 Per aggiungere interattività al video:
 
-1. Nella vista Risorse, individuate il video caricato e che desiderate rendere interattivo.
+1. Nella vista Risorse, individua il video caricato e vuoi renderlo interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passate il puntatore del mouse sull&#39;immagine, quindi toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, toccare **[!UICONTROL Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
 
-   * Passa il puntatore del mouse sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica.]**
 
-   * Toccate l’immagine per aprirla nella pagina Visualizzazione dettagli. Sulla barra degli strumenti, toccare **[!UICONTROL Modifica.]**
+   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
 
-1. Nella pagina Crea video interattivo, effettuate una delle seguenti operazioni:
+1. Nella pagina Crea video interattivo, effettua una delle seguenti operazioni:
 
-   * Toccate il pulsante **[!UICONTROL Riproduci]** per avviare la riproduzione del video. Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, toccate **[!UICONTROL Aggiungi segmento]** sulla barra degli strumenti. Ripetere l&#39;operazione fino a raggiungere la fine del video.
+   * Toccare il pulsante **[!UICONTROL Play]** per iniziare a riprodurre il video. Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, tocca **[!UICONTROL Aggiungi segmento]** sulla barra degli strumenti. Ripetere l&#39;operazione fino a quando non si raggiunge la fine del video.
 
-      Per ogni segmento di tempo aggiunto, potete assegnare una o più miniature e quindi collegare tali miniature alle pagine di prodotto Quickview per consentire ai clienti di acquistare o alle pagine Web per ulteriori informazioni.
+      Per ogni segmento di tempo aggiunto, puoi assegnare una o più immagini in miniatura e quindi collegare tali miniature alle pagine di prodotto Quickview da acquistare per i clienti o alle pagine web per ulteriori informazioni.
 
-   * Toccate il pulsante **[!UICONTROL Riproduci]** per avviare la riproduzione del video. Quando un particolare prodotto, servizio o dettaglio che si desidera evidenziare viene visualizzato, toccare **[!UICONTROL Pausa.]** Toccate  **[!UICONTROL Aggiungi segmento.]**
+   * Toccare il pulsante **[!UICONTROL Play]** per iniziare a riprodurre il video. Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, toccare **[!UICONTROL Pausa.]** Tocca  **[!UICONTROL Aggiungi segmento .]**
 
-      Continuate a riprodurre e mettere in pausa il video nei punti lungo la timeline in cui desiderate aggiungere un segmento fino alla fine del video.
+      Continua a riprodurre e mettere in pausa il video nei punti della timeline in cui desideri aggiungere un segmento fino alla fine del video.
 
 1. (Facoltativo) La barra sul **[!UICONTROL Cursore scala timeline]** può essere trascinata a sinistra per ingrandire o a destra per ridurre, permettendoti così di controllare il livello di dettagli che vengono visualizzati nei segmenti aggiunti.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
-   A seconda della lunghezza del video, per impostazione predefinita la durata del segmento è impostata sui seguenti valori:
+   A seconda della lunghezza del video, l’impostazione predefinita della Durata del segmento è la seguente:
 
    <table>
       <tbody>
         <tr>
         <td><strong>Se la lunghezza del video è...</strong></td>
-        <td><strong>Per impostazione predefinita, Durata segmento è impostata su...</strong></td>
+        <td><strong>Per impostazione predefinita, l’impostazione Durata segmento è impostata su...</strong></td>
         </tr>
         <tr>
         <td>3 minuti o più</td>
@@ -322,69 +324,69 @@ Per aggiungere interattività al video:
       </tbody>
     </table>
 
-   La timeline del video utilizza la stessa quantità di spazio disponibile sullo schermo utilizzata. Di conseguenza, quando ridimensionate il browser, i segmenti aggiunti mantengono la larghezza corretta.
+   La timeline del video utilizza la stessa quantità di spazio disponibile sullo schermo. Di conseguenza, quando ridimensiona il browser, i segmenti aggiunti mantengono la larghezza corretta.
 
-   Ad esempio, le tre schermate seguenti utilizzano lo stesso video. La larghezza di ciascun segmento varia a seconda dell’impostazione Scala timeline.
+   Ad esempio, le tre schermate seguenti stanno utilizzando lo stesso video. La larghezza di ciascun segmento varia a seconda dell’impostazione Scala timeline.
 
    ![chlimage_1-23](assets/chlimage_1-129.png)
 
-   Screenshot A
+   Schermata A
 
-   La schermata A precedente mostra la visualizzazione predefinita di un video prodotto di 29 secondi. La scala della timeline è impostata sul valore predefinito di 5 secondi.
+   La schermata A precedente mostra la visualizzazione predefinita di un video prodotto di 29 secondi. La scala timeline è impostata sul valore predefinito di 5 secondi.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
-   Screenshot B
+   Schermata B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
+   Nella schermata B precedente, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. I singoli timestamp della scala timeline sono ora impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
-   Screenshot C
+   Schermata C
 
-   Nella schermata C precedente, l’impostazione Scala timeline è stata spostata a 8 secondi. I segmenti che contengono miniature di prodotto si sono ridotti. Lo zoom out in questo modo è utile se si dispone di un video lungo e si desidera visualizzare una panoramica di più segmenti che normalmente rientrerebbero nella larghezza della pagina.
+   Nella schermata C precedente, l&#39;impostazione Scala timeline è stata spostata a 8 secondi. I segmenti che contengono miniature di prodotto si sono ridotti. Questa funzione è utile se si dispone di un video lungo e si desidera visualizzare una panoramica di più segmenti che normalmente si adattano alla larghezza della pagina.
 
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Per regolare l’ora di inizio e di fine di un segmento.
 
-      Selezionate un segmento, quindi trascinate l’ovale blu iniziale o finale per regolare rispettivamente l’ora iniziale e finale. In base alle regolazioni apportate, il fotogramma video visualizzato passa alla posizione temporale appropriata nel video. Lo spostamento del segmento della timeline è limitato in base a eventuali segmenti adiacenti nella timeline. Il tempo minimo consentito per il segmento è di un secondo.
+      Seleziona un segmento, quindi trascina l’ovale blu iniziale o finale per regolare rispettivamente l’ora di inizio e di fine. Il fotogramma video visualizzato si sposta al tempo appropriato nel video, in base alle tue regolazioni. Lo spostamento del segmento della timeline è limitato in base a eventuali segmenti adiacenti nella timeline. Il tempo minimo consentito per i segmenti è di un secondo.
 
-      Utilizzate i seguenti collegamenti di navigazione per controllare e perfezionare rapidamente i segmenti video:
+      Utilizza le seguenti scelte rapide per la navigazione per controllare e ottimizzare rapidamente i segmenti video:
 
-      * Toccate l’ovale blu iniziale per cercare il video direttamente all’inizio del segmento.
-      * Toccate l’ovale blu finale per cercare il video direttamente alla fine del segmento.
-      * Toccate l’intero segmento per ripristinare la riproduzione video all’inizio di tale segmento
+      * Tocca l’ovale blu iniziale per cercare il video direttamente all’inizio di quel segmento.
+      * Tocca l’ovale blu finale per cercare il video direttamente alla fine di quel segmento.
+      * Tocca l’intero segmento per restituire la riproduzione video all’inizio del segmento
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
    Riposizionamento della fine di un segmento della timeline
 
-   * Per eliminare un segmento
+   * Eliminazione di un segmento
 
-      Selezionare l&#39;ultimo segmento nella timeline, quindi sulla barra degli strumenti toccare **[!UICONTROL Elimina segmento.]** Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
+      Seleziona l’ultimo segmento nella timeline, quindi tocca **[!UICONTROL Elimina segmento nella barra degli strumenti.]** Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
 
-      Puoi eliminare solo l’ultimo segmento. Ad esempio, se si desidera eliminare tutti i segmenti sulla timeline, è necessario selezionare sempre l&#39;ultimo, quindi toccare **[!UICONTROL Elimina segmento.]**
+      Puoi eliminare solo l’ultimo segmento. Ad esempio, se desideri eliminare tutti i segmenti sulla timeline, devi sempre selezionare l’ultimo segmento, quindi toccare **[!UICONTROL Elimina segmento.]**
 
 
-1. Selezionate un segmento di tempo al quale desiderate associare una o più miniature.
-1. A destra del video, toccate la scheda **[!UICONTROL Contenuto]**.
-1. Nella scheda Contenuto, toccate **[!UICONTROL Seleziona risorse]**, quindi individuate e selezionate tutte le risorse di immagine che desiderate usare con il video. Le risorse selezionate vengono aggiunte al pannello Selettore risorse nella scheda Contenuto.
+1. Seleziona un segmento di tempo a cui associare una o più immagini in miniatura.
+1. A destra del video, tocca la scheda **[!UICONTROL Contenuto]** .
+1. Nella scheda Contenuto, tocca **[!UICONTROL Seleziona risorse]**, quindi sfoglia e seleziona tutte le risorse di immagine che desideri utilizzare con il video. Le risorse selezionate vengono aggiunte al pannello Selettore risorse della scheda Contenuto .
 
-1. Nel selettore delle risorse sotto la scheda Contenuto, effettuate una delle seguenti operazioni:
+1. Nel selettore delle risorse sotto la scheda Contenuto, effettua una delle seguenti operazioni:
 
    <table>
       <tbody>
         <tr>
         <td>Per associare una miniatura al segmento della timeline selezionato</td>
-        <td><p>Toccate l’immagine nel pannello del selettore delle risorse a destra.</p> <p>Puoi aggiungere tutte le miniature desiderate a un segmento della timeline. Per ogni immagine selezionata, viene visualizzato un segno di spunta sull’immagine nel selettore delle risorse.</p> </td>
+        <td><p>Tocca l’immagine nel pannello del selettore risorse a destra.</p> <p>Puoi aggiungere tutte le miniature desiderate in un segmento della timeline. Per ogni immagine selezionata, un segno di spunta compare sull’immagine nel selettore delle risorse.</p> </td>
         </tr>
         <tr>
-        <td>Per rimuovere una miniatura dal segmento della timeline selezionato</td>
+        <td>Rimozione di una miniatura dal segmento della timeline selezionato</td>
         <td><p>Effettua una delle operazioni seguenti:</p>
           <ul>
-          <li>Nel pannello del selettore delle risorse, toccate un’immagine con un segno di spunta per deselezionarla. La risorsa immagine viene rimossa dal segmento della timeline.<br /> </li>
-          <li>Nel segmento della timeline selezionato, toccate un'immagine, quindi sulla barra degli strumenti, toccate <strong>Elimina prodotto</strong>.</li>
+          <li>Nel pannello del selettore delle risorse, tocca un’immagine con un segno di spunta per deselezionarla. La risorsa immagine viene rimossa dal segmento della timeline.<br /> </li>
+          <li>Nel segmento della timeline selezionato, tocca un’immagine, quindi sulla barra degli strumenti, tocca <strong>Elimina prodotto</strong>.</li>
           </ul> </td>
         </tr>
       </tbody>
@@ -394,137 +396,137 @@ Per aggiungere interattività al video:
 
    Toccando un’immagine nel pannello del selettore delle risorse, questa viene aggiunta al segmento della timeline selezionato.
 
-1. Seleziona una singola miniatura all&#39;interno di uno dei segmenti della cronologia, quindi tocca la scheda **[!UICONTROL Actions]**.
+1. Seleziona una singola miniatura all’interno di uno dei segmenti della timeline, quindi tocca la scheda **[!UICONTROL Azioni]** .
 1. Effettua una delle operazioni seguenti:
    <table> 
     <tbody> 
       <tr> 
-      <td>Per associare la miniatura selezionata a una visualizzazione rapida</td> 
-      <td><p>In Tipo azione, toccare <strong>Quickview</strong>.</p> <p>Se siete un cliente AEM Sites  ed e-commerce:</p> 
+      <td>Per associare l’immagine di miniatura selezionata a una visualizzazione rapida</td> 
+      <td><p>In Tipo azione, tocca <strong>Quickview</strong>.</p> <p>Se sei un cliente AEM Sites ed e-commerce:</p> 
        <ul> 
-       <li>Il campo di testo Valore SKU è precompilato con lo SKU (Stock Keeping Unit) del prodotto selezionato, che è un identificatore univoco per ciascun prodotto o servizio distinto offerto. Questo viene popolato automaticamente quando l'immagine è associata a un prodotto in AEM Commerce.</li> 
-       <li>Se lo SKU precompilato non è corretto, toccate o fate clic sull'icona del selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Toccate o fate clic sul prodotto che desiderate utilizzare, quindi toccate il segno di spunta nell'angolo superiore destro della pagina per tornare all'Editor video interattivo.</li> 
-       </ul> <p> Se si è <em>not</em> un cliente AEM Sites o Ecommerce </p> 
+       <li>Il campo di testo Valore SKU è precompilato con lo SKU (Stock Keeping Unit) del prodotto selezionato, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Viene compilato automaticamente quando l’immagine è associata a un prodotto in AEM Commerce.</li> 
+       <li>Se lo SKU prepopolato non è corretto, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca il segno di spunta nell’angolo in alto a destra della pagina per tornare all’Editor video interattivo.</li> 
+       </ul> <p> Se sei <em>non</em> un cliente AEM Sites o Ecommerce</p> 
        <ul> 
-       <li>Vedere <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificazione delle variabili dei punti di attivazione</a>. Sarà necessario definire queste variabili. </li> 
-       <li>Per impostazione predefinita, questo campo SKU utilizza il nome del file della risorsa immagine senza l’estensione. Se seguite una convenzione di denominazione standard per i file basati su SKU, in genere non sono necessarie ulteriori modifiche. </li> 
-       <li>In caso contrario, modificate il valore predefinito e inserite il valore SKU corretto. Nel campo di testo Valore SKU, digitare lo SKU del prodotto (Stock Keeping Unit), che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU immesso popola automaticamente la porzione variabile del modello Quickview in modo che il sistema sappia associare l’immagine toccata a una particolare visualizzazione Quickview dello SKU.</li> 
-       </ul> <p>(Facoltativo) Se all'interno della visualizzazione rapida sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare <strong>Aggiungi variabile generica</strong>. Nel campo di testo, specificate una variabile aggiuntiva. Ad esempio, <code>category=Womens</code> è una variabile aggiunta.</p> <p> </p> </td> 
+       <li>Consulta <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificazione delle variabili dei punti attivi</a>. Sarà necessario definire queste variabili. </li> 
+       <li>Per impostazione predefinita, questo campo SKU utilizza il nome file della risorsa immagine senza estensione. Se segui una convenzione di denominazione standard per i file basati su SKU, in genere non sono necessarie modifiche aggiuntive. </li> 
+       <li>In caso contrario, modifica il valore predefinito e inserisci il valore SKU corretto. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare l’immagine mappata a una particolare visualizzazione rapida SKU.</li> 
+       </ul> <p>(Facoltativo) Se all'interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare <strong>Aggiungi variabile generica</strong>. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, <code>category=Womens</code> è una variabile aggiunta.</p> <p> </p> </td> 
       </tr> 
       <tr> 
-      <td>Per associare l'immagine in miniatura selezionata a un collegamento ipertestuale</td> 
-      <td><p>In Tipo azione, toccare <strong>Collegamento ipertestuale</strong>, quindi effettuare una delle seguenti operazioni:</p> 
+      <td>Per associare l’immagine di miniatura selezionata a un collegamento ipertestuale</td> 
+      <td><p>In Tipo azione, tocca <strong>Collegamento ipertestuale</strong>, quindi effettua una delle seguenti operazioni:</p> 
        <ul> 
-       <li>Se siete un cliente AEM Sites , toccate l'icona Selettore sito (cartella) per passare a una pagina Web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.</li> 
-       <li>Se siete clienti indipendenti di contenuti multimediali dinamici, specificate nel campo HREF il percorso completo dell’URL di una pagina Web collegata.</li> 
-       </ul> <p>Accertatevi di specificare se aprire il collegamento in una nuova scheda del browser o nella scheda corrente.</p> </td> 
+       <li>Se sei un cliente AEM Sites, tocca l’icona Selettore sito (cartella) per passare a una pagina web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.</li> 
+       <li>Se si è un cliente Dynamic Media autonomo, nel campo di testo HREF specificare il percorso completo dell'URL di una pagina Web collegata.</li> 
+       </ul> <p>Assicurati di specificare se aprire il collegamento in una nuova scheda del browser o nella scheda corrente.</p> </td> 
       </tr> 
       <tr> 
-      <td>Per associare l'immagine in miniatura selezionata a un frammento esperienza</td> 
-      <td><p>In Tipo azione, toccate <strong>Frammento esperienza</strong>, quindi eseguite le seguenti operazioni:<p> 
+      <td>Per associare l’immagine in miniatura selezionata a un frammento esperienza</td> 
+      <td><p>In Tipo azione, tocca <strong>Frammento esperienza</strong>, quindi procedi come segue:<p> 
        <ul> 
-       <li>Se siete un cliente AEM Sites , toccate o fate clic sull’icona di ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Toccate o fate clic sul frammento esperienza da utilizzare, quindi toccate <strong>Seleziona </strong>nell'angolo superiore destro della pagina per tornare al pannello Azioni nella pagina precedente.<br /> Consulta Frammenti <a href="/help/sites-authoring/experience-fragments.md"> </a>esperienza.</li> 
+       <li>Se sei un cliente AEM Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca o fai clic sul frammento esperienza da utilizzare, quindi tocca <strong>Seleziona </strong>nell’angolo in alto a destra della pagina per tornare al pannello Azioni della pagina precedente.<br /> Consulta Frammenti  <a href="/help/sites-authoring/experience-fragments.md">esperienza</a>.</li> 
       </ul> 
        <ul> 
-       <li>Specificate la larghezza e l’altezza del frammento esperienza così come apparirà sul video.</li>
-       </ul><strong>Nota</strong>: Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorporate il visualizzatore in un frammento esperienza. Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.</p></tr>&lt;&gt; 
+       <li>Specifica la larghezza e l’altezza del frammento esperienza così come apparirà sul video.</li>
+       </ul><strong>Nota</strong>: Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorpori il visualizzatore in un Frammento esperienza. Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.</p></tr>&lt;&gt; 
       <tr> 
-      <td>Per modificare un'azione già assegnata a una miniatura</td> 
-      <td>In un segmento della timeline, toccate una miniatura con un collegamento a catena a destra dell’etichetta di testo. Il collegamento a catena indica che vi è stata assegnata un'azione. Toccate la scheda <strong>Azioni</strong> per apportare le modifiche.</td> 
+      <td>Per modificare un’azione già assegnata a un’immagine miniatura</td> 
+      <td>All’interno di un segmento della timeline, tocca un’immagine in miniatura con un collegamento a catena a destra dell’etichetta di testo. Il collegamento a catena indica che è stata assegnata un’azione. Tocca la scheda <strong>Azioni</strong> per apportare le modifiche desiderate.</td> 
       </tr> 
       <tr> 
-      <td>Per modificare l'etichetta di testo di una miniatura</td> 
-      <td><p>Per impostazione predefinita, l'etichetta di testo utilizza il campo di metadati <code>Title</code> dell'immagine miniatura. Se <code>Title</code> non è presente, viene utilizzato il nome del file dell'immagine in miniatura, ma senza l'estensione.</p> <p>Per modificare l'etichetta di testo di un'immagine in miniatura, nella scheda <strong>Azioni </strong>, direttamente sotto la risorsa immagine visualizzata, immettete il testo desiderato. Vedere l'illustrazione seguente.</p> <p>La nuova etichetta di testo viene utilizzata solo dal lettore video stesso e dal testo della miniatura visualizzato nel segmento della timeline. La modifica dell'etichetta non influisce né sul campo dei metadati Titolo dell'immagine in miniatura né sul relativo nome file.</p> </td> 
+      <td>Per modificare l’etichetta di testo di un’immagine miniatura</td> 
+      <td><p>Per impostazione predefinita, l’etichetta di testo utilizza il campo di metadati <code>Title</code> dell’immagine miniatura. Se <code>Title</code> non è presente, viene utilizzato il nome del file dell'immagine miniatura, ma senza l'estensione.</p> <p>Per modificare l’etichetta di testo di un’immagine miniatura, nella scheda <strong>Azioni </strong>, direttamente sotto la risorsa immagine visualizzata, immetti il testo desiderato. Vedi l'illustrazione qui sotto.</p> <p>La nuova etichetta di testo viene utilizzata solo dal lettore video stesso e il testo in miniatura visualizzato nel segmento della timeline. La modifica dell’etichetta non influisce sul campo dei metadati Titolo dell’immagine miniatura né sul relativo nome file.</p> </td> 
       </tr> 
       <tr> 
-      <td>Ripristino di una modifica apportata</td> 
-      <td>Nell'angolo superiore destro della pagina, toccare <strong>Annulla</strong> o <strong>Ripristina</strong>.</td> 
+      <td>Per ripristinare una modifica apportata</td> 
+      <td>Vicino all’angolo superiore destro della pagina, tocca <strong>Annulla</strong> o <strong>Ripristina</strong>.</td> 
       </tr> 
     </tbody> 
    </table>
 
    ![experiencefragment_interactivevideos](assets/experiencefragment_interactivevideos.png)
 
-   All’immagine in miniatura viene aggiunta una nuova etichetta di testo.
+   All’immagine miniatura viene aggiunta una nuova etichetta di testo.
 
 1. Effettua una delle operazioni seguenti:
 
-   * Ripetete i passaggi da 6 a 11 per aggiungere altre miniature ai segmenti della timeline nel video.
-   * Passate al passaggio facoltativo 13.
+   * Ripeti i passaggi 6-11 per aggiungere altre immagini in miniatura ai segmenti della timeline nel video.
+   * Procedi al passaggio facoltativo 13.
 
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * **[!UICONTROL Unisci segmento]** : puoi combinare due segmenti adiacenti (con o senza l’assegnazione di miniature di prodotto) in un unico segmento.
+   * **[!UICONTROL Segmento di unione]** : puoi combinare due segmenti adiacenti (con o senza le miniature di prodotto ad essi assegnate) in un unico segmento.
 
-      Sulla timeline, toccate due o più segmenti contigui da unire in uno. Tenere presente che non esistono maniglie di trascinamento ovali blu sui due segmenti selezionati nell&#39;illustrazione seguente.
+      Nella timeline, tocca due o più segmenti contigui da unire in uno. Nell’illustrazione seguente non sono presenti maniglie di trascinamento ovali blu sui due segmenti selezionati.
 
-      Toccate **[!UICONTROL Unisci segmento]** sulla barra degli strumenti.
+      Tocca **[!UICONTROL Unisci segmento]** sulla barra degli strumenti.
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    Unione di due segmenti selezionati di cinque secondi in un segmento di dieci secondi.
 
-   * **[!UICONTROL Segmento]**  diviso: è possibile dividere un singolo segmento in due segmenti con un tempo uguale. Se al segmento sono già assegnate delle miniature di prodotto, queste vengono combinate nel segmento sinistro.
+   * **[!UICONTROL Segmento diviso]** : puoi dividere un singolo segmento in due segmenti con tempo uguale. Se al segmento sono già assegnate miniature di prodotto, queste vengono combinate nel segmento a sinistra.
 
-      Nella timeline, toccate un segmento da dividere a metà, quindi toccate **[!UICONTROL Dividi segmento]** sulla barra degli strumenti.
+      Nella timeline, tocca un segmento da dividere a metà, quindi tocca **[!UICONTROL Dividi segmento]** nella barra degli strumenti.
 
-      Selezionando due o più segmenti, viene disattivata la funzione **[!UICONTROL Dividi segmento]**.
+      Selezionando due o più segmenti, disattiva la funzione **[!UICONTROL Segmento diviso]** .
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Suddivisione di un segmento selezionato di dieci secondi in due segmenti di cinque secondi ciascuno.
 
-1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Crea video interattivo]** viene visualizzato il nome del predefinito per visualizzatori attualmente selezionato usato con il video. Toccate il nome per selezionare un altro predefinito per visualizzatori.
+1. Nell’angolo in alto a destra della pagina **[!UICONTROL Crea video interattivo]** viene visualizzato il nome del predefinito visualizzatore attualmente selezionato utilizzato con il video. Tocca il nome per selezionare un altro predefinito per visualizzatori.
 
-   Ad esempio, il predefinito per visualizzatori `Shoppable_Video_light` consente di riprodurre il video con un&#39;area di visualizzazione bianca adiacente al video. Nell’area di visualizzazione vengono visualizzate le miniature selezionabili durante la riproduzione. Il predefinito per visualizzatori `Shoppable_Video_dark` consente di riprodurre il video con un&#39;area di visualizzazione nera adiacente al video.
+   Ad esempio, il predefinito per visualizzatori `Shoppable_Video_light` consente di riprodurre il video con un’area di visualizzazione bianca adiacente al video. L&#39;area di visualizzazione è quella in cui vengono visualizzate le miniature cliccabili durante la riproduzione. Il predefinito per visualizzatori `Shoppable_Video_dark` consente di riprodurre il video con un’area di visualizzazione nera accanto al video.
 
-   Se avete creato un predefinito per visualizzatori video interattivi personalizzato, lo vedrete anche nell’elenco dei predefiniti da cui potete scegliere.
+   Se hai creato il tuo predefinito per visualizzatori video interattivi, lo vedrai anche nell’elenco dei predefiniti tra cui puoi scegliere.
 
-   Al termine, toccare **[!UICONTROL Salva.]**
+   Al termine, tocca **[!UICONTROL Salva.]**
 
    >[!NOTE]
    Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il file `.vtt`viene salvato nella cartella principale `_VTT` di **[!UICONTROL Assets.]** Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
 
-1. Pubblicate il video interattivo. Con la pubblicazione viene creato il codice o l’URL da incorporare e da copiare e incollare nelle esperienze del sito Web.
+1. Pubblica il video interattivo. La pubblicazione crea il codice di incorporamento o l’URL da copiare e incollare nelle esperienze del sito web.
 
-   Se avete aggiunto interattività con le visualizzazioni rapide, usate solo il codice da incorporare; se avete aggiunto interattività con pagine Web con collegamenti ipertestuali, potete anche usare l’URL pubblicato. Tuttavia, il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+   Se hai aggiunto interattività con Quickview, utilizza solo il codice di incorporamento; se hai aggiunto l’interattività con le pagine web con collegamenti ipertestuali, puoi anche utilizzare l’URL pubblicato. Tuttavia, il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
 
-   Consultate [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
+   Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Per pubblicare un video acquistabile con Visualizzazioni rapide, accertatevi anche di pubblicare separatamente ciascuna risorsa immagine del video correlata dall’area di commercio.
+   Per pubblicare un video acquistabile con Quickview, accertati anche di pubblicare separatamente dall’area di e-commerce ciascuna delle risorse immagine correlate al video.
 
-   Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, potete aggiungerlo alla pagina di destinazione del sito Web esistente. Consultate [Integrazione di un video interattivo con il sito Web.](#integrating-an-interactive-video-with-your-website)
+   Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrazione di un video interattivo con il sito web.](#integrating-an-interactive-video-with-your-website)
 
-## Pubblicazione di risorse video interattive {#publishing-interactive-video-assets}
+## Pubblicazione delle risorse video interattive {#publishing-interactive-video-assets}
 
-Per informazioni dettagliate sulla pubblicazione di risorse video interattive, consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
+Per informazioni dettagliate su come pubblicare le risorse video interattive, consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md) .
 
-## Integrazione di un video interattivo con il sito Web {#integrating-an-interactive-video-with-your-website}
+## Integrazione di un video interattivo con il sito web {#integrating-an-interactive-video-with-your-website}
 
-Dopo aver caricato un video, aggiunto alcuni segmenti della timeline e pubblicato il video interattivo, potete ora aggiungerlo al sito Web esistente.
+Dopo aver caricato un video, aggiunto dei segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo al sito web esistente.
 
-Se siete un cliente AEM Sites , potete aggiungere il video interattivo trascinando il componente Supporto interattivo sulla pagina. Vedere [Aggiunta di risorse multimediali dinamiche alle pagine.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Se sei un cliente di AEM Sites, puoi aggiungere il video interattivo trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-Se siete clienti indipendenti  AEM Assets, potete aggiungere manualmente il video interattivo al sito Web come descritto in questa sezione.
+Se sei un cliente AEM Assets autonomo, puoi aggiungere manualmente il video interattivo al tuo sito web come descritto in questa sezione.
 
-1. Copiate il codice o l’URL di incorporamento del video interattivo pubblicato.
-Consultate [Incorporamento del visualizzatore video o di immagini in una pagina Web](/help/assets/embed-code.md).
-Se avete aggiunto interattività con le visualizzazioni rapide, usate solo il codice da incorporare; se avete aggiunto interattività con pagine Web con collegamenti ipertestuali, potete anche usare l’URL pubblicato. Tuttavia, il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+1. Copia il codice di incorporamento o l’URL del video interattivo pubblicato.
+Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Se hai aggiunto interattività con Quickview, utilizza solo il codice di incorporamento; se hai aggiunto l’interattività con le pagine web con collegamenti ipertestuali, puoi anche utilizzare l’URL pubblicato. Tuttavia, il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con collegamenti alle pagine AEM Sites.
 
-1. Nel codice della pagina Web della destinazione, identificate la posizione del video statico.
-1. Rimuovete il video statico e sostituite il codice con il codice da incorporare o l’URL copiato da  AEM Assets, così come è.
-Il codice da incorporare copiato è impostato per un ambiente reattivo, pertanto dovrebbe adattarsi automaticamente all’area precedentemente occupata dal video statico.
+1. Nel codice della pagina web del target, identifica dove si trova il video statico.
+1. Rimuovi il video statico e sostituisci il codice con il codice di incorporamento o l’URL copiato da AEM Assets, così come è.
+Il codice da incorporare copiato è impostato per un ambiente reattivo, pertanto deve adattarsi automaticamente all’area precedentemente occupata dal video statico.
 
 >[!NOTE]
-A questo punto, se avete aggiunto interattività solo con pagine Web con collegamento ipertestuale, avete finito.
-Tuttavia, se avete aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le viste Quickview esistenti. In tal caso, è ora necessario integrare il video interattivo con le visualizzazioni rapide esistenti sul sito Web.
+A questo punto, se hai aggiunto l’interattività solo con pagine web collegate ipertestuale, puoi farlo.
+Tuttavia, se hai aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le visualizzazioni rapide esistenti. In questo caso, è ora necessario integrare il video interattivo con le Quickview esistenti sul sito web.
 
 **Esempio**
 
-Esempio di utilizzo del sito Web demo:
+Utilizzo del sito web demo come esempio:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
-Si noti che si tratta di un codice di incorporamento video standard:
+Nota che si tratta di codice di incorporamento video standard:
 
 ```xml
 <style type="text/css">
@@ -551,40 +553,40 @@ Si noti che si tratta di un codice di incorporamento video standard:
 </script>
 ```
 
-L&#39;integrazione è semplice come rimuovere il codice da incorporare video e sostituirlo con il codice da incorporare video interattivo da AEM. Il risultato è riportato nell’URL seguente. Anche se mostra un video interattivo presente sulla pagina, non è ancora integrato con le viste rapida esistenti:
+L&#39;integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo da AEM. Puoi vedere il risultato al seguente URL. Mentre mostra un video interattivo presente sulla pagina, non è ancora integrato con le Quickview esistenti:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Questa attività si applica solo se siete clienti  AEM Assets indipendenti.
+Questa attività si applica solo se sei un cliente AEM Assets autonomo.
 
-L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione esistente di Quickview utilizzata sul sito Web. Non esiste una soluzione all&#39;integrazione che funzioni per tutti i casi. Ogni implementazione della visualizzazione rapida è univoca. Di conseguenza, è necessario un approccio specifico che molto probabilmente implichi l&#39;assistenza di una persona IT front-end.
+L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione Quickview esistente utilizzata sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione di Quickview è univoca. Di conseguenza, è necessario un approccio specifico che molto probabilmente implichi l&#39;assistenza di un personale IT front-end.
 
-L’implementazione esistente di Quickview rappresenta in genere una catena di azioni correlate che si verificano sulla pagina Web nel seguente ordine:
+L&#39;implementazione di Quickview esistente rappresenta normalmente una catena di azioni correlate che avvengono sulla pagina web nel seguente ordine:
 
-1. Un utente attiva un elemento nell’interfaccia utente del sito Web.
+1. Un utente attiva un elemento nell’interfaccia utente del sito web.
 1. Il codice front-end ottiene un URL Quickview basato sull’elemento dell’interfaccia utente attivato nel passaggio 1.
-1. Il codice front-end invia una richiesta di AJAX utilizzando l&#39;URL ottenuto al punto 2.
-1. La logica di back-end restituisce i dati o il contenuto della visualizzazione rapida corrispondenti al codice front-end.
-1. Il codice front-end carica i dati o il contenuto della visualizzazione rapida.
+1. Il codice front-end invia una richiesta AJAX utilizzando l’URL ottenuto al passaggio 2.
+1. La logica di back-end restituisce i dati o il contenuto Quickview corrispondenti al codice front-end.
+1. Il codice front-end carica i dati o il contenuto di Quickview.
 1. Facoltativamente, il codice front-end converte i dati Quickview caricati in una rappresentazione HTML.
-1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l&#39;utente finale.
+1. Il codice front-end visualizza una finestra di dialogo o un pannello modale ed esegue il rendering del contenuto HTML sullo schermo per l’utente finale.
 
-Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina Web da un passaggio arbitrario. Si tratta, invece, di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
+Queste chiamate potrebbero non rappresentare chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
-Allo stesso tempo, il video interattivo sostituisce il passaggio 1 e in parte il passaggio 2, quando un utente fa clic su una miniatura all’interno del video interattivo, tale interazione viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina Web che contiene tutti i dati delle miniature precedentemente aggiunti al AEM.
+Contemporaneamente alla sostituzione del passaggio 1 e in parte del passaggio 2, quando un utente fa clic su una miniatura all’interno del video interattivo, l’interazione dell’utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati delle miniature precedentemente aggiunti a AEM.
 
-In un gestore eventi di questo tipo, il codice front-end effettua le seguenti operazioni:
+In un tale gestore di eventi, il codice front-end effettua le seguenti operazioni:
 
-* Consente di ascoltare un evento emesso dal video interattivo.
-* Crea un URL di visualizzazione rapida basato sui dati delle miniature.
-* Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering della visualizzazione sullo schermo.
+* Ascolta un evento emesso dal video interattivo.
+* Crea un URL Quickview basato sui dati delle miniature.
+* Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering sullo schermo per la visualizzazione.
 
-Inoltre, il visualizzatore per video interattivi supporta la modalità di funzionamento a schermo intero. L&#39;utente finale attiva le visualizzazioni rapide facendo clic su una miniatura senza uscire dallo schermo intero. Per ottenere questa funzionalità, modificate il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungete il BODY del documento o altri elementi di pagina Web non disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo processo deve ascoltare un altro callback del visualizzatore inviato dopo il caricamento del visualizzatore sulla pagina.
+Inoltre, il visualizzatore video interattivo supporta la modalità di funzionamento a schermo intero. L’utente finale attiva le visualizzazioni rapide facendo clic su una miniatura senza uscire dalla schermata completa. Per ottenere questa funzionalità, devi modificare il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungere il BODY del documento o altri elementi di pagina web non disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo lavoro deve ascoltare un altro callback del visualizzatore che viene inviato dopo il caricamento del visualizzatore sulla pagina.
 
-Il codice da incorporare restituito da AEM dispone già di un gestore eventi ready-to-use. È commentato come mostrato nel frammento di codice evidenziato seguente:
+Il codice di incorporamento restituito da AEM dispone già di un gestore eventi ready-to-use. Viene commentato come visto nel seguente frammento di codice evidenziato:
 
 ```xml
 <style type="text/css">
@@ -631,16 +633,16 @@ Il codice da incorporare restituito da AEM dispone già di un gestore eventi rea
 </script>
 ```
 
-Pertanto, è solo necessario rimuovere il commento al frammento di codice evidenziato qui sopra e sostituire il corpo del gestore fittizio con codice specifico per la pagina Web.
+Pertanto, è solo necessario rimuovere il commento dallo snippet di codice evidenziato sopra e sostituire il corpo dei gestori fittizi con codice specifico per la particolare pagina web.
 
-Nel codice da incorporare standard sono presenti due gestori di callback predefiniti: `quickViewActivate` e `initComplete`. Il gestore `quickViewActivate` viene attivato quando si fa clic su una miniatura nel visualizzatore. Utilizzatelo per integrare il visualizzatore con la logica di attivazione della visualizzazione rapida. Il gestore `initComplete` viene attivato una sola volta quando il visualizzatore viene caricato nella pagina. Questo handler viene utilizzato per regolare la posizione della finestra di dialogo Visualizzazione rapida nel DOM della pagina Web.
+Nel codice di incorporamento standard sono presenti due gestori di callback predefiniti: `quickViewActivate` e `initComplete`. Il gestore `quickViewActivate` viene attivato quando si fa clic su una miniatura nel visualizzatore. Utilizzalo per integrare il visualizzatore con la logica di attivazione Quickview. Il gestore `initComplete` viene attivato solo una volta quando il visualizzatore viene caricato nella pagina. Questo gestore viene utilizzato per regolare la posizione della finestra di dialogo Quickview nel DOM della pagina Web.
 
-Il processo di creazione dell’URL di visualizzazione rapida è opposto al processo di identificazione delle variabili delle miniature di cui sopra. Utilizzando i nostri esempi di URL Quickview precedentemente identificati, potete vedere come l’URL Quickview è costruito in ogni caso:
+Il processo di costruzione dell’URL di visualizzazione rapida è opposto al processo di identificazione delle variabili di miniatura descritte in precedenza in questo argomento. Utilizzando i nostri esempi di URL Quickview precedentemente identificati, puoi vedere come viene costruito l’URL Quickview in ogni caso:
 
 <table>
   <tbody>
   <tr>
-    <td><p>SKU singolo, trovato nella stringa di query</p> </td>
+    <td><p>SKU singolo, trovato nella stringa query</p> </td>
     <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
@@ -656,7 +658,7 @@ Il processo di creazione dell’URL di visualizzazione rapida è opposto al proc
       });</code></td>
   </tr>
   <tr>
-    <td><p>SKU e ID categoria nella stringa di query</p> </td>
+    <td><p>SKU e ID categoria nella stringa query</p> </td>
     <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
@@ -666,9 +668,9 @@ Il processo di creazione dell’URL di visualizzazione rapida è opposto al proc
   </tbody>
 </table>
 
-L’ultimo passaggio per attivare l’URL di visualizzazione rapida e attivare il pannello di visualizzazione rapida richiede probabilmente l’assistenza di un esperto IT front-end del reparto IT. Essi hanno la capacità di sapere come attivare con precisione l’implementazione della visualizzazione rapida dal passaggio corretto, avendo un URL Quickview pronto all’uso.
+L&#39;ultimo passaggio per attivare l&#39;URL Quickview e attivare il pannello Quickview richiede molto probabilmente l&#39;assistenza di un esperto IT front-end del reparto IT. Hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione di Quickview dal passaggio appropriato, avendo un URL di Quickview pronto all&#39;uso.
 
-Potete vedere come questi passaggi vengono applicati al sito Web dimostrativo per integrare completamente un video interattivo con il codice Quickview. In precedenza, in questo argomento, la struttura dell’URL di visualizzazione rapida era identificata come segue:
+Puoi vedere come questi passaggi vengono applicati al sito web dimostrativo per integrare completamente un video interattivo con il codice Quickview. In precedenza, in questo argomento, la struttura dell’URL di visualizzazione rapida era identificata come segue:
 
 ```xml
 /datafeed/$CategoryId$-$SKU$.json
@@ -682,24 +684,24 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-Il sito Web dimostrativo sta attivando la finestra di dialogo Quickview utilizzando una semplice chiamata di funzione `loadQuickView()`. Questa funzione richiede un solo argomento, ovvero l&#39;URL dei dati di Quickview. L&#39;ultimo passaggio necessario per integrare il video interattivo è quindi aggiungere la seguente riga di codice al gestore `quickViewActivate`:
+Il sito Web demo sta attivando la finestra di dialogo Quickview utilizzando una semplice chiamata di funzione `loadQuickView()`. Questa funzione accetta un solo argomento, ovvero l’URL dei dati Quickview. Quindi l&#39;ultimo passaggio necessario per integrare il video interattivo è quello di aggiungere la seguente riga di codice al gestore `quickViewActivate`:
 
 ```xml
 loadQuickView(quickViewUrl);
 ```
 
-Infine, verificate che la finestra di dialogo Quickview sia associata all’elemento contenitore del visualizzatore. Il codice di incorporamento predefinito fornisce esempi di passaggi per ottenere questa funzionalità. Per ottenere un riferimento all’elemento contenitore del visualizzatore, potete usare le seguenti righe di codice:
+Infine, accertati che la finestra di dialogo Quickview sia associata all’elemento contenitore del visualizzatore. Il codice di incorporamento predefinito fornisce alcuni passaggi di esempio per ottenere questa funzionalità. Per ottenere un riferimento all’elemento contenitore del visualizzatore, puoi utilizzare le seguenti righe di codice:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
 
-Dove `inner_container` è un riferimento a un elemento `DIV` gestito dal visualizzatore. La finestra di dialogo deve essere un elemento secondario di tale `DIV`.
+Dove `inner_container` è un riferimento a un elemento `DIV` gestito dal visualizzatore. La finestra di dialogo deve essere un elemento secondario di tale elemento `DIV`.
 
-I passaggi per individuare l&#39;elemento della finestra di dialogo modale e collegarlo al contenitore di cui sopra sono specifici per le maiuscole e le minuscole. Anche in questo caso, potete ottenere l&#39;aiuto dello sviluppatore front-end che abbia familiarità con l&#39;implementazione di Quickview necessaria.
+I passaggi per individuare effettivamente l’elemento della finestra di dialogo modale e allegarlo al contenitore di cui sopra sono specifici per casi specifici. Anche in questo caso, puoi chiedere aiuto allo sviluppatore front-end che abbia familiarità con l’implementazione Quickview necessaria.
 
-Nel caso del sito Web di esempio, la finestra di dialogo modale Quickview viene implementata come `DIV` con l&#39;ID quickview-modale collegato direttamente al documento `BODY`. Di conseguenza, il codice per spostare tale finestra di dialogo nel contenitore del visualizzatore è semplice come segue:
+Nel caso del sito web di esempio, la finestra di dialogo modale Quickview viene implementata come `DIV` con l’ID quickview-modale allegato direttamente al documento `BODY`. Pertanto, il codice per spostare tale finestra di dialogo nel contenitore del visualizzatore è altrettanto semplice:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -750,10 +752,10 @@ Il codice sorgente completo è il seguente:
 </script>
 ```
 
-Il sito Web della demo finale con il video interattivo completamente integrato si presenta come segue:
+Il sito web demo finale con il video interattivo completamente integrato si presenta così:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
 ## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
 
-Vedere [Uso delle visualizzazioni rapide per creare pop-up personalizzati](/help/assets/custom-pop-ups.md).
+Consulta [Utilizzo di Quickview per creare pop-up personalizzati](/help/assets/custom-pop-ups.md).
