@@ -1,23 +1,24 @@
 ---
-title: Integrare  [!DNL Assets] con il flusso di attività
-description: Descrive le funzionalità di registrazione di  [!DNL Experience Manager] e come configurarle per registrare eventi specifici.
+title: Integrare [!DNL Assets] con il flusso di attività
+description: Descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarle per registrare eventi specifici.
 contentOwner: AG
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
 
 # Integrare [!DNL Assets] con il flusso di attività {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] gli utenti eseguono numerose azioni come creazione, caricamento ed eliminazione di risorse. Queste azioni possono essere registrate in modo da fornire una cronologia delle operazioni eseguite da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurare [!DNL Experience Manager] per registrare eventi specifici.
+[!DNL Adobe Experience Manager Assets] gli utenti eseguono molte azioni, come creare, caricare ed eliminare le risorse. Queste azioni possono essere registrate in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurare [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l&#39;integrazione [!DNL Assets] con il Flusso attività è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l’integrazione [!DNL Assets] con Activity Stream è disabilitata per impostazione predefinita.
 
 ## Eventi azione supportati {#supported-action-events}
 
@@ -29,32 +30,32 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 * Risorsa rimossa (ASSET_REMOVED)
 * Licenza rifiutata (RIFIUTATA)
 * Risorsa scaricata (SCARICATA)
-* Versione risorsa (VERSIONE)
+* Versione risorsa (VERSIONED)
 * Versione risorsa ripristinata (RIPRISTINATA)
 * Metadati risorsa aggiornati (METADATA_UPDATED)
 * Risorsa pubblicata nel sistema esterno (PUBLISHED_EXTERNAL)
-* Aggiornamento originale della risorsa (ORIGINAL_UPDATED)
-* Rendering risorsa aggiornata (RENDITION_UPDATED)
+* Aggiornato originale della risorsa (ORIGINAL_UPDATED)
+* Rendering risorsa aggiornato (RENDITION_AGGIORNATO)
 * Rendering risorsa rimosso (RENDITION_REMOVED)
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configurare la registrazione di eventi [!DNL Assets]{#configuring-aem-assets-events-recording}
+## Configurare la registrazione di eventi [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) consente di accedere al tuning del registratore eventi di Risorse. Per configurare il registratore eventi risorse, effettuate le seguenti operazioni:
+La [console Web](/help/sites-deploying/configuring-osgi.md) consente di accedere alla regolazione del Registratore eventi di Assets. Per configurare il Registratore eventi di Assets, procedi come segue:
 
-1. Passa alla **[!UICONTROL console Web]**
+1. Passa alla **[!UICONTROL Console web]**
 
-1. Fare clic su **[!UICONTROL Configuration]**.
+1. Fare clic su **[!UICONTROL Configurazione]**.
 
-1. Fare doppio clic su **[!UICONTROL Day CQ DAM Event Recorder]**.
+1. Fai doppio clic su **[!UICONTROL Day CQ DAM Event Recorder]**.
 
-1. Selezionare **[!UICONTROL Abilita questo servizio]**.
+1. Seleziona **[!UICONTROL Abilita questo servizio]**.
 
-1. Verificare quali **[!UICONTROL Tipi di eventi]** si desidera registrare nel flusso di attività dell&#39;utente.
+1. Controlla quali **[!UICONTROL Tipi di eventi]** desideri registrare nel flusso di attività dell&#39;utente.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-## Lettura eventi registrati {#reading-recorded-events}
+## Leggi gli eventi registrati {#reading-recorded-events}
 
-Gli eventi registrati vengono memorizzati come attività. Potete leggerli a livello di programmazione utilizzando l&#39;API [ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Gli eventi registrati vengono memorizzati come attività. Puoi leggerle a livello di programmazione utilizzando l&#39; [API ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
