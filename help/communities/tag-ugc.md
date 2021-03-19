@@ -1,36 +1,37 @@
 ---
-title: Assegnazione di tag ai contenuti generati dall'utente
-seo-title: Assegnazione di tag ai contenuti generati dall'utente
-description: Assegnazione di tag ai contenuti generati dagli utenti (UGC, user generated content) è il modo in cui i membri della community possono aiutare altri membri a cercare contenuti
-seo-description: Assegnazione di tag ai contenuti generati dagli utenti (UGC, user generated content) è il modo in cui i membri della community possono aiutare altri membri a cercare contenuti
+title: Assegnazione tag ai contenuti generati dagli utenti
+seo-title: Assegnazione tag ai contenuti generati dagli utenti
+description: Assegnazione di tag ai contenuti generati dagli utenti (UGC, User-Generated Content) è il modo in cui i membri della community possono aiutare gli altri membri a cercare contenuti
+seo-description: Assegnazione di tag ai contenuti generati dagli utenti (UGC, User-Generated Content) è il modo in cui i membri della community possono aiutare gli altri membri a cercare contenuti
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 3%
+source-wordcount: '249'
+ht-degree: 4%
 
 ---
 
 
-# Assegnazione tag a contenuto generato dall&#39;utente {#tagging-user-generated-content}
+# Assegnazione tag ai contenuti generati dagli utenti {#tagging-user-generated-content}
 
 ## Panoramica {#overview}
 
-L’assegnazione di tag ai contenuti generati dall’utente (UGC) è il mezzo mediante il quale i membri della community possono facilitare la ricerca di contenuti da parte di altri membri.
+L’assegnazione tag al contenuto generato dall’utente (UGC) è il mezzo con cui i membri della community possono aiutare gli altri membri a cercare contenuti.
 
-In genere, i tag vengono applicati da autori e amministratori nell’ambiente di authoring. L’assegnazione di tag UGC è univoca in quanto i tag UGC vengono applicati dai membri della community nell’ambiente di pubblicazione.
+In genere, i tag vengono applicati dagli autori e dagli amministratori nell’ambiente di authoring. L’assegnazione tag UGC è univoca in quanto i tag UGC vengono applicati dai membri della community nell’ambiente di pubblicazione.
 
-Gli spazi dei nomi e le tassonomie dei tag sono gli stessi per entrambe le applicazioni.
+I namespace e le tassonomie dei tag sono gli stessi per entrambe le applicazioni.
 
-## Caratteristiche delle community {#communities-features}
+## Funzioni di Communities {#communities-features}
 
-Le  funzioni AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
+Le funzioni di AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -40,19 +41,19 @@ Le  funzioni AEM Communities che possono essere configurate per consentire l’a
 
 ## Amministrazione dei tag {#administering-tags}
 
-Per creare e gestire spazi dei nomi dei tag e tassonomie, vedere [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console).
+Per creare e gestire i namespace e le tassonomie dei tag, consulta [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) .
 
-Per informazioni sugli sviluppatori, vedere [Tag Essentials](tag.md).
+Per informazioni sugli sviluppatori, consulta [Tag Essentials](tag.md) .
 
-Consultate [Utilizzo di Social Tag Cloud](tagcloud.md) per aggiungere un componente Social Tag Cloud a una pagina per facilitare la ricerca di UGC pubblicate utilizzando i tag applicati.
+Consulta [Utilizzo di Social Tag Cloud](tagcloud.md) per aggiungere un componente Social Tag Cloud a una pagina per facilitare la ricerca di contenuti generati dagli utenti pubblicati utilizzando i tag applicati.
 
-### Autorizzazioni tag {#tag-permissions}
+### Assegnare tag alle autorizzazioni {#tag-permissions}
 
-Le autorizzazioni predefinite sono impostate in modo da non consentire agli spazi dei nomi dei tag di essere letti da tutti gli utenti nell’ambiente di pubblicazione.
+Le autorizzazioni predefinite sono impostate per non consentire a tutti gli utenti dell’ambiente di pubblicazione di leggere i namespace dei tag.
 
-Poiché i tag vengono applicati a UGC nell’ambiente di pubblicazione, è necessario abilitare l’autorizzazione di lettura per i membri della community, affinché possano selezionare i tag da applicare.
+Poiché i tag vengono applicati a UGC nell’ambiente di pubblicazione, è necessario abilitare l’autorizzazione di lettura per i membri della community affinché possano selezionare i tag da applicare.
 
-Consultate [Impostazione delle autorizzazioni per i tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Consulta [Impostazione delle autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
