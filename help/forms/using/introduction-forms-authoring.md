@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3169'
-ht-degree: 2%
+source-wordcount: '3171'
+ht-degree: 3%
 
 ---
 
@@ -63,7 +64,7 @@ La barra laterale consente di:
 
 * Vedere il contenuto del modulo, ad esempio pannelli, componenti, campi e layout.
 * Modifica le proprietà del componente.
-* Cerca, visualizza e utilizza le risorse nel tuo archivio AEM Digital Asset Management (DAM).
+* Cerca, visualizza e utilizza le risorse nell’archivio AEM Digital Asset Management (DAM).
 * Aggiungere componenti al modulo.
 
 ![Barra laterale](assets/sidebar-comps.png)
@@ -108,7 +109,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Blocco Adobe Sign</td>
-   <td>Aggiunge un blocco di testo con segnaposto per i campi da compilare durante la firma con Adobe Sign.</td>
+   <td>Aggiunge un blocco di testo con segnaposto per i campi da compilare durante la firma tramite Adobe Sign.</td>
   </tr>
   <tr>
    <td>Pulsante</td>
@@ -298,8 +299,8 @@ Alcune best practice e punti chiave da tenere a mente quando si utilizzano i com
 * Il componente File allegato, per impostazione predefinita, consente a un utente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Pertanto, è consigliabile associare un identificatore univoco per ciascun allegato inviato all’invio del modulo. Per eseguire questa operazione:
 
    1. Sul server AEM Forms, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
-   1. Trova e tocca **[!UICONTROL Servizio di configurazione dei moduli adattivi]**.
-   1. Nella finestra di dialogo Servizio di configurazione dei moduli adattivi, abilita **[!UICONTROL Rendi univoci i nomi dei file]**. Per impostazione predefinita, è disabilitata.
+   1. Trova e tocca **[!UICONTROL Servizio di configurazione Forms adattiva]**.
+   1. Nella finestra di dialogo Servizio di configurazione Forms adattivo, abilita **[!UICONTROL Rendi unici i nomi dei file]**. Per impostazione predefinita, è disabilitata.
 
 * Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, assicurarsi che **application/pdf** sia aggiunto alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
 
