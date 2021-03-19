@@ -1,74 +1,75 @@
 ---
-title: Abilita approfondimenti risorse tramite DTM
-description: Scopri come utilizzare  Gestione dinamica dei tag (DTM, Dynamic Tag Management) di Adobe per abilitare le informazioni sulle risorse.
+title: Abilitare Asset Insights tramite DTM
+description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
 contentOwner: AG
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
 
 
-# Abilita approfondimenti risorse tramite DTM {#enable-asset-insights-through-dtm}
+# Abilitare Asset Insights tramite DTM {#enable-asset-insights-through-dtm}
 
- Gestione tag dinamica dei Adobi è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per  clienti Adobe Analytics. Puoi personalizzare il codice di tracciamento per abilitare soluzioni CMS di terze parti all’utilizzo di Asset Insights oppure puoi utilizzare DTM per inserire tag Asset Insights. Le informazioni approfondite sono supportate e fornite solo per le immagini.
+Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per i clienti Adobe Analytics. Puoi personalizzare il codice di tracciamento per abilitare soluzioni CMS di terze parti all’utilizzo di Asset Insights oppure puoi utilizzare DTM per inserire i tag Asset Insights. Gli approfondimenti sono supportati e forniti solo per le immagini.
 
 >[!CAUTION]
 >
-> DTM Adobe è obsoleto a favore di [!DNL Adobe Experience Platform Launch] e raggiungerà presto [fine del ciclo di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f).  Adobe consiglia di [utilizzare [!DNL Launch] per informazioni approfondite sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM è obsoleto a favore di [!DNL Adobe Experience Platform Launch] e raggiungerà presto [la fine di vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe consiglia di [utilizzare [!DNL Launch] per informazioni sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come indicato di seguito.
+Esegui questi passaggi per abilitare Asset Insights tramite DTM.
 
-1. Fare clic sul logo del Experience Manager  e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione approfondimenti]**.
-1. [Configurare  distribuzione Experience Manager con Cloud Service DTM](/help/sites-administering/dtm.md)
+1. Fai clic sul logo Experience Manager e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione approfondimenti]**.
+1. [Configurare la distribuzione Experience Manager con il Cloud Service DTM](/help/sites-administering/dtm.md)
 
-   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare **[!UICONTROL Impostazioni account]** nel profilo utente. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l&#39;integrazione di  Siti Experienci Manager con Asset Insights è ancora in corso.
+   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare **[!UICONTROL Impostazioni account]** nel profilo utente. Questo passaggio non è necessario dal punto di vista di Asset Insights, perché l’integrazione di Experience Manager Sites con Asset Insights è ancora in corso.
 
-1. Accedete a [https://dtm.adobe.com](https://dtm.adobe.com/) e selezionate una società, a seconda delle necessità.
+1. Accedi a [https://dtm.adobe.com](https://dtm.adobe.com/) e seleziona un&#39;azienda, a seconda dei casi.
 1. Creare o aprire una proprietà Web esistente
 
-   * Selezionare la scheda **[!UICONTROL Proprietà Web]**, quindi fare clic su **[!UICONTROL Aggiungi proprietà]**.
+   * Selezionare la scheda **[!UICONTROL Proprietà web]**, quindi fare clic su **[!UICONTROL Aggiungi proprietà]**.
 
-   * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Vedere [documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Aggiorna i campi appropriati e fai clic su **[!UICONTROL Crea proprietà]**. Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
-1. Nella scheda **[!UICONTROL Regole]**, selezionare **[!UICONTROL Regole di caricamento pagina]** dal riquadro di navigazione e fare clic su **[!UICONTROL Crea nuova regola]**.
+1. Nella scheda **[!UICONTROL Regole]** , seleziona **[!UICONTROL Regole di caricamento pagina]** dal riquadro di navigazione e fai clic su **[!UICONTROL Crea nuova regola]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Espandere **[!UICONTROL JavaScript /Tag di terze parti]**. Fare clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda **[!UICONTROL HTML sequenziale]** per aprire la finestra di dialogo Script.
+1. Espandi **[!UICONTROL JavaScript /Tag di terze parti]**. Quindi fai clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda **[!UICONTROL HTML sequenziale]** per aprire la finestra di dialogo Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Fare clic sul logo del Experience Manager  e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
-1. Fare clic su **[!UICONTROL Insights Page Tracker]**, copiare il codice di tracciamento, quindi incollarlo nella finestra di dialogo Script aperta al punto 6. Salva le modifiche.
+1. Fai clic sul logo Experience Manager e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
+1. Fai clic su **[!UICONTROL Tracciamento pagina approfondimenti]**, copia il codice di tracciamento, quindi incollalo nella finestra di dialogo Script aperta al passaggio 6. Salva le modifiche.
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics  di Gestione dinamica dei tag.
-   >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione verrà chiamata una volta terminato il caricamento dello strumento Adobe Analytics  DTM.
-   >* A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio  Experience Manager, CDN e così via), l&#39;origine della sorgente dello script potrebbe richiedere delle modifiche.
-   >* Per  Page Tracker ospitato dal Experience Manager, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza dispatcher.
+   >* `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics di DTM.
+   >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione deve essere chiamata una volta terminato il caricamento dello strumento Adobe Analytics di DTM.
+   >* A seconda della posizione in cui è ospitato Asset Insights Page Tracker (ad Experience Manager, CDN e così via), l’origine dell’origine dello script potrebbe richiedere modifiche.
+   >* Ad Experience Manager, Page Tracker ospitato da , l&#39;origine dovrebbe puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza del dispatcher.
 
 
-1. Accesso `https://dtm.adobe.com`. Fare clic su **[!UICONTROL Panoramica]** nella proprietà Web e fare clic su **[!UICONTROL Aggiungi strumento]** oppure aprire uno strumento Adobe Analytics  esistente. Durante la creazione dello strumento, è possibile impostare **[!UICONTROL Metodo di configurazione]** su **[!UICONTROL Automatico]**.
+1. Accesso `https://dtm.adobe.com`. Fai clic su **[!UICONTROL Panoramica]** nella proprietà web e fai clic su **[!UICONTROL Aggiungi strumento]** oppure apri uno strumento Adobe Analytics esistente. Durante la creazione dello strumento, è possibile impostare **[!UICONTROL Metodo di configurazione]** su **[!UICONTROL Automatico]**.
 
-   ![Aggiungi  strumento Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Aggiunta dello strumento Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
-   Selezionate le suite di rapporti Staging/Produzione, a seconda delle necessità.
+   Seleziona le suite di rapporti Staging/Produzione , a seconda dei casi.
 
-1. Espandere **[!UICONTROL Library Management]** e assicurarsi che **[!UICONTROL Load Library at]** sia impostato su **[!UICONTROL Page Top]**.
+1. Espandi **[!UICONTROL Library Management]** e assicurati che **[!UICONTROL Load Library at]** sia impostato su **[!UICONTROL Page Top]**.
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Espandete **[!UICONTROL Personalizza codice pagina]** e fate clic su **[!UICONTROL Apri editor]**.
+1. Espandi **[!UICONTROL Personalizza codice pagina]** e fai clic su **[!UICONTROL Apri editor]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
-1. Incollate il seguente codice nella finestra:
+1. Incolla il seguente codice nella finestra:
 
    ```Java
    var sObj;
@@ -106,11 +107,11 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
    })();
    ```
 
-   * La regola di caricamento delle pagine in Gestione dinamica dei tag include solo il codice `pagetracker.js`. Tutti i campi `assetAnalytics` sono considerati sostituzioni per i valori predefiniti. Non sono richiesti per impostazione predefinita.
-   * Il codice chiama `assetAnalytics.dispatcher.init()` dopo aver verificato che `_satellite.getToolsByType('sc')[0].getS()` sia inizializzato e che `assetAnalytics,dispatcher.init` sia disponibile. Pertanto, potete saltare l’aggiunta al punto 11.
-   * Come indicato nei commenti all&#39;interno del codice Tracciatore pagina insights (**[!UICONTROL Strumenti > Risorse > Tracciatore pagina Insights]**), quando il Tracker pagina non crea un oggetto `AppMeasurement`, i primi tre argomenti (RSID, Server di tracciamento e Spazio dei nomi dei visitatori) sono irrilevanti. Vengono invece passate stringhe vuote per evidenziare questo problema.\
-      Gli argomenti rimanenti corrispondono a ciò che è configurato nella pagina Insights Configuration (**[!UICONTROL Strumenti > Risorse > Insights Configuration]**).
-   * L&#39;oggetto AppMeasurement viene recuperato eseguendo query su `satelliteLib` per tutti i motori di SiteCatalyst disponibili. Se sono configurati più tag, modificare l&#39;indice del selettore di array in modo appropriato. Le voci dell&#39;array sono ordinate in base agli strumenti di SiteCatalyst disponibili nell&#39;interfaccia DTM.
+   * La regola di caricamento della pagina in DTM include solo il codice `pagetracker.js`. Tutti i campi `assetAnalytics` sono considerati sostituzioni per i valori predefiniti. Non sono richieste per impostazione predefinita.
+   * Il codice chiama `assetAnalytics.dispatcher.init()` dopo aver verificato che `_satellite.getToolsByType('sc')[0].getS()` sia inizializzato e che `assetAnalytics,dispatcher.init` sia disponibile. Pertanto, puoi saltare l’aggiunta al passaggio 11.
+   * Come indicato nei commenti all&#39;interno del codice di tracciamento pagina approfondimenti (**[!UICONTROL Strumenti > Risorse > Tracciamento pagina approfondimenti]**), quando il tracciatore pagina non crea un oggetto `AppMeasurement`, i primi tre argomenti (RSID, Server di tracciamento e Spazio dei nomi dei visitatori) sono irrilevanti. Vengono invece passate stringhe vuote per evidenziarle.\
+      Gli argomenti rimanenti corrispondono a ciò che è configurato nella pagina Configurazione approfondimenti (**[!UICONTROL Strumenti > Risorse > Configurazione approfondimenti]**).
+   * L&#39;oggetto AppMeasurement viene recuperato eseguendo una query su `satelliteLib` per tutti i motori di SiteCatalyst disponibili. Se sono configurati più tag, modificare opportunamente l’indice del selettore dell’array. Le voci dell&#39;array sono ordinate in base agli strumenti di SiteCatalyst disponibili nell&#39;interfaccia DTM.
 
 1. Salvare e chiudere la finestra Editor di codice, quindi salvare le modifiche nella configurazione dello strumento.
-1. Nella scheda **[!UICONTROL Approvazioni]**, approvare entrambe le approvazioni in sospeso. Il tag DTM è pronto per essere inserito nella pagina Web. Per informazioni dettagliate su come inserire tag DTM nelle pagine Web, vedere [Integrare DTM nei modelli di pagina personalizzati](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. Nella scheda **[!UICONTROL Approvazioni]** , approva entrambe le approvazioni in sospeso. Il tag DTM è pronto per essere inserito nella pagina web. Per informazioni dettagliate su come inserire tag DTM nelle pagine web, consulta [Integrare DTM nei modelli di pagina personalizzati](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
