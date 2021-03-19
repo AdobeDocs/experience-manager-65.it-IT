@@ -1,7 +1,7 @@
 ---
 title: Pubblicazione delle pagine
 seo-title: Pubblicazione delle pagine
-description: 'null'
+description: Pubblicazione delle pagine
 seo-description: 'null'
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1612'
 ht-degree: 88%
 
 ---
@@ -40,7 +40,7 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
    >
    >
 * **Replicare/Replica**
-   >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
+   >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di pagina, file, codice, commenti degli utenti) da un ambiente all’altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
 
 
@@ -112,7 +112,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
    ![pp-02](assets/pp-02.png)
 
-1. Nella finestra di dialogo Pubblicazione rapida, confermate la pubblicazione facendo clic su **Pubblica** o annullate facendo clic su **Annulla**. Tieni presente che verranno pubblicati automaticamente anche eventuali riferimenti non pubblicati.
+1. Nella finestra di dialogo Pubblicazione rapida, conferma la pubblicazione facendo clic su **Pubblica** o annulla la pubblicazione facendo clic su **Annulla**. Tieni presente che verranno pubblicati automaticamente anche eventuali riferimenti non pubblicati.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -145,7 +145,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Fai clic su **Avanti** per continuare.
 
-1. Nel passaggio successivo della procedura guidata Gestisci pubblicazione, **Ambito**, è possibile definire l&#39;ambito della pubblicazione o dell&#39;annullamento della pubblicazione, ad esempio per includere pagine figlie e/o riferimenti.
+1. Nel passaggio successivo della procedura guidata Gestisci pubblicazione, **Ambito**, puoi definire l&#39;ambito della pubblicazione o dell&#39;annullamento della pubblicazione, ad esempio per includere pagine figlie e/o riferimenti.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -179,9 +179,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![pp-04](assets/pp-04.png)
 
-   La finestra di dialogo **Riferimenti pubblicati** mostra i riferimenti per il contenuto selezionato. Per impostazione predefinita sono tutti selezionati e verranno pubblicati o ne verrà annullata la pubblicazione, ma puoi deselezionarli in modo da non includerli nell’azione.
+   La finestra di dialogo **Riferimenti pubblicati** visualizza i riferimenti per il contenuto selezionato. Per impostazione predefinita sono tutti selezionati e verranno pubblicati o ne verrà annullata la pubblicazione, ma puoi deselezionarli in modo da non includerli nell’azione.
 
-   Fare clic su **Fine** per salvare le modifiche oppure su **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Fai clic su **Fine** per salvare le modifiche o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    Nella procedura guidata, la colonna **Riferimenti** verrà aggiornata per riflettere la selezione dei riferimenti da pubblicare o di cui annullare la pubblicazione.
 
@@ -195,12 +195,12 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone l’utente. Per ulteriori informazioni, vedere la [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) relativa ai privilegi di pubblicazione, nonché [Gestione dell&#39;accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone l’utente. Per ulteriori informazioni, consulta la [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) relativa ai privilegi di pubblicazione, nonché [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) .
 
    Le risorse vengono raggruppate in base ai flussi di lavoro attivati e per ognuna sono disponibili opzioni per:
 
    * Definire il titolo del flusso di lavoro.
-   * Mantenete il pacchetto del flusso di lavoro, purché il flusso di lavoro disponga di [supporto per più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro sia dotato di [supporto per più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
 
    Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
@@ -262,7 +262,7 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publi
 
    Non dimenticare che è anche possibile esaminare i riferimenti da pubblicare tramite l’opzione **Riferimenti pubblicati**.
 
-1. [Continua a seguire la procedura guidata Gestisci pubblicazione come ](#manage-publication) regola per completare la pubblicazione o annullare la pubblicazione della struttura.
+1. [Continua a seguire la procedura guidata Gestisci pubblicazione come ](#manage-publication) normale per completare la pubblicazione o annullare la pubblicazione della struttura.
 
 ## Determinazione dello stato di pubblicazione {#determining-publication-status}
 
