@@ -3,21 +3,24 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guida utente per l’authoring con l’interfaccia classica di AEM 6.5
+user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6.5
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
+feature-set: Experience Manager Sites
+feature: 'Authoring  '
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 84%
 
 ---
 
 
-# AEM 6.5 Classic UI Authoring Guida utente {#classic-ui}
+# Guida utente all&#39;authoring dell&#39;interfaccia classica AEM 6.5 {#classic-ui}
 
-+ [Panoramica della guida all’authoring con l’interfaccia classica](home.md)
-+ Introduzione all&#39;authoring con l&#39;interfaccia classica {#introduction}
++ [Panoramica sulla creazione nell’interfaccia classica](home.md)
++ Introduzione all’authoring con interfaccia classica {#introduction}
    + [Primi passi per gli autori](classic-page-author-first-steps.md)
    + [Authoring nell’interfaccia classica](classicui.md)
    + [Utilizzo dell’ambiente Authoring](author-env.md)
@@ -78,7 +81,7 @@ ht-degree: 84%
    + [Componenti di Adobe Campaign](classic-personalization-ac-components.md)
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
    + [Creazione di moduli di Adobe Campaign in AEM](classic-personalization-ac-forms.md)
-+ Authoring delle risorse nell&#39;interfaccia classica {#assets}
++ Authoring delle risorse nell’interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
