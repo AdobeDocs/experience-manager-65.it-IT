@@ -1,11 +1,12 @@
 ---
-title: Aggiungere una filigrana alle risorse digitali
-description: Scoprite come usare la funzione Filigrana per aggiungere una filigrana digitale alle risorse.
+title: Aggiungi una filigrana alle risorse digitali
+description: Scopri come utilizzare la funzione Watermarking per aggiungere una filigrana digitale alle risorse.
 contentOwner: AG
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: ec97cc41989cacdcae64a955a32a34d12212ca85
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -13,36 +14,36 @@ ht-degree: 0%
 
 # Filigrana le risorse digitali {#watermarking}
 
-[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle risorse per consentire agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. [!DNL Experience Manager Assets] supporta il testo da usare come filigrana nei file PNG e JPEG.
+[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale alle risorse, per consentire agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. [!DNL Experience Manager Assets] supporta il testo da utilizzare come filigrana nei file PNG e JPEG.
 
-Per applicare una filigrana alle risorse, aggiungi la filigrana nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM].
+Per applicare una filigrana alle risorse, aggiungi il passaggio di filigrana nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] .
 
-1. Accedete all&#39;interfaccia utente [!DNL Experience Manager] e andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Dalla pagina **[!UICONTROL Modelli di workflow]**, selezionare il flusso di lavoro **[!UICONTROL Aggiornamento DAM Asset]** e fare clic su **[!UICONTROL Modifica]**.
+1. Accedi all&#39;interfaccia utente [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** e fai clic su **[!UICONTROL Modifica]**.
 
-1. Dal pannello laterale, trascinate il passaggio **[!UICONTROL Aggiungi filigrana]** nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM].
+1. Dal pannello laterale, trascina il passaggio **[!UICONTROL Aggiungi filigrana]** nel flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] .
 
-   ![Trascinate il passaggio  [!UICONTROL Aggiungi ] filigrana e aggiungete al flusso di lavoro  [!UICONTROL DAM Update ] Assets](assets/add_watermark_step_aem_assets.png)
+   ![Trascina il passaggio  [!UICONTROL Aggiungi ] filigrana e aggiungi al flusso di lavoro Aggiorna risorsa  [!UICONTROL DAM ] ](assets/add_watermark_step_aem_assets.png)
 
-   *Figura: Trascina il passaggio  [!UICONTROL Aggiungi ] filigrana e aggiungi al flusso di lavoro  [!UICONTROL DAM Update ] Assets.*
+   *Figura: Trascina il passaggio  [!UICONTROL Aggiungi ] filigrana e aggiungi al flusso di lavoro Aggiorna risorsa  [!UICONTROL DAM ] .*
 
    >[!NOTE]
    >
-   >Posizionare il passaggio [!UICONTROL Aggiungi filigrana] in un punto qualsiasi prima del passaggio [!UICONTROL Miniatura processo].
+   >Posiziona il passaggio [!UICONTROL Aggiungi filigrana] in un punto qualsiasi prima del passaggio [!UICONTROL Elabora miniatura] .
 
-1. Aprire il passaggio **[!UICONTROL Aggiungi filigrana]** per visualizzarne le proprietà.
-1. Nella scheda **[!UICONTROL Argomenti]**, specificare valori validi nei vari campi, quali testo, tipo di font, dimensione, colore, posizione, orientamento e così via. Per confermare le modifiche, fare clic su **[!UICONTROL Fine]**.
+1. Apri il passaggio **[!UICONTROL Aggiungi filigrana]** per visualizzarne le proprietà.
+1. Nella scheda **[!UICONTROL Argomenti]** , specifica valori validi nei vari campi, compresi testo, tipo di font, dimensioni, colore, posizione, orientamento e così via. Per confermare le modifiche, fai clic su **[!UICONTROL Fine]**.
 
-   ![Fornire gli argomenti nel passaggio Aggiungi filigrana in  [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
+   ![Fornisci gli argomenti nel passaggio Aggiungi filigrana in  [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
-   *Figura: Fornire gli argomenti nel passaggio Aggiungi filigrana in  [!DNL Assets].*
+   *Figura: Fornisci gli argomenti nel passaggio aggiungi filigrana in  [!DNL Assets].*
 
-1. Salva il flusso di lavoro **[!UICONTROL DAM Update Asset]** con il passaggio della filigrana.
-1. Dall&#39;interfaccia utente di [!DNL Assets], caricate una risorsa di esempio. La filigrana viene visualizzata con la dimensione del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
+1. Salva il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** con il passaggio della filigrana.
+1. Dall’interfaccia utente di [!DNL Assets] , carica una risorsa di esempio. La filigrana viene visualizzata con le dimensioni del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
 
-Per applicare la filigrana ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [ Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md).
+Per applicare una filigrana ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md).
 
 ## Suggerimenti e limitazioni {#tips-limitations}
 
-* Sono supportate solo le filigrane basate su testo. Le immagini non vengono utilizzate come filigrane, anche se potete caricare le immagini durante la creazione del processo [!UICONTROL Aggiungi filigrana].
-* Solo i file PNG e JPEG sono supportati per le filigrane. Gli altri formati di risorse non sono con filigrana.
+* Sono supportate solo le filigrane basate su testo. Le immagini non vengono utilizzate come filigrane, anche se è possibile caricare le immagini durante la creazione di [!UICONTROL Aggiungi processo filigrana].
+* Solo i file PNG e JPEG sono supportati per essere contrassegnati con filigrana. Gli altri formati di risorse non sono contrassegnati con filigrana.
