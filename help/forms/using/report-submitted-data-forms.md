@@ -1,41 +1,42 @@
 ---
-title: API per l'utilizzo dei moduli inviati nel portale dei moduli
-seo-title: API per l'utilizzo dei moduli inviati nel portale dei moduli
-description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.'
-seo-description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.'
+title: API per l’utilizzo dei moduli inviati nel portale moduli
+seo-title: API per l’utilizzo dei moduli inviati nel portale moduli
+description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+seo-description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
+feature: Portale Forms
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
 
 
-# API per l&#39;utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API per l’utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
- AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
+AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
->Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori di invio a un modulo](/help/forms/using/adding-reviewers-form.md).
+>Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori dell&#39;invio a un modulo](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Restituisce un elenco di tutti i moduli idonei.
 
-### parametri URL {#url-parameters}
+### Parametri URL {#url-parameters}
 
 Questa API non richiede parametri aggiuntivi.
 
 ### Risposta {#response}
 
-L&#39;oggetto response contiene un array JSON che include i nomi dei moduli e il relativo percorso di repository. La struttura della risposta è la seguente:
+L&#39;oggetto response contiene un array JSON che include i nomi dei moduli e il relativo percorso di archivio. La struttura della risposta è la seguente:
 
 ```json
 [
@@ -59,13 +60,13 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubmission {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
-Restituisce i dettagli di tutti i moduli inviati. Tuttavia, potete utilizzare i parametri URL per limitare i risultati.
+Restituisce i dettagli di tutti i moduli inviati. Tuttavia, puoi utilizzare i parametri URL per limitare i risultati.
 
-### parametri URL {#url-parameters-1}
+### Parametri URL {#url-parameters-1}
 
-Specificate i seguenti parametri nell’URL della richiesta:
+Specifica i seguenti parametri nell’URL della richiesta:
 
 <table>
  <tbody>
@@ -75,7 +76,7 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Specifica il percorso dell'archivio CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, viene restituita una risposta vuota.<br /> </td>
+   <td>Specifica il percorso del repository CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, viene restituita una risposta vuota.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code> (facoltativo)</td>
@@ -91,11 +92,11 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facoltativo)</td>
-   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. È possibile specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
+   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. Puoi specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facoltativo)</td>
-   <td>Specifica un elenco separato da virgole di proprietà del modulo da includere nei risultati. Le proprietà predefinite sono:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Specifica un elenco di proprietà del modulo separate da virgola da includere nei risultati. Le proprietà predefinite sono:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (facoltativo)</td>
@@ -131,16 +132,16 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 ## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
-Aggiunge un commento all&#39;istanza di invio specificata.
+Aggiunge un commento all’istanza di invio specificata.
 
-### parametri URL {#url-parameters-2}
+### Parametri URL {#url-parameters-2}
 
-Specificate i seguenti parametri nell’URL della richiesta:
+Specifica i seguenti parametri nell’URL della richiesta:
 
 | Parametro | Descrizione |
 |---|---|
-| `submitID` | Specifica l&#39;ID di metadati associato a un&#39;istanza di invio. |
-| `Comment` | Specifica il testo per il commento da aggiungere all&#39;istanza di invio specificata. |
+| `submitID` | Specifica l&#39;ID metadati associato a un&#39;istanza di invio. |
+| `Comment` | Specifica il testo da aggiungere al commento all&#39;istanza di invio specificata. |
 
 ### Risposta {#response-2}
 
@@ -164,17 +165,17 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 Restituisce tutti i commenti inviati nell&#39;istanza di invio specificata.
 
-### parametri URL {#url-parameters-3}
+### Parametri URL {#url-parameters-3}
 
-Specificate il seguente parametro nell’URL della richiesta:
+Specifica il seguente parametro nell’URL della richiesta:
 
 | Parametro | Descrizione |
 |---|---|
-| `submitID` | Specifica l&#39;ID di metadati di un&#39;istanza di invio. |
+| `submitID` | Specifica l&#39;ID metadati di un&#39;istanza di invio. |
 
 ### Risposta {#response-3}
 
-L&#39;oggetto response contiene un array JSON che include tutti i commenti associati all&#39;ID di invio specificato. La struttura della risposta è la seguente:
+L&#39;oggetto response contiene una matrice JSON che include tutti i commenti associati all&#39;ID di invio specificato. La struttura della risposta è la seguente:
 
 ```json
 [{
@@ -198,23 +199,23 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateInvio {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Aggiorna il valore della proprietà specificata dell&#39;istanza di modulo inviata specificata.
 
-### parametri URL {#url-parameters-4}
+### Parametri URL {#url-parameters-4}
 
-Specificate i seguenti parametri nell’URL della richiesta:
+Specifica i seguenti parametri nell’URL della richiesta:
 
 | Parametro | Descrizione |
 |---|---|
-| `submitID` | Specifica l&#39;ID di metadati associato a un&#39;istanza di invio. |
-| `property` | Specifica la proprietà modulo da aggiornare. |
+| `submitID` | Specifica l&#39;ID metadati associato a un&#39;istanza di invio. |
+| `property` | Specifica la proprietà della maschera da aggiornare. |
 | `value` | Specifica il valore della proprietà modulo da aggiornare. |
 
 ### Risposta {#response-4}
 
-Restituisce un oggetto JSON con informazioni sull&#39;aggiornamento pubblicato.
+Restituisce un oggetto JSON con informazioni sull&#39;aggiornamento registrato.
 
 ### Esempio {#example-4}
 
