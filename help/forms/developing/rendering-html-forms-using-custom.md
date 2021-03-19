@@ -1,8 +1,8 @@
 ---
-title: Rendering HTML Forms con file CSS personalizzati
-seo-title: Rendering HTML Forms con file CSS personalizzati
-description: Utilizzare il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da parte di un browser Web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l'API Java e l'API del servizio Web.
-seo-description: Utilizzare il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da parte di un browser Web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l'API Java e l'API del servizio Web.
+title: Rendering di HTML Forms utilizzando file CSS personalizzati
+seo-title: Rendering di HTML Forms utilizzando file CSS personalizzati
+description: Utilizza il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da un browser web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java e l’API Web Service.
+seo-description: Utilizza il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering dei moduli HTML in risposta a una richiesta HTTP da un browser web. È possibile eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java e l’API Web Service.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -10,32 +10,33 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
 
 
-# Rendering HTML Forms con file CSS personalizzati {#rendering-html-forms-using-custom-css-files}
+# Rendering di Forms HTML utilizzando file CSS personalizzati {#rendering-html-forms-using-custom-css-files}
 
-**Esempi ed esempi in questo documento sono disponibili solo per  AEM Forms nell&#39;ambiente JEE.**
+**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Il servizio Forms esegue il rendering dei moduli HTML in risposta a una richiesta HTTP inviata da un browser Web. Durante il rendering di un modulo HTML, il servizio Forms può fare riferimento a un file CSS personalizzato. È possibile creare un file CSS personalizzato per soddisfare i requisiti aziendali e fare riferimento a tale file CSS quando si utilizza il servizio Forms per eseguire il rendering dei moduli HTML.
+Il servizio Forms esegue il rendering dei moduli HTML in risposta a una richiesta HTTP da parte di un browser Web. Quando si esegue il rendering di un modulo HTML, il servizio Forms può fare riferimento a un file CSS personalizzato. È possibile creare un file CSS personalizzato per soddisfare i requisiti aziendali e fare riferimento a tale file CSS quando si utilizza il servizio Forms per il rendering dei moduli HTML.
 
-Il servizio Forms analizza in modo invisibile il file CSS personalizzato. In altre parole, il servizio Forms non segnala errori che potrebbero verificarsi se il file CSS personalizzato non è conforme agli standard CSS. In questa situazione, il servizio Forms ignora lo stile e continua con gli stili rimanenti che si trovano nel file CSS.
+Il servizio Forms analizza silenziosamente il file CSS personalizzato. In altre parole, il servizio Forms non segnala gli errori che possono verificarsi se il file CSS personalizzato non è conforme agli standard CSS. In questa situazione, il servizio Forms ignora lo stile e continua con gli stili rimanenti che si trovano nel file CSS.
 
-L&#39;elenco seguente specifica gli stili supportati in un file CSS personalizzato:
+L’elenco seguente specifica gli stili supportati in un file CSS personalizzato:
 
 * **Coppie** stile selettore a livello di classe: Se presente in un file CSS personalizzato, vengono utilizzati i selettori utilizzati nel modulo HTML come stili di classe. Gli stili di classe non utilizzati vengono ignorati.
-* **Coppie** stile selettore a livello di identificatore: Tutti gli stili di identificatore vengono utilizzati se usati nel modulo HTML.
-* **Coppie** stile selettore livello elemento: Tutti gli stili di elemento vengono utilizzati se utilizzati nel modulo HTML.
+* **Coppie** stile selettore a livello di identificatore: Se utilizzati nel modulo HTML, vengono utilizzati tutti gli stili di identificatore.
+* **Coppie** stile selettore a livello di elemento: Tutti gli stili di elemento vengono utilizzati se sono utilizzati nel modulo HTML.
 * **Priorità** stile: La priorità di stile (come importante) è supportata e può essere utilizzata in un file CSS personalizzato.
-* **Tipo** di supporto: Per definire il tipo di supporto, è possibile racchiudere una o più coppie di stile selettore nello stile @media. Il servizio Forms non verifica se il tipo di supporto specificato è supportato. Il tipo di supporto specificato nel file CSS personalizzato viene unito nel modulo HTML.
+* **Tipo** di file multimediali: Per definire il tipo di supporto, è possibile racchiudere una o più coppie in stile selettore in stile @media. Il servizio Forms non controlla se il tipo di supporto specificato è supportato. Il tipo di supporto specificato nel file CSS personalizzato viene unito nel modulo HTML.
 
-È possibile recuperare un file CSS di esempio utilizzando l&#39;applicazione FormsIVS. Caricate il modulo, selezionatelo nella pagina Struttura del modulo di prova e fate clic su GeneraCSS. Non è necessario impostare il tipo di trasformazione HTML prima di fare clic sul pulsante. Selezionare Salva. Potete modificare questo file CSS per soddisfare i vostri requisiti aziendali.
+È possibile recuperare un file CSS di esempio utilizzando l’applicazione FormsIVS. Carica il modulo, selezionalo nella pagina Test Form Design e fai clic su GeneraCSS. Non è necessario impostare il tipo di trasformazione HTML prima di fare clic sul pulsante . Quindi seleziona salva. Puoi modificare questo file CSS per soddisfare i requisiti aziendali.
 
 >[!NOTE]
 >
@@ -43,49 +44,49 @@ L&#39;elenco seguente specifica gli stili supportati in un file CSS personalizza
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, consulta [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
-Per eseguire il rendering di un modulo HTML che utilizza un file CSS, effettuare le seguenti operazioni:
+Per eseguire il rendering di un modulo HTML che utilizza un file CSS, eseguire le operazioni seguenti:
 
-1. Includere i file di progetto.
-1. Creare un oggetto Forms Java API.
-1. Fate riferimento al file CSS.
+1. Includi file di progetto.
+1. Crea un oggetto API Java Forms.
+1. Fai riferimento al file CSS.
 1. Eseguire il rendering di un modulo HTML.
-1. Scrivere il flusso di dati del modulo nel browser Web del client.
+1. Scrivere il flusso di dati del modulo sul browser Web client.
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
+Includi i file necessari nel progetto di sviluppo. Se stai creando un&#39;applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, assicurati di includere i file proxy.
 
-**Creare un oggetto API Forms Java**
+**Creare un oggetto API Java di Forms**
 
-Prima di eseguire un&#39;operazione supportata dal servizio Forms a livello di programmazione, è necessario creare un oggetto client Forms.
+Prima di poter eseguire in modo programmatico un’operazione supportata dal servizio Forms, è necessario creare un oggetto client Forms.
 
-**Riferimento al file CSS**
+**Fai riferimento al file CSS**
 
 Per eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato, assicurarsi di fare riferimento a un file CSS esistente.
 
-**Eseguire il rendering di un modulo HTML**
+**Rendering di un modulo HTML**
 
-Per eseguire il rendering di un modulo HTML, è necessario specificare una struttura del modulo creata in Designer e salvata come file XDP. È inoltre necessario selezionare un tipo di trasformazione HTML. Ad esempio, potete specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
+Per eseguire il rendering di un modulo HTML, è necessario specificare una struttura del modulo creata in Designer e salvata come file XDP. È inoltre necessario selezionare un tipo di trasformazione HTML. Ad esempio, è possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
 
-Il rendering di un modulo HTML richiede anche valori, ad esempio valori URI, necessari per eseguire il rendering di altri tipi di modulo.
+Il rendering di un modulo HTML richiede anche valori quali i valori URI necessari per il rendering di altri tipi di modulo.
 
-**Scrivere il flusso di dati del modulo nel browser Web del client**
+**Scrivere il flusso di dati del modulo sul browser Web client**
 
-Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un flusso di dati del modulo che è necessario scrivere nel browser Web del client per rendere il modulo HTML visibile all&#39;utente.
+Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un flusso di dati del modulo che è necessario scrivere nel browser Web del client per rendere il modulo HTML visibile all’utente.
 
 **Consulta anche**
 
-[Eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l&#39;API Java](#render-an-html-form-that-uses-a-css-file-using-the-java-api)
+[Eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java](#render-an-html-form-that-uses-a-css-file-using-the-java-api)
 
-[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido di Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
@@ -95,85 +96,85 @@ Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un f
 
 ## Eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l&#39;API Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato utilizzando l&#39;API Forms (Java):
+Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato utilizzando l’API Forms (Java):
 
 1. Includi file di progetto
 
-   Includete file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java.
+   Includi file JAR client, come adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API Forms Java
+1. Creare un oggetto API Java di Forms
 
-   * Creare un oggetto `ServiceClientFactory` che contiene le proprietà di connessione.
+   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
    * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
-1. Riferimento al file CSS
+1. Fai riferimento al file CSS
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell&#39;oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell’oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
 
-1. Eseguire il rendering di un modulo HTML
+1. Rendering di un modulo HTML
 
-   Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `(Deprecated) (Deprecated) renderHTMLForm` e trasmettere i seguenti valori:
+   Richiama il metodo `(Deprecated) (Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-   * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
-   * Un oggetto `com.adobe.idp.Document` che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
+   * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
+   * Un oggetto `com.adobe.idp.Document` contenente i dati da unire al modulo. Se non si desidera unire i dati, passare un oggetto `com.adobe.idp.Document` vuoto.
    * L&#39;oggetto `HTMLRenderSpec` che memorizza le opzioni di runtime HTML.
-   * Un valore di stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Un oggetto `URLSpec` che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
-   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Valore stringa che specifica il valore di intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Un oggetto `URLSpec` che memorizza i valori URI necessari per il rendering di un modulo HTML.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati di file. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il metodo `(Deprecated) renderHTMLForm` restituisce un oggetto `FormsResult` contenente un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il metodo `(Deprecated) renderHTMLForm` restituisce un oggetto `FormsResult` contenente un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
-1. Scrivere il flusso di dati del modulo nel browser Web del client
+1. Scrivere il flusso di dati del modulo sul browser Web client
 
-   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent`.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent` .
    * Ottenere il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document` richiamandone il metodo `getContentType`.
    * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `com.adobe.idp.Document`.
-   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.h\ttp.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `javax.servlet.h\ttp.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
    * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
-   * Creare un array di byte e compilarlo con il flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto `read` e passando l&#39;array di byte come argomento.
-   * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
+   * Creare una matrice di byte e compilarla con il flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto `read` e passando la matrice di byte come argomento.
+   * Richiamare il metodo `write` dell’oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al metodo `write` .
 
 **Consulta anche**
 
-[Rendering HTML Forms con file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
+[Rendering di HTML Forms utilizzando file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
 
-[Avvio rapido (modalità SOAP): Rendering di un modulo HTML che utilizza un file CSS utilizzando l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[Avvio rapido (modalità SOAP): Rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
-[Inclusione  file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l&#39;API del servizio Web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
-Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato utilizzando l&#39;API di Forms (servizio Web):
+Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato utilizzando l’API Forms (servizio Web):
 
 1. Includi file di progetto
 
    * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
-   * Includete le classi proxy Java nel percorso della classe.
+   * Includi le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API Forms Java
+1. Creare un oggetto API Java di Forms
 
    Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
-1. Riferimento al file CSS
+1. Fai riferimento al file CSS
 
    * Creare un oggetto `HTMLRenderSpec` utilizzando il relativo costruttore.
-   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell&#39;oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
+   * Per eseguire il rendering del modulo HTML che utilizza un file CSS personalizzato, richiamare il metodo `setCustomCSSURI` dell’oggetto `HTMLRenderSpec` e passare un valore di stringa che specifica la posizione e il nome del file CSS.
 
-1. Eseguire il rendering di un modulo HTML
+1. Rendering di un modulo HTML
 
-   Richiamare il metodo `FormsService` dell&#39;oggetto `(Deprecated) renderHTMLForm` e trasmettere i seguenti valori:
+   Richiama il metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsService` e passa i seguenti valori:
 
-   * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
-   * Un oggetto `BLOB` che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. (Vedere [Precompilazione di Forms con layout scorrevoli](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valore enum `TransformTo` che specifica il tipo di preferenza HTML. Ad esempio, per eseguire il rendering di un modulo HTML compatibile con HTML dinamico per Internet Explorer 5.0 o versione successiva, specificare `TransformTo.MSDHTML`.
+   * Un oggetto `BLOB` contenente i dati da unire al modulo. Se non desideri unire i dati, passa `null`. (Consultare [Precompilazione di Forms con layout fluidi](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * L&#39;oggetto `HTMLRenderSpec` che memorizza le opzioni di runtime HTML.
-   * Un valore di stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
-   * Un oggetto `URLSpec` che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
-   * Un oggetto `java.util.HashMap` che memorizza gli allegati. Si tratta di un parametro facoltativo e è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Valore stringa che specifica il valore di intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Se non si desidera impostare questo valore, è possibile passare una stringa vuota.
+   * Un oggetto `URLSpec` che memorizza i valori URI necessari per il rendering di un modulo HTML.
+   * Un oggetto `java.util.HashMap` che memorizza gli allegati di file. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
    * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo valore del parametro memorizza il modulo di cui è stato effettuato il rendering.
    * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo parametro memorizza i dati XML di output.
    * Un oggetto `javax.xml.rpc.holders.LongHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo argomento memorizza il numero di pagine nel modulo.
@@ -181,20 +182,20 @@ Eseguire il rendering di un modulo HTML che utilizza un file CSS personalizzato 
    * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo `(Deprecated) renderHTMLForm`. Questo argomento memorizza il valore di rendering HTML utilizzato.
    * Un oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
 
-   Il metodo `(Deprecated) renderHTMLForm` compila l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il metodo `(Deprecated) renderHTMLForm` popola l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore dell&#39;argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
-1. Scrivere il flusso di dati del modulo nel browser Web del client
+1. Scrivere il flusso di dati del modulo sul browser Web client
 
-   * Creare un oggetto `FormResult` ottenendo il valore del membro di dati `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value`.
-   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
+   * Creare un oggetto `FormResult` ottenendo il valore del membro dati `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value`.
+   * Creare un oggetto `BLOB` che contiene dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
    * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamandone il metodo `getContentType`.
    * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
-   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web del client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
-   * Creare un array di byte e compilarlo richiamando il metodo `BLOB` dell&#39;oggetto `getBinaryData`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
-   * Richiamare il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
+   * Creare una matrice di byte e compilarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
+   * Richiamare il metodo `write` dell’oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al metodo `write` .
 
 **Consulta anche**
 
-[Rendering HTML Forms con file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
+[Rendering di HTML Forms utilizzando file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
 
-[Richiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Richiamo di AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
