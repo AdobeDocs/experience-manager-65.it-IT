@@ -3,10 +3,11 @@ title: Gestire le risorse digitali
 description: Scopri le attività di gestione delle risorse come caricare, scaricare, modificare, cercare, eliminare, annotare e creare una versione delle risorse digitali.
 contentOwner: AG
 mini-toc-levels: 1
+role: Professionista
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9590'
+source-wordcount: '9592'
 ht-degree: 4%
 
 ---
@@ -562,7 +563,7 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
 
 1. Seleziona la risorsa o la cartella e fai clic su **[!UICONTROL Elimina]** ![Elimina opzione](assets/do-not-localize/deleteoutline.png) nella barra degli strumenti.
 
-   Dopo aver confermato l’eliminazione:
+   Una volta confermata l’eliminazione:
 
    * Se la risorsa non ha riferimenti, viene eliminata.
 
@@ -646,7 +647,7 @@ I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’acce
    >Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#assetsearch}
 
