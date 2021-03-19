@@ -1,110 +1,111 @@
 ---
-title: Genera anteprima HTML5 di un modulo XDP
-seo-title: Genera anteprima HTML5 di un modulo XDP
-description: La scheda Anteprima HTML in Designer LiveCycle può essere utilizzata per visualizzare l'anteprima dei moduli così come sono visualizzati in un browser.
-seo-description: La scheda Anteprima HTML in Designer LiveCycle può essere utilizzata per visualizzare l'anteprima dei moduli così come sono visualizzati in un browser.
+title: Genera l’anteprima HTML5 di un modulo XDP
+seo-title: Genera l’anteprima HTML5 di un modulo XDP
+description: La scheda Anteprima HTML in Progettazione LiveCycli può essere utilizzata per visualizzare l’anteprima dei moduli così come sono visualizzati in un browser.
+seo-description: La scheda Anteprima HTML in Progettazione LiveCycli può essere utilizzata per visualizzare l’anteprima dei moduli così come sono visualizzati in un browser.
 uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
+feature: Forms Mobile
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 14%
 
 ---
 
 
-# Genera anteprima HTML5 di un modulo XDP{#generate-html-preview-of-an-xdp-form}
+# Genera l&#39;anteprima HTML5 di un modulo XDP{#generate-html-preview-of-an-xdp-form}
 
-Durante la progettazione di un modulo in  AEM Forms Designer, oltre alla visualizzazione in anteprima della rappresentazione PDF di un modulo, è anche possibile visualizzarne l&#39;anteprima in HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare l&#39;anteprima di un modulo così come apparirebbe in un browser.
+Durante la progettazione di un modulo in AEM Forms Designer, oltre a visualizzare l’anteprima del rendering PDF di un modulo, è anche possibile visualizzarne l’anteprima in anteprima il rendering HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare in anteprima un modulo così come apparirebbe in un browser.
 
-## Attiva anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
+## Abilitare l’anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
 
-Per consentire a Designer di generare l&#39;anteprima HTML dei moduli XDP, eseguire le configurazioni seguenti:
+Per consentire a Designer di generare un’anteprima HTML dei moduli XDP, esegui le seguenti configurazioni:
 
 * Configurare il servizio di autenticazione Apache Sling
 * Disattiva modalità protetta
-* Fornire i dettagli  server AEM Forms
+* Fornire i dettagli del server AEM Forms
 
 ### Configurare il servizio di autenticazione Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Vai a `https://'[server]:[port]'/system/console/configMgr` su  AEM Forms in esecuzione su OSGi o
-   `https://'[server]:[port]'/lc/system/console/configMgr` su  AEM Forms in esecuzione su JEE.
-1. Individuate e fate clic su **Apache Sling Authentication Service** per aprirlo in modalità di modifica.
+1. Vai a `https://'[server]:[port]'/system/console/configMgr` su AEM Forms in esecuzione su OSGi o
+   `https://'[server]:[port]'/lc/system/console/configMgr` su AEM Forms in esecuzione su JEE.
+1. Individua e fai clic su **Configurazione di Apache Sling Authentication Service** per aprirla in modalità di modifica.
 
-1. A seconda che sia in esecuzione  AEM Forms su OSGi o JEE, aggiungere quanto segue nel campo **Autenticazione obbligatoria**:
+1. A seconda che AEM Forms sia in esecuzione su OSGi o JEE, aggiungi quanto segue nel campo **Requisiti di autenticazione** :
 
-   *  AEM Forms su JEE
+   * AEM Forms su JEE
 
       * -/content/xfaforms
-      * -/etc/clientlibals
-   *  AEM Forms su OSGi
+      * -/etc/clientlibs
+   * AEM Forms su OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
-   >Non copiate e incollate il valore specificato nel campo Requisiti autenticazione, in quanto potrebbe danneggiare i caratteri speciali presenti nel valore. Digitare invece il valore specificato nel campo.
+   >Non copiare e incollare il valore specificato nel campo Requisiti di autenticazione in quanto potrebbe danneggiare i caratteri speciali nel valore. Digita invece il valore specificato nel campo .
 
-1. Specificate un nome utente e una password rispettivamente nei campi **[!UICONTROL Nome utente anonimo]** e **[!UICONTROL Password utente anonima]**. Le credenziali specificate vengono utilizzate per gestire l&#39;autenticazione anonima e consentire l&#39;accesso agli utenti anonimi.
-1. Fare clic su **Salva** per salvare la configurazione.
+1. Specificare un nome utente e una password nei campi **[!UICONTROL Nome utente anonimo]** e **[!UICONTROL Password utente anonima]**, rispettivamente. Le credenziali specificate vengono utilizzate per gestire l&#39;autenticazione anonima e consentire l&#39;accesso agli utenti anonimi.
+1. Fai clic su **Salva** per salvare la configurazione.
 
 ### Disattiva modalità protetta {#disable-protected-mode}
 
-Per impostazione predefinita, la [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attivata. Mantenetela attivata per gli ambienti di produzione. Potete disattivarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms nel designer. Per disattivarlo, effettuate le seguenti operazioni:
+Per impostazione predefinita, la [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attivata. Mantenetela abilitata per gli ambienti di produzione. È possibile disattivarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms nella progettazione. Esegui i seguenti passaggi per disattivarlo:
 
-1. Accedete AEM console Web come amministratore.
+1. Accedi a AEM console Web come amministratore.
 
-   * L&#39;URL per  AEM Forms su OSGi è `https://'[server]:[port]'/system/console/configMgr`
-   * L&#39;URL per  AEM Forms su JEE è `https://'[server]:[port]'/lc/system/console/configMgr`
+   * L&#39;URL per AEM Forms su OSGi è `https://'[server]:[port]'/system/console/configMgr`
+   * L&#39;URL per AEM Forms su JEE è `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Aprire **[!UICONTROL Configurazioni Forms mobili]** per la modifica.
-1. Deselezionare l&#39;opzione **[!UICONTROL Modalità protetta]** e fare clic su **[!UICONTROL Salva]**.
+1. Apri **[!UICONTROL Configurazioni Forms mobili]** per la modifica.
+1. Deseleziona l&#39;opzione **[!UICONTROL Modalità protetta]** e fai clic su **[!UICONTROL Salva]**.
 
-### Fornire i dettagli  server AEM Forms {#provide-details-of-aem-forms-server}
+### Fornire i dettagli del server AEM Forms {#provide-details-of-aem-forms-server}
 
 1. In Designer, passare a **Strumenti** > **Opzioni**.
 1. Nella finestra Opzioni, selezionare la pagina **Opzioni server**, fornire i seguenti dettagli e fare clic su **OK**.
 
-   * **URL** server:  URL del server AEM Forms.
+   * **URL** server: URL del server AEM Forms.
 
-   * **Numero** porta HTTP: AEM porta del server. Il valore predefinito è 4502.
-   * **Contesto anteprima HTML:** percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti sono utilizzati per visualizzare l&#39;anteprima del modulo in Designer. Tuttavia, potete anche specificare il percorso di un profilo personalizzato.
+   * **Numero** di porta HTTP: AEM porta server. Il valore predefinito è 4502.
+   * **Contesto anteprima HTML:** percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti vengono utilizzati per visualizzare l’anteprima del modulo in Designer. Tuttavia, puoi anche specificare il percorso di un profilo personalizzato.
 
-      * `/content/xfaforms/profiles/default.html` ( AEM Forms su OSGi)
+      * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` ( AEM Forms su JEE)
-   * **Contesto di Forms Manager:percorso** contestuale in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
+      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
+   * **Contesto di Forms Manager:** percorso contestuale in cui viene distribuita l’interfaccia utente di Forms Manager. I valori predefiniti sono:
 
-      * `/aem/forms` ( AEM Forms su OSGi)
-      * `/lc/forms` ( AEM Forms su JEE)
-
-   >[!NOTE]
-   >
-   >Verificate che  server AEM Forms sia attivato e in esecuzione. L&#39;anteprima HTML si collega al server CRX per *generare* un&#39;anteprima.
-
-   ![ opzioni di AEM Forms Designer  ](assets/server_options.png)
-
-    opzioni di AEM Forms Designer
-
-1. Per visualizzare l&#39;anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML**.
+      * `/aem/forms` (AEM Forms su OSGi)
+      * `/lc/forms` (AEM Forms su JEE)
 
    >[!NOTE]
    >
+   >Assicurati che il server AEM Forms sia in esecuzione. L&#39;anteprima HTML si connette al server CRX per *generare* un&#39;anteprima.
+
+   ![Opzioni di AEM Forms Designer  ](assets/server_options.png)
+
+   Opzioni di AEM Forms Designer
+
+1. Per visualizzare l’anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML**.
+
+   >[!NOTE]
    >
    >
    >
-   >    * Se la scheda Anteprima HTML è chiusa, premere F4 per aprire la scheda Anteprima HTML. Potete anche selezionare Anteprima HTML dal menu Visualizza per aprire la scheda Anteprima HTML.
-   >    * L&#39;anteprima HTML non supporta i documenti PDF, l&#39;anteprima HTML è solo per i documenti XDP.
+   >
+   >    * Se la scheda Anteprima HTML è chiusa, premere F4 per aprire la scheda Anteprima HTML. È inoltre possibile selezionare Anteprima HTML dal menu Visualizza per aprire la scheda Anteprima HTML.
+   >    * L’anteprima HTML non supporta i documenti PDF, l’anteprima HTML è solo per i documenti XDP.
 
 
    >[!CAUTION]
    >
-   >Per testare l&#39;esperienza utente finale reale, visualizzare l&#39;anteprima dei moduli nei browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro ancora). Ogni browser utilizza un motore separato per eseguire il rendering HTML, pertanto potrebbero esserci delle differenze nel modo in cui il modulo viene visualizzato in anteprima in Designer e nel browser esterno.
+   >Per testare l’esperienza utente finale reale, è possibile visualizzare in anteprima i moduli nei browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro ancora). Ogni browser utilizza un motore separato per il rendering dell’HTML, pertanto potrebbero esserci alcune differenze nel modo in cui il modulo viene visualizzato in anteprima in Designer e nel browser esterno.
 
 ## Visualizzazione in anteprima di un modulo con dati di esempio {#to-preview-a-form-using-sample-data}
 
@@ -116,10 +117,10 @@ La verifica del modulo mediante un’origine dati di esempio garantisce la mappa
 
 1. Selezionare **File > Proprietà modulo**.
 
-1. Fare clic sulla scheda **Anteprima** e, nella casella File dati, digitare il percorso completo del file di dati di prova. Potete anche utilizzare il pulsante Sfoglia per individuare il file.
+1. Fare clic sulla scheda **Anteprima** e, nella casella File dati, digitare il percorso completo del file di dati di prova. È inoltre possibile utilizzare il pulsante Sfoglia per individuare il file desiderato.
 
-1. Fai clic su **OK**. La volta successiva che si visualizza l&#39;anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio saranno visualizzati nei rispettivi oggetti.
+1. Fai clic su **OK**. Alla successiva visualizzazione in anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
 
-## Visualizzare l&#39;anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
+## Anteprima dei moduli che si trovano in un archivio {#html-preview-of-forms-in-forms-manager}
 
-In  AEM Forms è possibile visualizzare in anteprima moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
+In AEM Forms è possibile visualizzare in anteprima moduli e documenti in un archivio. L’anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
