@@ -4,11 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.5
 user-guide-description: Panoramica di tutte le risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5
+feature-set: Experience Manager
+feature: Informazioni sulla versione
+role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '72'
+ht-degree: 8%
 
 ---
 
@@ -17,12 +20,12 @@ ht-degree: 0%
 
 + [Hub guida utente di AEM 6.5](home.md)
 + Guide utente e risorse{#user-guides}
-   + [AEM funzionalità, guide utente](capabilities.md)
-   + [AEM guide utente per l’implementazione](implementation.md)
+   + [Guide utente AEM funzionalità](capabilities.md)
+   + [Guide utente per l’implementazione AEM](implementation.md)
    + [Risorse AEM](resources.md)
-+ Risoluzione dei problemi e assistenza{#troubleshooting}
++ Risoluzione dei problemi e aiuto{#troubleshooting}
    + [Risorse per i nuovi utenti AEM](new.md)
-   + [Scopri AEM funzionalità](learn.md)
+   + [Informazioni sulle funzionalità di AEM](learn.md)
    + [Best practice, procedure e formazioni](best-practice.md)
    + [La community AEM](community.md)
    + [Risoluzione dei problemi](troubleshooting.md)
