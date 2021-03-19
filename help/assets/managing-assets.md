@@ -1,32 +1,34 @@
 ---
-title: Gestione delle risorse per elementi multimediali dinamici
-description: Scopri come utilizzare le risorse per file multimediali dinamici
+title: Informazioni sulla gestione delle risorse Dynamic Media
+description: Scopri come utilizzare le risorse Dynamic Media
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
+feature: Gestione risorse
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 14%
+source-wordcount: '119'
+ht-degree: 13%
 
 ---
 
 
-# Gestione delle risorse per file multimediali dinamici{#managing-assets}
+# Informazioni sulla gestione delle risorse Dynamic Media {#managing-assets}
 
-La gestione delle risorse di elementi multimediali dinamici, immagini, video e risorse interattive, dopo averli caricati, comporta diverse attività, tra cui la visualizzazione in anteprima, il download o la pubblicazione.
+La gestione delle risorse Dynamic Media - immagini, video e risorse interattive - dopo il caricamento - prevede molte attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
 
-Quando visualizzate l’anteprima, potete anche applicare predefiniti per immagini (solo per immagini) o per visualizzatori (per video e immagini). Non potete applicare entrambi a una risorsa. Consultate [Applicazione dei predefiniti per visualizzatori](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti per immagini](/help/assets/image-sets.md).
+Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti immagine](/help/assets/image-sets.md).
 
-Informazioni generali sulla gestione delle risorse sono disponibili in [Gestione delle risorse](/help/assets/manage-assets.md).
+Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse](/help/assets/manage-assets.md).
 
-Gli argomenti seguenti descrivono le operazioni necessarie per gestire le risorse per file multimediali dinamici:
+I seguenti argomenti descrivono le operazioni da eseguire per gestire le risorse Dynamic Media:
 
 * [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](/help/assets/previewing-assets.md)
-* [Pubblicazione di risorse multimediali dinamiche](/help/assets/publishing-dynamicmedia-assets.md)
+* [Pubblicazione delle risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
 * [Utilizzo dei selettori](/help/assets/working-with-selectors.md)
