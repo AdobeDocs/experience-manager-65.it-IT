@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Guida utente alla gestione di AEM 6.5
 breadcrumb-title: Guida alla gestione
 user-guide-description: Scopri come gestire un progetto AEM.
+feature-set: Experience Manager Sites
+feature: Distribuzione
+role: Professionista
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 62%
+source-wordcount: '75'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +27,7 @@ ht-degree: 62%
    + [Elenco di controllo - Ulteriori riferimenti](best-practices-further-reference.md)
 + Gestione - Ulteriori riferimenti {#managing-further-reference}
    + [Linee guida per le dimensioni dell’hardware](hardware-sizing-guidelines.md)
-   + [DevOps aziendale](enterprise-devops.md)
+   + [Reparti DevOps aziendali](enterprise-devops.md)
    + [Best practice per SEO e gestione degli URL](seo-and-url-management.md)
 + Accessibilità {#accessibility}
    + [Linee guida sull’accessibilità di AEM per il Web](web-accessibility.md)
