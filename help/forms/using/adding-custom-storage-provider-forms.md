@@ -1,6 +1,6 @@
 ---
-title: Memorizzazione personalizzata per il componente bozze e invii
-seo-title: Memorizzazione personalizzata per il componente bozze e invii
+title: Archiviazione personalizzata per le bozze e i componenti di invio
+seo-title: Archiviazione personalizzata per le bozze e i componenti di invio
 description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
 seo-description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -8,33 +8,34 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Portale Forms
 translation-type: tm+mt
-source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
 
-# Memorizzazione personalizzata per il componente bozze e invii {#custom-storage-for-drafts-and-submissions-component}
+# Archiviazione personalizzata per le bozze e i componenti inviati {#custom-storage-for-drafts-and-submissions-component}
 
 ## Panoramica {#overview}
 
- AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo di lavoro in corso, che può essere completato e inviato in un secondo momento da qualsiasi dispositivo.
+AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza ti consente di mantenere un modulo in corso di lavorazione, che puoi completare e inviare in un secondo momento da qualsiasi dispositivo.
 
-Per impostazione predefinita,  AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel nodo `/content/forms/fp` nell&#39;istanza Pubblica. Inoltre, i componenti del  portale AEM Forms forniscono servizi dati che consentono di personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo `/content/forms/fp` nell’istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che è possibile utilizzare per personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
-* Abilita [componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md)
-* Creare una pagina del portale dei moduli [](/help/forms/using/creating-form-portal-page.md)
-* Abilitare i [moduli adattivi per il portale dei moduli](/help/forms/using/draft-submission-component.md)
-* Informazioni [sull&#39;implementazione di storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Abilita [componenti del portale dei moduli](/help/forms/using/enabling-forms-portal-components.md)
+* Creare una [pagina del portale dei moduli](/help/forms/using/creating-form-portal-page.md)
+* Abilita [moduli adattivi per il portale dei moduli](/help/forms/using/draft-submission-component.md)
+* Informazioni [sui dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi dell&#39;interfaccia `DraftDataService`. Il codice di esempio seguente descrive metodi e argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi dell&#39;interfaccia `DraftDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -99,11 +100,11 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->Il valore minimo per la lunghezza del campo ID bozza è 26 caratteri.  Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
+>Il valore minimo per la lunghezza della bozza del campo ID è di 26 caratteri. Adobe consiglia di impostare la lunghezza della bozza dell&#39;ID su 26 o più caratteri.
 
-## Servizio dati invio {#submission-data-service}
+## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi dell&#39;interfaccia `SubmitDataService`. Il codice di esempio seguente descrive metodi e argomenti.
+Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi dell&#39;interfaccia `SubmitDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -188,7 +189,7 @@ public interface SubmitDataService {
 }
 ```
 
-Il portale Forms utilizza il concetto di identificatore univoco universale (UUID) per generare un ID univoco per ogni bozza e modulo inviato. Puoi anche generare un ID univoco personalizzato. È possibile implementare l’interfaccia FPKeyGeneratorService, ignorarne i metodi e sviluppare una logica personalizzata per generare un ID univoco personalizzato per ogni bozza e modulo inviato. Inoltre, imposta il livello di servizio per l’implementazione di generazione ID personalizzata maggiore di 0. Essa garantisce che venga utilizzata l&#39;implementazione personalizzata invece dell&#39;implementazione predefinita.
+Il portale Forms utilizza il concetto di identificatore univoco universale (UUID) per generare un ID univoco per ogni bozza e modulo inviato. Puoi anche generare un ID univoco. È possibile implementare l’interfaccia FPKeyGeneratorService, ignorarne i metodi e sviluppare una logica personalizzata per generare un ID univoco personalizzato per ogni bozza e modulo inviato. Inoltre, imposta il livello di servizio dell&#39;implementazione di generazione ID personalizzata maggiore di 0. Assicura che l’implementazione personalizzata venga utilizzata al posto dell’implementazione predefinita.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,11 +204,11 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Puoi usare l’annotazione seguente per aumentare la classificazione del servizio per l’ID personalizzato generato con il codice precedente:
+Puoi utilizzare l’annotazione seguente per aumentare la classificazione del servizio per l’ID personalizzato generato con il codice precedente:
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Per utilizzare la nota di cui sopra, importa quanto segue nel progetto:
+Per utilizzare l’annotazione precedente, importa quanto segue nel progetto:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
