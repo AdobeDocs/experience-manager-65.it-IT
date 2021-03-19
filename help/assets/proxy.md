@@ -1,11 +1,12 @@
 ---
 title: '[!DNL Assets] sviluppo proxy'
-description: Un proxy è un proxy  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, operazioni supportate, componenti proxy e come sviluppare un proxy lavoratore personalizzato.
+description: Un proxy è un proxy  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, operazioni supportate, componenti proxy e come sviluppare un proxy worker personalizzato.
 contentOwner: AG
+role: Amministratore, architetto
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -15,21 +16,21 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
-Un proxy è un&#39;istanza di Experience Manager  specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy [!DNL Assets], questo può essere utilizzato per caricare le risorse per il rendering all&#39;interno delle risorse. Ad esempio, il lavoratore proxy [IDS](indesign.md) utilizza un server [!DNL Adobe InDesign] per elaborare i file da utilizzare in Assets.
+Un proxy è un&#39;istanza di Experience Manager specifica (e talvolta separata) che utilizza i proxy worker come processori responsabili della gestione di un lavoro e della creazione di un risultato. Un proxy worker può essere utilizzato per un&#39;ampia varietà di attività. Nel caso di un proxy [!DNL Assets] può essere utilizzato per caricare le risorse per il rendering all’interno di Assets. Ad esempio, il proxy worker [IDS](indesign.md) utilizza un [!DNL Adobe InDesign] Server per elaborare i file da utilizzare in Assets.
 
-Se il proxy è un&#39;istanza [!DNL Experience Manager] separata, questo consente di ridurre il carico sulle istanze di authoring dei Experienci Manager . Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull&#39;istanza di creazione del Experience Manager .
+Quando il proxy è un&#39;istanza [!DNL Experience Manager] separata questo aiuta a ridurre il carico sulle istanze di authoring di Experience Manager. Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull&#39;istanza di authoring di Experience Manager.
 
-## Proxy (accesso HTTP) {#proxy-http-access}
+## Proxy (HTTP Access) {#proxy-http-access}
 
-Un proxy è disponibile tramite il servlet HTTP quando è configurato per accettare processi di elaborazione in: `/libs/dam/cloud/proxy`. Questo servlet crea un processo di sling dai parametri inseriti. Questo viene aggiunto alla coda di processo del proxy e collegato al lavoratore proxy appropriato.
+Un proxy è disponibile tramite il servlet HTTP quando è configurato per accettare processi di elaborazione in: `/libs/dam/cloud/proxy`. Questo servlet crea un lavoro sling dai parametri inviati. Questo viene quindi aggiunto alla coda del processo proxy e collegato al processo di lavoro proxy appropriato.
 
 ### Operazioni supportate {#supported-operations}
 
 * `job`
 
-   **Requisiti**: il parametro  `jobevent` deve essere impostato come una mappa di valore serializzata. Viene utilizzato per creare un `Event` per un processore di processo.
+   **Requisiti**: il parametro  `jobevent` deve essere impostato come mappa del valore serializzato. Viene utilizzato per creare un `Event` per un processore di processo.
 
-   **Risultato**: Aggiunge un nuovo processo. In caso di esito positivo, viene restituito un ID di processo univoco.
+   **Risultato**: Aggiunge un nuovo processo. In caso di esito positivo, viene restituito un ID processo univoco.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -40,7 +41,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
    **Requisiti**: il parametro  `jobid` deve essere impostato.
 
-   **Risultato**: Restituisce una rappresentazione JSON del nodo risultato creato dal processore del processo.
+   **Risultato**: Restituisce una rappresentazione JSON del Nodo risultato creato dal processore del processo.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -62,7 +63,7 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
    **Requisiti**: il parametro jobid deve essere impostato.
 
-   **Risultati**: Rimuove un processo se viene trovato.
+   **Risultati**: Rimuove un processo se trovato.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -71,17 +72,17 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Proxy Worker {#proxy-worker}
 
-Un lavoratore proxy è un processore responsabile della gestione di un processo e della creazione di un risultato. I lavoratori risiedono nell&#39;istanza proxy e devono implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuti come proxy.
+Un proxy worker è un processore responsabile della gestione di un processo e della creazione di un risultato. I lavoratori risiedono nell&#39;istanza proxy e devono implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuti come proxy worker.
 
 >[!NOTE]
 >
->Il lavoratore deve implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuto come lavoratore proxy.
+>Il processo di lavoro deve implementare [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) per essere riconosciuto come proxy worker.
 
 ### API client {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) è disponibile come servizio OSGi che fornisce metodi per creare processi, rimuovere processi e ottenere risultati da tali processi. L&#39;implementazione predefinita di questo servizio (`JobServiceImpl`) utilizza il client HTTP per comunicare con il servlet proxy remoto.
+[`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) è disponibile come servizio OSGi che fornisce metodi per creare lavori, rimuovere lavori e ottenere risultati da tali processi. L&#39;implementazione predefinita di questo servizio (`JobServiceImpl`) utilizza il client HTTP per comunicare con il servlet proxy remoto.
 
-Esempio di utilizzo delle API:
+Di seguito è riportato un esempio di utilizzo API:
 
 ```java
 @Reference
@@ -109,13 +110,13 @@ Esempio di utilizzo delle API:
 >
 >La documentazione di riferimento per l&#39;API proxy è disponibile in [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Le configurazioni proxy e proxy del lavoro sono disponibili tramite configurazioni di servizi cloud accessibili dalla console [!DNL Assets] **Strumenti** o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
+Le configurazioni del proxy e del proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console [!DNL Assets] **Strumenti** o in `/etc/cloudservices/proxy`. Ogni proxy worker deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del processo di lavoro (ad esempio, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [ configurazione del Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [configurazione dei Cloud Services](../sites-developing/extending-cloud-config.md).
+>Per ulteriori informazioni, consulta [Configurazione di InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configurazione di Cloud Services](../sites-developing/extending-cloud-config.md) .
 
-Esempio di utilizzo delle API:
+Di seguito è riportato un esempio di utilizzo API:
 
 ```java
 @Reference(policy = ReferencePolicy.STATIC)
@@ -130,58 +131,58 @@ Esempio di utilizzo delle API:
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### Sviluppo di un Proxy Worker personalizzato {#developing-a-customized-proxy-worker}
+### Sviluppo di un proxy worker personalizzato {#developing-a-customized-proxy-worker}
 
-Il lavoratore proxy [IDS](indesign.md) è un esempio di un lavoratore proxy [!DNL Assets] già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse  InDesign.
+Il proxy worker [IDS](indesign.md) è un esempio di un proxy worker [!DNL Assets] già fornito come preconfigurato per l’outsourcing dell’elaborazione delle risorse InDesign.
 
-È inoltre possibile sviluppare e configurare il proprio [!DNL Assets] lavoratore proxy per creare un lavoratore specializzato per l&#39;invio e l&#39;outsourcing delle attività di [!DNL Assets] elaborazione.
+È inoltre possibile sviluppare e configurare il proprio [!DNL Assets] proxy worker per creare un processo di lavoro specializzato per l&#39;invio e l&#39;outsourcing delle [!DNL Assets] attività di elaborazione.
 
-Per impostare un lavoratore proxy personalizzato è necessario:
+Per configurare un processo di lavoro proxy personalizzato è necessario:
 
-* Configurare e implementare (utilizzando Sling eventing):
+* Configurazione e implementazione (utilizzando l’evento Sling):
 
-   * un argomento del processo personalizzato
-   * un gestore eventi di processo personalizzato
+   * un argomento di lavoro personalizzato
+   * un gestore di eventi di lavoro personalizzato
 
-* Quindi utilizzate l&#39;API JobService per:
+* Quindi utilizza l’API JobService per:
 
-   * invio del processo personalizzato al proxy
-   * gestire il lavoro
+   * invia il processo personalizzato al proxy
+   * gestire il proprio lavoro
 
-* Se desiderate utilizzare il proxy da un flusso di lavoro, dovete implementare un passaggio esterno personalizzato utilizzando l&#39;API WorkflowExternalProcess e l&#39;API JobService.
+* Se desideri utilizzare il proxy da un flusso di lavoro, devi implementare un passaggio esterno personalizzato utilizzando l’API WorkflowExternalProcess e l’API JobService.
 
-Nel diagramma seguente e nei passaggi viene descritto come procedere:
+Il diagramma seguente e i passaggi descrivono come procedere:
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
 >[!NOTE]
 >
->Nei passaggi seguenti, gli equivalenti  InDesign sono indicati come esempi di riferimento.
+>Nei passaggi seguenti, gli equivalenti di InDesign sono indicati come esempi di riferimento.
 
-1. Viene utilizzato un [processo Sling](https://sling.apache.org/site/eventing-and-jobs.html), pertanto è necessario definire un argomento del processo per il caso d&#39;uso.
+1. Viene utilizzato un [processo Sling](https://sling.apache.org/site/eventing-and-jobs.html), quindi devi definire un argomento di lavoro per il tuo caso d’uso.
 
-   Ad esempio, vedere `IDSJob.IDS_EXTENDSCRIPT_JOB` per il lavoratore proxy IDS.
+   Ad esempio, vedi `IDSJob.IDS_EXTENDSCRIPT_JOB` per il proxy worker IDS.
 
-1. Il passaggio esterno viene utilizzato per attivare l’evento e quindi attendere che sia terminato; questo viene fatto tramite un sondaggio sull&#39;ID. Per implementare le nuove funzionalità è necessario sviluppare un proprio passaggio.
+1. Il passaggio esterno viene utilizzato per attivare l’evento e quindi attendere fino al termine; questo viene fatto tramite sondaggi sull&#39;id. Devi sviluppare un tuo passaggio per implementare nuove funzionalità.
 
-   Implementate un `WorkflowExternalProcess`, quindi utilizzate l&#39;API JobService e l&#39;argomento del processo per preparare un evento di processo e inviarlo a JobService (un servizio OSGi).
+   Implementa un `WorkflowExternalProcess`, quindi utilizza l&#39;API JobService e l&#39;argomento del tuo lavoro per preparare un evento di lavoro e inviarlo al JobService (un servizio OSGi).
 
-   Ad esempio, vedere `INDDMediaExtractProcess`.java per il lavoratore proxy IDS.
+   Ad esempio, vedi `INDDMediaExtractProcess`.java per il processo di lavoro proxy IDS.
 
-1. Implementare un gestore di processi per l’argomento. Questo gestore richiede lo sviluppo in modo che esegua l&#39;azione specifica e sia considerato come implementazione del lavoratore.
+1. Implementa un gestore di processi per l’argomento. Questo gestore richiede lo sviluppo in modo che esegua l&#39;azione specifica ed è considerato l&#39;implementazione del processo di lavoro.
 
-   Ad esempio, vedere `IDSJobProcessor.java` per il lavoratore proxy IDS.
+   Ad esempio, vedi `IDSJobProcessor.java` per il proxy worker IDS.
 
-1. Utilizzare `ProxyUtil.java` in dam-commons. Questo consente di inviare i processi ai lavoratori utilizzando il proxy DAM.
+1. Utilizza `ProxyUtil.java` in dam-commons. Questo consente di inviare i lavori ai lavoratori utilizzando il proxy dam.
 
 >[!NOTE]
 >
->Ciò che il framework proxy [!DNL Assets] non fornisce è il meccanismo del pool.
+>Il meccanismo pool non è disponibile nel framework proxy [!DNL Assets] preconfigurato.
 >
->L&#39;integrazione [!DNL InDesign] consente l&#39;accesso a un pool di [!DNL InDesign] server (IDSPool). Questo pool è specifico dell&#39;integrazione [!DNL InDesign] e non fa parte del framework proxy [!DNL Assets].
+>L&#39;integrazione [!DNL InDesign] consente l&#39;accesso a un pool di [!DNL InDesign] server (IDSPool). Questo pool è specifico per l&#39;integrazione [!DNL InDesign] e non fa parte del framework proxy [!DNL Assets].
 
 >[!NOTE]
 >
 >Sincronizzazione dei risultati:
 >
->In caso di n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client ( Autore Experience Manager) richiedere il risultato utilizzando lo stesso ID processo univoco fornito al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro e mantiene il risultato pronto per essere richiesto.
+>Con n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client (ad Experience Manager Autore) richiedere il risultato utilizzando lo stesso ID di processo univoco assegnato al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro svolto e mantiene il risultato pronto per essere richiesto.
