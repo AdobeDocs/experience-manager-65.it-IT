@@ -1,18 +1,19 @@
 ---
 title: Guida rapida API Java di Task Manager Service (SOAP)
 seo-title: Guida rapida API Java di Task Manager Service (SOAP)
-description: Utilizzare il servizio Task Manager per assegnare attività, bloccare attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati del file e recuperare le informazioni sulle attività.
-seo-description: Utilizzare il servizio Task Manager per assegnare attività, bloccare attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati del file e recuperare le informazioni sulle attività.
+description: Utilizzare il servizio Gestione attività per assegnare le attività, bloccare le attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati dei file e recuperare le informazioni sulle attività.
+seo-description: Utilizzare il servizio Gestione attività per assegnare le attività, bloccare le attività, recuperare le attività assegnate agli utenti, recuperare i dati del modulo dalle attività, modificare i dati del modulo, recuperare gli allegati dei file e recuperare le informazioni sulle attività.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -20,35 +21,35 @@ ht-degree: 0%
 
 # Avvio rapido API Java di Task Manager Service (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
-Per il servizio Task Manager sono disponibili i seguenti Avvio rapido.
+Per il servizio Task Manager sono disponibili i seguenti avvii rapidi.
 
-[Avvio rapido (modalità SOAP): Assegnazione di attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
+[Avvio rapido (modalità SOAP): Assegnazione di attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Blocco delle attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Avvio rapido (modalità SOAP): Blocco delle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Recupero delle attività assegnate agli utenti tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Avvio rapido (modalità SOAP): Recupero delle attività assegnate agli utenti tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Recupero dei dati del modulo dalle attività mediante l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Avvio rapido (modalità SOAP): Recupero dei dati dei moduli dalle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Modifica dei dati del modulo mediante l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Avvio rapido (modalità SOAP): Modifica dei dati dei moduli tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Recupero di allegati da attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Avvio rapido (modalità SOAP): Recupero degli allegati di file dalle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
-
->[!NOTE]
->
->Non è possibile cercare le attività assegnate agli utenti utilizzando l&#39;API del servizio Web. Il motivo è che non è possibile richiamare il metodo `taskList`, che è una chiamata di metodo necessaria per eseguire questa attività.
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Quick Start situato in Programmazione con  AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Non è possibile cercare le attività assegnate agli utenti utilizzando l’API del servizio Web. Il motivo è che non è possibile richiamare il metodo `taskList`, che è una chiamata del metodo necessaria per eseguire questa attività.
+
+>[!NOTE]
+>
+>Quick Start situato in Programmazione con AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Assegnazione di attività tramite l&#39;API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&#39;attività a un utente denominato Tony Blue.
+L&#39;esempio di codice Java seguente assegna un&#39;attività a un utente chiamato Tony Blue.
 
 ```java
  /*
@@ -179,9 +180,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&#39;atti
  
 ```
 
-## Avvio rapido (modalità SOAP): Blocco delle attività tramite l&#39;API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Avvio rapido (modalità SOAP): Blocco delle attività tramite l’API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
-L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al valore di identificatore dell&#39;attività 2.
+L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al valore dell&#39;identificatore dell&#39;attività 2.
 
 ```java
  /*
@@ -270,7 +271,7 @@ L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al
 
 ## Avvio rapido (modalità SOAP): Recupero delle attività assegnate agli utenti tramite l&#39;API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività assegnate a un utente denominato *tony blue*. Questo utente viene specificato nelle proprietà della connessione. Vengono visualizzate informazioni sulle attività restituite, ad esempio il valore e la descrizione dell&#39;identificatore.
+L&#39;esempio di codice Java seguente recupera tutte le attività assegnate a un utente denominato *tony blue*. Questo utente viene specificato nelle proprietà di connessione. Vengono visualizzate informazioni sulle attività restituite, ad esempio il valore e la descrizione dell’identificatore.
 
 ```java
  /*
@@ -394,9 +395,9 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le
  }
 ```
 
-## Avvio rapido (modalità SOAP): Recupero dei dati del modulo dalle attività mediante l&#39;API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero dei dati dei moduli dalle attività tramite l’API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da un&#39;attività con il valore di identificatore 304. I dati del modulo vengono scritti in un file XML denominato *FormData.xml* all&#39;indirizzo C:\Adobe.
+L&#39;esempio di codice Java seguente recupera i dati del modulo da un&#39;attività con il valore di identificatore 304. I dati del modulo vengono scritti in un file XML denominato *FormData.xml* che si trova all&#39;indirizzo C:\Adobe.
 
 ```java
  /*
@@ -500,9 +501,9 @@ L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da 
  
 ```
 
-## Avvio rapido (modalità SOAP): Modifica dei dati del modulo mediante l&#39;API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Avvio rapido (modalità SOAP): Modifica dei dati dei moduli utilizzando l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con dati che si trova nel file *FormData.xml*.
+Il seguente esempio di codice Java aggiorna un modulo con dati che si trovano nel file *FormData.xml*.
 
 ```java
  /*
@@ -610,9 +611,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo 
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero degli allegati di file dalle attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero di file allegati dalle attività utilizzando l&#39;API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli allegati di file. Ogni allegato viene salvato come file TXT.
+Il seguente esempio di codice Java recupera gli allegati di file. Ciascun file allegato viene salvato come file TXT.
 
 ```java
  /*
@@ -714,9 +715,9 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli alle
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero delle informazioni sull&#39;attività mediante l&#39;API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *mutui ipotecariPrestito - Prebuild*. Lo stato di ogni attività restituita viene controllato per verificare che si tratti di un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
+Nell&#39;esempio di codice Java seguente vengono recuperate tutte le attività basate su un processo denominato *mutuoIpotecario - Pregenerato*. Lo stato di ogni attività restituita viene controllato per verificare che sia un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell’utente che ha completato l’attività e la data in cui l’attività è stata completata.
 
 ```java
  /*
