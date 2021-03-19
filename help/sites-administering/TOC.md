@@ -6,10 +6,13 @@ audience: admin-user
 user-guide-title: Guida utente all’amministrazione di AEM 6.5
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
+feature-set: Experience Manager Sites
+feature: Amministrazione
+role: Administrator
 translation-type: tm+mt
-source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '664'
 ht-degree: 19%
 
 ---
@@ -156,7 +159,7 @@ ht-degree: 19%
    + [Esportazione di frammenti esperienza in Adobe Target](experience-fragments-target.md)
    + [Tecniche consigliate per i modelli e-mail](best-practices-for-email-templates.md)
    + [Integrazione con Livefyre](livefyre.md)
-+ Best practice    {#bestpractices}
++ Best practice   {#bestpractices}
    + [Best practice  ](administer-best-practices.md)
    + [Best practice per la traduzione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
    + [Best practice MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
