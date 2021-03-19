@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 82fcc7ea1029f069aff95f50b3eb1a1581ec5c95
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1514'
 ht-degree: 1%
 
 ---
@@ -33,9 +34,9 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono le seguent
 * Invia all’endpoint REST
 * Invia e-mail
 * Invia PDF via e-mail
-* Richiamare un flusso di lavoro dei moduli
+* Richiamare un Forms Workflow
 * Invia usando il modello dati modulo
-* Azione di invio del portale moduli
+* Azione di invio Forms Portal
 * Richiamare un flusso di lavoro AEM
 
 >[!NOTE]
@@ -61,7 +62,7 @@ L’opzione di invio **Invia a endpoint REST** trasmette i dati compilati nel mo
 
 Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **textbox** e **numeric box** per l&#39;azione successiva.
 
-Puoi anche **Attivare la richiesta POST** e fornire un URL per inviare la richiesta. Per inviare dati al server Experience Manager che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server Experience Manager. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
+È inoltre possibile **Abilitare la richiesta di POST** e fornire un URL per inviare la richiesta. Per inviare dati al server Experience Manager che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso principale del server Experience Manager. Ad esempio, /content/forms/af/SampleForm.html. Per inviare dati a qualsiasi altro server, utilizzare un percorso assoluto.
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint rimanente](assets/action-config.png)
 
@@ -107,11 +108,11 @@ L’azione **Invia PDF tramite e-mail** invia un’e-mail con un PDF contenente 
 >[!NOTE]
 Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD che dispongono del modello Document of Record.
 
-## Richiamare un flusso di lavoro dei moduli {#invoke-a-forms-workflow}
+## Richiamare un Forms Workflow {#invoke-a-forms-workflow}
 
-L&#39;opzione di invio **Invia a flusso di lavoro Forms** invia un file xml di dati ed eventuali allegati a un processo Adobe LiveCycle o AEM Forms su JEE esistente.
+L&#39;opzione **Invia a Forms Workflow** invia un file xml di dati e allegati (se presenti) a un LiveCycle di Adobe esistente o ad AEM Forms su un processo JEE.
 
-Per informazioni su come configurare l’azione di invio al flusso di lavoro Invia a moduli, vedere [Invio ed elaborazione dei dati del modulo tramite flussi di lavoro per moduli](../../forms/using/submit-form-data-livecycle-process.md).
+Per informazioni su come configurare l’azione Invia al Forms Workflow, vedere [Invio ed elaborazione dei dati del modulo tramite flussi di lavoro per moduli](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Invia usando il modello dati modulo {#submit-using-form-data-model}
 
@@ -119,19 +120,19 @@ L’azione di invio **Invia utilizzando Form Data Model** scrive i dati del modu
 
 È inoltre possibile inviare un allegato del modulo utilizzando un modello dati del modulo e un documento di record all’origine dati.
 
-Per informazioni sul modello dati del modulo, consulta [Integrazione dati di AEM Forms](../../forms/using/data-integration.md).
+Per informazioni sul modello di dati del modulo, vedere [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md).
 
-## Azione di invio del portale dei moduli {#forms-portal-submit-action}
+## Azione di invio del portale Forms {#forms-portal-submit-action}
 
-L’opzione **Invia azione portale moduli** rende i dati del modulo disponibili tramite un portale AEM Forms.
+L’opzione **Forms Portal Submit Action** rende i dati del modulo disponibili tramite un portale AEM Forms.
 
-Per ulteriori informazioni sul portale dei moduli e sull’azione di invio, vedere [Componente Bozze e invii](../../forms/using/draft-submission-component.md).
+Per ulteriori informazioni sul portale Forms e sull&#39;azione di invio, consulta [Componente Bozze e invii](../../forms/using/draft-submission-component.md).
 
 ## Richiamare un flusso di lavoro AEM {#invoke-an-aem-workflow}
 
-L’azione **Richiama un flusso di lavoro AEM** invia associa un modulo adattivo a un flusso di lavoro AEM. Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente sul nodo di elaborazione. Inoltre, inserisce file di dati, allegati e documenti di record, se applicabile, nel percorso di payload del flusso di lavoro.
+L&#39;azione **Richiama un flusso di lavoro AEM** invia associa un modulo adattivo a un flusso di lavoro AEM. Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente sul nodo di elaborazione. Inoltre, inserisce file di dati, allegati e documenti di record, se applicabile, nel percorso di payload del flusso di lavoro.
 
-Prima di utilizzare l&#39;azione di invio **Richiama un flusso di lavoro AEM**, [configura le impostazioni di Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Per informazioni sulla creazione di un flusso di lavoro AEM, consulta [Flussi di lavoro incentrati sui moduli su OSGi](../../forms/using/aem-forms-workflow.md).
+Prima di utilizzare l&#39;azione di invio **Richiama un flusso di lavoro AEM**, [configura le impostazioni di DS di Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Per informazioni sulla creazione di un flusso di lavoro AEM, consulta [Flussi di lavoro incentrati sui moduli su OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Rivalutazione lato server in forma adattiva {#server-side-revalidation-in-adaptive-form}
 
@@ -162,7 +163,7 @@ La convalida lato server convalida il modello di modulo. È consigliabile creare
 
 ### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 
-In alcuni casi, in presenza di regole di convalida complesse, lo script di convalida esatto risiede in funzioni personalizzate e l’autore chiama queste funzioni personalizzate dall’espressione di convalida dei campi. Per rendere questa libreria di funzioni personalizzate nota e disponibile durante l’esecuzione di convalide lato server, l’autore del modulo può configurare il nome della libreria client AEM nella scheda **Base** delle proprietà del contenitore di moduli adattivi , come illustrato di seguito.
+In alcuni casi, in presenza di regole di convalida complesse, lo script di convalida esatto risiede in funzioni personalizzate e l’autore chiama queste funzioni personalizzate dall’espressione di convalida dei campi. Per rendere questa libreria di funzioni personalizzate nota e disponibile durante l’esecuzione delle convalide lato server, l’autore del modulo può configurare il nome AEM libreria client nella scheda **Base** delle proprietà Contenitore di moduli adattivi , come illustrato di seguito.
 
 ![Supporto di funzioni personalizzate nelle espressioni di convalida](assets/clientlib-cat.png)
 
@@ -172,6 +173,6 @@ L’autore può configurare una libreria JavaScript personalizzata per ciascun m
 
 ## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
 
-Come parte delle linee guida per la sicurezza e l’inasprimento di Experience Manager, configura pagine di errore personalizzate come 404.jsp e 500.jsp. Quando si invia un modulo 404 o 500 vengono visualizzati errori, questi gestori vengono chiamati. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish .
+Come parte delle linee guida per la sicurezza e l’indurimento di Experience Manager, configura pagine di errore personalizzate come 404.jsp e 500.jsp. Quando si invia un modulo 404 o 500 vengono visualizzati errori, questi gestori vengono chiamati. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish .
 
 Per ulteriori informazioni, consulta [Personalizzazione delle pagine mostrate dal gestore errori](/help/sites-developing/customizing-errorhandler-pages.md).
