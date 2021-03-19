@@ -1,40 +1,41 @@
 ---
-title: XMP Utilities Service Java APIQuick Start(SOAP)
-seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
-description: Usate il servizio Utilità XMP per esportare e importare XMP metadati.
-seo-description: Usate il servizio Utilità XMP per esportare e importare XMP metadati.
+title: Servizio Utilità XMP Java APIQuick Start(SOAP)
+seo-title: Servizio Utilità XMP Java APIQuick Start(SOAP)
+description: Utilizza il servizio Utilità XMP per esportare e importare i metadati XMP.
+seo-description: Utilizza il servizio Utilità XMP per esportare e importare i metadati XMP.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+# Avvio rapido API Java di XMP Utilities Service (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
-Per il servizio Utilità XMP sono disponibili i seguenti avvii rapidi.
+Per il servizio Utilità XMP sono disponibili i seguenti Avvio rapido.
 
-[Avvio rapido (modalità SOAP): Esportazione di metadati XMP tramite l&#39;API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
+[Avvio rapido (modalità SOAP): Esportazione dei metadati XMP tramite l’API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Importazione di metadati XMP tramite l&#39;API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
+[Avvio rapido (modalità SOAP): Importazione di metadati XMP tramite l’API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
- le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con AEM moduli si basano sul server Forms se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms se si utilizza un altro sistema operativo, ad esempio UNIX, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Esportazione di metadati XMP mediante l&#39;API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
+## Avvio rapido (modalità SOAP): Esportazione dei metadati XMP tramite l’API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-Nell&#39;esempio di codice seguente vengono recuperati, ispezionati e salvati XMP metadati. (Vedere [Esportazione di metadati da documenti PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+Nell&#39;esempio di codice seguente vengono recuperati, ispezionati e salvati i metadati XMP. (Vedere [Esportazione di metadati da documenti PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```java
  /*
@@ -137,9 +138,9 @@ Nell&#39;esempio di codice seguente vengono recuperati, ispezionati e salvati XM
  
 ```
 
-## Avvio rapido (modalità SOAP): Importazione di metadati XMP tramite l&#39;API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
+## Avvio rapido (modalità SOAP): Importazione di metadati XMP utilizzando l&#39;API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-Nell&#39;esempio di codice seguente vengono importati XMP metadati e salvati su disco il nuovo file PDF. Il documento PDF è basato su un file PDF denominato Loan.pdf. Il documento XML che contiene i metadati da importare nel documento PDF si basa su un file XML denominato *LoanMetaData.xml*. Per informazioni su questo file XML, vedere [Importazione di metadati in documenti PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+Nell&#39;esempio di codice seguente vengono importati i metadati XMP e viene salvato il nuovo file PDF su disco. Il documento PDF è basato su un file PDF denominato Loan.pdf. Il documento XML contenente i metadati da importare nel documento PDF si basa su un file XML denominato *LoanMetaData.xml*. Per informazioni su questo file XML, vedere [Importazione di metadati in documenti PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*
