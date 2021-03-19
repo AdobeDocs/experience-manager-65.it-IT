@@ -1,18 +1,19 @@
 ---
 title: Configurare la cache dei moduli adattivi
 seo-title: Configurare la cache dei moduli adattivi
-description: 'La cache dei moduli adattivi è stata progettata specificamente per i moduli e i documenti adattivi. Memorizza nella cache moduli adattivi e documenti adattivi allo scopo di ridurre il tempo necessario per eseguire il rendering di un modulo o di un documento adattivo sul client. '
-seo-description: 'La cache dei moduli adattivi è stata progettata specificamente per i moduli e i documenti adattivi. Memorizza nella cache moduli adattivi e documenti adattivi allo scopo di ridurre il tempo necessario per eseguire il rendering di un modulo o di un documento adattivo sul client. '
+description: 'La cache dei moduli adattivi è progettata appositamente per i moduli adattivi e i documenti. Memorizza in cache moduli adattivi e documenti adattivi allo scopo di ridurre il tempo necessario per eseguire il rendering di un modulo o di un documento adattivo sul client. '
+seo-description: 'La cache dei moduli adattivi è progettata appositamente per i moduli adattivi e i documenti. Memorizza in cache moduli adattivi e documenti adattivi allo scopo di ridurre il tempo necessario per eseguire il rendering di un modulo o di un documento adattivo sul client. '
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -20,49 +21,49 @@ ht-degree: 1%
 
 # Configurare la cache dei moduli adattivi {#configure-adaptive-forms-cache}
 
-Una cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare i dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo sul client. È progettata specificatamente per i moduli adattivi.
+Una cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di input/output (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo sul client. È progettato specificatamente per i moduli adattivi.
 
-## Configurare la cache dei moduli adattivi per le istanze di creazione e pubblicazione {#configure-adaptive-forms-caching-at-author-and-publish-instances}
+## Configurare la cache dei moduli adattivi nelle istanze di creazione e pubblicazione {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
-1. Andate AEM console Web Configuration Manager all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
-1. Fare clic su **[!UICONTROL Configurazione canale Web per moduli adattivi e comunicazioni interattive]** per modificarne i valori di configurazione.
-1. Nella finestra di dialogo [!UICONTROL modifica valori di configurazione], specificare il numero massimo di moduli o documenti per cui un&#39;istanza del server AEM [!DNL Forms] può memorizzare nella cache il campo **[!UICONTROL Numero di Forms adattivo]**. Il valore predefinito è 100.
+1. Vai AEM gestione della configurazione della console Web all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
+1. Fai clic su **[!UICONTROL Configurazione canale web per moduli adattivi e comunicazioni interattive]** per modificare i relativi valori di configurazione.
+1. Nella finestra di dialogo [!UICONTROL modifica valori di configurazione], specifica il numero massimo di moduli o documenti che un&#39;istanza del server [!DNL Forms] AEM può memorizzare nella cache nel campo **[!UICONTROL Numero di Forms adattivo]**. Il valore predefinito è 100.
 
    >[!NOTE]
    >
-   >Per disattivare la cache, impostate il valore nel campo Numero di Forms adattivo su **0**. La cache viene reimpostata e tutti i moduli e i documenti vengono rimossi dalla cache quando si disabilita o si modifica la configurazione della cache.
+   >Per disabilitare la cache, imposta il valore nel campo Numero di Forms adattivo su **0**. La cache viene reimpostata e tutti i moduli e i documenti vengono rimossi dalla cache quando si disabilita o si modifica la configurazione della cache.
 
    ![Finestra di dialogo di configurazione per la cache HTML dei moduli adattivi](assets/cache-configuration-edit.png)
 
-1. Fare clic su **[!UICONTROL Salva]** per salvare la configurazione.
+1. Fai clic su **[!UICONTROL Salva]** per salvare la configurazione.
 
-L’ambiente è configurato per l’utilizzo della cache per moduli adattivi e risorse correlate.
+L’ambiente è configurato per l’utilizzo della cache dei moduli adattivi e delle relative risorse.
 
 
-## (Facoltativo) Configurare la cache dei moduli adattivi al dispatcher {#configure-the-cache}
+## (Facoltativo) Configura la cache del modulo adattivo al dispatcher {#configure-the-cache}
 
-È inoltre possibile configurare il caching dei moduli adattivi presso il dispatcher per un ulteriore miglioramento delle prestazioni.
+Puoi anche configurare il caching dei moduli adattivi al dispatcher per ulteriori miglioramenti delle prestazioni.
 
 ### Prerequisiti {#pre-requisites}
 
-* Abilitare l&#39;opzione [unione o precompilazione dei dati in client](prepopulate-adaptive-form-fields.md#prefill-at-client). Consente di unire dati univoci per ogni istanza di un modulo precompilato.
+* Abilita l&#39;opzione [unione o precompilazione dei dati in client](prepopulate-adaptive-form-fields.md#prefill-at-client) . Consente di unire dati univoci per ogni istanza di un modulo precompilato.
 
-### Considerazioni sulla memorizzazione nella cache dei moduli adattivi in un dispatcher {#considerations}
+### Considerazioni sulla memorizzazione in cache dei moduli adattivi su un dispatcher {#considerations}
 
-* Quando si utilizza la cache dei moduli adattivi, utilizzare il AEM [!DNL Dispatcher] per memorizzare nella cache le librerie client (CSS e JavaScript) di un modulo adattivo.
-* Durante lo sviluppo di componenti personalizzati, sul server utilizzato per lo sviluppo, mantenere disattivata la cache dei moduli adattivi.
-* Gli URL senza estensione non vengono memorizzati nella cache. Ad esempio, l&#39;URL con pattern`/content/forms/[folder-structure]/[form-name].html` viene memorizzato nella cache e gli URL con pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content` vengono ignorati dalla cache. Utilizzate quindi gli URL con estensioni per sfruttare i vantaggi del caching.
+* Quando utilizzi la cache dei moduli adattivi, utilizza il AEM [!DNL Dispatcher] per memorizzare nella cache le librerie client (CSS e JavaScript) di un modulo adattivo.
+* Durante lo sviluppo di componenti personalizzati, sul server utilizzato per lo sviluppo, tieni disabilitata la cache dei moduli adattivi.
+* Gli URL senza estensione non vengono memorizzati nella cache. Ad esempio, gli URL con pattern`/content/forms/[folder-structure]/[form-name].html` vengono memorizzati nella cache e la memorizzazione in cache ignora gli URL con pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Utilizza quindi gli URL con estensioni per sfruttare i vantaggi della memorizzazione in cache.
 * Considerazioni sui moduli adattivi localizzati:
-   * Utilizzate il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [Disattivate l’utilizzo del browser ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) locale per gli URL con formato  `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Se si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa lingua browser]** in Gestione configurazione è disabilitato, viene servita la versione non localizzata del modulo adattivo. La lingua non localizzata è quella utilizzata per lo sviluppo del modulo adattivo. Le impostazioni internazionali configurate per il browser (impostazioni internazionali del browser) non vengono prese in considerazione e viene servita una versione non localizzata del modulo adattivo.
-   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa lingua browser]** in Gestione configurazione è attivato, viene fornita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni internazionali configurate per il browser in uso (impostazione internazionale del browser). Può causare la memorizzazione nella cache di una sola prima istanza di un modulo adattivo ]. [ Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
+   * [Disabilita l’utilizzo ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) locale del browser per gli URL con formato  `http://host:port/content/forms/af/<adaptivefName>.html`.
+   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa impostazione internazionale browser]** nel gestore della configurazione è disattivato, viene distribuita la versione non localizzata del modulo adattivo. La lingua non localizzata è la lingua utilizzata durante lo sviluppo del modulo adattivo. Le impostazioni internazionali configurate per il browser (impostazioni internazionali del browser) non vengono prese in considerazione e viene fornita una versione non localizzata del modulo adattivo.
+   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa impostazione internazionale browser]** nel gestore della configurazione è abilitato, viene fornita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulle impostazioni internazionali configurate per il browser (impostazioni internazionali del browser). Può causare la memorizzazione in cache solo della prima istanza di un modulo adattivo ]. [ Per evitare che il problema si verifichi sull&#39;istanza, consulta [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
 
-### Attivazione della memorizzazione nella cache al dispatcher
+### Abilita la memorizzazione in cache al dispatcher
 
-Per attivare e configurare la memorizzazione nella cache dei moduli adattivi nel dispatcher, effettuare le operazioni riportate di seguito.
+Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazione in cache dei moduli adattivi sul dispatcher:
 
-1. Aprite il seguente URL per ogni istanza di pubblicazione dell&#39;ambiente e [attivate l&#39;agente di scaricamento per le istanze di pubblicazione dell&#39;ambiente ](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Apri il seguente URL per ogni istanza di pubblicazione dell&#39;ambiente e [abilita l&#39;agente di scaricamento per le istanze di pubblicazione dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Aggiungi quanto segue al file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -89,12 +90,12 @@ Per attivare e configurare la memorizzazione nella cache dei moduli adattivi nel
       }
    ```
 
-   Quando aggiungete quanto sopra:
+   Quando aggiungi quanto sopra:
 
-   * Un modulo adattivo rimane nella cache finché non viene pubblicata una versione aggiornata del modulo.
+   * Un modulo adattivo rimane nella cache fino a quando non viene pubblicata una versione aggiornata del modulo.
 
-   * Quando viene pubblicata una nuova versione di risorse a cui viene fatto riferimento in un modulo adattivo, i moduli adattivi interessati vengono automaticamente invalidati. Esistono alcune eccezioni all&#39;annullamento automatico della convalida delle risorse di riferimento. Per una soluzione alternativa alle eccezioni, vedere la sezione [risoluzione dei problemi](#troubleshooting).
-1. [Aggiungi il dispatcher delle regole riportato di seguito.any o il file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache) delle regole personalizzate. Sono esclusi gli URL che non supportano il caching. Ad esempio, Comunicazione interattiva.
+   * Quando viene pubblicata una versione più recente della risorsa a cui viene fatto riferimento in un modulo adattivo, i moduli adattivi interessati vengono automaticamente invalidati. Sono presenti alcune eccezioni all’annullamento automatico della validità delle risorse di riferimento. Per la soluzione alle eccezioni, consulta la sezione [risoluzione dei problemi](#troubleshooting) .
+1. [Aggiungi il seguente file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache) di regole dispatcher.any o personalizzato. Sono esclusi gli URL che non supportano la memorizzazione in cache. Ad esempio, la comunicazione interattiva.
 
    ```JSON
       /0000 {
@@ -118,7 +119,7 @@ Per attivare e configurare la memorizzazione nella cache dei moduli adattivi nel
       }
    ```
 
-1. [Aggiungete i seguenti parametri all’elenco](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) dei parametri dell’URL di esclusione:
+1. [Aggiungi i seguenti parametri all’elenco](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) dei parametri URL ignorati:
 
    ```JSON
       /ignoreUrlParams {
@@ -128,33 +129,33 @@ Per attivare e configurare la memorizzazione nella cache dei moduli adattivi nel
       }
    ```
 
-L&#39;ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza nella cache tutti i tipi di moduli adattivi. Se è necessario controllare le autorizzazioni di accesso degli utenti per una pagina prima di distribuire la pagina memorizzata nella cache, vedere [caching protected content](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html) (Memorizzazione nella cache dei contenuti protetti).
+L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza in cache tutti i tipi di moduli adattivi. Se è necessario controllare le autorizzazioni di accesso utente per una pagina prima di distribuire la pagina in cache, consulta [memorizzazione in cache del contenuto protetto](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
-### Alcuni moduli adattivi contenenti immagini o video non vengono automaticamente invalidati dalla cache del dispatcher {#videos-or-images-not-auto-invalidated}
+### Alcuni moduli adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache del dispatcher {#videos-or-images-not-auto-invalidated}
 
 #### Problema {#issue1}
 
-Quando selezionate e aggiungete immagini o video tramite il browser risorse a un modulo adattivo e tali immagini e video vengono modificati nell’editor delle risorse, i moduli adattivi contenenti tali immagini non vengono invalidati automaticamente dalla cache del dispatcher.
+Quando selezioni e aggiungi immagini o video tramite il browser risorse a un modulo adattivo e tali immagini e video vengono modificati nell’editor di Assets, i moduli adattivi contenenti tali immagini non vengono invalidati automaticamente dalla cache del dispatcher.
 
 #### Soluzione {#Solution1}
 
-Dopo aver pubblicato le immagini e il video, annullate esplicitamente la pubblicazione e pubblicate i moduli adattivi che fanno riferimento a tali risorse.
+Dopo aver pubblicato le immagini e il video, annulla esplicitamente la pubblicazione e pubblica i moduli adattivi che fanno riferimento a tali risorse.
 
-### Nella cache è memorizzata solo la prima istanza di un modulo adattivo{#only-first-instance-of-adaptive-forms-is-cached}
+### Solo la prima istanza di un modulo adattivo è memorizzata nella cache {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problema {#issue3}
 
-Se l&#39;URL del modulo adattivo non contiene informazioni sulla localizzazione e l&#39;opzione **[!UICONTROL Usa impostazioni internazionali browser]** in Gestione configurazione è abilitata, viene distribuita una versione localizzata del modulo adattivo e viene memorizzata nella cache solo la prima istanza del modulo adattivo, che viene inviata a ogni utente successivo.
+Se l’URL del modulo adattivo non dispone di informazioni sulla localizzazione e **[!UICONTROL Use Browser Locale]** in configuration manager è abilitato, viene fornita una versione localizzata del modulo adattivo e viene memorizzata nella cache e distribuita solo la prima istanza del modulo adattivo a ogni utente successivo.
 
 #### Soluzione {#Solution3}
 
-Per risolvere il problema, effettuate le seguenti operazioni:
+Esegui i seguenti passaggi per risolvere il problema:
 
-1. Aprite il file conf.d/httpd-dispatcher.conf o qualsiasi altro file di configurazione configurato per il caricamento in fase di esecuzione.
+1. Apri conf.d/httpd-dispatcher.conf o qualsiasi altro file di configurazione configurato per il caricamento in fase di runtime.
 
-1. Aggiungete il codice seguente al file e salvatelo. Si tratta di un codice di esempio che lo modifica per adattarlo al tuo ambiente.
+1. Aggiungi il seguente codice al file e salvalo. Si tratta di un codice di esempio modificarlo in base all’ambiente.
 
 ```XML
    <VirtualHost *:80>
