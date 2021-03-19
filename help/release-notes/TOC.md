@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Note sulla versione di Adobe Experience Manager 6.5
 breadcrumb-title: Note sulla versione
 user-guide-description: Scopri le nuove funzioni di AEM 6.5 nelle note sulla versione.
+feature-set: Experience Manager
+feature: Informazioni sulla versione
+role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
 translation-type: tm+mt
-source-git-commit: 4f3be1e50b5520e55ffebfe13ea19aca77d5350d
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 34%
+source-wordcount: '87'
+ht-degree: 32%
 
 ---
 
