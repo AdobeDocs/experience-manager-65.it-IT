@@ -1,18 +1,20 @@
 ---
-sub-product: Esperienze AEM fluide
-user-guide-title: Esperienze AEM fluide
+sub-product: Esperienze fluide AEM
+user-guide-title: Esperienze fluide AEM
 breadcrumb-title: Guida alle esperienze fluide
-user-guide-description: AEM Esperienze fluide si basa sulle potenti funzionalità di  AEM Sites, AEM contenuti multimediali dinamici e  AEM Assets, per fornire una soluzione affidabile per la distribuzione di contenuti headless.
+user-guide-description: AEM esperienze fluide trae vantaggio dai potenti set di funzioni di AEM Sites, AEM Dynamic Media e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
 index: n
+feature-set: Experience Manager Sites
+role: Leader, Architetto, Sviluppatore, Architetto dati, Ingegnere dati, Amministratore, Tecnico aziendale
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
 
 
-# AEM esperienze fluide {#aem-fluid-experiences}
+# Esperienze fluide AEM {#aem-fluid-experiences}
 
 + [Elenco delle funzioni](/help/fluid-experiences/feature-list.md)
