@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '626'
 ht-degree: 7%
 
 ---
@@ -23,59 +24,59 @@ ht-degree: 7%
 
 ## Panoramica {#overview}
 
-Per  AEM Communities, esistono diversi rapporti a cui è possibile accedere in diversi modi dall’ambiente di authoring.
+Per AEM Communities, è possibile accedere a diversi rapporti in diversi modi dall’ambiente di authoring.
 
-In generale, le relazioni sono le seguenti:
+In generale, le varie relazioni sono:
 
 * [Rapporto assegnazioni](#assignments-report)
 
-   Per una [community di abilitazione](/help/communities/overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli utenti in formazione nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM.
+   Per una [community di abilitazione](/help/communities/overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro assegnazioni, con un punteggio associato se si implementa lo standard SCORM.
 
 * [Rapporto visualizzazioni](#views-report)
 
-   Fornisce un grafico del contenuto visualizzato dai membri della community e dai visitatori del sito per qualsiasi sito della community.
+   Fornisce un grafico dei contenuti dei membri della community e dei visitatori del sito per qualsiasi sito della community.
 
 * [Rapporto sui post](#posts-report)
 
-   Fornisce un grafico dei vari tipi di post dei membri della community in qualsiasi sito della community.
+   Fornisce un grafico dei vari tipi di post dei membri della community su qualsiasi sito della community.
 
-Quando [ Adobe Analytics è abilitato](/help/communities/sites-console.md#analytics), i report includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ogni risorsa di abilitazione nel tempo.
+Quando [Adobe Analytics è abilitato](/help/communities/sites-console.md#analytics), i rapporti includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ogni risorsa di abilitazione nel tempo.
 
-I rapporti tabulari possono essere esportati in formato .csv per l’elaborazione successiva.
+I rapporti tabulari possono essere esportati in formato .csv per successive elaborazioni.
 
 ## Console di reporting {#reporting-consoles}
 
-### Rapporti per siti community {#reports-for-community-sites}
+### Rapporti per siti della community {#reports-for-community-sites}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Rapporti]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Comunità]** > **[!UICONTROL Rapporti]**
 
 * Scegli tra:
 
    * **[!UICONTROL Rapporto assegnazioni]**
 
-      * Genera un report per il sito, l&#39;utente o il gruppo community selezionato e l&#39;assegnazione.
+      * Genera un report per la sede, l&#39;utente o il gruppo della community selezionati e l&#39;assegnazione.
    * **[!UICONTROL Rapporto sui post]**
 
-      * Genera un rapporto per il sito community selezionato, il tipo di contenuto e il periodo di tempo.
+      * Genera un report per il sito della community selezionato, il tipo di contenuto e il periodo di tempo.
    * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un rapporto per il sito community selezionato, il tipo di contenuto e il periodo di tempo.
+      * genera un rapporto per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
 
 
-![report](assets/reports1.png)
+![rapporti](assets/reports1.png)
 
 ### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Risorse]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Comunità]** > **[!UICONTROL Risorse]**
 
-* Selezionate un sito community di abilitazione esistente:
+* Seleziona un sito community di abilitazione esistente:
 
-   * Selezionate l&#39;icona **Report** per generare rapporti che coprono tutte le risorse di abilitazione.
-   * Selezionate un percorso di apprendimento per l’abilitazione.
-   * Selezionare l&#39;icona **Report** per generare i report per:
+   * Seleziona l’icona **Report** per generare rapporti che coprono tutte le risorse di abilitazione.
+   * Seleziona un percorso di apprendimento per l’abilitazione.
+   * Seleziona l&#39;icona **Report** per generare report per:
 
-      * Risorse di abilitazione incluse.
+      * Le risorse di abilitazione incluse.
       * Gli studenti assegnati al percorso di apprendimento.
 
 * Tali rapporti forniscono:
@@ -85,71 +86,71 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
       * Identificazione dello studente
       * Il loro status
       * Assegnazione o accesso tramite catalogo
-      * Numero di osservazioni fatte
-      * Valutazione a stella
+      * Numero di osservazioni formulate
+      * Classificazione a stelle
 
-Per ulteriori dettagli, vedere [Sezione Rapporti](/help/communities/resources.md#report) della console Risorse.
+Per ulteriori dettagli, consulta [Sezione Rapporti](/help/communities/resources.md#report) della console Risorse .
 
 ## Rapporto assegnazioni {#assignments-report}
 
-La console Assegnazioni consente di filtrare i rapporti in base all&#39;abilitazione del sito community, degli utenti o dei gruppi e dell&#39;assegnazione.
+La console Assegnazioni consente di filtrare i rapporti in base al sito della community di abilitazione, agli utenti o ai gruppi e all’assegnazione.
 
-Il rapporto fornisce informazioni sui loro progressi, nonché eventuali commenti o valutazioni forniti.
+La relazione fornisce informazioni sui loro progressi nonché eventuali commenti o valutazioni forniti.
 
-![rapporto sulle assegnazioni](assets/assignment-report.png)
+![rapporto di assegnazione](assets/assignment-report.png)
 
-Seleziona i criteri per il rapporto:
+Seleziona i criteri per il rapporto :
 
 * **Sito**
 
-   Selezionate un sito community di abilitazione.
+   Seleziona un sito community di abilitazione.
 
 * **Utente o gruppo**
-   * Selezionate Utente per generare un rapporto per uno studente.
-   * Selezionate Gruppo per generare un rapporto per un gruppo di utenti in formazione.
+   * Selezionare Utente per generare un rapporto per uno studente.
+   * Selezionare Gruppo per generare un rapporto per un gruppo di studenti.
 
-   Il servizio tunnel accederà ai membri e ai gruppi di membri dall&#39;ambiente di pubblicazione.
+   Il servizio tunnel accederà ai membri e ai gruppi di membri dall’ambiente di pubblicazione.
 
 * **Assegnazione**
 
-   Scegliete tra le risorse di abilitazione assegnate agli studenti selezionati.
+   Scegli tra le risorse di abilitazione assegnate agli studenti selezionati.
 
-Selezionare **Generate** per creare il rapporto:
+Seleziona **Genera** per creare il rapporto:
 
-![generate-report](assets/generate-assignment-report.png)
+![genera rapporto](assets/generate-assignment-report.png)
 
 ## Rapporto visualizzazioni {#views-report}
 
-La console Visualizzazioni consente di generare rapporti sulle visualizzazioni di pagina in base alle funzioni per community per un determinato periodo di tempo.
+La console Visualizzazioni consente di generare rapporti sulle visualizzazioni di pagina in base alle funzioni della community per un determinato periodo di tempo.
 
-![view-report](assets/view-report.png)
+![rapporto visivo](assets/view-report.png)
 
 Seleziona i criteri per il rapporto:
 
 * **[!UICONTROL Sito]**
 
-   Selezionate un sito community.
+   Seleziona un sito community.
 
 * **[!UICONTROL Tipo di contenuto]**
 
-   Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito.
+   È possibile scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Intervallo di tempo]**
+* **[!UICONTROL Intervallo temporale]**
 
-   Selezionate una delle seguenti opzioni:
+   Seleziona una delle seguenti opzioni:
 
    * Ultimi 7 giorni
    * Ultimi 30 giorni
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionare **[!UICONTROL Generate]** per creare il rapporto.
+Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
 ![generate-views](assets/generate-views.png)
 
 ## Rapporto sui post {#posts-report}
 
-La console Post consente di generare rapporti sul numero di post alle funzioni della community per un determinato periodo di tempo.
+La console Post consente di generare rapporti sul numero di post nelle funzioni della community per un determinato periodo di tempo.
 
 ![post-report](assets/posts-report.png)
 
@@ -157,33 +158,33 @@ Seleziona i criteri per il rapporto:
 
 * **[!UICONTROL Sito]**
 
-   Selezionate un sito community.
+   Seleziona un sito community.
 
 * **[!UICONTROL Tipo di contenuto]**
 
-   Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito.
+   È possibile scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Intervallo di tempo]**
+* **[!UICONTROL Intervallo temporale]**
 
-   Selezionate una delle seguenti opzioni:
+   Seleziona una delle seguenti opzioni:
 
    * Ultimi 7 giorni
    * Ultimi 30 giorni
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionare **[!UICONTROL Generate]** per creare il rapporto.
+Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
-![generate-report](assets/generate-posts-report.png)
+![genera rapporto](assets/generate-posts-report.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non è presente alcun sito community, accertatevi che  Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
+Se non sono elencati siti della community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
 
-### I report non vengono visualizzati nell&#39;istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
+### I rapporti non vengono visualizzati nell’istanza di authoring di AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell&#39;istanza di AEM Author, controllate se sono disponibili personalizzazioni, ad esempio la mappatura URL sull&#39;istanza di Publish. Se la mappatura URL viene effettuata solo sull&#39;istanza AEM Publish del sito community, accertatevi che lo stesso sia stato configurato nell&#39;istanza AEM Author nella configurazione **Site Trend Report Social Component Factory** (Fabbrica componente social report sulle tendenze del sito).
+Se i rapporti non vengono visualizzati nell’istanza di authoring di AEM, controlla le personalizzazioni, ad esempio la mappatura degli URL sull’istanza di pubblicazione. Se la mappatura URL viene eseguita solo sull&#39;istanza di pubblicazione AEM del sito Communities, assicurati che lo stesso sia stato configurato nell&#39;istanza di authoring AEM nella configurazione **Site Trend Report Social Component Factory** .
 
 ![Mappatura URL su AEM Author](assets/sitetrend.png)
