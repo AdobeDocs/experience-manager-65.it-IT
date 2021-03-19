@@ -1,49 +1,49 @@
 ---
-title: Gestione delle richieste GDPR per la AEM Foundation
-seo-title: Gestione delle richieste GDPR per la AEM Foundation
-description: 'null'
+title: Gestione delle richieste RGPD per la AEM Foundation
+seo-title: Gestione delle richieste RGPD per la AEM Foundation
+description: Gestione delle richieste RGPD per la AEM Foundation
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '443'
 ht-degree: 6%
 
 ---
 
 
-# Gestione delle richieste GDPR per AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste RGPD per AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Il GDPR è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come GDPR, CCPA ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come RGPD, CCPA, ecc.
 
-## Supporto GDPR di AEM Foundation {#aem-foundation-gdpr-support}
+## Supporto per il RGPD di AEM Foundation {#aem-foundation-gdpr-support}
 
-A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo Utente. Di conseguenza, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e eliminazione del GDPR.
+A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo utente. Pertanto, le informazioni contenute in questo articolo si occupano principalmente di come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e cancellazione RGPD.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
 ### Passaggi manuali {#manual-steps}
 
-1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Impostazioni - Protezione - Utenti]** o visitando direttamente `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Apri la console di amministrazione utente navigando su **[!UICONTROL Impostazioni - Sicurezza - Utenti]** o direttamente su `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
-1. Quindi, cercate l’utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
+1. Quindi, cerca l&#39;utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
 
-   ![usersearch](assets/usersearch.png)
+   ![ricerca utente](assets/usersearch.png)
 
-1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]** .
 
    ![userprofile_small](assets/userprofile_small.png)
 
 ### API HTTP {#http-api}
 
-Come già detto,  Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
+Come accennato, Adobe fornisce API per l’accesso ai dati utente, al fine di facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
 
 **API UserProperties**
 
@@ -53,7 +53,7 @@ curl -u user:password http://localhost:4502/libs/granite/security/search/profile
 
 **API Sling**
 
-*Individuazione della home page dell&#39;utente:*
+*Individuazione della home utente:*
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -72,28 +72,28 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Disattivazione di un utente ed eliminazione dei profili associati {#disabling-a-user-and-deleting-the-associated-profiles}
+## Disabilitazione di un utente ed eliminazione dei profili associati {#disabling-a-user-and-deleting-the-associated-profiles}
 
 ### Disattiva utente {#disable-user}
 
-1. Aprite la console Amministrazione utente ed effettuate la ricerca dell’utente in questione, come descritto sopra.
-1. Passate il puntatore del mouse sull’utente e fate clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
+1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
+1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione . Il profilo diventa grigio e indica che è selezionato.
 
 1. Premere il pulsante Disattiva nel menu superiore per disattivare l&#39;utente:
 
    ![userdisable](assets/userdisable.png)
 
-1. Infine, confermate l’azione:
+1. Infine, conferma l’azione:
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L&#39;interfaccia utente indica quindi che l&#39;utente è stato disattivato in grigio e aggiunge un blocco alla scheda del profilo:
+   L’interfaccia utente indica quindi che l’utente è stato disattivato disattivando la visualizzazione in grigio e aggiungendo un blocco alla scheda del profilo:
 
-   ![disableuser](assets/disableduser.png)
+   ![disabilitato](assets/disableduser.png)
 
 ### Elimina informazioni profilo utente {#delete-user-profile-information}
 
-1. Accedete al CRXDE Lite , quindi cercate `[!UICONTROL userId]`:
+1. Accedi a CRXDE Lite, quindi cerca il `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -101,9 +101,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
+1. Elimina i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
 
-   1. Profilo privato predefinito in `[!UICONTROL /profile]`
+   1. Il profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
@@ -112,14 +112,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
-* *Individuazione della home page dell&#39;utente*
+* *Esplorazione della home utente*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Disattivazione dell&#39;utente*
+* *Disabilitazione dell&#39;utente*
 
 Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 
@@ -129,7 +129,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Eliminazione dei profili utente*
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione dell&#39;account e dalle posizioni note del nodo del profilo casella:
+Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione account e dalle posizioni note dei nodi del profilo predefinite:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
