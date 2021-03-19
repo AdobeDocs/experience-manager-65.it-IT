@@ -1,37 +1,38 @@
 ---
-title: Usa pacchetto dimostrativo per informazioni approfondite sulle risorse
-description: Utilizzate il pacchetto demo per abilitare  Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina Web.
+title: Usa il pacchetto dimostrativo per Asset Insights
+description: Utilizza il pacchetto demo per abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web.
 contentOwner: AG
+role: Business Practices, amministratore
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 0%
+source-wordcount: '163'
+ht-degree: 2%
 
 ---
 
 
-# Usa pacchetto dimostrativo per informazioni sulle risorse {#using-demo-package-for-asset-insights}
+# Usa il pacchetto dimostrativo per Asset Insights {#using-demo-package-for-asset-insights}
 
-Utilizzando il pacchetto demo, puoi abilitare  Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina Web di esempio.
+Utilizzando il pacchetto demo, puoi abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
 
-## [!DNL Use Experience Manager Assets] Approfondimenti con una pagina Web di esempio   {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Informazioni approfondite con una pagina web di esempio   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configura approfondimenti risorse seguendo le istruzioni riportate in [Configurazione di approfondimenti risorse](configure-asset-insights.md).
-1. Scaricate il pacchetto di risorse di esempio dal basso e installate il pacchetto da CRXDE package manager.
+1. Configura Asset Insights seguendo le istruzioni disponibili in [Configurazione di Asset Insights](configure-asset-insights.md).
+1. Scarica il pacchetto di risorse di esempio da qui e installa il pacchetto da CRXDE package manager.
 
    [Ottieni file](assets/insightsdemo.zip)
 
-1. Scaricate il file ZIP contenente la pagina Web di esempio dal seguente elenco ed estraetelo nel file system locale.
+1. Scarica il file ZIP contenente la pagina web di esempio da qui sotto ed estrai sul tuo file system locale.
 
    [Ottieni file](assets/demosite.zip)
 
-1. Fate clic sulla pagina Web per aprirla nel browser.
+1. Fare clic sulla pagina Web per aprirla nel browser Web.
 
    >[!CAUTION]
    >
-   >Pagina Web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione in un&#39;altra posizione, cambiare l&#39;indirizzo del server da localhost all&#39;indirizzo del server nel contenuto HTML della pagina Web.
+   >La pagina web è configurata per caricare la risorsa dal server localhost . Nel caso in cui il server sia in esecuzione in un altro punto, cambia l&#39;indirizzo del server da localhost a indirizzo del server nel contenuto HTML della pagina web.
 
    >[!NOTE]
    >
-   >La pagina Web esterna può trovarsi in [!DNL Experience Manager] stessa.
+   >La pagina Web esterna può trovarsi in [!DNL Experience Manager].
