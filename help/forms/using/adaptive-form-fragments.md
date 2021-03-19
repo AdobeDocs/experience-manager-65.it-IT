@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad ese
 
 ### Crea frammento da zero {#create-fragment-from-scratch}
 
-1. Accedi all’istanza di authoring di AEM Forms all’indirizzo https://[*hostname*]:[*port*]/aem/forms.html.
+1. Accedi all&#39;istanza di authoring di AEM Forms all&#39;indirizzo https://[*hostname*]:[*port*]/aem/forms.html.
 1. Fai clic su **Crea > Frammento di modulo adattivo**.
 1. Specifica titolo, nome, descrizione e tag per il frammento.
 
@@ -60,7 +61,7 @@ I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad ese
 
 1. Fai clic su **Crea**, quindi fai clic su **Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica.
 
-In modalità di modifica, puoi trascinare nel frammento qualsiasi componente di modulo adattivo dalla barra laterale di AEM. Per informazioni sui componenti per moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
+In modalità di modifica, puoi trascinare nel frammento qualsiasi componente del modulo adattivo dalla barra laterale AEM. Per informazioni sui componenti per moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md).
 
 Inoltre, se come modello di modulo per il frammento è stato selezionato uno schema XML o un modello di modulo XDP, in Content Finder verrà visualizzata una nuova scheda con la gerarchia del modello di modulo. Consente di trascinare elementi del modello di modulo sul frammento. Gli elementi aggiunti al modello di modulo vengono convertiti in componenti modulo mantenendo le proprietà originali dell&#39;XDP o XSD associato.
 
@@ -117,14 +118,14 @@ Qualsiasi frammento inserito nei moduli adattivi viene visualizzato come immagin
 
 Per visualizzare frammenti completi nei moduli, effettua le seguenti operazioni:
 
-1. Vai alla pagina di configurazione della console web AEM all&#39;indirizzo https:[*host*]:[*port*]/system/console/configMgr.
+1. Vai AEM pagina di configurazione della console Web all&#39;indirizzo https:[*host*]:[*port*]/system/console/configMgr.
 
 1. Cerca e fai clic su **[!UICONTROL Configurazione canale web per modulo adattivo e comunicazione interattiva]** per aprirlo in modalità di modifica.
 1. Disattiva la casella di controllo **[!UICONTROL Abilita segnaposto al posto del frammento]** per mostrare frammenti completi anziché l&#39;immagine segnaposto.
 
 ### Inserire un frammento in un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}
 
-I frammenti di modulo adattivo creati vengono visualizzati nella scheda Frammenti modulo adattivi di Content Finder di AEM. Per inserire un frammento di modulo adattivo in un modulo adattivo:
+I frammenti di modulo adattivo creati vengono visualizzati nella scheda Frammenti modulo adattivi di Content Finder AEM. Per inserire un frammento di modulo adattivo in un modulo adattivo:
 
 1. Apri il modulo adattivo in modalità di modifica in cui desideri inserire un frammento di modulo adattivo.
 1. Fai clic su **Risorse** ![risorse-browser](assets/assets-browser.png) nella barra laterale. Nel browser delle risorse, seleziona **Frammenti modulo adattivo** dal menu a discesa.
@@ -165,11 +166,11 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
 
 >[!NOTE]
 >
->È inoltre possibile trascinare un frammento di modulo adattivo associato dalla libreria Frammenti di modulo adattivo in Content Finder di AEM e fornire il riferimento di binding corretto dalla finestra di dialogo Modifica componente del pannello Frammento di modulo adattivo.
+>È inoltre possibile trascinare un frammento di modulo adattivo associato dalla libreria Frammenti di modulo adattivo in AEM Content Finder e fornire il riferimento di binding corretto dalla finestra di dialogo Modifica componente del pannello Frammento di modulo adattivo.
 
 ## Gestire i frammenti {#manage-fragments}
 
-Puoi eseguire diverse operazioni sui frammenti di modulo adattivi utilizzando l’interfaccia utente di AEM Forms.
+È possibile eseguire diverse operazioni sui frammenti di modulo adattivi utilizzando l’interfaccia utente di AEM Forms.
 
 1. Passa a `https://[hostname]:'port'/aem/forms.html`.
 
@@ -234,14 +235,14 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 * In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante verrà automaticamente associato al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante sarà associato alla radice dello schema.
 * Quando si crea un frammento di modulo adattivo, viene creato un nodo di frammento, simile al nodo guideContainer per un modulo adattivo, in CRXDe Lite.
 * Un frammento in un modulo adattivo che utilizza un modello dati modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
-* I frammenti di modulo adattivo sono disponibili per l’uso tramite la scheda Frammenti modulo adattivi in Content Finder di AEM.
+* I frammenti di modulo adattivo sono disponibili per l’uso tramite la scheda Frammenti modulo adattivi in Content Finder AEM.
 * Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto se inserito tramite riferimento o incorporato in un modulo adattivo.
 * Non è possibile modificare un frammento di modulo adattivo, inserito mediante riferimento, direttamente da un modulo adattivo. Per modificare, è necessario modificare il frammento di modulo adattivo autonomo o incorporarlo nel modulo adattivo.
 * Quando si pubblica un modulo adattivo, è necessario pubblicare i frammenti di modulo adattivo autonomo inseriti mediante riferimento nel modulo adattivo.
 * Quando si ripubblica un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, non è consigliabile utilizzare il componente Verifica in un frammento di modulo adattivo.
 * (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungi la seguente voce al file /private/etc/hosts:
-   `127.0.0.1 <Host machine>` **Macchina** host: Il computer Apple Mac su cui viene implementato AEM Forms.
+   `127.0.0.1 <Host machine>` **Macchina** host: Il computer Mac Apple su cui viene distribuito AEM Forms.
 
 ## Frammenti di riferimento {#reference-fragments}
 
