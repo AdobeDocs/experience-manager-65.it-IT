@@ -1,7 +1,7 @@
 ---
-title: Sviluppo e Page Diff
-seo-title: Sviluppo e Page Diff
-description: 'null'
+title: Sviluppo e differenze tra pagine
+seo-title: Sviluppo e differenze tra pagine
+description: Sviluppo e differenze tra pagine
 seo-description: 'null'
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
@@ -11,41 +11,41 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 10%
+source-wordcount: '365'
+ht-degree: 11%
 
 ---
 
 
-# Sviluppo e Page Diff{#developing-and-page-diff}
+# Sviluppo e differenze tra pagine{#developing-and-page-diff}
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente, affiancando le differenze evidenziate.
+La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente affiancata alle differenze evidenziate.
 
-Le differenze di pagina consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, vedere [Page Diff](/help/sites-authoring/page-diff.md).
+Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Page Diff](/help/sites-authoring/page-diff.md).
 
 ## Dettagli operazione {#operation-details}
 
-Quando si confrontano le versioni di una pagina, la versione precedente che l&#39;utente desidera confrontare viene ricreata AEM in background per facilitare la diff. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-developing/pagediff.md#operation-details).
+Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata da AEM in background per facilitare le differenze. È necessario per poter eseguire il rendering del contenuto [per un confronto affiancato](/help/sites-developing/pagediff.md#operation-details).
 
-Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
+Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l’archivio, ad esempio in CRX DE Lite, vedrebbe queste versioni ricreati all’interno della struttura del contenuto.
 
-Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da confrontare viene ricreata nel seguente percorso:
+Quando si confronta il contenuto, l’intera struttura fino alla pagina da confrontare viene ricreata nella posizione seguente:
 
 `/tmp/versionhistory/`
 
-Un&#39;attività di pulizia viene eseguita automaticamente per ripulire il contenuto temporaneo.
+Un’attività di pulizia viene eseguita automaticamente per pulire questo contenuto temporaneo.
 
 ## Autorizzazioni  {#permissions}
 
-Precedentemente, nell&#39;interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la AEM diffusione (ad esempio per utilizzare la funzione `cq:text` tag lib o per integrare il servizio `DiffService` OSGi nei componenti). Questo non è più necessario per la nuova funzione diff, poiché la diff si verifica sul lato client tramite il confronto DOM.
+In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione AEM (ad esempio, per usare la libreria di tag `cq:text` o per integrare il servizio `DiffService` OSGi nei componenti). Questa funzione non è più necessaria per la nuova funzione di confronto delle differenze, in quanto si verifica sul lato client tramite il confronto DOM.
 
 Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 
-* Questa funzione utilizza classi CSS che non hanno un nome con spazio sul prodotto AEM. Se nella pagina sono incluse altre classi CSS personalizzate o classi CSS di terze parti con gli stessi nomi, la visualizzazione della diff potrebbe essere interessata.
+* Questa funzione utilizza classi CSS che non hanno nomi separati nel Prodotto AEM. Se nella pagina sono incluse altre classi CSS personalizzate o classi CSS di terze parti con gli stessi nomi, la visualizzazione del confronto potrebbe essere interessata.
 
    * `html-added`
    * `html-removed`
@@ -54,8 +54,8 @@ Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Poiché la diff è lato client ed è eseguita al caricamento della pagina, eventuali modifiche al DOM dopo l&#39;esecuzione del servizio diff lato client non verranno prese in considerazione. Ciò può incidere
+* Poiché la differenza è lato client ed è eseguita al caricamento della pagina, non verranno prese in considerazione eventuali modifiche al DOM dopo l’esecuzione del servizio di diff lato client. Ciò può influire
 
-   * Componenti che utilizzano AJAX per includere il contenuto
+   * Componenti che utilizzano AJAX per includere i contenuti
    * Applicazioni a pagina singola
-   * Componenti basati su JavaScript che modificano il DOM in base all’interazione dell’utente.
+   * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.
