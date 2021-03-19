@@ -1,8 +1,8 @@
 ---
 title: Installazione e configurazione di Designer
 seo-title: Installazione e configurazione di Designer
-description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Scoprite come installare Designer autonomo.  '
-seo-description: 'Designer è disponibile come programma di installazione autonomo e viene fornito anche in bundle con Workbench. Scoprite come installare Designer autonomo.  '
+description: 'Designer è disponibile come programma di installazione autonomo e fornito in bundle con Workbench. Scopri come installare Designer autonomo.  '
+seo-description: 'Designer è disponibile come programma di installazione autonomo e fornito in bundle con Workbench. Scopri come installare Designer autonomo.  '
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,11 +10,12 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 080885a4fddbbce52968d3c324d6499ff1036de2
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 48%
+source-wordcount: '214'
+ht-degree: 49%
 
 ---
 
@@ -23,17 +24,17 @@ ht-degree: 48%
 
 ## Prerequisiti {#pre-requisites}
 
- programma di installazione di AEM Forms Designer richiede la versione a 32 bit del pacchetto runtime redistribuibile [Visual C++ 2012](https://support.microsoft.com/it-it/help/2977003/the-latest-supported-visual-c-downloads) e del pacchetto runtime redistribuibile [Visual C++ 2013](https://support.microsoft.com/it-it/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assicurati che tali Redistributable Runtime Package siano installati prima di avviare l’installazione.
+Il programma di installazione di AEM Forms Designer richiede la versione a 32 bit di [pacchetto runtime ridistribuibile di Visual C++ 2012](https://support.microsoft.com/it-it/help/2977003/the-latest-supported-visual-c-downloads) e [pacchetto runtime ridistribuibile di Visual C++ 2013](https://support.microsoft.com/it-it/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assicurati che tali Redistributable Runtime Package siano installati prima di avviare l’installazione.
 
-## Installazione di Designer {#install-designer}
+## Installa Designer {#install-designer}
 
-Designer è disponibile come programma di installazione autonomo ed è inoltre fornito con Workbench. Se si utilizza un programma di installazione autonomo per Designer, effettuare le seguenti operazioni:
+Designer è disponibile come programma di installazione autonomo ed è fornito in bundle con WorkBench. Se si utilizza un programma di installazione autonomo per Designer, effettuare le seguenti operazioni:
 
-1. Per scaricare il programma di installazione di Designer, contattare  Adobe di supporto.
+1. Per scaricare il programma di installazione di Designer, contattare il supporto Adobe.
 
    >[!NOTE]
    >
-   >Se si dispone di una versione precedente di Designer installata, disinstallare la versione precedente prima di continuare.
+   >Se si dispone di una versione precedente di Designer installata, disinstallare la versione precedente prima di procedere.
 
 1. Avviare il programma di installazione di Designer facendo doppio clic su setup.exe.
 1. Fornire i propri dettagli e il numero di serie nella schermata di personalizzazione.
