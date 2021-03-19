@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 39%
+ht-degree: 42%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 39%
 + [Informazioni su DAM](assets.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
 + [Accessibilità in [!DNL Assets]](accessibility.md)
-+ Utilizzare Experience Manager Assets {#using}
++ Utilizzare risorse di Experience Manager {#using}
    + [[!DNL Assets] esperienza home page](assets-home-page.md)
    + [Cercare risorse digitali](search-assets.md)
    + [Utilizzare i metadati delle risorse](metadata.md)
@@ -30,7 +31,7 @@ ht-degree: 39%
    + [ [!DNL Adobe Stock] Utilizzare le risorse in Assets](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
-   + [Tag avanzati migliorati](enhanced-smart-tags.md)
+   + [Sono stati migliorati i tag avanzati](enhanced-smart-tags.md)
    + [Flusso di attività nella timeline](activity-stream.md)
    + [Elabora risorse](assets-workflow.md)
    + [Aggiungi mappe immagine](image-maps.md)
@@ -42,7 +43,7 @@ ht-degree: 39%
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
+   + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
    + [Accessibilità in Dynamic Media](accessibility-dm.md)
    + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
@@ -55,7 +56,7 @@ ht-degree: 39%
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Aggiunta di funzionalità Dynamic Media alla pagina](scene7.md)
+   + [Aggiunta di funzionalità di Dynamic Media alla pagina](scene7.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
@@ -115,11 +116,11 @@ ht-degree: 39%
    + [Configurare le restrizioni di caricamento](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integrazione](aem-cc-integration-best-practices.md)
    + [Integra con [!DNL InDesign Server]](indesign.md)
-   + [Digital Rights Management nelle risorse](drm.md)
+   + [Digital Rights Management delle attività](drm.md)
    + [Utilizza il pacchetto dimostrativo per informazioni sulle risorse](use-demo-package-for-asset-insights.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
    + [Best practice per monitorare le risorse](assets-monitoring-best-practices.md)
-   + [Supporto di Camera Raw](camera-raw.md)
+   + [Supporto Camera Raw](camera-raw.md)
    + [Rileva il tipo MIME di risorse utilizzando Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Libreria di transcodifica delle immagini](imaging-transcoding-library.md)
    + [Multi-tenancy per raccolte, snippet e modelli di snippet](multi-tenancy.md)
