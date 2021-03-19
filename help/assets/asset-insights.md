@@ -1,11 +1,12 @@
 ---
 title: Informazioni sulla risorsa
-description: Scopri come la funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo di immagini utilizzate in siti Web di terze parti, campagne di marketing e  Adobe  soluzioni creative.
+description: Scopri come la funzione Asset Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
+role: Professionista
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 7%
 
 ---
@@ -13,42 +14,42 @@ ht-degree: 7%
 
 # Informazioni sulla risorsa {#asset-insights}
 
-La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo di immagini utilizzate in siti Web di terze parti, campagne di marketing e  Adobi  soluzioni creative. Consente di ricavare informazioni sulle loro prestazioni e popolarità.
+La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe. Aiuta a trarre informazioni sulle loro prestazioni e popolarità.
 
-[!DNL Assets] Le informazioni approfondite acquisiscono i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, su cui viene fatto clic e le impression (numero di volte in cui un’immagine viene caricata sul sito Web). Assegnano dei punteggi alle immagini in base a queste statistiche. Puoi usare le statistiche sui punteggi e sulle prestazioni per selezionare le immagini più comuni da includere nei cataloghi, nelle campagne di marketing e così via. È anche possibile formulare criteri per l&#39;archiviazione e il rinnovo delle licenze basati su tali statistiche.
+[!DNL Assets] Insights acquisisce i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, su cui è stato fatto clic e le impression (numero di volte in cui un’immagine viene caricata sul sito web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più comuni da includere nei cataloghi, nelle campagne di marketing e così via. Puoi anche formulare politiche di archiviazione e rinnovo delle licenze basate su queste statistiche.
 
-Per [!DNL Assets] Informazioni dettagliate per acquisire le statistiche di utilizzo per le immagini di un sito Web, è necessario includere il codice da incorporare per l&#39;immagine nel codice del sito Web.
+Affinché [!DNL Assets] Informazioni utili per acquisire le statistiche di utilizzo per le immagini da un sito web, è necessario includere il codice di incorporamento per l’immagine nel codice del sito web.
 
-Per consentire a Informazioni sulle risorse di visualizzare le statistiche di utilizzo per le risorse, configurate prima la funzione per recuperare i dati di reporting da  Adobe Analytics. Per informazioni dettagliate, consultate [Configurare le informazioni sulle risorse](/help/assets/configure-asset-insights.md).
+Per consentire a Asset Insights di visualizzare le statistiche di utilizzo per le risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per informazioni dettagliate, consulta [Configurare Asset Insights](/help/assets/configure-asset-insights.md).
 
 >[!NOTE]
 >
->Le informazioni approfondite sono supportate e fornite solo per le immagini.
+>Gli approfondimenti sono supportati e forniti solo per le immagini.
 
-## Visualizzare le statistiche per un&#39;immagine {#viewing-statistics-for-an-image}
+## Visualizzare le statistiche di un&#39;immagine {#viewing-statistics-for-an-image}
 
-Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
+Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
-1. Nell&#39;interfaccia utente [!DNL Assets], selezionare l&#39;immagine e fare clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
-1. Dalla pagina Proprietà, fare clic sulla scheda **[!UICONTROL Insights]**.
-1. Rivedete i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Insights]**. La sezione **[!UICONTROL Punteggio]** descrive il totale delle risorse utilizzate e delle prestazioni di una risorsa.
+1. Dall’ [!DNL Assets] interfaccia utente (UI), seleziona l’immagine e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Dalla pagina Proprietà, fai clic sulla scheda **[!UICONTROL Insights]** .
+1. Controlla i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Informazioni]** . La sezione **[!UICONTROL Punteggio]** descrive l’utilizzo totale delle risorse e le origini delle prestazioni di una risorsa .
 
-   La valutazione dell&#39;utilizzo descrive il numero di volte in cui la risorsa viene utilizzata in varie soluzioni.
+   Il punteggio di utilizzo descrive il numero di volte in cui la risorsa viene utilizzata in varie soluzioni.
 
-   Il punteggio **[!UICONTROL Impression]** indica quante volte la risorsa viene caricata sul sito Web. Il numero visualizzato in **[!UICONTROL Clic]** indica quante volte si fa clic sulla risorsa.
+   Il punteggio **[!UICONTROL Impression]** è il numero di volte in cui la risorsa viene caricata sul sito web. Il numero visualizzato in **[!UICONTROL Clic]** indica il numero di volte in cui la risorsa viene selezionata.
 
-1. Rivedete la sezione **[!UICONTROL Statistiche di utilizzo]** per sapere di quali entità faceva parte la risorsa e quali soluzioni creative ne hanno recentemente utilizzato la risorsa. Maggiore è l’utilizzo, maggiori saranno le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le intestazioni seguenti:
+1. Consulta la sezione **[!UICONTROL Statistiche di utilizzo]** per sapere di quali entità faceva parte la risorsa e di quali soluzioni creative l’ha utilizzata di recente. Maggiore è l’utilizzo, maggiori sono le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le seguenti intestazioni:
 
    * **Risorsa**: Il numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta
-   * **Web e dispositivi mobili**: Il numero di volte in cui la risorsa faceva parte di siti Web e app
-   * **Social**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come  Adobe Social e  Adobe Campaign
-   * **E-mail**: Numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail
+   * **Web e dispositivi mobili**: Il numero di volte in cui la risorsa faceva parte di siti web e app
+   * **Social**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come Adobe Social e Adobe Campaign
+   * **E-mail**: Il numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Poiché la funzione Asset Insights in genere raccoglie i dati delle soluzioni da  Adobe Analytics in modo periodico, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale i dati vengono visualizzati dipende dalla pianificazione dell&#39;operazione di recupero eseguita da Asset Insights per recuperare i dati Analytics.
+   >Poiché la funzione Asset Insights in genere recupera periodicamente i dati delle soluzioni da Adobe Analytics, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Asset Insights per il recupero dei dati di Analytics.
 
 1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un arco di tempo, seleziona il periodo nella sezione **[!UICONTROL Statistiche di prestazioni]**. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
 
@@ -56,27 +57,27 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
    >[!NOTE]
    >
-   >A differenza dei dati nella sezione Soluzioni, nella sezione Statistiche prestazioni vengono visualizzati i dati più recenti.
+   >A differenza dei dati nella sezione Soluzioni , la sezione Statistiche di prestazioni visualizza i dati più recenti.
 
-1. Per ottenere il codice da incorporare per la risorsa che includete nei siti Web per ottenere i dati sulle prestazioni, fate clic su **[!UICONTROL Get Embed Code]** sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare nelle pagine Web di terze parti, vedere [Utilizzo di Page Tracker e codice da incorporare nelle pagine Web](/help/assets/use-page-tracker.md).
+1. Per ottenere il codice di incorporamento della risorsa inclusa nei siti web per ottenere i dati sulle prestazioni, fai clic su **[!UICONTROL Ottieni codice di incorporamento]** sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare in pagine web di terze parti, consulta [Utilizzo di tracciamento pagina e codice da incorporare nelle pagine web](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
-## Visualizzare le statistiche aggregate per le immagini {#viewing-aggregate-statistics-for-images}
+## Visualizza le statistiche aggregate per le immagini {#viewing-aggregate-statistics-for-images}
 
 Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
-1. Nell&#39;interfaccia utente di [!DNL Assets], andate alla cartella contenente le risorse per le quali desiderate visualizzare le informazioni.
-1. Fare clic su Layout dalla barra degli strumenti, quindi scegliere **[!UICONTROL Visualizzazione approfondimenti]**.
+1. Nell’interfaccia utente di [!DNL Assets] , individua la cartella contenente le risorse di cui desideri visualizzare le informazioni.
+1. Fai clic su Layout dalla barra degli strumenti, quindi scegli **[!UICONTROL Visualizzazione approfondimenti]**.
 1. Nella pagina vengono visualizzati i punteggi di utilizzo delle risorse. Confronta le valutazioni delle varie risorse e trai informazioni approfondite.
 
-## Pianificare il processo in background {#scheduling-background-job}
+## Pianifica processo in background {#scheduling-background-job}
 
-Asset Insights recupera i dati di utilizzo delle risorse dalle suite di rapporti di  Adobe Analytics in modo periodico. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, potete modificare sia la frequenza che l&#39;ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
+Asset Insights recupera periodicamente i dati di utilizzo per le risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, puoi modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
 
-1. Fare clic sul logo [!DNL Experience Manager] e passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
-1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
+1. Fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
-1. Specificate la frequenza di pianificazione desiderata e l&#39;ora di inizio del processo nell&#39;espressione utilità di pianificazione delle proprietà. Salva le modifiche.
+1. Specifica la frequenza di pianificazione desiderata e l’ora di inizio del processo nell’espressione di pianificazione delle proprietà. Salva le modifiche.
