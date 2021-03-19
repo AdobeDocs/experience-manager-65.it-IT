@@ -1,60 +1,61 @@
 ---
 title: Stile in linea dei componenti per moduli adattivi
-seo-title: Proprietà CSS in linea per componenti modulo adattivi
-description: Sebbene sia possibile applicare stili personalizzati a un modulo adattivo, è anche possibile applicare proprietà CSS in linea ai singoli componenti di un modulo adattivo.
-seo-description: Sebbene sia possibile applicare stili personalizzati a un modulo adattivo, è anche possibile applicare proprietà CSS in linea ai singoli componenti di un modulo adattivo.
+seo-title: Proprietà CSS in linea per i componenti modulo adattivo
+description: Mentre è possibile applicare stili personalizzati su un modulo adattivo, è anche possibile applicare proprietà CSS in linea sui singoli componenti di un modulo adattivo.
+seo-description: Mentre è possibile applicare stili personalizzati su un modulo adattivo, è anche possibile applicare proprietà CSS in linea sui singoli componenti di un modulo adattivo.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
+feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 3%
 
 ---
 
 
-# Stile in linea dei componenti per modulo adattivo {#inline-styling-of-adaptive-form-components}
+# Stile in linea dei componenti per moduli adattivi {#inline-styling-of-adaptive-form-components}
 
-È possibile definire l&#39;aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando l&#39;editor di temi [editor di temi](../../forms/using/themes.md). Inoltre, potete applicare stili CSS in linea a singoli componenti di moduli adattivi e visualizzare rapidamente l&#39;anteprima delle modifiche. Gli stili in linea sostituiscono lo stile fornito nel tema.
+È possibile definire l’aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando [editor di temi](../../forms/using/themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti dei moduli adattivi e visualizzare in anteprima le modifiche al volo. Gli stili in linea sostituiscono lo stile fornito nel tema .
 
 ## Applica proprietà CSS in linea {#apply-inline-css-properties}
 
 Per aggiungere stili in linea a un componente:
 
-1. Aprire il modulo nell&#39;editor del modulo e passare alla modalità di stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina, toccate ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Selezionate un componente nella pagina e toccate il pulsante di modifica ![pulsante di modifica](assets/edit-button.png). Le proprietà di stile vengono aperte nella barra laterale.
+1. Aprire il modulo nell’editor moduli e modificare la modalità in modalità stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina, tocca ![canvas-drop-down](assets/canvas-drop-down.png) > **Stile**.
+1. Seleziona un componente nella pagina e tocca il pulsante di modifica ![edit-button](assets/edit-button.png). Proprietà di stile aperte nella barra laterale.
 
-   È inoltre possibile selezionare componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura gerarchica del modulo è disponibile come oggetti modulo nella barra laterale.
+   È inoltre possibile selezionare i componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura gerarchica del modulo è disponibile come Oggetti modulo nella barra laterale.
 
-   Potete anche selezionare un componente dalla barra laterale. In modalità Stile è possibile visualizzare i componenti elencati in Oggetti modulo. Tuttavia, gli oggetti modulo elencati nella barra laterale elencano componenti quali campi e pannelli. I campi e i pannelli sono componenti generici che possono contenere componenti quali caselle di testo e pulsanti di scelta.
+   Puoi anche selezionare un componente dalla barra laterale. In modalità Stile è possibile visualizzare i componenti elencati in Oggetti modulo. Tuttavia, l’elenco Oggetti modulo nella barra laterale elenca i componenti, ad esempio campi e pannelli. I campi e i pannelli sono componenti generici che possono contenere componenti quali caselle di testo e pulsanti di scelta.
 
-   Quando selezionate un componente dalla barra laterale, vengono elencati tutti i componenti secondari e le proprietà del componente selezionato. È possibile selezionare uno specifico sottocomponente e formattarlo.
+   Quando selezioni un componente dalla barra laterale, vengono visualizzati tutti i sottocomponenti elencati e le proprietà del componente selezionato. Puoi selezionare un componente secondario specifico e formattarlo.
 
-1. Fate clic su una scheda nella barra laterale per specificare le proprietà CSS. È possibile specificare proprietà quali:
+1. Fai clic su una scheda nella barra laterale per specificare le proprietà CSS. Puoi specificare proprietà quali:
 
-   * Dimension e posizione (impostazione visualizzazione, spaziatura, altezza, larghezza, margine, posizione, indice z, float, cancellazione, overflow)
-   * Testo (famiglia di font, spessore, colore, dimensione, altezza e allineamento)
+   * Dimension e posizione (impostazione di visualizzazione, spaziatura, altezza, larghezza, margine, posizione, indice z, float, trasparente, overflow)
+   * Testo (famiglia di font, peso, colore, dimensione, altezza riga e allineamento)
    * Sfondo (immagine e sfumatura, colore di sfondo)
-   * Bordo (larghezza, stile, colore, raggio)
-   * Effetti (Ombra, Opacità)
-   * Avanzate (consente di scrivere CSS personalizzato per il componente)
+   * Bordo (Larghezza, Stile, Colore, Raggio)
+   * Effetti (ombreggiatura, opacità)
+   * Avanzate (consente di scrivere CSS personalizzati per il componente)
 
-1. Allo stesso modo, potete applicare stili ad altre parti di un componente, ad esempio Widget, Didascalia e Aiuto.
-1. Toccate **Fine** per confermare le modifiche oppure **Annulla** per annullare le modifiche.
+1. Allo stesso modo, è possibile applicare gli stili ad altre parti di un componente, ad esempio Widget, Caption e Help.
+1. Tocca **Fine** per confermare le modifiche o **Annulla** per eliminarle.
 
 ## Esempio: stili in linea per un componente campo {#example-inline-styles-for-a-field-component}
 
 Le immagini seguenti rappresentano un campo di testo prima e dopo l’applicazione degli stili in linea.
 
-![Componente casella di testo prima dell&#39;applicazione dello stile in linea](assets/no-style.png)
+![Componente casella di testo prima dell’applicazione dello stile in linea](assets/no-style.png)
 
-Componente casella di testo prima dell&#39;applicazione delle proprietà di stile in linea
+Componente casella di testo prima di applicare proprietà di stile in linea
 
-Osservate la modifica nello stile della casella di testo come illustrato nell&#39;immagine seguente dopo l&#39;applicazione delle seguenti proprietà CSS.
+Osserva la modifica nello stile della casella di testo come mostrato nell’immagine seguente dopo aver applicato le seguenti proprietà CSS.
 
 <table>
  <tbody>
@@ -67,43 +68,43 @@ Osservate la modifica nello stile della casella di testo come illustrato nell&#3
   <tr>
    <td><p>Campo</p> </td>
    <td><p>border</p> </td>
-   <td><p>Larghezza bordo = 2px</p> <p>Stile bordo=Uniforme</p> <p>Colore del bordo=#1111</p> </td>
-   <td><p>Crea un bordo largo 2 px nero intorno al campo.</p> </td>
+   <td><p>Larghezza bordo =2 px</p> <p>Stile bordo=Uniforme</p> <p>Colore bordo=#1111</p> </td>
+   <td><p>Crea un bordo largo 2 px nero intorno al campo</p> </td>
   </tr>
   <tr>
    <td><p>Casella di testo</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Cambia il colore di sfondo in CornflowerBlue (#6495ED)</p> <p>Nota: È possibile specificare un nome di colore o il relativo codice esadecimale nel campo del valore.</p> </td>
+   <td><p>Cambia il colore di sfondo in CornflowerBlue (#6495ED)</p> <p>Nota: Nel campo del valore è possibile specificare un nome di colore o il relativo codice esadecimale.</p> </td>
   </tr>
   <tr>
    <td><p>Etichetta</p> </td>
    <td><p>Dimensioni e posizione &gt; larghezza</p> </td>
    <td><p>100 px</p> </td>
-   <td><p>Corregge la larghezza di 100 px per l'etichetta</p> </td>
+   <td><p>Corregge la larghezza di 100 px per l’etichetta</p> </td>
   </tr>
   <tr>
    <td>Icona guida campo</td>
    <td>Testo &gt; Colore font</td>
    <td>#2ECC40</td>
-   <td>Cambia il colore della faccia dell’icona Aiuto.</td>
+   <td>Cambia il colore della faccia dell'icona della guida.</td>
   </tr>
   <tr>
    <td><p>Descrizione lunga</p> </td>
    <td><p>text-align</p> </td>
    <td><p>center</p> </td>
-   <td><p>Allinea la descrizione lunga per l’Aiuto al centro</p> </td>
+   <td><p>Allinea al centro la descrizione lunga dell’aiuto.</p> </td>
   </tr>
  </tbody>
 </table>
 
-![Stile casella di testo dopo l&#39;applicazione dello stile in linea](assets/applied-style.png)
+![Stile della casella di testo dopo l’applicazione dello stile in linea](assets/applied-style.png)
 
-Componente casella di testo dopo l&#39;applicazione delle proprietà di stile in linea
+Componente casella di testo dopo l’applicazione delle proprietà di stile in linea
 
-Seguendo i passaggi descritti qui sopra, è possibile selezionare e formattare altri componenti, ad esempio pannelli, pulsanti di invio e pulsanti di scelta.
+Seguendo i passaggi descritti in precedenza, puoi selezionare e assegnare uno stile ad altri componenti, ad esempio pannelli, pulsanti di invio e pulsanti di scelta.
 
 >[!NOTE]
 >
->Le proprietà di stile variano in base al componente selezionato.
+>Le proprietà dello stile variano a seconda del componente selezionato.
 
