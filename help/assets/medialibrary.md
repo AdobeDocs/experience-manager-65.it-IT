@@ -1,12 +1,12 @@
 ---
-title: Libreria multimediale per la gestione delle risorse digitali.
+title: Utilizzare Media Library per la gestione di base delle risorse digitali
 description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
 role: Architetto, leader
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,6 @@ Media Library copre in generale i seguenti casi di utilizzo:
 * Esperienze video digitali create utilizzando [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API REST HTTP per operazioni headless.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ Media Library copre in generale i seguenti casi di utilizzo:
 * Comments and annotation
 -->
 
-Utilizzando Libreria multimediale puoi effettuare le seguenti attività specifiche:
+Per utilizzare la funzionalità Media Library, è possibile utilizzare l&#39;interfaccia utente predefinita [!DNL Experience Manager]. Media Library fa parte dell’ installazione di [!DNL Experience Manager Sites] e non è necessaria alcuna interfaccia o componente aggiuntivo separato. Utilizzando l’interfaccia esistente, gli utenti di Media Library possono eseguire le seguenti attività:
 
 * Crea cartelle per organizzare le risorse.
 * Carica le risorse.
