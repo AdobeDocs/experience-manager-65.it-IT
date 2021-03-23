@@ -1,8 +1,8 @@
 ---
 title: Archivio dati raccolta oggetti inattivi
 seo-title: Archivio dati raccolta oggetti inattivi
-description: Scoprite come configurare la raccolta dei dati dell'archivio dati per liberare spazio su disco.
-seo-description: Scoprite come configurare la raccolta dei dati dell'archivio dati per liberare spazio su disco.
+description: Scopri come configurare Data Store Garbage Collection per liberare spazio su disco.
+seo-description: Scopri come configurare Data Store Garbage Collection per liberare spazio su disco.
 uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 0%
@@ -21,158 +21,158 @@ ht-degree: 0%
 
 # Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
 
-Quando una risorsa WCM convenzionale viene rimossa, il riferimento al record dell&#39;archivio dati sottostante potrebbe essere rimosso dalla gerarchia dei nodi, ma il record dell&#39;archivio dati rimane inalterato. Questo record dell&#39;archivio dati senza riferimenti diventa quindi &quot;spazzatura&quot; che non deve essere conservata. Nei casi in cui esistono numerose risorse per la gestione dei rifiuti, è utile eliminarle per conservare lo spazio e ottimizzare le prestazioni di backup e manutenzione del file system.
+Quando una risorsa WCM convenzionale viene rimossa, il riferimento al record dell&#39;archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell&#39;archivio dati stesso rimane. Questo record dell&#39;archivio dati senza riferimento diventa quindi &quot;spazzatura&quot; che non deve essere conservata. Nei casi in cui esistono diverse risorse di rifiuti, è utile sbarazzarsene per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione del file system.
 
-Nella maggior parte dei casi, un&#39;applicazione WCM tende a raccogliere informazioni ma non a eliminarle con la stessa frequenza. Anche se vengono aggiunte nuove immagini, anche in sostituzione delle versioni precedenti, il sistema di controllo delle versioni conserva il vecchio e supporta il ripristino, se necessario. Pertanto, la maggior parte dei contenuti che consideriamo aggiunti al sistema è effettivamente memorizzata in modo permanente. Quindi qual è la fonte tipica di &quot;spazzatura&quot; nel repository che potremmo voler ripulire?
+Nella maggior parte dei casi, un&#39;applicazione WCM tende a raccogliere informazioni ma non a eliminarle con la stessa frequenza. Anche se vengono aggiunte nuove immagini, anche in sostituzione delle versioni precedenti, il sistema di controllo delle versioni mantiene quello vecchio e supporta il ripristino, se necessario. Pertanto, la maggior parte dei contenuti che consideriamo come aggiunta al sistema viene effettivamente conservata in modo permanente. Quindi qual è la fonte tipica di &quot;spazzatura&quot; nel deposito in cui potremmo voler ripulire?
 
-AEM utilizza il repository come archivio per una serie di attività interne e di gestione:
+AEM utilizza l’archivio come archivio per una serie di attività interne e di gestione delle risorse:
 
 * Pacchetti generati e scaricati
 * File temporanei creati per la replica di pubblicazione
 * Payload del flusso di lavoro
 * Risorse create temporaneamente durante il rendering DAM
 
-Quando uno di questi oggetti temporanei è sufficientemente grande da richiedere l&#39;archiviazione nell&#39;archivio dati e quando l&#39;oggetto alla fine smette di essere utilizzato, il record dell&#39;archivio dati stesso rimane &quot;spazzatura&quot;. In una tipica applicazione di creazione e pubblicazione WCM, l’origine principale di rifiuti di questo tipo è in genere il processo di attivazione della pubblicazione. Quando i dati vengono replicati in Pubblica, vengono raccolti per la prima volta nelle raccolte in un formato di dati efficiente denominato &quot;Durbo&quot; e memorizzati nell&#39;archivio in `/var/replication/data`. I bundle di dati sono spesso più grandi della soglia di dimensione critica per l&#39;archivio dati e vengono quindi archiviati come record dell&#39;archivio dati. Una volta completata la replica, il nodo in `/var/replication/data` viene eliminato, ma il record dell&#39;archivio dati rimane come &quot;spazzatura&quot;.
+Quando uno qualsiasi di questi oggetti temporanei è sufficientemente grande da richiedere l&#39;archiviazione nell&#39;archivio dati e quando l&#39;oggetto alla fine smette di essere utilizzato, il record dell&#39;archivio dati stesso rimane come &quot;spazzatura&quot;. In una tipica applicazione di authoring/pubblicazione WCM, la più grande fonte di rifiuti di questo tipo è comunemente il processo di attivazione di pubblicazione. Quando i dati vengono replicati in Pubblica, vengono raccolti per la prima volta nelle raccolte in un formato di dati efficiente chiamato &quot;Durbo&quot; e memorizzati nell&#39;archivio sotto `/var/replication/data`. I bundle di dati sono spesso più grandi della soglia di dimensione critica per l&#39;archivio dati e quindi vengono archiviati come record dell&#39;archivio dati. Una volta completata la replica, il nodo in `/var/replication/data` viene eliminato, ma il record dell&#39;archivio dati rimane come &quot;spazzatura&quot;.
 
-Un&#39;altra fonte di rifiuti recuperabili sono i pacchetti. I dati del pacchetto, come tutto il resto, vengono memorizzati nella directory archivio e quindi per i pacchetti di dimensioni maggiori di 4 KB, nell&#39;archivio dati. Nel corso di un progetto di sviluppo o nel corso del tempo, durante la manutenzione di un sistema, i pacchetti possono essere costruiti e rigenerati più volte, ciascuna build risulta in un nuovo record dell&#39;archivio dati, orfando il record della build precedente.
+Un&#39;altra fonte di rifiuti recuperabili sono i pacchetti. I dati del pacchetto, come tutto il resto, vengono memorizzati nell’archivio e quindi per i pacchetti di dimensioni superiori a 4 KB, nell’archivio dati. Nel corso di un progetto di sviluppo o nel tempo durante la manutenzione di un sistema, i pacchetti possono essere generati e ricostruiti più volte, ogni build determina un nuovo record dell&#39;archivio dati, orfando il record della build precedente.
 
-## Come funziona la raccolta dei rifiuti nell&#39;archivio dati? {#how-does-data-store-garbage-collection-work}
+## Come funziona la raccolta degli oggetti inattivi nell’archivio dati? {#how-does-data-store-garbage-collection-work}
 
-Se l&#39;archivio è stato configurato con un archivio dati esterno, la raccolta dei rifiuti nell&#39;archivio dati [verrà eseguita automaticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) come parte della finestra di manutenzione settimanale. L&#39;amministratore di sistema può anche [eseguire manualmente la raccolta dei rifiuti nell&#39;archivio dati](#running-data-store-garbage-collection) in base alle esigenze. In generale, si consiglia di eseguire periodicamente la raccolta dei rifiuti nell&#39;archivio dati, ma di tenere conto dei seguenti fattori nella pianificazione delle raccolte di rifiuti nell&#39;archivio dati:
+Se l&#39;archivio è stato configurato con un archivio dati esterno, [la raccolta degli oggetti inattivi dell&#39;archivio dati verrà eseguita automaticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) come parte della finestra di manutenzione settimanale. L&#39;amministratore di sistema può anche [eseguire manualmente la raccolta degli oggetti inattivi dell&#39;archivio dati](#running-data-store-garbage-collection) in base alle esigenze. In generale, si consiglia di eseguire periodicamente la raccolta degli oggetti inattivi nell’archivio dati, ma di tenere conto dei seguenti fattori nella pianificazione delle raccolte di oggetti inattivi nell’archivio dati:
 
-* Le raccolte di rifiuti dell&#39;archivio dati richiedono tempo e possono avere un impatto sulle prestazioni, pertanto dovrebbero essere pianificate di conseguenza.
-* La rimozione dei record inattivi dell&#39;archivio dati non influisce sulle prestazioni normali, pertanto non si tratta di un&#39;ottimizzazione delle prestazioni.
-* Se l&#39;utilizzo dello storage e fattori correlati come i tempi di backup non rappresentano un problema, la raccolta dei rifiuti nell&#39;archivio dati potrebbe essere posticipata in modo sicuro.
+* Le raccolte di oggetti inattivi dell’archivio dati richiedono tempo e possono influire sulle prestazioni, pertanto dovrebbero essere pianificate di conseguenza.
+* La rimozione dei record di oggetti inattivi dell’archivio dati non influisce sulle prestazioni normali, pertanto questa non è un’ottimizzazione delle prestazioni.
+* Se l&#39;utilizzo dello storage e i fattori correlati, come i tempi di backup, non rappresentano un problema, allora la raccolta degli oggetti inattivi dell&#39;archivio dati potrebbe essere rinviata in modo sicuro.
 
-Il Garbage Collector dell&#39;archivio dati nota innanzitutto la marca temporale corrente all&#39;inizio del processo. La raccolta viene quindi eseguita utilizzando un algoritmo con pattern di contrassegno/sweep con più passate.
+Il Garbage Collector dell&#39;archivio dati nota prima la marca temporale corrente all&#39;inizio del processo. La raccolta viene quindi eseguita utilizzando un algoritmo di pattern a punti/sweep multipli.
 
-Nella prima fase, il Garbage Collector dell&#39;archivio dati esegue una lettura completa di tutto il contenuto del repository. Per ogni oggetto di contenuto che ha un riferimento a un record dell&#39;archivio dati, il file si trova nel file system, eseguendo un aggiornamento dei metadati, modificando l&#39;attributo &quot;last modified&quot; o MTIME. A questo punto, i file a cui si accede in questa fase diventano più recenti rispetto alla marca temporale iniziale della linea di base.
+Nella prima fase, il Garbage Collector dell’archivio dati esegue un attraversamento completo di tutto il contenuto dell’archivio. Per ogni oggetto di contenuto che ha un riferimento a un record dell&#39;archivio dati, ha individuato il file nel file system, eseguendo un aggiornamento dei metadati — modificando l&#39;attributo &quot;last modified&quot; o MTIME. A questo punto i file a cui si accede da questa fase diventano più recenti della marca temporale iniziale della linea di base.
 
-Nella seconda fase, il Garbage Collector dell&#39;archivio dati attraversa la struttura di directory fisica dell&#39;archivio dati nello stesso modo di un &quot;find&quot;. Ha esaminato l&#39;attributo &quot;last modified&quot; o MTIME del file ed effettua le seguenti verifiche:
+Nella seconda fase, il Garbage Collector dell&#39;archivio dati attraversa la struttura di directory fisica dei dati archiviati nello stesso modo di un &quot;find&quot;. Ha esaminato l&#39;attributo &quot;last modified&quot; o MTIME del file ed effettua la seguente determinazione:
 
-* Se il MTIME è più recente della marca temporale iniziale della linea di base, il file è stato trovato nella prima fase, oppure è un file completamente nuovo che è stato aggiunto al repository mentre il processo di raccolta era in corso. In uno di questi casi il record è considerato attivo e il file non deve essere eliminato.
-* Se il valore MTIME è precedente alla marca temporale della linea di base iniziale, il file non è un file a cui viene fatto riferimento attivamente e viene considerato come spazzatura rimovibile.
+* Se il MTIME è più recente della marca temporale della linea di base iniziale, il file è stato trovato nella prima fase oppure è un file completamente nuovo che è stato aggiunto all&#39;archivio mentre il processo di raccolta era in corso. In uno di questi casi il record è considerato attivo e il file non deve essere cancellato.
+* Se il valore MTIME è precedente alla marca temporale della linea di base iniziale, il file non è un file a cui viene fatto riferimento attivamente e viene considerato come un file di eliminazione rimovibile.
 
-Questo approccio funziona bene per un singolo nodo con un archivio dati privato. Tuttavia, l&#39;archivio dati può essere condiviso e, se ciò significa che i riferimenti live potenzialmente attivi ai record dell&#39;archivio dati di altri repository non sono controllati, e i file di riferimento attivi potrebbero essere eliminati per errore. È fondamentale che l&#39;amministratore di sistema comprenda la natura condivisa dell&#39;archivio dati prima di pianificare le raccolte di rifiuti e che utilizzi solo il semplice processo di raccolta di oggetti inattivi dell&#39;archivio dati incorporato quando è noto che l&#39;archivio dati non è condiviso.
+Questo approccio funziona bene per un singolo nodo con un archivio dati privato. Tuttavia l&#39;archivio dati può essere condiviso e, se ciò significa che i riferimenti live potenzialmente attivi ai record dell&#39;archivio dati di altri archivi non sono controllati e i file di riferimento attivi possono essere rimossi erroneamente. È fondamentale che l’amministratore di sistema comprenda la natura condivisa dell’archivio dati prima di pianificare qualsiasi raccolta di oggetti inattivi e utilizzi solo il semplice processo integrato di raccolta degli oggetti inattivi dell’archivio dati quando è noto che l’archivio dati non è condiviso.
 
 >[!NOTE]
 >
->Durante l&#39;esecuzione della raccolta dei dati in un&#39;impostazione dell&#39;archivio dati cluster o condiviso (con Mongo o Segment Tar), il registro potrebbe visualizzare avvisi sull&#39;impossibilità di eliminare alcuni ID BLOB. Ciò accade perché gli ID BLOB eliminati in una precedente raccolta di oggetti inattivi sono erroneamente citati da altri nodi cluster o condivisi che non dispongono di informazioni sulle eliminazioni ID. Di conseguenza, quando viene eseguita la raccolta di oggetti inattivi, viene registrato un avviso quando si tenta di eliminare un ID già eliminato nell&#39;ultima esecuzione. Questo comportamento non influisce sulle prestazioni o sulle funzionalità.
+>Quando si esegue la raccolta oggetti inattivi in una configurazione dell’archivio dati in cluster o condiviso (con Mongo o Segment Tar), il registro potrebbe visualizzare avvisi sull’impossibilità di eliminare determinati ID BLOB. Questo accade perché gli ID BLOB eliminati in una precedente raccolta oggetti inattivi vengono erroneamente referenziati da altri nodi cluster o condivisi che non hanno informazioni sulle eliminazioni degli ID. Di conseguenza, quando si esegue la raccolta oggetti inattivi, viene registrato un avviso quando si tenta di eliminare un ID già eliminato nell’ultima esecuzione. Questo comportamento non influisce sulle prestazioni o sulle funzionalità.
 
-## Esecuzione della raccolta di oggetti inattivi nell&#39;archivio dati {#running-data-store-garbage-collection}
+## Esecuzione della raccolta degli oggetti inattivi dell&#39;archivio dati {#running-data-store-garbage-collection}
 
-Sono disponibili tre modi per eseguire la raccolta dei rifiuti dell&#39;archivio dati, a seconda dell&#39;impostazione dell&#39;archivio dati in cui AEM in esecuzione:
+Esistono tre modi per eseguire la raccolta degli oggetti inattivi dell’archivio dati, a seconda della configurazione dell’archivio dati in cui AEM in esecuzione:
 
-1. Tramite [Revision Cleanup](/help/sites-deploying/revision-cleanup.md) - un meccanismo di raccolta dei rifiuti generalmente utilizzato per la pulizia dell&#39;archivio nodi.
+1. Tramite [Revision Cleanup](/help/sites-deploying/revision-cleanup.md) - un meccanismo di raccolta degli oggetti inattivi solitamente utilizzato per la pulizia dell&#39;archivio dei nodi.
 
-1. Tramite [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - un meccanismo di raccolta dei rifiuti specifico per gli archivi di dati esterni, disponibile nel dashboard delle operazioni.
+1. Tramite [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - un meccanismo di raccolta degli oggetti inattivi specifico per gli archivi di dati esterni, disponibile nel dashboard delle operazioni.
 1. Tramite la [console JMX](/help/sites-administering/jmx-console.md).
 
-Se TarMK viene utilizzato sia come archivio nodi che come archivio dati, Revision Cleanup può essere utilizzato per la raccolta dei rifiuti sia dell&#39;archivio nodi che dell&#39;archivio dati. Tuttavia, se è configurato un archivio dati esterno, ad esempio Archivio dati del file system, la raccolta dei rifiuti dell&#39;archivio dati deve essere attivata in modo esplicito e separato dalla funzione Revision Cleanup. È possibile attivare la raccolta dei rifiuti dell&#39;archivio dati tramite il dashboard delle operazioni o la console JMX.
+Se TarMK viene utilizzato sia come archivio nodi che come archivio dati, allora Revision Cleanup può essere utilizzato per la raccolta degli oggetti inattivi sia dell&#39;archivio nodi che dell&#39;archivio dati. Tuttavia, se un archivio dati esterno è configurato, ad esempio Archivio dati del file system, la raccolta degli oggetti inattivi dell&#39;archivio dati deve essere attivata in modo esplicito separatamente dal cleanup delle revisioni. La raccolta degli oggetti inattivi dell’archivio dati può essere attivata tramite il dashboard delle operazioni o la console JMX.
 
-Nella tabella seguente è illustrato il tipo di raccolta di oggetti inattivi dell&#39;archivio dati che è necessario utilizzare per tutte le distribuzioni dell&#39;archivio dati supportate in AEM 6:
+La tabella seguente mostra il tipo di raccolta degli oggetti inattivi dell’archivio dati che deve essere utilizzato per tutte le distribuzioni di archiviazione dati supportate nel AEM 6:
 
 <table>
  <tbody>
   <tr>
    <td><strong>Archivio nodi</strong><br /> </td>
-   <td><strong>Archivio dati</strong></td>
-   <td><strong>Meccanismo di raccolta rifiuti</strong><br /> </td>
+   <td><strong>Archiviazione dati</strong></td>
+   <td><strong>Meccanismo di raccolta dei rifiuti</strong><br /> </td>
   </tr>
   <tr>
    <td>TarMK</td>
    <td>TarMK</td>
-   <td>Pulizia delle revisioni (i file binari sono allineati con Segment Store)</td>
+   <td>Pulizia revisioni (i binari sono allineati con l'archivio segmenti)</td>
   </tr>
   <tr>
    <td>TarMK</td>
    <td>File system esterno</td>
-   <td><p>Attività di raccolta dei dati dall'archivio dati tramite il dashboard operativo</p> <p>Console JMX</p> </td>
+   <td><p>Attività di raccolta degli oggetti inattivi nell’archivio dati tramite il dashboard delle operazioni</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>MongoDB</td>
-   <td><p>Attività di raccolta dei dati dall'archivio dati tramite il dashboard operativo</p> <p>Console JMX</p> </td>
+   <td><p>Attività di raccolta degli oggetti inattivi nell’archivio dati tramite il dashboard delle operazioni</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>File system esterno</td>
-   <td><p>Attività di raccolta dei dati dall'archivio dati tramite il dashboard operativo</p> <p>Console JMX</p> </td>
+   <td><p>Attività di raccolta degli oggetti inattivi nell’archivio dati tramite il dashboard delle operazioni</p> <p>Console JMX</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Esecuzione della raccolta di oggetti inattivi nell&#39;archivio dati tramite il dashboard delle operazioni {#running-data-store-garbage-collection-via-the-operations-dashboard}
+### Esecuzione della raccolta degli oggetti inattivi dell&#39;archivio dati tramite il dashboard delle operazioni {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La finestra di manutenzione settimanale integrata, disponibile tramite il [Pannello operazioni](/help/sites-administering/operations-dashboard.md), contiene un&#39;attività incorporata per attivare la raccolta dei dati da parte dell&#39;archivio dati alle 1 del mattino della domenica.
+La finestra di manutenzione settimanale integrata, disponibile tramite il [Dashboard delle operazioni](/help/sites-administering/operations-dashboard.md), contiene un&#39;attività incorporata per attivare la raccolta rifiuti dell&#39;archivio dati all&#39;1 del mattino della domenica.
 
-Se è necessario eseguire la raccolta dei rifiuti dell&#39;archivio dati al di fuori di questo intervallo di tempo, può essere attivata manualmente tramite il Pannello operazioni.
+Se devi eseguire la raccolta degli oggetti inattivi dell’archivio dati al di fuori di questo periodo di tempo, puoi attivarla manualmente tramite il dashboard delle operazioni.
 
-Prima di eseguire la raccolta dei rifiuti dell&#39;archivio dati è necessario verificare che al momento non siano in esecuzione backup.
+Prima di eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati è necessario verificare che non siano in esecuzione backup in quel momento.
 
-1. Aprite il Pannello operazioni **Navigazione** -> **Strumenti** -> **Operazioni** -> **Manutenzione**.
-1. Tocca o fai clic su **Finestra manutenzione settimanale**.
+1. Apri il dashboard delle operazioni in **Navigazione** -> **Strumenti** -> **Operazioni** -> **Manutenzione**.
+1. Tocca o fai clic su **Finestra di manutenzione settimanale**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selezionare l&#39;attività **Data Store Garbage Collection**, quindi fare clic o toccare l&#39;icona **Esegui**.
+1. Seleziona l&#39;attività **Archivio dati raccolta oggetti inattivi**, quindi tocca o fai clic sull&#39;icona **Esegui**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Viene eseguito il processo di garbage collection dell&#39;archivio dati e il relativo stato viene visualizzato nel dashboard.
+1. La raccolta degli oggetti inattivi dell&#39;archivio dati viene eseguita e il relativo stato viene visualizzato nel dashboard.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
 >[!NOTE]
 >
->L&#39;attività di raccolta dei dati nell&#39;archivio dati sarà visibile solo se hai configurato un archivio dati file esterno. Per informazioni su come impostare un archivio dati file, vedere [Configurazione di archivi di nodi e di archivi dati in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>L&#39;attività Archivio dati raccolta oggetti inattivi sarà visibile solo se hai configurato un archivio dati file esterno. Per informazioni su come impostare un archivio dati file, vedere [Configurazione archivi nodi e archivi dati in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
 
-### Esecuzione della raccolta di oggetti indesiderati dall&#39;archivio dati tramite la console JMX {#running-data-store-garbage-collection-via-the-jmx-console}
+### Esecuzione della raccolta degli oggetti inattivi dell&#39;archivio dati tramite la console JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
-In questa sezione viene illustrato come eseguire manualmente la raccolta dei rifiuti dell&#39;archivio dati tramite la console JMX. Se l&#39;installazione è impostata senza un archivio dati esterno, questo non si applica all&#39;installazione. Al contrario, vedere le istruzioni su come eseguire la pulizia delle revisioni in [Gestione dell&#39;archivio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+Questa sezione descrive come eseguire manualmente la raccolta degli oggetti inattivi dell’archivio dati tramite la console JMX. Se l&#39;installazione è configurata senza un archivio dati esterno, questo non si applica all&#39;installazione. Al contrario, vedi le istruzioni su come eseguire la pulizia delle revisioni in [Mantenimento del repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
->Se si esegue TarMK con un archivio dati esterno, è necessario eseguire prima Revision Cleanup per rendere efficace la raccolta dei rifiuti.
+>Se si esegue TarMK con un archivio dati esterno, è necessario eseguire prima Revision Cleanup per rendere efficace la raccolta degli oggetti inattivi.
 
-Per eseguire la raccolta di oggetti inattivi:
+Per eseguire la raccolta degli oggetti inattivi:
 
-1. Nella console di gestione Apache Felix OSGi, evidenziare la scheda **Principale** e selezionare **JMX** dal menu seguente.
-1. Quindi, cercare e fare clic su **Repository Manager** MBean (o passare a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
-1. Fare clic su **startDataStoreGC(boolean markOnly)**.
-1. immettere &quot;`true`&quot; per il parametro `markOnly`, se necessario:
+1. Nella console di gestione Apache Felix OSGi, evidenzia la scheda **Principale** e seleziona **JMX** dal menu seguente.
+1. Quindi, cerca e fai clic su **Repository Manager** MBean (o vai a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Fai clic su **startDataStoreGC(boolean markOnly)**.
+1. Inserisci &quot;`true`&quot; per il parametro `markOnly` se necessario:
 
    | **Opzione** | **Descrizione** |
    |---|---|
-   | boolean markOnly | Impostate su true solo per contrassegnare i riferimenti e non per eseguire lo sweep nell&#39;operazione di mark e sweep. Questa modalità deve essere utilizzata quando il BlobStore sottostante è condiviso tra più repository diversi. Per tutti gli altri casi, impostatelo su false per eseguire la raccolta completa dei rifiuti. |
+   | markOnly booleano | Impostare su true per contrassegnare solo i riferimenti e non eseguire la sweep nell&#39;operazione di marcatura e sweep. Questa modalità deve essere utilizzata quando il BlobStore sottostante è condiviso tra più archivi diversi. Per tutti gli altri casi impostalo su false per eseguire la raccolta completa degli oggetti inattivi. |
 
-1. Fare clic su **Richiama**. CRX esegue il processo di garbage collection e indica quando è stato completato.
-
->[!NOTE]
->
->La raccolta dei rifiuti dell&#39;archivio dati non raccoglierà i file che sono stati eliminati nelle ultime 24 ore.
+1. Fare clic su **Richiama**. CRX esegue la raccolta degli oggetti inattivi e indica quando è stata completata.
 
 >[!NOTE]
 >
->L&#39;attività di raccolta dei rifiuti dell&#39;archivio dati verrà avviata solo se è stato configurato un archivio dati file esterno. Se l&#39;archivio dati del file esterno non è stato configurato, l&#39;attività restituirà il messaggio `Cannot perform operation: no service of type BlobGCMBean found` dopo la chiamata. Per informazioni su come impostare un archivio dati file, vedere [Configurazione di archivi di nodi e di archivi dati in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
-
-## Automazione della raccolta di oggetti inattivi nell&#39;archivio dati {#automating-data-store-garbage-collection}
-
-Se possibile, la raccolta dei rifiuti nell&#39;archivio dati deve essere eseguita quando il carico sul sistema è limitato, ad esempio la mattina.
-
-La finestra di manutenzione settimanale integrata, disponibile tramite il [Pannello operazioni](/help/sites-administering/operations-dashboard.md), contiene un&#39;attività incorporata per attivare la raccolta dei dati da parte dell&#39;archivio dati alle 1 del mattino della domenica. È inoltre necessario verificare che al momento non siano in esecuzione backup. L&#39;inizio della finestra di manutenzione può essere personalizzato tramite il dashboard, a seconda delle necessità.
+>La raccolta degli oggetti inattivi dell&#39;archivio dati non raccoglie i file che sono stati eliminati nelle ultime 24 ore.
 
 >[!NOTE]
 >
->Il motivo per non eseguire contemporaneamente è che anche i file dell&#39;archivio dati vecchi (e inutilizzati) vengono sottoposti a backup, in modo che se è necessario ripristinare una vecchia revisione, i file binari sono ancora presenti nel backup.
+>L&#39;attività di raccolta oggetti inattivi dell&#39;archivio dati verrà avviata solo se hai configurato un archivio dati file esterno. Se non è stato configurato un archivio dati del file esterno, l&#39;attività restituirà il messaggio `Cannot perform operation: no service of type BlobGCMBean found` dopo la chiamata. Per informazioni su come impostare un archivio dati file, vedere [Configurazione archivi nodi e archivi dati in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
 
-Se non si desidera eseguire la raccolta dei rifiuti dell&#39;archivio dati con la finestra Manutenzione settimanale nel Pannello operazioni, è possibile automatizzarla anche tramite client HTTP wget o curl. Di seguito è riportato un esempio di come automatizzare il backup utilizzando curl:
+## Automazione della raccolta degli oggetti inattivi dell&#39;archivio dati {#automating-data-store-garbage-collection}
+
+Se possibile, è necessario eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati quando il sistema non è caricato, ad esempio la mattina.
+
+La finestra di manutenzione settimanale integrata, disponibile tramite il [Dashboard delle operazioni](/help/sites-administering/operations-dashboard.md), contiene un&#39;attività incorporata per attivare la raccolta rifiuti dell&#39;archivio dati all&#39;1 del mattino della domenica. È inoltre necessario verificare che al momento non siano in esecuzione backup. L&#39;inizio della finestra di manutenzione può essere personalizzato tramite il dashboard, a seconda delle necessità.
+
+>[!NOTE]
+>
+>Il motivo per non eseguirlo contemporaneamente è in modo che anche i file dell&#39;archivio dati vecchi (e inutilizzati) vengano sottoposti a backup, in modo che se è necessario eseguire il rollback a una vecchia revisione, i binari siano ancora presenti nel backup.
+
+Se non desideri eseguire la raccolta oggetti inattivi dell&#39;archivio dati con la finestra Manutenzione settimanale nel Dashboard delle operazioni, puoi anche automatizzarla utilizzando i client HTTP wget o curl. Di seguito è riportato un esempio di come automatizzare il backup utilizzando curl:
 
 >[!CAUTION]
 >
->Nell&#39;esempio seguente `curl` potrebbero essere necessari diversi parametri per la vostra istanza; ad esempio, il nome host ( `localhost`), la porta ( `4502`), la password amministratore ( `xyz`) e vari parametri per la raccolta di oggetti inattivi dell&#39;archivio dati effettiva.
+>Nell&#39;esempio seguente `curl` potrebbero essere necessari diversi parametri per configurare l&#39;istanza; ad esempio, il nome host ( `localhost`), la porta ( `4502`), la password dell&#39;amministratore ( `xyz`) e vari parametri per l&#39;effettivo archivio dati garbage collection.
 
-Di seguito è riportato un comando curl di esempio per richiamare la raccolta di oggetti indesiderati nell&#39;archivio dati tramite la riga di comando:
+Ecco un esempio di comando curl per richiamare l&#39;archivio dati garbage collection tramite la riga di comando:
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
@@ -180,17 +180,17 @@ curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/
 
 Il comando curl ritorna immediatamente.
 
-## Verifica della coerenza dell&#39;archivio dati {#checking-data-store-consistency}
+## Controllo della coerenza dell&#39;archivio dati {#checking-data-store-consistency}
 
-La verifica della coerenza dell&#39;archivio dati segnalerà eventuali file binari dell&#39;archivio dati mancanti ma a cui viene fatto ancora riferimento. Per avviare un controllo di coerenza, procedere come segue:
+Il controllo di coerenza dell&#39;archivio dati segnalerà tutti i file binari dell&#39;archivio dati mancanti ma a cui si fa ancora riferimento. Per avviare un controllo di coerenza, effettua le seguenti operazioni:
 
-1. Passate alla console JMX. Per informazioni sull&#39;utilizzo della console JMX, consultate [questo articolo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Cercare il fagiolo **BlobGarbageCollection** e fare clic su di esso.
-1. Fare clic sul collegamento `checkConsistency()`.
+1. Vai alla console JMX. Per informazioni su come utilizzare la console JMX, consulta [questo articolo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Cerca il mbean **BlobGarbageCollection** e fai clic su di esso.
+1. Fai clic sul collegamento `checkConsistency()` .
 
-Al termine della verifica di coerenza, verrà visualizzato un messaggio che indica il numero di file binari segnalati come mancanti. Se il numero è maggiore di 0, controllare la `error.log` per ulteriori dettagli sui file binari mancanti.
+Al termine del controllo di coerenza, un messaggio mostra il numero di binari segnalati come mancanti. Se il numero è maggiore di 0, controlla `error.log` per ulteriori dettagli sui binari mancanti.
 
-Di seguito è riportato un esempio di come i file binari mancanti vengono segnalati nei file di registro:
+Di seguito trovi un esempio di come vengono segnalati i file binari mancanti nei registri:
 
 ```xml
 11:32:39.673 INFO [main] MarkSweepGarbageCollector.java:600 Consistency check found [1] missing blobs
