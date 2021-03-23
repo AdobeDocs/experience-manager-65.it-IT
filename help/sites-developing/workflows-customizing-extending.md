@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3587'
 ht-degree: 1%
 
 ---
@@ -817,7 +817,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
 
    Ecco il risultato del nostro esempio personalizzato passo:
 
-   ![wf-36](assets/wf-34.png)
+   ![wf-34](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -1039,7 +1039,7 @@ L&#39;esempio `_cq_dialog/.content.xml` utilizzato in questo esempio:
 >
 >Le finestre di dialogo dell’editor modelli dell’interfaccia classica continueranno a funzionare con l’editor dell’interfaccia touch standard.
 >
->Anche se AEM uno strumento [conversione finestra di dialogo](/help/sites-developing/dialog-conversion.md) per aggiornare le finestre di dialogo dei passaggi dell&#39;interfaccia classica alle finestre di dialogo dell&#39;interfaccia utente standard. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che possono essere fatti alla finestra di dialogo per alcuni casi.
+>Anche se AEM dispone di [strumenti di modernizzazione](/help/sites-developing/modernization-tools.md) se desideri aggiornare le finestre di dialogo dei passaggi dell’interfaccia classica alle finestre di dialogo dell’interfaccia utente standard. Dopo la conversione ci sono ancora alcuni miglioramenti manuali che possono essere fatti alla finestra di dialogo per alcuni casi.
 >
 >* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo in `/libs` che hanno funzionalità simili come esempi di come fornire una soluzione. Esempio:
    >
