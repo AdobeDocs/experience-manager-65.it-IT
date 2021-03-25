@@ -10,9 +10,9 @@ feature-set: Experience Manager Sites
 feature: Sviluppo
 role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 242858109bc381d005c239786a8837b3e64fbb27
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '920'
 ht-degree: 16%
 
 ---
@@ -120,6 +120,9 @@ ht-degree: 16%
       + [Indirizzamento modello SPA](spa-routing.md)
       + [Integrazione di SPA e Adobe Experience Platform Launch](spa-launch.md)
       + [Rendering lato SPA e server](spa-ssr.md)
+      + [Componente RemotePage](spa-remote-page.md)
+      + [Modifica di un SPA esterno in AEM](spa-edit-external.md)
+      + [Componenti compositi in SPA](spa-composite-component.md)
       + [Materiali di riferimento SPA](spa-reference-materials.md)
    + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
