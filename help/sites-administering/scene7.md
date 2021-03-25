@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5517'
 ht-degree: 1%
 
 ---
@@ -351,7 +351,7 @@ Per configurare Experience Manager per la pubblicazione delle risorse in Dynamic
 
 Abilita il listener Adobe CQ Dynamic Media Classic Dam, che è disabilitato per impostazione predefinita.
 
-Per abilitarlo:
+Per abilitare il listener Adobe CQ Dynamic Media Classic Dam:
 
 1. Tocca l’icona [!UICONTROL Strumenti], quindi vai a **[!UICONTROL Operazioni > Console web]**. Viene visualizzata la console Web.
 1. Passa a **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** e seleziona la casella di controllo **[!UICONTROL Enabled]** .
@@ -525,7 +525,7 @@ Per configurare la configurazione predefinita:
 
 Puoi configurare la cartella in cui vengono caricate le risorse in Dynamic Media Classic quando la risorsa non si trova nella cartella di destinazione di CQ. Consulta Pubblicazione di risorse dall’esterno della cartella di destinazione CQ.
 
-Per configurare la cartella ad hoc:
+Per configurare la cartella ad-hoc:
 
 1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Implementazione > Cloud Services]**, tocca **[!UICONTROL Dynamic Media Classic]** e seleziona la configurazione in Dynamic Media Classic.
 1. Per aprire la configurazione, tocca **[!UICONTROL Modifica]**.
