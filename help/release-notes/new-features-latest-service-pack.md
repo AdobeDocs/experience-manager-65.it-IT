@@ -4,9 +4,9 @@ description: Novità in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3041'
 ht-degree: 1%
 
 ---
@@ -232,6 +232,10 @@ La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile
 * Convalida dei valori dei campi sul server quando si invia un modulo adattivo.
 
 * Conversione di un modulo PDF in un modulo adattivo utilizzando [!DNL Automated Forms Conversion service].
+
+#### Supporto per i gruppi di disponibilità Always On di Microsoft SQL Server 2016 per l&#39;alta disponibilità (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] ora supporta i gruppi di disponibilità Always On di  [!DNL Microsoft] SQL Server 2016 per le distribuzioni OSGi ad alta disponibilità.
 
 #### Configurazione del client HTTP del modello dati del modulo per ottimizzare le prestazioni (6.5.7.0) {#fdm-http-client-config}
 
