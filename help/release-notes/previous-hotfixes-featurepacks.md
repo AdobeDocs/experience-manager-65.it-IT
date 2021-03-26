@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione precedente del S
 description: Note sulla versione per i Service Pack  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 17%
 
 ---
@@ -36,6 +36,8 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
    * Conversione di un modulo PDF in un modulo adattivo utilizzando [!DNL Automated Forms Conversion service].
 
 * Supporto per [!DNL Microsoft SQL Server] 2019 in [!DNL Experience Manager Forms].
+
+* Supporto dei gruppi di disponibilità [!DNL Microsoft] SQL Server 2016 Always On per le distribuzioni OSGi ad alta disponibilità.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.22.5.
 
@@ -837,7 +839,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Il menu nella barra a sinistra è ora accessibile. Funzionalità e scopo dell&#39;espansione del menu sono annunciati in modo appropriato dagli assistenti vocali (NPR-33068).
 
-* La casella di riepilogo e molti altri elementi dell’interfaccia utente sono ora accessibili agli utenti non vedenti di utilità di lettura dello schermo e le seguenti informazioni sono fornite dagli assistenti vocali (NPR-33040):
+* La casella di riepilogo e molti altri elementi dell’interfaccia utente sono ora accessibili agli utenti non vedenti che utilizzano utilità di lettura dello schermo e le seguenti informazioni sono fornite dagli assistenti vocali (NPR-33040):
 
    * se l’input dell’utente è necessario su un elemento prima dell’invio del modulo.
    * se un elemento non è modificabile.
@@ -985,7 +987,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 ### [!DNL Brand Portal] {#assets-brand-portal-6550}
 
-* La rimozione di uno schema di metadati pubblicati da [!DNL Brand Portal] genera un errore (CQ-4292063).
+* La rimozione di uno schema di metadati pubblicato da [!DNL Brand Portal] genera un errore (CQ-4292063).
 * Se un amministratore configura [!DNL Experience Manager Assets] 6.5.4 con Brand Portal tramite Adobe Developer Console, l’ [!DNL Brand Portal] utente non è in grado di pubblicare la risorsa di una cartella di contributi da [!DNL Brand Portal] a [!DNL Experience Manager] (NPR-33046).
 * Replica duplicata delle cartelle principali che causano conflitti (NPR-33001).
 
