@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Aggiornamento
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -72,7 +71,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Modelli flusso di lavoro {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -121,7 +120,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Istanze flusso di lavoro {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -147,7 +146,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Moduli di avvio per flusso di lavoro {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -178,7 +177,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Script di flusso di lavoro {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -213,7 +212,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Configurazioni ContextHub {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -244,7 +243,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Progettazioni di Cloud Services classici {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -283,7 +282,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Progettazioni di dashboard classiche {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -322,7 +321,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Progettazione report classici {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -361,7 +360,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Progettazioni predefinite {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -400,7 +399,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Endpoint JavaScript DTM Adobe {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -423,7 +422,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Endpoint Web-Hook DTM Adobe {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -446,7 +445,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Casella in entrata Attività {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -473,7 +472,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Configurazioni blueprint di Multi-Site Manager {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Posizione precedente</strong></td>
@@ -500,7 +499,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Configurazioni del gadget per dashboard di progetti AEM {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -530,7 +529,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Modello e-mail di notifica di replica {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -563,7 +562,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Tag {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -597,7 +596,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Servizi cloud di traduzione {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -642,7 +641,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Lingue di traduzione {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -673,7 +672,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Regole di traduzione {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -704,7 +703,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Libreria client per i widget di traduzione {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -749,9 +748,11 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 | **Orientamento alla ristrutturazione** | Non è richiesta alcuna azione. |
 | **Note** | La console Web Attivazione albero è ora disponibile tramite **Strumenti > Implementazione > Replica > Attiva albero**. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### Cloud Services connettore traduzione fornitore {#vendor-translation-connector-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -798,7 +799,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Modelli e-mail per notifiche flusso di lavoro {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
@@ -830,7 +831,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 
 ### Pacchetti flusso di lavoro {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Posizione precedente</strong></td>
