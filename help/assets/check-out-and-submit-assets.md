@@ -1,12 +1,12 @@
 ---
-title: Archiviare ed estrarre le risorse per la modifica
+title: Archiviare e estrarre i file in [!DNL Assets]
 description: Scopri come estrarre le risorse da modificare e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 role: Professionista
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,7 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 ## Estrarre risorse {#checking-out-assets}
 
 1. Dall’interfaccia utente di [!DNL Assets] , seleziona la risorsa da estrarre. È inoltre possibile selezionare più risorse da estrarre.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Checkout]**.
-L&#39;opzione **[!UICONTROL Checkout]** passa a **[!UICONTROL Check-in]**.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Checkout]**. L&#39;opzione **[!UICONTROL Checkout]** passa a **[!UICONTROL Check-in]**.
 Per verificare se altri utenti possono modificare la risorsa estratta, accedi come un altro utente. Un simbolo a forma di lucchetto viene visualizzato sulla miniatura della risorsa estratta.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Per verificare se altri utenti possono modificare la risorsa estratta, accedi co
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Puoi fare clic su **[!UICONTROL Visualizza proprietà]** per modificare i metadati della risorsa bloccata.
+   Per modificare i metadati della risorsa bloccata, fai clic su **[!UICONTROL Visualizza proprietà]**.
 
 1. Fai clic su **[!UICONTROL Modifica]** per aprire la risorsa in modalità di modifica.
 
@@ -64,6 +63,6 @@ Gli amministratori possono archiviare le risorse estratte da altri utenti.
 
 >[!MORELIKETHIS]
 >
->* [Comprendere l’archiviazione e il check-out nell’app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Esercitazione video per comprendere il check-in e il check-out in Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Informazioni sull’app  [!DNL Experience Manager] indesktop di check-in e check-out](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Esercitazione video per comprendere il check-in e il check-out [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
