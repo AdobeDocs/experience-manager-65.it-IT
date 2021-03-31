@@ -3,10 +3,11 @@ title: Configurare l’assegnazione tag delle risorse tramite Smart Content Serv
 description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati migliorati in [!DNL Adobe Experience Manager] utilizzando il Servizio di contenuti avanzati.
 contentOwner: AG
 role: Administrator
+feature: Assegnazione tag, tag avanzati
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2174'
 ht-degree: 33%
 
 ---
