@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Moduli adattivi
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 0%
+source-wordcount: '2078'
+ht-degree: 1%
 
 ---
 
@@ -163,6 +163,24 @@ In AEM Forms sono disponibili le seguenti scelte rapide da tastiera.
 | Passa al pannello precedente | Alt+Freccia sinistra |
 | Reimpostare i dati compilati in un modulo | Alt+R |
 | Inviare un modulo | Alt+S |
+
+In Forms adattivo sono inoltre disponibili vari tasti di scelta rapida da tastiera per il componente **[!UICONTROL Selezione data]** . Per abilitare i tasti di scelta rapida, tocca il componente **[!UICONTROL Selezione data]** e tocca ![Configura](assets/configure-icon.svg) per aprire le proprietà. Nella sezione **[!UICONTROL Pattern]**, seleziona un pattern di visualizzazione utilizzando gli elenchi a discesa **[!UICONTROL Tipo]** e **[!UICONTROL Pattern]**. Salva le proprietà per abilitare l’uso dei tasti di scelta rapida per il componente **[!UICONTROL Selezione data]** .
+
+Per il componente Selezione data in Forms adattivo sono disponibili i seguenti tasti di scelta rapida da tastiera:
+
+| Azione | Scelta rapida da tastiera |
+|---|---|
+| <ul><li>Visualizza le opzioni del componente Selettore data quando l’icona del calendario è evidenziata dalla scheda</li><li>Esegui l’evento clic quando lo stato attivo della scheda evidenzia un’opzione</li> | Space o Enter |
+| Nascondi le opzioni del componente Selettore data | Esc |
+| <ul><li>Sposta il cursore in avanti attraverso le opzioni disponibili nel componente Selezione data .</li><li>Imposta lo stato attivo della scheda sull&#39;icona del calendario quando il campo di immissione della data è attivo</li> | Scheda |
+| Sposta il cursore all’indietro tra le opzioni disponibili nel componente Selettore data | Maiusc+Tab |
+| <ul><li>Visualizza le opzioni del componente Selezione data quando lo stato attivo della scheda evidenzia il campo di immissione data</li><li>Sposta il cursore verso il basso nel calendario disponibile nel componente Selettore data</li> |  Freccia giù |
+| Sposta il cursore verso l’alto nel calendario disponibile nel componente Selettore data | Freccia su |
+| Sposta il cursore all’indietro nel calendario disponibile nel componente Selettore data | Freccia sinistra |
+| Sposta il cursore in avanti nel calendario disponibile nel componente Selettore data | Freccia destra |
+| Esegui l’azione per la didascalia disponibile tra le frecce di navigazione a destra e a sinistra nel calendario | Maiusc+Freccia su |
+| Esegui l&#39;azione per l&#39;icona della freccia di navigazione a destra ![freccia a destra](assets/right-navigation-icon.svg) disponibile nel calendario | Maiusc+Freccia sinistra |
+| Esegui l&#39;azione per l&#39;icona della freccia di navigazione a sinistra ![freccia a sinistra](assets/left-navigation-icon.svg) disponibile nel calendario | Maiusc+Freccia destra |
 
 ## Utilizza lo strumento di accessibilità per trovare i problemi di accessibilità rimanenti
 
