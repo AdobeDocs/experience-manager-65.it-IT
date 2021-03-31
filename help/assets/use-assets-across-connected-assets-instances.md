@@ -3,10 +3,11 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 role: Professionista, Amministratore, Leader
+feature: Risorse, utenti e gruppi collegati
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2726'
 ht-degree: 29%
 
 ---
