@@ -3,10 +3,11 @@ title: Archiviare e estrarre i file in [!DNL Assets]
 description: Scopri come estrarre le risorse da modificare e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 role: Professionista
+feature: Gestione risorse
 translation-type: tm+mt
-source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
+source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '431'
 ht-degree: 1%
 
 ---
