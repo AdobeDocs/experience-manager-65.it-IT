@@ -3,10 +3,11 @@ title: Digital Rights Management di attività
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 role: Business Practices, amministratore
+feature: DRM,Gestione risorse
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1404'
 ht-degree: 6%
 
 ---
