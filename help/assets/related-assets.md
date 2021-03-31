@@ -3,10 +3,11 @@ title: Attività correlate
 description: Scopri come mettere in relazione le risorse digitali che condividono alcuni attributi comuni. Crea anche relazioni derivate dall’origine tra le risorse digitali.
 contentOwner: AG
 role: Professionista
+feature: Collaborazione, Gestione risorse
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '637'
 ht-degree: 2%
 
 ---
