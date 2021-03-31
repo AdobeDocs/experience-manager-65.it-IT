@@ -3,10 +3,11 @@ title: Estendi editor risorse
 description: Scopri come estendere le funzionalità di Asset Editor utilizzando componenti personalizzati.
 contentOwner: AG
 role: Business Practices, amministratore
+feature: Strumenti per gli sviluppatori
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '693'
 ht-degree: 13%
 
 ---
