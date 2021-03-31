@@ -3,11 +3,12 @@ title: Usa tracciamento pagina e codice di incorporamento nelle pagine web
 description: Scopri come includere il tracciamento pagina e i codici JavaScript da incorporare nel codice del sito web per consentire ad Adobe Analytics di acquisire i dati di utilizzo relativi alle risorse.
 contentOwner: AG
 role: Architetto, amministratore
+feature: Rapporti su risorse
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 0%
+source-wordcount: '180'
+ht-degree: 1%
 
 ---
 
