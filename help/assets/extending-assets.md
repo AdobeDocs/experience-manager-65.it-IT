@@ -3,11 +3,12 @@ title: Personalizza ed estendi [!DNL Assets]
 description: Scopri come personalizzare ed estendere Asset Share e Asset Editor, che offre agli utenti un’interfaccia e un set di funzionalità personalizzati.
 contentOwner: AG
 role: Developer (Sviluppatore)
+feature: Strumenti per gli sviluppatori
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '256'
+ht-degree: 1%
 
 ---
 
