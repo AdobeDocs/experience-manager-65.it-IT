@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gestione risorse
 role: Business Practices, Architetto, Amministratore
 translation-type: tm+mt
-source-git-commit: 4cc8e60694e2aea74dfedd0bbcb8d47a208d45d1
+source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Il flusso di lavoro per impostare questa integrazione è:
 
 Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sincronizza i dati tra Assets e Experience Cloud.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Questa funzione è obsoleta in AEM Assets. Trova sostituzioni in [AEM e procedure consigliate per l&#39;integrazione di Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se hai delle domande, [contatta l&#39;Assistenza clienti Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
@@ -76,7 +76,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la nuova configurazione e fai clic su **[!UICONTROL Crea]**.
 
-   ![Denomina una nuova configurazione per integrare AEM Assets e CC](assets/chlimage_1-51.png)
+   ![Denomina una nuova configurazione per integrare AEM Assets e CC](assets/aem-ec-integration-config1.png)
 
 1. Nel campo **[!UICONTROL URL tenant]** , specifica l’URL per AEM Assets. In passato, se l’URL era definito come `https://<tenant_id>.marketing.adobe.com`, modificalo in `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -95,8 +95,6 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 ## Abilita sincronizzazione {#enable-synchronization}
 
 1. Visualizza la chiave pubblica utilizzando uno dei seguenti metodi menzionati nell&#39;ultimo passaggio della procedura [aggiungi una nuova configurazione ad Experience Cloud](#add-a-new-configuration). Fare clic su **[!UICONTROL Visualizza chiave pubblica]**.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 1. Copia la chiave pubblica e incollala nel campo **[!UICONTROL Chiave pubblica]** dell&#39;interfaccia di configurazione dell&#39;applicazione creata in [crea un&#39;applicazione](#create-an-application).
 
@@ -118,7 +116,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 ## Aggiungi utenti all&#39;Experience Cloud {#add-users-to-experience-cloud}
 
 1. Accedi ad Experience Cloud utilizzando le credenziali di amministratore.
-1. Dai binari, vai a **[!UICONTROL Amministrazione]** e quindi tocca o fai clic su **[!UICONTROL Avvia Enterprise Dashboard]**.
+1. Dalle barre, vai a **[!UICONTROL Amministrazione]** e fai clic su **[!UICONTROL Avvia Enterprise Dashboard]**.
 1. Dalla barra, fai clic su **[!UICONTROL Utenti]** per aprire la pagina **[!UICONTROL Gestione utente]**.
 1. Dalla barra degli strumenti, fai clic su **Aggiungi** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Aggiungi uno o più utenti per consentire loro di condividere le risorse con Creative Cloud.
