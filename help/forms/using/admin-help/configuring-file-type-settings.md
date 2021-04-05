@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
+source-wordcount: '6171'
 ht-degree: 2%
 
 ---
@@ -515,6 +515,8 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft Word. 
 **[!UICONTROL Abilita assegnazione tag]** avanzata: Aggiunge tag avanzati per una migliore accessibilità.
 
 **[!UICONTROL Converti Tutti Gli Stili In Segnalibri]**: Converte tutti gli stili nel documento Word in segnalibri nel documento PDF.
+
+**[!UICONTROL Converti gli stili specificati in segnalibri]**: Converte gli stili definiti nel campo  **[!UICONTROL Stili con]** livelli in segnalibri nel documento PDF.
 
 **[!UICONTROL Stili Con Livelli]**: Specifica gli stili del documento Word convertiti in segnalibri nel documento PDF. Specifica anche il livello dei segnalibri. Per utilizzare questa funzione, deselezionare l&#39;opzione **[!UICONTROL Converti tutti gli stili in segnalibri]** e specificare i nomi degli stili nel formato seguente:
 
