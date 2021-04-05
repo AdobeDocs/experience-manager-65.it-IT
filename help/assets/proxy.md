@@ -3,14 +3,14 @@ title: '[!DNL Assets] sviluppo proxy'
 description: Un proxy è un proxy  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, operazioni supportate, componenti proxy e come sviluppare un proxy worker personalizzato.
 contentOwner: AG
 role: Amministratore, architetto
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] sviluppo proxy  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Un proxy è un&#39;istanza di Experience Manager specifica (e talvolta separata) che utilizza i proxy worker come processori responsabili della gestione di un lavoro e della creazione di un risultato. Un proxy worker può essere utilizzato per un&#39;ampia varietà di attività. Nel caso di un proxy [!DNL Assets] può essere utilizzato per caricare le risorse per il rendering all’interno di Assets. Ad esempio, il proxy worker [IDS](indesign.md) utilizza un [!DNL Adobe InDesign] Server per elaborare i file da utilizzare in Assets.
 
-Quando il proxy è un&#39;istanza [!DNL Experience Manager] separata questo aiuta a ridurre il carico sulle istanze di authoring di Experience Manager. Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull&#39;istanza di authoring di Experience Manager.
+Quando il proxy è un&#39;istanza [!DNL Experience Manager] separata, questo aiuta a ridurre il carico sulle [!DNL Experience Manager] istanze di authoring. Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull’ [!DNL Experience Manager] istanza di authoring.
 
 ## Proxy (HTTP Access) {#proxy-http-access}
 
@@ -185,4 +185,4 @@ Il diagramma seguente e i passaggi descrivono come procedere:
 >
 >Sincronizzazione dei risultati:
 >
->Con n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client (ad Experience Manager Autore) richiedere il risultato utilizzando lo stesso ID di processo univoco assegnato al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro svolto e mantiene il risultato pronto per essere richiesto.
+>Con n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client (ad Experience Manager Autore) richiedere il risultato utilizzando lo stesso ID di processo univoco fornito al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro svolto e mantiene il risultato pronto per essere richiesto.
