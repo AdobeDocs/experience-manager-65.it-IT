@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 96%
+source-wordcount: '854'
+ht-degree: 93%
 
 ---
-
 
 # Lanci{#launches}
 
@@ -99,9 +99,16 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
+>La creazione e la modifica dei lanci richiede diritti di accesso a `/content/launches`, come nel gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
+
+>[!CAUTION]
+>
+>Il riordinamento dei componenti in una pagina Launch non è supportato.
+>
+>Quando la pagina viene promossa, eventuali modifiche al contenuto verranno applicate, ma le posizioni dei componenti non cambieranno.
+
 
 ### La console dei lanci {#the-launches-console}
 
