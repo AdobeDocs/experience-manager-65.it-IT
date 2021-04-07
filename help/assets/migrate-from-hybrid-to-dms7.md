@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practices, amministratore
+role: Business Practitioner, Administrator
+exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
+feature: Modalità Scene7, modalità ibrida
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
-
 
 # Informazioni sul passaggio da Dynamic Media-Hybrid a Dynamic Media-Scene7 {#about-migrating}
 
