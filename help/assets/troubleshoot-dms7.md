@@ -8,15 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practices, amministratore
+role: Business Practitioner, Administrator
+exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
+feature: Risoluzione dei problemi
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 1%
 
 ---
-
 
 # Risoluzione dei problemi Dynamic Media - Modalità Scene7{#troubleshooting-dynamic-media-scene-mode}
 
@@ -262,4 +263,3 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
   </tr>
  </tbody>
 </table>
-
