@@ -5,15 +5,16 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
-role: Business Practices, amministratore
+role: Business Practitioner, Administrator
+exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
+feature: Configurazione
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione di Dynamic Media {#setting-up-dynamic-media}
 
@@ -43,3 +44,4 @@ Vedi anche i seguenti argomenti:
 >**Per l&#39;aggiornamento:**
 >
 >* Dopo l’AEM e l’esecuzione, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di AEM e nuove per Dynamic Media, potrebbe essere necessario rielaborare le risorse per renderle abilitate per Dynamic Media.
+
