@@ -1,17 +1,17 @@
 ---
-title: Accessibilità in [!DNL Experience Manager Assets]
+title: Funzioni e interfacce accessibili di [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Gestione risorse
-role: Professionista, Architetto, Leader
+role: Business Practitioner, Architect, Leader
+exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -147,7 +147,7 @@ Quando esplori l’archivio delle risorse, le seguenti funzionalità migliorano 
 * L&#39;utilizzo del tasto `Esc` per rimuovere le icone delle azioni rapide dalla visualizzazione miniatura non rimuove lo stato attivo dall&#39;ultimo elemento attivo.
 * Con una risorsa selezionata, selezionando `Alt + 4` scelte rapide da tastiera si apre l’elenco [!UICONTROL Riferimenti] nella barra a sinistra. Utilizzando la chiave `Tab`, gli utenti possono navigare tra le voci di riferimento diverse da zero. La navigazione solo attraverso le voci di riferimento diverse da zero consente di risparmiare fatica e tasti.
 * I commenti su una risorsa sono disponibili nella timeline della risorsa. È accessibile se si accede alla barra a sinistra utilizzando una tastiera o una scelta rapida da tastiera.
-* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia, quindi selezionare e spostarsi tra le varie dimensioni per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarne altri.
+* [!UICONTROL Le ] impostazioni di visualizzazione  [!DNL Experience Manager] sono accessibili da tastiera. Gli utenti possono navigare tra le dimensioni delle schede disponibili utilizzando i tasti freccia e selezionare e spostarsi tra le varie schede per navigare tra i vari elementi nella vista Impostazioni visualizzazione esistente e impostarli.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
