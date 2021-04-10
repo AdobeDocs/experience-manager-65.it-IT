@@ -3,16 +3,16 @@ title: Gestire le risorse digitali
 description: Scopri le attività di gestione delle risorse come caricare, scaricare, modificare, cercare, eliminare, annotare e creare una versione delle risorse digitali.
 contentOwner: AG
 mini-toc-levels: 1
-role: Professionista
+role: Business Practitioner
 feature: Gestione risorse,Ricerca
+exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
 workflow-type: tm+mt
-source-wordcount: '9595'
+source-wordcount: '9652'
 ht-degree: 4%
 
 ---
-
 
 # Gestire le risorse digitali {#manage-digital-assets}
 
@@ -564,7 +564,7 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
 
 1. Seleziona la risorsa o la cartella e fai clic su **[!UICONTROL Elimina]** ![Elimina opzione](assets/do-not-localize/deleteoutline.png) nella barra degli strumenti.
 
-   Una volta confermata l’eliminazione:
+   Dopo aver confermato l’eliminazione:
 
    * Se la risorsa non ha riferimenti, viene eliminata.
 
@@ -585,48 +585,33 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
 
 Consulta [Scaricare risorse da Experience Manager](/help/assets/download-assets-from-aem.md).
 
-## Pubblicare risorse {#publishing-assets}
+## Pubblicare o annullare la pubblicazione delle risorse {#publish-assets}
 
->[!NOTE]
->
->Per ulteriori informazioni specifiche su Dynamic Media, consulta [Pubblicazione di risorse Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+Dopo aver caricato, elaborato o modificato le risorse su [!DNL Experience Manager] autore, pubblichi la risorsa sul server di pubblicazione. La pubblicazione rende la risorsa disponibile pubblicamente. L’annullamento della pubblicazione ha rimosso la risorsa dal server di pubblicazione ma non dal server di authoring.
 
-1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
+Per informazioni specifiche su [!DNL Dynamic Media], consulta [pubblicazione [!DNL Dynamic Media] risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. Seleziona l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure seleziona la risorsa e fai clic sull’opzione **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti.
-1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dopo l’ultima pubblicazione o l’annullamento della pubblicazione. Scegli i riferimenti da pubblicare.
+1. Passa alla posizione della risorsa o della cartella di risorse che desideri pubblicare o che desideri rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
 
-   >[!NOTE]
-   >
-   >Le cartelle vuote che fanno parte di una cartella pubblicata non vengono pubblicate.
+1. Seleziona la risorsa o la cartella da annullare la pubblicazione e fai clic su **[!UICONTROL Gestisci pubblicazione]** ![gestisci pubblicazione opzione](assets/do-not-localize/globe-publication.png) nella barra degli strumenti. In alternativa, per pubblicare rapidamente, seleziona l’opzione **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non verrà pubblicata.
 
-1. Fai clic su **[!UICONTROL Pubblica]** per confermare l’attivazione delle risorse.
-
->[!CAUTION]
->
->Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
-
-## Annullare la pubblicazione delle risorse {#unpublishing-assets}
-
-1. Passa alla posizione della cartella di risorse o risorse che desideri rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
-
-1. Seleziona la risorsa/cartella da annullare la pubblicazione e fai clic sull&#39;opzione **[!UICONTROL Gestisci pubblicazione]** ![gestisci pubblicazione](assets/do-not-localize/globe-publication.png) nella barra degli strumenti.
-
-1. Seleziona l&#39;azione **[!UICONTROL Annulla pubblicazione]** dall&#39;elenco.
+1. Seleziona l&#39;opzione **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** a seconda delle esigenze.
 
    ![Annulla pubblicazione azione](assets/unpublish_action.png)
+   *Figura: Opzioni di pubblicazione e annullamento della pubblicazione e opzione di pianificazione.*
 
-1. Per annullare la pubblicazione della risorsa in un secondo momento, seleziona **[!UICONTROL Annulla pubblicazione più tardi]**, quindi seleziona una data per annullare la pubblicazione della risorsa.
-1. Pianifica una data in cui la risorsa non sarà disponibile dall’ambiente di pubblicazione.
-1. Se la risorsa fa riferimento ad altre risorse, scegli i riferimenti da annullare la pubblicazione. Fai clic su **[!UICONTROL Annulla pubblicazione]**.
-1. Nella finestra di dialogo di conferma, fai clic su:
+1. Seleziona **[!UICONTROL Now]** per agire immediatamente sulla risorsa oppure seleziona **[!UICONTROL Later]** per pianificare l’azione. Selezionare una data e un&#39;ora se si sceglie l&#39;opzione **[!UICONTROL Più tardi]**. Fai clic su **[!UICONTROL Avanti]**.
 
-   * **** Annulla per interrompere l’azione
-   * **** Annulla pubblicazione per confermare l’annullamento della pubblicazione delle risorse (non più disponibile nell’ambiente di pubblicazione) alla data specificata.
+1. Durante la pubblicazione, se una risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti, che vengono annullati o modificati dall’ultima pubblicazione. Scegli i riferimenti da pubblicare.
 
-   >[!NOTE]
-   >
-   >Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evita di annullare la pubblicazione dei riferimenti perché altri contenuti pubblicati potrebbero farvi riferimento.
+1. Quando si annulla la pubblicazione, se una risorsa fa riferimento ad altre risorse, scegliete i riferimenti di cui desiderate annullare la pubblicazione. Fai clic su **[!UICONTROL Annulla pubblicazione]**. Nella finestra di dialogo di conferma, fai clic su **[!UICONTROL Annulla]** per interrompere l’azione oppure fai clic su **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse devono essere annullate alla data specificata.
+
+Scopri i seguenti limiti e suggerimenti relativi alla pubblicazione o all’annullamento della pubblicazione di risorse o cartelle:
+
+* L&#39;opzione [!UICONTROL Gestisci pubblicazione] è disponibile solo per gli account utente che dispongono di autorizzazioni di replica.
+* Quando si annulla la pubblicazione di una risorsa complessa, è necessario annullare la pubblicazione solo della risorsa. Evita di annullare la pubblicazione dei riferimenti, poiché altri contenuti pubblicati potrebbero farvi riferimento.
+* Le cartelle vuote non vengono pubblicate.
+* Se pubblichi una risorsa in fase di elaborazione, viene pubblicato solo il contenuto originale. Mancano i rendering. Attendi il completamento dell’elaborazione, quindi pubblica o ripubblica la risorsa al termine dell’elaborazione.
 
 ## Gruppo utenti chiuso {#closed-user-group}
 
