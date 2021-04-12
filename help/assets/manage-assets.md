@@ -7,9 +7,9 @@ role: Business Practitioner
 feature: Gestione risorse,Ricerca
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
+source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
 workflow-type: tm+mt
-source-wordcount: '9652'
+source-wordcount: '9798'
 ht-degree: 4%
 
 ---
@@ -925,4 +925,24 @@ Una raccolta è un set ordinato di risorse. Utilizza le raccolte per condividere
 * Una raccolta può includere risorse provenienti da posizioni diverse, poiché contiene solo riferimenti a tali risorse. Ogni raccolta mantiene l’integrità referenziale delle risorse.
 * Puoi condividere raccolte con più utenti con diversi livelli di privilegi, ad esempio per la modifica, la visualizzazione e così via.
 
-Per informazioni dettagliate sulla gestione della raccolta, consulta [Gestisci raccolte](/help/assets/manage-collections.md) .
+Per informazioni dettagliate sulla gestione delle raccolte, consulta [Gestisci raccolte](/help/assets/manage-collections.md).
+
+## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o in Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] l’app desktop consente l’accesso all’archivio DAM da desktop Windows o Mac. Adobe Asset Link consente di accedere alle risorse dalle applicazioni desktop [!DNL Creative Cloud] supportate.
+
+Quando esplori le risorse dall’interfaccia utente di [!DNL Experience Manager], le risorse scadute non vengono visualizzate. Per impedire la visualizzazione, la ricerca e il recupero delle risorse scadute durante la navigazione dalle app desktop e da Asset Link, gli amministratori possono effettuare le seguenti operazioni di configurazione. La configurazione funziona per tutti gli utenti, indipendentemente dal privilegio di amministratore.
+
+Esegui il seguente comando CURL. Assicurati l’accesso in lettura su `/conf/global/settings/dam/acpapi/` per gli utenti che accedono alle risorse. Per impostazione predefinita, gli utenti che fanno parte del gruppo `dam-user` dispongono dell&#39;autorizzazione.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
