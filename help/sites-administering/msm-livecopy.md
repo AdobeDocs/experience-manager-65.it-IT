@@ -2,14 +2,14 @@
 title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy.
 feature: Gestione di più siti
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4174'
 ht-degree: 2%
 
 ---
-
 
 # Creazione e sincronizzazione di Live Copy{#creating-and-synchronizing-live-copies}
 
@@ -240,7 +240,7 @@ I rollout vengono elaborati come processi asincroni e possono essere controllati
 
 #### Implementa una blueprint dalla barra dei riferimenti {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Nella console **Sites** , seleziona la pagina nella blueprint e apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** (dalla barra degli strumenti).
+1. Nella console **Sites** , seleziona la pagina nella Live Copy e apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** (dalla barra degli strumenti).
 1. Seleziona l&#39;opzione **Blueprint** dall&#39;elenco per mostrare i progetti associati a questa pagina.
 1. Seleziona la blueprint desiderata dall’elenco.
 1. Tocca o fai clic su **Rollout**.
