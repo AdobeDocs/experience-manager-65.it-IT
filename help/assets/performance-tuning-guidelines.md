@@ -3,8 +3,8 @@ title: Ottimizzazione delle prestazioni [!DNL Assets].
 description: Suggerimenti e indicazioni sulla configurazione [!DNL Experience Manager] modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architetto, amministratore
-feature: Gestione risorse
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

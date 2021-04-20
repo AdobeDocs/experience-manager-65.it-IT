@@ -2,8 +2,8 @@
 title: 'Schemi di metadati per definire il layout della pagina delle proprietà dei metadati in [!DNL Adobe Experience Manager Assets]. '
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scopri come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
-role: Business Practices, amministratore
-feature: Metadati
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

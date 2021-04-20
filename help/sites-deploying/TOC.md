@@ -7,8 +7,8 @@ user-guide-title: Guida alla distribuzione di AEM 6.5
 breadcrumb-title: Guida alla distribuzione
 user-guide-description: Informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5, inclusa la distribuzione cloud di Adobe Managed Services.
 feature-set: Experience Manager Sites
-feature: Distribuzione
-role: Architetto
+feature: Deploying
+role: Architect
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

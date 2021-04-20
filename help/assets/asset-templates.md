@@ -2,8 +2,8 @@
 title: Modelli di risorse
 description: Scopri i modelli di risorse in [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
 contentOwner: AG
-role: Professionista
-feature: Gestione delle risorse, Strumenti per sviluppatori
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

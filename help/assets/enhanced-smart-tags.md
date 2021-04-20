@@ -2,8 +2,8 @@
 title: Sono stati migliorati i tag avanzati
 description: Sono stati migliorati i tag avanzati
 contentOwner: AG
-feature: Tag avanzati, ricerca
-role: Professionista
+feature: Smart Tags, Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

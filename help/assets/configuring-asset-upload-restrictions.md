@@ -2,8 +2,8 @@
 title: Configurare le restrizioni di caricamento delle risorse
 description: 'Limitare il tipo di risorse (file) che gli utenti possono caricare '
 contentOwner: AG
-role: Sviluppatore, amministratore, architetto
-feature: Gestione risorse,Caricare
+role: Developer, Administrator, Architect
+feature: Asset Management,Upload
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

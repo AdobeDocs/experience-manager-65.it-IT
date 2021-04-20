@@ -2,8 +2,8 @@
 title: '[!DNL Assets] Esperienza della home page'
 description: Personalizza la  [!DNL Experience Manager Assets] home page per un’esperienza ricca di schermate di benvenuto, inclusa un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
-feature: Strumenti per sviluppatori, gestione delle risorse
-role: Amministratore, Business Practices
+feature: Developer Tools, Asset Management
+role: Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

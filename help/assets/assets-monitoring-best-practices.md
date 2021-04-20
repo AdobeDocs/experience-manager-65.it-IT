@@ -2,8 +2,8 @@
 title: Best practice per monitorare la distribuzione [!DNL Assets] di
 description: Best practice per monitorare l’ambiente e le prestazioni della distribuzione [!DNL Adobe Experience Manager] dopo la distribuzione.
 contentOwner: AG
-role: Amministratore, architetto
-feature: Gestione risorse
+role: Administrator, Architect
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

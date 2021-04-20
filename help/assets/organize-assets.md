@@ -2,8 +2,8 @@
 title: Organizzazione delle risorse digitali
 description: Organizza le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
-role: Professionista
-feature: Gestione risorse,Ricerca
+role: Business Practitioner
+feature: Asset Management,Search
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

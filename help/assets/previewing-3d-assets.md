@@ -3,8 +3,8 @@ title: Anteprima delle risorse 3D
 description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
-feature: Risorse 3D
-role: Professionista
+feature: 3D Assets
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

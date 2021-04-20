@@ -3,8 +3,8 @@ title: Gestire le raccolte di risorse digitali
 description: Scopri le attività per gestire le raccolte di risorse, ad esempio creare, visualizzare, eliminare, modificare e scaricare le raccolte.
 contentOwner: AG
 mini-toc-levels: 1
-role: Professionista
-feature: Raccolte, Gestione risorse
+role: Business Practitioner
+feature: Collections,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: Best practice per l’elaborazione dei formati di file supportati
 description: Best practice per elaborare i vari tipi di file supportati utilizzando [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Administrator
-feature: Gestione delle risorse, Strumenti per sviluppatori
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

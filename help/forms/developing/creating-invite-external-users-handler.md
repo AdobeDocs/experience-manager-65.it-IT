@@ -1,7 +1,7 @@
 ---
 title: Creazione di un handler per l’invito di utenti esterni
 description: Creazione di un handler per l’invito di utenti esterni
-role: Developer (Sviluppatore)
+role: Developer
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

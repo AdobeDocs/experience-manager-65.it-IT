@@ -2,8 +2,8 @@
 title: Flusso di attività delle risorse digitali nella visualizzazione timeline
 description: Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline.
 contentOwner: AG
-feature: Gestione risorse
-role: Business Practices, amministratore
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

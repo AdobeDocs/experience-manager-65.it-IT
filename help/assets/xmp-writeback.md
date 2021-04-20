@@ -2,8 +2,8 @@
 title: Write-back XMP per le rappresentazioni
 description: Scopri in che modo la funzione di XMP write-back propaga le modifiche ai metadati di una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
-role: Business Practices, amministratore
-feature: Metadati
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Aggiungi mappe immagine con collegamenti ipertestuali
 description: Scopri come aggiungere una mappa immagine con collegamenti ipertestuali a un’immagine.
 contentOwner: AG
-role: Business Practices, amministratore
-feature: Gestione risorse
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

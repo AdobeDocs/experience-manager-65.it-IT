@@ -2,8 +2,8 @@
 title: Esaminare raccolte e risorse delle cartelle
 description: Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 contentOwner: AG
-feature: Collaborazione, Raccolte
-role: Professionista
+feature: Collaboration, Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Best practice per [!DNL Assets]
 description: Migliora la stabilità e le prestazioni del sistema sotto carico identificando e aderendo alle best practice che dipendono dalla distribuzione e dalla configurazione.
 contentOwner: AG
-feature: Gestione risorse
-role: Architetto, amministratore
+feature: Asset Management
+role: Architect, Administrator
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

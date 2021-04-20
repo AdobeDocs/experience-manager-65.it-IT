@@ -2,7 +2,7 @@
 title: Elenco delle funzioni AEM esperienze fluide
 description: Elenco delle funzioni per esperienze fluide
 index: n
-feature: 'Authoring  '
+feature: Authoring
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

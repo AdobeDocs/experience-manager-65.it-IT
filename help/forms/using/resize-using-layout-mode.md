@@ -1,7 +1,7 @@
 ---
 title: Utilizzare la modalità Layout per ridimensionare i componenti dei moduli adattivi
 description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
-feature: Moduli adattivi
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

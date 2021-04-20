@@ -2,8 +2,8 @@
 title: Considerazioni e requisiti della rete
 description: Esamina le considerazioni sulla rete durante la progettazione di una distribuzione [!DNL Adobe Experience Manager Assets] e
 contentOwner: AG
-role: Architetto, amministratore
-feature: Strumenti per gli sviluppatori
+role: Architect, Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Guida di Assets
 description: Questa guida descrive tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
-feature: Gestione risorse
-role: Business Practices, Architetto, Amministratore
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

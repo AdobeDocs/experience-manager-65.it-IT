@@ -2,8 +2,8 @@
 title: Gestire le risorse video
 description: Carica, visualizza in anteprima, annota e pubblica risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Professionista
-feature: Gestione risorse
+role: Business Practitioner
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

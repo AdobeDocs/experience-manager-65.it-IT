@@ -7,8 +7,8 @@ user-guide-title: Guida utente allo sviluppo in AEM 6.5
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature-set: Experience Manager Sites
-feature: Sviluppo
-role: Developer (Sviluppatore)
+feature: Developing
+role: Developer
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Elabora le risorse utilizzando i flussi di lavoro
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
-feature: Flusso di lavoro, rappresentazioni
-role: Business Practices, amministratore
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

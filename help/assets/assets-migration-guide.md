@@ -2,8 +2,8 @@
 title: Eseguire la migrazione delle risorse in blocco
 description: Descrive come inserire risorse in [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
-role: Architetto, amministratore
-feature: Migrazione, Rappresentazioni, Gestione delle risorse
+role: Architect, Administrator
+feature: Migration,Renditions,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Utilizzare la modalità Layout per ridimensionare i componenti per la comunicazione interattiva
 description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
-feature: Comunicazione interattiva
+feature: Interactive Communication
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

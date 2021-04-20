@@ -2,8 +2,8 @@
 title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Assets] and [!DNL Dynamic Media] e funzioni supportate per ciascun formato.
 contentOwner: AG
-role: Business Practices, amministratore
-feature: Gestione risorse, rappresentazioni
+role: Business Practitioner, Administrator
+feature: Asset Management,Renditions
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
