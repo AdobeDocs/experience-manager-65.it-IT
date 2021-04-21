@@ -5,13 +5,12 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
-user-guide-description: Crea, gestisci, elabora e distribuisci risorse digitali.
-feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites
+user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
 translation-type: tm+mt
-source-git-commit: 36454754ac726471c611adcc942548d3501109b7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
