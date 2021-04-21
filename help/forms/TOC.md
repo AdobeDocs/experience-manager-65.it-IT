@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
-feature-set: Experience Manager Forms
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3718'
 ht-degree: 4%
 
 ---
@@ -569,7 +568,7 @@ ht-degree: 4%
    + Servizio informazioni di sistema {#system-information-service}
       + [Configurazione del servizio informazioni di sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servizio informazioni di sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Reporting processi {#process-reporting}
++ Reporting processi  {#process-reporting}
    + [Introduzione alla generazione di rapporti sui processi](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Guida introduttiva alla generazione di rapporti sui processi](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Come funziona il reporting dei processi](/help/forms/using/process-reporting/process-reporting-architecture.md)
