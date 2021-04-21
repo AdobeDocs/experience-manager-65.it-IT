@@ -6,16 +6,16 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
-feature: Viewers
+feature: Visualizzatori
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 4b1b9fb014594a67e8db271cc02bc54b29e24896
 workflow-type: tm+mt
-source-wordcount: '6636'
+source-wordcount: '6602'
 ht-degree: 9%
 
 ---
-
 
 # Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
@@ -43,11 +43,13 @@ Per ulteriori informazioni sulle estensioni, consulta [Estensione Adobe](https:/
 
 Il caso d’uso principale per l’integrazione con Experience Platform Launch è quello dei clienti che utilizzano sia AEM Assets che AEM Sites. In questi scenari, puoi impostare un’integrazione standard tra il nodo e il Experience Platform Launch di authoring AEM, quindi associare l’istanza Sites alla proprietà Experience Platform Launch. In seguito, qualsiasi componente WCM di Dynamic Media aggiunto a una pagina Sites terrà traccia dei dati e degli eventi dei visualizzatori.
 
-Consulta [Informazioni sul tracciamento dei visualizzatori Dynamic Media in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Consulta [Tracciamento dei visualizzatori Dynamic Media in AEM Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Un caso d’uso secondario supportato dall’integrazione sono i clienti che utilizzano solo AEM Assets o Dynamic Media Classic. In questi casi, ottieni il codice di incorporamento per il visualizzatore e lo aggiungi alla pagina del sito web. Quindi, ottieni l&#39;URL di produzione della libreria di Experience Platform Launch dal Experience Platform Launch e aggiungilo manualmente al codice della pagina web.
 
-Consulta [Informazioni sul tracciamento dei visualizzatori Dynamic Media utilizzando il codice di incorporamento](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Consulta [Tracciamento dei visualizzatori Dynamic Media tramite codice di incorporamento](#tracking-dynamic-media-viewers-using-embed-code).
+
+<!-- Path on internal wiki [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode). -->
 
 ## Funzionamento del tracciamento di dati ed eventi nell’integrazione {#how-data-and-event-tracking-works-in-the-integration}
 
