@@ -9,10 +9,10 @@ user-guide-description: Scopri come amministrare AEM.
 feature: Amministrazione
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 19%
+source-wordcount: '665'
+ht-degree: 20%
 
 ---
 
@@ -165,6 +165,7 @@ ht-degree: 19%
    + [AEM Sites - Preparazione all’RGPD](gdpr-compliance-sites.md)
    + [Gestione delle richieste RGPD per la AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - Preparazione all’RGPD](gdpr-compliance-commerce.md)
++ Gestione dei contenuti {#contentmanagement}
    + [Come lavorare con i pacchetti](package-manager.md)
    + [Amministrazione dei tag](tags.md)
    + [Esportatore di pagine](page-exporter.md)
