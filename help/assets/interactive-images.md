@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: Immagini interattive
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 2%
 
 ---
-
 
 # Immagini interattive{#interactive-images}
 
@@ -49,7 +49,7 @@ Passaggi per le immagini interattive:
 
 1. **(Facoltativo) Identificazione delle variabili dei punti attivi** : se utilizzi AEM Assets e Dynamic Media come funzionalità autonoma, inizia identificando le variabili dinamiche utilizzate nell’implementazione di Quickview esistente, in modo da poter inserire i dati dei punti attivi durante la creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
 Tuttavia, se utilizzi AEM Sites, eCommerce AEM o entrambi, questo passaggio non è necessario.
-Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Facoltativo) Creazione di un predefinito**  visualizzatore di immagini interattive: personalizza l’immagine grafica utilizzata per rappresentare gli hotspot. La creazione di un proprio predefinito per visualizzatori di immagini interattive non è necessaria se invece desideri utilizzare il predefinito per visualizzatori di immagini interattive preimpostato `Shoppable_Banner`.
 Consulta [(Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -75,7 +75,7 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 >Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
 >
 >* Per aggiungere interattività all’immagine, attiva le Quickview.
->* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+>* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
@@ -116,7 +116,7 @@ Durante questo processo è importante visitare diverse aree del sito web, con di
 
 Nel caso più semplice, l’unica parte variabile nell’URL Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l’unico elemento dati necessario per aggiungere punti attivi all’immagine del banner.
 
-Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi in aggiunta all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
+Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi diversi rispetto all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
 
 Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le relative variabili di punti attivi risultanti:
 
