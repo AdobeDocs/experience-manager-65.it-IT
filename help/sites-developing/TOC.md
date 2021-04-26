@@ -9,9 +9,9 @@ user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Sviluppo
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 16%
 
 ---
@@ -70,10 +70,6 @@ ht-degree: 16%
    + [Integrazione dei servizi con la console JMX](jmx-integration.md)
    + [Sviluppo dell’editor in blocco](dev-bulk-editor.md)
    + [Sviluppo di rapporti](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [Sviluppo (generico)](generic.md)
-      + [Sviluppo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componenti{#components}
    + [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
    + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
