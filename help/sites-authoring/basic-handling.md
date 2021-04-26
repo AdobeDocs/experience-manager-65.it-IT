@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 95%
 
 ---
-
 
 # Operazioni di base{#basic-handling}
 
@@ -84,7 +84,7 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
 ### Pannello di navigazione   {#navigation-panel}
 
-Il pannello di navigazione consente di accedere alle console AEM:
+Il pannello Navigazione consente di accedere alle console AEM:
 
 ![bh-01](assets/bh-01.png)
 
@@ -108,10 +108,10 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Questa console consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti <a href="/help/sites-administering/ecommerce.md">Commerce</a>.</td>
+   <td>Questa console consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>.</td>
   </tr>
   <tr>
-   <td>Frammenti esperienza</td>
+   <td>Frammenti di esperienza</td>
    <td>Un frammento di esperienza<a href="/help/sites-authoring/experience-fragments.md"> è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse.</a></td>
   </tr>
   <tr>
@@ -193,7 +193,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Breadcrumb
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
 
@@ -205,7 +205,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Questa funzione è disponibile solo nella vista a elenco. Per ulteriori informazioni, vedere [visualizzazione elenco](#list-view).
+   Questa funzione è disponibile solo nella vista a elenco. Per ulteriori informazioni, consulta [Vista a elenco](#list-view) .
 
 * Pulsante **Crea**
 
@@ -225,9 +225,9 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarvi tra gli elementi della pagina che sono *attivabili*.
+   Potete navigare in un sito web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabili*.
 
-   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile quando si *scheda* attraverso le opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile mentre si passa alla *scheda* tra le opzioni di intestazione e accelera la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
 
    ![bh-30](assets/bh-30.png)
 
@@ -348,7 +348,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Fate clic sulla scheda</li>
+     <li>Desktop:<br /> Fai clic sulla scheda</li>
      <li>Dispositivo mobile:<br /> Toccate la scheda</li>
     </ul> </td>
   </tr>
@@ -396,7 +396,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
 1. Ad esempio, nella vista a schede:
 
-   ![bh-17](assets/bh-15.png)
+   ![bh-15](assets/bh-15.png)
 
 1. Dopo la selezione di una risorsa, l’intestazione superiore è coperta dalla [barra delle azioni](#actionstoolbar), che permette di accedere alle azioni applicabili alla risorsa selezionata.
 
@@ -414,7 +414,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Gli elementi figlio della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
    * Se tocchi o fai clic sul nome di una risorsa che non presenta elementi figlio, i relativi dettagli verranno visualizzati nella colonna finale.
@@ -591,4 +591,3 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 Verrà aperto un pannello simile alla [Ricerca](/help/sites-authoring/search.md) con i filtri di posizione già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
 ![bh-29](assets/bh-29.png)
-
