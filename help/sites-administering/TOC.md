@@ -9,10 +9,10 @@ user-guide-description: Scopri come amministrare AEM.
 feature: Amministrazione
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 20%
+source-wordcount: '637'
+ht-degree: 18%
 
 ---
 
@@ -109,13 +109,6 @@ ht-degree: 20%
    + [Configurazione della segmentazione](campaign-segmentation.md)
    + [Estensione e configurazione dell’importazione di progettazione per le pagine di destinazione](extending-the-design-importer-for-landingpages.md)
    + [Integrazione delle pagine di destinazione con Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce](ecommerce.md)
-   + [Concetti ](concepts.md)
-   + [Amministrazione di eCommerce generici](generic.md)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
-   + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 + Integrazione {#integration}
    + [Integrazione con i servizi di terze parti](third-party-services.md)
    + [Integrazione con Salesforce](salesforce.md)
