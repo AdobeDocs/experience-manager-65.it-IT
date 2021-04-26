@@ -2,16 +2,16 @@
 title: Guida di Assets
 description: Questa guida descrive tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner, Architect, Administrator
+exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 19%
+source-wordcount: '333'
+ht-degree: 20%
 
 ---
-
 
 # Guida di Assets
 
@@ -40,6 +40,7 @@ Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad es
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base dell’Experience Manager. |
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come sviluppare la distribuzione Experience Manager. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto Experience Manager. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
 | [Experience Manager - Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida illustra come condividere i contenuti generati dagli utenti con [!DNL Livefyre]. |
 
