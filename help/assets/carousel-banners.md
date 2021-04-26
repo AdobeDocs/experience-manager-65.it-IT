@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: Banner a carosello
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4804'
 ht-degree: 4%
 
 ---
-
 
 # Banner a carosello{#carousel-banners}
 
@@ -57,7 +57,7 @@ Per farti iniziare a lavorare velocemente:
 
    >[!NOTE]
    >
-   >Se sei un cliente AEM Sites o Ecommerce, puoi utilizzare la funzione integrata per passare alle pagine dei prodotti e cercare lo SKU esistente nel catalogo dei prodotti. Non è necessario immettere manualmente le variabili punto attivo o mappa immagine. Consulta le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md).
+   >Se sei un cliente AEM Sites o Ecommerce, puoi utilizzare la funzione integrata per passare alle pagine dei prodotti e cercare lo SKU esistente nel catalogo dei prodotti. Non è necessario immettere manualmente le variabili punto attivo o mappa immagine. Consulta le informazioni sulla [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Se sei un cliente di AEM Assets e Dynamic Media, immetti manualmente i dati per gli hotspot e le mappe immagine, e quindi integra l’URL pubblicato o il codice da incorporare con il tuo sistema di gestione dei contenuti di terze parti.
@@ -104,7 +104,7 @@ Quando aggiungi punti attivi o mappe immagine a un&#39;immagine banner in AEM As
 
 >[!NOTE]
 >
->Se sei un cliente AEM Sites e/o AEM e-commerce, salta questo passaggio. Non è necessario identificare manualmente le variabili dei punti attivi o delle mappe immagine; puoi utilizzare l’integrazione con e-commerce per l’integrazione dei prodotti. Consulta le informazioni sulla [configurazione di eCommerce](/help/sites-administering/generic.md). Inoltre, puoi utilizzare il componente interattivo e aggiungerlo alla pagina web.
+>Se sei un cliente AEM Sites e/o AEM e-commerce, salta questo passaggio. Non è necessario identificare manualmente le variabili dei punti attivi o delle mappe immagine; puoi utilizzare l’integrazione con e-commerce per l’integrazione dei prodotti. Consulta le informazioni sulla [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md). Inoltre, puoi utilizzare il componente interattivo e aggiungerlo alla pagina web.
 >
 >Se sei un cliente AEM Assets o Media, pubblica l’URL o il codice da incorporare e poi ti integra con il tuo sistema di gestione dei contenuti di terze parti e individua manualmente gli hotspot e le mappe immagine.
 
