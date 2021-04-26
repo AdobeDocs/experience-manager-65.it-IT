@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 92%
 
 ---
-
 
 # Componenti{#components}
 
@@ -35,13 +35,12 @@ Nelle pagine seguenti puoi trovare dei collegamenti verso alcune delle aree prin
 
 * [Componenti per l’authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   I componenti utilizzati per la creazione di contenuti di pagina standard sono contenuti principalmente nei gruppi **Generale**, **Colonne** e **Forms**.
+   I componenti utilizzati per la creazione di contenuti di pagina standard sono principalmente contenuti nei gruppi **Generale**, **Colonne** e **Forms**.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
    La funzionalità eCommerce di AEM comprende anche una serie di componenti nel gruppo **Commerce**. L’utilizzo effettivo può dipendere dal motore di eCommerce utilizzato.
 
 ## Utilizzo della modalità Progettazione per configurare i componenti {#using-design-mode-to-configure-components}
 
 Oltre ai componenti accessibili agli autori tramite la barra laterale nell’installazione standard, sono disponibili anche diversi altri componenti. Per attivarli o disattivarli, e per modificare i parametri di componenti specifici, puoi usare la [modalità Progettazione](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components).
-
