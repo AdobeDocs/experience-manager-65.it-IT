@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
-feature: Interactive Videos
+feature: Video interattivi
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '6058'
 ht-degree: 5%
 
 ---
-
 
 # Video interattivi{#interactive-videos}
 
@@ -73,7 +73,7 @@ Passaggi video interattivi:
 
 1. **(Facoltativo) Identificazione delle variabili**  Quickview - Inizia identificando le variabili dinamiche utilizzate dall&#39;implementazione esistente di Quickview. Puoi utilizzare le variabili per mappare le miniature dei prodotti sulla visualizzazione rapida del prodotto corrispondente al momento della creazione del video interattivo. Consulta [(Facoltativo) Identificazione delle variabili Quickview](#optional-identifying-quickview-variables).
    *Tieni presente che questo passaggio è necessario solo se sono soddisfatte* tutte le seguenti condizioni: ・ Per aggiungere interattività al video, attiva le visualizzazioni rapide.
-・ La tua implementazione di AEM utilizza *not* un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+・ La tua implementazione di AEM utilizza *not* un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Facoltativo) Creazione di un predefinito**  visualizzatore video interattivo: personalizza l’aspetto e il comportamento di vari componenti che compongono il lettore, come lo scorrimento video e le miniature interattive.
 La creazione di un proprio predefinito per visualizzatori video interattivi non è necessaria se invece desideri utilizzare i predefiniti per visualizzatori video interattivi `Shoppable_Video_Light` o `Shoppable_Video_Dark`.
@@ -98,7 +98,7 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 >[!NOTE]
 Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
 * Per aggiungere interattività al video, attiva le Quickview.
-* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/sites-administering/concepts.md).
+* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 Se l’implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
