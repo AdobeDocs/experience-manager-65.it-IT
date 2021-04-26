@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 5%
 
 ---
@@ -28,17 +28,17 @@ L’onboarding per AEM contenuto e commerce è un processo in due fasi:
 
 2. Connetti AEM con la tua soluzione commerce
 
-### Installare il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5
+### Installa il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5 {#install-add-on}
 
 Scarica e installa il componente aggiuntivo AEM Commerce per AEM 6.5 dal portale [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) .
 
 Avvia e installa il Service Pack AEM 6.5 richiesto. È consigliabile installare l’ultimo service pack disponibile.
 
-    >[!NOTE]
-    >
-    >Questo verrà fatto dal CSE per i clienti AEM Managed Service.
+>[!NOTE]
+>
+>Questo verrà fatto dal CSE per i clienti di AEM Managed Service.
 
-### Connetti AEM al tuo sistema commerce
+### Connetti AEM al tuo sistema commerce {#connect}
 
 AEM può essere collegato a qualsiasi sistema commerce con un endpoint GraphQL accessibile per AEM. Questi endpoint sono solitamente disponibili pubblicamente oppure possono essere collegati tramite VPN privata o connessioni locali a seconda della configurazione del singolo progetto.
 
