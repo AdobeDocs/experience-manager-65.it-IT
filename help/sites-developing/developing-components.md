@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
 
 ---
-
 
 # Sviluppo di componenti AEM{#developing-aem-components}
 
@@ -26,8 +26,8 @@ I componenti AEM vengono utilizzati per conservare, formattare ed eseguire il re
 
 * Quando [si creano pagine](/help/sites-authoring/default-components.md), i componenti consentono agli autori di modificare e configurare il contenuto.
 
-   * Quando si crea un sito [Commerce](/help/sites-administering/ecommerce.md) i componenti possono, ad esempio, raccogliere ed eseguire il rendering delle informazioni dal catalogo.
-Per ulteriori informazioni, consulta [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md) .
+   * Quando si crea un sito [Commerce](/help/commerce/cif-classic/administering/ecommerce.md) i componenti possono, ad esempio, raccogliere ed eseguire il rendering delle informazioni dal catalogo.
+Per ulteriori informazioni, consulta [Sviluppo di eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) .
 
    * Durante la costruzione di un sito [Communities](/help/communities/author-communities.md) i componenti possono fornire informazioni ai visitatori e raccogliere informazioni da essi.
 Per ulteriori informazioni, consulta [Sviluppo di community](/help/communities/communities.md) .
