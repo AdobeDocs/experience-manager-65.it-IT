@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # Ambiente e strumenti di authoring{#authoring-the-environment-and-tools}
 
@@ -141,7 +141,7 @@ Dalla barra degli strumenti nella parte superiore del browser Risorse è possibi
 * Nome
 * Percorso
 * Tipo di risorsa, ad esempio immagini, manoscritti, documenti, video, pagine, paragrafi e prodotti
-* Caratteristiche delle risorse come Orientamento (Verticale, Orizzontale, Quadrato) e Stile (Colore, Monocromatico, Scala di grigio)
+* Caratteristiche della risorsa, ad esempio Orientamento (Verticale, Orizzontale, Quadrato) e Stile (Colore, Monocromatico, Scala di grigio)
 
    * Disponibile solo per alcuni tipi di risorsa
 
@@ -243,7 +243,7 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 
-* [Riferimenti alle pagine prodotto](/help/sites-administering/generic.md#showing-product-references) (disponibili dalla console Commerce - Prodotti)
+* [Riferimenti alle pagine prodotto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibili dalla console Commerce - Prodotti)
 * [Lanci](/help/sites-authoring/launches.md): fornisce accesso ai lanci correlati.
 * [](/help/sites-administering/msm.md)Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
 * [Blueprint](/help/sites-administering/msm-best-practices.md), fornisce dettagli e varie azioni
@@ -286,7 +286,7 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 Ad esempio, quando appropriato, da **Informazioni pagina** possono essere disponibili le funzioni seguenti:
 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio.
-* [Apri nell’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaccia classicase questa opzione è stata  [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
+* [Apri in ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaccia classica se questa opzione è stata  [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
