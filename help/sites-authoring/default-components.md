@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
-
 
 # Componenti{#components}
 
@@ -60,9 +60,9 @@ Le seguenti pagine forniscono collegamenti ad alcune informazioni aggiuntive imp
 
 * [Componenti principali](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html): i componenti principali offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando si crea un [sito community](/help/communities/overview.md).
+* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando viene creato un [sito della community](/help/communities/overview.md).
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - La funzionalità eCommerce all&#39;interno di AEM include anche una serie di componenti. L&#39;utilizzo effettivo può dipendere dal motore di eCommerce in uso.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - La funzionalità eCommerce di AEM include anche una serie di componenti. L’utilizzo effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ### Configurazione dei componenti {#configuring-components}
 
@@ -70,4 +70,3 @@ Oltre ai componenti standard a cui hanno accesso gli autori in un’installazion
 
 * Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-authoring/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
 * Se la pagina è basata su un modello statico, è possibile utilizzare la [modalità Progettazione](/help/sites-authoring/default-components-designmode.md#enable-disable-components) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
-
