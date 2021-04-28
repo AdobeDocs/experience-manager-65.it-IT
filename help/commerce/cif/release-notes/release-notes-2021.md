@@ -2,10 +2,10 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -27,7 +27,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | v021.04.22 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Componente aggiuntivo CIF | 2021.04.22 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componenti core CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sito di riferimento CIF Venia | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -77,11 +77,11 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Gestione dell&#39;esperienza del prodotto: Arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
 
-* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti esperienza, con l’azione di passare rapidamente al contenuto associato.
+* Proprietà estese della console prodotti per mostrare le risorse collegate e i frammenti esperienza, inclusa l’azione per passare rapidamente al contenuto associato.
 
-### Miglioramenti  {#what-is-improved-february}
+### Miglioramenti di {#what-is-improved-february}
 
-* Livello dati lato client migliorato con url immagine prodotto e informazioni sulla categoria
+* Livello dati lato client migliorato con url immagine prodotto e informazioni sulla categoria.
 
 * Correzioni di bug multiple.
 
@@ -97,7 +97,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Gestione dell&#39;esperienza del prodotto: Nuova scheda di proprietà &quot;Commerce&quot; per Assets e Frammenti esperienza. Questa scheda ti consente di collegare risorse e frammenti esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti di e-commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
 
-### Miglioramenti  {#what-is-improved-january}
+### Miglioramenti di {#what-is-improved-january}
 
 * Invia i dati utente dopo l’autenticazione ad Adobe Client Data Layer.
 
