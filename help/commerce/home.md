@@ -2,10 +2,10 @@
 title: Contenuto AEM e commercio
 description: Risorse di supporto autonomo e collegamenti alla documentazione su Contenuto e Commerce AEM
 translation-type: tm+mt
-source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
+source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 32%
+source-wordcount: '337'
+ht-degree: 30%
 
 ---
 
@@ -13,6 +13,11 @@ ht-degree: 32%
 # Contenuto AEM e commercio {#commerce-guide}
 
 In questa pagina sono elencate le risorse di supporto autonomo relative a AEM Commerce.
+
+>[!NOTE]
+>
+>Per AEM contenuto e commercio con AEM come Cloud Service, consulta [AEM contenuto e commercio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
+
 
 ## Articoli principali su Commerce {#key-articles}
 
