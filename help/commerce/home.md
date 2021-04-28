@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce
-description: Risorse di supporto autonomo e collegamenti alla documentazione di AEM Commerce
+title: Contenuto AEM e commercio
+description: Risorse di supporto autonomo e collegamenti alla documentazione su Contenuto e Commerce AEM
 translation-type: tm+mt
-source-git-commit: b8a46b96db1b81897186f1c8078c06bea64789c4
+source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 33%
+source-wordcount: '315'
+ht-degree: 32%
 
 ---
 
 
-# AEM Commerce {#commerce-guide}
+# Contenuto AEM e commercio {#commerce-guide}
 
 In questa pagina sono elencate le risorse di supporto autonomo relative a AEM Commerce.
 
