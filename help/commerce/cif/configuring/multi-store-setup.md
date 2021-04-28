@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 83%
+source-wordcount: '381'
+ht-degree: 69%
 
 ---
 
@@ -28,7 +28,7 @@ Le funzioni Live Copy e Copia per lingua di AEM per la gestione di più siti son
 
 Si consiglia di utilizzare una relazione 1:1 tra AEM Sites e la vista Store di Magento.
 
-Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione dedicata dello store, procedi come segue:
+Per collegare un sito AEM e AEM componenti core CIF a una visualizzazione dedicata dello store, segui i passaggi seguenti:
 
 ## Configurazione {#configuration}
 
@@ -51,7 +51,7 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
 4. Assegnare la configurazione figlio a un sito AEM
 
    * Passa alla console di AEM Sites.
-   * Passa alla directory principale dell’area geografica o della lingua della struttura del sito; ad esempio, per la pagina di esempio di Venia: /content/venia/us _oppure_ /content/venia/us/it
+   * Passa alla directory principale dell’area geografica o della lingua della struttura del sito, ad esempio /content/venia/us _o_ /content/venia/us/it per la pagina di esempio di Venia
    * Seleziona la pagina e apri le proprietà della pagina.
    * Seleziona la scheda Avanzate.
    * Nella sezione `Configuration`, seleziona la configurazione creata al passaggio
@@ -60,5 +60,5 @@ Per collegare un sito AEM e i componenti core CIF di AEM a una visualizzazione d
 
 * [Magento Website, Stores e Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Componenti core CIF di AEM: configurazione di più store o siti](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [Utilizzo di Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-administering/msm.md)
