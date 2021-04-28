@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: Sicurezza
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 0%
 
 ---
@@ -773,7 +773,7 @@ La configurazione dei CUG in combinazione con LiveCopy è rappresentata nell’a
 
 Entrambi questi elementi vengono creati sotto `cq:Page`. Con la progettazione corrente, MSM gestisce solo i nodi e le proprietà che si trovano sotto il nodo `cq:PageContent` (`jcr:content`).
 
-Pertanto, non è possibile eseguire il rollback dei gruppi CUG da una blueprint a una Live Copy. Pianifica di conseguenza questo aspetto durante la configurazione di una Live Copy.
+Pertanto, i gruppi CUG non possono essere implementati in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione di Live Copy.
 
 ## Modifiche all’implementazione del nuovo CUG {#changes-with-the-new-cug-implementation}
 
