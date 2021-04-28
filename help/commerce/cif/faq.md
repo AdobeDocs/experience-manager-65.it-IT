@@ -3,9 +3,9 @@ title: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce In
 description: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 47%
 
 ---
@@ -64,11 +64,11 @@ I dati del prodotto sono generalmente già tradotti in PIM o in Magento. L’int
 
 ## 13. Esiste un modo per migliorare i dati di prodotto con testo commerciale? Dove si effettua questa procedura? In AEM o nella soluzione commerce?
 
-È consigliabile gestire i dati e i contenuti relativi al marketing in AEM. Decorare i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto o creare e collegare Frammenti di esperienza per contenuti non strutturati con i tuoi prodotti.
+È consigliabile gestire dati e contenuti relativi al marketing in AEM. Decorare i dati di prodotto dalla soluzione commerce con attributi aggiuntivi utilizzando Frammenti di contenuto oppure creare e collegare frammenti di esperienza per contenuti non strutturati con i prodotti.
 
 ## 14. Come possiamo garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
-Si consiglia di utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, fare riferimento a <https://magento.com/pci-compliance>
+È consigliabile utilizzare metodi di pagamento astratti. In questo modo il client browser comunica direttamente con il provider del gateway dei pagamenti in modo che né l&#39;Adobe né le soluzioni commerce detengano o trasmettano i dati del titolare della carta. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI del Magento, fare riferimento a <https://magento.com/pci-compliance>
 
 ## 15. Se uso versioni cloud AEM e di Magento, questa soluzione comune è compatibile con PCI?
 
