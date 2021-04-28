@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 29%
+source-wordcount: '2541'
+ht-degree: 28%
 
 ---
 
@@ -61,7 +61,7 @@ Dupliceremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) e
 
 1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza di Magento o aggiungi le configurazioni al progetto appena creato.
 
-1. A questo punto è necessario disporre di una versione funzionante di una vetrina che sia collegata a un’istanza di Magento. Passa alla pagina `US` > `Home` in: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. A questo punto, è necessario disporre di una versione funzionante di una vetrina collegata a un&#39;istanza di Magento. Passa alla pagina `US` > `Home` in: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Dovresti vedere che la vetrina si basa al momento sul tema Venia. Espandi il menu principale della vetrina: dovresti vedere diverse categorie, a indicare che la connessione a Magento funziona.
 
@@ -287,7 +287,7 @@ Utilizza [l&#39;IDE che preferisci](https://docs.adobe.com/content/help/en/exper
 
    Con l’aggiunta al metodo `extendProductQueryWith`, gli attributi di prodotto aggiuntivi saranno disponibili per il resto del modello. Inoltre si riduce la quantità di query eseguite.
 
-   Nel codice riportato sopra, l&#39;attributo `addCustomSimpleField` viene utilizzato per recuperare l&#39;attributo `eco_friendly` . Questo illustra come eseguire una query per gli attributi personalizzati che fanno parte dello schema di Magento.
+   Nel codice di cui sopra, viene utilizzato `addCustomSimpleField` per recuperare l&#39;attributo `eco_friendly` . Questo illustra come eseguire una query per gli attributi personalizzati che fanno parte dello schema di Magento.
 
    >[!NOTE]
    >
@@ -326,7 +326,7 @@ Utilizza [l&#39;IDE che preferisci](https://docs.adobe.com/content/help/en/exper
    }
    ```
 
-   Nel metodo di cui sopra il `productRetriever` viene utilizzato per recuperare il prodotto e il metodo `getAsInteger()` viene utilizzato per ottenere il valore dell&#39;attributo `eco_friendly`. In base alle query GraphQL eseguite in precedenza, sappiamo che il valore previsto quando l&#39;attributo `eco_friendly` è impostato su &quot;**Sì**&quot; è in realtà un numero intero di **1**.
+   Nel metodo precedente, il `productRetriever` viene utilizzato per recuperare il prodotto e il metodo `getAsInteger()` viene utilizzato per ottenere il valore dell&#39;attributo `eco_friendly`. In base alle query GraphQL eseguite in precedenza, sappiamo che il valore previsto quando l&#39;attributo `eco_friendly` è impostato su &quot;**Sì**&quot; è in realtà un numero intero di **1**.
 
    Ora che il modello Sling è stato aggiornato, il markup del componente deve essere aggiornato per visualizzare effettivamente un indicatore di **eco-friendly** basato sul modello Sling.
 
@@ -494,8 +494,8 @@ Rivedi le funzionalità del contrassegno **Nuovo** già implementato nel Product
 
 ## Risorse aggiuntive {#additional-resources}
 
-- [AEM Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalizzazione dei componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/customizing.html)
-- [Guida introduttiva di AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Personalizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
