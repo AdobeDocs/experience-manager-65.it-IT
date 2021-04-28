@@ -2,10 +2,10 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 * Braintree il supporto per i pagamenti aggiunto AEM Venia store front.
 
-### Miglioramenti {#what-is-improved-november}
+### Miglioramenti di {#what-is-improved-november}
 
 * Selezione di categorie/prodotti migliorata per rispettare la visualizzazione specifica dell&#39;archivio Magenti in una configurazione multi-store.
 
@@ -53,7 +53,7 @@ ht-degree: 10%
 
 * Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Crea account.
 
-### Miglioramenti {#what-is-improved-october}
+### Miglioramenti di {#what-is-improved-october}
 
 * I dettagli del prodotto e i componenti dell’elenco dei prodotti sono stati migliorati per mostrare i dati fittizi, in modo da fornire agli autori un’anteprima del layout quando questi componenti vengono inseriti in un modello/pagina.
 
@@ -77,7 +77,7 @@ ht-degree: 10%
 
 * Il componente Pagamento include i moduli indirizzo, la selezione dei pagamenti e la selezione dei metodi di spedizione.
 
-### Miglioramenti {#what-is-improved-september}
+### Miglioramenti di {#what-is-improved-september}
 
 * I componenti Product Teaser e Product Carousel supportano le varianti di prodotto.
 
@@ -105,7 +105,7 @@ ht-degree: 10%
 
 * Pulsante per consentire agli autori di inserire in una pagina AEM un collegamento a una pagina AEM, a una pagina di dettagli del prodotto, a una pagina dell’elenco dei prodotti o a un collegamento esterno.
 
-### Miglioramenti {#what-is-improved-august}
+### Miglioramenti di {#what-is-improved-august}
 
 * La configurazione dell’archivio di Magenti è stata spostata da OSGi a AEM console del prodotto per rendere la configurazione dell’integrazione più semplice per gli autori.
 
@@ -131,7 +131,7 @@ ht-degree: 10%
 
 * Elenco categorie in primo piano lato server per visualizzare l&#39;elenco delle categorie su una pagina AEM.
 
-### Miglioramenti {#what-is-improved-july}
+### Miglioramenti di {#what-is-improved-july}
 
 * Il supporto per Magenti 2.3.2 e le correzioni di bug relativi alle proprietà del prodotto vengono visualizzati nella console del prodotto.
 
