@@ -1,24 +1,24 @@
 ---
-title: Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework
-description: Le imprese possono richiedere soluzioni Commerce di terze parti aggiuntive per potenziare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione Commerce di terze parti a Adobe Experience Manager utilizzando I/O Runtime.
+title: Integrazione Commerce di AEM e di terze parti tramite Commerce Integration Framework
+description: Le aziende possono richiedere soluzioni commerce aggiuntive di terze parti per alimentare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti a Adobe Experience Manager utilizzando I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
-# Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework {#aem-third-party}
+# Integrazione Commerce di AEM e di terze parti tramite Commerce Integration Framework {#aem-third-party}
 
-L’integrazione della soluzione Commerce non Adobe è uno scenario comune per CIF. Le soluzioni di terze parti con diverse API e schemi vengono connesse tramite un livello di integrazione.
+L’integrazione della soluzione Commerce non Adobe è uno scenario comune per CIF. le soluzioni di terze parti con diverse API e schemi vengono connesse tramite un livello di integrazione.
 
 ## Architettura {#architecture}
 
 L’architettura generale è la seguente:
 
-![Panoramica dell’architettura AEM per terze parti/non Magento](../assets//AEM_nonMagento_Architecture.png)
+![Panoramica dell’architettura AEM non di Magento/di terze parti](../assets//AEM_nonMagento_Architecture.png)
 
 Lo scopo di questo livello di integrazione è mappare API e schemi di terze parti rispetto alle API e agli schemi Adobe Commerce GraphQL supportati al di fuori dell’Experience Manager. Grazie a questa incapsulazione, la logica di integrazione e i sistemi possono essere aggiornati senza modificare il codice all’interno dell’Experience Manager.
 
@@ -50,4 +50,4 @@ Il consiglio per i componenti lato client critici in termini di prestazioni è d
 
 L’ [implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference) è un ottimo punto di partenza per creare l’integrazione nella soluzione commerce. Anche se supporta GraphQL, può essere integrato con qualsiasi altro tipo di API, come REST.
 
-Questo livello di integrazione non è necessario se è disponibile un livello di terze parti (ad esempio Mulesoft) o se l’integrazione è basata sulla soluzione di terze parti.
+Questo livello di integrazione non è necessario se è disponibile un livello di terze parti (come Mulesoft) o se l’integrazione è basata sulla soluzione di terze parti.
