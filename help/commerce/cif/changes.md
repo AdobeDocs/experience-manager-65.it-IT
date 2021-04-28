@@ -3,7 +3,7 @@ title: Modifiche di rilievo del componente aggiuntivo Commerce Integration Frame
 description: Modifiche di rilievo del componente aggiuntivo Commerce Integration Framework (CIF) rispetto alle versioni CIF precedenti.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: a8dba82029168660b84b085ab46d0406b19961ef
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Questo documento evidenzia le importanti differenze tra il componente aggiuntivo
 
 ## Installazione e aggiornamenti
 
-Il pacchetto aggiuntivo CIF AEM viene installato e aggiornato con AEM gestore di pacchetti.
+Il pacchetto aggiuntivo CIF AEM viene installato e aggiornato con Gestione pacchetti AEM.
 
 **Versioni CIF precedenti**
 
@@ -34,7 +34,7 @@ L’endpoint viene configurato tramite la console OSGi.
 
 ## Implementazione del progetto CIF Venia
 
-Progetto disponibile su [Guide AEM GitHub - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) e distribuzione eseguita tramite package AEM manager
+Progetto disponibile su [Guide AEM GitHub - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) e implementazione tramite AEM Package Manager.
 
 **Versioni CIF precedenti**
 
@@ -58,4 +58,4 @@ AEM esegue il rendering immediato delle esperienze di catalogo di prodotti utili
 
 >[!NOTE]
 >
->Per ulteriore documentazione su come utilizzare CIF con AEM Managed Service o AEM on-premise, consulta [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Per ulteriore documentazione su come utilizzare CIF con AEM Managed Service o AEM On-Premise, consulta [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
