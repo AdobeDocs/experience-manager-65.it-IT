@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 32%
 
 ---
@@ -30,7 +30,7 @@ Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF.
 
 >[!NOTE]
 >
->Le istruzioni seguenti sono utili per configurare un ambiente di sviluppo AEM locale per AEM Commerce utilizzando CIF per AEM 6.5). Se utilizzi AEM come Cloud Service, consulta la documentazione [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) .
+>Le istruzioni seguenti sono utili per configurare un ambiente di sviluppo AEM locale per AEM Commerce utilizzando CIF per AEM 6.5). Se utilizzi AEM come Cloud Service, consulta la documentazione [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) .
 
 Il componente aggiuntivo AEM Commerce per AEM 6.5 aka. Il componente aggiuntivo CIF è disponibile anche per lo sviluppo locale e viene fornito come pacchetto AEM. Può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) come feature pack.
 
@@ -58,7 +58,7 @@ Il componente aggiuntivo CIF può essere scaricato dal [portale di distribuzione
 
 Per lo sviluppo di progetti CIF locali utilizzando i passaggi AEM e il componente aggiuntivo CIF seguenti:
 
-1. Scarica la versione 6.5 di AEM e installa il Service Pack 6.5 di AEM. AEM 6.5 Service Pack 7 è richiesto, tuttavia si consiglia di installare l&#39;ultimo service pack disponibile.
+1. Scarica la versione 6.5 di AEM e installa il Service Pack 6.5 di AEM. AEM 6.5 Service Pack 7 è necessario, tuttavia si consiglia di installare l&#39;ultimo service pack disponibile.
 
 1. Decomprimi il file AEM.jar per creare la cartella `crx-quickstart` ed esegui:
 
@@ -149,7 +149,7 @@ Per iniziare a usare Venia Reference Store, è sufficiente clonare l’ [archivi
 >
 >Il progetto Venia Reference Store contiene due profili di generazione per AEM as a Cloud Service e AEM 6.5. Controlla il [progetto readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) per vedere come vengono utilizzati. Per AEM 6.5 utilizza il profilo `classic` .
 
-### Connetti AEM al sistema commerce
+### Connetti AEM a Commerce System
 
 Per collegare il progetto al sistema commerce, AEM deve essere configurato con l’endpoint GraphQL del sistema commerce.
 
