@@ -2,9 +2,9 @@
 title: Migrazione al componente aggiuntivo CIF (AEM Commerce Integration Framework)
 description: Come migrare al componente aggiuntivo CIF di AEM Commerce Integration Framework (CIF) da una versione precedente
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Il componente aggiuntivo CIF è disponibile per AEM 6.5 tramite il [portale di d
 
 Consulta [Guida introduttiva a Contenuto AEM e Commerce](getting-started.md).
 
-Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [AEM componenti core CIF](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che implementano CIF, Adobe fornisce [AEM componenti core CIF](https://github.com/adobe/aem-core-cif-components).
 
 ## Catalogo dei prodotti
 
@@ -29,10 +29,10 @@ L’importazione dei dati del catalogo dei prodotti non è supportata dal compon
 >
 >Se non sono disponibili API in tempo reale, per l’integrazione è necessario utilizzare una cache di prodotto esterna con API. Esempio [Magento open-source](https://magento.com/products/magento-open-source).
 
-## Esperienze del catalogo dei prodotti con rendering AEM
+## Esperienze nel catalogo dei prodotti con il rendering AEM
 
 Se utilizzi la blueprint del catalogo con Classic CIF, devi aggiornare il flusso di lavoro del catalogo dei prodotti. Il componente aggiuntivo CIF ora esegue il rendering immediato delle esperienze di catalogo di prodotti utilizzando AEM modelli di catalogo. Non è più necessaria alcuna replica dei dati di prodotto o delle pagine di prodotto.
 
-## Dati non memorizzabili nella cache e interazione con lo shopping
+## Dati non memorizzabili nella cache e interazione di acquisto
 
-Le richieste lato client per dati e interazioni non memorizzabili nella cache (ad esempio, add-to-cart, search) devono passare direttamente all’endpoint e-commerce (soluzione e-commerce o livello di integrazione) tramite CDN/Dispatcher. Rimuovi tutte le chiamate in cui AEM solo un proxy.
+Le richieste lato client per dati e interazioni non memorizzabili nella cache (ad esempio add-to-cart, search) devono passare direttamente all’endpoint commerce (soluzione commerce o livello di integrazione) tramite CDN/Dispatcher. Rimuovi tutte le chiamate in cui AEM solo un proxy.
