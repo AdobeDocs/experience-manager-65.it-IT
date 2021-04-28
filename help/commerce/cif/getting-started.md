@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Per iniziare a utilizzare AEM contenuti e Commerce, è necessario installare il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5.
 
-## Requisiti minimi del software
+## Requisiti software minimi
 
 [È necessario AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 o successivo.
 
@@ -38,7 +38,7 @@ Avvia e installa il Service Pack AEM 6.5 richiesto. È consigliabile installare 
 >
 >Questo verrà fatto dal CSE per i clienti di AEM Managed Service.
 
-### Connetti AEM al tuo sistema commerce {#connect}
+### Connetti AEM al tuo Commerce System {#connect}
 
 AEM può essere collegato a qualsiasi sistema commerce con un endpoint GraphQL accessibile per AEM. Questi endpoint sono solitamente disponibili pubblicamente oppure possono essere collegati tramite VPN privata o connessioni locali a seconda della configurazione del singolo progetto.
 
@@ -52,9 +52,9 @@ I componenti core AEM Content and Commerce e CIF utilizzano sia connessioni lato
 
 Il componente aggiuntivo CIF fornisce un servlet proxy GraphQL in `/api/graphql` che può essere utilizzato facoltativamente per [sviluppo locale](develop.md). Per le distribuzioni di produzione si consiglia vivamente di impostare un proxy inverso per l’endpoint GraphQL di e-commerce tramite il Dispatcher AEM o su altri livelli di rete (come CDN).
 
-## Configurazione di archivi e cataloghi {#catalog}
+## Configurazione di store e cataloghi {#catalog}
 
-Il componente aggiuntivo e i [componenti core CIF](https://github.com/adobe/aem-core-cif-components) possono essere utilizzati su più strutture di siti AEM connesse a diversi store di e-commerce (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega allo store e al catalogo predefiniti di Adobe Commerce (Magento).
+Il componente aggiuntivo e i [componenti core CIF](https://github.com/adobe/aem-core-cif-components) possono essere utilizzati su più strutture di siti AEM connesse a diversi store di e-commerce (o viste store e così via). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega allo store e al catalogo predefiniti di Adobe Commerce (Magento).
 
 Questa configurazione può essere regolata per il progetto tramite la configurazione del Cloud Service CIF, come descritto di seguito:
 
