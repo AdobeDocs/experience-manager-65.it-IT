@@ -2,10 +2,10 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 12%
+source-wordcount: '1324'
+ht-degree: 11%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 12%
 
 * Storefront di riferimento Venia aggiornato per utilizzare Frammento esperienza per il piè di pagina. Gli utenti aziendali possono modificare il piè di pagina utilizzando AEM strumenti di authoring.
 
-### Miglioramenti {#what-is-improved-november}
+### Miglioramenti di {#what-is-improved-november}
 
 * Il componente Checkout è stato migliorato per consentire agli acquirenti di entrare nel paese di destinazione e consentire loro di inserire indirizzi di fatturazione/spedizione al di fuori degli Stati Uniti.
 
@@ -48,7 +48,7 @@ ht-degree: 12%
 
 * Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per la raccolta dei dati e la comunicazione dei dati ai server di reporting e analisi digitali. Per ulteriori informazioni, consulta [Livello dati client di Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Informazioni sul prodotto e pagine dell’elenco dei prodotti estese per compilare automaticamente i metadati SEO (ad esempio titolo, descrizione metadati, parole chiave meta) configurati dall’interno dell’interfaccia utente amministratore del Magento
+* Dettagli prodotto e pagine elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, descrizione meta, parole chiave meta) configurati dall&#39;interfaccia utente amministratore di Magento
 
 * È stato corretto un bug del componente teaser Commerce.
 
@@ -120,7 +120,7 @@ ht-degree: 12%
 
 * L’interfaccia utente di configurazione cloud CIF supporta le azioni di pubblicazione/annullamento della pubblicazione.
 
-### Miglioramenti {#what-is-improved-july}
+### Miglioramenti di {#what-is-improved-july}
 
 * Il componente Accesso è stato spostato nell’elenco a discesa dell’utente per un facile accesso.
 
@@ -146,7 +146,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * È stata aggiunta la mappatura degli utenti del servizio come parte del requisito di sicurezza per garantire l&#39;accesso a /conf tramite gli utenti del servizio e non manipolando direttamente le ACL. I componenti core CIF devono ora utilizzare un utente di servizio per accedere alle configurazioni.
 
-### Miglioramenti {#what-is-improved-june}
+### Miglioramenti di {#what-is-improved-june}
 
 * Nella pagina Elenco prodotti e nella pagina Risultati ricerca viene visualizzato il numero totale di elementi. Il numero di elementi viene aggiornato quando l’acquirente applica i filtri.
 
@@ -192,7 +192,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * Impostazioni di configurazione per il connettore CIF unificato e semplificato. Per ulteriori informazioni, consulta la sezione [Guida introduttiva](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nuova AEM configurazione del progetto CIF](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Miglioramenti {#what-is-improved-april}
+### Miglioramenti di {#what-is-improved-april}
 
 * Carrello acquisti e flusso di cassa esteso per supportare i clienti registrati.
 
@@ -218,9 +218,9 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * È stato aggiunto il supporto per la ricerca nel selettore categorie.
 
-* Impaginazione nel componente Elenco categorie per supportare set di catalogo di grandi dimensioni.
+* Impaginazione nel componente Elenco categorie per supportare set di cataloghi di grandi dimensioni.
 
-### Miglioramenti {#what-is-improved-february}
+### Miglioramenti di {#what-is-improved-february}
 
 * Carrello aggiunto per visualizzare gli sconti.
 
@@ -248,7 +248,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * Componente prodotto correlato generico disponibile.
 
-### Miglioramenti {#what-is-improved-january}
+### Miglioramenti di {#what-is-improved-january}
 
 * Supporto per visualizzare il pulsante CTA sul teaser del prodotto.
 
@@ -256,6 +256,6 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * Opzione per nascondere/visualizzare il titolo/banner nel componente Elenco prodotti .
 
-* Funzione di trascinamento applicata al componente Carosello di prodotto.
+* Funzione di trascinamento applicata al componente Carosello prodotto .
 
 * Correzioni di bug multiple applicate.
