@@ -7,7 +7,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 2%
@@ -203,7 +203,7 @@ Questa procedura consente di caricare e configurare l&#39;archivio dimostrativo 
    * nome utente: admin
    * password: nimda
 
-1. Dalla navigazione della barra laterale, esplora **System** e **Tools**. Quindi selezionare **Importa** per aprire la procedura guidata **: Finestra Importazione CSV**.
+1. Dalla navigazione della barra laterale, espandi **System** e **Tools**. Quindi selezionare **Importa** per aprire la procedura guidata **: Finestra Importazione CSV**.
 1. Nella scheda **Configurazione**, **Carica** il seguente **File di importazione**:
 
    [Ottieni file](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
