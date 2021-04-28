@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 95%
+source-wordcount: '791'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 
 ## Configurazione {#configuration}
 
-Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la “configurazione di provider URL CIF” e configurare il servizio come descritto di seguito.
+Per configurare il servizio `UrlProvider` in base ai requisiti e alle esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la configurazione &quot;CIF URL Provider configuration&quot; e configurare il servizio come descritto di seguito.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di A
 
 ## Esempio
 
-Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) include configurazioni esemplificative che mostrano come usare URL personalizzati per le pagine di prodotti e categorie. Questi consentono di impostare per ciascun progetto specifici pattern di URL per le pagine di prodotti e categorie, in base alle esigenze SEO (Search Engine Optimization). Si utilizza una combinazione di `UrlProvider` CIF e di mappature Sling, come descritto sopra.
+Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) include configurazioni esemplificative che mostrano come usare URL personalizzati per le pagine di prodotti e categorie. Questo consente a ogni progetto di impostare singoli pattern URL per le pagine di prodotti e categorie in base alle proprie esigenze SEO (Search Engine Optimization). Si utilizza una combinazione di `UrlProvider` CIF e di mappature Sling, come descritto sopra.
 
 >[!NOTE]
 >
@@ -74,5 +74,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappature delle risorse di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
