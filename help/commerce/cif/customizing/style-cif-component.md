@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 33%
+source-wordcount: '2566'
+ht-degree: 28%
 
 ---
 
@@ -65,7 +65,7 @@ Dupliceremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) e
 
 ## Librerie client e modulo ui.frontend {#introduction-to-client-libraries}
 
-I CSS e JavaScript responsabili del rendering del tema o degli stili della vetrina sono gestiti in AEM da una [libreria client](/help/sites-developing/clientlibs.md), o clientlib. Le librerie client consentono di organizzare CSS e JavaScript nel codice di un progetto e quindi di distribuirli sulla pagina.
+I CSS e JavaScript responsabili del rendering del tema o degli stili della vetrina sono gestiti in AEM da una [libreria client](/help/sites-developing/clientlibs.md) o clientlibs in breve. Le librerie client consentono di organizzare CSS e JavaScript nel codice di un progetto e quindi di distribuirli sulla pagina.
 
 Gli stili specifici per il marchio possono essere applicati AEM componenti core CIF aggiungendo ed ignorando i CSS gestiti da queste librerie client. È fondamentale comprendere in che modo le librerie client sono strutturate e incluse nella pagina.
 
@@ -164,7 +164,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come funzionan
 
    ![CSS del sito compilato in ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Il file `site.css` copiato nel progetto `ui.apps`. Ora fa parte di una libreria client denominata `clientlib-site` con una categoria `venia.site`. Una volta che il file fa parte del modulo `ui.apps`, può essere distribuito a AEM.
+   Questo copia il file `site.css` nel progetto `ui.apps`. Ora fa parte di una libreria client denominata `clientlib-site` con una categoria `venia.site`. Una volta che il file fa parte del modulo `ui.apps`, può essere distribuito a AEM.
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come funzionan
 
    ![Altre librerie client](../assets/style-cif-component/other-clientlibs.png)
 
-   Queste librerie client non sono gestite dal modulo `ui.frontend` . Queste librerie client includono invece dipendenze CSS e JavaScript fornite da Adobe. La definizione per queste clientlibrerie si trova nel file `.content.xml` sotto ogni cartella.
+   Queste librerie client non sono gestite dal modulo `ui.frontend` . Queste librerie client includono invece dipendenze CSS e JavaScript fornite da Adobe. La definizione di queste librerie client si trova nel file `.content.xml` sotto ogni cartella.
 
    **clientlib-base**: si tratta di una libreria client vuota che incorpora semplicemente le dipendenze necessarie dai [componenti core di AEM](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html). La categoria è `venia.base`.
 
@@ -225,7 +225,7 @@ Quindi verifica l’inclusione delle librerie client nella pagina.
 
    ![Visualizza come pubblicato](../assets/style-cif-component/view-as-published.png)
 
-   La pagina viene aperta senza caricare alcun JavaScript di authoring di AEM, come apparirebbe sul sito pubblicato. All’URL è stato aggiunto il parametro di query `?wcmmode=disabled` . Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina, rimuovendo elementi dell’istanza di authoring di AEM.
+   La pagina viene aperta senza caricare alcun JavaScript di authoring di AEM, come apparirebbe sul sito pubblicato. All’URL è stato aggiunto il parametro di query `?wcmmode=disabled` . Quando si sviluppano CSS e JavaScript, è buona norma utilizzare questo parametro per semplificare la pagina senza l’AEM dell’autore.
 
 1. Visualizza l’origine della pagina e individua diverse librerie client incluse:
 
@@ -275,12 +275,12 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Nella s
 
    ![Criterio pagina : pagina di destinazione](../assets/style-cif-component/page-policy-properties.png)
 
-   Sul lato destro è disponibile un elenco delle **categorie** di librerie client che verranno incluse in tutte le pagine che utilizzano questo modello.
+   Sul lato destro è disponibile un elenco delle librerie client **categories** che verranno incluse in tutte le pagine che utilizzano questo modello.
 
    * `venia.dependencies` - Fornisce tutte le librerie di fornitori da cui  `venia.site` dipende.
    * `venia.site` - Questa è la categoria per  `clientlib-site` la quale il  `ui.frontend` modulo genera.
 
-   Altri modelli utilizzano lo stesso criterio: **Pagina di contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo essere certi che le stesse librerie client verranno incluse in tutte le pagine.
+   Altri modelli utilizzano lo stesso criterio, **Pagina di contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo assicurarci che le stesse librerie client siano incluse in tutte le pagine.
 
    Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio avrà un proprio stile o un proprio *tema*, ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
 
@@ -328,7 +328,7 @@ Il webpack-dev-server proxy le immagini e alcuni dei CSS/JavaScript dell&#39;ist
 
    >[!CAUTION]
    >
-   > Se ricevi un errore relativo a Sass, interrompi il server ed esegui il comando `npm rebuild node-sass` e ripeti i passaggi precedenti. Questo può verificarsi se una versione diversa di `npm` e `node` è specificata nel progetto `aem-cif-guides-venia/pom.xml`.
+   > Se ricevi un errore relativo a Sass, interrompi il server ed esegui il comando `npm rebuild node-sass` e ripeti i passaggi precedenti. Questo può verificarsi se disponi di una versione diversa di `npm` e `node` e quindi specificata nel progetto `aem-cif-guides-venia/pom.xml`.
 
 1. Passa a [http://localhost:8080/](Http://localhost:8080/) in una nuova scheda con lo stesso browser di un’istanza di AEM registrata. Dovresti vedere la home page di Venia tramite il webpack-dev-server:
 
