@@ -10,14 +10,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
+exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
-
 
 # Rendering lato server e SPA{#spa-and-server-side-rendering}
 
@@ -64,7 +64,9 @@ Nelle sezioni seguenti viene illustrato come Adobe I/O Runtime può essere utili
 
 >[!NOTE]
 >
->Adobe consiglia un’istanza Adobe I/O Runtime separata per ogni ambiente AEM (authoring, pubblicazione, stage, ecc.).
+>Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ambiente (stage, prod, test, ecc.). Ciò consente modelli tipici del ciclo di vita dello sviluppo dei sistemi (SDLC) con diverse versioni di una singola applicazione implementate in ambienti diversi. Per ulteriori informazioni, vedere il documento [CI/CD per Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>
+>Un’area di lavoro separata non è necessaria per istanza (autore, pubblicazione) a meno che non vi siano differenze nell’implementazione di runtime per tipo di istanza.
 
 ## Configurazione del modulo di rendering remoto {#remote-renderer-configuration}
 
