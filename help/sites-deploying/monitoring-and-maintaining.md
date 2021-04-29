@@ -77,7 +77,7 @@ A questo scopo, è necessario eseguire il backup dell&#39;intero archivio ](#bac
 
 >[!CAUTION]
 >
->Se si utilizza un server applicazioni di terze parti, è possibile che altre cartelle si trovino in una posizione diversa e che sia necessario eseguire il backup. Per informazioni sull&#39;installazione dei server applicazioni, vedere [Come installare AEM con un server applicazioni](/help/sites-deploying/application-server-install.md) . [](/content/docs/en/aem/6-3/deploy/installing.md#install adobe experience manager with a application server)
+>Se si utilizza un server applicazioni di terze parti, è possibile che altre cartelle si trovino in una posizione diversa e che sia necessario eseguire il backup. Per informazioni sull&#39;installazione dei server applicazioni, vedere [Come installare AEM con un server applicazioni](/help/sites-deploying/application-server-install.md) .
 
 >[!CAUTION]
 >
