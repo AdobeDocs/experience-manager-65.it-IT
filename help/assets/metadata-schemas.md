@@ -1,21 +1,21 @@
 ---
-title: 'Schemi di metadati per definire il layout della pagina delle proprietà dei metadati in [!DNL Adobe Experience Manager Assets]. '
+title: 'Gli schemi di metadati definiscono il layout della pagina delle proprietà dei metadati '
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scopri come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
+role: Business Practitioner,Administrator
+feature: Metadati
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
 workflow-type: tm+mt
-source-wordcount: '3605'
+source-wordcount: '3571'
 ht-degree: 7%
 
 ---
 
-
 # Schemi metadati {#metadata-schemas}
 
-Le organizzazioni hanno a disposizione un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. La correzione dell&#39;applicazione dei metadati è un requisito fondamentale per la gestione dei flussi di lavoro e dei processi basati su metadati. Per aderire alla strategia e agli standard dei metadati a livello aziendale, puoi utilizzare schemi di metadati che aiutano gli utenti DAM ad allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
+Le organizzazioni hanno a disposizione un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. La correzione dell&#39;applicazione dei metadati è sacrosanta per mantenere flussi di lavoro e processi basati su metadati. Per aderire alla strategia e agli standard dei metadati a livello aziendale, puoi utilizzare schemi di metadati che aiutano gli utenti DAM ad allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
 
 In [!DNL Adobe Experience Manager Assets], gli schemi contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni sul layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro ancora. Puoi utilizzare l’editor [!UICONTROL Forms schema metadati] per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
@@ -27,9 +27,9 @@ Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettu
 
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
-*Figura: Scheda Base in  [!UICONTROL Proprietà] risorsa.*
+   *Figura: Scheda Base in  [!UICONTROL Proprietà] risorsa.*
 
-Per modificare il tipo MIME di una risorsa, utilizza un modulo schema metadati personalizzato o modifica un modulo esistente. Per ulteriori informazioni, consulta [Modifica schema metadati Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) . Se modifichi lo schema metadati di un tipo MIME, il layout della pagina delle proprietà per le risorse e tutti i sottotipi vengono modificati. Ad esempio, se modifichi uno schema jpeg in `default/image`, modifica solo il layout dei metadati (proprietà delle risorse) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modifichi lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
+   Per modificare il tipo MIME di una risorsa, utilizza un modulo schema metadati personalizzato o modifica un modulo esistente. Per ulteriori informazioni, consulta [Modifica schema metadati Forms](#edit-metadata-schema-forms) . Se modifichi lo schema metadati di un tipo MIME, il layout della pagina delle proprietà per le risorse e tutti i sottotipi vengono modificati. Ad esempio, se modifichi uno schema jpeg in `default/image`, modifica solo il layout dei metadati (proprietà delle risorse) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modifichi lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
 ## Moduli schema metadati {#default-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
-* `./jcr:created`: Memorizza la data e l’ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, Adobe consiglia di contrassegnarle come Disabilita modifica.
+* `./jcr:created`: Memorizza la data e l’ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, Adobe consiglia di contrassegnarle come Disabilita modifica. In caso contrario, al momento di salvare le proprietà della risorsa si verifica l’errore “Impossibile modificare le risorse”.
 
 Per garantire che il componente sia visualizzato correttamente nel modulo schema metadati, il percorso della proprietà non deve includere spazi.
 
@@ -301,7 +301,7 @@ In questo caso, crea un nodo in `/etc/dam/metadataeditor/mimetypemappings` nell�
 [!DNL Assets] mappa i seguenti tipi MIME e moduli di schema:
 
 | Modulo schema | Tipi MIME |
-| --------------------------- | --------------------------------------------------- |
+|---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -326,9 +326,7 @@ Ad esempio, puoi definire una variante dello schema metadati predefinito e appli
 
 Solo le risorse caricate nella cartella a cui viene applicato lo schema sono conformi ai metadati modificati definiti nello schema dei metadati della variante. [!DNL Assets] in altre cartelle in cui lo schema originale viene applicato continuano a essere conformi ai metadati definiti nello schema originale.
 
-L’ereditarietà dei metadati da parte delle risorse si basa sullo schema applicato alla cartella di primo livello nella gerarchia. In altre parole, se una cartella non contiene sottocartelle, le risorse all’interno della cartella ereditano i metadati dallo schema applicato alla cartella.
-
-È possibile applicare uno schema diverso nella sottocartella. Le risorse all’interno di una sottocartella ereditano lo schema metadati della sottocartella immediata. Se a livello di sottocartella non viene applicato alcuno schema o lo stesso schema, le relative risorse ereditano lo schema dalla cartella principale.
+L’ereditarietà dei metadati da parte delle risorse si basa sullo schema applicato alla cartella di livello superiore nella gerarchia. Lo stesso schema viene applicato o ereditato dalle sottocartelle. Se a livello di sottocartella viene applicato uno schema diverso, l’ereditarietà si interrompe.
 
 1. Nell&#39;interfaccia [!DNL Experience Manager] , passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo metadati predefinito, fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
