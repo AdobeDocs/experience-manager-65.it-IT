@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Sicurezza
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2873'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ Questa sezione descrive vari passaggi da seguire per garantire che l’installaz
 
 >[!NOTE]
 >
->Ulteriori informazioni [sono disponibili anche sulle minacce di sicurezza più pericolose pubblicate da Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>Sono inoltre disponibili ulteriori informazioni sulle minacce per la sicurezza più pericolose pubblicate da [Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -163,7 +162,7 @@ Questo bundle OSGi deve essere disinstallato sui sistemi produttivi di authoring
 
 #### Quadro di protezione CSRF {#the-csrf-protection-framework}
 
-AEM 6.1 viene fornito con un meccanismo che aiuta a proteggere dagli attacchi di Forgery di richieste intersito, denominato **CSRF Protection Framework**. Per ulteriori informazioni su come usarlo, consulta la [documentazione](/help/sites-developing/csrf-protection.md).
+AEM 6.1 viene fornito con un meccanismo che aiuta a proteggere dagli attacchi Cross-Site Request Forgery, denominato **CSRF Protection Framework**. Per ulteriori informazioni su come usarlo, consulta la [documentazione](/help/sites-developing/csrf-protection.md).
 
 #### Filtro Sling Referrer {#the-sling-referrer-filter}
 
@@ -333,11 +332,9 @@ Per attenuarlo, segui i passaggi seguenti:
 
 **Riduzione del numero di DoS causato dal servlet di download delle risorse**
 
-Il servlet di download delle risorse predefinito in AEM consente agli utenti autenticati di emettere richieste di download simultanee di grandi dimensioni arbitrarie per la creazione di file ZIP di risorse visibili che possono sovraccaricare il server e/o la rete.
+Il servlet di download delle risorse predefinito consente agli utenti autenticati di emettere richieste di download simultanee di grandi dimensioni arbitrarie per creare file ZIP di risorse. La creazione di grandi archivi ZIP può sovraccaricare il server e la rete. Per attenuare un potenziale rischio di Denial of Service (DoS) causato da questo comportamento, il componente `AssetDownloadServlet` OSGi è disabilitato per impostazione predefinita nell&#39;istanza di pubblicazione [!DNL Experience Manager]. Per impostazione predefinita è abilitata nell’istanza di authoring [!DNL Experience Manager] .
 
-Per attenuare i potenziali rischi DoS causati da questa funzione, il componente `AssetDownloadServlet` OSGi è disattivato per impostazione predefinita per le istanze di pubblicazione sulle versioni più recenti di AEM.
-
-Se la configurazione richiede che Asset Download Server sia abilitato, consulta [questo articolo](/help/assets/download-assets-from-aem.md) per ulteriori informazioni.
+Se non hai bisogno della funzionalità di download, disattiva il servlet nelle distribuzioni di authoring e pubblicazione. Se la configurazione richiede che la funzionalità di download delle risorse sia abilitata, consulta [questo articolo](/help/assets/download-assets-from-aem.md) per ulteriori informazioni. Inoltre, puoi definire un limite massimo di download supportato dalla distribuzione.
 
 ### Disattiva WebDAV {#disable-webdav}
 
@@ -452,4 +449,4 @@ Adobe consiglia vivamente di eseguire un test di penetrazione dell&#39;infrastru
 
 ### Tecniche consigliate per lo sviluppo {#development-best-practices}
 
-È fondamentale che il nuovo sviluppo segua le [best practice sulla sicurezza](/help/sites-developing/security.md) per garantire che l&#39;ambiente AEM rimanga sicuro.
+È fondamentale che i nuovi sviluppi seguano le [best practice sulla sicurezza](/help/sites-developing/security.md) per garantire che l&#39;ambiente AEM rimanga sicuro.
