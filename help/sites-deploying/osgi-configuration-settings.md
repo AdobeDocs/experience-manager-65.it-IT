@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configurazione
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # Impostazioni di configurazione OSGi{#osgi-configuration-settings}
 
@@ -179,7 +178,7 @@ Per ulteriori informazioni, consulta [AEM Logging](/help/sites-deploying/configu
 
 **Apache Sling Main** ServletConfigure:
 
-* **Numero di chiamate per** richiesta e  **profondità di** ricorsione per proteggere il sistema da infinite chiamate di script e ricorsività.
+* **Numero di chiamate per** richiesta e  **profondità di** ricorsione per proteggere il sistema da infinite chiamate di script e ricorsioni eccessive.
 
 **Apache Sling MIME Type** ServiceConfigure:
 
@@ -433,29 +432,6 @@ FormatoIndica il formato in cui viene fornito l’ID utente. Utilizzo:
 Per ulteriori informazioni, consulta [Version Purging](/help/sites-deploying/version-purging.md) .
 
 **Day CQ Workflow Email Notification** ServiceConfigura le impostazioni e-mail per le notifiche inviate da un flusso di lavoro.
-
-**Day CQSE HTTP** ServiceControllare il CQ Servlet Engine:
-
-* **NIO per HTTP, **Usare o meno NIO per HTTP. Valori predefiniti per true. Utilizzato solo se HTTP è abilitato.
-* **Timeout connessione, **Timeout connessione in millisecondi. Questa proprietà si applica sia alle connessioni HTTP che HTTPS. Il valore predefinito è 60 secondi.
-
-* **Abilita HTTPS,** se HTTPS è abilitato o meno. Predefinito su false.
-* **Timeout sessione**, durata predefinita di una sessione HTTP specificata in minuti. Se il timeout è pari a 0 o inferiore, le sessioni non si timeout. Il valore predefinito è 10 minuti.
-* **Debug Logging**, se scrivere o meno messaggi a livello di DEBUG. Predefinito su false.
-* **Dimensione** buffer richieste, Dimensione del buffer per le richieste in byte. Il valore predefinito è 8 KB.
-* **Numero massimo di thread**, Numero massimo di thread da utilizzare per gestire le richieste. Il valore predefinito è 200.
-
-Le seguenti proprietà si applicano solo se HTTPS è abilitato.
-
-* **Porta** HTTPS, porta per ascoltare la richiesta HTTPS. Valore predefinito 433.
-* **NIO per HTTPS**, da utilizzare o meno NIO per HTTP. Predefinito al valore della proprietà NIO per HTTP .
-* **Registro chiavi**, percorso assoluto dell&#39;archivio chiavi da utilizzare per HTTPS. Obbligatorio se HTTPS è abilitato.
-* **Password** keystore, password per accedere al Keystore.
-* **Alias** chiave, alias della chiave segreta nel Registro chiavi.
-* **Password** chiave, password per sbloccare la chiave segreta nel Registro chiavi.
-* **Certificato client**: requisito per il cliente di fornire un certificato valido. Il valore predefinito è Nessuno.
-
-Per informazioni sulle opzioni relative a SSL e su come abilitare HTTPS per CQSE, consulta anche [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md) .
 
 **CQ Rewriter HTML Parser Factory**
 
