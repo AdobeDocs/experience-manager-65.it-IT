@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
 >[!NOTE]
 >
->È possibile recuperare un massimo di 1000 nomi di set di criteri dal database.
+>È possibile recuperare un massimo di 1000 nomi di set di criteri dal database utilizzando l&#39;API `getAllPolicysetnames()`.
 
 I set di criteri vengono creati ed eliminati nelle pagine web di amministrazione della sicurezza dei documenti da amministratori e coordinatori dei set di criteri che dispongono delle autorizzazioni necessarie.
 
