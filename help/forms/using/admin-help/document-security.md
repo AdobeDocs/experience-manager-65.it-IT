@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sulla protezione dei documenti {#about-document-security}
 
@@ -223,6 +222,10 @@ I coordinatori dei set di criteri possono eseguire le seguenti attività:
 * Visualizza eventi di criteri e documenti per qualsiasi criterio o documento all&#39;interno del set di criteri
 * Revoca dell’accesso ai documenti
 * Cambiare i criteri per il documento.
+
+>[!NOTE]
+>
+>È possibile recuperare un massimo di 1000 nomi di set di criteri dal database.
 
 I set di criteri vengono creati ed eliminati nelle pagine web di amministrazione della sicurezza dei documenti da amministratori e coordinatori dei set di criteri che dispongono delle autorizzazioni necessarie.
 
