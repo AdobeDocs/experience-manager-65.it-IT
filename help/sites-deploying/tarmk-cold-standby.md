@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configurazione
+exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
+source-git-commit: d9565be9183bd4485036d99869585a79999be54b
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2719'
 ht-degree: 0%
 
 ---
-
 
 # Come eseguire AEM con lo standby a freddo TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -282,7 +281,7 @@ Per il servizio di standby a freddo sono disponibili le seguenti impostazioni OS
 
 * **Intervalli IP consentiti (`primary.allowed-client-ip-ranges`):**  gli intervalli IP da cui il principale consentirà le connessioni.
 * **Protetto (`secure`):** abilita la crittografia SSL. Per utilizzare questa impostazione, deve essere abilitata su tutte le istanze.
-* **Timeout di lettura dello standby (`standby.readtimeout`):** timeout per le richieste emesse dall&#39;istanza di standby in millisecondi. L’impostazione di timeout consigliata è 43200000. Si consiglia generalmente di impostare il timeout su un valore di almeno 12 ore.
+* **Timeout di lettura dello standby (`standby.readtimeout`):** timeout per le richieste emesse dall&#39;istanza di standby in millisecondi. Il valore predefinito utilizzato è 60000 (un minuto).
 
 * **Standby Automatic Cleanup (`standby.autoclean`):** chiama il metodo di pulizia se la dimensione dell&#39;archivio aumenta su un ciclo di sincronizzazione.
 
@@ -410,4 +409,3 @@ In alternativa, l&#39;archivio primario può essere copiato manualmente sullo st
    >[!NOTE]
    >
    >Nel caso in cui non si utilizzi un archivio dati condiviso, la raccolta degli oggetti inattivi dovrà prima essere eseguita sul computer primario e poi sul sistema di standby.
-
