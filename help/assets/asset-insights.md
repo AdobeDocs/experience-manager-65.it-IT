@@ -1,27 +1,26 @@
 ---
-title: Informazioni sulla risorsa
-description: Scopri come la funzione Asset Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
+title: Informazioni sulle risorse
+description: Scopri come la funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Informazioni sulla risorsa, rapporti sulle risorse
+exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '756'
 ht-degree: 7%
 
 ---
 
+# Informazioni sulle risorse {#asset-insights}
 
-# Informazioni sulla risorsa {#asset-insights}
-
-La funzione Asset Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe. Aiuta a trarre informazioni sulle loro prestazioni e popolarità.
+La funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe. Aiuta a trarre informazioni sulle loro prestazioni e popolarità.
 
 [!DNL Assets] Insights acquisisce i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, su cui è stato fatto clic e le impression (numero di volte in cui un’immagine viene caricata sul sito web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più comuni da includere nei cataloghi, nelle campagne di marketing e così via. Puoi anche formulare politiche di archiviazione e rinnovo delle licenze basate su queste statistiche.
 
 Affinché [!DNL Assets] Informazioni utili per acquisire le statistiche di utilizzo per le immagini da un sito web, è necessario includere il codice di incorporamento per l’immagine nel codice del sito web.
 
-Per consentire a Asset Insights di visualizzare le statistiche di utilizzo per le risorse, configura innanzitutto la funzione per recuperare i dati di reporting da Adobe Analytics. Per informazioni dettagliate, consulta [Configurare Asset Insights](/help/assets/configure-asset-insights.md).
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura prima la funzione per recuperare i dati di reporting da Adobe Analytics. Per informazioni dettagliate, consulta [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzione, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -29,7 +28,7 @@ Per consentire a Asset Insights di visualizzare le statistiche di utilizzo per l
 
 ## Visualizzare le statistiche di un&#39;immagine {#viewing-statistics-for-an-image}
 
-Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
+Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
 1. Dall’ [!DNL Assets] interfaccia utente (UI), seleziona l’immagine e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 1. Dalla pagina Proprietà, fai clic sulla scheda **[!UICONTROL Insights]** .
@@ -50,7 +49,7 @@ Puoi visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
    >[!NOTE]
    >
-   >Poiché la funzione Asset Insights in genere recupera periodicamente i dati delle soluzioni da Adobe Analytics, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Asset Insights per il recupero dei dati di Analytics.
+   >Poiché la funzione Asset Insights in genere recupera i dati delle soluzioni da Adobe Analytics in modo periodico, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Assets Insights per il recupero dei dati di Analytics.
 
 1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un arco di tempo, seleziona il periodo nella sezione **[!UICONTROL Statistiche di prestazioni]**. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
 
@@ -74,7 +73,7 @@ Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simulta
 
 ## Pianifica processo in background {#scheduling-background-job}
 
-Asset Insights recupera periodicamente i dati di utilizzo per le risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, puoi modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
+Assets Insights recupera periodicamente i dati di utilizzo per le risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Assets Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, puoi modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dalla console Web.
 
 1. Fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Apri la configurazione del servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
