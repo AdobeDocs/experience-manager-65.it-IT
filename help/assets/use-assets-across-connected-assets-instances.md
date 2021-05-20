@@ -3,10 +3,9 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
-feature: Connected Assets,User and Groups
+feature: Risorse, utenti e gruppi collegati
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-translation-type: tm+mt
-source-git-commit: 48e5b55a1d79fef6172f684cb65a4137113fb7fb
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
 source-wordcount: '2739'
 ht-degree: 29%
@@ -182,7 +181,7 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 
 ## Limitazioni e best practice {#tip-and-limitations}
 
-* Per ottenere informazioni sull’utilizzo delle risorse, configura la funzionalità [Asset Insight](/help/assets/asset-insights.md) sull’istanza [!DNL Sites] .
+* Per ottenere informazioni sull’utilizzo delle risorse, configura la funzionalità [Informazioni sulle risorse](/help/assets/asset-insights.md) sull’istanza [!DNL Sites] .
 
 ### Gestione di autorizzazioni e risorse {#permissions-and-managing-assets}
 
