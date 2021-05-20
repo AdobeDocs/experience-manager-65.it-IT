@@ -4,12 +4,11 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Gestione risorse,Ricerca
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 4%
 
 ---
@@ -114,7 +113,7 @@ Puoi scegliere di sostituire una risorsa esistente, crearne un’altra versione 
 >
 >Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
 >
->Se Asset Insights è abilitato per tracciare impression/clic con Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
+>Se Asset Insights è abilitato per tracciare impression o clic con [!DNL Adobe Analytics], l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su [!DNL Analytics].
 
 Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che stai tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore di checksum `SHA 1` del binario della risorsa esistente corrisponde al valore di checksum della risorsa caricata. In questo caso, i nomi delle risorse non hanno importanza.
 
@@ -325,7 +324,7 @@ Se carichi molte risorse in Adobe Experience Manager, le richieste di I/O sul se
 
 >[!NOTE]
 >
->Il caricamento in streaming è disattivato per Adobe Experience Manager in esecuzione su server JEE con versione servlet-api inferiore a 3.1.
+>Il caricamento in streaming è disattivato per Adobe Experience Manager in esecuzione su server JEE con versione servlet-api inferiore alla 3.1.
 
 ### Estrai archivio ZIP contenente risorse {#extractzip}
 
@@ -401,7 +400,7 @@ Per visualizzare in anteprima una risorsa utilizzando la tastiera, effettua le s
 
 1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora di disattivazione]** . La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo il [!UICONTROL Tempo di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l’interfaccia web [!DNL Assets] o tramite l’API HTTP.
 
-1. Nel campo **[!UICONTROL Tag]** , seleziona uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona `Enter`. Il nuovo tag viene salvato in [!DNL Experience Manager]. [!DNL YouTube] richiede tag per la pubblicazione. Consulta [pubblicare video su YouTube](video.md#publishing-videos-to-youtube).
+1. Nel campo **[!UICONTROL Tag]** , seleziona uno o più tag. Per aggiungere un tag personalizzato, digita il nome del tag nella casella e seleziona `Enter`. Il nuovo tag viene salvato in [!DNL Experience Manager]. [!DNL YouTube] richiede tag per la pubblicazione. Consulta [pubblicare video in YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
