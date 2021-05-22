@@ -2,16 +2,15 @@
 title: Configurare l’integrazione di AEM Assets con Experience Cloud
 description: Scopri come configurare l’integrazione di AEM Assets con Experience Cloud.
 contentOwner: AG
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
+exl-id: d167cf97-6829-45a7-ba46-2239d530b060
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '988'
 ht-degree: 2%
 
 ---
-
 
 # Configurare l’integrazione AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
@@ -27,7 +26,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 
 >[!NOTE]
 >
->Questa funzione è obsoleta in AEM Assets. Trova sostituzioni in [AEM e procedure consigliate per l&#39;integrazione di Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se hai delle domande, [contatta l&#39;Assistenza clienti Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Questa funzione è obsoleta in [!DNL Assets]. Trova sostituzioni in [AEM e procedure consigliate per l&#39;integrazione di Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se hai delle domande, [contatta l&#39;Assistenza clienti Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -172,5 +171,4 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Best practice per l’integrazione di Assets e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Best practice per la condivisione delle cartelle da risorse a Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
