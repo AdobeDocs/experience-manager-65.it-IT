@@ -6,11 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 42%
+source-wordcount: '582'
+ht-degree: 43%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 42%
    + [Cercare risorse digitali](search-assets.md)
    + [Utilizzare i metadati delle risorse](metadata.md)
    + [Risorse multilingue](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Utilizzare le risorse in Assets](aem-assets-adobe-stock.md)
+   + [Utilizzare [!DNL Adobe Stock] risorse nelle risorse](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Sono stati migliorati i tag avanzati](enhanced-smart-tags.md)
@@ -87,11 +86,11 @@ ht-degree: 42%
    + [Personalizza ed estendi [!DNL Assets]](extending-assets.md)
    + [Elabora le risorse utilizzando gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
    + [Estendere la funzionalità di ricerca](searchx.md)
-   + [Installare e  [!DNL ImageMagick] configurare per lavorare con [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installa e configura [!DNL ImageMagick] per lavorare con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
    + [Estendi editor risorse](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Supporto dei frammenti di contenuto  [!DNL Assets] nelle API HTTP](assets-api-content-fragments.md)
+   + [Supporto dei frammenti di contenuto in [!DNL Assets] API HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] sviluppo proxy](proxy.md)
 + Amministrare le risorse {#administer}
    + [Formati di file supportati](assets-formats.md)
@@ -114,7 +113,7 @@ ht-degree: 42%
    + [Usa rasterizzatore PDF](aem-pdf-rasterizer.md)
    + [Configurare le restrizioni di caricamento](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integrazione](aem-cc-integration-best-practices.md)
-   + [Integra con [!DNL InDesign Server]](indesign.md)
+   + [Integrare con [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management delle attività](drm.md)
    + [Utilizza il pacchetto dimostrativo per informazioni sulle risorse](use-demo-package-for-asset-insights.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
@@ -125,12 +124,11 @@ ht-degree: 42%
    + [Multi-tenancy per raccolte, snippet e modelli di snippet](multi-tenancy.md)
    + [Filtrare le risorse](watermarking.md)
    + [Modelli di risorse](asset-templates.md)
-   + [Best practice per condividere la cartella con [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Assets] Configurazione con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Pubblicare le risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Configura [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Pubblicare risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Pubblicare cartelle su [!DNL Brand Portal]](brand-portal-publish-folder.md)
-   + [Pubblicare raccolte in [!DNL Brand Portal]](brand-portal-publish-collection.md)
+   + [Pubblicare raccolte su [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Frammenti di contenuto {#fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
