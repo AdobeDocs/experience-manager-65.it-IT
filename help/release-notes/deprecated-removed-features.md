@@ -1,14 +1,13 @@
 ---
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1736'
 ht-degree: 43%
 
 ---
-
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
@@ -29,7 +28,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrazione  Creative Cloud | AEM a Creative Cloud Folder Sharing (Condivisione cartelle) è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Consigliamo ai clienti di passare a nuove funzionalità di integrazione Creative Cloud, tra cui Adobe Asset Link o AEM’app desktop. Per ulteriori informazioni, consulta le best practice per l’integrazione di AEM e Creative Cloud . |
+| Integrazione  Creative Cloud | AEM a Creative Cloud Folder Sharing (Condivisione cartelle) è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Consigliamo ai clienti di passare a nuove funzionalità di integrazione Creative Cloud, tra cui Adobe Asset Link o AEM’app desktop. |
 | Assets | `AssetDownloadServlet`Per la pubblicazione di istanze,  è disattivato per impostazione predefinita. Per ulteriori informazioni, vedi [Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). | Configurazione descritta nell’[Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). |
 | Risorse | Se un utente non dispone di autorizzazioni sufficienti (lettura e scrittura) su `/content/dam/collections`, non può creare una raccolta. | Rispetta le impostazioni di controllo dell’accesso dell’utente e verifica le autorizzazioni appropriate. |
 | Adobe Search&amp;Promote | L’integrazione con Adobe Search&amp;Promote è obsoleta. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione con Search&amp;Promote. Nota: l’integrazione con Search&amp;Promote rimane completamente supportata anche se obsoleta. |  |
@@ -57,6 +56,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Nelle versi
 
 | Area | Funzione obsoleta | Sostituzione |
 |--- |--- |--- |
+| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le tue risorse con [!DNL Experience Cloud] utilizzando una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente chiamato  [!DNL Adobe Marketing Cloud]. | Se hai delle domande, [contatta l&#39;Assistenza clienti Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
 | Activity Map di Analytics | Versione di Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizza il [plug-in ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/it/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrations (Integrazioni) | L’integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessuna sostituzione. |
 | Integrations (Integrazioni) | L&#39;integrazione dell&#39;API Salesforce Force è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | La funzione è ancora disponibile. |
