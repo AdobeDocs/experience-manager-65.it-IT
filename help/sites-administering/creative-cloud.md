@@ -1,8 +1,8 @@
 ---
 title: Condivisione di cartelle con Adobe Creative Cloud
 seo-title: Condivisione di cartelle con Adobe Creative Cloud
-description: Scopri come condividere le cartelle con Adobe Creative Cloud
-seo-description: Scopri come condividere le cartelle con Adobe Creative Cloud
+description: Informazioni sulla condivisione di cartelle con Adobe Creative Cloud
+seo-description: Informazioni sulla condivisione di cartelle con Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,38 +10,40 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 2%
+source-wordcount: '80'
+ht-degree: 12%
 
 ---
 
 
-# Condivisione delle cartelle con Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Condivisione di cartelle con Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->La funzione di AEM alla condivisione delle cartelle è obsoleta. Si consiglia vivamente ai clienti di utilizzare funzionalità più recenti, come [ collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [AEM app desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Per saperne di più, consulta [Tecniche consigliate per l&#39;AEM e l&#39;integrazione delle Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione AEM alla condivisione cartelle Creative Cloud è obsoleta. Consigliamo vivamente ai clienti di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it). Ulteriori informazioni sono disponibili in [Best practice per l&#39;integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-Risorse Adobe Experience Manager (AEM) consente di condividere con gli utenti Adobe Creative Cloud le cartelle contenenti risorse. Per informazioni dettagliate su come configurare Adobe Marketing Cloud per la condivisione delle risorse con Adobe Creative Cloud, consultate [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md) (Configurazione dell&#39;integrazione delle risorse).
+<!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 
-1. Nella console Risorse, selezionate una cartella da condividere con la Creative Cloud.
+Adobe Experience Manager (AEM) Assets lets you share folders containing assets with Adobe Creative Cloud users. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+
+1. In the Assets console, select a folder to share with Creative Cloud.
 
    ![](assets/chlimage_1-139.png)
 
-1. Dalla barra degli strumenti, fare clic su **Condividi**.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
-1. Dall&#39;elenco, selezionare l&#39;opzione **Adobe Creative Cloud**.
+1. From the list, select the **Adobe Creative Cloud** option.
 
    ![](assets/chlimage_1-141.png)
 
-1. Nella pagina **Creative Cloud condivisione**, aggiungere l&#39;utente con cui condividere la cartella, quindi fare clic su **Salva**.
+1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
 
    ![](assets/chlimage_1-142.png)
 
-1. Fare clic su **Ok** per chiudere il messaggio di conferma.
-1. Accedete alla Creative Cloud con le credenziali dell&#39;utente con cui avete condiviso la cartella. La cartella condivisa è disponibile nella Creative Cloud.
+1. Click **Ok** to close the confirmation message.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
+-->
