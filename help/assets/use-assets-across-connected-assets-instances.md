@@ -5,18 +5,18 @@ contentOwner: AG
 role: Business Practitioner, Administrator, Leader
 feature: Risorse, utenti e gruppi collegati
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2742'
 ht-degree: 29%
 
 ---
 
 # Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Un motivo può essere rappresentato dalla distribuzione geografica delle implementazioni esistenti necessarie per lavorare in parallelo. Un altro motivo può essere rappresentato dalle acquisizioni che portano a un&#39;infrastruttura eterogenea che la società madre desidera utilizzare insieme.
+Nelle grandi aziende l’infrastruttura necessaria per la creazione di siti web può essere dislocata in luoghi diversi. A volte, le funzionalità per la creazione di siti web e le risorse digitali utilizzate per creare i siti possono trovarsi in implementazioni diverse. Un motivo può essere rappresentato dalla distribuzione geografica delle implementazioni esistenti necessarie per lavorare insieme. Un altro motivo può essere rappresentato dalle acquisizioni che portano a un&#39;infrastruttura eterogenea, incluse le diverse versioni [!DNL Experience Manager], che la società madre desidera utilizzare insieme.
 
-Gli utenti possono creare pagine web in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] è il sistema Digital Asset Management (DAM) che fornisce le risorse necessarie per i siti web. [!DNL Experience Manager] ora supporta il caso d’uso precedente integrando  [!DNL Sites] e  [!DNL Assets].
+La funzionalità Risorse collegate supporta il caso d’uso precedente integrando [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Gli utenti possono creare pagine web in [!DNL Sites] che utilizzano le risorse digitali da implementazioni diverse di [!DNL Assets] .
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
@@ -188,8 +188,8 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 * Le risorse locali non vengono sincronizzate con le risorse originali nell’implementazione remota. Eventuali modifiche, eliminazioni o revoche delle autorizzazioni nell’implementazione DAM non vengono propagate downstream.
 * Le risorse locali sono copie in sola lettura. [!DNL Experience Manager]I componenti apportano modifiche non distruttive alle risorse. Non sono consentite altre modifiche.
 * Le risorse recuperate localmente sono disponibili solo a scopo di authoring. I flussi di lavoro di aggiornamento delle risorse non possono essere applicati e i metadati non possono essere modificati.
-* Sono supportati solo le immagini e i formati di documento elencati. [!DNL Dynamic Media]Le risorse , i frammenti di contenuto e i frammenti di esperienza non sono supportati.
-* [!DNL Experience Manager] non recupera gli schemi di metadati. Ciò significa che potrebbero non essere visualizzati tutti i metadati recuperati. Se lo schema viene aggiornato separatamente, vengono visualizzate tutte le proprietà.
+* Sono supportati solo le immagini e i formati di documento elencati. [!DNL Dynamic Media] le risorse  [!DNL Content Fragments] e non  [!DNL Experience Fragments] sono supportate.
+* [!DNL Experience Manager] non recupera gli schemi di metadati. Ciò significa che potrebbero non essere visualizzati tutti i metadati recuperati. Se lo schema viene aggiornato separatamente nella distribuzione [!DNL Sites], vengono visualizzate tutte le proprietà dei metadati.
 * Tutti gli autori [!DNL Sites] dispongono delle autorizzazioni di lettura sulle copie recuperate, anche se gli autori non possono accedere alla distribuzione remota di DAM.
 * Nessun supporto API per personalizzare l’integrazione.
 * Questa funzionalità supporta la ricerca e l’utilizzo diretti delle risorse remote. Per rendere disponibili molte risorse remote nell’implementazione locale con un’unica operazione, è consigliabile eseguire la migrazione delle risorse. Consulta la [guida alla migrazione di Assets](assets-migration-guide.md).
@@ -199,8 +199,8 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 
 * [!DNL Assets] la distribuzione su  [!DNL Adobe Managed Services] è supportata.
 * [!DNL Sites] può connettersi a un singolo  [!DNL Assets] archivio alla volta.
-* Una licenza di [!DNL Assets] che funziona come archivio remoto.
-* Una o più licenze di [!DNL Sites] che funzionano come distribuzione di authoring locale.
+* È necessaria una licenza di [!DNL Assets] che funziona come archivio remoto.
+* È necessaria una o più licenze di [!DNL Sites] che funzionano come distribuzione di authoring locale.
 
 ### Utilizzo {#usage}
 
