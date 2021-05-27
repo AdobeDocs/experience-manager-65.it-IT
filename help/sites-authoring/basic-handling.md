@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 95%
 
 ---
@@ -147,7 +146,7 @@ Nel pannello Strumenti, tutte le opzioni nel pannello laterale contengono una se
 
 L’intestazione è sempre presente nella parte superiore dello schermo. Anche se la maggior parte delle opzioni presenti nell’intestazione rimangono invariate ovunque ti trovi nel sistema, alcune dipendono dal contesto.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 * [Navigazione globale](#navigatingconsolesandtools)
 
@@ -269,7 +268,7 @@ Sono disponibili diverse risorse di Aiuto:
    >Per una panoramica di tutte le scelte rapide da tastiera, consulta la documentazione seguente:
    >
    >    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barra delle azioni   {#actions-toolbar}
@@ -286,11 +285,10 @@ La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.
 
 A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso compaiono altre opzioni. Tocca o fai clic sui tre puntini (**...**) per aprire un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
-![bh-12](assets/bh-12.png)
+![Barra delle azioni ](assets/bh-12.png)
 
 >[!NOTE]
->
->Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
+Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
 ## Azioni rapide   {#quick-actions}
 
@@ -309,11 +307,10 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco](#list-view)
+* [Vista a elenco ](#list-view)
 
 >[!NOTE]
->
->Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
+Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
 ### Selezionare le risorse   {#selecting-resources}
 
@@ -497,8 +494,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
    >[!NOTE]
-   >
-   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+   La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -523,8 +519,7 @@ Ad esempio, in Sites puoi selezionare solo il contenuto (opzione predefinita), l
 Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezioni qualsiasi altra opzione, il nome è visualizzato accanto all’icona della barra.
 
 >[!NOTE]
->
->Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
+Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
 
 ### Struttura contenuto {#content-tree}
 
@@ -535,12 +530,10 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
->
->Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
+Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
+Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline   {#timeline}
+### Timeline  {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
