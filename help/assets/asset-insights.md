@@ -5,10 +5,10 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 7%
+source-wordcount: '760'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ La funzione Assets Insights ti consente di monitorare le valutazioni degli utent
 
 Affinché [!DNL Assets] Informazioni utili per acquisire le statistiche di utilizzo per le immagini da un sito web, è necessario includere il codice di incorporamento per l’immagine nel codice del sito web.
 
-Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura prima la funzione per recuperare i dati di reporting da Adobe Analytics. Per informazioni dettagliate, consulta [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzione, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura prima la funzione per recuperare i dati di reporting da Adobe Analytics. Per informazioni dettagliate, consulta [Configurare Assets Insights](/help/assets/configure-asset-insights.md). Per utilizzare questa funzione in un’installazione on-premise, acquista la licenza [!DNL Adobe Analytics] separatamente. I clienti su [!DNL Managed Services] ricevono la licenza [!DNL Analytics] inclusa in [!DNL Experience Manager]. Consulta [Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
