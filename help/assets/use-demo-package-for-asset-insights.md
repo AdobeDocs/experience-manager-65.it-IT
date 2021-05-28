@@ -1,32 +1,31 @@
 ---
-title: Usa il pacchetto dimostrativo per Asset Insights
-description: Utilizza il pacchetto demo per abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web.
+title: Usa il pacchetto dimostrativo per Assets Insights
+description: Utilizza il pacchetto demo per abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Informazioni sulla risorsa, rapporti sulle risorse
+exl-id: 13947513-da76-43e1-ae01-abd24a59752a
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
 
+# Usa il pacchetto dimostrativo per Assets Insights {#using-demo-package-for-asset-insights}
 
-# Usa il pacchetto dimostrativo per Asset Insights {#using-demo-package-for-asset-insights}
-
-Utilizzando il pacchetto demo, puoi abilitare Adobe Asset Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
+Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
 
 ## [!DNL Use Experience Manager Assets] Informazioni approfondite con una pagina web di esempio   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configura Asset Insights seguendo le istruzioni disponibili in [Configurazione di Asset Insights](configure-asset-insights.md).
+1. Configura informazioni approfondite sulle risorse seguendo le istruzioni disponibili in [Configurazione di informazioni approfondite sulle risorse](configure-asset-insights.md).
 1. Scarica il pacchetto di risorse di esempio da qui e installa il pacchetto da CRXDE package manager.
 
-   [Ottieni file](assets/insightsdemo.zip)
+[Ottieni file](assets/insightsdemo.zip)
 
 1. Scarica il file ZIP contenente la pagina web di esempio da qui sotto ed estrai sul tuo file system locale.
 
-   [Ottieni file](assets/demosite.zip)
+[Ottieni file](assets/demosite.zip)
 
 1. Fare clic sulla pagina Web per aprirla nel browser Web.
 
