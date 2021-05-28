@@ -1,21 +1,20 @@
 ---
-title: Abilitare Asset Insights tramite DTM
-description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
+title: Abilitare Assets Insights tramite DTM
+description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Assets Insights.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Informazioni sulla risorsa, rapporti sulle risorse
+exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
 
+# Abilitare Assets Insights tramite DTM {#enable-asset-insights-through-dtm}
 
-# Abilitare Asset Insights tramite DTM {#enable-asset-insights-through-dtm}
-
-Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per i clienti Adobe Analytics. Puoi personalizzare il codice di tracciamento per abilitare soluzioni CMS di terze parti all’utilizzo di Asset Insights oppure puoi utilizzare DTM per inserire i tag Asset Insights. Gli approfondimenti sono supportati e forniti solo per le immagini.
+Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per i clienti Adobe Analytics. Puoi personalizzare il codice di tracciamento per abilitare soluzioni CMS di terze parti all’utilizzo di Asset Insights oppure puoi utilizzare DTM per inserire i tag Assets Insights. Gli approfondimenti sono supportati e forniti solo per le immagini.
 
 >[!CAUTION]
 >
@@ -26,7 +25,7 @@ Esegui questi passaggi per abilitare Asset Insights tramite DTM.
 1. Fai clic sul logo Experience Manager e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione approfondimenti]**.
 1. [Configurare la distribuzione Experience Manager con il Cloud Service DTM](/help/sites-administering/dtm.md)
 
-   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare **[!UICONTROL Impostazioni account]** nel profilo utente. Questo passaggio non è necessario dal punto di vista di Asset Insights, perché l’integrazione di Experience Manager Sites con Asset Insights è ancora in corso.
+   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare **[!UICONTROL Impostazioni account]** nel profilo utente. Questo passaggio non è necessario dal punto di vista di Assets Insights, perché l’integrazione di Experience Manager Sites con Assets Insights è ancora in corso.
 
 1. Accedi a [https://dtm.adobe.com](https://dtm.adobe.com/) e seleziona un&#39;azienda, a seconda dei casi.
 1. Creare o aprire una proprietà Web esistente
@@ -52,7 +51,7 @@ Esegui questi passaggi per abilitare Asset Insights tramite DTM.
    >
    >* `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics di DTM.
    >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione deve essere chiamata una volta terminato il caricamento dello strumento Adobe Analytics di DTM.
-   >* A seconda della posizione in cui è ospitato Asset Insights Page Tracker (ad Experience Manager, CDN e così via), l’origine dell’origine dello script potrebbe richiedere modifiche.
+   >* A seconda della posizione in cui è ospitato il Tracciamento pagina di Asset Insights (ad Experience Manager, CDN e così via), l’origine dell’origine dello script potrebbe richiedere modifiche.
    >* Ad Experience Manager, Page Tracker ospitato da , l&#39;origine dovrebbe puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza del dispatcher.
 
 
