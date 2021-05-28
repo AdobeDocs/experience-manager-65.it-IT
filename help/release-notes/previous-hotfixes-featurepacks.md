@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione precedente del S
 description: Note sulla versione per i Service Pack  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
 ht-degree: 15%
@@ -1107,7 +1107,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Quando si utilizza la finestra a comparsa a cascata negli schemi di metadati, quando si seleziona e si salva un&#39;opzione a discesa contenente un apostrofo (dall&#39;elenco a discesa figlio), l&#39;opzione apostrofo selezionata scompare dopo la riapertura della risorsa [!UICONTROL Proprietà] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sincronizza ] Jobstop e non riesce se rileva voci non valide (sul lato Analytics) invece di passare alla voce successiva (NPR-32674).
+* [!UICONTROL Asset Insights Sincronizza ] Jobstop e non riesce se si verificano voci non valide (sul lato Analytics) invece di passare alla voce successiva (NPR-32674).
 
 * Il giroscopio non funziona perché i sensori di movimento sono disattivati per impostazione predefinita sui browser mobili nel visualizzatore panoramico (CQ-4272937).
 
