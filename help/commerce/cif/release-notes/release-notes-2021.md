@@ -1,11 +1,10 @@
 ---
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 10%
+source-wordcount: '648'
+ht-degree: 9%
 
 ---
 
@@ -15,13 +14,37 @@ ht-degree: 10%
 
 Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF in uso o che intendi utilizzare in futuro.
 
-**Componente aggiuntivo CIF disponibile tramite  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve più essere utilizzato. Esegui la migrazione al nuovo componente aggiuntivo CIF.**
+**Con la versione di aprile, abbiamo sostituito il connettore CIF da GitHub con il componente aggiuntivo CIF disponibile nella [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il passaggio al componente aggiuntivo offre grandi vantaggi per i progetti:
+
+* La maggior parte delle nuove funzioni sarà immediatamente disponibile su AEM 6.5 (non più in attesa della porta laterale delle funzioni)
+* Facile aggiornamento alle nuove versioni dei componenti aggiuntivi
+* Pronto per il Cloud Service
+
+Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve più essere utilizzato. Sostituisci il connettore CIF con il nuovo componente aggiuntivo CIF. Per la maggior parte dei progetti dovrebbe essere possibile una semplice sostituzione dei pacchetti. **
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Maggio 2021
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2021.05.26 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| Componenti core CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| Sito di riferimento CIF Venia | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+
+### Novità {#what-is-new-may}
+
+* Supporto per l’impaginazione del contenuto associato nelle proprietà della console del prodotto
+
+### Correzioni di bug {#bug-fixes-may}
+
+* Miniature delle risorse non visualizzate nella scheda Risorsa delle proprietà del prodotto
+
+* Breadcrumb ripristina i dati di anteprima nella console del prodotto
 
 ## Data di rilascio: Aprile 2021
 
