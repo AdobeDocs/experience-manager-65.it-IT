@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componenti,Pubblicazione
-source-git-commit: 00fc290d91de3c194ada837a931f1d86a5557939
+source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
 workflow-type: tm+mt
-source-wordcount: '3108'
-ht-degree: 23%
+source-wordcount: '3210'
+ht-degree: 22%
 
 ---
 
@@ -170,16 +170,16 @@ Modifica le seguenti impostazioni Dynamic Media toccando l&#39;icona **[!UICONTR
 
    Per modificare le seguenti Impostazioni avanzate, tocca **[!UICONTROL Modifica]** nel componente.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Ottimizza per dispositivi]**  a risoluzione più elevata: seleziona (impostazione predefinita) la casella di controllo per consentire l’ottimizzazione DPR (Device Pixel Ratio).
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   L&#39;opzione **[!UICONTROL Ottimizza per dispositivi a risoluzione più elevata]** viene visualizzata solo quando è vero quanto segue:
+   * In Tipo predefinito, è selezionato **[!UICONTROL Predefinito immagine]** e **[!UICONTROL RESS_IP]** viene selezionato dall&#39;elenco a discesa **[!UICONTROL Predefinito immagine]**.
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   ![impostazione del rapporto pixel del dispositivo per il predefinito immagine](/help/assets/assets-dm/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titolo]**  - Consente di modificare il titolo dell’immagine.
 
@@ -247,17 +247,17 @@ Modifica la seguente impostazione Dynamic Media facendo clic su **[!UICONTROL Mo
 
 * **[!UICONTROL Abilita corrispondenza proporzioni]** : per consentire a Dynamic Media di scegliere un rendering di ritaglio avanzato con proporzioni che corrispondano al meglio alle proporzioni dell&#39;immagine originale, seleziona questa opzione.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL Ottimizza per dispositivi]**  a risoluzione più elevata: seleziona (impostazione predefinita) la casella di controllo per consentire l’ottimizzazione DPR (Device Pixel Ratio).
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   L&#39;opzione **[!UICONTROL Ottimizza per dispositivi a risoluzione più elevata]** viene visualizzata solo quando è vero quanto segue:
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   * In Tipo predefinito, è selezionata l’opzione **[!UICONTROL Ritaglio avanzato]** .
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![impostazione del rapporto pixel del dispositivo per il ritaglio avanzato](/help/assets/assets-dm/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titolo]**  - Modifica il titolo dell’immagine Ritaglio avanzato.
 
