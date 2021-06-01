@@ -9,17 +9,16 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configurazione,Modalità Scene7
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 485464350f391fca327207b78b165897fdacc2d3
 workflow-type: tm+mt
-source-wordcount: '6154'
+source-wordcount: '6156'
 ht-degree: 5%
 
 ---
 
 # Configurazione di Dynamic Media - Modalità Scene7{#configuring-dynamic-media-scene-mode}
 
-Se utilizzi Adobe Experience Manager configurato per ambienti diversi, ad esempio sviluppo, staging e produzione, configura i Cloud Services Dynamic Media per ciascuno di tali ambienti.
+Se utilizzi l’impostazione Adobe Experience Manager per ambienti diversi, ad esempio sviluppo, staging e produzione, configura Cloud Services Dynamic Media per ciascuno di tali ambienti.
 
 ## Diagramma dell&#39;architettura di Dynamic Media - Modalità Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -33,25 +32,24 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Il seguente elenco di funzioni richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager - Dynamic Media. Qualsiasi altra rete CDN personalizzata non è supportata con queste funzioni.
 >
 >* [Imaging avanzato](/help/assets/imaging-faq.md)
->* [Annullamento della validità della cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
->* [Protezione del collegamento ipertestuale](/help/assets/hotlink-protection.md)
->* [Distribuzione HTTP/2 dei contenuti](/help/assets/http2.md)
->* Reindirizzamento URL a livello CDN
->* Akamai ChinaCDN (per una consegna ottimale in Cina)
+* [Annullamento della validità della cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+* [Protezione del collegamento ipertestuale](/help/assets/hotlink-protection.md)
+* [Distribuzione HTTP/2 dei contenuti](/help/assets/http2.md)
+* Reindirizzamento URL a livello CDN
+* Akamai ChinaCDN (per una consegna ottimale in Cina)
 
 
 ## Abilitazione di Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
 [Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
 
->[!NOTE]
->
->Dynamic Media - La modalità Scene7 è riservata solo all’istanza di authoring di Experience Manager. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` nell’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
+>[!WARNING]
+Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` nell’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
 
 Per abilitare Dynamic Media, è necessario avviare l&#39;Experience Manager utilizzando la modalità di esecuzione `dynamicmedia_scene7` dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
@@ -64,8 +62,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 L’aggiornamento di Experience Manager Dynamic Media dalla versione 6.3 alla versione 6.4 o 6.5 ora include la possibilità di eseguire installazioni senza tempi di inattività. Per migrare tutti i predefiniti e le configurazioni da `/etc` a `/conf` in CRXDE Lite, assicurati di eseguire il seguente comando curl.
 
 >[!NOTE]
->
->Se esegui l’istanza di Experience Manager in modalità di compatibilità, ovvero se hai installato il pacchetto di compatibilità, non è necessario eseguire questi comandi.
+Se esegui l’istanza di Experience Manager in modalità di compatibilità, ovvero se hai installato il pacchetto di compatibilità, non è necessario eseguire questi comandi.
 
 Per tutti gli aggiornamenti, sia con che senza il pacchetto di compatibilità, puoi copiare i predefiniti predefiniti predefiniti per visualizzatori forniti originariamente con Dynamic Media eseguendo il seguente comando curl Linux®:
 
@@ -89,9 +86,9 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 
 ![dynamic icmediaconfiguration2update](assets/dynamicmediaconfiguration2updated.png)
 
-**Per creare una configurazione Dynamic Media nei Cloud Services**
+**Per creare una configurazione Dynamic Media nei Cloud Services:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services > Configurazione Dynamic Media]**.
+1. In modalità Autore Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services > Configurazione Dynamic Media]**.
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
 1. Nella pagina **[!UICONTROL Crea configurazione Dynamic Media]**, immetti un titolo, l&#39;indirizzo e-mail dell&#39;account Dynamic Media, la password, quindi seleziona la tua area geografica. Queste informazioni vengono fornite per Adobe nell’e-mail di provisioning. Se non hai ricevuto l’e-mail, contatta l’Assistenza clienti di Adobe.
 
