@@ -4,16 +4,15 @@ description: Informazioni sul supporto per l’accessibilità nei visualizzatori
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accessibility
+feature: Accessibilità
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # Accessibilità in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
@@ -21,18 +20,18 @@ ht-degree: 0%
 
 ## Supporto per l’accessibilità da tastiera in [!DNL Dynamic Media]
 
-Poiché [!DNL Dynamic Media] è un plug-in a [!DNL Adobe Experience Manager Assets], la maggior parte del comportamento del controllo da tastiera è esattamente lo stesso di in [!DNL Experience Manager Assets]. Ad esempio, il pulsante `Cancel` in [!DNL Dynamic Media] ha la stessa evidenziazione dello stato attivo di [!DNL Experience Manager Assets] e reagisce al tasto `Spacebar` come in [!DNL Experience Manager Assets]. Consulta [Scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché [!DNL Dynamic Media] è un plug-in a [!DNL Adobe Experience Manager Assets], la maggior parte del comportamento del controllo da tastiera è lo stesso di in [!DNL Experience Manager Assets]. Ad esempio, il pulsante `Cancel` in [!DNL Dynamic Media] ha la stessa evidenziazione dello stato attivo di [!DNL Experience Manager Assets] e reagisce al tasto `Spacebar` come in [!DNL Experience Manager Assets]. Consulta [Scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in [!DNL Dynamic Media] sono nella maggior parte dei casi ovvie e facili da scoprire. Il controllo da tastiera in [!DNL Dynamic Media] riguarda i seguenti elementi:
 
 * Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi della pagina.
 L’utilizzo di `Tab` sposta lo stato attivo sull’elemento successivo dell’interfaccia utente nell’ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riporta lo stato attivo sull&#39;elemento dell&#39;interfaccia utente precedente.
 L&#39;attraversamento della messa a fuoco segue la posizione naturale dell&#39;elemento dell&#39;interfaccia utente sullo schermo e si sposta in ordine da sinistra a destra, quindi dall&#39;alto verso il basso. Inoltre, se un campo presenta un errore, è possibile premere `Tab` per spostarlo nello stato attivo.
-* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare elementi standard dell’interfaccia utente, ad esempio pulsanti, elenchi a discesa e così via.
-* Possibilità di visualizzare l’evidenziazione dello stato attivo da tastiera. L’elemento dell’interfaccia utente attivo può ricevere un’indicazione di messa a fuoco visiva sotto forma di bordo intorno all’elemento dell’interfaccia utente.
+* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare elementi standard dell’interfaccia utente, ad esempio pulsanti ed elenchi a discesa.
+* Possibilità di visualizzare l’evidenziazione dello stato attivo da tastiera. L’elemento dell’interfaccia utente attivo riceve un’indicazione di messa a fuoco visiva sotto forma di bordo intorno all’elemento dell’interfaccia utente.
 * Nell’editor dei punti attivi è possibile utilizzare alcuni tasti di scelta rapida personalizzati, ad esempio i tasti freccia, per interagire con elementi dell’interfaccia utente complessi per riposizionare i punti attivi.
-* Nell’editor video interattivo, puoi utilizzare `Spacebar` per selezionare un’immagine e aggiungerla a un segmento. Inoltre, puoi utilizzare la chiave `Backspace` per eliminare l’elemento selezionato dalla scheda **[!UICONTROL Contenuto]** . Inoltre, premere `Tab` funziona come desiderato per navigare tra gli elementi interattivi della pagina.
-* Nell’editor Ritaglio immagini/Ritaglio avanzato è possibile effettuare le seguenti operazioni:
+* Nell’editor video interattivo, puoi utilizzare `Spacebar` per selezionare un’immagine e aggiungerla a un segmento. Inoltre, puoi utilizzare il tasto `Backspace` per eliminare l’elemento selezionato dalla scheda **[!UICONTROL Contenuto]** . Inoltre, premere `Tab` funziona come desiderato per navigare tra gli elementi interattivi della pagina.
+* Nell’editor Ritaglio immagini/Ritaglio avanzato, puoi effettuare le seguenti operazioni:
    * Utilizzare i tasti freccia per ritagliare le dimensioni della cornice, riposizionare l&#39;immagine o entrambi.
    * Il primo `Tab` stop evidenzia l&#39;intero fotogramma dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare la cornice.
    * Le quattro fermate successive sono i quattro angoli del telaio. `Tab` Quando lo stato attivo è posto su un angolo del fotogramma, l&#39;angolo è evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo mirato.
