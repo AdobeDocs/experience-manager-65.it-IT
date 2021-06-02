@@ -3,15 +3,14 @@ title: Utilizza PDF rasterizer per generare rappresentazioni
 description: Genera miniature e rappresentazioni di alta qualità utilizzando la libreria Adobe PDF Rasterizer.
 contentOwner: AG
 role: Developer, Administrator
-feature: Developer Tools,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Strumenti Per Sviluppatori, Rendering
+exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
+source-git-commit: eb687a85f0612df7776dace7b81f97bff5f5ad35
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
-
 
 # Usa PDF Rasterizer {#using-pdf-rasterizer}
 
@@ -25,7 +24,8 @@ L&#39;Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti o
 
 Miniature e anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output preconfigurato e, pertanto, forniscono un’esperienza di visualizzazione coerente tra i dispositivi. La libreria Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Emette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
 
-1. Installa il pacchetto PDF Rasterizer sulla distribuzione [!DNL Adobe Experience Manager] da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installa il pacchetto PDF Rasterizer sulla distribuzione [!DNL Adobe Experience Manager] da [Distribuzione di software]
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
 
    >[!NOTE]
    >
