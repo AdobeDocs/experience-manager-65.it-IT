@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componenti,Pubblicazione
-source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
+source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 22%
@@ -173,13 +173,12 @@ Modifica le seguenti impostazioni Dynamic Media toccando l&#39;icona **[!UICONTR
 * **[!UICONTROL Ottimizza per dispositivi]**  a risoluzione più elevata: seleziona (impostazione predefinita) la casella di controllo per consentire l’ottimizzazione DPR (Device Pixel Ratio).
 
    L&#39;opzione **[!UICONTROL Ottimizza per dispositivi a risoluzione più elevata]** viene visualizzata solo quando è vero quanto segue:
+
    * In Tipo predefinito, è selezionato **[!UICONTROL Predefinito immagine]** e **[!UICONTROL RESS_IP]** viene selezionato dall&#39;elenco a discesa **[!UICONTROL Predefinito immagine]**.
 
    ![impostazione del rapporto pixel del dispositivo per il predefinito immagine](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titolo]**  - Consente di modificare il titolo dell’immagine.
 
@@ -255,9 +254,7 @@ Modifica la seguente impostazione Dynamic Media facendo clic su **[!UICONTROL Mo
 
    ![impostazione del rapporto pixel del dispositivo per il ritaglio avanzato](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titolo]**  - Modifica il titolo dell’immagine Ritaglio avanzato.
 
