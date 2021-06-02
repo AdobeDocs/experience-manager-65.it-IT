@@ -7,28 +7,27 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1448'
 ht-degree: 5%
 
 ---
-
 
 # Best practice per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
 
 L&#39;ottimizzazione della qualità delle immagini può richiedere molto tempo, in quanto molti fattori contribuiscono a rendere i risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell&#39;immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare e ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e best practice essenziali.
+Adobe Experience Manager include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare e ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e best practice essenziali.
 
 ## Best practice per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG o PNG sono le scelte migliori per offrire immagini di buona qualità e con dimensioni e peso gestibili.
 * Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita la consegna delle immagini Dynamic Media è impostata su JPG.
-* Il formato JPG si comprime con un rapporto di 10:1 e di solito genera file di dimensioni più ridotte. PNG si comprime con un rapporto di circa 2:1, tranne in alcuni casi, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, le dimensioni dei file PNG sono maggiori dei file JPG.
+* Il formato JPG si comprime con un rapporto di 10:1 e di solito genera file di dimensioni più ridotte. PNG si comprime con un rapporto di circa 2:1, tranne a volte, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, le dimensioni dei file PNG sono maggiori dei file JPG.
 * Il formato JPG utilizza la compressione con perdita di dati, ovvero gli elementi dell&#39;immagine (pixel) vengono eliminati durante la compressione. Il PNG utilizza invece la compressione senza perdita di dati.
 * JPG comprime spesso immagini fotografiche con una migliore fedeltà rispetto alle immagini sintetiche con bordi netti e contrasto.
 * Se le immagini contengono trasparenza, utilizza PNG perché JPG non supporta la trasparenza.
@@ -46,14 +45,14 @@ Come best practice per il dimensionamento delle immagini, utilizza `&wid=<value>
 
 ## Best practice per la nitidezza delle immagini {#best-practices-for-image-sharpening}
 
-La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Prenditi del tempo per saperne di più sul funzionamento di nitidezza e Maschera definizione dettagli in AEM facendo riferimento alle seguenti risorse utili:
+La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Prenditi del tempo per saperne di più sul funzionamento di nitidezza e Maschera definizione dettagli in Experience Manager, facendo riferimento alle seguenti risorse utili:
 
-Il white paper sulle best practice [La nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) si applica anche a AEM.
+White paper sulle best practice [Nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), applicabile anche all&#39;Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
-Con AEM è possibile aumentare la nitidezza delle immagini durante l’acquisizione, la distribuzione o entrambe. Nella maggior parte dei casi, tuttavia, è necessario rendere più nitide le immagini utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini sulla consegna, su un URL, in genere fornisce i risultati migliori.
+Ad Experience Manager, puoi rendere più nitide le immagini in fase di acquisizione, consegna o entrambe. Di solito, tuttavia, le immagini vengono rese più nitide utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini sulla consegna, su un URL, in genere fornisce i risultati migliori.
 
 Sono disponibili due metodi di nitidezza delle immagini:
 
@@ -72,11 +71,11 @@ Sono disponibili due metodi di nitidezza delle immagini:
          Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l&#39;eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
       Per ulteriori informazioni su come impostare questi tre parametri, incluse le best practice da utilizzare con il filtro, consulta le risorse seguenti:
 
-      AEM argomento dell’Aiuto sulla nitidezza di un’immagine.
+      Experience Manager Argomento della Guida sulla nitidezza di un’immagine.
 
       White paper sulle best practice [Nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-   * AEM inoltre consente di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
+   * Experience Manager consente anche di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
 
 
 Come best practice, inizia con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio che puoi iniziare sono le seguenti:
@@ -124,9 +123,8 @@ Se l&#39;immagine richiede un&#39;ulteriore ottimizzazione, regolate gradualment
 
 Se i risultati della nitidezza non sono ancora soddisfacenti, aumenta il raggio in incrementi decimali. Per ogni incremento decimale, riavviare il valore a 1,75 e incrementarlo gradualmente a 4. Ripetere questo processo fino a ottenere il risultato desiderato. Anche se i valori di cui sopra sono un approccio convalidato dagli studi creativi, ricorda che puoi iniziare con altri valori e seguire altre strategie. Che i risultati siano soddisfacenti o meno è una questione soggettiva, quindi la sperimentazione strutturata è fondamentale.
 
-Durante l’esperimento, potresti anche trovare utili i seguenti suggerimenti generali per ottimizzare il flusso di lavoro:
+Durante l’esperimento, i seguenti suggerimenti generali possono essere utili per ottimizzare ulteriormente il flusso di lavoro:
 
 * Prova e verifica parametri diversi in tempo reale, direttamente su un URL.
-* Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è fondamentalmente macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome predefinito personalizzato in un percorso URL effettua una chiamata a questi predefiniti. Tali funzionalità consentono di gestire i comandi e le impostazioni di qualità per diversi schemi di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
-* AEM inoltre offre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio applicando la nitidezza delle immagini durante l’acquisizione. Per i casi d’uso avanzati in cui questa può essere un’opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può aiutarti con informazioni personalizzate e best practice.
-
+* Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è fondamentalmente macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome predefinito personalizzato in un percorso URL chiama questi predefiniti. Tali funzionalità consentono di gestire i comandi e le impostazioni di qualità per diversi schemi di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
+* Experience Manager offre inoltre modalità più avanzate per ottimizzare la qualità delle immagini, ad esempio applicando la nitidezza delle immagini durante l’acquisizione. Per i casi d&#39;uso avanzati in cui sono disponibili opzioni per ottimizzare e ottimizzare i risultati di rendering, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) può essere utile con informazioni personalizzate e best practice.
