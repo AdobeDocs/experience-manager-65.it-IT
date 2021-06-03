@@ -9,9 +9,8 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
-feature: Configuration
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Configurazione
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 11%
@@ -68,25 +67,25 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
 1. In base alla risorsa selezionata, effettua una delle seguenti operazioni:
 
-   * Se hai selezionato un&#39;immagine, nel menu a discesa tocca **[!UICONTROL Rappresentazioni.]**
+   * Se hai selezionato un’immagine, nel menu a discesa tocca **[!UICONTROL Rappresentazioni]**.
 
       Sotto l’intestazione **[!UICONTROL Dinamico]**, tocca un nome predefinito per visualizzarne il rendering nel fotogramma giusto. Potrebbe essere necessario scorrere l&#39;elenco Rendering per visualizzare l&#39;intestazione Dinamica.
 
-      Nella parte inferiore della barra a sinistra, tocca **[!UICONTROL URL.]**
+      Nella parte inferiore della barra a sinistra, tocca **[!UICONTROL URL]**.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Se hai selezionato un set 360 gradi, un set di immagini, un set carosello o un video, nel menu a discesa tocca **[!UICONTROL Visualizzatori.]**
+   * Se hai selezionato un set 360 gradi, un set di immagini, un set carosello o un video, nel menu a discesa tocca **[!UICONTROL Visualizzatori]**.
 
       Nella barra a sinistra, tocca un nome predefinito per visualizzatori. Un&#39;anteprima del set o del video viene aperta in una pagina separata.
 
-      Nella barra a sinistra, nella parte inferiore, tocca **[!UICONTROL URL.]**
+      Nella barra a sinistra, nella parte inferiore, tocca **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Seleziona e copia il testo nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
 
-   Per uscire dalla finestra URL, tocca **[!UICONTROL X]** o tocca **[!UICONTROL Chiudi.]**
+   Per uscire dalla finestra URL, tocca **[!UICONTROL X]** o tocca **[!UICONTROL Chiudi]**.
 
 ## Ottenimento di un URL per una risorsa statica {#obtaining-a-url-for-a-static-asset}
 
@@ -124,8 +123,8 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 ## Ottenimento di un URL video per un rendering video pubblicato {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. In AEM, passa a **[!UICONTROL Strumenti > Implementazione > Cloud > Cloud Services.]**
-1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni.]**
+1. In AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
 
 1. Nella pagina **[!UICONTROL Impostazioni di Dynamic Media Cloud]**, in **[!UICONTROL URL del servizio video]**, copia l’intero percorso URL. Sarà necessario il percorso URL copiato più avanti nei passaggi.
@@ -140,7 +139,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    Ad esempio, se l’ID di registrazione era `87654321|MyCompany`, il nome del cliente sarebbe `MyCompany`.
 
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Cloud Services]**, quindi tocca il logo di Experience Manager e passa a **[!UICONTROL Generale > CRXDE Lite.]**
+1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Cloud Services]**, quindi tocca il logo dell’Experience Manager e passa a **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Copia l’intero percorso di rendering video dal JCR (Java Content Repository).
 
    Ad esempio, il percorso di rendering del video potrebbe essere simile al seguente:
@@ -161,8 +160,8 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
 ## Ottenimento di un URL video per lo streaming adattivo (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. In AEM, passa a **[!UICONTROL Strumenti > Implementazione > Cloud > Cloud Services.]**
-1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni.]**
+1. In AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all’intestazione **[!UICONTROL Servizi cloud per elementi multimediali dinamici]**, quindi tocca **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, tocca il nome della configurazione desiderata.
 1. Nella pagina **[!UICONTROL Impostazioni Cloud Services Dynamic Media]** , procedi come segue:
 
