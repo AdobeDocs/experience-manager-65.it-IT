@@ -7,26 +7,25 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
-feature: Viewers
+feature: Visualizzatori
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 21%
 
 ---
 
-
 # Incorporare un visualizzatore video, immagine o dimensionale di Dynamic Media in una pagina web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
-Incorpora gli URL solo se _non_ utilizzi AEM come WCM. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
+Puoi incorporare gli URL solo se *non* utilizzi Adobe Experience Manager come WCM. Se utilizzi Experience Manager come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
 
-Consulta [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
+Consulta [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-Consulta [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-site.md)
+Consulta [Distribuzione di immagini ottimizzate per un sito reattivo](responsive-site.md).
 
 >[!NOTE]
 >
@@ -38,22 +37,22 @@ Consulta [Distribuzione di immagini ottimizzate per un sito reattivo.](responsiv
 >
 >Consulta [Pubblicazione di predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
-**Per incorporare il visualizzatore video o immagine Dynamic Media in una pagina web**
+**Per incorporare il visualizzatore video o immagine Dynamic Media in una pagina web:**
 
 1. Passa al video o alla risorsa immagine *pubblicata* di cui desideri copiare il codice da incorporare.
 
    Il codice è disponibile per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
+   Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    Consulta [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
    Consulta [Pubblicazione di predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
-1. Nella barra a sinistra, seleziona il menu a discesa e tocca **[!UICONTROL Visualizzatori.]**
+1. Nella barra a sinistra, seleziona il menu a discesa e tocca **[!UICONTROL Visualizzatori]**.
 1. Nella barra a sinistra, tocca un nome predefinito per visualizzatori. Il predefinito visualizzatore viene applicato alla risorsa.
-1. Tocca **[!UICONTROL Incorpora.]**
-1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copia l’intero codice negli Appunti, quindi tocca **[!UICONTROL Chiudi.]**
+1. Tocca **[!UICONTROL Incorpora]**.
+1. Nella finestra di dialogo **[!UICONTROL Incorpora codice]**, copia l’intero codice negli Appunti, quindi tocca **[!UICONTROL Chiudi]**.
 1. Incolla il codice di incorporamento nelle pagine web.
 
 ## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
