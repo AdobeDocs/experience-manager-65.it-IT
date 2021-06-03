@@ -11,10 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Administrator
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -71,7 +70,7 @@ L&#39;Adobe consiglia queste configurazioni e fornisce supporto completo o limit
 
 >[!NOTE]
 >
->Per aiutare i clienti di AEM Forms a ridurre i costi di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server applicativo a favore di implementazioni indipendenti basate su OSGi. Adobe continua a supportare lo stack JEE di AEM Forms con una matrice ridotta di componenti dell’infrastruttura.
+>Per aiutare i clienti AEM Forms a ridurre i costi di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server delle applicazioni a favore di implementazioni indipendenti basate su OSGi. Adobe continua a supportare lo stack JEE di AEM Forms con una matrice ridotta di componenti dell’infrastruttura.
 >
 >Con la versione 6.5 di , i componenti dell’infrastruttura con l’utilizzo più basso tra i clienti non sono più supportati come segue:
 >Database IBM DB2
@@ -95,6 +94,16 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
   <tr>
    <td><p>Oracle Java™ SE 11 (64 bit)</p> </td>
    <td><p>Z: Non supportato</p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 11 - 64 bit</td>
+   <td>Z: Non supportato</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64 bit</td>
+   <td>Z: Non supportato</td>
    <td><p> </p> </td>
   </tr>
   <tr>
