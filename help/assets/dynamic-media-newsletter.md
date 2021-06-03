@@ -1,16 +1,15 @@
 ---
 title: Newsletter Dynamic Media
-description: 'La newsletter Dynamic Media di Experience League è una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare subito a realizzare valore. In questa newsletter sono disponibili preziose risorse per la creazione di conoscenze, tra cui video, panoramica delle soluzioni e presentazioni su alcune delle caratteristiche e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
+description: 'La newsletter Dynamic Media di Experience League è una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare subito a realizzare valore. In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Include informazioni su video, panoramica delle soluzioni e presentazioni su alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
 keywords: Dynamic Media;newsletter;aggiornamenti dei prodotti;suggerimenti e trucchi;eventi;successo dei clienti;blog;blog;immagini;video;funzionalità;funzionalità
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
 role: Business Practitioner, Administrator
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
-feature: Collaboration,Dynamic Media Classic
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Collaborazione,Dynamic Media Classic
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -19,9 +18,9 @@ ht-degree: 0%
 
 La newsletter mensile Dynamic Media di Experience League è stata progettata per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare a realizzare valore fin da subito.
 
-In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per la creazione di conoscenze, come video dimostrativi, panoramica delle soluzioni e presentazioni ad alcune delle funzionalità principali della soluzione, come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora.
+In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Include informazioni su video, panoramica delle soluzioni e presentazioni su alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora.
 
-## Lasciatevi ispirare. Resta informato.
+## Ricevi ispirazione - Resta informato
 
 [Iscriviti ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter Dynamic Media su base mensile nella tua casella in entrata.
 
@@ -50,19 +49,19 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
    * Iscriviti al webinar per scoprire come alleggerire il caricamento della pagina con Smart imaging.
    * Guarda i webinar on-demand Skill Builder per Dynamic Media Classic.
    * Visualizza le sessioni Dynamic Media dal Summit Online Adobe 2020.
-   * Scopri di più sui nostri controlli Dynamic Media Classic gratuiti.
+   * Scopri di più sui controlli Dynamic Media Classic gratuiti di Adobe.
    * Incontra John Monroe, Senior Program Manager for Customer Success Services.
 
-   >[!IMPORTANT]
-   >
-   >Vogliamo assicurarci che la newsletter Dynamic Media venga inviata solo a coloro che la desiderano. Per continuare a ricevere la newsletter dopo questo problema, iscriviti [qui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+      >[!IMPORTANT]
+      >
+      >L’Adobe vuole assicurarsi che invii solo la newsletter Dynamic Media alle persone che la desiderano ricevere. Per continuare a ricevere la newsletter dopo questo problema, iscriviti [qui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
 
 * **[Febbraio 2020, Numero 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    In questo numero:
 
    * Partecipa ai nuovi webinar di Skill Builder e si trasforma in un esperto di Dynamic Media Classic.
-   * Scopri dove troverai Dynamic Media al Summit Adobe 2020.
+   * Vedi dove trovi Dynamic Media al Summit Adobe 2020.
    * Scopri come utilizzare la magia del ritaglio di Dynamic Media.
    * Utilizza un controllo di audit gratuito per ottenere più valore da Dynamic Media Classic.
    * Scopri la nuova interfaccia utente di Dynamic Media Classic.
@@ -74,7 +73,7 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
 
    * Cinque nuovi webinar Skill Builder per affinare le tue competenze Dynamic Media Classic.
    * Un controllo di audit gratuito per ottenere più valore da Dynamic Media Classic.
-   * Una stagione di shopping da record per i nostri clienti rich media.
+   * Una stagione di shopping da record per i clienti dei rich media di Adobe.
    * La tua guida pratica per la selezione di un DAM (Digital Asset Manager) che soddisfi le tue esigenze attuali e ti prepara alle novità dei rich media di domani.
    * Incontra Mark Dean, Digital Media Specialist.
 
@@ -84,7 +83,7 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
 
    * Aggiornamento dell’interfaccia utente di Dynamic Media Classic.
    * Nuove e potenti funzioni di sicurezza.
-   * Come ci stiamo preparando in modo da avere una stagione di vacanza di successo.
+   * Come si sta preparando l&#39;Adobe in modo da avere una stagione di vacanza di successo.
    * Condividi la newsletter con i tuoi colleghi per creare competenze di squadra.
    * Incontra Apoorva Gupta, Senior Product Manager, Dynamic Media.
 
@@ -93,10 +92,10 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
    In questo numero:
 
    * Come ottenere analisi avanzate sulle azioni intraprese dai visitatori nei visualizzatori Dynamic Media.
-   * Un&#39;infografica con suggerimenti per i risultati ingoianti dalla distribuzione di immagini e video di alta qualità.
+   * Un&#39;infografica con suggerimenti per la perdita di mandibola risultati dalla distribuzione di immagini e video di alta qualità.
    * Un articolo di CMSwire che spiega come aggiornare la strategia rich media per soddisfare le attuali aspettative dei clienti.
    * Accedi al webinar on-demand su Dynamic Media dalla serie Skill Builder.
-   * Incontrare Nick Peters, Manager, Site Reliability Engineering, Adobe Experience Manager.
+   * Incontra Nick Peters, Manager, Site Reliability Engineering, Adobe Experience Manager.
    * Scopri la velocità su Dynamic Media e Dynamic Media Classic in Experience League.
 
 * **[Settembre 2019, Numero 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
@@ -110,7 +109,6 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
    * Bridget Roman, Senior Product Marketing Manager per Adobe Experience Manager Assets.
    * Scopri la velocità su Dynamic Media e Dynamic Media Classic in Experience League.
 
-
 * **[Agosto 2019, Numero 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    In questo numero:
@@ -121,7 +119,6 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
    * Scopri in breve tempo una potente integrazione che verrà introdotta a settembre e che ti consente di analizzare come i visitatori interagiscono con i tuoi rich media.
    * Incontra PieterJan Pieper, Wiz di supporto tecnico Dynamic Media.
 
-
 * **[Luglio 2019, Numero 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    In questo numero:
@@ -129,15 +126,15 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
    * Risorse e informazioni che ti consentono di gestire in modo appropriato le risorse di alto valore per fornire esperienze affidabili e in grado di garantire ai visitatori il ritorno a casa.
    * Scopri un prossimo webinar sulla protezione delle risorse digitali.
    * Il prossimo si ferma sul Adobe Insider Tour compilato con le informazioni.
-   * Funzionalità entusiasmanti disponibili quando disponi di Dynamic Media in Adobe Experience Manager Assets (AEM Assets).
+   * Funzionalità entusiasmanti disponibili quando disponi di Dynamic Media in Adobe Experience Manager Assets (Adobe Experience Manager Assets).
    * Aggiunta di video a 360 gradi e miniature video personalizzate al sito web.
-   * Scopri Andrew Hathaway, consulente principale per le soluzioni Dynamic Media in AEM Assets.
+   * Scopri Andrew Hathaway, Consulente principale per le soluzioni Dynamic Media all’interno di Experience Manager Assets.
 
 * **[Giugno 2019, Numero 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    In questo numero:
 
-   * Guarda i video che evidenziano la comodità dell’aggiornamento a Dynamic Media in AEM Assets.
+   * Video che mettono in evidenza la praticità dell’aggiornamento a Dynamic Media in Experience Manager Assets.
    * Guarda i video dimostrativi in Experience League.
    * Ulteriori informazioni sul prossimo Adobe Insider Tour.
    * Scopri come proteggere le risorse digitali dalla pirateria.
@@ -148,18 +145,18 @@ In questa newsletter dedicata a un punto vendita, scopri le preziose risorse per
 
    In questo numero:
 
-   * Scopri le 10 funzionalità principali nascoste di Dynamic Media Classic in un post di blog.
+   * Scopri le dieci funzionalità principali nascoste di Dynamic Media Classic in un post di blog.
    * Guarda i video dimostrativi in Experience League.
    * Scopri il prossimo Adobe Insider Tour.
-   * Leggi una serie di blog in tre parti per aggiornare la tua strategia rich media.
+   * Leggi una serie di blog in tre parti che ti aiuta ad aggiornare la tua strategia rich media.
    * Scopri il ritaglio avanzato video basato sull’intelligenza artificiale.
 
 * **[Aprile 2019, Numero 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Benvenuto al numero di inaugurazione della Newsletter Dynamic Media, la nostra nuova newsletter mensile piena di notizie, eventi e risorse per gli utenti di Dynamic Media all’interno di Adobe Experience Manager Assets e Adobe Dynamic Media Classic.
+   Benvenuto al numero di inaugurazione della newsletter Dynamic Media, la nuova newsletter mensile di Adobe piena di notizie, eventi e risorse per gli utenti di Dynamic Media all’interno di Adobe Experience Manager Assets e Adobe Dynamic Media Classic.
 
    In questo numero:
-   * Registrati al webinar sulle funzioni nascoste di Dynamic Media Classic.
-   * Scopri le serie di webinar on-demand per sviluppare la strategia rich media.
-   * Scopri i casi d’uso chiave dei rich media e le nostre soluzioni per loro.
+   * Registrati al webinar sulle funzioni nascoste Dynamic Media Classic di Adobe.
+   * Scopri le serie di webinar on-demand di Adobe che ti aiutano a sviluppare la tua strategia rich media.
+   * Scopri i casi d’uso principali di rich media e le relative soluzioni di Adobe.
    * ... e molto di più!
