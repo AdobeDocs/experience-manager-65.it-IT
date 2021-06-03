@@ -9,16 +9,15 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
-feature: Viewer Presets
+feature: Predefiniti visualizzatore
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '4340'
-ht-degree: 15%
+source-wordcount: '4338'
+ht-degree: 14%
 
 ---
-
 
 # Gestione dei predefiniti per visualizzatori{#managing-viewer-presets}
 
@@ -45,7 +44,7 @@ Vedere anche [Accessibilità alla tastiera e navigazione](https://experienceleag
 
 ## Gestione dei predefiniti per visualizzatori {#managing-viewer-presets-1}
 
-Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e visualizzare in anteprima i predefiniti visualizzatore in AEM, tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse > Predefiniti visualizzatore.]**
+Per aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e visualizzare in anteprima i predefiniti visualizzatore in AEM, tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -389,9 +388,9 @@ La tabella seguente identifica i gesti del visualizzatore mobile supportati sui 
 
 ## Aumento del numero di predefiniti per visualizzatori visualizzati {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi una risorsa da **[!UICONTROL Vista dettagli > Visualizzatori.]** È possibile aumentare o diminuire il numero di visualizzatori visualizzati.
+AEM mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi una risorsa da **[!UICONTROL Vista dettagli]** > **[!UICONTROL Visualizzatori]**. È possibile aumentare o diminuire il numero di visualizzatori visualizzati.
 
-**Per aumentare il numero di predefiniti visualizzatore visualizzati**
+**Per aumentare il numero di predefiniti visualizzatore visualizzati:**
 
 1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo di elenco predefinito del visualizzatore in `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -404,7 +403,7 @@ AEM mostra un’ampia varietà di predefiniti visualizzatore quando visualizzi u
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Nella proprietà limit , modifica il numero impostandolo sul numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tocca **[!UICONTROL Salva tutto.]**
+1. Tocca **[!UICONTROL Salva tutto]**.
 
 ## Creazione di un predefinito per visualizzatori {#creating-a-new-viewer-preset}
 
@@ -424,12 +423,12 @@ Consulta [Considerazioni speciali per la creazione di un predefinito visualizzat
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. Nella pagina Predefiniti visualizzatore, sulla barra degli strumenti, tocca **[!UICONTROL Crea.]**
-1. Nella finestra di dialogo **[!UICONTROL Nuovo predefinito visualizzatore]**, immetti il nome del nuovo predefinito nel campo **[!UICONTROL Nome predefinito]** . Scegli il nome attentamente, poiché non potrai modificarlo, dopo aver toccato **[!UICONTROL Crea.]**
+1. Nella pagina Predefiniti visualizzatore, sulla barra degli strumenti, tocca **[!UICONTROL Crea]**.
+1. Nella finestra di dialogo **[!UICONTROL Nuovo predefinito visualizzatore]**, immetti il nome del nuovo predefinito nel campo **[!UICONTROL Nome predefinito]** . Scegli il nome attentamente, poiché non potrai modificarlo, dopo aver toccato **[!UICONTROL Crea]**.
 
    Quando salvi il predefinito in seguito in questi passaggi, il nome viene visualizzato nella pagina Predefiniti visualizzatore , sotto l’intestazione della colonna Titolo predefinito .
 
-1. Seleziona il tipo di predefinito visualizzatore da creare dal menu a discesa Tipo di contenuti multimediali avanzati, quindi tocca **[!UICONTROL Crea nell’angolo superiore destro della pagina.]**
+1. Nel menu a discesa Tipo di contenuti multimediali avanzati seleziona il tipo di predefinito visualizzatore da creare, quindi tocca **[!UICONTROL Crea]** nell’angolo in alto a destra della pagina.
 
    Consulta [Tipi di contenuti multimediali avanzati per predefiniti visualizzatore](#rich-media-types-for-viewer-presets).
 
@@ -471,7 +470,7 @@ Consulta [Considerazioni speciali per la creazione di un predefinito visualizzat
    >
    >Dopo aver digitato un valore nel campo di testo, toccare un’altra posizione nell’interfaccia utente per inviare la modifica e chiudere la tastiera virtuale. Se tocchi Invio, non viene eseguita alcuna azione.
 
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva.]**
+1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
 1. Pubblica il nuovo predefinito per visualizzatori. Devi pubblicare il predefinito prima di poterlo utilizzare sul tuo sito web.
 
    Consulta [Pubblicazione dei predefiniti visualizzatore](#publishing-viewer-presets).
@@ -503,7 +502,7 @@ Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi sc
 
 Il comportamento di scorrimento automatico delle miniature nel visualizzatore video interattivo funziona indipendentemente dalla modalità di visualizzazione scelta.
 
-Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi accedere a Scorrimento automatico dalla scheda Comportamento. Nella scheda Comportamento, seleziona il menu a discesa **[!UICONTROL Componenti selezionati]** e tocca **[!UICONTROL InteractiveSwatches.]** La casella di controllo Scorrimento automatico è elencata sotto il campo di testo Comando IS.
+Quando crei o modifichi un predefinito visualizzatore video interattivo, puoi accedere a Scorrimento automatico dalla scheda Comportamento. Nella scheda Comportamento, seleziona il menu a discesa **[!UICONTROL Componenti selezionati]** e tocca **[!UICONTROL InteractiveSwatches]**. La casella di controllo Scorrimento automatico è elencata sotto il campo di testo Comando IS.
 
 Se nel predefinito visualizzatore disattivi **[!UICONTROL Scorrimento automatico]** deselezionando la casella di controllo, durante la riproduzione del video da parte dell’utente il pannello visualizza solo la prima miniatura per l’intera durata del video. Tuttavia, un utente può scorrere manualmente le miniature utilizzando le icone di freccia su e giù, se necessario.
 
@@ -536,7 +535,7 @@ Quando si creano i predefiniti visualizzatore per banner carosello, è possibile
 
 |  | **Descrizione** | **Azioni** |
 |---|---|---|
-| **[!UICONTROL Icona punto attivo]** | Modificare l’icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona del punto attivo, nella scheda **[!UICONTROL Aspetto]**, in **[!UICONTROL Componente selezionato]**, tocca **[!UICONTROL ImageMapEffect.]** Seleziona **[!UICONTROL Sfondo]** alla voce **[!UICONTROL Icona]** e, nel campo **[!UICONTROL Immagine]**, individua l’immagine di sfondo desiderata. |
+| **[!UICONTROL Icona punto attivo]** | Modificare l’icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona del punto attivo, nella scheda **[!UICONTROL Aspetto]**, in **[!UICONTROL Componente selezionato]**, tocca **[!UICONTROL ImageMapEffect]**. Seleziona **[!UICONTROL Sfondo]** alla voce **[!UICONTROL Icona]** e, nel campo **[!UICONTROL Immagine]**, individua l’immagine di sfondo desiderata. |
 
 ## Attivazione o disattivazione dei predefiniti per visualizzatori {#activating-or-deactivating-viewer-presets}
 
@@ -544,7 +543,7 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
 **Per attivare o disattivare i predefiniti visualizzatore**
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore.]**
+1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 1. Nella pagina Predefinito visualizzatore , nell’intestazione di colonna **[!UICONTROL Stato]** , tocca l’opzione per attivare o disattivare un predefinito visualizzatore.
 
    I predefiniti visualizzatore attivati presentano l’interruttore a destra, all’interno di una casella blu; i predefiniti visualizzatore disattivati presentano l’interruttore a sinistra, all’interno di una casella di colore grigio chiaro.
@@ -553,32 +552,32 @@ I predefiniti per visualizzatori disponibili nell’interfaccia utente dipendono
 
 Attivando (o attivando) lo stato di un predefinito visualizzatore significa che è visibile nel componente Dynamic Media, nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa.
 
-Tuttavia, per fornire* *una risorsa con un predefinito visualizzatore, è necessario pubblicare anche esso. Per ottenere l’URL o il codice da incorporare per una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* pubblicati. Devi attivare e pubblicare tutti i predefiniti visualizzatore che sono forniti con i Dynamic Media. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
+Tuttavia, per *consegnare* una risorsa con un predefinito per visualizzatori, è necessario pubblicare anche il predefinito per visualizzatori. Per ottenere l’URL o il codice di incorporamento di una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* pubblicati. Devi attivare e pubblicare tutti i predefiniti visualizzatore che sono forniti con i Dynamic Media. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
 
 Consulta [Attivazione o disattivazione dei predefiniti per visualizzatori](#activating-or-deactivating-viewer-presets).
 
 Consulta anche [Anteprima delle risorse](/help/assets/previewing-assets.md).
 
-**Per pubblicare i predefiniti visualizzatore**
+**Per pubblicare i predefiniti visualizzatore:**
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore.]**
+1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 1. Seleziona uno o più predefiniti visualizzatore da pubblicare.
 1. Sulla barra degli strumenti, tocca l’icona **[!UICONTROL Pubblica]** .
 
 ## Ordinamento dei predefiniti per visualizzatori {#sorting-viewer-presets}
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse] > [!UICONTROL Predefiniti visualizzatore.]**
+1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 1. Per ordinare in base all’intestazione della colonna, fai clic su **[!UICONTROL Titolo del predefinito]**, **[!UICONTROL Tipo]**, **[!UICONTROL Pubblicato]** o **[!UICONTROL Stato]**. Ad esempio, fai clic su **[!UICONTROL Tipo]** per ordinare i tipi di predefiniti visualizzatore in ordine alfabetico o inverso.
 
 ## Modifica dei predefiniti per visualizzatori {#editing-viewer-presets}
 
 Tenere presente che la modifica di qualsiasi *predefinito predefinito visualizzatore predefinito* non è uno scenario supportato. Se modifichi un predefinito per visualizzatori preconfigurato, viene richiesto di salvarlo con un nuovo nome.
 
-**Per modificare i predefiniti visualizzatore**
+**Per modificare i predefiniti visualizzatore:**
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorsa] > [!UICONTROL Predefiniti visualizzatore.]**
+1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorsa]** > **[!UICONTROL Predefiniti visualizzatore]**.
 1. Seleziona un predefinito selezionando la casella a sinistra del titolo del predefinito visualizzatore.
-1. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
+1. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Editor predefiniti per visualizzatore]**, apporta le modifiche necessarie al predefinito visualizzatore, utilizzando le opzioni disponibili nelle schede **[!UICONTROL Aspetto]** e **[!UICONTROL Comportamento]**.
 
    Dalla scheda **[!UICONTROL Aspetto]**, nell’angolo in alto a sinistra della pagina Editor predefiniti per visualizzatore, tocca **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** o **[!UICONTROL Telefono]** per modificare la modalità di presentazione della risorsa.
@@ -594,17 +593,17 @@ Tenere presente che la modifica di qualsiasi *predefinito predefinito visualizza
 
 **Per eliminare i predefiniti visualizzatore personalizzati**
 
-1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi, nella barra a sinistra, seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse > Predefiniti visualizzatore.]**
+1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
 1. Nella pagina Predefiniti visualizzatore , seleziona un Titolo predefinito e tocca l’icona **[!UICONTROL Cestino]** .
-1. Tocca **[!UICONTROL Elimina.]**
+1. Tocca **[!UICONTROL Elimina]**.
 
 ## Applicazione di un predefinito per visualizzatori a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
 Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo aver selezionato un predefinito visualizzatore vengono visualizzati i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]**.
 
-**Per applicare un predefinito visualizzatore a una risorsa**
+**Per applicare un predefinito visualizzatore a una risorsa:**
 
-1. Apri la risorsa e, vicino all’angolo in alto a sinistra della pagina, tocca il menu a discesa, quindi seleziona **[!UICONTROL Visualizzatori.]**
+1. Apri la risorsa e, vicino all’angolo in alto a sinistra della pagina, tocca il menu a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
 
    >[!NOTE]
    >
