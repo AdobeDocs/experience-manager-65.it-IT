@@ -9,9 +9,8 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
-feature: Publishing
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Pubblicazione
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -20,7 +19,7 @@ ht-degree: 5%
 
 # Pubblicazione delle risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida.]** Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o incorporando il codice nella pagina.
+Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o incorporando il codice nella pagina.
 
 Puoi anche pubblicare istantaneamente le risorse caricate senza alcun intervento da parte dell’utente. Consulta [Configurazione di Dynamic Media - Modalità Scene7 .](config-dms7.md)
 In alternativa, puoi pubblicare selettivamente le risorse in Dynamic Media o AEM, reciprocamente esclusive, utilizzando  **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/selective-publishing.md)
