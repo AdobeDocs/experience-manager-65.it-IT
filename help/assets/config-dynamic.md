@@ -12,8 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configurazione,Modalità ibrida
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 1%
@@ -47,7 +46,7 @@ Ulteriori informazioni sull&#39;utilizzo di [video](/help/assets/video.md) in Dy
 >
 Sono documentati in [Monitoraggio e manutenzione dell&#39;istanza di Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
-La pubblicazione e la consegna ibride sono una funzione fondamentale dell’aggiunta di Dynamic Media a Adobe Experience Manager. La pubblicazione ibrida consente di distribuire risorse Dynamic Media, come immagini, set e video, dal cloud invece che dai nodi di pubblicazione Experience Manager.
+La pubblicazione e la consegna ibrida è una funzione fondamentale dell’aggiunta di Dynamic Media ad Adobe Experience Manager. La pubblicazione ibrida consente di distribuire risorse Dynamic Media, come immagini, set e video, dal cloud invece che dai nodi di pubblicazione Experience Manager.
 
 Altri contenuti, come visualizzatori Dynamic Media, pagine del sito e contenuto statico, continuano a essere serviti dai nodi di pubblicazione di Experience Manager.
 
@@ -67,9 +66,9 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
 
 | **Termine** | **Dynamic Media abilitato** | **Descrizione** |
 |---|---|---|
-| Nodo autore Experience Manager | Simbolo di spunta bianco in cerchio verde | Il nodo autore che distribuisci su On-Premise o tramite Managed Services. |
-| Experience Manager nodo di pubblicazione | &quot;X&quot; bianco in un quadrato rosso. | Il nodo di pubblicazione distribuito su On-Premise o tramite Managed Services. |
-| Nodo di pubblicazione del servizio immagini | Segno di spunta bianco in cerchio verde. | Il nodo di pubblicazione eseguito sui data center gestiti da Adobe. Si riferisce all’URL del servizio immagine. |
+| Nodo autore di Experience Manager | Simbolo di spunta bianco in cerchio verde | Il nodo autore che distribuisci su On-Premise o tramite Managed Services. |
+| Nodo di pubblicazione Experience Manager | &quot;X&quot; bianco in un quadrato rosso. | Il nodo di pubblicazione distribuito su On-Premise o tramite Managed Services. |
+| Nodo di pubblicazione del servizio immagine | Segno di spunta bianco in cerchio verde. | Il nodo di pubblicazione eseguito sui data center gestiti da Adobe. Si riferisce all’URL del servizio immagine. |
 
 È possibile scegliere di implementare Dynamic Media solo per l&#39;imaging, solo per il video o sia per l&#39;imaging che per il video. Per determinare i passaggi per la configurazione di Dynamic Media per lo scenario specifico, consultare la tabella seguente.
 
@@ -142,11 +141,11 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
 
 ## Abilitazione di Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Per sfruttare le funzioni di Dynamic Media, è necessario abilitare Dynamic Media utilizzando la modalità di esecuzione `dynamicmedia` come si farebbe, ad esempio, in modalità di esecuzione `publish`. Prima di attivare, controlla i [requisiti tecnici.](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)
+[Dynamic Media è disattivato per impostazione predefinita. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Per sfruttare le funzioni di Dynamic Media, è necessario abilitare Dynamic Media utilizzando la modalità di esecuzione `dynamicmedia` come si farebbe, ad esempio, in modalità di esecuzione `publish`. Prima di attivare, controlla i [requisiti tecnici](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
->L’abilitazione di Dynamic Media tramite la modalità di esecuzione sostituisce le funzionalità degli Experienci Manager 6.1 e 6.0 in cui è stato abilitato Dynamic Media impostando il flag `dynamicMediaEnabled` su **[!UICONTROL true.]** Questo flag non ha funzionalità in Experience Manager 6.2 e versioni successive. Inoltre, non è necessario riavviare il quickstart per abilitare Dynamic Media.
+>L’abilitazione di Dynamic Media tramite la modalità di esecuzione sostituisce le funzionalità degli Experienci Manager 6.1 e 6.0 in cui è stato abilitato Dynamic Media impostando il flag `dynamicMediaEnabled` su **[!UICONTROL true]**. Questo flag non ha funzionalità in Experience Manager 6.2 e versioni successive. Inoltre, non è necessario riavviare il quickstart per abilitare Dynamic Media.
 
 Attivando Dynamic Media, le funzioni Dynamic Media sono disponibili nell’interfaccia utente e ogni risorsa immagine caricata riceve un rendering *cqdam.pyramid.tiff* utilizzato per la distribuzione rapida di rappresentazioni dinamiche delle immagini. Tali PTIFF presentano vantaggi significativi quali i seguenti:
 
@@ -157,7 +156,7 @@ Se desideri utilizzare Dynamic Media Classic in Experience Manager, non abilitar
 
 Per abilitare Dynamic Media, è necessario abilitare la modalità di esecuzione Dynamic Media dalla riga di comando o dal nome del file quickstart.
 
-**Per abilitare Dynamic Media**
+**Per abilitare Dynamic Media:**
 
 1. Nella riga di comando, quando si avvia l&#39;avvio rapido, procedi come segue:
 
@@ -269,12 +268,12 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 **Per impostare l’autenticazione**
 
 1. Contatta l’Assistenza clienti Adobe per il file e la password KeyStore se non hai già il file e la password. Queste informazioni sono una parte necessaria del provisioning. Associa le chiavi al tuo account.
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Protezione > Utenti.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
 1. Nella pagina Gestione utente , individua l&#39;utente **[!UICONTROL dynamic-media-replication]** , quindi tocca per aprire.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Nella pagina Modifica impostazioni utente per la replica Dynamic-media, tocca la scheda **[!UICONTROL Registro chiavi]** , quindi fai clic su **[!UICONTROL Crea archivio chiavi.]**
+1. Nella pagina Modifica impostazioni utente per la replica Dynamic-media, tocca la scheda **[!UICONTROL Registro chiavi]** , quindi fai clic su **[!UICONTROL Crea archivio chiavi]**.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -288,7 +287,7 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 1. Nella pagina **[!UICONTROL Modifica impostazioni utente per dynamic-media-replication]** , espandi l&#39;area **Aggiungi chiave privata dal file KeyStore** e aggiungi quanto segue (vedi le immagini che seguono):
 
    * Nel campo **[!UICONTROL Nuovo alias]**, immettere il nome di un alias che si desidera utilizzare in seguito nella configurazione di replica. Ad esempio, puoi utilizzare `replication` come alias.
-   * Tocca **[!UICONTROL File KeyStore.]** Passa al file KeyStore fornito per Adobe, selezionalo, quindi tocca  **[!UICONTROL Apri.]**
+   * Tocca **[!UICONTROL File KeyStore]**. Passa al file KeyStore fornito per Adobe, selezionalo, quindi tocca **[!UICONTROL Apri]**.
    * Nel campo **[!UICONTROL Password file KeyStore]** , immetti la password del file KeyStore. Questa password è **non** la password KeyStore che hai creato nel passaggio 5, ma è l&#39;Adobe di password del file KeyStore fornito nel messaggio e-mail di benvenuto che ti è stato inviato durante il provisioning. Se non hai ricevuto una password del file KeyStore, contatta l’Assistenza clienti Adobe.
    * Nel campo **[!UICONTROL Password chiave privata]** , immetti la password della chiave privata (può essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto una password di chiave privata, contatta l’Assistenza clienti di Adobe.
    * Nel campo **[!UICONTROL Alias chiave privata]**, immettere l&#39;alias della chiave privata. Esempio, `*companyname*-alias`. Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti di Adobe.
@@ -297,32 +296,32 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 
 1. Tocca **[!UICONTROL Salva e chiudi]** per salvare le modifiche apportate a questo utente.
 
-   Successivamente, è necessario [configurare l&#39;agente di replica.](#configuring-the-replication-agent)
+   Successivamente, devi [configurare l&#39;agente di replica](#configuring-the-replication-agent).
 
 ### Configurazione dell’agente di replica {#configuring-the-replication-agent}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Implementazione > Replica > Agenti sull’autore.]**
-1. Nella pagina Agenti sulla pagina di authoring, tocca **[!UICONTROL Replica immagine ibrida Dynamic Media (s7delivery).]**
-1. Tocca **[!UICONTROL Modifica.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
+1. Nella pagina Agenti della pagina di authoring, tocca **[!UICONTROL Replica immagine ibrida Dynamic Media (s7delivery)]**.
+1. Tocca **[!UICONTROL Modifica]**.
 1. Tocca la scheda **[!UICONTROL Impostazioni]** , quindi immetti quanto segue:
 
    * **[!UICONTROL Abilitato]** : seleziona questa casella di controllo per abilitare l’agente di replica.
    * **[!UICONTROL Regione]** : imposta l&#39;area appropriata: Nord America, Europa o Asia
    * **[!UICONTROL ID tenant]** : questo valore è il nome della società/tenant che esegue la pubblicazione nel servizio di replica. Questo valore è l’ID tenant fornito in Adobe nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto queste informazioni, contatta l’Assistenza clienti Adobe.
-   * **[!UICONTROL Alias]**  archivio chiavi: questo valore è lo stesso del valore** Nuovo alias** impostato durante la generazione della chiave in  [Impostazione dell&#39;autenticazione](#setting-up-authentication); ad esempio,  `replication`. (Vedere il passaggio 7 in [Configurazione dell&#39;autenticazione](#setting-up-authentication).)
-   * **[!UICONTROL Password archivio chiavi]** : la password KeyStore creata quando hai toccato  **[!UICONTROL Crea KeyStore.]** Adobe non fornisce questa password. Vedi il passaggio 5 di [Configurazione dell&#39;autenticazione](#setting-up-authentication).
+   * **[!UICONTROL Alias archivio chiavi]** : questo valore è lo stesso del  **nuovo valore** Aliasvalue impostato durante la generazione della chiave in  [Configurazione dell&#39;autenticazione](#setting-up-authentication); ad esempio,  `replication`. (Vedere il passaggio 7 in [Configurazione dell&#39;autenticazione](#setting-up-authentication).)
+   * **[!UICONTROL Password archivio chiavi]** : la password KeyStore creata quando hai toccato  **[!UICONTROL Crea KeyStore]**. Adobe non fornisce questa password. Vedi il passaggio 5 di [Configurazione dell&#39;autenticazione](#setting-up-authentication).
 
    L&#39;immagine seguente mostra l&#39;agente di replica con dati di esempio:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tocca **[!UICONTROL OK.]**
+1. Toccare **[!UICONTROL OK]**.
 
 ### Convalida dell&#39;agente di replica per Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
 Per convalidare l&#39;agente di replica per Dynamic Media, procedi come segue:
 
-Tocca **[!UICONTROL Prova connessione.]** Esempio di output:
+Tocca **[!UICONTROL Prova connessione]**. Esempio di output:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -457,7 +456,7 @@ Esempio di registro di replica:
 
 **Soluzione:**
 
-1. Ad Experience Manager, fare clic su **[!UICONTROL Strumenti > Generale > CRXDE Lite.]**
+1. Ad Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -468,7 +467,7 @@ Esempio di registro di replica:
 
    `enableOauth=true`
 
-1. Nell&#39;angolo in alto a sinistra della pagina, tocca **[!UICONTROL Salva tutto.]**
+1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Salva tutto]**.
 
 ### Verifica della configurazione {#testing-your-configuration}
 
@@ -479,12 +478,12 @@ Prima di iniziare il test, assicurati di aver già eseguito le operazioni seguen
 * Sono stati aggiunti i predefiniti per immagini.
 * Configura **[!UICONTROL Configurazione Dynamic Media (Pre 6.3)]** in Cloud Services. L’URL del servizio immagini è necessario per questo test
 
-**Per verificare la configurazione**
+**Per verificare la configurazione:**
 
-1. Carica una risorsa immagine. (In Risorse, tocca **[!UICONTROL Crea > File]** e seleziona il file.)
+1. Carica una risorsa immagine. (In Risorse, tocca **[!UICONTROL Crea]** > **[!UICONTROL File]** e seleziona il file.)
 1. Attendi il completamento del flusso di lavoro.
-1. Pubblica la risorsa immagine. (Seleziona la risorsa e tocca **[!UICONTROL Pubblicazione rapida.]**)
-1. Passa alle rappresentazioni per quell&#39;immagine aprendo l&#39;immagine e toccando **[!UICONTROL Rappresentazioni.]**
+1. Pubblica la risorsa immagine. (Seleziona la risorsa e tocca **[!UICONTROL Pubblicazione rapida]**.)
+1. Passa alle rappresentazioni per quell&#39;immagine aprendo l&#39;immagine e toccando **[!UICONTROL Rappresentazioni]**.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -505,8 +504,8 @@ Prima di configurare i Cloud Services Dynamic Media, assicurati di aver impostat
 
 Per configurare Cloud Services Dynamic Media:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti > Cloud Services > Configurazione Dynamic Media (Pre-6.3).]**
-1. Nella pagina Browser configurazione Dynamic Media, nel riquadro a sinistra, seleziona **[!UICONTROL global]**, quindi tocca **[!UICONTROL Crea.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media (Pre-6.3)]**.
+1. Nella pagina Browser configurazione Dynamic Media, seleziona **[!UICONTROL globale]** nel riquadro a sinistra, quindi tocca **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione Dynamic Media]**, digitare un titolo nel campo Titolo.
 1. Se stai configurando Dynamic Media per i video,
 
@@ -531,7 +530,7 @@ Per configurare Cloud Services Dynamic Media:
 
 ### Creazione di un pacchetto predefinito di Video Analytics dopo la configurazione del primo nodo Autore {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
-Al termine di questa attività, disponi di un file di pacchetto contenente i predefiniti di Video Analytics. Questi predefiniti contengono una suite di rapporti, il server di tracciamento, lo spazio dei nomi di tracciamento e l’ID organizzazione del Marketing Cloud, se disponibile.
+Al termine di questa attività, disponi di un file di pacchetto contenente i predefiniti di Video Analytics. Questi predefiniti contengono una suite di rapporti, il server di tracciamento, lo spazio dei nomi di tracciamento e l’ID organizzazione Experience Cloud, se disponibile.
 
 1. Se non lo hai già fatto, configura la configurazione Dynamic Media (Pre 6.3).
 1. (Facoltativo) Visualizza e copia l’ID suite di rapporti (devi disporre dell’accesso a JCR). Anche se non è necessario disporre dell’ID suite di rapporti, la convalida risulta più semplice.
@@ -633,7 +632,7 @@ Pubblica le impostazioni di catalogo predefinite come parte del processo di conf
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. Tocca la scheda **[!UICONTROL Replica]** .
-1. Tocca **[!UICONTROL Replicare.]**
+1. Tocca **[!UICONTROL Replicare]**.
 
 ## Replicazione dei predefiniti visualizzatore {#replicating-viewer-presets}
 
@@ -709,16 +708,16 @@ I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
 
 Se utilizzi Dynamic Media solo per i video, segui questi passaggi per impostare i filtri delle risorse per la replica:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti > Implementazione > Replica > Agenti su autore.]**
-1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione).]**
-1. Tocca **[!UICONTROL Modifica.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
+1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione)]**.
+1. Tocca **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Impostazioni agente]**, nella scheda **[!UICONTROL Impostazioni]** , seleziona **[!UICONTROL Abilitato]** per attivare l&#39;agente.
-1. Tocca **[!UICONTROL OK.]**
-1. Ad Experience Manager, toccare **[!UICONTROL Strumenti > Generale > CRXDE Lite.]**
+1. Toccare **[!UICONTROL OK]**.
+1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Individua **[!UICONTROL filter-video]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia.]**
+1. Individua **[!UICONTROL filter-video]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/publish`
-1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Incolla.]**
+1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Incolla]**.
 
 Questi passaggi impostano l&#39;istanza di pubblicazione Experience Manager per distribuire l&#39;immagine poster video e i metadati video necessari per la riproduzione, mentre il video stesso viene distribuito dal Cloud Service Dynamic Media. Il filtro esclude anche dalla replica le rappresentazioni video originali e le miniature statiche, che non sono necessarie nell’istanza di pubblicazione.
 
@@ -726,20 +725,20 @@ Questi passaggi impostano l&#39;istanza di pubblicazione Experience Manager per 
 
 Se utilizzi Dynamic Media per l’imaging in implementazioni non di produzione, segui questi passaggi per configurare i filtri risorse per la replica:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti > Implementazione > Replica > Agenti su autore.]**
-1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione).]**
-1. Tocca **[!UICONTROL Modifica.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
+1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione)]**.
+1. Tocca **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Impostazioni agente]**, nella scheda **[!UICONTROL Impostazioni]** , seleziona **[!UICONTROL Abilitato]** per attivare l&#39;agente.
-1. Tocca **[!UICONTROL OK.]**
-1. Ad Experience Manager, toccare **[!UICONTROL Strumenti > Generale > CRXDE Lite.]**
+1. Toccare **[!UICONTROL OK]**.
+1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Individua **[!UICONTROL filter-images]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia.]**
+1. Individua **[!UICONTROL filter-images]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/publish`
-1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Crea > Crea nodo.]** Immetti il nome  `damRenditionFilters` del tipo  `nt:unstructured`.
-1. Individua `damRenditionFilters`, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Incolla.]**
+1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Immettere il nome `damRenditionFilters` di tipo `nt:unstructured`.
+1. Individua `damRenditionFilters`, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Incolla]**.
 
 Questi passaggi impostano l’istanza di pubblicazione di Experience Manager per consegnare le immagini al tuo ambiente non di produzione. Il filtro esclude anche dalla replica l&#39;immagine originale e le rappresentazioni statiche, che non sono necessarie nell&#39;istanza di pubblicazione.
 
@@ -753,14 +752,14 @@ Utilizzi più filtri su un server? Ad esempio, un filtro per la replica da pubbl
 
 Per personalizzare facoltativamente i filtri delle risorse per la replica:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti > Generale > CRXDE Lite.]**
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` per controllare i filtri.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. Per definire il tipo di MIME per il filtro, potete individuare il tipo di MIME come segue:
 
-   Nella barra a sinistra, espandi `content > dam > <locate_your_asset> >  jcr:content > metadata` e quindi nella tabella individua **[!UICONTROL dc:format.]**
+   Nella barra a sinistra, espandi `content > dam > <locate_your_asset> >  jcr:content > metadata` e quindi nella tabella individua **[!UICONTROL dc:format]**.
 
    L’immagine seguente è un esempio del percorso di una risorsa a dc:format.
 
@@ -814,11 +813,11 @@ La configurazione di Dynamic Media Image Server comporta la modifica del bundle 
 >[!NOTE]
 Dynamic Media funziona preconfigurato [dopo che è abilitato](#enabling-dynamic-media). Tuttavia, è possibile scegliere di perfezionare l&#39;installazione configurando Dynamic Media Image Server per soddisfare determinate specifiche o requisiti.
 
-**Prerequisito**:  ** Prima di configurare Dynamic Media Image Server, assicurati che la tua VM di Windows® includa un&#39;installazione delle librerie Microsoft® Visual C++. Le librerie sono necessarie per eseguire Dynamic Media Image Server. È possibile [scaricare il pacchetto ridistribuibile Microsoft® Visual C++ 2010 (x64) qui](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**Prerequisito**:  ** Prima di configurare Dynamic Media Image Server, assicurati che la tua VM di Windows® includa un&#39;installazione delle librerie Microsoft® Visual C++. Le librerie sono necessarie per eseguire Dynamic Media Image Server. È possibile [scaricare il pacchetto ridistribuibile Microsoft® Visual C++ 2010 (x64) qui](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 Per configurare le impostazioni di Dynamic Media Image Server:
 
-1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Operazioni > Console web.]**
+1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Nella pagina Configurazione console Web di Adobe Experience Manager, tocca **[!UICONTROL OSGi > Configurazione]** per elencare tutti i bundle attualmente in esecuzione in Experience Manager.
 
    I server di consegna Dynamic Media si trovano sotto i seguenti nomi nell&#39;elenco:
@@ -826,7 +825,7 @@ Per configurare le impostazioni di Dynamic Media Image Server:
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. Nell’elenco dei bundle, a destra di Adobe CQ Scene7 ImageServer, tocca l’icona Modifica .
+1. Nell&#39;elenco dei bundle, a destra di Adobe CQ Scene7 ImageServer, tocca l&#39;icona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo Adobe CQ Scene7 ImageServer, impostare i seguenti valori di configurazione:
 
    >[!NOTE]
@@ -862,7 +861,7 @@ Per configurare le impostazioni di Dynamic Media Image Server:
   <tr>
    <td>RandomAccessUrlTimeout</td>
    <td>20</td>
-   <td>Valore di timeout per quanto tempo in secondi il server di immagini attende che il JCR risponda a una richiesta di riquadro con intervallo.</td>
+   <td>Valore di timeout per quanto tempo in secondi il server di immagini attende che il JCR risponda a una richiesta di riquadri variati.</td>
   </tr>
   <tr>
    <td>WorkerThreads</td>
@@ -872,14 +871,14 @@ Per configurare le impostazioni di Dynamic Media Image Server:
  </tbody>
 </table>
 
-1. Tocca **[!UICONTROL Salva.]**
+1. Tocca **[!UICONTROL Salva]**.
 1. Nell’elenco dei bundle, a destra di Adobe CQ Scene7 PlatformServer, tocca l’icona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo Adobe CQ Scene7 PlatformServer impostare le seguenti opzioni di valore predefinite:
 
    >[!NOTE]
    Dynamic Media Image Server utilizza la propria cache del disco per memorizzare in cache le risposte. Non è possibile utilizzare la cache HTTP Experience Manager e il Dispatcher per memorizzare in cache le risposte dal server immagini Dynamic Media.
 
-   | **Proprietà** | **Valore predefinito** | **Descrizione** |
+   | Proprietà | Valore predefinito | Descrizione |
    |---|---|---|
    | Cache abilitata | Selezionato | Se la cache di risposta è abilitata |
    | Directory cache | cache | Uno o più percorsi delle cartelle della cache di risposta. I percorsi relativi vengono risolti rispetto alla cartella interna del bundle s7imaging . |
@@ -967,7 +966,7 @@ La gestione del colore di Dynamic Media consente di colorare le risorse corrette
 
 Con la correzione del colore, le risorse acquisite mantengono lo spazio colore (RGB, CMYK, Grigio) e il profilo colore incorporato nella rappresentazione TIFF piramidale generata. Quando si richiede un rendering dinamico, il colore dell&#39;immagine viene corretto nello spazio colore di destinazione. Puoi configurare il profilo del colore di output nelle impostazioni di pubblicazione Dynamic Media in JCR.
 
-La gestione del colore per Adobe utilizza profili ICC (International Color Consortium), un formato definito da ICC.
+La gestione del colore di Adobe utilizza profili ICC (International Color Consortium), un formato definito da ICC.
 
 È possibile configurare la gestione del colore Dynamic Media e i predefiniti per immagini utilizzando l’output CMYK, RGB o Grigio. Consulta [Configurazione dei predefiniti per immagini](/help/assets/managing-image-presets.md).
 
@@ -978,14 +977,14 @@ I casi d’uso avanzati possono utilizzare un modificatore di configurazione man
 * `iccEmbed` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Il set standard di profili di colore di Adobe è disponibile solo se è installato [Feature Pack 12445 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Tutti i pacchetti di funzioni e i service pack sono disponibili in [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il Feature Pack 12445 fornisce i profili di colore Adobe.
+Il set standard di profili colore di Adobe è disponibile solo se è installato [Feature Pack 12445 da Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Tutti i pacchetti di funzioni e i service pack sono disponibili in [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il Feature Pack 12445 fornisce profili di colore Adobe.
 
 
 ### Installazione del Feature Pack 12445 {#installing-feature-pack}
 
 Per utilizzare le funzionalità di gestione del colore di Dynamic Media, installare feature pack 12445.
 
-**Per installare feature pack 12445**
+**Per installare feature pack 12445:**
 
 1. Passa a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) e scarica `cq-6.3.0-featurepack-12445`.
 
@@ -1007,7 +1006,7 @@ Dopo aver installato il feature pack, configurate i profili di colore predefinit
 
    Le proprietà di correzione del colore sono descritte nella tabella **Proprietà correzione colore**. I valori che è possibile assegnare alle proprietà di correzione del colore si trovano nella tabella **Profilo colore**.
 
-   Ad esempio, in **[!UICONTROL Nome]**, aggiungi `iccprofilecmyk`, seleziona **[!UICONTROL Tipo]** `String` e aggiungi `WebCoated` come **[!UICONTROL Valore.]** Quindi tocca  **** Aggiungi e quindi  **[!UICONTROL Salva]** tutto per salvare i valori.
+   Ad esempio, in **[!UICONTROL Nome]**, aggiungi `iccprofilecmyk`, seleziona **[!UICONTROL Tipo]** `String` e aggiungi `WebCoated` come **[!UICONTROL Valore]**. Quindi tocca **[!UICONTROL Aggiungi]** e poi **[!UICONTROL Salva tutto]** per salvare i valori.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1255,9 +1254,9 @@ Sono installati i seguenti profili di colore:
  </tbody>
 </table>
 
-1. Tocca **[!UICONTROL Salva tutto.]**
+1. Tocca **[!UICONTROL Salva tutto]**.
 
-Ad esempio, puoi impostare **[!UICONTROL iccprofilergb]** su `sRGB` e **[!UICONTROL iccprofilecmyk]** su **[!UICONTROL WebCoated.]**
+Ad esempio, puoi impostare **[!UICONTROL iccprofilergb]** su `sRGB` e **[!UICONTROL iccprofilecmyk]** su **[!UICONTROL WebCoated]**.
 
 In questo modo si effettua quanto segue:
 
