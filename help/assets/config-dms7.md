@@ -9,9 +9,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configurazione,Modalità Scene7
-source-git-commit: 485464350f391fca327207b78b165897fdacc2d3
+source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
 workflow-type: tm+mt
-source-wordcount: '6156'
+source-wordcount: '6153'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 
 ## Abilitazione di Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
+[Dynamic Media è disattivato per impostazione predefinita. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
 
 >[!WARNING]
 Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` nell’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
@@ -76,7 +76,7 @@ Per migrare eventuali predefiniti e configurazioni personalizzate creati da `/et
 
 L&#39;installazione del feature pack 18912 è *opzionale*.
 
-Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare le risorse da Dynamic Media - modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7 in Experience Manager. È disponibile da [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare le risorse da Dynamic Media - modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7 in Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per la migrazione di massa delle risorse](/help/assets/bulk-ingest-migrate.md) .
 
@@ -88,7 +88,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 
 **Per creare una configurazione Dynamic Media nei Cloud Services:**
 
-1. In modalità Autore Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services > Configurazione Dynamic Media]**.
+1. In modalità Autore Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca l’icona Strumenti , quindi tocca **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media]**.
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
 1. Nella pagina **[!UICONTROL Crea configurazione Dynamic Media]**, immetti un titolo, l&#39;indirizzo e-mail dell&#39;account Dynamic Media, la password, quindi seleziona la tua area geografica. Queste informazioni vengono fornite per Adobe nell’e-mail di provisioning. Se non hai ricevuto l’e-mail, contatta l’Assistenza clienti di Adobe.
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 
          ![Casella di controllo Replica metadati dopo la pubblicazione di Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Pubblicazione selettivaQuesta opzione consente di controllare le cartelle pubblicate in Dynamic Media.]** Consente di utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche, oppure di determinare quali cartelle vengono pubblicate esclusivamente in Experience Manager per la visualizzazione dell’anteprima. Le stesse risorse sono *non* pubblicate in Dynamic Media per la distribuzione nel dominio pubblico.<br>Puoi impostare questa opzione qui in  **[!UICONTROL Dynamic Media Cloud]** Configuration oppure, se lo desideri, puoi scegliere di impostare questa opzione a livello di cartella, in  **[!UICONTROL Proprietà]** di una cartella.<br>Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/selective-publishing.md)<br>Se successivamente modifichi questa configurazione o la modifichi a livello di cartella, queste modifiche interessano solo le nuove risorse caricate da quel momento in poi. Lo stato di pubblicazione delle risorse esistenti nella cartella rimane invariato finché non le cambi manualmente dalla finestra di dialogo **[!UICONTROL Pubblicazione rapida]** o **[!UICONTROL Gestisci pubblicazione]**.
+      * **[!UICONTROL Pubblicazione selettivaQuesta opzione consente di controllare le cartelle pubblicate in Dynamic Media.]** Consente di utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche, oppure di determinare quali cartelle vengono pubblicate esclusivamente in Experience Manager per la visualizzazione dell’anteprima. Le stesse risorse sono *non* pubblicate in Dynamic Media per la distribuzione nel dominio pubblico.<br>Puoi impostare questa opzione qui in  **[!UICONTROL Dynamic Media Cloud]** Configuration oppure, se lo desideri, puoi scegliere di impostare questa opzione a livello di cartella, in  **[!UICONTROL Proprietà]** di una cartella.<br>Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).<br>Se successivamente modifichi questa configurazione o la modifichi a livello di cartella, queste modifiche interessano solo le nuove risorse caricate da quel momento in poi. Lo stato di pubblicazione delle risorse esistenti nella cartella rimane invariato finché non le cambi manualmente dalla finestra di dialogo **[!UICONTROL Pubblicazione rapida]** o **[!UICONTROL Gestisci pubblicazione]**.
    * **[!UICONTROL Server di anteprima protetto]** : consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, Experience Manager può accedere in modo sicuro e visualizzare in anteprima le rappresentazioni Dynamic Media remote (nessun file binario viene inviato nuovamente all’istanza di Experience Manager).
 A meno che non si disponga di una disposizione speciale per utilizzare il server della propria azienda o un server speciale, Adobe consiglia di lasciare questa impostazione come specificato.
 
@@ -118,7 +118,7 @@ A meno che non si disponga di una disposizione speciale per utilizzare il server
    * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
       * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specifica per l’esclusione.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.
-Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi tocca **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]** , scegli una delle tre opzioni seguenti. Al termine, tocca **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **Sincronizza tutto il contenuto**in precedenza.* Consulta anche  [Utilizzo della pubblicazione selettiva a livello di cartella in Dynamic Media.](/help/assets/selective-publishing.md)
+Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi tocca **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]** , scegli una delle tre opzioni seguenti. Al termine, tocca **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**in precedenza.* Consulta anche  [Utilizzo della pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Ereditato]**  - Nessun valore di sincronizzazione esplicito sulla cartella; la cartella eredita invece il valore di sincronizzazione da una delle cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le visualizzazioni ereditate viene visualizzato tramite una descrizione comandi.
          * **[!UICONTROL Abilita per sottocartelle]**  - Includi tutto ciò che si trova in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
          * **[!UICONTROL Disabilitata per le sottocartelle]**  - Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione con Dynamic Media.
@@ -132,7 +132,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 
    * Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account. Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
 
-   * Nella barra di navigazione in alto a destra della pagina, tocca **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni di pubblicazione > Image Server]**.
+   * Nella barra di navigazione in alto a destra della pagina, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
 
    * Nella pagina Pubblica su Image Server, seleziona **[!UICONTROL Test Image Server]** dall’elenco a discesa Contesto pubblicazione.
    * Per il filtro indirizzi client, tocca **[!UICONTROL Aggiungi]**.
@@ -172,7 +172,7 @@ Le attività di configurazione e configurazione includono:
 
 Le impostazioni di Configurazione pubblicazione determinano il modo in cui le risorse vengono distribuite per impostazione predefinita da Dynamic Media. Se non viene specificata alcuna impostazione, Dynamic Media distribuisce una risorsa in base alle impostazioni predefinite definite in Configurazione pubblicazione. Ad esempio, una richiesta di fornire un’immagine che non include un attributo di risoluzione genera un’immagine con l’impostazione Risoluzione oggetto predefinita.
 
-Per configurare l&#39;impostazione di pubblicazione: in Dynamic Media Classic, tocca **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni pubblicazione > Image Server]**.
+Per configurare l&#39;impostazione di pubblicazione: in Dynamic Media Classic, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
 
 La schermata Image Server stabilisce le impostazioni predefinite per la distribuzione delle immagini. Per una descrizione di ciascuna impostazione, consulta la schermata dell’interfaccia utente .
 
@@ -182,11 +182,11 @@ La schermata Image Server stabilisce le impostazioni predefinite per la distribu
 * **[!UICONTROL Valori predefiniti per i campi del catalogo]**: queste impostazioni si riferiscono alla risoluzione e al tipo di miniatura predefinito delle immagini.
 * **[!UICONTROL Attributi di gestione del colore]** : queste impostazioni determinano quali profili di colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi di compatibilità]** : questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per la compatibilità con le versioni precedenti.
-* **[!UICONTROL Supporto per la localizzazione]** : queste impostazioni consentono di gestire più attributi di impostazione internazionale. Consente inoltre di specificare una stringa di mappa delle impostazioni internazionali in modo da definire le lingue che si desidera supportare per le varie descrizioni a comparsa nei visualizzatori. Per ulteriori informazioni sulla configurazione del **[supporto per la localizzazione]**, consulta [Considerazioni sulla configurazione della localizzazione delle risorse](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Supporto per la localizzazione]** : queste impostazioni consentono di gestire più attributi di impostazione internazionale. Consente inoltre di specificare una stringa di mappa delle impostazioni internazionali in modo da definire le lingue che si desidera supportare per le varie descrizioni a comparsa nei visualizzatori. Per ulteriori informazioni sulla configurazione del **[supporto per la localizzazione]**, consulta [Considerazioni sulla configurazione della localizzazione delle risorse](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
 
 #### Configurazione delle impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
 
-Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazione globale di Dynamic Media Classic, tocca **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali]**.
+Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazione globale di Dynamic Media Classic, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
 **[!UICONTROL Server]**  - Al momento del provisioning dell’account, Dynamic Media fornisce automaticamente i server assegnati alla tua azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account. Non modificare nessuno dei nomi dei server, a meno che non sia esplicitamente richiesto dall’Assistenza clienti di Adobe.
 
@@ -249,7 +249,7 @@ Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-ass
 
 **Per modificare i tipi MIME per i formati supportati:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella barra a sinistra, passa a quanto segue:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -276,7 +276,7 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
 
 **Per aggiungere tipi MIME per i formati non supportati:**
 
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti > Operazioni > Console web]**.
+1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -294,7 +294,7 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
 
 1. Digita `DWG=image/vnd.dwg` nel campo di testo vuoto appena aggiunto.
 
-   L’esempio `DWG=image/vnd.dwg` è solo a scopo illustrativo. Il tipo MIME che aggiungi qui può essere qualsiasi altro formato non supportato.
+   L’esempio `DWG=image/vnd.dwg` è solo a scopo dimostrativo. Il tipo MIME che aggiungi qui può essere qualsiasi altro formato non supportato.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -303,7 +303,7 @@ In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i form
    A questo punto, è possibile chiudere la scheda del browser con la pagina di configurazione della console Web di Adobe Experience Manager aperta.
 
 1. Torna alla scheda del browser con la console di Experience Manager aperta.
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
+1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -330,7 +330,7 @@ Innanzitutto, definisci la convenzione di denominazione per il raggruppamento de
 
 Quando carichi dei file, Dynamic Media crea automaticamente un set con tutti i file che corrispondono alla convenzione di denominazione definita nei predefiniti attivi.
 
-**Configurazione della denominazione predefinita**
+##### Configurazione della denominazione predefinita
 
 Crea una convenzione di denominazione predefinita utilizzata in qualsiasi ricetta predefinita per set di batch. La convenzione di denominazione predefinita selezionata nella definizione del predefinito del set di batch è probabilmente tutto ciò che è necessario per la società per generare i set in batch. Viene creato un predefinito per set di batch per utilizzare la convenzione di denominazione predefinita definita dall’utente. È possibile creare un numero illimitato di predefiniti per set di batch con convenzioni di denominazione alternative e personalizzate necessarie per un determinato set di contenuti nei casi in cui vi sia un’eccezione alla denominazione predefinita definita dall’azienda.
 
@@ -346,7 +346,7 @@ Sono disponibili due elementi per la definizione, la corrispondenza e il nome di
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
 
-1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione > Impostazione applicazione > Predefiniti set di batch > Denominazione predefinita]**.
+1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Denominazione predefinita]**.
 1. Per specificare come visualizzare e immettere le informazioni di ciascun elemento, seleziona **[!UICONTROL Visualizza modulo]** o **[!UICONTROL Visualizza codice]**.
 
    È possibile selezionare la casella di controllo **[!UICONTROL Visualizza codice]** per visualizzare il valore dell&#39;espressione regolare creato accanto alle selezioni del modulo. È possibile immettere o modificare questi valori per definire gli elementi della convenzione di denominazione, se la visualizzazione del modulo vi limita per qualsiasi motivo. Se i valori non possono essere analizzati nella visualizzazione modulo, i campi modulo diventano inattivi.
@@ -365,7 +365,7 @@ Sono disponibili due elementi per la definizione, la corrispondenza e il nome di
    * Tocca **[!UICONTROL Salva con nome]** e digita un nome per il predefinito.
    * Tocca **[!UICONTROL Salva]** se modifichi un predefinito esistente.
 
-**Creazione di un predefinito per set di batch**
+##### Creazione di un predefinito per set di batch
 
 Dynamic Media utilizza i predefiniti per set di batch per organizzare le risorse in set di immagini (immagini alternative, opzioni colore, 360 giri) da visualizzare nei visualizzatori. I predefiniti per set di batch vengono eseguiti automaticamente insieme ai processi di caricamento delle risorse in Dynamic Media.
 
@@ -379,7 +379,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
 
-1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione > Impostazione applicazione > Predefiniti set di batch > Predefinito set di batch]**.
+1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Predefinito set di batch]**.
 
    **[!UICONTROL Visualizza modulo]**, nell’angolo superiore destro della pagina Dettagli, è la visualizzazione predefinita.
 
@@ -388,7 +388,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 1. Selezionare un tipo di predefinito dal menu a discesa Tipo set di batch.
 1. Effettua una delle operazioni seguenti:
 
-   * Se utilizzi una convenzione di denominazione predefinita impostata in precedenza in **[!UICONTROL Impostazione applicazione > Predefiniti set di batch > Denominazione predefinita]**, espandi **[!UICONTROL Convenzioni di denominazione delle risorse]**, quindi, nell’elenco a discesa Denominazione file , tocca **[!UICONTROL Predefinito]**.
+   * Se utilizzi una convenzione di denominazione predefinita impostata in precedenza in **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Denominazione predefinita]**, espandi **[!UICONTROL Convenzioni di denominazione delle risorse]**, quindi tocca **[!UICONTROL Predefinito]** nell’elenco a discesa Denominazione file.
 
    * Per definire una nuova convenzione di denominazione durante la configurazione del predefinito, espandi **[!UICONTROL Convenzioni di denominazione delle risorse]**, quindi tocca **[!UICONTROL Personalizzato]** nell’elenco a discesa Denominazione file .
 
@@ -405,7 +405,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 
    L’attivazione del predefinito assicura che quando carichi le risorse in Dynamic Media, il Batch Set Preset venga applicato per generare il set.
 
-**Creazione di un set di batch predefinito per la generazione automatica di un set 360 gradi 2D**
+##### Creazione di un set di batch predefinito per la generazione automatica di un set 360 gradi 2D
 
 È possibile utilizzare il tipo di set di batch **[!UICONTROL Set 360 gradi a più assi]** per creare una ricetta che automatizza la generazione di set 360 gradi 2D. Il raggruppamento delle immagini utilizza espressioni regolari Riga e Colonna in modo che le risorse immagine siano correttamente allineate nella posizione corrispondente nell’array multidimensionale. Non esiste un numero minimo o massimo di righe o colonne che è necessario avere in un set 360 gradi a più assi.
 
@@ -425,9 +425,9 @@ Con queste informazioni, la ricetta Tipo set di batch può essere creata come se
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-Il raggruppamento per la parte del nome della risorsa condivisa del set 360 gradi viene aggiunto al campo **Match** (Corrispondenza) (come evidenziato). La parte variabile del nome della risorsa, contenente la riga e la colonna, viene aggiunta rispettivamente ai campi **Riga** e **Colonna**.
+Il raggruppamento per la parte del nome della risorsa condivisa del set 360 gradi viene aggiunto al campo **[!UICONTROL Match]** (Corrispondenza) (come evidenziato). La parte variabile del nome della risorsa, contenente la riga e la colonna, viene aggiunta rispettivamente ai campi **[!UICONTROL Riga]** e **[!UICONTROL Colonna]**.
 
-Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della definizione del set 360 gradi 2D che è riportato in **Predefiniti set di batch**, nella finestra di dialogo **Opzioni processo di caricamento**.
+Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della definizione del set 360 gradi 2D che è riportato in **[!UICONTROL Predefiniti set di batch]**, nella finestra di dialogo **[!UICONTROL Opzioni processo di caricamento]**.
 
 **Per creare un Batch Set Preset per la generazione automatica di un Set 360 gradi 2D:**
 
@@ -435,7 +435,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
 
-1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione] > [!UICONTROL Impostazione applicazione] > [!UICONTROL Predefiniti set di batch] > [!UICONTROL Predefinito set di batch]**.
+1. Nella barra di navigazione vicino alla parte superiore della pagina, tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Predefinito set di batch]**.
 
    **[!UICONTROL Visualizza modulo]**, nell’angolo superiore destro della pagina Dettagli, è la visualizzazione predefinita.
 
@@ -470,7 +470,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    `\w+-\w+-C(\d+)`
 
-   I campioni di cui sopra sono solo a scopo illustrativo. Puoi creare l’espressione regolare in base alle tue esigenze.
+   I campioni di cui sopra sono solo a scopo dimostrativo. Puoi creare l’espressione regolare in base alle tue esigenze.
 
    >[!NOTE]
    Se la combinazione di espressioni regolari per riga e colonna non è in grado di determinare la posizione della risorsa all’interno della matrice del set 360 gradi multidimensionale, la risorsa non viene aggiunta al set. Viene registrato anche un errore.
@@ -592,41 +592,17 @@ I filtri ti consentono di *escludere* risorse dalla replica nel nodo di pubblica
 
 Se utilizzi Dynamic Media per l’imaging, il video o entrambi, puoi utilizzare i filtri predefiniti forniti da Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
-<table>
- <tbody>
-  <tr>
-   <td> </td>
-   <td><strong>Filtro</strong></td>
-   <td><strong>Tipo MIME</strong></td>
-   <td><strong>Rappresentazioni</strong></td>
-  </tr>
-  <tr>
-   <td>Consegna immagini Dynamic Media</td>
-   <td><p>filter-images</p> <p>set di filtri</p> <p> </p> </td>
-   <td><p>Inizia con <strong>image/</strong></p> <p>Contiene <strong>application/</strong> e termina con <strong>set</strong>.</p> </td>
-   <td>Le "immagini filtro" predefinite (applicabili alle risorse di immagini singole, comprese le immagini interattive) e i "set di filtri" (applicabili ai set 360 gradi, ai set di immagini, ai set di file multimediali diversi e ai set di caroselli) consentono di:
-    <ul>
-     <li>Escludere dalla replica le rappresentazioni originali dell'immagine e dell'immagine statica.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Distribuzione video Dynamic Media</td>
-   <td>filter-video</td>
-   <td>Inizia con <strong>video/</strong></td>
-   <td>Il "filtro-video" preconfigurato:
-    <ul>
-     <li>Escludere dalla replica le rappresentazioni video e miniature statiche originali.<br /> <br /> </li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|  | Filtro | Tipo MIME | Rappresentazioni |
+| --- | --- | --- | --- |
+| Consegna immagini Dynamic Media | filter-image<br>set di filtri | Inizia con **image/**<br> Contains **applications/** e termina con **set**. | I &quot;filtri-images&quot; preconfigurati (si applicano alle risorse di immagini singole, comprese le immagini interattive) e i &quot;set di filtri&quot; (si applica ai set 360 gradi, ai set di immagini, ai set di file multimediali diversi e ai set di caroselli) escluderanno dalla replica le rappresentazioni originali dell’immagine e delle immagini statiche.<br> |
+| Distribuzione video Dynamic Media | filter-video | Inizia con **video/** | Il &quot;filtro video&quot; predefinito:<br> ・ escludere dalla replica le rappresentazioni video originali e le miniature statiche. |
 
 >[!NOTE]
 I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
 
 #### Personalizzazione dei filtri delle risorse per la replica {#customizing-asset-filters-for-replication}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` per controllare i filtri.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
@@ -649,31 +625,16 @@ I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
 
    I caratteri utilizzabili per filtrare la replica includono:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Carattere da utilizzare</strong></td>
-   <td><strong>Filtrare le risorse per la replica</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>Carattere jolly</td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>Include le risorse per la replica.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Esclude le risorse dalla replica.</td>
-  </tr>
- </tbody>
-</table>
+   | Carattere da utilizzare | Filtrare le risorse per la replica |
+   | --- | --- |
+   | * | Carattere jolly |
+   | + | Include le risorse per la replica |
+   | - | Esclude le risorse dalla replica |
 
-Accedi a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Accedi a `content/dam/<locate your asset>/jcr:content/renditions`.
 
-L’immagine seguente è un esempio delle rappresentazioni di una risorsa.
+   L’immagine seguente è un esempio delle rappresentazioni di una risorsa.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Se desideri replicare solo l’originale, immetti `+original`.
+   Se desideri replicare solo l’originale, immetti `+original`.
