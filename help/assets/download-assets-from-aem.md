@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: Gestione risorse,Distribuzione risorse
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 3%
@@ -22,13 +22,13 @@ Puoi scaricare le risorse, compresi i rendering statici e dinamici. In alternati
 
 Non è possibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set di file multimediali diversi e Set carosello.
 
-Per scaricare le risorse, effettua le seguenti operazioni:
+**Per scaricare le risorse, effettua le seguenti operazioni:**
 
 1. Nell’angolo in alto a sinistra, fai clic sul logo. Nella barra a sinistra, fai clic su **[!UICONTROL Navigazione]**.
-1. Nella pagina [!UICONTROL Navigazione], fai clic su **[!UICONTROL Risorse]** > **[!UICONTROL File.]**
+1. Nella pagina [!UICONTROL Navigazione], fai clic su **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. Passa a una cartella contenente le risorse da scaricare.
 1. Seleziona la cartella o seleziona una o più risorse all’interno della cartella.
-1. Sulla barra degli strumenti, fai clic su **[!UICONTROL Scarica.]**
+1. Sulla barra degli strumenti, fai clic su **[!UICONTROL Scarica]**.
 
    ![Opzioni disponibili durante il download delle risorse da Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ Per scaricare le risorse, effettua le seguenti operazioni:
    | **[!UICONTROL Ritagli avanzati]** | Seleziona questa opzione per scaricare dal AEM tutte le rappresentazioni di ritaglio avanzato della risorsa selezionata. Viene creato e scaricato nel computer locale un file zip con le rappresentazioni di ritaglio avanzato. |
    | **[!UICONTROL Rappresentazioni dinamiche]** | Seleziona questa opzione per generare una serie di rappresentazioni alternative in tempo reale. Quando selezioni questa opzione, selezioni anche i rendering che desideri creare in modo dinamico selezionando dall&#39;elenco [Predefinito immagine](image-presets.md). <br>È inoltre possibile selezionare le dimensioni e l&#39;unità di misura, il formato, lo spazio colore, la risoluzione e qualsiasi modificatore di immagine opzionale, ad esempio l&#39;inversione dell&#39;immagine. L’opzione è disponibile solo se è stato abilitato [!DNL Dynamic Media] . |
 
-1. Nella finestra di dialogo, fai clic su **[!UICONTROL Scarica.]**.
+1. Nella finestra di dialogo, fai clic su **[!UICONTROL Scarica]**.
 
 Quando selezioni una cartella da scaricare, viene scaricata l’intera gerarchia delle risorse sotto la cartella. Per includere ogni risorsa scaricata (incluse le risorse nelle cartelle figlie nidificate sotto la cartella principale) in una singola cartella, seleziona **[!UICONTROL Crea una cartella separata per ogni risorsa]**.
 
@@ -76,7 +76,7 @@ Per impostazione predefinita, per le richieste `GET` di download dei file, [!DNL
 
 >[!MORELIKETHIS]
 >
->* [Scaricare le risorse con Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Scaricare risorse con Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Scaricare le risorse](drm.md) protette DRM.
 >* [Scarica le risorse utilizzando l’app desktop Experience Manager su desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets) Win o Mac.
 >* [Scarica le risorse utilizzando il collegamento Risorse di Adobe dalle app](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) Adobe Creative Cloud supportate.
