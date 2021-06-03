@@ -11,8 +11,7 @@ docset: aem65
 feature: Video interattivi
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '6058'
 ht-degree: 5%
@@ -53,7 +52,8 @@ Anche se la procedura dettagliata per i video è contrassegnata con la dicitura 
 Il webinar &quot;Utilizzo di video interattivi, condivisione collegamenti e condivisione YouTube in AEM Assets&quot; illustra come utilizzare i video interattivi e altre funzioni per collegare gli eventi basati sulla conversione ai contenuti di marketing video.
 
 >[!NOTE]
-[Utilizzo di video interattivi, condivisione dei collegamenti e condivisione YouTube in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>
+>[Utilizzo di video interattivi, condivisione dei collegamenti e condivisione YouTube in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Avvio rapido: Video interattivi {#quick-start-interactive-videos}
 
@@ -96,10 +96,14 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 ## (Facoltativo) Identificazione delle variabili Quickview {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
-* Per aggiungere interattività al video, attiva le Quickview.
-* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
+>
+>Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
+>
+>* Per aggiungere interattività al video, attiva le Quickview.
+>* La tua implementazione di AEM *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in AEM da qualsiasi soluzione eCommerce come IBM Websphere Commerce, Elastic Path, hybris o Intershop. Vedi [Concetti di eCommerce in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
+>
+>
 Se l’implementazione di AEM utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione di Quickview esistente in modo da poter mappare le miniature dei prodotti sul prodotto corrispondente Quickview durante il processo di creazione di video interattivo.
@@ -259,10 +263,12 @@ Dopo aver aggiunto i segmenti della timeline, aggiungi immagini in miniatura all
 Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorpori il visualizzatore in un Frammento esperienza. Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
+>
+>Gli strumenti di condivisione social media in Video interattivo non sono supportati quando incorpori il visualizzatore in un Frammento esperienza. Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione dei social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
 
 >[!NOTE]
-Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
+>
+>Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
 
 Le opzioni Annulla e Ripristina, situate nell’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -273,11 +279,11 @@ Per aggiungere interattività al video:
 1. Nella vista Risorse, individua il video caricato e vuoi renderlo interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica]**.
 
-   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
+   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
 
 1. Nella pagina Crea video interattivo, effettua una delle seguenti operazioni:
 
@@ -285,7 +291,7 @@ Per aggiungere interattività al video:
 
       Per ogni segmento di tempo aggiunto, puoi assegnare una o più immagini in miniatura e quindi collegare tali miniature alle pagine di prodotto Quickview da acquistare per i clienti o alle pagine web per ulteriori informazioni.
 
-   * Toccare il pulsante **[!UICONTROL Play]** per iniziare a riprodurre il video. Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, toccare **[!UICONTROL Pausa.]** Tocca  **[!UICONTROL Aggiungi segmento .]**
+   * Toccare il pulsante **[!UICONTROL Play]** per iniziare a riprodurre il video. Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, toccare **[!UICONTROL Pausa]**. Tocca **[!UICONTROL Aggiungi segmento]**.
 
       Continua a riprodurre e mettere in pausa il video nei punti della timeline in cui desideri aggiungere un segmento fino alla fine del video.
 
@@ -364,9 +370,9 @@ Per aggiungere interattività al video:
 
    * Eliminazione di un segmento
 
-      Seleziona l’ultimo segmento nella timeline, quindi tocca **[!UICONTROL Elimina segmento nella barra degli strumenti.]** Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
+      Seleziona l’ultimo segmento nella timeline, quindi tocca **[!UICONTROL Elimina segmento]** sulla barra degli strumenti. Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
 
-      Puoi eliminare solo l’ultimo segmento. Ad esempio, se desideri eliminare tutti i segmenti sulla timeline, devi sempre selezionare l’ultimo segmento, quindi toccare **[!UICONTROL Elimina segmento.]**
+      Puoi eliminare solo l’ultimo segmento. Ad esempio, se desideri eliminare tutti i segmenti dalla timeline, devi sempre selezionare l’ultimo segmento, quindi toccare **[!UICONTROL Elimina segmento]**.
 
 
 1. Seleziona un segmento di tempo a cui associare una o più immagini in miniatura.
@@ -480,10 +486,11 @@ Per aggiungere interattività al video:
 
    Se hai creato il tuo predefinito per visualizzatori video interattivi, lo vedrai anche nell’elenco dei predefiniti tra cui puoi scegliere.
 
-   Al termine, tocca **[!UICONTROL Salva.]**
+   Al termine, tocca **[!UICONTROL Salva]**.
 
    >[!NOTE]
-   Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il file `.vtt`viene salvato nella cartella principale `_VTT` di **[!UICONTROL Assets.]** Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
+   >
+   >Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il file `.vtt`viene salvato nella cartella principale `_VTT` di **[!UICONTROL Assets]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
 
 1. Pubblica il video interattivo. La pubblicazione crea il codice di incorporamento o l’URL da copiare e incollare nelle esperienze del sito web.
 
@@ -492,7 +499,8 @@ Per aggiungere interattività al video:
    Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Per pubblicare un video acquistabile con Quickview, accertati anche di pubblicare separatamente dall’area di e-commerce ciascuna delle risorse immagine correlate al video.
+   >
+   >Per pubblicare un video acquistabile con Quickview, accertati anche di pubblicare separatamente dall’area di e-commerce ciascuna delle risorse immagine correlate al video.
 
    Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrazione di un video interattivo con il sito web.](#integrating-an-interactive-video-with-your-website)
 
@@ -517,8 +525,10 @@ Se hai aggiunto interattività con Quickview, utilizza solo il codice di incorpo
 Il codice da incorporare copiato è impostato per un ambiente reattivo, pertanto deve adattarsi automaticamente all’area precedentemente occupata dal video statico.
 
 >[!NOTE]
-A questo punto, se hai aggiunto l’interattività solo con pagine web collegate ipertestuale, puoi farlo.
-Tuttavia, se hai aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le visualizzazioni rapide esistenti. In questo caso, è ora necessario integrare il video interattivo con le Quickview esistenti sul sito web.
+>
+>A questo punto, se hai aggiunto l’interattività solo con pagine web collegate ipertestuale, puoi farlo.
+>
+>Tuttavia, se hai aggiunto interattività per attivare una visualizzazione rapida, le miniature adiacenti al video interattivo sono solo a scopo di visualizzazione; non sono ancora integrati con le visualizzazioni rapide esistenti. In questo caso, è ora necessario integrare il video interattivo con le Quickview esistenti sul sito web.
 
 **Esempio**
 
@@ -560,7 +570,8 @@ L&#39;integrazione è semplice come rimuovere il codice di incorporamento video 
 ## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Questa attività si applica solo se sei un cliente AEM Assets autonomo.
+>
+>Questa attività si applica solo se sei un cliente AEM Assets autonomo.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione Quickview esistente utilizzata sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione di Quickview è univoca. Di conseguenza, è necessario un approccio specifico che molto probabilmente implichi l&#39;assistenza di un personale IT front-end.
 
