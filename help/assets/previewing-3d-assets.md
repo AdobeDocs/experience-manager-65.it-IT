@@ -6,8 +6,7 @@ docset: aem65
 feature: Risorse 3D
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-translation-type: tm+mt
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
@@ -56,7 +55,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse > File.]**
+1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse > File]**.
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
@@ -80,4 +79,4 @@ Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-as
    | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
 
-1. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Chiudi.]**
+1. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Chiudi]**.
