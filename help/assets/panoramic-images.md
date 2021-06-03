@@ -8,16 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: Panoramic Images,Asset Management
+feature: Immagini panoramiche, Gestione delle risorse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
-
 
 # Immagini panoramiche{#panoramic-images}
 
@@ -47,11 +46,11 @@ Affinché il visualizzatore di immagini panoramiche funzioni correttamente all�
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-1. Nell&#39;angolo in alto a destra della pagina, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Configurazione pubblicazione > Image Server.]**
-1. Nella pagina Pubblica su Image Server, dal menu a discesa **[!UICONTROL Contesto pubblicazione]** vicino alla parte superiore, seleziona **[!UICONTROL Server immagini.]**
+1. Nell’angolo in alto a destra della pagina, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Configurazione pubblicazione > Image Server]**.
+1. Nella pagina Pubblica su Image Server, dal menu a discesa **[!UICONTROL Contesto pubblicazione]** vicino alla parte superiore, seleziona **[!UICONTROL Image Serving]**.
 
-1. Nella stessa pagina Pubblica su Image Server, individua l&#39;intestazione **[!UICONTROL Richiedi attributi.]**
-1. Sotto l&#39;intestazione Richiedi attributi, individua **[!UICONTROL Limite dimensione immagine risposta.]** Quindi, nei campi Larghezza e Altezza associati, aumenta la dimensione massima consentita per le immagini panoramiche.
+1. Nella stessa pagina Pubblica su Image Server, individua l’intestazione **[!UICONTROL Richiedi attributi]**.
+1. Sotto l&#39;intestazione Request Attributes (Richiedi attributi), individua **[!UICONTROL Reply Image Size Limit]** (Limite dimensioni immagine di risposta). Quindi, nei campi Larghezza e Altezza associati, aumenta la dimensione massima consentita per le immagini panoramiche.
 
    Dynamic Media Classic ha un limite di 25.000.000 pixel. Le dimensioni massime consentite per le immagini con un rapporto di formato 2:1 sono 7000 x 3500. Tuttavia, per gli schermi desktop tipici, sono sufficienti 4096 x 2048 pixel.
 
@@ -61,14 +60,14 @@ Affinché il visualizzatore di immagini panoramiche funzioni correttamente all�
 
 1. Sotto l&#39;intestazione Attributi di richiesta, procedi come segue:
 
-   * Imposta la modalità di offuscamento richieste su **[!UICONTROL Disabilitata.]**
-   * Impostare la modalità di blocco delle richieste su **[!UICONTROL Disabilitata.]**
+   * Imposta la modalità di offuscamento richieste su **[!UICONTROL Disabilitato]**.
+   * Impostare la modalità di blocco delle richieste su **[!UICONTROL Disabilitato]**.
 
    Queste impostazioni sono necessarie per utilizzare il componente `Panoramic Media` WCM in AEM.
 
-1. Nella parte inferiore della pagina Pubblica su Image Server, a sinistra, fai clic su **[!UICONTROL Salva.]**
+1. Nella parte inferiore della pagina Pubblicazione su Image Server, a sinistra, fai clic su **[!UICONTROL Salva]**.
 
-1. Nell&#39;angolo in basso a destra, fare clic su **[!UICONTROL Chiudi.]**
+1. Nell&#39;angolo in basso a destra, fai clic su **[!UICONTROL Chiudi]**.
 
 ### Risoluzione dei problemi relativi al componente WCM per elementi multimediali panoramici {#troubleshooting-the-panoramic-media-wcm-component}
 
