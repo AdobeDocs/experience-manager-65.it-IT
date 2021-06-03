@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestione risorse, rappresentazioni
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: d407162e18f85f4fee0596581f004f8cf4c99458
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 1%
@@ -207,7 +207,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
       Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
-      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato.]**
+      Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
    1. Verifica di utilizzare un dominio dedicato come `images.company.com` o `mycompany.scene7.com` e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
