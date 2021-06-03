@@ -11,8 +11,7 @@ docset: aem65
 feature: Immagini interattive
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '4332'
 ht-degree: 2%
@@ -116,7 +115,7 @@ Durante questo processo è importante visitare diverse aree del sito web, con di
 
 Nel caso più semplice, l’unica parte variabile nell’URL Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l’unico elemento dati necessario per aggiungere punti attivi all’immagine del banner.
 
-Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi diversi rispetto all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
+Tuttavia, in casi complessi, l’URL Quickview presenta diversi elementi in aggiunta all’SKU, come ID categoria, codice colore, codice dimensione e così via. In questi casi, ogni elemento è una variabile separata nella definizione dei dati del punto attivo nella funzione immagine interattiva acquistabile in AEM Assets.
 
 Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le relative variabili di punti attivi risultanti:
 
@@ -192,23 +191,23 @@ Quando crei un predefinito visualizzatore di immagini interattive personalizzato
 
 Dopo aver salvato il predefinito visualizzatore, questo viene attivato automaticamente (attivato) nella pagina dell’elenco Predefiniti visualizzatore di AEM Assets. Questa funzionalità significa che è visibile nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa. Tuttavia, per *fornire *un banner interattivo con questo predefinito visualizzatore, è necessario *pubblicare *anche il predefinito visualizzatore (questo vale per i predefiniti visualizzatore personalizzati o preconfigurati).
 
-**Per creare un predefinito visualizzatore di immagini interattive**
+**Per creare un predefinito visualizzatore di immagini interattive:**
 
-1. Nella barra a sinistra, tocca **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore.]**
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Crea.]**
+1. Nella barra a sinistra, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
+1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Nuovo predefinito visualizzatore , digita un nome per descrivere il predefinito visualizzatore banner interattivo.
 
    Titolo che verrà visualizzato nella pagina dell’elenco Predefiniti visualizzatore dopo il salvataggio.
 
-1. Nel menu a discesa Tipo di contenuti multimediali avanzati, seleziona **[!UICONTROL Immagine interattiva.]**
-1. Tocca **[!UICONTROL Crea.]**
+1. Nel menu a discesa Tipo di contenuti multimediali avanzati, seleziona **[!UICONTROL Immagine interattiva]**.
+1. Tocca **[!UICONTROL Crea]**.
 1. Nella pagina Modifica predefinito visualizzatore, tocca la scheda **[!UICONTROL Aspetto]** .
 1. Effettua una delle operazioni seguenti:
 
    * Per caricare un’immagine del tuo punto attivo da utilizzare sulle immagini, tocca l’icona Selettore risorse . Nella pagina Seleziona contenuto , individua l’immagine del punto attivo che desideri utilizzare, selezionala, quindi tocca l’icona con il segno di spunta nell’angolo in alto a destra.
    * Per selezionare un’immagine hotspot predefinita, tocca l’icona Raccolta punti attivi . Nella palette della galleria punto attivo, toccare l&#39;immagine del punto attivo che si desidera utilizzare.
 
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva.]**
+1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
 
    Assicurati di pubblicare il nuovo predefinito visualizzatore.
 
@@ -220,7 +219,7 @@ Dopo aver salvato il predefinito visualizzatore, questo viene attivato automatic
 
 Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-image-banner).
 
-**Per caricare un banner immagine**
+**Per caricare un banner immagine:**
 
 1. Carica i banner immagine che desideri rendere interattivi.
 
@@ -263,32 +262,32 @@ Consulta [(Facoltativo) Anteprima delle immagini interattive](#optional-previewi
 1. Nella vista Risorse, individua il banner immagine che desideri rendere interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica.]**
+   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL Modifica]**.
 
-   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica.]**
+   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
 
 1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
-1. Vicino all&#39;angolo superiore sinistro della pagina, tocca **[!UICONTROL Punto attivo.]**
+1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Punto attivo]**.
 
-1. Nell&#39;angolo in alto a sinistra della pagina Gestione punti attivi, tocca **[!UICONTROL Punto attivo.]**
-1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione.
-1. Aggiungi gli hotspot aggiuntivi necessari ripetendo i passaggi a e b.
-1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull&#39;immagine, quindi tocca **[!UICONTROL Elimina]** (icona del cestino per gli oggetti inattivi) sotto l&#39;intestazione **[!UICONTROL Punti attivi]** .
+   1. Nell’angolo in alto a sinistra della pagina Gestione punti attivi, tocca **[!UICONTROL Punto attivo]**.
+   1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione.
+   1. Aggiungi gli hotspot aggiuntivi necessari ripetendo i passaggi a e b.
+   1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull&#39;immagine, quindi tocca **[!UICONTROL Elimina]** (icona del cestino per gli oggetti inattivi) sotto l&#39;intestazione **[!UICONTROL Punti attivi]** .
 
 1. Nel campo di testo Nome, digitare il nome del punto attivo. Questo nome viene visualizzato anche nell’elenco a discesa Punto attivo selezionato .
 1. Effettua una delle operazioni seguenti:
 
-   * Tocca **[!UICONTROL Quickview.]**
+   * Tocca **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente AEM Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca **Seleziona **nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
+      * Se sei un cliente AEM Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca **Seleziona** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
       * Se sei *non* un cliente AEM Sites o eCommerce
 
          * Consultare [Identificazione di variabili di punti attivi](#optional-identifying-hotspot-variables); dovrai definire queste variabili.
          * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
-         * (Facoltativo) Se nella visualizzazione rapida sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, tocca **[!UICONTROL Aggiungi variabile generica.]** Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
-   * Toccare **[!UICONTROL Collegamento ipertestuale.]**
+         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
+   * Toccare **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se sei un cliente AEM Sites, tocca o fai clic sull’icona Selettore sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
       * Se si è un cliente autonomo, nel campo di testo HREF specificare il percorso completo dell&#39;URL di una pagina Web collegata.
@@ -297,7 +296,7 @@ Consulta [(Facoltativo) Anteprima delle immagini interattive](#optional-previewi
 
    Per ulteriori informazioni, consulta [Utilizzo dei selettori](/help/assets/working-with-selectors.md) .
 
-   * Tocca **[!UICONTROL Frammento esperienza.]**
+   * Tocca **[!UICONTROL Frammento esperienza]**.
 
       * Se sei un cliente AEM Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca o fai clic sul frammento esperienza da utilizzare, quindi tocca Seleziona nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
 Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
@@ -332,10 +331,10 @@ Consulta [Incorporamento del visualizzatore di video o immagini in una pagina We
 Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine AEM Sites.
 Consulta [Aggiunta di risorse Dynamic Media alle pagine.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-**Per visualizzare in anteprima le immagini interattive**
+**Per visualizzare in anteprima le immagini interattive:**
 
 1. Nella vista Risorse, individua un’immagine interattiva esistente creata e tocca per aprirla in Anteprima.
-1. Nell’elenco a discesa Contenuto, nell’angolo in alto a sinistra della pagina Anteprima, tocca **[!UICONTROL Visualizzatori.]**
+1. Nell’elenco a discesa Contenuto, nell’angolo in alto a sinistra della pagina Anteprima, tocca **[!UICONTROL Visualizzatori]**.
 1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
 1. Tocca i punti attivi sull’immagine per testare le azioni associate.
 
