@@ -10,10 +10,10 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -64,18 +64,19 @@ Sono disponibili due metodi di nitidezza delle immagini:
       * **[!UICONTROL quantità]**  (0-5, forza dell&#39;effetto).
       * **[!UICONTROL raggio]**  (0-250, larghezza delle &quot;linee di nitidezza&quot; tracciate intorno all’oggetto affilato, misurata in pixel).
 
-         Tieni presente che il raggio e la quantità dei parametri funzionano l’uno contro l’altro. La riduzione del raggio può essere compensata dall&#39;aumento della quantità. Il raggio consente un controllo più preciso, poiché un valore inferiore rende più nitidi solo i pixel del bordo, mentre un valore più alto rende più nitida una banda più ampia di pixel.
+      Tieni presente che il raggio e la quantità dei parametri funzionano l’uno contro l’altro. La riduzione del raggio può essere compensata dall&#39;aumento della quantità. Il raggio consente un controllo più preciso, poiché un valore inferiore rende più nitidi solo i pixel del bordo, mentre un valore più alto rende più nitida una banda più ampia di pixel.
 
       * **[!UICONTROL soglia]**  (0-255, sensibilità dell&#39;effetto).
 
-         Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l&#39;eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
-      Per ulteriori informazioni su come impostare questi tre parametri, incluse le best practice da utilizzare con il filtro, consulta le risorse seguenti:
+             Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
+         
+         Per ulteriori informazioni su come impostare questi tre parametri, incluse le best practice da utilizzare con il filtro, consulta le risorse seguenti:
 
-      Experience Manager Argomento della Guida sulla nitidezza di un’immagine.
+         Experience Manager Argomento della Guida sulla nitidezza di un’immagine.
 
-      White paper sulle best practice [Nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         White paper sulle best practice [Nitidezza delle immagini in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-   * Experience Manager consente anche di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
+      * Experience Manager consente anche di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 o alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
 
 
 Come best practice, inizia con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio che puoi iniziare sono le seguenti:
