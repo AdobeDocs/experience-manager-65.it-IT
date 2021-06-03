@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
-feature: Image Sets,Asset Management
+feature: Set di immagini,Gestione risorse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 17%
+source-wordcount: '2085'
+ht-degree: 13%
 
 ---
-
 
 # Set di immagini {#image-sets}
 
@@ -29,7 +28,7 @@ I set di immagini sono indicati da un banner con la parola `IMAGESET`. Inoltre, 
 
 All’interno del set di immagini, puoi anche creare campioni creando un set di immagini e aggiungendo miniature.
 
-Questa applicazione è particolarmente utile quando si desidera mostrare un elemento con un colore, un motivo o una finitura diversi. Per creare un set di immagini con campioni di colore, è necessaria un’immagine per ogni colore, motivo o finitura diversi che si desidera presentare agli utenti. È inoltre necessario un campione di colore, motivo o finitura per ciascun colore, motivo o finitura.
+Questa applicazione è utile quando si desidera mostrare un elemento con un colore, un motivo o una finitura diversi. Per creare un set di immagini con campioni di colore, è necessaria un’immagine per ogni colore, motivo o finitura diversi che si desidera presentare agli utenti. È inoltre necessario un campione di colore, motivo o finitura per ciascun colore, motivo o finitura.
 
 Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di colore diverse; le bollette sono rosse, verdi e blu. In questo caso, sono necessarie tre riprese dello stesso cappello. Hai bisogno di un colpo con un rosso, uno con un verde, e uno con una bolletta blu. È inoltre necessario un campione di colore rosso, verde e blu. I campioni colore fungono da miniature su cui gli utenti possono fare clic nel visualizzatore dei set di campioni per visualizzare il tappo rosso, verde o blu-bollito.
 
@@ -39,19 +38,19 @@ Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di co
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
-Per farti iniziare a lavorare velocemente:
+**Per farti iniziare a lavorare velocemente:**
 
 1. [Carica le immagini sorgente principali per più visualizzazioni.](#uploading-assets-in-image-sets)
 
-   Per iniziare, carica le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel Visualizzatore set di immagini, quando scegli le immagini considera lo zoom. Assicurati che le immagini abbiano una dimensione massima di almeno 2000 pixel, per ottenere dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, è possibile utilizzare un&#39;immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+   Per iniziare, carica le immagini per i set di immagini. Quando scegli le immagini, ricorda che i tuoi clienti possono ingrandire le immagini nel Visualizzatore set di immagini. Assicurati che le immagini abbiano una dimensione massima di almeno 2000 pixel, per ottenere dettagli di zoom ottimali. Dynamic Media può eseguire il rendering delle immagini fino a 25 megapixel ciascuna. Ad esempio, è possibile utilizzare un&#39;immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
-   AEM Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
+   Adobe Experience Manager Assets supporta molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
 1. [Crea set di immagini.](#creating-image-sets)
 
    In Set immagini, gli utenti fanno clic su miniature nel visualizzatore di set di immagini.
 
-   Per creare un set di immagini in Assets, tocca o fai clic su **[!UICONTROL Crea > Set di immagini.]** Quindi, aggiungi le immagini e fai clic su  **[!UICONTROL Salva.]**
+   Per creare un set di immagini in Assets, tocca o fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Set di immagini]**. Quindi, aggiungi le immagini e fai clic su **[!UICONTROL Salva]**.
 
    È inoltre possibile creare automaticamente i set di immagini tramite [predefiniti per set di batch](/help/assets/config-dms7.md).
    >[!IMPORTANT]
@@ -64,9 +63,9 @@ Per farti iniziare a lavorare velocemente:
 
 1. Aggiungi [predefiniti visualizzatore set di immagini](/help/assets/managing-viewer-presets.md), a seconda delle esigenze.
 
-   Gli amministratori possono creare o modificare i predefiniti visualizzatore di set di immagini. Per visualizzare il set di immagini con un predefinito visualizzatore, seleziona il set di immagini e, nel menu a discesa della barra a sinistra, seleziona **[!UICONTROL Visualizzatori.]**
+   Gli amministratori possono creare o modificare i predefiniti visualizzatore di set di immagini. Per visualizzare il set di immagini con un predefinito visualizzatore, seleziona il set di immagini e, nel menu a discesa della barra a sinistra, seleziona **[!UICONTROL Visualizzatori]**.
 
-   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]** .
+   Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]** .
 
 1. (Facoltativo) [Visualizzazione dei set di immagini](/help/assets/image-sets.md#viewing-image-sets) creati utilizzando i predefiniti per set di batch.
 1. [Anteprima set di immagini.](/help/assets/previewing-assets.md)
@@ -79,9 +78,9 @@ Per farti iniziare a lavorare velocemente:
 
 1. [Collega gli URL all’](/help/assets/linking-urls-to-yourwebapplication.md) applicazione Web o  [incorpora il visualizzatore](/help/assets/embed-code.md) video o immagini.
 
-   AEM Assets crea chiamate URL per i set di immagini e li attiva dopo la pubblicazione dei set di immagini. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa, è possibile incorporarli sul sito Web.
+   Experience Manager Assets crea chiamate URL per i set di immagini e li attiva dopo la pubblicazione dei set di immagini. Puoi copiare questi URL quando visualizzi l’anteprima delle risorse. In alternativa, è possibile incorporarli sul sito Web.
 
-   Seleziona il set di immagini, quindi, nel menu a discesa della barra a sinistra, seleziona **[!UICONTROL Visualizzatori.]**
+   Seleziona il set di immagini, quindi fai clic su **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
 
    Consulta le sezioni [Collegamento di un set di immagini a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/embed-code.md).
 
@@ -91,7 +90,7 @@ In caso di problemi durante la creazione dei set, consulta Immagini e set in [Ri
 
 ## Caricamento delle risorse nei set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, carica le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel Visualizzatore set di immagini, quando scegli le immagini considera lo zoom. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. I set di immagini supportano molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
+Per iniziare, carica le immagini per i set di immagini. Quando scegli le immagini, ricorda che i tuoi clienti possono ingrandire le immagini nel Visualizzatore set di immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. I set di immagini supportano molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG ed EPS senza perdita di dati.
 
 È possibile caricare le immagini per i set di immagini come si farebbe [per caricare qualsiasi altra risorsa in Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -130,7 +129,7 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
 **Per creare un set di immagini**
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Navigazione > Risorse.]** Vai nel punto in cui vuoi creare un set di immagini, quindi tocca **[!UICONTROL Crea > Set di immagini]** per aprire la pagina Editor set di immagini.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]**. Passa al punto in cui desideri creare un set di immagini, quindi tocca **[!UICONTROL Crea]** > **[!UICONTROL Set di immagini]** per aprire la pagina Editor set di immagini.
 
    Puoi anche creare il set dall’interno di una cartella contenente le risorse.
 
@@ -142,12 +141,12 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
 1. Effettua una delle seguenti operazioni:
 
-   * Nell’angolo in alto a sinistra della pagina Editor set di immagini, tocca **[!UICONTROL Aggiungi risorsa.]**
+   * Nell’angolo in alto a sinistra della pagina Editor set di immagini, tocca **[!UICONTROL Aggiungi risorsa]**.
 
-   * Al centro della pagina Editor set di immagini, tocca **[!UICONTROL Tocca per aprire Selettore risorse.]**
-   Tocca per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Seleziona.]**
+   * Al centro della pagina Editor set di immagini, tocca **[!UICONTROL Tocca per aprire Selettore risorse]**.
+   Tocca per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Seleziona]**.
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio.]** Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco.]**
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
 
    Vedere [Uso dei selettori.](/help/assets/working-with-selectors.md)
 
@@ -159,18 +158,18 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   Per modificare una miniatura o un campione, fai clic sull’icona **+** **miniatura** accanto all’immagine e individua la miniatura o il campione desiderato. Dopo aver selezionato tutte le immagini, fai clic su **[!UICONTROL Salva.]**
+   Per modificare una miniatura o un campione, fai clic sull’icona **+** **miniatura** accanto all’immagine e individua la miniatura o il campione desiderato. Dopo aver selezionato tutte le immagini, fai clic su **[!UICONTROL Salva]**.
 
 1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Per eliminare un&#39;immagine, selezionala e tocca **[!UICONTROL Elimina risorsa.]**
+   * Per eliminare un’immagine, selezionala e tocca **[!UICONTROL Elimina risorsa]**.
 
    * Per applicare un predefinito, tocca **[!UICONTROL Predefinito]** nell’angolo superiore destro della pagina, quindi seleziona un predefinito da applicare a tutte le risorse contemporaneamente.
    >[!NOTE]
    >
-   >Quando crei il set di immagini, puoi modificare la miniatura del set o consentire ad AEM di selezionarla automaticamente in base alle risorse del set di immagini. Per selezionare una miniatura, tocca l’opzione **[!UICONTROL Cambia miniatura]** posta sopra il campo Titolo nella pagina Editor set di immagini, quindi seleziona un’immagine a piacere. Per trovare le immagini, puoi esplorare anche altre cartelle. Se hai selezionato una miniatura e vuoi che AEM ne generi una dal set di immagini, fai clic su **[!UICONTROL Passa alla]** **[!UICONTROL Miniatura automatica.]**
+   >Quando crei il set di immagini, puoi modificare la miniatura del set di immagini o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse nel set di immagini. Per selezionare una miniatura, tocca l’opzione **[!UICONTROL Cambia miniatura]** posta sopra il campo Titolo nella pagina Editor set di immagini, quindi seleziona un’immagine a piacere. Per trovare le immagini, puoi esplorare anche altre cartelle. Se hai selezionato una miniatura e vuoi che l&#39;Experience Manager ne generi una dal set di immagini, seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
 
-1. Fai clic su **[!UICONTROL Salva.]** Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Visualizzazione dei set di immagini {#viewing-image-sets}
 
@@ -190,9 +189,9 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, *not* vengono
 
    ![6_5_imageset-setspullmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dalla ricerca è possibile selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Dynamic Media]** e selezionare **[!UICONTROL Set.]**
+* Dalla ricerca, puoi selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Dynamic Media]** e selezionare **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull’utilizzo dei criteri di ricerca &quot;Contiene&quot;. Impostare il filtro su **[!UICONTROL Imposta]** è l&#39;unico modo per cercare i set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca Experience Manager basata sull’utilizzo dei criteri di ricerca &quot;Contiene&quot;. Impostare il filtro su **[!UICONTROL Imposta]** è l&#39;unico modo per cercare i set automatizzati.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -202,7 +201,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, *not* vengono
 
 ## Modifica dei set di immagini {#editing-image-sets}
 
-È possibile eseguire diverse attività di modifica sui set di immagini, ad esempio:
+È possibile eseguire varie attività di modifica sui set di immagini, ad esempio:
 
 * Aggiungi immagini al set di immagini.
 * Riordinare le immagini nel set di immagini.
@@ -210,7 +209,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, *not* vengono
 * Applica i predefiniti visualizzatore.
 * Elimina il set di immagini.
 
-**Per modificare i set di immagini**
+**Per modificare i set di immagini:**
 
 1. Effettua una delle seguenti operazioni:
 
@@ -222,15 +221,15 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, *not* vengono
 
    * Per riordinare le risorse, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordino per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fai clic sull’intestazione della colonna.
-   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fai clic su **[!UICONTROL Aggiungi risorsa.]** Passa a una risorsa, selezionala, quindi tocca  **** Seleziona nell’angolo in alto a destra della pagina.
+   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fai clic su **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi tocca **[!UICONTROL Seleziona]** vicino all’angolo in alto a destra della pagina.
 
       >[!NOTE]
       >
-      >Se elimini l&#39;immagine che AEM utilizzata per la miniatura sostituendola con un&#39;altra immagine, viene comunque visualizzata la risorsa originale.
-   * Per eliminare una risorsa, selezionala e tocca o fai clic su **[!UICONTROL Elimina risorsa.]**
+      >Se elimini l&#39;immagine utilizzata dall&#39;Experience Manager per la miniatura sostituendola con un&#39;altra immagine, viene comunque visualizzata la risorsa originale.
+   * Per eliminare una risorsa, selezionala e tocca o fai clic su **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, tocca **[!UICONTROL Predefinito]** nell’angolo superiore destro della pagina, quindi seleziona un predefinito visualizzatore.
-   * Per aggiungere o modificare una miniatura, seleziona l’icona della miniatura accanto alla parte destra della risorsa. Passa alla nuova miniatura o alla nuova risorsa campione, selezionala, quindi tocca **[!UICONTROL Seleziona.]**
-   * Per eliminare un intero set di immagini, accedi al set di immagini, selezionalo e tocca **[!UICONTROL Elimina.]**
+   * Per aggiungere o modificare una miniatura, seleziona l’icona della miniatura accanto alla parte destra della risorsa. Passa alla nuova miniatura o alla risorsa campione, selezionala, quindi tocca **[!UICONTROL Seleziona]**.
+   * Per eliminare un intero set di immagini, accedi al set di immagini, selezionalo e tocca **[!UICONTROL Elimina]**.
 
    >[!NOTE]
    >
