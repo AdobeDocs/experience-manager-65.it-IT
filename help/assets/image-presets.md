@@ -7,20 +7,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
-feature: Image Presets
+feature: Predefiniti immagini
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 15%
+source-wordcount: '328'
+ht-degree: 7%
 
 ---
 
-
 # Applicazione dei predefiniti per le immagini Dynamic Media {#applying-image-presets}
 
-I predefiniti per immagini consentono alle risorse di distribuire dinamicamente le immagini con dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. È possibile scegliere un predefinito quando si esportano le immagini, che riformatta anche le immagini in base alle specifiche specificate dall’amministratore.
+I predefiniti per immagini consentono alle risorse di distribuire dinamicamente le immagini con dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Quando si esportano le immagini, è possibile scegliere un predefinito. Il predefinito riformatta le immagini in base alle specifiche specificate dall’amministratore.
 
 Inoltre, puoi scegliere un predefinito immagine reattivo (designato dal pulsante **[!UICONTROL RESS]** dopo averlo selezionato).
 
@@ -36,9 +35,9 @@ Questa sezione descrive come utilizzare i predefiniti per immagini. [Gli amminis
 >
 >In modalità Dynamic Media - Scene7, i predefiniti immagine sono supportati solo per le risorse immagine.
 
-**Applicazione dei predefiniti per immagini Dynamic Media**
+**Per applicare i predefiniti immagine di Dynamic Media:**
 
-1. Apri la risorsa e, nella barra a sinistra, tocca il menu a discesa, quindi tocca **[!UICONTROL Rappresentazioni.]**
+1. Apri la risorsa e, nella barra a sinistra, tocca il menu a discesa, quindi tocca **[!UICONTROL Rappresentazioni]**.
 
    >[!NOTE]
    >
@@ -53,11 +52,10 @@ Questa sezione descrive come utilizzare i predefiniti per immagini. [Gli amminis
 1. Effettua una delle operazioni seguenti:
 
    * Seleziona un rendering dinamico per visualizzare in anteprima il predefinito per immagini.
-   * Tocca **[!UICONTROL URL]**, **[!UICONTROL Incorpora]** o **[!UICONTROL RESS]** per visualizzare il pop-up.
+   * Per visualizzare il pop-up, tocca **[!UICONTROL URL]**, **[!UICONTROL Incorpora]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Se la risorsa *e* il predefinito immagine non sono ancora stati pubblicati, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se presente) non è disponibile.
+   >Se la risorsa *e* non è ancora stata pubblicata, il pulsante **[!UICONTROL URL]** (o i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se applicabile) non è disponibile.
    >
    >I predefiniti per immagini vengono pubblicati automaticamente su un server Dynamic Media.
-
