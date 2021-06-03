@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1346'
 ht-degree: 3%
 
 ---
-
 
 # Anteprima delle risorse tramite l’interfaccia software {#previewing-assets}
 
@@ -39,7 +38,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell’interfaccia ute
 **Per visualizzare in anteprima le risorse tramite l’interfaccia del software**
 
 1. Da **[!UICONTROL Adobe Experience Manager]**, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse]**, quindi **[!UICONTROL File]** per accedere alle risorse.
-1. Dall’elenco a discesa **[!UICONTROL Visualizza]** nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a elenco.]**
+1. Dall’elenco a discesa **[!UICONTROL Visualizza]** nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a elenco]**.
 1. (Facoltativo) Utilizza la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo da visualizzare in anteprima.
 1. Nella colonna **[!UICONTROL Titolo]** , fai clic sul nome del titolo (non sulla miniatura) della risorsa da visualizzare in anteprima.
 1. A seconda del tipo di risorsa su cui hai fatto clic, effettua una delle seguenti operazioni:
