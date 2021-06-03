@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
-feature: Image Profiles
+feature: Profili immagine
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 14%
+source-wordcount: '2752'
+ht-degree: 12%
 
 ---
-
 
 # Profili immagine di Dynamic Media {#image-profiles}
 
@@ -34,9 +33,9 @@ Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al mome
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-Le coordinate di ritaglio avanzato dipendono dalle proporzioni. In altre parole, per le varie impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Per questo motivo, l’Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo non vi sarà alcun impatto sulle diverse dimensioni utilizzate nel profilo immagine.
+Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le varie impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Adobe consiglia di utilizzare la stessa area di ritaglio. In questo modo si garantisce che non vi sia alcun impatto sulle diverse dimensioni utilizzate nel profilo immagine.
 
-Tieni presente che ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato Ritaglio avanzato può causare un tasso di inserimento delle risorse lento. Può anche causare un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *solo* dove è necessario.
+Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato Ritaglio avanzato può causare un tasso di inserimento delle risorse lento. Provoca inoltre un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *solo* dove è necessario.
 
 Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un’opzione per automatizzare la creazione di campioni di colore e immagine.
 
@@ -66,8 +65,8 @@ Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un
   </tr>
   <tr>
    <td>Campione immagine e colore</td>
-   <td>Generare in blocco un campione immagine per ogni immagine.</td>
-   <td><p><strong>Nota</strong>: Lo Smart Swatch non è supportato in Dynamic Media Classic.</p> <p>Individua e genera automaticamente campioni di alta qualità dalle immagini dei prodotti che mostrano colore o texture.</p> <p>Per utilizzare Colore e Campione immagine, selezionare <strong>Ritaglio avanzato</strong> dall’elenco a discesa Opzioni di ritaglio, quindi a destra di Colore e Campione immagine, abilitare (attivare) la funzione. Immettere un valore in pixel nelle caselle di testo Larghezza e Altezza.</p> <p>Mentre tutti i ritagli immagine sono disponibili nella barra Rendering , i campioni vengono utilizzati solo tramite la funzione Copia URL . Per eseguire il rendering del campione sul sito, è necessario utilizzare il proprio componente di visualizzazione. (L'eccezione è rappresentata dai banner a carosello. Dynamic Media fornisce il componente di visualizzazione per il campione utilizzato nei banner a carosello.)</p> <p><strong>Utilizzo dei campioni immagine</strong></p> <p>L’URL per i campioni immagine è semplice. Questo è:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>dove <code>:Swatch</code> viene aggiunto alla richiesta di risorse.</p> <p><strong>Utilizzo dei campioni colore</strong></p> <p>Per utilizzare i campioni colore, effettuate una richiesta <code>req=userdata</code> con le seguenti informazioni:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Ad esempio, di seguito è riportata una risorsa campione in Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>ed ecco l'URL corrispondente della risorsa campione <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La risposta <code>req=userdata</code> è la seguente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td>Bulk genera un campione immagine per ogni immagine.</td>
+   <td><p><strong>Nota</strong>: Lo Smart Swatch non è supportato in Dynamic Media Classic.</p> <p>Individua e genera automaticamente campioni di alta qualità dalle immagini dei prodotti che mostrano colore o texture.</p> <p>Per utilizzare Colore e Campione immagine, selezionare <strong>Ritaglio avanzato</strong> dall’elenco a discesa Opzioni di ritaglio, quindi a destra di Colore e Campione immagine, abilitare (attivare) la funzione. Immettere un valore in pixel nelle caselle di testo Larghezza e Altezza.</p> <p>Mentre tutti i ritagli immagine sono disponibili nella barra Rendering , i campioni vengono utilizzati solo tramite la funzione Copia URL . Utilizza il tuo componente di visualizzazione per eseguire il rendering del campione sul sito. (L’eccezione a questa regola è rappresentata dai banner a carosello. Dynamic Media fornisce il componente di visualizzazione per il campione utilizzato nei banner a carosello.)</p> <p><strong>Utilizzo dei campioni immagine</strong></p> <p>L’URL per i campioni immagine è semplice. È:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>dove <code>:Swatch</code> viene aggiunto alla richiesta di risorse.</p> <p><strong>Utilizzo dei campioni colore</strong></p> <p>Per utilizzare i campioni colore, effettuate una richiesta <code>req=userdata</code> con le seguenti informazioni:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Ad esempio, di seguito è riportata una risorsa campione in Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>ed ecco l'URL corrispondente della risorsa campione <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La risposta <code>req=userdata</code> è la seguente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -80,30 +79,15 @@ Usa **[!UICONTROL Maschera definizione dettagli]** per regolare con precisione u
 
 >[!NOTE]
 >
->Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostreranno la maschera di contrasto).
+>Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostrano la maschera di contrasto).
 
 In **[!UICONTROL Maschera definizione dettagli]** sono disponibili le seguenti opzioni di filtro:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Opzione</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>Quantità</td>
-   <td>Controlla la quantità di contrasto applicata ai pixel del bordo. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentarlo fino a 5. Considera Importo come una misura dell'intensità del filtro. L'intervallo è compreso tra 0 e 5.</td>
-  </tr>
-  <tr>
-   <td>Raggio</td>
-   <td>Determina quanti pixel attorno al bordo vengono interessati dalla nitidezza. Per le immagini ad alta risoluzione, inserite un valore da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore più elevato agisce su una fascia più ampia di pixel. Il valore adatto dipende dalle dimensioni dell'immagine. Il valore predefinito è 0,2. Intervallo compreso tra 0 e 250.</td>
-  </tr>
-  <tr>
-   <td>Soglia</td>
-   <td><p>Determina l'intervallo di contrasto da ignorare quando viene applicato il filtro Maschera definizione dettagli. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e resi più nitidi. Per evitare di introdurre rumore, prova con valori compresi tra 0 e 255.</p> </td>
-  </tr>
- </tbody>
-</table>
+| Opzione | Descrizione |
+| --- | --- |
+| Quantità | Controlla la quantità di contrasto applicata ai pixel del bordo. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentarlo fino a 5. Considera Importo come una misura dell&#39;intensità del filtro. L&#39;intervallo è compreso tra 0 e 5. |
+| Raggio | Determina quanti pixel attorno al bordo vengono interessati dalla nitidezza. Per le immagini ad alta risoluzione, inserite un valore da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore più elevato agisce su una fascia più ampia di pixel. Il valore adatto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. Intervallo compreso tra 0 e 250. |
+| Soglia | Determina l&#39;intervallo di contrasto da ignorare quando viene applicato il filtro Maschera definizione dettagli. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e resi più nitidi. Per evitare di introdurre rumore, prova con valori compresi tra 0 e 255. |
 
 La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/assets/sharpening_images.pdf).
 
@@ -115,24 +99,24 @@ Consulta [Profili per elaborazione di metadati, immagini e video](processing-pro
 
 Consulta anche [Tecniche consigliate per l’organizzazione delle risorse digitali per l’utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
 
-**Per creare profili immagine Dynamic Media**
+**Per creare profili immagine Dynamic Media:**
 
-1. Tocca il logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili immagine.]**
-1. Tocca **[!UICONTROL Crea]** per aggiungere un nuovo profilo immagine.
+1. Tocca il logo Adobe Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
+1. Tocca **[!UICONTROL Crea]** per aggiungere un profilo immagine.
 1. Inserisci un nome di profilo e valori per maschera non affilata, ritaglio o campione o entrambi.
 
-   È utile utilizzare un nome di profilo specifico per lo scopo a cui è destinato. Ad esempio, se desideri creare un profilo che generi solo i campioni, ovvero se il ritaglio avanzato è disattivato e se il campione colore e immagine è attivato (attivato), puoi utilizzare il nome del profilo &quot;Campioni avanzati&quot;.
+   Utilizza un nome di profilo specifico per lo scopo a cui è destinato. Ad esempio, se desideri creare un profilo che generi solo i campioni, ovvero se Smart Crop è disattivato e se Color e Image Swatch è abilitato (attivato), utilizza il nome del profilo &quot;Smart Swatches&quot;.
 
    Consulta anche la sezione [Opzioni di ritaglio avanzato e campione avanzato](#crop-options) e [Maschera definizione dettagli](#unsharp-mask).
 
    ![coltura](assets/crop.png)
 
-1. Tocca **[!UICONTROL Salva.]** Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
+1. Tocca **[!UICONTROL Salva]**. Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
 
 ## Modifica o eliminazione dei profili immagine di Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Tocca il logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili immagine.]**
-1. Seleziona il profilo immagine da modificare o rimuovere. Per modificarlo, selezionare **[!UICONTROL Modifica profilo elaborazione immagine.]** Per rimuoverlo, selezionare  **[!UICONTROL Elimina profilo elaborazione immagine.]**
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
+1. Seleziona il profilo immagine da modificare o rimuovere. Per modificarlo, selezionare **[!UICONTROL Modifica profilo elaborazione immagine]**. Per rimuoverlo, selezionare **[!UICONTROL Elimina profilo elaborazione immagine]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -140,11 +124,11 @@ Consulta anche [Tecniche consigliate per l’organizzazione delle risorse digita
 
 ## Applicazione di un profilo immagine Dynamic Media alle cartelle {#applying-an-image-profile-to-folders}
 
-Quando assegni un profilo immagine a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla relativa cartella principale. Ciò significa che puoi assegnare un solo profilo immagine a una cartella. Considera attentamente la struttura delle cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
+Quando assegni un profilo immagine a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla relativa cartella principale. Questo flusso di lavoro consente di assegnare un solo profilo immagine a una cartella. Considera attentamente la struttura delle cartelle in cui caricare, archiviare, utilizzare e archiviare le risorse.
 
 Se hai assegnato un profilo immagine diverso a una cartella, il nuovo profilo sostituisce il profilo precedente. Le risorse della cartella esistenti in precedenza rimangono invariate. Il nuovo profilo viene applicato alle risorse aggiunte successivamente alla cartella.
 
-Le cartelle a cui è assegnato un profilo sono indicate nell’interfaccia utente in base al nome del profilo visualizzato nella scheda.
+Le cartelle a cui è assegnato un profilo sono indicate nell’interfaccia utente utilizzando il nome del profilo visualizzato nella scheda.
 
 <!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
@@ -154,7 +138,7 @@ Puoi applicare i profili immagine a cartelle specifiche o globalmente a tutte le
 
 ### Applicazione dei profili immagine Dynamic Media a cartelle specifiche {#applying-image-profiles-to-specific-folders}
 
-Puoi applicare un profilo immagine a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà.]** Questa sezione descrive come applicare i profili immagine alle cartelle con entrambe le soluzioni.
+Puoi applicare un profilo immagine a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili immagine alle cartelle con entrambe le soluzioni.
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
@@ -162,38 +146,38 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 #### Applicazione dei profili immagine Dynamic Media alle cartelle dall&#39;interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tocca il logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili immagine.]**
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da applicare a una o più cartelle.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tocca **[!UICONTROL Applica profilo di elaborazione a cartelle]** e seleziona la cartella o le cartelle multiple da utilizzare per ricevere le risorse appena caricate, quindi tocca o fai clic su **[!UICONTROL Applica.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Tocca **[!UICONTROL Applica profilo di elaborazione alle cartelle]** e seleziona una o più cartelle da utilizzare per ricevere le risorse appena caricate, quindi tocca o fai clic su **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 #### Applicazione dei profili immagine Dynamic Media alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
 
-1. Tocca il logo AEM e vai a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo immagine.
-1. Nella cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà.]**
-1. Tocca la scheda **[!UICONTROL Profili immagine]**. Seleziona il profilo dall’elenco a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Tocca il logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella a cui desideri applicare un profilo immagine.
+1. Sulla cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà]**.
+1. Tocca la scheda **[!UICONTROL Profili immagine]**. Seleziona il profilo dall’elenco a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
 ### Applicazione globale di un profilo immagine Dynamic Media {#applying-an-image-profile-globally}
 
-Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livello globale in modo che a qualsiasi contenuto caricato AEM risorse in una cartella sia applicato il profilo selezionato.
+Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse di Experience Manager in una cartella sia applicato il profilo selezionato.
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-**Per applicare un profilo immagine Dynamic Media a livello globale**:
+**Per applicare globalmente un profilo immagine Dynamic Media:**
 
 1. Effettua una delle operazioni seguenti:
 
-   * Passa a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applica il profilo appropriato, quindi tocca **[!UICONTROL Salva.]**
+   * Passa a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applica il profilo appropriato, quindi tocca **[!UICONTROL Salva]**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`.
 
-      Aggiungi la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e tocca **[!UICONTROL Salva tutto.]**
+      Aggiungi la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e tocca **[!UICONTROL Salva tutto]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -207,17 +191,17 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
-Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
+Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
 
 Consulta anche [Modifica del ritaglio avanzato o del campione avanzato di più immagini](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Per modificare il ritaglio avanzato o il campione avanzato di una singola immagine**:
+**Per modificare il ritaglio avanzato o il campione avanzato di una singola immagine:**
 
-1. Tocca il logo AEM e vai a **[!UICONTROL Risorse]**, quindi alla cartella a cui è stato applicato un profilo immagine di ritaglio avanzato o campione avanzato.
+1. Tocca il logo Experience Manager e vai a **[!UICONTROL Risorse]**, quindi alla cartella a cui è applicato un profilo immagine di ritaglio avanzato o campione avanzato.
 
 1. Tocca la cartella per aprirne il contenuto.
 1. Toccate l’immagine di cui desiderate regolare il ritaglio avanzato o il campione avanzato.
-1. Nella barra degli strumenti, tocca **[!UICONTROL Ritaglio avanzato.]**
+1. Nella barra degli strumenti, tocca **[!UICONTROL Ritaglio avanzato]**.
 
 1. Effettua una delle operazioni seguenti:
 
@@ -230,16 +214,16 @@ Consulta anche [Modifica del ritaglio avanzato o del campione avanzato di più i
 
 ## Modifica del ritaglio avanzato o del campione avanzato di più immagini {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Dopo aver applicato un profilo immagine contenente Smart Crop a una cartella, a tutte le immagini in essa contenute viene applicato un ritaglio. Se lo desideri, puoi *riallineare o ridimensionare manualmente* la finestra di ritaglio avanzato in più immagini per perfezionare ulteriormente il punto focale.
+Dopo aver applicato un profilo immagine contenente Smart Crop a una cartella, a tutte le immagini in tale cartella viene applicato un ritaglio. Se lo desideri, puoi *riallineare o ridimensionare manualmente* la finestra di ritaglio avanzato in più immagini per perfezionare ulteriormente il punto focale.
 
 Dopo aver modificato e salvato un ritaglio avanzato, la modifica viene propagata ovunque si utilizzi il ritaglio per le immagini specifiche.
 
-Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
+Se necessario, potete eseguire di nuovo il ritaglio avanzato per generare di nuovo il raccolto aggiuntivo.
 
-**Per modificare il ritaglio avanzato o il campione avanzato di più immagini**:
+**Per modificare il ritaglio avanzato o il campione avanzato di più immagini:**
 
-1. Tocca il logo AEM e vai a **[!UICONTROL Risorse]**, quindi a una cartella a cui è applicato un profilo immagine di ritaglio avanzato o campione avanzato.
-1. Nella cartella, tocca l&#39;icona **[!UICONTROL Altre azioni]** (...), quindi tocca **[!UICONTROL Ritaglio avanzato.]**
+1. Tocca il logo Experience Manager e vai a **[!UICONTROL Risorse]**, quindi a una cartella a cui è applicato un profilo immagine di ritaglio avanzato o campione avanzato.
+1. Nella cartella, tocca l&#39;icona **[!UICONTROL Altre azioni]** (...), quindi tocca **[!UICONTROL Ritaglio avanzato]**.
 
 1. Nella pagina **[!UICONTROL Modifica ritaglio avanzato]** , effettua una delle seguenti operazioni:
 
@@ -260,7 +244,7 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
       * Se l’immagine presenta solo un ritaglio avanzato o un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio.
       * Se l’immagine presenta sia un ritaglio avanzato che un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio. Oppure, tocca o fai clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascina la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del campione.
 
-      ![Ridimensionamento del ritaglio avanzato di un’immagine.](assets/edit_smart_crops-resize.png)
+      ![Ridimensionamento del ritaglio avanzato di un’immagine](assets/edit_smart_crops-resize.png)
 
    * Spostate la casella di ritaglio avanzato. Effettua una delle seguenti operazioni:
 
@@ -277,27 +261,27 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 
 
 
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva.]** quindi tocca  **** Chiudi per tornare alla cartella delle risorse.
+1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Salva]**, quindi tocca **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
 ## Rimozione di un profilo immagine dalle cartelle {#removing-an-image-profile-from-folders}
 
 Quando rimuovi un profilo immagine da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla relativa cartella principale. Tuttavia, l’elaborazione dei file che si è verificata all’interno delle cartelle rimane intatta.
 
-Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà.]** Questa sezione descrive come rimuovere i profili immagine dalle cartelle con entrambe le soluzioni.
+Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come rimuovere i profili immagine dalle cartelle con entrambe le soluzioni.
 
 ### Rimozione di profili immagine Dynamic Media dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tocca il logo AEM e passa a **[!UICONTROL Strumenti > Risorse > Profili immagine.]**
+1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili immagine]**.
 1. Seleziona il profilo immagine da rimuovere da una o più cartelle.
-1. Tocca **[!UICONTROL Rimuovi profilo elaborazione da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi.]**
+1. Tocca **[!UICONTROL Rimuovi profilo elaborazione da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi]**.
 
    Puoi confermare che il profilo immagine non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 ### Rimozione di profili immagine Dynamic Media dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
 
-1. Tocca il logo AEM e vai a **[!UICONTROL Risorse]**, quindi alla cartella da cui vuoi rimuovere un profilo immagine.
-1. Nella cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà.]**
+1. Tocca il logo Experience Manager, vai a **[!UICONTROL Risorse]** e quindi alla cartella da cui vuoi rimuovere un profilo immagine.
+1. Sulla cartella, tocca il segno di spunta per selezionarlo, quindi tocca **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili immagine]** .
-1. Dall&#39;elenco a discesa **[!UICONTROL Nome profilo]**, seleziona **[!UICONTROL Nessuno]**, quindi tocca **[!UICONTROL Salva e chiudi.]**
+1. Dall’elenco a discesa **[!UICONTROL Nome profilo]**, seleziona **[!UICONTROL Nessuno]**, quindi tocca **[!UICONTROL Salva e chiudi]**.
 
    Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
