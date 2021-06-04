@@ -8,7 +8,7 @@ content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: Cache CDN
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Le risorse Dynamic Media sono memorizzate nella cache della rete CDN (Content De
 
 >[!IMPORTANT]
 >
->I passaggi seguenti si applicano solo alla modalità Dynamic Media - Scene7 in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) o versione successiva. Questa funzione di annullamento della validità della rete CDN richiede anche l’utilizzo della rete CDN preconfigurata fornita con Experience Manager Dynamic Media; qualsiasi altro CDN personalizzato non è supportato.<br>Se utilizzi Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) o versioni precedenti, segui i passaggi descritti in  [Invalidazione della cache CDN tramite Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>I passaggi seguenti si applicano solo alla modalità Dynamic Media - Scene7 in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) o versione successiva. Questa funzione di annullamento della validità della rete CDN richiede anche l’utilizzo della rete CDN preconfigurata fornita con Experience Manager Dynamic Media; qualsiasi altro CDN personalizzato non è supportato.<br>Se utilizzi Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) o versioni precedenti, segui i passaggi descritti in  [Invalidazione della cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
 
 Vedi anche [Panoramica sulla memorizzazione in cache in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
