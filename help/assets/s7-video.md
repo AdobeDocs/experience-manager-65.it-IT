@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Scopri la gestione centralizzata delle risorse video in AEM Assets, dove puoi caricare video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da AEM Assets. L’integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutte le schermate.
+description: Scopri la gestione centralizzata delle risorse video in Adobe Experience Manager Assets, dove puoi caricare video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Experience Manager Assets. L’integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutte le schermate.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,21 +10,21 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 48%
+source-wordcount: '1568'
+ht-degree: 34%
 
 ---
 
 # Video {#video}
 
-Assets offre una gestione centralizzata delle risorse video, che consente di caricare i video direttamente in Assets per la codifica automatica in Dynamic Media Classic e di accedere ai video Dynamic Media Classic direttamente da Assets per la creazione delle pagine.
+Adobe Experience Manager Assets offre una gestione centralizzata delle risorse video, che consente di caricare i video direttamente in Assets per la codifica automatica in Dynamic Media Classic e di accedere ai video Dynamic Media Classic direttamente da Assets per la creazione delle pagine.
 
 L’integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
 
 * Il componente **[!UICONTROL Video Scene7]** esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato e la qualità video appropriati su desktop, tablet e dispositivi mobili.
-* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows.
+* Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set video adattivo contiene tutte le rappresentazioni video necessarie per riprodurre video in modo trasparente su più schermi. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. È possibile utilizzare un set video adattivo, insieme al componente video S7, per lo streaming video adattivo su più schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows.
 <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
@@ -34,9 +34,9 @@ Il processo di codifica video predefinito si basa sull’utilizzo dell’integra
 * Miniature FFMPEG
 * Codifica FFMPEG
 
-Tieni presente che l’abilitazione e la configurazione dell’integrazione Dynamic Media Classic non rimuovono o disattivano automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di acquisizione DAM predefinito. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video acquisito tramite DAM viene codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
+L’abilitazione e la configurazione dell’integrazione Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di acquisizione DAM predefinito. Se utilizzi già la codifica video basata su FFMPEG in Adobe Experience Manager, è probabile che FFMPEG sia installato negli ambienti di authoring. In questo caso, un nuovo video acquisito tramite DAM viene codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
 
-Se hai la codifica video basata su FFMPEG in AEM configurato e FFMPEG installato, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di acquisizione DAM.
+Se in Experience Manager è configurata e installata la codifica video basata su FFMPEG, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di acquisizione DAM.
 
 ## Formati supportati {#supported-formats}
 
@@ -56,18 +56,18 @@ Se la risposta è “sì” ad almeno una di queste domande, carica il video dir
 
 ### Se carichi il video direttamente in Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Se hai bisogno di un flusso di lavoro o di un controllo delle versioni per le tue risorse, devi prima caricarlo in Adobe DAM. Di seguito è riportato il flusso di lavoro consigliato:
+Se hai bisogno di un flusso di lavoro o di un controllo delle versioni per le tue risorse, carica prima in Adobe DAM . Di seguito è riportato il flusso di lavoro consigliato:
 
 1. Carica la risorsa video in Adobe DAM e codifica e pubblica automaticamente in Dynamic Media Classic.
-1. In AEM, accedi alle risorse video in WCM nella scheda **[!UICONTROL Filmati]** del Content Finder.
+1. Ad Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Filmati]** di Content Finder.
 1. Esegui l’authoring con il componente **[!UICONTROL Video Scene7]** o **[!UICONTROL Video di base]**.
 
 ### Se carichi il video in Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
-Se non hai bisogno di un flusso di lavoro o di gestire le versioni delle tue risorse, caricale in Scene7. Di seguito è riportato il flusso di lavoro consigliato:
+Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per le tue risorse, carica le risorse in Scene7. Di seguito è riportato il flusso di lavoro consigliato:
 
 1. In Dynamic Media Classic, [configura un caricamento e una codifica FTP pianificati in Scene7 (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
-1. In AEM, accedi alle risorse video in WCM della scheda **[!UICONTROL Scene7]** del Content Finder.
+1. Ad Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Scene7]** di Content Finder.
 1. Crea con il componente **[!UICONTROL Video Scene7]** .
 
 ## Configurazione dell’integrazione con video Scene7 {#configuring-integration-with-scene-video}
@@ -95,7 +95,7 @@ Per configurare i predefiniti universali:
 
 ## Aggiornamento del visualizzatore e dei predefiniti di codifica  {#updating-viewer-and-encoding-presets}
 
-Se devi aggiornare il visualizzatore e i predefiniti di codifica video in Experience Manager perché i predefiniti sono stati aggiornati in Scene7, passa alla configurazione Scene7 nella configurazione cloud e fai clic su **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
+Per aggiornare il visualizzatore e i predefiniti di codifica video perché i predefiniti sono stati aggiornati in Scene7, passa alla configurazione Scene7 in Cloud Configuration e tocca **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -106,9 +106,9 @@ Se devi aggiornare il visualizzatore e i predefiniti di codifica video in Experi
 
    >[!NOTE]
    >
-   >La generazione delle miniature video potrebbe richiedere del tempo.
+   >La generazione delle miniature video richiede del tempo.
 
-   Quando si trascina il video sorgente principale DAM sul componente video, si accede a *all* delle rappresentazioni proxy codificate di Scene7 per la distribuzione.
+   Quando si trascina il video sorgente principale DAM sul componente video, si accede a *tutti* rappresentazioni proxy codificate Scene7 per la distribuzione.
 
 ## Componente video di base e componente video di Scene7 {#foundation-video-component-versus-scene-video-component}
 
@@ -116,23 +116,23 @@ Quando utilizzi Experience Manager, puoi accedere sia al componente Video dispon
 
 Il componente video di Scene7 funziona solo per i video di Scene7. Il componente foundation funziona con i video archiviati da Experience Manager (utilizzando ffmpeg) e i video Scene7.
 
-La matrice seguente spiega quando utilizzare questi componenti:
+La matrice seguente spiega quando utilizzare il componente:
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
 >[!NOTE]
 >
->Come impostazione predefinita, il componente video S7 utilizza il profilo video universale. Tuttavia, è possibile ottenere il lettore video basato su HTML5 da utilizzare per Experience Manager facendo una delle seguenti operazioni in Scene7: copia il codice di incorporamento del lettore video HTML5 predefinito e inseriscilo nella pagina dell’Experience Manager.
+>Come impostazione predefinita, il componente video S7 utilizza il profilo video universale. Tuttavia, è possibile ottenere il lettore video basato su HTML5 da utilizzare per Experience Manager. In Scene7, copia il codice di incorporamento del lettore video HTML5 predefinito e inseriscilo nella pagina del tuo Experience Manager.
 
-## Componente video AEM {#aem-video-component}
+## Componente video di Experience Manager {#aem-video-component}
 
 Anche se per visualizzare i video Scene7 si consiglia di utilizzare il componente video Scene7, per motivi di completezza questa sezione descrive come utilizzare i video Scene7 con il componente video di base in Experience Manager.
 
-### Video AEM e video Scene7 {#aem-video-and-scene-video-comparison}
+### Confronto tra video e video Scene7 di Experience Manager {#aem-video-and-scene-video-comparison}
 
-La tabella seguente fornisce un confronto ad alto livello delle capacità supportate tra il componente video di base di AEM e il componente video di Scene7:
+La tabella seguente fornisce un confronto ad alto livello delle funzionalità supportate tra il componente Video di base di Experience Manager e il componente Video di Scene7:
 
-|  | Video di base di AEM | Video di Scene7 |
+|  | Video Experience Manager Foundation | Video di Scene7 |
 |---|---|---|
 | Approccio | Primo approccio HTML5. Flash viene utilizzato solo per il fallback non HTML5. | Flash è utilizzato sulla maggior parte dei computer desktop. HTML5 è usato per dispositivi mobili e tablet. |
 | Consegna | Progressivo | Streaming adattivo |
@@ -144,15 +144,15 @@ La tabella seguente fornisce un confronto ad alto livello delle capacità suppor
 
 #### Creazione di profili video {#creating-video-profiles}
 
-Le varie codifiche video vengono create in base ai predefiniti di codifica S7 selezionati nella configurazione cloud S7. Affinché il componente video foundation possa utilizzarli, per ogni predefinito di codifica S7 selezionato deve essere creato un profilo video. Il componente video potrà quindi selezionare le rappresentazioni DAM appropriate.
+Le varie codifiche video vengono create in base ai predefiniti di codifica S7 selezionati nella configurazione cloud S7. Affinché il componente video di base possa utilizzarli, è necessario creare un profilo video per ogni predefinito di codifica S7 selezionato. Questo metodo consente al componente video di selezionare di conseguenza le rappresentazioni DAM.
 
 >[!NOTE]
 >
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
-1. In AEM, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Console di configurazione]**.
-1. Nella **[!UICONTROL Console di configurazione]** vai a **[!UICONTROL Strumenti]** > **[!UICONTROL DAM]** > **[!UICONTROL Profili video]** nella struttura di navigazione.
-1. Crea un nuovo profilo video S7. Nel menu **[!UICONTROL Nuovo]**, seleziona **[!UICONTROL Crea pagina]**, quindi seleziona il modello di profilo video Scene7. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Console di configurazione]**.
+1. Nella **[!UICONTROL Console di configurazione]**, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL DAM]** > **[!UICONTROL Profili video]** nella struttura di navigazione.
+1. Crea un profilo video S7. Nel menu **[!UICONTROL Nuovo]**, seleziona **[!UICONTROL Crea pagina]**, quindi seleziona il modello di profilo video Scene7. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -170,22 +170,22 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 
 #### Configurazione della progettazione {#configuring-design}
 
-Il componente **[!UICONTROL Video di base]** deve sapere quali profili video utilizzare per creare l’elenco delle sorgenti video. È necessario aprire la finestra di dialogo di progettazione dei componenti video e configurare la progettazione dei componenti per l’utilizzo dei nuovi profili video.
+Il componente **[!UICONTROL Video di base]** deve sapere quali profili video utilizzare per creare l’elenco delle sorgenti video. Apri la finestra di dialogo di progettazione dei componenti video e configura la progettazione dei componenti per l’utilizzo dei nuovi profili video.
 
 >[!NOTE]
 >
->Se utilizzi il componente **[!UICONTROL Video di base]** su una pagina mobile, potrebbe essere necessario ripetere questi passaggi nella progettazione della pagina mobile.
+>Se utilizzi il componente **[!UICONTROL Video di base]** su una pagina mobile, ripeti questi passaggi nella progettazione della pagina mobile.
 
 >[!NOTE]
 >
 >Le modifiche apportate alla progettazione richiedono l’attivazione della progettazione per avere effetto al momento della pubblicazione.
 
 1. Apri la finestra di dialogo di progettazione del componente **[!UICONTROL Video di base]** e passa alla scheda **[!UICONTROL Profili]** . Quindi elimina i profili predefiniti e aggiungi i nuovi profili video S7. L’ordine dell’elenco dei profili nella finestra di dialogo di progettazione definisce l’ordine dell’elemento origini video durante il rendering.
-1. Per i browser che non supportano HTML5, il componente video consente di configurare un fallback di Flash. Apri la finestra di dialogo di progettazione dei componenti video e passa alla scheda **[!UICONTROL Flash]** . Configura le impostazioni del lettore di Flash e assegna un profilo di fallback per il lettore Flash.
+1. Per i browser che non supportano HTML5, il componente video ti consente di configurare un fallback di Flash. Apri la finestra di dialogo di progettazione dei componenti video e passa alla scheda **[!UICONTROL Flash]** . Configura le impostazioni del lettore di Flash e assegna un profilo di fallback per il lettore Flash.
 
 #### Elenco di controllo {#checklist}
 
-1. Crea una configurazione cloud S7. Assicurati che i predefiniti di codifica video siano impostati e che il modulo di importazione sia in esecuzione.
+1. Crea una configurazione cloud S7. Assicurati che i predefiniti di codifica video siano impostati e che l’importazione sia in esecuzione.
 1. Crea un profilo video S7 per ogni predefinito di codifica video selezionato nella configurazione cloud.
 1. I profili video devono essere attivati.
 1. Configura la progettazione del componente **[!UICONTROL Video di base]** sulla pagina.
