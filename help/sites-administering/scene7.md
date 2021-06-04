@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d700510efb340598a7931647164e22d574884569
+exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 1%
 
 ---
-
 
 # Integrazione con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
@@ -54,7 +53,7 @@ Quando lavori con le risorse in questa soluzione, effettua una delle seguenti op
 * Carica le risorse direttamente in Dynamic Media Classic e accedi quindi tramite il browser dei contenuti **Dynamic Media Classic** per la creazione delle pagine o
 * Carica su Risorse di Experience Manager e quindi abilita la pubblicazione automatica in Dynamic Media Classic; accedi tramite il browser dei contenuti **Risorse** per la creazione delle pagine
 
-I componenti utilizzati per questa integrazione si trovano nell&#39;area del componente **Dynamic Media Classic** in modalità [Progettazione.](/help/sites-authoring/author-environment-tools.md#page-modes)
+I componenti utilizzati per questa integrazione si trovano nell&#39;area del componente **Dynamic Media Classic** in [Modalità Progettazione](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -424,8 +423,8 @@ Tuttavia, se non desideri che le risorse inviate a Dynamic Media Classic vengano
 
 Prima di poter inviare le risorse a Dynamic Media Classic senza pubblicarle, è necessario impostare quanto segue:
 
-1. [Utilizza l’Admin Console per creare un caso di supporto.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Nel tuo caso di assistenza, richiedi l&#39;abilitazione dell&#39;anteprima sicura per il tuo account Dynamic Media Classic.
-1. Segui le indicazioni per [configurare l&#39;anteprima protetta per il tuo account Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto. Nel tuo caso di assistenza, richiedi l&#39;abilitazione dell&#39;anteprima sicura per il tuo account Dynamic Media Classic.
+1. Segui le istruzioni per [configurare l&#39;anteprima protetta per il tuo account Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Questi passaggi sono gli stessi che seguirai per creare qualsiasi configurazione di test sicuro in Dynamic Media Classic.
 
@@ -547,7 +546,7 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
 **Per abilitare le risorse basate su tipi MIME:**
 
 1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Strumenti > Operazioni > Console web]**.
-1. Nel pannello Configurazione console Web di Adobe Experience Manager, nel menu **[!UICONTROL OSGi]**, tocca **[!UICONTROL Configurazione]**.
+1. Nel pannello Configurazione della console Web di Adobe Experience Manager, nel menu **[!UICONTROL OSGi]**, tocca **[!UICONTROL Configurazione]**.
 1. Nella colonna Nome , tocca **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** per modificare la configurazione.
 1. Nell’area Mime Type Mapping (Mime Type Mapping), tocca un segno più (+) per aggiungere un tipo MIME.
 
@@ -623,4 +622,3 @@ Se riscontri problemi nell’integrazione di Experience Manager con Dynamic Medi
 >L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per essere visualizzata in Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic priva di troppe risorse. Ad esempio, la cartella principale ha spesso troppe risorse.
 >
 >Se desideri testare l’integrazione, fai in modo che la cartella principale punti solo a una sottocartella, invece che all’intera azienda.
-
