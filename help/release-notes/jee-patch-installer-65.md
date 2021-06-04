@@ -4,14 +4,13 @@ description: Modulo di installazione delle patch di AEM Forms JEE
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 28%
+source-wordcount: '483'
+ht-degree: 29%
 
 ---
-
 
 # Modulo di installazione delle patch JEE per AEM Forms {#aem-forms-jee-patch-installer}
 
@@ -53,10 +52,12 @@ LinuxPassa alla directory appropriata e, dal prompt dei comandi, digita
 1. Leggi le informazioni di riepilogo di pre-installazione e fai clic su **[!UICONTROL Installa]**.
 1. Al termine dell’installazione, fai clic su **[!UICONTROL Avanti]** per applicare gli aggiornamenti della correzione rapida ai file installati.
 
-1. Deselezionare l&#39;opzione Avvia Configuration Manager prima di fare clic su Fine. Prima di eseguire la gestione della configurazione utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, accedi alla directory *&lt;AEMForms_Install_Dir>\configurationManager\bin* e aggiorna **axis.jar** axis-1.4.1.1 .jar **nei file seguenti:**
+1. Deselezionare l&#39;opzione Avvia Configuration Manager prima di fare clic su Fine. Prima di eseguire la gestione della configurazione utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, accedi alla directory *&lt;AEMForms_Install_Dir>\configurationManager\bin* e aggiorna i file `ConfigurationManager.lax` e `ConfigurationManager_IPv6.lax` con le seguenti operazioni di ridenominazione:
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` a `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` a `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` a `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` a `xercesImpl-2.12.0.jar`
 
 1. La casella di controllo Avvia Configuration Manager è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Configuration Manager.
 
@@ -83,7 +84,7 @@ Se hai configurato l’autenticazione SAML e hai problemi con metadati IDP di gr
 ## Moduli interessati {#impacted-modules}
 
 * Servizi documentali
-* Sicurezza dei documenti
+* Document Security
 * JEE per Foundation
 
 [Contatta il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
