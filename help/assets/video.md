@@ -11,7 +11,7 @@ docset: aem65
 feature: Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11748'
 ht-degree: 7%
@@ -30,7 +30,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >
 >Prima di lavorare con i video in Dynamic Media, accertati che il tuo amministratore AEM abbia già abilitato e configurato i Cloud Services Dynamic Media in modalità Dynamic Media - Scene7 o Dynamic Media - Hybrid.
 >
->* Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
    >
    >
 * Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità ibrida.
@@ -356,7 +356,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 ### Risoluzione {#resolution}
 
-**La risoluzione **descrive l’altezza e la larghezza in pixel di un file video. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). A scopo di streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
+**** La risoluzione descrive l’altezza e la larghezza in pixel di un file video. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). A scopo di streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
 La risoluzione e la velocità dei dati sono due fattori strettamente collegati che determinano la qualità video. Per mantenere la stessa qualità video, più alto è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dei dati. Ad esempio, considera il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
 
@@ -548,7 +548,7 @@ Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se 
 >
 >Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube in AEM (vedi [Configurazione di YouTube in AEM](#setting-up-youtube-in-aem) di seguito). Se non riesci a farlo, non riceverai alcun avviso relativo all’assenza di canali esistenti. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
 
-Per creare un canale YouTube:
+**Per creare un canale YouTube:**
 
 1. Vai a [https://www.youtube.com](https://www.youtube.com/) e accedi utilizzando le tue credenziali del tuo account Google.
 1. Nell’angolo in alto a destra della pagina YouTube, fai clic sull’immagine del profilo (potrebbe anche essere visualizzata come una lettera all’interno di un cerchio colorato), quindi fai clic su **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio arrotondato).
@@ -761,7 +761,7 @@ Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo proce
 >
 >Per informazioni più dettagliate sullo stato, è possibile monitorare il log YouTube sotto replica. Tuttavia, tale monitoraggio richiede l’accesso dell’amministratore.
 
-Per pubblicare i video sul tuo canale YouTube:
+**Per pubblicare i video sul tuo canale YouTube:**
 
 1. In AEM, accedi a una risorsa video da pubblicare sul tuo canale YouTube.
 1. Seleziona la risorsa video (il set video adattivo).
@@ -797,7 +797,7 @@ Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblica
 >
 >L’URL di YouTube non è disponibile per la copia finché non avrai pubblicato la risorsa video in YouTube.
 
-Per collegare gli URL YouTube alla tua applicazione web:
+**Per collegare gli URL YouTube alla tua applicazione web:**
 
 1. Passa alla risorsa video *pubblicata da YouTube* di cui desideri copiare l&#39;URL, quindi selezionala.
 
@@ -821,7 +821,7 @@ Quando annulli la pubblicazione di una risorsa video in AEM, il video viene rimo
 >
 >Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Per annullare la pubblicazione dei video e rimuoverli da YouTube:
+**Per annullare la pubblicazione dei video e rimuoverli da YouTube:**
 
 1. Passa alle risorse video da cui desideri annullare la pubblicazione dal canale YouTube.
 1. In una modalità di selezione delle risorse, seleziona una o più risorse video pubblicate.
@@ -836,7 +836,7 @@ Quando carichi un nuovo video in una cartella a cui è stata applicata la codifi
 
 ### Monitoraggio dello stato di avanzamento {#monitoring-progress}
 
-Per monitorare l’avanzamento (compresa la codifica non riuscita/pubblicazione YouTube):
+**Per monitorare l’avanzamento (compresa la codifica non riuscita/pubblicazione YouTube):**
 
 1. Visualizza l’avanzamento della codifica video nella cartella delle risorse:
 
@@ -987,7 +987,7 @@ Per impostazione predefinita, al primo accesso a Rapporti video, il rapporto vis
 
 Affinché i rapporti video funzionino correttamente, viene automaticamente creato un ID suite di rapporti quando sono configurati Cloud Services Dynamic Media. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione in modo che sia disponibile per la funzione Copia URL quando visualizzi l’anteprima delle risorse. Tuttavia, questo richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è configurato, è comunque possibile pubblicare per visualizzare il rapporto video, tuttavia sarà necessario tornare alla configurazione di Dynamic Media Cloud e toccare **[!UICONTROL OK]**.
 
-Per visualizzare i rapporti video:
+**Per visualizzare i rapporti video:**
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi, nella barra a sinistra, seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video , effettua una delle seguenti operazioni:
@@ -1008,7 +1008,7 @@ Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media o se ha
 
 Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e l’ [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
-Per visualizzare i rapporti video basati su un visualizzatore video creato utilizzando l’API SDK per visualizzatori HTML5:
+**Per visualizzare i rapporti video basati su un visualizzatore video creato utilizzando l’API SDK per visualizzatori HTML5:**
 
 1. Passa a qualsiasi risorsa video pubblicata.
 1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
@@ -1108,7 +1108,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse.
 
-   Consulta [Pubblicazione delle risorse.](/help/assets/publishing-dynamicmedia-assets.md)
+   Consulta [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Effettua una delle operazioni seguenti:
 
@@ -1311,7 +1311,7 @@ Consulta [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
 1. Tocca **[!UICONTROL OK]** per tornare alla scheda Proprietà.
 1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, tocca **[!UICONTROL Salva tutto]**, quindi tocca l’icona Indietro Home nell’angolo in alto a sinistra per tornare a AEM.
 
-   Consulta [Aggiunta di una miniatura video.](#adding-a-video-thumbnail)
+   Consulta [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
 
 ### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
 
