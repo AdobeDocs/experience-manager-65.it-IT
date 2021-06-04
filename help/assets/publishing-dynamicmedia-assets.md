@@ -10,7 +10,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Pubblicazione
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -21,8 +21,8 @@ ht-degree: 5%
 
 Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o incorporando il codice nella pagina.
 
-Puoi anche pubblicare istantaneamente le risorse caricate senza alcun intervento da parte dell’utente. Consulta [Configurazione di Dynamic Media - Modalità Scene7 .](config-dms7.md)
-In alternativa, puoi pubblicare selettivamente le risorse in Dynamic Media o AEM, reciprocamente esclusive, utilizzando  **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media.](/help/assets/selective-publishing.md)
+Puoi anche pubblicare istantaneamente le risorse caricate senza alcun intervento da parte dell’utente. Consulta [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md).
+In alternativa, puoi pubblicare selettivamente le risorse su Dynamic Media o AEM, reciprocamente esclusive, utilizzando **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzo della pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).
 
 Nella **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
@@ -45,7 +45,7 @@ Consulta anche [Incorporare il visualizzatore video o immagine Dynamic Media in 
 
 
 
-Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consulta [Pubblicazione di risorse.](manage-assets.md)
+Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consulta [Pubblicazione di risorse](manage-assets.md).
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
