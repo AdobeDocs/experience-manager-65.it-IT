@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefiniti immagini
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '3831'
 ht-degree: 10%
@@ -61,7 +61,7 @@ Per gestire i predefiniti immagine in AEM, tocca o fai clic sul logo AEM per acc
 >
 >In *Dynamic Media - Modalità ibrida*, è necessario pubblicare manualmente i predefiniti per immagini.
 >
->Consulta [Pubblicazione dei predefiniti per immagini .](#publishing-image-presets)
+>Consulta [Pubblicazione di predefiniti immagine](#publishing-image-presets).
 
 >[!NOTE]
 >
