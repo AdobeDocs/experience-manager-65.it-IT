@@ -11,7 +11,7 @@ docset: aem65
 feature: Set Di File Multimediali Diversi, Gestione Delle Risorse
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 28%
@@ -38,11 +38,11 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
    Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Se necessario, crea i [Set di immagini](/help/assets/image-sets.md) e i [Set 360 gradi](/help/assets/spin-sets.md). Poiché gli utenti possono eseguire lo zoom sulle immagini nel Visualizzatore set di file multimediali diversi, calcola lo zoom al momento di scegliere le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel.
 
-1. [Creare set di file multimediali diversi.](#creating-mixed-media-sets)
+1. [Creare set di file multimediali diversi](#creating-mixed-media-sets).
 
    Per creare un set di file multimediali diversi, dalla pagina Risorse tocca **[!UICONTROL Crea > Set di file multimediali diversi]**, quindi assegna un nome al set, scegli le risorse e stabilisci l’ordine in cui vengono visualizzate le immagini.
 
-   Vedere [Uso dei selettori.](/help/assets/working-with-selectors.md)
+   Vedere [Utilizzo dei selettori](/help/assets/working-with-selectors.md).
 
 1. Imposta i [predefiniti visualizzatore di file multimediali diversi](/help/assets/managing-viewer-presets.md), a seconda delle esigenze.
 
@@ -50,13 +50,13 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettua le
 
    Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]** .
 
-   Consulta [Aggiunta e modifica di predefiniti visualizzatore.](/help/assets/managing-viewer-presets.md)
+   Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
-1. [Anteprima di set di file multimediali diversi.](#previewing-mixed-media-sets)
+1. [Anteprima di set di file multimediali diversi](#previewing-mixed-media-sets).
 
    Seleziona il set di file multimediali diversi e puoi visualizzarlo in anteprima. Fai clic sulle icone delle miniature per esaminare il set di file multimediali diversi nel visualizzatore selezionato. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]** , disponibile nella barra a sinistra.
 
-1. [Pubblicare Set Di File Multimediali Misti.](#publishing-mixed-media-sets)
+1. [Pubblicare Set Di File Multimediali Misti](#publishing-mixed-media-sets).
 
    La pubblicazione di un set di file multimediali diversi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -86,7 +86,7 @@ Puoi aggiungere immagini, set di immagini, set 360 gradi e video al set di file 
 
 Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in ordine alfanumerico. Puoi riordinare o ordinare manualmente le risorse dopo averle aggiunte.
 
-**Per creare un set di file multimediali diversi**
+**Per creare un set di file multimediali diversi:**
 
 1. In Assets, individua il punto in cui vuoi creare un set di file multimediali diversi, fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Set di file multimediali diversi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse. Viene visualizzato l’Editor set di file multimediali diversi.
 
@@ -132,7 +132,7 @@ Puoi eseguire diverse attività di modifica alle risorse in Set di file multimed
 * Applica i predefiniti visualizzatore.
 * Modifica la miniatura predefinita.
 
-**Per modificare un set di file multimediali diversi**
+**Per modificare un set di file multimediali diversi:**
 
 1. Effettua una delle seguenti operazioni:
 
