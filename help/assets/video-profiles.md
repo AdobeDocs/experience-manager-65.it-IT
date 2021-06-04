@@ -11,7 +11,7 @@ docset: aem65
 feature: Profili video
 role: Business Practitioner, Administrator
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '3704'
 ht-degree: 18%
@@ -42,7 +42,7 @@ Consulta anche [Tecniche consigliate per l’organizzazione delle risorse digita
 >
 >I metadati sono utili nella ricerca delle risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richieste dal sistema di AEM e utilizzate nell’interfaccia utente per identificare visivamente i video nella vista Schede, nella vista Risultati ricerca e nella vista Elenco risorse. Puoi visualizzare le miniature generate toccando l’icona Rappresentazioni (una palette del pittore) di un video codificato.
 
-Al termine della creazione del profilo video, lo si applica a una cartella o a più cartelle. Consulta [Applicazione di un profilo video alle cartelle.](#applying-a-video-profile-to-folders)
+Al termine della creazione del profilo video, lo si applica a una cartella o a più cartelle. Consulta [Applicazione di un profilo video alle cartelle](#applying-a-video-profile-to-folders).
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, consulta [Configurazione dell’elaborazione delle risorse](/help/assets/config-dms7.md#configuring-asset-processing).
 
