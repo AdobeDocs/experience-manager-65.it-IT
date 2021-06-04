@@ -11,7 +11,7 @@ docset: aem65
 feature: Set 360 gradi,Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 12%
@@ -36,11 +36,11 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 
 Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazioni:
 
-1. [Carica le immagini per più visualizzazioni.](#uploading-assets-for-spin-sets)
+1. [Carica le immagini per più visualizzazioni](#uploading-assets-for-spin-sets).
 
    Per un set 360 gradi a una dimensione e per un set 360 gradi a due dimensioni, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi monodimensionale include 12 scatti, ruotate l’elemento di 30 gradi (360/12) per ogni ripresa.
 
-1. [Crea set 360 gradi.](#creating-spin-sets)
+1. [Crea set 360 gradi](#creating-spin-sets).
 
    Per creare un set 360 gradi, seleziona **[!UICONTROL Crea > Set 360 gradi]**, quindi assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
 
@@ -56,17 +56,17 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Per creare o modificare i predefiniti visualizzatore, consulta **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]** .
 
-   Consulta [Aggiunta e modifica di predefiniti visualizzatore.](/help/assets/managing-viewer-presets.md)
+   Consulta [Aggiunta e modifica di predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
 1. [Visualizzazione dei set 360 gradi](#viewing-spin-sets).
 
    È possibile visualizzare e accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (I set creati utilizzando i predefiniti per set di batch, *not* vengono visualizzati nell’interfaccia utente.)
 
-1. [Anteprima set 360 gradi.](/help/assets/previewing-assets.md)
+1. [Anteprima set 360 gradi](/help/assets/previewing-assets.md).
 
    Seleziona il set 360 gradi e puoi visualizzarlo in anteprima. Ruota il set 360 gradi. Puoi scegliere diversi visualizzatori dal menu a discesa **[!UICONTROL Visualizzatori]**, disponibile dal menu a discesa della barra a sinistra.
 
-1. [Pubblicare Set 360 gradi.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Pubblicare Set 360 gradi](/help/assets/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set 360 gradi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/managing-viewer-presets.md).
 
@@ -142,7 +142,7 @@ Questa sezione descrive come creare i set 360 gradi in AEM.
 
    Se necessario, trascina l’icona Riordina di una risorsa a destra del nome del file della risorsa per riordinare le immagini verso l’alto o verso il basso nell’elenco dei set.
 
-   ![Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione.](assets/6_5_spinset-reorderassets.png)
+   ![Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione](assets/6_5_spinset-reorderassets.png).
 
    Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione.
 
@@ -162,7 +162,7 @@ Questa sezione descrive come creare i set 360 gradi in AEM.
 >
 >Puoi anche visualizzare i set tramite l’interfaccia utente descritta in [Modifica dei set 360 gradi](#editing-spin-sets).
 
-**Per visualizzare i set 360 gradi**
+**Per visualizzare i set 360 gradi:**
 
 1. Quando si aprono le proprietà di una singola risorsa. Le proprietà indicano l’impostazione in cui la risorsa selezionata è membro di (sotto **[!UICONTROL Membro di Set]**). Fare clic sul nome del set per visualizzare l&#39;intero set.
 
@@ -188,7 +188,7 @@ Puoi eseguire diverse attività di modifica sui set 360 gradi, ad esempio:
 * Applica i predefiniti visualizzatore.
 * Elimina il set 360 gradi.
 
-**Per modificare un set 360 gradi**
+**Per modificare un set 360 gradi:**
 
 1. Effettua una delle seguenti operazioni:
 
