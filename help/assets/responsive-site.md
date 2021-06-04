@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset Management
+feature: Gestione risorse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 12%
 
 ---
-
 
 # Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -24,11 +23,11 @@ Utilizza la funzione Codice reattivo quando desideri condividere il codice per i
 
 Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in AEM, un server di immagini fuori sede esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
-Vedere anche [Incorporamento del visualizzatore video in una pagina web.](embed-code.md)
+Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
 
-Vedere anche [Collegamento di URL all&#39;applicazione Web.](linking-urls-to-yourwebapplication.md)
+Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-**Per fornire immagini ottimizzate per un sito** reattivo:
+**Per fornire immagini ottimizzate per un sito reattivo:**
 
 1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, tocca **[!UICONTROL Rendering]**.
 
