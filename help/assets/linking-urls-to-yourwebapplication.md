@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configurazione
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 11%
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 I siti web e le applicazioni accedono ai servizi Dynamic Media tramite chiamate URL. Dopo la pubblicazione di una risorsa, Dynamic Media attiva una stringa URL che fa riferimento a tale risorsa. Puoi incollare questi URL in un browser web per eseguire test.
 
-Puoi effettuare il collegamento agli URL solo se *non* utilizzi AEM come WCM. Il collegamento e l’incorporamento vengono utilizzati quando si desidera distribuire un lettore video come finestra a comparsa o modale. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina.](adding-dynamic-media-assets-to-pages.md)
+Puoi effettuare il collegamento agli URL solo se *non* utilizzi AEM come WCM. Il collegamento e l’incorporamento vengono utilizzati quando si desidera distribuire un lettore video come finestra a comparsa o modale. Se utilizzi AEM come WCM, [aggiungi le risorse direttamente sulla pagina](adding-dynamic-media-assets-to-pages.md).
 
 Per inserire queste stringhe URL nelle pagine web e nelle applicazioni, copiale da Dynamic Media.
 
@@ -29,13 +29,13 @@ Per inserire queste stringhe URL nelle pagine web e nelle applicazioni, copiale 
 >
 >Le stringhe URL sono disponibili solo per le rappresentazioni dinamiche delle risorse. Al momento non sono disponibili per le risorse statiche che risiedono in DAM e non nel server Dynamic Media. Il pulsante URL non viene visualizzato per le rappresentazioni statiche.
 
-Vedere anche [Incorporamento del visualizzatore di video o immagini in una pagina web.](embed-code.md)
+Vedere anche [Incorporamento del visualizzatore di video o immagini in una pagina Web](embed-code.md).
 
-Consulta anche [Collegamento di URL YouTube all&#39;applicazione Web.](video.md)
+Consulta anche [Collegamento di URL YouTube all&#39;applicazione Web](video.md).
 
-Consulta anche [Distribuzione di immagini ottimizzate per un sito reattivo.](responsive-site.md)
+Vedi anche [Distribuzione di immagini ottimizzate per un sito reattivo](responsive-site.md).
 
-Consulta anche [Caricamento delle risorse.](manage-assets.md#uploading-assets)
+Consulta anche [Caricamento delle risorse](manage-assets.md#uploading-assets).
 
 ## Ottenimento di un URL per una risorsa {#obtaining-a-url-for-an-asset}
 
@@ -59,7 +59,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Pubblicazione delle risorse.](publishing-dynamicmedia-assets.md)
+   Consulta [Pubblicazione di risorse](publishing-dynamicmedia-assets.md).
 
    Consulta [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
