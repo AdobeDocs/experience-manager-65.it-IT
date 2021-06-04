@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Pubblicazione
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 4%
@@ -38,10 +38,10 @@ Indipendentemente dal valore **[!UICONTROL Pubblica risorse]** impostato in **[!
 
 Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuare una delle seguenti operazioni:
 
-* [Pubblicare le risorse in modo selettivo in Dynamic Media o AEM utilizzando Gestisci pubblicazione.](#selective-publish-manage-publication)
-* [Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o AEM utilizzando Gestisci pubblicazione.](#selective-unpublish-manage-publication)
-* [Pubblicazione delle risorse in Dynamic Media o AEM tramite Pubblicazione rapida.](#quick-publish-aem-dm)
-* [Pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati della ricerca.](#selective-publish-unpublish-search-results)
+* [Pubblicare le risorse in modo selettivo in Dynamic Media o AEM utilizzando Gestisci pubblicazione](#selective-publish-manage-publication).
+* [Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o AEM utilizzando Gestisci pubblicazione](#selective-unpublish-manage-publication).
+* [Pubblicazione delle risorse in Dynamic Media o AEM tramite Pubblicazione](#quick-publish-aem-dm) rapida.
+* [Pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati](#selective-publish-unpublish-search-results) della ricerca.
 
 **Per configurare la pubblicazione selettiva a livello di cartella in Dynamic Media**
 
@@ -186,7 +186,7 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
 
 I risultati della ricerca possono mostrare risorse da più cartelle di risorse che hanno diverse impostazioni di pubblicazione di Dynamic Media. Se hai selezionato una o più risorse dai risultati della ricerca e le risorse hanno impostazioni diverse della modalità di pubblicazione di Dynamic Media, puoi attivare **[!UICONTROL Gestisci pubblicazione]** dalla barra degli strumenti per eseguire o annullare la pubblicazione.
 
-Vedere anche [Cercare risorse in AEM.](/help/assets/search-assets.md)
+Consulta anche [Cercare risorse in AEM](/help/assets/search-assets.md).
 
 **Pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati della ricerca**
 
