@@ -10,9 +10,9 @@ discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Predefiniti visualizzatore
 role: Business Practitioner, Administrator
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 26%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 26%
 
 Un predefinito per visualizzatori è un insieme di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Puoi applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
-Gli amministratori che hanno l’esigenza di gestire, creare, ordinare ed eliminare i predefiniti visualizzatore possono consultare [Gestione dei predefiniti visualizzatore](managing-viewer-presets.md).
+Gli amministratori che devono gestire, creare, ordinare ed eliminare i predefiniti visualizzatore devono consultare [Gestione dei predefiniti visualizzatore](managing-viewer-presets.md).
 
 Consulta anche [Pubblicazione dei predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
-Potrebbe non essere necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
+Non è necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
 Per eventuali problemi con i predefiniti visualizzatore, consulta [Risoluzione dei problemi Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Applicazione di un predefinito visualizzatore Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
