@@ -11,9 +11,9 @@ docset: aem65
 feature: Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
 workflow-type: tm+mt
-source-wordcount: '11655'
+source-wordcount: '11657'
 ht-degree: 5%
 
 ---
@@ -120,7 +120,7 @@ risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le 
 
 ## Utilizzo di video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su più schermi, tra cui desktop, iOS, Android™, Blackberry e dispositivi mobili Windows. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
+Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su diversi schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
 Ad esempio, su un dispositivo mobile iOS, rileva una larghezza di banda come 3G, 4G o Wi-Fi. Quindi, seleziona automaticamente il video codificato a destra tra i vari bit rate video all&#39;interno del set video adattivo. Il video viene inviato in streaming a desktop, dispositivi mobili o tablet.
 
@@ -145,11 +145,11 @@ Per la gestione di set video singoli e di set video adattivi, sono supportati i 
 
 * sottotitoli video in tutti i visualizzatori video HTML5.
 * Organizza, sfoglia e cerca video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
-* Distribuire set video adattivi sul web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
+* Distribuire set video adattivi sul web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android™, BlackBerry® e Windows Phone.
 
 Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. Puoi trovare i dispositivi Blackberry che supportano questo formato video nel seguente sito: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. I dispositivi BlackBerry® che supportano questo formato video sono disponibili nel seguente sito: [Formati video supportati su BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 È possibile trovare i dispositivi Windows che supportano questo formato video nel seguente percorso: [Codec multimediali supportati per Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -239,17 +239,17 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 6 o precedente)</td>
+   <td>Chrome (Android™ 6 o precedente)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 7 o successivo)</td>
+   <td>Chrome (Android™ 7 o successivo)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Android (browser predefinito)</td>
+   <td>Android™ (browser predefinito)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Blackberry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -602,7 +602,7 @@ A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di inte
 1. Nella pagina Crea configurazione YouTube, seleziona Impostazioni piattaforma Google Cloud, quindi immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
    Hai specificato l’ID del progetto al momento della configurazione iniziale delle impostazioni di Google Cloud.
-Lascia aperta la pagina Crea configurazione YouTube; ritornerà su di esso tra un momento.
+Lascia aperta la pagina Crea configurazione YouTube; tra un momento, ritornerete su di esso.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -1038,7 +1038,7 @@ Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https:/
 
 1. Crea il componente TrackingManager facendo quanto segue:
 
-   * Dopo aver chiamato `s7sdk.Util.init();` crea un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
+   * Dopo aver chiamato `s7sdk.Util.init();`, crea un&#39;istanza TrackingManager per tenere traccia degli eventi aggiungendo quanto segue:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1211,7 +1211,7 @@ Consultare [WebVTT: Il formato Tracce testo video web](https://w3c.github.io/web
 
 Una miniatura video è una versione ridotta di un fotogramma video o di una risorsa immagine che rappresenta il video al cliente. La miniatura serve a incoraggiare un cliente a fare clic sul video.
 
-A tutti i video in Experience Manager deve essere associata una miniatura; non è possibile eliminare una miniatura senza sostituirla. Per impostazione predefinita, quando carichi un video in Experience Manager, il primo fotogramma viene utilizzato come miniatura. Tuttavia, puoi personalizzare la miniatura a scopo di branding o di ricerca visiva, ad esempio. Quando personalizzi una miniatura video, puoi riprodurre il video e metterlo in pausa sul fotogramma che desideri utilizzare oppure selezionare una risorsa immagine che hai già caricato e *pubblicata* nel tuo digital asset manager.
+A tutti i video in Experience Manager deve essere associata una miniatura; non è possibile eliminare una miniatura senza sostituirla. Per impostazione predefinita, quando carichi un video in Experience Manager, il primo fotogramma viene utilizzato come miniatura. Tuttavia, puoi personalizzare la miniatura a scopo di branding o di ricerca visiva, ad esempio. Quando personalizzi una miniatura video, puoi riprodurre il video e metterlo in pausa sul fotogramma che desideri usare. In alternativa, puoi selezionare una risorsa immagine che hai già caricato e *pubblicata* nel tuo digital asset manager.
 
 Un’immagine di miniatura video personalizzata selezionata da un video non viene estratta e salvata in DAM come risorsa separata e distinta. Tuttavia, una miniatura video personalizzata selezionata da una risorsa immagine esistente viene salvata nel JCR. Il percorso della risorsa selezionata viene memorizzato sotto il nodo della risorsa video, come nel seguente percorso di esempio:
 
