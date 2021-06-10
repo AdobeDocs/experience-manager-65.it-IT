@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
+source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
 workflow-type: tm+mt
-source-wordcount: '3874'
+source-wordcount: '3877'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * Supporto per un nuovo utente per aggiornare il token di accesso utilizzando un token di aggiornamento per il servizio di configurazione del mailer.
 
-* Supporto per il meccanismo [!DNL SMTP XOAUTH2] per il servizio di configurazione del mailer.
+* [Supporto per il meccanismo SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth) per il servizio di configurazione della posta.
 
 * Supporto per le versioni 4.2 e 4.4 di [!DNL MongoDB] .
 
