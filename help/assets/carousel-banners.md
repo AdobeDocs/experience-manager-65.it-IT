@@ -11,9 +11,9 @@ docset: aem65
 feature: Banner a carosello
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4740'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ I banner a carosello consentono agli addetti al marketing di guidare la conversi
 
 La creazione e la modifica dei contenuti contenuti contenuti nei banner promozionali può richiedere molto tempo, limitando la possibilità di pubblicare rapidamente nuovi contenuti o renderli più mirati. I banner a carosello consentono di creare o modificare rapidamente i banner rotanti. È possibile aggiungere interattività quali punti attivi che si collegano ai dettagli del prodotto o alle risorse correlate e consegnarli a qualsiasi schermo, consentendo di immettere nuovi contenuti promozionali sul mercato più rapidamente.
 
-I banner a carosello sono contrassegnati da un banner con la parola **[!UICONTROL CAROUSELSET]**:
+I banner a carosello sono contrassegnati da un banner con la parola **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ Segui una procedura dettagliata su [come vengono creati i banner a carosello](ht
 
 ## Avvio rapido: Banner a carosello {#quick-start-carousel-banners}
 
-Per farti iniziare a lavorare velocemente:
+Per iniziare a utilizzare i Banner carosello in tempi brevi:
 
 1. [Identificare le variabili di punti attivi e mappe immagine](#identifying-hotspot-and-image-map-variables)  (solo per i clienti che utilizzano Experience Manager Assets + Dynamic Media)
 
@@ -56,7 +56,7 @@ Per farti iniziare a lavorare velocemente:
 
    >[!NOTE]
    >
-   >Se sei un cliente Experience Manager Sites o e-commerce, puoi utilizzare la funzione integrata per passare alle pagine dei prodotti e cercare gli SKU esistenti nel catalogo dei prodotti. Non è necessario immettere manualmente le variabili punto attivo o mappa immagine. Consulta le informazioni sulla [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >Se sei un cliente di Experience Manager Sites o di e-commerce, puoi utilizzare la funzione integrata per passare alle pagine dei prodotti e cercare gli SKU esistenti (Stock Keeping Unit) nel catalogo dei prodotti. Non è necessario immettere manualmente le variabili punto attivo o mappa immagine. Consulta le informazioni sulla [configurazione di eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Se sei un cliente di Experience Manager Assets e Dynamic Media, immetti manualmente i dati per gli hotspot e le mappe immagine, e quindi integra l’URL pubblicato o il codice da incorporare con il tuo sistema di gestione dei contenuti di terze parti.
