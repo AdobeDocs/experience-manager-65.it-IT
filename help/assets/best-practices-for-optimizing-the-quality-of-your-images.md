@@ -10,7 +10,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 6%
@@ -81,10 +81,10 @@ Sono disponibili due metodi di nitidezza delle immagini:
 
 Come best practice, inizia con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio che puoi iniziare sono le seguenti:
 
-* **[!UICONTROL Sito Web]**: 0,2-0,3 pixel
-* **[!UICONTROL Stampa fotografica (250-300 ppi)]**: 0,3-0,5 pixel
-* **[!UICONTROL Stampa offset (266-300 ppi)]**: 0,7-1,0 pixel
-* **[!UICONTROL Stampa su tela (150 ppi)]**: 1,5-2,0 pixel
+* **[!UICONTROL Sito web]**  - 0.2-0.3 pixel
+* **[!UICONTROL Stampa fotografica (250-300 ppi)]**  - 0,3-0,5 pixel
+* **[!UICONTROL Stampa offset (266-300 ppi)]**  - 0,7-1,0 pixel
+* **[!UICONTROL Stampa su tela (150 ppi)]**  - 1,5-2,0 pixel
 
 Aumentare gradualmente l&#39;importo da 1,75 a 4. Se la nitidezza non è ancora quella desiderata, aumenta il raggio di un punto decimale ed esegui di nuovo il valore da 1,75 a 4. Ripeti se necessario.
 
