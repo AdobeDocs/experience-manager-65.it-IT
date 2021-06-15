@@ -12,20 +12,20 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefiniti immagini
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '3831'
-ht-degree: 10%
+source-wordcount: '3853'
+ht-degree: 8%
 
 ---
 
 # Gestione dei predefiniti immagine Dynamic Media{#managing-image-presets}
 
-I predefiniti per immagini consentono ad AEM Assets di distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Ogni predefinito per immagini rappresenta un insieme predefinito di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito per immagini, scegli una dimensione per la distribuzione delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine sia ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
+I predefiniti per immagini consentono ad Adobe Experience Manager Assets di distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Ogni predefinito per immagini rappresenta un insieme predefinito di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito per immagini, scegli una dimensione per la distribuzione delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine sia ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
 
-Gli amministratori possono creare predefiniti per l’esportazione delle risorse. Gli utenti possono scegliere un predefinito quando esportano le immagini, che riformatta anche le immagini in base alle specifiche specificate dall’amministratore.
+Gli amministratori possono creare predefiniti per l’esportazione delle risorse. Gli utenti possono scegliere un predefinito al momento dell’esportazione delle immagini, che riformatta anche le immagini in base alle specifiche specificate dall’amministratore.
 
-Puoi anche creare predefiniti immagine reattivi. Se applichi un predefinito immagine reattiva alle risorse, questo cambia a seconda del dispositivo o della dimensione dello schermo su cui vengono visualizzate. È possibile configurare i predefiniti immagine per l’utilizzo di CMYK nello spazio colore, oltre a RGB o Grigio.
+Puoi anche creare predefiniti immagine reattivi. Se applichi un predefinito immagine reattiva alle risorse, questo cambia a seconda del dispositivo o delle dimensioni dello schermo su cui vengono visualizzate. È possibile configurare i predefiniti immagine per l’utilizzo di CMYK nello spazio colore, oltre a RGB o Grigio.
 
 Questa sezione descrive come creare, modificare e gestire in genere i predefiniti per immagini. È possibile applicare un predefinito immagine a un&#39;immagine in qualsiasi momento in cui viene visualizzata in anteprima. Consulta [Applicazione dei predefiniti per immagini](/help/assets/image-presets.md).
 
@@ -35,13 +35,13 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 
 ## Informazioni sui predefiniti immagine Dynamic Media {#understanding-image-presets}
 
-Come una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponiamo che il tuo sito web richieda che ogni immagine del prodotto venga visualizzata in dimensioni diverse, in formati diversi e nei tassi di compressione per la distribuzione desktop e mobile.
+Come una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponiamo che il sito web richieda che ogni immagine del prodotto venga visualizzata in dimensioni diverse, in formati diversi e con tassi di compressione per la distribuzione desktop e mobile.
 
 >[!NOTE]
 >
 >In modalità Dynamic Media - Scene7, i predefiniti immagine sono supportati solo per le risorse immagine.
 
-Puoi creare due predefiniti immagine: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. È possibile creare due predefiniti per immagini, uno denominato `Enlarge` per visualizzare le immagini a 500x500 pixel e uno chiamato `Thumbnail` per visualizzare le immagini a 150 x 150 pixel. Per fornire immagini con le dimensioni `Enlarge` e `Thumbnail`, AEM cerca la definizione di Ingrandisci predefinito immagine e Predefinito immagine miniatura. Quindi AEM genera in modo dinamico un&#39;immagine alle specifiche di dimensione e formattazione di ogni predefinito immagine.
+Puoi creare due predefiniti immagine: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. È possibile creare due predefiniti per immagini, uno denominato `Enlarge` per visualizzare le immagini a 500x500 pixel e uno chiamato `Thumbnail` per visualizzare le immagini a 150 x 150 pixel. Per fornire immagini con le dimensioni `Enlarge` e `Thumbnail`, Experience Manager cerca la definizione di Ingrandisci predefinito immagine e Predefinito immagine miniatura. Quindi, Experience Manager genera in modo dinamico un&#39;immagine con le specifiche di dimensione e formattazione di ciascun predefinito per immagini.
 
 Le immagini a dimensioni ridotte quando vengono consegnate in modo dinamico possono perdere nitidezza e dettagli. Per questo motivo, ogni predefinito per immagini contiene controlli di formattazione per l’ottimizzazione di un’immagine quando viene distribuita con una particolare dimensione. Questi controlli assicurano che le immagini siano nitide e chiare quando vengono inviate al sito Web o all&#39;applicazione.
 
@@ -49,7 +49,7 @@ Gli amministratori possono creare i predefiniti per immagini. Per creare un pred
 
 ## Gestione dei predefiniti immagine Dynamic Media {#managing-image-presets-1}
 
-Per gestire i predefiniti immagine in AEM, tocca o fai clic sul logo AEM per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse > Predefiniti immagini]**.
+Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti , infine passa a **[!UICONTROL Risorse > Predefiniti immagine]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -73,18 +73,18 @@ Per gestire i predefiniti immagine in AEM, tocca o fai clic sul logo AEM per acc
 >
 >Questo argomento è applicabile solo alla modalità ibrida di Dynamic Media.
 
-Se si desidera supportare l’acquisizione di file AI, EPS e PDF in modo da poter generare rappresentazioni dinamiche di questi formati di file, è consigliabile consultare le informazioni seguenti prima di creare i predefiniti per immagini.
+Se desideri supportare l’acquisizione di file AI, EPS e PDF in modo da poter generare rappresentazioni dinamiche di questi formati di file, controlla le seguenti informazioni prima di creare i predefiniti per immagini.
 
-Il formato di file Adobe Illustrator è una variante di PDF. Le principali differenze nel contesto di AEM Assets sono le seguenti:
+Il formato di file Adobe Illustrator è una variante di PDF. Le principali differenze, nel contesto dell’attività di Experience Manager, sono le seguenti:
 
 * I documenti Adobe Illustrator sono costituiti da una singola pagina con più livelli. Ogni livello viene estratto come risorsa secondaria PNG sotto la risorsa principale Illustrator.
-* I documenti PDF sono costituiti da una o più pagine. Ogni pagina viene estratta come risorsa singola PDF sotto il documento PDF principale con più pagine.
+* I documenti PDF sono costituiti da una o più pagine. Ogni pagina viene estratta come una risorsa PDF a pagina singola sotto il documento PDF principale con più pagine.
 
 Le risorse secondarie vengono create dal componente `Create Sub Asset process` all’interno del flusso di lavoro complessivo `DAM Update Asset`. Per visualizzare questo componente del processo all&#39;interno del flusso di lavoro, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
 
 Vedere anche [Visualizzazione di pagine di un file multipagina](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-Puoi visualizzare le risorse secondarie o le pagine quando apri la risorsa, toccare il menu Contenuto e selezionare **[!UICONTROL Risorse secondarie]** o **[!UICONTROL Pagine]**. Le attività secondarie sono attività reali. In altre parole, le pagine PDF sono estratte dal componente del flusso di lavoro `Create Sub Asset` . Vengono quindi memorizzati come `page1.pdf`, `page2.pdf` e così via sotto la risorsa principale. Una volta memorizzati, il flusso di lavoro `DAM Update Asset` li elabora.
+Puoi visualizzare le risorse secondarie o le pagine quando apri la risorsa, toccare il menu Contenuto e selezionare **[!UICONTROL Risorse secondarie]** o **[!UICONTROL Pagine]**. Le risorse secondarie sono risorse reali. In altre parole, le pagine PDF sono estratte dal componente del flusso di lavoro `Create Sub Asset` . Vengono quindi memorizzati come `page1.pdf`, `page2.pdf` e così via, sotto la risorsa principale. Una volta memorizzati, il flusso di lavoro `DAM Update Asset` li elabora.
 
 Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per file AI, EPS o PDF, sono necessari i seguenti passaggi di elaborazione:
 
@@ -147,15 +147,15 @@ Utilizzando gli argomenti di processo predefiniti, la prima pagina di un documen
 
 Larghezza massima e Altezza massima limitano la risoluzione a cui rasterizzare. Ad esempio, se i valori massimi sono invariati e la risoluzione è impostata su 300 ppi, un documento Lettera USA viene rasterizzato a 186 ppi. Cioè, il documento è di 1581 x 2046 pixel.
 
-Il componente di processo `Rasterize PDF/AI Image Preview Rendition` ha un valore massimo definito per garantire che non crei immagini troppo grandi nella memoria. Immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ognuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
+Il componente di processo `Rasterize PDF/AI Image Preview Rendition` ha un valore massimo definito per garantire che non crei immagini troppo grandi nella memoria. Immagini di grandi dimensioni possono sovraccaricare la memoria fornita alla JVM (Java™ Virtual Machine). È necessario prestare attenzione a fornire alla JVM memoria sufficiente per gestire il numero configurato di flussi di lavoro paralleli, ognuno dei quali ha il potenziale per creare un&#39;immagine alle dimensioni massime configurate.
 
 ### Formato di file InDesign (INDD) {#indesign-indd-file-format}
 
 Se si desidera supportare l’acquisizione di file INDD in modo da poter generare il rendering dinamico di questo formato di file, prima di creare i predefiniti per immagini è possibile esaminare le seguenti informazioni.
 
-Per i file InDesign, le risorse secondarie vengono estratte solo se il server Adobe InDesign è integrato con AEM. Le risorse di riferimento sono collegate in base ai relativi metadati. InDesign Server non è necessario per il collegamento. Tuttavia, le risorse di riferimento devono essere presenti in AEM prima che i file InDesign vengano elaborati affinché i collegamenti possano essere creati tra i file InDesign e le risorse di riferimento.
+Per i file InDesign, le risorse secondarie vengono estratte solo se Adobe InDesign Server è integrato con Experience Manager. Le risorse di riferimento sono collegate in base ai relativi metadati. InDesign Server non è necessario per il collegamento. Tuttavia, le risorse a cui si fa riferimento devono essere presenti in Experience Manager prima che i file InDesign vengano elaborati affinché i collegamenti possano essere creati tra i file InDesign e le risorse a cui si fa riferimento.
 
-Consulta [Integrazione di AEM Assets con InDesign Server](/help/assets/indesign.md).
+Consulta [Integrazione di risorse di Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 Il componente Processo di estrazione file multimediali nel flusso di lavoro `DAM Update Asset` esegue diversi script di estensione preconfigurati per elaborare i file InDesign.
 
@@ -168,7 +168,7 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
 <table>
  <tbody>
   <tr>
-   <td><strong>Estendi nome script</strong></td>
+   <td><strong>Nome ExtendScript</strong></td>
    <td><strong>Predefiniti</strong></td>
    <td><strong>Descrizione</strong></td>
   </tr>
@@ -192,24 +192,24 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
 
 ## Configurazione della dimensione della miniatura dell’immagine {#configuring-image-thumbnail-size}
 
-Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se una (**[!UICONTROL Risorse di immagine di processo di Dynamic Media]**) viene utilizzata per le risorse di immagini dinamiche e l&#39;altra (**[!UICONTROL Miniature di processo]**) per la generazione di miniature statiche o quando tutti gli altri processi non generano miniature, *entrambe* devono avere le stesse impostazioni.
+Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se una (**[!UICONTROL Risorse di immagine di processo Dynamic Media]**) viene utilizzata per le risorse di immagini dinamiche e l&#39;altra (**[!UICONTROL Miniature di processo]**) per la generazione di miniature statiche, o quando tutti gli altri processi non riescono a generare miniature, *entrambe* devono avere le stesse impostazioni.
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL width:height:center]**, ad esempio *80:80:false*. La larghezza e l&#39;altezza determinano le dimensioni in pixel della miniatura; il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL width:height:center]**, ad esempio *80:80:false*. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >
->* Le dimensioni delle miniature per i file EPS sono configurate nel passaggio **[!UICONTROL Miniature EPS]**, cui si accede selezionando la scheda **[!UICONTROL Argomenti]** della sezione Miniature.
+>* Le dimensioni delle miniature per i file EPS sono configurate nel passaggio **[!UICONTROL Miniature EPS]**, nella scheda **[!UICONTROL Argomenti]** sotto Miniature.
    >
    >
-* Le dimensioni delle miniature per i video sono configurate nel passaggio **[!UICONTROL Miniature FFmpeg]**, nella scheda **[!UICONTROL Processo]** di **[!UICONTROL Argomenti]**.
+* Le dimensioni delle miniature per i video sono configurate nel passaggio **[!UICONTROL Miniature FFmpeg]** , nella scheda **[!UICONTROL Processo]** in **[!UICONTROL Argomenti]**.
 
 >
 
 
 
-**Per configurare le dimensioni** delle miniature delle immagini:
+**Per configurare le dimensioni delle miniature delle immagini:**
 
 1. Tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
 1. Tocca il passaggio **[!UICONTROL Risorse immagine di processo Dynamic Media]** e tocca o fai clic sulla scheda **[!UICONTROL Miniature]** . Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
@@ -226,9 +226,9 @@ Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTR
 
 ### Aumento o riduzione del numero di predefiniti immagine Dynamic Media visualizzati {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche quando visualizzi in anteprima le risorse. AEM mostra diverse rappresentazioni dinamiche quando visualizzi una risorsa da **[!UICONTROL Vista dettagli > Rendering]**. Puoi aumentare o diminuire il limite di rappresentazioni visualizzate.
+I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche quando visualizzi in anteprima le risorse. L&#39;Experience Manager mostra varie rappresentazioni dinamiche quando si visualizza una risorsa da **[!UICONTROL Vista dettagli > Rendering]**. Puoi aumentare o diminuire il limite di rappresentazioni visualizzate.
 
-**Per aumentare o diminuire il numero di predefiniti immagine di Dynamic Media visualizzati**:
+**Per aumentare o diminuire il numero di predefiniti immagine di Dynamic Media visualizzati:**
 
 1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo di elenco dei predefiniti immagine in `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -251,7 +251,7 @@ La creazione di un predefinito per immagini Dynamic Media consente di applicare 
 >
 >Se si utilizza Internet Explorer 9, la creazione di un predefinito non viene visualizzata nell’elenco dei predefiniti subito dopo il salvataggio. Per risolvere questo problema, disattiva la cache per IE9.
 
-Se si desidera supportare l’acquisizione di file AI, PDF ed EPS in modo da poter generare il rendering dinamico di questi formati di file, è consigliabile consultare le informazioni seguenti prima di creare i predefiniti per immagini.
+Se desideri supportare l’acquisizione di file AI, PDF ed EPS in modo da poter generare il rendering dinamico di questi formati di file, controlla le seguenti informazioni prima di creare i predefiniti per immagini.
 Consulta [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se si desidera supportare l’acquisizione di file INDD in modo da poter generare il rendering dinamico di questo formato di file, prima di creare i predefiniti per immagini è possibile esaminare le seguenti informazioni.
@@ -259,11 +259,11 @@ Vedere [Formato del file InDesign (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Per creare i predefiniti immagine di Dynamic Media, devi disporre dei privilegi di amministratore come amministratore AEM o amministratore di Admin Console.
+>Per creare i predefiniti immagine di Dynamic Media, devi disporre dei privilegi di amministratore come amministratore di Experience Manager o amministratore di Admin Console.
 
-**Per creare un predefinito** immagine Dynamic Media:
+**Per creare un predefinito immagine Dynamic Media:**
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti > Risorse > Predefiniti immagini]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito immagine]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -282,7 +282,7 @@ Vedere [Formato del file InDesign (INDD)](#indesign-indd-file-format).
 
 Per creare un predefinito per immagini reattive, esegui i passaggi descritti in [Creazione di predefiniti immagine](#creating-image-presets). Quando immetti l&#39;altezza e la larghezza nella finestra **[!UICONTROL Modifica predefinito immagine]**, cancella i valori e lasciali vuoti.
 
-Lasciandoli vuoti indica AEM che questo predefinito per immagini è reattivo. Se necessario, puoi regolare gli altri valori.
+Lasciandoli vuoti, indica ad Experience Manager che questo predefinito per immagini è reattivo. Se necessario, puoi regolare gli altri valori.
 
 
 
@@ -316,7 +316,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
   </tr>
   <tr>
    <td><strong>Nome</strong></td>
-   <td>Inserisci un nome descrittivo senza spazi vuoti. Includi nel nome le dimensioni immagine per aiutare gli utenti a identificare questo predefinito immagine.</td>
+   <td>Inserisci un nome descrittivo senza spazi vuoti. Includi nel nome la specifica delle dimensioni dell’immagine in modo che gli utenti possano identificare questo predefinito per immagini.</td>
   </tr>
   <tr>
    <td><strong>Larghezza e Altezza</strong></td>
@@ -338,7 +338,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
     <ul>
      <li><strong>Tipo  </strong>: seleziona  <strong>Adattivo</strong>  (opzione predefinita),  <strong>Web</strong> o  <strong>Macintosh</strong>. Se si seleziona <strong>GIF con Alpha</strong>, l'opzione Macintosh non è disponibile.</li>
      <li><strong>Dither</strong>  - Seleziona  <strong></strong> Diffusore o  <strong>Disattivato</strong>.</li>
-     <li><strong>Numero di colori  </strong>- Immettere un numero compreso tra 2 e 256.</li>
+     <li><strong>Numero di colori  </strong>- Immettere un numero da 2 a 256.</li>
      <li><strong>Elenco colori</strong>  - Inserisci un elenco separato da virgole. Ad esempio, per bianco, grigio e nero, immetti 00000,888888,ffff.</li>
     </ul>
     <div>
@@ -348,7 +348,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
      <strong>TIFF con alfa</strong> fornisce questa opzione aggiuntiva:
     </div>
     <ul>
-     <li><strong>Compressione</strong>  - Seleziona un algoritmo di compressione. Le opzioni dell'algoritmo per i PDF sono <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; per i TIFF sono <strong>Nessuno</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e per TIFF con Alpha sono <strong>Nessuno</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
+     <li><strong>Compressione</strong>  - Seleziona un algoritmo di compressione. Le opzioni dell'algoritmo per i PDF sono <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; per TIFF le opzioni sono <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e per TIFF con Alpha sono <strong>Nessuno</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
     </ul> <p>La scelta di <strong>PNG</strong>, <strong>PNG con Alpha,</strong> o <strong>EPS</strong> non fornisce opzioni aggiuntive.</p> </td>
   </tr>
   <tr>
@@ -379,7 +379,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
    <td>È possibile ignorare l'intento di rendering predefinito. Gli intenti di rendering determinano cosa succede ai colori che non possono essere riprodotti nel profilo del colore di destinazione (fuori gamma). L’Intento di rendering viene ignorato se non è compatibile con il profilo ICC.
     <ul>
      <li>Selezionare <strong>Perceptual</strong> per comprimere la gamma totale da uno spazio colore a un altro spazio colore quando uno o più colori nell'immagine originale non rientrano nella gamma dello spazio colore di destinazione.</li>
-     <li>Selezionare <strong>Colorimetrico relativo</strong> quando un colore nello spazio colore corrente è fuori gamma nello spazio colore di destinazione e si desidera mapparlo al colore più vicino possibile all'interno della gamma dello spazio colore di destinazione senza influenzare altri colori. </li>
+     <li>Selezionare <strong>Colorimetrico relativo</strong> quando un colore nello spazio colore corrente non rientra nell'intervallo di colori di destinazione. Inoltre, è possibile mapparlo al colore più vicino possibile all'interno della gamma dello spazio colore di destinazione senza influire su altri colori. </li>
      <li>Selezionare <strong>Saturazione</strong> per riprodurre la saturazione del colore dell'immagine originale durante la conversione nello spazio colore di destinazione. </li>
      <li>Selezionare <strong>Colorimetrico assoluto</strong> per abbinare esattamente i colori senza alcuna regolazione per il punto bianco o il punto nero che alteri la luminosità dell'immagine.</li>
     </ul> </td>
@@ -396,8 +396,8 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
    <td><strong>Tipo di nitidezza</strong></td>
    <td><p>Selezionare <strong>Nessuno</strong>, <strong>Nitidezza</strong> o <strong>Maschera definizione dettagli</strong>. </p>
     <ul>
-     <li>Selezionare <strong>None</strong> per disabilitare la nitidezza.</li>
-     <li>Selezionare <strong>Nitidezza </strong>per applicare all'immagine un filtro di nitidezza di base dopo che è stata effettuata la modifica in scala. La nitidezza può contribuire a compensare la sfocatura che può verificarsi quando si visualizza un'immagine con dimensioni diverse. </li>
+     <li>Selezionare <strong>Nessuno</strong> per disattivare la nitidezza.</li>
+     <li>Selezionare <strong>Nitidezza</strong> se si desidera applicare all'immagine un filtro di nitidezza di base dopo che è stata effettuata la modifica in scala. La nitidezza può contribuire a compensare la sfocatura che può verificarsi quando si visualizza un'immagine con dimensioni diverse. </li>
      <li>Seleziona<strong> Maschera definizione dettagli</strong> per regolare con precisione un effetto filtro di nitidezza sull'immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li>
     </ul> <p>In <strong>Maschera definizione dettagli</strong> sono disponibili le seguenti opzioni:</p>
     <ul>
@@ -451,7 +451,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
 
 >[!NOTE]
 >
->Alcuni modificatori di immagini [non possono essere utilizzati in AEM](#advanced-tab-options).
+>Alcuni modificatori di immagini [non possono essere utilizzati in Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api)  - Inverte ogni componente del colore per ottenere un effetto immagine negativo.
 
@@ -495,12 +495,12 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
 
 ## Modifica dei predefiniti per immagini {#modifying-image-presets}
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
+1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Seleziona un predefinito e fai clic su **[!UICONTROL Modifica]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito immagine]**.
-1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle o su **[!UICONTROL Annulla]** per annullare le modifiche.
+1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle oppure su **[!UICONTROL Annulla]** per annullare le modifiche.
 
 ## Pubblicazione dei predefiniti immagine Dynamic Media {#publishing-image-presets}
 
@@ -508,9 +508,9 @@ Se esegui Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predef
 
 (Se esegui la modalità Dynamic Media - Scene7, i predefiniti immagine vengono pubblicati automaticamente; non è necessario completare questi passaggi.)
 
-**Per pubblicare i predefiniti immagine in Dynamic Media - Modalità** ibrida:
+**Per pubblicare i predefiniti immagine in Dynamic Media - Modalità ibrida:**
 
-1. In AEM, tocca o fai clic sul logo AEM per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
+1. Ad Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 1. Seleziona il predefinito per immagini o più predefiniti immagine dall’elenco dei predefiniti per immagini e tocca o fai clic su **[!UICONTROL Pubblica]**.
 1. Dopo la pubblicazione del predefinito immagine, lo stato cambia da non pubblicato a pubblicato.
 
@@ -518,6 +518,6 @@ Se esegui Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predef
 
 ## Eliminazione dei predefiniti immagine Dynamic Media {#deleting-image-presets}
 
-1. Ad Experience Manager, tocca o fai clic sul logo AEM per accedere alla console di navigazione globale.
+1. Ad Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale.
 1. Tocca l’icona **[!UICONTROL Strumenti]**, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
 1. Seleziona un predefinito, quindi fai clic su **[!UICONTROL Elimina]**. Dynamic Media conferma che si desidera eliminarlo. Tocca **[!UICONTROL Elimina]** per eliminare o toccare **[!UICONTROL Annulla]** per interrompere l&#39;operazione.
