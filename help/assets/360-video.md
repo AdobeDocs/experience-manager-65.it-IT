@@ -11,7 +11,7 @@ docset: aem65
 feature: Video VR a 360°
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -82,8 +82,8 @@ Per impostazione predefinita, Experience Manager rileva il video come &quot;360&
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo** di proprietà: Doppio
-   * **Valore**: rapporto di formato a virgola mobile, predefinito 2.0.
+   * **Tipo di proprietà**  - Doppio
+   * **Valore** : rapporto di formato a virgola mobile, predefinito 2.0.
 
 Dopo aver impostato questa proprietà, essa ha effetto immediatamente sia sui video esistenti che sui video appena caricati.
 
