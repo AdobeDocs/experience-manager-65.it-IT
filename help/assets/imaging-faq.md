@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestione risorse, rappresentazioni
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 1%
@@ -220,7 +220,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 1. L’Assistenza clienti di Adobe ti aggiunge all’elenco di attesa del cliente Smart imaging in base all’ordine in cui sono state inviate le richieste.
 1. Quando Adobe è pronto per gestire la richiesta, è necessario contattare il supporto per coordinare e impostare una data di destinazione.
-1. **Facoltativo**: Facoltativamente, puoi testare l’imaging intelligente in Staging prima che Adobe introduca la nuova funzione in produzione.
+1. **Facoltativo**  - È possibile testare l’imaging intelligente in Staging prima che Adobe introduca la nuova funzione in produzione.
 1. Dopo il completamento, riceverai una notifica dall’Assistenza clienti.
 1. Per ottimizzare le prestazioni dell’imaging avanzato, Adobe consiglia di impostare il valore TTL (Time To Live) a 24 ore o più. Il TTL definisce per quanto tempo le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
