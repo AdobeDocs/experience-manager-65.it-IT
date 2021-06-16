@@ -4,7 +4,7 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
+source-git-commit: 0ed031e8be43633caf6d9916542b6650e3dfd327
 workflow-type: tm+mt
 source-wordcount: '3857'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 | Versione | 6.5.9.0 |
 | Tipo | Versione Service Pack |
 | Data | 27 maggio 2021 |
-| URL di download | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
+| URL di download | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
 ## Contenuto in [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
 
@@ -384,7 +384,7 @@ Per installare il service pack su un&#39;istanza [!DNL Adobe Experience Manager]
 
 1. Prima di installare, scegli uno snapshot o un nuovo backup dell&#39;istanza [!DNL Experience Manager].
 
-1. Scarica il service pack da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip).
+1. Scarica il service pack da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip).
 
 1. Apri Gestione pacchetti e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo. Per ulteriori informazioni, consulta [Gestione pacchetti](/help/sites-administering/package-manager.md).
 
