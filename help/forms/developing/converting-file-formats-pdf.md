@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7913'
+source-wordcount: '7911'
 ht-degree: 0%
 
 ---
-
 
 # Conversione tra formati di file e PDF {#converting-between-file-formatsand-pdf}
 
@@ -851,7 +850,7 @@ Se si crea uno script per un&#39;applicazione nativa non supportata in precedenz
 
 >[!NOTE]
 >
->In questo contesto, il termine aggiuntivo indica il contenuto del file `appmon.[applicationname].addition.[locale]`.xml`. Tale file specifica le sostituzioni e le aggiunte al file XML della finestra di dialogo.
+>In questo contesto, il termine aggiuntivo indica il contenuto del file `appmon.[applicationname].addition.[locale].xml`. Tale file specifica le sostituzioni e le aggiunte al file XML della finestra di dialogo.
 
 È inoltre possibile modificare il file XML della finestra di dialogo aggiuntivo per un&#39;applicazione nativa per i seguenti scopi:
 
@@ -1146,4 +1145,3 @@ Questo esempio specifica come il servizio Generate PDF deve interagire con Notep
     <abortMessage msg="15078"/>
 </application>
 ```
-
