@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-feature: Content Fragments
+feature: Frammenti di contenuto
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
-
 
 # Markdown{#markdown}
 
@@ -175,7 +174,7 @@ Il testo in grassetto può essere visualizzato come segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Per indicare un’estensione di codice, inseriscila con virgolette di zecca (`). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
+Per indicare un intervallo di codice, inseriscilo con virgolette di backtick (&amp;grave;). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
 
 Esempio:
 
@@ -218,4 +217,3 @@ Gli escape delle barre rovesciate sono disponibili per i seguenti caratteri:
     ` - minus sign (hyphen)`
 
     ` . dot`
-
