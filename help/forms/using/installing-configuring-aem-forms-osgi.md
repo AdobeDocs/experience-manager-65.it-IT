@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1907'
 ht-degree: 4%
 
 ---
-
 
 # Installare e configurare le funzionalità di acquisizione dati{#install-and-configure-data-capture-capabilities}
 
@@ -192,7 +191,7 @@ Dispatcher è uno strumento di caching e/o bilanciamento del carico Adobe Experi
 
 1. Configura il servizio filtro referrer:
 
-   Accedi al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **Configurazioni**, seleziona l&#39;opzione **Filtro di riferimento Apache Sling** . Nel campo Consenti host , immetti il nome host del dispatcher per consentirlo come referrer e fai clic su **Salva**. Il formato della voce è &#39;https://[server]:[port]&#39;.
+   Accedi al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **Configurazioni**, seleziona l&#39;opzione **Filtro di riferimento Apache Sling** . Nel campo Consenti host , immetti il nome host del dispatcher per consentirlo come referrer e fai clic su **Salva**. Il formato della voce è `https://[server]:[port]`.
 
 #### Configura la cache {#configure-cache}
 
@@ -243,4 +242,3 @@ Hai configurato un ambiente per utilizzare le funzionalità di acquisizione dati
 * [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md)
 * [Creare il primo modulo PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introduzione a HTML5 Forms](/help/forms/using/introduction.md)
-
