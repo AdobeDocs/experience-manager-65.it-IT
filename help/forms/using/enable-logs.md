@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
-feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Forms Mobile
+exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 6%
 
 ---
-
 
 # Abilita la registrazione per i moduli HTML5{#enable-logging-for-html-forms}
 
@@ -53,7 +52,7 @@ Per abilitare la registrazione lato client nei moduli HTML5 è possibile utilizz
 
 ### Abilitazione della registrazione utilizzando il parametro di richiesta {#enabling-logging-using-request-parameter}
 
-Utilizzando questo metodo, puoi generare registri per una particolare richiesta. Il nome del parametro della richiesta è `log. L’URL del registro è il seguente:
+Utilizzando questo metodo, puoi generare registri per una particolare richiesta. Il nome del parametro della richiesta è `log`. L’URL del registro è il seguente:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
