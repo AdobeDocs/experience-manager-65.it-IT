@@ -1,12 +1,11 @@
 ---
 title: Configurare i plug-in Editor Rich Text
-description: Scopri come configurare i plug-in di Adobe Experience Manager Rich Text Editor per abilitare singole funzionalità.
+description: Scopri come configurare i plug-in dell’editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,7 @@ Per informazioni dettagliate sulle altre configurazioni dell’editor Rich Text,
 >
 >Quando si lavora con CRXDE Lite, è consigliabile salvare regolarmente le modifiche utilizzando l&#39;opzione [!UICONTROL Salva tutto].
 
-## Attivare un plug-in e configurare la proprietà funzionalità {#activateplugin}
+## Attivare un plug-in e configurare la proprietà features {#activateplugin}
 
 Per attivare un plug-in, effettua le seguenti operazioni. Alcuni passaggi sono necessari solo quando configuri un plug-in per la prima volta, in quanto i nodi corrispondenti non esistono.
 
@@ -118,7 +117,7 @@ La configurazione consente i seguenti tre tipi di casi d’uso:
    * **Tipo** `String`
    * **** ValueUna delle modalità di incolla richieste  `browser`,  `plaintext` o  `wordhtml`.
 
-### Configura i formati consentiti quando incolli contenuti {#pasteformats}
+### Configurare i formati consentiti per incollare il contenuto {#pasteformats}
 
 È possibile configurare ulteriormente la modalità incolla-come-Microsoft-Word (`paste-wordhtml`) in modo da poter definire in modo esplicito gli stili consentiti quando si incollano AEM da un altro programma, ad esempio Microsoft Word.
 
@@ -244,7 +243,7 @@ Per configurazioni successive, ad esempio per aggiungere altri stili, seguire so
 >
 >È inoltre possibile definire gli stili per le tabelle o le celle di tabella ](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). [ Queste configurazioni richiedono procedure separate.
 
-### Abilita l’elenco a discesa Stile del selettore {#styleselectorlist}
+### Attiva l’elenco a discesa Stile {#styleselectorlist}
 
 A questo scopo, abilita il plug-in Stili.
 
@@ -339,7 +338,7 @@ Per creare lo stile che gli autori possono applicare al testo giapponese, effett
 
 1. Crea un nuovo nodo sotto il nodo degli stili. Vedere [specificare un nuovo stile](#stylesindropdown).
    * Nome: `jpn-word-wrap`
-   * Tipo: `nt:unstructure
+   * Tipo: `nt:unstructure`
 
 1. Aggiungi la proprietà `cssName` al nodo per fare riferimento alla classe CSS. Questo nome di classe è un nome riservato per la funzione di ritorno a capo automatico in giapponese.
    * Nome: `cssName`
@@ -407,7 +406,7 @@ Se il plug-in non è configurato ulteriormente, vengono abilitati i seguenti for
 >[!CAUTION]
 Durante la configurazione dei formati di paragrafo dell’editor Rich Text, non rimuovere il tag paragrafo &lt;p> come opzione di formattazione. Se il tag `<p>` viene rimosso, l’autore del contenuto non può selezionare l’opzione **Formati di paragrafo** anche se sono configurati altri formati.
 
-### Specifica i formati paragrafo disponibili {#paraformatsindropdown}
+### Specificare i formati paragrafo disponibili {#paraformatsindropdown}
 
 I formati paragrafo possono essere resi disponibili per la selezione:
 
@@ -582,7 +581,7 @@ Le tabelle copiate e incollate nel componente RTE o dal componente RTE dipendono
 
 Ripeti i passaggi precedenti per ogni stile richiesto.
 
-### Configurare intestazioni nascoste nelle tabelle per l&#39;accessibilità {#hiddenheader}
+### Configurare intestazioni nascoste nelle tabelle per l’accessibilità {#hiddenheader}
 
 A volte è possibile creare tabelle di dati senza testo visivo in un’intestazione di colonna, partendo dal presupposto che lo scopo dell’intestazione sia determinato dalla relazione visiva della colonna con altre colonne. In questo caso, è necessario fornire un testo interno nascosto all’interno della cella di intestazione per consentire agli assistenti vocali e altre tecnologie per l’accessibilità di comprendere lo scopo della colonna.
 
@@ -628,7 +627,7 @@ Un&#39;installazione standard AEM include i dizionari per inglese americano (`en
 Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare del testo. Per eseguire il controllo ortografico, fai clic su [!UICONTROL Controllo ortografia] nella barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
 Se si incorpora una modifica suggerita dal controllo ortografia, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, toccare/fare di nuovo clic sul pulsante Controllo ortografia.
 
-## Configura le dimensioni della cronologia per le azioni di annullamento e ripristino {#undohistory}
+## Configurare le dimensioni della cronologia per le azioni di annullamento e ripristino {#undohistory}
 
 L’editor Rich Text consente agli autori di annullare o ripristinare alcune ultime modifiche. Per impostazione predefinita, nella cronologia sono memorizzate 50 modifiche. Puoi configurare questo valore come necessario.
 
@@ -641,7 +640,7 @@ L’editor Rich Text consente agli autori di annullare o ripristinare alcune ult
 
 1. Salva le modifiche.
 
-## Configura la dimensione della scheda {#tabsize}
+## Configurare le dimensioni della scheda {#tabsize}
 
 Quando si preme il carattere di tabulazione all’interno di un testo, viene inserito un numero predefinito di spazi; per impostazione predefinita sono presenti tre spazi unificatori e uno spazio.
 
@@ -656,7 +655,7 @@ Per definire la dimensione della scheda:
 
 1. Salva le modifiche.
 
-## Imposta il margine di rientro {#indentmargin}
+## Imposta margine di rientro {#indentmargin}
 
 Quando il rientro è abilitato (impostazione predefinita), è possibile definire le dimensioni del rientro:
 
@@ -670,7 +669,7 @@ Questa dimensione del rientro è applicata solo ai paragrafi (blocchi) di testo;
    * **Tipo**: `Long`
    * **Valore**: numero di pixel richiesti per il margine di rientro.
 
-## Configura l&#39;altezza dello spazio modificabile {#editablespace}
+## Configurare l’altezza dello spazio modificabile {#editablespace}
 
 >[!NOTE]
 Questa opzione è applicabile solo quando si utilizza l’editor Rich Text in una finestra di dialogo (non per la modifica locale nell’interfaccia classica).
