@@ -5,10 +5,9 @@ contentOwner: AG
 role: Business Practitioner,Administrator
 feature: Metadati
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-translation-type: tm+mt
-source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3547'
 ht-degree: 7%
 
 ---
@@ -54,7 +53,7 @@ Per visualizzare un elenco di moduli o modelli, nell&#39;interfaccia [!DNL Exper
 >
 >Per visualizzare i moduli secondari di un modulo schema, fare clic sul nome del modulo schema.
 
-## Aggiungi un modulo schema metadati {#add-a-metadata-schema-form}
+## Aggiungere un modulo schema metadati {#add-a-metadata-schema-form}
 
 Per aggiungere un modulo schema metadati, effettua le seguenti operazioni:
 
@@ -66,17 +65,13 @@ Per aggiungere un modulo schema metadati, effettua le seguenti operazioni:
 
 1. Nella finestra di dialogo, fornisci il titolo del modulo schema e fai clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
-## Modifica moduli schema metadati {#edit-metadata-schema-forms}
+## Modifica dei moduli schema metadati {#edit-metadata-schema-forms}
 
 È possibile modificare un modulo schema metadati appena aggiunto o esistente. Il modulo schema metadati include schede ed elementi modulo all’interno di schede. Puoi mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere schede o elementi modulo al modulo schema metadati. Le schede e gli elementi del modulo derivati dall&#39;elemento padre sono nello stato bloccato. Non è possibile modificarli a livello di bambino.
 
 1. Nella pagina [!UICONTROL Forms schema metadati] , seleziona un modulo e fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 
 1. Nella pagina **[!UICONTROL Editor modulo schema metadati]** , personalizza il modulo metadati. Trascina i componenti necessari dalla scheda **[!UICONTROL Genera modulo]** a una delle schede.
-
-   ![Editor schema metadati per personalizzare la pagina Proprietà risorsa](assets/metadata-schema-editor.png)
-
-   *Figura: Pagina  [!UICONTROL Editor moduli schema metadati ] con schede disponibili.*
 
 1. Per configurare un componente, selezionalo e modificane le proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
@@ -101,7 +96,7 @@ La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizza
 | [!UICONTROL Valutazione risorsa] | Aggiungi per visualizzare le opzioni di valutazione della risorsa. |
 | [!UICONTROL Metadati contestuali] | Aggiungi per controllare la visualizzazione di altre schede di metadati nella pagina delle proprietà delle risorse. |
 
-#### Modifica il componente metadati {#edit-the-metadata-component}
+#### Modifica del componente metadati {#edit-the-metadata-component}
 
 Per modificare le proprietà di un componente metadati sul modulo, fai clic sul componente per modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
@@ -149,11 +144,9 @@ Per visualizzare una scheda nella pagina delle proprietà oltre alla scheda in c
 
 Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Impostazioni]**, puoi definire le opzioni in un file JSON, specificando le coppie chiave-valore corrispondenti. Nel campo **[!UICONTROL Percorso JSON]**, specifica il percorso del file JSON.
 
-#### Aggiungi o elimina una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
+#### Aggiunta o eliminazione di una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
 
 L’editor dello schema consente di aggiungere o eliminare una scheda. Il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]** , **[!UICONTROL IPTC]** e **[!UICONTROL Estensione IPTC]**.
-
-![Schede predefinite nel modulo Schema metadati](assets/metadata-schema-form-tabs.png)
 
 Fare clic su `+` per aggiungere una scheda a un modulo schema. Per impostazione predefinita, la nuova scheda ha il nome `Unnamed-1`. Puoi modificare il nome dalla scheda **[!UICONTROL Impostazioni]** . Fai clic su `X` per eliminare una scheda.
 
@@ -267,7 +260,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    *Figura: Metadati a cascata per un documento.*
 
-## Elimina moduli schema metadati {#delete-metadata-schema-forms}
+## Eliminare i moduli schema metadati {#delete-metadata-schema-forms}
 
 [!DNL Experience Manager] consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
 
@@ -283,7 +276,7 @@ Per eliminare un modulo, selezionarlo e fare clic su Elimina.
 
 [!DNL Experience Manager] fornisce moduli predefiniti per vari tipi MIME predefiniti. Tuttavia, puoi aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
-### Aggiungi nuovi moduli per i tipi MIME {#add-new-forms-for-mime-types}
+### Aggiungere nuovi moduli per i tipi MIME {#add-new-forms-for-mime-types}
 
 Creare un modulo con il tipo appropriato. Ad esempio, per aggiungere un modello per il sottotipo `image/png`, crea il modulo sotto i moduli &quot;image&quot;. Il titolo del modulo schema è il nome del sottotipo. In questo caso, il titolo è `png`.
 
@@ -318,7 +311,7 @@ In questo caso, crea un nodo in `/etc/dam/metadataeditor/mimetypemappings` nell�
 
 La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso ai non amministratori modificando alcune autorizzazioni. Fornisci agli utenti non amministratori le autorizzazioni di creazione, modifica ed eliminazione nella cartella `/conf` .
 
-## Applica metadati specifici della cartella {#apply-folder-specific-metadata}
+## Applicare metadati specifici per le cartelle {#apply-folder-specific-metadata}
 
 [!DNL Assets] consente di definire una variante di uno schema di metadati e di applicarlo a una cartella specifica.
 
