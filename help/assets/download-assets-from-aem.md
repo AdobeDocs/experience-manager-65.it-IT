@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner
 feature: Gestione risorse,Distribuzione risorse
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '875'
 ht-degree: 3%
 
 ---
@@ -29,11 +29,6 @@ Non è possibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set di
 1. Passa a una cartella contenente le risorse da scaricare.
 1. Seleziona la cartella o seleziona una o più risorse all’interno della cartella.
 1. Sulla barra degli strumenti, fai clic su **[!UICONTROL Scarica]**.
-
-   ![Opzioni disponibili durante il download delle risorse da Experience Manager Assets](/help/assets/assets/asset-download1.png)
-
-   *Figura: Opzioni disponibili nella finestra di dialogo di download.*
-
 1. Nella finestra di dialogo Scarica selezionare le opzioni di download desiderate.
 
    | Opzione di esportazione o download | Descrizione |
