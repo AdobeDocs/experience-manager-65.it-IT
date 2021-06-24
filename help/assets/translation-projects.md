@@ -3,15 +3,14 @@ title: Creare progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Architect, Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Traduzione
+exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1875'
 ht-degree: 18%
 
 ---
-
 
 # Creare progetti di traduzione {#creating-translation-projects}
 
@@ -70,15 +69,9 @@ Se utilizzi questa opzione, le risorse da tradurre vengono copiate nella directo
 
 1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. Dall’elenco **[!UICONTROL Progetto]**, seleziona **[!UICONTROL Crea un nuovo progetto di traduzione]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. Nel campo **[!UICONTROL Titolo progetto]**, inserisci un titolo.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Fai clic su **[!UICONTROL Crea]**. [!DNL Assets] dalla cartella di origine vengono copiati nelle cartelle di destinazione per le impostazioni internazionali selezionate al passaggio 4.
 
@@ -235,14 +228,12 @@ Se utilizzi questa opzione, il set di risorse viene aggiunto a un progetto di tr
 
 1. Dall’elenco **[!UICONTROL Progetto]**, scegli **[!UICONTROL Aggiungi al progetto di traduzione esistente]**.
 
-   ![chlimage_1-97](assets/chlimage_1-97.png)
-
 1. Dall’elenco **[!UICONTROL Progetto di traduzione esistente]** , seleziona un progetto per aggiungere la risorsa da tradurre.
 
 1. Fare clic su **[!UICONTROL Start]**.
 1. Per completare il resto della procedura, vedi i passaggi 9-14 di [Aggiungi al progetto di traduzione esistente](translation-projects.md#add-to-existing-translation-project) .
 
-## Crea copie in lingua temporanea {#creating-temporary-language-copies}
+## Creare copie in lingua temporanea {#creating-temporary-language-copies}
 
 Quando esegui un flusso di lavoro di traduzione per aggiornare una copia in lingua con le versioni modificate delle risorse originali, la copia in lingua esistente viene conservata fino all’approvazione delle risorse tradotte. [!DNL Adobe Experience Manager Assets] memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia in lingua esistente dopo l’approvazione esplicita delle risorse. Se si rifiutano le risorse, la copia in lingua rimane invariata.
 
