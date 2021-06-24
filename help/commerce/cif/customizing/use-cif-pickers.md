@@ -7,10 +7,11 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
-source-git-commit: d84993e704096eabe85c4d4d61e24096d15ae9bd
+exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
@@ -46,6 +47,9 @@ Inoltre, sono supportate anche le proprietà dei campi del registro grafico stan
 >[!CAUTION]
 >
 >Il componente `cifproductfield` richiede la clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, puoi utilizzare la proprietà extraClientlibs .
+>[!CAUTION]
+>
+>A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. È vivamente consigliato utilizzare `sku` o `slug` come identificatore del prodotto. Continuiamo a supportare `id` solo per i progetti che utilizzano la versione 1.x dei componenti core CIF.
 
 Un esempio di funzionamento completo di `cifproductfield` è disponibile nel progetto [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) . Consulta anche [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) della documentazione dei componenti core AEM.
 
@@ -73,5 +77,8 @@ Inoltre, sono supportate anche le proprietà dei campi del registro grafico stan
 >[!CAUTION]
 >
 >Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede la clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, puoi utilizzare la proprietà `extraClientlibs` . Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) della documentazione sui componenti core AEM .
+>[!CAUTION]
+>
+>A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. È vivamente consigliabile utilizzare `uid` o `slug` come identificatore di categoria. Continuiamo a supportare `id` e `idAndUrlPath` solo per i progetti che utilizzano i componenti core CIF versione 1.x.
 
 Un esempio di funzionamento completo di `cifcategoryfield` è disponibile nel progetto [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) .
