@@ -1,10 +1,11 @@
 ---
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 9%
+source-wordcount: '758'
+ht-degree: 8%
 
 ---
 
@@ -27,6 +28,23 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Giugno 2021
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2021.06.18 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| Componenti core CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| Sito di riferimento CIF Venia | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### Novità {#what-is-new-june}
+
+* Nuovi tipi di dati di riferimento CIF per prodotti e categorie per Frammenti di contenuto (Incl. supporto per l&#39;interfaccia utente del selettore prodotti/categorie)
+* Nuovo componente core Frammento di contenuto Commerce
+* Ricerca di e-commerce full-text supportata nel backend AEM
+* I componenti core di Commerce supportano la raccolta dati Adobe Commerce Sensei Recs
+* URL ottimizzati per l’ottimizzazione SEO (Search Engine Optimization) per le pagine di categorie
+* Supporto per intestazioni HTTP personalizzate per sito/configurazione
 
 ## Data di rilascio: Maggio 2021
 
@@ -68,7 +86,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 
 * Il campo della categoria principale non veniva visualizzato nella scheda commercio nelle proprietà della pagina delle pagine delle categorie
 
-## Data di rilascio: Marzo 2021{#what-is-new-march}
+## Data di rilascio: Marzo 2021 {#what-is-new-march}
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
@@ -102,7 +120,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 
 * Proprietà estese della console prodotti per mostrare le risorse collegate e i frammenti esperienza, inclusa l’azione per passare rapidamente al contenuto associato.
 
-### Miglioramenti di {#what-is-improved-february}
+### Miglioramenti  {#what-is-improved-february}
 
 * Livello dati lato client migliorato con url immagine prodotto e informazioni sulla categoria.
 
@@ -120,7 +138,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 
 * Gestione dell&#39;esperienza del prodotto: Nuova scheda di proprietà &quot;Commerce&quot; per Assets e Frammenti esperienza. Questa scheda ti consente di collegare risorse e frammenti esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti di e-commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
 
-### Miglioramenti di {#what-is-improved-january}
+### Miglioramenti  {#what-is-improved-january}
 
 * Invia i dati utente dopo l’autenticazione ad Adobe Client Data Layer.
 
