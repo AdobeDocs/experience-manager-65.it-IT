@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componenti,Pubblicazione
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3252'
 ht-degree: 22%
 
 ---
@@ -178,7 +178,7 @@ Modifica le seguenti impostazioni Dynamic Media toccando l&#39;icona **[!UICONTR
 
    ![impostazione del rapporto pixel del dispositivo per il predefinito immagine](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Vedere anche [Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo](/help/assets/imaging-faq.md#dpr). Eventuali valori DPR di Adobe Experience Manager Dynamic Media Smart imaging vengono ignorati.
 
 * **[!UICONTROL Titolo]**  - Consente di modificare il titolo dell’immagine.
 
@@ -254,7 +254,7 @@ Modifica la seguente impostazione Dynamic Media facendo clic su **[!UICONTROL Mo
 
    ![impostazione del rapporto pixel del dispositivo per il ritaglio avanzato](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Vedere anche [Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo](/help/assets/imaging-faq.md#dpr). Eventuali valori DPR di Adobe Experience Manager Dynamic Media Smart imaging vengono ignorati.
 
 * **[!UICONTROL Titolo]**  - Modifica il titolo dell’immagine Ritaglio avanzato.
 
@@ -339,7 +339,7 @@ Per modificare l’impostazione seguente, tocca **[!UICONTROL Configura]** nel c
 
 Se il predefinito per visualizzatori che stai cercando non è visibile, assicurati che sia pubblicato. Pubblica i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md). 
 
-### Componente video 360 Media {#video-media-component}
+### Componente video 360 {#video-media-component}
 
 Utilizza il componente **[!UICONTROL Video 360 Media]** per eseguire il rendering di video equirettangolari sulla pagina web per un&#39;esperienza di visualizzazione immersiva di una stanza, una proprietà, una posizione, un paesaggio o una procedura medica.
 
