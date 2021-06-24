@@ -3,15 +3,14 @@ title: Aggiungi mappe immagine con collegamenti ipertestuali
 description: Scopri come aggiungere una mappa immagine con collegamenti ipertestuali a un’immagine.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Gestione risorse
+exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
-
 
 # Aggiungi mappe immagine {#adding-image-maps}
 
@@ -27,8 +26,6 @@ Le mappe immagine consentono di aggiungere una o più aree collegate che funzion
 
    * Nella visualizzazione **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]**, seleziona la risorsa e fai clic su **[!UICONTROL Modifica]** sulla barra degli strumenti.
    * Fai clic su **[!UICONTROL Modifica]** nella pagina della risorsa.
-
-      ![opzione modifica](assets/do-not-localize/edit_icon.png)
 
 1. Per inserire una mappa immagine, fai clic su **[!UICONTROL Avvia mappa]** ![mappa immagine](assets/do-not-localize/image-map-icon.png) nella barra degli strumenti.
 1. Selezionare la forma della mappa immagine. Il punto attivo della forma selezionata viene posizionato sull&#39;immagine.
