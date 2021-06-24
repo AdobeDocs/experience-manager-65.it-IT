@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestione risorse,Ricerca
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9743'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ In [!DNL Adobe Experience Manager Assets] puoi fare molto di più che archiviare
 
 Il presente articolo descrive le attività di base per la gestione delle risorse, come creare o caricare; aggiornamenti dei metadati; copiare, spostare ed eliminare; pubblicare, annullare la pubblicazione ed eseguire ricerche nelle risorse. Per informazioni sull’interfaccia utente, consulta [guida introduttiva all’interfaccia utente delle risorse](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [gestire le risorse Frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) .
 
-## Crea cartelle {#creating-folders}
+## Creare cartelle {#creating-folders}
 
 Quando organizzi una raccolta di risorse, ad esempio tutte le immagini `Nature`, puoi creare cartelle per mantenerle intatte. Puoi utilizzare le cartelle per suddividere in categorie e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare meglio le risorse nelle cartelle.
 
@@ -40,7 +40,7 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 Non includere caratteri speciali nelle estensioni dei nomi dei file delle risorse.
 
-## Caricare risorse {#uploading-assets}
+## Caricare le risorse {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -77,11 +77,9 @@ Prima di caricare una risorsa, accertati che sia in un [formato](/help/assets/as
 
 L&#39;opzione [!UICONTROL Pausa] non mostra se un file superiore a 1000 MB viene caricato con un file inferiore a 1000 MB. Tuttavia, se annulli il caricamento di file inferiori a 1000 MB, viene visualizzata l&#39;opzione **[!UICONTROL Pausa]**.
 
-Per modificare il limite di dimensioni, configura la proprietà `chunkUploadMinFileSize` del nodo `fileupload`nell’archivio CRX.
+Per modificare il limite di dimensioni, configura la proprietà `chunkUploadMinFileSize` del nodo `fileupload` nell’archivio CRX.
 
 Quando fai clic su **[!UICONTROL Pausa]**, passa all&#39;opzione **[!UICONTROL Riproduci]**. Per riprendere il caricamento, fai clic su **[!UICONTROL Play]**.
-
-![Riprende il caricamento delle risorse in pausa](assets/resume-paused-upload.png)
 
 Per annullare un caricamento in corso, fai clic su chiudi (`X`) accanto alla barra di avanzamento. Quando annulli l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
 
@@ -253,7 +251,7 @@ Quando carichi i file immagine PostScript (EPS) o Illustrator (AI), puoi formatt
 |  | Forza come CMYK | Si converte nello spazio colore CMYK. |
 |  | Forza come scala di grigi | Converte lo spazio colore in scala di grigi. |
 
-#### Imposta le opzioni di caricamento Photoshop {#setting-photoshop-upload-options}
+#### Impostare le opzioni di caricamento di Photoshop {#setting-photoshop-upload-options}
 
 I file Photoshop Document (PSD) vengono utilizzati più spesso per creare modelli di immagine. Quando carichi un file PSD, puoi creare automaticamente un modello di immagine dal file (seleziona l&#39;opzione [!UICONTROL Crea modello] nella schermata Carica ).
 
@@ -277,7 +275,7 @@ Utilizza le [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni profilo color
 |  | Photoshop e nome livello | Assegna un nome alle immagini dopo il file PSD seguito dal nome del livello o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato Tag prezzo in un file PSD denominato SpringAd è denominato Tag ad_Price di primavera. Un livello con il nome predefinito Layer 2 si chiama Spring Ad_2. |
 | Ancoraggio |  | Specifica come le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine sostitutiva. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando fanno riferimento al modello e utilizzano la sostituzione di parametri, occupano effettivamente lo stesso spazio. Passa a un’impostazione diversa se l’applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
-#### Imposta opzioni di caricamento PDF {#setting-pdf-upload-options}
+#### Impostare le opzioni di caricamento PDF {#setting-pdf-upload-options}
 
 Quando carichi un file PDF, puoi formattarlo in vari modi. Ritagliate le pagine, estraete le parole di ricerca, immettete una risoluzione pixel per pollice e scegliete uno spazio colore. I file PDF contengono spesso un margine di taglio, indicatori di ritaglio, segni di registrazione e altri segni della stampante. È possibile ritagliare questi segni dai lati delle pagine durante il caricamento di un file PDF.
 
@@ -378,7 +376,7 @@ Per visualizzare in anteprima una risorsa utilizzando la tastiera, effettua le s
 >* [Visualizzare le risorse secondarie](managing-linked-subassets.md#viewing-subassets).
 
 
-## Modifica proprietà e metadati {#editing-properties}
+## Modifica di proprietà e metadati {#editing-properties}
 
 1. Passa alla posizione della risorsa per modificarne i metadati.
 
@@ -425,7 +423,7 @@ Per visualizzare in anteprima una risorsa utilizzando la tastiera, effettua le s
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Passa all’ interfaccia utente [!DNL Assets] . Le proprietà dei metadati modificati, quali titolo, descrizione, valutazioni e così via, vengono visualizzate sulla scheda delle risorse nella vista Scheda e nelle colonne pertinenti nella vista Elenco.
 
-## Copia risorse {#copying-assets}
+## Copiare le risorse {#copying-assets}
 
 Quando copi una risorsa o una cartella, viene copiata l’intera risorsa o la cartella insieme alla relativa struttura del contenuto. Una risorsa o una cartella copiata viene duplicata nel percorso di destinazione. La risorsa nella posizione di origine non viene modificata.
 
@@ -499,7 +497,7 @@ Per spostare risorse o cartelle:
 
    Se non aggiorni i riferimenti, continuano a indicare il percorso precedente della risorsa. Se regoli i riferimenti, vengono aggiornati al nuovo percorso della risorsa.
 
-### Spostare le risorse utilizzando l’operazione di trascinamento {#move-using-drag}
+### Spostare le risorse tramite trascinamento {#move-using-drag}
 
 È possibile spostare le risorse (o le cartelle) in una cartella di pari livello trascinandole nella posizione di destinazione, invece di utilizzare l&#39;opzione [!UICONTROL Sposta] nell&#39;interfaccia utente. Tuttavia, questa operazione è possibile solo nella vista a elenco.
 
@@ -541,7 +539,7 @@ Lo spostamento delle risorse trascinandole non consente di aprire la procedura g
 
    Allo stesso modo, è possibile personalizzare l&#39;immagine della pagina Annotazione sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Sovrapponi il nodo del selettore delle rappresentazioni in CRXDE per personalizzare l&#39;immagine della pagina Annotazione](assets/renditionpicker-node-crxde.png)
+   ![Sovrapponi il nodo del selettore delle rappresentazioni in CRXDE per personalizzare l&#39;immagine della pagina Annotazione](assets/renditionpicker-node.png)
 
    Per configurare le dimensioni di rendering per una risorsa video, passa al nodo `videopicker` nell’archivio CRX nella posizione `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapponi il nodo e quindi modifica la proprietà appropriata.
 
@@ -563,7 +561,7 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
 
 1. Seleziona la risorsa o la cartella e fai clic su **[!UICONTROL Elimina]** ![Elimina opzione](assets/do-not-localize/deleteoutline.png) nella barra degli strumenti.
 
-   Una volta confermata l’eliminazione:
+   Dopo aver confermato l’eliminazione:
 
    * Se la risorsa non ha riferimenti, viene eliminata.
 
@@ -632,7 +630,7 @@ I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’acce
    >Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#assetsearch}
 
@@ -647,7 +645,7 @@ Le icone delle azioni rapide sono disponibili per una singola risorsa alla volta
 * Dispositivi touch: Toccare e tenere premuto. Ad esempio, su un iPad, puoi toccare e tenere premuto un contenuto per visualizzare le azioni rapide.
 * Dispositivi non touch: Puntatore al passaggio del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore sulla miniatura della risorsa viene visualizzata la barra delle azioni rapide.
 
-### Naviga e seleziona le risorse {#navigating-and-selecting-assets}
+### Navigare e selezionare le risorse {#navigating-and-selecting-assets}
 
 Puoi visualizzare, navigare e selezionare le risorse con una qualsiasi delle viste disponibili (Scheda, Colonna ed Elenco) utilizzando l’opzione **[!UICONTROL Seleziona]**.
 
@@ -655,13 +653,11 @@ Nella vista a elenco e nella vista a colonne, l’opzione **[!UICONTROL Selezion
 
 Nella vista a schede, l&#39;opzione **[!UICONTROL Seleziona]** viene visualizzata come un&#39;azione rapida.
 
-![Seleziona un’azione rapida nella vista a schede](assets/select_quick_action.png)
-
 Quando esplori una cartella o una raccolta nell’interfaccia utente di [!DNL Assets] in un browser, puoi selezionare tutte le risorse visualizzate o caricate utilizzando l’opzione [!UICONTROL Seleziona tutto] nell’angolo in alto a destra. Inizialmente, solo 100 risorse vengono caricate nella vista a schede e 200 nella vista a elenco. Mentre scorri la pagina dei risultati di ricerca, vengono caricate altre risorse. L&#39;opzione [!UICONTROL Seleziona tutto] seleziona solo le risorse caricate.
 
 Per ulteriori informazioni, consulta [visualizzare e selezionare le risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-## Modifica immagini {#editing-images}
+## Modificare le immagini {#editing-images}
 
 Gli strumenti di modifica nell’ interfaccia [!DNL Assets] consentono di eseguire piccoli processi di modifica sulle risorse di immagini. È possibile ritagliare, ruotare, capovolgere ed eseguire altri lavori di modifica sulle immagini. Puoi anche aggiungere mappe immagine alle risorse.
 
@@ -678,8 +674,6 @@ Gli strumenti di modifica nell’ interfaccia [!DNL Assets] consentono di esegui
 1. Per ritagliare l&#39;immagine, fai clic su **[!UICONTROL Ritaglia]** ![Opzione per ritagliare un&#39;immagine](assets/do-not-localize/crop.png).
 
 1. Seleziona l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione **Mano libera** consente di ritagliare l’immagine senza limitazioni di proporzioni.
-
-   ![Opzioni di ritaglio](assets/crop-options.png)
 
 1. Selezionate l&#39;area da ritagliare e ridimensionatela o riposizionatela sull&#39;immagine.
 
@@ -736,11 +730,9 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
-   ![Casella Commento nella finestra di dialogo Aggiungi annotazione](assets/annotation-comment-box.png)
-
 1. Per inviare un’annotazione a un utente, specifica l’indirizzo e-mail dell’utente e aggiungi il commento. Ad esempio, per notificare ad Aaron MacDonald un’annotazione, immetti @aa. I suggerimenti per tutti gli utenti corrispondenti vengono visualizzati in un elenco. Seleziona l’indirizzo e-mail di Aaron dall’elenco per contrassegnarlo con il commento. Allo stesso modo, è possibile assegnare tag a più utenti in qualsiasi punto dell’annotazione, prima o dopo.
 
-   ![Specifica l’indirizzo e-mail dell’utente e aggiungi un commento per inviare una notifica all’utente](assets/annotation-add-user-email.png)
+   ![Specifica l’indirizzo e-mail dell’utente e aggiungi un commento per inviare una notifica all’utente](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -807,8 +799,6 @@ Per stampare le annotazioni e controllare lo stato, fare clic su **[!UICONTROL S
 1. Fare clic su **[!UICONTROL Stampa]** nella barra degli strumenti.
 
 1. Nella finestra di dialogo Stampa, scegliere la posizione in cui visualizzare le annotazioni o lo stato di revisione sul PDF. Ad esempio, se desideri che le annotazioni/lo stato vengano stampati in alto a destra della pagina contenente l’immagine stampata, utilizza l’impostazione **In alto a sinistra**. È selezionata per impostazione predefinita.
-
-   ![Selezionare la posizione dell&#39;annotazione/lo stato di revisione da visualizzare in PDF dalla finestra di dialogo Stampa](assets/Print-annotation-dialog.png)
 
    È possibile scegliere altre impostazioni, a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se vuoi che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
