@@ -3,15 +3,14 @@ title: Gestire le risorse composte con riferimenti e pagine multiple
 description: Scopri come creare riferimenti a risorse digitali da [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare le singole pagine delle risorse secondarie di file multipagina, come file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
+feature: Gestione risorse
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
-
 
 # Gestire risorse composte e multipagina {#managing-compound-assets}
 
@@ -23,7 +22,7 @@ Oltre a eliminare la ridondanza, il riferimento alle risorse nelle applicazioni 
 
 I riferimenti vengono risolti in base al percorso, all’ID documento e all’ID istanza delle risorse a cui si fa riferimento.
 
-## [!DNL Adobe Illustrator]: Aggiungere risorse digitali come riferimenti  {#refai}
+## [!DNL Adobe Illustrator]: Aggiungere risorse digitali come riferimenti {#refai}
 
 Puoi fare riferimento a risorse digitali esistenti all’interno di un file [!DNL Adobe Illustrator] .
 
@@ -46,7 +45,7 @@ Puoi fare riferimento a risorse digitali esistenti all’interno di un file [!DN
 
    *Figura: Riferimenti alle risorse nei dettagli delle risorse.*
 
-## [!DNL Adobe InDesign]: Aggiungere risorse digitali come riferimenti  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Aggiungere risorse digitali come riferimenti {#add-aem-assets-as-references-in-adobe-indesign}
 
 Per fare riferimento alle risorse digitali da un file [!DNL InDesign], trascina le risorse nel file [!DNL InDesign] o esporta il file [!DNL InDesign] come archivio ZIP.
 
@@ -70,11 +69,9 @@ Questa procedura è simile a [aggiungi risorse digitali come riferimenti in Adob
 1. Avvia il flusso di lavoro `Unarchiver`.
 1. Al termine del flusso di lavoro, i riferimenti nella cartella Collegamenti vengono automaticamente indicati come risorse secondarie. Per visualizzare un elenco delle risorse indicate, passa alla pagina dei dettagli della risorsa [!DNL InDesign] e chiudi la barra [Barra](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## [!DNL Adobe Photoshop]: Aggiungere risorse digitali come riferimenti  {#refps}
+## [!DNL Adobe Photoshop]: Aggiungere risorse digitali come riferimenti {#refps}
 
 1. Utilizza l’ app desktop [!DNL Experience Manager] per accedere a [!DNL Experience Manager Assets]. Scarica e visualizza le risorse sul file system locale. Utilizza la funzionalità [!UICONTROL Inserisci collegato] in [!DNL Adobe Photoshop]. Consulta [inserire risorse nell’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Salva il file [!DNL Photoshop] nell&#39;unità montata o [carica](/help/assets/manage-assets.md#uploading-assets) nell&#39;archivio [!DNL Experience Manager].
 1. Al termine del flusso di lavoro, i riferimenti alle risorse [!DNL Experience Manager] esistenti sono elencati nella pagina dei dettagli della risorsa.
@@ -113,7 +110,7 @@ Le risorse secondarie vengono visualizzate solo se sono generate e sono disponib
 
 ![Visualizzare le risorse secondarie di una risorsa multipagina](assets/view_subassets_simulation.gif)
 
-## Visualizzare le pagine di un file multipagina {#view-pages-of-a-multi-page-file}
+## Visualizzare pagine di un file multipagina {#view-pages-of-a-multi-page-file}
 
 È possibile visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e AI, utilizzando la funzione Visualizzatore pagina di [!DNL Experience Manager Assets]. Apri una risorsa multipagina e fai clic su **[!UICONTROL Visualizza pagine]** nell’angolo in alto a sinistra della pagina. Il visualizzatore pagina visualizzato mostra le pagine della risorsa e i controlli per sfogliare e ingrandire ciascuna pagina.
 
@@ -139,8 +136,8 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 >[!MORELIKETHIS]
 >
->* [Usa app desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Configurare le azioni desktop in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Utilizzare l’app desktop Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Configurare azioni desktop in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creare oggetti avanzati collegati in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Inserire elementi grafici in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
