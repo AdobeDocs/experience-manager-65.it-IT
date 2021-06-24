@@ -3,17 +3,16 @@ title: Elabora le risorse utilizzando gestori e flussi di lavoro di contenuti mu
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 role: Business Practitioner
-feature: Workflow,Renditions
+feature: Flusso di lavoro, rappresentazioni
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2166'
 ht-degree: 4%
 
 ---
 
-# Elabora le risorse utilizzando gestori di contenuti multimediali e flussi di lavoro {#processing-assets-using-media-handlers-and-workflows}
+# Elabora le risorse utilizzando gestori e flussi di lavoro di contenuti multimediali {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] viene fornito con un set di flussi di lavoro predefiniti e gestori di contenuti multimediali per elaborare le risorse. Un flusso di lavoro definisce le attività da eseguire sulle risorse, quindi delega le attività specifiche ai gestori dei contenuti multimediali, ad esempio la generazione di miniature o l’estrazione dei metadati.
 
@@ -72,7 +71,7 @@ I flussi di lavoro esistenti possono essere estesi e possono essere creati nuovi
 
 L’esempio seguente mostra come migliorare il flusso di lavoro di **[!UICONTROL Sincronizzazione AEM Assets]** in modo che vengano generate le risorse secondarie di tutte le risorse, eccetto i documenti PDF.
 
-### Disabilita o abilita un gestore di contenuti multimediali {#disabling-enabling-a-media-handler}
+### Disattivare o attivare un gestore di contenuti multimediali {#disabling-enabling-a-media-handler}
 
 I gestori di contenuti multimediali possono essere disattivati o abilitati tramite la console di gestione web Apache Felix. Quando il gestore multimediale è disabilitato, le sue attività non vengono eseguite sulle risorse.
 
@@ -369,7 +368,7 @@ Dopo aver eseguito la seguente procedura, quando carichi un file TXT in [!DNL Ex
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
