@@ -4,15 +4,15 @@ description: Scopri come distribuire un progetto AEM Content and Commerce .
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '721'
 ht-degree: 5%
 
 ---
 
-# Guida introduttiva a Contenuto AEM e Commercio {#start}
+# Guida introduttiva a Contenuto AEM e Commerce {#start}
 
 Per iniziare a utilizzare AEM contenuti e Commerce, è necessario installare il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5.
 
@@ -28,7 +28,7 @@ L’onboarding per AEM contenuto e commerce è un processo in due fasi:
 
 2. Connetti AEM con la tua soluzione commerce
 
-### Installa il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5 {#install-add-on}
+### Installare il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5 {#install-add-on}
 
 Scarica e installa il componente aggiuntivo AEM Commerce per AEM 6.5 dal portale [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) .
 
@@ -79,6 +79,9 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
    >
    > Il supporto per gli UID è stato introdotto in Adobe Commerce (Magento) 2.4.2. Abilitare questa opzione solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 - Identificatore della categoria principale del catalogo: l&#39;identificatore (UID o ID) della directory principale del catalogo store
+   >[!CAUTION]
+   >
+   > A partire dalla versione 2.0.0 dei componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, è necessario abilitare il supporto per gli UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore di categoria principale del catalogo&quot;.
 
 La configurazione mostrata sopra è di riferimento. I progetti devono fornire le proprie configurazioni.
 
