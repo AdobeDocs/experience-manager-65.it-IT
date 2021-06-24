@@ -3,15 +3,14 @@ title: Facet di ricerca per filtrare i risultati di ricerca
 description: Come creare, modificare e utilizzare i facet di ricerca in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrator, Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Ricerca
+exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2397'
 ht-degree: 17%
 
 ---
-
 
 # Facet di ricerca {#search-facets}
 
@@ -23,7 +22,7 @@ In sintesi, i facet di ricerca consentono di cercare le risorse in più modi anz
 
 Ad esempio, se si cerca un&#39;immagine, è possibile scegliere se si desidera una bitmap o un&#39;immagine vettoriale. Puoi ridurre ulteriormente l’ambito della ricerca specificando il tipo MIME per l’immagine. Allo stesso modo, durante la ricerca di documenti, è possibile specificare il formato, ad esempio PDF o MS Word.
 
-## Aggiungi un predicato {#adding-a-predicate}
+## Aggiungere un predicato {#adding-a-predicate}
 
 I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di ricerca sottostante utilizzando i predicati. Per visualizzare più facet o diversi, aggiungere predicati al modulo predefinito o utilizzare un modulo personalizzato che includa facet selezionati.
 
@@ -31,8 +30,6 @@ Per le ricerche full-text, aggiungere il predicato [!UICONTROL Fulltext] al modu
 
 1. Fai clic sul logo [!DNL Experience Manager], quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Ricerca in Forms, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi fai clic su **[!UICONTROL Modifica]** ![icona di modifica](assets/do-not-localize/aemassets_edit.png).
-
-   ![Individua e seleziona la barra delle risorse o la barra di ricerca dell’amministratore](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -72,7 +69,7 @@ Per le ricerche full-text, aggiungere il predicato [!UICONTROL Fulltext] al modu
 1. Passa al pannello Ricerca nell’interfaccia utente di [!DNL Assets] . Il predicato Proprietà viene aggiunto al pannello .
 1. Immetti una descrizione della risorsa alla quale cercare nella casella di testo. Ad esempio, immetti `Adobe`. Quando esegui una ricerca, le risorse con descrizione corrispondente a `Adobe` vengono elencate nei risultati della ricerca.
 
-## Aggiungi un predicato Opzioni {#adding-an-options-predicate}
+## Aggiungere un predicato Opzioni {#adding-an-options-predicate}
 
 Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri . Per cercare le risorse, seleziona una o più di queste opzioni nel pannello Filtri . Ad esempio, per cercare le risorse in base al tipo di file, configura nel modulo di ricerca opzioni quali Immagini, Multimedia, Documenti e Archivi. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezioni l’opzione Immagini nel pannello Filtri .
 
@@ -126,7 +123,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Nel campo **[!UICONTROL Descrizione]** immetti una descrizione facoltativa, quindi fai clic su **[!UICONTROL Fine]**.
 1. Passa al pannello Ricerca . Il predicato Opzioni viene aggiunto al pannello **Ricerca** . Le opzioni per **[!UICONTROL Tipo file]** vengono visualizzate come caselle di controllo.
 
-## Aggiungi un predicato proprietà multi-valore {#adding-a-multi-value-property-predicate}
+## Aggiungere un predicato proprietà multivalore {#adding-a-multi-value-property-predicate}
 
 Il predicato Proprietà con più valori consente di cercare le risorse per più valori. Considera uno scenario in cui hai immagini di più prodotti in [!DNL Assets] e i metadati per ogni immagine includono un numero SKU associato al prodotto. Puoi utilizzare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
@@ -139,7 +136,7 @@ Il predicato Proprietà con più valori consente di cercare le risorse per più 
 1. Passa al pannello Filtri nell’interfaccia utente [!DNL Assets] . Al pannello viene aggiunto il predicato **[!UICONTROL Proprietà con più valori]**.
 1. Specifica più valori nel campo Valore multiplo separato dai delimitatori ed esegui la ricerca. Il predicato recupera una corrispondenza esatta del testo per i valori specificati.
 
-## Aggiungi un predicato Tag {#adding-a-tags-predicate}
+## Aggiungere un predicato Tag {#adding-a-tags-predicate}
 
 Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, [!DNL Assets] cerca nelle risorse le corrispondenze di uno o più tag in base ai tag specificati. In altre parole, la query di ricerca esegue un’operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione di corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
@@ -181,7 +178,7 @@ Simile al modo in cui aggiungi un predicato Proprietà o un predicato Opzioni, p
 
 Per impostazione predefinita, un&#39;icona a forma di lucchetto ![icona chiusa a forma di lucchetto](assets/do-not-localize/lock_closed_icon.svg) viene visualizzata prima di **[!UICONTROL Barra di ricerca amministrazione risorse]** nella pagina **[!UICONTROL Ricerca in Forms]**. Icona a forma di lucchetto rispetto a un’opzione nella pagina Ricerca Forms indica che le impostazioni predefinite sono intatte e non sono personalizzate. Se si aggiungono facet di ricerca al modulo che indicano che il modulo predefinito è stato modificato, l’icona ![Blocca icona chiusa](assets/do-not-localize/lock_closed_icon.svg) scompare.
 
-![Icona a forma di lucchetto rispetto a un’opzione nella pagina Ricerca Forms indica che le impostazioni predefinite sono intatte e non sono personalizzate.](assets/locked_admin_rail.png)
+![Icona Blocca](assets/locked_admin_rail.png)
 
 Per ripristinare il facet di ricerca predefinito, esegui questi passaggi:
 
@@ -204,5 +201,5 @@ Se non ti viene assegnato un ruolo di amministratore, compare un elenco di autor
 >[!MORELIKETHIS]
 >
 >* [Estendere la funzionalità di ricerca delle risorse](searchx.md)
->* [Cercare risorse](search-assets.md)
+* [Cercare risorse](search-assets.md)
 
