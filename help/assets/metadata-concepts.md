@@ -3,15 +3,14 @@ title: Concetti di metadati
 description: Scopri la necessità e i tipi di metadati che consentono di organizzare e classificare più facilmente le risorse.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Metadati
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2730'
 ht-degree: 6%
 
 ---
-
 
 # Concetti di metadati {#why-we-need-metadata}
 
@@ -29,7 +28,7 @@ Le proprietà di metadati di base gestite da [!DNL Experience Manager] per le ri
 
 Puoi aggiungere ulteriori dati di alto livello alle risorse digitali, ad esempio:
 
-* Tipo di risorsa (immagine, video, clip audio o documento?).
+* Tipo di risorsa (immagine, video, clip audio o documento).
 * Proprietario della risorsa.
 * Titolo della risorsa.
 * Descrizione della risorsa.
@@ -130,7 +129,7 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadati Digital Rights Management (DRM) {#digital-rights-management-metadata}
+### Metadati del Digital Rights Management (DRM) {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -154,12 +153,12 @@ I metadati specifici dell&#39;applicazione includono metadati tecnici e descritt
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per il testo di paging.
 
-### Metadati multimediali specifici {#multimedia-specific-metadata}
+### Metadati specifici per contenuti multimediali {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Gestione dei supporti.
 
-## Riferimento agli schemi di metadati {#metadata-schemata-reference}
+## Riferimento a schemi di metadati {#metadata-schemata-reference}
 
 Il riferimento seguente include informazioni su uno specifico schema di metadati (in ordine alfabetico), nonché un elenco di proprietà e relative definizioni.
 
@@ -195,7 +194,7 @@ L&#39;International Press Telecommunications Council (IPTC) è un consorzio di a
 
 Sebbene le informazioni di intestazione IPTC siano state sostituite principalmente da XMP, per XMP sono disponibili uno schema di base IPTC e uno schema di estensione. Nei programmi immagine, le proprietà XMP e IPTC sono sincronizzate.
 
-## Flussi di lavoro basati su metadati {#metadata-driven-workflows}
+## Workflow basati su metadati {#metadata-driven-workflows}
 
 La creazione di flussi di lavoro basati su metadati consente di automatizzare alcuni processi, migliorando l’efficienza. In un flusso di lavoro basato su metadati, il sistema di gestione del flusso di lavoro legge il flusso di lavoro e, di conseguenza, esegue alcune azioni predefinite. Ad esempio, alcuni dei modi per utilizzare flussi di lavoro basati su metadati:
 
@@ -290,7 +289,7 @@ La pagina Proprietà per le risorse ora include schede separate per visualizzare
 1. Modifica le proprietà dei metadati dell&#39;estensione IPTC, a seconda delle esigenze.
 1. Fai clic su **[!UICONTROL Salva e chiudi]** per salvare le modifiche.
 
-### Supporto per valutazione creativa {#creative-rating-support}
+### Supporto di valutazione creativa {#creative-rating-support}
 
 Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, la pagina Proprietà visualizza ora le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
 
