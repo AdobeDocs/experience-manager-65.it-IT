@@ -11,17 +11,16 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configurazione
+exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
 
-
-# Configurazione degli archivi dei nodi e degli archivi di dati in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configurazione degli archivi di nodi e degli archivi di dati nel AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -113,7 +112,7 @@ db="aem-author"
 customBlobStore=B"false"
 ```
 
-## Configurazioni archivio dati {#data-store-configurations}
+## Configurazioni dell&#39;archivio dati {#data-store-configurations}
 
 Quando si gestisce un numero elevato di binari, si consiglia di utilizzare un archivio dati esterno al posto degli archivi nodi predefiniti per massimizzare le prestazioni.
 
@@ -230,7 +229,7 @@ Puoi utilizzare il file di configurazione con le seguenti opzioni:
 * stagingPurgeInterval: Intervallo in secondi per lo svuotamento dei caricamenti completati dalla cache di staging. Il valore predefinito è **300** secondi (5 minuti).
 * stagingRetryInterval: Intervallo dei tentativi in secondi per caricamenti non riusciti. Il valore predefinito è **600** secondi (10 minuti).
 
-### Opzioni dell&#39;area a blocchi {#bucket-region-options}
+### Opzioni dell’area a blocchi {#bucket-region-options}
 
 <table>
  <tbody>
@@ -470,6 +469,14 @@ Puoi eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati:
 >
 >Quando si esegue la raccolta oggetti inattivi in una configurazione dell’archivio dati in cluster o condiviso (con Mongo o Segment Tar), il registro potrebbe visualizzare avvisi sull’impossibilità di eliminare determinati ID BLOB. Questo accade perché gli ID BLOB eliminati in una precedente raccolta oggetti inattivi vengono erroneamente referenziati da altri nodi cluster o condivisi che non hanno informazioni sulle eliminazioni degli ID. Di conseguenza, quando si esegue la raccolta oggetti inattivi, viene registrato un avviso quando si tenta di eliminare un ID già eliminato nell’ultima esecuzione. Questo comportamento non influisce sulle prestazioni o sulle funzionalità.
 
+>[!NOTE]
+> Se utilizzi una configurazione del datastore condiviso e la raccolta degli oggetti inattivi del datastore è disabilitata, l&#39;esecuzione dell&#39;attività di pulizia binaria Lucene può improvvisamente aumentare lo spazio su disco utilizzato. Per evitare questo problema, devi disabilitare BlobTracker su tutte le istanze di authoring e pubblicazione come segue:
+>
+> 1. Interrompi l&#39;istanza AEM.
+> 2. Aggiungi il parametro `blobTrackSnapshotIntervalInSecs=L"0"` nel file `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Questo parametro richiede Oak 1.12.0, 1.10.2 o versione successiva.
+> 3. Riavvia l&#39;istanza AEM.
+
+
 Con le versioni più recenti di AEM, la raccolta degli oggetti inattivi dell&#39;archivio dati può essere eseguita anche sugli archivi di dati condivisi da più di un archivio. Per poter eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati in un archivio dati condiviso, procedi come segue:
 
 1. Assicurati che tutte le attività di manutenzione configurate per la raccolta oggetti inattivi dell&#39;archivio dati siano disabilitate su tutte le istanze dell&#39;archivio che condividono l&#39;archivio dati.
@@ -482,6 +489,4 @@ Con le versioni più recenti di AEM, la raccolta degli oggetti inattivi dell&#39
    1. Vai alla console JMX e seleziona il Mbean di Repository Manager.
    1. Fai clic sul collegamento **Click startDataStoreGC(boolean markOnly)** .
    1. Nella finestra di dialogo seguente, immetti di nuovo `false` per il parametro `markOnly` .
-
    In questo modo verranno raccolti tutti i file trovati utilizzando la fase di contrassegno utilizzata in precedenza ed eliminati gli altri file non utilizzati dall&#39;archivio dati.
-
