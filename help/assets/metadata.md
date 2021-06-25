@@ -1,14 +1,14 @@
 ---
 title: Gestire i metadati delle risorse digitali
-description: Scopri i tipi di metadati e come  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+description: Scopri i tipi di metadati e come gestire i metadati per le risorse per organizzare ed elaborare facilmente le risorse.
 contentOwner: AG
-feature: Tagging, Metadata
+mini-toc-levels: 1
+feature: Assegnazione tag, metadati
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2339'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,7 @@ Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti
 
 * Puoi sfruttare la funzionalità [profili metadati](/help/assets/metadata-config.md#metadata-profiles) di [!DNL Experience Manager Assets] per aggiungere automaticamente i metadati quando le risorse vengono caricate in DAM.
 
-## Aggiungere o modificare i metadati in [!DNL Experience Manager Assets] {#add-edit-metadata}
+## Aggiungi o modifica metadati in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
 Per modificare i metadati di una risorsa nell’interfaccia utente di [!DNL Assets], effettua le seguenti operazioni:
 
@@ -63,7 +63,7 @@ Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario origin
 
 XMP write-back è supportato e abilitato per le piattaforme e i formati di file descritti in [requisiti tecnici.](/help/sites-deploying/technical-requirements.md)
 
-## Modificare le proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
+## Modifica delle proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
 
 [!DNL Adobe Enterprise Manager Assets] consente di modificare contemporaneamente i metadati di più risorse, in modo da poter rapidamente propagare le comuni modifiche dei metadati alle risorse in blocco. Puoi anche modificare i metadati per più raccolte in blocco. Utilizza la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
@@ -90,7 +90,7 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l&#39;aggiun
 >
 >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
-## Importa metadati {#import-metadata}
+## Importare metadati {#import-metadata}
 
 [!DNL Assets] consente di importare in blocco i metadati delle risorse utilizzando un file CSV. È possibile eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Puoi anche acquisire i metadati delle risorse in blocco da sistemi di terze parti in formato CSV.
 
@@ -123,7 +123,7 @@ Per aggiungere data e marca temporale durante l’importazione dei metadati, uti
 >
 >Se il formato della data non corrisponde a `YYYY-MM-DDThh:mm:ss.fff-00:00`, i valori della data non vengono impostati. I formati di data del file CSV dei metadati esportati sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Per importarlo, convertirlo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
 
-## Esporta metadati {#export-metadata}
+## Esportare i metadati {#export-metadata}
 
 Puoi esportare i metadati per più risorse in un formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, [!DNL Experience Manager] analizza le proprietà del nodo della risorsa `jcr:content/metadata` e dei relativi nodi figlio ed esporta le proprietà dei metadati in un file CSV.
 
@@ -152,7 +152,7 @@ Alcuni casi d&#39;uso per esportare i metadati in blocco sono:
 
    *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco.*
 
-## Modifica metadati delle raccolte {#collections-metadata}
+## Modifica dei metadati delle raccolte {#collections-metadata}
 
 Per informazioni dettagliate, consulta [visualizzare e modificare i metadati della raccolta](/help/assets/manage-collections.md#view-edit-collection-metadata) e [modificare i metadati di più raccolte in blocco](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
@@ -234,7 +234,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 >
 >* [Concetti di metadati e comprensione](metadata-concepts.md).
 >* [Modifica delle proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
