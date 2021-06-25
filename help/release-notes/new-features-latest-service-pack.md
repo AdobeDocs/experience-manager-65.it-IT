@@ -4,9 +4,9 @@ description: Novità in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
 
 >[!NOTE]
 >
->A partire da AEM Service Pack 9, i clienti [!DNL Experience Manager] possono sviluppare e utilizzare le loro applicazioni [!DNL Experience Manager] con distribuzioni delle [!DNL Azul Zulu] build di OpenJDK, conformi agli standard di Java SE.
+>A partire da [!DNL Experience Manager] Service Pack 9, [!DNL Experience Manager] i clienti possono sviluppare e utilizzare le loro applicazioni [!DNL Experience Manager] con distribuzioni delle [!DNL Azul Zulu] build di OpenJDK, conformi agli standard di Java SE.
 >Il supporto per i [!DNL Azul Zulu] JDK è fornito anche da Adobe ai clienti [!DNL Experience Manager].
 >È possibile scaricare le versioni pertinenti dei JDK di [!DNL Azul Zulu] da [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >I diritti di utilizzo della tecnologia Oracle Java, come distribuiti per Adobe, scadranno entro la fine di dicembre 2022. [!DNL Experience Manager] I clienti sono incoraggiati a pianificare e implementare l’utilizzo di  [!DNL Azul Zulu] JDK al più tardi entro questa data. Per ulteriori informazioni sull&#39;utilizzo della tecnologia [!DNL Oracle Java] e della tecnologia [!DNL Azul Zulu], consulta le [Domande frequenti ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associate.
@@ -36,49 +36,23 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
 
 * Aggiornamento della denominazione delle impostazioni locali e delle regioni cinesi relative a Hong Kong, Macao e Taiwan, per renderle coerenti con le opinioni sociali e politiche cinesi.
 
-* Viene introdotta una configurazione facoltativa per le lettere minuscole degli ID e-mail nella risposta API ACP da [!DNL Adobe Experience Manager].
+* È stata introdotta una configurazione opzionale per modificare la casing negli ID e-mail nella risposta API ACP da [!DNL Adobe Experience Manager].
 
-   ![configurazione per abbassare gli ID e-mail nella risposta ACP da AEM](assets/email-lowcase-config.png)
+   ![configurazione per modificare gli ID e-mail in lettere minuscole nella risposta ACP da  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Il contrasto (con sfondo) di testo e icone in varie posizioni è migliorato in base alle linee WCAG, per renderlo accessibile agli utenti con visione limitata e percezione del colore. Per ulteriori informazioni, consulta [Miglioramenti all’accessibilità in Assets](sp-release-notes.md#assets-accessibility-6590).
+* Il contrasto di testo e icone sullo sfondo è migliorato per varie funzioni. Questa implementazione delle linee guida WCAG rende [!DNL Assets] più accessibile agli utenti con una visione e una percezione dei colori limitate. Vedi [miglioramenti all&#39;accessibilità in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Gli elementi multimediali dinamici sono più ](sp-release-notes.md#assets-accessibility-6590) accessibili in termini di:
+* [[!DNL Dynamic Media] è più ](sp-release-notes.md#assets-accessibility-6590) accessibile in termini di:
 
-   * facilità di utilizzo con i tasti della tastiera.
-   * contrasto (con sfondo) di testo, testo segnaposto e controlli in vari editor.
-   * accessibilità e narrazione per assistenti vocali.
+   * Facilità di utilizzo con i tasti della tastiera.
+   * Contrasto (con sfondo) di testo, testo segnaposto e controlli in vari editor.
+   * Accessibilità e narrazione da parte degli assistenti vocali.
 
-* L&#39;ottimizzazione DPR (Device Pixel Ratio) e della larghezza di banda della rete per l&#39;imaging intelligente consente di fornire immagini di qualità superiore in modo efficiente; su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti sull’imaging avanzato](/help/assets/imaging-faq.md).
+* L&#39;ottimizzazione DPR (Device Pixel Ratio) e della larghezza di banda della rete per l&#39;imaging intelligente consente di fornire immagini di qualità superiore in modo efficiente; su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per informazioni dettagliate e sulla timeline, consulta [domande frequenti relative all’imaging intelligente](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La timeline della versione per i miglioramenti di Smart imaging riportati sopra è:
-   >
-   >* Nord America 24 maggio 2021 in NA,
-      >
-      >
-   * Europa, Medio Oriente e Africa 25 giugno 2021,
-      >
-      >
-   * Asia-Pacifico, 19 luglio 2021.
-
-
-* È stato introdotto il supporto per il formato immagine AVIF di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt). Per ulteriori informazioni, consulta [servizio immagini e rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >La timeline della versione per il supporto AVIF è la seguente:
-   >
-   >* Nord America 10 maggio 2021,
-      >
-      >
-   * Europa, Medio Oriente e Africa 24 maggio 2021,
-      >
-      >
-   * Asia-Pacifico, 24 giugno 2021.
-
+* [!DNL Dynamic Media] delivery (modificatore `fmt` URL) ora supporta il formato immagine AVIF (formato immagine AV1) di nuova generazione. Per ulteriori dettagli e timeline, consulta [servizio immagini e rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -94,7 +68,7 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
 
 Ora puoi inviare un messaggio e-mail di notifica a un indirizzo e-mail di gruppo utilizzando il passaggio del flusso di lavoro Assegna attività .
 
-### Possibilità di recuperare una bozza di comunicazione interattiva dopo aver modificato la comunicazione interattiva di origine {#retrieve-draft-after-source-modifications}
+### Possibilità di recuperare una bozza di comunicazione interattiva dopo aver modificato l&#39;origine della comunicazione interattiva {#retrieve-draft-after-source-modifications}
 
 È ora possibile recuperare una comunicazione interattiva salvata come bozza dopo aver apportato modifiche alla comunicazione interattiva di origine.
 
@@ -102,7 +76,7 @@ Ora puoi inviare un messaggio e-mail di notifica a un indirizzo e-mail di gruppo
 
 Il servizio reCAPTCHA utilizza `https://www.recaptcha.net/` come dominio predefinito. Ora puoi modificare le impostazioni per impostare `https://www.google.com/` o qualsiasi nome di dominio personalizzato per il caricamento, il rendering e la convalida del servizio reCAPTCHA.
 
-### Miglioramenti dei dati di input per il passaggio del flusso di lavoro [!UICONTROL Invoke Form Data Model Service] {#input-data-enhancements-fdm}
+### Miglioramenti dei dati di input per la fase del flusso di lavoro [!UICONTROL Invoke Form Data Model Service] {#input-data-enhancements-fdm}
 
 Quando si seleziona un modello di dati modulo e un servizio nel passaggio del flusso di lavoro [!UICONTROL Invoke Form Data Model Service], è possibile specificare gli argomenti del servizio per i dati di input.
 
@@ -112,15 +86,15 @@ Se si seleziona l&#39;opzione [!UICONTROL Relativo al payload] per allegare un f
 
 È ora possibile utilizzare più pagine master in un modello Documento di record. Di conseguenza, ora è possibile avere intestazione, piè di pagina, font, informazioni sul logo nella pagina del titolo e in altre pagine del modello.
 
-### Interruzioni della pagina di supporto nel documento di record {#support-page-breaks-dor}
+### Interruzioni della pagina del supporto nel documento di registrazione {#support-page-breaks-dor}
 
 È ora possibile aggiungere interruzioni di pagina a un documento di record. Di conseguenza, se un pannello si interrompe all’interno delle pagine, è possibile aggiungere un’interruzione di pagina per spostare il pannello in una nuova pagina in un documento di record.
 
-## Funzioni principali nei [!DNL Experience Manager] Service Pack 6.5 precedenti {#key-features-previous-service-packs}
+## Funzioni principali nei Service Pack [!DNL Experience Manager] 6.5 precedenti {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### Ordina le pagine Live Copy disponibili per il rollout (6.5.8.0) {#sort-livecopy-pages}
+#### Ordinare le pagine Live Copy disponibili per il rollout (6.5.8.0) {#sort-livecopy-pages}
 
 Ora puoi ordinare le pagine Live Copy disponibili per il rollout utilizzando le proprietà [!UICONTROL Name], [!UICONTROL Last modified date] e [!UICONTROL Last rollout date] . La [!UICONTROL Data ultimo rollout] per una pagina è una nuova proprietà introdotta in questa versione.
 
@@ -164,7 +138,7 @@ L’operazione Sposta pagina è ora disponibile in modalità asincrona. Oltre al
 
 È ora possibile selezionare gli stili all’interno della finestra di dialogo del componente utilizzando il sistema di stili avanzato.
 
-#### Miglioramenti delle prestazioni in varie aree (6.5.4.0) {#performance-improvements}
+#### Miglioramenti delle prestazioni in vari settori (6.5.4.0) {#performance-improvements}
 
 * Riduzione del tempo necessario per caricare e inizializzare ContextHub all&#39;interno di un sito (`contexthub.kernel.js`). Ne risulta un caricamento più rapido delle pagine durante una visita al sito.
 
@@ -240,7 +214,7 @@ Il supporto per le immagini 3D in [!DNL Dynamic Media] consente ai clienti di pu
 
 * Pubblica e visualizza risorse 3D comuni sulle [!DNL Experience Manager Sites] pagine utilizzando il componente [!DNL Sites] WCM .
 
-#### Configura [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
+#### Configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
 Il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal] viene modificato. In precedenza, [!DNL Brand Portal] era configurato nell’interfaccia classica tramite la versione precedente del gateway OAuth, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione. [!DNL Experience Manager Assets] è ora configurato con  [!DNL Brand Portal] tramite  [!DNL Adobe I/O], che fornisce un token IMS per l’autorizzazione del  [!DNL Brand Portal] tenant.
 
@@ -323,11 +297,11 @@ La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile
 
 [!DNL Experience Manager Forms] ora supporta i gruppi di disponibilità Always On di  [!DNL Microsoft] SQL Server 2016 per le distribuzioni OSGi ad alta disponibilità.
 
-#### Configurazione del client HTTP del modello dati del modulo per ottimizzare le prestazioni (6.5.7.0) {#fdm-http-client-config}
+#### Configurazione del client HTTP del modello dati modulo per ottimizzare le prestazioni (6.5.7.0) {#fdm-http-client-config}
 
 [!DNL Experience Manager Forms] modello di dati modulo per l’integrazione con i servizi web RESTful come origine dati ora include configurazioni client HTTP per l’ottimizzazione delle prestazioni. Consulta [Configurare origini dati](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
-#### Disponibilità dell’opzione Ripristina per ogni componente nella modalità Layout (6.5.7.0) {#reset-option-layout-mode}
+#### Disponibilità dell’opzione Ripristina per ciascun componente in modalità Layout (6.5.7.0) {#reset-option-layout-mode}
 
 È ora possibile utilizzare l’opzione di reimpostazione per ciascun componente in modalità Layout di un modulo adattivo. Quando definisci un layout a più colonne per un pannello, puoi utilizzare questa funzione per reimpostare i singoli componenti all’interno del pannello. Consulta [Utilizzare la modalità di layout per ridimensionare i componenti](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
@@ -364,19 +338,19 @@ Il modello dati modulo consente di salvare l’output di un servizio del modello
 
 È ora possibile [allegare più file](../../help/forms/using/introduction-forms-authoring.md) al componente [!UICONTROL File allegato] dei moduli adattivi.
 
-#### Personalizzare le colonne della casella in entrata Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
+#### Personalizzare le colonne della Casella in entrata Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
 
 È possibile personalizzare una [!DNL Experience Manager] casella in entrata per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro. I membri del gruppo `administrators` o `workflow-administrators` possono personalizzare le colonne. Per ulteriori informazioni, consulta [Controllo amministratore](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Personalizzare le colonne della casella in entrata di Experience Manager](assets/customize-columns.gif)
 
-#### Salva le comunicazioni interattive come bozza (6.5.5.0) {#save-as-draft}
+#### Possibilità di salvare le comunicazioni interattive come bozza (6.5.5.0) {#save-as-draft}
 
 Puoi utilizzare l’interfaccia utente dell’agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. Potete specificare un nome diverso per ogni bozza da identificare. Per ulteriori informazioni, consulta [Salvare le comunicazioni interattive come bozza](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Salva come bozza](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] supporto di application server (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] supporto di application server (6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms ha aggiunto il supporto per [!DNL Oracle WebLogic 12] per Adobe Experience Manager Forms su JEE. Puoi eseguire l’aggiornamento da una versione precedente o impostare un nuovo Forms Experience Manager 6.5 sul server JEE su [!DNL Oracle WebLogic] 12.2.1.4 e versioni successive. Successivamente corrisponde alle modifiche minori, dove x in 12.2.1.x viene sostituito con un numero di versione.
 
@@ -434,16 +408,16 @@ Experience Manager Forms include i seguenti miglioramenti all’accessibilità:
 
 * Ogni pagina di un modulo adattivo ora include un titolo e un’etichetta di riferimento principale.
 
-#### Condividi e richiedi l’accesso agli elementi in entrata di un utente Forms di Experience Manager (6.5.3.0) {#share-request-access}
+#### Condividere e richiedere l’accesso agli elementi in entrata di un utente Experience Manager Forms (6.5.3.0) {#share-request-access}
 
 È possibile condividere gli elementi della casella in entrata con un altro utente. Una volta che un altro utente ottiene l&#39;accesso agli elementi della casella in entrata, può richiedere e intraprendere le azioni appropriate sugli elementi condivisi. Allo stesso modo, puoi richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consulta [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
 
-#### Configurare le impostazioni fuori sede per gli elementi in entrata di un utente Forms di Experience Manager (6.5.3.0) {#configure-out-of-office}
+#### Configurare le impostazioni predefinite per gli elementi in entrata di un utente Forms di Experience Manager (6.5.3.0) {#configure-out-of-office}
 
 Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade agli articoli che vi vengono assegnati per quel periodo.
 Puoi specificare una data e un’ora di inizio e una data e un’ora di fine per rendere effettive le impostazioni fuori sede. Puoi impostare una persona predefinita a cui vengono inviati tutti gli elementi. Consultare [Configurare le impostazioni fuori sede](../forms/using/configure-out-of-office-settings.md).
 
-#### Generare più comunicazioni interattive utilizzando l&#39;API Batch per Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
+#### Generare più comunicazioni interattive utilizzando l’API Batch per Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
 
 Puoi utilizzare l’API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L’API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consulta [Generare più comunicazioni interattive utilizzando l&#39;API Batch](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
