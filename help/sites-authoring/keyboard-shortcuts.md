@@ -42,7 +42,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di selezionare l’opzione del [selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector) da visualizzare |
-|  | ` | Nasconde la barra |
+|  | &grave; | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
