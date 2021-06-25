@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3838'
 ht-degree: 4%
 
 ---
@@ -115,6 +115,29 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5
 
 ### [!DNL Assets] {#assets-6590}
 
+I seguenti miglioramenti dell’esperienza utente vengono eseguiti in [!DNL Assets]:
+
+* Per visualizzare le risorse non ordinate in base ai parametri [!UICONTROL Crea], [!UICONTROL Modifica] o [!UICONTROL Nome], [!DNL Adobe Experience Manager] offre un&#39;opzione [!UICONTROL Nessuno] nelle opzioni [!UICONTROL Ordina per]. L’opzione [!UICONTROL None] assicura che le risorse nell’interfaccia utente di Assets (nella vista a schede, colonne e informazioni approfondite) siano nello stesso ordine in cui esistono nel nodo JCR (NPR-36356).
+
+* Per impostare l’ID e-mail in minuscolo nella risposta API ACP da [!DNL Adobe Experience Manager], è stata introdotta un’impostazione opzionale; poiché gli utenti [!DNL Adobe Asset Link] non potevano archiviare le risorse se il loro ID non conteneva tutti i caratteri in lettere minuscole. Il pannello [!DNL Adobe Asset Link] utilizza la risposta API ACP da [!DNL Adobe Experience Manager] (CQ-4317704).
+
+[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] fornisce i seguenti miglioramenti dell’accessibilità.
+
+È stato migliorato il contrasto (con lo sfondo) del testo e delle icone seguenti, in modo che gli utenti con visione limitata e percezione del colore possano comprendere:
+
+* Titolo della risorsa sulla pagina [!UICONTROL Proprietà] (NPR-35967).
+* Icone di valutazione a stella nelle sezioni [!UICONTROL Valutazione] in vari punti (NPR-36009).
+* Testo nella vista a schede della risorsa e della cartella (NPR-35966).
+* Testo segnaposto nella vista [!UICONTROL Timeline] (NPR-35965).
+* Nomi di risorse nei risultati di ricerca delle risorse (NPR-35964).
+* Testo segnaposto nella finestra di dialogo [!UICONTROL Condivisione collegamenti] (NPR-35963).
+* [!UICONTROL Metadati],  [!UICONTROL stato] e   altro testo nell’opzione   Elenco nella finestra di dialogo  [!UICONTROL Visualizza ] impostazioni (NPR-35910).
+*  Posizione e  [!UICONTROL tipo per la ] ricerca di testi segnaposto nella ricerca globale (NPR-35909).
+* Espandi e comprimi le icone sotto la [!UICONTROL Struttura contenuto] (NPR-35908).
+* Il testo [!UICONTROL Risorse] nella pagina in cui vengono visualizzate le cartelle di risorse (NPR-35905).
+* Testo in [!UICONTROL Metadati risorsa], [!UICONTROL Statistiche di utilizzo] all’interno dell’opzione [!UICONTROL Panoramica] nella pagina dei dettagli della risorsa (NPR-35904).
+* Testo dei tasti di scelta rapida per le opzioni [!UICONTROL proprietà] e [!UICONTROL modifica] nella pagina dei dettagli della risorsa (NPR-35904).
+
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] risolve i seguenti problemi.
 
 * I tag creati all’interno di un elemento di selezione dei tag in un modulo [!UICONTROL Folder Metadata Schema] non vengono salvati (NPR-36119).
@@ -141,61 +164,14 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5
 
 * Le cartelle DAM non possono essere eliminate o spostate e viene registrata un&#39;eccezione (NPR-35942).
 
-#### Miglioramenti nelle risorse {#assets-enhancements}
-
-* È stata introdotta l’opzione [!UICONTROL None] nella vista a schede, colonne e informazioni per ordinare le risorse nell’ordine in cui sono memorizzate nel nodo JCR (NPR-36356).
-
-* È stata aggiunta un’opzione per aggiungere l’ID e-mail in lettere minuscole nella risposta API da Adobe Experience Manager (CQ-4317704).
-
-#### Miglioramenti all’accessibilità in Assets {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] fornisce i seguenti miglioramenti dell’accessibilità.
-
-È stato migliorato il contrasto (con lo sfondo) del testo e delle icone seguenti, in modo che gli utenti con visione limitata e percezione del colore possano comprendere:
-
-* titolo della risorsa sulla pagina [!UICONTROL Proprietà] (NPR-35967).
-* icone di classificazione a stella nelle sezioni [!UICONTROL Valutazione] in vari punti (NPR-36009).
-* testo nella vista a schede delle risorse e delle cartelle (NPR-35966).
-* testo segnaposto nella vista [!UICONTROL Timeline] (NPR-35965).
-* nomi di risorse nei risultati di ricerca delle risorse (NPR-35964).
-* testo segnaposto nella finestra di dialogo [!UICONTROL Condivisione collegamenti] (NPR-35963).
-* [!UICONTROL Metadati],  [!UICONTROL stato] e   altro testo nell’opzione   Elenco nella finestra di dialogo  [!UICONTROL Visualizza ] impostazioni (NPR-35910).
-*  Posizione e  [!UICONTROL tipo per la ] ricerca di testi segnaposto nella ricerca globale (NPR-35909).
-* espandi e comprimi le icone sotto la [!UICONTROL Struttura contenuto] (NPR-35908).
-* il testo [!UICONTROL Risorse] nella pagina in cui vengono visualizzate le cartelle delle risorse (NPR-35905).
-* testo in [!UICONTROL Metadati risorsa], [!UICONTROL Statistiche di utilizzo] all&#39;interno dell&#39;opzione [!UICONTROL Panoramica] nella pagina dei dettagli della risorsa (NPR-35904).
-* testo per le opzioni dei tasti di scelta rapida per le opzioni [!UICONTROL proprietà] e [!UICONTROL modifica] nella pagina dei dettagli della risorsa (NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dynamic Media]:
-
-* I predefiniti per visualizzatori personalizzati e i CSS non vengono replicati in [!DNL Dynamic Media] quando [!DNL Dynamic Media] viene attivato selettivamente e disabilitato da [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
-
-* Quando tenti di visualizzare in anteprima le rappresentazioni video nella pagina dei dettagli delle risorse, i video vengono caricati lentamente (CQ-4320122).
-
-* La pagina del browser non risponde e rallenta il caricamento di più di 200 risorse con il rilevatore di risorse duplicato abilitato (CQ-4319633).
-
-* Quando una risorsa immagine panoramica viene aggiunta su un componente multimediale panoramico in una pagina, viene registrato un errore di riferimento non rilevato (CQ-4317666).
-
-* Quando il visualizzatore per contenuti multimediali interattivi è implementato con Frammento esperienza, il frammento esperienza non viene aperto dall’editore e viene registrato un errore (CQ-4317655).
-
-* L’opzione Pubblica in Dynamic Media non è disponibile nella visualizzazione Pubblicazione rapida nell’editor di metadati (CQ-4317199).
-
-* Gli autori di siti con autorizzazioni di sola lettura possono utilizzare le funzionalità di ritaglio avanzato sulle risorse e modificare le rappresentazioni ritagliate avanzate. Tuttavia, gli utenti con autorizzazioni di sola lettura non devono essere in grado di modificare le proprietà delle risorse nell’istanza di sviluppo di Sites (CQ-4316450).
-
-* Le annotazioni video non funzionano per i percorsi delle cartelle [!DNL where Dynamic] La configurazione dei file multimediali non è abilitata, anche se l&#39;istanza [!DNL Experience Manager] è impostata in modalità [!DNL Dynamic Media] (CQ-4314950).
-
-* Quando il titolo delle risorse ha caratteri a doppio byte, multibyte, ASCII alto, Cirillico, coppia surrogato, Ebraico, Arabo e GB18030, dopo aver pubblicato su Dynamic Media il titolo della risorsa ha un punto interrogativo (?) (CQ-4311872).
-
-#### Miglioramenti all’accessibilità in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] fornisce i seguenti miglioramenti dell’accessibilità in  [!DNL Dynamic Media].
 
-* Quando apri la finestra di dialogo per aggiungere risorse utilizzando i tasti di tastiera nell’editor di set di immagini:
-   * gli assistenti vocali osservano che la finestra di dialogo viene aperta.
-   * la tastiera si sposta nella finestra di dialogo all’apertura.
-   * lo stato attivo torna all’opzione Aggiungi risorsa quando la finestra di dialogo viene chiusa (CQ-4312134).
+* Quando apri la finestra di dialogo per aggiungere risorse utilizzando i tasti di tastiera nell&#39;editor [!UICONTROL Set immagini]:
+   * Gli assistenti vocali osservano che la finestra di dialogo viene aperta.
+   * Lo stato attivo della tastiera si sposta sulla finestra di dialogo all&#39;apertura.
+   * Lo stato attivo torna all’opzione Aggiungi risorsa quando la finestra di dialogo viene chiusa (CQ-4312134).
 
 * È ora possibile aggiungere e modificare gli hotspot sulle risorse utilizzando i tasti di scelta rapida nell’editor Hotspot (CQ-4305965).
 
@@ -218,6 +194,26 @@ Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dyn
 * Nel campo Titolo della risorsa in Editor set di immagini è ora disponibile un asterisco visivo per indicare un campo obbligatorio, mentre gli assistenti vocali comunicano le informazioni richieste per tale campo (CQ-4290712).
 
 * Gli assistenti vocali ora possono accedere e visualizzare lo scopo di varie opzioni interattive all’interno dei visualizzatori nella pagina dei dettagli delle risorse (CQ-4290708).
+
+Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dynamic Media]:
+
+* I predefiniti per visualizzatori personalizzati e i CSS non vengono replicati in [!DNL Dynamic Media] quando [!DNL Dynamic Media] viene attivato selettivamente e disabilitato da [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+
+* Quando tenti di visualizzare in anteprima le rappresentazioni video nella pagina dei dettagli delle risorse, i video vengono caricati lentamente (CQ-4320122).
+
+* La pagina del browser non risponde e rallenta il caricamento di più di 200 risorse con il rilevatore di risorse duplicato abilitato (CQ-4319633).
+
+* Quando una risorsa immagine panoramica viene aggiunta su un componente multimediale panoramico in una pagina, viene registrato un errore di riferimento non rilevato (CQ-4317666).
+
+* Quando il visualizzatore per contenuti multimediali interattivi è implementato con Frammento esperienza, il frammento esperienza non viene aperto dall’editore e viene registrato un errore (CQ-4317655).
+
+* [!UICONTROL L’opzione Pubblica su Dynamic ] Media non è disponibile nelle opzioni  [!UICONTROL Pubblicazione rapida ] nella pagina   Proprietà (CQ-4317199).
+
+* Gli autori di siti con autorizzazioni di sola lettura possono utilizzare la funzionalità di ritaglio avanzato sulle risorse e modificare le rappresentazioni ritagliate avanzate (CQ-4316450).
+
+* Le annotazioni video non funzionano per i percorsi delle cartelle in cui la configurazione [!DNL Dynamic Media] non è abilitata, anche se l&#39;istanza [!DNL Experience Manager] è impostata in modalità [!DNL Dynamic Media] (CQ-4314950).
+
+* Quando il titolo delle risorse ha caratteri a doppio byte, multibyte, ASCII alto, Cirillico, coppia surrogato, Ebraico, Arabo e GB18030, dopo aver pubblicato su Dynamic Media il titolo della risorsa ha un punto interrogativo (?) (CQ-4311872).
 
 ### Platform {#platform-6590}
 
