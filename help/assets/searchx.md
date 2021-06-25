@@ -1,17 +1,16 @@
 ---
-title: Estendi la funzionalità di ricerca.
+title: Estendere la funzionalità di ricerca
 description: Estendi le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets] oltre i valori predefiniti.
 contentOwner: AG
 role: Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Ricerca
+exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 19%
 
 ---
-
 
 # Estendere la ricerca delle risorse {#extending-assets-search}
 
@@ -248,18 +247,18 @@ Per creare un predicato di gruppo:
 1. Passa al browser e nella pagina di esempio (ad esempio, **press.html**) passa alla modalità di progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserisci il componente nella colonna **Predicati** .
 
-## Widget predicato installati {#installed-predicate-widgets}
+## Widget Predicate installati {#installed-predicate-widgets}
 
 I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 
-### FulltextPredicate {#fulltextpredicate}
+### PredicatoTestoCompleto {#fulltextpredicate}
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `fulltext` |
 | searchCallback | Funzione | Callback per attivare la ricerca sull&#39;evento `keyup`. Impostazione predefinita `CQ.wcm.SiteAdmin.doSearch` |
 
-### Predicato proprietà {#propertypredicate}
+### PropertyPredicate {#propertypredicate}
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
