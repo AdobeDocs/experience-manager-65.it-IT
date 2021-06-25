@@ -2,16 +2,16 @@
 title: Formati di file e tipi MIME supportati
 description: Formati di file e tipi MIME supportati da [!DNL Assets] and [!DNL Dynamic Media] e funzioni supportate per ciascun formato.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Gestione risorse, rappresentazioni
+exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1582'
 ht-degree: 10%
 
 ---
-
 
 # Formati supportati in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
@@ -136,11 +136,11 @@ La libreria di transcodifica delle immagini supporta i tipi MIME JPG/JPEG, PNG (
 
 Consulta [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Telecamera raw supportata {#supported-camera-raw}
+## Immagine della telecamera supportata {#supported-camera-raw}
 
 La libreria [!DNL Adobe Camera Raw] consente a [!DNL Assets] di acquisire immagini non elaborate. Consulta [Supporto Camera Raw](camera-raw.md).
 
-## Formati di documenti [!DNL Assets] supportati {#supported-document-formats}
+## Formati di documento [!DNL Assets] supportati {#supported-document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
@@ -301,7 +301,7 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| TTF | application/rtf |  |  |
+| RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
