@@ -11,9 +11,9 @@ docset: aem65
 feature: Video VR a 360°
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreviewUna risorsa video 360 caricata visualizzata nella vista a schede. La risorsa è etichettata come Multimedia.*
 
-**Per caricare le risorse da utilizzare con il visualizzatore video 360:**
+**Carica le risorse da utilizzare con il visualizzatore video 360:**
 
 1. È stata creata una cartella dedicata alla risorsa video 360.
 1. [Applica un profilo video adattivo alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
    * Idealmente, è meglio che il contenuto video 360 originale abbia una delle seguenti risoluzioni:
 
       * 1080p - 1920 x 1080, noto come risoluzione Full HD o FHD o,
-      * 2160p - 3840 x 2160, noto come risoluzione 4K, UHD o HD Ultra. Questa grande risoluzione del display si trova più spesso su televisori e monitor per computer premium. La risoluzione 2160p viene spesso chiamata &quot;4K&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
+      * 2160p - 3840 x 2160, noto come risoluzione 4k, UHD o HD Ultra. Questa grande risoluzione del display si trova più spesso su televisori e monitor per computer premium. La risoluzione 2160p viene spesso chiamata &quot;4k&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
    * [Crea un ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) profilo video adattivo personalizzato con rappresentazioni di qualità superiore. Ad esempio, crea un profilo video adattivo contenente le tre impostazioni seguenti:
 
       * width=auto; height=720; bitrate=2500 kbps
@@ -74,7 +74,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
 
 1. [Carica il video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Ignorare le proporzioni predefinite di 360 video {#overriding-the-default-aspect-ratio-of-videos}
+## Ignorare le proporzioni predefinite di 360 video  {#overriding-the-default-aspect-ratio-of-videos}
 
 Affinché una risorsa caricata possa qualificarsi come video 360 da usare con il visualizzatore video 360, la risorsa deve avere una proporzione di 2.
 
@@ -91,7 +91,7 @@ Il rapporto di formato si applica a 360 risorse video per la pagina dei dettagli
 
 Inizia caricando 360 video.
 
-## Anteprima dei video 360 {#previewing-video}
+## Anteprima video 360 {#previewing-video}
 
 Puoi usare Anteprima per vedere come si presenta ai clienti il tuo video 360 e assicurarti che funzioni come previsto.
 
