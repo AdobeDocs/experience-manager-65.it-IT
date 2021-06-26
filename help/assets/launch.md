@@ -1,6 +1,7 @@
 ---
 title: Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Experience Platform Launch
 description: L’estensione Dynamic Media Viewers per Experience Platform Launch, insieme a Dynamic Media Viewers 5.13, consente ai clienti di Adobe Analytics e di Platform launch di utilizzare eventi e dati specifici per i visualizzatori Dynamic Media nella configurazione del Platform launch.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +10,7 @@ docset: aem65
 feature: Visualizzatori
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 22a181e77a563ee3590cd661507f4dfeaf9d14da
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
 source-wordcount: '6616'
 ht-degree: 8%
@@ -38,7 +39,7 @@ Per ulteriori informazioni sulle estensioni, consulta [Estensione Adobe](https:/
 * Il supporto per il tracciamento video è limitato solo al tracciamento &quot;riproduzione core&quot;, come descritto in [Panoramica tracciamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particolare, il tracciamento di QoS, annunci, capitoli/segmenti o errori non è supportato.
 * La configurazione della durata di archiviazione per gli elementi dati non è supportata per gli elementi dati che utilizzano l&#39;estensione *Dynamic Media Viewers*. La durata dell&#39;archiviazione deve essere impostata su **[!UICONTROL None]**.
 
-### Casi di utilizzo per l’integrazione {#use-cases-for-the-integration}
+### Casi di utilizzo dell’integrazione {#use-cases-for-the-integration}
 
 L’integrazione con Experience Platform Launch è un caso d’uso principale per i clienti che utilizzano sia Adobe Experience Manager Assets che Adobe Experience Manager Sites. In questi scenari, puoi impostare un’integrazione standard tra il nodo e il Experience Platform Launch di authoring di Experience Manager, quindi associare l’istanza Sites alla proprietà Experience Platform Launch. In seguito, qualsiasi componente WCM di Dynamic Media aggiunto a una pagina Sites terrà traccia dei dati e degli eventi dei visualizzatori.
 
@@ -54,13 +55,13 @@ Consulta [Tracciamento dei visualizzatori Dynamic Media tramite codice di incorp
 
 L’integrazione sfrutta due tipi distinti e indipendenti di tracciamento dei visualizzatori Dynamic Media: *Adobe Analytics* e *Adobe Analytics per audio e video*.
 
-### Informazioni sul tracciamento con Adobe Analytics {#about-tracking-using-adobe-analytics}
+### Informazioni sul tracciamento con Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
 Adobe Analytics consente di tenere traccia delle azioni eseguite dall’utente finale quando interagisce con i visualizzatori Dynamic Media sul sito web. Adobe Analytics consente inoltre di tenere traccia dei dati specifici del visualizzatore. Ad esempio, puoi tenere traccia e registrare gli eventi di caricamento della visualizzazione insieme al nome della risorsa, alle azioni di zoom che si sono verificate e alle azioni di riproduzione video.
 
 Al Experience Platform Launch, i concetti di *Elementi dati* e *Regole* funzionano insieme per abilitare il tracciamento di Adobe Analytics.
 
-#### Informazioni sugli elementi dati nel Experience Platform Launch {#about-data-elements-in-adobe-launch}
+#### Informazioni sugli elementi dati in Experience Platform Launch {#about-data-elements-in-adobe-launch}
 
 Un elemento dati nel Experience Platform Launch è una proprietà denominata il cui valore è definito in modo statico o calcolato in modo dinamico in base allo stato di una pagina web o dei dati dei visualizzatori Dynamic Media.
 
@@ -170,7 +171,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 1. Scegli il livello Ambiente appropriato per l’ambiente della pagina web. Quindi, nella colonna **[!UICONTROL Installa]**, fai clic sull&#39;icona della casella.
 1. **[!UICONTROL Nella finestra di dialogo]** Istruzioni di installazione Web, copiare il codice di incorporamento della libreria di Experience Platform Launch completo insieme ai  `<script/>` tag circostanti.
 
-## Guida di riferimento per l’ estensione Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
+## Guida di riferimento per l’estensione Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### Informazioni sulla configurazione dei visualizzatori Dynamic Media {#about-the-dynamic-media-viewers-configuration}
 
@@ -193,7 +194,7 @@ Se abiliti questa opzione *senza* aver installato l&#39;estensione Adobe Medium 
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
-### Informazioni sugli elementi dati nell’ estensione Dynamic Media Viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
+### Informazioni sugli elementi dati nell’estensione Dynamic Media Viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
 L’unico tipo di elemento di dati fornito dall’estensione Dynamic Media Viewers è **[!UICONTROL Evento visualizzatore]**, proveniente dall’elenco a discesa **[!UICONTROL Data Element Type (Tipo di elemento dati)]**.
 
@@ -246,7 +247,7 @@ In genere, l&#39;editor di elementi dati supporta la selezione della durata di a
 
 Nell’editor delle regole, l’estensione aggiunge nuove opzioni di configurazione per l’editor Eventi. Inoltre, l’editor fornisce un’opzione per fare riferimento manualmente ai parametri dell’evento nell’editor azioni come opzione di breve durata invece di utilizzare elementi dati preconfigurati.
 
-#### Informazioni sull&#39;editor di eventi {#about-the-events-editor}
+#### Informazioni sull’editor di eventi {#about-the-events-editor}
 
 Nell’editor evento, l’estensione Dynamic Media Viewers aggiunge un **[!UICONTROL Tipo evento]** denominato **[!UICONTROL Evento visualizzatore]**.
 
@@ -254,7 +255,7 @@ Quando questa opzione è selezionata, l’editor eventi esegue il rendering del 
 
 ![image2019-8-2_15-13-1](assets/image2019-8-2_15-13-1.png)
 
-#### Informazioni sull&#39;editor Azioni {#about-the-actions-editor}
+#### Informazioni sull’editor Azioni {#about-the-actions-editor}
 
 L’estensione Dynamic Media Viewers consente di utilizzare i parametri evento dei visualizzatori Dynamic Media per mappare le variabili di Analytics nell’editor Imposta variabili dell’estensione Adobe Analytics.
 
@@ -481,7 +482,7 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
 1. Nella parte inferiore dell’elenco delle variabili, fai clic su **[!UICONTROL Salva]**.
 
-### Impostazione di un report {#setting-up-a-report}
+### Impostazione di un rapporto {#setting-up-a-report}
 
 1. In genere, l’impostazione di un rapporto in Adobe Analytics è guidata da specifiche esigenze di progetto. Di conseguenza, una configurazione dettagliata dei rapporti va oltre lo scopo di questa integrazione.
 
@@ -493,7 +494,7 @@ Vedi anche [Guida all&#39;implementazione di Analytics](https://experienceleague
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
-## Configurazione del Experience Platform Launch per l&#39;integrazione {#configuring-adobe-launch-for-the-integration}
+## Configurazione del Experience Platform Launch per l’integrazione {#configuring-adobe-launch-for-the-integration}
 
 Dopo aver configurato il Experience Platform Launch, per l’integrazione verrà impostato quanto segue:
 
