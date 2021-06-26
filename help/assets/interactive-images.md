@@ -11,9 +11,9 @@ docset: aem65
 feature: Immagini interattive
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '4291'
+source-wordcount: '4284'
 ht-degree: 2%
 
 ---
@@ -46,23 +46,23 @@ L’esercitazione illustra i passaggi necessari per integrare le immagini intera
 
 Passaggi per le immagini interattive:
 
-1. **(Facoltativo) Identificazione delle variabili**  dei punti attivi: se utilizzi Risorse di Experience Manager e Dynamic Media come funzionalità autonoma, inizia identificando le variabili dinamiche utilizzate nell’implementazione di Quickview esistente. Quindi, puoi immettere i dati del punto attivo al momento della creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
+1. **(Facoltativo) Identifica le variabili**  dei punti attivi. Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, inizia identificando le variabili dinamiche utilizzate nell’implementazione Quickview esistente. Quindi, puoi immettere i dati del punto attivo al momento della creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
 Tuttavia, se utilizzi Adobe Experience Manager Sites, Adobe Experience Manager eCommerce o entrambi, questo passaggio non è necessario.
 Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Facoltativo) Creazione di un predefinito**  visualizzatore di immagini interattive: personalizza l’immagine grafica utilizzata per rappresentare gli hotspot. La creazione di un proprio predefinito per visualizzatori di immagini interattive non è necessaria se invece desideri utilizzare il predefinito per visualizzatori di immagini interattive preimpostato `Shoppable_Banner`.
+1. **(Facoltativo) Crea un predefinito**  visualizzatore di immagini interattive: personalizza l’immagine grafica utilizzata per rappresentare gli hotspot. La creazione di un proprio predefinito per visualizzatori di immagini interattive non è necessaria se invece desideri utilizzare il predefinito per visualizzatori di immagini interattive preimpostato `Shoppable_Banner`.
 Consulta [(Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Caricamento di un banner immagine**  - Carica i banner immagine che desideri rendere interattivi.
+1. **Carica un banner immagine** : carica i banner immagine che desideri rendere interattivi.
 Consulta [Caricamento di un banner immagine](#uploading-an-image-banner).
 
-1. **Aggiunta di punti attivi a un banner immagine** : aggiungi uno o più punti attivi a un banner immagine e associali ciascuno di essi a un’azione come un collegamento ipertestuale, un Quickview o un frammento esperienza. Dopo aver aggiunto gli hotspot, finirai questa attività pubblicando l&#39;immagine interattiva.
+1. **Aggiungi punti attivi a un banner immagine** : aggiungi uno o più punti attivi a un banner immagine e associali ciascuno di essi a un’azione come un collegamento ipertestuale, un Quickview o un frammento esperienza. Dopo aver aggiunto gli hotspot, finirai questa attività pubblicando l&#39;immagine interattiva.
 
    * Consulta [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-image-banner).
    * Consulta [Anteprima delle immagini interattive](#optional-previewing-interactive-images) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
    * Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md) .
 
-1. **Aggiunta di un’immagine interattiva al sito web o al sito web, ad Experience Manager** : se utilizzi Experience Manager Sites o e-commerce o entrambi, puoi aggiungere l’immagine interattiva a una pagina web in un Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Aggiungi un’immagine interattiva al tuo sito web** : se utilizzi Experience Manager Sites o eCommerce o entrambi, puoi aggiungere l’immagine interattiva a una pagina web nell’Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
    Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, devi copiare il codice di incorporamento sul sito web e quindi integrarlo con la visualizzazione rapida esistente. Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
 
@@ -166,14 +166,14 @@ Puoi applicare lo stesso approccio utilizzato nei tre esempi sopra alla pagina w
 
 La pagina web demo ha diverse miniature di prodotto, ognuna con un pulsante Quickview con etichetta &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser Web ancora attivato, fai clic su ogni pulsante e osserva gli URL registrati di Quickview. Dopo aver attivato tutti e quattro i prodotti Quickview disponibili sulla pagina, si dispone del seguente elenco di richieste Quickview effettuate al backend:
 
-* `/datafeed/Men-Windbreaker.json`
-* `/datafeed/Men-SimpleHenley.json`
-* `/datafeed/Men-CamoPullover.json`
-* `/datafeed/Women-QuiltedDownJacket.json`
+* `/datafeed/Male-Windbreaker.json`
+* `/datafeed/Male-SimpleHenley.json`
+* `/datafeed/Male-CamoPullover.json`
+* `/datafeed/Female-QuiltedDownJacket.json`
 
 Osservando le chiamate al server, puoi vedere che le informazioni specifiche per il prodotto sono presenti solo nel percorso della richiesta. Noterai inoltre che la stringa di query non viene utilizzata e che sono presenti due tipi distinti di parti di dati:
 
-* Il primo tipo è Uomo o Donna. Puoi chiamare questa &quot;categoria di prodotto&quot;.
+* Il primo tipo è Maschio o Femmina. Puoi chiamare questa &quot;categoria di prodotto&quot;.
 * Il secondo tipo è il nome del prodotto, ad esempio CamoPullover. Si può presumere che questa informazione sia il prodotto SKU.
 
 Considerate queste informazioni, l&#39;intero URL della visualizzazione rapida ha il seguente pattern:
@@ -228,7 +228,7 @@ Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [
 
    Ora puoi aggiungere punti attivi al banner immagine; consulta l’attività successiva di seguito.
 
-## Aggiunta di hotspot a un banner immagine {#adding-hotspots-to-an-image-banner}
+## Aggiunta di punti attivi a un banner immagine {#adding-hotspots-to-an-image-banner}
 
 Puoi aggiungere punti attivi a un banner immagine utilizzando l’editor nella pagina Gestione dei punti attivi.
 
@@ -284,7 +284,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 
          * Consultare [Identificazione di variabili di punti attivi](#optional-identifying-hotspot-variables); devi definire queste variabili.
          * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
-         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Mens` è una variabile aggiunta.
+         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Males` è una variabile aggiunta.
    * Toccare **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se sei un cliente di Experience Manager Sites, tocca o fai clic sull’icona Selettore sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
@@ -334,7 +334,7 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dyn
 1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
 1. Tocca i punti attivi sull’immagine per testare le azioni associate.
 
-## Pubblicazione delle risorse di immagini interattive {#publishing-interactive-image-assets}
+## Pubblicazione delle risorse immagine interattive {#publishing-interactive-image-assets}
 
 Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md) .
 
@@ -358,7 +358,7 @@ Utilizzo del sito web demo come esempio:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-L&#39;immagine dei tre uomini è un tag statico `IMG` :
+Osserva che l&#39;immagine dei tre maschi è un tag statico `IMG`:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -379,7 +379,7 @@ Consultare [crop](https://experienceleague.adobe.com/docs/dynamic-media-develope
 
 È ora possibile integrare l’immagine interattiva con una Quickview esistente sul sito web.
 
-## Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrazione di un’immagine interattiva con una Quickview esistente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Questa attività si applica solo se sei un cliente di Experience Manager Assets autonomo.
