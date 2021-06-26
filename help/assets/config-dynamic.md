@@ -1,6 +1,7 @@
 ---
 title: Configurazione di Dynamic Media - Modalità ibrida
 description: Scopri come configurare Dynamic Media - Modalità ibrida.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configurazione,Modalità ibrida
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '7838'
 ht-degree: 1%
 
 ---
@@ -52,11 +53,11 @@ Altri contenuti, come visualizzatori Dynamic Media, pagine del sito e contenuto 
 
 Se sei un cliente di Dynamic Media, devi utilizzare la consegna ibrida come meccanismo di consegna per tutti i contenuti Dynamic Media.
 
-## Architettura di pubblicazione ibrida per video {#hybrid-publishing-architecture-for-videos}
+## Architettura di pubblicazione ibrida per i video {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-506](assets/chlimage_1-428.png)
 
-## Architettura di pubblicazione ibrida per immagini {#hybrid-publishing-architecture-for-images}
+## Architettura di pubblicazione ibrida per le immagini {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
@@ -187,25 +188,25 @@ Per abilitare Dynamic Media, è necessario abilitare la modalità di esecuzione 
 
    Questi registri vengono utilizzati solo quando Dynamic Media è abilitato. Non sono inclusi nel pacchetto **Scarica completo** generato dalla pagina `system/console/status-Bundlelist`; quando chiami l&#39;Assistenza clienti in caso di problemi con Dynamic Media, aggiungi entrambi i registri al problema.
 
-### Se hai installato Experience Manager su una porta o un percorso contestuale diverso ... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Se hai installato Experience Manager in una porta o un percorso contestuale diverso ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Se distribuisci [Experience Manager a un server applicazioni](/help/sites-deploying/application-server-install.md) e hai Dynamic Media abilitato, devi configurare il dominio **self** nell&#39;esternalizzatore. In caso contrario, la generazione di miniature per le risorse non funziona correttamente per le risorse Dynamic Media.
+Se distribuisci [Experience Manager a un server applicazioni](/help/sites-deploying/application-server-install.md) e hai Dynamic Media abilitato, devi configurare l&#39; **dominio autonomo** nell&#39;esternalizzatore. In caso contrario, la generazione di miniature per le risorse non funziona correttamente per le risorse Dynamic Media.
 
-Inoltre, se esegui quickstart su una porta o un percorso contestuale diverso, devi anche modificare il dominio **self** .
+Inoltre, se esegui quickstart su una porta o un percorso contestuale diverso, devi anche modificare il **dominio autonomo**.
 
 Quando Dynamic Media è abilitato, le rappresentazioni di miniature statiche per le risorse di immagini vengono generate utilizzando Dynamic Media. Affinché la generazione delle miniature funzioni correttamente per Dynamic Media, Experience Manager deve eseguire una richiesta URL a se stesso e deve conoscere sia il numero di porta che il percorso contestuale.
 
 Experience Manager:
 
-* Il dominio **self** nell&#39; [esternalizzatore](/help/sites-developing/externalizer.md) viene utilizzato per recuperare sia il numero di porta che il percorso contestuale.
-* Se non è configurato alcun dominio **self**, il numero di porta e il percorso contestuale vengono recuperati dal servizio Jetty HTTP.
+* Il **self-domain** nel [esternalizer](/help/sites-developing/externalizer.md) viene utilizzato per recuperare sia il numero di porta che il percorso contestuale.
+* Se non è configurato alcun **self-domain**, il numero di porta e il percorso contestuale vengono recuperati dal servizio Jetty HTTP.
 
-In un Experience Manager di distribuzione QuickStart WAR, non è possibile derivare il numero di porta e il percorso del contesto, pertanto è necessario configurare un dominio **self**. Consulta la documentazione [esternalizzatore](/help/sites-developing/externalizer.md) su come configurare il dominio **self** .
+In un Experience Manager di distribuzione QuickStart WAR, non è possibile derivare il numero di porta e il percorso del contesto, pertanto è necessario configurare un **dominio autonomo**. Consulta la [documentazione esternalizzatore](/help/sites-developing/externalizer.md) su come configurare il **dominio autonomo**.
 
 >[!NOTE]
-In una distribuzione autonoma [Experience Manager Quickstart](/help/sites-deploying/deploy.md), in genere non è necessario configurare un dominio **self** perché il numero di porta e il percorso del contesto possono essere configurati automaticamente. Tuttavia, se tutte le interfacce di rete sono disattivate, è necessario configurare il dominio **self** .
+In una [distribuzione autonoma di Quickstart di Experience Manager](/help/sites-deploying/deploy.md), in genere non è necessario configurare un **dominio autonomo** perché il numero di porta e il percorso del contesto possono essere configurati automaticamente. Tuttavia, se tutte le interfacce di rete sono disattivate, è necessario configurare il **dominio autonomo**.
 
-## Disabilitazione di Dynamic Media {#disabling-dynamic-media}
+## Disabilitazione di Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media non è abilitato per impostazione predefinita. Tuttavia, se Dynamic Media è già stato abilitato in precedenza, è possibile disattivarlo in un secondo momento.
 
@@ -350,7 +351,7 @@ Replication test succeeded
 
 Quando configuri l’autenticazione, ecco alcuni problemi che puoi incontrare con le loro soluzioni. Prima di verificare questi problemi, assicurati di aver configurato la replica.
 
-#### Problema: Codice di stato HTTP 401 con messaggio - Autorizzazione necessaria {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Codice di stato HTTP 401 con messaggio - Autorizzazione richiesta {#problem-http-status-code-with-message-authorization-required}
 
 Questo problema può essere causato da un errore durante la configurazione del KeyStore per l&#39;utente `dynamic-media-replication`.
 
@@ -376,7 +377,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 **Soluzione:**
 controlla che il  `KeyStore` venga salvato in  **dynamic-media-** replicationuser e che sia fornita la password corretta.
 
-#### Problema: Impossibile decrittografare la chiave - Impossibile decrittografare i dati {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### Problema: Impossibile Decrittare La Chiave - Impossibile Decrittografare I Dati {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -414,7 +415,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 **Soluzione:**
 assicurati che la proprietà di sistema sia  `-Djavax.net.ssl.trustStore=` impostata su un truststore valido per il processo Java™ sull&#39;autore di Experienci Manager.
 
-#### Problema: KeyStore non è configurato o non è inizializzato {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: KeyStore non configurato o non inizializzato {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Questo problema è probabilmente causato da un hotfix o da un feature pack che sovrascrive il nodo dynamic-media-user o keystore.
 
@@ -443,7 +444,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. Tocca **[!UICONTROL Prova connessione]** per verificare che la configurazione sia valida.
 
-#### Problema: L&#39;agente di pubblicazione utilizza SSL invece di OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### Problema: L’agente di pubblicazione utilizza SSL invece di OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 Questo problema è probabilmente causato da un hotfix o da un feature pack che non è stato installato correttamente o ha sovrascritto le impostazioni.
 
@@ -547,7 +548,7 @@ Al termine di questa attività, disponi di un file di pacchetto contenente i pre
 1. Crea il pacchetto.
 1. Scarica o condividi il pacchetto predefinito di Video Analytics in modo che possa essere condiviso con i nuovi nodi Autore successivi.
 
-### Installazione del pacchetto predefinito di Video Analytics prima di configurare altri nodi Autore {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Installazione del pacchetto predefinito di Video Analytics prima di configurare altri nodi Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Assicurati di completare questa attività ***prima*** di configurare la configurazione Dynamic Media (Pre 6.3). In caso contrario, verrà creata un’altra suite di rapporti non utilizzata. Inoltre, anche se il reporting video continua a funzionare correttamente, la raccolta dei dati non viene ottimizzata.
 
@@ -557,7 +558,7 @@ Assicurati che il pacchetto predefinito di Video Analytics dal primo nodo Autore
 1. Installa il pacchetto predefinito di Video Analytics.
 1. Configurazione di Dynamic Media (prima della versione 6.3).
 
-### Verifica e debugging dell&#39;installazione del pacchetto {#verifying-and-debugging-the-package-installation}
+### Verifica e debug dell’installazione del pacchetto {#verifying-and-debugging-the-package-installation}
 
 1. Esegui una delle seguenti operazioni per verificare e, se necessario, eseguire il debug dell&#39;installazione del pacchetto:
 
@@ -638,7 +639,7 @@ Pubblica le impostazioni di catalogo predefinite come parte del processo di conf
 1. Tocca la scheda **[!UICONTROL Replica]** .
 1. Tocca **[!UICONTROL Replicare]**.
 
-## Replicazione dei predefiniti visualizzatore {#replicating-viewer-presets}
+## Replica dei predefiniti per visualizzatori {#replicating-viewer-presets}
 
 Per fornire *una risorsa con un predefinito visualizzatore, devi replicare/pubblicare* il predefinito visualizzatore. Per ottenere l’URL o il codice di incorporamento di una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* replicati.
 Per ulteriori informazioni, consulta [Pubblicazione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) .
@@ -660,9 +661,9 @@ Oltre a replicare le risorse, vengono replicate anche le seguenti non-risorse:
 
 I filtri ti consentono di *escludere* risorse dalla replica nel nodo di pubblicazione Experience Manager.
 
-### Utilizzo dei filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
+### Utilizzo di filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
 
-Se utilizzi Dynamic Media per l’imaging (1) nella produzione di immagini e video **o** (2), puoi utilizzare i filtri predefiniti forniti da Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
+Se si utilizza Dynamic Media per l&#39;imaging (1) nella produzione di immagini e video *o* (2), è possibile utilizzare i filtri predefiniti forniti in Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
 <table>
  <tbody>
@@ -964,7 +965,7 @@ Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
  </tbody>
 </table>
 
-## Configurazione di Dynamic Media Color Management {#configuring-dynamic-media-color-management}
+## Configurazione della gestione del colore Dynamic Media {#configuring-dynamic-media-color-management}
 
 La gestione del colore di Dynamic Media consente di colorare le risorse corrette per l’anteprima.
 
@@ -996,7 +997,7 @@ Per utilizzare le funzionalità di gestione del colore di Dynamic Media, install
 
 1. Installare il feature pack.
 
-### Configurazione dei profili colore predefiniti {#configuring-the-default-color-profiles}
+### Configurazione dei profili di colore predefiniti {#configuring-the-default-color-profiles}
 
 Dopo aver installato il feature pack, configurate i profili di colore predefiniti appropriati per abilitare la correzione del colore durante la richiesta di dati immagine RGB o CMYK.
 
@@ -1092,11 +1093,11 @@ Sono installati i seguenti profili di colore:
  <tbody>
   <tr>
    <th><p>Nome</p> </th>
-   <th><p>Spazio colore</p> </th>
+   <th><p>Spazio dei colori</p> </th>
    <th><p>Descrizione</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1138,12 +1139,12 @@ Sono installati i seguenti profili di colore:
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Scala Euro V2</td>
   </tr>
   <tr>
    <td>EuroscaleNon rivestito</td>
    <td>CMYK</td>
-   <td>Euroscala non rivestita v2</td>
+   <td>Scala euro non rivestita v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
@@ -1315,6 +1316,6 @@ Consulta [Distribuzione di risorse Dynamic Media](/help/assets/delivering-dynami
  </tbody>
 </table>
 
-### Componenti WCM Dynamic Media e File multimediali interattivi {#wcm-dynamic-media-and-interactive-media-components}
+### WCM Dynamic Media e componenti multimediali interattivi {#wcm-dynamic-media-and-interactive-media-components}
 
 Le pagine WCM che fanno riferimento a componenti Dynamic Media e Interactive Media fanno riferimento al servizio di consegna.
