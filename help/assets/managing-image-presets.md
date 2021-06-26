@@ -2,6 +2,7 @@
 title: Gestione dei predefiniti per immagini Dynamic Media
 description: Comprendere i predefiniti immagine di Dynamic Media e imparare a creare, modificare e gestire i predefiniti immagine
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
+mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,14 +13,14 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefiniti immagini
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3851'
 ht-degree: 8%
 
 ---
 
-# Gestione dei predefiniti immagine Dynamic Media{#managing-image-presets}
+# Gestione dei predefiniti per immagini Dynamic Media{#managing-image-presets}
 
 I predefiniti per immagini consentono ad Adobe Experience Manager Assets di distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Ogni predefinito per immagini rappresenta un insieme predefinito di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito per immagini, scegli una dimensione per la distribuzione delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine sia ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
 
@@ -33,7 +34,7 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 >
 >La funzione Smart imaging funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base al browser o alla velocità di connessione di rete. Per ulteriori informazioni, consulta [Smart imaging](/help/assets/imaging-faq.md) .
 
-## Informazioni sui predefiniti immagine Dynamic Media {#understanding-image-presets}
+## Informazioni sui predefiniti per immagini Dynamic Media {#understanding-image-presets}
 
 Come una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponiamo che il sito web richieda che ogni immagine del prodotto venga visualizzata in dimensioni diverse, in formati diversi e con tassi di compressione per la distribuzione desktop e mobile.
 
@@ -47,7 +48,7 @@ Le immagini a dimensioni ridotte quando vengono consegnate in modo dinamico poss
 
 Gli amministratori possono creare i predefiniti per immagini. Per creare un predefinito per immagini, puoi iniziare da zero o da uno esistente e salvarlo con un nuovo nome.
 
-## Gestione dei predefiniti immagine Dynamic Media {#managing-image-presets-1}
+## Gestione dei predefiniti per immagini Dynamic Media {#managing-image-presets-1}
 
 Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti , infine passa a **[!UICONTROL Risorse > Predefiniti immagine]**.
 
@@ -67,7 +68,7 @@ Per gestire i predefiniti immagine in Experience Manager, tocca o fai clic sul l
 >
 >Il sistema mostra diverse rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** nella Vista dettagli di una risorsa. Puoi aumentare o diminuire il numero di predefiniti immagine da visualizzare. Consulta [Aumento del numero di predefiniti immagine da visualizzare](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF avanzati {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Smart crop, formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 >[!NOTE]
 >
@@ -190,13 +191,13 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
  </tbody>
 </table>
 
-## Configurazione della dimensione della miniatura dell’immagine {#configuring-image-thumbnail-size}
+## Configurazione della dimensione delle miniature dell’immagine {#configuring-image-thumbnail-size}
 
 Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se una (**[!UICONTROL Risorse di immagine di processo Dynamic Media]**) viene utilizzata per le risorse di immagini dinamiche e l&#39;altra (**[!UICONTROL Miniature di processo]**) per la generazione di miniature statiche, o quando tutti gli altri processi non riescono a generare miniature, *entrambe* devono avere le stesse impostazioni.
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL width:height:center]**, ad esempio *80:80:false*. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL larghezza:height:centro]**, ad esempio *80:80:false*. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >
@@ -224,11 +225,11 @@ Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTR
 
 1. Tocca **[!UICONTROL Salva]** per salvare le modifiche al flusso di lavoro.
 
-### Aumento o riduzione del numero di predefiniti immagine Dynamic Media visualizzati {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Aumento o riduzione del numero di predefiniti immagine Dynamic Media da visualizzare {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche quando visualizzi in anteprima le risorse. L&#39;Experience Manager mostra varie rappresentazioni dinamiche quando si visualizza una risorsa da **[!UICONTROL Vista dettagli > Rendering]**. Puoi aumentare o diminuire il limite di rappresentazioni visualizzate.
 
-**Per aumentare o diminuire il numero di predefiniti immagine di Dynamic Media visualizzati:**
+**Aumenta o diminuisce il numero di predefiniti immagine di Dynamic Media visualizzati:**
 
 1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo di elenco dei predefiniti immagine in `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -243,7 +244,7 @@ I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche q
 1. Nella proprietà limit , modifica il numero impostandolo sul numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tocca **[!UICONTROL Salva tutto]**.
 
-## Creazione di un predefinito immagine Dynamic Media {#creating-image-presets}
+## Creazione di un predefinito per immagini Dynamic Media {#creating-image-presets}
 
 La creazione di un predefinito per immagini Dynamic Media consente di applicare tali impostazioni a tutte le immagini durante l’anteprima o la pubblicazione.
 
@@ -296,7 +297,7 @@ Lasciandoli vuoti, indica ad Experience Manager che questo predefinito per immag
 >
 >In Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predefiniti immagine e le risorse immagine.
 
-### Opzioni dei predefiniti per immagini {#image-preset-options}
+### Opzioni di Image Preset {#image-preset-options}
 
 Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in questa sezione. Inoltre, l’Adobe consiglia di iniziare con le seguenti opzioni di &quot;best practice&quot;:
 
@@ -306,7 +307,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
 
 * **[!UICONTROL Nitidezza: Modalità]**  di ricampionamento - Seleziona  **[!UICONTROL Bi-Cubic]**.
 
-#### Opzioni della scheda di base {#basic-tab-options}
+#### Opzioni della scheda Base {#basic-tab-options}
 
 <table>
  <tbody>
@@ -408,7 +409,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
     </ul>
     <div>
       La nitidezza è descritta in
-     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Nitidezza immagini</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Nitidezza immagini</a>.
     </div> </td>
   </tr>
   <tr>
@@ -500,9 +501,9 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che puoi esegui
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Seleziona un predefinito e fai clic su **[!UICONTROL Modifica]**. Viene visualizzata la finestra **[!UICONTROL Modifica predefinito immagine]**.
-1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle oppure su **[!UICONTROL Annulla]** per annullare le modifiche.
+1. Apporta le modifiche desiderate e fai clic su **[!UICONTROL Salva]** per salvarle o su **[!UICONTROL Annulla]** per annullare le modifiche.
 
-## Pubblicazione dei predefiniti immagine Dynamic Media {#publishing-image-presets}
+## Pubblicazione dei predefiniti immagine di Dynamic Media {#publishing-image-presets}
 
 Se esegui Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predefiniti per immagini.
 
@@ -516,7 +517,7 @@ Se esegui Dynamic Media - Modalità ibrida, devi pubblicare manualmente i predef
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Eliminazione dei predefiniti immagine Dynamic Media {#deleting-image-presets}
+## Eliminazione dei predefiniti immagine di Dynamic Media {#deleting-image-presets}
 
 1. Ad Experience Manager, tocca o fai clic sul logo Experience Manager per accedere alla console di navigazione globale.
 1. Tocca l’icona **[!UICONTROL Strumenti]**, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagini]**.
