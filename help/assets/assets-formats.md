@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Gestione risorse, rappresentazioni
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 10%
 
 ---
@@ -74,7 +74,7 @@ Oltre alle informazioni di cui sopra, considera quanto segue:
 
 ## Formati 3D supportati {#support-3d-formats}
 
-Sono supportati i seguenti elenchi di formati 3D.
+È supportato il seguente elenco di formati 3D.
 
 Consulta anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 
@@ -136,7 +136,7 @@ La libreria di transcodifica delle immagini supporta i tipi MIME JPG/JPEG, PNG (
 
 Consulta [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Immagine della telecamera supportata {#supported-camera-raw}
+## Camera Raw supportato {#supported-camera-raw}
 
 La libreria [!DNL Adobe Camera Raw] consente a [!DNL Assets] di acquisire immagini non elaborate. Consulta [Supporto Camera Raw](camera-raw.md).
 
@@ -211,10 +211,10 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
 | MOV, QT | QuickTime Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
@@ -251,7 +251,7 @@ Di seguito è descritta l’applicabilità delle consuete funzionalità DAM per 
 
 >[!NOTE]
 >
->Il caricamento e la distribuzione di file JavaScript potrebbero risultare sicuri o meno. Se necessario, le sovrapposizioni possono essere utilizzate per impedire agli utenti di caricare file JS.
+>Il caricamento e la distribuzione di file JavaScript potrebbero risultare sicuri o meno. Se necessario, puoi utilizzare le sovrapposizioni per impedire agli utenti di caricare i file JS.
 
 ## Tipi MIME supportati {#supported-mime-types}
 
@@ -307,7 +307,7 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
