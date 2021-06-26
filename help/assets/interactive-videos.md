@@ -11,9 +11,9 @@ docset: aem65
 feature: Video interattivi
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '6014'
+source-wordcount: '6013'
 ht-degree: 3%
 
 ---
@@ -566,7 +566,7 @@ L&#39;integrazione è semplice come rimuovere il codice di incorporamento video 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integrazione di un video interattivo con una visualizzazione rapida esistente {#integrating-an-interactive-video-with-an-existing-quickview}
+## Integrazione di un video interattivo con una Quickview esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -711,7 +711,7 @@ Dove `inner_container` è un riferimento a un elemento `DIV` gestito dal visuali
 
 I passaggi per individuare effettivamente l’elemento della finestra di dialogo modale e allegarlo al contenitore di cui sopra sono specifici per casi specifici. Anche in questo caso, puoi chiedere aiuto allo sviluppatore front-end che abbia familiarità con l’implementazione Quickview necessaria.
 
-Nel caso del sito web di esempio, la finestra di dialogo modale Quickview viene implementata come `DIV` con l’ID quickview-modale allegato direttamente al documento `BODY`. Pertanto, il codice per spostare tale finestra di dialogo nel contenitore del visualizzatore è altrettanto semplice:
+Se si utilizza il sito web di esempio, la finestra di dialogo modale Quickview viene implementata come `DIV` con l’ID quickview-modale allegato direttamente al documento `BODY`. Pertanto, il codice per spostare tale finestra di dialogo nel contenitore del visualizzatore è altrettanto semplice:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -766,6 +766,6 @@ Il sito web demo finale con il video interattivo completamente integrato si pres
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Crea pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
+## Creazione di pop-up personalizzati tramite Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 Consulta [Creare pop-up personalizzati utilizzando Quickview](/help/assets/custom-pop-ups.md).
