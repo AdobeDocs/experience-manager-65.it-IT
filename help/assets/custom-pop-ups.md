@@ -1,6 +1,6 @@
 ---
-title: Creazione di pop-up personalizzati tramite Quickview
-seo-title: Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate
+title: Creare pop-up personalizzati utilizzando Quickview
+seo-title: Utilizza Quickview per creare pop-up personalizzati
 description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei pop-up.
 seo-description: La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei pop-up.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -12,18 +12,18 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visualizzatori
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
+# Utilizza Quickview per creare pop-up personalizzati {#using-quickviews-to-create-custom-pop-ups}
 
 La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di toccare un punto attivo, un’immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic Media:
+Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
 
 * Immagini interattive (punti attivi cliccabili)
 * Video interattivo (immagini thumbnail cliccabili durante la riproduzione del video)
@@ -31,7 +31,7 @@ Le visualizzazioni rapide sono supportate dai seguenti visualizzatori in Dynamic
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
 
-**Per utilizzare le Quickview per creare pop-up personalizzati:**
+**Per utilizzare Quickview per creare pop-up personalizzati:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
@@ -114,7 +114,7 @@ EsempioSupponiamo di utilizzare il seguente codice di incorporamento nella pagin
 
 1. È ora necessario configurare il gestore `quickViewActivate`.
 
-   Il gestore `quickViewActivate` controlla le Quickview nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura della variabile SKU impostata in Quickview e una chiamata della funzione di esempio `loadQuickView`.
+   Il gestore `quickViewActivate` controlla la visualizzazione rapida nel visualizzatore. Il gestore contiene l&#39;elenco di variabili e le chiamate di funzioni da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura della variabile SKU impostata in Quickview e una chiamata della funzione di esempio `loadQuickView`.
 
    **Variabili**
 mappingMap da utilizzare nella pagina Web in base al valore SKU e alle variabili generiche contenute in Quickview:
