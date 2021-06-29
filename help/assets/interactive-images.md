@@ -11,10 +11,10 @@ docset: aem65
 feature: Immagini interattive
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 2%
+source-wordcount: '4286'
+ht-degree: 1%
 
 ---
 
@@ -46,35 +46,35 @@ L’esercitazione illustra i passaggi necessari per integrare le immagini intera
 
 Passaggi per le immagini interattive:
 
-1. **(Facoltativo) Identifica le variabili**  dei punti attivi. Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, inizia identificando le variabili dinamiche utilizzate nell’implementazione Quickview esistente. Quindi, puoi immettere i dati del punto attivo al momento della creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
+1. **(Facoltativo) Identifica le variabili**  dei punti attivi. Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, inizia identificando le variabili dinamiche utilizzate nell’implementazione Quickview esistente. Quindi, puoi immettere i dati del punto attivo al momento della creazione dell’immagine interattiva. Consulta [(Facoltativo) Identificare le variabili dei punti attivi](#optional-identifying-hotspot-variables).
 Tuttavia, se utilizzi Adobe Experience Manager Sites, Adobe Experience Manager eCommerce o entrambi, questo passaggio non è necessario.
 Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Facoltativo) Crea un predefinito**  visualizzatore di immagini interattive: personalizza l’immagine grafica utilizzata per rappresentare gli hotspot. La creazione di un proprio predefinito per visualizzatori di immagini interattive non è necessaria se invece desideri utilizzare il predefinito per visualizzatori di immagini interattive preimpostato `Shoppable_Banner`.
-Consulta [(Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+Consulta [(Facoltativo) Creare un predefinito visualizzatore di immagini interattive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
 1. **Carica un banner immagine** : carica i banner immagine che desideri rendere interattivi.
-Consulta [Caricamento di un banner immagine](#uploading-an-image-banner).
+Consulta [Caricare un banner immagine](#uploading-an-image-banner).
 
 1. **Aggiungi punti attivi a un banner immagine** : aggiungi uno o più punti attivi a un banner immagine e associali ciascuno di essi a un’azione come un collegamento ipertestuale, un Quickview o un frammento esperienza. Dopo aver aggiunto gli hotspot, finirai questa attività pubblicando l&#39;immagine interattiva.
 
-   * Consulta [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-image-banner).
-   * Consulta [Anteprima delle immagini interattive](#optional-previewing-interactive-images) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
-   * Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md) .
+   * Consulta [Aggiungere punti attivi a un banner immagine](#adding-hotspots-to-an-image-banner).
+   * Consulta [Anteprima immagini interattive](#optional-previewing-interactive-images) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
+   * Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicare risorse](/help/assets/publishing-dynamicmedia-assets.md) .
 
-1. **Aggiungi un’immagine interattiva al tuo sito web** : se utilizzi Experience Manager Sites o eCommerce o entrambi, puoi aggiungere l’immagine interattiva a una pagina web nell’Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Aggiungi un’immagine interattiva al tuo sito web** : se utilizzi Experience Manager Sites o eCommerce o entrambi, puoi aggiungere l’immagine interattiva a una pagina web nell’Experience Manager. Trascina il componente File multimediali interattivi sulla pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-   Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, devi copiare il codice di incorporamento sul sito web e quindi integrarlo con la visualizzazione rapida esistente. Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
+   Se utilizzi Risorse di Experience Manager e Dynamic Media standalone, devi copiare il codice di incorporamento sul sito web e quindi integrarlo con la visualizzazione rapida esistente. Consulta [Integrare un’immagine interattiva con il tuo sito web](#integrating-an-interactive-image-with-your-website).
 
-   Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo video interattivo con l’implementazione Quickview esistente utilizzata sul sito web. Consulta [Integrazione di un&#39;immagine interattiva con una visualizzazione rapida esistente](#integrating-an-interactive-image-with-an-existing-quickview).
+   Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo video interattivo con l’implementazione Quickview esistente utilizzata sul sito web. Consulta [Integrare un&#39;immagine interattiva con una visualizzazione rapida esistente](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Facoltativo) Identificazione delle variabili dei punti attivi {#optional-identifying-hotspot-variables}
+## (Facoltativo) Identifica le variabili dei punti attivi {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
 >Questa attività è necessaria solo se sono soddisfatte le seguenti condizioni:
 >
->* Per aggiungere interattività all’immagine, attiva le Quickview.
+>* Per aggiungere interattività all’immagine, attiva Quickview.
 >* La tua implementazione di Experience Manager *non* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, hybris o Intershop. Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
@@ -184,7 +184,7 @@ In base a tale analisi, utilizzerai `categoryId` e `SKU` per gli hotspot.
 
 Ora puoi caricare un banner immagine e aggiungervi degli hotspot utilizzando la funzione immagine interattiva acquistabile in Experience Manager Assets.
 
-## (Facoltativo) Creazione di un predefinito visualizzatore di immagini interattive {#optional-creating-an-interactive-image-viewer-preset}
+## (Facoltativo) Crea un predefinito visualizzatore di immagini interattive {#optional-creating-an-interactive-image-viewer-preset}
 
 Puoi scegliere di utilizzare il predefinito visualizzatore di immagini interattive predefinito disponibile in Experience Manager Assets, denominato `Shoppable_Banner` . Oppure puoi creare un predefinito visualizzatore personalizzato da usare con le immagini interattive.
 
@@ -216,7 +216,7 @@ Dopo aver salvato il predefinito visualizzatore, questo viene attivato automatic
 
    Ora puoi caricare un banner immagine.
 
-## Caricamento di un banner immagine {#uploading-an-image-banner}
+## Caricare un banner immagine {#uploading-an-image-banner}
 
 Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [Aggiunta di punti attivi a un banner immagine](#adding-hotspots-to-an-image-banner).
 
@@ -228,7 +228,7 @@ Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [
 
    Ora puoi aggiungere punti attivi al banner immagine; consulta l’attività successiva di seguito.
 
-## Aggiunta di punti attivi a un banner immagine {#adding-hotspots-to-an-image-banner}
+## Aggiungere punti attivi a un banner immagine {#adding-hotspots-to-an-image-banner}
 
 Puoi aggiungere punti attivi a un banner immagine utilizzando l’editor nella pagina Gestione dei punti attivi.
 
@@ -244,7 +244,7 @@ Le opzioni Annulla e Ripristina, situate nell’angolo superiore destro della pa
 
 Al termine della creazione dell’immagine interattiva, puoi utilizzare Anteprima per vedere come l’immagine interattiva viene visualizzata dai clienti.
 
-Consulta [(Facoltativo) Anteprima delle immagini interattive](#optional-previewing-interactive-images).
+Consulta [(Facoltativo) Anteprima immagini interattive](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
@@ -282,7 +282,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
       * Se sei un cliente di Experience Manager Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
       * Se sei *non* un cliente Experience Manager Sites o eCommerce
 
-         * Consultare [Identificazione di variabili di punti attivi](#optional-identifying-hotspot-variables); devi definire queste variabili.
+         * Vedere [Identificare le variabili del punto attivo](#optional-identifying-hotspot-variables); devi definire queste variabili.
          * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
          * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Males` è una variabile aggiunta.
    * Toccare **[!UICONTROL Collegamento ipertestuale]**.
@@ -292,7 +292,7 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 
    Assicurati di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
 
-   Per ulteriori informazioni, consulta [Utilizzo dei selettori](/help/assets/working-with-selectors.md) .
+   Per ulteriori informazioni, consulta [Lavorare con i selettori](/help/assets/working-with-selectors.md) .
 
    * Tocca **[!UICONTROL Frammento esperienza]**.
 
@@ -309,11 +309,11 @@ Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 1. Tocca **[!UICONTROL Salva]** per salvare il lavoro e tornare alla pagina Sfoglia.
 1. Pubblica l’immagine interattiva. La pubblicazione consente di distribuire il banner tramite il cloud e genera anche codice di incorporamento se è necessario eseguire l’integrazione con un sito web di terze parti.
 
-   Consulta [Pubblicazione di risorse](/help/assets/manage-assets.md#publishing-assets).
+   Consulta [Pubblicare risorse](/help/assets/manage-assets.md#publishing-assets).
 
    Dopo aver aggiunto gli hotspot e pubblicato l&#39;immagine interattiva, ora puoi aggiungerla al tuo sito web esistente.
 
-   Consulta [Integrazione di un’immagine interattiva con il sito web](#integrating-an-interactive-image-with-your-website).
+   Consulta [Integrare un’immagine interattiva con il tuo sito web](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
    Se modifichi immagini interattive con punti attivi e ritagli l’immagine, i punti attivi vengono eliminati.
@@ -323,9 +323,9 @@ Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 È possibile utilizzare Anteprima per vedere una rappresentazione dell’aspetto dell’immagine interattiva per i clienti e per testare gli hotspot dell’immagine per verificare che si comportino come previsto.
 
 Una volta ottenuta l’immagine interattiva, puoi pubblicarla.
-Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
-Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
-Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consulta [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Collegare gli URL all&#39;applicazione web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
+Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive:**
 
@@ -334,20 +334,20 @@ Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dyn
 1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
 1. Tocca i punti attivi sull’immagine per testare le azioni associate.
 
-## Pubblicazione delle risorse immagine interattive {#publishing-interactive-image-assets}
+## Pubblicare risorse di immagini interattive {#publishing-interactive-image-assets}
 
-Per informazioni dettagliate su come pubblicare le risorse immagine interattive, consulta [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md) .
+Per informazioni dettagliate su come pubblicare le risorse di immagini interattive, consulta [Pubblicare risorse](/help/assets/publishing-dynamicmedia-assets.md) .
 
-## Integrazione di un’immagine interattiva con il sito web {#integrating-an-interactive-image-with-your-website}
+## Integrare un’immagine interattiva con il sito web {#integrating-an-interactive-image-with-your-website}
 
 Dopo aver caricato un&#39;immagine del banner, aggiunto degli hotspot all&#39;immagine e pubblicato l&#39;immagine interattiva, ora puoi aggiungerla alla pagina del tuo sito web.
 
-Se sei un cliente di Experience Manager Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Se sei un cliente di Experience Manager Sites, puoi aggiungere l’immagine interattiva trascinando il componente File multimediali interattivi sulla pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Se sei un cliente di Experience Manager Assets autonomo, puoi aggiungere manualmente l’immagine interattiva al tuo sito web come descritto in questa sezione.
 
 1. Copia il codice di incorporamento dell’immagine interattiva pubblicata.
-Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
 
 1. Aggiungi il codice di incorporamento copiato nella posizione desiderata all’interno della pagina web.
 Il codice di incorporamento copiato è impostato per un ambiente reattivo in modo che si adatti automaticamente all’area assegnata.
@@ -369,7 +369,7 @@ L’integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il co
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
-A questo punto, gli hotspot sull&#39;immagine interattiva acquistabile del sito web demo sono solo a scopo di visualizzazione; non sono ancora integrati con le Quickview esistenti.
+A questo punto, gli hotspot sull&#39;immagine interattiva acquistabile del sito web demo sono solo a scopo di visualizzazione; non sono ancora integrati con la visualizzazione rapida esistente.
 
 Per applicare un &quot;ritaglio&quot; a un’immagine interattiva acquistabile per un ambiente dinamico, puoi includere l’attributo di configurazione dell’immagine interattiva `ZoomView.iscommand` nel percorso. Viene chiamato il componente `ZoomView` e `iscommand` è il comando di servizio immagini &quot;ritaglia&quot; applicato.
 
@@ -379,7 +379,7 @@ Consultare [crop](https://experienceleague.adobe.com/docs/dynamic-media-develope
 
 È ora possibile integrare l’immagine interattiva con una Quickview esistente sul sito web.
 
-## Integrazione di un’immagine interattiva con una Quickview esistente {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrare un’immagine interattiva con una Quickview esistente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Questa attività si applica solo se sei un cliente di Experience Manager Assets autonomo.
@@ -434,7 +434,7 @@ Pertanto, è solo necessario rimuovere il commento dal codice e sostituire il co
 
 Il processo di costruzione dell’URL di visualizzazione rapida è opposto al processo utilizzato per identificare le variabili dei punti attivi trattate in precedenza.
 
-Consulta [Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
+Consulta [Identificare le variabili del punto attivo](#optional-identifying-hotspot-variables).
 
 Utilizzando i precedenti esempi di URL di Quickview, puoi vedere negli esempi seguenti come viene costruito l’URL di Quickview in ogni caso:
 
@@ -515,6 +515,6 @@ Il sito web demo finale con l&#39;immagine interattiva completamente integrata s
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
-## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
+## Utilizza Quickview per creare pop-up personalizzati {#using-quickviews-to-create-custom-pop-ups}
 
-Vedere [Creazione di pop-up personalizzati utilizzando Quickview](/help/assets/custom-pop-ups.md).
+Consulta [Creare pop-up personalizzati utilizzando Quickview](/help/assets/custom-pop-ups.md).
