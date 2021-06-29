@@ -1,6 +1,7 @@
 ---
 title: Video in Dynamic Media
 description: Scopri come lavorare con i video in Dynamic Media
+mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +12,9 @@ docset: aem65
 feature: Gestione risorse
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
 workflow-type: tm+mt
-source-wordcount: '11657'
+source-wordcount: '11668'
 ht-degree: 5%
 
 ---
@@ -21,6 +22,16 @@ ht-degree: 5%
 # Video in Dynamic Media {#video}
 
 Questa sezione descrive come lavorare con i video in Dynamic Media.
+
+Problemi di riproduzione video attualmente noti in Dynamic Media:
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 ## Avvio rapido: Video {#quick-start-videos}
 
@@ -30,10 +41,10 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 >
 >Prima di lavorare con i video in Dynamic Media, accertati che il tuo amministratore Adobe Experience Manager abbia già abilitato e configurato i Cloud Services Dynamic Media in modalità Dynamic Media - Scene7 o Dynamic Media - Hybrid.
 >
->* Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
+>* Consulta [Configurare Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi relativi a Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
    >
    >
-* Consulta [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità ibrida.
+* Consulta [Configurare Cloud Services Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità ibrida.
 
 >
 
@@ -43,13 +54,13 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
    * Crea il tuo profilo di codifica video. Oppure, puoi semplicemente utilizzare il profilo predefinito _Codifica video adattiva_ fornito con Dynamic Media.
 
-      * [Creazione di un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Crea un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
    * Associa il profilo di elaborazione video a una o più cartelle in cui stai per caricare i video sorgente principali.
 
-      * [Applicazione di un profilo video alle cartelle](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Applicare un profilo video alle cartelle](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Ulteriori informazioni sulle [Best practice per organizzare le risorse digitali per l&#39;utilizzo dei profili di elaborazione](/help/assets/organize-assets.md).
-      * Ulteriori informazioni su [Organizzazione delle risorse digitali](/help/assets/organize-assets.md).
+      * Ulteriori informazioni su [Organizzare risorse digitali](/help/assets/organize-assets.md).
    * Carica i video sorgente principali nelle cartelle. Puoi caricare file video fino a 15 GB ciascuno. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
       * [Carica i video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
@@ -66,20 +77,20 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * [Organizzazione delle ](/help/assets/organize-assets.md)
 risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le risorse digitali per l’utilizzo dei profili di elaborazione](organize-assets.md)
 
-      * [Ricerca di risorse video ](search-assets.md#custompredicates) o  [Ricerca di risorse](/help/assets/search-assets.md)
+      * [Cercare risorse video ](search-assets.md#custompredicates) o  [cercare risorse](/help/assets/search-assets.md)
    * Anteprima e pubblicazione delle risorse video
 
       * Visualizzare il video sorgente e le rappresentazioni codificate del video insieme alle miniature associate:
-         [Anteprima dei ](managing-video-assets.md#upload-and-preview-video-assets) video o  [Anteprima delle risorse](previewing-assets.md)
-         [Visualizzazione delle rappresentazioni video](video-renditions.md)
-         [Gestione delle rappresentazioni video](manage-assets.md#managing-renditions)
+         [Anteprima ](managing-video-assets.md#upload-and-preview-video-assets) video o  [Anteprima risorse](previewing-assets.md)
+         [Visualizzare le rappresentazioni video](video-renditions.md)
+         [Gestire le rappresentazioni video](manage-assets.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
-      * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
+      * [Pubblicare le risorse](publishing-dynamicmedia-assets.md)
    * Utilizzare i metadati video
 
       * Visualizzare le proprietà di un rendering video codificato quali frame rate, bitrate audio e video e codec:
-         [Visualizzazione delle proprietà di rendering video](video-renditions.md)
+         [Visualizzare le proprietà del rendering video](video-renditions.md)
 
       * Modifica le proprietà del video quali titolo, descrizione e tag, campi di metadati personalizzati:
          [Modifica delle proprietà video](manage-assets.md#editing-properties)
@@ -88,10 +99,10 @@ risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le 
       * [Schemi metadati](metadata-schemas.md)
    * Rivedi, approva e annota i video e mantieni un controllo completo della versione
 
-      * [Aggiunta di annotazioni ](managing-video-assets.md#annotate-video-assets) ai video o  [Aggiunta di annotazioni alle risorse](manage-assets.md#annotating)
+      * [Annotare ](managing-video-assets.md#annotate-video-assets) video o  [Annotare risorse](manage-assets.md#annotating)
 
-      * [Creazione di una versione](manage-assets.md#asset-versioning)
-      * [Applicazione dei flussi di lavoro alle ](assets-workflow.md) risorse o vedere  [Avvio di un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Crea una versione](manage-assets.md#asset-versioning)
+      * [Applicare flussi di lavoro alle ](assets-workflow.md) risorse o vedere  [Avviare un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Esaminare le risorse delle cartelle](bulk-approval.md)
       * [Progetti](../sites-authoring/projects.md)
@@ -103,22 +114,22 @@ risorse digitaliUlteriori informazioni sulle  [best practice per organizzare le 
 
    * Se utilizzi Adobe Experience Manager come sistema di gestione dei contenuti web, puoi aggiungere video direttamente alle pagine web.
 
-      * [Aggiunta di video alle pagine](adding-dynamic-media-assets-to-pages.md) web.
+      * [Aggiungi dei video alle tue pagine](adding-dynamic-media-assets-to-pages.md) web.
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video alle tue pagine web.
 
       * Integra i video utilizzando l’URL:
-         [Collegamento di URL all’applicazione web](linking-urls-to-yourwebapplication.md).
+         [Collega URL all’applicazione](linking-urls-to-yourwebapplication.md) web.
 
       * Integra i video utilizzando il codice di incorporamento sulla pagina web:
-         [Incorporare il visualizzatore video in una pagina](embed-code.md) web.
-   * [Pubblicazione di video in YouTube](#publishing-videos-to-youtube).
-   * [Generazione di rapporti video](#viewing-video-reports).
+         [Incorpora il visualizzatore video in una pagina](embed-code.md) web.
+   * [Pubblica video in YouTube](#publishing-videos-to-youtube).
+   * [Genera report video](#viewing-video-reports).
 
-   * [Aggiunta di sottotitoli al video](#adding-captions-to-video).
+   * [Aggiungere sottotitoli al video](#adding-captions-to-video).
 
 
 
-## Utilizzo di video in Dynamic Media {#working-with-video-in-dynamic-media}
+## Utilizzare i video in Dynamic Media {#working-with-video-in-dynamic-media}
 
 Video in Dynamic Media è una soluzione end-to-end che semplifica la pubblicazione di video adattivi di alta qualità per lo streaming su diversi schermi, tra cui desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Un Adaptive Video Set raggruppa versioni dello stesso video codificate con diversi bit rate e formati come 400 kbps, 800 kbps e 1000 kbps. Il computer desktop o il dispositivo mobile rileva la larghezza di banda disponibile.
 
@@ -276,13 +287,13 @@ L’immagine seguente mostra il flusso di lavoro di authoring complessivo dei vi
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Architettura di pubblicazione ibrida per video {#hybrid-publishing-architecture-for-videos}
+## Architettura di pubblicazione ibrida per i video {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 ## Best practice per la codifica dei video {#best-practices-for-encoding-videos}
 
-Se hai abilitato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **Codifica video Dynamic Media** codifica i video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Media]** ha effetto automaticamente al momento del caricamento di un video. (Se non utilizzi Dynamic Media, il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** ha effetto.)
+Se hai abilitato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **Codifica video Dynamic Media** codifica i video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta [Monitoraggio della codifica video e stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se hai abilitato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video Dynamic Media]** ha effetto automaticamente al momento del caricamento di un video. (Se non utilizzi Dynamic Media, il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** ha effetto.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -302,7 +313,7 @@ La tabella seguente descrive le dimensioni, le proporzioni e il bit rate minimo 
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps, a seconda della quantità di movimento nel video. |
 | 1920 X 1080 | 16:9 | 6000 - 8000 kbps, a seconda della quantità di movimento nel video. |
 
-### Ottenimento dei metadati di un file {#obtaining-a-file-s-metadata}
+### Ottenere i metadati di un file {#obtaining-a-file-s-metadata}
 
 È possibile ottenere i metadati di un file visualizzandone i metadati utilizzando uno strumento di editing video o un&#39;applicazione progettata per ottenere i metadati. Di seguito sono riportate le istruzioni per l’utilizzo di MediaInfo, un’applicazione di terze parti, per ottenere i metadati di un file video:
 
@@ -340,7 +351,7 @@ Il bitrate è la quantità di dati codificati per creare un secondo di riproduzi
 Quando si seleziona una codifica a bit rate, è possibile scegliere due tipi:
 
 * **[!UICONTROL Codifica a bitrate costante]**  (CBR) - Durante la codifica CBR, il bitrate o il numero di bit al secondo viene mantenuto lo stesso durante tutto il processo di codifica. La codifica CBR persiste quando la velocità dei dati impostata viene impostata sull’impostazione per l’intero video. Inoltre, la codifica CBR non ottimizza i file multimediali per la qualità, ma salva lo spazio di archiviazione.
-Utilizzare CBR se il video contiene un livello di movimento simile per l&#39;intero video. CBR viene utilizzato più comunemente per lo streaming di contenuti video. Consulta anche [Utilizzo di parametri di codifica video personalizzati](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
+Utilizzare CBR se il video contiene un livello di movimento simile per l&#39;intero video. CBR viene utilizzato più comunemente per lo streaming di contenuti video. Vedi anche [Utilizzare parametri di codifica video personalizzati](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
 * **[!UICONTROL Codifica a bitrate variabile]**  (VBR) - La codifica VBR regola il tasso di dati in basso e al limite superiore impostato, in base ai dati richiesti dal compressore. Questa funzionalità significa che durante un processo di codifica VBR il bitrate del file multimediale aumenta o diminuisce dinamicamente a seconda delle esigenze del bitrate dei file multimediali.
 VBR richiede più tempo per codificare ma produce i risultati più favorevoli; la qualità del file multimediale è superiore. VBR è utilizzato più comunemente per la distribuzione http progressiva dei contenuti video.
@@ -417,7 +428,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264. Poiché i file MP4 utilizzano il codec video H.264, fornisce video di alta qualità ma in dimensioni file compresse.
 
-## Pubblicazione di video in YouTube {#publishing-videos-to-youtube}
+## Pubblicare video in YouTube {#publishing-videos-to-youtube}
 
 Puoi pubblicare risorse video di Experience Manager on-premise direttamente su un canale YouTube creato in precedenza.
 
@@ -429,19 +440,19 @@ Quando bypassi il profilo di elaborazione video e lo pubblichi direttamente in Y
 
 La pubblicazione delle risorse video sui server YouTube comporta il completamento delle seguenti attività per garantire l’autenticazione server-to-server sicura con YouTube:
 
-1. [Configurazione delle impostazioni di Google Cloud](#configuring-google-cloud-settings)
-1. [Creazione di un canale YouTube](#creating-a-youtube-channel)
-1. [Aggiunta di tag per la pubblicazione](#adding-tags-for-publishing)
-1. [Abilitazione dell’agente di replica di pubblicazione di YouTube](#enabling-the-youtube-publish-replication-agent)
-1. [Configurazione di YouTube nell’Experience Manager](#setting-up-youtube-in-aem)
-1. [(Facoltativo) Automazione dell&#39;impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Pubblicazione di video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
-1. [(Facoltativo) Verifica del video pubblicato su YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [Collegamento degli URL YouTube all’applicazione Web](#linking-youtube-urls-to-your-web-application)
+1. [Configurare le impostazioni di Google Cloud](#configuring-google-cloud-settings)
+1. [Creare un canale YouTube](#creating-a-youtube-channel)
+1. [Aggiungi tag per la pubblicazione](#adding-tags-for-publishing)
+1. [Attivare l’agente di replica di pubblicazione YouTube](#enabling-the-youtube-publish-replication-agent)
+1. [Configurare YouTube nell’Experience Manager](#setting-up-youtube-in-aem)
+1. [(Facoltativo) Automatizza l&#39;impostazione delle proprietà predefinite di YouTube per i video caricati](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [Pubblicare video sul canale YouTube](#publishing-videos-to-your-youtube-channel)
+1. [(Facoltativo) Verifica il video pubblicato su YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
+1. [Collegare gli URL di YouTube all’applicazione Web](#linking-youtube-urls-to-your-web-application)
 
 Puoi anche [annullare la pubblicazione dei video per rimuoverli da YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configurazione delle impostazioni di Google Cloud {#configuring-google-cloud-settings}
+### Configurare le impostazioni di Google Cloud {#configuring-google-cloud-settings}
 
 Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa direttamente a [Creazione di un canale YouTube](#creating-a-youtube-channel).
 
@@ -545,13 +556,13 @@ Per configurare le impostazioni di Google Cloud:
 
    Esci dal tuo account Google. Ora crea un canale YouTube.
 
-### Creazione di un canale YouTube {#creating-a-youtube-channel}
+### Creare un canale YouTube {#creating-a-youtube-channel}
 
-Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a [Aggiunta di tag per la pubblicazione](/help/assets/video.md#adding-tags-for-publishing).
+Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se hai già creato un canale YouTube, puoi saltare questa attività e passare a [Aggiungi tag per la pubblicazione](/help/assets/video.md#adding-tags-for-publishing).
 
 >[!WARNING]
 >
->Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube nell&#39;Experience Manager (vedi [Configurazione di YouTube nell&#39;Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si riesce a impostare uno o più canali, non viene visualizzato alcun avviso di canali inesistenti. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
+>Assicurati di aver già configurato uno o più canali in YouTube *prima di* aggiungere canali in Impostazioni YouTube nell&#39;Experience Manager (vedi [Configurazione YouTube in Experience Manager](#setting-up-youtube-in-aem) di seguito). Se non si riesce a impostare uno o più canali, non viene visualizzato alcun avviso di canali inesistenti. Tuttavia, l’autenticazione Google si verifica ancora quando aggiungi un canale, ma non è disponibile un’opzione per scegliere quale canale viene inviato il video.
 
 **Per creare un canale YouTube:**
 
@@ -567,32 +578,32 @@ Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se 
 
    Ora aggiungi i tag per la pubblicazione.
 
-### Aggiunta di tag per la pubblicazione {#adding-tags-for-publishing}
+### Aggiungi tag per la pubblicazione {#adding-tags-for-publishing}
 
-Per pubblicare nei video in YouTube, Experience Manager associa i tag a uno o più canali YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrazione dei tag](/help/sites-administering/tags.md).
+Per pubblicare nei video in YouTube, Experience Manager associa i tag a uno o più canali YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrare tag](/help/sites-administering/tags.md).
 
-Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Abilitazione dell&#39;agente di replica di pubblicazione YouTube](#enabling-the-youtube-publish-replication-agent).
+Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Abilita l&#39;agente di replica di pubblicazione di YouTube](#enabling-the-youtube-publish-replication-agent).
 
-### Abilitazione dell’agente di replica di pubblicazione YouTube {#enabling-the-youtube-publish-replication-agent}
+### Abilitare l’agente di replica YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
 Dopo aver abilitato l&#39;agente di replica YouTube Publish, se desideri testare la connessione all&#39;account Google Cloud, tocca **[!UICONTROL Prova connessione]**. Nella scheda del browser vengono visualizzati i risultati della connessione. Se hai aggiunto canali YouTube, un elenco di essi viene visualizzato come parte del test.
 
 1. Nell&#39;angolo in alto a sinistra dell&#39;Experience Manager, fai clic sul logo dell&#39;Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti sull&#39;autore]**.
-1. Nella pagina Agenti autore, fai clic su **[!UICONTROL Pubblicazione YouTube (youtube)]**.
+1. Nella pagina Agenti di authoring, fai clic su **[!UICONTROL YouTube Publish]**.
 1. Sulla barra degli strumenti, a destra di Impostazioni, fai clic su **[!UICONTROL Modifica]**.
 1. Seleziona la casella di controllo **[!UICONTROL Enabled]** in modo da poter attivare l&#39;agente di replica.
 1. Fai clic su **[!UICONTROL OK]**.
 
    Ora configura YouTube in Experience Manager.
 
-### Configurazione di YouTube nell’Experience Manager {#setting-up-youtube-in-aem}
+### Configurare YouTube nell’Experience Manager {#setting-up-youtube-in-aem}
 
 A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di interfaccia utente touch per configurare la pubblicazione YouTube in Experience Manager. In base all’istanza installata dell’Experience Manager in uso, effettua una delle seguenti operazioni:
 
-* Per configurare YouTube in Experience Manager prima della versione 6.4, consulta [Configurazione di YouTube in Experience Manager prima della versione 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* Per configurare YouTube in Experience Manager 6.4 o versione successiva, consulta [Configurazione di YouTube in Experience Manager 6.4 e versioni successive](#setting-up-youtube-in-aem-and-later).
+* Per configurare YouTube in Experience Manager prima della versione 6.4, consulta [Configurare YouTube in Experience Manager prima della versione 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
+* Per configurare YouTube in Experience Manager 6.4 o versione successiva, consulta [Configurare YouTube in Experience Manager 6.4 e versioni successive](#setting-up-youtube-in-aem-and-later).
 
-#### Configurazione di YouTube in Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
+#### Configurare YouTube in Experience Manager 6.4 e versioni successive {#setting-up-youtube-in-aem-and-later}
 
 1. Assicurati di accedere alla tua istanza di Dynamic Media come amministratore.
 1. Nell’angolo in alto a sinistra, tocca il logo Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]**(icona a forma di martello) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione pubblicazione YouTube]**.
@@ -606,7 +617,7 @@ Lascia aperta la pagina Crea configurazione YouTube; tra un momento, ritornerete
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
-1. Utilizzando un editor di testo normale, apri il file JSON scaricato e salvato in precedenza nell&#39;attività [Configurazione delle impostazioni di Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
+1. Utilizzando un editor di testo normale, apri il file JSON scaricato e salvato in precedenza nell&#39;attività [Configura le impostazioni di Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
 1. Seleziona e copia l’intero testo JSON.
 1. Torna alla finestra di dialogo Impostazioni account YouTube. Nel campo **[!UICONTROL Configurazione JSON]**, incolla il testo JSON.
 1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
@@ -639,7 +650,7 @@ Lascia aperta la pagina Crea configurazione YouTube; tra un momento, ritornerete
 
    Ora pubblichi i video sul tuo canale YouTube.
 
-#### Configurazione di YouTube in Experience Manager prima della versione 6.4 {#setting-up-youtube-in-aem-before}
+#### Configurare YouTube in Experience Manager prima della versione 6.4 {#setting-up-youtube-in-aem-before}
 
 1. Assicurati di accedere alla tua istanza di Dynamic Media come amministratore.
 
@@ -685,7 +696,7 @@ Lascia aperta la finestra di dialogo Impostazione account YouTube; vi ritorneret
 
    Ora pubblichi i video sul tuo canale YouTube.
 
-### (Facoltativo) Automazione dell&#39;impostazione delle proprietà predefinite di YouTube per i video caricati {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Facoltativo) Automatizza l&#39;impostazione delle proprietà predefinite di YouTube per i video caricati {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 Facoltativamente, puoi automatizzare l’impostazione delle proprietà di YouTube al caricamento dei video creando un profilo di elaborazione dei metadati in Experience Manager.
 
@@ -748,7 +759,7 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
 
    Consulta le sezioni [Profili di metadati](/help/assets/metadata-config.md#metadata-profiles) e [Profili video](/help/assets/video-profiles.md).
 
-### Pubblicazione di video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
+### Pubblicare video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
 
 Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo processo consente ad Experience Manager di sapere quali risorse pubblicare sul tuo canale YouTube.
 
@@ -762,7 +773,7 @@ Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo proce
 >
 >Per pubblicare contenuti da YouTube, in Experience Manager viene utilizzato il flusso di lavoro **[!UICONTROL Pubblica in YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 >
->Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulta [Monitoraggio della codifica video e stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
 >Per informazioni più dettagliate sullo stato, è possibile monitorare il log YouTube sotto replica. Tuttavia, tale monitoraggio richiede l’accesso dell’amministratore.
 
@@ -784,17 +795,17 @@ Ora puoi associare i tag aggiunti in precedenza alle risorse video. Questo proce
 
    Facoltativamente, puoi verificare il video pubblicato sul tuo canale YouTube.
 
-### (Facoltativo) Verifica del video pubblicato su YouTube {#optional-verifying-the-published-video-on-youtube}
+### (Facoltativo) Verifica il video pubblicato su YouTube {#optional-verifying-the-published-video-on-youtube}
 
 Facoltativamente, puoi monitorare l’avanzamento della pubblicazione di YouTube (o l’annullamento della pubblicazione).
 
-Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Consulta [Monitoraggio della codifica video e stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 I tempi di pubblicazione possono variare notevolmente a seconda di numerosi fattori che includono il formato del video sorgente principale, la dimensione del file e il traffico di caricamento. Il processo di pubblicazione può richiedere da qualche minuto a diverse ore. Inoltre, i formati a risoluzione più elevata vengono resi molto più lentamente. Ad esempio, 720p e 1080p richiedono più tempo per apparire di 480p.
 
 Dopo otto ore se vedi ancora un messaggio di stato che dice **[!UICONTROL Caricato (elaborazione, attendi)]**, prova a rimuovere il video dal sito di Adobe e caricarlo di nuovo.
 
-### Collegamento di URL YouTube all&#39;applicazione Web {#linking-youtube-urls-to-your-web-application}
+### Collegare gli URL di YouTube all’applicazione web {#linking-youtube-urls-to-your-web-application}
 
 Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblicazione del video. Quando copi l’URL di YouTube, questo viene inserito negli Appunti, in modo da poterlo incollare come necessario nelle pagine del sito web o dell’applicazione.
 
@@ -812,7 +823,7 @@ Puoi ottenere una stringa URL YouTube generata da Dynamic Media dopo la pubblica
 1. Fare clic sulla scheda **[!UICONTROL Avanzate]**.
 1. Sotto l’intestazione Pubblicazione YouTube, nell’elenco URL di YouTube, seleziona e copia il testo dell’URL nel browser web per visualizzare l’anteprima della risorsa o per aggiungerla alla pagina del contenuto web.
 
-### Annullamento della pubblicazione dei video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Annullare la pubblicazione di video per rimuoverli da YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
 Quando si annulla la pubblicazione di una risorsa video in Experience Manager, il video viene rimosso da YouTube.
 
@@ -824,7 +835,7 @@ Quando si annulla la pubblicazione di una risorsa video in Experience Manager, i
 >
 >Per rimuovere contenuti da YouTube, in Experience Manager viene utilizzato il flusso di lavoro **[!UICONTROL Annulla pubblicazione da YouTube]** , che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 >
->Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulta [Monitoraggio della codifica video e stato di pubblicazione di YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Per annullare la pubblicazione dei video e rimuoverli da YouTube:**
 
@@ -835,11 +846,11 @@ Quando si annulla la pubblicazione di una risorsa video in Experience Manager, i
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Avanti]**.
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Annulla pubblicazione]**.
 
-## Monitoraggio della codifica video e stato di pubblicazione di YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Monitorare la codifica video e lo stato di pubblicazione di YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o lo pubblichi in YouTube, puoi monitorare l’avanzamento (o il mancato funzionamento) della codifica video/pubblicazione su YouTube. L’avanzamento effettivo della pubblicazione in YouTube è disponibile solo tramite i registri. Tuttavia, il suo errore o successo è elencato in modi aggiuntivi descritti nella procedura seguente. Inoltre, ricevi notifiche e-mail quando un flusso di lavoro o una codifica video di pubblicazione di YouTube viene completata o interrotta.
+Quando carichi un nuovo video in una cartella a cui è stata applicata la codifica video o pubblichi il video in YouTube, puoi monitorare l’avanzamento della codifica video/pubblicazione su YouTube. L’avanzamento effettivo della pubblicazione in YouTube è disponibile solo tramite i registri. Tuttavia, il suo errore o successo è elencato in modi aggiuntivi descritti nella procedura seguente. Inoltre, ricevi notifiche e-mail quando un flusso di lavoro o una codifica video di pubblicazione di YouTube viene completata o interrotta.
 
-### Monitoraggio dello stato di avanzamento {#monitoring-progress}
+### Avanzamento monitor {#monitoring-progress}
 
 1. Visualizza l’avanzamento della codifica video nella cartella delle risorse:
 
@@ -916,9 +927,9 @@ Quando carichi un nuovo video in una cartella a cui è stata applicata la codifi
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. Ricevi notifiche e-mail sui processi del flusso di lavoro interrotti o non riusciti. Queste notifiche e-mail sono configurabili da un amministratore. Consulta [Configurazione delle notifiche e-mail](#configuring-e-mail-notifications).
+1. Ricevi notifiche e-mail sui processi del flusso di lavoro interrotti o non riusciti. Queste notifiche e-mail sono configurabili da un amministratore. Consulta [Configurare le notifiche e-mail](#configuring-e-mail-notifications).
 
-#### Configurazione delle notifiche e-mail {#configuring-e-mail-notifications}
+#### Configurare le notifiche e-mail {#configuring-e-mail-notifications}
 
 >[!NOTE]
 >
@@ -926,7 +937,7 @@ Quando carichi un nuovo video in una cartella a cui è stata applicata la codifi
 
 La modalità di configurazione della notifica dipende dal fatto se si desidera ricevere notifiche per i processi di codifica o pubblicazione in YouTube:
 
-* Per i lavori di codifica, puoi accedere alla pagina di configurazione per tutte le notifiche e-mail del flusso di lavoro di Experience Manager in **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** e cercare **[!UICONTROL Servizio notifica e-mail del flusso di lavoro di Day CQ]**. Consulta [Configurazione delle notifiche e-mail in Experience Manager](/help/sites-administering/notification.md). È possibile selezionare o deselezionare le caselle di controllo per **[!UICONTROL Notifica su Abort]** o **[!UICONTROL Notifica su Complete]** di conseguenza.
+* Per i lavori di codifica, puoi accedere alla pagina di configurazione per tutte le notifiche e-mail del flusso di lavoro di Experience Manager in **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** e cercare **[!UICONTROL Servizio notifica e-mail del flusso di lavoro di Day CQ]**. Consulta [Configurare le notifiche e-mail in Experience Manager](/help/sites-administering/notification.md). È possibile selezionare o deselezionare le caselle di controllo per **[!UICONTROL Notifica su Abort]** o **[!UICONTROL Notifica su Complete]** di conseguenza.
 
 * Per i lavori di pubblicazione di YouTube, procedi come segue:
 
@@ -960,7 +971,7 @@ La modalità di configurazione della notifica dipende dal fatto se si desidera r
 1. Al termine, vicino all’angolo superiore destro della finestra di dialogo, tocca l’icona **[!UICONTROL Fine]** (segno di spunta).
 1. Nella pagina del flusso di lavoro Pubblica in YouTube, nell’angolo in alto a destra, tocca **[!UICONTROL Sincronizza]**.
 
-## Visualizzazione dei rapporti video {#viewing-video-reports}
+## Visualizzare i rapporti video {#viewing-video-reports}
 
 >[!NOTE]
 >
@@ -980,7 +991,7 @@ Quando tocchi un nome video nell’elenco, questo ti mostra il rapporto di fidel
 
 Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Media, il grafico a discesa di conservazione del pubblico e i dati in percentuale di riproduzione nella tabella non sono disponibili.
 
-Vedi anche [Configurazione di Cloud Services Dynamic Media](/help/assets/config-dynamic.md).
+Vedere anche [Configurare Cloud Services Dynamic Media](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -1005,13 +1016,13 @@ Specifica l&#39;intervallo di date iniziale e finale per il quale vuoi visualizz
 
 1. Nella tabella in cui sono elencati i video più pubblicati, tocca un nome video per riprodurre il video e guarda anche il rapporto di fidelizzazione (drop-off) del video.
 
-### Visualizzazione di rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualizzare rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media o se hai creato un predefinito per visualizzatori personalizzato basato su un visualizzatore video preconfigurato, non sono necessari ulteriori passaggi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK per visualizzatori HTML5, procedi come segue per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video Dynamic Media.
 
-Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e l’ [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) e l’ [API SDK per visualizzatori HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
-**Per visualizzare i rapporti video basati su un visualizzatore video creato utilizzando l’API SDK per visualizzatori HTML5:**
+**Per visualizzare i rapporti video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Dynamic Media:**
 
 1. Passa a qualsiasi risorsa video pubblicata.
 1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa dell’angolo in alto a sinistra della pagina della risorsa.
@@ -1068,7 +1079,7 @@ Utilizza la [Guida di riferimento visualizzatori Dynamic Media di Adobe](https:/
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Aggiunta di sottotitoli al video {#adding-captions-to-video}
+## Aggiungere sottotitoli o sottotitoli al video {#adding-captions-to-video}
 
 Puoi estendere la portata dei tuoi video sui mercati globali aggiungendo sottotitoli a singoli video o a set di video adattivi. Aggiungendo i sottotitoli si evita la necessità di duplicare l&#39;audio o la necessità di utilizzare gli altoparlanti nativi per registrare nuovamente l&#39;audio per ogni lingua diversa. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli in lingua straniera vengono visualizzati in modo che le persone di lingue diverse possano ancora comprendere la porzione audio.
 
@@ -1080,7 +1091,7 @@ I sottotitoli consentono inoltre una maggiore accessibilità tramite l’uso di 
 
 Dynamic Media converte i file delle didascalie in formato JSON (JavaScript Object Notation). Questa conversione significa che puoi incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire ricerche per indicizzazione e indicizzazione del contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consulta [Serving static (non-image) content](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in *Dynamic Media Image Serving and Rendering API Help* .
+Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consulta [Distribuire contenuti statici (non immagini)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) nella *Guida API di Dynamic Media Image Serving and Rendering* .
 
 **Per aggiungere sottotitoli o sottotitoli al video:**
 
@@ -1096,7 +1107,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
    Per risultati ottimali, utilizza lo strumento in Internet Explorer 9 o versioni successive, Google Chrome o Safari.
 
-   Nello strumento, nel campo **[!UICONTROL Enter URL of video file]** (Inserisci URL del file video), incolla l&#39;URL copiato del file video, quindi fai clic su **[!UICONTROL Load]**. Consulta la sezione [Ottenere l’URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per conoscere l’URL del file video stesso, che potrai incollare nel campo **[!UICONTROL Enter URL of video file (Inserisci URL del file video)]**. A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
+   Nello strumento, nel campo **[!UICONTROL Enter URL of video file]** (Inserisci URL del file video), incolla l&#39;URL copiato del file video, quindi fai clic su **[!UICONTROL Load]**. Per ottenere l’URL del file video stesso, consulta [Ottieni un URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) , che potrai incollare nel **[!UICONTROL Enter URL of video file field]** (Inserisci URL del file video). A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
 
    Segui ora le istruzioni visualizzate sul sito per creare e salvare il file WebVTT. Al termine, copia il contenuto del file della didascalia e incollalo in un editor di testo normale e salvalo con un’estensione del nome file `.vtt`.
 
@@ -1127,7 +1138,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
       Osserva il percorso `,1` alla fine del percorso della didascalia. Immediatamente dopo l’estensione del nome file `.vtt` nel percorso, è possibile attivare (attivare) o disattivare (disattivare) il pulsante dei sottotitoli nella barra del lettore video impostando rispettivamente `,1` o `,0`.
 
-## Aggiunta di marcatori capitolo a video {#adding-chapter-markers-to-video}
+## Aggiungere marcatori capitolo al video {#adding-chapter-markers-to-video}
 
 Per rendere più semplice la visualizzazione e la navigazione dei video in formato esteso, è possibile aggiungere marcatori capitolo a singoli video o a set di video adattivi. Quando un utente riproduce il video, può fare clic sui marcatori capitolo nella timeline del video (nota anche come scorrimento video) per passare facilmente al punto di interesse. Oppure possono passare immediatamente a nuovi contenuti, dimostrazioni ed esercitazioni.
 
@@ -1221,7 +1232,7 @@ La possibilità di personalizzare una miniatura video è disponibile solo dopo a
 
 Vedere anche [Informazioni sulle miniature video in Dynamic Media - Modalità ibrida](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
-### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
+### Aggiungi una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
 
 Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità &quot;Dynamicmedia_Scene7&quot;.
 
@@ -1259,7 +1270,7 @@ Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità &qu
 
 Puoi scegliere tra una delle dieci miniature generate automaticamente da Dynamic Media per aggiungere al video. Il lettore video visualizza la miniatura selezionata quando una risorsa video viene utilizzata con il componente Dynamic Media nell’ambiente di authoring di Experience Manager Sites, Experience Manager Mobile o Experienci Manager Screens. La miniatura funge da immagine statica che rappresenta al meglio il contenuto dell’intero video e incoraggia ulteriormente gli utenti a fare clic sul pulsante Play.
 
-In base al tempo totale del video, Dynamic Media cattura dieci immagini in miniatura (impostazione predefinita) con 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91% nel video. Le dieci miniature persistono, il che significa che se decidi di scegliere una miniatura diversa in un secondo momento, non devi rigenerare la serie. Puoi visualizzare in anteprima le dieci immagini in miniatura e quindi selezionare quella che desideri utilizzare con il video. Se si desidera modificare il valore predefinito, è possibile utilizzare CRXDE Lite per configurare l’intervallo di tempo durante il quale vengono generate le immagini in miniatura. Ad esempio, se desideri generare dal video solo una serie di quattro immagini in miniatura con spaziatura uniforme, puoi configurare l’intervallo di tempo al 24%, 49%, 74% e 99%.
+In base al tempo totale del video, Dynamic Media acquisisce dieci immagini in miniatura (impostazione predefinita). Le immagini vengono acquisite nel video all&#39;1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% e 91%. Le dieci miniature persistono, il che significa che se decidi di scegliere una miniatura diversa in un secondo momento, non devi rigenerare la serie. Puoi visualizzare in anteprima le dieci immagini in miniatura e quindi selezionare quella che desideri utilizzare con il video. Se si desidera modificare il valore predefinito, è possibile utilizzare CRXDE Lite per configurare l’intervallo di tempo durante il quale vengono generate le immagini in miniatura. Ad esempio, se desideri generare dal video solo una serie di quattro immagini in miniatura con spaziatura uniforme, puoi configurare l’intervallo di tempo al 24%, 49%, 74% e 99%.
 
 Idealmente, puoi aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul tuo sito web.
 
@@ -1267,7 +1278,7 @@ Se preferisci, puoi scegliere di caricare una miniatura personalizzata per rappr
 
 Vedere anche [Informazioni sulle miniature video in Dynamic Media - Modalità Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Aggiunta di una miniatura video {#adding-a-video-thumbnail}
+### Aggiungi una miniatura video {#adding-a-video-thumbnail}
 
 Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità ibrida.
 
@@ -1288,13 +1299,13 @@ Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità ibr
 
    Se hai configurato nuovi intervalli di tempo predefiniti o hai caricato un nuovo video per sostituire il video esistente, fai in modo che Dynamic Media rigeneri le miniature.
 
-   Consulta [Configurazione dell&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+   Consulta [Configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
-#### Configurazione dell’intervallo di tempo predefinito per la generazione delle miniature video {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### Configura l’intervallo di tempo predefinito per la generazione delle miniature video {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Quando configuri e salvi il nuovo intervallo di tempo predefinito, la modifica si applica automaticamente solo ai video caricati in futuro. Non applica automaticamente il nuovo predefinito ai video caricati in precedenza. Per i video esistenti, devi rigenerare le miniature.
 
-Consulta [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
+Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
 
 **Per configurare l’intervallo di tempo predefinito generato per la generazione delle miniature video:**
 
@@ -1314,9 +1325,9 @@ Consulta [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
 1. Tocca **[!UICONTROL OK]** e torna alla scheda Proprietà .
 1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, tocca **[!UICONTROL Salva tutto]**, quindi tocca l’icona Indietro Home nell’angolo in alto a sinistra per tornare all’Experience Manager.
 
-   Consulta [Aggiunta di una miniatura video](#adding-a-video-thumbnail).
+   Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
 
-### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
+### Aggiungi una miniatura video personalizzata {#adding-a-custom-video-thumbnail-1}
 
 Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità ibrida.
 
