@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3837'
 ht-degree: 4%
 
 ---
@@ -66,10 +66,10 @@ Per un elenco completo delle funzioni e dei miglioramenti introdotti in [!DNL Ex
 
 >[!NOTE]
 >
->A partire dal Service Pack 9, i clienti [!DNL Experience Manager] possono sviluppare e utilizzare le loro applicazioni [!DNL Experience Manager] con distribuzioni delle [!DNL Azul Zulu] build di OpenJDK, conformi agli standard di Java SE.
+>A partire dal Service Pack 9, [!DNL Experience Manager] i clienti possono sviluppare e utilizzare le loro [!DNL Experience Manager] applicazioni con distribuzioni delle [!DNL Azul Zulu] build di OpenJDK, conformi agli standard di Java™ SE.
 >Il supporto per i [!DNL Azul Zulu] JDK è fornito anche da Adobe ai clienti [!DNL Experience Manager].
 >È possibile scaricare le versioni pertinenti dei JDK di [!DNL Azul Zulu] da [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->I diritti di utilizzo della tecnologia Oracle Java, come distribuiti per Adobe, scadranno entro la fine di dicembre 2022. [!DNL Experience Manager] I clienti sono incoraggiati a pianificare e implementare l’utilizzo di  [!DNL Azul Zulu] JDK al più tardi entro questa data. Per ulteriori informazioni sull&#39;utilizzo della tecnologia [!DNL Oracle Java] e della tecnologia [!DNL Azul Zulu], consulta le [Domande frequenti ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associate.
+>I diritti di utilizzo della tecnologia Oracle Java™, distribuiti per Adobe, scadranno entro la fine di dicembre 2022. [!DNL Experience Manager] I clienti sono incoraggiati a pianificare e implementare l’utilizzo di  [!DNL Azul Zulu] JDK al più tardi entro questa data. Per ulteriori informazioni sull&#39;utilizzo della tecnologia [!DNL Oracle Java™] e della tecnologia [!DNL Azul Zulu], consulta le [Domande frequenti ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associate.
 
 Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5.9.0 di .[!DNL Experience Manager]
 
@@ -83,7 +83,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5
 
 * Il contenitore di layout nidificato all’interno di un altro contenitore di layout ridimensionato mostra un numero errato di colonne per i relativi componenti secondari, causando l’assenza dell’allineamento di questi componenti alla griglia (NPR-36359).
 
-* Verifica collegamenti esterni visualizza collegamenti esterni validi come collegamenti non validi (NPR-36289).
+* Il controllo collegamenti esterno visualizza collegamenti esterni validi come collegamenti non validi (NPR-36289).
 
 * Dopo aver visualizzato i riferimenti per un po&#39; di tempo, il pannello dei riferimenti inizia a visualizzare un messaggio di errore (NPR-36167).
 
@@ -91,7 +91,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5
 
 * Quando si tenta di sincronizzare una Live Copy (utilizzando le configurazioni di rollout [!UICONTROL Attiva su Blueprint activation] e [!UICONTROL Disattiva su Blueprint activation]) se un componente viene eliminato nel master livecopy, la sincronizzazione non riesce e viene registrato un `NullPointerException` (NPR-36127).
 
-* Quando un utente digita in un testo ad hoc per il tag (tag che non esiste sul sistema) e premi Invio, il tag viene visualizzato sotto il campo ma quando il frammento di contenuto viene salvato e riaperto, il tag ad hoc scompare (NPR-36132).
+* Quando un utente digita un testo improvvisato per il tag (tag che non esiste sul sistema) e preme Invio, il tag viene visualizzato sotto il campo ma quando il frammento di contenuto viene salvato e riaperto, il tag improvvisato scompare (NPR-36132).
 
 * Nella casella in entrata non è disponibile l’opzione per visualizzare lo stato delle operazioni asincrone (NPR-36104).
 
@@ -144,7 +144,7 @@ I seguenti miglioramenti dell’esperienza utente vengono eseguiti in [!DNL Asse
 
 * Quando si utilizza una piccola ellisse per annotare le risorse, l’ellisse si sovrappone al numero dell’annotazione nella versione di stampa (NPR-36114).
 
-* Nella vista a colonne, in alcuni casi [!DNL Experience Manager] non richiede conflitti tra risorse duplicati quando viene caricata una risorsa duplicata (NPR-36048).
+* A volte, nella vista a colonne, [!DNL Experience Manager] non richiede conflitti tra risorse duplicati quando viene caricata una risorsa duplicata (NPR-36048).
 
 * La finestra di dialogo Condividi collegamento non si chiude facendo clic sul pulsante Chiudi se viene aperta e non vengono apportate modifiche (NPR-36030).
 
@@ -194,6 +194,16 @@ I seguenti miglioramenti dell’esperienza utente vengono eseguiti in [!DNL Asse
 * Nel campo Titolo della risorsa in Editor set di immagini è ora disponibile un asterisco visivo per indicare un campo obbligatorio, mentre gli assistenti vocali comunicano le informazioni richieste per tale campo (CQ-4290712).
 
 * Gli assistenti vocali ora possono accedere e visualizzare lo scopo di varie opzioni interattive all’interno dei visualizzatori nella pagina dei dettagli delle risorse (CQ-4290708).
+
+Problemi noti di riproduzione video in [!DNL Dynamic Media]:
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dynamic Media]:
 
@@ -275,7 +285,7 @@ Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dyn
 
 ### [!DNL Communities] {#communities-6590}
 
-* Nel filtraggio dello spam, il sistema consuma il 100% dello spazio di heap Java rendendo il server di Experience Manager non reattivo (NPR-36316, NPR-36493).
+* Nel filtraggio dello spam, il sistema consuma il 100% dello spazio heap Java™, rendendo il server di Experience Manager non reattivo (NPR-36316, NPR-36493).
 * Nei forum, i dati delle sessioni JCR provenienti da `SearchCommentSocialComponentListProvider` vengono persi (NPR-36235).
 * L’apertura di un messaggio specifico nella casella in entrata riflette tutti i messaggi con impaginazione impropria e altri problemi (NPR-35917).
 
@@ -310,7 +320,7 @@ Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dyn
 
 **Flusso di lavoro**
 
-* Quando chiami l&#39;endpoint REST di un servizio [!DNL Experience Manager Forms] su JBoss, [!DNL Experience Manager] visualizza il seguente messaggio di errore (NPR-36305):
+* Quando chiami l&#39;endpoint REST di un servizio [!DNL Experience Manager Forms] su JBoss®, [!DNL Experience Manager] visualizza il seguente messaggio di errore (NPR-36305):
 
    ```TXT
    Invalid input. The maximum length of 2000 characters was exceeded.
@@ -400,7 +410,7 @@ Per conoscere le piattaforme certificate per l’utilizzo con questa versione, c
 
 >[!NOTE]
 >
->AEM 6.5.9.0 include una nuova versione di [Pacchetto compatibilità AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Se utilizzi una versione precedente del pacchetto di compatibilità di AEM Forms e aggiorni AEM 6.5.9.0, installa la versione più recente del pacchetto dopo l’installazione del pacchetto aggiuntivo di Forms.
+>Experience Manager 6.5.9.0 include una nuova versione di [Pacchetto di compatibilità AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Se utilizzi una versione precedente del pacchetto di compatibilità di AEM Forms e aggiorni ad Experience Manager 6.5.9.0, installa la versione più recente del pacchetto dopo l’installazione del pacchetto aggiuntivo di Forms.
 
 ### Installare Adobe Experience Manager Forms su JEE {#install-aem-forms-jee-installer}
 
@@ -435,14 +445,14 @@ Per utilizzare UberJar in un progetto Maven, consulta [come utilizzare UberJar](
 
 ## Funzioni obsolete {#removed-deprecated-features}
 
-Di seguito è riportato un elenco di funzioni e funzionalità contrassegnate come obsolete con [!DNL Experience Manager] 6.5.7.0. Le funzioni vengono contrassegnate come obsolete inizialmente e successivamente rimosse in una versione futura. In genere viene fornita un’opzione alternativa.
+Di seguito è riportato un elenco di funzioni e funzionalità contrassegnate come obsolete con [!DNL Experience Manager] 6.5.7.0. Le funzioni vengono contrassegnate come obsolete inizialmente e successivamente rimosse in una versione futura. È disponibile un’opzione alternativa.
 
 Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Inoltre, pianifica di modificare l’implementazione in modo da utilizzare un’opzione alternativa.
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
 | Integrations (Integrazioni) | La schermata **[!UICONTROL Opt-in di AEM Cloud Services]** è obsoleta. Con l’integrazione Experience Manager e Adobe Target aggiornata all’Experience Manager 6.5 per supportare l’API Adobe Target Standard, che utilizza l’autenticazione tramite Adobe IMS e [!DNL Adobe I/O], e il ruolo crescente di Adobe Launch per la strumentazione delle pagine di Experience Manager per l’analisi e la personalizzazione, la procedura guidata di consenso è diventata irrilevante dal punto di vista funzionale. | Configura le connessioni di sistema, l’autenticazione Adobe IMS e le integrazioni [!DNL Adobe I/O] tramite i rispettivi servizi cloud [!DNL Experience Manager]. |
-| Connettori | Il connettore Adobe JCR per Microsoft SharePoint 2010 e Microsoft SharePoint 2013 è obsoleto, ad Experience Manager 6.5. | N/D |
+| Connettori | Il connettore Adobe JCR per Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 è obsoleto, ad Experience Manager 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
 
@@ -452,7 +462,7 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fase di progettazione del modello di flusso di lavoro personalizzato con la relativa copia in fase di esecuzione utilizzando l’API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Se una cartella nella gerarchia viene rinominata in [!DNL Assets] e una cartella nidificata contenente una risorsa viene pubblicata in [!DNL Brand Portal], il titolo della cartella non viene aggiornato in [!DNL Brand Portal] finché la cartella principale non viene pubblicata nuovamente.
+* Se una cartella nella gerarchia viene rinominata in [!DNL Assets] e una cartella nidificata contenente una risorsa viene pubblicata in [!DNL Brand Portal], il titolo della cartella non viene aggiornato in [!DNL Brand Portal] finché la cartella principale non viene ripubblicata.
 
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata in Browser proprietà. Se si seleziona per configurare altri campi del modulo adattivo nello stesso editor, il problema viene risolto.
 
