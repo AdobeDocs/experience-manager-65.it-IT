@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestione risorse,Ricerca
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9743'
+source-wordcount: '9788'
 ht-degree: 4%
 
 ---
@@ -630,7 +630,7 @@ I gruppi di utenti chiusi rappresentano un modo aggiuntivo per limitare l’acce
    >Se non specifichi il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell’istanza di pubblicazione.
 
 1. Pubblica la cartella e prova ad accedervi dall&#39;istanza di pubblicazione. Viene visualizzata una schermata di accesso.
-1. Se sei un membro CUG, immetti le tue credenziali di sicurezza. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
+1. Se sei un membro CUG, immetti le tue credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione di [!DNL Experience Manager] .
 
 ## Cercare risorse {#assetsearch}
 
@@ -765,7 +765,17 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 ### Visualizzare le annotazioni salvate {#viewing-saved-annotations}
 
-1. Per visualizzare le annotazioni salvate per una risorsa, accedi alla posizione della risorsa e apri la pagina della risorsa.
+È possibile visualizzare una sola annotazione alla volta.
+
+>[!NOTE]
+>
+>Se selezioni più annotazioni, l’ultima sarà visibile nell’interfaccia utente.
+>
+>La selezione multipla è supportata solo per la stampa della risorsa annotata come PDF.
+
+**Per visualizzare le annotazioni salvate per una risorsa:**
+
+1. Andate alla posizione della risorsa e aprite la pagina della risorsa.
 
 1. Nell&#39;interfaccia di Experience Manager, scegli **[!UICONTROL Timeline]**.
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
@@ -781,6 +791,10 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavoro di revisione, puoi stampare la risorsa insieme ad annotazioni e rivederla come file PDF per la revisione offline.
 
 È inoltre possibile scegliere di stampare solo le annotazioni o lo stato di revisione.
+
+>[!NOTE]
+>
+>È possibile selezionare più annotazioni durante la stampa della risorsa annotata in formato PDF.
 
 Per stampare le annotazioni e controllare lo stato, fare clic su **[!UICONTROL Stampa]** e seguire le istruzioni della procedura guidata. L’opzione **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo quando alla risorsa è assegnata almeno un’annotazione o uno stato di revisione.
 
