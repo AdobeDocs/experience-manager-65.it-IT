@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: Ricerca
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 19%
@@ -59,7 +59,7 @@ La best practice prevede di copiare e regolare un predicato esistente. I predica
 
 Per creare un predicato di proprietà:
 
-1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/geometrixx/components/titlepredicate**.
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/weretail/components/titlepredicate**.
 1. Aggiungi **content.xml**:
 
    ```xml
@@ -152,7 +152,7 @@ Per creare un predicato di proprietà:
 
 Per creare un predicato di gruppo:
 
-1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/geometrixx/components/picspredicate.**
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/weretail/components/picspredicate**.
 1. Aggiungi **content.xml**:
 
    ```xml
