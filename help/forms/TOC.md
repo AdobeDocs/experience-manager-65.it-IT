@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: forms
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '3718'
 ht-degree: 4%
@@ -70,7 +69,7 @@ ht-degree: 4%
       + [Installazione e configurazione del server AEM Forms Document Security](using/installing-and-configuring-the-document-security-server.md)
       + [Preparazione all&#39;installazione di AEM Forms (server singolo)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Installazione e distribuzione di Adobe Experience Manager Forms su JEE per JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      + [Installazione e distribuzione di moduli Adobe Experience Manager in JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      + [Installazione e distribuzione di moduli Adobe Experience Manager su JEE per WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       + [Installazione e distribuzione di AEM Forms su JEE per WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [Installare AEM Forms Workbench](using/install-workbench.md)
       + [Installare e configurare Designer](using/installing-configuring-designer.md)
@@ -118,7 +117,7 @@ ht-degree: 4%
       + [Portale Forms](using/forms-portal-handling-user-data.md)
       + [Gestione della corrispondenza](using/correspondence-management-handling-user-data.md)
       + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Sicurezza dei documenti](/help/forms/using/document-security-handling-user-data.md)
+      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Hardening dell&#39;ambiente AEM Forms {#hardening-aem-forms-environment}
       + [Hardening e protezione dei moduli AEM in ambiente OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Considerazioni generali sulla sicurezza per AEM Forms su JEE](using/general-security-considerations.md)
@@ -132,7 +131,7 @@ ht-degree: 4%
    + [Utilizzare il modello dati del modulo](using/work-with-form-data-model.md)
    + [Utilizzare il modello dati del modulo](using/using-form-data-model.md)
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
-   + [Procedure consigliate per l&#39;utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md) 
+   + [Procedure consigliate per l&#39;utilizzo dei moduli adattivi ](using/adaptive-forms-best-practices.md)
    + [Creazione di un modulo adattivo](using/creating-adaptive-form.md)
    + [Frammenti di moduli adattivi](using/adaptive-form-fragments.md)
    + [Configurazione dell’azione Invia](using/configuring-submit-actions.md)
@@ -568,7 +567,7 @@ ht-degree: 4%
    + Servizio informazioni di sistema {#system-information-service}
       + [Configurazione del servizio informazioni di sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servizio informazioni di sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Reporting processi  {#process-reporting}
++ Reporting processi {#process-reporting}
    + [Introduzione alla generazione di rapporti sui processi](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Guida introduttiva alla generazione di rapporti sui processi](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Come funziona il reporting dei processi](/help/forms/using/process-reporting/process-reporting-architecture.md)
