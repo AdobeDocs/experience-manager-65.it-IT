@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestione risorse,Ricerca
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
+source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
 workflow-type: tm+mt
 source-wordcount: '9788'
 ht-degree: 4%
@@ -531,7 +531,7 @@ Lo spostamento delle risorse trascinandole non consente di aprire la procedura g
 
    >[!NOTE]
    >
-   >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni, ad esempio l&#39;opzione [!UICONTROL Carica rappresentazione], non vengono visualizzate. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
+   >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni, ad esempio [!UICONTROL Carica rappresentazione], non vengono visualizzate. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
    Puoi configurare le dimensioni per il rendering da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, [!DNL Assets] visualizza il rendering con le dimensioni esatte o più vicine.
 
@@ -775,7 +775,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 **Per visualizzare le annotazioni salvate per una risorsa:**
 
-1. Andate alla posizione della risorsa e aprite la pagina della risorsa.
+1. Vai alla posizione della risorsa e apri la pagina della risorsa.
 
 1. Nell&#39;interfaccia di Experience Manager, scegli **[!UICONTROL Timeline]**.
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
