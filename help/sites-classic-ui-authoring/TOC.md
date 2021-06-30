@@ -1,14 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6.5
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
 feature: 'Authoring  '
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 84%
@@ -16,19 +15,19 @@ ht-degree: 84%
 ---
 
 
-# Guida utente all&#39;authoring dell&#39;interfaccia classica AEM 6.5 {#classic-ui}
+# Guida utente all’authoring dell’interfaccia classica AEM 6.5 {#classic-ui}
 
 + [Panoramica sulla creazione nell’interfaccia classica](home.md)
 + Introduzione all’authoring con interfaccia classica {#introduction}
    + [Primi passi per gli autori](classic-page-author-first-steps.md)
    + [Authoring nell’interfaccia classica](classicui.md)
-   + [Utilizzo dell’ambiente Authoring](author-env.md)
+   + [Utilizzo dell’ambiente di authoring](author-env.md)
    + [Operazioni di base](author-env-basic-handling.md)
    + [Configurazione dell’ambiente dell’account](author-env-user-props.md)
    + [Selezione dell’interfaccia](author-env-select-ui.md)
    + [Ricerca](author-env-search.md)
-   + [Casella in entrata](author-env-inbox.md)
-   + [Scelte rapide da tastiera per le console](author-env-keyboard-shortcuts.md)
+   + [Casella in entrata  ](author-env-inbox.md)
+   + [Scelte rapide da tastiera per le console  ](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Authoring delle pagine](classic-page-author.md)
    + [Ambiente e strumenti di authoring](classic-page-author-env-tools.md)
@@ -38,16 +37,16 @@ ht-degree: 84%
    + [Pubblicazione delle pagine](classic-page-author-publish-pages.md)
    + [Modifica delle proprietà di una pagina](classic-page-author-edit-page-properties.md)
    + [Annotazioni durante la modifica di una pagina](classic-page-author-annotations.md)
-   + [Risoluzione di problemi AEM nell’ambiente di authoring ](classic-page-author-troubleshooting.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring](classic-page-author-troubleshooting.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Authoring di una pagina per dispositivi mobili ](classic-feature-mobile.md)
+   + [Authoring di una pagina per dispositivi mobili](classic-feature-mobile.md)
    + [Componenti per l’authoring delle pagine](classic-page-author-edit-mode.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
-   + [Layout dinamico](classic-page-author-responsive-layout.md)
+   + [Layout reattivo  ](classic-page-author-responsive-layout.md)
    + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
-   + [Utilizzo dei tag](classic-feature-tags.md)
+   + [Utilizzo dei tag  ](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](classic-page-author-design-mode.md)
    + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](classic-feature-search-promote.md)
@@ -58,9 +57,9 @@ ht-degree: 84%
    + [Applicazione dei flussi di lavoro alle pagine](classic-workflows-applying.md)
 + Lanci {#launches}
    + [Lanci](classic-launches.md)
-   + [Creazione di lanci](classic-launches-creating.md)
+   + [Creazione dei lanci](classic-launches-creating.md)
    + [Modifica dei lanci](classic-launches-editing.md)
-   + [Promozione del lancio](classic-launches-promoting.md)
+   + [Promozione dei lanci](classic-launches-promoting.md)
 + Personalizzazione {#personalization}
    + [Segmentazione](classic-personalization-campaigns-segmentation.md)
    + [Gestione delle campagne](classic-personalization-campaigns.md)
@@ -70,10 +69,10 @@ ht-degree: 84%
    + [Tracciamento dei messaggi e-mail non pervenuti a destinazione](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teaser e strategie](classic-personalization-campaigns-teasers-strategy.md)
    + [Impostazione della campagna](classic-personalization-campaigns-setting-up-your.md)
-   + [Pubblicazione di un&#39;e-mail ai fornitori del servizio e-mail](classic-personalization-campaigns-email-newsletters.md)
+   + [Pubblicazione di un’e-mail ai provider di servizi e-mail](classic-personalization-campaigns-email-newsletters.md)
    + [Utilizzo di Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
-   + [Creare un’efficace pagina di destinazione di newsletter](classic-personalization-campaigns-email-landingpage.md)
-   + [Gestione sottoscrizioni](classic-personalization-campaigns-email-subscriptions.md)
+   + [Creazione di una pagina di destinazione efficace per una newsletter](classic-personalization-campaigns-email-landingpage.md)
+   + [Gestione delle registrazioni](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard](classic-personalization-ac-campaign.md)
    + [Utilizzo di Adobe Campaign](classic-personalization-ac.md)
@@ -83,7 +82,7 @@ ht-degree: 84%
 + Authoring delle risorse nell’interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
-   + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
+   + [Aggiunta di risorse Dynamic Media alle pagine](dynamic-media-assets-adding-to-page.md)
    + [Aggiunta di funzionalità di Scene7 alla pagina](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Utilizzo di Dynamic Media](dynamic-media-assets.md)
