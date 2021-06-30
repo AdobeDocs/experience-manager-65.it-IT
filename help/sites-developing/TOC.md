@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.5
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Sviluppo
 role: Developer
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 16%
@@ -43,7 +42,7 @@ ht-degree: 16%
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
-      + [Modelli di pagina - Modificabili  ](page-templates-editable.md)
+      + [Modelli di pagina - Modificabili ](page-templates-editable.md)
       + [Modelli di pagina - Statici](page-templates-static.md)
       + [Modelli per frammenti di contenuto](content-fragment-templates.md)
       + [Rendering di modelli adattivi](templates-adaptive-rendering.md)
@@ -158,7 +157,7 @@ ht-degree: 16%
    + [Configurazione della pagina per la modifica in serie delle proprietà di pagina](bulk-editing.md)
    + [Personalizzazione ed estensione dei frammenti di contenuto](customizing-content-fragments.md)
    + [Componenti di configurazione dei frammenti di contenuto per il rendering](content-fragments-config-components-rendering.md)
-   + [Frammenti esperienza](experience-fragments.md)
+   + [Frammenti di esperienza](experience-fragments.md)
    + Estensione dei flussi di lavoro{#extending-workflows}
       + [Sviluppo ed estensione dei flussi di lavoro](workflows.md)
       + [Creazione di modelli di flussi di lavoro](workflows-models.md)
