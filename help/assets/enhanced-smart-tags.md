@@ -2,16 +2,15 @@
 title: Sono stati migliorati i tag avanzati
 description: Sono stati migliorati i tag avanzati
 contentOwner: AG
-feature: Smart Tags, Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Tag avanzati, ricerca
+role: User
+exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1600'
 ht-degree: 4%
 
 ---
-
 
 # Comprendere, applicare e curare tag avanzati {#enhanced-smart-tags}
 
@@ -85,7 +84,7 @@ Il processo di onboarding è completo quando l&#39;amministratore configura il s
 >
 >Se utilizzi [!DNL Experience Manager] 6.3 o versione precedente e richiedi il servizio di assegnazione tag per le risorse, consulta [Tag avanzati](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di intelligenza artificiale più recenti e sono quindi meno accurati del servizio avanzato di assegnazione tag avanzati.
 
-## Rivedi risorse e tag {#reviewing-assets-and-tags}
+## Esaminare risorse e tag {#reviewing-assets-and-tags}
 
 Una volta a bordo, la prima cosa che si desidera fare è identificare un set di tag che descrivono al meglio queste immagini nel contesto della propria attività.
 
@@ -100,7 +99,7 @@ Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagi
 >1. Quando si prepara il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 
-## Comprendere i risultati della ricerca [!DNL Experience Manager] con tag avanzati {#understandsearch}
+## Comprendere i risultati di ricerca [!DNL Experience Manager] con gli smart tag {#understandsearch}
 
 Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` aggiuntiva per trovare i termini di ricerca correlati agli smart tag. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
@@ -118,7 +117,7 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 >
 >Se l’indicizzazione Lucene viene eseguita su [!DNL Adobe Experience Manager], la ricerca basata sugli smart tag non funziona come previsto.
 
-## Assegna automaticamente tag alle risorse {#tagging-assets-automatically}
+## Assegnare automaticamente tag alle risorse {#tagging-assets-automatically}
 
 Dopo aver completato il training del Servizio di contenuti avanzati, puoi attivare il flusso di lavoro di assegnazione tag per applicare automaticamente i tag appropriati a un set diverso di risorse simili.
 
