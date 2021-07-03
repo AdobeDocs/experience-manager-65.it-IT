@@ -3,18 +3,17 @@ title: Riutilizzare le risorse con MSM
 description: Utilizzare risorse su più pagine/cartelle derivate e collegate a risorse principali. Le risorse rimangono sincronizzate con una copia primaria e, con alcuni clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator, Architect
-feature: Asset Management,Multi Site Manager
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin, Architect
+feature: Gestione risorse,Gestione siti multipli
+exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '3375'
+source-wordcount: '3371'
 ht-degree: 9%
 
 ---
 
-
-# Riutilizzare le risorse utilizzando MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
+# Riutilizzare le risorse con MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 La funzionalità Multi Site Manager (MSM) in [!DNL Adobe Experience Manager] consente agli utenti di riutilizzare contenuti creati una volta e riutilizzati in più posizioni web. Lo stesso è disponibile per le risorse digitali come MSM per la funzionalità [!DNL Assets] . Utilizzando MSM per [!DNL Assets], puoi:
 
@@ -97,7 +96,7 @@ Per creare Live Copy utilizzando il secondo metodo, effettua le seguenti operazi
 >
 >Quando si sposta un&#39;origine o una Live Copy, le relazioni vengono mantenute. Quando una Live Copy viene eliminata, le relazioni vengono rimosse.
 
-## Visualizza varie proprietà e stati dell&#39;origine e della Live Copy {#properties}
+## Visualizza varie proprietà e stati della sorgente e della Live Copy {#properties}
 
 È possibile visualizzare le informazioni e gli stati relativi a MSM della Live Copy, ad esempio relazione, sincronizzazione, rollout e altro dalle varie aree dell&#39;interfaccia utente [!DNL Experience Manager].
 
@@ -209,7 +208,7 @@ In alternativa, puoi avviare un’azione di rollout dalla barra Riferimenti dopo
 
 *Figura: Effettua il rollout delle modifiche dell’origine nella Live Copy selezionata.*
 
-### Informazioni sulla sincronizzazione dell&#39;azione {#about-sync}
+### Informazioni sull’azione di sincronizzazione {#about-sync}
 
 Un’azione di sincronizzazione richiama le modifiche da un’origine solo alla Live Copy selezionata. L’azione di sincronizzazione rispetta e mantiene le modifiche locali eseguite dopo l’annullamento dell’ereditarietà. Le modifiche locali non vengono sovrascritte e l’ereditarietà annullata non viene ristabilita. Puoi avviare un’azione di sincronizzazione in tre modi.
 
@@ -233,7 +232,7 @@ Per visualizzare gli stati e le informazioni relativi a un’azione di sincroniz
 >
 >Se la relazione è sospesa, l’azione di sincronizzazione non è disponibile nella barra degli strumenti. Mentre l’azione di sincronizzazione è disponibile nella barra Riferimenti, le modifiche non vengono propagate anche in seguito a un rollout riuscito.
 
-## Sospendi e riprendi la relazione {#suspend-resume}
+## Sospendi e riprendi relazione {#suspend-resume}
 
 Puoi sospendere temporaneamente la relazione per impedire a una Live Copy di ricevere le modifiche apportate alla risorsa o alla cartella di origine. La relazione può anche essere ripresa per la Live Copy per iniziare a ricevere le modifiche dalla sorgente.
 
