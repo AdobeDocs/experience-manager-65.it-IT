@@ -4,9 +4,9 @@ description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
 feature: Risorse 3D
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
@@ -21,7 +21,7 @@ Il visualizzatore 3D interattivo è disponibile nella pagina dei dettagli della 
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formati supportati per l&#39;anteprima 3D nell&#39;Experience Manager {#supported-3d-previewing-assets}
+## Formati supportati per l’anteprima 3D in Experience Manager {#supported-3d-previewing-assets}
 
 L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 
@@ -45,7 +45,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     material_0_baseColor.
     jpegmaterial_0_Normal.jpeg
 
-## Considerazioni sulle prestazioni durante l&#39;anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni quando si visualizzano in anteprima le risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori, come la larghezza di banda, la complessità delle immagini e le latenze al server.
 
