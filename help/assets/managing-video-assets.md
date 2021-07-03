@@ -2,16 +2,15 @@
 title: Gestire le risorse video
 description: Carica, visualizza in anteprima, annota e pubblica risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User
+feature: Gestione risorse
+exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 8%
+source-wordcount: '809'
+ht-degree: 7%
 
 ---
-
 
 # Gestire le risorse video {#manage-video-assets}
 
@@ -90,6 +89,6 @@ Dopo la pubblicazione, puoi includere le risorse video in una pagina web come UR
 >[!MORELIKETHIS]
 >
 >* [Gestire le risorse digitali in Risorse di Experience Manager](/help/assets/manage-assets.md)
->* [Gestire le raccolte in Risorse di Experience Manager](/help/assets/manage-collections.md)
->* [Documentazione video su Dynamic Media](/help/assets/video.md).
+* [Gestire le raccolte in Risorse di Experience Manager](/help/assets/manage-collections.md)
+* [Documentazione video su Dynamic Media](/help/assets/video.md).
 
