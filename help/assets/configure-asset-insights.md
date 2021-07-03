@@ -2,10 +2,10 @@
 title: Configura Asset Insights per ottenere l’analisi.
 description: Configurare Assets Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 7%
