@@ -2,10 +2,10 @@
 title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 feature: Risorse, utenti e gruppi collegati
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 29%
@@ -57,7 +57,7 @@ Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell�
 | Utente DAM | Remoto | `Authors` | `ksaner` in remoto  [!DNL Experience Manager] | Ruolo di authoring nella distribuzione [!DNL Experience Manager] remota. Cerca e sfoglia le risorse in Risorse collegate utilizzando il [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` in remoto  [!DNL Experience Manager] | Questo utente presente nell’implementazione remota viene utilizzato dal server locale [!DNL Experience Manager] (non il ruolo di autore [!DNL Sites]) per recuperare le risorse remote, per conto dell’ [!DNL Sites] autore. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
 
-## Configura una connessione tra le distribuzioni [!DNL Sites] e [!DNL Assets] {#configure-a-connection-between-sites-and-assets-deployments}
+## Configurare una connessione tra le distribuzioni [!DNL Sites] e [!DNL Assets] {#configure-a-connection-between-sites-and-assets-deployments}
 
 Un amministratore [!DNL Experience Manager] può creare questa integrazione. Una volta create, le autorizzazioni necessarie per utilizzarle vengono stabilite tramite gruppi di utenti. I gruppi di utenti sono definiti nella distribuzione [!DNL Sites] e nella distribuzione DAM.
 
@@ -162,7 +162,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
-### Controlla l&#39;utilizzo di una risorsa tra le pagine web {#asset-usage-references}
+### Controllare l&#39;utilizzo di una risorsa in più pagine web {#asset-usage-references}
 
 [!DNL Experience Manager] consente agli utenti DAM di controllare tutti i riferimenti a una risorsa. Consente di comprendere e gestire l’utilizzo di una risorsa in risorse remote [!DNL Sites] e in risorse composte. Molti autori di pagine web nella distribuzione [!DNL Experience Manager Sites] possono utilizzare una risorsa in un [!DNL Assets] remoto in pagine web diverse. Per semplificare la gestione delle risorse e non portare a riferimenti interrotti, è importante che gli utenti DAM verifichino l’utilizzo di una risorsa nelle pagine web locali e remote. La scheda [!UICONTROL Riferimenti] nella pagina [!UICONTROL Proprietà] di una risorsa elenca i riferimenti locali e remoti della risorsa.
 
