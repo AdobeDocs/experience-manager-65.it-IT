@@ -2,18 +2,17 @@
 title: Best practice per l’elaborazione dei formati di file supportati
 description: Best practice per elaborare i vari tipi di file supportati utilizzando [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Gestione delle risorse, Strumenti per sviluppatori
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-
-# Best practice per il formato dei file delle risorse {#assets-file-format-best-practices}
+# Best practice per i formati di file delle risorse {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] supporta numerose librerie di formati di file proprietari e di terze parti per soddisfare diversi requisiti di supporto dei file da parte degli utenti. Le librerie di Adobi supportate includono [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer e [!DNL Adobe InDesign Server]. Inoltre, [!DNL Experience Manager Assets] supporta librerie di terze parti, inclusi [!DNL ImageMagick], [!DNL TwelveMonkeys] e così via.
 
@@ -23,7 +22,7 @@ Per i formati di file supportati, consulta [Formati supportati da Assets](/help/
 >
 >Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Rivolgiti al rappresentante dell’Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
-## [!DNL Adobe Camera Raw] libreria  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] libreria {#adobe-camera-raw-library}
 
 Per prestazioni ottimali, Adobe consiglia di utilizzare la libreria [!DNL Adobe Camera Raw] per i file RAW e DNG.
 
