@@ -2,16 +2,15 @@
 title: Introduzione a [!DNL Adobe Experience Manager Assets]
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi d’uso e l’offerta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Asset Management
-role: Leader, Architect, Business Practitioner
-translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+feature: Gestione risorse
+role: Leader, Architect, User
+exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 32%
+source-wordcount: '876'
+ht-degree: 33%
 
 ---
-
 
 # Informazioni su [!DNL Adobe Experience Manager Assets] come soluzione DAM {#administering-assets}
 
@@ -53,7 +52,7 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 >
 >Il caricamento e/o la modifica di un grande volume di risorse (in particolare di immagini) può influire sulle prestazioni della distribuzione [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminologia  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
 Quando lavori con risorse digitali in [!DNL Experience Manager], è necessario comprendere la seguente terminologia:
 
@@ -86,9 +85,9 @@ Le attività eseguibili con questi flussi di lavoro preconfigurati:
 
 Ovviamente, puoi applicare i flussi di lavoro anche manualmente. Per un elenco dei flussi di lavoro predefiniti, consulta [Gestori di contenuti multimediali di Assets ](media-handlers.md).
 
-## [!DNL Experience Manager Assets] e  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Per informazioni sulle differenze, consulta [Risorse e libreria multimediale](medialibrary.md) .
+Per informazioni sulle differenze, consulta [Risorse e Media Library](medialibrary.md) .
 
 >[!MORELIKETHIS]
 >
