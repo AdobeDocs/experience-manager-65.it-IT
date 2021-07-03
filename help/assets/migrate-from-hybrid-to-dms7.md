@@ -6,11 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Modalità Scene7, Modalità ibrida
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-translation-type: tm+mt
-source-git-commit: 61e703e73b831a9b4e7045e5d5fffeef5be7ed6d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
@@ -36,7 +35,7 @@ Quando si passa da Dynamic Media-Hybrid a Dynamic Media-Scene7 sono disponibili 
 
 ## Opzione 1 - Provisioning di una nuova istanza di Dynamic Media-Scene7 su AEM {#provision-new-dms7}
 
-È consigliabile iniziare da zero con una nuova istanza di Dynamic Media-Scene7 su Adobe Experience Manager. Oltre all’acquisizione e all’elaborazione delle risorse tramite il Cloud Service Dynamic Media, è vivamente consigliato un controllo Adobe dell’utilizzo delle risorse, dei flussi di lavoro e dei componenti. In molti casi, i componenti e i flussi di lavoro personalizzati possono essere sostituiti da nuove funzioni pronte all’uso.
+È consigliabile iniziare da zero con una nuova istanza di Dynamic Media-Scene7 su Adobe Experience Manager, dotata di provisioning. Oltre all’acquisizione e all’elaborazione delle risorse tramite il Cloud Service Dynamic Media, è vivamente consigliato un controllo Adobe dell’utilizzo delle risorse, dei flussi di lavoro e dei componenti. In molti casi, i componenti e i flussi di lavoro personalizzati possono essere sostituiti da nuove funzioni pronte all’uso.
 
 ## Opzione 2 - Migrazione dell&#39;istanza esistente di Dynamic Media-Hybrid a Dynamic Media-Scene7 {#process-for-migrating}
 
@@ -44,7 +43,7 @@ Quando si passa da Dynamic Media-Hybrid a Dynamic Media-Scene7 sono disponibili 
 |---|---|---|
 | 1 | Clona l’istanza di authoring Dynamic Media-Hybrid. | È necessario mantenere l’istanza esistente di Dynamic Media-Hybrid Author a scopo di fallback fino a quando i passaggi rimanenti in questo processo di migrazione non vengono completati correttamente. |
 | 2 | Avvia l&#39;istanza Author clonata in modalità Dynamic Media-Scene7. |  |
-| 3 | Nei Cloud Services Adobe Experience Manager, configura Dynamic Media con le credenziali Dynamic Media-Scene7. | Adobe deve approvare il provisioning Dynamic Media-Scene7. Gli ambienti Dynamic MediaM-Hybrid e Dynamic Media-Scene7 simultanei saranno supportati per un periodo di tempo limitato. |
+| 3 | In Cloud Services Adobe Experience Manager, configura Dynamic Media con le credenziali Dynamic Media-Scene7. | Adobe deve approvare il provisioning Dynamic Media-Scene7. Gli ambienti Dynamic MediaM-Hybrid e Dynamic Media-Scene7 simultanei saranno supportati per un periodo di tempo limitato. |
 | 4 | Crea il bundle di migrazione per acquisire le risorse in base alle esigenze.<br>Elimina i PTIFF locali creati durante l’acquisizione iniziale in Dynamic Media-Hybrid. | Se tutte le risorse sono attualmente disponibili nell’istanza Dynamic Media-Hybrid, un clone di che le include già tutte. Pertanto, non è necessario alcun bundle. |
 | 5 | Esegui il flusso di lavoro di aggiornamento delle risorse per sincronizzare le risorse al Cloud Service Dynamic Media. | L’Adobe consiglia di eseguire il flusso di lavoro di aggiornamento in batch per consentire la compattazione. |
 | 6 | Migrare predefiniti per visualizzatori, immagini e video. |  |
