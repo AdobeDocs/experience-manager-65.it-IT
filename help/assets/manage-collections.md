@@ -3,16 +3,15 @@ title: Gestire le raccolte di risorse digitali
 description: Scopri le attività per gestire le raccolte di risorse, ad esempio creare, visualizzare, eliminare, modificare e scaricare le raccolte.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
-feature: Collections,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Raccolte, Gestione risorse
+exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2183'
 ht-degree: 11%
 
 ---
-
 
 # Gestire le raccolte {#managing-collections}
 
@@ -28,7 +27,7 @@ Le raccolte sono dei tipi seguenti, in base alla modalità di raccolta delle ris
 
 * Una raccolta avanzata che include in modo dinamico le risorse in base a un criterio di ricerca.
 
-## Accedi alla console Raccolte {#navigating-the-collections-console}
+## Accedere alla console Raccolte {#navigating-the-collections-console}
 
 Per aprire le **[!UICONTROL Raccolte]**, nell&#39;interfaccia [!DNL Experience Manager] vai a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
 
@@ -58,7 +57,7 @@ Puoi creare una raccolta con riferimenti statici, ad esempio una raccolta con ri
 
    Per aggiungere risorse alla raccolta, passa all’interfaccia utente [!DNL Assets] . Per informazioni dettagliate, consulta [Aggiungere risorse a una raccolta](#adding-assets-to-a-collection).
 
-### Creare raccolte utilizzando la zona di rilascio {#create-collections-using-dropzone}
+### Creare raccolte con zona di rilascio {#create-collections-using-dropzone}
 
 Puoi trascinare risorse dall’interfaccia utente [!DNL Assets] a una raccolta. Puoi anche creare una copia di una raccolta e trascinarvi le risorse.
 
@@ -147,7 +146,7 @@ I metadati della raccolta includono dati sulla raccolta, compresi eventuali tag 
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** per visualizzare i metadati della raccolta.
 1. Se necessario, modifica i metadati. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti.
 
-## Modifica metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
+## Modificare i metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
 
 Puoi modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
@@ -181,13 +180,13 @@ Puoi cercare le raccolte dalla console Raccolte . Quando esegui una ricerca con 
 
 Se cerchi raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. [!DNL Assets] Le cartelle o all’interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all’interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
-## Cerca nelle raccolte {#searching-within-collections}
+## Ricerca nelle raccolte {#searching-within-collections}
 
 Nella console Raccolte, fai clic su una raccolta per aprirla.
 
 All&#39;interno di una raccolta, la ricerca [!DNL Experience Manager] è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che stai visualizzando. Quando esegui una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle secondarie corrispondenti all’interno della cartella corrente. Quando esegui una ricerca all’interno di una raccolta, vengono restituite solo le risorse, le cartelle e le altre raccolte corrispondenti ai membri diretti della raccolta.
 
-## Modifica impostazioni raccolta {#editing-collection-settings}
+## Modificare le impostazioni della raccolta {#editing-collection-settings}
 
 È possibile modificare le impostazioni della raccolta, ad esempio titolo e descrizione, o aggiungere membri a una raccolta.
 
@@ -206,7 +205,7 @@ All&#39;interno di una raccolta, la ricerca [!DNL Experience Manager] è limitat
    >
    >È inoltre possibile eliminare le raccolte avanzate eliminando le ricerche salvate](#saved-searches).[
 
-## Scarica una raccolta {#downloading-a-collection}
+## Scaricare una raccolta {#downloading-a-collection}
 
 Quando scarichi una raccolta, viene scaricata l’intera gerarchia delle risorse all’interno della raccolta, incluse le cartelle e le raccolte secondarie.
 
@@ -259,7 +258,7 @@ Per eliminare le ricerche salvate, effettua le seguenti operazioni:
 
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per eliminare la ricerca salvata.
 
-## Eseguire un flusso di lavoro su una raccolta {#running-a-workflow-on-a-collection}
+## Esecuzione di un flusso di lavoro su una raccolta {#running-a-workflow-on-a-collection}
 
 Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all’interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
@@ -272,5 +271,5 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 >[!MORELIKETHIS]
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
+* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
