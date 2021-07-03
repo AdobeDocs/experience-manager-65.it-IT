@@ -2,16 +2,15 @@
 title: Organizzazione delle risorse digitali
 description: Organizza le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Search
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Gestione risorse,Ricerca
+exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
-
 
 # Organizzazione delle risorse digitali {#organize-digital-assets}
 
@@ -62,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organizza le risorse per utilizzare i profili {#organize-to-use-profiles}
+## Organizzare le risorse per utilizzare i profili {#organize-to-use-profiles}
 
 Un profilo di elaborazione contiene [!DNL Assets] comandi di elaborazione applicabili alle risorse caricate in cartelle predefinite. I profili vengono utilizzati per automatizzare l’elaborazione del contenuto di una cartella o di risorse appena caricate. Puoi sfruttare i profili per organizzare meglio le risorse.
 
