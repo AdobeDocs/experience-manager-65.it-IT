@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibilità
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Tutti i componenti predefiniti per visualizzatori [!DNL Dynamic Media] supportan
 
 Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento per i visualizzatori di Dynamic Media.
 
-## Supporto della tecnologia di assistenza nei visualizzatori [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
+## Supporto della tecnologia di supporto nei visualizzatori [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
 
 Tutti i componenti per visualizzatori [!DNL Dynamic Media] supportano ruoli e attributi ARIA (Accessible Rich Internet Applications) per migliorare l’integrazione con tecnologie per l’accessibilità, come gli assistenti vocali.
 Consulta l’ **Argomento della Guida relativo al supporto per la tecnologia di assistenza** in qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento per i visualizzatori di Dynamic Media. Ad esempio, per il visualizzatore video, consulta [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) o [Supporto per la tecnologia di supporto](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
