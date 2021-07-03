@@ -2,11 +2,10 @@
 title: 'Gestire le risorse [!DNL Adobe Stock] '
 description: Cerca, recupera, rilascia la licenza e gestisci le risorse [!DNL Adobe Stock] dall’interno di [!DNL Adobe Experience Manager]. Utilizza le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
-feature: Search, Adobe Stock
-role: Business Practitioner, Administrator
+feature: Ricerca, Adobe Stock
+role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 13%
@@ -86,7 +85,7 @@ In alternativa, inizia a digitare `Location: Adobe Stock` nella barra di ricerca
 
 *Figura: Ricerca filtri  [!DNL Experience Manager] e  [!DNL Adobe Stock] risorse evidenziate nei risultati della ricerca.*
 
-### Salva e visualizza le risorse richieste {#saveassets}
+### Salvare e visualizzare le risorse richieste {#saveassets}
 
 Seleziona una risorsa da salvare in [!DNL Experience Manager]. Fai clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornisci il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
@@ -104,7 +103,7 @@ Gli utenti possono concedere in licenza le risorse [!DNL Adobe Stock] utilizzand
 
 *Figura: Finestra di dialogo per concedere in licenza e salvare  [!DNL Adobe Stock] le risorse in  [!DNL Experience Manager Assets].*
 
-### Accedere ai metadati e alle proprietà delle risorse {#access-metadata-and-asset-properties}
+### Accedere a metadati e proprietà delle risorse {#access-metadata-and-asset-properties}
 
 Gli utenti possono accedere ai metadati e visualizzarli in anteprima, comprese le proprietà dei metadati [!DNL Adobe Stock] per le risorse salvate in [!DNL Experience Manager], e aggiungere **[!UICONTROL Riferimenti di licenza]** per una risorsa. Tuttavia, gli aggiornamenti al riferimento di licenza non vengono sincronizzati tra il sito web [!DNL Experience Manager] e [!DNL Adobe Stock].
 
