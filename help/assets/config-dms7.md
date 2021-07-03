@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configurazione,Modalità Scene7
-source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '6153'
 ht-degree: 5%
@@ -143,7 +143,7 @@ La configurazione di base è terminata. è possibile utilizzare la modalità Dyn
 
 Se desideri personalizzare ulteriormente la configurazione, puoi eventualmente completare una qualsiasi delle attività descritte in [(Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media - Modalità Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-## (Facoltativo) Configurazione delle impostazioni avanzate in Dynamic Media - Modalità Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Facoltativo) Configurazione delle impostazioni avanzate in modalità Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Se desideri personalizzare ulteriormente la configurazione e l&#39;impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, puoi completare una o più delle seguenti attività *facoltative*:
 
@@ -519,7 +519,7 @@ L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sinto
 
 Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Dynamic Media Classic/Assets basato su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-#### Aggiornamento della coda del flusso di lavoro transitorio Granite {#updating-the-granite-transient-workflow-queue}
+#### Aggiornamento della coda del flusso di lavoro transitorio di Granite {#updating-the-granite-transient-workflow-queue}
 
 La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . In Dynamic Media viene utilizzato per l’acquisizione e l’elaborazione delle immagini.
 
@@ -588,7 +588,7 @@ Tuttavia, nelle implementazioni di Dynamic Media, poiché le risorse vengono dis
 
 I filtri ti consentono di *escludere* risorse dalla replica nel nodo di pubblicazione Experience Manager.
 
-#### Utilizzo dei filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
+#### Utilizzo di filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
 
 Se utilizzi Dynamic Media per l’imaging, il video o entrambi, puoi utilizzare i filtri predefiniti forniti da Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
