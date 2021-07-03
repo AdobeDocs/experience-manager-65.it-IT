@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2849'
 ht-degree: 17%
@@ -229,7 +229,7 @@ Il testo si aggiorna con il nome dell’utente attualmente connesso. Per riprist
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Come rendere il modello di immagine Dynamic Media Classic un collegamento {#making-the-scene-image-template-a-link}
+#### Collegamento al modello di immagine Dynamic Media Classic {#making-the-scene-image-template-a-link}
 
 1. Nella pagina con il componente Dynamic Media Classic **[!UICONTROL Modello immagini]**, tocca **[!UICONTROL Modifica]**.
 1. Nel campo **[!UICONTROL URL]** , immetti l’URL a cui gli utenti indirizzano quando l’immagine viene toccata. Nel campo **[!UICONTROL Apri in]** , seleziona se desideri aprire la destinazione (una nuova finestra o una stessa finestra).
