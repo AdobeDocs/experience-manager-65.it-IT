@@ -3,9 +3,9 @@ title: Funzioni e interfacce accessibili di [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzioni di accessibilità in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Gestione risorse
-role: Business Practitioner, Architect, Leader
+role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Gli utenti disabili spesso si affidano a hardware e software per accedere ai con
 * Hardware di supporto, compresi i comandi di switch, display Braille aggiornabili e altri dispositivi di input del computer.
 * Strumenti di ingrandimento dell’interfaccia utente.
 
-## [!DNL Experience Manager Assets] casi d’uso accessibili  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] casi d’uso accessibili {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager], le funzioni di accessibilità soddisfano due requisiti chiave degli utenti [!DNL Experience Manager] e dei loro clienti.
 
@@ -64,7 +64,7 @@ In [!DNL Experience Manager], le funzioni di accessibilità soddisfano due requi
 
 Le funzioni di base di [!DNL Assets] sono più accessibili che in passato e vengono regolarmente aggiornate per migliorare la conformità agli standard globali. Le operazioni CRUD in [!DNL Assets] hanno un certo grado di accessibilità integrato in quelle. I flussi di lavoro DAM come l’aggiunta, la gestione, la ricerca e la distribuzione delle risorse sono accessibili tramite scelte rapide da tastiera, testo per assistenti vocali, contrasto del colore e così via.
 
-## Supporto per l&#39;uso della tastiera {#keyboard-use}
+## Supporto per l’uso della tastiera {#keyboard-use}
 
 È inoltre possibile utilizzare la tastiera per utilizzare molti elementi dell’interfaccia utente cliccabili o utilizzabili con un puntatore. Utilizzando una tastiera, gli utenti possono concentrarsi sugli elementi dell’interfaccia utente e intraprendere un’azione appropriata. Gli utenti possono utilizzare direttamente le scelte rapide da tastiera per attivare un comando o un’azione senza doversi concentrare sugli elementi dell’interfaccia utente e attivarli utilizzando la tastiera. Ad esempio, gli utenti possono aprire la timeline di una risorsa sul lato sinistro dell’interfaccia utente accedendo al controllo dell’interfaccia utente tramite tastiera, selezionando `Return` e selezionando `Alt + 2` scelte rapide da tastiera.
 
