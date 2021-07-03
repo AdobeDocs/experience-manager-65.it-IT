@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 34%
@@ -93,7 +93,7 @@ Per configurare i predefiniti universali:
 
 1. I profili di codifica selezionati vengono applicati automaticamente a tutti i video caricati nella cartella di destinazione CQ DAM impostata per questa configurazione cloud di Scene7. Puoi impostare più configurazioni cloud di Scene7 con diverse cartelle di destinazione, per applicare profili di codifica diversi a seconda delle esigenze.
 
-## Aggiornamento del visualizzatore e dei predefiniti di codifica  {#updating-viewer-and-encoding-presets}
+## Aggiornamento del visualizzatore e dei predefiniti di codifica {#updating-viewer-and-encoding-presets}
 
 Per aggiornare il visualizzatore e i predefiniti di codifica video perché i predefiniti sono stati aggiornati in Scene7, passa alla configurazione Scene7 in Cloud Configuration e tocca **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
 
@@ -124,7 +124,7 @@ La matrice seguente spiega quando utilizzare il componente:
 >
 >Come impostazione predefinita, il componente video S7 utilizza il profilo video universale. Tuttavia, è possibile ottenere il lettore video basato su HTML5 da utilizzare per Experience Manager. In Scene7, copia il codice di incorporamento del lettore video HTML5 predefinito e inseriscilo nella pagina del tuo Experience Manager.
 
-## Componente video di Experience Manager {#aem-video-component}
+## Componente video Experience Manager {#aem-video-component}
 
 Anche se per visualizzare i video Scene7 si consiglia di utilizzare il componente video Scene7, per motivi di completezza questa sezione descrive come utilizzare i video Scene7 con il componente video di base in Experience Manager.
 
@@ -140,7 +140,7 @@ La tabella seguente fornisce un confronto ad alto livello delle funzionalità su
 | Estensibilità | Sì | No |
 | Video mobile | Sì | Sì |
 
-### Impostazione  {#setting-up}
+### Impostazione {#setting-up}
 
 #### Creazione di profili video {#creating-video-profiles}
 
