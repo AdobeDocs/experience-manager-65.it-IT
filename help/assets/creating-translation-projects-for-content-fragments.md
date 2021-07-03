@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Frammenti di contenuto
+role: User, Admin
+exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '989'
 ht-degree: 2%
 
 ---
-
 
 # Creazione di progetti di traduzione per frammenti di contenuto {#creating-translation-projects-for-content-fragments}
 
@@ -44,7 +43,7 @@ Il flusso di lavoro Crea e traduci include le seguenti opzioni. Le fasi procedur
 * Crea un nuovo progetto di traduzione: Per le fasi della procedura, consulta [Creare un nuovo progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
 * Aggiungi al progetto di traduzione esistente: Per le fasi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project).
 
-## Aggiorna il flusso di lavoro delle copie in lingua {#update-language-copies-workflow}
+## Aggiorna flusso di lavoro copie per lingua {#update-language-copies-workflow}
 
 Il flusso di lavoro per la copia in lingua di aggiornamento include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le attività.
 
@@ -53,7 +52,7 @@ Il flusso di lavoro per la copia in lingua di aggiornamento include le seguenti 
 
 È inoltre possibile creare copie in lingua temporanea per i frammenti in modo analogo a come si creano copie temporanee per le risorse. Per informazioni dettagliate, consulta [Creazione di copie in lingua temporanea per le risorse](translation-projects.md#creating-temporary-language-copies).
 
-## Traduzione di frammenti multimediali diversi {#translating-mixed-media-fragments}
+## Traduzione di frammenti di file multimediali diversi {#translating-mixed-media-fragments}
 
 AEM consente di tradurre frammenti di contenuto che includono vari tipi di risorse e raccolte multimediali. Se traduci un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
 
@@ -165,4 +164,3 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
    >[!NOTE]
    >
    >Le procedure per aggiungere un frammento di contenuto a un progetto esistente o per eseguire flussi di lavoro di aggiornamento sono simili alle procedure corrispondenti per le risorse. Per un orientamento su tali procedure, fare riferimento alle procedure descritte per le attività.
-
