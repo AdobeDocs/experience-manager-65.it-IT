@@ -2,16 +2,15 @@
 title: Rapporti sull’utilizzo e la condivisione delle risorse
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Reports,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Rapporti sulle risorse,Gestione delle risorse
+exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1143'
 ht-degree: 9%
 
 ---
-
 
 # Rapporti sulle risorse {#asset-reports}
 
@@ -155,7 +154,7 @@ Per rimuovere i rapporti non più necessari, configura il servizio di eliminazio
 1. Specifica la frequenza (intervallo di tempo) del servizio di eliminazione nel campo `scheduler.expression.name` . Puoi anche configurare la soglia di età e quantità per i rapporti.
 1. Salva le modifiche.
 
-## Informazioni, suggerimenti e limitazioni per la risoluzione dei problemi {#best-practices-and-limitations}
+## Informazioni, suggerimenti e limitazioni sulla risoluzione dei problemi {#best-practices-and-limitations}
 
 * Se alcuni rapporti o numeri nei rapporti non sono disponibili o come previsto, assicurati che il servizio [!UICONTROL Day CQ DAM Event Recorder] sia abilitato.
 
