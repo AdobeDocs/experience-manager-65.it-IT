@@ -2,18 +2,17 @@
 title: Applicazione di servizi cloud di traduzione alle cartelle
 description: Applicazione di servizi cloud di traduzione alle cartelle
 contentOwner: AG
-role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Traduzione
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 45%
 
 ---
 
-
-# Applica servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
+# Applicazione di servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
 
 [!DNL Adobe Experience Manager] consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione di tua scelta per garantire che le risorse siano tradotte in base alle tue esigenze.
 
@@ -39,7 +38,7 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Salva]**, quindi fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo.Il servizio di traduzione viene applicato alla cartella.
 
-## Applica connettore di traduzione personalizzato {#applying-custom-translation-connector}
+## Applica connettore di traduzione personalizzato  {#applying-custom-translation-connector}
 
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
