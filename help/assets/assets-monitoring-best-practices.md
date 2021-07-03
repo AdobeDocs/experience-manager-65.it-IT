@@ -2,16 +2,15 @@
 title: Best practice per monitorare la distribuzione [!DNL Assets] di
 description: Best practice per monitorare l’ambiente e le prestazioni della distribuzione [!DNL Adobe Experience Manager] dopo la distribuzione.
 contentOwner: AG
-role: Administrator, Architect
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin, Architect
+feature: Gestione risorse
+exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
-
 
 # Best practice per monitorare la distribuzione [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
@@ -62,7 +61,7 @@ Il monitoraggio a lungo termine di una distribuzione [!DNL Experience Manager] i
 
 Sono disponibili diversi strumenti per aggregare i registri, ad esempio Splunk(TM) e Elastic Search, Logstash e Kabana (ELK). Per valutare il tempo di attività della distribuzione [!DNL Experience Manager], è importante comprendere gli eventi di registro specifici del sistema e creare avvisi basati su di essi. Una buona conoscenza delle procedure di sviluppo e delle operazioni consente di comprendere meglio come ottimizzare il processo di aggregazione dei log per generare avvisi critici.
 
-### Monitoraggio dell&#39;ambiente {#environment-monitoring}
+### Monitoraggio ambientale {#environment-monitoring}
 
 Il monitoraggio dell&#39;ambiente include il monitoraggio dei seguenti elementi:
 
@@ -189,7 +188,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
    * Soglia allarme: Quando lo stato non è OK
    * Definizione dell&#39;allarme: Ci sono errori nei file di log. Per ulteriori informazioni sulla causa del problema, consulta l’attributo di registro .
 
-## Problemi comuni e risoluzioni {#common-issues-and-resolutions}
+## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
 Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni relativi alle distribuzioni [!DNL Experience Manager]:
 
