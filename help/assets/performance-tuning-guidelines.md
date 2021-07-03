@@ -3,20 +3,19 @@ title: Ottimizzazione delle prestazioni [!DNL Assets].
 description: Suggerimenti e indicazioni sulla configurazione [!DNL Experience Manager] modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Gestione risorse
+exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
 
-
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] guida all’ottimizzazione delle prestazioni  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] guida all’ottimizzazione delle prestazioni {#assets-performance-tuning-guide}
 
 Una configurazione [!DNL Experience Manager Assets] contiene una serie di componenti hardware, software e di rete. A seconda dello scenario di distribuzione, potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete per rimuovere i colli di bottiglia delle prestazioni.
 
@@ -76,7 +75,7 @@ Imposta i seguenti parametri JVM:
 
 È consigliabile separare l’archivio dati dall’archivio segmenti per tutti gli utenti [!DNL Experience Manager Assets]. Inoltre, la configurazione dei parametri `maxCachedBinarySize` e `cacheSizeInMB` può contribuire a massimizzare le prestazioni. Imposta `maxCachedBinarySize` sulla dimensione più piccola del file che può essere mantenuta nella cache. Specifica la dimensione della cache in-memory da utilizzare per il datastore all&#39;interno di `cacheSizeInMB`. Adobe consiglia di impostare questo valore tra il 2 e il 10% della dimensione totale dell&#39;heap. Tuttavia, il test di carico/prestazioni può aiutare a determinare l&#39;impostazione ideale.
 
-### Configura le dimensioni massime della cache delle immagini bufferizzate {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configura la dimensione massima della cache delle immagini bufferizzate {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Durante il caricamento di grandi quantità di risorse su [!DNL Adobe Experience Manager], per consentire picchi imprevisti nel consumo di memoria e per evitare errori JVM con OutOfMemoryErrors, riduci la dimensione massima configurata della cache delle immagini bufferizzate. Considera un esempio di sistema con heap massimo (- `Xmx`param) di 5 GB, Oak BlobCache impostato a 1 GB e document cache impostato a 2 GB. In questo caso, la cache bufferizzata richiederebbe un massimo di 1,25 GB e memoria, lasciando solo 0,75 GB di memoria per picchi imprevisti.
 
@@ -84,11 +83,11 @@ Configura la dimensione della cache bufferizzata nella console Web OSGi. In `htt
 
 Dall&#39;Experience Manager 6.1 SP1, se utilizzi un nodo `sling:osgiConfig` per configurare questa proprietà, assicurati di impostare il tipo di dati su Long. Per ulteriori dettagli, consulta [CQBufferedImageCache consuma heap durante il caricamento delle risorse](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Archiviazione dati condivisi {#shared-data-stores}
+### Archiviazione dati condivisa {#shared-data-stores}
 
 L&#39;implementazione di un S3 o Shared File Datastore può aiutare a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell&#39;utilizzo di un datastore condiviso, consulta [Guida al dimensionamento delle risorse](/help/assets/assets-sizing-guide.md).
 
-### Archivio dati S3 {#s-data-store}
+### Archiviazione dati S3 {#s-data-store}
 
 La seguente configurazione dell’archivio dati S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ha aiutato Adobe a estrarre 12,8 TB di oggetti binari di grandi dimensioni (BLOB) da un archivio dati di file esistente in un archivio dati S3 in un sito clienti:
 
@@ -176,7 +175,7 @@ In genere, l&#39;attività di raccolta oggetti inattivi del datastore viene eseg
 
 Se hai uno spazio su disco limitato ed esegui i flussi di lavoro [!UICONTROL Aggiorna risorsa DAM] in modo intensivo, considera la pianificazione dell&#39;attività di raccolta degli oggetti inattivi con maggiore frequenza.
 
-#### Generazione di rendering runtime {#runtime-rendition-generation}
+#### Generazione rendering runtime {#runtime-rendition-generation}
 
 I clienti utilizzano immagini di varie dimensioni e formati sul proprio sito web o per la distribuzione ai partner commerciali. Poiché ogni rendering viene aggiunto all’impronta della risorsa nell’archivio, Adobe consiglia di utilizzare questa funzione in modo giudizioso. Per ridurre la quantità di risorse necessarie per elaborare e archiviare le immagini, puoi generarle in fase di esecuzione anziché come rappresentazioni durante l’acquisizione.
 
@@ -215,7 +214,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 
 Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Rivolgiti al rappresentante dell’Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
-### Write-back XMP {#xmp-writeback}
+### XMP {#xmp-writeback}
 
 XMP writeback aggiorna la risorsa originale ogni volta che i metadati vengono modificati in [!DNL Experience Manager], il che si traduce in quanto segue:
 
@@ -231,7 +230,7 @@ Se è selezionato il flag di esecuzione dei flussi di lavoro, l’importazione d
 
 Quando si replicano le risorse in un numero elevato di istanze di pubblicazione, ad esempio in un’implementazione di Sites, Adobe consiglia di utilizzare la replica a catena. In questo caso, l&#39;istanza dell&#39;autore si replica in una singola istanza di pubblicazione che a sua volta si replica alle altre istanze di pubblicazione, liberando l&#39;istanza dell&#39;autore.
 
-### Configura la replica a catena {#configure-chain-replication}
+### Configurare la replica a catena {#configure-chain-replication}
 
 1. Scegliere l&#39;istanza di pubblicazione da utilizzare per concatenare le replicazioni
 1. In quell&#39;istanza di pubblicazione aggiungi agenti di replica che puntano alle altre istanze di pubblicazione
@@ -261,7 +260,7 @@ Se gli utenti non devono eseguire la ricerca full-text delle risorse, ad esempio
 1. Nell&#39;interfaccia [!DNL Experience Manager], accedi a [!UICONTROL Gestione pacchetti].
 1. Carica e installa il pacchetto disponibile in [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
-### Indovina totale {#guess-total}
+### Totale Indovini {#guess-total}
 
 Quando crei query che generano set di risultati di grandi dimensioni, utilizza il parametro `guessTotal` per evitare un utilizzo eccessivo della memoria durante l’esecuzione.
 
@@ -287,14 +286,14 @@ Per tutti i problemi di prestazioni della rete da parte del cliente, eseguire le
 * Utilizzando uno strumento di benchmark della rete
 * Test contro il dispatcher
 
-### [!DNL Experience Manager] test di distribuzione  {#aem-deployment-testing}
+### [!DNL Experience Manager] test di distribuzione {#aem-deployment-testing}
 
 Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’utilizzo efficiente della CPU e alla condivisione del carico, controlla regolarmente le prestazioni della distribuzione [!DNL Experience Manager]. In particolare:
 
 * Eseguire test di carico sulla distribuzione [!DNL Experience Manager].
 * Monitora le prestazioni di caricamento e la reattività dell&#39;interfaccia utente.
 
-## [!DNL Experience Manager Assets] elenco di controllo delle prestazioni e impatto delle attività di gestione delle risorse  {#checklist}
+## [!DNL Experience Manager Assets] elenco di controllo delle prestazioni e impatto delle attività di gestione delle risorse {#checklist}
 
 * Abilita HTTPS per aggirare qualsiasi sniffer di traffico HTTP aziendale.
 * Utilizza una connessione cablata per il caricamento di risorse pesanti.
