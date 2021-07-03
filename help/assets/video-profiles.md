@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Profili video
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3697'
 ht-degree: 13%
@@ -48,7 +48,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 Vedere anche [Profili per l&#39;elaborazione di metadati, immagini e video](processing-profiles.md).
 
-## Predefiniti di codifica video adattivo {#adaptive-video-encoding-presets}
+## Predefiniti di codifica video adattivi {#adaptive-video-encoding-presets}
 
 La tabella seguente identifica i profili di codifica best practice per lo streaming di video adattivo su dispositivi mobili e tablet e computer desktop. Puoi usare questi predefiniti per qualsiasi video con proporzioni.
 
@@ -340,7 +340,7 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 
 1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Salva]**.
 
-### Copia di un profilo video {#copying-a-video-encoding-profile}
+### Copiare un profilo video {#copying-a-video-encoding-profile}
 
 1. Tocca il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
 1. Nella pagina Profili video , controlla un nome di profilo video.
