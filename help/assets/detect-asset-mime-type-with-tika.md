@@ -2,16 +2,15 @@
 title: Rileva il tipo MIME di risorse utilizzando Apache Tika
 description: Abilita Apache Tika per aiutare [!DNL Experience Manager Assets] a rilevare il tipo MIME di risorse dal flusso di contenuto durante l'operazione di caricamento invece dell'estensione del file.
 contentOwner: AG
-role: Administrator, Architect
-feature: Metadata,Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin, Architect
+feature: Metadati, Strumenti per sviluppatori, Gestione risorse
+exl-id: a312466d-8d84-4c94-af85-1549afc61aed
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
-
 
 # Rileva il tipo MIME di risorse utilizzando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
