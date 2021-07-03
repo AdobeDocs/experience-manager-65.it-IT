@@ -2,16 +2,15 @@
 title: Aggiungi una filigrana alle risorse digitali
 description: Scopri come utilizzare la funzione Watermarking per aggiungere una filigrana digitale alle risorse.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Gestione risorse
+exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Filigrana le risorse digitali {#watermarking}
 
