@@ -2,16 +2,15 @@
 title: Installa e configura ImageMagick
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio del processo della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
-role: Administrator
-feature: Renditions,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Rappresentazioni,Strumenti per sviluppatori
+exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # Installa e configura ImageMagick per lavorare con [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
