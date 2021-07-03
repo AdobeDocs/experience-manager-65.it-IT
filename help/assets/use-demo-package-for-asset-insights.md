@@ -2,10 +2,10 @@
 title: Usa il pacchetto dimostrativo per Assets Insights
 description: Utilizza il pacchetto demo per abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
 
-## [!DNL Use Experience Manager Assets] Informazioni approfondite con una pagina web di esempio   {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Informazioni approfondite con una pagina web di esempio  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configura informazioni approfondite sulle risorse seguendo le istruzioni disponibili in [Configurazione di informazioni approfondite sulle risorse](configure-asset-insights.md).
 1. Scarica il pacchetto di risorse di esempio da qui e installa il pacchetto da CRXDE package manager.
