@@ -2,18 +2,17 @@
 title: Attività correlate
 description: Scopri come mettere in relazione le risorse digitali che condividono alcuni attributi comuni. Crea anche relazioni derivate dall’origine tra le risorse digitali.
 contentOwner: AG
-role: Business Practitioner
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Collaborazione, Gestione risorse
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 2%
 
 ---
 
-
-# Risorse correlate {#related-assets}
+# Attività correlate {#related-assets}
 
 [!DNL Adobe Experience Manager Assets] consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione utilizzando la funzione relativa alle risorse. Ad esempio, puoi correlare un file di licenza con una risorsa o un&#39;immagine/video su un argomento simile. È possibile correlare le risorse che condividono determinati attributi comuni. È inoltre possibile utilizzare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
 
@@ -23,7 +22,7 @@ Utilizzando questa funzione, hai la flessibilità di condividere un file PDF o J
 >
 >Solo gli utenti con autorizzazioni di modifica sulle risorse possono correlare e rimuovere la relazione tra le risorse.
 
-## Relazionare le risorse {#relating-assets}
+## Collegare le risorse {#relating-assets}
 
 1. Dall’interfaccia [!DNL Experience Manager], apri la pagina **[!UICONTROL Proprietà]** per una risorsa che desideri correlare.
 
