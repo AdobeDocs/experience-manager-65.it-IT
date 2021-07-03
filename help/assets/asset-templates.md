@@ -2,16 +2,15 @@
 title: Modelli di risorse
 description: Scopri i modelli di risorse in [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Gestione delle risorse, Strumenti per sviluppatori
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1548'
 ht-degree: 1%
 
 ---
-
 
 # Modelli di risorse {#asset-templates}
 
@@ -37,7 +36,7 @@ Quando scegli un modello per il tuo materiale collaterale, [!DNL Experience Mana
 
 È possibile esportare il file aggiornato all’interno della cartella principale nei formati INDD, PDF o JPG. È inoltre possibile scaricare l&#39;output in questi formati nel file system locale.
 
-## Creare una garanzia {#creating-a-collateral}
+## Creare un materiale collaterale {#creating-a-collateral}
 
 Considera uno scenario in cui desideri creare materiale collaterale stampabile digitale, come opuscoli, volantini e annunci per una prossima campagna e condividerlo con outlet store a livello globale. La creazione di materiale collaterale basato su un modello consente di offrire un&#39;esperienza cliente unificata su tutti i canali. I designer possono creare i modelli delle campagne (a pagina singola o a più pagine) utilizzando una soluzione creativa, ad esempio [!DNL InDesign] e caricare i modelli su [!DNL Experience Manager Assets]. Prima di creare una garanzia, fai caricare e rendere disponibili in [!DNL Experience Manager] uno o più modelli INDD.
 
