@@ -2,16 +2,15 @@
 title: Preparare le risorse per la traduzione
 description: Crea cartelle principali in lingua per preparare le risorse da tradurre per supportare le risorse multilingue.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Projects
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Progetti
+exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
-
 
 # Preparare le risorse per la traduzione {#preparing-assets-for-translation}
 
@@ -35,7 +34,7 @@ La copia per lingua per la quale hai originariamente aggiunto le risorse è la l
         |- zh
 ```
 
-Esegui i seguenti passaggi per preparare le risorse per la traduzione:
+Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
 
 1. Creare la directory principale lingua della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Crea una directory principale della lingua](preparing-assets-for-translation.md#creating-a-language-root).
 
@@ -58,7 +57,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 1. Fai clic su **[!UICONTROL Crea]**. La directory principale della lingua viene creata nella console [!DNL Assets].
 
-## Visualizza le radici della lingua {#viewing-language-roots}
+## Visualizzare le radici della lingua {#viewing-language-roots}
 
 [!DNL Experience Manager] L’interfaccia fornisce un pannello  **** Riferimenti che visualizza un elenco di radici della lingua create all’interno di  [!DNL Assets].
 
