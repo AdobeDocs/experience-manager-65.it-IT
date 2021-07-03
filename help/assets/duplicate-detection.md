@@ -2,16 +2,15 @@
 title: Abilita il rilevamento delle risorse duplicate
 description: Scopri come abilitare il rilevamento delle risorse duplicate in Experience Manager.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Management,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Gestione delle risorse, rapporti sulle risorse
+exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Abilita il rilevamento delle risorse duplicate {#enable-detection-of-duplicate-assets}
 
