@@ -2,18 +2,17 @@
 title: Best practice per la condivisione di cartelle su [!DNL Adobe Creative Cloud] best practice
 description: Configura [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] per scambiare cartelle con utenti Adobe Creative Cloud (CC).
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Collaboration
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Collaborazione
+exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] alla condivisione  [!DNL Adobe Creative Cloud] cartelle  {#aem-to-creative-cloud-folder-sharing-best-practices}
+# [!DNL Adobe Experience Manager] alla condivisione  [!DNL Adobe Creative Cloud] cartelle {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
