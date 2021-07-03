@@ -8,17 +8,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Flusso di lavoro, Gestione risorse, rappresentazioni
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 1%
 
 ---
 
-# Profili per l&#39;elaborazione di metadati, immagini e video{#profiles-for-processing-metadata-images-and-videos}
+# Profili per l’elaborazione di metadati, immagini e video{#profiles-for-processing-metadata-images-and-videos}
 
 Un profilo è una ricetta delle opzioni da applicare alle risorse caricate in una cartella. Ad esempio, puoi specificare il profilo di metadati e il profilo di codifica video da applicare alle risorse video caricate. Oppure, quale profilo di imaging applicare alle risorse di immagini per ritagliarle correttamente.
 
