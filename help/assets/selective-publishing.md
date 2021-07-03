@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Pubblicazione
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 4%
@@ -123,7 +123,7 @@ Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-me
    * Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblica in Dynamic Media]**.
 1. Toccare **[!UICONTROL OK]**.
 
-### Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o Experience Manager utilizzando Gestisci pubblicazione {#selective-unpublish-manage-publication}
+### Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o Experience Manager tramite Gestisci pubblicazione {#selective-unpublish-manage-publication}
 
 1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. A sinistra, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, effettuare una delle seguenti operazioni:
@@ -247,7 +247,7 @@ Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato d
    * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** per iniziare l&#39;azione.
 1. Toccare **[!UICONTROL OK]**.
 
-## Verifica dello stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
+## Controllo dello stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
 
 Per controllare rapidamente lo stato di pubblicazione di una risorsa, puoi utilizzare **[!UICONTROL Timeline]** con **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]** in Experience Manager.
 
