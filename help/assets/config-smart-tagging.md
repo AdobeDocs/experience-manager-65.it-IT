@@ -2,16 +2,15 @@
 title: Configurare l’assegnazione tag delle risorse tramite Smart Content Service
 description: Scopri come configurare l’assegnazione tag avanzati e l’assegnazione di tag avanzati migliorati in [!DNL Adobe Experience Manager] utilizzando il Servizio di contenuti avanzati.
 contentOwner: AG
-role: Administrator
-feature: Tagging,Smart Tags
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Assegnazione tag, tag avanzati
+exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2173'
 ht-degree: 33%
 
 ---
-
 
 # Preparare [!DNL Assets] l’assegnazione di tag avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
@@ -40,7 +39,7 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi princip
 
 1. Facoltativamente, [abilita l&#39;assegnazione tag automatica al caricamento delle risorse](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Ottieni un certificato pubblico creando la configurazione del Servizio di contenuti avanzati {#obtain-public-certificate}
+### Ottenere un certificato pubblico creando la configurazione del Servizio di contenuti avanzati {#obtain-public-certificate}
 
 Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer Console.
 
@@ -74,7 +73,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
    *Figura: Impostazioni per il servizio di assegnazione tag avanzati.*
 
-#### Riconfigura quando scade un certificato {#certrenew}
+#### Riconfigura alla scadenza del certificato {#certrenew}
 
 Dopo la scadenza di un certificato, non è più attendibile. Non è possibile rinnovare un certificato scaduto. Per aggiungere un certificato, effettua le seguenti operazioni.
 
@@ -190,7 +189,7 @@ I risultati della convalida vengono visualizzati nella stessa finestra di dialog
 
 1. Fai clic su **[!UICONTROL OK]** per chiudere il passaggio del processo, quindi salva il flusso di lavoro.
 
-## Formazione del servizio di contenuti avanzati {#training-the-smart-content-service}
+## Formazione del Servizio di contenuti avanzati {#training-the-smart-content-service}
 
 Affinché il Servizio di contenuti avanzati riconosca la tassonomia aziendale, eseguilo su un set di risorse che già includono tag rilevanti per la tua azienda. Per assegnare efficacemente tag alle immagini del tuo marchio, il Servizio di contenuti avanzati richiede che le immagini di formazione siano conformi a determinate linee guida. Dopo la formazione, il servizio può applicare la stessa tassonomia su un set di risorse simile.
 
@@ -202,7 +201,7 @@ Puoi addestrare il Servizio di contenuti avanzati periodicamente o su richiesta.
 >
 >Il flusso di lavoro di formazione viene eseguito solo sulle cartelle.
 
-### Linee guida per la formazione {#guidelines-for-training}
+### Orientamenti per la formazione {#guidelines-for-training}
 
 Per ottenere i migliori risultati, le immagini del set di formazione sono conformi alle seguenti linee guida:
 
@@ -287,5 +286,5 @@ Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel se
 >[!MORELIKETHIS]
 >
 >* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
