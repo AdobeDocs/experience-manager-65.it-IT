@@ -2,16 +2,15 @@
 title: Eseguire la migrazione delle risorse in blocco
 description: Descrive come inserire risorse in [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
-role: Architect, Administrator
-feature: Migration,Renditions,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Architect, Admin
+feature: Migrazione, Rappresentazioni, Gestione delle risorse
+exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1803'
 ht-degree: 8%
 
 ---
-
 
 # Come migrare le risorse in massa {#assets-migration-guide}
 
@@ -35,7 +34,7 @@ Prima di eseguire effettivamente uno qualsiasi dei passaggi descritti in questa 
 >
 Questo software è open source ed è coperto dalla [Licenza Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Per porre una domanda o segnalare un problema, visita rispettivamente [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Esegui la migrazione a [!DNL Experience Manager] {#migrating-to-aem}
+## Esegui migrazione a [!DNL Experience Manager] {#migrating-to-aem}
 
 La migrazione delle risorse a [!DNL Experience Manager] richiede diversi passaggi e deve essere visualizzata come un processo graduale. Le fasi della migrazione sono le seguenti:
 
@@ -79,7 +78,7 @@ L’ [Importazione risorse CSV AEM strumenti ACS](https://adobe-consulting-servi
 
 Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessive migliorano notevolmente e questo metodo è generalmente considerato il modo più efficiente per caricare le risorse nell’archivio. Inoltre, poiché lo strumento supporta l’acquisizione dei metadati, puoi importare tutte le risorse e i metadati in un singolo passaggio, anziché creare un secondo passaggio per applicare i metadati tramite uno strumento separato.
 
-### Elabora rendering {#processing-renditions}
+### Rendering dei processi {#processing-renditions}
 
 Dopo aver caricato le risorse nel sistema, devi elaborarle tramite il flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] per estrarre i metadati e generare rappresentazioni. Prima di eseguire questo passaggio, devi duplicare e modificare il flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] in base alle tue esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione di Dynamic Media PTIFF o l’ integrazione [!DNL InDesign Server] .
 
