@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Predefiniti visualizzatore
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 26%
 
 ---
 
-# Applicazione dei predefiniti visualizzatore Dynamic Media {#applying-viewer-presets}
+# Applicazione dei predefiniti per visualizzatori Dynamic Media {#applying-viewer-presets}
 
 Un predefinito per visualizzatori è un insieme di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse multimediali sullo schermo del computer e sui dispositivi mobili. Puoi applicare a una risorsa qualsiasi predefinito per visualizzatori creato dall’amministratore.
 
@@ -39,6 +39,6 @@ Per eventuali problemi con i predefiniti visualizzatore, consulta [Risoluzione d
 
 1. Seleziona un visualizzatore dal riquadro a sinistra per applicarlo alla risorsa come mostrato nel riquadro a destra. Puoi anche [copiare l&#39;URL da condividere](linking-urls-to-yourwebapplication.md) con altri utenti.
 
-## Ottenimento degli URL predefiniti per visualizzatori {#obtaining-viewer-preset-urls}
+## Ottenimento degli URL dei predefiniti per visualizzatori {#obtaining-viewer-preset-urls}
 
 Per ottenere gli URL per i predefiniti per visualizzatori, consulta [Collegamento degli URL all’applicazione Web](linking-urls-to-yourwebapplication.md).
