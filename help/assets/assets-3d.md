@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: Risorse 3D, Gestione risorse
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 5%
@@ -100,7 +100,7 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 
 >[!TIP]
 >
->Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui è possibile interagire.
+>Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui puoi interagire.
 >
 >Consulta [Gestione dei predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
@@ -162,7 +162,7 @@ componente File multimediali 3Duna risorsa 3D completamente interattiva come vis
    | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
 
-## Utilizzo del componente Media 3D {#working-with-three-d-media-component}
+## Utilizzo del componente File multimediali 3D {#working-with-three-d-media-component}
 
 Dynamic Media include un componente Media 3D di Dynamic Media che può essere utilizzato in Adobe Experience Manager Sites per abilitare la visualizzazione interattiva dei modelli 3D sulle pagine web.
 
@@ -210,7 +210,7 @@ Ora puoi assegnare una risorsa 3D al componente.
 
 Consulta [Assegnazione di una risorsa 3D al componente File multimediali 3D](#assigning-a-three-d-asset-to-the-component).
 
-### Facoltativo - Configurazione del componente Media 3D {#configuring-the-three-d-component}
+### Facoltativo - Configurazione del componente File multimediali 3D {#configuring-the-three-d-component}
 
 1. Nell’editor pagina di Experience Manager Sites, seleziona il componente **[!UICONTROL 3D Media Viewer]** che hai aggiunto in precedenza alla pagina.
 1. Toccare l&#39;icona **[!UICONTROL Configurazione]** (chiave inglese) per aprire la finestra di dialogo di configurazione del componente.
@@ -240,7 +240,7 @@ Consulta [Aggiunta del componente Media 3D a una pagina web](#adding-the-three-d
 >
 >Mentre una pagina web è in modalità Experience Manager Sites **[!UICONTROL Modifica]** , il componente File multimediali 3D visualizza la risorsa 3D ma non è possibile interagire con essa. Per rendere la risorsa interattiva, puoi utilizzare la funzione **[!UICONTROL Anteprima]** per visualizzare la pagina web nell’editor di pagine con accesso completo alle funzionalità del componente File multimediali 3D.
 
-## Pubblicazione di risorse 3D Dynamic Media statiche {#publishing-three-d-assets}
+## Pubblicazione di risorse statiche Dynamic Media 3D {#publishing-three-d-assets}
 
 Dynamic Media accetta vari formati di file 3D supportati come *contenuto statico* in Dynamic Media. Il contenuto statico consente di caricare e pubblicare risorse 3D, ma non è disponibile il supporto per l’ *imaging dinamico* o per il caricamento di immagini associato alla risorsa 3D. Il motivo è che Dynamic Media Imaging Server non riconosce i formati 3D. Di conseguenza, dopo aver pubblicato una risorsa 3D in Dynamic Media, disponi di un URL istantaneo che puoi copiare. L’URL della risorsa 3D segue la consueta struttura URL di Dynamic Media. Tuttavia, non puoi modificare alcun parametro nell’URL della risorsa, a differenza delle risorse di immagini tradizionali in Dynamic Media.
 
