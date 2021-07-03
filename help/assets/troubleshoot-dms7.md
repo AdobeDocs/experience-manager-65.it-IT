@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Risoluzione dei problemi
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -37,11 +37,11 @@ Assicurati che Dynamic Media sia stato configurato correttamente eseguendo le op
 
    Questo agente di replica si trova in Agenti sull&#39;autore.
 
-## Generale (tutte le risorse) {#general-all-assets}
+## Generale (Tutte le attività) {#general-all-assets}
 
 Di seguito sono riportati alcuni suggerimenti generali per tutte le risorse.
 
-### Proprietà stato sincronizzazione risorse {#asset-synchronization-status-properties}
+### Proprietà dello stato di sincronizzazione delle risorse {#asset-synchronization-status-properties}
 
 Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per confermare la sincronizzazione della risorsa da AEM a Dynamic Media:
 
@@ -56,7 +56,7 @@ Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per co
 
 Gli errori e i problemi di sincronizzazione vengono registrati in `error.log` (AEM directory del server `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione su DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
-### Sposta, copia, elimina {#move-copy-delete}
+### Sposta, Copia, Elimina {#move-copy-delete}
 
 Prima di eseguire un&#39;operazione Sposta, Copia o Elimina, eseguire le operazioni seguenti:
 
