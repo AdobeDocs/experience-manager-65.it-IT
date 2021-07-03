@@ -2,16 +2,15 @@
 title: Esaminare raccolte e risorse delle cartelle
 description: Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Collaborazione, Raccolte
+role: User
+exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 4%
 
 ---
-
 
 # Esaminare raccolte e risorse delle cartelle {#review-folder-assets-and-collections}
 
@@ -25,7 +24,7 @@ Dopo aver condiviso le risorse, i revisori possono approvarle o rifiutarle. Le n
 
 Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), riceverai una notifica di completamento della revisione.
 
-## Crea un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
+## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
 1. Dall&#39;interfaccia utente [!DNL Assets], selezionare la cartella per la quale si desidera creare un&#39;attività di revisione.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire la pagina **[!UICONTROL Rivedi attività]**. Se l&#39;opzione non è visibile nella barra degli strumenti, fare clic su **[!UICONTROL Altro]** e quindi selezionare l&#39;opzione.
@@ -71,7 +70,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
    ![Stato della revisione nella vista a elenco](assets/review_status_listview.png)
 
-## Crea un&#39;attività di revisione per le raccolte {#creating-a-review-task-for-collections}
+## Creare un’attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte selezionare la raccolta per la quale si desidera creare un&#39;attività di revisione.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire la pagina **[!UICONTROL Rivedi attività]**. Se l&#39;opzione sulla barra degli strumenti non è visibile, fare clic su **[!UICONTROL Altro]** e quindi selezionare l&#39;opzione.
