@@ -2,17 +2,16 @@
 title: '[!DNL Assets] sviluppo proxy'
 description: Un proxy è un proxy  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, operazioni supportate, componenti proxy e come sviluppare un proxy worker personalizzato.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] sviluppo proxy  {#assets-proxy-development}
+# [!DNL Assets] sviluppo proxy {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
@@ -20,7 +19,7 @@ Un proxy è un&#39;istanza di Experience Manager specifica (e talvolta separata)
 
 Quando il proxy è un&#39;istanza [!DNL Experience Manager] separata, questo aiuta a ridurre il carico sulle [!DNL Experience Manager] istanze di authoring. Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite Proxy) per ridurre il carico sull’ [!DNL Experience Manager] istanza di authoring.
 
-## Proxy (HTTP Access) {#proxy-http-access}
+## Proxy (accesso HTTP) {#proxy-http-access}
 
 Un proxy è disponibile tramite il servlet HTTP quando è configurato per accettare processi di elaborazione in: `/libs/dam/cloud/proxy`. Questo servlet crea un lavoro sling dai parametri inviati. Questo viene quindi aggiunto alla coda del processo proxy e collegato al processo di lavoro proxy appropriato.
 
