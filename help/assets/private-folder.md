@@ -2,16 +2,15 @@
 title: Cartelle private per condividere le risorse
 description: Scopri come creare una cartella privata in  [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
-role: Business Practitioner
-feature: Collaboration
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User
+feature: Collaborazione
+exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
-
 
 # Cartella privata in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
