@@ -2,18 +2,17 @@
 title: Considerazioni e requisiti della rete
 description: Esamina le considerazioni sulla rete durante la progettazione di una distribuzione [!DNL Adobe Experience Manager Assets] e
 contentOwner: AG
-role: Architect, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Strumenti per gli sviluppatori
+exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] considerazioni sulla rete  {#assets-network-considerations}
+# [!DNL Assets] considerazioni sulla rete {#assets-network-considerations}
 
 Comprendere la rete è importante quanto capire [!DNL Adobe Experience Manager Assets]. La rete può influenzare le esperienze di caricamento, download e utente. Il diagramma della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni di rete e l&#39;esperienza utente.
 
@@ -48,7 +47,7 @@ Il computer visualizzato a destra ha un limite a monte della rete aziendale su u
 
 Il diagramma mostra velocità di uplink superiori all&#39;interno della rete aziendale rispetto a quelle generalmente utilizzate. Questi tubi sono risorse condivise. Se si prevede che lo switch condiviso gestisca 50 client, può potenzialmente essere un punto di rottura. Nel diagramma iniziale, solo due computer condividono la connessione specifica.
 
-## Collegamento a Internet dalla rete aziendale e dall&#39; [!DNL Experience Manager] ambiente {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Collegamento a Internet dalla rete aziendale e dall&#39;ambiente [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -64,7 +63,7 @@ Questo è il punto di rottura più piccolo orientato al cliente. Tuttavia, è po
 
 Dai diagrammi di esempio si può concludere che sei dispositivi condividono un canale concettuale a 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, ciò potrebbe risultare inadeguato per soddisfare le aspettative degli utenti.
 
-## Topologia dell’ ambiente [!DNL Experience Manager] {#topology-of-the-aem-environment}
+## Topologia dell&#39;ambiente [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
