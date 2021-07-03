@@ -2,16 +2,15 @@
 title: Creare e configurare le pagine dell’Editor risorse
 description: Scopri come creare pagine dell’Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Strumenti per sviluppatori,Gestione risorse
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2129'
 ht-degree: 1%
 
 ---
-
 
 # Creare e configurare le pagine dell’Editor risorse {#creating-and-configuring-asset-editor-pages}
 
@@ -199,7 +198,7 @@ Puoi personalizzare l’editor delle risorse per determinare come gli utenti pos
 >
 >Se desideri aggiungere campi personalizzati all’editor risorse DAM, aggiungi nuovi nodi `cq:Widget` a `/apps/dam/content/asseteditors.`
 
-### Creare una pagina Asset Editor {#creating-the-asset-editor-page}
+### Creare una pagina Editor risorse {#creating-the-asset-editor-page}
 
 Durante la creazione della pagina Editor risorse, è buona norma creare la pagina direttamente sotto la pagina Condivisione risorse.
 
@@ -234,7 +233,7 @@ Per impostare la pagina Editor risorse:
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Aggiungere componenti dell’editor risorse {#adding-asset-editor-components}
+#### Aggiungere componenti dell’Editor risorse {#adding-asset-editor-components}
 
 Puoi determinare le funzionalità di un editor risorse aggiungendo componenti alla pagina.
 
@@ -362,7 +361,7 @@ Di seguito è riportato un esempio di componente Titolo popolato:
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### Aggiungi azioni editor risorse {#adding-asset-editor-actions}
+#### Aggiungere azioni Editor risorse {#adding-asset-editor-actions}
 
 È possibile determinare le azioni che gli utenti possono eseguire sulle risorse digitali selezionate in base a una selezione di azioni predefinite.
 
