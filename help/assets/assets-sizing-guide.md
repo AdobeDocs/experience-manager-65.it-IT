@@ -2,18 +2,17 @@
 title: '[!DNL Assets] guida al dimensionamento'
 description: Best practice per determinare metriche efficienti per stimare l'infrastruttura e le risorse necessarie per distribuire [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Gestione risorse
+exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] guida al dimensionamento  {#assets-sizing-guide}
+# [!DNL Assets] guida al dimensionamento {#assets-sizing-guide}
 
 Quando si esegue il dimensionamento dell&#39;ambiente per un&#39;implementazione [!DNL Adobe Experience Manager Assets], è importante assicurarsi che siano disponibili risorse sufficienti in termini di disco, CPU, memoria, IO e throughput di rete. Il dimensionamento di molte di queste risorse richiede una comprensione del numero di risorse caricate nel sistema. Se una metrica migliore non è disponibile, puoi dividere la dimensione della libreria esistente per l’età della libreria per trovare la velocità con cui vengono create le risorse.
 
@@ -63,11 +62,11 @@ Per i datastore di grandi dimensioni, è possibile implementare un datastore con
 
 Il datastore può essere condiviso tra un’istanza di authoring primaria e standby per ridurre al minimo il tempo necessario per aggiornare l’istanza di standby con le modifiche apportate nell’istanza primaria. Puoi anche condividere l’archivio dati tra le istanze di authoring e pubblicazione per ridurre al minimo il traffico durante la replica.
 
-#### Drawback {#drawbacks}
+#### Svantaggi {#drawbacks}
 
 A causa di alcune insidie, la condivisione di un datastore non è consigliata in tutti i casi.
 
-#### Singolo punto di errore {#single-point-of-failure}
+#### Singolo punto di guasto {#single-point-of-failure}
 
 Avere un datastore condiviso, introduce un singolo punto di errore in un&#39;infrastruttura. Considera uno scenario in cui il tuo sistema dispone di un autore e due istanze di pubblicazione, ciascuna con il proprio datastore. Se uno di questi si blocca, gli altri due possono ancora continuare a funzionare. Tuttavia, se il datastore viene condiviso, un singolo errore del disco può abbattere l&#39;intera infrastruttura. Di conseguenza, assicurati di mantenere un backup dell&#39;archivio dati condiviso da cui puoi ripristinare rapidamente l&#39;archivio dati.
 
@@ -114,7 +113,7 @@ La dimensione del file non è l’unico fattore che contribuisce a problemi di m
 
 Inoltre, è possibile modificare la proprietà Dimensione soglia del componente `com.day.cq.dam.commons.handler.StandardImageHandler` in Configuration Manager per utilizzare un file temporaneo intermedio maggiore di zero.
 
-## Numero massimo di risorse {#maximum-number-of-assets}
+## Numero massimo di attività {#maximum-number-of-assets}
 
 Il limite al numero di file che possono esistere in un datastore può essere di 2,1 miliardi a causa di limitazioni del filesystem. È probabile che l’archivio incontri problemi a causa di un numero elevato di nodi molto lungo prima di raggiungere il limite del datastore.
 
@@ -122,6 +121,6 @@ Se le rappresentazioni non sono generate correttamente, utilizza la libreria Cam
 
 È difficile stimare con precisione le dimensioni del file TIFF supportato come preconfigurato con un heap specifico per [!DNL Experience Manager] perché fattori aggiuntivi, come l’elaborazione dell’influenza delle dimensioni dei pixel. È possibile che [!DNL Experience Manager] possa elaborare un file di dimensioni pari a 255 MB out-of-the-box, ma non possa elaborare un file di dimensioni pari a 18 MB perché quest&#39;ultimo comprende un numero di pixel insolitamente più alto rispetto al primo.
 
-## Dimensione delle risorse {#size-of-assets}
+## Dimensioni delle risorse {#size-of-assets}
 
 Per impostazione predefinita, [!DNL Experience Manager] consente di caricare risorse di dimensioni file fino a 2 GB. Per caricare risorse di grandi dimensioni in [!DNL Experience Manager], consulta [Configurazione per caricare risorse di grandi dimensioni](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
