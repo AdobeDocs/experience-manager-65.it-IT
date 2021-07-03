@@ -2,10 +2,10 @@
 title: Informazioni sulle risorse
 description: Scopri come la funzione Assets Insights ti consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Informazioni sulla risorsa, rapporti sulle risorse
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Per consentire a Assets Insights di visualizzare le statistiche di utilizzo dell
 >
 >Gli approfondimenti sono supportati e forniti solo per le immagini.
 
-## Visualizzare le statistiche di un&#39;immagine {#viewing-statistics-for-an-image}
+## Visualizzare le statistiche per un’immagine {#viewing-statistics-for-an-image}
 
 Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
@@ -63,7 +63,7 @@ Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
-## Visualizza le statistiche aggregate per le immagini {#viewing-aggregate-statistics-for-images}
+## Visualizzare le statistiche aggregate per le immagini {#viewing-aggregate-statistics-for-images}
 
 Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
