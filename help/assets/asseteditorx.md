@@ -2,16 +2,15 @@
 title: Estendi editor risorse
 description: Scopri come estendere le funzionalità di Asset Editor utilizzando componenti personalizzati.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Strumenti per gli sviluppatori
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 13%
+source-wordcount: '690'
+ht-degree: 14%
 
 ---
-
 
 # Estendi editor risorse {#extending-asset-editor}
 
@@ -21,7 +20,7 @@ La configurazione dell’editor utilizzando i componenti di modifica predefiniti
 
 Oltre a utilizzare componenti dell’editor preesistenti, [!DNL Adobe Experience Manager] gli sviluppatori possono anche creare i propri componenti.
 
-## Creare un modello Asset Editor {#creating-an-asset-editor-template}
+## Creare un modello di Asset Editor {#creating-an-asset-editor-template}
 
 Le pagine di esempio seguenti sono incluse in Geometrixx:
 
@@ -63,7 +62,7 @@ Alcuni dei componenti [!DNL Assets] utilizzano la libreria dei widget. Per esegu
 
 I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Procedure consigliate: Copia tutti i selettori `.asseteditor` nel foglio di stile e regola le regole come desiderato.
 
-### Selettore modulo: Adeguamenti per risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
+### Selettore modulo: Adeguamenti per le risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Editor risorse utilizza il Selettore moduli, che consente di modificare le risorse, in questo caso le risorse, nella stessa pagina del modulo semplicemente aggiungendo un selettore di moduli e il percorso del modulo all’URL della risorsa.
 
@@ -203,7 +202,7 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
 
 1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
 
-## Modifica le opzioni dei metadati {#modifying-metadata-options}
+## Modifica delle opzioni dei metadati {#modifying-metadata-options}
 
 È possibile modificare i namespace disponibili nel modulo [metadati](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
