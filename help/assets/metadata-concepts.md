@@ -2,10 +2,10 @@
 title: Concetti di metadati
 description: Scopri la necessità e i tipi di metadati che consentono di organizzare e classificare più facilmente le risorse.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Metadati
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2730'
 ht-degree: 6%
