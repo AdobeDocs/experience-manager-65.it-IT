@@ -2,16 +2,15 @@
 title: Configurazione e amministrazione della funzionalità dei metadati.
 description: Configurazione e amministrazione della funzionalità  [!DNL Experience Manager Assets] relativa all'aggiunta e alla gestione dei metadati.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadati
+exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1952'
 ht-degree: 6%
 
 ---
-
 
 # Configurazione e amministrazione della funzionalità dei metadati in [!DNL Assets] {#config-metadata}
 
@@ -36,7 +35,7 @@ Puoi aggiungere i tuoi namespace all’interno di [!DNL Experience Manager]. Com
 1. Per aggiungere uno spazio dei nomi, fai clic su **[!UICONTROL Nuovo]** nella parte inferiore della pagina.
 1. Specifica uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML. Specifica l’ID sotto forma di URI e un prefisso associato per l’ID. Fai clic su **[!UICONTROL Salva]**.
 
-## Configura i limiti per l&#39;aggiornamento in massa dei metadati {#bulk-metadata-update-limit}
+## Configurare i limiti per l’aggiornamento in massa dei metadati {#bulk-metadata-update-limit}
 
 Per evitare una situazione di rifiuto del servizio (DOS) come , [!DNL Enterprise Manager] limita il numero di parametri supportati in una richiesta Sling. Quando aggiorni i metadati di molte risorse in una sola volta, potresti raggiungere il limite e i metadati non vengono aggiornati per altre risorse. Enterprise Manager genera il seguente avviso nei registri:
 
@@ -135,7 +134,7 @@ To apply a metadata profile globally, follow these steps:
 
 [!DNL Adobe Experience Manager Assets] consente di creare schemi di metadati per le cartelle delle risorse, che definiscono il layout e i metadati visualizzati nelle pagine di proprietà delle cartelle.
 
-### Aggiungi un modulo schema metadati cartella {#add-a-folder-metadata-schema-form}
+### Aggiunta di un modulo schema metadati cartella {#add-a-folder-metadata-schema-form}
 
 Utilizza l’editor Forms per Schema metadati cartelle per creare e modificare schemi di metadati per le cartelle.
 
@@ -143,7 +142,7 @@ Utilizza l’editor Forms per Schema metadati cartelle per creare e modificare s
 1. Nella pagina [!UICONTROL Schema metadati cartelle Forms], fai clic su **[!UICONTROL Crea]**.
 1. Specificare un nome per il modulo e fare clic su **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina [!UICONTROL Forms schema].
 
-### Modifica moduli schema metadati cartelle {#edit-folder-metadata-schema-forms}
+### Modifica dei moduli dello schema metadati della cartella {#edit-folder-metadata-schema-forms}
 
 È possibile modificare un modulo schema metadati appena aggiunto o esistente, che include quanto segue:
 
@@ -173,7 +172,7 @@ Puoi mappare/configurare questi elementi del modulo su un campo all’interno di
 
 1. Fai clic su **[!UICONTROL Salva]** nella barra degli strumenti per salvare le modifiche.
 
-#### Componenti per creare moduli {#components-to-build-forms}
+#### Componenti per la creazione di moduli {#components-to-build-forms}
 
 La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizzati nel modulo schema metadati della cartella. La scheda **[!UICONTROL Impostazioni]** visualizza gli attributi per ogni elemento selezionato nella scheda **[!UICONTROL Genera modulo]** . Elenco degli elementi del modulo disponibili nella scheda **[!UICONTROL Genera modulo]** :
 
@@ -214,7 +213,7 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 **[!UICONTROL Classe]**: Classe oggetto a cui è associata la proprietà.
 
-### Elimina moduli schema metadati cartelle {#delete-folder-metadata-schema-forms}
+### Eliminare i moduli di schema metadati della cartella {#delete-folder-metadata-schema-forms}
 
 È possibile eliminare i moduli schema metadati cartelle dalla pagina Forms Schema metadati cartelle. Per eliminare un modulo, selezionarlo e fare clic sull’opzione Elimina sulla barra degli strumenti.
 
@@ -226,7 +225,7 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 Se si configura uno schema di metadati per una cartella, il percorso del modulo schema viene memorizzato nella proprietà `folderMetadataSchema` del nodo della cartella in `./jcr:content`.
 
-#### Assegna a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+#### Assegnare a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Nell&#39;interfaccia [!DNL Experience Manager] vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cartella Schemi di metadati]**.
 1. Nella pagina Forms Schema metadati cartelle selezionare il modulo schema da applicare a una cartella.
@@ -254,7 +253,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
 1. Per visualizzare i campi di metadati della cartella, fai clic sulla scheda **[!UICONTROL Folder Metadata]** (Metadati cartella).
 
-### Utilizza lo schema metadati della cartella {#use-the-folder-metadata-schema}
+### Utilizzare lo schema metadati della cartella {#use-the-folder-metadata-schema}
 
 Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina della cartella [!UICONTROL Proprietà] viene visualizzata una scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
