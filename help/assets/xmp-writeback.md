@@ -2,16 +2,15 @@
 title: Write-back XMP per le rappresentazioni
 description: Scopri in che modo la funzione di XMP write-back propaga le modifiche ai metadati di una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadati
+exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
-
 
 # Write-back XMP per le rappresentazioni {#xmp-writeback-to-renditions}
 
@@ -39,7 +38,7 @@ Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni 
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
-## Abilitazione XMP ripristino per rappresentazioni specifiche {#enabling-xmp-writeback-for-specific-renditions}
+## Abilitazione XMP writeback per rappresentazioni specifiche {#enabling-xmp-writeback-for-specific-renditions}
 
 Per consentire alla funzione XMP Writeback di propagare le modifiche ai metadati per selezionare le rappresentazioni, specifica queste rappresentazioni al passaggio del flusso di lavoro XMP Writeback Process del flusso di lavoro [!UICONTROL DAM Metadata WriteBack]. Per impostazione predefinita, questo passaggio è configurato con il rendering originale.
 
@@ -68,7 +67,7 @@ Le modifiche ai metadati vengono propagate alle rappresentazioni miniature.140.1
 >
 >Per le piattaforme supportate, consulta [XMP prerequisiti per la scrittura di metadati](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-## Filtro dei metadati XMP {#filtering-xmp-metadata}
+## Filtrare i metadati XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] supporta sia il filtro elenco Bloccati che elenco Consentiti di proprietà/nodi per XMP metadati letti dai binari delle risorse e memorizzati in JCR quando le risorse vengono acquisite.
 
