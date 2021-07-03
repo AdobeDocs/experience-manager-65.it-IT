@@ -2,10 +2,10 @@
 title: Gestire le risorse composte con riferimenti e pagine multiple
 description: Scopri come creare riferimenti a risorse digitali da [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare le singole pagine delle risorse secondarie di file multipagina, come file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Gestione risorse
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
