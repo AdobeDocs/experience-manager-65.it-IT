@@ -2,10 +2,10 @@
 title: Integrare [!DNL Assets] con [!DNL InDesign Server]
 description: Scopri come integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Pubblicazione
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Per caricare completamente i file in [!DNL Experience Manager Assets] creati con
 >
 >[!DNL Adobe InDesign] viene offerto come due offerte separate. [Adobe app desktop ](https://www.adobe.com/products/indesign.html) InDesigndesktop utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Server consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con  [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://www.adobe.com/devnet/scripting.html).Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli script [!DNL InDesign], consulta [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
-## Funzionamento dell’estrazione {#how-the-extraction-works}
+## Come funziona l’estrazione {#how-the-extraction-works}
 
 È possibile integrare [!DNL Adobe InDesign Server] con [!DNL Experience Manager Assets] in modo che i file INDD creati con [!DNL InDesign] possano essere caricati, generati rendering, tutti i file multimediali estratti (ad esempio, video) e memorizzati come risorse:
 
@@ -60,7 +60,7 @@ Questo script di comando:
    * Il testo e i file estratti vengono memorizzati in [!DNL Experience Manager Assets].
    * Tutte le rappresentazioni sono memorizzate in [!DNL Experience Manager Assets], nella risorsa stessa.
 
-## Integra il [!DNL InDesign Server] con l&#39;Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integra il [!DNL InDesign Server] con l’Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Per integrare [!DNL InDesign Server] da utilizzare con [!DNL Experience Manager Assets] e dopo aver configurato il proxy, è necessario:
 
@@ -99,7 +99,7 @@ Questo flusso di lavoro è configurato con valori predefiniti che possono essere
 
 Dopo la configurazione, il caricamento di file [!DNL InDesign] in [!DNL Experience Manager Assets] (con uno dei metodi consueti) attiva il flusso di lavoro per elaborare la risorsa e preparare le varie rappresentazioni. Verifica la configurazione caricando un file INDD in [!DNL Experience Manager Assets] per confermare che sono presenti diverse rappresentazioni create da IDS in `<*your_asset*>.indd/Renditions`
 
-#### Estrazione file multimediali {#media-extraction}
+#### Estrazione di file multimediali {#media-extraction}
 
 Questo passaggio controlla l’estrazione dei file multimediali dal file INDD.
 
@@ -213,7 +213,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il processo di lavoro IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dall&#39;elenco Bloccati.
 
-## Abilita il supporto per [!DNL InDesign Server] 10.0 o versioni successive {#enabling-support-for-indesign-server-or-later}
+## Abilita il supporto per [!DNL InDesign Server] 10.0 o versione successiva {#enabling-support-for-indesign-server-or-later}
 
 Per [!DNL InDesign Server] 10.0 o versioni successive, esegui i seguenti passaggi per abilitare il supporto per più sessioni.
 
