@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Frammenti di contenuto
+role: User, Admin
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
-
 
 # Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
@@ -36,7 +35,7 @@ ht-degree: 3%
 >
 L’implementazione corrente dell’API HTTP AEM Assets è REST.
 
-Adobe Experience Manager (AEM) [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
+L’ API REST di Adobe Experience Manager (AEM) [Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di accedere ai contenuti (memorizzati in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Creazione, lettura, aggiornamento, eliminazione).
 
 L’API ti consente di utilizzare AEM come CMS headless (Content Management System) fornendo Content Services a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
@@ -79,7 +78,7 @@ Tutte le richieste sono atomiche.
 
 Ciò significa che le richieste successive (`write`) non possono essere combinate in una singola transazione che potrebbe avere esito positivo o negativo come singola entità.
 
-### API REST AEM (Assets) rispetto ai componenti AEM {#aem-assets-rest-api-versus-aem-components}
+### API REST AEM (Assets) e componenti AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <tbody>
@@ -380,4 +379,3 @@ Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [Sessione Gem AEM: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
