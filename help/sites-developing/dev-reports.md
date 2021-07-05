@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -50,34 +50,17 @@ Per i rapporti standard forniti con AEM:
 >Negli esempi e nelle definizioni seguenti viene utilizzata la notazione seguente:
 >
 >* Ciascuna riga definisce un nodo o una proprietà in cui:
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Descrive un nodo con il nome di `<*name*>` e il tipo di nodo di `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Descrive una proprietà con il nome di `<*name*>` e un tipo di proprietà di `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Descrive una proprietà `<name>` che deve essere impostata sul valore di `<value>`.
+   >  `N:<name> [<nodeType>]` : Descrive un nodo con il nome  `<*name*>` e il tipo di nodo di  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Descrive una proprietà con il nome di  `<*name*>` e un tipo di proprietà di  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Descrive una proprietà  `<name>` che deve essere impostata sul valore di  `<value>`.
    >
    >
 * Il rientro mostra le dipendenze gerarchiche tra i nodi.
->* Elementi separati da | indica un elenco di elementi possibili; ad esempio, tipi o nomi:
+>* Elementi separati da | indica un elenco di elementi possibili; ad esempio i tipi o i nomi; ad esempio `String|String[]` indica che la proprietà può essere String o String[].
 
->
->  
-ad esempio `String|String[]` indica che la proprietà può essere String o String[].
->
->* `[]` rappresenta un array; come [] Stringor o array di nodi come nella definizione della  [query](#query-definition).
+   >
+   >
+* `[]` rappresenta un array; come [] Stringor o array di nodi come nella definizione della  [query](#query-definition).
 >
 >
 Salvo diversa indicazione, i tipi predefiniti sono:
