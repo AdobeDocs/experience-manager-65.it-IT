@@ -3,12 +3,13 @@ title: Configurare i plug-in Editor Rich Text
 description: Scopri come configurare i plug-in dell’editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4405'
 ht-degree: 3%
 
 ---
+
 
 # Configurare i plug-in Editor Rich Text {#configure-the-rich-text-editor-plug-ins}
 
@@ -72,7 +73,7 @@ Quando si utilizza la funzionalità di sostituzione, la stringa di sostituzione 
 
 La finestra di dialogo trova e sostituisci diventa trasparente quando si fa clic su trova e diventa opaca quando si fa clic su sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore. Se gli utenti fanno clic su sostituisci tutto, la finestra di dialogo viene chiusa e viene visualizzato il numero di sostituzioni effettuate.
 
-## Configurare le modalità di incolla {#paste-modes}
+## Configurare le modalità Incolla {#paste-modes}
 
 Quando si utilizza l’editor Rich Text, gli autori possono incollare i contenuti in una delle tre modalità seguenti:
 
@@ -82,7 +83,7 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare i contenut
 
 * **Modalità** MS Word: Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e mantiene solo la formattazione parziale.
 
-### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’Editor Rich Text  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Puoi fornire alcune, tutte o nessuna di queste tre icone agli autori nella barra degli strumenti dell’editor Rich Text:
 
@@ -155,53 +156,18 @@ Per configurare quali formati sono consentiti quando si incolla testo in AEM da 
    >
    >Se non è definito in modo esplicito, viene utilizzato il valore predefinito true e il formato viene accettato.
 
-1. Altri formati possono essere definiti anche utilizzando un intervallo di altre proprietà o nodi, applicati anche al nodo `htmlPasteRules`:
+1. Altri formati possono essere definiti anche utilizzando un intervallo di altre proprietà o nodi, applicati anche al nodo `htmlPasteRules`. Salva tutte le modifiche.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Tipo</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Stringa[]</td>
-   <td><p>Definisce l’elenco dei tag di blocco consentiti.</p> <p>Alcuni possibili tag di blocco includono:</p>
-    <ul>
-     <li>titoli (h1, h2, h3)</li>
-     <li>lettera p)</li>
-     <li>elenchi (ol, ul)</li>
-     <li>tabelle (tabella)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Stringa</td>
-   <td><p>Definisce il tag blocco utilizzato per tutti i blocchi con un tag blocco non incluso in allowBlockTags.</p> <p> Nella maggior parte dei casi è sufficiente.</p> </td>
-  </tr>
-  <tr>
-   <td>tabella</td>
-   <td>nt:unstructured</td>
-   <td><p>Definisce il comportamento da applicare alle tabelle.<br /> </p> <p>Questo nodo deve avere la proprietà <code>allow</code> (tipo <code>Boolean</code>) per definire se è consentito incollare tabelle.</p> <p>Se <code>allow</code> è impostato su <code>false</code>, è necessario specificare la proprietà <code>ignoreMode</code> (type<code> String</code>) per definire la modalità di gestione del contenuto della tabella incollata. I valori validi per <code>ignoreMode</code> sono:</p>
-    <ul>
-     <li><code>remove</code>: Rimuove il contenuto della tabella.</li>
-     <li><code>paragraph</code>: Trasforma le celle della tabella in paragrafi.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>elenco</td>
-   <td>nt:unstructured</td>
-   <td><p>Definisce il comportamento durante l'incollaggio degli elenchi.<br /> </p> <p>Per definire se è consentito incollare elenchi, è necessario disporre della proprietà <code>allow</code> (tipo <code>Boolean</code>).</p> <p>Se <code>allow</code> è impostato su <code>false</code>, è necessario specificare la proprietà <code>ignoreMode</code> (tipo <code>String</code>) per definire la gestione del contenuto dell’elenco incollato. I valori validi per <code>ignoreMode</code> sono:</p>
-    <ul>
-     <li><code>remove</code>: Rimuove il contenuto dell’elenco.</li>
-     <li><code>paragraph</code>: Converte le voci di elenco in paragrafi.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+È possibile utilizzare le seguenti proprietà per `htmlPasteRules`.
 
-Esempio di struttura `htmlPasteRules` valida:
+| Proprietà | Tipo | Descrizione |
+|---|---|---|
+| `allowBlockTags` | Stringa | Definisce l’elenco dei tag di blocco consentiti. Alcuni possibili tag di blocco includono: <ul> <li>titoli (h1, h2, h3)</li> <li>lettera p)</li> <li>elenchi (ol, ul)</li> <li>tabelle (tabella)</li> </ul> |
+| `fallbackBlockTag` | Stringa | Definisce il tag blocco utilizzato per tutti i blocchi con un tag blocco non incluso in `allowBlockTags`. `p` nella maggior parte dei casi è sufficiente. |
+| tabella | nt:unstructured | Definisce il comportamento da seguire per incollare le tabelle. Questo nodo deve avere la proprietà `allow` (tipo Boolean) per definire se è consentito incollare tabelle. Se allow è impostato su `false`, è necessario specificare la proprietà `ignoreMode` (tipo String) per definire la modalità di gestione del contenuto della tabella incollata. I valori validi per `ignoreMode` sono: <ul> <li>`remove`: Rimuove il contenuto della tabella.</li> <li>`paragraph`: Trasforma le celle della tabella in paragrafi.</li> </ul> |
+| elenco | nt:unstructured | Definisce il comportamento durante l’incollaggio degli elenchi. Per definire se è consentito incollare elenchi, è necessario disporre della proprietà `allow` (tipo Boolean). Se `allow` è impostato su `false`, è necessario specificare la proprietà `ignoreMode` (tipo String) per definire la gestione del contenuto dell’elenco incollato. I valori validi per `ignoreMode` sono: <ul><li> `remove`: Rimuove il contenuto dell’elenco.</li> <li>`paragraph`: Converte le voci di elenco in paragrafi.</li> </ul> |
+
+Di seguito è riportato un esempio di struttura `htmlPasteRules` valida.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Esempio di struttura `htmlPasteRules` valida:
 }
 ```
 
-1. Salva tutte le modifiche.
-
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare gli stili per modificare l’aspetto di una parte di testo. Gli stili si basano sulle classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l’attributo `class` per fare riferimento alla classe CSS. Esempio:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Gli autori possono applicare gli stili per modificare l’aspetto di una parte di testo. Gli stili si basano sulle classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l’attributo `class` per fare riferimento alla classe CSS. Esempio, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Quando il plug-in Stili è attivato per la prima volta, non è disponibile alcun Stili predefinito. L&#39;elenco a comparsa è vuoto. Per fornire gli autori Stili, procedi come segue:
 
@@ -241,7 +203,7 @@ Per configurazioni successive, ad esempio per aggiungere altri stili, seguire so
 
 >[!NOTE]
 >
->È inoltre possibile definire gli stili per le tabelle o le celle di tabella ](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). [ Queste configurazioni richiedono procedure separate.
+>È possibile definire gli stili per le tabelle o le celle di tabella [o](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Queste configurazioni richiedono procedure separate.
 
 ### Attiva l’elenco a discesa Stile {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Per configurare la modalità di aggiunta dei collegamenti in AEM da un altro pro
    * **Tipo** `String`
    * **Valore** `richtext`
 
-   La posizione del nodo `../items/text` può variare a seconda della struttura della finestra di dialogo; due esempi includono:
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   La posizione del nodo `../items/text` può variare a seconda della struttura della finestra di dialogo; due esempi sono `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. In `htmlRules`, crea un nuovo nodo.
 
