@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Ricerca, Metadati
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '5575'
+source-wordcount: '5573'
 ht-degree: 5%
 
 ---
@@ -358,7 +358,7 @@ La ricerca visiva utilizza tag avanzati. Dopo aver configurato la funzionalità 
    Salva le modifiche.
 
 1. Accedi a `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e aggiungi la proprietà `similarityTags` di tipo `Boolean` con il valore di `true`.
-1. Applica tag avanzati alle risorse nel tuo archivio [!DNL Experience Manager]. Consulta [come configurare tag avanzati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Applica tag avanzati alle risorse nel tuo archivio [!DNL Experience Manager]. Consulta [come configurare tag avanzati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, nel nodo `/oak-index/damAssetLucene`, imposta la proprietà `reindex` su `true`. Salva le modifiche.
 1. (Facoltativo) Se hai personalizzato il modulo di ricerca, copia il nodo `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salva le modifiche.
 
