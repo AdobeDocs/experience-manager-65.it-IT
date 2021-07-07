@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaborazione, Adobe Asset Link, App desktop
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 16%
 
 ---
@@ -89,7 +89,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 ### Considerazioni sull’utilizzo dell’integrazione [!DNL Experience Manager] e [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Consulta [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Consulta [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Vedi [Integrazione Adobe Stock](aem-assets-adobe-stock.md)
 * Consulta [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -209,7 +209,7 @@ La descrizione fa riferimento al caricamento dei file operazionale (ad esempio, 
 
 Puoi sfruttare le seguenti funzionalità di caricamento:
 
-* Per caricare in massa cartelle grandi/gerarchiche, utilizza l’ app desktop [!DNL Experience Manager] che fornisce la funzionalità [caricamento cartelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem). Puoi anche caricare strutture di cartelle gerarchiche. [!DNL Assets] sono caricati in background e, pertanto, non è legato a una sessione del browser web
+* Per caricare in massa cartelle grandi/gerarchiche, utilizza l’ app desktop [!DNL Experience Manager] che fornisce la funzionalità [caricamento cartelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem). Puoi anche caricare strutture di cartelle gerarchiche. [!DNL Assets] sono caricati in background e, pertanto, non è legato a una sessione del browser web
 * Per caricare alcuni file da una singola cartella, trascina i file direttamente nell’interfaccia Web o utilizza l’opzione Crea nell’ interfaccia Web [!DNL Assets] .
 * A seconda delle esigenze aziendali, puoi anche utilizzare caricatori personalizzati.
 
