@@ -6,15 +6,14 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 00c01a12-1180-4f35-9179-461bf177c787
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
-
 
 # Sicurezza dei documenti | Gestione dei dati utente {#document-security-handling-user-data}
 
@@ -22,7 +21,7 @@ La protezione dei documenti AEM Forms consente di creare, memorizzare e applicar
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
-## Memorizzazione di dati e dati utente {#user-data-and-data-stores}
+## Archiviazione dati e dati utente {#user-data-and-data-stores}
 
 La sicurezza dei documenti memorizza i criteri e i dati relativi a documenti protetti, inclusi i dati utente in un database, ad esempio My Sql, Oracle, MS SQL Server e IBM DB2. Inoltre, i dati per gli utenti autorizzati in un criterio memorizzato nella gestione utenti. Per informazioni sui dati archiviati nella gestione degli utenti, consulta [Gestione utenti Forms: Gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 
@@ -95,7 +94,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Una volta conosciuto l’ID principale, puoi esportare o eliminare i dati utente.
 
-### Esporta dati utente {#export-user-data}
+### Esportare i dati utente {#export-user-data}
 
 Esegui i seguenti comandi del database per esportare i dati utente per un ID principale dalle tabelle del database. Nel comando `select` sostituisci `<principal_id>` con l’ID principale dell’utente di cui desideri esportare i dati.
 
@@ -131,7 +130,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 Per ottenere dati completi su un utente del sistema, è necessario accedere ed esportare dati dal database di gestione utenti. Per ulteriori informazioni, consulta [Gestione utenti Forms: Gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 
-### Elimina i dati utente {#delete-user-data}
+### Eliminare i dati utente {#delete-user-data}
 
 Per eliminare i dati di sicurezza dei documenti per un ID principale dalle tabelle del database, procedere come segue.
 
@@ -213,4 +212,3 @@ Per eliminare i dati di sicurezza dei documenti per un ID principale dalle tabel
 
 1. Elimina i dati per l&#39;ID principale dal database di gestione utenti. Per i passaggi dettagliati, vedi [Gestione utente Forms | Gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 1. Avvia il server AEM Forms.
-
