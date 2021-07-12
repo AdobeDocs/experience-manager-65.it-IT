@@ -2,11 +2,10 @@
 title: Come si crea un Forms adattivo utilizzando lo schema JSON?
 description: Scopri come creare moduli adattivi utilizzando lo schema JSON come modello di modulo. Puoi utilizzare schemi JSON esistenti per creare moduli adattivi. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente modulo adattivo e scopri i costrutti non supportati.
 feature: Moduli adattivi
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 6%
@@ -22,7 +21,7 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 * [Creazione di un modulo adattivo](creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
+## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
 [!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
 
@@ -104,7 +103,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
  </tbody>
 </table>
 
-### Proprietà comuni dello schema {#common-schema-properties}
+### Proprietà dello schema comuni {#common-schema-properties}
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ogni campo generato. In particolare:
 
@@ -355,7 +354,7 @@ Puoi utilizzare la proprietà **aem:afProperties** per preconfigurare il campo S
 }
 ```
 
-## Configurare script o espressioni per gli oggetti modulo {#configure-scripts-or-expressions-for-form-objects}
+## Configurare script o espressioni per gli oggetti modulo  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API modello di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo in modo da [valutare un&#39;espressione](adaptive-form-expressions.md) su un evento modulo.
 
@@ -586,7 +585,7 @@ Alcuni esempi dell’utilizzo di eventi in un JSON nascondono un campo su un eve
 
 Di seguito è riportato il codice JSON di esempio per gli esempi menzionati in precedenza.
 
-### Nascondere un campo all’evento di inizializzazione {#hiding-a-field-on-initialize-event}
+### Nascondere un campo durante l’evento initialize {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -599,7 +598,7 @@ Di seguito è riportato il codice JSON di esempio per gli esempi menzionati in p
 }
 ```
 
-#### Configura il valore di un altro campo sull&#39;evento di commit del valore {#configure-value-of-another-field-on-value-commit-event}
+#### Configura il valore di un altro campo su un evento di commit del valore {#configure-value-of-another-field-on-value-commit-event}
 
 ```json
 "Income": {
@@ -721,7 +720,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
  </tbody>
 </table>
 
-## costrutti non supportati {#non-supported-constructs}
+## costrutti non supportati  {#non-supported-constructs}
 
 I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
