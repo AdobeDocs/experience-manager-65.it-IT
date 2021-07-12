@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
 
-
-# Come impostare MongoDB per Demo {#how-to-setup-mongodb-for-demo}
+# Come impostare MongoDB per la demo {#how-to-setup-mongodb-for-demo}
 
 ## Introduzione {#introduction}
 
@@ -75,7 +74,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 >
 >Se MongoDB viene avviato *dopo* AEM, **riavvia** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
 
-### Opzione di produzione demo: Imposta il set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
+### Opzione di produzione demo: Imposta set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 I seguenti comandi sono un esempio di configurazione di un set di repliche con 3 nodi su localhost:
 
@@ -109,14 +108,14 @@ I seguenti comandi sono un esempio di configurazione di un set di repliche con 3
    * Nessun servizio necessario.
    * La cartella Solr installata verrà definita &lt;solr-install>.
 
-### Configura Solr per AEM Communities {#configure-solr-for-aem-communities}
+### Configurare Solr per AEM Communities {#configure-solr-for-aem-communities}
 
 Per configurare una raccolta Solr per MSRP per la demo, ci sono due decisioni da prendere (seleziona i link alla documentazione principale per i dettagli):
 
 1. Esegui Solr in modalità autonoma o [SolrCloud](msrp.md#solrcloudmode).
 1. Installa [standard](msrp.md#installingstandardmls) o [advanced](msrp.md#installingadvancedmls) multilingue search (MLS).
 
-### Solr autonomo {#standalone-solr}
+### Solr indipendente {#standalone-solr}
 
 Il metodo di esecuzione di Solr può variare a seconda della versione e del modo di installazione. La [Guida di riferimento Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) è la documentazione autorevole.
 
