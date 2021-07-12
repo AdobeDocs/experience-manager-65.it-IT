@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-
-# Limiti dei contributi dei membri {#member-contribution-limits}
+# Limiti dei contributi degli Stati membri {#member-contribution-limits}
 
 ## Panoramica {#overview}
 
@@ -31,7 +30,7 @@ I limiti dei contributi possono essere attivati singolarmente dalla [console Mem
 
 Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in modo proattivo da un membro da un manager della community in qualsiasi momento oppure rimossi in modo reattivo quando un membro invia un messaggio a un manager della community che effettua tale richiesta.
 
-## Configurazione dei limiti di contributo dei contenuti generati dagli utenti di AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configurazione dei limiti di contributo dei contenuti generati dagli utenti in AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Questa configurazione OSGi:
 
