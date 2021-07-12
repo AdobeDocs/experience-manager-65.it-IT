@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
-
 
 # Moderazione nel contesto {#in-context-moderation}
 
@@ -49,7 +48,7 @@ Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro 
 
 Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
-### Crea post forum {#create-the-forum-posts}
+### Creare i post del forum {#create-the-forum-posts}
 
 * Accedi come Rebekah Larsen (rebekah.larsen@trashymail.com)
 
@@ -88,7 +87,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Seleziona risposta
    * Seleziona Esci
 
-### Visitatore anonimo del sito (#5) {#anonymous-site-visitor}
+### Visitatore del sito anonimo (#5) {#anonymous-site-visitor}
 
 Di seguito è riportata una visualizzazione del forum visualizzato da un visitatore del sito che non ha effettuato l’accesso (5).
 
@@ -169,4 +168,3 @@ Avviso:
 * Rebekah non può accedere alla console di moderazione.
 
 ![community-forum-author](assets/community-forum-author.png)
-
