@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
-# Scaricare un XFA o un modello di modulo PDF {#download-an-xfa-or-a-pdf-form-template}
+# Scaricare un modello di modulo XFA o PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L’operazione di download, come suggerisce il nome, consente di esportare i moduli dall’archivio al sistema locale. In combinazione con l’operazione di caricamento, questa operazione consente di migrare i moduli da un archivio all’altro.
 
@@ -57,4 +56,3 @@ Oltre a queste risorse, puoi scaricare il tipo di risorsa `Resource` se presente
 * Puoi caricare il file ZIP in qualsiasi altra posizione nello stesso archivio o in un altro archivio
 * La gerarchia delle risorse in una cartella viene mantenuta durante l’operazione di caricamento
 * Tutte le modifiche ai metadati apportate alle risorse scaricate prima del download vengono applicate al momento del caricamento
-
