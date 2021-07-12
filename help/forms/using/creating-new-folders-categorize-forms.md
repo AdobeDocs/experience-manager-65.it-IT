@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-
-# Crea nuove cartelle per classificare i moduli {#create-new-folders-to-categorize-forms}
+# Creazione di nuove cartelle per classificare i moduli {#create-new-folders-to-categorize-forms}
 
 Puoi organizzare meglio le risorse utilizzando le cartelle. Poiché AEM Forms supporta diversi tipi di risorse (modelli di modulo, PDF, documenti, risorse e moduli adattivi con vari metadati), è possibile utilizzare le cartelle per suddividere i moduli in categorie in base ai criteri desiderati.
 
@@ -51,10 +50,9 @@ Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
 
    Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Per visualizzare il messaggio di errore, passa il puntatore del mouse sull&#39;icona di errore ![aem6forms_error_alert](assets/aem6forms_error_alert.png) visualizzata accanto al campo del nome.
 
-### Modifica il titolo della cartella {#edit-the-folder-title-br}
+### Modificare il titolo della cartella {#edit-the-folder-title-br}
 
 1. Selezionare la cartella di cui si desidera modificare il titolo.
 1. Fai clic sull&#39;icona Modifica ![aem6forms_edit](assets/aem6forms_edit.png) nella barra degli strumenti.
 1. Inserisci il nuovo titolo. Il campo di testo viene precompilato con il valore corrente del titolo della cartella. È possibile modificarlo in un nuovo valore.
 1. Fare clic su **[!UICONTROL Invia].**
-
