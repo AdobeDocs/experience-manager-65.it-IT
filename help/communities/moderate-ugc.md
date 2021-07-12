@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1523'
 ht-degree: 2%
 
 ---
 
-
-# Moderazione del contenuto della community {#moderating-community-content}
+# Moderazione dei contenuti della community {#moderating-community-content}
 
 ## Panoramica {#overview}
 
@@ -206,7 +205,7 @@ revisioni nella moderazione  **[!UICONTROL utente]**  >  **[!UICONTROL Pre-moder
 * [Forum](/help/communities/forum.md),  [ideazione](/help/communities/ideation-feature.md),  [QnA](/help/communities/working-with-qna.md) e  [](/help/communities/calendar.md)
 calendari  **[!UICONTROL Impostazioni]**  >  **[!UICONTROL Moderato]**.
 
-### Rilevamento spam {#spam-detection}
+### Rilevamento dello spam {#spam-detection}
 
 Il rilevamento dello spam è una funzionalità di moderazione automatica che filtra i contenuti indesiderati generati dagli utenti inviati contrassegnandoli come spam. Una volta attivato, identifica se il contenuto generato dall’utente è spam o meno in base a una raccolta preconfigurata di parole spam. Le parole spam predefinite sono fornite in
 
@@ -254,11 +253,11 @@ Una volta analizzato, il sentimento è memorizzato con l&#39;UGC.
 
 Dalla [console di moderazione di massa](/help/communities/moderation.md), è possibile filtrare e visualizzare UGC in base al fatto che il sentimento sia negativo, neutro o positivo.
 
-#### Parole di controllo {#watchwords}
+#### Parole da guardia {#watchwords}
 
 AEM community fornisce un *analizzatore di parole d&#39;ordine* come passaggio nel processo di valutazione [sentiment](#sentiment). Il contributo al valore del sentiment fornito dalle parole d&#39;ordine è dovuto a un confronto tra parole d&#39;ordine negative e positive utilizzate nel contenuto pubblicato, così come le parole proibite.
 
-#### Configura sentiment e parole di controllo {#configure-sentiment-and-watchwords}
+#### Configurare sentiment e parole di controllo {#configure-sentiment-and-watchwords}
 
 L&#39;elenco delle parole d&#39;ordine positive e negative può essere personalizzato come possono essere le regole del sentiment.
 
@@ -304,4 +303,3 @@ Le seguenti autorizzazioni, quando assegnate alla stessa risorsa, sono definite 
 * `Create`
 * `Delete`
 * `Replicate`
-
