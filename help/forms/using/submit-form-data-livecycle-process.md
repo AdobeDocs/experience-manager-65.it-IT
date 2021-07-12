@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
-
-# Configurazione di AEM Forms per l’invio di dati del modulo a un AEM Forms su un processo JEE{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# Configurazione di AEM Forms per l’invio dei dati del modulo a un processo AEM Forms on JEE{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 I moduli adattivi supportano l’invio di dati a un processo AEM Forms su JEE per un’ulteriore elaborazione. Ti consente di attivare un processo AEM Forms su JEE con i dati disponibili dal modulo inviato. Esegui i seguenti passaggi per abilitare l’istanza di AEM Forms all’invio di un modulo adattivo ad AEM Forms sul processo JEE:
 
-## Configura il server AEM Forms {#configure-your-aem-forms-server}
+## Configurare il server AEM Forms {#configure-your-aem-forms-server}
 
 Per abilitare il server dei moduli di AEM all’invio di dati a un server AEM Forms su JEE, effettua le seguenti operazioni:
 
@@ -35,7 +34,7 @@ Per abilitare il server dei moduli di AEM all’invio di dati a un server AEM Fo
 
 ![Configurazione Adobe LiveCycle Client SDK](assets/clientsdkconfiguration.jpg)
 
-## Mappare i dati con i campi del processo {#map-data-with-process-fields}
+## Mappatura di dati con campi di processo {#map-data-with-process-fields}
 
 Una volta configurato il tuo AEM Forms, mappa i dati XML e gli allegati dal modulo inviato ai campi nel processo AEM Forms on JEE. Per effettuare ciò:
 
