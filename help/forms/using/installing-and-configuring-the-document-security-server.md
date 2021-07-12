@@ -6,15 +6,14 @@ seo-description: 'Utilizzare la protezione dei documenti per distribuire in modo
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
-
 
 # Installazione e configurazione del server di protezione dei documenti {#installing-and-configuring-the-document-security-server}
 
@@ -28,7 +27,7 @@ I criteri sono memorizzati sul server di sicurezza dei documenti; i criteri veng
 
 La sicurezza dei documenti fornisce inoltre client, visualizzatori e indicizzatori per proteggere i documenti, visualizzare documenti protetti e indicizzare documenti protetti. Per informazioni dettagliate sulla protezione dei documenti, vedere [informazioni sulla protezione dei documenti](/help/forms/using/admin-help/document-security.md).
 
-## Topologia di distribuzione {#deployment-topology}
+## Topologia di distribuzione  {#deployment-topology}
 
 La funzionalità di sicurezza dei documenti è disponibile solo in AEM Forms su JEE. È necessaria una singola istanza di AEM Forms su JEE. Se necessario, puoi anche creare un cluster o una farm di server AEM Forms. La topologia seguente è indicativa per eseguire la funzionalità di protezione del documento. Per informazioni dettagliate sulla topologia, consulta [Architettura e topologie di distribuzione per AEM Forms](aem-forms-architecture-deployment.md).
 
@@ -40,7 +39,7 @@ Il diagramma seguente illustra l’architettura tipica di AEM Forms Document Sec
 
 ![](do-not-localize/document-security-typical-environment.png)
 
-## Installazione di AEM Forms su JEE {#installing-aem-forms-on-jee}
+## Installazione di AEM Forms in JEE {#installing-aem-forms-on-jee}
 
 Esegui i seguenti passaggi per installare e configurare AEM Forms su JEE:
 
