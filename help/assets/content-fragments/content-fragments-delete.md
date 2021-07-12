@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Frammenti di contenuto
+role: User, Admin
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 13%
 
 ---
 
-
 # Frammenti di contenuto - Considerazioni sull’eliminazione{#content-fragments-delete-considerations}
 
-## Autorizzazioni - Elimina o non elimina {#permissions-delete-or-not-delete}
+## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
 La possibilità di eliminare i contenuti è potente, ma potenzialmente sensibile, e molti settori devono limitare e controllare come questi privilegi vengono distribuiti.
 
@@ -49,7 +48,7 @@ Per quanto riguarda le autorizzazioni di eliminazione, i frammenti di contenuto 
 >
 >Vedere anche [Come verificare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Autorizzazioni necessarie solo per la funzionalità dell&#39;editor {#permissions-required-for-editor-functionality-only}
+## Autorizzazioni necessarie solo per la funzionalità dell’editor {#permissions-required-for-editor-functionality-only}
 
 Dovrai assegnare autorizzazioni specifiche agli utenti che necessitano di modificare/aggiornare un frammento di contenuto, **ma a cui non vuoi consentire di eliminare un intero frammento**, poiché il funzionamento di base dell’Editor frammento di contenuto richiede l’eliminazione di elementi secondari transitori.
 
@@ -96,4 +95,3 @@ I privilegi `add` e `modify` possono essere amministrati anche in CRXDE Lite o u
 Ad esempio, la definizione dei privilegi `remove` per un gruppo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
