@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
-
 
 # Configurare la cache dei moduli adattivi {#configure-adaptive-forms-cache}
 
@@ -40,7 +39,7 @@ Una cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la la
 L’ambiente è configurato per l’utilizzo della cache dei moduli adattivi e delle relative risorse.
 
 
-## (Facoltativo) Configura la cache del modulo adattivo al dispatcher {#configure-the-cache}
+## (Facoltativo) Configura la cache del modulo adattivo sul dispatcher {#configure-the-cache}
 
 Puoi anche configurare il caching dei moduli adattivi al dispatcher per ulteriori miglioramenti delle prestazioni.
 
