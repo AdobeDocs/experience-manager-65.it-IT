@@ -6,15 +6,14 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Gestione della corrispondenza | Gestione dei dati utente {#correspondence-management-handling-user-data}
 
@@ -26,7 +25,7 @@ Quando un utente aziendale o un agente salva una corrispondenza come bozza o la 
 >
 >AEM 6.5 Forms, la gestione della corrispondenza non è disponibile. Se stai effettuando l’aggiornamento da una versione precedente di AEM Forms, installa il pacchetto di compatibilità ed esegui la migrazione delle risorse di gestione della corrispondenza per continuare a utilizzarle in Forms 6.5 AEM. Per ulteriori informazioni, consulta [Pacchetto di compatibilità](/help/forms/using/compatibility-package.md).
 
-## Memorizzazione di dati e dati utente {#data}
+## Archiviazione dati e dati utente {#data}
 
 La gestione della corrispondenza memorizza i dati per le bozze e le lettere inviate AEM archivio solo se l’istanza di pubblicazione è configurata per gestire le istanze di lettere. Per ulteriori informazioni sulla configurazione, consulta [Proprietà di configurazione della gestione della corrispondenza](/help/forms/using/cm-configuration-properties.md).
 
@@ -77,7 +76,7 @@ La gestione della corrispondenza fornisce API che è possibile utilizzare per tr
 
 In alternativa, puoi passare all&#39;istanza della lettera in AEM archivio utilizzando CRX DELite. Consulta [Archiviazione dati e dati utente](/help/forms/using/correspondence-management-handling-user-data.md#data) per informazioni sui dati archiviati e sulla posizione dell&#39;archivio.
 
-### Elimina i dati utente {#delete-user-data}
+### Eliminare i dati utente {#delete-user-data}
 
 Per trovare un&#39;istanza di lettera contenente i dati di un utente specifico, puoi:
 
