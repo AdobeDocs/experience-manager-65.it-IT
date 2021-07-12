@@ -6,15 +6,14 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # Gestione utente Forms | Gestione dei dati utente {#forms-user-management-handling-user-data}
 
@@ -28,7 +27,7 @@ La gestione degli utenti è un componente JEE di AEM Forms che consente di crear
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## Memorizzazione di dati e dati utente {#user-data-and-data-stores}
+## Archiviazione dati e dati utente {#user-data-and-data-stores}
 
 La gestione utenti memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS SQL Server e IBM DB2. Inoltre, qualsiasi utente che abbia effettuato l&#39;accesso almeno una volta nelle applicazioni Forms su AEM autore in `https://'[server]:[port]'lc`, l&#39;utente viene creato in AEM archivio. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
 
@@ -87,7 +86,7 @@ La gestione utenti memorizza i dati utente nelle seguenti tabelle di database:
  </tbody>
 </table>
 
-### AEM repository {#aem-repository}
+### archivio AEM {#aem-repository}
 
 I dati di gestione degli utenti per gli utenti che hanno effettuato almeno un accesso alle applicazioni Forms in `https://'[server]:[port]'lc` vengono memorizzati anche AEM repository.
 
@@ -107,7 +106,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Una volta conosciuto l’ID principale, puoi esportare o eliminare i dati utente.
 
-#### Esporta dati utente {#export-user-data}
+#### Esportare i dati utente {#export-user-data}
 
 Esegui i seguenti comandi del database per esportare i dati di gestione utente per un ID principale dalle tabelle del database. Nel comando `select` sostituisci `<principal_id>` con l’ID principale dell’utente di cui desideri esportare i dati.
 
@@ -148,7 +147,7 @@ Select * from EdcPrincipalGrpCtmntEntity where refchildprincipalid in (Select id
 Select * from EdcPrincipalEntity where id='<principal_id>';
 ```
 
-#### Elimina i dati utente {#delete-user-data}
+#### Eliminare i dati utente {#delete-user-data}
 
 Per eliminare i dati di gestione utente per un ID principale dalle tabelle del database, procedi come segue.
 
@@ -176,7 +175,7 @@ Per eliminare i dati di gestione utente per un ID principale dalle tabelle del d
 
 1. Avvia il server AEM Forms.
 
-### AEM repository {#aem-repository-1}
+### archivio AEM {#aem-repository-1}
 
 Gli utenti JEE di Forms hanno i loro dati nell’archivio AEM se hanno effettuato l’accesso all’istanza di authoring di AEM Forms almeno uno. È possibile accedere e eliminare i dati utente da AEM repository.
 
@@ -184,7 +183,7 @@ Gli utenti JEE di Forms hanno i loro dati nell’archivio AEM se hanno effettuat
 
 Per visualizzare l&#39;utente creato AEM repository, accedi a `https://'[server]:[port]'/lc/useradmin` con AEM credenziali di amministratore. Nell’URL `server` e `port` sono quelli dell’istanza di authoring AEM. Qui puoi cercare gli utenti con il loro nome utente. Fare doppio clic su un utente per visualizzare informazioni quali proprietà, autorizzazioni e gruppi per l&#39;utente. La proprietà `Path` di un utente specifica il percorso del nodo utente creato AEM repository.
 
-#### Elimina i dati utente {#delete-aem}
+#### Eliminare i dati utente {#delete-aem}
 
 Per eliminare un utente:
 
@@ -192,4 +191,3 @@ Per eliminare un utente:
 1. Cerca un utente e fai doppio clic sul nome utente per aprire le proprietà dell’utente. Copia la proprietà `Path` .
 1. Vai a AEM CRX DELite in `https://'[server]:[port]'/lc/crx/de/index.jsp` e naviga o cerca il percorso utente.
 1. Elimina il percorso e fai clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l&#39;utente dall&#39;archivio AEM.
-
