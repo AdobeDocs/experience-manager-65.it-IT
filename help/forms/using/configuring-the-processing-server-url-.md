@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
-
-# Configurazione AEM impostazioni DS{#configuring-aem-ds-settings}
+# Configurazione delle impostazioni di AEM DS{#configuring-aem-ds-settings}
 
 Questo articolo descrive come configurare **AEM Servizio impostazioni DS**. Questa impostazione può essere utilizzata in più scenari, ad esempio:
 
@@ -59,5 +58,6 @@ Di seguito sono riportati i passaggi per configurare le **[!UICONTROL AEM impost
    >    
    >    
    >    * Durante l&#39;utilizzo dei flussi di lavoro Forms o AEM, prima di effettuare invii dal server di pubblicazione, è necessario configurare il servizio delle impostazioni DS. In caso contrario, la presentazione del modulo non verrà eseguita.
+
 
 
