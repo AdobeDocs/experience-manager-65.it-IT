@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 1%
@@ -80,7 +80,7 @@ L&#39;Adobe consiglia queste configurazioni e fornisce supporto completo o limit
 >
 >Riconosciamo che gli utenti esistenti devono continuare a distribuire AEM Forms sullo stack JEE. In tali scenari, Adobe richiede la distribuzione di JEE AEM Forms sull’infrastruttura supportata come descritto in questa documentazione. Se esegui l’aggiornamento a Forms 6.5 e utilizzi una piattaforma non supportata nella versione precedente di AEM Forms, contatta il Supporto di Adobe per assistenza sull’aggiornamento a una piattaforma supportata.
 
-### Macchine virtuali Java (JVM) {#java-virtual-machines-jvm}
+### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
 Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtuale Java, fornita dalla distribuzione Java Development Kit (JDK). Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machines:
 
@@ -204,7 +204,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 * AEM Forms su JEE non supporta l&#39;utilizzo di MySQL per la persistenza AEM Repository (CRX-Repository).
 
 
-### Driver di database {#database-drivers}
+### Driver del database {#database-drivers}
 
 <table>
  <tbody>
@@ -483,7 +483,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 
 
 
-### Eccezioni al supporto per l&#39;accessibilità {#exceptions-to-accessibility-support}
+### Eccezioni al supporto per l’accessibilità {#exceptions-to-accessibility-support}
 
 I seguenti sottosistemi di AEM Forms non sono [508](https://www.section508.gov/) conformi:
 
@@ -688,7 +688,7 @@ Per ulteriori requisiti consulta:
 
 
 
-### App AEM Forms {#aem-forms-workspace-app}
+### app AEM Forms {#aem-forms-workspace-app}
 
 #### Supporto per dispositivi mobili {#mobile-device-support}
 
