@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
-
 
 # Eliminazione di moduli e risorse correlate {#deleting-forms-and-related-resources}
 
@@ -24,7 +23,7 @@ Puoi eliminare i moduli e le risorse per rimuovere queste risorse dalla director
 
 Se elimini una risorsa dall’istanza Author, anche la risorsa viene eliminata dall’istanza Publish. Il server AEM Forms è costituito da istanze Author e Publish. L’istanza Autore consente di creare e gestire le risorse e le risorse dei moduli. L’istanza Pubblica contiene le risorse dei moduli pubblicati e le relative risorse disponibili per gli utenti finali.
 
-## Come eliminare un modulo {#how-to-delete-a-form}
+## Eliminazione di un modulo {#how-to-delete-a-form}
 
 1. Accedi all&#39;interfaccia utente di AEM Forms accedendo a `https://[hostname]:'port'/aem/forms.html.`
 1. Individuare e selezionare il modulo da eliminare. Fai clic su Elimina ![aem6forms_delete2](assets/aem6forms_delete2.png) dalla barra degli strumenti e conferma l’operazione di eliminazione.
