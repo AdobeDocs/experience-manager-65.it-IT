@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2110'
 ht-degree: 4%
 
 ---
-
 
 # Console di moderazione {#moderation-console}
 
@@ -51,7 +50,7 @@ Selezionando il collegamento Amministrazione, viene visualizzata la console Mode
 
 ![moderation-console-publish](assets/moderation-console-publish.png)
 
-## Accesso all&#39;ambiente di authoring {#author-environment-access}
+## Accesso all’ambiente di authoring {#author-environment-access}
 
 Nell’ambiente di authoring, per raggiungere la console Moderazione
 
@@ -111,7 +110,7 @@ L&#39;area contenuto contiene informazioni per gli UGC pubblicati:
 > 
 >L’area contenuto presenta un *scorrimento infinito*, che consente di continuare lo scorrimento fino alla fine del contenuto. La barra degli strumenti rimane in una posizione fissa e visibile sopra l’area contenuto anche durante lo scorrimento.
 
-### Barra dei filtri {#ootbfilters}
+### Barra Filtro {#ootbfilters}
 
 ![binario aperto](assets/open-filterrail.png)
 
@@ -374,4 +373,3 @@ Per tornare alla visualizzazione dell’area contenuto di più post UGC, selezio
 Esempio:
 
 ![view1](assets/view1.png)
-
