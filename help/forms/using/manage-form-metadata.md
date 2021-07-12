@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1994'
 ht-degree: 1%
 
 ---
 
-
-# Gestire i metadati del modulo{#manage-form-metadata}
+# Gestire i metadati dei moduli{#manage-form-metadata}
 
 ## Panoramica  {#overview-nbsp}
 
@@ -44,7 +43,7 @@ In AEM Forms sono supportati i seguenti tipi di risorse:
 * Riferimenti
 * XFS
 
-#### Elenco esteso di metadati {#extensive-list-of-metadata}
+#### Elenco completo dei metadati {#extensive-list-of-metadata}
 
 Di seguito è riportato un elenco completo delle proprietà dei metadati supportate in AEM Forms:
 
@@ -175,7 +174,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
  </tbody> 
 </table>
 
-## Visualizza metadati modulo {#view-form-metadata}
+## Visualizzare i metadati del modulo {#view-form-metadata}
 
 Le risorse dispongono di valori di proprietà esistenti che possono essere visualizzati in modalità di sola lettura. Questi metadati vengono creati al momento del caricamento del modulo o della creazione del modulo.
 
@@ -205,11 +204,11 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
    * Il pannello a destra contiene le proprietà dei metadati in modalità di sola lettura, distribuite su varie schede.
 
 
-## Aggiungi/aggiorna i valori dei metadati del modulo {#add-update-form-metadata-values}
+## Aggiungere/aggiornare i valori dei metadati del modulo {#add-update-form-metadata-values}
 
 È possibile modificare il valore delle proprietà dei metadati esistenti o aggiungere nuovi valori a un campo di proprietà dei metadati esistente (ad esempio, quando un campo di metadati è vuoto).
 
-### Aggiorna i valori delle proprietà dei metadati {#update-metadata-property-values}
+### Aggiornare i valori delle proprietà dei metadati {#update-metadata-property-values}
 
 1. Segui i passaggi indicati nella sezione precedente per aprire la pagina delle proprietà in cui è possibile visualizzare i metadati esistenti del modulo selezionato.
 
@@ -228,7 +227,7 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
 
    Entrambe queste azioni indirizzano l’utente alla modalità di sola lettura della pagina delle proprietà contenente i valori aggiornati.
 
-### Aggiorna la miniatura del modulo {#update-the-form-thumbnail}
+### Aggiornare la miniatura del modulo {#update-the-form-thumbnail}
 
 Il pannello a sinistra nella pagina delle proprietà visualizza la miniatura del modulo. Per impostazione predefinita, la miniatura visualizzata è quella generata al momento della creazione del modulo (modulo adattivo) o al momento del caricamento del modulo.
 
@@ -245,7 +244,7 @@ Per i moduli adattivi, sono disponibili funzionalità aggiuntive che consentono 
 
 
 
-## Aggiungi metadati personalizzati {#add-custom-metadata}
+## Aggiungere metadati personalizzati {#add-custom-metadata}
 
 Oltre ai metadati forniti out-of-the-box, AEM Forms supporta nuovi metadati personalizzati.
 
@@ -253,7 +252,7 @@ Oltre ai metadati forniti out-of-the-box, AEM Forms supporta nuovi metadati pers
 
 AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo strumento. In questo modo, puoi accedere a questi schemi e utilizzare la funzionalità fornita nell’editor dello schema dei metadati per aggiungere proprietà personalizzate.
 
-### Naviga nell’editor dello schema metadati {#navigate-the-metadata-schema-editor}
+### Navigare nell’editor dello schema metadati {#navigate-the-metadata-schema-editor}
 
 1. Passa a **[!UICONTROL Strumenti > Risorse > Schemi di metadati]**.
 
@@ -284,7 +283,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
    1. Puoi aggiungere un campo personalizzato del tipo desiderato trascinando il componente campo dalla sezione **[!UICONTROL Genera modulo]** nella pagina schema.
    1. Le specifiche di questo campo possono essere fornite nella sezione **[!UICONTROL Impostazioni]** dopo aver fatto clic sul campo.
 
-### Aggiungi la proprietà dei metadati personalizzati nell&#39;editor dello schema {#add-custom-metadata-property-in-schema-editor}
+### Aggiungi proprietà metadati personalizzate nell’editor dello schema {#add-custom-metadata-property-in-schema-editor}
 
 1. Passa alla scheda (esistente o nuova) in cui desideri aggiungere la proprietà personalizzata.
 
