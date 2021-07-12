@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
-
 
 # Assegnazione tag ai contenuti generati dagli utenti {#tagging-user-generated-content}
 
@@ -47,7 +46,7 @@ Per informazioni sugli sviluppatori, consulta [Tag Essentials](tag.md) .
 
 Consulta [Utilizzo di Social Tag Cloud](tagcloud.md) per aggiungere un componente Social Tag Cloud a una pagina per facilitare la ricerca di contenuti generati dagli utenti pubblicati utilizzando i tag applicati.
 
-### Assegnare tag alle autorizzazioni {#tag-permissions}
+### Autorizzazioni di tag {#tag-permissions}
 
 Le autorizzazioni predefinite sono impostate per non consentire a tutti gli utenti dell’ambiente di pubblicazione di leggere i namespace dei tag.
 
@@ -58,4 +57,3 @@ Consulta [Impostazione delle autorizzazioni dei tag](../../help/sites-administer
 Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
 ![tag-permissions](assets/tag-permissions.png)
-
