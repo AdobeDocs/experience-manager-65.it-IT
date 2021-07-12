@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: e29aae44-67be-43d2-8004-c986412d9e63
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
-
 
 # SRP - Archiviazione dei contenuti della community {#srp-community-content-storage}
 
@@ -106,7 +105,7 @@ JSRP:
 * la moderazione viene eseguita solo nell’ambiente di pubblicazione (non esiste un meccanismo di replica inversa/forward tra l’autore e la pubblicazione).
 * È il migliore per lo sviluppo, le dimostrazioni e la formazione.
 
-## Configurazione dell&#39;SRP {#configuring-srp}
+## Configurazione dell’SRP {#configuring-srp}
 
 La specificazione dell&#39;opzione di archiviazione predefinita, basata sulla distribuzione sottostante, viene eseguita tramite la [console di configurazione dello storage](/help/communities/srp-config.md).
 
@@ -137,7 +136,7 @@ Anche i siti CommunitIes sono [*utenti*, *gruppi di utenti* e *profili utente*](
 
 A partire da AEM Communities 6.1, i dati relativi all’utente vengono sincronizzati utilizzando la distribuzione Sling invece della replica. Per ulteriori informazioni, visita [Sincronizzazione utente](/help/communities/sync.md).
 
-### Aggiornamento a AEM Communities 6.5 {#upgrading-to-aem-communities}
+### Aggiornamento ad AEM Communities 6.5 {#upgrading-to-aem-communities}
 
 Quando si esegue l’aggiornamento a AEM 6.5 Communities, se è necessario mantenere gli UGC preesistenti, è necessario adottare misure a seconda che la comunità AEM 5.6.1 o AEM 6.0 utilizzasse lo storage Adobe on-demand o on-premise di UGC.
 
