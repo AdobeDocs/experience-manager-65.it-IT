@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2548'
 ht-degree: 1%
 
 ---
-
 
 # Importazione ed esportazione di risorse in AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 
 
-## Scarica o carica risorse Forms e Documenti {#download-or-upload-forms-amp-documents-assets}
+## Scaricare o caricare risorse Forms e Documenti {#download-or-upload-forms-amp-documents-assets}
 
 L’interfaccia utente di AEM Forms ti consente di esportare le risorse da un’istanza AEM scaricandole come AEM pacchetto CRX o file binari. Puoi quindi importare il file AEM CRX-package scaricato o il file binario in un&#39;altra istanza AEM.
 
@@ -39,7 +38,7 @@ L’esportazione e l’importazione tramite l’interfaccia utente di AEM Forms 
 
 Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server di AEM sorgente e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Uso dei pacchetti](/help/sites-administering/package-manager.md).
 
-### Scarica risorse Forms e documenti {#download-forms-amp-documents-assets}
+### Download delle risorse di Forms e Documenti {#download-forms-amp-documents-assets}
 
 Per scaricare le risorse di Forms e Documenti:
 
@@ -60,7 +59,7 @@ Non è possibile scaricare moduli adattivi, comunicazioni interattive, frammenti
    >
    >Sia il pacchetto AEM che i file binari vengono scaricati come archivio (file .zip). I modelli per le risorse non vengono scaricati insieme alle risorse. È necessario esportare i modelli di risorse separatamente.
 
-### Caricare risorse Forms e documenti {#upload-forms-amp-documents-assets}
+### Caricare risorse Forms e Documenti {#upload-forms-amp-documents-assets}
 
 Per caricare le risorse di Forms e Documenti:
 
@@ -127,7 +126,7 @@ Per condividere risorse, come dizionari di dati, lettere e frammenti di document
 
    Il file .cmp include le risorse esportate. Puoi condividere il file .cmp con altri utenti. Altri utenti possono importare il file .cmp in un server diverso per ottenere tutte le risorse nel nuovo server.
 
-### Esporta tutte le risorse di Gestione Corrispondenza come pacchetto {#export-all-the-correspondence-management-assets-as-a-package}
+### Esporta come pacchetto tutte le risorse di Gestione Corrispondenza {#export-all-the-correspondence-management-assets-as-a-package}
 
 Utilizza questa opzione per scaricare tutte le risorse di Gestione Corrispondenza e le dipendenze correlate come pacchetto da un’istanza di moduli AEM.
 
@@ -178,7 +177,7 @@ Puoi importare le risorse esportate in un file .cmp. Un file .cmp può contenere
    >
    >Per poter caricare XDP (come parte del file cmp o in altro modo), devi far parte del gruppo forms-power-users. Per i diritti di accesso, contatta l’amministratore.
 
-## Esportare un&#39;applicazione di flusso di lavoro {#export-a-workflow-application}
+## Esportare un’applicazione di flusso di lavoro {#export-a-workflow-application}
 
 Puoi utilizzare AEM gestore di pacchetti per esportare le applicazioni del flusso di lavoro. La procedura è la seguente:
 
@@ -224,7 +223,7 @@ Per creare una cartella, completa i passaggi seguenti:
 
    ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
 
-### Crea copie di una o più risorse o lettere {#create-copies-of-one-or-more-assets-or-letters}
+### Creare copie di una o più risorse o lettere {#create-copies-of-one-or-more-assets-or-letters}
 
 È possibile utilizzare una risorsa e una lettera esistenti per creare rapidamente risorse e lettere con proprietà, contenuto e risorse ereditate simili. È possibile copiare e incollare dizionari di dati, frammenti di documento e lettere.
 
