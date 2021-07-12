@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # Ottenimento di documenti XDP e PDF in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -35,7 +34,7 @@ Puoi caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Pu
 >
 >Assicurati di essere membro del gruppo `form-power-users` per poter caricare i file XDP. Contatta l’amministratore per diventare membro del gruppo.
 
-## Caricamento di moduli {#uploading-forms}
+## Caricamento dei moduli {#uploading-forms}
 
 1. Accedi all&#39;interfaccia utente di AEM Forms accedendo a `https://'[server]:[port]'/aem/forms.html`.
 1. Passa alla cartella in cui desideri caricare il modulo o la cartella che contiene i moduli.
@@ -89,4 +88,3 @@ La rimozione di un modello di modulo corrompe il modulo adattivo o il modello di
 Viene mantenuto un flag per indicare se un modulo adattivo è sporco. Queste informazioni sono disponibili nella pagina delle proprietà del modulo, insieme ai metadati del modulo. Solo per i moduli adattivi sporchi, nella proprietà dei metadati `Model Refresh` viene visualizzato il valore `Recommended`.
 
 ![Indicazione di un modulo adattivo non sincronizzato con il modello XFA](assets/model-refresh.png)
-
