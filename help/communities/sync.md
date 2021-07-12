@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 2%
+source-wordcount: '2509'
+ht-degree: 1%
 
 ---
 
-
-# Sincronizzazione utenti community {#communities-user-synchronization}
+# Sincronizzazione utente community {#communities-user-synchronization}
 
 ## Introduzione {#introduction}
 
@@ -42,13 +41,13 @@ Quando la [topologia](/help/communities/topologies.md) è una [farm di pubblicaz
 
 Quando la sincronizzazione utente è abilitata, i dati utente vengono sincronizzati automaticamente tra le istanze di pubblicazione nella farm.
 
-### Istruzioni di configurazione della sincronizzazione utente {#user-sync-setup-instructions}
+### Istruzioni per l&#39;installazione della sincronizzazione utente {#user-sync-setup-instructions}
 
 Per istruzioni dettagliate e dettagliate su come abilitare la sincronizzazione in una farm di pubblicazione, vedi:
 
 * [Sincronizzazione utente](/help/sites-administering/sync.md)
 
-## Sincronizzazione utente in background {#user-sync-in-the-background}
+## Sincronizzazione utente in background  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -60,19 +59,19 @@ Per istruzioni dettagliate e dettagliate su come abilitare la sincronizzazione i
 
    Contiene informazioni di distribuzione per Sling. Queste sono informazioni su dove il contenuto deve essere distribuito e quando è stato distribuito per ultimo.
 
-## Che cosa succede quando ... {#what-happens-when}
+## Cosa Succede Quando ... {#what-happens-when}
 
 ### Pubblica sito dalla console Sites di Communities {#publish-site-from-communities-sites-console}
 
 Su autore, quando un sito community viene pubblicato dalla [console Sites di Communities](/help/communities/sites-console.md), l&#39;effetto è quello di [replicare](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) le pagine associate e Sling distribuisce i gruppi di utenti della community creati dinamicamente, inclusa la loro appartenenza.
 
-### L&#39;utente viene creato o modifica il profilo in Pubblica {#user-is-created-or-edits-profile-on-publish}
+### L’utente viene creato o modifica il profilo in Pubblica {#user-is-created-or-edits-profile-on-publish}
 
 Per progettazione, gli utenti e i profili creati nell’ambiente di pubblicazione (ad esempio mediante registrazione automatica, accesso social network, autenticazione LDAP) non vengono visualizzati nell’ambiente di authoring.
 
 Quando la topologia è una [farm di pubblicazione](/help/communities/topologies.md) e la sincronizzazione utente è stata configurata correttamente, i *utenti* e *profili utente* vengono sincronizzati nella farm di pubblicazione utilizzando la distribuzione Sling.
 
-### Il nuovo gruppo community viene creato in Pubblica {#new-community-group-is-created-on-publish}
+### Viene creato un nuovo gruppo community su Pubblica {#new-community-group-is-created-on-publish}
 
 Anche se avviata da un&#39;istanza di pubblicazione, la creazione del gruppo community, che si traduce in nuove pagine del sito e in un nuovo gruppo di utenti, in realtà avviene nell&#39;istanza di authoring.
 
@@ -84,7 +83,7 @@ Per progettazione, i dati utente creati nell’ambiente di pubblicazione non ven
 
 Quando la console [Amministrazione utente e sicurezza](/help/sites-administering/security.md) viene utilizzata per aggiungere nuovi utenti nell’ambiente di pubblicazione, la sincronizzazione utente sincronizza i nuovi utenti e la loro appartenenza al gruppo con altre istanze di pubblicazione, se necessario. La sincronizzazione utente sincronizza anche i gruppi di utenti creati tramite la console di sicurezza.
 
-### Contenuto pubblicato dall&#39;utente su Pubblica {#user-posts-content-on-publish}
+### Pubblicazioni utente Contenuto su Pubblica {#user-posts-content-on-publish}
 
 Per il contenuto generato dall’utente (UGC), i dati immessi in un’istanza di pubblicazione sono accessibili tramite l’ [SRP](/help/communities/srp-config.md) configurato.
 
@@ -102,12 +101,12 @@ La sincronizzazione utente si basa sull’ambiente di authoring per gestire le d
 
 1. Verifica che sia stato installato il codice più recente:
 
-   * [Aggiornamenti AEM piattaforma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it)
+   * [Aggiornamenti AEM piattaforma](https://helpx.adobe.com/it/experience-manager/kb/aem62-available-hotfixes.html)
    * [Aggiornamenti AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Le seguenti configurazioni sono necessarie per abilitare la sincronizzazione utente su AEM Communities. Assicurati che queste configurazioni siano corrette per evitare errori nella distribuzione del contenuto sling.
 
-### Agente di distribuzione Apache Sling - Sincronizza agenti Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### Agente di distribuzione Apache Sling - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 Questa configurazione recupera il contenuto da sincronizzare tra gli editori. La configurazione si trova nell’istanza Author. L&#39;autore deve tenere traccia di tutti gli editori presenti e di dove sincronizzare tutte le informazioni.
 
@@ -159,7 +158,7 @@ Per collegare l&#39;autore agli editori utilizzando un utente autorizzato:
 
 ![granite-paswrd-trans](assets/granite-paswrd-trans.png)
 
-### Agente di distribuzione Apache Sling - Coda Agenti Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### Agente di distribuzione Apache Sling - Queue Agent Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 Questa configurazione viene utilizzata per configurare i dati da sincronizzare tra gli editori. Quando i dati vengono creati/aggiornati nei percorsi specificati in **Radici consentite**, viene attivato &quot;var/community/distribution/diff&quot; e il replicatore creato recupera i dati da un editore e li installa su altri editori.
 
@@ -181,7 +180,7 @@ Per configurare i dati (percorsi dei nodi) da sincronizzare:
 
    ![queue-agent-fact](assets/queue-agents-fact.png)
 
-### Distribuzione granite Adobe - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
+### Distribuzione Granite Adobe - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Questa configurazione sincronizza l&#39;appartenenza al gruppo tra gli editori.
 Se la modifica dell&#39;appartenenza di un gruppo in un editore non ne aggiorna l&#39;appartenenza ad altri editori, assicurati che **ref:Members** venga aggiunto a **nomi di proprietà analizzate**.
@@ -203,7 +202,7 @@ Per garantire la sincronizzazione dei membri:
 
    ![diff-obs](assets/diff-obs.png)
 
-### Trigger di distribuzione Apache Sling - Factory dei trigger programmati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Trigger di distribuzione Apache Sling - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Questa configurazione ti consente di configurare l’intervallo di polling (dopo il quale gli editori vengono inseriti nel ping e le modifiche vengono richiamate dall’autore) per sincronizzare le modifiche tra gli editori.
 
