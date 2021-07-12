@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '208'
 ht-degree: 5%
 
 ---
-
 
 # Configurazione dell’archiviazione {#storage-configuration}
 
@@ -30,7 +29,7 @@ Per una discussione sulle opzioni di storage e sulle topologie di distribuzione,
 * [Archivio dei contenuti della community](working-with-srp.md)
 * [Topologie consigliate](topologies.md)
 
-## Console di configurazione dello storage {#storage-configuration-console}
+## Console di configurazione dell&#39;archiviazione {#storage-configuration-console}
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
@@ -49,7 +48,7 @@ Per selezionare un&#39;opzione di archiviazione diversa dal JCR predefinito:
 
 * Seleziona **[!UICONTROL Invia]**.
 
-### Informazioni su JCR Storage {#about-jcr-storage}
+### Informazioni sullo storage JCR {#about-jcr-storage}
 
 Se non viene effettuata alcuna selezione, l’impostazione predefinita è l’archivio AEM, JCR.
 
