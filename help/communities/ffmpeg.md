@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-
-# FFmpeg per community {#ffmpeg-for-communities}
+# FFmpeg per Communities {#ffmpeg-for-communities}
 
 ## Panoramica {#overview}
 
@@ -69,6 +68,3 @@ Per modificare il flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] e, in quest
 * Selezionare **[!UICONTROL OK]** per chiudere la finestra di dialogo `Step Properties`.
 
 * Seleziona **[!UICONTROL Salva]** per salvare il flusso di lavoro `DAM Update Asset`.
-
-
-
