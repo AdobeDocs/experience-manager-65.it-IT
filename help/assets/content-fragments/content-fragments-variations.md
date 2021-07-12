@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Frammenti di contenuto
+role: User, Admin
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 16%
 
 ---
-
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
@@ -46,7 +45,7 @@ Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifi
 >
 >Dopo la pubblicazione e/o il riferimento a un frammento, AEM un avviso quando un autore riapre il frammento per la modifica. In questo modo si avverte che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
-## Creazione di contenuti {#authoring-your-content}
+## Authoring dei contenuti {#authoring-your-content}
 
 Quando apri il frammento di contenuto per la modifica, la scheda **Variazioni** viene aperta per impostazione predefinita. Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Operazioni disponibili:
 
@@ -175,7 +174,7 @@ Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** v
 
 Per facilitare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
 
-### Riepilogo del testo {#summarizing-text}
+### Testo riepilogo {#summarizing-text}
 
 Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezza del testo a un numero predefinito di parole, mantenendo al tempo stesso i punti chiave e il significato generale.
 
@@ -238,7 +237,7 @@ Per annotare un frammento:
 
 1. Chiudi l’editor a schermo intero e **Salva** il frammento.
 
-### Visualizzazione, modifica, eliminazione di annotazioni {#viewing-editing-deleting-annotations}
+### Visualizzazione, Modifica, Eliminazione Di Annotazioni {#viewing-editing-deleting-annotations}
 
 Annotazioni:
 
@@ -382,4 +381,3 @@ Quando modifichi una variante hai accesso all’azione per sincronizzare l’ele
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Seleziona **Sincronizza**, la variante verrà aggiornata e visualizzata.
-
