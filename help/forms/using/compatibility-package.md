@@ -10,15 +10,14 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
-
 
 # Pacchetto di compatibilità{#compatibility-package}
 
@@ -35,7 +34,7 @@ Il pacchetto di compatibilità AEMFD consente inoltre di [utilizzare le seguenti
 
 Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto di compatibilità](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## È stato aggiunto il supporto per le risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Supporto per risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Dopo aver eseguito un aggiornamento, procedi come segue per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
 
@@ -77,4 +76,3 @@ Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM For
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenregistrazione
    * /libs/fd/afaddon/components/page/advancedensubscription
-
