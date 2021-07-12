@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
@@ -26,7 +25,7 @@ In genere, gli sviluppatori non utilizzano l’ambiente di produzione per creare
 
 Questo articolo descrive i metodi per ridurre la superficie di attacco complessiva attraverso le opzioni di amministrazione fornite da AEM Forms su JEE.
 
-## Disabilitazione dell&#39;accesso remoto non essenziale ai servizi {#disabling-non-essential-remote-access-to-services}
+## Disabilitazione dell’accesso remoto non essenziale ai servizi {#disabling-non-essential-remote-access-to-services}
 
 Dopo l&#39;installazione e la configurazione di AEM Forms su JEE, molti servizi sono disponibili per la chiamata remota tramite SOAP e Enterprise JavaBeans™ (EJB). Il termine remoto, in questo caso, fa riferimento a qualsiasi chiamante con accesso di rete alle porte SOAP, EJB o AMF (Action Message Format) per l&#39;application server.
 
@@ -67,7 +66,7 @@ Completa questa procedura utilizzando la pagina web Applicazioni e servizi in Ad
 
 1. Fare clic su **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP che non si trovano nell&#39;elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
 
-## Disabilitazione dell&#39;accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
+## Disabilitazione dell’accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
 
 Alcuni servizi server di Forms consentono chiamate non autenticate (anonime) per alcune operazioni. Ciò significa che una o più operazioni esposte dal servizio possono essere richiamate come qualsiasi utente autenticato o come nessun utente autenticato.
 
@@ -130,4 +129,3 @@ Gli utenti finali possono eseguire l’autenticazione in AEM Forms tramite Workb
 1. Nella console di amministrazione, passa alla pagina Importa ed esporta file di configurazione.
 1. Immettere il percorso del file config.xml modificato oppure fare clic su Sfoglia per individuarlo.
 1. Fai clic su **Importa** per caricare il file config.xml modificato, quindi fai clic su **OK**.
-
