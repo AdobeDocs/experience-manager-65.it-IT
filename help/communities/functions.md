@@ -10,11 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2458'
 ht-degree: 6%
 
 ---
@@ -30,7 +29,7 @@ Una volta creato un sito community, il contenuto può essere aggiunto alle pagin
 >
 >Le console per la creazione di [siti della community](/help/communities/sites-console.md), [modelli di sito della community](/help/communities/sites.md), [modelli di gruppo della community](/help/communities/tools-groups.md) e [funzioni della community](/help/communities/functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
-## Console funzioni community {#community-functions-console}
+## Console Funzioni community {#community-functions-console}
 
 Per accedere alla console funzioni della community nell’ambiente di authoring:
 
@@ -180,7 +179,7 @@ Se selezionato, sono disponibili tutti i namespace dei tag consentiti per il sit
 Se deselezionato, è possibile selezionare uno o più namespace consentiti per il sito community.
 Il valore predefinito è selezionato.
 
-### Funzione di contenuto in primo piano {#featured-content-function}
+### Funzione di contenuto {#featured-content-function}
 
 La funzione di contenuto in primo piano è una pagina con un [componente Contenuto in primo piano](/help/communities/featured.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
@@ -226,7 +225,7 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
    Se selezionato, il contenuto del componente viene identificato come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è selezionato.
 
-### Funzione dei gruppi {#groups-function}
+### Funzione Groups {#groups-function}
 
 >[!CAUTION]
 >
