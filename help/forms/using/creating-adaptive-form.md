@@ -2,11 +2,10 @@
 title: Come creare un modulo adattivo
 description: 'Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Scopri come creare un modulo adattivo basato su un modello di dati modulo, un modello di modulo XFA e uno schema XML o JSON. '
 feature: Moduli adattivi
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -138,7 +137,7 @@ Per utilizzare lo schema XML o JSON come modello di modulo per un modulo adattiv
 >
 >È inoltre possibile modificare lo schema di un modulo adattivo. Per passaggi dettagliati, vedere [Modifica proprietà modello di modulo di un modulo adattivo](#edit-form-model).
 
-## Modelli di modulo adattivo {#adaptive-form-templates}
+## Modelli di modulo adattivi {#adaptive-form-templates}
 
 Un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Dispone di componenti preformattati contenenti determinate proprietà e struttura del contenuto. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
@@ -202,4 +201,4 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
    >
    >Affinché l’opzione di salvataggio automatico funzioni per gli utenti anonimi, è necessario configurare il servizio di configurazione comune di Forms per consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, vai alla configurazione della console Web Adobe Experience Manager all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr` e modifica il **[!UICONTROL Servizio di configurazione comune Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvare la configurazione.
+   >Per configurare il servizio, vai alla configurazione della console Web Adobe Experience Manager all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr` e modifica il **[!UICONTROL Servizio di configurazione comune Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salva la configurazione.
