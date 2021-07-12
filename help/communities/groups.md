@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
-
 
 # Console Gruppi per community {#community-groups-console}
 
@@ -110,11 +109,11 @@ La radice predefinita è il sito padre, ma può essere spostata in qualsiasi pos
 
 ### Passaggio 2: Progettazione {#step-design}
 
-### TEMA DEL GRUPPO DELLA COMMUNITY {#community-group-theme}
+### TEMA DEL GRUPPO COMUNITARIO {#community-group-theme}
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-Il framework utilizza [Bootstrap Twitter](https://twitterbootstrap.org/) per portare un design reattivo e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per portare un design dinamico e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
 
 Se selezionato, il tema verrà sovrapposto con un segno di spunta blu opaco.
 
@@ -122,7 +121,7 @@ Se selezionato, il tema verrà sovrapposto con un segno di spunta blu opaco.
 
 Dopo la pubblicazione del sito community, è possibile [modificare le proprietà](#modifyinggroupproperties) e selezionare un tema diverso.
 
-### MARCHIO DEL GRUPPO COMMUNITY {#community-group-branding}
+### MARCHIO DEL GRUPPO COMUNITARIO {#community-group-branding}
 
 ![marchio di gruppo](assets/community-group-branding.png)
 
@@ -205,7 +204,7 @@ Al termine del processo, la scheda per il nuovo sito della sottocomunità (grupp
 >
 >Il gruppo viene creato in tutte le lingue, come specificato in [Passaggio 1: Modello per gruppo community](/help/communities/groups.md#step-community-group-template) in Lingue disponibili supplementari per gruppi community, nella console Gruppi community dei rispettivi siti community.
 
-## Contenuto del gruppo di autori {#author-group-content}
+## Contenuto gruppo autore {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
@@ -287,7 +286,7 @@ Il pannello [MEMBERSHIP](#membership) è solo informativo. Non è possibile modi
 
 Il pannello [THUMBNAIL](#thumbnail) consente di caricare un’immagine per rappresentare il gruppo di community per i visitatori del sito nell’ambiente di pubblicazione e nella console Gruppi del sito di Communities nell’ambiente di authoring.
 
-## Pubblica il gruppo {#publish-the-group}
+## Pubblicare il gruppo {#publish-the-group}
 
 ![sito di pubblicazione](assets/publish-site.png)
 
