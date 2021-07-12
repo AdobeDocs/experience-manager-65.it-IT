@@ -10,12 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 4%
+source-wordcount: '542'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +33,7 @@ Nel momento in cui viene intrapresa un&#39;azione per creare un nuovo gruppo com
 >
 >Le console per la creazione di [siti della community](/help/communities/sites-console.md), [modelli di sito della community](/help/communities/sites.md), [modelli di gruppo della community](/help/communities/tools-groups.md) e [funzioni della community](/help/communities/functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
-## Console dei modelli di gruppo {#group-templates-console}
+## Console Modelli di gruppo {#group-templates-console}
 
 Per raggiungere la console dei modelli di gruppi nell’ambiente di authoring di AEM:
 
@@ -96,7 +95,7 @@ Continua a trascinare e rilasciare tutte le altre funzioni della community desid
 
 Una volta che tutte le funzioni desiderate sono state rilasciate nell&#39;area del generatore di modelli e configurate, seleziona **Salva** nell&#39;angolo in alto a destra.
 
-##  Modifica modello gruppo{#edit-group-template}
+##  Modifica modello gruppo {#edit-group-template}
 
 Quando visualizzi i gruppi della community nella console principale [Modelli di gruppo](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
 
