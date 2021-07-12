@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
-
 
 # Configurazione e-mail {#configuring-email}
 
@@ -33,7 +32,7 @@ Per impostazione predefinita, la funzione e-mail non funziona in quanto richiede
 >
 >Le e-mail per le notifiche e le sottoscrizioni devono essere configurate solo sull&#39; [editore principale](deploy-communities.md#primary-publisher).
 
-## Configurazione predefinita servizio di posta elettronica {#default-mail-service-configuration}
+## Configurazione predefinita servizio di posta {#default-mail-service-configuration}
 
 Il servizio di posta predefinito è necessario sia per le notifiche che per le sottoscrizioni.
 
@@ -165,7 +164,7 @@ Per gli abbonamenti a Communities, è possibile abilitare o disabilitare la capa
 
    Il messaggio e-mail viene creato mediante il modello presente in questo percorso directory principale. Il valore predefinito è `/etc/community/templates/subscriptions-email`.
 
-## Configura Importazione polling {#configure-polling-importer}
+## Configura importazione polling {#configure-polling-importer}
 
 Affinché l’e-mail possa essere inserita nell’archivio, è necessario configurare manualmente un importatore di polling e le relative proprietà nell’archivio.
 
@@ -223,4 +222,3 @@ Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 I triangoli rossi indicano le proprietà modificate. Assicurati di salvare le modifiche:
 
 * Selezionare **[!UICONTROL Salva tutto]**.
-
