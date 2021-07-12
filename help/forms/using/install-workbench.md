@@ -4,15 +4,14 @@ seo-title: Installare workbench
 description: Installa workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
-
 
 # Installa Workbench {#install-workbench}
 
@@ -54,9 +53,9 @@ Le risorse presenti in questa tabella sono utili per ulteriori informazioni e pe
 >
 >L’area di lavoro Flex è obsoleta per AEM Forms. È disponibile per la versione AEM Forms.
 
-## Prima di installare {#before-you-install}
+## Prima dell’installazione {#before-you-install}
 
-### Panoramica sull&#39;installazione di Workbench {#workbench-installation-overview}
+### Panoramica sull’installazione di Workbench {#workbench-installation-overview}
 
 Workbench è un ambiente di sviluppo integrato (IDE) utilizzato dagli sviluppatori e dagli autori di moduli per creare processi e moduli aziendali automatizzati. Viene inoltre utilizzato per gestire le risorse e i servizi utilizzati dai processi e dai moduli.
 
@@ -74,7 +73,7 @@ La figura seguente illustra l’installazione di Workbench, che include:
 
 Questa sezione descrive i requisiti hardware e software e le piattaforme supportate.
 
-### Requisiti minimi hardware e software {#minimum-hardware-software-requirements}
+### Requisiti minimi di hardware e software {#minimum-hardware-software-requirements}
 
 ****
 WorkbenchI seguenti requisiti sono raccomandati come minimo: Spazio su disco per l&#39;installazione:
@@ -101,7 +100,7 @@ WorkbenchI seguenti requisiti sono raccomandati come minimo: Spazio su disco per
 
 Vedi l&#39;elenco completo delle piattaforme supportate per Workbench su [Piattaforme supportate da AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
-## Considerazioni sull&#39;installazione di Designer {#designer-installation-considerations}
+## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
 Per impostazione predefinita, l’installazione di Workbench include una versione di Designer in lingua inglese corrispondente. Se l&#39;applicazione di installazione di Workbench rileva una versione esistente di Designer sul computer in uso, l&#39;installazione potrebbe terminare e sarà necessario rimuovere la versione corrente di Designer prima di continuare.
 Nella tabella seguente è riportato un elenco completo dei possibili scenari di installazione di Designer che è possibile incontrare, nonché delle azioni da intraprendere durante l’installazione di Workbench.
@@ -126,7 +125,7 @@ Sullo stesso sistema possono coesistere diverse versioni di Designer, ad esempio
  </tbody>
 </table>
 
-### Disinstallazione di Designer (autonoma) su Windows 10 {#uninstall-designer-standalone-windows10}
+### Disinstallazione di Designer (autonomo) su Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Vai a **Pannello di controllo Campaign > Programmi > Programmi e funzionalità**
 1. Nell&#39;elenco Programmi attualmente installati, selezionare **Progettazione Adobi**.
@@ -274,4 +273,3 @@ Prima che l&#39;amministratore della stampante di rete utilizzi XDC Editor, ripo
 **Per ottenere la Guida** di XDC Editor:
 1. Vai al sito web della documentazione di AEM Forms.
 1. Fai clic sulla scheda **Sviluppa** e passa a Creazione di profili dispositivo tramite XDC Editor. Scarica il file xdc_editor_help_web.zip e installa i file della Guida seguendo le istruzioni fornite nel file Leggimi.
-
