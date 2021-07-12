@@ -6,15 +6,14 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
-
 
 # Flussi di lavoro JEE Forms | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
 
@@ -28,7 +27,7 @@ I flussi di lavoro JEE di AEM Forms forniscono strumenti per la progettazione, l
 
 Per ulteriori informazioni sulla creazione del processo del flusso di lavoro JEE per AEM Forms, consulta la [Guida di Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
-## Memorizzazione di dati e dati utente {#user-data-and-data-stores}
+## Archiviazione dati e dati utente {#user-data-and-data-stores}
 
 Quando un processo viene attivato e procede, acquisisce i dati relativi ai partecipanti al processo, i dati immessi dai partecipanti al modulo associato al processo e gli allegati aggiunti al modulo. I dati vengono memorizzati nel database del server JEE di AEM Forms e, se configurati, alcuni dati come gli allegati vengono memorizzati nella directory Global Document Storage (GDS). La directory GDS può essere configurata su un file system condiviso o su un database.
 
@@ -42,7 +41,7 @@ Tuttavia, non è possibile identificare l&#39;ID dell&#39;istanza di processo pe
 * **Processo avviato dall&#39;istanza** di pubblicazione AEM: Tutte le istanze di processo attivate da AEM&#39;istanza di pubblicazione non acquisiscono informazioni sull&#39;iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
 * **Processo avviato tramite e-mail**: L’ID e-mail del mittente viene acquisito come proprietà in una colonna BLOB opaca della tabella del  `tb_job_instance` database, che non può essere interrogata direttamente.
 
-### Identifica gli ID delle istanze del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
+### Identificare gli ID delle istanze del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
 
 Esegui i seguenti passaggi per identificare gli ID delle istanze del processo per un iniziatore di flusso di lavoro o un partecipante:
 
@@ -79,7 +78,7 @@ Esegui i seguenti passaggi per identificare gli ID delle istanze del processo pe
 
 1. Segui le istruzioni riportate nella sezione [Eliminare i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) per eliminare i dati utente per gli ID delle istanze del processo identificati.
 
-### Identifica gli ID delle istanze del processo quando i dati utente vengono memorizzati in variabili primitive {#primitive}
+### Identificare gli ID delle istanze del processo quando i dati utente vengono memorizzati in variabili primitive {#primitive}
 
 Un flusso di lavoro può essere progettato in modo tale che i dati utente vengano acquisiti in una variabile che viene memorizzata come BLOB nel database. In questi casi, puoi eseguire query sui dati utente solo se sono memorizzati in una delle seguenti variabili di tipo primitivo:
 
@@ -197,4 +196,3 @@ Una volta ottenuti gli ID attività, procedi come segue per eliminare i file e i
    delete from tb_assignment where task_id=<task_id>
    delete from tb_task where id=<task_id>
    ```
-
