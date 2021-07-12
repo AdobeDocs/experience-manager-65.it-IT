@@ -10,15 +10,14 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 49%
+source-wordcount: '213'
+ht-degree: 48%
 
 ---
-
 
 # Installazione e configurazione di Designer{#installing-and-configuring-designer}
 
@@ -26,7 +25,7 @@ ht-degree: 49%
 
 Il programma di installazione di AEM Forms Designer richiede la versione a 32 bit di [pacchetto runtime ridistribuibile di Visual C++ 2012](https://support.microsoft.com/it-it/help/2977003/the-latest-supported-visual-c-downloads) e [pacchetto runtime ridistribuibile di Visual C++ 2013](https://support.microsoft.com/it-it/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assicurati che tali Redistributable Runtime Package siano installati prima di avviare l’installazione.
 
-## Installa Designer {#install-designer}
+## Installare Designer {#install-designer}
 
 Designer è disponibile come programma di installazione autonomo ed è fornito in bundle con WorkBench. Se si utilizza un programma di installazione autonomo per Designer, effettuare le seguenti operazioni:
 
