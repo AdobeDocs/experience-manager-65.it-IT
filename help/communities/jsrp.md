@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
-
 
 # JSRP - Provider risorsa di archiviazione JCR {#jsrp-jcr-storage-resource-provider}
 
@@ -78,7 +77,7 @@ Su tutte le istanze di authoring e pubblicazione AEM, rivedi la console di confi
    * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), significa che il provider di archiviazione è JSRP.
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire JSRP come provider predefinito.
 
-### UGC non visibile sull&#39;istanza di authoring {#ugc-not-visible-on-author-instance}
+### UGC non visibile nell’istanza di authoring {#ugc-not-visible-on-author-instance}
 
 Questo non è un bug. Una caratteristica di JSRP è che il contenuto della community inserito nell’ambiente di pubblicazione sarà visibile solo nell’ambiente di pubblicazione.
 
