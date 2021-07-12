@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
-
 
 # Servizio di gestione utenti e UGC in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
@@ -40,7 +39,7 @@ Per utilizzare queste API, devi abilitare l’endpoint `/services/social/ugcmana
 
 Queste API consentono di eseguire le seguenti funzioni.
 
-## Recupera l&#39;UGC di un utente {#retrieve-the-ugc-of-a-user}
+## Recuperare l’UGC di un utente {#retrieve-the-ugc-of-a-user}
 
 **getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)** aiuta a esportare tutti gli UGC di un utente dal sistema.
 
@@ -51,7 +50,7 @@ Ad esempio, per esportare l’UGC di un utente chiamato Weston McCall, che utili
 
 `https://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## Eliminare l&#39;UGC di un utente {#delete-the-ugc-of-a-user}
+## Eliminare l’UGC di un utente {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc(ResourceResolver resourceResolver, String user)** aiuta a eliminare dal sistema tutti gli UGC per un utente.
 
@@ -62,7 +61,7 @@ Ad esempio, per eliminare l’UGC di un utente con ID autorizzabile weston.mccal
 * user = `weston.mccall@dodgit.com`
 * operation = `deleteUgc`
 
-### Elimina UGC da Adobe Analytics {#delete-ugc-from-adobe-analytics}
+### Eliminare UGC da Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
 Per eliminare i dati utente da Adobe Analytics, segui il [flusso di lavoro di Analytics RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html); poiché l’API non elimina i dati utente da Adobe Analytics.
 
