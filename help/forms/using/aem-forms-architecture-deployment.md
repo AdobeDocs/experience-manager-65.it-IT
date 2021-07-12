@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2490'
 ht-degree: 0%
 
 ---
-
 
 # Architettura e topologie di implementazione per AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
@@ -92,7 +91,7 @@ Un’istanza di elaborazione è configurata per l’esecuzione in modalità di e
 
 Le topologie AEM Forms on JEE consigliate di seguito sono principalmente per i clienti che eseguono l’aggiornamento dal LiveCycle o da una versione precedente di AEM Forms su JEE. Adobe consiglia di utilizzare AEM Forms su OSGi per nuove installazioni. Una nuova installazione di AEM Forms su JEE è consigliata solo per l’utilizzo delle funzionalità di Document Security e Process Management.
 
-### Topologia per l’utilizzo delle funzionalità di document services o document security {#topology-for-using-document-services-or-document-security-capabilities}
+### Topologia per l’utilizzo di document services o funzionalità di protezione dei documenti {#topology-for-using-document-services-or-document-security-capabilities}
 
 I clienti AEM Forms che intendono utilizzare solo le funzionalità di document services o document security possono disporre di una topologia simile a quella riportata di seguito. Questa topologia consiglia di utilizzare una singola istanza di AEM Forms. Se necessario, puoi anche creare un cluster o una farm di server AEM Forms. Questa topologia è consigliata quando la maggior parte degli utenti dispone di funzionalità di accesso programmatico del server AEM Forms e l’intervento tramite l’interfaccia utente è minimo. La topologia è utile nelle operazioni di elaborazione batch di document services. Ad esempio, utilizzando il servizio di output è possibile creare centinaia di documenti PDF non modificabili su base giornaliera.
 
@@ -100,7 +99,7 @@ AEM Forms consente tuttavia di configurare ed eseguire tutte le funzionalità da
 
 ![funzioni di base](assets/basic-features.png)
 
-### Topologia per l&#39;utilizzo della gestione dei processi AEM Forms {#topology-for-using-aem-forms-process-management}
+### Topologia per l’utilizzo della gestione dei processi di AEM Forms {#topology-for-using-aem-forms-process-management}
 
 I clienti di AEM Forms che intendono utilizzare le funzioni di gestione dei processi di AEM Forms, ad esempio, HTML Workspace possono avere una topologia simile a quella mostrata di seguito. Il server AEM Forms su JEE può trovarsi in una singola configurazione server o cluster.
 
@@ -123,11 +122,11 @@ Puoi apportare le seguenti modifiche/personalizzazioni alla topologia suggerita 
 * L&#39;utilizzo dell&#39;area di lavoro HTML e dell&#39;app AEM Forms richiede un&#39;istanza di authoring o di elaborazione AEM. È possibile utilizzare l’istanza di authoring AEM integrata in AEM Forms sul server JEE invece di configurare un server di authoring AEM esterno aggiuntivo.
 * Un’istanza di authoring o elaborazione AEM è necessaria solo per i flussi di lavoro Forms incentrati su OSGi, moduli adattivi, portale moduli e comunicazione interattiva.
 * l&#39;interfaccia utente dell&#39;agente di comunicazione interattivo viene generalmente eseguita all&#39;interno dell&#39;organizzazione. È quindi possibile mantenere un server di pubblicazione per l&#39;interfaccia utente dell&#39;agente all&#39;interno della rete privata.
-* I moduli AEM sull’istanza OSGi incorporati in AEM Forms sul server JEE possono inoltre eseguire flussi di lavoro Forms incentrati su OSGi e cartelle controllate.
+* I moduli AEM sull’istanza OSGi incorporati in AEM Forms sul server JEE possono inoltre eseguire flussi di lavoro Forms-centric su OSGi e cartelle controllate.
 
-## Topologie fisiche di esempio per l&#39;utilizzo di AEM Forms su OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
+## Topologie fisiche di esempio per l’utilizzo di AEM Forms su OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
-### Topologia per l&#39;acquisizione dei dati, la comunicazione interattiva, Flusso di lavoro incentrato sui moduli sulle funzionalità OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
+### Topologia per l&#39;acquisizione dei dati, comunicazione interattiva, Flusso di lavoro incentrato sui moduli sulle funzionalità OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
 I clienti AEM Forms che intendono utilizzare le funzionalità di acquisizione dati di AEM Forms, ad esempio moduli adattivi, Forms HTML5, PDF forms, possono avere una topologia simile a quella mostrata di seguito. Questa topologia è consigliata anche per l’utilizzo delle comunicazioni interattive e dei flussi di lavoro Forms-Centric su OSGi, ad esempio, per l’utilizzo AEM Posta in arrivo e AEM Forms App per i flussi di lavoro dei processi aziendali.
 
@@ -139,11 +138,10 @@ I clienti AEM Forms che pianificano l’utilizzo di Cartelle controllate per l�
 
 ![offline-batch-processing-via-guardata-folder](assets/offline-batch-processing-via-watched-folders.png)
 
-### Topologia per l’utilizzo delle funzionalità di document services per l’elaborazione basata su API offline {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
+### Topologia per l’utilizzo delle funzionalità di document services per l’elaborazione offline basata su API {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
 I clienti AEM Forms che intendono utilizzare solo la funzionalità document services possono disporre di una topologia simile a quella riportata di seguito. Questa topologia consiglia di utilizzare un cluster di AEM Forms sui server OSGi. Questa topologia è consigliata quando la maggior parte degli utenti dispone di funzionalità di accesso programmatiche (utilizzando API) del server AEM Forms e l’intervento tramite l’interfaccia utente è minimo. La topologia è abbastanza utile in scenari client software multipli. Ad esempio, più client che utilizzano il servizio PDF Generator per creare documenti PDF su richiesta.
 
 Sebbene AEM Forms ti consenta di configurare ed eseguire tutte le funzionalità da un singolo server, devi eseguire la pianificazione della capacità, il bilanciamento del carico e configurare server dedicati per funzionalità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e più moduli adattivi per l’acquisizione dei dati, impostare server AEM Forms separati per il servizio PDF Generator e le funzionalità dei moduli adattivi. Consente di fornire prestazioni ottimali e di scalare i server in modo indipendente l&#39;uno dall&#39;altro.
 
 ![elaborazione basata su api offline](assets/offline-api-based-processing.png)
-
