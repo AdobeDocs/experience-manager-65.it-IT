@@ -7,15 +7,14 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 1%
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
-
 
 # Portale Forms | Gestione dei dati utente {#forms-portal-handling-user-data}
 
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 Quando un utente connesso salva un modulo adattivo come bozza o lo invia, viene visualizzato nelle schede Bozze e Invii nel portale dei moduli. I dati per le bozze o i moduli inviati vengono memorizzati nell’archivio dati configurato per la distribuzione AEM. Le bozze e le comunicazioni degli utenti anonimi non vengono visualizzate nella pagina del portale dei moduli; tuttavia, i dati vengono memorizzati nell’archivio dati configurato. Per ulteriori informazioni, consulta [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
-## Memorizzazione di dati e dati utente {#user-data-and-data-stores}
+## Archiviazione dati e dati utente {#user-data-and-data-stores}
 
 Il portale Forms memorizza i dati per la bozza e i moduli inviati nei seguenti scenari:
 
@@ -67,7 +66,7 @@ A seconda della persistenza dell’archivio dati configurato, le bozze e i dati 
 
 È possibile accedere ai dati dei moduli bozza e inviati per gli utenti registrati e anonimi negli archivi dati configurati e, se necessario, eliminarli.
 
-### AEM istanze {#aem-instances}
+### Istanze AEM {#aem-instances}
 
 Tutte le bozze e i dati dei moduli inviati nelle istanze AEM (autore, pubblicazione o remoto) per gli utenti registrati e anonimi sono memorizzati nel nodo `/content/forms/fp/` dell’archivio AEM applicabile. Ogni volta che un utente connesso o anonimo salva una bozza o invia un modulo, viene generato un `draft ID` o `submission ID`, un `user data ID` e viene generato un `ID` casuale per ciascun allegato (se applicabile), associato alla relativa bozza o invio.
 
@@ -93,7 +92,7 @@ La tabella seguente spiega come i dati per tutte le bozze di `srose` vengono mem
 | `/content/forms/fp/srose/drafts/data/` | Organizza i dati dei moduli per l’utente in base all’ID dei dati utente |
 | `/content/forms/fp/srose/drafts/data/<user data ID>` | Contiene i dati del modulo per l’ID dati utente selezionato in formato binario |
 
-#### Elimina i dati utente {#delete-user-data}
+#### Eliminare i dati utente {#delete-user-data}
 
 Per eliminare completamente i dati utente dalle bozze e dagli invii di un utente connesso dai sistemi AEM, devi eliminare completamente il nodo `user ID` per un utente specifico dal nodo autore. È necessario eliminare manualmente i dati da tutte le istanze AEM applicabili.
 
@@ -115,11 +114,10 @@ Per accedere alle bozze e ai dati di invio di utenti registrati e anonimi nelle 
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
 ```
 
-#### Elimina i dati utente {#delete-user-data-1}
+#### Eliminare i dati utente {#delete-user-data-1}
 
 Per eliminare le bozze e i dati di invio per un utente connesso dalle tabelle del database, eseguire il seguente comando di database. Nella query, sostituisci `logged-in user` con l’ID utente di cui desideri eliminare i dati o con `anonymous` per gli utenti anonimi. Tieni presente che per eliminare dal database i dati di un utente anonimo specifico, devi trovarli utilizzando alcune informazioni identificabili ed eliminarli dalle tabelle del database contenenti le informazioni.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
 ```
-
