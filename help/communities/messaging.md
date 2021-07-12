@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
 
-
-# Configurare i messaggi {#configure-messaging}
+# Configurare la messaggistica {#configure-messaging}
 
 ## Panoramica {#overview}
 
@@ -38,7 +37,7 @@ La configurazione [AEM Communities Messaging Operations Service](https://localho
 
 Per i siti della community creati utilizzando `Communities Sites console`, esiste già un’istanza del servizio, con la casella in entrata impostata su `/mail/inbox`.
 
-### Servizio per le operazioni di messaggistica community {#community-messaging-operations-service}
+### Servizio per le operazioni di messaggistica comunitaria {#community-messaging-operations-service}
 
 Come mostrato di seguito, esiste una configurazione del servizio per i siti creati con la [creazione guidata sito](/help/communities/sites-console.md). Per visualizzare o modificare la configurazione, seleziona l’icona a forma di matita accanto alla configurazione.
 
