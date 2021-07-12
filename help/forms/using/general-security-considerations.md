@@ -9,15 +9,14 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
-
 
 # Considerazioni generali sulla sicurezza per AEM Forms su JEE{#general-security-considerations-for-aem-forms-on-jee}
 
@@ -112,7 +111,7 @@ Per informazioni sulla sicurezza dei server applicazioni supportati da AEM Forms
  </tbody>
 </table>
 
-### Informazioni sulla sicurezza del database {#database-security-information}
+### Informazioni sulla protezione del database {#database-security-information}
 
 Durante la protezione del database, è consigliabile implementare le misure descritte dal fornitore del database, tra cui:
 
@@ -232,7 +231,7 @@ Questa sezione descrive alcuni problemi di sicurezza specifici di JEE che dovres
 
 Le credenziali e-mail archiviate dalle applicazioni non vengono crittografate prima di essere memorizzate nel database AEM Forms su JEE. Quando si configura un endpoint di servizio per l&#39;utilizzo dell&#39;e-mail, tutte le informazioni sulla password utilizzate come parte della configurazione dell&#39;endpoint non vengono crittografate quando vengono memorizzate nel database.
 
-### Contenuto sensibile al Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
+### Contenuto sensibile per Rights Management nel database {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms su JEE utilizza il database AEM Forms su JEE per memorizzare informazioni sensibili sulle chiavi dei documenti e altro materiale di crittografia utilizzato per i documenti di policy. Proteggere il database dall&#39;intrusione aiuta a proteggere queste informazioni sensibili.
 
@@ -248,6 +247,6 @@ Il file lc_[database].xml non deve contenere password in formato testo libero. C
 
 Per impostazione predefinita, IBM WebSphere Application Server e Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, conferma con la documentazione del server dell&#39;applicazione per assicurarti che ciò si verifichi.
 
-### Protezione della chiave privata archiviata nell&#39;archivio attendibilità {#protecting-the-private-key-stored-in-trust-store}
+### Protezione della chiave privata archiviata nell&#39;archivio fonti attendibili {#protecting-the-private-key-stored-in-trust-store}
 
 Le chiavi private o le credenziali importate in Trust Store sono memorizzate in AEM Forms nel database JEE. Prendere le dovute precauzioni per proteggere il database e limitare l&#39;accesso solo agli amministratori designati.
