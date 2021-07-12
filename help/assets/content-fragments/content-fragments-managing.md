@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Frammenti di contenuto
+role: User, Admin
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
-
 
 # Gestione dei frammenti di contenuto{#managing-content-fragments}
 
@@ -124,7 +123,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 >
 >Molte di queste sono azioni [standard per Assets](/help/assets/manage-assets.md) e/o l’ [AEM app desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
-## Apertura dell’editor frammenti {#opening-the-fragment-editor}
+## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
 Per aprire il frammento per la modifica:
 
@@ -303,7 +302,7 @@ Vengono visualizzati uno accanto all’altro, dove:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Ripristino di una versione {#reverting-to-a-version}
+## Ripristino di una versione  {#reverting-to-a-version}
 
 È possibile ripristinare una versione specifica del frammento:
 
@@ -347,4 +346,3 @@ Per eliminare un frammento:
    >[!CAUTION]
    >
    >Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
-
