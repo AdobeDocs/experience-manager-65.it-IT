@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 2%
 
 ---
 
-
-# Configurazione solare per SRP {#solr-configuration-for-srp}
+# Configurazione Solr per SRP {#solr-configuration-for-srp}
 
 ## Solr per piattaforma AEM {#solr-for-aem-platform}
 
@@ -81,7 +80,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 -solrhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. Crea una raccolta {#create-a-collection}
+#### 2. Creare una raccolta {#create-a-collection}
 
 Riferimento:
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
@@ -95,7 +94,7 @@ Utilizzo:
 -s *numero di frammenti* \
 -rf *numero di repliche*
 
-#### 3. Collega una raccolta a un set di configurazione {#link-a-collection-to-a-configuration-set}
+#### 3. Collegare una raccolta a un set di configurazione {#link-a-collection-to-a-configuration-set}
 
 Collega una raccolta a una configurazione già caricata su ZooKeeper.
 
