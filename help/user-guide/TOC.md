@@ -5,9 +5,8 @@ audience: end-user
 user-guide-title: Guida utente di AEM 6.5
 user-guide-description: Panoramica di tutte le risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5
 feature: Informazioni sulla versione
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 9%
