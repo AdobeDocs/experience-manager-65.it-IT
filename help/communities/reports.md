@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 7%
 
 ---
-
 
 # Console Rapporti {#reports-console}
 
@@ -181,9 +180,9 @@ Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non sono elencati siti della community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
+Se non è presente alcun sito community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
 
-### I rapporti non vengono visualizzati nell’istanza di authoring di AEM {#reports-do-not-show-in-aem-author-instance}
+### I rapporti non vengono visualizzati nell’istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
 
 Se i rapporti non vengono visualizzati nell’istanza di authoring di AEM, controlla le personalizzazioni, ad esempio la mappatura degli URL sull’istanza di pubblicazione. Se la mappatura URL viene eseguita solo sull&#39;istanza di pubblicazione AEM del sito Communities, assicurati che lo stesso sia stato configurato nell&#39;istanza di authoring AEM nella configurazione **Site Trend Report Social Component Factory** .
 
