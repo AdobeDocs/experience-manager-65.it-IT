@@ -8,9 +8,9 @@ topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 
    * libicu
 
-## Installa il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
+## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene l’acquisizione di dati AEM Forms e altre funzionalità. Esegui i seguenti passaggi per installare il pacchetto aggiuntivo:
 
@@ -124,7 +124,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
 1. Una volta installato il pacchetto, viene richiesto di riavviare l&#39;istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` file e il registro sia stabile.
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
-### Installazione automatica dei componenti ridistribuibili di Visual Studio {#automatic-installation-visual-studio-redistributables}
+### Installazione automatica dei componenti ridistribuibili di Visual Studio (solo Windows) {#automatic-installation-visual-studio-redistributables}
 
 Se si installa un&#39;istanza AEM in modalità elevata, i ridistribuibili di Visual Studio mancanti vengono installati automaticamente durante l&#39;installazione del pacchetto aggiuntivo AEM Forms.
 
@@ -148,7 +148,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e facoltative. Le config
 
 ### Configurazioni obbligatorie post-installazione {#mandatory-post-installation-configurations}
 
-#### Configurare le librerie RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la delega delle librerie:
 
@@ -166,7 +166,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per avviare la d
 1. Salva e chiudi il file e avvia l’istanza AEM.
 1. Ripeti i passaggi 1-4 su tutte le istanze Author e Publish.
 
-#### Configura l&#39;agente di serializzazione {#configure-the-serialization-agent}
+#### Configura l’agente di serializzazione {#configure-the-serialization-agent}
 
 Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere il pacchetto all’inserire nell&#39;elenco Consentiti:
 
@@ -177,7 +177,7 @@ Esegui i seguenti passaggi su tutte le istanze Author e Publish per aggiungere i
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 
-#### Configurare il Dispatcher {#configure-dispatcher}
+#### Configurare Dispatcher {#configure-dispatcher}
 
 Dispatcher è uno strumento di caching e/o bilanciamento del carico Adobe Experience Manager che può essere utilizzato insieme a un server web di classe enterprise. Se utilizzi [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), esegui le seguenti configurazioni per AEM Forms:
 
@@ -193,7 +193,7 @@ Dispatcher è uno strumento di caching e/o bilanciamento del carico Adobe Experi
 
    Accedi al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **Configurazioni**, seleziona l&#39;opzione **Filtro di riferimento Apache Sling** . Nel campo Consenti host , immetti il nome host del dispatcher per consentirlo come referrer e fai clic su **Salva**. Il formato della voce è `https://[server]:[port]`.
 
-#### Configura la cache {#configure-cache}
+#### Configura cache {#configure-cache}
 
 La memorizzazione in cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo.
 
@@ -209,7 +209,7 @@ Esegui i seguenti passaggi per configurare la cache dei moduli adattivi:
    >
    >Per disabilitare la cache, imposta il valore nel campo Numero di Forms adattivo su **0**. La cache viene reimpostata e tutti i moduli e i documenti vengono rimossi dalla cache quando si disabilita o si modifica la configurazione della cache.
 
-#### Configurare la comunicazione SSL per il modello dati modulo {#configure-ssl-communcation-for-form-data-model}
+#### Configurare la comunicazione SSL per il modello dati del modulo {#configure-ssl-communcation-for-form-data-model}
 
 È possibile abilitare la comunicazione SSL per il modello dati modulo. Per abilitare la comunicazione SSL per il modello dati modulo, prima di avviare un’istanza AEM Forms, aggiungi i certificati a Java Trust Store di tutte le istanze. Puoi eseguire il comando seguente per aggiungere i certificati: &quot;
 
