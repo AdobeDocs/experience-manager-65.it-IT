@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Non è previsto che il file venga modificato.
 
 Se il file delle parole chiave è mancante, il motore di punteggio avanzato genererà un errore.
 
-## Regole di contrassegno avanzate {#advanced-badging-rules}
+## Regole di accesso avanzate {#advanced-badging-rules}
 
 Le proprietà avanzate della regola di badging sono diverse dalle proprietà [base della regola di badging](/help/communities/implementing-scoring.md#badging-rules).
 
@@ -178,7 +178,7 @@ Consulta le informazioni di base per:
 * [Abilitazione del contrassegno per un componente](/help/communities/implementing-scoring.md#enableforcomponent)
 * [Applicazione delle regole](/help/communities/implementing-scoring.md#applytopage)
 
-### Regole di punteggio e sottorete incluse {#included-scoring-rules-and-sub-rules}
+### Regole di valutazione e sottoregole incluse {#included-scoring-rules-and-sub-rules}
 
 Nella versione beta sono incluse due regole di punteggio avanzate per la [funzione forum](/help/communities/functions.md#forum-function) (una per ogni componente forum e commenti della funzione forum):
 
