@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
 
-
 # Collegamento di AEM Forms con il LiveCycle Adobe {#connecting-aem-forms-with-adobe-livecycle}
 
-Il connettore di LiveCycle Adobe Experience Manager (AEM) consente di invocare senza soluzione di continuità i Document Services di Adobe ES4 da applicazioni e flussi di lavoro AEM Web. LiveCycle fornisce un SDK client avanzato, che consente alle applicazioni client di avviare i servizi di LiveCycle utilizzando le API Java. AEM connettore di LiveCycle semplifica l’utilizzo di queste API all’interno dell’ambiente OSGi.
+Il connettore di LiveCycle Adobe Experience Manager (AEM) consente di invocare facilmente i servizi documentali Adobe ES4 da applicazioni e flussi di lavoro AEM Web. LiveCycle fornisce un SDK client avanzato, che consente alle applicazioni client di avviare i servizi di LiveCycle utilizzando le API Java. AEM connettore di LiveCycle semplifica l’utilizzo di queste API all’interno dell’ambiente OSGi.
 
-## Connessione AEM server al LiveCycle di Adobe {#connecting-aem-server-to-adobe-livecycle}
+## Collegamento AEM server al LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
 AEM connettore LiveCycle fa parte del [pacchetto aggiuntivo di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto aggiuntivo di AEM Forms, esegui i seguenti passaggi per aggiungere i dettagli del server di LiveCycle a AEM console Web.
 
@@ -214,7 +213,7 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## Elenco servizi documenti {#document-services-list}
+## Elenco servizi documentali {#document-services-list}
 
 ### Bundle API SDK client di Adobe LiveCycle {#adobe-livecycle-client-sdk-api-bundle}
 
@@ -258,7 +257,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle Pacchetto client TaskManager {#adobe-livecycle-taskmanager-client-bundle}
+### Adobe LiveCycle pacchetto client TaskManager {#adobe-livecycle-taskmanager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -279,7 +278,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe Bundle client di LiveCycle Workflow {#adobe-livecycle-workflow-client-bundle}
+### Bundle client di Adobe LiveCycle Workflow {#adobe-livecycle-workflow-client-bundle}
 
 È disponibile il seguente servizio:
 
@@ -311,7 +310,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle Pacchetto client di Application Manager {#adobe-livecycle-application-manager-client-bundle}
+### Bundle client di Adobe LiveCycle Application Manager {#adobe-livecycle-application-manager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -345,7 +344,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle del bundle client di integrazione dei dati dei moduli {#adobe-livecycle-form-data-integration-client-bundle}
+### Bundle client di integrazione dei dati del modulo di LiveCycle di Adobe {#adobe-livecycle-form-data-integration-client-bundle}
 
 È disponibile il seguente servizio:
 
@@ -409,7 +408,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Bundle client di Adobe LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
+### Bundle client Adobe LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -431,7 +430,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle Firme Bundle client {#adobe-livecycle-signatures-client-bundle}
+### Bundle client di Adobe LiveCycle Signatures {#adobe-livecycle-signatures-client-bundle}
 
 È disponibile il seguente servizio:
 
@@ -447,7 +446,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle Truststore Client bundle {#adobe-livecycle-truststore-client-bundle}
+### Bundle client di Adobe LiveCycle Truststore {#adobe-livecycle-truststore-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
@@ -466,7 +465,7 @@ Sono disponibili i seguenti servizi:
 </dependency>
 ```
 
-### Adobe LiveCycle Repository Client bundle {#adobe-livecycle-repository-client-bundle}
+### Bundle client dell’archivio dei LiveCycli Adobe {#adobe-livecycle-repository-client-bundle}
 
 Sono disponibili i seguenti servizi:
 
