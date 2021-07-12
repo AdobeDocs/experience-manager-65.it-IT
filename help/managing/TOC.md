@@ -6,9 +6,8 @@ user-guide-title: Guida utente alla gestione di AEM 6.5
 breadcrumb-title: Guida alla gestione
 user-guide-description: Scopri come gestire un progetto AEM.
 feature: Distribuzione
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 61%
