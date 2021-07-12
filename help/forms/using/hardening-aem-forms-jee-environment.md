@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '7699'
+source-wordcount: '7696'
 ht-degree: 1%
 
 ---
-
 
 # Hardening del tuo AEM Forms sull&#39;ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
@@ -150,7 +149,7 @@ Questa sezione descrive le tecniche che puoi utilizzare durante il processo di i
  </tbody> 
 </table>
 
-## Passaggi post-installazione {#post-installation-steps}
+## Passaggi successivi all’installazione {#post-installation-steps}
 
 Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente l’ambiente dal punto di vista della sicurezza.
 
@@ -322,7 +321,7 @@ La generazione WSDL (Web Service Definition Language) deve essere abilitata solo
 1. Fai clic su **Impostazioni > Impostazioni sistema di base > Configurazioni**.
 1. Deselezionare **Abilita WSDL** e fare clic su **OK**.
 
-### Sicurezza del server applicazioni {#application-server-security}
+### Protezione del server applicazioni {#application-server-security}
 
 La tabella seguente descrive alcune tecniche per proteggere l&#39;application server dopo l&#39;installazione dell&#39;applicazione AEM Forms on JEE.
 
@@ -344,7 +343,7 @@ La tabella seguente descrive alcune tecniche per proteggere l&#39;application se
   </tr> 
   <tr> 
    <td><p>Esplorazione delle directory</p> </td> 
-   <td><p>Quando un utente richiede una pagina che non esiste o richiede il nome di un regista (la stringa di richiesta termina con una barra (/))), il server applicazioni non deve restituire il contenuto di tale directory. Per evitare questo problema, è possibile disabilitare la navigazione delle directory sul server dell'applicazione. È necessario eseguire questa operazione per l'applicazione della console di amministrazione e per altre applicazioni in esecuzione sul server.</p> <p>Per JBoss, imposta il valore del parametro di inizializzazione degli elenchi della proprietà <code>DefaultServlet</code> su <code>false</code> nel file web.xml, come mostrato in questo esempio:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;elenchi&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Per WebSphere, imposta la proprietà <code>directoryBrowsingEnabled</code> nel file ibm-web-ext.xmi su <code>false</code>.</p> <p>Per WebLogic, imposta le proprietà delle directory degli indici nel file weblogic.xml su <code>false</code>, come mostrato in questo esempio:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>Quando un utente richiede una pagina che non esiste o richiede il nome di un regista (la stringa di richiesta termina con una barra (/))), il server applicazioni non deve restituire il contenuto di tale directory. Per evitare questo problema, è possibile disabilitare la navigazione delle directory sul server dell'applicazione. È necessario eseguire questa operazione per l'applicazione della console di amministrazione e per altre applicazioni in esecuzione sul server.</p> <p>Per JBoss, imposta il valore del parametro di inizializzazione degli elenchi della proprietà <code>DefaultServlet</code> su <code>false</code> nel file web.xml, come mostrato in questo esempio:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;elenchi&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Per WebSphere, imposta la proprietà <code>directoryBrowsingEnabled</code> nel file ibm-web-ext.xmi su <code>false</code>.</p> <p>Per WebLogic, imposta le proprietà delle directory degli indici nel file weblogic.xml su <code>false</code>, come mostrato in questo esempio:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -400,7 +399,7 @@ In WebSphere è possibile configurare la protezione integrata solo quando si uti
 1. Seleziona **Questo account** e fornisci le informazioni necessarie per impostare l&#39;account di accesso che desideri utilizzare.
 1. Impostare la protezione su SQL Server dalla modalità **Mixed** a **Solo autenticazione di Windows**.
 
-### Protezione dell&#39;accesso a contenuti sensibili nel database {#protecting-access-to-sensitive-content-in-the-database}
+### Protezione dell’accesso a contenuti sensibili nel database {#protecting-access-to-sensitive-content-in-the-database}
 
 Lo schema del database AEM Forms contiene informazioni riservate sulla configurazione del sistema e sui processi aziendali e deve essere nascosto dietro il firewall. Il database deve essere considerato all’interno dello stesso limite di attendibilità del server dei moduli. Per evitare la divulgazione di informazioni e il furto di dati aziendali, il database deve essere configurato dall&#39;amministratore del database (DBA) per consentire l&#39;accesso solo agli amministratori autorizzati.
 
@@ -412,11 +411,11 @@ Come precauzione aggiuntiva, è consigliabile utilizzare strumenti specifici del
 
 Per informazioni sugli strumenti specifici del fornitore, vedere [&quot;Informazioni sulla sicurezza del database&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
-### Protezione LDAP {#ldap-security}
+### Sicurezza LDAP {#ldap-security}
 
 Una directory LDAP (Lightweight Directory Access Protocol) viene generalmente utilizzata da AEM Forms su JEE come origine per le informazioni di utenti e gruppi aziendali e come mezzo per eseguire l&#39;autenticazione tramite password. Assicurati che la tua directory LDAP sia configurata per utilizzare Secure Socket Layer (SSL) e che AEM Forms on JEE sia configurato per accedere alla tua directory LDAP utilizzando la sua porta SSL.
 
-#### Rifiuto LDAP del servizio {#ldap-denial-of-service}
+#### Rifiuto del servizio LDAP {#ldap-denial-of-service}
 
 Un attacco comune che utilizza LDAP coinvolge un aggressore che deliberatamente non riesce ad autenticarsi più volte. Questo costringe LDAP Directory Server a bloccare un utente da tutti i servizi relativi a LDAP.
 
@@ -474,7 +473,7 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
 
 Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente la sicurezza dell’ambiente. Questa sezione descrive le attività consigliate per mantenere la sicurezza di AEM Forms sul server di produzione JEE.
 
-### Configurazione di un proxy inverso per l&#39;accesso web {#setting-up-a-reverse-proxy-for-web-access}
+### Configurazione di un proxy inverso per l&#39;accesso al web {#setting-up-a-reverse-proxy-for-web-access}
 
 È possibile utilizzare un *proxy inverso* per garantire che un set di URL per AEM Forms sulle applicazioni web JEE sia disponibile per gli utenti esterni che interni. Questa configurazione è più sicura che consente agli utenti di connettersi direttamente al server applicativo su cui AEM Forms on JEE è in esecuzione. Il proxy inverso esegue tutte le richieste HTTP per l&#39;application server che esegue AEM Forms su JEE. Gli utenti hanno solo accesso di rete al proxy inverso e possono solo tentare connessioni URL supportate dal proxy inverso.
 
@@ -972,7 +971,7 @@ Per configurare il reindirizzamento SSL per WebSphere o WebLogic, consulta la do
 
 1. Apri il file JBOSS_HOME/standalone/configuration/standalone.xml per la modifica.
 
-   Dopo l’elemento &lt;sottosistema xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> , aggiungi i seguenti dettagli:
+   Dopo l&#39;elemento &lt;sottosistema xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> , aggiungi i seguenti dettagli:
 
    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot; />
 
@@ -986,7 +985,7 @@ Per configurare il reindirizzamento SSL per WebSphere o WebLogic, consulta la do
 
    Salvare e chiudere il file standalone.xml.
 
-## Raccomandazioni per la sicurezza specifiche per Windows {#windows-specific-security-recommendations}
+## Raccomandazioni per la protezione specifiche per Windows {#windows-specific-security-recommendations}
 
 Questa sezione contiene consigli di sicurezza specifici per Windows quando viene utilizzato per eseguire AEM Forms su JEE.
 
@@ -994,7 +993,7 @@ Questa sezione contiene consigli di sicurezza specifici per Windows quando viene
 
 L&#39;installazione chiavi in mano di AEM Forms su JEE imposta un account di servizio, per impostazione predefinita, utilizzando l&#39;account di sistema locale. L&#39;account utente del sistema locale integrato dispone di un livello elevato di accessibilità; fa parte del gruppo Administrators. Se l&#39;identità di un processo di lavoro viene eseguita come account utente del sistema locale, tale processo di lavoro dispone dell&#39;accesso completo all&#39;intero sistema.
 
-#### Esegui l&#39;application server utilizzando un account non amministrativo {#run-the-application-server-using-a-non-administrative-account}
+#### Eseguire l&#39;application server utilizzando un account non amministrativo {#run-the-application-server-using-a-non-administrative-account}
 
 1. In Microsoft Management Console (MMC), creare un utente locale per il servizio server dei moduli con cui eseguire l’accesso:
 
