@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
-# Configurazione della pianificazione della sincronizzazione {#configuring-the-synchronization-scheduler}
+# Configurazione dell’utilità di pianificazione della sincronizzazione {#configuring-the-synchronization-scheduler}
 
 Per impostazione predefinita, la pianificazione della sincronizzazione viene eseguita dopo ogni 3 minuti per sincronizzare tutte le risorse modificate e aggiornate nell’archivio tramite LiveCycle Workbench 11. Le applicazioni contenenti moduli e risorse sono visibili nell’interfaccia utente di AEM Forms al termine del processo di sincronizzazione.
 
@@ -51,7 +50,7 @@ Puoi utilizzare l’opzione **Sincronizza risorse da archivio** per sincronizzar
 
    **Figura: finestra di dialogo** *Sincronizzazione*
 
-## Risoluzione dei problemi di errore di sincronizzazione {#troubleshooting-synchronization-error}
+## Errore di sincronizzazione della risoluzione dei problemi {#troubleshooting-synchronization-error}
 
 È possibile creare nuove applicazioni nella finestra di progettazione del flusso di lavoro (Workbench LiveCycle).
 
