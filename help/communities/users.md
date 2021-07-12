@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4237085a-d70d-41de-975d-153f58336daa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 1%
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
-
 
 # Gestione di utenti e gruppi di utenti {#managing-users-and-user-groups}
 
@@ -73,7 +72,7 @@ Le [console Membri e gruppi della community](members.md) sono destinate esclusiv
 
 Per gestire utenti e gruppi di utenti registrati nell&#39;ambiente di authoring, utilizza la [console di sicurezza](../../help/sites-administering/security.md)
 
-### Ruoli gruppo di autori {#author-group-roles}
+### Ruoli gruppo autore {#author-group-roles}
 
 | Se membro del gruppo.. | Ruolo principale |
 |---|---|
@@ -154,7 +153,7 @@ Quando una funzione community non è protetta (nessun gruppo di membri privilegi
 
 ## Creazione di membri della community {#creating-community-members}
 
-### Percorso archivio {#repository-location}
+### Posizione archivio {#repository-location}
 
 Affinché alcune funzioni funzionino correttamente, è necessario creare utenti e gruppi di utenti con i privilegi appropriati.
 
@@ -262,7 +261,7 @@ In questo modo gli utenti vengono automaticamente assegnati al gruppo di membri 
 
 * Il valore `User auto membership` deve essere la proprietà `rep:authorizableId` e non il `givenName` (nome visualizzato) dal profilo.
 
-## Sincronizzazione degli utenti tra istanze AEM {#synchronizing-users-among-aem-instances}
+## Sincronizzazione Degli Utenti Tra Le Istanze AEM {#synchronizing-users-among-aem-instances}
 
 Quando utilizzi una [farm di pubblicazione](topologies.md), assicurati che gli utenti abbiano lo stesso percorso in ogni istanza di pubblicazione importando gli utenti prima in un&#39;istanza e [abilitando la sincronizzazione utente](sync.md) a Sling distribuendo gli utenti alle altre istanze di pubblicazione.
 
@@ -270,7 +269,7 @@ Se si importano gruppi di utenti, per assicurarsi che i gruppi di utenti abbiano
 
 Mentre la sincronizzazione dei gruppi di utenti tramite la sincronizzazione utente verrà inclusa in una versione futura, attualmente solo la *appartenenza* di un gruppo di utenti verrà sincronizzata quando la sincronizzazione utente viene eseguita.
 
-## Informazioni sui gruppi della community {#about-community-groups}
+## Informazioni sui gruppi community {#about-community-groups}
 
 Quando si discute dei gruppi, ci sono due argomenti distinti:
 
