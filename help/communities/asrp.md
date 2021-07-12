@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
-
 
 # ASRP - Provider risorsa di archiviazione Adobe {#asrp-adobe-storage-resource-provider}
 
@@ -80,13 +79,13 @@ La chiave del consumatore e la chiave segreta sono crittografate. Affinché le c
 
 Segui le istruzioni riportate in [Replicare la chiave Crypto](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
-### esternalizzare i collegamenti {#externalize-links}
+### Collegamenti esternalizzati {#externalize-links}
 
 Per i collegamenti corretti alle immagini di profilo e profilo, assicurati di configurare correttamente [Link Externalizer](/help/sites-developing/externalizer.md).
 
 Assicurati di impostare i domini come URL indirizzabili dall’URL del centro dati (endpoint ASRP).
 
-### Sincronizzazione ora {#time-synchronization}
+### Sincronizzazione dei tempi {#time-synchronization}
 
 Affinché l&#39;autenticazione con l&#39;endpoint ASRP abbia successo, i computer che eseguono l&#39;AEM Communities ospitato devono essere sincronizzati in tempo, ad esempio con il [Network Time Protocol (NTP)](https://www.ntp.org/).
 
@@ -139,7 +138,7 @@ L&#39;infrastruttura di archiviazione cloud Adobe utilizza *coerenza finale* per
 
 Mentre l’intervallo che influisce sulla coerenza finale viene monitorato, contatta il rappresentante del tuo account se ci vogliono più di pochi secondi perché il nuovo contenuto venga visualizzato nelle ricerche.
 
-### UGC non visibile in ASRP {#ugc-not-visible-in-asrp}
+### UGC non visibile nell’ASRP {#ugc-not-visible-in-asrp}
 
 Assicurati che l’ASRP sia stato configurato come provider predefinito controllando la configurazione dell’opzione di archiviazione. Per impostazione predefinita, il provider delle risorse di archiviazione è JSRP, non ASRP.
 
@@ -149,4 +148,3 @@ In JCR, se [/conf/global/settings/communities](https://localhost:4502/crx/de/ind
 
 * Non contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), significa che il provider di archiviazione è JSRP.
 * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration), le proprietà della configurazione predefinita definiscono ASRP come provider predefinito.
-
