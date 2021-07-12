@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2979'
 ht-degree: 5%
 
 ---
-
 
 # Console Risorse di abilitazione {#enablement-resources-console}
 
@@ -80,7 +79,7 @@ Nell’ambiente di creazione, per accedere alla console Risorse
 
    ![enablement-sites](assets/enablement-sites.png)
 
-### Seleziona un sito community {#select-a-community-site}
+### Selezionare un sito community {#select-a-community-site}
 
 Nella console Risorse di Communities vengono visualizzati tutti i siti della community.
 
@@ -557,7 +556,7 @@ Per un rapporto utente sul percorso di apprendimento, il riepilogo del rapporto 
 
 È possibile regolare la visualizzazione della tabella selezionando le colonne utilizzando il selettore `Show / hide columns`.
 
-#### Scarica il rapporto come CSV {#download-report-as-csv}
+#### Scarica rapporto come CSV {#download-report-as-csv}
 
 La tabella Riepilogo rapporti può essere scaricata in formato CSV utilizzando un pulsante nella parte superiore della console.
 
