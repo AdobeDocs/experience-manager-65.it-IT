@@ -6,15 +6,14 @@ seo-description: Scopri i consigli e le best practice per proteggere AEM Forms s
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
-
 
 # Hardening e protezione dei moduli AEM in ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
@@ -39,11 +38,11 @@ AEM Forms è altamente personalizzabile e può funzionare in molti ambienti dive
 
 Le vulnerabilità relative alla sicurezza dei livelli di trasporto sono una delle prime minacce per qualsiasi server applicativo rivolto a Internet o Intranet. Questa sezione descrive il processo di indurimento degli host sulla rete rispetto a queste vulnerabilità. Si occupa della segmentazione della rete, dell&#39;indurimento dello stack del protocollo di controllo della trasmissione/protocollo Internet (TCP/IP) e dell&#39;uso di firewall per la protezione dell&#39;host.
 
-### Limitare gli endpoint aperti {#limit-open-endpoints}
+### Limitare gli endpoint aperti  {#limit-open-endpoints}
 
 Un&#39;organizzazione può disporre di un firewall esterno per limitare l&#39;accesso tra un utente finale e AEM Forms Publish Farm. L’organizzazione può inoltre disporre di un firewall interno per limitare l’accesso tra una farm di pubblicazione e altri elementi dell’organizzazione (ad esempio, istanza di authoring, istanza di elaborazione, database). Consenti ai firewall di abilitare l’accesso a un numero limitato di URL AEM Forms per gli utenti finali e all’interno degli elementi dell’organizzazione:
 
-#### Configurare un firewall esterno {#configure-external-firewall}
+#### Configurare un firewall esterno  {#configure-external-firewall}
 
 È possibile configurare un firewall esterno per consentire a un determinato URL di AEM Forms di accedere a Internet. L’accesso a questi URL è necessario per compilare o inviare un modulo adattivo, un HTML5, una lettera di gestione della corrispondenza o per accedere a un server AEM Forms:
 
@@ -97,7 +96,7 @@ Un&#39;organizzazione può disporre di un firewall esterno per limitare l&#39;ac
  </tbody>
 </table>
 
-#### Configurare un firewall interno {#configure-internal-firewall}
+#### Configurare un firewall interno  {#configure-internal-firewall}
 
 Puoi configurare il firewall interno per consentire ad alcuni componenti di AEM Forms (ad esempio, istanza di authoring, istanza di elaborazione, database) di comunicare con la farm di pubblicazione e altri componenti interni menzionati nel diagramma della topologia:
 
@@ -130,7 +129,7 @@ Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione s
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Gestione sicura dei dati dei moduli {#securely-handle-forms-data}
+## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}
 
 AEM Forms memorizza i dati in posizioni predefinite e cartelle temporanee. È necessario proteggere i dati per evitare un uso non autorizzato.
 
@@ -148,7 +147,7 @@ Per impostazione predefinita, l’azione Invia portale moduli dei moduli adattiv
 
 Utilizzare le credenziali del server di elaborazione per AEM servizio impostazioni DS per inviare i dati dal nodo di pubblicazione al server di elaborazione. Si consiglia di utilizzare le credenziali di un utente non amministrativo con restrizioni con accesso in lettura e scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, consulta [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
-### Dati protetti gestiti dal modello dati del modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
+### Protezione dei dati gestita dal modello dati del modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Utilizzare gli account utente con privilegi minimi richiesti per configurare le origini dati per il modello dati del modulo (FDM). L&#39;utilizzo di account amministrativo può fornire accesso aperto di metadati ed entità dello schema a utenti non autorizzati.\
 L’integrazione dei dati fornisce anche metodi per autorizzare le richieste di servizi FDM. Puoi inserire meccanismi di autorizzazione pre e post-esecuzione per convalidare una richiesta. Le richieste di servizio vengono generate durante la precompilazione di un modulo, l’invio di un modulo e la chiamata di servizi tramite una regola.
@@ -157,7 +156,7 @@ L’integrazione dei dati fornisce anche metodi per autorizzare le richieste di 
 
 **Autorizzazione post-elaborazione:** è possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituire i risultati al richiedente. È inoltre possibile filtrare, perfezionare e inserire dati aggiuntivi ai risultati.
 
-### Limita accesso utente {#limit-user-access}
+### Limitare l&#39;accesso degli utenti {#limit-user-access}
 
 Per le istanze di authoring, pubblicazione ed elaborazione sono necessari diversi set di utenti tipo . Non eseguire alcuna istanza con le credenziali di amministratore.
 
@@ -197,6 +196,6 @@ In generale, i cluster di elaborazione e il componente aggiuntivo di Forms Workf
 
 Un cluster di elaborazione viene eseguito in modalità di authoring ma non viene utilizzato per le attività di sviluppo. Non consentire l’inclusione di un utente normale nei gruppi di autori di contenuti e utenti di moduli di un cluster di elaborazione.
 
-### UTILIZZARE AEM best practice per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### Utilizzare AEM best practice per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
 Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Assicurati che l&#39;installazione AEM sottostante sia sicura quando distribuita. Per istruzioni dettagliate, consulta la documentazione [AEM Lista di controllo protezione](/help/sites-administering/security-checklist.md) .
