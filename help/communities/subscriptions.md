@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # Iscrizioni alle community {#communities-subscriptions}
 
@@ -59,7 +58,7 @@ Il pulsante **Segui** includerà l&#39;opzione `Email Subscriptions` solo quando
 
 * Per un post specifico, ad esempio un argomento del forum, una domanda QnA o un articolo di blog, invia un&#39;e-mail quando è presente un&#39;attività per quel post specifico.
 
-## Risposta tramite e-mail {#reply-by-email}
+## Risposta per e-mail {#reply-by-email}
 
 Quando l’e-mail è [configurata per la risposta tramite e-mail](email.md#configure-polling-importer), il membro che si è iscritto riceverà un’e-mail con il contenuto pubblicato e un collegamento al contenuto online.
 
@@ -70,4 +69,3 @@ Se rispondono all’e-mail, il contenuto inserito nella risposta verrà visualiz
 Il tempo necessario per la registrazione di una risposta è controllato dall&#39; [intervallo di aggiornamento dell&#39;importatore di polling](email.md#configure-polling-importer).
 
 ![Controllo qualità](assets/qa.png)
-
