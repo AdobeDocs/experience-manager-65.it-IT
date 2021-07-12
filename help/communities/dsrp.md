@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
-
 
 # DSRP - Provider risorsa di archiviazione database relazionale {#dsrp-relational-database-storage-resource-provider}
 
@@ -106,7 +105,7 @@ Per accedere alla console di configurazione dell&#39;archiviazione, all&#39;auto
 
 * Seleziona **[!UICONTROL Invia]**.
 
-### Zero passaggi di migrazione per default srp {#zerodt-migration-steps}
+### Zero passaggi di migrazione dei tempi di inattività per default srp {#zerodt-migration-steps}
 
 Segui questi passaggi per garantire che la pagina predefinita della srp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funzioni come previsto:
 
@@ -149,4 +148,3 @@ Ad esempio, un comando curl per reindicizzare DSRP dovrebbe essere simile al seg
 ```shell
 curl -u admin:password -X POST -F path=/ https://host:port/services/social/datastore/rdb/reindex
 ```
-
