@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 1%
 
 ---
-
 
 # Configurazione MySQL per DSRP {#mysql-configuration-for-dsrp}
 
@@ -71,7 +70,7 @@ Impostare il database MySQL come predefinito su UTF8:
 
    `character-set-server=utf8`
 
-## Installazione di MySQL Workbench {#installing-mysql-workbench}
+## Installazione di Workbench MySQL {#installing-mysql-workbench}
 
 Workbench di MySQL fornisce un&#39;interfaccia utente per l&#39;esecuzione di script SQL che installano lo schema e i dati iniziali.
 
@@ -134,13 +133,13 @@ Un metodo per scaricare lo schema è:
 
 * Selezionare il collegamento di visualizzazione per salvare i dati in un file locale
 
-### Crea il database DSRP {#create-the-dsrp-database}
+### Creare il database DSRP {#create-the-dsrp-database}
 
 Per installare il database, effettua le seguenti operazioni. Il nome predefinito del database è `communities`.
 
 Se il nome del database viene modificato nello script, assicurati di modificarlo anche nella [configurazione JDBC](#configurejdbcconnections).
 
-#### Passaggio 1: aprire il file SQL {#step-open-sql-file}
+#### Passaggio 1: apri file SQL {#step-open-sql-file}
 
 In MySQL Workbench
 
@@ -202,4 +201,3 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
    * **[!UICONTROL Nome]** origine dati: nome immesso per la connessione  [MySQL](#new-connection-settings), ad esempio &quot;communities&quot;.
 
 * Seleziona **[!UICONTROL Salva]**
-
