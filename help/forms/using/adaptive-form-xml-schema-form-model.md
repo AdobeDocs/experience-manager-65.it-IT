@@ -2,18 +2,17 @@
 title: Come creare un Forms adattivo utilizzando lo schema XML?
 description: Scopri come utilizzare lo schema XML come modello di modulo in un modulo adattivo. È possibile applicare modelli XSD esistenti per creare moduli adattivi e trascinare elementi dello schema da XSD sul modulo adattivo. Approfondisci un esempio di schema XML, aggiungi proprietà speciali ai campi utilizzando lo schema XML e limita i valori accettabili per un componente modulo adattivo.
 feature: Moduli adattivi
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 6%
 
 ---
 
-# Creazione di moduli adattivi utilizzando lo schema XML {#creating-adaptive-forms-using-xml-schema}
+# Creazione di moduli adattivi tramite schema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisiti {#prerequisites}
 
