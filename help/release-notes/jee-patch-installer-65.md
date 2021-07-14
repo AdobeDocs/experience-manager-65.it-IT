@@ -5,20 +5,20 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 29%
 
 ---
 
-# Modulo di installazione delle patch JEE per AEM Forms {#aem-forms-jee-patch-installer}
+# Modulo di installazione delle patch di AEM Forms JEE {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
 >[Per ulteriori informazioni o per ottenere la patch, contatta ](https://www.adobe.com/account/sign-in.supportportal.html) il supporto.
 
-## Informazioni sul programma di installazione delle patch {#about-the-patch-installer}
+## Informazioni sul programma di installazione della patch {#about-the-patch-installer}
 
 Il programma di installazione delle patch JEE per Forms 6.5 AEM include tutti i problemi risolti per tutti i componenti di JEE Forms 6.5 disponibili fino al rilascio di questa patch. Per un elenco completo dei problemi risolti, consulta le [Note sulla versione del Service Pack](sp-release-notes.md) più recenti.
 
@@ -58,6 +58,7 @@ LinuxPassa alla directory appropriata e, dal prompt dei comandi, digita
    * `serializer-2.7.1.jar` a `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` a `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` a `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` a `xml-apis-2.7.2.jar`
 
 1. La casella di controllo Avvia Configuration Manager è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Configuration Manager.
 
