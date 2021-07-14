@@ -8,29 +8,33 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
-feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Forms Mobile
+exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
 
-
-# Abilitazione degli allegati di un modulo HTML5 {#enabling-attachments-for-an-html-form}
+# Abilitazione degli allegati per un modulo HTML5 {#enabling-attachments-for-an-html-form}
 
 È possibile caricare, visualizzare in anteprima e inviare allegati con moduli HTML5. Per impostazione predefinita, il supporto per gli allegati è disattivato. Per abilitare il supporto allegato:
 
-1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con proprietà stringa mutiselezionata `mfAttachmentOptions`.
-1. Nel profilo personalizzato, specifica le proprietà `fileSizeLimit`, `multiSelect` e `buttonTex`t per configurare le opzioni del widget di file allegato. Se necessario, puoi anche specificare altre proprietà personalizzate.
+1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con una proprietà stringa `mfAttachmentOptions` multiselect. Ogni stringa della proprietà `mfAttachmentOptions` deve avere un formato `property=value` per configurare le opzioni del widget di file allegato. I valori `property` e `value` possono essere i seguenti:
 
-1. Nel profilo personalizzato, utilizza le seguenti configurazioni:
+   | Proprietà | Valore |
+   |--- |---|
+   | multiSelect | true o false (true per impostazione predefinita) |
+   | fileSizeLimit | Numero in MB (2 MB per impostazione predefinita). Ad esempio, 5. |
+   | buttonText | Testo del pulsante per la finestra a comparsa (&quot;Allega&quot; per impostazione predefinita) |
+   | accettare | elenco di tipi di file da accettare separati da virgole (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita) |
 
-   * **multiSelect** -> true o false (true per impostazione predefinita)
-   * **fileSizeLimit** -> value_in_mb (diciamo 5) (2 MB per impostazione predefinita)
-   * **buttonText** -> Testo del pulsante per la finestra a comparsa (&quot;Allega&quot; per impostazione predefinita)
-   * **accetta i tipi di file** -> da accettare (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita)
+   Esempio:
+
+   ![configurare le opzioni](assets/mfAttachmentOptions.png)
+
+   Se necessario, puoi anche specificare altre opzioni personalizzate per la proprietà `mfAttachmentOptions` .
 
    >[!NOTE]
    >
