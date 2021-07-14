@@ -7,17 +7,16 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Comunicazione interattiva
+exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2041'
 ht-degree: 0%
 
 ---
 
-
-# Preparare e inviare comunicazioni interattive utilizzando l&#39;interfaccia utente dell&#39;agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Preparare e inviare comunicazioni interattive tramite l’interfaccia utente dell’agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 L’interfaccia utente dell’agente consente agli agenti di preparare e inviare comunicazioni interattive al processo di pubblicazione. L’agente apporta le modifiche necessarie e invia la comunicazione interattiva a un processo di pubblicazione, ad esempio e-mail o stampa.
 
@@ -31,7 +30,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 * **Contenuto**: Nella scheda Contenuto , l’agente gestisce il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva. Durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento, l&#39;agente può apportare le modifiche desiderate nel frammento di documento. L&#39;agente può inoltre riordinare, aggiungere o rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentito.
 * **Allegati**: La scheda Allegati viene visualizzata nell’interfaccia utente dell’agente solo se la comunicazione interattiva contiene allegati o se l’agente dispone dell’accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare o modificare gli allegati.
 
-## Preparare la comunicazione interattiva utilizzando l&#39;interfaccia utente dell&#39;agente {#prepare-interactive-communication-using-the-agent-ui}
+## Preparare la comunicazione interattiva tramite l’interfaccia utente dell’agente {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 1. Seleziona la comunicazione interattiva appropriata e tocca **[!UICONTROL Apri interfaccia utente agente]**.
@@ -138,13 +137,13 @@ Per evidenziare\enfatizzare parti di testo in un frammento modificabile, selezio
 
 L&#39;interfaccia utente dell&#39;agente ha integrato il supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere supporto per caratteri speciali più/personalizzati tramite personalizzazione](/help/forms/using/custom-special-characters.md).
 
-#### Consegna allegato {#attachmentdelivery}
+#### Consegna degli allegati {#attachmentdelivery}
 
 * Quando viene eseguito il rendering della comunicazione interattiva utilizzando API lato server come PDF interattivo o non interattivo, il PDF di cui è stato effettuato il rendering contiene allegati come allegati PDF.
 * Quando un processo post associato a una comunicazione interattiva viene caricato come parte dell&#39;interfaccia utente Invia tramite agente, gli allegati vengono passati come parametro List&lt;com.adobe.idp.Document> inAttachmentDocs .
 * I flussi di lavoro che utilizzano i meccanismi di distribuzione, ad esempio e-mail e stampa, distribuiscono anche allegati insieme alla versione PDF della comunicazione interattiva.
 
-## Azioni e informazioni disponibili nell&#39;interfaccia utente dell&#39;agente {#actionsagentui}
+## Azioni e informazioni disponibili nell’interfaccia utente dell’agente {#actionsagentui}
 
 ### Frammenti di documento {#document-fragments}
 
@@ -163,7 +162,7 @@ L&#39;interfaccia utente dell&#39;agente ha integrato il supporto per 210 caratt
 * Selezione (icona occhio): Include\esclude frammenti di documento dalla comunicazione interattiva.
 * Valori non compilati (informazioni): Indica il numero di variabili non compilate nel frammento di documento.
 
-### Elenca frammenti di documento {#list-document-fragments}
+### Elencare frammenti di documento {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -172,7 +171,7 @@ L&#39;interfaccia utente dell&#39;agente ha integrato il supporto per 210 caratt
 * Ignora punti/numeri: Consente di saltare elenchi puntati/numerati nel frammento di documento elenco.
 * Valori non compilati (informazioni): Indica il numero di variabili non compilate nel frammento di documento.
 
-## Salva le comunicazioni interattive come bozza {#save-as-draft}
+## Salvare le comunicazioni interattive come bozza {#save-as-draft}
 
 Puoi utilizzare l’interfaccia utente dell’agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. Potete specificare un nome diverso per ogni bozza da identificare.
 
@@ -211,10 +210,6 @@ Dopo aver salvato una comunicazione interattiva come bozza, puoi recuperarla per
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
 [] per progetto si intende l’identificatore univoco della bozza di versione che viene generato dopo il salvataggio di una comunicazione interattiva come bozza.
-
->[!NOTE]
->
->Se apporti modifiche alla comunicazione interattiva dopo averlo salvato come bozza, la versione bozza non viene aperta.
 
 ### Esempio di implementazione SPI di ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
 
