@@ -3,11 +3,11 @@ title: Newsletter Dynamic Media
 description: 'La newsletter Dynamic Media per Experience League è una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare subito a realizzare valore. In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Include informazioni su video, panoramica delle soluzioni e presentazioni su alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
 keywords: Dynamic Media;newsletter;aggiornamenti dei prodotti;suggerimenti e trucchi;eventi;successo dei clienti;blog;blog;immagini;video;funzionalità;funzionalità
 contentOwner: Rick Brough
-solution: Dynamic Media Classic, Experience Manager
+solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaborazione,Dynamic Media Classic
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 0%
