@@ -8,14 +8,14 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configurazione
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# Configurazione di Dynamic Media {#setting-up-dynamic-media}
+# Configurazione Dynamic Media {#setting-up-dynamic-media}
 
 [Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
@@ -27,10 +27,10 @@ ht-degree: 0%
 
 Se stai amministrando Dynamic Media, i seguenti argomenti sono di interesse:
 
-* [Configurazione della modalità](config-dms7.md)  Dynamic Media-Scene7: utilizza questa configurazione se sei un nuovo cliente Dynamic Media.
-* [Configurazione della modalità](config-dynamic.md)  Dynamic Media-Hybrid: utilizza questa configurazione se sei un Experience Manager di aggiornamento cliente Dynamic Media esistente.
-* [Gestione dei predefiniti per immagini](managing-image-presets.md)
-* [Gestione dei predefiniti per visualizzatori](managing-viewer-presets.md)
+* [Configurazione Dynamic Media - Modalità](config-dms7.md)  Scene7 - Utilizza questa configurazione se sei un nuovo cliente Dynamic Media.
+* [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)  - Utilizza questa configurazione se sei un Experience Manager di aggiornamento clienti Dynamic Media esistente.
+* [Gestire i predefiniti per immagini](managing-image-presets.md)
+* [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
 * [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
 
 Vedi anche i seguenti argomenti:
