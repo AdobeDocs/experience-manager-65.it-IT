@@ -1,5 +1,5 @@
 ---
-title: Best practice per ottimizzare la qualità delle immagini
+title: Best practice per ottimizzare la qualità delle immagini in Dynamic Media
 description: Scopri le best practice per ottimizzare la qualità delle immagini in Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestione risorse
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 6%
+source-wordcount: '1451'
+ht-degree: 4%
 
 ---
 
-# Best practice per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
+# Best practice per ottimizzare la qualità delle immagini in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 L&#39;ottimizzazione della qualità delle immagini può richiedere molto tempo, in quanto molti fattori contribuiscono a rendere i risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell&#39;immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
@@ -59,14 +59,14 @@ Sono disponibili due metodi di nitidezza delle immagini:
 * Nitidezza semplice ( `&op_sharpen`) : simile al filtro di nitidezza utilizzato in Photoshop, la nitidezza semplice applica una nitidezza di base alla visualizzazione finale dell’immagine dopo il ridimensionamento dinamico. Tuttavia, questo metodo non è configurabile dall&#39;utente. Si consiglia di non utilizzare &amp;op_sharpen se non richiesto.
 * Maschera definizione dettagli ( `&op_USM`) - Il mascheramento definizione dettagli è un filtro di nitidezza standard del settore. La migliore pratica è quella di rendere più nitide le immagini con maschera di contrasto seguendo le linee guida riportate di seguito. La funzione Maschera definizione dettagli consente di controllare i tre parametri seguenti:
 
-   * `&op_sharpen=`importo,raggio,soglia
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL quantità]**  (0-5, forza dell&#39;effetto).
-      * **[!UICONTROL raggio]**  (0-250, larghezza delle &quot;linee di nitidezza&quot; tracciate intorno all’oggetto affilato, misurata in pixel).
+      * **[!UICONTROL *quantità&#x200B;*]**(0-5, forza dell&#39;effetto).
+      * **[!UICONTROL *raggio *]**(0-250, larghezza delle &quot;linee di nitidezza&quot; tracciate intorno all’oggetto affilato, misurata in pixel).
 
       Tieni presente che il raggio e la quantità dei parametri funzionano l’uno contro l’altro. La riduzione del raggio può essere compensata dall&#39;aumento della quantità. Il raggio consente un controllo più preciso, poiché un valore inferiore rende più nitidi solo i pixel del bordo, mentre un valore più alto rende più nitida una banda più ampia di pixel.
 
-      * **[!UICONTROL soglia]**  (0-255, sensibilità dell&#39;effetto).
+      * **[!UICONTROL *soglia *]**(0-255, sensibilità dell&#39;effetto).
 
              Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
          
