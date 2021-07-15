@@ -11,7 +11,7 @@ docset: aem65
 feature: Video VR a 360°
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Consulta anche [Gestione dei predefiniti per visualizzatori](/help/assets/managi
 
 ## 360 Video in azione {#video-in-action}
 
-Toccare [Stazione Spaziale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione del video, trascinare il puntatore del mouse in una nuova posizione per modificare l&#39;angolo di visualizzazione.
+Selezionare [Stazione spaziale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione del video, trascinare il puntatore del mouse in una nuova posizione per modificare l&#39;angolo di visualizzazione.
 
 ![360 Video ](assets/6_5_360videoiss_simplified.png)
 *campioneFrame video da Space Station 360*
@@ -43,7 +43,7 @@ Toccare [Stazione Spaziale 360](https://mobiletest.scene7.com/s7viewers/html5/Vi
 
 Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Caricamento delle risorse da utilizzare con il visualizzatore video 360 {#uploading-assets-for-use-with-the-video-viewer}
+## Caricare le risorse da utilizzare con il visualizzatore video 360 {#uploading-assets-for-use-with-the-video-viewer}
 
 360 risorse video caricate in Adobe Experience Manager sono etichettate come **Multimedia** in una pagina delle risorse, in modo simile alla normale risorsa video.
 
@@ -74,7 +74,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-36
 
 1. [Carica il video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Ignorare le proporzioni predefinite di 360 video  {#overriding-the-default-aspect-ratio-of-videos}
+## Ignora le proporzioni predefinite di 360 video  {#overriding-the-default-aspect-ratio-of-videos}
 
 Affinché una risorsa caricata possa qualificarsi come video 360 da usare con il visualizzatore video 360, la risorsa deve avere una proporzione di 2.
 
@@ -95,46 +95,46 @@ Inizia caricando 360 video.
 
 Puoi usare Anteprima per vedere come si presenta ai clienti il tuo video 360 e assicurarti che funzioni come previsto.
 
-Consulta anche [Modifica dei predefiniti visualizzatore](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
+Consulta anche [Modificare i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
 Quando sei soddisfatto del video 360, puoi pubblicarlo.
 
-Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
-Consulta [Collegamento di URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
-Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consulta [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Collegare gli URL all&#39;applicazione web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
+Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Per visualizzare in anteprima 360 video:**
+**Per visualizzare in anteprima il video 360:**
 
-1. In **[!UICONTROL Risorse]**, individua un video 360 esistente creato. Tocca la risorsa video 360 per aprirla in modalità anteprima.
+1. In **[!UICONTROL Risorse]**, individua un video 360 esistente creato. Seleziona la risorsa video 360 per aprirla in modalità anteprima.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Tocca la risorsa video 360 per visualizzare l’anteprima del video.
+   Seleziona la risorsa video 360 per visualizzare l’anteprima del video.
 
-1. Nella pagina di anteprima, nell’angolo in alto a sinistra della pagina, tocca l’elenco a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
+1. Nella pagina di anteprima, nell’angolo in alto a sinistra della pagina, seleziona l’elenco a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
 
    ![6_5_360visualizzatori di anteprima video](assets/6_5_360video-preview-viewers.png)
 
-   Dall’elenco Visualizzatori, tocca **[!UICONTROL Video360_social]**, quindi effettua una delle seguenti operazioni:
+   Dall’elenco Visualizzatori, seleziona **[!UICONTROL Video360_social]**, quindi effettua una delle seguenti operazioni:
 
    * Per modificare l’angolo di visualizzazione della scena statica, trascinare il puntatore del mouse sul video.
-   * Per iniziare la riproduzione, tocca il pulsante **[!UICONTROL Play]** del video. Durante la riproduzione del video, trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione.
+   * Selezionare il pulsante **[!UICONTROL Play]** del video se si desidera iniziare la riproduzione. Durante la riproduzione del video, trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione.
 
    ![Schermata video 6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360.*
 
-   * Dall’elenco Visualizzatori, tocca **[!UICONTROL Video360VR]**.
+   * Dall’elenco Visualizzatori, seleziona **[!UICONTROL Video360VR]**.
 
       Il video Virtual Reality (VR) è un video coinvolgente a cui è possibile accedere utilizzando cuffie per realtà virtuale. Come per i video comuni, è possibile creare video VR all&#39;inizio quando un video viene registrato o catturato utilizzando videocamere a 360 gradi.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Schermata video VR a 360°.*
 
-1. Vicino alla parte superiore destra della pagina di anteprima, tocca **[!UICONTROL Chiudi]**.
+1. Vicino all&#39;angolo superiore destro della pagina di anteprima, seleziona **[!UICONTROL Chiudi]**.
 
 ## Pubblicazione di video 360 {#publishing-video}
 
 Pubblica il video 360 in modo da poterlo utilizzare. La pubblicazione di un video 360 attiva l’URL e il codice di incorporamento. Pubblica anche il video 360 sul cloud Dynamic Media, integrato con una rete CDN per una distribuzione scalabile e performante.
 
-Per informazioni dettagliate su come pubblicare video 360, consulta [Pubblicazione di risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) .
-Vedere anche [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
-Consulta anche [Collegamento di URL all&#39;applicazione web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
-Consulta anche [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Per informazioni dettagliate su come pubblicare video 360, consulta [Pubblicare risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) .
+Vedere anche [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/embed-code.md).
+Consulta anche [Collegare gli URL all&#39;applicazione web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
+Consulta anche [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
