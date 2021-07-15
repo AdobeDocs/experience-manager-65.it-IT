@@ -7,9 +7,9 @@ content-type: reference
 feature: Accessibilità
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Poiché [!DNL Dynamic Media] è un plug-in a [!DNL Adobe Experience Manager Assets], la maggior parte del comportamento del controllo da tastiera è lo stesso di in [!DNL Experience Manager Assets]. Ad esempio, il pulsante `Cancel` in [!DNL Dynamic Media] ha la stessa evidenziazione dello stato attivo di [!DNL Experience Manager Assets] e reagisce al tasto `Spacebar` come in [!DNL Experience Manager Assets]. Consulta [Scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in [!DNL Dynamic Media] sono nella maggior parte dei casi ovvie e facili da scoprire. Il controllo da tastiera in [!DNL Dynamic Media] riguarda i seguenti elementi:
+Le sequenze di tasti supportate dai singoli elementi dell&#39;interfaccia utente in [!DNL Dynamic Media] sono chiare e facili da individuare. Il controllo da tastiera in [!DNL Dynamic Media] riguarda i seguenti elementi:
 
 * Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi della pagina.
 L’utilizzo di `Tab` sposta lo stato attivo sull’elemento successivo dell’interfaccia utente nell’ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riporta lo stato attivo sull&#39;elemento dell&#39;interfaccia utente precedente.
@@ -35,7 +35,7 @@ L&#39;attraversamento della messa a fuoco segue la posizione naturale dell&#39;e
    * Utilizzare i tasti freccia per ritagliare le dimensioni della cornice, riposizionare l&#39;immagine o entrambi.
    * Il primo `Tab` stop evidenzia l&#39;intero fotogramma dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare la cornice.
    * Le quattro fermate successive sono i quattro angoli del telaio. `Tab` Quando lo stato attivo è posto su un angolo del fotogramma, l&#39;angolo è evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo mirato.
-Consulta [Modifica del ritaglio avanzato o campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+Consulta [Modificare il ritaglio avanzato o il campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
