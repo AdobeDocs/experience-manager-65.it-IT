@@ -1,5 +1,5 @@
 ---
-title: Configurazione di Dynamic Media - Modalità ibrida
+title: Configurare Dynamic Media - Modalità ibrida
 description: Scopri come configurare Dynamic Media - Modalità ibrida.
 mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
@@ -13,20 +13,20 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configurazione,Modalità ibrida
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '7838'
+source-wordcount: '7797'
 ht-degree: 1%
 
 ---
 
-# Configurazione di Dynamic Media - Modalità ibrida {#configuring-dynamic-media-hybrid-mode}
+# Configurare Dynamic Media - Modalità ibrida {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybrid deve essere abilitato e configurato per l’uso. A seconda del caso d’uso, Dynamic Media dispone di diverse [configurazioni supportate](#supported-dynamic-media-configurations).
 
 >[!NOTE]
 >
->Se intendi configurare ed eseguire Dynamic Media in modalità di esecuzione Scene7, consulta [Configurazione di Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md).
+>Per configurare ed eseguire Dynamic Media in modalità di esecuzione Scene7, consulta [Configurare Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md).
 >
 >Se desideri configurare ed eseguire Dynamic Media in modalità di esecuzione ibrida, segui le istruzioni riportate in questa pagina.
 
@@ -45,7 +45,7 @@ Ulteriori informazioni sull&#39;utilizzo di [video](/help/assets/video.md) in Dy
 
 >
 >
-Sono documentati in [Monitoraggio e manutenzione dell&#39;istanza di Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
+Sono documentati in [Monitorare e mantenere l&#39;istanza di Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
 La pubblicazione e la consegna ibrida è una funzione fondamentale dell’aggiunta di Dynamic Media ad Adobe Experience Manager. La pubblicazione ibrida consente di distribuire risorse Dynamic Media, come immagini, set e video, dal cloud invece che dai nodi di pubblicazione Experience Manager.
 
@@ -140,7 +140,7 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
  </tbody>
 </table>
 
-## Abilitazione di Dynamic Media {#enabling-dynamic-media}
+## Abilita Dynamic Media {#enabling-dynamic-media}
 
 [Dynamic Media è disattivato per impostazione predefinita. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Per sfruttare le funzioni di Dynamic Media, è necessario abilitare Dynamic Media utilizzando la modalità di esecuzione `dynamicmedia` come si farebbe, ad esempio, in modalità di esecuzione `publish`. Prima di attivare, controlla i [requisiti tecnici](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
@@ -190,7 +190,7 @@ Per abilitare Dynamic Media, è necessario abilitare la modalità di esecuzione 
 
 ### Se hai installato Experience Manager in una porta o un percorso contestuale diverso ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Se distribuisci [Experience Manager a un server applicazioni](/help/sites-deploying/application-server-install.md) e hai Dynamic Media abilitato, devi configurare l&#39; **dominio autonomo** nell&#39;esternalizzatore. In caso contrario, la generazione di miniature per le risorse non funziona correttamente per le risorse Dynamic Media.
+Se distribuisci [l&#39;Experience Manager a un server applicazioni](/help/sites-deploying/application-server-install.md) e hai Dynamic Media abilitato, devi configurare l&#39; **dominio autonomo** in Externalizer. In caso contrario, la generazione di miniature per le risorse non funziona correttamente per le risorse Dynamic Media.
 
 Inoltre, se esegui quickstart su una porta o un percorso contestuale diverso, devi anche modificare il **dominio autonomo**.
 
@@ -198,21 +198,21 @@ Quando Dynamic Media è abilitato, le rappresentazioni di miniature statiche per
 
 Experience Manager:
 
-* Il **self-domain** nel [esternalizer](/help/sites-developing/externalizer.md) viene utilizzato per recuperare sia il numero di porta che il percorso contestuale.
+* Il **self-domain** in [Externalizer](/help/sites-developing/externalizer.md) viene utilizzato per recuperare sia il numero di porta che il percorso contestuale.
 * Se non è configurato alcun **self-domain**, il numero di porta e il percorso contestuale vengono recuperati dal servizio Jetty HTTP.
 
-In un Experience Manager di distribuzione QuickStart WAR, non è possibile derivare il numero di porta e il percorso del contesto, pertanto è necessario configurare un **dominio autonomo**. Consulta la [documentazione esternalizzatore](/help/sites-developing/externalizer.md) su come configurare il **dominio autonomo**.
+In un Experience Manager di distribuzione QuickStart WAR, non è possibile derivare il numero di porta e il percorso del contesto, pertanto è necessario configurare un **dominio autonomo**. Consulta la [Documentazione di Externalizer](/help/sites-developing/externalizer.md) su come configurare il **dominio autonomo**.
 
 >[!NOTE]
 In una [distribuzione autonoma di Quickstart di Experience Manager](/help/sites-deploying/deploy.md), in genere non è necessario configurare un **dominio autonomo** perché il numero di porta e il percorso del contesto possono essere configurati automaticamente. Tuttavia, se tutte le interfacce di rete sono disattivate, è necessario configurare il **dominio autonomo**.
 
-## Disabilitazione di Dynamic Media  {#disabling-dynamic-media}
+## Disattiva Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media non è abilitato per impostazione predefinita. Tuttavia, se Dynamic Media è già stato abilitato in precedenza, è possibile disattivarlo in un secondo momento.
 
 Per disattivare Dynamic Media dopo averlo abilitato, rimuovi il flag di modalità di esecuzione `-r dynamicmedia` .
 
-**Per disabilitare Dynamic Media dopo che è stato abilitato:**
+**Per disabilitare Dynamic Media:**
 
 1. Nella riga di comando, quando si avvia l&#39;avvio rapido, è possibile effettuare una delle seguenti operazioni:
 
@@ -243,7 +243,7 @@ Per migrare eventuali predefiniti e configurazioni personalizzate creati da `/et
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Configurazione della replica delle immagini {#configuring-image-replication}
+## Configurare la replica delle immagini {#configuring-image-replication}
 
 La distribuzione delle immagini Dynamic Media funziona pubblicando le risorse di immagini, incluse le miniature video, dall’istanza di authoring di Experience Manager e replicandole al servizio di replica on-demand di Adobe (l’URL del servizio di replica). Le risorse vengono quindi distribuite tramite il servizio di distribuzione delle immagini on-demand (l’URL del servizio immagini).
 
@@ -262,7 +262,7 @@ Il limite di memoria è configurabile e si adatta alla disponibilità delle riso
 Viene rifiutata un&#39;immagine che richiede più del limite massimo di memoria.
 Per modificare il limite di memoria per la creazione PTIFF, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** e modifica il valore **[!UICONTROL maxMemory]**.
 
-### Impostazione dell&#39;autenticazione {#setting-up-authentication}
+### Configurare l’autenticazione {#setting-up-authentication}
 
 Imposta l’autenticazione della replica sull’autore in modo da poter replicare le immagini nel servizio di distribuzione delle immagini di Dynamic Media. Prima si ottiene un KeyStore, quindi lo si salva sotto l&#39;utente **[!UICONTROL dynamic-media-replication]** e lo si configura. L’amministratore dell’azienda ha ricevuto un messaggio e-mail di benvenuto con il file KeyStore e le credenziali necessarie durante il processo di provisioning. Se non hai ricevuto queste informazioni, contatta l’Assistenza clienti Adobe.
 
@@ -270,13 +270,13 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 
 1. Contatta l’Assistenza clienti Adobe per il file e la password KeyStore se non hai già il file e la password. Queste informazioni sono una parte necessaria del provisioning. Associa le chiavi al tuo account.
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
 
-1. Nella pagina Gestione utente , individua l&#39;utente **[!UICONTROL dynamic-media-replication]** , quindi tocca per aprire.
+1. Nella pagina Gestione utente , passa all&#39;utente **[!UICONTROL dynamic-media-replication]** , quindi seleziona per aprire.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Nella pagina Modifica impostazioni utente per la replica Dynamic-media, tocca la scheda **[!UICONTROL Registro chiavi]** , quindi fai clic su **[!UICONTROL Crea archivio chiavi]**.
+1. Nella pagina Modifica impostazioni utente per la replica Dynamic-media, seleziona la scheda **[!UICONTROL Registro chiavi]** , quindi seleziona **[!UICONTROL Crea archivio chiavi]**.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -290,23 +290,23 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 1. Nella pagina **[!UICONTROL Modifica impostazioni utente per dynamic-media-replication]** , espandi l&#39;area **Aggiungi chiave privata dal file KeyStore** e aggiungi quanto segue (vedi le immagini che seguono):
 
    * Nel campo **[!UICONTROL Nuovo alias]**, immettere il nome di un alias che si desidera utilizzare in seguito nella configurazione di replica. Ad esempio, puoi utilizzare `replication` come alias.
-   * Tocca **[!UICONTROL File KeyStore]**. Passa al file KeyStore fornito per Adobe, selezionalo, quindi tocca **[!UICONTROL Apri]**.
+   * Selezionare **[!UICONTROL File KeyStore]**. Passa al file KeyStore fornito per Adobe, selezionalo, quindi seleziona **[!UICONTROL Apri]**.
    * Nel campo **[!UICONTROL Password file KeyStore]** , immetti la password del file KeyStore. Questa password è **non** la password KeyStore che hai creato nel passaggio 5, ma è l&#39;Adobe di password del file KeyStore fornito nel messaggio e-mail di benvenuto che ti è stato inviato durante il provisioning. Se non hai ricevuto una password del file KeyStore, contatta l’Assistenza clienti Adobe.
    * Nel campo **[!UICONTROL Password chiave privata]** , immetti la password della chiave privata (può essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto una password di chiave privata, contatta l’Assistenza clienti di Adobe.
    * Nel campo **[!UICONTROL Alias chiave privata]**, immettere l&#39;alias della chiave privata. Esempio, `*companyname*-alias`. Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti di Adobe.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
-1. Tocca **[!UICONTROL Salva e chiudi]** per salvare le modifiche apportate a questo utente.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare le modifiche apportate a questo utente.
 
    Successivamente, devi [configurare l&#39;agente di replica](#configuring-the-replication-agent).
 
-### Configurazione dell’agente di replica {#configuring-the-replication-agent}
+### Configurare l’agente di replica {#configuring-the-replication-agent}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
-1. Nella pagina Agenti della pagina di authoring, tocca **[!UICONTROL Replica immagine ibrida Dynamic Media (s7delivery)]**.
-1. Tocca **[!UICONTROL Modifica]**.
-1. Tocca la scheda **[!UICONTROL Impostazioni]** , quindi immetti quanto segue:
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti sull’autore]**.
+1. Nella pagina Agenti della pagina di authoring, seleziona **[!UICONTROL Replica immagine ibrida Dynamic Media (s7delivery)]**.
+1. Seleziona **[!UICONTROL Modifica]**.
+1. Seleziona la scheda **[!UICONTROL Impostazioni]** , quindi immetti quanto segue:
 
    * **[!UICONTROL Abilitato]** : seleziona questa casella di controllo per abilitare l’agente di replica.
    * **[!UICONTROL Regione]** : imposta l&#39;area appropriata: Nord America, Europa o Asia
@@ -318,13 +318,13 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Toccare **[!UICONTROL OK]**.
+1. Selezionare **[!UICONTROL OK]**.
 
-### Convalida dell&#39;agente di replica per Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
+### Convalida l’agente di replica per Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
 Per convalidare l&#39;agente di replica per Dynamic Media, procedi come segue:
 
-Tocca **[!UICONTROL Prova connessione]**. Esempio di output:
+Selezionare **[!UICONTROL Prova connessione]**. Esempio di output:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -343,11 +343,11 @@ Replication test succeeded
 >[!NOTE]
 È inoltre possibile controllare eseguendo una delle operazioni seguenti:
 * Controlla i registri di replica per assicurarti che la risorsa sia replicata.
-* Pubblica un’immagine. Tocca l’immagine e seleziona **[!UICONTROL Visualizzatori]** nel menu a discesa, quindi seleziona un predefinito visualizzatore. Fare clic su **[!UICONTROL URL]**. Per verificare di poter visualizzare l’immagine, copia e incolla il percorso URL nel browser.
+* Pubblica un’immagine. Seleziona l&#39;immagine e seleziona **[!UICONTROL Visualizzatori]** nel menu a discesa, quindi seleziona un predefinito visualizzatore. Seleziona **[!UICONTROL URL]**. Per verificare di poter visualizzare l’immagine, copia e incolla il percorso URL nel browser.
 
 
 
-### Risoluzione dei problemi di autenticazione {#troubleshooting-authentication}
+### Risolvere i problemi di autenticazione {#troubleshooting-authentication}
 
 Quando configuri l’autenticazione, ecco alcuni problemi che puoi incontrare con le loro soluzioni. Prima di verificare questi problemi, assicurati di aver configurato la replica.
 
@@ -435,14 +435,14 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. Passa alla pagina Gestione utente :
    `localhost:4502/libs/granite/security/content/useradmin.html`
-1. Nella pagina Gestione utente , accedi all’ utente `dynamic-media-replication` , quindi tocca per aprirlo.
-1. Fai clic sulla scheda **[!UICONTROL KeyStore]** . Se viene visualizzato il pulsante **[!UICONTROL Crea KeyStore]**, è necessario ripristinare i passaggi precedenti in [Impostazione dell&#39;autenticazione](#setting-up-authentication) .
+1. Nella pagina Gestione utente , accedi all’ utente `dynamic-media-replication` e seleziona per aprirlo.
+1. Seleziona la scheda **[!UICONTROL KeyStore]** . Se viene visualizzato il pulsante **[!UICONTROL Crea KeyStore]**, è necessario ripristinare i passaggi precedenti in [Impostazione dell&#39;autenticazione](#setting-up-authentication) .
 1. Se è stato necessario ripristinare la configurazione di KeyStore, è necessario eseguire nuovamente [Configurazione dell&#39;agente di replica](/help/assets/config-dynamic.md#configuring-the-replication-agent).
 
    Riconfigura l’agente di replica s7delivery.
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
 
-1. Tocca **[!UICONTROL Prova connessione]** per verificare che la configurazione sia valida.
+1. Seleziona **[!UICONTROL Prova connessione]** per verificare che la configurazione sia valida.
 
 #### Problema: L’agente di pubblicazione utilizza SSL invece di OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
@@ -462,7 +462,7 @@ Esempio di registro di replica:
 
 **Soluzione:**
 
-1. Ad Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -473,9 +473,9 @@ Esempio di registro di replica:
 
    `enableOauth=true`
 
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Salva tutto]**.
+1. Nell&#39;angolo in alto a sinistra della pagina, selezionare **[!UICONTROL Salva tutto]**.
 
-### Verifica della configurazione {#testing-your-configuration}
+### Verifica la configurazione {#testing-your-configuration}
 
 Adobe consiglia di eseguire un test end-to-end della configurazione.
 
@@ -486,20 +486,20 @@ Prima di iniziare il test, assicurati di aver già eseguito le operazioni seguen
 
 **Per verificare la configurazione:**
 
-1. Carica una risorsa immagine. (In Risorse, tocca **[!UICONTROL Crea]** > **[!UICONTROL File]** e seleziona il file.)
+1. Carica una risorsa immagine. (In Risorse, passa a **[!UICONTROL Crea]** > **[!UICONTROL File]** e seleziona il file.)
 1. Attendi il completamento del flusso di lavoro.
-1. Pubblica la risorsa immagine. (Seleziona la risorsa e tocca **[!UICONTROL Pubblicazione rapida]**.)
+1. Pubblica la risorsa immagine. (Seleziona la risorsa e seleziona **[!UICONTROL Pubblicazione rapida]**.)
 1. Passa alle rappresentazioni per quell&#39;immagine aprendo l&#39;immagine e toccando **[!UICONTROL Rappresentazioni]**.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
 1. Seleziona un rendering dinamico.
-1. Per ottenere l&#39;URL per questa risorsa, fai clic su **[!UICONTROL URL]**.
+1. Per ottenere l&#39;URL per questa risorsa, seleziona **[!UICONTROL URL]**.
 1. Passa all’URL selezionato e verifica se l’immagine si comporta come previsto.
 
 Un altro modo per verificare che le risorse siano state consegnate è aggiungere req=exists al tuo URL.
 
-## Configurazione dei Cloud Services Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Configurare Cloud Services Dynamic Media {#configuring-dynamic-media-cloud-services}
 
 Il Cloud Service Dynamic Media supporta tra l’altro la pubblicazione e la distribuzione ibride di immagini e video, analisi video e codifica video.
 
@@ -508,10 +508,10 @@ Come parte della configurazione, devi immettere un ID di registrazione, un URL d
 >[!NOTE]
 Prima di configurare i Cloud Services Dynamic Media, assicurati di aver impostato l’istanza di pubblicazione. È inoltre necessario impostare la replica prima di configurare i Cloud Services Dynamic Media.
 
-Per configurare Cloud Services Dynamic Media:
+**Per configurare Cloud Services Dynamic Media:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media (Pre-6.3)]**.
-1. Nella pagina Browser configurazione Dynamic Media, seleziona **[!UICONTROL globale]** nel riquadro a sinistra, quindi tocca **[!UICONTROL Crea]**.
+1. Ad Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media (Pre-6.3)]**.
+1. Nella pagina Browser configurazione Dynamic Media, nel riquadro a sinistra, selezionare **[!UICONTROL global]**, quindi selezionare **[!UICONTROL Create]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione Dynamic Media]**, digitare un titolo nel campo Titolo.
 1. Se stai configurando Dynamic Media per i video,
 
@@ -519,10 +519,10 @@ Per configurare Cloud Services Dynamic Media:
    * Nel campo **[!UICONTROL URL servizio video]** , immetti l’URL del servizio video per Dynamic Media Gateway.
 
 1. Se si sta configurando Dynamic Media per l&#39;imaging, nel campo **[!UICONTROL URL del servizio immagini]** immettere l&#39;URL del servizio immagini per il gateway Dynamic Media.
-1. Tocca **[!UICONTROL Salva]** per tornare alla pagina del browser di configurazione Dynamic Media.
-1. Per accedere alla console di navigazione globale, tocca il logo di Experience Manager.
+1. Seleziona **[!UICONTROL Salva]** per tornare alla pagina del browser di configurazione Dynamic Media.
+1. Per accedere alla console di navigazione globale, seleziona il logo Experience Manager.
 
-## Configurazione del reporting video {#configuring-video-reporting}
+## Configurare il reporting video {#configuring-video-reporting}
 
 È possibile configurare la generazione di rapporti video per più installazioni di Experienci Manager utilizzando Dynamic Media Hybrid.
 
@@ -534,7 +534,7 @@ Per configurare Cloud Services Dynamic Media:
 1. Installa il pacchetto predefinito di Video Analytics su qualsiasi ***nuovo*** nodo Autore ***prima*** configuri Configurazione Dynamic Media (Pre 6.3).
 1. Verifica ed esegui il debug dell&#39;installazione del pacchetto.
 
-### Creazione di un pacchetto predefinito di Video Analytics dopo la configurazione del primo nodo Autore {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Crea un pacchetto predefinito di Video Analytics dopo aver configurato il primo nodo Autore {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 Al termine di questa attività, disponi di un file di pacchetto contenente i predefiniti di Video Analytics. Questi predefiniti contengono una suite di rapporti, il server di tracciamento, lo spazio dei nomi di tracciamento e l’ID organizzazione Experience Cloud, se disponibile.
 
@@ -548,7 +548,7 @@ Al termine di questa attività, disponi di un file di pacchetto contenente i pre
 1. Crea il pacchetto.
 1. Scarica o condividi il pacchetto predefinito di Video Analytics in modo che possa essere condiviso con i nuovi nodi Autore successivi.
 
-### Installazione del pacchetto predefinito di Video Analytics prima di configurare altri nodi Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Installa il pacchetto predefinito di Video Analytics prima di configurare altri nodi Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Assicurati di completare questa attività ***prima*** di configurare la configurazione Dynamic Media (Pre 6.3). In caso contrario, verrà creata un’altra suite di rapporti non utilizzata. Inoltre, anche se il reporting video continua a funzionare correttamente, la raccolta dei dati non viene ottimizzata.
 
@@ -558,7 +558,7 @@ Assicurati che il pacchetto predefinito di Video Analytics dal primo nodo Autore
 1. Installa il pacchetto predefinito di Video Analytics.
 1. Configurazione di Dynamic Media (prima della versione 6.3).
 
-### Verifica e debug dell’installazione del pacchetto {#verifying-and-debugging-the-package-installation}
+### Verifica ed esegui il debug dell&#39;installazione del pacchetto {#verifying-and-debugging-the-package-installation}
 
 1. Esegui una delle seguenti operazioni per verificare e, se necessario, eseguire il debug dell&#39;installazione del pacchetto:
 
@@ -588,7 +588,7 @@ Ad esempio, per visualizzare il predefinito Analytics sul nodo Autore, puoi effe
       ```
 
    * **Controlla il predefinito Video Analytics tramite lo strumento Video Reporting (Reporting video) in Experience**
-ManagerTocca  **[!UICONTROL Strumenti]**  >  **[!UICONTROL Risorse]**  > Reporting  **[!UICONTROL video]**
+ManagerPassa a  **[!UICONTROL Strumenti]**  >  **[!UICONTROL Risorse]**  > Reporting  **[!UICONTROL video]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -605,7 +605,7 @@ ManagerTocca  **[!UICONTROL Strumenti]**  >  **[!UICONTROL Risorse]**  > Reporti
 
    Questo errore viene visualizzato anche se Video Reporting viene eseguito prima di configurare i servizi Dynamic Media Configuration (Pre 6.3).
 
-### Risoluzione dei problemi relativi alla configurazione del reporting video {#troubleshooting-the-video-reporting-configuration}
+### Risolvere i problemi relativi alla configurazione del reporting video {#troubleshooting-the-video-reporting-configuration}
 
 * Durante l’installazione, a volte le connessioni al server API di Analytics scadono. L&#39;installazione prova la connessione 20 volte, ma continua a non riuscire. Quando si verifica questa situazione, il file di registro registra più errori. Cerca `SiteCatalystReportService`.
 * La mancata installazione del pacchetto Preset di Analytics può causare la creazione di una nuova suite di rapporti.
@@ -624,7 +624,7 @@ Le proprietà del predefinito sono le seguenti:
 
 Experience Manager 6.4 e versioni successive salvano questo predefinito in `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-## Replica delle impostazioni del catalogo {#replicating-catalog-settings}
+## Replicare le impostazioni del catalogo {#replicating-catalog-settings}
 
 Pubblica le impostazioni di catalogo predefinite come parte del processo di configurazione tramite JCR. Per replicare le impostazioni del catalogo:
 
@@ -636,16 +636,16 @@ Pubblica le impostazioni di catalogo predefinite come parte del processo di conf
 
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
-1. Tocca la scheda **[!UICONTROL Replica]** .
-1. Tocca **[!UICONTROL Replicare]**.
+1. Selezionare la scheda **[!UICONTROL Replica]**.
+1. Selezionare **[!UICONTROL Replica]**.
 
-## Replica dei predefiniti per visualizzatori {#replicating-viewer-presets}
+## Replicare i predefiniti visualizzatore {#replicating-viewer-presets}
 
 Per fornire *una risorsa con un predefinito visualizzatore, devi replicare/pubblicare* il predefinito visualizzatore. Per ottenere l’URL o il codice di incorporamento di una risorsa, tutti i predefiniti visualizzatore devono essere attivati *e* replicati.
-Per ulteriori informazioni, consulta [Pubblicazione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) .
+Per ulteriori informazioni, consulta [Pubblicare i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) .
 
 >[!NOTE]
-Per impostazione predefinita, il sistema mostra diverse rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e vari predefiniti visualizzatore quando selezioni **[!UICONTROL Visualizzatori]** nella visualizzazione dei dettagli della risorsa. È possibile aumentare o diminuire il numero visualizzato. Consulta [Aumento del numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento del numero di predefiniti visualizzatore da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Per impostazione predefinita, il sistema mostra diverse rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e vari predefiniti visualizzatore quando selezioni **[!UICONTROL Visualizzatori]** nella visualizzazione dei dettagli della risorsa. È possibile aumentare o diminuire il numero visualizzato. Consulta [Aumenta il numero di predefiniti immagine visualizzati](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore visualizzati](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtrare le risorse per la replica {#filtering-assets-for-replication}
 
@@ -661,7 +661,7 @@ Oltre a replicare le risorse, vengono replicate anche le seguenti non-risorse:
 
 I filtri ti consentono di *escludere* risorse dalla replica nel nodo di pubblicazione Experience Manager.
 
-### Utilizzo di filtri risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
+### Utilizzare filtri di risorse predefiniti per la replica {#using-default-asset-filters-for-replication}
 
 Se si utilizza Dynamic Media per l&#39;imaging (1) nella produzione di immagini e video *o* (2), è possibile utilizzare i filtri predefiniti forniti in Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
@@ -670,7 +670,7 @@ Se si utilizza Dynamic Media per l&#39;imaging (1) nella produzione di immagini 
   <tr>
    <td> </td>
    <td><strong>Filtro</strong></td>
-   <td><strong>Tipo mime</strong></td>
+   <td><strong>Tipo MIME</strong></td>
    <td><strong>Rappresentazioni</strong></td>
   </tr>
   <tr>
@@ -709,64 +709,62 @@ Se si utilizza Dynamic Media per l&#39;imaging (1) nella produzione di immagini 
 >[!NOTE]
 I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
 
-### Impostazione dei filtri delle risorse per le implementazioni solo video {#setting-up-asset-filters-for-video-only-deployments}
+### Configurare i filtri delle risorse per le distribuzioni solo video {#setting-up-asset-filters-for-video-only-deployments}
 
 Se utilizzi Dynamic Media solo per i video, segui questi passaggi per impostare i filtri delle risorse per la replica:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
-1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione)]**.
-1. Tocca **[!UICONTROL Modifica]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti sull’autore]**.
+1. Nella pagina Agenti della pagina di creazione, seleziona **[!UICONTROL Agente predefinito (pubblicazione)]**.
+1. Seleziona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Impostazioni agente]**, nella scheda **[!UICONTROL Impostazioni]** , seleziona **[!UICONTROL Abilitato]** per attivare l&#39;agente.
-1. Toccare **[!UICONTROL OK]**.
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Selezionare **[!UICONTROL OK]**.
+1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Individua **[!UICONTROL filter-video]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia]**.
+1. Individua **[!UICONTROL filter-video]**, fai clic con il pulsante destro del mouse su di esso, quindi seleziona **[!UICONTROL Copia]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/publish`
-1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Incolla]**.
+1. Individua `jcr:content`, fai clic con il pulsante destro del mouse, quindi seleziona **[!UICONTROL Incolla]**.
 
 Questi passaggi impostano l&#39;istanza di pubblicazione Experience Manager per distribuire l&#39;immagine poster video e i metadati video necessari per la riproduzione, mentre il video stesso viene distribuito dal Cloud Service Dynamic Media. Il filtro esclude anche dalla replica le rappresentazioni video originali e le miniature statiche, che non sono necessarie nell’istanza di pubblicazione.
 
-### Impostazione dei filtri delle risorse per l’imaging nelle implementazioni non di produzione {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
+### Configurare i filtri risorse per l’imaging in implementazioni non di produzione {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 Se utilizzi Dynamic Media per l’imaging in implementazioni non di produzione, segui questi passaggi per configurare i filtri risorse per la replica:
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti su autore]**.
-1. Nella pagina Agenti della pagina di creazione, tocca **[!UICONTROL Agente predefinito (pubblicazione)]**.
-1. Tocca **[!UICONTROL Modifica]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Implementazione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti sull’autore]**.
+1. Nella pagina Agenti della pagina di creazione, seleziona **[!UICONTROL Agente predefinito (pubblicazione)]**.
+1. Seleziona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Impostazioni agente]**, nella scheda **[!UICONTROL Impostazioni]** , seleziona **[!UICONTROL Abilitato]** per attivare l&#39;agente.
-1. Toccare **[!UICONTROL OK]**.
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Selezionare **[!UICONTROL OK]**.
+1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Individua **[!UICONTROL filter-images]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Copia]**.
+1. Individua **[!UICONTROL filter-images]**, fai clic con il pulsante destro del mouse su di esso, quindi seleziona **[!UICONTROL Copia]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/publish`
-1. Individua **[!UICONTROL jcr:content]**, fai clic con il pulsante destro del mouse su di esso e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Immettere il nome `damRenditionFilters` di tipo `nt:unstructured`.
-1. Individua `damRenditionFilters`, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Incolla]**.
+1. Individua `jcr:content`, fai clic con il pulsante destro del mouse su di esso, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Immettere il nome `damRenditionFilters` di tipo `nt:unstructured`.
+1. Individua `damRenditionFilters`, fai clic con il pulsante destro del mouse, quindi seleziona **[!UICONTROL Incolla]**.
 
 Questi passaggi impostano l’istanza di pubblicazione di Experience Manager per consegnare le immagini al tuo ambiente non di produzione. Il filtro esclude anche dalla replica l&#39;immagine originale e le rappresentazioni statiche, che non sono necessarie nell&#39;istanza di pubblicazione.
 
 >[!NOTE]
 Se in un autore sono presenti molti filtri diversi, a ogni agente deve essere assegnato un utente diverso. Il codice granite applica un filtro per modello utente. Disporre sempre di un utente diverso per ogni configurazione del filtro.
-Utilizzi più filtri su un server? Ad esempio, un filtro per la replica da pubblicare e un secondo filtro per s7delivery. In tal caso, assicurati che a questi due filtri sia assegnato un **userId** diverso nel nodo **jcr:content**. Vedi l&#39;immagine che segue:
+Utilizzi più filtri su un server? Ad esempio, un filtro per la replica da pubblicare e un secondo filtro per s7delivery. In tal caso, assicurati che a questi due filtri sia assegnato un **userId** diverso nel nodo `jcr:content`. Vedi l&#39;immagine che segue:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
-### Personalizzazione dei filtri delle risorse per la replica {#customizing-asset-filters-for-replication}
+### Personalizzare i filtri delle risorse per la replica (facoltativo) {#customizing-asset-filters-for-replication}
 
-Per personalizzare facoltativamente i filtri delle risorse per la replica:
-
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale e tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Ad Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
 1. Nella struttura ad albero delle cartelle a sinistra, passa a `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` per controllare i filtri.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. Per definire il tipo di MIME per il filtro, potete individuare il tipo di MIME come segue:
 
-   Nella barra a sinistra, espandi `content > dam > <locate_your_asset> >  jcr:content > metadata` e quindi nella tabella individua **[!UICONTROL dc:format]**.
+   Nella barra a sinistra, espandi `content > dam > <locate_your_asset> >  jcr:content > metadata`, quindi nella tabella individua `dc:format`.
 
-   L’immagine seguente è un esempio del percorso di una risorsa a dc:format.
+   L’immagine seguente è un esempio del percorso di una risorsa a `dc:format`.
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
@@ -780,36 +778,21 @@ Per personalizzare facoltativamente i filtri delle risorse per la replica:
 
    I caratteri utilizzabili per filtrare la replica includono:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Carattere da utilizzare</strong></td>
-   <td><strong>Filtrare le risorse per la replica</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>Carattere jolly<br /> </td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>Include le risorse per la replica.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Esclude le risorse dalla replica.</td>
-  </tr>
- </tbody>
-</table>
+   | Carattere da utilizzare | Filtrare le risorse per la replica |
+   | --- | --- |
+   | `*` | Carattere jolly |
+   | `+` | Include le risorse per la replica |
+   | `-` | Esclude le risorse dalla replica |
 
-Accedi a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Accedi a `content/dam/<locate your asset>/jcr:content/renditions`.
 
-L’immagine seguente è un esempio delle rappresentazioni di una risorsa.
+   L’immagine seguente è un esempio delle rappresentazioni di una risorsa.
 
-![chlimage_1-513](assets/chlimage_1-4.png)
+   ![chlimage_1-513](assets/chlimage_1-4.png)
 
-Utilizzando l’esempio precedente, se desideri replicare solo il PTIFF (TIFF piramidale), immetti `+cqdam,*` che include tutte le rappresentazioni che iniziano con `cqdam`. Nell’esempio, il rendering è `cqdam.pyramid.tiff`.
+   Utilizzando l’esempio precedente, se desideri replicare solo il PTIFF (TIFF piramidale), immetti `+cqdam,*` che include tutte le rappresentazioni che iniziano con `cqdam`. Nell’esempio, il rendering è `cqdam.pyramid.tiff`.
 
-Se desideri replicare solo l’originale, immetti `+original`.
+   Se desideri replicare solo l’originale, immetti `+original`.
 
 ## Configurazione delle impostazioni di Dynamic Media Image Server {#configuring-dynamic-media-image-server-settings}
 
@@ -822,62 +805,31 @@ Dynamic Media funziona preconfigurato [dopo che è abilitato](#enabling-dynamic-
 
 Per configurare le impostazioni di Dynamic Media Image Server:
 
-1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
-1. Nella pagina Configurazione console Web di Adobe Experience Manager, tocca **[!UICONTROL OSGi]** > **[!UICONTROL Configurazione]** per elencare tutti i bundle attualmente in esecuzione in Experience Manager.
+1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+1. Nella pagina Configurazione della console Web di Adobe Experience Manager, vai a **[!UICONTROL OSGi]** > **[!UICONTROL Configurazione]** per elencare tutti i bundle attualmente in esecuzione in Experience Manager.
 
    I server di consegna Dynamic Media si trovano sotto i seguenti nomi nell&#39;elenco:
 
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. Nell&#39;elenco dei bundle, a destra di Adobe CQ Scene7 ImageServer, tocca l&#39;icona **[!UICONTROL Modifica]**.
+1. Nell&#39;elenco dei bundle, a destra di Adobe CQ Scene7 ImageServer, seleziona l&#39;icona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo Adobe CQ Scene7 ImageServer, impostare i seguenti valori di configurazione:
 
    >[!NOTE]
    Di solito, non è necessario modificare i valori predefiniti. Tuttavia, se si modificano i valori predefiniti, è necessario riavviare il bundle per rendere effettive le modifiche.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Valore predefinito</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>TcpPort.name</td>
-   <td><code><em>empty</em></code></td>
-   <td>Numero di porta da utilizzare per la comunicazione con il processo ImageServer. Per impostazione predefinita, la porta libera viene rilevata automaticamente.</td>
-  </tr>
-  <tr>
-   <td>AllowRemoteAccess.name</td>
-   <td><code><em>empty</em></code></td>
-   <td><p>Consenti o disabilita l'accesso remoto al processo ImageServer. Se false, il server di immagini ascolta solo localhost.</p> <p>Le impostazioni esterne predefinite che puntano all'host locale devono specificare il dominio o l'indirizzo IP effettivo dell'istanza VM specifica. Il motivo è che localhost punta al sistema padre della VM.</p> <p>I domini o gli indirizzi IP della VM devono avere una voce di file host in modo che possa risolversi da soli.</p> </td>
-  </tr>
-  <tr>
-   <td>MaxRenderRngPixel</td>
-   <td>16 MPixels</td>
-   <td>Dimensione massima in megapixel di cui viene eseguito il rendering.</td>
-  </tr>
-  <tr>
-   <td>MaxMessageSize</td>
-   <td>16 MB</td>
-   <td>Dimensione massima del messaggio in megabyte consegnato.</td>
-  </tr>
-  <tr>
-   <td>RandomAccessUrlTimeout</td>
-   <td>20</td>
-   <td>Valore di timeout per quanto tempo in secondi il server di immagini attende che il JCR risponda a una richiesta di riquadri variati.</td>
-  </tr>
-  <tr>
-   <td>WorkerThreads</td>
-   <td>10</td>
-   <td>Numero di thread di lavoro.</td>
-  </tr>
- </tbody>
-</table>
+   | Proprietà | Valore predefinito | Descrizione |
+   | --- | --- | --- |
+   | `TcpPort.name` | *`empty`* | Numero di porta da utilizzare per la comunicazione con il processo ImageServer. Per impostazione predefinita, la porta libera viene rilevata automaticamente. |
+   | `AllowRemoteAccess.name` | *`empty`* | Consenti o disabilita l&#39;accesso remoto al processo ImageServer. Se false, il server di immagini ascolta solo localhost.<br> Le impostazioni Externalizer predefinite che puntano all&#39;host locale devono specificare il dominio o l&#39;indirizzo IP effettivo dell&#39;istanza VM specifica. Il motivo è che localhost punta al sistema padre della VM.<br>I domini o gli indirizzi IP della VM devono avere una voce di file host in modo che possa risolversi da soli. |
+   | `MaxRenderRgnPixels` | 16 MP | Dimensione massima in megapixel di cui viene eseguito il rendering. |
+   | `MaxMessageSize` | 16 MB | Dimensione massima del messaggio in megabyte consegnato. |
+   | `RandomAccessUrlTimeout` | 20 | Valore di timeout per quanto tempo in secondi il server di immagini attende che il JCR risponda a una richiesta di riquadri variati. |
+   | `WorkerThreads` | 10 | Numero di thread di lavoro. |
 
-1. Tocca **[!UICONTROL Salva]**.
-1. Nell’elenco dei bundle, a destra di Adobe CQ Scene7 PlatformServer, tocca l’icona **[!UICONTROL Modifica]**.
+1. Seleziona **[!UICONTROL Salva]**.
+1. Nell’elenco dei bundle, a destra di Adobe CQ Scene7 PlatformServer, seleziona l’icona **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo Adobe CQ Scene7 PlatformServer impostare le seguenti opzioni di valore predefinite:
 
    >[!NOTE]
@@ -902,68 +854,25 @@ La posizione della configurazione del manifesto predefinito viene presa dal valo
 
 È possibile modificare i valori delle proprietà, come descritto nella tabella seguente, immettendo nuovi valori.
 
-Una volta completata la modifica del manifesto predefinito, nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Salva tutto]**.
+Dopo aver modificato il manifesto predefinito, seleziona **[!UICONTROL Salva tutto]** nell’angolo in alto a sinistra della pagina.
 
-Tocca la scheda **[!UICONTROL Controllo accessi]** (a destra della scheda Proprietà), quindi imposta i privilegi di controllo accessi su `jcr:read` per tutti gli utenti e gli utenti della replica Dynamic-media.
+Assicurati di selezionare la scheda **[!UICONTROL Controllo accessi]** (a destra della scheda Proprietà), quindi di impostare i privilegi di controllo accessi su `jcr:read` per tutti gli utenti e gli utenti di replica Dynamic-media.
 
 ![Configurare Image Server in CRXDE Lite e impostare la scheda Controllo accesso](assets/configimageservercrxdeliteaccesscontroltab.png)
 
 Tabella delle impostazioni Manifest e dei relativi valori predefiniti:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Valore predefinito</strong></td>
-   <td><strong>Descrizione</strong></td>
-  </tr>
-  <tr>
-   <td>bkgcolor</td>
-   <td>FFFFFF</td>
-   <td><p>Colore di sfondo predefinito. Valore RGB utilizzato per compilare un'area dell'immagine di risposta che non contiene dati immagine effettivi.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api">BkgColor</a> nell'API Image Serving.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultpix</td>
-   <td>300.300</td>
-   <td><p>Dimensione predefinita della visualizzazione. Il server vincola le immagini di risposta a non superare questa larghezza e altezza, se la richiesta non specifica esplicitamente la dimensione di visualizzazione utilizzando wid=, hei= o scl=.</p> <p>Specificato come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Entrambi i valori possono essere impostati su 0 per mantenerli non vincolati. Non si applica alle richieste nidificate/incorporate.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a> nell'API di Image Server.</p> <p>Di solito, tuttavia, per distribuire la risorsa utilizzi un predefinito visualizzatore o un predefinito immagine. Defaultpix si applica solo a una risorsa che non utilizza un predefinito visualizzatore o un predefinito immagine.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultthumbpix</td>
-   <td>100.100</td>
-   <td><p>Dimensione predefinita miniatura. Utilizzato al posto dell'attributo::DefaultPix per le richieste di miniature (req=tmb).</p> <p>Il server vincola le immagini di risposta a non superare questa larghezza e altezza. Questa azione è vera se una richiesta di miniatura (req=tmb) non specifica esplicitamente la dimensione della visualizzazione e non specifica esplicitamente la dimensione della visualizzazione utilizzando `wid=`, `hei=` o `scl=`.</p> <p>Specificato come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Entrambi i valori possono essere impostati su 0 per mantenerli non vincolati. </p> <p>Non si applica alle richieste nidificate/incorporate.</p> <p>Consulta anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> nell'API Image Serving. </p> </td>
-  </tr>
-  <tr>
-   <td>scadenza</td>
-   <td>36000000</td>
-   <td><p>Tempo predefinito della cache del client per la durata. Fornisce un intervallo di scadenza predefinito nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Expiration.</p> <p>Numero reale, 0 o superiore. Numero di millisecondi fino alla scadenza dalla generazione dei dati di risposta. Imposta su 0 per far scadere sempre l'immagine di risposta immediatamente, il che disabilita in modo efficace il caching del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se una nuova immagine viene pubblicata, occorrono 10 ore perché la vecchia immagine lasci la cache dell’utente. Contatta l’Assistenza clienti se hai bisogno di cancellare la cache prima.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Scadenza</a> nell'API di Image Server.</p> </td>
-  </tr>
-  <tr>
-   <td>jpegquality</td>
-   <td>80</td>
-   <td><p>Attributi di codifica JPEG predefiniti. Specifica gli attributi predefiniti per le immagini di risposta JPEG.</p> <p>Numero intero e flag, separati da una virgola. Il primo valore è compreso nell'intervallo 1.100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale, o 1 per disabilitare il sottocampionamento della cromaticità RGB utilizzato dagli encoder JPEG.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a> nell'API Image Server.</p> </td>
-  </tr>
-  <tr>
-   <td>maxpix</td>
-   <td>2000.2000</td>
-   <td><p>Limite di dimensione dell'immagine della risposta. Larghezza e altezza massime dell'immagine di risposta restituite al client.</p> <p>Il server restituisce un errore se una richiesta causa un'immagine di risposta la cui larghezza o altezza è maggiore dell'attributo::MaxPix.</p> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api">MaxPix</a> nell'API Image Server.</p> </td>
-  </tr>
-  <tr>
-   <td>resmodo</td>
-   <td>SHARP2</td>
-   <td><p>Modalità di ricampionamento predefinita. Specifica gli attributi di ricampionamento e interpolazione predefiniti da utilizzare per il ridimensionamento dei dati immagine.</p> <p>Utilizzato quando resMode= non è specificato in una richiesta.</p> <p>I valori consentiti sono BILIN, BICUB o SHARP2.</p> <p>Enum. Impostato su 2 per bilin, 3 per bicub o 4 per il modo di interpolazione diesis2. Utilizza Sharp2 per ottenere risultati migliori.</p> <p>Consulta anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api">ResMode</a> nell'API Image Serving.</p> </td>
-  </tr>
-  <tr>
-   <td>risoluzione</td>
-   <td>72</td>
-   <td><p>Risoluzione dell'oggetto predefinita. Fornisce una risoluzione predefinita dell'oggetto nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Resolution.</p> <p>Numero reale, maggiore di 0. In genere espresso come pixel per pollice, ma può anche essere in altre unità, come i pixel per metro.</p> <p>Consulta anche <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">Risoluzione</a> nell’API Image Serving.</p> </td>
-  </tr>
-  <tr>
-   <td>thumbnail</td>
-   <td>1%.11%.21%.31%.41%.51%.61%.71%.81%.91%</td>
-   <td>Questi valori rappresentano un'istantanea del tempo di riproduzione video e vengono passati a <a href="https://www.encoding.com/">encoding.com</a>. Per ulteriori informazioni, consulta <a href="/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode">Informazioni sulle miniature video</a> .</td>
-  </tr>
- </tbody>
-</table>
+| Proprietà | Valore predefinito | Descrizione |
+| --- | --- | --- |
+| `bkgcolor` | `FFFFFF` | Colore di sfondo predefinito. Valore RGB utilizzato per compilare un&#39;area dell&#39;immagine di risposta che non contiene dati immagine effettivi. Vedi anche [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) nell&#39;API Image Serving. |
+| `defaultpix` | `300,300` | Dimensione predefinita della visualizzazione. Il server vincola le immagini di risposta a non superare questa larghezza e altezza, se la richiesta non specifica esplicitamente la dimensione di visualizzazione utilizzando wid=, hei= o scl=.<br>Specificato come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Entrambi i valori possono essere impostati su 0 per mantenerli non vincolati. Non si applica alle richieste nidificate/incorporate.<br>Vedi anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) DefaultPixin the Image Serving API.<br>Di solito, tuttavia, per distribuire la risorsa utilizzi un predefinito visualizzatore o un predefinito immagine. Defaultpix si applica solo a una risorsa che non utilizza un predefinito visualizzatore o un predefinito immagine. |
+| `defaultthumbpix` | `100,100` | Dimensione predefinita miniatura. Utilizzato al posto dell&#39;attributo::DefaultPix per le richieste di miniature (`req=tmb`).<br>Il server vincola le immagini di risposta a non superare questa larghezza e altezza. Questa azione è vera se una richiesta di miniatura (`req=tmb`) non specifica esplicitamente la dimensione della visualizzazione e non specifica esplicitamente la dimensione della visualizzazione utilizzando `wid=`, `hei=` o `scl=`.<br>Specificato come due numeri interi, pari a 0 o superiori, separati da una virgola. Larghezza e altezza in pixel. Entrambi i valori possono essere impostati su 0 per mantenerli non vincolati.<br>Non si applica alle richieste nidificate/incorporate.<br>Vedi anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) DefaultThumbPixin the Image Serving API. |
+| `expiration` | `36000000` | Tempo predefinito della cache del client per la durata. Fornisce un intervallo di scadenza predefinito nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Expiration.<br>Numero reale, 0 o superiore. Numero di millisecondi fino alla scadenza dalla generazione dei dati di risposta. Imposta su 0 per far scadere sempre l&#39;immagine di risposta immediatamente, il che disabilita in modo efficace il caching del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se una nuova immagine viene pubblicata, occorrono 10 ore perché la vecchia immagine lasci la cache dell’utente. Contatta l’Assistenza clienti se hai bisogno di cancellare la cache prima.<br>Vedi anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) Scadenza nell’API di Image Serving. |
+| `jpegquality` | `80` | Attributi di codifica JPEG predefiniti. Specifica gli attributi predefiniti per le immagini di risposta JPEG.<br>Numero intero e flag, separati da una virgola. Il primo valore è compreso nell&#39;intervallo 1.100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale, o 1 per disabilitare il sottocampionamento della cromaticità RGB utilizzato dagli encoder JPEG.<br>Vedi anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) JpegQualityin Image Serving API. |
+| `maxpix` | `2000,2000` | Limite di dimensione dell&#39;immagine della risposta. Larghezza e altezza massime dell&#39;immagine di risposta restituite al client.<br>Il server restituisce un errore se una richiesta causa un&#39;immagine di risposta la cui larghezza o altezza è maggiore dell&#39;attributo::MaxPix.<br>Vedi anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) MaxPixin the Image Serving API. |
+| `resmode` | `SHARP2` | Modalità di ricampionamento predefinita. Specifica gli attributi di ricampionamento e interpolazione predefiniti da utilizzare per il ridimensionamento dei dati immagine.<br>Utilizzato quando non  `resMode=` è specificato in una richiesta.<br>I valori consentiti includono  `BILIN`,  `BICUB` o  `SHARP2`.<br>Enum. Impostare su 2 per `bilin`, 3 per `bicub` o 4 per la modalità di interpolazione `sharp2`. Utilizza `sharp2` per ottenere risultati migliori.<br>Consulta anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) ResModein Image Serving API. |
+| `resolution` | `72` | Risoluzione dell&#39;oggetto predefinita. Fornisce una risoluzione predefinita dell&#39;oggetto nel caso in cui un particolare record di catalogo non contenga un valore di catalogo valido::Resolution.<br>Numero reale, maggiore di 0. In genere espresso come pixel per pollice, ma può anche essere in altre unità, come i pixel per metro.<br>Consulta anche  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) Risoluzione nell’API Image Serving . |
+| `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Questi valori rappresentano un&#39;istantanea del tempo di riproduzione video e vengono passati a [encoding.com](https://www.encoding.com/). Per ulteriori informazioni, consulta [Informazioni sulla miniatura del video](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) . |
 
 ## Configurazione della gestione del colore Dynamic Media {#configuring-dynamic-media-color-management}
 
@@ -1007,11 +916,11 @@ Dopo aver installato il feature pack, configurate i profili di colore predefinit
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
-1. Aggiungi una proprietà di correzione del colore scorrendo nella parte inferiore della scheda **[!UICONTROL Proprietà]** . Immettere manualmente il nome, il tipo e il valore della proprietà, descritti nelle tabelle seguenti. Dopo aver inserito i valori, tocca **[!UICONTROL Aggiungi]** e quindi **[!UICONTROL Salva tutto]** per salvare i valori.
+1. Aggiungi una proprietà di correzione del colore scorrendo nella parte inferiore della scheda **[!UICONTROL Proprietà]** . Immettere manualmente il nome, il tipo e il valore della proprietà, descritti nelle tabelle seguenti. Dopo aver inserito i valori, selezionare **[!UICONTROL Aggiungi]** e quindi **[!UICONTROL Salva tutto]** per salvare i valori.
 
    Le proprietà di correzione del colore sono descritte nella tabella **Proprietà correzione colore**. I valori che è possibile assegnare alle proprietà di correzione del colore si trovano nella tabella **Profilo colore**.
 
-   Ad esempio, in **[!UICONTROL Nome]**, aggiungi `iccprofilecmyk`, seleziona **[!UICONTROL Tipo]** `String` e aggiungi `WebCoated` come **[!UICONTROL Valore]**. Quindi tocca **[!UICONTROL Aggiungi]** e poi **[!UICONTROL Salva tutto]** per salvare i valori.
+   Ad esempio, in **[!UICONTROL Nome]**, aggiungi `iccprofilecmyk`, seleziona **[!UICONTROL Tipo]** `String` e aggiungi `WebCoated` come **[!UICONTROL Valore]**. Quindi seleziona **[!UICONTROL Aggiungi]** e poi **[!UICONTROL Salva tutto]** per salvare i valori.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1259,7 +1168,7 @@ Sono installati i seguenti profili di colore:
  </tbody>
 </table>
 
-1. Tocca **[!UICONTROL Salva tutto]**.
+1. Selezionare **[!UICONTROL Salva tutto]**.
 
 Ad esempio, puoi impostare **[!UICONTROL iccprofilergb]** su `sRGB` e **[!UICONTROL iccprofilecmyk]** su **[!UICONTROL WebCoated]**.
 
