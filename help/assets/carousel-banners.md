@@ -11,10 +11,10 @@ docset: aem65
 feature: Banner a carosello
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '4740'
-ht-degree: 4%
+source-wordcount: '4732'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Sul sito web, un banner a carosello può essere visualizzato come segue:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Qui puoi navigare tra le immagini (facendo clic sui numeri). Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini aggiunte nei banner carosello supportano sia punti attivi che mappe immagine, dove gli utenti possono toccare o passare a un collegamento ipertestuale o accedere a una finestra Quickview.
+Qui puoi navigare tra le immagini (facendo clic sui numeri). Inoltre, le diapositive ruotano automaticamente in base a un intervallo di tempo personalizzabile. Le immagini aggiunte nei banner carosello supportano sia punti attivi che mappe immagine, in cui gli utenti possono selezionare o passare a un collegamento ipertestuale o accedere a una finestra Quickview.
 
 In questo esempio, un utente ha toccato o fatto clic su una mappa immagine e ha effettuato l’accesso alla finestra Quickview per i guanti:
 
@@ -48,7 +48,7 @@ Segui una procedura dettagliata su [come vengono creati i banner a carosello](ht
 
 ## Avvio rapido: Banner a carosello {#quick-start-carousel-banners}
 
-Per iniziare a utilizzare i Banner carosello in tempi brevi:
+Per iniziare a usare rapidamente i banner a carosello:
 
 1. [Identificare le variabili di punti attivi e mappe immagine](#identifying-hotspot-and-image-map-variables)  (solo per i clienti che utilizzano Experience Manager Assets + Dynamic Media)
 
@@ -69,21 +69,21 @@ Per iniziare a utilizzare i Banner carosello in tempi brevi:
 
    Carica i banner immagine che desideri rendere interattivi.
 
-1. [Crea un set carosello](#creating-carousel-sets).
+1. [Creare set carosello](#creating-carousel-sets).
 
-   In Set caroselli, gli utenti navigano tra le immagini dei banner e toccano punti attivi o mappe immagine per accedere ai contenuti pertinenti.
+   In Set caroselli, gli utenti navigano tra le immagini dei banner e selezionano punti attivi o mappe immagine per accedere ai contenuti pertinenti.
 
-   Per creare un set carosello all’interno di Assets, tocca **[!UICONTROL Crea]**, quindi seleziona **[!UICONTROL Set carosello]**. Aggiungi le risorse alle diapositive e tocca **[!UICONTROL Salva]**. Inoltre, puoi modificare l’aspetto e il comportamento del carosello direttamente nell’editor.
+   Per creare un set carosello in Assets, seleziona **[!UICONTROL Crea]**, quindi seleziona **[!UICONTROL Set carosello]**. Aggiungi le risorse alle diapositive e seleziona **[!UICONTROL Salva]**. Inoltre, puoi modificare l’aspetto e il comportamento del carosello direttamente nell’editor.
 
 1. [Aggiungi punti attivi o mappe immagine a un banner](#adding-hotspots-or-image-maps-to-an-image-banner) immagine.
 
    Aggiungi uno o più punti attivi o mappe immagine a un banner immagine e associali ciascuno di essi a un&#39;azione come un collegamento, una visualizzazione rapida o un frammento esperienza. Dopo aver aggiunto punti attivi o mappe immagine, finisci questa attività pubblicando il set carosello. La pubblicazione crea il codice di incorporamento che puoi utilizzare per copiare e applicare alla pagina di destinazione del tuo sito web.
 
-   Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del set carosello e verificarne l’interattività.
+   Consulta [(Facoltativo) Anteprima banner carosello](#optional-previewing-carousel-banners) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del set carosello e verificarne l’interattività.
 
-1. [Pubblicare Banner Carosello](#publishing-carousel-banners).
+1. [Pubblicare banner a carosello](#publishing-carousel-banners).
 
-   Puoi pubblicare un set carosello come faresti con una risorsa. In Assets, passa al set carosello e selezionalo, quindi tocca **[!UICONTROL Pubblica]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
+   Puoi pubblicare un set carosello come faresti con una risorsa. In Assets, passa al set carosello e selezionalo, quindi seleziona **[!UICONTROL Pubblica]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
 
 1. Effettua una delle operazioni seguenti:
 
@@ -95,7 +95,7 @@ Per iniziare a utilizzare i Banner carosello in tempi brevi:
 
 Per modificare i set carosello, consulta [modifica di set carosello](#editing-carousel-sets). Inoltre, puoi visualizzare e modificare le proprietà del [Set carosello](manage-assets.md#editing-properties).
 
-## Identificazione delle variabili dei punti attivi e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
+## Identificare le variabili dei punti attivi e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione di Quickview esistente in modo da poter inserire correttamente i punti attivi o i dati della mappa immagine durante il processo di creazione del set carosello in Experience Manager Assets.
 
@@ -124,7 +124,7 @@ L’approccio consiste quindi nel visitare diverse aree del sito web esistente i
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello Strumenti per sviluppatori, quindi tocca la scheda Rete.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premere F12 (Windows) o Comando-Opzione-I (Mac) per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Rete.
 * In Firefox, è possibile attivare il plug-in Firebug premendo F12 (Windows) o Comando-Opzione-I (Mac) e utilizzando la relativa scheda Net, oppure è possibile utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
 
 Quando il monitoraggio della rete è attivato nel browser, attiva la visualizzazione rapida nella pagina.
@@ -177,45 +177,45 @@ Prendi in considerazione i seguenti esempi di URL di visualizzazione rapida e le
  </tbody>
 </table>
 
-## Caricamento dei banner immagine {#uploading-image-banners}
+## Carica banner immagine {#uploading-image-banners}
 
-Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [Creazione di set carosello](#creating-carousel-sets). Le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Media.
+Se hai già caricato le immagini da utilizzare, passa al passaggio successivo, [Crea set carosello](#creating-carousel-sets). Le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Media.
 
-Per caricare i banner immagine, consulta [Caricamento delle risorse](/help/assets/manage-assets.md).
+Per caricare i banner immagine, consulta [Caricare risorse](/help/assets/manage-assets.md).
 
-## Creazione di set carosello {#creating-carousel-sets}
+## Crea set carosello {#creating-carousel-sets}
 
 >[!NOTE]
 >
 >Per poter creare o modificare i banner carosello, è necessario aggiungere utenti non amministratori al gruppo **[!UICONTROL dam-users]** . In caso di problemi durante la creazione o la modifica, rivolgiti all&#39;amministratore di sistema che può aggiungerti al gruppo **[!UICONTROL dam-users]** .
 
-**Per creare un set carosello:**
+**Per creare dei set carosello:**
 
-1. In Assets, individua la cartella in cui vuoi creare il set carosello e tocca **[!UICONTROL Crea > Set carosello]**.
-1. Nella pagina Editor banner carosello, tocca **[!UICONTROL Tocca per aprire Selettore risorse]** per selezionare l’immagine per la prima diapositiva.
+1. In Assets, individua la cartella in cui vuoi creare il set carosello e vai a **[!UICONTROL Crea]** > **[!UICONTROL Set carosello]**.
+1. Nella pagina dell’editor dei banner a carosello, seleziona **[!UICONTROL Tocca per aprire Selettore risorse]** per selezionare l’immagine per la prima diapositiva.
 
-   Nella pagina Editor banner carosello, effettuare una delle seguenti operazioni:
+   Nella pagina dell’editor dei banner carosello, effettua una delle seguenti operazioni:
 
-   * Nell’angolo in alto a sinistra della pagina, tocca l’icona **[!UICONTROL Aggiungi diapositiva]** .
+   * Nell’angolo in alto a sinistra della pagina, seleziona l’icona **[!UICONTROL Aggiungi diapositiva]** .
 
-   * Vicino al centro della pagina, tocca **[!UICONTROL Tocca per aprire Selettore risorse]**.
-   Tocca per selezionare le risorse da includere nel Set carosello. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Seleziona]**.
+   * Vicino al centro della pagina, seleziona **[!UICONTROL Tocca per aprire Selettore risorse]**.
+   Seleziona per selezionare le risorse da includere nel set carosello. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e quindi fai clic sull&#39;icona **[!UICONTROL Filtro]** sulla barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
 
-   Per ulteriori informazioni, consulta [Utilizzo dei selettori](/help/assets/working-with-selectors.md) .
+   Per ulteriori informazioni, consulta [Lavorare con i selettori](/help/assets/working-with-selectors.md) .
 
 1. Continua ad aggiungere diapositive finché non avrai aggiunto tutte le immagini da ruotare nel set carosello.
 1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Se necessario, trascinate le diapositive per riordinare le immagini nell’elenco del set.
-   * Per eliminare un’immagine, selezionala, quindi tocca **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
+   * Per eliminare un&#39;immagine, selezionarla, quindi selezionare **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
 
-   * Per applicare un predefinito, tocca l’elenco a discesa dei predefiniti nell’angolo in alto a destra della pagina, quindi seleziona un predefinito da applicare al set contemporaneamente.
-   Per eliminare una diapositiva, tocca o fai clic sulla diapositiva e tocca o fai clic su **[!UICONTROL Elimina diapositiva]** nella barra degli strumenti. Per spostare una diapositiva, toccate l&#39;icona di riordino e tenete premuto e spostate nella posizione desiderata.
+   * Per applicare un predefinito, vicino all’angolo superiore destro della pagina, seleziona l’elenco a discesa dei predefiniti , quindi seleziona un predefinito da applicare al set contemporaneamente.
+   Per eliminare una diapositiva, selezionarla, quindi sulla barra degli strumenti selezionare **[!UICONTROL Elimina diapositiva]**. Per spostare una diapositiva, selezionate l&#39;icona di riordino e tenete premuto e spostate nella posizione desiderata.
 
-1. Dopo aver aggiunto le immagini nelle diapositive, puoi aggiungere un punto attivo, una mappa immagine o entrambi all’immagine. Consulta [aggiunta di punti attivi o mappe immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. È possibile modificare la progettazione visiva e il comportamento dei set carosello. Tocca le schede **[!UICONTROL Comportamento]** e **[!UICONTROL Aspetto]** e regola il modo in cui viene visualizzato il banner carosello o il comportamento di componenti specifici. Consulta [Gestione dei predefiniti visualizzatore](/help/assets/viewer-presets.md) per ulteriori informazioni su come utilizzare l’editor per visualizzatori.
+1. Dopo aver aggiunto le immagini nelle diapositive, puoi aggiungere un punto attivo, una mappa immagine o entrambi all’immagine. Consulta [Aggiungere punti attivi o mappe immagine a un banner immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
+1. È possibile modificare la progettazione visiva e il comportamento dei set carosello. Seleziona le schede **[!UICONTROL Comportamento]** e **[!UICONTROL Aspetto]** e regola il modo in cui viene visualizzato il banner carosello o il comportamento di componenti specifici. Per ulteriori informazioni su come utilizzare l’editor per visualizzatori, consulta [Gestire i predefiniti visualizzatore](/help/assets/viewer-presets.md) .
 
    >[!NOTE]
    >
@@ -228,11 +228,11 @@ Per caricare i banner immagine, consulta [Caricamento delle risorse](/help/asset
    >    * Prima di modificare un predefinito visualizzatore, scegli lo stile su cui desideri che sia basato il predefinito. Se non scegli uno stile, quando inizi a modificare il predefinito visualizzatore, perderai tutte le modifiche se decidi di cambiare un predefinito diverso.
 
    >
-   >Per istruzioni dettagliate e ulteriori informazioni sull’editor visualizzatore, consulta [Considerazioni speciali per i banner carosello](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) .
+   >Per istruzioni dettagliate e ulteriori informazioni sull’editor visualizzatore, consulta [Considerazioni speciali per i banner a carosello](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) .
 
-   È inoltre possibile visualizzare in anteprima l’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
+   È inoltre possibile visualizzare in anteprima l’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima banner carosello](#optional-previewing-carousel-banners).
 
-1. Al termine, tocca **[!UICONTROL Salva]** .
+1. Al termine, seleziona **[!UICONTROL Salva]**.
 
 ## Aggiunta di punti attivi o mappe immagine a un banner immagine {#adding-hotspots-or-image-maps-to-an-image-banner}
 
@@ -244,7 +244,7 @@ Consulta [Frammento esperienza](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorpori il visualizzatore in un Frammento esperienza.
+>Gli strumenti di condivisione social media nel banner carosello non sono supportati quando incorpori il visualizzatore in un frammento esperienza.
 >
 >Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti di condivisione social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
 
@@ -252,49 +252,49 @@ Quando aggiungi punti attivi o mappe immagine a un&#39;immagine, ricorda di salv
 
 Al termine della creazione del banner carosello, puoi facoltativamente utilizzare Anteprima per visualizzare una rappresentazione dell’aspetto del banner carosello per i clienti.
 
-Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
+Consulta [(Facoltativo) Anteprima banner carosello](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
->Quando aggiungi punti attivi a un&#39;immagine in un [Immagine interattiva](/help/assets/interactive-images.md) o in un banner carosello, le informazioni relative al punto attivo vengono memorizzate nella stessa posizione di metadati. Tale posizione è relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai relativi dati definiti per i punti attivi, in entrambi i visualizzatori.
-Tenere tuttavia presente che i caroselli banner supportano mappe immagine su immagini che possono contenere anche punti attivi; un&#39;immagine interattiva non lo è. Tieni presente questa regola se intendi creare un’immagine interattiva o un banner carosello che utilizza la stessa immagine. È consigliabile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
+>Quando aggiungi punti attivi a un&#39;immagine in un [Immagine interattiva](/help/assets/interactive-images.md) o in un banner carosello, le informazioni relative al punto attivo vengono memorizzate nella stessa posizione dei metadati. Tale posizione è relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner a carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai relativi dati definiti per i punti attivi, in entrambi i visualizzatori.
+Tuttavia, i banner carosello supportano mappe immagine su immagini che possono contenere anche punti attivi; un&#39;immagine interattiva non lo è. Tieni presente questa regola se intendi creare un&#39;immagine interattiva o un banner carosello che utilizza la stessa immagine. Prendi in considerazione la creazione di immagini interattive e di banner a carosello utilizzando copie separate della stessa immagine.
 
 >[!NOTE]
 Se modifichi immagini interattive con punti attivi e ritagli l’immagine, questi vengono rimossi.
 
-Consulta anche [Aggiunta di mappe immagine](/help/assets/image-maps.md).
+Vedi anche [Aggiungi mappe immagine](/help/assets/image-maps.md).
 
 **Per aggiungere punti attivi o mappe immagine a un banner immagine:**
 
 1. Da Risorse, accedi al set carosello che desideri rendere interattivo.
-1. Seleziona il set carosello e tocca **[!UICONTROL Modifica]**. Viene aperto l’Editor visualizzatore carosello.
+1. Seleziona il set carosello e seleziona **[!UICONTROL Modifica]**. Viene aperto l’Editor visualizzatore carosello.
 1. Selezionare la diapositiva da rendere interattiva.
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Punto attivo]** o **[!UICONTROL Mappa immagine]**.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Punto attivo]** o **[!UICONTROL Mappa immagine]**.
 1. Effettua una delle seguenti operazioni:
 
-   * Per gli hotspot: Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo.
-   * Per le mappe immagine: Nell’immagine, fai clic su , quindi trascina dall’alto a sinistra verso il basso a destra per creare l’area della mappa immagine. È possibile regolare le dimensioni della mappa immagine trascinando gli angoli.
+   * Per gli hotspot: Nell’immagine, seleziona la posizione in cui vuoi visualizzare il punto attivo.
+   * Per le mappe immagine: Nell’immagine, seleziona , quindi trascina dall’alto a sinistra verso il basso a destra per creare l’area della mappa immagine. È possibile regolare le dimensioni della mappa immagine trascinando gli angoli.
 
    Se necessario, trascina il punto attivo o la mappa immagine in una nuova posizione. Aggiungi altri punti attivi o mappe immagine se necessario.
 
-   Per eliminare un punto attivo o una mappa immagine, tocca la scheda **[!UICONTROL Azioni]**. Seleziona il nome del punto attivo o della mappa immagine da rimuovere dall’intestazione **[!UICONTROL Mappe e punti attivi]** del menu a discesa **[!UICONTROL Tipo selezionato]**. Tocca l’icona **[!UICONTROL Cestino]** accanto al menu, quindi seleziona **[!UICONTROL Elimina]**.
+   Per eliminare un punto attivo o una mappa immagine, seleziona la scheda **[!UICONTROL Azioni]** . Seleziona il nome del punto attivo o della mappa immagine da rimuovere dall’intestazione **[!UICONTROL Mappe e punti attivi]** del menu a discesa **[!UICONTROL Tipo selezionato]**. Seleziona l&#39;icona **[!UICONTROL Cestino]** accanto al menu, quindi seleziona **[!UICONTROL Elimina]**.
 
 1. Nel campo di testo Nome , digita il nome del punto attivo o della mappa immagine. Questo nome viene visualizzato anche nell&#39;elenco a discesa **[!UICONTROL Mappe e punti attivi]** . Se specifichi un nome, identifica facilmente il punto attivo o la mappa immagine se decidi di modificarlo in futuro.
 1. Effettua una delle seguenti operazioni nella scheda **[!UICONTROL Azioni]** :
 
-   * Tocca **[!UICONTROL Quickview]**.
+   * Seleziona **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente di Experience Manager Sites ed e-commerce, tocca l’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca il prodotto da utilizzare, quindi tocca il segno di spunta nell’angolo in alto a destra della pagina per tornare all’Editor banner carosello.
+      * Se sei un cliente di Experience Manager Sites ed e-commerce, seleziona l’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Seleziona il prodotto da utilizzare, quindi fai clic sul segno di spunta nell’angolo superiore destro della pagina per tornare all’editor dei banner carosello.
       * Se non sei un cliente Experience Manager Sites o e-commerce
 
-         * Per definire queste variabili, consulta [Identificazione delle variabili del punto attivo](#identifying-hotspot-and-image-map-variables) .
+         * Per definire queste variabili, consulta [Identificare le variabili del punto attivo](#identifying-hotspot-and-image-map-variables) .
          * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
-         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, category=Mens è una variabile aggiunta.
+         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, category=Mens è una variabile aggiunta.
 
-         * Per ulteriori informazioni, consulta [Utilizzo dei selettori](/help/assets/working-with-selectors.md) .
-   * Toccare **[!UICONTROL Collegamento ipertestuale]**.
+         * Per ulteriori informazioni, consulta [Lavorare con i selettori](/help/assets/working-with-selectors.md) .
+   * Selezionare **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se sei un cliente di Experience Manager Sites, tocca l’icona Selettore sito (cartella) per passare a un URL.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore sito (cartella) per passare a un URL.
          >[!NOTE]
          Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
 
@@ -304,65 +304,65 @@ Consulta anche [Aggiunta di mappe immagine](/help/assets/image-maps.md).
 
    Per ulteriori informazioni, consulta [Utilizzo dei selettori](/help/assets/working-with-selectors.md) .
 
-   * Tocca **[!UICONTROL Frammento esperienza]**.
+   * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, tocca l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca o fai clic sul frammento esperienza da utilizzare, quindi tocca Seleziona nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Seleziona il frammento esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina, in modo da poter tornare alla pagina di gestione dei punti attivi.
 Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento esperienza così come viene visualizzato sul banner.
 
          >[!NOTE]
-         Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorpori il visualizzatore in un Frammento esperienza.
+         Gli strumenti di condivisione social media nel banner carosello non sono supportati quando incorpori il visualizzatore in un frammento esperienza.
          Per risolvere questo problema, crea predefiniti visualizzatore che non dispongono di strumenti di condivisione social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    È inoltre possibile visualizzare in anteprima l’aspetto del banner carosello. Consulta [(Facoltativo) Anteprima dei banner carosello](#optional-previewing-carousel-banners).
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 1. Pubblica il set carosello. La pubblicazione crea il codice di incorporamento o l’URL che puoi utilizzare sulla pagina del tuo sito web. Se sei un cliente di Experience Manager Sites, puoi aggiungere il set carosello direttamente alla tua pagina web.
 
    Consulta [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
    Consulta [Aggiunta di un set carosello alla pagina di destinazione del sito web](#adding-a-carousel-banner-to-your-website-page)
 
-## Modifica dei set carosello {#editing-carousel-sets}
+## Modifica set carosello {#editing-carousel-sets}
 
 >[!NOTE]
 Per poter creare o modificare i banner carosello, è necessario aggiungere utenti non amministratori al gruppo **[!UICONTROL dam-users]** . In caso di problemi durante la creazione o la modifica, rivolgiti all&#39;amministratore di sistema che può aggiungerti al gruppo **[!UICONTROL dam-users]** .
 
 È possibile eseguire varie attività di modifica sui set carosello, ad esempio:
 
-* Aggiungi le diapositive a un set carosello. Vedere anche [Utilizzo dei selettori](/help/assets/working-with-selectors.md).
+* Aggiungi le diapositive a un set carosello. Vedere anche [Operazioni con i selettori](/help/assets/working-with-selectors.md).
 * Riordinare le diapositive nel set carosello.
 * Elimina le risorse nel set carosello.
 * Applica un predefinito visualizzatore.
 * Elimina il set carosello.
-* Aggiungi o modifica punti attivi e mappe immagine. Vedere anche [Utilizzo dei selettori](/help/assets/working-with-selectors.md).
+* Aggiungi o modifica punti attivi e mappe immagine. Vedere anche [Operazioni con i selettori](/help/assets/working-with-selectors.md).
 
-**Per modificare un set carosello**
+**Per modificare i set carosello:**
 
 1. Effettua una delle seguenti operazioni:
 
-   * Passa il puntatore del mouse su una risorsa Set carosello, quindi tocca **[!UICONTROL Modifica]** (icona a forma di matita).
-   * Passa il puntatore del mouse su una risorsa Set carosello, tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi tocca **[!UICONTROL Modifica]** sulla barra degli strumenti.
+   * Passa il puntatore del mouse su una risorsa Set carosello, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita).
+   * Passa il puntatore del mouse su una risorsa Set carosello, seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi seleziona **[!UICONTROL Modifica]** sulla barra degli strumenti.
 
-   * Tocca una risorsa Set carosello, quindi nell’angolo in alto a sinistra della pagina tocca **[!UICONTROL Modifica]** (icona a forma di matita).
+   * Seleziona una risorsa Set carosello, quindi nell’angolo in alto a sinistra della pagina seleziona **[!UICONTROL Modifica]** (icona a forma di matita).
 
 1. Per modificare il set carosello, effettuate una delle seguenti operazioni:
 
-   * Per aggiungere una diapositiva, tocca l’icona **[!UICONTROL Aggiungi diapositiva]** , quindi individua la risorsa da aggiungere alla diapositiva e tocca o fai clic sul segno di spunta.
+   * Per aggiungere una diapositiva, seleziona l’icona **[!UICONTROL Aggiungi diapositiva]** , quindi individua la risorsa da aggiungere alla diapositiva e seleziona il segno di spunta.
    * Per riordinare le diapositive, trascinate una diapositiva in una nuova posizione (selezionate l&#39;icona di riordino per spostare gli elementi).
-   * Per aggiungere un punto attivo o una mappa immagine, fai clic sulle icone del punto attivo o della mappa immagine e consulta [aggiunta di punti attivi e mappe immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
-   * Per modificare l’aspetto o il comportamento del set carosello, tocca la scheda **[!UICONTROL Aspetto]** o **[!UICONTROL Comportamento]** , quindi imposta le opzioni desiderate.
+   * Per aggiungere un punto attivo o una mappa immagine, seleziona le icone del punto attivo o della mappa immagine e consulta [aggiunta di punti attivi e mappe immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Per modificare l&#39;aspetto o il comportamento del set carosello, seleziona la scheda **[!UICONTROL Aspetto]** o la scheda **[!UICONTROL Comportamento]** , quindi imposta le opzioni desiderate.
    * Per modificare punti attivi o mappe immagine, nella diapositiva appropriata seleziona un punto attivo o una mappa immagine e modifica in base alle esigenze nella scheda **[!UICONTROL Azioni]** .
-   * Per eliminare una diapositiva, selezionala, quindi tocca **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
-   * Per applicare un predefinito, tocca l’elenco a discesa **[!UICONTROL Predefinito]** nell’angolo in alto a destra della pagina, quindi seleziona un predefinito visualizzatore.
-   * Per eliminare un intero set carosello, accedi al set carosello, selezionalo, quindi tocca **[!UICONTROL Elimina]**.
+   * Per eliminare una diapositiva, selezionarla, quindi selezionare **[!UICONTROL Elimina diapositiva]** sulla barra degli strumenti.
+   * Per applicare un predefinito, seleziona l’elenco a discesa **[!UICONTROL Predefinito]** nell’angolo superiore destro della pagina, quindi seleziona un predefinito visualizzatore.
+   * Per eliminare un intero set carosello, passare al set carosello, selezionarlo, quindi selezionare **[!UICONTROL Elimina]**.
 
    >[!NOTE]
    Se modifichi immagini interattive con punti attivi e ritagli l’immagine, questi vengono rimossi.
 
-## (Facoltativo) Anteprima Dei Banner Carosello {#optional-previewing-carousel-banners}
+## (Facoltativo) Anteprima banner carosello {#optional-previewing-carousel-banners}
 
 Puoi utilizzare Anteprima per vedere come viene visualizzato il banner carosello ai clienti e per testare gli hotspot e le mappe immagine dei banner carosello per assicurarti che si comportino come previsto.
 
@@ -375,23 +375,23 @@ Puoi visualizzare in anteprima i banner carosello dall’Editor carosello (metod
 
 **Per visualizzare in anteprima i banner carosello:**
 
-1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e tocca per aprirlo.
-1. Tocca **[!UICONTROL Modifica]**.
+1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e seleziona per aprirlo.
+1. Seleziona **[!UICONTROL Modifica]**.
 1. Nell’elenco dei predefiniti visualizzatore nell’angolo a destra della barra degli strumenti, seleziona un visualizzatore per visualizzare l’anteprima del banner carosello.
 
    ![experience_fragment-carouselbanner-riquadro a discesa](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tocca **[!UICONTROL Anteprima]**.
-1. Tocca i punti attivi o le mappe immagine sull’immagine in modo da poterne testare le azioni associate.
+1. Seleziona **[!UICONTROL Anteprima]**.
+1. Seleziona gli hotspot o le mappe immagine sull&#39;immagine in modo da poterne testare le azioni associate.
 
 **Per visualizzare in anteprima i banner a carosello dall’elenco Visualizzatori:**
 
-1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e tocca per aprirlo.
-1. Fai clic sull’icona Contenuto nell’angolo in alto a sinistra della pagina Anteprima .
-1. Nell’elenco **[!UICONTROL Visualizzatori]** nel pannello sul lato sinistro della pagina, tocca il nome del predefinito visualizzatore per banner carosello che desideri usare.
-1. Tocca i punti attivi o le mappe immagine sull’immagine in modo da poterne testare le azioni associate.
+1. In **[!UICONTROL Risorse]**, individua il banner carosello esistente creato e seleziona per aprirlo.
+1. Nell’angolo in alto a sinistra della pagina Anteprima, seleziona l’icona Contenuto .
+1. Nell’elenco **[!UICONTROL Visualizzatori]** nel pannello a sinistra della pagina, seleziona il nome del predefinito visualizzatore per banner carosello da usare.
+1. Seleziona gli hotspot o le mappe immagine sull&#39;immagine in modo da poterne testare le azioni associate.
 
-## Pubblicazione dei banner a carosello {#publishing-carousel-banners}
+## Pubblicare banner a carosello {#publishing-carousel-banners}
 
 Pubblica il carosello in modo da poterlo utilizzare. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica anche il carosello su Dynamic Media cloud, integrato con una rete CDN per una distribuzione scalabile e performante.
 
@@ -399,26 +399,27 @@ Pubblica il carosello in modo da poterlo utilizzare. La pubblicazione di un set 
 Se utilizzi un’immagine interattiva esistente con punti attivi per il banner carosello, devi pubblicare separatamente l’immagine interattiva dopo aver pubblicato il banner carosello.
 Inoltre, se modifichi un’immagine interattiva pubblicata precedentemente che utilizzi in un banner carosello, devi pubblicare l’immagine interattiva prima che tali modifiche si riflettano nel banner carosello.
 
-Per informazioni su come pubblicare i banner carosello, consulta [Pubblicazione di risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) .
+Per informazioni su come pubblicare i banner carosello, consulta [Pubblicare risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) .
 
-## Aggiunta di un banner carosello alla pagina del sito web {#adding-a-carousel-banner-to-your-website-page}
+## Aggiungere un banner carosello alla pagina del sito web {#adding-a-carousel-banner-to-your-website-page}
 
 Dopo aver caricato le immagini del banner per creare un carosello, aggiunto gli hotspot e/o le mappe immagine al banner e pubblicato il set carosello, ora puoi aggiungerlo alla pagina del sito web esistente.
 
 >[!NOTE]
-Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiunta di risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Tuttavia, se sei un cliente di risorse di Experience Manager autonome, puoi aggiungere manualmente il banner carosello alla pagina di destinazione del sito web come descritto in questa sezione.
 
 1. Copia il codice di incorporamento del set carosello pubblicato.
-Consulta [Incorporamento del visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/embed-code.md).
 
 1. Aggiungi il codice di incorporamento copiato da Experience Manager Assets alla pagina web.
 Il codice di incorporamento copiato è reattivo e deve quindi adattarsi automaticamente all’area di incorporamento della pagina.
 
-## Integrazione del banner carosello con una visualizzazione rapida esistente {#integrating-the-carousel-banner-with-an-existing-quickview}
+## Integrare il banner carosello con una Quickview esistente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-Nota: questo passaggio si applica solo se sei un cliente di Experience Manager Assets indipendente.
+>[!NOTE]
+Questo passaggio si applica solo se sei un cliente di Experience Manager Assets indipendente.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il banner carosello con un’implementazione Quickview esistente sul sito web. Ogni implementazione di Quickview è unica ed è necessario un approccio specifico che implichi l&#39;assistenza di un utente IT front-end.
 
@@ -448,10 +449,10 @@ Pertanto, è solo necessario rimuovere il commento dal codice e sostituire il co
 
 Il processo di costruzione dell’URL di visualizzazione rapida è opposto al processo utilizzato per identificare le variabili dei punti attivi e delle mappe immagine descritte in precedenza.
 
-Consulta [Identificazione delle variabili di punti attivi e mappe immagine](#identifying-hotspot-and-image-map-variables).
+Consulta [Identificare le variabili dei punti attivi e della mappa immagine](#identifying-hotspot-and-image-map-variables).
 
 L&#39;ultimo passaggio per attivare l&#39;URL Quickview e attivare il pannello Quickview richiede molto probabilmente l&#39;assistenza di un esperto IT front-end del reparto IT. Hanno la conoscenza di sapere come attivare con precisione l&#39;implementazione di Quickview dal passaggio appropriato, avendo un URL di Quickview pronto all&#39;uso.
 
-## Utilizzo delle visualizzazioni rapide per creare finestre a comparsa personalizzate {#using-quickviews-to-create-custom-pop-ups}
+## Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 Consulta [Creare pop-up personalizzati utilizzando Quickview](/help/assets/custom-pop-ups.md).
