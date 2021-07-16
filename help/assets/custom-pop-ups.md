@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visualizzatori
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1088'
 ht-degree: 1%
 
 ---
 
-# Utilizza Quickview per creare pop-up personalizzati {#using-quickviews-to-create-custom-pop-ups}
+# Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di toccare un punto attivo, un’immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
+La visualizzazione rapida predefinita viene utilizzata nelle esperienze e-commerce in cui viene visualizzato un pop-up con le informazioni sul prodotto per promuovere un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
 Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
 
-* Immagini interattive (punti attivi cliccabili)
+* Immagine interattiva (punti attivi cliccabili)
 * Video interattivo (immagini thumbnail cliccabili durante la riproduzione del video)
-* Banner a carosello (hotspot cliccabili o mappe immagine)
+* Banner a carosello (punti attivi cliccabili o mappe immagine)
 
 Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di creazione di una visualizzazione rapida è lo stesso in tutti e tre i visualizzatori supportati.
 
-**Per utilizzare Quickview per creare pop-up personalizzati:**
+**Per creare pop-up personalizzati utilizzando Quickview:**
 
 1. Crea una visualizzazione rapida per una risorsa caricata.
 
