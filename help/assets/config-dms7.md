@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configurazione,Modalità Scene7
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 752eacca9d29b272c040b48c35e4717b13e34b12
 workflow-type: tm+mt
 source-wordcount: '6160'
 ht-degree: 5%
@@ -270,7 +270,7 @@ Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-ass
 
 1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL CRXDE Lite]** per tornare all’Experience Manager.
 
-#### Aggiungi tipi MIME per i formati non supportati {#adding-mime-types-for-unsupported-formats}
+#### Aggiunta di tipi MIME per i formati non supportati {#adding-mime-types-for-unsupported-formats}
 
 In Experience Manager Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Assicurati che qualsiasi nuovo nodo aggiunto in CRXDE Lite non venga eliminato per Experience Manager spostando il tipo MIME prima di `image_`. Inoltre, assicurati che il relativo valore abilitato sia impostato su **[!UICONTROL false]**.
 
@@ -517,7 +517,7 @@ L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sinto
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Assets/Dynamic Media Classic basati su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Dynamic Media Classic/Assets basato su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Aggiorna la coda del flusso di lavoro transitorio di Granite {#updating-the-granite-transient-workflow-queue}
 
