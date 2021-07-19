@@ -1,25 +1,25 @@
 ---
-title: Integrazione con Dynamic Media Classic
+title: Integrare Adobe Experience Manager con Dynamic Media Classic
 description: Scopri come integrare Adobe Experience Manager con Dynamic Media Classic.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '5517'
+source-wordcount: '5484'
 ht-degree: 1%
 
 ---
 
-# Integrazione con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
+# Integrare Adobe Experience Manager con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l’ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali sul Web, su dispositivi mobili, su e-mail e su schermi e stampe collegati a Internet.
 
 Per utilizzare Dynamic Media Classic, devi configurare la configurazione cloud in modo che Dynamic Media Classic e Adobe Experience Manager Assets possano interagire tra loro. Questo documento descrive come configurare Experience Manager e Dynamic Media Classic.
 
-Per informazioni sull&#39;utilizzo di tutti i componenti di Dynamic Media Classic su una pagina e sull&#39;utilizzo dei video, consulta [Utilizzo di Dynamic Media Classic](../assets/scene7.md).
+Per informazioni sull&#39;utilizzo di tutti i componenti di Dynamic Media Classic su una pagina e sull&#39;utilizzo dei video, consulta [Utilizzare Dynamic Media Classic](../assets/scene7.md).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Gli utenti di Experience Manager possono scegliere tra due soluzioni da utilizza
 
 Utilizza i seguenti criteri per determinare quale soluzione scegliere:
 
-* Se sei un cliente **esistente** Dynamic Media Classic le cui risorse multimediali risiedono in Dynamic Media Classic per la pubblicazione e la distribuzione, ma desideri integrare tali risorse con l’authoring di Sites (WCM) e/o l’Experience Manager di risorse per la gestione, utilizza l’ [integrazione punto-punto Experience Manager/Dynamic Media Classic](#aem-scene-point-to-point-integration) descritta in questo documento.
+* Sei un cliente **esistente** Dynamic Media Classic le cui risorse risiedono in Dynamic Media Classic per la pubblicazione e la distribuzione, ma vuoi integrarle con l’authoring di Sites (WCM), o con risorse di Experience Manager, o con entrambi? In tal caso, utilizza l’ [integrazione punto-punto Experience Manager/Dynamic Media Classic](#aem-scene-point-to-point-integration) descritta in questo documento.
 
 * Se sei un cliente di Experience Manager **nuovo** con esigenze di distribuzione di contenuti multimediali avanzati, seleziona l&#39;opzione [Dynamic Media](#aem-dynamic-media). Questa opzione ha senso se non disponi di un account S7 esistente e molte risorse memorizzate in tale sistema.
 
@@ -173,7 +173,7 @@ Quando sono abilitati sia Dynamic Media Classic che Dynamic Media, sono presenti
 
 * Il caricamento manuale in Dynamic Media Classic selezionando una risorsa e trascinandola su un componente Dynamic Media Classic in una pagina di Experience Manager non funziona.
 * Anche se le risorse sincronizzate Experience Manager-Dynamic Media Classic vengono aggiornate automaticamente in Dynamic Media Classic quando la risorsa viene modificata in Assets, un’azione di rollback non attiva un nuovo caricamento. Di conseguenza, Dynamic Media Classic non ottiene la versione più recente immediatamente dopo un rollback. La soluzione consiste nel modificare nuovamente una volta completato il rollback.
-* Se devi utilizzare Dynamic Media per un caso d’uso e l’integrazione Dynamic Media Classic per un altro in modo che le risorse Dynamic Media non interagiscano con il sistema Dynamic Media Classic, non applicare la configurazione Dynamic Media Classic alla cartella Dynamic Media. Inoltre, non applicare la configurazione di Dynamic Media (profilo di elaborazione) a una cartella Dynamic Media Classic.
+* È necessario utilizzare Dynamic Media per un caso d’uso e l’integrazione Dynamic Media Classic per un altro in modo che le risorse Dynamic Media non interagiscano con il sistema Dynamic Media Classic? In tal caso, non applicare la configurazione di Dynamic Media Classic alla cartella Dynamic Media. Inoltre, non applicare la configurazione di Dynamic Media (profilo di elaborazione) a una cartella Dynamic Media Classic.
 
 ## Best practice per l’integrazione di Dynamic Media Classic con Experience Manager {#best-practices-for-integrating-scene-with-aem}
 
@@ -184,7 +184,7 @@ Quando si integra Dynamic Media Classic con Experience Manager, sono disponibili
 
 Vedere [limitazioni note](#known-limitations-and-design-implications).
 
-### Testare l&#39;integrazione {#test-driving-your-integration}
+### Testa l&#39;integrazione {#test-driving-your-integration}
 
 Adobe consiglia di eseguire un test dell’integrazione facendo sì che la cartella principale punti a una sottocartella solo anziché a un’intera azienda.
 
@@ -192,7 +192,7 @@ Adobe consiglia di eseguire un test dell’integrazione facendo sì che la carte
 >
 >L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per essere visualizzata in Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic priva di troppe risorse (ad esempio, la cartella principale spesso contiene troppe risorse e può causare l’arresto anomalo del sistema).
 
-### Caricamento delle risorse da Experience Manager Assets rispetto a Dynamic Media Classic {#uploading-assets-from-aem-assets-versus-from-scene}
+### Caricare risorse da Experience Manager Assets rispetto a Dynamic Media Classic {#uploading-assets-from-aem-assets-versus-from-scene}
 
 Puoi caricare le risorse utilizzando la funzionalità Risorse (gestione delle risorse digitali) o accedendo direttamente ad Dynamic Media Classic in Experience Manager tramite il browser dei contenuti di Dynamic Media Classic. Quale scelta dipende dai seguenti fattori:
 
@@ -202,17 +202,17 @@ Puoi caricare le risorse utilizzando la funzionalità Risorse (gestione delle ri
    * Dove sono presenti le attività E
    * Quanto è importante gestirli in un archivio comune
 
-Se le risorse sono già in Dynamic Media Classic e la loro gestione in un archivio comune non è importante, esportarle in Experience Manager Assets solo per sincronizzarle di nuovo in Dynamic Media Classic per la distribuzione è un ciclo non necessario. In caso contrario, è preferibile mantenere le risorse in un unico archivio e sincronizzarle con Dynamic Media Classic solo per la distribuzione.
+Supponiamo che le risorse siano già in Dynamic Media Classic e che la loro gestione in un archivio comune non sia importante. In questo caso, esportare le risorse in Experience Manager Assets solo per sincronizzarle di nuovo in Dynamic Media Classic per la consegna è un ciclo non necessario. Adobe consiglia di mantenere le risorse in un unico archivio e di sincronizzarle con Dynamic Media Classic solo per la distribuzione.
 
-## Configurazione dell&#39;integrazione di Dynamic Media Classic {#configuring-scene-integration}
+## Configurare l’integrazione con Dynamic Media Classic {#configuring-scene-integration}
 
 Puoi configurare Experience Manager per caricare le risorse in Dynamic Media Classic. Le risorse da una cartella di destinazione CQ possono essere caricate (automaticamente o manualmente) da un Experience Manager a un account aziendale Dynamic Media Classic.
 
 >[!NOTE]
 >
->L’Adobe consiglia di utilizzare solo la cartella di destinazione designata per l’importazione delle risorse di Dynamic Media Classic. Le risorse digitali che risiedono al di fuori della cartella di destinazione possono essere utilizzate solo nei componenti di Dynamic Media Classic nelle pagine in cui è stata abilitata la configurazione di Dynamic Media Classic. Inoltre, vengono posizionate in una cartella ad-hoc in Dynamic Media Classic. La cartella ad-hoc non viene sincronizzata con l’Experience Manager (ma le risorse sono individuabili nel browser dei contenuti di Dynamic Media Classic).
+>L’Adobe consiglia di utilizzare solo la cartella di destinazione designata per l’importazione delle risorse di Dynamic Media Classic. Le risorse digitali che risiedono al di fuori della cartella di destinazione possono essere utilizzate solo nei componenti di Dynamic Media Classic nelle pagine in cui è stata abilitata la configurazione di Dynamic Media Classic. Inoltre, vengono inseriti in una cartella on-demand in Dynamic Media Classic. La cartella on-demand non viene sincronizzata con l’Experience Manager (ma le risorse sono reperibili nel browser dei contenuti di Dynamic Media Classic).
 
-Per configurare Dynamic Media Classic per l&#39;integrazione con Experience Manager, devi completare i seguenti passaggi:
+**Per configurare Dynamic Media Classic da integrare con Experience Manager:**
 
 1. [Definire una configurazione](#creating-a-cloud-configuration-for-scene)  cloud: definisce la mappatura tra una cartella Dynamic Media Classic e una cartella Assets. Completa questo passaggio anche se desideri la sincronizzazione unidirezionale (ad Experience Manager Assets to Dynamic Media Classic).
 1. [Abilita  **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener)  - Fatto in   OSGiconsole.
@@ -255,8 +255,8 @@ Con la sincronizzazione tra Experience Manager Assets e Dynamic Media Classic, s
    <td>Se elimini una cartella sincronizzata con le risorse, tutte le risorse remote di Dynamic Media Classic vengono eliminate ma la cartella rimane.</td>
   </tr>
   <tr>
-   <td>Cartella ad hoc</td>
-   <td>Le risorse che risiedono al di fuori della cartella di destinazione e caricate manualmente in Dynamic Media Classic in WCM vengono automaticamente posizionate in una cartella ad-hoc separata in Dynamic Media Classic. Puoi configurare questa cartella nella configurazione cloud in Experience Manager.</td>
+   <td>Cartella on-demand</td>
+   <td>Le risorse che risiedono al di fuori della cartella di destinazione e caricate manualmente in Dynamic Media Classic in WCM vengono automaticamente posizionate in una cartella on-demand separata in Dynamic Media Classic. Puoi configurare questa cartella nella configurazione cloud in Experience Manager.</td>
   </tr>
   <tr>
    <td>Supporti misti</td>
@@ -276,20 +276,20 @@ Con la sincronizzazione tra Experience Manager Assets e Dynamic Media Classic, s
   </tr>
   <tr>
    <td>Sottocartelle di Target</td>
-   <td><p>Se utilizzi le sottocartelle all’interno della cartella di destinazione, accertati di utilizzare nomi univoci per ciascuna risorsa (indipendentemente dalla posizione) o di configurare Dynamic Media Classic (nell’area Configurazione) per non sovrascrivere le risorse, indipendentemente dalla posizione.</p> <p>In caso contrario, vengono caricate le risorse con lo stesso nome e caricate in una sottocartella di destinazione di Dynamic Media Classic, ma la risorsa con lo stesso nome nella cartella di destinazione viene eliminata. </p> </td>
+   <td><p>Se utilizzi le sottocartelle all’interno della cartella di destinazione, assicurati di usare nomi univoci per ogni risorsa (indipendentemente dalla posizione). Inoltre, assicurati di configurare Dynamic Media Classic (nell’area Configurazione) per non sovrascrivere le risorse, indipendentemente dalla posizione.</p> <p>In caso contrario, vengono caricate le risorse con lo stesso nome e caricate in una sottocartella di destinazione di Dynamic Media Classic, ma la risorsa con lo stesso nome nella cartella di destinazione viene eliminata. </p> </td>
   </tr>
  </tbody>
 </table>
 
-### Configurazione dei server Dynamic Media Classic {#configuring-scene-servers}
+### Configurare i server Dynamic Media Classic {#configuring-scene-servers}
 
-Se si esegue un Experience Manager dietro un proxy o si dispone di impostazioni firewall speciali, è necessario abilitare esplicitamente gli host delle diverse aree geografiche. I server sono gestiti in contenuti in `/etc/cloudservices/scene7/endpoints` e possono essere personalizzati in base alle esigenze. Tocca un URL e quindi modifica per modificare l’URL, se necessario. Nelle versioni precedenti di Experience Manager, questi valori erano codificati in modo rigido.
+Se si esegue un Experience Manager dietro un proxy o si dispone di impostazioni firewall speciali, è necessario abilitare esplicitamente gli host delle diverse aree geografiche. I server sono gestiti in contenuti in `/etc/cloudservices/scene7/endpoints` e possono essere personalizzati in base alle esigenze. Seleziona un URL e quindi modifica l’URL per modificarlo, se necessario. Nelle versioni precedenti di Experience Manager, questi valori erano codificati in modo rigido.
 
 Se passi a `/etc/cloudservices/scene7/endpoints.html`, vengono visualizzati i server elencati e puoi modificarli toccando l’URL:
 
 ![chlimage_1-296](assets/chlimage_1-296.png)
 
-### Creazione di una configurazione cloud per Dynamic Media Classic {#creating-a-cloud-configuration-for-scene}
+### Creare una configurazione cloud per Dynamic Media Classic {#creating-a-cloud-configuration-for-scene}
 
 Una configurazione cloud definisce la mappatura tra una cartella Dynamic Media Classic e una cartella Risorse di Experience Manager. Deve essere configurato per sincronizzare Experience Manager Assets con Dynamic Media Classic. Per ulteriori informazioni, consulta Funzionamento della sincronizzazione .
 
@@ -303,15 +303,15 @@ Una configurazione cloud definisce la mappatura tra una cartella Dynamic Media C
 >
 >Puoi avere più configurazioni: una configurazione cloud rappresenta un utente in una società Dynamic Media Classic. Se desideri accedere ad altre società o utenti di Dynamic Media Classic, devi creare più configurazioni.
 
-Per configurare Experience Manager per la pubblicazione delle risorse in Dynamic Media Classic:
+**Per creare una configurazione cloud per Dynamic Media Classic:**
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Implementazione > Cloud Services]** per accedere ad Adobe Dynamic Media Classic.
+1. Seleziona l’icona Experience Manager e passa a **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]** per accedere ad Adobe Dynamic Media Classic.
 
-1. Tocca **[!UICONTROL Configura ora]**.
+1. Seleziona **[!UICONTROL Configura ora]**.
 
    ![chlimage_1-297](assets/chlimage_1-297.png)
 
-1. Nel campo **[!UICONTROL Titolo]** e facoltativamente nel campo **[!UICONTROL Nome]**, immetti le informazioni appropriate. Tocca **[!UICONTROL Crea]**.
+1. Nel campo **[!UICONTROL Titolo]** e facoltativamente nel campo **[!UICONTROL Nome]**, immetti le informazioni appropriate. Seleziona **[!UICONTROL Crea]**.
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Per configurare Experience Manager per la pubblicazione delle risorse in Dynamic
    >
    >Eseguire **non** la modifica della configurazione padre. La modifica della configurazione padre può interrompere l&#39;integrazione.
 
-1. Immetti l&#39;indirizzo e-mail, la password e la regione del tuo account Dynamic Media Classic e tocca **[!UICONTROL Connetti a Dynamic Media Classic]**. Sei connesso al server Dynamic Media Classic e la finestra di dialogo si espande con altre opzioni.
+1. Immetti l&#39;indirizzo e-mail, la password e la regione del tuo account Dynamic Media Classic e seleziona **[!UICONTROL Connetti a Dynamic Media Classic]**. Sei connesso al server Dynamic Media Classic e la finestra di dialogo si espande con altre opzioni.
 
 1. Immettere il nome **[!UICONTROL Company]** e **[!UICONTROL Root Path]**. Queste informazioni sono il nome del server pubblicato e il percorso che si desidera specificare. Se non conosci il nome del server pubblicato, in Dynamic Media Classic vai a **[!UICONTROL Configurazione > Impostazione applicazione]**).
 
@@ -333,7 +333,7 @@ Per configurare Experience Manager per la pubblicazione delle risorse in Dynamic
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
-1. Fai clic su **[!UICONTROL OK]**. Experience Manager salva la configurazione.
+1. Selezionare **[!UICONTROL OK]**. Experience Manager salva la configurazione.
 
 >[!NOTE]
 >
@@ -346,22 +346,22 @@ Per configurare Experience Manager per la pubblicazione delle risorse in Dynamic
 
 
 
-### Abilitazione del listener Adobe CQ Dynamic Media Classic Dam {#enabling-the-adobe-cq-scene-dam-listener}
+### Abilita il listener Adobe CQ Dynamic Media Classic Dam {#enabling-the-adobe-cq-scene-dam-listener}
 
 Abilita il listener Adobe CQ Dynamic Media Classic Dam, che è disabilitato per impostazione predefinita.
 
-Per abilitare il listener Adobe CQ Dynamic Media Classic Dam:
+**Per abilitare il listener Adobe CQ Dynamic Media Classic Dam:**
 
-1. Tocca l’icona [!UICONTROL Strumenti], quindi vai a **[!UICONTROL Operazioni > Console web]**. Viene visualizzata la console Web.
-1. Passa a **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** e seleziona la casella di controllo **[!UICONTROL Enabled]** .
+1. Seleziona l&#39;icona [!UICONTROL Strumenti], quindi vai a **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+1. Nella console Web, passa a **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** e seleziona la casella di controllo **[!UICONTROL Enabled]** .
 
    ![chlimage_1-299](assets/chlimage_1-299.png)
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
-### Aggiunta di un timeout configurabile al flusso di lavoro di caricamento Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
+### Aggiungere un timeout configurabile al flusso di lavoro di caricamento di Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Quando un’istanza di Experience Manager è configurata per gestire la codifica video tramite Dynamic Media Classic, per impostazione predefinita, è presente un timeout di 35 minuti su qualsiasi processo di caricamento. Per eseguire lavori di codifica video potenzialmente più lunghi, puoi configurare questa impostazione:
+Quando un’istanza di Experience Manager è configurata per gestire la codifica video tramite Dynamic Media Classic, per impostazione predefinita, è presente un timeout di 35 minuti su qualsiasi processo di caricamento. Per eseguire lavori di codifica video potenzialmente più lunghi, puoi configurare questa impostazione.
 
 1. Passa a **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
@@ -371,13 +371,13 @@ Quando un’istanza di Experience Manager è configurata per gestire la codifica
 
    >[!NOTE]
    >
-   >Procedure consigliate: La maggior parte delle risorse vengono acquisite al massimo in pochi minuti (ad esempio, immagini). Ma in alcuni casi - video di dimensioni maggiori, ad esempio - aumenta il valore di timeout a 7200 secondi (due ore) per adattarsi a tempi di elaborazione lunghi. In caso contrario, questo processo di caricamento di Dynamic Media Classic è contrassegnato come **[!UICONTROL UploadFailed]** nei metadati JCR.
+   >Procedure consigliate: La maggior parte delle risorse vengono acquisite al massimo in pochi minuti (ad esempio, immagini). Ma in alcuni casi - video di dimensioni maggiori, ad esempio - aumenta il valore di timeout a 7200 secondi (due ore) per adattarsi a tempi di elaborazione lunghi. In caso contrario, questo processo di caricamento di Dynamic Media Classic è contrassegnato come **[!UICONTROL UploadFailed]** nei metadati JCR (Java™ Content Repository).
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
 ### Caricamento automatico da risorse Experience Manager {#autouploading-from-aem-assets}
 
-A partire da Experience Manager 6.3.2, Risorse Experience Manager è configurato in modo che tutte le risorse digitali caricate nel gestore risorse vengano aggiornate in Dynamic Media Classic se le risorse si trovano in una cartella di destinazione CQ.
+A partire da Experience Manager 6.3.2, Risorse Experience Manager è configurato in modo che tutte le risorse digitali caricate vengano aggiornate a Dynamic Media Classic, se le risorse si trovano in una cartella di destinazione CQ.
 
 Quando una risorsa viene aggiunta ad Experience Manager Assets, viene caricata e pubblicata automaticamente in Dynamic Media Classic.
 
@@ -385,10 +385,11 @@ Quando una risorsa viene aggiunta ad Experience Manager Assets, viene caricata e
 >
 >La dimensione massima del file per il caricamento automatico da Experience Manager Assets a Dynamic Media Classic è 500 MB.
 
-Per configurare il caricamento automatico da Experience Manager Assets:
+**Per eseguire il caricamento automatico da risorse di Experience Manager:**
 
-1. Tocca l’icona Experience Manager e vai a **[!UICONTROL Implementazione > Cloud Services]**, quindi, sotto l’intestazione Dynamic Media, in Configurazioni disponibili, tocca **[!UICONTROL dms7 (Dynamic Media]**)
-1. Tocca la scheda **[!UICONTROL Avanzate]**, seleziona la casella di controllo **[!UICONTROL Abilita caricamento automatico]**, quindi tocca **[!UICONTROL OK]**. Ora devi configurare il flusso di lavoro DAM Asset per includere il caricamento in Dynamic Media Classic.
+1. Seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]**.
+1. Sotto l’intestazione Dynamic Media, in Configurazioni disponibili, seleziona **[!UICONTROL dms7 (Dynamic Media]**).
+1. Seleziona la scheda **[!UICONTROL Avanzate]**, seleziona la casella di controllo **[!UICONTROL Abilita caricamento automatico]**, quindi seleziona **[!UICONTROL OK]**. Ora devi configurare il flusso di lavoro DAM Asset per includere il caricamento in Dynamic Media Classic.
 
    >[!NOTE]
    >
@@ -396,8 +397,8 @@ Per configurare il caricamento automatico da Experience Manager Assets:
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Torna alla pagina di benvenuto dell’Experience Manager e tocca **[!UICONTROL Flussi di lavoro]**. Fai doppio clic sul flusso di lavoro **Aggiorna risorsa DAM** per aprirlo.
-1. Nella barra laterale passate ai componenti **[!UICONTROL Flusso di lavoro]** e selezionate **[!UICONTROL Dynamic Media Classic]**. Trascina **[!UICONTROL Dynamic Media Classic]** nel flusso di lavoro e tocca **[!UICONTROL Salva]**. Le risorse aggiunte ad Experience Manager Assets nella cartella di destinazione vengono caricate automaticamente in Dynamic Media Classic.
+1. Torna alla pagina di benvenuto dell’Experience Manager e seleziona **[!UICONTROL Flussi di lavoro]**. Fai doppio clic sul flusso di lavoro **Aggiorna risorsa DAM** in modo che si apra.
+1. Nella barra laterale passate ai componenti **[!UICONTROL Flusso di lavoro]** e selezionate **[!UICONTROL Dynamic Media Classic]**. Trascina **[!UICONTROL Dynamic Media Classic]** nel flusso di lavoro e seleziona **[!UICONTROL Salva]**. Le risorse aggiunte ad Experience Manager Assets nella cartella di destinazione vengono caricate automaticamente in Dynamic Media Classic.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -407,7 +408,7 @@ Per configurare il caricamento automatico da Experience Manager Assets:
    >* Experience Manager incorpora tutti i metadati come XMP prima di caricarli in Dynamic Media Classic, in modo che tutte le proprietà sul nodo di metadati siano disponibili in Dynamic Media Classic come XMP.
 
 
-### Configurazione dello stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
+### Configurare lo stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
 Se invii le risorse da Experience Manager Assets a Dynamic Media Classic, puoi pubblicarle automaticamente (comportamento predefinito) o inviarle in Dynamic Media Classic in uno stato non pubblicato.
 
@@ -419,12 +420,12 @@ Se desideri pubblicare immediatamente le risorse quando le invii a Dynamic Media
 
 Tuttavia, se non desideri che le risorse inviate a Dynamic Media Classic vengano pubblicate automaticamente, questa sezione descrive come configurare Experience Manager e Dynamic Media Classic per eseguire questa funzionalità.
 
-#### Prerequisiti per inviare risorse in Dynamic Media Classic senza pubblicazione {#prerequisites-to-push-assets-to-scene-unpublished}
+#### Prerequisiti per il push delle risorse in Dynamic Media Classic non pubblicato {#prerequisites-to-push-assets-to-scene-unpublished}
 
 Prima di poter inviare le risorse a Dynamic Media Classic senza pubblicarle, è necessario impostare quanto segue:
 
 1. [Utilizza l’Admin Console per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto. Nel tuo caso di assistenza, richiedi l&#39;abilitazione dell&#39;anteprima sicura per il tuo account Dynamic Media Classic.
-1. Segui le istruzioni per [configurare l&#39;anteprima protetta per il tuo account Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
+1. [Configurare l&#39;anteprima protetta per l&#39;account](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) Dynamic Media Classic.
 
 Questi passaggi sono gli stessi che seguirai per creare qualsiasi configurazione di test sicuro in Dynamic Media Classic.
 
@@ -432,7 +433,7 @@ Questi passaggi sono gli stessi che seguirai per creare qualsiasi configurazione
 >
 >Se l&#39;ambiente di installazione è un sistema operativo UNIX® a 64 bit, vedere [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) per informazioni sulle altre opzioni di configurazione da impostare.
 
-#### Limitazioni note per il push delle risorse in stato non pubblicato {#known-limitations-for-pushing-assets-in-unpublished-state}
+#### Limitazioni note per il push delle risorse in stato non pubblicato  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
 Se utilizzi questa funzione, prendi nota delle seguenti limitazioni:
 
@@ -443,28 +444,31 @@ Se utilizzi questa funzione, prendi nota delle seguenti limitazioni:
 >
 >Se desideri pubblicare le risorse all’istante, la best practice consiste nel mantenere **[!UICONTROL Abilita anteprima protetta]** impostato su **[!UICONTROL Immediatamente]** e utilizzare la funzione **[!UICONTROL Abilita caricamento automatico]**.
 
-### Impostazione dello stato delle risorse inviate a Dynamic Media Classic come non pubblicate {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
+### Imposta lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
 >Se un utente pubblica la risorsa in Experience Manager, la attiva automaticamente nella produzione/risorsa live (la risorsa non è più in anteprima protetta/non pubblicata).
 
-Per impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate:
+**Per impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate:**
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Implementazione > Cloud Services]**, tocca **[!UICONTROL Dynamic Media Classic]** e seleziona la configurazione in Dynamic Media Classic.
-1. Tocca la scheda **[!UICONTROL Avanzate]** . Nel menu a discesa **[!UICONTROL Abilita visualizzazione protetta]** , seleziona **[!UICONTROL All’attivazione della pubblicazione AEM]** per inviare le risorse a Dynamic Media Classic senza la pubblicazione. (Per impostazione predefinita, questo valore è impostato su **[!UICONTROL Immediatamente]**, dove le risorse Dynamic Media Classic vengono pubblicate immediatamente.)
+1. Seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]**.
+1. Seleziona **[!UICONTROL Dynamic Media Classic]**.
+1. Seleziona la configurazione in Dynamic Media Classic.
+1. Selezionare la scheda **[!UICONTROL Avanzate]**.
+1. Nel menu a discesa **[!UICONTROL Abilita visualizzazione protetta]** , seleziona **[!UICONTROL All’attivazione della pubblicazione AEM]** per inviare le risorse a Dynamic Media Classic senza la pubblicazione. (Per impostazione predefinita, questo valore è impostato su **[!UICONTROL Immediatamente]**, dove le risorse Dynamic Media Classic vengono pubblicate immediatamente.)
 
-   Per ulteriori informazioni sui test delle risorse prima di renderle pubbliche, consulta [Documentazione di Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) .
+   Per ulteriori informazioni sui test delle risorse prima di renderle pubbliche, consulta [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) .
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
-1. Toccare **[!UICONTROL OK]**.
+1. Selezionare **[!UICONTROL OK]**.
 
 Se abiliti l’anteprima protetta, le risorse vengono inviate al server di anteprima protetto e la pubblicazione viene annullata.
 
-Per verificare se l’opzione Anteprima protetta è abilitata, passa a un componente Dynamic Media Classic su una pagina nell’Experience Manager. Tocca **[!UICONTROL Modifica]**. La risorsa dispone del server di anteprima protetto elencato nell’URL. Dopo la pubblicazione in Experience Manager, il dominio del server nel riferimento al file viene aggiornato dall&#39;URL di anteprima all&#39;URL di produzione.
+Per verificare se **[!UICONTROL Anteprima protetta]** è abilitato, passa a un componente Dynamic Media Classic su una pagina nell&#39;Experience Manager. Seleziona **[!UICONTROL Modifica]**. La risorsa dispone del server di anteprima protetto elencato nell’URL. Dopo la pubblicazione in Experience Manager, il dominio del server nel riferimento al file viene aggiornato dall&#39;URL di anteprima all&#39;URL di produzione.
 
-### Abilitazione di Dynamic Media Classic per WCM {#enabling-scene-for-wcm}
+### Abilitare Dynamic Media Classic per WCM {#enabling-scene-for-wcm}
 
 L’abilitazione di Dynamic Media Classic per WCM è necessaria per due motivi:
 
@@ -473,44 +477,42 @@ L’abilitazione di Dynamic Media Classic per WCM è necessaria per due motivi:
 
 Quando si abilita Dynamic Media Classic per WCM, come con altre configurazioni, si applicano le regole di ereditarietà. È possibile abilitare Dynamic Media Classic per WCM nell’interfaccia utente touch o classica.
 
-#### Abilitazione di Dynamic Media Classic per WCM nell&#39;interfaccia utente ottimizzata per il tocco {#enabling-scene-for-wcm-in-the-touch-optimized-user-interface}
+#### Abilitare Dynamic Media Classic per WCM nell&#39;interfaccia touch {#enabling-scene-for-wcm-in-the-touch-optimized-user-interface}
 
-Per abilitare Dynamic Media Classic per WCM nell’interfaccia touch:
+1. Seleziona l’icona Experience Manager e passa a **[!UICONTROL Sites]** , quindi alla pagina principale del sito web (non specifica la lingua).
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Sites]** e quindi alla pagina principale del sito web (non specifica la lingua).
+1. Nella barra degli strumenti, seleziona l&#39;icona [!UICONTROL settings] e seleziona **[!UICONTROL Apri proprietà]**.
 
-1. Nella barra degli strumenti, seleziona l’icona [!UICONTROL settings] e tocca **[!UICONTROL Apri proprietà]**.
-
-1. Tocca **[!UICONTROL Cloud Services]** e tocca **[!UICONTROL Aggiungi configurazione]**, quindi seleziona **[!UICONTROL Dynamic Media Classic]**.
-1. Nell&#39;elenco a discesa **[!UICONTROL Adobe Dynamic Media Classic]**, seleziona la configurazione desiderata e tocca **[!UICONTROL OK]**.
+1. Seleziona **[!UICONTROL Cloud Services]** e seleziona **[!UICONTROL Aggiungi configurazione]**, quindi seleziona **[!UICONTROL Dynamic Media Classic]**.
+1. Nell&#39;elenco a discesa **[!UICONTROL Adobe Dynamic Media Classic]**, seleziona la configurazione desiderata e seleziona **[!UICONTROL OK]**.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
    I predefiniti video di tale configurazione di Dynamic Media Classic sono disponibili per l’uso in Experience Manager con il componente video Dynamic Media Classic presente nella pagina e nelle pagine figlie.
 
-#### Abilitazione di Dynamic Media Classic per WCM nell&#39;interfaccia utente classica {#enabling-scene-for-wcm-in-the-classic-user-interface}
+#### Abilitare Dynamic Media Classic per WCM nell’interfaccia utente classica {#enabling-scene-for-wcm-in-the-classic-user-interface}
 
-Per abilitare Dynamic Media Classic per WCM nell’interfaccia classica:
+1. Ad Experience Manager, selezionare **[!UICONTROL Siti web]** e passare alla pagina principale del sito web (non specifica per la lingua).
 
-1. Ad Experience Manager, tocca **[!UICONTROL Siti web]** e passa alla pagina principale del sito web (non specifica per la lingua).
+1. Nella barra laterale seleziona l’icona **[!UICONTROL Pagina]** e seleziona **[!UICONTROL Proprietà pagina]**.
 
-1. Nella barra laterale, tocca l’icona **[!UICONTROL Pagina]** e tocca **[!UICONTROL Proprietà pagina]**.
-
-1. Tocca **[!UICONTROL Cloud Services > Aggiungi servizi > Dynamic Media Classic]**.
-1. Nell&#39;elenco a discesa **[!UICONTROL Adobe Dynamic Media Classic]**, seleziona la configurazione desiderata e tocca **[!UICONTROL OK]**.
+1. Seleziona **[!UICONTROL Cloud Services]** > **[!UICONTROL Aggiungi servizi]** > **[!UICONTROL Dynamic Media Classic]**.
+1. Nell&#39;elenco a discesa **[!UICONTROL Adobe Dynamic Media Classic]**, seleziona la configurazione desiderata e seleziona **[!UICONTROL OK]**.
 
    I predefiniti video di tale configurazione di Dynamic Media Classic sono disponibili per l’uso in Experience Manager con il componente video Dynamic Media Classic presente nella pagina e nelle pagine figlie.
 
-### Configurazione di una configurazione predefinita {#configuring-a-default-configuration}
+### Configurare una configurazione predefinita {#configuring-a-default-configuration}
 
 Se disponi di più configurazioni di Dynamic Media Classic, puoi specificarne una come predefinita per il browser dei contenuti di Dynamic Media Classic.
 
 È possibile contrassegnare come predefinita una sola configurazione di Dynamic Media Classic alla volta. La configurazione predefinita è quella delle risorse aziendali visualizzate per impostazione predefinita nel browser dei contenuti di Dynamic Media Classic.
 
-Per configurare la configurazione predefinita:
+**Per configurare una configurazione predefinita:**
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Implementazione > Cloud Services]**, tocca **[!UICONTROL Dynamic Media Classic]** e seleziona la configurazione in Dynamic Media Classic.
-1. Per aprire la configurazione, tocca **[!UICONTROL Modifica]**.
+1. Seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]**.
+1. Seleziona **[!UICONTROL Dynamic Media Classic]**.
+1. Seleziona la configurazione in Dynamic Media Classic.
+1. Per aprire la configurazione, seleziona **[!UICONTROL Modifica]**.
 
 1. Nella scheda **[!UICONTROL Generale]** , seleziona la casella di controllo **[!UICONTROL Configurazione predefinita]** per renderla la società e il percorso principali predefiniti visualizzati nel browser dei contenuti di Dynamic Media Classic.
 
@@ -520,24 +522,26 @@ Per configurare la configurazione predefinita:
    >
    >Se esiste una sola configurazione, la selezione della casella di controllo **[!UICONTROL Configurazione predefinita]** non ha alcun effetto.
 
-### Configurazione della cartella ad-hoc {#configuring-the-ad-hoc-folder}
+### Configurare la cartella ad-hoc {#configuring-the-ad-hoc-folder}
 
-Puoi configurare la cartella in cui vengono caricate le risorse in Dynamic Media Classic quando la risorsa non si trova nella cartella di destinazione di CQ. Consulta Pubblicazione di risorse dall’esterno della cartella di destinazione CQ.
+Puoi configurare la cartella on-demand in cui vengono caricate le risorse in Dynamic Media Classic quando la risorsa non si trova nella cartella di destinazione di CQ. Consulta Pubblicazione di risorse dall’esterno della cartella di destinazione CQ.
 
-Per configurare la cartella ad-hoc:
+**Per configurare la cartella ad-hoc:**
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Implementazione > Cloud Services]**, tocca **[!UICONTROL Dynamic Media Classic]** e seleziona la configurazione in Dynamic Media Classic.
-1. Per aprire la configurazione, tocca **[!UICONTROL Modifica]**.
+1. Seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL Implementazione]** > **[!UICONTROL Cloud Services]**.
+1. Seleziona **[!UICONTROL Dynamic Media Classic]**.
+1. Seleziona la configurazione in Dynamic Media Classic.
+1. Per aprire la configurazione, seleziona **[!UICONTROL Modifica]**.
 
-1. Tocca la scheda **[!UICONTROL Avanzate]** . Nel campo **[!UICONTROL Cartella ad hoc]** puoi modificare la cartella **Ad-hoc** . Per impostazione predefinita, è il **nome_dell_azienda/CQ5_adhoc**.
+1. Selezionare la scheda **[!UICONTROL Avanzate]**. Nel campo **[!UICONTROL Cartella ad hoc]** puoi modificare la cartella **Ad-hoc** . Per impostazione predefinita, è il **nome_dell_azienda/CQ5_adhoc**.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
 
-### Configurazione dei predefiniti universali {#configuring-universal-presets}
+### Configurare i predefiniti video universali {#configuring-universal-presets}
 
-Per configurare i predefiniti universali per il componente video, consulta [Video](/help/assets/s7-video.md).
+Per configurare i predefiniti video universali per il componente video, consulta [Video](/help/assets/s7-video.md).
 
-## Abilitazione del supporto per i parametri di processo di caricamento di Assets/Dynamic Media Classic basati su tipi MIME {#enabling-mime-type-based-assets-scene-upload-job-parameter-support}
+## Attiva supporto per i parametri di processo di caricamento di Assets/Dynamic Media Classic basati su tipi MIME {#enabling-mime-type-based-assets-scene-upload-job-parameter-support}
 
 Puoi abilitare i parametri di processi di caricamento configurabili di Dynamic Media Classic attivati dalla sincronizzazione di risorse digitali Manager/Dynamic Media Classic.
 
@@ -545,10 +549,10 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
 
 **Per abilitare le risorse basate su tipi MIME:**
 
-1. Tocca l’icona Experience Manager e passa a **[!UICONTROL Strumenti > Operazioni > Console web]**.
-1. Nel pannello Configurazione della console Web di Adobe Experience Manager, nel menu **[!UICONTROL OSGi]**, tocca **[!UICONTROL Configurazione]**.
-1. Nella colonna Nome , tocca **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** per modificare la configurazione.
-1. Nell’area Mime Type Mapping (Mime Type Mapping), tocca un segno più (+) per aggiungere un tipo MIME.
+1. Seleziona l’icona Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+1. Nel pannello Configurazione della console Web di Adobe Experience Manager, scegliere **[!UICONTROL OSGi]** dal menu **[!UICONTROL Configurazione]**.
+1. Nella colonna Nome , trova e seleziona **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** per modificare la configurazione.
+1. Nell’area Mime Type Mapping (Mime Type Mapping), seleziona un segno più (+) per aggiungere un tipo MIME.
 
    Consulta [Tipi MIME supportati](/help/assets/assets-formats.md#supported-mime-types).
 
@@ -556,15 +560,15 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
 
    Ad esempio, digitare un `<file_extension>=<mime_type>` come in `EPS=application/postscript` O `PSD=image/vnd.adobe.photoshop`.
 
-1. Nell&#39;angolo in basso a destra della finestra di configurazione, tocca **[!UICONTROL Salva]**.
-1. Torna all’Experience Manager e, nella barra a sinistra, tocca CRXDE Lite.
+1. Nell&#39;angolo in basso a destra della finestra di configurazione, seleziona **[!UICONTROL Salva]**.
+1. Torna all&#39;Experience Manager e seleziona **[!UICONTROL CRXDE Lite]** nella barra a sinistra.
 1. Nella pagina CRXDE Lite, nella barra a sinistra, passa a `/etc/cloudservices/scene7/<environment>` (sostituisci `<environment>` con il nome effettivo).
 1. Espandi `<environment>` (sostituisci `<environment>` per il nome effettivo) per visualizzare il nodo `mimeTypes`.
-1. Tocca il mimeType appena aggiunto.
+1. Seleziona il mimeType appena aggiunto.
 
    Ad esempio, `mimeTypes > application_postscript` O `mimeTypes > image_vnd.adobe.photoshop`.
 
-1. Sul lato destro della pagina CRXDE Lite, tocca la scheda **[!UICONTROL Proprietà]** .
+1. Sul lato destro della pagina CRXDE Lite, seleziona la scheda **[!UICONTROL Proprietà]** .
 1. Specifica un parametro di processo di caricamento di Dynamic Media Classic nel campo del valore **[!UICONTROL jobParam]** .
 
    Esempio, `psprocess="rasterize"&psresolution=120` .
@@ -579,9 +583,9 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
    >
    >Assicurati che il tuo file PSD abbia &quot;livelli&quot;. Se è rigorosamente un&#39;immagine o un&#39;immagine con maschera, viene elaborata come immagine perché non ci sono livelli da elaborare.
 
-1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, tocca **[!UICONTROL Salva tutto]**.
+1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, selezionare **[!UICONTROL Salva tutto]**.
 
-## Risoluzione dei problemi relativi all&#39;integrazione di Dynamic Media Classic e Experience Manager {#troubleshooting-scene-and-aem-integration}
+## Risolvere i problemi relativi all’integrazione di Dynamic Media Classic e Experience Manager {#troubleshooting-scene-and-aem-integration}
 
 Se riscontri problemi nell’integrazione di Experience Manager con Dynamic Media Classic, consulta i seguenti scenari per le soluzioni .
 
@@ -613,9 +617,9 @@ Se riscontri problemi nell’integrazione di Experience Manager con Dynamic Medi
 
 * Le risorse e le cartelle eliminate in Risorse di Experience Manager vengono comunque visualizzate nella cartella sincronizzata in Dynamic Media Classic. Eliminali manualmente.
 
-**Se il caricamento del video non riesce**
+**Se il caricamento del video non riesce:**
 
-* Se il caricamento del video non riesce e stai utilizzando un Experience Manager per codificare i video tramite l&#39;integrazione Dynamic Media Classic, consulta [Aggiunta di un timeout configurabile al flusso di lavoro di caricamento di Dynamic Media Classic](#adding-configurable-timeout-to-scene-upload-workflow).
+* Se il caricamento del video non riesce e stai utilizzando un Experience Manager per codificare i video tramite l&#39;integrazione Dynamic Media Classic, consulta [Aggiungere un timeout configurabile al flusso di lavoro di caricamento di Dynamic Media Classic](#adding-configurable-timeout-to-scene-upload-workflow).
 
 >[!CAUTION]
 >
