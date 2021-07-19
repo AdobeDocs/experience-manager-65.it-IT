@@ -2,15 +2,14 @@
 title: Elenco delle funzioni AEM esperienze fluide
 description: Elenco delle funzioni per esperienze fluide
 index: n
-feature: Authoring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 'Authoring  '
+exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
-
 
 # Elenco delle funzioni AEM esperienze fluide{#aem-fluid-experiences-feature-list}
 
@@ -29,7 +28,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 >
 >AEM esperienze fluide è un sottoinsieme di funzionalità AEM. Le funzioni collegate a in queste tabelle possono includere funzionalità aggiuntive incluse in AEM, ma non in Esperienze fluide AEM.
 
-## Funzioni archivio {#repository-features}
+## Funzioni dell’archivio {#repository-features}
 
 |  |
 |---|
@@ -55,9 +54,9 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 | API HTTP per contenuti strutturati (lettura) |
 | API HTTP per contenuti strutturati (CRUD) |
 | [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) |
-| [Contenuti multimediali dinamici](/help/assets/dynamic-media.md) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
-## Funzioni di amministrazione e integrazione {#admin-and-integration-features}
+## Funzionalità di amministrazione e integrazione {#admin-and-integration-features}
 
 |  |
 |---|
