@@ -1,28 +1,25 @@
 ---
-title: Ristrutturazione dell’archivio Dynamic Media in AEM 6.5
-seo-title: Ristrutturazione dell’archivio Dynamic Media in AEM 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per Dynamic Media.
-seo-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per Dynamic Media.
+title: Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in Experience Manager 6.5 per Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aggiornamento
+exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 4%
 
 ---
 
+# Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-# Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+Come descritto nella pagina padre [Ristrutturazione archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che interessano Dynamic Media. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
-Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l&#39;aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell&#39;archivio che influiscono sulla soluzione Dynamic Media. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
-
-**Prima dell’aggiornamento futuro**
+**Prima di un aggiornamento futuro**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Configurazione cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
@@ -30,9 +27,9 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
 * [Dynamic Media - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Varie](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Aggiornamento precedente a {#prior-to-upgrade}
+## Prima di un aggiornamento futuro {#prior-to-upgrade}
 
-### Configurazioni di codifica video adattiva personalizzate {#custom-adaptive-video-encoding-configurations}
+### Configurazioni di codifica video adattiva personalizzate  {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -46,7 +43,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>Puoi eseguire il seguente script di migrazione per eseguire la migrazione alla nuova posizione:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente AEM e salvare le modifiche nella nuova posizione.</p> </td>
+   <td><p>Puoi eseguire il seguente script di migrazione per eseguire la migrazione alla nuova posizione:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente di Experience Manager e salvare le modifiche nella nuova posizione.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -105,7 +102,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
  </tbody>
 </table>
 
-### Dynamic Media - Configurazione del Cloud Service YouTube {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configurazione del Cloud Service YouTube  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -119,7 +116,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Crea la configurazione YouTube utilizzando la nuova interfaccia Touch (da <code>/conf</code>), anche copiando tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video su YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una nuova configurazione YouTube di TouchUI, avrai più URL YouTube elencati in Proprietà perché i canali ricreati verranno pubblicati di nuovo se è possibile. Questo significa che avrai URL inutili elencati in Proprietà.</p> </td>
+   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Crea la configurazione YouTube utilizzando la nuova interfaccia Touch (da <code>/conf</code>), anche copiando tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video in YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione TouchUI YouTube, hai più URL YouTube elencati in Proprietà perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità significa che hai degli URL inutili elencati in Proprietà.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -142,7 +139,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>Il cliente può eseguire lo script di migrazione seguente.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente AEM e salvare le modifiche nella nuova posizione.</p> </td>
+   <td><p>Il cliente può eseguire lo script di migrazione seguente.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente di Experience Manager e salvare le modifiche nella nuova posizione.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -171,4 +168,3 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.5](/help/site
   </tr>
  </tbody>
 </table>
-
