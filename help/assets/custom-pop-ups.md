@@ -12,7 +12,7 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visualizzatori
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 1%
@@ -265,7 +265,7 @@ callL&#39;handler richiede anche una chiamata di funzione affinché Quickview fu
    `*viewerInstance.*init()`
 
    ****
-EsempioQuesto esempio utilizza il visualizzatore di immagini interattivo.
+EsempioQuesto esempio utilizza il visualizzatore di immagini interattive.
 
    `s7interactiveimageviewer.init()`
 
