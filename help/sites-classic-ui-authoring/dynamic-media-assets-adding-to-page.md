@@ -1,19 +1,19 @@
 ---
-title: Aggiunta di risorse Dynamic Media alle pagine
+title: Aggiungere risorse Dynamic Media alle pagine
 description: Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi aggiungere il componente Dynamic Media o File multimediali interattivi direttamente sulla pagina.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
-# Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
+# Aggiungere risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
 Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi aggiungere il componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL File multimediali interattivi]** direttamente sulla pagina. Accedi alla modalità **[!UICONTROL Progettazione]** e attiva i componenti Dynamic Media. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Dynamic Media e per contenuti multimediali interattivi sono intelligenti: sanno se aggiungi un’immagine o un video e le opzioni disponibili cambiano di conseguenza.
 
@@ -23,14 +23,16 @@ Puoi aggiungere risorse Dynamic Media direttamente alla pagina se utilizzi Adobe
 >
 >Per i banner a carosello sono disponibili mappe immagine pronte all&#39;uso.
 
-## Aggiunta di un componente Dynamic Media a una pagina {#adding-a-dynamic-media-component-to-a-page}
+## Aggiungere un componente Dynamic Media a una pagina {#adding-a-dynamic-media-component-to-a-page}
 
 Aggiungere un componente [!UICONTROL Dynamic Media] o [!UICONTROL File multimediali interattivi] a una pagina equivale ad aggiungere un componente a qualsiasi pagina. I componenti [!UICONTROL Dynamic Media] e [!UICONTROL File multimediali interattivi] sono descritti in dettaglio nelle sezioni seguenti.
 
 Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una pagina:
 
 1. Ad Experience Manager, apri la pagina in cui desideri aggiungere il componente Dynamic Media.
-1. Se non è disponibile alcun componente Dynamic Media, fai clic sul righello nella barra laterale [!UICONTROL Sidekick] per accedere alla modalità **[!UICONTROL Progettazione]**, fai clic su **[!UICONTROL Modifica]** parsys, quindi seleziona **[!UICONTROL Dynamic Media]** per rendere disponibili i componenti Dynamic Media.
+1. Se non è disponibile alcun componente Dynamic Media, seleziona il righello nella barra laterale [!UICONTROL a1/> per accedere alla modalità **[!UICONTROL Progettazione]** .]
+1. Selezionare **[!UICONTROL Modifica]** parsys.
+1. Seleziona **[!UICONTROL Dynamic Media]** per rendere disponibili i componenti Dynamic Media.
 
    >[!NOTE]
    >
@@ -38,8 +40,9 @@ Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una
 
 1. Torna alla modalità **[!UICONTROL Modifica]** facendo clic sull&#39;icona a forma di matita nella barra laterale [!UICONTROL a sinistra].
 1. Trascina il componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL File multimediali interattivi]** dal gruppo **[!UICONTROL Altro]** nella barra laterale sulla pagina nella posizione desiderata.
-1. Fai clic su **[!UICONTROL Modifica]** per aprire il componente.
-1. [](#dynamic-media-component)Se necessario, modifica il componente, quindi fai clic su **[!UICONTROL OK]** per salvare le modifiche.
+1. Seleziona **[!UICONTROL Modifica]** in modo che il componente si apra.
+1. [Se necessario, modifica il ](#dynamic-media-component) componente.
+1. Seleziona **[!UICONTROL OK]** in modo da salvare le modifiche.
 
 ## Componente elementi multimediali dinamici {#dynamic-media-components}
 
@@ -112,7 +115,7 @@ Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini,
 
 **[!UICONTROL Larghezza e altezza]** : immetti il valore in pixel se vuoi che l’immagine sia di dimensioni fisse. Lasciando vuoti questi valori, la risorsa viene resa adattiva.
 
-#### Quando si lavora con un video {#when-working-with-video}
+#### Quando si lavora con i video {#when-working-with-video}
 
 Utilizza il componente **[!UICONTROL Dynamic Media]** per aggiungere video dinamici alle pagine web. Quando modifichi il componente, puoi scegliere di utilizzare un predefinito visualizzatore video per la riproduzione del video sulla pagina.
 
@@ -132,7 +135,7 @@ Per modificare le seguenti [!UICONTROL Impostazioni Dynamic Media], fai clic su 
 
 **[!UICONTROL Larghezza e altezza]** : immetti il valore in pixel se vuoi che il video sia di dimensioni fisse. Se questi valori vengono lasciati vuoti, la risorsa sarà adattiva.
 
-#### Modalità di distribuzione video sicura {#how-to-delivery-secure-video}
+#### Fornire video sicuri {#how-to-delivery-secure-video}
 
 Nell&#39;Experience Manager 6.2, quando installi [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puoi controllare se un video viene distribuito tramite una connessione SSL sicura (HTTPS) o una connessione non sicura (HTTP). Per impostazione predefinita, il protocollo di distribuzione video viene ereditato automaticamente dal protocollo della pagina web in cui è stato incorporato. Se la pagina web viene caricata tramite HTTPS, anche il video viene trasmesso tramite HTTPS. Al contrario, se la pagina web è su HTTP, il video viene distribuito via HTTP. Di solito, questo comportamento predefinito va bene e non è necessario apportare modifiche alla configurazione. Tuttavia, puoi ignorare questo comportamento predefinito. Aggiungi `VideoPlayer.ssl=on` alla fine di un percorso URL o all&#39;elenco degli altri parametri di configurazione del visualizzatore in un frammento di codice da incorporare. Entrambe le azioni forzano la distribuzione sicura dei video.
 
@@ -148,7 +151,7 @@ Il componente [!UICONTROL File multimediali interattivi] è intelligente: a seco
 
 È possibile modificare le seguenti impostazioni **[!UICONTROL Generali]**, facendo clic su **[!UICONTROL Modifica]** nel componente.
 
-**[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dal menu a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md). 
+**[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dal menu a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. I predefiniti per visualizzatori devono essere pubblicati prima di poter essere utilizzati. Consulta [Gestire i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
 **[!UICONTROL Titolo]**  - Modifica il titolo del video.
 
