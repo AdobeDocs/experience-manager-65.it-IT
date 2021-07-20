@@ -11,36 +11,36 @@ docset: aem65
 feature: Video interattivi
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '6015'
+source-wordcount: '6008'
 ht-degree: 3%
 
 ---
 
 # Video interattivi{#interactive-videos}
 
-Puoi creare facilmente video interattivi - noti anche come video acquistabili - che guidano la conversione direttamente dal video. Il coinvolgimento dei clienti con il video si svolge in un pannello accanto al lettore video, dove vengono visualizzate informazioni o miniature relative a servizi, prodotti in base alle funzioni presenti nel video. I clienti possono toccare la miniatura ed essere collegati direttamente al servizio oppure aggiungere l’articolo a un carrello per un acquisto immediato, oppure essere collegati a una pagina web per ulteriori informazioni.
+Puoi creare facilmente video interattivi - noti anche come video acquistabili - che guidano la conversione direttamente dal video. Il coinvolgimento dei clienti con il video si svolge in un pannello accanto al lettore video, dove vengono visualizzate informazioni o miniature relative a servizi, prodotti in base alle funzioni presenti nel video. I clienti possono selezionare la miniatura ed essere collegati direttamente al servizio oppure aggiungere l’articolo a un carrello per un acquisto immediato, oppure essere collegati a una pagina web per ulteriori informazioni.
 
-Al termine del video, viene visualizzato un riepilogo visivo di tutte le offerte per attivare una chiamata all’azione. I clienti hanno un’altra opportunità di toccare l’elemento desiderato. Esperienze fruibili e specifiche, come queste, aumentano il coinvolgimento e le conversioni dei clienti.
+Al termine del video, viene visualizzato un riepilogo visivo di tutte le offerte per attivare una chiamata all’azione. I clienti hanno un&#39;altra opportunità per selezionare l&#39;elemento desiderato. Esperienze fruibili e specifiche, come queste, aumentano il coinvolgimento e le conversioni dei clienti.
 
 Vedere anche [Immagini interattive](/help/assets/interactive-images.md).
 
 ## Video interattivo in azione {#interactive-video-in-action}
 
-Per visualizzare un video interattivo e acquistabile in azione, fai clic su [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scorri fino all&#39;intestazione **[!UICONTROL Shoppable Media]** nella pagina, quindi fai clic sul video acquistabile.
+Per visualizzare un video interattivo e acquistabile in azione, seleziona [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scorri fino all&#39;intestazione **[!UICONTROL Shoppable Media]** nella pagina, quindi seleziona il video acquistabile.
 
 * Durante la riproduzione, quando i prodotti vengono utilizzati nel video, il prodotto identico viene visualizzato a destra come immagine in miniatura.
 
-* Fai clic sulla miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, fai clic sull&#39;immagine della miniatura di KitchenAid nel video per visualizzare una visualizzazione a 360 gradi del mixer, oppure ingrandisci per vedere i dettagli del mixer.
+* Seleziona la miniatura per mettere in pausa il video e aprire la visualizzazione rapida del prodotto. Ad esempio, selezionare l&#39;immagine di anteprima di KitchenAid nel video per vedere una rotazione a 360 gradi del mixer, oppure ingrandirla per vedere i dettagli del mixer.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Un fotogramma da un ](assets/chlimage_1-126.png) *video interattivo e acquistabileUn fotogramma video da un video interattivo acquistabile.*
 
 >[!NOTE]
 >
->Se crei un video interattivo per avviare una pagina web quando un utente fa clic su un&#39;immagine in miniatura, alcuni dispositivi impediscono l&#39;apertura della pagina web a comparsa. In questi casi, è necessario modificare l&#39;impostazione di blocco dei popup sul dispositivo. Ad esempio, su un Apple iPhone 6, tocca **[!UICONTROL Impostazioni]** > **Safari** > **Blocca popup**, quindi sposta il controllo su **[!UICONTROL Disattivato]**. Ora, quando si riproduce un video interattivo e si fa clic su una miniatura, viene richiesto se si desidera aprire il pop-up. Se si accetta, viene visualizzata la pagina web.
+>Se crei un video interattivo per avviare una pagina web quando un utente seleziona un&#39;immagine in miniatura, alcuni dispositivi impediscono l&#39;apertura della pagina web a comparsa. In questi casi, è necessario modificare l&#39;impostazione di blocco dei popup sul dispositivo. Ad esempio, su un Apple iPhone 6, accedi a **[!UICONTROL Impostazioni]** > **Safari** > **Blocca popup**, quindi scorri il controllo su **[!UICONTROL Disattivato]**. Ora, quando si riproduce un video interattivo e si seleziona una miniatura, viene richiesto se si desidera aprire il pop-up. Se si accetta, viene visualizzata la pagina web.
 
 ### Guarda come vengono creati i video interattivi {#watch-how-interactive-videos-are-created}
 
@@ -115,7 +115,7 @@ A volte è sufficiente consultare gli specialisti IT responsabili dell&#39;imple
 
 La maggior parte delle implementazioni di Quickview utilizza il seguente paradigma:
 
-* L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, facendo clic su un pulsante &quot;Quickview&quot;.
+* L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, selezionando un pulsante &quot;Quickview&quot;.
 * Il sito web invia una richiesta Ajax al backend per caricare i dati o il contenuto della visualizzazione rapida, se necessario.
 * I dati Quickview vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
 * Infine, il codice front-end esegue il rendering visivo di tali contenuti sullo schermo.
@@ -124,7 +124,7 @@ L’approccio, quindi, consiste nel visitare diverse aree del sito web esistente
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi **F12** (Windows) o **Comando+Opzioni+I** (Mac) per aprire il pannello Strumenti per sviluppatori, quindi fai clic sulla scheda **Rete** .
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi **F12** (Windows) o **Comando+Opzioni+I** (Mac) per aprire il pannello Strumenti per sviluppatori, quindi seleziona la scheda **Rete** .
 
 * In Firefox, è possibile attivare il plug-in Firebug premendo **F12** (Windows) o **Comando+Opzione+I** (Mac) e utilizzando la relativa scheda **`[Net]`** oppure è possibile utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
 
@@ -226,13 +226,13 @@ Ora puoi caricare un video e le relative risorse di miniatura associate.
 
 Puoi saltare questa attività e passare all’attività successiva se intendi utilizzare uno dei tipi predefiniti predefiniti per visualizzatori video interattivi `Shoppable_Video_dark` o `Shoppable_Video_light` predefiniti.
 
-Quando si fa clic su una miniatura nell’ambiente di authoring, viene visualizzata un’anteprima della finestra di dialogo Quickview.
+Quando nell’ambiente di authoring viene selezionata una miniatura, viene visualizzata un’anteprima della finestra di dialogo Quickview.
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
 Facoltativamente, puoi creare il tuo predefinito visualizzatore video interattivo personalizzato. È possibile determinare, tra l’altro, lo stile del lettore video, le miniature interattive e la vista a griglia delle miniature visualizzata alla fine del video.
 
-Un predefinito per visualizzatori video interattivi esegue correttamente il rendering del video e di tutti i segmenti della timeline aggiunti. Utilizza anche un esempio di Quickview predefinito quando fai clic su una miniatura di prodotto in modalità Anteprima per verificarne l’interattività prima della pubblicazione.
+Un predefinito per visualizzatori video interattivi esegue correttamente il rendering del video e di tutti i segmenti della timeline aggiunti. Utilizza anche un esempio di Quickview predefinito quando selezioni una miniatura di prodotto in modalità Anteprima in modo da poterne testare l’interattività prima della pubblicazione.
 
 Dopo aver salvato il predefinito visualizzatore, il relativo stato viene impostato automaticamente su **On** nella pagina Predefiniti visualizzatore . Lo stato indica che è visibile nel componente Dynamic Media e ogni volta che lo si utilizza per visualizzare l’anteprima di un video. Accertati anche di pubblicare manualmente il nuovo predefinito visualizzatore.
 
@@ -248,8 +248,8 @@ Per caricare un video e le relative risorse di miniatura associate:
 
 1. Carica il video e le relative miniature nella cartella o nelle cartelle desiderate.
 
-   Consulta [Caricamento delle risorse](/help/assets/manage-assets.md).
-Consulta [Caricamento delle risorse tramite la pianificazione dei processi FTP](/help/assets/manage-assets.md).
+   Consulta [Caricare risorse](/help/assets/manage-assets.md).
+Consulta [Caricare risorse utilizzando la pianificazione dei processi FTP](/help/assets/manage-assets.md).
 
    Aggiungi ora l’interattività al video.
 
@@ -278,19 +278,19 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
 1. Nella vista Risorse, individua il video caricato e vuoi renderlo interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Passa il puntatore sull&#39;immagine, quindi seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica]**.
+   * Passa il puntatore sull&#39;immagine, quindi seleziona **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica]**.
 
-   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Seleziona l’immagine per aprirla nella pagina Vista dettagli . Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
 1. Nella pagina Crea video interattivo, effettua una delle seguenti operazioni:
 
-   * Per iniziare a riprodurre il video, tocca il pulsante **[!UICONTROL Play]** . Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, tocca **[!UICONTROL Aggiungi segmento]** sulla barra degli strumenti. Ripetere l&#39;operazione fino a quando non si raggiunge la fine del video.
+   * Per iniziare la riproduzione del video, selezionare il pulsante **[!UICONTROL Play]**. Quando un prodotto, un servizio o un dettaglio particolare da evidenziare viene visualizzato, seleziona **[!UICONTROL Aggiungi segmento]** sulla barra degli strumenti. Ripetere l&#39;operazione fino a quando non si raggiunge la fine del video.
 
       Per ogni segmento di tempo aggiunto, assegna una o più immagini in miniatura e quindi collega tali miniature alle pagine di prodotto Quickview da acquistare o alle pagine web per ulteriori informazioni.
 
-   * Per iniziare a riprodurre il video, tocca il pulsante **[!UICONTROL Play]** . Quando un particolare prodotto, servizio o dettaglio da evidenziare viene visualizzato, toccare **[!UICONTROL Pausa]**. Tocca **[!UICONTROL Aggiungi segmento]**.
+   * Per iniziare la riproduzione del video, selezionare il pulsante **[!UICONTROL Play]**. Quando viene visualizzato un particolare prodotto, servizio o dettaglio da evidenziare, selezionare **[!UICONTROL Pausa]**. Seleziona **[!UICONTROL Aggiungi segmento]**.
 
       Continua a riprodurre e mettere in pausa il video nei punti della timeline in cui desideri aggiungere un segmento fino alla fine del video.
 
@@ -359,9 +359,9 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
 
       Utilizza le seguenti scelte rapide per la navigazione per controllare e ottimizzare rapidamente i segmenti video:
 
-      * Per cercare il video direttamente all’inizio di quel segmento, tocca l’ovale blu iniziale.
-      * Per cercare il video direttamente alla fine di quel segmento, tocca l’ovale blu finale.
-      * Per ripristinare la riproduzione video all’inizio di quel segmento, tocca l’intero segmento.
+      * Per cercare il video direttamente all’inizio di quel segmento, selezionate l’ovale blu iniziale.
+      * Per cercare il video direttamente alla fine di quel segmento, seleziona l’ovale blu finale.
+      * Per ripristinare la riproduzione video all’inizio di quel segmento, seleziona l’intero segmento.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -369,14 +369,14 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
 
    * Eliminazione di un segmento
 
-      Seleziona l’ultimo segmento nella timeline, quindi tocca **[!UICONTROL Elimina segmento]** sulla barra degli strumenti. Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
+      Seleziona l’ultimo segmento nella timeline, quindi nella barra degli strumenti seleziona **[!UICONTROL Elimina segmento]**. Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
 
-      Puoi eliminare solo l’ultimo segmento. Ad esempio, se desideri eliminare tutti i segmenti dalla timeline, devi sempre selezionare l’ultimo segmento, quindi toccare **[!UICONTROL Elimina segmento]**.
+      Puoi eliminare solo l’ultimo segmento. Ad esempio, se desideri eliminare tutti i segmenti dalla timeline, devi sempre selezionare l’ultimo, quindi selezionare **[!UICONTROL Elimina segmento]**.
 
 
 1. Seleziona un segmento di tempo a cui associare una o più immagini in miniatura.
-1. A destra del video, tocca la scheda **[!UICONTROL Contenuto]** .
-1. Nella scheda Contenuto, tocca **[!UICONTROL Seleziona risorse]**, quindi sfoglia e seleziona tutte le risorse di immagine che desideri utilizzare con il video. Le risorse selezionate vengono aggiunte al pannello Selettore risorse della scheda Contenuto .
+1. A destra del video, seleziona la scheda **[!UICONTROL Contenuto]** .
+1. Nella scheda Contenuto , seleziona **[!UICONTROL Seleziona risorse]**, quindi sfoglia e seleziona tutte le risorse di immagine che desideri utilizzare con il video. Le risorse selezionate vengono aggiunte al pannello Selettore risorse della scheda Contenuto .
 
 1. Nel selettore delle risorse sotto la scheda Contenuto, effettua una delle seguenti operazioni:
 
@@ -384,14 +384,14 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
       <tbody>
         <tr>
         <td>Per associare una miniatura al segmento della timeline selezionato</td>
-        <td><p>Tocca l’immagine nel pannello del selettore risorse a destra.</p> <p>Puoi aggiungere tutte le miniature desiderate in un segmento della timeline. Per ogni immagine selezionata, un segno di spunta compare sull’immagine nel selettore delle risorse.</p> </td>
+        <td><p>Seleziona l’immagine nel pannello del selettore risorse a destra.</p> <p>Puoi aggiungere tutte le miniature desiderate in un segmento della timeline. Per ogni immagine selezionata, un segno di spunta compare sull’immagine nel selettore delle risorse.</p> </td>
         </tr>
         <tr>
         <td>Rimozione di una miniatura dal segmento della timeline selezionato</td>
         <td><p>Effettua una delle operazioni seguenti:</p>
           <ul>
-          <li>Nel pannello del selettore delle risorse, tocca un’immagine con un segno di spunta per deselezionarla. La risorsa immagine viene rimossa dal segmento della timeline.<br /> </li>
-          <li>Nel segmento della timeline selezionato, tocca un’immagine, quindi sulla barra degli strumenti, tocca <strong>Elimina prodotto</strong>.</li>
+          <li>Nel pannello del selettore delle risorse, seleziona un’immagine con un segno di spunta per deselezionarla. La risorsa immagine viene rimossa dal segmento della timeline.<br /> </li>
+          <li>Nel segmento della timeline selezionato, seleziona un’immagine, quindi nella barra degli strumenti seleziona <strong>Elimina prodotto</strong>.</li>
           </ul> </td>
         </tr>
       </tbody>
@@ -399,45 +399,45 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
 
    ![Selettore risorse](assets/chlimage_1-133.png)
 
-   Toccando un’immagine nel pannello del selettore delle risorse, questa viene aggiunta al segmento della timeline selezionato.
+   Quando si seleziona un’immagine nel pannello del selettore delle risorse, questa viene aggiunta al segmento della timeline selezionato.
 
-1. Seleziona una singola miniatura all’interno di uno dei segmenti della timeline, quindi tocca la scheda **[!UICONTROL Azioni]** .
+1. Seleziona una singola miniatura all’interno di uno dei segmenti della timeline, quindi seleziona la scheda **[!UICONTROL Azioni]** .
 1. Effettua una delle operazioni seguenti:
    <table> 
     <tbody> 
       <tr> 
       <td>Per associare l’immagine di miniatura selezionata a una visualizzazione rapida</td> 
-      <td><p>In Tipo azione, tocca <strong>Quickview</strong>.</p> <p>Se sei un cliente Experience Manager Sites ed e-commerce:</p> 
+      <td><p>In Tipo azione, seleziona <strong>Quickview</strong>.</p> <p>Se sei un cliente Experience Manager Sites ed e-commerce:</p> 
        <ul> 
        <li>Il campo di testo Valore SKU è precompilato con lo SKU (Stock Keeping Unit) del prodotto selezionato, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Questo valore viene popolato automaticamente quando l’immagine è associata a un prodotto in Experience Manager Commerce.</li> 
-       <li>Se lo SKU prepopolato non è corretto, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca il segno di spunta nell’angolo in alto a destra della pagina per tornare all’Editor video interattivo.</li> 
+       <li>Se lo SKU prepopolato non è corretto, seleziona l’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Seleziona il prodotto da utilizzare, quindi fai clic sul segno di spunta nell’angolo superiore destro della pagina per tornare all’Editor video interattivo.</li> 
        </ul> <p> Se sei <em>non</em> un cliente Experience Manager Sites o Ecommerce</p> 
        <ul> 
        <li>Consulta <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificazione delle variabili dei punti attivi</a>. Le variabili devono essere definite.  </li> 
        <li>Per impostazione predefinita, questo campo SKU utilizza il nome file della risorsa immagine senza estensione. Se segui una convenzione di denominazione standard per i file basati su SKU, in genere questo nome file non richiede alcuna modifica aggiuntiva. </li> 
-       <li>In caso contrario, modifica il valore predefinito e inserisci il valore SKU corretto. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare l’immagine mappata a una particolare visualizzazione rapida SKU.</li> 
-       </ul> <p>(Facoltativo) Se all'interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare <strong>Aggiungi variabile generica</strong>. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, <code>category=Womens</code> è una variabile aggiunta.</p> <p> </p> </td> 
+       <li>In caso contrario, modifica il valore predefinito e inserisci il valore SKU corretto. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare l'immagine selezionata a una particolare visualizzazione rapida SKU.</li> 
+       </ul> <p>(Facoltativo) Se all'interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare <strong>Aggiungi variabile generica</strong>. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, <code>category=Womens</code> è una variabile aggiunta.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>Per associare l’immagine di miniatura selezionata a un collegamento ipertestuale</td> 
-      <td><p>In Tipo azione, tocca <strong>Collegamento ipertestuale</strong>, quindi effettua una delle seguenti operazioni:</p> 
+      <td><p>In Tipo azione, selezionare <strong>Collegamento ipertestuale</strong>, quindi effettuare una delle seguenti operazioni:</p> 
        <ul> 
-       <li>Se sei un cliente di Experience Manager Sites, tocca l’icona Selettore sito (cartella) per passare a una pagina web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.</li> 
+       <li>Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore sito (cartella) per passare a una pagina web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.</li> 
        <li>Se si è un cliente Dynamic Media autonomo, nel campo di testo HREF specificare il percorso completo dell'URL di una pagina Web collegata.</li> 
        </ul> <p>Assicurati di specificare se aprire il collegamento in una nuova scheda del browser o nella scheda corrente.</p> </td> 
       </tr> 
       <tr> 
       <td>Per associare l’immagine in miniatura selezionata a un frammento esperienza</td> 
-      <td><p>In Tipo azione, tocca <strong>Frammento esperienza</strong>, quindi procedi come segue:<p> 
+      <td><p>In Tipo azione, seleziona <strong>Frammento esperienza</strong>, quindi procedi come segue:<p> 
        <ul> 
-       <li>Se sei un cliente di Experience Manager Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca o fai clic sul frammento esperienza che desideri utilizzare, quindi tocca <strong>Seleziona </strong>nell’angolo in alto a destra della pagina per tornare al pannello Azioni della pagina precedente.<br /> Consulta Frammenti  <a href="/help/sites-authoring/experience-fragments.md">esperienza</a>.</li> 
+       <li>Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Seleziona il frammento esperienza da utilizzare, quindi seleziona <strong>Seleziona </strong>nell’angolo in alto a destra della pagina, in modo da poter tornare al pannello Azioni della pagina precedente.<br /> Consulta Frammenti  <a href="/help/sites-authoring/experience-fragments.md">esperienza</a>.</li> 
       </ul> 
        <ul> 
        <li>Specifica la larghezza e l’altezza del frammento esperienza come desideri che appaia sul video.</li>
        </ul><strong>Nota</strong>: Gli strumenti di condivisione social media in Video interattivo non sono supportati quando si incorpora il visualizzatore in un frammento esperienza. Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore privi di strumenti di condivisione social media. Questi predefiniti per visualizzatori consentono di incorporarli correttamente nei Frammenti esperienza.</p></tr>&lt;&gt; 
       <tr> 
       <td>Per modificare un’azione già assegnata a un’immagine miniatura</td> 
-      <td>All’interno di un segmento della timeline, tocca un’immagine in miniatura con un collegamento a catena a destra dell’etichetta di testo. Il collegamento a catena indica che è stata assegnata un’azione. Tocca la scheda <strong>Azioni</strong> per apportare le modifiche desiderate.</td> 
+      <td>All’interno di un segmento della timeline, seleziona una miniatura con un collegamento a catena a destra dell’etichetta di testo. Il collegamento a catena indica che è stata assegnata un’azione. Seleziona la scheda <strong>Azioni</strong> per apportare le modifiche desiderate.</td> 
       </tr> 
       <tr> 
       <td>Per modificare l’etichetta di testo di un’immagine miniatura</td> 
@@ -445,7 +445,7 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
       </tr> 
       <tr> 
       <td>Per ripristinare una modifica:</td> 
-      <td>Vicino all’angolo superiore destro della pagina, tocca <strong>Annulla</strong> o <strong>Ripristina</strong>.</td> 
+      <td>Nell’angolo in alto a destra della pagina, seleziona <strong>Annulla</strong> o <strong>Ripristina</strong>.</td> 
       </tr> 
     </tbody> 
    </table>
@@ -463,29 +463,29 @@ Dopo aver salvato il video interattivo, il video viene immediatamente aperto in 
 
    * **[!UICONTROL Segmento di unione]** : puoi combinare due segmenti adiacenti (con o senza le miniature di prodotto ad essi assegnate) in un unico segmento.
 
-      Nella timeline, tocca due o più segmenti contigui da unire in uno. Non ci sono maniglie di trascinamento ovali blu sui due segmenti selezionati nella schermata sottostante.
+      Nella timeline, seleziona due o più segmenti contigui da unire in uno. Non ci sono maniglie di trascinamento ovali blu sui due segmenti selezionati nella schermata sottostante.
 
-      Tocca **[!UICONTROL Unisci segmento]** sulla barra degli strumenti.
+      Seleziona **[!UICONTROL Unisci segmento]** sulla barra degli strumenti.
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    Unione di due segmenti selezionati di cinque secondi in un segmento di dieci secondi.
 
    * **[!UICONTROL Segmento diviso]** : puoi dividere un singolo segmento in due segmenti con tempo uguale. Se al segmento sono già assegnate miniature di prodotto, queste vengono combinate nel segmento a sinistra.
 
-      Nella timeline, tocca un segmento da dividere a metà, quindi tocca **[!UICONTROL Dividi segmento]** nella barra degli strumenti.
+      Nella timeline, seleziona un segmento da dividere in due, quindi seleziona **[!UICONTROL Dividi segmento]** nella barra degli strumenti.
 
       Selezionando due o più segmenti, disattiva la funzione **[!UICONTROL Segmento diviso]** .
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Suddivisione di un segmento selezionato di dieci secondi in due segmenti di cinque secondi ciascuno.
 
-1. Nell’angolo in alto a destra della pagina **[!UICONTROL Crea video interattivo]** viene visualizzato il nome del predefinito visualizzatore attualmente selezionato utilizzato con il video. Toccare il nome se si desidera selezionare un predefinito visualizzatore diverso.
+1. Nell’angolo in alto a destra della pagina **[!UICONTROL Crea video interattivo]** viene visualizzato il nome del predefinito visualizzatore attualmente selezionato utilizzato con il video. Seleziona il nome se desideri selezionare un predefinito visualizzatore diverso.
 
-   Ad esempio, il predefinito per visualizzatori `Shoppable_Video_light` consente di riprodurre il video con un’area di visualizzazione bianca accanto al video. L&#39;area di visualizzazione è quella in cui vengono visualizzate le miniature cliccabili durante la riproduzione. Il predefinito per visualizzatori `Shoppable_Video_dark` consente di riprodurre il video con un’area di visualizzazione nera accanto al video.
+   Ad esempio, il predefinito per visualizzatori `Shoppable_Video_light` consente di riprodurre il video con un’area di visualizzazione bianca accanto al video. L&#39;area di visualizzazione è quella in cui vengono visualizzate le miniature selezionabili durante la riproduzione. Il predefinito per visualizzatori `Shoppable_Video_dark` consente di riprodurre il video con un’area di visualizzazione nera accanto al video.
 
    Se hai creato il tuo predefinito per visualizzatori video interattivi, puoi visualizzarlo nell’elenco dei predefiniti tra i quali puoi scegliere.
 
-   Al termine, tocca **[!UICONTROL Salva]**.
+   Al termine, seleziona **[!UICONTROL Salva]**.
 
    >[!NOTE]
    >
@@ -586,7 +586,7 @@ L&#39;implementazione di Quickview esistente rappresenta normalmente una catena 
 
 Queste chiamate non rappresentano chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
-Contemporaneamente alla sostituzione del passaggio 1 e in parte del passaggio 2, quando un utente fa clic su una miniatura all’interno del video interattivo, l’interazione dell’utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati delle miniature precedentemente aggiunti all’Experience Manager.
+Allo stesso tempo, quando un utente seleziona una miniatura all’interno del video interattivo, il visualizzatore gestisce l’interazione dell’utente sostituendo il passaggio 1 e in parte il passaggio 2. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati delle miniature precedentemente aggiunti all’Experience Manager.
 
 In un tale gestore di eventi il codice front-end effettua le seguenti operazioni:
 
@@ -594,7 +594,7 @@ In un tale gestore di eventi il codice front-end effettua le seguenti operazioni
 * Crea un URL Quickview basato sui dati delle miniature.
 * Attiva il processo di caricamento della visualizzazione rapida dal back-end e di rendering sullo schermo per la visualizzazione.
 
-Inoltre, il visualizzatore video interattivo supporta la modalità di funzionamento a schermo intero. L’utente finale attiva la visualizzazione rapida facendo clic su una miniatura senza uscire dalla schermata completa. Per ottenere questa funzionalità, devi modificare il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungere il BODY del documento o altri elementi di pagina web non disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo lavoro deve ascoltare uno o più callback del visualizzatore inviati dopo il visualizzatore che viene caricato sulla pagina.
+Inoltre, il visualizzatore video interattivo supporta la modalità di funzionamento a schermo intero. L’utente finale attiva la visualizzazione rapida selezionando una miniatura senza uscire dalla schermata completa. Per ottenere questa funzionalità, devi modificare il codice front-end in modo che la finestra di dialogo modale Quickview sia collegata al contenitore del visualizzatore. Non aggiungere il BODY del documento o altri elementi di pagina web non disponibili quando il visualizzatore è in modalità a schermo intero. Il codice che esegue questo lavoro deve ascoltare uno o più callback del visualizzatore inviati dopo il visualizzatore che viene caricato sulla pagina.
 
 Il codice di incorporamento restituito da Experience Manager dispone già di un gestore eventi ready-to-use. Viene commentato come visto nel seguente frammento di codice evidenziato:
 
@@ -645,7 +645,7 @@ Il codice di incorporamento restituito da Experience Manager dispone già di un 
 
 Pertanto, è solo necessario rimuovere il commento dallo snippet di codice evidenziato sopra e sostituire il corpo dei gestori fittizi con codice specifico per la particolare pagina web.
 
-Nel codice di incorporamento standard sono presenti due gestori di callback predefiniti: `quickViewActivate` e `initComplete`. Il gestore `quickViewActivate` viene attivato quando si fa clic su una miniatura nel visualizzatore. Utilizzalo per integrare il visualizzatore con la logica di attivazione Quickview. Il gestore `initComplete` viene attivato solo una volta quando il visualizzatore viene caricato nella pagina. Questo gestore viene utilizzato per regolare la posizione della finestra di dialogo Quickview nel DOM della pagina Web.
+Nel codice di incorporamento standard sono presenti due gestori di callback predefiniti: `quickViewActivate` e `initComplete`. Il gestore `quickViewActivate` viene attivato quando una miniatura viene selezionata nel visualizzatore. Utilizzalo per integrare il visualizzatore con la logica di attivazione Quickview. Il gestore `initComplete` viene attivato solo una volta quando il visualizzatore viene caricato nella pagina. Questo gestore viene utilizzato per regolare la posizione della finestra di dialogo Quickview nel DOM della pagina Web.
 
 Il processo di costruzione dell’URL di visualizzazione rapida è opposto al processo di identificazione delle variabili di miniatura descritte in precedenza in questo argomento. Utilizzando gli esempi di URL Quickview precedentemente identificati, puoi vedere come viene costruito l’URL Quickview in ogni caso:
 
