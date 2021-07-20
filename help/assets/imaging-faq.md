@@ -1,6 +1,6 @@
 ---
-title: Smart imaging
-description: La tecnologia di imaging intelligente applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
+title: Imaging avanzato
+description: La funzione Smart imaging applica le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, garantendo prestazioni e coinvolgimento migliori.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestione risorse, rappresentazioni
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2633'
 ht-degree: 1%
 
 ---
@@ -94,13 +94,13 @@ Poiché le immagini costituiscono la maggior parte del tempo di caricamento di u
 
 Miglioramenti all&#39;ultima versione di Smart imaging:
 
-* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano le più recenti Smart imaging.
+* È stata migliorata la classificazione SEO di Google per le pagine web che utilizzano l’imaging avanzato più recente.
 * Distribuisce immediatamente i contenuti ottimizzati (in fase di esecuzione).
 * Utilizza la tecnologia Adobe Sensei per convertire in base alla qualità (qlt) specificata nella richiesta di immagine.
 * L&#39;imaging avanzato può essere disattivato utilizzando il parametro URL &quot;bfc&quot;.
 * TTL (Time To Live) indipendente. Precedentemente, per il funzionamento di Smart imaging era obbligatorio un TTL minimo di 12 ore.
 * Precedentemente, sia le immagini originali che quelle derivate venivano memorizzate nella cache ed era un processo in due fasi per annullare la validità della cache. Nell’ultimo Smart imaging, solo i derivati vengono memorizzati nella cache, consentendo un processo di invalidazione della cache a un solo passaggio.
-* I clienti che utilizzano intestazioni personalizzate nel loro set di regole beneficiano dell’ultima Smart imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart imaging. Ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore di intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* I clienti che utilizzano intestazioni personalizzate nel loro set di regole beneficiano dell’ultima Smart imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart imaging. Ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiungi un valore di intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -180,7 +180,7 @@ Per utilizzare Smart imaging, l’account Dynamic Media Classic o Dynamic Media 
 
 Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
-Tocca **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]** Cerca il campo contrassegnato **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione quando invii un ticket di assistenza tecnica.
+Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]** Cerca il campo contrassegnato **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione quando invii un ticket di assistenza tecnica.
 
 Il tuo primo dominio personalizzato non comporta costi aggiuntivi con una licenza Dynamic Media.
 
@@ -206,7 +206,7 @@ La pianificazione della versione per Smart imaging DPR e l’ottimizzazione dell
 
       Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
-      Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
+      Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
       Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
    1. Verifica di utilizzare la CDN tramite Adobe e di non gestirla con una relazione diretta.
@@ -214,7 +214,7 @@ La pianificazione della versione per Smart imaging DPR e l’ottimizzazione dell
 
       Per trovare i domini, apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account o account aziendali.
 
-      Fai clic su **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
+      Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
       Cerca il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se utilizzi un dominio generico Dynamic Media Classic, puoi richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indica se è anche necessario utilizzare l’imaging intelligente per utilizzare HTTP/2.
@@ -225,7 +225,7 @@ La pianificazione della versione per Smart imaging DPR e l’ottimizzazione dell
 1. Dopo il completamento, riceverai una notifica dall’Assistenza clienti.
 1. Per ottimizzare le prestazioni dell’imaging avanzato, Adobe consiglia di impostare il valore TTL (Time To Live) a 24 ore o più. Il TTL definisce per quanto tempo le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
-   1. Se utilizzi Dynamic Media Classic, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni pubblicazione > Image Server]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
+   1. Se utilizzi Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Configurazione pubblicazione]** > **[!UICONTROL Server immagini]**. Imposta il valore **[!UICONTROL Default Client Cache Time To Live]** su 24 o più a lungo.
    1. Se utilizzi Dynamic Media, segui [queste istruzioni](config-dynamic.md). Imposta il valore **[!UICONTROL Scadenza]** su 24 ore o più.
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -245,7 +245,7 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache colpisc
 ## Come posso verificare se l’imaging intelligente funziona come previsto?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Dopo aver configurato l&#39;account con l&#39;imaging intelligente, carica un URL immagine Dynamic Media Classic o Adobe Experience Manager - Dynamic Media sul browser.
-1. Apri il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
+1. Apri il riquadro per gli sviluppatori di Chrome passando a **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** nel browser. Oppure, scegli uno strumento per sviluppatori di browser a tua scelta.
 
 1. Assicurati che la cache sia disabilitata quando gli strumenti per sviluppatori sono aperti.
 
