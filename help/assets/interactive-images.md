@@ -11,18 +11,18 @@ docset: aem65
 feature: Immagini interattive
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '4286'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
 
 # Immagini interattive{#interactive-images}
 
-È possibile rendere le immagini statiche ricche di esperienze coinvolgenti per i clienti trascinando e rilasciando punti attivi &quot;shoppable&quot; su un&#39;immagine. Gli hotspot acquistabili combinano informazioni aggiuntive su un prodotto o servizio con una funzionalità diretta, punto vendita &quot;Aggiungi al carrello&quot; o &quot;Acquista&quot;. I clienti possono toccare o fare clic su questi hotspot ed essere collegati direttamente al prodotto o al servizio, aggiungerli a un carrello o essere collegati a una pagina web. Esperienze dirette come queste aumentano il coinvolgimento e le conversioni dei clienti sul tuo sito web.
+È possibile rendere le immagini statiche ricche di esperienze coinvolgenti per i clienti trascinando e rilasciando punti attivi &quot;shoppable&quot; su un&#39;immagine. Gli hotspot acquistabili combinano informazioni aggiuntive su un prodotto o servizio con una funzionalità diretta, punto vendita &quot;Aggiungi al carrello&quot; o &quot;Acquista&quot;. I clienti possono selezionare questi hotspot ed essere collegati direttamente al prodotto o al servizio, aggiungerli a un carrello o essere collegati a una pagina web. Esperienze dirette come queste aumentano il coinvolgimento e le conversioni dei clienti sul tuo sito web.
 
-Di seguito è riportato un banner acquistabile con un pop-up Quickview. Un utente attiva la visualizzazione rapida toccando il cerchio o il &quot;punto attivo&quot; sul modello.
+Di seguito è riportato un banner acquistabile con un pop-up Quickview. Un utente attiva la visualizzazione rapida selezionando il cerchio o il &quot;punto attivo&quot; sul modello.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
@@ -93,7 +93,7 @@ A volte è sufficiente consultare gli specialisti IT responsabili dell&#39;imple
 
 La maggior parte delle implementazioni di Quickview utilizza il seguente paradigma:
 
-* L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, facendo clic su un pulsante &quot;Quickview&quot;.
+* L’utente attiva un elemento dell’interfaccia utente sul sito web. Ad esempio, selezionando un pulsante &quot;Quickview&quot;.
 * Il sito web invia una richiesta Ajax al backend per caricare i dati o il contenuto della visualizzazione rapida, se necessario.
 * I dati Quickview vengono tradotti nel contenuto in preparazione al rendering sulla pagina web.
 * Infine, il codice front-end esegue il rendering visivo di tali contenuti sullo schermo.
@@ -102,11 +102,11 @@ L’approccio consiste quindi nel visitare diverse aree del sito web esistente i
 
 Normalmente non è necessario utilizzare strumenti di debug specializzati. I browser web moderni dispongono di ispettori web che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser web che includono ispettori web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premere F12 per aprire il pannello Strumenti per sviluppatori, quindi fare clic sulla scheda Rete.
-Su un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi fare clic sulla scheda Rete.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premere F12 per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Rete.
+Su un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Rete.
 
 * In Firefox, è possibile attivare il plug-in Firebug premendo F12 e utilizzando la relativa scheda Net, oppure è possibile utilizzare lo strumento integrato Inspector e la relativa scheda Rete.
-Su un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti di sviluppo, quindi fare clic sulla scheda Ispettore.
+Su un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti di sviluppo, quindi selezionare la scheda Ispettore.
 
 Quando il monitoraggio della rete è attivato nel browser, attiva la visualizzazione rapida nella pagina.
 
@@ -164,7 +164,7 @@ Puoi applicare lo stesso approccio utilizzato nei tre esempi sopra alla pagina w
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-La pagina web demo ha diverse miniature di prodotto, ognuna con un pulsante Quickview con etichetta &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser Web ancora attivato, fai clic su ogni pulsante e osserva gli URL registrati di Quickview. Dopo aver attivato tutti e quattro i prodotti Quickview disponibili sulla pagina, si dispone del seguente elenco di richieste Quickview effettuate al backend:
+La pagina web demo ha diverse miniature di prodotto, ognuna con un pulsante Quickview con etichetta &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser Web ancora attivato, seleziona ogni pulsante e osserva gli URL registrati di Quickview. Dopo aver attivato tutti e quattro i prodotti Quickview disponibili sulla pagina, si dispone del seguente elenco di richieste Quickview effettuate al backend:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,21 +194,21 @@ Dopo aver salvato il predefinito visualizzatore, questo viene attivato automatic
 
 **Per creare un predefinito visualizzatore di immagini interattive:**
 
-1. Nella barra a sinistra, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Crea]**.
+1. Nella barra a sinistra, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
+1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Nuovo predefinito visualizzatore , digita un nome per descrivere il predefinito visualizzatore banner interattivo.
 
    Il titolo viene visualizzato nella pagina dell’elenco Predefiniti visualizzatore dopo il salvataggio.
 
 1. Nel menu a discesa Tipo di contenuti multimediali avanzati, seleziona **[!UICONTROL Immagine interattiva]**.
-1. Tocca **[!UICONTROL Crea]**.
-1. Nella pagina Modifica predefinito visualizzatore, tocca la scheda **[!UICONTROL Aspetto]** .
+1. Seleziona **[!UICONTROL Crea]**.
+1. Nella pagina Modifica predefinito visualizzatore, seleziona la scheda **[!UICONTROL Aspetto]** .
 1. Effettua una delle operazioni seguenti:
 
-   * Per caricare un’immagine del tuo punto attivo da utilizzare sulle immagini, tocca l’icona Selettore risorse . Nella pagina Seleziona contenuto , individua l’immagine del punto attivo che desideri utilizzare, selezionala, quindi tocca l’icona con il segno di spunta nell’angolo in alto a destra.
-   * Per selezionare un’immagine hotspot predefinita, tocca l’icona Raccolta punti attivi . Nella palette galleria punti attivi, tocca l’immagine del punto attivo che desideri utilizzare.
+   * Per caricare un’immagine del tuo punto attivo da utilizzare sulle immagini, seleziona l’icona Selettore risorse . Nella pagina Seleziona contenuto , individua l’immagine del punto attivo che desideri utilizzare, selezionala, quindi seleziona l’icona con il segno di spunta nell’angolo in alto a destra.
+   * Per selezionare un&#39;immagine hotspot predefinita, selezionare l&#39;icona Raccolta punti attivi. Nella palette galleria punti attivi, selezionare l’immagine del punto attivo che si desidera utilizzare.
 
-1. Vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Salva]**.
+1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**.
 
    Assicurati di pubblicare il nuovo predefinito visualizzatore.
 
@@ -260,43 +260,43 @@ Se modifichi immagini interattive con punti attivi e ritagli l’immagine, quest
 1. Nella vista Risorse, individua il banner immagine che desideri rendere interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Passa il puntatore sull&#39;immagine, quindi seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta). Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-   * Passa il puntatore sull&#39;immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL Modifica]**.
+   * Passa il puntatore sull&#39;immagine, quindi seleziona **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL Modifica]**.
 
-   * Toccare l’immagine per aprirla nella pagina Vista dettagli. Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Seleziona l’immagine per aprirla nella pagina Vista dettagli . Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Punto attivo]**.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Punto attivo]**.
 
-   1. Nell’angolo in alto a sinistra della pagina Gestione punti attivi, tocca **[!UICONTROL Punto attivo]**.
-   1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione.
+   1. Nell’angolo in alto a sinistra della pagina Gestione punti attivi, seleziona **[!UICONTROL Punto attivo]**.
+   1. Nell’immagine, seleziona la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione.
    1. Aggiungi gli hotspot aggiuntivi necessari ripetendo i passaggi a e b.
-   1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull&#39;immagine, quindi tocca **[!UICONTROL Elimina]** (icona cestino) sotto l&#39;intestazione **[!UICONTROL Punti attivi]** .
+   1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull&#39;immagine, quindi seleziona **[!UICONTROL Elimina]** (icona del cestino) sotto l&#39;intestazione **[!UICONTROL Punti attivi]**.
 
 1. Nel campo di testo Nome, digitare il nome del punto attivo. Questo nome viene visualizzato anche nell’elenco a discesa Punto attivo selezionato .
 1. Effettua una delle operazioni seguenti:
 
-   * Tocca **[!UICONTROL Quickview]**.
+   * Seleziona **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente di Experience Manager Sites o eCommerce, tocca o fai clic sull’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Tocca o fai clic sul prodotto che desideri utilizzare, quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites o eCommerce, seleziona l’icona Selettore prodotto (lente di ingrandimento) per aprire la pagina Seleziona prodotto . Seleziona il prodotto da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina in modo da poter tornare alla pagina Gestione punti attivi.
       * Se sei *non* un cliente Experience Manager Sites o eCommerce
 
          * Vedere [Identificare le variabili del punto attivo](#optional-identifying-hotspot-variables); devi definire queste variabili.
-         * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato a una particolare visualizzazione rapida SKU.
-         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, toccare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Males` è una variabile aggiunta.
-   * Toccare **[!UICONTROL Collegamento ipertestuale]**.
+         * Quindi, inserisci manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che è un identificatore univoco per ogni prodotto o servizio distinto offerto. Il valore SKU inserito popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo selezionato a una particolare visualizzazione rapida SKU.
+         * (Facoltativo) Se all&#39;interno di Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, `category=Males` è una variabile aggiunta.
+   * Selezionare **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se sei un cliente di Experience Manager Sites, tocca o fai clic sull’icona Selettore sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore sito (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo include collegamenti con URL relativi, in particolare con le pagine di Experience Manager Sites.
       * Se si è un cliente autonomo, nel campo di testo HREF specificare il percorso completo dell&#39;URL di una pagina Web collegata.
 
    Assicurati di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
 
    Per ulteriori informazioni, consulta [Lavorare con i selettori](/help/assets/working-with-selectors.md) .
 
-   * Tocca **[!UICONTROL Frammento esperienza]**.
+   * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, tocca o fai clic sull’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Tocca il frammento esperienza che desideri utilizzare, quindi tocca **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina per tornare alla pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza . Seleziona il frammento esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell’angolo in alto a destra della pagina, in modo da poter tornare alla pagina Gestione punti attivi.
 Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento esperienza come desideri che appaia sul banner.
@@ -306,7 +306,7 @@ Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 
 
-1. Tocca **[!UICONTROL Salva]** per salvare il lavoro e tornare alla pagina Sfoglia.
+1. Seleziona **[!UICONTROL Salva]** per salvare il lavoro e tornare alla pagina Sfoglia.
 1. Pubblica l’immagine interattiva. La pubblicazione consente di distribuire il banner tramite il cloud e genera anche codice di incorporamento se è necessario eseguire l’integrazione con un sito web di terze parti.
 
    Consulta [Pubblicare risorse](/help/assets/manage-assets.md#publishing-assets).
@@ -329,10 +329,10 @@ Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dyna
 
 **Per visualizzare in anteprima le immagini interattive:**
 
-1. Nella vista Risorse, individua un’immagine interattiva esistente creata e tocca per aprirla in Anteprima.
-1. Nell’elenco a discesa Contenuto, nell’angolo in alto a sinistra della pagina Anteprima, tocca **[!UICONTROL Visualizzatori]**.
-1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
-1. Tocca i punti attivi sull’immagine per testare le azioni associate.
+1. Nella vista Risorse, individua un’immagine interattiva esistente creata e selezionala per aprirla in Anteprima.
+1. Seleziona **[!UICONTROL Visualizzatori]** dall’elenco a discesa Contenuto nell’angolo in alto a sinistra della pagina Anteprima.
+1. Nell’elenco Visualizzatori, seleziona **[!UICONTROL Shoppable_Banner]** o il nome del predefinito visualizzatore di immagini interattivo creato.
+1. Seleziona gli hotspot sull&#39;immagine per testarne le azioni associate.
 
 ## Pubblicare risorse di immagini interattive {#publishing-interactive-image-assets}
 
@@ -398,7 +398,7 @@ L&#39;implementazione di Quickview esistente rappresenta normalmente una catena 
 
 Queste chiamate non rappresentano chiamate API pubbliche indipendenti che possono essere richiamate dalla logica della pagina web da un passaggio arbitrario. Si tratta invece di una chiamata concatenata in cui ogni passaggio successivo viene nascosto nell’ultima fase (callback) del passaggio precedente.
 
-Allo stesso tempo, quando l&#39;immagine interattiva acquistabile sostituisce il passaggio 1 e in parte il passaggio 2, quando un utente fa clic su un punto attivo all&#39;interno dell&#39;immagine acquistabile, l&#39;interazione dell&#39;utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati del punto attivo precedentemente aggiunti alle risorse di Experience Manager.
+Allo stesso tempo, quando l&#39;immagine interattiva acquistabile sostituisce il passaggio 1 e in parte il passaggio 2, quando un utente seleziona un punto attivo all&#39;interno dell&#39;immagine acquistabile, l&#39;interazione dell&#39;utente viene gestita dal visualizzatore. Il visualizzatore restituisce un evento alla pagina web che contiene tutti i dati del punto attivo precedentemente aggiunti alle risorse di Experience Manager.
 
 In un tale gestore di eventi, il codice front-end effettua le seguenti operazioni:
 
