@@ -12,9 +12,9 @@ docset: aem65
 feature: Gestione risorse
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b42a14729a88bda563b0773dac735ad569ad3097
 workflow-type: tm+mt
-source-wordcount: '11672'
+source-wordcount: '11665'
 ht-degree: 5%
 
 ---
@@ -161,7 +161,7 @@ Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la 
 
 Dynamic Media supporta la riproduzione video mobile per video MP4 H.264. I dispositivi BlackBerry® che supportano questo formato video sono disponibili nel seguente sito: [Formati video supportati su BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-È possibile trovare i dispositivi Windows che supportano questo formato video nel seguente percorso: [Codec multimediali supportati per Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
+È possibile trovare i dispositivi Windows che supportano questo formato video nel seguente percorso: [Codec multimediali supportati per Windows Phone 8](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
 * Riproduci il video utilizzando i predefiniti per visualizzatori video di Dynamic Media, tra cui:
 
@@ -316,7 +316,7 @@ La tabella seguente descrive le dimensioni, le proporzioni e il bit rate minimo 
 
 È possibile ottenere i metadati di un file visualizzandone i metadati utilizzando uno strumento di editing video o un&#39;applicazione progettata per ottenere i metadati. Di seguito sono riportate le istruzioni per l’utilizzo di MediaInfo, un’applicazione di terze parti, per ottenere i metadati di un file video:
 
-1. Vai a questa pagina web: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
+1. Vai a [Download di MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
 1. Selezionare e scaricare il programma di installazione per la versione GUI e seguire le istruzioni di installazione.
 1. Dopo l&#39;installazione, fare clic con il pulsante destro del mouse sul file video (solo Windows) e selezionare MediaInfo oppure aprire MediaInfo e trascinare il file video nell&#39;applicazione. Vengono visualizzati tutti i metadati associati al file video, inclusi larghezza, altezza e fps.
 
@@ -420,7 +420,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 |--- |--- |--- |--- |
 | Origine | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
-| Codificato | 640 x 360 | 3 | 3 |
+| Codificato | 640 x 360 | 3 | 1 |
 | Codificato | 480 x 270 | 4 | 4 |
 
 ### Formato del file video codificato {#encoded-video-file-format}
@@ -453,7 +453,7 @@ Puoi anche [annullare la pubblicazione dei video per rimuoverli da YouTube](#unp
 
 ### Configurare le impostazioni di Google Cloud {#configuring-google-cloud-settings}
 
-Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e passa direttamente a [Creazione di un canale YouTube](#creating-a-youtube-channel).
+Per pubblicare su YouTube, è necessario un account Google. Se disponi di un account GMAIL, disponi già di un account Google; se non disponi di un account Google, puoi facilmente crearne uno. È necessario l’account perché sono necessarie le credenziali per pubblicare le risorse video in YouTube. Se hai già creato un account, salta questa attività e procedi direttamente a [Crea un canale YouTube](#creating-a-youtube-channel).
 
 L’account utilizzato con Google Cloud e l’account Google utilizzato per YouTube non deve essere lo stesso.
 
@@ -507,9 +507,9 @@ Per configurare le impostazioni di Google Cloud:
 
    * Da **[!UICONTROL Quale API utilizzi?]** dall’elenco a discesa, seleziona  **[!UICONTROL YouTube Data API v3]**.
 
-   * Da **[!UICONTROL dove chiamerai l&#39;API?]** elenco a discesa, seleziona Server  **[!UICONTROL web (ad esempio node.js, Tomcat)]**
+   * Da **[!UICONTROL Da dove chiami l&#39;API?]** elenco a discesa, seleziona Server  **[!UICONTROL web (ad esempio, node.js, Tomcat)]**
 
-   * Da **[!UICONTROL A quali dati accederai?]** dall’elenco a discesa, tocca Dati  **[!UICONTROL utente]**.
+   * Da **[!UICONTROL A quali dati si accede?]** dall’elenco a discesa, tocca Dati  **[!UICONTROL utente]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
