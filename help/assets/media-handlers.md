@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Flusso di lavoro, rappresentazioni
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
@@ -37,7 +37,7 @@ I seguenti gestori di contenuti multimediali sono disponibili in [!DNL Assets] e
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>applicazione/illustratore</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Quando carichi un file MP3, questo viene [elaborato utilizzando una libreria di terze parti](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La libreria calcola una lunghezza approssimativa non accurata se il MP3 ha un bitrate variabile (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Quando carichi un file MP3, questo viene [elaborato utilizzando una libreria di terze parti](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La libreria calcola una lunghezza approssimativa non accurata se il MP3 ha un bitrate variabile (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | immagine/immagine |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>applicazione/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>immagine/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -56,7 +56,7 @@ Tutti i gestori eseguono le seguenti attività:
 
 Per visualizzare i gestori di contenuti multimediali attivi:
 
-1. Nel browser, passa a `http://localhost:4502/system/console/components`.
+1. Nel browser, passa a `https://localhost:4502/system/console/components`.
 1. Clic `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Viene visualizzato un elenco con tutti i gestori di contenuti multimediali attivi. Esempio:
 
@@ -494,7 +494,7 @@ Installa [!DNL ImageMagick] sul disco che ospita il server [!DNL Experience Mana
 Per testare il flusso di lavoro modificato, aggiungi una risorsa a `/content/dam`.
 
 1. Nel file system, ottenere un&#39;immagine TIFF di vostra scelta. Rinomina in `myImage.tiff` e copialo in `/content/dam`, ad esempio utilizzando WebDAV.
-1. Vai alla console **[!UICONTROL CQ5 DAM]**, ad esempio `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Vai alla console **[!UICONTROL CQ5 DAM]**, ad esempio `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Apri la risorsa **[!UICONTROL myImage.tiff]** e verifica che sia stata creata l&#39;immagine capovolta e le tre miniature.
 
 #### Configura il passaggio del processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
