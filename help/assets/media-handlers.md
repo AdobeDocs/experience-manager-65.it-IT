@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Flusso di lavoro, rappresentazioni
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
@@ -451,7 +451,7 @@ Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in
 * Trasformazione EPS e AI utilizzando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
 * transcodifica video FLV tramite [FFmpeg](https://ffmpeg.org/).
 * Codifica MP3 con [LAME](https://lame.sourceforge.io/).
-* Elaborazione audio tramite [SOX](https://sox.sourceforge.net/).
+* Elaborazione audio tramite [SOX](https://sox.sourceforge.io/).
 
 >[!NOTE]
 >
