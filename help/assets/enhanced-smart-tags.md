@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tag avanzati, ricerca
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1632'
 ht-degree: 4%
 
 ---
@@ -188,6 +188,7 @@ Puoi anche assegnare un rango più alto a un tag per aumentarne la pertinenza pe
 
 ## Suggerimenti e limitazioni {#tips-best-practices-limitations}
 
+* Per addestrare il modello, utilizzare le immagini più appropriate. Non è possibile ripristinare l’addestramento o rimuovere il modello di formazione. La precisione dell’assegnazione tag dipende dall’addestramento corrente, quindi è necessario eseguirlo con attenzione.
 * L’utilizzo di Smart Content Services è limitato a 2 milioni di immagini con tag all’anno. Tutte le immagini duplicate elaborate e con tag vengono conteggiate come immagini con tag.
 * Se esegui il flusso di lavoro di assegnazione tag dalla timeline, puoi applicare tag a un massimo di 15 risorse alla volta.
 * I tag avanzati funzionano solo per i formati immagine PNG e JPG. Le risorse supportate con rappresentazioni create in questi due formati ricevono i tag di Tag avanzati.
