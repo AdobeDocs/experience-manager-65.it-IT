@@ -10,7 +10,8 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
+exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+source-git-commit: 90a19e84e2a8e2ff8c4216a6c0beab0b65b582d4
 workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 27%
@@ -55,7 +56,7 @@ Dupliceremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) e
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza di Magento o aggiungi le configurazioni al progetto appena creato.
@@ -88,7 +89,7 @@ Il componente Product Teaser verrà esteso durante l’esercitazione. Come primo
 
    ![Product Teaser - stile predefinito](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Aggiungi un attributo personalizzato nel Magento {#add-custom-attribute}
+## Aggiungi un attributo personalizzato in Magento {#add-custom-attribute}
 
 I prodotti e i dati dei prodotti visualizzati in AEM vengono memorizzati nel Magento. Quindi aggiungi un nuovo attributo per **Eco Friendly** come parte dell&#39;attributo di prodotto impostato utilizzando l&#39;interfaccia utente del Magento.
 
@@ -134,7 +135,7 @@ I prodotti e i dati dei prodotti visualizzati in AEM vengono memorizzati nel Mag
    >
    > Maggiori dettagli su [Gestione cache sono disponibili nella guida utente del Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Utilizza un IDE GraphQL per verificare l&#39;attributo {#use-graphql-ide}
+## Utilizzare un IDE GraphQL per verificare l&#39;attributo {#use-graphql-ide}
 
 Prima di passare AEM codice è utile esplorare il [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) utilizzando un IDE GraphQL. L’integrazione del Magento con AEM viene eseguita principalmente tramite una serie di query GraphQL. Comprendere e modificare le query GraphQL è uno dei modi principali in cui è possibile estendere i componenti core CIF.
 
@@ -183,7 +184,7 @@ Quindi, utilizza un IDE GraphQL per verificare che l&#39;attributo `eco_friendly
    >
    > La documentazione più dettagliata sul [Magento GraphQL è disponibile qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
-## Aggiornamento del modello Sling per Product Teaser {#updating-sling-model-product-teaser}
+## Aggiornare il modello Sling per il Product Teaser {#updating-sling-model-product-teaser}
 
 Ora estenderemo la logica di business del Product Teaser implementando un modello Sling. I [modelli Sling](https://sling.apache.org/documentation/bundles/models.html) sono “POJO” (Plain Old Java Objects) basati su annotazioni che implementano la logica di business necessaria per il componente. I modelli Sling vengono utilizzati insieme agli script HTL come parte del componente. Seguiremo il [pattern di delega per modelli Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) in modo da estendere solo parti del modello esistente di Product Teaser.
 
@@ -274,11 +275,9 @@ Utilizza [l&#39;IDE che preferisci](https://docs.adobe.com/content/help/en/exper
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -399,7 +398,7 @@ Nel nostro caso, vogliamo eseguire il rendering di un banner sopra il teaser per
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Apri una nuova finestra del browser e passa a AEM e alla **console OSGi** > **Stato** > **Modelli Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -478,7 +477,7 @@ A questo punto sta funzionando la logica per quando visualizzare il badge **Eco 
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Aggiorna la pagina principale **Venia** in [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) in cui è stato aggiunto il Product Teaser.
