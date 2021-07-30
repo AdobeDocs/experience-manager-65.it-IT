@@ -1,28 +1,27 @@
 ---
-title: Personalizzazione tema
-seo-title: Personalizzazione tema
-description: Come personalizzare il tema dell'app  AEM Forms.
-seo-description: Come personalizzare il tema dell'app  AEM Forms.
+title: Personalizzazione del tema
+seo-title: Personalizzazione del tema
+description: Come personalizzare il tema della tua app AEM Forms.
+seo-description: Come personalizzare il tema della tua app AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
+# Personalizzazione del tema {#theme-customization}
 
-# Personalizzazione tema {#theme-customization}
+Puoi personalizzare il codice HTML e il file CSS per fornire all’app AEM Forms un aspetto e un aspetto distinti per l’organizzazione. Ad esempio, è possibile modificare il colore e l&#39;altezza dello sfondo delle attività o dei punti iniziali. L&#39;esempio seguente fornisce istruzioni per la modifica:
 
-Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un aspetto specifici dell&#39;organizzazione per  l&#39;app AEM Forms. Ad esempio, è possibile modificare il colore e l&#39;altezza di sfondo delle attività o dei punti di inizio. L&#39;esempio seguente fornisce le istruzioni per la modifica:
-
-* visualizzare le istruzioni al posto della descrizione
+* visualizza le istruzioni al posto della descrizione
 * numero di percorsi di visualizzazione
 * colore sfumatura sfondo
 
@@ -30,18 +29,18 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 
 1. Apri il progetto.
 
-   * Per iOS, apri `Capture.xcodeproj` in Xcode
-   * Per Android, aprite il progetto Android in Eclipse.
+   * Per iOS, apri `Capture.xcodeproj` in Xcode.
+   * Per Android, apri il progetto Android in Eclipse.
    * Per Windows, aprire `MWSWindows.sln` in Visual Studio.
 
-1. Passate alla cartella dei modelli.
+1. Passa alla cartella dei modelli.
 
-   * In Xcode, andate alla cartella **Capture > www > wsmobile > js > runtime > templates**.
-   * In Eclipse, passa alla cartella **assets > www > wsmobile > js > runtime > templates**.
-   * In Visual Studio, passare alla cartella **MWSWindows > www > wsmobile > js > runtime > templates**.
+   * In Xcode, passa alla cartella **Capture > www > wsmobile > js > runtime > templates** .
+   * In Eclipse, passa alla cartella **risorse > www > wsmobile > js > runtime > templates** .
+   * In Visual Studio, passare alla cartella **MWSWindows > www > wsmobile > js > runtime > templates** .
 
-1. Aprire il file `template.html` per la modifica.
-1. Individuate la stringa seguente:
+1. Apri il file `template.html` per la modifica.
+1. Individua la stringa seguente:
 
    ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
@@ -51,9 +50,9 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
                  <%} else
    ```
 
-   Sostituirlo con `<%`.
+   Sostituiscilo con `<%`.
 
-1. Individuare il codice seguente nel file `template.html`:
+1. Individua il seguente codice nel file `template.html` :
 
    ```jsp
    <ul id="task_menu_list">
@@ -73,15 +72,15 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
    </li>
    ```
 
-1. Passate alla cartella css.
+1. Passa alla cartella css .
 
-   * In Xcode, andate a **Capture > www > wsmobile > css**.
-   * In Eclipse, andate a **assets > www > wsmobile > css**.
+   * In Xcode, passa a **Cattura > www > wsmobile > css**.
+   * In Eclipse, passa a **risorse > www > wsmobile > css**.
    * In Visual Studio, passare a **MWSWindows > www > wsmobile > css**.
 
-1. Aprire il file `_style.css` per la modifica.
-1. Per l&#39;immagine di sfondo, passate da `#323232` a `#fff`.
-1. Salvare le modifiche e chiudere il file `_style.css`.
-1. Aprite l&#39;app  AEM Forms.
+1. Apri il file `_style.css` per la modifica.
+1. Per Immagine di sfondo, modifica `#323232` in `#fff`.
+1. Salva le modifiche e chiudi il file `_style.css`.
+1. Apri l’app AEM Forms.
 
-   L&#39;app AEM Forms  ora visualizza le istruzioni invece della descrizione.
+   L’app AEM Forms ora visualizza le istruzioni anziché la descrizione.
