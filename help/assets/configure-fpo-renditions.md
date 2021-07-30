@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Rappresentazioni
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -25,9 +25,9 @@ L’Experience Manager consente di elaborare diversi metodi per le immagini che 
 È possibile utilizzare ImageMagick per elaborare le immagini, anche per generare rappresentazioni FPO. Tali rappresentazioni vengono sottoposte a sottocampionamento, ovvero le dimensioni in pixel del rendering vengono ridotte proporzionalmente se l&#39;immagine originale ha un PPI superiore a 72. Consulta [installare e configurare ImageMagick per l’utilizzo con Experience Manager Assets](best-practices-for-imagemagick.md).
 
 |  | Utilizzo del flusso di lavoro integrato di Experience Manager | Utilizzo del flusso di lavoro ImageMagick | Osservazioni |
-| | |—|— |
-| Per le nuove attività | Abilita rendering FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick nel flusso di lavoro di Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager esegue il flusso di lavoro Risorse di aggiornamento DAM per ogni caricamento. |
-| Attività esistenti | Abilita il rendering FPO in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Le rappresentazioni FPO delle risorse esistenti possono essere create on-demand o in massa. |
+|--- |--- |---|--- |
+| Per nuove risorse | Abilita rendering FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick nel flusso di lavoro di Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | In Experience Manager viene eseguito il flusso di lavoro Aggiorna risorse DAM per ogni caricamento. |
+| Per le risorse esistenti | Abilita il rendering FPO in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Le rappresentazioni FPO delle risorse esistenti possono essere create on-demand o in blocco. |
 
 >[!CAUTION]
 >
