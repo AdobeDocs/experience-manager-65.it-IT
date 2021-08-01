@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
 workflow-type: tm+mt
-source-wordcount: '3718'
+source-wordcount: '3771'
 ht-degree: 4%
 
 ---
@@ -679,3 +679,10 @@ ht-degree: 4%
          + [Gestione programmatica dei nodi delle preferenze](developing/programmatically-preferences-nodes.md)
          + [Protezione dei documenti con i criteri](developing/protecting-documents-policies.md)
          + [Convalidare un documento DDX utilizzando l’API del servizio Web](developing/validate-ddx-document-using-web.md)
+      + Documentazione legacy {#legacy-documentation}
+         + [Utilizzo del servizio di script execute in AEM Forms su JEE Workbench per creare dati XML](developing/building-xml.md)
+         + [Compressione e decompressione dei file tramite AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
+         + [Configurazione e risoluzione dei problemi di un AEM Forms su un cluster di server JEE](developing/configure-server-cluster.md)
+         + [Generazione e utilizzo degli hash nei PDF forms dinamici](developing/hashing-forms.md)
+         + [Trasmissione delle credenziali tramite intestazioni WS-Security](developing/passing-credentials.md)
+
