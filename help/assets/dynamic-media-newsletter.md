@@ -1,30 +1,34 @@
 ---
-title: Newsletter Dynamic Media
-description: 'La newsletter Dynamic Media per Experience League è una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare subito a realizzare valore. In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Include informazioni su video, panoramica delle soluzioni e presentazioni su alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
+title: Archivio newsletter Dynamic Media
+description: 'La newsletter Dynamic Media archiviata per Experience League era una newsletter mensile. È stato progettato per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter realizzare subito valore. Le newsletter archiviate contengono preziose risorse per la creazione di conoscenze, disponibili in questa newsletter di one-stop che è ora discontinua. Le newsletter archiviate includono video dimostrativi e panoramica delle soluzioni. Sono inoltre disponibili presentazioni alle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori e i profili video. '
 keywords: Dynamic Media;newsletter;aggiornamenti dei prodotti;suggerimenti e trucchi;eventi;successo dei clienti;blog;blog;immagini;video;funzionalità;funzionalità
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaborazione,Dynamic Media Classic
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
 # ![Logo della newsletter Dynamic Media](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-La newsletter mensile Dynamic Media per Experience League è stata progettata per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare a realizzare valore immediatamente.
+>[!NOTE]
+>
+>La newsletter mensile è ora interrotta. Tuttavia, puoi comunque accedere agli archivi della newsletter qui sotto.
 
-In questa newsletter dedicata a un punto vendita sono disponibili preziose risorse per lo sviluppo delle conoscenze. Include informazioni su video, panoramica delle soluzioni e presentazioni su alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora.
+La newsletter Dynamic Media di Experience League è stata progettata per aiutarti a imparare a usare Dynamic Media e Dynamic Media Classic in modo da poter iniziare a realizzare valore fin da subito.
 
-## Ricevi ispirazione - Resta informato
+In questa newsletter archiviata con un unico punto vendita, puoi trovare preziose risorse per la creazione di conoscenze, come video dimostrativi e panoramica delle soluzioni. Sono inoltre disponibili presentazioni alle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori e i profili video.
 
-[Iscriviti ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter Dynamic Media su base mensile nella tua casella in entrata.
+<!-- ## Get inspired - Stay informed
 
-## Hai perso un problema della Dynamic Media Newsletter?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Archivio newsletter Dynamic Media
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -52,9 +56,9 @@ In questa newsletter dedicata a un punto vendita sono disponibili preziose risor
    * Scopri di più sui controlli Dynamic Media Classic gratuiti di Adobe.
    * Incontra John Monroe, Senior Program Manager for Customer Success Services.
 
-      >[!IMPORTANT]
-      >
-      >L’Adobe vuole assicurarsi che invii solo la newsletter Dynamic Media alle persone che la desiderano ricevere. Per continuare a ricevere la newsletter dopo questo problema, iscriviti [qui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Febbraio 2020, Numero 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -153,7 +157,7 @@ In questa newsletter dedicata a un punto vendita sono disponibili preziose risor
 
 * **[Aprile 2019, Numero 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Benvenuto al numero di inaugurazione della newsletter Dynamic Media, la nuova newsletter mensile di Adobe piena di notizie, eventi e risorse per gli utenti di Dynamic Media all’interno di Adobe Experience Manager Assets e Adobe Dynamic Media Classic.
+   Benvenuto al numero di inaugurazione della newsletter Dynamic Media, newsletter Adobe piena di notizie, eventi e risorse per gli utenti di Dynamic Media in Adobe Experience Manager Assets e Adobe Dynamic Media Classic.
 
    In questo numero:
    * Registrati al webinar sulle funzioni nascoste Dynamic Media Classic di Adobe.
