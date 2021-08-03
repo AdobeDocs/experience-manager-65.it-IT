@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '590'
 ht-degree: 22%
 
 ---
@@ -116,6 +116,7 @@ ht-degree: 22%
    + [Integrare con [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management delle attività](drm.md)
    + [Utilizza il pacchetto dimostrativo per informazioni sulle risorse](use-demo-package-for-asset-insights.md)
+   + [Generare rappresentazioni FPO per Adobe InDesign](configure-fpo-renditions.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
    + [Best practice per monitorare le risorse](assets-monitoring-best-practices.md)
    + [Supporto Camera Raw](camera-raw.md)
