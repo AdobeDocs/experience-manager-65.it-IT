@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Rappresentazioni
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,11 @@ Di seguito sono riportati i passaggi per configurare il modello di flusso di lav
 
 Ad Experience Manager, il flusso di lavoro Aggiorna risorsa DAM viene eseguito quando viene caricata una nuova risorsa. Per utilizzare ImageMagick per elaborare le rappresentazioni delle risorse appena caricate, aggiungi un nuovo comando al modello di flusso di lavoro.
 
-1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Seleziona il modello **[!UICONTROL Risorsa di aggiornamento DAM]** e fai clic su **[!UICONTROL Modifica]**.
+1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
-1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo superiore sinistro. Cerca il passaggio della riga di comando.
+1. Seleziona il modello **[!UICONTROL Risorsa di aggiornamento DAM]** e fai clic su **[!UICONTROL Modifica]**.
+
+1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo superiore sinistro e cerca il passaggio della riga di comando.
 
 1. Trascina il passaggio **[!UICONTROL Riga di comando]** e aggiungilo prima del passaggio **[!UICONTROL Elabora miniature]** .
 
@@ -89,13 +91,21 @@ Per informazioni dettagliate sulle funzionalità della riga di comando di ImageM
 
 Per utilizzare un flusso di lavoro di Experience Manager per generare il rendering FPO delle risorse esistenti, crea un modello di flusso di lavoro dedicato che utilizza l’opzione di rendering FPO integrata.
 
-1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Per creare un modello, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**. Aggiungi un **[!UICONTROL Titolo]** significativo e un **[!UICONTROL Nome]** significativo.
+1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
-1. Seleziona il modello e fai clic su **[!UICONTROL Modifica]**. Fare clic su **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]**. Seleziona **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora la scalabilità e le prestazioni. Fai clic su ******[!UICONTROL Salva e chiudi]**.
+1. Per creare un modello, fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**.
 
-1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo superiore sinistro. Passaggio della miniatura del processo di ricerca. Trascina il passaggio **[!UICONTROL Elabora miniature]** .
+1. Aggiungi un **[!UICONTROL Titolo]** significativo e **[!UICONTROL Nome]** significativo.
 
-1. Seleziona **[!UICONTROL Elabora miniature]** e fai clic su **[!UICONTROL Configura]**. Segui la [configurazione per generare il rendering delle nuove risorse utilizzando il flusso di lavoro di Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow). Per attivare le modifiche, fare clic su **[!UICONTROL Sincronizza]**.
+1. Seleziona il modello e fai clic su **[!UICONTROL Modifica]**. Fai clic su **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]**, quindi seleziona **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora la scalabilità e le prestazioni.
+
+1. Fai clic su ******[!UICONTROL Salva e chiudi]**.
+
+1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo superiore sinistro e cerca il passaggio Elabora miniature.
+
+1. Seleziona **[!UICONTROL Elabora miniature]** e fai clic su **[!UICONTROL Configura]**. Segui la [configurazione per generare il rendering delle nuove risorse utilizzando il flusso di lavoro di Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+
+1. Per attivare le modifiche, fare clic su **[!UICONTROL Sincronizza]**.
 
 
 ## Generare rappresentazioni di risorse esistenti utilizzando ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
