@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: a84f9bd590193cbb8c2549b34df1bbcec618ba67
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3310'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ I passaggi nell&#39;illustrazione sono i seguenti:
 1. Il destinatario apre il documento nell&#39;applicazione client appropriata. Il destinatario può utilizzare il documento in base ai propri criteri.
 1. Il proprietario del documento, il coordinatore del set di criteri o l&#39;amministratore possono tenere traccia dei documenti e modificarne l&#39;accesso utilizzando le pagine web.
 
-## Informazioni sugli utenti della sicurezza dei documenti {#about-document-security-users}
+## Informazioni sugli utenti della protezione dei documenti {#about-document-security-users}
 
 Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diverse attività:
 
@@ -147,7 +147,7 @@ Gli amministratori di sicurezza dei documenti possono creare ruoli personalizzat
 * Eventi server di visualizzazione della protezione dei documenti
 * Proprietario dei criteri di modifica della protezione dei documenti
 
-## Criteri e documenti protetti da policy {#policies-and-policy-protected-documents}
+## Politiche e documenti protetti da policy {#policies-and-policy-protected-documents}
 
 Un *criterio* definisce un set di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. Un criterio consente inoltre di modificare dinamicamente le autorizzazioni di un documento. Consente alla persona che garantisce il permesso di modificare le impostazioni di riservatezza del documento per revocare l&#39;accesso al documento o per cambiare il criterio.
 
@@ -276,4 +276,4 @@ Aggiungi i gruppi di utenti ai criteri anziché ai singoli utenti. Semplifica la
 
    >[!NOTE]
    >
-   > Puoi utilizzare l&#39;API [getAllPolicyNames()]((https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html)) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+   > Puoi utilizzare l&#39;API [getAllPolicyNames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
