@@ -10,16 +10,16 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Gestione risorse
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 13%
 
 ---
 
 # Informazioni sulla gestione delle risorse Dynamic Media {#managing-assets}
 
-La gestione delle risorse Dynamic Media - immagini, video e risorse interattive - dopo il caricamento - prevede molte attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
+La gestione delle risorse Dynamic Media (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
 
 Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti immagine](/help/assets/image-sets.md).
 
