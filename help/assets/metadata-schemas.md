@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadati
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: d3fcf3e55af1c57bed1db9191aa76576d3bedb29
 workflow-type: tm+mt
-source-wordcount: '3547'
+source-wordcount: '3597'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,8 @@ Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettu
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
    *Figura: Scheda Base in  [!UICONTROL Proprietà] risorsa.*
+
+   Assicurati che a un campo sia mappata una sola proprietà durante la creazione o la modifica dello schema metadati.
 
    Per modificare il tipo MIME di una risorsa, utilizza un modulo schema metadati personalizzato o modifica un modulo esistente. Per ulteriori informazioni, consulta [Modifica schema metadati Forms](#edit-metadata-schema-forms) . Se modifichi lo schema metadati di un tipo MIME, il layout della pagina delle proprietà per le risorse e tutti i sottotipi vengono modificati. Ad esempio, se modifichi uno schema jpeg in `default/image`, modifica solo il layout dei metadati (proprietà delle risorse) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modifichi lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
@@ -99,13 +101,13 @@ La scheda **[!UICONTROL Genera modulo]** elenca gli elementi del modulo utilizza
 
 #### Modifica del componente metadati {#edit-the-metadata-component}
 
-Per modificare le proprietà di un componente metadati sul modulo, fai clic sul componente per modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]** .
+Per modificare le proprietà di un componente metadati sul modulo, fai clic sul componente per modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]** . È consigliabile mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona il campo aggiunto più recente mappato alla proprietà.
 
 **Etichetta** campo: Nome della proprietà di metadati visualizzata nella pagina delle proprietà della risorsa.
 
 **Mappa su proprietà**: Questa proprietà specifica il percorso relativo o il nome del nodo della risorsa in cui viene salvata nell&#39;archivio CRX. Inizia con `./` per indicare che il percorso si trova sotto il nodo della risorsa.
 
-Di seguito sono riportati i valori validi per questa proprietà:
+Di seguito sono riportati alcuni esempi di valori validi per una proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
