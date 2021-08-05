@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Gestione risorse
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 7%
@@ -57,7 +57,7 @@ Per configurare un limite di dimensione del file più elevato, esegui i seguenti
 
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Salva tutto]**.
 1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
-1. Nella pagina [!DNL Adobe Experience Manager] [!UICONTROL Bundle della console Web], nella colonna Nome della tabella, individua e fai clic su **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
+1. Nella pagina [!DNL Adobe Experience Manager] [!UICONTROL Bundle della console Web], individua e fai clic su **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** nella colonna Nome della tabella.
 1. Nella pagina [!UICONTROL Adobe Granite Workflow External Process Job Handler] , imposta i secondi per i campi **[!UICONTROL Default Timeout]** e **[!UICONTROL Max Timeout]** su `18000` (cinque ore). Fai clic su **[!UICONTROL Salva]**.
 1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. Nella pagina Modelli flusso di lavoro, seleziona **[!UICONTROL Codifica video Dynamic Media]**, quindi fai clic su **[!UICONTROL Modifica]**.
