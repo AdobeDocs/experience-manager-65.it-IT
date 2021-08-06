@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configurazione,Modalità Scene7
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6856'
+source-wordcount: '6941'
 ht-degree: 4%
 
 ---
@@ -161,16 +161,21 @@ Se desideri personalizzare ulteriormente la configurazione e l&#39;impostazione 
 
 In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caricamento delle risorse è inferiore o uguale a 2 GB. Tuttavia, puoi anche configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB.
 
-Per utilizzare questa funzione, prendi nota dei seguenti prerequisiti e punti:
+Se desideri utilizzare questa funzione, prendi nota dei seguenti prerequisiti e punti:
 
-* Devi eseguire Experience Manager 6.5 con Service Pack 6.5.4.0 o successivo.
-* [Download di accesso binario diretto di Oak ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) abilitato.
+* Devi eseguire Experience Manager 6.5 con Service Pack 6.5.4.0 o successivo in modalità Dynamic Media - Scene7.
+* Questa grande funzione di caricamento è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Assicurati che l’istanza di Experience Manager sia configurata con l’archiviazione BLOB di Amazon S3 o Microsoft® Azure.
 
-   Per abilitare, imposta la proprietà `presignedHttpDownloadURIExpirySeconds > 0` nella configurazione del datastore. Il valore deve essere sufficientemente lungo per scaricare binari di grandi dimensioni e riprovare.
+   >[!NOTE]
+   Configura l’archiviazione BLOB di Azure con entrambe le chiavi di accesso (chiave1 e chiave2) perché questa funzione di caricamento di grandi dimensioni non è supportata con AzureSas nella configurazione dell’archiviazione BLOB.
+
+* Oak [Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) è abilitato (Oak *Direct Binary Access upload* non è richiesto).
+
+   Per abilitare il download Direct Binary Access, imposta la proprietà `presignedHttpDownloadURIExpirySeconds > 0` nella configurazione del datastore. Il valore deve essere sufficientemente lungo per scaricare binari di grandi dimensioni e riprovare.
 
 * Le risorse di dimensioni superiori a 15 GB non vengono caricate. (Il limite di dimensione è impostato nel passaggio 8 seguente.)
-* Quando il flusso di lavoro Scene7 Reprocess Assets viene attivato in una cartella, rielabora le risorse grandi già caricate che si trovano nella cartella. Tuttavia, carica risorse di grandi dimensioni che non esistono nella società Scene7.
-* I caricamenti di grandi dimensioni funzionano solo per i payload di risorse singole, non nel caso in cui il flusso di lavoro venga attivato su una cartella.
+* Quando il flusso di lavoro **[!UICONTROL Dynamic Media Reprocess]** risorse viene attivato su una cartella, rielabora tutte le risorse di grandi dimensioni già sincronizzate con la società Dynamic Media. Tuttavia, se una risorsa di grandi dimensioni non è ancora sincronizzata nella cartella, non carica la risorsa. Pertanto, per sincronizzare le risorse di grandi dimensioni esistenti in Dynamic Media, puoi eseguire il flusso di lavoro **[!UICONTROL Dynamic Media Reprocess]** sulle singole risorse.
 
 **Per configurare la modalità Dynamic Media - Scene7 per il caricamento di risorse di dimensioni superiori a 2 GB:**
 
@@ -237,7 +242,7 @@ Per utilizzare questa funzione, prendi nota dei seguenti prerequisiti e punti:
 1. Nella finestra di dialogo **[!UICONTROL Proprietà passaggio]**, sotto la scheda **[!UICONTROL Comune]**, sotto l&#39;intestazione **[!UICONTROL Impostazioni avanzate]**, nel campo **[!UICONTROL Timeout]**, immetti un valore di `18000` minuti (cinque ore). Il valore predefinito è `3600` minuti (un’ora).
 1. Selezionare **[!UICONTROL OK]**.
 1. Selezionare **[!UICONTROL Sincronizza]**.
-1. Ripeti i passaggi 14-21 per il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** e per il modello di flusso di lavoro **[!UICONTROL Scene7 Reprocess Workflow]** .
+1. Ripeti i passaggi 14-21 per il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** e per il modello di flusso di lavoro **[!UICONTROL Rielaborazione Dynamic Media]** .
 
 ### (Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
