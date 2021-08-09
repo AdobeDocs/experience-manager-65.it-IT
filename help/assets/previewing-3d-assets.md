@@ -6,14 +6,14 @@ docset: aem65
 feature: Risorse 3D
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 15%
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
-# Anteprima delle risorse 3D in Adobe Experience Manager{#previewing-3d-assets-aem}
+# Anteprima di risorse 3D in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
@@ -54,17 +54,17 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D, ad Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
-Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, tocca **[!UICONTROL Risorse > File]**.
+Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Carica risorse](/help/assets/manage-assets.md#uploading-assets).
+1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
-1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
    ![Selezione scheda 3D](/help/assets/assets-dm/3d-card-select.png)
-   _Nella Vista a schede, tocca la scheda della risorsa 3D da visualizzare in anteprima._
+   _In Vista a schede, selezionate la scheda della risorsa 3D da visualizzare in anteprima._
 
-1. Tocca la scheda della risorsa 3D.
+1. Seleziona la scheda della risorsa 3D.
 
    ![Anteprima 3D interattiva](/help/assets/assets-dm/3d-preview.png)
    _Anteprima interattiva di una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa._
@@ -76,7 +76,7 @@ Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-as
    | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
    | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
    | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, tocca l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, tocca l’icona a schermo intero nell’angolo in basso a destra della pagina. |  |  |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-1. Al termine, vicino all’angolo superiore destro della pagina, tocca **[!UICONTROL Chiudi]**.
+1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.
