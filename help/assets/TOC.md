@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 22%
+ht-degree: 21%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 22%
    + [Annullare la validità della cache CDN tramite Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Annullare la validità della cache CDN tramite Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installa Feature Pack 18912 per la migrazione di massa delle risorse](bulk-ingest-migrate.md)
-   + [Utilizzo dei selettori](working-with-selectors.md)
+   + [Utilizzare i selettori](working-with-selectors.md)
 + Estendere le risorse {#extending}
    + [Personalizza ed estendi [!DNL Assets]](extending-assets.md)
    + [Elabora le risorse utilizzando gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
