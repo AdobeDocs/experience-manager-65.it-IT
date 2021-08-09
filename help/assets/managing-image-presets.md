@@ -1,6 +1,6 @@
 ---
 title: Gestione dei predefiniti per immagini Dynamic Media
-description: Comprendere i predefiniti immagine di Dynamic Media e imparare a creare, modificare e gestire i predefiniti immagine
+description: Scopri i predefiniti immagine di Dynamic Media e come creare, modificare e gestire i predefiniti immagine.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefiniti immagini
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3843'
 ht-degree: 8%
 
 ---
@@ -101,8 +101,8 @@ Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresent
 
 | **Proprietà metadati** | **Descrizione** |
 |---|---|
-| dam:Physicalwidthinpollici | Larghezza documento in pollici. |
-| dam:Physicalheightinpollici | Altezza del documento in pollici. |
+| `dam:Physicalwidthininches` | Larghezza documento in pollici. |
+| `dam:Physicalheightininches` | Altezza del documento in pollici. |
 
 Puoi accedere alle opzioni dei componenti del processo `Rasterize PDF/AI Image Preview Rendition` tramite il flusso di lavoro `DAM Update Asset` .
 
@@ -181,7 +181,7 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Sì</td>
-   <td>Genera una risorsa secondaria JPEG da 300 ppi per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. Viene inoltre ottimizzato e trasformato in PTIFF dal flusso di lavoro <code>DAM Update Asset</code>.<br /> </td>
+   <td>Genera una risorsa secondaria JPEG PPI 300 per ogni pagina. La risorsa secondaria JPEG è una risorsa reale memorizzata nella risorsa InDesign. Viene inoltre ottimizzato e trasformato in PTIFF dal flusso di lavoro <code>DAM Update Asset</code>.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,11 +193,11 @@ I seguenti script vengono utilizzati dall’integrazione Dynamic Media:
 
 ## Configurazione della dimensione delle miniature dell’immagine {#configuring-image-thumbnail-size}
 
-Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se una (**[!UICONTROL Risorse di immagine di processo Dynamic Media]**) viene utilizzata per le risorse di immagini dinamiche e l&#39;altra (**[!UICONTROL Miniature di processo]**) per la generazione di miniature statiche, o quando tutti gli altri processi non riescono a generare miniature, *entrambe* devono avere le stesse impostazioni.
+Puoi configurare le dimensioni delle miniature configurando tali impostazioni nel flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** . Nel flusso di lavoro sono disponibili due passaggi per configurare la dimensione delle miniature delle risorse immagine. Anche se (**[!UICONTROL Risorse di immagine di processo di Dynamic Media]**) viene utilizzato per le risorse di immagini dinamiche e (**[!UICONTROL Miniature di processo]**) è per la generazione di miniature statiche, o quando tutti gli altri processi non generano miniature, *entrambi* devono avere le stesse impostazioni.
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL larghezza:height:centro]**, ad esempio *80:80:false*. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature è definito nel seguente formato: **[!UICONTROL larghezza:height:centro]**, ad esempio `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è false o true e se è impostato su true, indica che l&#39;immagine in miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
      <li><strong>Tipo  </strong>: seleziona  <strong>Adattivo</strong>  (opzione predefinita),  <strong>Web</strong> o  <strong>Macintosh</strong>. Se si seleziona <strong>GIF con Alpha</strong>, l'opzione Macintosh non è disponibile.</li>
      <li><strong>Dither</strong>  - Seleziona  <strong></strong> Diffusore o  <strong>Disattivato</strong>.</li>
      <li><strong>Numero di colori  </strong>- Immettere un numero da 2 a 256.</li>
-     <li><strong>Elenco colori</strong>  - Inserisci un elenco separato da virgole. Ad esempio, per bianco, grigio e nero, immetti 00000,888888,ffff.</li>
+     <li><strong>Elenco colori</strong>  - Inserisci un elenco separato da virgole. Ad esempio, per bianco, grigio e nero, immettere <code>000000,888888,ffffff</code>.</li>
     </ul>
     <div>
       Scelta
