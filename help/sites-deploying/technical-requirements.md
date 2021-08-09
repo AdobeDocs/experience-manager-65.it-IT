@@ -6,9 +6,9 @@ seo-description: Elenco delle piattaforme client e server supportate per AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
  </tbody>
 </table>
 
-1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. AEM 6.5 SP10 per AEM Forms Java EE. Per ulteriori informazioni, consulta [Supporto di Java Azul per Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
+1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. Per ulteriori informazioni, consulta [Supporto di Java Azul per Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
 
 1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (consulta [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando l&#39;Oracle tecnologia Java SE **fino a dicembre 2022**. Per ulteriori informazioni, consulta l’ [Supporto Java di Oracle per Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
 
@@ -262,7 +262,7 @@ I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4
 
 ## Piattaforme client supportate {#supported-client-platforms}
 
-### Browser supportati per l’authoring dell’interfaccia utente {#supported-browsers-for-authoring-user-interface}
+### Browser supportati per l’interfaccia utente di authoring {#supported-browsers-for-authoring-user-interface}
 
 L’interfaccia utente di Adobe Experience Manager funziona con le seguenti piattaforme client. Tutti i browser vengono testati con il set predefinito di plug-in e componenti aggiuntivi.
 
