@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Gestione risorse
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +25,7 @@ Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (so
 
 Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse](/help/assets/manage-assets.md).
 
-I seguenti argomenti descrivono le operazioni da eseguire per gestire le risorse Dynamic Media:
+I seguenti argomenti descrivono come gestire le risorse Dynamic Media:
 
 * [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](/help/assets/previewing-assets.md)
