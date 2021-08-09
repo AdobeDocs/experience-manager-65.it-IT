@@ -10,26 +10,26 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Gestione risorse
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 12%
+source-wordcount: '336'
+ht-degree: 10%
 
 ---
 
-# Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
+# Fornire immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilizza la funzione Codice reattivo quando desideri condividere il codice per il servizio reattivo con il tuo sviluppatore web. Puoi copiare il codice reattivo (**[!UICONTROL RESS]**) negli appunti per condividerlo con lo sviluppatore web.
 
-Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in AEM, un server di immagini fuori sede esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
+Questa funzione ha senso utilizzare se il sito web si trova su un sito web WCM di terze parti. Tuttavia, se il sito web si trova in Adobe Experience Manager, un server di immagini offsite esegue il rendering dell&#39;immagine e la fornisce alla pagina web.
 
-Vedere anche [Incorporamento del visualizzatore video in una pagina Web](embed-code.md).
+Vedere anche [Incorporare il visualizzatore video in una pagina Web](embed-code.md).
 
-Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
+Consulta anche [Collegare gli URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
 **Per fornire immagini ottimizzate per un sito reattivo:**
 
-1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, tocca **[!UICONTROL Rendering]**.
+1. Passa all’immagine per la quale desideri fornire codice reattivo e, nel menu a discesa, seleziona **[!UICONTROL Rendering]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -43,12 +43,12 @@ Consulta anche [Collegamento di URL all&#39;applicazione Web](linking-urls-to-yo
    >
    >Dynamic Media - La modalità ibrida richiede la pubblicazione di predefiniti per immagini; Dynamic Media - La modalità Scene7 pubblica automaticamente i predefiniti per immagini.
 
-1. Toccare **[!UICONTROL RESS]**.
+1. Selezionare **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Nella finestra di dialogo **[!UICONTROL Incorpora immagine reattiva]** , seleziona e copia il testo del codice reattivo e incollalo nel sito Web per accedere alla risorsa reattiva.
-1. Modifica i punti di interruzione predefiniti nel codice di incorporamento in modo che corrispondano a quelli del sito web reattivo direttamente nel codice. Inoltre, prova le diverse risoluzioni immagine fornite in diversi punti di interruzione della pagina.
+1. Modifica i punti di interruzione predefiniti nel codice di incorporamento in modo che corrispondano ai punti di interruzione del sito web reattivo, direttamente nel codice. Inoltre, prova le diverse risoluzioni immagine fornite in diversi punti di interruzione della pagina.
 
 ## Utilizzo di HTTP/2 per la distribuzione delle risorse Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
