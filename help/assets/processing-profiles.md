@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 feature: Flusso di lavoro, Gestione risorse, rappresentazioni
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale 
 
 Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati ad Experience Manager. Se le dimensioni del batch sono grandi, si potrebbe verificare un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
 
-Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
+Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
@@ -77,35 +77,35 @@ Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazi
    * Se sono presenti una o più sottocartelle con risorse nella cartella principale selezionata, il flusso di lavoro rielabora ogni risorsa nella gerarchia delle cartelle.
    * Come best practice, evita di eseguire questo flusso di lavoro in una gerarchia di cartelle con più di 1000 risorse.
 
-1. Fai clic su **[!UICONTROL Timeline]** dall’elenco a discesa nell’angolo in alto a sinistra della pagina.
-1. Fai clic sull’icona del carrello ( **^** ) nell’angolo in basso a sinistra della pagina, a destra del campo Commento .
+1. Dall’elenco a discesa, nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Timeline]**.
+1. Nell’angolo in basso a sinistra della pagina, a destra del campo Commento, seleziona l’icona del carrello ( **^** ) .
 
    ![Rielaborazione del flusso di lavoro delle risorse 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
+1. Seleziona **[!UICONTROL Avvia flusso di lavoro]**.
 1. Dall’elenco a discesa **[!UICONTROL Avvia flusso di lavoro]** , scegli **[!UICONTROL Scene7: Rielabora le risorse]**.
 1. (Facoltativo) Nel campo di testo **Immetti il titolo del flusso di lavoro** , immetti un nome per il flusso di lavoro. Se necessario, puoi utilizzare il nome per fare riferimento all’istanza del flusso di lavoro.
 
    ![Rielaborazione delle risorse 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Fai clic su **[!UICONTROL Start]**, quindi fai clic su **[!UICONTROL Conferma]**.
+1. Seleziona **[!UICONTROL Start]**, quindi seleziona **[!UICONTROL Conferma]**.
 
-   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale Experience Manager fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, fai clic su **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, seleziona **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
-### Regolazione della dimensione batch del flusso di lavoro di rielaborazione {#adjusting-load}
+### Regola le dimensioni batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
 (Facoltativo) La dimensione predefinita del batch nel flusso di lavoro di rielaborazione è 50 risorse per processo. Questa dimensione batch ottimale è governata dalla dimensione media delle risorse e dai tipi MIME delle risorse su cui viene eseguita la rielaborazione. Un valore più alto indica che in un singolo processo di rielaborazione sono presenti molti file. Pertanto, il banner di elaborazione rimane sulle risorse di Experience Manager per un periodo di tempo più lungo. Tuttavia, se la dimensione media del file è piccola - 1 MB o inferiore - l&#39;Adobe consiglia di aumentare il valore a diversi 100, ma mai più di 1000. Se la dimensione media del file è grande, ad esempio centinaia di MB, Adobe consiglia di ridurre la dimensione del batch fino a 10.
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione:**
 
-1. Ad Experience Manager, fai clic su **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi fai clic sull&#39;icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. In Experience Manager, seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi seleziona l’icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. Nella pagina Modelli flusso di lavoro, in Vista a schede o Vista a elenco, seleziona **[!UICONTROL Scene7: Rielabora le risorse]**.
 
    ![Pagina Modelli di flusso di lavoro con Scene7: Rielaborazione del flusso di lavoro delle risorse selezionato nella vista a schede](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Nella barra degli strumenti, fai clic su **[!UICONTROL Modifica]**. Viene visualizzata una nuova scheda del browser Scene7: Rielabora la pagina del modello di flusso di lavoro Assets.
-1. Su Scene7: Rielabora la pagina del flusso di lavoro Assets, nell’angolo in alto a destra, fai clic su **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
-1. Nel flusso di lavoro, seleziona il componente Caricamento in batch di Scene7 per aprire la barra degli strumenti, quindi fai clic su **[!UICONTROL Configura]** sulla barra degli strumenti.
+1. Nella barra degli strumenti, seleziona **[!UICONTROL Modifica]**. Viene visualizzata una nuova scheda del browser Scene7: Rielabora la pagina del modello di flusso di lavoro Assets.
+1. Su Scene7: Rielabora la pagina del flusso di lavoro Assets, nell’angolo in alto a destra, seleziona **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
+1. Nel flusso di lavoro, seleziona il componente Caricamento in batch di Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** sulla barra degli strumenti.
 
    ![Componente Caricamento in batch di Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,16 +119,16 @@ Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazi
 
    ![Finestra di dialogo Proprietà](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell&#39;angolo in alto a destra della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, fai clic su **[!UICONTROL Fine]**.
+1. Nell&#39;angolo in alto a destra della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, seleziona **[!UICONTROL Fine]**.
 
-1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Assets, fai clic su **[!UICONTROL Sincronizza]**. Quando vedi **[!UICONTROL Sincronizzato]**, il modello di runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
+1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Assets, seleziona **[!UICONTROL Sincronizza]**. Quando vedi **[!UICONTROL Sincronizzato]**, il modello di runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
 
    ![Sincronizzazione del modello di flusso di lavoro](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Chiudi la scheda del browser che mostra Scene7: Rielabora il modello di flusso di lavoro Assets.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +139,10 @@ Consulta [Regolazione della dimensione batch del flusso di lavoro di rielaborazi
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
