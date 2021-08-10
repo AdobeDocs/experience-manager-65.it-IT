@@ -9,14 +9,14 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Pubblicazione
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2944'
+source-wordcount: '2945'
 ht-degree: 4%
 
 ---
 
-# Configurazione della pubblicazione selettiva a livello di cartella in Dynamic Media {#selective-publish-configure-folder}
+# Configurare la pubblicazione selettiva a livello di cartella in Dynamic Media {#selective-publish-configure-folder}
 
 Puoi scegliere di pubblicare o annullare la pubblicazione delle risorse su o da Adobe Experience Manager o Dynamic Media a livello di cartella. Puoi utilizzare **[!UICONTROL Gestisci pubblicazione]** o **[!UICONTROL Pubblicazione rapida]** invece di affidarti esclusivamente alla **[!UICONTROL Configurazione Dynamic Media]** le cui impostazioni sono globali per tutte le cartelle nell&#39;istanza Dynamic Media.
 
@@ -34,21 +34,26 @@ Se decidi in un secondo momento di modificare le impostazioni di **[!UICONTROL P
 
 L&#39;opzione a livello di cartella **[!UICONTROL Modalità di pubblicazione Dynamic Media]** viene sempre impostata per impostazione predefinita sul valore trovato nell&#39;impostazione **[!UICONTROL Pubblica risorse]** nella **[!UICONTROL Configurazione Dynamic Media]**. I passaggi seguenti in questo argomento, tuttavia, mostrano come modificare manualmente questo valore predefinito a livello di cartella (come descritto nei passaggi seguenti) per sostituire il valore **[!UICONTROL Configurazione Dynamic Media]**.
 
-Indipendentemente dal valore **[!UICONTROL Pubblica risorse]** impostato in **[!UICONTROL Configurazione Dynamic Media]** o dal valore **[!UICONTROL Modalità pubblicazione Dynamic Media]** impostato nelle proprietà a livello di cartella, puoi scegliere **[!UICONTROL Immediatamente]**, **[!UICONTROL All&#39;attivazione]** o **[!UICONTROL Selettivo Pubblica]**. Ad esempio, puoi impostare il valore **[!UICONTROL Pubblica risorse]** nella **[!UICONTROL Configurazione Dynamic Media]** su **[!UICONTROL All&#39;attivazione]**, ma impostare il valore della modalità **[!UICONTROL Pubblicazione Dynamic Media]** a livello di cartella su **[!UICONTROL Pubblicazione selettiva]** e viceversa.
+Indipendentemente dal fatto che vi affidate a uno dei seguenti elementi:
+
+* **[!UICONTROL Pubblica]** Asset.value impostato in Configurazione  **[!UICONTROL Dynamic Media]**.
+* **[!UICONTROL Valore]** modesto di Dynamic Media Publish impostato nelle proprietà a livello di cartella.
+
+È possibile scegliere **[!UICONTROL Immediatamente]**, **[!UICONTROL All&#39;attivazione]** o **[!UICONTROL Pubblicazione selettiva]**. Ad esempio, puoi impostare il valore **[!UICONTROL Pubblica risorse]** nella **[!UICONTROL Configurazione Dynamic Media]** su **[!UICONTROL Attivazione]**, ma impostare il valore della modalità **[!UICONTROL Pubblicazione Dynamic Media]** a livello di cartella su **[!UICONTROL Pubblicazione selettiva]** e viceversa.
 
 Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuare una delle seguenti operazioni:
 
 * [Pubblicare in modo selettivo le risorse in Dynamic Media o Experience Manager utilizzando Gestisci pubblicazione](#selective-publish-manage-publication).
 * [Annulla la pubblicazione selettiva delle risorse da Dynamic Media o Experience Manager tramite Gestisci pubblicazione](#selective-unpublish-manage-publication).
-* [Pubblicazione delle risorse in Dynamic Media o Experience Manager tramite Pubblicazione](#quick-publish-aem-dm) rapida.
+* [Pubblicare risorse in Dynamic Media o Experience Manager tramite Pubblicazione](#quick-publish-aem-dm) rapida.
 * [Pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati](#selective-publish-unpublish-search-results) della ricerca.
 
 **Per configurare la pubblicazione selettiva a livello di cartella in Dynamic Media:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. A sinistra, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. Effettua una delle operazioni seguenti:
-   * Modifica le proprietà di una cartella esistente - In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, passa a una cartella di cui desideri modificare le proprietà. Seleziona la cartella, quindi tocca **[!UICONTROL Proprietà]** sulla barra degli strumenti.
-   * Modifica le proprietà di una nuova cartella - In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, vicino all&#39;angolo superiore destro della pagina, tocca **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]**, immetti un titolo (obbligatorio) per la cartella, quindi tocca **[!UICONTROL Crea]**. Seleziona la cartella, quindi tocca **[!UICONTROL Proprietà]** sulla barra degli strumenti.
+   * Modifica le proprietà di una cartella esistente - In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, passa a una cartella di cui desideri modificare le proprietà. Seleziona la cartella, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**.
+   * Modifica le proprietà di una nuova cartella - In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, vicino all&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**. Nella finestra di dialogo **[!UICONTROL Crea cartella]**, immetti un titolo (obbligatorio) per la cartella, quindi seleziona **[!UICONTROL Crea]**. Seleziona la cartella, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**.
 
 1. Nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione]** , seleziona una delle opzioni seguenti:
 
@@ -72,7 +77,7 @@ Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuar
    | **[!UICONTROL All&#39;attivazione]** | Quando le risorse vengono caricate in questa cartella, devi pubblicare esplicitamente la risorsa prima di fornire un collegamento URL/Incorpora . Questa opzione è legata solo alla pubblicazione di Experienci Manager.<br>Questa opzione  ** non è disponibile se nel passaggio precedente hai selezionato  **[!UICONTROL Escludi tutto ciò che si trova nella sottostruttura della cartella dalla]** modalità  **[!UICONTROL Sincronizza]** sincronizzazione di Dynamic Media. |
    | **[!UICONTROL Pubblicazione selettiva]** | Le risorse vengono pubblicate come Experience Manager desiderato o su Dynamic Media per la distribuzione nel dominio pubblico. Entrambi i metodi di pubblicazione si escludono a vicenda. In altre parole, puoi pubblicare le risorse in DMS7 in modo da poter utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche. Oppure puoi pubblicare le risorse esclusivamente in Experience Manager per un’anteprima sicura; le stesse risorse sono *non* pubblicate in DMS7 per la distribuzione nel dominio pubblico. Questa opzione non è disponibile se nel passaggio precedente hai selezionato **[!UICONTROL Escludi tutto ciò che si trova nella struttura secondaria della cartella da Dynamic Media sync]** in **[!UICONTROL Modalità di sincronizzazione]** . |
 
-1. Nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Salva e chiudi]**, quindi tocca **[!UICONTROL OK]** per tornare ad Experience Manager Assets.
+1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva e chiudi]**, quindi seleziona **[!UICONTROL OK]** per tornare ad Experience Manager Assets.
 
 ## Pubblicare in modo selettivo le risorse in Dynamic Media o Experience Manager utilizzando Gestisci pubblicazione{#selective-publish-manage-publication}
 
@@ -81,7 +86,7 @@ Prima di poter utilizzare **[!UICONTROL Gestisci pubblicazione]** per pubblicare
 * Opzione **[!UICONTROL Pubblica risorse]** in **[!UICONTROL Configurazione Dynamic Media]** in **[!UICONTROL Pubblicazione selettiva]**
 * È stata configurata la pubblicazione selettiva a livello di cartella.
 
-Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-media-cloud-services) o [Configurazione della pubblicazione selettiva a livello di cartella in Dynamic Media](#selective-publish-configure-folder)
+Consulta [Creare una configurazione Dynamic Media](#configuring-dynamic-media-cloud-services) o [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Media](#selective-publish-configure-folder)
 
 >[!IMPORTANT]
 >
@@ -93,14 +98,14 @@ Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-me
 
 **Per pubblicare selettivamente le risorse in Dynamic Media o Experience Manager utilizzando Gestisci pubblicazione:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. A sinistra, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, effettuare una delle seguenti operazioni:
-   * Passa a una cartella di cui desideri pubblicare le risorse. Seleziona la cartella, quindi tocca **[!UICONTROL Gestisci pubblicazione]** sulla barra degli strumenti. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
-   * Passa a una cartella di cui desideri pubblicare le risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, tocca **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
+   * Passa a una cartella di cui desideri pubblicare le risorse. Seleziona la cartella, quindi nella barra degli strumenti seleziona **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
+   * Passa a una cartella di cui desideri pubblicare le risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
 
       >[!NOTE]
       >
-      >Se **[!UICONTROL Gestisci pubblicazione]** non è visualizzato nella barra degli strumenti, tocca invece il pulsante dei puntini di sospensione, quindi seleziona **[!UICONTROL Gestisci pubblicazione]** dal menu dell’elenco.
+      >Se **[!UICONTROL Gestisci pubblicazione]** non è visualizzato nella barra degli strumenti, seleziona invece il pulsante dei puntini di sospensione, quindi seleziona **[!UICONTROL Gestisci pubblicazione]** dal menu dell&#39;elenco.
 
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]**, in **[!UICONTROL Azione]**, seleziona il tipo di attivazione desiderato.
 
@@ -116,23 +121,23 @@ Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-me
    | **[!UICONTROL Ora]** | Seleziona per pubblicare immediatamente le risorse. |
    | **[!UICONTROL Più tardi]** | Seleziona per pubblicare le risorse in una data e in un’ora specifiche. |
 
-1. Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione]**, tocca **[!UICONTROL Avanti]**.
+1. Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione]**, seleziona **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettua una delle seguenti operazioni:
 
    * Se necessario, seleziona una o più risorse da rimuovere dalla pubblicazione.
-   * Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblica in Dynamic Media]**.
-1. Toccare **[!UICONTROL OK]**.
+   * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, seleziona **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblica in Dynamic Media]**.
+1. Selezionare **[!UICONTROL OK]**.
 
 ### Annullare selettivamente la pubblicazione delle risorse da Dynamic Media o Experience Manager tramite Gestisci pubblicazione {#selective-unpublish-manage-publication}
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. A sinistra, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, effettuare una delle seguenti operazioni:
-   * Passa a una cartella di cui desideri annullare la pubblicazione delle risorse. Seleziona la cartella, quindi tocca **[!UICONTROL Gestisci pubblicazione]** sulla barra degli strumenti. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
-   * Passa a una cartella di cui desideri annullare la pubblicazione delle risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, tocca **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
+   * Passa a una cartella di cui desideri annullare la pubblicazione delle risorse. Seleziona la cartella, quindi nella barra degli strumenti seleziona **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
+   * Passa a una cartella di cui desideri annullare la pubblicazione delle risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
 
       >[!NOTE]
       >
-      >Se **[!UICONTROL Gestisci pubblicazione]** non è visualizzato nella barra degli strumenti, tocca invece il pulsante dei puntini di sospensione, quindi seleziona **[!UICONTROL Gestisci pubblicazione]** dal menu dell’elenco.
+      >Se **[!UICONTROL Gestisci pubblicazione]** non è visualizzato nella barra degli strumenti, seleziona invece il pulsante dei puntini di sospensione, quindi seleziona **[!UICONTROL Gestisci pubblicazione]** dal menu dell&#39;elenco.
 
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]**, in **[!UICONTROL Azione]**, seleziona il tipo di disattivazione desiderato.
 
@@ -148,13 +153,13 @@ Consulta [Creazione di una configurazione Dynamic Media](#configuring-dynamic-me
    | **[!UICONTROL Ora]** | Seleziona per annullare immediatamente la pubblicazione delle risorse. |
    | **[!UICONTROL Più tardi]** | Seleziona per annullare la pubblicazione delle risorse in una data e in un’ora specifiche. |
 
-1. Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione]**, tocca **[!UICONTROL Avanti]**.
+1. Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione]**, seleziona **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettua una delle seguenti operazioni:
    * Seleziona una o più risorse da rimuovere dall’annullamento della pubblicazione.
-   * Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Annulla pubblicazione]** o **[!UICONTROL Annulla pubblicazione da Dynamic Media]**.
-1. Toccare **[!UICONTROL OK]**.
+   * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, seleziona **[!UICONTROL Annulla pubblicazione]** o **[!UICONTROL Annulla pubblicazione da Dynamic Media]**.
+1. Selezionare **[!UICONTROL OK]**.
 
-## Pubblicazione delle risorse in Dynamic Media o Experience Manager tramite Pubblicazione rapida {#quick-publish-aem-dm}
+## Pubblicare risorse in Dynamic Media o Experience Manager tramite Pubblicazione rapida {#quick-publish-aem-dm}
 
 Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attivazione delle risorse. **[!UICONTROL Pubblicazione rapida]** pubblica le risorse selezionate immediatamente senza ulteriore interazione da parte dell’utente. A causa di questa azione, vengono pubblicati automaticamente anche tutti i riferimenti non pubblicati.
 
@@ -164,14 +169,14 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
 
 **Per pubblicare le risorse in Dynamic Media o Experience Manager utilizzando Pubblicazione rapida:**
 
-1. Ad Experience Manager, tocca il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi sul lato destro della pagina tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi sul lato destro della pagina seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]**, effettuare una delle seguenti operazioni:
-   * Passa a una cartella di cui desideri pubblicare le risorse. Seleziona la cartella, quindi tocca **[!UICONTROL Pubblicazione rapida]** sulla barra degli strumenti. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
-   * Passa a una cartella di cui desideri pubblicare le risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, tocca **[!UICONTROL Pubblicazione rapida]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
+   * Passa a una cartella di cui desideri pubblicare le risorse. Seleziona la cartella, quindi nella barra degli strumenti seleziona **[!UICONTROL Pubblicazione rapida]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare cartella.
+   * Passa a una cartella di cui desideri pubblicare le risorse. Apri la cartella, quindi seleziona una o più risorse. Sulla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Utilizza **[!UICONTROL Vista a elenco]** per controllare più facilmente lo stato di pubblicazione di una particolare risorsa.
 
       >[!NOTE]
       >
-      >Se **[!UICONTROL Pubblicazione rapida]** non è visibile sulla barra degli strumenti, tocca invece il pulsante dei puntini di sospensione, quindi seleziona **[!UICONTROL Pubblicazione rapida]** dal menu dell’elenco.
+      >Se **[!UICONTROL Pubblicazione rapida]** non è visualizzato nella barra degli strumenti, selezionare il pulsante dei puntini di sospensione, quindi selezionare **[!UICONTROL Pubblicazione rapida]** dal menu dell&#39;elenco.
 
       ![Pubblicazione rapida a livello di cartella in Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
@@ -183,7 +188,7 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
    | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se l’istanza Risorse di Experience Manager ha già configurato  **[!UICONTROL Brand]** Portal. |
    | Pubblica in Dynamic Media | Pubblica immediatamente le risorse selezionate in Dynamic Media.<br>Una risorsa deve essere sincronizzata in Dynamic Media. Se necessario, assicurati che **[!UICONTROL Modalità di sincronizzazione]** nelle proprietà di una cartella sia già impostato su **[!UICONTROL Sincronizza tutti gli elementi della struttura secondaria di questa cartella su Dynamic Media]**. |
 
-1. Tocca **[!UICONTROL OK]**, quindi tocca **[!UICONTROL Chiudi]**.
+1. Selezionare **[!UICONTROL OK]**, quindi selezionare **[!UICONTROL Chiudi]**.
 
 ## Pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati della ricerca {#selective-publish-unpublish-search-results}
 
@@ -193,11 +198,11 @@ Consulta anche [Cercare risorse in Experience Manager](/help/assets/search-asset
 
 **Per pubblicare o annullare selettivamente la pubblicazione delle risorse tramite i risultati della ricerca:**
 
-1. Ad Experience Manager, nell’angolo in alto a sinistra della pagina, tocca il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
-1. Nella barra degli strumenti, nell’angolo superiore destro della pagina, tocca l’icona Ricerca (lente di ingrandimento).
+1. Ad Experience Manager, nell’angolo in alto a sinistra della pagina, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Nella barra degli strumenti, nell’angolo superiore destro della pagina, seleziona l’icona Ricerca (lente di ingrandimento).
 1. Nel campo di testo **[!UICONTROL Digitare per cercare]**, immettere una parola chiave, quindi premere **[!UICONTROL Invio]**.
-1. Vicino all’angolo superiore destro della pagina, tocca l’icona **[!UICONTROL Vista a elenco]** .
-1. Nell’angolo in alto a sinistra della pagina, tocca l’icona **[!UICONTROL Filtri]** .
+1. Nell’angolo in alto a destra della pagina, seleziona l’icona **[!UICONTROL Vista a elenco]** .
+1. Nell’angolo in alto a sinistra della pagina, seleziona l’icona **[!UICONTROL Filtri]** .
 
    ![Visualizzazione a elenco e filtri nei risultati della ricerca](/help/assets/assets-dm/select-publish-search-result.png)
 
@@ -206,8 +211,8 @@ Consulta anche [Cercare risorse in Experience Manager](/help/assets/search-asset
 Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato di ricerca **[!UICONTROL Pubblica]** per perfezionare i risultati della ricerca di risorse di Experience Manager **[!UICONTROL Pubblicato]** e **[!UICONTROL Non pubblicato]**.
 1. Effettua una delle operazioni seguenti:
    * Seleziona una o più risorse da pubblicare o di cui annullare la pubblicazione.
-   * Vicino all&#39;angolo superiore destro della pagina **[!UICONTROL Risultati ricerca]**, tocca **[!UICONTROL Seleziona tutto]**.
-1. Sulla barra degli strumenti, tocca **[!UICONTROL Gestisci pubblicazione]**. Tocca l’icona dei puntini di sospensione nella barra degli strumenti per aprire **[!UICONTROL Gestisci pubblicazione]**.
+   * Vicino all&#39;angolo superiore destro della pagina **[!UICONTROL Risultati ricerca]**, selezionare **[!UICONTROL Seleziona tutto]**.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**. Seleziona l’icona dei puntini di sospensione sulla barra degli strumenti per aprire **[!UICONTROL Gestisci pubblicazione]**.
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]** , seleziona l’azione desiderata.
 
    | Azione selezionata | Impostazione Publish Assets in Dynamic Media Configuration | Risorse |
@@ -228,7 +233,7 @@ Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato d
    | Ora | L’azione selezionata viene eseguita immediatamente. |
    | Più tardi | L’azione selezionata viene eseguita alla data e all’ora specifiche selezionate. |
 
-1. Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]**, tocca **[!UICONTROL Avanti]**.
+1. Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]**, seleziona **[!UICONTROL Avanti]**.
 1. (Facoltativo) Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , controlla la colonna **[!UICONTROL Pubblica destinazione]** nella tabella per le risorse selezionate.
 
    | Impostazione Publish Assets in Dynamic Media Configuration | Azione selezionata | Destinazione pubblicazione |
@@ -244,16 +249,16 @@ Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato d
 
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettua una delle seguenti operazioni:
    * Seleziona una o più risorse da rimuovere dalla pubblicazione o dall’annullamento della pubblicazione.
-   * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** per iniziare l&#39;azione.
-1. Toccare **[!UICONTROL OK]**.
+   * Nell&#39;angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]**, seleziona **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** per iniziare l&#39;azione.
+1. Selezionare **[!UICONTROL OK]**.
 
-## Controllo dello stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
+## Controllare lo stato di pubblicazione di una risorsa {#check-publish-status-of-asset}
 
 Per controllare rapidamente lo stato di pubblicazione di una risorsa, puoi utilizzare **[!UICONTROL Timeline]** con **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]** in Experience Manager.
 
 **Per controllare lo stato di pubblicazione di una risorsa:**
 
-1. Ad Experience Manager, nell’angolo in alto a sinistra della pagina, tocca il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, tocca l’icona Navigazione (appena sopra l’icona Strumenti), quindi tocca **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Ad Experience Manager, nell’angolo in alto a sinistra della pagina, seleziona il logo Experience Manager per accedere alla console di navigazione globale. Sul lato sinistro della pagina, seleziona l’icona Navigazione (appena sopra l’icona Strumenti), quindi seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 1. In **[!UICONTROL Vista a schede]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a elenco]** (la schermata seguente mostra la **[!UICONTROL Vista a elenco]**), apri una cartella contenente le risorse pubblicate o non pubblicate.
 1. Seleziona una risorsa in modo che venga visualizzata con un segno di spunta. Vedi la schermata sottostante per esempio.
 1. Nell’angolo in alto a sinistra della pagina, dal menu a discesa, seleziona **[!UICONTROL Timeline]**. L’area **[!UICONTROL Stato]** nel pannello a sinistra mostra lo stato di pubblicazione della risorsa selezionata.
@@ -262,7 +267,7 @@ Quando utilizzi **[!UICONTROL Vista a elenco]**, viene visualizzata una colonna 
    * Una cartella *non* configurata per la sincronizzazione con Dynamic Media non visualizza la colonna Dynamic Media.
       ![Vista a elenco e Timeline](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
-## Risoluzione dei problemi Pubblicazione selettiva {#selective-publish-troubleshoot}
+## Risolvere i problemi relativi alla pubblicazione selettiva {#selective-publish-troubleshoot}
 
 Una risorsa che non è sincronizzata con Dynamic Media ma su cui è attivata un’azione di pubblicazione Dynamic Media restituisce il seguente messaggio di errore e soluzione:
 
