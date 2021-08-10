@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 34%
+source-wordcount: '1564'
+ht-degree: 32%
 
 ---
 
@@ -45,7 +46,7 @@ Il componente video Scene7 supporta i seguenti formati:
 * F4V H.264
 * MP4 H.264
 
-## Decidere dove caricare il video {#deciding-where-to-upload-your-video}
+## Decidi dove caricare il video {#deciding-where-to-upload-your-video}
 
 La decisione su dove caricare le risorse video dipende da quanto segue:
 
@@ -70,11 +71,9 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 1. Ad Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Scene7]** di Content Finder.
 1. Crea con il componente **[!UICONTROL Video Scene7]** .
 
-## Configurazione dell’integrazione con video Scene7 {#configuring-integration-with-scene-video}
+## Configurare l’integrazione con video Scene7 {#configuring-integration-with-scene-video}
 
-Per configurare i predefiniti universali:
-
-1. In **[!UICONTROL Servizi cloud]**, accedi alla tua configurazione di **[!UICONTROL Scene7]** e fai clic su **[!UICONTROL Modifica]**.
+1. In **[!UICONTROL Cloud Services]**, passa alla configurazione **[!UICONTROL Scene7]** e seleziona **[!UICONTROL Modifica]**.
 1. Seleziona la scheda **[!UICONTROL Video]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,16 +92,16 @@ Per configurare i predefiniti universali:
 
 1. I profili di codifica selezionati vengono applicati automaticamente a tutti i video caricati nella cartella di destinazione CQ DAM impostata per questa configurazione cloud di Scene7. Puoi impostare più configurazioni cloud di Scene7 con diverse cartelle di destinazione, per applicare profili di codifica diversi a seconda delle esigenze.
 
-## Aggiornamento del visualizzatore e dei predefiniti di codifica {#updating-viewer-and-encoding-presets}
+## Aggiorna visualizzatore e predefiniti di codifica {#updating-viewer-and-encoding-presets}
 
-Per aggiornare il visualizzatore e i predefiniti di codifica video perché i predefiniti sono stati aggiornati in Scene7, passa alla configurazione Scene7 in Cloud Configuration e tocca **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
+Per aggiornare il visualizzatore e i predefiniti di codifica video perché i predefiniti sono stati aggiornati in Scene7, passa alla configurazione Scene7 in Cloud Configuration e seleziona **[!UICONTROL Aggiorna il visualizzatore e i predefiniti di codifica]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Caricamento del video sorgente principale in Scene7 da DAM Adobe {#uploading-your-master-video}
+## Carica il video sorgente principale su Scene7 da DAM Adobe {#uploading-your-master-video}
 
 1. Individua la cartella di destinazione CQ DAM in cui hai impostato la configurazione cloud con i profili di codifica di Scene7.
-1. Fai clic su **[!UICONTROL Carica]** per caricare il video sorgente principale. Il caricamento e la codifica dei video viene completato al termine del flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] e **[!UICONTROL Pubblica in Scene7]** ha un segno di spunta.
+1. Seleziona **[!UICONTROL Carica]** per caricare il video sorgente principale. Il caricamento e la codifica dei video viene completato al termine del flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] e **[!UICONTROL Pubblica in Scene7]** ha un segno di spunta.
 
    >[!NOTE]
    >
@@ -140,9 +139,9 @@ La tabella seguente fornisce un confronto ad alto livello delle funzionalità su
 | Estensibilità | Sì | No |
 | Video mobile | Sì | Sì |
 
-### Impostazione {#setting-up}
+### Configurazione {#setting-up}
 
-#### Creazione di profili video {#creating-video-profiles}
+#### Creare profili video {#creating-video-profiles}
 
 Le varie codifiche video vengono create in base ai predefiniti di codifica S7 selezionati nella configurazione cloud S7. Affinché il componente video di base possa utilizzarli, è necessario creare un profilo video per ogni predefinito di codifica S7 selezionato. Questo metodo consente al componente video di selezionare di conseguenza le rappresentazioni DAM.
 
@@ -150,9 +149,9 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 >
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Console di configurazione]**.
+1. In Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Console di configurazione]**.
 1. Nella **[!UICONTROL Console di configurazione]**, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL DAM]** > **[!UICONTROL Profili video]** nella struttura di navigazione.
-1. Crea un profilo video S7. Nel menu **[!UICONTROL Nuovo]**, seleziona **[!UICONTROL Crea pagina]**, quindi seleziona il modello di profilo video Scene7. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. Crea un profilo video S7. Nel menu **[!UICONTROL Nuovo]**, seleziona **[!UICONTROL Crea pagina]**, quindi seleziona il modello di profilo video Scene7. Assegna un nome alla nuova pagina del profilo video e seleziona **[!UICONTROL Crea]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -168,7 +167,7 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 
    Ripeti questo passaggio per tutti i predefiniti di codifica selezionati nella configurazione cloud da usare nel componente video.
 
-#### Configurazione della progettazione {#configuring-design}
+#### Configurare la progettazione {#configuring-design}
 
 Il componente **[!UICONTROL Video di base]** deve sapere quali profili video utilizzare per creare l’elenco delle sorgenti video. Apri la finestra di dialogo di progettazione dei componenti video e configura la progettazione dei componenti per l’utilizzo dei nuovi profili video.
 
