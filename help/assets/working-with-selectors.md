@@ -10,14 +10,14 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selettori
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 18%
+source-wordcount: '725'
+ht-degree: 4%
 
 ---
 
-# Utilizzo dei selettori {#working-with-selectors}
+# Utilizzare i selettori {#working-with-selectors}
 
 Quando lavori con un’immagine interattiva, un video interattivo o un banner carosello, seleziona le risorse e i siti e i prodotti per gli hotspot e le mappe immagine a cui collegarti. Quando lavori con Set immagini, Set 360 gradi e Set multimediali, puoi anche selezionare le risorse con il Selettore risorse.
 
@@ -31,17 +31,17 @@ Ad esempio, in questo banner carosello, puoi utilizzare il selettore Prodotto se
 
 Quando selezioni (anziché immettere manualmente) i punti attivi o le mappe immagine a cui vai, stai utilizzando il selettore. Il selettore Sito funziona solo se sei un cliente Experience Manager Sites . Il selettore del prodotto richiede anche Experience Manager Commerce.
 
-## Selezione dei prodotti {#selecting-products}
+## Usa selettore prodotto {#selecting-products}
 
 Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punto attivo o una mappa immagine per fornire una visualizzazione rapida a un prodotto specifico nel catalogo del prodotto.
 
-1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
+1. Passa al set carosello, all’immagine interattiva o al video interattivo e seleziona la scheda **[!UICONTROL Azioni]** , disponibile solo se hai definito un punto attivo o una mappa immagine.
 
    Il selettore Prodotto si trova nell&#39;area **[!UICONTROL Tipo azione]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Tocca l’icona **[!UICONTROL Selettore prodotto]** (lente di ingrandimento) e individua un prodotto nel catalogo.
+1. Seleziona l&#39;icona **[!UICONTROL Selettore prodotto]** (lente di ingrandimento) e passa a un prodotto nel catalogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -53,11 +53,11 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tocca **[!UICONTROL Ordina]** per modificare l&#39;ordinamento degli Experienci Manager in base al più recente, al più vecchio o al più recente.
+   Seleziona **[!UICONTROL Ordina]** per per modificare l&#39;ordinamento degli Experienci Manager in base al più recente o dal meno recente al più recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Per modificare la modalità di visualizzazione dei prodotti, tocca **[!UICONTROL Visualizza come]**, scegliendo tra **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**.
+   Seleziona **[!UICONTROL Visualizza come]** per modificare la modalità di visualizzazione dei prodotti: **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -65,21 +65,21 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri un punt
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. In modalità **[!UICONTROL Anteprima]**, puoi toccare il punto attivo o la mappa immagine per visualizzare l’aspetto della visualizzazione rapida.
+1. In modalità **[!UICONTROL Anteprima]**, è possibile selezionare il punto attivo o la mappa immagine e verificare l&#39;aspetto della visualizzazione rapida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selezione dei siti {#selecting-sites}
+## Usa selettore del sito {#selecting-sites}
 
 Utilizza il selettore del sito per scegliere una pagina web quando desideri che un punto attivo o una mappa immagine si colleghino a una pagina web gestita in Experience Manager Sites.
 
-1. Passa al set carosello, all’immagine interattiva o al video interattivo e tocca la scheda **[!UICONTROL Azioni]**, che è disponibile solo se hai definito un punto attivo o una mappa immagine.
+1. Passa al set carosello, all’immagine interattiva o al video interattivo e seleziona la scheda **[!UICONTROL Azioni]** , disponibile solo se hai definito un punto attivo o una mappa immagine.
 
    Il selettore del sito si trova nell’area **[!UICONTROL Tipo di azione]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tocca l’icona **[!UICONTROL Selettore sito]** (cartella con lente di ingrandimento) e individua la pagina dei siti di Experience Manager a cui desideri collegare il punto attivo o la mappa immagine.
+1. Seleziona l&#39;icona **[!UICONTROL Selettore sito]** (cartella con lente di ingrandimento) e passa alla pagina dei siti di Experience Manager a cui desideri collegare il punto attivo o la mappa immagine.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -87,16 +87,16 @@ Utilizza il selettore del sito per scegliere una pagina web quando desideri che 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. In modalità **[!UICONTROL Anteprima]** se tocchi il punto attivo o la mappa immagine, accedi alla pagina del sito di Experience Manager specificata.
+1. In modalità **[!UICONTROL Anteprima]** se si seleziona il punto attivo o la mappa immagine, si passa alla pagina del sito di Experience Manager specificata.
 
-## Selezione delle risorse {#selecting-assets}
+## Usa selettore risorse {#selecting-assets}
 
-Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando tocca **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando crei una diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
+Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando selezioni **[!UICONTROL Seleziona risorse]** nella scheda **[!UICONTROL Contenuto]** . In Set carosello, il selettore delle risorse è disponibile quando crei una diapositiva. In Set immagini, Set di file multimediali diversi e Set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
 Per ulteriori informazioni, consulta anche [Selettore risorse](search-assets.md#assetpicker) .
 
 1. Accedete al Set carosello e create una diapositiva. In alternativa, passa al video interattivo, passa alla scheda **[!UICONTROL Contenuto]** e seleziona le risorse. Oppure crea un set di file multimediali diversi, un set di immagini o un set 360 gradi.
-1. Tocca l’icona **[!UICONTROL Selettore risorse]** (cartella con lente di ingrandimento) e accedi a una risorsa.
+1. Seleziona l’icona **[!UICONTROL Selettore risorse]** (cartella con lente di ingrandimento) e passa a una risorsa.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -106,11 +106,11 @@ Per ulteriori informazioni, consulta anche [Selettore risorse](search-assets.md#
 
    Modifica la posizione in cui Experience Manager ricerca le risorse passando a un&#39;altra cartella nel campo **[!UICONTROL Percorso]** .
 
-   Tocca **[!UICONTROL Raccolta]** per cercare solo le risorse all’interno delle raccolte.
+   Seleziona **[!UICONTROL Raccolta]** per cercare solo le risorse all&#39;interno delle raccolte.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Per modificare la modalità di visualizzazione dei prodotti, tocca **[!UICONTROL Visualizza come]**, scegliendo tra **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
+   Seleziona **[!UICONTROL Visualizza come]** per modificare la modalità di visualizzazione dei prodotti: **[!UICONTROL Vista a elenco]**, **[!UICONTROL Vista a colonne]** o **[!UICONTROL Vista a schede]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
