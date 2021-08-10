@@ -10,7 +10,7 @@ docset: aem65
 feature: Visualizzatori
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '6636'
 ht-degree: 6%
@@ -576,7 +576,7 @@ Per attivare il tracking Video Heartbeat, seleziona **[!UICONTROL enable Adobe A
 
 A partire da questa scrittura, l’estensione *Dynamic Media Viewers* è disponibile solo se per lo sviluppo viene creata la proprietà Experience Platform Tags.
 
-Consulta [Creare una proprietà in Tag di Experience Platform](#creating-a-property-in-adobe-launch).
+Consulta [Creare una proprietà in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
 Una volta installate e configurate le estensioni, almeno le seguenti cinque estensioni (quattro se non stai monitorando il video) saranno elencate nell&#39;area Estensioni > Installate .
 
@@ -811,7 +811,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Titolo]**  - Inserisci un titolo di configurazione descrittivo. Esempio, `We.Retail Tags cloud configuration`.
 
-   * **[!UICONTROL Configurazione IMS per Adobe associato]** : seleziona la configurazione IMS creata in precedenza in  [Configurazione di Experience Manager IMS](#configuring-aem-ims).
+   * **[!UICONTROL Configurazione IMS per Adobe associato]** : seleziona la configurazione IMS creata in precedenza in  [Configura IMS per Experience Manager](#configuring-aem-ims).
 
    * **[!UICONTROL Società]**  - Dall’elenco a discesa  **** Società, seleziona la tua società di Experience Cloud. L’elenco viene compilato automaticamente.
 
