@@ -12,9 +12,9 @@ docset: aem65
 feature: Gestione risorse
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11702'
+source-wordcount: '11699'
 ht-degree: 5%
 
 ---
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Quando codifichi un file video, utilizza un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità scadente.
 
-* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+* Dynamic Media supporta video in formato breve con una lunghezza massima di 30 minuti.
 * È possibile caricare file video di origine primaria fino a 15 GB ciascuno.
 
 La tabella seguente descrive le dimensioni, le proporzioni e il bit rate minimo consigliati che i file video sorgente devono avere prima di codificarli:
@@ -572,7 +572,7 @@ Per pubblicare video in YouTube è necessario disporre di uno o più canali. Se 
 
 1. Vai a [https://www.youtube.com](https://www.youtube.com/) e accedi utilizzando le tue credenziali del tuo account Google.
 1. Nell’angolo in alto a destra della pagina YouTube, fai clic sull’immagine del profilo (può anche essere visualizzata come una lettera all’interno di un cerchio colorato), quindi fai clic su **[!UICONTROL Impostazioni YouTube]** (icona a forma di ingranaggio circolare).
-1. Nella pagina Panoramica, sotto l&#39;intestazione Funzioni aggiuntive, fai clic su **[!UICONTROL Vedi tutti i miei canali o crea un nuovo canale]**.
+1. Nella pagina Panoramica, sotto l&#39;intestazione Funzioni aggiuntive, fai clic su **[!UICONTROL Vedi tutti i miei canali o crea un canale]**.
 1. Nella pagina Canali, fai clic su **[!UICONTROL Crea un nuovo canale]**.
 1. Nella pagina Account marchio , immetti un nome commerciale o un altro nome di canale scelto per pubblicare le risorse video nel campo Marchio Account , quindi fai clic su **[!UICONTROL Crea]**.
 
@@ -1126,7 +1126,7 @@ Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consul
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse.
 
-   Consulta [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
+   Consulta [Pubblicare risorse](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Effettua una delle operazioni seguenti:
 
@@ -1182,7 +1182,7 @@ Poiché utilizzi un visualizzatore video HTML5, accertati che il file dei capito
 
 Consultare [WebVTT: Il formato Tracce testo video web](https://w3c.github.io/webvtt/)
 
-**Per aggiungere marcatori capitolo al video:**
+**Per aggiungere la navigazione ai capitoli video:**
 
 1. Salva il file `.vtt` nella codifica UTF8 in modo da evitare problemi con il rendering dei caratteri nel testo del titolo del capitolo.
 
@@ -1245,7 +1245,7 @@ Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità &qu
 1. Assicurati di aver già fatto quanto segue:
 
    * È stata creata una cartella per le risorse video.
-   * [Alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) è stato applicato un profilo video.
+   * [Applica un profilo video alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [Caricati i video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
