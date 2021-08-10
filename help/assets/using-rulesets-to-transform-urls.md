@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di set di regole per la trasformazione degli URL
+title: Utilizzare i set di regole per trasformare gli URL
 description: Puoi distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,14 +8,14 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configurazione,Set di regole
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 5%
+source-wordcount: '761'
+ht-degree: 0%
 
 ---
 
-# Utilizzo dei set di regole per la trasformazione degli URL {#using-rulesets-to-transform-urls}
+# Utilizzare i set di regole per trasformare gli URL {#using-rulesets-to-transform-urls}
 
 Puoi distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. Ogni regola consiste di almeno una condizione e almeno un&#39;azione. Una regola valuta i dati XML in base alle condizioni e, se una condizione viene soddisfatta, esegue l&#39;azione appropriata. Esempi di set di regole includono:
 
@@ -33,7 +33,7 @@ Puoi distribuire i set di regole in Dynamic Media per trasformare gli URL. I set
 
 * Richiedi la codifica di alcuni caratteri, ad esempio `$`, `{` e `}`, e di alcuni caratteri da decodificare in ImageServer. Ad esempio, Facebook non funziona bene con gli URL contenenti caratteri speciali.
 
-   Consulta [Rimozione di caratteri speciali dagli URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+   Consulta [Rimuovere i caratteri speciali dagli URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 Nel contesto di Dynamic Media, i siti web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Media. Puoi designare uno di questi file come file del set di regole di pre-elaborazione per il serving della risorsa Dynamic Media. Questo file ristruttura il formato del protocollo URL standard per soddisfare la logica di business dei sistemi che vengono integrati con Dynamic Media. È possibile specificare un file XML da utilizzare come percorso del file delle definizioni del set di regole.
 
@@ -45,7 +45,7 @@ Sono disponibili set di regole di esempio che possono essere utili per creare un
 Consulta [Riferimento set di regole](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Come per la creazione di tutti i set di regole, assicurati che il file XML sia valido prima di caricarlo utilizzando un programma di convalida XML come xmlvalid.
-Vedere anche [Risoluzione dei problemi relativi ai set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
+Vedi anche [Risolvere i problemi relativi ai set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
 Inoltre, verifica prima il set di regole in un ambiente di staging che non influisce sull’ambiente di produzione live.
 Gli ambienti di produzione e gli ambienti di staging in genere richiedono accessi diversi.
@@ -56,7 +56,7 @@ Per informazioni sull&#39;accesso, consulta l&#39; [Adobe applicazione desktop D
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-Vedi anche [Uso dell&#39;immagine &quot;asset&quot; invece di &quot;is&quot; in un set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
+Vedi anche [Usa immagine &#39;asset&#39; invece di &#39;is&#39; in un set di regole](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **Per distribuire i set di regole XML:**
 
@@ -66,21 +66,21 @@ Vedi anche [Uso dell&#39;immagine &quot;asset&quot; invece di &quot;is&quot; in 
 
 1. Carica il file del set di regole facendo quanto segue:
 
-   * Nella barra di navigazione globale, fai clic su **[!UICONTROL Carica]**.
-   * Nella pagina **[!UICONTROL Carica]**, nell&#39;angolo in alto a sinistra, fai clic su **[!UICONTROL Sfoglia]**.
+   * Nella barra di navigazione globale, seleziona **[!UICONTROL Carica]**.
+   * Nella pagina **[!UICONTROL Carica]**, vicino all&#39;angolo superiore sinistro, seleziona **[!UICONTROL Sfoglia]**.
    * Nella finestra di dialogo **[!UICONTROL Apri]**, individua il file del set di regole (XML).
-   * Seleziona il file, quindi fai clic su **[!UICONTROL Apri]**.
+   * Selezionare il file, quindi selezionare **[!UICONTROL Apri]**.
    * Sul lato destro della pagina **[!UICONTROL Carica]**, seleziona una cartella di destinazione per il file del set di regole.
    * Vicino alla parte inferiore della pagina, accertati che sia selezionato **[!UICONTROL Pubblica dopo il caricamento]** .
-   * Nell’angolo in basso a destra della pagina, fai clic su **[!UICONTROL Invia caricamento]**.
-   * Nella barra di navigazione globale, fai clic su **[!UICONTROL Processi]** per controllare lo stato del processo di caricamento. Quando la colonna **[!UICONTROL Stato]** nella pagina **[!UICONTROL Processo]** indica Caricamento completato, continua con i passaggi successivi.
+   * Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Invia caricamento]**.
+   * Nella barra di navigazione globale, seleziona **[!UICONTROL Processi]** per controllare lo stato del processo di caricamento. Quando la colonna **[!UICONTROL Stato]** nella pagina **[!UICONTROL Processo]** indica Caricamento completato, continua con i passaggi successivi.
 
-1. Nella barra di navigazione vicino alla parte superiore della pagina, fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Configurazione pubblicazione > Image Server]**.
-1. Nella pagina **[!UICONTROL Pubblica su Image Server]**, seleziona il gruppo **[!UICONTROL Gestione catalogo]** e individua il **[!UICONTROL Percorso file definizione set regole]**, quindi fai clic su **[!UICONTROL Seleziona]**.
-1. Nella pagina **[!UICONTROL Seleziona file definizione set regole (XML)]**, individua il file del set regole, quindi fai clic su **[!UICONTROL Seleziona]** nell’angolo inferiore destro della pagina.
-1. Nell&#39;angolo in basso a destra della pagina Configurazione, fai clic su **[!UICONTROL Chiudi]**.
+1. Nella barra di navigazione vicino alla parte superiore della pagina, seleziona **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
+1. Nella pagina **[!UICONTROL Pubblicazione su Image Server]**, nel gruppo **[!UICONTROL Gestione catalogo]**, individua **[!UICONTROL Percorso file definizione set regole]**, quindi seleziona **[!UICONTROL Seleziona]**.
+1. Nella pagina **[!UICONTROL Seleziona file definizione set regole (XML)]** , individua il file del set di regole, quindi seleziona **[!UICONTROL Seleziona]** nell’angolo inferiore destro della pagina.
+1. Nell&#39;angolo in basso a destra della pagina Configurazione, selezionare **[!UICONTROL Chiudi]**.
 1. Esegui un processo di pubblicazione su Image Server.
 
    Le condizioni del set di regole vengono applicate alle richieste ai server di immagini Dynamic Media live.
 
-   Se apporti modifiche al file del set di regole, le modifiche vengono applicate immediatamente quando ricarichi e ripubblichi il file del set di regole aggiornato.
+   Se modifichi il file del set di regole, le modifiche vengono applicate immediatamente quando ricarichi e ripubblichi il file del set di regole aggiornato.
