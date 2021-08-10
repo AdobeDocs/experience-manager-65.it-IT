@@ -9,10 +9,11 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2850'
 ht-degree: 15%
 
 ---
@@ -31,7 +32,7 @@ Puoi visualizzare le risorse di Experience Manager pubblicate in Dynamic Media C
 
 Puoi pubblicare risorse digitali direttamente da Experience Manager a Dynamic Media Classic e le risorse digitali da Dynamic Media Classic a Experience Manager.
 
-Questo documento descrive come pubblicare risorse digitali da Experience Manager a Dynamic Media Classic e viceversa. Sono inoltre descritti nel dettaglio i visualizzatori. Per informazioni sulla configurazione di Experience Manager per Dynamic Media Classic, consulta [Integrazione di Dynamic Media Classic con Experience Manager](/help/sites-administering/scene7.md).
+Questo documento descrive come pubblicare risorse digitali da Experience Manager a Dynamic Media Classic e viceversa. Sono inoltre descritti nel dettaglio i visualizzatori. Per informazioni sulla configurazione di Experience Manager per Dynamic Media Classic, consulta [Integrare Dynamic Media Classic con Experience Manager](/help/sites-administering/scene7.md).
 
 Vedere anche [Aggiungi mappe immagine](image-maps.md).
 
@@ -103,11 +104,11 @@ L’aggiunta di un componente Dynamic Media Classic (Scene7) a una pagina equiva
    >
    >Solo nell’interfaccia touch, devi trascinare l’immagine o il video sul componente Dynamic Media Classic inserito nella pagina. La selezione e la modifica del componente Dynamic Media Classic e quindi la scelta della risorsa non sono supportate.
 
-### Aggiungere esperienze di visualizzazione interattive a un sito reattivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 La progettazione reattiva delle risorse comporta che le risorse si adattino a seconda di dove vengono visualizzate. Grazie alla progettazione reattivo, le stesse risorse possono essere visualizzate in modo efficace su dispositivi diversi.
 
-Vedere anche [Progettazione reattiva per pagine web](/help/sites-developing/responsive.md).
+Vedi anche [Progettazione reattiva per le pagine web](/help/sites-developing/responsive.md).
 
 **Per aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo:**
 
@@ -169,11 +170,11 @@ Il componente Dynamic Media Classic **[!UICONTROL Immagine]** consente di aggiun
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dal menu a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md). Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
+**[!UICONTROL Predefinito visualizzatore]** : seleziona un predefinito visualizzatore esistente dal menu a discesa. Se il predefinito per visualizzatori che stai cercando non è visibile, devi renderlo visibile. Consulta [Gestire i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md). Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
 
 **[!UICONTROL Configurazione Dynamic Media Classic]**  - Seleziona la configurazione Dynamic Media Classic da utilizzare per recuperare i predefiniti immagine attivi da SPS.
 
-**[!UICONTROL Preimpostazione immagine]** : seleziona un predefinito immagine esistente dal menu a discesa. Se il predefinito immagine che cerchi non è visibile, devi renderlo visibile. Consulta [Gestione dei predefiniti per immagini](/help/assets/managing-image-presets.md). Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
+**[!UICONTROL Preimpostazione immagine]** : seleziona un predefinito immagine esistente dal menu a discesa. Se il predefinito immagine che cerchi non è visibile, devi renderlo visibile. Consulta [Gestire i predefiniti immagine](/help/assets/managing-image-presets.md). Non puoi selezionare un predefinito visualizzatore se utilizzi un predefinito immagine e viceversa.
 
 **[!UICONTROL Formato di output]**  - Seleziona il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, sono disponibili opzioni di configurazione aggiuntive. Consulta [Best practice sui predefiniti per immagini](/help/assets/managing-image-presets.md#image-preset-options).
 
