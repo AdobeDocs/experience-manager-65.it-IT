@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi Dynamic Media - Modalità Scene7
-description: Risoluzione dei problemi relativi a Dynamic Media quando è in esecuzione in modalità Scene7.
+description: Risolvere i problemi relativi a Dynamic Media quando è in esecuzione in modalità Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Risoluzione dei problemi
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -26,8 +26,8 @@ Il seguente documento descrive la risoluzione dei problemi relativi alla modalit
 
 Assicurati che Dynamic Media sia stato configurato correttamente eseguendo le operazioni seguenti:
 
-* Il comando Start up contiene l&#39;argomento `-r dynamicmedia_scene7` runmode.
-* Tutti i pacchetti correzioni cumulativi AEM 6.4 (CFP) sono stati installati prima *prima* di tutti i pacchetti di funzioni Dynamic Media disponibili.
+* Il comando Start up contiene l&#39;argomento della modalità di esecuzione `-r dynamicmedia_scene7`.
+* Tutti i pacchetti correzioni cumulativi Adobe Experience Manager 6.4 (CFP) sono stati installati prima *prima* di tutti i pacchetti di funzioni Dynamic Media disponibili.
 * È installato il Feature Pack 18912 opzionale.
 
    Questo pacchetto di funzioni opzionale è per il supporto FTP o se stai eseguendo la migrazione delle risorse a Dynamic Media da Dynamic Media Classic.
@@ -43,7 +43,7 @@ Di seguito sono riportati alcuni suggerimenti generali per tutte le risorse.
 
 ### Proprietà dello stato di sincronizzazione delle risorse {#asset-synchronization-status-properties}
 
-Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per confermare la sincronizzazione della risorsa da AEM a Dynamic Media:
+Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per confermare la corretta sincronizzazione della risorsa da Experience Manager a Dynamic Media:
 
 | **Proprietà** | **Esempio** | **Descrizione** |
 |---|---|---|
@@ -54,7 +54,7 @@ Le seguenti proprietà delle risorse possono essere riviste in CRXDE Lite per co
 
 ### Registrazione sincronizzazione {#synchronization-logging}
 
-Gli errori e i problemi di sincronizzazione vengono registrati in `error.log` (AEM directory del server `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione su DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
+Gli errori e i problemi di sincronizzazione vengono registrati in `error.log` (directory del server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione su DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
 ### Sposta, Copia, Elimina {#move-copy-delete}
 
@@ -66,11 +66,11 @@ Prima di eseguire un&#39;operazione Sposta, Copia o Elimina, eseguire le operazi
 
 ### Controllo della versione {#version-control}
 
-Quando sostituisci una risorsa Dynamic Media esistente (nome e posizione identici), puoi mantenere entrambe le risorse o sostituire o creare una versione:
+Quando sostituisci una risorsa Dynamic Media esistente (nome e posizione identici), puoi mantenere entrambe le risorse o sostituire/creare una versione:
 
-* Mantenere entrambi crea una nuova risorsa con un nome univoco per l’URL della risorsa pubblicata. Ad esempio, `image.jpg` è la risorsa originale e `image1.jpg` è la nuova risorsa caricata.
+* Mantenere entrambi crea una risorsa con un nome univoco per l’URL della risorsa pubblicata. Ad esempio, `image.jpg` è la risorsa originale e `image1.jpg` è la nuova risorsa caricata.
 
-* La creazione di una versione non è supportata nella distribuzione in modalità Dynamic Media - Scene7. La nuova versione sostituirà la risorsa esistente in consegna.
+* La creazione di una versione non è supportata nella distribuzione in modalità Dynamic Media - Scene7. La nuova versione sostituisce la risorsa esistente nella consegna.
 
 ## Immagini e set {#images-and-sets}
 
@@ -89,7 +89,7 @@ Se riscontri problemi con immagini e set, consulta le seguenti indicazioni per l
     <ol>
      <li><p>Vai a CRX/DE:</p>
       <ul>
-       <li>Controlla se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Tieni presente che questa posizione si applica se hai effettuato l’aggiornamento da AEM 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Controlla se il predefinito nel JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> è definito. Questa posizione si applica se hai effettuato l’aggiornamento da Experience Manager 6.x a 6.4 e hai rinunciato alla migrazione. In caso contrario, la posizione è <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Verifica che la risorsa nel JCR sia <code>dam:scene7FileStatus</code><strong> </strong>sotto Metadati sia visualizzata come <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -107,7 +107,7 @@ Se riscontri problemi con immagini e set, consulta le seguenti indicazioni per l
   <tr>
    <td><strong></strong> Il pulsante di selezione non è attivo dopo aver selezionato una risorsa come parte della modifica di un set</td>
    <td><p> </p> <p>Problema noto da risolvere in 6.4</p> <p> </p> </td>
-   <td><p>Fai clic prima su un’altra cartella nel Selettore risorse e torna indietro per selezionare la risorsa.</p> </td>
+   <td><p>Seleziona prima un’altra cartella nel Selettore risorse e torna indietro per selezionare la risorsa.</p> </td>
   </tr>
   <tr>
    <td>Il punto attivo del carosello si sposta dopo il passaggio tra le diapositive</td>
@@ -175,8 +175,8 @@ In caso di problemi con il video, consulta le seguenti indicazioni per la risolu
     </ul> </td>
    <td>
     <ol>
-     <li>Controlla la tua istanza AEM con <code>-r dynamicmedia_scene7</code></li>
-     <li>Verifica che la configurazione di Dynamic Media in Cloud Services sia configurata correttamente.</li>
+     <li>Controlla la tua istanza di Experience Manager con <code>-r dynamicmedia_scene7</code></li>
+     <li>Verifica che la configurazione Dynamic Media in Cloud Services sia configurata correttamente.</li>
      <li>Verifica che la cartella disponga di un profilo video. Inoltre, controlla il profilo video.</li>
     </ol> </td>
   </tr>
@@ -218,12 +218,12 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
   </tr>
   <tr>
    <td>I predefiniti per visualizzatori non vengono pubblicati</td>
-   <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, dovresti vedere:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, fai clic su uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
+   <td><p>Passare alla pagina di diagnostica di sample manager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Osserva i valori calcolati. Quando funziona correttamente, vedi quanto segue:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: La sincronizzazione delle risorse del visualizzatore può richiedere circa 10 minuti dopo la configurazione delle impostazioni cloud di Dynamic Media.</p> <p>Se le risorse non attivate rimangono, seleziona uno dei pulsanti <strong>Elenca tutte le risorse non attivate</strong> per visualizzare i dettagli.</p> </td>
    <td>
     <ol>
      <li>Passa all’elenco dei predefiniti per visualizzatori in strumenti di amministrazione: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleziona tutti i predefiniti visualizzatore, quindi fai clic su <strong>Pubblica</strong>.</li>
+     <li>Seleziona tutti i predefiniti visualizzatore, quindi seleziona <strong>Pubblica</strong>.</li>
      <li>Torna a Sample manager e osserva che il conteggio delle risorse non attivate è ora zero.</li>
     </ol> </td>
   </tr>
@@ -243,20 +243,20 @@ Se riscontri problemi con i visualizzatori, consulta le seguenti indicazioni per
        <li>Esempio: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono state sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:</p>
+   <td><p>Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:</p>
     <ol>
      <li>Passa a CRXDE Lite.
       <ul>
        <li>Elimina <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
-     <li>Passa al gestore dei pacchetti CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Passa a Gestione pacchetti CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
        <li>Cerca un pacchetto visualizzatore nell’elenco (inizia con <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Fare clic su <strong>Reinstalla</strong>.</li>
+       <li>Selezionare <strong>Reinstalla</strong>.</li>
       </ol> </li>
      <li>In Cloud Services, accedi alla pagina Configurazione Dynamic Media, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Media - S7.
       <ul>
-       <li>Non apportare modifiche, fai clic su <strong>Salva</strong>. Questo attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, i CSS predefiniti per visualizzatori e le immagini.<br />  </li>
+       <li>Non apportare modifiche, seleziona <strong>Salva</strong>. Questa azione attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, i CSS predefiniti per visualizzatori e le immagini.<br />  </li>
       </ul> </li>
     </ol> </td>
   </tr>
