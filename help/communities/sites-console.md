@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3288'
 ht-degree: 4%
 
 ---
@@ -130,7 +130,7 @@ Il pannello Progettazione contiene 2 pannelli secondari per la selezione del tem
 
 ![sitetema](assets/sitetheme.png)
 
-Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per portare un design dinamico e flessibile al sito. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di sito community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza `Twitter Bootstrap` per apportare al sito una progettazione reattiva e flessibile. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di sito community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema viene sovrapposto con un segno di spunta blu opaco.
 
