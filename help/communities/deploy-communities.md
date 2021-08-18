@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1921'
 ht-degree: 2%
 
 ---
@@ -144,11 +144,11 @@ SCORM (Shared Content Object Reference Model) è una raccolta di standard e spec
 
 Il motore AEM Communities SCORM è necessario per la funzione [enablement](/help/communities/overview.md#enablement-community) . Pacchetti Scorm supportati su AEM 6.5 Communities:
 
-* [cq-social-scorm-package, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) che include il motore  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
+* [cq-social-scorm-package, versione 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) che include il motore  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
 
 **Per installare un pacchetto SCORM**
 
-1. Installa il [cq-social-scorm-package, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) da Package Share.
+1. Installa il [cq-social-scorm-package, versione 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) da Package Share.
 1. Scarica `/libs/social/config/scorm/database_scormengine_data.sql` dall&#39;istanza cq ed eseguilo in mysql server per creare uno schema scormEngineDB aggiornato.
 1. Aggiungi `/content/communities/scorm/RecordResults` nella proprietà Percorsi esclusi nel filtro CSRF da `https://<hostname>:<port>/system/console/configMgr` agli editori.
 
@@ -291,7 +291,7 @@ quindi [configura l&#39;agente di replica](#replication-agents-on-author)
 
 * Individua il `AEM Communities Publish Tunnel Service`
 * Seleziona l’icona di modifica
-* Seleziona la casella **abilita**
+* Seleziona la casella **enable**
 * Seleziona **Salva**
 
    ![servizio a tunnel](assets/tunnel-service.png)
