@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Questa configurazione viene utilizzata per configurare i dati da sincronizzare t
 
 Per configurare i dati (percorsi dei nodi) da sincronizzare:
 
-1. Accedi con privilegi di amministratore all’istanza di authoring.
+1. Accedi con privilegi di amministratore all’istanza di pubblicazione.
 1. Accedi alla [Console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -187,7 +187,7 @@ Se la modifica dell&#39;appartenenza di un gruppo in un editore non ne aggiorna 
 
 Per garantire la sincronizzazione dei membri:
 
-1. Accedi con privilegi di amministratore all’istanza di authoring AEM.
+1. Accedi con privilegi di amministratore all’istanza di pubblicazione.
 1. Accedi alla [Console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
