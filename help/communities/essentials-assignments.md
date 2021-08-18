@@ -1,6 +1,6 @@
 ---
-title: Assignments Essentials
-seo-title: Assignments Essentials
+title: Componenti di base per le assegnazioni
+seo-title: Componenti di base per le assegnazioni
 description: Panoramica della funzione Assegnazioni per le community di abilitazione
 seo-description: Panoramica della funzione Assegnazioni per le community di abilitazione
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
@@ -10,36 +10,35 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '222'
 ht-degree: 13%
 
 ---
 
+# Componenti di base per le assegnazioni {#assignments-essentials}
 
-# Assignments Essentials {#assignments-essentials}
+Continua a leggere per conoscere le informazioni essenziali per l&#39;utilizzo della funzione di assegnazione dei siti [enablement community](/help/communities/overview.md#enablement-community).
 
-Continua a leggere per conoscere le informazioni essenziali per l&#39;utilizzo della funzione di assegnazione dei siti [community di abilitazione](/help/communities/overview.md#enablement-community).
+La funzione assegnazioni consente di assegnare risorse di abilitazione e percorsi di apprendimento ai membri delle comunità di abilitazione.
 
-La funzione di assegnazione consente di assegnare risorse di abilitazione e percorsi di apprendimento ai membri delle comunità di abilitazione.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Funzionalità di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/enablement/components/hbs/myassign</td>
+   <td>social/enablement/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassign<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
+   <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -51,14 +50,14 @@ La funzione di assegnazione consente di assegnare risorse di abilitazione e perc
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Vedere <a href="/help/communities/assignments.md">Caratteristica di assegnazione</a></td>
+   <td>Consultare <a href="/help/communities/assignments.md">Assegnazioni Feature</a></td>
   </tr>
  </tbody>
 </table>
 
-### Stato completamento e successo {#completion-and-success-status}
+### Stato di completamento e successo {#completion-and-success-status}
 
-Lo stato di completamento e completamento viene utilizzato nei rapporti e nei banner di stato sulle assegnazioni.
+Lo stato Completato e Completato viene utilizzato nei rapporti e nei banner di stato Assegnazioni.
 
 Stato completamento:
 
@@ -73,7 +72,7 @@ Stato di operazione riuscita:
 * Esito positivo
 * Operazione non riuscita
 
-Le uniche possibili combinazioni di Stato completamento e Successo sono:
+Le uniche combinazioni possibili di stato di completamento e successo sono:
 
 | **Completamento** | **Completato** |
 |---|---|
@@ -82,11 +81,11 @@ Le uniche possibili combinazioni di Stato completamento e Successo sono:
 | Completa | Esito positivo |
 | Completa | Operazione non riuscita |
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Funzioni di base per lato server {#essentials-for-server-side}
 
 ### Funzione Assegnazioni {#assignments-function}
 
-Una struttura del sito community che include la funzione [Assegnazioni](/help/communities/functions.md#assignments-function), include un componente ` [assignments](/help/communities/assignments.md)` configurato.
+Una struttura del sito community che include la [funzione Assegnazioni](/help/communities/functions.md#assignments-function), include un componente ` [assignments](/help/communities/assignments.md)` configurato.
 
 ### API di riferimento {#reference-apis}
 
@@ -94,5 +93,4 @@ Una struttura del sito community che include la funzione [Assegnazioni](/help/co
 
 * [API di reporting](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API di Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
-
+* [API di Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
