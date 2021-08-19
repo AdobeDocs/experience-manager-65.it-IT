@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
-
 
 # Ambiente e strumenti di authoring {#authoring-the-environment-and-tools}
 
@@ -37,7 +36,7 @@ Nell’interfaccia classica è disponibile un editor di pagina con Content Finde
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accedere all’Aiuto {#accessing-help}
+## Accedere all’Aiuto   {#accessing-help}
 
 Dall’interno di AEM è possibile accedere direttamente a diverse risorse di **Aiuto**:
 
@@ -63,15 +62,15 @@ Puoi utilizzare Content Finder per individuare diversi tipi di risorse. Puoi qui
 * [Documenti](#finding-documents)
 * [Filmati](#finding-movies)
 * [Browser Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Pagine](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Pagine](#finding-pages)
 
 * [Paragrafi](#referencing-paragraphs-from-other-pages)
-* [Prodotti](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Prodotti](#products)
 * Oppure per [sfogliare il sito web in base alla struttura dell’archivio](#the-content-finder)
 
 Per tutte le opzioni è possibile [cercare elementi specifici](#the-content-finder).
 
-### Finding Images {#finding-images}
+### Ricerca di immagini {#finding-images}
 
 In questa scheda vengono elencate tutte le immagini presenti nella directory archivio.
 
@@ -79,7 +78,7 @@ Dopo aver creato un paragrafo Immagine nella pagina, è possibile trascinarvi un
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-### Finding Documents {#finding-documents}
+### Ricerca di documenti {#finding-documents}
 
 In questa scheda vengono elencati tutti i documenti presenti nella directory archivio.
 
@@ -87,7 +86,7 @@ Dopo aver creato un paragrafo Scarica nella pagina, è possibile trascinarvi un 
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Finding Movies {#finding-movies}
+### Ricerca dei filmati {#finding-movies}
 
 In questa scheda vengono elencati tutti i filmati (ad esempio, elementi Flash) presenti nella directory archivio.
 
@@ -103,11 +102,11 @@ In questa scheda vengono elencati tutti i prodotti. Dopo aver creato sulla pagin
 
 ### Ricerca di pagine {#finding-pages}
 
-Questa scheda mostra tutte le pagine. Fate doppio clic su una pagina per aprirla in modalità di modifica.
+Questa scheda mostra tutte le pagine. Fai doppio clic su una pagina per aprirla in modalità di modifica.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
+### Riferimenti a paragrafi da altre pagine {#referencing-paragraphs-from-other-pages}
 
 Questa scheda consente di ricercare un’altra pagina. Vengono elencati tutti i paragrafi presenti nella pagina. È quindi possibile trascinare un paragrafo nella pagina corrente. In questo modo si crea automaticamente un riferimento al paragrafo originale.
 
@@ -148,7 +147,7 @@ tale immagine potrà essere rilevata mediante i seguenti pattern di ricerca (cos
 La corrispondenza dei caratteri *non* fa distinzione tra maiuscole e minuscole.
 
 * `name:ad?nm??is.*`
-in una query potete utilizzare un numero qualsiasi di caratteri jolly.
+in una query è possibile utilizzare qualsiasi numero di caratteri jolly.
 
 >[!NOTE]
 >
@@ -164,7 +163,7 @@ Per visualizzare i riferimenti diretti alle pagine:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Selezionare **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che fanno riferimento alla pagina selezionata, inclusi i relativi percorsi.
+1. Seleziona **Mostra riferimenti..** AEM apre la finestra Riferimenti e visualizza le pagine che fanno riferimento a quella selezionata, complete di percorso.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -185,9 +184,9 @@ Il **Registro di controllo** è accessibile dalla scheda **Informazioni** della 
 
 ## Informazioni sulle pagine {#page-information}
 
-La console Siti Web fornisce inoltre [informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) come pubblicazione, modifica, blocco, Live Copy e così via.
+La console Siti Web fornisce inoltre [informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), ad esempio pubblicazione, modifica, blocco, Live Copy e così via.
 
-## Modalità pagina    {#page-modes}
+## Modalità pagina   {#page-modes}
 
 Quando modificate una pagina nell’interfaccia classica, potete accedere a diverse modalità mediante le icone che si trovano nella parte inferiore della barra laterale:
 
@@ -206,9 +205,9 @@ La serie di icone visualizzata nella parte inferiore della barra laterale consen
 >Sono inoltre disponibili altre opzioni:
 >
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
->* Siti web, per aprire la console Siti web.
->* Ricarica, per aggiornare la visualizzazione della pagina.
+* [ClientContext](/help/sites-administering/client-context.md)
+* Siti Web - apre la console Siti Web .
+* Ricarica, per aggiornare la visualizzazione della pagina.
 
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
