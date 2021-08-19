@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 96%
 
 ---
-
 
 # Creazione di modelli di pagina  {#creating-page-templates}
 
@@ -46,7 +45,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!CAUTION]
 >
->Le pagine e i modelli creati con la **console Modelli** non devono essere utilizzati nell&#39;interfaccia classica e tale utilizzo non è supportato.
+>Le pagine e i modelli creati con la **Console modelli** non sono destinati all’uso con l’interfaccia classica e tale uso non è supportato.
 
 ## Prima di iniziare {#before-you-start}
 
@@ -111,11 +110,11 @@ AEM offre ora due tipi di modelli di base:
    * Sono [forniti dagli sviluppatori](/help/sites-developing/page-templates-static.md), e non possono essere creati o modificati dagli autori.
    * Vengono copiati per creare una nuova pagina, ma non esiste alcuna connessione dinamica (il nome del modello viene registrato solo a titolo informativo).
    * La [modalità Progettazione](/help/sites-authoring/default-components-designmode.md) di applicare proprietà di progettazione persistenti.
-   * Poiché la modifica di modelli statici è l&#39;attività esclusiva di uno sviluppatore, per ulteriori informazioni consultate il documento sullo sviluppatore [Modelli di pagina - Static](/help/sites-developing/page-templates-static.md).
+   * Poiché la modifica di modelli statici è compito esclusivo di uno sviluppatore, consulta il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md) per ulteriori informazioni.
 
 Per definizione, la console e l’editor dei modelli consentono di creare e modificare solo i modelli modificabili. Pertanto questo documento si concentra esclusivamente sui modelli modificabili.
 
-### Utilizzo di un modello per creare una pagina  {#using-a-template-to-create-a-page}
+### Utilizzo di un modello per creare una pagina {#using-a-template-to-create-a-page}
 
 Quando si utilizza un modello per [creare una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page), non vi è alcuna differenza visibile e nessuna indicazione tra modelli statici e modificabili. Per l’autore della pagina, il processo è trasparente.
 
@@ -128,7 +127,7 @@ Durante la creazione di un nuovo modello modificabile:
    * Oppure direttamente da: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Se necessario, puoi [creare una cartella per i modelli](#creating-a-template-folder-admin).
-* [Crea un nuovo modello](#creatinganewtemplateauthor), che sarà inizialmente vuoto.  [](#templatedefinitions)
+* [Crea un nuovo modello](#creatinganewtemplateauthor), che sarà inizialmente vuoto.
 
 * Se necessario, [definisci proprietà aggiuntive](#definingtemplatepropertiesauthor) per il modello.
 * [Modifica il modello](#editingtemplates) per definire i seguenti elementi:
@@ -148,7 +147,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!CAUTION]
 >
->Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello. A scopo di internalizzazione, si consigliano le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello. A scopo di internalizzazione, si consiglia di utilizzare le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) .
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -184,7 +183,7 @@ Durante la creazione di un nuovo modello modificabile:
    >
    >Quando viene creato un nuovo modello, questo viene contrassegnato come **Bozza** nella console, a indicare che non è ancora disponibile per l’uso da parte degli autori di pagine.
 
-### Definizione delle proprietà del modello - Autore del modello    {#defining-template-properties-template-author}
+### Definizione delle proprietà del modello - Autore del modello   {#defining-template-properties-template-author}
 
 Un modello può avere le seguenti proprietà:
 
@@ -211,9 +210,9 @@ Per visualizzare e/o modificare le proprietà:
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
-> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+>Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
 >[!NOTE]
 >
@@ -235,7 +234,7 @@ Per definire la miniatura del modello:
 
 1. Una volta ottenuta la miniatura desiderata, tocca o fai clic su **Salva e chiudi**.
 
-### Abilitazione e autorizzazione di un modello - Autore del modello    {#enabling-and-allowing-a-template-template-author}
+### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
@@ -279,7 +278,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Vedere [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability) - i principi per i modelli consentiti restano invariati.
+   >Consulta [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -297,7 +296,7 @@ Poiché al modello viene fatto riferimento quando viene eseguito il rendering di
 
 1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
 
-## Modifica dei modelli - Autori dei modelli    {#editing-templates-template-authors}
+## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
 Quando si crea o si modifica un modello, è possibile definire vari aspetti. La modifica dei modelli è simile alla creazione delle pagine.
 
@@ -623,7 +622,7 @@ La progettazione della pagina, comprese le librerie lato client e le policy di p
 
 Per accedere alla finestra di dialogo **Progettazione pagina**:
 
-1. In **Editor modelli**, selezionare **Informazioni pagina** dalla barra degli strumenti, quindi **Progettazione pagina** per aprire la finestra di dialogo.
+1. Dall&#39; **Editor modelli**, seleziona **Informazioni pagina** dalla barra degli strumenti, quindi **Progettazione pagina** per aprire la finestra di dialogo.
 1. Si apre la finestra di dialogo **Progettazione pagina**, divisa in due sezioni:
 
    * Nella metà sinistra si definiscono i [criteri della pagina](/help/sites-authoring/templates.md#page-policies).
@@ -658,7 +657,7 @@ Per accedere alla finestra di dialogo **Progettazione pagina**:
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-#### Proprietà pagina {#page-properties}
+#### Proprietà pagina   {#page-properties}
 
 Con le proprietà della pagina è possibile definire le librerie lato client richieste mediante la finestra di dialogo **Progettazione pagina**. Le librerie lato client includono fogli di stile e Javascript da caricare con il modello e le pagine create con tale modello.
 
@@ -696,7 +695,7 @@ L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà d
 
 1. Conferma le definizioni con **Fine**.
 
-## Best practice    {#best-practices}
+## Best practice   {#best-practices}
 
 Quando si creano modelli, è necessario considerare i seguenti aspetti:
 
