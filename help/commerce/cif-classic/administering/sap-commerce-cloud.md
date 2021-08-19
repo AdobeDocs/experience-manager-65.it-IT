@@ -7,8 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Dopo l’installazione, puoi configurare la tua istanza:
 1. [Configura l’importazione del catalogo](#configure-the-catalog-importer).
 1. Utilizza l’ [importazione per importare il catalogo](#catalog-import) in una posizione specifica in AEM.
 
-## Configura la ricerca su facet per i Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configurare la ricerca di Geometrixx Outdoors in facet {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Il **Catalogo versione** ( `hybris.catalog.version`) importato può essere confi
 
 L’output del registro fornisce un feedback sulle pagine e sui componenti creati e segnala potenziali errori.
 
-## Configura la struttura di importazione {#configure-the-import-structure}
+## Configurare la struttura di importazione {#configure-the-import-structure}
 
 L’elenco seguente mostra una struttura di esempio (di risorse, pagine e componenti) creata per impostazione predefinita:
 
@@ -166,7 +166,7 @@ La struttura da generare durante l’importazione può essere configurata per:
 
 Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per informazioni dettagliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) . Consulta anche la console per un elenco completo dei parametri configurabili e delle relative impostazioni predefinite.
 
-## Configurare gli attributi del prodotto da caricare {#configure-the-product-attributes-to-load}
+## Configurare gli attributi di prodotto da caricare {#configure-the-product-attributes-to-load}
 
 Il parser di risposta può essere configurato per definire le proprietà e gli attributi da caricare per i prodotti (variante):
 
@@ -181,7 +181,7 @@ Il parser di risposta può essere configurato per definire le proprietà e gli a
    >
    >Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per informazioni dettagliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) . Consulta anche la console per un elenco completo dei parametri configurabili e delle relative impostazioni predefinite.
 
-## Importazione dei dati del prodotto {#importing-the-product-data}
+## Importazione dei dati di prodotto {#importing-the-product-data}
 
 Esistono diversi modi per importare i dati del prodotto. I dati del prodotto possono essere importati quando si configura inizialmente l’ambiente o dopo aver apportato modifiche nei dati di hybris:
 
@@ -274,7 +274,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
    ```
 
 
-### Aggiornamento Express {#express-update}
+### Aggiornamento espresso {#express-update}
 
 Il processo di importazione può richiedere molto tempo, in modo che un&#39;estensione alla sincronizzazione prodotto possa selezionare aree specifiche del catalogo per un aggiornamento rapido che viene attivato manualmente. Questo utilizza il feed di esportazione e la configurazione degli attributi standard.
 
@@ -309,9 +309,7 @@ Il processo di importazione può richiedere molto tempo, in modo che un&#39;este
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
-## Configurare l&#39;importazione di catalogo {#configure-the-catalog-importer}
+## Configurare l’importazione di catalogo {#configure-the-catalog-importer}
 
 Il catalogo ibrido può essere importato in AEM, utilizzando l’importazione batch per cataloghi, categorie e prodotti ibridi.
 
@@ -407,7 +405,7 @@ Per rimuovere uno o più prodotti dal catalogo:
       1. rollout del catalogo appropriato
       1. aggiorna la pagina della categoria appropriata
 
-## Aggiungi le caratteristiche della cronologia degli ordini al contesto client {#add-order-history-trait-to-the-client-context}
+## Aggiungi la caratteristica della cronologia degli ordini al contesto client {#add-order-history-trait-to-the-client-context}
 
 Per aggiungere la cronologia degli ordini al [contesto client](/help/sites-developing/client-context.md):
 
