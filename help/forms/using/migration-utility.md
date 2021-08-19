@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 3%
@@ -191,7 +191,7 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
 ### Attività di gestione delle famiglie dopo l&#39;esecuzione dell&#39;utility di migrazione {#housekeepingtasks}
 
-Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività di gestione: [](../../forms/using/import-export-forms-templates.md)
+Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività di gestione:
 
 1. Assicurati che la versione XFA dei layout di layout e frammenti sia 3.3 o successiva. Se utilizzi layout e layout di frammenti di una versione precedente, potrebbero esserci problemi nel rendering della lettera. Per aggiornare la versione di un XFA precedente alla versione più recente, completa i passaggi seguenti:
 
@@ -200,5 +200,5 @@ Dopo aver eseguito l&#39;utility Migrazione, si occupa delle seguenti attività 
    1. Apri il file XFA nella versione più recente di Designer e salvalo. La versione di XFA viene aggiornata a quella più recente.
    1. Carica l&#39;XFA nell&#39;interfaccia utente di Forms.
 
-1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza di authoring e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
+1. Pubblica tutte le risorse pubblicate nel sistema precedente prima della migrazione. L’utility di migrazione aggiorna le risorse solo sull’istanza dell’autore e per aggiornare le risorse nell’istanza o nelle istanze di pubblicazione è necessario pubblicare le risorse.
 1. In AEM Forms 6.4 e 6.5, alcuni dei diritti dei gruppi di utenti dei moduli vengono modificati. Se desideri che uno qualsiasi dei tuoi utenti sia in grado di caricare XDP e Adaptive Forms contenenti script o utilizzare l&#39;editor di codice, devi aggiungerli al gruppo utenti di forms-power-users. Allo stesso modo, gli autori di modelli non possono più utilizzare l&#39;editor di codice nell&#39;editor di regole. Per consentire agli utenti di utilizzare l’editor di codice, aggiungili al gruppo af-template-script-writers. Per istruzioni su come aggiungere utenti ai gruppi, consulta [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
