@@ -10,19 +10,18 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configurazione
+exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3437'
 ht-degree: 3%
 
 ---
 
-
 # Replica{#replication}
 
-Gli agenti di replica sono centrali in Adobe Experience Manager (AEM) come meccanismo utilizzato per:
+Gli agenti di replica sono fondamentali per Adobe Experience Manager (AEM) come meccanismo utilizzato per:
 
 * [Pubblicare (attivare)](/help/sites-authoring/publishing-pages.md#activatingcontent) contenuti da un autore a un ambiente di pubblicazione.
 * Esegui lo scaricamento esplicito del contenuto dalla cache del Dispatcher.
@@ -51,7 +50,7 @@ La replica, su un’istanza o un dispatcher di pubblicazione, avviene in diversi
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-### Replicazione da Pubblica all&#39;autore {#replicating-from-publish-to-author}
+### Replicazione da Pubblica a Autore {#replicating-from-publish-to-author}
 
 Alcune funzioni consentono agli utenti di immettere dati in un’istanza di pubblicazione.
 
@@ -107,7 +106,7 @@ I dettagli (configurazione e registri) sono accessibili dalla console Strumenti 
 
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
-#### Agenti di replica: fuori dalla scatola {#replication-agents-out-of-the-box}
+#### Agenti di replica - Predefiniti {#replication-agents-out-of-the-box}
 
 I seguenti agenti sono disponibili in un&#39;installazione standard AEM:
 
@@ -125,7 +124,7 @@ Questo è un &quot;Agente che memorizza una rappresentazione statica di un nodo 
 Ad esempio, con le impostazioni predefinite, le pagine di contenuto e le risorse dam vengono memorizzate in `/tmp`, come HTML o nel formato di risorsa appropriato. Consulta le schede `Settings` e `Rules` per la configurazione.
 Questo è stato richiesto in modo che, quando la pagina viene richiesta direttamente dal server dell&#39;applicazione, il contenuto possa essere visualizzato. Si tratta di un agente specializzato e (probabilmente) non sarà necessario per la maggior parte delle istanze.
 
-## Agenti di replica: parametri di configurazione {#replication-agents-configuration-parameters}
+## Agenti di replica - Parametri di configurazione {#replication-agents-configuration-parameters}
 
 Durante la configurazione di un agente di replica dalla console Strumenti, nella finestra di dialogo sono disponibili quattro schede:
 
@@ -363,7 +362,7 @@ Dalla scheda Strumenti nell’ambiente di authoring è possibile configurare gli
 
 >[!NOTE]
 >
->Quando un dispatcher gestisce le richieste HTTP per le istanze di authoring o pubblicazione, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, devi aggiungere l’intestazione PATH all’elenco del dispatcher delle intestazioni client. (Vedere [/clientheaders (intestazioni client)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Quando un dispatcher gestisce le richieste HTTP per le istanze di authoring o pubblicazione, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, devi aggiungere l’intestazione PATH all’elenco del dispatcher delle intestazioni client. (Consultare [/clientheaders (Intestazioni client)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Accedi alla scheda **Strumenti** in AEM.
@@ -501,7 +500,7 @@ Gli agenti predefiniti sono inclusi nell’installazione. Tuttavia, è ancora ne
 
 L&#39;agente di replica **Dispatcher Flush** non è attivo sull&#39;autore. È possibile accedere alla stessa pagina nell’ambiente di pubblicazione utilizzando l’URI equivalente; ad esempio, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
-### Controllo dell&#39;accesso agli agenti di replica {#controlling-access-to-replication-agents}
+### Controllo dell’accesso agli agenti di replica {#controlling-access-to-replication-agents}
 
 L&#39;accesso alle pagine utilizzate per configurare gli agenti di replica può essere controllato utilizzando le autorizzazioni di pagina utente e/o gruppo sul nodo `etc/replication`.
 
@@ -566,7 +565,7 @@ Per monitorare un agente di replica:
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-## Replica batch {#batch-replication}
+## Replica in batch {#batch-replication}
 
 La replica batch non replica singole pagine o risorse, ma attende l’attivazione della prima soglia dei due, in base a tempo o dimensioni.
 
