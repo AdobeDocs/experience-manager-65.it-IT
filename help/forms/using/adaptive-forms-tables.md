@@ -8,15 +8,14 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Moduli adattivi
+exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 0%
 
 ---
-
 
 # Tabelle nei moduli adattivi{#tables-in-adaptive-forms}
 
@@ -117,7 +116,7 @@ Esegui i seguenti passaggi per impostare la larghezza della colonna per una tabe
 
 1. Immettere l&#39;elenco di valori separati da virgole nel campo **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel campo **[!UICONTROL Larghezza colonna]**, si imposta la larghezza delle colonne su 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
 
-## Configura lo stile di tabella {#configure}
+## Configurare lo stile di tabella {#configure}
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Esegui i seguenti passaggi per passare alla modalità stile e modificare lo stile della tabella
 
@@ -130,7 +129,7 @@ Le proprietà di stile vengono visualizzate nella barra laterale.
 
 >[!NOTE]
 >
->È possibile modificare il tema colore per le righe di intestazione e corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consulta [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>È possibile modificare il tema colore per le righe di intestazione e corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consulta [Temi in AEM Forms](/help/forms/using/themes.md).
 
 ## Aggiungere o eliminare una riga in modo dinamico {#add-or-delete-a-row-dynamically}
 
@@ -206,7 +205,7 @@ Colonne compresse di una tabella con solo due colonne visualizzate su un disposi
 
 Colonna espansa di una tabella su un dispositivo mobile
 
-## Unisci dati in una tabella {#merge-data-in-a-table}
+## Unione di dati in una tabella {#merge-data-in-a-table}
 
 Le tabelle nei moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati di un file XML. Il file XML di dati può trovarsi nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell&#39;archivio CRX.
 
@@ -288,7 +287,7 @@ Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare
 
 ![data-merge-table](assets/data-merged-table.png)
 
-## Utilizzare i componenti XDP e i tipi complessi XSD {#use-xdp-components-and-xsd-complex-types}
+## Utilizzare componenti XDP e tipi complessi XSD {#use-xdp-components-and-xsd-complex-types}
 
 Se hai creato un modulo adattivo basato su un modello di modulo XFA, gli elementi XFA sono disponibili nella scheda Modello dati di AEM Content Finder. Puoi trascinare questi elementi XFA, incluse le tabelle, nel modulo adattivo.
 
@@ -308,10 +307,9 @@ Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare 
 >
 >Se il numero di elementi è inferiore al numero di celle di una riga, la nuova riga aggiunge prima le celle in base agli elementi, quindi le celle predefinite vengono aggiunte per riempire le celle rimanenti della riga. Ad esempio, se rilasci un gruppo di tre elementi in una riga con quattro celle, le prime tre celle si basano sugli elementi saltati e la cella rimanente sarà la cella predefinita della tabella.
 
-## Considerazioni chiave {#key-considerations}
+## Considerazioni fondamentali {#key-considerations}
 
 * Se si spostano le righe in alto e in basso durante l’authoring di una tabella basata su XSD, alcuni dati persi dalle righe di tabella vengono visualizzati nell’XML dati generato all’invio del modulo.
 * A ogni cella corpo di una tabella predefinita è associato un nome di elemento predefinito. Se si aggiunge un’altra tabella nel modulo adattivo, le celle del corpo predefinite nella nuova tabella avranno lo stesso nome di elemento della prima tabella. In questo caso, i dati generati al momento dell’invio del modulo includeranno i dati nelle celle corpo predefinite di una sola tabella. Assicurati pertanto di rinominare i nomi degli elementi per le celle corpo predefinite in modo da mantenerle univoche tra le tabelle ed evitare la perdita di dati.
 
    Si noti che questo è applicabile solo alle celle corpo predefinite. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle corpo non predefinite.
-
