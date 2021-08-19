@@ -10,17 +10,16 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configurazione
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5878'
 ht-degree: 1%
 
 ---
 
-
-# Monitoraggio e manutenzione dell&#39;istanza AEM{#monitoring-and-maintaining-your-aem-instance}
+# Monitoraggio e manutenzione dell’istanza AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Dopo la distribuzione delle istanze AEM, saranno necessarie alcune attività per monitorare e mantenere il funzionamento, le prestazioni e l’integrità delle istanze.
 
@@ -66,7 +65,7 @@ Spesso il backup completo viene eseguito a intervalli regolari (ad esempio quoti
 >
 >Per ulteriori informazioni sulle prestazioni di backup, consulta la sezione [Prestazioni di backup](/help/sites-deploying/configuring-performance.md#backup-performance) .
 
-### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
+### Backup dell&#39;installazione software {#backing-up-your-software-installation}
 
 Dopo l&#39;installazione, o modifiche significative nella configurazione, eseguire un backup dell&#39;installazione del software.
 
@@ -93,7 +92,7 @@ La sezione [Backup e ripristino](/help/sites-administering/backup-and-restore.md
 
 Per informazioni dettagliate su come effettuare un backup &quot;a caldo&quot; online, vedere [Creazione di un backup online](/help/sites-administering/backup-and-restore.md#online-backup).
 
-## Rimozione della versione {#version-purging}
+## Rimozione delle versioni {#version-purging}
 
 Lo strumento **Purge Versions** è destinato a eliminare le versioni di un nodo o di una gerarchia di nodi nel tuo archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni dell’archivio rimuovendo le vecchie versioni dei nodi.
 
@@ -119,7 +118,7 @@ Lo strumento **Elimina versioni** è disponibile nella console **[Strumenti](/he
 
 **** PurgeLaunch l&#39;eliminazione delle versioni sul nodo definito dal Percorso iniziale.
 
-### Rimozione delle versioni di un sito Web {#purging-versions-of-a-web-site}
+### Rimozione di versioni di un sito Web {#purging-versions-of-a-web-site}
 
 Per eliminare le versioni di un sito Web, procedere come segue:
 
@@ -165,9 +164,9 @@ Nell’esempio seguente:
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
-## Utilizzo dei record di audit e dei file di registro {#working-with-audit-records-and-log-files}
+## Utilizzo dei record di controllo e dei file di registro {#working-with-audit-records-and-log-files}
 
-I record e i file di registro di controllo relativi a Adobe Experience Manager (AEM) possono essere trovati in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
+I record e i file di registro di controllo relativi ad Adobe Experience Manager (AEM) si trovano in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare.
 
 ### Utilizzo dei registri {#working-with-logs}
 
@@ -177,7 +176,7 @@ AEM WCM registra i registri dettagliati. Dopo aver decompresso e avviato Quickst
 
 * `<cq-installation-dir>/crx-quickstart/repository/`
 
-#### Rotazione file di registro {#log-file-rotation}
+#### Rotazione dei file di registro {#log-file-rotation}
 
 La rotazione del file di registro si riferisce al processo che limita la crescita del file creando periodicamente un nuovo file. In AEM, un file di registro denominato `error.log` viene ruotato una volta al giorno in base alle regole specificate:
 
@@ -261,7 +260,7 @@ I livelli di log sono i seguenti:
 
 >[!NOTE]
 >
->Quando si lavora con Adobe Experience Manager, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori dettagli e pratiche consigliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
+>Quando si lavora con Adobe Experience Manager, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; per ulteriori dettagli e pratiche consigliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
 
 In alcune circostanze è possibile creare un file di registro personalizzato con un livello di registro diverso. Puoi eseguire questa operazione nell’archivio:
 
@@ -442,7 +441,7 @@ La console Felix fornisce anche informazioni sul supporto per i log Sling all&#3
 
 I record di audit sono tenuti per fornire un registro di chi ha fatto cosa e quando. Vengono generati record di controllo diversi per gli eventi WCM e OSGi AEM.
 
-#### AEM record di controllo WCM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM dei record di controllo WCM visualizzati durante l’authoring delle pagine {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Apri una pagina.
 1. Dalla barra laterale potete selezionare la scheda con l’icona a forma di lucchetto, quindi fare doppio clic su **Registro di controllo...**
@@ -510,7 +509,7 @@ Per monitorare un agente di replica:
 
 Anche in questo caso è possibile sviluppare una soluzione per rilevare tutti gli agenti di replica (situati sotto `/etc/replication/author` o `/etc/replication/publish`), quindi controllare lo stato dell&#39;agente ( `enabled`, `disabled`) e la coda sottostante ( `active`, `idle`, `blocked`).
 
-## Prestazioni di monitoraggio {#monitoring-performance}
+## Monitoraggio delle prestazioni {#monitoring-performance}
 
 [Performance ](/help/sites-deploying/configuring-performance.md) Optimization è un processo interattivo che viene messo a fuoco durante lo sviluppo. Dopo la distribuzione viene in genere rivisto dopo intervalli o eventi specifici.
 
@@ -560,7 +559,7 @@ Tutte queste informazioni devono essere ottenute, ordinate e analizzate prima di
    * raccogliere il maggior numero possibile di informazioni da confrontare con la vostra conoscenza del sistema in circostanze normali:
 
 
-### Strumenti per il monitoraggio e l&#39;analisi delle prestazioni {#tools-for-monitoring-and-analyzing-performance}
+### Strumenti per il monitoraggio e l’analisi delle prestazioni {#tools-for-monitoring-and-analyzing-performance}
 
 Di seguito viene fornita una breve panoramica di alcuni degli strumenti disponibili per il monitoraggio e l’analisi delle prestazioni.
 
@@ -739,7 +738,7 @@ Anche in questo caso, il `request.log` può essere utilizzato per monitorare la 
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Utilizzo di rlog.jar per trovare richieste con tempi di durata prolungata {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Utilizzo di rlog.jar per trovare le richieste con tempi lunghi {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM include vari strumenti di supporto in:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
@@ -785,7 +784,7 @@ $ java -jar ../opt/helpers/rlog.jar -n 10 request.log
 
 Potrebbe essere necessario concatenare i singoli file `request.log` se è necessario eseguire questa operazione su un esempio di dati di grandi dimensioni.
 
-### Bench Apache {#apache-bench}
+### Banco Apache {#apache-bench}
 
 Per ridurre al minimo l’impatto dei casi speciali (come la raccolta di rifiuti, ecc.), si consiglia di utilizzare uno strumento come `apachebench` (vedi ad esempio [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) per ulteriori informazioni) per identificare le perdite di memoria e analizzare in modo selettivo il tempo di risposta.
 
@@ -882,7 +881,7 @@ Le informazioni raccolte possono essere utilizzate per indicare:
          -->
 ```
 
-### Monitoraggio delle prestazioni utilizzando JConsole {#monitoring-performance-using-jconsole}
+### Monitoraggio delle prestazioni tramite JConsole {#monitoring-performance-using-jconsole}
 
 Il comando dello strumento `jconsole` è disponibile con JDK.
 
@@ -1114,7 +1113,7 @@ Se il sistema è a corto di spazio su disco o se noti che il disco sta battendo 
    * [Configurazione della registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gestione libreria HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Se e come hai configurato [Version Purging](/help/sites-deploying/version-purging.md)
 * La Knowledge Base:
