@@ -8,10 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 5%
 
 ---
@@ -169,7 +168,7 @@ Per ogni tipo di prodotto distinto è necessaria una pagina di scaffolding. La p
 >
 >Questo significa che, per impostazione predefinita, sono bloccati dal [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), quindi configura come necessario.
 
-#### Modifica delle informazioni sul prodotto - Interfaccia touch {#editing-product-information-touch-optimized-ui}
+#### Modifica delle informazioni di prodotto - Interfaccia touch {#editing-product-information-touch-optimized-ui}
 
 1. Tramite la console **Prodotti** (tramite **Commerce**) puoi accedere alle informazioni sul prodotto.
 1. \nEffettuate una delle seguenti operazioni:
@@ -183,7 +182,7 @@ Per ogni tipo di prodotto distinto è necessaria una pagina di scaffolding. La p
 
 1. Verranno visualizzati gli [attributi del prodotto](/help/commerce/cif-classic/administering/concepts.md#product-attributes). Utilizza **Modifica** e **Fine** per apportare eventuali modifiche.
 
-### Visualizzazione dei riferimenti dei prodotti {#showing-product-references}
+### Visualizzazione dei riferimenti al prodotto {#showing-product-references}
 
 #### Visualizzazione dei riferimenti dei prodotti - Interfaccia touch {#showing-product-references-touch-optimized-ui}
 
@@ -320,9 +319,9 @@ Il meccanismo per selezionare l&#39;immagine da visualizzare è il seguente:
 1. Tocca o fai clic su **Fine**.
 1. [](#rolling-out-a-catalog) Rollout delle modifiche.
 
-### Pubblicazione/annullamento della pubblicazione delle informazioni sul prodotto {#publishing-unpublishing-product-information}
+### Pubblicazione/annullamento della pubblicazione delle informazioni di prodotto {#publishing-unpublishing-product-information}
 
-#### Pubblicazione/annullamento della pubblicazione delle informazioni sul prodotto - Interfaccia touch {#publishing-unpublishing-product-information-touch-optimized-ui}
+#### Pubblicazione/annullamento della pubblicazione delle informazioni di prodotto - Interfaccia touch {#publishing-unpublishing-product-information-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -372,7 +371,7 @@ Puoi visualizzarli nella console Web in eventi OSGI ( `/system/console/events`),
 
 >[!NOTE]
 >
->Leggi anche [Gestione eventi in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Leggi anche [Gestione eventi in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### Immagine con collegamenti Aggiungi al carrello {#image-with-add-to-cart-links}
 
@@ -655,7 +654,7 @@ Nel sito demo (Geometrixx Outdoors - Inglese) potete vedere il modulo del vouche
 >
 >Le informazioni sull&#39;ordine del cliente vengono conservate nelle loro directory principali ed esposte dalla cronologia degli ordini per il loro account. Queste informazioni vengono pubblicate insieme al resto della loro home directory.
 
-### Creazione di informazioni ordine {#creating-order-information}
+### Creazione di informazioni sull&#39;ordine {#creating-order-information}
 
 #### Creazione di informazioni sull’ordine - Interfaccia touch {#creating-order-information-touch-optimized-ui}
 
