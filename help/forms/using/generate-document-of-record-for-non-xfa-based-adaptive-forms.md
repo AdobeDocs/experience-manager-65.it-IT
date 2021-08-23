@@ -9,15 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Moduli adattivi
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 3%
+source-wordcount: '3508'
+ht-degree: 2%
 
 ---
-
 
 # Genera documento di record per i moduli adattivi{#generate-document-of-record-for-adaptive-forms}
 
@@ -31,7 +30,7 @@ Questo articolo spiega come generare un documento di record per i moduli adattiv
 >
 >La generazione automatica del documento di record non è supportata per i moduli adattivi basati su XFA. Tuttavia, è possibile utilizzare XDP utilizzato per creare il modulo adattivo come documento di record.
 
-## Tipi di moduli adattivi e relativi documenti di record {#adaptive-form-types-and-their-documents-of-record}
+## Tipi di moduli adattivi e relativi documenti di registrazione {#adaptive-form-types-and-their-documents-of-record}
 
 Quando si crea un modulo adattivo, è possibile selezionare un modello di modulo. Le opzioni disponibili sono:
 
@@ -61,7 +60,7 @@ Il documento generato automaticamente presenta i seguenti vantaggi:
 * Consente di provare stili e aspetto diversi utilizzando diversi modelli di base e scegliere lo stile e l&#39;aspetto migliori per il documento di record. Gli stili sono facoltativi e, se non si specifica lo stile, gli stili di sistema sono impostati come predefiniti.
 * In questo modo qualsiasi modifica del modulo viene immediatamente riflessa nel documento di registrazione.
 
-## Componenti per generare automaticamente un documento di record {#components-to-automatically-generate-a-document-of-record}
+## Componenti per generare automaticamente un documento di registrazione {#components-to-automatically-generate-a-document-of-record}
 
 Per generare un documento di record per i moduli adattivi, sono necessari i seguenti componenti:
 
@@ -208,13 +207,13 @@ Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono
 
 I componenti della tabella dei moduli adattivi, come intestazione, piè di pagina e mappa di riga, vengono associati ai componenti XFA corrispondenti. È possibile mappare pannelli ripetibili su tabelle nel documento di registrazione.
 
-## Modello di base di un documento di record {#base-template-of-a-document-of-record}
+## Modello di base di un documento di registrazione {#base-template-of-a-document-of-record}
 
 Il modello di base fornisce informazioni sullo stile e l&#39;aspetto del documento di record. Consente di personalizzare l&#39;aspetto predefinito del documento di record generato automaticamente. Ad esempio, aggiungere il logo della società nell’intestazione e le informazioni sul copyright nel piè di pagina del documento di registrazione. La pagina master del modello di base viene utilizzata come pagina master per il modello di documento. La pagina master può contenere informazioni quali intestazione di pagina, piè di pagina e numero di pagina che è possibile applicare al documento di record. È possibile applicare tali informazioni al documento di registrazione utilizzando il modello di base per la generazione automatica del documento di record. L’utilizzo del modello base consente di modificare le proprietà predefinite dei campi.
 
 Seguire le [convenzioni di base del modello](#base-template-conventions) quando si progetta il modello di base.
 
-## Convenzioni del modello di base {#base-template-conventions}
+## Convenzioni dei modelli di base {#base-template-conventions}
 
 Un modello di base viene utilizzato per definire intestazione, piè di pagina, stile e aspetto di un documento di record. L’intestazione e il piè di pagina possono includere informazioni quali il logo dell’azienda e il testo del copyright. La prima pagina master del modello base viene copiata e utilizzata come pagina master per il documento del record, che contiene intestazione, piè di pagina, numero di pagina o qualsiasi altra informazione che deve essere visualizzata in tutte le pagine del documento del record. Se si utilizza un modello di base non conforme alle convenzioni del modello di base, la prima pagina master del modello di base viene ancora utilizzata nel modello di documento. Si consiglia vivamente di progettare il modello di base in base alle sue convenzioni e di utilizzarlo per la generazione automatica del documento di registrazione.
 
@@ -293,7 +292,7 @@ Per configurare un documento di record per i moduli adattivi, effettua le seguen
 
 1. Fare clic su **Fine.**
 
-## Personalizzare le informazioni sul marchio nel documento di record {#customize-the-branding-information-in-document-of-record}
+## Personalizzare le informazioni sul marchio nel documento di registrazione {#customize-the-branding-information-in-document-of-record}
 
 Durante la generazione di un documento di record, è possibile modificare le informazioni di branding per il documento di record nella scheda Documento di record. La scheda Documento di record include opzioni quali logo, aspetto, layout, intestazione e piè di pagina, liberatoria e se si desidera includere o meno le opzioni della casella di controllo e dei pulsanti di scelta non selezionati.
 
@@ -322,6 +321,12 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
    * **Includi oggetti modulo non associati a modelli dati**
    * **Escludere i campi nascosti dal documento del record**
    * **Nascondi descrizione pannelli**
+
+   Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nella sezione **[!UICONTROL content]** della scheda **[!UICONTROL Document of Record]** .
+
+   ![Proprietà pagina master](assets/master-page-properties.png)
+
+   Le proprietà della pagina master includono Immagine logo, Testo intestazione, Titolo modulo, Etichetta liberatoria e Testo liberatoria. È possibile applicare le proprietà del modello XDP o del modulo adattivo al documento di record. Per impostazione predefinita, AEM Forms applica le proprietà del modello al documento di record. È inoltre possibile definire valori personalizzati per le proprietà della pagina master. Per informazioni su come applicare più pagine master in un documento di record, vedere [Applicare più pagine master a un documento di record](#apply-multiple-master-pages-dor).
 
    >[!NOTE]
    >
@@ -368,13 +373,70 @@ Il documento delle impostazioni di record di un componente è disponibile sotto 
 * **Visualizza il pannello come tabella:** l’impostazione della proprietà mostra il pannello come tabella nel documento di registrazione se il pannello contiene meno di 6 campi. Applicabile solo al pannello.
 * **Escludi titolo dal documento di record:** l&#39;impostazione della proprietà esclude il titolo del pannello/tabella dal documento di record. Applicabile solo ai pannelli e alle tabelle.
 * **Escludi descrizione dal documento di record:** l&#39;impostazione della proprietà esclude la descrizione del pannello/tabella dal documento di record. Applicabile solo ai pannelli e alle tabelle.
+* **[!UICONTROL Impaginazione]**  >  **[!UICONTROL Luogo]**: Determina la posizione in cui si seleziona di posizionare il pannello.
+   * **[!UICONTROL Inserisci]**  >  **[!UICONTROL Seguente Precedente]**: Posiziona il pannello dopo l’oggetto precedente nel pannello principale.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Nell’area contenuto]**  > Nome dell’area contenuto: Posiziona il pannello nell’area di contenuto specificata.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Parte superiore dell’area]** di contenuto successiva: Posiziona il pannello nella parte superiore dell’area di contenuto successiva.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Parte superiore dell’area contenuto]**  > Nome dell’area contenuto: Posiziona il pannello nella parte superiore dell’area di contenuto specificata.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Sulla pagina]**  > Nome della pagina master: Posiziona il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Parte superiore pagina]** successiva: Posiziona il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Posiziona]**  >  **[!UICONTROL Parte superiore pagina]**  > Nome della pagina master: Posiziona il pannello nella parte superiore della pagina quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+* **[!UICONTROL Impaginazione]**  >  **[!UICONTROL Dopo]**: Determina l’area da compilare dopo l’inserimento di un pannello. Nella sezione  **** Successivo sono disponibili i campi seguenti:
+   * **[!UICONTROL Dopo]**  >  **[!UICONTROL Continua riempimento padre]**: Continua l’unione dei dati per tutti gli oggetti da riempire nel pannello principale.
+   * **[!UICONTROL Dopo]**  >  **[!UICONTROL Vai all’area]** di contenuto successiva: Inizia a riempire l’area di contenuto successiva dopo il posizionamento del pannello.
+   * **[!UICONTROL Dopo]**  >  **[!UICONTROL Vai all’area contenuto]**  > Nome dell’area contenuto: Inizia a riempire l’area di contenuto specificata dopo il posizionamento del pannello.
+   * **[!UICONTROL Dopo]**  >  **[!UICONTROL Vai alla pagina]** successiva: Inizia a riempire la pagina successiva dopo aver posizionato il pannello.
+   * **[!UICONTROL Dopo]**  >  **[!UICONTROL Vai a pagina]**  > Nome della pagina: Inizia a riempire la pagina specificata dopo il posizionamento del pannello.
+* **[!UICONTROL Impaginazione]**  >  **[!UICONTROL Overflow]**: Imposta un overflow per un pannello o una tabella che si estende su più pagine. I campi seguenti sono disponibili nella sezione **[!UICONTROL Overflow]** :
+   * **[!UICONTROL Overflow]**  >  **[!UICONTROL Nessuno]**: Inizia a riempire la pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Overflow]**  >  **[!UICONTROL Vai all’area]**  contenuto > Nome dell’area contenuto: Inizia a riempire l&#39;area di contenuto specificata.
+   * **[!UICONTROL Overflow]**  >  **[!UICONTROL Vai a pagina]**  > Nome della pagina: Inizia a riempire la pagina specificata.
+
+Per informazioni su come applicare interruzioni di pagina e applicare più pagine master in un documento di record, vedere [Applicare un&#39;interruzione di pagina in un documento di record](#apply-page-breaks-in-dor) e [Applicare più pagine master a un documento di record](#apply-multiple-master-pages-dor).
 
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** l’impostazione della proprietà include campi non associati di un modulo adattivo basato su schema nel documento di record. Per impostazione predefinita è true.
 * **Escludi i campi dal DoR se nascosti:** l’impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è vera. Se i campi sono nascosti al momento dell’invio del modulo, verranno esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata.
 
-## Considerazioni chiave durante l&#39;utilizzo del documento di record {#key-considerations-when-working-with-document-of-record}
+## Applicazione di un&#39;interruzione di pagina in un documento di registrazione {#apply-page-breaks-in-dor}
+
+È possibile applicare interruzioni di pagina in un documento di record utilizzando più metodi.
+
+Per applicare un&#39;interruzione di pagina a un documento di record:
+
+1. Tocca il pannello e seleziona ![Configura](assets/configure-icon.svg).
+
+1. Espandi **[!UICONTROL Documento di record]** per visualizzare le proprietà.
+
+1. Nella sezione **[!UICONTROL Impaginazione]**, tocca ![Cartella](assets/folder-icon.svg) nel campo **[!UICONTROL Posiziona]** .
+1. Tocca **[!UICONTROL Parte superiore della pagina successiva]** e tocca **[!UICONTROL Seleziona]**. Puoi anche toccare **[!UICONTROL Parte superiore pagina]**, selezionare la pagina master e toccare **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
+1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+
+Il pannello selezionato si sposta sulla pagina successiva.
+
+## Applicare più pagine master a un documento di record {#apply-multiple-master-pages-dor}
+
+Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nella sezione [!UICONTROL content] della scheda [!UICONTROL Document of Record] . Per ulteriori informazioni, consulta [Personalizzare le informazioni di branding nel documento Record](#customize-the-branding-information-in-document-of-record).
+
+È possibile applicare più pagine master a un documento di record applicando diverse pagine master ai componenti di un modulo adattivo. Utilizzare la sezione [Impaginazione](#document-of-record-settings) delle proprietà del documento di record per applicare più pagine master.
+
+Di seguito è riportato un esempio di come applicare più pagine master a un documento di record:
+Puoi caricare un modello XDP che include quattro pagine master sul server [!DNL AEM Forms] . [!DNL AEM Forms] applica le proprietà del modello al documento di record per impostazione predefinita. [!DNL AEM Forms] applica anche le proprietà della prima pagina master del modello al documento di record.
+
+Per applicare le proprietà della seconda pagina master a un pannello e le proprietà della terza pagina master ai pannelli seguenti, eseguire la procedura seguente:
+
+1. Toccare il pannello per applicare la seconda pagina master e selezionare ![Configura](assets/configure-icon.svg).
+1. Nella sezione **[!UICONTROL Impaginazione]**, tocca ![Cartella](assets/folder-icon.svg) nel campo **[!UICONTROL Posiziona]** .
+1. Tocca **[!UICONTROL Sulla pagina]**, seleziona la seconda pagina master e tocca **[!UICONTROL Seleziona]**.
+AEM Forms applica la seconda pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
+1. Nella sezione **[!UICONTROL Impaginazione]**, tocca ![Cartella](assets/folder-icon.svg) nel campo **[!UICONTROL Dopo]** .
+1. Tocca **[!UICONTROL Vai a pagina]**, seleziona la terza pagina master e tocca **[!UICONTROL Seleziona]**.
+1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+AEM Forms applica la terza pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
+
+
+## Considerazioni chiave durante l&#39;utilizzo del documento di registrazione {#key-considerations-when-working-with-document-of-record}
 
 Quando si lavora su un documento di record per i moduli adattivi, tenere presente le considerazioni e le limitazioni seguenti.
 
@@ -382,4 +444,3 @@ Quando si lavora su un documento di record per i moduli adattivi, tenere present
 * I frammenti di documento in un modulo adattivo non vengono visualizzati nel documento di registrazione. Tuttavia, i frammenti di modulo adattivo sono supportati.
 * Il binding del contenuto nel documento di record generato per il modulo adattivo basato su schema XML non è supportato.
 * La versione localizzata del documento di record viene creata su richiesta per un&#39;impostazione internazionale quando l&#39;utente richiede il rendering del documento di record. La localizzazione del documento di record avviene insieme alla localizzazione del modulo adattivo. Per ulteriori informazioni sulla localizzazione di documenti di record e moduli adattivi, vedere [Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
-
