@@ -3,11 +3,11 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzare le risorse disponibili in una distribuzione remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 role: User, Admin, Leader
-feature: Risorse, utenti e gruppi collegati
+feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2732'
 ht-degree: 29%
 
 ---
@@ -41,7 +41,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e utilizzano le risorse cercate nell’Editor pagina. I documenti vengono aggiunti al componente `Download` e le immagini al componente `Image` . Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente [!DNL Experience Manager] personalizzato che estenda i componenti predefiniti `Download` o `Image` . I formati supportati sono:
 
-* **Formati** immagine: Formati supportati dal componente  [Immagine ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) . [!DNL Dynamic Media] le immagini non sono supportate.
+* **Formati** immagine: Formati supportati dal componente  [Immagine ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) .
 * **Formati** documento: Vedere i formati di documento  [supportati](assets-formats.md#supported-document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -188,7 +188,7 @@ Per visualizzare e gestire i riferimenti nella distribuzione [!DNL Assets], effe
 * Le risorse locali non vengono sincronizzate con le risorse originali nell’implementazione remota. Eventuali modifiche, eliminazioni o revoche delle autorizzazioni nell’implementazione DAM non vengono propagate downstream.
 * Le risorse locali sono copie in sola lettura. [!DNL Experience Manager]I componenti apportano modifiche non distruttive alle risorse. Non sono consentite altre modifiche.
 * Le risorse recuperate localmente sono disponibili solo a scopo di authoring. I flussi di lavoro di aggiornamento delle risorse non possono essere applicati e i metadati non possono essere modificati.
-* Sono supportati solo le immagini e i formati di documento elencati. [!DNL Dynamic Media] le risorse  [!DNL Content Fragments] e non  [!DNL Experience Fragments] sono supportate.
+* Sono supportati solo le immagini e i formati di documento elencati. [!DNL Content Fragments] e non  [!DNL Experience Fragments] sono supportati.
 * [!DNL Experience Manager] non recupera gli schemi di metadati. Ciò significa che potrebbero non essere visualizzati tutti i metadati recuperati. Se lo schema viene aggiornato separatamente nella distribuzione [!DNL Sites], vengono visualizzate tutte le proprietà dei metadati.
 * Tutti gli autori [!DNL Sites] dispongono delle autorizzazioni di lettura sulle copie recuperate, anche se gli autori non possono accedere alla distribuzione remota di DAM.
 * Nessun supporto API per personalizzare l’integrazione.

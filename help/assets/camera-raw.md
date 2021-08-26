@@ -1,18 +1,18 @@
 ---
-title: '[!DNL Adobe Camera Raw] supporto.'
-description: Scopri come abilitare il supporto [!DNL Adobe Camera Raw] in [!DNL Adobe Experience Manager Assets].
+title: '[!DNL Adobe Camera Raw] supporto per l’elaborazione delle risorse digitali'
+description: Scopri come abilitare il supporto [!DNL Adobe Camera Raw] in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 3%
 
 ---
 
-# Consente di elaborare le immagini con Camera Raw {#camera-raw-support}
+# Elabora immagini utilizzando [!DNL Adobe Camera Raw] {#camera-raw-support}
 
 È possibile abilitare il supporto [!DNL Adobe Camera Raw] per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata in [!DNL Adobe Experience Manager Assets] utilizzando il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile da Distribuzione software.
 
@@ -22,9 +22,9 @@ ht-degree: 3%
 
 Per abilitare il supporto [!DNL Camera Raw] in [!DNL Experience Manager Assets], procedi come segue:
 
-1. Scarica il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dalla Distribuzione di software.
+1. Scarica il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) da [!DNL Software Distribution].
 1. Accesso `https://[aem_server]:[port]/workflow`. Apri il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
-1. Apri il passaggio **[!UICONTROL Elabora miniature]** .
+1. Modifica il passaggio **[!UICONTROL Elabora miniature]** .
 1. Fornisci la seguente configurazione nella scheda **[!UICONTROL Miniature]** :
 
    * **[!UICONTROL Miniature]**:  `140:100:false, 48:48:false, 319:319:false`
@@ -36,7 +36,7 @@ Per abilitare il supporto [!DNL Camera Raw] in [!DNL Experience Manager Assets],
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Dal pannello laterale, aggiungi il passaggio **[!UICONTROL Camera Raw/DNG Handler]** sotto il passaggio **[!UICONTROL Creazione miniature]** .
+1. Dal pannello laterale, aggiungi il passaggio **[!UICONTROL Camera Raw/DNG Handler]** sotto il passaggio **[!UICONTROL Elabora miniature]** .
 1. Nel passaggio **[!UICONTROL Camera Raw/DNG Handler]** , aggiungi la seguente configurazione nella scheda **[!UICONTROL Argomenti]** :
 
    * **[!UICONTROL Tipi]** MIME:  `image/dng` e  `image/x-raw-(.*)`

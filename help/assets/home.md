@@ -2,12 +2,12 @@
 title: Guida di Assets
 description: Questa guida descrive tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 user-guide-title: Guida di Assets
-feature: Gestione risorse
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '333'
 ht-degree: 20%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 20%
 Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 
 ## Articoli chiave [!DNL Experience Manager]
-
-<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
--->
 
 * [Note sulla versione di Experience Manager 6.5](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
