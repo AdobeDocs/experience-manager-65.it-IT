@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 26%
@@ -116,7 +116,7 @@ Puoi controllare la connettività tra le distribuzioni [!DNL Sites] configurate 
 ![Prova di connessione delle risorse collegate configurate  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *nella figura: Test di connessione delle risorse collegate configurate  [!DNL Sites].*
 
-### Configurare una connessione per le risorse multimediali dinamiche{#sites-dynamic-media-connected-assets}
+### Configurare una connessione per le risorse multimediali dinamiche {#sites-dynamic-media-connected-assets}
 
 È possibile configurare una connessione tra la distribuzione [!DNL Sites] e la distribuzione [!DNL Dynamic Media] che consente agli autori di pagine web di utilizzare le immagini [!DNL Dynamic Media] nelle proprie pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e di distribuzioni remote [!DNL Dynamic Media] rimane lo stesso.
 
