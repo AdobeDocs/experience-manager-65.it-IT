@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
+source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '2732'
+ht-degree: 29%
 
 ---
 
@@ -20,7 +20,7 @@ La funzionalità Risorse collegate supporta il caso d’uso precedente integrand
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
-Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione di destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di una diversa distribuzione [!DNL Assets] che funge da origine delle risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Sites] con un’altra distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Assets]. Gli autori del sito possono inoltre utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Media, ad esempio ritaglio avanzato e predefiniti immagine.
+Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione di destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di una diversa distribuzione [!DNL Assets] che funge da origine delle risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Sites] con un’altra distribuzione di [!DNL Experience Manager] con funzionalità [!DNL Assets].
 
 Per gli autori [!DNL Sites] , le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. Per rendere disponibili molte risorse remote in una distribuzione [!DNL Sites] con una sola operazione, è consigliabile eseguire la migrazione delle risorse in massa. Consulta [Guida alla migrazione di Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -115,25 +115,6 @@ Puoi controllare la connettività tra le distribuzioni [!DNL Sites] configurate 
 
 ![Prova di connessione delle risorse collegate configurate  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *nella figura: Test di connessione delle risorse collegate configurate  [!DNL Sites].*
-
-### Configurare una connessione per le risorse multimediali dinamiche {#sites-dynamic-media-connected-assets}
-
-È possibile configurare una connessione tra la distribuzione [!DNL Sites] e la distribuzione [!DNL Dynamic Media] che consente agli autori di pagine web di utilizzare le immagini [!DNL Dynamic Media] nelle proprie pagine web. Durante l’authoring delle pagine web, l’utilizzo di risorse remote e di distribuzioni remote [!DNL Dynamic Media] rimane lo stesso.
-
-Per configurare la funzionalità Risorse collegate per le distribuzioni di contenuti multimediali dinamici, effettua le seguenti operazioni:
-
-1. Abilita e configura [!DNL Dynamic Media] come configurazione globale nella distribuzione [!DNL Assets] remota dell&#39;autore. Per configurare Dynamic Media, consulta [Configurare Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
-Nella  [!DNL Assets] distribuzione remota, in modalità [!UICONTROL  di sincronizzazione ]Dynamic Media, selezionare  **[!UICONTROL Abilitato per impostazione predefinita]**.
-
-1. Crea la configurazione delle risorse collegate come descritto in [Configura la connessione tra le distribuzioni di siti e risorse](#configure-a-connection-between-sites-and-assets-deployments). Inoltre, seleziona l’opzione **[!UICONTROL Recupera rappresentazione originale per Dynamic Media Connected Assets]** .
-
-1. Configurare [!DNL Dynamic Media] sulle distribuzioni locali [!DNL Sites] e remote [!DNL Assets]. Segui le istruzioni per [configurare [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
-
-   * Usa lo stesso nome società in tutte le configurazioni.
-   * In [!DNL Sites] locale, in [!UICONTROL Modalità di sincronizzazione Dynamic Media], selezionare **[!UICONTROL Disabilitata per impostazione predefinita]**. La distribuzione [!DNL Sites] richiede solo l&#39;accesso in sola lettura all&#39;account [!DNL Dynamic Media].
-   * In locale [!DNL Sites], nell&#39;opzione **[!UICONTROL Pubblica risorse]**, seleziona **[!UICONTROL Pubblicazione selettiva]**. Non selezionare **[!UICONTROL Sincronizza tutto il contenuto]**.
-
-1. Abilita il supporto di [[!DNL Dynamic Media] in Componente di base immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Questa funzione consente al componente immagine [componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) predefinito di visualizzare le immagini [!DNL Dynamic Media] quando gli autori utilizzano le immagini [!DNL Dynamic Media] nelle pagine web nella distribuzione locale [!DNL Sites].
 
 ## Utilizzare le risorse remote {#use-remote-assets}
 
@@ -245,6 +226,3 @@ Per risolvere eventuali errori comuni, procedi come segue:
 * Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, verifica se la distribuzione [!DNL Sites] è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] l&#39;implementazione tenta due volte di stabilire la connessione con  [!DNL Sites] l&#39;implementazione e quindi segnala un errore.
 
    ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
-
-
-

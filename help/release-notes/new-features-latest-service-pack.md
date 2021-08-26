@@ -4,9 +4,9 @@ description: Novità in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
 workflow-type: tm+mt
-source-wordcount: '3983'
+source-wordcount: '3974'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager] 6.5 I Service Pack forniscono nuove funzionalità, miglioramenti richiesti dai clienti e miglioramenti a livello di prestazioni, stabilità e sicurezza a intervalli trimestrali. La disponibilità trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
 
 Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [funzionalità chiave incluse nei Service Pack 6.5](#key-features-previous-service-packs) precedenti e nelle [versioni chiave dall&#39;ultima versione di Service Pack](#key-releases-since-last-sp).
+
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -40,13 +41,13 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
 
 * [!DNL Experience Manager] estende la funzionalità Risorse collegate all’utilizzo di  [!DNL Dynamic Media] immagini nei componenti core applicabili. Consulta [Utilizzare le risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Quando condividi singole risorse e raccolte come collegamento (utilizzando la finestra di dialogo [!UICONTROL Condivisione collegamenti] ), gli utenti possono scegliere se consentire al destinatario di scaricare le risorse originali, le relative rappresentazioni o entrambi. Consulta [Condividere le risorse tramite link](/help/assets/link-sharing.md).
+* Quando condividi singole risorse e raccolte come collegamento (utilizzando la finestra di dialogo [!UICONTROL Condivisione collegamenti] ), gli utenti possono scegliere se consentire al destinatario di scaricare le risorse originali, le relative rappresentazioni o entrambi.
 
-   ![per consentire il download solo delle risorse originali, solo delle rappresentazioni o di entrambe](/help/release-notes/assets/share-assets-as-link.png)
+   ![per scaricare solo le risorse originali, solo le rappresentazioni o entrambi](/help/assets/assets/share-renditions.png)
 
 * Quando gli utenti scaricano le risorse condivise con loro come collegamento, possono scegliere di scaricare le risorse originali, le rappresentazioni o entrambi.
 
-* **Limita le risorse secondarie generate**: Gli amministratori possono limitare il numero di risorse secondarie  [!DNL Experience Manager] generate per risorse composte come file PDF, PowerPoint, InDesign e Keynote.
+* Gli amministratori possono limitare il numero di risorse secondarie generate da [!DNL Experience Manager] per risorse composte come file PDF, PowerPoint, InDesign e Keynote.
 
    ![limitare la generazione di risorse secondarie](/help/assets/assets/sub-asset-limit.png)
 
@@ -448,9 +449,9 @@ Puoi utilizzare l’API Batch per produrre più comunicazioni interattive da un 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Versioni chiave da [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
+## Versioni chiave da [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
 
-Tra il 27 maggio 2021 e il 26 agosto 2021, Adobe ha rilasciato quanto segue, oltre ai Service Pack:
+Tra il 25 febbraio 2021 e il 27 maggio 2021, Adobe ha rilasciato quanto segue, oltre ai Service Pack:
 
 * [!DNL Adobe Experience Manager] come Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) e  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
