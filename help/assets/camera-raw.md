@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Per abilitare il supporto [!DNL Camera Raw] in [!DNL Experience Manager Assets], procedi come segue:
 
-1. Scarica il [pacchetto Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) da [!DNL Software Distribution].
+1. Scarica il [[!DNL Camera Raw] pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) da [!DNL Software Distribution].
 1. Accesso `https://[aem_server]:[port]/workflow`. Apri il flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
 1. Modifica il passaggio **[!UICONTROL Elabora miniature]** .
 1. Fornisci la seguente configurazione nella scheda **[!UICONTROL Miniature]** :
