@@ -3,12 +3,12 @@ title: Condividere le risorse tramite un collegamento
 description: Condividi risorse, cartelle e raccolte come URL.
 contentOwner: AG
 role: User
-feature: Condivisione collegamenti, Gestione risorse
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 5%
+source-wordcount: '998'
+ht-degree: 6%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 5%
 
 ## Condividere le risorse {#share-assets}
 
-Per generare l’URL per le risorse che desideri condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti . Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro.
+Per generare l’URL per le risorse che desideri condividere con gli utenti, utilizza la finestra di dialogo [!UICONTROL Condivisione collegamenti] . Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro.
 
 1. Nell’interfaccia utente di [!DNL Assets] , seleziona la risorsa da condividere come collegamento.
-1. Dalla barra degli strumenti, fai clic sull&#39;icona **[!UICONTROL Condividi collegamento]** ![Condividi risorse](assets/do-not-localize/assets_share.png). Il collegamento che verrà creato dopo aver fatto clic su **[!UICONTROL Condividi]** viene visualizzato in anticipo nel campo [!UICONTROL Condividi collegamento] . Il collegamento non viene ancora creato finché non si fa clic su **[!UICONTROL Invia]**.
 
-   ![Finestra di dialogo con Condivisione collegamenti](assets/Link-sharing-dialog-box.png)
+1. Dalla barra degli strumenti, fai clic sull&#39;icona **[!UICONTROL Condividi collegamento]** ![Condividi risorse](assets/do-not-localize/assets_share.png). Il collegamento che verrà creato dopo aver fatto clic su **[!UICONTROL Condividi]** viene visualizzato in anticipo nel campo [!UICONTROL Condividi collegamento] . Il collegamento viene creato solo se si seleziona **[!UICONTROL Invia]**.
+
+   ![Finestra di dialogo con Condivisione collegamenti](/help/assets/assets/share-assets-as-link.png)
 
    *Figura: Finestra di dialogo per condividere le risorse come collegamento.*
 
 1. Nella casella dell’indirizzo e-mail della finestra di dialogo **[!UICONTROL Condivisione collegamenti]**, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi aggiungere uno o più utenti.
-
-   ![Condividere i collegamenti alle risorse direttamente dalla finestra di dialogo Condivisione collegamenti](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Figura: Condividi i collegamenti alle risorse direttamente dalla finestra di dialogo  [!UICONTROL Collegamento ] condivisione.*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Per generare l’URL per le risorse che desideri condividere con gli utenti, uti
 
    ![Imposta data di scadenza del collegamento condiviso](assets/Set-shared-link-expiration.png)
 
-1. Per consentire agli utenti di scaricare la risorsa originale insieme alle rappresentazioni, seleziona **[!UICONTROL Consenti download del file originale]**. Per impostazione predefinita, gli utenti possono scaricare solo le rappresentazioni della risorsa che condividi come collegamento.
+1. Per consentire agli utenti di scaricare la risorsa originale, seleziona **[!UICONTROL Consenti download del file originale]**. Per consentire agli utenti di scaricare solo i rendering delle risorse condivise, seleziona **[!UICONTROL Consenti download di rappresentazioni di file]**.
 
 1. Fate clic su **[!UICONTROL Condividi]**. Un messaggio conferma che il collegamento è condiviso con gli utenti tramite e-mail.
 

@@ -3,11 +3,11 @@ title: Gestire le risorse composte con riferimenti e pagine multiple
 description: Scopri come creare riferimenti a risorse digitali da [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare le singole pagine delle risorse secondarie di file multipagina, come file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
-feature: Gestione risorse
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,10 @@ Per generare le risorse secondarie, effettua una delle seguenti operazioni:
    * Seleziona una risorsa e fai clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, seleziona [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro, fai clic su [!UICONTROL Avvia] e fai clic su [!UICONTROL Procedi].
 
 Specificamente per i documenti Microsoft Word, eseguire il flusso di lavoro **[!UICONTROL DAM Parse Word Documents]**. Viene generato un componente `cq:Page` dal contenuto del documento di Microsoft Word. Le immagini estratte dal documento sono referenziate dal componente `cq:Page` . Queste immagini vengono estratte anche se la generazione di risorse secondarie è disabilitata.
+
+>[!NOTE]
+>
+>In [!UICONTROL Crea processo risorsa secondaria - Proprietà passaggio] in [!UICONTROL Argomenti processo], puoi specificare il numero di risorse secondarie generate da [!DNL Experience Manager]. Il valore predefinito è 5. Per generare tutte le risorse secondarie, lascia vuoto il campo . Se il campo è negativo, non vengono generate risorse secondarie.
 
 ## Visualizzare le risorse secondarie {#viewing-subassets}
 

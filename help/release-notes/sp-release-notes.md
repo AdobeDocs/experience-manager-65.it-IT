@@ -4,9 +4,9 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3652'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * **Opzioni di condivisione dei collegamenti per scaricare risorse o rappresentazioni**: Quando condividi risorse e raccolte come collegamento, gli utenti possono scegliere se consentire il download delle risorse originali o delle relative rappresentazioni, oppure entrambi utilizzando il collegamento condiviso. Inoltre, gli utenti che scaricano le risorse condivise con loro tramite un collegamento possono scaricare solo le risorse originali, solo le rappresentazioni o entrambi.
 
-* **Limita le risorse secondarie generate**: Gli amministratori possono limitare il numero di risorse secondarie  [!DNL Experience Manager] generate per risorse composte come file PDF, PowerPoint, InDesign e Keynote.
+* **Limita le risorse secondarie generate**: Gli amministratori possono limitare il numero di risorse secondarie  [!DNL Experience Manager] generate per risorse composte come file PDF, PowerPoint, InDesign e Keynote. Consulta [Gestire le risorse composte](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Supporto** Camera Raw: È disponibile un nuovo  [!DNL Camera Raw] pacchetto che supporta la  [!DNL Adobe Camera Raw] versione 10.4. Consulta  [elaborare le immagini utilizzando [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
