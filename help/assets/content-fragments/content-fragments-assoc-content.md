@@ -1,28 +1,18 @@
 ---
 title: Contenuto associato
-seo-title: Contenuto associato
-description: Il contenuto associato fornisce la connessione in modo che le risorse possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
-seo-description: Il contenuto associato fornisce la connessione in modo che le risorse possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
-uuid: 0b79e45a-14b7-40e3-8b6c-456a83d215d5
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
-docset: aem65
-feature: Frammenti di contenuto
-role: User, Admin
-exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Scopri in che modo AEM funzione di contenuto associato fornisce la connessione in modo che le risorse possano essere utilizzate facoltativamente con il frammento quando viene aggiunto a una pagina di contenuto, aggiungendo ulteriore flessibilità alla distribuzione di contenuto headless.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 23%
+source-wordcount: '244'
+ht-degree: 14%
 
 ---
 
 # Contenuto associato{#associated-content}
 
-Il contenuto associato fornisce la connessione in modo che le risorse (ad es.) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto. Questo offre flessibilità [fornendo una serie di risorse a cui accedere quando si utilizza il frammento di contenuto su una pagina](/help/sites-authoring/content-fragments.md#using-associated-content), riducendo al contempo il tempo necessario per la ricerca della risorsa appropriata.
+AEM funzione Contenuto associato fornisce la connessione, in modo che le risorse possano essere facoltativamente utilizzate con il frammento quando viene aggiunto a una pagina di contenuto. Questo offre flessibilità per la distribuzione di contenuti headless [fornendo una serie di risorse a cui accedere quando si utilizza il frammento di contenuto in una pagina,](/help/sites-authoring/content-fragments.md#using-associated-content), riducendo al contempo il tempo necessario per la ricerca della risorsa appropriata.
 
 ## Aggiunta di contenuto associato {#adding-associated-content}
 
@@ -30,22 +20,26 @@ Il contenuto associato fornisce la connessione in modo che le risorse (ad es.) p
 >
 >Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
-Per creare l&#39;associazione è necessario [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una volta fatto questo è possibile:
+Per creare l&#39;associazione è necessario [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md). Una volta fatto questo è possibile:
 
 1. Apri il frammento e seleziona **Contenuto associato** dal pannello laterale.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![Contenuto associato](assets/cfm-assoc-content-01.png)
 
-1. Seleziona **Associa contenuto** o **Associa raccolta** (a seconda che siano già state associate o meno le raccolte).
+1. A seconda che siano già state associate o meno delle raccolte, seleziona una delle seguenti opzioni:
+
+   * **Contenuto associato** : sarà la prima raccolta associata
+   * **Raccolta associata** : le raccolte associate sono già configurate
+
 1. Seleziona la raccolta richiesta.
 
    Facoltativamente, è possibile aggiungere il frammento stesso alla raccolta selezionata; questo aiuta il tracciamento.
 
-   ![cfm-6420-04](assets/cfm-6420-04.png)
+   ![Seleziona raccolta](assets/cfm-assoc-content-02.png)
 
-1. Conferma (con il segno di spunta). La raccolta verrà elencata come associata.
+1. Confermare (con **Seleziona**). La raccolta verrà elencata come associata.
 
-   ![cfm-6420-05](assets/cfm-6420-05.png)
+   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
 ## Modifica del contenuto associato {#editing-associated-content}
 

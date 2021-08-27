@@ -1,42 +1,34 @@
 ---
 title: Varianti - Authoring dei contenuti di frammenti
-seo-title: Varianti - Authoring dei contenuti di frammenti
-description: Le varianti consentono di creare contenuti per il frammento, quindi di creare varianti di tali contenuti in base allo scopo (se necessario).
-seo-description: Le varianti consentono di creare contenuti per il frammento, quindi di creare varianti di tali contenuti in base allo scopo (se necessario).
-uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
-docset: aem65
-feature: Frammenti di contenuto
-role: User, Admin
-exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Scopri in che modo le varianti possono rendere i contenuti headless AEM ancora più flessibili consentendo di creare contenuti per il frammento, quindi di creare varianti di tali contenuti in base allo scopo.
+feature: Content Fragments
+role: User
+source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
 workflow-type: tm+mt
-source-wordcount: '1746'
-ht-degree: 16%
+source-wordcount: '2256'
+ht-degree: 13%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Le varianti sono una caratteristica significativa dei frammenti di contenuto, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici.
+[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Le varianti sono una caratteristica significativa AEM frammenti di contenuto, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless.
 
 Dalla scheda **Variazioni** è possibile:
 
-* [Immettere il ](#authoring-your-content) contenuto del frammento
-* [Creare e gestire ](#managing-variations) le varianti del contenuto  **** principale
+* [Inserisci il ](#authoring-your-content) contenuto del frammento,
+* [Creare e gestire ](#managing-variations) le varianti del contenuto  **** principale,
 
 Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifica; ad esempio:
 
 * [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment)  (immagini)
+
 * Seleziona tra [Rich Text](#rich-text), [Testo normale](#plain-text) e [Markdown](#markdown) per la modifica
 
 * [Carica contenuto](#uploading-content)
 
 * [Visualizzare le statistiche chiave](#viewing-key-statistics)  (informazioni sul testo su più righe)
+
 * [Testo riepilogo](#summarizing-text)
 
 * [Sincronizzare le varianti con il contenuto principale](#synchronizing-with-master)
@@ -47,37 +39,36 @@ Eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifi
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, la scheda **Variazioni** viene aperta per impostazione predefinita. Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Operazioni disponibili:
-
-* apportare modifiche direttamente nella scheda **Variazioni**
-* apri l&#39; [editor a schermo intero](#full-screen-editor) per:
-
-   * seleziona [Formato](#formats)
-   * ulteriori opzioni di modifica (per il formato [Rich Text](#rich-text))
-
-   * accedere a un intervallo di [azioni](#actions)
+Quando apri il frammento di contenuto per la modifica, la scheda **Variazioni** viene aperta per impostazione predefinita. Qui puoi creare il contenuto, per Master o qualsiasi variante disponibile. Il frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto.
 
 Esempio:
 
-* Modifica di un frammento semplice
+![](assets/cfm-variations-02.png)
+editor a schermo interoPuoi:
 
-   Un frammento semplice è costituito da un campo di testo a più righe (è possibile aggiungere risorse visive dall’editor a schermo intero).
+* apportare modifiche direttamente nella scheda **Variazioni**
 
-   ![cfm-6420-21](assets/cfm-6420-21.png)
+   * ogni tipo di dati offre diverse opzioni di modifica
 
-* Modifica di un frammento con contenuto strutturato
+* per i campi **Testo su più righe** è inoltre possibile aprire l’ [editor a schermo intero](#full-screen-editor) per:
 
-   Un frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto. Per tutti i campi con più righe è disponibile l’ [editor a schermo intero](#full-screen-editor).
+   * seleziona [Formato](#formats)
+   * ulteriori opzioni di modifica (per il formato [Rich Text](#rich-text))
+   * accedere a un intervallo di [azioni](#actions)
 
-   ![cfm-6420-16](assets/cfm-6420-16.png)
+* Per i campi **Riferimento frammento** , l’opzione **[Modifica frammento di contenuto](#fragment-references-edit-content-fragment)** può essere disponibile, a seconda della definizione del modello.
 
 ### Editor a schermo intero {#full-screen-editor}
 
-Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero:
+Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero; tocca o fai clic all’interno del testo effettivo, quindi seleziona la seguente icona di azione:
 
-![cf-fullscreeneditor-icon](assets/cf-fullscreeneditor-icon.png)
+![icona dell’editor a schermo intero](assets/cfm-variations-03.png)
 
-L’editor a schermo intero fornisce:
+Verrà aperto l’editor di testo a schermo intero:
+
+![editor a schermo intero](assets/cfm-variations-fullscreentexteditor.png)
+
+L’editor di testo a schermo intero fornisce:
 
 * Accesso a varie [azioni](#actions)
 * A seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Rich Text](#rich-text))
@@ -88,14 +79,13 @@ Sono disponibili anche le seguenti azioni (per tutti i [formati](#formats)) quan
 
 * Seleziona il [formato](#formats) ([Rich Text](#rich-text), [Testo normale,](#plain-text) [Markdown](#markdown))
 
+* [Caricare contenuto](#uploading-content)
+
 * [Mostra statistiche testo](#viewing-key-statistics)
 
-* [Caricare contenuto](#uploading-content)
 * [Sincronizza con principale](#synchronizing-with-master)  (durante la modifica di una variante)
-* [Testo riepilogo](#summarizing-text)
-* [](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) Annotazione del testo
 
-* [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment)  (immagini)
+* [Testo riepilogo](#summarizing-text)
 
 ### Formati {#formats}
 
@@ -119,16 +109,16 @@ La modifica Rich Text consente di formattare:
 * Elenco numerato
 * Rientro: aumento, diminuzione
 * Creare/interrompere collegamenti ipertestuali
+* Incolla testo/da Word
+* Inserire una tabella
+* Stile paragrafo: Paragrafo, Titolo 1/2/3
+* [Inserisci risorsa](#inserting-assets-into-your-fragment)
 * Apri l’editor a schermo intero, in cui sono disponibili le seguenti opzioni di formattazione:
-
-   * Incolla testo/da Word
-   * Inserire una tabella
-   * Stile paragrafo: Paragrafo, Titolo 1/2/3
-   * [Inserire risorse visive](#inserting-assets-into-your-fragment)
    * Ricerca
    * Trova/Sostituisci
    * Controllo ortografia
    * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Inserisci frammento](#inserting-content-fragment-into-your-fragment) di contenuto; disponibile quando il  **campo di** testo su più righe è configurato con  **Consenti riferimento frammento**.
 
 Le [azioni](#actions) sono accessibili anche dall’editor a schermo intero.
 
@@ -164,11 +154,48 @@ Puoi anche aprire l&#39;editor a schermo intero per ulteriori [azioni](#actions)
 >
 >Se passi da **Rich Text** a **Markdown**, potresti riscontrare effetti imprevisti con Block Quotes (Citazioni) e Code Blocks (Blocchi di codice), in quanto questi due formati possono presentare differenze nelle modalità di gestione.
 
+### Riferimenti ai frammenti {#fragment-references}
+
+Se il modello per frammenti di contenuto contiene riferimenti a frammento, gli autori dei frammenti potrebbero disporre di opzioni aggiuntive:
+
+* [Modifica frammento di contenuto](#fragment-references-edit-content-fragment)
+* [Nuovo frammento di contenuto](#fragment-references-new-content-fragment)
+
+![Riferimenti ai frammenti](assets/cfm-variations-12.png)
+
+#### Modifica frammento di contenuto {#fragment-references-edit-content-fragment}
+
+L’opzione **Modifica frammento di contenuto** aprirà il frammento in una nuova scheda della finestra.
+
+<!--
+The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+
+Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
+
+![Fragment References](assets/cfm-variations-editreference.png)
+-->
+
+#### Nuovo frammento di contenuto {#fragment-references-new-content-fragment}
+
+L’opzione **Nuovo frammento di contenuto** consente di creare un frammento completamente nuovo. A questo scopo, nell’editor si aprirà una variante della procedura guidata crea frammento di contenuto .
+
+Potrai quindi creare un nuovo frammento:
+
+1. Individuazione e selezione della cartella desiderata.
+1. Selezione di **Successivo**.
+1. Specificare le proprietà; ad esempio **Titolo**.
+1. Selezione di **Crea**.
+1. Infine:
+   1. **** Verrà restituito (al frammento originale) e verrà fatto riferimento al nuovo frammento.
+   1. **** Open fa riferimento al nuovo frammento e apre il nuovo frammento, in modalità di modifica, in una nuova scheda del browser.
+
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Esempio:
+Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo.
 
-![cfx-6420-22](assets/cfx-6420-22.png)
+Esempio:
+
+![statistiche](assets/cfm-variations-04.png)
 
 ### Caricamento del contenuto {#uploading-content}
 
@@ -184,25 +211,19 @@ Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezz
 
 >[!CAUTION]
 >
->Il frammento di contenuto deve avere come predecessore una cartella di lingua (codice ISO) valida; viene utilizzato per determinare il modello di lingua da utilizzare.
+>Il frammento di contenuto deve avere come predecessore una cartella di lingua valida (codice ISO); viene utilizzato per determinare il modello di lingua da utilizzare.
 >
 >Ad esempio, `en/` come nel seguente percorso:
 >
->`/content/dam/my-brand/en/path-down/my-content-fragment`
+>  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
->
->L&#39;inglese è disponibile come standard.
->
->Altre lingue sono disponibili come Pacchetti modello lingua da Distribuzione software:
->
->* [Francese (fr) da Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de) da Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it) da Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es) da Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
->
-
+L&#39;inglese è disponibile come standard.
+Altre lingue sono disponibili come Pacchetti modello lingua da Condivisione pacchetti:
+* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 1. Selezionare **Master** o la variante richiesta.
@@ -210,7 +231,7 @@ Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezz
 
 1. Seleziona **Riepiloga testo** dalla barra degli strumenti.
 
-   ![cf-17](assets/cf-17.png)
+   ![riepilogo](assets/cfm-variations-05.png)
 
 1. Specifica il numero di parole desiderato e seleziona **Start**:
 1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
@@ -219,23 +240,49 @@ Il testo di riepilogo è progettato per aiutare gli utenti a ridurre la lunghezz
    * Fai clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
    * Fai clic su una frase non evidenziata per eliminarla.
 
-   ![cfm-6420-23](assets/cfm-6420-23.png)
-
 1. Seleziona **Riepilogo** per confermare le modifiche.
+
+1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
+
+   * Tutte le frasi da eliminare sono evidenziate in rosso, con un click-through.
+   * Fai clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
+   * Fai clic su una frase non evidenziata per eliminarla.
+   * Vengono visualizzate le statistiche di riepilogo: **Effettivo** e **Target**-
+   * È possibile **visualizzare in anteprima** le modifiche.
+
+   ![confronto riepilogativo](assets/cfm-variations-06.png)
 
 ### Aggiunta di annotazioni a un frammento di contenuto {#annotating-a-content-fragment}
 
 Per annotare un frammento:
 
 1. Selezionare **Master** o la variante richiesta.
-1. Apri l’editor a schermo intero.
-1. Seleziona del testo. L&#39;icona **Annota** diventa disponibile.
 
-   ![cfm-6420-24](assets/cfm-6420-24.png)
+1. Apri l’editor a schermo intero.
+
+1. L’icona **Annota** è disponibile nella barra degli strumenti superiore. Se necessario, è possibile selezionare parte del testo.
+
+   ![annotare](assets/cfm-variations-07.png)
 
 1. Viene aperta una finestra di dialogo. Consente di inserire l’annotazione.
 
-1. Chiudi l’editor a schermo intero e **Salva** il frammento.
+   ![annotare](assets/cfm-variations-07a.png)
+
+1. Seleziona **Applica** nella finestra di dialogo.
+
+   ![annotare](assets/cfm-variations-annotations-apply-icon.png)
+
+   Se l’annotazione è stata applicata al testo selezionato, il testo rimane evidenziato.
+
+   ![annotare](assets/cfm-variations-07b.png)
+
+1. Se chiudi l’editor a schermo intero, le annotazioni vengono comunque evidenziate. Se questa opzione è selezionata, verrà visualizzata una finestra di dialogo che consente di modificare ulteriormente l’annotazione.
+
+1. Seleziona **Salva**.
+
+1. Se chiudi l’editor a schermo intero, le annotazioni vengono comunque evidenziate. Se questa opzione è selezionata, verrà visualizzata una finestra di dialogo che consente di modificare ulteriormente l’annotazione.
+
+   ![annotare](assets/cfm-variations-07c.png)
 
 ### Visualizzazione, Modifica, Eliminazione Di Annotazioni {#viewing-editing-deleting-annotations}
 
@@ -244,14 +291,13 @@ Annotazioni:
 * Sono evidenziati dal testo, sia in modalità a schermo intero che in modalità normale dell’editor. Per visualizzare, modificare e/o eliminare tutti i dettagli di un’annotazione, fate clic sul testo evidenziato per riaprire la finestra di dialogo.
 
    >[!NOTE]
-   >
-   >Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
+   Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
 
 * Quando si elimina l’intero testo a cui è stata applicata l’annotazione, viene eliminata anche l’annotazione.
 
 * Può essere elencato ed eliminato selezionando la scheda **Annotazioni** nell’editor frammenti.
 
-   ![cfm-6420-25](assets/cfm-6420-25.png)
+   ![annotazioni](assets/cfm-variations-08.png)
 
 * Può essere visualizzato ed eliminato in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) per il frammento selezionato.
 
@@ -262,19 +308,16 @@ Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiu
 Vengono aggiunti alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere eseguita quando il frammento [viene utilizzato/a cui si fa riferimento in una pagina](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
->
->Queste risorse non possono essere spostate o eliminate in una pagina di riferimento, ma devono essere eseguite nell’editor frammenti.
->
->Tuttavia, la formattazione della risorsa (ad esempio, le dimensioni) deve essere eseguita nell’ [editor di pagine](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente per la creazione del flusso di contenuto.
+Queste risorse non possono essere spostate o eliminate in una pagina di riferimento, ma devono essere eseguite nell’editor frammenti.
+Tuttavia, la formattazione della risorsa (ad esempio, le dimensioni) deve essere eseguita nell’ [editor di pagine](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente per la creazione del flusso di contenuto.
 
 >[!NOTE]
->
->Esistono vari metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+Esistono vari metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 1. Posiziona il cursore nel punto in cui vuoi aggiungere l’immagine.
 1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
 
-   ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
+   ![icona inserisci risorsa](assets/cfm-variations-09.png)
 
 1. Nella finestra di dialogo puoi effettuare le seguenti operazioni:
 
@@ -286,11 +329,45 @@ Vengono aggiunti alla sequenza di paragrafi del frammento senza formattazione; l
 1. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
 
    >[!CAUTION]
-   >
-   >Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
-   >
-   >* **Testo normale**: la risorsa verrà persa completamente dal frammento.
-   >* **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
+   Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
+   * **Testo normale**: la risorsa verrà persa completamente dal frammento.
+   * **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
+
+
+### Inserimento di un frammento di contenuto nel frammento {#inserting-content-fragment-into-your-fragment}
+
+Per semplificare il processo di creazione dei frammenti di contenuto, puoi anche aggiungere al frammento un altro frammento di contenuto.
+
+Saranno aggiunti come riferimento nella posizione corrente nel frammento.
+
+>[!NOTE]
+Questa opzione è disponibile quando il **testo su più righe** è configurato con **Consenti riferimento frammento**.
+
+>[!CAUTION]
+Queste risorse non possono essere spostate o eliminate in una pagina di riferimento, ma devono essere eseguite nell’editor frammenti.
+Tuttavia, la formattazione della risorsa (ad esempio, le dimensioni) deve essere eseguita nell’ [editor di pagine](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente per la creazione del flusso di contenuto.
+
+>[!NOTE]
+Esistono vari metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+
+1. Posizionare il cursore nella posizione in cui si desidera aggiungere il frammento.
+1. Utilizza l&#39;icona **Inserisci frammento di contenuto** per aprire la finestra di dialogo di ricerca.
+
+   ![icona Inserisci frammento di contenuto](assets/cfm-variations-13.png)
+
+1. Nella finestra di dialogo puoi effettuare le seguenti operazioni:
+
+   * Passa al frammento richiesto nella cartella Risorse
+   * ricerca del frammento
+
+   Una volta individuato, seleziona il frammento desiderato facendo clic sulla miniatura.
+
+1. Utilizza **Seleziona** per aggiungere un riferimento al frammento di contenuto selezionato al frammento di contenuto corrente (nella posizione corrente).
+
+   >[!CAUTION]
+   Se, dopo aver aggiunto un riferimento a un altro frammento, si modifica il formato in:
+   * **Testo** normale: il riferimento verrà completamente perso dal frammento.
+   * **Markdown**: il riferimento rimarrà.
 
 
 ## Gestione delle varianti {#managing-variations}
@@ -308,8 +385,7 @@ Per creare una nuova variante:
 1. Seleziona **Aggiungi**, il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
-   >
-   >Quando crei una nuova variante, viene sempre copiata **Master** e non la variante attualmente aperta.
+   Quando crei una nuova variante, viene sempre copiata **Master** e non la variante attualmente aperta.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -318,7 +394,7 @@ Puoi apportare modifiche al contenuto della variante dopo:
 * [Creazione della variante](#creating-a-variation).
 * Aprite un frammento esistente, quindi selezionate la variante desiderata dal pannello laterale.
 
-![cfm-6420-26](assets/cfm-6420-26.png)
+![modifica di una variante](assets/cfm-variations-10.png)
 
 ### Ridenominazione di una variante {#renaming-a-variation}
 
@@ -333,8 +409,7 @@ Per rinominare una variante esistente:
 1. Conferma l’azione **Rinomina**.
 
 >[!NOTE]
->
->Questo influisce solo sulla variante **Titolo**.
+Questo influisce solo sulla variante **Titolo**.
 
 ### Eliminazione di una variante {#deleting-a-variation}
 
@@ -347,8 +422,7 @@ Per eliminare una variante esistente:
 1. Conferma l’azione **Elimina** nella finestra di dialogo.
 
 >[!NOTE]
->
->Non è possibile eliminare **Master**.
+Non è possibile eliminare **Master**.
 
 ### Sincronizzazione con Master {#synchronizing-with-master}
 
@@ -357,27 +431,31 @@ Per eliminare una variante esistente:
 Quando modifichi una variante hai accesso all’azione per sincronizzare l’elemento corrente della variante con Master. Questo consente di copiare automaticamente le modifiche apportate a Master nella variante desiderata.
 
 >[!CAUTION]
->
->La sincronizzazione è disponibile solo per copiare le modifiche *da **Master**alla variante*.
->
->Viene sincronizzato solo l’elemento corrente della variante.
->
->La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
->
->Il trasferimento delle modifiche *da una variante a **Master*** non è disponibile come opzione.
+La sincronizzazione è disponibile solo per copiare le modifiche *da **Master**alla variante*.
+Viene sincronizzato solo l’elemento corrente della variante.
+La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
+Il trasferimento delle modifiche *da una variante a **Master*** non è disponibile come opzione.
+
+<!-- needs new screenshot for synchronize effect -->
 
 1. Apri il frammento di contenuto nell’editor frammenti. Assicurati che il **Master** sia stato modificato.
+
 1. Seleziona una variante specifica, quindi l’azione di sincronizzazione appropriata da:
 
    * selettore a discesa **Azioni** - **Sincronizza l&#39;elemento corrente con master**
 
+      ![sincronizzazione con master](assets/cfm-variations-11a.png)
+
    * la barra degli strumenti dell&#39;editor a schermo intero - **Sincronizza con master**
+
+      ![sincronizzazione con master](assets/cfm-variations-11b.png)
 
 1. Master e la variante saranno mostrati uno accanto all’altro:
 
    * verde indica il contenuto aggiunto (alla variante)
    * il rosso indica il contenuto rimosso (dalla variante)
+   * blu indica il testo sostituito
 
-   ![cfm-6420-27](assets/cfm-6420-27.png)
+   ![sincronizzazione con master](assets/cfm-variations-11c.png)
 
 1. Seleziona **Sincronizza**, la variante verrà aggiornata e visualizzata.

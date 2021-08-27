@@ -1,44 +1,36 @@
 ---
 title: Frammenti di contenuto - Considerazioni sull’eliminazione
-seo-title: Frammenti di contenuto - Considerazioni sull’eliminazione
-description: Frammenti di contenuto - Considerazioni sull’eliminazione
-seo-description: Frammenti di contenuto - Considerazioni sull’eliminazione
-uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
-contentOwner: aheimoz
-topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
-docset: aem65
-feature: Frammenti di contenuto
-role: User, Admin
-exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 13%
+source-wordcount: '509'
+ht-degree: 9%
 
 ---
 
-# Frammenti di contenuto - Considerazioni sull’eliminazione{#content-fragments-delete-considerations}
+# Frammenti di contenuto - Considerazioni sull’eliminazione {#content-fragments-delete-considerations}
+
+Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
 
 ## Autorizzazioni - Elimina o Non Elimina {#permissions-delete-or-not-delete}
 
 La possibilità di eliminare i contenuti è potente, ma potenzialmente sensibile, e molti settori devono limitare e controllare come questi privilegi vengono distribuiti.
 
-Per quanto riguarda le autorizzazioni di eliminazione, i frammenti di contenuto devono essere considerati a due livelli:
+In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devono essere considerati a due livelli:
 
 1. **Il frammento di contenuto come singola entità.**
 
    * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto  **ed eliminare un intero frammento**.
    * **Autorizzazioni**: L’autorizzazione  [](/help/sites-administering/security.md#actions) Elimina può essere  [assegnata tramite Gestione utenti e/o gruppi](/help/sites-administering/security.md#managing-permissions).
 
-1. **Le più sottoentità che compongono un frammento di contenuto; ad esempio, varianti, sotto-nodi.**
+2. **Le più sottoentità che compongono un frammento di contenuto; ad esempio, varianti, sotto-nodi.**
 
    Il funzionamento di base dell’editor dei frammenti di contenuto richiede che tali elementi secondari transitori possano essere eliminati. Ad esempio, quando si manipolano le variazioni; anche durante la modifica dei metadati o la gestione dei contenuti associati.
 
    * **Caso** di utilizzo: Utente che deve modificare/aggiornare un frammento di contenuto  **senza poter eliminare un intero frammento**.
-   * **Autorizzazioni**: Consulta  [Autorizzazioni necessarie solo per la funzionalità dell’editor](/help/assets/content-fragments/content-fragments-delete.md#permissions-required-for-editor-functionality-only).
+   * **Autorizzazioni**: Consulta  [Autorizzazioni necessarie solo per la funzionalità dell’editor](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 21%
+source-wordcount: '629'
+ht-degree: 20%
 
 ---
 
@@ -91,6 +91,9 @@ ht-degree: 21%
    + [Estendi editor risorse](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
    + [Supporto dei frammenti di contenuto in [!DNL Assets] API HTTP](assets-api-content-fragments.md)
+   + [API GraphQL per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticazione per query GraphQL remote sui frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
+   + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] sviluppo proxy](proxy.md)
 + Amministrare le risorse {#administer}
    + [Formati di file supportati](assets-formats.md)
@@ -130,15 +133,19 @@ ht-degree: 21%
    + [Pubblicare risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Pubblicare cartelle su [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Pubblicare raccolte su [!DNL Brand Portal]](brand-portal-publish-collection.md)
-+ Frammenti di contenuto {#fragments}
++ Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
-   + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
+   + [Distribuzione headless con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Abilita funzionalità frammento di contenuto per la tua istanza](content-fragments/content-fragments-configuration-browser.md)
    + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
+   + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
    + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)
-   + [Frammenti di contenuto - Markdown](content-fragments/content-fragments-markdown.md)
+   + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Anteprima - Rappresentazione JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md)
 + Gestire le risorse {#managing}
    + [Consente di gestire i contenuti digitali](manage-assets.md)
