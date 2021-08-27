@@ -4,9 +4,9 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 55b2e8d3d198857205b81b6974d9d6bfb8527fa6
+source-git-commit: 9c262f57b3c3b7a1d2deaba78d13d02b74c5208d
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3652'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * **Editor e  [!DNL Content Fragment] modelli migliorati**: È ora possibile creare modelli complessi e personalizzati per contenuti strutturati utilizzando  [!DNL Content Fragment] modelli nidificati. Le strutture di contenuto sono modularizzate in elementi di base modellati come sottoframmenti. I frammenti di livello superiore fanno riferimento a tali sottoframmenti. Ulteriori miglioramenti del tipo di dati, come le regole di convalida avanzate, migliorano ulteriormente la flessibilità nella modellazione dei contenuti con [!DNL Content Fragments]. L’editor [!DNL Experience Manager] [!DNL Content Fragment] supporta le strutture di frammenti nidificati in una sessione dell’editor comune, con miglioramenti quali la visualizzazione struttura ad albero e la navigazione a schede tramite gerarchie di frammenti.
 
-* **API GraphQL per[!DNL Content Fragments]**: La nuova API GraphQL è il metodo standard per distribuire contenuti strutturati in formato JSON. Le query GraphQL consentono ai client di richiedere solo gli elementi di contenuto rilevanti per il rendering di un’esperienza. Tale selezione elimina la consegna dei contenuti in eccesso (possibilità con le API REST HTTP) che richiede l’analisi dei contenuti sul lato client. Gli schemi GraphQL sono derivati da modelli [!DNL Content Fragment] e le risposte API sono effettuate in formato JSON. In [!DNL Experience Manager] come [!DNL Cloud Service], [Le query GraphQL persistono](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) ed elaborano richieste di GET compatibili con la cache. Non è ancora possibile in [!DNL Experience Manager] 6.5.
+* **API GraphQL per[!DNL Content Fragments]**: La nuova API GraphQL è il metodo standard per distribuire contenuti strutturati in formato JSON. Le query GraphQL consentono ai client di richiedere solo gli elementi di contenuto rilevanti per il rendering di un’esperienza. Tale selezione elimina la consegna dei contenuti in eccesso (possibilità con le API REST HTTP) che richiede l’analisi dei contenuti sul lato client. Gli schemi GraphQL sono derivati da modelli [!DNL Content Fragment] e le risposte API sono effettuate in formato JSON. In [!DNL Experience Manager] come [!DNL Cloud Service], [Le query GraphQL persistono](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) ed elaborano richieste di GET compatibili con la cache. Non è ancora possibile in [!DNL Experience Manager] 6.5.10.0.
 
 * **Gestione della gerarchia e anteprima** futura: Gli utenti dispongono ora di un’interfaccia per accedere alle strutture di contenuto dei loro  [!DNL Experience Manager] lanci, inclusa la possibilità di aggiungere e rimuovere pagine in un lancio. Questa funzione migliora la flessibilità dei [!DNL Experience Manager] lanci per creare versioni di contenuti destinate a future pubblicazioni. [Le funzioni ](/help/sites-authoring/working-with-page-versions.md#timewarp) di deformazione in tempo libero consentono agli utenti di visualizzare in anteprima gli avvii come stati di contenuto futuri.
 
@@ -38,7 +38,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * **Opzioni di condivisione dei collegamenti per scaricare risorse o rappresentazioni**: Quando condividi risorse e raccolte come collegamento, gli utenti possono scegliere se consentire il download delle risorse originali o delle relative rappresentazioni, oppure entrambi utilizzando il collegamento condiviso. Inoltre, gli utenti che scaricano le risorse condivise con loro tramite un collegamento possono scaricare solo le risorse originali, solo le rappresentazioni o entrambi.
 
-* **Limita le risorse secondarie generate**: Gli amministratori possono limitare il numero di risorse secondarie  [!DNL Experience Manager] generate per risorse composte come file PDF, PowerPoint, InDesign e Keynote.
+* **Limita le risorse secondarie generate**: Gli amministratori possono limitare il numero di risorse secondarie  [!DNL Experience Manager] generate per risorse composte come file PDF, PowerPoint, InDesign e Keynote. Consulta [Gestire le risorse composte](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Supporto** Camera Raw: È disponibile un nuovo  [!DNL Camera Raw] pacchetto che supporta la  [!DNL Adobe Camera Raw] versione 10.4. Consulta  [elaborare le immagini utilizzando [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -319,7 +319,9 @@ B. Utilizza l’ [API HTTP da Gestione pacchetti](/help/sites-administering/pack
 
 Per conoscere le piattaforme certificate per l’utilizzo con questa versione, consulta i [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
-<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--
+
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -343,7 +345,9 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+
+-->
 
 ### UberJar {#uber-jar}
 
@@ -355,7 +359,7 @@ Per utilizzare UberJar in un progetto Maven, consulta [come utilizzare UberJar](
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.10.0</version>
+     <version>6.5.10</version>
      <scope>provided</scope>
 </dependency>
 ```
