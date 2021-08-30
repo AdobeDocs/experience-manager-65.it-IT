@@ -2,9 +2,9 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
+source-git-commit: b6703f519295eef728d5504360d99de69438064c
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '989'
 ht-degree: 8%
 
 ---
@@ -23,18 +23,44 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve più essere utilizzato. Sostituisci il connettore CIF con il nuovo componente aggiuntivo CIF. Per la maggior parte dei progetti dovrebbe essere possibile una semplice sostituzione dei pacchetti.
 
-| Componente | Requisiti di sistema |
+| Component | Requisiti di sistema |
 |:-------|:-----:|
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Agosto 2021
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2021.08.20 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip) |
+| Componenti core CIF | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
+| Sito di riferimento CIF Venia | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+
+### Novità {#what-is-new-august}
+
+* Nuova interfaccia utente del selettore categorie per migliorare l’esperienza utente, aumentare l’efficienza e migliorare il supporto per cataloghi di prodotti complessi
+
+   ![Selezione nuova categoria](/help/assets/CIF/category-picker.png)
+
+* Supporto migliorato per A11Y per i componenti core CIF
+
+### Correzioni di bug {#bug-fixes-august}
+
+* Impossibile chiudere il pannello a soffietto del filtro di categoria una volta aperto
+
+* Proprietà &#39;Invito all&#39;azione&#39; interrotta nel teaser prodotto
+
+* Errori CIF JS durante AEM passaggio di distribuzione CS
+
+* Correggere l&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco di prodotti mappati
 
 ## Data di rilascio: Luglio 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2021.07.21 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
-| Componenti core CIF | 1.13.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| Componenti core CIF | 2,0,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | Sito di riferimento CIF Venia | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### Novità {#what-is-new-july}
