@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.5
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
-feature: Sviluppo
+feature: Developing
 role: Developer
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: 1eb2ef06ed0541026ff3ba436dfab0d261af7356
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 16%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 16%
       + [Componenti compositi in SPA](spa-composite-component.md)
       + [Materiali di riferimento SPA](spa-reference-materials.md)
    + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-   + [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
    + [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Informazioni su frammenti di contenuto e servizi di contenuto in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Strumenti di sviluppo{#devtools}
