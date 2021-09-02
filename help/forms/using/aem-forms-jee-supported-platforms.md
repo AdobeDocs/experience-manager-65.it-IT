@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3f33f93e53242225cd63f977c482441561ed3b0e
+source-git-commit: 95f2268c5965ed73336da9681ae52e755cee36f4
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3460'
 ht-degree: 1%
 
 ---
@@ -508,7 +508,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 >
 >Inoltre:
 >
->* PDF Generator richiede la versione a 32 bit di [Acrobat 2020 classic track versione 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 per eseguire la conversione.
+>* PDF Generator richiede la versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
 >* PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione.
 >* PDF Generator non supporta Microsoft Office 365.
 >* Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
