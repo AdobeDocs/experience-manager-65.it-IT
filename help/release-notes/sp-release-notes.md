@@ -4,10 +4,10 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: d107a31ff109be6ae848eef5d3102f63983fd120
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -458,6 +458,9 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 | Connettori | Il connettore Adobe JCR per Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 è obsoleto, ad Experience Manager 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
+
+* (Solo per JBoss su Microsoft Windows) Per continuare a utilizzare il servizio Crea PDF su [!DNL AEM Forms on JEE], scarica [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) da Distribuzione software, estrai e copia la cartella disponibile nel file Zip nel seguente percorso:
+   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
 
 * Poiché [!DNL Microsoft Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL AEM Forms 6.5.10.0].
 
