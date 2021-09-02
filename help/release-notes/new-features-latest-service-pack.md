@@ -4,7 +4,7 @@ description: Novità in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 2a4da77cbde3d3a91674a5239436ccf962f72003
+source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
 workflow-type: tm+mt
 source-wordcount: '4106'
 ht-degree: 1%
@@ -74,8 +74,7 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
    * [!DNL Open Office 4.1.10]
    * [!DNL Microsoft Office 2019]
    * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8.3]
-   * [!DNL Apache Geode cache solution]
+   * [!DNL RHEL8]
 
 * È stato aggiunto il supporto per l’ API `GuideBridge#getGuidePath` in [!DNL AEM Forms].
 
