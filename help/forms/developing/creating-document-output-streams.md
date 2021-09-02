@@ -1,8 +1,8 @@
 ---
 title: Creazione di flussi di output dei documenti
-seo-title: Creazione di flussi di output dei documenti
+seo-title: Creating Document Output Streams
 description: Utilizza il servizio Output per convertire i documenti in formato PDF (inclusi i documenti PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
-seo-description: Utilizza il servizio Output per convertire i documenti in formato PDF (inclusi i documenti PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
+seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
+source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
 workflow-type: tm+mt
-source-wordcount: '19045'
+source-wordcount: '19016'
 ht-degree: 0%
 
 ---
 
-
-# Creazione di flussi di output dei documenti {#creating-document-output-streams}
+# Creazione di flussi di output dei documenti  {#creating-document-output-streams}
 
 **Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -211,7 +210,7 @@ Dopo l&#39;esecuzione di un&#39;operazione, il servizio Output restituisce vari 
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Creare un documento PDF utilizzando l&#39;API Java {#create-a-pdf-document-using-the-java-api}
+### Creare un documento PDF utilizzando l’API Java {#create-a-pdf-document-using-the-java-api}
 
 Crea un documento PDF utilizzando l’API di output (Java):
 
@@ -292,7 +291,7 @@ Crea un documento PDF utilizzando l’API di output (Java):
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Crea un documento PDF utilizzando l&#39;API del servizio Web {#create-a-pdf-document-using-the-web-service-api}
+### Creare un documento PDF utilizzando l’API del servizio Web {#create-a-pdf-document-using-the-web-service-api}
 
 Creare un documento PDF utilizzando l’API di output (servizio Web):
 
@@ -374,11 +373,11 @@ Creare un documento PDF utilizzando l’API di output (servizio Web):
 
    Consulta anche
 
-   [Riepilogo dei passaggi](creating-document-output-streams.md#summary-of-steps)
+[Riepilogo dei passaggi](creating-document-output-streams.md#summary-of-steps)
 
-   [Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [Richiamo di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Richiamo di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -402,11 +401,11 @@ Quando un documento PDF/A viene aperto in Acrobat, viene visualizzato un messagg
 
 >[!NOTE]
 >
->Il sito web AIIM dispone di una sezione FAQ PDF/A a cui puoi accedere all&#39;indirizzo [https://www.aiim.org/documents/standards/19005-1_FAQ.pdf](https://www.aiim.org/documents/standards/19005-1_FAQ.pdf).
+>Il sito web AIIM dispone di una sezione FAQ PDF/A a cui puoi accedere all&#39;indirizzo [https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Output, vedere [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, vedere [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -476,7 +475,7 @@ Dopo l&#39;esecuzione di un&#39;operazione, il servizio Output restituisce vari 
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Creare un documento PDF/A utilizzando l&#39;API Java {#create-a-pdf-a-document-using-the-java-api}
+### Creare un documento PDF/A utilizzando l’API Java {#create-a-pdf-a-document-using-the-java-api}
 
 Crea un documento PDF/A utilizzando l’API di output (Java):
 
@@ -550,7 +549,7 @@ Crea un documento PDF/A utilizzando l’API di output (Java):
 
 [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) di connessione.
 
-### Crea un documento PDF/A utilizzando l&#39;API del servizio Web {#create-a-pdf-a-document-using-the-web-service-api}
+### Creare un documento PDF/A utilizzando l’API del servizio Web {#create-a-pdf-a-document-using-the-web-service-api}
 
 Crea un documento PDF/A utilizzando l’API di output (servizio Web):
 
@@ -691,7 +690,7 @@ Per eseguire il rendering di un modulo non interattivo, passa l’istanza `com.a
 
 [Creazione di documenti PDF tramite frammenti](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-### Trasmettere i documenti al servizio di output utilizzando l&#39;API Java {#pass-documents-to-the-output-service-using-the-java-api}
+### Trasmettere i documenti al servizio di output utilizzando l’API Java {#pass-documents-to-the-output-service-using-the-java-api}
 
 Passa un documento recuperato da Content Services (obsoleto) utilizzando il servizio di output e l’API Content Services (obsoleto):
 
@@ -746,7 +745,7 @@ Passa un documento recuperato da Content Services (obsoleto) utilizzando il serv
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Trasmettere i documenti al servizio di output utilizzando l&#39;API del servizio Web {#pass-documents-to-the-output-service-using-the-web-service-api}
+### Trasmettere i documenti al servizio di output utilizzando l’API del servizio Web {#pass-documents-to-the-output-service-using-the-web-service-api}
 
 Passa un documento recuperato da Content Services (obsoleto) utilizzando il servizio di output e l’API Content Services (obsoleto) (servizio Web):
 
@@ -819,7 +818,7 @@ Passa un documento recuperato da Content Services (obsoleto) utilizzando il serv
 
 [Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Trasmissione di documenti situati nell&#39;archivio al servizio di output {#passing-documents-located-in-the-repository-to-the-output-service}
+## Trasferimento dei documenti presenti nell&#39;archivio al servizio di output {#passing-documents-located-in-the-repository-to-the-output-service}
 
 Il servizio Output esegue il rendering di un modulo PDF non interattivo basato su una struttura del modulo generalmente salvata come file XDP e creata in Designer. È possibile passare al servizio Output un oggetto `com.adobe.idp.Document` contenente la struttura del modulo. Il servizio Output esegue quindi il rendering della struttura del modulo situata nell&#39;oggetto `com.adobe.idp.Document`.
 
@@ -891,7 +890,7 @@ Per eseguire il rendering di un modulo non interattivo, passa l’istanza `com.a
 
 ResourceRepositoryClient
 
-### Trasmettere al servizio di output i documenti che si trovano nell’archivio utilizzando l’API Java {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Trasmettere al servizio di output i documenti presenti nell’archivio utilizzando l’API Java {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 Passa un documento recuperato dall’archivio utilizzando il servizio di output e l’API dell’archivio (Java):
 
@@ -938,7 +937,7 @@ Passa un documento recuperato dall’archivio utilizzando il servizio di output 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Creazione di documenti PDF utilizzando frammenti {#creating-pdf-documents-using-fragments}
+## Creazione di documenti PDF tramite frammenti {#creating-pdf-documents-using-fragments}
 
 È possibile utilizzare i servizi Output e Assembler per creare un flusso di output, ad esempio un documento PDF, basato su frammenti. Il servizio Assembler assembla un documento XDP basato su frammenti che si trovano in più file XDP. Il documento XDP assemblato viene passato al servizio Output, che crea un documento PDF. Anche se questo flusso di lavoro mostra un documento PDF che viene generato, il servizio Output può generare altri tipi di output, come ZPL, per questo flusso di lavoro. Un documento PDF viene utilizzato solo a scopo di discussione.
 
@@ -1002,7 +1001,7 @@ Dopo che il servizio Output genera un documento PDF, è possibile salvarlo come 
 
 [Creazione di documenti PDF](creating-document-output-streams.md#creating-pdf-documents)
 
-### Crea un documento PDF basato su frammenti utilizzando l&#39;API Java {#create-a-pdf-document-based-on-fragments-using-the-java-api}
+### Creare un documento PDF basato su frammenti utilizzando l’API Java {#create-a-pdf-document-based-on-fragments-using-the-java-api}
 
 Crea un documento PDF basato sui frammenti utilizzando l’API del servizio di output e l’API del servizio Assembler (Java):
 
@@ -1062,7 +1061,7 @@ Crea un documento PDF basato sui frammenti utilizzando l’API del servizio di o
 
 [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) di connessione.
 
-### Crea un documento PDF basato su frammenti utilizzando l&#39;API del servizio Web {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}
+### Creare un documento PDF basato su frammenti utilizzando l’API del servizio Web {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}
 
 Crea un documento PDF basato sui frammenti utilizzando l’API del servizio di output e l’API del servizio Assembler (servizio Web):
 
@@ -1225,7 +1224,7 @@ Dopo l&#39;esecuzione di un&#39;operazione, il servizio Output restituisce vari 
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Stampa su file utilizzando l&#39;API Java {#print-to-files-using-the-java-api}
+### Stampa su file utilizzando l’API Java {#print-to-files-using-the-java-api}
 
 Stampa su un file utilizzando l’API di output (Java):
 
@@ -1282,7 +1281,7 @@ Stampa su un file utilizzando l’API di output (Java):
 
 [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) di connessione.
 
-### Stampa su file utilizzando l&#39;API del servizio Web {#print-to-files-using-the-web-service-api}
+### Stampa su file tramite l’API del servizio Web {#print-to-files-using-the-web-service-api}
 
 Stampa su un file utilizzando l’API di output (servizio Web):
 
@@ -1569,7 +1568,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API di out
    >
    >Il metodo `sendToPrinter` è stato aggiunto all’API AEM Forms nella versione 8.2.1.
 
-### Inviare un flusso di stampa a una stampante utilizzando l&#39;API del servizio Web {#send-a-print-stream-to-a-printer-using-the-web-service-api}
+### Inviare un flusso di stampa a una stampante utilizzando l’API del servizio Web {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
 Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API di output (servizio Web):
 
@@ -1806,7 +1805,7 @@ Dopo aver eseguito un&#39;operazione, il servizio Output restituisce dati XML ch
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Creare più file PDF utilizzando l&#39;API Java {#create-multiple-pdf-files-using-the-java-api}
+### Creare più file PDF utilizzando l’API Java {#create-multiple-pdf-files-using-the-java-api}
 
 Creare più file PDF utilizzando l’API di output (Java):
 
@@ -1864,7 +1863,7 @@ Creare più file PDF utilizzando l’API di output (Java):
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Creare più file PDF utilizzando l&#39;API del servizio Web {#create-multiple-pdf-files-using-the-web-service-api}
+### Creare più file PDF utilizzando l’API del servizio Web {#create-multiple-pdf-files-using-the-web-service-api}
 
 Creare più file PDF utilizzando l&#39;API di output (servizio Web):
 
@@ -2022,7 +2021,7 @@ Dopo aver eseguito un&#39;operazione, il servizio Output restituisce dati XML ch
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Creare regole di ricerca utilizzando l&#39;API Java {#create-search-rules-using-the-java-api}
+### Creare regole di ricerca utilizzando l’API Java {#create-search-rules-using-the-java-api}
 
 Creare regole di ricerca utilizzando l’API di output (Java):
 
@@ -2097,7 +2096,7 @@ Creare regole di ricerca utilizzando l’API di output (Java):
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Creare regole di ricerca utilizzando l&#39;API del servizio Web {#create-search-rules-using-the-web-service-api}
+### Creare regole di ricerca utilizzando l’API del servizio Web {#create-search-rules-using-the-web-service-api}
 
 Crea le regole di ricerca utilizzando l’API di output (servizio Web):
 
@@ -2198,7 +2197,7 @@ Crea le regole di ricerca utilizzando l’API di output (servizio Web):
 
 [Richiamo di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Formattazione dei documenti PDF {#flattening-pdf-documents}
+## Flattificazione dei documenti PDF {#flattening-pdf-documents}
 
 È possibile utilizzare il servizio Output per trasformare un documento PDF interattivo in un PDF non interattivo. Un documento PDF interattivo consente agli utenti di immettere o modificare i dati presenti nei campi del documento PDF. Il processo di trasformazione di un documento PDF interattivo in un documento PDF non interattivo è denominato *appiattimento*. Quando un documento PDF viene appiattito, un utente non può modificare i dati nei campi del documento. Un motivo per appiattire un documento PDF è quello di garantire che i dati non possano essere modificati.
 
@@ -2265,7 +2264,7 @@ Dopo aver recuperato un documento PDF interattivo, è possibile trasformarlo in 
 
 [Avvio rapido API del servizio di output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Appiattisci un documento PDF utilizzando l’API Java {#flatten-a-pdf-document-using-the-java-api}
+### Appiattire un documento PDF utilizzando l’API Java {#flatten-a-pdf-document-using-the-java-api}
 
 Appiattire un documento PDF interattivo a un documento PDF non interattivo utilizzando l’API di output (Java):
 
@@ -2312,7 +2311,7 @@ Appiattire un documento PDF interattivo a un documento PDF non interattivo utili
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Formattare un documento PDF utilizzando l&#39;API del servizio Web {#flatten-a-pdf-document-using-the-web-service-api}
+### Appiattire un documento PDF utilizzando l’API del servizio Web {#flatten-a-pdf-document-using-the-web-service-api}
 
 Appiattire un documento PDF interattivo a un documento PDF non interattivo utilizzando l’API di output (servizio Web):
 
