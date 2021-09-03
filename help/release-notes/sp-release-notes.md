@@ -4,9 +4,9 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
+source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
 workflow-type: tm+mt
-source-wordcount: '4438'
+source-wordcount: '4205'
 ht-degree: 3%
 
 ---
@@ -64,13 +64,17 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * **Supporto per utilizzare l&#39;opzione letterale per impostare il valore per una variabile** di tipo JSON: Puoi utilizzare l’opzione letterale per impostare il valore per una variabile di tipo JSON nel passaggio della variabile set di un flusso di lavoro AEM. L’opzione letterale ti consente di specificare un JSON sotto forma di stringa.
 
-* [Aggiornamenti](../forms/using/aem-forms-jee-supported-platforms.md) della piattaforma:  [!DNL Adobe Experience Manager Forms] in JEE è stato aggiunto il supporto per le seguenti piattaforme:
-   * [!DNL Adobe Acrobat 2020]
-   * [!DNL Ubuntu 20.04]
-   * [!DNL Open Office 4.1.10]
-   * [!DNL Microsoft Office 2019]
-   * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8]
+<!--
+
+* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+  * [!DNL Adobe Acrobat 2020]
+  * [!DNL Ubuntu 20.04]
+  * [!DNL Open Office 4.1.10]
+  * [!DNL Microsoft Office 2019]
+  * [!DNL Microsoft Windows Server 2019]
+  * [!DNL RHEL8]
+
+  -->
 
 Per un elenco di tutte le funzioni e i miglioramenti introdotti in [!DNL Experience Manager] 6.5.10.0, consulta [novità in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -273,7 +277,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Moduli adattivi**
 
-* Se le convalide eseguite sui valori dei campi in un modulo adattivo hanno esito positivo, [!DNL AEM Forms] non riesce a richiamare il modello dati del modulo (CQ-4325491).
+<!--
+
+* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+
+-->
 
 * Quando aggiungi un dizionario di lingua a un progetto di traduzione e quindi apri il progetto, [!DNL AEM Forms] visualizza un messaggio di errore (CQ-4324933):
 
@@ -308,19 +316,26 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Quando selezioni tutto il testo in un editor, non puoi modificare il testo del font in Arial (NPR-36646).
 
-* Quando crei un URL in un editor e visualizzi in anteprima le modifiche, viene visualizzato uno sfondo nero invece del testo dell&#39;URL (NPR-36640).
+<!--
+
+* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
+
+-->
 
 * Quando copi e incolla del testo in un editor, si verificano problemi durante la modifica del font in Arial per i punti elenco disponibili nel documento (NPR-36628).
 
 * Problemi di rientro per i punti elenco nell’editor di testo (NPR-36513).
 
+<!--
 **Designer**
 
-* Il Reader schermo non riesce a leggere i dati dei campi mobili inseriti all’interno dell’etichetta di testo sulla pagina master o sulle pagine sottomodulo in un PDF dinamico (CQ-4321587).
+* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
+
+-->
 
 **Servizi documentali**
 
-* Quando si convertono file XDP in file PDF e si assembla il PDF risultante, le generazioni PDF non riescono e visualizza il seguente messaggio di errore:
+* Quando si convertono file XDP in file PDF e si assembla il PDF risultante, le generazioni PDF non riescono e visualizza il seguente messaggio di errore (CQ-4328666):
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -414,18 +429,21 @@ Per conoscere le piattaforme certificate per l’utilizzo con questa versione, c
 >
 >Experience Manager 6.5.10.0 include una nuova versione di [Pacchetto di compatibilità AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Se utilizzi una versione precedente del pacchetto di compatibilità di AEM Forms e aggiorni ad Experience Manager 6.5.10.0, installa la versione più recente del pacchetto dopo l’installazione del pacchetto aggiuntivo di Forms.
 
-### Installare Adobe Experience Manager Forms su JEE {#install-aem-forms-jee-installer}
+<!--
+
+### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Ignora questa sezione se non usi AEM Forms in JEE. Le correzioni in Adobe Experience Manager Forms su JEE vengono distribuite tramite un programma di installazione separato.
+>Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
 
-Per informazioni sull&#39;installazione del programma di installazione cumulativo per Experience Manager Forms su JEE e sulla configurazione post-distribuzione, consulta le [note sulla versione](jee-patch-installer-65.md).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
->Dopo aver installato il programma di installazione cumulativo per Experience Manager Forms su JEE, installa il pacchetto aggiuntivo Forms più recente, elimina il pacchetto aggiuntivo Forms dalla cartella `crx-repository\install` e riavvia il server.
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
+-->
 
 ### UberJar {#uber-jar}
 
@@ -459,10 +477,14 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 
 ## Problemi noti {#known-issues}
 
-* (Solo per JBoss su Microsoft Windows) Per continuare a utilizzare il servizio Crea PDF su [!DNL AEM Forms on JEE], scarica [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) da Distribuzione software, estrai e copia la cartella disponibile nel file Zip nel seguente percorso:
-   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+<!--
 
-* Poiché [!DNL Microsoft Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL AEM Forms 6.5.10.0].
+* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
+`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+
+* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+
+-->
 
 * Se aggiorni l’istanza [!DNL Experience Manager] dalla versione 6.5 alla versione 6.5.10.0, puoi visualizzare le eccezioni `RRD4JReporter` nel file `error.log` . Per risolvere il problema, riavvia l&#39;istanza.
 
