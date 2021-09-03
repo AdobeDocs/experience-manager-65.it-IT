@@ -4,9 +4,9 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4245'
 ht-degree: 3%
 
 ---
@@ -272,8 +272,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* Per [!DNL Experience Manager Forms] vengono rilasciati pacchetti del componente aggiuntivo una settimana dopo la data di rilascio pianificata per il Service Pack di [!DNL Experience Manager].
-
+>Il service pack consente l&#39;esecuzione di [!DNL AEM Forms] sui sistemi operativi server, i server applicazioni e i database più recenti. Inoltre, porta alcune funzioni disponibili sul Cloud Service in ambiente on-premise e fornisce correzioni per i problemi segnalati dai clienti. [!DNL AEM Forms] sul service pack OSGi è disponibile per il download e l&#39;installazione. [!DNL AEM Forms on JEE]  service pack sarà disponibile il 9 settembre 2021.
 
 **Moduli adattivi**
 
