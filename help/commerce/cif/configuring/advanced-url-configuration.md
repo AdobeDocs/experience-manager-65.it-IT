@@ -9,14 +9,18 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
+source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 42%
+source-wordcount: '784'
+ht-degree: 41%
 
 ---
 
 # Configurazioni URL avanzate {#url}
+
+>[!NOTE]
+>
+> L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, è necessario affrontare le questioni relative all’ottimizzazione SEO (Search Engine Optimization) in numerosi progetti AEM. Per ulteriori informazioni, leggi [Best practice relative alla gestione di SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) .
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Per molte implementazioni questi URL devono essere personalizzati a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
