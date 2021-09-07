@@ -4,9 +4,9 @@ description: Novità in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
+source-git-commit: 355cea8e5d3d3426788cd23e6d55297363adf05b
 workflow-type: tm+mt
-source-wordcount: '4106'
+source-wordcount: '4108'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [fun
 >
 >Il pacchetto aggiuntivo di [!DNL Experience Manager Forms] viene reso disponibile una settimana dopo il rilascio pianificato di [!DNL Experience Manager] Service Pack .
 
-* È ora possibile utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) nei moduli adattivi.
+* È ora possibile utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco, spagnolo, italiano e portoghese](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) nei moduli adattivi.
 
 * **Messaggi di errore nel browser** Proprietà: Sono stati aggiunti messaggi di errore per ciascuna proprietà nel browser Proprietà adattive Forms. Questi messaggi consentono di comprendere i valori consentiti per un campo.
 
