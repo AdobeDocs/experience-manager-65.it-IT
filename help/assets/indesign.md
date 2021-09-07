@@ -3,11 +3,11 @@ title: Integrare [!DNL Assets] con [!DNL InDesign Server]
 description: Scopri come integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
 role: Admin
-feature: Pubblicazione
+feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f74190692d718da6074affa87d283f326eca7faa
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1577'
 ht-degree: 4%
 
 ---
@@ -171,7 +171,9 @@ Se le [!DNL InDesign Server] e [!DNL Experience Manager] si trovano su host dive
 
 1. Accedi alla console Web all&#39;indirizzo `https://[aem_server]:[port]/system/console/configMgr`.
 1. Individua la configurazione **[!UICONTROL Day CQ Link Externalizer]**. Fai clic su **[!UICONTROL Modifica]** per aprire.
-1. Le impostazioni di Link Externalizer consentono di creare URL completi per la distribuzione [!DNL Experience Manager] e per [!DNL InDesign Server]. Utilizza il campo **[!UICONTROL Domains]** per specificare il nome host e il percorso contestuale per [!DNL Adobe InDesign Server]. Fai clic su **Salva**.
+1. Le impostazioni di Link Externalizer consentono di creare URL assoluti per la distribuzione [!DNL Experience Manager] e per la [!DNL InDesign Server]. Utilizza il campo **[!UICONTROL Domains]** per specificare il nome host per il [!DNL Adobe InDesign Server]. Fai clic su **Salva**.
+
+   Quando crei URL assoluti, devi utilizzare il nome host `localhost` per le istanze locali, di authoring e di pubblicazione.
 
    ![Impostazione del collegamento esternalizzatore](assets/link-externalizer-config.png)
 
