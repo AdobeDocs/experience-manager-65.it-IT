@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Configurazione,Modalità Scene7
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 >Il seguente elenco di funzioni richiede l’utilizzo della rete CDN preconfigurata fornita con Adobe Experience Manager - Dynamic Media. Qualsiasi altra rete CDN personalizzata non è supportata con queste funzioni.
 >
 >* [Imaging avanzato](/help/assets/imaging-faq.md)
-* [Annullamento della validità della cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Protezione del collegamento ipertestuale](/help/assets/hotlink-protection.md)
-* [Distribuzione HTTP/2 dei contenuti](/help/assets/http2.md)
-* Reindirizzamento URL a livello CDN
-* Akamai ChinaCDN (per una consegna ottimale in Cina)
+>* [Annullamento della validità della cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Protezione del collegamento ipertestuale](/help/assets/hotlink-protection.md)
+>* [Distribuzione HTTP/2 dei contenuti](/help/assets/http2.md)
+>* Reindirizzamento URL a livello CDN
+>* Akamai ChinaCDN (per una consegna ottimale in Cina)
 
 
 ## Abilitare Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 [Dynamic Media è disattivato per impostazione predefinita. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
 
 >[!WARNING]
-Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` nell’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
+>
+>Dynamic Media - La modalità Scene7 è destinata solo all’ *istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` nell’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
 
 Per abilitare Dynamic Media, è necessario avviare l&#39;Experience Manager utilizzando la modalità di esecuzione `dynamicmedia_scene7` dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 L’aggiornamento di Experience Manager Dynamic Media dalla versione 6.3 alla versione 6.4 o 6.5 ora include la possibilità di eseguire installazioni senza tempi di inattività. Per migrare tutti i predefiniti e le configurazioni da `/etc` a `/conf` in CRXDE Lite, assicurati di eseguire il seguente comando curl.
 
 >[!NOTE]
-Se esegui l’istanza di Experience Manager in modalità di compatibilità, ovvero se hai installato il pacchetto di compatibilità, non è necessario eseguire questi comandi.
+>
+>Se esegui l’istanza di Experience Manager in modalità di compatibilità, ovvero se hai installato il pacchetto di compatibilità, non è necessario eseguire questi comandi.
 
 Per tutti gli aggiornamenti, sia con che senza il pacchetto di compatibilità, puoi copiare i predefiniti predefiniti predefiniti per visualizzatori forniti originariamente con Dynamic Media eseguendo il seguente comando curl Linux®:
 
@@ -273,7 +275,7 @@ La schermata Image Server stabilisce le impostazioni predefinite per la distribu
 * **[!UICONTROL Valori predefiniti per i campi del catalogo]**: queste impostazioni si riferiscono alla risoluzione e al tipo di miniatura predefinito delle immagini.
 * **[!UICONTROL Attributi di gestione del colore]** : queste impostazioni determinano quali profili di colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi di compatibilità]** : questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per la compatibilità con le versioni precedenti.
-* **[!UICONTROL Supporto per la localizzazione]** : queste impostazioni consentono di gestire più attributi di impostazione internazionale. Consente inoltre di specificare una stringa di mappa delle impostazioni internazionali in modo da definire le lingue che si desidera supportare per le varie descrizioni a comparsa nei visualizzatori. Per ulteriori informazioni sulla configurazione del **[supporto per la localizzazione]**, consulta [Considerazioni sulla configurazione della localizzazione delle risorse](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Supporto per la localizzazione]** : queste impostazioni consentono di gestire più attributi di impostazione internazionale. Consente inoltre di specificare una stringa di mappa delle impostazioni internazionali in modo da definire le lingue che si desidera supportare per le varie descrizioni a comparsa nei visualizzatori. Per ulteriori informazioni sulla configurazione del **[supporto per la localizzazione]**, consulta [Considerazioni sulla configurazione della localizzazione delle risorse](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
 #### Configurare le impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Per mantenere la coerenza con l’Experience Manager, scegli sempre questa impos
 
 >[!NOTE]
 Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Consulta [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### Configurare la gestione del colore {#configuring-color-management}
 
@@ -549,7 +550,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    `\w+-R([0-9]+)-\w+`
 
-   o
+   oppure
 
    `\w+-(\d+)-\w+`
 
@@ -557,7 +558,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    `\w+-\w+-C([0-9]+)`
 
-   o
+   oppure
 
    `\w+-\w+-C(\d+)`
 
@@ -608,7 +609,7 @@ L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sinto
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Assets/Dynamic Media Classic basati su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Dynamic Media Classic/Assets basato su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Aggiorna la coda del flusso di lavoro transitorio di Granite {#updating-the-granite-transient-workflow-queue}
 

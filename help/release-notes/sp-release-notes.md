@@ -4,9 +4,9 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4392'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Le funzioni chiave e i miglioramenti introdotti in [!DNL Adobe Experience Manage
 
 * È stato aggiunto il supporto per l’ API `GuideBridge#getGuidePath` in [!DNL AEM Forms].
 
-* È ora possibile utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco, spagnolo, italiano e portoghese](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) nei moduli adattivi.
+* È ora possibile utilizzare il servizio Automated forms conversion per [convertire i PDF forms in francese, tedesco, spagnolo, italiano e portoghese](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) nei moduli adattivi.
 
 * **Messaggi di errore nel browser** Proprietà: Sono stati aggiunti messaggi di errore per ciascuna proprietà nel browser Proprietà adattive Forms. Questi messaggi consentono di comprendere i valori consentiti per un campo.
 
@@ -215,7 +215,7 @@ Le seguenti correzioni di bug sono disponibili in [!DNL Dynamic Media].
 
 * I video caricati su [!DNL Experience Manager] visualizzano `Process failed` dopo che la modalità di esecuzione `dynamicmedia_scene7` è abilitata e la sincronizzazione è disabilitata (CQ-4327791).
 
-### Platform {#platform-65100}
+### Piattaforma {#platform-65100}
 
 I seguenti miglioramenti sono forniti in questo service pack:
 

@@ -8,9 +8,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 26%
 
 ---
@@ -63,7 +63,7 @@ Se hai bisogno di un flusso di lavoro o della gestione delle versioni per le tue
 
 Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per le risorse, carica le risorse in Dynamic Media Classic. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. Nell’app desktop Dynamic Media Classic, [configura un caricamento e una codifica FTP pianificati in Dynamic Media Classic (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. Nell’app desktop Dynamic Media Classic, [configura un caricamento e una codifica FTP pianificati in Dynamic Media Classic (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. Ad Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Dynamic Media Classic]** di Content Finder.
 1. Esegui l’authoring con il componente video Dynamic Media Classic.
 
@@ -80,7 +80,7 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul significato dei predefiniti video, consulta [Predefiniti video per la codifica di file video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
+   >Per ulteriori informazioni sul significato dei predefiniti video, consulta [Predefiniti video per la codifica di file video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe consiglia di selezionare entrambi i set video adattivi per la configurazione dei predefiniti universali o di selezionare l’opzione **[!UICONTROL Codifica video adattiva]**.
 
@@ -118,7 +118,6 @@ La matrice seguente spiega quando utilizzare questi componenti:
 >[!NOTE]
 >
 >Il componente video Dynamic Media Classic utilizza il profilo video universale. È tuttavia possibile ottenere il lettore video basato su HTML5 da utilizzare per Experience Manager. In Dynamic Media Classic, copia il codice di incorporamento del lettore video HTML5 predefinito e inseriscilo nella pagina del tuo Experience Manager.
-
 
 ## Componente video Experience Manager {#aem-video-component}
 

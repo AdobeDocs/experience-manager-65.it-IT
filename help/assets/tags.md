@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
-feature: Visualizzatori
+feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6636'
+source-wordcount: '6633'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ Il campione impostato sopra influisce anche sulla durata del valore dell’eleme
 
 In ogni caso, i valori degli elementi dati guidati dai visualizzatori Dynamic Media non vengono memorizzati nell’archivio locale o sul server; vengono invece conservati solo nella libreria dei tag di Experience Platform lato client. I valori di tali elementi dati scompaiono quando la pagina web viene ricaricata.
 
-In genere, l&#39;editor di elementi dati supporta la selezione della durata di archiviazione [a1/>. ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element) Tuttavia, gli elementi dati che utilizzano l’estensione Dynamic Media Viewers supportano solo l’opzione della durata di archiviazione di **[!UICONTROL None]**. L’impostazione di qualsiasi altro valore è possibile nell’interfaccia utente, ma in questo caso il comportamento Elemento dati non è definito. L&#39;estensione gestisce il valore dell&#39;elemento dati da sola: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
+In genere, l&#39;editor di elementi dati supporta la selezione della durata di archiviazione [a1/>. ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element) Tuttavia, gli elementi dati che utilizzano l’estensione Dynamic Media Viewers supportano solo l’opzione della durata di archiviazione di **[!UICONTROL None]**. L’impostazione di qualsiasi altro valore è possibile nell’interfaccia utente, ma in questo caso il comportamento Elemento dati non è definito. L&#39;estensione gestisce il valore dell&#39;elemento dati da sola: l’elemento dati che mantiene il valore dell’argomento evento visualizzatore durante l’intero ciclo di vita del visualizzatore.
 
 ### Informazioni sulle regole nell’estensione Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -266,7 +266,7 @@ Il metodo più semplice per farlo è quello di completare il seguente processo i
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. È possibile fare riferimento direttamente a un argomento da un evento Dynamic Media Viewer. Immetti il nome completo dell&#39;argomento dell&#39;evento nel campo di input **[!UICONTROL value]** dell&#39;assegnazione della variabile Analytics. Assicurati di circondarla con segni di percentuale (%). Esempio,
+È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. È possibile fare riferimento direttamente a un argomento da un evento Dynamic Media Viewer. Immetti il nome completo dell&#39;argomento dell&#39;evento nel campo di input **[!UICONTROL value]** dell&#39;assegnazione della variabile Analytics. Assicurati di circondarla con segni di percentuale (%). Ad esempio:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -613,7 +613,7 @@ La pubblicazione di una libreria prevede i due passaggi seguenti:
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. Nella pagina Crea nuova libreria , immetti un nome descrittivo per la nuova libreria nel campo **[!UICONTROL Name]** . Esempio,
+1. Nella pagina Crea nuova libreria , immetti un nome descrittivo per la nuova libreria nel campo **[!UICONTROL Name]** . Ad esempio:
 
    *DynamicMediaViewersLib*
 
@@ -737,19 +737,19 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 
    Pagina dei dettagli di integrazione.
 
-1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell&#39;angolo in alto a destra della pagina, seleziona **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** nella finestra **[!UICONTROL Configurazione account tecnico IMS Adobe]** .
+1. Torna alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** che hai lasciato aperta in precedenza. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Avanti]** per aprire la pagina **[!UICONTROL Account]** nella finestra **[!UICONTROL Configurazione account tecnico Adobe IMS]**.
 
    Se hai chiuso la pagina prima, torna all’autore di Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni IMS Adobi]**. Seleziona **[!UICONTROL Crea]**. Nell’elenco a discesa **[!UICONTROL Soluzione cloud]** , seleziona **[!UICONTROL Tag Experience Platform]**. Nell’elenco a discesa **[!UICONTROL Certificato]**, fai clic sul nome del certificato creato in precedenza.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
-   Adobe IMS Technical Account Configuration - Pagina Certificato.
+   Configurazione account tecnico Adobe IMS: pagina Certificato.
 
 1. La pagina **[!UICONTROL Account]** dispone di cinque campi da compilare utilizzando le informazioni della pagina dei dettagli di integrazione del passaggio precedente.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
 
-   Adobe IMS Technical Account Configuration - Pagina Account.
+   Configurazione account tecnico Adobe IMS: pagina Account.
 
 1. Nella pagina **[!UICONTROL Account]** , compila i campi seguenti:
 
@@ -790,7 +790,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`
 
 1. Vicino all&#39;angolo superiore destro della pagina **[!UICONTROL Account]**, selezionare **[!UICONTROL Crea]**.
 
-   Con Experience Manager IMS configurato, ora disponi di un nuovo account IMSA elencato in **[!UICONTROL Configurazioni IMS di Adobe]**.
+   Con Experience Manager IMS configurato, ora disponi di un nuovo account IMSA elencato in **[!UICONTROL Configurazioni Adobe IMS]**.
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
