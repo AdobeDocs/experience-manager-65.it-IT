@@ -3,11 +3,11 @@ title: Digital Rights Management di attività
 description: Scopri come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
-feature: DRM,Gestione risorse
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1398'
 ht-degree: 6%
 
 ---
@@ -69,7 +69,7 @@ Per abilitare la console [!DNL Assets] affinché visualizzi le risorse composte 
 1. Apri [!DNL Experience Manager] Configuration Manager.
 1. Scegli **[!UICONTROL Notifica di scadenza Adobe CQ DAM]**. Per impostazione predefinita, è selezionata l&#39;opzione **[!UICONTROL Utilità di pianificazione basata sul tempo]**, che consente di pianificare un processo per verificare in un momento specifico se una risorsa è scaduta per le risorse secondarie. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
-1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. Ad esempio, l’espressione di esempio `0 0 0 &ast; &ast; ?` attiva il processo a 00 ore.
+1. Per eseguire il processo periodicamente, cancella il campo **[!UICONTROL Time Based Scheduler Rule (Regola modulo di pianificazione basato sul tempo)]** e modifica il tempo in secondi nel campo **[!UICONTROL Periodic Scheduler (Modulo di pianificazione periodica)]**. Ad esempio, l’espressione di esempio `0 0 0 * * ?` attiva il processo a 00 ore.
 1. Seleziona **[!UICONTROL Invia e-mail]** per ricevere e-mail alla scadenza di una risorsa.
 
    >[!NOTE]
