@@ -2,13 +2,13 @@
 title: Sono stati migliorati i tag avanzati
 description: Sono stati migliorati i tag avanzati
 contentOwner: AG
-feature: Tag avanzati, ricerca
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 4%
+source-wordcount: '1544'
+ht-degree: 3%
 
 ---
 
@@ -47,30 +47,30 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 Il servizio applica tag avanzati alle risorse dei seguenti tipi MIME:
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* immagine/x-portatile-anymap
-* immagine/x-portatile-bitmap
-* immagine/x-portatile-grigio
-* immagine/x-portatile-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* immagine/photoshop
-* immagine/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 Il servizio applica tag avanzati alle rappresentazioni di risorse dei seguenti tipi MIME:
 
-* image/jpeg
-* image/pjpeg
-* immagine/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
 ## Onboarding {#onboarding}
 
@@ -79,10 +79,6 @@ Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per
 L’amministratore può seguire il collegamento per integrare il Servizio di contenuti avanzati con [!DNL Experience Manager]. Per integrare il servizio con [!DNL Experience Manager Assets], consulta [Configurare tag avanzati](config-smart-tagging.md).
 
 Il processo di onboarding è completo quando l&#39;amministratore configura il servizio e aggiunge utenti in [!DNL Experience Manager].
-
->[!NOTE]
->
->Se utilizzi [!DNL Experience Manager] 6.3 o versione precedente e richiedi il servizio di assegnazione tag per le risorse, consulta [Tag avanzati](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità di intelligenza artificiale più recenti e sono quindi meno accurati del servizio avanzato di assegnazione tag avanzati.
 
 ## Esaminare risorse e tag {#reviewing-assets-and-tags}
 
