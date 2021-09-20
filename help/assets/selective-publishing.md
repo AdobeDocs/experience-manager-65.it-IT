@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Pubblicazione
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 4%
 
 ---
@@ -70,6 +70,8 @@ Dopo aver configurato la pubblicazione selettiva in una cartella, puoi effettuar
    >[!IMPORTANT]
    >
    >Indipendentemente dall’opzione della modalità di pubblicazione di Dynamic Media selezionata, eventuali aggiornamenti apportati successivamente a una risorsa *già* pubblicata, tali aggiornamenti vengono pubblicati immediatamente senza ulteriori azioni da parte dell’utente.
+   >
+   >Se un video pubblicato viene aggiornato, deve essere pubblicato di nuovo per riflettere le modifiche alla consegna.
 
    | Opzione della modalità di pubblicazione Dynamic Media | Descrizione |
    | --- | --- |
@@ -182,7 +184,7 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
 
 1. Selezionare una delle seguenti opzioni dall&#39;elenco del menu **[!UICONTROL Pubblicazione rapida]**.
 
-   | Opzione Pubblicazione rapida | Funzionamento |
+   | Opzione Pubblicazione rapida | Effetto |
    | --- | --- | 
    | Pubblica in Experience Manager | Pubblica immediatamente ad Experience Manager le risorse selezionate. |
    | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se l’istanza Risorse di Experience Manager ha già configurato  **[!UICONTROL Brand]** Portal. |
