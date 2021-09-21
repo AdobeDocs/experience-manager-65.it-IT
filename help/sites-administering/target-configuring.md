@@ -10,16 +10,16 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2196'
 ht-degree: 5%
 
 ---
 
 # Configurazione manuale dell’integrazione con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
-Puoi modificare le configurazioni della procedura guidata di consenso che hai effettuato quando utilizzi la procedura guidata oppure puoi integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
+Puoi modificare le configurazioni della procedura guidata di consenso che hai creato quando utilizzi la procedura guidata oppure puoi integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
 
 ## Modifica delle configurazioni della procedura guidata di consenso {#modifying-the-opt-in-wizard-configurations}
 
@@ -72,7 +72,7 @@ Puoi configurare Adobe Target per utilizzare Adobe Analytics come origine per la
 
 >[!NOTE]
 >
->L’autenticazione con credenziali utente (legacy) non funziona con A4T (sia per Target che per Analytics). Pertanto, i clienti devono utilizzare [autenticazione IMS](/help/sites-administering/integration-ims-adobe-io.md) invece dell&#39;autenticazione User-Credential.
+>L’autenticazione con credenziali utente (legacy) non funziona con A4T (sia per Target che per Analytics). Pertanto, i clienti devono utilizzare l’autenticazione IMS invece dell’autenticazione User-Credential.
 
 A questo scopo, devi specificare con quale configurazione cloud A4T collegare la configurazione cloud di Adobe Target:
 
@@ -88,7 +88,7 @@ A questo scopo, devi specificare con quale configurazione cloud A4T collegare la
    >Durante la configurazione di A4T con AEM, è possibile che manchi una voce di riferimento alla configurazione. Per selezionare il framework di analytics, procedi come segue:
    >
    >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
-   1. Passa a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Accedi a `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Imposta la proprietà **disable** su **false**.
    1. Tocca o fai clic su **Salva tutto**.
 

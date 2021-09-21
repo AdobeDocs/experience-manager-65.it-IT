@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -245,9 +245,6 @@ Per confermare che la configurazione funziona come previsto:
    * **Configurazione** IMS: seleziona il nome della configurazione IMS
    * **Tipo** API: REST
    * **Configurazione** di A4T Analytics Cloud: Seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se non visualizzi la configurazione cloud, consulta la nota in [Configurazione di A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-
-   >[!NOTE]
-   >L’autenticazione con credenziali utente (legacy) non funziona con A4T (sia per Target che per Analytics). Di conseguenza, i clienti devono utilizzare     Autenticazione IMS invece dell’autenticazione User-Credential.
    * **Utilizza targeting** accurato: Per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
    * **Sincronizzare segmenti da Adobe Target**: Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; è equivalente al &quot;pubblico&quot; di Target.
    * **Libreria** client: Seleziona se desideri la libreria client AT.js o mbox.js (obsoleto).
