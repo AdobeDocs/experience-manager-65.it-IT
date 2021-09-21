@@ -1,8 +1,8 @@
 ---
 title: Integrazione con Adobe Target tramite Adobe I/O
-seo-title: Integrazione con Adobe Target tramite Adobe I/O
+seo-title: Integration with Adobe Target using Adobe I/O
 description: Scopri come integrare AEM con Adobe Target utilizzando Adobe I/O
-seo-description: Scopri come integrare AEM con Adobe Target utilizzando Adobe I/O
+seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
+exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
+source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1563'
 ht-degree: 1%
 
 ---
 
+# Integrazione con Adobe Target tramite Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
-# Integrazione con Adobe Target utilizzando Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
-
-L’integrazione di AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System) e Adobe I/O.
+L’integrazione di AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System) e di Adobe I/O.
 
 >[!NOTE]
 >
@@ -54,7 +53,7 @@ Prima di avviare questa procedura:
 La prima fase della configurazione consiste nel creare una configurazione IMS in AEM e generare la chiave pubblica.
 
 1. In AEM aprire il menu **Strumenti**.
-1. Nella sezione **Sicurezza** , seleziona **Configurazioni IMS Adobe**.
+1. Nella sezione **Sicurezza** , seleziona **Configurazioni Adobe IMS**.
 1. Seleziona **Crea** per aprire **Configurazione account tecnico Adobe IMS**.
 1. Utilizzando il menu a discesa in **Configurazione cloud**, seleziona **Adobe Target**.
 1. Attiva **Crea nuovo certificato** e immetti un nuovo alias.
@@ -211,7 +210,7 @@ Per confermare che la configurazione funziona come previsto:
 
    ![](assets/integrate-target-io-13.png)
 
-## Configurazione dell&#39;Cloud Service Adobe Target {#configuring-the-adobe-target-cloud-service}
+## Configurazione dell’Cloud Service Adobe Target {#configuring-the-adobe-target-cloud-service}
 
 È ora possibile fare riferimento alla configurazione affinché un Cloud Service utilizzi l’API di Target Standard:
 
@@ -231,7 +230,7 @@ Per confermare che la configurazione funziona come previsto:
 1. Immetti i dettagli nella scheda **Impostazioni Adobe Target** :
 
    * **Autenticazione**: IMS
-   * **ID tenant**: ID tenant Adobe IMS. Vedi anche la sezione [ID tenant e codice client](#tenant-client) .
+   * **ID tenant**: l’ID tenant di Adobe IMS. Vedi anche la sezione [ID tenant e codice client](#tenant-client) .
 
       >[!NOTE]
       >
@@ -246,6 +245,9 @@ Per confermare che la configurazione funziona come previsto:
    * **Configurazione** IMS: seleziona il nome della configurazione IMS
    * **Tipo** API: REST
    * **Configurazione** di A4T Analytics Cloud: Seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se non visualizzi la configurazione cloud, consulta la nota in [Configurazione di A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   >[!NOTE]
+   >L’autenticazione con credenziali utente (legacy) non funziona con A4T (sia per Target che per Analytics). Di conseguenza, i clienti devono utilizzare     Autenticazione IMS invece dell’autenticazione User-Credential.
    * **Utilizza targeting** accurato: Per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
    * **Sincronizzare segmenti da Adobe Target**: Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; è equivalente al &quot;pubblico&quot; di Target.
    * **Libreria** client: Seleziona se desideri la libreria client AT.js o mbox.js (obsoleto).
