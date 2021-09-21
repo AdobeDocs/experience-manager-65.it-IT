@@ -2,10 +2,10 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: becdfee534e4464147811302ed67de74b8044a24
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 43%
+source-wordcount: '1745'
+ht-degree: 42%
 
 ---
 
@@ -28,11 +28,12 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
+| [!DNL Sites] | Frammenti di contenuto semplici basati su modelli. | [La ](/help/assets/content-fragments/content-fragments-models.md) frammentazione del contenuto strutturato basata su modelli. |
 | Integrazione  Creative Cloud | AEM a Creative Cloud Folder Sharing (Condivisione cartelle) è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Consigliamo ai clienti di passare a nuove funzionalità di integrazione Creative Cloud, tra cui Adobe Asset Link o AEM’app desktop. |
 | Assets | `AssetDownloadServlet`Per la pubblicazione di istanze,  è disattivato per impostazione predefinita. Per ulteriori informazioni, vedi [Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). | Configurazione descritta nell’[Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). |
 | Risorse | Se un utente non dispone di autorizzazioni sufficienti (lettura e scrittura) su `/content/dam/collections`, non può creare una raccolta. | Rispetta le impostazioni di controllo dell’accesso dell’utente e verifica le autorizzazioni appropriate. |
 | Adobe Search&amp;Promote | L’integrazione con Adobe Search&amp;Promote è obsoleta. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione con Search&amp;Promote. Nota: l’integrazione con Search&amp;Promote rimane completamente supportata anche se obsoleta. |  |
-| Gestione tag DTM | L’integrazione con DTM (Dynamic Tag Manager) è obsoleta. | Inizia a utilizzare Adobe Experience Platform Launch come gestore di tag. |
+| Gestione tag DTM | L’integrazione con DTM (Dynamic Tag Manager) è obsoleta. | Inizia a utilizzare Adobe Experience Platform Launch come gestore di tag(configurabile). |
 | Adobe Target | Con l’aggiunta della possibilità per AEM di connettersi al servizio Adobe Target utilizzando l’ API standard Adobe Target (Rest API) basata su [!DNL Adobe I/O] in AEM 6.5, la modalità API (XML) di Target Classic è obsoleta. | Riconfigura l&#39;integrazione in [utilizza la nuova API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
 | Adobe Target | L’utilizzo dell’integrazione basata su `mbox.js` con Adobe Target in AEM è obsoleta. | Passa a utilizzare `at.js` 1.x. |
 | Commerce | [CIF ](https://github.com/adobe/commerce-cif-api) RESTè stato fornito nel 2018 come set di microservizi per consentire integrazioni tra motori AEM e commerce. Dopo l’acquisizione del Magento da parte dell’Adobe a metà del 2018, l’Adobe ha deciso di modificare il proprio approccio per due motivi. Il Magento dispone di un proprio set di API Commerce (REST e GraphQL) e non è buona prassi mantenere due set di API. Le tendenze del mercato indicano che i clienti si stavano spostando verso GraphQL, perché è un modo più efficiente di eseguire query sui dati. Nel 2019, Adobe ha rilasciato il nuovo Commerce Integration Framework utilizzando le API GraphQL di Magenti come fonte di verità. L’Adobe non prevede di effettuare ulteriori investimenti in REST CIF. Si consiglia vivamente ai clienti di utilizzare la soluzione sostitutiva. | Per le integrazioni AEM-Magento, passa a [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) e [AEM componenti core CIF](https://github.com/adobe/aem-core-cif-components). Vedi Integrazione AEM e Magento [tramite Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). Il supporto per le integrazioni di terze parti (diverse dal Magento) con il nuovo approccio è nella nostra tabella di marcia. |
@@ -70,7 +71,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Nelle versi
 | [!DNL Assets] | La funzione di offload delle risorse viene rimossa in [!DNL Adobe Experience Manager] 6.5. | Nessuna sostituzione disponibile. |
 | Cache | `system/console/slingjsp` La rimozione di non è più disponibile in AEM 6.5. | Le classi e la cache Slightly sono memorizzate nel bundle Apache Sling Commons FileSystem ClassLoader . Puoi controllare il numero del bundle nella Console Web AEM e rimuovere la cartella della cache direttamente dal file system (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
-## Pre-annuncio per la versione successiva {#pre-announcement-for-next-release}
+## Pre-annuncio per la prossima versione {#pre-announcement-for-next-release}
 
 Questa sezione viene utilizzata per preannunciare le modifiche imminenti nelle versioni future. Le modifiche annunciate non sono ancora efficaci, ma avranno un impatto sui clienti. Ad esempio, le funzioni non sono ancora obsolete ma hanno un impatto sugli utenti dopo la rimozione. Questi aggiornamenti vengono forniti a scopo di pianificazione.
 
