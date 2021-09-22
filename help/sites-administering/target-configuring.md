@@ -88,8 +88,7 @@ A questo scopo, devi specificare con quale configurazione cloud A4T collegare la
    >Durante la configurazione di A4T con AEM, è possibile che manchi una voce di riferimento alla configurazione. Per selezionare il framework di analytics, procedi come segue:
    >
    >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
-   1. Accedi a:
-      `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Accedi a: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Imposta la proprietà **disable** su **false**.
    1. Tocca o fai clic su **Salva tutto**.
 
