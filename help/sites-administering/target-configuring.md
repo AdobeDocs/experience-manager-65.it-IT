@@ -10,16 +10,16 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 7da4a482e709a8b6bcc5537905ce811b5363e19b
+source-git-commit: b0ccbf9e63cd9db00004ae96b2556df43f4b1478
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2199'
 ht-degree: 5%
 
 ---
 
 # Configurazione manuale dell’integrazione con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
-Puoi modificare le configurazioni della procedura guidata di consenso che hai creato quando utilizzi la procedura guidata oppure puoi integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
+Puoi modificare le configurazioni della procedura guidata di consenso che hai effettuato quando utilizzi la procedura guidata oppure puoi integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
 
 ## Modifica delle configurazioni della procedura guidata di consenso {#modifying-the-opt-in-wizard-configurations}
 
@@ -88,14 +88,20 @@ A questo scopo, devi specificare con quale configurazione cloud A4T collegare la
    >Durante la configurazione di A4T con AEM, è possibile che manchi una voce di riferimento alla configurazione. Per selezionare il framework di analytics, procedi come segue:
    >
    >1. Passa a **Strumenti** > **Generale** > **CRXDE Lite**.
-   1. Accedi a: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Passa a [1] (vedi sotto)
    1. Imposta la proprietà **disable** su **false**.
    1. Tocca o fai clic su **Salva tutto**.
 
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+[1]
 
-   Fai clic su **OK**. Quando esegui il targeting del contenuto con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
+```
+   >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+```
+
+![chlimage_1-159](assets/chlimage_1-159.png)
+
+Fai clic su **OK**. Quando esegui il targeting del contenuto con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
 
 ## Integrazione manuale con Adobe Target {#manually-integrating-with-adobe-target}
 
