@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 1a3430ef3d9e9f4fcd0aaced904644b36953292b
+source-git-commit: fb14c1901394198de59c2369563a9dcca2f95f4e
 workflow-type: tm+mt
-source-wordcount: '2198'
+source-wordcount: '2199'
 ht-degree: 5%
 
 ---
@@ -92,6 +92,8 @@ A questo scopo, devi specificare con quale configurazione cloud A4T collegare la
    1. Imposta la proprietà **disable** su **false**.
    1. Tocca o fai clic su **Salva tutto**.
 
+
+[1]
 
 ```
 /libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
