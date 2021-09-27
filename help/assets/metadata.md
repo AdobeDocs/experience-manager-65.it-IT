@@ -3,12 +3,12 @@ title: Gestire i metadati delle risorse digitali
 description: Scopri i tipi di metadati e come gestire i metadati per le risorse per organizzare ed elaborare facilmente le risorse.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Assegnazione tag, metadati
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2336'
 ht-degree: 11%
 
 ---
@@ -110,7 +110,7 @@ L’importazione dei metadati è asincrona e non ostacola le prestazioni del sis
    | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per cui devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | [!UICONTROL Separatore di campi] | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | [!UICONTROL Delimitatore valori multipli] | Separatore dei valori dei metadati. Il valore predefinito è `|`. |
-   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro [!UICONTROL DAM Metadata WriteBack] (che scrive i metadati nei dati XMP binari). L’abilitazione dei flussi di lavoro di avvio rallenta il sistema. |
+   | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostato su `true` e le impostazioni predefinite sono attive per il flusso di lavoro [!UICONTROL DAM Metadata WriteBack] (che scrive i metadati nei dati XMP binari). L&#39;abilitazione dei flussi di lavoro rallenta il sistema. |
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna del file CSV con le risorse. |
 
 1. Fai clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Dopo l&#39;importazione dei metadati, una notifica viene visualizzata nella casella in entrata [!UICONTROL Notifica].
@@ -234,7 +234,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 >
 >* [Concetti di metadati e comprensione](metadata-concepts.md).
 >* [Modifica delle proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
