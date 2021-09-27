@@ -1,8 +1,8 @@
 ---
 title: Ottimizzazione delle prestazioni
-seo-title: Ottimizzazione delle prestazioni
+seo-title: Performance Optimization
 description: Scopri come configurare alcuni aspetti di AEM per ottimizzare le prestazioni.
-seo-description: Scopri come configurare alcuni aspetti di AEM per ottimizzare le prestazioni.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
-ht-degree: 2%
+source-wordcount: '6645'
+ht-degree: 14%
 
 ---
-
 
 # Ottimizzazione delle prestazioni {#performance-optimization}
 
@@ -87,13 +86,13 @@ Non va sottovalutata l&#39;importanza di stabilire in modo adeguato gli obiettiv
 
 Stabilire buoni obiettivi di performance solidi è davvero una delle aree più difficili. Spesso è meglio raccogliere i registri e i benchmark reali da un sito web comparabile (ad esempio il predecessore del nuovo sito web).
 
-### Rimani pertinente {#stay-relevant}
+### Pertinente {#stay-relevant}
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 È importante ottimizzare un collo di bottiglia alla volta. Se tenti di eseguire le operazioni in parallelo senza convalidare l’impatto dell’ottimizzazione unica, perderai traccia della misura di ottimizzazione effettivamente supportata.
 
-### Cicli di iterazione delle assi {#agile-iteration-cycles}
+### Cicli di iterazione dell&#39;Agile {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -130,7 +129,7 @@ Anche il modo in cui è strutturato un archivio di contenuti può influire sulle
 
 I tuoi migliori amici durante un normale esercizio di ottimizzazione delle prestazioni sono:
 
-* Le azioni `request.log`
+* Le azioni   `request.log`
 * Temporizzazione basata su componenti
 * Ultimo, ma non meno importante, profilatore java.
 
@@ -235,7 +234,7 @@ Configura questi servizi per limitare il numero massimo di processi di flusso di
 >
 >La configurazione di queste code di lavoro influisce su tutti i flussi di lavoro a meno che non sia stata creata una coda di lavoro per un modello di flusso di lavoro specifico (consulta [Configurare la coda per un modello di flusso di lavoro specifico](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) di seguito).
 
-#### Configurazione nell&#39;archivio {#configuration-in-the-repo}
+#### Configurazione nell’archivio {#configuration-in-the-repo}
 
 Se stai configurando i servizi [utilizzando un nodo sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), devi trovare il PID dei servizi esistenti, ad esempio: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Puoi scoprire il PID utilizzando la console Web.
 
@@ -260,7 +259,7 @@ Gli argomenti di lavoro effettivi generati dai modelli di flusso di lavoro inclu
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
-Pertanto, puoi creare una coda di lavoro per l’argomento che corrisponde agli argomenti di lavoro del modello di flusso di lavoro. La configurazione delle proprietà relative alle prestazioni della coda influisce solo sul modello di flusso di lavoro che genera i processi che corrispondono all’argomento della coda.
+Pertanto, puoi creare una coda di lavoro per l’argomento che corrisponde agli argomenti di lavoro del modello di flusso di lavoro. La configurazione delle proprietà relative alle prestazioni della coda influisce solo sul modello di flusso di lavoro che genera i lavori che corrispondono all’argomento della coda.
 
 La procedura seguente crea una coda di lavoro per un flusso di lavoro, utilizzando come esempio il flusso di lavoro **Aggiorna risorsa DAM** .
 
@@ -294,7 +293,7 @@ Considerazioni aggiuntive:
 * Separazione del &quot;lavoro in corso&quot; sull&#39;autore da &quot;finale&quot; sulla pubblicazione
 * Separazione degli utenti interni sull&#39;autore da visitatori/utenti esterni al momento della pubblicazione (ad esempio agenti, rappresentanti della stampa, clienti, studenti, ecc.).
 
-## Tecniche consigliate per l’affidabilità della qualità {#best-practices-for-quality-assurance}
+## Best practice per la garanzia della qualità {#best-practices-for-quality-assurance}
 
 Le prestazioni sono di importanza fondamentale per l’ambiente di pubblicazione. Pertanto, durante l’implementazione del progetto devi pianificare e analizzare attentamente i test delle prestazioni che effettuerai per l’ambiente di pubblicazione.
 
@@ -387,12 +386,12 @@ I componenti critici dovranno essere testati, sia in condizioni medie che di pic
 
 In entrambi i casi, è possibile definire il numero previsto di transazioni al secondo quando un numero predefinito di utenti utilizza il sistema.
 
-| Componente | Tipo di test | No. degli utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
+| Component | Tipo di test | No. degli utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Homepage Utente singolo | Media | 1 | 3 |  |  |
-|  | Picco | 3 | 3 |  |  |
-| Homepage 100 utenti | Media | 100 | 3 |  |  |
-|  | Picco | 100 | 3 |  |
+| Homepage Utente singolo | Media | 1 | 1 |  |  |
+|  | Picco | 1 | 3 |  |  |
+| Homepage 100 utenti | Media | 100 | 1 |  |  |
+|  | Picco | 100 | 1 |  |
 
 #### Test combinati dei componenti {#combined-component-tests}
 
@@ -401,17 +400,17 @@ Il test dei componenti in combinazione consente di riflettere meglio il comporta
 | Scenario | Componente | No. degli utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Media mista | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 3 |  |  |
+|  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 10 | 2 |  |  |
-|  | Eventi | 10 | 3 |  |  |
-|  | Activations | 10 | 3 |  | Simulazione del comportamento dell’autore. |
+|  | Eventi | 10 | 1 |  |  |
+|  | Activations | 10 | 1 |  | Simulazione del comportamento dell’autore. |
 | Picco misto | Home page | 100 | 5 |  |  |
 |  | Ricerca | 50 | 5 |  |  |
 |  | Notizie | 100 | 10 |  |  |
 |  | Eventi | 100 | 10 |  |  |
 |  | Activations | 20 | 20 |  | Simulazione del comportamento dell’autore. |
 
-#### Test live {#going-live-tests}
+#### Esecuzione di test live {#going-live-tests}
 
 Nei primi giorni dalla disponibilità del sito web, è possibile aspettarsi un aumento del livello di interesse. Questo sarà probabilmente anche maggiore dei valori di picco per i quali hai effettuato il test. Si consiglia vivamente di testare gli scenari Go Live per garantire che il sistema possa soddisfare questa situazione.
 
@@ -434,10 +433,10 @@ Quando si elaborano questi test, è opportuno ricordare che non tutti gli scenar
 
 | Scenario di errore | Tipo errore | No. degli utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Sovraccarico del componente di ricerca | Ricerca nei caratteri jolly globali (asterisco) | 10 | 3 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
+| Sovraccarico del componente di ricerca | Ricerca nei caratteri jolly globali (asterisco) | 10 | 1 |  | Solo &amp;ast;&amp;ast;&amp;ast; vengono cercate. |
 |  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto. |
-|  | Stringa vuota | 10 | 3 |  | Ricerca di una stringa vuota. |
-|  | Caratteri speciali | 10 | 3 |  | Ricerca di caratteri speciali. |
+|  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
+|  | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |
 
 #### Test di resistenza {#endurance-tests}
 
@@ -446,10 +445,10 @@ Determinati problemi saranno riscontrati solo dopo che il sistema è stato in fu
 | Scenario | Tipo di test | No. degli utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Prova di resistenza (72 ore) | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 3 |  |  |
+|  | Ricerca | 10 | 1 |  |  |
 |  | Notizie | 20 | 2 |  |  |
 |  | Eventi | 10 | 1 |  |  |
-|  | Activations | 3 | 3 |  | Simulazione del comportamento dell’autore. |
+|  | Activations | 1 | 1 |  | Simulazione del comportamento dell’autore. |
 
 ### Ottimizzazione {#optimization}
 
@@ -488,11 +487,11 @@ Il [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/disp
 
 >[!NOTE]
 >
->Le versioni di Dispatcher sono indipendenti da AEM, tuttavia la documentazione di Dispatcher è incorporata nella documentazione AEM. Utilizza sempre la documentazione di Dispatcher incorporata nella documentazione per l’ultima versione di AEM.
+>Le versioni di Dispatcher sono indipendenti da AEM, tuttavia la documentazione di Dispatcher è incorporata nella documentazione di AEM. Utilizza sempre la documentazione di Dispatcher incorporata nella documentazione della più recente versione di AEM.
 >
 >Potresti essere stato reindirizzato a questa pagina se hai seguito un collegamento alla documentazione di Dispatcher incorporato nella documentazione di una versione precedente di AEM.
 
-Dispatcher offre una serie di meccanismi incorporati che è possibile utilizzare per ottimizzare le prestazioni se il sito web ne trae vantaggio. Questa sezione spiega come progettare il sito web per massimizzare i vantaggi della memorizzazione in cache.
+Dispatcher offre una serie di meccanismi incorporati che è possibile utilizzare per ottimizzare le prestazioni se il sito web ne trae vantaggio. Questa sezione spiega come progettare il sito web per massimizzare i vantaggi del caching.
 
 >[!NOTE]
 >
@@ -502,13 +501,11 @@ Dispatcher offre una serie di meccanismi incorporati che è possibile utilizzare
 >* Non è possibile memorizzare altri elementi, ad esempio cookie, dati di sessione e dati del modulo.
 
 >
->
-In generale, molte strategie di caching richiedono la selezione di URL validi e non si basano su questi dati aggiuntivi.
+>In generale, molte strategie di caching richiedono la selezione di URL validi e non utilizzano questi dati aggiuntivi.
 >
 >Con il Dispatcher versione 4.1.11 è anche possibile memorizzare in cache le intestazioni di risposta, consulta [Memorizzazione in cache delle intestazioni di risposta HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 
-
-### Calcolo del rapporto cache del dispatcher {#calculating-the-dispatcher-cache-ratio}
+### Calcolo del rapporto della cache del Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
 La formula del rapporto cache stima la percentuale di richieste gestite dalla cache rispetto al numero totale di richieste che arrivano nel sistema. Per calcolare il rapporto della cache è necessario quanto segue:
 
@@ -528,9 +525,9 @@ Se non disponi di un’associazione tra un editore e un dispatcher, dovrai aggiu
 >
 >Per ottenere prestazioni ottimali, Adobe consiglia un rapporto cache tra il 90% e il 95%.
 
-#### Utilizzo della codifica coerente delle pagine {#using-consistent-page-encoding}
+#### Utilizzo di una codifica coerente delle pagine {#using-consistent-page-encoding}
 
-Con Dispatcher versione 4.1.11 è possibile memorizzare in cache le intestazioni di risposta. Se non si memorizzano nella cache le intestazioni di risposta in Dispatcher, possono verificarsi problemi se si memorizzano le informazioni di codifica della pagina nell’intestazione. In questa situazione, quando Dispatcher serve una pagina dalla cache, per la pagina viene utilizzata la codifica predefinita del server web. Esistono due modi per evitare questo problema:
+Con Dispatcher versione 4.1.11 è possibile memorizzare in cache le intestazioni di risposta. Se non si memorizzano nella cache le intestazioni di risposta in Dispatcher, possono verificarsi problemi se si memorizzano le informazioni di codifica della pagina nell’intestazione. In questa situazione, quando Dispatcher richiama una pagina dalla cache, per essa viene utilizzata la codifica predefinita del server web. Esistono due modi per evitare questo problema:
 
 * Se utilizzi una sola codifica, accertati che la codifica utilizzata sul server web sia la stessa della codifica predefinita del sito web AEM.
 * Utilizza un tag `<META>` nella sezione HTML `head` per impostare la codifica, come nell’esempio seguente:
@@ -539,15 +536,15 @@ Con Dispatcher versione 4.1.11 è possibile memorizzare in cache le intestazioni
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 ```
 
-#### Evita parametri URL {#avoid-url-parameters}
+#### Evita i parametri URL {#avoid-url-parameters}
 
-Se possibile, evita i parametri URL per le pagine che desideri memorizzare in cache. Ad esempio, se disponi di una raccolta immagini, il seguente URL non viene mai memorizzato nella cache (a meno che Dispatcher non sia [configurato di conseguenza](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Se possibile, evita i parametri URL per le pagine che vuoi memorizzare in cache. Ad esempio, se hai una galleria di immagini, il seguente URL non viene mai memorizzato in cache (a meno che Dispatcher non sia [configurato per farlo](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
 ```
 
-Tuttavia, puoi inserire questi parametri nell’URL della pagina, come segue:
+Tuttavia, puoi inserire questi parametri nell’URL della pagina nel modo che segue:
 
 ```xml
 www.myCompany.com/pictures/gallery.christmas.1.html
@@ -555,13 +552,13 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Questo URL chiama la stessa pagina e lo stesso modello di `gallery.html`. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
+>Questo URL richiama la stessa pagina e lo stesso modello del file `gallery.html`. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
 
-#### Personalizza per URL {#customize-by-url}
+#### Personalizza in base all&#39;URL {#customize-by-url}
 
-Se consenti agli utenti di modificare la dimensione del font (o qualsiasi altra personalizzazione del layout), accertati che le diverse personalizzazioni siano riportate nell’URL.
+Se consenti agli utenti di modificare la dimensione del font (o di effettuare qualunque altra personalizzazione del layout), accertati che le diverse personalizzazioni siano poi riportate nell’URL.
 
-Ad esempio, i cookie non vengono memorizzati nella cache, quindi se si memorizzano le dimensioni del font in un cookie (o in un meccanismo simile), le dimensioni del font non vengono mantenute per la pagina memorizzata nella cache. Di conseguenza, Dispatcher restituisce i documenti di qualsiasi dimensione di font a caso.
+Ad esempio, i cookie non vengono memorizzati in cache, quindi se memorizzi la dimensione del font in un cookie (o in un meccanismo simile), essa non viene mantenuta per la pagina memorizzata in cache. Di conseguenza, Dispatcher restituisce documenti con qualunque dimensione del font, a caso.
 
 L’inclusione della dimensione del font nell’URL come selettore evita questo problema:
 
@@ -571,47 +568,47 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->Per la maggior parte degli aspetti del layout è inoltre possibile utilizzare fogli di stile e/o script sul lato client. Questi di solito funzionano molto bene con la memorizzazione in cache.
+>Per la maggior parte degli aspetti del layout, è inoltre possibile utilizzare fogli di stile e/o script dal lato client. Questi di solito funzionano molto bene con il caching.
 >
->Questa funzione è utile anche per una versione di stampa, in cui è possibile utilizzare un URL come:
+>Questa funzione è utile anche per la versione stampata, in cui è possibile utilizzare un URL come:
 >
 >`www.myCompany.com/news/main.print.html`
 >
->Utilizzando la combinazione di script della definizione del modello, è possibile specificare uno script separato che esegue il rendering delle pagine di stampa.
+>Utilizzando il globbing dello script della definizione del modello, puoi specificare uno script separato che esegue il rendering delle pagine da stampare.
 
-#### Annullamento della validità dei file immagine utilizzati come titoli {#invalidating-image-files-used-as-titles}
+#### Annullamento della validità dei file di immagine utilizzati come titoli {#invalidating-image-files-used-as-titles}
 
-Se esegui il rendering dei titoli di pagina o di altro testo come immagini, si consiglia di memorizzare i file in modo che vengano eliminati in seguito a un aggiornamento del contenuto della pagina:
+Se esegui il rendering dei titoli di pagina, o di altro testo, come immagini, si consiglia di memorizzare i file in modo che vengano eliminati al momento di un aggiornamento del contenuto della pagina:
 
 1. Posiziona il file di immagine nella stessa cartella della pagina.
 1. Utilizza il seguente formato di denominazione per il file di immagine:
 
    `<page file name>.<image file name>`
 
-Ad esempio, puoi memorizzare il titolo della pagina `myPage.html` in `file myPage.title.gif`. Questo file viene eliminato automaticamente se la pagina viene aggiornata, quindi qualsiasi modifica al titolo della pagina viene automaticamente riflessa nella cache.
+Ad esempio, puoi memorizzare il titolo della pagina `myPage.html` in `file myPage.title.gif`. Questo file viene eliminato automaticamente, se la pagina viene aggiornata, quindi qualsiasi modifica al titolo della pagina viene automaticamente riportata nella cache.
 
 >[!NOTE]
 >
->Il file immagine non esiste necessariamente fisicamente nell&#39;istanza AEM. È possibile utilizzare uno script che crea in modo dinamico il file di immagine. Dispatcher quindi memorizza il file sul server web.
+>Il file di immagine non esiste necessariamente come elemento fisico nell’istanza AEM. Puoi utilizzare uno script che crea il file di immagine in modo dinamico. Dispatcher memorizza quindi il file sul server web.
 
-#### Annullamento della validità dei file immagine utilizzati per la navigazione {#invalidating-image-files-used-for-navigation}
+#### Annullamento della validità dei file di immagine utilizzati per la navigazione {#invalidating-image-files-used-for-navigation}
 
-Se utilizzate le immagini per le voci di navigazione, il metodo è sostanzialmente lo stesso utilizzato per i titoli, leggermente più complesso. Memorizza tutte le immagini di navigazione con le pagine di destinazione. Se si utilizzano due immagini per la modalità normale e attiva, è possibile utilizzare i seguenti script:
+Se utilizzi le immagini per le voci di navigazione, il metodo è sostanzialmente lo stesso utilizzato per i titoli, anche se leggermente più complesso. Memorizza tutte le immagini di navigazione con le pagine di destinazione. Se utilizzi due immagini per la modalità normale e attiva, puoi utilizzare i seguenti script:
 
-* Uno script che visualizza la pagina come normale.
-* Uno script che elabora &quot;.Normal&quot; richiede e restituisce l&#39;immagine normale.
-* Uno script che elabora &quot;.active&quot; richiede e restituisce l&#39;immagine attivata.
+* Uno script che visualizza la pagina, come normale.
+* Uno script che elabora le richieste “.normal” e restituisce l’immagine normale.
+* Uno script che elabora le richieste “.active” e restituisce l’immagine attivata.
 
-È importante creare queste immagini con lo stesso handle di denominazione della pagina, per garantire che un aggiornamento del contenuto elimini queste immagini e la pagina.
+È importante creare queste immagini con lo stesso handle di denominazione della pagina, per avere la certezza che un aggiornamento del contenuto elimini queste immagini insieme alla pagina.
 
-Per le pagine non modificate, le immagini rimangono comunque nella cache, anche se le pagine stesse vengono solitamente invalidate automaticamente.
+Per le pagine non modificate, le immagini rimangono comunque nella cache, sebbene le pagine stesse vengano di solito invalidate automaticamente.
 
 #### Personalizzazione {#personalization}
 
-Si consiglia di limitare la personalizzazione a dove necessario. Per spiegare perché:
+Si consiglia di limitare la personalizzazione a dove necessario. Ecco il perché:
 
-* Se utilizzi una pagina iniziale liberamente personalizzabile, questa deve essere composta ogni volta che un utente la richiede.
-* Se invece si offre una scelta di 10 pagine iniziali diverse, è possibile memorizzare in cache ciascuna di esse, migliorando così le prestazioni.
+* Se utilizzi una pagina iniziale liberamente personalizzabile, questa pagina deve essere composta ogni volta che un utente la richiede.
+* Se invece offri una scelta tra 10 pagine iniziali diverse, puoi memorizzare in cache ciascuna di esse, migliorando così le prestazioni.
 
 >[!TIP]
 >Per ulteriori dettagli sulla configurazione della cache del Dispatcher, consulta il [AEM Tutorial sulla cache del Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) e la relativa sezione su [Memorizzazione in cache del contenuto protetto.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
@@ -629,7 +626,7 @@ Per quanto riguarda il mixaggio di contenuti pubblici e limitati su una pagina, 
 
 #### Connessioni permanenti {#sticky-connections}
 
-[Connessione ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) fissa, assicurarsi che i documenti per un utente siano tutti composti sullo stesso server. Se un utente lascia questa cartella e successivamente vi ritorna, la connessione rimane bloccata. Definire una cartella per contenere tutti i documenti che richiedono connessioni permanenti per il sito web. Cerca di non avere altri documenti. Questo influisce sul bilanciamento del carico se utilizzi pagine personalizzate e dati di sessione.
+[Le connessioni permanenti](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantiscono che di un utente siano composti tutti sullo stesso server. Se un utente esce da questa cartella e successivamente vi rientra, la connessione è ancora attiva. Definisci una cartella in modo che contenga tutti i documenti che richiedono connessioni permanenti per il sito web. Cerca di non avere altri documenti in quella cartella. Ciò impatta sul bilancimento del carico, se utilizzi pagine e dati di sessione personalizzati.
 
 #### Tipi MIME {#mime-types}
 
@@ -638,19 +635,19 @@ Esistono due modi in cui un browser può determinare il tipo di file:
 1. Con la sua estensione (ad es. `.html`, `.gif`, `.jpg`, ecc.)
 1. In base al tipo MIME che il server invia con il file.
 
-Per la maggior parte dei file, il tipo MIME è implicito nell’estensione del file. i.e.:
+Per la maggior parte dei file, il tipo MIME è implicito nell’estensione del file. Ovvero:
 
 1. Con la sua estensione (ad es. `.html`, `.gif`, `.jpg`, ecc.)
 1. In base al tipo MIME che il server invia con il file.
 
-Se il nome del file non ha un&#39;estensione, viene visualizzato come testo normale.
+Se il nome del file non ha estensione, viene visualizzato come testo normale.
 
 Con Dispatcher versione 4.1.11 è possibile memorizzare in cache le intestazioni di risposta. Se non trovi nella cache le intestazioni di risposta su Dispatcher, tieni presente che il tipo MIME fa parte dell’intestazione HTTP. Di conseguenza, se l&#39;applicazione AEM restituisce file che non hanno una fine riconosciuta del file e si basano invece sul tipo MIME, questi file potrebbero essere visualizzati in modo non corretto.
 
-Per assicurarsi che i file siano memorizzati nella cache corretta, attenersi alle seguenti linee guida:
+Per avere la certezza i file siano memorizzati in cache correttamente, attieniti alle seguenti linee guida:
 
-* Assicurati che i file abbiano sempre l&#39;estensione corretta.
-* Evitare gli script di server di file generici con URL quali `download.jsp?file=2214`. Riscrittura dello script per utilizzare gli URL contenenti la specifica del file. Per l’esempio precedente questo sarebbe `download.2214.pdf`.
+* Verifica che i file abbiano sempre l’estensione corretta.
+* Evita gli script di server di file generici che hanno URL del tipo `download.jsp?file=2214`. Riscrittura dello script per utilizzare gli URL contenenti la specifica del file. Per l’esempio precedente questo sarebbe `download.2214.pdf`.
 
 ## Prestazioni di backup {#backup-performance}
 
@@ -673,7 +670,7 @@ Il sottosistema disco su questo server è abbastanza veloce, rappresentativo di 
 
 La configurazione AEM posiziona l&#39;archivio e il datastore sullo stesso volume logico, insieme a tutto il sistema operativo e AEM software. La directory di destinazione per i backup risiede anche in questo file system logico.
 
-#### Volumi di dati {#data-volumes}
+#### Volumi dei dati {#data-volumes}
 
 La tabella seguente illustra le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene prima installato, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui è stato eseguito il backup. I backup verranno creati a incrementi specifici per rappresentare un grande aumento dei contenuti e di ciò che può essere prodotto in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) sarà approssimativamente basata su una composizione realistica delle risorse di produzione. Le pagine, le immagini e i tag possono essere limitati a un massimo di 800 pagine figlie. Ogni pagina includerà i componenti titolo, Flash, testo/immagine, video, presentazione, modulo, tabella, cloud e carosello. Le immagini verranno caricate da un pool di 400 file unici di dimensioni comprese tra 37 kB e 594 kB.
 
