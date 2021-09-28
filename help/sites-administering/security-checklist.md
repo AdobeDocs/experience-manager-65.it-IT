@@ -1,8 +1,8 @@
 ---
 title: Lista di controllo sicurezza
-seo-title: Lista di controllo sicurezza
+seo-title: Security Checklist
 description: Scopri le varie considerazioni sulla sicurezza durante la configurazione e la distribuzione di AEM.
-seo-description: Scopri le varie considerazioni sulla sicurezza durante la configurazione e la distribuzione di AEM.
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Sicurezza
-source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
+feature: Security
+source-git-commit: f60d3049b10a8ec500dd0cd4b1b5d4efbe415d84
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 1%
+source-wordcount: '2859'
+ht-degree: 3%
 
 ---
 
-# Lista di controllo protezione {#security-checklist}
+# Lista di controllo sicurezza {#security-checklist}
 
 Questa sezione descrive vari passaggi da seguire per garantire che l’installazione AEM sia sicura quando distribuita. La lista di controllo deve essere applicata dall’alto verso il basso.
 
@@ -37,7 +37,7 @@ Questa sezione descrive vari passaggi da seguire per garantire che l’installaz
 
 Per ulteriori informazioni, consulta [Esecuzione AEM in modalità pronta per la produzione](/help/sites-administering/production-ready.md).
 
-### Abilita HTTPS per la sicurezza dei livelli di trasporto {#enable-https-for-transport-layer-security}
+### Abilita HTTPS per la sicurezza del livello di trasporto {#enable-https-for-transport-layer-security}
 
 Per disporre di un’istanza sicura, è obbligatorio abilitare il livello di trasporto HTTPS sia sulle istanze di authoring che di pubblicazione.
 
@@ -45,11 +45,11 @@ Per disporre di un’istanza sicura, è obbligatorio abilitare il livello di tra
 >
 >Per ulteriori informazioni, consulta la sezione [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md) .
 
-### Installa gli hotfix di sicurezza {#install-security-hotfixes}
+### Installare gli hotfix di sicurezza {#install-security-hotfixes}
 
 Assicurati di aver installato gli [Hotfix di sicurezza più recenti forniti da Adobe](https://helpx.adobe.com/it/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Modificare le password predefinite per gli account amministratore della console AEM e OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Modificare le password predefinite per gli account di amministrazione della console AEM e OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 L&#39;Adobe consiglia vivamente di modificare dopo l&#39;installazione la password per gli account [**AEM** `admin`](#changing-the-aem-admin-password) con privilegi (su tutte le istanze).
 
@@ -84,14 +84,14 @@ Oltre all&#39;account AEM `admin`, la mancata modifica della password predefinit
 
 Per ulteriori informazioni sulla modifica della password della console Web, consulta [Modifica della password dell’amministratore della console Web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) di seguito.
 
-#### Modifica della password dell&#39;amministratore della console Web OSGi {#changing-the-osgi-web-console-admin-password}
+#### Modifica della password dell’amministratore della console Web OSGi {#changing-the-osgi-web-console-admin-password}
 
 È inoltre necessario modificare la password utilizzata per accedere alla console Web. A questo scopo, configura le seguenti proprietà della [Console di gestione Apache Felix OSGi](/help/sites-deploying/osgi-configuration-settings.md):
 
 **Nome utente** e  **password**, le credenziali per l&#39;accesso alla console di gestione Web Apache Felix stessa.
 La password deve essere modificata dopo l’installazione iniziale per garantire la sicurezza dell’istanza.
 
-Per effettuare ciò:
+Per effettuare questo collegamento:
 
 1. Passa alla console Web all’indirizzo `<server>:<port>/system/console/configMgr`.
 1. Passa a **Apache Felix OSGi Management Console** e modifica il **nome utente** e la **password**.
@@ -100,7 +100,7 @@ Per effettuare ciò:
 
 1. Fai clic su **Salva**.
 
-### Implementare un gestore di errori personalizzati {#implement-custom-error-handler}
+### Implementare un gestore di errori personalizzato {#implement-custom-error-handler}
 
 Adobe consiglia di definire pagine personalizzate del gestore di errori, in particolare per i codici di risposta HTTP 404 e 500, al fine di impedire la divulgazione delle informazioni.
 
@@ -158,9 +158,9 @@ Il [AEM Developer Tools per Eclipse](/help/sites-developing/aem-eclipse.md) impl
 
 Questo bundle OSGi deve essere disinstallato sui sistemi produttivi di authoring e pubblicazione prima di renderli accessibili.
 
-### Protect contro la falsificazione delle richieste cross-site {#protect-against-cross-site-request-forgery}
+### Protect contro la falsificazione delle richieste intersito {#protect-against-cross-site-request-forgery}
 
-#### Quadro di protezione CSRF {#the-csrf-protection-framework}
+#### Quadro di riferimento per la protezione del CSRF {#the-csrf-protection-framework}
 
 AEM 6.1 viene fornito con un meccanismo che aiuta a proteggere dagli attacchi Cross-Site Request Forgery, denominato **CSRF Protection Framework**. Per ulteriori informazioni su come usarlo, consulta la [documentazione](/help/sites-developing/csrf-protection.md).
 
@@ -247,9 +247,9 @@ Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di 
 
 ## Ulteriori letture {#further-readings}
 
-### Attacchi di Denial of Service (DoS) attenuati {#mitigate-denial-of-service-dos-attacks}
+### Riduzione degli attacchi di tipo DoS (Denial of Service) {#mitigate-denial-of-service-dos-attacks}
 
-Un attacco Denial of Service (DoS) è un tentativo di rendere una risorsa computer non disponibile agli utenti a cui è destinata. Questo viene spesso fatto sovraccaricando la risorsa; ad esempio:
+Un attacco Denial of Service (DoS) è un tentativo di rendere la risorsa di un computer indisponibile per gli utenti a cui è destinata. Questo viene spesso fatto sovraccaricando la risorsa; ad esempio:
 
 * Con un flusso di richieste da una fonte esterna.
 * Con una richiesta di più informazioni di quelle che il sistema può consegnare correttamente.
@@ -302,7 +302,7 @@ Per evitare l&#39;uso improprio di DoS è possibile:
 
       **Risultati massimi JSON** (  `json.maximumresults`)
 
-      nella configurazione del [Servlet Apache Sling GET](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando questo limite viene superato, il rendering viene compresso. Il valore predefinito per Sling in AEM è `200`.
+      nella configurazione del [Servlet Apache Sling GET](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando questo limite viene superato, il rendering viene compresso. Il valore predefinito per Sling in AEM è `1000`.
 
    * Come misura preventiva, disattiva gli altri render predefiniti (HTML, testo normale, XML). Di nuovo configurando il [Servlet Apache Sling GET](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -362,7 +362,7 @@ WebDAV deve essere disabilitato sia negli ambienti di authoring che di pubblicaz
    >
    >Non è necessario riavviare AEM.
 
-### Verifica Di Non Comunicare Informazioni Personalmente Identificabili Nel Percorso Home Degli Utenti {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
+### Verifica Di Non Divulgare Informazioni Personalmente Identificabili Nel Percorso Home Dell’Utente {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 È importante proteggere gli utenti assicurandosi di non esporre informazioni personali identificabili nel percorso home degli utenti dell’archivio.
 
@@ -384,11 +384,11 @@ Anche se non consigliato, puoi disattivarlo nel caso in cui sia necessaria la ve
 >
 >Per ulteriori informazioni, consulta la documentazione Oak su [Generazione nome nodo autorizzabile](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-### Impedisci clic {#prevent-clickjacking}
+### Previeni il clickjacking {#prevent-clickjacking}
 
-Per evitare il clickjacking, ti consigliamo di configurare il server web per fornire l’ `X-FRAME-OPTIONS` intestazione HTTP impostata su `SAMEORIGIN`.
+Per prevenire il clickjacking, ti consigliamo di configurare il server web per fornire l’intestazione HTTP `X-FRAME-OPTIONS` impostata su `SAMEORIGIN`.
 
-Per ulteriori [informazioni sul clickjacking, vedere il sito OWASP](https://www.owasp.org/index.php/Clickjacking).
+Per ulteriori [informazioni sul clickjacking, vedi il sito OWASP](https://www.owasp.org/index.php/Clickjacking).
 
 ### Assicurati Di Replicare Correttamente Le Chiavi Di Crittografia Quando Necessario {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
@@ -398,7 +398,7 @@ Prima di eseguire questa operazione, tieni presente che la replica chiave viene 
 
 Per ulteriori informazioni, consulta di seguito.
 
-#### Replica dei tasti per AEM 6.3 {#replicating-keys-for-aem}
+#### Replica delle chiavi per AEM 6.3 {#replicating-keys-for-aem}
 
 Mentre nelle versioni precedenti le chiavi di replica venivano memorizzate nell&#39;archivio, a partire da AEM 6.3 vengono memorizzate nel filesystem.
 
@@ -443,9 +443,9 @@ Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze è quel
 1. Passa alla scheda **Replica** .
 1. Premere il tasto **Replica**.
 
-### Eseguire un test di penetrazione {#perform-a-penetration-test}
+### Esegui un test di penetrazione {#perform-a-penetration-test}
 
-Adobe consiglia vivamente di eseguire un test di penetrazione dell&#39;infrastruttura AEM prima di procedere alla produzione.
+Adobe consiglia vivamente di eseguire un test di penetrazione dell’infrastruttura AEM prima di procedere alla produzione.
 
 ### Tecniche consigliate per lo sviluppo {#development-best-practices}
 
