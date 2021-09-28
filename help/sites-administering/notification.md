@@ -1,8 +1,8 @@
 ---
 title: Configurazione della notifica e-mail
-seo-title: Configurazione della notifica e-mail
+seo-title: Configuring Email Notification
 description: Scopri come configurare le notifiche e-mail in AEM.
-seo-description: Scopri come configurare le notifiche e-mail in AEM.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
+source-git-commit: 1ae4e3b898f1d0a27fa72a7d8db01f638d4c6f7a
 workflow-type: tm+mt
-source-wordcount: '2097'
-ht-degree: 1%
+source-wordcount: '2086'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Quando un utente viene informato, riceve un’e-mail nella lingua definita nel s
 >
 >Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori dettagli e pratiche consigliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
 
-## Configurazione del servizio di posta {#configuring-the-mail-service}
+## Configurazione del servizio e-mail {#configuring-the-mail-service}
 
 Affinché AEM possa inviare e-mail, è necessario configurare correttamente il **Day CQ Mail Service** . Puoi visualizzare la configurazione nella console Web. Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori dettagli e pratiche consigliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) .
 
@@ -94,7 +94,7 @@ Nella console Web la configurazione predefinita è la seguente:
 
 I modelli e-mail per le notifiche di pagina si trovano di seguito:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 Il modello inglese predefinito ( `en.txt`) è definito come segue:
 
@@ -121,7 +121,7 @@ Per personalizzare il modello e-mail inglese per la notifica della pagina:
 
 1. In CRXDE, apri il file:
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modifica il file in base alle tue esigenze.
 1. Salva le modifiche.
@@ -150,7 +150,7 @@ Dove &lt;text_x> può essere un mix di variabili di testo statiche e di stringhe
 
    PageModified => /content/geometrixx/en/products
 
-### Modelli e-mail per notifica forum {#email-templates-for-forum-notification}
+### Modelli e-mail per notifiche forum {#email-templates-for-forum-notification}
 
 I modelli e-mail per le notifiche dei forum si trovano in:
 
@@ -201,11 +201,11 @@ Le seguenti variabili possono essere utilizzate all&#39;interno del modello e-ma
 
 * `${forum.path}`, il percorso della pagina del forum.
 
-### Modelli e-mail per notifica flusso di lavoro {#email-templates-for-workflow-notification}
+### Modelli e-mail per notifiche flusso di lavoro {#email-templates-for-workflow-notification}
 
 Il modello e-mail per le notifiche del flusso di lavoro (inglese) si trova in:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 È definito come segue:
 
@@ -234,7 +234,7 @@ Per personalizzare il modello e-mail inglese per la notifica dell’evento del f
 
 1. In CRXDE, apri il file:
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modifica il file in base alle tue esigenze.
 1. Salva le modifiche.
@@ -292,9 +292,9 @@ Per aggiungere un modello per una nuova lingua:
 
 1. In CRXDE, aggiungi un file `<language-code>.txt` qui sotto:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : per le notifiche di pagina
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : per le notifiche di pagina
    * `/etc/notification/email/default/com.day.cq.collab.forum` : per le notifiche sul forum
-   * `/etc/workflow/notification/email/default` : per le notifiche del flusso di lavoro
+   * `/libs/settings/workflow/notification/email/default` : per le notifiche del flusso di lavoro
 
 1. Adatta il file alla lingua.
 1. Salva le modifiche.
@@ -364,7 +364,7 @@ Una volta configurate, le impostazioni saranno simili al seguente:
 
 ![oauth smtp provider](assets/oauth-smtpprov2.png)
 
-Ora attiva i componenti OAuth. Puoi eseguire questa operazione:
+Ora attiva i componenti OAuth. Per farlo, segui questi passaggi:
 
 1. Vai alla console Componenti visitando questo URL: `http://serveraddress:serverport/system/console/components`
 1. Cerca i seguenti componenti
@@ -447,7 +447,7 @@ Una volta configurate, le impostazioni saranno simili al seguente:
 
 ![](assets/oauth-outlook-smptconfig.png)
 
-Ora attiva i componenti OAuth. Puoi eseguire questa operazione:
+Ora attiva i componenti OAuth. Per farlo, segui questi passaggi:
 
 1. Vai alla console Componenti visitando questo URL: `http://serveraddress:serverport/system/console/components`
 1. Cerca i seguenti componenti
