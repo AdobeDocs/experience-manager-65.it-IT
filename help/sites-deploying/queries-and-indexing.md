@@ -1,8 +1,8 @@
 ---
 title: Query e indicizzazione Oak
-seo-title: Query e indicizzazione Oak
+seo-title: Oak Queries and Indexing
 description: Scopri come configurare gli indici in AEM.
-seo-description: Scopri come configurare gli indici in AEM.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2868'
 ht-degree: 1%
 
 ---
-
 
 # Query e indicizzazione Oak{#oak-queries-and-indexing}
 
@@ -69,15 +68,15 @@ Successivamente, ogni indice viene consultato per stimare il costo della query. 
 
 >[!NOTE]
 >
->Per un archivio di grandi dimensioni, la creazione di un indice richiede molto tempo. Ciò vale sia per la creazione iniziale di un indice che per la reindicizzazione (ricostruzione di un indice dopo la modifica della definizione). Vedi anche [Risoluzione dei problemi di indici Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Prevenzione di reindicizzazione lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Per un archivio di grandi dimensioni, la creazione di un indice richiede molto tempo. Questo vale sia per la creazione iniziale di un indice che per la reindicizzazione (ricostruzione di un indice dopo la modifica della definizione). Vedi anche [Risoluzione dei problemi di indici Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Prevenzione di reindicizzazione lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Se la reindicizzazione è necessaria in archivi molto grandi, specialmente quando si utilizza MongoDB e per indici full-text, considera la preestrazione del testo e utilizza oak-run per generare l&#39;indice iniziale e reindicizzarlo.
+Se è necessaria la reindicizzazione in archivi di grandi dimensioni, specialmente quando si utilizza MongoDB e per gli indici full-text, considera la preestrazione del testo e utilizza oak-run per generare l&#39;indice iniziale e reindicizzarlo.
 
 Gli indici sono configurati come nodi nel repository sotto il nodo **oak:index** .
 
 Il tipo del nodo di indice deve essere **oak:QueryIndexDefinition.** Sono disponibili diverse opzioni di configurazione per ogni indicizzatore come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore qui sotto.
 
-### Indice proprietà {#the-property-index}
+### Indice delle proprietà {#the-property-index}
 
 L&#39;indice delle proprietà è generalmente utile per le query con vincoli di proprietà ma non con testo completo. Può essere configurato seguendo la procedura seguente:
 
@@ -102,13 +101,13 @@ L&#39;indice delle proprietà dispone delle seguenti opzioni di configurazione:
 * Il flag **univoco** che, se impostato su **true** aggiunge un vincolo di univocità all&#39;indice della proprietà.
 
 * La proprietà **declaringNodeTypes** consente di specificare un determinato tipo di nodo a cui l&#39;indice si applica solo.
-* Il flag **reindex** che, se impostato su **true**, attiverà una reindicizzazione completa del contenuto.
+* Il flag **reindex** che, se impostato su **true**, attiverà un reindicizzazione del contenuto completo.
 
 ### Indice ordinato {#the-ordered-index}
 
 L&#39;indice ordinato è un&#39;estensione dell&#39;indice Property. Tuttavia, è stato dichiarato obsoleto. Gli indici di questo tipo devono essere sostituiti con [Indice proprietà Lucene](#the-lucene-property-index).
 
-### Indice di testo completo Lucene {#the-lucene-full-text-index}
+### L&#39;indice a testo completo Lucene {#the-lucene-full-text-index}
 
 Un indicizzatore full text basato su Apache Lucene è disponibile in AEM 6.
 
@@ -137,7 +136,7 @@ L&#39;indice Lucene dispone delle seguenti opzioni di configurazione:
 * La proprietà **excludePropertyNames** che definirà un elenco di nomi di proprietà - proprietà che devono essere escluse dall&#39;indice.
 * Il flag **reindex** che, se impostato su **true**, attiva un reindice completo del contenuto.
 
-### Indice delle proprietà Lucene {#the-lucene-property-index}
+### Indice della proprietà Lucene {#the-lucene-property-index}
 
 A partire da **Oak 1.0.8**, Lucene può essere utilizzato per creare indici che coinvolgono vincoli di proprietà che non sono full-text.
 
@@ -158,19 +157,19 @@ Una volta creato il nodo, aggiungi le seguenti proprietà:
 
 * **tipo:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **asincrono:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -200,7 +199,7 @@ L&#39;analizzatore predefinito per un indice è configurato nel `default` second
 >
 >Per un elenco degli analizzatori disponibili, consulta la documentazione API della versione Lucene in uso.
 
-#### Specifica della classe dell&#39;analizzatore direttamente {#specifying-the-analyzer-class-directly}
+#### Specifica diretta della classe Analyzer {#specifying-the-analyzer-class-directly}
 
 Se desideri utilizzare un analizzatore preconfigurato, puoi configurarlo seguendo la procedura seguente:
 
@@ -229,7 +228,7 @@ Se desideri utilizzare un analizzatore preconfigurato, puoi configurarlo seguend
    * **Nome:** `stopwords`
    * **Tipo:** `nt:file`
 
-#### Creazione di analisi tramite Composizione {#creating-analyzers-via-composition}
+#### Creazione di analisi tramite composizione {#creating-analyzers-via-composition}
 
 Gli analisti possono anche essere composti in base a `Tokenizers`, `TokenFilters` e `CharFilters`. A tale scopo, puoi specificare un analizzatore e creare nodi figlio dei relativi token e filtri facoltativi che verranno applicati nell’ordine elencato. Vedere anche [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
@@ -283,7 +282,7 @@ Qualsiasi parametro di configurazione richiesto per la fabbrica è specificato c
 
 Per casi come il caricamento di parole di arresto in cui è necessario caricare il contenuto da file esterni, il contenuto può essere fornito creando un nodo figlio di tipo `nt:file` per il file in questione.
 
-### Indice solare {#the-solr-index}
+### Indice Solr {#the-solr-index}
 
 Lo scopo dell&#39;indice Solr è principalmente ricerca full-text ma può anche essere utilizzato per indicizzare la ricerca per percorso, restrizioni di proprietà e restrizioni di tipo primario. Questo significa che l&#39;indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
 
@@ -325,7 +324,7 @@ Puoi configurare il server Solr incorporato nei seguenti modi:
 AEM può anche essere configurato per lavorare con un&#39;istanza remota del server Solr:
 
 1. Scarica ed estrai la versione più recente di Solr. Per ulteriori informazioni su come eseguire questa operazione, consulta la [documentazione di installazione di Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Ora, crea due truffe Solr. Per farlo, crea cartelle per ogni frammento nella cartella in cui Solr è stato sovrapposto:
+1. Ora, crea due truffe Solr. Per farlo, crea cartelle per ogni frammento nella cartella in cui Solr è stato decompresso:
 
    * Per la prima condivisione, crea la cartella:
 
@@ -385,7 +384,7 @@ AEM può anche essere configurato per lavorare con un&#39;istanza remota del ser
 
 #### Configurazione consigliata per Solr {#recommended-configuration-for-solr}
 
-Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le distribuzioni Solr descritte in questo articolo. Consentono di gestire gli indici di proprietà dedicati già presenti in AEM e non devono essere utilizzati con altre applicazioni.
+Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le distribuzioni Solr descritte in questo articolo. Gestisce gli indici di proprietà dedicati già presenti in AEM e non devono essere utilizzati con altre applicazioni.
 
 Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella directory principale Solr. Nel caso di implementazioni con più nodi, deve trovarsi direttamente nella cartella principale di ciascun nodo.
 
@@ -460,7 +459,7 @@ Se l&#39;indice è configurato in una posizione diversa, cambia di conseguenza i
 
 #### Uscita MBean {#mbean-output}
 
-In alcuni casi è utile fornire l&#39;output di MBeans relativi all&#39;indice per il debug. Puoi eseguire questa operazione:
+In alcuni casi è utile fornire l&#39;output di MBeans relativi all&#39;indice per il debug. Per farlo, segui questi passaggi:
 
 1. Andando alla console JMX in:
    `https://serveraddress:port/system/console/jmx`
@@ -489,4 +488,3 @@ Puoi raccogliere ulteriori dettagli per aiutarti a risolvere il problema, ad ese
 
 1. Versione Oak su cui l&#39;istanza è in esecuzione. Per visualizzarlo, apri CRXDE e osserva la versione nell’angolo in basso a destra della pagina di benvenuto, oppure controlla la versione del bundle `org.apache.jackrabbit.oak-core`.
 1. L&#39;output del debugger di QueryBuilder della query del problema. È possibile accedere al debugger all&#39;indirizzo: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-
