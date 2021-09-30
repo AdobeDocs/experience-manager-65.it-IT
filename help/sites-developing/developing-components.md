@@ -1,8 +1,8 @@
 ---
 title: Sviluppo di componenti AEM
-seo-title: Sviluppo di componenti AEM
+seo-title: Developing AEM Components
 description: I componenti AEM vengono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
-seo-description: I componenti AEM vengono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
+seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 1%
+source-wordcount: '3485'
+ht-degree: 2%
 
 ---
 
@@ -132,11 +131,9 @@ Le finestre di dialogo consentono all’autore di interagire con il componente. 
 
 ### Interfaccia Coral e interfaccia Granite {#coral-ui-and-granite-ui}
 
-[L’](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) interfaccia Corale  [l’](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) interfaccia Granite definiscono l’aspetto moderno dell’AEM.
+[L’](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) interfaccia Corale  [l’](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) interfaccia Granite definiscono l’aspetto moderno dell’AEM.
 
 [L’interfaccia utente Granite offre una vasta gamma di componenti di base (widget)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) necessari per creare una finestra di dialogo nell’ambiente di authoring. Se necessario, puoi estendere questa selezione e [creare un widget personalizzato](#creatinganewwidget).
-
-Per ulteriori informazioni sullo sviluppo di componenti con tipi di risorse Coral e Granite, consulta: [Creazione di componenti di Experience Manager utilizzando i tipi di risorse Coral/Granite](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
 Per maggiori dettagli consultare:
 
@@ -205,7 +202,6 @@ Per esempi, consulta:
 >* il relativo codice di esempio trattato in [Esempio di codice - Come personalizzare i campi della finestra di dialogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 
 >
-
 
 
 #### Creazione di un nuovo campo {#creating-a-new-field}
@@ -311,7 +307,7 @@ Ad esempio, consulta:
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title
 ```
 
-#### Convalida del campo (interfaccia Granite) {#field-validation-granite-ui}
+#### Convalida del campo (interfaccia utente Granite) {#field-validation-granite-ui}
 
 La convalida dei campi nell’interfaccia Granite e nei componenti dell’interfaccia Granite (equivalenti ai widget) viene eseguita utilizzando l’API `foundation-validation` . [Per ulteriori informazioni, consulta la documentazione  `foundation-valdiation` Granite .](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
@@ -440,7 +436,7 @@ Puoi trovare il codice di questa pagina su GitHub
 >
 >La creazione automatica di istanze di componenti può ora essere configurata facilmente nell’interfaccia utente quando si utilizzano [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) e modelli modificabili. Per ulteriori informazioni su come definire quali componenti sono associati automaticamente a determinati tipi di file multimediali, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) .
 
-## Utilizzo dell&#39;estensione AEM Brackets {#using-the-aem-brackets-extension}
+## Utilizzo dell’estensione AEM Brackets {#using-the-aem-brackets-extension}
 
 L’ [AEM Estensione parentesi graffe](/help/sites-developing/aem-brackets.md) fornisce un flusso di lavoro fluido per modificare AEM componenti e librerie client. Si basa sull’ editor di codice [Brackets](https://brackets.io/) .
 
