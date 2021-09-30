@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 0a4c27432e4005fa3999f7c6a776ef51b10d9746
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1591'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Per caricare completamente i file in [!DNL Experience Manager Assets] creati con
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] viene offerto come due offerte separate. [Adobe app desktop ](https://www.adobe.com/products/indesign.html) InDesigndesktop utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Server consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con  [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://www.adobe.com/devnet/scripting.html).Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli script [!DNL InDesign], consulta [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] viene offerto come due offerte separate. [Adobe app desktop ](https://www.adobe.com/products/indesign.html) InDesigndesktop utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Server consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con  [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli script [!DNL InDesign], consulta [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 

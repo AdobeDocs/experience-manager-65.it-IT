@@ -12,7 +12,7 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 10%
@@ -66,7 +66,7 @@ Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 
 Si consiglia di avere AEM 6.5 per impostare un&#39;istanza di authoring AEM. Se non hai AEM in esecuzione, scaricalo dalle seguenti posizioni:
 
-* Se sei un cliente AEM esistente, scarica AEM 6.5 dal [sito web Adobe Licensing](http://licensing.adobe.com).
+* Se sei un cliente AEM esistente, scarica AEM 6.5 dal [sito web Adobe Licensing](https://licensing.adobe.com).
 
 * Se sei un partner di Adobe, utilizza [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) per richiedere AEM 6.5.
 
@@ -118,9 +118,9 @@ La chiave pubblica (certificato) autentica il tuo profilo in Adobe Developer Con
 
 1. Accedi alla tua istanza di authoring di AEM Assets. L’URL predefinito è `http://localhost:4502/aem/start.html`.
 
-1. Dal pannello **Strumenti** ![Strumenti](assets/do-not-localize/tools.png), passa a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni IMS di Adobe]**.
+1. Dal pannello **Strumenti** ![Strumenti](assets/do-not-localize/tools.png), passa a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
 
-1. Nella pagina Configurazioni IMS di Adobe, fai clic su **[!UICONTROL Crea]**. Reindirizzerà alla pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** . Per impostazione predefinita, viene visualizzata la scheda **Certificato** .
+1. Nella pagina Configurazioni Adobe IMS, fai clic su **[!UICONTROL Crea]**. Verrà reindirizzato alla pagina **[!UICONTROL Configurazione account tecnico Adobe IMS]** . Per impostazione predefinita, viene visualizzata la scheda **Certificato** .
 
 1. Seleziona **[!UICONTROL Adobe Brand Portal]** nell&#39;elenco a discesa **[!UICONTROL Soluzione cloud]** .
 
