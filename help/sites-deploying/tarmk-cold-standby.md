@@ -1,8 +1,8 @@
 ---
 title: Come eseguire AEM con lo standby a freddo TarMK
-seo-title: Come eseguire AEM con lo standby a freddo TarMK
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Scopri come creare, configurare e mantenere una configurazione di standby a freddo TarMK.
-seo-description: Scopri come creare, configurare e mantenere una configurazione di standby a freddo TarMK.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 004fdf3e-517c-452b-8db1-a47d6b31d8ba
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configurazione
+feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: d9565be9183bd4485036d99869585a79999be54b
+source-git-commit: 687203bf418962877a63b2fe77d8bdd3791cd4d9
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2733'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,16 @@ Il contenuto viene sincronizzato in modo lineare tra l’istanza primaria e le i
 >La funzione Standby a freddo ha lo scopo di proteggere gli scenari in cui è richiesta un&#39;elevata disponibilità sulle istanze **author**. Per le situazioni in cui è richiesta un&#39;elevata disponibilità sulle istanze **publish** utilizzando il Kernel Tar Micro, l&#39;Adobe consiglia di utilizzare una farm di pubblicazione.
 >
 >Per informazioni su ulteriori distribuzioni disponibili, consulta la pagina [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md) .
+
+>[!NOTE]
+>
+>Quando l’istanza Standby viene impostata o derivata dal nodo Principale, consente l’accesso solo alle due console seguenti (per le attività relative all’amministrazione):
+>
+>* CRXDE Lite
+>* Console web OSGI
+
+>
+>Altre console non sono accessibili.
 
 ## Come funziona {#how-it-works}
 
@@ -84,8 +94,7 @@ Supponendo che tutte le istanze siano eseguite nella stessa area di sicurezza In
 >* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
+>Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
 
 Per creare una configurazione di standby a freddo TarMK, devi prima creare le istanze di standby eseguendo una copia del file system dell&#39;intera cartella di installazione della cartella principale in una nuova posizione. È quindi possibile avviare ogni istanza con una modalità runmode che ne specifichi il ruolo ( `primary` o `standby`).
 
@@ -313,7 +322,7 @@ Nel caso in cui l&#39;istanza primaria non riesca per qualsiasi motivo, è possi
 1. Aggiungi il nuovo primario al load balancer.
 1. Crea e avvia una nuova istanza di standby. Per ulteriori informazioni, consulta la procedura precedente su [Creazione di una configurazione di standby a freddo AEM TarMK](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
-## Applicazione degli hotfix a una configurazione dello standby a freddo {#applying-hotfixes-to-a-cold-standby-setup}
+## Applicazione degli hotfix a una configurazione di standby a freddo {#applying-hotfixes-to-a-cold-standby-setup}
 
 Il modo consigliato per applicare gli hotfix a una configurazione stanby a freddo è installarli nell&#39;istanza primaria e poi clonarli in una nuova istanza standby a freddo con gli hotfix installati.
 
