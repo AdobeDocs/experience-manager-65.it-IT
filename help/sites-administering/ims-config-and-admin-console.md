@@ -1,8 +1,8 @@
 ---
-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
+title: Autenticazione Adobe IMS e supporto [!DNL Admin Console] AEM Managed Services
 seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Scopri come utilizzare  [!DNL Admin Console] in AEM.
-seo-description: Scopri come utilizzare  [!DNL Admin Console] in AEM.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 11%
 
 ---
 
-# Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Autenticazione Adobe IMS e supporto [!DNL Admin Console] per AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
 >
 >Questa funzione è disponibile solo per i clienti di Adobe Managed Services.
 
+>[!NOTE]
+>
+>L’accesso IMS per AEM non supporta i gruppi nidificati nell’Admin Console.
+
 ## Introduzione {#introduction}
 
-AEM 6.4.3.0 introduce [!DNL Admin Console] il supporto per le istanze AEM e l&#39;autenticazione basata su Adobe IMS(Identity Management System) per i clienti **AEM Managed Services**.
+AEM 6.4.3.0 introduce il supporto [!DNL Admin Console] per le istanze AEM e l’autenticazione basata su Adobe IMS(Identity Management System) per i clienti **AEM Managed Services**.
 
 AEM l’onboarding in [!DNL Admin Console] consentirà AEM clienti Managed Services di gestire tutti gli utenti di Experience Cloud in un’unica console. Gli utenti e i gruppi possono essere assegnati ai profili di prodotto associati alle istanze AEM, consentendo loro di accedere a un’istanza specifica.
 
@@ -43,7 +46,7 @@ AEM l’onboarding in [!DNL Admin Console] consentirà AEM clienti Managed Servi
 
 ## Architettura {#architecture}
 
-L’autenticazione IMS funziona utilizzando il protocollo OAuth tra AEM e l’endpoint IMS di Adobe. Dopo l’aggiunta a IMS, un utente con identità Adobe può accedere ad AEM Managed Services utilizzando le credenziali IMS.
+L’autenticazione IMS funziona utilizzando il protocollo OAuth tra AEM e l’endpoint Adobe IMS. Dopo l’aggiunta a IMS, un utente con identità Adobe può accedere ad AEM Managed Services utilizzando le credenziali IMS.
 
 Il flusso di accesso dell&#39;utente è mostrato di seguito, l&#39;utente verrà reindirizzato a IMS ed eventualmente all&#39;IDP del cliente per la convalida SSO e quindi reindirizzato nuovamente a AEM.
 
@@ -51,11 +54,11 @@ Il flusso di accesso dell&#39;utente è mostrato di seguito, l&#39;utente verrà
 
 ## Come impostare {#how-to-set-up}
 
-### Onboarding Organizzazioni in [!DNL Admin Console] {#onboarding-organizations-to-admin-console}
+### Onboarding di organizzazioni in [!DNL Admin Console] {#onboarding-organizations-to-admin-console}
 
-L’onboarding del cliente in [!DNL Admin Console] è un prerequisito per utilizzare Adobe IMS per l’autenticazione AEM.
+L’onboarding del cliente in [!DNL Admin Console] è un prerequisito per l’utilizzo di Adobe IMS per l’autenticazione AEM.
 
-Come primo passo, i clienti devono disporre di un’organizzazione in Adobe IMS. I clienti Adobe Enterprise sono rappresentati come organizzazioni IMS nell’ [Adobe [!DNL Admin Console]](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
+Come primo passo, i clienti devono disporre di un&#39;organizzazione in Adobe IMS. I clienti Adobe Enterprise sono rappresentati come organizzazioni IMS nell’ [Adobe [!DNL Admin Console]](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
 AEM i clienti Managed Services devono già disporre del provisioning di un’organizzazione e, nell’ambito del provisioning IMS, le istanze dei clienti saranno rese disponibili in [!DNL Admin Console] per la gestione delle adesioni e dell’accesso degli utenti.
 
@@ -85,7 +88,7 @@ Sono disponibili tre modi per integrare gli utenti a seconda delle dimensioni de
 1. Caricare un file CSV con gli utenti
 1. Sincronizza utenti e gruppi dall&#39;organizzazione Active Directory del cliente.
 
-#### Aggiunta manuale tramite [!DNL Admin Console] interfaccia utente {#manual-addition-through-admin-console-ui}
+#### Aggiunta manuale tramite l’interfaccia utente di [!DNL Admin Console] {#manual-addition-through-admin-console-ui}
 
 Gli utenti e i gruppi possono essere creati manualmente nell&#39;interfaccia utente [!DNL Admin Console]. Questo metodo può essere utilizzato se non dispongono di un numero elevato di utenti da gestire. Ad esempio, un numero di utenti meno di 50 AEM.
 
@@ -93,7 +96,7 @@ Gli utenti possono anche essere creati manualmente se il cliente utilizza già q
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Caricamento di file nell’ [!DNL Admin Console] interfaccia utente {#file-upload-in-the-admin-console-ui}
+#### Caricamento di file nell’ interfaccia utente [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
 
 Per facilitare la creazione di utenti, è possibile caricare un file CSV per aggiungere utenti in blocco:
 
@@ -141,7 +144,7 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 
 ## Guida all’uso {#how-to-use}
 
-### Gestione dei prodotti e dell&#39;accesso utente in [!DNL Admin Console] {#managing-products-and-user-access-in-admin-console}
+### Gestione dei prodotti e dell’accesso utente in [!DNL Admin Console] {#managing-products-and-user-access-in-admin-console}
 
 Quando l’amministratore del prodotto del cliente accede a [!DNL Admin Console], visualizza più istanze del contesto di prodotto Managed Services AEM come mostrato di seguito:
 
