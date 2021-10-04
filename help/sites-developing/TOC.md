@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: b82544398ca414afab867f188f33ae60989596f3
+source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '917'
 ht-degree: 16%
 
 ---
@@ -151,6 +151,7 @@ ht-degree: 16%
       + [Contesto client in dettaglio](client-context.md)
       + [API JavaScript per il contesto client](ccjsapi.md)
 + Estensione di AEM{#extending-aem}
+   + [Estensione AEM utilizzando Adobe Developer App Builder](app-builder.md)
    + [Personalizzazione dell’authoring delle pagine](customizing-page-authoring-touch.md)
    + [Personalizzazione delle console](customizing-consoles-touch.md)
    + [Personalizzazione delle visualizzazioni delle proprietà pagina](page-properties-views.md)
