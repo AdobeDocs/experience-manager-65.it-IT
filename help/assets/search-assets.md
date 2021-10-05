@@ -3,12 +3,12 @@ title: Cercare risorse digitali e immagini in [!DNL Adobe Experience Manager]
 description: Scopri come trovare le risorse richieste in [!DNL Adobe Experience Manager] utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Ricerca, Metadati
+feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '5573'
+source-wordcount: '5570'
 ht-degree: 5%
 
 ---
@@ -42,7 +42,7 @@ Usa il pannello **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e met
 
 Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
-![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem_search_results.png)
+![Interfaccia dei risultati di ricerca Experience Manager Assets](assets/aem_search_results.png)
 
 *Figura: Interfaccia dei risultati di  [!DNL Experience Manager Assets] ricerca.*
 
@@ -161,7 +161,7 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Creatore | creatore:John |
 | Dove si trova | posizione:NA |
 | Descrizione | descrizione:&quot;Immagine campione&quot; |
-| Strumento di creazione | strumento creatore:&quot;Adobe Photoshop CC 2015&quot; |
+| Strumento di creazione | creatortool: &quot;Adobe Photoshop&quot; |
 | Proprietario copyright | copyrightowner: &quot;Adobe Systems&quot; |
 | Collaboratore | collaboratore:John |
 | Condizioni d&#39;uso | usageterms:&quot;CopyRights riservati&quot; |
@@ -206,7 +206,7 @@ Utilizzando Adobe Asset Link, i creativi possono ora accedere ai contenuti memor
 
 ### Cercare risorse nell’app desktop [!DNL Experience Manager] {#desktop-app}
 
-I creativi professionisti utilizzano l’app desktop per rendere facilmente ricercabile [!DNL Experience Manager Assets] e disponibile sul desktop locale (Win o Mac). I creativi possono facilmente rivelare le risorse desiderate in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nel repository. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e operatore `AND`. Consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
+I creativi professionisti utilizzano l’app desktop per rendere facilmente ricercabile [!DNL Experience Manager Assets] e disponibile sul desktop locale (Win o Mac). I creativi possono facilmente rivelare le risorse desiderate in Mac Finder o Esplora risorse, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nel repository. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e operatore `AND`. Consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
 
 ### Cercare risorse in [!DNL Brand Portal] {#brand-portal}
 
@@ -236,7 +236,7 @@ Gli autori possono utilizzare Content Finder per cercare nell’archivio DAM le 
 
 Il selettore delle risorse consente di cercare, filtrare e sfogliare le risorse DAM in modo speciale. Il selettore delle risorse è disponibile in `https://[aem_server]:[port]/aem/assetpicker.html`. Puoi recuperare i metadati delle risorse selezionate utilizzando il selettore delle risorse. Puoi avviarlo con i parametri di richiesta supportati, ad esempio il tipo di risorsa (immagine, video, testo) e la modalità di selezione (selezione singola o multipla). Questi parametri impostano il contesto del selettore delle risorse per una particolare istanza di ricerca e rimangono intatti per tutta la selezione.
 
-Il selettore delle risorse utilizza il messaggio HTML5 `Window.postMessage` per inviare i dati della risorsa selezionata al destinatario. Funziona solo in modalità Sfoglia e solo con la pagina dei risultati Omnisearch.
+Il selettore delle risorse utilizza il messaggio HTML5 `Window.postMessage` per inviare al destinatario i dati della risorsa selezionata. Funziona solo in modalità Sfoglia e solo con la pagina dei risultati Omnisearch.
 
 Passa i seguenti parametri di richiesta in un URL per avviare il selettore risorse in un particolare contesto:
 
@@ -299,7 +299,7 @@ Utilizza virgolette doppie intorno alle parole chiave per trovare le risorse che
 
 *Figura: Comportamento della ricerca con e senza virgolette.*
 
-**Cerca con carattere jolly** asterisco: Per ampliare la ricerca, utilizzare un asterisco prima o dopo la parola di ricerca per abbinare qualsiasi numero di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza asterisco non restituisce risorse contenenti varianti della parola (inclusi nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
+**Cerca con carattere jolly** asterisco: Per ampliare la ricerca, utilizzare un asterisco prima o dopo la parola di ricerca per abbinare qualsiasi numero di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza asterisco non restituisce risorse contenenti varianti della parola (inclusi nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio:
 
 * `run` restituisce le risorse con la parola chiave run esattamente
 * `run*` restituisce le risorse con  `running`,  `run`,  `runaway` e così via.
@@ -378,7 +378,7 @@ Per migliorare la velocità di individuazione, [!DNL Experience Manager Assets] 
 
 ### Estrarre testo durante il caricamento delle risorse {#extracttextupload}
 
-Puoi configurare [!DNL Experience Manager] per estrarre il testo dalle risorse quando gli utenti caricano le risorse, come file PSD o PDF. [!DNL Experience Manager] indicizza il testo estratto e consente agli utenti di cercare tali risorse in base al testo estratto. Consulta [caricare le risorse](/help/assets/manage-assets.md#uploading-assets).
+Puoi configurare [!DNL Experience Manager] per estrarre il testo dalle risorse quando gli utenti caricano le risorse, ad esempio i file PSD o PDF. [!DNL Experience Manager] indicizza il testo estratto e consente agli utenti di cercare tali risorse in base al testo estratto. Consulta [caricare le risorse](/help/assets/manage-assets.md#uploading-assets).
 
 Se l’estrazione del testo richiede un’eccessiva quantità di risorse per la distribuzione, considera la possibilità di [disabilitare l’estrazione del testo](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 

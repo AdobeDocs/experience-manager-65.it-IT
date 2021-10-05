@@ -1,13 +1,13 @@
 ---
 title: Best practice per la condivisione di cartelle su [!DNL Adobe Creative Cloud] best practice
-description: Configura [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] per scambiare cartelle con utenti Adobe Creative Cloud (CC).
+description: Configura [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] per scambiare cartelle con gli utenti Adobe Creative Cloud.
 contentOwner: AG
 role: User, Admin
-feature: Collaborazione
+feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ L’integrazione include i seguenti elementi:
 ## Caratteristiche e limitazioni {#characteristics-and-limitations}
 
 * **Propagazione unidirezionale delle modifiche:** le modifiche ai file vengono propagate in una sola direzione, dal sistema ([!DNL Experience Manager] o  [!DNL Creative Cloud Assets]), in cui la risorsa è stata originariamente creata (caricata). L’integrazione non fornisce una sincronizzazione bidirezionale completamente automatizzata tra i due sistemi.
-* **Gestione versioni:**
+* **Controllo delle versioni:**
 
    * [!DNL Experience Manager] crea le versioni di una risorsa sugli aggiornamenti solo se il file è stato creato in  [!DNL Experience Manager] e vi è stato aggiornato.
    * [!DNL Creative Cloud] Assets fornisce la propria  [funzione di ](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) controllo delle versioni, destinata agli aggiornamenti di Work In Progress (in pratica, archivia gli aggiornamenti per un massimo di 10 giorni)

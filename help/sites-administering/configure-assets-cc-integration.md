@@ -2,12 +2,12 @@
 title: Configurare l’integrazione di AEM Assets con Experience Cloud
 description: Scopri come configurare l’integrazione di AEM Assets con Experience Cloud.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 1. Dall&#39;elenco **[!UICONTROL Ambito]**, selezionare **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** e **[!UICONTROL cc-share]**.
 1. Fai clic su **[!UICONTROL Crea]**. Un messaggio notifica la creazione dell&#39;applicazione.
 
-   ![Notifica della corretta creazione dell&#39;applicazione per integrare AEM Assets con Adobe CC](assets/chlimage_1-50.png)
+   ![Notifica della corretta creazione dell&#39;applicazione per integrare AEM Assets con Creative Cloud](assets/chlimage_1-50.png)
 
 1. Copia l&#39; **[!UICONTROL ID applicazione]** generato per la nuova applicazione.
 
@@ -75,13 +75,13 @@ Nel back-end, il server AEM autentica il tuo profilo con il gateway e quindi sin
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la nuova configurazione e fai clic su **[!UICONTROL Crea]**.
 
-   ![Denomina una nuova configurazione per integrare AEM Assets e CC](assets/aem-ec-integration-config1.png)
+   ![Assegnare un nome a una nuova configurazione per integrare AEM Assets e Creative Cloud](assets/aem-ec-integration-config1.png)
 
 1. Nel campo **[!UICONTROL URL tenant]** , specifica l’URL per AEM Assets. In passato, se l’URL era definito come `https://<tenant_id>.marketing.adobe.com`, modificalo in `https://<tenant_id>.experiencecloud.adobe.com`.
 
    1. Vai a **Strumenti > Cloud Services > Servizi cloud precedenti**. In Adobe Experience Cloud, fai clic su **Mostra configurazioni**.
    1. Seleziona la configurazione esistente da modificare. Modifica la configurazione e sostituisci `marketing.adobe.com` in `experiencecloud.adobe.com`.
-   1. Salva la configurazione. Test degli agenti di replica della sincronizzazione MAC.
+   1. Salva la configurazione. Test degli agenti di replica di sincronizzazione MAC.
 
 1. Nel campo **[!UICONTROL ID client]**, incolla l&#39;ID applicazione copiato alla fine della procedura [crea un&#39;applicazione](#create-an-application).
 
