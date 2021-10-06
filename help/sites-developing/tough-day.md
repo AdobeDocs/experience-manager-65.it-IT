@@ -3,17 +3,12 @@ title: Giorno difficile
 seo-title: Tough Day
 description: Il test Tough Day simula il carico giornaliero di circa 1000 autori in uno scenario peggiore con tutte le operazioni in corso allo stesso tempo.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
-docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: e1f9cf160892c2fa5c7cc7f80f998166dbc877e6
+source-git-commit: 8b72715c15a65794bb6d1497961071aaea96c35e
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1881'
 ht-degree: 2%
 
 ---
@@ -22,11 +17,11 @@ ht-degree: 2%
 
 ## Che cosa è difficile il giorno 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; è un&#39;applicazione che ti consente di testare allo stress i limiti della tua istanza AEM. Può essere eseguito con la suite di test predefinita oppure può essere configurato per soddisfare le tue esigenze di test. È possibile guardare [questa registrazione](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) per una presentazione dell&#39;applicazione.
+&quot;Tough Day 2&quot; è un&#39;applicazione che ti consente di testare allo stress i limiti della tua istanza AEM. Può essere eseguito con la suite di test predefinita oppure può essere configurato per soddisfare le tue esigenze di test. È possibile guardare [questa registrazione](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) per una presentazione dell&#39;applicazione.
 
 ## Come eseguire il giorno difficile 2 {#how-to-run-tough-day}
 
-Scarica la versione più recente di Tough Day 2 dal [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fuori dalla casella fornendo il parametro `host` . Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo che venga utilizzato il valore `localhost` :
+Scarica la versione più recente di Tough Day 2 dal [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Dopo aver scaricato l&#39;applicazione, è possibile eseguirla fuori dalla casella fornendo il parametro `host` . Nell&#39;esempio seguente, l&#39;istanza AEM viene eseguita localmente in modo che venga utilizzato il valore `localhost` :
 
 ```xml
 java -jar toughday2.jar --host=localhost
