@@ -3,11 +3,11 @@ title: Best practice per monitorare la distribuzione [!DNL Assets] di
 description: Best practice per monitorare l’ambiente e le prestazioni della distribuzione [!DNL Adobe Experience Manager] dopo la distribuzione.
 contentOwner: AG
 role: Admin, Architect
-feature: Gestione risorse
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -199,5 +199,5 @@ Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di riso
 * Utilizza la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, riduci più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o un elevato numero di consumatori di risorse specifiche.
 * Indagare i punti di uscita dalla rete client e i punti di ingresso alla rete di distribuzione [!DNL Experience Manager], incluso il dispatcher. Spesso si tratta di aree a collo di bottiglia. Per ulteriori informazioni, consulta [Considerazioni sulla rete Assets](/help/assets/assets-network-considerations.md).
-* Ridimensiona il server [!DNL Experience Manager]. È possibile che le dimensioni della distribuzione [!DNL Experience Manager] siano insufficienti. L’Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni inferiori.
+* Ridimensiona il server [!DNL Experience Manager]. È possibile che le dimensioni della distribuzione [!DNL Experience Manager] siano insufficienti. Ad Adobe, l’Assistenza clienti può aiutarti a identificare se il server è di dimensioni inferiori.
 * Esamina i file `access.log` e `error.log` per verificare la presenza di voci nel momento in cui si è verificato un errore. Cerca pattern che possano indicare anomalie nel codice personalizzato. Aggiungili all’elenco degli eventi monitorati.

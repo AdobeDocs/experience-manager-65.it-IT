@@ -4,11 +4,11 @@ description: Suggerimenti e indicazioni sulla configurazione [!DNL Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: Gestione risorse
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel file
 >
 >I file ImageMagick `policy.xml` e `configure.xml` sono disponibili all&#39;indirizzo `/usr/lib64/ImageMagick-&#42;/config/` invece di `/etc/ImageMagick/`.Per informazioni sulla posizione dei file di configurazione, consulta la [documentazione ImageMagick](https://www.imagemagick.org/script/resources.php) .
 
-Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Rivolgiti al rappresentante dell’Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
+Se utilizzi [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti di Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante di Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
 
 ### XMP {#xmp-writeback}
 
@@ -255,7 +255,7 @@ Crea indici personalizzati per le query che esegui spesso. Per informazioni dett
 1. Aggiungi una proprietà `String[]` `excludedPaths` con valori `/var`, `/etc/workflow/instances` e `/etc/replication`.
 1. Passa a `/oak:index/damAssetLucene`. Aggiungi una proprietà `String[]` `includedPaths` con valore `/content/dam`. Salva le modifiche.
 
-Se gli utenti non devono eseguire la ricerca full-text delle risorse, ad esempio, eseguendo ricerche nel testo dei documenti PDF, disabilitala. Migliori le prestazioni dell&#39;indice disattivando l&#39;indicizzazione full-text. Per disattivare l’estrazione del testo [!DNL Apache Lucene], effettua le seguenti operazioni:
+Se gli utenti non devono eseguire la ricerca full-text delle risorse, ad esempio, eseguendo una ricerca nel testo dei documenti di PDF, disabilitala. Migliori le prestazioni dell&#39;indice disattivando l&#39;indicizzazione full-text. Per disattivare l’estrazione del testo [!DNL Apache Lucene], effettua le seguenti operazioni:
 
 1. Nell&#39;interfaccia [!DNL Experience Manager], accedi a [!UICONTROL Gestione pacchetti].
 1. Carica e installa il pacchetto disponibile in [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
@@ -306,6 +306,6 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’u
 * Configura [!DNL ImageMagick] per limitare il consumo di risorse.
 * Rimuovi i passaggi non necessari dal flusso di lavoro [!UICONTROL Aggiorna risorsa DAM] .
 * Configura la pulizia del flusso di lavoro e delle versioni.
-* Ottimizza gli indici con i Service Pack e gli hotfix più recenti. Consulta l’Assistenza clienti di Adobe per eventuali ottimizzazioni aggiuntive dell’indice disponibili.
+* Ottimizza gli indici con i Service Pack e gli hotfix più recenti. Consulta Adobe Customer Support per eventuali ottimizzazioni aggiuntive dell&#39;indice disponibili.
 * Utilizza guessTotal per ottimizzare le prestazioni della query.
 * Se configuri [!DNL Experience Manager] per rilevare i tipi di file dal contenuto dei file (abilitando **[!UICONTROL Day CQ DAM Mime Type Service]** nella **[!UICONTROL AEM Web Console]**), carica molti file in blocco durante le ore non di picco, poiché richiede un uso intensivo di risorse.

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Pubblicazione,Configurazione
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+feature: Publishing,Configuration
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Il miglioramento delle prestazioni può variare notevolmente. Si basa su molti f
 
 I test eseguiti da Adobe hanno dato i seguenti risultati:
 
-* Per le immagini, il tempo di risposta è migliorato del 7%-28% a seconda del dispositivo e del browser. I vantaggi più importanti in termini di prestazioni sono stati i dispositivi iOS.
+* Per le immagini, il tempo di risposta è migliorato del 7%-28% a seconda del dispositivo e del browser. I vantaggi più significativi in termini di prestazioni sono stati registrati sui dispositivi iOS.
 * Per i visualizzatori, le prestazioni del tempo di caricamento sono migliorate del 15%.
 
 La dimostrazione seguente illustra la differenza tra il caricamento HTTP/1 e HTTP/2:
@@ -54,7 +54,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 * Utilizza la rete CDN (content delivery network) in bundle Adobe come parte della tua licenza Dynamic Media.
 * Utilizza un dominio dedicato (non-company-h.assetsadobe#.com).
 
-   Se disponi già di un dominio dedicato, puoi effettuare il consenso tramite il supporto tecnico.
+   Se disponi già di un dominio dedicato, puoi effettuare il consenso tramite Adobe Customer Support.
 
    Se non disponi di un dominio dedicato, Adobe pianifica la transizione a HTTP/2 nel 2018.
 

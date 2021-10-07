@@ -2,7 +2,7 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 43%

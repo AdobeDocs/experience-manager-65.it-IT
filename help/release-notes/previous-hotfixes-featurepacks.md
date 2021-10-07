@@ -4,7 +4,7 @@ description: Note sulla versione per  [!DNL Adobe Experience Manager] 6.5 servic
 contentOwner: AK
 mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 97d0b0d85276c733b487a8f3c5095bc4feb7e08d
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '23168'
 ht-degree: 13%
@@ -59,7 +59,7 @@ Per un elenco completo delle funzioni e dei miglioramenti introdotti in [!DNL Ex
 >
 >A partire dal Service Pack 9, [!DNL Experience Manager] i clienti possono sviluppare e utilizzare le loro [!DNL Experience Manager] applicazioni con distribuzioni delle [!DNL Azul Zulu] build di OpenJDK, conformi agli standard di Java™ SE.
 >Il supporto per i [!DNL Azul Zulu] JDK è fornito anche da Adobe ai clienti [!DNL Experience Manager].
->È possibile scaricare le versioni pertinenti dei JDK di [!DNL Azul Zulu] da [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>È possibile scaricare le versioni pertinenti dei JDK di [!DNL Azul Zulu] da [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 >I diritti di utilizzo della tecnologia Oracle Java™, distribuiti per Adobe, scadranno entro la fine di dicembre 2022. [!DNL Experience Manager] I clienti sono incoraggiati a pianificare e implementare l’utilizzo di  [!DNL Azul Zulu] JDK al più tardi entro questa data. Per ulteriori informazioni sull&#39;utilizzo della tecnologia [!DNL Oracle Java™] e della tecnologia [!DNL Azul Zulu], consulta le [Domande frequenti ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf) associate.
 
 Di seguito è riportato l&#39;elenco delle correzioni fornite nella versione 6.5.9.0 di .[!DNL Experience Manager]
@@ -234,7 +234,7 @@ Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dyn
 
 * L&#39;eccezione `SegmentNotFound` viene restituita dopo una sessione di lunga durata (NPR-36405).
 
-### Integrations (Integrazioni) {#integrations-6590}
+### Integrazioni {#integrations-6590}
 
 * Impossibile salvare le proprietà di pagina con l’ereditarietà abilitata per i frammenti esperienza Cloud Services (NPR-36107).
 
@@ -324,7 +324,7 @@ Adobe Experience Manager 6.5.9.0 Assets risolve i seguenti problemi in [!DNL Dyn
 
 * Quando imposti la certificazione e HSM per GlobalSign, [!DNL Experience Manager Forms] visualizza i messaggi di errore `Unsuported Algorithm` e `Invalid TSA Certificate` durante l&#39;aggiunta di una marca temporale a LTV (NPR-36026, NPR-36025).
 
-**Servizi documentali**
+**Document Services**
 
 * Aggiornamenti alla libreria [!DNL Gibson] per l&#39;integrazione con [!DNL Experience Manager Forms] (NPR-36211).
 
@@ -349,7 +349,7 @@ Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fa
 * Durante l’installazione di Experience Manager 6.5.x.x possono essere visualizzati i seguenti errori e messaggi di avviso:
    * &quot;Quando l’integrazione di Adobe Target è configurata in Experience Manager utilizzando l’API di Target Standard (autenticazione IMS), l’esportazione di frammenti di esperienza in Target comporta la creazione di tipi di offerta errati. Invece del tipo “Frammento esperienza”/source “Adobe Experience Manager”, in Target vengono create diverse offerte con il tipo “HTML”/source “Adobe Target Classic”.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
-   * La convalida lato server del modulo adattivo non riesce quando si utilizzano funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
+   * La convalida lato server del modulo adattivo non riesce quando vengono utilizzate funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner acquistabili.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
@@ -397,7 +397,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * Quando si applicano un rientro ad alcuni elementi di un elenco numerato, tutti gli elementi mantengono lo stesso numero, anche se la numerazione deve iniziare da 1 per gli elementi con lo stesso rientro (CQ-4313011).
 * Quando la minimizzazione è abilitata, non puoi modificare alcuna pagina o componente. I problemi sono iniziati dopo l&#39;installazione di AEM 6.5 Service Pack 7 (CQ-4311133).
 * I filtri di ricerca e risorse Omni restituiscono risultati irrilevanti o nessun risultato (CQ-4312322, NPR-35793).
-* Quando più pagine accedono contemporaneamente a una libreria client, il gestore della libreria HTML non carica la libreria client. Porta al rendering non corretto delle pagine (NPR-35538).
+* Quando più pagine accedono contemporaneamente a una libreria client, HTML Library Manager non carica la libreria client. Porta al rendering non corretto delle pagine (NPR-35538).
 * Il percorso contestuale viene rimosso automaticamente quando si imposta un SSL in [!DNL Experience Manager] (NPR-35294).
 * La gestione dei pacchetti non disconnette gli utenti dopo aver fatto clic sull&#39;opzione di disconnessione (NPR-35160).
 
@@ -467,7 +467,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Quando un valore non viene fornito a un campo nascosto contrassegnato come obbligatorio, impedisce il salvataggio di un componente (NPR-35219).
 
-### Integrations (Integrazioni) {#integrations-6580}
+### Integrazioni {#integrations-6580}
 
 * Quando utilizzi valori diversi per l’ID tenant IMS e il codice client di Target, [!DNL Experience Manager] non riesce a integrarsi con [!DNL Adobe Target] (NPR-35342).
 
@@ -523,7 +523,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Quando tenti di aprire un modulo adattivo su un&#39;applicazione mobile [!DNL Experience Manager Forms] per iOS, l&#39;applicazione si ferma per rispondere (CQ-4314825).
 
-* La scheda [!UICONTROL To-do] nell’area di lavoro HTML visualizza i caratteri HTML (NPR-35298).
+* La scheda [!UICONTROL To-do] nell’area di lavoro di HTML visualizza i caratteri HTML (NPR-35298).
 
 **XMLFM**
 
@@ -557,7 +557,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fase di progettazione del modello di flusso di lavoro personalizzato con la relativa copia in fase di esecuzione utilizzando l’API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Contatta l’Assistenza clienti Adobe in caso di problemi durante la modifica e la creazione di regole a cascata nella finestra di dialogo [!UICONTROL Folder Metadata Schema Forms Editor] e [!UICONTROL Metadata Schema Forms Editor] utilizzando [!UICONTROL Define Rule] (Definisci regola). Le regole già create e salvate funzionano come previsto.
+* Contatta l’Assistenza clienti di Adobe in caso di problemi durante la modifica e la creazione di regole a cascata nella finestra di dialogo [!UICONTROL Folder Metadata Schema Forms Editor] e [!UICONTROL Metadata Schema Forms Editor] utilizzando [!UICONTROL Define Rule] (Definisci regola). Le regole già create e salvate funzionano come previsto.
 
 * Se una cartella nella gerarchia viene rinominata in [!DNL Experience Manager Assets] e la cartella nidificata contenente una risorsa viene pubblicata in [!DNL Brand Portal], il titolo della cartella non viene aggiornato in [!DNL Brand Portal] finché la cartella principale non viene pubblicata nuovamente.
 
@@ -568,7 +568,7 @@ Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fa
 * Durante l’installazione di Experience Manager 6.5.x.x possono essere visualizzati i seguenti errori e messaggi di avviso:
    * &quot;Quando l’integrazione di Adobe Target è configurata in Experience Manager utilizzando l’API di Target Standard (autenticazione IMS), l’esportazione di frammenti di esperienza in Target comporta la creazione di tipi di offerta errati. Invece del tipo “Frammento esperienza”/source “Adobe Experience Manager”, in Target vengono create diverse offerte con il tipo “HTML”/source “Adobe Target Classic”.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
-   * La convalida lato server del modulo adattivo non riesce quando si utilizzano funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
+   * La convalida lato server del modulo adattivo non riesce quando vengono utilizzate funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner acquistabili.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
@@ -772,7 +772,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Se una risorsa viene spostata in una cartella in cui è configurata la sincronizzazione automatica con [!DNL Dynamic Media], la risorsa non viene sincronizzata (CQ-4307122).
 
-* [!DNL Dynamic Media] video non riprodotto su dispositivi iOS con i controlli video HTML5 nativi (CQ-4306977, CQ-4306727).
+* [!DNL Dynamic Media] il video non viene riprodotto su dispositivi iOS con i controlli video HTML5 nativi (CQ-4306977, CQ-4306727).
 
 * Non è possibile scaricare immagini in cui è applicato SmartCrop (CQ-4304558).
 
@@ -786,7 +786,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * I sottotitoli video non vengono visualizzati se il video non è il primo in un MixedMediaSet (CQ-4298161).
 
-* Il visualizzatore HTML5 per eCatalog su dispositivi mobili iPhone non può girare le pagine o capovolgere le pagine (CQ-4296611).
+* Il visualizzatore eCatalog di HTML5 su dispositivi mobili iPhone non può girare le pagine o capovolgere le pagine (CQ-4296611).
 
 * Quando si scorrono i campioni su un dispositivo mobile, per alcuni secondi i campioni scorrono a destra e all’esterno dell’area visibile, quindi tornano a essere visualizzati (CQ-4296439).
 
@@ -831,7 +831,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
    ERROR The start time must precede (be less than) the end time
    ```
 
-### Integrations (Integrazioni) {#integrations-6570}
+### Integrazioni {#integrations-6570}
 
 * La modifica di una configurazione [!DNL Adobe Launch] esistente non riesce (NPR-35045).
 * Non è possibile esportare [!DNL Experience Fragments] in [!DNL Adobe Target] se si utilizza la configurazione IMS e l’ambiente [!DNL Adobe Target Standard] (NPR-34555).
@@ -900,7 +900,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 **Sicurezza dei documenti**
 
-* Quando salvi un nuovo criterio di protezione dei documenti, Experience Manager Forms visualizza il messaggio di errore `Relative validity period is required` (NPR-34679).
+* Quando si salva un nuovo criterio di protezione dei documenti, in Experience Manager Forms viene visualizzato il messaggio di errore `Relative validity period is required` (NPR-34679).
 
 * Document Security non è in grado di proteggere il documento PDF 2.0 (CQ-4305851).
 
@@ -916,7 +916,7 @@ Le funzioni chiave e i miglioramenti introdotti in Adobe Experience Manager 6.5.
 
 * Utilizza l’ interfaccia utente [!DNL Dynamic Media] per annullare la validità del contenuto nella cache CDN (Content Delivery Network).
 
-* La pubblicazione delle cartelle dei contributi delle risorse da Brand Portal ad Experience Manager Assets è ora supportata anche tramite il server proxy.
+* La pubblicazione delle cartelle dei contributi delle risorse da Brand Portal a Experience Manager Assets è ora supportata anche tramite il server proxy.
 
 * I gruppi generati automaticamente della cartella privata vengono ora eliminati al momento dell&#39;eliminazione della cartella privata in [!DNL Experience Manager Assets].
 
@@ -949,7 +949,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * In [!DNL Sites] o [!DNL Screens], seleziona un progetto e fai clic su [!UICONTROL Pubblicazioni di gestione]. Gli utenti non possono avanzare nella procedura guidata [!UICONTROL Gestisci pubblicazione] a causa di errori nell&#39;interfaccia utente. In particolare, l&#39;opzione [!UICONTROL Pubblica] non funziona (NPR-34099).
 * La posizione di iParsys (Sistema paragrafo ereditato) non viene ripristinata nella posizione predefinita originale dopo aver deselezionato le opzioni [!UICONTROL Annulla ereditarietà] o [!UICONTROL Disattiva ereditarietà] (NPR-34097).
 * Se il `RolloutConfigManagerFactoryImpl` non è in grado di caricare una configurazione di rollout, non tenta di caricare le configurazioni mancanti. Restituisce le configurazioni memorizzate nella cache (NPR-34092).
-* Nel componente di base Testo, dopo aver utilizzato l’opzione di modifica HTML di origine, la classe dal tag `em` viene rimossa (NPR-34081).
+* Nel componente di base Testo, dopo aver utilizzato l’opzione di modifica di HTML di origine, la classe dal tag `em` viene rimossa (NPR-34081).
 * Dopo l’aggiornamento da Experience Manager 6.3.3 a Experience Manager 6.5.3, il processo di rollout richiede molto più tempo e il rollout non riesce con un errore di timeout (NPR-34049).
 * Il `htmlwriter` non codifica i valori degli attributi. Il markup presente nel markup XF viene esportato con valori di attributo decodificati (ovvero `"` anziché `&#34`). Causa problemi sul lato Target con Visual Experience Composer che utilizza il XF esportato (NPR-34048).
 * Durante lo spostamento delle pagine in [!DNL Experience Manager Sites], aumenta la registrazione per acquisire l’errore di creazione della versione con un motivo (NPR-34014).
@@ -975,7 +975,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * È possibile creare un componente in una pagina blueprint con lo stesso nome della pagina. Durante il rollout, `_msm_moved` viene aggiunto un suffisso per rinominare il componente. Il componente viene spostato alla fine del [!UICONTROL Sistema paragrafo] (NPR-33535).
 * Quando offTime o onTime è impostato su molte pagine o risorse, è ad alta intensità di risorse e rallenta il sistema durante l&#39;avvio e lo spegnimento (NPR-33482).
 * Un utente con autorizzazioni CRUD su `/content/experience-fragment` non è in grado di eliminare una cartella (NPR-33436).
-* Puoi selezionare [!UICONTROL HTML e JSON] come opzione per [!UICONTROL Adobe Target export format] su una cartella principale nella sezione [!DNL Experience Fragments]. Le stesse proprietà vengono visualizzate nell&#39;interfaccia touch per le sottocartelle di questa cartella principale. Tuttavia, in CRXDE, per `cq:adobeTargetExportFormat` viene visualizzato solo HTML anziché `html,json` (NPR-33423).
+* Puoi selezionare [!UICONTROL HTML &amp; JSON] come opzione per [!UICONTROL Adobe Target export format] su una cartella principale nella sezione [!DNL Experience Fragments] . Le stesse proprietà vengono visualizzate nell&#39;interfaccia touch per le sottocartelle di questa cartella principale. Tuttavia, in CRXDE, per `cq:adobeTargetExportFormat` viene visualizzato solo HTML invece di `html,json` (NPR-33423).
 * La pubblicazione o l’annullamento della pubblicazione da un alias di pagina non è supportata. Rimuovere l&#39;opzione che sembra richiedere diversamente (NPR-33415).
 * Un tag specifico può essere spostato da una posizione all’altra in [!DNL Experience Manager]. Può essere applicato anche a pagine diverse prima e dopo lo spostamento. Durante la modifica delle proprietà delle pagine, il tag non viene visualizzato per la modifica, anche se il tag è lo stesso (NPR-33353).
 * Un modello di pagina non viene riprodotto correttamente quando un contenitore di layout viene eliminato da un modello che contiene più contenitori di layout (NPR-33347).
@@ -1082,7 +1082,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Se l&#39;utente sposta una risorsa pubblicata in una nuova posizione, la risorsa viene ripubblicata anche se l&#39;opzione [!UICONTROL Ripubblica] è deselezionata. Questo porta a molte risorse orfane sdraiate sull’istanza di pubblicazione. Il comportamento predefinito, tuttavia, consiste nel fatto che l’operazione di spostamento su una risorsa pubblicata la annulla automaticamente; questa risorsa viene ripubblicata se l’autore seleziona l’opzione [!UICONTROL Ripubblica] quando sposta la risorsa (NPR-33934).
 
-* La pagina [!UICONTROL Sposta risorse] per le risorse nelle raccolte non carica tutti i contenuti HTML, ad esempio l&#39;opzione [!UICONTROL Regola/Ripubblica]. Pertanto, gli utenti non possono completare l’operazione di spostamento (NPR-33860).
+* La pagina [!UICONTROL Sposta risorse] per le risorse nelle raccolte non carica tutto il contenuto di HTML, ad esempio l&#39;opzione [!UICONTROL Regola/Ripubblica]. Pertanto, gli utenti non possono completare l’operazione di spostamento (NPR-33860).
 
 * Lo spostamento di una risorsa e l’aggiunta di caratteri speciali nel nome e nel titolo delle risorse spostate crea una cartella aggiuntiva (con lo stesso nome) nella nuova posizione della risorsa (NPR-33826).
 
@@ -1147,7 +1147,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * L&#39;interfaccia [Browser configurazioni](/help/sites-administering/configurations.md) non visualizza tutte le configurazioni (NPR-33644).
 * Premendo il tasto `Esc` durante la ricerca di utenti da impersonare, la finestra di dialogo **[!UICONTROL Utente]** si chiude invece dell&#39;elenco di utenti (NPR-34084).
 
-### Integrations (Integrazioni) {#integrations-6560}
+### Integrazioni {#integrations-6560}
 
 * Le attività con nomi lunghi non vengono sincronizzate con [!DNL Adobe Target] (NPR-34254).
 
@@ -1173,7 +1173,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 ### [!DNL Communities] {#communities-6560}
 
-* La condivisione di un post sui social media mostra un&#39;opzione obsoleta Google+ (NPR-33877).
+* La condivisione di un post sui social media sta mostrando un&#39;opzione obsoleta Google+ (NPR-33877).
 
 * Il membro della community non è in grado di modificare il modello di gruppo o altre impostazioni della funzione di gruppo (NPR-33530).
 
@@ -1257,13 +1257,13 @@ Dopo aver installato il pacchetto aggiuntivo [!DNL Experience Manager Forms] 6.5
 
 * Se si copia e incolla il contenuto da un documento [!DNL Microsoft Word] a un frammento di documento di testo in una lettera, si verificano problemi di formattazione (NPR-33536).
 
-**Servizi documentali**
+**Servizi basati su documenti**
 
 * Quando si genera un file PDF da un file XDP utilizzando i servizi Output e Forms, il testo risulta mancante e sovrapposto (NPR-34237, CQ-4299331).
 
-* Quando si converte un file HTML in PDF, l&#39;attributo `MaxReuseCount` non è configurabile (NPR-33470).
+* Quando si converte un file HTML in PDF, l’attributo `MaxReuseCount` non è configurabile (NPR-33470).
 
-* Quando si scarica un file PDF che include funzioni interattive Estensioni di Reader, non è possibile aggiungere un allegato al file PDF utilizzando [!DNL Adobe Reader] (NPR-33729).
+* Quando si scarica un file PDF che include funzioni interattive Estensioni Reader, non è possibile aggiungere un allegato al file PDF utilizzando [!DNL Adobe Reader] (NPR-33729).
 
 **Sicurezza dei documenti**
 
@@ -1293,7 +1293,7 @@ Alcune funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Mana
 
 * Salva un elemento [!DNL Interactive Communication] come bozza.
 
-* Supporto per [!DNL Oracle WebLogic 12] ad Experience Manager Forms su JEE.
+* Supporto per [!DNL Oracle WebLogic 12] per Experience Manager Forms su JEE.
 
 * È stata migliorata la gestione delle eccezioni nel flusso dell&#39;interfaccia utente [!DNL Adobe Experience Manager Assets] .
 
@@ -1313,15 +1313,15 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 * Experience Manager Sites offre un’opzione per pubblicare o annullare la pubblicazione di una pagina dal relativo alias. L&#39;opzione non funziona (NPR-33415).
 * Quando un contenitore di layout viene eliminato da un modello contenente più modelli, il modello non viene riprodotto correttamente (NPR-33347).
-* Quando una pagina di Experience Manager Sites fa parte di un set di contenuti di grandi dimensioni con più Live Copy, l’anteprima della cronologia della versione della pagina non viene caricata (NPR-33311).
-* Quando si utilizza il comando Sposta per rinominare una pagina di Experience Manager Sites, il titolo della pagina non viene aggiornato (NPR-33264).
+* Quando una pagina Experience Manager Sites fa parte di un set di contenuti di grandi dimensioni con più Live Copy, l’anteprima della cronologia della versione della pagina non viene caricata (NPR-33311).
+* Quando si utilizza il comando Sposta per rinominare una pagina Experience Manager Sites, il titolo della pagina non viene aggiornato (NPR-33264).
 * Quando si spostano le pagine nella vista a colonne, le colonne scompaiono (NPR-33216).
 * Quando il nome di un componente locale in una copia per lingua è identico al nome di un componente nella blueprint e il componente viene rilasciato dalla blueprint, il termine `_msm_moved` non viene aggiunto al nome del componente locale (NPR-33208).
-* Il servlet di reindirizzamento pagina aggiunge .html a un URL di Experience Manager Sites in cui ResourceType non è `cq:Page` (NPR-33176).
+* Il servlet di reindirizzamento pagina aggiunge .html a un URL Experience Manager Sites in cui ResourceType non è `cq:Page` (NPR-33176).
 * Quando si incolla una sottostruttura, non è possibile decidere se le relative sottopagine devono essere incollate o meno (NPR-33149).
 * Il numero di risultati negli usi live di un componente è limitato al numero 49 (NPR-33058).
 * Quando si basa un frammento di contenuto su uno schema e questo contiene un’area di testo obbligatoria o un campo percorso, il frammento di contenuto non viene salvato (NPR-33007).
-* Quando crei un componente personalizzato utilizzando il componente Frammento esperienza predefinito e lo utilizzi nelle pagine di Experience Manager Sites, in Experience Manager non vengono visualizzati i riferimenti (utilizzo) per il componente personalizzato (NPR-32852).
+* Quando crei un componente personalizzato utilizzando il componente Frammento esperienza predefinito e lo utilizzi nelle pagine Experience Manager Sites, in Experience Manager non vengono visualizzati i riferimenti (utilizzo) per il componente personalizzato (NPR-32852).
 * Quando rinomini una cartella con un numero elevato di riferimenti, molti riferimenti alla cartella non vengono aggiornati (NPR-32765).
 * Quando abiliti l’opzione di modifica sorgente, questa diventa disponibile per le opzioni a schermo intero in linea, ma rimane mancante per la finestra di dialogo di modifica e le opzioni a schermo intero dell’editor Rich Text (NPR-32763).
 * Se disponi di un campo multiplo e contiene un campo obbligatorio (ad esempio un elenco a discesa o un campo percorso) nelle proprietà della pagina di un blueprint, quando viene implementata una pagina contenente tale campo multiplo, le proprietà della pagina della Live Copy non vengono salvate (NPR-32751).
@@ -1330,7 +1330,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * Le autorizzazioni di authoring per leggere, modificare, creare ed eliminare le Live Copy sono revocate. Ogni autore doveva fornire in modo esplicito le autorizzazioni di lettura e modifica per spostare le pagine all&#39;interno di una blueprint (NPR-32550).
 * Gli autori dei contenuti non riescono a creare Launch per una pagina che ha un’integrazione con Adobe Analytics (NPR-32548).
 * Quando un utente riprende l’ereditarietà con la sincronizzazione, la Live Copy della pagina padre non si sincronizza con la blueprint e visualizza uno stato errato (NPR-32500).
-* Il caricamento della pagina dell’editor di Experience Manager Sites dura più di 15 secondi (NPR-32413).
+* Il caricamento della pagina dell&#39;editor Experience Manager Sites richiede più di 15 secondi (NPR-32413).
 * Alcuni campi non presentano l’opzione Annulla ereditarietà (NPR-32362).
 * Quando selezioni un percorso per un componente Frammento esperienza e selezioni la casella di controllo Apri finestra di dialogo per selezione , non accedi al percorso selezionato nel browser Percorsi (NPR-32308).
 * Quando esegui l’aggiornamento da Experience Manager 6.2 a Experience Manager 6.5, il componente Parsys dei modelli statici non viene visualizzato correttamente. L’altezza del componente Parsys è impostata su 0 e i componenti al suo interno non sono visibili (NPR-33663).
@@ -1445,7 +1445,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Assets fornisce correzioni ai seguenti problemi:
 
-*  L’opzione Start nella finestra di dialogo   Crea flusso di lavoro per le risorse di una raccolta è disabilitata, impedendo in tal modo l’attivazione del flusso di lavoro (NPR-32471).
+*  L’opzione Start  [!UICONTROL Crea ] flusso di lavoro per le risorse di una raccolta è disabilitata, impedendo in tal modo l’attivazione del flusso di lavoro (NPR-32471).
 
 * Quando si utilizza la finestra a comparsa a cascata negli schemi di metadati, quando si seleziona e si salva un&#39;opzione a discesa contenente un apostrofo (dall&#39;elenco a discesa figlio), l&#39;opzione apostrofo selezionata scompare dopo la riapertura della risorsa [!UICONTROL Proprietà] (NPR-32649).
 
@@ -1469,13 +1469,13 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 *  Nextoption rimane disabilitata quando si seleziona la cartella di destinazione nell’interfaccia  [!UICONTROL Sposta ] risorse (NPR-33356).
 
-*  Nextoption non è abilitata quando si seleziona il nodo principale (in cui è visibile una singola cartella figlio) e si seleziona la cartella secondaria (NPR-33275).
+*  Nextoption non è abilitata quando si seleziona il nodo principale (in cui è visibile una singola cartella figlio) e si seleziona la cartella figlio (NPR-33275).
 
 * Le autorizzazioni di archiviazione e ritiro sono disabilitate in Adobe Asset Link (AAL) per gli utenti con autorizzazione di eliminazione, anche se sono concesse altre autorizzazioni come lettura, creazione o modifica (NPR-33272).
 
 * Le rappresentazioni di ritaglio avanzato non sono disponibili nella finestra di dialogo per il download delle risorse (NPR-33167).
 
-* Si osserva un’eccezione nei registri all’apertura della barra delle rappresentazioni per un PDF in una cartella con profilo di ritaglio avanzato (CQ-4294201).
+* Si osserva un’eccezione nei registri relativi all’apertura della barra delle rappresentazioni per un PDF in una cartella con profilo di ritaglio avanzato (CQ-4294201).
 
 * I predefiniti per immagini non vengono pubblicati se [!UICONTROL la modalità di sincronizzazione Dynamic Media] è disabilitata per impostazione predefinita all&#39;Experience Manager con la modalità di esecuzione Dynamic Media Scene7 (CQ-4294200).
 
@@ -1521,7 +1521,7 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 * La pagina dei risultati di Omnisearch non visualizza un messaggio se non sono presenti corrispondenze (NPR-32974).
 * Il filtro Omnisearch restituisce tutte le corrispondenze sotto il nodo `/content` ignorando la posizione selezionata (NPR-32849).
 
-### Integrations (Integrazioni) {#integrations-6550}
+### Integrazioni {#integrations-6550}
 
 * La cache interna viene cancellata quando viene pubblicata una pagina con un componente Adobe Target (NPR-33162).
 * L&#39;integrazione con Adobe Target non funziona su [!DNL Windows Internet Explorer] 11 (NPR-33111).
@@ -1573,22 +1573,22 @@ Di seguito è riportato l&#39;elenco delle correzioni apportate in [!DNL Experie
 
 >[!NOTE]
 >
->Il Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Forms Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Il Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Gestione della corrispondenza: L’ordine delle risorse in un’area di destinazione viene mischiato dopo l’invio di una lettera (NPR-33359, NPR-33153).
 * Forms adattivo: Quando un utente modifica un modulo adattivo, l&#39;opzione [!UICONTROL Avvia flusso di lavoro] disponibile nel menu [!UICONTROL Informazioni pagina] non funziona (NPR-33004).
 * Forms adattivo: L&#39;utente non è in grado di salvare un modulo adattivo con più di un allegato (NPR-32997).
 * Forms adattivo: La modifica del layout del pannello in un modulo adattivo genera un errore (CQ-4293880).
 * Forms adattivo: Una nuova riga a una stringa in un dizionario dei moduli adattivi aggiunge caratteri `&#xa;` al dizionario (NPR-33266).
-* Accessibilità adattata di Forms: Quando un utente visualizza l&#39;anteprima di un modulo adattivo come modulo HTML, il campo [!UICONTROL Firma scarabocchio] non è in grado di mantenere lo stato attivo (NPR-33159).
+* Accessibilità adattata di Forms: Quando un utente visualizza l&#39;anteprima di un modulo adattivo come modulo HTML, il campo [!UICONTROL Firma scarabocchio] non è in grado di mantenere lo stato attivo come tabulazione (NPR-33159).
 * Accessibilità adattata di Forms: I messaggi di errore visualizzati all’invio di un modulo adattivo non si collegano a un attributo `aria-describedBy` (NPR-33071).
 * Accessibilità adattata di Forms: I campi contrassegnati come obbligatori in un modulo adattivo non hanno l’attributo obbligatorio impostato su True nello schema di accessibilità ARIA (NPR-33070).
-* Servizio PDFG: Quando un utente converte un file di testo in un PDF, i caratteri giapponesi non vengono riprodotti correttamente (NPR-33238).
-* Servizio PDFG: L&#39;operazione `CreatePDF` non riesce a convertire un file PDF in formato PDF OCR (NPR-32994).
-* Servizio PDFG: La conversione PDF non riesce per la 200a istanza di un documento [!DNL OpenOffice] (NPR-32766).
+* Servizio PDFG: Quando un utente converte un file di testo in un PDF, i caratteri giapponesi non vengono visualizzati correttamente (NPR-33238).
+* Servizio PDFG: L&#39;operazione `CreatePDF` non riesce a convertire un file PDF in formato OCR di PDF (NPR-32994).
+* Servizio PDFG: La conversione di PDF non riesce per la 200a istanza di un documento [!DNL OpenOffice] (NPR-32766).
 * Integrazione back-end: Le richieste del modello dati del modulo non riescono perché scade il token di aggiornamento a causa di uno stato inattivo non corretto (NPR-33169).
 * Designer: Gli assistenti vocali eseguono l’ordine di tabulazione in base all’ordine geografico predefinito anziché all’ordine di tabulazione personalizzato definito nel file XDP (NPR-32160).
-* Designer: Se l’opzione di assegnazione tag è abilitata, il bordo del sottomodulo scompare nell’output PDF generato (NPR-32778).
+* Designer: Se l’opzione di assegnazione tag è abilitata, il bordo del sottomodulo scompare nell’output di PDF generato (NPR-32778).
 * Archiviato XSS con il GuideSOMProviderServlet (NPR-32700).
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
@@ -1621,7 +1621,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Quando un URL di una pagina Adobe Experience Manager Sites contiene due punti (`:`) o un simbolo di percentuale (`%`), il browser smette di rispondere e i picchi di utilizzo della CPU (NPR-32369, NPR-31918).
 
-* Quando una pagina di Experience Manager Sites viene aperta per la modifica e un componente viene copiato, l’azione Incolla non è disponibile per alcuni segnaposto (NPR-32317).
+* Quando una pagina Experience Manager Sites viene aperta per la modifica e un componente viene copiato, l’azione Incolla non è disponibile per alcuni segnaposto (NPR-32317).
 
 * Quando si apre la procedura guidata Gestisci pubblicazione , un frammento esperienza collegato a un componente core non viene visualizzato negli elenchi dei riferimenti pubblicati (NPR-32233).
 
@@ -1697,7 +1697,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * La pagina dei risultati della ricerca nell’interfaccia touch (tramite Omnisearch) scorre automaticamente verso l’alto e perde la posizione di scorrimento dell’utente (NPR-31307).
 
-* La pagina dei dettagli delle risorse PDF non mostra i pulsanti di azione eccetto A raccolta e Aggiungi rappresentazione in Experience Manager in esecuzione in modalità di esecuzione di Dynamic Media Scene7 (CQ-4286705).
+* La pagina dei dettagli delle risorse di PDF non mostra i pulsanti di azione eccetto A raccolta e Aggiungi rappresentazione in Experience Manager in esecuzione in modalità di esecuzione di Dynamic Media Scene7 (CQ-4286705).
 
 * L’elaborazione delle risorse richiede troppo tempo durante il processo di caricamento batch di Scene7 (CQ-4286445).
 
@@ -1739,7 +1739,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * L’errore nell’interfaccia utente e l’eccezione Null nei registri degli errori viene osservato quando un tag, da tradurre, viene aggiunto a un progetto di traduzione (NPR-31896).
 
-### Integrations (Integrazioni) {#integrations-6540}
+### Integrazioni {#integrations-6540}
 
 * La generazione degli URL della libreria Launch è basata solo sui valori `path` e `library_name` dell’API Launch e non è basata sul valore `library_path` (NPR-31550).
 
@@ -1785,13 +1785,13 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 ### Oak - Indicizzazione e query {#oak-indexing-6540}
 
-* Documenti MS Word e MS Excel, contenente immagine JPEG, quando l&#39;analisi con il parser Tika non riesce ad analizzare e la classe non trovato errore viene osservato (NPR-31952).
+* Documenti MS Word e MS Excel, che contengono immagine JPEG, quando analizzati con il parser Tika non riescono ad analizzare e la classe non trovato errore viene osservato (NPR-31952).
 
 ### Forms {#forms-6540}
 
 >[!NOTE]
 >
->Experience Manager Service Pack non include correzioni per Experience Manager Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per Adobe Experience Manager Forms su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Forms Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Il Service Pack di Experience Manager non include correzioni per Experience Manager Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per Adobe Experience Manager Forms su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Gestione della corrispondenza: Le lettere presentano caratteri aggiuntivi dopo l’invio ai flussi di lavoro post-elaborazione (NPR-32626).
 
@@ -1809,17 +1809,17 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Forms adattivo: Lo strumento per l’accessibilità del browser Chrome segnala un errore di best practice (NPR-32310).
 
-* Forms adattivo: Problemi di traduzione durante la configurazione di un modulo adattivo incorporato in una pagina di Experience Manager Sites (NPR-32168).
+* Forms adattivo: Problemi di traduzione durante la configurazione di un modulo adattivo incorporato in una pagina Experience Manager Sites (NPR-32168).
 
 * Workbench: Viene visualizzato un messaggio di errore durante l&#39;utilizzo dell&#39;operazione Get PDF Properties per il servizio PDF Utilities (NPR-32150).
 
 * Sicurezza dei documenti: Un file PDF protetto non si apre offline con l&#39;opzione DisableGlobalOfflineSynchronizationData impostata su True (NPR-32078).
 
-* Designer: Se l’opzione di assegnazione tag è abilitata, il bordo del sottomodulo scompare nell’output PDF generato (NPR-32547, NPR-31983, NPR-31950).
+* Designer: Se l’opzione di assegnazione tag è abilitata, il bordo del sottomodulo scompare nell’output di PDF generato (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: Se in una tabella sono presenti celle unite, il test di accessibilità non riesce per il file PDF di output convertito da un modulo XDP utilizzando il servizio di output (CQ-4285372).
 
-* JEE di base: Se un server Forms di Experience Manager è disconnesso da un cluster, i problemi di caching ne impediscono la riconnessione al server (NPR-32412).
+* JEE di base: Se un server Experience Manager Forms è disconnesso da un cluster, i problemi di caching ne impediscono la riconnessione al server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -1869,7 +1869,7 @@ Alcuni elementi di rilievo di questa versione del Service Pack sono:
 
 **Problemi risolti**
 
-* I metadati per alcuni documenti PDF non vengono aggiornati e salvati nel PDF quando il titolo viene modificato (NPR-31629).
+* I metadati per alcuni documenti PDF non vengono aggiornati e salvati in PDF quando il relativo titolo viene modificato (NPR-31629).
 
 * La condivisione delle risorse non funziona per una risorsa con il carattere più (`+`) nel nome file (NPR-31547).
 
@@ -2050,7 +2050,7 @@ Remove one mention of this fix.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack non include correzioni per  [!DNL Experience Manager Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per [!DNL Experience Manager Forms] su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Forms Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per  [!DNL Experience Manager Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per [!DNL Experience Manager Forms] su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Pacchetto di componenti aggiuntivi per Forms {#forms-add-on-package-6530}
 
@@ -2236,7 +2236,7 @@ Alcuni elementi di rilievo di questa versione del Service Pack sono:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack non include correzioni per  [!DNL Experience Manager Forms]. Vengono distribuite utilizzando un pacchetto aggiuntivo [!DNL Forms] separato. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per [!DNL Experience Manager Forms] su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Forms Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per  [!DNL Experience Manager Forms]. Vengono distribuite utilizzando un pacchetto aggiuntivo [!DNL Forms] separato. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per [!DNL Experience Manager Forms] su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 Elementi di rilievo dei moduli [!DNL Experience Manager] 6.5.2.0:
 
@@ -2272,7 +2272,7 @@ Elementi di rilievo dei moduli [!DNL Experience Manager] 6.5.2.0:
 
 * Quando si utilizza l’accesso desktop non visivo in modalità Sfoglia per leggere un modulo HTML5, il browser Chrome legge l’elemento “grafico” prima di qualsiasi file SVG nella struttura del modulo. NPR-30449: Hotfix per CQ-4274732
 
-#### Programma di installazione JEE per Forms
+#### Programma di installazione Forms JEE
 
 **Forms - Sicurezza dei documenti**
 
@@ -2487,7 +2487,7 @@ Gli elementi di rilievo di [!DNL Experience Manager Forms] 6.5.1.0 sono:
 * La logica di annullamento validità della cache in memoria delle lettere deve essere aggiornata, perché quando viene pubblicata una risorsa, l’ora dell’ultima modifica non viene aggiornata. Hotfix per CQ-4250465
 * Impossibile pubblicare il frammento di documento, DD e lettere. Hotfix per CQ-4272893
 
-#### Programma di installazione JEE per Forms
+#### Programma di installazione Forms JEE
 
 **PDF Generator**
 
@@ -2497,7 +2497,7 @@ Gli elementi di rilievo di [!DNL Experience Manager Forms] 6.5.1.0 sono:
 
 **Forms - Designer**
 
-* Quando si esegue un controllo di accessibilità completo sul PDF statico creato utilizzando [!DNL Experience Manager Forms Designer], il controllo della lingua principale non riesce a causa di un attributo di lingua mancante. Hotfix per CQ-4272923, CQ-4271002
+* Quando viene eseguito un controllo di accessibilità completo sul PDF statico creato utilizzando [!DNL Experience Manager Forms Designer], il controllo della lingua principale non riesce a causa di un attributo di lingua mancante. Hotfix per CQ-4272923, CQ-4271002
 
 **Forms - Sicurezza dei documenti**
 
@@ -2508,10 +2508,10 @@ Gli elementi di rilievo di [!DNL Experience Manager Forms] 6.5.1.0 sono:
 
 **Forms - Servizi basati su documenti**
 
-* La conversione del PDF in PDF/A-1b non riesce e il campo Modulo non dispone di un codice di aspetto. NPR-29940: Hotfix per CQ-4269618
+* La conversione di PDF in PDF/A-1b non riesce con il campo Modulo senza il codice di aspetto. NPR-29940: Hotfix per CQ-4269618
 
 * OSGi: Impossibile determinare il numero di pagine generate durante il rendering. NPR-28922: Hotfix per CQ-4270870
-* Abilitazione del supporto per i file PDF statici tramite il servizio Forms in [!DNL Experience Manager Forms OSGi]. NPR-28572: Hotfix per CQ-4270869
+* Abilitazione del supporto per i file PDF statici tramite Forms Service in [!DNL Experience Manager Forms OSGi]. NPR-28572: Hotfix per CQ-4270869
 * Impossibile modificare le autorizzazioni per XMLForm.exe. NPR-29828, NPR-29237: Hotfix per Q-4267080
 * Il PDF statico creato dal modulo di output del server [!DNL Experience Manager Forms] non compila l&#39;attributo/tag della lingua con la lingua del documento creato. NPR-27332: Hotfix per CQ-4271002
 
@@ -2523,7 +2523,7 @@ Gli elementi di rilievo di [!DNL Experience Manager Forms] 6.5.1.0 sono:
 
 ### Feature Pack inclusi
 
-#### Risorse - Incluso
+#### Attività - Incluse
 
 * Abilitazione del supporto per l’utilità di gestione di più siti per [!DNL Experience Manager Assets]. Per ulteriori informazioni, consulta [Riutilizzare le risorse utilizzando MSM per Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: Hotfix per CQ-4259922
 

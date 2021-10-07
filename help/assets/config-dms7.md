@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '6936'
+source-wordcount: '6940'
 ht-degree: 4%
 
 ---
@@ -80,7 +80,7 @@ Per migrare eventuali predefiniti e configurazioni personalizzate creati da `/et
 
 L&#39;installazione del feature pack 18912 è *opzionale*.
 
-Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare le risorse da Dynamic Media - modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7 in Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Il Feature Pack 18912 consente di caricare in massa le risorse tramite FTP oppure di migrare, ad Experience Manager, le risorse da Dynamic Media - Modalità ibrida o Dynamic Media Classic in modalità Dynamic Media - Scene7. È disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Per ulteriori informazioni, consulta [Installare feature pack 18912 per la migrazione di massa delle risorse](/help/assets/bulk-ingest-migrate.md) .
 
@@ -108,7 +108,7 @@ Per ulteriori informazioni, consulta [Installare feature pack 18912 per la migra
    * **[!UICONTROL Percorso cartella principale della società]**
 
    * **[!UICONTROL Pubblicazione delle risorse]** : puoi scegliere tra le tre opzioni seguenti:
-      * **** Significa immediatamente che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l’URL/da incorporare all’istante. Non è necessario alcun intervento degli utenti per pubblicare le risorse.
+      * **** Immediatamente significa che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l’URL/da incorporare immediatamente. Non è necessario alcun intervento degli utenti per pubblicare le risorse.
       * **[!UICONTROL Al momento]** dell’attivazione, devi pubblicare esplicitamente la risorsa prima prima di fornire un collegamento URL/Incorpora .<br><!-- CQDOC-17478, Added March 9, 2021-->A partire da Experience Manager 6.5.8, l’istanza Publish di Experience Manager riflette valori di metadati Dynamic Media precisi, ad esempio  `dam:scene7Domain` e  `dam:scene7FileStatus` solo in modalità  **[!UICONTROL On]** Activationpublish . Per abilitare questa funzionalità, installare Service Pack 8, quindi riavviare Experience Manager. Vai a Gestione configurazione Sling. Trova la configurazione per `Scene7ActivationJobConsumer Component` o creane una nuova). Seleziona la casella di controllo **[!UICONTROL Replica metadati dopo la pubblicazione da parte di Dynamic Media]**, quindi seleziona **[!UICONTROL Salva]**.
 
          ![Casella di controllo Replica metadati dopo la pubblicazione di Dynamic Media](assets-dm/replicate-metadata-setting.png)
@@ -134,7 +134,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 1. Seleziona **[!UICONTROL Salva]**.
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima della pubblicazione, è necessario &quot;inserire nell&#39;elenco Consentiti&quot; l’istanza di authoring di Experience Manager per connettersi a Dynamic Media:
 
-   * Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account. Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   * Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account. Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
 
    * Nella barra di navigazione in alto a destra della pagina, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
 
@@ -265,7 +265,7 @@ Le attività di configurazione e configurazione includono:
 
 Le impostazioni di Configurazione pubblicazione determinano il modo in cui le risorse vengono distribuite per impostazione predefinita da Dynamic Media. Se non viene specificata alcuna impostazione, Dynamic Media distribuisce una risorsa in base alle impostazioni predefinite definite in Configurazione pubblicazione. Ad esempio, una richiesta di fornire un’immagine che non include un attributo di risoluzione genera un’immagine con l’impostazione Risoluzione oggetto predefinita.
 
-Per configurare l&#39;impostazione di pubblicazione: in Dynamic Media Classic, vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
+Per configurare l&#39;impostazione di pubblicazione: in Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni pubblicazione]** > **[!UICONTROL Server immagini]**.
 
 La schermata Image Server stabilisce le impostazioni predefinite per la distribuzione delle immagini. Per una descrizione di ciascuna impostazione, consulta la schermata dell’interfaccia utente .
 
@@ -279,11 +279,11 @@ La schermata Image Server stabilisce le impostazioni predefinite per la distribu
 
 #### Configurare le impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
 
-Per aprire la pagina Impostazioni generali dell&#39;applicazione, nella barra di navigazione globale di Dynamic Media Classic passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione dell&#39;applicazione]** > **[!UICONTROL Impostazioni generali]**.
+Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazione globale di Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
 
-**[!UICONTROL Server]**  - Al momento del provisioning dell’account, Dynamic Media fornisce automaticamente i server assegnati alla tua azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account. Non modificare nessuno dei nomi dei server, a meno che non sia esplicitamente richiesto dall’Assistenza clienti di Adobe.
+**[!UICONTROL Server]**  - Al momento del provisioning dell’account, Dynamic Media fornisce automaticamente i server assegnati alla tua azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account. Non modificare nessuno dei nomi dei server, a meno che non venga esplicitamente richiesto dall’Assistenza clienti di Adobe.
 
-**[!UICONTROL Sovrascrivi immagini]** : Dynamic Media non consente a due file di avere lo stesso nome. L&#39;ID URL di ogni elemento (il nome del file meno l&#39;estensione) deve essere univoco. Queste opzioni specificano come vengono caricate le risorse sostitutive: se sostituiscono l&#39;originale o diventano duplicati. Le risorse duplicate vengono rinominate con un &quot;-1&quot; (ad esempio, chair.tif viene rinominato chair-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione di nome file diversa dall’originale (come JPG, TIF o PNG).
+**[!UICONTROL Sovrascrivi immagini]** : Dynamic Media non consente a due file di avere lo stesso nome. L&#39;ID URL di ogni elemento (il nome del file meno l&#39;estensione) deve essere univoco. Queste opzioni specificano come vengono caricate le risorse sostitutive: se sostituiscono l&#39;originale o diventano duplicati. Le risorse duplicate vengono rinominate con un &quot;-1&quot; (ad esempio, chair.tif viene rinominato chair-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione di nome file diversa dall’originale (ad esempio JPG, TIF o PNG).
 
 * **[!UICONTROL Sovrascrivi nella cartella corrente, nome/estensione]**  immagine di base - Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato.
 
@@ -313,7 +313,7 @@ Per configurare le proprietà colore predefinite in modo che la correzione color
 
    * **[!UICONTROL Spazio colore predefinito CMYK]**  - Nome del profilo colore CMYK predefinito
    * **[!UICONTROL Spazio colore predefinito su scala di grigi]**  - Nome del profilo colore grigio predefinito
-   * **[!UICONTROL Spazio]**  colore predefinito RGB - Nome del profilo colore RGB predefinito
+   * **[!UICONTROL Spazio colore predefinito]**  di RGB - Nome del profilo colore predefinito di RGB
    * **[!UICONTROL Intento di rendering della conversione colore]**  - Specifica l&#39;intento di rendering. I valori accettabili sono: **[!UICONTROL percettivo]**, **[!UICONTROL colometrico relativo]**, **[!UICONTROL saturazione]**, **[!UICONTROL colometrico assoluto]**. L&#39;Adobe consiglia **[!UICONTROL relativo]** come impostazione predefinita.
 
 1. Seleziona **[!UICONTROL Salva]**.
@@ -323,9 +323,9 @@ Ad esempio, puoi impostare **[!UICONTROL Spazio colore predefinito RGB]** su *sR
 In questo modo si effettua quanto segue:
 
 * Abilita la correzione del colore per le immagini RGB e CMYK.
-* Le immagini RGB che non hanno un profilo colore sono considerate nello spazio colore *sRGB*.
+* Si presume che le immagini RGB prive di un profilo colore siano nello spazio colore *sRGB*.
 * Le immagini CMYK prive di un profilo colore sono considerate nello spazio colore *WebCoated*.
-* Rendering dinamici che restituiscono l’output RGB, restituiscilo nello spazio colore *sRGB*.
+* Rendering dinamici che restituiscono l’output RGB, restituirlo nello spazio colore *sRGB*.
 * Rendering dinamici che restituiscono l&#39;output CMYK, restituiscilo nello spazio colore *WebCoated*.
 
 #### Modifica tipi MIME per i formati supportati {#editing-mime-types-for-supported-formats}
@@ -436,7 +436,7 @@ Sono disponibili due elementi per la definizione, la corrispondenza e il nome di
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
 
 1. Nella barra di navigazione vicino alla parte superiore della pagina, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Denominazione predefinita]**.
 1. Per specificare come visualizzare e immettere le informazioni di ciascun elemento, seleziona **[!UICONTROL Visualizza modulo]** o **[!UICONTROL Visualizza codice]**.
@@ -469,7 +469,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
 
 1. Nella barra di navigazione vicino alla parte superiore della pagina, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Predefinito set di batch]**.
 
@@ -525,7 +525,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 1. Apri l&#39; [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
-   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non si dispone di tali informazioni, contattare il supporto tecnico.
+   Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
 
 1. Nella barra di navigazione vicino alla parte superiore della pagina, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Predefiniti set di batch]** > **[!UICONTROL Predefinito set di batch]**.
 
@@ -569,7 +569,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 1. Per Imposta convenzione di denominazione e creazione, specifica il suffisso o il prefisso al nome di base definito nella convenzione di denominazione delle risorse.
 
-   Inoltre, definisci dove viene creato il set 360 gradi all’interno della struttura di cartelle di Dynamic Media Classic.
+   Inoltre, definisci dove viene creato il set 360 gradi all’interno della struttura delle cartelle Dynamic Media Classic.
 
    Se definisci un numero elevato di set, mantieni i set separati dalle cartelle contenenti le risorse stesse. Ad esempio, crea una cartella Set 360 gradi in cui inserire i set generati.
 
@@ -595,7 +595,7 @@ Se desideri attivare la creazione di modelli, utilizza i seguenti parametri: `pr
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PDF, PostScript® e PSD:
+Adobe consiglia di utilizzare i seguenti parametri di processo &quot;ottimizzati&quot; per i file PDF, PostScript® e PSD:
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -609,7 +609,7 @@ L&#39;Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sinto
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento di Dynamic Media Classic/Assets basato su tipi MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Per aggiornare uno qualsiasi di questi parametri, segui i passaggi descritti in [Abilitazione del supporto dei parametri di processo di caricamento Dynamic Media Classic/Assets basato su tipo MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) .
 
 #### Aggiorna la coda del flusso di lavoro transitorio di Granite {#updating-the-granite-transient-workflow-queue}
 

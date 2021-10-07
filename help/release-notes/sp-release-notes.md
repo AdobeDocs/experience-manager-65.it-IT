@@ -4,10 +4,10 @@ description: Note sulla versione specifiche del service pack 10  [!DNL Adobe Exp
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4392'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -215,7 +215,7 @@ Le seguenti correzioni di bug sono disponibili in [!DNL Dynamic Media].
 
 * I video caricati su [!DNL Experience Manager] visualizzano `Process failed` dopo che la modalità di esecuzione `dynamicmedia_scene7` è abilitata e la sincronizzazione è disabilitata (CQ-4327791).
 
-### Piattaforma {#platform-65100}
+### Platform {#platform-65100}
 
 I seguenti miglioramenti sono forniti in questo service pack:
 
@@ -230,7 +230,7 @@ Le seguenti correzioni di bug fanno parte di questo service pack:
 * Il metodo `Resourceresolver map` restituisce un risultato non corretto per le pagine di alias (NPR-36767).
 * [!DNL Experience Manager] L&#39;avvio è ritardato a causa del caricamento dei flussi di lavoro (NPR-36615).
 
-### Integrations (Integrazioni) {#integrations-65100}
+### Integrazioni {#integrations-65100}
 
 * L&#39;Experience Manager non risponde quando il nodo principale MongoDB passa a un altro nodo (NPR-36566).
 * [!DNL Sling content distribution] non riesce quando si esegue l&#39;operazione di eliminazione dei membri della raccolta (NPR-36521, CQ-4323578).
@@ -294,13 +294,13 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Gestione della corrispondenza**
 
-* Ritardo nella visualizzazione dei caratteri nella scheda [!UICONTROL Dati] e nell&#39;anteprima della lettera HTML (NPR-37020).
+* Ritardo nella visualizzazione dei caratteri nella scheda [!UICONTROL Dati] e nell&#39;anteprima della lettera di HTML (NPR-37020).
 
 * Durante la modifica di un frammento di documento di testo, le nuove parole vengono visualizzate come tag HTML dopo il salvataggio del frammento (NPR-36837).
 
 * Impossibile visualizzare le lettere salvate come bozze (NPR-36816).
 
-* Quando si modifica un frammento di documento di testo e si visualizza l’anteprima della lettera, AEM Forms visualizza la lingua dell’espressione nell’anteprima della lettera HTML (CQ-4322331).
+* Quando si modifica un frammento di documento di testo e si visualizza l’anteprima della lettera, AEM Forms visualizza la lingua dell’espressione nell’anteprima della lettera di HTML (CQ-4322331).
 
 * Problemi durante il rendering dei dati con un modello di lettera self-service (NPR-37161).
 
@@ -325,9 +325,9 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Il Reader schermo non riesce a leggere i dati dei campi mobili inseriti all’interno dell’etichetta di testo sulla pagina master o sulle pagine sottomodulo in un PDF dinamico (CQ-4321587).
 
-**Servizi documentali**
+**Document Services**
 
-* Quando si convertono file XDP in file PDF e si assembla il PDF risultante, le generazioni PDF non riescono e visualizza il seguente messaggio di errore:
+* Quando si convertono i file XDP in file PDF e si assembla quindi il PDF risultante, le generazioni di PDF falliscono e visualizza il seguente messaggio di errore:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -358,7 +358,7 @@ Per informazioni sugli aggiornamenti di sicurezza, vedere [[!DNL Experience Mana
 **Requisiti di configurazione e ulteriori informazioni**
 
 * Experience Manager 6.5.10.0 richiede Experience Manager 6.5. Per istruzioni dettagliate, consulta la [documentazione di aggiornamento](/help/sites-deploying/upgrade.md) .
-* Il download del service pack è disponibile ad Adobe [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Il download del service pack è disponibile ad Adobe [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 * In una distribuzione con MongoDB e più istanze, installa Experience Manager 6.5.10.0 in una delle istanze Autore utilizzando Gestione pacchetti.
 
 >[!NOTE]
@@ -411,7 +411,7 @@ Per conoscere le piattaforme certificate per l’utilizzo con questa versione, c
 
 >[!NOTE]
 >
->Ignora questa sezione se non utilizzi Experience Manager Forms. Le correzioni apportate in Experience Manager Forms vengono distribuite tramite un pacchetto aggiuntivo separato una settimana dopo il rilascio pianificato di [!DNL Experience Manager] Service Pack .
+>Ignora questa sezione se non usi Experience Manager Forms. Le correzioni apportate in Experience Manager Forms vengono distribuite tramite un pacchetto aggiuntivo separato una settimana dopo il rilascio pianificato di [!DNL Experience Manager] Service Pack .
 
 1. Assicurati di aver installato il Service Pack di Adobe Experience Manager.
 1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) per il sistema operativo in uso.
@@ -461,7 +461,7 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrations (Integrazioni) | La schermata **[!UICONTROL Opt-in di AEM Cloud Services]** è obsoleta perché l’ integrazione [!DNL Experience Manager] e [!DNL Adobe Target] viene aggiornata all’Experience Manager 6.5. L’integrazione supporta l’API di Adobe Target Standard. L’API utilizza l’autenticazione tramite Adobe IMS e [!DNL Adobe I/O] e supporta il ruolo crescente di Adobe Launch per dotare le pagine [!DNL Experience Manager] di analisi e personalizzazione, la procedura guidata di consenso è funzionalmente irrilevante. | Configura le connessioni di sistema, l’autenticazione Adobe IMS e le integrazioni [!DNL Adobe I/O] tramite i rispettivi servizi cloud [!DNL Experience Manager]. |
+| Integrazioni | La schermata **[!UICONTROL Opt-in di AEM Cloud Services]** è obsoleta perché l’ integrazione [!DNL Experience Manager] e [!DNL Adobe Target] viene aggiornata all’Experience Manager 6.5. L’integrazione supporta l’API di Adobe Target Standard. L’API utilizza l’autenticazione tramite Adobe IMS e [!DNL Adobe I/O] e supporta il ruolo crescente di Adobe Launch per dotare le pagine [!DNL Experience Manager] di analisi e personalizzazione, la procedura guidata di consenso è funzionalmente irrilevante. | Configura le connessioni di sistema, l’autenticazione Adobe IMS e le integrazioni [!DNL Adobe I/O] tramite i rispettivi servizi cloud [!DNL Experience Manager]. |
 | Connettori | Il connettore Adobe JCR per Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 è obsoleto, ad Experience Manager 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
@@ -481,7 +481,7 @@ Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fa
 * Durante l’installazione di Experience Manager 6.5.x.x possono essere visualizzati i seguenti errori e messaggi di avviso:
    * &quot;Quando l’integrazione di Adobe Target è configurata in Experience Manager utilizzando l’API di Target Standard (autenticazione IMS), l’esportazione di frammenti di esperienza in Target comporta la creazione di tipi di offerta errati. Invece del tipo “Frammento esperienza”/source “Adobe Experience Manager”, in Target vengono create diverse offerte con il tipo “HTML”/source “Adobe Target Classic”.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
-   * La convalida lato server del modulo adattivo non riesce quando si utilizzano funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
+   * La convalida lato server del modulo adattivo non riesce quando vengono utilizzate funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner acquistabili.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
@@ -499,7 +499,7 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
-* Consulta [come contattare l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Consulta [come contattare il supporto clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

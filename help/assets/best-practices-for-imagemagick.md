@@ -3,11 +3,11 @@ title: Installa e configura ImageMagick
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio del processo della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
 role: Admin
-feature: Rappresentazioni,Strumenti per sviluppatori
+feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Sono disponibili più versioni di file di installazione ImageMagic per vari sist
 Puoi impostare il passaggio del processo della riga di comando per il tuo caso d’uso specifico. Esegui questi passaggi per generare un’immagine capovolta e miniature (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungi un file immagine JPEG a `/content/dam` sul server [!DNL Experience Manager]:
 
 1. Sul server [!DNL Experience Manager], vai alla console Flusso di lavoro (`https://[aem_server]:[port]/workflow`) e apri il modello di flusso di lavoro **[!UICONTROL Aggiorna risorsa DAM]** .
-1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]** , apri le miniature **[!UICONTROL EPS (fornite da ImageMagick)]** .
+1. Dal modello di flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]** , apri le miniature di **[!UICONTROL EPS (fornite da ImageMagick)]** .
 1. Nella scheda **[!UICONTROL Argomenti]**, aggiungi `image/jpeg` all&#39;elenco **[!UICONTROL Tipi di MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
@@ -75,7 +75,7 @@ Puoi impostare il passaggio del processo della riga di comando per il tuo caso d
 
 1. Salva il flusso di lavoro.
 
-1. Per verificare la corretta elaborazione, carica un&#39;immagine JPG in [!DNL Assets]. Al termine dell’elaborazione, controlla se un’immagine capovolta e le rappresentazioni vengono generate o meno.
+1. Per verificare la corretta elaborazione, carica un’immagine JPG in [!DNL Assets]. Al termine dell’elaborazione, controlla se un’immagine capovolta e le rappresentazioni vengono generate o meno.
 
 ## Riduzione delle vulnerabilità relative alla sicurezza {#mitigating-security-vulnerabilities}
 
