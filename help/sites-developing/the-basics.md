@@ -1,8 +1,8 @@
 ---
 title: AEM Concetti di base
-seo-title: Nozioni di base
+seo-title: The Basics
 description: Una panoramica dei concetti fondamentali su come AEM è strutturato e come svilupparla al di sopra, compresi JCR, Sling, OSGi, il dispatcher, i flussi di lavoro e MSM
-seo-description: Una panoramica dei concetti fondamentali su come AEM è strutturato e come svilupparla al di sopra, compresi JCR, Sling, OSGi, il dispatcher, i flussi di lavoro e MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-translation-type: tm+mt
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 0%
+source-wordcount: '3334'
+ht-degree: 1%
 
 ---
 
-# AEM concetti di base {#aem-core-concepts}
+# AEM Concetti di base {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -40,9 +39,9 @@ Avrai bisogno delle seguenti competenze per sviluppare su AEM:
 
 Si consiglia inoltre di leggere e seguire le [Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
-## Java Content Repository {#java-content-repository}
+## Archivio dei contenuti Java {#java-content-repository}
 
-Lo standard Java Content Repository (JCR) [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) specifica un modo indipendente dal fornitore e indipendente dall&#39;implementazione per accedere al contenuto bidirezionale a un livello granulare all&#39;interno di un archivio di contenuti.
+Lo standard Java Content Repository (JCR) [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) specifica un modo indipendente dal fornitore e indipendente dall&#39;implementazione per accedere al contenuto bidirezionale a un livello granulare all&#39;interno di un archivio di contenuti.
 
 Il piombo specifico è detenuto da Adobe Research (Svizzera) AG.
 
@@ -81,7 +80,7 @@ Sling è *incentrato sul contenuto*. Ciò significa che l’elaborazione è ince
 * il primo target è la risorsa (nodo JCR) che contiene il contenuto
 * in secondo luogo, la rappresentazione, o script, si trova dalle proprietà della risorsa in combinazione con alcune parti della richiesta (ad esempio selettori e/o estensione)
 
-### Sling REST {#restful-sling}
+### Sling RESTful {#restful-sling}
 
 Grazie alla filosofia incentrata sui contenuti, Sling implementa un server orientato al REST e quindi presenta un nuovo concetto nei framework delle applicazioni web. I vantaggi sono:
 
@@ -115,13 +114,13 @@ Possiamo suddividerlo nelle sue parti composite:
 
 **selettori** utilizzati per metodi alternativi di rendering del contenuto; in questo esempio, una versione compatibile con la stampante in formato A4.
 
-**formato** extensionContent; specifica anche lo script da utilizzare per il rendering.
+**** formato extensionContent; specifica anche lo script da utilizzare per il rendering.
 
 **** suffixCan può essere utilizzato per specificare informazioni aggiuntive.
 
 **parametri** Qualsiasi parametro necessario per il contenuto dinamico.
 
-#### Dall’URL al contenuto e agli script {#from-url-to-content-and-scripts}
+#### Da URL a contenuto e script {#from-url-to-content-and-scripts}
 
 Seguendo questi principi:
 
@@ -385,7 +384,7 @@ Definisce il componente pagina utilizzato per eseguire il rendering della pagina
 
 **Componente pagina (componente di primo livello)** Il componente da utilizzare per il rendering della pagina.
 
-**** La pagina PageA è un&#39;istanza di un modello.
+**** La paginaA è un&#39;istanza di un modello.
 
 Una pagina ha un nodo gerarchico di tipo cq:Page e un nodo di contenuto di tipo cq:PageContent. La proprietà sling:resourceType del nodo del contenuto punta al componente Pagina utilizzato per il rendering della pagina.
 
@@ -393,7 +392,7 @@ Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare 
 
 S`tring pageName = currentPage.getName();`
 
-Con currentPage come oggetto pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, consulta [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Con currentPage come oggetto pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, consulta [Javadocs](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Page** ManagerIl gestore pagine è un&#39;interfaccia che fornisce metodi per le operazioni a livello di pagina.
 
@@ -401,9 +400,9 @@ Ad esempio, per ottenere la pagina contenente una risorsa, puoi utilizzare il se
 
 Page myPage = pageManager.getContainPage(myResource);
 
-Con pageManager come oggetto page manager e myResource come oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore di pagine, consulta [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Con pageManager come oggetto page manager e myResource come oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore di pagine, consulta [Javadocs](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
-## Struttura all&#39;interno dell&#39;archivio {#structure-within-the-repository}
+## Struttura all’interno dell’archivio {#structure-within-the-repository}
 
 L’elenco seguente fornisce una panoramica della struttura che verrà visualizzata all’interno dell’archivio.
 

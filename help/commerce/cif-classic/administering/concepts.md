@@ -6,10 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4524'
 ht-degree: 2%
 
 ---
@@ -39,7 +38,6 @@ Ciò significa che:
 >* [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 
 >
-
 
 
 >[!CAUTION]
@@ -130,12 +128,11 @@ AEM eCommerce viene implementato con un motore eCommerce:
 >
 >AEM eCommerce implementato in AEM utilizzando lo sviluppo generico basato su JCR è:
 >
->* Un esempio di eCommerce autonomo e nativo AEM per illustrare l’utilizzo dell’API. Può essere utilizzato per controllare i dati dei prodotti, i carrelli commerciali e il pagamento insieme alle campagne di visualizzazione dei dati esistenti e di marketing. In questo caso il database del prodotto viene memorizzato nell&#39;archivio nativo di AEM (implementazione Adobe di [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).
+>* Un esempio di eCommerce autonomo e nativo AEM per illustrare l’utilizzo dell’API. Può essere utilizzato per controllare i dati dei prodotti, i carrelli commerciali e il pagamento insieme alle campagne di visualizzazione dei dati esistenti e di marketing. In questo caso il database del prodotto viene memorizzato nell&#39;archivio nativo di AEM (implementazione Adobe di [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
->  
-L&#39;installazione standard di AEM contiene le nozioni di base dell&#39; [implementazione generica di eCommerce](/help/commerce/cif-classic/administering/generic.md).
+>  L&#39;installazione standard di AEM contiene le nozioni di base dell&#39; [implementazione generica di eCommerce](/help/commerce/cif-classic/administering/generic.md).
 
-### Fornitori di soluzioni commerce {#commerce-providers}
+### Fornitori commerciali {#commerce-providers}
 
 Quando si importano dati da un motore di e-commerce nel sito di e-commerce AEM, viene utilizzato un provider di e-commerce per fornire i dati agli importatori. Un unico fornitore commerciale può supportare più importatori.
 
@@ -199,7 +196,7 @@ Anche se la posizione effettiva può dipendere dall’implementazione; ad esempi
 
 ## Prodotti {#products}
 
-### Prodotto Dati e dati di marketing {#product-data-versus-marketing-data}
+### Dati di prodotto e dati di marketing {#product-data-versus-marketing-data}
 
 #### Categorie strutturali e di marketing {#structural-versus-marketing-categories}
 
@@ -312,7 +309,7 @@ Come per le lingue, le grandi aziende multinazionali possono avere bisogno di oc
 
 I tag possono anche essere utilizzati per raggruppare i prodotti in un catalogo. Questi possono essere utilizzati per cataloghi più dinamici, come le offerte stagionali.
 
-### Configurazione del catalogo (importazione iniziale) {#catalog-setup-initial-import}
+### Configurazione catalogo (importazione iniziale) {#catalog-setup-initial-import}
 
 A seconda dell’implementazione, puoi importare i dati di prodotto necessari per il catalogo di base in AEM da:
 
@@ -359,7 +356,7 @@ Se un nodo JCR ha molti nodi figlio diretti (ad esempio 1000 e più), sono neces
 
 Questi bucket si presentano come cartelle fantasma introdotte nella struttura del catalogo, ma possono essere configurate in modo che non siano visibili negli URL pubblici.
 
-#### Scaricare la post-elaborazione delle risorse in un&#39;istanza dedicata {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Scaricare la post-elaborazione delle risorse in un’istanza dedicata {#offload-asset-post-processing-to-a-dedicated-instance}
 
 Questo scenario comporta l’impostazione di due istanze di authoring:
 
@@ -373,7 +370,7 @@ Questo scenario comporta l’impostazione di due istanze di authoring:
 
 ![Diagramma dell&#39;architettura](/help/sites-administering/assets/chlimage_1-8.png)
 
-#### Importa solo dati prodotto {#only-import-product-data}
+#### Importa solo dati di prodotto {#only-import-product-data}
 
 Nei casi in cui i prodotti non contengono risorse (immagini) da importare, puoi importare i dati del prodotto senza essere interessati dalla post-elaborazione delle risorse.
 
@@ -447,7 +444,7 @@ Per tutte le implementazioni è possibile tenere presenti i seguenti punti:
    Ad esempio, la gestione degli attributi è molto spesso un buon candidato per la memorizzazione in cache in quanto riguarda i dati che vengono aggiornati tramite l’importazione di prodotti.
 * Valuta l&#39;utilizzo di [pagine proxy](#proxy-pages).
 
-### Pagine sezione catalogo {#catalog-section-pages}
+### Pagine delle sezioni del catalogo {#catalog-section-pages}
 
 Le sezioni del catalogo forniscono, ad esempio:
 
@@ -494,7 +491,7 @@ La creazione di un catalogo utilizza dieci nodi per prodotto in quanto fornisce 
 
 Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene il contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
 
-Tuttavia, c&#39;è un compromesso. Non sarà possibile personalizzare le informazioni sui prodotti in AEM, verrà utilizzato un modello standard (definito per il sito).
+Tuttavia, esiste un compromesso. Non sarà possibile personalizzare le informazioni sui prodotti in AEM, verrà utilizzato un modello standard (definito per il sito).
 
 >[!NOTE]
 >
@@ -560,7 +557,7 @@ Le promozioni non vengono generalmente mantenute dai responsabili delle informaz
 In AEM le promozioni sono anche integrate nella [Gestione campagna](/help/sites-authoring/personalization.md):
 
 * a [campaign](/help/sites-authoring/personalization.md) specifica i tempi di attivazione/disattivazione
-* [Le esperienze ](/help/sites-authoring/personalization.md) ** all’interno della campagna vengono utilizzate per raggruppare le risorse (pagine teaser, promozioni, ecc.) in base al segmento di pubblico a cui corrispondono
+* [](/help/sites-authoring/personalization.md) ** le esperienze all’interno della campagna vengono utilizzate per raggruppare le risorse (pagine teaser, promozioni, ecc.) in base al segmento di pubblico a cui corrispondono
 
 Una promozione può essere organizzata in un’esperienza o direttamente nella campagna:
 
@@ -586,7 +583,7 @@ Una promozione può essere organizzata in un’esperienza o direttamente nella c
 
 ## Personalizzazione {#personalization}
 
-### Registrazione e account dei clienti {#customer-registration-and-accounts}
+### Registrazione clienti e account {#customer-registration-and-accounts}
 
 Quando un acquirente si registra, i dettagli dell’account devono essere sincronizzati tra AEM e il motore eCommerce. I dati sensibili vengono conservati in modo indipendente, ma i profili sono condivisi:
 
@@ -615,7 +612,7 @@ Quando utilizzi un motore di eCommerce, AEM memorizza solo l’ID e la password 
 >
 >In caso contrario, anche queste altre istanze AEM cercheranno di creare account per gli stessi utenti nel motore. Queste azioni avranno esito negativo con un `DuplicateUidException` proveniente dal motore.
 
-### Iscrizione clienti {#customer-sign-up}
+### Iscrizione al cliente {#customer-sign-up}
 
 Spesso è necessario iscriversi perché l&#39;acquirente abbia accesso al carrello. Questo richiede la registrazione (Crea account) in modo che sia possibile creare un account specifico per il cliente.
 
@@ -704,7 +701,7 @@ Un cliente registrato può:
 * Esegui il pagamento per inserire l&#39;ordine
 * Visualizzare e tenere traccia degli ordini precedenti
 
-### Panoramica dei contenuti del carrello {#shopping-cart-content-overview}
+### Panoramica dei contenuti del carrello acquisti {#shopping-cart-content-overview}
 
 Il carrello offre:
 
@@ -829,7 +826,7 @@ Quando l’ordine viene mantenuto all’interno AEM console Ordine, per ogni ord
 
 ![chlimage_1-16](/help/sites-administering/assets/chlimage_1-16.png)
 
-### Tracciamento ordine {#order-tracking}
+### Tracciamento degli ordini {#order-tracking}
 
 Dopo aver effettuato un ordine, gli acquirenti spesso ritornano a:
 
@@ -849,7 +846,7 @@ L’estrazione è implementata con moduli AEM standard. Questo consente al respo
 
 L’eCommerce gestisce quindi il processo di pagamento con l’input dei moduli di AEM.
 
-### Protezione dei pagamenti {#payment-security}
+### Sicurezza dei pagamenti {#payment-security}
 
 I dettagli di pagamento, comprese le informazioni sulla carta di credito, sono spesso gestiti dal motore di eCommerce. AEM inoltrare tali informazioni transazionali al motore (da dove vengono poi inoltrate a un servizio di elaborazione dei pagamenti).
 

@@ -2,7 +2,7 @@
 title: OWASP Top 10
 seo-title: OWASP Top 10
 description: Scopri come AEM gestire i principali 10 rischi di sicurezza OWASP.
-seo-description: Scopri come AEM gestire i principali 10 rischi di sicurezza OWASP.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -37,7 +36,7 @@ La pratica generale di mitigazione è quella di codificare tutti gli output di c
 
 XSS è una priorità assoluta sia durante i test che durante lo sviluppo e tutti i problemi rilevati vengono (in genere) risolti immediatamente.
 
-## 3. Autenticazione e gestione delle sessioni interrotte {#broken-authentication-and-session-management}
+## 3. Autenticazione non riuscita e gestione delle sessioni {#broken-authentication-and-session-management}
 
 AEM utilizza tecniche di autenticazione sonore e comprovate, che si basano su [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Le sessioni browser/HTTP non sono utilizzate in AEM.
 
@@ -45,7 +44,7 @@ AEM utilizza tecniche di autenticazione sonore e comprovate, che si basano su [A
 
 L’accesso a tutti gli oggetti dati viene mediato dall’archivio e quindi limitato dal controllo degli accessi basato su ruoli.
 
-## 5. Formulario di richieste intersito (CSRF) {#cross-site-request-forgery-csrf}
+## 5. Forgeria di richiesta intersito (CSRF) {#cross-site-request-forgery-csrf}
 
 Il CSRF (Cross-Site Request Forgery) è mitigato dall’inserimento automatico di un token di crittografia in tutti i moduli e le richieste di AJAX e dalla verifica di tale token sul server per ogni POST.
 
@@ -57,7 +56,7 @@ Inoltre, AEM viene fornito con un filtro basato sull’intestazione del referent
 
 Per ulteriori informazioni, consulta la [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md) che fornisce istruzioni dettagliate per l&#39;indurimento dei passaggi.
 
-## 7. Archiviazione crittografata non sicura {#insecure-cryptographic-storage}
+## 7. Archiviazione crittografica non sicura {#insecure-cryptographic-storage}
 
 le password sono memorizzate come hash di crittografia nel nodo utente; per impostazione predefinita tali nodi sono leggibili solo dall’amministratore e dall’utente stesso.
 
@@ -65,9 +64,9 @@ I dati sensibili, come le credenziali di terze parti, vengono memorizzati in for
 
 ## 8. Errore nel limitare l&#39;accesso agli URL {#failure-to-restrict-url-access}
 
-L&#39;archivio consente l&#39;impostazione di [privilegi a grana fine (come specificato da JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo in un dato percorso, attraverso le voci di controllo degli accessi. Le restrizioni di accesso sono applicate dall’archivio.
+L&#39;archivio consente l&#39;impostazione di [privilegi a grana fine (come specificato da JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo in un dato percorso, attraverso le voci di controllo degli accessi. Le restrizioni di accesso sono applicate dall’archivio.
 
-## 9. Protezione insufficiente del livello di trasporto {#insufficient-transport-layer-protection}
+## 9. Protezione insufficiente dello strato di trasporto {#insufficient-transport-layer-protection}
 
 È attenuata dalla configurazione del server (ad esempio, utilizza solo HTTPS).
 

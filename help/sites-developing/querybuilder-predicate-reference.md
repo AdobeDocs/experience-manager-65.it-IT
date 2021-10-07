@@ -1,22 +1,21 @@
 ---
 title: Riferimento predicato di Query Builder
-seo-title: Riferimento predicato di Query Builder
+seo-title: Query Builder Predicate Reference
 description: Riferimento predicato completo per l’API di Query Builder.
-seo-description: Riferimento predicato completo per l’API di Query Builder.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
-translation-type: tm+mt
-source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
+exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
-
 
 # Riferimento predicato di Query Builder{#query-builder-predicate-reference}
 
@@ -62,12 +61,12 @@ Supporta l’estrazione dei facet. Fornirà bucket per ogni valore `true` o `fal
 #### Proprietà {#properties}
 
 * ****
-percorso relativo di boolproperty per la proprietà, ad esempio 
-`myFeatureEnabled` o `jcr:content/myFeatureEnabled`
+percorso boolproperty relativo alla proprietà, ad esempio 
+`myFeatureEnabled` oppure `jcr:content/myFeatureEnabled`
 
 * ****
-value to check property for, &quot; 
-`true`&quot; o &quot; `false`&quot;
+valore per cui controllare la proprietà, &quot; 
+`true`&quot; oppure &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -222,7 +221,7 @@ Questo è concettualmente `fulltext AND ( (path AND type) OR (path AND type) )`.
 
 ### hasPermission {#haspermission}
 
-Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca. Non supporta l’estrazione dei facet.
 
@@ -246,7 +245,7 @@ Supporta l’estrazione dei facet. Fornirà bucket per ogni codice di lingua uni
 
    Codice della lingua ISO, ad esempio &quot; `de`&quot;
 
-### risorsa principale {#mainasset}
+### principale {#mainasset}
 
 Controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria. Questo è fondamentalmente ogni nodo non all&#39;interno di un nodo &quot;subassets&quot;. Tieni presente che questo non controlla il tipo di nodo `dam:Asset`. Per utilizzare questo predicato, è sufficiente impostare &quot; `mainasset=true`&quot; o &quot; `mainasset=false`&quot;, non ci sono ulteriori proprietà.
 
@@ -272,7 +271,7 @@ Questo è un predicato solo filtraggio e non può sfruttare un indice di ricerca
 
    percorso della raccolta di risorse Sling
 
-### nome del nome del nome {#nodename}
+### nodename {#nodename}
 
 Corrisponde ai nomi dei nodi JCR.
 
@@ -302,7 +301,7 @@ Supporta l’estrazione dei facet nello stesso modo del predicato daterange.
 
    percorso relativo alla proprietà `DATE` da controllare (obbligatorio)
 
-### ordina {#orderby}
+### ordine {#orderby}
 
 Consente di ordinare il risultato. Se l’ordinamento è richiesto da più proprietà, questo predicato deve essere aggiunto più volte utilizzando il prefisso del numero, ad esempio `1_orderby=first`, `2_oderby=second`.
 
@@ -410,7 +409,7 @@ Non supporta l’estrazione dei facet.
 
    &quot; `true`&quot; se la proprietà selezionata è di tipo Decimal
 
-### relativa a aterange {#relativedaterange}
+### relativa {#relativedaterange}
 
 Corrisponde alle proprietà `JCR DATE` rispetto a un intervallo di date/ore utilizzando scostamenti di tempo relativi all&#39;ora corrente del server. È possibile specificare `lowerBound` e `upperBound` utilizzando un valore di millisecondi o la sintassi di bugzilla `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni). Prefisso con &quot; `-`&quot; per indicare un offset negativo prima dell&#39;ora corrente. Se si specifica solo `lowerBound` o `upperBound`, l&#39;altro valore predefinito sarà 0, ovvero l&#39;ora corrente.
 
@@ -438,7 +437,7 @@ Supporta l’estrazione dei facet nello stesso modo del predicato daterange.
 
    data limite in millisecondi o `1s 2m 3h 4d 5w 6M 7y` (un secondo, due minuti, tre ore, quattro giorni, cinque settimane, sei mesi, sette anni) rispetto all&#39;ora corrente del server, utilizzare &quot;-&quot; per offset negativo
 
-### radice {#root}
+### root {#root}
 
 Gruppo predicato radice. Supporta tutte le funzionalità di un gruppo e consente di impostare parametri di query globali.
 
@@ -494,7 +493,7 @@ Non supporta l’estrazione dei facet per i predicati della query salvata.
 
    percorso della query salvata (proprietà String o nodo `nt:file`)
 
-### simili {#similar}
+### simile {#similar}
 
 Ricerca per similarità utilizzando JCR XPath `rep:similar()`.
 

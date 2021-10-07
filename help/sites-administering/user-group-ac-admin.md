@@ -1,8 +1,8 @@
 ---
 title: Amministrazione di diritti di accesso, gruppi e utenti
-seo-title: Amministrazione di diritti di accesso, gruppi e utenti
+seo-title: User, Group and Access Rights Administration
 description: Scopri l’amministrazione di utenti, gruppi e diritti di accesso in AEM.
-seo-description: Scopri l’amministrazione di utenti, gruppi e diritti di accesso in AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,10 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -63,11 +62,11 @@ CRX ti consente di configurare i diritti di accesso per gli account utente e per
 
 >[!NOTE]
 >
->CRX implementa [il controllo degli accessi come definito da JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [il controllo degli accessi come definito da JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Un’installazione standard di un archivio CRX è configurata per utilizzare elenchi di controllo degli accessi basati sulle risorse. Questa è una possibile implementazione del controllo degli accessi JSR-283 e una delle implementazioni presenti con Jackrabbit.
 
-### Soggetti e entità {#subjects-and-principals}
+### Argomenti e Principali {#subjects-and-principals}
 
 CRX utilizza due concetti chiave durante la valutazione dei diritti di accesso:
 
@@ -114,8 +113,7 @@ L&#39;elenco dei diritti di accesso applicabili all&#39;oggetto è costituito da
 >
 
 
-
-### Risoluzione dei diritti di richiesta e accesso {#resolving-request-and-access-rights}
+### Risoluzione dei diritti di richiesta e di accesso {#resolving-request-and-access-rights}
 
 Quando CRX gestisce la richiesta confronta la richiesta di accesso dall&#39;oggetto con l&#39;elenco di controllo accessi sul nodo del repository:
 
@@ -264,7 +262,7 @@ Se un account ne impersona un altro è molto difficile da vedere. I file di regi
 1. Fare clic su **Crea utente**.
 1. Puoi quindi immettere le Proprietà :
 
-   * **** UserIDutilizzato come nome dell&#39;account.
+   * **** UserIDusato come nome dell&#39;account.
    * **** Password necessaria per l&#39;accesso.
    * **Nome principale** per fornire un nome di testo completo.
    * **Percorsi intermedi** che possono essere utilizzati per formare una struttura ad albero.
@@ -284,7 +282,6 @@ Se un account ne impersona un altro è molto difficile da vedere. I file di regi
 >* groups con molti membri
 
 >
-
 
 
 ### Aggiornamento di un account utente {#updating-a-user-account}
@@ -608,7 +605,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
 
 1. Fai clic su **OK** per salvare. Il privilegio sarà ora disponibile per la selezione.
 
-### Aggiunta di una voce del controllo di accesso {#adding-an-access-control-entry}
+### Aggiunta di una voce di controllo di accesso {#adding-an-access-control-entry}
 
 1. Seleziona la risorsa e apri la scheda **Controllo accessi** .
 
@@ -637,7 +634,7 @@ I seguenti privilegi sono disponibili per la selezione quando si aggiunge una vo
 
 CRX convalida la tua selezione; per un dato entità principale esiste (al massimo) 1 negazione e 1 permette l&#39;ingresso su un dato nodo. L&#39;implementazione cancella sempre le voci ridondanti e si assicura che lo stesso privilegio non sia elencato sia nelle voci allow che deny.
 
-### Ordinamento dei criteri per il controllo degli accessi locali {#ordering-local-access-control-policies}
+### Ordinamento dei criteri di controllo accessi locali {#ordering-local-access-control-policies}
 
 L&#39;ordine nell&#39;elenco indica l&#39;ordine in cui vengono applicati i criteri.
 
@@ -647,12 +644,12 @@ L&#39;ordine nell&#39;elenco indica l&#39;ordine in cui vengono applicati i crit
 
 1. Le modifiche verranno visualizzate sia nelle tabelle relative a **Locale** che in quelle relative a **Criteri di controllo accessi effettivi**.
 
-### Rimozione di un criterio di controllo accessi {#removing-an-access-control-policy}
+### Rimozione di un criterio di controllo degli accessi {#removing-an-access-control-policy}
 
 1. Nella tabella di **Criteri di controllo accessi locali** fare clic sull&#39;icona rossa (-) a destra della voce.
 1. La voce verrà rimossa sia dalle tabelle relative a **Locale** che da **Criteri di controllo accessi effettivi**.
 
-### Verifica dei criteri di controllo degli accessi {#testing-an-access-control-policy}
+### Verifica di un criterio di controllo degli accessi {#testing-an-access-control-policy}
 
 1. Dalla barra degli strumenti di CRXDE Lite selezionare **Strumenti**, quindi **Controllo accesso di prova...**.
 1. Viene visualizzata una nuova finestra di dialogo nel riquadro in alto a destra. Seleziona il **Percorso** e/o **Principale** da testare.
