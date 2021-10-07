@@ -2,10 +2,10 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 8%
+source-wordcount: '1135'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF in uso o che intendi utilizzare in futuro.
 
-**Con la versione di aprile, abbiamo sostituito il connettore CIF da GitHub con il componente aggiuntivo CIF** disponibile nella Distribuzione di software di  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il passaggio al componente aggiuntivo offre grandi vantaggi per i progetti:
+**Con la versione di aprile, abbiamo sostituito il connettore CIF da GitHub con il componente aggiuntivo CIF** disponibile nella Distribuzione di software di  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). Il passaggio al componente aggiuntivo offre grandi vantaggi per i progetti:
 
 * La maggior parte delle nuove funzioni sarà immediatamente disponibile su AEM 6.5 (non più in attesa della porta laterale delle funzioni)
 * Facile aggiornamento alle nuove versioni dei componenti aggiuntivi
@@ -23,11 +23,39 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve più essere utilizzato. Sostituisci il connettore CIF con il nuovo componente aggiuntivo CIF. Per la maggior parte dei progetti dovrebbe essere possibile una semplice sostituzione dei pacchetti.
 
-| Component | Requisiti di sistema |
+| Componente | Requisiti di sistema |
 |:-------|:-----:|
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| AEM Project Archetype | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Settembre 2021
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2021.09.27 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Componenti core CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| Sito di riferimento CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### Novità {#what-is-new-september}
+
+* La nuova scheda &quot;contenuti commerce associati&quot; nell’editor Sites aumenta l’efficienza dell’autore grazie all’accesso rapido ai contenuti di prodotti AEM pertinenti per il contesto corrente
+
+   ![Contenuto di e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
+
+* Interfaccia utente del selettore prodotti migliorata per una migliore esperienza utente, una maggiore efficienza e il supporto per cataloghi di prodotti complessi
+
+   ![Nuovo selettore prodotti](/help/assets/CIF/product-picker.png)
+
+* Rispetta la proprietà &quot;include_in_menu&quot; nel componente di navigazione
+
+### Correzioni di bug {#bug-fixes-september}
+
+* Lo scaricamento della cache del menu non funziona come previsto
+
+* Errori JS durante AEM passaggio di distribuzione CS e quando non si utilizzano componenti lato client
+
+* Impossibile creare la configurazione cloud CIF nelle cartelle con un nodo sling:configs
 
 ## Data di rilascio: Agosto 2021
 
@@ -70,7 +98,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
    * Indicatore visivo per i dati di prodotto in fase di creazione in modalità per una migliore visibilità delle imminenti modifiche
    * Nuovo componente mappa del sito per le pagine di contenuto e di e-commerce
 
-* Supporto per [Adobe Commerce Sensei Product Recommendation, con tecnologia Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront tramite consigli predefiniti o al momento dell’esecuzione
+* Supporto per [Adobe Commerce Sensei Product Recommendation, basato su Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront tramite consigli predefiniti o al momento dell’esecuzione
 
 ## Data di rilascio: Giugno 2021
 
@@ -85,7 +113,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 * Nuovi tipi di dati di riferimento CIF per prodotti e categorie per Frammenti di contenuto (Incl. supporto per l&#39;interfaccia utente del selettore prodotti/categorie)
 * Nuovo componente core Frammento di contenuto Commerce
 * Ricerca di e-commerce full-text supportata nel backend AEM
-* I componenti core di Commerce supportano la raccolta dati Adobe Commerce Sensei Recs
+* I componenti core di Commerce supportano la raccolta dati di Adobe Commerce Sensei Recs
 * URL ottimizzati per l’ottimizzazione SEO (Search Engine Optimization) per le pagine di categorie
 * Supporto per intestazioni HTTP personalizzate per sito/configurazione
 
@@ -137,7 +165,7 @@ Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve p
 
 ### Novità
 
-* Supporto per Magenti 2.4.2
+* Supporto per Magento 2.4.2
 
 ### Miglioramenti
 
