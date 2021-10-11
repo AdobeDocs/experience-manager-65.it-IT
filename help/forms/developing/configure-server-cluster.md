@@ -1,7 +1,8 @@
 ---
 title: Come configurare e risolvere i problemi di un cluster di server AEM Forms su JEE?
 description: Scopri come configurare e risolvere i problemi di un cluster di server AEM Forms su JEE
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 ## Conoscenze preliminari {#prerequisites}
 
-Familiarità con AEM Forms su server applicativi JEE, JBoss, WebSphere e Webogic, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX o Sun Solaris, ad Oracle, server di database IBM DB2 o SQL Server e ambienti web.
+Familiarità con AEM Forms su server applicazioni JEE, JBoss, WebSphere e Webogic, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX o Sun Solaris, Oracle, server di database IBM DB2 o SQL Server e ambienti Web.
 
 ## Livello utente {#user-level}
 
@@ -266,7 +267,7 @@ Per determinare come Quartz si è configurato, è necessario esaminare i messagg
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 È importante individuare questa prima riga nei registri perché alcuni server applicativi utilizzano anche Quartz e le relative istanze Quartz non devono essere confuse con l’istanza utilizzata dal servizio AEM Forms on JEE Scheduler. Questo è l&#39;indicazione che il servizio di pianificazione è in fase di avvio e le linee che lo seguono vi indicheranno se sta iniziando o meno in modalità cluster correttamente. In questa sequenza compaiono diversi messaggi, ed è l’ultimo messaggio &quot;avviato&quot; che rivela la configurazione del quarzo:
 
-Qui viene fornito il nome dell&#39;istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dello scheduler inizierà sempre con la stringa `IDPSchedulerService_$_`. La stringa aggiunta alla fine indica se quarz è in esecuzione o meno in modalità cluster. L&#39;identificatore univoco lungo generato dal nome host del nodo e una lunga stringa di cifre, in questo caso `ap-hp8.ottperflab.corp.adobe.com1312883903975`, indica che funziona in un cluster. Se funziona come un singolo nodo, l&#39;identificatore sarà un numero a due cifre, &quot;20&quot;:
+Qui viene fornito il nome dell&#39;istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dello scheduler inizierà sempre con la stringa `IDPSchedulerService_$_`. La stringa aggiunta alla fine indica se quarz è in esecuzione o meno in modalità cluster. L&#39;identificatore univoco lungo generato dal nome host del nodo e una lunga stringa di cifre, in questo caso `ap-hp8.ottperflab.adobe.com1312883903975`, indica che funziona in un cluster. Se funziona come un singolo nodo, l&#39;identificatore sarà un numero a due cifre, &quot;20&quot;:
 
 INFO `[org.quartz.core.QuartzScheduler]` Pianificazione `IDPSchedulerService_$_20` avviata.
 Questo controllo deve essere eseguito separatamente su tutti i nodi del cluster, in quanto la pianificazione di ciascun nodo determina in modo indipendente se operare in modalità cluster.
@@ -332,19 +333,3 @@ Anche se questi file e percorsi possono essere condivisi tra i nodi o posizionat
 Il percorso della directory temporanea, in particolare, non deve essere condiviso tra i nodi. Per verificare che la directory temporanea non sia condivisa, si deve utilizzare una procedura simile a quella descritta per verificare il GDS: vai su ogni nodo, crea un file temporaneo nel percorso indicato dall&#39;impostazione del percorso, quindi verifica che gli altri nodi non condividano il file. Se possibile, il percorso della directory temporanea deve fare riferimento all&#39;archiviazione locale del disco su ciascun nodo e deve essere controllato.
 
 Per ciascuna delle impostazioni del percorso, assicurati che il percorso esista effettivamente e sia accessibile da ogni nodo del cluster, utilizzando l&#39;identità di utilizzo effettiva in cui viene eseguito AEM Forms su JEE. Il contenuto della directory dei font deve essere leggibile. La directory temporanea deve consentire la lettura, la scrittura e il controllo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
