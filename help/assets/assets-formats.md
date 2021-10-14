@@ -4,12 +4,12 @@ description: Formati di file e tipi MIME supportati da [!DNL Assets] and [!DNL D
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Gestione risorse, rappresentazioni
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 10%
+source-wordcount: '1535'
+ht-degree: 11%
 
 ---
 
@@ -68,7 +68,7 @@ Oltre alle informazioni di cui sopra, considera quanto segue:
 
 * Il write-back di metadati funziona per il formato di file PSB quando viene aggiunto al gestore `NComm`.
 
-* Per utilizzare [!DNL Dynamic Media] per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, consulta [Adobe Illustrator (AI), Postscript (EPS) e formati di file PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare [!DNL Dynamic Media] per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, vedere [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Per i file EPS, il write-back di metadati è supportato nella versione 3.0 o successiva della convenzione di struttura dei documenti PostScript (PS-Adobe).
 
@@ -78,7 +78,7 @@ Oltre alle informazioni di cui sopra, considera quanto segue:
 
 Consulta anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | . | . | . |  | . | . | - | - |
 | gLB | . | . | . | . | . | - | . | . |
@@ -120,10 +120,10 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
-La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file [!DNL Adobe Illustrator] e PDF di grandi dimensioni e ad alta intensità di contenuto. L&#39;Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
+La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file [!DNL Adobe Illustrator] e PDF di grandi dimensioni e ad alta intensità di contenuto. Adobe consiglia di utilizzare la libreria PDF Rasterizer per i seguenti elementi:
 
 * File AI/PDF ad alta intensità di contenuto che richiedono un&#39;elaborazione intensiva di risorse.
-* File AI/PDF, per i quali le miniature non sono generate per impostazione predefinita.
+* File AI/PDF per i quali le miniature non sono generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
 Vedere [Uso di PDF Rasterizer](aem-pdf-rasterizer.md).
@@ -132,7 +132,7 @@ Vedere [Uso di PDF Rasterizer](aem-pdf-rasterizer.md).
 
 La libreria Adobe Imaging Transcoding è una soluzione di elaborazione delle immagini che esegue funzioni di base per la gestione delle immagini, come codifica, transcodifica, ricampionamento e ridimensionamento.
 
-La libreria di transcodifica delle immagini supporta i tipi MIME JPG/JPEG, PNG (8 bit e 16 bit), GIF, BMP, TIFF/Compress TIFF (a parte i file TIFF a 32 bit e i file PTIFF), ICO e ICN.
+La libreria di transcodifica delle immagini supporta i tipi MIME JPG/JPEG, PNG (8 bit e 16 bit), GIF, BMP, TIFF/Compress TIFF (eccetto i file TIFF a 32 bit e i file PTIFF), ICO e ICN.
 
 Consulta [Imaging Transcoding Library](imaging-transcoding-library.md).
 
@@ -209,7 +209,7 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
-| MOV, QT | QuickTime Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
+| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
@@ -218,14 +218,12 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | Video reale | Non supportato | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formati di archivio supportati {#supported-archive-formats}
 
 I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | . | . | . | . | . | - |
 | JAR | . | . | . | . | . | - |
@@ -237,7 +235,7 @@ I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM c
 
 Di seguito è descritta l’applicabilità delle consuete funzionalità DAM per alcuni formati di file specifici.
 
-| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | . | . | . | . | . | - |
 | CSS | . | . | . | . | . | . |
@@ -301,9 +299,9 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
-| TIF/TIFF | image/tiff |  |  |
+| TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
@@ -315,6 +313,6 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 
 >[!MORELIKETHIS]
 >
->* [Abilita il supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) dei parametri di processo di caricamento di risorse basate su tipi MIME e Dynamic Media Classic.
+>* [Abilita il supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) dei parametri di processo per il caricamento di risorse basate su tipi MIME e Dynamic Media Classic .
 >* [Configura basato su tipo MIME per il supporto](config-dynamic.md) dei parametri dei processi di caricamento.
 
