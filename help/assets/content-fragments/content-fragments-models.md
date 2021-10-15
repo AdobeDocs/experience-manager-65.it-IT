@@ -3,9 +3,10 @@ title: Modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
+source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2334'
 ht-degree: 7%
 
 ---
@@ -73,6 +74,9 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
       * Molte proprietà sono autoesplicative. Per ulteriori informazioni, consulta [Proprietà](#properties).
       * Digitando un **Etichetta campo** si completa automaticamente il **Nome proprietà**, se vuoto, e può essere aggiornato manualmente in seguito.
 
+         >[!CAUTION]
+         Quando si aggiorna manualmente un tipo di dati **Nome proprietà**, i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+         Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
 
       ![proprietà del campo](assets/cfm-models-05.png)
@@ -133,6 +137,10 @@ Nell’editor frammenti ogni istanza viene visualizzata come una scheda .
 
 Molte proprietà sono auto-esplicative, per alcune proprietà ulteriori dettagli sono qui sotto:
 
+>[!CAUTION]
+Quando aggiorni manualmente il **Nome proprietà**, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+
 * **Rendering**
 comeLe varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizza una singola istanza del campo o se può creare più istanze.
 
@@ -154,7 +162,7 @@ La convalida ValidationBasic è disponibile tramite meccanismi quali la propriet
    La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
 
 * ****
-UniqueContent (per il campo specifico) deve essere univoco per tutti i frammenti di contenuto creati dal modello corrente.
+UniqueContent (per il campo specifico) deve essere univoco in tutti i frammenti di contenuto creati dal modello corrente.
 
    Questo viene utilizzato per impedire agli autori di contenuti di ripetere contenuti già aggiunti in un altro frammento dello stesso modello.
 
