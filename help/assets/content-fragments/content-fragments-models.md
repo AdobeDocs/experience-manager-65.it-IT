@@ -4,9 +4,9 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
+source-git-commit: 966398715af1d9083512c4f6d4f0f81c72c898ae
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2342'
 ht-degree: 7%
 
 ---
@@ -75,7 +75,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
       * Digitando un **Etichetta campo** si completa automaticamente il **Nome proprietà**, se vuoto, e può essere aggiornato manualmente in seguito.
 
          >[!CAUTION]
-         Quando si aggiorna manualmente un tipo di dati **Nome proprietà**, i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
+         Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e carattere di sottolineatura &quot;_&quot; come carattere speciale.
          Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
       Esempio:
 
@@ -137,9 +137,13 @@ Nell’editor frammenti ogni istanza viene visualizzata come una scheda .
 
 Molte proprietà sono auto-esplicative, per alcune proprietà ulteriori dettagli sono qui sotto:
 
->[!CAUTION]
-Quando aggiorni manualmente il **Nome proprietà**, tieni presente che i nomi devono contenere solo caratteri latini, cifre numeriche e caratteri di sottolineatura &quot;_&quot; come carattere speciale.
-Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+
+* **Nome proprietà**
+
+   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri latini, cifre numeriche e trattino basso &quot;_&quot; come carattere speciale.
+
+   >[!CAUTION]
+   Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering**
 comeLe varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizza una singola istanza del campo o se può creare più istanze.
