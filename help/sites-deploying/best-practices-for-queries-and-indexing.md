@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, può essere
 
 #### Recupero preventivo dei risultati {#prefetching-results}
 
-A volte il contenuto o i requisiti intorno al componente non consentono l’uso di node traversal come metodo per recuperare i dati richiesti. In questi casi, è necessario eseguire le query necessarie prima di eseguire il rendering del componente in modo da garantire prestazioni ottimali per l’utente finale.
+Sometimes the content or the requirements around the component will not allow the use of node traversal as a method of retrieving the required data. In questi casi, è necessario eseguire le query necessarie prima di eseguire il rendering del componente in modo da garantire prestazioni ottimali per l’utente finale.
 
-Se i risultati richiesti per il componente possono essere calcolati al momento della creazione e non c’è alcuna aspettativa che il contenuto venga modificato, la query può essere eseguita quando l’autore applica le impostazioni nella finestra di dialogo.
+If the results that are required for the component can be calculated at the time that it is authored and there is no expectancy that the content will change, the query can be executed when the author applies settings in the dialog.
 
-Se i dati o il contenuto vengono modificati regolarmente, la query può essere eseguita su una pianificazione o tramite un listener per gli aggiornamenti dei dati sottostanti. Quindi, i risultati possono essere scritti in una posizione condivisa nell&#39;archivio. Tutti i componenti che necessitano di questi dati possono quindi estrarre i valori da questo singolo nodo senza dover eseguire una query in fase di esecuzione.
+If the data or content will change regularly, the query can be executed on a schedule or via a listener for updates to the underlying data. Then, the results can be written to a shared location in the repository. Tutti i componenti che necessitano di questi dati possono quindi estrarre i valori da questo singolo nodo senza dover eseguire una query in fase di esecuzione.
 
 ## Ottimizzazione delle query {#query-optimization}
 
@@ -211,11 +211,11 @@ Quando si rimuove un indice su un&#39;istanza MongoDB, il costo di eliminazione 
 
 >[!NOTE]
 >
->Per ulteriori informazioni su oak-mongo.js, consulta la sezione [Sezione Strumenti riga di comando](https://jackrabbit.apache.org/oak/docs/command_line.html) della documentazione Oak.
+>For more information about oak-mongo.js, see the [Command Line Tools section](https://jackrabbit.apache.org/oak/docs/command_line.html) of the Oak documentation.
 
 ### Foglio di calcolo della query JCR {#jcrquerycheatsheet}
 
-Per supportare la creazione di query JCR efficienti e le definizioni degli indici, la [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2, che coprono scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre raccomandazioni su come creare o personalizzare gli indici Oak. Il contenuto di questo Cheat Sheet si applica a AEM 6.5 e AEM as a Cloud Service.
+Per supportare la creazione di query JCR efficienti e le definizioni degli indici, la [Foglio di calcolo della query JCR](assets/JCR_query_cheatsheet-v1.0.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. Fornisce inoltre raccomandazioni su come creare o personalizzare gli indici Oak. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 ## Reindicizzazione {#re-indexing}
 
@@ -223,11 +223,11 @@ Questa sezione delinea la **only** motivi accettabili per reindicizzare gli indi
 
 Al di fuori dei motivi descritti di seguito, l&#39;avvio di reindici di Oak **not** modificare il comportamento o risolvere i problemi e aumentare inutilmente il carico su AEM.
 
-Occorre evitare la reindicizzazione degli indici Oak, a meno che non sia coperta da una motivazione nelle tabelle seguenti.
+Re-indexing of Oak indexes is to be avoided unless covered by a reasons in the tables below.
 
 >[!NOTE]
 >
->Prima di consultare le tabelle seguenti per determinare la reindicizzazione è utile,** sempre **verifica:
+>Prior to consulting the tables below to determine is re-indexing is useful, **always** verify:
 >
 >* la query è corretta
 >* la query viene risolta nell&#39;indice previsto (utilizzando [Spiega query](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
@@ -301,7 +301,7 @@ I seguenti dettagli possono essere presentati insieme alle risoluzioni:
          * [Aggiorna](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l&#39;indice lucene impostando [oak:queryIndexDefinition]@refresh=true
       * Else, [reindicizzazione](#how-to-re-index) l&#39;indice lucene
 
-         * Nota: Lo stato dell’indice dall’ultima reindicizzazione corretta (o indicizzazione iniziale) verrà utilizzato fino a quando non viene attivata una nuova reindicizzazione.
+         * Note: The index state from the last good re-indexing (or initial indexing) will be used until a new re-indexing is triggered
 
 
 
@@ -313,7 +313,7 @@ Se si verifica un problema su AEM che non corrisponde ai criteri descritti di se
 
 I seguenti dettagli possono essere presentati insieme alle risoluzioni:
 
-* [Il binario dell&#39;indice Lucene è mancante](#lucene-index-binary-is-missing)
+* [Lucene Index Binary is Missing](#lucene-index-binary-is-missing)
 * [Il binario dell&#39;indice Lucene è corrotto](#lucene-index-binary-is-corrupt)
 
 #### Il binario dell&#39;indice Lucene è mancante {#lucene-index-binary-is-missing}
@@ -321,15 +321,15 @@ I seguenti dettagli possono essere presentati insieme alle risoluzioni:
 * Si applica a/se:
 
    * Tutte le versioni Oak
-   * Solo [indici lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Only [lucene indexes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Sintomi:
 
-   * L&#39;indice Lucene non contiene i risultati previsti
+   * Lucene index does not contain expected results
 
 * Come verificare:
 
-   * Il file di log degli errori contiene un&#39;eccezione che indica che manca un binario dell&#39;indice Lucene
+   * The error log file contains an exception saying a binary of the Lucene index is missing
 
 * Come risolvere:
 
@@ -416,9 +416,9 @@ La preestrazione del testo è il processo di estrazione ed elaborazione del test
 * La preestrazione del testo ha un impatto positivo elevato quando la reindicizzazione full-text di file binari pesanti (PDF, Doc, TXT, ecc.), in cui come archivio di immagini non godrà delle stesse efficienze in quanto le immagini non contengono testo estraibile.
 * La preestrazione del testo esegue l’estrazione del testo relativo alla ricerca full-text in modo extra-efficiente e lo espone al processo di re/indicizzazione Oak in modo da risultare estremamente efficiente da utilizzare.
 
-#### Quando è possibile utilizzare la preestrazione del testo? {#when-can-text-pre-extraction-be-used}
+#### When CAN text pre-extraction be used? {#when-can-text-pre-extraction-be-used}
 
-Re-indicizzazione di un **esistente** indice lucene con estrazione binaria abilitata
+Re-indexing an **existing** lucene index with binary extraction enabled
 
 * Elaborazione della reindicizzazione **tutto** contenuto candidato nell&#39;archivio; quando i binari da cui estrarre il testo completo sono numerosi o complessi, un maggiore carico di calcolo per eseguire l’estrazione full-text viene posizionato su AEM. La preestrazione del testo sposta il &quot;lavoro computazionale&quot; dell’estrazione del testo in un processo isolato che accede direttamente AEM Data Store, evitando costi comuni e contese delle risorse in AEM.
 
@@ -434,12 +434,12 @@ Il nuovo contenuto viene aggiunto all’archivio verrà naturalmente e gradualme
 
 In condizioni normali di AEM, ad esempio durante il caricamento di risorse tramite l’interfaccia utente web o l’acquisizione programmatica di risorse, AEM indicizza automaticamente e in modo incrementale il nuovo contenuto binario. Poiché la quantità di dati è incrementale e relativamente piccola (circa la quantità di dati che possono essere memorizzati nell’archivio in 5 secondi), AEM può eseguire l’estrazione full-text dai binari durante l’indicizzazione senza influire sulle prestazioni complessive del sistema.
 
-#### Prerequisiti per l’utilizzo della preestrazione del testo {#prerequisites-to-using-text-pre-extraction}
+#### Prerequisites to using text pre-extraction {#prerequisites-to-using-text-pre-extraction}
 
 * Reindicizzerai un indice lucene che esegue l’estrazione binaria full-text o distribuirai un nuovo indice che eseguirà i binari di indice full-text del contenuto esistente
 * Il contenuto (file binari) da cui estrarre il testo deve trovarsi nell’archivio
-* Una finestra di manutenzione per generare il file CSV E per eseguire la reindicizzazione finale
-* Versione Oak: 1.0.18+, 1.2.3+
+* A maintenance window to generate the CSV file AND to perform the final re-indexing
+* Oak version: 1.0.18+, 1.2.3+
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)versione 1.7.4+
 * Cartella/condivisione file system per memorizzare il testo estratto accessibile dalle istanze di indicizzazione AEM
 
@@ -449,7 +449,7 @@ In condizioni normali di AEM, ad esempio durante il caricamento di risorse trami
 
 >[!NOTE]
 >
->***I comandi oak-run.jar descritti di seguito sono completamente enumerati in [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
+>***The oak-run.jar commands outlined below are fully enumerated at [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
 >
 >Il diagramma e i passaggi descritti di seguito spiegano e completano i passaggi tecnici di preestrazione del testo descritti nella documentazione Apache Oak.
 
@@ -471,7 +471,7 @@ Tieni presente che l’intero Node Store viene attraversato ogni volta (come spe
 
 2 bis. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
 
-2 ter. Il processo avviato in (2a) accede direttamente ai nodi binari definiti nel CSV nel Data Store ed estrae il testo.
+2 ter. The process initiated in (2a) accesses binary nodes defined in the CSV in Data Store  directly,  and extracts text.
 
 2 quater.  Il testo estratto viene memorizzato nel file system in un formato assimilabile dal processo di reindicizzazione Oak (3a)
 
