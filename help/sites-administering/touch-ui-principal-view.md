@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione principale per la gestione delle autorizzazioni
-seo-title: Visualizzazione principale per la gestione delle autorizzazioni
-description: Scopri la nuova interfaccia utente touch che semplifica la gestione delle autorizzazioni.
-seo-description: Scopri la nuova interfaccia utente touch che semplifica la gestione delle autorizzazioni.
+seo-title: Principal View for Permissions Management
+description: Scopri la nuova interfaccia utente touch che facilita la gestione delle autorizzazioni.
+seo-description: Learn about the new Touch UI interface that facilitates permissions management.
 uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
+source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
 
-
-# Vista principale per Gestione autorizzazioni{#principal-view-for-permissions-management}
+# Visualizzazione principale per la gestione delle autorizzazioni{#principal-view-for-permissions-management}
 
 ## Panoramica {#overview}
 
@@ -27,111 +26,113 @@ AEM 6.5 introduce la gestione delle autorizzazioni per utenti e gruppi. La funzi
 
 ## Guida all’uso {#how-to-use}
 
-### Accesso all&#39;interfaccia {#accessing-the-ui}
+### Accesso all’interfaccia utente {#accessing-the-ui}
 
-La nuova gestione delle autorizzazioni basata sull&#39;interfaccia utente è accessibile dalla scheda Autorizzazioni in Protezione, come illustrato di seguito:
+La nuova gestione delle autorizzazioni basata sull&#39;interfaccia utente è accessibile tramite la scheda Autorizzazioni in Sicurezza come mostrato di seguito:
 
 ![](assets/screen_shot_2019-03-17at63333pm.png)
 
-La nuova visualizzazione facilita l’analisi dell’intero set di privilegi e restrizioni per una determinata entità in tutti i percorsi in cui le Autorizzazioni sono state concesse esplicitamente. Ciò elimina la necessità di andare a
+La nuova visualizzazione facilita l&#39;analisi dell&#39;intero insieme di privilegi e restrizioni per una determinata entità principale in tutti i percorsi in cui le autorizzazioni sono state concesse esplicitamente. Questo elimina la necessità di passare a
 
-CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella stessa prospettiva. Per impostazione predefinita, il gruppo è &quot;tutti&quot;.
+CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella stessa prospettiva. Per impostazione predefinita, la visualizzazione è impostata sul gruppo &quot;tutti&quot;.
 
 ![](assets/unu-1.png)
 
-È presente un filtro che consente all&#39;utente di selezionare il tipo di entità da esaminare in **Utenti**, **Gruppi** o **Tutti** e cercare qualsiasi entità&#x200B;**.**
+Esiste un filtro che consente all&#39;utente di selezionare il tipo di entità da esaminare **Utenti**, **Gruppi** oppure **Tutto** e cerca qualsiasi entità&#x200B;**.**
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Visualizzazione delle autorizzazioni per un&#39;entità {#viewing-permissions-for-a-principal}
+### Visualizzazione delle autorizzazioni per un entità {#viewing-permissions-for-a-principal}
 
-Il frame a sinistra consente agli utenti di scorrere verso il basso per trovare l&#39;entità o cercare un gruppo o un utente in base al filtro selezionato, come illustrato di seguito:
+La cornice a sinistra consente agli utenti di scorrere verso il basso per trovare un&#39;entità principale o cercare un gruppo o un utente in base al filtro selezionato, come illustrato di seguito:
 
 ![](assets/doi-1.png)
 
-Facendo clic sul nome vengono visualizzate le autorizzazioni assegnate a destra. Il riquadro delle autorizzazioni mostra l&#39;elenco delle voci di controllo degli accessi su percorsi specifici, insieme alle restrizioni configurate.
+Facendo clic sul nome vengono visualizzate le autorizzazioni assegnate a destra. Il riquadro delle autorizzazioni mostra l&#39;elenco delle voci di controllo accessi su percorsi specifici insieme alle restrizioni configurate.
 
 ![](assets/trei-1.png)
 
-### Aggiunta di una nuova voce di controllo di accesso per un&#39;entità {#adding-new-access-control-entry-for-a-principal}
+### Aggiunta di una nuova voce di controllo di accesso per un Principale {#adding-new-access-control-entry-for-a-principal}
 
-È possibile aggiungere nuove autorizzazioni aggiungendo una nuova voce di controllo dell&#39;accesso facendo clic sul pulsante Aggiungi ACE.
+È possibile aggiungere nuove autorizzazioni aggiungendo una nuova voce Controllo accessi facendo clic sul pulsante Aggiungi ACE .
 
 ![](assets/patru.png)
 
-Viene visualizzata la finestra mostrata di seguito, il passaggio successivo consiste nel scegliere un percorso in cui l&#39;autorizzazione deve essere configurata.
+Viene visualizzata la finestra mostrata di seguito, il passaggio successivo consiste nel scegliere un percorso in cui l’autorizzazione deve essere configurata.
 
 ![](assets/cinci-1.png)
 
-Qui si seleziona un percorso in cui si desidera configurare un&#39;autorizzazione per **dam-users**:
+Qui selezioniamo un percorso in cui desideri configurare un’autorizzazione per **utenti dam**:
 
 ![](assets/sase-1.png)
 
-Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l&#39;utente può selezionare uno o più privilegi dagli spazi dei nomi disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
+Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l’utente può quindi selezionare uno o più privilegi dai namespace disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
 
-I privilegi possono essere aggiunti ricercando il campo di testo e quindi selezionando dall&#39;elenco.
+I privilegi possono essere aggiunti ricercando utilizzando il campo di testo e quindi selezionando dall’elenco.
 
 >[!NOTE]
 >
->Per un elenco completo dei privilegi e delle descrizioni, vedere [questa pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Per un elenco completo dei privilegi e delle descrizioni, consulta [questa pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
-Dopo aver selezionato l&#39;elenco dei privilegi, l&#39;utente può scegliere il Tipo di autorizzazione: Rifiuta o Consenti, come illustrato di seguito.
+Dopo aver selezionato l’elenco dei privilegi, l’utente può scegliere il Tipo di autorizzazione : Rifiuta o consenti, come illustrato di seguito.
 
 ![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
 
-### Utilizzo di limitazioni {#using-restrictions}
+### Utilizzo di restrizioni {#using-restrictions}
 
-Oltre all&#39;elenco dei privilegi e al tipo di autorizzazione per un determinato percorso, questa schermata consente anche di aggiungere restrizioni per il controllo di accesso con granularità fine, come illustrato di seguito:
+Oltre all&#39;elenco dei privilegi e al Tipo di autorizzazione su un determinato percorso, questa schermata consente anche di aggiungere restrizioni per il controllo accessi a grana fine come mostrato di seguito:
 
 ![](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul significato di ogni limitazione, consultare [questa pagina](/help/sites-administering/user-group-ac-admin.md#restrictions).
+>Per maggiori informazioni sul significato di ciascuna restrizione, consulta [Documentazione di Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-È possibile aggiungere restrizioni come mostrato di seguito scegliendo il tipo di restrizione, immettendo il valore e premendo l&#39;icona **+**. ![](assets/sapte-1.png) ![](assets/opt-1.png)
+È possibile aggiungere restrizioni come mostrato di seguito scegliendo il tipo di restrizione, inserendo il valore e premendo il pulsante **+** icona.
 
-Il nuovo controllo ACE si riflette nell&#39;elenco di controllo degli accessi come mostrato di seguito. Tenere presente che `jcr:write` è un privilegio di aggregazione che include `jcr:removeNode` aggiunto sopra, ma che non è mostrato sotto come coperto in `jcr:write`.
+![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-### Modifica di ACE {#editing-aces}
+Il nuovo ACE si riflette nell&#39;elenco di controllo accessi come mostrato di seguito. Tieni presente che `jcr:write` è un privilegio aggregato che include `jcr:removeNode` che è stato aggiunto sopra, ma non è mostrato sotto come il suo coperto `jcr:write`.
 
-Per modificare le voci di controllo di accesso, selezionate un’entità e scegliete l’ACE da modificare.
+### Modifica degli ACE {#editing-aces}
 
-Ad esempio, qui è possibile modificare la voce seguente per **dam-users** facendo clic sull&#39;icona matita a destra:
+È possibile modificare le voci di controllo degli accessi selezionando un&#39;entità e scegliendo l&#39;ACE che si desidera modificare.
 
-![](assets/image2019-3-21_0-35-39.png)
+Ad esempio, qui puoi modificare la voce seguente per **utenti dam** facendo clic sull’icona a forma di matita a destra:
 
-La schermata di modifica viene visualizzata con le voci ACE configurate preselezionate, che possono essere eliminate facendo clic sull’icona a croce accanto a esse oppure con nuovi privilegi per il percorso specificato, come mostrato di seguito.
+![Aggiungi restrizione](assets/image2019-3-21_0-35-39.png)
 
-![](assets/noua-1.png)
+La schermata di modifica viene visualizzata con gli ACE configurati preselezionati, che possono essere eliminati facendo clic sull&#39;icona incrociata accanto a essi o nuovi privilegi possono essere aggiunti per il percorso specificato, come mostrato di seguito.
 
-Qui si aggiunge il privilegio `addChildNodes` per **dam-users** nel percorso specificato.
+![Modifica voce](assets/noua-1.png)
+
+In questa sezione viene aggiunta la variabile `addChildNodes` privilegio **utenti dam** sul percorso indicato.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Le modifiche possono essere salvate facendo clic sul pulsante **Salva** in alto a destra, e le modifiche si rifletteranno nelle nuove autorizzazioni per **dam-users **come mostrato di seguito:
+Le modifiche possono essere salvate facendo clic sul pulsante **Salva** in alto a destra, e le modifiche si rifletteranno sulle nuove autorizzazioni per **dam-users **come mostrato di seguito:
 
 ![](assets/zece-1.png)
 
-### Eliminazione di ACE {#deleting-aces}
+### Eliminazione degli ACE {#deleting-aces}
 
-Le voci di controllo di accesso possono essere eliminate per rimuovere tutte le autorizzazioni assegnate a un&#39;entità su un percorso specifico. L’icona X accanto a ACE può essere utilizzata per eliminarla come illustrato di seguito:
+Le voci di controllo di accesso possono essere eliminate per rimuovere tutte le autorizzazioni concesse a un&#39;entità in un percorso specifico. L’icona X accanto a ACE può essere utilizzata per eliminarla come mostrato di seguito:
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinazioni di privilegi per l&#39;interfaccia classica {#classic-ui-privilege-combinations}
+### Combinazioni di privilegi per l’interfaccia classica {#classic-ui-privilege-combinations}
 
-La nuova interfaccia utente delle autorizzazioni utilizza in modo esplicito il set di privilegi di base invece di combinazioni predefinite che non rispecchiano realmente i privilegi sottostanti esatti assegnati.
+La nuova interfaccia utente delle autorizzazioni utilizza in modo esplicito il set di privilegi di base invece delle combinazioni predefinite che non riflettono esattamente i privilegi sottostanti concessi.
 
-Ciò causava confusione riguardo alla configurazione esatta. La tabella seguente elenca la mappatura tra le combinazioni di privilegi dall’interfaccia classica e i privilegi effettivi che le costituiscono:
+Ciò causava confusione in merito alla configurazione esatta. La tabella seguente elenca la mappatura tra le combinazioni di privilegi dall’interfaccia classica ai privilegi effettivi che le costituiscono:
 
 <table>
  <tbody>
   <tr>
    <th>Combinazioni di privilegi per l’interfaccia classica</th>
-   <th>Privilegi dell’interfaccia utente Autorizzazioni</th>
+   <th>Privilegio interfaccia utente autorizzazioni</th>
   </tr>
   <tr>
    <td>Leggi</td>
@@ -163,4 +164,3 @@ Ciò causava confusione riguardo alla configurazione esatta. La tabella seguente
   </tr>
  </tbody>
 </table>
-
