@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 676299c741684708d420ac208f44b0c7a285de0c
+source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2116'
 ht-degree: 2%
 
 ---
@@ -319,7 +319,7 @@ Puoi configurare OAuth per più provider di posta elettronica, come descritto di
 
 >[!NOTE]
 >
->La procedura descritta di seguito è un esempio per un’istanza Publish. Puoi anche seguire questa procedura per un’istanza di authoring, se lo desideri.
+>Questa procedura è un esempio per un&#39;istanza Publish. Se desideri abilitare le notifiche e-mail in un’istanza di authoring, devi seguire gli stessi passaggi sull’autore.
 
 ### Gmail {#gmail}
 
