@@ -1,14 +1,14 @@
 ---
 title: Requisiti tecnici
-seo-title: Requisiti tecnici
+seo-title: Technical Requirements
 description: Elenco delle piattaforme client e server supportate per AEM.
-seo-description: Elenco delle piattaforme client e server supportate per AEM.
+seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f3c99936c1bbfd8a942ffefb1fcd3c2c0b3e9094
+source-git-commit: 1aad655a141fd2137875ae829d1b698298dfe285
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3253'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Per qualsiasi problema specifico relativo alla piattaforma, contatta il fornitor
 
 Requisiti minimi per l’installazione di Adobe Experience Manager:
 
-* Piattaforma Java installata, JDK Standard Edition o altre [macchine virtuali Java](#java-virtual-machines) supportate
+* Piattaforma Java installata, JDK Standard Edition o altro supporto [Macchine virtuali Java](#java-virtual-machines)
 * File Quickstart di Experience Manager (JAR indipendente o WAR per la distribuzione di applicazioni web)
 
 ### Requisiti minimi di dimensionamento {#minimum-sizing-requirements}
@@ -39,14 +39,13 @@ Requisiti minimi per l’esecuzione di Adobe Experience Manager:
 
 >[!NOTE]
 >
->* I casi di utilizzo delle risorse digitali necessitano di una maggiore memoria di base. Per ulteriori informazioni, consulta [Distribuzione e manutenzione](/help/sites-deploying/deploy.md#default-local-install) .
->* [Il ](/help/forms/using/installing-configuring-aem-forms-osgi.md) pacchetto aggiuntivo di AEM Forms richiede 15 GB di spazio temporaneo.
+>* I casi di utilizzo delle risorse digitali necessitano di una maggiore memoria di base. Vedi [Implementazione e manutenzione](/help/sites-deploying/deploy.md#default-local-install) per i dettagli.
+>* [Pacchetto aggiuntivo di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) richiede 15 GB di spazio temporaneo.
 
 >
 
 
-
-Per ulteriori informazioni, vedere le [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md).
+Per ulteriori informazioni, consulta la sezione [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md).
 
 ### Livelli di supporto {#support-levels}
 
@@ -107,7 +106,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64 bit</td>
-   <td>R: Supportato [2] [4]</td>
+   <td>R: Supportato [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -122,23 +121,21 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
    <td>R: Supportato [2]</td>
   </tr>
   <tr>
-   <td>VM IBM J9 - build 2.9, JRE 1.8.0</td>
+   <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
    <td>R: Supportato [3]</td>
   </tr>
   <tr>
-   <td>VM IBM J9 - build 2.8, JRE 1.8.0</td>
+   <td>IBM J9 VM - build 2.8, JRE 1.8.0</td>
    <td>R: Supportato [3]</td>
   </tr>
  </tbody>
 </table>
 
-1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. Per ulteriori informazioni, consulta [Supporto di Java Azul per Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
+1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. Consulta la sezione [Supporto di Azul Java per le domande e risposte di Adobe Experience Manager](assets/adobe-azul-openjdk-license-agreement.pdf) per ulteriori informazioni.
 
-1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (consulta [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando l&#39;Oracle tecnologia Java SE **fino a dicembre 2022**. Per ulteriori informazioni, consulta l’ [Supporto Java di Oracle per Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
+1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando l&#39;Oracle tecnologia Java SE **fino a dicembre 2022**. Consulta la sezione [Oracle di supporto Java per le domande e risposte di Adobe Experience Manager](assets/adobe-oracle-java-license-agreement.pdf) per ulteriori informazioni.
 
 1. IBM JRE è supportato solo insieme a WebSphere Application Server.
-
-1. [!DNL Oracle Java SE 11 JDK] non è supportato per  [!DNL Experience Manager Forms].
 
 
 ### Storage e persistenza {#storage-persistence}
@@ -149,7 +146,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 |---|---|---|
 | **File system con file TAR** `[1]` | Archivio | R: Supportato |
 | **File system con Datastore** `[1]` | Binari | R: Supportato |
-| Memorizzare file binari in file TAR sul file system `[1]` | Binari | Z: Non supportato per la produzione |
+| Archiviare i file binari nei file TAR nel file system `[1]` | Binari | Z: Non supportato per la produzione |
 | Amazon S3 | Binari | R: Supportato |
 | Archiviazione BLOB di Microsoft Azure | Binari | R: Supportato |
 | MongoDB Enterprise 4.0 | Archivio | R: Supportato `[2, 3]` |
@@ -168,13 +165,13 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla funzionalità AEM Communities, consulta [Distribuzione di Communities](/help/communities/deploy-communities.md) .
+>Vedi [Distribuzione di Communities](/help/communities/deploy-communities.md) per ulteriori informazioni sulla funzionalità AEM Communities.
 
 >[!NOTE]
 >
->MongoDB è un software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, consulta la pagina [Criteri di licenza MongoDB](https://www.mongodb.org/about/licensing/) .
+>MongoDB è un software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, consulta la sezione [Criteri di licenza MongoDB](https://www.mongodb.org/about/licensing/) pagina.
 >
->Per ottenere il massimo dalla distribuzione AEM con MongoDB, Adobe consiglia di concedere in licenza la versione Enterprise MongoDB per usufruire del supporto professionale. Per ulteriori informazioni, consulta [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) .
+>Per ottenere il massimo dalla distribuzione AEM con MongoDB, Adobe consiglia di concedere in licenza la versione Enterprise MongoDB per usufruire del supporto professionale. Vedi [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) per ulteriori informazioni.
 >
 >La licenza include un set di repliche standard, composto da una istanza primaria e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
 >
@@ -182,7 +179,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 >
 >L’Assistenza clienti Adobe assisterà i problemi di qualificazione relativi all’utilizzo di MongoDB con AEM.
 >
->Per ulteriori informazioni, consulta la pagina [MongoDB per Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Per ulteriori informazioni, consulta la sezione [Pagina MongoDB per Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
 >
@@ -202,11 +199,11 @@ La versione minima dell’API del servlet è Servlet 3.1
 |---|---|
 | **Motore servlet integrato Quickstart (Jetty 9.4)** | R: Supportato |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Non supportato |
-| Distribuzione continua di IBM WebSphere Application Server (LibertyProfile) con profilo Web 7.0 e IBM JRE 1.8 | R: Supporto limitato per nuovi contratti `[2]` |
-| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Supporto limitato per nuovi contratti `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R: Supporto limitato per nuovi contratti `[2]` |
+| Distribuzione continua (LibertyProfile) dell&#39;applicazione IBM WebSphere Application Server con profilo Web 7.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti `[2]` |
+| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R: Sostegno limitato per i nuovi contratti `[2]` |
 | JBoss EAP 7.2.x con server applicazioni JBoss | Z: Non supportato |
-| JBoss EAP 7.1.4 con server applicazioni JBoss | R: Supporto limitato per nuovi contratti `[1]` `[2]` |
+| JBoss EAP 7.1.4 con server applicazioni JBoss | R: Sostegno limitato per i nuovi contratti `[1]` `[2]` |
 | JBoss EAP 7.0.x con server applicazioni JBoss | Z: Non supportato |
 
 1. Consigliato per le distribuzioni con AEM Forms.
@@ -222,7 +219,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | Linux, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[2]` |
 | Linux, basato sulla distribuzione SUSE | R: Supportato |
 | Microsoft Windows Server 2019 `[4]` | R: Sostegno limitato per i nuovi contratti |
-| Microsoft Windows Server 2016 `[4]` | R: Supporto limitato per nuovi contratti `[5]` |
+| Microsoft Windows Server 2016 `[4]` | R: Sostegno limitato per i nuovi contratti `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Non supportato |
 | Oracle Solaris 11 | Z: Non supportato |
 | IBM AIX 7.2 | Z: Non supportato |
@@ -230,22 +227,22 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 1. Linux Kernel 2.6, 3.x e 4.x include derivati dalla distribuzione Red Hat, inclusi Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Le funzionalità aggiuntive di AEM Forms sono supportate solo su CentOS 7 e Red Hat Enterprise Linux 7.
 1. AEM Forms è supportato solo su Ubuntu 16.04 LTS
 1. Distribuzione Linux supportata da Adobe Managed Services
-1. Le distribuzioni di produzione Microsoft Windows sono supportate per i clienti che eseguono l&#39;aggiornamento alla versione 6.5 e per l&#39;utilizzo non di produzione. Le nuove distribuzioni sono su richiesta per AEM Sites e Assets.
-1. AEM Forms è supportato su Microsoft Windows Server senza le restrizioni a livello di supporto R
+1. Le distribuzioni di produzione Microsoft Windows sono supportate per i clienti che eseguono l’aggiornamento alla versione 6.5 e per utilizzi non di produzione. Le nuove distribuzioni sono su richiesta per AEM Sites e Assets.
+1. AEM Forms è supportato su Microsoft Window Server senza restrizioni a livello di supporto R
 
 ### Ambienti di elaborazione virtuali e cloud {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in ambienti di cloud computing, come Microsoft Azure e Amazon Web Services (AWS), in conformità ai requisiti tecnici elencati in questa pagina e in base ai termini di supporto standard dell’Adobe.
+Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in ambienti di cloud computing, come Microsoft Azure e Amazon Web Services (AWS), in conformità ai requisiti tecnici elencati in questa pagina e in base ai termini di supporto standard di Adobe.
 
-Adobe consiglia di utilizzare Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti esperienza e competenze per l’implementazione e il funzionamento di AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Adobe consiglia di utilizzare Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti esperienza e competenze per l’implementazione e il funzionamento di AEM in questi ambienti di cloud computing. Vedi [documentazione aggiuntiva su Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In tutti gli altri casi di distribuzione di AEM su Azure o AWS o in qualsiasi altro ambiente cloud computing, il supporto di Adobe sarà contenuto nell&#39;ambiente di elaborazione virtuale in conformità alle specifiche tecniche elencate in questa pagina. Eventuali problemi segnalati relativi all&#39;AEM in esecuzione in uno qualsiasi di questi ambienti cloud dovranno essere riproducibili indipendentemente da qualsiasi servizio cloud specifico per l&#39;ambiente cloud computing, a meno che il servizio cloud non sia specificamente supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione BLOB di Azure o AWS S3.
 
-Per raccomandazioni su come distribuire AEM su Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia vivamente di lavorare direttamente con il provider cloud o i partner di Adobe per supportare la distribuzione di AEM nell’ambiente cloud desiderato. Il fornitore o il partner cloud selezionato sarà responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura., per soddisfare i requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
+Per raccomandazioni su come distribuire AEM su Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia vivamente di lavorare direttamente con il provider cloud o i partner di Adobe che supportano la distribuzione di AEM nell’ambiente cloud desiderato. Il fornitore o il partner cloud selezionato sarà responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura., per soddisfare i requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di memorizzazione in cache e bilanciamento del carico. [Scarica la versione](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) più recente di Dispatcher. Experience Manager 6.5 richiede la versione 4.3.2 o successiva di Dispatcher.
+Dispatcher è il componente di memorizzazione in cache e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 richiede la versione 4.3.2 o successiva di Dispatcher.
 
 I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4.3.2:
 
@@ -258,7 +255,7 @@ I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4
 1. I server web generati in base al codice sorgente httpd di Apache avranno lo stesso livello di supporto della versione di httpd su cui si basa. In caso di dubbi, chiedi ad Adobe di confermare il livello di supporto relativo al rispettivo prodotto server. I casi seguenti:
 
    1. Il server HTTP è stato creato utilizzando solo le distribuzioni di origine Apache ufficiali, oppure
-   1. Il server HTTP è stato distribuito come parte del sistema operativo su cui è in esecuzione. Esempi: IBM HTTP Server, Oracle HTTP Server
+   1. Il server HTTP è stato distribuito come parte del sistema operativo su cui è in esecuzione. Esempi: Server HTTP IBM, server HTTP Oracle
 
 1. Dispatcher non è disponibile per Apache 2.4.x per i sistemi operativi Windows.
 
@@ -268,7 +265,7 @@ I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4
 
 L’interfaccia utente di Adobe Experience Manager funziona con le seguenti piattaforme client. Tutti i browser vengono testati con il set predefinito di plug-in e componenti aggiuntivi.
 
-L&#39;interfaccia utente AEM è ottimizzata per schermi di dimensioni maggiori (in genere notebook e computer desktop) e per fattori di forma tablet (come Apple iPad o Microsoft Surface). Il fattore di forma del telefono non è supportato.
+L’interfaccia utente AEM è ottimizzata per schermi di dimensioni maggiori (in genere notebook e computer desktop) e per fattori di forma tablet (come Apple iPad o Microsoft Surface). Il fattore di forma del telefono non è supportato.
 
 >[!NOTE]
 >
@@ -331,8 +328,8 @@ L&#39;interfaccia utente AEM è ottimizzata per schermi di dimensioni maggiori (
  </tbody>
 </table>
 
-1. Versione estesa del supporto Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
-1. supporto per Apple iPad
+1. Versione estesa del supporto di Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+1. Supporto per Apple iPad
 
 ### Browser supportati per siti web {#supported-browsers-for-websites}
 
@@ -350,7 +347,7 @@ Per connettersi con Microsoft Windows 7+ a un&#39;istanza AEM non protetta con S
 
 1. Aggiungere la voce del Registro di sistema BasicAuthLevel a questa sottochiave utilizzando un valore pari o superiore a 2.
 
-Per migliorare la reattività del client WebDav in Windows - vedere [Supporto Microsoft KB 2445570](https://support.microsoft.com/kb/2445570)
+Per migliorare la reattività del client WebDav sotto Windows - vedi [Supporto Microsoft KB 2445570](https://support.microsoft.com/kb/2445570)
 
 ## Note aggiuntive sulla piattaforma {#additional-platform-notes}
 
@@ -364,17 +361,13 @@ Il funzionamento è semplice in quanto non è necessaria alcuna configurazione s
 
 Ciò significa che, quando è necessario specificare un indirizzo IP, è possibile selezionare (come richiesto) da:
 
-* un indirizzo IPv6
-ad esempio `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* un indirizzo IPv6, ad esempio `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* un indirizzo IPv4
-ad esempio `https://123.1.1.4:4502`
+* un indirizzo IPv4, ad esempio `https://123.1.1.4:4502`
 
-* un nome server
-ad esempio, `https://www.yourserver.com:4502`
+* un nome server, ad esempio, `https://www.yourserver.com:4502`
 
-* il caso predefinito di `localhost` verrà interpretato sia per le installazioni di rete IPv4 che IPv6
-ad esempio, `https://localhost:4502`
+* il caso predefinito di `localhost` verranno interpretati sia per le installazioni di rete IPv4 che IPv6, ad esempio, `https://localhost:4502`
 
 ### Requisiti del componente aggiuntivo AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
@@ -384,9 +377,9 @@ Con Dynamic Media abilitato, si applicano i seguenti requisiti tecnici aggiuntiv
 
 >[!NOTE]
 >
->Questi requisiti di sistema **si applicano solo** se si utilizza Dynamic Media - modalità ibrida; Dynamic Media - La modalità ibrida ha un server di immagini integrato, che è certificato solo su determinati sistemi operativi.
+>Questi requisiti di sistema **only** si applica se si utilizza Dynamic Media - modalità ibrida; Dynamic Media - La modalità ibrida ha un server di immagini integrato, che è certificato solo su determinati sistemi operativi.
 >
->Per i clienti Dynamic Media che eseguono la modalità Dynamic Media - Scene7 (cioè la modalità runmode **dynamic_media_scene7** ), non sono previsti requisiti di sistema aggiuntivi; solo gli stessi requisiti di sistema AEM. Dynamic Media - L&#39;architettura in modalità Scene7 utilizza il servizio immagine basato su cloud e non il servizio incorporato in AEM.
+>Per i clienti Dynamic Media che eseguono la modalità Dynamic Media - Scene7 (ovvero **dynamicmedia_scene7** in modalità runmode), non vi sono ulteriori requisiti di sistema; solo gli stessi requisiti di sistema AEM. Dynamic Media - L&#39;architettura in modalità Scene7 utilizza il servizio immagine basato su cloud e non il servizio incorporato in AEM.
 
 #### Hardware {#hardware}
 
@@ -410,21 +403,21 @@ Se utilizzi Dynamic Media su Linux, è necessario soddisfare i seguenti prerequi
 
 >[!NOTE]
 >
->**Disabilitazione di SELinux:** Image Server non funziona con SELinux attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere questo problema, modifica il file **/etc/selinux/config** e modifica il valore SELinux da:
+>**Disabilitazione di SELinux:** Image Server non funziona con SELinux attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere questo problema, modifica il **/etc/selinux/config** e modifica il valore SELinux da:
 >
 >`SELINUX=enforcing` **a** `SELINUX=disabled`
 
 >[!NOTE]
 >
->**Architettura NUMA:** i sistemi con processori con AMD64 e Intel EM64T sono in genere configurati come piattaforme NUMA (non uniformi memory architecture), il che significa che il kernel costruisce più nodi di memoria in fase di avvio anziché costruire un singolo nodo di memoria.
+>**Architettura NUMA:** I sistemi con processori con AMD64 e Intel EM64T sono generalmente configurati come piattaforme NUMA (non-Uniform Memory Architecture), il che significa che il kernel costruisce più nodi di memoria in fase di avvio piuttosto che costruire un singolo nodo di memoria.
 >
 >Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica un esaurimento della memoria, il kernel può decidere di interrompere i processi (ad esempio, Image Server o Platform Server) anche se è disponibile memoria.
 >
->Pertanto, l&#39;Adobe consiglia che, se si esegue un sistema di questo tipo, si disattiva NUMA utilizzando l&#39;opzione di avvio **numa=off** per evitare che il kernel uccida questi processi.
+>Pertanto, l&#39;Adobe consiglia che, se si esegue un sistema di questo tipo, si disattiva NUMA utilizzando **numa=off** opzione di avvio per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
->**Il nome host del server deve essere risolto:** verificare che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungi il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
+>**Il nome host del server deve risolvere:** Assicurati che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungi il nome host completo e l’indirizzo IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -437,17 +430,17 @@ Per utilizzare Dynamic Media su Windows, installare Microsoft Visual Studio 2010
 
 Per Windows x64:
 
-* Ottenere Microsoft Visual Studio 2010 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* Ottenere Microsoft Visual Studio 2013 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Ottenere Microsoft Visual Studio 2015 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Ridistribuibile Microsoft Visual Studio 2010 all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
+* Ridistribuibile Microsoft Visual Studio 2013 all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Ridistribuibile Microsoft Visual Studio 2015 all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Per Windows x86:
 
-* Ottenere Microsoft Visual Studio 2010 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
-* Ottenere Microsoft Visual Studio 2013 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Ottenere Microsoft Visual Studio 2015 ridistribuibile all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Ridistribuibile Microsoft Visual Studio 2010 all&#39;indirizzo [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
+* Ridistribuibile Microsoft Visual Studio 2013 all&#39;indirizzo [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* Ridistribuibile Microsoft Visual Studio 2015 all&#39;indirizzo [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
-#### MacOS {#macos}
+#### macOS {#macos}
 
 * 10.9.x e versioni successive
 * Supportato solo a scopo di prova e demo
@@ -461,7 +454,7 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 versione </a> trackpiù recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Tracciamento classico di Acrobat 2017</a> versione più recente</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -481,12 +474,12 @@ Per Windows x86:
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Progetto Microsoft® 2016<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
   </tr>
  </tbody>
 </table>
@@ -497,19 +490,16 @@ Per Windows x86:
 >
 >Inoltre:
 >
->* PDF Generator richiede la versione a 32 bit di [Acrobat 2017 classic track versione 17.011.30078 o successiva](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) per eseguire la conversione.
+>* PDF Generator richiede una versione a 32 bit di [Acrobat 2017 classic track versione 17.011.30078 o successiva](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) per eseguire la conversione.
 >* PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione.
 >* PDF Generator non supporta Microsoft Office 365.
->* Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
+>* Le conversioni di PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
 >* Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
->* Una versione di Acrobat è inclusa in un pacchetto con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l&#39;utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
-   >
-   >
-* Il servizio PDF Generator non supporta Microsoft Windows 10.
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>
+>* Il servizio PDF Generator non supporta Microsoft Windows 10.
 
 >
-
 
 
 ### Requisiti di AEM Forms Designer {#requirements-for-aem-forms-designer}
@@ -531,12 +521,12 @@ XMP write-back è supportato e abilitato per le seguenti piattaforme e formati d
 
 * **Sistemi operativi:**
 
-   * Linux (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit). Per i passaggi per installare le librerie client a 32 bit, consulta [Come abilitare l’estrazione XMP e la riscrittura su RedHat Linux a 64 bit](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit). Per i passaggi per installare le librerie client a 32 bit, vedi [Come abilitare l&#39;estrazione XMP e il write-back su RedHat Linux a 64 bit](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * Mac OS X (64 bit)
 
-* **Formati** file: JPEG, PNG, TIFF, PDF, INDD, AI ed EPS.
+* **Formati di file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
 ### Requisiti per AEM Assets per l&#39;elaborazione di risorse basate su metadati su Linux {#assetsonlinux}
 
