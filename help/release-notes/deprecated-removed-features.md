@@ -2,7 +2,7 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 43%
@@ -63,7 +63,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Nelle versi
 | Integrazioni | L’integrazione dell’API Salesforce Force è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da cui installare [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). | La funzione è ancora disponibile. |
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione. |  |
-| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |
+| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |  |
 | Forms | Aggiornamento single-hop da LiveCycle ES4 SP1 a Forms 6.5 su JEE non disponibile | Vedi [percorsi di aggiornamento disponibili](../forms/using/upgrade.md) nella documentazione relativa all’aggiornamento di AEM Forms. |  |
 | Forms | Supporto del clustering basato su UPD rimosso da AEM Forms su JEE | È possibile utilizzare solo il clustering basato su TCP in AEM Forms su JEE. Se si aggiorna un server multicast UDP da una versione precedente a AEM 5.5 Forms su JEE, si eseguono configurazioni manuali per passare al clustering gemfire basato su TCP. Per istruzioni dettagliate, vedi [Aggiornamento a AEM moduli 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizza le console di sviluppo integrate nel browser |
