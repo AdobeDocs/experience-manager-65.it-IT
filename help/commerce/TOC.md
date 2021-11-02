@@ -1,12 +1,12 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: Contenuto AEM e commercio
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guida di Commerce
 user-guide-description: Scopri come utilizzare e amministrare AEM Content and Commerce.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 51%
+source-wordcount: '109'
+ht-degree: 49%
 
 ---
 
@@ -39,8 +39,9 @@ ht-degree: 51%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Domande frequenti](cif/faq.md)
-+ CIF classico {#classic}
-   + Distribuzione di {#deploying}
++ AEM CIF Classic {#classic}
+   + [Panoramica](/help/commerce/cif-classic/home.md)
+   + Distribuzione {#deploying}
       + [Panoramica di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [Commerce Cloud SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Amministrazione {#administering}
