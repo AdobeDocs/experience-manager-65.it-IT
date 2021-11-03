@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guida utente all’amministrazione di AEM 6.5
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
-feature: Amministrazione
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 18%
+source-wordcount: '623'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 18%
 # Guida utente all’amministrazione di AEM 6.5 {#administering}
 
 + [Panoramica sull’amministrazione della Guida utente](home.md)
-+ Funzioni dei siti {#introduction}
++ Funzioni di Sites {#introduction}
    + [Amministrazione di siti Web](msm-and-translation.md)
    + [Processi asincroni](asynchronous-jobs.md)
    + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
@@ -78,7 +78,7 @@ ht-degree: 18%
    + [OWASP Top 10](owasp-top10.md)
    + [Esecuzione di AEM in modalità pronta per la produzione](production-ready.md)
    + [Gestione identità](identity-management.md)
-   + [Autenticazione Adobe IMS e supporto Admin Console per AEM Managed Services](ims-config-and-admin-console.md)
+   + [Autenticazione Adobe IMS e supporto per Admin Console per AEM Managed Services](ims-config-and-admin-console.md)
    + [Creazione di un gruppo utenti chiuso](cug.md)
    + [Riduzione dei problemi di serializzazione in AEM](mitigating-serialization-issues.md)
    + [Sincronizzazione utente](sync.md)
@@ -119,7 +119,7 @@ ht-degree: 18%
    + [Configurazione del tracciamento video per Adobe Analytics](adobeanalytics-video.md)
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](scene7-http2faq.md)
    + [Risoluzione dei problemi relativi all’integrazione di Adobe Campaign](troubleshooting-campaignintegration.md)
-   + [Licenze di SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
+   + [Licenze SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
    + [Connettore SharePoint](sharepoint-connector.md)
    + [Domande frequenti sulla fine del ciclo di vita del visualizzatore DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Integrazione con Adobe Campaign Classic](campaignonpremise.md)
@@ -157,7 +157,7 @@ ht-degree: 18%
    + [Gestione delle richieste RGPD per la AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - Preparazione all’RGPD](gdpr-compliance-commerce.md)
 + Gestione dei contenuti {#contentmanagement}
-   + [Come lavorare con i pacchetti](package-manager.md)
+   + [Gestione pacchetti](package-manager.md)
    + [Amministrazione dei tag](tags.md)
    + [Esportatore di pagine](page-exporter.md)
    + [Console per assegnazione tag dell’interfaccia classica](classic-console.md)
