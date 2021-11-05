@@ -1,8 +1,8 @@
 ---
 title: Compatibilità con le versioni precedenti in AEM 6.5
-seo-title: Compatibilità con le versioni precedenti in AEM 6.5
+seo-title: Backward Compatibility in AEM 6.5
 description: Scopri come mantenere le tue app e configurazioni compatibili con AEM 6.5
-seo-description: Scopri come mantenere le tue app e configurazioni compatibili con AEM 6.5
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
+source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
-
 
 # Compatibilità con le versioni precedenti in AEM 6.5{#backward-compatibility-in-aem}
 
@@ -42,7 +41,7 @@ Il pacchetto di compatibilità consente di eseguire AEM in modalità di compatib
 
 ![sasso](assets/sase.png)
 
-Il pacchetto di compatibilità dispone di due modalità: **Routing abilitato** e **Routing disabilitato**.
+Il pacchetto di compatibilità dispone di due modalità: **Routing abilitato** e **Routing disattivato**.
 
 Questo consente di eseguire AEM 6.5 in tre modalità:
 
@@ -64,10 +63,10 @@ La modalità legacy è destinata ai clienti con interfacce personalizzate basate
 
 ## Configurazione {#how-to-set-up}
 
-Il pacchetto di compatibilità AEM 6.3 può essere installato come pacchetto utilizzando Gestione pacchetti. Puoi scaricare il [AEM pacchetto di compatibilità 6.3 dal sito Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+La **Pacchetto di compatibilità AEM 6.4 per 6.5** può essere installato come pacchetto utilizzando Gestione pacchetti. È possibile scaricare [AEM 6.4 Pacchetto di compatibilità per 6.5 dalla Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sito.
 
 Una volta installato il pacchetto di compatibilità, il routing può essere abilitato o disabilitato utilizzando un interruttore nella configurazione OSGI come mostrato di seguito:
 
-![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
+![Interruttori](assets/compat-switches.png)
 
 Una volta installato e configurato il pacchetto di compatibilità, le funzioni verranno utilizzate in base alla modalità di compatibilità scelta.
