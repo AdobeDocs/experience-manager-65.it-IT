@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '637'
 ht-degree: 20%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 20%
 + [Informazioni su DAM](assets.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
 + [Accessibilità in [!DNL Assets]](accessibility.md)
-+ Utilizzare risorse di Experience Manager {#using}
++ Utilizza Experience Manager Assets {#using}
    + [[!DNL Assets] esperienza home page](assets-home-page.md)
    + [Cercare risorse digitali](search-assets.md)
    + [Utilizzare i metadati delle risorse](metadata.md)
    + [Risorse multilingue](multilingual-assets.md)
-   + [Utilizzare [!DNL Adobe Stock] risorse nelle risorse](aem-assets-adobe-stock.md)
+   + [Utilizzo [!DNL Adobe Stock] risorse in Assets](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Sono stati migliorati i tag avanzati](enhanced-smart-tags.md)
@@ -36,11 +36,13 @@ ht-degree: 20%
    + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
    + [Risorse collegate con [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Archivio newsletter Dynamic Media per Experience League](dynamic-media-newsletter.md)
+   + [Archivio newsletter per Experience League](dynamic-media-newsletter.md)
    + [Configurazione Dynamic Media](administering-dynamic-media.md)
    + [Utilizzare Dynamic Media](dynamic-media.md)
    + [Configurare Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)
+   + [Configurare le impostazioni generali di Dynamic Media](dm-general-settings.md)
+   + [Configurare l’installazione di Dynamic Media Publish](dm-publish-settings.md)
    + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
    + [Accessibilità in Dynamic Media](accessibility-dm.md)
    + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
@@ -82,11 +84,11 @@ ht-degree: 20%
    + [Annullare la validità della cache CDN tramite Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installa Feature Pack 18912 per la migrazione di massa delle risorse](bulk-ingest-migrate.md)
    + [Utilizzare i selettori](working-with-selectors.md)
-+ Estendere le risorse {#extending}
++ Estendi risorse {#extending}
    + [Personalizza ed estendi [!DNL Assets]](extending-assets.md)
    + [Elabora le risorse utilizzando gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
    + [Estendere la funzionalità di ricerca](searchx.md)
-   + [Installa e configura [!DNL ImageMagick] per lavorare con [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installare e configurare [!DNL ImageMagick] per lavorare con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
    + [Estendi editor risorse](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
@@ -116,7 +118,7 @@ ht-degree: 20%
    + [Usa rasterizzatore PDF](aem-pdf-rasterizer.md)
    + [Configurare le restrizioni di caricamento](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integrazione](aem-cc-integration-best-practices.md)
-   + [Integrare con [!DNL InDesign Server]](indesign.md)
+   + [Integra con [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management delle attività](drm.md)
    + [Utilizza il pacchetto dimostrativo per informazioni sulle risorse](use-demo-package-for-asset-insights.md)
    + [Generare rappresentazioni FPO per Adobe InDesign](configure-fpo-renditions.md)
@@ -130,9 +132,9 @@ ht-degree: 20%
    + [Modelli di risorse](asset-templates.md)
 + Brand Portal {#brandportal}
    + [Configura [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Pubblicare risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Pubblicare le risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Pubblicare cartelle su [!DNL Brand Portal]](brand-portal-publish-folder.md)
-   + [Pubblicare raccolte su [!DNL Brand Portal]](brand-portal-publish-collection.md)
+   + [Pubblicare raccolte in [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Frammenti di contenuto {#content-fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
    + [Distribuzione headless con frammenti di contenuto e GraphQL](content-fragments/content-fragments-graphql.md)

@@ -7,28 +7,28 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
-feature: Configurazione
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+feature: Configuration
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Configurazione Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media consente di gestire le risorse offrendo risorse visive di marketing e merchandising su richiesta, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo su richiesta risorse visive di marketing e merchandising, ridimensionate automaticamente per essere utilizzate su siti web, mobili e social. Utilizzando un set di risorse primarie, Dynamic Media genera e distribuisce più varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 >[!NOTE]
 >
->Questa documentazione descrive le funzionalità di Dynamic Media, integrate direttamente in Adobe Experience Manager. Se utilizzi Dynamic Media Classic integrato in Experience Manager, consulta la [documentazione sull&#39;integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Questa documentazione descrive le funzionalità di Dynamic Media, integrate direttamente in Adobe Experience Manager. Se utilizzi Dynamic Media Classic integrato in Experience Manager, consulta [Documentazione sull’integrazione di Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
->Consulta [Scenario doppio utilizzo](/help/sites-administering/scene7.md#dual-use-scenario) per i momenti in cui desideri utilizzare Experience Manager integrato con Dynamic Media Classic e Dynamic Media.
+>Vedi [Scenario a doppio uso](/help/sites-administering/scene7.md#dual-use-scenario) per i momenti in cui desideri utilizzare Experience Manager integrato con Dynamic Media Classic e Dynamic Media.
 
 Se stai amministrando Dynamic Media, i seguenti argomenti sono di interesse:
 
-* [Configurazione Dynamic Media - Modalità](config-dms7.md)  Scene7 - Utilizza questa configurazione se sei un nuovo cliente Dynamic Media.
-* [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)  - Utilizza questa configurazione se sei un Experience Manager di aggiornamento clienti Dynamic Media esistente.
+* [Configurare Dynamic Media - Modalità Scene7](config-dms7.md) - Utilizza questa configurazione se sei un nuovo cliente Dynamic Media.
+* [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md) - Utilizza questa configurazione se sei un Experience Manager di aggiornamento cliente Dynamic Media esistente.
 * [Gestire i predefiniti per immagini](managing-image-presets.md)
 * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
 * [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
@@ -43,4 +43,6 @@ Vedi anche i seguenti argomenti:
 >**Per l&#39;aggiornamento:**
 >
 >* Dopo aver avviato e eseguito l’Experience Manager, tutte le risorse caricate dispongono dell’abilitazione automatica di Dynamic Media (a meno che non sia stata esplicitamente disabilitata dall’amministratore di sistema). Se utilizzi un’istanza aggiornata di Experience Manager e le risorse nuove per Dynamic Media, devi rielaborare le risorse per abilitarle per Dynamic Media.
+
+
 
