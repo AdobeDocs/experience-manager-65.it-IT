@@ -1,6 +1,6 @@
 ---
 title: Guida rapida a Document Management Service (obsoleto)Java API (SOAP)
-seo-title: Guida rapida a Document Management Service (obsoleto)Java API (SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Guida rapida a Document Management Service (obsoleto)Java API (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
+source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
-
-# Guida rapida all’API Java (obsoleta) di Document Management Service {#document-management-service-deprecated-java-api-quick-start-soap}
+# Guida rapida a Java API (SOAP) per Document Management Service (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Quick Starts.
 
@@ -45,12 +44,12 @@ Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Quick 
 Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
+>
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+## Avvio rapido (modalità SOAP): Creare spazi in Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-## Avvio rapido (modalità SOAP): Creare spazi nei servizi di contenuto utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
-
-Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory di test* situato nella home dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
+Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory dei test* situato nella casa dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
 
 ```java
  /*
@@ -144,7 +143,7 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato
  
 ```
 
-## Avvio rapido (modalità SOAP): Eliminare il contenuto dei Content Services utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Avvio rapido (modalità SOAP): Eliminare il contenuto di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 Nell&#39;esempio di codice Java seguente viene eliminato uno spazio denominato /Company Home/Test Directory.
 
@@ -246,7 +245,7 @@ Nell&#39;esempio di codice Java seguente viene eliminato uno spazio denominato /
 
 ## Avvio rapido (modalità SOAP): Aggiungere contenuti a Content Services utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un file PDF denominato *MutuiForm.pdf* a una cartella denominata /Company Home/Test Directory. Gli attributi di creazione e descrizione sono impostati. Il valore di identificazione del nuovo contenuto viene scritto nella console.
+Nell&#39;esempio di codice Java seguente viene aggiunto un file PDF denominato *MutuoForm.pdf* in una cartella denominata /Company Home/Test Directory. Gli attributi di creazione e descrizione sono impostati. Il valore di identificazione del nuovo contenuto viene scritto nella console.
 
 ```java
  /*
@@ -369,7 +368,7 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un file PDF denominato *
 
 ## Avvio rapido (modalità SOAP): Recupera il contenuto da Content Services utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene recuperato un file PDF denominato *MortgageForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale e denominato *UpdatedMortagelForm.pdf*.
+Il seguente esempio di codice Java recupera un file PDF denominato *MutuoForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale e denominato *AggiornatoMortagingForm.pdf*.
 
 ```java
  /*
@@ -473,9 +472,9 @@ Nell&#39;esempio di codice Java seguente viene recuperato un file PDF denominato
  
 ```
 
-## Avvio rapido (modalità SOAP): Spostare il contenuto dei Content Services utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Avvio rapido (modalità SOAP): Spostare il contenuto dei Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene spostato un file PDF denominato *MutuiForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
+Il seguente esempio di codice Java sposta un file PDF denominato *MutuoForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
 
 ```java
  /*
@@ -687,7 +686,7 @@ Il seguente esempio di codice Java elenca il contenuto che si trova nella home /
  
 ```
 
-## Avvio rapido (modalità SOAP): Ricercare contenuti di Content Services utilizzando l’API Java (obsoleta) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Avvio rapido (modalità SOAP): Ricercare contenuti di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 Il seguente codice Java cerca /Company Home per un documento che contiene il testo MortagingForm. Vengono inoltre cercate le sottocartelle.
 
@@ -797,9 +796,9 @@ Il seguente codice Java cerca /Company Home per un documento che contiene il tes
  
 ```
 
-## Avvio rapido (modalità SOAP): Impostazione delle autorizzazioni dei servizi di contenuto tramite l’API Java (obsoleta) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Avvio rapido (modalità SOAP): Impostazione delle autorizzazioni di Content Services tramite l’API Java (obsoleta) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene impostata un&#39;autorizzazione per un utente di nome tony blue. Il dominio specificato è quello predefinito. L&#39;autorizzazione Consumer viene specificata e il nodo è `/Company Home/Test Directory`.
+Nell&#39;esempio di codice Java seguente viene impostata un&#39;autorizzazione per un utente di nome tony blue. Il dominio specificato è quello predefinito. L&#39;autorizzazione Consumatore è specificata e il nodo è `/Company Home/Test Directory`.
 
 ```java
  /*
@@ -1023,4 +1022,3 @@ Il seguente codice Java crea un’associazione a un file di dati XML e a un modu
      }
  
 ```
-
