@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 5%
 
 ---
@@ -46,6 +46,9 @@ Vedi anche [Test del servizio di test Secure](/help/assets/dm-publish-settings.m
    * [Photoshop](#photoshop-tab) scheda
    * [PDF](#pdf-tab) scheda
    * [Illustrator](#illustrator-tab) scheda
+
+   ![Pagina Impostazioni generali di Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *pagina Impostazioni generali di Dynamic Media, con **[!UICONTROL Modifica delle immagini]**scheda selezionata.*<br><br>
 
 1. Al termine, seleziona **[!UICONTROL Salva]**.
 
