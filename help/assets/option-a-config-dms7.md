@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
+source-wordcount: '11571'
 ht-degree: 3%
 
 ---
@@ -170,11 +170,11 @@ Se desideri personalizzare ulteriormente la configurazione, puoi facoltativament
 Se desideri personalizzare ulteriormente la configurazione e l&#39;impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, puoi completare una o più delle seguenti operazioni *facoltativo* attività:
 
 * [(Facoltativo) Configura Dynamic Media - Modalità Scene7 per il caricamento di risorse superiori a 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Facoltativo) Configura l&#39;installazione di Dynamic Media Publish](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Facoltativo) Verifica le risorse prima di pubblicarle](#test-assets-before-making-public)
+* [(Facoltativo) Configura le impostazioni generali di Dynamic Media](#configuring-application-general-settings)
+* [(Facoltativo) Attività di configurazione aggiuntive](#additional-configuration-tasks)
 * [(Facoltativo) Ottimizzare le prestazioni di Dynamic Media - Modalità Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Facoltativo) Filtrare le risorse per la replica](#optional-filtering-assets-for-replication)
 
 ### (Facoltativo) Configura Dynamic Media - Modalità Scene7 per il caricamento di risorse superiori a 2 GB {#optional-config-dms7-assets-larger-than-2gb}
@@ -643,7 +643,7 @@ Quando carichi i file immagine di Illustrator (AI), puoi formattarli in vari mod
 >[!NOTE]
 Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Vedi [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Facoltativo) Attività di configurazione aggiuntive
+### (Facoltativo) Attività di configurazione aggiuntive {#additional-configuration-tasks}
 
 Le attività di configurazione e configurazione opzionali includono:
 
