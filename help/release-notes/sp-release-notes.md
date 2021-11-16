@@ -4,9 +4,9 @@ description: Note sulla versione specifiche per [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
+source-wordcount: '4430'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Manager] 6.
 
 * **Miglioramento [!DNL Content Fragment] Modelli ed editor**: È ora possibile creare modelli complessi e personalizzati per il contenuto strutturato utilizzando [!DNL Content Fragment] modelli. Le strutture di contenuto sono modularizzate in elementi di base modellati come sottoframmenti. I frammenti di livello superiore fanno riferimento a tali sottoframmenti. Ulteriori miglioramenti del tipo di dati, come le regole di convalida avanzate, migliorano ulteriormente la flessibilità nella modellazione dei contenuti con [!DNL Content Fragments]. La [!DNL Experience Manager] [!DNL Content Fragment] l’editor supporta le strutture di frammenti nidificati in una sessione dell’editor comune, con miglioramenti quali la visualizzazione struttura ad albero e la navigazione a schede tramite gerarchie di frammenti.
 
-* **API GraphQL per[!DNL Content Fragments]**: La nuova API GraphQL è il metodo standard per distribuire contenuti strutturati in formato JSON. Le query GraphQL consentono ai client di richiedere solo gli elementi di contenuto rilevanti per il rendering di un’esperienza. Tale selezione elimina la consegna dei contenuti in eccesso (possibilità con le API REST HTTP) che richiede l’analisi dei contenuti sul lato client. Gli schemi GraphQL sono derivati da [!DNL Content Fragment] I modelli e le risposte API vengono effettuati in formato JSON. In [!DNL Experience Manager] come [!DNL Cloud Service], [Le query GraphQL persistono](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e elabora richieste di GET compatibili con la cache. Non è ancora possibile in [!DNL Experience Manager] 6.5.10.0.
+* **API GraphQL per[!DNL Content Fragments]**: La nuova API GraphQL è il metodo standard per distribuire contenuti strutturati in formato JSON. Le query GraphQL consentono ai client di richiedere solo gli elementi di contenuto rilevanti per il rendering di un’esperienza. Tale selezione elimina la consegna dei contenuti in eccesso (possibilità con le API REST HTTP) che richiede l’analisi dei contenuti lato client. Gli schemi GraphQL sono derivati da [!DNL Content Fragment] I modelli e le risposte API vengono effettuati in formato JSON. In [!DNL Experience Manager] come [!DNL Cloud Service], [Le query GraphQL persistono](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e elabora richieste di GET compatibili con la cache. Non è ancora possibile in [!DNL Experience Manager] 6.5.10.0.
 
 * **Gestione delle gerarchie e anteprima futura**: Gli utenti ora dispongono di un’interfaccia per accedere alle strutture dei contenuti [!DNL Experience Manager] lanci, inclusa la possibilità di aggiungere e rimuovere pagine in un lancio. Questa funzione migliora la flessibilità di [!DNL Experience Manager] lancia per creare versioni di contenuto destinate alla pubblicazione futura. [Funzione di deformazione del tempo](/help/sites-authoring/working-with-page-versions.md#timewarp) consente agli utenti di visualizzare in anteprima gli avvii come stati di contenuto futuri.
 
@@ -92,7 +92,7 @@ Di seguito è riportato l’elenco delle correzioni fornite in [!DNL Experience 
 * Quando si promuove un lancio, le modifiche nel lancio promosso vengono implementate in doppio negli altri lanci. Se un utente promuove il lancio con doppio rollout, il contenuto raddoppiato viene riportato sulla pagina sorgente (NPR-36893).
 * [!DNL Experience Manager] aggiunge un bordo grigio ad alcune immagini PNG con trasparenza se aggiungi le immagini a una pagina utilizzando il componente di base Immagine o se le ridimensiona utilizzando il componente Immagine di base (NPR-36879).
 * [!DNL Experience Manager Sites] L’interfaccia utente amministratore con un numero elevato di modelli si traduce in una navigazione lenta (NPR-36870).
-* L&#39;aggiornamento al service pack 9 impedisce l&#39;authoring di alcuni componenti. Questo problema non consente [!DNL Sites] per creare nuove pagine (NPR-36857).
+* Il rendering delle pagine web non riesce quando i loro collegamenti vengono modificati dai bundle di filtri dei servlet personalizzati (NPR-36857).
 * La `ContextHubImpl` crea un `ResourceResolver` non è chiuso. Provoca messaggi di avviso sul lungo periodo `ResourceResolver` e il servizio restituisce a volte risultati imprevisti (NPR-36853).
 * Quando si sincronizza una singola Live Copy dalle proprietà della pagina blueprint, vengono sincronizzate anche tutte le altre Live Copy (NPR-36829, NPR-36522).
 * Quando si utilizza solo il tipo MIME XLS, la funzione di caricamento del file non funziona come previsto (NPR-36785).
@@ -389,7 +389,7 @@ Per installare il service pack su un [!DNL Adobe Experience Manager] 6.5 istanza
 
 **Installazione automatica**
 
-Esistono due modi per installare automaticamente [!DNL Experience Manager] 6.5.10.0 su un&#39;istanza funzionante:
+Sono disponibili due modi per installare automaticamente [!DNL Experience Manager] 6.5.10.0 su un&#39;istanza funzionante:
 
 A. Inserire il pacchetto in `../crx-quickstart/install` quando il server è disponibile online. Il pacchetto viene installato automaticamente.
 
