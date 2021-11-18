@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 5%
+source-wordcount: '2454'
+ht-degree: 4%
 
 ---
 
 
 # Configurare le impostazioni generali di Dynamic Media
 
->[!IMPORTANT]
->
->Dynamic Media General Setting è disponibile solo se:
->
->* Stai eseguendo Dynamic Media in modalità Scene7.
->* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Media]** in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 o in Experience Manager as a Cloud Service.
->* Sei un amministratore di sistema di Experience Manager con privilegi di amministratore.
+Configurazione **[!UICONTROL Impostazioni generali di Dynamic Media]** è disponibile solo se:
 
+* Stai eseguendo Dynamic Media in modalità Scene7. Vedi [Abilitare Dynamic Media in modalità Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Media]** in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 o in Experience Manager as a Cloud Service.
+* Sei un amministratore di sistema di Experience Manager con privilegi di amministratore.
+
+Dynamic Media General Settings è destinato all&#39;utilizzo da parte di sviluppatori e programmatori di siti web esperti. Adobe Dynamic Media consiglia agli utenti che modificano queste impostazioni di pubblicazione di avere familiarità con Dynamic Media su Adobe Experience Manager e la tecnologia di imaging di base.
 
 Al momento della creazione dell’account, Adobe Dynamic Media fornisce automaticamente i server assegnati all’azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account.
 
-Vedi anche [Test del servizio di test Secure](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+La pagina Configurazione pubblicazione di Dynamic Media stabilisce le impostazioni predefinite che determinano come le risorse vengono distribuite dai server Dynamic Media di Adobe ai siti web o alle applicazioni. Se non viene specificata alcuna impostazione, il server Adobe Dynamic Media distribuisce una risorsa in base a un’impostazione predefinita configurata nella pagina Configurazione pubblicazione Dynamic Media.
 
-**Per configurare l&#39;impostazione generale Dynamic Media:**
+Vedi anche [Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>Aggiornamento da Dynamic Media Classic a Dynamic Media su Adobe Experience Manager? Le pagine Impostazioni generali e Configurazione pubblicazione in Dynamic Media sono precompilate con i valori presi dal tuo account Dynamic Media Classic. Le eccezioni sono tutti i valori elencati in **[!UICONTROL Opzioni di caricamento predefinite]** Area della pagina Impostazioni generali. Questi valori sono già in Experience Manager. Di conseguenza, eventuali modifiche apportate in **[!UICONTROL Opzioni di caricamento predefinite]**, su tutte e cinque le schede, tramite l’interfaccia utente di Experience Manager si riflette in Dynamic Media, non in Dynamic Media Classic. Tutte le altre impostazioni e valori della pagina Impostazione generale e Configurazione pubblicazione vengono mantenuti, ad Experience Manager, tra Dynamic Media Classic e Dynamic Media.
+
+**Per configurare le impostazioni generali di Dynamic Media:**
 
 1. In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
-1. Nella barra a sinistra, seleziona l’icona Strumenti , quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Impostazione generale Dynamic Media]**.
-1. Nella pagina Server , imposta la **[!UICONTROL Nome server pubblicato]** e **[!UICONTROL Nome server di origine]**, quindi utilizza le cinque schede per configurare le impostazioni di pubblicazione predefinite.
+1. Nella barra a sinistra, seleziona l’icona Strumenti , quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Impostazioni generali di Dynamic Media]**.
+1. Nella pagina Server , imposta la **[!UICONTROL Nome server pubblicato]** e **[!UICONTROL Nome server di origine]**, quindi utilizza le cinque schede per configurare le opzioni di caricamento predefinite per la modifica delle immagini e per i file Postscript, Photoshop, PDF e Illustrator.
 
    * [Server](#server-general-setting)
    * [Carica nell’applicazione](#upload-to-application)
@@ -58,7 +64,7 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 
 | Opzione | Descrizione |
 | --- | --- |
-| **[!UICONTROL Nome server pubblicato]** | Obbligatorio.<br>Questo server è il server CDN live (Content Deliver Network) utilizzato in tutte le chiamate URL generate dal sistema che sono specifiche per il tuo account. Non modificare il nome del server a meno che non venga richiesto da Adobe Technical Support. Il nome deve utilizzare `https://` nel percorso. |
+| **[!UICONTROL Nome server pubblicato]** | Obbligatorio.<br>Il nome deve utilizzare `https://` nel percorso.<br>Questo server è il server CDN live (Content Deliver Network) utilizzato in tutte le chiamate URL generate dal sistema che sono specifiche per il tuo account. Non modificare il nome del server a meno che non venga richiesto da Adobe Technical Support. |
 | **[!UICONTROL Nome server origine]** | Obbligatorio.<br>Questo server viene utilizzato solo per il test di controllo della qualità. Non modificare il nome del server a meno che non venga richiesto da Adobe Technical Support. |
 
 ## Carica nell’applicazione {#upload-to-application}
@@ -69,7 +75,7 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 
    | Opzione Sovrascrivi immagini | Descrizione |
    | --- | --- |
-   | **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione come risorsa base]** | Predefiniti.<br>Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato. |
+   | **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione come risorsa base]** | Predefinito solo per i nuovi account Dynamic Media.<br>Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato. |
    | **[!UICONTROL Sovrascrivi in cartella corrente, nome come risorsa base, ignora estensione]** | Richiede di caricare l&#39;immagine sostitutiva nella stessa cartella dell&#39;originale, tuttavia l&#39;estensione del nome file può essere diversa dall&#39;originale. Ad esempio, sedia.tif sostituisce sedia.jpg. |
    | **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione come risorsa base]** | Richiede che l&#39;immagine sostitutiva abbia la stessa estensione del nome del file dell&#39;immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, puoi caricare l’immagine di sostituzione in una cartella diversa dall’originale. L&#39;immagine aggiornata si trova nella nuova cartella; non è più possibile trovare il file nella posizione originale. |
    | **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione]** | Questa opzione è la regola di sostituzione più inclusiva. Puoi caricare un’immagine sostitutiva in una cartella diversa dall’originale, caricare un file con un’estensione diversa del nome del file e sostituire il file originale. Se il file originale si trova in una cartella diversa, l&#39;immagine sostitutiva si trova nella nuova cartella in cui è stata caricata. |
