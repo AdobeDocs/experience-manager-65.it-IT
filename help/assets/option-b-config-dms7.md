@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
+source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6063'
 ht-degree: 4%
 
 ---
@@ -101,7 +101,7 @@ Vedi [Installa feature pack 18912 per la migrazione di massa delle risorse](/hel
    Seleziona **[!UICONTROL Connessione a Dynamic Media]**.
 
    >[!NOTE]
-   **RICK: MANTIENI COSÌ COM&#39;È?** Dopo aver ricevuto l’e-mail di provisioning con le credenziali Dynamic Media, apri la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account per modificare la tua password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
+   Dopo aver ricevuto l’e-mail di provisioning con le credenziali Dynamic Media, apri la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account per modificare la tua password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
 
 1. Quando la connessione ha esito positivo, imposta quanto segue. Le intestazioni con asterisco (*) sono obbligatorie:
 
@@ -136,14 +136,13 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 1. Seleziona **[!UICONTROL Salva]**.
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima della pubblicazione, è necessario &quot;inserire nell&#39;elenco Consentiti&quot; l’istanza di authoring di Experience Manager per connettersi a Dynamic Media:
 
-   * **RICK: ARGOMENTO COLLEGAMENTO A NUOVO ARGOMENTO DI CONFIGURAZIONE PUBBLICAZIONE** Apri [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account. Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
-
-   * Nella barra di navigazione in alto a destra della pagina, individua **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Pubblica installazione]** > **[!UICONTROL Server immagini]**.
-
-   * Nella pagina Pubblica su Image Server, seleziona l’elenco a discesa Contesto pubblicazione **[!UICONTROL Test Image Serving]**.
-   * Per Filtro indirizzi client, selezionare **[!UICONTROL Aggiungi]**.
-   * Per abilitare (attivare) l’indirizzo, selezionare la casella di controllo. Immetti l’indirizzo IP dell’istanza di authoring di Experience Manager (non dell’IP di Dispatcher).
-   * Seleziona **[!UICONTROL Salva]**.
+   * In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
+   * Nella barra a sinistra, seleziona la **[!UICONTROL Strumenti]** icona, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Installazione di Dynamic Media Publish]**.
+   * Nella pagina Dynamic Media Image Server , **[!UICONTROL Contesto di pubblicazione]** elenco a discesa, seleziona **[!UICONTROL Test Image Serving]**.
+   * Seleziona la **[!UICONTROL Sicurezza]** scheda .
+   * Per **[!UICONTROL Indirizzo client]**, seleziona **[!UICONTROL Aggiungi]**.
+   * Immetti l’indirizzo IP dell’istanza di authoring di Experience Manager (non dell’IP di Dispatcher).
+   * Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**.
 
 La configurazione di base è terminata. è possibile utilizzare la modalità Dynamic Media - Scene7.
 
