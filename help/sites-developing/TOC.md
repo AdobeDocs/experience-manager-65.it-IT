@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 16%
 
 ---
@@ -91,12 +91,13 @@ ht-degree: 16%
       + [Internazionalizzazione delle stringhe di interfaccia utente](i18n-dev.md)
       + [Utilizzo di Translator per gestire i dizionari](i18n-translator.md)
       + [Estrazione di stringhe per la traduzione](i18n-extract.md)
-   + Componenti dell&#39;interfaccia classica{#classic-ui-components}
+   + Componenti dell’interfaccia classica{#classic-ui-components}
       + [Sviluppo di componenti AEM (interfaccia classica)](developing-components-classic.md)
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
+   + [Senza testa e AEM](headless/introduction.md)
    + [Senza testa e ibrido con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Applicazioni a pagina singola{#spas}
@@ -150,7 +151,7 @@ ht-degree: 16%
    + ClientContext{#client-context}
       + [Contesto client in dettaglio](client-context.md)
       + [API JavaScript per il contesto client](ccjsapi.md)
-+ Estensione di AEM{#extending-aem}
++ Estensione AEM{#extending-aem}
    + [Estensione AEM utilizzando Adobe Developer App Builder](app-builder.md)
    + [Personalizzazione dell’authoring delle pagine](customizing-page-authoring-touch.md)
    + [Personalizzazione delle console](customizing-consoles-touch.md)
@@ -169,7 +170,7 @@ ht-degree: 16%
       + [Guida di riferimento per il processo dei flusso di lavoro](workflows-process-ref.md)
       + [Variabili nei flussi di lavoro AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Estensione di Multi Site Manager](extending-msm.md)
-   + Tracking e Analytics{#extending-analytics}
+   + Tracciamento e analisi{#extending-analytics}
       + [Estensione del tracciamento degli eventi](extending-analytics.md)
       + [Aggiunta del tracciamento di Adobe Analytics ai componenti](extending-analytics-components.md)
       + [Personalizzazione del framework Adobe Analytics](extending-analytics-framework.md)
@@ -184,7 +185,7 @@ ht-degree: 16%
       + [Script di analisi delle richieste](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
    + [Sviluppo dell’editor in blocco](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
-   + Estensione dell&#39;interfaccia classica{#extending-classic-ui}
+   + Estensione dell’interfaccia classica{#extending-classic-ui}
       + [Personalizzazione della console Siti web (interfaccia classica)](customizing-siteadmin.md)
       + [Personalizzazione della console di benvenuto (interfaccia classica)](customizing-the-welcome-console.md)
       + [Sviluppo di rapporti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
@@ -207,7 +208,7 @@ ht-degree: 16%
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
    + [Architettura dei contenuti](content-architecture.md)
    + [Architettura del software](software-architecture.md)
-   + Implementazione di riferimento We.Retail{#we-retail}
+   + Implementazione di riferimento di We.Retail{#we-retail}
       + [Implementazione di riferimento di We.Retail](we-retail.md)
       + [Prova di frammenti di contenuto in We.Retail](we-retail-content-fragments.md)
       + [Prova dei componenti core in We.Retail](we-retail-core-components.md)
