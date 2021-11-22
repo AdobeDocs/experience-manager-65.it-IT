@@ -1,9 +1,9 @@
 ---
 title: 'Sviluppo headless per siti AEM 6.5 '
 description: Scopri come le potenti funzionalità headless di AEM 6.5 come Modelli di contenuto, Frammenti di contenuto e API GraphQL collaborano per consentire di gestire le esperienze a livello centrale e distribuirle tra i vari canali.
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Questo documento si concentra sul modello di implementazione senza testa di AEM 
 
 ## AEM 6.5 e headless {#aem-headless}
 
-AEM as a Cloud Service è uno strumento flessibile per il modello di implementazione headless offrendo tre potenti servizi:
+AEM 6.5 è uno strumento flessibile per il modello di implementazione headless offrendo tre potenti servizi:
 
 1. Modelli di contenuto
    * I modelli di contenuto sono una rappresentazione strutturata del contenuto.
