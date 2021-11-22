@@ -2,45 +2,48 @@
 title: Autenticazione per query GraphQL AEM remote su frammenti di contenuto
 description: Comprendere l’autenticazione necessaria per le query GraphQL AEM remote al fine di proteggere la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
-source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
+exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
+source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Autenticazione per query GraphQL AEM remote su frammenti di contenuto {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso d&#39;uso principale per l&#39; [API GraphQL di Adobe Experience Manager (AEM) per la distribuzione dei frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md) è quello di accettare query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione di contenuti headless.
+Un caso d’uso principale per [API GraphQL di Adobe Experience Manager (AEM) per la distribuzione di frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md) accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione di contenuti headless.
 
 >[!NOTE]
 >
->Per i test e lo sviluppo è inoltre possibile accedere all&#39;API GraphQL AEM direttamente utilizzando l&#39;interfaccia [GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) .
+>Per i test e lo sviluppo è inoltre possibile accedere all’API GraphQL AEM direttamente utilizzando l’ [Interfaccia GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interfaccia.
 
-Per l&#39;autenticazione, il servizio di terze parti deve [recuperare un token di accesso](#retrieving-access-token), che può quindi essere [utilizzato nella richiesta GraphQL](#use-access-token-in-graphql-request).
+Per l&#39;autenticazione il servizio di terze parti deve autenticarsi, utilizzando il nome utente e la password dell&#39;account AEM.
 
-## Recupero di un token di accesso {#retrieving-access-token}
-
-<!-- 6.5.10.0 - does this page need to be migrated? -->
+<!-- 6.5.10.0 - does this content/page need to be migrated? -->
 
 <!--
+For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
+
+## Retrieving an Access Token {#retrieving-access-token}
+
 See [Generating Access Tokens for Server Side APIs](/help/sites-developing/generating-access-tokens-for-server-side-apis.md) for full details.
--->
 
-## Utilizzo del token di accesso in una richiesta GraphQL {#use-access-token-in-graphql-request}
+## Using the Access Token in a GraphQL Request {#use-access-token-in-graphql-request}
 
-Affinché un servizio di terze parti possa connettersi a un&#39;istanza AEM, deve disporre di un *token di accesso*. Il servizio deve quindi aggiungere questo token all’intestazione `Authorization` nella richiesta di POST.
+For a third party service to connect with an AEM instance it needs to have an *Access Token*. The service must then add this token to the `Authorization` header on the POST request. 
 
-Ad esempio, un’intestazione di autorizzazione GraphQL:
+For example, a GraphQL Authorization Header:
 
 ```xml
 Authorization: Bearer <access_token>
 ```
 
-## Requisiti delle autorizzazioni {#permission-requirements}
+## Permission Requirements {#permission-requirements}
 
-Tutte le richieste effettuate utilizzando il token di accesso saranno in realtà effettuate *dall&#39;account utente che ha generato il token*.
+All requests made using the access token will actually be made *by the user account that generated the token*. 
 
-Ciò significa che devi verificare che l’account disponga delle autorizzazioni necessarie per eseguire le query GraphQL.
+This means that you need to check that the account has the permissions required to run GraphQL queries. 
 
-Puoi controllare questo usando GraphiQL sull&#39;istanza locale.
+You can check this by using GraphiQL on the local instance.
+-->
