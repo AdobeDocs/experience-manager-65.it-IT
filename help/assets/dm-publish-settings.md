@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Dynamic Media Publish Setup è destinato all&#39;utilizzo da parte di sviluppato
 
 La pagina Configurazione pubblicazione di Dynamic Media stabilisce le impostazioni predefinite che determinano come le risorse vengono distribuite dai server Dynamic Media di Adobe ai siti web o alle applicazioni. Se non viene specificata alcuna impostazione, il server Adobe Dynamic Media distribuisce una risorsa in base a un’impostazione predefinita configurata nella pagina Configurazione pubblicazione Dynamic Media.
 
-Vedi anche [Facoltativo - Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) per ulteriori attività di configurazione opzionali.
+Vedi anche [Facoltativo - Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) per ulteriori attività di configurazione opzionali.
 
 >[!NOTE]
 >

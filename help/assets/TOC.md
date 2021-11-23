@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 41ffd39d6815988b2b172d7dc1748570eb5ef584
+source-git-commit: bec1a7b7e2fca1e27a1dee274f7d7234a57ce8d8
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '655'
 ht-degree: 20%
 
 ---
@@ -39,10 +39,9 @@ ht-degree: 20%
    + [Archivio newsletter per Experience League](dynamic-media-newsletter.md)
    + [Configurazione Dynamic Media](administering-dynamic-media.md)
    + [Utilizzare Dynamic Media](dynamic-media.md)
-   + [Configurare Dynamic Media - Modalità Scene7]{#config-scene7-mode}
-      + [Configurare Dynamic Media - Modalità Scene7](config-dms7.md)
-      + [Facoltativo - Configura le impostazioni generali di Dynamic Media](dm-general-settings.md)
-      + [Facoltativo - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
+   + [Configurare Dynamic Media - Modalità Scene7](config-dms7.md)
+   + [Facoltativo - Configura Dynamic Media - Modalità Scene7, Impostazioni generali](dm-general-settings.md)
+   + [Facoltativo - Configurazione Dynamic Media - Modalità Scene7, Configurazione pubblicazione](dm-publish-settings.md)
    + [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)
    + [Opzione B](option-b-config-dms7.md)
    + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
