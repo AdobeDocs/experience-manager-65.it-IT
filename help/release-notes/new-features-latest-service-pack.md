@@ -4,9 +4,9 @@ description: Novità di [!DNL Experience Manager] 6.5 Service Pack 11
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 092ba82ac645539fd0d4e2085c380025201914de
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '4399'
+source-wordcount: '4391'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] 6.5 I Service Pack forniscono nuove funzionalità, miglioramenti richiesti dai clienti e miglioramenti a livello di prestazioni, stabilità e sicurezza a intervalli trimestrali. La disponibilità trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
 
-Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack, [caratteristiche principali incluse nei Service Pack 6.5 precedenti](#key-features-previous-service-packs)e [versioni chiave dall&#39;ultimo Service Pack](#key-releases-since-last-sp) rilascio.
+Questo articolo evidenzia le funzioni incluse nell&#39;ultimo Service Pack [caratteristiche principali incluse nei Service Pack 6.5 precedenti](#key-features-previous-service-packs)e [versioni chiave dall&#39;ultimo Service Pack](#key-releases-since-last-sp) rilascio.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -500,15 +500,15 @@ Puoi utilizzare l’API Batch per produrre più comunicazioni interattive da un 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Versioni principali dal [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
+## Versioni principali dal [!DNL Adobe Experience Manager] 6.5 SP10{#key-releases-since-last-sp}
 
-Tra il 27 maggio 2021 e il 26 agosto 2021, Adobe ha rilasciato quanto segue, oltre ai Service Pack:
+Tra il 26 agosto 2021 e il 25 novembre 2021, Adobe ha rilasciato quanto segue, in aggiunta ai Service Pack:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html), [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html)e [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) e [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
 
-* [[!DNL Experience Manager] app desktop 2.1 (2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] app desktop 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experienci Manager Screens: Feature Pack 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html)
+* [Experienci Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
 
 >[!MORELIKETHIS]
 >
