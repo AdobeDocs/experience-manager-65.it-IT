@@ -2,9 +2,9 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
+source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1753'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 
 | Area | Funzione obsoleta | Sostituzione | Versione (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Modelli per frammenti di contenuto, per la creazione di frammenti di contenuto semplici. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. |  |
+| [!DNL Sites] | Modelli per frammenti di contenuto, per la creazione di frammenti di contenuto semplici. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. | 6.5.11.0 |
 | Integrazione  Creative Cloud | AEM a Creative Cloud condivisione cartelle è stato introdotto in AEM 6.2 come modo per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle in [!DNL Creative Cloud] e carica nuovi file o salva le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Consigliamo ai clienti di passare a nuove funzionalità di integrazione Creative Cloud, tra cui Adobe Asset Link o AEM’app desktop. |  |
 | Assets | `AssetDownloadServlet`Per la pubblicazione di istanze,  è disattivato per impostazione predefinita. Per ulteriori informazioni, vedi [Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). | Configurazione descritta nell’[Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). |  |
 | Risorse | Se un utente non dispone di autorizzazioni sufficienti (lettura e scrittura) su `/content/dam/collections`, l&#39;utente non può creare una raccolta. | Rispetta le impostazioni di controllo dell’accesso dell’utente e verifica le autorizzazioni appropriate. |  |
@@ -64,7 +64,7 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Nelle versi
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione. |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |  |
-| Forms | Aggiornamento single-hop da LiveCycle ES4 SP1 a Forms 6.5 su JEE non disponibile | Vedi [percorsi di aggiornamento disponibili](../forms/using/upgrade.md) nella documentazione relativa all’aggiornamento di AEM Forms. |  |
+| Forms | Aggiornamento single-hop da LiveCycle ES4 SP1 a AEM 6.5 Forms su JEE non disponibile | Vedi [percorsi di aggiornamento disponibili](../forms/using/upgrade.md) nella documentazione relativa all’aggiornamento di AEM Forms. |  |
 | Forms | Supporto del clustering basato su UPD rimosso da AEM Forms su JEE | È possibile utilizzare solo il clustering basato su TCP in AEM Forms su JEE. Se si aggiorna un server multicast UDP da una versione precedente a AEM 5.5 Forms su JEE, si eseguono configurazioni manuali per passare al clustering gemfire basato su TCP. Per istruzioni dettagliate, vedi [Aggiornamento a AEM moduli 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizza le console di sviluppo integrate nel browser |
 | Sviluppatori | Rimuovi `customJavaScriptPath` supporto in HTML Client Library Manager. | Nessuna sostituzione |  |
