@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 1%
 
 ---
+
 
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
 
@@ -226,9 +227,9 @@ I frammenti di contenuto possono essere integrati con:
    >
    >Il flusso di lavoro di traduzione AEM funziona con `/content`:
    >
-   >    * Poiché i modelli di frammento di contenuto risiedono in `/conf`, non sono incluse in tali traduzioni. È possibile [internazionalizzare le stringhe di interfaccia utente](/help/sites-developing/i18n-dev.md).
+   >* Poiché i modelli di frammento di contenuto risiedono in `/conf`, non sono incluse in tali traduzioni. È possibile [internazionalizzare le stringhe di interfaccia utente](/help/sites-developing/i18n-dev.md).
    >
-   >    * I modelli vengono copiati per creare il frammento in modo che ciò sia implicito.
+   >* I modelli vengono copiati per creare il frammento in modo che ciò sia implicito.
 
 
 * **Schemi metadati**
