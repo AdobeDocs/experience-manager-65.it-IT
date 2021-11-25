@@ -8,12 +8,10 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-hide: true
-hidefromtoc: true
 exl-id: null
-source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
+source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2470'
 ht-degree: 4%
 
 ---
@@ -24,7 +22,7 @@ ht-degree: 4%
 Configurazione **[!UICONTROL Impostazioni generali di Dynamic Media]** è disponibile solo se:
 
 * Stai eseguendo Dynamic Media in modalità Scene7. Vedi [Abilitare Dynamic Media in modalità Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Media]** in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 o versione successiva.
+* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Media]** in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 o versione successiva. Vedi [Creare una configurazione Dynamic Media nei Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Sei un amministratore di sistema di Experience Manager con privilegi di amministratore.
 
 Dynamic Media General Settings è destinato all&#39;utilizzo da parte di sviluppatori e programmatori di siti web esperti. Adobe Dynamic Media consiglia agli utenti che modificano queste impostazioni di pubblicazione di avere familiarità con Dynamic Media su Adobe Experience Manager e la tecnologia di imaging di base.

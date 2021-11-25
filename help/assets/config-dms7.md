@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5835d16efb0f2112ec8a6917e8cf2529cbf19c7
+source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
 workflow-type: tm+mt
-source-wordcount: '6940'
+source-wordcount: '6080'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 >
 >Dynamic Media - La modalità Scene7 è per *Solo istanza di authoring di Experience Manager*. Di conseguenza, devi configurare `runmode=dynamicmedia_scene7` sull’istanza di authoring di Experience Manager, *not* l’istanza Publish di Experience Manager.
 
-Per abilitare Dynamic Media, è necessario avviare Experience Manager utilizzando `dynamicmedia_scene7` modalità di esecuzione dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
+Per abilitare Dynamic Media, avvia Experience Manager utilizzando `dynamicmedia_scene7` modalità di esecuzione dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -128,20 +128,19 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
          * **[!UICONTROL Disabilitato per le sottocartelle]** - Escludere tutti gli elementi di questo sottoalbero dalla sincronizzazione con Dynamic Media.
 
    >[!NOTE]
-   In DMS7 non è supportato il controllo delle versioni. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
+   Non è supportato il controllo delle versioni in modalità Dynamic Media - Scene7. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
    Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale su S7 Delivery.
 
 1. Seleziona **[!UICONTROL Salva]**.
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima della pubblicazione, è necessario &quot;inserire nell&#39;elenco Consentiti&quot; l’istanza di authoring di Experience Manager per connettersi a Dynamic Media:
 
-   * Apri [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account. Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di tali informazioni, contatta l’Assistenza clienti Adobe.
-
-   * Nella barra di navigazione in alto a destra della pagina, individua **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Pubblica installazione]** > **[!UICONTROL Server immagini]**.
-
-   * Nella pagina Pubblica su Image Server, seleziona l’elenco a discesa Contesto pubblicazione **[!UICONTROL Test Image Serving]**.
-   * Per Filtro indirizzi client, selezionare **[!UICONTROL Aggiungi]**.
-   * Per abilitare (attivare) l’indirizzo, selezionare la casella di controllo. Immetti l’indirizzo IP dell’istanza di authoring di Experience Manager (non dell’IP di Dispatcher).
-   * Seleziona **[!UICONTROL Salva]**.
+   * In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
+   * Nella barra a sinistra, seleziona la **[!UICONTROL Strumenti]** icona, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Installazione di Dynamic Media Publish]**.
+   * Nella pagina Dynamic Media Image Server , **[!UICONTROL Contesto di pubblicazione]** elenco a discesa, seleziona **[!UICONTROL Test Image Serving]**.
+   * Seleziona la **[!UICONTROL Sicurezza]** scheda .
+   * Per **[!UICONTROL Indirizzo client]**, seleziona **[!UICONTROL Aggiungi]**.
+   * Immetti l’indirizzo IP dell’istanza di authoring di Experience Manager (non dell’IP di Dispatcher).
+   * Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**.
 
 La configurazione di base è terminata. è possibile utilizzare la modalità Dynamic Media - Scene7.
 
@@ -212,7 +211,6 @@ Se desideri utilizzare questa funzione, prendi nota dei seguenti prerequisiti e 
 1. Immetti il valore appropriato in byte in modo da poter aumentare il limite di dimensione alla dimensione massima desiderata per il caricamento. Ad esempio, per aumentare il limite di dimensione della risorsa da caricare a 10 GB, immetti `10737418240` nel campo value.
 Puoi immettere un valore fino a 15 GB (`2013265920` byte). In questo caso, le risorse caricate di dimensioni superiori a 15 GB non vengono caricate.
 
-
    ![Valore limite dimensione](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. Nell’angolo in alto a sinistra della finestra di CRXDE Lite, seleziona **[!UICONTROL Salva tutto]**.
@@ -248,85 +246,35 @@ Puoi immettere un valore fino a 15 GB (`2013265920` byte). In questo caso, le ri
 
 ### (Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-In modalità di esecuzione `dynamicmedia_scene7`, utilizza l’interfaccia utente di Dynamic Media Classic per modificare le impostazioni di Dynamic Media.
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-Per alcune delle attività di cui sopra è necessario aprire la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
-
-Le attività di configurazione e configurazione includono:
-
-* [Impostazione di pubblicazione per Image Server](#publishing-setup-for-image-server)
-* [Configurare le impostazioni generali dell&#39;applicazione](#configuring-application-general-settings)
+* [Configurare l’impostazione di pubblicazione Dynamic Media per il server immagini](/help/assets/dm-publish-settings.md)
+* [Configurare le impostazioni generali di Dynamic Media](/help/assets/dm-general-settings.md)
 * [Configurare la gestione del colore](#configuring-color-management)
 * [Modifica tipi MIME per i formati supportati](#editing-mime-types-for-supported-formats)
 * [Aggiungi tipi MIME per i formati non supportati](#adding-mime-types-for-unsupported-formats)
-* [Creare predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Creare predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (eseguito nell’interfaccia utente di Dynamic Media Classic)
 
-#### Impostazione di pubblicazione per Image Server {#publishing-setup-for-image-server}
+#### Configurare l’impostazione di pubblicazione Dynamic Media per il server immagini {#publishing-setup-for-image-server}
 
-Le impostazioni di Configurazione pubblicazione determinano il modo in cui le risorse vengono distribuite per impostazione predefinita da Dynamic Media. Se non viene specificata alcuna impostazione, Dynamic Media distribuisce una risorsa in base alle impostazioni predefinite definite in Configurazione pubblicazione. Ad esempio, una richiesta di fornire un’immagine che non include un attributo di risoluzione genera un’immagine con l’impostazione Risoluzione oggetto predefinita.
+La pagina Configurazione pubblicazione di Dynamic Media stabilisce le impostazioni predefinite che determinano come le risorse vengono distribuite dai server Dynamic Media di Adobe ai siti web o alle applicazioni.
 
-Per configurare l&#39;impostazione di pubblicazione: in Dynamic Media Classic, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Pubblica installazione]** > **[!UICONTROL Server immagini]**.
+Vedi [Configurare l’impostazione di pubblicazione Dynamic Media per il server immagini](/help/assets/dm-publish-settings.md).
 
-La schermata Image Server stabilisce le impostazioni predefinite per la distribuzione delle immagini. Per una descrizione di ciascuna impostazione, consulta la schermata dell’interfaccia utente .
+#### Configurare le impostazioni generali di Dynamic Media {#configuring-application-general-settings}
 
-* **[!UICONTROL Attributi della richiesta]** - Queste impostazioni impongono limiti alle immagini che possono essere consegnate dal server.
-* **[!UICONTROL Attributi di richiesta predefiniti]** - Queste impostazioni riguardano l&#39;aspetto predefinito delle immagini.
-* **[!UICONTROL Attributi comuni delle miniature]** - Queste impostazioni riguardano l&#39;aspetto predefinito delle immagini in miniatura.
-* **[!UICONTROL Valori predefiniti per i campi del catalogo]**- Queste impostazioni si riferiscono alla risoluzione e al tipo di miniatura predefinita delle immagini.
-* **[!UICONTROL Attributi di gestione del colore]** - Queste impostazioni determinano quali profili di colore ICC vengono utilizzati.
-* **[!UICONTROL Attributi di compatibilità]** - Questa impostazione consente di trattare i paragrafi iniziali e finali nei livelli di testo come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
-* **[!UICONTROL Supporto per la localizzazione]** - Queste impostazioni consentono di gestire più attributi internazionali. Consente inoltre di specificare una stringa di mappa delle impostazioni internazionali in modo da definire le lingue che si desidera supportare per le varie descrizioni a comparsa nei visualizzatori. Per ulteriori informazioni sulla configurazione **[Supporto per la localizzazione]**, vedi [Considerazioni sulla localizzazione delle risorse](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+Configurare Dynamic Media **[!UICONTROL Nome server di pubblicazione]** e **[!UICONTROL Nome server di origine]** URL. Puoi inoltre specificare **[!UICONTROL Carica nell’applicazione]** impostazioni e **[!UICONTROL Opzioni di caricamento predefinite]** tutto in base al tuo caso d&#39;uso specifico.
 
-#### Configurare le impostazioni generali dell&#39;applicazione {#configuring-application-general-settings}
-
-Per aprire la pagina Impostazioni generali dell&#39;applicazione, nella barra di navigazione globale di Dynamic Media Classic, passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
-
-**[!UICONTROL Server]** - Al momento del provisioning dell’account, Dynamic Media fornisce automaticamente i server assegnati alla tua azienda. Questi server vengono utilizzati per creare stringhe URL per il sito Web e le applicazioni. Queste chiamate URL sono specifiche del tuo account. Non modificare nessuno dei nomi dei server, a meno che non venga esplicitamente richiesto dall’Assistenza clienti di Adobe.
-
-**[!UICONTROL Sovrascrivi immagini]** - Dynamic Media non consente a due file di avere lo stesso nome. L&#39;ID URL di ogni elemento (il nome del file meno l&#39;estensione) deve essere univoco. Queste opzioni specificano come vengono caricate le risorse sostitutive: se sostituiscono l&#39;originale o diventano duplicati. Le risorse duplicate vengono rinominate con un &quot;-1&quot; (ad esempio, chair.tif viene rinominato chair-1.tif). Queste opzioni interessano le risorse caricate in una cartella diversa dall’originale o le risorse con un’estensione di nome file diversa dall’originale (ad esempio JPG, TIF o PNG).
-
-* **[!UICONTROL Sovrascrivi nella cartella corrente, nome/estensione dell&#39;immagine di base]** - Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato.
-
->[!NOTE]
-Per mantenere la coerenza con l’Experience Manager, scegli sempre questa impostazione: **Sovrascrivi nella cartella corrente, nome/estensione dell&#39;immagine di base**
-
-* **[!UICONTROL Sovrascrivi in qualsiasi cartella, stesso nome/estensione della risorsa di base]** - Richiede che l&#39;immagine sostitutiva abbia la stessa estensione del nome del file dell&#39;immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, puoi caricare l’immagine di sostituzione in una cartella diversa dall’originale. L&#39;immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale
-* **[!UICONTROL Sovrascrivi in qualsiasi cartella, lo stesso nome della risorsa di base indipendentemente dall’estensione]** - Questa opzione è la regola di sostituzione più inclusiva. Puoi caricare un’immagine sostitutiva in una cartella diversa dall’originale, caricare un file con un’estensione diversa del nome del file e sostituire il file originale. Se il file originale si trova in una cartella diversa, l&#39;immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
-
-**[!UICONTROL Profili colore predefiniti]** - Vedi [Configurare la gestione del colore](#configuring-color-management) per ulteriori informazioni.
-
->[!NOTE]
-Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Vedi [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Vedi [Configurare le impostazioni generali di Dynamic Media](/help/assets/dm-general-settings.md).
 
 #### Configurare la gestione del colore {#configuring-color-management}
 
-La gestione del colore di Dynamic Media consente di colorare le risorse corrette. Con la correzione del colore, le risorse acquisite mantengono lo spazio colore (RGB, CMYK, Grigio) e il profilo colore incorporato. Quando si richiede un rendering dinamico, il colore dell&#39;immagine viene corretto nello spazio colore di destinazione utilizzando l&#39;output CMYK, RGB o Grigio. Vedi [Configurare i predefiniti per immagini](/help/assets/managing-image-presets.md).
+La gestione del colore di Dynamic Media consente di colorare le risorse corrette. Con la correzione del colore, le risorse acquisite mantengono lo spazio colore (RGB, CMYK, Grigio) e il profilo colore incorporato. Quando si richiede un rendering dinamico, il colore dell&#39;immagine viene corretto nello spazio colore di destinazione utilizzando l&#39;output CMYK, RGB o Grigio.
 
-Per configurare le proprietà colore predefinite in modo che la correzione colore sia abilitata quando le immagini sono richieste:
+Vedi [Configurare i predefiniti per immagini](/help/assets/managing-image-presets.md).
 
-1. Apri [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account utilizzando le credenziali fornite durante il provisioning.
-1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]**.
-1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
-1. Scorri fino alla proprietà da modificare. Ad esempio, una proprietà in **[!UICONTROL Attributi di gestione del colore]** area.
-
-   È possibile impostare le seguenti proprietà di correzione del colore:
-
-   * **[!UICONTROL Spazio colore predefinito CMYK]** - Nome del profilo colore CMYK predefinito
-   * **[!UICONTROL Spazio colore predefinito su scala di grigi]** - Nome del profilo colore grigio predefinito
-   * **[!UICONTROL Spazio colore predefinito di RGB]** - Nome del profilo colore predefinito di RGB
-   * **[!UICONTROL Intento di rendering della conversione del colore]** - Specifica l&#39;intento di rendering. I valori accettabili sono: **[!UICONTROL percettivo]**, **[!UICONTROL colometrico relativo]**, **[!UICONTROL saturazione]**, **[!UICONTROL colometrico assoluto]**. L&#39;Adobe raccomanda **[!UICONTROL relativo]** come impostazione predefinita.
-
-1. Seleziona **[!UICONTROL Salva]**.
-
-Ad esempio, puoi impostare **[!UICONTROL Spazio colore predefinito RGB]** su *sRGB* e **[!UICONTROL Spazio colore predefinito CMYK]** su *WebCoated*.
-
-In questo modo si effettua quanto segue:
-
-* Abilita la correzione del colore per le immagini RGB e CMYK.
-* Si presume che le immagini di RGB prive di un profilo colore siano presenti nel *sRGB* spazio colore.
-* Si presume che le immagini CMYK prive di un profilo colore siano in *WebCoated* spazio colore.
-* Rendering dinamici che restituiscono l’output di RGB, restituiscilo nel *sRGB* spazio colore.
-* Rendering dinamici che restituiscono l’output CMYK, restituiscilo nel *WebCoated* spazio colore.
+>[!NOTE]
+Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rendering]** e 15 predefiniti visualizzatore quando selezioni **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Vedi [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Modifica tipi MIME per i formati supportati {#editing-mime-types-for-supported-formats}
 
@@ -458,6 +406,8 @@ Sono disponibili due elementi per la definizione, la corrispondenza e il nome di
    * Seleziona **[!UICONTROL Salva]** se stai modificando un predefinito esistente.
 
 ##### Creare un predefinito per set di batch
+
+
 
 Dynamic Media utilizza i predefiniti per set di batch per organizzare le risorse in set di immagini (immagini alternative, opzioni colore, 360 giri) da visualizzare nei visualizzatori. I predefiniti per set di batch vengono eseguiti automaticamente insieme ai processi di caricamento delle risorse in Dynamic Media.
 
