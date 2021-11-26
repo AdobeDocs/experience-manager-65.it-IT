@@ -8,7 +8,7 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: 879e69aa17c7142c2b1e86b72ce23226a7f09a88
+source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 16%
@@ -98,7 +98,7 @@ ht-degree: 16%
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e AEM](headless/introduction.md)
-   + [Frammenti di contenuto]{#content-fragments}
+   + Frammenti di contenuto{#content-fragments}
       + [Distribuzione headless con frammenti di contenuto e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Utilizzo di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
       + [Abilita funzionalità frammento di contenuto per la tua istanza](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-configuration-browser.html)
@@ -110,7 +110,7 @@ ht-degree: 16%
       + [Metadati - Proprietà dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-metadata.html)
       + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-structure-tree.html)
       + [Anteprima - Rappresentazione JSON](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-json-preview.html)
-   + [API di consegna]{#delivery-api}
+   + API di consegna{#delivery-api}
       + [API HTTP di Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
