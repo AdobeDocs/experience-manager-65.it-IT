@@ -2,7 +2,7 @@
 title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto senza intestazione
 description: Scopri come utilizzare AEM API REST di Assets per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Scopri come utilizzare AEM API REST di Assets per gestire i frammenti di contenu
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
 * [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
-   * Per utilizzarlo, gli endpoint devono essere definiti e abilitati in AEM e, se necessario, deve essere installata l&#39;interfaccia GraphiQL.
+   * Per utilizzare questo [gli endpoint devono essere definiti e abilitati in AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)e, se necessario, il [Interfaccia GraphiQL installata](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Il resto di questa guida sarà incentrato sull’accesso GraphQL e la distribuzione di frammenti di contenuto.
