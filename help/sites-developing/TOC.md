@@ -8,10 +8,10 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
+source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 16%
+source-wordcount: '1080'
+ht-degree: 15%
 
 ---
 
@@ -98,6 +98,13 @@ ht-degree: 16%
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e AEM](headless/introduction.md)
+   + Guide introduttive {#getting-started}
+      + [Introduzione](headless/getting-started/introduction.md)
+      + [Creazione di una configurazione](headless/getting-started/create-configuration.md)
+      + [Creazione di un modello di frammento di contenuto](headless/getting-started/create-content-model.md)
+      + [Creazione di una cartella di risorse](headless/getting-started/create-assets-folder.md)
+      + [Creazione di un frammento di contenuto](headless/getting-started/create-content-fragment.md)
+      + [Accesso e distribuzione di frammenti di contenuto](headless/getting-started/create-api-request.md)
    + Frammenti di contenuto{#content-fragments}
       + [Distribuzione headless con frammenti di contenuto e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Utilizzo di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
