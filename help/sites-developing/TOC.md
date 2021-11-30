@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 15%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 15%
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
++ [Cefalea e senza testa in AEM](headful-headless.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e AEM](headless/introduction.md)
    + Guide introduttive {#getting-started}
