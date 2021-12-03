@@ -2,9 +2,9 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
+source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1311'
 ht-degree: 9%
 
 ---
@@ -15,19 +15,29 @@ ht-degree: 9%
 
 Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF in uso o che intendi utilizzare in futuro.
 
-**A partire dalla versione di aprile, il connettore CIF da GitHub è stato sostituito con il componente aggiuntivo CIF** disponibile sul [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). Il passaggio al componente aggiuntivo offre grandi vantaggi per i progetti:
-
-* La maggior parte delle nuove funzioni sarà immediatamente disponibile su AEM 6.5 (non più in attesa della porta laterale delle funzioni)
-* Facile aggiornamento alle nuove versioni dei componenti aggiuntivi
-* Pronto per il Cloud Service
-
-Il vecchio connettore CIF sta entrando in modalità di manutenzione e non deve più essere utilizzato. Sostituisci il connettore CIF con il nuovo componente aggiuntivo CIF. Per la maggior parte dei progetti dovrebbe essere possibile una semplice sostituzione dei pacchetti.
-
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Novembre 2021
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2021.11.18.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| Componenti core CIF | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
+| Sito di riferimento CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+
+### Novità {#what-is-new-november}
+
+* Componenti myAccount estesi basati sui componenti PEGRA estensibili di Commerce
+
+![Componenti myAccount estesi](/help/assets/CIF/extended-myAccount-components.png)
+
+* Gli autori possono creare un Recommendations di prodotti Commerce ad hoc utilizzando altri tipi di consigli
+
+* Supporto per le carte regalo in AEM Storefront
 
 ## Data di rilascio: Ottobre 2021
 
