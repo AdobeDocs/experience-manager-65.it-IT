@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: null
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 1b853936760daf7ee8d16ba926e612dadec40788
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 4%
@@ -31,7 +31,7 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 
 La pagina Configurazione pubblicazione di Dynamic Media stabilisce le impostazioni predefinite che determinano come le risorse vengono distribuite dai server Dynamic Media di Adobe ai siti web o alle applicazioni. Se non viene specificata alcuna impostazione, il server Adobe Dynamic Media distribuisce una risorsa in base a un’impostazione predefinita configurata nella pagina Configurazione pubblicazione Dynamic Media.
 
-Vedi anche [Facoltativo - Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) per ulteriori attività di configurazione facoltative.
+Vedi anche [Facoltativo - Configurazione e configurazione di Dynamic Media - Impostazioni della modalità Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) per ulteriori attività di configurazione opzionali.
 
 >[!NOTE]
 >
