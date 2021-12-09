@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: a98ee0c090c299bc86bf027f69b2e191b716707a
+source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 20%
@@ -42,10 +42,10 @@ ht-degree: 20%
    + [Configurare Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Facoltativo - Configura Dynamic Media - Modalità Scene7, Impostazioni generali](dm-general-settings.md)
    + [Facoltativo - Configurazione Dynamic Media - Modalità Scene7, Configurazione pubblicazione](dm-publish-settings.md)
-   + [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)
    + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
-   + [Accessibilità in Dynamic Media](accessibility-dm.md)
+   + [Configurare Dynamic Media - Modalità ibrida](config-dynamic.md)
    + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
+   + [Accessibilità in Dynamic Media](accessibility-dm.md)
    + [Gestire le risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestire i predefiniti per visualizzatori Dynamic Media](managing-viewer-presets.md)
