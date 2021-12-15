@@ -1,9 +1,9 @@
 ---
 title: AEM Percorso di sviluppatori headless
 description: Documentazione AEM CMS headless. Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
@@ -65,12 +65,8 @@ Anche se puoi passare direttamente a una particolare parte del percorso, molti c
 | 5 | [Come accedere ai contenuti tramite API di consegna AEM](access-your-content.md) | Scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto. |
 | 6 | [Come aggiornare i contenuti tramite API di AEM Assets](update-your-content.md) | Scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto. |
 | 7 | [Come mettere tutto insieme - la tua app e il tuo contenuto in AEM Headless](put-it-all-together.md) | Scopri come prendere il progetto AEM e prepararlo per diventare live con l’SDK senza titolo AEM. |
-| 8 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
-
-<!-- HM-Links
-|8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
-|9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
--->
+| 8 | [Come vivere con la tua applicazione headless](go-live.md) | Scopri come distribuire l’applicazione in tempo reale e prendere il codice locale in Git e spostarlo nella pipeline CI/CD di Cloud Manager Git. |
+| 9 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
 
 ## Novità {#what-is-next}
 

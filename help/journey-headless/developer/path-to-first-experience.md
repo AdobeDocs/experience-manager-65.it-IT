@@ -1,7 +1,7 @@
 ---
 title: Percorso per la prima esperienza con AEM Headless
 description: In questa parte del Percorso di sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprendi le best practice per rendere il percorso il più semplice possibile.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 0%
@@ -150,12 +150,3 @@ Mentre è consigliabile passare alla parte successiva del percorso di sviluppo h
 * [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Documentazione tecnica sui modelli di frammenti di contenuto
 * [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Documentazione tecnica sull’API GraphQL
-
-<!-- HM-Links
-* [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
-* [Headless Getting Started Guide](/help/implementing/developing/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
-* [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation on the GraphQL API
-
--->
