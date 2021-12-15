@@ -1,14 +1,14 @@
 ---
 title: Formati di file e tipi MIME supportati
-description: Formati di file e tipi MIME supportati da [!DNL Assets] and [!DNL Dynamic Media] e le funzioni supportate per ciascun formato.
+description: Formati di file e tipi MIME supportati da [!DNL Assets] e [!DNL Dynamic Media] e le funzioni supportate per ciascun formato.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 12a8b26a402ce68ee8f61e1035b7f44531cd2825
+source-git-commit: eb7051582a51d983851c876025770668b258bff5
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1568'
 ht-degree: 10%
 
 ---
@@ -219,6 +219,8 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+
+† Questo formato video non è ancora supportato per l&#39;uso con video interattivi in Dynamic Media o per l&#39;uso con Annotation in Experience Manager Assets.
 
 ## Formati di archivio supportati {#supported-archive-formats}
 
