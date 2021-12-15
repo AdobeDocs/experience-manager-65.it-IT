@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 10%
+source-wordcount: '1741'
+ht-degree: 9%
 
 ---
 
@@ -47,28 +47,11 @@ Formati immagine raster supportati in [!DNL Assets] sono:
 
 † L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
 
-Formati immagine raster supportati in [!DNL Dynamic Media] sono:
-
-| Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering |
-|---|:---:|:---:|:---:|:---:|:---:|
-| PNG | . | . | . | . | . |
-| GIF | . | . | . | . | . |
-| TIFF | . | . | . | . | . |
-| JPEG | . | . | . | . | . |
-| BMP | . | - | - | - | - |
-| PSD | . | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . |
-| PICT | . | - | - | - | - |
-
-† L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
-
 Oltre alle informazioni di cui sopra, considera quanto segue:
 
 * Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configura ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, consulta [Gestore multimediale basato su riga di comando](media-handlers.md#command-line-based-media-handler).
 
 * Il write-back di metadati funziona per il formato di file PSB quando viene aggiunto al `NComm` handler.
-
-* Per utilizzare [!DNL Dynamic Media] per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Per i file EPS, il write-back di metadati è supportato nella versione 3.0 o successiva della convenzione di struttura dei documenti PostScript (PS-Adobe).
 
@@ -86,37 +69,6 @@ Vedi anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 | OBJ | . | . | . | . | . | - | . | . |
 | STL | . | . | . | . | . | - | . | . |
 | USDz | . | . | . | . | . | - | - | . |
-
-## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
-
-L&#39;elenco seguente descrive i sottotipi di formati di file immagine raster che sono *not* supportato in Dynamic Media.
-
-Vedi anche [Rilevare formati di file non supportati per Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
-
-* File PNG con una dimensione del blocco IDAT superiore a 100 MB.
-* File PSB.
-* I file PSD con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati. Gli spazi colore DuoTone, Lab e Indexed non sono supportati.
-* File PSD con una profondità di bit maggiore di 16.
-* File TIFF con dati a virgola mobile.
-* File TIFF con spazio colore Lab.
-
-<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
-## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
-
-The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
-
-| Format | What is unsupported? | Suggested detection method |
-|---|---|---|
-| JPEG  | Files where the initial three bytes is incorrect. | To identify a JPEG file, its initial three bytes must be `ff d8 ff`. If they are anything else, then it is not classified as a JPEG.<br>&bull; There is no software tool that can help with this issue.<br>&bull; A small C++/java program which reads the initial three bytes of a file should be able to detect these types of files.<br>&bull; It may be better to track the source of such files and look at the tool generating the file. |
-| PNG |  Files that have an IDAT chunk size greater than 100 MB. | You can detect this issue using [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
-| PSB |  | Use exiftool if the file type is PSB.<br>Example in an ExifTool log:<br>1. File type: `PSB` |
-| PSD | Files with a color space other than CMYK, RGB, Grayscale, or Bitmap are not supported.<br>DuoTone, Lab, and Indexed color spaces are not supported. | Use ExifTool if Color mode is Duotone.<br>Example in an ExifTool log:<br>1. Color mode: `Duotone` |
-|  | Files with abrupt endings. | Adobe is unable to detect this condition. Also, such files cannot be opened with Adobe PhotoShop. Adobe suggests you examine the tool that was used to create such a file and troubleshoot at the source. |
-|  | Files that have a bit depth greater than 16. | Use ExifTool if the bit depth is greater than 16.<br>Example in an ExifTool log:<br>1. Bit depth: `32` |
-|  | File that have Lab color space. | Use exiftool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
-| TIFF | Files that have floating point data. That is, a TIFF file with 32-bit depth is not supported. | Use ExifTool if the MIME type is `image/tiff` and the SampleFormat has `Float` in its value. Example in an ExifTool log:<br>1. MIME type: `image/tiff`<br>Sample format: `Float #`<br>2. MIME type: `image/tiff`<br>Sample format: `Float; Float; Float; Float` |
-|  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
--->
 
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
@@ -165,22 +117,6 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | QXP | . | . | - | - | - | - | - | - |
 | EPUB | . | . | - | . | . | - | - | - |
 
-## Formati di documenti supportati in Dynamic Media {#supported-document-formats-dynamic-media}
-
-| Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering |
-|---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | . | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . |
-
-Oltre alla funzionalità di cui sopra, considera quanto segue:
-
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file PDF, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
-
-* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
-
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file INDD, vedi [Formato di file InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
-
 ## Formati multimediali supportati {#supported-multimedia-formats}
 
 |  | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione di miniature | Transcodifica FFmpeg |
@@ -203,24 +139,6 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | MOV | . | . | - | * | * |
 | WMV | . | . | - | * | * |
 | SWF | . | . | - | - | - |
-
-## Formati video di ingresso supportati in Dynamic Media per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
-
-| Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
-|---|---|---|---|
-| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
-| MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
-
-† Questo formato video non è ancora supportato per l&#39;uso con video interattivi in Dynamic Media o per l&#39;uso con Annotation in Experience Manager Assets.
 
 ## Formati di archivio supportati {#supported-archive-formats}
 
@@ -313,6 +231,105 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | WMV | video/x-ms-wmv |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | XLS | application/vnd.ms-excel |  |  |
 | ZIP | application/zip |  |  |
+
+## Dynamic Media - Formati video di ingresso supportati per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
+
+| Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
+|---|---|---|---|
+| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
+| MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+
+† Questo formato video non è ancora supportato per l&#39;uso con video interattivi in Dynamic Media o per l&#39;uso con Annotation in Experience Manager Assets.
+
+## Dynamic Media - Formati di documenti supportati {#supported-document-formats-dynamic-media}
+
+| Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering |
+|---|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | . | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . |
+
+Oltre alla funzionalità di cui sopra, considera quanto segue:
+
+* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file PDF, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+
+* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+
+* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file INDD, vedi [Formato di file InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
+
+## Dynamic Media - Formati immagine raster supportati {#supported-raster-image-formats-dynamic-media}
+
+| Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering | Imposta i tipi che supportano questo formato |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| PNG | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| GIF | . | . | . | . | . | - |
+| TIFF | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| JPEG | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| BMP | . | - | - | - | - | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| PSD | . | - | - | - | - | - |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . | - |
+| PICT | . | - | - | - | - | - |
+
+† L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
+
+* Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configura ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, consulta [Gestore multimediale basato su riga di comando](media-handlers.md#command-line-based-media-handler).
+
+* Per utilizzare [!DNL Dynamic Media] per visualizzare in anteprima e generare rappresentazioni dinamiche per i file EPS, vedi [Formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+
+* Per i file EPS, il write-back di metadati è supportato nella versione 3.0 o successiva della convenzione di struttura dei documenti PostScript (PS-Adobe).
+
+## Dynamic Media - Formati immagine raster non supportati {#unsupported-image-formats-dynamic-media}
+
+L&#39;elenco seguente descrive i sottotipi di formati di file immagine raster che sono *not* supportato in Dynamic Media.
+
+Vedi anche [Rilevare formati di file non supportati per Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) Articolo della Knowledge Base.
+
+* File PNG con una dimensione del blocco IDAT superiore a 100 MB.
+* File PSB.
+* I file PSD con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati. Gli spazi colore DuoTone, Lab e Indexed non sono supportati.
+* File PSD con una profondità di bit maggiore di 16.
+* File TIFF con dati a virgola mobile.
+* File TIFF con spazio colore Lab.
+
+<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
+## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
+
+The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
+
+| Format | What is unsupported? | Suggested detection method |
+|---|---|---|
+| JPEG  | Files where the initial three bytes is incorrect. | To identify a JPEG file, its initial three bytes must be `ff d8 ff`. If they are anything else, then it is not classified as a JPEG.<br>&bull; There is no software tool that can help with this issue.<br>&bull; A small C++/java program which reads the initial three bytes of a file should be able to detect these types of files.<br>&bull; It may be better to track the source of such files and look at the tool generating the file. |
+| PNG |  Files that have an IDAT chunk size greater than 100 MB. | You can detect this issue using [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
+| PSB |  | Use exiftool if the file type is PSB.<br>Example in an ExifTool log:<br>1. File type: `PSB` |
+| PSD | Files with a color space other than CMYK, RGB, Grayscale, or Bitmap are not supported.<br>DuoTone, Lab, and Indexed color spaces are not supported. | Use ExifTool if Color mode is Duotone.<br>Example in an ExifTool log:<br>1. Color mode: `Duotone` |
+|  | Files with abrupt endings. | Adobe is unable to detect this condition. Also, such files cannot be opened with Adobe PhotoShop. Adobe suggests you examine the tool that was used to create such a file and troubleshoot at the source. |
+|  | Files that have a bit depth greater than 16. | Use ExifTool if the bit depth is greater than 16.<br>Example in an ExifTool log:<br>1. Bit depth: `32` |
+|  | File that have Lab color space. | Use exiftool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+| TIFF | Files that have floating point data. That is, a TIFF file with 32-bit depth is not supported. | Use ExifTool if the MIME type is `image/tiff` and the SampleFormat has `Float` in its value. Example in an ExifTool log:<br>1. MIME type: `image/tiff`<br>Sample format: `Float #`<br>2. MIME type: `image/tiff`<br>Sample format: `Float; Float; Float; Float` |
+|  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+-->
+
+## Dynamic Media - Formati 3D supportati {#supported-three-d-file-formats-in-dm}
+
+Dynamic Media supporta i seguenti formati 3D.
+
+Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/assets-3d.md).
+
+| Estensione file 3D | Formato file | Tipo MIME | Note |
+|---|---|---|---|
+| GLB | Trasmissione GL binaria | model/gltf binario | Include i materiali e le texture come un’unica risorsa. |
+| OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
+| STL | Stereolitografia | application/vnd.ms-pki.stl |  |
+| USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | *Sostegno solo all&#39;acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modo nativo dai dispositivi Safari e iOS. |
 
 >[!MORELIKETHIS]
 >
