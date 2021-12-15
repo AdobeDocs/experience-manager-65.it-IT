@@ -2,9 +2,9 @@
 title: Guida introduttiva a Headless
 description: Con questa guida rapida, scopri le nozioni di base delle potenti funzionalità headless di AEM 6.5 come Modelli di contenuto, Frammenti di contenuto e API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,8 @@ Le guide introduttive headless forniscono un percorso semplice per creare, gesti
 >[!TIP]
 >
 >Questa guida introduttiva presuppone la conoscenza delle tecnologie AEM e headless.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>Se sei nuovo a AEM o senza testa, si prega di fare riferimento alla nostra [Percorsi di documentazione headless](/help/journey-headless/home.md) per un’introduzione end-to-end a headless e a come lo AEM.
 
 ## Pubblico {#audience}
 
