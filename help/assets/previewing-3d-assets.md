@@ -1,14 +1,14 @@
 ---
 title: Anteprima delle risorse 3D
-description: Scopri come visualizzare in anteprima le risorse 3D
+description: Scopri come visualizzare in anteprima le risorse 3D in Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
-feature: Risorse 3D
+feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 10%
 
 ---
@@ -28,7 +28,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
 | GLB | Trasmissione GL binaria | model/gltf binario |  |
-| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
+| GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** sotto. |
 | OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;acquisizione; anteprima non disponibile. |
@@ -36,14 +36,14 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 
 >[!NOTE]
 >
->Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertarsi che il nome sia corretto e che si trovi in una cartella `textures` nella stessa cartella principale del modello, in modo simile al seguente:
+>Se i materiali non vengono visualizzati in anteprima di un modello gLTF, accertati che siano denominati correttamente e in un `textures` nella stessa cartella principale del modello, simile alla seguente:
 
     Risorsa (cartella)
-    model.
-    gltfmodel.
-    bintextures (cartella)
-    material_0_baseColor.
-    jpegmaterial_0_Normal.jpeg
+    model.gltf
+    model.bin
+    texture (cartella)
+    material_0_baseColor.jpeg
+    material_0_normale.jpeg
 
 ## Considerazioni sulle prestazioni quando si visualizzano in anteprima le risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
@@ -54,12 +54,12 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D, ad Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
-Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Carica risorse](/help/assets/manage-assets.md#uploading-assets).
-1. Ad Experience Manager, nella pagina **[!UICONTROL Navigazione]**, seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+Vedi [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-assets) e [Caricare risorse](/help/assets/manage-assets.md#uploading-assets).
+1. Dall’Experience Manager, sul **[!UICONTROL Navigazione]** pagina, seleziona **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
-1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Vista a schede]**, quindi passa alla risorsa 3D da visualizzare in anteprima.
 
    ![Selezione scheda 3D](/help/assets/assets-dm/3d-card-select.png)
    _In Vista a schede, selezionate la scheda della risorsa 3D da visualizzare in anteprima._
@@ -79,4 +79,4 @@ Consulta [Formati supportati per l&#39;anteprima 3D](#supported-3d-previewing-as
    | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
    | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.
+1. Al termine, seleziona **[!UICONTROL Chiudi]**.
