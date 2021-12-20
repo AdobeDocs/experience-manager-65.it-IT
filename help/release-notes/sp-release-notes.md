@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3674'
-ht-degree: 4%
+source-wordcount: '3822'
+ht-degree: 3%
 
 ---
 
@@ -372,6 +372,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Dopo aver installato AEM 6.5 Forms Service Pack 9, gli URL dell&#39;archivio CRX non sono più disponibili (NPR-37592).
 
+**Problemi risolti in AEM Forms 6.5.11.1**
+
+>[!NOTE]
+>
+>Se non hai effettuato l’aggiornamento a Forms 6.5.11.0, installa direttamente il pacchetto aggiuntivo AEM Forms 6.5.11.1. Se hai installato AEM 6.5.11.0 Forms, Adobe consiglia di eseguire l’aggiornamento a AEM 6.5.11.1 Forms.
+
+* Dopo l’installazione del pacchetto aggiuntivo Forms 6.5.11.0, invia e-mail e richiami un flusso di lavoro AEM smette di funzionare.
+* L’operazione CreatePDF interrompe la conversione di documenti Microsoft Word in documenti PDF dopo l’installazione del pacchetto aggiuntivo Forms 6.5.11.0.
+* (Solo JEE) Rilevate vulnerabilità di sicurezza critiche (CVE-2021-44228 e CVE-2021-45046) per Apache Log4j2.
+* (Solo JEE) L&#39;Assembler DSC nella patch 6.5.11.0 contiene una versione metainfo non corretta come la specifica e la versione impl.
+
 
 Per informazioni sugli aggiornamenti di sicurezza, consulta [[!DNL Experience Manager] pagina dei bollettini sulla sicurezza](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -512,6 +523,16 @@ Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fa
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner acquistabili.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
+
+* Quando si tenta di spostare/eliminare/pubblicare frammenti di contenuto o siti/pagine, si verifica un problema quando i riferimenti ai frammenti di contenuto vengono recuperati, in quanto la query in background non riesce; Ad esempio, la funzionalità non funzionerà.
+Per garantire il corretto funzionamento, è necessario aggiungere le seguenti proprietà al nodo di definizione dell&#39;indice `/oak:index/damAssetLucene` (non è richiesta alcuna reindicizzazione) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
 ## Bundle OSGi e pacchetti di contenuti inclusi {#osgi-bundles-and-content-packages-included}
 
