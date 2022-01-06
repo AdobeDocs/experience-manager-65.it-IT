@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
+source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1879'
 ht-degree: 2%
 
 ---
@@ -403,8 +403,10 @@ Tough Day 2 crea una cartella di log nella stessa directory in cui è stato eseg
 
 I registri non vengono sovrascritti, le esecuzioni successive aggiungono messaggi ai registri esistenti. I registri hanno diversi livelli. Per ulteriori informazioni, consulta la sezione ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Utilizzo di esempio {#example-usage}
+<!--
+#### Example Usage {#example-usage}
 
-#### Problemi noti {#known-issues}
+#### Known Issues {#known-issues}
 
-[Ottieni file](assets/toughday-6_1.jar)
+[Get File](assets/toughday-6_1.jar)
+-->
