@@ -1,10 +1,7 @@
 ---
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Scopri come utilizzare i riferimenti in Frammenti di contenuto, per contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 9661061a98c31fbb74bd0716dbedc7abef298f44
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 2%

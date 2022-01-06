@@ -1,10 +1,7 @@
 ---
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
