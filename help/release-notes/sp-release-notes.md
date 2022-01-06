@@ -4,9 +4,9 @@ description: Note sulla versione specifiche per [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,8 @@ Funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Manager] 6.
 * I miglioramenti dell’esperienza utente visualizzano il numero di risorse presenti in una cartella. Per più di 1000 risorse in una cartella, [!DNL Assets] visualizza oltre 1000.
 
 * Ora puoi eseguire il rendering dell’opzione di ordinamento nelle viste a schede e a colonne.
+
+* I profili aziendali supportano ad Adobe Asset Link.
 
 * Ora puoi utilizzare [!DNL Dynamic Media] per configurare le Impostazioni generali anziché dover passare attraverso [!DNL Dynamic Media Classic] applicazione desktop. Vedi [Configurare le impostazioni generali di Dynamic Media](/help/assets/dm-general-settings.md).
 
