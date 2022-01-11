@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 7630a6c4d908144e384b705bfce72779803aea93
+source-git-commit: 0a28a2cf1184ebdbbc907a661f2d0a2c18775822
 workflow-type: tm+mt
-source-wordcount: '3340'
+source-wordcount: '3486'
 ht-degree: 1%
 
 ---
@@ -136,6 +136,17 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
  </tbody>
 </table>
 
+| **Platform** | **Livello di supporto** | **Collegamenti** |
+|---|---|---|
+| Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
+| Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Oracle Java SE 11 JDK - 64 bit | R: Supportato `[2]` |
+| Oracle Java SE 10 JDK | Z: Non supportato `[2]` |
+| Oracle Java SE 9 JDK | Z: Non supportato `[2]` |
+| Oracle Java SE 8 JDK - 64 bit | R: Supportato `[2]` |
+| IBM J9 VM - build 2.9, JRE 1.8.0 | R: Supportato `[3]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | R: Supportato `[3]` |
+
 1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. Consulta la sezione [Supporto di Azul Java per le domande e risposte di Adobe Experience Manager](assets/adobe-azul-openjdk-license-agreement.pdf) per ulteriori informazioni.
 
 1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando l&#39;Oracle tecnologia Java SE **fino a dicembre 2022**. Consulta la sezione [Oracle di supporto Java per le domande e risposte di Adobe Experience Manager](assets/adobe-oracle-java-license-agreement.pdf) per ulteriori informazioni.
@@ -147,7 +158,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 
 Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manager. Consulta il seguente elenco per le tecnologie supportate e le opzioni di storage.
 
-| **Platform** | **Descrizione** | **Livello di supporto** |
+| **Piattaforma** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
 | **File system con file TAR** `[1]` | Archivio | R: Supportato |
 | **File system con Datastore** `[1]` | Binari | R: Supportato |
