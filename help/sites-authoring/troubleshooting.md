@@ -1,22 +1,21 @@
 ---
 title: Risoluzione di problemi AEM nell’ambiente di authoring
-seo-title: Risoluzione di problemi AEM nell’ambiente di authoring
+seo-title: Troubleshooting AEM when Authoring
 description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
-seo-description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
+seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
-
 
 # Risoluzione di problemi AEM nell’ambiente di authoring {#troubleshooting-aem-when-authoring}
 
@@ -24,7 +23,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Quando si verificano problemi, è anche utile controllare l’elenco dei [Problemi noti](/help/release-notes/known-issues.md) per l’istanza (release e service pack).
+>Quando si verificano problemi, è anche utile controllare l’elenco dei [Problemi noti](/help/release-notes/release-notes.md) per l’istanza (release e service pack).
 
 >[!NOTE]
 >
@@ -65,4 +64,3 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Soluzione**:
 
    * Aggiorna la pagina.
-

@@ -2,11 +2,10 @@
 title: Note sulla versione di Adobe Experience Manager 6.5
 description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 41%
+source-wordcount: '391'
+ht-degree: 42%
 
 ---
 
@@ -14,10 +13,12 @@ ht-degree: 41%
 
 Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 
+* [Note sulla versione corrente](/help/release-notes/release-notes.md)
+
 ## Articoli principali AEM
 
-* [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
-* [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
+* [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.5
@@ -45,12 +46,12 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
 ## Copyright, licenze e disclaimer {#copyright-licenses-and-disclaimers}
 
-Per ulteriori informazioni, consulta [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Per ulteriori informazioni consulta [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Avviso di titoli di terzi: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

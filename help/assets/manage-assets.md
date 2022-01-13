@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 4%
@@ -338,7 +338,7 @@ Alcune limitazioni della funzione sono:
 * Se nella destinazione esiste una cartella con lo stesso nome, le risorse del file ZIP vengono estratte nella cartella esistente.
 * Se annulli l’estrazione, le risorse già estratte non vengono eliminate.
 * Non è possibile selezionare due file ZIP contemporaneamente ed estrarli. Puoi estrarre un solo archivio ZIP alla volta.
-* Quando si carica un archivio ZIP, se nella finestra di dialogo di caricamento viene visualizzato un errore del server 500, riprovare dopo l&#39;installazione [l&#39;ultimo Service Pack](/help/release-notes/sp-release-notes.md).
+* Quando si carica un archivio ZIP, se nella finestra di dialogo di caricamento viene visualizzato un errore del server 500, riprovare dopo l&#39;installazione [l&#39;ultimo Service Pack](/help/release-notes/release-notes.md).
 
 ## Anteprima delle risorse {#previewing-assets}
 

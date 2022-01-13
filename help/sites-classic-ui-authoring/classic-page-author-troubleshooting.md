@@ -1,30 +1,29 @@
 ---
 title: Risoluzione di problemi AEM nell’ambiente di authoring
-seo-title: Risoluzione di problemi AEM nell’ambiente di authoring
+seo-title: Troubleshooting AEM when Authoring
 description: Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
-seo-description: Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '430'
 ht-degree: 95%
 
 ---
 
-
-# Risoluzione di problemi AEM nell’ambiente di authoring {#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM nell’ambiente di authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
 >[!NOTE]
 >
->Quando si verificano problemi, è anche utile controllare l’elenco dei [Problemi noti](/help/release-notes/known-issues.md) per l’istanza (release e service pack).
+>Quando si verificano problemi, è anche utile controllare l’elenco dei [Problemi noti](/help/release-notes/release-notes.md) per l’istanza (release e service pack).
 
 >[!NOTE]
 >
@@ -71,7 +70,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Problema:**
 
-   * Quando si utilizza l&#39;opzione **Trova e sostituisci** è possibile che non tutte le istanze del termine `find` vengano sostituite in una pagina.
+   * Quando utilizzi **Trova e sostituisci** può accadere che non tutte le istanze del `find` i termini vengono sostituiti in una pagina.
 
 * **Motivo**:
 
@@ -87,4 +86,3 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
    * Le definizioni possono essere modificate con la configurazione per **Day CQ WCM Find Replace Servlet** tramite la **console Web**; ad esempio in
 
       `http://localhost:4502/system/console/configMgr`
-

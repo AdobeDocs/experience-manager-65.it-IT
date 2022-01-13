@@ -1,62 +1,61 @@
 ---
-title: Sviluppo di community
-seo-title: Sviluppo di community
-description: Creazione e personalizzazione di funzioni per community quali forum, gruppi di utenti e altro
-seo-description: Creazione e personalizzazione di funzioni per community quali forum, gruppi di utenti e altro
+title: Sviluppo di Communities
+seo-title: Developing Communities
+description: Creare e personalizzare funzioni della community quali forum, gruppi di utenti e altro ancora
+seo-description: Create and customize community features such as forums, user groups, and more
 uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '392'
 ht-degree: 6%
 
 ---
 
-
-# Sviluppo di community {#developing-communities}
+# Sviluppo di Communities  {#developing-communities}
 
 ## Panoramica {#overview}
 
- AEM Communities semplifica la creazione e la personalizzazione di funzionalità della community quali forum, gruppi di utenti, blog, D e R, calendari, commenti, revisioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di inserire nell’ambiente di pubblicazione il contenuto generato dall’utente (UGC).
+AEM Communities semplifica la creazione e la personalizzazione di funzioni della community quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, votazioni, valutazioni e assegnazioni. Queste funzioni consentono di immettere contenuti generati dagli utenti (UGC) nell’ambiente di pubblicazione.
 
-La base di un [sito community](overview.md#communitiessites) è il [social component framework](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello di sito community](sites-console.md) composto da [funzioni community](functions.md).
+La base di un [sito della community](overview.md#communitiessites) è [quadro della componente sociale](scf.md) (SCF) La creazione di un sito comunitario inizia con la selezione di un [modello di sito community](sites-console.md) composto da [funzioni della community](functions.md).
 
-Per una panoramica ed esercitazioni introduttive, visitate:
+Per una panoramica e le esercitazioni introduttive, visita:
 
-* [ Panoramica di AEM Communities](overview.md)
+* [Panoramica di AEM Communities](overview.md)
 * [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
+* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
 
 >[!NOTE]
 > 
->Si consiglia vivamente di essere aggiornati sulle [ultime versioni](deploy-communities.md#latest-releases).
+>Si consiglia vivamente di tenere aggiornato con il [ultime versioni](deploy-communities.md#latest-releases).
 
 ## Implementazioni consigliate {#recommended-deployments}
 
-* [Archiviazione](working-with-srp.md) contenuto community: illustra le opzioni SRP disponibili per uno store comune UGC
-* [Topologie consigliate per community](topologies.md): illustra le topologie in base al caso di utilizzo e alla scelta SRP
+* [Archiviazione dei contenuti della community](working-with-srp.md): discute le scelte SRP disponibili per un archivio comune UGC
+* [Topologie consigliate per community](topologies.md): discute le topologie in base al caso d’uso e alla scelta dell’SRP
 
-## Framework componente sociale {#social-component-framework}
+## Quadro dei componenti sociali {#social-component-framework}
 
-* [Quadro](scf.md) dei componenti sociali: panoramica del framework e delle API.
-* [Helper](handlebars-helpers.md) manubrio SCF: helper predefiniti e come scrivere gli helper personalizzati.
-* [Personalizzazione](client-customize.md) lato client: personalizzazione del codice in esecuzione nel browser.
-* [Personalizzazione](server-customize.md) lato server: personalizzazione del codice in esecuzione sul server.
+* [Quadro dei componenti sociali](scf.md): panoramica di framework e API.
+* [Helper manubrio SCF](handlebars-helpers.md): helper predefiniti e modalità di scrittura degli helper personalizzati.
+* [Personalizzazione lato client](client-customize.md): personalizzazione del codice in esecuzione nel browser.
+* [Personalizzazione lato server](server-customize.md): personalizzazione del codice in esecuzione sul server.
 * [Provider di risorse di storage (SRP)](srp.md): panoramica dello storage dei contenuti della community.
-* [Linee guida](code-guide.md) sulla codifica: linee guida, suggerimenti e trucchi.
-* [Guida](components-guide.md) ai componenti community: strumento di sviluppo interattivo.
+* [Linee guida sulla codifica](code-guide.md): linee guida, suggerimenti e trucchi.
+* [Guida ai componenti della community](components-guide.md): strumento di sviluppo interattivo.
 
-## Componenti, funzioni e funzioni essenziali {#component-function-and-feature-essentials}
+## Componenti, funzioni e funzioni di base {#component-function-and-feature-essentials}
 
- componenti, funzioni e funzionalità di AEM Communities costituiscono gli elementi di base per [siti della community](sites-console.md).
+I componenti, le funzioni e le funzioni di AEM Communities costituiscono gli elementi di base per [siti della community](sites-console.md).
 
 * [Componenti, funzioni e funzioni di base](essentials.md)
-* [Clientlibs per componenti Community](clientlibs.md)
+* [Componenti Clientlibs for Communities](clientlibs.md)
 * [Funzioni per community](functions.md)
 * [Modelli per gruppi community](tools-groups.md)
 * [Modelli per sito community](sites.md)
@@ -64,13 +63,13 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 ## Membri community {#community-members}
 
 * [Gestione di utenti e gruppi di utenti](users.md)
-* [Login tramite social network con Facebook e Twitter](social-login.md)
+* [Accesso social con Facebook e Twitter](social-login.md)
 
 ## Gruppi community {#community-groups}
 
-[I ](overview.md#communitygroups) raggruppamenti comunitari prevedono la possibilità di consentire ai membri della comunità di formare delle sub-comunità all&#39;interno del sito comunitario. La creazione di un gruppo di community può avvenire nell’ambiente di pubblicazione o di authoring.
+[Gruppi comunitari](overview.md#communitygroups) è il concetto di consentire ai membri della comunità di formare sottocomunità all&#39;interno del sito della community. La creazione di un gruppo di community può avvenire nell’ambiente di pubblicazione o di authoring.
 
-* [Community Group Essentials](essentials-groups.md)
+* [Nozioni di base sui gruppi community](essentials-groups.md)
 * [Funzione Groups](functions.md#groups-function)
 * [Modelli per gruppi community](tools-groups.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
@@ -78,25 +77,24 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 
 ## Gestione dei dati {#managing-data}
 
-* [Funzioni di base SRP e UGC](srp-and-ugc.md)  - Metodi e esempi di utilità API SRP
-* [Tag Essentials](tag.md) : possibilità per i membri della community di assegnare tag UGC e/o risorse di abilitazione catalogate
+* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità dell’API SRP
+* [Nozioni di base sui tag](tag.md) - possibilità per i membri della community di assegnare tag UGC e/o risorse di abilitazione catalogate
 
 ## Esercitazioni {#tutorials}
 
-* [Esercitazioni lato client](tutorials.md#client-side-customization)
-* [Esercitazioni lato server](tutorials.md#server-side-customization)
-* [Istruzioni pratiche](tutorials.md#how-to-instructions)
+* [Tutorial lato client](tutorials.md#client-side-customization)
+* [Tutorial lato server](tutorials.md#server-side-customization)
+* [Istruzioni dettagliate](tutorials.md#how-to-instructions)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
 * [Risoluzione dei problemi](troubleshooting.md)
-* [Problemi noti](/help/release-notes/known-issues.md)
+* [Problemi noti](/help/release-notes/release-notes.md)
 
-## Documentazione sulle community correlate {#related-communities-documentation}
+## Documentazione di Communities correlata {#related-communities-documentation}
 
-* Per informazioni sulle distribuzioni consigliate e sulla configurazione del dispatcher, visitare [Implementazione di Communities](deploy-communities.md).
+* Visita [Distribuzione di Communities](deploy-communities.md) per informazioni sulle distribuzioni consigliate e sulla configurazione del dispatcher.
 
-* Per informazioni su come creare un sito community, configurare modelli di sito community, moderare i contenuti della community, gestire i membri e configurare i messaggi, visitate [Amministrazione siti community](administer-landing.md).
+* Visita [Amministrazione di siti di Communities](administer-landing.md) per informazioni sulla creazione di un sito community, sulla configurazione di modelli di sito community, sulla moderazione dei contenuti della community, sulla gestione dei membri e sulla configurazione dei messaggi.
 
-* Per informazioni su come creare e configurare i componenti di Communities, visita [Componenti di authoring](author-communities.md).
-
+* Visita [Authoring dei componenti di Communities](author-communities.md) per scoprire come creare e configurare i componenti di Communities.
