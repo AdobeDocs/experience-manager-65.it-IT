@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
+source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2498'
 ht-degree: 4%
 
 ---
-
 
 # Configurare le impostazioni generali di Dynamic Media
 
@@ -70,9 +70,13 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 
    Adobe Dynamic Media non consente a due file di avere lo stesso nome. L’ID Dynamic Media Adobe di ogni elemento (il nome dell’immagine meno l’estensione del nome del file) deve essere univoco. A causa di questa regola, **[!UICONTROL Carica nell’applicazione]** ha una sovrascrittura. L’effetto esatto di questa opzione dipende dall’opzione Sovrascrivi immagini selezionata. Queste opzioni specificano come vengono caricate le immagini sostitutive: se sostituiscono le immagini originali o diventano immagini duplicate. Le immagini duplicate vengono rinominate con un `-1`. Ad esempio: `chair.tif` viene rinominato `chair-1.tif`. Queste opzioni interessano le immagini caricate in una cartella diversa dall’originale o le immagini con un’estensione di nome file diversa dall’originale, ad esempio JPG, TIF o PNG.
 
+   >[!NOTE]
+   >
+   >Per mantenere la coerenza con l’Experience Manager, seleziona l’opzione Sovrascrivi immagini **[!UICONTROL Sovrascrivi nella cartella corrente, stesso nome/estensione di base]**.
+
    | Opzione Sovrascrivi immagini | Descrizione |
    | --- | --- |
-   | **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione come risorsa base]** | Predefinito solo per i nuovi account Dynamic Media.<br>Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato. |
+   | **[!UICONTROL Sovrascrivi in cartella corrente, nome/estensione come risorsa base]** | *Predefinito* solo per i nuovi account Dynamic Media.<br>Questa opzione è la regola più rigida per la sostituzione. Richiede di caricare l&#39;immagine di sostituzione nella stessa cartella dell&#39;originale e che l&#39;immagine di sostituzione abbia la stessa estensione del nome file dell&#39;originale. Se tali requisiti non sono soddisfatti, viene creato un duplicato.<br>*Per mantenere la coerenza con l’Experience Manager, seleziona questa opzione*. |
    | **[!UICONTROL Sovrascrivi in cartella corrente, nome come risorsa base, ignora estensione]** | Richiede di caricare l&#39;immagine sostitutiva nella stessa cartella dell&#39;originale, tuttavia l&#39;estensione del nome file può essere diversa dall&#39;originale. Ad esempio, sedia.tif sostituisce sedia.jpg. |
    | **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione come risorsa base]** | Richiede che l&#39;immagine sostitutiva abbia la stessa estensione del nome del file dell&#39;immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, puoi caricare l’immagine di sostituzione in una cartella diversa dall’originale. L&#39;immagine aggiornata si trova nella nuova cartella; non è più possibile trovare il file nella posizione originale. |
    | **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione]** | Questa opzione è la regola di sostituzione più inclusiva. Puoi caricare un’immagine sostitutiva in una cartella diversa dall’originale, caricare un file con un’estensione diversa del nome del file e sostituire il file originale. Se il file originale si trova in una cartella diversa, l&#39;immagine sostitutiva si trova nella nuova cartella in cui è stata caricata. |
