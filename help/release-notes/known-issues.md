@@ -2,10 +2,10 @@
 title: Problemi noti
 description: Note specifiche per i problemi noti di Adobe Experience Manager 6.5
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 43%
+source-wordcount: '661'
+ht-degree: 42%
 
 ---
 
@@ -45,6 +45,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ```
 
 1. Salva il file e riavvia l&#39;istanza AEM.
+
+## Sites {#sites}
+
+* **Utilizzo delle versioni di una pagina**: Se una pagina è stata spostata, non è più possibile eseguire un’anteprima sulle versioni eseguite prima dello spostamento.
 
 ## Assets {#assets}
 
