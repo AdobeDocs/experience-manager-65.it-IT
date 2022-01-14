@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c1eb9fb56cf9024ff58adec644a40e3def52e62a
+source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
 workflow-type: tm+mt
-source-wordcount: '11747'
+source-wordcount: '11766'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
       * Ulteriori informazioni [Organizzare le risorse digitali](/help/assets/organize-assets.md).
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
-      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti.
+      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
       * Puoi caricare file video fino a 15 GB ciascuno.
       * [Caricare i video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Ulteriori informazioni [Formati di file di input supportati](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -300,7 +300,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Quando codifichi un file video, utilizza un file video sorgente della massima qualità possibile. Evita di utilizzare file video codificati in precedenza perché sono già compressi e un’ulteriore codifica crea un video di qualità scadente.
 
-* Dynamic Media supporta video in formato breve con una lunghezza massima di 30 minuti.
+* Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 50 x 50.
 * È possibile caricare file video di origine primaria fino a 15 GB ciascuno.
 
 La tabella seguente descrive le dimensioni, le proporzioni e il bit rate minimo consigliati che i file video sorgente devono avere prima di codificarli:
