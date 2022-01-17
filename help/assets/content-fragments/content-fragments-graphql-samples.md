@@ -2,9 +2,10 @@
 title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
+source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 6%
 
 ---
@@ -28,7 +29,7 @@ Per assistenza, consulta:
 
 * A [struttura dei frammenti di contenuto di esempio](#content-fragment-structure-graphql)
 
-* E alcune [query GraphQL di esempio](#graphql-sample-queries), basate sulla struttura del frammento di contenuto di esempio (Modelli di frammenti di contenuto e frammenti di contenuto correlati).
+* E alcuni [query GraphQL di esempio](#graphql-sample-queries), in base alla struttura del frammento di contenuto di esempio (Modelli di frammento di contenuto e frammenti di contenuto correlati).
 
 
 ## GraphQL - Query di esempio utilizzando la struttura dei frammenti di contenuto di esempio {#graphql-sample-queries-sample-content-fragment-structure}
@@ -37,17 +38,17 @@ Vedi queste query di esempio per le illustrazioni di creazione query, insieme ai
 
 >[!NOTE]
 >
->A seconda dell’istanza, è possibile accedere direttamente all’ interfaccia [Graph *i* QL inclusa AEM API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) per l’invio e il test delle query.
+>A seconda dell’istanza, è possibile accedere direttamente al [Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) per l’invio e la verifica delle query.
 >
 >Esempio: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->Le query di esempio si basano sulla [struttura dei frammenti di contenuto di esempio da utilizzare con GraphQL](#content-fragment-structure-graphql)
+>Le query di esempio si basano sul [Struttura dei frammenti di contenuto di esempio da utilizzare con GraphQL](#content-fragment-structure-graphql)
 
 ### Query di esempio - Tutti gli schemi e i tipi di dati disponibili {#sample-all-schemes-datatypes}
 
-Questo restituirà tutti i valori `types` per tutti gli schemi disponibili.
+Verrà restituito tutto `types` per tutti gli schemi disponibili.
 
 **Query di esempio**
 
@@ -223,7 +224,7 @@ Una volta eseguita, il sistema espanderà automaticamente la query per includere
 
 ### Query di esempio - Nomi di tutte le città {#sample-names-all-cities}
 
-Si tratta di una query semplice per restituire `name`tutte le voci nello schema `city`schema.
+Questa è una query semplice per restituire il `name`di tutte le voci `city`schema.
 
 **Query di esempio**
 
@@ -314,7 +315,7 @@ Si tratta di una query per restituire i dettagli di una singola voce di framment
 
 ### Query di esempio - Tutte le città con una variante denominata {#sample-cities-named-variation}
 
-Se crei una nuova variante, denominata &quot;Centro Berlino&quot; (`berlin_centre`), per la `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
+Se crei una nuova variante, denominata &quot;Centro Berlino&quot; (`berlin_centre`), per `city` A Berlino è quindi possibile utilizzare una query per restituire i dettagli della variante.
 
 **Query di esempio**
 
@@ -355,7 +356,7 @@ Se crei una nuova variante, denominata &quot;Centro Berlino&quot; (`berlin_centr
 }
 ```
 
-### Query di esempio - Dettagli completi sull&#39;amministratore delegato e sui dipendenti di un&#39;azienda {#sample-full-details-company-ceos-employees}
+### Query di esempio - Dettagli completi dell&#39;amministratore delegato e dei dipendenti di un&#39;azienda {#sample-full-details-company-ceos-employees}
 
 Utilizzando la struttura dei frammenti nidificati, questa query restituisce tutti i dettagli dell&#39;amministratore delegato di una società e di tutti i relativi dipendenti.
 
@@ -485,7 +486,7 @@ query {
 
 ### Query di esempio - Tutte le persone con un nome &quot;Jobs&quot; o &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Questo filtrerà tutti i valori `persons` per quelli con il nome `Jobs`o `Smith`.
+Questo filtra tutto `persons` per tutti quelli che hanno il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
@@ -539,7 +540,7 @@ query {
 
 ### Query di esempio - Tutte le persone che non hanno un nome &quot;Jobs&quot; {#sample-all-persons-not-jobs}
 
-Questo filtrerà tutti i valori `persons` per quelli con il nome `Jobs`o `Smith`.
+Questo filtra tutto `persons` per tutti quelli che hanno il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
@@ -604,9 +605,9 @@ query {
 }
 ```
 
-### Query di esempio - Tutte le avventure la cui `_path` inizia con un prefisso specifico {#sample-wknd-all-adventures-cycling-path-filter}
+### Query di esempio - Tutte le avventure di cui `_path` sta iniziando con un prefisso specifico {#sample-wknd-all-adventures-cycling-path-filter}
 
-Tutto `adventures` in cui `_path` inizia con un prefisso specifico (`/content/dam/wknd/en/adventures/cycling`).
+Tutto `adventures` dove `_path` inizia con un prefisso specifico (`/content/dam/wknd/en/adventures/cycling`).
 
 **Query di esempio**
 
@@ -651,7 +652,7 @@ query {
 
 ### Query di esempio - Tutte le città situate in Germania o Svizzera con una popolazione compresa tra 400000 e 999999 {#sample-all-cities-d-ch-population}
 
-In questo caso viene filtrata una combinazione di campi. Per selezionare l&#39;intervallo `population`viene utilizzato un `AND` (implicito), mentre viene utilizzato un `OR` (esplicito) per selezionare le città richieste.
+In questo caso viene filtrata una combinazione di campi. Un `AND` (implicito) viene utilizzato per selezionare il `population`intervallo, mentre `OR` (esplicito) viene utilizzato per selezionare le città richieste.
 
 **Query di esempio**
 
@@ -765,7 +766,7 @@ query {
 
 ### Query di esempio - Filtro su una matrice con un elemento che deve verificarsi almeno una volta {#sample-array-item-occur-at-least-once}
 
-Questa query filtra una matrice con un elemento (`city:na`) che deve verificarsi almeno una volta.
+Questa query filtra un array con un elemento (`city:na`) che deve verificarsi almeno una volta.
 
 **Query di esempio**
 
@@ -875,7 +876,7 @@ query {
 
 ### Query di esempio per frammenti di contenuto nidificato - Tutte le società con almeno un dipendente con un nome &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Questa query illustra il filtro per qualsiasi `person` di `name` &quot;Smith&quot;, restituendo informazioni da due frammenti nidificati: `company` e `employee`.
+Questa query illustra il filtro per qualsiasi `person` di `name` &quot;Smith&quot;, che restituisce informazioni da due frammenti nidificati - `company` e `employee`.
 
 **Query di esempio**
 
@@ -941,7 +942,7 @@ query {
 
 ### Query di esempio per frammenti di contenuto nidificato - Tutte le aziende in cui tutti i dipendenti hanno vinto il premio &quot;Gamestar&quot; {#sample-all-companies-employee-gamestar-award}
 
-Questa query illustra il filtraggio su tre frammenti nidificati: `company`, `employee` e `award`.
+Questa query illustra il filtraggio su tre frammenti nidificati - `company`, `employee`e `award`.
 
 **Query di esempio**
 
@@ -1033,7 +1034,7 @@ query {
 
 ### Esempio di query per metadati - Elenco dei metadati per i riconoscimenti denominati GB {#sample-metadata-awards-gb}
 
-Questa query illustra il filtraggio su tre frammenti nidificati: `company`, `employee` e `award`.
+Questa query illustra il filtraggio su tre frammenti nidificati - `company`, `employee`e `award`.
 
 **Query di esempio**
 
@@ -1110,7 +1111,7 @@ Queste query di esempio si basano sul progetto WKND. Ciò comporta:
 Questa query di esempio interroga:
 
 * per tutti i frammenti di contenuto di tipo `article`
-* con le proprietà `path`e `author` .
+* con `path`e `author` proprietà.
 
 **Query di esempio**
 
@@ -1273,11 +1274,11 @@ Questa query interroga:
 Questa query interroga:
 
 * per più frammenti di contenuto di tipo `bookmark`
-   * con i riferimenti ai frammenti ad altri frammenti dei tipi di modelli specifici `article` e `adventure`
+   * con i riferimenti ai frammenti ad altri frammenti di tipi di modelli specifici `article` e `adventure`
 
 >[!NOTE]
 >
->Il campo `fragments` ha il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati.
+>Il campo `fragments` ha il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionato.
 
 ```xml
 {
@@ -1303,7 +1304,7 @@ Questa query interroga:
 Questa query contiene due informazioni:
 
 1. Per restituire tutti i riferimenti al contenuto.
-1. Per restituire i riferimenti di contenuto specifici di tipo `attachments`.
+1. Per restituire riferimenti di contenuto specifici di tipo `attachments`.
 
 Queste domande interrogano:
 
@@ -1352,7 +1353,7 @@ La seguente query restituisce tutti `attachments` - un campo specifico (sottogru
 
 >[!NOTE]
 >
->Il campo `attachments` presenta il tipo di dati `content-reference`, con l’opzione relativa ai vari moduli selezionati.
+>Il campo `attachments` ha il tipo di dati `content-reference`, con diversi moduli selezionati.
 
 ```xml
 {
@@ -1394,7 +1395,7 @@ Questa query interroga:
 
 >[!NOTE]
 >
->I riferimenti in linea dell’editor Rich Text vengono idratati in `_references`.
+>I riferimenti in linea dell’editor Rich Text sono idratati in `_references`.
 
 **Query di esempio**
 
@@ -1461,7 +1462,7 @@ Questa query interroga:
 
 Questa query interroga:
 
-* per i frammenti di contenuto di tipo `article` con una variante specifica: `variation1`
+* per frammenti di contenuto di tipo `article` con una variazione specifica: `variation1`
 
 **Query di esempio**
 
@@ -1486,7 +1487,7 @@ Questa query interroga:
 
 Questa query interroga:
 
-* per i frammenti di contenuto di tipo `article` nelle `fr` impostazioni internazionali
+* per frammenti di contenuto di tipo `article` all&#39;interno del `fr` locale
 
 **Query di esempio**
 
@@ -1511,17 +1512,17 @@ Questa query interroga:
 
 Le query di esempio si basano sulla seguente struttura, che utilizza:
 
-* Uno o più [Modelli per frammenti di contenuto di esempio](#sample-content-fragment-models-schemas): costituiscono la base degli schemi GraphQL
+* Uno o più [Modelli per frammenti di contenuto di esempio](#sample-content-fragment-models-schemas) - costituisce la base per gli schemi GraphQL
 
-* [Frammenti di contenuto di esempio in ](#sample-content-fragments) base ai modelli precedenti
+* [Frammenti di contenuto di esempio](#sample-content-fragments) in base ai modelli di cui sopra
 
 ### Modelli per frammenti di contenuto di esempio (schemi) {#sample-content-fragment-models-schemas}
 
 Per le query di esempio, utilizzeremo i seguenti Modelli di contenuto e le loro interrelazioni (riferimenti ->):
 
-* [Società](#model-company)
- ->  [Persona](#model-person)
-     ->  [Premio](#model-award)
+* [Azienda](#model-company)
+-> [Persona](#model-person)
+    -> [Premio](#model-award)
 
 * [Città](#model-city)
 
@@ -1573,8 +1574,8 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 | Nome dell&#39;azienda | Amministratore delegato | Dipendenti |
 |--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Sfera tagliente |
+| Apple | Steve Jobs | Duca Marsh<br>Max campo |
+|  Little Pony Inc. | Adam Smith | Lara croft<br>Sfera di taglio |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Persona {#fragment-person}
