@@ -1,7 +1,7 @@
 ---
 title: Note generali sulla versione di [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Le note per 6.5 contengono informazioni sulla versione, novità, modalità di installazione ed elenchi dettagliati delle modifiche.'
-source-git-commit: 9b15215a68495a800e94a58b523e1b7baa0c0203
+source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 53%
@@ -552,9 +552,9 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. Salva il file e riavvia l&#39;istanza AEM.
 
-## Sites {#sites}
+### Sites {#sites}
 
-* **Utilizzo delle versioni di una pagina**: Se una pagina è stata spostata, non è più possibile eseguire un’anteprima sulle versioni eseguite prima dello spostamento.
+* **Utilizzo delle versioni di una pagina**: [Se una pagina è stata spostata, non è più possibile eseguire un’anteprima su nessuna versione effettuata prima dello spostamento](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
 ### Assets {#assets}
 
