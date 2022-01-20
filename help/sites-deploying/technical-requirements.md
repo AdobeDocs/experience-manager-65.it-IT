@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 1%
 
 ---
@@ -165,16 +165,18 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | Archiviare i file binari nei file TAR nel file system `[1]` | Binari | Z: Non supportato per la produzione |
 | Amazon S3 | Binari | R: Supportato |
 | Archiviazione BLOB di Microsoft Azure | Binari | R: Supportato |
-| MongoDB Enterprise 4.0 | Archivio | R: Supportato `[2, 3]` |
+| MongoDB Enterprise 4.2 | Archivio | R: Supportato `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Archivio | Z: Non supportato |
 | MongoDB Enterprise 3.6 | Archivio | Z: Non supportato |
 | MongoDB Enterprise 3.4 | Archivio | Z: Non supportato |
-| IBM DB2 10.5 | Archivio e database Forms | R: Supporto limitato `[4]` |
+| IBM DB2 10.5 | Archivio e database Forms | R: Supporto limitato `[5]` |
 | Database Oracle 12c (12.1.x) | Archivio e database Forms | R: Supporto limitato |
 | Microsoft SQL Server 2016 | Database Forms | R: Supportato |
 | **Apache Lucene (integrato con Quickstart)** | Servizio di ricerca | R: Supportato |
 | Apache Solr | Servizio di ricerca | R: Supportato |
 
 1. Il file system include lo storage a blocchi conforme a POSIX. Ciò include la tecnologia di storage in rete. Tenere presente che le prestazioni del file system potrebbero variare e influire sulle prestazioni complessive. Si consiglia di caricare AEM di prova in combinazione con il file system di rete/remoto.
+1. MongoDB Enterprise 4.2 richiede AEM 6.5 SP9 come minimo.
 1. Shopping MongoDB non supportato in AEM.
 1. Il motore di archiviazione MongoDB WiredTiger è supportato solo.
 1. Supportato per i clienti che eseguono l’aggiornamento di AEM Forms. Non supportato per nuove installazioni.
