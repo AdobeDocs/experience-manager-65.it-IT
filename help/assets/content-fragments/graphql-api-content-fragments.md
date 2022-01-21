@@ -3,9 +3,9 @@ title: AEM API GraphQL per l’utilizzo con frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
+source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '3942'
 ht-degree: 1%
 
 ---
@@ -586,6 +586,10 @@ Il funzionamento di base delle query con GraphQL per AEM rispettare la specifica
 
    * use `... on`
       * Vedi [Query di esempio per un frammento di contenuto di un modello specifico con un riferimento al contenuto](#sample-wknd-fragment-specific-model-content-reference)
+
+* Abbandono durante la query dei frammenti nidificati:
+
+   * Se la variante richiesta non esiste in un frammento nidificato, la variabile **Master** viene restituita la variante .
 
 ## Query persistenti (memorizzazione in cache) {#persisted-queries-caching}
 
