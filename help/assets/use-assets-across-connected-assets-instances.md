@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: f1c8660d36a1e84b57d4d1a65a54d153bc373dc6
+source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2979'
 ht-degree: 26%
 
 ---
@@ -29,11 +29,11 @@ Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali 
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] works with [!DNL Experience Manager] as a Cloud Service. For more information about how this functionality works in [!DNL Experience Manager] as a [!DNL Cloud Service], see [Connected Assets in [!DNL Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Per [!DNL Adobe Experience Manager] tipi di distribuzione, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6,5 [!DNL Assets] funziona con [!DNL Experience Manager] as a Cloud Service. Per ulteriori informazioni su come funziona questa funzionalità in [!DNL Experience Manager] come [!DNL Cloud Service], vedi [Risorse collegate in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] in AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager Assets]come[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] in AMS** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | Non supportato | Non supportato | Non supportato |
 
@@ -68,14 +68,14 @@ Per configurare le risorse collegate e locali [!DNL Sites] connettività, segui 
    1. Nella cartella del file JAR, esegui il seguente comando su un terminale per creare ogni [!DNL Experience Manager] server.
       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
-   1. After a few minutes, the [!DNL Experience Manager] server starts successfully. Considera questo [!DNL Sites] implementazione come computer locale per l’authoring delle pagine web, ad esempio all’indirizzo `https://[local_sites]:4502`.
+   1. Dopo alcuni minuti, il [!DNL Experience Manager] avvio del server completato. Considera questo [!DNL Sites] implementazione come computer locale per l’authoring delle pagine web, ad esempio all’indirizzo `https://[local_sites]:4502`.
 
 1. Assicurati che gli utenti e i ruoli con l&#39;ambito appropriato esistano nel [!DNL Sites] e sul [!DNL Assets] distribuzione in AMS. Crea un utente tecnico il [!DNL Assets] distribuzione e aggiunta al gruppo di utenti menzionato in [utenti e gruppi interessati](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
-1. Access the local [!DNL Sites] deployment at `https://[local_sites]:4502`. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione risorse collegate]** e fornisci i seguenti valori:
+1. Accedere al locale [!DNL Sites] implementazione in `https://[local_sites]:4502`. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione risorse collegate]** e fornisci i seguenti valori:
 
    1. A **[!UICONTROL Titolo]** della configurazione.
-   1. **[!UICONTROL Remote DAM URL]** is the URL of the [!DNL Assets] location in the format `https://[assets_servername]:[port]`.
+   1. **[!UICONTROL URL DAM remoto]** è l&#39;URL del [!DNL Assets] posizione nel formato `https://[assets_servername]:[port]`.
    1. Credenziali di un distributore DAM (utente tecnico).
    1. In **[!UICONTROL Punto di montaggio]** campo , immettere il [!DNL Experience Manager] percorso [!DNL Experience Manager] recupera le risorse. Ad esempio, la cartella `remoteassets`. Le risorse recuperate da DAM vengono memorizzate in questa cartella nella cartella [!DNL Sites] distribuzione.
    1. **[!UICONTROL URL siti locali]** è la posizione del [!DNL Sites] distribuzione. [!DNL Assets] la distribuzione utilizza questo valore per mantenere i riferimenti alle risorse digitali recuperate da questo [!DNL Sites] distribuzione.
@@ -153,7 +153,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra della pagina.
 
-1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
+1. Apri [!UICONTROL Risorse] e fai clic su **[!UICONTROL Accedere alle risorse collegate]**.
 1. Immetti le credenziali: `ksaner` come nome utente e `password` come password. Questo utente dispone delle autorizzazioni di authoring per entrambi i [!DNL Experience Manager] distribuzioni.
 1. Cerca la risorsa aggiunta a DAM. Le risorse remote vengono visualizzate nel pannello a sinistra. Filtra immagini o documenti e filtra ulteriormente i tipi di documenti supportati. Trascina le immagini su un componente `Image`, e i documenti su un componente `Download`.
 
@@ -173,17 +173,17 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    >[!NOTE]
    >
-   >La pagina viene pubblicata anche se una o più risorse remote non vengono recuperate. Il componente che utilizza la risorsa remota viene pubblicato come vuoto. The [!DNL Experience Manager] notification area displays a notification for errors that show in asynchronous jobs page.
+   >La pagina viene pubblicata anche se una o più risorse remote non vengono recuperate. Il componente che utilizza la risorsa remota viene pubblicato come vuoto. La [!DNL Experience Manager] nell’area di notifica viene visualizzata una notifica per gli errori visualizzati nella pagina processi asincroni.
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. Le risorse recuperate vengono memorizzate nella cartella locale (`connectedassets` nel passaggio precedente). Le risorse possono inoltre essere cercate e visualizzate nell’archivio locale tramite [!UICONTROL Content Finder].
+>Una volta utilizzate in una pagina web, le risorse remote recuperate possono essere cercate e utilizzate da chiunque disponga delle autorizzazioni per accedere alla cartella locale. Le risorse recuperate vengono memorizzate nella cartella locale (`connectedassets` nel passaggio precedente). Le risorse possono inoltre essere cercate e visualizzate nell’archivio locale tramite [!UICONTROL Content Finder].
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
 ### Controllare l&#39;utilizzo di una risorsa in più pagine web {#asset-usage-references}
 
-[!DNL Experience Manager] lets DAM users check all the references to an asset. Consente di comprendere e gestire l’utilizzo di una risorsa in remoto [!DNL Sites] e in attività composte. Molti autori di pagine web su [!DNL Experience Manager Sites] una distribuzione può utilizzare una risorsa in un remoto [!DNL Assets] in pagine web diverse. To simplify asset management and not lead to broken references, it is important for the DAM users to check use of an asset across local and remote webpages. The [!UICONTROL References] tab in an asset&#39;s [!UICONTROL Properties] page lists the local and remote references of the asset.
+[!DNL Experience Manager] consente agli utenti DAM di controllare tutti i riferimenti a una risorsa. Consente di comprendere e gestire l’utilizzo di una risorsa in remoto [!DNL Sites] e in attività composte. Molti autori di pagine web su [!DNL Experience Manager Sites] una distribuzione può utilizzare una risorsa in un remoto [!DNL Assets] in pagine web diverse. Per semplificare la gestione delle risorse e non portare a riferimenti interrotti, è importante che gli utenti DAM verifichino l’utilizzo di una risorsa nelle pagine web locali e remote. La [!UICONTROL Riferimenti] scheda in una risorsa [!UICONTROL Proprietà] In questa pagina sono elencati i riferimenti locali e remoti della risorsa.
 
 Per visualizzare e gestire i riferimenti nel [!DNL Assets] implementazione, segui questi passaggi:
 
@@ -238,13 +238,13 @@ Per risolvere eventuali errori comuni, procedi come segue:
 
 * Una risorsa recuperata da DAM remoto potrebbe non essere pubblicata su una pagina web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni appropriate per recuperarlo o può essere causata da un errore di rete. Assicurati che la risorsa non venga rimossa dal DAM remoto. Assicurati che siano presenti le autorizzazioni appropriate e che siano soddisfatti i prerequisiti. Riprova ad aggiungere la risorsa alla pagina e ripubblica. Controlla l’[elenco dei processi asincroni](/help/sites-administering/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
 
-* Se non riesci ad accedere all’implementazione remota di DAM dal locale [!DNL Sites] , assicurati che siano consentiti i cookie intersito e [supporto per cookie dello stesso sito](/help/sites-administering/same-site-cookie-support.md) è configurato. Se i cookie intersito vengono bloccati, le distribuzioni di [!DNL Experience Manager] impossibile eseguire l&#39;autenticazione. Ad esempio: [!DNL Google Chrome] in modalità in incognito possono bloccare i cookie di terze parti. To allow cookies in [!DNL Chrome] browser, click the &#39;eye&#39; icon in the address bar, navigate to **Site Not Working** > **Blocked**, select the Remote DAM URL, and allow login-token cookie. In alternativa, vedere [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
+* Se non riesci ad accedere all’implementazione remota di DAM dal locale [!DNL Sites] , assicurati che siano consentiti i cookie intersito e [supporto per cookie dello stesso sito](/help/sites-administering/same-site-cookie-support.md) è configurato. Se i cookie intersito vengono bloccati, le distribuzioni di [!DNL Experience Manager] impossibile eseguire l&#39;autenticazione. Ad esempio: [!DNL Google Chrome] in modalità in incognito possono bloccare i cookie di terze parti. Per consentire i cookie in [!DNL Chrome] browser, fai clic sull&#39;icona &quot;occhio&quot; nella barra degli indirizzi, vai a **Sito non funzionante** > **Bloccato**, seleziona l’URL DAM remoto e consenti il cookie login-token. In alternativa, vedere [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
 
-   ![Cookie error in Chrome browser in Incognito mode](assets/chrome-cookies-incognito-dialog.png)
+   ![Errore cookie nel browser Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
 
-* If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Riprova più tardi per controllare. [!DNL Assets] la distribuzione tenta due volte di stabilire una connessione con [!DNL Sites] e quindi segnala un errore.
+* Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, controlla se [!DNL Sites] la distribuzione è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] la distribuzione tenta due volte di stabilire una connessione con [!DNL Sites] e quindi segnala un errore.
 
-   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
+   ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
 
 
 
