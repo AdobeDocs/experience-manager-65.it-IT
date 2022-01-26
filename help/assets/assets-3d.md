@@ -1,8 +1,6 @@
 ---
 title: Utilizzo di risorse 3D in Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Scopri come lavorare con le risorse 3D in Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 4%
 
 ---
@@ -27,7 +25,7 @@ Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 
 
 Non è necessaria alcuna configurazione aggiuntiva per utilizzare le risorse 3D in Dynamic Media.
 
-![Scarpa in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Scarpa in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Pagina dei dettagli di una scarpa tridimensionale.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Vedi anche [Formati 3D supportati](/help/assets/assets-formats.md).
 | OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | *Sostegno solo all&#39;acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modo nativo dai dispositivi Safari e iOS. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## Avvio rapido: Risorse 3D in Dynamic Media {#quick-start-three-d}
 
@@ -86,7 +88,7 @@ Vedi [Cloud Services ConfiguraE Dynamic Media](/help/assets/config-dms7.md#confi
 
 ## Informazioni sulla visualizzazione e sull’interazione con risorse 3D {#viewing-three-d-assets}
 
-Questa sezione descrive come visualizzare e interagire con le risorse 3D in due modi diversi: dalla pagina dei dettagli della risorsa e dal componente Media 3D in Sites.
+Questa sezione descrive come visualizzare e interagire con le risorse 3D in due modi diversi: dalla pagina dei dettagli della risorsa e dal componente Media 3D in Experience Manager Sites.
 
 Il visualizzatore 3D interattivo include, tra le altre cose, una raccolta di controlli interattivi per le telecamere che consentono di orbitare, ingrandire e scorrere la risorsa 3D.
 
@@ -219,7 +221,7 @@ Vedi [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. Nell’elenco a discesa Predefinito visualizzatore della finestra di dialogo File multimediali 3D , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
+1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
