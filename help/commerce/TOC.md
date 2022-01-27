@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guida di Commerce
 user-guide-description: Scopri come utilizzare e amministrare AEM Content and Commerce.
-source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
+source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 49%
+source-wordcount: '120'
+ht-degree: 70%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 49%
    + [Soluzione Commerce di terze parti](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
    + [Guida introduttiva](cif/getting-started.md)
+   + Authoring {#authoring}
+      + [Esperienze Commerce](cif/authoring/authoring-commerce-experiences.md)
+      + [Cockpit prodotto](cif/authoring/product-cockpit.md)
+      + [Arricchire i dati di prodotto con i contenuti associati](cif/authoring/enrich-product-associated-content.md)
    + Amministrazione {#administering}
       + [Configurazione di più store](cif/configuring/multi-store-setup.md)
       + [Utilizzo di più modelli](cif/configuring/multi-template-usage.md)
@@ -32,7 +36,7 @@ ht-degree: 49%
       + [Definizione dello stile dei componenti CIF](cif/customizing/style-cif-component.md)
       + [Personalizzazione dei componenti CIF](cif/customizing/customize-cif-components.md)
       + [Utilizzo dei selettori di catalogo CIF](cif/customizing/use-cif-pickers.md)
-+ [Adobe Commerce PWA Studi](cif/pwa-studio/getting-started.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migrazione](cif/migration.md)
 + Note sulla versione {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)

@@ -4,21 +4,21 @@ description: Scopri come distribuire un progetto AEM headless Content and Commer
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: 247c521e93990df2c8026da5edd84d163d5d424b
+exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 0%
 
 ---
 
-
 # Guida introduttiva all&#39;estensione AEM per PWA Studi {#getting-started-pwa}
 
-PWA Studi si integra perfettamente con Adobe Commerce tramite GraphQL e offre opzioni illimitate per la creazione di vetrine innovative e coinvolgenti e di altre esperienze digitali.
+PWA Studi si integra perfettamente con Adobe Commerce tramite GraphQL, offrendo opzioni illimitate per la creazione di vetrine innovative e coinvolgenti e di altre esperienze digitali.
 
 I frammenti di contenuto sono parti di contenuto con una struttura predefinita che consente loro di essere utilizzate in modo headless utilizzando GraphQL come API in diversi formati (ad esempio JSON, Markdown) ed eseguirne il rendering indipendente. I frammenti di contenuto includono tutti i tipi di dati e i campi necessari per GraphQL per garantire che l’applicazione richieda solo ciò che è disponibile e riceva ciò che è previsto. La flessibilità che offrono in termini di struttura li rende perfetti per l&#39;utilizzo in più posizioni e su più canali.
 
-La progettazione della struttura necessaria è semplice grazie all’Editor modelli di frammento di contenuto in Adobe Experience Manager. La sfida principale per integrare frammenti di contenuto Adobe Experience Manager (o qualsiasi altro dato) con l’applicazione PWA Studi è rappresentata dal recupero di dati da più endpoint GraphQL. Questo perché PWA Studi funziona con un singolo endpoint Commerce GraphQL di Adobe.
+La progettazione della struttura necessaria è semplice grazie all’Editor modelli di frammento di contenuto in Adobe Experience Manager. La sfida principale per integrare frammenti di contenuto Adobe Experience Manager (o qualsiasi altro dato) con l’applicazione PWA Studi è rappresentata dal recupero di dati da più endpoint GraphQL. Questo perché PWA Studi funziona con un singolo endpoint GraphQL di Adobe Commerce.
 
 ## Architettura {#architecture}
 
@@ -26,9 +26,9 @@ La progettazione della struttura necessaria è semplice grazie all’Editor mode
 
 ## Configurazione PWA Studi {#setup-pwa}
 
-Per configurare l’app PWA Studi, segui la documentazione Adobe Commerce [PWA Studi](https://magento.github.io/pwa-studio/tutorials/) .
+Segui Adobe Commerce [Documentazione di PWA Studi](https://developer.adobe.com/commerce/pwa-studio/tutorials/) per configurare l’app PWA Studi.
 
-Per collegare PWA Studi all’endpoint GraphQL di AEM, puoi utilizzare l’ [AEM Extension per PWA Studi](https://github.com/adobe/aem-pwa-studio-extensions).
+Per collegare PWA Studi all’endpoint GraphQL di AEM, è possibile utilizzare la variabile [Estensione AEM per PWA Studi](https://github.com/adobe/aem-pwa-studio-extensions).
 
 1. Consulta il repository
 
@@ -48,7 +48,7 @@ Per collegare PWA Studi all’endpoint GraphQL di AEM, puoi utilizzare l’ [AEM
    <Adapter apiBase={apiBase} apollo={{ link: linkWrapper(apolloLink) }} store={store}>
    ```
 
-   Per ulteriori dettagli sulla personalizzazione del client Apollo, consulta [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
+   Puoi trovare ulteriori dettagli sulla personalizzazione del client Apollo in [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
 
 1. Per estendere il componente di navigazione con una voce Blog, aggiungi i seguenti adattamenti a pwa-root/local-intercept.js:
 
@@ -60,10 +60,9 @@ Per collegare PWA Studi all’endpoint GraphQL di AEM, puoi utilizzare l’ [AEM
    }    
    ```
 
-   Per ulteriori informazioni sulla personalizzazione del componente Navigazione, consulta la documentazione [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e la documentazione [Extensibility Framework](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/) di PWA Studi.
+   Per ulteriori informazioni sulla personalizzazione del componente Navigazione in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e [Framework di estendibilità](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentazione di PWA Studi.
 
-1. Il client Apollo si aspetta l’endpoint GraphQL AEM in <https://pwa-studio/endpoint.js>. Per mappare l’endpoint a questa posizione, è necessario personalizzare la configurazione UPWARD dell’applicazione PWA Studi:
-a) Aggiungi la variabile AEM_CFM_GRAPHQL a pwa-root/.env e adattala per puntare all’endpoint GraphQL dei frammenti di contenuto AEM.
+1. Il client Apollo si aspetta l’endpoint GraphQL AEM in <https://pwa-studio/endpoint.js>. Per mappare l’endpoint a questa posizione, è necessario personalizzare la configurazione UPWARD dell’applicazione PWA Studi: a) Aggiungi la variabile AEM_CFM_GRAPHQL a pwa-root/.env e adattala per puntare all’endpoint GraphQL dei frammenti di contenuto AEM.
 
    Esempio: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -116,7 +115,7 @@ A seconda del caso d’uso, vuoi creare modelli di frammenti di contenuto person
 
 Le impostazioni di produzione possono variare in diversi aspetti.
 
-* È possibile disporre di un singolo endpoint GraphQL federato che combina dati GraphQL AEM e Magento invece di personalizzare il client Apollo.
+* È possibile disporre di un singolo endpoint GraphQL federato che combina dati GraphQL AEM e Adobe Commerce invece di personalizzare il client Apollo.
 * L&#39;applicazione PWA Studi potrebbe utilizzare direttamente l&#39;URL dell&#39;endpoint GraphQL AEM, senza un proxy con UPWARD. Il proxy può anche essere spostato in un livello diverso (ad es. CDN).
 * L’approccio più adatto alle tue esigenze dipende anche dalla modalità di distribuzione dell’applicazione PWA Studi all’utente finale.
 
@@ -124,8 +123,8 @@ Questa estensione include due esempi.
 
 ### Blog {#blog}
 
-Visualizza i post di blog in base ad alcuni modelli di frammenti di contenuto. Inoltre, contiene esempi su come configurare il client Apollo in modo che funzioni con l’endpoint GraphQL AEM e come estendere il componente di navigazione in PWA Studi. Per ulteriori informazioni, consulta [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) .
+Visualizza i post di blog in base ad alcuni modelli di frammenti di contenuto. Inoltre, contiene esempi su come configurare il client Apollo in modo che funzioni con l’endpoint GraphQL AEM e come estendere il componente di navigazione in PWA Studi. Vedi [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) per ulteriori dettagli.
 
 ### Arricchimento PDP {#pdp-enrichment}
 
-Consente agli addetti al marketing di arricchire facilmente i PDP con contenuti aggiuntivi gestiti come frammenti di contenuto.  Per ulteriori informazioni, consulta [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) .
+Consente agli addetti al marketing di arricchire facilmente i PDP con contenuti aggiuntivi gestiti come frammenti di contenuto.  Vedi [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) per ulteriori dettagli.

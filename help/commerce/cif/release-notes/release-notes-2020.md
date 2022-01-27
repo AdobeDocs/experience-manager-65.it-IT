@@ -1,14 +1,13 @@
 ---
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 11%
+source-wordcount: '1328'
+ht-degree: 12%
 
 ---
-
 
 # Panoramica sulla versione di Commerce Integration Framework GitHub
 
@@ -26,7 +25,7 @@ ht-degree: 11%
 
 * Storefront di riferimento Venia aggiornato per utilizzare Frammento esperienza per il piè di pagina. Gli utenti aziendali possono modificare il piè di pagina utilizzando AEM strumenti di authoring.
 
-### Miglioramenti di {#what-is-improved-november}
+### Miglioramenti {#what-is-improved-november}
 
 * Il componente Checkout è stato migliorato per consentire agli acquirenti di entrare nel paese di destinazione e consentire loro di inserire indirizzi di fatturazione/spedizione al di fuori degli Stati Uniti.
 
@@ -48,7 +47,7 @@ ht-degree: 11%
 
 * Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per la raccolta dei dati e la comunicazione dei dati ai server di reporting e analisi digitali. Per ulteriori informazioni, consulta [Livello dati client di Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Dettagli prodotto e pagine elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, descrizione meta, parole chiave meta) configurati dall&#39;interfaccia utente amministratore di Magento
+* Dettagli prodotto e pagine elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, descrizione meta, parole chiave meta) configurati dall’interfaccia utente amministratore di Adobe Commerce
 
 * È stato corretto un bug del componente teaser Commerce.
 
@@ -62,7 +61,7 @@ ht-degree: 11%
 
 ### Novità {#what-is-new-september}
 
-* Supporta le query per lo schema Magenti 2.4.0.
+* Supporta le query per lo schema Adobe Commerce 2.4.0.
 
 * Sono state aggiunte le funzioni di informazioni sull’account per consentire agli acquirenti di aggiornare le informazioni personali.
 
@@ -114,13 +113,13 @@ ht-degree: 11%
 
 * CIF Venia Reference Site è stato estratto dall’archivio CIF Archetype ed è ora un archivio GitHub indipendente.
 
-* CIF Archetype unito a AEM Project Archetype. Per i nuovi progetti, utilizza [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) come punto di partenza.
+* CIF Archetype unito a AEM Project Archetype. Per nuovi progetti, utilizza [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) come punto di partenza.
 
 * È stata aggiunta la gestione della Rubrica per consentire agli utenti con accesso di gestire i propri indirizzi.
 
 * L’interfaccia utente di configurazione cloud CIF supporta le azioni di pubblicazione/annullamento della pubblicazione.
 
-### Miglioramenti di {#what-is-improved-july}
+### Miglioramenti {#what-is-improved-july}
 
 * Il componente Accesso è stato spostato nell’elenco a discesa dell’utente per un facile accesso.
 
@@ -146,7 +145,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * È stata aggiunta la mappatura degli utenti del servizio come parte del requisito di sicurezza per garantire l&#39;accesso a /conf tramite gli utenti del servizio e non manipolando direttamente le ACL. I componenti core CIF devono ora utilizzare un utente di servizio per accedere alle configurazioni.
 
-### Miglioramenti di {#what-is-improved-june}
+### Miglioramenti {#what-is-improved-june}
 
 * Nella pagina Elenco prodotti e nella pagina Risultati ricerca viene visualizzato il numero totale di elementi. Il numero di elementi viene aggiornato quando l’acquirente applica i filtri.
 
@@ -166,11 +165,11 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 ### Novità {#what-is-new-may}
 
-* Supporta le query per lo schema Magenti 2.3.5.
+* Supporta le query per lo schema Adobe Commerce 2.3.5.
 
 * È stato aggiunto il supporto per la ricerca facet alla pagina di ricerca e alla pagina di elenco prodotti per consentire agli acquirenti di filtrare i risultati della ricerca in base ai facet di prodotto.
 
-* È stato aggiunto il nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO. Per ulteriori informazioni, consulta questa [documentazione](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* È stato aggiunto il nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO. Per ulteriori dettagli, consulta questo [documentazione](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
 * Il binding del prodotto viene creato automaticamente quando viene creata una configurazione cloud.
 
@@ -190,9 +189,9 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 ### Novità {#what-is-new-april}
 
-* Impostazioni di configurazione per il connettore CIF unificato e semplificato. Per ulteriori informazioni, consulta la sezione [Guida introduttiva](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nuova AEM configurazione del progetto CIF](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Impostazioni di configurazione per il connettore CIF unificato e semplificato. Per ulteriori dettagli, consulta la sezione [Introduzione](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nuova configurazione del progetto CIF AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Miglioramenti di {#what-is-improved-april}
+### Miglioramenti {#what-is-improved-april}
 
 * Carrello acquisti e flusso di cassa esteso per supportare i clienti registrati.
 
@@ -214,13 +213,13 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 ### Novità {#what-is-new-february}
 
-* Supporta le query per lo schema Magenti 2.3.4.
+* Supporta le query per lo schema Adobe Commerce 2.3.4.
 
 * È stato aggiunto il supporto per la ricerca nel selettore categorie.
 
 * Impaginazione nel componente Elenco categorie per supportare set di cataloghi di grandi dimensioni.
 
-### Miglioramenti di {#what-is-improved-february}
+### Miglioramenti {#what-is-improved-february}
 
 * Carrello aggiunto per visualizzare gli sconti.
 
@@ -248,7 +247,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 * Componente prodotto correlato generico disponibile.
 
-### Miglioramenti di {#what-is-improved-january}
+### Miglioramenti {#what-is-improved-january}
 
 * Supporto per visualizzare il pulsante CTA sul teaser del prodotto.
 

@@ -2,10 +2,10 @@
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 9%
+source-wordcount: '1314'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
+| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, schemi GraphQL di Adobe Commerce 2.3.5 |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -35,7 +35,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ![Componenti myAccount estesi](/help/assets/CIF/extended-myAccount-components.png)
 
-* Gli autori possono creare un Recommendations di prodotti Commerce ad hoc utilizzando altri tipi di consigli
+* Gli autori possono creare consigli di prodotti Commerce ad hoc utilizzando altri tipi di consigli
 
 * Supporto per le carte regalo in AEM Storefront
 
@@ -53,7 +53,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Gli autori possono aggiungere collegamenti alle pagine di prodotti e catalogo nei campi di testo mediante l’editor Rich Text. È stata aggiunta un’icona CIF alla barra degli strumenti dell’editor Rich Text che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
-* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Magento Extensible Peregrine
+* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Adobe Commerce per funzioni estese
 
 * I commercianti possono nascondere alcune categorie di catalogo dei prodotti nella navigazione utilizzando il backend Commerce . Il componente core di navigazione CIF rispetta la configurazione back-end di e-commerce &quot;include nel menu&quot; per mostrare/nascondere categorie nella navigazione
 
@@ -195,7 +195,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità
 
-* Supporto per Magento 2.4.2
+* Supporto per Adobe Commerce 2.4.2
 
 ### Miglioramenti
 

@@ -1,18 +1,18 @@
 ---
 title: Integrazione Commerce di AEM e di terze parti tramite Commerce Integration Framework
-description: Le aziende possono richiedere soluzioni commerce aggiuntive di terze parti per alimentare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti a Adobe Experience Manager utilizzando I/O Runtime.
+description: Le aziende possono richiedere soluzioni commerce aggiuntive di terze parti per alimentare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti ad Adobe Experience Manager utilizzando I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: e99899a4-df86-4108-991a-8b30d303a279
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 4%
 
 ---
 
 # Integrazione Commerce di AEM e di terze parti tramite Commerce Integration Framework {#aem-third-party}
 
-L’integrazione della soluzione Commerce non Adobe è uno scenario comune per CIF. le soluzioni di terze parti con diverse API e schemi vengono connesse tramite un livello di integrazione.
+L’integrazione della soluzione non Adobe Commerce è uno scenario comune per CIF. le soluzioni di terze parti con diverse API e schemi vengono connesse tramite un livello di integrazione.
 
 ## Architettura {#architecture}
 
@@ -28,7 +28,7 @@ Poiché l’Experience Manager recupera i dati on-demand, sono necessarie API in
 
 >[!TIP]
 >
->Se non sono disponibili API in tempo reale, per l’integrazione è necessario utilizzare una cache di prodotto esterna con API. Esempio [Magento open-source](https://magento.com/products/magento-open-source).
+>Se non sono disponibili API in tempo reale, per l’integrazione è necessario utilizzare una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 Non è necessario implementare l&#39;intero schema GraphQL, ma solo gli oggetti dello schema per abilitare i casi d&#39;uso desiderati.
 
@@ -40,14 +40,14 @@ Per sbloccare questi casi d’uso è necessaria l’integrazione delle API del c
 
 ## Casi d’uso anteriori
 
-[AEM ](https://github.com/adobe/aem-core-cif-components) componenti core CIF recuperano e scambiano dati tramite le API Commerce di Adobe supportate da CIF. Per riutilizzare i componenti, è necessario implementare le rispettive API.
+[Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) recupera e scambia dati tramite le API Adobe Commerce supportate da CIF. Per riutilizzare i componenti, è necessario implementare le rispettive API.
 
 Il consiglio per i componenti lato client critici in termini di prestazioni è di comunicare direttamente con la soluzione di terze parti per evitare la latenza.
 
-## Sviluppo di un&#39;integrazione {#develop-integration}
+## Sviluppo di un’integrazione {#develop-integration}
 
-È consigliabile utilizzare [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terze parti. Funzionando con un approccio microservice, è ideale per integrare facilmente soluzioni multiple.
+Si consiglia di utilizzare [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terze parti. Funzionando con un approccio microservice, è ideale per integrare facilmente soluzioni multiple.
 
-L’ [implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference) è un ottimo punto di partenza per creare l’integrazione nella soluzione commerce. Anche se supporta GraphQL, può essere integrato con qualsiasi altro tipo di API, come REST.
+La [implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference) è un ottimo punto di partenza per creare l’integrazione nella soluzione commerce. Anche se supporta GraphQL, può essere integrato con qualsiasi altro tipo di API, come REST.
 
 Questo livello di integrazione non è necessario se è disponibile un livello di terze parti (come Mulesoft) o se l’integrazione è basata sulla soluzione di terze parti.

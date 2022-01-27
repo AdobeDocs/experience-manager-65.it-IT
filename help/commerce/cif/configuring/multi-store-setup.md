@@ -1,6 +1,6 @@
 ---
 title: Configurazione di Commerce Multi-Store
-description: Scopri come mappare più viste store da Magento a AEM. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
+description: Scopri come mappare più viste store da Adobe Commerce a AEM. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
@@ -8,33 +8,33 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 69%
+source-wordcount: '385'
+ht-degree: 44%
 
 ---
 
-# Configurazione multi-store di Commerce {#multi-store}
+# Configurazione di Commerce Multi-Store {#multi-store}
 
-I componenti core CIF di AEM possono essere utilizzati su più strutture di siti AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Magento. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
+I componenti core CIF AEM possono essere utilizzati su più strutture AEM sito e l’implementazione client GraphQL sottostante può connettersi a diversi store/viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 
-Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni store di Magento con Adobe Experience Manager Sites.
+Una procedura dettagliata video che illustra le opzioni di integrazione di più visualizzazioni archivio Adobe Commerce con Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Le funzioni Live Copy e Copia per lingua di AEM per la gestione di più siti sono utilizzate insieme a Commerce Integration Framework (CIF) per gestire globalmente i siti per diverse aree geografiche e lingue.
 
-Si consiglia di utilizzare una relazione 1:1 tra AEM Sites e la vista Store di Magento.
+Si consiglia di utilizzare una relazione 1:1 tra AEM sito e la visualizzazione store Adobe Commerce.
 
 Per collegare un sito AEM e AEM componenti core CIF a una visualizzazione dedicata dello store, segui i passaggi seguenti:
 
 ## Configurazione {#configuration}
 
-1. Configura più store e viste Store in base al pattern descritto in [Magento Websites, Stores &amp; Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html) (Siti web, store e viste di Magento).
+1. Configura più store e viste store in base al pattern descritto in [Siti web, store e visualizzazioni di Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. Assicurati che la connessione tra AEM e Magento funzioni.
+2. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
 3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
 
@@ -46,7 +46,7 @@ Per collegare un sito AEM e AEM componenti core CIF a una visualizzazione dedica
 
    >[!TIP]
    >
-   > I cataloghi commerciali possono essere gestiti utilizzando ID o UID. Gli UID sono stati introdotti nel Magento 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+   > I cataloghi commerciali possono essere gestiti utilizzando ID o UID. Gli UID sono stati introdotti in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 
 4. Assegnare la configurazione figlio a un sito AEM
 
@@ -58,7 +58,7 @@ Per collegare un sito AEM e AEM componenti core CIF a una visualizzazione dedica
 
 ## Risorse aggiuntive
 
-* [Magento Website, Stores e Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Siti web, store e visualizzazioni di Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Componenti core CIF di AEM: configurazione di più store o siti](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-administering/msm.md)

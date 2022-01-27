@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione 2021 di AEM Content and Commerce
 description: Note sulla versione 2021 di AEM Content and Commerce
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 9%
 
 * Braintree il supporto per i pagamenti aggiunto AEM Venia store front.
 
-### Miglioramenti di {#what-is-improved-november}
+### Miglioramenti {#what-is-improved-november}
 
-* Selezione di categorie/prodotti migliorata per rispettare la visualizzazione specifica dell&#39;archivio Magenti in una configurazione multi-store.
+* Selezione di categorie/prodotti migliorata per rispettare la visualizzazione specifica dell&#39;Adobe Commerce Store in una configurazione multi-store.
 
 * Componenti basati su React disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o sviluppare nuovi componenti basati su React.
 
@@ -49,11 +49,11 @@ ht-degree: 9%
 
 * Modelli completamente modificabili per la pagina dei dettagli del prodotto e la pagina dell’elenco dei prodotti. Gli autori possono ora creare nuovi modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti di dettaglio dei prodotti su questi modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, offrendo loro la libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
 
-* Tutti i componenti core CIF compatibili con l’autore sono stati migliorati per supportare [AEM sistema di stili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Sono stati forniti stili di esempio per il componente elenco prodotti.
+* Tutti i componenti core CIF compatibili con l’autore sono stati migliorati per supportare [Sistema di stili AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Sono stati forniti stili di esempio per il componente elenco prodotti.
 
 * Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Crea account.
 
-### Miglioramenti di {#what-is-improved-october}
+### Miglioramenti {#what-is-improved-october}
 
 * I dettagli del prodotto e i componenti dell’elenco dei prodotti sono stati migliorati per mostrare i dati fittizi, in modo da fornire agli autori un’anteprima del layout quando questi componenti vengono inseriti in un modello/pagina.
 
@@ -77,7 +77,7 @@ ht-degree: 9%
 
 * Il componente Pagamento include i moduli indirizzo, la selezione dei pagamenti e la selezione dei metodi di spedizione.
 
-### Miglioramenti di {#what-is-improved-september}
+### Miglioramenti {#what-is-improved-september}
 
 * I componenti Product Teaser e Product Carousel supportano le varianti di prodotto.
 
@@ -95,7 +95,7 @@ ht-degree: 9%
 
 * I componenti CIF disaccoppiati dallo stile CSS specifico &quot;Venia&quot; per consentire agli sviluppatori di applicare lo stile CSS desiderato.
 
-* Funzionalità per più store/siti per consentire l’utilizzo di componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Magenti.
+* Funzionalità per più store/siti per consentire l’utilizzo di componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Adobe Commerce.
 
 * La memorizzazione in cache GraphQL è abilitata per determinate query GraphQL tramite HTTP per ridurre i tempi di risposta.
 
@@ -105,9 +105,9 @@ ht-degree: 9%
 
 * Pulsante per consentire agli autori di inserire in una pagina AEM un collegamento a una pagina AEM, a una pagina di dettagli del prodotto, a una pagina dell’elenco dei prodotti o a un collegamento esterno.
 
-### Miglioramenti di {#what-is-improved-august}
+### Miglioramenti {#what-is-improved-august}
 
-* La configurazione dell’archivio di Magenti è stata spostata da OSGi a AEM console del prodotto per rendere la configurazione dell’integrazione più semplice per gli autori.
+* La configurazione dell’archivio Adobe Commerce è stata spostata da OSGi a AEM console del prodotto per rendere la configurazione dell’integrazione più semplice per gli autori.
 
 ## Data di rilascio: Luglio 2019
 
@@ -131,9 +131,9 @@ ht-degree: 9%
 
 * Elenco categorie in primo piano lato server per visualizzare l&#39;elenco delle categorie su una pagina AEM.
 
-### Miglioramenti di {#what-is-improved-july}
+### Miglioramenti {#what-is-improved-july}
 
-* Il supporto per Magenti 2.3.2 e le correzioni di bug relativi alle proprietà del prodotto vengono visualizzati nella console del prodotto.
+* Il supporto per Adobe Commerce 2.3.2 e le correzioni di bug relativi alle proprietà del prodotto vengono visualizzati nella console del prodotto.
 
 ## Data di rilascio: Giugno 2019
 
@@ -148,11 +148,10 @@ ht-degree: 9%
 
 * Connettore CIF e strumenti di creazione (console prodotto, selettore prodotto e selettore categoria) per consentire agli autori di creare esperienze in AEM con contenuti commerce.
 
-* Prima versione dei componenti core CIF compatibili con Magenti 2.3.1:
+* Prima versione dei componenti core CIF compatibili con Adobe Commerce 2.3.1:
    * Dettagli prodotto
    * Elenco prodotti
    * Product Teaser
    * Navigazione
    * Ricerca di prodotti
    * Carrello (REST)
-
