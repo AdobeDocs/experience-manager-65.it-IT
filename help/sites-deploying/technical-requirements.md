@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
+source-git-commit: 07fccc7b34a2d74b6e7837ac2f05e2f9d845fba1
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3380'
 ht-degree: 1%
 
 ---
@@ -242,11 +242,12 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | Oracle Solaris 11 | Z: Non supportato |
 | IBM AIX 7.2 | Z: Non supportato |
 
-1. Linux Kernel 2.6, 3.x e 4.x include derivati dalla distribuzione Red Hat, inclusi Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Le funzionalità aggiuntive di AEM Forms sono supportate solo su CentOS 7 e Red Hat Enterprise Linux 7.
+1. Linux Kernel 2.6, 3.x e 4.x include derivati dalla distribuzione Red Hat, inclusi Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Le funzionalità aggiuntive di AEM Forms sono supportate solo su CentOS 7, Red Hat Enterprise Linux 7 e Red Hat Enterprise Linux 8. AEM supporta Linux kernel 4.x, che copre RHEL8 (kernel versione 4.18). AEM Forms OSGi è supportato anche su RHEL8.
 1. AEM Forms è supportato solo su Ubuntu 16.04 LTS
 1. Distribuzione Linux supportata da Adobe Managed Services
 1. Le distribuzioni di produzione Microsoft Windows sono supportate per i clienti che eseguono l’aggiornamento alla versione 6.5 e per utilizzi non di produzione. Le nuove distribuzioni sono su richiesta per AEM Sites e Assets.
-1. AEM Forms è supportato su Microsoft Window Server senza restrizioni a livello di supporto R
+1. AEM Forms è supportato su Microsoft Window Server senza le restrizioni del livello di supporto R.
+
 
 ### Ambienti di elaborazione virtuali e cloud {#virtual-cloud-computing-environments}
 
