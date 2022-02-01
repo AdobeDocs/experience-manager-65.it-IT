@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 270219c8baedd4b72a256e6318d89154d6dadb0b
 workflow-type: tm+mt
-source-wordcount: '6080'
+source-wordcount: '6110'
 ht-degree: 4%
 
 ---
@@ -132,7 +132,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
    Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale su S7 Delivery.
 
 1. Seleziona **[!UICONTROL Salva]**.
-1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima della pubblicazione, è necessario &quot;inserire nell&#39;elenco Consentiti&quot; l’istanza di authoring di Experience Manager per connettersi a Dynamic Media:
+1. Per impostazione predefinita, l’autore dell’Experience Manager non può visualizzare in anteprima il contenuto Dynamic Media. Pertanto, per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima che venga pubblicato, devi *inserire nell&#39;elenco Consentiti* l’istanza di authoring di Experience Manager per la connessione a Dynamic Media. Inoltre, se desideri fornire agli utenti l’accesso per visualizzare in anteprima i contenuti in modo sicuro, puoi *inserire nell&#39;elenco Consentiti* indirizzi IP aggiuntivi:
 
    * In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
    * Nella barra a sinistra, seleziona la **[!UICONTROL Strumenti]** icona, quindi vai a **[!UICONTROL Risorse]** > **[!UICONTROL Installazione di Dynamic Media Publish]**.
