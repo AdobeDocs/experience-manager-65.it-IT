@@ -3,9 +3,9 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guida di Commerce
 user-guide-description: Scopri come utilizzare e amministrare AEM Content and Commerce.
-source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
+source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 70%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 70%
       + [Esperienze Commerce](cif/authoring/authoring-commerce-experiences.md)
       + [Cockpit prodotto](cif/authoring/product-cockpit.md)
       + [Arricchire i dati di prodotto con i contenuti associati](cif/authoring/enrich-product-associated-content.md)
+      + [Consigli per prodotti](cif/authoring/product-recommendations.md)
    + Amministrazione {#administering}
       + [Configurazione di più store](cif/configuring/multi-store-setup.md)
       + [Utilizzo di più modelli](cif/configuring/multi-template-usage.md)
