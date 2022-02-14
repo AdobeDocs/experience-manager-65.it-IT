@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: cc19ddcf032457091ea1341ea37fba93a0e56fc1
+source-git-commit: a33d46bcfcf901fb774b742c0fc972265401a56e
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 0%
@@ -37,8 +37,7 @@ ht-degree: 0%
    >   * un’area di lavoro denominata, specificata nella configurazione cloud.
    >   * **Nota:** L&#39;esportazione in aree di lavoro specifiche richiede Adobe Target Premium.
 >
->* AEM [integrato con Adobe Target tramite Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-
+>* AEM [integrato con Adobe Target tramite Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 e 6.5.1.0:
 >
@@ -54,7 +53,7 @@ Sono disponibili tre opzioni di formato per esportare un frammento esperienza in
 * JSON: Supporto per la distribuzione di contenuti headless
 * HTML e JSON
 
-AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questo avviene per Adobe I/O, per il quale AEM [integrato con Adobe Target tramite Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questo avviene per Adobe I/O, per il quale AEM [integrato con Adobe Target tramite Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 
 >[!NOTE]
 >
@@ -70,7 +69,6 @@ AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefin
 >
 >* [Sviluppo Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Componenti core - Frammenti esperienza](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
-
 >
 
 
@@ -82,7 +80,7 @@ AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefin
 
 Sono necessarie diverse azioni:
 
-1. Devi [integrare AEM con Adobe Target utilizzando Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+1. Devi [integrare AEM con Adobe Target utilizzando Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 2. I frammenti esperienza vengono esportati dall’istanza di authoring AEM, per cui devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell’istanza di authoring, per garantire che tutti i riferimenti all’interno del frammento esperienza siano esternalizzati per la distribuzione web.
 
    >[!NOTE]

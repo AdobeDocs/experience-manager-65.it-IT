@@ -8,10 +8,10 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
+source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 19%
+source-wordcount: '631'
+ht-degree: 28%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Amministrazione di siti Web](msm-and-translation.md)
    + [Processi asincroni](asynchronous-jobs.md)
    + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
-   + [Console Panoramica di Live Copy](msm-livecopy-overview.md)
+   + [Panoramica Live Copy](msm-livecopy-overview.md)
    + [Configurazione della sincronizzazione di una Live Copy](msm-sync.md)
    + [Creazione e sincronizzazione di Live Copy](msm-livecopy.md)
    + [Conflitti di rollout MSM](msm-rollout-conflicts.md)
@@ -33,7 +33,7 @@ ht-degree: 19%
    + [Identificazione del contenuto da tradurre](tc-rules.md)
    + [Preparazione del contenuto per la traduzione](tc-prep.md)
    + [Creazione di una directory principale della lingua utilizzando l’interfaccia classica](tc-lroot-classic.md)
-   + [Connessione a Microsoft Translator](tc-msconf.md)
+   + [Connetti a Microsoft Translator](tc-msconf.md)
    + [Configurazione del framework di integrazione della traduzione](tc-tic.md)
    + [Creazione guidata copia lingua](tc-wizard.md)
    + [Miglioramenti alla traduzione](tc-enhancements.md)
@@ -143,6 +143,7 @@ ht-degree: 19%
    + [Configurazione manuale dell’integrazione con Adobe Target](target-configuring.md)
    + [Prerequisiti per l’integrazione con Adobe Target](target-requirements.md)
    + [Integrazione con Adobe Target tramite Adobe I/O](integration-ims-adobe-io.md)
+   + [Integrazione con Adobe Target tramite Adobe I/O](integration-target-ims-adobe-io.md)
    + [Classificazioni Adobe](adobeanalytics-classifications.md)
    + [Integrazione con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
