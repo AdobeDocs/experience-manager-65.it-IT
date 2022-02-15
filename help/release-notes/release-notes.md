@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Le note per 6.5 contengono informazioni sulla versione, novità, modalità di installazione ed elenchi dettagliati delle modifiche.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3884'
+source-wordcount: '3887'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Di seguito è riportato l’elenco delle correzioni fornite in [!DNL Experience 
 
 >[!WARNING]
 >
->È in fase di sviluppo una nuova versione di questo pacchetto. Il collegamento sarà pubblicato non appena sarà reso disponibile.
+>È in fase di sviluppo una nuova versione del pacchetto &quot;definizione dell&#39;indice&quot;. Il link qui sotto sarà pubblicato non appena sarà disponibile.
 
 Per accedere alla distribuzione di contenuti headless utilizzando Frammenti di contenuto con GraphQL e utilizzare le funzionalità avanzate Modelli di frammenti di contenuto e Editor, installa il pacchetto di definizione dell’indice e reindicizza le seguenti definizioni asincrone dell’indice di AEM:
 
