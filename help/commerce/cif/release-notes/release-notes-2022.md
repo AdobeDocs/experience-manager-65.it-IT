@@ -1,11 +1,10 @@
 ---
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di AEM Content and Commerce
-exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 26df21270e8c586ba21b9bf3e9fc5003facbaade
+source-git-commit: 84ac40a5cd18b1a5c8bb7a93af4106be6bda7631
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 13%
+ht-degree: 45%
 
 ---
 
@@ -32,12 +31,12 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 ### Novità {#what-is-new-january}
 
 * Componenti myAccount migliorati
-* Il componente Product Recommendation supporta ulteriori tipi di pagina (home page, carrello acquisti, conferma ordine)
+* Il componente Consiglio di prodotto supporta ulteriori tipi di pagina (pagina home, carrello acquisti, conferma ordine)
 * **Lista dei desideri**
    * I visitatori registrati possono aggiungere prodotti a una lista dei desideri
-   * La gestione della wishlist e dei suoi prodotti è possibile tramite myAccount
-   * Il pulsante &quot;Aggiungi alla wishlist&quot; può essere abilitato/disabilitato a livello di componente tramite i criteri (ad esempio, product teaser, product detail)
-   * Disponibile come componente core e nella AEM Venia Storefront
+   * È possibile gestire la lista dei desideri e i prodotti contenuti tramite myAccount
+   * Il pulsante “Aggiungi alla lista dei desideri” può essere abilitato/disabilitato a livello di componente tramite i criteri (ad esempio, teaser di prodotto, dettaglio di prodotto)
+   * Disponibile come componente core e in AEM Venia Storefront
 
 ![Lista dei desideri](/help/assets/CIF/wishlist.png)
 
