@@ -1,8 +1,8 @@
 ---
 title: Frammenti di esperienza
-seo-title: Frammenti di esperienza
+seo-title: Experience Fragments
 description: Frammenti di esperienza
-seo-description: 'null'
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 97%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
-
 
 # Frammenti di esperienza{#experience-fragments}
 
@@ -28,10 +27,12 @@ Caratteristiche di un Frammento esperienza:
 * È parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
 * Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
+* Questo modello viene utilizzato per creare il *pagina principale* del frammento esperienza.
 * È composto da uno o più componenti, con layout, in un sistema di paragrafo.
 * Può contenere altri frammenti esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
-* Può avere diverse varianti, che possono condividere contenuti e/o componenti.
+* Puoi creare una o più varianti in base alla pagina principale.
+* Queste varianti possono condividere contenuti e/o componenti.
 * Può essere suddiviso in blocchi predefiniti che possono essere utilizzati in più varianti del frammento.
 
 Puoi utilizzare Frammenti esperienza:
@@ -176,6 +177,10 @@ Per creare un frammento esperienza:
 
    ![xf-04](assets/xf-04.png)
 
+   >[!NOTE]
+   I tag del modello Frammento esperienza non verranno uniti ai tag presenti nella pagina principale Frammento esperienza.
+   Queste sono completamente separate.
+
 1. Fai clic su **Crea**.
 
    Viene visualizzato un messaggio. Seleziona:
@@ -280,7 +285,7 @@ Per creare un nuovo blocco predefinito:
 
 Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni blocco sono disponibili le azioni seguenti:
 
-* Vai a principale: apre la variante principale in una nuova scheda
+* Vai al master: apri la variante della pagina principale in una nuova scheda
 * Rinomina
 * Elimina
 
@@ -345,7 +350,7 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 >[!NOTE]
 Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Esportazione di frammenti esperienza    {#exporting-experience-fragments}
+## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
 Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
 

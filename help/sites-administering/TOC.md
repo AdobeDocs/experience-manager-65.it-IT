@@ -8,9 +8,9 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
+source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 29%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 29%
    + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](adobeanalytics-link.md)
    + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](adobeanalytics-mapping.md)
    + [Configurazione del tracciamento video per Adobe Analytics](adobeanalytics-video.md)
+   + [Integrazione con Adobe Analytics tramite Adobe I/O](integration-analytics-ims-adobe-io.md)
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](scene7-http2faq.md)
    + [Risoluzione dei problemi relativi all’integrazione di Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licenze SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
@@ -146,7 +147,7 @@ ht-degree: 29%
    + [Classificazioni Adobe](adobeanalytics-classifications.md)
    + [Integrazione con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
-   + [Esportazione di frammenti esperienza in Adobe Target](experience-fragments-target.md)
+   + [Esportazione di frammenti di esperienza in Adobe Target](experience-fragments-target.md)
    + [Tecniche consigliate per i modelli e-mail](best-practices-for-email-templates.md)
    + [Integrazione con Livefyre](livefyre.md)
 + Best practice   {#bestpractices}

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 26%
+source-wordcount: '3215'
+ht-degree: 24%
 
 ---
 
@@ -197,6 +197,22 @@ Per visualizzare e gestire i riferimenti nel [!DNL Assets] implementazione, segu
 1. Gli utenti possono spostare o eliminare la risorsa. Quando si sposta o si elimina una risorsa, il numero totale di riferimenti a tutte le risorse o cartelle selezionate viene visualizzato in una finestra di avviso. Quando si elimina una risorsa per la quale i riferimenti non sono ancora stati visualizzati, viene visualizzata una finestra di dialogo di avviso.
 
    ![avviso di eliminazione forzata](assets/delete-referenced-asset.png)
+
+### Gestire gli aggiornamenti alle risorse in DAM remoto {#manage-updates-in-remote-dam}
+
+Dopo [configurazione di una connessione](#configure-a-connection-between-sites-and-assets-deployments) tra DAM remoto e [!DNL Sites] le implementazioni, le risorse in DAM remoto sono rese disponibili nel [!DNL Sites] distribuzione. Puoi quindi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nella [!DNL Sites] distribuzione. Inoltre, se una risorsa su DAM remoto viene utilizzata su un [!DNL Experience Manager Sites] nella pagina , gli aggiornamenti alla risorsa in DAM remoto vengono visualizzati [!DNL Sites] pagina.
+
+Durante lo spostamento di una risorsa da una posizione a un&#39;altra, assicurati di [regolare i riferimenti](/help/assets/manage-assets.md) in modo che la risorsa venga visualizzata sul [!DNL Sites] pagina. Se sposti una risorsa in una posizione non accessibile dal locale [!DNL Sites] distribuzione, la risorsa non viene visualizzata nell’implementazione Sites.
+
+È inoltre possibile aggiornare le proprietà dei metadati di una risorsa in DAM remoto e le modifiche sono disponibili nella versione locale [!DNL Sites] distribuzione.
+
+[!DNL Sites] gli autori possono visualizzare in anteprima gli aggiornamenti disponibili su [!DNL Sites] distribuzione e quindi ripubblica le modifiche per renderle disponibili nella [!DNL Experience Manager] pubblica istanza.
+
+[!DNL Experience Manager] visualizza un indicatore visivo di stato scaduto sulle risorse in `Remote Assets Content Finder` per impedire agli autori del sito di utilizzare la risorsa su un [!DNL Sites] pagina. Se utilizzi una risorsa con stato scaduto su un [!DNL Sites] la risorsa non viene visualizzata nella pagina [!DNL Experience Manager] pubblica istanza.
+
+>[!NOTE]
+>
+>Gli aggiornamenti alle risorse in DAM remoto sono resi disponibili al [!DNL Sites] distribuzione solo se DAM remoto e [!DNL Sites] implementazioni in corso [!DNL Experience Manager].
 
 ## Limitazioni e best practice {#tip-and-limitations}
 
