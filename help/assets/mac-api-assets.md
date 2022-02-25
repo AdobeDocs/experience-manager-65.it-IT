@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] API HTTP.'
+title: '"[!DNL Assets] API HTTP."'
 description: Crea, leggi, aggiorna, elimina, gestisci risorse digitali utilizzando l’API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: b841eb8d1820c1e42d966547280ae9743e773812
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '1723'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Dopo la [!UICONTROL Ora di disattivazione], una risorsa e i relativi rendering n
 
 A [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, quali testi, numeri, date, ecc. Poiché esistono diverse differenze tra `standard` risorse (come immagini o documenti), alcune regole aggiuntive si applicano alla gestione dei frammenti di contenuto.
 
-Per ulteriori informazioni, consulta [Supporto dei frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
+Per ulteriori informazioni consulta [Supporto dei frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
 
 ## Dati, modello {#data-model}
 
