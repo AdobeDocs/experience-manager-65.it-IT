@@ -8,9 +8,9 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
+source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 29%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 29%
    + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](adobeanalytics-link.md)
    + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](adobeanalytics-mapping.md)
    + [Configurazione del tracciamento video per Adobe Analytics](adobeanalytics-video.md)
-   + [Integrazione con Adobe Analytics tramite Adobe I/O](integration-analytics-ims-adobe-io.md)
+   + [Integrazione con Adobe Analytics tramite IMS](integration-analytics-ims.md)
    + [Domande frequenti sulla distribuzione dei contenuti HTTP2](scene7-http2faq.md)
    + [Risoluzione dei problemi relativi all’integrazione di Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licenze SharePoint Connector, avvisi sul copyright e disclaimer](sharepoint-connector-licenses.md)
@@ -143,7 +143,7 @@ ht-degree: 29%
    + [Integrazione con Adobe Marketing Cloud](marketing-cloud.md)
    + [Configurazione manuale dell’integrazione con Adobe Target](target-configuring.md)
    + [Prerequisiti per l’integrazione con Adobe Target](target-requirements.md)
-   + [Integrazione con Adobe Target tramite Adobe I/O](integration-target-ims-adobe-io.md)
+   + [Integrazione con Adobe Target tramite IMS](integration-target-ims.md)
    + [Classificazioni Adobe](adobeanalytics-classifications.md)
    + [Integrazione con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
