@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b02ec58b94e37e0d9902078bbd2387c7b75a208b
+source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3204'
 ht-degree: 6%
 
 ---
@@ -153,6 +153,10 @@ I seguenti problemi sono risolti in [!DNL Dynamic Media]:
 
 * Problemi CSS quando copi un componente in un modulo adattivo (NPR-37812).
 
+**Modello dati modulo**
+
+* Problema durante il salvataggio degli allegati di moduli adattivi collegati a un modello dati modulo al database (CQ-4338561).
+
 **Comunicazione interattiva**
 
 * La scheda Riferimento non elenca alcun riferimento in una comunicazione interattiva (NPR-37995).
@@ -163,15 +167,38 @@ I seguenti problemi sono risolti in [!DNL Dynamic Media]:
 
 * Impossibile convertire PDF in PDFA utilizzando workbench (NPR-37879).
 
+* Problemi relativi ai documenti di ufficio durante l&#39;utilizzo del servizio PDF Generator dopo l&#39;aggiornamento da AEM 6.5.7.0 Forms a AEM 6.5.10.0 Forms (NPR-37758).
+
 **Sicurezza dei documenti**
 
 * La crittografia di PDF non funziona dopo l’aggiornamento alla versione 1.8.0_281 di java (NPR-37716).
 
 **JEE per Foundation**
 
-* Blocco del servizio PDF Generator multithread dopo un periodo di tempo casuale per AEM Forms 6.5.7.0 (NPR-38053).
+* Blocco del servizio PDF Generator multithread dopo un periodo di tempo casuale per AEM 6.5.7.0 Forms (NPR-38053).
 
-* Nella versione 6.5.0.20210518.1.338459 di AEM Workbench, quando utilizzi un punto iniziale e-mail e modifichi nome utente e password, le configurazioni non vengono salvate (NPR-37967).
+* Nella versione 6.5.0.20210518.1.338459 di AEM Workbench, quando utilizzi un punto iniziale e-mail e modifichi nome utente e password, le configurazioni non vengono salvate (NPR-37967, CQ-4336081).
+
+* Il salvataggio dei log comporta un elevato utilizzo della CPU che richiede un riavvio del server (NPR-37868).
+
+* `Gemfire.log` non viene creato in `temp\adobejb_server1\Caching` dopo l&#39;installazione di AEM Forms-6.5.0-0038 (CQ-4340237).
+
+* Dopo l’esecuzione del `ConfigurationManager.sh` comando (CQ-4338323):
+
+   ```TXT
+     [root@localhost bin]# ./ConfigurationManager.sh 
+     bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
+   ```
+
+* AEM 6.5 Forms su RHEL8 non supporta JBOSS EAP 7.3 e MySQL8 (CQ-4331770).
+
+**Flusso di lavoro**
+
+* Problemi durante l’archiviazione dei caratteri speciali UTF-8 come parte di un flusso di lavoro nell’istanza di pubblicazione Forms 6.5.10.0 (NPR-37673) AEM.
+
+* Problema durante la creazione della variabile del tipo ArrayList e del sottotipo JSON (NPR-37600).
+
+* Problemi con il browser XPath/Dot Notation con il passaggio Imposta variabile nel flusso di lavoro in Forms 6.5.9.0 e Forms 6.5.10.0 AEM (CQ-4336582).
 
 
 Per informazioni sugli aggiornamenti di sicurezza, consulta [[!DNL Experience Manager] pagina dei bollettini sulla sicurezza](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -292,7 +319,7 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 
    * [AEM 6.5.12 Siti HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
 
-   * [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip)
+   * [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
 * Come [!DNL Microsoft Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] non supporta installazioni chiavi in mano per [!DNL AEM Forms 6.5.10.0].
 
