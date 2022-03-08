@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
+source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3180'
 ht-degree: 6%
 
 ---
@@ -84,6 +84,7 @@ I seguenti problemi sono risolti in [!DNL Sites]:
 * [Community] Non è possibile fare clic sul contenuto all’interno della tabella per i membri del gruppo (CQ-4334404).
 * [Oak] Il processo di sincronizzazione in standby a freddo non funziona e si verifica un errore di registrazione (CQ-433868).
 * [Interfaccia utente di Platform Foundation] [!DNL Experience Manager] la pagina iniziale viene visualizzata nuovamente quando l&#39;utente seleziona [!DNL Adobe Experience Manager] icona già presente nella pagina iniziale (CQ-4317409).
+* Per un utente (senza autorizzazioni di replica) di eliminare o spostare pagine (anche se le pagine non sono attivate), la `Page Subtree Activation Check` in Configurazione `Page Manager Factory` deve essere abilitato (NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 
