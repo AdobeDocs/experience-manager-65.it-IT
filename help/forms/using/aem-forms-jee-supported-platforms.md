@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3515'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,13 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
    <td>R: Supportato</td>
    <td>Versioni e aggiornamenti minori</td>
   </tr>
- </tbody>
+  <tr>
+   <td> IBM JAVA1.8.0_291 (build 8.0.6.30)<br /> </td>
+   <td>R: Supportato</td>
+   <td>Versioni e aggiornamenti minori</td>
+  </tr>
+
+</tbody>
 </table>
 
 >[!NOTE]
@@ -159,7 +165,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
    <td>Supportata</td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft SQL Server 2016 (obsoleto)</p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
    <td><p>Supportata</p> </td>
   </tr>
@@ -244,7 +250,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
-   <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
+   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>R: Supportato</td>
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
@@ -751,7 +757,7 @@ Informazioni aggiuntive per le patch di terze parti possono essere trovate anche
 
 ## Aggiornamenti della piattaforma {#platform-updates}
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Forms 6.5.12.0 del 3 febbraio 2022:
+Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Forms 6.5.12.0 del 3 marzo 2022:
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
@@ -761,6 +767,7 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
 - JBoss® Enterprise Application Platform (EAP) 7.1.4
 - Fix pack 2 di IBM Content Manager Server 8.5
 - Client IBM Content Manager 8.5
+- Microsoft SQL Server 2016
 
 Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Forms 6.5.10.0 del 7 settembre 2021:
 
@@ -776,11 +783,11 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
 
 ## Cronologia revisioni {#revision-history}
 
-- 03 febbraio 2022
+- 3 marzo 2022
 
    - È stato rimosso il supporto per i seguenti elementi:
       - Macchina virtuale IBM® J9 (build 2.8, JRE 1.8.0)
-      - Oracle Database 12c versione 2
+      - Oracle Database 12c versione 1
       - Database Oracle 18c
       - Directory unificata Oracle (OUD) 11g, versione 2
       - IBM Lotus Domino 9.0

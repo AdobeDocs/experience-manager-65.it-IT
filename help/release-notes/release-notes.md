@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3318'
 ht-degree: 6%
 
 ---
@@ -150,6 +150,12 @@ I seguenti problemi sono risolti in [!DNL Dynamic Media]:
 * Quando si abilita la proprietà Consenti testo RTF per una casella di testo, si verificano problemi con la lunghezza massima consentita per i caratteri (NPR-37825).
 
 * Problemi CSS quando copi un componente in un modulo adattivo (NPR-37812).
+
+* Durante la generazione della traduzione dei moduli adattivi, il file XLIFF generato non contiene la stessa sequenza di testo del modulo adattivo. In alcuni casi è necessario vedere il contesto dei testi. Ciò non è possibile se la sequenza in XLIFF è alfabetica. (NPR-37435).
+
+* Quando un modulo adattivo viene tradotto, i tag HTML sono parte della traduzione. Se un utente commette un errore e i tag non sono validi, l&#39;intero testo non viene visualizzato nel documento di registrazione. (NPR-37499)
+
+* Quando un modulo adattivo viene creato e finalizzato nella lingua di base e la traduzione viene eseguita da un team esterno e importata. Se c&#39;è anche una piccola modifica del testo come addizione o punto mancante (.) viene fatto in per la lingua di base, la traduzione completa manca per tutte le altre lingue. (NPR-37189)
 
 **Modello dati modulo**
 
