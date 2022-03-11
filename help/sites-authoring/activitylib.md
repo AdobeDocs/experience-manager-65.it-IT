@@ -1,8 +1,8 @@
 ---
 title: Gestione delle attività
-seo-title: Gestione delle attività
+seo-title: Managing Activities
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
-seo-description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei tuoi marchi
+seo-description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
 uuid: 0aebf88e-f298-410a-8c82-4076b671624f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
+source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 86%
+source-wordcount: '2001'
+ht-degree: 87%
 
 ---
-
 
 # Gestione delle attività{#managing-activities}
 
@@ -33,7 +32,7 @@ La console Attività consente di creare, organizzare e gestire le [attività](/h
 
 Sulla console Attività, le attività sono organizzate per marchio. Puoi utilizzare i marchi e le cartelle per strutturare l&#39;organizzazione delle attività. Accedi alla console Attività toccando/facendo clic su **Personalizzazione** e toccando/facendo clic su **Attività**.
 
-Le attività sono disponibili in modalità Targeting per [creazione di contenuti mirati](/help/sites-authoring/content-targeting-touch.md), dove è anche possibile creare attività. Le attività create in modalità Targeting vengono visualizzate nella console Attività.
+Le attività sono disponibili in modalità Targeting per [creazione di contenuti mirati](/help/sites-authoring/content-targeting-touch.md), dove puoi anche creare attività. Le attività create in modalità Targeting vengono visualizzate nella console Attività.
 
 Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di attività definito:
 
@@ -48,24 +47,22 @@ Le attività vengono visualizzate con un&#39;etichetta che descrive il tipo di a
 >Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
 >* Se l&#39;opzione **xt_only** è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
-   >
-   >
-* Se le opzioni **xt_only** **non** sono abilitate sul tenant di Adobe Target (clientcode), puoi creare **sia** le attività XT che A/B in AEM.
 >
+>* Se le opzioni **xt_only** **non** sono abilitate sul tenant di Adobe Target (clientcode), puoi creare **sia** le attività XT che A/B in AEM.
 >
-**Nota aggiuntiva:** le opzioni **xt_only** sono un&#39;impostazione applicata a un determinato tenant Target (clientcode) e possono essere modificate solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** le opzioni **xt_only** sono un&#39;impostazione applicata a un determinato tenant Target (clientcode) e possono essere modificate solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
 
 >[!CAUTION]
 >
->È necessario proteggere il nodo delle impostazioni dell&#39;attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>È necessario proteggere il nodo delle impostazioni dell’attività **cq:ActivitySettings** nell’istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
->Per informazioni dettagliate, consultate [Prerequisiti per l&#39;integrazione con  Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings).
+>Vedi [Prerequisiti per l’integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) per informazioni dettagliate.
 
 ## Creazione di un marchio tramite la console Attività {#creating-a-brand-using-the-activities-console}
 
 Consente la creazione di un marchio per cui desideri gestire le attività di marketing.
 
-Quando create un marchio utilizzando la console Attività, questo viene visualizzato anche nella [console Offerte](/help/sites-authoring/offerlib.md), in cui potete creare offerte per le esperienze delle attività.
+Quando crei un marchio utilizzando la console Attività, questo viene visualizzato anche nella [Console Offerte](/help/sites-authoring/offerlib.md) dove puoi creare offerte per le esperienze delle tue attività.
 
 1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Attività**.
 
@@ -84,7 +81,7 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 * **Motore di destinazione:** [AEM](/help/sites-authoring/personalization.md#aem) oppure [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) come motore per il contenuto di destinazione.
 
 * **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
-* **Tipo attività: **Tipo di attività - Test A/B o targeting delle esperienze
+* **Tipo di attività: **Tipo di attività: test A/B o targeting delle esperienze
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
 * **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
@@ -100,7 +97,7 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 
 Per aggiungere un’attività:
 
-1. Tocca o fai clic sul marchio per il quale stai creando l&#39;attività, quindi tocca o fai clic su **Crea **quindi** Crea attività. **Se stai eseguendo una modifica, seleziona l’attività nella schermata Area mastro, quindi fai clic o tocca **Modifica attività**.
+1. Tocca o fai clic sul marchio per il quale stai creando l’attività, quindi tocca o fai clic su **Crea**, quindi su **Crea attività**. Se stai modificando, seleziona l’attività e quindi tocca o fai clic su **Modifica**.
 1. Fornisci le informazioni seguenti e tocca o fai clic su **Avanti**:
 
    * Un nome per l&#39;attività.
@@ -112,7 +109,7 @@ Per aggiungere un’attività:
 1. Aggiungi una o più esperienze all’attività. Tocca o fai clic su **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
 
-   1. Tocca o fai clic su **Seleziona pubblico **e seleziona il segmento a cui si riferisce l&#39;esperienza.
+   1. Tocca o fai clic su **Seleziona pubblico **e seleziona il segmento a cui viene indirizzata l’esperienza.
    1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
 
    1. Tocca o fai clic su **Avanti**.
@@ -137,7 +134,7 @@ Per aggiungere un’attività:
    * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora di fine dell’attività.
 
 1. Per specificare una priorità per l&#39;attività, usa il cursore per selezionare un valore **Basso**, **Medio** o **Alto**.
-1. Se utilizzi Adobe Target come motore di destinazione, seleziona cosa desideri misurare con questa attività. Per ulteriori informazioni sulle metriche di successo disponibili, vedere [Configurazione dell&#39;attività e impostazione degli obiettivi](/help/sites-authoring/content-targeting-touch.md). Devi selezionare almeno un obiettivo.
+1. Se utilizzi Adobe Target come motore di destinazione, seleziona cosa desideri misurare con questa attività. Vedi [Configurazione dell’attività e definizione degli obiettivi](/help/sites-authoring/content-targeting-touch.md) per ulteriori informazioni sulle metriche di successo disponibili. Devi selezionare almeno un obiettivo.
 1. Tocca o fai clic su **Salva**.
 
    >[!NOTE]
@@ -150,7 +147,7 @@ Per aggiungere un’attività:
 
 >[!NOTE]
 >
->Quando si annulla la pubblicazione di un&#39;attività, lo stato dell&#39;attività cambia solo se si aggiorna la pagina.
+>Quando si annulla la pubblicazione di un’attività, lo stato dell’attività non cambia a meno che non si aggiorni la pagina.
 
 Per pubblicare o annullare la pubblicazione di attività:
 
@@ -161,31 +158,31 @@ Per pubblicare o annullare la pubblicazione di attività:
 
 1. Per pubblicare, tocca o fai clic su **Pubblica**. Per annullare la pubblicazione, tocca o fai clic su **Annulla pubblicazione**. L&#39;attività o le attività vengono pubblicate o la loro pubblicazione viene annullata e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento).
 
-## Attività su istanze autore e pubblicazione  {#activities-on-author-and-publish-instances}
+## Attività su istanze autore e pubblicazione {#activities-on-author-and-publish-instances}
 
 Quando viene attivata un&#39;attività che utilizza il motore di destinazione di Adobe Target, viene creata una seconda attività sull&#39;istanza di pubblicazione:
 
 * L&#39;attività sull&#39;istanza autore traccia l&#39;attività sull&#39;istanza autore ed è utile per simulare l&#39;esperienza del visitatore. L&#39;analisi registrata per questa attività riflette solo ciò che viene eseguito nell&#39;istanza dell&#39;autore.
 * L&#39;attività sull&#39;istanza di pubblicazione riflette e risponde all&#39;attività sul server di pubblicazione. Questa è l&#39;attività che viene eseguita sul sito web pubblico. Solo l&#39;attività di pubblicazione è rilevante per tracciare e analizzare l&#39;utilizzo del sito pubblico attuale.
 
-## Prestazioni di visualizzazione e conversione dell&#39;esperienza vincente (test A/B)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Prestazioni di visualizzazione e conversione dell&#39;esperienza vincente (test A/B) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Puoi visualizzare le prestazioni di tutte le attività di Adobe Target (XT o A/B). Se utilizzi i test A/B, puoi inoltre convertire l&#39;esperienza vincente, che diventa l&#39;esperienza predefinita.
 
 Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza vincente:
 
-1. In **Personalizzazione**, fare clic o toccare **Attività** per passare alla console **Attività**.
+1. In **Personalizzazione**, tocca o fai clic su **Attività** per passare al **Attività** console.
 1. Tocca o fai clic sul marchio di cui desideri visualizzare le attività.
 1. Seleziona l’attività e tocca o fai clic su **Visualizza proprietà**, quindi seleziona la scheda **Rapporti** e scegli l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Tocca o fai clic sul collegamento **Premi vincitore** per inviare l&#39;esperienza come esperienza predefinita.
+1. Tocca o fai clic su **Vincitore push** per inviare quell’esperienza come esperienza predefinita.
 
    La conversione del vincitore comporta le seguenti operazioni:
 
    * Disattiva l&#39;attività in corso
-   * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. Il contenuto dell&#39;esperienza vincente diventa parte della pagina normale **senza** targeting.
+   * Modifica tutte le pagine e sostituisce il contenuto con targeting con il contenuto effettivo dell&#39;esperienza vincente. Il contenuto dell’esperienza vincente diventa parte della pagina normale **senza** targeting.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -193,7 +190,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
 1. Tocca o fai clic su **Sì** per confermare che desideri convertire il vincitore, disattivando l&#39;esperienza attuale e sostituendola con il contenuto dell&#39;esperienza vincente.
 
-## Sincronizzazione delle attività con Adobe Target  {#synchronizing-activities-with-adobe-target}
+## Sincronizzazione delle attività con Adobe Target {#synchronizing-activities-with-adobe-target}
 
 Le attività che utilizzano il motore di destinazione di Adobe Target vengono sincronizzate con le campagne di Adobe Target. Un&#39;attività viene sincronizzata automaticamente con Adobe Target quando vengono soddisfatte le seguenti condizioni:
 
@@ -206,7 +203,7 @@ Queste condizioni valgono per le attività relative alle istanze autore e pubbli
 Quando un&#39;attività è sincronizzata, una campagna corrispondente viene creata in Adobe Target:
 
 * Le attività sull&#39;istanza di pubblicazione hanno lo stesso nome della campagna Adobe Target corrispondente.
-* Le attività nell&#39;istanza di creazione corrispondono a campagne Target con lo stesso nome con il suffisso `_author`.
+* Le attività nell’istanza di authoring corrispondono alle campagne Target con lo stesso nome con `_author` suffisso
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -214,9 +211,9 @@ Le attività _author sono sincronizzate immediatamente quando l&#39;attività vi
 
 Le attività di pubblicazione vengono sincronizzate quando l&#39;attività viene pubblicata nell&#39;istanza di pubblicazione AEM.
 
-## Risoluzione dei problemi della sincronizzazione attività  {#troubleshooting-activity-synchronization}
+## Risoluzione dei problemi della sincronizzazione attività {#troubleshooting-activity-synchronization}
 
-Quando AEM sincronizza un&#39;attività con  Adobe Target, AEM include una proprietà dell&#39;attività denominata `thirdPartyId`. Il valore di questa proprietà è basato sul percorso dell&#39;attività nel repository AEM. Non ci sono due campagne in Adobe Target che possono avere lo stesso valore per la proprietà `thirdPartyId`. Pertanto, un&#39;attività non sarà sincronizzata se una campagna esistente (di tipo diverso AB, XT) in Adobe Target utilizza lo stesso valore per `thirdPartyId`.
+Quando AEM sincronizza un’attività con Adobe Target, AEM include una proprietà dell’attività denominata `thirdPartyId`. Il valore di questa proprietà è basato sul percorso dell&#39;attività nel repository AEM. Non ci sono due campagne in Adobe Target che possono avere lo stesso valore per la proprietà `thirdPartyId`. Pertanto, un&#39;attività non sarà sincronizzata se una campagna esistente (di tipo diverso AB, XT) in Adobe Target utilizza lo stesso valore per `thirdPartyId`.
 
 Questa situazione può verificarsi nelle seguenti circostanze:
 
@@ -232,9 +229,8 @@ Per evitare problemi di sincronizzazione, utilizza sempre nomi univoci per le at
 
 >[!NOTE]
 >
->Quando create una campagna in  Adobe Target, assegna una proprietà denominata `thirdPartyId t`a ogni campagna. Quando elimini la campagna in Adobe Target, `thirdPartyId` non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, assegnate a ciascuna campagna un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in tipi di campagne diversi.
+>Quando crei una campagna in Adobe Target, assegna una proprietà denominata `thirdPartyId t`Per ogni campagna. Quando elimini la campagna in Adobe Target, `thirdPartyId` non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, denomina ogni campagna con un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in diversi tipi di campagne.
 >
 >Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascriverai la campagna esistente.
 >
 >Se durante la sincronizzazione si verifica l’errore “Richiesta non riuscita. `thirdPartyId` esiste già”, modifica il nome della campagna ed esegui di nuovo la sincronizzazione.
-
