@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 19eaabb55f11ea8080a545d994795e30817a51fb
+source-git-commit: f4e6a1855fad76df8102751b14e9ac6982315937
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3786'
+ht-degree: 18%
 
 ---
 
@@ -246,45 +246,65 @@ Durante lo spostamento di una risorsa da una posizione a un&#39;altra, assicurat
 
 ## Domande frequenti  {#frequently-asked-questions}
 
-### Configurare le risorse collegate se è necessario utilizzare le risorse disponibili nel [!DNL Sites] distribuzione?
++++**Configurare le risorse collegate se è necessario utilizzare le risorse disponibili nel [!DNL Sites] distribuzione?**
 
 In questo caso non è necessario configurare le risorse collegate. Puoi utilizzare le risorse disponibili nella sezione [!DNL Sites] distribuzione.
 
-### Quando è necessario configurare la funzione Risorse collegate?
++++
+
++++**Quando è necessario configurare la funzione Risorse collegate?**
 
 Configurare la funzione Risorse collegate solo quando è necessario utilizzare le risorse disponibili in un’implementazione DAM remota su un [!DNL Sites] distribuzione.
 
-### Quanti [!DNL Sites] le implementazioni possono connettersi a un’implementazione DAM remota dopo aver configurato le risorse collegate?
++++
+
++++**Quanti [!DNL Sites] le implementazioni possono connettersi a un’implementazione DAM remota dopo aver configurato le risorse collegate?**
 
 È possibile collegare un massimo di quattro [!DNL Sites] implementazioni in un’implementazione DAM remota dopo la configurazione di Risorse collegate. Per ulteriori informazioni, consulta [Architettura delle risorse collegate](#connected-assets-architecture).
 
-### Quante distribuzioni DAM remote è possibile connettersi a un [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
++++
+
++++**Quante distribuzioni DAM remote è possibile connettersi a un [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?**
 
 Puoi collegare una distribuzione DAM remota a un [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate. Per ulteriori informazioni, consulta [Architettura delle risorse collegate](#connected-assets-architecture).
 
-### È possibile utilizzare le risorse Dynamic Media dalla [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
++++
+
++++**È possibile utilizzare le risorse Dynamic Media dalla [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?**
 
 Dopo aver configurato le risorse collegate, [!DNL Dynamic Media] le risorse sono disponibili su [!DNL Sites] distribuzione in modalità di sola lettura. Di conseguenza, non puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse in [!DNL Sites] distribuzione. Per ulteriori informazioni, consulta [Configurare una connessione tra le implementazioni di Sites e Dynamic Media](#dynamic-media-assets).
 
-### È possibile utilizzare le risorse dei tipi di formato Immagine e Documento dalla distribuzione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
++++
+
++++**È possibile utilizzare le risorse dei tipi di formato Immagine e Documento dalla distribuzione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?**
 
 Sì, è possibile utilizzare le risorse dei tipi di formato immagine e documento dalla distribuzione remota di DAM nella [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate.
 
-### È possibile utilizzare frammenti di contenuto e risorse video dall’implementazione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
++++
+
++++**È possibile utilizzare frammenti di contenuto e risorse video dall’implementazione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?**
 
 No, non è possibile utilizzare frammenti di contenuto e risorse video dall’implementazione remota di DAM nel [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate.
 
-### È possibile utilizzare le risorse Dynamic Media dall’implementazione remota di DAM nel [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?
++++
+
++++**È possibile utilizzare le risorse Dynamic Media dall’implementazione remota di DAM nel [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate?**
 
 Sì, è possibile configurare e utilizzare le risorse immagini Dynamic Media dalla distribuzione remota di DAM in [!DNL Sites] distribuzione dopo la configurazione delle risorse collegate. Per ulteriori informazioni, consulta [Configurare una connessione tra le implementazioni di Sites e Dynamic Media](#dynamic-media-assets).
 
-### Dopo aver configurato le risorse collegate, puoi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote?
++++
+
++++**Dopo aver configurato le risorse collegate, puoi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote?**
 
 Sì, dopo aver configurato le risorse collegate, puoi eseguire le operazioni di aggiornamento, eliminazione, ridenominazione e spostamento sulle risorse o cartelle DAM remote. Gli aggiornamenti, con un certo ritardo, sono disponibili automaticamente nell’implementazione di Sites. Per ulteriori informazioni, consulta [Gestire gli aggiornamenti alle risorse in DAM remoto](#handling-updates-to-remote-assets).
 
-### Dopo aver configurato le risorse collegate, puoi aggiungere o modificare le risorse sul tuo [!DNL Sites] e renderli disponibili nell’implementazione remota di DAM?
++++
+
++++**Dopo aver configurato le risorse collegate, puoi aggiungere o modificare le risorse sul tuo [!DNL Sites] e renderli disponibili nell’implementazione remota di DAM?**
 
 Puoi aggiungere risorse al [!DNL Sites] tuttavia, tali risorse non possono essere rese disponibili per l’implementazione remota di DAM.
+
++++
 
 ## Limitazioni e best practice {#tip-and-limitations}
 
