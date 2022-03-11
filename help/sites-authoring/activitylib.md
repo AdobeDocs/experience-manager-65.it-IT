@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
+source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 87%
+source-wordcount: '2000'
+ht-degree: 86%
 
 ---
 
@@ -97,7 +97,7 @@ Aggiungi un&#39;attività o modifica un&#39;attività esistente per concentrare 
 
 Per aggiungere un’attività:
 
-1. Tocca o fai clic sul marchio per il quale stai creando l’attività, quindi tocca o fai clic su **Crea**, quindi su **Crea attività**. Se stai modificando, seleziona l’attività e quindi tocca o fai clic su **Modifica**.
+1. Tocca o fai clic sul marchio per il quale stai creando l’attività, quindi tocca o fai clic su **Crea** e poi **Crea attività**. Se stai modificando, seleziona l’attività e quindi tocca o fai clic su **Modifica**.
 1. Fornisci le informazioni seguenti e tocca o fai clic su **Avanti**:
 
    * Un nome per l&#39;attività.
