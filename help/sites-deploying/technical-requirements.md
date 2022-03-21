@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cda5e0b545903333d928f14e043a931898d87dc3
+source-git-commit: 077540ed65f31f1bb4f0063fb6ac8bddb76595da
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3314'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,6 @@ Requisiti minimi per l’esecuzione di Adobe Experience Manager:
 >
 >* I casi di utilizzo delle risorse digitali necessitano di una maggiore memoria di base. Vedi [Implementazione e manutenzione](/help/sites-deploying/deploy.md#default-local-install) per i dettagli.
 >* [Pacchetto aggiuntivo di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) richiede 15 GB di spazio temporaneo.
-
 >
 
 
@@ -138,8 +137,8 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 
 | **Platform** | **Livello di supporto** | **Collegamento** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[1]` | [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
-| Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[1]` | [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[1]` |  |
+| Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[1]` |  |
 | Oracle Java SE 11 JDK - 64 bit | R: Supportato `[2]` | [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: Non supportato `[2]` |
 | Oracle Java SE 9 JDK | Z: Non supportato `[2]` |
@@ -149,7 +148,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 
 1. Il supporto e la distribuzione di Azul Zulu Build di OpenJDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando le build Azul Zulu di OpenJDK, a partire da AEM 6.5 SP9 risp. Consulta la sezione [Supporto di Azul Java per le domande e risposte di Adobe Experience Manager](assets/adobe-azul-openjdk-license-agreement.pdf) per ulteriori informazioni.
 
-1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, compresi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando l&#39;Oracle tecnologia Java SE **fino a dicembre 2022**. Consulta la sezione [Oracle di supporto Java per le domande e risposte di Adobe Experience Manager](assets/adobe-oracle-java-license-agreement.pdf) per ulteriori informazioni.
+1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando la tecnologia Oracle Java SE. Consulta la sezione [Oracle di supporto Java per le domande e risposte di Adobe Experience Manager](assets/adobe-oracle-java-license-agreement.pdf) per ulteriori informazioni.
 
 1. IBM JRE è supportato solo insieme a WebSphere Application Server.
 
@@ -517,7 +516,6 @@ Per Windows x86:
 >* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >* Il servizio PDF Generator non supporta Microsoft Windows 10.
-
 >
 
 
