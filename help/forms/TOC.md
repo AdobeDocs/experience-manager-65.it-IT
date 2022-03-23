@@ -8,10 +8,10 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 4%
+source-wordcount: '3775'
+ht-degree: 5%
 
 ---
 
@@ -173,7 +173,6 @@ ht-degree: 4%
    + [Utilizzo di espressioni SOM nei moduli adattivi](using/using-som-expressions-adaptive-forms.md)
    + [Aggiunta di informazioni dai dati utente ai metadati di invio del modulo](using/form-submission-metadata.md)
    + [Supporto XFA nei moduli adattivi basati su XDP](using/xfa-api-supported-in-adaptive-form.md)
-   + [Modifica del contenuto della pagina Zero in Designer](using/changing-page-zero-content-designer.md)
    + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](using/rule-editor-access-user-groups.md)
    + [Utilizzo AEM flusso di lavoro di traduzione per localizzare i moduli adattivi e il documento di registrazione](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [Verifica automatica dei moduli adattivi](using/calvin.md)
@@ -373,6 +372,7 @@ ht-degree: 4%
    + [Abilita AEM per cercare documenti PDF e Microsoft Office protetti da protezione dei documenti](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento per conto di un altro utente](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
+   + [Guida di Forms Designer](using/forms-designer-help.md)
    + [Utilizzo di Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [Designer - Esercitazioni di avvio rapido](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [Designer - Esempi](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -380,6 +380,7 @@ ht-degree: 4%
    + [Designer - Riferimento script](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [Designer - Riferimento FormCalc](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Uso della firma digitale nei moduli di HTML5](using/scribble-signature.md)
+   + [Modifica del contenuto della pagina Zero in Designer](using/changing-page-zero-content-designer.md)
 + Personalizzare AEM Forms {#customize-aem-forms}
    + [Framework di aspetto per i moduli adattivi e HTML5](using/introduction-widgets.md)
    + [Creazione di un modello di modulo adattivo personalizzato](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 4%
          + [Configurazione e risoluzione dei problemi di un AEM Forms su un cluster di server JEE](developing/configure-server-cluster.md)
          + [Generazione e utilizzo degli hash nei PDF forms dinamici](developing/hashing-forms.md)
          + [Trasmissione delle credenziali tramite intestazioni WS-Security](developing/passing-credentials.md)
-
