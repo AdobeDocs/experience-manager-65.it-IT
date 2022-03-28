@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida utente all’authoring di AEM 6.5
 breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
-feature: 'Authoring  '
+feature: Authoring
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 88%
+source-wordcount: '298'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 88%
 # Guida utente all’authoring di AEM 6.5 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per AEM authoring {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
@@ -27,8 +27,8 @@ ht-degree: 88%
    + [Operazioni di base](basic-handling.md)
    + [Ricerca](search.md)
    + [Configurazione dell’ambiente dell’account](user-properties.md)
-   + [Casella in entrata  ](inbox.md)
-   + [Scelte rapide da tastiera per le console  ](keyboard-shortcuts.md)
+   + [Casella in entrata](inbox.md)
+   + [Scelte rapide da tastiera per console](keyboard-shortcuts.md)
    + [Selezione dell’interfaccia](select-ui.md)
 + Authoring {#authoring}
    + [Ambiente e strumenti di authoring](author-environment-tools.md)
@@ -40,20 +40,20 @@ ht-degree: 88%
    + [Pubblicazione delle pagine](publishing-pages.md)
    + [Authoring delle pagine con frammenti di contenuto](content-fragments.md)
    + [Frammenti di esperienza](experience-fragments.md)
-   + [Esportazione in formato CSV  ](csv-export.md)
+   + [Esportazione in formato CSV](csv-export.md)
    + [Componenti](default-components.md)
    + [Authoring di una pagina per dispositivi mobili](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
    + [Best practice  ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
-   + [Utilizzo dei tag  ](tags.md)
+   + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
    + [Utilizzo delle versioni di una pagina  ](working-with-page-versions.md)
    + [Differenze tra pagine ](page-diff.md)
    + [Console Componenti](default-components-console.md)
-   + [Layout reattivo  ](responsive-layout.md)
+   + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.1)](creating-accessible-content.md)
    + [Configurazione dei componenti in modalità Progettazione](default-components-designmode.md)
@@ -75,7 +75,7 @@ ht-degree: 88%
    + [Utilizzo dei flussi di lavoro](workflows.md)
    + [Applicazione dei flussi di lavoro alle pagine](workflows-applying.md)
    + [Partecipazione ai flussi di lavoro](workflows-participating.md)
-   + [Utilizzo dei flussi di lavoro del progetto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
+   + [Utilizzo dei flussi di lavoro per i progetti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Prestazioni pagina {#page-performance}
    + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Analisi delle prestazioni della pagina](ci-analyze.md)

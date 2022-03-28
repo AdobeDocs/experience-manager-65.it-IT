@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida alla distribuzione di AEM 6.5
 breadcrumb-title: Guida alla distribuzione
 user-guide-description: Informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5, inclusa la distribuzione cloud di Adobe Managed Services.
-feature: Distribuzione
+feature: Deploying
 role: Architect
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 16%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 16%
    + [Risoluzione dei problemi degli indici Oak](troubleshooting-oak-indexes.md)
    + [Consenso alla raccolta di statistiche di utilizzo aggregate](opt-in-aggregated-usage-statistics.md)
    + [Risoluzione dei problemi](troubleshooting.md)
-+ Configurazione AEM {#configuring}
++ Configurazione di AEM {#configuring}
    + [Concetti di configurazione di base](configuring.md)
    + [Registrazione](configure-logging.md)
    + [Configurazione di OSGi](configuring-osgi.md)
@@ -80,7 +80,7 @@ ht-degree: 16%
    + [Aggiornamento di codice e personalizzazioni](upgrading-code-and-customizations.md)
    + [Passaggi di aggiornamento per le installazioni di Application Server](app-server-upgrade.md)
    + [Elenco dei bundle obsoleti disinstallati dopo l&#39;aggiornamento](obsolete-bundles.md)
-+ Ristrutturazione archivio {#restructuring}
++ Ristrutturazione dell’archivio {#restructuring}
    + [Ristrutturazione dell’archivio in AEM 6.5](repository-restructuring.md)
    + [Ristrutturazione dell’archivio comune in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio siti in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)

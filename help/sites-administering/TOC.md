@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: Guida utente all’amministrazione di AEM 6.5
 breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 29%

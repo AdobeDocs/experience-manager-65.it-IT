@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida utente all’authoring dell’interfaccia classica AEM 6.5
 user-guide-description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
-feature: 'Authoring  '
+feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 84%
 
 ---
@@ -26,8 +26,8 @@ ht-degree: 84%
    + [Configurazione dell’ambiente dell’account](author-env-user-props.md)
    + [Selezione dell’interfaccia](author-env-select-ui.md)
    + [Ricerca](author-env-search.md)
-   + [Casella in entrata  ](author-env-inbox.md)
-   + [Scelte rapide da tastiera per le console  ](author-env-keyboard-shortcuts.md)
+   + [Casella in entrata](author-env-inbox.md)
+   + [Scelte rapide da tastiera per console](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Authoring delle pagine](classic-page-author.md)
    + [Ambiente e strumenti di authoring](classic-page-author-env-tools.md)
@@ -44,9 +44,9 @@ ht-degree: 84%
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
-   + [Layout reattivo  ](classic-page-author-responsive-layout.md)
+   + [Layout reattivo](classic-page-author-responsive-layout.md)
    + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
-   + [Utilizzo dei tag  ](classic-feature-tags.md)
+   + [Utilizzo dei tag](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](classic-page-author-design-mode.md)
    + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](classic-feature-search-promote.md)
