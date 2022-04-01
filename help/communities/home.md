@@ -1,20 +1,19 @@
 ---
 title: Guida a Adobe Experience Manager 6.5 Communities
-seo-title: Guida a Adobe Experience Manager 6.5 Communities
-description: Questa guida descrive tutte le attività di AEM Communities, ad esempio la creazione di esperienze online quali forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
-seo-description: Include tutte le attività di AEM Communities, come la creazione di esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
+seo-title: Adobe Experience Manager 6.5 Communities Guide
+description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. Consulta la nostra guida che spiega come distribuire, amministrare, sviluppare e creare community.
+seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 29%
+source-wordcount: '381'
+ht-degree: 38%
 
 ---
 
 # Guida a Adobe Experience Manager 6.5 Communities
 
-Questa guida descrive tutte le attività di AEM Communities, ad esempio la creazione di esperienze online quali forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
+Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. Consulta la nostra guida che spiega come distribuire, amministrare, sviluppare e creare community.
 
 ## Articoli principali AEM
 
@@ -49,6 +48,6 @@ Questa guida descrive tutte le attività di AEM Communities, ad esempio la creaz
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

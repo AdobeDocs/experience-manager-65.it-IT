@@ -1,25 +1,25 @@
 ---
 title: Guida di Assets
-description: Questa guida descrive tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
+description: Crea, gestisci, elabora e distribuisci risorse digitali in Experience Manager. Queste guide descrivono le best practice, le funzioni di accessibilità e come utilizzare le risorse AEM 6.5 .
 user-guide-title: Guida di Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 20%
+source-wordcount: '344'
+ht-degree: 21%
 
 ---
 
 # Guida di Assets
 
-Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
+Crea, gestisci, elabora e distribuisci risorse digitali in Experience Manager. Queste guide descrivono le best practice, le funzioni di accessibilità e come utilizzare le risorse AEM 6.5 .
 
-## Articoli chiave [!DNL Experience Manager]
+## Chiave [!DNL Experience Manager] articoli
 
 * [Note sulla versione di Experience Manager 6.5](/help/release-notes/home.md)
-* [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it)
 * [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 guide
@@ -38,9 +38,9 @@ Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad es
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto Experience Manager. |
 | [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework, ad Experience Manager. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-| [Experience Manager - Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida illustra come condividere i contenuti generati dagli utenti con [!DNL Livefyre]. |
+| [Experience Manager - Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida mostra come condividere contenuti generati dagli utenti con [!DNL Livefyre]. |
 
-## Risorse [!DNL Experience Manager] chiave
+## Chiave [!DNL Experience Manager] risorse
 
 * [Tutorials video di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)

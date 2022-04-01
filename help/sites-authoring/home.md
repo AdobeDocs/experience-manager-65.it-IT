@@ -1,20 +1,19 @@
 ---
 title: Guida utente all’authoring di AEM 6.5
-seo-title: Guida utente all’authoring di AEM 6.5
-description: 'Questa guida spiega i concetti di authoring in AEM. '
-seo-description: 'Spiega i concetti di authoring in AEM. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Authoring User Guide
+description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM 6.5. Troverai anche informazioni sull’utilizzo di tag, modelli e altre funzioni della pagina.
+seo-description: Explains the concepts of authoring in AEM.
+exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 36%
+source-wordcount: '373'
+ht-degree: 33%
 
 ---
 
-
 # Guida utente all’authoring di AEM 6.5
 
-Questa guida spiega i concetti di authoring in AEM.
+Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM 6.5. Troverai anche informazioni sull’utilizzo di tag, modelli e altre funzioni della pagina.
 
 ## Articoli principali AEM
 
@@ -49,6 +48,6 @@ Questa guida spiega i concetti di authoring in AEM.
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

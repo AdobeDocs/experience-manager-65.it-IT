@@ -1,20 +1,19 @@
 ---
 title: Guida utente alla gestione di AEM 6.5
-seo-title: Guida utente alla gestione di AEM 6.5
-description: 'Questa guida illustra come gestire con successo un progetto AEM '
-seo-description: Descrive come gestire con successo un progetto AEM
+seo-title: AEM 6.5 Managing User Guide
+description: 'Scopri come gestire un progetto AEM con successo, con il supporto delle risorse chiave e una raccolta completa di guide utente AEM 6.5. '
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 36%
+source-wordcount: '367'
+ht-degree: 34%
 
 ---
 
 # Guida utente alla gestione di AEM 6.5
 
-Questa guida illustra come gestire con successo un progetto AEM
+Scopri come gestire un progetto AEM con successo, con il supporto delle risorse chiave e una raccolta completa di guide utente AEM 6.5.
 
 ## Articoli principali AEM
 
@@ -49,6 +48,6 @@ Questa guida illustra come gestire con successo un progetto AEM
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
