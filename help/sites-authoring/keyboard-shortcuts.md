@@ -1,22 +1,21 @@
 ---
 title: 'Scelte rapide da tastiera per le console  '
-seo-title: 'Scelte rapide da tastiera per le console  '
+seo-title: Keyboard Shortcuts for Consoles
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
-seo-description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
+source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
-
 
 # Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
 
@@ -42,7 +41,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di selezionare l’opzione del [selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector) da visualizzare |
-|  | &grave; | Nasconde la barra |
+|  | ``` ` ``` | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
@@ -96,4 +95,3 @@ Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determin
 >[!NOTE]
 >
 >Le scelte rapide per la navigazione nella vista a colonne e nella struttura contenuto sono sempre attive.
-
