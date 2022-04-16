@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 0%
@@ -202,7 +202,7 @@ Se si personalizza la [!UICONTROL Risorsa di aggiornamento DAM] flusso di lavoro
 </policymap>
 ```
 
-Inoltre, imposta il percorso della cartella temporanea di ImageMagick nel `configure.xml` o impostando la variabile di ambiente `MAGIC_TEMPORARY_PATH`) in una partizione disco con spazio sufficiente e IOPS.
+Inoltre, imposta il percorso della cartella temporanea di ImageMagick nel `configure.xml` o impostando la variabile di ambiente `MAGICK_TEMPORARY_PATH`) in una partizione disco con spazio sufficiente e IOPS.
 
 >[!CAUTION]
 >
