@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ Per effettuare l’aggiornamento a una nuova versione del connettore S3 1.10.x (
    >
    >I nomi di file sopra riportati sono utilizzati solo a scopo illustrativo.
 
-1. Scarica la versione più recente del pacchetto di funzioni 1.8.x dal [Archivio Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Scarica la versione più recente del pacchetto di funzioni 1.8.x dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. Decomprimi il contenuto in una cartella separata, quindi accedi a `jcr_root/libs/system/install/15`.
 1. Copia i file jar in **&lt;aem-install>**/crx-quickstart/install/15 nella cartella di installazione AEM.
 1. Avvia AEM e controlla la funzionalità del connettore.
@@ -286,7 +286,7 @@ La cache locale verrà controllata per individuare il record del file/BLOB richi
 
 **Caricamento asincrono**
 
-La cache supporta caricamenti asincroni in DataStore. I file vengono memorizzati localmente, nella cache (nel file system) e inizia un processo asincrono per caricare il file. Il numero di caricamenti asincroni è limitato dalle dimensioni della cache di staging. La dimensione della cache di staging viene configurata utilizzando il `stagingSplitPercentage` parametro . Questo parametro definisce la percentuale di dimensione della cache da utilizzare per la cache di staging. Inoltre, la percentuale di cache disponibile per i download viene calcolata come **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+La cache supporta caricamenti asincroni in DataStore. I file vengono memorizzati localmente, nella cache (nel file system) e inizia un processo asincrono per caricare il file. Il numero di caricamenti asincroni è limitato dalle dimensioni della cache di staging. La dimensione della cache di staging viene configurata utilizzando il `stagingSplitPercentage` parametro . Questo parametro definisce la percentuale di dimensione della cache da utilizzare per la cache di staging. Inoltre, la percentuale di cache disponibile per i download viene calcolata come **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 I caricamenti asincroni sono multithread e il numero di thread è configurato utilizzando il `uploadThreads` parametro .
 
