@@ -1,14 +1,12 @@
 ---
 title: Giorno difficile
-seo-title: Tough Day
 description: Il test Tough Day simula il carico giornaliero di circa 1000 autori in uno scenario peggiore con tutte le operazioni in corso allo stesso tempo.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 2%
 
 ---
@@ -143,7 +141,7 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 
 La personalizzazione può essere ottenuta in due modi: parametri della riga di comando o file di configurazione dello stile. **I file di configurazione vengono generalmente utilizzati per le suite personalizzate di grandi dimensioni e sostituiranno i parametri predefiniti del Giorno 2 difficile. I parametri della riga di comando sostituiscono sia i file di configurazione che i parametri predefiniti.**
 
-L’unico modo per salvare una configurazione di test è copiarla in formato yaml. Per ulteriori dettagli, consulta [giorno.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) configurazione e gli esempi di configurazione dello schema nelle sezioni seguenti.
+L’unico modo per salvare una configurazione di test è copiarla in formato yaml.
 
 ### Aggiunta di un nuovo test {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ Il Dough Day 2 restituisce sia le metriche di test che i registri. Per ulteriori
 
 ### Metriche di test {#test-metrics}
 
-Al momento il &quot;Dough Day 2&quot; indica 9 metriche di test che puoi valutare. Metriche con ***** i simboli vengono segnalati solo dopo l&#39;esecuzione corretta:
+Al momento il &quot;Dough Day 2&quot; indica 9 metriche di test che puoi valutare. Metriche con **&#42;** i simboli vengono segnalati solo dopo l&#39;esecuzione corretta:
 
 | **Nome** | **Descrizione** |
 |---|---|
 | Timestamp | Timestamp dell&#39;ultima esecuzione del test completata. |
 | Passato | Numero di esecuzioni riuscite. |
 | Non riuscito | Numero di esecuzioni non riuscite. |
-| Min* | Durata inferiore dell’esecuzione del test. |
-| Max* | Durata massima dell’esecuzione del test. |
-| Mediana* | Durata media calcolata di tutte le esecuzioni dei test. |
-| Media* | Durata media calcolata di tutte le esecuzioni dei test. |
-| StdDev* | La deviazione standard. |
-| 90p* | 90 percentile. |
-| 99p* | 99 percentile. |
-| 99,9p* | 99,9 percentile. |
-| Throughput reale* | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
+| Min&#42; | Durata inferiore dell’esecuzione del test. |
+| Max&#42; | Durata massima dell’esecuzione del test. |
+| Mediana&#42; | Durata media calcolata di tutte le esecuzioni dei test. |
+| Media&#42; | Durata media calcolata di tutte le esecuzioni dei test. |
+| StdDev&#42; | La deviazione standard. |
+| 90p&#42; | 90 percentile. |
+| 99p&#42; | 99 percentile. |
+| 99,9p&#42; | 99,9 percentile. |
+| Throughput reale&#42; | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
 
 Queste metriche vengono scritte con l’aiuto degli editori che possono essere aggiunti con `add` (simile all’aggiunta di test). Al momento sono disponibili due opzioni:
 
