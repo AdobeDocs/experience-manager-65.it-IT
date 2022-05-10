@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 9%
+source-wordcount: '1751'
+ht-degree: 10%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 9%
 
 [!DNL Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME. Per integrare [!DNL Assets] con altre soluzioni DAM (Digital Asset Management) conformi agli standard e software desktop, utilizza Adobe [!DNL Extensible Metadata Platform] XMP.
 
-Utilizza la legenda per comprendere il livello di supporto.
+La legenda seguente indica i diversi livelli di supporto.
 
 | Livello di supporto | Descrizione |
 | :-----------: | ------------------------------ |
-| . | Supportata |
-| * | Supportato con funzioni aggiuntive |
-| - | Non applicabile |
+| ✓ | Funzione supportata |
+| &#42; | Supportato con funzioni aggiuntive |
+| − | Non applicabile |
 
 ## Formati immagine raster supportati in [!DNL Experience Manager] {#supported-raster-image-formats}
 
@@ -31,19 +31,19 @@ Formati immagine raster supportati in [!DNL Assets] sono:
 
 | Formato | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione di miniature | Modifica | Write-back metadati | Approfondimenti |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
-| PNG | . | . | . | . | . | . | . |
-| GIF | . | . | . | . | . | - | . |
-| TIFF | . | . | . | . | - | . | . |
-| JPEG | . | . | . | . | . | . | . |
-| BMP | . | . | . | . | . | - | . |
-| PNM | . | . | - | - | - | - | . |
-| PGM | . | . | - | - | - | - | . |
-| PBM | . | . | - | - | - | - | . |
-| PPM | . | . | - | - | - | - | . |
-| PSD | . | . | . | . | - | - | . |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | - | . | - |
-| PICT | - | - | - | - | - | - | . |
-| PSB | . | . | . | . | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PNM | ✓ | ✓ | - | - | - | - | ✓ |
+| PGM | ✓ | ✓ | - | - | - | - | ✓ |
+| PBM | ✓ | ✓ | - | - | - | - | ✓ |
+| PPM | ✓ | ✓ | - | - | - | - | ✓ |
+| PSD | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| PICT | - | - | - | - | - | - | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
 
 † L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
 
@@ -63,12 +63,12 @@ Vedi anche [Utilizzo di risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo dell&#39;accesso | Anteprima miniature | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | . | . | . |  | . | . | - | - |
-| gLB | . | . | . | . | . | - | . | . |
-| gLTF | . | . | . |  | . | - | . | - |
-| OBJ | . | . | . | . | . | - | . | . |
-| STL | . | . | . | . | . | - | . | . |
-| USDz | . | . | . | . | . | - | - | . |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
@@ -98,47 +98,47 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 | Formato | Archiviazione | [Gestione dei metadati](metadata.md) | Testo completo<br> estrazione | [Estrazione di metadati](metadata.md) | Miniatura<br> generazione | [Estrazione di risorse secondarie](managing-linked-subassets.md) | [Write-back metadati](xmp-writeback.md) | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | - | . | . | . | . | - |
-| DOC | . | . | . | . | - | - | - | . |
-| DOCX | . | . | . | . | - | - | - | . |
-| ODT | . | . | . | - | - | - | - | . |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . | . | . | . |
-| HTML | . | . | . | - | - | - | - | . |
-| RTF | . | . | . | - | - | - | - | . |
-| TXT | . | . | . | - | - | - | - | . |
-| XLS | . | . | . | - | - | - | - | . |
-| XLSX | . | . | . | . | - | - | - | . |
-| ODS | . | . | . | - | - | - | - | - |
-| PPT | . | . | . | . | . | . | - | . |
-| PPTX | . | . | . | . | . | . | - | . |
-| ODP | . | . | . | - | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | . | . | - | . | . | . | . | - |
-| PS | . | . | - | - | - | - | - | - |
-| QXP | . | . | - | - | - | - | - | - |
-| EPUB | . | . | - | . | . | - | - | - |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| PS | ✓ | ✓ | - | - | - | - | - | - |
+| QXP | ✓ | ✓ | - | - | - | - | - | - |
+| EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
 ## Formati multimediali supportati {#supported-multimedia-formats}
 
 |  | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione di miniature | Transcodifica FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | . | . | - | - | * |
-| MIDI | . | . | - | - | * |
-| 3GP | . | . | - | - | * |
-| MP3 | . | . | . | - | * |
-| MPG | . | . | - | - | * |
-| OGA | . | . | - | - | * |
-| OGG | . | . | - | - | * |
-| RA | . | . | - | - | * |
-| WAV | . | . | - | - | * |
-| WMA | . | . | - | - | * |
-| DVI | . | . | - | * | * |
-| FLV | . | . | - | * | * |
-| M4V | . | . | - | * | * |
-| MPEG | . | . | - | * | * |
-| OGV | . | . | - | * | * |
-| MOV | . | . | - | * | * |
-| WMV | . | . | - | * | * |
-| SWF | . | . | - | - | - |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
+| SWF | ✓ | ✓ | - | - | - |
 
 ## Formati di archivio supportati {#supported-archive-formats}
 
@@ -146,11 +146,11 @@ I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM c
 
 | Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | . | . | . | . | . | - |
-| JAR | . | . | . | . | . | - |
-| RAR | . | . | . | . | . | - |
-| TAR | . | . | . | . | . | - |
-| ZIP | . | . | . | . | . | . |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Altri formati supportati {#other-supported-formats}
 
@@ -158,11 +158,11 @@ Di seguito è descritta l’applicabilità delle consuete funzionalità DAM per 
 
 | Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | . | . | . | . | . | - |
-| CSS | . | . | . | . | . | . |
-| VTT | . | . | . | . | . | . |
-| XML | . | . | . | . | . | . |
-| JavaScript (se configurato con un proprio dominio di consegna) | - | - | - | - | - | . |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JavaScript (se configurato con un proprio dominio di consegna) | - | - | - | - | - | ✓ |
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 | MOV, QT | QuickTime di Apple | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animazione Apple |
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
@@ -254,9 +254,13 @@ In CRXDE Lite è disponibile un elenco dei tipi MIME supportati all’indirizzo 
 
 | Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | . | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Vedi la nota seguente) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Per i PDF protetti, è supportato solo il caricamento .
 
 Oltre alla funzionalità di cui sopra, considera quanto segue:
 
@@ -270,14 +274,14 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 
 | Formato | Carica<br> (Formato di ingresso) | Crea<br> immagine<br> predefinito<br> (Formato di uscita) | Anteprima<br> dinamico<br> rendering | Consegna<br> dinamico<br> rendering | Scarica<br> dinamico<br> rendering | Imposta i tipi che supportano questo formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| PNG | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
-| GIF | . | . | . | . | . | - |
-| TIFF | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
-| JPEG | . | . | . | . | . | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
-| BMP | . | - | - | - | - | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
-| PSD | . | - | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | . | . | . | . | . | - |
-| PICT | . | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
+| PSD | ✓ | - | - | - | - | - |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| PICT | ✓ | - | - | - | - | - |
 
 † L&#39;immagine unita viene estratta dal file PSD. Si tratta di un’immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere o meno l’immagine effettiva.
 
