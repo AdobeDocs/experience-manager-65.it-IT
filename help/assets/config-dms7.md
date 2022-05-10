@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
+source-wordcount: '6049'
 ht-degree: 4%
 
 ---
@@ -134,7 +134,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
    Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale su S7 Delivery.
 
 1. Seleziona **[!UICONTROL Salva]**.
-1. Per impostazione predefinita, l’autore dell’Experience Manager non può visualizzare in anteprima il contenuto Dynamic Media. Pertanto, per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima che venga pubblicato, devi *inserire nell&#39;elenco Consentiti* l’istanza di authoring di Experience Manager per la connessione a Dynamic Media. Inoltre, se desideri fornire agli utenti l’accesso per visualizzare in anteprima i contenuti in modo sicuro, puoi *inserire nell&#39;elenco Consentiti* indirizzi IP aggiuntivi.
+1. Per impostazione predefinita, l’autore dell’Experience Manager non può visualizzare in anteprima il contenuto Dynamic Media. Pertanto, per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima che venga pubblicato, è necessario inserire nell&#39;elenco Consentiti l’istanza di authoring di Experience Manager per connettersi a Dynamic Media. Inoltre, se desideri fornire agli utenti l’accesso per visualizzare in anteprima i contenuti in modo sicuro, puoi inserire nell&#39;elenco Consentiti ulteriori indirizzi IP. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Per impostare questa azione nell&#39;Experience Manager, vedi [Configurazione di Dynamic Media Publish Setup per Image Server - Scheda Sicurezza](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -304,7 +304,7 @@ Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-ass
 
    * Fai doppio clic sul pulsante **[!UICONTROL abilitato]** campo . Per impostazione predefinita, tutti i tipi di MIME delle risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Media per l’elaborazione. Se desideri escludere l’elaborazione di questo tipo di MIME delle risorse, modifica questa impostazione in **[!UICONTROL false]**.
 
-   * Doppio tocco **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Vedi [Tipi mime supportati](/help/assets/assets-formats.md#supported-mime-types) per un elenco dei valori dei parametri di elaborazione consentiti è possibile utilizzare per un determinato tipo di MIME.
+   * Doppio tocco **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Vedi [Tipi mime supportati](/help/assets/assets-formats.md#supported-mime-types) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un determinato tipo di MIME.
 
 1. Effettua una delle operazioni seguenti:
 
@@ -410,11 +410,9 @@ Sono disponibili due elementi per la definizione, la corrispondenza e il nome di
 
 ##### Creare un predefinito per set di batch
 
-
-
 Dynamic Media utilizza i predefiniti per set di batch per organizzare le risorse in set di immagini (immagini alternative, opzioni colore, 360 giri) da visualizzare nei visualizzatori. I predefiniti per set di batch vengono eseguiti automaticamente insieme ai processi di caricamento delle risorse in Dynamic Media.
 
-Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due forme di definizioni di predefiniti per set di batch: uno per una convenzione di denominazione predefinita che è possibile impostare e uno per le convenzioni di denominazione personalizzate create al volo.
+Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due forme di definizioni di predefiniti per set di batch: uno per una convenzione di denominazione predefinita che è possibile impostare e uno per le convenzioni di denominazione personalizzata che si creano al volo.
 
 È possibile utilizzare il metodo campo modulo per definire un predefinito per set di batch o il metodo del codice, che consente di utilizzare espressioni regolari. Come per la denominazione predefinita, è possibile scegliere Visualizza codice nello stesso momento in cui si sta definendo nella visualizzazione modulo e utilizzare espressioni regolari per creare le definizioni. In alternativa, puoi deselezionare entrambe le visualizzazioni per utilizzare esclusivamente l’una o l’altra.
 
