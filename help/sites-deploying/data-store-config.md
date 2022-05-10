@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
+source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
 workflow-type: tm+mt
-source-wordcount: '3467'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ Per effettuare l’aggiornamento a una nuova versione del connettore S3 1.10.x (
    >
    >I nomi di file sopra riportati sono utilizzati solo a scopo illustrativo.
 
-1. Scarica la versione più recente del pacchetto di funzioni 1.8.x dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
+1. Scarica la versione più recente del pacchetto di funzioni 1.10.x dal [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Decomprimi il contenuto in una cartella separata, quindi accedi a `jcr_root/libs/system/install/15`.
 1. Copia i file jar in **&lt;aem-install>**/crx-quickstart/install/15 nella cartella di installazione AEM.
 1. Avvia AEM e controlla la funzionalità del connettore.
