@@ -2,10 +2,10 @@
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di AEM Content and Commerce
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 1a82930d9f0aa84cea590782aba2e70ec23b41c3
+source-git-commit: aacb497b10f46be3157aae86a5973aa277fda967
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 27%
+source-wordcount: '458'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,24 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Data di rilascio: Aprile 2022
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2022.04.28.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
+| Componenti core CIF | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
+| Sito di riferimento CIF Venia | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
+
+### Novità {#what-is-new}
+
+* Accesso rapido al cockpit del prodotto: Accesso semplice e dettagliato alle informazioni di prodotto con un solo clic in Sites Editor
+
+   ![Abilita elenco dei desideri](/help/assets/CIF/enable-wishlist.png)
+
+* Supporto per componenti di marketing aggiuntivi: I componenti possono essere configurati per mostrare una chiamata all’azione del componente aggiuntivo al carrello e del componente aggiuntivo all’elenco dei desideri
+
+   ![Collegamento all’editor di siti per il cockpit di prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+
 ## Data di rilascio: Marzo 2022
 
 | Componente | Versione | Dettagli |
@@ -31,10 +49,10 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-march}
 
-* Beta: Supporto per i componenti core di ricerca CIF di AEM Commerce LiveSearch
-* SEO migliorato per scenari multi-store: È ora possibile configurare i formati URL per PDP/PLP a livello di archivio tramite le proprietà CIF Cloud Config
-* Il selettore prodotti supporta i prodotti in staging tramite la nuova opzione di filtro nell’interfaccia utente.  In questo modo i professionisti dei contenuti possono preparare la gestione dei contenuti dei prodotti per i prossimi lanci
-* Gestione semplificata della configurazione CIF e degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
+* Beta: supporto per i componenti core di ricerca CIF di AEM Commerce LiveSearch
+* SEO migliorata per scenari multi-store: ora puoi configurare i formati URL per PDP/PLP a livello di store tramite le proprietà CIF Cloud Config
+* Il selettore prodotti supporta i prodotti in staging tramite la nuova opzione di filtro nell’interfaccia utente.  In questo modo i professionisti dei contenuti possono preparare la gestione contenuti di prodotto per i prossimi lanci
+* Gestione semplificata della configurazione CIF e della gestione degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
 * Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Questo consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza del catalogo
 
 ## Data di rilascio: Gennaio 2022
