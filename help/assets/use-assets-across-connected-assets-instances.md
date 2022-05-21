@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: f4e6a1855fad76df8102751b14e9ac6982315937
+source-git-commit: e486e5336edc28137b93d5263faf86c63a790528
 workflow-type: tm+mt
-source-wordcount: '3786'
+source-wordcount: '3779'
 ht-degree: 18%
 
 ---
@@ -46,7 +46,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e trascinano le risorse ricercate nell’Editor pagina. I documenti vengono aggiunti al `Download` componenti e immagini `Image` componente. Gli autori possono anche aggiungere le risorse remote in qualsiasi [!DNL Experience Manager] componente che estende il valore predefinito `Download` o `Image` componenti. I formati supportati sono:
 
-* **Formati immagine**: I formati che [Componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supporta.
+* **Formati immagine**: I formati che [Componente immagine](assets-formats.md#supported-raster-image-formats) supporta.
 * **Formati documento**: Consulta la sezione [formati di documento supportati](assets-formats.md#supported-document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -148,7 +148,7 @@ Per utilizzare [!DNL Dynamic Media] con risorse collegate:
 >
 >Con risorse collegate e [!DNL Dynamic Media] configurazione, non puoi utilizzare [!DNL Dynamic Media] per elaborare le risorse locali disponibili nel [!DNL Sites] distribuzione.
 
-## Configurazione [!DNL Dynamic Media] {#configure-dynamic-media}
+## Configurare [!DNL Dynamic Media] {#configure-dynamic-media}
 
 Per configurare [!DNL Dynamic Media] su [!DNL Assets] e [!DNL Sites] distribuzioni:
 
