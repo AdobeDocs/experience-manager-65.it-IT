@@ -3,10 +3,11 @@ title: Frammenti di contenuto - Browser di configurazione
 description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
+source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 18%
+source-wordcount: '292'
+ht-degree: 21%
 
 ---
 
@@ -16,17 +17,17 @@ Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browse
 
 ## Abilita funzionalità frammento di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
 
-Prima di utilizzare Frammenti di contenuto è necessario utilizzare il **Browser configurazioni** per abilitare:
+Prima di utilizzare i frammenti di contenuto, è necessario utilizzare la funzione **Browser di configurazione** per abilitare:
 
-* **Modelli per frammenti di contenuto**  - obbligatori
-* **Query persistenti GraphQL**  - facoltativo
+* **Modelli per frammenti di contenuto** - obbligatorio
+* **Query persistenti GraphQL** - opzionale
 
 >[!CAUTION]
 >
->Se non abiliti **Modelli di frammento di contenuto**:
+>Se non si abilita **Modelli per frammenti di contenuto**:
 >
->* l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
->* non potrai [selezionare la configurazione Sites per creare il relativo punto finale](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* la **Crea** non sarà disponibile per la creazione di nuovi modelli.
+>* non sarà in grado di [seleziona la configurazione Sites per creare il relativo punto finale](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Per abilitare la funzionalità dei frammenti di contenuto è necessario:
@@ -36,24 +37,24 @@ Per abilitare la funzionalità dei frammenti di contenuto è necessario:
 
 ### Abilitare la funzionalità dei frammenti di contenuto nel browser di configurazione {#enable-content-fragment-functionality-in-configuration-browser}
 
-Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model) **è necessario** prima abilitarle tramite il **Browser di configurazione**:
+A [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model) voi **deve** per prima cosa attivarli tramite **Browser di configurazione**:
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta anche [Browser di configurazione:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Per maggiori dettagli vedi anche [Browser di configurazione:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 >[!CAUTION]
 >
->Le sottoconfigurazioni (una configurazione nidificata all’interno di una configurazione) non sono supportate per l’uso con Frammenti di contenuto.
+>Le sottoconfigurazioni (una configurazione nidificata all’interno di una configurazione) sono supportate per l’utilizzo con Frammenti di contenuto, ma non possono essere utilizzate per le query GraphQL.
 
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 
-1. Utilizza **Crea** per aprire la finestra di dialogo in cui:
+1. Utilizzo **Crea** per aprire la finestra di dialogo, in cui:
 
-   1. Specifica un **titolo**.
+   1. Specifica una **Titolo**.
    1. Per attivarne l&#39;uso, seleziona
       * **Modelli per frammenti di contenuto**
-      * **Query persistenti GraphQL**
+      * **Query GraphQL persistenti**
 
       ![Definire la configurazione](assets/cfm-conf-01.png)
 
@@ -64,7 +65,7 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 
 ### Applica la configurazione alla cartella delle risorse {#apply-the-configuration-to-your-assets-folder}
 
-Quando la configurazione **global** è abilitata per la funzionalità di frammento di contenuto, si applica a qualsiasi cartella Assets.
+Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Assets.
 
 Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Cloud Services** della finestra **Proprietà cartella** della cartella specifica.
 
