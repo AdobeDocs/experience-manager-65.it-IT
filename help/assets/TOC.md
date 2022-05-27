@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '672'
 ht-degree: 49%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 49%
    + [Profili video di Dynamic Media](video-profiles.md)
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
+   + [Imaging avanzato con rapporto pixel del dispositivo lato client](client-side-dpr.md)
    + [Video](s7-video.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuire elementi multimediali dinamici](delivering-dynamic-media-assets.md)
