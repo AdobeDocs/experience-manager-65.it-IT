@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 5%
 
 ---
@@ -681,9 +681,12 @@ ht-degree: 5%
          + [Gestione programmatica dei nodi delle preferenze](developing/programmatically-preferences-nodes.md)
          + [Protezione dei documenti con i criteri](developing/protecting-documents-policies.md)
          + [Convalidare un documento DDX utilizzando l’API del servizio Web](developing/validate-ddx-document-using-web.md)
-      + Documentazione legacy {#legacy-documentation}
-         + [Utilizzo del servizio di script execute in AEM Forms su JEE Workbench per creare dati XML](developing/building-xml.md)
-         + [Compressione e decompressione dei file tramite AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
-         + [Configurazione e risoluzione dei problemi di un AEM Forms su un cluster di server JEE](developing/configure-server-cluster.md)
-         + [Generazione e utilizzo degli hash nei PDF forms dinamici](developing/hashing-forms.md)
-         + [Trasmissione delle credenziali tramite intestazioni WS-Security](developing/passing-credentials.md)
++ Risoluzione dei problemi {#troubleshooting}
+   + [Impossibile utilizzare alcune funzionalità dei moduli con alcune versioni di Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Documentazione legacy {#legacy-documentation}
+   + [Utilizzo del servizio di script execute in AEM Forms su JEE Workbench per creare dati XML](developing/building-xml.md)
+   + [Compressione e decompressione dei file tramite AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
+   + [Configurazione e risoluzione dei problemi di un AEM Forms su un cluster di server JEE](developing/configure-server-cluster.md)
+   + [Generazione e utilizzo degli hash nei PDF forms dinamici](developing/hashing-forms.md)
+   + [Trasmissione delle credenziali tramite intestazioni WS-Security](developing/passing-credentials.md)
+

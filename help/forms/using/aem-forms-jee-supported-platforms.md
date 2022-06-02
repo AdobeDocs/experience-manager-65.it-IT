@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -141,37 +141,37 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
   <tr>
    <td><p>File system</p> </td>
    <td><p>Microkernel dell'archivio (file TAR MK)</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p> MongoDB Enterprise 4.0 (obsoleto) </p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p>Database Oracle 12c, versione 2 (12.2.0.1.0) (obsoleto)</p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
    <tr>
    <td>Database Oracle 19c (versione standard, RAC (Real Application Clusters) ed Enterprise) </td>
    <td>Repository Microkeral </td>
-   <td>Supportata</td>
+   <td>Funzione supportata</td>
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2016 (obsoleto)</p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2019</p> </td>
    <td><p>Microkernel dell'archivio</p> </td>
-   <td><p>Supportata</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td>IBM DB2 11.1 (obsoleto)</td>
@@ -419,8 +419,12 @@ Inoltre, considera i seguenti punti durante la scelta del software per Adobe AEM
    <td>8,5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (obsoleto)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +690,7 @@ Per ulteriori requisiti consulta:
 > - Il portale Forms supporta il software per assistenti vocali JAWS 14.0 su Internet Explorer 11 per l’accessibilità.
 
 
-#### Client Mobile {#mobile-clients}
+#### Client mobili {#mobile-clients}
 
 <table>
  <tbody>
@@ -755,6 +759,10 @@ Adobe si riserva il diritto di modificare le piattaforme di riferimento di terze
 Informazioni aggiuntive per le patch di terze parti possono essere trovate anche ricercando nel sito Adobe Enterprise Support gli articoli della knowledgebase relativi al tuo prodotto.
 
 ## Aggiornamenti della piattaforma {#platform-updates}
+
+Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Forms 6.5.13.0 del 2 giugno 2022:
+
+- Microsoft SharePoint 2016
 
 Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Forms 6.5.12.0 del 3 marzo 2022:
 

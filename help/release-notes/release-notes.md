@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
+source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3752'
 ht-degree: 7%
 
 ---
@@ -24,6 +24,22 @@ ht-degree: 7%
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
 [!DNL Experience Manager] 6.5.13.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti successivamente alla data di disponibilità iniziale del 6.5 di aprile 2019. [Installa questo service pack](#install) su [!DNL Experience Manager] 6.5.
+
+Funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Manager] 6.5.13.0:
+
+* Utilizza il CAPTCHA invisibile in un modulo adattivo: Ora puoi utilizzare un CAPTCHA invisibile per mostrare la sfida CAPTCHA solo nel caso di un’attività sospetta. Se non viene trovata alcuna attività sospetta, la sfida CAPTCHA non viene visualizzata. Consente di valutare il completamento dei moduli senza bisogno di caselle di controllo, ridurre le operazioni di personalizzazione e migliorare l’esperienza dell’utente finale. (NPR-38500)
+
+* È stato aggiunto il supporto per recuperare le intestazioni di risposta nel post-processore Form Data Model per gli endpoint REST. (NPR-38275)
+
+* Ora, quando si genera un file di traduzione Modulo adattivo, la stessa sequenza di testi del file XLIFF generato è identica alla sequenza di componenti del modulo adattivo corrispondente. (NPR-37700)
+
+* Quando si localizza un Modulo adattivo e si apporta anche una piccola modifica al testo della lingua di base, la traduzione completa risulta mancante per tutte le altre lingue. Il problema è risolto in [!DNL Experience Manager] 6.5.13.0. (NPR-37189)
+
+* Miglioramenti all’accessibilità per Forms:
+
+   * È stato aggiunto il supporto per gli assistenti vocali per riconoscere l’intestazione e il corpo di una tabella mentre continuavano e le entità collegate. Consente agli assistenti vocali di navigare correttamente nelle tabelle. (NPR-37139)
+   * È stato aggiunto il supporto per consentire agli assistenti vocali di interrompere la navigazione nell’area di lavoro di HTML fino all’apertura di una finestra di dialogo. (NPR-37134)
+   * Aggiunta la possibilità di specificare il testo del Reader di schermate per i collegamenti ipertestuali in Forms Designer.(NPR-36221)
 
 Sono state introdotte le seguenti correzioni di bug, funzioni chiave e miglioramenti in [!DNL Experience Manager] 6.5.13.0:
 
@@ -120,20 +136,6 @@ Sono state introdotte le seguenti correzioni di bug, funzioni chiave e miglioram
 >
 >* I pacchetti del componente aggiuntivo [!DNL Experience Manager Forms] vengono rilasciati una settimana dopo la data di rilascio pianificata per il Service Pack di [!DNL Experience Manager].
 
-
-<!-- **Adaptive Forms**
-
-**Form Data Model**
-
-**Interactive Communication**
-
-**Document Services**
-
-**Document Security**
-
-**Foundation JEE**
-
-**Workflow** -->
 
 ## Granite {#granite-6513}
 
