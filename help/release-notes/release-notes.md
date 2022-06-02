@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
+source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3737'
 ht-degree: 7%
 
 ---
@@ -92,9 +92,9 @@ Sono state introdotte le seguenti correzioni di bug, funzioni chiave e miglioram
 
 ## [!DNL Forms] {#forms-65130}
 
-* Quando si utilizza il servizio di precompilazione per compilare un modulo adattivo contenente un frammento e il frammento contiene una casella di testo che supporta testo RTF, l’invio del modulo non riesce e si verifica il seguente errore:
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * I componenti Pulsante di scelta, Casella di controllo e Caricamento file non vengono tradotti correttamente dalla lingua tedesca alla lingua inglese. (NPR-38527)
 * Codifica codice a barre PDF417 prodotta da [!DNL Experience Manager] Forms non valido per un gruppo di pulsanti di scelta. (NPR-38525)
