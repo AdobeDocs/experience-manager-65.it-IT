@@ -1,53 +1,53 @@
 ---
 title: Guida utente allo sviluppo in AEM 6.5
 seo-title: AEM 6.5 Developing User Guide
-description: Learn how to build out your AEM instance. Learn more about the platform and components, and find information around development tools and personalization.
+description: Scopri come creare la tua istanza AEM. Ulteriori informazioni sulla piattaforma e sui componenti e informazioni sugli strumenti di sviluppo e sulla personalizzazione.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 33%
 
 ---
 
 # Guida utente allo sviluppo in AEM 6.5
 
-Learn how to build out your AEM instance. Learn more about the platform and components, and find information around development tools and personalization.
+Scopri come creare la tua istanza AEM. Ulteriori informazioni sulla piattaforma e sui componenti e informazioni sugli strumenti di sviluppo e sulla personalizzazione.
 
-## Key AEM articles
+## Articoli principali AEM
 
-* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
+* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Note sulla versione di AEM 6.5](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5 user guides
+## Guide utente di AEM 6.5
 
 | Guida utente | Descrizione |
 |--- |---|
-| [Note sulla versione](/help/release-notes/home.md) | Provides important information about the latest release of AEM, including what&#39;s new, supported platforms, deprecated and removed features, and known issues. |
-| [Guida utente di Assets](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
-| [](/help/forms/home.md) | This guide describes how to create, manage, publish, and update digital forms. |
-| [](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
+| [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull’ultima versione di AEM, incluse le novità, le piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti. |
+| [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
+| [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
+| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
 | [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
-| [Guida all’authoring](/help/sites-authoring/home.md) | This guide explains the concepts of authoring in AEM. |
-| [](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in AEM in the classic user interface. |
-| [](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
-| [](/help/sites-deploying/home.md) | This guide shows you the basics of AEM. |
-| [](/help/sites-developing/home.md) | Learn how to build out your AEM instance. |
-| [](/help/managing/home.md) | This guide describes how to manage an AEM project successfully. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Learn about Commerce Integration Framework on AEM. |
-| [](/help/mobile/home.md) | This guide describes how to create and manage content for mobile applications. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
+| [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM. |
+| [Guida all’authoring con interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM nell’interfaccia utente classica. |
+| [Guida utente di Screens](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
+| [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
+| [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare la tua istanza AEM. |
+| [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
+| [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Questa guida mostra come condividere con Livefyre i contenuti generati dagli utenti. |
 
-## Key AEM resources
+## Risorse AEM chiave
 
-* [](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
-* [](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
-* [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+* [Esercitazioni AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Guida utente di Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+* [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+* [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

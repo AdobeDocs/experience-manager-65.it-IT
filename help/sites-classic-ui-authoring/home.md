@@ -1,16 +1,15 @@
 ---
 title: Guida utente all’authoring dell’interfaccia classica AEM 6.5
-seo-title: Guida utente all’authoring dell’interfaccia classica AEM 6.5
-description: 'Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. '
-seo-description: 'Descrive i concetti di authoring in AEM nell’interfaccia classica. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Classic UI Authoring User Guide
+description: Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica.
+seo-description: Covers the concepts of authoring in AEM in the classic UI.
+exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 31%
+source-wordcount: '358'
+ht-degree: 32%
 
 ---
-
 
 # Guida utente all’authoring dell’interfaccia classica AEM 6.5
 
@@ -18,7 +17,7 @@ Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente c
 
 ## Articoli principali AEM
 
-* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
+* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Note sulla versione di AEM 6.5](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
@@ -49,6 +48,6 @@ Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente c
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
