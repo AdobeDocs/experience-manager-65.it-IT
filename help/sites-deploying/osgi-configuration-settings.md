@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
+source-wordcount: '3557'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Il valore consigliato è `-1` imposta la coda su illimitata; se viene fissato un
 **Servlet Apache Sling GET** Configura alcuni aspetti del rendering:
 
 * **Indice automatico** per abilitare/disabilitare il rendering della directory per la navigazione.
-* **Abilita** (o disattivare) rendering predefiniti, ad esempio **HMTL**, **Testo normale**, **JSON** o **XML**.
+* **Abilita** (o disattivare) rendering predefiniti, ad esempio **HTML**, **Testo normale**, **JSON** o **XML**.
 Non devi disabilitare JSON.
 
 >[!NOTE]
@@ -109,7 +109,7 @@ Non devi disabilitare JSON.
 
 Alcune impostazioni possono influire sulle prestazioni, che devono essere disattivate ove possibile, in particolare per un&#39;istanza di produzione.
 
-* S **VM di origine** e **VM di destinazione**, definisci la versione JDK come utilizzata come JVM di runtime
+* **VM di origine** e **VM di destinazione**, definisci la versione JDK come utilizzata come JVM di runtime
 
 * per le istanze di produzione:
 
@@ -117,7 +117,7 @@ Alcune impostazioni possono influire sulle prestazioni, che devono essere disatt
 
 **Programma di installazione di JCR Apache Sling** Questi parametri probabilmente non necessitano di configurazione, ma possono essere utili per sapere quando si sviluppano o eseguono il debug. Ad esempio, le cartelle di installazione possono essere utili per il check-in/out o la creazione di un pacchetto.
 
-* **Nome delle cartelle di installazione regexp** e **Profondità massima della gerarchia delle cartelle di installazione** - specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle dell&#39;archivio. Quando viene utilizzato un carattere jolly (come in .*/install) verranno cercate tutte le corrispondenze appropriate, ad esempio: `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome delle cartelle di installazione regexp** e **Profondità massima della gerarchia delle cartelle di installazione** - specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle dell&#39;archivio. Quando viene utilizzato un carattere jolly (come in .&#42;/install) verranno cercate tutte le corrispondenze appropriate, ad esempio: `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Percorso di ricerca**, elenco di percorsi che jcrinstall cerca le risorse da installare, insieme a un numero che indica il fattore di ponderazione per quel percorso.
 
@@ -320,19 +320,19 @@ Quando utilizzi [gruppi di utenti chiusi](/help/sites-administering/cug.md) puoi
 Sono disponibili due interfacce in AEM:
 
 * l’interfaccia touch è l’interfaccia standard
-* e l&#39;interfaccia classica obsoleta è ancora completamente operativa
+* e l’interfaccia classica obsoleta è ancora completamente operativa
 
 Utilizzando AEM mappatura principale puoi configurare l’interfaccia utente che desideri usare come predefinita per l’istanza:
 
 * Per utilizzare l’interfaccia touch come interfaccia predefinita **Percorso di Target** indicare:
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Per impostare l’interfaccia classica come interfaccia predefinita **Percorso di Target** indicare:
 
-   ```
+   ```shell
       /welcome.html
    ```
 
@@ -366,7 +366,7 @@ Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può es
 `admin` viene visualizzata su entrambi i lati della mappa, la mappatura verrà ignorata. Tieni presente che il carattere &quot;=&quot; deve essere annullato con un carattere iniziale &quot;\&quot;.
 
 * **Formato**
-Indica il formato in cui viene fornito l&#39;ID utente. Utilizzo:
+Indica il formato in cui viene fornito l&#39;ID utente. Utilizzare:
 
    * `Basic` se l&#39;ID utente è codificato nel formato di autenticazione HTTP Basic
    * `AsIs` se l&#39;ID utente viene fornito in testo normale o se un valore di espressione regolare applicata deve essere utilizzato così com&#39;è o qualsiasi espressione regolare

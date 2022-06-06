@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Il test delle prestazioni è una parte importante di qualsiasi implementazione AEM. A seconda dei requisiti del cliente, è possibile eseguire test delle prestazioni sulle istanze di pubblicazione, sulle istanze dell’autore o su entrambe.
 
-Questa documentazione descriverà le strategie e le metodologie generali per l’esecuzione dei test di prestazioni, nonché alcuni degli strumenti messi a disposizione dall’Adobe per facilitare il processo. Infine, analizzeremo alcuni degli strumenti disponibili nella AEM 6 per facilitare la regolazione delle prestazioni, sia dal punto di vista dell’analisi del codice che della configurazione del sistema.
+Questa documentazione descriverà le strategie e le metodologie generali per l&#39;esecuzione dei test di prestazioni, nonché alcuni degli strumenti messi a disposizione dall&#39;Adobe per assistere il processo. Infine, analizzeremo alcuni degli strumenti disponibili nella AEM 6 per facilitare la regolazione delle prestazioni, sia dal punto di vista dell’analisi del codice che della configurazione del sistema.
 
 ### Simulazione della realtà {#simulating-reality}
 
@@ -94,7 +94,7 @@ Gli strumenti PageSpeed di Google offrono analisi del sito per rispettare le bes
 
 ### Esecuzione dei test {#performing-tests}
 
-Per eseguire test delle prestazioni nell’ambiente di authoring è necessario simulare l’esperienza degli autori di produzioni. Ciò significa che le installazioni dell’autore devono contenere tutti i componenti, i bundle OSGi, la personalizzazione dell’interfaccia utente, gli indici personalizzati e qualsiasi altra aggiunta in atto per le istanze dell’autore di produzione.
+Per eseguire test delle prestazioni nell’ambiente di authoring è necessario simulare l’esperienza degli autori di produzione. Ciò significa che le installazioni dell’autore devono contenere tutti i componenti, i bundle OSGi, la personalizzazione dell’interfaccia utente, gli indici personalizzati e qualsiasi altra aggiunta in atto per le istanze dell’autore di produzione.
 
 Sono disponibili molti framework di automazione progettati per le prestazioni e i test di carico. Gli script personalizzati possono essere registrati in questi strumenti e quindi riprodotti per simulare un picco di autori che eseguono attività di creazione e attivazione di contenuti simili contemporaneamente. Si consiglia di utilizzare lo strumento Giorno difficile per simulare attività come il caricamento di migliaia di risorse o l’attivazione di un gran numero di pagine.
 
