@@ -1,8 +1,8 @@
 ---
-title: Domande frequenti per i moduli HTML5
-seo-title: Domande frequenti per i moduli HTML5
+title: Domande frequenti per HTML5 forms
+seo-title: Frequently asked questions (FAQ) for HTML5 forms
 description: Domande frequenti sul layout, il supporto degli script e l’ambito dei moduli HTML5.
-seo-description: Domande frequenti sul layout, il supporto degli script e l’ambito dei moduli HTML5.
+seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 uuid: 398e31de-3e46-4288-b3cd-39d51fa17abc
 contentOwner: robhagat
 content-type: reference
@@ -11,24 +11,23 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
+source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
 
+# Domande frequenti per HTML5 forms{#frequently-asked-questions-faq-for-html-forms}
 
-# Domande frequenti per i moduli HTML5{#frequently-asked-questions-faq-for-html-forms}
-
-Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli script e l’ambito dei moduli HTML5.
+Sono presenti alcune domande frequenti sul layout, il supporto degli script e l’ambito dei moduli HTML5.
 
 ## Layout {#layout}
 
 1. Perché i codici a barre e i campi firma non vengono visualizzati nel modulo?
 
-   Risposta: I campi dei codici a barre e delle firme non sono pertinenti in scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia, AEM Forms Designer fornisce un nuovo campo di script della firma che può essere utilizzato al posto del campo firma. È inoltre possibile aggiungere un [widget personalizzato](../../forms/using/custom-widgets.md) per i codici a barre e integrarlo.
+   Risposta: I campi dei codici a barre e delle firme non sono pertinenti in scenari HTML o mobili. Questi campi vengono visualizzati come area non interattiva. Tuttavia, AEM Forms Designer fornisce un nuovo campo di script della firma che può essere utilizzato al posto del campo firma. È inoltre possibile aggiungere un [widget personalizzato](../../forms/using/custom-widgets.md) per codici a barre e integralo.
 
 1. Il formato RTF è supportato per il campo di testo XFA?
 
@@ -90,33 +89,33 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
 
    Risposta: Un sottomodulo nascosto con una gerarchia complessa divisa tra le pagine causa problemi di layout. Una soluzione consiste nel contrassegnare il sottomodulo inizialmente visibile e quindi nasconderlo in uno script di inizializzazione basato su alcuni dati o logici.
 
-1. Perché alcuni testi vengono troncati o vengono visualizzati in modo errato in HTML5?
+1. Perché alcuni testi vengono troncati o visualizzati in modo errato in HTML5?
 
    Risposta: Se a un elemento di testo Disegno o Didascalia non è stato dato spazio sufficiente per visualizzare il contenuto, il testo viene troncato nel rendering del modulo mobile. Questo troncamento è visibile anche nella vista Progettazione di AEM Forms Designer. Anche se questo troncamento può essere gestito nei PDF, non può essere gestito nei moduli HTML5. Per evitare il problema, lasciare spazio sufficiente a Disegno o Testo didascalia in modo che non venga troncato nella modalità di progettazione di AEM Forms Designer.
 
 1. Osservo problemi di layout relativi a contenuti mancanti o sovrapposti. Qual è la ragione?
 
-   Risposta: Se è presente un elemento Disegno testo o Disegno immagine insieme a un altro elemento sovrapposto nella stessa posizione (ad esempio un rettangolo), il contenuto Disegno testo non è visibile se si trova successivamente nell’ordine del documento (nella vista Gerarchia di AEM Forms Designer). PDF supporta la visualizzazione a livelli trasparenti, ma HTML/browser non supportano la visualizzazione a livelli trasparenti.
+   Risposta: Se è presente un elemento Disegno testo o Disegno immagine insieme a un altro elemento sovrapposto nella stessa posizione (ad esempio un rettangolo), il contenuto Disegno testo non è visibile se si trova successivamente nell’ordine del documento (nella vista Gerarchia di AEM Forms Designer). PDF supporta la trasparenza dei livelli, ma HTML/browser non supporta la trasparenza dei livelli.
 
 1. Perché alcuni font visualizzati nel modulo HTML sono diversi da quelli utilizzati durante la progettazione del modulo?
 
-   Risposta: I moduli HTML5 non incorporano i font (a differenza dei PDF forms in cui i font sono incorporati nel modulo). Affinché il rendering della versione HTML del modulo sia eseguito come previsto, assicurarsi che i font specificati nell’XDP siano disponibili sul server e sul computer client. Se i font richiesti non sono disponibili sul server, vengono utilizzati i font di ritorno. Inoltre, se si utilizzano font nel modello di modulo che non sono disponibili sul dispositivo client, i font predefiniti del browser vengono utilizzati per eseguire il rendering del testo.
+   Risposta: I moduli di HTML5 non incorporano i font (a differenza dei PDF forms in cui i font sono incorporati nel modulo). Affinché il rendering della versione HTML del modulo sia eseguito come previsto, assicurati che i font specificati nell’XDP siano disponibili sul server e sul computer client. Se i font richiesti non sono disponibili sul server, vengono utilizzati i font di ritorno. Inoltre, se si utilizzano font nel modello di modulo che non sono disponibili sul dispositivo client, i font predefiniti del browser vengono utilizzati per eseguire il rendering del testo.
 
-1. Nei moduli HTML sono supportati gli attributi vAlign e hAlign?
+1. Nei moduli di HTML sono supportati gli attributi vAlign e hAlign?
 
    Sì, gli attributi vAlign e hAlign sono supportati. L&#39;attributo vAlign non è supportato in Internet Explorer e nel campo su più righe.
 
-1. I moduli HTML5 supportano i caratteri ebraici?
+1. I moduli di HTML5 supportano i caratteri ebraici?
 
    I moduli HTML5 supportano i caratteri ebraici in tutti i browser, ad eccezione di Microsoft Internet Explorer.
 
-1. I moduli HTML5 hanno limitazioni ai campi numerici?
+1. I moduli di HTML5 hanno limitazioni ai campi numerici?
 
-   Risposta: Sì, i moduli HTML5 hanno alcune limitazioni. Se il numero di cifre è superiore al conteggio specificato nella clausola illustrazione, i numeri non vengono localizzati e vengono visualizzati in lingua inglese.
+   Risposta: Sì, HTML5 forms presenta alcune limitazioni. Se il numero di cifre è superiore al conteggio specificato nella clausola illustrazione, i numeri non vengono localizzati e vengono visualizzati in lingua inglese.
 
 1. Perché i moduli HTML hanno dimensioni superiori ai PDF forms?
 
-   Per eseguire il rendering di un file XDP in un modulo HTML sono necessari numerosi oggetti e strutture di dati intermedi, ad esempio dom di moduli, dom di dati e dom di layout.
+   Per eseguire il rendering di un file XDP in un modulo HTML, sono necessarie molte strutture e oggetti di dati intermedi, ad esempio dom di moduli, dom di dati e dom di layout.
 
    Per gli PDF forms, Adobe Acrobat dispone di un motore XTG integrato per creare strutture e oggetti di dati intermedi. Acrobat si occupa anche del layout e degli script.
 
@@ -137,7 +136,7 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
 
    * Le tabelle e i sottomoduli nidificati all’interno di una tabella non sono supportati.
    * Le intestazioni sono supportate solo per le colonne superiori o sinistre della tabella. Le intestazioni non sono supportate per gli elementi della tabella intermedia. È possibile applicare intestazioni a più intestazioni di riga e colonna, purché siano supportate tutte queste righe e colonne insieme alla riga o alla colonna più in alto a sinistra della tabella.
-   * `Rowspan`e  `colspan`da una posizione casuale all’interno della tabella non è supportata.
+   * `Rowspan`e `colspan`non è supportato da una posizione casuale all’interno della tabella.
 
    * Non è possibile aggiungere o rimuovere dinamicamente un&#39;istanza di righe che contengono elementi con valore di estensione di riga maggiore di 1.
 
@@ -150,13 +149,13 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
 
    Per disattivare la descrizione comandi al passaggio del mouse, selezionarne una nel pannello di accesso facilitato di Designer.
 
-1. In Designer, un utente può configurare proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. Durante il rendering dei moduli, i moduli HTML5 prendono in considerazione tali proprietà di aspetto personalizzate?
+1. In Designer, un utente può configurare proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. Durante il rendering dei moduli, i moduli di HTML5 tengono conto di tali proprietà di aspetto personalizzate?
 
-   Risposta: I moduli HTML5 ignorano le proprietà di aspetto personalizzato dei pulsanti di scelta e delle caselle di controllo. I pulsanti di scelta e le caselle di controllo vengono visualizzati in base alle specifiche del browser sottostante.
+   Risposta: I moduli di HTML5 ignorano le proprietà di aspetto personalizzato dei pulsanti di scelta e delle caselle di controllo. I pulsanti di scelta e le caselle di controllo vengono visualizzati in base alle specifiche del browser sottostante.
 
 1. Quando un modulo HTML5 viene aperto in un browser supportato, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Quando lo stesso modulo HTML5 viene visualizzato in anteprima in Forms Designer, i campi e il layout non vengono visualizzati correttamente e i sottomoduli vengono visualizzati nella posizione corretta. Come risolvere il problema?
 
-   Quando un sottomodulo è impostato per far fluire il contenuto e il sottomodulo ha un elemento di bordo nascosto, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Per risolvere il problema, è possibile rimuovere o commentare gli elementi nascosti &lt;border> dall&#39;XDP corrispondente. Ad esempio, il seguente elemento &lt;border> è contrassegnato come commento:
+   Quando un sottomodulo è impostato per far fluire il contenuto e il sottomodulo ha un elemento di bordo nascosto, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Per risolvere il problema, è possibile rimuovere o commentare il &lt;border> elementi dell&#39;XDP corrispondente. Ad esempio: &lt;border> è contrassegnato come commento:
 
    ```xml
                <!--<border>
@@ -169,9 +168,13 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
 
    Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile immettere manualmente data/ora nel campo per consentire all’assistente vocale di leggerlo. Utilizzare il testo della descrizione comando o dell’assistente vocale per istruire l’utente sulla selezione manuale di data/ora per il campo.
 
-1. I moduli HTML5 supportano i pattern di visualizzazione per i campi mobili?
+1. I moduli di HTML5 supportano i pattern di visualizzazione per i campi mobili?
 
-   Risposta: I moduli HTML5 non supportano i pattern di visualizzazione per i campi mobili.
+   Risposta: I moduli di HTML5 non supportano i pattern di visualizzazione per i campi mobili.
+
+1. Qual è il formato del campo Data in HTML5 Forms?
+
+Risposta: Il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una data in un altro formato, il campo Data non accetta la formattazione finché l’utente non si sposta dal campo con il tasto di tabulazione.
 
 ### Scripting {#scripting}
 
@@ -179,20 +182,20 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
 
    Risposta:
 
-   * Il supporto per lo script xfa.connectionSet è limitato. Per connectionSet è supportata solo la chiamata del servizio Web lato server. Per informazioni dettagliate, consulta [Supporto script](/help/forms/using/scripting-support.md).
+   * Il supporto per lo script xfa.connectionSet è limitato. Per connectionSet è supportata solo la chiamata del servizio Web lato server. Per informazioni dettagliate, consulta [Supporto per gli script](/help/forms/using/scripting-support.md).
    * Non è disponibile alcun supporto per $record e $data negli script lato client. Tuttavia, se gli script sono scritti in un blocco formReady e layoutReady, gli script continueranno a funzionare perché questi eventi vengono eseguiti sul lato server.
    * Gli script XFA Draw specifici dell’elemento, come la modifica del testo di disegno (o del testo della didascalia in caso di campi) non sono supportati.
 
 1. L&#39;utilizzo di formCalc presenta limitazioni?
 
-   Risposta: Attualmente è implementato solo un sottoinsieme degli script formCalc. Per informazioni dettagliate, consulta [Supporto script](/help/forms/using/scripting-support.md).
+   Risposta: Attualmente è implementato solo un sottoinsieme degli script formCalc. Per informazioni dettagliate, consulta [Supporto per gli script](/help/forms/using/scripting-support.md).
 
 1. Esiste una convenzione di denominazione consigliata e ci sono delle parole chiave riservate da evitare?
 
-   * In AEM Forms Designer, si consiglia di non iniziare il nome di un oggetto (ad esempio un sottomodulo o un campo di testo) con un carattere di sottolineatura (_). Per utilizzare il carattere di sottolineatura all&#39;inizio del nome, aggiungi un prefisso dopo il carattere di sottolineatura, _&lt;prefisso>&lt;nomeoggetto>.
-   * Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizza un nome non identico alle [API dei moduli HTML5](/help/forms/using/scripting-support.md).
+   * In AEM Forms Designer, si consiglia di non iniziare il nome di un oggetto (ad esempio un sottomodulo o un campo di testo) con un carattere di sottolineatura (_). Per utilizzare il carattere di sottolineatura all&#39;inizio del nome, aggiungi un prefisso dopo il carattere di sottolineatura,_&lt;prefix>&lt;objectname>.
+   * Tutte le API dei moduli di HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizza un nome non identico a [API di HTML5 forms](/help/forms/using/scripting-support.md).
 
-1. I moduli HTML5 supportano i campi mobili?
+1. I moduli di HTML5 supportano i campi mobili?
 
    Sì, HTML5 Forms supporta i campi mobili. Per abilitare i campi mobili, aggiungi la seguente proprietà al profilo di rendering:
 
@@ -200,20 +203,20 @@ Sono presenti alcune domande frequenti (FAQ) sul layout, il supporto degli scrip
    >
    >Per impostazione predefinita, i campi non sono abilitati per la funzione mobile. È possibile utilizzare Forms Designer per impostare la proprietà mobile dei campi.
 
-   1. Apri CRXde lite e naviga fino al nodo `/content/xfaforms/profiles/default` .
+   1. Apri CRXde lite e naviga fino al `/content/xfaforms/profiles/default` nodo.
    1. Aggiungi una proprietà `mfDataDependentFloatingField`di tipo String e imposta il valore della proprietà su `true`.
-   1. Fare clic su **Salva tutto**. Ora i campi mobili sono abilitati per l’HTML Forms utilizzando il profilo di rendering aggiornato.
+   1. Fai clic su **Salva tutto**. Ora i campi mobili sono abilitati per HTML Forms utilizzando il profilo di rendering aggiornato.
 
       >[!NOTE]
       >
       >Per abilitare i campi mobili per un modulo specifico senza aggiornare il profilo di rendering, passa la proprietà mfDataDependentFloatingField=true come parametro URL.
 
-1. I moduli HTML5 eseguono lo script di inizializzazione e l’evento form ready più volte?
+1. HTML5 forms esegue lo script di inizializzazione e l’evento form ready più volte?
 
    Sì, gli script di inizializzazione e gli eventi form ready vengono eseguiti più volte, almeno una volta sul server e una volta sul lato client. È consigliabile creare script come eventi initialize o form:ready in base ad alcune logiche aziendali (dati modulo o campo) in modo che l&#39;azione venga eseguita in base allo stato dei dati e all&#39;idempotenti (se i dati sono uguali).
 
 ### Progettazione di XDP {#designing-xdp}
 
-1. Nei moduli HTML5 sono presenti parole chiave riservate?
+1. Esistono parole chiave riservate nei moduli HTML5?
 
-   Risposta: Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizza un nome non identico alle [API dei moduli HTML5](/help/forms/using/scripting-support.md). Oltre alle parole chiave riservate, se utilizzi nomi di oggetto che iniziano con un trattino basso (_), è consigliabile aggiungere un prefisso univoco dopo il trattino basso. L’aggiunta di un prefisso consente di evitare eventuali conflitti con le API interne dei moduli HTML5. Esempio, `_fpField1`
+   Risposta: Tutte le API dei moduli di HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizza un nome non identico a [API di HTML5 forms](/help/forms/using/scripting-support.md). Oltre alle parole chiave riservate, se utilizzi nomi di oggetto che iniziano con un trattino basso (_), è consigliabile aggiungere un prefisso univoco dopo il trattino basso. L’aggiunta di un prefisso consente di evitare eventuali conflitti con le API interne di HTML5 forms. Esempio, `_fpField1`
