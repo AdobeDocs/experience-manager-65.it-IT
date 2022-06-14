@@ -1,25 +1,30 @@
 ---
-title: Configurazione [!DNL Workfront for Experience Manager enhanced connector]
-description: Configurazione [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurare [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurare [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
+source-git-commit: 00713ea7fe06d4e180232e48a9e3f11b53f4326f
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
-
-# Configurazione [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# Configurare [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] configura il connettore avanzato dopo l’installazione. Per istruzioni sull&#39;installazione, vedi [Installare il connettore](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
 >
->L&#39;Adobe richiede la distribuzione e la configurazione del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo tramite partner certificati o [!DNL Adobe Professional Services]. Se implementato e configurato senza un partner certificato o [!DNL Adobe Professional Services], non è supportato da Adobe.
+>* L&#39;Adobe richiede la distribuzione e la configurazione del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo tramite partner certificati o [!DNL Adobe Professional Services]. Se implementato e configurato senza un partner certificato o [!DNL Adobe Professional Services], non è supportato da Adobe.
 >
->Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono tale connettore ridondante; in questo caso, potrebbe essere richiesto ai clienti di effettuare la transizione dall’utilizzo di questo connettore.
+>* Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono tale connettore ridondante; in questo caso, potrebbe essere richiesto ai clienti di effettuare la transizione dall’utilizzo di questo connettore.
+>
+>* Adobe supporta le versioni di connettore avanzate 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per controllare la versione del connettore avanzato, passa alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+>
+>* Vedi [Esame di certificazione dei partner per Workfront per il connettore avanzato Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedi [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Configurazione delle sottoscrizioni di eventi {#event-subscriptions}
 
