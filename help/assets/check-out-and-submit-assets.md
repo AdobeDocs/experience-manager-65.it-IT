@@ -3,18 +3,24 @@ title: Archiviare e estrarre i file in [!DNL Assets]
 description: Scopri come estrarre le risorse da modificare e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 role: User
-feature: Gestione risorse
+feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 1%
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
-# Archiviazione e estrazione dei file in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Archiviazione e estrazione dei file [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-[!DNL Adobe Experience Manager Assets] consente di estrarre le risorse da modificare e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non ricontrolli la risorsa in [!DNL Assets]. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/check-out-and-submit-assets.html?lang=en) |
+
+[!DNL Adobe Experience Manager Assets] consente di estrarre le risorse da modificare e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. Il ritiro di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non accedi nuovamente a [!DNL Assets]. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
 Per poter estrarre/inserire le risorse, è necessario disporre dell’accesso in scrittura.
 
@@ -22,8 +28,8 @@ Questa funzione consente di impedire ad altri utenti di ignorare le modifiche ap
 
 ## Estrarre risorse {#checking-out-assets}
 
-1. Dall’interfaccia utente di [!DNL Assets] , seleziona la risorsa da estrarre. È inoltre possibile selezionare più risorse da estrarre.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Checkout]**. L&#39;opzione **[!UICONTROL Checkout]** passa a **[!UICONTROL Check-in]**.
+1. Da [!DNL Assets] interfaccia utente, seleziona la risorsa da estrarre. È inoltre possibile selezionare più risorse da estrarre.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Pagamento]**. La **[!UICONTROL Pagamento]** consente di passare da un&#39;opzione all&#39;altra **[!UICONTROL Controllo]**.
 Per verificare se altri utenti possono modificare la risorsa estratta, accedi come un altro utente. Un simbolo a forma di lucchetto viene visualizzato sulla miniatura della risorsa estratta.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -44,25 +50,25 @@ Per verificare se altri utenti possono modificare la risorsa estratta, accedi co
 
    Puoi anche scegliere di annotare o pubblicare la risorsa.
 
-1. Seleziona la risorsa modificata dall&#39;interfaccia [!DNL Assets] e fai clic su **[!UICONTROL Archivia]** nella barra degli strumenti. La risorsa modificata viene archiviata in [!DNL Assets] ed è disponibile per la modifica ad altri utenti.
+1. Seleziona la risorsa modificata dalla [!DNL Assets] e fai clic su **[!UICONTROL Controllo]** dalla barra degli strumenti. La risorsa modificata viene archiviata in [!DNL Assets] ed è disponibile per la modifica ad altri utenti.
 
 ## Check-in forzato {#forced-check-in}
 
 Gli amministratori possono archiviare le risorse estratte da altri utenti.
 
 1. Accedi a [!DNL Assets] come amministratore.
-1. Dall’interfaccia utente di [!DNL Assets] , seleziona una o più risorse che sono state estratte da altri utenti.
+1. Da [!DNL Assets] l’interfaccia utente seleziona una o più risorse che sono state estratte da altri utenti.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Rilascia blocco]**. La risorsa viene archiviata ed è disponibile per la modifica ad altri utenti.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Blocco versione]**. La risorsa viene archiviata ed è disponibile per la modifica ad altri utenti.
 
 ## Best practice e limitazioni {#tips-limitations}
 
-* È possibile eliminare una *cartella* contenente file di risorse estratti. Prima di eliminare una cartella, accertati che gli utenti non abbiano estratto risorse digitali.
+* È possibile eliminare un *cartella* che contiene file di risorse estratti. Prima di eliminare una cartella, accertati che gli utenti non abbiano estratto risorse digitali.
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sull’app  [!DNL Experience Manager] indesktop di check-in e check-out](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Comprendere il check-in e il check-out [!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Esercitazione video per comprendere il check-in e il check-out [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

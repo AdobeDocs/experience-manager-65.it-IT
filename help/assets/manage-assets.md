@@ -6,14 +6,20 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9878'
+source-wordcount: '9913'
 ht-degree: 4%
 
 ---
 
 # Gestire le risorse digitali {#manage-digital-assets}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 In [!DNL Adobe Experience Manager Assets], puoi fare di più che archiviare e gestire le risorse. [!DNL Experience Manager] offre funzionalità di gestione delle risorse di livello enterprise. Puoi modificare e condividere le risorse, eseguire ricerche avanzate e creare più rappresentazioni di decine di formati di file supportati. Puoi anche gestire versioni e diritti digitali, automatizzare l’elaborazione delle risorse, gestire e gestire i metadati, collaborare con le annotazioni e molto altro.
 
@@ -159,7 +165,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installa Feature Pack 18912 nel [!DNL Experience Manager] istanze di authoring. Contatto [Adobe Assistenza clienti](https://experienceleague.adobe.com/?support-solution=General#support) per accedere a FP-18912 e completare la configurazione del tuo account FTP. Per ulteriori informazioni, consulta [Installa feature pack 18912 per la migrazione di massa delle risorse](/help/assets/bulk-ingest-migrate.md).
+>Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installa Feature Pack 18912 nel [!DNL Experience Manager] istanze di authoring. Contatto [Adobe Assistenza clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support) per accedere a FP-18912 e completare la configurazione del tuo account FTP. Per ulteriori informazioni, consulta [Installa feature pack 18912 per la migrazione di massa delle risorse](/help/assets/bulk-ingest-migrate.md).
 >
 >Se utilizzi l’FTP per caricare le risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorati. Vengono invece utilizzate le regole di elaborazione dei file definite in Dynamic Media Classic.
 
@@ -340,7 +346,7 @@ Alcune limitazioni della funzione sono:
 * Non è possibile selezionare due file ZIP contemporaneamente ed estrarli. Puoi estrarre un solo archivio ZIP alla volta.
 * Quando si carica un archivio ZIP, se nella finestra di dialogo di caricamento viene visualizzato un errore del server 500, riprovare dopo l&#39;installazione [l&#39;ultimo Service Pack](/help/release-notes/release-notes.md).
 
-## Anteprima delle risorse {#previewing-assets}
+## Visualizzare l’anteprima delle risorse {#previewing-assets}
 
 Per visualizzare l’anteprima di una risorsa, effettua le seguenti operazioni.
 

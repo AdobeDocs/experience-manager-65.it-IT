@@ -2,23 +2,29 @@
 title: Risorse multilingue e traduzione delle risorse
 description: Scopri come automatizzare i flussi di lavoro per tradurre le risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '202'
+ht-degree: 8%
 
 ---
 
 # Risorse multilingue {#multilingual-assets}
 
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/multilingual-assets.html?lang=en) |
+
 [!DNL Adobe Experience Manager Assets] consente di automatizzare i flussi di lavoro di traduzione sulle risorse (inclusi binari, metadati e tag) per generare risorse in altre lingue da utilizzare nei progetti multilingue.
 
-Per automatizzare i flussi di lavoro di traduzione, è possibile integrare i fornitori di servizi di traduzione con [!DNL Experience Manager] e creare progetti per la traduzione delle risorse in più lingue. [!DNL Experience Manager] supporta flussi di lavoro di traduzione umana e automatica.
+Per automatizzare i flussi di lavoro di traduzione, è possibile integrare fornitori di servizi di traduzione con [!DNL Experience Manager] e crea progetti per la traduzione delle risorse in più lingue. [!DNL Experience Manager] supporta flussi di lavoro di traduzione umana e automatica.
 
-Traduzione umana: Le risorse tradotte vengono restituite e importate in [!DNL Experience Manager]. Quando il provider di traduzione è integrato con [!DNL Experience Manager], le risorse vengono inviate automaticamente tra [!DNL Experience Manager] e il provider di traduzione.
+Traduzione umana: Le risorse tradotte vengono restituite e importate in [!DNL Experience Manager]. Quando il provider di traduzione è integrato con [!DNL Experience Manager], le risorse vengono inviate automaticamente tra [!DNL Experience Manager] e il fornitore di traduzione.
 
 Traduzione automatica: Il servizio di traduzione automatica traduce immediatamente i metadati e i tag delle risorse.
 
@@ -30,6 +36,6 @@ La conversione delle risorse include quanto segue:
 1. [Applicazione di servizi cloud di traduzione alle cartelle](transition-cloud-services.md)
 1. [Creare progetti di traduzione](translation-projects.md)
 
-Se il provider di servizi di traduzione non fornisce un connettore da integrare con [!DNL Experience Manager], utilizza un [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Se il provider di servizi di traduzione non fornisce un connettore con cui eseguire l&#39;integrazione [!DNL Experience Manager], utilizza un [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Vedi anche [Crea progetti di traduzione per frammenti di contenuto](creating-translation-projects-for-content-fragments.md).
+Vedi anche [Creazione di progetti di traduzione per frammenti di contenuto](creating-translation-projects-for-content-fragments.md).

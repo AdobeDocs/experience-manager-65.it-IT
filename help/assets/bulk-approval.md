@@ -2,17 +2,23 @@
 title: Esaminare raccolte e risorse delle cartelle
 description: Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 contentOwner: AG
-feature: Collaborazione, Raccolte
+feature: Collaboration, Collections
 role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 4%
+source-wordcount: '819'
+ht-degree: 5%
 
 ---
 
 # Esaminare raccolte e risorse delle cartelle {#review-folder-assets-and-collections}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/bulk-approval.html?lang=en) |
 
 Imposta i flussi di lavoro di revisione per le risorse all’interno di una cartella o di una raccolta e condividila con revisori o partner creativi per ottenere un feedback.
 
@@ -26,20 +32,20 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
 ## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
-1. Dall&#39;interfaccia utente [!DNL Assets], selezionare la cartella per la quale si desidera creare un&#39;attività di revisione.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire la pagina **[!UICONTROL Rivedi attività]**. Se l&#39;opzione non è visibile nella barra degli strumenti, fare clic su **[!UICONTROL Altro]** e quindi selezionare l&#39;opzione.
+1. Da [!DNL Assets] interfaccia utente, selezionare la cartella per la quale si desidera creare un&#39;attività di revisione.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’opzione non è visibile nella barra degli strumenti, fai clic su **[!UICONTROL Altro]** quindi seleziona l’opzione .
 
-1. (Facoltativo) Dall’elenco **[!UICONTROL Progetto]**, selezionare il progetto a cui si desidera associare l’attività di revisione. Per impostazione predefinita, è selezionata l’opzione **[!UICONTROL None]** . Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
-
-   >[!NOTE]
-   >
-   >Nell’elenco **[!UICONTROL Progetti]** sono visibili solo i progetti per i quali si dispone di autorizzazioni a livello di editor (o versioni successive).
-
-1. Immettere un nome per l&#39;attività di revisione e selezionare un approvatore dall&#39;elenco **[!UICONTROL Assegna a]**.
+1. (Facoltativo) Dal **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, la **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
    >[!NOTE]
    >
-   >I membri/gruppi del progetto selezionato sono disponibili come approvatori nell&#39;elenco **[!UICONTROL Assegna a]** .
+   >Solo i progetti per i quali disponi di autorizzazioni a livello di editor (o versioni successive) sono visibili nel **[!UICONTROL Progetti]** elenco.
+
+1. Immettere un nome per l&#39;attività di revisione e selezionare un approvatore dal **[!UICONTROL Assegna a]** elenco.
+
+   >[!NOTE]
+   >
+   >I membri/gruppi del progetto selezionato sono disponibili come approvatori nel **[!UICONTROL Assegna a]** elenco.
 
 1. Immettere una descrizione, la priorità dell&#39;attività e la data di scadenza dell&#39;attività di revisione.
 
@@ -50,17 +56,17 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![review_name](assets/review_name.png)
 
 1. Fai clic su **[!UICONTROL Invia]**, quindi fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a [!DNL Assets] come Approvatore e passa all&#39;interfaccia utente [!DNL Assets]. Per approvare le risorse, fai clic su **[!UICONTROL Notifiche]**, quindi seleziona l’attività di revisione dall’elenco.
+1. Accedi a [!DNL Assets] come Approvatore e passa alla [!DNL Assets] Interfaccia utente. Per approvare le risorse, fai clic su **[!UICONTROL Notifiche]** quindi selezionare l&#39;attività di revisione dall&#39;elenco.
 
    ![Notifica risorse](assets/aemAssetsNotification.png)
 
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell&#39;attività di revisione, quindi fai clic su **[!UICONTROL Rivedi]**.
-1. Nella pagina **[!UICONTROL Rivedi attività]**, seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** per approvarle o rifiutarle, a seconda dei casi.
+1. In **[!UICONTROL Attività di revisione]** esaminare i dettagli dell&#39;attività di revisione, quindi fare clic su **[!UICONTROL Revisione]**.
+1. In **[!UICONTROL Attività di revisione]** , seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** approvare o respingere, a seconda dei casi.
 
    ![review_task](assets/review_task.png)
 
-1. Fai clic su **[!UICONTROL Completa]** nella barra degli strumenti. Nella finestra di dialogo, immetti un commento e fai clic su **[!UICONTROL Completa]** per confermare.
-1. Passa all’ interfaccia utente [!DNL Assets] e apri la cartella . Le icone sullo stato di approvazione delle risorse vengono visualizzate nella vista a schede e a elenco.
+1. Fai clic su **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e fai clic su  **[!UICONTROL Completa]** per confermare.
+1. Passa a [!DNL Assets] e apri la cartella. Le icone sullo stato di approvazione delle risorse vengono visualizzate nella vista a schede e a elenco.
 
    **Vista a schede**
 
@@ -73,32 +79,32 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 ## Creare un’attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte selezionare la raccolta per la quale si desidera creare un&#39;attività di revisione.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire la pagina **[!UICONTROL Rivedi attività]**. Se l&#39;opzione sulla barra degli strumenti non è visibile, fare clic su **[!UICONTROL Altro]** e quindi selezionare l&#39;opzione.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’opzione non è visibile sulla barra degli strumenti, fai clic su **[!UICONTROL Altro]** quindi seleziona l’opzione .
 
-1. (Facoltativo) Dall’elenco **[!UICONTROL Progetto]**, selezionare il progetto a cui si desidera associare l’attività di revisione. Per impostazione predefinita, è selezionata l’opzione **[!UICONTROL None]** . Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
-
-   >[!NOTE]
-   >
-   >Nell’elenco **[!UICONTROL Progetti]** sono visibili solo i progetti per i quali si dispone di autorizzazioni a livello di editor (o versioni successive).
-
-1. Immettere un nome per l&#39;attività di revisione e selezionare un approvatore dall&#39;elenco **[!UICONTROL Assegna a]**.
+1. (Facoltativo) Dal **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, la **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
    >[!NOTE]
    >
-   >I membri/gruppi del progetto selezionato sono disponibili come approvatori nell&#39;elenco **[!UICONTROL Assegna a]** .
+   >Solo i progetti per i quali disponi di autorizzazioni a livello di editor (o versioni successive) sono visibili nel **[!UICONTROL Progetti]** elenco.
+
+1. Immettere un nome per l&#39;attività di revisione e selezionare un approvatore dal **[!UICONTROL Assegna a]** elenco.
+
+   >[!NOTE]
+   >
+   >I membri/gruppi del progetto selezionato sono disponibili come approvatori nel **[!UICONTROL Assegna a]** elenco.
 
 1. Immettere una descrizione, la priorità dell&#39;attività e la data di scadenza dell&#39;attività di revisione.
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Fai clic su **[!UICONTROL Invia]**, quindi fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a [!DNL Assets] come Approvatore e passa alla console [!DNL Assets] . Per approvare le risorse, fai clic su **[!UICONTROL Notifiche]**, quindi seleziona l’attività di revisione dall’elenco.
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell&#39;attività di revisione, quindi fai clic su **[!UICONTROL Rivedi]**.
-1. Tutte le risorse nella raccolta sono visibili nella pagina di revisione. Seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
+1. Accedi a [!DNL Assets] come Approvatore e passa alla [!DNL Assets] console. Per approvare le risorse, fai clic su **[!UICONTROL Notifiche]** quindi selezionare l&#39;attività di revisione dall&#39;elenco.
+1. In **[!UICONTROL Attività di revisione]** esaminare i dettagli dell&#39;attività di revisione, quindi fare clic su **[!UICONTROL Revisione]**.
+1. Tutte le risorse nella raccolta sono visibili nella pagina di revisione. Seleziona le risorse e fai clic su **[!UICONTROL Approva/Rifiuta]** approvare o rifiutare le risorse, a seconda dei casi.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Fai clic su **[!UICONTROL Completa]** nella barra degli strumenti. Nella finestra di dialogo, immetti un commento e fai clic su **[!UICONTROL Completa]** per confermare.
+1. Fai clic su **[!UICONTROL Completa]** dalla barra degli strumenti. Nella finestra di dialogo, immetti un commento e fai clic su **[!UICONTROL Completa]** per confermare.
 1. Passa alla console Raccolte e apri la raccolta. Le icone dello stato di approvazione per le risorse vengono visualizzate nelle viste a schede e a elenco.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)

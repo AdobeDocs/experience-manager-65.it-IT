@@ -5,14 +5,20 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: bfc4aa92770b001bdf89d89fa149d8e4ceefa6c2
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2493'
 ht-degree: 8%
 
 ---
 
 # Utilizzo [!DNL Adobe Stock] risorse in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
 
 <!-- old content
 
@@ -48,7 +54,7 @@ L&#39;integrazione richiede:
 
 * Un [enterprise [!DNL Adobe Stock] piano](https://stockenterprise.adobe.com/)
 * Un utente con autorizzazioni in Admin Console al profilo di prodotto Stock predefinito
-* Utente con autorizzazioni per il profilo Developer Access per la creazione di integrazioni in Adobe Developer Console
+* Utente con autorizzazioni per il profilo Developer Access per la creazione di integrazioni nella console Adobe Developer
 
 Un&#39;impresa [!DNL Adobe Stock] piano,
 
@@ -105,7 +111,7 @@ La configurazione IMS prevede due passaggi:
 
 ### Recuperare il certificato pubblico {#public-certificate}
 
-La chiave pubblica (certificato) autentica il profilo di prodotto in Adobe Developer Console.
+La chiave pubblica (certificato) autentica il tuo profilo di prodotto nella console Adobe Developer.
 
 1. Accedi al tuo [!DNL Experience Manager Assets] istanza dell’autore. L’URL predefinito è `http://localhost:4502/aem/start.html`.
 
@@ -129,15 +135,15 @@ La chiave pubblica (certificato) autentica il profilo di prodotto in Adobe Devel
 
 1. In **Account** viene creato l’account Adobe IMS che richiede le credenziali dell’account del servizio.
 
-   Apri una nuova scheda e [creare una connessione a un account di servizio (JWT) in Adobe Developer Console](#createnewintegration).
+   Apri una nuova scheda e [creare una connessione account di servizio (JWT) nella console Adobe Developer](#createnewintegration).
 
 ### Crea connessione account di servizio (JWT) {#createnewintegration}
 
-In Adobe Developer Console, i progetti e le API sono configurati a livello di organizzazione. La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. In questo esempio, le credenziali dell’account del servizio vengono generate caricando la chiave pubblica.
+Nella console Adobe Developer, i progetti e le API sono configurati a livello di organizzazione. La configurazione di un’API crea una connessione a un account di servizio (JWT). Esistono due metodi per configurare l’API, generando una coppia di chiavi (chiavi private e pubbliche) o caricando una chiave pubblica. In questo esempio, le credenziali dell’account del servizio vengono generate caricando la chiave pubblica.
 
 Per generare le credenziali dell’account del servizio e il payload JWT:
 
-1. Accedi ad Adobe Developer Console con privilegi di amministratore di sistema. L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Accedi alla console Adobe Developer con i privilegi di amministratore di sistema. L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    Accertati di aver selezionato l’organizzazione IMS corretta (adesione Stock) dall’elenco a discesa (organizzazione).

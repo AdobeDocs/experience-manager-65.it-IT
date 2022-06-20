@@ -5,14 +5,20 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b9def70b86d3313a5f6d429ae49ba6ef3947a35a
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2429'
 ht-degree: 17%
 
 ---
 
 # Facet di ricerca {#search-facets}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Un&#39;implementazione a livello aziendale di [!DNL Adobe Experience Manager Assets] ha la capacità di memorizzare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede tempo se si utilizzano solo le funzionalità di ricerca generiche di [!DNL Experience Manager].
 
@@ -195,7 +201,7 @@ Se non ti viene assegnato un ruolo di amministratore, compare un elenco di autor
 | Azione | Autorizzazioni |
 | ------------------- | ---------------------------------------------------------------- |
 | [!UICONTROL Modifica] | Autorizzazioni di lettura e scrittura per `/apps` nodo in CRXDE |
-| [!UICONTROL Elimina] | Autorizzazioni di lettura, scrittura ed eliminazione per `/apps` nodo in CRXDE |
+| [!UICONTROL Eliminare] | Autorizzazioni di lettura, scrittura ed eliminazione per `/apps` nodo in CRXDE |
 | [!UICONTROL Anteprima] | Autorizzazioni di lettura, scrittura ed eliminazione per `/var/dam/content` in CRXDE. Inoltre, le autorizzazioni di lettura e scrittura su `/apps` nodo. |
 
 >[!MORELIKETHIS]

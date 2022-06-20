@@ -4,14 +4,20 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 00713ea7fe06d4e180232e48a9e3f11b53f4326f
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 0%
+source-wordcount: '1749'
+ht-degree: 1%
 
 ---
 
 # Configurare [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] configura il connettore avanzato dopo l’installazione. Per istruzioni sull&#39;installazione, vedi [Installare il connettore](/help/assets/workfront-integrations.md).
 

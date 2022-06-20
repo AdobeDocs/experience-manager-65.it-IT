@@ -5,15 +5,21 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
+source-wordcount: '586'
+ht-degree: 4%
 
 ---
 
 
 # Utilizzare Media Library per la gestione delle risorse di base {#manage-assets-using-media-library}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 | Questo articolo |
+| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=it) |
 
 [!DNL Adobe Experience Manager] Platform offre diverse funzionalità per la gestione delle risorse. Media Library consente agli utenti di caricare nell’archivio un numero limitato di risorse, di eseguire ricerche e utilizzarle nelle pagine web e di eseguire semplici attività di gestione delle risorse.
 
@@ -51,7 +57,7 @@ Media Library fornisce funzioni DAM di base per i seguenti casi d’uso:
 Per utilizzare la funzionalità Media Library, è possibile utilizzare la [!DNL Experience Manager] interfaccia utente. Media Library fa parte del [!DNL Experience Manager Sites] installazione e non è necessaria alcuna interfaccia o componente aggiuntivo separata. Utilizzando l’interfaccia esistente, gli utenti di Media Library possono eseguire le seguenti attività:
 
 * Crea cartelle per organizzare le risorse.
-* Carica le risorse.
+* Caricare le risorse.
 * Pubblicare le risorse.
 * Modificare, spostare e copiare le risorse.
 * Sfogliare, filtrare e cercare (include la ricerca per similarità) le risorse.
