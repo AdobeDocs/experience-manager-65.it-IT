@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1946'
 ht-degree: 9%
 
 ---
@@ -31,6 +31,14 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 >[!NOTE]
 >
 >Per informazioni sull’interfaccia utente di Assets, consulta [Gestire le risorse](/help/assets/manage-assets.md).
+
+Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
+
+| Tipo di limite | Best practice | Limite implementato |
+| --- | --- | --- |
+| Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 ## Avvio rapido: Set 360 gradi {#quick-start-spin-sets}
 
@@ -113,6 +121,14 @@ Questa sezione descrive come creare un set 360 gradi in Experience Manager.
 >[!NOTE]
 >
 >L&#39;ordine in cui le immagini appaiono in un set 360 gradi ha importanza. Assicurati di ordinarli in modo che la rotazione sia una vista a 360° liscia.
+
+Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
+
+| Tipo di limite | Best practice | Limite implementato |
+| --- | --- | --- |
+| Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 **Per creare un set 360 gradi:**
 

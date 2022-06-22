@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2194'
 ht-degree: 7%
 
 ---
@@ -35,6 +35,15 @@ Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di co
 >[!NOTE]
 >
 >Per informazioni sull’interfaccia utente di Assets, consulta [Gestire le risorse](/help/assets/manage-assets.md).
+
+Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
+
+| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
+| --- | --- | --- | --- |
+| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
+| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
@@ -130,6 +139,15 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 >[!NOTE]
 >
 >I set di immagini non sono supportati per le risorse con &quot;,&quot; (virgola) nel nome del file.
+
+Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
+
+| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
+| --- | --- | --- | --- |
+| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
+| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 **Per creare i set di immagini:**
 

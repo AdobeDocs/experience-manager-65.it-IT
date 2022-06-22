@@ -2,13 +2,13 @@
 title: Gestire le risorse digitali
 description: Scopri le attività di gestione delle risorse come caricare, scaricare, modificare, cercare, eliminare, annotare e creare una versione delle risorse digitali.
 contentOwner: AG
-mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
+mini-toc-levels: 3
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '9913'
+source-wordcount: '9974'
 ht-degree: 4%
 
 ---
@@ -210,7 +210,7 @@ Per annullare un processo di caricamento in corso, fai clic su **[!UICONTROL Ann
 |  | Opzioni di modifica delle immagini | È possibile mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Vedi [Opzioni di impostazione per le modifiche alle immagini al momento del caricamento](#setting-image-editing-options-at-upload). |
 |  | Opzioni Postscript | È possibile rasterizzare file di PostScript®, ritagliare file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Vedi [Impostazione delle opzioni di caricamento PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opzioni Photoshop | È possibile creare modelli da file Adobe® Photoshop®, mantenere i livelli, specificare il nome dei livelli, estrarre il testo e specificare il modo in cui le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Vedi [Impostazione delle opzioni di caricamento di Photoshop](#setting-photoshop-upload-options). |
-|  | Opzioni di PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Vedi [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options). |
+|  | Opzioni di PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Vedi [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: Il numero massimo di pagine per un PDF da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite sarà portato a 100 pagine il 31 dicembre 2022. Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md). |
 |  | Opzioni Illustrator | È possibile rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Vedi [Impostazione delle opzioni di caricamento PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opzioni eVideo | È possibile transcodificare un file video scegliendo un predefinito per video.<br> Vedi [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
 |  | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito da utilizzare. Puoi selezionare più di un predefinito. Puoi creare i predefiniti nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Vedi [Configurazione dei predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Vedi [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
@@ -283,6 +283,8 @@ Utilizza la [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni del profilo c
 #### Impostare le opzioni di caricamento di PDF {#setting-pdf-upload-options}
 
 Quando carichi un file PDF, puoi formattarlo in vari modi. Ritagliate le pagine, estraete le parole di ricerca, immettete una risoluzione pixel per pollice e scegliete uno spazio colore. I file PDF contengono spesso un margine di taglio, indicatori di ritaglio, segni di registrazione e altri segni della stampante. È possibile ritagliare questi segni dai lati delle pagine durante il caricamento di un file PDF.
+
+Il numero massimo di pagine per un PDF da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite sarà portato a 100 pagine il 31 dicembre 2022. Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >
