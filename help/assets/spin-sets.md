@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1952'
 ht-degree: 9%
 
 ---
@@ -34,7 +34,7 @@ I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]*
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
@@ -50,7 +50,7 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Vedi [Dynamic Media - Formati immagine raster supportati](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) per un elenco dei formati supportati dai set 360 gradi.
 
-1. [Creare set 360 gradi](#creating-spin-sets).
+1. [Creare un set 360 gradi](#creating-spin-sets).
 
    Per creare un set 360 gradi, seleziona **[!UICONTROL Crea > Set 360 gradi]** quindi assegna un nome al set, scegli le risorse e scegli l’ordine in cui vengono visualizzate le immagini.
 
@@ -68,15 +68,15 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Vedi [Aggiungere e modificare i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
-1. [Visualizza set 360 gradi](#viewing-spin-sets).
+1. [Visualizzare un set 360 gradi](#viewing-spin-sets).
 
    È possibile visualizzare e accedere ai set creati mediante i predefiniti per set di batch in tre modi diversi. (I set creati utilizzando i predefiniti set di batch, sì *not* nell&#39;interfaccia utente).
 
-1. [Anteprima set 360 gradi](/help/assets/previewing-assets.md).
+1. [Anteprima di un set 360 gradi](/help/assets/previewing-assets.md).
 
    Seleziona il set 360 gradi e puoi visualizzarlo in anteprima. Ruota il set 360 gradi. È possibile scegliere diversi visualizzatori dal **[!UICONTROL Visualizzatori]** disponibile dal menu a discesa della barra a sinistra.
 
-1. [Pubblica set 360 gradi](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Pubblicare un set 360 gradi](/help/assets/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set 360 gradi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/managing-viewer-presets.md).
 
@@ -88,9 +88,9 @@ Per iniziare rapidamente a usare i set 360 gradi, effettua le seguenti operazion
 
    Vedi [Collegamento di un set 360 gradi a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporare il visualizzatore di video o immagini](/help/assets/embed-code.md).
 
-Se necessario, puoi [modifica set 360 gradi](#editing-spin-sets). Inoltre, puoi visualizzare e modificare [Proprietà del set 360 gradi](/help/assets/manage-assets.md#editing-properties).
+Se necessario, puoi [modificare un set 360 gradi](#editing-spin-sets). Inoltre, puoi visualizzare e modificare [Proprietà del set 360 gradi](/help/assets/manage-assets.md#editing-properties).
 
-## Caricare risorse per i set 360 gradi {#uploading-assets-for-spin-sets}
+## Caricare risorse per un set 360 gradi {#uploading-assets-for-spin-sets}
 
 Per un set 360 gradi a una dimensione e per un set 360 gradi a due dimensioni, è necessario effettuare almeno 8-12 scatti di un elemento. Le riprese devono essere effettuate a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360 gradi unidimensionale include 12 scatti, ruotate l’elemento di 30° (360/12) per ogni ripresa.
 
@@ -124,7 +124,7 @@ Questa sezione descrive come creare un set 360 gradi in Experience Manager.
 
 Quando crei un set 360 gradi, Adobe consiglia di seguire la procedura consigliata e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite implementato |
+| Tipo di limite | Best practice | Limitato |
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 

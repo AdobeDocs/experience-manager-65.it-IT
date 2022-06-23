@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2184'
 ht-degree: 7%
 
 ---
@@ -38,10 +38,10 @@ Supponiamo, ad esempio, di voler presentare immagini di tappi con distinte di co
 
 Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
-| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
@@ -57,7 +57,7 @@ Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Creare set di immagini](#creating-image-sets).
+1. [Creare un set di immagini](#creating-image-sets).
 
    In Set immagini, gli utenti selezionano le immagini in miniatura nel visualizzatore di set di immagini.
 
@@ -78,12 +78,12 @@ Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
    Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]** per creare o modificare i predefiniti visualizzatore.
 
-1. (Facoltativo) [Visualizza set di immagini](/help/assets/image-sets.md#viewing-image-sets) creati utilizzando i predefiniti per set di batch.
+1. (Facoltativo) [Visualizzare un set di immagini](/help/assets/image-sets.md#viewing-image-sets) creati utilizzando i predefiniti per set di batch.
 1. [Anteprima set di immagini](/help/assets/previewing-assets.md).
 
    Seleziona il set di immagini e puoi visualizzarlo in anteprima. Seleziona le icone delle miniature per esaminare il set di immagini nel visualizzatore selezionato. È possibile scegliere diversi visualizzatori dal **[!UICONTROL Visualizzatori]** disponibile dal menu a discesa della barra a sinistra.
 
-1. [Pubblica set di immagini](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Pubblicare un set di immagini](/help/assets/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set di immagini attiva l’URL e il codice di incorporamento. Inoltre, devi [pubblicare qualsiasi predefinito visualizzatore personalizzato](/help/assets/managing-viewer-presets.md) che hai creato. I predefiniti per visualizzatori sono già stati pubblicati.
 
@@ -125,7 +125,7 @@ Poiché gli utenti possono eseguire lo zoom delle immagini in Set di immagini, a
 >* Miniatura di colore nero, marrone e verde.
 
 
-## Creare set di immagini {#creating-image-sets}
+## Creare un set di immagini {#creating-image-sets}
 
 Puoi creare i set di immagini tramite l’interfaccia utente o l’API. Questa sezione descrive come creare i set di immagini nell’interfaccia utente di .
 
@@ -142,14 +142,14 @@ Quando aggiungi delle risorse al set, queste vengono aggiunte automaticamente in
 
 Quando crei un set di immagini, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite implementato | Modifiche al limite del 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| **Set di immagini** - Numero di risorse duplicate per set | Nessun duplicato | 100 | 20 |
-| **Set di immagini** - Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
-**Per creare i set di immagini:**
+**Per creare un set di immagini:**
 
 1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi vai a **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]**. Passa al punto in cui desideri creare un set di immagini, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Set di immagini]** per aprire la pagina Editor set di immagini.
 
@@ -193,7 +193,7 @@ Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
 1. Seleziona **[!UICONTROL Salva]**. Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
 
-## Visualizza set di immagini {#viewing-image-sets}
+## Visualizzare un set di immagini {#viewing-image-sets}
 
 È possibile creare set di immagini nell’interfaccia utente o automaticamente utilizzando [predefiniti per set di batch](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -221,7 +221,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, sì *not* nel
 >
 >Puoi visualizzare i set tramite l’interfaccia utente descritta in [Modifica set di immagini](#editing-image-sets).
 
-## Modifica set di immagini {#editing-image-sets}
+## Modificare un set di immagini {#editing-image-sets}
 
 È possibile eseguire varie attività di modifica sui set di immagini, ad esempio:
 
@@ -231,7 +231,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, sì *not* nel
 * Applica i predefiniti visualizzatore.
 * Elimina il set di immagini.
 
-**Per modificare i set di immagini:**
+**Per modificare un set di immagini:**
 
 1. Effettua una delle seguenti operazioni:
 
@@ -259,10 +259,10 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, sì *not* nel
 
 1. Seleziona **[!UICONTROL Salva]** al termine della modifica.
 
-## Anteprima set di immagini {#previewing-image-sets}
+## Anteprima di un set di immagini {#previewing-image-sets}
 
 Vedi [Anteprima delle risorse](/help/assets/previewing-assets.md).
 
-## Pubblica set di immagini {#publishing-image-sets}
+## Pubblicare un set di immagini {#publishing-image-sets}
 
 Vedi [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md).
