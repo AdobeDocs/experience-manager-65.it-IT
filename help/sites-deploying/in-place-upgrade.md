@@ -4,7 +4,7 @@ description: Scopri come eseguire un aggiornamento sul posto.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 64c9296554c55b539145dd59a14b2255b1750e47
+source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -187,7 +187,7 @@ Tieni presente che l’avvio AEM dallo script iniziale non avvierà l’aggiorna
 1. Modifica il comando sostituendo il percorso del jar esistente ( `crx-quickstart/app/aem-quickstart*.jar` in questo caso) con il nuovo jar che è un fratello del `crx-quickstart` cartella. Utilizzando il comando precedente come esempio, il nostro comando sarebbe:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    In questo modo verranno applicate tutte le impostazioni di memoria, le modalità di esecuzione personalizzate e altri parametri ambientali appropriati per l’aggiornamento. Una volta completato l’aggiornamento, l’istanza può essere avviata dallo script iniziale nelle prossime avviazioni.
