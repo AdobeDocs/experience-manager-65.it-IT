@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
 workflow-type: tm+mt
-source-wordcount: '7466'
+source-wordcount: '7575'
 ht-degree: 0%
 
 ---
@@ -283,6 +283,13 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 * **Configurazione di Adobe Sign Cloud**: Scegli una configurazione cloud di Adobe Sign. Se non hai configurato Adobe Sign per AEM Forms, consulta [Integrare Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Selezionare il documento da firmare utilizzando:** È possibile scegliere un documento da una posizione relativa al payload, utilizzare il payload come documento, specificare un percorso assoluto del documento o recuperare il documento memorizzato in una variabile di tipo Dati documento.
+
+
+* **Selezionare Percorso allegato di input utilizzando:** Percorso degli allegati. Questi allegati sono inclusi nel documento di firma. È possibile mantenere gli allegati in una posizione relativa al payload, specificare un percorso assoluto degli allegati o recuperare gli allegati memorizzati in una variabile di tipo di dati Documento.
+
+
+Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella vengono allegati al documento di firma. Se sono disponibili file nelle cartelle direttamente disponibili nel percorso allegato specificato, i file sono inclusi nel documento di firma come allegati. Se sono presenti cartelle in cartelle direttamente disponibili, queste vengono ignorate.
+
 * **Giorni fino alla scadenza:** Un documento viene contrassegnato come scaduto (superato il termine) dopo che non vi è alcuna attività sull&#39;attività per il numero di giorni specificato nel **Giorni fino alla scadenza** campo . Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
 * **Frequenza e-mail promemoria:** Puoi inviare un messaggio e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
 * **Processo firma:** È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Al termine della firma del documento da parte del primo firmatario, il documento viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
