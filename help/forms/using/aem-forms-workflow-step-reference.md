@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
+source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -288,7 +288,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 * **Selezionare Percorso allegato di input utilizzando:** Percorso degli allegati. Questi allegati sono inclusi nel documento di firma. È possibile mantenere gli allegati in una posizione relativa al payload, specificare un percorso assoluto degli allegati o recuperare gli allegati memorizzati in una variabile di tipo di dati Documento.
 
 
-Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella vengono allegati al documento di firma. Se sono disponibili file nelle cartelle direttamente disponibili nel percorso allegato specificato, i file sono inclusi nel documento di firma come allegati. Se sono presenti cartelle in cartelle direttamente disponibili, queste vengono ignorate.
+   Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella vengono allegati al documento di firma. Se sono disponibili file nelle cartelle direttamente disponibili nel percorso allegato specificato, i file sono inclusi nel documento di firma come allegati. Se sono presenti cartelle in cartelle direttamente disponibili, queste vengono ignorate.
 
 * **Giorni fino alla scadenza:** Un documento viene contrassegnato come scaduto (superato il termine) dopo che non vi è alcuna attività sull&#39;attività per il numero di giorni specificato nel **Giorni fino alla scadenza** campo . Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
 * **Frequenza e-mail promemoria:** Puoi inviare un messaggio e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
