@@ -9,8 +9,8 @@ feature: Communities
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 12%
    + [Creare un nuovo sito community per l’abilitazione](enablement-create-site.md)
    + [Creare e assegnare risorse di abilitazione](resource.md)
    + [Esperienza con il sito di abilitazione pubblicato](enablement-published-site.md)
-+ Distribuzione di {#deploy}
++ Distribuzione {#deploy}
    + [Distribuzione di Communities](deploy-communities.md)
    + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)

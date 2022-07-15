@@ -9,8 +9,8 @@ feature: Mobile
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 12%
    + [Adobe PhoneGap AEM](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - Preparazione all’RGPD](aem-mobile-gdpr-compliance.md)
    + [Sviluppare app mobili](develop-mobile-apps.md)
-+ Authoring di app On-Demand Services {#authoring}
++ Authoring di un’app di servizi on-demand {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestione dei contenuti](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Pubblicare un contenuto di annullamento pubblicazione](mobile-on-demand-publishing-unpublishing.md)
@@ -49,7 +49,7 @@ ht-degree: 12%
    + [Rendering e consegna](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Consegna dei contenuti](develop-content-as-a-service.md)
-+ Amministrazione dell&#39;app dei servizi on-demand {#administering}
++ Amministrazione dell’app dei servizi on-demand {#administering}
    + [AEM Mobile on-demand](aem-mobile.md)
    + [Configurazione AEM Mobile](aem-mobile-setup.md)
    + [Configurare utenti e gruppi di utenti](aem-mobile-configure-users.md)

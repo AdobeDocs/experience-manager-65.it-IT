@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 37%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -265,5 +265,5 @@ ht-degree: 37%
    + [Web per dispositivi mobili](mobile-web.md)
    + [Creazione di filtri per i gruppi di dispositivi](groupfilters.md)
    + [Progettazione reattiva per le pagine web](responsive.md)
-   + [Creazione di siti per dispositivi Mobile](mobile.md)
+   + [Creazione di siti per dispositivi mobili](mobile.md)
    + [Emulatori](emulators.md)

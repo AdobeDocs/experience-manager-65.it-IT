@@ -8,8 +8,8 @@ breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 49%
    + [Filtrare le risorse](watermarking.md)
    + [Modelli di risorse](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurare [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurare  [!DNL Assets]  con  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Pubblicare cartelle su [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Pubblicare raccolte in [!DNL Brand Portal]](brand-portal-publish-collection.md)
