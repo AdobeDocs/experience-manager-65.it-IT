@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
    * Inoltre, è possibile utilizzare le seguenti proprietà del campo:
 
       * `field.value` per modificare il valore di un campo.
-      * f `ield.enabled` per abilitare/disabilitare un campo.
+      * `field.enabled` per abilitare/disabilitare un campo.
       * `field.visible` per modificare la visibilità di un campo.
 
 * Gli autori di moduli adattivi potrebbero dover scrivere codice JavaScript per creare logica di business in un modulo. Anche se JavaScript è potente ed efficace, è probabile che possa compromettere le aspettative di sicurezza. Pertanto, è necessario assicurarsi che l’autore del modulo sia una persona affidabile e che siano disponibili processi per la revisione e l’approvazione del codice JavaScript prima che un modulo venga messo in produzione. L’amministratore può limitare l’accesso all’editor di regole ai gruppi di utenti in base al loro ruolo o funzione. Vedi [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Un documento di record (DoR) è una versione PDF appiattita di un modulo adattiv
 * Scopri e scopri le API di guideBridge
 
 Per ulteriori informazioni, consulta [Plug-in di AEM Chrome - Modulo adattivo](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK è un&#39;API di utilità per gli sviluppatori di Forms adattivi per testare Adaptive Forms. L’SDK di Calvin è basato su [Framework di test di Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). Puoi utilizzare il framework per testare quanto segue:
-
-* Esperienza di rappresentazione di un modulo adattivo
-* Precompilare l’esperienza di un modulo adattivo
-* Invio dell’esperienza di un modulo adattivo
-* Regole di espressione
-* Convalida
-* Caricamento pigro
-
-Per ulteriori informazioni, consulta [Verifica automatica dei moduli adattivi](/help/forms/using/calvin.md).
 
 ### Convalida dei moduli adattivi AEM server {#validating-adaptive-forms-on-aem-server}
 

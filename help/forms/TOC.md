@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3778'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 5%
       + [Esercitazione: Applicazione di regole ai campi del modulo adattivo l](using/apply-rules-to-adaptive-form-fields.md)
       + [Esercitazione: Personalizzare lo stile del modulo adattivo](using/style-your-adaptive-form.md)
       + [Esercitazione: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
-      + [Esercitazione: Verifica del modulo adattivo](/help/forms/using/testing-your-adaptive-form.md)
    + Esercitazione: Creare la prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creare la prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
@@ -175,7 +174,6 @@ ht-degree: 5%
    + [Supporto XFA nei moduli adattivi basati su XDP](using/xfa-api-supported-in-adaptive-form.md)
    + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](using/rule-editor-access-user-groups.md)
    + [Utilizzo AEM flusso di lavoro di traduzione per localizzare i moduli adattivi e il documento di registrazione](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-   + [Verifica automatica dei moduli adattivi](using/calvin.md)
    + [Costruzioni di stile per i moduli adattivi](using/styling-constructs-adaptive-forms.md)
    + [Sincronizzazione di Adaptive Forms con i modelli di moduli XFA](using/synchronizing-adaptive-forms-xfa.md)
    + [Integrare Adobe Sign con AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
