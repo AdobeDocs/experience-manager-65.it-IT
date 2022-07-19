@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
+source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3742'
 ht-degree: 7%
 
 ---
@@ -298,10 +298,10 @@ Sono state introdotte le seguenti correzioni di bug, funzioni chiave e miglioram
 
 ## Interfaccia utente {#ui-6513}
 
+* Aggiorna `favicon.ico` utilizzato nell&#39;Experience Manager. (CQ-4315324)
 * Quando ti trovi nella pagina iniziale > Sezione Strumenti e fai clic sul pulsante [!DNL Experience Manager] l&#39;icona [!DNL Experience Manager] Viene visualizzata la schermata di navigazione. (NPR-38417)
 * Abilita ES6 per `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Abilita ES6 per `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * Il selettore data nell’interfaccia touch viene visualizzato in coreano. (NPR-38079)
 * Finestra di dialogo di authoring con più campi, dopo aver riordinato i campi perdendo il valore di selezione del pulsante di scelta. (NPR-38063)
