@@ -1,8 +1,8 @@
 ---
 title: Modelli di pagina - Modificabili
-seo-title: Modelli di pagina - Modificabili
-description: Sono stati introdotti modelli modificabili per consentire agli utenti non sviluppatori di creare e modificare modelli, fornire modelli che mantengano una connessione dinamica a qualsiasi pagina da essi creata e rendere il componente pagina più generico
-seo-description: Sono stati introdotti modelli modificabili per consentire agli utenti non sviluppatori di creare e modificare modelli, fornire modelli che mantengano una connessione dinamica a qualsiasi pagina da essi creata e rendere il componente pagina più generico
+seo-title: Page Templates - Editable
+description: I modelli modificabili sono stati introdotti in , consentono agli utenti non sviluppatori di creare e modificare modelli, forniscono modelli che mantengono una connessione dinamica a qualsiasi pagina da essi creata e rendono il componente pagina più generico
+seo-description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
 uuid: 61791960-fdef-4e49-878a-11fdf1d4f0ab
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,165 +10,163 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
+source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
 workflow-type: tm+mt
-source-wordcount: '3285'
-ht-degree: 8%
+source-wordcount: '3249'
+ht-degree: 10%
 
 ---
-
 
 # Modelli di pagina - Modificabili {#page-templates-editable}
 
 Sono stati introdotti modelli modificabili per:
 
-* Consenti agli autori specializzati di [creare e modificare i modelli](/help/sites-authoring/templates.md).
+* Consenti agli autori specializzati di [creare e modificare modelli](/help/sites-authoring/templates.md).
 
-   * Tali autori specializzati sono denominati **autori di modelli**
-   * Gli autori dei modelli devono essere membri del gruppo `template-authors`.
+   * Questi autori specializzati sono chiamati **autori di modelli**
+   * Gli autori dei modelli devono essere membri del gruppo `template-authors` gruppo.
 
-* Fornire modelli che mantengano una connessione dinamica a tutte le pagine create da tali modelli. In questo modo tutte le modifiche apportate al modello verranno applicate alle pagine stesse.
-* Rendete il componente pagina più generico in modo che possa essere utilizzato senza personalizzazione.
+* Fornisci modelli che mantengono una connessione dinamica a tutte le pagine create da essi. In questo modo tutte le modifiche apportate al modello verranno applicate alle pagine stesse.
+* Rendete il componente pagina più generico in modo che il componente pagina di base possa essere utilizzato senza personalizzazione.
 
-Con i modelli modificabili, le parti che compongono una pagina sono isolate all’interno dei componenti. È possibile configurare le combinazioni di componenti necessarie in un’interfaccia utente, eliminando così la necessità di sviluppare un nuovo componente di pagina per ogni variazione di pagina.
+Con i modelli modificabili, le parti che compongono una pagina vengono isolate all’interno dei componenti. È possibile configurare le combinazioni di componenti necessarie in un’interfaccia utente, eliminando in tal modo la necessità di sviluppare un nuovo componente di pagina per ogni variante di pagina.
 
 >[!NOTE]
 >
->[Sono disponibili anche ](/help/sites-developing/page-templates-static.md) modelli statici.
+>[Modelli statici](/help/sites-developing/page-templates-static.md) sono anche disponibili.
 
 Questo documento:
 
-* Fornisce una panoramica sulla creazione di modelli modificabili
+* Offre una panoramica della creazione di modelli modificabili
 
-   * Per informazioni dettagliate, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md)
+   * Per maggiori dettagli vedi [Creazione di modelli di pagina](/help/sites-authoring/templates.md)
 
 * Descrive le attività di amministrazione/sviluppatore necessarie per creare modelli modificabili
 * Descrive le basi tecniche dei modelli modificabili
 
-Questo documento presuppone che si abbia già familiarità con la creazione e la modifica di modelli. Consultate il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md), che descrive in dettaglio le capacità dei modelli modificabili come esposti all&#39;autore del modello.
+Questo documento presuppone che tu abbia già familiarità con la creazione e la modifica dei modelli. Vedere il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md), che descrive le funzionalità dei modelli modificabili esposte all’autore del modello.
 
 >[!NOTE]
 >
->L&#39;esercitazione seguente potrebbe interessare anche la configurazione di un modello di pagina modificabile in un nuovo progetto:
->[Guida introduttiva  AEM Sites Part 2 - Creazione di una pagina di base e di un modello](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>L’esercitazione seguente potrebbe interessare anche l’impostazione di un modello di pagina modificabile in un nuovo progetto:
+>[Guida introduttiva ad AEM Sites Parte 2 - Creazione di una pagina e di un modello di base](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creazione di un nuovo modello {#creating-a-new-template}
 
-La creazione di modelli modificabili viene realizzata principalmente con la [console dei modelli ed editor di modelli](/help/sites-authoring/templates.md) da un autore di modelli. Questa sezione fornisce una panoramica di questo processo e una descrizione di quanto avviene a livello tecnico.
+La creazione di modelli modificabili viene eseguita principalmente con [console e editor modelli](/help/sites-authoring/templates.md) da un autore di modelli. Questa sezione fornisce una panoramica di questo processo e ne segue una descrizione a livello tecnico.
 
-Per informazioni sull&#39;utilizzo di modelli modificabili in un progetto AEM vedere [Creazione di un progetto AEM tramite Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Per informazioni su come utilizzare i modelli modificabili in un progetto AEM consulta [Creazione di un progetto AEM utilizzando Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Durante la creazione di un nuovo modello modificabile:
 
-1. Create una cartella [per i modelli](#template-folders). Questa operazione non è obbligatoria, ma è consigliata.
-1. Selezionare un [tipo di modello](#template-type). Viene copiato per creare la [definizione del modello](#template-definitions).
+1. Crea un [cartella dei modelli](#template-folders). Questa operazione non è obbligatoria, ma è consigliata la best practice.
+1. Seleziona una [tipo di modello](#template-type). Viene copiato per creare il [definizione del modello](#template-definitions).
 
    >[!NOTE]
    >
-   >Sono disponibili una selezione di tipi di modelli out-of-the-box. Potete anche [creare tipi di modelli specifici per il sito](/help/sites-developing/page-templates-editable.md#creating-template-types), se necessario.
+   >Viene fornita una selezione di tipi di modelli pronti all’uso. È inoltre possibile [creare tipi di modelli specifici per il sito](/help/sites-developing/page-templates-editable.md#creating-template-types) se necessario.
 
-1. Configurate la struttura, i criteri di contenuto, il contenuto iniziale e il layout del nuovo modello.
+1. Configura la struttura, i criteri dei contenuti, il contenuto iniziale e il layout del nuovo modello.
 
    **Struttura**
 
-   * La struttura consente di definire componenti e contenuti per il modello.
+   * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati su una pagina risultante, né eliminati da alcuna pagina risultante.
 
-      * Se create un modello in una cartella personalizzata all&#39;esterno del contenuto di esempio di We.Retail, potete scegliere i componenti di base o utilizzare [Componenti di base](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+      * Se crei un modello in una cartella personalizzata al di fuori del contenuto di esempio di We.Retail, puoi scegliere Componenti di base o utilizzare [Componenti core](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
    * Se desideri che gli autori delle pagine siano in grado di aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
 
-   Per informazioni dettagliate sulla definizione della struttura da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+   Per informazioni dettagliate su come un autore di modelli definisce la struttura, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Per i dettagli tecnici della struttura, vedere [Struttura](/help/sites-developing/page-templates-editable.md#structure) in questo documento.
+   Per i dettagli tecnici della struttura, vedi [Struttura](/help/sites-developing/page-templates-editable.md#structure) in questo documento.
 
    **Criteri**
 
-   * I criteri di contenuto definiscono le proprietà di progettazione di un componente.
+   * I criteri dei contenuti definiscono le proprietà di progettazione di un componente.
 
       * Ad esempio, i componenti disponibili o le dimensioni minime e massime.
    * Questi sono applicabili al modello (e alle pagine create con tale modello).
 
-   Per informazioni dettagliate sulla definizione dei criteri da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+   Per informazioni dettagliate su come un autore di modelli definisce i criteri, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Per informazioni tecniche sui criteri, consultare [Criteri di contenuto](/help/sites-developing/page-templates-editable.md#content-policies) in questo documento.
+   Per i dettagli tecnici delle politiche, consulta [Criteri di contenuto](/help/sites-developing/page-templates-editable.md#content-policies) in questo documento.
 
    **Contenuto iniziale**
 
-   * Contenuto iniziale definisce il contenuto che verrà visualizzato quando una pagina viene creata per la prima volta in base al modello.
-   * Il contenuto iniziale può essere modificato dagli autori della pagina.
+   * Il contenuto iniziale definisce il contenuto che verrà visualizzato quando una pagina viene creata per la prima volta in base al modello.
+   * Il contenuto iniziale può quindi essere modificato dagli autori delle pagine.
 
-   Per informazioni dettagliate sulla definizione della struttura da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-initial-content-author).
+   Per informazioni dettagliate su come un autore di modelli definisce la struttura, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-initial-content-author).
 
-   Per informazioni tecniche sui contenuti iniziali, consultate [Contenuto iniziale](/help/sites-developing/page-templates-editable.md#initial-content) in questo documento.
+   Per informazioni tecniche sul contenuto iniziale, consulta [Contenuto iniziale](/help/sites-developing/page-templates-editable.md#initial-content) in questo documento.
 
    **Layout**
 
    * È possibile definire il layout del modello per una serie di dispositivi.
    * Il Layout reattivo per i modelli funziona come per la creazione delle pagine.
 
-   Per informazioni dettagliate sulla modalità in cui un autore del modello definisce il layout del modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
+   Per informazioni dettagliate sulla definizione del layout del modello da parte dell’autore, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
-   Per informazioni tecniche sul layout del modello, vedere [Layout](/help/sites-developing/page-templates-editable.md#layout) in questo documento.
+   Per informazioni tecniche sul layout dei modelli, consulta [Layout](/help/sites-developing/page-templates-editable.md#layout) in questo documento.
 
-1. Attivate il modello, quindi consentitelo per specifiche strutture ad albero del contenuto.
+1. Abilita il modello, quindi lo consenti per strutture di contenuto specifiche.
 
-   * Un modello può essere abilitato o disabilitato per renderlo disponibile o non disponibile per gli autori di pagine.
+   * Un modello può essere abilitato o disabilitato per renderlo disponibile o non disponibile agli autori di pagine.
    * Un modello può essere reso disponibile o non disponibile per alcuni rami di pagina.
 
-   Per informazioni dettagliate sull&#39;abilitazione di un modello da parte dell&#39;autore di un modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
+   Per informazioni dettagliate su come un autore di modelli abilita un modello, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Per informazioni tecniche sull&#39;abilitazione di un modello, vedere [Abilitazione e abilitazione di un modello per noi](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in questo documento
+   Per informazioni tecniche sull’abilitazione di un modello, consulta [Abilitazione e autorizzazione di un modello per noi](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in questo documento
 
-1. Utilizzatelo per creare pagine di contenuto.
+1. Utilizzalo per creare pagine di contenuto.
 
    * Quando si utilizza un modello per creare una nuova pagina, non vi è alcuna differenza visibile e nessuna indicazione tra modelli statici e modificabili.
    * Per l’autore della pagina, il processo è trasparente.
 
-   Per informazioni dettagliate sull&#39;utilizzo dei modelli da parte dell&#39;autore di una pagina per creare una pagina, vedere [Creazione e organizzazione di pagine](/help/sites-authoring/managing-pages.md#templates).
+   Per informazioni dettagliate su come un autore di pagine utilizza i modelli per creare una pagina, consulta [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md#templates).
 
-   Per informazioni tecniche sulla creazione di pagine con modelli modificabili, consultare [Pagine di contenuti risultanti](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in questo documento.
+   Per informazioni tecniche sulla creazione di pagine con modelli modificabili, consulta [Pagine dei contenuti risultanti](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in questo documento.
 
 >[!TIP]
 >
->Non inserire mai informazioni che devono essere internazionalizzate in un modello. A scopo di internalizzazione, si consiglia di usare la funzione di localizzazione [dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Non inserire mai informazioni che devono essere internazionalizzate in un modello. Ai fini dell&#39;internalizzazione, la [funzionalità di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it) sono consigliati.
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e rendere confusa la creazione delle pagine. Una buona regola è mantenere il numero di modelli al di sotto di 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione della pagina. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
-> Adobe non consiglia di avere più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
+>Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
 >[!NOTE]
 >
->La libreria client dell&#39;editor presuppone la presenza dello spazio dei nomi `cq.shared` nelle pagine di contenuto, e se è assente, si verificherà l&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
+>La libreria client dell&#39;editor presuppone la presenza di `cq.shared` spazio dei nomi nelle pagine di contenuto e se è assente nell&#39;errore JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` risulterà.
 >
->Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse include automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo spazio dei nomi `cq.shared`.
+>Tutte le pagine di contenuto di esempio contengono `cq.shared`, quindi qualsiasi contenuto basato su di essi include automaticamente `cq.shared`. Tuttavia, se decidi di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, devi assicurarti di includere il `cq.shared` spazio dei nomi.
 >
->Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](/help/sites-developing/clientlibs.md).
+>Vedi [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) per ulteriori informazioni.
 
-## Cartelle modello {#template-folders}
+## Cartelle dei modelli {#template-folders}
 
-Per organizzare i modelli potete utilizzare le cartelle seguenti:
+Per organizzare i modelli è possibile utilizzare le cartelle seguenti:
 
 * **globale**
-* Specifico per il sito
-Le cartelle specifiche del sito create per organizzare i modelli vengono create con un account che dispone di privilegi di amministratore.
+* Specifiche del sito Le cartelle specifiche del sito create per organizzare i modelli vengono create con un account che dispone di privilegi di amministratore.
 
 >[!NOTE]
 >
->Anche se potete nidificare le cartelle, quando l&#39;utente le visualizza nella console **Templates**, queste vengono presentate come una struttura semplice.
+>Anche se è possibile nidificare le cartelle, quando l’utente le visualizza nel **Modelli** console sono presentate come una struttura piatta.
 
-In un’istanza AEM standard la cartella **globale** esiste già nella console modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello. Potete aggiungere i modelli predefiniti a questa cartella o creare una nuova cartella (scelta consigliata).
+In un’istanza AEM standard la cartella **globale** esiste già nella console modelli. Questa contiene i modelli predefiniti e funge da fallback se nella cartella corrente non sono presenti criteri e/o tipi di modello. È possibile aggiungere i modelli predefiniti a questa cartella o creare una nuova cartella (scelta consigliata).
 
 >[!NOTE]
 >
->È consigliabile creare una nuova cartella in cui memorizzare i modelli personalizzati e non utilizzare la cartella globale.
+>È consigliabile creare una nuova cartella contenente i modelli personalizzati e non utilizzare la cartella globale.
 
 >[!CAUTION]
 >
->Le cartelle devono essere create da un utente con diritti `admin`.
+>Le cartelle devono essere create da un utente con `admin` diritti.
 
 I tipi di modello e i criteri vengono ereditati in tutte le cartelle in base al seguente ordine di precedenza:
 
@@ -178,14 +176,14 @@ I tipi di modello e i criteri vengono ereditati in tutte le cartelle in base al 
 1. `/apps`
 1. `/libs`
 
-Viene creato un elenco di tutte le voci consentite. Se le configurazioni si sovrappongono ( `path`/ `label`), all&#39;utente viene presentata solo l&#39;istanza più vicina alla cartella corrente.
+Viene creato un elenco di tutte le voci consentite. Se una qualsiasi configurazione si sovrappone ( `path`/ `label`), all’utente viene presentata solo l’istanza più vicina alla cartella corrente.
 
-Per creare una nuova cartella, potete effettuare le seguenti operazioni:
+Per creare una nuova cartella è possibile effettuare le seguenti operazioni:
 
 * Programmaticamente o con CRXDE Lite
 * Utilizzo del browser di configurazione
 
-## Utilizzo del CRXDE Lite {#using-crxde-lite}
+## Utilizzo di CRXDE Lite {#using-crxde-lite}
 
 1. È possibile creare una nuova cartella (in /conf) per l’istanza a livello di programmazione o con CRXDE Lite.
 
@@ -200,7 +198,7 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
                    policies [cq:Page]
    ```
 
-1. È quindi possibile definire le seguenti proprietà sul nodo principale della cartella:
+1. Puoi quindi definire le seguenti proprietà sul nodo principale della cartella:
 
    `<your-folder-name> [sling:Folder]`
 
@@ -208,90 +206,90 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 
    * Tipo: `String`
 
-   * Valore: Titolo (per la cartella) che si desidera visualizzare nella console **Templates**.
+   * Valore: Titolo (per la cartella) che si desidera visualizzare nel **Modelli** console.
 
-1. In *aggiunta* alle autorizzazioni e ai privilegi di authoring standard (ad esempio `content-authors`) è ora necessario assegnare i gruppi e definire i diritti di accesso (ACL) richiesti agli autori per poter creare i modelli nella nuova cartella.
+1. In *aggiunta* alle autorizzazioni e ai privilegi di authoring standard (ad esempio `content-authors`) devi ora assegnare i gruppi e definire i diritti di accesso richiesti (ACL, Access Rights) affinché gli autori possano creare modelli nella nuova cartella.
 
-   Il gruppo `template-authors` è il gruppo predefinito che deve essere assegnato. Per ulteriori informazioni, vedere la sezione [ACL e gruppi](/help/sites-developing/page-templates-editable.md#acls-and-groups) riportata di seguito.
+   La `template-authors` gruppo è il gruppo predefinito che deve essere assegnato. Vedi la sezione seguente [ACL e gruppi](/help/sites-developing/page-templates-editable.md#acls-and-groups) per i dettagli.
 
-   Per informazioni dettagliate sulla gestione e l&#39;assegnazione dei diritti di accesso, vedere [Accesso a Rights Management](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+   Vedi [Accesso alla gestione dei diritti](/help/sites-administering/user-group-ac-admin.md#access-right-management) per informazioni complete sulla gestione e l&#39;assegnazione dei diritti di accesso.
 
 ### Utilizzo del browser di configurazione {#using-the-configuration-browser}
 
-1. Andate a **Navigazione globale** -> **Strumenti** > **Browser di configurazione**.
+1. Vai a **Navigazione globale** -> **Strumenti** > **Browser di configurazione**.
 
-   Le cartelle esistenti sono elencate a sinistra, inclusa la cartella **globale**.
+   Le cartelle esistenti sono elencate a sinistra, tra cui **globale** cartella.
 
 1. Fai clic su **Crea**.
-1. Nella finestra di dialogo **Crea configurazione** è necessario configurare i seguenti campi:
+1. In **Crea configurazione** è necessario configurare i campi seguenti nella finestra di dialogo:
 
    * **Titolo**: Fornire un titolo per la cartella di configurazione
-   * **Modelli** modificabili: Fare clic per consentire la modifica dei modelli all&#39;interno di questa cartella
+   * **Modelli modificabili**: Selezione di modelli modificabili all’interno della cartella
 
 1. Fai clic su **Crea**
 
 >[!NOTE]
 >
->Nel browser di configurazione, potete modificare la cartella globale e attivare l&#39;opzione **Modelli modificabili** se desiderate creare dei modelli all&#39;interno di questa cartella, ma questa è una procedura consigliata.
+>Nel Browser configurazioni, puoi modificare la cartella globale e attivare la **Modelli modificabili** se desideri creare modelli all’interno di questa cartella, tuttavia questa non è la best practice consigliata.
 >
->Per ulteriori informazioni, consulta la documentazione del [browser di configurazione](/help/sites-administering/configurations.md).
+>Consulta la sezione [Browser di configurazione](/help/sites-administering/configurations.md) documentazione per ulteriori informazioni.
 
 ### ACL e gruppi {#acls-and-groups}
 
-Una volta create le cartelle dei modelli (tramite CRXDE o con il browser di configurazione), gli ACL devono essere definiti per i gruppi appropriati per le cartelle dei modelli per garantire la protezione adeguata.
+Una volta create le cartelle dei modelli (tramite CRXDE o con il browser di configurazione), le ACL devono essere definite per i gruppi appropriati per le cartelle dei modelli per garantire la corretta sicurezza.
 
-Le cartelle dei modelli per l&#39;implementazione di riferimento [We.Retail](/help/sites-developing/we-retail.md) possono essere utilizzate come esempio.
+Le cartelle di modelli per [Implementazione di riferimento di We.Retail](/help/sites-developing/we-retail.md) può essere utilizzato come esempio.
 
-#### Il gruppo di autori dei modelli {#the-template-authors-group}
+#### Gruppo autori modelli {#the-template-authors-group}
 
-Il gruppo `template-authors` è il gruppo utilizzato per gestire l&#39;accesso ai modelli ed è dotato di AEM standard, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
+La `template-authors` gruppo è il gruppo utilizzato per gestire l’accesso ai modelli ed è standard con AEM, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
 
 >[!CAUTION]
 >
->Il gruppo `template-authors` è *solo* per gli utenti che devono essere in grado di creare nuovi modelli.
+>La `template-authors` gruppo *only* per gli utenti che devono essere in grado di creare nuovi modelli.
 >
->La modifica dei modelli è molto efficace e, se non viene eseguita correttamente, i modelli esistenti possono essere interrotti. Questo ruolo dovrebbe pertanto essere mirato e includere solo utenti qualificati.
+>La modifica dei modelli è molto potente e, se non viene eseguita correttamente, i modelli esistenti possono essere interrotti. Pertanto questo ruolo dovrebbe essere concentrato e includere solo gli utenti qualificati.
 
-Nella tabella seguente sono elencate le autorizzazioni necessarie per la modifica dei modelli.
+Nella tabella seguente sono descritte le autorizzazioni necessarie per la modifica dei modelli.
 
 <table>
  <tbody>
   <tr>
    <th>Percorso</th>
    <th>Ruolo/Gruppo</th>
-   <th>Autorizzazioni <br /> </th>
+   <th>Autorizzazioni<br /> </th>
    <th>Descrizione</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
-   <td>Autori modello<br /> </td>
-   <td>lettura, scrittura, replica</td>
-   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli nello spazio <code>/conf</code> specifico del sito</td>
+   <td>Autori di modelli<br /> </td>
+   <td>leggere, scrivere, replicare</td>
+   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli in siti specifici <code>/conf</code> spazio</td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>read</td>
-   <td>Utente Web anonimo deve leggere i modelli durante il rendering di una pagina</td>
+   <td>Utente web anonimo deve leggere i modelli durante il rendering di una pagina</td>
   </tr>
   <tr>
-   <td>Autori contenuto</td>
-   <td>replica</td>
-   <td>Gli autori di replicheContent devono attivare i modelli di una pagina durante l’attivazione di una pagina</td>
+   <td>Autori di contenuti</td>
+   <td>replicare</td>
+   <td>Gli autori replicateContent devono attivare i modelli di una pagina quando si attiva una pagina</td>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
-   <td>lettura, scrittura, replica</td>
-   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli nello spazio <code>/conf</code> specifico del sito</td>
+   <td>leggere, scrivere, replicare</td>
+   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli in siti specifici <code>/conf</code> spazio</td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>read</td>
-   <td>Utente Web anonimo deve leggere i criteri durante il rendering di una pagina</td>
+   <td>L'utente web anonimo deve leggere i criteri durante il rendering di una pagina</td>
   </tr>
   <tr>
-   <td>Autori contenuto</td>
-   <td>replica</td>
+   <td>Autori di contenuti</td>
+   <td>replicare</td>
    <td>Quando si attiva una pagina, gli autori dei contenuti devono attivare i criteri di un modello di pagina</td>
   </tr>
   <tr>
@@ -301,57 +299,57 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per la modific
    <td>L’autore del modello crea un nuovo modello basato su uno dei tipi di modello predefiniti.</td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>nessuno</td>
    <td>L'utente Web anonimo non deve accedere ai tipi di modello</td>
   </tr>
  </tbody>
 </table>
 
-Questo gruppo predefinito `template-authors` copre solo le impostazioni di progetto, dove tutti i membri `template-authors` possono accedere e creare tutti i modelli. Per le impostazioni più complesse, in cui sono necessari gruppi di autori di modelli multipli per l&#39;accesso separato ai modelli, è necessario creare un numero maggiore di gruppi di autori di modelli personalizzati. Tuttavia, le autorizzazioni per i gruppi di autori dei modelli rimarrebbero invariate.
+Questa impostazione predefinita `template-authors` il gruppo copre solo le impostazioni del progetto, dove tutte `template-authors` i membri possono accedere e creare tutti i modelli. Per configurazioni più complesse, in cui sono necessari gruppi di autori di modelli multipli per separare l’accesso ai modelli, è necessario creare gruppi di autori di modelli più personalizzati. Tuttavia, le autorizzazioni per i gruppi di autori dei modelli rimarrebbero invariate.
 
-#### Modelli precedenti in /conf/global {#legacy-templates-under-conf-global}
+#### Modelli legacy sotto /conf/global {#legacy-templates-under-conf-global}
 
-I modelli non devono più essere memorizzati in `/conf/global`, tuttavia per alcune installazioni precedenti potrebbero essere ancora presenti dei modelli in questo percorso. SOLO in tali situazioni precedenti, i seguenti percorsi `/conf/global` dovrebbero essere configurati in modo esplicito.
+I modelli non devono più essere memorizzati in `/conf/global`tuttavia, per alcune installazioni legacy potrebbero essere ancora presenti modelli in questa posizione. SOLO in tali situazioni precedenti dovrebbe `/conf/global` i percorsi devono essere configurati in modo esplicito.
 
 <table>
  <tbody>
   <tr>
    <th>Percorso</th>
    <th>Ruolo/Gruppo</th>
-   <th>Autorizzazioni <br /> </th>
+   <th>Autorizzazioni<br /> </th>
    <th>Descrizione</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Autori modello</td>
-   <td>lettura, scrittura, replica</td>
-   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano i modelli in <code>/conf/global</code></td>
+   <td>Autori di modelli</td>
+   <td>leggere, scrivere, replicare</td>
+   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli in <code>/conf/global</code></td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>read</td>
-   <td>Utente Web anonimo deve leggere i modelli durante il rendering di una pagina</td>
+   <td>Utente web anonimo deve leggere i modelli durante il rendering di una pagina</td>
   </tr>
   <tr>
-   <td>Autori contenuto</td>
-   <td>replica</td>
-   <td>Gli autori dei contenuti devono attivare i modelli di una pagina durante l’attivazione</td>
+   <td>Autori di contenuti</td>
+   <td>replicare</td>
+   <td>Quando si attiva una pagina, gli autori dei contenuti devono attivare i modelli di pagina</td>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
-   <td>lettura, scrittura, replica</td>
-   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano i modelli in <code>/conf/global</code></td>
+   <td>leggere, scrivere, replicare</td>
+   <td>Autori di modelli che creano, leggono, aggiornano, eliminano e replicano modelli in <code>/conf/global</code></td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>read</td>
-   <td>Utente Web anonimo deve leggere i criteri durante il rendering di una pagina</td>
+   <td>L'utente web anonimo deve leggere i criteri durante il rendering di una pagina</td>
   </tr>
   <tr>
-   <td>Autori contenuto</td>
-   <td>replica</td>
+   <td>Autori di contenuti</td>
+   <td>replicare</td>
    <td>Quando si attiva una pagina, gli autori dei contenuti devono attivare i criteri di un modello di pagina</td>
   </tr>
   <tr>
@@ -361,7 +359,7 @@ I modelli non devono più essere memorizzati in `/conf/global`, tuttavia per alc
    <td>L’autore del modello crea un nuovo modello basato su uno dei tipi di modello predefiniti</td>
   </tr>
   <tr>
-   <td>Utente Web anonimo</td>
+   <td>Utente web anonimo</td>
    <td>nessuno</td>
    <td>L'utente Web anonimo non deve accedere ai tipi di modello</td>
   </tr>
@@ -370,38 +368,38 @@ I modelli non devono più essere memorizzati in `/conf/global`, tuttavia per alc
 
 ## Tipo di modello {#template-type}
 
-Quando create un nuovo modello, dovete specificare un tipo di modello:
+Quando si crea un nuovo modello, è necessario specificare un tipo di modello:
 
-* I tipi di modello forniscono efficacemente i modelli per un modello. Quando create un nuovo modello, la struttura e il contenuto iniziale del tipo di modello selezionato vengono usati per creare il nuovo modello.
+* I tipi di modello forniscono efficacemente i modelli per un modello. Quando si crea un nuovo modello, la struttura e il contenuto iniziale del tipo di modello selezionato vengono utilizzati per creare il nuovo modello.
 
    * Il tipo di modello viene copiato per creare il modello.
-   * Una volta eseguita la copia, l&#39;unica connessione tra il modello e il tipo di modello è un riferimento statico a scopo informativo.
+   * Una volta effettuata la copia, l’unica connessione tra il modello e il tipo di modello è un riferimento statico a scopo informativo.
 
 * I tipi di modello consentono di definire:
 
    * Il tipo di risorsa del componente pagina.
-   * Il criterio del nodo principale, che definisce i componenti consentiti nell&#39;editor modelli.
-   * È consigliabile definire i punti di interruzione per la griglia reattiva e l&#39;impostazione dell&#39;emulatore mobile sul tipo di modello. Questo è facoltativo, perché la configurazione può essere definita anche sul singolo modello (vedere [Tipo di modello e Gruppi di dispositivi mobili](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+   * Il criterio del nodo principale, che definisce i componenti consentiti nell’editor modelli.
+   * È consigliabile definire i punti di interruzione per la griglia reattiva e la configurazione dell’emulatore mobile in sul tipo di modello. Questo è facoltativo, perché la configurazione può essere definita anche sul singolo modello (vedi [Tipo di modello e gruppi di dispositivi mobili](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
-* AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
+* AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina di HTML5 e Pagina modulo adattivo.
 
-   * Altri esempi sono forniti come parte del contenuto di esempio [We.Retail](/help/sites-developing/we-retail.md).
+   * Altri esempi sono forniti come parte del [We.Retail](/help/sites-developing/we-retail.md) contenuto di esempio.
 
-* I tipi di modelli sono generalmente definiti dagli sviluppatori.
+* I tipi di modello sono generalmente definiti dagli sviluppatori.
 
-I tipi di modelli forniti vengono memorizzati in:
+I tipi di modelli predefiniti sono memorizzati in:
 
 * `/libs/settings/wcm/template-types`
 
 >[!CAUTION]
 >
->Non è necessario modificare nulla nel percorso `/libs`. Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Non devi cambiare nulla nel `/libs` percorso. Questo perché il contenuto di `/libs` viene sovrascritto la prossima volta che aggiorni l’istanza (e può essere sovrascritto quando applichi un hotfix o un feature pack).
 
-I tipi di modello specifici per il sito devono essere memorizzati nella posizione comparabile di:
+I tipi di modelli specifici per il sito devono essere memorizzati nel percorso comparabile di:
 
 * `/apps/settings/wcm/template-types`
 
-Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Esempio:
+Le definizioni dei tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -409,54 +407,54 @@ Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in
 
 >[!CAUTION]
 >
->I tipi di modello devono rispettare la struttura corretta delle cartelle (ovvero `/settings/wcm/...`), in caso contrario i tipi di modello non verranno trovati.
+>I tipi di modello devono rispettare la struttura di cartelle corretta (ovvero `/settings/wcm/...`), altrimenti i tipi di modello non verranno trovati.
 
 ### Tipo di modello e gruppi di dispositivi mobili {#template-type-and-mobile-device-groups-br}
 
-I [gruppi di dispositivi](/help/sites-developing/mobile.md#device-groups) utilizzati per un modello modificabile (impostati come percorso relativo della proprietà `cq:deviceGroups`) definiscono quali dispositivi mobili sono disponibili come emulatori nella [modalità di layout](/help/sites-authoring/responsive-layout.md) dell&#39;authoring delle pagine. Questo valore può essere impostato in due posizioni:
+La [gruppi di dispositivi](/help/sites-developing/mobile.md#device-groups) utilizzato per un modello modificabile (impostato come percorso relativo della proprietà `cq:deviceGroups`) definisci quali dispositivi mobili sono disponibili come emulatori nel [modalità layout](/help/sites-authoring/responsive-layout.md) di authoring delle pagine. Questo valore può essere impostato in due posizioni:
 
-* Nel tipo di modello modificabile
-* Nel modello modificabile
+* Sul tipo di modello modificabile
+* Sul modello modificabile
 
-Quando create un nuovo modello modificabile, il valore viene copiato dal tipo di modello al singolo modello. Se il valore non è impostato sul tipo, può essere impostato sul modello. Una volta creato il modello, non esiste alcuna ereditarietà dal tipo al modello.
+Quando si crea un nuovo modello modificabile, il valore viene copiato dal tipo di modello al singolo modello. Se il valore non è impostato sul tipo, può essere impostato sul modello. Una volta creato un modello, non esiste alcuna ereditarietà dal tipo al modello.
 
 >[!CAUTION]
 >
->Il valore di `cq:deviceGroups` deve essere impostato come percorso relativo, ad esempio `mobile/groups/responsive`, e non come percorso assoluto, ad esempio `/etc/mobile/groups/responsive`.
+>Il valore di `cq:deviceGroups` deve essere impostato come percorso relativo, ad esempio `mobile/groups/responsive` e non come percorso assoluto come `/etc/mobile/groups/responsive`.
 
 >[!NOTE]
 >
->Con [modelli statici](/help/sites-developing/page-templates-static.md), il valore di `cq:deviceGroups` può essere impostato nella radice del sito.
+>Con [modelli statici](/help/sites-developing/page-templates-static.md), il valore di `cq:deviceGroups` potrebbe essere impostato nella directory principale del sito.
 >
->Con i modelli modificabili, questo valore ora viene memorizzato a livello di modello e non è supportato a livello di pagina principale.
+>Con i modelli modificabili, questo valore viene ora memorizzato a livello di modello e non è supportato a livello di pagina principale.
 
 ### Creazione di tipi di modelli {#creating-template-types}
 
-Se avete creato un modello che può fungere da base per altri modelli, potete copiare il modello come tipo di modello.
+Se hai creato un modello che può fungere da base per altri modelli, puoi copiarlo come tipo di modello.
 
-1. Create un modello come fareste con qualsiasi altro modello modificabile [come indicato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
-1. Utilizzando CRXDE Lite, copiare il modello appena creato dal nodo `templates` al nodo `template-types` sotto la cartella [template](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Eliminate il modello dal nodo `templates` sotto la cartella [template](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Nella copia del modello che si trova sotto il nodo `template-types`, eliminare tutte le proprietà `cq:template` e `cq:templateType` `jcr:content`.
+1. Crea un modello come qualsiasi altro modello modificabile [come documentato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
+1. Utilizzando CRXDE Lite, copia il modello appena creato dal `templates` al nodo `template-types` sotto il nodo [cartella dei modelli](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Elimina il modello dal `templates` sotto il nodo [cartella dei modelli](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Nella copia del modello che si trova sotto il `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` `jcr:content` proprietà.
 
-Potete anche sviluppare un tipo di modello personalizzato utilizzando un modello modificabile di esempio come base, disponibile su GitHub.
+Puoi anche sviluppare un tipo di modello personalizzato utilizzando un modello modificabile di esempio come base, disponibile su GitHub.
 
 CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto di tipo &quot;aem-sites-example-custom-template-type&quot; su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Apri progetto aem-sites-example-custom-template-type su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
 
 ## Definizioni dei modelli {#template-definitions}
 
-Le definizioni per i modelli modificabili sono memorizzate in [cartelle definite dall&#39;utente](/help/sites-developing/page-templates-editable.md#template-folders) (consigliato) o in alternativa in `global`. Esempio:
+Vengono memorizzate le definizioni dei modelli modificabili [cartelle definite dall&#39;utente](/help/sites-developing/page-templates-editable.md#template-folders) (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
 * `/conf/global/settings/wcm/templates`
 
-Il nodo principale del modello è di tipo `cq:Template` con una struttura di ossatura di:
+Il nodo principale del modello è di tipo `cq:Template` con struttura ossea di:
 
 ```xml
 <template-name>
@@ -500,54 +498,54 @@ Gli elementi principali sono:
 
 ### jcr:content {#jcr-content}
 
-Questo nodo contiene le proprietà per il modello:
+Questo nodo contiene le proprietà del modello:
 
 * **Nome**: `jcr:title`
 
 * **Nome**: `status`
 
-   * ``**Tipo**: `String`
+   * **Tipo**: `String`
 
-   * **Valore**:  `draft`,  `enabled` oppure  `disabled`
+   * **Valore**: `draft`, `enabled` o `disabled`
 
 ### Struttura {#structure}
 
 Definisce la struttura della pagina risultante:
 
 * Viene unito al contenuto iniziale ( `/initial`) durante la creazione di una nuova pagina.
-* Le modifiche apportate alla struttura si rifletteranno sulle pagine create con il modello.
-* Il nodo `root` ( `structure/jcr:content/root`) definisce l&#39;elenco dei componenti che saranno disponibili nella pagina risultante.
+* Le modifiche apportate alla struttura verranno applicate a tutte le pagine create con il modello.
+* La `root` ( `structure/jcr:content/root`Il nodo ) definisce l’elenco dei componenti che saranno disponibili nella pagina risultante.
 
-   * I componenti definiti nella struttura del modello non possono essere spostati né eliminati dalle pagine risultanti.
-   * Quando un componente viene sbloccato, la proprietà `editable` viene impostata su `true`.
+   * I componenti definiti nella struttura del modello non possono essere spostati o eliminati dalle pagine risultanti.
+   * Quando un componente viene sbloccato, la `editable` è impostata su `true`.
 
-   * Quando un componente che già contiene contenuto viene sbloccato, il contenuto verrà spostato nel ramo `initial`.
+   * Quando un componente che contiene già è sbloccato, il contenuto viene spostato in `initial` ramo.
 
-* Il nodo `cq:responsive` contiene le definizioni per il layout reattivo.
+* La `cq:responsive` node contiene le definizioni del layout dinamico.
 
 ### Contenuto iniziale {#initial-content}
 
 Definisce il contenuto iniziale di una nuova pagina al momento della creazione:
 
-* Contiene un nodo `jcr:content` che viene copiato in qualsiasi nuova pagina.
-* Viene unito alla struttura ( `/structure`) durante la creazione di una nuova pagina.
+* Contiene un `jcr:content` che viene copiato in una nuova pagina.
+* È unito alla struttura ( `/structure`) durante la creazione di una nuova pagina.
 * Eventuali pagine esistenti non verranno aggiornate se il contenuto iniziale viene modificato dopo la creazione.
-* Il nodo `root` contiene un elenco di componenti per definire ciò che sarà disponibile nella pagina risultante.
-* Se il contenuto viene aggiunto a un componente in modalità struttura e tale componente viene successivamente sbloccato (o viceversa), tale contenuto viene utilizzato come contenuto iniziale.
+* La `root` node contiene un elenco di componenti per definire cosa sarà disponibile nella pagina risultante.
+* Se il contenuto viene aggiunto a un componente in modalità struttura e successivamente viene sbloccato (o viceversa), viene utilizzato come contenuto iniziale.
 
 ### Layout {#layout}
 
-Durante la [modifica di un modello è possibile definire il layout](/help/sites-authoring/templates.md), utilizza [layout reattivo standard](/help/sites-authoring/responsive-layout.md) che può essere anche [configurato](/help/sites-administering/configuring-responsive-layout.md).
+Quando [modifica di un modello da definire](/help/sites-authoring/templates.md), utilizza [layout dinamico standard](/help/sites-authoring/responsive-layout.md) che può anche [configurato](/help/sites-administering/configuring-responsive-layout.md).
 
-### Criteri contenuto {#content-policies}
+### Criteri di contenuto {#content-policies}
 
-I criteri relativi ai contenuti (o alle progettazioni) definiscono le proprietà di progettazione (o design) di un componente. Ad esempio, i componenti disponibili o le dimensioni minime e massime. Questi sono applicabili al modello (e alle pagine create con tale modello). I criteri di contenuto possono essere creati e selezionati nell&#39;editor modelli.
+I criteri relativi ai contenuti (o alle progettazioni) definiscono le proprietà di progettazione (o design) di un componente. Ad esempio, i componenti disponibili o le dimensioni minime e massime. Questi sono applicabili al modello (e alle pagine create con tale modello). I criteri del contenuto possono essere creati e selezionati nell’editor modelli.
 
-* La proprietà `cq:policy`, sul nodo `root`
+* La proprietà `cq:policy`, sul `root` nodo
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornisce un riferimento relativo al criterio del contenuto per il sistema paragrafo della pagina.
 
-* La proprietà `cq:policy`, nei nodi espliciti dei componenti in `root`, fornisce collegamenti ai criteri per i singoli componenti.
+* La proprietà `cq:policy`, sui nodi espliciti del componente sotto `root`, fornisce collegamenti ai criteri per i singoli componenti.
 
 * Le definizioni effettive dei criteri sono memorizzate in:
    `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
@@ -558,32 +556,32 @@ Fornisce un riferimento relativo al criterio del contenuto per il sistema paragr
 
 >[!NOTE]
 >
->Le pagine create da modelli modificabili non offrono una modalità Progettazione nell’editor pagina.
+>Le pagine create da modelli modificabili non offrono una modalità Progettazione nell’editor di pagine.
 >
->La struttura `policies` di un modello modificabile ha la stessa gerarchia della configurazione della modalità di progettazione di un modello statico in:
+>La `policies` la struttura di un modello modificabile ha la stessa gerarchia della configurazione della modalità di progettazione di un modello statico in:
 >
 >`/etc/designs/<my-site>/jcr:content/<component-name>`
 >
->La configurazione della modalità di progettazione di un modello statico è stata definita per ciascun componente di pagina.
+>La configurazione in modalità di progettazione di un modello statico è stata definita per ciascun componente della pagina.
 
 ### Criteri di pagina {#page-policies}
 
-I criteri di pagina consentono di definire i [criteri di contenuto](#content-policies) per la pagina (parsys principale), nel modello o nelle pagine risultanti.
+I criteri di pagina consentono di definire [informativa sui contenuti](#content-policies) per la pagina (parsys principale), nel modello o nelle pagine risultanti.
 
-### Abilitazione e abilitazione di un modello per l&#39;uso di {#enabling-and-allowing-a-template-for-use}
+### Abilitazione e autorizzazione di un modello per l’uso {#enabling-and-allowing-a-template-for-use}
 
-1. **Abilita modello**
+1. **Attiva il modello**
 
-   Per poter utilizzare un modello, è necessario che sia attivato:
+   Prima di poter utilizzare un modello, è necessario attivarlo tramite:
 
-   * [Abilitazione del ](/help/sites-authoring/templates.md#enablingatemplateauthor) modello dalla console  **** Modelli.
+   * [Abilitazione del modello](/help/sites-authoring/templates.md#enablingatemplateauthor) dal **Modelli** console.
 
-   * Impostazione della proprietà status sul nodo `jcr:content`.
+   * Impostazione della proprietà di stato nel `jcr:content` nodo.
 
-      * Ad esempio, on:
+      * Ad esempio, su:
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-      * Definire la proprietà:
+      * Definisci la proprietà:
 
          * Nome: status
          * Tipo: Stringa
@@ -591,58 +589,57 @@ I criteri di pagina consentono di definire i [criteri di contenuto](#content-pol
 
 1. **Modelli consentiti**
 
-   * [Definire i percorsi dei modelli consentiti nelle proprietà  **pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) della pagina o della pagina principale appropriata di un ramo secondario.
-   * Impostare la proprietà:
+   * [Definisci i percorsi dei modelli consentiti nel **Proprietà pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) della pagina o della pagina principale appropriata di un ramo secondario.
+   * Imposta la proprietà:
       `cq:allowedTemplates`
-In 
-`jcr:content` del ramo richiesto.
+Sulla 
+`jcr:content` nodo del ramo richiesto.
    Ad esempio, con un valore di:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-## Pagine contenuto risultanti {#resultant-content-pages}
+## Pagine dei contenuti risultanti {#resultant-content-pages}
 
 Pagine create da modelli modificabili:
 
-* Vengono creati con una sottostruttura ad albero che viene unita da `structure` e `initial` nel modello
+* Sono create con una sottostruttura da cui è stata eseguita l’unione `structure` e `initial` nel modello
 
-* Contiene riferimenti alle informazioni contenute nel modello e nel tipo di modello. Questo si ottiene con un nodo `jcr:content` con le proprietà:
+* Avere riferimenti alle informazioni contenute nel modello e nel tipo di modello. Ciò è possibile con un `jcr:content` nodo con le proprietà:
 
    * `cq:template`
-Fornisce il riferimento dinamico al modello effettivo; consente di riflettere le modifiche apportate al modello sulle pagine effettive.
+Fornisce il riferimento dinamico al modello effettivo; consente di visualizzare le modifiche apportate al modello nelle pagine effettive.
 
    * `cq:templateType`
 Fornisce un riferimento al tipo di modello.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-Il diagramma precedente mostra come i modelli, i contenuti e i componenti si interfacciano:
+Il diagramma precedente mostra come i modelli, i contenuti e i componenti si rapportano:
 
 * Controller - `/content/<my-site>/<my-page>`
-Pagina risultante che fa riferimento al modello. Il contenuto controlla l’intero processo. In base alle definizioni, accede al modello e ai componenti appropriati.
+La pagina risultante che fa riferimento al modello. Il contenuto controlla l’intero processo. In base alle definizioni, accede al modello e ai componenti appropriati.
 
 * Configurazione - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Il modello [e i relativi criteri di contenuto](#template-definitions) definiscono la configurazione della pagina.
+La [criteri di contenuto e modelli correlati](#template-definitions) definisci la configurazione della pagina.
 
-* Modello - Pacchetti OSGi
-I [bundle OSGI](/help/sites-deploying/osgi-configuration-settings.md) implementano la funzionalità.
+* Modello - Bundle OSGi [Bundle OSGI](/help/sites-deploying/osgi-configuration-settings.md) implementa la funzionalità .
 
 * Visualizza - `/apps/<my-site>/components`
-Sia nell’ambiente di creazione che in quello di pubblicazione, il rendering del contenuto viene eseguito da [components](/help/sites-developing/components.md).
+Sia nell’ambiente di authoring che in quello di pubblicazione, il rendering del contenuto viene eseguito da [componenti](/help/sites-developing/components.md).
 
 Durante il rendering di una pagina:
 
 * **Modelli**:
 
-   * Viene fatto riferimento alla proprietà `cq:template` del relativo nodo `jcr:content` per accedere al modello che corrisponde a tale pagina.
+   * La `cq:template` proprietà `jcr:content` verrà fatto riferimento al nodo per accedere al modello corrispondente a tale pagina.
 
 * **Componenti**:
 
-   * Il componente pagina unisce la struttura `structure/jcr:content` del modello alla struttura `jcr:content` della pagina.
+   * Il componente pagina unisce il `structure/jcr:content` struttura del modello con `jcr:content` struttura della pagina.
 
-   * Il componente Pagina consente solo all’autore di modificare i nodi della struttura del modello contrassegnati come modificabili (così come altri elementi secondari).
-   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene tracciato dal nodo `jcr:content`; viene quindi ricercato lo stesso percorso nel nodo `policies/jcr:content` del modello.
+   * Il componente pagina consente solo all’autore di modificare i nodi della struttura del modello che sono stati contrassegnati come modificabili (così come altri elementi secondari).
+   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene ricavato dal `jcr:content` nodo; lo stesso percorso `policies/jcr:content` Viene quindi eseguita la ricerca nel nodo del modello.
 
-      * La proprietà `cq:policy` di questo nodo fa riferimento al criterio del contenuto effettivo (ovvero contiene la configurazione di progettazione per quel componente).
+      * La `cq:policy` di questo nodo fa riferimento al criterio del contenuto effettivo (ovvero contiene la configurazione di progettazione per quel componente).
 
       * Questo consente di avere più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
