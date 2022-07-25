@@ -2,9 +2,9 @@
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di AEM Content and Commerce
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
+source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '663'
 ht-degree: 34%
 
 ---
@@ -31,7 +31,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-june}
 
-* Il nome del modello ora visibile è l’editor di Sites durante la creazione di modelli di catalogo di prodotti
+* L’arricchimento del catalogo dei prodotti ora supporta AEM pagine. Questo consente agli autori di gestire l’associazione pagina - prodotto.
 
 * Vari miglioramenti dei componenti core CIF
 
