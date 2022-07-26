@@ -12,9 +12,9 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: bfb02e79d6895be498e6e40888c6d8d4e3a8fcd4
+source-git-commit: 49a74d8c14c79e72f9df1e2ec41652ebc6fe76b6
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2312'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ L’API REST consente di accedere esattamente alle stesse funzioni tramite HTTP 
 
 ## Sessione Gem {#gem-session}
 
-[AEM gemme](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti di Adobe. Questa sessione dedicata al generatore di query è molto utile per una panoramica e l&#39;utilizzo dello strumento.
+[AEM gemme](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti di Adobe. Questa sessione dedicata al generatore di query è molto utile per una panoramica e l&#39;utilizzo dello strumento.
 
 >[!NOTE]
 >
