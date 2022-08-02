@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
+source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '475'
 ht-degree: 29%
 
 ---
@@ -52,17 +52,12 @@ Passa alla directory appropriata e, dal prompt dei comandi, digita
 1. Leggi le informazioni di riepilogo di pre-installazione e fai clic su **[!UICONTROL Installa]**.
 1. Al termine dell’installazione, fai clic su **[!UICONTROL Avanti]** per applicare gli aggiornamenti della correzione rapida ai file installati.
 
-1. Deselezionare l&#39;opzione Avvia Configuration Manager prima di fare clic su Fine. Prima di eseguire la gestione della configurazione utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *&lt;aemforms_install_dir>\configurationManager\bin* directory e aggiornamento `ConfigurationManager.lax` e `ConfigurationManager_IPv6.lax` file con le seguenti operazioni di ridenominazione:
+1. **[Solo Windows]** Esegui il seguente passaggio:
 
-   * `axis.jar` a `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` a `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` a `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` a `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` a `xml-apis-2.7.2.jar`
-
+   Deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima di eseguire la gestione della configurazione utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a `<AEMForms_Install_Dir>\configurationManager\bin` directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
 1. La casella di controllo Avvia Configuration Manager è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Configuration Manager.
 
-1. Per eseguire Configuration Manager in un secondo momento, deseleziona l’opzione Avvia Configuration Manager prima di fare clic su Fine. Puoi avviare Configuration Manager in un secondo momento utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
+1. Per eseguire Configuration Manager in un secondo momento, deseleziona l’opzione Avvia Configuration Manager prima di fare clic su **[!UICONTROL Fine]**. Puoi avviare Configuration Manager in un secondo momento utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
 
 1. A seconda del server delle applicazioni, scegli uno dei seguenti documenti e segui le istruzioni in *Configurazione e distribuzione dei moduli AEM* sezione .
 
@@ -70,9 +65,6 @@ Passa alla directory appropriata e, dal prompt dei comandi, digita
    * [Installazione e distribuzione di moduli AEM per WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss) Dopo aver installato la patch e configurato il server, elimina tmp e le directory di lavoro del server applicazioni JBoss.
-
->[!NOTE]
->Prima del lancio **Gestione configurazione**, scaricare e sostituire [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
 
 ## Configurazioni post-distribuzione {#post-deployment-configurations}
 
