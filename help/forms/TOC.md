@@ -10,8 +10,8 @@ user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
 source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3778'
+ht-degree: 5%
 
 ---
 
