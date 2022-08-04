@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4529'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,19 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
    * Introduci interattività personalizzate creando widget o apparenze personalizzati. Si sconsiglia di modificare i componenti predefiniti. Per ulteriori informazioni, consulta [Struttura dell&#39;aspetto](/help/forms/using/introduction-widgets.md).
 
 * Vedi [Trattamento di informazioni personali identificabili](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) per raccomandazioni sulla gestione dei dati PII.
+
+### Creazione di modelli di modulo
+
+È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser di configurazione**. Per abilitare i modelli di modulo, vedere [Creazione di un modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+I modelli di modulo possono essere caricati anche dai pacchetti di moduli adattivi creati su un altro computer autore. I modelli di modulo sono disponibili mediante l’installazione di [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Alcune delle best practice consigliate sono:
+* La **nosamplecontent** la modalità runmode è consigliata solo per l’autore e non per i nodi di pubblicazione.
+* L’authoring delle risorse, come i moduli adattivi, i temi, i modelli o le configurazioni cloud, viene eseguito solo sui nodi Author, che possono essere pubblicati nei nodi Publish configurati.
+Per ulteriori informazioni, consulta [Pubblicazione e annullamento della pubblicazione di moduli e documenti](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Il pacchetto aggiuntivo Forms è necessario per l’authoring e per la pubblicazione per supportare le operazioni del servizio documenti; quindi può essere considerato come una dipendenza.
+Se desideri solo modelli di esempio, temi e pacchetti DOR correlati a Forms, puoi scaricarli da [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Per ulteriori informazioni, consulta le best practice in [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
 
 ## Creare moduli adattivi {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Una delle principali sfide per le organizzazioni è come gestire i dati personal
 
 * Utilizzare un archivio sicuro ed esterno come database per memorizzare i dati dai moduli bozza e inviati. Vedi [Configurazione dell’archiviazione esterna per le bozze e i dati dei moduli inviati](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilizza il componente Modulo Termini e Condizioni per ottenere il consenso esplicito dell’utente prima di abilitare il salvataggio automatico. In questo caso, abilita il salvataggio automatico solo quando l’utente accetta le condizioni nel componente Termini e condizioni.
+
+
