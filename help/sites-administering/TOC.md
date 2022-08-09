@@ -8,13 +8,12 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 9a164f92b6d5a927d1cb4ead2f119cc094180713
+source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 35%
 
 ---
-
 
 # Guida utente all’amministrazione di AEM 6.5 {#administering}
 
