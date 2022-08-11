@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
+source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 29%
+source-wordcount: '525'
+ht-degree: 22%
 
 ---
 
@@ -47,17 +47,23 @@ Passa alla directory appropriata e, dal prompt dei comandi, digita
    Viene avviata una procedura di installazione guidata.
 
 1. Nel pannello introduttivo, fai clic su **[!UICONTROL Avanti]**.
-1. Nella schermata Scegli cartella di installazione , verifica che il percorso predefinito visualizzato sia corretto per l’installazione esistente oppure fai clic su **[!UICONTROL Sfoglia]** per selezionare la cartella alternativa in cui è installato AEM moduli e fare clic su **[!UICONTROL Successivo]**.
+1. Sulla **Scegli cartella di installazione** controlla che la posizione predefinita visualizzata sia corretta per l&#39;installazione esistente oppure fai clic su **[!UICONTROL Sfoglia]** per selezionare la cartella alternativa in cui è installato AEM moduli e fare clic su **[!UICONTROL Successivo]**.
 1. Leggi le informazioni di riepilogo della patch di correzione rapida e fai clic su **[!UICONTROL Avanti]**.
 1. Leggi le informazioni di riepilogo di pre-installazione e fai clic su **[!UICONTROL Installa]**.
 1. Al termine dell’installazione, fai clic su **[!UICONTROL Avanti]** per applicare gli aggiornamenti della correzione rapida ai file installati.
 
-1. **[Solo Windows]** Esegui il seguente passaggio:
+1. **[Solo per Windows]:** Esegui uno dei seguenti passaggi:
+   * Deseleziona la **Avvia Configuration Manager** prima di fare clic **[!UICONTROL Fine]**. Esegui **Gestione configurazione** utilizzando **ConfigurationManager.bat** file che si trova in `[aem-forms root]\configurationManager\bin`.
 
-   Deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima di eseguire la gestione della configurazione utilizzando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a `<AEMForms_Install_Dir>\configurationManager\bin` directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
-1. La casella di controllo Avvia Configuration Manager è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Configuration Manager.
+   * Deseleziona la **Avvia Configuration Manager** prima di fare clic **[!UICONTROL Fine]**. Prima dell&#39;esecuzione **Gestione configurazione** utilizzo **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *`<AEMForms_Install_Dir>\configurationManager\bin`* directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) file.
+   >[!NOTE]
+   >Utilizzo **ConfigurationManager.bat** file aiuta a evitare di aggiornare manualmente il nome dei file .lax.
 
-1. Per eseguire Configuration Manager in un secondo momento, deseleziona l’opzione Avvia Configuration Manager prima di fare clic su **[!UICONTROL Fine]**. Puoi avviare Configuration Manager in un secondo momento utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
+1. **[Solo per basati su Unix]:** Esegui uno dei seguenti passaggi:
+
+   * La **Avvia Configuration Manager** la casella di controllo è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire il Configuration Manager immediatamente.
+
+   * Per eseguire **Gestione configurazione** in seguito, deseleziona la **Avvia Configuration Manager** prima di fare clic **[!UICONTROL Fine]**. Puoi iniziare **Gestione configurazione** in seguito utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
 
 1. A seconda del server delle applicazioni, scegli uno dei seguenti documenti e segui le istruzioni in *Configurazione e distribuzione dei moduli AEM* sezione .
 
