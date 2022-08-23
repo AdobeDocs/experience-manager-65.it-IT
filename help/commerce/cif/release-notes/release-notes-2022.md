@@ -5,7 +5,7 @@ exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 33%
+ht-degree: 45%
 
 ---
 
@@ -62,9 +62,9 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-may}
 
-* Nuova pagina delle proprietà del cockpit prodotto per una panoramica migliore e semplificata
+* Nuova pagina delle proprietà del pannello di comando del prodotto, per una panoramica migliore e semplificata
 
-![panoramica delle proprietà del cockpit prodotto](/help/assets/CIF/product_cockpit_properties_overview.png)
+![panoramica delle proprietà del pannello di comando del prodotto](/help/assets/CIF/product_cockpit_properties_overview.png)
 
 * Compatibilità e robustezza migliorate per i connettori di terze parti su I/O Runtime
 
@@ -72,9 +72,9 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Correzioni di bug {#bug-fixes-may}
 
-* Il campo del selettore prodotti con più valori mostra il secondo e prodotti aggiuntivi come non validi
+* Il campo del selettore prodotti con più valori mostra il secondo e gli ulteriori prodotti come non validi
 
-* Il selettore dei prodotti viene talvolta nascosto dietro i componenti
+* Il selettore prodotti viene talvolta nascosto dietro i componenti
 
 ## Data di rilascio: Aprile 2022
 
@@ -86,13 +86,13 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-april}
 
-* Accesso rapido al cockpit del prodotto: Accesso semplice e dettagliato alle informazioni di prodotto con un solo clic in Sites Editor
+* Accesso rapido alla cabina di comando del prodotto: accesso semplice e dettagliato alle informazioni di prodotto con un solo clic nell’editor di Sites
 
-   ![Abilita elenco dei desideri](/help/assets/CIF/enable-wishlist.png)
+   ![Abilitare la lista dei desideri](/help/assets/CIF/enable-wishlist.png)
 
-* Supporto per componenti di marketing aggiuntivi: I componenti possono essere configurati per mostrare una chiamata all’azione del componente aggiuntivo al carrello e del componente aggiuntivo all’elenco dei desideri
+* Supporto per componenti di marketing commerce aggiuntivi: i componenti possono essere configurati per mostrare un’invito all’azione di aggiunta al carrello e aggiunta alla lista dei desideri
 
-   ![Collegamento all’editor di siti per il cockpit di prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Data di rilascio: Febbraio 2022
 

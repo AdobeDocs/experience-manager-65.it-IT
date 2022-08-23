@@ -3,13 +3,13 @@ title: Personalizzare lo stile dei componenti core CIF di AEM
 description: Scopri come assegnare uno stile AEM componenti core CIF. L’esercitazione illustra come le librerie lato client o le librerie client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione Commerce di Adobe Experience Manager (AEM). Questa esercitazione riguarderà anche il modo in cui il modulo ui.frontend e un progetto webpack sono integrati nel processo di compilazione end-to-end.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 26%
