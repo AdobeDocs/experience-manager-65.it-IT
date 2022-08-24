@@ -1,8 +1,8 @@
 ---
 title: Reader che estende i documenti PDF protetti da policy utilizzando la Libreria di protezione portatile
-seo-title: Reader che estende i documenti PDF protetti da policy utilizzando la Libreria di protezione portatile
-description: Le estensioni di Reader abilitano funzioni interattive nei documenti Adobe PDF tramite Acrobat Reader. È possibile utilizzare la Portable Protection Library (PPL) per estendere i documenti PDF protetti da DRM.
-seo-description: Le estensioni di Reader abilitano funzioni interattive nei documenti Adobe PDF tramite Acrobat Reader. È possibile utilizzare la Portable Protection Library (PPL) per estendere i documenti PDF protetti da DRM.
+seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
+description: Le estensioni di Reader abilitano funzioni interattive nei documenti Adobe PDF tramite Acrobat Reader. È possibile utilizzare la Portable Protection Library (PPL) per estendere i documenti PDF protetti DRM.
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
@@ -10,32 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
 
-
 # Reader che estende i documenti PDF protetti da policy utilizzando la Libreria di protezione portatile {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-Per estendere i documenti PDF protetti da policy di protezione dei documenti, è necessario avere familiarità con i concetti di protezione dei documenti, estensione del lettore e linguaggio di programmazione Java.
+Per estendere i documenti PDF protetti da policy di protezione dei documenti, è necessario conoscere i concetti di sicurezza dei documenti, estensione del lettore e linguaggio di programmazione Java.
 
-È possibile utilizzare la protezione dei documenti per limitare l’accesso a specifici documenti PDF solo agli utenti autorizzati. È inoltre possibile determinare in che modo un destinatario può utilizzare un documento protetto. Ad esempio, è possibile specificare se i destinatari possono stampare, copiare o modificare il testo di un documento protetto da policy di protezione. Per ulteriori informazioni sulla protezione dei documenti, vedere [informazioni sulla protezione dei documenti](/help/forms/using/admin-help/document-security.md).
+È possibile utilizzare la protezione dei documenti per limitare l’accesso a specifici documenti PDF solo agli utenti autorizzati. È inoltre possibile determinare in che modo un destinatario può utilizzare un documento protetto. Ad esempio, è possibile specificare se i destinatari possono stampare, copiare o modificare il testo di un documento protetto da policy di protezione. Per ulteriori informazioni sulla protezione dei documenti, consulta [informazioni sulla protezione dei documenti](/help/forms/using/admin-help/document-security.md).
 
-È possibile utilizzare le estensioni dei lettori per abilitare le funzioni interattive nel documento Adobe PDF tramite Acrobat Reader. Queste funzioni interattive normalmente disponibili solo in Adobe Acrobat Professional e Standard. Per informazioni sulle funzioni interattive che l&#39;estensione del lettore può abilitare, consulta [Servizio Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
+È possibile utilizzare le estensioni dei lettori per abilitare le funzioni interattive nel documento Adobe PDF tramite Acrobat Reader. Queste funzioni interattive normalmente disponibili solo in Adobe Acrobat Professional e Standard. Per informazioni sulle funzioni interattive che l’estensione del lettore può abilitare, consulta [Servizio Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
 
 È possibile utilizzare la libreria di protezione portatile per applicare criteri sul documento senza la necessità di documenti che viaggiano in rete. Solo le credenziali di sicurezza e i dettagli delle politiche di protezione viaggiano sulla rete. Il documento effettivo non lascia mai il client e i criteri di protezione vengono applicati localmente sul client.
 
 ## Reader che estende i documenti PDF protetti da policy di protezione dei documenti {#reader-extending-document-security-policy-protected-pdf-documents}
 
-I documenti protetti da policy sono documenti crittografati. Non è possibile utilizzare le API standard per l’estensione dell’assistente vocale per applicare, rimuovere e recuperare i diritti di utilizzo di documenti PDF protetti da policy. Solo il servizio Estensioni di Reader della Libreria di protezione portatile fornisce alle API di applicare, rimuovere e recuperare i diritti di utilizzo di documenti PDF protetti da policy di protezione dei documenti.
+I documenti protetti da policy sono documenti crittografati. Non è possibile utilizzare API standard per l’estensione dell’assistente vocale per applicare, rimuovere e recuperare i diritti di utilizzo di documenti PDF protetti da policy. Solo il servizio Estensioni di Reader della Libreria di protezione portatile fornisce alle API di applicare, rimuovere e recuperare i diritti di utilizzo di un documento protetto da policy di protezione dei documenti PDF.
 
 ### Servizio Estensioni Reader {#reader-extensions-service}
 
-Il servizio di estensione del lettore aggiunge diritti di utilizzo a un documento PDF protetto da policy, attivando funzioni che normalmente non sono disponibili quando un documento PDF viene aperto tramite Adobe Acrobat Reader. Dispone inoltre di API per rimuovere e recuperare i diritti di utilizzo di un documento protetto da policy.
+Il servizio di estensione del lettore aggiunge diritti di utilizzo a un documento PDF protetto da policy, attivando funzioni che normalmente non sono disponibili quando un documento PDF viene aperto con Adobe Acrobat Reader. Dispone inoltre di API per rimuovere e recuperare i diritti di utilizzo di un documento protetto da policy.
 
 Il servizio Estensioni di Reader supporta completamente i documenti PDF basati sullo standard PDF 1.6 e versioni successive. Oltre ad Acrobat Reader, gli utenti di terze parti non richiedono alcun software o plug-in aggiuntivo per utilizzare i documenti PDF protetti da policy.
 
@@ -43,11 +42,11 @@ Con il servizio Estensioni di Reader puoi eseguire le seguenti attività:
 
 * Applicare diritti di utilizzo a un documento PDF protetto da policy.
 * Rimuovere i diritti di utilizzo di un documento PDF protetto da policy.
-* Recuperare i diritti di utilizzo applicati a un documento PDF protetto da policy.
+* Recupera i diritti di utilizzo applicati a un documento PDF protetto da policy.
 
 ### Applicazione dei diritti di utilizzo a un documento PDF protetto da policy di protezione dei documenti {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
-È possibile utilizzare l’ `applyUsageRights`API Java per applicare i diritti di utilizzo ai documenti PDF protetti da policy. I diritti di utilizzo si riferiscono a funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono applicati i diritti di utilizzo sono denominati documenti abilitati per i diritti. Un utente che apre un documento abilitato per i diritti in Adobe Reader può eseguire operazioni abilitate per quel documento specifico.
+È possibile utilizzare `applyUsageRights`API Java per applicare i diritti di utilizzo ai documenti PDF protetti da policy. I diritti di utilizzo si riferiscono a funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. Un utente che apre un documento abilitato per i diritti in Adobe Reader può eseguire operazioni abilitate per quel documento specifico.
 
 **Sintassi:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
@@ -76,9 +75,9 @@ Con il servizio Estensioni di Reader puoi eseguire le seguenti attività:
  </tbody>
 </table>
 
-### Recuperare i diritti di utilizzo applicati a un documento PDF protetto da policy.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
+### Recupera i diritti di utilizzo applicati a un documento PDF protetto da policy.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
-È possibile utilizzare l’ `getDocumentUsageRights`API Java per recuperare i diritti di utilizzo dell’estensione del lettore applicati a un documento PDF protetto da policy. Recuperando le informazioni sui diritti di utilizzo, è possibile ottenere informazioni sull&#39;estensione del lettore di funzioni abilitata per il documento PDF protetto da policy.
+È possibile utilizzare `getDocumentUsageRights`API Java per recuperare i diritti di utilizzo dell’estensione del lettore applicati a un documento PDF protetto da policy. Recuperando informazioni sui diritti di utilizzo, è possibile ottenere informazioni sull’estensione del lettore di funzioni abilitata per il documento PDF protetto da policy.
 
 **Sintassi:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
@@ -126,7 +125,7 @@ while ((read = output.read(bytes)) != -1) {
     outputStream.write(bytes, 0, read);
 }
 
-System.out.println("UsageRights applied successfully to the document. ”);
+System.out.println("UsageRights applied successfully to the document. ");
  outputStream.close();
 inputFileStream.close();
 
@@ -143,7 +142,7 @@ System.out.println("RE rights for the file are :\n"+right1);
 
 ### Rimuovere i diritti di utilizzo di un documento PDF protetto da policy {#remove-usage-rights-of-a-policy-protected-pdf-document}
 
-Puoi utilizzare l’ `removeUsageRights`API Java per rimuovere i diritti di utilizzo da un documento protetto da policy. La rimozione dei diritti di utilizzo da un documento PDF protetto da policy è necessaria per eseguire altre operazioni AEM Forms sul documento. Ad esempio, è necessario firmare (o certificare) digitalmente un documento PDF prima di impostare i diritti di utilizzo. Pertanto, se si desidera eseguire operazioni su un documento protetto da policy, è necessario rimuovere i diritti di utilizzo dal documento PDF, eseguire le altre operazioni, ad esempio la firma digitale del documento e quindi riapplicare i diritti di utilizzo al documento.
+È possibile utilizzare `removeUsageRights`API Java per rimuovere i diritti di utilizzo da un documento protetto da policy. La rimozione dei diritti di utilizzo da un documento PDF protetto da policy è necessaria per eseguire altre operazioni AEM Forms sul documento. Ad esempio, è necessario firmare (o certificare) digitalmente un documento PDF prima di impostare i diritti di utilizzo. Pertanto, se si desidera eseguire operazioni su un documento protetto da policy, è necessario rimuovere i diritti di utilizzo dal documento PDF, eseguire le altre operazioni, ad esempio la firma digitale del documento e quindi riapplicare i diritti di utilizzo al documento.
 
 **Sintassi:** `InputStream removeUsageRights(InputStream inputFile)`
 
@@ -155,7 +154,7 @@ Puoi utilizzare l’ `removeUsageRights`API Java per rimuovere i diritti di util
   </tr>
   <tr>
    <td><p> </p> <p>inputFile</p> </td>
-   <td>Specificare InputStream che rappresenta il documento PDF da cui devono essere rimossi i diritti di utilizzo<br />. È possibile utilizzare documenti protetti da protezione dei documenti di LiveCycle o AEM Forms.</td>
+   <td>Specifica InputStream che rappresenta il documento PDF da cui viene utilizzato l'utilizzo<br /> i diritti devono essere rimossi. È possibile utilizzare documenti protetti da protezione dei documenti di LiveCycle o AEM Forms.</td>
   </tr>
  </tbody>
 </table>
@@ -185,8 +184,7 @@ while ((read = fileStream.read(bytes)) != -1) {
 
     outputStream.write(bytes, 0, read);
 }
-System.out.println("RE rights removed successfully from the document.”);
+System.out.println("RE rights removed successfully from the document.");
 outputStream.close();
 inputFileStream.close();
 ```
-

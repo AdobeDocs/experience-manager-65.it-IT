@@ -3,34 +3,35 @@ title: Markdown
 description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 4%
+ht-degree: 91%
 
 ---
 
 # Markdown {#markdown}
 
-Quando sei [autore](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti headless:
+Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor dei frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
 
 ![editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 Puoi definire:
 
-* [Notazione titolo](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Notazione intestazione](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Paragrafi e interruzioni di riga](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Collegamenti](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Immagini](/help/assets/content-fragments/content-fragments-markdown.md#images)
-* [Virgolette a blocchi](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
+* [Citazioni](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
 * [Elenchi](/help/assets/content-fragments/content-fragments-markdown.md#lists)
 * [Enfasi](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
 * [Blocchi di codice](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Backslash escape](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Escape barra rovesciata](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
-## Notazione titolo {#heading-notation}
+## Notazione intestazione {#heading-notation}
 
-Per creare un’intestazione inserendo un tag hash (#) davanti all’intestazione. Un tag hash (#) viene utilizzato per un valore H1, due tag hash (##) per un valore H2, ecc. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un singolo hashtag (#) viene utilizzato per un titolo H1, due hashtag (##) per H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
 
     `## This is an H2`
 
@@ -38,7 +39,7 @@ Per creare un’intestazione inserendo un tag hash (#) davanti all’intestazion
 
     `###### This is a H6`
 
-Facoltativamente, è possibile creare un H1 evidenziando il testo in segni uguali e creando un H2 evidenziando il testo sotto i segni meno. Esempio:
+In alternativa, è possibile creare un H1 sottolineando il testo con alcuni segni di uguale e creare un H2 sottolineando il testo con i segni meno. Esempio:
 
     `This is an H1`
 
@@ -50,9 +51,9 @@ Facoltativamente, è possibile creare un H1 evidenziando il testo in segni ugual
 
 ## Paragrafi e interruzioni di riga {#paragraphs-and-line-breaks}
 
-Un paragrafo è costituito semplicemente da una o più righe di testo consecutive, separate da una o più righe vuote. Una riga vuota è una riga contenente solo spazi o tabulazioni. I paragrafi normali non devono presentare un rientro con spazi o tabulazioni.
+Un paragrafo è costituito semplicemente da una o più righe di testo consecutive, separate da una o più righe vuote. Una riga vuota è una riga contenente solo spazi o tabulazioni. Il rientro dei paragrafi normali non deve essere applicato con spazi o tabulazioni.
 
-Un’interruzione di riga viene creata terminando una riga con due o più spazi e quindi un ritorno.
+Un’interruzione di riga viene creata chiudendo una riga con due o più spazi e quindi premendo Invio.
 
 ## Collegamenti {#links}
 
@@ -80,9 +81,9 @@ Un collegamento di riferimento ha la seguente sintassi:
 
 ## Immagini {#images}
 
-La sintassi per le immagini è simile a quella dei collegamenti. Puoi creare immagini in linea e a cui fare riferimento.
+La sintassi per le immagini è simile a quella dei collegamenti. Puoi creare immagini in linea e di riferimento.
 
-Ad esempio, un&#39;immagine in linea ha la seguente sintassi:
+Ad esempio, un’immagine in linea ha la seguente sintassi:
 
     `![Alt text](/path/to/img.jpg)`
 
@@ -90,21 +91,21 @@ Ad esempio, un&#39;immagine in linea ha la seguente sintassi:
 
 La sintassi include:
 
-* Punto esclamativo: !;
-* seguita da un set di parentesi quadre, contenente il testo dell’attributo alt per l’immagine;
-* seguita da un set di parentesi, contenente l’URL o il percorso dell’immagine, e da un attributo titolo facoltativo racchiuso tra virgolette doppie o singole.
+* Un punto esclamativo: !;
+* seguito da un set di parentesi quadre, contenenti il testo dell’attributo “alt” relativo all’immagine;
+* seguito da un set di parentesi, contenenti l’URL o il percorso dell’immagine, oltre a un attributo facoltativo del titolo racchiuso tra virgolette doppie o singole.
 
-Un’immagine in stile Riferimento ha la seguente sintassi:
+Un’immagine stile di riferimento ha la seguente sintassi:
 
     `![Alt text][id]`
 
-Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferimenti alle immagini sono definiti utilizzando una sintassi identica ai riferimenti di collegamento:
+Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferimenti a immagini sono definiti utilizzando una sintassi identica ai riferimenti di collegamento:
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Virgolette a blocchi {#block-quotes}
+## Citazioni {#block-quotes}
 
-È possibile citare il testo aggiungendo il simbolo > prima del testo. Esempio:
+Puoi citare il testo aggiungendo il simbolo > prima del testo. Esempio:
 
     `>This is block quotes`
 
@@ -112,7 +113,7 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
     `>asdfahsdlfasdfj`
 
-È possibile disporre di virgolette di blocco nidificate. Esempio:
+Puoi anche aggiungere citazioni nidificate. Esempio:
 
     `> This is the first level of quoting.`
 
@@ -126,17 +127,17 @@ Dove &quot;id&quot; è il nome di un riferimento immagine definito. I riferiment
 
 ## Elenchi {#lists}
 
-È possibile creare elenchi ordinati e non ordinati.
+Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizzare &amp;ast; prima degli elementi dell’elenco. Esempio:
-
-    `* item in list`
+Per creare un elenco non ordinato, utilizza il simbolo &amp;ast; davanti agli elementi dell’elenco. Esempio:
 
     `* item in list`
 
     `* item in list`
 
-Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima di ogni elemento dell’elenco. Esempio:
+    `* item in list`
+
+Per creare un elenco ordinato, aggiungi i numeri, seguiti da un punto, davanti a ogni elemento dell’elenco. Esempio:
 
     `1. First item in list.`
 
@@ -146,9 +147,9 @@ Per creare un elenco ordinato, aggiungere i numeri, seguiti da un punto, prima d
 
 ## Enfasi {#emphasis}
 
-È possibile aggiungere al testo uno stile corsivo o grassetto.
+Puoi aggiungere al testo lo stile corsivo o grassetto.
 
-Per aggiungere il corsivo, procedere come segue:
+Per aggiungere il corsivo, procedi come segue:
 
     `*single asterisks*`
 
@@ -156,7 +157,7 @@ Per aggiungere il corsivo, procedere come segue:
 
     `Keyboard shortcut: Ctrl-I (Cmd-I)`
 
-Il testo in grassetto può essere visualizzato come segue:
+Puoi applicare il grassetto con la seguente procedura:
 
     `**double asterisks**`
 
@@ -164,7 +165,7 @@ Il testo in grassetto può essere visualizzato come segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Per indicare un intervallo di codice, inseriscilo con virgolette di backtick (&amp;grave;). A differenza di un blocco di codice preformattato, un intervallo di codice indica il codice all’interno di un paragrafo normale.
+Per indicare un’estensione del codice, inseriscila tra apici inversi (&grave;). A differenza di un blocco di codice preformattato, un’estensione del codice indica il codice all’interno di un paragrafo normale.
 
 Esempio:
 
@@ -172,19 +173,19 @@ Esempio:
 
 ## Blocchi di codice {#code-blocks}
 
-I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. Puoi creare blocchi di codice applicando un rientro al codice utilizzando una scheda o un minimo di 4 spazi. Esempio:
+I blocchi di codice vengono generalmente utilizzati per illustrare il codice sorgente. Puoi creare blocchi di codice applicando un rientro al codice utilizzando una tabulazione o un minimo di 4 spazi. Esempio:
 
     `This is a normal paragraph.`
 
         `This is a code block.`
 
-## Backslash escape {#backslash-escapes}
+## Escape barra rovesciata {#backslash-escapes}
 
-È possibile utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno un significato speciale nella sintassi di formattazione. Ad esempio, se desideri circondare una parola con asterischi letterali (invece di un tag HTML &lt;em> ), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
+Puoi utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno un significato speciale nella sintassi di formattazione. Ad esempio, se desideri racchiudere una parola tra asterischi letterali (invece di un tag &lt;em> HTML), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
 
     `\\*literal asterisks\\*`
 
-Gli escape delle barre rovesciate sono disponibili per i seguenti caratteri:
+Gli escape barre rovesciate sono disponibili per i seguenti caratteri:
 
     ` \ backslash`
 

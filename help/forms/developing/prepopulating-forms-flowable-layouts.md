@@ -1,8 +1,8 @@
 ---
 title: Precompilazione di Forms con layout fluidi
-seo-title: Precompilazione di Forms con layout fluidi
+seo-title: Prepopulating Forms with Flowable Layouts
 description: Precompilare i moduli con layout scorrevole per mostrare i dati agli utenti all’interno di un modulo di cui è stato effettuato il rendering utilizzando l’API Java e l’API Web Service.
-seo-description: Precompilare i moduli con layout scorrevole per mostrare i dati agli utenti all’interno di un modulo di cui è stato effettuato il rendering utilizzando l’API Java e l’API Web Service.
+seo-description: Prepopulate forms with flowable layout to display data to users within a rendered form using the Java API and the Web Service API.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '3534'
+source-wordcount: '3505'
 ht-degree: 0%
 
 ---
-
 
 # Precompilazione di Forms con layout fluidi {#prepopulating-forms-with-flowable-layouts1}
 
@@ -40,9 +39,9 @@ Per ogni campo del modulo che si desidera precompilare deve esistere un elemento
 
 Quando si precompila un modulo che contiene già dati, è necessario specificare i dati già visualizzati nell’origine dati XML. Si supponga che un modulo contenente 10 campi includa dati in quattro campi. Quindi, si supponga di voler precompilare i sei campi rimanenti. In questa situazione, è necessario specificare 10 elementi XML nell’origine dati XML utilizzata per precompilare il modulo. Se specifichi solo sei elementi, i quattro campi originali sono vuoti.
 
-Ad esempio, puoi precompilare un modulo, ad esempio il modulo di conferma di esempio. (Vedere &quot;Modulo di conferma&quot; in [Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Ad esempio, puoi precompilare un modulo, ad esempio il modulo di conferma di esempio. (Vedi &quot;Modulo di conferma&quot; in [Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-Per precompilare il modulo di conferma di esempio, è necessario creare un’origine dati XML contenente tre elementi XML che corrispondono ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName` e `Amount`. Il primo passaggio consiste nel creare un’origine dati XML contenente elementi XML che corrispondono ai campi presenti nella struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come mostrato nel seguente codice XML.
+Per precompilare il modulo di conferma di esempio, è necessario creare un’origine dati XML contenente tre elementi XML che corrispondono ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName`e `Amount`. Il primo passaggio consiste nel creare un’origine dati XML contenente elementi XML che corrispondono ai campi presenti nella struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come mostrato nel seguente codice XML.
 
 ```xml
      <Untitled>
@@ -179,7 +178,7 @@ Tieni presente che ogni sottogruppo di dati contiene quattro elementi XML corris
 
 Il nome dell’elemento XML padre di un sottogruppo di dati deve corrispondere al nome del sottomodulo che si trova nella struttura del modulo. Ad esempio, nel diagramma precedente, notare che il nome dell’elemento XML principale del sottogruppo di dati è `detail`. Questo corrisponde al nome del sottomodulo che si trova nella struttura del modulo su cui è basato il modulo dell&#39;ordine di acquisto. Se il nome dell’elemento XML padre del sottogruppo di dati e il sottomodulo non corrispondono, un modulo lato server non viene precompilato.
 
-Ciascun sottogruppo di dati deve contenere elementi XML che corrispondono ai nomi dei campi nel sottomodulo. Il sottomodulo `detail` presente nella struttura del modulo contiene i campi seguenti:
+Ciascun sottogruppo di dati deve contenere elementi XML che corrispondono ai nomi dei campi nel sottomodulo. La `detail` il sottomodulo che si trova nella struttura del modulo contiene i campi seguenti:
 
 * txtPartNum
 * txtDescription
@@ -188,11 +187,11 @@ Ciascun sottogruppo di dati deve contenere elementi XML che corrispondono ai nom
 
 >[!NOTE]
 >
->Se si tenta di precompilare un modulo con un’origine dati contenente elementi XML ripetuti e si imposta l’opzione `RenderAtClient` su `No`, nel modulo viene unito solo il primo record di dati. Per assicurarsi che tutti i record di dati siano uniti nel modulo, impostare `RenderAtClient` su `Yes`. Per informazioni sull&#39;opzione `RenderAtClient`, vedere [Rendering Forms sul client](/help/forms/developing/rendering-forms-client.md).
+>Se si tenta di precompilare un modulo con un&#39;origine dati che contiene elementi XML ripetuti e si imposta la proprietà `RenderAtClient` opzione per `No`, nel modulo viene unito solo il primo record di dati. Per garantire l’unione di tutti i record di dati nel modulo, impostare la `RenderAtClient` a `Yes`. Per informazioni sulla `RenderAtClient` opzione , vedi [Rendering di Forms sul client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consulta [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedi [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -213,19 +212,19 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un&#39;applic
 
 **Creare un’origine dati XML in memoria**
 
-È possibile utilizzare le classi `org.w3c.dom` per creare un&#39;origine dati XML in memoria per precompilare un modulo con un layout scorrevole. È necessario inserire i dati in un’origine dati XML conforme al modulo. Per informazioni sulla relazione tra un modulo con layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).
+È possibile utilizzare `org.w3c.dom` classi per creare un’origine dati XML in memoria per precompilare un modulo con un layout scorrevole. È necessario inserire i dati in un’origine dati XML conforme al modulo. Per informazioni sul rapporto tra un modulo con layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).
 
 **Convertire l’origine dati XML**
 
-Un’origine dati XML in memoria creata utilizzando le classi `org.w3c.dom` può essere convertita in un oggetto `com.adobe.idp.Document` prima di poter essere utilizzata per precompilare un modulo. Un’origine dati XML in memoria può essere convertita utilizzando le classi di trasformazione Java XML.
+Origine dati XML in memoria creata utilizzando `org.w3c.dom` le classi possono essere convertite in un `com.adobe.idp.Document` prima di poter essere utilizzato per precompilare un modulo. Un’origine dati XML in memoria può essere convertita utilizzando le classi di trasformazione Java XML.
 
 >[!NOTE]
 >
->Se si utilizza il WSDL del servizio Forms per precompilare un modulo, è necessario convertire un oggetto `org.w3c.dom.Document` in un oggetto `BLOB`.
+>Se si utilizza il WSDL del servizio Forms per precompilare un modulo, è necessario convertire un `org.w3c.dom.Document` oggetto in un `BLOB` oggetto.
 
 **Rendering di un modulo precompilato**
 
-È possibile eseguire il rendering di un modulo precompilato come un altro modulo. L’unica differenza consiste nell’utilizzare l’oggetto `com.adobe.idp.Document` contenente l’origine dati XML per precompilare il modulo.
+È possibile eseguire il rendering di un modulo precompilato come un altro modulo. L’unica differenza è che utilizzi il `com.adobe.idp.Document` oggetto che contiene l’origine dati XML per precompilare il modulo.
 
 **Consulta anche**
 
@@ -239,73 +238,73 @@ Un’origine dati XML in memoria creata utilizzando le classi `org.w3c.dom` può
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Precompilazione dei moduli utilizzando l’API Java {#prepopulating-forms-using-the-java-api}
+### Precompilazione dei moduli tramite l’API Java {#prepopulating-forms-using-the-java-api}
 
 Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (Java), effettua le seguenti operazioni:
 
 1. Includi file di progetto
 
-   Includi file JAR client, come adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, consulta [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Includi file JAR client, come adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Creare un’origine dati XML in memoria
 
-   * Crea un oggetto Java `DocumentBuilderFactory` chiamando il metodo `DocumentBuilderFactory` class’ `newInstance` .
-   * Crea un oggetto Java `DocumentBuilder` chiamando il metodo `DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` .
-   * Chiama il metodo `newDocument` dell&#39;oggetto `DocumentBuilder` per creare un&#39;istanza di un oggetto `org.w3c.dom.Document`.
-   * Creare l’elemento principale dell’origine dati XML richiamando il metodo `createElement` dell’oggetto `org.w3c.dom.Document`. Questo crea un oggetto `Element` che rappresenta l&#39;elemento principale. Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento principale al documento chiamando il metodo `appendChild` dell’oggetto `Document` e passa l’oggetto elemento principale come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Creare un Java `DocumentBuilderFactory` chiamando `DocumentBuilderFactory` classe&quot; `newInstance` metodo .
+   * Creare un Java `DocumentBuilder` chiamando `DocumentBuilderFactory` dell’oggetto `newDocumentBuilder` metodo .
+   * Chiama il `DocumentBuilder` dell’oggetto `newDocument` per creare un&#39;istanza di un `org.w3c.dom.Document` oggetto.
+   * Crea l’elemento principale dell’origine dati XML richiamando il `org.w3c.dom.Document` dell’oggetto `createElement` metodo . Questo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l&#39;elemento principale al documento chiamando il `Document` dell’oggetto `appendChild` e passare l&#39;oggetto elemento principale come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Creare l’elemento di intestazione dell’origine dati XML chiamando il metodo `Document` dell’oggetto `createElement` . Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il metodo `appendChild` dell’oggetto `root` e passa l’oggetto header come argomento. Gli elementi XML aggiunti all’elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea l’elemento intestazione dell’origine dati XML chiamando il `Document` dell’oggetto `createElement` metodo . Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell’oggetto `appendChild` e passare l&#39;oggetto header come argomento. Gli elementi XML aggiunti all’elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crea un elemento figlio che appartiene all’elemento header chiamando il metodo `createElement` dell’oggetto `Document` e passa un valore stringa che rappresenta il nome dell’elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamandone il metodo `appendChild` e passa il metodo `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento header chiamando il metodo `appendChild` dell’elemento header e passa l’oggetto element figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea un elemento figlio che appartiene all’elemento header chiamando il `Document` dell’oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e passare il `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento header chiamando l’elemento header `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Aggiungi tutti gli elementi rimanenti all&#39;elemento intestazione ripetendo l&#39;ultimo passaggio secondario per ciascun campo visualizzato nella parte statica del modulo (nel diagramma dell&#39;origine dati XML, questi campi sono visualizzati nella sezione A. (Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups)).
-   * Creare l’elemento di dettaglio dell’origine dati XML chiamando il metodo `Document` dell’oggetto `createElement` . Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento dettaglio all’elemento principale chiamando il metodo `appendChild` dell’oggetto `root` e passa l’oggetto elemento dettaglio come argomento. Gli elementi XML aggiunti all’elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Aggiungi tutti gli elementi rimanenti all’elemento intestazione ripetendo l’ultimo passaggio secondario per ciascun campo visualizzato nella parte statica del modulo (nel diagramma dell’origine dati XML, questi campi sono visualizzati nella sezione A. (Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Crea l’elemento di dettaglio dell’origine dati XML chiamando il `Document` dell’oggetto `createElement` metodo . Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento dettaglio all’elemento principale chiamando il `root` dell’oggetto `appendChild` e passare l&#39;oggetto dell&#39;elemento dettaglio come argomento. Gli elementi XML aggiunti all’elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crea un elemento figlio che appartiene all’elemento dettaglio chiamando il metodo `createElement` dell’oggetto `Document` e passa un valore stringa che rappresenta il nome dell’elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamandone il metodo `appendChild` e passa il metodo `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando il metodo `appendChild` dell’elemento dettaglio e passa l’oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea un elemento figlio che appartiene all’elemento dettaglio chiamando il `Document` dell’oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e passare il `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando l’elemento dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Ripeti l’ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all’elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo dell&#39;ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty` e `numUnitPrice`.
+   * Ripeti l’ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all’elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo dell&#39;ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`e `numUnitPrice`.
    * Ripetere gli ultimi due passaggi secondari per tutti gli elementi dati utilizzati per precompilare il modulo.
 
 1. Convertire l’origine dati XML
 
-   * Creare un oggetto `javax.xml.transform.Transformer` richiamando il metodo statico `javax.xml.transform.Transformer` dell&#39;oggetto `newInstance`.
-   * Creare un oggetto `Transformer` richiamando il metodo `TransformerFactory` dell&#39;oggetto `newTransformer`.
-   * Creare un oggetto `ByteArrayOutputStream` utilizzando il relativo costruttore.
-   * Creare un oggetto `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando l&#39;oggetto `org.w3c.dom.Document` creato nel passaggio 1.
-   * Creare un oggetto `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando l&#39;oggetto `ByteArrayOutputStream`.
-   * Compilare l’oggetto Java `ByteArrayOutputStream` richiamando il metodo `javax.xml.transform.Transformer` dell’oggetto `transform` e passando gli oggetti `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult`.
-   * Creare una matrice di byte e allocare la dimensione dell&#39;oggetto `ByteArrayOutputStream` all&#39;array di byte.
-   * Compilare la matrice dei byte richiamando il metodo `toByteArray` dell&#39;oggetto `ByteArrayOutputStream`.
-   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando la matrice dei byte.
+   * Crea un `javax.xml.transform.Transformer` richiamando l&#39;oggetto `javax.xml.transform.Transformer` statico dell’oggetto `newInstance` metodo .
+   * Crea un `Transformer` richiamando l&#39;oggetto `TransformerFactory` dell’oggetto `newTransformer` metodo .
+   * Crea un `ByteArrayOutputStream` utilizzando il relativo costruttore.
+   * Crea un `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando `org.w3c.dom.Document` oggetto creato al passaggio 1.
+   * Crea un `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando `ByteArrayOutputStream` oggetto.
+   * Popolare Java `ByteArrayOutputStream` richiamando l&#39;oggetto `javax.xml.transform.Transformer` dell’oggetto `transform` e passare `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult` oggetti.
+   * Creare un array di byte e allocare le dimensioni del `ByteArrayOutputStream` all&#39;array di byte.
+   * Compilare l’array di byte richiamando il `ByteArrayOutputStream` dell’oggetto `toByteArray` metodo .
+   * Crea un `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;array di byte.
 
 1. Rendering di un modulo precompilato
 
-   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
+   Richiama il `FormsServiceClient` dell’oggetto `renderPDFForm` e passare i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
-   * Un oggetto `com.adobe.idp.Document` contenente i dati da unire al modulo. Assicurati di utilizzare l&#39;oggetto `com.adobe.idp.Document` creato nei passaggi uno e due.
-   * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di esecuzione.
-   * Un oggetto `URLSpec` contenente valori URI richiesti dal servizio Forms.
-   * Un oggetto `java.util.HashMap` che memorizza gli allegati di file. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * A `com.adobe.idp.Document` oggetto contenente i dati da unire al modulo. Assicurati di utilizzare `com.adobe.idp.Document` oggetto creato nei passaggi uno e due.
+   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione.
+   * A `URLSpec` oggetto che contiene i valori URI richiesti dal servizio Forms.
+   * A `java.util.HashMap` oggetto che memorizza gli allegati di file. Si tratta di un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
-   Il metodo `renderPDFForm` restituisce un oggetto `FormsResult` contenente un flusso di dati del modulo che deve essere scritto nel browser Web client.
+   La `renderPDFForm` restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
-   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati del modulo al browser Web client.
-   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent` .
-   * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
-   * Creare un array di byte popolarlo con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando l&#39;array di byte come argomento.
-   * Richiamare il metodo `write` dell’oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al metodo `write` .
+   * Crea un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati del modulo al browser Web client.
+   * Crea un `com.adobe.idp.Document` richiamando l&#39;oggetto `FormsResult` oggetto ‘s `getOutputContent` metodo .
+   * Crea un `java.io.InputStream` richiamando l&#39;oggetto `com.adobe.idp.Document` dell’oggetto `getInputStream` metodo .
+   * Creare un array di byte popolarlo con il flusso di dati del modulo richiamando il `InputStream` dell’oggetto `read` e passare l&#39;array di byte come argomento.
+   * Richiama il `javax.servlet.ServletOutputStream` dell’oggetto `write` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al `write` metodo .
 
 
 **Consulta anche**
@@ -322,79 +321,78 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (s
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms. (Consulta [Creazione di classi proxy Java tramite Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms. (Vedi [Creazione di classi proxy Java utilizzando Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
    * Includi le classi proxy Java nel percorso della classe.
 
 1. Creare un’origine dati XML in memoria
 
-   * Crea un oggetto Java `DocumentBuilderFactory` chiamando il metodo `DocumentBuilderFactory` class’ `newInstance` .
-   * Crea un oggetto Java `DocumentBuilder` chiamando il metodo `DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` .
-   * Chiama il metodo `newDocument` dell&#39;oggetto `DocumentBuilder` per creare un&#39;istanza di un oggetto `org.w3c.dom.Document`.
-   * Creare l’elemento principale dell’origine dati XML richiamando il metodo `createElement` dell’oggetto `org.w3c.dom.Document`. Questo crea un oggetto `Element` che rappresenta l&#39;elemento principale. Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento principale al documento chiamando il metodo `appendChild` dell’oggetto `Document` e passa l’oggetto elemento principale come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Creare un Java `DocumentBuilderFactory` chiamando `DocumentBuilderFactory` classe&quot; `newInstance` metodo .
+   * Creare un Java `DocumentBuilder` chiamando `DocumentBuilderFactory` dell’oggetto `newDocumentBuilder` metodo .
+   * Chiama il `DocumentBuilder` dell’oggetto `newDocument` per creare un&#39;istanza di un `org.w3c.dom.Document` oggetto.
+   * Crea l’elemento principale dell’origine dati XML richiamando il `org.w3c.dom.Document` dell’oggetto `createElement` metodo . Questo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l&#39;elemento principale al documento chiamando il `Document` dell’oggetto `appendChild` e passare l&#39;oggetto elemento principale come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Creare l’elemento di intestazione dell’origine dati XML chiamando il metodo `Document` dell’oggetto `createElement` . Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il metodo `appendChild` dell’oggetto `root` e passa l’oggetto header come argomento. Gli elementi XML aggiunti all’elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea l’elemento intestazione dell’origine dati XML chiamando il `Document` dell’oggetto `createElement` metodo . Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell’oggetto `appendChild` e passare l&#39;oggetto header come argomento. Gli elementi XML aggiunti all’elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crea un elemento figlio che appartiene all’elemento header chiamando il metodo `createElement` dell’oggetto `Document` e passa un valore stringa che rappresenta il nome dell’elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamandone il metodo `appendChild` e passa il metodo `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento header chiamando il metodo `appendChild` dell’elemento header e passa l’oggetto element figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea un elemento figlio che appartiene all’elemento header chiamando il `Document` dell’oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e passare il `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento header chiamando l’elemento header `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Aggiungi tutti gli elementi rimanenti all&#39;elemento intestazione ripetendo l&#39;ultimo passaggio secondario per ciascun campo visualizzato nella parte statica del modulo (nel diagramma dell&#39;origine dati XML, questi campi sono visualizzati nella sezione A. (Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups)).
-   * Creare l’elemento di dettaglio dell’origine dati XML chiamando il metodo `Document` dell’oggetto `createElement` . Passa al metodo `createElement` un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento dettaglio all’elemento principale chiamando il metodo `appendChild` dell’oggetto `root` e passa l’oggetto elemento dettaglio come argomento. Gli elementi XML aggiunti all’elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Aggiungi tutti gli elementi rimanenti all’elemento intestazione ripetendo l’ultimo passaggio secondario per ciascun campo visualizzato nella parte statica del modulo (nel diagramma dell’origine dati XML, questi campi sono visualizzati nella sezione A. (Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Crea l’elemento di dettaglio dell’origine dati XML chiamando il `Document` dell’oggetto `createElement` metodo . Passa un valore stringa che rappresenta il nome dell&#39;elemento al `createElement` metodo . Imposta il valore restituito su `Element`. Quindi, aggiungi l’elemento dettaglio all’elemento principale chiamando il `root` dell’oggetto `appendChild` e passare l&#39;oggetto dell&#39;elemento dettaglio come argomento. Gli elementi XML aggiunti all’elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crea un elemento figlio che appartiene all’elemento dettaglio chiamando il metodo `createElement` dell’oggetto `Document` e passa un valore stringa che rappresenta il nome dell’elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamandone il metodo `appendChild` e passa il metodo `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando il metodo `appendChild` dell’elemento dettaglio e passa l’oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
+   * Crea un elemento figlio che appartiene all’elemento dettaglio chiamando il `Document` dell’oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Imposta il valore restituito su `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e passare il `Document` dell’oggetto `createTextNode` come argomento. Specifica un valore di stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando l’elemento dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica di applicazione:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Ripeti l’ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all’elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo dell&#39;ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty` e `numUnitPrice`.
+   * Ripeti l’ultimo passaggio secondario affinché tutti gli elementi XML vengano aggiunti all’elemento dettaglio. Per creare correttamente l&#39;origine dati XML utilizzata per compilare il modulo dell&#39;ordine di acquisto, è necessario aggiungere i seguenti elementi XML all&#39;elemento dettaglio: `txtDescription`, `numQty`e `numUnitPrice`.
    * Ripetere gli ultimi due passaggi secondari per tutti gli elementi dati utilizzati per precompilare il modulo.
 
 1. Convertire l’origine dati XML
 
-   * Creare un oggetto `javax.xml.transform.Transformer` richiamando il metodo statico `javax.xml.transform.Transformer` dell&#39;oggetto `newInstance`.
-   * Creare un oggetto `Transformer` richiamando il metodo `TransformerFactory` dell&#39;oggetto `newTransformer`.
-   * Creare un oggetto `ByteArrayOutputStream` utilizzando il relativo costruttore.
-   * Creare un oggetto `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando l&#39;oggetto `org.w3c.dom.Document` creato nel passaggio 1.
-   * Creare un oggetto `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando l&#39;oggetto `ByteArrayOutputStream`.
-   * Compilare l’oggetto Java `ByteArrayOutputStream` richiamando il metodo `javax.xml.transform.Transformer` dell’oggetto `transform` e passando gli oggetti `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult`.
-   * Creare una matrice di byte e allocare la dimensione dell&#39;oggetto `ByteArrayOutputStream` all&#39;array di byte.
-   * Compilare la matrice dei byte richiamando il metodo `toByteArray` dell&#39;oggetto `ByteArrayOutputStream`.
-   * Creare un oggetto `BLOB` utilizzando il relativo costruttore, richiamare il relativo metodo `setBinaryData` e passare l&#39;array di byte.
+   * Crea un `javax.xml.transform.Transformer` richiamando l&#39;oggetto `javax.xml.transform.Transformer` statico dell’oggetto `newInstance` metodo .
+   * Crea un `Transformer` richiamando l&#39;oggetto `TransformerFactory` dell’oggetto `newTransformer` metodo .
+   * Crea un `ByteArrayOutputStream` utilizzando il relativo costruttore.
+   * Crea un `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando `org.w3c.dom.Document` oggetto creato al passaggio 1.
+   * Crea un `javax.xml.transform.dom.DOMSource` utilizzando il relativo costruttore e passando `ByteArrayOutputStream` oggetto.
+   * Popolare Java `ByteArrayOutputStream` richiamando l&#39;oggetto `javax.xml.transform.Transformer` dell’oggetto `transform` e passare `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult` oggetti.
+   * Creare un array di byte e allocare le dimensioni del `ByteArrayOutputStream` all&#39;array di byte.
+   * Compilare l’array di byte richiamando il `ByteArrayOutputStream` dell’oggetto `toByteArray` metodo .
+   * Crea un `BLOB` utilizzando il relativo costruttore e richiamandone il `setBinaryData` e passare l&#39;array di byte.
 
 1. Rendering di un modulo precompilato
 
-   Richiama il metodo `renderPDFForm` dell&#39;oggetto `FormsService` e passa i seguenti valori:
+   Richiama il `FormsService` dell’oggetto `renderPDFForm` e passare i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
-   * Un oggetto `BLOB` contenente i dati da unire al modulo. Assicurati di utilizzare l&#39;oggetto `BLOB` creato nei passaggi uno e due.
-   * Un oggetto `PDFFormRenderSpecc` che memorizza le opzioni di esecuzione. Per ulteriori informazioni, consulta [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Un oggetto `URLSpec` contenente valori URI richiesti dal servizio Forms.
-   * Un oggetto `java.util.HashMap` che memorizza gli allegati di file. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Un oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto compilato dal metodo . Viene utilizzato per memorizzare il modulo PDF di cui è stato effettuato il rendering.
-   * Un oggetto `javax.xml.rpc.holders.LongHolder` vuoto compilato dal metodo . Questo argomento memorizza il numero di pagine nel modulo.
-   * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo . (Questo argomento memorizza il valore delle impostazioni internazionali).
-   * Un oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
+   * A `BLOB` oggetto contenente i dati da unire al modulo. Assicurati di utilizzare `BLOB` oggetto creato nei passaggi uno e due.
+   * A `PDFFormRenderSpecc` oggetto che memorizza le opzioni di esecuzione. Per ulteriori informazioni, consulta [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * A `URLSpec` oggetto che contiene i valori URI richiesti dal servizio Forms.
+   * A `java.util.HashMap` oggetto che memorizza gli allegati di file. Si tratta di un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+   * Un vuoto `com.adobe.idp.services.holders.BLOBHolder` oggetto popolato dal metodo . Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Un vuoto `javax.xml.rpc.holders.LongHolder` oggetto popolato dal metodo . Questo argomento memorizza il numero di pagine nel modulo.
+   * Un vuoto `javax.xml.rpc.holders.StringHolder` oggetto popolato dal metodo . (Questo argomento memorizza il valore delle impostazioni internazionali).
+   * Un vuoto `com.adobe.idp.services.holders.FormsResultHolder` oggetto che conterrà i risultati dell&#39;operazione.
 
-   Il metodo `renderPDFForm` popola l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore dell&#39;argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
+   La `renderPDFForm` popola il `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
-   * Creare un oggetto `FormResult` ottenendo il valore del membro dati `com.adobe.idp.services.holders.FormsResultHolder` dell&#39;oggetto `value`.
-   * Creare un oggetto `BLOB` che contiene dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
-   * Ottenere il tipo di contenuto dell&#39;oggetto `BLOB` richiamandone il metodo `getContentType`.
-   * Impostare il tipo di contenuto dell&#39;oggetto `javax.servlet.http.HttpServletResponse` richiamandone il metodo `setContentType` e passando il tipo di contenuto dell&#39;oggetto `BLOB`.
-   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream`.
-   * Creare una matrice di byte e compilarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
-   * Richiamare il metodo `write` dell’oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al metodo `write` .
+   * Crea un `FormResult` ottenendo il valore del `com.adobe.idp.services.holders.FormsResultHolder` dell’oggetto `value` membro dati.
+   * Crea un `BLOB` oggetto che contiene i dati del modulo richiamando il `FormsResult` dell’oggetto `getOutputContent` metodo .
+   * Ottieni il tipo di contenuto del `BLOB` richiamandone l&#39;oggetto `getContentType` metodo .
+   * Imposta la `javax.servlet.http.HttpServletResponse` tipo di contenuto dell’oggetto richiamandone il tipo `setContentType` e passare il tipo di contenuto `BLOB` oggetto.
+   * Crea un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser Web client richiamando il `javax.servlet.http.HttpServletResponse` dell’oggetto `getOutputStream` metodo .
+   * Creare un array di byte e compilarlo richiamando il `BLOB` dell’oggetto `getBinaryData` metodo . Questa attività assegna il contenuto del `FormsResult` all&#39;array di byte.
+   * Richiama il `javax.servlet.http.HttpServletResponse` dell’oggetto `write` per inviare il flusso di dati del modulo al browser Web client. Passa l&#39;array di byte al `write` metodo .
 
    >[!NOTE]
    >
-   >Il metodo `renderPDFForm` popola l&#39;oggetto `com.adobe.idp.services.holders.FormsResultHolder` passato come ultimo valore dell&#39;argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
+   >La `renderPDFForm` popola il `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web client.
 
 **Consulta anche**
 
 [Richiamo di AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-

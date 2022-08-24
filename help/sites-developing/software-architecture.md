@@ -1,8 +1,8 @@
 ---
 title: Architettura del software
-seo-title: Architettura del software
+seo-title: Software Architecture
 description: Best practice per l’architettura del software
-seo-description: Best practice per l’architettura del software
+seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-translation-type: tm+mt
-source-git-commit: 423e17dadf2e506eb68b37851dde5e68ed950866
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ Quando estendi i comportamenti OOTB, è importante tenere a mente gli aggiorname
 
 In questo modo il sito potrà mantenere un aspetto più coerente e semplificare la manutenzione del codice. Quando è necessario un nuovo modello, assicurati di estenderlo da un modello di base condiviso in modo che i requisiti globali come l’inclusione clientlib possano essere codificati in un’unica posizione. Quando è necessario un nuovo componente, cerca le opportunità per estenderlo da un componente esistente.
 
-### Progettazioni dei modelli di progettazione {#design-template-designs}
+### Progettazione di modelli {#design-template-designs}
 
 Definendo quali componenti possono essere inclusi in ogni parsys della pagina, è possibile controllare la coerenza dell’aspetto del sito. Limitando l’accesso alla progettazione sulle pagine, è possibile consentire agli &quot;autori avanzati&quot; di modificare i componenti consentiti per pagina senza l’intervento degli sviluppatori, garantendo al contempo che gli altri autori seguano gli standard aziendali.
 
@@ -36,11 +35,11 @@ Definendo quali componenti possono essere inclusi in ogni parsys della pagina, �
 
 SOLID è un acronimo che descrive cinque principi architettonici cui attenersi:
 
-* **** Principio di responsabilità singola: ogni modulo, classe, metodo, ecc. deve avere una sola responsabilità.
-* **** Principio aperto/chiuso: i moduli devono essere aperti per l’estensione e chiusi per la modifica.
-* **** Principio di sostituzione di Liskov - i tipi dovrebbero essere sostituibili dai loro sottotipi.
-* **** Principio di segmentazione dell’interfaccia - nessun client deve essere obbligato a dipendere da metodi che non utilizza.
-* **** Principio di inversione della dipendenza: i moduli di alto livello non devono dipendere da moduli di basso livello. Entrambi devono dipendere dalle astrazioni. Le astrazioni non devono dipendere dai dettagli. I dettagli devono dipendere dalle astrazioni.
+* **S** Principio di responsabilità unica: ogni modulo, classe, metodo, ecc. deve avere una sola responsabilità.
+* **O** Principio di apertura/chiusura : i moduli devono essere aperti per l’estensione e chiusi per la modifica.
+* **L** Principio della sostituzione di iskov - i tipi dovrebbero essere sostituibili dai loro sottotipi.
+* **I** Principio di segmentazione dell’interfaccia - nessun client deve essere obbligato a dipendere da metodi che non utilizza.
+* **D** Principio dell’inversione di tendenza : i moduli di alto livello non devono dipendere da moduli di basso livello. Entrambi devono dipendere dalle astrazioni. Le astrazioni non devono dipendere dai dettagli. I dettagli devono dipendere dalle astrazioni.
 
 Il rispetto di questi cinque principi dovrebbe tradursi in un sistema che garantisca una rigorosa separazione delle preoccupazioni.
 
@@ -64,4 +63,4 @@ Gli script di migrazione dei dati, mentre il codice di produzione, vengono in ge
 
 ### Segui le convenzioni Maven pubblicate nei file POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache ha pubblicato le convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). È meglio seguire queste convenzioni, in quanto renderà più semplice l&#39;introduzione rapida di nuove risorse.
+Apache ha pubblicato delle convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). È meglio seguire queste convenzioni, in quanto renderà più semplice l&#39;introduzione rapida di nuove risorse.

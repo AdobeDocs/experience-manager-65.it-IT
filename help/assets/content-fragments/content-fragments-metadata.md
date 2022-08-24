@@ -3,10 +3,11 @@ title: Metadati - Proprietà dei frammenti
 description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare il contenuto headless.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 5%
+ht-degree: 65%
 
 ---
 
@@ -14,26 +15,26 @@ ht-degree: 5%
 
 Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare il contenuto headless.
 
-## Modifica di proprietà/metadati {#editing-properties-meta-data}
+## Modifica di proprietà o metadati {#editing-properties-meta-data}
 
-Puoi visualizzare e modificare i metadati (proprietà) per i frammenti di contenuto:
+Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenuto:
 
-1. Nella console **Risorse** individua la posizione del frammento di contenuto.
+1. Nella console **Risorse** passa alla posizione del frammento di contenuto.
 2. Effettua una delle seguenti operazioni:
 
-   * Seleziona [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperta per la visualizzazione è possibile anche modificare.
+   * Seleziona [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperte e visualizzate le proprietà, puoi anche modificarle.
    * Apri il frammento di contenuto per la modifica, quindi seleziona **Metadati** dal pannello laterale.
 
-   ![Metadati](assets/cfm-metadata-01.png)
+   ![metadati](assets/cfm-metadata-01.png)
 
-3. La scheda **Base** fornisce le opzioni che è possibile visualizzare o modificare:
+3. La scheda **Base** fornisce alcune opzioni che è possibile visualizzare o modificare:
 
-   * Miniatura, per la quale è possibile **caricare immagine**
-   * **In** Modelli per frammenti di contenuto è indicato il modello utilizzato per creare il frammento corrente
+   * Miniatura, per la quale è possibile **Caricare un’immagine**
+   * **Modello per frammento di contenuto** indica il modello utilizzato per creare il frammento corrente
    * **Titolo**
    * **Descrizione**
    * **Tag**
-      * [](/help/sites-authoring/tags.md) I tag sono particolarmente efficaci nell’organizzazione dei frammenti, in quanto possono essere utilizzati per la classificazione dei contenuti e la tassonomia. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+      * I [tag](/help/sites-authoring/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Avvio di Natale&quot; per consentire la navigazione solo come sottoinsieme o copiarli per utilizzarli con un altro lancio futuro in una nuova cartella.
    * Creato (solo visualizzazione)
-   ![Metadati](assets/cfm-metadata-02.png)
+   ![metadati](assets/cfm-metadata-02.png)

@@ -1,8 +1,8 @@
 ---
 title: Considerazioni generali sulla sicurezza per AEM Forms su JEE
-seo-title: Considerazioni generali sulla sicurezza per AEM Forms su JEE
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Scopri come prepararti a rendere più rigido il tuo AEM Forms nell’ambiente JEE.
-seo-description: Scopri come prepararti a rendere più rigido il tuo AEM Forms nell’ambiente JEE.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Per informazioni sulla sicurezza dei server applicazioni supportati da AEM Forms
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Cerca le informazioni sulla sicurezza WebLogic all'indirizzo <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Cerca informazioni sulla sicurezza WebLogic in <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -144,12 +144,12 @@ Per informazioni sulla sicurezza dei database supportati da AEM Forms su JEE, co
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Vedi il capitolo Sicurezza nella documentazione <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g</a></p> </td>
+   <td><p>Vedi il capitolo Sicurezza in <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Documentazione dell'Oracle 12 octies</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-Questa tabella descrive le porte predefinite che devono essere aperte durante il processo di configurazione AEM Forms on JEE. Se ti connetti su https, regola di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, consulta il documento *Installazione e distribuzione di AEM Forms su JEE* per il server delle applicazioni.
+Questa tabella descrive le porte predefinite che devono essere aperte durante il processo di configurazione AEM Forms on JEE. Se ti connetti su https, regola di conseguenza le informazioni sulla porta e gli indirizzi IP. Per ulteriori informazioni sulla configurazione delle porte, consulta la sezione *Installazione e distribuzione di AEM Forms su JEE* documento per il server applicazioni.
 
 <table>
  <thead>
@@ -216,9 +216,9 @@ Application Server JBoss utilizza 8080 come porta HTTP predefinita. JBoss ha anc
 
    Installazioni cluster: [Radice JBoss]/domain/configuration/domain.xml
 
-1. Modifica il valore dell&#39;attributo **port** nel tag **&lt;socket-binding>** in un numero di porta personalizzato. Ad esempio, la porta 8090 viene utilizzata come segue:
+1. Modificare il valore di **porta** nella **&lt;socket-binding>** a un numero di porta personalizzato. Ad esempio, la porta 8090 viene utilizzata come segue:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Salva e chiudi il file 
 1. Riavvia il server dell&#39;applicazione JBoss.
@@ -239,7 +239,7 @@ AEM Forms su JEE utilizza il database AEM Forms su JEE per memorizzare informazi
 
 Il server applicazioni utilizzato per eseguire AEM Forms su JEE richiede una propria configurazione per l&#39;accesso al database tramite un&#39;origine dati configurata sul server applicazioni. Assicurati che il server applicazioni non esponga la password del database in testo libero nel file di configurazione dell&#39;origine dati.
 
-Il file lc_[database].xml non deve contenere password in formato testo libero. Consultare il fornitore dell&#39;application server su come crittografare queste password per l&#39;application server.
+Lc_[database]Il file .xml non deve contenere password in formato testo libero. Consultare il fornitore dell&#39;application server su come crittografare queste password per l&#39;application server.
 
 >[!NOTE]
 >

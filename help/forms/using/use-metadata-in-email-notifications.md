@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Utilizzare i metadati in una notifica e-mail {#use-metadata-in-an-email-notification}
 
-È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Una tipica [notifica e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) contiene il collegamento dell&#39;attività assegnata e le informazioni relative all&#39;attività.
+È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Tipico [notifica e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) contiene il collegamento dell&#39;attività assegnata e le informazioni relative all&#39;attività.
 
 Puoi utilizzare i metadati in un modello e-mail per popolare dinamicamente le informazioni in una notifica e-mail. Ad esempio, il valore del titolo, della descrizione, della data di scadenza, della priorità, del flusso di lavoro e dell’ultima data nella seguente notifica e-mail viene selezionato dinamicamente in fase di esecuzione (quando viene generata una notifica e-mail).
 
@@ -155,9 +155,9 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
 ### Utilizzare ECMAScript per aggiungere metadati personalizzati  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScripta un linguaggio di script. Viene utilizzato per applicazioni di script lato client e server. Esegui i seguenti passaggi per utilizzare ECMAScript per aggiungere metadati personalizzati per un modello e-mail:
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) è un linguaggio di script. Viene utilizzato per applicazioni di script lato client e server. Esegui i seguenti passaggi per utilizzare ECMAScript per aggiungere metadati personalizzati per un modello e-mail:
 
-1. Accedi a CRX DE con un account amministrativo. L&#39;URL è https://&#39;[server]:[port]&#39;/crx/de/index.jsp
+1. Accedi a CRX DE con un account amministrativo. L’URL è https://&#39;[server]:[porta]/crx/de/index.jsp
 
 1. Passa a /apps/fd/dashboard/scripts/metadataScripts. Crea un file con estensione .ecma. Ad esempio, usermetadata.ecma
 
@@ -185,8 +185,8 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
    Se non si specifica il titolo, nel campo Metadati personalizzati viene visualizzato il percorso completo del file ECMAScript. Per specificare un titolo significativo per lo script, effettua le seguenti operazioni:
 
-   1. Espandi il nodo dello script, fai clic con il pulsante destro del mouse sul nodo **[!UICONTROL jcr:content]** e fai clic su **[!UICONTROL Mixins]**.
-   1. Digita mix:title nella finestra di dialogo Modifica mixini e fai clic su **+**.
+   1. Espandi il nodo dello script, fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL jcr:content]** e fai clic su **[!UICONTROL Mixins]**.
+   1. Digitare mix:title nella finestra di dialogo Modifica mixins e fare clic su **+**.
    1. Aggiungi una proprietà con i seguenti valori.
 
       | Nome | jcr:title |
@@ -198,7 +198,7 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
 Puoi utilizzare l’interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Puoi creare un bundle OSGi che utilizza l&#39;interfaccia Java WorkitemUserMetadataService e distribuirlo al server AEM Forms. Rende i metadati disponibili per la selezione nel passaggio Assegna attività .
 
-Per creare un bundle OSGi con l&#39;interfaccia Java, aggiungi i file [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) jar e [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) come dipendenze esterne al progetto di bundle OSGi. Puoi utilizzare qualsiasi Java IDE per creare un bundle OSGi. La procedura seguente fornisce i passaggi per utilizzare Eclipse per creare un bundle OSGi:
+Per creare un bundle OSGi con l&#39;interfaccia Java, aggiungi [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) barattolo e [vaso di granito](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) file come dipendenze esterne al progetto bundle OSGi. Puoi utilizzare qualsiasi Java IDE per creare un bundle OSGi. La procedura seguente fornisce i passaggi per utilizzare Eclipse per creare un bundle OSGi:
 
 1. Apri Eclipse IDE. Passa a File > Nuovo progetto.
 

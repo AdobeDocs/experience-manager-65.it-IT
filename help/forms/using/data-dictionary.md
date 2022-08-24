@@ -1,22 +1,21 @@
 ---
 title: Dizionario dati
-seo-title: Dizionario dati
+seo-title: Data Dictionary
 description: Il dizionario dati in Gestione corrispondenza consente di integrare i dati back-end alle lettere come input da utilizzare nella corrispondenza del cliente.
-seo-description: Il dizionario dati in Gestione corrispondenza consente di integrare i dati back-end alle lettere come input da utilizzare nella corrispondenza del cliente.
+seo-description: Data dictionary in Correspondence Management lets you integrate back-end data to letters as inputs for use in customer correspondence.
 uuid: 178a285e-b4a4-4a36-a2aa-b43ecb0871ed
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: aaed75e6-8849-46a8-b986-896ad729adda
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '3861'
+source-wordcount: '3838'
 ht-degree: 1%
 
 ---
-
 
 # Dizionario dati{#data-dictionary}
 
@@ -34,14 +33,14 @@ In genere, gli utenti aziendali non richiedono la conoscenza delle rappresentazi
 
 ### Flusso di lavoro del dizionario dati {#data-dictionary-workflow}
 
-1. Un autore [crea il dizionario dati](#createdatadictionary) caricando uno schema o da zero.
+1. Autore [crea il dizionario dati](#createdatadictionary) caricando uno schema o da zero.
 1. L’autore crea lettere e comunicazioni interattive in base al dizionario dati e associa gli elementi del dizionario dati in lettere e comunicazioni interattive, se necessario.
 1. Un autore può scaricare un file XML di dati di esempio, basato sullo schema di un dizionario dati. L’autore può modificare il file XML di dati di esempio, che può essere associato come dati di prova al dizionario dati. Lo stesso viene utilizzato durante l&#39;anteprima della lettera.
-1. Durante l&#39; [visualizzazione in anteprima di una lettera](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), l&#39;autore sceglie di visualizzare in anteprima la lettera con i dati (anteprima personalizzata). Viene aperta la lettera precompilata con i dati forniti dall’autore. Viene aperto nell’interfaccia per la creazione della corrispondenza. L&#39;agente che visualizza in anteprima questa lettera può modificare il contenuto, i dati e gli allegati in questa lettera e può inviare la lettera finale. Per ulteriori informazioni sulla creazione di lettere, vedere [Creare corrispondenza](../../forms/using/create-letter.md).
+1. Quando [anteprima di una lettera](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), l’autore sceglie di visualizzare in anteprima la lettera con i dati (anteprima personalizzata). Viene aperta la lettera precompilata con i dati forniti dall’autore. Viene aperto nell’interfaccia per la creazione della corrispondenza. L&#39;agente che visualizza in anteprima questa lettera può modificare il contenuto, i dati e gli allegati in questa lettera e può inviare la lettera finale. Per ulteriori informazioni sulla creazione delle lettere, vedere [Crea corrispondenza](../../forms/using/create-letter.md).
 
 ## Prerequisito {#prerequisite}
 
-Installa il [Pacchetto di compatibilità](compatibility-package.md) per visualizzare l&#39;opzione **Dizionari di dati** nella pagina **Forms**.
+Installa il [Pacchetto di compatibilità](compatibility-package.md) per visualizzare **Dizionari dati** l&#39;opzione **Forms** pagina.
 
 ## Creare un dizionario dati {#createdatadictionary}
 
@@ -55,24 +54,24 @@ Puoi utilizzare l’editor del dizionario dati per creare un dizionario dati opp
 1. Tocca **Crea dizionario dati**.
 1. Nella schermata Proprietà , aggiungi quanto segue:
 
-   * **Titolo:**  (facoltativo) immetti il titolo del dizionario dati. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Alle lettere e ad altri frammenti di documento viene fatto riferimento il relativo titolo (se disponibile), ad esempio nelle miniature e nelle proprietà delle risorse. I dizionari di dati sono indicati con i loro nomi e non con i loro titoli.
-   * **Nome:** il nome univoco del dizionario dati. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo e i caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con trattini. Anche se il valore nel campo Titolo viene copiato automaticamente nel campo Nome, è possibile modificarlo.
+   * **Titolo:** (Facoltativo) Immetti il titolo del dizionario dati. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi. Alle lettere e ad altri frammenti di documento viene fatto riferimento il relativo titolo (se disponibile), ad esempio nelle miniature e nelle proprietà delle risorse. I dizionari di dati sono indicati con i loro nomi e non con i loro titoli.
+   * **Nome:** Nome univoco del dizionario dati. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo e i caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con trattini. Anche se il valore nel campo Titolo viene copiato automaticamente nel campo Nome, è possibile modificarlo.
 
    * **Descrizione**: (Facoltativo) Descrizione del dizionario dati.
-   * **Tag:**  (facoltativo) per creare un tag personalizzato, immettete il valore nel campo di testo e premete Invio. Il tag viene visualizzato sotto il campo di testo dei tag. Quando salvi questo testo, vengono creati anche i nuovi tag aggiunti.
-   * **Proprietà** estese: (Facoltativo) Tocca  **Aggiungi** campo per specificare gli attributi dei metadati per il dizionario dati. Nella colonna Nome proprietà, immetti un nome di proprietà univoco. Nella colonna Valore, immettere un valore da associare alla proprietà.
+   * **Tag:** (Facoltativo) Per creare un tag personalizzato, immetti il valore nel campo di testo e premi Invio. Il tag viene visualizzato sotto il campo di testo dei tag. Quando salvi questo testo, vengono creati anche i nuovi tag aggiunti.
+   * **Proprietà estese**: (Facoltativo) Tocca **Aggiungi campo** per specificare gli attributi dei metadati per il dizionario dati. Nella colonna Nome proprietà, immetti un nome di proprietà univoco. Nella colonna Valore, immettere un valore da associare alla proprietà.
 
    ![Proprietà del dizionario dati specificate in tedesco](do-not-localize/1_ddproperties.png)
 
-1. (Facoltativo) Per caricare una definizione dello schema XSD per il dizionario dati, nel riquadro Struttura dizionario dati, tocca **Carica schema XML**. Sfoglia il file XSD, selezionalo e tocca **Apri**. Viene creato un dizionario dati in base allo schema XML caricato. È necessario modificare i nomi visualizzati e le descrizioni degli elementi nel dizionario dati. A questo scopo, seleziona i nomi degli elementi toccandoli e modificandone le descrizioni, i nomi visualizzati e altri dettagli nei campi del riquadro a destra.
+1. (Facoltativo) Per caricare una definizione dello schema XSD per il dizionario dati, tocca nel riquadro Struttura dizionario dati . **Carica schema XML**. Sfoglia il file XSD, selezionalo e tocca **Apri**. Viene creato un dizionario dati in base allo schema XML caricato. È necessario modificare i nomi visualizzati e le descrizioni degli elementi nel dizionario dati. A questo scopo, seleziona i nomi degli elementi toccandoli e modificandone le descrizioni, i nomi visualizzati e altri dettagli nei campi del riquadro a destra.
 
-   Per ulteriori informazioni sugli elementi DD calcolati, consulta [Elementi del dizionario dati calcolato](#computedddelements).
+   Per ulteriori informazioni sugli elementi DD calcolati, vedi [Elementi del dizionario dati calcolati](#computedddelements).
 
    >[!NOTE]
    >
    >Puoi saltare il caricamento del file di schema e creare il dizionario dati da zero utilizzando l’interfaccia utente. A questo scopo, salta questo passaggio e continua con i passaggi successivi.
 
-1. Tocca **Avanti**.
+1. Tocca **Successivo**.
 1. Nella schermata Aggiungi proprietà , aggiungi gli elementi al dizionario dati. Puoi anche aggiungere/eliminare elementi e modificarne i dettagli se hai caricato uno schema per ottenere una struttura di base del dizionario dati.
 
    Puoi toccare i tre punti sul lato destro di un elemento e aggiungere un elemento alla struttura del dizionario dati.
@@ -93,7 +92,7 @@ Puoi utilizzare l’editor del dizionario dati per creare un dizionario dati opp
    * Un DDE padre (composito) non può avere due figli con lo stesso nome.
    * Gli enumerazioni contengono solo tipi di stringa primitivi.
 
-   Per ulteriori informazioni sugli elementi Composite, Collection e Primitive e sull&#39;utilizzo degli elementi del dizionario dati, vedere [Mappatura degli elementi del dizionario dati su uno schema XML](#mappingddetoschema).
+   Per ulteriori informazioni sugli elementi Composite, Collection e Primitive e sull’utilizzo degli elementi del dizionario dati, consulta [Mappatura degli elementi del dizionario dati su uno schema XML](#mappingddetoschema).
 
    Per informazioni sulle convalide nel dizionario dati, consulta [Convalida dell’editor del dizionario dati](#ddvalidations).
 
@@ -103,7 +102,7 @@ Puoi utilizzare l’editor del dizionario dati per creare un dizionario dati opp
 
    ![3_adddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Facoltativo) Per rimuovere un elemento, tocca i tre punti a destra di un elemento e seleziona **Elimina**.
+1. (Facoltativo) Per rimuovere un elemento, tocca i tre punti sul lato destro e seleziona **Elimina**.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -114,7 +113,7 @@ Puoi utilizzare l’editor del dizionario dati per creare un dizionario dati opp
 1. (Facoltativo) Selezionare un elemento nel riquadro Struttura dizionario dati e nel pannello Elenco campi e variabili. Modifica o aggiungi eventuali attributi richiesti associati all’elemento.
 1. Tocca **Salva**.
 
-### Crea copie di uno o più dizionari di dati {#create-copies-of-one-or-more-data-dictionary}
+### Creare copie di uno o più dizionari di dati {#create-copies-of-one-or-more-data-dictionary}
 
 Per creare rapidamente uno o più dizionari di dati con proprietà ed elementi simili ai dizionari di dati esistenti, puoi copiarli e incollarli.
 
@@ -154,8 +153,8 @@ Durante la modifica o la visualizzazione di un dizionario dati, puoi vedere qual
 ## Utilizzo dei dati di test {#working-with-test-data}
 
 1. Nella pagina Dizionari dati, tocca **Seleziona**.
-1. Toccare un dizionario dati per il quale si desidera scaricare i dati di prova, quindi toccare **Scarica dati XML di esempio**.
-1. Toccare **OK** nel messaggio di avviso. Viene scaricato un file XML.
+1. Tocca un dizionario dati per il quale vuoi scaricare i dati di prova, quindi tocca **Scaricare dati XML di esempio**.
+1. Tocca **OK** nel messaggio di avviso. Viene scaricato un file XML.
 1. Apri il file XML con Blocco note o un altro editor XML. Il file XML ha la stessa struttura del dizionario dati e delle stringhe segnaposto negli elementi. Sostituire le stringhe segnaposto con i dati con cui si desidera sottoporre a test una lettera.
 
    ```xml
@@ -201,8 +200,7 @@ Durante la modifica o la visualizzazione di un dizionario dati, puoi vedere qual
 
 1. Dopo aver immesso i dati, è possibile utilizzare questo file XML quando si visualizza in anteprima una lettera con i dati di prova.
 
-   Puoi aggiungere questi dati di test con DD (seleziona DD, tocca Carica dati di test e carica questo file xml)
-Quindi, quando si visualizza in anteprima la lettera normalmente (non personalizzata), questi dati XML vengono utilizzati in lettera. Puoi anche toccare Personalizzato e caricare questo XML.
+   Puoi aggiungere questi dati di test con DD (Seleziona DD e tocca Carica dati di test e carica questo file xml) Quindi dopo questo quando si visualizza l&#39;anteprima della lettera normalmente (non personalizzata), questi dati XML vengono utilizzati in lettera. Puoi anche toccare Personalizzato e caricare questo XML.
 
 ## Esempi {#samples}
 
@@ -279,7 +277,7 @@ Nella tabella seguente sono descritti gli attributi comuni associati a un DDE:
    <td>Obbligatorio.<br /> Nome del DDE. Deve essere unico.</td>
   </tr>
   <tr>
-   <td>Nome di riferimento<br /></td>
+   <td>Riferimento<br /> Nome</td>
    <td>Stringa</td>
    <td>Obbligatorio. Nome di riferimento univoco per il DDE che consente i riferimenti al DDE indipendenti dalle modifiche alla gerarchia o alla struttura del dizionario dati. I moduli di testo mappati con questo nome</td>
   </tr>
@@ -356,7 +354,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, descrit
   <tr>
    <td>XSD <br /> </td>
    <td><p>Dizionario dati <br /> </p> </td>
-   <td>DDI (Tipo di dati valore istanza)<br /> </p> </td>
+   <td>DDI (tipo di dati del valore dell'istanza)<br /> </p> </td>
   </tr>
   <tr>
    <td><p>xs:elemento di tipo - Tipo composito<br /> </p> </td>
@@ -365,7 +363,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, descrit
   </tr>
   <tr>
    <td><p>xs:elemento in cui maxEvents &gt; 1<br /> </p> </td>
-   <td>DDE di tipo - COLLECTION-<br /> Viene creato un nodo DDE accanto a COLLECTION DDE che acquisisce informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici/compositi. Ogni volta che si dispone di una RACCOLTA del tipo composito, la struttura del dizionario dati acquisisce i campi costituenti negli elementi secondari del DDE creato per l’acquisizione delle informazioni sul tipo.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE per info tipo)<br />  - DDE(STRING) field1<br />  - DDE(STRING) field2<br /> <br /> </p> </td>
+   <td>DDE di tipo - COLLECTION-<br /> Viene creato un nodo DDE accanto al DDE COLLECTION che acquisisce informazioni dal nodo COLLECTION padre. Lo stesso viene creato per entrambe le raccolte di tipi di dati semplici/compositi. Ogni volta che si dispone di una RACCOLTA del tipo composito, la struttura del dizionario dati acquisisce i campi costituenti negli elementi secondari del DDE creato per l’acquisizione delle informazioni sul tipo.<br /> - DDE (RACCOLTA)<br /> - DDE(COMPOSITE per informazioni sul tipo)<br /> - Campo DDE(STRING)1<br /> - Campo DDE(STRING)2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -380,7 +378,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, descrit
   </tr>
   <tr>
    <td>xs:attribute /xs:element di tipo - xs: booleano <br /> </td>
-   <td>DDE di tipo - Booleano <br /> </td>
+   <td>DDE di tipo - booleano <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
@@ -405,7 +403,7 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, descrit
   </tr>
   <tr>
    <td>Elemento di tipo enum e baseType - xs:string</td>
-   <td>DDE di tipo<br /> - Sottotipo STRING<br /> - ENUM<br /> valueSet - i valori consentiti per ENUM<br /> </td>
+   <td>DDE di<br /> type - STRING<br /> sottotipo - ENUM<br /> valueSet - i valori consentiti per ENUM<br /> </td>
    <td>java.lang.String</td>
   </tr>
  </tbody>
@@ -415,11 +413,11 @@ L&#39;esportazione di un file XSD richiede una mappatura dati specifica, descrit
 
 Dopo aver creato un dizionario dati, puoi scaricarlo come file di dati di esempio XML per inserire voci di testo.
 
-1. Nella pagina Dizionari dati, tocca **Seleziona**, quindi tocca un dizionario dati per selezionarlo.
-1. Selezionare **Scarica dati XML di esempio**.
-1. Toccare **OK** nel messaggio di avviso.
+1. Nella pagina Dizionari dati , tocca **Seleziona** quindi tocca un dizionario dati per selezionarlo.
+1. Seleziona **Scaricare dati XML di esempio**.
+1. Tocca **OK** nel messaggio di avviso.
 
-   Gestione corrispondenza crea un file XML basato sulla struttura del dizionario dati selezionato e lo scarica sul computer con il nome &lt;data-dizionario-name>-SampleData. Ora è possibile modificare questo file in un editor XML o di testo per inserire dati durante la [creazione di una lettera](../../forms/using/create-letter.md).
+   Gestione corrispondenza crea un file XML basato sulla struttura del dizionario dati selezionato e lo scarica sul computer con il nome &lt;data-dictionary-name>-SampleData. Ora è possibile modificare questo file in un editor XML o di testo per inserire dati mentre [creazione di una lettera](../../forms/using/create-letter.md).
 
 ## Internazionalizzazione dei metadati {#internationalization-of-meta-data}
 
@@ -427,9 +425,9 @@ Se desideri inviare la stessa lettera in lingue diverse ai clienti, puoi localiz
 
 ### Localizzare il dizionario dati {#localize-data-dictionary}
 
-1. Nella pagina Dizionari dati, tocca **Seleziona**, quindi tocca un dizionario dati per selezionarlo.
-1. Tocca **Scarica dati di localizzazione**.
-1. Toccare **OK** nell’avviso. Gestione corrispondenza scarica un file zip sul computer con il nome DataDictionary-&lt;DDname>.zip.
+1. Nella pagina Dizionari dati, tocca **Seleziona** quindi tocca un dizionario dati per selezionarlo.
+1. Tocca **Download dei dati di localizzazione**.
+1. Tocca **OK** nell&#39;avviso. Gestione corrispondenza scarica un file zip sul computer con il nome DataDictionary-&lt;ddname>.zip.
 1. Il file ZIP contiene un file .properties . Questo file definisce il dizionario dati scaricato. Il contenuto del file di proprietà è simile al seguente:
 
    ```ini
@@ -458,7 +456,7 @@ Se desideri inviare la stessa lettera in lingue diverse ai clienti, puoi localiz
 
 1. Archivia il file .properties (o i file per più impostazioni internazionali) in un unico file .zip.
 
-1. Nella pagina Dizionari dati, seleziona **Altro** > **Carica dati di localizzazione** e seleziona il file zip con file di proprietà localizzate.
+1. Nella pagina Dizionari dati, seleziona **Altro** > **Caricare dati di localizzazione** e selezionare il file zip con file di proprietà localizzati.
 1. Per visualizzare le modifiche alla localizzazione, modifica le impostazioni internazionali del browser.
 
 ## Convalida del dizionario dati {#ddvalidations}
@@ -503,7 +501,7 @@ Convalida applicate a livello di elemento del dizionario dati.
 * Il binding XML di un DDE di raccolta non deve essere associato a un attributo.
 * La sintassi di binding XML deve essere valida, ad esempio viene visualizzata una sola @, la @ è consentita solo se seguita da un nome di attributo.
 
-## Mappatura degli elementi del dizionario dati sullo schema XML {#mappingddetoschema}
+## Mappatura degli elementi del dizionario dati su uno schema XML {#mappingddetoschema}
 
 È possibile creare un dizionario dati da uno schema XML o generarlo utilizzando l&#39;interfaccia utente del dizionario dati. Tutti gli elementi del dizionario dati (DDE, Data Dictionary Elements) all’interno di un dizionario dati dispongono di un campo di binding XML per memorizzare il binding del DDE a un elemento nello schema XML. Il binding in ogni DDE è relativo al DDE padre.
 
@@ -657,4 +655,3 @@ Il Token.xsd associato a questo esempio è il seguente:
 | TokenText | empty(null) |
 | TokenIntestazione | TokenText/TextHeader |
 | TokenBody | TokenText/TextBody |
-

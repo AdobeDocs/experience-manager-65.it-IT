@@ -1,19 +1,18 @@
 ---
 title: AEM Mobile - Preparazione all’RGPD
-seo-title: AEM Mobile - Preparazione all’RGPD
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile - Preparazione all’RGPD"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
-
 
 # AEM Mobile - Preparazione all’RGPD {#aem-mobile-gdpr-readiness}
 
@@ -21,7 +20,7 @@ ht-degree: 1%
 >
 >Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come RGPD, CCPA, ecc.
 
-## Supporto per RGPD AEM Mobile {#aem-mobile-gdpr-support}
+## Supporto per il RGPD in AEM Mobile {#aem-mobile-gdpr-support}
 
 AEM Mobile è pronta ad assistere i clienti negli obblighi di conformità ai requisiti RGPD. Nessun dato personale viene memorizzato in AEM Mobile. Se hai il provisioning, puoi accedere ad Adobe Experience Mobile con il tuo Adobe ID.
 
@@ -29,7 +28,7 @@ AEM Mobile è pronta ad assistere i clienti negli obblighi di conformità ai req
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione all’RGPD di Adobe. Consulta [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono fornite informazioni specifiche sul supporto per le funzioni correlate al RGPD nel prodotto Digital Publishing Suite, tra cui come lavorare con Adobe per avviare richieste RGPD.
+Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione all’RGPD di Adobe. Vedi [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono fornite informazioni specifiche sul supporto per le funzioni correlate al RGPD nel prodotto Digital Publishing Suite, tra cui come lavorare con Adobe per avviare richieste RGPD.
 
 Per evitare di confondere AEM Mobile con il vecchio prodotto Digital Publishing Suite, accedi al prodotto Digital Publishing Suite qui:
 
@@ -48,12 +47,12 @@ Obbligatorio:
 Fornire almeno 1 delle seguenti informazioni:
 
 * Il cliente dell’utente finale ha fornito l’ID OAuth (l’ID utilizzato nel sistema di adesione diretta del cliente): *dpsc-directEntitlementId*
-* Per gli utenti dell&#39;app Windows, l&#39;ID App Store dell&#39;utente finale: *dpsc-windowsAppStoreId*
-* L&#39;indirizzo e-mail dell&#39;utente finale utilizzato per interagire con l&#39;app DPS: *e-mail*
+* Per gli utenti dell&#39;app Windows, l&#39;App Store ID dell&#39;utente finale: *dpsc-windowsAppStoreId*
+* L&#39;indirizzo e-mail dell&#39;utente finale utilizzato per interagire con l&#39;app DPS: *email*
 
 ### Domande frequenti {#frequently-asked-questions-faq}
 
-**Ad Adobe, se avvii una richiesta di DELETE, elimina gli acquisti da app store?**
+**L’Adobe eliminerà gli acquisti App Store all’avvio di una richiesta DELETE?**
 
 Adobe eliminerà le informazioni di cui dispone sugli acquisti da app store (abbonamenti, ecc.) ma gli acquisti saranno ancora registrati negli App Store. Se l’app (utente finale) è connessa all’App Store, tali ricevute verranno prelevate di nuovo e inviate all’Adobe e, successivamente, saranno considerate nuovi acquisti e verranno ripristinate dall’App per avere nuovamente accesso.
 
@@ -71,7 +70,7 @@ Adobe dispone di poche informazioni che vengono associate direttamente a un uten
 
 **Quali dati personali vengono tracciati con Analytics?**
 
-Nessuna. I dati vengono tracciati, ma sono a livello di app (non personali). Questo include eventi come avvii, arresti anomali, chiusura, attività, acquisti o sovrapposizioni di folio. Le posizioni geografiche, i nomi, gli ID dispositivo o gli indirizzi IP non vengono tracciati.
+Nessuno. I dati vengono tracciati, ma sono a livello di app (non personali). Questo include eventi come avvii, arresti anomali, chiusura, attività, acquisti o sovrapposizioni di folio. Le posizioni geografiche, i nomi, gli ID dispositivo o gli indirizzi IP non vengono tracciati.
 
 **L&#39;utente finale ha fornito le proprie informazioni ma non è stato trovato nulla. Perché no?**
 
@@ -86,10 +85,10 @@ Ecco un esempio degli input e degli output risultanti di una richiesta RGPD di D
 #### Ingressi: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Uscite {#outputs}
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-

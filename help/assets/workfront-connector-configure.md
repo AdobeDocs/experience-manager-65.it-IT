@@ -4,7 +4,7 @@ description: Configurare [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 1%
@@ -130,14 +130,14 @@ Questo passaggio del flusso di lavoro consente a un utente di mappare una propri
    * Una proprietà AEM. Questo riferimento deve essere relativo al payload del flusso di lavoro.
    * Un valore denominato. Queste devono essere circondate da parentesi.
    * Una concatenazione dei 3 elementi di cui sopra. Specifica tramite `{+}`.
-   * Una modifica dei 3 elementi di cui sopra circondando il valore con `{replace(<value>,”old-char”,”new-char”)}`.
+   * Una modifica dei 3 elementi di cui sopra circondando il valore con `{replace(<value>,"old-char","new-char")}`.
 
 * Alcuni esempi sono:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configurazione per mappare la proprietà](/help/assets/assets/wf-map-property-config.png)
 

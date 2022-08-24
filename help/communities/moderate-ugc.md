@@ -12,7 +12,7 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 812b9f3af3ad04343e648a8d07d53f8442978b82
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 2%
@@ -207,7 +207,7 @@ in **[!UICONTROL Impostazioni]** > **[!UICONTROL Moderato]**.
 
 ### Rilevamento dello spam {#spam-detection}
 
-Il rilevamento dello spam è una funzionalità di moderazione automatica che filtra i contenuti indesiderati generati dagli utenti inviati contrassegnandoli come spam. Una volta attivato, identifica se il contenuto generato dall’utente è spam o meno in base a una raccolta preconfigurata di parole spam. Le parole spam predefinite sono fornite in
+Il rilevamento dello spam è una funzionalità di moderazione automatica che filtra i contenuti indesiderati generati dagli utenti inviati contrassegnandoli come spam. Una volta attivato, identifica se un contenuto generato dall’utente è spam o meno basato su una raccolta preconfigurata di parole spam. Le parole spam predefinite sono fornite in
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 

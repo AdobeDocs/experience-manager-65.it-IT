@@ -3,7 +3,7 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: '"Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 3c3efe108b020d9c64e456d409f114c8969f2723
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3652'
 ht-degree: 7%
@@ -260,7 +260,7 @@ For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility
 <!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
 * Il menu a discesa Sistema di stili potrebbe essere stato posizionato nella parte superiore della pagina anziché nel contesto del componente, per i componenti che utilizzano `cq:editConfig` &quot;post-modifica: REFRESH_PAGE&quot;. Questo problema è stato risolto. (NPR-38384)
 
-<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384) -->
+<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
 * Il componente testo non è allineato quando viene aggiunto ai contenitori di layout nidificati. (NPR-38193)
 * Una scheda stile vuota era visualizzata quando non era presente alcuna configurazione del sistema di stili per un componente; la scheda ora è nascosta quando non è presente alcuna configurazione. (NPR-38218)
 <!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
@@ -453,7 +453,7 @@ Per recuperare la copia runtime, Adobe consiglia di sincronizzare la copia in fa
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata in Browser proprietà. Se si seleziona per configurare altri campi del modulo adattivo nello stesso editor, il problema viene risolto.
 
 * Durante l&#39;installazione di [!DNL Experience Manager] 6.5.x.x:
-   * &quot;Quando l’integrazione Adobe Target è configurata in [!DNL Experience Manager] se si utilizza l’API di Target Standard (autenticazione IMS) e poi si esportano frammenti di esperienza in Target, vengono creati tipi di offerta errati. Invece del tipo “Frammento esperienza”/source “Adobe Experience Manager”, in Target vengono create diverse offerte con il tipo “HTML”/source “Adobe Target Classic”.
+   * &quot;Quando l’integrazione Adobe Target è configurata in [!DNL Experience Manager] se si utilizza l’API di Target Standard (autenticazione IMS) e poi si esportano frammenti di esperienza in Target, vengono creati tipi di offerta errati. Invece del tipo &quot;Frammento esperienza&quot;/sorgente &quot;Adobe Experience Manager&quot;, Target crea diverse offerte con il tipo &quot;HTML&quot;/sorgente &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * La convalida lato server del modulo adattivo non riesce quando vengono utilizzate funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.

@@ -12,7 +12,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '11766'
 ht-degree: 5%
@@ -415,7 +415,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 | Tipo video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Origine | 1920x1080 | 1 | 1 |
+| Sorgente | 1920x1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
 | Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
@@ -1146,7 +1146,7 @@ Per rendere più semplice la visualizzazione e la navigazione dei video in forma
 
 Se lo desideri, puoi creare e assegnare un marchio al tuo visualizzatore video personalizzato con capitoli invece di utilizzare un predefinito per visualizzatori video. Per istruzioni su come creare un visualizzatore HTML5 personalizzato con navigazione nei capitoli, nell’API SDK per visualizzatori di Adobe HTML5 fai riferimento all’intestazione &quot;Personalizzazione del comportamento utilizzando i modificatori&quot; sotto le classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la sezione [API SDK visualizzatore HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentazione.
 
-<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 È possibile creare un elenco di capitoli per il video nello stesso modo in cui si creano le didascalie. In altre parole, si crea un file WebVTT. Tieni presente, tuttavia, che questo file deve essere separato da qualsiasi file di didascalia WebVTT utilizzato anche; non è possibile combinare didascalie e capitoli in un unico file WebVTT.
 

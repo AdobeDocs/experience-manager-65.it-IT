@@ -1,13 +1,13 @@
 ---
 title: Aggiornamento dei certificati del servizio di estensione del Reader scaduti
-description: 'Reader documenti estesi non funzionanti, aggiornamento certificati '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
+description: Reader documenti estesi non funzionanti, aggiornamento certificati
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
 
 ---
-
 
 # Aggiornamento dei certificati del servizio di estensione del Reader scaduti {#Updating-expired-Reader-Extension-service-certificates}
 
@@ -108,7 +108,7 @@ Dopo aver creato l&#39;archivio chiavi, aggiungi le credenziali all&#39;utente d
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 
-Il seguente comando elenca i dettagli del file pfx. Prima di eseguire il comando, passare alla directory durettoriale contenente il file .pfx.
+Il seguente comando elenca i dettagli del file pfx. Prima di eseguire il comando, passare alla directory rettangolare contenente il file .pfx.
 
 `keytool -v -list -storetype pkcs12 -keystore <name of your .pfx file>`
 
@@ -126,7 +126,7 @@ Per applicare i diritti di utilizzo in un ambiente AEM Forms su OSGi, crea un se
 
 **Chi devo contattare se ho ulteriori domande?**
 
-È possibile contattare [Supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o aumentare un ticket di supporto.
+È possibile contattare [Supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) o aumentare un ticket di supporto.
 
 **Cosa succede se non aggiorno il certificato prima del 7 gennaio 2023?**
 

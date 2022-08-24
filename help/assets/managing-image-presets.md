@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 0d3bcdaa10d16c292aa0dd60254302d30fd700d6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3839'
 ht-degree: 8%
@@ -396,7 +396,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
     <ul>
      <li>Seleziona <strong>Nessuno</strong> per disattivare la nitidezza.</li>
      <li>Seleziona <strong>Nitidezza</strong> se si desidera applicare un filtro di nitidezza di base all'immagine dopo che è stata effettuata la modifica in scala. La nitidezza può contribuire a compensare la sfocatura che può verificarsi quando si visualizza un'immagine con dimensioni diverse. </li>
-     <li>Seleziona<strong> Maschera definizione dettagli</strong> per ottimizzare un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Photoshop.</li>
+     <li>Seleziona<strong> Maschera definizione dettagli</strong> per ottimizzare un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. Questo effetto utilizza le stesse opzioni del filtro "Maschera definizione dettagli" di Photoshop.</li>
     </ul> <p>In <strong>Maschera definizione dettagli</strong>, sono disponibili le seguenti opzioni:</p>
     <ul>
      <li><strong>Importo</strong> - Controlla la quantità di contrasto applicata ai pixel del bordo. Il valore predefinito del numero reale è 1,0. Per le immagini ad alta risoluzione, è possibile aumentarlo fino a 5,0. Considera il valore come una misura dell'intensità del filtro.</li>

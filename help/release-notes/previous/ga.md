@@ -1,10 +1,11 @@
 ---
 title: Note generali sulla versione di [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4696'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 53%
 | Versione | 6.5 |
 | Tipo | Versione principale |
 | Data di disponibilità generale | 8 aprile 2019 |
-| Aggiornamenti consigliati | Vedi [Aggiornamenti AEM recenti](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it). |
+| Aggiornamenti consigliati | Vedi [Aggiornamenti AEM recenti](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html). |
 
 ### Informazioni varie {#trivia}
 
@@ -436,7 +437,7 @@ Puoi integrare Livefyre con l’istanza di AEM 6.5. Vedi [come integrare Livefyr
 
 Adobe utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, per le specifiche, lo sviluppo e il testing. Il nostro ringraziamento va a tutti i clienti e partner che hanno contribuito a questo processo.
 
-Adobe dispone delle procedure e dei processi necessari a consentire la raccolta, la definizione delle priorità e il monitoraggio della risoluzione dei bug incentrati sul cliente e dello sviluppo delle richieste di miglioramento. La [Portale di supporto Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) è integrato con il sistema di monitoraggio Adobe e difetti. Le domande dei clienti vengono identificate e risolte dal team di assistenza clienti, ove possibile. Quando è necessario passarle al reparto R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate per stabilire le priorità e a scopo di reportistica. Nello sviluppo viene data la priorità al supporto a pagamento, ai problemi di garanzia e ai miglioramenti pagati dal cliente.
+Adobe dispone delle procedure e dei processi necessari a consentire la raccolta, la definizione delle priorità e il monitoraggio della risoluzione dei bug incentrati sul cliente e dello sviluppo delle richieste di miglioramento. La [Portale di supporto Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) è integrato con il sistema di monitoraggio Adobe e difetti. Le domande dei clienti vengono identificate e risolte dal team di assistenza clienti, ove possibile. Quando è necessario passarle al reparto R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate per stabilire le priorità e a scopo di reportistica. Nello sviluppo viene data la priorità al supporto a pagamento, ai problemi di garanzia e ai miglioramenti pagati dal cliente.
 
 Grazie a questo processo di prioritizzazione, in AEM 6.5 sono stati risolti oltre 750 cambiamenti incentrati sul cliente.
 

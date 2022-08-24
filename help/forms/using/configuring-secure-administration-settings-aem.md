@@ -1,8 +1,8 @@
 ---
 title: Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE
-seo-title: Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Scopri come amministrare gli account utente e i servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
-seo-description: Scopri come amministrare gli account utente e i servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM Forms sui servizi JEE richiede sempre almeno l’accesso SOAP. Questi serviz
 
 Completa questa procedura utilizzando la pagina web Applicazioni e servizi in Admin Console:
 
-1. Accedi alla console di amministrazione digitando il seguente URL in un browser web:
+1. Accedi a Admin Console digitando il seguente URL in un browser web:
 
    ```java
             https://[host name]:'port'/adminui
@@ -44,11 +44,11 @@ Completa questa procedura utilizzando la pagina web Applicazioni e servizi in Ad
 1. Fai clic su **Servizi > Applicazioni e servizi > Preferenze**.
 1. Imposta Preferenze per visualizzare fino a 200 servizi e endpoint sulla stessa pagina.
 1. Fai clic su **Servizi** > **Applicazioni e servizi** > **Gestione endpoint**.
-1. Seleziona **EJB** dall&#39;elenco **Provider**, quindi fai clic su **Filtro**.
-1. Per disabilitare tutti gli endpoint EJB, seleziona la casella di controllo accanto a ciascuno nell&#39;elenco e fai clic su **Disattiva**.
-1. Fai clic su **Avanti** e ripeti il passaggio precedente per tutti gli endpoint EJB. Assicurati che EJB sia elencato nella colonna Provider prima di disabilitare gli endpoint .
-1. Selezionare **SOAP** dall&#39;elenco **Provider**, quindi fare clic su **Filtro**.
-1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno nell&#39;elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
+1. Seleziona **EJB** dal **Provider** elenco e quindi fai clic su **Filtro**.
+1. Per disabilitare tutti gli endpoint EJB, seleziona la casella di controllo accanto a ciascuno nell’elenco e fai clic su **Disattiva**.
+1. Fai clic su **Successivo** e ripeti il passaggio precedente per tutti gli endpoint EJB. Assicurati che EJB sia elencato nella colonna Provider prima di disabilitare gli endpoint .
+1. Seleziona **SOAP** dal **Provider** elenco e quindi fai clic su **Filtro**.
+1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno nell’elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -64,7 +64,7 @@ Completa questa procedura utilizzando la pagina web Applicazioni e servizi in Ad
    * Area di lavoroSingleSignOn
    * ApplicationManager
 
-1. Fare clic su **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP che non si trovano nell&#39;elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
+1. Fai clic su **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP non presenti nell’elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
 
 ## Disabilitazione dell’accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
 
@@ -77,8 +77,8 @@ Alcuni servizi server di Forms consentono chiamate non autenticate (anonime) per
    ```
 
 1. Fai clic su **Servizi > Applicazioni e servizi > Gestione dei servizi**.
-1. Fare clic sul nome del servizio che si desidera disattivare (ad esempio, AuthenticationManagerService).
-1. Fai clic sulla scheda **Sicurezza**, deseleziona **Accesso anonimo consentito** e fai clic su **Salva**.
+1. Fare clic sul nome del servizio che si desidera disabilitare (ad esempio, AuthenticationManagerService).
+1. Fai clic sul pulsante **Scheda Sicurezza**, deseleziona **Accesso anonimo consentito** e fai clic su **Salva**.
 1. Completa i passaggi 3 e 4 per i seguenti servizi:
 
    * AuthenticationManagerService
@@ -119,13 +119,13 @@ Gli utenti finali possono eseguire l’autenticazione in AEM Forms tramite Workb
             https://[host name]:'port'/adminui
    ```
 
-1. Fai clic su **Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione**.
+1. Fai clic su **Impostazioni > Gestione utente > Configurazione > Importa ed Esporta file di configurazione**.
 1. Fai clic su **Esporta** per produrre un file config.xml con le impostazioni AEM Forms esistenti.
 1. Apri il file XML in un editor e individua la voce seguente:
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Modifica il valore in un numero maggiore di 5 (in minuti) e salva il file.
 1. Nella console di amministrazione, passa alla pagina Importa ed esporta file di configurazione.
 1. Immettere il percorso del file config.xml modificato oppure fare clic su Sfoglia per individuarlo.
-1. Fai clic su **Importa** per caricare il file config.xml modificato, quindi fai clic su **OK**.
+1. Fai clic su **Importa** per caricare il file config.xml modificato e quindi fare clic su **OK**.

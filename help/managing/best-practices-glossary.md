@@ -1,8 +1,8 @@
 ---
 title: Glossario
-seo-title: Glossario
+seo-title: Glossary
 description: Questo glossario elenca i dettagli (in ordine alfabetico) di tutti i documenti Consegna dalla Lista di controllo del progetto.
-seo-description: Questo glossario elenca i dettagli (in ordine alfabetico) di tutti i documenti Consegna dalla Lista di controllo del progetto.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 0%
 
 ---
 
 # Glossario{#glossary}
 
-Questo glossario elenca (in modo alternativo) i dettagli di tutti i documenti consegnabili dalla [Lista di controllo dei progetti](/help/managing/best-practices-checklist.md).
+Questo glossario elenca i dettagli (in modo casuale) di tutti i documenti consegnabili dal [Elenco di controllo del progetto](/help/managing/best-practices-checklist.md).
 
 ## Accettazione da parte delle parti interessate {#acceptance-from-business-stakeholders}
 
@@ -47,7 +47,7 @@ Assicurati che a tutti i ruoli siano stati assegnati i livelli richiesti di acce
 
 ### Elenco di controllo della sicurezza di Adobe {#adobe-security-checklist}
 
-La [Lista di controllo sicurezza Adobe](/help/sites-administering/security-checklist.md) è la lista di controllo ufficiale fornita per garantire che AEM sia sicura durante l&#39;installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
+La [Elenco di controllo della sicurezza di Adobe](/help/sites-administering/security-checklist.md) è la checklist ufficiale fornita per garantire che AEM sia sicuro al momento dell’installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
 
 ### Configurazione del progetto del portale di supporto Adobe {#adobe-support-portal-project-set-up}
 
@@ -57,19 +57,19 @@ I dettagli possono essere registrati; ad esempio, informazioni sulle tecnologie 
 
 ### Formazione per l&#39;amministratore AEM {#aem-administrator-training}
 
-Formazione del personale amministrativo della soluzione. Per ulteriori informazioni, consulta [Servizi di formazione Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) .
+Formazione del personale amministrativo della soluzione. Consulta la sezione [Servizi di formazione Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) per ulteriori informazioni.
 
 ### Formazione sull’authoring di AEM {#aem-author-training}
 
-Formazione per il personale che produrrà (authoring) contenuti per la soluzione. Per ulteriori informazioni, consulta [Servizi di formazione Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) .
+Formazione per il personale che produrrà (authoring) contenuti per la soluzione. Consulta la sezione [Servizi di formazione Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) per ulteriori informazioni.
 
 ### Esame di certificazione AEM {#aem-certification-exam}
 
-Assicurati che la persona appropriata sia registrata per sostenere gli [esami di certificazione ](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinenti.
+Assicurati che la persona appropriata sia registrata per prendere il pertinente [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM certificato {#aem-certified}
 
-Assicurati che la persona appropriata abbia superato gli [esami di certificazione ](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinenti.
+Assicurati che la persona appropriata abbia superato il [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### Formazione tecnica AEM {#aem-technical-training}
 
@@ -93,12 +93,12 @@ Il Customer Roadmap è composto da tappe e obiettivi aziendali di alto livello. 
 
 ### Definizione dell&#39;architettura applicativa {#application-architecture-definition}
 
-L&#39; [architettura dell&#39;applicazione](/help/managing/best-practices.md#development-preparation) deve definire chiaramente il comportamento delle applicazioni proposte.
+La [architettura dell&#39;applicazione](/help/managing/best-practices.md#development-preparation) definire chiaramente il comportamento delle domande proposte.
 
 Si concentra su:
 
 * Come interagiranno tra loro e con gli utenti.
-* I dati da consumare e da produrre per le applicazioni, anziché la loro struttura interna.
+* I dati da consumare e produrre dalle applicazioni, anziché la loro struttura interna.
 
 ### Attività di manutenzione specifiche dell&#39;applicazione definite {#application-specific-maintenance-tasks-defined}
 
@@ -110,8 +110,7 @@ Assicurati che il tuo team sia composto da personale con la formazione appropria
 
 * almeno uno sviluppatore lead certificato AEM
 * almeno un architetto certificato AEM
-* almeno il 75% dei tuoi sviluppatori AEM certificati;
-questo consente agli sviluppatori certificati di guidare gli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
+* almeno il 75% dei tuoi sviluppatori AEM certificati; questo consente agli sviluppatori certificati di guidare gli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
 
 ### Diagramma dell&#39;architettura {#architecture-diagram}
 
@@ -208,8 +207,7 @@ I KPI aziendali definiscono valori misurabili che mostrano l’efficacia con cui
 
 Un documento sui requisiti aziendali (BRD) descrive in dettaglio la soluzione aziendale per un progetto, fornendo una specifica chiara delle esigenze e delle aspettative aziendali del cliente. Il BRD distingue anche tra la soluzione aziendale e la soluzione tecnica.
 
-Nell&#39;esaminare la soluzione commerciale, il BRD dovrebbe rispondere alla domanda:
-&quot;Cosa vuole fare l&#39;azienda?&quot;
+Nell&#39;esaminare la soluzione commerciale, il BRD dovrebbe rispondere alla domanda: &quot;Cosa vuole fare l&#39;azienda?&quot;
 
 ### Disattivazione dell&#39;attività su qualsiasi adeguamento necessario alla soluzione o all&#39;architettura identificata e allineata in base alle aspettative sul ROI e sui KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -505,7 +503,7 @@ Risultati di uno studio di fattibilità per la progettazione di soluzioni sia AE
 
 ### Contratto finito {#finalized-contract}
 
-Prima di procedere con il progetto è necessario un contratto concluso e firmato. Questo si basa sul [Bozza contratto](#contract-draft).
+Prima di procedere con il progetto è necessario un contratto concluso e firmato. Questo si basa sul [Progetto di contratto](#contract-draft).
 
 ### Funzionalità della soluzione accettata dalle parti interessate {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -904,7 +902,7 @@ Definire il piano di comunicazione sia per i soggetti interessati aziendali che 
 
 ### Sforzi Di Progetto - Stime Finali {#project-efforts-final-estimates}
 
-Le [stime iniziali](#project-efforts-initial-estimates) sono state di alto livello ed effettuate in base ai requisiti di alto livello per l&#39;implementazione.
+La [stime iniziali](#project-efforts-initial-estimates) sono stati di alto livello e sono stati realizzati in base ai requisiti di alto livello per l&#39;attuazione.
 
 Questi sono ora rivisti, perfezionati ed ampliati per fornire le stime finali. Le stime dovrebbero essere fornite da ciascun responsabile del progetto, compresi la gestione del progetto, la consulenza, l&#39;architettura, i test e lo sviluppo.
 
@@ -969,7 +967,7 @@ Viene utilizzato con il Runbook per eseguire i passaggi e i controlli pre e post
 
 >[!NOTE]
 >
->Per un esempio, consulta le [AEM Note sulla versione](/help/release-notes/release-notes.md).
+>Ad esempio, consulta [Note sulla versione di AEM](/help/release-notes/release-notes.md).
 
 ### Rilascio in esecuzione nell’ambiente di produzione {#release-running-on-production-environment}
 
@@ -1288,7 +1286,7 @@ Il concetto di prova è il profilo molto alto di test per il progetto; tra cui t
 
 ### Piani di prova {#testing-plans}
 
-Tali piani delineano in modo più dettagliato l&#39;esecuzione dei test per ciascuna fase di sviluppo e si basano sulla [Strategia di prova](#testing-strategy).
+Tali piani delineano in modo più dettagliato l&#39;esecuzione dei test per ciascuna fase di sviluppo e si basano [Strategia di test](#testing-strategy).
 
 ### Ambito di prova {#testing-scope}
 

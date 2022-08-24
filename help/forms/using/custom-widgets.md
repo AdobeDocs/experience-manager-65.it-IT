@@ -1,8 +1,8 @@
 ---
-title: Creare un aspetto personalizzato nei moduli HTML5
-seo-title: Creare un aspetto personalizzato nei moduli HTML5
+title: Creare un aspetto personalizzato nei moduli di HTML5
+seo-title: Create custom appearances in HTML5 forms
 description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
-seo-description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,24 +11,23 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
+# Creare un aspetto personalizzato nei moduli di HTML5{#create-custom-appearances-in-html-forms}
 
-# Crea aspetto personalizzato nei moduli HTML5{#create-custom-appearances-in-html-forms}
-
-Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework appearances. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere [Struttura di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
+Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework appearances. Il motore XFA utilizza vari widget, vedi [Framework di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md) per informazioni dettagliate.
 
 ![Esempio di widget predefiniti e personalizzati](assets/custom-widgets.jpg)
 
 Esempio di widget predefiniti e personalizzati
 
-## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
+## Integrazione di widget personalizzati con i moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
 ### Creare un profilo  {#create-a-profile-nbsp}
 
@@ -36,7 +35,7 @@ Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget
 
 ### Creare un widget {#create-a-widget}
 
-I moduli HTML5 forniscono un’implementazione del framework di widget che può essere esteso per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/ignorando le funzioni di seguito menzionate.
+I moduli di HTML5 forniscono un’implementazione del framework di widget che può essere esteso per creare nuovi widget. L’implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/ignorando le funzioni di seguito menzionate.
 
 <table>
  <tbody>
@@ -46,11 +45,11 @@ I moduli HTML5 forniscono un’implementazione del framework di widget che può 
   </tr>
   <tr>
    <td>rendering</td>
-   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L'elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
+   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio: &lt;a&gt;, &lt;input&gt;e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è l'evento XFA corrispondente. </td>
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e che XFA_EXIT_EVENT è l’evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -71,7 +70,7 @@ I moduli HTML5 forniscono un’implementazione del framework di widget che può 
  </tbody>
 </table>
 
-Per creare un widget personalizzato, nel profilo creato sopra, includi i riferimenti del file JavaScript che contiene funzioni ignorate e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per i campi numerici. Per utilizzare il widget nel tuo profilo nella sezione intestazione, includi la seguente riga:
+Per creare un widget personalizzato, nel profilo creato sopra, includi i riferimenti del file JavaScript che contiene funzioni ignorate e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per campi numerici. Per utilizzare il widget nel tuo profilo nella sezione intestazione, includi la seguente riga:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -79,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registra widget personalizzato con motore di scripting XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando il codice del widget personalizzato è pronto, registra il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). Richiede widgetConfigObject come input.
+Quando il codice del widget personalizzato è pronto, registra il widget con il motore di scripting utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). Richiede widgetConfigObject come input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -96,8 +95,8 @@ La configurazione del widget viene fornita come un oggetto JSON (una raccolta di
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```
