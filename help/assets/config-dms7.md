@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
+source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
 workflow-type: tm+mt
-source-wordcount: '6037'
-ht-degree: 4%
+source-wordcount: '6253'
+ht-degree: 3%
 
 ---
 
@@ -86,11 +86,11 @@ Vedi [Installa feature pack 18912 per la migrazione di massa delle risorse](/hel
 
 ## Creare una configurazione Dynamic Media nei Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Prima di configurare Dynamic Media** - Dopo aver ricevuto l&#39;e-mail di provisioning con le credenziali Dynamic Media, devi aprire la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account per modificare la tua password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-![dynamic icmediaconfiguration2update](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Per creare una configurazione Dynamic Media nei Cloud Services:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi seleziona l’icona Strumenti , quindi vai a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Media]**.
 1. Nella pagina Browser configurazione Dynamic Media, seleziona nel riquadro a sinistra **[!UICONTROL globale]** (non selezionare l’icona della cartella a sinistra di **[!UICONTROL globale]**), quindi seleziona **[!UICONTROL Crea]**.
@@ -98,8 +98,24 @@ Vedi [Installa feature pack 18912 per la migrazione di massa delle risorse](/hel
 
    Seleziona **[!UICONTROL Connessione a Dynamic Media]**.
 
-   >[!NOTE]
-   Dopo aver ricevuto l’e-mail di provisioning con le credenziali Dynamic Media, apri la [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account per modificare la tua password. La password fornita nell&#39;e-mail di provisioning è generata dal sistema e destinata solo a essere una password temporanea. È importante aggiornare la password in modo che il Cloud Service Dynamic Media sia configurato con le credenziali corrette.
+1. In **[!UICONTROL Modifica password]** nella finestra di dialogo **[!UICONTROL Nuova password]** immetti una nuova password composta da 8-25 caratteri. La password deve contenere almeno uno dei seguenti elementi:
+
+   * Lettera maiuscola
+   * Lettera minuscola
+   * Numero
+   * Carattere speciale: `# $ & . - _ : { }`
+
+   La **[!UICONTROL Password corrente]** Il campo è precompilato intenzionalmente e nascosto dall’interazione.
+
+   Se necessario, è possibile controllare l&#39;ortografia di una password digitata o digitata nuovamente selezionando l&#39;icona occhio password per visualizzare la password. Seleziona nuovamente l&#39;icona per nascondere la password.
+
+1. In **[!UICONTROL Ripeti password]** campo , digita nuovamente la nuova password, quindi seleziona **[!UICONTROL Fine]**.
+
+   La nuova password viene salvata quando si seleziona **[!UICONTROL Salva]** nell&#39;angolo superiore destro del **[!UICONTROL Crea configurazione Dynamic Media]** pagina.
+
+   Se hai selezionato **[!UICONTROL Annulla]** in **[!UICONTROL Modifica password]** quando salvi la configurazione di Dynamic Media appena creata, è comunque necessario immettere una nuova password.
+
+   Vedi anche [Modificare la password in Dynamic Media](#change-dm-password).
 
 1. Quando la connessione ha esito positivo, imposta quanto segue. Le intestazioni con asterisco (*) sono obbligatorie:
 
@@ -147,6 +163,37 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 La configurazione di base è terminata. è possibile utilizzare la modalità Dynamic Media - Scene7.
 
 Se desideri personalizzare ulteriormente la configurazione, puoi facoltativamente completare una qualsiasi delle attività in [(Facoltativo) Configurare le impostazioni avanzate in modalità Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Modificare la password in Dynamic Media {#change-dm-password}
+
+La scadenza della password in Dynamic Media è impostata a 100 anni dalla data di sistema corrente.
+
+La password deve contenere almeno uno dei seguenti elementi:
+
+* Lettera maiuscola
+* Lettera minuscola
+* Numero
+* Carattere speciale: `# $ & . - _ : { }`
+
+Se necessario, è possibile controllare l&#39;ortografia di una password digitata o digitata nuovamente selezionando l&#39;icona occhio password per visualizzare la password. Seleziona nuovamente l&#39;icona per nascondere la password.
+
+La password modificata viene salvata quando selezioni **[!UICONTROL Salva]** nell&#39;angolo superiore destro del **[!UICONTROL Modifica configurazione Dynamic Media]** pagina.
+
+**Per cambiare la password in Dynamic Media:**
+
+1. In modalità Creazione Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
+1. Nella parte sinistra della console, seleziona l’icona Strumenti , quindi vai a **[!UICONTROL Cloud Services] > [!UICONTROL Configurazione Dynamic Media]**.
+1. Nella pagina Browser configurazione Dynamic Media, seleziona nel riquadro a sinistra **[!UICONTROL globale]**. Non selezionare l’icona della cartella a sinistra di **[!UICONTROL globale]**. Quindi, seleziona **[!UICONTROL Modifica]**.
+1. Sulla **[!UICONTROL Modifica configurazione Dynamic Media]** direttamente sotto la pagina **[!UICONTROL Password]** campo , seleziona **[!UICONTROL Modifica password]**.
+1. In **[!UICONTROL Modifica password]** effettuare le seguenti operazioni:
+
+   * In **[!UICONTROL Nuova password]** immettere una nuova password.
+
+      La **[!UICONTROL Password corrente]** Il campo è precompilato intenzionalmente e nascosto dall’interazione.
+
+   * In **[!UICONTROL Ripeti password]** campo , digita nuovamente la nuova password, quindi seleziona **[!UICONTROL Fine]**.
+
+1. Nell&#39;angolo in alto a destra del **[!UICONTROL Modifica configurazione Dynamic Media]** pagina, seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL OK]**.
 
 ## (Facoltativo) Configurare le impostazioni avanzate in modalità Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
