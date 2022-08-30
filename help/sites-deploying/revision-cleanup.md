@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
 workflow-type: tm+mt
-source-wordcount: '5904'
+source-wordcount: '5912'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 ### Considerazioni sull&#39;aggiornamento a AEM 6.5 {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>Domande </td>
@@ -143,7 +143,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 ### Migrazione a Oak Segment Tar {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Domande</strong></td>
@@ -205,7 +205,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 ### Esecuzione del cleanup delle revisioni online {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Domande</strong></td>
@@ -368,7 +368,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 ### Monitoraggio del cleanup delle revisioni online {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Cosa è necessario monitorare durante il cleanup delle revisioni online?</strong></td>
@@ -453,7 +453,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 ### Risoluzione dei problemi del cleanup delle revisioni online {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Qual è il peggio che può accadere se non si esegue il cleanup delle revisioni online?</strong></td>
@@ -507,15 +507,68 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
 
 Il file error.log sarà dettagliato se si verificano incidenti durante il processo di pulizia della revisione online. La seguente matrice ha lo scopo di spiegare i messaggi più comuni e fornire soluzioni possibili:
 
-| **Fase** | **Messaggi del registro** | **Spiegazione** | **Passaggi successivi** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
-|  |  |  |  |
-| Stima | TarMK GC #2: stima ignorata perché la compattazione è in pausa | La fase di stima viene saltata quando la compattazione è disabilitata sul sistema dalla configurazione. | Abilita Pulizia revisioni online. |
-|  | TarMK GC #2: stima interrotta: ${REASON}. Salta la compattazione. | La fase di stima è terminata prematuramente. Alcuni esempi di eventi che potrebbero interrompere la fase di stima: memoria o spazio su disco insufficiente nel sistema host. | Dipende dal motivo dato. |
-| Compattazione | TarMK GC #2: compattazione sospesa | Se la fase di compattazione viene sospesa dalla configurazione, non verrà eseguita né la fase di stima né la fase di compattazione. | Abilita la pulizia revisioni online. |
-|  | TarMK GC #2: compattazione annullata: ${REASON}. | La fase di compattazione è terminata prematuramente. Alcuni esempi di eventi che potrebbero interrompere la fase di compattazione: memoria o spazio su disco insufficiente nel sistema host. Inoltre, la compattazione può essere annullata anche chiudendo il sistema o cancellandolo esplicitamente tramite interfacce amministrative come la finestra di manutenzione all&#39;interno del dashboard delle operazioni. | Dipende dal motivo dato. |
-|  | TarMK GC #2: compattazione fallita in 32.902 min (1974140 ms), dopo 5 cicli | Questo messaggio non significa che si sia verificato un errore irreversibile, ma solo che la compattazione è stata terminata dopo un certo numero di tentativi. Inoltre, leggi il [paragrafo seguente](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | Leggi quanto segue [Documentazione Oak](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)e l&#39;ultima questione [Esecuzione del cleanup delle revisioni online](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) sezione . |
-| Pulizia | TarMK GC #2: pulizia interrotta | Il cleanup è stato annullato chiudendo l&#39;archivio. Non è previsto alcun impatto sulla coerenza. Inoltre, è molto probabile che lo spazio su disco non venga recuperato completamente. Verrà ririchiesto durante il prossimo ciclo di pulizia della revisione. | Scopri perché l’archivio è stato chiuso e in futuro cerca di evitare di chiudere l’archivio durante le finestre di manutenzione. |
+|   |  |  |  |
+| Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
+|   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
+| Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
+|   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Fase</th>
+    <th>Messaggi del registro</th>
+    <th>Spiegazione</th>
+    <th>Passaggi successivi</th>
+  </tr>  
+  <tr>
+    <td>Stima</td>
+    <td>TarMK GC #2: stima ignorata perché la compattazione è in pausa.</td>
+    <td>La fase di stima viene saltata quando la compattazione è disabilitata sul sistema dalla configurazione.</td>
+    <td>Abilita Pulizia revisioni online.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N/D</td>
+    <td>TarMK GC #2: stima interrotta: ${REASON}. Salta la compattazione.</td>
+    <td>La fase di stima è terminata prematuramente. Alcuni esempi di eventi che potrebbero interrompere la fase di stima: memoria o spazio su disco insufficiente nel sistema host.</td>
+    <td>Dipende dal motivo dato.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Compattazione</td>
+    <td>TarMK GC #2: compattazione sospesa.</td>
+    <td>Se la fase di compattazione viene sospesa dalla configurazione, non verrà eseguita né la fase di stima né la fase di compattazione.</td>
+    <td>Abilita la pulizia revisioni online.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>N/D</td>
+    <td>TarMK GC #2: compattazione annullata: ${REASON}.</td>
+    <td>La fase di compattazione è terminata prematuramente. Alcuni esempi di eventi che potrebbero interrompere la fase di compattazione: memoria o spazio su disco insufficiente nel sistema host. Inoltre, la compattazione può essere annullata anche chiudendo il sistema o cancellandolo esplicitamente tramite interfacce amministrative come la finestra di manutenzione all'interno del dashboard delle operazioni.</td>
+    <td>Dipende dal motivo dato.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N/D</td>
+    <td>TarMK GC #2: compattazione fallita in 32.902 min (1974140 ms), dopo 5 cicli.</td>
+    <td>Questo messaggio non significa che si sia verificato un errore irreversibile, ma solo che la compattazione è stata terminata dopo un certo numero di tentativi. Inoltre, leggi il <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragrafo seguente.</a></td>
+    <td>Leggi quanto segue <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentazione Oak</a>, e l'ultima domanda della sezione Running Online Revision Cleanup (Pulizia delle revisioni online in esecuzione).</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>Pulizia</td>
+    <td>TarMK GC #2: pulizia interrotta.</td>
+    <td>Il cleanup è stato annullato chiudendo l'archivio. Non è previsto alcun impatto sulla coerenza. Inoltre, molto probabilmente lo spazio su disco non verrà recuperato completamente. Verrà ririchiesto durante il prossimo ciclo di pulizia della revisione.</td>
+    <td>Scopri perché l’archivio è stato chiuso e in futuro cerca di evitare di chiudere l’archivio durante le finestre di manutenzione.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## Come eseguire il cleanup delle revisioni offline {#how-to-run-offline-revision-cleanup}
 
@@ -601,7 +654,7 @@ Oltre ai metodi descritti in precedenza, puoi anche attivare il meccanismo di pu
 
 ### Domande frequenti sul cleanup delle revisioni offline {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Quali sono i fattori che determinano la durata del cleanup delle revisioni offline?</strong></td>
