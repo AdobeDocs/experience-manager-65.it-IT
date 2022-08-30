@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
@@ -65,8 +65,8 @@ Passa alla directory appropriata e, dal prompt dei comandi, digita
 
 1. A seconda del server delle applicazioni, scegli uno dei seguenti documenti e segui le istruzioni in *Configurazione e distribuzione dei moduli AEM* sezione .
 
-   * [Installazione e distribuzione di moduli AEM per JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [Installazione e distribuzione di moduli AEM per WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [Installazione e distribuzione di moduli AEM per JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Installazione e distribuzione di moduli AEM per WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss) Dopo aver installato la patch e configurato il server, elimina tmp e le directory di lavoro del server applicazioni JBoss.
 

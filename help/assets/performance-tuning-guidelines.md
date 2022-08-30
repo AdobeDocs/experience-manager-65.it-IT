@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,7 @@ XMP writeback aggiorna la risorsa originale ogni volta che i metadati vengono mo
 * Viene creata una versione della risorsa
 * [!UICONTROL Risorsa di aggiornamento DAM] viene eseguito sulla risorsa
 
-I risultati elencati consumano notevoli risorse. Pertanto, l&#39;Adobe raccomanda [disabilitazione XMP Writeback](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), se non è obbligatorio.
+I risultati elencati consumano notevoli risorse. Pertanto, Adobe consiglia di disabilitare XMP write-back se non è necessario. Per ulteriori informazioni, consulta [XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
 
 Se è selezionato il flag di esecuzione dei flussi di lavoro, l’importazione di una grande quantità di metadati può comportare un’attività di XMP write-back ad uso intensivo di risorse. Pianifica un&#39;importazione di questo tipo durante l&#39;utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
 
@@ -242,7 +242,7 @@ Quando si replicano le risorse in un numero elevato di istanze di pubblicazione,
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Vedi [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Vedi [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) per alcune ottimizzazioni dell&#39;indice.
 
 Crea indici personalizzati per le query che esegui spesso. Per maggiori dettagli, vedi [metodologia per l’analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice relative a query e indice, consulta [Tecniche consigliate per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

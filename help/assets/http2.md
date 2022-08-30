@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '732'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 Avvii la richiesta per passare a HTTP/2; non viene fatto automaticamente per te.
 
-1. Per passare a HTTP/2, avvia una richiesta di assistenza clienti di Adobe. Consulta [Accedere al portale di supporto Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Per passare a HTTP/2, avvia una richiesta di assistenza clienti di Adobe. Vedi [Apri un ticket di supporto](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. Fornisci le seguenti informazioni nella richiesta di assistenza:
 

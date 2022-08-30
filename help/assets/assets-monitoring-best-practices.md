@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Di seguito sono riportati alcuni controlli di integrità predefiniti utili per i
 Nel processo di monitoraggio, in caso di problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni con [!DNL Experience Manager] distribuzioni:
 
 * Se utilizzi TarMK, esegui spesso la compattazione Tar. Per ulteriori dettagli, consulta [Gestisci archivio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, consulta [Analizzare i problemi di memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, consulta [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Controlla i registri per eventuali riferimenti a query non indicizzate, traversate ad albero o traversate di indici. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le best practice sull’ottimizzazione delle prestazioni di query e indicizzazione, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizza la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, riduci più flussi di lavoro in un unico flusso di lavoro.

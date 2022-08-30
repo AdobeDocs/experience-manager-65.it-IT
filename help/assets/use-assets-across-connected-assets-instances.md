@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '3802'
+source-wordcount: '3803'
 ht-degree: 18%
 
 ---
@@ -33,14 +33,14 @@ La funzionalità Risorse collegate supporta i casi d’uso precedenti mediante l
 
 Durante la modifica di pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] implementazione che funge da origine di risorse. Gli amministratori creano un’integrazione unica di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] capacità con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Gli autori del sito possono inoltre utilizzare le immagini Dynamic Media nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Media, ad esempio ritaglio avanzato e predefiniti immagine.
 
-Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’accesso diretti alle risorse remote nell’Editor sito. Per tutti gli altri casi d’uso che possono richiedere che l’intero asset-corpus sia disponibile su Sites, considera la migrazione delle risorse in blocco invece di utilizzare le risorse collegate. Vedi [Guida alla migrazione a Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’accesso diretti alle risorse remote nell’Editor sito. Per tutti gli altri casi d’uso che possono richiedere la disponibilità dell’intero asset-corpus su Sites, considera la migrazione in massa delle risorse invece di utilizzare le risorse collegate. Vedi [Guida alla migrazione a Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* Per [!DNL Adobe Experience Manager] tipi di distribuzione, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6,5 [!DNL Assets] funziona con [!DNL Experience Manager] as a Cloud Service. Per ulteriori informazioni su come funziona questa funzionalità in [!DNL Experience Manager] come [!DNL Cloud Service], vedi [Risorse collegate in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Per [!DNL Adobe Experience Manager] tipi di distribuzione, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6,5 [!DNL Assets] funziona con [!DNL Experience Manager] as a Cloud Service. Per ulteriori informazioni su come funziona questa funzionalità in [!DNL Experience Manager] come [!DNL Cloud Service], vedi [Risorse collegate in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] in AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -63,7 +63,7 @@ Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell�
 |---|---|---|---|---|
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | `admin` | Configurazione [!DNL Experience Manager] e configura l&#39;integrazione con il telecomando [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | `ksaner` | Gli utenti finali sono [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
+| [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | `ksaner` | Gli utenti finali [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
 | [!DNL Assets] amministratore | Remoto | [!DNL Experience Manager] `administrators` | `admin` in remoto [!DNL Experience Manager] | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
 | Utente DAM | Remoto | `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Ruolo autore nel remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate mediante l’ [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Questo utente presente nell&#39;implementazione remota viene utilizzato da [!DNL Experience Manager] server locale (non il [!DNL Sites] ruolo autore) per recuperare le risorse remote, per conto di [!DNL Sites] autore. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
@@ -158,7 +158,7 @@ Per utilizzare [!DNL Dynamic Media] con risorse collegate:
 
 Per configurare [!DNL Dynamic Media] su [!DNL Assets] e [!DNL Sites] distribuzioni:
 
-1. Abilita e configura [!DNL Dynamic Media] come configurazione globale in remoto [!DNL Assets] distribuzione di authoring. Per configurare Dynamic Media, vedi [Configurare Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+1. Abilita e configura [!DNL Dynamic Media] come configurazione globale in remoto [!DNL Assets] distribuzione di authoring. Per configurare Dynamic Media, vedi [Configurare Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 In remoto [!DNL Assets] installazione, [!UICONTROL Modalità di sincronizzazione Dynamic Media], seleziona **[!UICONTROL Abilitato per impostazione predefinita]**.
 
 1. Creare la configurazione delle risorse collegate come descritto in [Configurare la connessione tra le distribuzioni di siti e risorse](#configure-a-connection-between-sites-and-assets-deployments). Inoltre, seleziona **[!UICONTROL Recupera rappresentazione originale per risorse collegate a Dynamic Media]** opzione .
@@ -169,7 +169,7 @@ In remoto [!DNL Assets] installazione, [!UICONTROL Modalità di sincronizzazione
    * In locale [!DNL Sites], in [!UICONTROL Modalità di sincronizzazione Dynamic Media], seleziona **[!UICONTROL Disabilitata per impostazione predefinita]**. La [!DNL Sites] l&#39;implementazione deve disporre dell&#39;accesso in sola lettura al [!DNL Dynamic Media] conto.
    * In locale [!DNL Sites], nella **[!UICONTROL Pubblicare le risorse]** seleziona **[!UICONTROL Pubblicazione selettiva]**. Non selezionare **[!UICONTROL Sincronizza tutto il contenuto]**.
 
-1. Abilita [[!DNL Dynamic Media] supporto per il componente core immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Questa funzione abilita il valore predefinito [Componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) per visualizzare [!DNL Dynamic Media] immagini quando [!DNL Dynamic Media] le immagini vengono utilizzate dagli autori nelle pagine web del locale [!DNL Sites] distribuzione.
+1. Abilita [[!DNL Dynamic Media] supporto per il componente core immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Questa funzione abilita il valore predefinito [Componente immagine](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) per visualizzare [!DNL Dynamic Media] immagini quando [!DNL Dynamic Media] le immagini vengono utilizzate dagli autori nelle pagine web del locale [!DNL Sites] distribuzione.
 
 ## Utilizzare le risorse remote {#use-remote-assets}
 
