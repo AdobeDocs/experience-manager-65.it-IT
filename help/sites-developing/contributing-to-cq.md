@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -143,7 +143,7 @@ In sostanza, JCR è un sistema di nodi e proprietà, in cui i nodi possono eredi
 
 JCR ha una serie di tipi di nodo predefiniti e tipi di proprietà, ma in generale il sistema di digitazione è abbastanza flessibile e (in effetti) uno dei punti di forza di JCR è che consente di memorizzare e gestire contenuti strutturati e non strutturati con la stessa facilità. In altre parole, JCR può contenere dati altamente strutturati, ma può anche contenere strutture di dati dinamici arbitrarie senza vincoli di schema.
 
-JavaDoc per l&#39;API Java di JCR è [qui](http://jackrabbit.apache.org/jcr/jcr-api.html).
+JavaDoc per l&#39;API Java di JCR è [qui](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Prima di provare a leggere la specifica JavaDoc o JCR stessa, potresti voler guardare [questa spiegazione di alto livello](/help/sites-developing/the-basics.md#java-content-repository) di JCR come implementato da Adobe Experience Services.
 

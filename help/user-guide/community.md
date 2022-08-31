@@ -1,16 +1,15 @@
 ---
 title: La community AEM
-seo-title: La community AEM
+seo-title: The AEM Community
 description: La community AEM
-seo-description: La community AEM
-translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+seo-description: The AEM Community
+exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 40%
+source-wordcount: '324'
+ht-degree: 31%
 
 ---
-
 
 # La community AEM {#the-aem-community}
 
@@ -22,16 +21,16 @@ La Comunità AEM ha migliaia di membri in tutto il mondo. da principianti di Exp
 
 ## Quali eventi sono previsti per AEM membri della community? {#events}
 
-Ci sono tutta una serie di eventi per i membri! Ogni mese teniamo sessioni nelle quali potete chiedere all&#39;esperto su argomenti AEM specifici. Inoltre, ti informeremo sugli eventi principali, come ad esempio [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) o [ Summit Adobe](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), o anche gli eventi dei gruppi di utenti nella tua area.
+Ci sono una serie di eventi per i membri! Ogni mese teniamo sessioni in cui puoi chiedere all&#39;esperto su specifici argomenti AEM. Ti informeremo anche di eventi importanti, come [Immerso](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) o [Adobe Summit](https://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), o anche eventi di gruppo di utenti nella tua area.
 
-La cosa migliore da fare è [visitare la community AEM oggi e vedere cosa sta succedendo.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+La cosa migliore da fare è [visita la community AEM e scopri cosa succede.](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
-## È possibile ottenere esempi di codice per aiutarmi? {#code-samples}
+## Posso ottenere esempi di codice per aiutarmi? {#code-samples}
 
-Il team AEM della community sta producendo continuamente guide ed esempi di codice per aiutare  sviluppatori e utenti di Experienci Manager a trovare la soluzione. [Ecco l&#39;elenco completo degli articoli pratici ed esempi di codice.](https://helpx.adobe.com/it/experience-manager/topics/how-to.html)
+Il team AEM della community sta producendo continuamente guide ed esempi di codice per aiutare gli sviluppatori e gli utenti di Experience Manager a comprendere la soluzione. [Ecco il nostro elenco completo di articoli pratici ed esempi di codice.](https://helpx.adobe.com/it/experience-manager/topics/how-to.html)
 
-## Sessioni di esperti della community e GEMS {#gems}
+## Chiedi alle sessioni di esperti della community e a GEMS {#gems}
 
-La comunità AEM organizza regolarmente eventi per formare i membri sulle tecniche e sulle best practice. Puoi partecipare a questi webcast dal vivo oppure riprodurli quando ti è più comodo. Sono disponibili eventi con esperti e panoramiche sulle funzioni e sulle nuove registrazioni.
+La AEM Community organizza regolarmente eventi per aiutare i membri a conoscere le tecniche e le best practice. Puoi partecipare a questi webcast dal vivo oppure riprodurli quando ti è più comodo. Abbiamo eventi di esperti e abbiamo anche panoramiche e novità.
 
-[L&#39;elenco completo delle precedenti sessioni di esperti  Experience Manager è disponibile qui.](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)
+[L’elenco completo delle precedenti sessioni &quot;Esperti di Experience Manager&quot; è disponibile qui.](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)

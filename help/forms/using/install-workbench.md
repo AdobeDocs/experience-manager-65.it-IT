@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Le risorse presenti in questa tabella sono utili per ulteriori informazioni e pe
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
@@ -98,7 +98,7 @@ Si raccomandano come minimo i seguenti requisiti: Spazio su disco per l&#39;inst
 
 ### Piattaforme supportate {#supported-platforms}
 
-Vedi l’elenco completo delle piattaforme supportate per Workbench all’indirizzo [Piattaforme supportate da AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Vedi l’elenco completo delle piattaforme supportate per Workbench all’indirizzo [Piattaforme supportate da AEM Forms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
@@ -173,7 +173,7 @@ Prima di installare Workbench, è necessario assicurarsi che l’ambiente includ
 1. Gli elementi seguenti sono ora installati nel computer:
    * **Workbench**: Per eseguire Workbench dal menu Start, selezionare Tutti i programmi > AEM Forms > Workbench, se si sceglie di archiviare la cartella dei collegamenti. Per informazioni, consulta la sezione <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a> documentazione.
    * **Designer**: È possibile accedere a Designer direttamente da Workbench. Per informazioni, consultare l&#39;argomento Guida introduttiva in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Guida di Designer</a>.
-   * **AEM Forms SDK**: Per ulteriori informazioni sull&#39;utilizzo dell&#39;SDK, vedi <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmazione con AEM Forms</a>.
+   * **AEM Forms SDK**: Per ulteriori informazioni sull&#39;utilizzo dell&#39;SDK, vedi <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmazione con AEM Forms</a>.
 
 ## Aggiornamento dei processi {#upgrading-processes}
 
@@ -232,7 +232,7 @@ Quando il generatore di moduli o l’output cerca, o aggiorna, le voci nella cac
 * **UUID modello**: Designer inserisce in ciascun modello un identificatore univoco (UUID) per il modulo e la relativa versione. Ogni volta che il modulo viene aggiornato, viene aggiornato l’UUID incorporato. Ad esempio, un modello XDP potrebbe mostrare il seguente contenuto:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Opzioni di rendering**: All’interno della cache del modulo di cui è stato effettuato il rendering, il contenuto della cache viene memorizzato separatamente per ciascun set di opzioni di rendering univoche.
 

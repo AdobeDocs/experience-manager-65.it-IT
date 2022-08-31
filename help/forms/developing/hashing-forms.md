@@ -2,7 +2,7 @@
 title: Come si generano e si utilizzano gli hash nei PDF forms dinamici?
 description: Generazione e utilizzo degli hash nei PDF forms dinamici
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -120,5 +120,5 @@ Vi incoraggio a continuare a esplorare i due file PDF di esempio.  È possibile 
 * [NISTA](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Collisione hash](https://en.wikipedia.org/wiki/Hash_collision)
 * [Tavolino arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Home page del progetto JavaScript MD5](http://pajhome.org.uk/crypt/md5/)
+* [Home page del progetto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
 * [home page del progetto jsSHA2](https://anmar.eu.org/projects/jssha2/)

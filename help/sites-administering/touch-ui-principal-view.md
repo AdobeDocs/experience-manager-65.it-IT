@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -88,7 +88,7 @@ Oltre all&#39;elenco dei privilegi e al Tipo di autorizzazione su un determinato
 
 >[!NOTE]
 >
->Per maggiori informazioni sul significato di ciascuna restrizione, consulta [Documentazione di Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Per maggiori informazioni sul significato di ciascuna restrizione, consulta [Documentazione di Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 È possibile aggiungere restrizioni come mostrato di seguito scegliendo il tipo di restrizione, inserendo il valore e premendo il pulsante **+** icona.
 
@@ -143,7 +143,7 @@ Ciò causava confusione in merito alla configurazione esatta. La tabella seguent
    <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
   </tr>
   <tr>
-   <td>Crea</td>
+   <td>Creare</td>
    <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td>
   </tr>
   <tr>

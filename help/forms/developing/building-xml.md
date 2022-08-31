@@ -1,7 +1,8 @@
 ---
 title: Come utilizzare il servizio di script eseguito in AEM Forms su JEE Workbench per generare dati XML?
 description: Utilizzo del servizio di script execute in AEM Forms su JEE Workbench per creare dati XML
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -12,41 +13,41 @@ ht-degree: 0%
 
 C&#39;è molto XML coinvolto con AEM Forms sui flussi di lavoro JEE Process Management, ad esempio: Le informazioni XML possono essere create in un processo e inviate a un’applicazione Flex in AEM Forms su JEE Workspace, utilizzate per le impostazioni di sistema o per passare informazioni da e verso i moduli. Ci sono molte istanze in cui uno sviluppatore AEM Forms su JEE deve gestire XML e molte volte questo richiede che il XML sia gestito tramite un processo AEM Forms su JEE.
 
-Quando si utilizzano impostazioni XML semplici, è possibile utilizzare il servizio `Set Value`, che è un servizio AEM Forms predefinito su JEE. Questo servizio imposta il valore di uno o più elementi dati nel modello dati del processo. Per una logica condizionale molto semplice &quot;se questo, allora quello&quot; scenari, questo servizio può soddisfare lo scopo.
+Quando si utilizzano impostazioni XML semplici, è possibile utilizzare il `Set Value` , che è un servizio AEM Forms predefinito su JEE. Questo servizio imposta il valore di uno o più elementi dati nel modello dati del processo. Per una logica condizionale molto semplice &quot;se questo, allora quello&quot; scenari, questo servizio può soddisfare lo scopo.
 
 Tuttavia, in situazioni più complesse, il servizio Imposta valore non è altrettanto efficace. In queste situazioni, è necessario affidarsi a un set più solido di comandi di programmazione, come quelli forniti da un linguaggio di programmazione come Java. L&#39;utilizzo di Java per creare XML complessi può essere molto più semplice e chiaro rispetto alla creazione di un documento XML da testo semplice all&#39;interno del servizio Imposta valore. Inoltre, è più facile includere la programmazione condizionale in Java che all’interno di un servizio Set Value.
 
 ## Utilizzo del servizio Esegui script in un processo {#using-execute-script-service-in-process}
 
-All’interno dell’insieme dei servizi AEM Forms standard su JEE disponibili in AEM Forms su JEE Workbench, è presente il servizio `Execute Script` . Questo servizio consente di eseguire script nei processi e fornisce l&#39;operazione `executeScript` per eseguire tale operazione.
+All’interno dell’insieme dei servizi AEM Forms standard su JEE disponibili in AEM Forms su JEE Workbench, è la variabile `Execute Script` servizio. Questo servizio consente di eseguire script nei processi e fornisce `executeScript` per farlo.
 
 ### Creare un&#39;applicazione e un processo con il servizio &quot;Esegui script&quot; definito come attività {#create-an-application}
 
-La creazione complessiva di applicazioni e processi non rientra nell’ambito di applicazione di questa esercitazione, ma per questo motivo è stata creata un’applicazione denominata &quot;DemoApplication02&quot;. Presupponendo che un&#39;applicazione sia già stata creata, è necessario creare un processo in questa applicazione per chiamare il servizio executeScript. Per aggiungere all&#39;applicazione un processo che include il servizio `Execute Script` :
+La creazione complessiva di applicazioni e processi non rientra nell’ambito di applicazione di questa esercitazione, ma per questo motivo è stata creata un’applicazione denominata &quot;DemoApplication02&quot;. Presupponendo che un&#39;applicazione sia già stata creata, è necessario creare un processo in questa applicazione per chiamare il servizio executeScript. Per aggiungere all&#39;applicazione un processo che include `Execute Script` servizio:
 
-1. Fai clic con il pulsante destro del mouse sull&#39;applicazione e seleziona [!UICONTROL Nuovo]. Nel menu a tendina [!UICONTROL Nuovo], selezionare [!UICONTROL Processo]. Assegna un nome al processo di conseguenza, aggiungi una descrizione se necessario e seleziona l&#39;icona che desideri rappresentare il processo. Ai fini di questa esercitazione, è stato creato un processo denominato `executeScriptDemoProcess` .
+1. Fai clic con il pulsante destro del mouse sull&#39;applicazione e seleziona [!UICONTROL Nuovo]. In [!UICONTROL Nuovo] menu a tendina, selezionare [!UICONTROL Processo]. Assegna un nome al processo di conseguenza, aggiungi una descrizione se necessario e seleziona l&#39;icona che desideri rappresentare il processo. Ai fini di questa esercitazione, è stato creato un processo e denominato tale processo come  `executeScriptDemoProcess`.
 1. Definisci i punti di inizio o la scelta semplice per aggiungere i punti di inizio in un secondo momento.
-1. Il processo viene ora creato e deve essere aperto automaticamente nella finestra [!UICONTROL Progettazione processi]. In questa finestra, fai clic sull’icona Selettore attività nella parte superiore della finestra Progettazione processi e trascina la nuova attività sulla corsia a nuoto. A questo punto, dovrebbe apparire la [!UICONTROL Definisci finestra attività] (vedi la figura seguente).
+1. Il processo viene ora creato e deve essere aperto automaticamente nel [!UICONTROL Progettazione dei processi] finestra. In questa finestra, fai clic sull’icona Selettore attività nella parte superiore della finestra Progettazione processi e trascina la nuova attività sulla corsia a nuoto. A questo punto, il [!UICONTROL Finestra Definisci attività] (vedere la figura seguente).
    ![Definisci attività](assets/define-activity.jpg)
-1. Il servizio executeScript si trova nel set di servizi `Foundation` . Il nome Servizi elenca l&#39;oggetto come `Execute Script – 1.0` con il nome Operazione `executeScript`. Fare clic per selezionare l&#39;elemento.
-1. Questo processo deve essere creato e per impostazione predefinita la finestra [!UICONTROL Proprietà processo] deve essere visualizzata nel riquadro a sinistra.
+1. Il servizio executeScript si trova in `Foundation` insieme di servizi. Il nome Servizi elenca l’oggetto come `Execute Script – 1.0` con il nome dell&#39;operazione `executeScript`. Fare clic per selezionare l&#39;elemento.
+1. Questo processo deve essere creato e, per impostazione predefinita, il [!UICONTROL Proprietà processo] nel riquadro a sinistra.
 
 #### Aggiungi uno script al processo con il servizio &quot;Esegui script&quot; {#add-script-to-process-with-execute-script}
 
 Una volta creato il processo con l’attività &quot;Esegui script&quot; definita, è possibile aggiungere uno script a questo processo. Per aggiungere uno script a questo processo:
 
-1. Passa alla palette [!UICONTROL Proprietà processo] . All’interno di questa palette, espandi la sezione [!UICONTROL Input] e fai clic sull’icona &quot;...&quot;.
+1. Passa a [!UICONTROL Proprietà processo] tavolozza. All’interno di questa palette, espandi la [!UICONTROL Ingresso] e fai clic sull&#39;icona &quot;...&quot;.
 
 1. Nella casella di testo che appare scrivere lo script. Quando lo script è stato scritto, premere OK (vedi Figura qui sotto).
    ![Esegui script](assets/execute-script.jpg)
 
 ## Creazione di XML tramite il servizio Esegui script {#create-xml-execute-script-service}
 
-Una volta creato un processo con il servizio Esegui script incluso, è possibile utilizzare questo script per creare XML. Uno scriverebbe gli script descritti di seguito nella casella di testo descritta nella sezione Aggiungi uno script al processo con la sezione `Execute Script` Service di cui sopra.
+Una volta creato un processo con il servizio Esegui script incluso, è possibile utilizzare questo script per creare XML. Uno scriverebbe gli script descritti di seguito nella casella di testo descritta in Aggiungi uno script al processo con il `Execute Script` Sezione servizio precedente.
 
 **Informazioni sulla tecnologia di Execute Script Service**
 
-Per sapere quali sono le capacità e i limiti del servizio Execute Script, è necessario conoscere i fondamenti tecnologici del servizio. AEM Forms su JEE utilizza il parser DOM (Document Object Model) di Apache Xerces per creare e memorizzare variabili XML all&#39;interno dei processi. Xerces è un’implementazione Java delle specifiche del modello di oggetto documento di W3C; definito [qui](https://dom.spec.whatwg.org/). La specifica DOM è un modo standard di manipolare XML esistente dal 1998. L&#39;implementazione Java di Xerces, Xerces-J, supporta la versione 1.0 di DOM Level 2.
+Per sapere quali sono le capacità e i limiti del servizio Execute Script, è necessario conoscere i fondamenti tecnologici del servizio. AEM Forms su JEE utilizza il parser DOM (Document Object Model) di Apache Xerces per creare e memorizzare variabili XML all&#39;interno dei processi. Xerces è un’implementazione Java delle specifiche del modello di oggetto documento di W3C; definizione [qui](https://dom.spec.whatwg.org/). La specifica DOM è un modo standard di manipolare XML esistente dal 1998. L&#39;implementazione Java di Xerces, Xerces-J, supporta la versione 1.0 di DOM Level 2.
 
 Le classi Java utilizzate per memorizzare le variabili XML sono le seguenti:
 
@@ -54,7 +55,7 @@ Le classi Java utilizzate per memorizzare le variabili XML sono le seguenti:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl è una sottoclasse di NodeImpl, quindi si può supporre che qualsiasi variabile di processo XML sia una derivazione NodeImpl. È possibile trovare la documentazione per NodeImpl [qui](http://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl è una sottoclasse di NodeImpl, quindi si può supporre che qualsiasi variabile di processo XML sia una derivazione NodeImpl. È possibile trovare la documentazione per NodeImpl [qui](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
 
 **Creazione XML di esempio utilizzando il servizio Esegui script**
 
@@ -150,6 +151,3 @@ The variable node in the XML is now set to:
 
 </resources>
 ```
-
-
-

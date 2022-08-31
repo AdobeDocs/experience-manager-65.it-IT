@@ -1,7 +1,8 @@
 ---
 title: Come passare le credenziali utilizzando le intestazioni WS-security?
 description: Scopri come trasmettere le credenziali utilizzando le intestazioni di sicurezza WS
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -16,7 +17,7 @@ Esperienza con AEM Forms su JEE Process Management, programmazione Java di base 
 
 **Altri prodotti richiesti**
 
-Editor Java come [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://netbeans.apache.org/)
+Editor Java come [Eclipse](https://www.eclipse.org/) o [Nave IDE](https://netbeans.apache.org/)
 
 ## Livello utente {#user-level}
 
@@ -26,7 +27,7 @@ AEM Forms su JEE consente agli sviluppatori di creare un DSC personalizzato (Doc
 
 ## Creazione di un componente DSC personalizzato {#create-custom-dsc-component}
 
-Crea un componente DSC personalizzato con due operazioni di servizio per comprimere e decomprimere l’elenco dei documenti. Questo componente utilizza il pacchetto java.util.zip per la compressione e la decompressione. Per creare un componente personalizzato, effettua le seguenti operazioni:
+Crea un componente DSC personalizzato con due operazioni del servizio per comprimere e decomprimere l’elenco dei documenti. Questo componente utilizza il pacchetto java.util.zip per la compressione e la decompressione. Per creare un componente personalizzato, effettua le seguenti operazioni:
 
 1. Aggiungi il file adobe-livecycle-client.jar alla libreria
 1. Aggiungi le icone richieste
@@ -127,7 +128,7 @@ Il file component.xml viene mostrato qui:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
@@ -219,6 +220,3 @@ Puoi utilizzare questo servizio ZIP per i seguenti casi di utilizzo:
 * I criteri proteggono un elenco di documenti e restituiscono come file ZIP.
 
 * Consenti agli utenti di scaricare tutti gli allegati di un&#39;istanza di processo come un singolo file ZIP.
-
-
-

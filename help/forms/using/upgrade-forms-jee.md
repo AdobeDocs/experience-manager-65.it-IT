@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
 
@@ -37,8 +37,8 @@ Esegui la seguente procedura per utilizzare il programma di installazione comple
 1. Vedi [Preparare l’aggiornamento ad AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) per apprendere ed eseguire le attività necessarie per garantire che l&#39;aggiornamento venga eseguito correttamente con tempi di inattività minimi del server.
 1. A seconda dell&#39;ambiente e del server applicazioni esistenti, scegli uno dei seguenti documenti e segui le istruzioni.
 
-   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+   * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms per JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
 Non è disponibile l&#39;aggiornamento diretto da LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms a AEM 6.5 Forms. Puoi eseguire un aggiornamento intermedio a una o più versioni di LiveCycle o AEM Forms e quindi eseguire l’aggiornamento a AEM 6.5 Forms. Per l&#39;elenco delle versioni intermedie e le relative istruzioni di aggiornamento, vedi [Scegliere un percorso di aggiornamento](upgrade.md).
