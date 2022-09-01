@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3583'
 ht-degree: 1%
 
 ---
@@ -91,9 +91,9 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64 bit)</p> </td>
-   <td><p>Z: Non supportato</p> </td>
-   <td><p> </p> </td>
+   <td><p>Oracle Java™ SE 11 (64 bit) <sup> [8] </sup> </p>  </td>
+   <td><p>R: Supportato</p> </td>
+   <td><p>Versioni e aggiornamenti minori </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bit</td>
@@ -361,6 +361,7 @@ Considera le seguenti eccezioni durante la scelta di una piattaforma per configu
 1. CRX-repository supporta la persistenza di tipo TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due diversi sistemi di database tra l&#39;application server e il CRX-repository. Tuttavia, in un ambiente AEM Forms su JEE, puoi utilizzare MongoMK con CRX-repository e un database relazionale supportato con application server.
 1. AEM Forms su JEE non supporta il server applicazioni WebSphere su CentOS.
 1. AEM Forms su JEE non supporta il controllo degli accessi basato sui ruoli JBoss (RBAC).
+1. AEM Forms su JEE supporta l&#39;SDK Oracle Java™ SE 11 (64 bit) solo per il server applicazioni JBoss EAP 7.4.
 
 Inoltre, considera i seguenti punti durante la scelta del software per Adobe AEM Forms sulle distribuzioni JEE:
 
@@ -794,6 +795,10 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
 > Piattaforme contrassegnate come [obsoleto in con AEM Forms 6.5.12.0 e 6.5.10.0 rimane in supporto fino alla versione 6.5 Service Pack 18 (6.5.18.0) di AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Cronologia revisioni {#revision-history}
+
+- 1 settembre 2022
+
+   - È stato aggiunto il supporto per Oracle Java™ SE 11 (64 bit) SDK per il server applicazioni JBoss EAP 7.4.
 
 - 3 marzo 2022
 
