@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
+source-git-commit: 21cbb1df659c8ff82170bb953b05260219dc4970
 workflow-type: tm+mt
-source-wordcount: '2624'
-ht-degree: 6%
+source-wordcount: '3237'
+ht-degree: 5%
 
 ---
 
@@ -78,9 +78,37 @@ ht-degree: 6%
 
 ## [!DNL Forms] {#forms-6514}
 
->[!NOTE]
->
->* I pacchetti del componente aggiuntivo [!DNL Experience Manager Forms] vengono rilasciati una settimana dopo la data di rilascio pianificata per il Service Pack di [!DNL Experience Manager]. In questo caso, i pacchetti aggiuntivi verranno rilasciati giovedì 1 settembre 2022. Inoltre, a questa sezione verrà aggiunto anche un elenco di correzioni e miglioramenti di Forms.
+* Quando un file viene allegato a un modulo adattivo per più pannelli e viene salvata una bozza del modulo adattivo, si verifica un errore. (NPR-38978)
+* Quando un utente converte un profilo RGB in un profilo CMYK utilizzando l’API Java createPDF2 con le impostazioni AdobePDF, l’opzione non funziona con l’API Java. L’opzione funziona correttamente con l’applicazione indipendente DistillerClient. (NPR-38858, CQ-4346181)
+* Dopo aver installato AEM Service Pack 12 6.5 di Forms (6.5.12.0), tutte le opzioni eccetto per chiudere l&#39;attività diventano non disponibili nel passaggio Assegna task di AEM flussi di lavoro. (NPR-38743)
+* In un documento di record (DoR), alcuni valori in una tabella vengono troncati. (NPR-38657)
+* Quando si visualizza l&#39;anteprima di FormSet con Data XML, quando l&#39;XDP contiene un campo mobile, quando si visualizza l&#39;anteprima di un FormSet non vengono visualizzati dati, ma vengono visualizzati dati quando si utilizza l&#39;opzione Preview PDF.
+* In Forms adattivo, i pulsanti di scelta e le caselle di controllo non sono nell&#39;ordine di tabulazione. (NPR-38645)
+* Quando utilizzi la `Summary Step` per generare un documento di record (DoR) per un modulo adattivo tradotto dopo l’invio del modulo, non viene tradotto in una lingua localizzata. (NPR-38567)
+* L&#39;opzione disattiva nuovo tentativo nei passaggi AEM flusso di lavoro non funziona come previsto. Il problema appare a intermittenza. (NPR-38547)
+* Quando si invia un modulo adattivo con un campo di testo RTF, la proprietà `an Internal Error while Submitting a Form` si verifica un errore. Quando l’utente attiva il campo RTF prima dell’invio del modulo, l’errore non si verifica. (NPR-38542)
+* Errore `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` è registrato. (NPR-38541)
+* Quando un utente carica un PDF in un modulo adattivo, il server AEM Forms non risponde. (NPR-38398)
+* Su un server AEM Forms su OSGi, quando utilizzi Document Service API per certificare PDF, non riesce e viene restituito un errore: com.adobe.fd.signature.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
+* Al momento della presentazione dei progetti di lettere, il `Could not upload asset from xml input` si verifica un errore. Non ha alcun impatto sulle funzionalità. Una volta aperta una bozza, la lettera viene resa correttamente. (CQ-4345979, CQ-4344418)
+* Quando una data viene inserita in formato tedesco e `Preview with Data` viene utilizzata per una lettera, non viene eseguito il rendering del campo Data. (CQ-4345783)
+* Quando si crea un portale web e si generano codici a barre basati sui dati, alcuni codici a barre non vengono decodificati correttamente. (CQ-4345743)
+* La conversione Postscript in PDF non esegue il rendering del documento di output con i colori previsti. (CQ-4345074)
+* Il risolutore risorse causa errori di invio intermittenti e fa sì che la stessa traccia dello stack venga visualizzata più volte per un singolo invio. (CQ-4344764)
+* Gli utenti non possono aprire le bozze modificate che utilizzano il `cmDataUrl` parametro . Le bozze si aprono bene per la prima volta. I problemi iniziano a comparire nei tentativi successivi. (CQ-4344418)
+* Quando l’utente accede al `&` simbolo in una comunicazione interattiva (IC), la bozza del codice IC corrispondente non viene caricata. (CQ-4343969)
+* Quando si utilizzano le opzioni di stile in AEM Forms Designer per generare file PCL, lo stile specificato non viene applicato ai file generati. (CQ-4339573)
+* Quando il conteggio delle pagine è superiore a 15, la conversione automatica dei moduli XDP dinamici in moduli adattivi non riesce. Questo funziona bene quando il conteggio delle pagine è inferiore a 15. (NPR-35337)
+* Quando si utilizza l’opzione Aggiungi ai preferiti, lo stato dell’interruttore non viene indicato nell’assistente vocale. (NPR-37137)
+* In Modello dati modulo, i valori dopo il decimale nel modello dati modulo basato su database vengono troncati per il tipo di dati in denaro e denaro piccolo. . (CQDOC-19509)
+* Quando si seleziona un collegamento di navigazione per un flusso di lavoro in HTML Workspace, non viene indicato che il collegamento di navigazione è selezionato. (NPR-37138)
+* La funzione Firma digitale non è compatibile con le linee guida di accessibilità. (NPR-37596)
+* AEM Forms utilizza log4j 1.x. Il supporto per log4j 1.x ha raggiunto la fine del ciclo di vita. (NPR-38273)
+* Quando si utilizza il database MSSQL come origine dati in un modello dati modulo e si recuperano i valori, vengono convertiti i numeri dopo il decimale nei valori di recupero. (CQ-4346190)
+* In Forms 6.5 Designer, quando si apre un modulo creato con Forms 6.1 Designer e si modifica una casella di testo, la spaziatura tra i paragrafi supera lo spazio specificato. Tutte le impostazioni precedenti dello spazio vengono rimosse e è necessario riformattare manualmente la casella di testo. (CQ-4341899)
+* Viene visualizzato un valore non corretto per il codice a barre SSCC-18. I server Forms omettono il valore nella parte destra del codice a barre. (CQ-4342400)
+* Per i PDF forms statici creati con Forms 6.5 Designer, l’accessibilità di PDF non riesce e viene generato un errore `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+* Aggiunta la possibilità di specificare il testo del Reader di schermate per i collegamenti ipertestuali in Forms Designer.(NPR-36221)
 
 
 ## Integrazioni {#integrations-6514}
@@ -208,12 +236,13 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 
 1. Il bundle OSGi `org.apache.jackrabbit.oak-core` è versione 1.22.12 o successiva (Usa console Web: `/system/console/bundles`). <!-- NPR-38747 -->
 
-
 ### Installa [!DNL Experience Manager] Pacchetto aggiuntivo di Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Ignora se non utilizzi [!DNL Experience Manager] Forms. Correzioni in [!DNL Experience Manager] Forms viene fornito tramite un pacchetto aggiuntivo separato una settimana dopo il programma [!DNL Experience Manager] Versione Service Pack.
+>Ignora se non utilizzi [!DNL Experience Manager] Forms.
+
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release. -->
 
 1. Assicurati di aver installato la [!DNL Experience Manager] Service Pack.
 1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) per il sistema operativo in uso.
