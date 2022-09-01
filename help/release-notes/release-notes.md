@@ -1,10 +1,11 @@
 ---
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
-description: '"Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5."'
+description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 783edcdf0f96426008b6f824a7aa0aa0deb5c613
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2624'
 ht-degree: 6%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->I servizi di contenuti avanzati non saranno disponibili per i nuovi clienti Experience Manager Assets On-Premise a partire dal 1° settembre 2022. Nessun impatto sui clienti esistenti On-Premise e Adobe Managed Services che hanno già abilitato questa funzionalità.
+>I servizi di contenuti avanzati non saranno disponibili per i nuovi clienti Experience Manager Assets On-Premise a partire dal 1° settembre 2022. Nessun impatto sui clienti esistenti On-Premise e Adobe Managed Services che dispongono già di questa funzionalità abilitata.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
