@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3791'
 ht-degree: 4%
 
 ---
@@ -332,7 +332,6 @@ ht-degree: 4%
    + [Configurazione di analisi e rapporti](using/configure-analytics-forms-documents.md)
    + [Visualizzare e comprendere i rapporti di AEM Forms Analytics](using/view-understand-aem-forms-analytics-reports.md)
    + [Creazione e gestione di test A/B per i moduli adattivi](using/ab-testing-adaptive-forms.md)
-   + [Integrare con Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Pubblicare ed elaborare AEM Forms {#publish-process-aem-forms}
    + [Introduzione alla pubblicazione di moduli su un portale](using/introduction-publishing-forms.md)
    + [Esempio per l&#39;integrazione del componente bozze e invii con il database](using/integrate-draft-submission-database.md)
