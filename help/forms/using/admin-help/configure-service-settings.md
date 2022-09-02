@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
 workflow-type: tm+mt
-source-wordcount: '10769'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
@@ -186,16 +186,6 @@ Per il servizio e-mail sono disponibili le seguenti impostazioni.
 **Utente SMTP:** Nome utente dell&#39;account utente da utilizzare per accedere al server SMTP.
 
 **Password SMTP:** Password associata all&#39;account utente SMTP.
-
-**Autenticazione 0Auth2.0:** Il servizio di autenticazione Auth2.0 offre supporto al servizio di posta integrato per consentire alle organizzazioni di rispettare i requisiti di sicurezza delle e-mail.
-
-**ID client:** Il portale di Azure genera un ID applicazione, utilizzato per l’autenticazione.
-
-**Segreto client:** Il portale di Azure genera una chiave segreta, che viene utilizzata per l’autenticazione.
-
-**Aggiorna token:**  Il client OAuth utilizza una stringa per ottenere un nuovo token di accesso senza l’interazione dell’utente.
-
-Per ulteriori informazioni su come recuperare e utilizzare l’ID client, il segreto client e il token di aggiornamento, vedi [Supporto dell’autenticazione OAuth2.0 per i servizi e-mail](/help/forms/using/oauth2-support-for-mail-service.md).
 
 **Sicurezza del trasporto SMTP:** Protocollo di sicurezza da utilizzare per la connessione al server SMTP:
 

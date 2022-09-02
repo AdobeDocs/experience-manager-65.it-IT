@@ -8,10 +8,10 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
 workflow-type: tm+mt
-source-wordcount: '3801'
-ht-degree: 5%
+source-wordcount: '3795'
+ht-degree: 4%
 
 ---
 
@@ -122,7 +122,6 @@ ht-degree: 5%
       + [Considerazioni generali sulla sicurezza per AEM Forms su JEE](using/general-security-considerations.md)
       + [Hardening del tuo AEM Forms sull&#39;ambiente JEE](using/hardening-aem-forms-jee-environment.md)
       + [Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE](using/configuring-secure-administration-settings-aem.md)
-      + [Supporto OAuth2 per il servizio di posta](using/oauth2-support-for-mail-service.md)
 + Modello dati modulo {#form-data-model}
    + [Introduzione all’integrazione dei dati di AEM Forms](using/data-integration.md)
    + [Configurare origini dati](using/configure-data-sources.md)
