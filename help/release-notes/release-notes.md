@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
 workflow-type: tm+mt
-source-wordcount: '3237'
+source-wordcount: '3224'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,6 @@ ht-degree: 5%
 * Il componente testo non è allineato quando viene aggiunto ai contenitori di layout nidificati. (NPR-38193)
 * Una scheda stile vuota era visualizzata quando non vi era alcuna configurazione del sistema di stili per un componente. La scheda ora è nascosta quando non è presente alcuna configurazione. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * La proprietà `useLegacyResponsiveBehaviour` funziona solo se autenticato. (NPR-37996)
-* L’aggiornamento di jquery-ui all’ultima versione causava l’interruzione dell’editor. (SITES-5647)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
