@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
+source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
-source-wordcount: '3791'
+source-wordcount: '3797'
 ht-degree: 4%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 4%
       + [Collegamento di AEM Forms con il LiveCycle Adobe](using/aem-livecycle-connector.md)
       + [Configurazione di AEM Forms per l’invio dei dati del modulo a un processo AEM Forms on JEE](using/submit-form-data-livecycle-process.md)
       + [App desktop AEM per AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [Supporto OAuth2 per il servizio di posta](/help/forms/using//oauth2-support-for-mail-service.md)
 + Aggiornare AEM Forms {#upgrade-aem-forms}
    + [Percorsi di aggiornamento disponibili](using/upgrade.md)
    + Aggiornare AEM Forms su OSGi {#aem-forms-osgi-upgrade}
