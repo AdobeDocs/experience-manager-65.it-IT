@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
+source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6282'
 ht-degree: 3%
 
 ---
@@ -119,7 +119,11 @@ Vedi [Installa feature pack 18912 per la migrazione di massa delle risorse](/hel
 
 1. Quando la connessione ha esito positivo, imposta quanto segue. Le intestazioni con asterisco (*) sono obbligatorie:
 
-   * **[!UICONTROL Azienda]** - il nome dell&#39;account Dynamic Media. Puoi avere un account Dynamic Media in Experience Manager. <!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Azienda]** - il nome dell&#39;account Dynamic Media.
+      >[!IMPORTANT]
+      In un’istanza di Experience Manager è supportata una sola configurazione Dynamic Media in Cloud Services; non aggiungere più di una configurazione. Configurazioni Dynamic Media multiple su un&#39;istanza di Experience Manager è _not_ supportato o consigliato dall’Adobe.
+
+      <!-- CQDOC-19579 and CQDOC-19612 -->
 
       Vedi anche [Configurare l’account alias della società Dynamic Media](/help/assets/dm-alias-account.md).
 
