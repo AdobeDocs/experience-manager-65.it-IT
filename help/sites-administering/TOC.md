@@ -8,9 +8,9 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '630'
 ht-degree: 35%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 35%
    + [Integrazione con Salesforce](salesforce.md)
    + [Integrazione con Adobe Target](target.md)
    + [Integrazione con Adobe Learning Manager](adobe-learningmanager.md)
-   + [Integrazione con Adobe Analytics](adobeanalytics.md)
+   + [Integrazione con Adobe Analytics ](adobeanalytics.md)
    + [Connessione ad Adobe Analytics e creazione di framework](adobeanalytics-connect.md)
    + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](adobeanalytics-link.md)
    + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](adobeanalytics-mapping.md)
@@ -128,7 +128,6 @@ ht-degree: 35%
    + [Articoli della community correlati](related-community-articles.md)
    + [Integrazione con Adobe Campaign Standard](campaignstandard.md)
    + [Avviso sulla fine del ciclo di vita dei visualizzatori Flash](flash-viewers-eol.md)
-   + [Feed di prodotto](product-feed.md)
    + [Integrazione con Adobe Dynamic Tag Management](dtm.md)
    + [Accesso ad Adobe Analytics e Adobe Target](opt-in.md)
    + [Portali AEM e portlet](aem-as-portal.md)
@@ -146,7 +145,6 @@ ht-degree: 35%
    + [Prerequisiti per l’integrazione con Adobe Target](target-requirements.md)
    + [Integrazione con Adobe Target tramite IMS](integration-target-ims.md)
    + [Classificazioni Adobe](adobeanalytics-classifications.md)
-   + [Integrazione con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
    + [Esportazione di frammenti di esperienza in Adobe Target](experience-fragments-target.md)
    + [Tecniche consigliate per i modelli e-mail](best-practices-for-email-templates.md)

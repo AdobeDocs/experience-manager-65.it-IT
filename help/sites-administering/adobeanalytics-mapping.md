@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 0%
+source-wordcount: '1445'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Utilizza la seguente procedura per mappare le variabili dei componenti CQ con le
 
    ![aa-13](assets/aa-13.png)
 
-   Sono disponibili diversi gruppi di componenti predefiniti: **Generale**, **Commerce**, **Community**, **Search&amp;Promote** e **Altro**. L’istanza AEM può essere configurata per visualizzare gruppi e componenti diversi.
+   Sono disponibili diversi gruppi di componenti predefiniti: **Generale**, **Commerce**, **Community** e **Altro**. L’istanza AEM può essere configurata per visualizzare gruppi e componenti diversi.
 
 1. Per mappare le variabili di Adobe Analytics con le variabili definite nel componente, trascina un **Variabile di Analytics** da Content Finder a un campo sul componente di tracciamento. Ad esempio, trascina `Page Name (pageName)` a `pagedata.title`.
 
@@ -121,10 +121,6 @@ L’elenco può essere manipolato nei seguenti modi:
    >[!NOTE]
    >
    >È possibile attivare un solo pulsante di filtro alla volta.
-
-   >[!NOTE]
-   >
-   >Anche le variabili di Search&amp;Promote appartengono alla sezione Conversione .
 
    1. L’elenco dispone anche di una funzione di ricerca che filtra gli elementi in base al testo inserito nel campo di ricerca.
    1. Se durante la ricerca di elementi nell’elenco viene attivata un’opzione di filtro, i risultati visualizzati verranno filtrati in base anche al pulsante attivo.
