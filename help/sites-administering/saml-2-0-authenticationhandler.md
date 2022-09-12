@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ La [Console web](/help/sites-deploying/configuring-osgi.md) fornisce accesso al 
 >
 >Il gestore di autenticazione SAML 2.0 è disabilitato per impostazione predefinita. Per abilitare il gestore, è necessario impostare almeno una delle seguenti proprietà:
 >
->* URL del POST del provider di identità.
+>* L’URL POST del provider di identità o l’URL IDP.
 >* ID entità fornitore di servizi.
 >
 
@@ -57,7 +57,7 @@ La [Console web](/help/sites-deploying/configuring-osgi.md) fornisce accesso al 
 
 **Alias certificato IDP** L&#39;alias del certificato dell&#39;IdP nel truststore globale. Se questa proprietà è vuota, il gestore di autenticazione viene disabilitato. Consulta il capitolo &quot;Aggiungi il certificato IdP al TrustStore AEM&quot; per informazioni su come configurarlo.
 
-**URL del provider di identità** URL dell’IDP a cui deve essere inviata la richiesta di autenticazione SAML. Se questa proprietà è vuota, il gestore di autenticazione viene disabilitato.
+**URL IDP** URL dell’IDP a cui deve essere inviata la richiesta di autenticazione SAML. Se questa proprietà è vuota, il gestore di autenticazione viene disabilitato.
 
 >[!CAUTION]
 >
