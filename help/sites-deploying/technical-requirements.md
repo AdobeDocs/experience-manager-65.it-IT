@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9faad7562a85f368ae47bb0c3a381bebe4c8c612
+source-git-commit: 80702b274c35dae7fd7a3d8137124e1240e57d7c
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3452'
 ht-degree: 1%
 
 ---
@@ -492,9 +492,11 @@ Per Windows x86:
 > Inoltre:
 >
 > * PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
-> * PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione.
+> > * Le conversioni di PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
+
+> * PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione sul sistema operativo Windows.
+> * PDF Generator supporta le versioni a 32 bit e a 64 bit di OpenOffice sul sistema operativo Linux.
 > * PDF Generator non supporta Microsoft Office 365.
-> * Le conversioni di PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
 > * Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
 > * Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >

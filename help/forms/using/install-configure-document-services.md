@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
+source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
 workflow-type: tm+mt
-source-wordcount: '5365'
+source-wordcount: '5369'
 ht-degree: 2%
 
 ---
@@ -654,7 +654,7 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 **Microsoft® Windows**
 
-* Assicurati che [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft Office è installato e le finestre di dialogo di apertura vengono annullate per tutte le applicazioni.
+* Assicurati che a 32 bit [versione supportata ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Microsoft Office è installato e le finestre di dialogo di apertura vengono annullate per tutte le applicazioni.
 * Assicurati che un utente PDF Generator sia aggiunto nell’interfaccia utente di configurazione di PDF.
 * Assicurati che l’utente di PDF Generator sia membro del gruppo di amministratori e del [Sostituire un token a livello di processo](#grant-the-replace-a-process-level-token-privilege) il privilegio è impostato per l&#39;utente.
 * Assicurati che l’utente sia configurato nell’interfaccia utente di PDF Generator ed esegua le seguenti azioni:
@@ -668,7 +668,7 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 **Linux®**
 
-* Assicurati che [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Open Office installato, le finestre di dialogo di apertura vengono annullate per tutte le applicazioni e l&#39;avvio delle applicazioni di Office è stato completato.
+* Assicurati che siano a 32 bit o 64 bit [versione supportata](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) di Open Office installato, le finestre di dialogo di apertura vengono annullate per tutte le applicazioni e l&#39;avvio delle applicazioni di Office è stato completato.
 * Creare una variabile di ambiente `OpenOffice_PATH` e impostarlo per puntare all&#39;installazione di OpenOffice è impostato nel [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o il profilo dt (Device Tree).
 * In caso di problemi durante l&#39;installazione di OpenOffice, assicurati che [Librerie a 32 bit](#extrarequirements) necessari per l&#39;installazione di OpenOffice sono disponibili.
 
