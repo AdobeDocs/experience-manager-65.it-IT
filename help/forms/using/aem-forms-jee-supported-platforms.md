@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: bc9168eb22f2ebe7ae5408d5e033e085e47c7438
+source-git-commit: 923ee0e20a6e41c9493a77b179f93dd81ff91020
 workflow-type: tm+mt
-source-wordcount: '3636'
+source-wordcount: '3683'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 <div class="preview">
 
-AEM 6.5 Forms Service Pack 12 (6.5.12.0) fornisce l’ultimo programma di installazione completo per AEM 6.5 Forms su JEE.
+L&#39;Adobe ha rilasciato un [installatore completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5 Forms Service Pack 12 (6.5.12.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo fornisce il supporto per le nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
 
-Adobe consiglia di utilizzare <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html"> AEM 6.5.12.0 Forms su JEE </a> installatore completo (rilasciato il 03 marzo 2022) invece del programma di installazione AEM 6.5 (rilasciato il 08 aprile 2019).
+Se stai eseguendo una nuova installazione o pianificando l&#39;utilizzo del software più recente per il tuo Forms 6.5 su JEE, l&#39;Adobe consiglia di utilizzare [Modulo di installazione completo di AEM 6.5.12.0 Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 03 marzo 2022 invece del programma di installazione di Forms 6.5 AEM rilasciato il 08 aprile 2019.
 
 </div>
 
