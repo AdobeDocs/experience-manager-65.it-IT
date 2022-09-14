@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 060bfb2ed3288b0ef9fbb5ba7f6b06ee027062b6
+source-git-commit: bc9168eb22f2ebe7ae5408d5e033e085e47c7438
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3636'
 ht-degree: 1%
 
 ---
@@ -831,6 +831,12 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
       - [!DNL Microsoft Office 2019]
       - [!DNL Microsoft Windows Server 2019]
       - [!DNL RHEL8]
-   - 9 settembre 2020
 
-      - È stata modificata la versione supportata di iOS per l’app AEM Forms in iOS 12. La versione precedente era iOS 11.
+- 3 dicembre 2020
+   - È stato aggiunto il supporto con AEM Forms 6.5.7.0 o versione successiva per la seguente piattaforma:
+      - [!DNL Microsoft SQL Server 2019]
+
+- 9 settembre 2020
+
+   - È stata modificata la versione supportata di iOS per l’app AEM Forms in iOS 12. La versione precedente era iOS 11.
+
