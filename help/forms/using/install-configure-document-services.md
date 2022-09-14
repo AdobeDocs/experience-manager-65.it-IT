@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 2%
@@ -605,11 +605,12 @@ Lo strumento Preparazione del sistema controlla se il computer è configurato co
    >
    > * Puoi usare il file srt_config.yaml per configurare diverse impostazioni di . Il formato del file è:
 
-       #===================================================================================
        # Configurazione SRT
-       #===================================================================================
-       #Note - seguire il formato corretto per evitare errori di analisi
-       ad esempio &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Nota - Seguire il formato corretto per evitare errori di analisi
+       
+       # &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale: (campo obbligatorio)Impostazioni internazionali da utilizzare per l’SRT. Impostazioni internazionali supportate [en/fr/de/ja].
        locale: en
        
