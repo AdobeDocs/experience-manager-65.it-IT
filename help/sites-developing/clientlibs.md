@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 4789b2b5105e5a883ab816c82c9ff07ea76978ff
+source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2861'
 ht-degree: 2%
 
 ---
@@ -224,7 +224,7 @@ L&#39;incorporamento del codice è utile per fornire l&#39;accesso alle librerie
 
 #### Cartelle della libreria client specifiche per l’app {#app-specific-client-library-folders}
 
-È consigliabile mantenere tutti i file relativi all’applicazione nella cartella dell’applicazione sottostante `/app`. È inoltre consigliabile negare l’accesso ai visitatori del sito web `/app` cartella. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la `/etc` cartella che incorpora la libreria client riportata di seguito `/app`.
+È consigliabile mantenere tutti i file relativi all’applicazione nella cartella dell’applicazione sottostante `/apps`. È inoltre consigliabile negare l’accesso ai visitatori del sito web `/app` cartella. Per soddisfare entrambe le best practice, crea una cartella della libreria client di seguito `/apps`e renderlo accessibile tramite il servlet proxy come descritto in [Individuazione di una cartella della libreria client e utilizzo del servlet delle librerie client proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Utilizzare la proprietà categories per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungi una proprietà all&#39;incorporamento `cq:ClientLibraryFolder` utilizzando i seguenti attributi di proprietà:
 
