@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3281'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 5%
 * Quando si seleziona un collegamento di navigazione per un flusso di lavoro in HTML Workspace, non viene indicato che il collegamento di navigazione è selezionato. (NPR-37138)
 * La funzione Firma digitale non è compatibile con le linee guida di accessibilità. (NPR-37596)
 * AEM Forms utilizza log4j 1.x. Il supporto per log4j 1.x ha raggiunto la fine del ciclo di vita. (NPR-38273)
-* Quando si utilizza il database MSSQL come origine dati in un modello dati modulo e si recuperano i valori, vengono convertiti i numeri dopo il decimale nei valori di recupero. (CQ-4346190)
+* Quando si utilizza il database MSSQL come origine dati in un modello dati modulo e si recuperano i valori, i numeri dopo il decimale nei valori di recupero vengono troncati. (CQ-4346190)
 * In Forms 6.5 Designer, quando si apre un modulo creato con Forms 6.1 Designer e si modifica una casella di testo, la spaziatura tra i paragrafi supera lo spazio specificato. Tutte le impostazioni precedenti dello spazio vengono rimosse e è necessario riformattare manualmente la casella di testo. (CQ-4341899)
 * Viene visualizzato un valore non corretto per il codice a barre SSCC-18. I server Forms omettono il valore nella parte destra del codice a barre. (CQ-4342400)
 * Per i PDF forms statici creati con Forms 6.5 Designer, l’accessibilità di PDF non riesce e viene generato un errore `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+Questo pacchetto è necessario per i clienti che utilizzano GraphQL; questo consente loro di aggiungere la definizione dell&#39;indice richiesta in base alle funzioni effettivamente utilizzate.
 
 * Come [!DNL Microsoft® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] non supporta installazioni chiavi in mano per [!DNL AEM Forms 6.5.10.0].
 
