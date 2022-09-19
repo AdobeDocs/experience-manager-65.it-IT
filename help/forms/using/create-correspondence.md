@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,22 @@ Tali istanze possono essere salvate solo quando la lettera viene visualizzata su
 1. In AEM, apri Configurazione console Web Adobe Experience Manager per il server utilizzando il seguente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Individua **[!UICONTROL Configurazioni di gestione della corrispondenza]** e fai clic su di esso.
 1. Controlla **[!UICONTROL Gestisci istanze lettera su pubblicazione]** configurazione e quindi fai clic su **[!UICONTROL Salva]**.
+
+### Abilita salvataggio della bozza {#enable-save-draft-feature}
+
+Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, esegui i seguenti passaggi per abilitare la funzione Salva come bozza:
+
+1. Apri la configurazione della console Web per il server utilizzando il seguente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. Trova e fai clic sul pulsante **Modifica** accanto all’icona *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* impostazione.
+
+1. In *URL autore VersionRestoreManager* specifica l’URL dell’istanza di authoring corrispondente.
+
+1. Fai clic su Salva .
+
+La *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* per impostazione predefinita, le proprietà non vengono riportate nell&#39;istanza di pubblicazione. Per abilitare il ricaricamento della bozza nell&#39;istanza di pubblicazione, queste proprietà sono necessarie nell&#39;istanza di pubblicazione.
+
+Per il riporto *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* proprietà per pubblicare l&#39;istanza, disattiva il componente come *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* nell’istanza Author utilizzando l’URL:`http://server:port/system/console/components`
 
 Quando il salvataggio delle istanze di lettera è attivato, è possibile selezionare la posizione in cui salvare le istanze di lettera. Sono disponibili due opzioni per salvare le istanze di lettera: Salvataggio locale o salvataggio remoto.
 
