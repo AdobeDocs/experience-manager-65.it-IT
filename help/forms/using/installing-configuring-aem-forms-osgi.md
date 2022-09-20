@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1884'
 ht-degree: 5%
 
 ---
@@ -105,6 +105,9 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 
    * libicu
 
+* Installa [Microsoft Visual Studio 2019 ridistribuibile a 32 bit](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Installare il pacchetto aggiuntivo di AEM Forms {#install-aem-forms-add-on-package}
 
 Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. Il pacchetto contiene l’acquisizione di dati AEM Forms e altre funzionalità. Esegui i seguenti passaggi per installare il pacchetto aggiuntivo:
@@ -124,7 +127,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
 
 ### Installazione automatica dei componenti ridistribuibili di Visual Studio (solo Windows) {#automatic-installation-visual-studio-redistributables}
 
-Se si installa un&#39;istanza AEM in modalità elevata, i ridistribuibili di Visual Studio mancanti vengono installati automaticamente durante l&#39;installazione del pacchetto aggiuntivo AEM Forms.
+Se si installa un&#39;istanza AEM in modalità elevata, i ridistribuibili a 32 bit di Visual Studio vengono installati automaticamente durante l&#39;installazione del pacchetto aggiuntivo AEM Forms.
 
 Per valutare se i ridistribuibili di Visual Studio sono installati automaticamente, aprire `error.log` file disponibile nella `/crx-repository/logs/` directory. I registri includono il seguente messaggio:
 
