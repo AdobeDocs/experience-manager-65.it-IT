@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3867'
 ht-degree: 0%
 
 ---
@@ -291,19 +291,29 @@ Tali istanze possono essere salvate solo quando la lettera viene visualizzata su
 
 ### Abilita salvataggio della bozza {#enable-save-draft-feature}
 
-Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, esegui i seguenti passaggi per abilitare la funzione Salva come bozza:
+Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, esegui i seguenti passaggi sull’istanza di authoring e pubblicazione per abilitare la funzione Salva come bozza:
 
-1. Apri la configurazione della console Web per il server utilizzando il seguente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+La *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* per impostazione predefinita, le proprietà non vengono riportate nell&#39;istanza di pubblicazione. Per il riporto *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* proprietà per pubblicare l&#39;istanza, disattivare il [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Per disattivare il componente:
 
-1. Trova e fai clic sul pulsante **Modifica** accanto all’icona *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* impostazione.
+1. Nell’istanza di authoring, apri la console Componenti web di Adobe Experience Manager. L’URL predefinito è `http://author-server:port/system/console/components`
 
-1. In *URL autore VersionRestoreManager* specifica l’URL dell’istanza di authoring corrispondente.
+1. Cerca il **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
-1. Fai clic su Salva .
+1. Fai clic su ![Pulsante Disattiva](/help/forms/using/assets/enablebutton.png) per disabilitare [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente.
 
-La *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* per impostazione predefinita, le proprietà non vengono riportate nell&#39;istanza di pubblicazione. Per abilitare il ricaricamento della bozza nell&#39;istanza di pubblicazione, queste proprietà sono necessarie nell&#39;istanza di pubblicazione.
+![Istanza Autore](/help/forms/using/assets/replicationproperties.png)
 
-Per il riporto *cq:lastReplicationAction*, *cq:lastreplicate* e *cq:lastReplicatedBy* proprietà per pubblicare l&#39;istanza, disattiva il componente come *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* nell’istanza Author utilizzando l’URL:`http://server:port/system/console/components`
+Per abilitare la funzione Salva come bozza, sostituisci l’URL esistente in [!UICONTROL URL autore VersionRestoreManager] con l’URL dell’istanza di authoring. Per sostituire l’URL:
+
+1. Nell’istanza di pubblicazione, apri [!UICONTROL Configurazione della console Web di Aode Manager]. L’URL predefinito è `https://publish-server:port/system/console/configMgr`
+
+1. Cerca e apri le **[!UICONTROL Gestione della corrispondenza - Configurazioni di ripristino della versione dell&#39;istanza dell&#39;autore]** componente.
+
+1. Individua il **[!UICONTROL URL autore VersionRestoreManager]** e specifica l’URL per l’istanza di authoring.
+
+1. Fai clic su Salva.
+
+![Pubblica istanza](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando il salvataggio delle istanze di lettera è attivato, è possibile selezionare la posizione in cui salvare le istanze di lettera. Sono disponibili due opzioni per salvare le istanze di lettera: Salvataggio locale o salvataggio remoto.
 
@@ -323,7 +333,7 @@ Questa opzione esiste per le persone che hanno dei dubbi sul salvataggio dei dat
 
 #### Specificare le impostazioni dell&#39;autore di elaborazione {#specify-processing-author-settings}
 
-1. In AEM, apri Configurazione console Web Adobe Experience Manager per il server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, apri Configurazione console Web Adobe Experience Manager per il server utilizzando il seguente URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Configurazione della console Web di Adobe Experience Manager](assets/2configmanager.png)
 
