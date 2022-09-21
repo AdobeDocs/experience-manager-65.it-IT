@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3814'
 ht-degree: 4%
 
 ---
@@ -330,7 +330,8 @@ ht-degree: 4%
 + Integrare AEM Forms con le soluzioni Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Creare esperienze mirate in AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Misurare e migliorare l’efficacia e la conversione dei moduli](using/measure-improve-performance-forms-documents.md)
-   + [Configurazione di analisi e rapporti](using/configure-analytics-forms-documents.md)
+   + [Analytics con Framework di Cloud Service](using/configure-analytics-forms-documents.md)
+   + [Analytics con Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [Visualizzare e comprendere i rapporti di AEM Forms Analytics](using/view-understand-aem-forms-analytics-reports.md)
    + [Creazione e gestione di test A/B per i moduli adattivi](using/ab-testing-adaptive-forms.md)
 + Pubblicare ed elaborare AEM Forms {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 4%
 + Risoluzione dei problemi {#troubleshooting}
    + [Impossibile utilizzare alcune funzionalità dei moduli con alcune versioni di Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Passaggi aggiuntivi per ottenere e-mail con allegato per la versione adattiva di Forms On JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Impossibile convertire il file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Documentazione legacy {#legacy-documentation}
    + [Utilizzo del servizio di script execute in AEM Forms su JEE Workbench per creare dati XML](developing/building-xml.md)
    + [Compressione e decompressione dei file tramite AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)

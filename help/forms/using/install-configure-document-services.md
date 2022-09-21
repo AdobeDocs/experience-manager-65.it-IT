@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5535'
 ht-degree: 2%
 
 ---
@@ -786,6 +786,15 @@ Scadenza ++ licenza di Adobe Acrobat installato su AEM Forms Server
 * È possibile accedere online entro 7 giorni dal primo avvio del prodotto di Adobe per completare l&#39;attivazione e la registrazione online oppure utilizzare un dispositivo abilitato per Internet e il numero di serie del prodotto per completare il processo. Per istruzioni dettagliate, vedi [Attivazione offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Impossibile convertire il file Word o Excel in PDF su Windows Server
+
+Quando l&#39;utente prova a convertire i file Word o Excel in PDF su Microsoft Windows Server, si verifica il seguente errore:
+
+*Messaggio di errore dal convertitore principale: ALC-PDG-015-003-Il sistema non può aprire il file di input. Invia nuovamente il file o contatta l&#39;amministratore di sistema.*
+
+Per risolvere il problema, vedi [Impossibile convertire il file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## Passaggi successivi {#next-steps}
 
