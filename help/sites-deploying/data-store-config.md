@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
+source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Una volta scaricato, è possibile installare e configurare il S3 Connector come 
 1. Modifica il file e aggiungi le opzioni di configurazione richieste dalla configurazione.
 1. Inizia AEM.
 
-### Aggiornamento a una nuova versione del connettore S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Aggiornamento a una nuova versione del connettore S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
 Per effettuare l’aggiornamento a una nuova versione del connettore S3 1.10.x (ad esempio, da 1.10.0 a 1.10.4), effettua le seguenti operazioni:
 
@@ -260,7 +260,7 @@ Puoi utilizzare il file di configurazione con le seguenti opzioni:
  </tbody>
 </table>
 
-**Memorizzazione in cache del DataStore**
+### Memorizzazione in cache del DataStore {#data-store-caching}
 
 >[!NOTE]
 >
@@ -272,11 +272,11 @@ Puoi anche aggiornare la cache offline utilizzando la `datastorecacheupgrade` co
 
 La cache ha un limite di dimensioni e può essere configurata utilizzando il parametro cacheSize.
 
-**Download**
+#### Download {#downloads}
 
 La cache locale verrà controllata per individuare il record del file/BLOB richiesto prima di accedervi dal DataStore. Quando la cache supera il limite configurato (vedi `cacheSize` (Parametro) durante l&#39;aggiunta di un file nella cache, alcuni dei file verranno eliminati per recuperare spazio.
 
-**Caricamento asincrono**
+#### Caricamento asincrono {#async-upload}
 
 La cache supporta caricamenti asincroni in DataStore. I file vengono memorizzati localmente, nella cache (nel file system) e inizia un processo asincrono per caricare il file. Il numero di caricamenti asincroni è limitato dalle dimensioni della cache di staging. La dimensione della cache di staging viene configurata utilizzando il `stagingSplitPercentage` parametro . Questo parametro definisce la percentuale di dimensione della cache da utilizzare per la cache di staging. Inoltre, la percentuale di cache disponibile per i download viene calcolata come **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
