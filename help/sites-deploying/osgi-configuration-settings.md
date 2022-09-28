@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,6 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 
 * La **Password amministratore** devono essere modificate dopo l&#39;installazione per garantire che [sicurezza](/help/sites-administering/security-checklist.md) della tua istanza.
 * Altre modifiche non dovrebbero essere necessarie e occorre prestare attenzione in quanto possono influenzare l’accesso all’archivio.
-
-**Servizio di posta Wiki** Configura le impostazioni e-mail per le e-mail inviate da un wiki.
 
 **Console di gestione Apache Felix OSGi** Configura:
 
@@ -249,7 +247,7 @@ Se un valore del percorso configurato termina con una barra, viene eseguita la r
 **Helper font GFX Day Commons** Quando si esegue il rendering di immagini, è possibile utilizzare DrawText per incorporare il testo. Per questo è anche possibile installare i propri font:
 
 * Definisci la **Percorso font** per cercare font specifici per il progetto.
-Esempio, `/apps/myapp/fonts`.
+Esempio: `/apps/myapp/fonts`.
 
 **Configurazione proxy dei componenti HTTP Apache** Configurazione proxy per tutto il codice che utilizza il client HTTP Apache, utilizzato quando viene effettuato un HTTP; ad esempio in caso di replica.
 
@@ -447,10 +445,6 @@ Controlla il parser HTML per il rewriter CQ.
 **Pool di connessioni JDBC Day Commons** Configura l&#39;accesso a un database esterno utilizzato come origine per il contenuto.
 
 Questa è una configurazione di fabbrica, quindi è possibile configurare più istanze.
-
-**Servizio sessioni Adobe CQ Media DPS** Gestisci sessioni DPS da utilizzare con le pubblicazioni.
-
-In particolare puoi definire le `dps.session.service.url.name`: il valore predefinito è impostato su [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **Rewriter CDN** La comunicazione tra AEM e una rete CDN deve essere assicurata in modo che le risorse/i file binari siano consegnati all’utente finale in modo sicuro. Sono necessarie due attività:
 
