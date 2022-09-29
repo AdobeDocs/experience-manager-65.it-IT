@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 0%
@@ -99,7 +99,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Perché alcuni font visualizzati nel modulo HTML sono diversi da quelli utilizzati durante la progettazione del modulo?
 
-   Risposta: I moduli di HTML5 non incorporano i font (a differenza dei PDF forms in cui i font sono incorporati nel modulo). Affinché il rendering della versione HTML del modulo sia eseguito come previsto, assicurati che i font specificati nell’XDP siano disponibili sul server e sul computer client. Se i font richiesti non sono disponibili sul server, vengono utilizzati i font di ritorno. Inoltre, se si utilizzano font nel modello di modulo che non sono disponibili sul dispositivo client, i font predefiniti del browser vengono utilizzati per eseguire il rendering del testo.
+   Risposta: HTML5 Forms non consente l’incorporazione di font (a differenza dei PDF forms in cui i font sono incorporati nel modulo). Affinché il rendering della versione HTML di un modulo sia eseguito come previsto, assicurati che i font siano disponibili nell’archivio CRX (AEM Content Repository) del server AEM Forms e nel computer in cui è installato AEM Designer. Se i font non sono disponibili nel CRX Repository del server AEM Forms o nel percorso in cui è installato AEM Designer, viene eseguito il rendering del modulo con font di fallback.
 
 1. Nei moduli di HTML sono supportati gli attributi vAlign e hAlign?
 
