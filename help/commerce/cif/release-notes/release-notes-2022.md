@@ -2,10 +2,10 @@
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di AEM Content and Commerce
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
+source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 45%
+source-wordcount: '812'
+ht-degree: 44%
 
 ---
 
@@ -20,6 +20,21 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 | Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data di rilascio: Settembre 2022
+
+| Componente | Versione | Dettagli |
+|:-------|:-----:|---------------------:|
+| Componente aggiuntivo CIF | 2022.09.20.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
+| Componenti core CIF | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| Sito di riferimento CIF Venia | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+
+### Novità {#what-is-new-september}
+
+* Gli autori possono arricchire dinamicamente gli elenchi di prodotti con Frammenti esperienza (esempio: Inserire banner tra le inserzioni di prodotti)
+* Il componente Elenco supporta le pagine di prodotti/categorie associate per mostrare in modo dinamico le pagine correlate
+* Supporto per i componenti Peregrine 12.5
+* Supporto per il caricamento del prezzo lato client nel teaser e nel carosello del prodotto
 
 ## Data di rilascio: Luglio 2022
 
@@ -42,15 +57,15 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-june}
 
-* L’arricchimento del catalogo dei prodotti ora supporta AEM pagine. Questo consente agli autori di gestire l’associazione pagina - prodotto.
+* L’arricchimento del catalogo dei prodotti ora supporta le pagine AEM. Questo consente agli autori di gestire l’associazione pagina - prodotto.
 
 * Vari miglioramenti dei componenti core CIF
 
 ### Correzioni di bug {#bug-fixes-june}
 
-* Aggiungi token di accesso al recupero prezzi lato client
+* Aggiungere token di accesso al recupero prezzi lato client
 
-* Componente pagina errato nel livello dati
+* Componente pagina errato in Data Layer
 
 ## Data di rilascio: Maggio 2022
 
