@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -243,11 +243,6 @@ Se un valore del percorso configurato termina con una barra, viene eseguita la r
 * **Utente script** - questa proprietà opzionale può specificare l&#39;account utente dell&#39;archivio utilizzato per leggere gli script. Se non viene specificato alcun account, `admin` l&#39;utente viene utilizzato per impostazione predefinita.
 
 * **Estensioni predefinite** Elenco di estensioni per le quali verrà utilizzato il comportamento predefinito. Questo significa che l’ultimo segmento del percorso del tipo di risorsa può essere utilizzato come nome dello script.
-
-**Helper font GFX Day Commons** Quando si esegue il rendering di immagini, è possibile utilizzare DrawText per incorporare il testo. Per questo è anche possibile installare i propri font:
-
-* Definisci la **Percorso font** per cercare font specifici per il progetto.
-Esempio: `/apps/myapp/fonts`.
 
 **Configurazione proxy dei componenti HTTP Apache** Configurazione proxy per tutto il codice che utilizza il client HTTP Apache, utilizzato quando viene effettuato un HTTP; ad esempio in caso di replica.
 
