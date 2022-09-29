@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
+source-git-commit: a90ea57142110ebd11a8a9580c29df1698b8dce1
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -103,11 +103,11 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Nei moduli di HTML sono supportati gli attributi vAlign e hAlign?
 
-   Sì, gli attributi vAlign e hAlign sono supportati. L&#39;attributo vAlign non è supportato in Internet Explorer e nel campo su più righe.
+   Risposta: Sì, gli attributi vAlign e hAlign sono supportati. L&#39;attributo vAlign non è supportato in Internet Explorer e nel campo su più righe.
 
 1. I moduli di HTML5 supportano i caratteri ebraici?
 
-   I moduli HTML5 supportano i caratteri ebraici in tutti i browser, ad eccezione di Microsoft Internet Explorer.
+   Risposta: I moduli HTML5 supportano i caratteri ebraici in tutti i browser, ad eccezione di Microsoft Internet Explorer.
 
 1. I moduli di HTML5 hanno limitazioni ai campi numerici?
 
@@ -115,7 +115,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Perché i moduli HTML hanno dimensioni superiori ai PDF forms?
 
-   Per eseguire il rendering di un file XDP in un modulo HTML, sono necessarie molte strutture e oggetti di dati intermedi, ad esempio dom di moduli, dom di dati e dom di layout.
+   Risposta: Per eseguire il rendering di un file XDP in un modulo HTML, sono necessarie molte strutture e oggetti di dati intermedi, ad esempio dom di moduli, dom di dati e dom di layout.
 
    Per gli PDF forms, Adobe Acrobat dispone di un motore XTG integrato per creare strutture e oggetti di dati intermedi. Acrobat si occupa anche del layout e degli script.
 
@@ -142,12 +142,13 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Qual è l’ordine di lettura della descrizione comandi e della didascalia per gli assistenti vocali?
 
+   Risposta:
    * Se sono presenti sia la didascalia che la descrizione comandi, viene letta l’unica didascalia. Se la didascalia non è disponibile, viene letta la descrizione comandi. È inoltre possibile specificare la precedenza per la lettura in un file XDP utilizzando il form designer
    * Quando passi il cursore su un elemento, viene visualizzata la descrizione comando. Se la descrizione comando non è disponibile, viene visualizzato il testo vocale. Se il testo vocale non è disponibile, viene visualizzato il nome del campo.
 
 1. Quando passi il cursore del mouse su un campo, viene visualizzata una descrizione comandi. Come disattivarlo?
 
-   Per disattivare la descrizione comandi al passaggio del mouse, selezionarne una nel pannello di accesso facilitato di Designer.
+   Risposta: Per disattivare la descrizione comandi al passaggio del mouse, selezionarne una nel pannello di accesso facilitato di Designer.
 
 1. In Designer, un utente può configurare proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. Durante il rendering dei moduli, i moduli di HTML5 tengono conto di tali proprietà di aspetto personalizzate?
 
@@ -155,7 +156,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Quando un modulo HTML5 viene aperto in un browser supportato, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Quando lo stesso modulo HTML5 viene visualizzato in anteprima in Forms Designer, i campi e il layout non vengono visualizzati correttamente e i sottomoduli vengono visualizzati nella posizione corretta. Come risolvere il problema?
 
-   Quando un sottomodulo è impostato per far fluire il contenuto e il sottomodulo ha un elemento di bordo nascosto, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Per risolvere il problema, è possibile rimuovere o commentare il &lt;border> elementi dell&#39;XDP corrispondente. Ad esempio: &lt;border> è contrassegnato come commento:
+   Risposta: Quando un sottomodulo è impostato per far fluire il contenuto e il sottomodulo ha un elemento di bordo nascosto, il bordo dei campi posizionati in modo adiacente non è allineato correttamente oppure i sottomoduli appaiono sovrapposti. Per risolvere il problema, è possibile rimuovere o commentare il &lt;border> elementi dell&#39;XDP corrispondente. Ad esempio: &lt;border> è contrassegnato come commento:
 
    ```xml
                <!--<border>
@@ -166,7 +167,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l�
 
 1. Perché gli assistenti vocali non funzionano correttamente con l’oggetto Campo data/ora?
 
-   Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile immettere manualmente data/ora nel campo per consentire all’assistente vocale di leggerlo. Utilizzare il testo della descrizione comando o dell’assistente vocale per istruire l’utente sulla selezione manuale di data/ora per il campo.
+   Risposta: Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile immettere manualmente data/ora nel campo per consentire all’assistente vocale di leggerlo. Utilizzare il testo della descrizione comando o dell’assistente vocale per istruire l’utente sulla selezione manuale di data/ora per il campo.
 
 1. I moduli di HTML5 supportano i pattern di visualizzazione per i campi mobili?
 
@@ -192,12 +193,13 @@ Risposta: Il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una d
 
 1. Esiste una convenzione di denominazione consigliata e ci sono delle parole chiave riservate da evitare?
 
+   Risposta:
    * In AEM Forms Designer, si consiglia di non iniziare il nome di un oggetto (ad esempio un sottomodulo o un campo di testo) con un carattere di sottolineatura (_). Per utilizzare il carattere di sottolineatura all&#39;inizio del nome, aggiungi un prefisso dopo il carattere di sottolineatura,_&lt;prefix>&lt;objectname>.
    * Tutte le API dei moduli di HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizza un nome non identico a [API di HTML5 forms](/help/forms/using/scripting-support.md).
 
 1. I moduli di HTML5 supportano i campi mobili?
 
-   Sì, HTML5 Forms supporta i campi mobili. Per abilitare i campi mobili, aggiungi la seguente proprietà al profilo di rendering:
+   Risposta: Sì, HTML5 Forms supporta i campi mobili. Per abilitare i campi mobili, aggiungi la seguente proprietà al profilo di rendering:
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ Risposta: Il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una d
 
 1. HTML5 forms esegue lo script di inizializzazione e l’evento form ready più volte?
 
-   Sì, gli script di inizializzazione e gli eventi form ready vengono eseguiti più volte, almeno una volta sul server e una volta sul lato client. È consigliabile creare script come eventi initialize o form:ready in base ad alcune logiche aziendali (dati modulo o campo) in modo che l&#39;azione venga eseguita in base allo stato dei dati e all&#39;idempotenti (se i dati sono uguali).
+   Risposta: Sì, gli script di inizializzazione e gli eventi form ready vengono eseguiti più volte, almeno una volta sul server e una volta sul lato client. È consigliabile creare script come eventi initialize o form:ready in base ad alcune logiche aziendali (dati modulo o campo) in modo che l&#39;azione venga eseguita in base allo stato dei dati e all&#39;idempotenti (se i dati sono uguali).
 
 ### Progettazione di XDP {#designing-xdp}
 
