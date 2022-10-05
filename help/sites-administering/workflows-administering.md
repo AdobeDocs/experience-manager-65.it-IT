@@ -10,33 +10,33 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
+source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 0%
+source-wordcount: '1134'
+ht-degree: 84%
 
 ---
 
 # Amministrazione delle istanze dei flussi di lavoro{#administering-workflow-instances}
 
-La console del flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
+La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
 
 >[!NOTE]
 >
 >La [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
 
-Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire **Strumenti** riquadro, quindi selezionare **Flusso di lavoro**:
+Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
 
-* **Modelli**: Gestire le definizioni dei flussi di lavoro
-* **Istanze**: Visualizzare e gestire le istanze del flusso di lavoro in esecuzione
-* **Lanci**: Gestire il modo in cui avviare i flussi di lavoro
-* **Archivia**: Visualizzare la cronologia dei flussi di lavoro completati correttamente
-* **Errori**: Visualizzare la cronologia dei flussi di lavoro completati con errori
-* **Assegnazione automatica**: Configurare l’assegnazione automatica dei flussi di lavoro ai modelli
+* **Modelli**: gestire le definizioni dei flussi di lavoro
+* **Istanze**: visualizzazione e gestione delle istanze di flussi di lavoro in esecuzione
+* **Moduli di avvio**: gestire le modalità di avvio dei flussi di lavoro
+* **Archiviazione**: visualizzazione della cronologia dei flussi di lavoro completati con successo
+* **Errori**: visualizzazione della cronologia dei flussi di lavoro completati con errori
+* **Assegnazione automatica**: configura l’assegnazione automatica dei flussi di lavoro ai modelli
 
 ## Monitoraggio dello stato delle istanze del flusso di lavoro {#monitoring-the-status-of-workflow-instances}
 
-1. Selezione tramite navigazione **Strumenti**, quindi **Flusso di lavoro**.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96](assets/wf-96.png)
@@ -44,72 +44,72 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
 ## Cerca istanze del flusso di lavoro {#search-workflow-instances}
 
-1. Selezione tramite navigazione **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso. Nella barra superiore, nell’angolo sinistro, seleziona **Filtri**. In alternativa, è possibile utilizzare i tasti alt+1. Viene visualizzata la seguente finestra di dialogo:
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso. Nella barra superiore, nell’angolo sinistro, seleziona **Filtri**. In alternativa, è possibile utilizzare i tasti Alt+1. Viene visualizzata la seguente finestra di dialogo:
 
    ![wf-99-1](assets/wf-99-1.png)
 
-1. Nella finestra di dialogo Filtro , seleziona i criteri di ricerca del flusso di lavoro. Puoi eseguire ricerche in base ai seguenti input:
+1. Nella finestra di dialogo Filtro, seleziona i criteri di ricerca del flusso di lavoro. Puoi eseguire ricerche in base ai seguenti input:
 
-   * Percorso payload: Selezionare un percorso specifico
-   * Modello di flusso di lavoro: Selezionare un modello di flusso di lavoro
-   * Assegnatario: Selezionare un assegnatario del flusso di lavoro
+   * Percorso payload: selezionare un percorso specifico
+   * Modello di flusso di lavoro: selezionare un modello di flusso di lavoro
+   * Assegnatario: selezionare un assegnatario del flusso di lavoro
    * Tipo: Attività, elemento del flusso di lavoro o errore del flusso di lavoro
    * Stato attività: Attivo, Completo o Terminato
-   * Dove Sono: Proprietario e assegnatario, solo proprietario, solo assegnatario
-   * Data di inizio: Data di inizio prima o dopo una data specificata
-   * Data di fine: Data di fine prima o dopo una data specificata
-   * Data di scadenza: Data di scadenza prima o dopo una data specificata
-   * Data aggiornamento: Data aggiornata prima o dopo una data specificata
+   * Dove sono: Proprietario AND Assegnatario, Solo proprietario, Solo assegnatario
+   * Data di inizio: data di inizio prima o dopo una data specificata
+   * Data di fine: data di fine prima o dopo una data specificata
+   * Data di scadenza: data di scadenza prima o dopo una data specificata
+   * Data aggiornamento: data aggiornata prima o dopo una data specificata
 
-## Sospensione, ripresa e chiusura di un’istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
+## Sospensione, Ripresa e Chiusura di un’istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Selezione tramite navigazione **Strumenti**, quindi **Flusso di lavoro**.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, se del caso; conferma e/o ulteriori dettagli sono richiesti:
+1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; conferma e/o ulteriori dettagli richiesti:
 
    ![wf-97-1](assets/wf-97-1.png)
 
 ## Visualizzazione dei flussi di lavoro archiviati {#viewing-archived-workflows}
 
-1. Selezione tramite navigazione **Strumenti**, quindi **Flusso di lavoro**.
-1. Seleziona **Archivia** per visualizzare l’elenco delle istanze del flusso di lavoro completate correttamente.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Archivio** per visualizzare l’elenco delle istanze del flusso di lavoro completate correttamente.
 
    ![wf-98](assets/wf-98.png)
 
    >[!NOTE]
    >
-   >Lo stato di interruzione viene considerato come una terminazione corretta in quanto si verifica in seguito a un&#39;azione dell&#39;utente; ad esempio:
+   >Lo stato di interruzione viene considerato come una terminazione corretta in quanto si verifica in seguito a un’azione dell’utente; ad esempio:
    >
-   >* utilizzo **Termina** action
-   >* quando una pagina, soggetta a un flusso di lavoro, viene (forzata) eliminata, il flusso di lavoro viene terminato
+   >* utilizzo dell’azione **Termina**
+   >* quando una pagina, soggetta a un flusso di lavoro, viene eliminata (forzatamente), il flusso di lavoro viene terminato
 
 
-1. Seleziona un elemento specifico, quindi **Cronologia aperta** per ulteriori dettagli:
+1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
 
    ![wf-99](assets/wf-99.png)
 
 ## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-Quando un flusso di lavoro non riesce, AEM fornisce la **Errori** console per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
+Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
 Apre una finestra per visualizzare 
 **Messaggio di errore**, **Passaggio** e **Stack errori**.
 
-* **Cronologia aperta**
+* **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
 
-* **Passaggio del nuovo tentativo** Esegue nuovamente l&#39;istanza del componente Passaggio script. Utilizzare il comando Riprova passaggio dopo aver risolto la causa dell&#39;errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
-* **Termina** Termina il flusso di lavoro se l’errore ha causato una situazione irreprensibile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
+* **Ritenta passaggio** Esegue nuovamente lo script del passaggio dell’istanza del componente. Utilizza il comando Ritenta passaggio dopo aver risolto la causa dell’errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
+* **Termina** Termina il flusso di lavoro se l’errore ha causato una situazione inconciliabile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
 * **Termina e riprova** Simile a **Termina** tranne per il fatto che una nuova istanza di flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
 
-Per indagare gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, utilizza i seguenti passaggi:
+Per approfondire gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, utilizza i seguenti passaggi:
 
-1. Selezione tramite navigazione **Strumenti**, quindi **Flusso di lavoro**.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
 1. Seleziona **Errori** per visualizzare l’elenco delle istanze del flusso di lavoro che non sono state completate correttamente.
 1. Seleziona un elemento specifico, quindi l’azione appropriata:
 
@@ -121,7 +121,7 @@ Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del
 
 Configura **Configurazione di eliminazione del flusso di lavoro di Adobe Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e al loro stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
 
-Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando sono in esecuzione per molto più tempo del tempo previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
+Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando restano in esecuzione per molto più tempo del tempo previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
 
 Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
 
@@ -131,7 +131,7 @@ Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sit
 >
 >`com.adobe.granite.workflow.purge.Scheduler`
 >
->Poiché il servizio è un servizio di fabbrica, il nome `sling:OsgiConfig` Il nodo richiede un suffisso di identificatore, ad esempio:
+>Poiché si tratta di un servizio di fabbrica, il nome del nodo `sling:OsgiConfig` richiede un suffisso di identificatore, ad esempio:
 >
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
@@ -145,26 +145,26 @@ Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sit
   <tr>
    <td>Nome processo</td>
    <td>scheduledpurge.name</td>
-   <td>Un nome descrittivo per l'eliminazione pianificata.</td>
+   <td>Nome descrittivo per l’eliminazione pianificata.</td>
   </tr>
   <tr>
    <td>Stato flusso di lavoro</td>
    <td>scheduledpurge.workflowStatus</td>
-   <td><p>Lo stato delle istanze del flusso di lavoro da eliminare. I seguenti valori sono validi:</p>
+   <td><p>Stato delle istanze del flusso di lavoro da eliminare. I seguenti valori sono validi:</p>
     <ul>
-     <li>COMPLETATO: Le istanze del flusso di lavoro completate vengono eliminate.</li>
-     <li>IN ESECUZIONE: Le istanze del flusso di lavoro in esecuzione vengono eliminate.</li>
+     <li>COMPLETATO: le istanze del flusso di lavoro completate vengono eliminate.</li>
+     <li>IN ESECUZIONE: le istanze del flusso di lavoro in esecuzione vengono eliminate.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Modelli da eliminare</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>ID dei modelli di flusso di lavoro da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> <p>Per specificare più modelli, fare clic sul pulsante + nella console Web. </p> </td>
+   <td><p>ID dei modelli di flusso di lavoro da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> <p>Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> </td>
   </tr>
   <tr>
    <td>Età del flusso di lavoro</td>
    <td>scheduledpurge.daysold</td>
-   <td>L’età in giorni delle istanze del flusso di lavoro da eliminare.</td>
+   <td>Età in giorni delle istanze del flusso di lavoro da eliminare.</td>
   </tr>
  </tbody>
 </table>
@@ -185,25 +185,25 @@ Puoi impostare la dimensione massima della casella in entrata configurando la **
 
 ## Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente {#using-workflow-variables-customer-datastore}
 
-I dati elaborati dai flussi di lavoro vengono memorizzati nell’Adobe fornito di storage (JCR). Questi dati possono essere sensibili in natura. È possibile salvare tutti i metadati/dati definiti dall&#39;utente nell&#39;archivio gestito anziché nell&#39;archiviazione fornita dall&#39;Adobe. In queste sezioni viene descritto come impostare queste variabili per lo storage esterno.
+I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione fornita da Adobe (JCR). Per loro natura tali dati possono essere sensibili. È possibile salvare tutti i metadati/dati definiti dall’utente nel tuo spazio di archiviazione personale anziché nell’archiviazione fornita da Adobe. Queste sezioni descrivono come impostare queste variabili per lo storage esterno.
 
-### Impostare il modello per l&#39;utilizzo dello storage esterno dei metadati {#set-model-for-external-storage}
+### Impostare il modello per l’utilizzo dell’archiviazione esterna dei metadati {#set-model-for-external-storage}
 
-A livello di modello di flusso di lavoro, viene fornito un flag per indicare che il modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non verranno mantenute in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per lo storage esterno.
+Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non saranno rese persistenti in JCR per quelle istanze dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* verranno memorizzati nel *jcr:content node* del modello di flusso di lavoro. Questo flag viene mantenuto nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* verrà memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag verrà reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 
-### API per metadati nello storage esterno {#apis-for-metadata-external-storage}
+### API per metadati nell’archiviazione esterna {#apis-for-metadata-external-storage}
 
-Per memorizzare le variabili esternamente, devi implementare le API che il flusso di lavoro espone.
+Per archiviare le variabili esternamente, devi implementare le API esposte dal flusso di lavoro.
 
 UserMetaDataPersistenceContext
 
-Gli esempi seguenti mostrano come utilizzare l’API .
+Gli esempi seguenti mostrano come utilizzare l’API.
 
 ```
 @ProviderType
