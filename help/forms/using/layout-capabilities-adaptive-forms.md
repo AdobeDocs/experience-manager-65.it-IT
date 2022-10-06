@@ -1,22 +1,21 @@
 ---
 title: Funzionalità di layout dei moduli adattivi
-seo-title: Funzionalità di layout dei moduli adattivi
+seo-title: Layout capabilities of adaptive forms
 description: Il layout e l’aspetto dei moduli adattivi su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
-seo-description: Il layout e l’aspetto dei moduli adattivi su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
+seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
-
 
 # Funzionalità di layout dei moduli adattivi{#layout-capabilities-of-adaptive-forms}
 
@@ -34,11 +33,11 @@ Prima di apprendere le diverse funzionalità di layout dei moduli adattivi, legg
 
 Un modulo adattivo fornisce i seguenti tipi di layout:
 
-**Layout** del pannelloControlla il modo in cui gli elementi o i componenti all’interno di un pannello vengono visualizzati su un dispositivo.
+**Layout del pannello** Controlla la modalità di visualizzazione degli elementi o dei componenti all’interno di un pannello su un dispositivo.
 
-**Layout** mobileControlla la navigazione di un modulo su un dispositivo mobile. Se la larghezza del dispositivo è di 768 pixel o più, il layout viene considerato un layout mobile e ottimizzato per un dispositivo mobile.
+**Layout mobile** Controlla la navigazione di un modulo su un dispositivo mobile. Se la larghezza del dispositivo è di 768 pixel o più, il layout viene considerato un layout mobile e ottimizzato per un dispositivo mobile.
 
-**Layout barra degli strumentiConsente di controllare la posizione dei pulsanti Azione nella barra degli strumenti o nella barra degli strumenti del pannello all’interno di un modulo.** 
+**Layout barra degli strumenti** Controlla la posizione dei pulsanti di azione nella barra degli strumenti o nel pannello di un modulo.
 
 Tutti i layout di questi pannelli sono definiti nella posizione seguente:
 
@@ -54,7 +53,7 @@ Tutti i layout di questi pannelli sono definiti nella posizione seguente:
 
 Un autore di moduli può associare un layout a ciascun pannello di un modulo adattivo, incluso il pannello principale.
 
-I layout del pannello sono disponibili nella posizione `/libs/fd/af/layouts/panel` .
+I layout dei pannelli sono disponibili in `/libs/fd/af/layouts/panel` posizione.
 
 ![Elenco dei layout dei pannelli per il pannello principale di un modulo adattivo](assets/layouts.png)
 
@@ -64,7 +63,7 @@ Elenco dei layout dei pannelli nei moduli adattivi
 
 Utilizza questo layout del pannello per creare un layout reattivo che si adatta alle dimensioni dello schermo del dispositivo senza necessità di una navigazione specializzata.
 
-Utilizzando questo layout, è possibile inserire più componenti **[!UICONTROL Modulo adattivo per pannello]** uno dopo l’altro all’interno del pannello.
+Utilizzando questo layout, è possibile inserire più **[!UICONTROL Modulo adattivo per pannello]** componenti uno dopo l’altro all’interno del pannello.
 
 ![Un modulo con layout reattivo come visualizzato su un piccolo schermo](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -74,11 +73,11 @@ Un modulo con layout reattivo come visualizzato su un piccolo schermo
 
 Un modulo con layout reattivo come visualizzato su uno schermo di grandi dimensioni
 
-### Procedura guidata : un modulo a più passaggi che mostra un passaggio alla volta {#wizard-a-multi-step-form-showing-one-step-at-a-time}
+### Procedura guidata: un modulo a più passaggi che mostra un passaggio alla volta {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
 Utilizzare questo layout del pannello per fornire la navigazione guidata all’interno di un modulo. Ad esempio, utilizzare questo layout quando si desidera acquisire informazioni obbligatorie in un modulo mentre gli utenti sono guidati passo dopo passo.
 
-Utilizza il componente `Panel adaptive form` per fornire una navigazione dettagliata all’interno di un pannello. Quando si utilizza questo layout, un utente passa al passaggio successivo solo al completamento del passaggio corrente
+Utilizza la `Panel adaptive form` per fornire una navigazione dettagliata all’interno di un pannello. Quando si utilizza questo layout, un utente passa al passaggio successivo solo al completamento del passaggio corrente
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -92,9 +91,9 @@ Espressione di completamento del passaggio nel layout della procedura guidata pe
 
 Modulo tramite procedura guidata
 
-### Layout per progettazione a soffietto {#layout-for-accordion-design}
+### Layout per il design a soffietto {#layout-for-accordion-design}
 
-Utilizzando questo layout, è possibile posizionare il componente `Panel adaptive form` in un pannello con navigazione in stile pannello a soffietto. Utilizzando questo layout è possibile creare anche pannelli ripetibili. I pannelli ripetibili consentono di aggiungere o rimuovere dinamicamente i pannelli in base alle esigenze. Puoi definire il numero minimo e il numero massimo di ripetizioni di un pannello. Inoltre, il titolo del pannello può essere determinato dinamicamente, in base alle informazioni fornite negli elementi del pannello.
+Utilizzando questo layout, è possibile inserire il `Panel adaptive form` in un pannello con navigazione a soffietto. Utilizzando questo layout è possibile creare anche pannelli ripetibili. I pannelli ripetibili consentono di aggiungere o rimuovere dinamicamente i pannelli in base alle esigenze. Puoi definire il numero minimo e il numero massimo di ripetizioni di un pannello. Inoltre, il titolo del pannello può essere determinato dinamicamente, in base alle informazioni fornite negli elementi del pannello.
 
 L’espressione Summary può essere utilizzata per mostrare i valori forniti dall’utente finale nel titolo del pannello minimizzato.
 
@@ -102,17 +101,17 @@ L’espressione Summary può essere utilizzata per mostrare i valori forniti dal
 
 Pannelli ripetibili creati con layout a soffietto
 
-### Layout a schede: le schede vengono visualizzate a sinistra {#tabbed-layout-tabs-appear-on-the-left}
+### Layout a schede - le schede vengono visualizzate a sinistra {#tabbed-layout-tabs-appear-on-the-left}
 
-Utilizzando questo layout, puoi posizionare il componente `Panel adaptive form` in un pannello con navigazione a schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
+Utilizzando questo layout, è possibile inserire il `Panel adaptive form` in un pannello con navigazione a schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
 
 ![Nel layout a schede, le schede vengono visualizzate a sinistra](assets/tabbed_layout_left.png)
 
 Schede visualizzate a sinistra di un pannello
 
-### Layout a schede: le schede vengono visualizzate nella parte superiore {#tabbed-layout-tabs-appear-on-the-top}
+### Layout a schede - le schede vengono visualizzate nella parte superiore {#tabbed-layout-tabs-appear-on-the-top}
 
-Utilizzando questo layout, puoi posizionare il componente `Panel adaptive form` in un pannello con navigazione a schede. Le schede vengono posizionate sopra il contenuto del pannello.
+Utilizzando questo layout, è possibile inserire il `Panel adaptive form` Componente in un pannello con navigazione a schede. Le schede vengono posizionate sopra il contenuto del pannello.
 
 ![Layout a schede nei moduli adattivi con schede nella parte superiore](assets/tabbed_layout_top.png)
 
@@ -122,15 +121,15 @@ Schede visualizzate nella parte superiore di un pannello
 
 I layout per dispositivi mobili consentono una navigazione agevole sui dispositivi mobili con schermi relativamente più piccoli. I layout per dispositivi mobili utilizzano stili a schede o a procedura guidata per la navigazione nei moduli. L’applicazione di un layout mobile fornisce un singolo layout per l’intero modulo.
 
-Questo layout controlla la navigazione tramite una barra di navigazione e un menu di navigazione. La barra di navigazione mostra l’icona **&lt;** e **** per indicare i passaggi di navigazione **successivo** e **precedenti** nel modulo.
+Questo layout controlla la navigazione tramite una barra di navigazione e un menu di navigazione. Viene visualizzata la barra di navigazione **&lt;** e **>** icona per indicare **next** e **precedente** passaggi di navigazione nel modulo.
 
-I layout mobili sono disponibili nella posizione `/libs/fd/af/layouts/mobile/` . Per impostazione predefinita, nei moduli adattivi sono disponibili i seguenti layout per dispositivi mobili.
+I layout per dispositivi mobili sono disponibili in `/libs/fd/af/layouts/mobile/` posizione. Per impostazione predefinita, nei moduli adattivi sono disponibili i seguenti layout per dispositivi mobili.
 
 ![Elenco dei layout mobili nei moduli adattivi](assets/mobile-navigation.png)
 
 Elenco dei layout mobili nei moduli adattivi
 
-Quando si utilizza un layout mobile, per accedere ai vari pannelli dei moduli è disponibile il menu dei moduli, toccando l’icona ![aem6forms_form_menu](assets/aem6forms_form_menu.png) .
+Quando si utilizza un layout mobile, per accedere ai vari pannelli dei moduli è disponibile il menu del modulo. ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icona.
 
 ### Layout con titoli dei pannelli nell’intestazione del modulo {#layout-with-panel-titles-in-the-form-header}
 
@@ -156,7 +155,7 @@ Il layout della barra degli strumenti consente di posizionare e visualizzare i p
 
 Elenco dei layout della barra degli strumenti nei moduli adattivi
 
-I layout della barra degli strumenti sono disponibili nella posizione `/libs/fd/af/layouts/toolbar` . per impostazione predefinita, i moduli adattivi forniscono i seguenti layout della barra degli strumenti.
+I layout della barra degli strumenti sono disponibili in `/libs/fd/af/layouts/toolbar` posizione. per impostazione predefinita, i moduli adattivi forniscono i seguenti layout della barra degli strumenti.
 
 ### Layout predefinito per la barra degli strumenti {#default-layout-for-toolbar}
 
@@ -168,7 +167,7 @@ Inoltre, è possibile aggiungere più barre degli strumenti contenenti pulsanti 
 
 Vista predefinita per barra degli strumenti
 
-### Layout fisso mobile per la barra degli strumenti {#mobile-fixed-layout-for-toolbar}
+### Layout fisso mobile per barra degli strumenti {#mobile-fixed-layout-for-toolbar}
 
 Selezionare questo layout per fornire layout alternativi per desktop e dispositivi mobili.
 
@@ -179,4 +178,3 @@ Per il layout mobile, è possibile aggiungere pulsanti di azione utilizzando del
 ![Layout fisso mobile per barra degli strumenti](assets/toolbar_layout_mobile_fixed.png)
 
 Layout fisso mobile per barra degli strumenti
-

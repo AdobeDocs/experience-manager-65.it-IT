@@ -1,25 +1,24 @@
 ---
 title: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
-seo-title: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
+seo-title: Using the Rich Text Editor to Author Content
 description: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
-seo-description: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 70%
+source-wordcount: '260'
+ht-degree: 68%
 
 ---
 
-
 # Utilizzo dell’Editor Rich Text per l’authoring dei contenuti {#use-rich-text-editor-to-author-content}
 
-L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce l’elemento base di diversi componenti., compresi:
+L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce l’elemento base di diversi componenti., tra cui:
 
 * Testo
 * Testo e immagine
@@ -47,9 +46,9 @@ Questa barra degli strumenti contiene le opzioni seguenti:
 
 ## Modifica a schermo intero {#full-screen-editing}
 
-Per i componenti basati su testo, toccando la modalità a schermo intero dalla barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) si apre l&#39;editor Rich Text e si nasconde il resto del contenuto della pagina.
+Per i componenti basati su testo, tocca la modalità a schermo intero nella barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
 
-La modalità a schermo intero visualizza tutte le opzioni configurate per l’authoring. La disponibilità è opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
+Nella modalità a schermo intero sono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità è opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -66,4 +65,4 @@ Per chiudere la modalità a schermo intero, fai clic sull’icona Riduci a icona
 
 >[!NOTE]
 >
->Copiare gli elenchi nidificati da Microsoft Word nell’editor Rich Text può produrre risultati incoerenti e potrebbe essere necessario un adeguamento manuale dopo aver incollato il testo nell’editor Rich Text.
+>Copiare gli elenchi nidificati da Microsoft Word nell’editor Rich Text può dare risultati incoerenti e richiedere un adeguamento manuale dopo aver incollato il testo nell’editor Rich Text.

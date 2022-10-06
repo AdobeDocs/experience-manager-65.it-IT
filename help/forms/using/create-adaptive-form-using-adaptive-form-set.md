@@ -1,22 +1,21 @@
 ---
 title: Creare un modulo adattivo utilizzando un set di moduli adattivi
-seo-title: Creare un modulo adattivo utilizzando un set di moduli adattivi
-description: 'Con AEM Forms, è possibile unire i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
-seo-description: 'Con AEM Forms, è possibile unire i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni. '
+seo-title: Create an adaptive form using a set of adaptive forms
+description: Con AEM Forms, è possibile unire i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni.
+seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # Creare un modulo adattivo utilizzando un set di moduli adattivi{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
@@ -38,7 +37,7 @@ Funzioni quali authoring indipendente e caricamento lento migliorano le prestazi
 
 ## Dietro le quinte {#behind-the-scenes}
 
-È possibile aggiungere moduli adattivi basati su XSD e frammenti nel modulo principale. La struttura del modulo principale è la stessa di [qualsiasi modulo adattivo](../../forms/using/prepopulate-adaptive-form-fields.md). Quando si aggiunge un modulo adattivo come modulo secondario, questo viene aggiunto come pannello nel modulo principale. I dati di un modulo figlio associato sono memorizzati nella directory `data`principale della sezione `afBoundData` dello schema XML del modulo padre.
+È possibile aggiungere moduli adattivi basati su XSD e frammenti nel modulo principale. La struttura del modulo padre è la stessa del [qualsiasi modulo adattivo](../../forms/using/prepopulate-adaptive-form-fields.md). Quando si aggiunge un modulo adattivo come modulo secondario, questo viene aggiunto come pannello nel modulo principale. I dati di un modulo figlio associato sono memorizzati nella `data`radice `afBoundData` sezione dello schema XML del modulo principale.
 
 Ad esempio, i clienti compilano un modulo di richiesta. I primi due campi del modulo sono nome e identità. Il codice XML è:
 
@@ -56,7 +55,7 @@ Ad esempio, i clienti compilano un modulo di richiesta. I primi due campi del mo
 </afData>
 ```
 
-Nell’applicazione è aggiunto un altro modulo che consente ai clienti di compilare il proprio indirizzo dell’ufficio. La radice dello schema del modulo figlio è `officeAddress`. Applica `bindref` `/application/officeAddress` o `/officeAddress`. Se `bindref`non viene fornito, il modulo figlio viene aggiunto come sottoalbero `officeAddress`. Vedere l&#39;XML del modulo seguente:
+Nell’applicazione è aggiunto un altro modulo che consente ai clienti di compilare il proprio indirizzo dell’ufficio. La radice dello schema del modulo figlio è `officeAddress`. Applica `bindref` `/application/officeAddress` o `/officeAddress`. Se `bindref`non viene fornito, il modulo figlio viene aggiunto come `officeAddress` sottoalbero. Vedere l&#39;XML del modulo seguente:
 
 ```xml
 <afData>
@@ -76,7 +75,7 @@ Nell’applicazione è aggiunto un altro modulo che consente ai clienti di compi
 </afData>
 ```
 
-Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indirizzo della casa, applicare `bindref` `/application/houseAddress or /houseAddress.`L&#39;XML è simile al seguente:
+Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indirizzo della casa, applicare `bindref` `/application/houseAddress or /houseAddress.`Il codice XML si presenta così:
 
 ```xml
 <afData>
@@ -100,9 +99,9 @@ Se si inserisce un altro modulo che consente ai clienti di fornire l&#39;indiriz
 </afData>
 ```
 
-Se desideri mantenere lo stesso nome della radice secondaria della directory principale dello schema ( `Address`in questo esempio), utilizza i binding indicizzati.
+Se desideri mantenere lo stesso nome della radice dello schema ( `Address`in questo esempio), utilizza i bindrefs indicizzati.
 
-Ad esempio, applica i binari `/application/address[1]` o `/address[1]` e `/application/address[2]` o `/address[2]`. XML del modulo:
+Ad esempio, applica caratteri binari `/application/address[1]` o `/address[1]` e `/application/address[2]` o `/address[2]`. XML del modulo:
 
 ```xml
 <afData>
@@ -126,24 +125,23 @@ Ad esempio, applica i binari `/application/address[1]` o `/address[1]` e `/appli
 </afData>
 ```
 
-È possibile modificare la struttura secondaria predefinita del modulo/frammento adattivo utilizzando la proprietà `bindRef` . La proprietà `bindRef` consente di specificare il percorso che punta a una posizione nella struttura ad albero dello schema XML.
+È possibile modificare la struttura secondaria predefinita del modulo/frammento adattivo utilizzando `bindRef` proprietà. La `bindRef` consente di specificare il percorso che punta a una posizione nella struttura ad albero dello schema XML.
 
-Se il modulo figlio non è associato, i relativi dati vengono memorizzati nella directory principale `data`della sezione `afUnboundData` dello schema XML del modulo padre.
+Se il modulo figlio non è associato, i relativi dati vengono memorizzati nella `data`radice `afUnboundData` sezione dello schema XML del modulo principale.
 
-È possibile aggiungere più volte un modulo adattivo come modulo secondario. Assicurati che la `bindRef` sia modificata correttamente in modo che ogni istanza utilizzata del modulo adattivo punti a una sottoradice diversa sotto la radice dati.
+È possibile aggiungere più volte un modulo adattivo come modulo secondario. Assicurati che `bindRef` viene modificato correttamente in modo che ogni istanza utilizzata del modulo adattivo punti a una sottoradice diversa sotto la radice dati.
 
 >[!NOTE]
 >
 >Se diversi moduli/frammenti sono mappati sulla stessa radice secondaria, i dati vengono sovrascritti.
 
-## Aggiunta di un modulo adattivo come modulo figlio tramite il browser Risorse {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
+## Aggiunta di un modulo adattivo come modulo figlio tramite il browser delle risorse {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
 
 Esegui le seguenti operazioni per aggiungere un modulo adattivo come modulo figlio utilizzando il browser risorse.
 
 1. Aprire il modulo principale in modalità di modifica.
-1. Nella barra laterale, fai clic su **Risorse** ![risorse-browser](assets/assets-browser.png). In Risorse, seleziona **Modulo adattivo** dal menu a discesa.
+1. Nella barra laterale, fai clic su **Risorse** ![browser risorse](assets/assets-browser.png). In Risorse, seleziona **Modulo adattivo** dal menu a discesa.
    [ ![Selezione del modulo adattivo in Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Trascina il modulo adattivo da aggiungere come modulo figlio.
-   [ ![Trascina il modulo adattivo nel ](assets/drag-drop.png)](assets/drag-drop-1.png)sitoIl modulo adattivo rilasciato viene aggiunto come modulo secondario.
-
+   [ ![Trascina il modulo adattivo nel sito](assets/drag-drop.png)](assets/drag-drop-1.png)Il modulo adattivo rilasciato viene aggiunto come modulo figlio.

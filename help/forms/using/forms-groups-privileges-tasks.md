@@ -1,8 +1,8 @@
 ---
 title: AEM Forms su gruppi e privilegi OSGi
-seo-title: AEM Forms su gruppi e privilegi OSGi
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: Assegnare gli utenti ai gruppi per gestire AEM Forms su OSGi
-seo-description: Assegnare gli utenti ai gruppi per gestire AEM Forms su OSGi
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,16 +14,16 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
 
 # AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegna politiche e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Una volta installato [il pacchetto aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, come gli utenti di moduli e forms-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
+Una volta installata [Pacchetto aggiuntivo di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio gli utenti di moduli e gli utenti di moduli-power, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
 
 <table>
  <tbody>
@@ -62,7 +62,7 @@ Una volta installato [il pacchetto aggiuntivo AEM Forms](../../forms/using/insta
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup>[2]</sup></td> 
+   <td>autori di modelli <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Creare e visualizzare in anteprima moduli adattivi o modelli di comunicazione interattivi</li> 
@@ -94,7 +94,7 @@ Una volta installato [il pacchetto aggiuntivo AEM Forms](../../forms/using/insta
    <td>utenti del flusso di lavoro</td> 
    <td>
     <ul> 
-     <li>Utilizzare AEM applicazioni inbox<br /> <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella casella in entrata, è necessario disporre di assegnazioni di gruppi di utenti e utenti di cm-agent.</li> 
+     <li>Utilizzare le applicazioni di posta in AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata è necessario disporre di assegnazioni di gruppi di utenti e utenti di un agente cm-agent e di un gruppo di utenti del flusso di lavoro.</li> 
      <li>Gestire le istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>

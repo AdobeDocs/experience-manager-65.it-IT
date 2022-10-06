@@ -1,8 +1,8 @@
 ---
-title: 'Differenze tra pagine '
-seo-title: 'Differenze tra pagine '
+title: Differenze tra pagine
+seo-title: Page Diff
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
-seo-description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 97%
+source-wordcount: '560'
+ht-degree: 100%
 
 ---
-
 
 # Differenze tra pagine {#page-diff}
 
@@ -31,14 +30,14 @@ La creazione di contenuti è un processo iterativo. Per un authoring efficace, �
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/sites-developing/pagediff.md#operation-details).
 
-## Utilizzo {#use}
+## Utilizzare {#use}
 
 La visualizzazione affiancata delle differenze permette di confrontare:
 
 * [Versioni](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Versione precedente di una pagina con il relativo stato corrente
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy con la relativa blueprint
-* [Lanci](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva origine
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copie per lingua - Una pagina prima e dopo la traduzione o la ritraduzione
+* [live Copy](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy con la relativa blueprint
+* [Lanci](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva sorgente
+* [Copie per lingua](/help/sites-administering/tc-manage.md#comparing-language-copies) - Una pagina prima e dopo la traduzione o la ritraduzione
 
 Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
 
@@ -71,7 +70,7 @@ Vengono rilevate le modifiche apportate a livello di componente e di codice HTML
 >
 >Quando si confrontano le copie per lingua, l’evidenziazione è disattivata poiché in una traduzione tutto cambia.
 
-### Modalità a schermo intero e Uscita    {#fullscreen-and-exiting}
+### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
 Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
 
@@ -87,12 +86,12 @@ Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per usci
 
 Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsiasi momento facendo clic sul pulsante Chiudi, nell’intestazione.
 
-## Limiti    {#limitations}
+## Limiti   {#limitations}
 
 Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
 
 * Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, la diff non ricrea i criteri di controllo degli accessi e le relazioni Live Copy.
+* Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
 
    * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.

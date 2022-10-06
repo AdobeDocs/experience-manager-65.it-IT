@@ -12,7 +12,7 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -231,7 +231,7 @@ Un amministratore (membro del gruppo fd-administrators ) può configurare una ca
    <td>Specifica il nome della cartella controllata. Questo campo supporta solo caratteri alfanumerici.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Percorso</code></td>
+   <td><span class="uicontrol">Percorso </code></td>
    <td>Specificare la posizione fisica della cartella osservata. In un ambiente cluster, utilizza una cartella di rete condivisa accessibile AEM nodo cluster.</td>
   </tr>
   <tr>

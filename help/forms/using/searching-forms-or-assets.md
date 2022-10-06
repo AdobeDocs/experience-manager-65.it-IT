@@ -1,8 +1,8 @@
 ---
 title: Ricerca di moduli e risorse
-seo-title: Ricerca di moduli e risorse
+seo-title: Searching for forms and assets
 description: È possibile cercare moduli e risorse nell’istanza AEM utilizzando AEM ricerca. La ricerca avanzata e di base consente di individuare rapidamente le risorse.
-seo-description: È possibile cercare moduli e risorse nell’istanza AEM utilizzando AEM ricerca. La ricerca avanzata e di base consente di individuare rapidamente le risorse.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 4%
 
 Quando selezioni uno o più criteri e specifichi anche una stringa di testo, viene restituita l’intersezione del testo e dei criteri come risultati di ricerca. I risultati della ricerca sono validi quanto i metadati del modulo e della risorsa forniti.
 
-Fai clic su ![aem6forms_search](assets/aem6forms_search.png) per mostrare o nascondere il pannello di ricerca.
+Fai clic su ![aem6forms_search](assets/aem6forms_search.png), per mostrare o nascondere il pannello di ricerca.
 
 ## Ricerca di base {#basic-search}
 
 Una ricerca di base è la ricerca predefinita, eseguita senza specificare alcun filtro. AEM Forms esegue una ricerca full-text sulle proprietà dei metadati.
 
-Per eseguire una ricerca di base, immetti la query di ricerca nel campo di testo e premi return. È inoltre possibile immettere il carattere jolly (*) per far corrispondere qualsiasi numero di caratteri.
+Per eseguire una ricerca di base, immetti la query di ricerca nel campo di testo e premi return. È inoltre possibile immettere il carattere jolly (&#42;) per far corrispondere qualsiasi numero di caratteri.
 
 Adobe Experience Manager cerca il testo immesso nelle proprietà dei metadati e restituisce i risultati corrispondenti. Se si digitano più parole, l&#39;operazione di ricerca corrisponde al testo completo per la ricerca.
 
@@ -38,10 +38,10 @@ Nota i seguenti punti sulla ricerca di base:
 
 * La ricerca viene eseguita utilizzando le proprietà dei metadati del modulo e delle risorse.
 * Se si digitano più parole, l&#39;operazione di ricerca corrisponde al testo completo per la ricerca.
-* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digiti `geometrixx`, nei risultati della ricerca vengono visualizzate le risorse con titoli `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx`.
+* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digiti `geometrixx`, risorse con titoli `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` vengono visualizzati nei risultati della ricerca.
 
-* Le corrispondenze parziali di una parola non sono supportate. Per eseguire la ricerca utilizzando stringhe parziali, utilizzare il carattere jolly * . Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzato il modulo o la risorsa corrispondente.
-* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio, `My form` non è la stessa query di ricerca di `My form`.
+* Le corrispondenze parziali di una parola non sono supportate. Per eseguire ricerche utilizzando stringhe parziali, utilizza &#42; carattere jolly. Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzato il modulo o la risorsa corrispondente.
+* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio: `My form` non è la stessa query di ricerca `My form`.
 
 * Se i dati e i valori di visualizzazione dei campi nelle proprietà dei metadati sono diversi, non è possibile utilizzare i valori di visualizzazione come parametri di ricerca. Ad esempio, non è possibile eseguire ricerche in base a uno stato, ad esempio Modificato o Pubblicato, poiché queste proprietà sono memorizzate in un formato diverso.
 
@@ -90,11 +90,11 @@ Puoi selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisce 
   </tr>
   <tr>
    <td>Modello di modulo<br /> </td> 
-   <td>Cerca in tutti i modelli di modulo.<br /> </td> 
+   <td>Eseguire ricerche in tutti i modelli di modulo.<br /> </td> 
   </tr>
   <tr>
    <td>Modulo PDF</td> 
-   <td>Cerca in tutti i documenti PDF.</td> 
+   <td>Eseguire ricerche in tutti i documenti PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 

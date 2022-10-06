@@ -1,21 +1,20 @@
 ---
 title: Panoramica dei modelli
-seo-title: Panoramica dei modelli
+seo-title: Models Overview
 description: Panoramica dei modelli
-seo-description: 'null'
+seo-description: null
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 50785534-5784-4354-b123-5e640b7c0242
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
-
 
 # Panoramica dei modelli{#models-overview}
 
@@ -35,7 +34,7 @@ Un modello descrive il tipo di contenuto e indica quali informazioni saranno dis
 
 I modelli servono anche come mezzo per trasformare i contenuti AEM esistenti in oggetti che possono essere facilmente utilizzati dalle app mobile native.
 
-Content Services fornirà alcuni modelli predefiniti per oggetti comuni quali risorse, raccolte di risorse, pagine HTML, configurazioni di app e pagine indipendenti dai canali. Questi saranno configurabili in modo da soddisfare esigenze specifiche dei clienti senza richiedere uno sforzo di sviluppo AEM.
+Content Services fornirà alcuni modelli predefiniti per oggetti comuni quali risorse, raccolte di risorse, pagine di HTML, configurazioni di app e pagine indipendenti dai canali. Questi saranno configurabili in modo da soddisfare esigenze specifiche dei clienti senza richiedere uno sforzo di sviluppo AEM.
 
 L’utente può creare modelli personalizzati. Questo consente di creare nuovi tipi di contenuto che non sono già gestiti da AEM. La creazione di modelli viene eseguita tramite un’interfaccia utente che utilizza tipi di base esistenti.
 
@@ -51,8 +50,7 @@ I modelli vengono utilizzati per determinare come vengono create le entità. Def
 >
 >Un modello esiste all&#39;esterno di un&#39;app in quanto più di un&#39;app può utilizzarlo.
 
-
-Consulta **[Modelli](/help/mobile/administer-mobile-apps.md)** per creare e gestire modelli nel dashboard e nell&#39;archivio.
+Vedi **[Modelli](/help/mobile/administer-mobile-apps.md)** per creare e gestire modelli nel dashboard e nel repository.
 
 ### Entità nel modello di contenuto {#entities-in-content-model}
 
@@ -60,14 +58,13 @@ Un’entità è un’istanza di un modello di contenuto. Un’entità viene espo
 
 Nel caso di contenuto AEM esistente, un’entità viene generata utilizzando un modello e l’origine di contenuto AEM. Ad esempio, un’entità pagina è un oggetto indipendente dal canale e dal layout generato da una pagina AEM e dal modello di pagina.
 
-Le modifiche al contenuto di riferimento di un’entità determineranno una modifica dell’entità. Ad esempio, se viene aggiornato un *cq:page*, verranno aggiornate anche tutte le entità basate su tale pagina.
+Le modifiche al contenuto di riferimento di un’entità determineranno una modifica dell’entità. Ad esempio, se un *cq:page* viene aggiornato, verranno aggiornate anche tutte le entità basate su tale pagina.
 
-Per creare entità personalizzate dai modelli, consulta **[Utilizzo di entità](/help/mobile/spaces-and-entities.md)** .
+Vedi **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)** per creare entità personalizzate dai modelli.
 
 >[!NOTE]
 >
 >Se il modello non corrisponde a un contenuto AEM esistente, ad esempio il cliente ha creato un nuovo modello, sarà disponibile un’interfaccia utente che consente al cliente di creare una nuova entità.
-
 
 ### Spazi nel modello di contenuto {#spaces-in-content-model}
 
@@ -77,7 +74,7 @@ Sul lato AEM, uno spazio è un modo conveniente per gestire le entità correlate
 
 *Esempio*,
 
-Un utente dispone di tre classificazioni generali di entità. Uno è solo per uso interno, un altro è approvato per uso pubblico e ancora un terzo è per le entità comuni che sono utilizzati da molte app. Per semplificare la gestione, l’utente crea tre spazi: *internal*, *public* (con contenuti sia inglesi che francesi) e *common* per la gestione delle entità appropriate come indicato di seguito:
+Un utente dispone di tre classificazioni generali di entità. Uno è solo per uso interno, un altro è approvato per uso pubblico e ancora un terzo è per le entità comuni che sono utilizzati da molte app. Per semplificare la gestione, l&#39;utente crea tre spazi, ovvero *interno*, *pubblico* (con contenuto sia inglese che francese), e *comune* per la gestione delle entità appropriate come indicato di seguito:
 
 * /content/entity/internal
 * /content/entity/public/it
@@ -86,7 +83,7 @@ Un utente dispone di tre classificazioni generali di entità. Uno è solo per us
 
 Verrà fornito un punto finale del servizio allo spazio in modo che la libreria client nativa possa richiedere un elenco dei contenuti di uno spazio. Questo &quot;elenco&quot; verrà restituito come oggetto JSON.
 
-Per creare e pubblicare spazi, consulta **[Spazi ed entità](/help/mobile/spaces-and-entities.md)** .
+Vedi **[Spazi ed entità](/help/mobile/spaces-and-entities.md)** per la creazione e la pubblicazione di spazi.
 
 >[!NOTE]
 >
@@ -96,4 +93,4 @@ Per creare e pubblicare spazi, consulta **[Spazi ed entità](/help/mobile/spaces
 
 Le cartelle consentono agli utenti di organizzare le entità come richiesto e facilita un controllo ACL più preciso. Gli spazi possono includere cartelle per organizzare ulteriormente il contenuto e le risorse dello spazio. Un utente può creare una propria gerarchia sotto uno spazio.
 
-Consultare **[Uso delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)** per creare e gestire le cartelle all&#39;interno di uno spazio.
+Vedi **[Utilizzo delle cartelle in uno spazio](/help/mobile/spaces-and-entities.md)** per creare e gestire cartelle all’interno di uno spazio.

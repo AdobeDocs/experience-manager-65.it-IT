@@ -1,8 +1,8 @@
 ---
 title: Ottenimento di documenti XDP e PDF in AEM Forms
-seo-title: Ottenimento di documenti XDP e PDF in AEM Forms
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. Puoi anche caricare in massa moduli e risorse correlate come file ZIP.
-seo-description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. Puoi anche caricare in massa moduli e risorse correlate come file ZIP.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -26,23 +26,23 @@ Puoi importare i moduli dal file system locale nell’archivio CRX, effettuando 
 
 * Modelli di modulo (moduli XFA)
 * PDF forms
-* Documento (documenti PDF piatti)
+* Documento (documenti Flat PDF)
 
 Puoi caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Puoi caricare una risorsa del tipo `Resource`, solo accanto a un modulo XFA in un archivio ZIP.
 
 >[!NOTE]
 >
->Assicurati di essere membro del gruppo `form-power-users` per poter caricare i file XDP. Contatta l’amministratore per diventare membro del gruppo.
+>Assicurati di essere un membro del `form-power-users` per poter caricare file XDP. Contatta l’amministratore per diventare membro del gruppo.
 
 ## Caricamento dei moduli {#uploading-forms}
 
-1. Accedi all&#39;interfaccia utente di AEM Forms accedendo a `https://'[server]:[port]'/aem/forms.html`.
+1. Accedi all’interfaccia utente di AEM Forms accedendo a `https://'[server]:[port]'/aem/forms.html`.
 1. Passa alla cartella in cui desideri caricare il modulo o la cartella che contiene i moduli.
-1. Nella barra degli strumenti delle azioni, tocca **Crea > Caricamento file**.
+1. Nella barra degli strumenti Azioni, tocca **Crea > Caricamento file**.
 
    ![File dall&#39;opzione di archiviazione locale in Crea](assets/step.png)
 
-1. La finestra di dialogo Carica moduli o pacchetto consente di sfogliare e scegliere il file da caricare. Il browser visualizza solo i formati di file supportati (ZIP, XDP e PDF).
+1. La finestra di dialogo Carica moduli o pacchetto consente di sfogliare e scegliere il file da caricare. Il browser dei file visualizza solo i formati di file supportati (ZIP, XDP e PDF).
 
    >[!NOTE]
    >
@@ -68,15 +68,15 @@ Il server AEM Forms ti consente di eseguire il codice JavaScript. Un codice Java
 
 Per impostazione predefinita, la modalità protetta è attivata. Se necessario, puoi disattivare la modalità protetta:
 
-1. Accedi a AEM console Web come amministratore. L&#39;URL è https://&#39;[server]:[port]&#39;/system/console/configMgr
+1. Accedi a AEM console Web come amministratore. L’URL è https://&#39;[server]:[porta]&#39;/system/console/configMgr
 1. Apri Configurazioni Forms per dispositivi mobili per la modifica.
-1. Deselezionare l&#39;opzione Modalità protetta e fare clic su **Salva**. La modalità protetta è disabilitata.
+1. Deseleziona l’opzione Modalità protetta e fai clic su **Salva**. La modalità protetta è disabilitata.
 
 ## Aggiornamento dei moduli XFA di riferimento {#updating-referenced-xfa-forms}
 
 In AEM Forms, un modello di modulo XFA può essere indirizzato da un modulo adattivo o da un altro modello di modulo XFA. Inoltre, un modello può fare riferimento a una risorsa o a un altro modello XFA.
 
-Un modulo adattivo che fa riferimento a un XFA presenta i suoi campi associati ai campi disponibili in XFA. Quando si aggiorna un modello di modulo, il modulo adattivo associato tenta di eseguire la sincronizzazione con XFA. Per ulteriori dettagli, consulta [Sincronizzazione dei moduli adattivi con XFA](../../forms/using/synchronizing-adaptive-forms-xfa.md) associato.
+Un modulo adattivo che fa riferimento a un XFA presenta i suoi campi associati ai campi disponibili in XFA. Quando si aggiorna un modello di modulo, il modulo adattivo associato tenta di eseguire la sincronizzazione con XFA. Per ulteriori dettagli, consulta [Sincronizzazione dei moduli adattivi con XFA associato](../../forms/using/synchronizing-adaptive-forms-xfa.md).
 
 La rimozione di un modello di modulo corrompe il modulo adattivo o il modello di modulo dipendente. Tale modulo adattivo viene talvolta definito informalmente come un modulo sporco. Nell’interfaccia utente di AEM Forms è possibile trovare i moduli sporchi in due modi.
 
@@ -85,6 +85,6 @@ La rimozione di un modello di modulo corrompe il modulo adattivo o il modello di
 
 ![Avviso per un modulo adattivo non sincronizzato dopo l&#39;aggiornamento dell&#39;XFA associato](assets/dirtyaf.png)
 
-Viene mantenuto un flag per indicare se un modulo adattivo è sporco. Queste informazioni sono disponibili nella pagina delle proprietà del modulo, insieme ai metadati del modulo. Solo per i moduli adattivi sporchi, nella proprietà dei metadati `Model Refresh` viene visualizzato il valore `Recommended`.
+Viene mantenuto un flag per indicare se un modulo adattivo è sporco. Queste informazioni sono disponibili nella pagina delle proprietà del modulo, insieme ai metadati del modulo. Solo per i moduli adattivi sporchi, proprietà metadati `Model Refresh` display `Recommended` valore.
 
 ![Indicazione di un modulo adattivo non sincronizzato con il modello XFA](assets/model-refresh.png)

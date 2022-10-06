@@ -1,7 +1,7 @@
 ---
 title: Guida utente alla gestione di AEM 6.5
 seo-title: AEM 6.5 Managing User Guide
-description: 'Scopri come gestire un progetto AEM con successo, con il supporto delle risorse chiave e una raccolta completa di guide utente AEM 6.5. '
+description: Scopri come gestire un progetto AEM con successo, con il supporto delle risorse chiave e una raccolta completa di guide utente AEM 6.5.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
@@ -48,6 +48,6 @@ Scopri come gestire un progetto AEM con successo, con il supporto delle risorse 
 * [Guida utente di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione al GDPR](/help/managing/data-protection-and-privacy.md)
+* [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -1,22 +1,21 @@
 ---
 title: Aggiunta di informazioni dai dati utente ai metadati di invio del modulo
-seo-title: Aggiunta di informazioni dai dati utente ai metadati di invio del modulo
-description: 'Scopri come aggiungere informazioni ai metadati di un modulo inviato con i dati forniti dall’utente. '
-seo-description: 'Scopri come aggiungere informazioni ai metadati di un modulo inviato con i dati forniti dall’utente. '
+seo-title: Adding information from user data to form submission metadata
+description: Scopri come aggiungere informazioni ai metadati di un modulo inviato con i dati forniti dall’utente.
+seo-description: Learn how to add information to metadata of a submitted form with user provided data.
 uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
-
 
 # Aggiunta di informazioni dai dati utente ai metadati di invio del modulo{#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -33,13 +32,13 @@ Considerare un altro esempio di modulo che acquisisce l’ID e-mail e il numero 
 Per aggiungere un elemento nei metadati, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di modifica.\
-   Per aprire il modulo in modalità di modifica, nella gestione moduli selezionare il modulo e toccare **Apri**.
-1. In modalità di modifica, seleziona un componente, tocca ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi tocca ![cmppr](assets/cmppr.png).
-1. Nella barra laterale fate clic su **Metadati**.
-1. Nella sezione Metadati, fai clic su **Aggiungi**.
+   Per aprire il modulo in modalità di modifica, nel gestore moduli selezionare il modulo e toccare **Apri**.
+1. In modalità di modifica, seleziona un componente, tocca ![a livello di campo](assets/field-level.png) > **Contenitore di moduli adattivi**, quindi tocca ![cmppr](assets/cmppr.png).
+1. Nella barra laterale, fai clic su **Metadati**.
+1. Nella sezione Metadati , fai clic su **Aggiungi**.
 1. Utilizzare il campo Valore della scheda Metadati per aggiungere script. Gli script aggiunti raccolgono i dati dagli elementi del modulo e calcolano i valori inviati ai metadati.
 
-   Ad esempio, **true** viene registrato nei metadati se l’età immessa è maggiore di 21 anni e **false** viene registrato se è inferiore a 21 anni. Immetti il seguente script nella scheda Metadati :
+   Ad esempio: **true** è registrato nei metadati se l’età immessa è superiore a 21 anni, e **false** viene registrato se è inferiore a 21. Immetti il seguente script nella scheda Metadati :
 
    `(agebox.value >= 21) ? true : false`
 
@@ -61,11 +60,10 @@ Se aggiungi un elemento casella di controllo nei metadati, i valori selezionati 
 
 ![Memorizzazione di più valori da una casella di controllo](assets/checkbox-metadata.png)
 
-È possibile selezionare un contenitore di moduli adattivi, aggiungere nelle proprietà del modulo una chiave di metadati `cb1` che memorizza `checkbox1.value` e pubblicare il modulo. Quando un cliente compila il modulo, seleziona le opzioni Passport e Social Security Number nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
+È possibile selezionare un contenitore di moduli adattivi e aggiungere una chiave di metadati nelle proprietà del modulo `cb1` quali negozi `checkbox1.value`e pubblicare il modulo. Quando un cliente compila il modulo, seleziona le opzioni Passport e Social Security Number nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
 
 ![Voce di metadati per più valori selezionati in un campo casella di controllo](assets/metadata-entry.png)
 
 >[!NOTE]
 >
 >L&#39;esempio precedente è solo a scopo di apprendimento. Verifica di cercare i metadati nella posizione corretta configurata nell’implementazione AEM Forms.
-

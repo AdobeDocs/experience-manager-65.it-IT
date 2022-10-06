@@ -1,8 +1,8 @@
 ---
 title: Console di moderazione
-seo-title: Console di moderazione
+seo-title: Moderation Console
 description: Accesso alla console Moderazione
-seo-description: Accesso alla console Moderazione
+seo-description: How to access the Moderation console
 uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,22 +14,22 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2042'
 ht-degree: 4%
 
 ---
 
 # Console di moderazione {#moderation-console}
 
-In AEM Communities, la moderazione [bulk dei contenuti della community](/help/communities/moderate-ugc.md) è possibile sia dall&#39;ambiente di authoring che da quello di pubblicazione da parte di amministratori e moderatori della community (membri affidabili della community assegnati come moderatori).
+In AEM Communities, in blocco [moderazione dei contenuti comunitari](/help/communities/moderate-ugc.md) è possibile sia dagli ambienti di authoring che di pubblicazione da parte di amministratori e moderatori della community (membri della community fidati assegnati come moderatori).
 
-Gli amministratori e i moderatori della community possono anche eseguire [la moderazione nel contesto](/help/communities/in-context.md) nell&#39;ambiente di pubblicazione.
+Possono inoltre eseguire [moderazione nel contesto](/help/communities/in-context.md) nell’ambiente di pubblicazione.
 
-Una funzione di tutti i [siti della community](/help/communities/sites-console.md) è una voce di menu `Administration` disponibile per gli utenti che accedono con privilegi amministrativi. Il collegamento `Administration` consente di accedere alla console Moderazione .
+Una caratteristica di tutti [siti della community](/help/communities/sites-console.md) è un `Administration` voce di menu disponibile per gli utenti che accedono con privilegi amministrativi. La `Administration` fornisce l’accesso alla console Moderazione .
 
 Dalla console Moderazione, gli amministratori e i moderatori della community avranno accesso a tutti i contenuti generati dagli utenti (UGC) per i quali dispongono dell’autorizzazione per moderare. Se è consentito moderare più siti, è possibile visualizzare i post in tutti i siti o filtrare in base a siti di comunità selezionati.
 
-Per informazioni più dettagliate, visita [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
+Per maggiori informazioni visita [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
 La console Moderazione supporta:
 
@@ -38,11 +38,11 @@ La console Moderazione supporta:
 * Visualizzazione dei dettagli UGC.
 * Visualizzazione dei dettagli dell’autore UGC.
 
-È possibile eseguire attività di moderazione solo quando si effettua l’accesso come amministratore o come membro con ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`.
+Solo quando è stato effettuato l&#39;accesso come amministratore o come membro con ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, possono essere eseguite attività di moderazione.
 
 ## Accesso all&#39;ambiente di pubblicazione {#publish-environment-access}
 
-L&#39;accesso alla console di moderazione da un sito community pubblicato avviene tramite un collegamento Amministrazione visualizzato all&#39;accesso di un moderatore della community.
+L&#39;accesso alla console di moderazione da un sito community pubblicato avviene tramite un collegamento Amministrazione , visualizzato all&#39;accesso di un moderatore della community.
 
 ![publishweretail](assets/publishweretail.png)
 
@@ -54,13 +54,13 @@ Selezionando il collegamento Amministrazione, viene visualizzata la console Mode
 
 Nell’ambiente di authoring, per raggiungere la console Moderazione
 
-* Dalla navigazione globale, seleziona **[!UICONTROL Communities]** > **[!UICONTROL Moderazione]**.
+* Dalla navigazione globale, seleziona **[!UICONTROL Community]** > **[!UICONTROL Moderazione]**.
 
-Solo quando si effettua l&#39;accesso come amministratore o come membro con [autorizzazioni del moderatore](/help/communities/in-context.md#identifyingtrustedmembers), è possibile eseguire attività di moderazione. L&#39;unico contenuto della community visualizzato è quello che il membro connesso può moderare.
+Solo quando è stato effettuato l’accesso come amministratore o come membro con [autorizzazioni del moderatore](/help/communities/in-context.md#identifyingtrustedmembers), è possibile eseguire attività di moderazione. L&#39;unico contenuto della community visualizzato è quello che il membro connesso può moderare.
 
 >[!NOTE]
 >
->L’UGC dell’ambiente di pubblicazione sarà visibile sull’autore solo se l’SRP scelto implementa un archivio comune. Ad esempio, per impostazione predefinita l’archiviazione è JSRP, che non è un negozio comune per l’authoring e la pubblicazione. Consulta [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
+>L’UGC dell’ambiente di pubblicazione sarà visibile sull’autore solo se l’SRP scelto implementa un archivio comune. Ad esempio, per impostazione predefinita l’archiviazione è JSRP, che non è un negozio comune per l’authoring e la pubblicazione. Vedi [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
@@ -74,21 +74,21 @@ Se si imposta la barra di navigazione a sinistra (che viene visualizzata sull’
 
 ### Barra di navigazione superiore {#top-navigation-bar}
 
-La barra di navigazione superiore è costante per tutte le console. Per ulteriori informazioni, vedere [Operazioni di base](/help/sites-authoring/basic-handling.md).
+La barra di navigazione superiore è costante per tutte le console. Per ulteriori informazioni, consulta [Operazioni di base](/help/sites-authoring/basic-handling.md).
 
 ### Barra degli strumenti {#toolbar}
 
 La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore a sinistra:
 
-* [La barra ](/help/communities/moderation.md#filterrail)
-Filtro apre una barra che consente di scegliere le proprietà su cui filtrare il contenuto.
+* [Barra dei filtri](/help/communities/moderation.md#filterrail)
+apre una barra che consente di scegliere le proprietà su cui filtrare il contenuto.
 
 La barra degli strumenti, situata sotto la barra di navigazione superiore, fornisce il seguente interruttore a sinistra:
 
 ![toggleswitch](assets/toggleswitch.png)
 
-[Filtro apre una barra ](/help/communities/moderation.md#filterrail)
-a sinistra, selezionando Ricerca , che consente di scegliere le proprietà su cui filtrare il contenuto.
+[Barra dei filtri](/help/communities/moderation.md#filterrail)
+apre una barra laterale, selezionando Ricerca , che consente di scegliere le proprietà su cui filtrare il contenuto.
 
 ![filatoio](assets/filterrail.png)
 
@@ -102,13 +102,13 @@ L&#39;area contenuto contiene informazioni per gli UGC pubblicati:
 * Posizione del post.
 * Quando è stato pubblicato.
 * Numero di risposte al post.
-* [](/help/communities/moderate-ugc.md#sentiment) Sentimentale associato al post
+* [Sentimento](/help/communities/moderate-ugc.md#sentiment) associato al post
 * Se approvato, viene visualizzato un segno di spunta.
 * Se è presente un allegato, viene visualizzato un fermacarte.
 
 >[!NOTE]
 > 
->L’area contenuto presenta un *scorrimento infinito*, che consente di continuare lo scorrimento fino alla fine del contenuto. La barra degli strumenti rimane in una posizione fissa e visibile sopra l’area contenuto anche durante lo scorrimento.
+>L’area contenuto presenta *scorrimento infinito*, che consente di continuare lo scorrimento fino alla fine del contenuto. La barra degli strumenti rimane in una posizione fissa e visibile sopra l’area contenuto anche durante lo scorrimento.
 
 ### Barra Filtro {#ootbfilters}
 
@@ -116,11 +116,11 @@ L&#39;area contenuto contiene informazioni per gli UGC pubblicati:
 
 L’icona del pannello laterale apre la barra del filtro. La barra del filtro, visualizzata a sinistra dell’area contenuto, fornisce filtri diversi, ciascuno dei quali ha un effetto immediato sull’UGC di riferimento visualizzato nell’area contenuto.
 
-I filtri all’interno di ciascuna categoria sono **OR**’d insieme e i filtri di diverse categorie sono **AND** insieme.
+I filtri all’interno di ogni categoria sono **O** insieme, e i filtri nelle diverse categorie sono **E** Io sto insieme.
 
-Ad esempio, se controlli sia **Domanda** che **Risposta**, vedrai il contenuto che è un **Domanda** *o* un **Risposta**.
+Ad esempio, se controlli entrambi **Domanda** e **Risposta**, visualizzerai il contenuto di una **Domanda** *o* un **Risposta**.
 
-Tuttavia, se controlli **Domanda** e **In sospeso**, vedrai solo il contenuto che è una **Domanda** ed è **In sospeso**.
+Tuttavia, se selezioni **Domanda** e **In sospeso**, verrà visualizzato solo il contenuto di una **Domanda** e **In sospeso**.
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Il sito limita l&#39;UGC di riferimento visualizzato ai post a siti della commun
 
 >[!NOTE]
 >
->Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, inclusi i siti non creati con la [procedura guidata di creazione del sito](/help/communities/sites-console.md), ad esempio gli esempi di Geometrixx.
+>Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, inclusi i siti non creati con [creazione guidata sito](/help/communities/sites-console.md), ad esempio i campioni di Geometrixx.
 >
 >Quando si accede alla console di moderazione di massa al momento della pubblicazione da parte di un membro di una community fidato, vengono visualizzati solo i riferimenti a UGC creati per i siti della community in cui il membro è autorizzato a moderare e possono essere filtrati con il filtro Sito.
 
@@ -158,7 +158,7 @@ Il sito limita l&#39;UGC di riferimento visualizzato ai post a siti della commun
 
 Il tipo di contenuto limita l’UGC a cui si fa riferimento ai post del tipo di risorsa selezionato. È possibile selezionare uno o più dei seguenti tipi. Se non è selezionata alcuna opzione, vengono visualizzati tutti i tipi.
 
-* **Commento**
+* **Commenti**
 * **Topic forum**
 * **Risposta forum**
 * **Domanda d/r**
@@ -192,7 +192,7 @@ Per aggiungere ulteriori risorse su cui filtrare:
 * Seleziona Salva.
 * Aggiorna la console Community - Moderazione .
 
-Il risultato è un nuovo filtro selezionabile per `Voting` nel gruppo di filtri `Content Type`.
+Il risultato è un nuovo filtro selezionabile per `Voting` in `Content Type` gruppo di filtri.
 
 Quando quel filtro è selezionato, il contenuto del dashboard mostrerà UGC che corrisponde a uno qualsiasi dei Tipi di risorse inseriti.
 
@@ -210,7 +210,7 @@ Lo stato limita l&#39;UGC di riferimento visualizzato ai post dello stato selezi
 
 L’evidenziazione limita l’UGC a cui si fa riferimento ai post contrassegnati o nascosti.
 
-Una volta che un contenuto è stato contrassegnato, rimane contrassegnato finché non si annulla l’flag di quel singolo contenuto selezionando nuovamente il pulsante **Flag**. Non esistono livelli di contrassegno, ad esempio importanti o di follow-up.
+Una volta che un contenuto viene contrassegnato, rimane contrassegnato finché non decontrassegni quel singolo contenuto selezionando il **Flag** ancora una volta. Non esistono livelli di contrassegno, ad esempio importanti o di follow-up.
 
 ![contrazione](assets/flagging.png)
 
@@ -228,26 +228,26 @@ Posted In the Last limita l’UGC a cui si fa riferimento ai post effettuati nel
 
 #### Sentimento {#sentiment}
 
-[](/help/communities/moderate-ugc.md#sentiment) Sentimentals limita l&#39;UGC a cui si fa riferimento ai post con un valore del sentiment che è positivo, negativo o neutro.
+[Sentimento](/help/communities/moderate-ugc.md#sentiment) limita l&#39;UGC a cui si fa riferimento a post con un valore sentiment positivo, negativo o neutro.
 
 ![sentimento](assets/sentiment.png)
 
 ## Filtri personalizzati {#custom-filters}
 
-Oltre ai filtri preconfigurati in [Barra dei filtri](/help/communities/moderation.md#ootbfilters), è possibile aggiungere altri filtri personalizzati sui metadati all&#39;interfaccia utente di moderazione. Gli sviluppatori possono utilizzare il codice di esempio in Github per estendere i filtri esistenti dell’interfaccia utente di moderazione.
+Oltre ai filtri preconfigurati in [Barra Filtro](/help/communities/moderation.md#ootbfilters), è possibile aggiungere altri filtri personalizzati sui metadati all’interfaccia utente di moderazione. Gli sviluppatori possono utilizzare il codice di esempio in Github per estendere i filtri esistenti dell’interfaccia utente di moderazione.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Il [progetto di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) su Github implementa il filtro tag, per filtrare l’elenco UGC in base al fatto che i tag specifici siano applicati o meno al contenuto generato dall’utente. Puoi seguire il codice di esempio e creare filtri analoghi per altri campi di metadati UGC simili.
+La [progetto di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) su Github implementa il filtro tag , per filtrare l’elenco UGC in base al fatto che i tag specifici siano applicati al contenuto generato dall’utente. Puoi seguire il codice di esempio e creare filtri analoghi per altri campi di metadati UGC simili.
 
 Per installare l’esempio per il filtro Tag:
 
-1. Apri il gestore dei pacchetti sull’istanza di AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e l’istanza di AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
-1. Crea il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice Github, quindi installa e abilita lo stesso.
-1. Apri la console dei bundle sull’istanza di AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e l’istanza di AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Crea il pacchetto (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) da Github, quindi installa e abilita lo stesso.
-1. Vai al nodo **/apps/social/moderation/facets** sull&#39;istanza AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
-1. Aggiungi un utente tecnico **communities-utility-reader** con le autorizzazioni `jcr:read`.
+1. Apri il gestore di pacchetti su AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Crea il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice Github, e installa e abilita lo stesso.
+1. Apri la console dei bundle su AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Crea il pacchetto (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) da Github, e installa e abilita lo stesso.
+1. Vai a **/apps/social/moderation/facet** nodo su AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Aggiungi un utente tecnico **lettore di utilità pubblica** con `jcr:read` autorizzazioni.
 
 Per esporre i filtri personalizzati sui siti community esistenti:
 
@@ -257,23 +257,23 @@ Per esporre i filtri personalizzati sui siti community esistenti:
 
 1. Passa a `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
-   * Imposta sul nuovo componente `sling:resourceType = social/moderation/v2/filters.`
+   * Imposta su nuovo componente `sling:resourceType = social/moderation/v2/filters.`
 
 1. Passa a `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
-   * Imposta sul nuovo componente `sling:resourceType = social/moderation/v2/modcontainer`.
+   * Imposta su nuovo componente `sling:resourceType = social/moderation/v2/modcontainer`.
 
 ## Azioni di moderazione {#moderation-actions}
 
-[Le ](/help/communities/moderate-ugc.md#moderation-actions) azioni di moderazione possono essere eseguite su una o più selezioni effettuate nell’area contenuto o durante la visualizzazione dei dettagli del contenuto.
+[Azioni di moderazione](/help/communities/moderate-ugc.md#moderation-actions) possono essere eseguite su una o più selezioni effettuate nell’area contenuto o durante la visualizzazione dei dettagli del contenuto.
 
-Per moderare in massa i post, nell&#39;area del contenuto fai clic sull&#39;icona Seleziona (![selezione](assets/selecticon.png)) su un post, che compare quando passi il mouse su di esso (desktop) o premi e tieni premuto un dito sul post (mobile). A questo scopo, accedi alla modalità di selezione multipla e ora puoi selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno una conferma.
+Per moderare in massa i post, fai clic su Seleziona (![selticon](assets/selecticon.png)) su un post, che appare quando si passa il mouse sopra di esso (desktop) o si preme e si tiene premuto un dito sul post (mobile). A questo scopo, accedi alla modalità di selezione multipla e ora puoi selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno una conferma.
 
-Per moderare un singolo post nell’area contenuto, posiziona il cursore del mouse su di esso (desktop) o tieni premuto un dito sulla postazione (mobile) in modo che i pulsanti vengano visualizzati sulla postazione. Quando si utilizza un singolo dettaglio di contenuto, viene richiesta la conferma solo per un’azione di eliminazione.
+Per moderare un singolo post nell’area contenuto, posiziona il cursore del mouse su di esso (desktop) o tieni premuto un dito sulla postazione (mobile) in modo che i pulsanti vengano visualizzati sulla postazione. Quando si lavora su un singolo dettaglio di contenuto, viene richiesta una conferma solo per un’azione di eliminazione.
 
 ### Moderazione di più post {#moderating-multiple-posts}
 
-Attiva la modalità di selezione collettiva facendo clic sull&#39;icona `Select` su un post:
+Attiva la modalità di selezione collettiva facendo clic sul pulsante `Select` icona su un post:
 
 ![select-icon](assets/select-icon.png)
 
@@ -328,7 +328,7 @@ Quando si lavora con un singolo post, l&#39;icona Consenti viene visualizzata qu
 
 ![rifiuta](assets/deny.png)
 
-L’azione di moderazione **Rifiuta** è disponibile solo per i contenuti sottoposti a moderazione e non viene visualizzata su contenuti non moderati, tranne in modalità di selezione multipla.
+La **Nega** l’azione di moderazione è disponibile solo per i contenuti sottoposti a moderazione e non viene visualizzata su contenuti non moderati, ad eccezione della modalità di selezione multipla.
 
 Il contenuto non moderato viene sempre approvato.
 
@@ -340,7 +340,7 @@ Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in 
 
 ![delete](assets/delete.png)
 
-In modalità di selezione singola o in modalità collettiva, puoi selezionare gli elementi ed eliminarli. L’azione di eliminazione si traduce in una finestra di dialogo di conferma. Una volta eliminati, tali elementi scompaiono immediatamente dall’area contenuto. **Una volta eliminato, l’UGC viene rimosso definitivamente dall’archivio e non può essere recuperato** in un secondo momento.
+In modalità di selezione singola o in modalità collettiva, puoi selezionare gli elementi ed eliminarli. L’azione di eliminazione si traduce in una finestra di dialogo di conferma. Una volta eliminati, tali elementi scompaiono immediatamente dall’area contenuto. **Una volta eliminato l’UGC, questo viene rimosso definitivamente dall’archivio e non può essere recuperato in un secondo momento**.
 
 #### Chiudi {#close}
 
@@ -366,7 +366,7 @@ Esempio:
 
 Quando si lavora con un singolo post, è possibile visualizzare più dettagli aprendo l&#39;UGC in modalità dettagliata.
 
-A questo scopo, passa il cursore del mouse sul post per visualizzare l&#39;icona `View Detail` e selezionala per visualizzare un pannello contenente ulteriori dettagli sul post.
+Per farlo, passa il cursore del mouse sul post per visualizzare il `View Detail` e selezionala per visualizzare un pannello contenente ulteriori dettagli sul post.
 
 Per tornare alla visualizzazione dell’area contenuto di più post UGC, seleziona la X nell’angolo in alto a destra del riquadro dei dettagli della visualizzazione.
 

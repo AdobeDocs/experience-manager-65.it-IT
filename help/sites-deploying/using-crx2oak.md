@@ -14,7 +14,7 @@ exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 source-git-commit: 08e7cbe50fbfb301b38c3c36dfa22bfc1024e181
 workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -75,7 +75,7 @@ export SLING_HOME="/path/to/crx-quickstart"
 SET "SLING_HOME=/path/to/crx-quickstart"
 ```
 
-#### Riprendi supporto {#resume-support}
+#### Supporto per la ripresa in seguito a interruzioni {#resume-support}
 
 La migrazione può essere interrotta in qualsiasi momento, con la possibilità di riprenderla successivamente.
 

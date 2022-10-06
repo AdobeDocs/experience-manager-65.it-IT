@@ -1,46 +1,45 @@
 ---
 title: Personalizzazione dei servizi di dati Bozza e Invio
-seo-title: Personalizzazione dei servizi di dati Bozza e Invio
-description: ' AEM Forms, per impostazione predefinita, memorizza i moduli adattivi bozza e inviati in un nodo predefinito nell''istanza Pubblica. Tuttavia, è possibile configurare i servizi dati bozza e invio di  AEM Forms per personalizzare l''archiviazione dei moduli adattivi bozza e inviati.'
-seo-description: ' AEM Forms, per impostazione predefinita, memorizza i moduli adattivi bozza e inviati in un nodo predefinito nell''istanza Pubblica. Tuttavia, è possibile configurare i servizi dati bozza e invio di  AEM Forms per personalizzare l''archiviazione dei moduli adattivi bozza e inviati.'
+seo-title: Customizing Draft and Submission data services
+description: Per impostazione predefinita, AEM Forms memorizza i moduli adattivi bozza e inviati in un nodo predefinito sull’istanza Pubblica. Tuttavia, puoi configurare la bozza e l’invio di servizi dati di AEM Forms per personalizzare l’archiviazione dei moduli adattivi bozza e inviati.
+seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
-
 
 # Personalizzazione dei servizi di dati Bozza e Invio {#customizing-draft-and-submission-data-services}
 
 ## Panoramica {#overview}
 
- AEM Forms consente agli utenti di salvare un modulo adattivo come bozza. La funzionalità bozza offre agli utenti la possibilità di mantenere un modulo in corso di elaborazione. Un utente può quindi completare e inviare il modulo in qualsiasi momento da qualsiasi dispositivo.
+AEM Forms consente agli utenti di salvare un modulo adattivo come bozza. La funzionalità bozza consente agli utenti di mantenere un modulo in corso di lavorazione. Un utente può quindi completare e inviare il modulo in qualsiasi momento da qualsiasi dispositivo.
 
-Per impostazione predefinita,  AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio nell&#39;istanza Pubblica nel nodo `/content/forms/fp`.
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio nell’istanza Pubblica in `/content/forms/fp` nodo.
 
-Tuttavia,  componenti del portale AEM Forms offre servizi di dati che consentono di personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nell&#39;organizzazione.
+Tuttavia, i componenti del portale AEM Forms forniscono servizi dati che consentono di personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
-Per personalizzare la memorizzazione dei dati utente, è necessario implementare i servizi [Draft Data](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Invia dati](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Per personalizzare la memorizzazione dei dati utente, è necessario implementare il [Dati bozza](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dati di invio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) servizi.
 
 ## Prerequisiti {#prerequisites}
 
-* Abilita [componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Creare una pagina del portale dei moduli [](/help/forms/using/creating-form-portal-page.md)
-* Abilitare i [moduli adattivi per il portale dei moduli](/help/forms/using/draft-submission-component.md)
-* Informazioni [sull&#39;implementazione di storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Abilita [Componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md)
+* Crea un [pagina del portale moduli](/help/forms/using/creating-form-portal-page.md)
+* Abilita [portale moduli adattivi per moduli](/help/forms/using/draft-submission-component.md)
+* Scopri [dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati delle bozze degli utenti, è necessario fornire l&#39;implementazione per tutti i metodi dell&#39;interfaccia `DraftAFDataService`.
+Per personalizzare l&#39;archiviazione dei dati di bozza dell&#39;utente, è necessario fornire l&#39;implementazione di tutti i metodi del `DraftAFDataService` interfaccia.
 
-Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente esempio di codice dell&#39;interfaccia:
+Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente codice di esempio dell’interfaccia:
 
 ```java
 public interface DraftAFDataService {
@@ -83,11 +82,11 @@ public interface DraftAFDataService {
 }
 ```
 
-## Servizio dati invio {#submission-data-service}
+## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare la memorizzazione dei dati di invio degli utenti, è necessario fornire l&#39;implementazione per tutti i metodi dell&#39;interfaccia `SubmittedAFDataService`.
+Per personalizzare l’archiviazione dei dati di invio degli utenti, è necessario fornire l’implementazione di tutti i metodi del `SubmittedAFDataService` interfaccia.
 
-Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente esempio di codice dell&#39;interfaccia:
+Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente codice di esempio dell’interfaccia:
 
 ```java
 public interface SubmittedAFDataService {
@@ -131,4 +130,3 @@ public interface SubmittedAFDataService {
 
 }
 ```
-

@@ -1,22 +1,21 @@
 ---
-title: Scelte rapide da tastiera durante la modifica di pagine
-seo-title: Scelte rapide da tastiera per la modifica delle pagine
+title: Scelte rapide da tastiera per la modifica delle pagine
+seo-title: Keyboard Shortcuts when Editing Pages
 description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
-seo-description: In tutte le aree di AEM sono disponibili varie scelte rapide da tastiera, comprese quelle per la modifica delle pagine
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '221'
+ht-degree: 90%
 
 ---
-
 
 # Scelte rapide da tastiera per la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
 
@@ -44,7 +43,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&amp;ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, la scelta rapida `Ctrl-Shift-m` non è più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast; Una volta che l’utente inizia a interagire con la pagina in modalità Anteprima, il `Ctrl-Shift-m` scelta rapida non più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 

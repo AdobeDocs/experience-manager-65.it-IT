@@ -1,6 +1,6 @@
 ---
 title: Java APIQuick Start(SOAP) per componenti e servizi
-seo-title: Java APIQuick Start(SOAP) per componenti e servizi
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Java APIQuick Start(SOAP) per componenti e servizi
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # Guida rapida ai componenti e ai servizi Java API (SOAP) {#components-and-services-java-apiquick-start-soap}
 
@@ -44,15 +43,15 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate cessano di funzionare dopo un aggiornamento, utilizza la strategia di invocazione in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
+>Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e queste chiamate smettono di funzionare dopo un aggiornamento, utilizza la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
 
-## Avvio rapido (modalità SOAP): Distribuzione di un componente utilizzando l&#39;API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-L&#39;esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
+Il seguente esempio Java distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -154,7 +153,7 @@ L&#39;esempio Java seguente distribuisce un componente basato su un file JAR den
 
 ## Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio tramite l’API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-L&#39;esempio di codice Java seguente imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *EncryptDocument*.
+Il seguente esempio di codice Java imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *Crittografa documento*.
 
 ```java
  /* 
@@ -244,7 +243,7 @@ L&#39;esempio di codice Java seguente imposta il contesto di esecuzione di Run-A
  
 ```
 
-## Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite l&#39;API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal servizio di esempio EncryptDocument e dai servizi richiamati da questo servizio (i servizi Imposta valore e Crittografia).
 
@@ -357,9 +356,9 @@ Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal se
  
 ```
 
-## Avvio rapido (modalità SOAP): Avvio di un servizio utilizzando l&#39;API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Avvio di un servizio tramite l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene avviato un servizio denominato *SendEmailService*.
+Il seguente esempio di codice Java avvia un servizio denominato *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -527,7 +526,7 @@ Il seguente esempio Java modifica i valori di configurazione appartenenti a Send
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l&#39;API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l’API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
 
 L’esempio di codice Java seguente rimuove un componente utilizzando l’API Java.
 
@@ -623,4 +622,3 @@ L’esempio di codice Java seguente rimuove un componente utilizzando l’API Ja
   
  
 ```
-

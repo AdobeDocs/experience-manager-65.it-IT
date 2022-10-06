@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui processi AEM Forms
-seo-title: Informazioni sui processi AEM Forms
+seo-title: Understanding AEM Forms Processes
 description: Informazioni sui processi AEM Forms
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sui processi AEM Forms {#understanding-aem-forms-processes}
 
 **Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Un caso d’uso comune è quello di un set di servizi AEM Forms che operano su un singolo documento. Puoi inviare una richiesta al contenitore del servizio creando un processo utilizzando Workbench. Un processo rappresenta un processo aziendale automatizzato. Per informazioni sulla creazione dei processi, vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Un caso d’uso comune è quello di un set di servizi AEM Forms che operano su un singolo documento. Puoi inviare una richiesta al contenitore del servizio creando un processo utilizzando Workbench. Un processo rappresenta un processo aziendale automatizzato. Per informazioni sulla creazione dei processi, consulta [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Quando un processo viene attivato, diventa un servizio e può essere richiamato come altri servizi. Una differenza tra un servizio standard, ad esempio il servizio di cifratura e un servizio originato da un processo, è che quest&#39;ultimo dispone di un&#39;operazione che esegue molte azioni. Al contrario, un servizio standard ha molte operazioni. In genere, ogni operazione esegue una sola azione, ad esempio l&#39;applicazione di un criterio a un documento o la cifratura di un documento.
 
@@ -44,11 +43,11 @@ Utilizzando il valore dell&#39;identificatore di chiamata, puoi tenere traccia d
 
 **Esempio di processo a breve termine**
 
-L&#39;illustrazione seguente è un esempio di un processo di breve durata denominato *MyApplication/EncryptDocument*.
+L’illustrazione seguente è un esempio di processo di breve durata denominato *MyApplication/EncryptDocument*.
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, crea un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, crea un processo denominato `MyApplication/EncryptDocument` utilizzo di Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando si richiama questo processo di breve durata, vengono eseguite le azioni seguenti:
 
@@ -56,29 +55,29 @@ Quando si richiama questo processo di breve durata, vengono eseguite le azioni s
 1. Cifra il documento PDF con una password. Il nome del parametro di input per questo processo è `inDoc` e il tipo di dati è document.
 1. Salva il documento PDF crittografato con password come file PDF nel file system locale. Questo processo restituisce il documento PDF crittografato come valore di output. Il nome del parametro di output per questo processo è `outDoc` e il tipo di dati è document.
 
-   Questo processo viene completato in modo sincrono sullo stesso thread di esecuzione da cui è stato richiamato. Il nome di questo processo di breve durata è `MyApplication/EncryptDocument`e il suo funzionamento è `invoke`.
+   Questo processo viene completato in modo sincrono sullo stesso thread di esecuzione da cui è stato richiamato. Il nome di questo processo di breve durata è `MyApplication/EncryptDocument`e il suo funzionamento `invoke`.
 
    >[!NOTE]
    >
-   >In genere, un processo di breve durata consiste in più di tre azioni. È possibile creare un processo utilizzando Workbench. (Vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >In genere, un processo di breve durata consiste in più di tre azioni. È possibile creare un processo utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *La programmazione con* i moduli di AEM descrive i seguenti modi in cui è possibile richiamare questo processo a livello di programmazione di breve durata:
+   *Programmazione con moduli AEM* descrive i seguenti modi in cui è possibile richiamare questo processo di breve durata a livello di programmazione:
 
-   * [Richiamo di un processo di breve durata passando un documento non sicuro utilizzando AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (utilizzando un&#39;applicazione Flex)
-   * [Richiamare un processo di breve durata utilizzando l’API di incitamento](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  (API Java Invocation)
-   * [Richiamo di AEM Forms utilizzando la codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (esempio di servizio Web)
-   * [Richiamo di AEM Forms utilizzando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (esempio di servizio Web)
-   * [Richiamo di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (esempio di servizio Web)
-   * [Richiamo di dati AEM Forms tramite BLOB su HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (esempio di servizio Web)
-   * [Richiamo di AEM Forms tramite DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (esempio di servizio Web)
+   * [Richiamare un processo di breve durata passando un documento non sicuro utilizzando AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Utilizzo di un&#39;applicazione Flex)
+   * [Richiamare un processo di breve durata utilizzando l’API di richiamo](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API Java Invocation)
+   * [Richiamo di AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (esempio di servizio Web)
+   * [Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (esempio di servizio Web)
+   * [Richiamo di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (esempio di servizio Web)
+   * [Richiamo di dati AEM Forms tramite BLOB su HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (esempio di servizio Web)
+   * [Richiamo di AEM Forms tramite DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (esempio di servizio Web)
    * [Richiamo del processo MyApplication/EncryptDocument tramite REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Esempio di processo a lungo termine**
 
 L&#39;illustrazione seguente è un esempio di processo di lunga durata.
 
-Questo processo viene invocato quando un richiedente presenta un modulo di prestito. Il processo non è completo finché un funzionario responsabile del prestito non approva o rifiuta la richiesta di prestito. Il nome di questo processo longevo è *FirstAppSolution/PreLoanProcess* e il suo funzionamento è `invoke_Async`. Questo processo deve essere richiamato in modo asincrono. Per informazioni su come richiamare questo processo a lungo termine a livello di programmazione, vedere [Richiamo di processi a lunga durata basati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Questo processo viene invocato quando un richiedente presenta un modulo di prestito. Il processo non è completo finché un funzionario responsabile del prestito non approva o rifiuta la richiesta di prestito. Il nome di questo processo di lunga vita è *FirstAppSolution/PreLoanProcess* e il suo funzionamento `invoke_Async`. Questo processo deve essere richiamato in modo asincrono. Per informazioni su come richiamare questo processo a lungo termine a livello di programmazione, vedi [Richiamo dei processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
->Questo processo può essere creato seguendo l&#39;esercitazione specificata in [Creazione della prima applicazione AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
+>Puoi creare questo processo seguendo l’esercitazione specificata in [Creazione della prima applicazione AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).

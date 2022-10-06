@@ -1,8 +1,8 @@
 ---
 title: Pubblicare raccolte su Brand Portal
-seo-title: Pubblicare raccolte su Brand Portal
+seo-title: Publish collections to Brand Portal
 description: Scopri come pubblicare e annullare la pubblicazione delle raccolte in Brand Portal.
-seo-description: Scopri come pubblicare e annullare la pubblicazione delle raccolte in Brand Portal.
+seo-description: Learn how to publish and unpublish collections to Brand Portal.
 uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,8 +15,8 @@ role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 37%
+source-wordcount: '322'
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,7 @@ Se apporti modifiche successive alla raccolta originale in AEM Assets, le modifi
 
 >[!NOTE]
 >
->I frammenti di contenuto non possono essere pubblicati su Brand Portal. Pertanto, se selezioni frammenti di contenuto su AEM Author, l’azione **Pubblica su Brand Portal** non è disponibile.
+>I frammenti di contenuto non possono essere pubblicati su Brand Portal. Pertanto, se selezioni frammenti di contenuto su AEM Author, **Pubblicare su Brand Portal** azione non disponibile.
 >
 >Se le raccolte contenenti frammenti di contenuto vengono pubblicate da AEM Author a Brand Portal, tutti i contenuti della cartella, ad eccezione dei frammenti di contenuto, vengono replicati nell’interfaccia di Brand Portal.
 

@@ -1,363 +1,361 @@
 ---
 title: Creazione e configurazione di ruoli
-seo-title: Creazione e configurazione di ruoli
-description: Scoprite come associare utenti e gruppi a ruoli che fanno già parte del database Gestione utente. È inoltre possibile creare, modificare ed eliminare ruoli.
-seo-description: Scoprite come associare utenti e gruppi a ruoli che fanno già parte del database Gestione utente. È inoltre possibile creare, modificare ed eliminare ruoli.
+seo-title: Creating and configuring roles
+description: Scopri come associare utenti e gruppi a ruoli che fanno già parte del database User Management. Puoi anche creare, modificare ed eliminare ruoli.
+seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
 uuid: e8e4331d-48e1-4fa9-8f44-f885f4ab1a54
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
-translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
 
-
 # Creazione e configurazione di ruoli{#creating-and-configuring-roles}
 
-Utilizzando le pagine Web Gestione utente, potete associare utenti e gruppi a ruoli che fanno già parte del database Gestione utente. È inoltre possibile creare, modificare ed eliminare ruoli.
+Utilizzando le pagine web Gestione utente, puoi associare utenti e gruppi a ruoli che fanno già parte del database Gestione utente. Puoi anche creare, modificare ed eliminare ruoli.
 
-Gestione utente ha due tipi di ruoli:
+La gestione utente dispone di due tipi di ruoli:
 
-**Ruoli eseguibili:** questo tipo di ruolo può essere modificato ed eliminato e le autorizzazioni per i ruoli possono essere aggiunte ed eliminate da questi tipi di ruolo. I ruoli creati vengono considerati come ruolo modificabile. Potete aggiungere o rimuovere utenti e gruppi assegnati a ruoli modificabili.
+**Ruoli variabili:** Questo tipo di ruolo può essere modificato ed eliminato e le autorizzazioni per i ruoli possono essere aggiunte ed eliminate da questi tipi di ruolo. Qualsiasi ruolo creato viene considerato mutabile. Puoi aggiungere o rimuovere utenti e gruppi assegnati a ruoli modificabili.
 
-**Ruoli immutabili:** i ruoli predefiniti inclusi con Gestione utente sono immutabili. Questi ruoli non possono essere modificati o eliminati. Tuttavia, potete aggiungere o rimuovere utenti e gruppi assegnati a ruoli immutabili.
+**Ruoli immutabili:** I ruoli predefiniti inclusi con Gestione utente sono immutabili. Questi ruoli non possono essere modificati o eliminati. È tuttavia possibile aggiungere o rimuovere utenti e gruppi assegnati a ruoli immutabili.
 
-I ruoli modificabili e immutabili possono essere creati anche tramite le API dei moduli AEM.
+È inoltre possibile creare ruoli mutabili e immutabili tramite le API dei moduli AEM.
 
 ## Ruoli predefiniti {#default-roles}
 
-I seguenti ruoli predefiniti sono inclusi nel database Gestione utente.
+I seguenti ruoli predefiniti sono inclusi nel database User Management.
 
-**console di amministrazione Utente:** può accedere alla console di amministrazione.
+**console di amministrazione Utente:** Può accedere alla console di amministrazione.
 
-**Amministratore applicazione:** può utilizzare tutte le funzioni di Workbench. È possibile utilizzare le pagine Applicazioni e Servizi nella console di amministrazione per configurare le proprietà di esecuzione, gli endpoint e la protezione del servizio.
+**Amministratore dell&#39;applicazione:** Utilizza tutte le funzionalità di Workbench. Può utilizzare le pagine Applicazioni e servizi nella console di amministrazione per configurare proprietà, endpoint e sicurezza di esecuzione del servizio.
 
-**AEM moduli Amministratore:** può eseguire tutte le attività per tutti i servizi installati.
+**Amministratore AEM moduli:** È in grado di eseguire tutte le attività per tutti i servizi installati.
 
-**Amministratore di sicurezza:** controlla le impostazioni di gestione utenti e gestisce gli utenti e i gruppi associati a qualsiasi dominio di User Manager
+**Amministratore della sicurezza:** Controlla le impostazioni di User Management e gestisce gli utenti e i gruppi associati a qualsiasi dominio di User Manager
 
-**Utente servizi:** può visualizzare e richiamare qualsiasi servizio
+**Utente servizi:** Può visualizzare e richiamare qualsiasi servizio
 
-**Amministratore avanzato:** dispone dell&#39;accesso a tutte le funzionalità amministrative del sistema, compresi i servizi
+**Amministratore avanzato:** Ha accesso a tutte le funzionalità amministrative del sistema, compresi i servizi
 
-**Amministratore trust:** può gestire le impostazioni di attendibilità PKI e le credenziali PKI gestite dalla pagina Gestione archivio attendibili nella console di amministrazione
+**Amministratore di attendibilità:** È possibile gestire le impostazioni di attendibilità PKI e le credenziali PKI gestite dalla pagina Gestione archivio attendibili nella console di amministrazione
 
 ### Altri ruoli predefiniti {#additional-default-roles}
 
-I seguenti ruoli predefiniti aggiuntivi possono essere inclusi, a seconda dei componenti dei moduli AEM installati
+Possono essere inclusi i seguenti ruoli predefiniti aggiuntivi, a seconda dei componenti dei moduli AEM installati
 
-**Utente applicazione di caricamento del documento:** può caricare documenti tramite Flex Remoting.
+**Utente applicazione di caricamento documenti:** Può caricare documenti utilizzando Flex Remoting.
 
-**Amministratore Forms:** può visualizzare e modificare le impostazioni dalla pagina Forms in Admin Console
+**Amministratore Forms:** Può visualizzare e modificare le impostazioni dalla pagina Forms in Admin Console
 
-**AEM moduli Contentspace Administrator:** È possibile visualizzare e modificare le impostazioni dalla pagina Content Services (obsoleto) nella console di amministrazione
+**Amministratore di spazio dei AEM moduli:** Può visualizzare e modificare le impostazioni dalla pagina Content Services (Obsoleto) nella console di amministrazione
 
-**AEM moduli Contentspace Utente:** Può accedere alle pagine Web Contentspace (obsoleto)
+**AEM moduli Contentspace Utente:** Può accedere alle pagine web Contentspace (Obsoleto)
 
-**Amministratore del connettore Documentum:** È possibile visualizzare e modificare le impostazioni dalla pagina Connettore per EMC Documentum nella console di amministrazione
+**Amministratore Documentum Connector:** È possibile visualizzare e modificare le impostazioni dalla pagina Connettore per EMC Documentum nella console di amministrazione
 
-**AEM moduli FileNet Connector Administrator:** È possibile visualizzare e modificare le impostazioni dalla pagina Connettore per IBM FileNet nella console di amministrazione
+**Amministratore del connettore FileNet di AEM:** Può visualizzare e modificare le impostazioni dalla pagina Connector for IBM FileNet nella console di amministrazione
 
-**AEM moduli amministratore del connettore IBM CM:** È possibile visualizzare e modificare le impostazioni dalla pagina Connettore per IBM Content Manager nella console di amministrazione
+**Amministratore del connettore IBM CM per moduli AEM:** Può visualizzare e modificare le impostazioni dalla pagina Connector for IBM Content Manager nella console di amministrazione
 
-**Amministratore Rights Management:** esegue tutte le attività necessarie per tutte le configurazioni server nelle relative pagine del Rights Management
+**Amministratore di Rights Management:** Esegue tutte le attività necessarie per tutte le configurazioni del server nelle pagine dei Rights Management pertinenti
 
-**Rights Management utente finale:** può accedere alle pagine Web dell&#39;utente finale del Rights Management
+**Utente finale Rights Management:** Accesso alle pagine web dell&#39;utente finale del Rights Management
 
-**Rights Management Invita utente:** può invitare gli utenti
+**Rights Management invito utente:** Può invitare gli utenti
 
-**Gestione Rights Management utenti invitati e locali:** può eseguire le attività necessarie per gestire tutti gli utenti invitati e locali nelle relative pagine del Rights Management
+**Gestione Rights Management utenti invitati e locali:** Può eseguire le attività necessarie per gestire tutti gli utenti invitati e locali nelle pagine dei Rights Management pertinenti
 
-**Amministratore set di criteri di Rights Management:** esegue tutte le attività richieste per tutti i set di criteri nelle pagine di Rights Management rilevanti
+**Amministratore set di criteri di Rights Management:** Esegue tutte le attività necessarie per tutti i set di criteri nelle pagine dei Rights Management rilevanti
 
-**Rights Management Amministratore avanzato:** esegue tutte le attività richieste dalla pagina del Rights Management
+**Amministratore avanzato Rights Management:** Esegue tutte le attività richieste dalla pagina Rights Management
 
-**AEM moduli Amministratore area di lavoro:** È possibile visualizzare e modificare le impostazioni dalla pagina Area di lavoro nella console di amministrazione
+**Amministratore di AEM Workspace:** Può visualizzare e modificare le impostazioni dalla pagina Workspace in Admin Console
 
-***nota **: Flex Workspace è obsoleto per AEM rilascio di moduli.*
+***nota **: Flex Workspace è obsoleto per AEM versione dei moduli.*
 
-**Utente di Workspace:** può accedere all’applicazione per l’utente finale di Workspace
+**Utente area di lavoro:** Può accedere all’applicazione utente finale di Workspace
 
-**Amministratore di output:** può visualizzare e modificare le impostazioni dalla pagina Output nella console di amministrazione
+**Amministratore output:** Può visualizzare e modificare le impostazioni dalla pagina Output in Admin Console
 
-**Amministratore PDFG:** È possibile visualizzare e modificare le impostazioni dalla pagina Generatore PDF nella console di amministrazione
+**Amministratore PDFG:** Può visualizzare e modificare le impostazioni dalla pagina PDF Generator nella console di amministrazione
 
-**Utente PDFG:** Può accedere a tutte le funzionalità non amministrative per PDF Generator
+**Utente PDFG:** Può accedere a tutte le funzionalità non amministrative di PDF Generator
 
-**Applicazione Web estensioni Acrobat Reader DC:** Uso dell&#39;applicazione Web estensioni Acrobat Reader DC
-
->[!NOTE]
->
->Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine Web degli utenti finali di Workspace per motivi di sicurezza. Poiché queste pagine possono esistere all&#39;esterno di un firewall, l&#39;autorizzazione delle attività a livello di amministrazione potrebbe rappresentare un rischio per la sicurezza. Solo gli utenti che dispongono dei moduli AEM Amministratore di Workspace o AEM I privilegi Utente di Workspace possono accedere alle pagine Web dell&#39;utente finale di Workspace.
+**Applicazione Web Acrobat Reader DC extensions:** Può utilizzare l&#39;applicazione Web Acrobat Reader DC extensions
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per AEM rilascio di moduli.
+>Gli utenti con determinati tipi di privilegi di amministratore non possono accedere alle pagine web dell’utente finale di Workspace per motivi di sicurezza. Poiché queste pagine possono esistere al di fuori di un firewall, l’autorizzazione delle attività a livello di amministrazione potrebbe comportare un rischio per la sicurezza. Solo gli utenti che dispongono dei privilegi di amministratore di Workspace o AEM forms Workspace possono accedere alle pagine Web degli utenti finali di Workspace.
+
+>[!NOTE]
+>
+>Flex Workspace è obsoleto per AEM versione dei moduli.
 
 ## Creare un ruolo {#create-a-role}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nuovo ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nuovo ruolo.
 1. Nella casella Nome ruolo digitare un nome per il ruolo e, facoltativamente, digitare una descrizione del ruolo, quindi fare clic su Avanti.
 
    >[!NOTE]
    >
-   >Quando si utilizza MySQL, non è possibile creare due ruoli con lo stesso nome ma con caratteri estesi diversi. Ad esempio, se si tenta di creare un ruolo denominato abcde quando esiste già un ruolo denominato âbcdè, si verifica un errore.
+   >Quando si utilizza MySQL, non è possibile creare due ruoli che hanno lo stesso nome ma differiscono nell&#39;uso di caratteri estesi. Ad esempio, se si tenta di creare un ruolo denominato abcde quando esiste già un ruolo denominato âbcdè, si verifica un errore.
 
-1. Fate clic su Trova autorizzazioni, selezionate le autorizzazioni da aggiungere al ruolo.
-1. Fare clic su OK, quindi su Avanti.
+1. Fare clic su Trova autorizzazioni, selezionare le autorizzazioni da aggiungere al ruolo.
+1. Fare clic su OK e quindi su Avanti.
 1. Assegna questo ruolo a utenti e gruppi:
 
-   * Fate clic su Trova utenti/gruppi.
-   * Nella casella Trova, digitate i criteri di ricerca.
-   * Selezionate Nome, E-mail o ID utente, quindi selezionate Utenti, Gruppi o Utenti e gruppi.
-   * Selezionate il dominio, selezionate il numero di risultati da visualizzare e fate clic su Trova.
-   * Selezionate le caselle di controllo relative agli utenti e ai gruppi a cui assegnare il ruolo e fate clic su OK.
+   * Fare clic su Trova utenti/gruppi.
+   * Nella casella Trova digitare i criteri di ricerca.
+   * Selezionare Nome, E-mail o ID utente, quindi selezionare Utenti, Gruppi o Utenti e gruppi.
+   * Selezionare il dominio, selezionare il numero di risultati da visualizzare e fare clic su Trova.
+   * Selezionare le caselle di controllo relative agli utenti e ai gruppi a cui assegnare il ruolo e fare clic su OK.
 
-1. Per visualizzare i dettagli utente e gruppo, selezionate l&#39;entità.
-1. Fare clic su OK, quindi su Fine.
+1. Per visualizzare i dettagli utente e gruppo, seleziona l’entità.
+1. Fare clic su OK e quindi su Fine.
 
-## Modifica di un ruolo {#edit-a-role}
+## Modificare un ruolo {#edit-a-role}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nome ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nome ruolo.
 
-   Per impostazione predefinita, nella pagina Gestione ruolo sono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizzate l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
+   Per impostazione predefinita, nella pagina Gestione ruolo vengono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizza l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
 
-1. Fate clic sul ruolo da modificare, modificate le impostazioni generali e fate clic su Salva.
-1. Per modificare le autorizzazioni dei ruoli, fate clic sulla scheda Autorizzazioni ed effettuate le seguenti operazioni:
+1. Fare clic sul ruolo da modificare, modificare le impostazioni generali e fare clic su Salva.
+1. Per modificare le autorizzazioni del ruolo, fare clic sulla scheda Autorizzazioni ed eseguire le operazioni seguenti:
 
-   * Per aggiungere nuove autorizzazioni, fate clic su Trova autorizzazioni, selezionate le caselle di controllo relative alle autorizzazioni da aggiungere, fate clic su OK, quindi su Salva.
-   * Per eliminare un&#39;autorizzazione dal ruolo, selezionate la casella di controllo per l&#39;autorizzazione, fate clic su Elimina, quindi su Salva.
+   * Per aggiungere nuove autorizzazioni, fare clic su Trova autorizzazioni, selezionare le caselle di controllo relative alle autorizzazioni da aggiungere, fare clic su OK e quindi su Salva.
+   * Per eliminare un’autorizzazione dal ruolo, selezionare la casella di controllo relativa all’autorizzazione, fare clic su Elimina, quindi fare clic su Salva.
 
-1. Per gestire il ruolo assegnato, fare clic sulla scheda Utenti ruolo ed effettuare le seguenti operazioni:
+1. Per gestire a chi è assegnato il ruolo, fai clic sulla scheda Utenti ruolo ed esegui le seguenti attività:
 
-   * Per assegnare il ruolo a nuovi utenti e gruppi, fate clic su Trova utenti/gruppi e completate la ricerca. Selezionate la casella di controllo per ciascun utente e gruppo a cui assegnare il ruolo, fate clic su OK, quindi su Salva.
-   * Per rimuovere il ruolo, selezionate la casella di controllo relativa agli utenti o al gruppo, fate clic su Annulla assegnazione e quindi su Salva.
+   * Per assegnare il ruolo a nuovi utenti e gruppi, fare clic su Trova utenti/gruppi e completare le informazioni di ricerca. Selezionare la casella di controllo relativa a ciascun utente e gruppo a cui assegnare il ruolo, fare clic su OK e quindi su Salva.
+   * Per rimuovere il ruolo, selezionare la casella di controllo relativa agli utenti o al gruppo, fare clic su Annulla assegnazione e quindi su Salva.
 
 ## Eliminare un ruolo {#delete-a-role}
 
 È possibile eliminare uno qualsiasi dei ruoli creati, ma non i ruoli predefiniti dei moduli AEM inclusi nel prodotto.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nome ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nome ruolo.
 
-   Per impostazione predefinita, nella pagina Gestione ruolo sono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizzate l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
+   Per impostazione predefinita, nella pagina Gestione ruolo vengono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizza l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
 
-1. Selezionate la casella di controllo relativa al ruolo da eliminare, fate clic su Elimina, quindi su OK.
+1. Selezionare la casella di controllo relativa al ruolo da eliminare, fare clic su Elimina e quindi su OK.
 
-## Assegnazione di un ruolo a utenti e gruppi {#assign-a-role-to-users-and-groups}
+## Assegnare un ruolo a utenti e gruppi {#assign-a-role-to-users-and-groups}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Utenti e gruppi.
-1. Specificate le informazioni per limitare la ricerca e fate clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Potete ordinare l’elenco facendo clic su una delle intestazioni di colonna.
-1. Selezionate le caselle accanto agli utenti e ai gruppi da associare a un ruolo e fate clic su Assegna ruolo.
-1. Selezionate il ruolo da assegnare all’utente o al gruppo e fate clic su OK.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Utenti e gruppi.
+1. Specificare le informazioni per limitare la ricerca e fare clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Per ordinare l’elenco, fai clic su una delle intestazioni di colonna.
+1. Selezionare le caselle di controllo accanto agli utenti e ai gruppi da associare a un ruolo e fare clic su Assegna ruolo.
+1. Selezionare il ruolo da assegnare all&#39;utente o al gruppo e fare clic su OK.
 
-È inoltre possibile assegnare i ruoli utilizzando la pagina Gestione ruolo.
+Puoi anche assegnare ruoli utilizzando la pagina Gestione ruoli .
 
 ## Determinare chi è assegnato a un ruolo {#determine-who-is-assigned-to-a-role}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nome ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nome ruolo.
 
-   Per impostazione predefinita, nella pagina Gestione ruolo sono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizzate l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
+   Per impostazione predefinita, nella pagina Gestione ruolo vengono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizza l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
 
-1. Nella pagina Dettagli ruolo, fate clic sulla scheda Utenti ruolo. Viene visualizzato un elenco di utenti e gruppi che sono direttamente associati al ruolo.
+1. Nella pagina Dettagli ruolo , fai clic sulla scheda Utenti ruolo . Viene visualizzato un elenco di utenti e gruppi che sono direttamente associati al ruolo.
 
-## Modifica autorizzazioni ruolo {#change-role-permissions}
+## Modificare le autorizzazioni del ruolo {#change-role-permissions}
 
-Potete modificare le autorizzazioni per uno qualsiasi dei ruoli creati. Non è possibile modificare le autorizzazioni per i ruoli predefiniti dei moduli AEM inclusi nel prodotto.
+Puoi modificare le autorizzazioni per uno qualsiasi dei ruoli creati. Non è possibile modificare le autorizzazioni per i ruoli modulo AEM predefiniti inclusi nel prodotto.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nome ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nome ruolo.
 
-   Per impostazione predefinita, nella pagina Gestione ruolo sono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizzate l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
+   Per impostazione predefinita, nella pagina Gestione ruolo vengono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizza l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
 
-1. Selezionate il ruolo per il quale visualizzare le autorizzazioni e fate clic sulla scheda Autorizzazioni.
-1. Per modificare queste autorizzazioni, fate clic su Trova autorizzazioni, selezionate le caselle di controllo relative alle autorizzazioni da aggiungere al ruolo, fate clic su OK, quindi su Salva.
-1. Per eliminare un&#39;autorizzazione, selezionate l&#39;autorizzazione, fate clic su Elimina, quindi fate clic su Salva.
+1. Seleziona il ruolo per cui visualizzare le autorizzazioni e fai clic sulla scheda Autorizzazioni .
+1. Per modificare queste autorizzazioni, fare clic su Trova autorizzazioni, selezionare le caselle di controllo relative alle autorizzazioni da aggiungere al ruolo, fare clic su OK e quindi su Salva.
+1. Per eliminare un’autorizzazione, selezionarla, fare clic su Elimina, quindi su Salva.
 
-### AEM autorizzazioni dei moduli {#aem-forms-permissions}
+### Autorizzazioni AEM moduli {#aem-forms-permissions}
 
-**ADD_REMOVE_ENDPOINT_PERM:** aggiungere, rimuovere e modificare gli endpoint per un servizio
+**ADD_REMOVE_ENDPOINT_PERM:** Aggiungere, rimuovere e modificare gli endpoint di un servizio
 
-**Admin Console Accesso:** visualizzare la console di amministrazione
+**Admin Console di accesso:** Visualizzare la console di amministrazione
 
-**Modifica certificato:** modificare le impostazioni di attendibilità di qualsiasi certificato nell&#39;archivio certificati
+**Modifica certificato:** Modificare le impostazioni di attendibilità di qualsiasi certificato nell&#39;archivio attendibilità
 
-**Lettura certificato:** lettura di qualsiasi certificato nell&#39;archivio certificati attendibili
+**Certificato letto:** Leggi qualsiasi certificato nell&#39;archivio fonti attendibili
 
-**Scrittura certificato:** aggiungere un certificato all&#39;archivio certificati
+**Scrittura certificato:** Aggiungi un certificato all’archivio attendibilità
 
-**Componente Aggiungi:** Installare un nuovo componente nel sistema
+**Aggiungi componente:** Installare un nuovo componente nel sistema
 
-**Eliminazione componente:** Eliminare qualsiasi componente del sistema
+**Elimina componente:** Elimina qualsiasi componente del sistema
 
-**Lettura componente:** Leggere qualsiasi componente del sistema
+**Lettura componente:** Leggi qualsiasi componente del sistema
 
-**Contentspace Administrator:** Permission for Contentspace (obsoleto) Administrator
+**Amministratore di Contentspace:** Autorizzazione per l&#39;amministratore di Contentspace (obsoleto)
 
-**Accesso alla console Contentspace:** Autorizzazione per accesso alla console Contentspace (obsoleto)
+**Accesso alla console Contentspace:** Autorizzazione per l’accesso alla console Contentspace (obsoleto)
 
-**Controllo delle impostazioni di base:** gestire le impostazioni nella pagina Impostazioni di sistema di base nella console di amministrazione
+**Controllo impostazioni core:** Gestire le impostazioni nella pagina Impostazioni sistema core in Admin Console
 
 **CREATE_VERSION_PERM:** Creare una nuova versione di un servizio
 
-**Modifica credenziali:** modificare le credenziali di firma nell&#39;archivio attendibili
+**Modifica credenziale:** Modificare le credenziali di firma nell&#39;archivio attendibilità
 
-**Lettura credenziali:** lettura delle credenziali di firma nell&#39;archivio certificati
+**Lettura credenziali:** Leggere le credenziali di firma nell&#39;archivio attendibilità
 
-**Scrittura credenziali:** aggiungere una credenziale di firma all&#39;archivio certificati
+**Scrittura credenziale:** Aggiungi una credenziale di firma all’archivio attendibilità
 
-**Modifica CRL:** modificare qualsiasi CRL (elenco di revoca dei certificati) nell&#39;archivio certificati
+**Modifica CRL:** Modificare un CRL (Elenco di revoca certificati) nell&#39;archivio certificati
 
-**Lettura CRL:** lettura di un CRL nell&#39;archivio certificati
+**Lettura CRL:** Leggere qualsiasi CRL nell&#39;archivio certificati
 
-**Scrittura CRL:** aggiungere un CRL all&#39;archivio certificati
+**Scrittura CRL:** Aggiungere un CRL all&#39;archivio certificati
 
-**Delega:** impostare un ACL su una risorsa
+**Delega:** Impostare un ACL su una risorsa
 
 **DELETE_VERSION_PERM:** Eliminare una versione di un servizio
 
 **Caricamento documento:** Caricare documenti nei moduli AEM
 
-**Controllo del dominio:** creare, eliminare o modificare le impostazioni per qualsiasi dominio di Gestione utenti, inclusi i provider di autenticazione e directory
+**Controllo dominio:** Creare, eliminare o modificare le impostazioni per qualsiasi dominio di Gestione utente, inclusi i provider di autenticazione e directory
 
-**Tipo evento Modifica:** Modifica ai tipi di evento
+**Modifica tipo evento:** Modifica ai tipi di evento
 
 **Controllo rappresentazione identità:** Impersona identità in User Manager
 
-**INVOKE_PERM:** richiamare tutte le operazioni su un servizio
+**INVOKE_PERM:** Richiama di tutte le operazioni su un servizio
 
-**LCDS Data Model Control:** lettura e implementazione di modelli di dati in Data Services
+**Controllo del modello dati LCDS:** Lettura e distribuzione dei modelli di dati in Servizi dati
 
-**Aggiornamento di License Manager:informazioni** sulle licenze di aggiornamento
+**Aggiornamento di License Manager:** Aggiornare le informazioni sulla licenza
 
 **MODIFY_CONFIG_PERM:** Modificare la configurazione di un servizio
 
-**MODIFICA** DELLA VERSIONE DI UN SERVIZIO
+**TERMINE** Modificare la versione di un servizio
 
-**PDFGAdminPermission:amministratore** PDFG
+**PDFGAdminPermission:** Amministratore PDFG
 
-**PDFGUserPermission:utente** PDFG
+**PDFGUserPermission:** Utente PDFG
 
-**PERM_DCTM_ADMIN:amministratore del connettore** Documentum
+**PERM_DCTM_ADMIN:** Amministratore Documentum Connector
 
-**PERM_FILENET_ADMIN:amministratore del connettore** FileNet
+**PERM_FILENET_ADMIN:** Amministratore del connettore FileNet
 
-**PERM_FORMS_ADMIN:amministratore** Forms
+**PERM_FORMS_ADMIN:** Amministratore Forms
 
-**PERM_IBMCM_ADMIN:amministratore del connettore** IBM CM
+**PERM_IBMCM_ADMIN:** Amministratore del connettore IBM CM
 
-**PERM_OUTPUT_ADMIN:amministratore** di output
+**PERM_OUTPUT_ADMIN:** Amministratore di output
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Utilizzare l&#39;applicazione Web delle estensioni Acrobat Reader DC
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Utilizzare l&#39;applicazione Web Acrobat Reader DC extensions
 
-**PERM_SP_ADMIN:impostazioni** Gestisci connettore SharePoint
+**PERM_SP_ADMIN:** Gestire le impostazioni del connettore SharePoint
 
-**PERM_WORKSPACE_ADMIN:Impostazioni** Gestisci area di lavoro
+**PERM_WORKSPACE_ADMIN:** Gestire le impostazioni di Workspace
 
-**PERM_WORKSPACE_USER:** Accedere all’applicazione per l’utente finale di Workspace
+**PERM_WORKSPACE_USER:** Accedere all’applicazione utente finale Workspace
 
-**Controllo entità:** gestire utenti e gruppi per qualsiasi dominio e gestire le assegnazioni di ruoli per tutti gli utenti e i gruppi in qualsiasi dominio
+**Controllo principale:** Gestisci utenti e gruppi per qualsiasi dominio e gestisci le assegnazioni di ruolo per tutti gli utenti e i gruppi in qualsiasi dominio
 
-**Registrazione di processo Lettura/Eliminazione:** Elenco e recupero delle istanze di controllo del flusso di lavoro
+**Lettura/eliminazione della registrazione del processo:** Elencare e recuperare le istanze di controllo del flusso di lavoro
 
-**PROCESS_OWNER_PERM:** visualizzare i dati delle tendenze ed eseguire azioni amministrative su un servizio creato da un processo
+**PROCESS_OWNER_PERM:** Visualizzare i dati delle tendenze ed eseguire azioni amministrative su un servizio creato da un processo
 
-**Lettura:** Lettura del contenuto di una risorsa
+**Leggi:** Leggere il contenuto di una risorsa
 
-**READ_PERM:** Leggere o visualizzare un servizio
+**READ_PERM:** Lettura o visualizzazione di un servizio
 
 **Rinnova asserzione:** Rinnova asserzioni in Gestione utente
 
-**delegato archivio:** impostare un ACL su una risorsa
+**Delegato archivio:** Impostare un ACL su una risorsa
 
-**Lettura archivio:** lettura del contenuto di una risorsa
+**Lettura archivio:** Leggere il contenuto di una risorsa
 
 **Percorso archivio:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
 
-**Scrittura archivio:** Scrittura dei metadati e del contenuto dell&#39;archivio
+**Scrittura archivio:** Scrivere metadati e contenuti dell&#39;archivio
 
-**Rights Management Modifica proprietario criterio:** Modifica proprietario criterio
+**Proprietario del criterio di modifica Rights Management:** Cambia proprietario del criterio
 
-**Accesso alla console utente finale del Rights Management:** accedere all’interfaccia utente finale del Rights Management
+**Accesso alla console utente finale del Rights Management:** Accedi all&#39;interfaccia utente finale del Rights Management
 
-**Rights Management Gestisci configurazione:** Gestisci configurazione server
+**Configurazione gestione Rights Management:** Gestire la configurazione del server
 
-**Rights Management Gestisci utenti invitati e locali:** gestire gli utenti invitati e locali
+**Gestione Rights Management utenti invitati e locali:** Gestione degli utenti invitati e locali
 
-**Rights Management Gestisci set di criteri:** gestire tutti i criteri e i documenti all&#39;interno di qualsiasi set di criteri
+**Rights Management Gestisci set di criteri:** Gestisci tutti i criteri e i documenti all&#39;interno di qualsiasi set di criteri
 
-**Rights Management Criteri Imposta Aggiungi coordinatore:** Aggiungi, rimuovi e modifica le autorizzazioni per i coordinatori di set di criteri
+**Imposta criterio Rights Management Aggiungi coordinatore:** Aggiunta, rimozione e modifica delle autorizzazioni per i coordinatori dei set di criteri
 
-**Set di criteri di Rights Management Crea criterio:** creare un nuovo criterio per un set di criteri
+**Criterio di creazione set di criteri di Rights Management:** Creare un nuovo criterio per un set di criteri
 
-**Set di criteri di Rights Management Elimina criterio:** rimuovere un criterio da un set di criteri
+**Criterio di eliminazione set di criteri di Rights Management:** Rimuovere un criterio da un set di criteri
 
-**Set di criteri di Rights Management Modifica criterio:** modificare un criterio in un set di criteri
+**Criterio di modifica set di criteri di Rights Management:** Modificare un criterio in un set di criteri
 
-**Set di criteri di Rights Management Gestisci autore documento:** quando si creano i set di criteri, si assegna agli utenti il ruolo di autore del documento. L&#39;autore del documento è l&#39;utente che protegge il documento con un criterio.
+**Set di criteri di Rights Management Gestisci autore documenti:** Quando si creano set di criteri, si assegna agli utenti il ruolo di editore del documento. L&#39;autore del documento è l&#39;utente che protegge il documento con un criterio.
 
-**Set di criteri di Rights Management Rimuovi coordinatore:** rimuovere un coordinatore di set di criteri da un set di criteri
+**Coordinatore rimozione set di criteri di Rights Management:** Rimuovere un coordinatore del set di criteri da un set di criteri
 
-**Set di criteri di Rights Management Revoca documento:** Revoca dell&#39;accesso ai documenti in un set di criteri
+**Documento Revoca set di criteri di Rights Management:** Revoca dell&#39;accesso ai documenti in un set di criteri
 
-**Rights Management Criteri di commutazione set:** Cambiare criteri per un documento
+**Criterio di commutazione set di criteri di Rights Management:** Cambia criteri per un documento
 
-**Rights Management impostazione criterio Annulla revoca documento:** Annullamento della revoca di un documento
+**Rights Management Criteri Imposta documento di annullamento revoca:** Annullamento della revoca di un documento
 
-**Evento visualizzazione set di criteri di Rights Management:** visualizzare eventi di criteri e documenti per qualsiasi criterio o documento all&#39;interno di un set di criteri
+**Evento di visualizzazione set di criteri di Rights Management:** Visualizzare gli eventi dei criteri e dei documenti per qualsiasi criterio o documento all&#39;interno di un set di criteri
 
-**Rights Management Visualizza eventi server:** cercare e visualizzare tutti gli eventi di controllo
+**Eventi server di visualizzazione Rights Management:** Ricerca e visualizzazione di tutti gli eventi di controllo
 
-**Controllo dei ruoli:** creare, eliminare e modificare i ruoli in Gestione utente
+**Controllo del ruolo:** Creare, eliminare e modificare ruoli in Gestione utente
 
-**Attivazione del servizio:** avvio di qualsiasi servizio, rendendolo disponibile per la chiamata
+**Attivazione servizio:** Avvia qualsiasi servizio, rendendolo disponibile per la chiamata
 
-**Aggiungi servizio:** distribuisci un nuovo servizio nel Registro di sistema del servizio. Ciò include l&#39;aggiunta di nuovi processi e varianti di processo
+**Aggiungi servizio:** Distribuire un nuovo servizio nel Registro di sistema del servizio. Ciò include l&#39;aggiunta di nuovi processi e varianti di processo
 
-**Disattivazione del servizio:** arresto di qualsiasi servizio nel sistema
+**Disattivazione del servizio:** Arresta qualsiasi servizio nel sistema
 
-**Eliminazione del servizio:** Eliminare qualsiasi servizio nel sistema, inclusi processi e varianti di processo
+**Elimina servizio:** Elimina qualsiasi servizio nel sistema, inclusi processi e varianti di processo
 
-**Chiamata del servizio:** richiamare qualsiasi servizio nel Registro di sistema del servizio disponibile in fase di esecuzione
+**Richiamo del servizio:** Richiama qualsiasi servizio nel Registro di sistema del servizio disponibile in fase di esecuzione
 
-**Modifica servizio:** modifica le proprietà di configurazione di qualsiasi servizio del sistema. Ciò include il blocco e lo sblocco di un servizio nell&#39;IDE, nonché l&#39;aggiunta o la rimozione di endpoint da un servizio
+**Modifica servizio:** Modifica le proprietà di configurazione di qualsiasi servizio nel sistema. Ciò include il blocco e lo sblocco di un servizio nell&#39;IDE e l&#39;aggiunta o la rimozione di endpoint da un servizio
 
-**Lettura del servizio:** lettura di tutti i servizi del sistema. Questo include tutti i processi e le varianti di processo
+**Lettura servizio:** Leggi tutti i servizi del sistema. Ciò include tutti i processi e le varianti di processo
 
-**SERVICE_AGENT_PERM:** visualizzare i dati e interagire con le istanze di processo per un servizio creato da un processo
+**SERVICE_AGENT_PERM:** Visualizzare i dati e interagire con le istanze di processo per un servizio creato da un processo
 
-**SERVICE_MANAGER_PERM:** eseguire il bilanciamento del carico e altre azioni amministrative su un servizio creato da un processo
+**SERVICE_MANAGER_PERM:** Eseguire il bilanciamento del carico e altre azioni amministrative su un servizio creato da un processo
 
-**START_STOP_PERM:** Avviare o arrestare un servizio
+**START_STOP_PERM:** Avviare o interrompere un servizio
 
-**SUPERVISOR_PERM:** visualizzare i dati delle istanze del processo per un servizio creato da un processo
+**SUPERVISOR_PERM:** Visualizzare i dati dell&#39;istanza del processo per un servizio creato da un processo
 
-**Navigazione:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
+**Viaggio:** Includere una risorsa in una richiesta di risorse elenco o leggere i metadati di una risorsa
 
-**scrittura:** scrittura di metadati e contenuto dell&#39;archivio
+**Scrivi:** Scrivere metadati e contenuti dell&#39;archivio
 
 **Apertura di file in Workbench**
 
-Per visualizzare il contenuto della visualizzazione Risorse in Workbench e aprire i file per la visualizzazione, l&#39;utente richiede le seguenti autorizzazioni:
+Per visualizzare il contenuto della visualizzazione Risorse in Workbench e aprire i file da visualizzare, un utente richiede le seguenti autorizzazioni:
 
 * Lettura archivio
 * Percorso archivio
-* Chiamata al servizio
+* Richiamo del servizio
 * Lettura servizio
 
 ## Rimuovere un utente o un gruppo da un ruolo {#remove-a-user-or-group-from-a-role}
 
-Utilizzate la pagina Gestione ruolo per rimuovere utenti e gruppi da un ruolo specifico. Se l’utente o il gruppo ha ereditato l’assegnazione del ruolo, non è possibile rimuovere il ruolo a livello di utente o gruppo. Rimuovere l&#39;utente o il gruppo dalla struttura di ereditarietà oppure rimuovere il ruolo dall&#39;elemento padre.
+Utilizza la pagina Gestione dei ruoli per rimuovere utenti e gruppi da un particolare ruolo. Se l&#39;utente o il gruppo ha ereditato l&#39;assegnazione di ruolo, non è possibile rimuovere il ruolo a livello di utente o gruppo. Rimuovere l&#39;utente o il gruppo dalla struttura di ereditarietà o rimuovere il ruolo dal padre.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fate clic su Nome ruolo.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione ruolo, quindi fai clic su Nome ruolo.
 
-   Per impostazione predefinita, nella pagina Gestione ruolo sono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizzate l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
+   Per impostazione predefinita, nella pagina Gestione ruolo vengono visualizzati tutti i ruoli del database Gestione utente. Se l’elenco dei ruoli è grande, utilizza l’area Trova nella parte superiore della pagina per cercare un nome di ruolo specifico.
 
-1. Nell&#39;elenco dei ruoli, fate clic sul nome del ruolo da aggiornare, quindi fate clic sulla scheda Utenti ruolo. Viene visualizzato un elenco di utenti e gruppi associati al ruolo.
-1. Selezionate le caselle di controllo che gli utenti e i gruppi devono rimuovere dal ruolo e fate clic su Annulla assegnazione.
-1. Fate clic su Salva, quindi su OK.
-
+1. Nell’elenco dei ruoli, fai clic sul nome del ruolo da aggiornare, quindi fai clic sulla scheda Utenti ruolo . Viene visualizzato un elenco di utenti e gruppi associati al ruolo .
+1. Selezionare le caselle di controllo relative agli utenti e ai gruppi da rimuovere dal ruolo e fare clic su Annulla assegnazione.
+1. Fare clic su Salva e quindi su OK.

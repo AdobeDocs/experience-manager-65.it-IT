@@ -1,35 +1,34 @@
 ---
 title: Configurazione iniziale per l'abilitazione
-seo-title: Configurazione iniziale
+seo-title: Initial Setup
 description: Configurazione iniziale per l'abilitazione
-seo-description: Configurazione iniziale per l'abilitazione
+seo-description: Initial Setup for Enablement
 uuid: 873ec41d-c088-41d9-a535-de5300661de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: ed494922-3e15-4778-84c1-35c8846ce980
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 1%
+source-wordcount: '860'
+ht-degree: 2%
 
 ---
 
+# Configurazione iniziale per l&#39;abilitazione  {#initial-setup-for-enablement}
 
-# Configurazione iniziale per abilitazione {#initial-setup-for-enablement}
+## Avvia istanze di authoring e pubblicazione {#start-author-and-publish-instances}
 
-## Avvio istanze di creazione e pubblicazione {#start-author-and-publish-instances}
+A scopo di sviluppo e dimostrazione, sarà necessario eseguire un autore e un’istanza di pubblicazione.
 
-A scopo di sviluppo e dimostrazione, sarà necessario eseguire un&#39;istanza di creazione e pubblicazione.
+Seguire le AEM di base [Introduzione](../../help/sites-deploying/deploy.md#getting-started) istruzioni che
 
-Seguire le istruzioni di base AEM [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) che determinano
-
-* Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
+* Ambiente di authoring in [localhost:4502](Http://localhost:4502/)
 * Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
-Per  AEM Communities,
+Per AEM Communities,
 
 * L’ambiente di authoring è destinato a:
 
@@ -41,50 +40,50 @@ Per  AEM Communities,
 * L’ambiente di pubblicazione è destinato a:
 
    * Formazione/formazione basata su argomenti gestiti da Enablement Manager.
-   * Creazione di commenti e valutazioni per risorse di abilitazione e percorsi di apprendimento.
+   * Creazione di commenti e valutazioni di risorse di abilitazione e percorsi di apprendimento.
    * Contatta i contatti delle risorse.
 
 >[!NOTE]
 >
->Se non avete familiarità con AEM, visualizzate la documentazione su [operazioni di base](../../help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
+>Se non hai familiarità con AEM, consulta la documentazione su [trattamento di base](../../help/sites-authoring/basic-handling.md) e [guida rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 
-## Installazione della versione più recente di Communities {#install-latest-communities-release}
+## Installa la versione più recente di Communities {#install-latest-communities-release}
 
-Questa esercitazione crea un [sito community di abilitazione](overview.md#enablement-community). Per verificare che sia installato il pacchetto di funzioni più recente, visita:
+Questa esercitazione crea un [sito della community di abilitazione](overview.md#enablement-community). Per verificare che sia installato il pacchetto di funzionalità più recente, visita:
 
-* [Ultime versioni](deploy-communities.md#latest-releases)
+* [Versioni più recenti](deploy-communities.md#latest-releases)
 
-Per un&#39;esercitazione che crea un sito della community di coinvolgimento [, visitare la [Guida introduttiva  AEM Communities](getting-started.md).](overview.md#engagement-community)
+Per un&#39;esercitazione che crea un [sito community di coinvolgimento](overview.md#engagement-community)visita [Guida introduttiva ad AEM Communities](getting-started.md).
 
-## Configurare le funzioni di abilitazione {#configure-enablement-features}
+## Configurare le funzionalità di abilitazione {#configure-enablement-features}
 
 Per seguire questa esercitazione, è necessario installare correttamente e [configurare l&#39;abilitazione](enablement.md), che richiede prodotti di terze parti, come MySQL e FFmpeg.
 
 ## Configura Analytics {#configure-analytics}
 
-Quando [ Adobe Analytics è configurato per il sito della community](analytics.md), sono disponibili ulteriori informazioni nei [report](reports.md) generati sulle risorse di abilitazione e sui percorsi di apprendimento assegnati ai membri della community (utenti in formazione).
+Quando [Adobe Analytics è configurato per il sito della community](analytics.md), ulteriori informazioni sono disponibili nella sezione [rapporti](reports.md) generati su risorse di abilitazione e percorsi di apprendimento assegnati ai membri della community (studenti).
 
-## Configura e-mail per notifiche {#configure-email-for-notifications}
+## Configura e-mail per le notifiche {#configure-email-for-notifications}
 
-La funzione notifiche, disponibile per impostazione predefinita per tutti i siti creati utilizzando la console `Communities Sites`, fornisce un canale e-mail per le notifiche.
+La funzione di notifica, disponibile per impostazione predefinita per tutti i siti creati utilizzando `Communities Sites` fornisce un canale e-mail per le notifiche.
 
-Ciò che è necessario è che le e-mail siano configurate correttamente per il sito.
+Ciò che è necessario è che l’e-mail sia configurata correttamente per il sito.
 
-Vedere [Configurazione di Email](email.md).
+Vedi [Configurazione e-mail](email.md).
 
-## Abilitare il servizio Tunnel {#enable-the-tunnel-service}
+## Attivare il servizio tunnel {#enable-the-tunnel-service}
 
-Quando si crea un sito community nell&#39;ambiente di authoring, il servizio tunnel consente di creare e gestire utenti e gruppi di utenti registrati nell&#39;ambiente di pubblicazione (membri), assegnare ruoli a membri attendibili della community e assegnare contenuti agli utenti in formazione.
+Durante la creazione di un sito community nell’ambiente di authoring, il servizio tunnel consente di creare e gestire utenti e gruppi di utenti registrati nell’ambiente di pubblicazione (membri), assegnare ruoli ai membri affidabili della community e assegnare contenuti agli studenti.
 
-Per ulteriori informazioni, vedere [Gestione di utenti e gruppi di utenti](users.md).
+Per ulteriori informazioni consulta [Gestione di utenti e gruppi di utenti](users.md).
 
-Per istruzioni semplici sull&#39;attivazione del servizio tunnel, vedere [Servizio tunnel](deploy-communities.md#tunnel-service-on-author).
+Per istruzioni semplici sull&#39;attivazione del servizio tunnel, vedi [Servizio tunnel](deploy-communities.md#tunnel-service-on-author).
 
-## Creare tag di esercitazione {#create-tutorial-tags}
+## Creare tag tutorial {#create-tutorial-tags}
 
-Create i tag da utilizzare per le esercitazioni di coinvolgimento e abilitazione, utilizzando lo spazio dei nomi tag di `Tutorial`.
+Crea tag da utilizzare per le esercitazioni di coinvolgimento e abilitazione, utilizzando lo spazio dei nomi tag di `Tutorial`.
 
-Utilizzate la [console Tagging](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
+Utilizza la [Console di assegnazione tag](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -95,36 +94,36 @@ Utilizzate la [console Tagging](../../help/sites-administering/tags.md#tagging-c
 
 ![tutorial-tags](assets/tutorial-tags.png)
 
-Seguite quindi le istruzioni per:
+Quindi segui le istruzioni per:
 
-1. [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
+1. [Impostare le autorizzazioni del tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
 
-Esempio di pacchetto di tag creati per i Tutorials Guida introduttiva  AEM Communities
+Pacchetto di esempio di tag creati per i Tutorials Guida introduttiva di AEM Communities
 
 [Ottieni file](assets/communities_tutorialtags-10.zip)
 
-## Crea membri e gruppi di abilitazione {#create-enablement-members-and-groups}
+## Creare membri e gruppi di abilitazione {#create-enablement-members-and-groups}
 
-Per un sito community di abilitazione, i visitatori del sito non devono essere in grado di [registrarsi autonomamente né utilizzare il login mediante social network](sites-console.md#user-management).
+Per un sito della community di abilitazione, i visitatori del sito non devono essere in grado di [registrazione automatica e accesso social](sites-console.md#user-management).
 
-Al contrario, con il servizio [tunnel](#enable-the-tunnel-service) abilitato, la [console Membri](members.md) viene utilizzata per registrare nuovi membri nell&#39;ambiente di pubblicazione.
+Invece, con la [servizio tunnel](#enable-the-tunnel-service) abilitato [Console dei membri](members.md) viene utilizzato per registrare nuovi membri nell’ambiente di pubblicazione.
 
-In questa esercitazione, nell’ambiente di pubblicazione vengono creati tre membri. Due membri diventeranno membri di un gruppo di utenti assegnato a un percorso di apprendimento, mentre il terzo membro diventerà un contatto per le risorse di abilitazione.
+In questa esercitazione vengono creati tre membri nell’ambiente di pubblicazione. Due membri diventeranno membri di un gruppo di utenti assegnato a un percorso di apprendimento, mentre il terzo membro diventerà un contatto di risorse di abilitazione.
 
-Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato il ruolo di Amministratore community e Gestione abilitazione community.
+Un quarto utente viene creato nell’ambiente di authoring e assegnato i ruoli di Amministratore community e Gestore abilitazione community.
 
 >[!NOTE]
 >
->Questi membri vengono creati prima della creazione del sito della community *Enablement Tutorial*.
+>Questi membri vengono creati prima della creazione del *Tutorial sull’abilitazione* sito della community.
 >
->Se creati successivamente, potrebbero essere aggiunti come membri del gruppo *Membri di Enablement Tutorial* durante la creazione dei membri.
+>Se sono stati creati successivamente, possono essere aggiunti come membri del *Gruppo di membri tutorial di abilitazione* durante la creazione del membro.
 >
->In seguito verranno invece [assegnati al gruppo di membri](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
+>Invece, più tardi, saranno [assegnato al gruppo di membri](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
-### Riley Taylor - Iscritti {#riley-taylor-enrollee}
+### Riley Taylor - Iscriviti {#riley-taylor-enrollee}
 
-[Create un ](members.md#create-new-member) membro che verrà aggiunto a un gruppo di utenti in formazione, il gruppo Community Ski Class.
+[Crea un membro](members.md#create-new-member) che verrà aggiunto a un gruppo di studenti - il gruppo Community Ski Class.
 
 * **ID**: riley
 * **E-mail**: riley.taylor@mailinator.com
@@ -133,9 +132,9 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 * **Nome**: Riley
 * **Cognome**: Taylor
 
-### Sidney Croft - Iscritti {#sidney-croft-enrollee}
+### Sidney Croft - Iscrizione {#sidney-croft-enrollee}
 
-[Create un secondo ](members.md#create-new-member) membro che verrà aggiunto al gruppo Community Ski Class.
+[Crea un secondo membro](members.md#create-new-member) che saranno aggiunti al gruppo Community Ski Class.
 
 * **ID**: sidro
 * **E-mail**: sidney.croft@mailinator.com
@@ -144,72 +143,72 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 * **Nome**: Sidney
 * **Cognome**: Croft
 
-### Quinn Harper - Abilitazione contatto risorse e moderatore {#quinn-harper-enablement-resource-contact-and-moderator}
+### Quinn Harper - Contatto risorse di abilitazione e moderatore {#quinn-harper-enablement-resource-contact-and-moderator}
 
-[Create un ](members.md#create-new-member) membro che verrà aggiunto al gruppo di membri del sito community una volta creato il sito. L&#39;iscrizione consentirà al membro di essere assegnato come abilitazione [Contatto risorsa](resources.md#settings) quando viene creata una risorsa di abilitazione per il sito.
+[Crea un membro](members.md#create-new-member) che verranno aggiunti al gruppo membro del sito della community una volta creato il sito. Questa appartenenza consentirà al membro di essere assegnato come abilitazione [Contatto risorsa](resources.md#settings) quando viene creata una risorsa di abilitazione per il sito.
 
-* **ID**: quinn
+* **ID**: ciuffo
 * **E-mail**: quinn.harper@mailinator.com
 * **Password**: password
 * **Conferma password**: password
 * **Nome**: Quinn
 * **Cognome**: Harper
 
-### Aggiungere un gruppo di utenti - Community Ski Class {#add-a-user-group-community-ski-class}
+### Aggiungi un gruppo di utenti - Community Ski Class {#add-a-user-group-community-ski-class}
 
-[Aggiungete un nuovo ](members.md#create-new-group) gruppo denominato Community Ski Class.
+[Aggiungi un nuovo gruppo](members.md#create-new-group) Classe sciistica comunitaria.
 
-* **ID**: classe sci-comunità
-* **Nome**: Classe Ski Community
-* **Descrizione**: un gruppo di esempio per assegnare le risorse di abilitazione
-* **Aggiungi membri al gruppo**  &#39;add&#39;:
+* **ID**: classe sciistica
+* **Nome**: Classe sciistica comunitaria
+* **Descrizione**: un gruppo di esempio per l’assegnazione di risorse di abilitazione
+* **Aggiungi membri al gruppo** &#39;add&#39;:
 
    * riley
    * sidro
 
 * Seleziona **[!UICONTROL Salva]**
 
-### Proprietà delle classi sciistiche della community {#community-ski-class-properties}
+### Proprietà delle classi di sci della community {#community-ski-class-properties}
 
 ![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
->Durante la creazione del sito, i membri e i gruppi esistenti possono essere aggiunti al gruppo di membri del sito.
+>Durante la creazione del sito, i membri e i gruppi esistenti possono essere aggiunti al gruppo di membri del sito community.
 
-## Ruolo amministratore community {#community-administrator-role}
+## Ruolo Amministratore community {#community-administrator-role}
 
-I membri del gruppo Amministratori community possono creare siti community, gestire siti, gestire membri (possono vietare membri della community) e moderare contenuti.
+I membri del gruppo Amministratori community possono creare siti di community, gestire siti, gestire membri (possono vietare membri della community) e moderare contenuti.
 
 ### Crea utente {#create-user}
 
-Create un utente su *author*, al quale viene assegnato il ruolo di Amministratore community:
+Crea un utente su *autore*, cui è stato assegnato il ruolo di amministratore comunitario:
 
-* Nell’istanza di creazione
+* Sull’istanza di authoring
 
-   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
+   * Ad esempio: [http://localhost:4502/](Http://localhost:4503/)
 
 * Accesso con privilegi di amministratore
 
    * Ad esempio, nome utente &#39;admin&#39; / password &#39;admin&#39;
 
-* Dalla console principale, passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
-* Dal menu **[!UICONTROL Modifica]**, selezionare **[!UICONTROL Aggiungi utente]**.
+* Dalla console principale, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
+* Da **[!UICONTROL Modifica]** menu, seleziona **[!UICONTROL Aggiungi utente]**.
 
-* Nella finestra di dialogo `Create New User` immettere:
+* In `Create New User` finestra di dialogo immetti:
 
-   * **ID&amp;ast;**: sirius
-   * **Indirizzo** e-mail: sirius.nilson@mailinator.com
+   * **ID&amp;ast;**: siriano
+   * **Indirizzo e-mail**: sirius.nilson@mailinator.com
    * **Password&amp;ast;**: password
-   * **Conferma password&amp;ast;**: password
+   * **&amp;Conferma password;**: password
    * **Nome**: Sirio
-   * **&amp;Ultimo nome;**: Nilson
+   * **Cognome&amp;sto;**: Nilson
 
-### Assegna sirius al gruppo di amministratori della community {#assign-sirius-to-community-administrators-group}
+### Assegna Sirius al gruppo di amministratori della community {#assign-sirius-to-community-administrators-group}
 
 Scorri verso il basso fino a `Add User to Groups`:
 
-* Immettere &#39;C&#39; per la ricerca
+* Inserisci &quot;C&quot; per cercare
 
    * Seleziona `Community Administrators`
    * Seleziona `Community Enablement Managers`
@@ -217,4 +216,3 @@ Scorri verso il basso fino a `Add User to Groups`:
 * Seleziona **[!UICONTROL Salva]**
 
 ![admin-role](assets/admin-role.png)
-

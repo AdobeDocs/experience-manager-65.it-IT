@@ -1,29 +1,28 @@
 ---
-title: 'Utilizzo dei tag  '
-seo-title: 'Utilizzo dei tag  '
+title: Utilizzo dei tag
+seo-title: Using Tags
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
-seo-description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
+seo-description: Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 76%
+source-wordcount: '712'
+ht-degree: 80%
 
 ---
 
-
-# Utilizzo dei tag  {#using-tags}
+# Utilizzo dei tag{#using-tags}
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
 
-* Per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati, consultate [Amministrazione dei tag](/help/sites-administering/tags.md).
-* Per informazioni sul framework dei tag, nonché sull&#39;inclusione e l&#39;estensione dei tag nelle applicazioni personalizzate, consultate [Tagging per sviluppatori](/help/sites-developing/tags.md).
+* Vedi [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, vedi [Tagging per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -44,7 +43,7 @@ Quando progetti la struttura dei contenuti di un sito e lo schema di metadati pe
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-Per applicare [tag predefiniti](/help/sites-administering/tags.md), nella finestra **Proprietà pagina** utilizzare il campo a discesa `Tags/Keywords` per selezionare dall&#39;elenco dei tag consentiti per la pagina. La scheda **Tag standard** è lo spazio dei nomi predefinito, il che significa che non esiste un `namespace-string:` con un prefisso alla tassonomia.
+Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** utilizza la finestra `Tags/Keywords` campo a discesa per selezionare dall’elenco di tag consentiti per la pagina. Alta **Tag standard** La scheda è lo spazio dei nomi predefinito, il che significa che non esiste `namespace-string:` con prefisso alla tassonomia.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -64,21 +63,20 @@ Come avviene per le pagine, su tag e namespace è possibile effettuare le operaz
 
 **Disattiva**
 
-* È possibile disattivare i tag selezionati.
+* Consente di disattivare i tag selezionati.
 
-## Tag cloud  {#tag-clouds}
+## Tag cloud {#tag-clouds}
 
-I tag cloud mostrano un insieme di tag relativi alla pagina corrente, all’intero sito Web o ai contenuti maggiormente utilizzati. I tag cloud sono uno strumento per evidenziare i problemi che sono (o sono stati) di interesse per l’utente. Le dimensioni del testo utilizzato per visualizzare il tag variano a seconda dell&#39;uso.
+I tag cloud sono  “nuvole” di tag relativi alla pagina corrente, all’intero sito web o ai contenuti maggiormente utilizzati. I tag cloud sono uno strumento per evidenziare i problemi che sono (o sono stati) di interesse per l’utente. Le dimensioni del testo utilizzato per visualizzare il tag variano in relazione all’uso.
 
 Il componente [Tag cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (gruppo di componenti Generale) viene utilizzato per aggiungere un Tag cloud a una pagina.
 
-## Ricerca sui tag  {#searching-on-tags}
+## Ricerca sui tag {#searching-on-tags}
 
 Puoi ricercare i tag sia nell’ambiente di creazione e modifica che nell’ambiente di pubblicazione.
 
-### Uso del componente Ricerca  {#using-search-component}
+### Uso del componente Ricerca {#using-search-component}
 
-L&#39;aggiunta di un [componente di ricerca](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a una pagina fornisce una funzionalità di ricerca che include i tag e può essere utilizzata sia nell&#39;ambiente di creazione che nell&#39;ambiente di pubblicazione.
+Aggiunta di un [Componente di ricerca](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) In una pagina è disponibile una funzionalità di ricerca che include i tag e può essere utilizzata sia nell’ambiente di authoring che in quello di pubblicazione.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
-

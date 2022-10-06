@@ -1,42 +1,41 @@
 ---
-title: Sviluppo dell’editor di massa
-seo-title: Sviluppo dell’editor di massa
-description: I tag consentono di classificare e organizzare il contenuto
-seo-description: I tag consentono di classificare e organizzare il contenuto
+title: Sviluppo dell’editor in blocco
+seo-title: Developing the Bulk Editor
+description: L’assegnazione tag consente di classificare e organizzare i contenuti
+seo-description: Tagging allows content to be categorized and organized
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1837'
 ht-degree: 1%
 
 ---
 
+# Sviluppo dell’editor in blocco{#developing-the-bulk-editor}
 
-# Sviluppo dell&#39;editor di massa{#developing-the-bulk-editor}
+Questa sezione descrive come sviluppare lo strumento Modifiche in serie e come estendere il componente Elenco prodotti, basato sull&#39;editor in serie.
 
-Questa sezione descrive come sviluppare lo strumento per l’editor in blocco e come estendere il componente Elenco prodotti, basato sull’editor in blocco.
+## Parametri query dell’editor bulk {#bulk-editor-query-parameters}
 
-## Parametri query editor di massa {#bulk-editor-query-parameters}
+Quando lavori con l’editor in blocco, puoi aggiungere all’URL diversi parametri di query per chiamare l’editor in blocco con una configurazione specifica. Se desideri che l’editor in blocco sia sempre utilizzato con una determinata configurazione, ad esempio, come nel componente Elenco prodotti, devi modificare bulkeditor.jsp (che si trova in /libs/wcm/core/components/bulkeditor) o creare un componente con la configurazione specifica. Le modifiche apportate utilizzando i parametri di query non sono permanenti.
 
-Quando lavorate con l&#39;editor in blocco, potete aggiungere all&#39;URL diversi parametri di query per chiamare l&#39;editor in blocco con una configurazione specifica. Se desiderate che l’editor in blocco venga sempre utilizzato con una determinata configurazione, ad esempio, come nel componente Elenco prodotti, dovete modificare bulkeditor.jsp (che si trova in /libs/wcm/core/components/bulkeditor) o creare un componente con la configurazione specifica. Le modifiche effettuate utilizzando i parametri di query non sono permanenti.
-
-Ad esempio, se digitate quanto segue nell’URL del browser:
+Ad esempio, se immetti quanto segue nell’URL del browser:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-l&#39;editor in blocco viene visualizzato senza il campo **Percorso radice**, in quanto hrp=true nasconde il campo. Con il parametro hrp=false, il campo viene visualizzato (il valore predefinito).
+l&#39;editor in serie viene visualizzato senza **Percorso radice** come hrp=true nasconde il campo. Con il parametro hrp=false, viene visualizzato il campo (il valore predefinito).
 
-Di seguito è riportato un elenco dei parametri di query dell&#39;editor in blocco:
+Di seguito è riportato un elenco dei parametri di query dell’editor in blocco:
 
 >[!NOTE]
 >
->Ogni parametro può avere un nome lungo e breve. Ad esempio, il nome lungo del percorso radice della ricerca è `rootPath`, il nome breve è `rp`. Se il nome lungo non è definito, il nome breve viene letto dalla richiesta.
+>Ogni parametro può avere un nome lungo e breve. Ad esempio, il nome lungo del percorso principale di ricerca è `rootPath`, quello breve è `rp`. Se il nome lungo non è definito, quello breve viene letto dalla richiesta.
 
 <table>
  <tbody>
@@ -53,7 +52,7 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> rootPath / rp<br /> </td>
    <td> Stringa </td>
-   <td> percorso radice di ricerca</td>
+   <td> percorso principale di ricerca</td>
   </tr>
   <tr>
    <td> queryParams / qp<br /> </td>
@@ -63,7 +62,7 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> contentMode / cm<br /> </td>
    <td> Booleano</td>
-   <td> quando è true, la modalità contenuto è abilitata<br /> </td>
+   <td> se true, la modalità contenuto è abilitata<br /> </td>
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
@@ -83,7 +82,7 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> colsSelection / cs<br /> </td>
    <td> Stringa[]</td>
-   <td> selezione delle proprietà di ricerca (visualizzate come caselle di controllo)</td>
+   <td> selezione delle proprietà cercate (visualizzate come caselle di controllo)</td>
   </tr>
   <tr>
    <td> showGridOnly / sgo<br /> </td>
@@ -93,22 +92,22 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> searchPanelCollapsed / spc</td>
    <td> Booleano</td>
-   <td> quando è true, il pannello di ricerca viene compresso al caricamento</td>
+   <td> se true, il pannello di ricerca viene compresso al caricamento</td>
   </tr>
   <tr>
    <td> hideRootPath / hrp</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il campo del percorso principale</td>
+   <td> quando true, nasconde il campo del percorso principale</td>
   </tr>
   <tr>
    <td> hideQueryParams / hqp</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il campo di query</td>
+   <td> quando true, nasconde il campo query</td>
   </tr>
   <tr>
    <td> hideContentMode / hcm</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il campo della modalità contenuto</td>
+   <td> quando è true, nasconde il campo modalità contenuto</td>
   </tr>
   <tr>
    <td> hideColsSelection / hcs</td>
@@ -118,17 +117,17 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> hideExtraCols / hec</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il campo delle colonne aggiuntive</td>
+   <td> quando è true, nasconde il campo colonne extra</td>
   </tr>
   <tr>
    <td> hideSearchButton</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il pulsante di ricerca</td>
+   <td> se true, nasconde il pulsante di ricerca</td>
   </tr>
   <tr>
-   <td> hideSaveButton/hsavep</td>
+   <td> hideSaveButton / hsavep</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il pulsante Salva</td>
+   <td> se true, nasconde il pulsante salva</td>
   </tr>
   <tr>
    <td> hideExportButton / hexpb</td>
@@ -138,45 +137,45 @@ Di seguito è riportato un elenco dei parametri di query dell&#39;editor in bloc
   <tr>
    <td> hideImportButton / hib</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il pulsante di importazione</td>
+   <td> se true, nasconde il pulsante di importazione</td>
   </tr>
   <tr>
    <td> hideResultNumber / hrn</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il testo del numero del risultato della ricerca griglia</td>
+   <td> se true, nasconde il testo del numero del risultato della ricerca griglia</td>
   </tr>
   <tr>
    <td> hideInsertButton / hinsertb</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il pulsante di inserimento griglia</td>
+   <td> se true, nasconde il pulsante di inserimento griglia</td>
   </tr>
   <tr>
-   <td> hideDeleteButton/hdelb</td>
+   <td> hideDeleteButton / hdelb</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde il pulsante di eliminazione griglia</td>
+   <td> se true, nasconde il pulsante di eliminazione griglia</td>
   </tr>
   <tr>
    <td> hidePathCol / hpc</td>
    <td> Booleano</td>
-   <td> quando è true, nasconde la colonna "percorso" della griglia</td>
+   <td> quando è true, nasconde la colonna "path" della griglia</td>
   </tr>
  </tbody>
 </table>
 
-### Sviluppo di un componente basato su Editor di massa: il componente Elenco prodotti {#developing-a-bulk-editor-based-component-the-product-list-component}
+### Sviluppo di un componente basato su Modifiche in serie: il componente Elenco prodotti {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Questa sezione fornisce una panoramica sull’utilizzo dell’editor in blocco e fornisce una descrizione del componente Geometrixx esistente in base all’editor in blocco: il componente Elenco prodotti.
+Questa sezione fornisce una panoramica sull’utilizzo dell’editor in blocco e fornisce una descrizione del componente di Geometrixx esistente in base all’editor in serie: il componente Elenco prodotti .
 
-Il componente Elenco prodotti consente agli utenti di visualizzare e modificare una tabella di dati. Ad esempio, potete utilizzare il componente Elenco prodotti per rappresentare i prodotti in un catalogo. Le informazioni vengono presentate in una tabella HTML standard e qualsiasi modifica viene eseguita nella finestra di dialogo **Edit**, che contiene un widget BulkEditor. (L’Editor di massa è esattamente lo stesso di quello accessibile all’indirizzo /etc/importers/bulkeditor.html o dal menu Strumenti). Il componente Elenco prodotti è stato configurato per funzionalità specifiche e limitate dell’editor in blocco. È possibile configurare ogni parte dell’editor in blocco (o componenti derivati dall’editor in blocco).
+Il componente Elenco prodotti consente agli utenti di visualizzare e modificare una tabella di dati. Ad esempio, puoi utilizzare il componente Elenco prodotti per rappresentare i prodotti in un catalogo. Le informazioni vengono presentate in una tabella HTML standard ed eventuali modifiche vengono eseguite nel **Modifica** che contiene un widget BulkEditor. (Questo Modifiche collettive è esattamente lo stesso di quello accessibile da /etc/importers/bulkeditor.html o dal menu Strumenti). Il componente Elenco prodotti è stato configurato per funzionalità specifiche e limitate dell’editor in blocco. È possibile configurare ogni parte dell’editor di massa (o dei componenti derivati dall’editor di massa).
 
-Con l’editor in blocco è possibile aggiungere, modificare, eliminare, filtrare ed esportare le righe, salvare le modifiche e importare un set di righe. Ogni riga è memorizzata come nodo nell’istanza del componente Elenco prodotti. Ogni cella è una proprietà di ciascun nodo. Si tratta di una scelta di progettazione che può essere facilmente modificata, ad esempio, è possibile memorizzare i nodi altrove nella directory archivio. Il ruolo del servlet di query consiste nel restituire l&#39;elenco dei nodi da visualizzare; il percorso di ricerca è definito come istanza Elenco prodotti.
+Con l’editor di massa puoi aggiungere, modificare, eliminare, filtrare ed esportare le righe, salvare le modifiche e importare un set di righe. Ogni riga viene memorizzata come nodo nell’istanza del componente Elenco prodotti stessa. Ogni cella è una proprietà di ogni nodo. Si tratta di una scelta progettuale che può essere facilmente modificata, ad esempio, è possibile memorizzare nodi in un altro punto dell&#39;archivio. Il ruolo del servlet di query consiste nel restituire l’elenco dei nodi da visualizzare; il percorso di ricerca è definito come un’istanza dell’elenco dei prodotti.
 
-Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio in /apps/geometrixx/components/product list ed è composto da diverse parti come tutti i componenti AEM:
+Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio in /apps/geometrixx/components/productlist ed è composto da diverse parti come tutti i componenti AEM:
 
-* Rendering HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). JSP legge i nodi secondari del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
-* Finestra di dialogo di modifica, che consente di definire la configurazione dell’editor di massa. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Per informazioni su tutte le proprietà di configurazione, vedere [proprietà di configurazione dell&#39;editor in blocco](#bulk-editor-configuration-properties).
+* Rendering di HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). Il JSP legge i sottonodi del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
+* Finestra di dialogo Modifica, in cui è possibile definire la configurazione dell’editor bulk. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Vedi [proprietà di configurazione dell’editor in serie](#bulk-editor-configuration-properties) per informazioni su tutte le proprietà di configurazione.
 
-Di seguito è riportata una rappresentazione XML dei nodi secondari della finestra di dialogo:
+Ecco una rappresentazione XML dei sotto-nodi della finestra di dialogo:
 
 ```xml
         <editor
@@ -267,9 +266,9 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
         </editor>
 ```
 
-### Proprietà configurazione editor di massa {#bulk-editor-configuration-properties}
+### Proprietà di configurazione dell’editor in blocco {#bulk-editor-configuration-properties}
 
-È possibile configurare ogni parte dell&#39;editor in blocco. Nella tabella seguente sono elencate tutte le proprietà di configurazione per l’editor in blocco.
+È possibile configurare ogni parte dell’editor in blocco. Nella tabella seguente sono elencate tutte le proprietà di configurazione per l’editor in blocco.
 
 <table>
  <tbody>
@@ -279,7 +278,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>rootPath</td>
-   <td>Percorso radice della ricerca</td>
+   <td>Percorso radice di ricerca</td>
   </tr>
   <tr>
    <td>queryParams</td>
@@ -287,23 +286,23 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>contentMode</td>
-   <td>True per abilitare la modalità contenuto: le proprietà vengono lette sul nodo jcr:content e non sul nodo risultato della ricerca</td>
+   <td>True per abilitare la modalità contenuto: le proprietà vengono lette sul nodo jcr:content e non sul nodo dei risultati di ricerca</td>
   </tr>
   <tr>
    <td>colsValue</td>
-   <td>Proprietà di ricerca (valori selezionati da colsSelection visualizzati come caselle di controllo)</td>
+   <td>Proprietà cercate (valori selezionati da colsSelection visualizzati come caselle di controllo)</td>
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Proprietà di ricerca supplementari (visualizzate in un campo di testo separato da virgole)</td>
+   <td>Proprietà di ricerca extra (visualizzate in un campo di testo separato da virgole)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
-   <td>True per eseguire una query al caricamento della pagina</td>
+   <td>True per eseguire la query al caricamento della pagina</td>
   </tr>
   <tr>
    <td>colsSelection</td>
-   <td>Selezione delle proprietà di ricerca (visualizzate come caselle di controllo)</td>
+   <td>Selezione di proprietà cercate (visualizzate come caselle di controllo)</td>
   </tr>
   <tr>
    <td>showGridOnly</td>
@@ -315,7 +314,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>hideRootPath</td>
-   <td>Nascondi campo percorso radice</td>
+   <td>Nascondi campo percorso principale</td>
   </tr>
   <tr>
    <td>hideQueryParams</td>
@@ -327,43 +326,43 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>hideColsSelection</td>
-   <td>Nascondi campo selezione coll</td>
+   <td>Nascondi campo selezione colori</td>
   </tr>
   <tr>
    <td>hideExtraCols</td>
-   <td>Nascondere il campo dei punti aggiuntivi</td>
+   <td>Nascondi campo punti extra</td>
   </tr>
   <tr>
    <td>hideSearchButton</td>
-   <td>Nascondi pulsante di ricerca</td>
+   <td>Pulsante Nascondi ricerca</td>
   </tr>
   <tr>
    <td>hideSaveButton</td>
-   <td>Nascondi pulsante Salva</td>
+   <td>Pulsante Nascondi salvataggio</td>
   </tr>
   <tr>
    <td>hideExportButton</td>
-   <td>Nascondi pulsante di esportazione</td>
+   <td>Pulsante Nascondi esportazione</td>
   </tr>
   <tr>
    <td>hideImportButton</td>
-   <td>Nascondi pulsante importazione</td>
+   <td>Pulsante Nascondi importazione</td>
   </tr>
   <tr>
    <td>hideResultNumber</td>
-   <td>Nascondere il testo del numero del risultato della ricerca griglia</td>
+   <td>Nascondi testo del numero del risultato della ricerca griglia</td>
   </tr>
   <tr>
    <td>hideInsertButton</td>
-   <td>Nascondi pulsante Inserisci griglia</td>
+   <td>Pulsante Nascondi inserimento griglia</td>
   </tr>
   <tr>
    <td>hideDeleteButton</td>
-   <td>Nascondi pulsante di eliminazione griglia</td>
+   <td>Pulsante Nascondi eliminazione griglia</td>
   </tr>
   <tr>
    <td>hidePathCol</td>
-   <td>Nascondi colonna "percorso" della griglia</td>
+   <td>Nascondi la colonna "percorso" della griglia</td>
   </tr>
   <tr>
    <td>queryURL</td>
@@ -375,7 +374,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>importURL</td>
-   <td>Percorso per l'importazione del servlet</td>
+   <td>Percorso del servlet di importazione</td>
   </tr>
   <tr>
    <td>insertResourceType</td>
@@ -391,7 +390,7 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>exportButton</td>
-   <td>Configurazione widget pulsante Esporta</td>
+   <td>Configurazione widget pulsante di esportazione</td>
   </tr>
   <tr>
    <td>importButton</td>
@@ -399,19 +398,19 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>searchPanel</td>
-   <td>Configurazione widget pannello di ricerca</td>
+   <td>Configurazione widget del pannello di ricerca</td>
   </tr>
   <tr>
    <td>griglia</td>
-   <td>Configurazione widget Griglia</td>
+   <td>Configurazione widget griglia</td>
   </tr>
   <tr>
-   <td>store</td>
+   <td>archiviare</td>
    <td>Configurazione store</td>
   </tr>
   <tr>
    <td>colModel</td>
-   <td>Configurazione modello colonna griglia</td>
+   <td>Configurazione del modello a colonne griglia</td>
   </tr>
   <tr>
    <td>rootPathInput</td>
@@ -435,13 +434,13 @@ Di seguito è riportata una rappresentazione XML dei nodi secondari della finest
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>Configurazione metadati colonna. Le proprietà possibili sono (applicate a tutte le celle della colonna): <br />
+   <td>Configurazione dei metadati della colonna. Le proprietà possibili sono (applicate a tutte le celle della colonna): <br />
     <ul>
      <li>cellStyle: stile html </li>
-     <li>cellCls: css, classe </li>
+     <li>cellCls: classe css </li>
      <li>readOnly: true per non essere in grado di modificare il valore </li>
      <li>casella di controllo: true per definire tutte le celle della colonna come caselle di controllo (valori true/false) </li>
-     <li>forcePosition: valore intero per specificare la posizione della colonna nella griglia (tra 0 e numero di colonne-1)<p><br /> </p> </li>
+     <li>forcePosition: valore intero per specificare dove posizionare la colonna nella griglia (tra 0 e numero di colonne-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -454,15 +453,15 @@ Puoi configurare per ogni colonna:
 * proprietà di visualizzazione: stile html, classe CSS e sola lettura
 
 * una casella di controllo
-* una posizione forzata
+* posizione forzata
 
-CSS e colonne di sola lettura
+Colonne CSS e di sola lettura
 
-L&#39;editor in blocco ha tre configurazioni di colonna:
+L’editor in serie dispone di tre configurazioni di colonna:
 
-* Cella nome classe CSS (CellCls): un nome di classe CSS aggiunto a ciascuna cella della colonna configurata.
-* Stile cella (CellStyle): uno stile HTML che viene aggiunto a ogni cella della colonna configurata.
-* Sola lettura (readOnly): la sola lettura è impostata per ogni cella della colonna configurata.
+* Nome classe CSS cella (cellCls): un nome di classe CSS aggiunto a ciascuna cella della colonna configurata.
+* Stile cella (cellStyle): uno stile HTML aggiunto a ciascuna cella della colonna configurata.
+* Sola lettura (sola lettura): per ogni cella della colonna configurata viene impostata la sola lettura.
 
 La configurazione deve essere definita come segue:
 
@@ -513,26 +512,26 @@ L’esempio seguente è disponibile nel componente elenco prodotti (/apps/geomet
 
 **Casella di selezione**
 
-Se la proprietà di configurazione della casella di controllo è impostata su true, tutte le celle della colonna vengono rappresentate come caselle di controllo. Una casella di controllo invia **true** al servlet di salvataggio del server, **false** in caso contrario. Nel menu dell&#39;intestazione, è anche possibile **selezionare all** o **selezionare none**. Queste opzioni sono abilitate se l&#39;intestazione selezionata è l&#39;intestazione di una colonna di casella di controllo.
+Se la proprietà di configurazione della casella di controllo è impostata su true, tutte le celle della colonna vengono sottoposte a rendering come caselle di controllo. Una casella di controllo invia **true** al servlet di salvataggio del server, **false** altrimenti. Nel menu dell’intestazione è inoltre possibile **seleziona tutto** o **seleziona nessuno**. Queste opzioni sono abilitate se l’intestazione selezionata è l’intestazione di una colonna di controllo.
 
-Nell’esempio precedente la colonna di selezione contiene solo le caselle di controllo come caselle di controllo=&quot;true&quot;.
+Nell’esempio precedente la colonna di selezione contiene solo le caselle di controllo come check=&quot;true&quot;.
 
 **Posizione forzata**
 
-L’opzione per metadati forzati, CondizionePosizione consente di specificare la posizione della colonna all’interno della griglia: 0 è la prima posizione e &lt;numero di colonne>-1 è l&#39;ultima posizione. Qualsiasi altro valore viene ignorato.
+I metadati di posizione forzata, l&#39;opzione di posizione forzata ForzaPosition consente di specificare la posizione della colonna all&#39;interno della griglia: 0 è il primo posto e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 è l&#39;ultima posizione. Qualsiasi altro valore viene ignorato.
 
-Nell’esempio precedente, la colonna di selezione è la prima colonna come forzatoPosition=&quot;0&quot;.
+Nell&#39;esempio precedente la colonna di selezione è la prima colonna come forzatoPosition=&quot;0&quot;.
 
 ### Servlet query {#query-servlet}
 
 Per impostazione predefinita, il servlet Query si trova in `/libs/wcm/core/components/bulkeditor/json.java`. Puoi configurare un altro percorso per recuperare i dati.
 
-Il servlet Query funziona come segue: riceve una query GQL e le colonne da restituire, calcola i risultati e invia di nuovo i risultati all&#39;editor in blocco come flusso JSON.
+Il servlet Query funziona come segue: riceve una query GQL e le colonne da restituire, calcola i risultati e invia di nuovo i risultati all’editor in blocco come flusso JSON.
 
-Nel caso del componente Elenco prodotti, i due parametri inviati al servlet Query sono i seguenti:
+Nel caso del componente Elenco prodotti , i due parametri inviati al servlet Query sono i seguenti:
 
-* query: &quot;percorso:/content/geometrixx/en/customer/jcr:content/par/productlist Cube&quot;
-* cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
+* query: &quot;path:/content/geometrixx/en/Customers/jcr:content/par/productlist Cube&quot;
+* punti: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 e il flusso JSON restituito è il seguente:
 
@@ -551,19 +550,19 @@ e il flusso JSON restituito è il seguente:
 }
 ```
 
-Ogni hit corrisponde a un nodo e alle relative proprietà ed è visualizzato come una riga nella griglia.
+Ogni hit corrisponde a un nodo e alle sue proprietà e viene visualizzato come una riga nella griglia.
 
-È possibile estendere il servlet Query per restituire un modello di ereditarietà complesso o nodi di ritorno memorizzati in una posizione logica specifica. Il servlet Query può essere utilizzato per eseguire qualsiasi tipo di calcolo complesso. La griglia può quindi visualizzare righe che sono un aggregato di più nodi nella directory archivio. In tal caso, la modifica e il salvataggio di queste righe devono essere gestiti dal Servlet Save.
+È possibile estendere il servlet Query per restituire un modello di ereditarietà complesso o i nodi di ritorno memorizzati in una posizione logica specifica. Il servlet Query può essere utilizzato per eseguire qualsiasi tipo di calcolo complesso. La griglia può quindi visualizzare le righe che sono un aggregato di più nodi nel repository. La modifica e il salvataggio di queste righe devono in tal caso essere gestiti dal servlet Save.
 
 ### Salva servlet {#save-servlet}
 
-Nella configurazione predefinita dell&#39;editor in blocco ogni riga è un nodo e il percorso di questo nodo è memorizzato nel record di riga. L&#39;editor in blocco mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene creato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, viene inviata una query POST a ogni percorso con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query è implementato per eseguire il calcolo dell&#39;ereditarietà, questo modello non può funzionare come una proprietà restituita dal servlet Query può essere ereditata da un altro nodo.
+Nella configurazione predefinita dell&#39;editor in serie ogni riga è un nodo e il percorso di questo nodo è memorizzato nel record di riga. L&#39;editor in blocco mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene generato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, viene inviata una query POST a ogni percorso con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query è implementato per eseguire il calcolo dell’ereditarietà, questo modello non può funzionare come proprietà restituita dal servlet Query può essere ereditato da un altro nodo.
 
-Il concetto di servlet Save prevede che le modifiche non vengano pubblicate direttamente su ciascun nodo, ma che vengano pubblicate su un servlet che esegue il processo di salvataggio. Questo dà a questo servlet la possibilità di analizzare le modifiche e salvare le proprietà sul nodo destro.
+Il concetto di servlet Save è che le modifiche non vengono pubblicate direttamente su ciascun nodo ma vengono pubblicate su un servlet che esegue il processo di salvataggio. Questo dà a questo servlet la possibilità di analizzare le modifiche e salvare le proprietà sul nodo destro.
 
-Ogni proprietà aggiornata viene inviata al servlet nel formato seguente:
+Ogni proprietà aggiornata viene inviata al servlet nel seguente formato:
 
-* Nome parametro: &lt;percorso jcr>/&lt;nome proprietà>
+* Nome parametro: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
    Esempio: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
@@ -573,6 +572,6 @@ Ogni proprietà aggiornata viene inviata al servlet nel formato seguente:
 
 Il servlet deve sapere dove è memorizzata la proprietà catalogCode.
 
-Un’implementazione predefinita del servlet Save è disponibile all’indirizzo /libs/wcm/bulkeditor/save/POST.jsp e viene utilizzata nel componente Elenco prodotti. Prende tutti i parametri dalla richiesta (con un formato &lt;percorso jcr>/&lt;nome proprietà>) e scrive le proprietà sui nodi utilizzando l&#39;API JCR. Crea anche un nodo se non esiste (righe inserite nella griglia).
+Un’implementazione predefinita del servlet Save è disponibile all’indirizzo /libs/wcm/bulkeditor/save/POST.jsp e viene utilizzata nel componente Elenco prodotti . Prende tutti i parametri dalla richiesta (con un &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format) e scrive le proprietà sui nodi utilizzando l&#39;API JCR. Crea anche un nodo se non esistono (righe inserite nella griglia).
 
-Il codice predefinito non deve essere utilizzato così come viene implementato di nuovo ciò che il server esegue in modo nativo (un POST su &lt;percorso jcr>/&lt;nome proprietà>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save che gestirà un modello di ereditarietà di proprietà.
+Il codice predefinito non deve essere utilizzato così com&#39;è in quanto reimplementa ciò che il server fa in modo nativo (un POST su &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save che gestirà un modello di ereditarietà di proprietà.

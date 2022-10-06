@@ -1,21 +1,20 @@
 ---
 title: Rendering e consegna
-seo-title: Rendering e consegna
+seo-title: Rendering and Delivery
 description: Rendering e consegna
-seo-description: 'null'
+seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 8%
 
 ---
-
 
 # Rendering e consegna{#rendering-and-delivery}
 
@@ -23,7 +22,7 @@ ht-degree: 8%
 >
 >Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-AEM contenuto può essere facilmente sottoposto a rendering tramite [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+Il rendering dei contenuti AEM può essere facilmente eseguito tramite [Servlet predefiniti Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 I moduli di rendering preconfigurati generalmente passano all’archivio e restituiscono il contenuto così com’è.
 
@@ -37,7 +36,7 @@ Il diagramma seguente illustra il rendering dei servizi di contenuti.
 
 ## Richiesta di JSON {#requesting-json}
 
-Utilizza **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto per richiedere JSON.]
+Utilizzo **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** per richiedere JSON.]
 
 <table>
  <tbody>
@@ -47,11 +46,11 @@ Utilizza **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto 
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>una configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omessa, verrà applicata la configurazione di esportazione predefinita </p> </td>
+   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omesso, verrà applicata la configurazione di esportazione predefinita </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> ricorsività OPTIONALdepth per il rendering di elementi figlio come utilizzato nel rendering Sling</td>
+   <td><strong>FACOLTATIVO</strong><br /> <br /> ricorsività di profondità per il rendering di elementi figlio come utilizzato nel rendering Sling</td>
   </tr>
  </tbody>
 </table>
@@ -110,7 +109,7 @@ La tabella seguente mostra le proprietà di Export Configs:
    <td>Stringa[]</td>
    <td>include tutto</td>
    <td>Nomi di proprietà</td>
-   <td><p>se excludePropertyPrefixes set<br /> include proprietà specificate nonostante la corrispondenza del prefisso sia esclusa,</p> <p>else (escludi proprietà ignorate) include solo queste proprietà</p> </td>
+   <td><p>if excludePropertyPrefixes impostato<br /> include proprietà specificate nonostante la corrispondenza con il prefisso che viene escluso,</p> <p>else (escludi proprietà ignorate) include solo queste proprietà</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -136,7 +135,7 @@ La tabella seguente mostra le proprietà di Export Configs:
  </tbody>
 </table>
 
-### Sostituzioni dell&#39;esportazione del tipo di risorsa {#resource-type-export-overrides}
+### Sovrascrittura dell&#39;esportazione del tipo di risorsa {#resource-type-export-overrides}
 
 Crea un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
@@ -156,7 +155,7 @@ Nella tabella seguente sono illustrate le proprietà:
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>&lt;selector_to_inc&gt;</td>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
    <td>Stringa[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
@@ -232,4 +231,3 @@ Consulta le risorse riportate di seguito per ulteriori argomenti in Content Serv
 * [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
 * [Authoring dei servizi per i contenuti](/help/mobile/develop-content-as-a-service.md)
 * [Amministrazione dei servizi di contenuti](/help/mobile/developing-content-services.md)
-

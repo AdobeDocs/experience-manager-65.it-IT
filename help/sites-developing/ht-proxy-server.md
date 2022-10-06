@@ -1,43 +1,42 @@
 ---
 title: Come utilizzare lo strumento Proxy Server
-seo-title: Come utilizzare lo strumento Proxy Server
-description: Il server proxy funge da server intermedio che invia le richieste tra un client e un server
-seo-description: Il server proxy funge da server intermedio che invia le richieste tra un client e un server
+seo-title: How to use the Proxy Server Tool
+description: Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server
+seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
 
-
 # Come utilizzare lo strumento Proxy Server{#how-to-use-the-proxy-server-tool}
 
-Il server proxy funge da server intermedio che invia le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
+Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che accade, senza dover accedere al server principale.
 
-Il server proxy è disponibile nell&#39;installazione AEM:
+È possibile trovare il server proxy nell&#39;installazione AEM qui:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
-È possibile utilizzare il server proxy per monitorare tutte le interazioni client-server, indipendentemente dal protocollo di comunicazione sottostante. Ad esempio, potete monitorare i protocolli seguenti:
+È possibile utilizzare il server proxy per monitorare tutte le interazioni client-server, indipendentemente dal protocollo di comunicazione sottostante. Ad esempio, puoi monitorare i seguenti protocolli:
 
-* HTTP per pagine Web
-* HTTPS per pagine Web sicure
+* HTTP per pagine web
+* HTTPS per pagine web sicure
 * SMTP per i messaggi e-mail
 * LDAP per la gestione degli utenti
 
-Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; ad esempio un browser Web e AEM. Questo consente di monitorare esattamente ciò che accade quando si richiede una pagina CQ.
+Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; Ad esempio, un browser web e AEM. Questo ti consente di monitorare esattamente ciò che accade quando richiedi una pagina CQ.
 
 ## Avvio dello strumento Proxy Server {#starting-the-proxy-server-tool}
 
-Avviate il server dalla riga di comando:
+Avvia il server sulla riga di comando:
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
@@ -45,29 +44,29 @@ Avviate il server dalla riga di comando:
 
 `<host>`
 
-Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui si desidera connettersi. Se l&#39;istanza si trova nel computer locale, sarà `localhost`.
+Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui desideri connetterti. Se l&#39;istanza si trova nel computer locale, allora sarà `localhost`.
 
 `<remoteport>`
 
-Si tratta della porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione AEM installata è `4502`.
+Questa è la porta host dell&#39;istanza CRX di destinazione. Ad esempio, l&#39;impostazione predefinita di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di authoring AEM installata è `4502`.
 
 `<localport>`
 
-Si tratta della porta del computer locale alla quale si desidera connettersi per accedere all&#39;istanza CRX tramite il proxy.
+Questa è la porta del computer locale a cui desideri connetterti per accedere all&#39;istanza CRX tramite il proxy.
 
 **Opzioni**
 
 `-q` (modalità silenziosa)
 
-Non scrive l&#39;output nella finestra della console. Utilizzate questa opzione se non desiderate rallentare la connessione o se registrate l&#39;output in un file (consultate l&#39;opzione -logfile).
+Non scrive l&#39;output nella finestra della console. Utilizzalo se non desideri rallentare la connessione o se registri l&#39;output in un file (vedi opzione -logfile ).
 
 `-b`(modalità binaria)
 
-Se state cercando combinazioni di byte specifiche nel traffico, abilitate la modalità binaria. L&#39;output conterrà quindi l&#39;output esadecimale e il carattere.
+Se cerchi combinazioni di byte specifiche nel traffico, abilita la modalità binaria. L&#39;output conterrà quindi l&#39;output esadecimale e di caratteri.
 
 `-t` (voci del registro di marca temporale)
 
-Aggiunge una marca temporale a ciascun output del registro. La marca temporale è espressa in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzatelo per individuare gli eventi che si sono verificati in un momento specifico se utilizzate il server proxy per un periodo di tempo più lungo.
+Aggiunge una marca temporale a ogni output di log. La marca temporale è in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzalo per individuare gli eventi che si sono verificati in un momento specifico se utilizzi il server proxy per un periodo di tempo più lungo.
 
 `-logfile <filename>`(scrivi nel file di registro)
 
@@ -75,47 +74,47 @@ Scrive la conversazione client-server in un file di registro. Questo parametro f
 
 **`-i <numIndentions>`**(aggiungere un rientro)
 
-Ogni connessione attiva è rientrata per una migliore leggibilità. Il valore predefinito è 16 livelli. Questa funzione è stata introdotta con `proxy.jar version 1.16`.
+Ogni connessione attiva presenta un rientro per una migliore leggibilità. Il valore predefinito è 16 livelli. Questa funzione è stata introdotta con `proxy.jar version 1.16`.
 
-### Formato registro {#log-format}
+### Formato del registro {#log-format}
 
 Le voci di registro prodotte da proxy-2.1.jar hanno tutti il seguente formato:
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
-Ad esempio, una richiesta per una pagina Web può essere visualizzata come segue:
+Ad esempio, una richiesta per una pagina Web potrebbe avere il seguente aspetto:
 
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
-* C significa che questa voce proviene dal client (è una richiesta per una pagina Web)
+* C indica che questa voce proviene dal client (è una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * # 00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
 * `[GET <?>]` è il contenuto della richiesta, nell’esempio di una delle intestazioni HTTP (url).
 
-Quando una connessione viene chiusa, vengono registrate le informazioni seguenti:
+Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:
 
 ```
 C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Questo mostra il numero di byte passati tra client ( `C`) e server ( `S`) sulla 6a connessione e alla velocità media.
+Mostra il numero di byte passati tra client ( `C`) e il server ( `S`) al 6° collegamento e alla velocità media.
 
-**Esempio di output di registro**
+**Esempio di output di log**
 
-Ad esempio, prendete in considerazione una pagina che produce il seguente codice quando richiesto:
+Ad esempio, considera una pagina che produce il seguente codice quando richiesto:
 
 ### Esempio {#example}
 
-Ad esempio, considerate un semplice documento HTML che si trova nella directory archivio all&#39;indirizzo
+Ad esempio, considera un documento HTML molto semplice situato nella directory archivio all&#39;indirizzo
 
 `/content/test.html`
 
-accanto a un file di immagine che si trova in
+accanto a un file immagine situato in
 
 `/content/test.jpg`
 
-Il contenuto di `test.html` è:
+Il contenuto `test.html` è:
 
 ```xml
 <html>
@@ -129,26 +128,26 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Presupponendo che l&#39;istanza AEM sia in esecuzione su `localhost:4502`, avvieremo il proxy come segue:
+Supponendo che l&#39;istanza AEM sia in esecuzione su `localhost:4502` avviamo il proxy in questo modo:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ora è possibile accedere all&#39;istanza CQ/CRX tramite il proxy su `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate su `test.log`.
+È ora possibile accedere all’istanza CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni tramite questa porta vengono registrate in `test.log`.
 
 Se ora guardiamo l&#39;output del proxy, vedremo l&#39;interazione tra il browser e l&#39;istanza AEM.
 
-All&#39;avvio, il proxy emette quanto segue:
+All&#39;avvio il proxy emette quanto segue:
 
 ```xml
 starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Quindi aprite un browser e accedete alla pagina di test:
+Quindi apriamo un browser e accediamo alla pagina di test:
 
 `http://localhost:4444/content/test.html`
 
-e il browser effettua una `GET` richiesta per la pagina:
+e vediamo il browser fare una `GET` richiesta per la pagina:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -165,7 +164,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-L&#39;istanza AEM risponde con il contenuto del file `test.html`:
+L’istanza AEM risponde con il contenuto del file `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -187,19 +186,19 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### Uso del server proxy {#uses-of-the-proxy-server}
+### Utilizzo del server proxy {#uses-of-the-proxy-server}
 
-Gli scenari seguenti illustrano alcuni degli scopi per i quali il server proxy può essere utilizzato:
+Gli scenari seguenti illustrano alcuni degli scopi per cui è possibile utilizzare il server proxy:
 
-**Verifica cookie e relativi valori**
+**Verifica la presenza di cookie e dei relativi valori**
 
-L&#39;esempio seguente mostra tutti i cookie e i relativi valori inviati dal client sulla sesta connessione aperta dall&#39;avvio del proxy:
+L&#39;esempio seguente della voce di registro mostra tutti i cookie e i relativi valori inviati dal client alla sesta connessione aperta dall&#39;avvio del proxy:
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
 **Verifica delle intestazioni e dei relativi valori**
 
-L’esempio di voce di registro seguente mostra che il server è in grado di creare una connessione keep-alive e che l’intestazione della lunghezza del contenuto è stata impostata correttamente:
+L’esempio seguente mostra che il server è in grado di effettuare una connessione keep-alive e che l’intestazione della lunghezza del contenuto è stata impostata correttamente:
 
 ```
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -207,30 +206,29 @@ S-7-#000017 -> [Connection: Keep-Alive ]
  S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Verifica del funzionamento di Keep-Alive**
+**Verifica del funzionamento di Keep Alive**
 
-Keep-alive è una funzione di HTTP che consente al client di riutilizzare la connessione TCP al server per effettuare più richieste (per il codice della pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
+Keep-alive è una funzionalità di HTTP che consente a un client di riutilizzare la connessione TCP al server per effettuare più richieste (per il codice della pagina, immagini, fogli di stile e così via). Senza mantenere in vita, il cliente deve stabilire una nuova connessione per ogni richiesta.
 
 Per verificare se keep-alive funziona:
 
-* Avviate il server proxy.
-* Richiedete una pagina.
+* Avvia il server proxy.
+* Richiedi una pagina.
 * Se keep-alive funziona, il contatore di connessione non deve mai superare 5-10 connessioni.
 * Se keep-alive non funziona, il contatore di connessione aumenta rapidamente.
 
 **Ricerca di richieste perse**
 
-Se si perdono richieste in un server complesso, ad esempio con un firewall e un dispatcher, è possibile utilizzare il server proxy per scoprire dove la richiesta è stata persa. In caso di firewall:
+Se perdi le richieste in un&#39;impostazione server complessa, ad esempio con un firewall e un dispatcher, puoi utilizzare il server proxy per scoprire dove la richiesta è stata persa. In caso di firewall:
 
 * Avviare un proxy prima di un firewall
-* Avviare un altro proxy dopo un firewall
-* Utilizzate questi elementi per vedere fino a che punto sono arrivate le richieste.
+* Avvia un altro proxy dopo un firewall
+* Utilizza questi per vedere quanto tempo arrivano le richieste.
 
-**Gestione richieste**
+**Gestione delle richieste**
 
-Se si verificano richieste sporgenti di tanto in tanto:
+Se si verificano richieste appese di tanto in tanto:
 
-* Avviate il proxy.
-* Attendi o scrivi il registro di accesso in un file con ciascuna voce con una marca temporale.
-* Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa problemi.
-
+* Avvia il proxy.
+* Attendi o scrivi il log di accesso in un file con ogni voce con una marca temporale.
+* Quando la richiesta inizia ad essere sospesa, puoi vedere quante connessioni erano aperte e quale richiesta causa problemi.

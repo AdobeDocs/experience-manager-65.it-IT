@@ -1,10 +1,11 @@
 ---
-title: percorso di architetti di contenuti headless AEM
+title: Percorso Architect di contenuti AEM headless
 description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager e modalità di modellazione dei contenuti per il progetto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 In questa parte del [percorso di architetti di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
 
-Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta gli headless e come viene modellato il contenuto per gli headless. Dopo la lettura è necessario:
+Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti, come AEM supporta gli headless e come viene modellato il contenuto per gli headless. Dopo la lettura dovresti:
 
 * Comprendi i concetti di base sulla distribuzione di contenuti headless.
 * Verificare come AEM supporta la modellazione headless e content.

@@ -1,50 +1,49 @@
 ---
 title: Personalizzazione delle visualizzazioni delle proprietà pagina
-seo-title: Personalizzazione delle visualizzazioni delle proprietà pagina
-description: Ogni pagina dispone di un set di proprietà che è possibile modificare come necessario
-seo-description: Ogni pagina dispone di un set di proprietà che è possibile modificare come necessario
+seo-title: Customizing Views of Page Properties
+description: Ogni pagina dispone di un set di proprietà che è possibile modificare in base alle esigenze
+seo-description: Every page has a set of properties that you can edit as required
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
-translation-type: tm+mt
-source-git-commit: c38c27d6f7172734f80735dd2f42cfa7bf58ad1d
+exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
 
-
 # Personalizzazione delle visualizzazioni delle proprietà pagina{#customizing-views-of-page-properties}
 
-Ogni pagina dispone di un set di [proprietà](/help/sites-authoring/editing-page-properties.md) che possono essere visualizzate e modificate dagli utenti; alcuni sono necessari quando si crea la pagina (vista di creazione), altri possono essere visualizzati e modificati (vista di modifica) in un secondo momento. Queste proprietà di pagina sono definite e rese disponibili dalla finestra di dialogo ( `cq:dialog`) del componente pagina appropriato.
+Ogni pagina ha un set di [proprietà](/help/sites-authoring/editing-page-properties.md) che possono essere visualizzate e modificate dagli utenti; alcune sono necessarie quando si crea la pagina (creazione di una visualizzazione), altre possono essere visualizzate e modificate (modifica visualizzazione) in un secondo momento. Queste proprietà della pagina vengono definite e rese disponibili dalla finestra di dialogo ( `cq:dialog`) del componente pagina appropriato.
 
 >[!CAUTION]
 >
 >La personalizzazione della visualizzazione delle proprietà della pagina non è disponibile nell’interfaccia classica.
 
-Lo stato predefinito per ogni proprietà pagina è:
+Lo stato predefinito per ogni proprietà di pagina è:
 
-* nascosto nella vista di creazione (ad es. **Creazione guidata pagina**
+* nascosto nella vista di creazione (ad esempio **Crea pagina** procedura guidata)
 
-* disponibile nella visualizzazione di modifica (ad es. **Visualizza proprietà**
+* disponibile nella vista di modifica (ad esempio **Visualizza proprietà**)
 
-I campi devono essere configurati in modo specifico se sono necessarie modifiche. Questa operazione viene eseguita utilizzando le proprietà nodo appropriate:
+Se è necessaria una modifica, i campi devono essere configurati in modo specifico. Questa operazione viene eseguita utilizzando le proprietà del nodo appropriate:
 
-* Proprietà pagina per renderla disponibile nella vista di creazione (ad es. **Creazione guidata pagina**:
+* Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad esempio **Crea pagina** procedura guidata):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* Proprietà pagina per essere disponibile nella visualizzazione di modifica (ad es. **View**/**Edit**) **Properties** (opzione):
+* Proprietà di pagina da rendere disponibile nella visualizzazione di modifica (ad esempio **Visualizza**/**Modifica**) **Proprietà** opzione):
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
 
-Ad esempio, vedere le impostazioni per i campi raggruppati in **Altri titoli e descrizioni** nella scheda **Base** per il componente Pagina di base. Questi sono visibili nella procedura guidata **Crea pagina**, in quanto `cq:showOnCreate` è stato impostato su `true`:
+Ad esempio, vedere le impostazioni per i campi raggruppati sotto la **Altri titoli e descrizioni** sulla **Base** scheda per il componente Pagina di base. Sono visibili nella **Crea pagina** procedura guidata `cq:showOnCreate` è impostato su `true`:
 
 ```xml
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
@@ -52,16 +51,16 @@ Ad esempio, vedere le impostazioni per i campi raggruppati in **Altri titoli e d
 
 >[!TIP]
 >
->Per una guida alla personalizzazione delle proprietà di pagina, vedere l&#39;esercitazione [Estensione delle proprietà di pagina](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
+>Consulta la sezione [Esercitazione sull’estensione delle proprietà pagina](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) per una guida alla personalizzazione delle proprietà della pagina.
 
-## Configurazione delle proprietà pagina {#configuring-your-page-properties}
+## Configurazione delle proprietà di pagina {#configuring-your-page-properties}
 
-È inoltre possibile configurare i campi disponibili configurando la finestra di dialogo del componente pagina e applicando le proprietà nodo appropriate.
+Puoi anche configurare i campi disponibili configurando la finestra di dialogo del componente pagina e applicando le proprietà nodo appropriate.
 
-Ad esempio, per impostazione predefinita, la procedura guidata [**Crea pagina**](/help/sites-authoring/managing-pages.md#creating-a-new-page) mostra i campi raggruppati in **Altri titoli e descrizioni**. Per nascondere questi elementi è necessario configurare:
+Ad esempio, per impostazione predefinita il [**Crea pagina** procedura guidata](/help/sites-authoring/managing-pages.md#creating-a-new-page) mostra i campi raggruppati sotto **Altri titoli e descrizioni**. Per nascondere questi elementi è necessario configurare:
 
-1. Create il componente pagina in `/apps`.
-1. creare un override (utilizzando la *finestra di dialogo diff* fornita dalla [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) per la sezione `basic` del componente della pagina; ad esempio:
+1. Crea il componente pagina in `/apps`.
+1. Crea un override (utilizzando *dialogo diff* di cui [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) per `basic` sezione del componente page; ad esempio:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -69,45 +68,45 @@ Ad esempio, per impostazione predefinita, la procedura guidata [**Crea pagina**]
 
    >[!NOTE]
    >
-   >Come riferimento, vedete:
+   >Come riferimento, vedi:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   Tuttavia, ***è necessario*** non modificare nulla nel percorso `/libs`.
-   Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+   Tuttavia, ***deve*** non modificare nulla nel `/libs` percorso.
+   Questo perché il contenuto di `/libs` viene sovrascritto la prossima volta che aggiorni l’istanza (e potrebbe essere sovrascritto quando applichi un hotfix o un feature pack).
    Il metodo consigliato per la configurazione e altre modifiche è:
-   1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
-   1. Apportare modifiche all&#39;interno di `/apps`
+   1. Ricrea l&#39;elemento richiesto (ovvero così come esiste in `/libs`) `/apps`
+   1. Apporta modifiche a `/apps`
 
 
-1. Impostate la proprietà `path` su `basic` in modo che punti all&#39;esclusione della scheda di base (vedete anche il passaggio successivo). Esempio:
+1. Imposta la `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Esempio:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Creare un override della sezione `basic` - `moretitles` nel percorso corrispondente; ad esempio:
+1. Crea una sostituzione del `basic` - `moretitles` sezione nel percorso corrispondente; ad esempio:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
    ```
 
-1. Applicare la proprietà node appropriata:
+1. Applica la proprietà nodo appropriata:
 
    * **Nome**: `cq:showOnCreate`
    * **Tipo**: `Boolean`
-   * **Valore**:  `false`
+   * **Valore**: `false`
 
-   La sezione **Altri titoli e descrizioni** non verrà più visualizzata nella procedura guidata **Crea pagina**.
+   La **Altri titoli e descrizioni** la sezione non verrà più visualizzata nella sezione **Crea pagina** procedura guidata.
 
 >[!NOTE]
-Per ulteriori informazioni, vedere la sezione relativa alla configurazione delle proprietà di pagina da utilizzare con le copie dal vivo [Configurazione dei blocchi MSM in Proprietà pagina](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
+Durante la configurazione delle proprietà della pagina da utilizzare con le Live Copy vedi [Configurazione dei blocchi MSM nelle proprietà di pagina](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) per ulteriori dettagli.
 
-## Configurazione di esempio delle proprietà pagina {#sample-configuration-of-page-properties}
+## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 
-Questo esempio illustra la tecnica della finestra di dialogo delle differenze di [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Vengono inoltre illustrati l&#39;utilizzo di `cq:showOnCreate` e `cq:hideOnEdit`.
+Questo esempio illustra la tecnica di dialogo delle differenze tra [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Illustra inoltre l&#39;uso di entrambi `cq:showOnCreate` e `cq:hideOnEdit`.
 
 CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto Aem-authoring-extension-page-dialog su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [Apri progetto aem-authoring-extension-page-dialog su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

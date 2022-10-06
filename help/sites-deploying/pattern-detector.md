@@ -1,8 +1,8 @@
 ---
 title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
-seo-title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
-seo-description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
-
 
 # Valutazione della complessità dell’aggiornamento con il rilevatore pattern
 
@@ -33,7 +32,7 @@ Ciò potrebbe servire da valutazione dello sforzo di sviluppo che comporta l&#39
 
 ## Configurazione {#how-to-set-up}
 
-Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM di origine dalla versione 6.1 alla versione 6.5 per il targeting AEM aggiornamento 6.5. Può essere installato utilizzando il [Package Manager](/help/sites-administering/package-manager.md).
+Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) utilizzo di qualsiasi versione di AEM di origine dalla versione 6.1 alla versione 6.5 con targeting AEM aggiornamento 6.5. Può essere installato utilizzando [Gestione pacchetti](/help/sites-administering/package-manager.md).
 
 ## Guida all’uso {#how-to-use}
 
@@ -43,17 +42,15 @@ Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https:/
 >
 >* aumentare il tasso di rilevamento
 >* evitare rallentamenti nelle istanze business critical
-
 >
->
-allo stesso tempo, si consiglia di eseguirlo **negli ambienti di staging** che sono il più vicini possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
+>allo stesso tempo, si consiglia di eseguirlo **in ambienti di staging** che sono il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
 
 È possibile utilizzare diversi metodi per controllare l’output del rilevatore pattern:
 
 * **Tramite la console Inventario Felix:**
 
-1. Vai alla Console Web AEM sfogliando *https://serveraddress:serverport/system/console/configMgr*
-1. Seleziona **Stato - Rilevatore pattern** come mostrato nell’immagine seguente:
+1. Passa alla Console Web AEM sfogliando *https://serveraddress:serverport/system/console/configMgr*
+1. Seleziona **Stato - Rilevatore pattern** come mostrato nell&#39;immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -71,7 +68,7 @@ L’output è attualmente disponibile sotto 2 URL:
 1. Interfaccia di testo normale
 1. Interfaccia JSON
 
-## Gestione dell&#39;interfaccia di testo normale {#handling-the-plain-text-interface}
+## Gestione dell’interfaccia di testo normale {#handling-the-plain-text-interface}
 
 Le informazioni nell&#39;output vengono formattate come una serie di voci evento. Esistono due canali: uno per la pubblicazione delle violazioni e l’altro per la pubblicazione dell’avanzamento corrente.
 
@@ -87,7 +84,7 @@ L&#39;output sarà simile al seguente:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-L&#39;avanzamento può essere filtrato utilizzando il comando `grep` :
+L’avanzamento può essere filtrato utilizzando la variabile `grep` comando:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -103,7 +100,7 @@ che produce il seguente output:
 
 ## Gestione dell’interfaccia JSON {#handling-the-json-interface}
 
-Allo stesso modo, JSON può essere elaborato utilizzando lo strumento [jq](https://stedolan.github.io/jq/) non appena viene pubblicato.
+Allo stesso modo, JSON può essere elaborato utilizzando [strumento jq](https://stedolan.github.io/jq/) non appena pubblicato.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'

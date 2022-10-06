@@ -1,8 +1,8 @@
 ---
 title: Ambiente e strumenti di authoring
-seo-title: Ambiente e strumenti di authoring
+seo-title: Authoring - the Environment and Tools
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
-seo-description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
+seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2220'
 ht-degree: 97%
 
 ---
 
 # Ambiente e strumenti di authoring{#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -45,7 +44,7 @@ Puoi modificare una pagina con l’editor di pagina. Esempio:
 >
 >Puoi saltare questa presentazione introduttiva e richiamarla in qualsiasi momento dal menu **Informazioni pagina**.
 
-## Accedere all’Aiuto {#accessing-help}
+## Accedere all’Aiuto   {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
@@ -245,8 +244,8 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 * [Riferimenti alle pagine prodotto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibili dalla console Commerce - Prodotti)
 * [Lanci](/help/sites-authoring/launches.md): fornisce accesso ai lanci correlati.
-* [](/help/sites-administering/msm.md)Live Copy visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
-* [Blueprint](/help/sites-administering/msm-best-practices.md), fornisce dettagli e varie azioni
+* [Live Copy](/help/sites-administering/msm.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
+* [Blueprint](/help/sites-administering/msm-best-practices.md) fornisce dettagli e varie azioni
 * [Copie per lingua](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel): fornisce dettagli e varie azioni
 
 Ad esempio, è possibile correggere un riferimento interrotto all’interno di un componente Riferimento:
@@ -286,11 +285,11 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 Ad esempio, quando appropriato, da **Informazioni pagina** possono essere disponibili le funzioni seguenti:
 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio.
-* [Apri in ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaccia classica se questa opzione è stata  [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
+* [Apri nell’interfaccia classica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se questa opzione è stata [abilitato da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina    {#page-modes}
+## Modalità pagina   {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
@@ -321,16 +320,14 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
 >* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
-
 >
-
 
 
 ## Selezione del percorso {#path-selection}
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
 
-### Campi percorso    {#path-fields}
+### Campi percorso   {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-authoring/default-components.md).
 

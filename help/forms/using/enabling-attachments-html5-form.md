@@ -1,18 +1,18 @@
 ---
 title: Abilitazione degli allegati per un modulo HTML5
-seo-title: Abilitazione degli allegati per un modulo HTML5
+seo-title: Enabling attachments for an HTML5 form
 description: Per impostazione predefinita, il supporto allegato per i moduli HTML5 è disattivato.
-seo-description: Per impostazione predefinita, il supporto allegato per i moduli HTML5 è disattivato.
+seo-description: By default, the attachment support for HTML5 forms is disabled.
 uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
-feature: Forms Mobile
+feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -21,31 +21,31 @@ ht-degree: 1%
 
 È possibile caricare, visualizzare in anteprima e inviare allegati con moduli HTML5. Per impostazione predefinita, il supporto per gli allegati è disattivato. Per abilitare il supporto allegato:
 
-1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con una proprietà stringa `mfAttachmentOptions` multiselect. Ogni stringa della proprietà `mfAttachmentOptions` deve avere un formato `property=value` per configurare le opzioni del widget di file allegato. I valori `property` e `value` possono essere i seguenti:
+1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con `mfAttachmentOptions` proprietà stringa multiselect. Ogni stringa nel `mfAttachmentOptions` la proprietà deve avere un `property=value` per configurare le opzioni del widget di file allegato. La `property` e `value` può avere uno dei seguenti valori:
 
    | Proprietà | Valore |
    |--- |---|
    | multiSelect | true o false (true per impostazione predefinita) |
    | fileSizeLimit | Numero in MB (2 MB per impostazione predefinita). Ad esempio, 5. |
    | buttonText | Testo del pulsante per la finestra a comparsa (&quot;Allega&quot; per impostazione predefinita) |
-   | accettare | elenco di tipi di file da accettare separati da virgole (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita) |
+   | accetta | elenco di tipi di file da accettare separati da virgole (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita) |
 
    Esempio:
 
    ![configurare le opzioni](assets/mfAttachmentOptions.png)
 
-   Se necessario, puoi anche specificare altre opzioni personalizzate per la proprietà `mfAttachmentOptions` .
+   Se necessario, puoi anche specificare altre opzioni personalizzate per il `mfAttachmentOptions` proprietà.
 
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9, gli utenti possono allegare file di dimensioni superiori al limite specificato. È un problema noto.
 
-1. Utilizza l’ [editor di metadati](/help/forms/using/manage-form-metadata.md) per selezionare il profilo personalizzato creato in precedenza per i moduli HTML 5.
+1. Utilizza la [editor di metadati](/help/forms/using/manage-form-metadata.md) per selezionare il profilo personalizzato creato in precedenza per HTML 5 forms.
 1. Eseguire il rendering del modello di modulo con un profilo personalizzato e l’icona degli allegati viene visualizzata sulla barra degli strumenti dei moduli.
 
    >[!NOTE]
    >
-   >Con il portale dei moduli è disponibile un profilo personalizzato con le bozze e le funzionalità degli allegati abilitate. Per ulteriori informazioni sul profilo **Salva come bozza**, vedere [Salvataggio di moduli HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
+   >Con il portale dei moduli è disponibile un profilo personalizzato con le bozze e le funzionalità degli allegati abilitate. Per ulteriori informazioni sulla **Salva come bozza** profilo, vedi [Salvataggio di moduli HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
 
 1. Fare clic sull&#39;icona dell&#39;allegato per visualizzare una finestra di dialogo per la selezione dell&#39;allegato. Sfoglia e seleziona l&#39;allegato e fai clic su **Allega**.
 
@@ -59,10 +59,10 @@ ht-degree: 1%
 
 ## Formato di invio allegato {#attachment-submission-format}
 
-Quando gli allegati sono abilitati, il modulo HTML5 invia dati multiparte. I dati di invio in più parti hanno due parti **dataXml** e **allegati**.
+Quando gli allegati sono attivati, il modulo HTML5 invia dati in più parti. I dati di invio in più parti sono suddivisi in due parti **dataXml** e **allegati**.
 
 >[!NOTE]
 >
->Per la compatibilità con le versioni precedenti, se l’opzione `mfAllowAttachments` è disattivata, i moduli HTML5 non inviano i dati in più parti. Invia dati xml semplici in formato **application/xml**.
+>Per compatibilità con le versioni precedenti, se `mfAllowAttachments` se questa opzione è disattivata, i moduli di HTML5 non inviano i dati in più parti. Invia dati xml semplici in **application/xml** formato.
 
-Se il flag mfAllowAttachments è attivato, il [servizio proxy di invio del servizio](/help/forms/using/service-proxy.md) invia anche dati multiparte con dataXml e allegati.
+Se il flag mfAllowAttachments è attivato, il [invia servizio proxy](/help/forms/using/service-proxy.md) inoltre pubblica dati multipart con dataXml e allegati.

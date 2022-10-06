@@ -1,23 +1,21 @@
 ---
-title: Scopri il sito pubblicato
-seo-title: Scopri il sito pubblicato
-description: Individuazione di un sito pubblicato per l'abilitazione
-seo-description: Individuazione di un sito pubblicato per l'abilitazione
+title: Esperienza con il sito pubblicato
+seo-title: Experience the Published Site
+description: Sfoglia un sito pubblicato per l'abilitazione
+seo-description: Browse to a published site for enablement
 uuid: 1bfefa8a-fd9c-4ca8-b2ff-add79776c8ae
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
-translation-type: tm+mt
-source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
+exl-id: 801416ed-d321-45a2-8032-8935094a4d44
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1228'
 ht-degree: 2%
 
 ---
-
-
 
 # Esperienza con il sito pubblicato {#experience-the-published-site}
 
@@ -26,16 +24,16 @@ ht-degree: 2%
 
 ## Passa a nuovo sito in Pubblica {#browse-to-new-site-on-publish}
 
-Ora che è stato pubblicato il sito della community appena creato e le relative risorse di abilitazione e il percorso di apprendimento, è possibile utilizzare il sito di Enablement Tutorial.
+Ora che il sito della community appena creato e le relative risorse di abilitazione e il percorso di apprendimento sono stati pubblicati, è possibile utilizzare il sito di tutorial sull’abilitazione.
 
-Per iniziare, andate all’URL visualizzato al momento della creazione del sito, ma sul server di pubblicazione, ad esempio
+Per iniziare, cerca l’URL visualizzato al momento della creazione del sito, ma sul server di pubblicazione, ad esempio
 
 * URL autore = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
-* URL pubblicazione = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
+* URL di pubblicazione = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Se la pagina principale [predefinita è stata impostata](enablement-create-site.md#changethedefaulthomepage), è sufficiente accedere a [http://localhost:4503/](Http://localhost:4503/) per avviare il sito.
+Se la [home page predefinita impostata](enablement-create-site.md#changethedefaulthomepage), quindi cerca semplicemente [http://localhost:4503/](Http://localhost:4503/) dovrebbe avviare il sito.
 
-Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebbe già effettuato l’accesso e sarebbe anonimo.
+Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non era già connesso e sarebbe anonimo.
 
 **http://localhost:4503/content/sites/enable/en.html**
 
@@ -43,63 +41,63 @@ Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebb
 
 ## Visitatore anonimo del sito {#anonymous-site-visitor}
 
-A un visitatore del sito anonimo viene immediatamente presentata la pagina di login per questo sito della community di abilitazione privata. Notate che non è disponibile l&#39;opzione di autoregistrazione né di accesso con Facebook o Twitter.
+A un visitatore del sito anonimo viene immediatamente presentata la pagina di accesso per questo sito community di abilitazione privato. Tieni presente che non esiste alcuna opzione per effettuare l’autoregistrazione né per effettuare l’accesso con Facebook o Twitter.
 
-Questa home page include quattro voci di menu: `Assignments, Ski Catalog, What's New` e `Discussions`, ma è possibile che non venga raggiunto alcun risultato senza effettuare l&#39;accesso.
+Questa home page mostra quattro voci di menu: `Assignments, Ski Catalog, What's New` e `Discussions`, ma non è possibile raggiungerne nessuna senza effettuare l&#39;accesso.
 
 >[!NOTE]
 >
->È possibile concedere l&#39;accesso anonimo a un sito di abilitazione senza consentire ai visitatori del sito di registrarsi autonomamente.
+>È possibile concedere l’accesso anonimo a un sito di abilitazione senza consentire ai visitatori del sito di registrarsi autonomamente.
 >
 >Se una risorsa di abilitazione è impostata su `show in catalog` e `allow anonymous access`, i visitatori anonimi del sito potranno visualizzare le risorse nel catalogo.
 
 ### Impedisci l&#39;accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
 
-Una limitazione nota espone il contenuto del sito community ai visitatori anonimi attraverso contenuti jcr e json, anche se **[!UICONTROL consenti l&#39;accesso anonimo]** è disabilitato per il contenuto del sito. Tuttavia, questo comportamento può essere controllato utilizzando Limitazioni Sling come soluzione alternativa.
+Una limitazione nota espone il contenuto del sito della community ai visitatori anonimi attraverso contenuti jcr e json , anche se **[!UICONTROL consenti accesso anonimo]** è disabilitato per il contenuto del sito. Tuttavia, questo comportamento può essere controllato utilizzando le Restrizioni Sling come soluzione alternativa.
 
-Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
+Per proteggere il contenuto del tuo sito community dall’accesso di utenti anonimi tramite contenuti jcr e json , segui questi passaggi:
 
-1. AEM’istanza di creazione, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
+1. Per AEM’istanza di authoring, visita https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
-   >Non andate al sito localizzato.
+   >Non andare al sito localizzato.
 
 1. Vai a **[!UICONTROL Proprietà pagina]**.
 
    ![page-properties](assets/page-properties.png)
 
-1. Vai alla scheda **[!UICONTROL Avanzate]**.
+1. Vai a **[!UICONTROL Avanzate]** scheda .
 1. Abilita **[!UICONTROL Autenticazione richiesta]**.
 
    ![autenticazione del sito](assets/site-authentication.png)
 
-1. Aggiungete il percorso della pagina di login. Esempio, `/content/......./GetStarted`.
-1. Pubblicate la pagina.
+1. Aggiungi il percorso della pagina di accesso. Esempio: `/content/......./GetStarted`.
+1. Pubblica la pagina.
 
 ## Membro iscritto {#enrolled-member}
 
-Questa esperienza si basa sugli utenti `Riley Taylor` e `Sidney Croft` creati[e [ assegnati](resource.md#settings) al percorso di apprendimento *Lezioni di sci* attraverso la loro appartenenza al gruppo *Community Ski Class*.](enablement-setup.md#publishcreateenablementmembers)
+Questa esperienza si basa sugli utenti `Riley Taylor` e `Sidney Croft` essere [creato](enablement-setup.md#publishcreateenablementmembers) e [assegnato](resource.md#settings) al *Lezioni di sci* percorso di apprendimento attraverso la loro appartenenza *Classe sciistica comunitaria* gruppo.
 
 Accedi con
 
 * `Username: riley`
 * `Password: password`
 
-Se il profilo utente non è stato creato mediante autoregistrazione, la prima volta che un membro effettua l’accesso viene visualizzata la relativa pagina Profilo in modo che possa verificarla e modificarla come necessario.
+Se il profilo utente non è stato creato tramite registrazione automatica, la prima volta che un membro effettua l’accesso viene visualizzata la relativa pagina Profilo in modo che possa verificarla e modificarla in base alle esigenze.
 
-Al successivo accesso del membro, viene visualizzata la pagina principale, identificata dalla prima voce di menu.
+Al successivo accesso del membro, viene visualizzata la home page identificata dalla prima voce di menu.
 
 ![iscritto](assets/enrolled-member.png)
 
 ### Assegnazioni {#assignments}
 
-Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificatamente a tale utente.
+Nella pagina Assegnazioni il membro viene visualizzato tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificatamente a tale utente.
 
 Ogni assegnazione fornisce informazioni di base su:
 
 * Tipo di assegnazione
-* Indica se si tratta di una nuova assegnazione
+* Se si tratta di una nuova assegnazione
 * Nome
 * Dettagli relativi al tipo di assegnazione
 * Contatto assegnazione, esperto e autore (se fornito)
@@ -108,87 +106,87 @@ Il tipo di assegnazione è indicato da un&#39;icona nell&#39;angolo superiore si
 
 ![assegnazione1](assets/assignment1.png)
 
-Selezionando *Lezioni di sci* verranno visualizzate le due risorse di abilitazione a cui fa riferimento il percorso di apprendimento.
+Selezione *Lezioni di sci* visualizza le due risorse di abilitazione a cui fa riferimento il percorso di apprendimento.
 
 ![assegnazione2](assets/assignment2.png)
 
-Selezionando *Lezione sci 1* si aprirà la pagina dei dettagli della risorsa di abilitazione.
+Selezione *Lezioni di sci 1* aprirà la pagina dei dettagli della risorsa di abilitazione.
 
-Dalla pagina dei dettagli, il membro è in grado di apprendere, [valutare](rating.md) la lezione e aggiungere [commenti](comments.md). Qualsiasi attività dei membri verrà riflessa nella sezione Novità del sito.
+Dalla pagina dei dettagli, il membro è in grado di imparare, [rate](rating.md) la lezione e aggiungi [commenti](comments.md). Qualsiasi attività membro verrà visualizzata nella sezione Novità del sito.
 
-Le interazioni con la risorsa di abilitazione saranno riportate nella sezione Rapporto accessibile nell’ambiente di authoring.
+Le interazioni con la risorsa di abilitazione saranno annotate nella sezione Rapporto accessibile nell’ambiente di authoring.
 
 ![assegnazione3](assets/assignment3.png)
 
-### Catalogo sci {#ski-catalog}
+### Catalogo degli sci {#ski-catalog}
 
-La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo spazio dei nomi `Tutorial`. Alle due risorse *Lezione sci* viene assegnato il tag `Skiing`, in modo che se sono selezionati tag diversi da `All` o `Tutorial: Sports / Skiing` non venga visualizzato nulla.
+La pagina Catalogo sci è il catalogo di risorse di abilitazione taggate con tag provenienti da `Tutorial` spazio dei nomi. I due *Lezioni di sci* alle risorse vengono assegnati i tag `Skiing` , in modo che se sono presenti tag diversi da `All` o `Tutorial: Sports / Skiing` è selezionato, non viene visualizzato nulla.
 
-Se a un membro non sono state assegnate risorse di abilitazione, direttamente o attraverso un percorso di apprendimento, è possibile interagire con le risorse di abilitazione presenti in un catalogo e fornire feedback attraverso commenti e valutazioni.
+Quando a un membro non sono state assegnate risorse di abilitazione, direttamente o tramite un percorso di apprendimento, è possibile interagire con le risorse di abilitazione situate all’interno di un catalogo e fornire feedback tramite commenti e valutazioni.
 
-![ski-catalog](assets/ski-catalog.png)
+![catalogo sciistico](assets/ski-catalog.png)
 
 ### Discussioni {#discussions}
 
-Oltre a classificare e commentare le risorse di abilitazione ([se attivato](enablement-create-site.md#step33asettings)), il modello di sito community da cui è stato creato `Enablement Tutorial` include la funzione [forum](functions.md#forum-function) (il titolo è `Discussions)`).
+Oltre a valutare e commentare le risorse di abilitazione ([quando abilitato](enablement-create-site.md#step33asettings)), il modello di sito community da cui `Enablement Tutorial` è stato creato include [funzione forum](functions.md#forum-function) (il titolo è `Discussions)`.
 
-Selezionate il collegamento `Discussions`e pubblicate un argomento.
+Seleziona la `Discussions`collega e pubblica un argomento.
 
-Disconnettetevi ed effettuate l&#39;accesso come Sidney Croft (sidney / password) e rispondete alla domanda, oltre a seguire l&#39;argomento.
+Esci e accedi come Sidney Croft (sidney / password) e rispondi alla domanda, così come Segui l&#39;argomento.
 
-Notate che, oltre alla moderazione in linea, ci sono opzioni per condividere l&#39;argomento sui social media o per inviare l&#39;argomento via e-mail.
+Nota che, oltre alla moderazione in linea, ci sono opzioni per condividere l&#39;argomento sui social media o per inviare l&#39;argomento via e-mail.
 
 ![discussioni](assets/discussions.png)
 
 ### Novità {#what-s-new}
 
-La voce di menu `What's New` è il titolo dato dalla [funzione di flusso di attività](functions.md#activity-stream-function) nella struttura del sito community.
+La `What's New` voce di menu è il titolo dato [funzione flusso di attività](functions.md#activity-stream-function) nella struttura del sito della comunità.
 
-Sempre con accesso come Sidney, selezionate il collegamento `What's New` per mostrare l&#39;attività.
+Sempre connesso come Sidney, seleziona il `What's New` per mostrare l’attività.
 
-![whats-new-menu](assets/whats-new-menu.png)
+![nuovo menu](assets/whats-new-menu.png)
 
-## Membro della community trusted {#trusted-community-member}
+## Membro della comunità di fiducia {#trusted-community-member}
 
-Questa esperienza presuppone che ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` sia stato assegnato il ruolo di [moderatore](enablement-create-site.md#moderation) e [contatto risorse](resource.md#settings).
+Questa esperienza presuppone ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` è stato assegnato i ruoli di [moderatore](enablement-create-site.md#moderation) e [contatto risorse](resource.md#settings).
 
 Accedi con
 
 * `Username: quinn`
 * `Password: password`
 
-Una volta effettuato l&#39;accesso, viene visualizzata una nuova voce di menu, `Administration`, in quanto al membro è stato assegnato il ruolo di moderatore.
+Una volta effettuato l&#39;accesso, noterai che esiste una nuova voce di menu, `Administration`, che viene visualizzato perché al membro è stato assegnato il ruolo di moderatore.
 
-![homepage di trusted](assets/trusted-member-homepage.png)
+![homepage-membro-affidabile](assets/trusted-member-homepage.png)
 
-La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto con le risorse di moderatore e abilitazione e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
+La home page è identificata dalla prima voce di menu, Assegnazioni. Quinn è il moderatore e il contatto delle risorse di abilitazione e non è stato iscritto in alcuna risorsa di abilitazione o percorsi di apprendimento, quindi non c&#39;è nulla da visualizzare.
 
 ### Amministrazione {#administration}
 
-Ciò che esiste è l&#39;attività dei due studenti, `Riley Taylor` e `Sidney Croft`. Selezionando il collegamento `Administration` per accedere alla console di moderazione, Quinn può utilizzare la [console di moderazione di massa](moderation.md) per moderare i propri post.
+Ciò che c&#39;è, è l&#39;attività dei due discenti, `Riley Taylor` e `Sidney Croft`. Selezionando la `Administration` per accedere alla console di moderazione, Quinn può utilizzare [console di moderazione di gruppo](moderation.md) moderare i loro post.
 
-Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per la ricerca di contenuti per le community.
+Quando si seleziona l’icona del pannello laterale, vengono aperti i filtri utilizzati per cercare contenuti nella community.
 
-Passando il puntatore su una scheda di commento vengono visualizzate le azioni di moderazione.
+Passando il puntatore del mouse su una scheda di commento vengono visualizzate le azioni di moderazione.
 
-![administration](assets/administration.png)
+![amministrazione](assets/administration.png)
 
 ## Report sull&#39;autore {#reports-on-author}
 
-Esistono due modi per accedere ai rapporti sugli studenti e alle risorse di abilitazione.
+Esistono due modi per accedere al reporting sugli studenti e sulle risorse di abilitazione.
 
-Per l&#39;autore, andate alla **console Community, [Risorse](resources.md)**, in cui vengono gestite le risorse di abilitazione, e dopo aver selezionato un sito community, è possibile generare rapporti per
+All&#39;autore, accedi alla pagina **Comunità, [Console Risorse](resources.md)**, in cui vengono gestite le risorse di abilitazione e dopo aver selezionato un sito community, è possibile generare rapporti per
 
 * Tutte le risorse di abilitazione e i percorsi di apprendimento
-* Una risorsa di abilitazione o un percorso di apprendimento specifico
+* Una risorsa di abilitazione specifica o un percorso di apprendimento
 
-Andate alla **console Community, [Report](reports.md)** e generate i rapporti in base a:
+Passa a **Comunità, [Console Rapporti](reports.md)** e genera rapporti in base a:
 
-* Assegnazioni per abilitare risorse e percorsi di apprendimento
-* Post a un sito community su un periodo specifico
-* Viste (visite al sito) di un sito community in un determinato periodo
+* Assegnazioni a risorse di abilitazione e percorsi di apprendimento
+* Invia a un sito community in un periodo specifico
+* Visualizzazioni (visite al sito) di un sito community in un periodo specifico
 
-* I post e le viste possono essere per tutto il contenuto o per contenuto specifico:
+* I post e le visualizzazioni possono essere per tutti i contenuti o per contenuti specifici:
 
    * Forum
    * Topic forum
@@ -199,17 +197,17 @@ Andate alla **console Community, [Report](reports.md)** e generate i rapporti in
    * Calendario
    * Evento calendario
 
-### Console risorse {#resources-console}
+### Console Risorse {#resources-console}
 
-Con una piccola attività e un’interazione con le risorse durante la pubblicazione, la visualizzazione dei rapporti sull’autore merita un’occhiata.
+Con una piccola attività e interazione con le risorse al momento della pubblicazione, la visualizzazione dei rapporti sull’autore merita un’occhiata.
 
-* Per l’autore, effettuate l’accesso con privilegi amministrativi.
-* Dal menu principale, passare a **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
-* Selezionare il sito `Enablement Tutorial`.
-* Selezionate l&#39;icona `Report` per un riepilogo di tutte le risorse.
-* Selezionare una risorsa, quindi l&#39;icona `Report` per il rapporto su tale risorsa.
+* Sull&#39;autore, accedi con privilegi amministrativi.
+* Passa dal menu principale a **[!UICONTROL Community]** > **[!UICONTROL Risorse]**.
+* Seleziona la `Enablement Tutorial` sito.
+* Seleziona la `Report` icona per un riepilogo di tutte le risorse.
+* Seleziona una risorsa e quindi la `Report` icona per un rapporto sulla risorsa.
 
-Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Analytics, che può richiedere da 1 a 12 ore di visualizzazione. Tuttavia, il reporting SCORM di base è già disponibile.
+È probabile che sia troppo presto per mostrare i dati da Adobe Analytics, che possono richiedere da 1 a 12 ore per essere visualizzati. Tuttavia, i rapporti SCORM di base sono già disponibili.
 
 #### Rapporto sulle risorse delle lezioni di sci {#ski-lessons-resource-report}
 
@@ -217,48 +215,48 @@ Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Anal
 
 #### Rapporto utente sulle lezioni di sci {#ski-lessons-user-report}
 
-* Selezionare **[!UICONTROL Communities > Resources]**
+* Seleziona **[!UICONTROL Community > Risorse]**
 
-* Open card `Enablement Tutorial`
-* Open card `Ski Lessons`
+* Scheda aperta `Enablement Tutorial`
+* Scheda aperta `Ski Lessons`
 * Seleziona `Report > User Report`
 
 ![ski-learning-user-report](assets/ski-lessons-user-report.png)
 
 ### Console Rapporti {#reports-console}
 
-La console Rapporti consente la generazione di rapporti su
+La console Rapporti consente di generare rapporti su
 
-* **Assegnazioni** per qualsiasi sito di abilitazione community
-* **** Visualizzazioni per qualsiasi sito community
-* **** Post per qualsiasi sito community
+* **Assegnazioni** per qualsiasi sito community di abilitazione
+* **Viste** per qualsiasi sito della community
+* **Post** per qualsiasi sito della community
 
 Per i rapporti sulle assegnazioni:
 
-* Per l’autore, effettuate l’accesso con privilegi amministrativi.
-* Andate a **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]** (Rapporto assegnazioni).
-* Selezionare un **[!UICONTROL sito]** dal menu a discesa (selezionare `Enablement Tutorial`).
+* Sull&#39;autore, accedi con privilegi amministrativi.
+* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > **[!UICONTROL Rapporto Assegnazioni]**.
+* Seleziona una **[!UICONTROL Sito]** dal menu a discesa (seleziona `Enablement Tutorial`).
 
-* Selezionare **[!UICONTROL Group]** (selezionare `Community Ski Class`)
+* Seleziona **[!UICONTROL Gruppo]** (seleziona `Community Ski Class`)
 
-* Selezionare una **[!UICONTROL assegnazione]** (selezionare `Ski Lessons`)
+* Seleziona un **[!UICONTROL Assegnazione]** (seleziona `Ski Lessons`)
 
-* Selezionare **[!UICONTROL Generate]**
+* Seleziona **[!UICONTROL Genera]**
 
-![assegnazione report](assets/report-assignment.png)
+![assegnazione dei rapporti](assets/report-assignment.png)
 
 Per i rapporti sulle visualizzazioni:
 
-* Per l’autore, effettuate l’accesso con privilegi amministrativi.
-* Andate a **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**.
-* Selezionare un **sito** dal menu a discesa (selezionare `Enablement Tutorial`).
+* Sull&#39;autore, accedi con privilegi amministrativi.
+* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > **[!UICONTROL Rapporto visualizzazioni]**.
+* Seleziona una **Sito** dal menu a discesa (seleziona `Enablement Tutorial`).
 
-* Selezionare **[!UICONTROL Tipo di contenuto]** (selezionare `all`).
+* Seleziona **[!UICONTROL Tipo di contenuto]** (seleziona `all`).
 
-* Selezionare un **[!UICONTROL intervallo di date]** (selezionare `Last 7 days`).
+* Seleziona una **[!UICONTROL intervallo date]** (seleziona `Last 7 days`).
 
-* Selezionare **[!UICONTROL Generate]**.
+* Seleziona **[!UICONTROL Genera]**.
 
-![report-views](assets/report-views.png)
+![visualizzazioni report](assets/report-views.png)
 
 **[⇐ creare e assegnare risorse di abilitazione](resource.md)**

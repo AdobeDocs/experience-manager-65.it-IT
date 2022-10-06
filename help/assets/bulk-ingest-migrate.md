@@ -14,31 +14,31 @@ exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
 source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Installa feature pack 18912 per la migrazione di massa delle risorse{#installing-feature-pack-for-bulk-asset-migration}
 
-L&#39;installazione del feature pack 18912 è *opzionale*.
+L&#39;installazione del feature pack 18912 è *facoltativo*.
 
-Il Feature Pack 18912 consente di caricare in massa le risorse direttamente in Dynamic Media - Modalità Scene7 su Adobe Experience Manager tramite FTP. Consente inoltre di migrare le risorse da Dynamic Media Classic alla modalità Dynamic Media - Scene7 all’Experience Manager. Il pacchetto di funzioni è disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Il Feature Pack 18912 consente di caricare in massa le risorse direttamente in Dynamic Media - Modalità Scene7 su Adobe Experience Manager tramite FTP. Consente inoltre di migrare le risorse da Dynamic Media Classic alla modalità Dynamic Media - Scene7 all’Experience Manager. Il feature pack è disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
->È possibile utilizzare il feature pack per eseguire la migrazione in massa delle risorse da solo da Dynamic Media Classic alla modalità Dynamic Media - Scene7, ad Experience Manager. Puoi anche eseguire la migrazione in massa delle risorse utilizzando la funzione FTP in Dynamic Media Classic. Tuttavia, Adobe consiglia *not* di utilizzare uno di questi metodi a causa della complessità in questione.
+>È possibile utilizzare il pacchetto di funzioni per eseguire la migrazione in massa delle risorse da solo da Dynamic Media Classic a Dynamic Media - modalità Scene7 in Experience Manager. Puoi anche eseguire la migrazione in massa delle risorse utilizzando la funzione FTP in Dynamic Media Classic. Tuttavia, l&#39;Adobe *not* consiglia di utilizzare uno di questi metodi a causa della complessità interessata.
 >
->Di conseguenza, questo pacchetto di funzioni di migrazione è *supportato solo* come parte di un progetto di migrazione quando viene eseguito tramite [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>Il pacchetto di funzionalità per la migrazione è *only* supportato come parte di un progetto di migrazione quando eseguito attraverso [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Prima di installare il feature pack, crea un utente del servizio e fornisci tali informazioni al supporto di Adobe.
 
-Vedere anche [Configurazione Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md).
+Vedi anche [Configurare Dynamic Media - Modalità Scene7](/help/assets/config-dms7.md).
 
 **Per installare il feature pack 18912 per la migrazione di massa delle risorse:**
 
-1. Nell&#39;istanza di Experience Manager, passa a **[!UICONTROL Tool]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Crea utente]**. L&#39;utente del servizio deve disporre delle autorizzazioni di *lettura/scrittura* per `/content/dam.`
-1. Nei campi **[!UICONTROL ID]** e **[!UICONTROL Password]** , immetti un nome utente e una password; ad esempio, **FTP User**. Questo nome viene visualizzato nella timeline come utente che ha creato la risorsa. Quando una risorsa viene caricata da FTP, viene considerata una creazione quando viene caricata sul server FTP e inviata ad Experience Manager.
-1. Contatta il [Adobe Customer Support per Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) per richiedere l&#39;accesso al feature pack 18912 per il download. Quando si contatta l&#39;assistenza, potrebbe essere necessario disporre delle seguenti informazioni:
+1. Nell’istanza di Experience Manager, passa a **[!UICONTROL Strumento]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Crea utente]**. Questo utente del servizio deve avere *lettura/scrittura* autorizzazioni a `/content/dam.`
+1. In **[!UICONTROL ID]** e **[!UICONTROL Password]** campi, immettere un nome utente e una password; ad esempio, **Utente FTP**. Questo nome viene visualizzato nella timeline come utente che ha creato la risorsa. Quando una risorsa viene caricata da FTP, viene considerata una creazione quando viene caricata sul server FTP e inviata ad Experience Manager.
+1. Contatto [Adobe di Assistenza clienti per Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support) per richiedere l&#39;accesso al feature pack 18912 per il download. Quando si contatta l&#39;assistenza, potrebbe essere necessario disporre delle seguenti informazioni:
 
    * Indirizzo IP del server per l’istanza Author, incluso il numero di porta (per impostazione predefinita, il numero di porta è 4502.)
    * Nome utente e password del servizio di Experience Manager dal passaggio precedente.
@@ -46,4 +46,4 @@ Vedere anche [Configurazione Dynamic Media - Modalità Scene7](/help/assets/conf
 1. Ad Experience Manager, l’Assistenza clienti di Adobe ti fornisce le credenziali FTP e l’accesso al feature pack 18912.
 1. Quando ricevi il feature pack 18912, installalo.
 
-   Per ulteriori informazioni sull&#39;utilizzo di Distribuzione software e pacchetti in Experience Manager, consulta [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md) .
+   Vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md) per ulteriori informazioni sull’utilizzo di Distribuzione di software e pacchetti in Experience Manager.

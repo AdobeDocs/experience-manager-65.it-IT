@@ -1,8 +1,8 @@
 ---
-title: 'Che cos’è la protezione dei documenti? '
-seo-title: 'Informazioni sulla protezione dei documenti '
+title: Che cos’è la protezione dei documenti?
+seo-title: About document security
 description: Scopri come creare, archiviare e applicare impostazioni di riservatezza predefinite e distribuire le informazioni in modo sicuro utilizzando la sicurezza dei documenti.
-seo-description: Scopri come creare, archiviare e applicare impostazioni di riservatezza predefinite e distribuire le informazioni in modo sicuro utilizzando la sicurezza dei documenti.
+seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
@@ -14,7 +14,7 @@ feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3310'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ La sicurezza dei documenti garantisce che solo gli utenti autorizzati possano ut
 * File Adobe PDF
 * File Microsoft® Word, Excel e PowerPoint
 
-Per ulteriori informazioni su come i criteri proteggono i tipi di file supportati, vedere [ulteriori informazioni sulla protezione dei documenti](https://www.adobe.com/go/learn_aemforms_doc_security_65).
+Per ulteriori informazioni su come i criteri proteggono i tipi di file supportati, consulta [ulteriori informazioni sulla sicurezza dei documenti](https://www.adobe.com/go/learn_aemforms_doc_security_65).
 
 Utilizzando la protezione dei documenti, è possibile creare, memorizzare e applicare facilmente ai documenti impostazioni di riservatezza predefinite. Per evitare che le informazioni si diffondano oltre la tua portata, puoi anche monitorare e controllare il modo in cui i destinatari utilizzano i tuoi documenti dopo averli distribuiti.
 
@@ -34,7 +34,7 @@ Utilizzando la protezione dei documenti, è possibile creare, memorizzare e appl
 
 Gli utenti della sicurezza dei documenti creano i criteri tramite le pagine web dell&#39;utente finale. Gli amministratori utilizzano le pagine Web di sicurezza dei documenti per creare set di criteri contenenti criteri condivisi disponibili per tutti gli utenti autorizzati.
 
-Anche se i criteri sono memorizzati nella protezione dei documenti, è possibile applicarli ai documenti tramite l&#39;applicazione client. Come applicare i criteri ai documenti PDF è descritto in dettaglio in *Guida di Acrobat*. L&#39;applicazione di criteri utilizzando altre applicazioni, come Microsoft® Office, è documentata nella *Guida delle estensioni Acrobat Reader DC* per l&#39;applicazione.
+Anche se i criteri sono memorizzati nella protezione dei documenti, è possibile applicarli ai documenti tramite l&#39;applicazione client. Come applicare i criteri ai documenti PDF viene descritto in dettaglio in *Guida di Acrobat*. L&#39;applicazione dei criteri utilizzando altre applicazioni, come Microsoft® Office, è documentata in *Aiuto sulle estensioni di Acrobat Reader DC* per la domanda.
 
 Quando si applica un criterio a un documento, le impostazioni di riservatezza specificate nel criterio proteggono le informazioni contenute nel documento. Le impostazioni di riservatezza proteggono anche i file (testo, audio o video) all’interno di un documento PDF. Puoi distribuire il documento protetto tramite criterio ai destinatari autorizzati dal criterio.
 
@@ -48,9 +48,9 @@ Tramite la protezione dei documenti è possibile monitorare i documenti protetti
 
 La sicurezza dei documenti è costituita da un server e da un&#39;interfaccia utente:
 
-**Server:** il componente centrale attraverso il quale la sicurezza dei documenti esegue transazioni come l&#39;autenticazione degli utenti, la gestione in tempo reale dei criteri e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per i criteri, i record di controllo e altre informazioni correlate.
+**Server:** Componente centrale attraverso il quale la sicurezza dei documenti esegue transazioni quali l&#39;autenticazione degli utenti, la gestione in tempo reale delle politiche e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per i criteri, i record di controllo e altre informazioni correlate.
 
-**Pagine web:** interfaccia in cui vengono creati i criteri, gestiti i documenti protetti da policy e monitorati gli eventi associati ai documenti protetti da policy. Gli amministratori possono inoltre configurare opzioni globali quali l’autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
+**Pagine web:** Interfaccia in cui creare criteri, gestire documenti protetti da policy e monitorare gli eventi associati a documenti protetti da policy. Gli amministratori possono inoltre configurare opzioni globali quali l’autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -79,7 +79,7 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
 
    * Gestisci configurazione
    * Gestisci criteri
-   * Gestisci set di criteri
+   * Gestire i set di criteri
    * Gestione dei documenti
    * Gestire gli editori di documenti
    * Gestione degli utenti invitati e locali
@@ -100,7 +100,7 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
    Gli utenti con questo ruolo possono utilizzare la sezione relativa alla sicurezza dei documenti della console di amministrazione per modificare i criteri degli altri utenti e per creare, modificare ed eliminare i set di criteri. Quando un amministratore di set di criteri crea un set di criteri, può assegnare un coordinatore di set di criteri a tale set di criteri. Queste autorizzazioni sono associate al ruolo :
 
    * Gestisci criteri
-   * Gestisci set di criteri
+   * Gestire i set di criteri
    * Gestione dei documenti
    * Gestire gli editori di documenti
    * Visualizza eventi
@@ -149,7 +149,7 @@ Gli amministratori di sicurezza dei documenti possono creare ruoli personalizzat
 
 ## Politiche e documenti protetti da policy {#policies-and-policy-protected-documents}
 
-Un *criterio* definisce un set di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. Un criterio consente inoltre di modificare dinamicamente le autorizzazioni di un documento. Consente alla persona che garantisce il permesso di modificare le impostazioni di riservatezza del documento per revocare l&#39;accesso al documento o per cambiare il criterio.
+A *policy* definisce un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. Un criterio consente inoltre di modificare dinamicamente le autorizzazioni di un documento. Consente alla persona che garantisce il permesso di modificare le impostazioni di riservatezza del documento per revocare l&#39;accesso al documento o per cambiare il criterio.
 
 La protezione dei criteri può essere applicata a un documento PDF utilizzando Adobe Acrobat® Pro e Acrobat Standard. La protezione dei criteri può essere applicata ad altri tipi di file, come file Microsoft® Word, Excel e PowerPoint, utilizzando l&#39;applicazione client con le estensioni Acrobat Reader DC appropriate installate.
 
@@ -161,7 +161,7 @@ Le impostazioni di riservatezza in un criterio determinano in che modo i destina
 
 >[!NOTE]
 >
->Le impostazioni di riservatezza applicate tramite un criterio sostituiscono tutte le impostazioni eventualmente applicate a un documento PDF in Acrobat utilizzando le opzioni di protezione relative alla password o al certificato. (Per ulteriori informazioni, consulta la Guida di Acrobat .)
+>Le impostazioni di riservatezza applicate tramite un criterio sostituiscono tutte le impostazioni che possono essere state applicate a un documento PDF in Acrobat utilizzando le opzioni di protezione della password o del certificato. (Per ulteriori informazioni, consulta la Guida di Acrobat .)
 
 Utenti e amministratori creano criteri tramite le pagine web di sicurezza dei documenti. A un documento è possibile applicare un solo criterio alla volta. È possibile applicare un criterio utilizzando uno dei seguenti metodi:
 
@@ -184,7 +184,7 @@ Se l’utilizzo offline è abilitato, i destinatari possono inoltre utilizzare d
 
 ### Funzionamento dei documenti protetti da policy {#how-policy-protected-documents-work}
 
-Per aprire e utilizzare documenti protetti da policy, il criterio deve includere il tuo nome come destinatario e devi disporre di un account di sicurezza documento valido. Per i documenti PDF è necessario Acrobat o Adobe Reader®. Per altri tipi di file, è necessaria l’applicazione appropriata per il file con le estensioni Acrobat Reader DC installate.
+Per aprire e utilizzare documenti protetti da policy, il criterio deve includere il tuo nome come destinatario e devi disporre di un account di sicurezza documento valido. Per i documenti PDF, è necessario Acrobat o Adobe Reader®. Per altri tipi di file, è necessaria l’applicazione appropriata per il file con le estensioni Acrobat Reader DC installate.
 
 Quando si tenta di aprire un documento protetto da policy, Acrobat, Adobe Reader o Acrobat Reader DC Extensions si connette alla protezione del documento per l&#39;autenticazione. Quindi, puoi procedere all&#39;accesso. Se l&#39;utilizzo del documento è in corso di revisione, viene visualizzato un messaggio di notifica. Dopo che la sicurezza del documento determina quali autorizzazioni del documento concedere, gestisce la decrittografia del documento. È quindi possibile utilizzare il documento in base alle impostazioni di riservatezza dei criteri.
 
@@ -203,15 +203,15 @@ I passaggi nel diagramma sono i seguenti:
 
 È inoltre possibile utilizzare documenti protetti da policy offline (senza connessione a Internet o di rete) se il criterio consente l&#39;accesso offline. Per sincronizzare il documento, è innanzitutto necessario effettuare l&#39;accesso a per proteggere i documenti. Puoi quindi utilizzare il documento per la durata del periodo di lease offline specificato nel criterio.
 
-Al termine del periodo di lease offline, è necessario sincronizzare nuovamente il documento con la sicurezza del documento, sia accedendo online e aprendo un documento protetto da policy, sia utilizzando un comando nell&#39;applicazione client. (Per ulteriori informazioni, consulta la *Guida di Acrobat* o la *Guida delle estensioni di Acrobat Reader DC* appropriata.)
+Al termine del periodo di lease offline, è necessario sincronizzare nuovamente il documento con la sicurezza del documento, sia accedendo online e aprendo un documento protetto da policy, sia utilizzando un comando nell&#39;applicazione client. (Vedi *Guida di Acrobat* o *Aiuto sulle estensioni di Acrobat Reader DC* per ulteriori informazioni).
 
 Se si salva una copia di un documento protetto tramite il comando Salva o Salva con nome, il criterio viene applicato e applicato automaticamente per il nuovo documento. Eventi quali i tentativi di aprire il nuovo documento vengono anche verificati e registrati per il documento originale.
 
 ## Set di criteri {#policy-sets}
 
-*I* set di criteri vengono utilizzati per raggruppare un insieme di criteri con uno scopo aziendale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema.
+*Set di criteri* vengono utilizzati per raggruppare un insieme di criteri con uno scopo commerciale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema.
 
-A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente con più autorizzazioni. Il *coordinatore del set di criteri* è tipicamente uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
+A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente con più autorizzazioni. La *coordinatore del set di regole* in genere è uno specialista dell’organizzazione che può creare al meglio i criteri in un particolare set di criteri.
 
 I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
@@ -225,19 +225,19 @@ I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
 >[!NOTE]
 >
->È possibile recuperare un massimo di 1000 nomi di set di criteri dal database utilizzando l&#39;API `getAllPolicysetnames()`.
+>È possibile recuperare un massimo di 1000 nomi di set di criteri dal database utilizzando `getAllPolicysetnames()` API.
 
 I set di criteri vengono creati ed eliminati nelle pagine web di amministrazione della sicurezza dei documenti da amministratori e coordinatori dei set di criteri che dispongono delle autorizzazioni necessarie.
 
 I set di criteri sono generalmente resi disponibili a un numero limitato di utenti specificando quali utenti o gruppi all’interno di un dominio possono utilizzare i criteri del set di criteri per proteggere i documenti.
 
-Quando si installa la protezione dei documenti, viene creato un set di criteri predefinito denominato *Set di criteri globali*. L&#39;amministratore che ha installato il software gestisce questo set di criteri.
+Quando si installa la protezione dei documenti, viene creato un set di criteri predefinito denominato *Set di criteri globale*. L&#39;amministratore che ha installato il software gestisce questo set di criteri.
 
 ## Best practice {#best-practices}
 
 I criteri sono set riutilizzabili di autorizzazioni e gruppi di utenti che possono essere applicati a vari documenti. Per i documenti protetti. Questi criteri garantiscono che solo gli utenti autorizzati possano utilizzare le funzioni consentite. Il numero di criteri e set di criteri dovrebbe aumentare con un aumento dei diversi ruoli utente e documenti all&#39;interno di un reparto. Di seguito sono riportate alcune considerazioni e best practice per creare e gestire i criteri:
 
-* **Creare criteri riutilizzabili:** Adobe consiglia di riutilizzare i criteri in diversi documenti. Consente di ridurre al minimo il numero di criteri, fornire prestazioni ottimali e semplificare la gestione dei criteri. Per creare un criterio riutilizzabile:
+* **Crea criteri riutilizzabili:** Adobe consiglia di riutilizzare i criteri in vari documenti. Consente di ridurre al minimo il numero di criteri, fornire prestazioni ottimali e semplificare la gestione dei criteri. Per creare un criterio riutilizzabile:
 
 1. Individua e definisci i requisiti di controllo degli accessi a livello di reparto e organizzazione.
 
@@ -249,11 +249,11 @@ I criteri sono set riutilizzabili di autorizzazioni e gruppi di utenti che posso
 
 Aggiungi i gruppi di utenti ai criteri anziché ai singoli utenti. Semplifica la gestione e l’applicazione dei criteri a un numero elevato di utenti.
 
-* **Crea set di criteri personalizzati:** un set di criteri combina più criteri in un&#39;entità gestibile. Crea set di criteri personalizzati per l&#39;organizzazione o il reparto, utilizzali per raggruppare i criteri correlati e renderli disponibili per un sottoinsieme di utenti nel sistema.
+* **Crea set di criteri personalizzati:** Un set di criteri combina più criteri in un&#39;entità gestibile. Crea set di criteri personalizzati per l&#39;organizzazione o il reparto, utilizzali per raggruppare i criteri correlati e renderli disponibili per un sottoinsieme di utenti nel sistema.
 
    L&#39;utilizzo dei set di criteri semplifica l&#39;assegnazione e la gestione dei criteri correlati a utenti specifici in un&#39;organizzazione o in un reparto. Ad esempio, i set di politiche separati per il dipartimento finanze e risorse umane possono aiutare a gestire e applicare facilmente le politiche correlate ai documenti designati per i servizi corrispondenti.
 
-* **Utilizza un autore esterno per applicare dinamicamente le autorizzazioni:** puoi utilizzare un  [autore ](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) esterno per valutare e applicare dinamicamente le autorizzazioni in base a condizioni esterne. Quando le autorizzazioni vengono valutate dinamicamente in base a una condizione esterna, puoi:
+* **Utilizza un autore esterno per applicare dinamicamente le autorizzazioni:** È possibile utilizzare [autore esterno](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare dinamicamente le autorizzazioni in base a condizioni esterne. Quando le autorizzazioni vengono valutate dinamicamente in base a una condizione esterna, puoi:
 
    * Assicura un controllo centralizzato dell&#39;accesso ai documenti della tua organizzazione.
 
@@ -262,7 +262,7 @@ Aggiungi i gruppi di utenti ai criteri anziché ai singoli utenti. Semplifica la
    * Oltre al processo standard di valutazione dei criteri, utilizza un meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio determina se un utente può stampare un documento protetto da policy, può utilizzare il processo standard di valutazione dei criteri e il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti.
    Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri di sicurezza dei documenti con un gestore di autorizzazioni esterno, è consigliabile utilizzare un gestore di autorizzazioni esterno in combinazione con il processo di valutazione dei criteri. Di conseguenza, l’accesso ai documenti può essere controllato dallo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio Document Security determina se un utente può stampare un documento protetto da policy, utilizza il processo di valutazione dei criteri standard e il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di gestori di autorizzazioni esterni](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
-* **Mantenere i set di criteri su un numero limitato:** Diversi fattori conducono alla crescita costante di politiche e set di politiche. Alcuni fattori comuni sono:
+* **Mantieni i set di criteri su un numero limitato:** Diversi fattori conducono alla crescita costante delle politiche e delle politiche economiche. Alcuni fattori comuni sono:
 
    * Aumento dei ruoli utente, dei reparti e dei documenti all&#39;interno di un&#39;organizzazione in un periodo di tempo.
    * I dipartimenti di un&#39;organizzazione lavorano in isolamento e mantengono uno stretto controllo sulle politiche specifiche del reparto. Porta a politiche identiche all&#39;interno di un&#39;organizzazione.
@@ -276,4 +276,4 @@ Aggiungi i gruppi di utenti ai criteri anziché ai singoli utenti. Semplifica la
 
    >[!NOTE]
    >
-   > Puoi utilizzare l&#39;API [getAllPolicyNames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+   > È possibile utilizzare [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.

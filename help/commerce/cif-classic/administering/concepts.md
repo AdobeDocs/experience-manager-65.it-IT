@@ -1,5 +1,5 @@
 ---
-title: 'Concetti '
+title: Concetti
 description: Concetti generali di e-commerce con AEM.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -36,7 +36,6 @@ Ciò significa che:
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -554,7 +553,7 @@ Le promozioni non vengono generalmente mantenute dai responsabili delle informaz
    * moduli di rendering e finestre di dialogo per l&#39;amministrazione delle promozioni
    * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici per i gestori della promozione
 
-AEM le promozioni sono integrate anche nel [Gestione delle campagne](/help/sites-authoring/personalization.md):
+AEM le promozioni sono integrate anche nel [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campagna](/help/sites-authoring/personalization.md) specifica i tempi di attivazione/disattivazione
 * [esperienze](/help/sites-authoring/personalization.md) *entro* la campagna viene utilizzata per raggruppare le risorse (pagine teaser, promozioni, ecc.) in base al segmento di pubblico a cui corrispondono

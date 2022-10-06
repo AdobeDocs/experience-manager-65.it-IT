@@ -3,20 +3,20 @@ title: Best practice per tradurre le risorse
 description: Procedure consigliate per una gestione efficiente delle risorse, al fine di sincronizzare diverse versioni tradotte e semplificare i flussi di lavoro di traduzione.
 contentOwner: AG
 role: Admin
-feature: Gestione risorse
+feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
 
 # Best practice per tradurre le risorse {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per le risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consulta [Risorse multilingue](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per le risorse digitali in più lingue e gestire le risorse tradotte. Per maggiori dettagli, vedi [Risorse multilingue](multilingual-assets.md).
 
-Per una gestione efficiente delle risorse, affinché le diverse versioni tradotte rimangano sincronizzate, crea [copie in lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
+Per una gestione efficiente delle risorse, assicurati che le diverse versioni tradotte rimangano sincronizzate, crea [copie per lingua](preparing-assets-for-translation.md) delle risorse prima di eseguire i flussi di lavoro di traduzione.
 
 Una copia in lingua di una risorsa o di un gruppo di risorse è di pari livello (o una versione delle risorse in un linguaggio cognato) con una gerarchia dei contenuti simile.
 
@@ -43,9 +43,9 @@ Puoi anche apportare alcune modifiche alla configurazione di un paio di flussi d
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. Attiva il flusso di lavoro [!UICONTROL Imposta data ultima modifica] .
+1. Abilita la [!UICONTROL Imposta data ultima modifica] workflow.
 
-   Il flusso di lavoro [!UICONTROL DAM MetaData Writeback] configura l’ultima data di modifica per una risorsa. Poiché disattivi questo flusso di lavoro nel passaggio 2, [!DNL Assets] non è più in grado di mantenere aggiornata l’ultima data di modifica delle risorse. Abilita quindi il flusso di lavoro *Imposta data ultima modifica* per garantire che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
+   La [!UICONTROL Writeback di metadati DAM] configura l’ultima data di modifica per una risorsa. Poiché disattivi questo flusso di lavoro nel passaggio 2, [!DNL Assets] non è più in grado di mantenere aggiornata l’ultima data di modifica delle risorse. Pertanto, abilita *Imposta data ultima modifica* per garantire che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
 
-1. [Configura il ](/help/sites-administering/tc-tic.md) framework di integrazione della traduzione per interrompere la traduzione dei binari delle risorse. Deseleziona l’opzione **[!UICONTROL Traduci risorse]** nella scheda [!UICONTROL Risorse] per interrompere la traduzione dei file binari delle risorse.
-1. Traduci metadati/tag delle risorse utilizzando [Flussi di lavoro per risorse multilingue](multilingual-assets.md).
+1. [Configurare il framework di integrazione della traduzione](/help/sites-administering/tc-tic.md) per interrompere la traduzione dei binari delle risorse. Deseleziona la **[!UICONTROL Tradurre le risorse]** nella sezione [!UICONTROL Risorse] per interrompere la traduzione dei file binari di risorse.
+1. Tradurre metadati/tag delle risorse utilizzando [Flussi di lavoro per risorse multilingue](multilingual-assets.md).

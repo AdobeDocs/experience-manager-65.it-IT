@@ -6,14 +6,13 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 77%
 
 ---
-
 
 # Editor Rich Text {#rich-text-editor}
 
@@ -23,7 +22,7 @@ L’editor Rich Text è un componente di base per l’inserimento di contenuti d
 * Testo e immagine
 * Tabella
 
-## Editor Rich Text  {#rich-text-editor-1}
+## Editor Rich Text {#rich-text-editor-1}
 
 La finestra di dialogo di modifica WYSIWYG fornisce un’ampia gamma di funzionalità:
 
@@ -55,9 +54,9 @@ La modalità di modifica diretta è attualmente abilitata per gli elementi della
 >
 >Il componente [!UICONTROL Titolo] può contenere un breve testo senza interruzioni di riga. Se si modifica un titolo in modalità di modifica diretta e si inserisce un’interruzione di riga, sotto al titolo viene inserito un nuovo componente **Testo**.
 
-## Funzioni nell’editor Rich Text  {#features-of-the-rich-text-editor}
+## Funzioni nell’editor Rich Text {#features-of-the-rich-text-editor}
 
-L&#39;Editor Rich Text offre una serie di funzioni, che dipendono dalla configurazione [ del singolo componente. Le funzioni sono disponibili sia per l’interfaccia touch che per l’interfaccia classica.](/help/sites-administering/rich-text-editor.md)
+L’Editor Rich Text fornisce una serie di funzioni: [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md) del singolo componente. Le funzioni sono disponibili sia per l’interfaccia touch che per quella classica.
 
 ### Formati base dei caratteri {#basic-character-formats}
 
@@ -75,9 +74,9 @@ Questa finestra consente di formattare i caratteri selezionati (evidenziati). Al
 
 Tutti i pulsanti attivano e disattivano la funzione, pertanto ripetendo la selezione si rimuove il formato.
 
-### Stili e formati predefiniti  {#predefined-styles-and-formats}
+### Stili e formati predefiniti {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagrafo](assets/cq55_rte_stylesparagraph.png)
 
 Nell’applicazione installata possono essere inclusi stili e formati predefiniti, disponibili negli elenchi a discesa **[!UICONTROL Stile]** e **[!UICONTROL Formato]** e che possono essere applicati al testo selezionato.
 
@@ -87,7 +86,7 @@ Uno stile può essere applicato a una stringa specifica (lo stile è correlato a
 
 Un formato viene invece applicato all’intero paragrafo di testo (il formato è basato su HTML):
 
-![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_Paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 I formati specifici possono essere solo modificati (quello predefinito è **[!UICONTROL Paragrafo]**).
 
@@ -97,7 +96,7 @@ Gli stili possono essere rimossi. A tale scopo, posiziona il cursore all’inter
 >
 >Non riselezionare il testo a cui è stato applicato lo stile, perché così facendo l’icona viene disattivata.
 
-### Taglia, Copia, Incolla  {#cut-copy-paste}
+### Taglia, Copia, Incolla {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -105,12 +104,11 @@ Sono disponibili le funzioni standard **[!UICONTROL Taglia]** e **[!UICONTROL Co
 
 * Taglia (Ctrl+X)
 * Copia (Ctrl+C)
-* Incolla
-Questo è il meccanismo di incolla predefinito (Ctrl+V) per il componente; quando installato out-of-the-box, questo è configurato come [!UICONTROL Incolla da Word].
+* Incolla È il meccanismo di incolla predefinito (Ctrl+V) per il componente; quando installato out-of-the-box, questo è configurato per essere [!UICONTROL Incolla da Word].
 
-* Incolla come testo: Rimuove tutti gli stili e la formattazione per incollare solo il testo normale.
+* Incolla come testo: Elimina tutti gli stili e la formattazione per incollare solo il testo normale.
 
-* Incolla da Word: Incolla il contenuto in formato HTML (eseguendo le operazioni di riformattazione necessarie).
+* Incolla da Word: Incolla il contenuto come HTML (eseguendo le operazioni di riformattazione necessarie).
 
 ### Annulla, Ripristina {#undo-redo}
 
@@ -126,7 +124,7 @@ In AEM vengono registrate le ultime 50 operazioni eseguite nel componente attual
 >
 >Per impostazione predefinita vengono mantenute 50 attività, ma tale valore può variare da un’installazione all’altra.
 
-### Allineamento  {#alignment}
+### Allineamento {#alignment}
 
 ![](do-not-localize/cq55_rte_alignment.png)
 
@@ -140,7 +138,7 @@ Il testo può essere allineato a sinistra, al centro o a destra.
 
 È possibile aumentare o diminuire il rientro di un paragrafo. Il rientro viene applicato al paragrafo selezionato. Eventuale nuovo testo inserito mantiene il livello di rientro corrente.
 
-![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_rientro_use](assets/cq55_rte_indent_use.png)
 
 ### Elenchi {#lists}
 
@@ -158,7 +156,7 @@ Per modificare lo stile di un elenco, posiziona il cursore all’interno dell’
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Per generare un collegamento a un URL (all’interno del sito Web o in una posizione esterna), evidenziate il testo richiesto e fate clic sull’icona del collegamento ipertestuale:
+Per generare un collegamento a un URL (all’interno o all’esterno del sito web), evidenzia il testo desiderato e fai clic sull’icona del collegamento ipertestuale:
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -168,21 +166,21 @@ Viene visualizzata una finestra di dialogo che consente di impostare l’URL di 
 
 Operazioni disponibili:
 
-* Digitare direttamente un URI
-* Utilizzate la mappa del sito per selezionare una pagina all’interno del sito Web
-* Inserite l’URI, quindi aggiungete l’ancoraggio di destinazione; ad esempio `www.TargetUri.org#AnchorName`
-* Immettere solo un ancoraggio (per fare riferimento alla &quot;pagina corrente&quot;); Ad esempio, `#anchor`
+* Digitare un URI direttamente
+* Utilizza la mappa del sito per selezionare una pagina all’interno del sito web
+* Inserire l’URI, quindi aggiungere l’ancoraggio di destinazione; ad esempio `www.TargetUri.org#AnchorName`
+* Inserire solo un ancoraggio (per fare riferimento alla &quot;pagina corrente&quot;); Ad esempio: `#anchor`
 * Cercare una pagina in Content Finder, quindi trascinare l’icona della pagina nella finestra di dialogo Collegamento ipertestuale
 
 >[!NOTE]
 >
->L’URI può essere preceduto da uno dei protocolli configurati per l’installazione. In un&#39;installazione standard questi sono `https://`, `ftp://` e `mailto:`. I protocolli non configurati per l’installazione in uso vengono rifiutati e contrassegnati come non validi.
+>L’URI può essere preceduto da uno dei protocolli configurati per l’installazione. In un&#39;installazione standard questi sono `https://`, `ftp://`e `mailto:`. I protocolli non configurati per l’installazione in uso vengono rifiutati e contrassegnati come non validi.
 
 Per interrompere il collegamento, posiziona il cursore all’interno del testo di collegamento e fai clic sull’icona [!UICONTROL Scollega]:
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### Ancoraggi  {#anchors}
+### Ancoraggi {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -250,7 +248,7 @@ Le tabelle sono disponibili:
 
    >[!NOTE]
    >
-   >Anche se le tabelle sono disponibili nell&#39;editor Rich Text, durante la creazione delle tabelle è consigliabile utilizzare il componente **Table**.
+   >Anche se le tabelle sono disponibili nell’editor Rich Text, si consiglia di utilizzare la variabile **Tabella** durante la creazione di tabelle.
 
 Sia nel componente **Testo** sia nel componente **Tabella** la funzionalità per le tabelle è disponibile dal menu di scelta rapida, in genere visualizzato facendo clic con il pulsante destro del mouse all’interno di una tabella, ad esempio:
 
@@ -288,7 +286,7 @@ Prima di fare clic su **OK** per salvare, è possibile configurare le proprietà
 
 * **Margine celle**: Definisce lo spazio vuoto tra il contenuto di una cella e i relativi bordi.
 
-* **Spaziatura** celle: Definisce la distanza tra le celle.
+* **Spaziatura celle**: Definisce la distanza tra le celle.
 
 >[!NOTE]
 >
@@ -296,7 +294,7 @@ Prima di fare clic su **OK** per salvare, è possibile configurare le proprietà
 
 >[!CAUTION]
 >
-> Adobe consiglia di definire una larghezza per la tabella.
+>Adobe consiglia di definire una larghezza per la tabella.
 
 #### Proprietà cella {#cell-properties}
 
@@ -309,9 +307,9 @@ Per una cella o serie di celle specifiche è possibile configurare le seguenti p
 * **Larghezza**
 * **Altezza**
 * **Allineamento orizzontale** - A sinistra, Centro o A destra
-* **Allineamento**  verticale - In alto, In mezzo, In basso o Linea di base
-* **Tipo** di cella - Dati o Intestazione
-* **Applica a:cella** singola, riga intera, colonna intera
+* **Allineamento verticale** - In alto, In mezzo, In basso o Linea di base
+* **Tipo di cella**- Dati o intestazione
+* **Applica a:** Cella singola, riga intera, colonna intera
 
 #### Aggiungi/Elimina righe {#add-or-delete-rows}
 
@@ -321,28 +319,28 @@ Le righe possono essere aggiunte sopra o sotto la riga corrente.
 
 È inoltre possibile eliminare la riga corrente.
 
-#### Aggiungi/Elimina colonne  {#add-or-delete-columns}
+#### Aggiungi/Elimina colonne {#add-or-delete-columns}
 
-![cq55_rte_Columns](assets/cq55_rte_columns.png)
+![cq55_rte_columns](assets/cq55_rte_columns.png)
 
 Le colonne possono essere aggiunte a destra o a sinistra della colonna corrente.
 
 È inoltre possibile eliminare la colonna corrente.
 
-#### Selezione di righe o colonne intere  {#selecting-entire-rows-or-columns}
+#### Selezione di righe o colonne intere {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
 Consente di selezionare l’intera riga o colonna corrente per eseguire operazioni specifiche, ad esempio l’unione.
 
-#### Unisci celle  {#merge-cells}
+#### Unisci celle {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Se è selezionato un gruppo di celle, è possibile unirle in modo da formare una singola cella.
 * Se è selezionata una sola cella, è possibile unirla con la cella a destra o con quella sotto.
 
-#### Dividi celle  {#split-cells}
+#### Dividi celle {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -351,7 +349,7 @@ Consente di selezionare una singola cella per dividerla:
 * Se si divide la cella in orizzontale, nella colonna corrente viene generata una nuova cella a destra di quella attuale.
 * Se si divide la cella in verticale, nella riga corrente viene generata una nuova cella sotto quella attuale.
 
-#### Creazione di tabelle nidificate  {#creating-nested-tables}
+#### Creazione di tabelle nidificate {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -369,7 +367,7 @@ Quando si crea una tabella nidificata, viene creata una nuova tabella indipenden
 
 ![cq55_rte_remove](assets/cq55_rte_removetable.png)
 
-Utilizzare l&#39;opzione per rimuovere la tabella dall&#39;interno del componente **[!UICONTROL Testo]**.
+Utilizza l’opzione per rimuovere la tabella dall’interno della **[!UICONTROL Testo]** componente.
 
 ### Caratteri speciali {#special-characters}
 
@@ -381,7 +379,7 @@ Nell’editor Rich Text è possibile rendere disponibili alcuni caratteri specia
 
 Sposta il mouse su un carattere per visualizzarne una versione ingrandita, quindi fai clic su di esso per inserirlo nella posizione corrente all’interno del testo.
 
-### Modalità di modifica dell’origine  {#source-editing-mode}
+### Modalità di modifica dell’origine {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

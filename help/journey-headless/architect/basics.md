@@ -1,14 +1,15 @@
 ---
 title: Informazioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base per la modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
-# Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM {#content-modeling-headless-basics}
+# Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM {#content-modeling-headless-basics}
 
 ## La storia finora {#story-so-far}
 
@@ -104,7 +105,7 @@ Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
    * Modificare direttamente il frammento a cui si fa riferimento.
-   * Crea un nuovo frammento di contenuto basato sul modello appropriato
+   * Creare un nuovo frammento di contenuto basato sul modello appropriato
 
 >[!NOTE]
 >
@@ -126,7 +127,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 
 * Città
 * Azienda
-* Person
+* Utente
 * Premi
 
 Sembra abbastanza semplice, ma ovviamente un&#39;Azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.

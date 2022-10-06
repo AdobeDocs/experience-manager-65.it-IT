@@ -1,8 +1,8 @@
 ---
 title: Ambiente e strumenti di authoring
-seo-title: Ambiente e strumenti di authoring
+seo-title: Authoring - the Environment and Tools
 description: La console Siti web permette di gestire il sito web e navigare al suo interno. Sono disponibili due pannelli che consentono di espandere la struttura del sito web e intervenire sugli elementi necessari.
-seo-description: La console Siti web permette di gestire il sito web e navigare al suo interno. Sono disponibili due pannelli che consentono di espandere la struttura del sito web e intervenire sugli elementi necessari.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '899'
 ht-degree: 87%
 
 ---
 
 # Ambiente e strumenti di authoring {#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
 
 ## Amministrazione del sito {#site-administration}
 
@@ -151,7 +151,7 @@ in una query è possibile utilizzare qualsiasi numero di caratteri jolly.
 
 >[!NOTE]
 >
->È inoltre possibile utilizzare la ricerca [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>È inoltre possibile utilizzare [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) ricerca.
 
 ## Visualizzazione di riferimenti {#showing-references}
 
@@ -163,7 +163,7 @@ Per visualizzare i riferimenti diretti alle pagine:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleziona **Mostra riferimenti..** AEM apre la finestra Riferimenti e visualizza le pagine che fanno riferimento a quella selezionata, complete di percorso.
+1. Seleziona **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che fanno riferimento a quella selezionata, complete di percorso.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Il **Registro di controllo** è accessibile dalla scheda **Informazioni** della 
 
 ## Informazioni sulle pagine {#page-information}
 
-La console Siti Web fornisce inoltre [informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), ad esempio pubblicazione, modifica, blocco, Live Copy e così via.
+Anche la console Siti Web [fornisce informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) come pubblicazione, modifica, blocco, Live Copy, ecc.
 
 ## Modalità pagina   {#page-modes}
 
@@ -205,9 +205,9 @@ La serie di icone visualizzata nella parte inferiore della barra laterale consen
 >Sono inoltre disponibili altre opzioni:
 >
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [ClientContext](/help/sites-administering/client-context.md)
-* Siti Web - apre la console Siti Web .
-* Ricarica, per aggiornare la visualizzazione della pagina.
+>* [ClientContext](/help/sites-administering/client-context.md)
+>* Siti web, per aprire la console Siti web.
+>* Ricarica, per aggiornare la visualizzazione della pagina.
 
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}

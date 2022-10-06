@@ -1,8 +1,8 @@
 ---
 title: Proprietà di configurazione di Interactive Communications
-seo-title: Proprietà di configurazione della comunicazione interattiva
+seo-title: Interactive Communication configuration properties
 description: Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
-seo-description: Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
+seo-description: Edit default configuration properties for Interactive Communications
 uuid: 4030078f-64a3-40bb-9892-49e22a8da561
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,20 +11,19 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---
 
+# Proprietà di configurazione di Interactive Communications{#interactive-communications-configuration-properties}
 
-# Proprietà di configurazione delle comunicazioni interattive{#interactive-communications-configuration-properties}
+Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del [Componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) pacchetto. Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando **Configurazione della console Web di Adobe Experience Manager** pagina.
 
-Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina **Configurazione della console Web Adobe Experience Manager** .
-
-Apri la pagina **Configurazione console Web Adobe Experience Manager** utilizzando il seguente URL:
+Apri **Configurazione della console Web di Adobe Experience Manager** utilizzando il seguente URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -37,7 +36,7 @@ Le proprietà di configurazione includono:
 
 ## Configurazione dei frammenti di documento {#document-fragments-configuration}
 
-Toccare **Configurazione frammenti di documento** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione dei frammenti di documento.
+Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione dei frammenti di documento.
 
 <table>
  <tbody> 
@@ -83,7 +82,7 @@ Toccare **Configurazione frammenti di documento** nella pagina **Configurazione 
 
 ## Creare la configurazione della corrispondenza {#create-correspondence-configuration}
 
-Tocca **Crea configurazione corrispondenza** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente agente.
+Tocca **Creare la configurazione della corrispondenza** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente dell&#39;agente.
 
 <table>
  <tbody> 
@@ -106,8 +105,8 @@ Tocca **Crea configurazione corrispondenza** nella pagina **Configurazione conso
    <td>Non applicabile</td> 
   </tr> 
   <tr> 
-   <td>Abilita incorporazione font in PDF</td> 
-   <td><p>Selezionare la casella di controllo per abilitare i font da incorporare nei documenti PDF. Dopo aver selezionato questa opzione, è possibile incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti PDF tramite l’interfaccia utente di Agent. Utilizzare il canale Stampa della comunicazione interattiva per generare e visualizzare in anteprima documenti PDF.</p> <p>L’incorporazione di font in un documento PDF è utile se un font è disponibile su un computer utilizzato per generare il PDF e non è disponibile sul computer client che accede al PDF.</p> <p>Per ulteriori informazioni sull'incorporazione dei font, consulta <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizzare l'editor di testo</a>.</p> </td> 
+   <td>Abilitare l’incorporazione dei font in PDF</td> 
+   <td><p>Selezionare la casella di controllo per abilitare i font da incorporare nei documenti PDF. Dopo aver selezionato questa opzione, è possibile incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti PDF tramite l’interfaccia utente di Agent. Utilizzare il canale Stampa di comunicazioni interattive per generare e visualizzare in anteprima documenti PDF.</p> <p>L’incorporazione di font in un documento PDF è utile se un font è disponibile su un computer utilizzato per generare PDF e non è disponibile sul computer client che accede a PDF.</p> <p>Per ulteriori informazioni sull'incorporazione dei font, consulta <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizza editor di testo</a>.</p> </td> 
    <td>Non selezionato</td> 
    <td>Non applicabile</td> 
   </tr> 
@@ -116,7 +115,7 @@ Tocca **Crea configurazione corrispondenza** nella pagina **Configurazione conso
 
 ## Configurazione del canale web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tocca **Configurazione canale web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per il canale web per Forms adattivo e comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
+Tocca **Configurazione del canale web per moduli adattivi e comunicazioni interattive** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per il canale web Adaptive Forms e Interactive Communications. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
@@ -124,9 +123,9 @@ Tocca **Configurazione canale web per moduli adattivi e comunicazioni interattiv
 | Numero massimo di voci della cache | Imposta il numero massimo di moduli adattivi e comunicazioni interattive recuperabili utilizzando la memoria cache. | 100 | Numero |
 | Rendi univoco il nome del file | Seleziona la casella di controllo per assegnare nomi univoci ai file inclusi come allegati in Adaptive Forms e Interactive Communications. | Non selezionato | Non applicabile |
 
-## Configurazione del tema del canale web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configurazione del tema del canale web di comunicazione e modulo adattivo {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tocca **Configurazione del tema del canale web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione della console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per i temi del canale web per Forms adattivo e comunicazioni interattive.
+Tocca **Configurazione del tema del canale web di comunicazione e modulo adattivo** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per i temi del canale web Adaptive Forms e Interactive Communications.
 
 <table>
  <tbody> 
@@ -144,4 +143,3 @@ Tocca **Configurazione del tema del canale web per moduli adattivi e comunicazio
   </tr> 
  </tbody> 
 </table>
-

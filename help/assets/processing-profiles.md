@@ -9,11 +9,11 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
-feature: Flusso di lavoro, Gestione risorse, rappresentazioni
+feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Per creare, modificare ed eliminare metadati, immagini o profili video, è neces
 
 Dopo aver creato i metadati, le immagini o il profilo video, li assegni a una o più cartelle che utilizzi come destinazione per le risorse appena caricate.
 
-Un concetto importante per l’utilizzo dei profili in Experience Manager Assets è che vengono assegnati alle cartelle. All’interno di un profilo, le impostazioni sono sotto forma di profili di metadati, insieme a profili video o di immagini. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, la modalità di denominazione di file e cartelle, la modalità di organizzazione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
+Un concetto importante relativo all’utilizzo dei profili in Experience Manager Assets è che vengono assegnati alle cartelle. All’interno di un profilo, le impostazioni sono sotto forma di profili di metadati, insieme a profili video o di immagini. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Pertanto, la modalità di denominazione di file e cartelle, la modalità di organizzazione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
 Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate e buone pratiche in materia di metadati, puoi sfruttare al massimo la tua raccolta di risorse digitali e accertarti che i file giusti siano elaborati dal profilo giusto.
 
 >[!NOTE]
@@ -49,13 +49,13 @@ Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appr
 
 Puoi rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente che hai successivamente modificato.
 
-Ad esempio, supponi di aver creato un profilo immagine e di averlo assegnato a una cartella. A tutte le risorse immagine caricate nella cartella veniva automaticamente applicato il profilo Immagine alle risorse. Tuttavia, in seguito decidi di aggiungere al profilo una nuova proporzione di ritaglio avanzato. Invece di selezionare e ricaricare nuovamente le risorse nella cartella, esegui semplicemente il *Scene7: Rielaborazione del flusso di lavoro Assets*.
+Ad esempio, supponi di aver creato un profilo immagine e di averlo assegnato a una cartella. A tutte le risorse immagine caricate nella cartella veniva automaticamente applicato il profilo Immagine alle risorse. Tuttavia, in seguito decidi di aggiungere al profilo una nuova proporzione di ritaglio avanzato. Ora, invece di dover selezionare e ricaricare le risorse nella cartella tutte le volte, esegui semplicemente il *Scene7: Rielaborazione delle risorse* workflow.
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l’elaborazione non è riuscita la prima volta. Di conseguenza, anche se non hai modificato un profilo di elaborazione o applicato un profilo di elaborazione, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui _Scene7: Rielabora il flusso di lavoro Assets_ in una cartella. Le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati ad Experience Manager. Se le dimensioni del batch sono grandi, si potrebbe verificare un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
+Facoltativamente, puoi regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando esegui la _Scene7: Rielaborazione delle risorse_ le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ogni risorsa nell’intero set di batch vengono aggiornati ad Experience Manager. Se le dimensioni del batch sono grandi, si potrebbe verificare un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
 
-Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
+Vedi [Regola le dimensioni batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#
 
 **Per rielaborare le risorse in una cartella:**
 
-1. Ad Experience Manager, dalla pagina Risorse, passa a una cartella di risorse a cui è assegnato un profilo di elaborazione e alla quale desideri applicare il **[!UICONTROL Scene7: Rielaborazione del flusso di lavoro Asset]**,
+1. Ad Experience Manager, dalla pagina Risorse, passa a una cartella di risorse a cui è assegnato un profilo di elaborazione e alla quale desideri applicare il **[!UICONTROL Scene7: Rielabora risorsa]** flusso di lavoro,
 
    Le cartelle a cui è già stato assegnato un profilo di elaborazione sono indicate dalla visualizzazione del nome del profilo che si trova direttamente sotto il nome della cartella nella Vista a schede.
 
@@ -77,20 +77,20 @@ Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#
    * Se sono presenti una o più sottocartelle con risorse nella cartella principale selezionata, il flusso di lavoro rielabora ogni risorsa nella gerarchia delle cartelle.
    * Come best practice, evita di eseguire questo flusso di lavoro in una gerarchia di cartelle con più di 1000 risorse.
 
-1. Dall’elenco a discesa, nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Timeline]**.
-1. Nell’angolo in basso a sinistra della pagina, a destra del campo Commento, seleziona l’icona del carrello ( **^** ) .
+1. Seleziona dall’elenco a discesa nell’angolo in alto a sinistra della pagina. **[!UICONTROL Timeline]**.
+1. Nell’angolo in basso a sinistra della pagina, a destra del campo Commento, seleziona l’icona del carrello ( **^** ).
 
    ![Rielaborazione del flusso di lavoro delle risorse 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Seleziona **[!UICONTROL Avvia flusso di lavoro]**.
-1. Dall’elenco a discesa **[!UICONTROL Avvia flusso di lavoro]** , scegli **[!UICONTROL Scene7: Rielabora le risorse]**.
-1. (Facoltativo) Nel campo di testo **Immetti il titolo del flusso di lavoro** , immetti un nome per il flusso di lavoro. Se necessario, puoi utilizzare il nome per fare riferimento all’istanza del flusso di lavoro.
+1. Da **[!UICONTROL Avvia flusso di lavoro]** elenco a discesa, scegli **[!UICONTROL Scene7: Rielaborazione delle risorse]**.
+1. (Facoltativo) In **Immetti il titolo del flusso di lavoro** campo di testo, immetti un nome per il flusso di lavoro. Se necessario, puoi utilizzare il nome per fare riferimento all’istanza del flusso di lavoro.
 
    ![Rielaborazione delle risorse 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Seleziona **[!UICONTROL Start]**, quindi seleziona **[!UICONTROL Conferma]**.
+1. Seleziona **[!UICONTROL Inizio]**, quindi seleziona **[!UICONTROL Conferma]**.
 
-   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, seleziona **[!UICONTROL Apri cronologia]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro , seleziona un flusso di lavoro. Nella barra dei menu, seleziona **[!UICONTROL Cronologia aperta]**. Puoi anche interrompere, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
 ### Regola le dimensioni batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
@@ -98,30 +98,30 @@ Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione:**
 
-1. In Experience Manager, seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, quindi seleziona l’icona **[!UICONTROL Strumenti]** (martello) > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Nella pagina Modelli flusso di lavoro, in Vista a schede o Vista a elenco, seleziona **[!UICONTROL Scene7: Rielabora le risorse]**.
+1. In Experience Manager, seleziona **[!UICONTROL Adobe Experience Manager]** per accedere alla console di navigazione globale, seleziona **[!UICONTROL Strumenti]** Icona (martello) > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Nella pagina Modelli di flusso di lavoro, seleziona Vista a schede o Vista a elenco **[!UICONTROL Scene7: Rielaborazione delle risorse]**.
 
    ![Pagina Modelli di flusso di lavoro con Scene7: Rielaborazione del flusso di lavoro delle risorse selezionato nella vista a schede](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Modifica]**. Viene visualizzata una nuova scheda del browser Scene7: Rielabora la pagina del modello di flusso di lavoro Assets.
-1. Su Scene7: Rielabora la pagina del flusso di lavoro Assets, nell’angolo in alto a destra, seleziona **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
+1. Su Scene7: Rielabora la pagina del flusso di lavoro delle risorse, seleziona nell’angolo in alto a destra **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
 1. Nel flusso di lavoro, seleziona il componente Caricamento in batch di Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** sulla barra degli strumenti.
 
    ![Componente Caricamento in batch di Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Caricamento in batch in Scene7 - Proprietà passaggio]** , imposta quanto segue:
-   * Nei campi di testo **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]**, immetti un nuovo titolo e una nuova descrizione per il processo, se necessario.
-   * Seleziona **[!UICONTROL Handler Advance]** se il tuo handler andrà avanti al passaggio successivo.
-   * Nel campo **[!UICONTROL Timeout]** , immetti il timeout del processo esterno (secondi).
-   * Nel campo **[!UICONTROL Punto]**, immettere un intervallo di polling (secondi) per verificare il completamento del processo esterno.
-   * Nel **[!UICONTROL Campo batch]**, immetti il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Media.
-   * Seleziona **[!UICONTROL Avanzamento su timeout]** se desideri avanzare quando viene raggiunto il timeout. Annulla selezione se desideri passare alla casella in entrata quando viene raggiunto il timeout.
+1. Sulla **[!UICONTROL Caricamento in batch in Scene7 - Proprietà passaggio]** impostare quanto segue:
+   * In **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** campi di testo, immettere un nuovo titolo e una nuova descrizione per il processo, se necessario.
+   * Seleziona **[!UICONTROL Avanzamento gestore]** se il tuo handler passerà al passaggio successivo.
+   * In **[!UICONTROL Timeout]** immetti il timeout del processo esterno (secondi).
+   * In **[!UICONTROL Punto]** immettere un intervallo di polling (secondi) per verificare il completamento del processo esterno.
+   * In **[!UICONTROL Campo batch]**, immetti il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Media.
+   * Seleziona **[!UICONTROL Avanzamento al timeout]** se desideri avanzare quando viene raggiunto il timeout. Annulla selezione se desideri passare alla casella in entrata quando viene raggiunto il timeout.
 
    ![Finestra di dialogo Proprietà](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell&#39;angolo in alto a destra della finestra di dialogo **[!UICONTROL Caricamento batch in Scene7 - Proprietà passaggio]**, seleziona **[!UICONTROL Fine]**.
+1. Nell&#39;angolo in alto a destra del **[!UICONTROL Caricamento in batch in Scene7 - Proprietà passaggio]** finestra di dialogo, seleziona **[!UICONTROL Fine]**.
 
-1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Assets, seleziona **[!UICONTROL Sincronizza]**. Quando vedi **[!UICONTROL Sincronizzato]**, il modello di runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
+1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Assets, seleziona **[!UICONTROL Sincronizzazione]**. Quando vedi **[!UICONTROL Sincronizzato]**, il modello di runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
 
    ![Sincronizzazione del modello di flusso di lavoro](/help/assets/assets-dm/reprocess-assets1.png)
 

@@ -1,27 +1,26 @@
 ---
 title: Gestione delle richieste RGPD per la AEM Foundation
-seo-title: Gestione delle richieste RGPD per la AEM Foundation
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Gestione delle richieste RGPD per la AEM Foundation
-seo-description: 'null'
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 6%
+source-wordcount: '435'
+ht-degree: 55%
 
 ---
 
-
-# Gestione delle richieste RGPD per AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste RGPD per la AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come RGPD, CCPA, ecc.
 
-## Supporto per il RGPD di AEM Foundation {#aem-foundation-gdpr-support}
+## Supporto per il RGPD in AEM Foundation {#aem-foundation-gdpr-support}
 
 A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo utente. Pertanto, le informazioni contenute in questo articolo si occupano principalmente di come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e cancellazione RGPD.
 
@@ -29,15 +28,15 @@ A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo utente
 
 ### Passaggi manuali {#manual-steps}
 
-1. Apri la console di amministrazione utente navigando su **[!UICONTROL Impostazioni - Sicurezza - Utenti]** o direttamente su `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Apri la console di amministrazione degli utenti sfogliando **[!UICONTROL Impostazioni - Sicurezza - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
-1. Quindi, cerca l&#39;utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
+1. Quindi, cerca l’utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
 
    ![ricerca utente](assets/usersearch.png)
 
-1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]** .
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
@@ -60,9 +59,9 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Recupero dei dati utente*
+*Recupero dati utente*
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -77,9 +76,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione . Il profilo diventa grigio e indica che è selezionato.
+1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
 
-1. Premere il pulsante Disattiva nel menu superiore per disattivare l&#39;utente:
+1. Premi il pulsante Disattiva nel menu superiore per disabilitare l’utente:
 
    ![userdisable](assets/userdisable.png)
 
@@ -91,7 +90,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![disabilitato](assets/disableduser.png)
 
-### Elimina informazioni profilo utente {#delete-user-profile-information}
+### Eliminare informazioni sul profilo utente {#delete-user-profile-information}
 
 1. Accedi a CRXDE Lite, quindi cerca il `[!UICONTROL userId]`:
 
@@ -110,18 +109,18 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano lo `curl` strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
-* *Esplorazione della home utente*
+* *Individuazione della home utente*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Disabilitazione dell&#39;utente*
+* *Disabilitazione dell’utente*
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando precedente:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -129,7 +128,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Eliminazione dei profili utente*
 
-Utilizzando il percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione account e dalle posizioni note dei nodi del profilo predefinite:
+Utilizzo del percorso del nodo dalla proprietà home del payload JSON restituito dal comando di individuazione account e dalle posizioni note dei nodi del profilo predefinite:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
@@ -138,4 +137,3 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
-

@@ -1,7 +1,7 @@
 ---
 title: AEM Mobile - Preparazione all’RGPD
 seo-title: AEM Mobile - GDPR Readiness
-description: '"AEM Mobile - Preparazione all’RGPD"'
+description: "AEM Mobile - Preparazione all’RGPD"
 seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton

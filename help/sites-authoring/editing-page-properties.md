@@ -14,7 +14,7 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -54,12 +54,12 @@ Le proprietà sono distribuite su più schede.
 
 * **Marchio**
 
-   Applica un’identità di marchio coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l&#39;utilizzo del componente Pagina dalla versione 2.14.0 o successiva dei [Componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+   Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
-   * **Override** : seleziona per definire il brand lumg in questa pagina.
-      * Il valore viene ereditato da qualsiasi pagina figlia a meno che non siano impostati anche i valori **Override**.
-   * **Valore di sostituzione** : il testo del marchio da aggiungere al titolo della pagina.
-      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Ciclismo in Toscana | Sempre pronto per il WKND&quot;
+   * **Override**: selezionalo per definire il marchio su questa pagina.
+      * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano impostati anche i loro valori **Override**.
+   * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
+      * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 * **Titolo pagina**
 
    Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se questo campo è vuoto, viene utilizzato il **Titolo**.
@@ -92,7 +92,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
 
-   Ad esempio, se l’URL personalizzato è impostato su `welcome`per la pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` , `http://example.com/welcome`sarà l’URL personalizzato di `http://example.com/content/v1.0/startpage`
+   Ad esempio, se l’URL personalizzato è impostato su `welcome`alla pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` then `http://example.com/welcome`è l’URL personalizzato di `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ Le proprietà sono distribuite su più schede.
    >* non devono essere impostati su una pagina esistente.
 
 
-   Devi anche configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Per ulteriori informazioni, consulta [Abilitazione dell’accesso agli URL personalizzati](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) .
+   Devi anche configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Vedi [Abilitazione dell’accesso agli URL personalizzati](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Reindirizza URL personalizzato**
 
@@ -131,10 +131,10 @@ Le proprietà sono distribuite su più schede.
 
    Specifica un alias da utilizzare per la pagina.
 
-   * Ad esempio, se definisci un alias di `private` per la pagina `/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina anche tramite `/content/wknd/us/en/magazine/private`
-   * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa e non sul percorso dell’archivio.
-   * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. [Le opzioni di pubblicazione ](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
-   * Per ulteriori dettagli, consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO (Search Engine Optimization) e URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
+   * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
+   * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
+   * Per maggiori dettagli vedi [Nomi di pagina localizzati nelle best practice SEO (Search Engine Optimization) e Gestione URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Ereditato da &lt;*percorso*>**
 
@@ -158,7 +158,7 @@ Le proprietà sono distribuite su più schede.
 
    >[!CAUTION]
    >
-   >La scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete, basate sulla presenza della proprietà `cq:cugEnabled` , verrà visualizzato un messaggio di avviso in **Autenticazione richiesta** e l’opzione non sarà modificabile, né sarà possibile modificare le [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions).
+   >La **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del gruppo `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , in viene visualizzato un messaggio di avviso **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né il [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) sia modificabile.
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -233,14 +233,14 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
    * Visualizzare le [Autorizzazioni effettive](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >La scheda **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
+   >La **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del gruppo `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Per ulteriori informazioni, consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) .
+   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Vedere il documento [Amministrazione di diritti di accesso, gruppi e utenti](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
 
 ### Blueprint {#blueprint}
 
@@ -302,7 +302,7 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Seleziona **Apri proprietà** per aprire una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
+1. Seleziona **Apri proprietà** viene visualizzata una finestra di dialogo che consente di modificare le proprietà, organizzate nella scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
 
    * **Annulla**
    * **Salva e chiudi**

@@ -1,30 +1,29 @@
 ---
 title: API per l’utilizzo dei moduli inviati nel portale moduli
-seo-title: API per l’utilizzo dei moduli inviati nel portale moduli
+seo-title: APIs to work with submitted forms on forms portal
 description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
-seo-description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 7%
+source-wordcount: '541'
+ht-degree: 9%
 
 ---
 
-
-# API per l’utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API per l’utilizzo dei moduli inviati nel portale moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
->Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori dell&#39;invio a un modulo](/help/forms/using/adding-reviewers-form.md).
+>Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori per l’invio a un modulo](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -88,11 +87,11 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facoltativo)</td>
-   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all'ora dell'ultima modifica.</td>
+   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all’ora dell’ultima modifica.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facoltativo)</td>
-   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. Puoi specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
+   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che determina un ordine decrescente. Puoi specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facoltativo)</td>
@@ -230,4 +229,3 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSub
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-

@@ -1,8 +1,8 @@
 ---
-title: Modifica del font nell'interfaccia
-seo-title: Modifica del font nell'interfaccia
-description: Come modificare selettivamente i font nell'interfaccia utente.
-seo-description: Come modificare selettivamente i font nell'interfaccia utente.
+title: Modifica del font nell’interfaccia
+seo-title: Changing the font on the interface
+description: Come modificare selettivamente i font nell’interfaccia utente.
+seo-description: How to change the fonts on the user interface selectively.
 uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
 content-type: reference
@@ -10,31 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '276'
 ht-degree: 1%
 
 ---
 
+# Modifica del font nell’interfaccia{#changing-the-font-on-the-interface}
 
-# Modifica del font nell&#39;interfaccia{#changing-the-font-on-the-interface}
+È possibile modificare il font visualizzato nell’area di lavoro di AEM Forms. I font utilizzati in una sezione specifica dell’interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare selettivamente i font nell’interfaccia utente.
 
-Potete modificare il font visualizzato nell’area di lavoro  AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
+Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, a seconda dei requisiti, segui i passaggi per personalizzare CSS, HTML o entrambi.
 
-Seguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
+1. Modificare o aggiungere la famiglia di font in uno stile esistente.
+1. Modifica o aggiungi il font-family in linea per l’elemento HTML.
+1. Aggiungi uno stile e utilizzalo per l’elemento HTML.
 
-1. Modificate o aggiungete la famiglia di font in uno stile esistente.
-1. Modificate o aggiungete l&#39;agganciamento font-family per l&#39;elemento HTML.
-1. Aggiungete uno stile e utilizzatelo per l&#39;elemento HTML.
+Ad esempio, per modificare il font del testo di ancoraggio della barra di navigazione superiore in Courier New, effettua le seguenti operazioni:
 
-Ad esempio, per modificare il font del testo di ancoraggio della barra di navigazione superiore in Courier New, effettuate le seguenti operazioni:
-
-1. Accedete al CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Accedi a CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Effettua una delle operazioni seguenti:
 
-   1. Per modificare la famiglia di font in uno stile esistente, aggiungete quanto segue nel file newStyle.css in /apps/ws/css.
+   1. Per modificare la famiglia di font in uno stile esistente, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
 
       ```css
       #topnav a {
@@ -42,9 +41,9 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       }
       ```
 
-   1. Per aggiungere la famiglia di font in linea per l&#39;elemento HTML, copiate il file `/libs/ws/js/runtime/templates/appnavigation.html` in `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Per aggiungere il font-family in linea per l’elemento HTML, copia il `/libs/ws/js/runtime/templates/appnavigation.html` file a `/apps/ws/js/runtime/templates/appnavigation.html`.
 
-      Aggiornate il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
+      Aggiorna il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
 
       ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
@@ -53,9 +52,9 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Aprite il file /apps/ws/js/registry.js per la modifica e sostituite `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Apri il file /apps/ws/js/registry.js per la modifica e la sostituzione `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Per aggiungere uno stile che definisca la famiglia di font, aggiungete quanto segue nel file newStyle.css in /apps/ws/css.
+   1. Per aggiungere uno stile che definisca la famiglia di font, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -63,7 +62,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       }
       ```
 
-      Per aggiungere la famiglia di font in linea per l&#39;elemento HTML, aggiungete quanto segue nel file appnavigation.html in /apps/ws/js/runtime/templates.
+      Per aggiungere il font-family in linea per l’elemento HTML, aggiungi quanto segue nel file appnavigation.html in /apps/ws/js/runtime/templates.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">
@@ -76,11 +75,11 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       </div>
       ```
 
-1. Riavviate l’area di lavoro e cancellate la cache del browser affinché le modifiche siano visibili.
+1. Riavvia l’area di lavoro e cancella la cache del browser per rendere visibili le modifiche.
 
 ![change_font_before](assets/change_font_before.png)
 
-Barra di navigazione superiore prima della personalizzazione dei font
+Barra di navigazione superiore prima della personalizzazione del font
 
 ![change_font_after](assets/change_font_after.png)
 

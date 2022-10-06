@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Aggiornamento
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
 
 # Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Come descritto nella pagina padre [Ristrutturazione archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che interessano Dynamic Media. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nell&#39;elemento padre [Ristrutturazione dell’archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) I clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che interessano Dynamic Media. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Prima di un aggiornamento futuro**
 
@@ -66,7 +66,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio in Adobe Experience
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>Il cliente può eseguire uno script di migrazione nella posizione seguente:<br /> </p>
+   <td><p>Il cliente può eseguire uno script di migrazione nel seguente percorso:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Riavvia il bundle OSGi di Dynamic Media.</li>
@@ -116,7 +116,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio in Adobe Experience
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Crea la configurazione YouTube utilizzando la nuova interfaccia Touch (da <code>/conf</code>), anche copiando tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video in YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione TouchUI YouTube, hai più URL YouTube elencati in Proprietà perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità significa che hai degli URL inutili elencati in Proprietà.</p> </td>
+   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Crea la configurazione YouTube utilizzando la nuova interfaccia Touch (da <code>/conf</code>) inclusa la copia di tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video in YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione TouchUI YouTube, hai più URL YouTube elencati in Proprietà perché i canali ricreati vengono pubblicati di nuovo, se ne hai la possibilità. Questa funzionalità significa che hai degli URL inutili elencati in Proprietà.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>

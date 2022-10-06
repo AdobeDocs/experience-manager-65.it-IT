@@ -1,29 +1,28 @@
 ---
 title: Spazi ed entità
-seo-title: Sviluppo  AEM Mobile Content Services
-description: Questa pagina contiene una pagina di destinazione per lo sviluppo  AEM Mobile Content Services.
-seo-description: Questa pagina contiene una pagina di destinazione per lo sviluppo  AEM Mobile Content Services.
+seo-title: Developing AEM Mobile Content Services
+description: Questa pagina fornisce una pagina di destinazione per lo sviluppo di AEM Mobile Content Services.
+seo-description: This page serves a landing page for developing AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 44591900-b01b-4a33-9910-839564477e7d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 2%
+source-wordcount: '1192'
+ht-degree: 3%
 
 ---
-
 
 # Spazi ed entità{#spaces-and-entities}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Uno spazio è una posizione comoda per memorizzare le entità esposte tramite Content Services REST API. Ciò è particolarmente utile perché un&#39;app (o qualsiasi canale) può essere associata a più entità. Forzare le entità all&#39;interno di uno spazio forza la best practice per raggruppare i requisiti di un&#39;app. Facoltativamente, puoi associare un&#39;app in AEM a un numero limitato di spazi.
+Uno spazio è una posizione comoda per memorizzare le entità esposte tramite l’API REST di Content Services. Questa funzione è particolarmente utile perché un’app (o qualsiasi canale) può essere associata a più entità. Forzare le entità all’interno di uno spazio forza la best practice per raggruppare i requisiti di un’app. Facoltativamente, puoi associare un’app in AEM a un numero ridotto di spazi.
 
 >[!NOTE]
 >
@@ -31,25 +30,25 @@ Uno spazio è una posizione comoda per memorizzare le entità esposte tramite Co
 
 ## Creazione di uno spazio {#creating-a-space}
 
-Se l&#39;utente desidera esporre un insieme di contenuti e risorse a un&#39;app mobile, crea lo spazio utilizzando la dashboard AEM Mobile .
+Se l’utente desidera esporre una serie di contenuti e risorse a un’app mobile, crea lo spazio utilizzando il dashboard di AEM Mobile.
 
-Per la prima volta che l&#39;utente non ha configurato i servizi di contenuto per l&#39;utilizzo di spazi, il dashboard di AEM Mobile  visualizza solo le app dopo aver selezionato **Content Services**.
+Per la prima volta che l’utente non ha configurato i servizi di contenuto per lavorare con gli spazi, il dashboard di AEM Mobile visualizza solo le app dopo aver selezionato **Content Services**.
 
 >[!CAUTION]
 >
 >**Prerequisiti per l’aggiunta di uno spazio**
 >
->Controllare **Abilita AEM Content Services** per lavorare con Spaces e attivarlo nel dashboard  applicazione AEM Mobile.
+>Controlla la **Abilita AEM Content Services** per lavorare con Spaces e abilitarlo nel dashboard delle applicazioni AEM Mobile.
 >
->Per ulteriori informazioni, vedere [Amministrazione di Content Services](/help/mobile/developing-content-services.md).
+>Vedi [Amministrazione dei servizi di contenuti](/help/mobile/developing-content-services.md) per ulteriori dettagli.
 
-Una volta configurati gli spazi nel dashboard, effettuate le seguenti operazioni per creare spazi:
+Dopo aver configurato Spaces nel dashboard, segui questi passaggi per creare Spaces:
 
-1. Scegliere **Spazi** da Content Services.
+1. Scegli **Spazi** da Content Services.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Scegliere **Crea** per creare uno spazio. Immettere **Titolo**, **Nome** e **Descrizione** per lo spazio.
+1. Scegli **Crea** per creare uno spazio. Invio **Titolo**, **Nome** e **Descrizione** per lo spazio.
 
    Fai clic su **Crea**.
 
@@ -57,28 +56,28 @@ Una volta configurati gli spazi nel dashboard, effettuate le seguenti operazioni
 
 ## Gestione di uno spazio {#managing-a-space}
 
-Dopo aver creato uno spazio, fate clic su a sinistra per gestire lo spazio nell’elenco.
+Dopo aver creato uno spazio, fai clic su a sinistra per gestire lo spazio nell’elenco.
 
-Potete visualizzare le proprietà dello spazio, eliminare lo spazio o pubblicare lo spazio e il relativo contenuto in un’istanza di pubblicazione AEM.
+Puoi visualizzare le proprietà dello spazio, eliminare lo spazio o pubblicare lo spazio e il relativo contenuto in un’istanza di pubblicazione AEM.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 **Visualizzazione e modifica delle proprietà di uno spazio**
 
-1. Selezionare lo spazio dall&#39;elenco
-1. Scegliere **Proprietà** dalla barra degli strumenti
-1. Fare clic su **Chiudi**
+1. Selezionare lo spazio dall’elenco
+1. Scegli **Proprietà** dalla barra degli strumenti
+1. Fai clic su **Chiudi** al termine
 
-**Pubblicazione di uno** spazio: quando viene pubblicato uno spazio, vengono pubblicate anche tutte le cartelle e le entità in tale spazio.
+**Pubblicazione di uno spazio** Quando viene pubblicato uno spazio, vengono pubblicate anche tutte le cartelle e le entità in tale spazio.
 
-1. Selezionare lo spazio facendo clic sulla relativa icona nell&#39;elenco Console spazio
-1. Scegliere **Pubblica albero**
+1. Selezionare lo spazio facendo clic sulla relativa icona nell’elenco Console spazio
+1. Scegli **Pubblica albero**
 
 >[!NOTE]
 >
->Potete **Annullare la pubblicazione** di uno spazio, rimuovendo così lo spazio dall&#39;istanza di pubblicazione.
+>È possibile **Annulla pubblicazione** uno spazio, che rimuove lo spazio dall&#39;istanza di pubblicazione.
 >
->L’immagine seguente illustra le azioni che è possibile eseguire dopo la pubblicazione dello spazio.
+>L’immagine seguente illustra le azioni che possono essere eseguite dopo la pubblicazione dello spazio.
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
@@ -88,114 +87,114 @@ Gli spazi possono includere cartelle per organizzare ulteriormente il contenuto 
 
 ### Creazione di una cartella {#creating-a-folder}
 
-1. Fare clic sullo spazio nell&#39;elenco nella console dello spazio e fare clic su **Crea cartella**
+1. Fai clic sullo spazio nell’elenco della console spazio e fai clic su **Crea cartella**
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Immettere **Titolo**, **Nome,** e **Descrizione** per la cartella
+1. Inserisci il **Titolo**, **Nome,** e **Descrizione** per la cartella
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Fare clic su **Crea** per creare la cartella in uno spazio
+1. Fai clic su **Crea** per creare la cartella in uno spazio
 
 ## Copia lingua {#language-copy}
 
 >[!CAUTION]
 >
->Copia lingua non è completamente funzionante per questa versione. Imposta solo la struttura.
+>La copia in lingua non funziona completamente per questa versione. Imposta solo la struttura.
 
-La funzione **Copia lingua** consente agli autori di copiare la copia lingua principale e quindi creare un progetto e un flusso di lavoro per tradurre automaticamente il contenuto. Copia lingua crea la struttura corretta. Dopo aver aggiunto una cartella in uno spazio, potete aggiungere una copia della lingua allo spazio.
+La **Copia lingua** consente agli autori di copiare la copia principale della lingua e quindi di creare un progetto e un flusso di lavoro per tradurre automaticamente il contenuto. La copia in lingua crea la struttura corretta. Una volta aggiunta una cartella in uno spazio, è possibile aggiungere una copia per lingua allo spazio disponibile.
 
 >[!NOTE]
 >
->È consigliabile che tutti i contenuti che possono essere convertiti, siano inseriti nel nodo Copia lingua.
+>È consigliabile inserire qualsiasi contenuto che possa essere tradotto nel nodo Copia lingua.
 
-### Aggiunta di una copia della lingua {#adding-language-copy}
+### Aggiunta di una copia in lingua {#adding-language-copy}
 
-1. Una volta creato lo spazio, fate clic su tale spazio per creare una copia per la lingua.
+1. Una volta creato lo spazio, fai clic su tale spazio per creare una copia per lingua.
 
-   Fare clic su **Crea** e scegliere **Copia lingua**.
+   Fai clic su **Crea** e scegli **Copia lingua**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
    >[!NOTE]
    >
-   >I nodi Copia lingua possono esistere solo come figlio diretto dello Spazio.
+   >I nodi Copia lingua possono esistere solo come elementi secondari diretti di Space.
 
-1. Scegliete **Lingua&amp;amp pacchetto contenuto;ast;** e immettete il **Titolo&amp;ast;** nella finestra di dialogo **Crea copia lingua**.
+1. Scegli **Lingua&amp;ast pacchetto contenuti;** e inserisci **Titolo&amp;ast;** in **Crea copia in lingua** finestra di dialogo.
 
    Fai clic su **Crea**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Dopo aver creato una copia della lingua, questa viene visualizzata nello spazio in **Language Master**.
+1. Una volta creata una copia in lingua, questa viene visualizzata nello spazio in **Master per lingua**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Selezionare **Language Master** per visualizzare le cartelle di copia lingua.
+   >Seleziona **Master per lingua** per visualizzare le cartelle di copia della lingua.
 
 ### Rimozione di una cartella dallo spazio {#removing-a-folder-from-the-space}
 
-1. Selezionate la cartella dall’elenco dei contenuti spaziali
-1. Fare clic su **Elimina** dalla barra degli strumenti
+1. Selezionare la cartella dall’elenco dei contenuti spaziali
+1. Fai clic su **Elimina** dalla barra degli strumenti
 
    >[!NOTE]
    >
-   >Per navigare in una cartella e visualizzarne il contenuto o aggiungere una sottocartella o un&#39;entità, fate clic sul titolo della cartella nell&#39;elenco del contenuto dello spazio.
+   >Per spostarsi in una cartella e visualizzarne il contenuto o aggiungere una sottocartella o un’entità, fare clic sul titolo della cartella nell’elenco dei contenuti dello spazio.
 
 ## Utilizzo delle entità in uno spazio {#working-with-entities-in-a-space}
 
-Le entità rappresentano il contenuto esposto tramite l&#39;endpoint del servizio Web. Le entità sono memorizzate in spazi in modo che possano essere facilmente reperite e sono tenute indipendenti dalla struttura del repository AEM che contiene il relativo contenuto.
+Le entità rappresentano il contenuto esposto tramite l’endpoint del servizio Web. Le entità vengono memorizzate in spazi in modo che possano essere facilmente trovate e mantenute indipendenti dalla struttura dell’archivio AEM che contiene il relativo contenuto.
 
-È possibile raggruppare le entità in una raccolta logica. A questo scopo, potete creare un numero qualsiasi di cartelle.
+È possibile raggruppare le entità in una raccolta logica. A questo scopo, puoi creare un numero qualsiasi di cartelle.
 
-Se gli elementi figlio dell&#39;entità, che sono altre entità, vengono raccolti per la modellazione dei dati, l&#39;utente sviluppatore può creare specifici &quot;Modelli di gruppo&quot; dal tipo di modello &quot;Gruppo entità&quot; fornito out-of-the-box.
+Se gli elementi figlio dell’entità, che sono altre entità, sono raccolti per la modellazione dei dati, l’utente sviluppatore può creare specifici &quot;Modelli di gruppo&quot; dal tipo di modello &quot;Gruppo di entità&quot;, fornito pronto all’uso.
 
 >[!NOTE]
 >
->Le entità sono sempre associate a uno spazio, per cui la maggior parte dell&#39;interfaccia utente dell&#39;entità è accessibile tramite la console dello spazio.
+>Le entità sono sempre associate a uno spazio, pertanto la maggior parte dell’interfaccia utente dell’entità è accessibile tramite la console dello spazio.
 
 ### Creazione di un&#39;entità {#creating-an-entity}
 
-1. Aprite la console Spazio e fate clic sul titolo dello spazio.
+1. Apri la console Spazio e fai clic sul titolo dello spazio.
 
-   Facoltativamente, potete passare alla cartella facendo clic sul titolo della cartella nell’elenco.
+   Facoltativamente, puoi passare alla cartella facendo clic sul titolo della cartella nell’elenco.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Scegliete il modello per l&#39;entità. Questo è il tipo di entità che si desidera creare. Fai clic su Avanti.
+1. Scegli il modello per l’entità. Questo è il tipo di entità che desideri creare. Fai clic su Avanti.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
    >[!NOTE]
    >
-   >È possibile scegliere il **Modello risorse**, **Modello pagine** o un modello di entità creato in precedenza.
+   >Hai la possibilità di scegliere la **Modello Assets**, **Modello Pagine** o un modello di tipo di entità creato in precedenza.
    >
-   >Per creare un&#39;entità personalizzata, vedere [Creazione di un modello](/help/mobile/administer-mobile-apps.md).
+   >Vedi [Creazione di un modello](/help/mobile/administer-mobile-apps.md), per creare l’entità personalizzata.
 
-1. Immettere un **Titolo**, **Nome**, **Descrizione** e **Tag** per l&#39;entità. Fai clic su **Crea**.
+1. Inserisci un **Titolo**, **Nome**, **Descrizione** e **Tag** per l’entità. Fai clic su **Crea**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Al termine, l&#39;entità viene visualizzata nei discendenti dello spazio.
+   Al termine, l’entità viene visualizzata nei discendenti dello spazio.
 
 ### Modifica di un&#39;entità {#editing-an-entity}
 
-1. Dopo aver creato un&#39;entità, accedete alla cartella o allo spazio e scegliete l&#39;entità dalla console Spazio da modificare.
+1. Dopo aver creato un’entità, accedi alla cartella o allo spazio e scegli l’entità dalla console Spazio da modificare.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Selezionate un&#39;entità da modificare e fate clic su **Modifica**.
+1. Seleziona un’entità da modificare e fai clic su **Modifica**.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
    >[!CAUTION]
    >
-   >A seconda del modello scelto per creare l&#39;entità, l&#39;interfaccia utente sarà diversa per entrambi, per la modifica e la visualizzazione delle proprietà dell&#39;entità. Per ulteriori informazioni, consulta i passaggi riportati di seguito.
+   >A seconda del modello che scegli di creare l’entità, l’interfaccia utente sarà diversa per entrambi, per la modifica e la visualizzazione delle proprietà dell’entità. Per ulteriori informazioni, consulta i passaggi seguenti.
 
-   ***Se scegliete il modello per la creazione dell&#39;entità come modelli*** di risorse, facendo clic su  **** Modifica potete aggiungere risorse come illustrato nella figura seguente:
+   ***Se scegli il modello per la creazione dell’entità come modelli di risorse***, facendo clic su **Modifica** consente di aggiungere risorse come illustrato nella figura seguente:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -203,48 +202,48 @@ Se gli elementi figlio dell&#39;entità, che sono altre entità, vengono raccolt
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Se scegliete il modello per la creazione dell&#39;entità come Modelli*** di pagine, facendo clic su  **** Modifica potete aggiungere risorse come illustrato nella figura seguente:
+   ***Se scegli il modello per la creazione dell’entità come modelli di pagine***, facendo clic su **Modifica** consente di aggiungere risorse come illustrato nella figura seguente:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Fate clic sull&#39;icona in **Path** per aggiungere una risorsa
+   Fai clic sull’icona nella **Percorso** per aggiungere una risorsa
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Una volta aggiunta un&#39;entità, questa deve essere salvata per consentire il funzionamento del collegamento Anteprima. Per visualizzare l&#39;anteprima, fare clic su **Salva**. Facendo clic su **Preview** viene visualizzato il json della risorsa aggiunta, come illustrato nella figura seguente:
+   >Una volta aggiunta un’entità, questa deve essere salvata per il funzionamento del collegamento Anteprima . Per visualizzare l&#39;anteprima, fai clic su **Salva**. Fai clic sul pulsante **Anteprima** mostra il json della risorsa aggiunta, come illustrato nella figura seguente:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Dopo aver aggiunto le risorse all&#39;entità, potete scegliere **Salva** per salvare le modifiche oppure scegliere **Salva e chiudi** per salvare e reindirizzare l&#39;elenco della console Spazio in cui sono definite le entità.
+   >Al termine dell’aggiunta di risorse all’entità, potete scegliere **Salva** per salvare le modifiche o scegliere **Salva e chiudi** per salvare e reindirizzare all’elenco della console Spazio in cui sono definite le entità.
 
-   Inoltre, selezionate un&#39;entità dall&#39;elenco della console spaziale e fate clic su **Proprietà** per visualizzare e modificare le proprietà di un&#39;entità definita.
+   Inoltre, seleziona un’entità dall’elenco della console spaziale e fai clic su **Proprietà** per visualizzare e modificare le proprietà di un’entità definita.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-   Potete modificare il titolo, la descrizione, i tag e aggiungere le risorse all&#39;entità.
+   Puoi modificare il titolo, la descrizione, i tag e aggiungere le risorse all’entità.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 ### Rimozione di un&#39;entità {#removing-an-entity}
 
-1. Selezionare l&#39;entità dall&#39;elenco dei contenuti dello spazio
+1. Seleziona l’entità dall’elenco dei contenuti nello spazio
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Fare clic su **Elimina** nella barra degli strumenti per rimuovere l&#39;entità specifica dallo spazio
+1. Fai clic su **Elimina** dalla barra degli strumenti per rimuovere l’entità specifica dallo spazio
 
 ### Pubblicazione di un&#39;entità {#publishing-an-entity}
 
-È possibile scegliere **Pubblica albero** o **Pubblicazione rapida** per pubblicare l&#39;entità.
+Hai la possibilità di scegliere **Pubblica albero** o **Pubblicazione rapida** per pubblicare l’entità.
 
-1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Pubblica albero **per pubblicare tale entità e i relativi elementi secondari.
+1. Seleziona un’entità dall’elenco della console spazio e fai clic su **Pubblica albero **per pubblicare tale entità e i relativi elementi secondari.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **Oppure**,
 
-   Fate clic su **Pubblicazione rapida** per pubblicare tale entità specifica.
+   Fai clic su **Pubblicazione rapida** per pubblicare tale entità specifica.

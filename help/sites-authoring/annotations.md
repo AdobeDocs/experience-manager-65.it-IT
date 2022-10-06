@@ -1,22 +1,21 @@
 ---
-title: 'Annotazioni durante la modifica di una pagina:'
-seo-title: Annotazioni durante la modifica di una pagina
+title: Annotazioni durante la modifica di una pagina
+seo-title: Annotations when Editing a Page
 description: Molti componenti direttamente correlati ai contenuti consentono di aggiungere un’annotazione
-seo-description: Molti componenti direttamente correlati ai contenuti consentono di aggiungere un’annotazione
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 96%
 
 ---
-
 
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
@@ -52,11 +51,9 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 >
 >È possibile annotare una varietà di risorse:
 >
->* [Annotazione delle risorse](/help/assets/manage-assets.md#annotating)
->* [Annotazione delle risorse video](/help/assets/managing-video-assets.md#annotate-video-assets)
-
+>* [Aggiunta di annotazioni alle risorse](/help/assets/manage-assets.md#annotating)
+>* [Aggiunta di annotazioni alle risorse video](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
-
 
 
 ### Aggiunta di annotazioni a un componente {#annotating-a-component}
@@ -88,7 +85,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
    * Inserisci il testo dell’annotazione.
    * Crea uno schizzo (linee e forme) per evidenziare un’area del componente.
 
-      Quando create uno sketch, il cursore diventa un mirino. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
+      Il cursore assume la forma di un mirino quando si crea uno schizzo. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Scegli o modifica il colore:
@@ -126,4 +123,3 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

@@ -1,8 +1,8 @@
 ---
 title: Creazione guidata copia lingua
-seo-title: Creazione guidata copia lingua
+seo-title: Language Copy Wizard
 description: Informazioni sull'utilizzo della Creazione guidata copia in lingua in AEM.
-seo-description: Informazioni sull'utilizzo della Creazione guidata copia in lingua in AEM.
+seo-description: Learn about using the Language Copy Wizard in AEM.
 uuid: a6168f5d-cce7-48bd-a898-171319621460
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 3%
+source-wordcount: '214'
+ht-degree: 37%
 
 ---
-
 
 # Creazione guidata copia lingua{#language-copy-wizard}
 
@@ -38,11 +37,11 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. Il passaggio **Seleziona origine** della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
+1. La **Seleziona origine** il passaggio della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Il pulsante **Avanti** ti porta al passaggio **Configura** della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
+1. La **Successivo** il pulsante ti porta al **Configura** passaggio della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -50,7 +49,7 @@ Per accedere a questa procedura guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. Il pulsante **Avanti** ti porta al passaggio **Traduci** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
+1. La **Successivo** il pulsante ti porta al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
 
    >[!NOTE]
    >
@@ -58,7 +57,6 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Il pulsante **Crea** termina la procedura guidata.
+1. Il pulsante **Crea** termina la creazione guidata.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
-

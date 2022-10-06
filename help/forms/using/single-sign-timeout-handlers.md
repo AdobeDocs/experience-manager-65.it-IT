@@ -1,43 +1,42 @@
 ---
-title: Gestori Single Sign On e timeout
-seo-title: Gestori Single Sign On e timeout
-description: Procedura per impostare il valore di timeout sessione per 'area di lavoro AEM Forms.
-seo-description: Procedura per impostare il valore di timeout sessione per 'area di lavoro AEM Forms.
+title: Gestori di accesso singolo e timeout
+seo-title: Single Sign On and timeout handlers
+description: Come impostare il valore di timeout della sessione per l’area di lavoro AEM Forms.
+seo-description: How-to set the session timeout value for AEM Forms workspace.
 uuid: 17583fd5-6453-41d3-bb63-a639983fbea9
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
+# Gestori di accesso singolo e timeout {#single-sign-on-and-timeout-handlers}
 
-# Gestori Single Sign On e timeout {#single-sign-on-and-timeout-handlers}
+L&#39;area di lavoro di AEM Forms è abilitata per SSO. Se un utente ha effettuato l’accesso a un’applicazione AEM Forms come l’interfaccia utente di Forms Manager o PDF Generator e accede all’area di lavoro di AEM Forms nella stessa sessione del browser, l’utente ha effettuato l’accesso all’area di lavoro di AEM Forms e viceversa.
 
-&#39;area di lavoro AEM Forms è abilitata l&#39;autenticazione a SSO. Se un utente ha eseguito l&#39;accesso a un&#39;applicazione AEM Forms  come l&#39;interfaccia utente di Forms Manager o PDF Generator e accede &#39;area di lavoro AEM Forms nella stessa sessione del browser, l&#39;utente ha eseguito l&#39;accesso &#39;area di lavoro di AEM Forms e viceversa.
+## Gestione del timeout del server nell’area di lavoro di AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
-## Gestione del timeout del server nell&#39;area di lavoro  AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
+Il timeout della sessione per un utente può essere configurato nella console di amministrazione.
 
-Il timeout sessione per un utente può essere configurato nella console di amministrazione.
+Per impostare il timeout, accedi a `https://'[server]:[port]'/adminui`, passa a **Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati** e imposta le impostazioni desiderate.
 
-Per impostare il timeout, accedere a `https://'[server]:[port]'/adminui`, andare a **Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati** e configurare le impostazioni desiderate.
+In AEM Forms il timeout dell’area di lavoro viene gestito come segue:
 
-In  il timeout dell&#39;area di lavoro AEM Forms viene gestito come:
-
-* La durata della sessione per un utente è disponibile in risposta alla chiamata `initialize` che inizializza la sessione utente.
+* La durata della sessione per un utente è disponibile in risposta a `initialize` chiamata che inizializza la sessione utente.
 * Una finestra di dialogo a comparsa notifica all’utente che la sessione sta per scadere, 15 secondi prima della scadenza della sessione.
 
 In questa finestra di dialogo a comparsa:
 
-* Fate clic su OK per terminare la sessione utente.
-* Fate clic su Annulla per inizializzare nuovamente la sessione utente.
+* Fare clic su OK per terminare la sessione utente.
+* Fare clic su Annulla per reinizializzare la sessione utente.
 
 >[!NOTE]
 >
->Se non viene eseguita alcuna azione, l&#39;utente viene automaticamente disconnesso &#39;area di lavoro di AEM Forms tre secondi prima della scadenza della sessione.
+>Se non viene eseguita alcuna azione, l’utente viene disconnesso automaticamente dall’area di lavoro di AEM Forms tre secondi prima della scadenza della sessione.

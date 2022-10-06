@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di Marketing Campaign Manager
-seo-title: Utilizzo di Marketing Campaign Manager
+seo-title: Working with the Marketing Campaign Manager
 description: Marketing Campaign Manager (MCM) è una console per la gestione di campagne per diversi canali Questo software di automazione marketing consente di gestire tutti i marchi, le campagne e le esperienze con i relativi segmenti, elenchi, lead e rapporti.
-seo-description: Marketing Campaign Manager (MCM) è una console per la gestione di campagne per diversi canali Questo software di automazione marketing consente di gestire tutti i marchi, le campagne e le esperienze con i relativi segmenti, elenchi, lead e rapporti.
+seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1175'
 ht-degree: 94%
 
 ---
-
 
 # Utilizzo di Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -67,7 +66,7 @@ Il dashboard presenta quattro riquadri che offrono una panoramica sugli elenchi 
 >[!NOTE]
 >
 >Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione dei lead).
->Si consiglia di utilizzare [ Adobe Campaign e l&#39;integrazione per AEM](/help/sites-administering/campaign.md).
+>Consigli di sfruttare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, puoi organizzare e aggiungere i lead immettendoli manualmente o importando un elenco di voci separate da virgole, ad esempio una mailing list. I lead possono inoltre essere generati dalle registrazioni a newsletter o community (se configurate, queste possono avviare un flusso di lavoro per la compilazione dei lead). In genere i lead sono organizzati per categorie e inseriti in un elenco in modo da consentire successive operazioni quali l’invio di messaggi e-mail personalizzati per un particolare gruppo.
 
@@ -84,7 +83,7 @@ Nella sezione **Lead** nel riquadro a sinistra potete creare, importare, modific
 >[!NOTE]
 >
 >Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione degli elenchi).
->Si consiglia di utilizzare [ Adobe Campaign e l&#39;integrazione per AEM](/help/sites-administering/campaign.md).
+>Consigli di sfruttare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
 
 Gli elenchi consentono di organizzare i lead in gruppi. Tramite gli elenchi puoi indirizzare una campagna marketing a un determinato gruppo di utenti, ad esempio per l’invio di una newsletter mirata.
 
@@ -133,7 +132,7 @@ In questa sezione è possibile effettuare le seguenti attività:
 
 * Aprire la panoramica della campagna (doppio clic su una campagna nel riquadro a destra o clic nel riquadro a sinistra)
 
-#### Panoramica della campagna  {#campaign-overview}
+#### Panoramica della campagna {#campaign-overview}
 
 Per le singole campagne sono disponibili due viste:
 
@@ -145,7 +144,7 @@ Per le singole campagne sono disponibili due viste:
 
    Viene presentato un elenco di tutti i punti di contatto (grigio) con un ambito temporale orizzontale delle esperienze (verde) collegate ai vari punti di contatto:
 
-   ![mcm_banner_Calendarview](assets/mcm_banner_calendarview.png)
+   ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
 
    In questa sezione è possibile effettuare le seguenti attività:
 
@@ -167,7 +166,7 @@ Per le singole campagne sono disponibili due viste:
 
    In questa sezione è possibile effettuare le seguenti attività:
 
-   * Crea un **Nuovo...** esperienza; ad esempio,  offerte Adobe Target, teaser e newsletter.
+   * Crea un **Nuovo...** esperienza; ad esempio, offerte Adobe Target, teaser e newsletter.
    * Seleziona **Modifica** o fai doppio clic per modificare i dettagli di una pagina teaser o newsletter.
    * Seleziona **Proprietà** per definire le proprietà di una pagina teaser o newsletter.
    * Seleziona **Simula** per simulare l’aspetto di un’esperienza (pagina teaser o newsletter).
@@ -179,7 +178,7 @@ Una volta aperta la pagina simulata è possibile aprire la barra laterale per pa
    * Seleziona **Ricerca** per cercare del testo (la ricerca viene effettuata nel campo Titolo delle esperienze).
    * Usa la ricerca **Avanzata** per applicare filtri alla ricerca.
 
-### Simulazione delle esperienze della campagna  {#simulating-your-campaign-experiences}
+### Simulazione delle esperienze della campagna {#simulating-your-campaign-experiences}
 
 In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quindi seleziona l’esperienza di campagna desiderata e fai clic su **Simula**. Verrà aperto il punto di contatto (pagina teaser o newsletter) per mostrare l’esperienza selezionata, così come si presenterà al visitatore.
 
@@ -187,8 +186,8 @@ In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quin
 
 Puoi inoltre aprire la barra laterale (clic sulla piccola freccia rivolta verso il basso) per passare alla modalità di modifica e aggiornare la pagina.
 
-### Analisi delle esperienze della campagna  {#analyzing-your-campaign-experiences}
+### Analisi delle esperienze della campagna {#analyzing-your-campaign-experiences}
 
 In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quindi seleziona l’esperienza di campagna desiderata e seleziona **Analizza**. Viene visualizzato un grafico delle impression registrate per la pagina nel tempo.
 
-![mcm_campaign_analysis](assets/mcm_campaignanalyze.png)
+![mcm_campaign_analyze](assets/mcm_campaignanalyze.png)

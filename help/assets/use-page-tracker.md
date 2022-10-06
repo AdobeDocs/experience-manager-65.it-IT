@@ -3,18 +3,18 @@ title: Usa tracciamento pagina e codice di incorporamento nelle pagine web
 description: Scopri come includere il tracciamento pagina e i codici JavaScript da incorporare nel codice del sito web per consentire ad Adobe Analytics di acquisire i dati di utilizzo relativi alle risorse.
 contentOwner: AG
 role: Architect, Admin
-feature: Rapporti su risorse
+feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '176'
+ht-degree: 0%
 
 ---
 
 # Utilizzare il tracciamento pagina e il codice di incorporamento nelle pagine web {#using-page-tracker-and-embed-code-in-web-pages}
 
-Page Tracker è un pezzo di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire i dati di utilizzo intorno a [!DNL Adobe Experience Manager Assets] su questi siti web.
+Page Tracker è un pezzo di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire dati di utilizzo intorno a [!DNL Adobe Experience Manager Assets] su questi siti web.
 
 Per acquisire eventi, come clic e così via, specifici per le risorse, includi anche il codice di incorporamento nel codice dei siti web di terze parti.
 

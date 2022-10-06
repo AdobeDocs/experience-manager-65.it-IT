@@ -3,55 +3,55 @@ title: Estendere la funzionalità di ricerca
 description: Estendi le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets] oltre i valori predefiniti.
 contentOwner: AG
 role: Developer
-feature: Ricerca
+feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '838'
 ht-degree: 19%
 
 ---
 
 # Estendere la ricerca delle risorse {#extending-assets-search}
 
-Puoi estendere le funzionalità di ricerca [!DNL Adobe Experience Manager Assets]. Con [!DNL Experience Manager Assets] è possibile cercare le risorse in base alle stringhe.
+Puoi estendere [!DNL Adobe Experience Manager Assets] funzionalità di ricerca. Fuori dalla scatola, [!DNL Experience Manager Assets] cerca le risorse in base alle stringhe.
 
 La ricerca viene eseguita tramite l’interfaccia QueryBuilder per personalizzare la ricerca con diversi predicati. Puoi sovrapporre il set predefinito di predicati nella seguente directory: `/apps/dam/content/search/searchpanel/facets`.
 
-Puoi anche aggiungere altre schede al pannello di amministrazione [!DNL Assets] .
+Puoi anche aggiungere altre schede al [!DNL Assets] pannello di amministrazione.
 
 >[!CAUTION]
 >
->A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consulta [funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
+>A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per l&#39;annuncio, vedi [funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
-Per sovrapporre i predicati preconfigurati, copia il nodo `facets` da `/libs/dam/content/search/searchpanel` a `/apps/dam/content/search/searchpanel/` o specifica un&#39;altra proprietà `facetURL` nella configurazione `searchpanel` (l&#39;impostazione predefinita è `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Per sovrapporre i predicati preconfigurati, copia il `facets` nodo da `/libs/dam/content/search/searchpanel` a `/apps/dam/content/search/searchpanel/` o specificare un altro `facetURL` nella `searchpanel` configurazione (l&#39;impostazione predefinita è `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Per impostazione predefinita, la struttura della directory sotto `/apps` non esiste e quindi crearla. Assicurati che i tipi di nodo corrispondano a quelli sotto `/libs`.
+>Per impostazione predefinita, la struttura della directory in `/apps` non esiste e crealo. Assicurati che i tipi di nodo corrispondano a quelli descritti in `/libs`.
 
 ## Aggiungi schede {#adding-tabs}
 
-Puoi aggiungere ulteriori schede di ricerca configurandole nell’ interfaccia di amministrazione [!DNL Assets] . Per creare schede aggiuntive:
+È possibile aggiungere ulteriori schede di ricerca configurandole nel [!DNL Assets] interfaccia di amministrazione. Per creare schede aggiuntive:
 
-1. Crea la struttura delle cartelle `/apps/wcm/core/content/damadmin/tabs,`se non esiste già, copia il nodo `tabs` da `/libs/wcm/core/content/damadmin` e incollalo.
+1. Creare la struttura della cartella `/apps/wcm/core/content/damadmin/tabs,`se non esiste già e copia il `tabs` nodo da `/libs/wcm/core/content/damadmin` e incollalo.
 1. Crea e configura la seconda scheda, come desiderato.
 
    >[!NOTE]
    >
-   >Quando si crea un secondo `siteadminsearchpanel`, assicurarsi di impostare una proprietà `id` per evitare conflitti tra moduli.
+   >Quando crei un secondo `siteadminsearchpanel`, assicurati di impostare un `id` al fine di evitare conflitti di modulo.
 
 ## Creare predicati personalizzati {#creating-custom-predicates}
 
-[!DNL Assets] viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione risorse in questo modo è descritta in [creare e configurare una pagina Condivisione risorse](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una Condivisione risorse in questo modo è descritta in [creare e configurare una pagina Condivisione risorse](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Oltre a utilizzare predicati preesistenti, gli sviluppatori [!DNL Experience Manager] possono anche creare i propri predicati utilizzando l’ [API Query Builder](/help/sites-developing/querybuilder-api.md).
+Oltre a utilizzare predicati preesistenti, [!DNL Experience Manager] gli sviluppatori possono anche creare predicati personalizzati utilizzando [API di Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La creazione di predicati personalizzati richiede conoscenze di base sul [framework dei widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+La creazione di predicati personalizzati richiede conoscenze di base [Framework dei widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 La best practice prevede di copiare e regolare un predicato esistente. I predicati di esempio si trovano in **/libs/cq/search/components/predicates**.
 
@@ -59,7 +59,7 @@ La best practice prevede di copiare e regolare un predicato esistente. I predica
 
 Per creare un predicato di proprietà:
 
-1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/weretail/components/titlepredicate**.
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio **/apps/weretail/components/titlepredicato**.
 1. Aggiungi **content.xml**:
 
    ```xml
@@ -140,9 +140,9 @@ Per creare un predicato di proprietà:
    ```
 
 1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
-1. Passa al browser e nella pagina di esempio (ad esempio, **press.html**) passa alla modalità di progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
+1. Passa al browser e alla pagina di esempio (ad esempio, **press.html**) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **sinistra**).
 
-1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserisci il componente nella colonna **Predicati** e digita una parola di ricerca, ad esempio **Diamond**, quindi fai clic sulla lente di ingrandimento per avviare la ricerca.
+1. In **Modifica** il nuovo componente è ora disponibile nella barra laterale (nella sezione **Ricerca** gruppo). Inserisci il componente nel **Predicati** e digitare una parola di ricerca, ad esempio, **Rombo** e fare clic sulla lente di ingrandimento per avviare la ricerca.
 
    >[!NOTE]
    >
@@ -244,8 +244,8 @@ Per creare un predicato di gruppo:
    ```
 
 1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
-1. Passa al browser e nella pagina di esempio (ad esempio, **press.html**) passa alla modalità di progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
-1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserisci il componente nella colonna **Predicati** .
+1. Passa al browser e alla pagina di esempio (ad esempio, **press.html**) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo predicato (ad esempio, **sinistra**).
+1. In **Modifica** il nuovo componente è ora disponibile nella barra laterale (nella sezione **Ricerca** gruppo). Inserisci il componente nel **Predicati** colonna.
 
 ## Widget Predicate installati {#installed-predicate-widgets}
 
@@ -297,6 +297,6 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 
 ## Personalizzare i risultati della ricerca {#customizing-search-results}
 
-La presentazione dei risultati di ricerca in una pagina Condivisione risorse è gestita dall’obiettivo selezionato. [!DNL Experience Manager Assets] viene fornito con un set di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è descritta in [Creazione e configurazione di una pagina di condivisione di risorse](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La presentazione dei risultati di ricerca in una pagina Condivisione risorse è gestita dall’obiettivo selezionato. [!DNL Experience Manager Assets] viene fornito con un set di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una Condivisione risorse in questo modo è descritta in [Creazione e configurazione di una pagina Condivisione risorse](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Oltre a utilizzare ottiche preesistenti, gli sviluppatori [!DNL Experience Manager] possono anche creare ottiche personalizzate.
+Oltre a utilizzare ottiche preesistenti, [!DNL Experience Manager] gli sviluppatori possono anche creare le proprie lenti.

@@ -1,31 +1,30 @@
 ---
-title: Funzioni dell'area di lavoro Flex non disponibili 'area di lavoro AEM Forms
-seo-title: Funzioni dell'area di lavoro Flex non disponibili 'area di lavoro AEM Forms
-description: '''area di lavoro AEM Forms si innova oltre l''area di lavoro basata su Flex. Ulteriori informazioni sulle differenze nelle caratteristiche e nelle funzionalità.'
-seo-description: '''area di lavoro AEM Forms si innova oltre l''area di lavoro basata su Flex. Ulteriori informazioni sulle differenze nelle caratteristiche e nelle funzionalità.'
+title: Funzionalità dell’area di lavoro di Flex non disponibili nell’area di lavoro di AEM Forms
+seo-title: Features of Flex workspace not available in AEM Forms workspace
+description: L’area di lavoro AEM Forms innova oltre Flex-based Workspace. Scopri le differenze nelle funzioni e nelle funzionalità.
+seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about the differences in features and capabilities.
 uuid: 128729b3-2367-42e8-8159-a080595e8455
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: a9d2fd77-e8cf-45bf-8492-f1bb8d580548
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
+# Funzionalità dell’area di lavoro di Flex non disponibili nell’area di lavoro di AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
-# Funzionalità dell&#39;area di lavoro Flex non disponibili &#39;area di lavoro AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+L’area di lavoro AEM Forms è la nuova area di lavoro. Di seguito sono elencate alcune funzioni dell’area di lavoro basata su Flex che non sono disponibili nell’area di lavoro di AEM Forms.
 
-&#39;area di lavoro AEM Forms è la nuova area di lavoro. Di seguito sono elencate alcune delle funzioni dell’area di lavoro basata su Flex che non sono disponibili ’area di lavoro di AEM Forms.
-
-* Pagina di benvenuto non disponibile. È possibile impostare le pagine Avvia processo, A-fare, Tracciamento e Preferiti come prima pagina da visualizzare al momento dell&#39;accesso all&#39;area di lavoro.
-* I messaggi e le notifiche per gli eventi di sistema non vengono visualizzati &#39;area di lavoro di AEM Forms. Tutte le impostazioni corrispondenti ai messaggi (come &#39;Ora di visualizzazione notifica dei messaggi&#39;) non sono applicabili &#39;area di lavoro di AEM Forms.
-* La vista è stata riorganizzata e ora non esiste alcuna distinzione tra vista a schede e vista a elenco, per i punti iniziali e le attività.
-* Poiché non esiste distinzione tra la vista a schede e quella a elenco &#39;area di lavoro di AEM Forms, l&#39;impostazione Gestisci intestazioni colonna in A-do, Cronologia e Preferenze non è disponibile.
-* L&#39;opzione per gestire le intestazioni di colonna per la pagina Tracciamento non è disponibile &#39;area di lavoro di AEM Forms.
-* L&#39;impostazione di un contenitore di approvazione o di un contenitore personalizzato per un&#39;attività utente non viene rispettata &#39;area di lavoro di AEM Forms.
-* Un&#39;opzione per cercare i modelli è disponibile nella scheda Tracciamento ma non nella scheda Attività.
+* Pagina di benvenuto non disponibile. È possibile impostare le pagine Start Process, To-do, Tracking e Preferiti come prima pagina da visualizzare all&#39;accesso all&#39;area di lavoro.
+* I messaggi e le notifiche per gli eventi di sistema non vengono visualizzati nell’area di lavoro di AEM Forms. Anche tutte le impostazioni corrispondenti ai messaggi (come &quot;Data di visualizzazione notifica dei messaggi&quot;) non sono applicabili per l’area di lavoro di AEM Forms.
+* La visualizzazione è stata riorganizzata e ora non vi è alcuna distinzione tra vista a schede e vista a elenco, per i punti iniziali e le attività.
+* Poiché nell’area di lavoro di AEM Forms non vi è distinzione tra vista a schede e vista a elenco, l’impostazione Gestione intestazioni a colonne in A-do, Cronologia e Preferenze non è disponibile.
+* L’opzione per gestire le intestazioni di colonna per la pagina Tracciamento non è disponibile nell’area di lavoro di AEM Forms.
+* L&#39;impostazione di un contenitore di approvazione o di un contenitore personalizzato per un&#39;attività utente non viene rispettata nell&#39;area di lavoro di AEM Forms.
+* Un’opzione per cercare i modelli è disponibile nella scheda Tracking ma non nella scheda ToDo .

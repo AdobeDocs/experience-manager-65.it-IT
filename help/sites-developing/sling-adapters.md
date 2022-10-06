@@ -19,7 +19,7 @@ ht-degree: 13%
 
 # Utilizzo di adattatori Sling{#using-sling-adapters}
 
-[](https://sling.apache.org) Slingofa un  [adattatore ](https://sling.apache.org/site/adapters.html) per tradurre in modo conveniente gli oggetti che implementano l&#39;interfaccia  [](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) Adaptable. Questa interfaccia fornisce un metodo generico [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) che tradurrà l&#39;oggetto nel tipo di classe passato come argomento.
+[Sling](https://sling.apache.org) offre [Pattern di adattatore](https://sling.apache.org/site/adapters.html) per tradurre gli oggetti che implementano [Adattabile](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interfaccia. Questa interfaccia fornisce un generico [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) metodo che tradurrà l&#39;oggetto nel tipo di classe passato come argomento.
 
 Ad esempio, per tradurre un oggetto Resource all&#39;oggetto Node corrispondente, è sufficiente eseguire le operazioni seguenti:
 
@@ -33,11 +33,11 @@ Esistono i seguenti casi d’uso:
 
 * Ottenere oggetti specifici per l’implementazione.
 
-   Ad esempio, un&#39;implementazione basata su JCR dell&#39;interfaccia generica [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) fornisce l&#39;accesso al JCR sottostante [`Node`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
+   Ad esempio, un’implementazione basata su JCR del generico [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) L&#39;interfaccia fornisce l&#39;accesso al JCR sottostante [`Node`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Creazione rapida di oggetti che richiedono il passaggio di oggetti contestuali interni.
 
-   Ad esempio, il modello basato su JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) contiene un riferimento al [`JCR Session`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) della richiesta, che a sua volta è necessario per molti oggetti che funzioneranno in base alla sessione di richiesta, come il [`PageManager`](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) o [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html).
+   Ad esempio, il modello basato su JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) contiene un riferimento al [`JCR Session`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html), che a sua volta è necessario per molti oggetti che funzioneranno in base a tale sessione di richiesta, come [`PageManager`](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) o [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html).
 
 * Collegamento ai servizi.
 
@@ -58,32 +58,32 @@ Ci sono varie ragioni per questo, tra cui:
 
 ### Memorizzazione in cache {#caching}
 
-Per migliorare le prestazioni, le implementazioni sono libere di memorizzare nella cache l&#39;oggetto restituito da una chiamata `obj.adaptTo()` . Se il valore `obj` è lo stesso, l&#39;oggetto restituito è lo stesso.
+Per migliorare le prestazioni, le implementazioni sono libere di memorizzare nella cache l&#39;oggetto restituito da un `obj.adaptTo()` chiama. Se la `obj` è lo stesso, l&#39;oggetto restituito è lo stesso.
 
-Questa memorizzazione in cache viene eseguita per tutti i casi basati su `AdapterFactory`.
+Questa memorizzazione in cache viene eseguita per tutti `AdapterFactory` casi basati.
 
-Tuttavia, non esiste una regola generale: l&#39;oggetto potrebbe essere una nuova istanza o una esistente. Ciò significa che non puoi affidarti a entrambi i comportamenti. Pertanto è importante, soprattutto all&#39;interno di `AdapterFactory`, che gli oggetti siano riutilizzabili in questo scenario.
+Tuttavia, non esiste una regola generale: l&#39;oggetto potrebbe essere una nuova istanza o una esistente. Ciò significa che non puoi affidarti a entrambi i comportamenti. Quindi è importante, soprattutto all&#39;interno `AdapterFactory`, gli oggetti sono riutilizzabili in questo scenario.
 
 ### Come funziona {#how-it-works}
 
-Sono disponibili diversi modi per implementare `Adaptable.adaptTo()`:
+Ci sono diversi modi per `Adaptable.adaptTo()` può essere implementato:
 
 * dall&#39;oggetto stesso; implementazione del metodo stesso e mappatura a determinati oggetti.
-* Da un [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), che può mappare oggetti arbitrari.
+* Da [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), che può mappare oggetti arbitrari.
 
-   Gli oggetti devono comunque implementare l&#39;interfaccia `Adaptable` e devono estendere [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (che passa la chiamata `adaptTo` a un gestore di adattatori centrali).
+   Gli oggetti devono ancora implementare il `Adaptable` e deve estendere [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (che passa `adaptTo` chiamare un gestore di adattatori centrali).
 
-   Questo consente di inserire gli hook nel meccanismo `adaptTo` per le classi esistenti, ad esempio `Resource`.
+   Questo consente agli hook di `adaptTo` meccanismo per le classi esistenti, ad esempio `Resource`.
 
 * Una combinazione di entrambi.
 
-Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. Tuttavia, per sottoclassi specifiche come la risorsa basata su JCR, spesso questo non è possibile. In quest&#39;ultimo caso, le implementazioni di `AdapterFactory` fanno tipicamente parte delle classi private di un bundle e quindi non sono esposte in un&#39;API client, né sono elencate in javadocs. Teoricamente, sarebbe possibile accedere a tutte le `AdapterFactory` implementazioni dal runtime di servizio [OSGi](/help/sites-deploying/configuring-osgi.md) e guardare le loro configurazioni &quot;adaptables&quot; (origini e destinazioni), ma non mapparle tra di loro. Alla fine, questo dipende dalla logica interna, che deve essere documentata. Da qui questo riferimento.
+Per il primo caso, i javadocs possono indicare cosa `adaptTo-targets` sono possibili. Tuttavia, per sottoclassi specifiche come la risorsa basata su JCR, spesso questo non è possibile. In quest&#39;ultimo caso, l&#39;attuazione `AdapterFactory` in genere fanno parte delle classi private di un bundle e quindi non sono esposte in un&#39;API client, né sono elencate in javadocs. Teoricamente, sarebbe possibile accedere a tutti `AdapterFactory` implementazioni dal [OSGi](/help/sites-deploying/configuring-osgi.md) runtime di servizio e guarda le loro configurazioni &quot;adaptables&quot; (origini e destinazioni), ma non per mapparle tra di loro. Alla fine, questo dipende dalla logica interna, che deve essere documentata. Da qui questo riferimento.
 
 ## Riferimento {#reference}
 
 ### Sling {#sling}
 
-[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) Adattamento risorse a:
+[**Risorsa**](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) si adatta a:
 
 <table>
  <tbody>
@@ -105,15 +105,15 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Restituisce una mappa pratica delle proprietà, se si tratta di una risorsa basata su un nodo JCR (o di altre risorse che supportano le mappe dei valori). Può essere ottenuto anche (più semplicemente) utilizzando<br /> <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (gestisce le lettere maiuscole, ecc.).</td>
+   <td>Restituisce una mappa pratica delle proprietà, se si tratta di una risorsa basata su un nodo JCR (o di altre risorse che supportano le mappe dei valori). Può essere ottenuto anche (più semplicemente) utilizzando<br /> <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (gestisce lettere maiuscole, ecc.).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">EreditarietàValueMap</a></td>
-   <td>Estensione di <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> che consente di tenere conto della gerarchia delle risorse quando si cercano le proprietà.</td>
+   <td>Proroga <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> che consente di tenere conto della gerarchia delle risorse nella ricerca delle proprietà.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModificabileValueMap</a></td>
-   <td>Estensione di <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> che consente di modificare le proprietà di quel nodo.</td>
+   <td>L'estensione del <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, che ti consente di modificare le proprietà di quel nodo.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -136,7 +136,7 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
    <td>Se questa risorsa è uno script (ad esempio un file jsp) per il quale un motore di script è registrato con sling o se si tratta di una risorsa servlet.</td>
   </tr>
   <tr>
-   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">StringBooleanLongDoubleCalendarValueString[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">Stringa</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Booleano</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Lunga</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Doppio</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendario</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Valore</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendario[]</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
    <td>Restituisce i valori se si tratta di una risorsa basata su JCR-property (e il valore si adatta).</td>
   </tr>
   <tr>
@@ -145,11 +145,11 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html">Pagina</a></td>
-   <td>Se si tratta di una risorsa basata su nodo JCR e il nodo è un <code>cq:Page</code> (o <code>cq:PseudoPage</code>).</td>
+   <td>Se si tratta di una risorsa basata su nodo JCR e il nodo è un <code>cq:Page</code> o <code>cq:PseudoPage</code>).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
-   <td>Se si tratta di una risorsa nodo <code>cq:Component</code>.</td>
+   <td>Se si tratta di un <code>cq:Component</code> risorsa nodo.</td>
   </tr>  
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
@@ -157,11 +157,11 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">Modello</a></td>
-   <td>Se si tratta di una risorsa nodo <code>cq:Template</code>.</td>
+   <td>Se si tratta di un <code>cq:Template</code> risorsa nodo.</td>
   </tr>  
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
-   <td>Se si tratta di una risorsa nodo <code>cq:Template</code>.</td>
+   <td>Se si tratta di un <code>cq:Template</code> risorsa nodo.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Risorsa</a></td>
@@ -173,7 +173,7 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
-   <td>Se si tratta di una risorsa nodo <code>cq:Tag</code>.</td>
+   <td>Se si tratta di un <code>cq:Tag</code> risorsa nodo.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -205,16 +205,16 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">Configurazione</a></td>
-   <td>Se si tratta di una risorsa nodo <code>cq:ContentSyncConfig</code>.</td>
+   <td>Se si tratta di un <code>cq:ContentSyncConfig</code> risorsa nodo.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
-   <td>Se si trova sotto una risorsa nodo <code>cq:ContentSyncConfig</code>.</td>
+   <td>Se si trova sotto a <code>cq:ContentSyncConfig</code> risorsa nodo.</td>
   </tr>
  </tbody>
 </table>
 
-[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolversi adatta a:
+[**ResourceResolver**](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) si adatta a:
 
 <table>
  <tbody>
@@ -261,21 +261,21 @@ Per il primo caso, i javadocs possono indicare le `adaptTo-targets` possibili. T
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Esternalizzatore</a></td>
-   <td>Per esternalizzare gli URL assoluti, anche con l'oggetto di richiesta.<br /> </td>
+   <td>Per esternalizzare gli URL assoluti, anche con l’oggetto di richiesta.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequests si adatta a:
+[**SlingHttpServletRequest**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) si adatta a:
 
 Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come origine in un AdapterFactory personalizzato.
 
-[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponsesi adatta a:
+[**SlingHttpServletResponse**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) si adatta a:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br />  (XML)</td>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br /> (XML)</td>
    <td>Se si tratta di una risposta sling rewriter.</td>
   </tr>
  </tbody>
@@ -283,7 +283,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 
 #### WCM {#wcm}
 
-**[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)** La pagina si adatta a:
+**[Pagina](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)** si adatta a:
 
 <table>
  <tbody>
@@ -306,7 +306,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
  </tbody>
 </table>
 
-**[](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)** I componenti si adattano a:
+**[Componente](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)** si adatta a:
 
 | [Risorsa](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Risorsa del componente. |
 |---|---|
@@ -314,7 +314,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 | [Nodo](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nodo del componente. |
 | ... | Tutto ciò a cui può essere adattata la risorsa del componente. |
 
-**[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)** I modelli si adattano a:
+**[Modello](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)** si adatta a:
 
 <table>
  <tbody>
@@ -339,7 +339,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 
 #### Sicurezza {#security}
 
-**Autorizzabile**,  **** Utente e  **** Gruppo si adattano a:
+**Autorizzabile**, **Utente** e **Gruppo** adattarsi a:
 
 | [Nodo](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Restituisce il nodo principale utente/gruppo. |
 |---|---|
@@ -347,7 +347,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 
 #### DAM {#dam}
 
-**** Le risorse si adattano a:
+**Risorsa** si adatta a:
 
 | [Risorsa](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Risorsa della risorsa. |
 |---|---|
@@ -356,7 +356,7 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 
 #### Assegnazione tag {#tagging}
 
-**** I tag si adattano a:
+**Tag** si adatta a:
 
 | [Risorsa](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Risorsa del tag . |
 |---|---|
@@ -365,4 +365,4 @@ Nessuna destinazione, ma implementa Adattabile e può essere utilizzato come ori
 
 #### Altro {#other}
 
-Inoltre, Sling / JCR / OCM fornisce anche un ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` per oggetti COM personalizzati ([Mappatura del contenuto degli oggetti](https://jackrabbit.apache.org/object-content-mapping.html)).
+Inoltre, Sling / JCR / OCM fornisce ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` per OCM personalizzata ([Mappatura del contenuto degli oggetti](https://jackrabbit.apache.org/object-content-mapping.html)).

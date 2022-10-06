@@ -1,5 +1,5 @@
 ---
-title: 'Scelte rapide da tastiera per le console  '
+title: Scelte rapide da tastiera per le console
 seo-title: Keyboard Shortcuts for Consoles
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
 seo-description: Save time when authoring by using these keyboard shortcuts

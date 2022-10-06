@@ -1,5 +1,5 @@
 ---
-title: 'Utilizzo delle versioni di una pagina  '
+title: Utilizzo delle versioni di una pagina
 seo-title: Working with Page Versions
 description: Creare, confrontare e ripristinare le versioni di una pagina
 seo-description: Create, compare, and restore versions of a page
@@ -14,7 +14,7 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
 source-wordcount: '1491'
-ht-degree: 68%
+ht-degree: 97%
 
 ---
 
@@ -68,11 +68,11 @@ Puoi creare una versione della risorsa da:
 
 Dopo aver creato una versione della pagina, esistono diversi metodi per ripristinare una versione precedente:
 
-* la **Ripristina questa versione** dall&#39;opzione [Timeline](/help/sites-authoring/basic-handling.md#timeline) barra
+* L&#39;opzione **Ripristina questa versione** dalla barra [Timeline](/help/sites-authoring/basic-handling.md#timeline)
 
-   Ripristina una versione precedente di una pagina selezionata.
+   Ripristinare una versione precedente di una pagina selezionata.
 
-* la **Ripristina** opzioni dall&#39;alto [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* L&#39;opzione **Ripristina** dalla [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar) in alto
 
    * **Ripristina versione**
 
@@ -80,24 +80,24 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
    * **Ripristina albero**
 
-      Ripristinare una versione di un intero albero a una data e un&#39;ora specificate; può includere pagine precedentemente eliminate.
+      Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
 
 >[!NOTE]
 >
->Quando si ripristina una pagina, la versione creata farà parte di un nuovo ramo.
+>Durante il ripristino di una pagina, la versione creata sarà parte di un nuovo ramo.
 >
 >Per maggiore chiarezza:
 >
 >1. Crea versioni di qualsiasi pagina.
 >1. Le etichette iniziali e i nomi dei nodi di versione saranno 1.0, 1.1, 1.2 e così via.
->1. Ripristina la prima versione; ovvero 1.0.
+>1. Ripristina la prima versione, ovvero 1.0.
 >1. Crea di nuovo una o più nuove versioni.
 >1. Le etichette generati e i nomi dei nodi saranno ora 1.0.0, 1.0.1, 1.0.2 e così via.
 
 
-### Ripristino di una versione {#revert-to-a-version}
+### Ripristina una versione {#revert-to-a-version}
 
-A **Ripristina** la pagina selezionata in una versione precedente:
+Per **ripristinare** la pagina selezionata in una versione precedente:
 
 1. Passa alla pagina di cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -110,11 +110,11 @@ A **Ripristina** la pagina selezionata in una versione precedente:
 
 ### Ripristina versione {#restore-version}
 
-Questo metodo può essere utilizzato per ripristinare versioni di pagine specificate all&#39;interno della cartella corrente; questo può anche includere il ripristino di pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare versioni di pagine specifiche all&#39;interno della cartella corrente; questo può anche includere il ripristino di pagine eliminate precedentemente:
 
-1. Passa a e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la cartella richiesta.
+1. Vai alla cartella richiesta e [selezionala](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-1. Seleziona **Ripristina**, quindi **Ripristina versione** dall&#39;alto [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar).
+1. Seleziona **Ripristina**, quindi **Ripristina versione** dalla [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar) in alto.
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
 
    ![Ripristina versione - Seleziona pagina](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. Seleziona **Ripristina** per la versione selezionata, della pagina selezionata, da ripristinare come versione corrente.
+1. Seleziona **Ripristina** per la versione della pagina selezionata da ripristinare come versione corrente.
 
 >[!NOTE]
 >
@@ -146,23 +146,23 @@ Questo metodo può essere utilizzato per ripristinare versioni di pagine specifi
 
 ### Ripristina albero {#restore-tree}
 
-Questo metodo può essere utilizzato per ripristinare una versione di un albero in una data e in un&#39;ora specificate; possono essere incluse le pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare una versione di una struttura in una data e in un&#39;ora specificate; possono essere incluse le pagine precedentemente eliminate:
 
-1. Passa a e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la cartella richiesta.
+1. Vai alla cartella richiesta e [selezionala](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-1. Seleziona **Ripristina**, quindi **Ripristina albero** dall&#39;alto [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar). Viene visualizzata la versione più recente della struttura:
+1. Seleziona **Ripristina**, quindi **Ripristina struttura** dalla [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar) in alto. Viene visualizzata la versione più recente della struttura:
 
    ![Ripristina albero](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
-1. Utilizza il selettore data e ora in **Versioni più recenti alla data** per selezionare un&#39;altra versione dell&#39;albero - quella da ripristinare.
+1. Utilizza il selettore data e ora in **Versioni più recenti alla data** per selezionare un&#39;altra versione della struttura, quella da ripristinare.
 
-1. Imposta il flag **Pagine non modificate conservate** se necessario:
+1. Imposta il contrassegno **Pagine non versionate salvate** se necessario:
 
    * Se è attiva (selezionata), tutte le pagine senza versione verranno mantenute e non saranno interessate dal ripristino.
 
-   * Se non è attivo (deselezionato), tutte le pagine senza versione verranno rimosse in quanto non esistevano nella struttura ad albero con versioni.
+   * Se non è attiva (deselezionata), tutte le pagine non versionate verranno rimosse in quanto non esistevano nella struttura versionata.
 
-1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come *attuale* versione.
+1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come versione *attuale*.
 
 ## Anteprima di una versione   {#previewing-a-version}
 

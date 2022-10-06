@@ -1,35 +1,34 @@
 ---
 title: Configurazione iniziale
-seo-title: Configurazione iniziale
+seo-title: Initial Setup
 description: Impostazione di Communities
-seo-description: Impostazione di Communities
+seo-description: Setting up Communities
 uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
 
-
 # Configurazione iniziale {#initial-setup}
 
-## Avvio istanze di creazione e pubblicazione {#start-author-and-publish-instances}
+## Avvia istanze di authoring e pubblicazione {#start-author-and-publish-instances}
 
-A scopo di sviluppo e dimostrazione, sarà necessario eseguire un’istanza di creazione e pubblicazione.
+A scopo di sviluppo e dimostrazione, sarà necessario eseguire un autore e un’istanza di pubblicazione.
 
-A tal fine, seguire le AEM di base [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started), che si tradurranno in:
+Per farlo, segui la AEM di base [Introduzione](../../help/sites-deploying/deploy.md#getting-started) le istruzioni che si tradurranno in:
 
-* Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
+* Ambiente di authoring in [localhost:4502](Http://localhost:4502/)
 * Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
-Per  AEM Communities,
+Per AEM Communities,
 
 * L’ambiente di authoring è destinato a:
 
@@ -38,78 +37,78 @@ Per  AEM Communities,
 
 * L’ambiente di pubblicazione è destinato a:
 
-   * L&#39;esperienza della community di pubblicazione e moderazione dei contenuti.
+   * L&#39;esperienza comunitaria di pubblicazione e moderazione dei contenuti.
    * Creazione di gruppi di community, membri e gruppi di membri.
 
 >[!NOTE]
 >
->Se non avete familiarità con AEM, visualizzate la documentazione su [operazioni di base](../../help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
+>Se non hai familiarità con AEM, consulta la documentazione su [trattamento di base](../../help/sites-authoring/basic-handling.md) e [guida rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 
-## Installazione della versione più recente di Communities {#install-latest-communities-release}
+## Installa la versione più recente di Communities {#install-latest-communities-release}
 
-Questa esercitazione crea un [sito della community di coinvolgimento](overview.md#engagement-community) e si basa  feature pack AEM Communities 6.2 versione 1.10.
+Questa esercitazione crea un [sito community di coinvolgimento](overview.md#engagement-community) e si basa sul feature pack AEM Communities 6.2 versione 1.10.
 
-Per verificare che sia installato il pacchetto di funzioni più recente, visita:
+Per verificare che sia installato il pacchetto di funzionalità più recente, visita:
 
-* [Ultime versioni](deploy-communities.md#latest-releases)
+* [Versioni più recenti](deploy-communities.md#latest-releases)
 
-Per un&#39;esercitazione che crea un [sito della community di abilitazione](overview.md#enablement-community), visitare la [Guida introduttiva  AEM Communities per Enablement](getting-started-enablement.md).
+Per un&#39;esercitazione che crea un [sito della community di abilitazione](overview.md#enablement-community)visita [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
 
 ## Configura Analytics {#configure-analytics}
 
-Quando [ Adobe Analytics è configurato per il sito della community](analytics.md), sono disponibili informazioni sull&#39;attività della community che migliorano l&#39;esperienza del membro della community e forniscono feedback agli amministratori del sito.
+Quando [Adobe Analytics è configurato per il sito della community](analytics.md), sono disponibili informazioni sull’attività della community che migliorano l’esperienza del membro della community e forniscono feedback agli amministratori del sito.
 
-L&#39;integrazione con  Adobe Analytics è facoltativa.
+L’integrazione con Adobe Analytics è facoltativa.
 
-## Configura e-mail per notifiche {#configure-email-for-notifications}
+## Configura e-mail per le notifiche {#configure-email-for-notifications}
 
-La funzione notifiche, disponibile per impostazione predefinita per tutti i siti creati utilizzando la console `Communities Sites`, fornisce un canale e-mail per le notifiche.
+La funzione di notifica, disponibile per impostazione predefinita per tutti i siti creati utilizzando `Communities Sites` fornisce un canale e-mail per le notifiche.
 
-Ciò che è necessario è che le e-mail siano configurate correttamente per il sito.
+Ciò che è necessario è che l’e-mail sia configurata correttamente per il sito.
 
-Vedere [Configurazione di Email](email.md).
+Vedi [Configurazione e-mail](email.md).
 
-## Abilitare il servizio Tunnel {#enable-the-tunnel-service}
+## Attivare il servizio tunnel {#enable-the-tunnel-service}
 
-Quando si crea un sito community nell&#39;ambiente di authoring, il servizio tunnel consente di assegnare ruoli a membri attendibili della community registrati nell&#39;ambiente di pubblicazione. Il servizio tunnel consente inoltre l&#39;accesso ai membri della community dalle [console Membri e Gruppi](members.md) nell&#39;ambiente di authoring.
+Quando crei un sito community nell’ambiente di authoring, il servizio tunnel consente di assegnare ruoli a membri della community fidati registrati nell’ambiente di pubblicazione. Il servizio tunnel consente inoltre l&#39;accesso ai membri della comunità [Console Membri e gruppi](members.md) nell’ambiente di authoring.
 
-La convenzione è per i membri e i gruppi di membri creati nell’ambiente di pubblicazione su *non* da ricreare nell’ambiente di authoring. Per ulteriori informazioni, vedere [Gestione di utenti e gruppi di utenti](users.md).
+La convenzione si applica ai membri e ai gruppi di membri creati nell&#39;ambiente di pubblicazione in *not* nell’ambiente di authoring. Per ulteriori informazioni consulta [Gestione di utenti e gruppi di utenti](users.md).
 
-Per istruzioni semplici sull&#39;abilitazione del servizio tunnel su un&#39;istanza **author**, vedere [Tunnel Service](deploy-communities.md#tunnel-service-on-author).
+Per istruzioni semplici per attivare il servizio tunnel su un **autore** istanza, vedi [Servizio tunnel](deploy-communities.md#tunnel-service-on-author).
 
-## Ruolo amministratore community {#community-administrator-role}
+## Ruolo Amministratore community {#community-administrator-role}
 
-I membri del gruppo Amministratori community possono creare siti community, gestire siti, gestire membri (possono vietare membri della community) e moderare contenuti.
+I membri del gruppo Amministratori community possono creare siti di community, gestire siti, gestire membri (possono vietare membri della community) e moderare contenuti.
 
 ### Crea utente {#create-user}
 
-Create un utente su *author*, al quale viene assegnato il ruolo di Amministratore community:
+Crea un utente su *autore*, cui è stato assegnato il ruolo di amministratore comunitario:
 
-* Nell’istanza di creazione
+* Sull’istanza di authoring
 
-   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
+   * Ad esempio: [http://localhost:4502/](Http://localhost:4503/)
 
 * Accesso con privilegi di amministratore
 
    * Ad esempio, nome utente &#39;admin&#39; / password &#39;admin&#39;
 
-* Dalla console principale, passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
-* Dal menu **Modifica**, selezionare **[!UICONTROL Aggiungi utente]**
+* Dalla console principale, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
+* Da **Modifica** menu, seleziona **[!UICONTROL Aggiungi utente]**
 
-* Nella finestra di dialogo `Create New User` immettere:
+* In `Create New User` finestra di dialogo immetti:
 
-   * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL Indirizzo]** e-mail: sirius.nilson@mailinator.com
+   * **[!UICONTROL ID]**: siriano
+   * **[!UICONTROL Indirizzo e-mail]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Password]**: password
-   * **[!UICONTROL Conferma password&amp;ast;]**: password
+   * **[!UICONTROL &amp;Conferma password;]**: password
    * **[!UICONTROL Nome]**: Sirio
    * **[!UICONTROL Cognome]**: Nilson
 
-### Assegna sirius al gruppo di amministratori della community {#assign-sirius-to-community-administrators-group}
+### Assegna Sirius al gruppo di amministratori della community {#assign-sirius-to-community-administrators-group}
 
 Scorri verso il basso fino a `Add User to Groups`:
 
-* Immettere &#39;C&#39; per la ricerca
+* Inserisci &quot;C&quot; per cercare
 
    * Seleziona `Community Administrators`
    * Seleziona `Community Enablement Managers`
@@ -118,22 +117,22 @@ Scorri verso il basso fino a `Add User to Groups`:
 
 ![create-user](assets/create-user.png)
 
-## Abilita accesso tramite social network {#enable-social-login}
+## Abilita accesso social {#enable-social-login}
 
-Prima che possano essere utilizzate le versioni dimostrative di accesso social con Facebook e Twitter, è necessario
+Prima di poter utilizzare le versioni dimostrative di accesso social con Facebook e Twitter, è necessario
 
-1. Installate un fix pack o [ultimo feature pack](deploy-communities.md#latestfeaturepack) (per le modifiche dell&#39;API Facebook di marzo 2017).
-1. [Abilitate il ](social-login.md#adobe-granite-oauth-authentication-handler) provider OAuth nell&#39;ambiente di pubblicazione.
+1. Installa un fix pack o [pacchetto di funzionalità più recente](deploy-communities.md#latestfeaturepack) (per le modifiche dell’API Facebook di marzo 2017).
+1. [Abilitare il provider OAuth](social-login.md#adobe-granite-oauth-authentication-handler) nell’ambiente di pubblicazione.
 
-Per i server di produzione, è necessario creare i servizi cloud necessari per fornire il login mediante profilo sociale.
+Per i server di produzione, è necessario creare i servizi cloud necessari per fornire l’accesso social.
 
-Consultate [Accesso tramite social network con Facebook e Twitter](social-login.md).
+Vedi [Accesso social con Facebook e Twitter](social-login.md).
 
-## Creare tag di esercitazione {#create-tutorial-tags}
+## Creare tag tutorial {#create-tutorial-tags}
 
-Create i tag da utilizzare per le esercitazioni di coinvolgimento e abilitazione, utilizzando lo spazio dei nomi tag di `Tutorial`.
+Crea tag da utilizzare per le esercitazioni di coinvolgimento e abilitazione, utilizzando lo spazio dei nomi tag di `Tutorial`.
 
-Utilizzate la [console Tagging](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
+Utilizza la [Console di assegnazione tag](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -144,19 +143,19 @@ Utilizzate la [console Tagging](../../help/sites-administering/tags.md#tagging-c
 
 ![tutorial-tags](assets/tutorial-tags.png)
 
-Seguite quindi le istruzioni per:
+Quindi segui le istruzioni per:
 
-1. [Impostate le autorizzazioni](../../help/sites-administering/tags.md#setting-tag-permissions) del tag.
-1. [Pubblicate i tag](../../help/sites-administering/tags.md#publishing-tags).
+1. [Impostare le autorizzazioni del tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags).
 
-Esempio di pacchetto di tag creati per i Tutorials Guida introduttiva  AEM Communities
+Pacchetto di esempio di tag creati per i Tutorials Guida introduttiva di AEM Communities
 
 [Ottieni file](assets/tutorial_tags-v63.zip)
 
-## MongoDB per UGC Common Store {#mongodb-for-ugc-common-store}
+## MongoDB per archivio comune UGC {#mongodb-for-ugc-common-store}
 
-Si consiglia, ma facoltativo, di impostare [MSRP](msrp.md) (MongoDB) come [store comune](working-with-srp.md) in modo da provare la flessibilità di moderare tutti gli UGC dagli ambienti di pubblicazione e/o di authoring.
+Si consiglia, ma facoltativo, di impostare [MSRP](msrp.md) (MongoDB) come [negozio comune](working-with-srp.md) per provare la flessibilità di moderare tutti gli UGC dagli ambienti di pubblicazione e/o di authoring.
 
-Per istruzioni, visitare [Come impostare MongoDB per Demo](demo-mongo.md).
+Per istruzioni, visita [Come impostare MongoDB per la demo](demo-mongo.md).
 
-Per impostazione predefinita, l&#39;installazione delle istanze di creazione e pubblicazione AEM causa la memorizzazione del contenuto generato dall&#39;utente (UGC) in [JCR Tar storage](../../help/sites-deploying/platform.md) a cui si accede utilizzando [JSRP](jsrp.md). JSRP non è uno store comune, il che significa che UGC è visibile solo sull&#39;istanza in cui è stato immesso. In genere, UGC viene immesso in un’istanza di pubblicazione e non sarebbe visibile nell’ambiente di authoring, con la conseguente necessità di utilizzare l’istanza di pubblicazione per tutte le attività di moderazione.
+Per impostazione predefinita, l’installazione delle istanze di authoring e pubblicazione AEM fa sì che il contenuto generato dall’utente (UGC) sia memorizzato in [Archiviazione JCR Tar](../../help/sites-deploying/platform.md) accessibile tramite [JSRP](jsrp.md). JSRP non è un archivio comune, il che significa che UGC è visibile solo sull&#39;istanza in cui è stato inserito. In genere, UGC viene inserito in un&#39;istanza di pubblicazione e non sarebbe visibile nell&#39;ambiente di authoring, dando luogo a tutte le attività di moderazione che devono utilizzare l&#39;istanza di pubblicazione.

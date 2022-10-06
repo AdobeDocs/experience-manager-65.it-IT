@@ -1,53 +1,52 @@
 ---
 title: Configurazione dei servizi di archiviazione per bozze e invii
-seo-title: Configurazione dei servizi di archiviazione per bozze e invii
-description: Scoprite come configurare l'archiviazione per bozze e invii
-seo-description: Scoprite come configurare l'archiviazione per bozze e invii
+seo-title: Configuring storage services for drafts and submissions
+description: Scopri come configurare lo storage per bozze e invii
+seo-description: Learn how to configure storage for drafts and submissions
 uuid: 2f4efc07-312c-4908-8c91-84f4e6c5ad25
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione dei servizi di archiviazione per bozze e invii {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Panoramica {#overview}
 
-Con  AEM Forms, potete memorizzare:
+Con AEM Forms puoi archiviare:
 
-* **Bozze**: Modulo di lavoro in corso che gli utenti finali compilano e salvano per un secondo momento e che inviano successivamente.
+* **Bozze**: Modulo in corso di lavorazione che gli utenti finali compilano e salvano per un momento successivo e inviano successivamente.
 
-* **Invii**: Moduli inviati contenenti i dati forniti dall&#39;utente.
+* **Invii**: Moduli inviati contenenti i dati forniti dall’utente.
 
- i servizi dati e metadati di AEM Forms Portal supportano le bozze e gli invii. Per impostazione predefinita, i dati vengono memorizzati nell’istanza di pubblicazione, che viene quindi replicata all’inverso nell’istanza di creazione configurata per essere disponibile per l’analisi ad altre istanze di pubblicazione.
+I servizi di dati e metadati del portale AEM Forms supportano bozze e invii. Per impostazione predefinita, i dati vengono memorizzati nell’istanza di pubblicazione, che viene quindi replicata all’inverso nell’istanza di authoring configurata per essere disponibile per l’esecuzione ad altre istanze di pubblicazione.
 
-Il problema con l&#39;attuale approccio out-of-the-box è che memorizza tutti i dati sull&#39;istanza pubblicata, compresi i dati che possono essere Dati personali (PII).
+Il problema con l’approccio preconfigurato esistente è che memorizza tutti i dati sull’istanza di pubblicazione, inclusi i dati che possono essere PII (Personal Identifiable Information).
 
-Oltre al suddetto approccio predefinito, è disponibile un&#39;implementazione alternativa per spostare direttamente i dati del modulo all&#39;elaborazione, anziché salvarli localmente. I clienti che nutrono dubbi sulla memorizzazione di dati potenzialmente sensibili nell’istanza di pubblicazione possono scegliere l’implementazione alternativa in cui i dati vengono inviati a un server di elaborazione. Poiché l’elaborazione viene eseguita sull’istanza di creazione, in genere rimane in un’area protetta.
+Oltre all’approccio predefinito di cui sopra, è disponibile anche un’implementazione alternativa per spingere direttamente i dati del modulo all’elaborazione anziché salvarli localmente. I clienti che nutrono dubbi sull’archiviazione di dati potenzialmente sensibili nell’istanza di pubblicazione possono scegliere l’implementazione alternativa in cui i dati vengono inviati a un server di elaborazione. Poiché l’elaborazione viene eseguita sull’istanza di authoring, in genere rimane in un’area protetta.
 
 >[!NOTE]
 >
->Se si utilizza l&#39;azione di invio di Forms Portal o si abilita l&#39;opzione Archivia dati nel portale moduli in un modulo adattivo, i dati del modulo vengono memorizzati AEM archivio. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati AEM repository. Al contrario, è necessario integrare le bozze e il componente di invio con un archivio protetto come il database aziendale per memorizzare le bozze e i dati dei moduli inviati.
+>Quando si utilizza l’azione Invia di Forms Portal o si abilita l’opzione Archivia dati in forms portal in forma adattiva, i dati del modulo vengono memorizzati AEM archivio. In un ambiente di produzione, si consiglia di non archiviare le bozze o i dati del modulo inviati in AEM archivio. Per memorizzare le bozze e i dati dei moduli inviati, è invece necessario integrare le bozze e il componente di invio con un archivio protetto, ad esempio un database aziendale.
 >
->Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente per bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
+>Per ulteriori informazioni, consulta [Esempio per l&#39;integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
 
-## Configurazione dei servizi di bozza e di invio di Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
+## Configurazione di progetti e servizi di invio del portale Forms {#configuring-forms-portal-drafts-and-submissions-services}
 
-Nella AEM Configurazione console Web ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **Forms Portal Draft and Submission Configuration** in modalità di modifica.
+Nella configurazione della console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fai clic per aprire **Configurazione bozza e invio del portale Forms** in modalità di modifica.
 
-Specificate i valori per le proprietà in base ai vostri requisiti come descritto di seguito:
+Specifica i valori delle proprietà in base ai requisiti come descritto di seguito:
 
-### I servizi forniti per memorizzare i dati nell&#39;istanza di pubblicazione {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Servizi preconfigurati per archiviare dati nell’istanza di pubblicazione {#out-of-the-box-services-to-store-data-on-publish-instance}
 
-I dati vengono replicati in modo inverso nell’istanza di creazione configurata.
+I dati vengono replicati inversamente nell’istanza di authoring configurata.
 
 <table>
  <tbody>
@@ -56,27 +55,27 @@ I dati vengono replicati in modo inverso nell’istanza di creazione configurata
    <th>Valore</th>
   </tr>
   <tr>
-   <td>Servizio dati bozza di Forms Portal (identificatore per il servizio dati bozza (<strong>draft.data.service</strong>))</td>
+   <td>Servizio dati bozza di Forms Portal (identificatore del servizio dati bozza) (<strong>draft.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>))</td>
+   <td>Servizio metadati bozza di Forms Portal (identificatore del servizio di metadati bozza) (<strong>draft.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio dati di invio Forms Portal (identificatore per il servizio dati di invio (<strong>submit.data.service</strong>))</td>
+   <td>Servizio di invio dati di Forms Portal (identificatore del servizio di invio dati) (<strong>submit.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio di invio metadati Forms Portal (identificatore per l'invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td>
+   <td>Servizio di invio dei metadati (identificatore del servizio di invio dei metadati) di Forms Portal<strong>submit.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Servizi forniti per la memorizzazione dei dati nell&#39;istanza di elaborazione remota {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Servizi preconfigurati per archiviare dati in un’istanza di elaborazione remota {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
-I dati vengono inviati direttamente all&#39;istanza remota configurata
+I dati vengono inviati direttamente all’istanza remota configurata
 
 <table>
  <tbody>
@@ -85,29 +84,28 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
    <th>Valore</th>
   </tr>
   <tr>
-   <td>Servizio dati bozza di Forms Portal (identificatore per il servizio dati bozza (<strong>draft.data.service</strong>))</td>
+   <td>Servizio dati bozza di Forms Portal (identificatore del servizio dati bozza) (<strong>draft.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio di metadati bozza di Forms Portal (identificatore per il servizio di metadati bozza (<strong>draft.metadata.service</strong>))</td>
+   <td>Servizio metadati bozza di Forms Portal (identificatore del servizio di metadati bozza) (<strong>draft.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio dati di invio Forms Portal (identificatore per il servizio dati di invio (<strong>submit.data.service</strong>))</td>
+   <td>Servizio di invio dati di Forms Portal (identificatore del servizio di invio dati) (<strong>submit.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servizio di invio metadati Forms Portal (identificatore per l'invio del servizio di metadati (<strong>submit.metadata.service</strong>))</td>
+   <td>Servizio di invio dei metadati (identificatore del servizio di invio dei metadati) di Forms Portal<strong>submit.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Oltre alla configurazione specificata in precedenza, fornisci informazioni sull&#39;istanza di elaborazione remota configurata.
+Oltre alla configurazione specificata sopra, fornisci informazioni sull&#39;istanza di elaborazione remota configurata.
 
-In Configurazione console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **AEM Servizi impostazioni DS** in modalità di modifica. Nella finestra di dialogo Servizio impostazioni DS AEM, fornire informazioni sull&#39;URL del server di elaborazione, il nome utente e la password del server di elaborazione.
+Nella configurazione della console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fai clic per aprire **Servizio impostazioni di DS AEM** in modalità di modifica. Nella finestra di dialogo Servizio impostazioni DS AEM, fornire informazioni sull&#39;URL del server di elaborazione, il nome utente del server di elaborazione e la password.
 
 >[!NOTE]
 >
->Viene inoltre fornita un&#39;implementazione di esempio per la memorizzazione dei dati utente in un database. Per informazioni su come configurare i servizi dati e metadati per la memorizzazione dei dati utente in un database esterno, vedere [Esempio per l&#39;integrazione di bozze e invii di componenti con database](/help/forms/using/integrate-draft-submission-database.md).
-
+>Viene inoltre fornita un’implementazione di esempio per la memorizzazione dei dati utente in un database. Per informazioni su come configurare i servizi dati e metadati per memorizzare i dati utente in un database esterno, consulta [Esempio per l&#39;integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).

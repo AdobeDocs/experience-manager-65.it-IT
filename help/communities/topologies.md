@@ -1,67 +1,65 @@
 ---
 title: Topologie consigliate per community
-seo-title: Topologie consigliate per community
-description: Come affrontare la gestione dei contenuti generati dall’utente (UGC)
-seo-description: Come affrontare la gestione dei contenuti generati dall’utente (UGC)
+seo-title: Recommended Topologies for Communities
+description: Come approcciare la gestione dei contenuti generati dall’utente (UGC)
+seo-description: How to approach the handling of user-generated content (UGC)
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
-translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+exl-id: b6658330-d862-44e3-aac0-824fb91cd087
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '547'
+ht-degree: 1%
 
 ---
 
-
 # Topologie consigliate per community {#recommended-topologies-for-communities}
 
-A partire  AEM Communities 6.1, è stato adottato un approccio univoco per la gestione del contenuto generato dall’utente (UGC) inviato dai visitatori del sito (membri) dall’ambiente di pubblicazione.
+A partire da AEM Communities 6.1, è stato adottato un approccio univoco per la gestione dei contenuti generati dagli utenti (UGC) inviati dai visitatori del sito (membri) dall’ambiente di pubblicazione.
 
-Questo approccio è sostanzialmente diverso dal modo in cui la piattaforma AEM gestisce il contenuto del sito generalmente gestito dall’ambiente di authoring.
+Questo approccio è fondamentalmente diverso dal modo in cui la piattaforma AEM gestisce il contenuto del sito generalmente gestito dall’ambiente di authoring.
 
-La piattaforma AEM utilizza un archivio nodi che replica il contenuto del sito dall&#39;autore alla pubblicazione, mentre  AEM Communities utilizza un singolo archivio comune per UGC che non viene mai replicato.
+La piattaforma AEM utilizza un archivio nodi che replica il contenuto del sito dall’autore alla pubblicazione, mentre AEM Communities utilizza un singolo archivio comune per UGC che non viene mai replicato.
 
-Per lo store UGC comune, è necessario scegliere un provider di risorse di storage [SRP (Storage Resource Provider)](working-with-srp.md). Le opzioni consigliate sono:
+Per l&#39;archivio UGC comune, è necessario scegliere un [provider di risorse di archiviazione (SRP)](working-with-srp.md). Le scelte consigliate sono:
 
-* [DSRP - Provider di risorse di archiviazione del database relazionale](dsrp.md)
-* [MSRP - Provider di risorse di storage MongoDB](msrp.md)
-* [ASRP - Fornitore di risorse di storage  Adobe](asrp.md)
+* [DSRP - Provider risorsa di archiviazione database relazionale](dsrp.md)
+* [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md)
+* [ASRP - Provider risorsa di archiviazione Adobe](asrp.md)
 
-Un&#39;altra opzione SRP, [JSRP - JCR Storage Resource Provider](jsrp.md), non supporta uno store UGC comune per gli ambienti di creazione e pubblicazione per entrambi gli accessi.
+Un&#39;altra opzione SRP, [JSRP - Provider risorsa di archiviazione JCR](jsrp.md), non supporta un archivio UGC comune per gli ambienti di authoring e pubblicazione per entrambi gli accessi.
 
-La richiesta di uno store comune genera le seguenti topologie consigliate.
-
->[!NOTE]
->
->Per  AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
->
->Se la distribuzione non include uno [store comune](working-with-srp.md), UGC sarà visibile solo nell&#39;istanza di pubblicazione AEM o di creazione in cui è stato immesso.
-
+Se si richiede un archivio comune, si ottengono le seguenti topologie consigliate.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla piattaforma AEM, vedere [Implementazioni consigliate](../../help/sites-deploying/recommended-deploys.md) e [Introduzione alla piattaforma AEM](../../help/sites-deploying/data-store-config.md).
+>Per AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
+>
+>Quando la distribuzione non include un [negozio comune](working-with-srp.md), UGC sarà visibile solo sull’istanza di pubblicazione o authoring AEM in cui è stato inserito.
 
-## Per produzione {#for-production}
+>[!NOTE]
+>
+>Per ulteriori informazioni sulla piattaforma AEM, consulta [Implementazioni consigliate](../../help/sites-deploying/recommended-deploys.md) e [Introduzione alla piattaforma AEM](../../help/sites-deploying/data-store-config.md).
 
-La creazione di uno store comune per UGC è essenziale, e quindi l&#39;implementazione sottostante dipende dalla sua capacità di supportare uno store comune.
+## Per la produzione {#for-production}
+
+La creazione di un archivio comune per UGC è essenziale, e quindi la distribuzione sottostante dipende dalla sua capacità di supportare un negozio comune.
 
 Due esempi:
 
-1. Se il volume previsto di UGC è elevato e un&#39;istanza MongoDB locale è possibile, la scelta sarà [MSRP](msrp.md).
+1. Se il volume previsto dell&#39;UGC è alto e un&#39;istanza MongoDB locale è possibile, allora la scelta sarebbe [MSRP](msrp.md).
 
-1. Per ottenere prestazioni ottimali per il contenuto della pagina, la scelta di una [farm di pubblicazione](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e di [ASRP](asrp.md) offrirebbe un ridimensionamento ottimale di UGC con operazioni relativamente semplici.
+1. Per prestazioni ottimali per il contenuto della pagina, è possibile scegliere un [pubblica azienda](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e [ASRP](asrp.md) fornirebbe una scala ottimale di UGC con operazioni relativamente semplici.
 
 Per entrambi, la distribuzione può essere basata su qualsiasi microkernel OAK.
 
-Per scegliere lo store comune appropriato, considerare attentamente le caratteristiche [uniche](working-with-srp.md#characteristics-of-srp-options) di ciascuno.
+Per scegliere il negozio comune appropriato, considerare attentamente l&#39;unico [caratteristiche](working-with-srp.md#characteristics-of-srp-options) di ciascuno.
 
-Per ulteriori informazioni sui microkernel Oak, visitare [Deployments](../../help/sites-deploying/recommended-deploys.md) consigliati.
+Per maggiori dettagli sui microkernals Oak, visita [Implementazioni consigliate](../../help/sites-deploying/recommended-deploys.md).
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
@@ -72,44 +70,44 @@ Quando la topologia è un’azienda di pubblicazione, gli argomenti rilevanti so
 
 ### Consigliato: DSRP, MSRP o ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | CONTENTREPOSITIVO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | STORE COMUNE |
+| MicroKernel | CONTENUTO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | NEGOZIO COMUNE |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | qualsiasi | JCR | MySQL | DSRP | Sì |
 | qualsiasi | JCR | MongoDB | MSRP | Sì |
-| qualsiasi | JCR |  Adobe di storage su richiesta | ASRP | Sì |
+| qualsiasi | JCR | Adobe di archiviazione su richiesta | ASRP | Sì |
 
 ### JSRP {#jsrp}
 
 
-| Implementazione | CONTENTREPOSITIVO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | STORE COMUNE |
+| Implementazione | CONTENUTO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | NEGOZIO COMUNE |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
-| Agriturismo TarMK (predefinito) | JCR | JCR | JSRP | No |
+| Farm TarMK (predefinito) | JCR | JCR | JSRP | No |
 | Cluster Oak | JCR | JCR | JSRP | Sì solo per ambiente di pubblicazione |
 
 ## Per lo sviluppo {#for-development}
 
-Per gli ambienti non di produzione, [JSRP](jsrp.md) offre semplicità nella configurazione di un ambiente di sviluppo con un&#39;istanza di creazione e un&#39;istanza di pubblicazione.
+Per ambienti non di produzione, [JSRP](jsrp.md) fornisce semplicità nella configurazione di un ambiente di sviluppo con un’istanza di authoring e un’istanza di pubblicazione.
 
-Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile impostare un ambiente di sviluppo simile utilizzando  Adobe di storage on-demand o MongoDB. Per un esempio, vedere [Come impostare MongoDB per Demo](demo-mongo.md).
+Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile impostare un ambiente di sviluppo simile utilizzando Adobe on-demand storage o MongoDB. Ad esempio, vedi [Come impostare MongoDB per la demo](demo-mongo.md).
 
 ## Riferimenti {#references}
 
 * [Sincronizzazione utente](sync.md)
 
-   Descrive la sincronizzazione dei dati utente tra le istanze della farm di pubblicazione.
+   Descrive la sincronizzazione dei dati utente tra le istanze farm di pubblicazione.
 
 * [Gestione di utenti e gruppi di utenti](users.md)
 
    Illustra i ruoli degli utenti e dei gruppi di utenti negli ambienti di creazione e pubblicazione.
 
-* UGC [store comune](working-with-srp.md)
+* UGC [negozio comune](working-with-srp.md)
 
-   Descrive l&#39;archiviazione di contenuto community separato dal contenuto del sito.
+   Descrive l&#39;archiviazione dei contenuti della community separati dal contenuto del sito.
 
 * [Archivi di nodi e archivi di dati](../../help/sites-deploying/data-store-config.md)
 
-   In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per le risorse, un archivio dati può essere configurato per memorizzare dati binari. Per Communities, è necessario configurare uno store comune per selezionare l&#39;SRP.
+   In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per Assets, è possibile configurare un archivio dati per memorizzare dati binari. Per Communities, è necessario configurare un archivio comune per selezionare l’SRP.
 
-* [Elementi di archiviazione](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementi di storage](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Descrive le implementazioni di storage a due nodi: Tar e MongoDB.
+   Descrive le implementazioni di archiviazione a due nodi: Tar e MongoDB.

@@ -2,12 +2,12 @@
 title: Elenco delle funzioni AEM esperienze fluide
 description: Elenco delle funzioni per esperienze fluide
 index: n
-feature: 'Authoring  '
+feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 9%
+source-wordcount: '350'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Le esperienze fluide Adobe Experience Manager si basano sui potenti set di funzioni di AEM Sites, AEM Dynamic Media e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
 
-AEM esperienze fluide si differenziano dal AEM classico in quanto viene affrontato solo il caso di utilizzo della consegna headless. Le soluzioni [AEM Sites, Assets e Dynamic Media complete per l&#39;authoring e la distribuzione di contenuti headful e il supporto AEM casi d&#39;uso ibridi sono disponibili.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM esperienze fluide si differenziano dal AEM classico in quanto viene affrontato solo il caso di utilizzo della consegna headless. L’authoring e la distribuzione di contenuti headful e il supporto forte AEM casi d’uso ibridi sono disponibili con [soluzioni AEM Sites, Assets e Dynamic Media complete.](https://docs.adobe.com/content/help/it-IT/experience-manager-65/user-guide/home.html)
 
 Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si collegano alla relativa documentazione di supporto.
 
@@ -37,7 +37,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 | [Rendering delle immagini](/help/assets/image-presets.md) |
 | [Gestione di metadati e tag](/help/assets/metadata.md) |
 | [Ricerca](/help/assets/manage-assets.md) |
-| [](/help/assets/manage-assets.md) Raccolte e  [lightbox](/help/assets/light-box.md) |
+| [Raccolte](/help/assets/manage-assets.md) e [lightbox](/help/assets/light-box.md) |
 | [Profili](/help/assets/processing-profiles.md) |
 | [Controllo della versione](/help/assets/manage-assets.md) |
 | [Rilevamento di duplicati](/help/assets/duplicate-detection.md) |

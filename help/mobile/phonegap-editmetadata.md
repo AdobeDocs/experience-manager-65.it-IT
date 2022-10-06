@@ -1,70 +1,69 @@
 ---
-title: Modifica dei metadati dell'app
-seo-title: Modifica dei metadati dell'app
-description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per saperne di più sulla modifica dei dati dell'app.
-seo-description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per saperne di più sulla modifica dei dati dell'app.
+title: Modifica dei metadati delle app
+seo-title: Editing App Metadata
+description: I metadati dell'app sono necessari per il rilascio di un'applicazione nell'archivio di un fornitore. Segui questa pagina per informazioni sulla modifica dei dati dell’app.
+seo-description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
-translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '369'
 ht-degree: 3%
 
 ---
 
-
-# Modifica dei metadati dell&#39;app {#editing-app-metadata}
+# Modifica dei metadati delle app {#editing-app-metadata}
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-La sezione **Gestione app** e la pagina &quot;Gestisci app&quot; forniscono uno strumento per visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell&#39;app sono necessari dettagli per il rilascio di un&#39;applicazione allo store di un fornitore. Ciò può includere metadati comuni, metadati iOS e screenshot. Per ulteriori informazioni sui metadati comuni e iOS, consultate [Gestione sezione app](/help/mobile/phonegap-app-details-tile.md).
+La **Gestione app** la pagina &quot;Gestisci app&quot; fornisce un mezzo per visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell&#39;app sono necessari per il rilascio di un&#39;applicazione nell&#39;archivio di un fornitore. Questo può includere metadati comuni, metadati iOS e schermate. Consulta la sezione [Gestisci porzione app](/help/mobile/phonegap-app-details-tile.md) per ulteriori dettagli sui metadati comuni e iOS.
 
-## Modifica dei dati dell&#39;app {#editing-the-app-data}
+## Modifica dei dati dell’app {#editing-the-app-data}
 
-Per modificare i metadati dell&#39;app:
+Per modificare i metadati dell’app:
 
-1. Andate alla pagina del dashboard per l&#39;app.
+1. Passa alla pagina del dashboard per l’app.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Per visualizzare o modificare i dettagli facendo clic su &#39;...&#39; nell&#39;angolo in basso a destra della sezione **Gestisci app**.
+1. Per visualizzare o modificare i dettagli facendo clic su &quot;..&quot; nell&#39;angolo in basso a destra del **Gestione app** piastrelle.
 
-1. Immettere o visualizzare i dettagli in una delle cinque schede disponibili, come mostrato nella figura seguente.
+1. Inserisci o visualizza i dettagli in una delle cinque schede disponibili come mostrato nella figura riportata di seguito.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-## Modifica di metadati comuni e IOS {#editing-common-and-ios-metadata}
+## Modifica dei metadati comuni e IOS {#editing-common-and-ios-metadata}
 
-Potete modificare i metadati comuni e IOS:
+Puoi modificare i metadati comuni e IOS:
 
-* Selezionate la scheda **Avanzate** dalla pagina di descrizione dell&#39;app.
-* Modificate o visualizzate i metadati comuni e IOS. Per maggiori dettagli, consulta le cifre riportate di seguito.
+* Seleziona la **Avanzate** dalla pagina di descrizione dell’app.
+* Modifica o visualizza i metadati comuni e IOS. Per ulteriori informazioni, vedere le cifre riportate di seguito.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
-## Aggiunta e rimozione di schermate {#add-and-remove-screenshots}
+## Aggiungi e rimuovi schermate {#add-and-remove-screenshots}
 
-Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori richiedono screenshot precisi quando inviano un&#39;app al proprio app store. Queste immagini devono già esistere in Risorse. Consultate [Selezione risorse](../assets/search-assets.md#assetpicker) per caricare le schermate.
+Puoi includere le schermate dell’app nel rollup dei metadati. Alcuni fornitori richiedono schermate precise quando inviano un’app al loro app store. Queste immagini devono esistere già in Assets. Vedi [Selettore risorse](../assets/search-assets.md#assetpicker) per caricare le schermate.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-### Aggiungere schermate {#add-screenshots}
+### Aggiungi schermate {#add-screenshots}
 
 Per aggiungere una risorsa come schermata:
 
-1. In modalità di modifica della pagina **Gestisci app**, fai clic su Aggiungi (icona più).
-1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungere la risorsa.
+1. In modalità di modifica della **Gestione app** fare clic su aggiungi (icona più).
+1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungere la risorsa.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungere la risorsa.
+1. Seleziona la risorsa e fai clic su **Seleziona** per aggiungere la risorsa.
 
 >[!NOTE]
 >
@@ -74,23 +73,23 @@ Per aggiungere una risorsa come schermata:
 
 Per rimuovere una schermata:
 
-Fate clic sull’eliminazione della risorsa.
+Fai clic sull’opzione Elimina sulla risorsa.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
 ## Passaggi successivi {#the-next-steps}
 
-Per ulteriori informazioni su altri ruoli di authoring, consulta le seguenti risorse:
+Per ulteriori informazioni sugli altri ruoli di authoring, consulta le risorse seguenti:
 
-* [Gestisci sezione app](/help/mobile/phonegap-app-details-tile.md)
+* [La sezione Gestione app](/help/mobile/phonegap-app-details-tile.md)
 * [Definizioni delle app](/help/mobile/phonegap-app-definitions.md)
 * [Creazione di una nuova app tramite Creazione guidata app](/help/mobile/phonegap-create-new-app.md)
-* [Importare un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
+* [Importare un’app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ### Risorse aggiuntive {#additional-resources}
 
-Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
+Per informazioni sui ruoli e le responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
-* [Sviluppo per  Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
-* [Amministrazione di contenuti per  Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

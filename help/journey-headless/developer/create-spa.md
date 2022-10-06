@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7b97bc0ffb0df6641ae71fa36c459f1368052e12
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ Questo articolo si basa sulla tua conoscenza di AEM Headless esplorando in detta
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come vengono sviluppate le applicazioni a pagina singola utilizzando il framework dell’editor SPA AEM. Dopo aver letto questo documento è necessario:
+Questo documento ti aiuta a capire come vengono sviluppate le applicazioni a pagina singola utilizzando il framework dell’editor SPA AEM. Dopo aver letto questo documento, dovresti:
 
 * Comprendere la funzione di base dell’Editor SPA.
 * Conoscere i requisiti per la costruzione di un SPA completamente modificabile per AEM.
@@ -105,14 +105,14 @@ Per una descrizione completa di come rendere modificabile un SPA esterno in AEM,
 
 Per iniziare a sviluppare un proprio SPA per AEM, controlla i seguenti documenti:
 
-* [Tutorial WKND SPA](/help/sites-developing/spa-wknd.md)
+* [Tutorial WKND per SPA](/help/sites-developing/spa-wknd.md)
 * [Guida introduttiva a React](/help/sites-developing/spa-getting-started-react.md)
 * [Guida introduttiva all&#39;utilizzo di Angular](/help/sites-developing/spa-getting-started-angular.md)
 
 Se devi adattare un SPA esistente per utilizzarlo in AEM, controlla i seguenti documenti:
 
 * [Componente RemotePage](/help/sites-developing/spa-remote-page.md)
-* [Modifica di un SPA esterno in AEM](/help/sites-developing/spa-edit-external.md)
+* [Modifica di uno SPA esterno in AEM](/help/sites-developing/spa-edit-external.md)
 
 Vedi sotto [risorse aggiuntive](#additional-resources) questo può portare a SPA argomenti in AEM.
 
@@ -121,10 +121,10 @@ Vedi sotto [risorse aggiuntive](#additional-resources) questo può portare a SPA
 Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni concetti menzionati in questo documento.
 
 * [Cefalea e senza testa in AEM](/help/sites-developing/headful-headless.md) - Descrizione dei diversi modelli di consegna disponibili in AEM
-* [Introduzione SPA e Procedura dettagliata.](/help/sites-developing/spa-walkthrough.md) - Una buona introduzione a SPA in AEM
+* [Introduzione a SPA e procedura dettagliata.](/help/sites-developing/spa-walkthrough.md) - Una buona introduzione a SPA in AEM
 * [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) - Linee guida su come sviluppare SPA per AEM
 * [Panoramica dell’editor di SPA](/help/sites-developing/spa-overview.md) - Dettagli sul funzionamento dell&#39;editor SPA
 * [Rendering lato server](/help/sites-developing/spa-ssr.md) - Come configurare SSR per AEM SPA
 * [Documenti di riferimento SPA](/help/sites-developing/spa-reference-materials.md) - Riferimenti e collegamenti API JavaScript a progetti open source AEM GitHub
 * [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) - Come creare frammenti di contenuto
-* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web
+* [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) - Modello Maven che crea un progetto Adobe Experience Manager (AEM) minimale basato su best practice come punto di partenza per il sito web

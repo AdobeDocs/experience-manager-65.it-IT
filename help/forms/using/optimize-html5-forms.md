@@ -1,26 +1,25 @@
 ---
 title: Ottimizzazione dei moduli HTML5
-seo-title: Ottimizzazione dei moduli HTML5
+seo-title: Optimizing HTML5 forms
 description: È possibile ottimizzare le dimensioni di output dei moduli HTML5.
-seo-description: È possibile ottimizzare le dimensioni di output dei moduli HTML5.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
 
-
 # Ottimizzazione dei moduli HTML5 {#optimizing-html-forms}
 
-Nei moduli HTML5 viene eseguito il rendering dei moduli in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento dei dati, l’approccio consigliato consiste nel comprimere la risposta HTML utilizzando il server web da cui viene distribuita la richiesta. Questo approccio riduce le dimensioni di risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e computer client.
+HTML5 forms esegue il rendering dei moduli nel formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento dei dati, l’approccio consigliato consiste nel comprimere la risposta di HTML utilizzando il server Web da cui viene distribuita la richiesta. Questo approccio riduce le dimensioni di risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e computer client.
 
 Questo articolo descrive i passaggi necessari per abilitare la compressione per Apache Web Server 2.0 a 32 bit, con JBoss.
 
@@ -36,7 +35,7 @@ Ottieni il software del server web Apache applicabile al tuo sistema operativo:
 
 Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
 
-1. Rimuovi il commento alle seguenti configurazioni del modulo nel file *APACHE_HOME/conf/httpd.conf* .
+1. Rimuovi il commento alle seguenti configurazioni del modulo nel *APACHE_HOME/conf/httpd.conf* file.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -50,7 +49,7 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
 
 1. Configura il proxy sulla porta 8080 di JBoss.
 
-   Aggiungi la seguente configurazione al file di configurazione *APACHE_HOME/conf/httpd.conf* .
+   Aggiungi la seguente configurazione al *APACHE_HOME/conf/httpd.conf* file di configurazione.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -68,7 +67,7 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
 
 1. Abilita compressione.
 
-   Aggiungi la seguente configurazione al file di configurazione *APACHE_HOME/conf/httpd.conf* .
+   Aggiungi la seguente configurazione al *APACHE_HOME/conf/httpd.conf* file di configurazione.
 
    ```xml
    <Location /content/xfaforms>
@@ -86,4 +85,4 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
    </Location>
    ```
 
-1. Per accedere al server AEM, utilizza https://[Apache_server]:80.
+1. Per accedere al server AEM, utilizza https://[Apache_server]80.

@@ -1,33 +1,32 @@
 ---
 title: Stile in linea dei componenti per moduli adattivi
-seo-title: Proprietà CSS in linea per i componenti modulo adattivo
+seo-title: Inline CSS properties for adaptive form components
 description: Mentre è possibile applicare stili personalizzati su un modulo adattivo, è anche possibile applicare proprietà CSS in linea sui singoli componenti di un modulo adattivo.
-seo-description: Mentre è possibile applicare stili personalizzati su un modulo adattivo, è anche possibile applicare proprietà CSS in linea sui singoli componenti di un modulo adattivo.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '525'
 ht-degree: 3%
 
 ---
 
-
 # Stile in linea dei componenti per moduli adattivi {#inline-styling-of-adaptive-form-components}
 
-È possibile definire l’aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando [editor di temi](../../forms/using/themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti dei moduli adattivi e visualizzare in anteprima le modifiche al volo. Gli stili in linea sostituiscono lo stile fornito nel tema .
+È possibile definire l’aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando [editor a tema](../../forms/using/themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti dei moduli adattivi e visualizzare in anteprima le modifiche al volo. Gli stili in linea sostituiscono lo stile fornito nel tema .
 
-## Applica proprietà CSS in linea {#apply-inline-css-properties}
+## Applicare proprietà CSS in linea {#apply-inline-css-properties}
 
 Per aggiungere stili in linea a un componente:
 
-1. Aprire il modulo nell’editor moduli e modificare la modalità in modalità stile. Per modificare la modalità di formattazione, nella barra degli strumenti della pagina, tocca ![canvas-drop-down](assets/canvas-drop-down.png) > **Stile**.
-1. Seleziona un componente nella pagina e tocca il pulsante di modifica ![edit-button](assets/edit-button.png). Proprietà di stile aperte nella barra laterale.
+1. Aprire il modulo nell’editor moduli e modificare la modalità in modalità stile. Per passare alla modalità stile nella barra degli strumenti della pagina, tocca ![elenco a discesa canvas](assets/canvas-drop-down.png) > **Stile**.
+1. Seleziona un componente nella pagina e tocca il pulsante di modifica ![pulsante di modifica](assets/edit-button.png). Proprietà di stile aperte nella barra laterale.
 
    È inoltre possibile selezionare i componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura gerarchica del modulo è disponibile come Oggetti modulo nella barra laterale.
 
@@ -45,7 +44,7 @@ Per aggiungere stili in linea a un componente:
    * Avanzate (consente di scrivere CSS personalizzati per il componente)
 
 1. Allo stesso modo, è possibile applicare gli stili ad altre parti di un componente, ad esempio Widget, Caption e Help.
-1. Tocca **Fine** per confermare le modifiche o **Annulla** per eliminarle.
+1. Tocca **Fine** per confermare le modifiche o **Annulla** per eliminare le modifiche.
 
 ## Esempio: stili in linea per un componente campo {#example-inline-styles-for-a-field-component}
 
@@ -107,4 +106,3 @@ Seguendo i passaggi descritti in precedenza, puoi selezionare e assegnare uno st
 >[!NOTE]
 >
 >Le proprietà dello stile variano a seconda del componente selezionato.
-

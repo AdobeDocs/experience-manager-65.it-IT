@@ -1,8 +1,8 @@
 ---
-title: 'Authoring  '
-seo-title: 'Authoring  '
+title: Authoring
+seo-title: Authoring
 description: Concetti relativi all’authoring in AEM
-seo-description: Concetti relativi all’authoring in AEM
+seo-description: Concepts of authoring in AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '538'
 ht-degree: 88%
 
 ---
-
 
 # Authoring  {#authoring}
 
@@ -69,11 +68,11 @@ Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
 #### Ambiente di pubblicazione {#publish-environment}
 
-Quando è pronto, il contenuto del sito AEM viene pubblicato nell&#39; **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
+Quando è pronto, il contenuto del sito AEM viene pubblicato nella **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
 Solitamente, l’ambiente di pubblicazione si trova nella cosiddetta zona demilitarizzata. In altre parole, è accessibile da Internet ma non usufruisce più della protezione completa offerta dalla rete interna.
 
-Quando il sito AEM è di tipo [community](/help/communities/overview.md) o include [componenti per community](/help/communities/author-communities.md), i visitatori del sito che hanno effettuato l’accesso (ossia i membri registrati della community) possono interagire con le funzioni Community. Ad esempio, possono pubblicare contenuti in un forum, inserire un commento o seguire altri membri. Ai membri possono essere concesse autorizzazioni per eseguire attività solitamente limitate all’ambiente dell’autore, ad esempio creare nuove pagine (gruppi community) o articoli di blog e moderare i post degli altri membri.
+Quando il sito AEM è di tipo [community](/help/communities/overview.md) o include [componenti per community](/help/communities/author-communities.md), i visitatori del sito che hanno effettuato l’accesso (ossia i membri registrati della community) possono interagire con le funzioni Community. Ad esempio, possono pubblicare su un forum, pubblicare un commento o seguire altri membri. Ai membri possono essere concesse autorizzazioni per eseguire attività solitamente limitate all’ambiente dell’autore, ad esempio creare nuove pagine (gruppi community) o articoli di blog e moderare i post degli altri membri.
 
 >[!NOTE]
 >
@@ -81,16 +80,13 @@ Quando il sito AEM è di tipo [community](/help/communities/overview.md) o inclu
 >
 >* **Pubblicare/Annullare la pubblicazione**
    >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
-   >
-   >
-* **Attivare/Disattivare**
-   >  Sinonimi di pubblicare/annullare la pubblicazione.
-   >
-   >
-* **Replicare/Replica**
-   >  Si tratta dei termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro; ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
-
+>* **Attivare/Disattivare**
+   >  Sinonimi di pubblicare/annullare la pubblicazione.
+>
+>* **Replicare/Replica**
+   >  Si tratta dei termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di pagina, file, codice, commenti degli utenti) da un ambiente all’altro; ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
+>
 
 
 #### Dispatcher {#dispatcher}

@@ -4,20 +4,19 @@ description: Scopri come personalizzare ed estendere Asset Share e Asset Editor,
 contentOwner: AG
 role: Developer
 feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
-
 
 # Personalizza ed estendi [!DNL Assets] {#customizing-and-extending-assets}
 
 Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
 
-In qualità di sviluppatore [!DNL Experience Manager], puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+Come [!DNL Experience Manager] per sviluppatori, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
@@ -28,7 +27,7 @@ In qualità di sviluppatore [!DNL Experience Manager], puoi personalizzare ed es
 * [Sviluppo proxy risorse](proxy.md)
 * [Best practice per configurare ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizza l&#39;aspetto {#customizing-the-look-and-feel}
+## Personalizzare l’aspetto {#customizing-the-look-and-feel}
 
 Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di Asset Editor:
 
@@ -38,6 +37,6 @@ Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di A
 
 ## Personalizzare le rappresentazioni {#customizing-renditions}
 
-Nella terminologia [!DNL Experience Manager Assets] un rendering è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
+In [!DNL Experience Manager Assets] la terminologia di un rendering è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
 
 Le rappresentazioni disponibili in una particolare risorsa possono essere personalizzate e possono essere create nuove rappresentazioni.

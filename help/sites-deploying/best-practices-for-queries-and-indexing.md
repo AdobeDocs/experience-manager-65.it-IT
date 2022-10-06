@@ -13,7 +13,7 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4679'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -27,25 +27,25 @@ Inoltre, assicurati di leggere il [Documentazione Oak sulla scrittura di query e
 
 ## Quando utilizzare le query {#when-to-use-queries}
 
-### Struttura dell&#39;archivio e della tassonomia {#repository-and-taxonomy-design}
+### Struttura dell’archivio e della tassonomia {#repository-and-taxonomy-design}
 
-Durante la progettazione della tassonomia di un archivio, è necessario tenere conto di diversi fattori. tra cui controlli di accesso, localizzazione, ereditarietà di componenti e proprietà di pagina.
+Durante la progettazione della tassonomia di un archivio, occorre tenere conto di diversi fattori, tra cui controlli di accesso, localizzazione, ereditarietà di componenti e proprietà di pagina.
 
-Durante la progettazione di una tassonomia che tenga conto di questi problemi, è importante anche considerare la &quot;traversabilità&quot; del design di indicizzazione. In questo contesto, l’attraversabilità è la capacità di una tassonomia che consente un accesso prevedibile ai contenuti in base al relativo percorso. Questo renderà più performante un sistema più semplice da mantenere rispetto a uno che richiederà l&#39;esecuzione di molte query.
+Durante la progettazione di una tassonomia che tenga conto di questi problemi, è importante anche considerare la “fruibilità” del design di indicizzazione. In questo contesto, l’attraversabilità è la capacità di una tassonomia che consente un accesso prevedibile ai contenuti in base al relativo percorso. Questo renderà più performante un sistema più semplice da mantenere rispetto a uno che richiederà l&#39;esecuzione di molte query.
 
-Inoltre, durante la progettazione di una tassonomia, è importante considerare l&#39;importanza dell&#39;ordine. Nei casi in cui non è richiesto un ordine esplicito e si prevede un numero elevato di nodi di pari livello, è preferibile utilizzare un tipo di nodo non ordinato come `sling:Folder` o `oak:Unstructured`. Nei casi in cui è richiesta l&#39;ordinazione, `nt:unstructured` e `sling:OrderedFolder` sarebbe più appropriato.
+Inoltre, durante la progettazione di una tassonomia, è importante considerare l’importanza dell’ordinamento. Nei casi in cui non è richiesto un ordinamento esplicito e si prevede un numero elevato di nodi di pari livello, è preferibile utilizzare un tipo di nodo non ordinato come `sling:Folder` o `oak:Unstructured`. Nei casi in cui è richiesto l’ordinamento, `nt:unstructured` e `sling:OrderedFolder` potrebbero essere più adatti.
 
 ### Query nei componenti {#queries-in-components}
 
-Poiché le query possono essere una delle operazioni di imposizione più eseguite su un sistema AEM, è consigliabile evitarle nei componenti. L’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può spesso compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l’esecuzione di query durante il rendering dei componenti: **attraversamento dei nodi** e **risultati di preacquisizione**.
+Poiché le query possono essere una delle operazioni più gravose su un sistema AEM, è consigliabile evitarle nei componenti. Spesso, l’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l’esecuzione di query durante il rendering dei componenti: **navigazione dei nodi** e **preacquisizione dei risultati**.
 
-#### Navigazione nei nodi {#traversing-nodes}
+#### Navigazione dei nodi {#traversing-nodes}
 
-Se l&#39;archivio è progettato in modo tale da consentire una conoscenza preventiva della posizione dei dati richiesti, il codice che recupera questi dati dai percorsi necessari può essere distribuito senza dover eseguire query per trovarli.
+Se l’archivio è progettato in modo tale da consentire una conoscenza preventiva della posizione dei dati richiesti, il codice che recupera tali dati dai percorsi necessari può essere utilizzato senza dover eseguire query per trovarli.
 
-Un esempio potrebbe essere il rendering di contenuti che si adattano a una determinata categoria. Un approccio consiste nell’organizzare il contenuto con una proprietà di categoria su cui è possibile eseguire una query per compilare un componente che mostra gli elementi in una categoria.
+Un esempio potrebbe essere il rendering di contenuti che rientrano a una determinata categoria. Un approccio consiste nell’organizzare i contenuti con una proprietà di categoria su cui è possibile eseguire una query per compilare un componente che mostra gli elementi in una categoria.
 
-Un approccio migliore consisterebbe nel strutturare il contenuto in una tassonomia per categoria in modo che possa essere recuperato manualmente.
+Un approccio migliore consisterebbe nello strutturare i contenuti in una tassonomia per categoria, in modo da poterli recuperare manualmente.
 
 Ad esempio, se il contenuto viene memorizzato in una tassonomia simile a:
 
@@ -53,17 +53,17 @@ Ad esempio, se il contenuto viene memorizzato in una tassonomia simile a:
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-la `/content/myUnstructuredContent/parentCategory/childCategory` il nodo può essere semplicemente recuperato, i relativi figli possono essere analizzati e utilizzati per eseguire il rendering del componente.
+il `/content/myUnstructuredContent/parentCategory/childCategory` nodo può essere semplicemente recuperato, i relativi nodi secondari possono essere analizzati e utilizzati per eseguire il rendering del componente.
 
-Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, può essere più veloce attraversare l’archivio e raccogliere i nodi richiesti, anziché creare una query per restituire lo stesso set di risultati. In generale, occorre evitare le interrogazioni laddove possibile.
+Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, navigare l’archivio e raccogliere i nodi richiesti può essere una soluzione più veloce rispetto alla creazione di una query per restituire lo stesso set di risultati. In generale, occorre evitare le query laddove possibile.
 
-#### Recupero preventivo dei risultati {#prefetching-results}
+#### Preacquisizione dei risultati {#prefetching-results}
 
 A volte il contenuto o i requisiti intorno al componente non consentono l’uso di node traversal come metodo per recuperare i dati richiesti. In questi casi, è necessario eseguire le query necessarie prima di eseguire il rendering del componente in modo da garantire prestazioni ottimali per l’utente finale.
 
 Se i risultati richiesti per il componente possono essere calcolati al momento della creazione e non c’è alcuna aspettativa che il contenuto venga modificato, la query può essere eseguita quando l’autore applica le impostazioni nella finestra di dialogo.
 
-Se i dati o il contenuto vengono modificati regolarmente, la query può essere eseguita su una pianificazione o tramite un listener per gli aggiornamenti dei dati sottostanti. Quindi, i risultati possono essere scritti in una posizione condivisa nell&#39;archivio. Tutti i componenti che necessitano di questi dati possono quindi estrarre i valori da questo singolo nodo senza dover eseguire una query in fase di esecuzione.
+Se i dati o il contenuto vengono modificati regolarmente, la query può essere eseguita secondo una pianificazione o tramite un listener per gli aggiornamenti dei dati sottostanti. Dopodiché, i risultati possono essere scritti in una posizione condivisa nell’archivio. Tutti i componenti che necessitano di questi dati possono quindi richiamare i valori da questo singolo nodo senza dover eseguire una query in fase di esecuzione.
 
 ## Ottimizzazione delle query {#query-optimization}
 
@@ -215,7 +215,7 @@ Quando si rimuove un indice su un&#39;istanza MongoDB, il costo di eliminazione 
 
 ### Foglio di calcolo della query JCR {#jcrquerycheatsheet}
 
-Per supportare la creazione di query JCR efficienti e le definizioni degli indici, la [Foglio di calcolo della query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2, che coprono scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre raccomandazioni su come creare o personalizzare gli indici Oak. Il contenuto di questo Cheat Sheet si applica a AEM 6.5 e AEM as a Cloud Service.
+Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2, che coprono scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questo Cheat Sheet si applica a AEM 6.5 e AEM as a Cloud Service.
 
 ## Reindicizzazione {#re-indexing}
 

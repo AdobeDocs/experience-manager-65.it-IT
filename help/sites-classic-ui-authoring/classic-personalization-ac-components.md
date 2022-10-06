@@ -1,8 +1,8 @@
 ---
 title: Componenti di Adobe Campaign
-seo-title: Componenti di Adobe Campaign
+seo-title: Adobe Campaign Components
 description: Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti per newsletter e moduli.
-seo-description: Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti per newsletter e moduli.
+seo-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
 uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2534'
 ht-degree: 79%
 
 ---
-
 
 # Componenti di Adobe Campaign{#adobe-campaign-components}
 
@@ -25,13 +24,13 @@ Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti
 
 >[!CAUTION]
 >
->I componenti e-mail AEM sono obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box AEM diventano un riutilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
+>I componenti e-mail AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti come predefiniti AEM diventano di uso limitato per i clienti a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati per i progetti.
+>I componenti e-mail possono essere implementati a livello di progetto e i componenti e-mail AEM componenti e-mail obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati nei progetti.
 
 ## Componenti per newsletter di Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Tutti i componenti di Campaign seguono le best practice descritte in [Best practice per i modelli di e-mail](/help/sites-administering/best-practices-for-email-templates.md) e sono basati sul linguaggio di markup Adobe [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
+Tutti i componenti di Campaign seguono le best practice descritte in [Best practice per i modelli di e-mail](/help/sites-administering/best-practices-for-email-templates.md) e sono basati sul linguaggio di markup Adobe [HTL](https://helpx.adobe.com/it/experience-manager/htl/using/overview.html).
 
 Quando apri una newsletter/e-mail configurata per l’integrazione con Adobe Campaign, verifica che i seguenti componenti siano presenti nella sezione **Newsletter di Adobe Campaign**:
 
@@ -105,7 +104,6 @@ Quando carichi un’immagine, puoi configurare le opzioni seguenti:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 Il seguente esempio mostra come viene visualizzato il componente Immagine (Campaign).
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
@@ -122,18 +120,17 @@ Puoi configurare le seguenti operazioni nelle schede **Visualizzazione**, **Info
 
 * **Descrizione collegamento** Ulteriori informazioni su come utilizzare il collegamento.
 
-* ****
-LinkTypeNell&#39;elenco a discesa, seleziona tra 
-**URL personalizzato** e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+* **LinkType**
+Nell’elenco a discesa , seleziona tra 
+**URL personalizzato** e **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo** Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere altri elementi.
 
 >[!NOTE]
 >
->È necessario immettere informazioni nel campo **Tipo di collegamento** nella scheda **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
+>È necessario immettere le informazioni nel **Tipo di collegamento** nel campo **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
-
 
 I seguenti esempi mostrano come viene visualizzato un componente Collegamento (Campaign).
 
@@ -178,14 +175,13 @@ Come per i componenti di Testo e personalizzazione (Campaign) e Immagine (Campai
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 I seguenti esempi mostrano un componente Testo e immagine (Campaign) che viene visualizzato.
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
 ### Testo e personalizzazione (Campaign) {#text-personalization-campaign}
 
-Il componente Testo e personalizzazione (Campaign) consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39; [Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Inoltre, consente di utilizzare i campi di contesto e i blocchi di personalizzazione da Adobe Campaign. Consulta [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+Il componente Testo e personalizzazione (Campaign) consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite da [Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Inoltre, consente di utilizzare i campi di contesto e i blocchi di personalizzazione da Adobe Campaign. Consulta [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 Le varie icone consentono di formattare il testo con font, allineamento, collegamenti, elenchi e rientri.
 
@@ -205,7 +201,7 @@ Utilizza i componenti di Adobe Campaign per creare un modulo che gli utenti dovr
 
 Ogni campo del componente può essere collegato a un campo del database di Adobe Campaign. I campi disponibili dipendono dal tipo di dati che contengono, come descritto nella sezione [Componenti e tipi di dati](#components-and-data-type). Se si estende lo schema dei destinatari in Adobe Campaign, i nuovi campi saranno disponibili nei componenti con tipi di dati corrispondenti.
 
-Quando si apre un modulo configurato per l&#39;integrazione con  Adobe Campaign, nella sezione **Adobe Campaign** vengono visualizzati i seguenti componenti:
+Quando si apre un modulo configurato per l’integrazione con Adobe Campaign, vengono visualizzati i seguenti componenti nel **Adobe Campaign** sezione:
 
 * Casella di selezione (Campaign)
 * Campo data (Campaign) e Campo data/HTML 5 (Campaign)
@@ -219,7 +215,7 @@ Quando si apre un modulo configurato per l&#39;integrazione con  Adobe Campaign,
 
 Questa sezione descrive ogni componente.
 
-### Componenti e tipi di dati  {#components-and-data-type}
+### Componenti e tipi di dati {#components-and-data-type}
 
 La tabella seguente descrive i componenti disponibili per visualizzare e modificare i dati di profilo Adobe Campaign. Ogni componente può essere mappato su un campo profilo Adobe Campaign, per visualizzarne il valore e aggiornare il campo quando il modulo viene inviato. I diversi componenti possono essere associati solo a campi di un tipo di dati appropriato.
 
@@ -227,13 +223,13 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
  <tbody>
   <tr>
    <td><p><strong>Componente</strong></p> </td>
-   <td><p><strong>Tipo di dati  campo Adobe Campaign</strong></p> </td>
-   <td><p><strong>Esempio di campo</strong></p> </td>
+   <td><p><strong>Tipo di dati del campo Adobe Campaign</strong></p> </td>
+   <td><p><strong>Campo di esempio</strong></p> </td>
   </tr>
   <tr>
    <td><p>Casella di selezione (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Nessun contatto (da un canale)</p> </td>
+   <td><p>Nessun contatto (da qualsiasi canale)</p> </td>
   </tr>
   <tr>
    <td><p>Campo data (Campaign)</p> <p>Campo data/HTML 5 (Campaign)</p> </td>
@@ -242,7 +238,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr>
   <tr>
    <td><p>Campo numerico (Campaign)</p> </td>
-   <td><p>numeric (byte, short, long, double)</p> </td>
+   <td><p>numerico (byte, breve, lungo, doppio)</p> </td>
    <td><p>Età</p> </td>
   </tr>
   <tr>
@@ -252,7 +248,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr>
   <tr>
    <td><p>Campo testo (Campaign)</p> </td>
-   <td><p>string</p> </td>
+   <td><p>stringa</p> </td>
    <td><p>E-mail</p> </td>
   </tr>
  </tbody>
@@ -264,7 +260,7 @@ I componenti di Adobe Campaign hanno impostazioni comuni a tutti i componenti (e
 
 Nella maggior parte dei componenti, è possibile configurare le seguenti operazioni:
 
-#### Titolo e testo  {#title-and-text}
+#### Titolo e testo {#title-and-text}
 
 * **Titolo** Per utilizzare un nome diverso dal nome dell’elemento, inseriscilo in questo campo.
 
@@ -284,8 +280,8 @@ Puoi configurare le seguenti operazioni:
 
 #### Vincoli {#constraints}
 
-* **Obbligatorio** : selezionare questa casella di controllo per rendere obbligatorio il componente; in altre parole, gli utenti devono immettere un valore.
-* **Messaggio**  richiesto - (facoltativo) aggiungete un messaggio per informare che il campo è obbligatorio.
+* **Obbligatorio** - Selezionare questa casella di controllo per rendere obbligatorio questo componente; in altre parole, gli utenti devono immettere un valore.
+* **Messaggio richiesto** - Se necessario, aggiungi un messaggio che indica che il campo è obbligatorio.
 
 #### Attribuzione stile {#styling}
 
@@ -307,10 +303,10 @@ Consenti ai destinatari di aggiungere una data tramite il campo data; ad esempio
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Vincolo**  - È possibile selezionare -  **** Non  **** data per aggiungere il vincolo di una data o nessun vincolo. Se si seleziona la data, la risposta che gli utenti immettono nel campo deve essere in un formato di data.
+* **Vincoli - Vincolo** - È possibile selezionare - **Nessuno** o **Data** per aggiungere il vincolo di una data o nessun vincolo. Se si seleziona la data, le risposte inserite dagli utenti nel campo devono essere in un formato data.
 
-* **Messaggio**  vincolo - Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza**  - Consente di regolare la larghezza del campo toccando o facendo clic sulle  **+** e- **** icone o immettendo un numero.
+* **Messaggio vincolo** - Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
+* **Stile - Larghezza** - Per regolare la larghezza del campo, tocca o fai clic sul pulsante **+** e **-** icone o immissione di un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo data (Campaign) con la larghezza regolata.
 
@@ -324,8 +320,8 @@ Ogni modulo che visualizza e modifica i dati di profilo Adobe Campaign **deve** 
 
 Puoi configurare le seguenti opzioni nel componente Chiave principale crittografata (Campaign):
 
-* **Titolo e testo - Nome**  elemento - Valore predefinito per encryptPK. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
-* **Adobe Campaign - parametro**  URL - Aggiungete il parametro URL per l’EPK. Ad esempio, puoi utilizzare il valore **epk**.
+* **Titolo e testo - Nome elemento** - Valori predefiniti di encrypk. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
+* **Adobe Campaign - parametro URL** - Aggiungi il parametro URL per l’EPK. Ad esempio, puoi utilizzare il valore **epk**.
 
 I seguenti esempi mostrano come viene visualizzato il componente Chiave principale crittografata (Campaign).
 
@@ -341,12 +337,12 @@ I seguenti esempi mostrano come viene visualizzato il componente Visualizzazione
 
 ### Chiave riconciliazione nascosta (Campaign) {#hidden-reconciliation-key-campaign}
 
-Il componente Chiave di riconciliazione nascosta (Campaign) consente di aggiungere campi nascosti come parte della chiave di riconciliazione a un modulo.
+Il componente Chiave riconciliazione nascosta (Campaign) consente di aggiungere a un modulo campi nascosti come parte della chiave di riconciliazione.
 
 Puoi configurare le seguenti opzioni nel componente Chiave riconciliazione nascosta (Campaign):
 
-* **Titolo e testo - Nome**  elemento - Valore predefinito per riconciliilKey. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
-* **Adobe Campaign - Mappatura**  - Mappa su un campo  personalizzazione Adobe Campaign.
+* **Titolo e testo - Nome elemento** - Valori predefiniti per reconcilKey. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
+* **Adobe Campaign - Mappatura** - Mappa su un campo di personalizzazione Adobe Campaign.
 
 Il seguente esempio mostra come viene visualizzato il componente Chiave riconciliazione nascosta (Campaign).
 
@@ -358,10 +354,10 @@ Usa il campo numerico per consentire ai destinatari di immettere numeri, ad esem
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli -** Elenco a discesa Limiti È possibile selezionare -  **** Non  **numerico -** per aggiungere il vincolo di un numero o di nessun vincolo. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
+* **Vincoli - Vincolo** a discesa È possibile selezionare - **Nessuno** o **Numerico -** per aggiungere il vincolo di un numero o nessun vincolo. Se si seleziona un numero, le risposte inserite dagli utenti nel campo devono essere numeriche.
 
-* **Messaggio**  vincolo - Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza**  - Consente di regolare la larghezza del campo toccando o facendo clic sulle  **+** e- **** icone o immettendo un numero.
+* **Messaggio vincolo** - Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
+* **Stile - Larghezza** - Per regolare la larghezza del campo, tocca o fai clic sul pulsante **+** e **-** icone o immissione di un numero.
 
 L’esempio seguente mostra come viene visualizzato il componente Campo numerico (Campaign) con la larghezza configurata.
 
@@ -381,7 +377,7 @@ I seguenti esempi mostrano come viene visualizzato il componente Campo opzione (
 
 Usa il componente **Lista di controllo delle iscrizioni (Campaign)** per modificare le iscrizioni associate a un profilo Adobe Campaign.
 
-Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. Quando gli utenti inviano il modulo, questo componente si iscrive o annulla la sottoscrizione all&#39;utente dai servizi selezionati a seconda del tipo di azione del modulo (**Adobe Campaign: Iscriviti a Servizi** o **Adobe Campaign: Annulla sottoscrizione a Servizi**).
+Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. Quando gli utenti inviano il modulo, questo componente si abbona o annulla l’iscrizione dell’utente ai servizi selezionati a seconda del tipo di azione del modulo (**Adobe Campaign: Iscriviti ai servizi** o **Adobe Campaign: Annulla sottoscrizione a servizi**).
 
 >[!NOTE]
 >
@@ -399,10 +395,10 @@ Il componente Campo testo (Campaign) che consente di immettere dati di tipo stri
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Vincolo**  - A discesa - È possibile selezionare -  **Nessuno**,  **E-mail**,  **Nome** (nessun umlauts) per aggiungere il vincolo di un indirizzo e-mail, un nome o nessun vincolo. Se selezioni E-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezionate un nome, deve essere un nome (gli umlauts non sono consentiti).
+* **Vincoli - Vincolo** - a discesa - È possibile selezionare - **Nessuno**, **E-mail**, **Nome** (senza umlaut) per aggiungere il vincolo di un indirizzo e-mail, un nome o nessun vincolo. Se selezioni E-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezioni il nome, deve essere un nome (gli umlaut non sono consentiti).
 
-* **Messaggio**  vincolo - Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile - Larghezza**  - Consente di regolare la larghezza del campo toccando o facendo clic sulle  **+** e- **** icone o immettendo un numero.
+* **Messaggio vincolo** - Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
+* **Stile - Larghezza** - Per regolare la larghezza del campo, tocca o fai clic sul pulsante **+** e **-** icone o immissione di un numero.
 
 I seguenti esempi mostrano viene visualizzato un componente Campo testo (Campaign).
 

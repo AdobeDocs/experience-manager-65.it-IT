@@ -1,8 +1,8 @@
 ---
 title: Promozione dei lanci
-seo-title: Promozione dei lanci
-description: 'Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. '
-seo-description: 'Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. '
+seo-title: Promoting Launches
+description: Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 99%
 
 ---
-
 
 # Promozione dei lanci{#promoting-launches}
 
@@ -35,7 +34,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 
 >[!CAUTION]
 >
->Non è possibile promuovere contemporaneamente un singolo lancio. Ciò significa che due azioni promozionali allo stesso avvio possono causare un errore `Launch could not be promoted` (insieme a errori di conflitto nel registro).
+>Non è possibile promuovere contemporaneamente un singolo lancio. Due azioni di promozione sullo stesso lancio nello stesso momento possono causare un errore: `Launch could not be promoted` (con gli errori di conflitto nel registro).
 
 >[!CAUTION]
 >
@@ -49,9 +48,7 @@ Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (
 >
 >* [Promozione di un lancio nidificato](#promoting-a-nested-launch) in caso di più lanci nella struttura.
 >* [Lanci: ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per ulteriori dettagli sulla promozione e la pubblicazione automatica.
-
 >
-
 
 
 Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
@@ -60,7 +57,7 @@ Puoi promuovere un lancio dalla console **Sites** o dalla console **Lanci**:
 
    * la console **Sites**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Verranno visualizzati tutti i riferimenti.
+      1. Apri la [barra dei riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Verranno visualizzati tutti i riferimenti.
 
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
@@ -108,7 +105,7 @@ Durante la modifica di una pagina di lancio, l’azione **Promuovi lancio** è d
 >
 >Questa funzione è disponibile per i lanci singoli e per i [lanci nidificati](#promoting-a-nested-launch).
 
-## Promozione di un lancio nidificato  {#promoting-a-nested-launch}
+## Promozione di un lancio nidificato {#promoting-a-nested-launch}
 
 Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo su qualsiasi sorgente, compresa la sorgente principale (produzione).
 

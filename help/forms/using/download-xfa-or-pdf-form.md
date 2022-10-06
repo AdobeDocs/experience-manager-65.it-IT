@@ -1,8 +1,8 @@
 ---
 title: Scaricare un modello di modulo XFA o PDF
-seo-title: Scaricare un modello di modulo XFA o PDF
+seo-title: Download an XFA or a PDF form template
 description: È possibile esportare i moduli dall’archivio al sistema locale ed eseguire la migrazione dei moduli scaricati nel nuovo archivio.
-seo-description: È possibile esportare i moduli dall’archivio al sistema locale ed eseguire la migrazione dei moduli scaricati nel nuovo archivio.
+seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
 uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,19 @@ In AEM Forms, l’operazione di download è supportata per i seguenti tipi di ri
 
 * Modelli di modulo (XFA Forms)
 * PDF forms
-* Documenti (file PDF semplici)
+* Documenti (file PDF flat)
 
 AEM Forms supporta il download di questi tipi di moduli singolarmente o in una cartella contenente uno o più moduli supportati.
 
-Oltre a queste risorse, puoi scaricare il tipo di risorsa `Resource` se presente in una cartella. Questa funzionalità consente di scaricare insieme al modulo la risorsa a cui fa riferimento un modulo XFA.
+Oltre a queste risorse, puoi scaricare il `Resource` tipo di risorsa, se presente in una cartella. Questa funzionalità consente di scaricare insieme al modulo la risorsa a cui fa riferimento un modulo XFA.
 
 ## Scaricare uno o più moduli {#download-one-or-more-forms}
 
-1. Accedi all&#39;interfaccia utente di AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Accedi all’interfaccia utente di AEM Forms all’indirizzo `https://<server>:<port>/aem/forms.html`.
 
 1. Andate alla posizione della risorsa da scaricare.
 
-1. Seleziona la risorsa. Fai clic sull&#39;icona **[!UICONTROL Scarica]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
+1. Seleziona la risorsa. Fai clic sul pulsante **[!UICONTROL Scarica]** ![aem6forms_download](assets/aem6forms_download.png) nella barra degli strumenti.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Oltre a queste risorse, puoi scaricare il tipo di risorsa `Resource` se presente
 
    Se scarichi una cartella, le risorse supportate all’interno della cartella vengono scaricate nella gerarchia esistente.
 
-   Il file ZIP viene salvato nella cartella `Downloads` del sistema.
+   Il file ZIP viene salvato nel `Downloads` sul sistema.
 
 ## Considerazioni correlate all’operazione di caricamento {#related-considerations-for-the-upload-operation}
 

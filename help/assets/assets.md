@@ -1,26 +1,26 @@
 ---
 title: Introduzione a [!DNL Adobe Experience Manager Assets]
-description: Scopri cos’è la gestione delle risorse digitali, i relativi casi d’uso e l’offerta  [!DNL Adobe Experience Manager Asset] .
+description: Scopri cosa sono la gestione delle risorse digitali, i relativi casi d’uso e [!DNL Adobe Experience Manager Asset] offerta.
 contentOwner: AG
-feature: Gestione risorse
+feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 33%
 
 ---
 
-# Informazioni su [!DNL Adobe Experience Manager Assets] come soluzione DAM {#administering-assets}
+# Informazioni [!DNL Adobe Experience Manager Assets] come soluzione DAM {#administering-assets}
 
-[!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che è parte integrante della  [!DNL Experience Manager] piattaforma e consente alla tua azienda di gestire e distribuire le risorse digitali. Gli utenti di un’organizzazione possono gestire, archiviare e accedere a numerosi tipi di risorse digitali quali immagini, video, documenti, clip audio, file 3D e contenuti multimediali avanzati da utilizzare sul web, nella stampa e per la distribuzione digitale.
+[!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che è parte integrante del [!DNL Experience Manager] e consente alle aziende di gestire e distribuire le risorse digitali. Gli utenti di un’organizzazione possono gestire, archiviare e accedere a numerosi tipi di risorse digitali quali immagini, video, documenti, clip audio, file 3D e contenuti multimediali avanzati da utilizzare sul web, nella stampa e per la distribuzione digitale.
 
 ## Che cos’è Digital Asset Management? {#what-is-digital-asset-management}
 
 [!DNL Assets] consente di condividere e distribuire le risorse digitali chiave di un’organizzazione in tutta l’azienda. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali quali immagini, elementi grafici, audio, video e documenti tramite un’interfaccia Web (o una cartella CIFS o WebDAV).
 
-[!DNL Assets] funzionalità di  [!DNL Experience Manager] consente di effettuare le seguenti operazioni:
+[!DNL Assets] capacità [!DNL Experience Manager] consente di effettuare le seguenti operazioni:
 
 * Aggiungere e condividere immagini, documenti, file audio e video in diversi formati.
 * Gestisci le risorse raggruppandole per tag, lightbox o stelle (i tuoi preferiti). Aggiungere note alle risorse.
@@ -29,11 +29,11 @@ ht-degree: 33%
 * Utilizzare funzioni di modifica delle immagini come il ridimensionamento e l’aggiunta di filtri. È possibile importare ed esportare contemporaneamente più risorse digitali utilizzando una cartella WebDAV o CIFS.
 * Utilizzare flussi di lavoro e notifiche per consentire l’elaborazione e il download simultanei di qualsiasi insieme di risorse e gestire i diritti di accesso alle risorse.
 
-### [!DNL Experience Manager Assets] è integrato con  [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
+### [!DNL Experience Manager Assets] è integrato con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] si integra completamente con  [!DNL Sites] e funziona perfettamente per tutti i casi d&#39;uso. Ad esempio, durante la creazione di pagine web, gli autori [!DNL Sites] possono trovare e utilizzare le risorse digitali tramite Content Finder. L&#39;interfaccia utente di [!DNL Assets] è la stessa di [!DNL Sites]. Per informazioni dettagliate, consulta [panoramica di Sites](/help/sites-authoring/page-authoring.md) .
+[!DNL Assets] si integra completamente con [!DNL Sites] e funziona senza problemi per tutti i casi d&#39;uso. Ad esempio, durante la creazione di pagine web, il [!DNL Sites] Gli autori possono trovare e utilizzare le risorse digitali tramite Content Finder. Interfaccia utente di [!DNL Assets] è uguale a quello di [!DNL Sites]. Vedi [panoramica di Sites](/help/sites-authoring/page-authoring.md) per informazioni complete.
 
-L’interfaccia utente di base è la stessa di [!DNL Sites]. Per informazioni dettagliate, consulta [Panoramica dei siti](/help/sites-authoring/page-authoring.md) .
+L’interfaccia utente di base è la stessa di [!DNL Sites]. Vedi [Panoramica dei siti](/help/sites-authoring/page-authoring.md) per informazioni complete.
 
 ### Digital Asset Management e componente immagine {#digital-asset-management-versus-image-component}
 
@@ -50,31 +50,31 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 
 >[!CAUTION]
 >
->Il caricamento e/o la modifica di un grande volume di risorse (in particolare di immagini) può influire sulle prestazioni della distribuzione [!DNL Experience Manager].
+>Il caricamento e/o la modifica di un grande volume di risorse (in particolare di immagini) può influire sulle prestazioni del [!DNL Experience Manager] distribuzione.
 
 ### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
-Quando lavori con risorse digitali in [!DNL Experience Manager], è necessario comprendere la seguente terminologia:
+Quando si lavora con risorse digitali in [!DNL Experience Manager], è necessario comprendere la seguente terminologia:
 
 * **Raccolta**: Una raccolta di risorse in base alla posizione fisica (cartella), alle proprietà comuni (cartella di ricerca salvata) o alla selezione dell’utente (cartelle lightbox).
 
-* **metadati** [!DNL Assets] ; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. [!DNL Assets] offre e supporta i seguenti schemi di metadati di uso comune:
+* **Metadati** [!DNL Assets] avere metadati; ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati disponibili dipendono dalle autorizzazioni di accesso. [!DNL Assets] offre e supporta i seguenti schemi di metadati di uso comune:
 
    * Dublin Core: comprende autore, descrizione, data, oggetto e così via.
    * IPTC: comprende evento, modello, luogo e così via.
-   * WCM: incluse le proprietà della pagina, [!UICONTROL On Time] e [!UICONTROL Off Time] e così via.
+   * WCM: comprese le proprietà della pagina, [!UICONTROL Ora di attivazione] e [!UICONTROL Ora di disattivazione]e così via.
 
-* **Assegnazione tag**:  [!DNL Assets] possono essere contrassegnati e classificati. Consulta [organizzazione delle risorse](/help/assets/organize-assets.md).
+* **Assegnazione tag**: [!DNL Assets] possono essere contrassegnati e classificati. Vedi [organizzazione delle risorse](/help/assets/organize-assets.md).
 
-* **Rappresentazioni**: Un rendering è la rappresentazione binaria di una risorsa. [!DNL Assets] hanno sempre una rappresentazione principale, quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
+* **Rendering**: Un rendering è la rappresentazione binaria di una risorsa. [!DNL Assets] hanno sempre una rappresentazione principale, quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
 
-* **Versioni**: Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. Consulta [controllo delle versioni in [!DNL Assets]](manage-assets.md#asset-versioning).
+* **Versioni**: Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. Vedi [versione in [!DNL Assets]](manage-assets.md#asset-versioning).
 
-* **Risorse secondarie**: Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli in un  [!DNL Adobe Photoshop] file o le pagine in un file PDF. In [!DNL Assets] puoi gestire le risorse secondarie come le risorse.
+* **Risorse secondarie**: Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli in una [!DNL Adobe Photoshop] in un file PDF. In [!DNL Assets], puoi gestire le risorse secondarie in modo analogo alle risorse.
 
 ### Come lavorare con le risorse digitali {#how-to-work-with-assets}
 
-È possibile intervenire su una risorsa o una raccolta eseguendo specifiche azioni per creare o modificare risorse, raccolte e rappresentazioni. Molte delle azioni di base eseguite sulle risorse (caricamento, eliminazione, aggiornamento, salvataggio di risorse secondarie) attivano flussi di lavoro preconfigurati. Questi vengono attivati automaticamente in [!DNL Assets] e sono descritti in dettaglio in [!DNL Assets] gestori di contenuti multimediali.
+È possibile intervenire su una risorsa o una raccolta eseguendo specifiche azioni per creare o modificare risorse, raccolte e rappresentazioni. Molte delle azioni di base eseguite sulle risorse (caricamento, eliminazione, aggiornamento, salvataggio di risorse secondarie) attivano flussi di lavoro preconfigurati. che vengono attivate automaticamente [!DNL Assets] e sono descritti in dettaglio in [!DNL Assets] gestori di contenuti multimediali.
 
 Le attività eseguibili con questi flussi di lavoro preconfigurati:
 
@@ -87,7 +87,7 @@ Ovviamente, puoi applicare i flussi di lavoro anche manualmente. Per un elenco d
 
 ## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Per informazioni sulle differenze, consulta [Risorse e Media Library](medialibrary.md) .
+Vedi [Risorse e Media Library](medialibrary.md) per informazioni sulle differenze.
 
 >[!MORELIKETHIS]
 >

@@ -1,269 +1,268 @@
 ---
-title: Query ad hoc in Process Reporting
-seo-title: Query ad hoc in Process Reporting
-description: Creare query personalizzate per cercare  AEM Forms sui dettagli del processo e delle attività JEE in Process Reporting
-seo-description: Creare query personalizzate per cercare  AEM Forms sui dettagli del processo e delle attività JEE in Process Reporting
+title: Query ad hoc nel reporting dei processi
+seo-title: Ad-hoc Queries in Process Reporting
+description: Crea query personalizzate per cercare AEM Forms sui dettagli del processo e delle attività JEE in Process Reporting
+seo-description: Create custom queries to search for AEM Forms on JEE  process and task details in Process Reporting
 uuid: db0c5c28-b213-4582-a6ed-df127e570a4e
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
 
-
-# Query ad hoc in Process Reporting{#ad-hoc-queries-in-process-reporting}
+# Query ad hoc nel reporting dei processi{#ad-hoc-queries-in-process-reporting}
 
 ## Query ad hoc in Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Le query ad hoc in Process Reporting consentono di creare query personalizzate da utilizzare per cercare i dettagli dei processi e delle attività delle istanze  processo AEM Forms definite nell&#39;ambiente AEM Forms .
+Le query ad hoc in Process Reporting consentono di creare query personalizzate da utilizzare per cercare i dettagli dei processi e delle attività delle istanze di processo AEM Forms definite nel proprio ambiente AEM Forms.
 
-È inoltre possibile definire query ad hoc utilizzando i filtri di proprietà processo e attività. Questi filtri possono quindi essere salvati e utilizzati per eseguire i report in un secondo momento.
+È inoltre possibile definire query ad hoc utilizzando i filtri di proprietà di processo e attività. Questi filtri possono quindi essere salvati e utilizzati per eseguire i rapporti in un secondo momento.
 
-[**Ricerca**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p) processo: Cercare le istanze di processo con un filtro di ricerca definito dall&#39;utente basato sugli attributi di processo.
+[**Ricerca dei processi**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): Cerca le istanze di processo con un filtro di ricerca definito dall’utente in base agli attributi di processo.
 
-[**Dettagli**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p) processo: Visualizzare i dettagli di un&#39;istanza di processo specificando l&#39;ID del processo.
+[**Dettagli del processo**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): Visualizzare i dettagli di un&#39;istanza di processo specificando l&#39;ID del processo.
 
-**Ricerca** attività: Cercare le istanze di attività con un filtro di ricerca definito dall&#39;utente basato sugli attributi dell&#39;attività.
+**Ricerca attività**: Cercare le istanze delle attività con un filtro di ricerca definito dall&#39;utente in base agli attributi delle attività.
 
-**Dettagli** attività: Visualizzare i dettagli di un&#39;istanza di attività specificando l&#39;ID attività.
+**Dettagli attività**: Visualizzare i dettagli di un&#39;istanza di attività specificando l&#39;ID attività.
 
 ### Processi e attività {#processes-and-tasks}
 
-La procedura seguita per creare filtri ed eseguire query per i dettagli del processo è la stessa utilizzata per le attività.
+I passaggi da seguire per creare filtri ed eseguire query per i dettagli del processo sono gli stessi che per le attività.
 
-Ciò significa che le interfacce utente per Process Search e Task Search differiscono solo nei campi che è possibile cercare e nei campi restituiti nei risultati della ricerca. Ciò è dovuto semplicemente al fatto che, sebbene molti campi siano identici, alcuni campi sono specifici dei processi e alcuni campi sono specifici delle attività.
+Ciò significa che le interfacce utente per Ricerca processi e Ricerca attività differiscono solo nei campi che è possibile cercare e nei campi restituiti nei risultati della ricerca. Questo semplicemente perché, mentre molti campi sono identici, alcuni campi sono specifici ai processi e alcuni campi sono specifici alle attività.
 
-In questo articolo vengono descritte le sezioni Processo/Ricerca attività e Dettagli processo/attività. Nei luoghi appropriati, eventuali differenze specifiche saranno richiamate in modo specifico.
+Questo articolo descrive le sezioni Processo/Ricerca attività e Dettagli processo/attività . Nei luoghi appropriati, le eventuali differenze specifiche saranno specificamente richiamate.
 
-## Ricerca processo/attività {#process-task-search}
+## Ricerca di processi/attività {#process-task-search}
 
-È possibile utilizzare Process/Task Search per definire i filtri per l&#39;esecuzione di query sulle istanze di processi/attività.
+Utilizza Ricerca processi/task per definire i filtri per le istanze di processi/task di query.
 
-### Per creare una query di ricerca processo/attività {#to-create-a-process-task-search-query}
+### Per creare una query di ricerca di processi/task {#to-create-a-process-task-search-query}
 
-1. Per visualizzare le query di ricerca di processi/attività salvate o per creare una query, fare clic su **Query ad hoc**, quindi fare clic su **Processo/Ricerca attività**.
+1. Per visualizzare le query di ricerca di processi/task salvate o per creare una query, fare clic su **Query ad hoc** quindi fai clic su **Ricerca di processi/attività**.
 
    ![search_nodes](assets/search_nodes.png)
 
-   Il pannello **My Filters** viene visualizzato a destra della vista ad albero.
+   La **Filtri personali** viene visualizzato a destra della vista ad albero.
 
-   Nel pannello **My Filters**, potete creare nuove query ad hoc e fare clic per eseguire le query salvate in precedenza.
+   In **Filtri personali** è possibile creare nuove query ad-hoc e fare clic su per eseguire query salvate in precedenza.
 
-   ![my_Filters_panel](assets/my_filters_panel.png)
+   ![my_filters_panel](assets/my_filters_panel.png)
 
-1. Per eseguire una query esistente, è sufficiente fare clic sulla query nel pannello **My Filters**.
-1. Per creare una query, fare clic su **Aggiungi** (+).
+1. Per eseguire una query esistente, è sufficiente fare clic sulla query nel **Filtri personali** pannello.
+1. Per creare una query, fai clic su **Aggiungi** (+).
 
-   Viene visualizzato il pannello **Crea filtro**.
+   La **Crea filtro** viene visualizzato il pannello .
 
    ![create_filter_panel](assets/create_filter_panel.png)
 
-   Una query è costituita da uno o più filtri di query. Per creare un filtro, aggiungete una riga di filtro alla query. Per impostazione predefinita, alla query viene aggiunta una riga di filtro.
+   Una query è costituita da uno o più filtri di query. Per creare un filtro, aggiungi una riga di filtro alla query. Per impostazione predefinita, alla query viene aggiunta una riga di filtro.
 
-   **Definizione di un filtro**
+   **Per definire un filtro**
 
-   1. Selezionare un campo.
+   1. Seleziona un campo.
 
       ![filter_field](assets/filter_field.png)
 
       >[!NOTE]
       >
-      >L&#39;elenco dei campi contiene i campi specifici per  processo/attività AEM Forms.
+      >L’elenco dei campi contiene i campi specifici del processo/attività di AEM Forms.
 
-   1. Selezionare una condizione.
+   1. Seleziona una condizione.
 
       ![filter_condition](assets/filter_condition.png)
 
       >[!NOTE]
       >
-      >Le condizioni elencate dipendono dall&#39;attributo selezionato per il filtraggio.
+      >Le condizioni elencate dipendono dall’attributo selezionato per il filtro.
 
-   1. Immettere un valore.
+   1. Immetti un valore.
 
       ![filter_value](assets/filter_value.png)
 
-   1. Per aggiungere un altro filtro alla query, fare clic su **Aggiungi (+)** a destra della riga del filtro.
+   1. Per aggiungere un altro filtro alla query, fai clic su **Aggiungi (+)** a destra della riga del filtro.
 
-      Per rimuovere un filtro dalla query, fare clic su **Elimina (-)** a destra della riga del filtro.
+      Per rimuovere un filtro dalla query, fai clic su **Elimina (-)** a destra della riga del filtro.
 
       ![filter_add_del](assets/filter_add_del.png)
 
-Dopo aver creato una query, utilizzare le opzioni nell&#39;angolo superiore destro del pannello **Crea filtro** per:
+Dopo aver creato una query, utilizza le opzioni nell’angolo superiore destro del **Crea filtro** pannello a:
 
-* **Annulla**: Annulla le modifiche e torna al pannello  **My** Filterspanel.
-* **Esegui**: Esegui la query corrente per visualizzare e/o verificare i risultati. In questo caso, non è necessario salvare la query prima di eseguire la query. È possibile verificare i risultati, apportare modifiche se necessario, quindi salvare la query quando si è soddisfatti dell&#39;output.
-* **Salva**: Salvate il filtro. Il filtro può essere visualizzato ed eseguito dal pannello **Filtri personali**.
+* **Annulla**: Annulla le modifiche e torna al **Filtri personali** pannello.
+* **Esegui**: Esegui la query corrente per visualizzare e/o verificare i risultati. In questo caso, non è necessario salvare la query prima di eseguire la query. Puoi verificare i risultati, apportare modifiche se necessario e quindi salvare la query quando sei soddisfatto dell’output.
+* **Salva**: Salva il filtro. Il filtro può quindi essere visualizzato ed eseguito da **Filtri personali** pannello.
 
 ### Opzioni nel pannello Filtri personali {#options-in-my-filters-panel}
 
-Utilizzare le opzioni nel pannello **Filtri personali** per **aggiungere** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **modificare** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png) o **eliminare** 12/>lc_pr_edit_filter](assets/lc_pr_edit_filter.png)una query ad hoc.![
+Utilizza le opzioni in **Filtri personali** pannello a **Aggiungi** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Modifica** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png)oppure **Elimina** ![lc_pr_edit_filter](assets/lc_pr_edit_filter.png)una query ad-hoc.
 
-![my_filter_options](assets/my_filters_options.png)
+![my_filters_options](assets/my_filters_options.png)
 
 ### Per eseguire una query di ricerca {#to-execute-a-search-query}
 
-1. Per eseguire una query, fare clic sul filtro nel pannello **Filtri personali** oppure fare clic sul pulsante **Esegui** se si sta creando o modificando un filtro.
-1. I risultati della query vengono visualizzati nel pannello **Report** della finestra **Process Reporting**.
+1. Per eseguire una query, fai clic sul filtro nel **Filtri personali** oppure fai clic sul pulsante **Esegui** se stai creando o modificando un filtro.
+1. I risultati della query vengono visualizzati nella **Rapporto** pannello **Reporting dei processi** finestra.
 
    ![process_search_result](assets/process_search_result.png)
 
-   È possibile impaginare i risultati di ricerca con l’aiuto del pannello di impaginazione visualizzato nella parte inferiore del rapporto.
+   Puoi impaginare i risultati della ricerca utilizzando il pannello di impaginazione visualizzato nella parte inferiore del rapporto.
 
    ![process_result_png](assets/process_result_pgn.png)
 
-   Nell&#39;elenco a discesa **Display**, scegliere il numero di risultati da visualizzare per pagina.
+   In **Visualizzazione** dall’elenco a discesa, scegli il numero di risultati da visualizzare per pagina.
 
-   Nella casella di testo **Page**, immettere un numero di pagina per passare direttamente alla pagina.
+   In **Pagina** casella di testo, immettere un numero di pagina per passare direttamente a tale pagina.
 
-1. In un risultato di Process Search vengono visualizzati i seguenti campi:
+1. I campi seguenti vengono visualizzati in un risultato di Ricerca del processo:
 
-   * **ID** processo: ID del processo. Il campo è ipercollegato. Se fai clic su un ID processo in questo campo, verrai reindirizzato al pannello **[!UICONTROL Dettagli processo]** per il processo.
-   * **Iniziatore**: L&#39;utente AEM Forms  che ha avviato l&#39;istanza di processo
-   * **Ora** di creazione: Data e ora di inizio dell’istanza di processo
-   * **Ora** completamento: Data e ora in cui è stata completata l&#39;istanza del processo
-   * **Durata**: Durata dall’inizio al completamento dell’istanza di processo
+   * **ID processo**: ID del processo. Il campo è ipercollegato. Se fai clic su un ID processo in questo campo, vieni reindirizzato al **[!UICONTROL Dettagli del processo]** pannello per il processo.
+   * **Iniziatore**: Utente AEM Forms che ha avviato l&#39;istanza di processo
+   * **Ora di creazione**: Data e ora di inizio dell&#39;istanza del processo
+   * **Ora di completamento**: Data e ora in cui è stata completata l’istanza del processo
+   * **Durata**: La durata dall&#39;inizio al completamento dell&#39;istanza del processo
    * **Stato**: Lo stato corrente dell&#39;istanza di processo.
 
-   Per impostazione predefinita, il risultato è ordinato per ID processo. Tuttavia, per ordinare il risultato per uno dei campi, fare clic sul titolo del campo.
+   Per impostazione predefinita, il risultato è ordinato per ID processo. Tuttavia, per ordinare il risultato in base a uno qualsiasi dei campi, fare clic sul titolo del campo.
 
-   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fate clic su un’intestazione di colonna per ordinare il risultato crescente e fate di nuovo clic su di esso per ordinare il risultato decrescente.
+   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fai clic su un’intestazione di colonna per ordinare il risultato in senso crescente e fai di nuovo clic su di esso per ordinarlo in modo decrescente.
 
    Analogamente, i campi seguenti vengono visualizzati in un risultato di Ricerca attività:
 
-   * **ID** attività: ID dell’attività. Il campo è ipercollegato. Se si fa clic su un ID attività in questo campo, si viene reindirizzati al pannello **[!UICONTROL Dettagli attività]** per l&#39;attività.
-   * **Iniziatore**: L&#39;utente AEM Forms  che ha avviato l&#39;istanza di processo
-   * **Ora** di creazione: Data e ora di inizio dell’istanza di processo
-   * **Ora** completamento: Data e ora in cui è stata completata l&#39;istanza del processo
-   * **Durata**: Durata dall’inizio al completamento dell’istanza di processo
+   * **ID attività**: ID dell&#39;attività. Il campo è ipercollegato. Se fai clic su un ID attività in questo campo, vieni reindirizzato al **[!UICONTROL Dettagli attività]** pannello per l’attività.
+   * **Iniziatore**: Utente AEM Forms che ha avviato l&#39;istanza di processo
+   * **Ora di creazione**: Data e ora di inizio dell&#39;istanza del processo
+   * **Ora di completamento**: Data e ora in cui è stata completata l’istanza del processo
+   * **Durata**: La durata dall&#39;inizio al completamento dell&#39;istanza del processo
    * **Stato**: Lo stato corrente dell&#39;istanza di processo.
 
-   Per impostazione predefinita, il risultato è ordinato per ID attività. Tuttavia, per ordinare il risultato per uno dei campi, fare clic sul titolo del campo. Il risultato è ordinato in base alla colonna indicata da una freccia scura accanto all’intestazione della colonna.
+   Per impostazione predefinita, il risultato è ordinato per ID attività. Tuttavia, per ordinare il risultato in base a uno qualsiasi dei campi, fare clic sul titolo del campo. Il risultato è ordinato in base alla colonna indicata da una freccia scura accanto all’intestazione della colonna.
 
-   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fate clic su un’intestazione di campo per ordinare il risultato crescente e fate di nuovo clic su di esso per ordinare il risultato decrescente. L’ordine corrente (crescente/decrescente) è indicato dalla direzione della freccia scura accanto all’intestazione della colonna.
+   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fai clic su un’intestazione di campo per ordinare il risultato in senso crescente e fai di nuovo clic su di esso per ordinare in modo decrescente. L’ordinamento corrente (crescente/decrescente) è indicato dalla direzione della freccia scura accanto all’intestazione della colonna.
 
    ![task_search_result](assets/task_search_result.png)
 
-1. Fare clic sul pulsante della barra laterale ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il riquadro **My Filters** ed espandere lo spazio disponibile per il pannello **Report**.
-1. Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Report **per eseguire operazioni sul risultato della query.
+1. Fai clic sul pulsante della barra ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il **Filtri personali** e espande lo spazio disponibile per il **Rapporto** pannello.
+1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report **per eseguire operazioni sul risultato della query.
 
-   * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
+   * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nell&#39;archivio
 
-   * **Esporta in CSV**: Esportate i dati del rapporto in un file separato da virgole.
+   * **Esportazione in formato CSV**: Esporta i dati del rapporto in un file separato da virgole.
    >[!NOTE]
    >
-   >Quando esportate un rapporto, l’intero risultato della ricerca viene esportato in un file CSV e non solo nella pagina corrente
+   >Quando si esporta un rapporto, l’intero risultato della ricerca viene esportato in un file CSV e non solo nella pagina corrente
 
 ## Dettagli processo/attività {#process-task-details}
 
-Potete utilizzare il pannello **Dettagli processo** per visualizzare i dettagli di un processo specifico.
+Utilizzi le **Dettagli del processo** per visualizzare i dettagli di un processo specifico.
 
-Analogamente, per visualizzare i dettagli di un&#39;attività specifica è possibile utilizzare il pannello **Dettagli attività**.
+Allo stesso modo, puoi utilizzare il **Dettagli attività** per visualizzare i dettagli di un’attività specifica.
 
 ### Per visualizzare i dettagli processo/attività {#to-view-process-task-details}
 
-È possibile visualizzare i dettagli di un processo/attività AEM Forms :
+Puoi visualizzare i dettagli di un processo/attività AEM Forms specifico:
 
-* **Da un risultato di ricerca di processi/attività**
+* **Da un risultato di Ricerca processo/attività**
 * **Immettendo l’ID processo/attività nel pannello Dettagli processo/attività**
 
-#### Da un risultato di ricerca processo/attività {#from-a-process-task-search-result}
+#### Da un risultato di Ricerca processo/attività {#from-a-process-task-search-result}
 
-1. Eseguire una ricerca di processo/attività. Per informazioni dettagliate, vedere [Per eseguire una query di ricerca dei processi](#to-execute-a-search-query).
+1. Eseguire una ricerca di processo/attività. Per maggiori dettagli, vedi [Per eseguire una query di ricerca del processo](#to-execute-a-search-query).
 
-   Si noti che gli ID del processo visualizzati e restituiti nel risultato sono collegati in modo ipertestuale.
+   Gli ID del processo visualizzati restituiti nel risultato sono collegati in modo ipertestuale.
 
    ![process_id_list](assets/process_id_list.png)
 
-1. Fare clic su un ID processo nell&#39;elenco per visualizzare i dettagli di questo processo nel pannello **Dettagli processo**.
+1. Fai clic su un ID processo nell&#39;elenco per visualizzare i dettagli di questo processo nel **Dettagli del processo** pannello.
 
-   Il risultato della query **Process/Task Details** visualizza i dettagli delle attività/moduli contenuti nel processo/attività.
+   La **Dettagli processo/attività** il risultato della query visualizza i dettagli delle attività/dei moduli contenuti nel processo/attività.
 
-   Per impostazione predefinita, il risultato è ordinato per ID modulo/attività. Tuttavia, per ordinare il risultato per uno dei campi, fare clic sul titolo del campo. La colonna in base alla quale il risultato è ordinato è indicata da una freccia scura accanto all’intestazione della colonna.
+   Per impostazione predefinita, il risultato è ordinato per ID attività/modulo. Tuttavia, per ordinare il risultato in base a uno qualsiasi dei campi, fare clic sul titolo del campo. La colonna in base alla quale il risultato viene ordinato è indicata da una freccia scura accanto all’intestazione della colonna.
 
-   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fate clic su un’intestazione di campo per ordinare il risultato crescente e fate di nuovo clic su di esso per ordinare il risultato decrescente. L’ordine corrente (crescente/decrescente) è indicato dalla direzione della freccia scura accanto all’intestazione della colonna.
+   Poiché l’ordinamento è un’operazione di attivazione/disattivazione, fai clic su un’intestazione di campo per ordinare il risultato in senso crescente e fai di nuovo clic su di esso per ordinare in modo decrescente. L’ordinamento corrente (crescente/decrescente) è indicato dalla direzione della freccia scura accanto all’intestazione della colonna.
 
-   **Risultato dettagli processo**
+   **Risultato dei dettagli del processo**
 
    ![process_details](assets/process_details.png)
 
-   **Pannello a sinistra:** visualizza i seguenti dettagli del processo selezionato:
+   **Pannello a sinistra:** Visualizza i seguenti dettagli del processo selezionato:
 
    * Nome del processo
-   * Ora data creazione processo
-   * Ora completamento processo
-   * Durata processo
-   * Stato processo
-   * Iniziatore processo
+   * Ora della data di creazione del processo
+   * Ora di completamento del processo
+   * Durata del processo
+   * Stato del processo
+   * Iniziatore del processo
 
-   **Pannello in alto a destra:** visualizza i seguenti dettagli delle attività che compongono il processo selezionato:
+   **Pannello in alto a destra:** Visualizza i dettagli seguenti delle attività che compongono il processo selezionato:
 
    * ID attività
    * Nome attività
    * Proprietario attività
-   * Data creazione attività
-   * Ora aggiornamento attività
-   * Ora completamento attività
+   * Ora data creazione attività
+   * Data e ora dell’aggiornamento dell’attività
+   * Data e ora di completamento attività
    * Durata attività
    * Stato attività
 
-   **Pannello inferiore destro:** visualizza i seguenti dettagli della cronologia del processo selezionato:
+   **Pannello in basso a destra:** Visualizza i seguenti dettagli della cronologia del processo selezionato:
 
-   * Nome processo
-   * Iniziatore processo
-   * Ora data aggiornamento processo
-   * Ora completamento processo
-   * Stato processo
+   * Nome del processo
+   * Iniziatore del processo
+   * Ora dell&#39;aggiornamento del processo
+   * Ora di completamento del processo
+   * Stato del processo
 
-   **Risultato dettagli attività**
+   **Risultato Dettagli attività**
 
    ![task_details](assets/task_details.png)
 
-   **Pannello a sinistra:** visualizza i seguenti dettagli dell’attività selezionata:
+   **Pannello a sinistra:** Visualizza i dettagli seguenti dell&#39;attività selezionata:
 
    * Nome attività
-   * ID processo a cui appartiene l&#39;attività
+   * ID del processo a cui appartiene l&#39;attività
    * Descrizione attività
-   * Data creazione attività
-   * Ora completamento attività
+   * Ora data creazione attività
+   * Data e ora di completamento attività
    * Durata attività
    * Stato attività
    * Ciclo di attività selezionato
 
-   **Pannello in alto a destra:** visualizza i seguenti dettagli dei moduli che compongono l&#39;attività selezionata:
+   **Pannello in alto a destra:** Visualizza i dettagli seguenti dei moduli che compongono l&#39;attività selezionata:
 
    * ID modulo
-   * Ora data creazione modulo
-   * Ora data aggiornamento modulo
-   * URL modello modulo
+   * Data e ora della creazione del modulo
+   * Data e ora dell’aggiornamento del modulo
+   * Url modello di modulo
 
-   **Pannello inferiore destro:** visualizza i seguenti dettagli della cronologia del processo dell&#39;attività selezionata:
+   **Pannello in basso a destra:** Visualizza i dettagli seguenti della cronologia del processo dell&#39;attività selezionata:
 
-   * Tipo assegnazione task
+   * Tipo di assegnazione attività
    * Proprietario attività
-   * Data creazione assegnazione attività
-   * Ora aggiornamento attività
+   * Data e ora creazione assegnazione task
+   * Data e ora dell’aggiornamento dell’attività
 
 
 
 
 
 
-1. Fare clic su **Torna a Ricerca processo/attività** per tornare al risultato della ricerca dal quale sono stati trascinati i dettagli processo/attività.
+1. Fai clic su **Torna a Ricerca processo/attività** per tornare al risultato della ricerca dal quale sono stati trascinati i dettagli del processo/attività.
 
    ![back_to_search](assets/back_to_search.png)
 
-   Tuttavia, se i dettagli processo/attività sono stati trovati immettendo un ID processo/attività specifico, facendo clic su Torna a processo/Ricerca attività si torna a **Processo/Ricerca attività**, senza visualizzare alcun risultato di ricerca.
+   Tuttavia, se i dettagli del processo/attività sono stati trovati immettendo un ID processo/attività specifico, facendo clic su Torna a processo/Ricerca attività si torna a **Ricerca di processi/attività**, senza visualizzare alcun risultato della ricerca.
 
-#### Immettendo l&#39;ID processo/attività nel pannello Dettagli processo/attività {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
+#### Immettendo l’ID processo/attività nel pannello Dettagli processo/attività {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
-1. Andate al pannello **Dettagli processo/attività**.
+1. Vai a **Dettagli processo/attività** pannello.
 
    ![details_nodes](assets/details_nodes.png)
 
@@ -271,8 +270,8 @@ Analogamente, per visualizzare i dettagli di un&#39;attività specifica è possi
 
    ![process_details-1](assets/process_details-1.png)
 
-   I campi del risultato della query **Process/Task Details** sono campi specifici di un processo/attività AEM Forms .
+   I campi nel **Dettagli processo/attività** risultati della query sono campi specifici di un processo/attività AEM Forms.
 
    Per un processo, il risultato della query visualizza i dettagli delle attività contenute nel processo.
 
-   Per un&#39;attività, il risultato della query visualizza i dettagli dei moduli contenuti nell&#39;attività.
+   Per un’attività, il risultato della query visualizza i dettagli dei moduli contenuti nell’attività.

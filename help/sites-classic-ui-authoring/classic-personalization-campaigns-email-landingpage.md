@@ -1,8 +1,8 @@
 ---
 title: Creazione di una pagina di destinazione efficace per una newsletter
-seo-title: Creazione di una pagina di destinazione efficace per una newsletter
+seo-title: Creating an Effective Newsletter Landing Page
 description: Una pagina di destinazione efficace per una newsletter può stimolare quante più persone possibile a registrarsi per la newsletter (o altra campagna marketing e-mail). Dalle informazioni raccolte con le registrazioni per la newsletter è possibile ottenere lead importanti.
-seo-description: Una pagina di destinazione efficace per una newsletter può stimolare quante più persone possibile a registrarsi per la newsletter (o altra campagna marketing e-mail). Dalle informazioni raccolte con le registrazioni per la newsletter è possibile ottenere lead importanti.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 93%
+source-wordcount: '613'
+ht-degree: 92%
 
 ---
-
 
 # Creazione di una pagina di destinazione efficace per una newsletter{#creating-an-effective-newsletter-landing-page}
 
@@ -33,7 +32,7 @@ Per creare una pagina di destinazione efficace per una newsletter, è necessario
 >[!NOTE]
 >
 >Adobe non prevede di migliorare questa funzionalità (gestione di lead ed elenchi).
->Si consiglia di utilizzare [ Adobe Campaign e l&#39;integrazione per AEM](/help/sites-administering/campaign.md).
+>Consigli di sfruttare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
 
 ## Creazione di un Elenco per la newsletter {#creating-a-list-for-the-newsletter}
 
@@ -51,7 +50,7 @@ Per creare un modulo di newsletter, consulta le informazioni sulla creazione di 
 
 I campi nascosti nel seguente esempio forniscono le informazioni minime necessarie (e-mail); è possibile aggiungere successivamente altri campi, ma questo può avere un impatto sul tasso di conversione.
 
-L&#39;esempio seguente è un modulo creato all&#39;indirizzo https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
+L’esempio seguente è un modulo creato all’indirizzo https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
 1. Crea il modulo.
 

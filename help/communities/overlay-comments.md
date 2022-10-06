@@ -1,8 +1,8 @@
 ---
-title: Componenti per community di sovrapposizioni
-seo-title: Componenti per community di sovrapposizioni
-description: Componenti per community di sovrapposizioni
-seo-description: Componenti per community di sovrapposizioni
+title: Componenti di sovrapposizione community
+seo-title: Overlay communities components
+description: Componenti di sovrapposizione community
+seo-description: Overlay communities components
 uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,36 +10,35 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
+# Componenti di sovrapposizione community {#overlay-communities-components}
 
-# Componenti per community di sovrapposizioni {#overlay-communities-components}
-
-L&#39;intenzione di [overlay](/help/communities/client-customize.md#overlays) di un componente predefinito è di modificare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di cercare nella cartella /libs. Il percorso del componente è quindi identico al percorso del componente predefinito, ma si trova nella cartella /apps e non nella cartella /libs.
+L&#39;intenzione di [sovrapposizione](/help/communities/client-customize.md#overlays) un componente predefinito è quello di modificare l’aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere alla cartella /apps prima di cercare nella cartella /libs . Pertanto il percorso del componente è identico al percorso del componente predefinito, tranne che si trova nella cartella /apps e non nella cartella /libs .
 
 ## Esempio {#example}
 
-**Componente Commenti overlay**
+**Componente commenti sovrapposti**
 
-Supponete di voler modificare la funzione del commento in modo che corrisponda alla progettazione del sito Web, modificando l’intestazione del commento in modo che non venga più visualizzato l’avatar per i commenti. Le soluzioni per nascondere l&#39;avatar utilizzano CSS o, come descritto qui, sovrappongono header.jsp nella cartella delle app in modo che l&#39;HTML che contiene l&#39;avatar non venga mai inviato al client.
+Supponiamo che desideri modificare la funzione di commento in modo che corrisponda alla progettazione del sito web, modificando l’intestazione del commento in modo che non visualizzi più l’avatar per eventuali commenti. Le soluzioni per nascondere l&#39;avatar utilizzano CSS o, come descritto qui, sovrappongono header.jsp nella cartella delle app in modo che il HTML contenente l&#39;avatar non venga mai inviato al client.
 
 Per sovrapporre i commenti è necessario:
 
 1. [Pagina Commenti](/help/communities/overlay-create-comments-page.md)
 1. [Crea nodi](/help/communities/overlay-create-nodes.md)
-1. [Modifica dell&#39;aspetto](/help/communities/overlay-alter-appearance.md)
+1. [Modificare l’aspetto](/help/communities/overlay-alter-appearance.md)
 
-**E-mail di notifiche overlay**
+**Sovrapponi e-mail di notifica**
 
-Supponiamo che desideriate personalizzare il messaggio delle notifiche e-mail, potete farlo sovrapponendo [i modelli in **/libs/settings/community/templates/email/html**.](/help/communities/client-customize.md#overlays)
+Se desideri personalizzare il messaggio delle notifiche e-mail, puoi farlo tramite [sovrapposizione](/help/communities/client-customize.md#overlays) i modelli di **/libs/settings/community/templates/email/html**.
 
-Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente community specifico in cui viene creato ugc) aggiungere una condizione **if** per il verbo **speak** nei modelli dei componenti per i quali è stato abilitato il supporto **@menzioni**.
+Ad esempio, per modificare le notifiche e-mail delle menzioni (per un componente community specifico in cui viene creato l’ugc) aggiungi un **if** condizione del verbo **menzione** nei modelli dei componenti per i quali hai abilitato la **@menzioni** supporto.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -47,4 +46,4 @@ Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente co
 {{/equals}}\
 ```
 
-Per modificare il modello di notifiche e-mail per @Menzioni nei commenti del blog, posizionate fuori dalla casella in: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Per modificare il modello di notifiche e-mail per @mention nei commenti del blog, posiziona il modello preconfigurato in: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

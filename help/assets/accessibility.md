@@ -85,7 +85,7 @@ Le seguenti azioni in [!DNL Assets] utilizzare le scelte rapide da tastiera elen
 | Vista a colonne in [!DNL Assets] interfaccia utente | Tasti freccia Su e Giù | Passa a file e cartelle all’interno della stessa gerarchia. |
 | Vista a colonne in [!DNL Assets] interfaccia utente | Tasti freccia sinistra e destra | Passa a file e cartelle sopra o sotto la cartella corrente. |
 | Esplorazione delle cartelle in [!DNL Assets] | `/` | Richiama la ricerca aprendo la casella Omnisearch. |
-| [!DNL Assets] Console | &amp;grave; | Attiva/disattiva barre laterali |
+| [!DNL Assets] Console | &grave; | Attiva/disattiva barre laterali |
 | [!DNL Assets] Console | `Alt + 1` | Apri la struttura del contenuto. |
 | [!DNL Assets] Console | `Alt + 2` | Apri [!UICONTROL Navigazione] barra a sinistra. |
 | [!DNL Assets] Console | `Alt + 3` | Visualizzazione [!UICONTROL Timeline] di una risorsa selezionata. |

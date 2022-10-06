@@ -1,22 +1,21 @@
 ---
 title: Costruzioni di stile per i moduli adattivi
-seo-title: Costruzioni di stile per i moduli adattivi
+seo-title: Styling constructs for adaptive forms
 description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
-seo-description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
+seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 691608a6-be82-4d81-b876-427de997e5be
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2308'
 ht-degree: 3%
 
 ---
-
 
 # Costruzioni di stile per i moduli adattivi{#styling-constructs-for-adaptive-forms}
 
@@ -24,9 +23,9 @@ ht-degree: 3%
 
 Conoscenza del CSS e del framework LESS.
 
-## Che cosa può essere personalizzato {#what-can-be-customized}
+## Cosa può essere personalizzato {#what-can-be-customized}
 
-L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile sfruttare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o Meno) solo quando non sei in grado di assegnare uno stile ai componenti utilizzando [editor di temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+L&#39;articolo elenca le classi css dei moduli adattivi disponibili al pubblico. È possibile sfruttare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, ad esempio finestre di dialogo e barre di stato contenenti avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o Meno) solo quando non è possibile utilizzare i componenti di stile utilizzando [editor a tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
@@ -141,7 +140,7 @@ I campi includono etichette, widget, descrizione della Guida (lunga e breve) e i
 
 ## Stile etichetta {#label-styling}
 
-L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o in basso.
+L’elemento HTML **etichetta** utilizzato per il campo include le classi **sinistra** o **top** a seconda che l’etichetta si trovi in alto o a sinistra.
 
 <table>
  <tbody>
@@ -181,11 +180,11 @@ L&#39;elemento HTML **label** utilizzato per il campo include le classi **left**
  </tbody>
 </table>
 
-Le regole CSS per l&#39;etichetta vengono applicate utilizzando l&#39;etichetta **guideFieldLabel** . Se sei un autore, sovrascrivi questa regola per rendere visibili le modifiche personalizzate.
+Le regole CSS per l’etichetta vengono applicate utilizzando il **guideFieldLabel** etichetta. Se sei un autore, sovrascrivi questa regola per rendere visibili le modifiche personalizzate.
 
-## Stile dei widget {#widgets-styling}
+## Stile dei Widget {#widgets-styling}
 
-A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono la classe `guideFieldWidget` . I widget che vengono forniti con HTML normalmente utilizzano l’input dell’elemento HTML standard e selezionano. Lo stile viene eseguito di conseguenza. Non puoi assegnare uno stile a un widget personalizzato modificando le variabili.
+A seconda del tipo, i widget includono anche classi. Comunemente, i widget includono `guideFieldWidget` classe. I widget forniti con HTML normalmente utilizzano l’input standard dell’elemento HTML e selezionano. Lo stile viene eseguito di conseguenza. Non puoi assegnare uno stile a un widget personalizzato modificando le variabili.
 
 <table>
  <tbody>
@@ -289,7 +288,7 @@ A seconda del tipo, i widget includono anche classi. Comunemente, i widget inclu
 
 Lo stile dei campi mirati, obbligatori e disabilitati è limitato utilizzando le variabili. Tuttavia, è possibile modificarlo ignorando gli stili. Le restrizioni che utilizzano le variabili sono fornite principalmente per mantenere il numero di variabili sotto controllo. La restrizione può essere attenuata se l&#39;aspetto di un campo cambia drasticamente perché si trova in uno degli stati discussi in precedenza.
 
-## Descrizione della Guida {#help-description}
+## Descrizione dell’Aiuto {#help-description}
 
 Un autore può specificare il contenuto della Guida nei campi utilizzando i componenti Descrizione breve e lunga. Entrambi i componenti hanno una classe comune `.guideHelpDescription` e un&#39;altra classe `.long`/ `.short`, a seconda del tipo di descrizione. Il contenuto della Guida è racchiuso in un elemento paragrafo per sostituire lo stile della descrizione. La descrizione della Guida (lunga e breve) viene modificata utilizzando le variabili che iniziano con widgetshelp, come indicato nella tabella seguente:
 
@@ -332,7 +331,7 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
 
 ## Condizioni d’uso {#terms-and-conditions}
 
-Il widget Termini e Condizioni (TnC `` ``) consente di specificare termini e condizioni. Puoi personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
+Termini e condizioni (TnC `` ``) consente di specificare termini e condizioni. Puoi personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
 
 <table>
  <tbody>
@@ -359,7 +358,7 @@ I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai
 * pulsante
 * elemento con classe .button
 
-Codice HTML per il pulsante:
+Codice HTML per il pulsante :
 
 `<button type="button" >`
 
@@ -571,7 +570,7 @@ Il widget File allegato di moduli adattivi consente di caricare file. Puoi anche
  </tbody>
 </table>
 
-## Stili navigatore {#navigator-styles}
+## Stili navigazione {#navigator-styles}
 
 Sono disponibili quattro tipi di schede di navigazione. Sono disponibili schede a sinistra, in alto, nella procedura guidata e a soffietto. Ogni navigatore ha una classe diversa.
 
@@ -600,7 +599,7 @@ Sono disponibili quattro tipi di schede di navigazione. Sono disponibili schede 
  </tbody>
 </table>
 
-Di seguito è riportato il codice HTML per l&#39;elemento navigatore scheda (simile alle schede bootstrap):
+Di seguito è riportato il codice HTML per l’elemento navigatore schede (simile alle schede bootstrap):
 
 `<li>`
 
@@ -642,7 +641,7 @@ Di seguito è riportato il codice HTML per l&#39;elemento navigatore scheda (sim
 
 `</div>`
 
-Puoi modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando i selettori **discendente** . Ad esempio, per aggiungere uno stile decorativo testo al tag di ancoraggio:
+Puoi modificare lo stile del navigatore utilizzando le regole CSS che selezionano gli elementi utilizzando **discendente** selettori. Ad esempio, per aggiungere uno stile decorativo testo al tag di ancoraggio:
 
 Navigatore a schede in alto:
 
@@ -722,7 +721,7 @@ La classe guideNavIcon fornisce un&#39;icona predefinita ai navigatori a schede 
 
 >[!NOTE]
 >
->Puoi modificare l’icona di un particolare navigatore fornendo una classe CSS nel pannello in authoring, ad esempio &lt;CLASS_NAME>. Aggiungi un **&lt;CLASS_NAME>_nav** per l&#39;icona del navigatore.
+>Puoi modificare l’icona di un particolare navigatore fornendo una classe CSS nel pannello in authoring, ad esempio &lt;class_name>. Aggiungi un **&lt;class_name>_nav** per l&#39;icona del navigatore.
 
 <table>
  <tbody>
@@ -918,7 +917,7 @@ Un pannello include una barra degli strumenti opzionale e il relativo contenuto.
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>Colore font per il testo del pannello<br /> </p> </td>
+   <td><p>Colore del font per il testo del pannello<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
@@ -943,7 +942,7 @@ Un pannello include una barra degli strumenti opzionale e il relativo contenuto.
  </tbody>
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. Non esiste un componente di stile separato per il contenuto. `` `` Le variabili descritte vengono applicate sia al navigatore che al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. Là `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
 
 La classe non è presente nel pannello principale (RootPanel).
 
@@ -1075,9 +1074,9 @@ Queste variabili nella tabella seguente influenzano il layout fisso della barra 
  </tbody>
 </table>
 
-## Variabile specifica per il tema {#theme-specific-variable}
+## Variabile specifica per tema {#theme-specific-variable}
 
-Il tema **Semplice iscrizione** in /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` introducono anche alcune variabili. Se si desidera creare un tema che incrementa la semplice iscrizione, è possibile utilizzare le seguenti &quot;variabili extra:
+La **Registrazione semplice** Tema in /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e la categoria `guide.theme.simpleEnrollment` introduce anche alcune variabili. Se si desidera creare un tema che incrementa la semplice iscrizione, è possibile utilizzare le seguenti &quot;variabili extra:
 
 <table>
  <tbody>
@@ -1131,4 +1130,3 @@ Il tema **Semplice iscrizione** in /etc/clientlibs/fd/af/guidetheme/simpleEnroll
   </tr>
  </tbody>
 </table>
-

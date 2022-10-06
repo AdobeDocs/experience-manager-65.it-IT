@@ -1,8 +1,8 @@
 ---
 title: Integrazione dell’interfaccia utente Crea corrispondenza con il portale personalizzato
-seo-title: Integrazione dell’interfaccia utente Crea corrispondenza con il portale personalizzato
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Scopri come integrare l’interfaccia utente per la corrispondenza con il tuo portale personalizzato
-seo-description: Scopri come integrare l’interfaccia utente per la corrispondenza con il tuo portale personalizzato
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
 
-
-# Integrazione dell&#39;interfaccia utente Crea corrispondenza con il portale personalizzato{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integrazione dell’interfaccia utente Crea corrispondenza con il portale personalizzato{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Panoramica {#overview}
 
@@ -46,7 +45,7 @@ Ad esempio, il portale personalizzato prepara l’URL come\
 
 ## Chiamata in linea basata su dati {#inline-data-based-invocation}
 
-Un altro modo (e più sicuro) per chiamare l&#39;applicazione Create Correspondence potrebbe essere quello di colpire semplicemente l&#39;URL all&#39;indirizzo https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, mentre inviando i parametri e i dati per chiamare l&#39;applicazione Create Correspondence come richiesta di POST (nascondendoli dall&#39;utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
+Un altro modo (e più sicuro) per chiamare l&#39;applicazione Create Correspondence potrebbe essere semplicemente visitare l&#39;URL all&#39;indirizzo https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, durante l’invio dei parametri e dei dati per chiamare l’applicazione Create Correspondence come richiesta di POST (nasconderli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
 
 ### Parametri per la specifica della lettera {#parameters-for-specifying-letter}
 
@@ -57,7 +56,7 @@ Un altro modo (e più sicuro) per chiamare l&#39;applicazione Create Corresponde
 
 L’ordine dei parametri nella tabella specifica la preferenza dei parametri utilizzati per caricare la lettera.
 
-### Parametri per specificare l&#39;origine dati XML {#parameters-for-specifying-the-xml-data-source}
+### Parametri per la specifica dell&#39;origine dati XML {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -69,7 +68,7 @@ L’ordine dei parametri nella tabella specifica la preferenza dei parametri uti
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Dati XML da un file di origine che utilizzano protocolli di base come cq, ftp, http o file.<br /> </td> 
+   <td>Dati XML da un file di origine utilizzando protocolli di base come cq, ftp, http o file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 

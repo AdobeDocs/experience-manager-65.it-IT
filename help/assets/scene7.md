@@ -285,7 +285,6 @@ Sfoglia le risorse Dynamic Media Classic selezionando **[!UICONTROL Dynamic Medi
 >
 >* Il browser dei contenuti di Dynamic Media Classic carica circa 100 risorse e le ordina per nome.
 >* Se hai impostato un server di anteprima sicuro, il browser utilizza tale server di anteprima per eseguire il rendering di miniature e risorse.
-
 >
 
 
@@ -336,7 +335,6 @@ Per impostazione predefinita, Experience Manager cerca nella cartella selezionat
 >
 >* Durante la ricerca di video, si cerca una singola rappresentazione. I risultati restituiscono il rendering originale (solo &amp;ast;.mp4) e il rendering codificato.
 >* Durante la ricerca di un set video adattivo, stai cercando nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta una parola chiave, Experience Manager non esegue la ricerca nelle sottocartelle.
-
 >
 
 

@@ -1,66 +1,65 @@
 ---
 title: Personalizzazione branding
-seo-title: Personalizzazione branding
-description: Personalizzate l'icona dell'applicazione, il nome dell'applicazione, le immagini di avvio e la pagina di login per fornire un aspetto e un aspetto distinti dell'organizzazione 'app AEM Forms.
-seo-description: Personalizzate l'icona dell'applicazione, il nome dell'applicazione, le immagini di avvio e la pagina di login per fornire un aspetto e un aspetto distinti dell'organizzazione 'app AEM Forms.
+seo-title: Branding Customization
+description: Personalizza l’icona dell’applicazione, il nome dell’applicazione, le immagini di lancio e la pagina di accesso per fornire un aspetto e un aspetto distinti dell’organizzazione all’app AEM Forms.
+seo-description: Customize the application icon, application name, launch images, and login page to provide a distinct organization-specific look and feel to AEM Forms app.
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '886'
 ht-degree: 2%
 
 ---
 
-
 # Personalizzazione branding {#branding-customization}
 
-Potete personalizzare l&#39;icona dell&#39;applicazione, il nome dell&#39;applicazione, le immagini di avvio e la pagina di login per fornire un aspetto specifico dell&#39;organizzazione a &#39;app AEM Forms. Ad esempio, potete modificare le immagini per utilizzare i logo aziendali. L&#39;app AEM Forms  supporta le seguenti personalizzazioni:
+Puoi personalizzare l’icona dell’applicazione, il nome dell’applicazione, le immagini di avvio e la pagina di accesso per fornire all’app AEM Forms un aspetto specifico per l’organizzazione. Ad esempio, puoi modificare le immagini per utilizzare i loghi della tua organizzazione. L’app AEM Forms supporta le seguenti personalizzazioni:
 
-* Personalizzazione delle immagini dell’icona e dell’avvio dell’applicazione
-* Personalizzazione del nome dell&#39;app
-* Personalizzazione delle immagini nella pagina di login
-* Personalizzazione del logo nel menu dell&#39;app
+* Personalizzazione dell’icona dell’applicazione e delle immagini di lancio
+* Personalizzazione del nome dell’app
+* Personalizzazione delle immagini nella pagina di accesso
+* Personalizzazione del logo nel menu dell’app
 
-## Personalizzazione delle immagini di icona e lancio {#customizing-icon-and-launch-images}
+## Personalizzazione delle immagini icona e lancio {#customizing-icon-and-launch-images}
 
-Per personalizzare l&#39;icona dell&#39;app predefinita e l&#39;immagine di avvio dell&#39;app  AEM Forms, effettuate le seguenti operazioni:
+Per personalizzare l’icona dell’app predefinita e l’immagine di avvio dell’app AEM Forms, effettua le seguenti operazioni:
 
 >[!NOTE]
 >
->Per tutte le icone e immagini, usate il formato PNG non interlacciato.
+>Per tutte le icone e le immagini, utilizza il formato PNG non interlacciato.
 
-### Personalizzazione delle immagini di icona e lancio {#to-customize-icon-and-launch-images}
+### Personalizzazione delle immagini icona e lancio {#to-customize-icon-and-launch-images}
 
 #### Per iOS {#for-ios}
 
-1. Apri il progetto `Capture.xcodeproj` in Xcode.
-1. (***Per personalizzare l&#39;icona***) Nella visualizzazione del Navigator di Capture, passare a **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**. Fare clic sul menu a discesa accanto ai file Icona. Specificate il nome del file di icona (.png) e caricate il file in **[!UICONTROL Capture > Capture > Resources > icons]**. Le dimensioni attualmente supportate sono: 29x29, 50x50, 58x58, 72x72, 100x100 e 144x144.
-1. (***Per personalizzare le immagini del lancio***) Accertatevi che i nomi file delle immagini siano:
+1. Apri `Capture.xcodeproj` progetto in Xcode.
+1. (***Icona per personalizzare***) Nella visualizzazione Navigatore di Capture, passare a **[!UICONTROL Cattura > Cattura > File di supporto > Capture-info.plist]**. Fai clic sull’elenco a discesa accanto ai file Icona . Specifica il nome del file di icona (.png) e carica il file in **[!UICONTROL Cattura > Cattura > Risorse > icone]**. Le dimensioni attualmente supportate sono: 29x29, 50x50, 58x58, 72x72, 100x100 e 144x144.
+1. (***Per personalizzare le immagini di lancio***) Assicurati che i nomi dei file delle immagini siano:
 
    * Per verticale: `Default-Portrait~ipad.png` e `Default-Portrait@2x~ipad.png`
    * Per orizzontale: `Default-Landscape~ipad.png` e `Default-Landscape@2x~ipad.png`
 
-   Caricateli nel progetto Capture per sostituire i file esistenti nel progetto.
+   Caricali nel progetto Capture per sostituire i file esistenti nel progetto.
 
    >[!NOTE]
    >
-   >Accertatevi che il nome e la risoluzione dell’immagine corrispondano all’immagine sostituita nel progetto.
+   >Assicurati che il nome e la risoluzione dell&#39;immagine corrispondano all&#39;immagine sostituita nel progetto.
 
-1. Create ed eseguite &#39;app AEM Forms sul dispositivo iOS o sul simulatore iOS.
+1. Crea ed esegui l’app AEM Forms sul dispositivo iOS o sul simulatore iOS.
 
 #### Per Android {#for-android}
 
-1. Denominate i file di icona dell’applicazione come:
+1. Denomina i file delle icone dell&#39;applicazione come:
 
    `ic_launcher.png`
 
-1. Inserite i file di icona corrispondenti nelle seguenti directory:
+1. Posiziona i file di icona corrispondenti nelle seguenti directory:
 
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-hdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-mdpi`
@@ -70,68 +69,68 @@ Per personalizzare l&#39;icona dell&#39;app predefinita e l&#39;immagine di avvi
 
    >[!NOTE]
    >
-   >Accertatevi che il nome e la risoluzione dell’immagine corrispondano all’immagine sostituita nel progetto.
+   >Assicurati che il nome e la risoluzione dell&#39;immagine corrispondano all&#39;immagine sostituita nel progetto.
 
-1. Rigenerate l&#39;app  AEM Forms.
+1. Rigenera l’app AEM Forms.
 
 ### Per Windows {#for-windows}
 
-1. Sostituisce le icone nel percorso:
+1. Sostituisci le icone nel percorso:
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\icons\windows`
 
-1. Sostituisce l’immagine di avvio nel percorso:
+1. Sostituisci l’immagine del modulo di avvio nel percorso:
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
    >[!NOTE]
    >
-   >Accertatevi che il nome e la risoluzione dell’immagine corrispondano all’immagine sostituita nel progetto.
+   >Assicurati che il nome e la risoluzione dell&#39;immagine corrispondano all&#39;immagine sostituita nel progetto.
 
-1. Rigenerate l&#39;app  AEM Forms.
+1. Rigenera l’app AEM Forms.
 
-## Personalizzare il nome dell&#39;app {#customize-the-app-name}
+## Personalizzare il nome dell’app {#customize-the-app-name}
 
 ### Per iOS {#for-ios-1}
 
-1. Apri il progetto `Capture.xcodeproj` in Xcode.
-1. Nella visualizzazione del Navigator di Capture, passare a **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
+1. Apri `Capture.xcodeproj` progetto in Xcode.
+1. Nella visualizzazione Navigatore di Capture, passare a **[!UICONTROL Cattura > Cattura > File di supporto > InfoPlist.strings]**.
 
-   Aggiornate il valore dell&#39;attributo `CFBundleDisplayName` in un nome che desiderate visualizzare per l&#39;app.
+   Aggiorna il valore per `CFBundleDisplayName` Attributo a un nome che desideri visualizzare per l&#39;app.
 
-1. Create ed eseguite &#39;app AEM Forms sul dispositivo iOS o sul simulatore iOS.
+1. Crea ed esegui l’app AEM Forms sul dispositivo iOS o sul simulatore iOS.
 
-   Per informazioni dettagliate sulla creazione dell&#39;app per iOS, consultate [Configurare il progetto Xcode e creare l&#39;app iOS](/help/forms/using/setup-xcode-project-build-installer.md).
+   Per informazioni dettagliate sulla creazione dell’app per iOS, vedi [Configurare il progetto Xcode e creare l&#39;app iOS](/help/forms/using/setup-xcode-project-build-installer.md).
 
 ### Per Android {#for-android-1}
 
-1. Aprite il seguente file XML in qualsiasi editor di testo o XML:
+1. Apri il seguente file XML in qualsiasi editor di testo o XML:
 
    `[User_Home]/Projects/[your-project]/src/android/res/values/strings.xml and android/res/values-en/strings.xml`
 
-1. Aggiornare il valore della chiave `app_name`.
-1. Rigenerate l&#39;app  AEM Forms.
+1. Aggiorna il valore della chiave `app_name`.
+1. Rigenera l’app AEM Forms.
 
-   Per informazioni dettagliate sulla creazione dell&#39;app per Android, consultate [Configurare il progetto Eclipse e creare l&#39;app Android](/help/forms/using/setup-eclipse-project-build-installer.md).
+   Per i dettagli sulla creazione dell&#39;app per Android, vedi [Configurare il progetto Eclipse e creare l’app Android](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 ### Per Windows {#for-windows-1}
 
-1. Aprite il seguente file XML in qualsiasi editor di testo:
+1. Apri il seguente file XML in qualsiasi editor di testo:
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Aggiornate il valore nel tag `<name>...</name>`.
-1. Rigenerate l&#39;app  AEM Forms.
+1. Aggiorna il valore in `<name>...</name>` tag .
+1. Rigenera l’app AEM Forms.
 
-   Per informazioni dettagliate sulla creazione dell&#39;app per Windows, consultate [Configurare il progetto di Visual Studio e creare l&#39;app per Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
+   Per informazioni dettagliate sulla creazione dell&#39;app per Windows, vedi [Configurare il progetto Visual Studio e creare l&#39;app Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
-## Personalizzazione delle immagini nella pagina di login {#customizing-images-on-the-login-page}
+## Personalizzazione delle immagini nella pagina di accesso {#customizing-images-on-the-login-page}
 
-La pagina di accesso dell&#39;app AEM Forms  ha logo e immagini di sfondo. Il logo si trova sopra la finestra di dialogo di login e l’immagine di sfondo si trova sotto la finestra di dialogo di login. Per personalizzare l’immagine predefinita nella pagina di login, effettuate le seguenti operazioni:
+La pagina di accesso dell’app AEM Forms dispone di logo e immagini di sfondo. Il logo si trova sopra la finestra di dialogo di accesso e l’immagine di sfondo si trova sotto la finestra di dialogo di accesso. Esegui i seguenti passaggi per personalizzare l’immagine predefinita nella pagina di accesso:
 
 **Prima di iniziare**
 
-Assicuratevi di disporre delle immagini seguenti:
+Assicurati di avere le seguenti immagini:
 
 <table>
  <tbody>
@@ -153,40 +152,40 @@ Assicuratevi di disporre delle immagini seguenti:
  </tbody>
 </table>
 
-**Per personalizzare le immagini nella pagina di login utilizzando Xcode**
+**Per personalizzare le immagini nella pagina di accesso utilizzando Xcode**
 
-1. Apri il progetto `Capture.xcodeproj` in Xcode.
+1. Apri `Capture.xcodeproj` progetto in Xcode.
 
-1. Individuate la cartella `www/wsmobile/images`.
-1. Per modificare il logo, sostituire il file `LC-logo.png` predefinito con il file `LC-logo.png` personalizzato.
-1. Per modificare lo sfondo, sostituire il file `Landing_bg.jpeg` predefinito con il file `Landing_bg.jpeg`personalizzato.
-1. Create ed eseguite &#39;app AEM Forms sul dispositivo iOS o sul simulatore iOS.
+1. Passa a `www/wsmobile/images`cartella.
+1. Per modificare il logo, sostituisci il predefinito `LC-logo.png` con il file personalizzato `LC-logo.png` file.
+1. Per modificare lo sfondo, sostituisci il valore predefinito `Landing_bg.jpeg` con il file personalizzato `Landing_bg.jpeg`file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo iOS o sul simulatore iOS.
 
 ### Per personalizzare le immagini nelle pagine di login utilizzando Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Apri il progetto Android in Eclipse.
 
-1. Individuate la cartella `assets/www/wsmobile/images`.
-1. Per modificare il logo, sostituire il file `LC-logo.png` predefinito con il file `LC-logo.png` personalizzato.
-1. Per modificare lo sfondo, sostituire il file `Landing_bg.jpeg` predefinito con il file `Landing_bg.jpeg`personalizzato.
-1. Creare ed eseguire &#39;app AEM Forms sul dispositivo Android.
+1. Passa a `assets/www/wsmobile/images`cartella.
+1. Per modificare il logo, sostituisci il predefinito `LC-logo.png` con il file personalizzato `LC-logo.png` file.
+1. Per modificare lo sfondo, sostituisci il valore predefinito `Landing_bg.jpeg` con il file personalizzato `Landing_bg.jpeg`file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo Android.
 
-### Per personalizzare le immagini nelle pagine di login utilizzando Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
+### Personalizzazione di immagini nelle pagine di accesso tramite Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
-1. Aprire il progetto `MWSWindows.sln` in Visual Studio.
+1. Apri `MWSWindows.sln` progetto in Visual Studio.
 
-1. Individuate la cartella `MWSWindows\www\wsmobile\images`.
-1. Per modificare il logo, sostituire il file `LC-logo.png` predefinito con il file `LC-logo.png` personalizzato.
-1. Per modificare lo sfondo, sostituire il file `Landing_bg.jpeg` predefinito con il file `Landing_bg.jpeg`personalizzato.
-1. Creare ed eseguire  app AEM Forms sul dispositivo Windows.
+1. Passa a `MWSWindows\www\wsmobile\images`cartella.
+1. Per modificare il logo, sostituisci il predefinito `LC-logo.png` con il file personalizzato `LC-logo.png` file.
+1. Per modificare lo sfondo, sostituisci il valore predefinito `Landing_bg.jpeg` con il file personalizzato `Landing_bg.jpeg`file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo Windows.
 
-## Personalizzazione del logo nel menu dell&#39;app {#customizing_images_on_the_login_page-1}
+## Personalizzazione del logo nel menu dell’app {#customizing_images_on_the_login_page-1}
 
-Dopo aver effettuato l&#39;accesso all&#39;app AEM Forms  e aver toccato il pulsante del menu, il logo è visibile sopra il menu. Per personalizzare il logo predefinito, effettuate le seguenti operazioni:
+Dopo aver effettuato l’accesso all’app AEM Forms e aver toccato il pulsante del menu , puoi vedere il logo sopra il menu. Per personalizzare il logo predefinito, effettua le seguenti operazioni:
 
 **Prima di iniziare**
 
-Accertatevi di disporre della seguente immagine:
+Assicurati di avere la seguente immagine:
 
 <table>
  <tbody>
@@ -203,26 +202,26 @@ Accertatevi di disporre della seguente immagine:
  </tbody>
 </table>
 
-**Per personalizzare le immagini nella pagina di login utilizzando Xcode**
+**Per personalizzare le immagini nella pagina di accesso utilizzando Xcode**
 
-1. Apri il progetto `Capture.xcodeproj` in Xcode.
+1. Apri `Capture.xcodeproj` progetto in Xcode.
 
-1. Individuate la cartella `www/wsmobile/images`.
-1. Per modificare il logo, sostituire il file `aem_icon.png` predefinito con il file `aem_icon.png` personalizzato.
-1. Create ed eseguite &#39;app AEM Forms sul dispositivo iOS o sul simulatore iOS.
+1. Passa a `www/wsmobile/images`cartella.
+1. Per modificare il logo, sostituisci l’impostazione predefinita `aem_icon.png` con il file personalizzato `aem_icon.png` file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo iOS o sul simulatore iOS.
 
 ### Per personalizzare le immagini nelle pagine di login utilizzando Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Apri il progetto Android in Eclipse.
 
-1. Individuate la cartella `assets/www/wsmobile/images`.
-1. Per modificare il logo, sostituire il file `aem_icon.png` predefinito con il file `aem_icon.png` personalizzato.
-1. Creare ed eseguire &#39;app AEM Forms sul dispositivo Android.
+1. Passa a `assets/www/wsmobile/images`cartella.
+1. Per modificare il logo, sostituisci l’impostazione predefinita `aem_icon.png` con il file personalizzato `aem_icon.png` file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo Android.
 
-### Per personalizzare le immagini nelle pagine di login utilizzando Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### Personalizzazione di immagini nelle pagine di accesso tramite Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
-1. Aprire il progetto `MWSWindows.sln` in Visual Studio.
+1. Apri `MWSWindows.sln` progetto in Visual Studio.
 
-1. Individuate la cartella `MWSWindows\www\wsmobile\images`.
-1. Per modificare il logo, sostituire il file `aem_icon.png` predefinito con il file `aem_icon.png` personalizzato.
-1. Creare ed eseguire  app AEM Forms sul dispositivo Windows.
+1. Passa a `MWSWindows\www\wsmobile\images`cartella.
+1. Per modificare il logo, sostituisci l’impostazione predefinita `aem_icon.png` con il file personalizzato `aem_icon.png` file.
+1. Crea ed esegui l’app AEM Forms sul dispositivo Windows.

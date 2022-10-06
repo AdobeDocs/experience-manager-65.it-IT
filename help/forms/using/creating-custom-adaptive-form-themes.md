@@ -1,76 +1,75 @@
 ---
-title: Creazione di temi modulo adattivi personalizzati
-seo-title: Creazione di temi modulo adattivi personalizzati
-description: Un tema modulo adattivo è una libreria AEM client utilizzata per definire gli stili (aspetto e aspetto) di un modulo adattivo. Scoprite come creare temi per moduli adattivi personalizzati.
-seo-description: Un tema modulo adattivo è una libreria AEM client utilizzata per definire gli stili (aspetto e aspetto) di un modulo adattivo. Scoprite come creare temi per moduli adattivi personalizzati.
+title: Creazione di temi modulo adattivo personalizzati
+seo-title: Creating custom adaptive form themes
+description: Un tema modulo adattivo è una libreria client AEM che consente di definire gli stili (aspetto e aspetto) di un modulo adattivo. Scopri come creare temi di modulo adattivo personalizzati.
+seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
-
 
 # Creazione di temi modulo adattivo personalizzati {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
-> AEM Forms fornisce la funzionalità [Editor tema](/help/forms/using/themes.md) per creare e modificare moduli adattivi [temi](/help/forms/using/themes.md). Eseguite i passaggi elencati in questo articolo, solo se avete effettuato l&#39;aggiornamento da una versione che non dispone di [Editor tema](/help/forms/using/themes.md) e disponete di un investimento esistente in temi creati utilizzando file Less/CSS (metodo editor pre-tema).
+>AEM Forms fornisce [Editor tema](/help/forms/using/themes.md) capacità di creare e modificare moduli adattivi [temi](/help/forms/using/themes.md). Esegui i passaggi elencati in questo articolo, solo se hai effettuato l’aggiornamento da una versione che non ha [Editor tema](/help/forms/using/themes.md) e disponi di un investimento esistente nei temi creati utilizzando i file Less/CSS (metodo dell&#39;editor pre-theme).
 
 ## Prerequisiti {#prerequisites}
 
 * Conoscenza del framework LESS (Leaner CSS)
 * Come creare una libreria client in Adobe Experience Manager
-* [Creazione di un ](/help/forms/using/custom-adaptive-forms-templates.md) modello di modulo adattivo per l’utilizzo del tema creato
+* [Creazione di un modello di modulo adattivo](/help/forms/using/custom-adaptive-forms-templates.md) per utilizzare il tema creato
 
 ## Tema modulo adattivo {#adaptive-form-theme}
 
-Un **tema modulo adattivo** è una libreria client AEM che consente di definire gli stili (aspetto e aspetto) di un modulo adattivo.
+Un **tema modulo adattivo** è una libreria client AEM utilizzata per definire gli stili (aspetto e aspetto) di un modulo adattivo.
 
-Potete creare un **modello adattivo** e applicare il tema al modello. Quindi utilizzate questo modello personalizzato per creare un **modulo adattivo**.
+Crea un **modello adattivo** e applica il tema al modello. Quindi utilizza questo modello personalizzato per creare un **modulo adattivo**.
 
-![Modulo adattivo e libreria client](assets/hierarchy.png)
+![Moduli adattivi e libreria client](assets/hierarchy.png)
 
 ## Per creare un tema modulo adattivo {#to-create-an-adaptive-form-theme}
 
 >[!NOTE]
 >
->La procedura seguente è descritta utilizzando nomi di esempio per AEM oggetti quali nodo, proprietà e cartelle.
+>La procedura seguente viene descritta utilizzando nomi di esempio per oggetti AEM quali nodo, proprietà e cartelle.
 >
->Se si seguono questi passaggi utilizzando i nomi, il modello risultante dovrebbe essere simile all&#39;istantanea seguente:
+>Se si seguono questi passaggi utilizzando i nomi, il modello risultante dovrebbe essere simile al seguente snapshot:
 
-![Foresta a tema Modulo adattivo ](assets/thumbnail.png)
-**snapshotFigura:Esempio di tema** *foresta*
+![Snapshot dei moduli adattivi a tema foresta](assets/thumbnail.png)
+**Figura:** *Esempio di tema della foresta*
 
-1. Creare un nodo di tipo `cq:ClientLibraryFolder` sotto il nodo `/apps`.
+1. Crea un nodo di tipo `cq:ClientLibraryFolder` in `/apps`nodo.
 
-   Ad esempio, creare il nodo seguente:
+   Ad esempio, crea il seguente nodo:
 
    `/apps/myAfThemes/forestTheme`
 
-1. Aggiungete al nodo una proprietà stringa con più valori `categories` e impostatene il valore in modo appropriato.
+1. Aggiungi una proprietà stringa con più valori `categories` sul nodo e impostarne il valore in modo appropriato.
 
    Ad esempio, impostare la proprietà su: `af.theme.forest`.
 
    ![Snapshot archivio CRX](assets/3-2.png)
 
-1. Aggiungete due cartelle, `less` e `css`, e un file `css.txt` al nodo creato al punto 1:
+1. Aggiungi due cartelle, `less` e `css`e un file `css.txt` al nodo creato nel passaggio 1:
 
-   * `less` cartella: Contiene i file  `less` variabili in cui vengono definite le  `less` variabili e  `less mixins` che vengono utilizzate per gestire gli stili .css.
+   * `less` cartella: Contiene la `less` file variabili in cui si definiscono i `less` variabili e `less mixins` utilizzati per gestire gli stili .css.
 
-      Questa cartella è composta da `less` file variabili, `less` file mixin, `less` file che definiscono gli stili usando mixin e variabili. E tutti questi meno file vengono poi importati in stili.less.
+      Questa cartella è costituita da `less` file variabili, `less` file misti, `less` file che definiscono gli stili utilizzando mixin e variabili. E tutti questi file in meno vengono importati in style.less.
 
-   * `css`cartella: Contiene i file .css in cui vengono definiti gli stili statici da utilizzare nel tema.
+   * `css`cartella: Contiene i file .css in cui si definiscono gli stili statici da utilizzare nel tema.
 
-   **Meno file** variabili: Si tratta dei file in cui potete definire o ignorare le variabili utilizzate per definire gli stili CSS.
+   **Meno file variabili**: Si tratta dei file , in cui definisci o sovrascrivi le variabili utilizzate nella definizione degli stili CSS.
 
-   I moduli adattivi forniscono variabili OOOTB definite nei seguenti file .less:
+   I moduli adattivi forniscono variabili OOTB definite nei seguenti file .less:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -79,13 +78,13 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   È possibile utilizzare meno variabili fornite con i moduli adattivi, ignorare queste variabili o creare nuove variabili minori.
+   È possibile utilizzare le variabili minori fornite con i moduli adattivi, sovrascrivere queste variabili o creare nuove variabili minori.
 
    >[!NOTE]
    >
-   >Durante l&#39;importazione dei file del pre-processore minore, nell&#39;istruzione import specificare il percorso relativo dei file.
+   >Durante l’importazione dei file dei meno preprocessori, nell’istruzione di importazione specificare il percorso relativo dei file.
 
-   Esempio di sostituzione delle variabili:
+   Esempio di variabili di override:
 
    ```css
    @button-background-color: rgb(19, 102, 44);
@@ -95,13 +94,13 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
    @button-font-color: #ffffff;
    ```
 
-   Per sovrascrivere le variabili `less`:
+   Per ignorare il `less`variabili:
 
    1. Importa variabili di modulo adattivo predefinite:
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
-   1. Quindi importate il file minore che include le variabili sostituite.
+   1. Quindi importa il file less che include le variabili sostituite.
 
    Esempio di nuove definizioni di variabili:
 
@@ -110,9 +109,9 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Meno file mixin:** È possibile definire le funzioni che accettano le variabili come argomenti. L&#39;output di queste funzioni sono gli stili risultanti. Usate questi mixin all&#39;interno di stili diversi, per evitare di ripetere stili CSS.
+   **Meno file mixin:** Puoi definire le funzioni che accettano le variabili come argomenti. L&#39;output di queste funzioni sono gli stili risultanti. Utilizza questi mixin all’interno di stili diversi, per evitare di ripetere stili CSS.
 
-   I moduli adattivi forniscono mixaggi OOOTB definiti in:
+   I moduli adattivi forniscono mixer OOTB definiti in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 
@@ -120,7 +119,7 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
 
-   Definizione mixin campione:
+   Definizione del mixin campione:
 
    ```css
    .rounded-corners (@radius) {
@@ -136,9 +135,9 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
    }
    ```
 
-   **Styles.less File:** utilizzate questo file per includere tutti i file minori (variabili, mixin, stili) da utilizzare nella libreria client.
+   **File Styles.less:** Usa questo file per includere tutti i file minori (variabili, mixin, stili) che devi utilizzare nella libreria client.
 
-   Nel seguente file di esempio `styles.less`, l&#39;istruzione import può essere inserita in qualsiasi ordine.
+   Nel seguente esempio: `styles.less` file, l&#39;istruzione import può essere inserita in qualsiasi ordine.
 
    Le istruzioni per importare i seguenti file .less sono obbligatorie:
 
@@ -175,7 +174,7 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
    }
    ```
 
-   Il percorso `css.txt` contiene i percorsi dei file .css da scaricare per la libreria.
+   La `css.txt` contiene i percorsi dei file .css da scaricare per la libreria.
 
    Esempio:
 
@@ -195,9 +194,9 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
 
    >[!NOTE]
    >
-   >Il file Styles.less non è obbligatorio. Ciò significa che non è necessario creare questo file, se non sono stati definiti stili, variabili o mixin personalizzati.
+   >Il file Styles.less non è obbligatorio. Questo significa che non devi creare questo file, se non hai definito stili, variabili o mixin personalizzati.
    >
-   >Tuttavia, se non create un file style.less, nel file css.txt dovete rimuovere il commento dalla riga seguente:
+   >Tuttavia, se non si crea un file style.less, nel file css.txt, è necessario rimuovere il commento dalla seguente riga:
    >
    >**`#base=less`**
    >
@@ -207,32 +206,31 @@ Potete creare un **modello adattivo** e applicare il tema al modello. Quindi uti
 
 ## Per utilizzare un tema in un modulo adattivo {#to-use-a-theme-in-an-adaptive-form}
 
-Dopo aver creato un tema modulo adattivo, effettuare le seguenti operazioni per utilizzare il tema in un modulo adattivo:
+Dopo aver creato un tema del modulo adattivo, esegui i seguenti passaggi per utilizzare questo tema in un modulo adattivo:
 
-1. Per includere il tema creato in [per creare un tema modulo adattivo](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), creare una pagina personalizzata di tipo `cq:Component`.
+1. Per includere il tema creato in [per creare un tema modulo adattivo](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) sezione, creare una pagina personalizzata di tipo `cq:Component`.
 
    Esempio, `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Aggiungete una proprietà `sling:resourceSuperType` e impostatene il valore come `fd/af/components/page/base`.
+   1. Aggiungi un `sling:resourceSuperType` e impostarne il valore come `fd/af/components/page/base`.
 
       ![Snapshot archivio CRX](assets/1-2.png)
 
-   1. Per utilizzare un tema nella pagina, è necessario aggiungere al nodo un file library.jsp prevalente.
+   1. Per utilizzare un tema nella pagina, è necessario aggiungere un file di override library.jsp al nodo.
 
-      Quindi, potete importare il tema creato in Per creare una sezione tema modulo adattivo di questo articolo.
+      Quindi importi il tema creato in Per creare una sezione del tema del modulo adattivo di questo articolo.
 
-      Il frammento di codice di esempio seguente importa il tema `af.theme.forest`.
+      Il frammento di codice di esempio seguente importa il `af.theme.forest` tema.
 
       ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
 
-   1. **Facoltativo**: Nella pagina personalizzata, ignorate header.jsp, piè di pagina.jsp e body.jsp, a seconda delle necessità.
+   1. **Facoltativo**: Nella pagina personalizzata, sovrascrivi header.jsp, footer.jsp e body.jsp, come necessario.
 
-1. Creare un modello personalizzato (ad esempio: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) il cui jcr:content punta alla pagina personalizzata creata nel passaggio precedente (ad esempio: `myAfCustomizations/myAfPages/forestPage)`.
+1. Crea un modello personalizzato (ad esempio: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) il cui jcr:content punta alla pagina personalizzata creata nel passaggio precedente (ad esempio: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot archivio CRX](assets/2-1.png)
 
-1. Creare un modulo adattivo utilizzando il modello creato nel passaggio precedente. L&#39;aspetto del modulo adattivo è definito dal tema creato in Per creare una sezione del tema del modulo adattivo in questo articolo.
-
+1. Crea un modulo adattivo utilizzando il modello creato nel passaggio precedente. L’aspetto del modulo adattivo è definito dal tema creato in Per creare un modulo adattivo sezione del tema di questo articolo.

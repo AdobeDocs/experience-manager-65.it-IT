@@ -1,19 +1,19 @@
 ---
-title: Guida introduttiva a Headless
+title: Guida introduttiva di Headless
 description: Con questa guida rapida, scopri le nozioni di base delle potenti funzionalità headless di AEM 6.5 come Modelli di contenuto, Frammenti di contenuto e API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 1%
+ht-degree: 54%
 
 ---
 
-# Guida introduttiva a Headless {#introduction}
+# Guida introduttiva di Headless {#introduction}
 
-Le guide introduttive headless forniscono un percorso semplice per creare, gestire e distribuire esperienze con AEM 6.5 in cinque passaggi, utile per gli utenti che già conoscono la tecnologia AEM e headless. Ogni guida si basa sul precedente, quindi si consiglia di esplorarle in modo approfondito e in ordine.
+Le guide introduttive headless forniscono un percorso semplice per creare, gestire e distribuire esperienze con AEM 6.5 in cinque passaggi, utile per gli utenti che già conoscono la tecnologia AEM e headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
-1. [Creazione di una configurazione](create-configuration.md)
+1. [Creazione di una configurazione ](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
 1. [Creazione di una cartella di risorse](create-assets-folder.md)
 1. [Creazione di un frammento di contenuto](create-content-fragment.md)
@@ -27,16 +27,16 @@ Le guide introduttive headless forniscono un percorso semplice per creare, gesti
 
 ## Pubblico {#audience}
 
-Le attività descritte nelle guide introduttive headless sono necessarie per una dimostrazione completa e di base delle funzionalità headless AEM. Chiunque abbia accesso come amministratore a un’istanza di test AEM può seguire queste guide per comprendere la consegna headless in AEM, anche se qualcuno con esperienza di sviluppo è ideale.
+Le attività descritte nelle guide introduttive headless sono necessarie per una dimostrazione completa e di base delle funzionalità headless AEM. Chiunque abbia accesso come amministratore a un’istanza di prova di AEM può seguire queste istruzioni per comprendere la distribuzione headless in AEM. Tuttavia, è consigliabile avere esperienza come sviluppatore.
 
-Tuttavia, in una situazione di produzione, le attività saranno eseguite da diversi utenti tipo in un numero variabile di volte. Esempio:
+In situazioni di produzione, le attività sono eseguite da diversi utenti per un numero variabile di volte. Ad esempio:
 
-* **Amministratori** deve impostare la configurazione iniziale e la struttura delle cartelle per il contenuto normalmente una sola volta o sporadicamente.
-* **Architetti dell&#39;informazione** in genere aggiungeranno nuovi modelli man mano che le esigenze dell&#39;organizzazione evolvono.
-* **Autori dei contenuti** creerà continuamente nuovi contenuti come Frammenti di contenuto in base ai modelli definiti dagli architetti.
+* Gli **amministratori** devono impostare la configurazione iniziale e la struttura delle cartelle per il contenuto, di solito una sola volta o occasionalmente.
+* Gli **architetti dell’informazione** in genere aggiungono nuovi modelli man mano che le esigenze dell’organizzazione aumentano.
+* Gli **autori di contenuti** creano in modo continuativo nuovi contenuti, come frammenti di contenuto, in base ai modelli definiti dagli architetti.
 
 Le Guide introduttive headless indicano chi eseguirebbe in genere le attività descritte e con quale frequenza.
 
 ## Passaggio successivo {#next-step}
 
-Pronti per saperne di più? Per iniziare, leggi la prima parte della Guida introduttiva a Headless: [Creazione di una configurazione.](create-configuration.md)
+Vuoi saperne di più? Per iniziare, leggi la prima parte della Guida introduttiva a Headless: [Creazione di una configurazione.](create-configuration.md)

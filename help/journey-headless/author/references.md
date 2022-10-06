@@ -1,10 +1,11 @@
 ---
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Scopri come utilizzare i riferimenti in Frammenti di contenuto, per contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ Questo articolo si basa su questi elementi per comprendere come utilizzare i rif
 
    * Riferimenti contenuto
    * Riferimenti a risorse/file multimediali
-   * Riferimenti ai frammenti
+   * Riferimenti frammento
    * Riferimenti ad hoc all&#39;interno di un blocco di testo
 
 ## Riferimenti {#what-are-references}
@@ -46,7 +47,7 @@ I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimen
 
 ![Frammenti di contenuto - Inserire una risorsa](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Riferimenti ai frammenti {#fragment-references}
+## Riferimenti frammento {#fragment-references}
 
 Anche in questo caso, i riferimenti a frammenti consentono di fare riferimento a un altro frammento. Perché questo è significativo ha bisogno di un po&#39; più di spiegazione.
 
@@ -54,7 +55,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 
 * Città
 * Azienda
-* Person
+* Utente
 * Premi
 
 Sembra abbastanza semplice, ma ovviamente un&#39;Azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
@@ -91,7 +92,7 @@ Utilizzo della **Struttura ad albero** La scheda dell’Editor frammento di cont
 >
 >Utilizzando le breadcrumb nel pannello principale è possibile tornare al punto iniziale.
 
-![Struttura ad albero dei frammenti di contenuto](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Struttura del frammento di contenuto](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Riferimenti ad hoc {#adhoc-references}
 
@@ -124,6 +125,6 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
 * Guide introduttive
    * [Guida rapida alla creazione di una cartella Assets Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [percorso di architetti di contenuti headless AEM](/help/journey-headless/architect/overview.md)
+* [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 
 * [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)

@@ -1,36 +1,35 @@
 ---
 title: Struttura delle prestazioni
-seo-title: Struttura delle prestazioni
+seo-title: Performance Tree
 description: Scopri i passaggi da seguire per risolvere i problemi di prestazioni in AEM.
-seo-description: Scopri i passaggi da seguire per risolvere i problemi di prestazioni in AEM.
+seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 5%
+source-wordcount: '1188'
+ht-degree: 6%
 
 ---
 
-
-# Albero prestazioni{#performance-tree}
+# Struttura delle prestazioni{#performance-tree}
 
 ## Ambito {#scope}
 
-Il diagramma seguente è inteso a fornire indicazioni sui passi da intraprendere per risolvere i problemi di prestazioni. È suddiviso in 5 sezioni per una lettura più semplice.
+Il diagramma seguente fornisce indicazioni sui passaggi da intraprendere per risolvere i problemi di prestazioni. È suddiviso in 5 sezioni per facilitarne la lettura.
 
-Ogni passaggio del diagramma è collegato a una risorsa della documentazione o a una raccomandazione.
+Ogni passaggio nel diagramma è collegato a una risorsa della documentazione o a una raccomandazione.
 
 ## Prerequisiti e supposizioni {#prerequisites-and-assumptions}
 
-Il presupposto è che un problema di prestazioni venga osservato in una determinata pagina (una console AEM o una pagina Web) e possa essere riprodotto in modo coerente. Prima di avviare l&#39;indagine, è necessario disporre di un metodo per verificare o controllare le prestazioni.
+Il presupposto è che un problema di prestazioni venga osservato in una determinata pagina (una console AEM o una pagina web) e possa essere riprodotto in modo coerente. La possibilità di testare o monitorare le prestazioni è un requisito preliminare prima di avviare l&#39;indagine.
 
-L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare quale entità (dispatcher, host esterno o AEM) è responsabile del problema di prestazioni, quindi determinare quale area (server o rete) deve essere esaminata.
+L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale entità (dispatcher, host esterno o AEM) è responsabile del problema di prestazioni, quindi determinare quale area (server o rete) deve essere esaminata.
 
 ### Sezione 1 {#section}
 
@@ -63,68 +62,68 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   </tr>
   <tr>
    <td><strong>Passaggio 0</strong></td>
-   <td>Analizza flusso richiesta</td>
-   <td><p>Potete utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso di richieste. Per ulteriori informazioni su come eseguire questa operazione su Chrome, vedere:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> loadinghttps://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td>Analizza flusso di richieste</td>
+   <td><p>Puoi utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso delle richieste. Per ulteriori informazioni su come eseguire questa operazione su Chrome, vedi:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 2</strong></td>
-   <td>Le richieste vengono da host esterni?</td>
-   <td>Potete utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso di richieste. Consultate i collegamenti riportati sopra su come eseguire questa operazione in Chrome.<br /> </td>
+   <td>Le richieste provengono da host esterni?</td>
+   <td>Puoi utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso delle richieste. Vedi i collegamenti di cui sopra su come eseguire questa operazione su Chrome.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 3</strong></td>
-   <td>È possibile memorizzare le richieste nella cache?</td>
-   <td>Per ulteriori informazioni sulle richieste memorizzabili nella cache e sui consigli generali per l'ottimizzazione delle prestazioni del dispatcher, vedere <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Dispatcher Performance Optimization</a>.</td>
+   <td>Le richieste possono essere memorizzate nella cache?</td>
+   <td>Per ulteriori informazioni sulle richieste memorizzabili nella cache e sui consigli generali per l’ottimizzazione delle prestazioni del dispatcher, vedi <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Ottimizzazione delle prestazioni del dispatcher</a>.</td>
   </tr>
   <tr>
    <td><strong>Passaggio 4</strong></td>
    <td>Le richieste vengono dal Dispatcher?</td>
-   <td><p>Per verificare se le richieste sono memorizzate nella cache correttamente, consultare la <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">documentazione relativa al debug del dispatcher</a>.<br /> </p> </td>
+   <td><p>Controlla la <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Documentazione sul debug di Dispatcher</a> per vedere se le richieste sono memorizzate nella cache correttamente.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 5</strong></td>
-   <td>Il dispatcher sta tentando di autenticare ogni richiesta tramite AEM?</td>
-   <td>Verificare se il dispatcher invia <code>HEAD</code> richieste di autenticazione a AEM prima di distribuire la risorsa nella cache. È possibile eseguire questa operazione cercando <code>HEAD</code> richieste nella AEM <code>access.log</code>. Per ulteriori informazioni, vedere <a href="/help/sites-deploying/configure-logging.md">Registrazione</a>.<br /> </td>
+   <td>Dispatcher sta tentando di autenticare ogni richiesta tramite AEM?</td>
+   <td>Controlla se il dispatcher invia <code>HEAD</code> richiede a AEM l’autenticazione prima di distribuire la risorsa in cache. Puoi farlo cercando <code>HEAD</code> richieste in AEM <code>access.log</code>. Per ulteriori informazioni, consulta <a href="/help/sites-deploying/configure-logging.md">Registrazione</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 6</strong></td>
    <td>La posizione geografica del Dispatcher è lontana dagli utenti?</td>
-   <td>Sposta il dispatcher più vicino agli utenti.</td>
+   <td>Sposta il Dispatcher più vicino agli utenti.</td>
   </tr>
   <tr>
    <td><strong>Passaggio 7</strong></td>
    <td>Il livello di rete del Dispatcher è OK?</td>
-   <td><br /> Esaminate il livello di rete per i problemi di saturazione e latenza.<p> </p> </td>
+   <td><br /> Esaminare il livello di rete per i problemi di saturazione e latenza.<p> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 8</strong></td>
    <td>La lentezza è riproducibile con un'istanza locale?</td>
-   <td><br /> <p>Utilizzate <a href="/help/sites-developing/tough-day.md">Tough Day</a> per replicare le condizioni "real world" dalle istanze di produzione. Se questo non è realistico per lo spazio di sviluppo, verificare l'istanza di produzione (o una sosta identica) in un contesto di rete diverso.<br /> </p> </td>
+   <td><br /> <p>Utilizzo <a href="/help/sites-developing/tough-day.md">Giorno difficile</a> per replicare le condizioni del "mondo reale" dalle istanze di produzione. Se questo non è realistico per lo spazio di sviluppo, assicurati di testare l’istanza di produzione (o una fase di staging identica) in un contesto di rete diverso.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 9</strong></td>
    <td>La posizione geografica del server è lontana dagli utenti?</td>
-   <td>Avvicinare il server agli utenti.</td>
+   <td>Sposta il server più vicino agli utenti.</td>
   </tr>
   <tr>
    <td><strong>Passaggi 10 e 29</strong></td>
-   <td>Indagine del livello di rete</td>
-   <td><p>Esaminate il livello di rete per i problemi di saturazione e latenza.</p> <p>Per il livello di authoring, si consiglia di non superare i 100 millisecondi.</p> <p>Per ulteriori informazioni sui suggerimenti per l'ottimizzazione delle prestazioni, vedere <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">questa pagina</a>.</p> </td>
+   <td>Indagare il livello di rete</td>
+   <td><p>Esaminare il livello di rete per i problemi di saturazione e latenza.</p> <p>Per il livello di authoring, si consiglia di non superare i 100 millisecondi.</p> <p>Per ulteriori informazioni sui suggerimenti per l'ottimizzazione delle prestazioni, vedi <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">questa pagina</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 11</strong></td>
-   <td>Avvicinare il server o aggiungerne uno per regione</td>
+   <td>Sposta il server più vicino o aggiungi uno per area geografica</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 12</strong></td>
    <td>Risoluzione dei problemi AEM server</td>
-   <td>Per ulteriori informazioni, consulta i seguenti passaggi secondari del diagramma.</td>
+   <td>Per ulteriori informazioni, consulta i seguenti passaggi secondari nel diagramma.</td>
   </tr>
   <tr>
    <td><strong>Passaggio 13</strong></td>
    <td>Controllare i requisiti hardware</td>
-   <td>Consultate la documentazione sulle <a href="/help/managing/hardware-sizing-guidelines.md">Linee guida sul ridimensionamento hardware</a>.<br /> </td>
+   <td>Controlla la documentazione su <a href="/help/managing/hardware-sizing-guidelines.md">Linee guida per il dimensionamento dell'hardware</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 14</strong></td>
@@ -134,60 +133,60 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr>
    <td><strong>Passaggio 15</strong></td>
    <td>Trova richieste lente</td>
-   <td><p>È possibile verificare la presenza di richieste lente analizzando il <code>request.log</code> o utilizzando <code>rlog.jar</code>.</p> <p>Per ulteriori informazioni sull'utilizzo di rlog.jar, consultate questa pagina.</p> <p>Vedere <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Utilizzo di rlog.jar per trovare richieste con tempi di durata prolungata</a>.<br /> </p> <p> </p> </td>
+   <td><p>Puoi verificare la presenza di richieste lente analizzando la variabile <code>request.log</code> o utilizzando <code>rlog.jar</code>.</p> <p>Per ulteriori informazioni sull'utilizzo di rlog.jar, consulta questa pagina.</p> <p>Vedi <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Utilizzo di rlog.jar per trovare le richieste con tempi lunghi</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 16</strong></td>
-   <td>Server profilo</td>
-   <td><p>Per informazioni sugli strumenti di profilatura utilizzabili con AEM, vedere <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Strumenti per il monitoraggio e l'analisi delle prestazioni</a>.<br /> </p> </td>
+   <td>Server dei profili</td>
+   <td><p>Per informazioni sugli strumenti di profilatura utilizzabili con AEM, consulta <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Strumenti per il monitoraggio e l’analisi delle prestazioni</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 17</strong></td>
-   <td>Trovare metodi lenti nel profiling</td>
+   <td>Trova metodi lenti nel profiling</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 18</strong></td>
    <td>Scenari comuni di profilazione</td>
-   <td>Vedere <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analisi di scenari specifici</a> nella sezione Ottimizzazione delle prestazioni.<br /> </td>
+   <td>Vedi <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analisi di scenari specifici</a> nella sezione Ottimizzazione delle prestazioni .<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 19</strong></td>
-   <td>100% CPU</td>
+   <td>CPU al 100%</td>
    <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://helpx.adobe.com/experience-manager/6-3/sites-deploying/monitoring-and-maintaining.html#MonitoringPerformance</a></td>
   </tr>
   <tr>
    <td><strong>Passaggio 20</strong></td>
-   <td>Memoria insufficiente</td>
+   <td>Memoria esaurita</td>
    <td><br />
     <ol>
-     <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Memoria insufficiente</a></li>
-     <li><a href="/help/sites-deploying/troubleshooting.md">La mia applicazione genera errori di memoria insufficiente</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analizzare i problemi di memoria sull'Helpx.</a><br /> </li>
+     <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Memoria esaurita</a></li>
+     <li><a href="/help/sites-deploying/troubleshooting.md">La mia applicazione genera errori di memoria esaurita</a></li>
+     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analizzare i problemi di memoria su Helpx.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 21</strong></td>
    <td>I/O disco</td>
-   <td><p>Vedere la sezione <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">I/O del disco</a> nella documentazione relativa al monitoraggio e alla manutenzione.</p> </td>
+   <td><p>Consulta la sezione <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">I/O disco</a> nella sezione Monitoraggio e manutenzione.</p> </td>
   </tr>
   <tr>
    <td><strong>Passaggi 22 e 22.1</strong></td>
    <td>Rapporto cache</td>
-   <td>Vedere <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Calcolo del rapporto della cache del dispatcher</a>.<br /> <br /> </td>
+   <td>Vedi <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Calcolo del rapporto della cache del Dispatcher</a>.<br /> <br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 23</strong></td>
    <td>Query lente</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Best practice per query e indicizzazione</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Tecniche consigliate per query e indicizzazione</a></td>
   </tr>
   <tr>
    <td><strong>Passaggio 24</strong></td>
-   <td>Ottimizzazione del repository</td>
+   <td>Regolazione del repository</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Suggerimenti per il tuning delle prestazioni</a></li>
-     <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configurazione per prestazioni</a></li>
+     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Suggerimenti sull'ottimizzazione delle prestazioni</a></li>
+     <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configurazione per le prestazioni</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Ottimizzazione delle prestazioni del repository</a></li>
     </ul> </td>
   </tr>
@@ -196,7 +195,7 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
    <td>Flussi di lavoro in esecuzione</td>
    <td>
     <ul>
-     <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">Elaborazione flusso di lavoro simultanea</a></li>
+     <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">Elaborazione simultanea del flusso di lavoro</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">Configurare la coda per un flusso di lavoro specifico</a></li>
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">Rimozione regolare delle istanze del flusso di lavoro</a></li>
      <li><a href="/help/sites-developing/workflows.md#transient-workflows">Flussi di lavoro transitori</a><br /> </li>
@@ -205,123 +204,123 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   <tr>
    <td><strong>Passaggio 26</strong></td>
    <td>Infrastruttura MSM</td>
-   <td><p><a href="/help/sites-administering/msm-best-practices.md">Best practice per i manager multisito</a><br /> </p> </td>
+   <td><p><a href="/help/sites-administering/msm-best-practices.md">Best practice per Multi Site Manager</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 27</strong></td>
    <td>Ottimizzazione delle risorse</td>
    <td>
     <ol>
-     <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servizio di sincronizzazione risorse</a></li>
-     <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Istanze DAM multiple</a></li>
-     <li>Articoli per suggerimenti sull'ottimizzazione delle prestazioni <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a> e <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a>.<br /> </li>
+     <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servizio di sincronizzazione delle risorse</a></li>
+     <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Più istanze DAM</a></li>
+     <li>Articoli per suggerimenti sull’ottimizzazione delle prestazioni <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a> e <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">qui</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 28</strong></td>
    <td>Sessioni non chiuse</td>
-   <td><p> </p> <p><a href="/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions">Verifica delle sessioni JCR non chiuse</a></p> <p> </p> </td>
+   <td><p> </p> <p><a href="/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions">Verifica di sessioni JCR non chiuse</a></p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 30</strong></td>
-   <td>Spostare il dispatcher più vicino (aggiungere uno per "regione"?)</td>
+   <td>Sposta il dispatcher più vicino (aggiungine uno per "regione"?)</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 31</strong></td>
-   <td>Usare CDN davanti al dispatcher</td>
+   <td>Usa CDN di fronte al dispatcher</td>
    <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 32</strong></td>
-   <td>Utilizzare la gestione delle sessioni a livello di dispatcher per scaricare AEM server</td>
+   <td>Utilizza la gestione delle sessioni a livello di dispatcher per scaricare AEM server</td>
    <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Abilitazione di sessioni sicure</a></p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 33</strong></td>
-   <td>Richieste incluse nella cache</td>
+   <td>Effettuare le richieste in cache</td>
    <td>
     <ol>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Configurazione del dispatcher generale</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configurazione della cache del dispatcher</a></li>
-    </ol> <p>Come migliorare il rapporto cache; rendi le richieste inseribili nella cache (procedure ottimali per il dispatcher)</p> <p>Inoltre, prendere in considerazione le seguenti impostazioni per ottimizzare le configurazioni di memorizzazione nella cache<br /> </p>
+     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Configurazione generale del Dispatcher</a></li>
+     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configurazione della cache del Dispatcher</a></li>
+    </ol> <p>Come migliorare il rapporto cache; rende le richieste compatibili con la cache (best practice per Dispatcher)</p> <p>Inoltre, prendi in considerazione le seguenti impostazioni per ottimizzare le configurazioni di memorizzazione in cache<br /> </p>
     <ol>
-     <li>Impostare una regola di assenza della cache per le richieste HTTP non GET</li>
-     <li>Configurare le stringhe di query affinché non possano essere memorizzate nella cache</li>
-     <li>Non memorizzare nella cache gli URL con estensioni mancanti</li>
-     <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 del dispatcher)</li>
+     <li>Imposta una regola di no-cache per le richieste HTTP che non sono GET</li>
+     <li>Configurare le stringhe di query per non essere memorizzabili nella cache</li>
+     <li>Non memorizzare in cache gli URL con estensioni mancanti</li>
+     <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 di Dispatcher)</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 34</strong></td>
-   <td>Versione dispatcher aggiornamento</td>
-   <td><p>Puoi scaricare la versione più recente del dispatcher nel seguente percorso:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Segui il collegamento</a></p> </td>
+   <td>Aggiorna la versione del dispatcher</td>
+   <td><p>Puoi scaricare la versione più recente di Dispatcher da questa posizione:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Segui il collegamento</a></p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 35</strong></td>
    <td>Configurare il dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del dispatcher</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 36</strong></td>
-   <td>Verifica annullamento validità cache</td>
+   <td>Verifica invalidazione della cache</td>
    <td><br />
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Annullamento validità cache per il livello Author;</a></li>
+     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Annullamento della validità della cache per il livello di authoring;</a></li>
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Annullamento della validità della cache per il livello di pubblicazione.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Passaggi 37 e 38</strong></td>
    <td>Caricamento pigro</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulta la sessione Gem su AEM Web Performance.</a><br /> </td>
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Vedi la sessione Gem su Prestazioni Web AEM.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 39</strong></td>
-   <td>Usare la preconnessione per ridurre il sovraccarico di connessione</td>
-   <td>Vedi la Sessione Gem sopra indicata. È inoltre possibile effettuare la preconnessione della documentazione aggiuntiva su W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
+   <td>Utilizzare la preconnessione per ridurre il sovraccarico di connessione</td>
+   <td>Vedi la Sessione Gem sopra indicata. Inoltre, preconnessione della documentazione aggiuntiva su W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
   </tr>
   <tr>
    <td><strong>Passaggi 40 e 41</strong><br /> </td>
-   <td>Ospitanti esterni latenza e tempo di risposta</td>
+   <td>Latenza e tempo di risposta degli host esterni</td>
    <td>Analizzare la latenza e il tempo di risposta per gli host esterni.</td>
   </tr>
   <tr>
-   <td><strong>Passaggi 45 <br /> e 47</strong><br /> </td>
+   <td><strong>Passaggi 45<br /> e 47</strong><br /> </td>
    <td>Utilizzo di HTTP/2</td>
-   <td>Vedi la Sessione Gem per i passaggi 37,38 e 39. Inoltre, controllate <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">questo </a> post del forum sul supporto HTTP/2.<br /> </td>
+   <td>Consulta la sessione Gem per i passaggi 37,38 e 39. Inoltre, controlla <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">questo</a> post del forum sul supporto HTTP/2.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 49</strong></td>
-   <td>Riduci dimensioni payload</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Attivate </a> Gzipand per  <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">ridurre le dimensioni</a> dell’immagine.<br /> </td>
+   <td>Riduci dimensioni del payload</td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Abilita Gzip</a> e <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">ridurre le dimensioni dell'immagine</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggi 42 e 43</strong></td>
-   <td>Keep-Alive</td>
-   <td><p>L'intestazione <code>Keep-Alive</code> è presente nelle diverse richieste di riutilizzo delle connessioni? In caso contrario, ciò significherebbe che ogni richiesta porta a un altro stabilimento di collegamento, che introduce costi aggiuntivi non necessari. (Analisi delle richieste HTTP standard nel browser)</p> <p>È possibile controllare lo <a href="/help/sites-administering/proxy-jar.md">strumento Server proxy</a> per verificare la presenza di connessioni Keep-Alive.<br /> </p> </td>
+   <td>Mantieni vivo</td>
+   <td><p>È <code>Keep-Alive</code> intestazione presente nelle diverse richieste di riutilizzo delle connessioni? In caso contrario, ciò significherebbe che ogni richiesta porta a un altro stabilimento di connessione, il che introduce costi generali superflui. (Analisi delle richieste HTTP standard nel browser)</p> <p>Puoi controllare la <a href="/help/sites-administering/proxy-jar.md">Strumento Server proxy</a> per controllare le connessioni Keep-Alive.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 44</strong></td>
-   <td>Quante richieste vengono fatte?</td>
-   <td>Eseguite l’analisi standard delle richieste HTTP nel browser.</td>
+   <td>Quante richieste vengono effettuate?</td>
+   <td>Esegui l’analisi standard delle richieste HTTP nel browser.</td>
   </tr>
   <tr>
    <td><strong>Passaggio 46</strong></td>
    <td>Riduzione del numero di richieste</td>
    <td>
     <ol>
-     <li>Concatenate le risorse (immagini, sprite CSS, JSON, ecc.)<br /> </li>
-     <li>Incorporazione di Clientlibs:
+     <li>Concatenare risorse (immagini, sprite CSS, JSON, ecc.)<br /> </li>
+     <li>Incorporazione Clientlibs:
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Creazione di cartelle</a>  libreria client - vedere l'intestazione Utilizzo dell'incorporamento per ridurre al minimo le richieste</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Creazione di cartelle della libreria client</a> - vedere Utilizzo dell’incorporamento per ridurre al minimo le richieste</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 48</strong></td>
    <td>Qual è la dimensione del payload?</td>
-   <td>Analisi delle richieste HTTP standard nel browser</td>
+   <td>Analisi standard delle richieste HTTP nel browser</td>
   </tr>
   <tr>
    <td><strong>Passaggi 50 e 51</strong></td>
@@ -330,4 +329,3 @@ L&#39;analisi inizia dal passaggio 0. L&#39;obiettivo è quello di determinare q
   </tr>
  </tbody>
 </table>
-

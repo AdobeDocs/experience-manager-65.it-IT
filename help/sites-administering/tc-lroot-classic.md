@@ -1,8 +1,8 @@
 ---
 title: Creazione di una directory principale della lingua utilizzando l’interfaccia classica
-seo-title: Creazione di una directory principale della lingua utilizzando l’interfaccia classica
+seo-title: Creating a Language Root Using the Classic UI
 description: Scopri come creare una directory principale della lingua utilizzando l’interfaccia classica.
-seo-description: Scopri come creare una directory principale della lingua utilizzando l’interfaccia classica.
+seo-description: Learn how to create a language root using the Classic UI.
 uuid: 62e40d39-2868-4d3d-9af7-c60a1a658be0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +11,23 @@ content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '316'
+ht-degree: 2%
 
 ---
 
+# Creazione di una directory principale della lingua utilizzando l’interfaccia classica{#creating-a-language-root-using-the-classic-ui}
 
-# Creazione di una directory principale della lingua utilizzando l&#39;interfaccia classica{#creating-a-language-root-using-the-classic-ui}
-
-La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
+La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, consulta [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Nella console Siti Web seleziona la pagina principale del sito nella struttura Siti Web. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Aggiungi una nuova pagina figlio che rappresenta la versione per la lingua del sito:
 
    1. Fai clic su Nuovo > Nuova pagina.
-   1. Nella finestra di dialogo , specifica il Titolo e il Nome. Il nome deve essere nel formato `<language-code>` o `<language-code>_<country-code>`, ad esempio en, en_US, en_us, en_GB, en_gb.
+   1. Nella finestra di dialogo , specifica il Titolo e il Nome. Il nome deve essere nel formato di `<language-code>` o `<language-code>_<country-code>`ad esempio en, en_US, en_us, en_GB, en_gb.
 
       * Il codice della lingua supportato è un codice a due lettere minuscolo come definito dallo standard ISO-639-1
       * Il codice del paese supportato è un codice a due lettere minuscolo o superiore, come definito dalla norma ISO 3166
@@ -60,4 +59,3 @@ La procedura seguente utilizza l’interfaccia classica per creare una directory
 
 1. Fate clic su OK per chiudere la finestra di dialogo.
 1. Nella finestra di dialogo successiva, fare clic su Sì per confermare la copia.
-

@@ -1,103 +1,102 @@
 ---
-title: ' AEM Sites - Preparazione GDPR'
-seo-title: ' AEM Sites - Preparazione GDPR'
-description: Scopri i dettagli di GDPR Readiness per  AEM Sites.
-seo-description: Scopri i dettagli di GDPR Readiness per  AEM Sites.
+title: AEM Sites - Preparazione all’RGPD
+seo-title: AEM Sites - GDPR Readiness
+description: Scopri i dettagli sulla preparazione all’RGPD per AEM Sites.
+seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
-translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 0%
+source-wordcount: '836'
+ht-degree: 54%
 
 ---
 
-
-#  AEM Sites - GDPR: prontezza{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparazione all’RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->Il GDPR è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come GDPR, CCPA ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come RGPD, CCPA, ecc.
 
-Il regolamento generale dell&#39;Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018.
+Il Regolamento generale sulla protezione dei dati dell&#39;Unione europea sui diritti relativi alla privacy dei dati entra in vigore a maggio 2018.
 
- AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in  AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
+AEM Sites è pronto ad aiutare i clienti ad adempiere ai loro obblighi di conformità ai requisiti RGPD. Questa pagina guida i clienti attraverso le procedure per gestire le richieste RGPD in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con codice.
 
-Per ulteriori informazioni, vedere la pagina [GDPR all&#39; Centro per la privacy del Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Per ulteriori informazioni, consulta [Pagina RGPD nell’Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [AEM GDPR Readiness](/help/managing/data-protection-and-privacy.md).
+>Vedi [Preparazione AEM RGPD](/help/managing/data-protection-and-privacy.md) per ulteriori dettagli.
 
 ## Author Server {#author-server}
 
-Gli account utente e i contenuti UGC sul server di creazione sono trattati nella [Documentazione GDPR della piattaforma](/help/managing/data-protection-and-privacy.md).
+Gli account utente e i contenuti UGC sul server di authoring sono trattati nella sezione [Documentazione di Platform RGPD](/help/managing/data-protection-and-privacy.md).
 
 ## Server di pubblicazione {#publish-server}
 
-Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [Platform GDPR](/help/managing/data-protection-and-privacy.md).
+Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati nella sezione [Documentazione di Platform RGPD](/help/managing/data-protection-and-privacy.md).
 
-Per impostazione predefinita,  componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o  Adobe Campaign per un&#39;ulteriore elaborazione.
+Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o ad Adobe Campaign per un’ulteriore elaborazione.
 
-## Opt-In/Opt-Out {#opt-in-opt-out}
+## Consenso/rinuncia {#opt-in-opt-out}
 
-AEM dispone di un [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso o il rifiuto per gli utenti.
+AEM [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire l’opt-in/opt-out per gli utenti.
 
 ## Approfondimenti migliorati di Analytics {#enhanced-insights-by-analytics}
 
- AEM Sites include un&#39;integrazione opzionale con Enhanced Insights di Analytics che utilizza funzionalità all&#39;interno  Adobe Analytics On-demand Service.
+AEM Sites include un’integrazione opzionale con gli approfondimenti migliorati di Analytics che utilizza funzionalità all’interno del servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Analytics, vedere [ Adobe Analytics e GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalizzazione avanzata per Target {#enhanced-personalization-by-target}
+## Personalizzazione migliorata da Target {#enhanced-personalization-by-target}
 
- AEM Sites include un&#39;integrazione opzionale con Enhanced Personalization by Target, che utilizza funzionalità all&#39;interno  Adobe Target On-demand Service.
+AEM Sites include un’integrazione opzionale con la personalizzazione avanzata di Target che utilizza funzionalità all’interno del servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Target, vedere [ Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
-AEM fornisce un livello dati opzionale con [ContextHub](/help/sites-developing/contexthub.md). In questo modo i dati specifici del visitatore vengono conservati nel browser e utilizzati per la personalizzazione basata su regole.
+AEM fornisce un livello di dati facoltativo con [ContextHub](/help/sites-developing/contexthub.md). In questo modo i dati specifici del visitatore vengono mantenuti nel browser e utilizzati per la personalizzazione basata su regole.
 
-Per impostazione predefinita, questi dati visitatore non sono memorizzati in AEM; AEM invia regole al livello dati per prendere decisioni di personalizzazione nel browser.
+Per impostazione predefinita, i dati visitatore non sono memorizzati in AEM. AEM invia regole al livello dati per prendere decisioni sulla personalizzazione nel browser.
 
 >[!NOTE]
 >
->Prima di  Adobe CQ 5.6, l&#39;ClientContext (una versione precedente di ContextHub) inviava i dati al server, ma non li memorizzava.
+>Prima di Adobe CQ 5.6, il ClientContext (una versione precedente di ContextHub) inviava i dati al server, ma non li memorizzava.
 >
-> Adobe CQ 5.5 e versioni precedenti sono ora EOL e non sono coperti da questa documentazione.
+>Adobe CQ 5.5 e versioni precedenti sono ora EOL e non sono coperti da questa documentazione.
 
-### Implementazione consenso/rifiuto {#implementing-opt-in-opt-out}
+### Implementazione di consenso/rinuncia {#implementing-opt-in-opt-out}
 
 Il proprietario del sito deve implementare un componente di rinuncia in base alle seguenti linee guida.
 
-Queste linee guida implementano il consenso come impostazione predefinita. Pertanto, un visitatore del sito Web deve essere chiaramente d&#39;accordo, prima che i Dati Personali siano memorizzati nella persistenza (lato client) del browser.
+In queste linee guida il consenso è implementato per impostazione predefinita. Pertanto, un visitatore del sito web deve essere chiaramente d’accordo, prima che qualsiasi Dati Personali sia memorizzato nella persistenza del browser (lato client).
 
-* Il componente di rinuncia deve essere incluso ogni volta che viene incluso il componente ContextHub.
-* I termini e le condizioni relativi al GDPR per il sito Web devono essere visualizzati al visitatore del sito Web, consentendo loro di:
+* Il componente di rinuncia deve essere incluso ogni volta che il componente ContextHub è incluso.
+* I termini e le condizioni relativi al RGPD per il sito web devono essere visualizzati al visitatore del sito web, consentendo loro di:
 
-   * accetto
-   * rifiutare
-   * modifica la scelta precedente
+   * accetta
+   * rifiuta
+   * cambia la scelta precedente
 
-* Se un visitatore accetta i termini e le condizioni del sito, il cookie di rinuncia ContextHub deve essere rimosso:
+* Se un visitatore del sito accetta i termini e le condizioni del sito, il cookie di rinuncia di ContextHub deve essere rimosso:
 
    ```
    ContextHub.Utils.Cookie.removeItem('cq-opt-out');
    ```
 
-* Se un visitatore del sito non accetta i termini e le condizioni del sito, il cookie di rinuncia ContextHub deve essere impostato:
+* Se un visitatore del sito non accetta i termini e le condizioni del sito, il cookie di rinuncia di ContextHub deve essere impostato:
 
    ```
    ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
    ```
 
-* Per verificare se ContextHub è in esecuzione in modalità di rifiuto, nella console del browser deve essere effettuata la seguente chiamata:
+* Per verificare se ContextHub è in esecuzione in modalità di rinuncia, è necessario effettuare la seguente chiamata nella console del browser:
 
    ```
    var isOptedOut = ContextHub.isOptedOut(true) === true;
@@ -106,83 +105,83 @@ Queste linee guida implementano il consenso come impostazione predefinita. Perta
 
 ### Anteprima della persistenza di ContextHub {#previewing-persistence-of-contexthub}
 
-Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente può:
+Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente può:
 
-* Utilizzare la console del browser; ad esempio:
+* Utilizzare la console del browser, ad esempio:
 
-   * Effetto cromatura:
+   * Chrome:
 
-      * Apri Strumenti Sviluppatore > Applicazione > Archiviazione:
+      * Apri Strumenti per sviluppatori > Applicazione > Archiviazione:
 
-         * Archiviazione locale > (sito Web) > ContextHubPersistenza
-         * Archiviazione sessione > (sito Web) > ContextHubPersistenza
-         * Cookie > (sito Web) > SessionPersistenza
+         * Archiviazione locale > (sito Web) > ContextHubPersistence
+         * Archiviazione sessione > (sito Web) > ContextHubPersistence
+         * Cookie > (sito Web) > SessionPersistence
    * Firefox:
 
-      * Apri Strumenti Sviluppatore > Archiviazione:
+      * Apri Strumenti di sviluppo web > Archiviazione:
 
-         * Archiviazione locale > (sito Web) > ContextHubPersistenza
-         * Archiviazione sessione > (sito Web) > ContextHubPersistenza
-         * Cookie > (sito Web) > SessionPersistenza
+         * Archiviazione locale > (sito Web) > ContextHubPersistence
+         * Archiviazione sessione > (sito Web) > ContextHubPersistence
+         * Cookie > (sito Web) > SessionPersistence
    * Safari:
 
       * Apri Preferenze > Avanzate > Mostra menu Sviluppo nella barra dei menu
       * Apri Sviluppo > Mostra console JavaScript
 
-         * Console > Storage > Archiviazione locale > (sito Web) > ContextHubPersistenza
-         * Console > Storage > Archiviazione sessione > (sito Web) > ContextHubPersistenza
-         * Console > Storage > Cookie > (sito Web) > ContextHubPersistenza
+         * Console > Archiviazione > Archiviazione locale > (sito Web) > ContextHubPersistence
+         * Console > Archiviazione > Archiviazione sessione > (sito Web) > ContextHubPersistence
+         * Console > Archiviazione > Cookie > (sito Web) > ContextHubPersistence
    * Internet Explorer:
 
-      * Apri strumenti per sviluppatori > Console
+      * Apri Strumenti di sviluppo > Console
 
-         * localStorage.getItem(&#39;ContextHubPersistenza&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistenza&#39;)
+         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
          * document.cookie
 
 
 
 
-* Utilizzate l&#39;API ContextHub nella console del browser:
+* Utilizza l’API ContextHub nella console del browser:
 
    * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
-      * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
+      * ContextHub.Utils.Persistence.Modes.LOCAL (predefinito)
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
+      L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
-Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente può:
+Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente può:
 
-* Utilizzate la console del browser:
+* Usa la console del browser:
 
-   * Chrome - aprire Strumenti per sviluppatori > Applicazione > Archiviazione:
+   * Chrome - apri Strumenti per sviluppatori > Applicazione > Archiviazione:
 
-      * Archiviazione locale > (sito Web) > ContextHubPersistenza
-      * Archiviazione sessione > (sito Web) > ContextHubPersistenza
-      * Cookie > (sito Web) > SessionPersistenza
-   * Firefox - aprire Strumenti per sviluppatori > Archiviazione:
+      * Archiviazione locale > (sito Web) > ContextHubPersistence
+      * Archiviazione sessione > (sito Web) > ContextHubPersistence
+      * Cookie > (sito Web) > SessionPersistence
+   * Firefox - apri Strumenti di sviluppo web > Archiviazione:
 
-      * Archiviazione locale > (sito Web) > ContextHubPersistenza
-      * Archiviazione sessione > (sito Web) > ContextHubPersistenza
-      * Cookie > (sito Web) > SessionPersistenza
+      * Archiviazione locale > (sito Web) > ContextHubPersistence
+      * Archiviazione sessione > (sito Web) > ContextHubPersistence
+      * Cookie > (sito Web) > SessionPersistence
 
 
-* Utilizzate l&#39;API ContextHub nella console del browser:
+* Utilizza l’API ContextHub nella console del browser:
 
    * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
-      * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
+      * ContextHub.Utils.Persistence.Modes.LOCAL (predefinito)
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
+      L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
@@ -194,9 +193,9 @@ console.log(storage.getTree());
 
 ### Cancellazione della persistenza di ContextHub {#clearing-persistence-of-contexthub}
 
-Per cancellare la persistenza ContextHub:
+Per cancellare la persistenza di ContextHub:
 
-* Per eliminare la persistenza degli store attualmente caricati:
+* Per cancellare la persistenza degli archivi attualmente caricati:
 
    ```
    // in order to be able to fully access persistence layer, Opt-Out must be turned off
@@ -209,7 +208,7 @@ Per cancellare la persistenza ContextHub:
    ContextHub.resetAllStores();
    ```
 
-* Cancellazione di un livello di persistenza specifico; ad esempio, sessionStorage:
+* Per cancellare un livello di persistenza specifico, ad esempio, sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
@@ -222,8 +221,7 @@ Per cancellare la persistenza ContextHub:
 
 * Per cancellare tutti i livelli di persistenza ContextHub, è necessario chiamare il codice appropriato per tutti i livelli:
 
-   * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
+   * ContextHub.Utils.Persistence.Modes.LOCAL (predefinito)
    * ContextHub.Utils.Persistence.Modes.SESSION
    * ContextHub.Utils.Persistence.Modes.COOKIE
    * ContextHub.Utils.Persistence.Modes.WINDOW
-

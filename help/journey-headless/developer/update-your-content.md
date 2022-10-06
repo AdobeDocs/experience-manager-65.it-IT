@@ -1,10 +1,11 @@
 ---
 title: Come aggiornare i contenuti tramite le API di AEM Assets
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -273,7 +274,7 @@ Sono possibili due tipi di operazioni di lettura:
 * Quando si legge un frammento di contenuto specifico in base al percorso, viene restituita la rappresentazione JSON del frammento di contenuto.
 * Lettura di una cartella di frammenti di contenuto in base al percorso: restituisce le rappresentazioni JSON di tutti i frammenti di contenuto all’interno della cartella.
 
-### Crea {#create}
+### Creare {#create}
 
 L’utilizzo avviene tramite:
 

@@ -1,5 +1,5 @@
 ---
-title: Limiti Dynamic Media
+title: Limiti di Dynamic Media
 description: Scopri le best practice e i limiti applicati quando crei un set di immagini o un set 360 gradi o carichi un PDF. Scopri anche le combinazioni non supportate di browser web e sistemi operativi per visualizzatori Dynamic Media.
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,7 @@ exl-id: e4d4059e-ac0b-42e7-910c-001310796574
 source-git-commit: 098c52720d08ad294a745addb8bd3ca3f1c63b5c
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 

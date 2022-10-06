@@ -1,8 +1,8 @@
 ---
 title: Siti community
-seo-title: Siti community
+seo-title: Communities Sites
 description: Panoramica della documentazione di AEM Communities
-seo-description: Panoramica della documentazione di AEM Communities
+seo-description: Overview of the AEM Communities documentation
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '470'
 ht-degree: 5%
 
 ---
@@ -59,19 +59,19 @@ Per una panoramica e le esercitazioni introduttive, visita:
 
 Una caratteristica principale di AEM Communities è la generazione di contenuti generati dagli utenti (UGC) mediante l’accesso ai visitatori del sito (membri). Per ulteriori informazioni sull’utilizzo di UGC, visita:
 
-* [Archivio](working-with-srp.md) UGC comune: scelta dell&#39;SRP per lo stoccaggio condiviso dell&#39;UGC
+* [Archivio UGC comune](working-with-srp.md): scelta dell&#39;SRP per lo stoccaggio condiviso dell&#39;UGC
 * [Moderazione UGC](moderate-ugc.md): i membri affidabili possono moderare UGC in massa o nel contesto
 * [Assegnazione tag UGC](tag-ugc.md): le funzioni possono essere configurate per consentire ai membri di assegnare tag al contenuto
 * [Traduzione di UGC](translate-ugc.md): le funzionalità possono essere configurate per tradurre tutti gli UGC o consentire ai membri di tradurre i post selezionati
-* [Configurazione](analytics.md) di Analytics: che consente ad Adobe Analytics di generare rapporti su varie metriche relative all’attività dei membri
+* [Configurazione di Analytics](analytics.md): che consente ad Adobe Analytics di generare rapporti su varie metriche relative all’attività dei membri
 
 ### Membri community {#community-members}
 
-* [Gestione di utenti e gruppi](users.md) di utenti: i dettagli dei membri della comunità e dei gruppi di membri, compresi i membri privilegiati.
-* [Limiti](limits.md) di contributo: capacità di limitare la pubblicazione da parte di nuovi membri.
-* [Servizio](deploy-communities.md#tunnel-service-on-author) tunnel: consente di accedere ai membri e ai gruppi di membri lato pubblicazione dall’ambiente di authoring.
-* [Console](members.md) Membri e gruppi: consente di creare e gestire membri e gruppi di membri lato pubblicazione dall’ambiente di authoring.
-* [Sincronizzazione](sync.md) utente: per la sincronizzazione di membri e gruppi di membri in più istanze di pubblicazione.
+* [Gestione di utenti e gruppi di utenti](users.md): i dettagli dei membri della comunità e dei gruppi di membri, compresi i membri privilegiati.
+* [Limiti di contributo](limits.md): capacità di limitare la pubblicazione da parte di nuovi membri.
+* [Servizio tunnel](deploy-communities.md#tunnel-service-on-author): consente di accedere ai membri e ai gruppi di membri lato pubblicazione dall’ambiente di authoring.
+* [Console Membri e gruppi](members.md): consente di creare e gestire membri e gruppi di membri lato pubblicazione dall’ambiente di authoring.
+* [Sincronizzazione utente](sync.md): per la sincronizzazione di membri e gruppi di membri in più istanze di pubblicazione.
 * [Accesso social con Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le proprie credenziali Facebook o Twitter.
 * [Punteggio e badge](implementing-scoring.md): la possibilità di assegnare distintivi per identificare i ruoli di un membro e di ottenere distintivi attraverso la loro partecipazione alla comunità.
 * [Notifiche](notifications.md): la possibilità per i membri di essere informati dell&#39;attività che seguono.
@@ -80,9 +80,9 @@ Una caratteristica principale di AEM Communities è la generazione di contenuti 
 
 ### Funzioni di abilitazione {#enablement-features}
 
-* [Configurazione di Enablement](enablement.md): informazioni necessarie per configurare correttamente le funzioni di abilitazione.
-* [Configurazione](analytics.md) di Analytics: informazioni necessarie per abilitare le funzionalità di Adobe Analytics for Communities.
-* [Risorse](tag-resources.md) di abilitazione assegnazione tag: necessari per creare cataloghi di abilitazione.
+* [Configurazione dell’abilitazione](enablement.md): informazioni necessarie per configurare correttamente le funzioni di abilitazione.
+* [Configurazione di Analytics](analytics.md): informazioni necessarie per abilitare le funzionalità di Adobe Analytics for Communities.
+* [Risorse di abilitazione assegnazione tag](tag-resources.md): necessari per creare cataloghi di abilitazione.
 
 ### Implementazione {#deployment}
 
@@ -100,8 +100,8 @@ Consulta la pagina di distribuzione per altre informazioni specifiche di Communi
 
 ## Documentazione di Communities correlata {#related-communities-documentation}
 
-* Per informazioni sulle distribuzioni consigliate, visita [Implementazione di Communities](deploy-communities.md) .
+* Visita [Distribuzione di Communities](deploy-communities.md) per informazioni sulle distribuzioni consigliate.
 
-* Visita [Sviluppo di community](communities.md) per informazioni sul framework dei componenti social (SCF) e sulla personalizzazione dei componenti e delle funzionalità di Communities.
+* Visita [Sviluppo di Communities](communities.md) per informazioni sul framework dei componenti sociali (SCF) e sulla personalizzazione dei componenti e delle funzionalità di Communities.
 
-* Per informazioni su come eseguire l’authoring con e configurare i componenti di Communities, visita [Authoring Communities Components](author-communities.md) .
+* Visita [Authoring dei componenti di Communities](author-communities.md) per scoprire come creare e configurare i componenti di Communities.

@@ -1,30 +1,29 @@
 ---
 title: Componenti, funzioni e funzioni di base
-seo-title: Componenti, funzioni e funzioni di base
-description: Funzionamento di siti, modelli e gruppi di community
-seo-description: Funzionamento di siti, modelli e gruppi di community
+seo-title: Component, Function and Feature Essentials
+description: Funzionamento di siti, modelli e gruppi community
+seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 17%
+source-wordcount: '209'
+ht-degree: 18%
 
 ---
 
+# Componenti, funzioni e funzioni di base  {#component-function-and-feature-essentials}
 
-# Componenti, funzioni e funzioni essenziali {#component-function-and-feature-essentials}
+Le funzioni di AEM Communities richiedono ai visitatori del sito di diventare membri e di accedere al [sito della community](overview.md#communitiessites) prima di poter pubblicare contenuti. Pertanto, [modelli di sito community](sites.md), da cui proviene un sito della comunità [creato](sites-console.md), sono progettati per includere una funzione di accesso, nonché profili utente, messaggistica, ricerca, moderazione e traduzione.
 
- funzioni AEM Communities richiedono che i visitatori del sito diventino membri e accedano al [sito della community](overview.md#communitiessites) prima di poter pubblicare contenuti. Di conseguenza, i [modelli di sito community](sites.md), da cui un sito community è [creato](sites-console.md), sono progettati per includere una funzione di login, nonché profili utente, messaggistica, ricerca, moderazione e traduzione.
+Un sito community supporterà i membri che creano gruppi community quando [funzione dei gruppi community](functions.md#groups-function) è incluso nel modello di sito community selezionato.
 
-Un sito community supporterà i membri che creano gruppi community quando la funzione [gruppi community](functions.md#groups-function) è inclusa nel modello di sito community selezionato.
-
-Seguono collegamenti alle informazioni essenziali per componenti, funzioni e funzioni di Communities.
+Di seguito sono riportati i collegamenti alle informazioni essenziali per i componenti, le funzioni e le funzioni di Communities.
 
 ## Componenti di base {#base-components}
 
@@ -41,7 +40,7 @@ Seguono collegamenti alle informazioni essenziali per componenti, funzioni e fun
 
 * [Flussi attività](essentials-activities.md)
 * [Assegnazioni](essentials-assignments.md)
-* [Blog](blog-developer-basics.md) (  `Journal`)
+* [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Calendario](calendar-basics-for-developers.md)
 * [Catalogo](catalog-developer-essentials.md)
@@ -58,10 +57,10 @@ Seguono collegamenti alle informazioni essenziali per componenti, funzioni e fun
 * [Librerie client](clientlibs.md)
 * [Siti community](sites-for-developers.md)
 * [Eventi OSGi component](events.md)
-* [Sideloading componente](sideloading.md)
+* [Caricamento laterale componente](sideloading.md)
 * [Messaggi](essentials-messaging.md)
 * [Editor Rich Text](rte.md)
-* [Punteggio e Badge](configure-scoring.md)
+* [Punteggio e badge](configure-scoring.md)
 * [Ricerca](search-implementation.md)
 * [Grafico social](essentials-socialgraph.md)
 * [Provider di risorse di storage](srp-and-ugc.md) `(SRP)`
@@ -70,14 +69,14 @@ Seguono collegamenti alle informazioni essenziali per componenti, funzioni e fun
 
 ## Javadocs {#javadocs}
 
-I [javadocs](../../help/sites-developing/reference-materials.md) online riflettono le API disponibili nella release AEM 6.3.
-Le API Communities sono nei pacchetti `com.adobe.cq.social.*`.
+La [javadocs online](../../help/sites-developing/reference-materials.md) riflettono le API disponibili nella versione 6.3 di AEM.
+Le API di Communities sono in `com.adobe.cq.social.*` pacchetti.
 
-Per ciascun [pacchetto di funzioni](deploy-communities.md#latestfeaturepack), è disponibile un javadoc jar. Per ulteriori informazioni, visitare [Using Maven for Communities](maven.md#javadocs).
+Per ogni [feature pack](deploy-communities.md#latestfeaturepack), viene reso disponibile un jar javadoc. Per ulteriori informazioni, visita [Utilizzo di Maven per Communities](maven.md#javadocs).
 
 ## Informazioni aggiuntive {#additional-information}
 
-* [Quadro per la componente sociale (SCF)](scf.md)
+* [Quadro dei componenti sociali (SCF)](scf.md)
 
    * [Personalizzazioni lato client](client-customize.md)
    * [Personalizzazioni lato server](server-customize.md)
@@ -86,4 +85,3 @@ Per ciascun [pacchetto di funzioni](deploy-communities.md#latestfeaturepack), è
 * [Linee guida sulla codifica](code-guide.md)
 * [Esercitazioni](tutorials.md)
 * [Risoluzione dei problemi](troubleshooting.md)
-

@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Gestione risorse
+feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '112'
 ht-degree: 14%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 14%
 
 La gestione delle risorse Dynamic Media (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
 
-Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti immagine](/help/assets/image-sets.md).
+Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Vedi [Applicazione dei predefiniti per visualizzatori](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti per immagini](/help/assets/image-sets.md).
 
-Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse](/help/assets/manage-assets.md).
+Informazioni generali sulla gestione delle risorse sono disponibili in [Gestire le risorse](/help/assets/manage-assets.md).
 
 I seguenti argomenti descrivono come gestire le risorse Dynamic Media:
 

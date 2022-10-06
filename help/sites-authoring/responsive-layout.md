@@ -1,22 +1,21 @@
 ---
-title: 'Layout reattivo  '
-seo-title: 'Layout reattivo  '
+title: Layout reattivo
+seo-title: Responsive Layout
 description: AEM consente di realizzare un layout reattivo per le pagine
-seo-description: AEM consente di realizzare un layout reattivo per le pagine
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 92%
+source-wordcount: '1782'
+ht-degree: 93%
 
 ---
-
 
 # Layout reattivo  {#responsive-layout}
 
@@ -68,7 +67,7 @@ A seconda del progetto, il Contenitore di layout può essere usato come il siste
 
 >[!NOTE]
 >
->L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. Per ulteriori informazioni, vedere [Configurazione del layout reattivo](/help/sites-administering/configuring-responsive-layout.md).
+>L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. Vedi [Configurazione del layout reattivo](/help/sites-administering/configuring-responsive-layout.md) per ulteriori informazioni.
 
 ## Definizioni di layout, emulazione del dispositivo e punti di interruzione {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -225,7 +224,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
    * **Elemento padre**
 
-      Consente di selezionare l’intero componente Contenitore di layout per intervenire sull’intero contenuto.
+      Consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
 
    * **Mobile in nuova riga**
 
@@ -233,7 +232,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
    * **Nascondi componente**
 
-      Il componente sarà reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
+      Il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
@@ -244,7 +243,7 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostra componenti**  nascosti - Mostra tutti i componenti o singoli componenti. Il numero indica quanti componenti nascosti sono attualmente presenti.Il numero di componenti nascosti è indicato.
+   * **Mostra componenti nascosti** - Mostra tutti i componenti o singoli componenti. Il numero indica quanti sono attualmente i componenti nascosti.Il contatore mostra quanti sono i componenti nascosti.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -264,9 +263,9 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
    >
    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Scopri**
-componentiSelezionate i componenti padre per visualizzare la barra degli strumenti delle azioni con 
-**Mostra** componente nascosto. In questo esempio, due componenti sono nascosti.
+   * **Rivela componenti**
+Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con 
+l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
@@ -274,4 +273,3 @@ componentiSelezionate i componenti padre per visualizzare la barra degli strumen
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Selezionando **Ripristina tutto**, tutti i componenti nascosti diventano visibili.
-

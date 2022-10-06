@@ -1,7 +1,8 @@
 ---
 title: Come passare le credenziali utilizzando le intestazioni WS-security?
 description: Scopri come trasmettere le credenziali utilizzando le intestazioni di sicurezza WS
-source-git-commit: 9b118ef4f852e3df1e717bb27b9be272caeb0456
+exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -16,7 +17,7 @@ La modalità di trasmissione delle intestazioni WS-Security ad AEM Forms su JEE 
 
 >[!NOTE]
 >
->Ad esempio, per richiamare un servizio utilizzando intestazioni WS-Security, in questo argomento viene crittografato un documento PDF con una password richiamando il servizio di cifratura.
+>Ad esempio, per richiamare un servizio utilizzando intestazioni WS-Security, in questo argomento viene crittografato un documento PDF con una password richiamando il servizio di crittografia.
 
 Questo documento tratta i seguenti argomenti:
 
@@ -31,12 +32,11 @@ Questo documento tratta i seguenti argomenti:
 * Richiamo del servizio di crittografia tramite un&#39;intestazione WS-Security
 
 
-## Requisiti {#requirements}
+## Requisiti  {#requirements}
 
 Per sfruttare al meglio questo documento, è necessario avere una solida conoscenza del software AEM Forms on JEE.
 
 >[!MORELIKETHIS]
 >
 >* [Trasmissione delle credenziali tramite intestazioni WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)
-
 

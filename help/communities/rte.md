@@ -1,40 +1,39 @@
 ---
-title: Editor Rich Text Essentials
-seo-title: Editor Rich Text Essentials
-description: Panoramica delle funzioni Editor Rich Text
-seo-description: Panoramica delle funzioni Editor Rich Text
+title: Nozioni di base sull’editor Rich Text
+seo-title: Rich Text Editor Essentials
+description: Panoramica delle funzioni dell’editor Rich Text
+seo-description: Rich text Editor feature overview
 uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
-translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '230'
 ht-degree: 3%
 
 ---
 
-
-# Funzioni di base dell&#39;editor Rich Text {#rich-text-editor-essentials}
+# Nozioni di base sull’editor Rich Text {#rich-text-editor-essentials}
 
 ## Panoramica {#overview}
 
-Un editor Rich Text (RTE) consente di immettere testo con la marcatura.
+Un editor Rich Text consente di immettere testo con tag.
 
-Per i componenti Community, anche se simili all&#39;editor di testo RTF [nell&#39;ambiente di authoring](../../help/sites-authoring/rich-text-editor.md), questo incide sul testo immesso nell&#39;ambiente di pubblicazione.
+Per i componenti Community, mentre è simile al [editor Rich Text nell’ambiente di authoring](../../help/sites-authoring/rich-text-editor.md), influisce sul testo immesso nell’ambiente di pubblicazione.
 
 ![editor Rich Text](assets/rich-text-editor.png)
 
-## Abilitazione dell&#39;editor Rich Text {#enabling-rich-text-editor}
+## Abilitazione dell’editor Rich Text {#enabling-rich-text-editor}
 
-È possibile abilitare i componenti community che consentono l’editor Rich Text per contenuti generati dall’utente (UGC). A seconda che il componente sia stato aggiunto a una pagina o incluso in una [funzione](functions.md), l&#39;editor Rich Text potrebbe non essere abilitato per impostazione predefinita.
+I componenti community che consentono l’editor Rich Text possono essere abilitati per i contenuti generati dall’utente (UGC). A seconda che il componente sia stato aggiunto a una pagina o incluso in un [Funzione](functions.md), l’editor Rich Text può essere abilitato o meno per impostazione predefinita.
 
-Se non è abilitata, è sufficiente immettere [modalità di modifica dell&#39;autore](sites-console.md#authoring-site-content), selezionare il componente per la modifica e selezionare la casella di controllo `Rich Text Editor`.
+Se non è abilitato, è sufficiente immettere [modalità modifica autore](sites-console.md#authoring-site-content), seleziona il componente da modificare e seleziona il `Rich Text Editor` casella di controllo.
 
-L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
+L’editor Rich Text è disponibile per i seguenti componenti di Communities:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -47,23 +46,23 @@ L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
 
 ## Personalizzazione {#customization}
 
-È possibile personalizzare l&#39;editor Rich Text in quanto l&#39;implementazione è basata su [CKEditor](https://www.ckeditor.com/).
+È possibile personalizzare l’editor Rich Text in quanto l’implementazione si basa su [CKEditor](https://www.ckeditor.com/).
 
-La configurazione corrente per i componenti Community si trova nel `cq.social.  scf   clientlib`, situato nella directory archivio all&#39;indirizzo
+La configurazione corrente per i componenti di Communities si trova nel `cq.social.  scf   clientlib`, situato nell’archivio all’indirizzo
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-La modifica della clientlib cq.social.scf non è consigliata in quanto gli aggiornamenti futuri potrebbero ignorare qualsiasi modifica.
+La modifica di cq.social.scf clientlib non è consigliata in quanto gli aggiornamenti futuri potrebbero sostituire qualsiasi modifica.
 
 ### Esempio di personalizzazione: Collegamenti in linea {#example-customization-inline-links}
 
-A causa di problemi di sicurezza, le opzioni del collegamento ipertestuale non sono incluse nel set di icone RTF presentate ai membri per impostazione predefinita. La capacità di generare errori è ampia quando gli hrefs sono consentiti in UGC.
+Per motivi di sicurezza, le opzioni dei collegamenti ipertestuali non sono incluse nel set di icone RTF presentate ai membri per impostazione predefinita. La capacità di errore è ampia quando gli hrefs sono ammessi in UGC.
 
-Per aggiungere le opzioni relative al collegamento ipertestuale alla barra degli strumenti:
+Per aggiungere le opzioni per i collegamenti ipertestuali alla barra degli strumenti:
 
-* Aggiungere una barra degli strumenti denominata &quot; `links`&quot;
+* Aggiungi una barra degli strumenti denominata &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Selezionare **[!UICONTROL Salva tutto]**
+* Seleziona **[!UICONTROL Salva tutto]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 
@@ -83,4 +82,3 @@ CKRte.prototype.config = {
     resize_enabled: false
 };
 ```
-

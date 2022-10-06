@@ -1,71 +1,70 @@
 ---
 title: Creazione di un Cloud Service personalizzato
-seo-title: Creazione di un Cloud Service personalizzato
-description: Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati
-seo-description: Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati
+seo-title: Creating a Custom Cloud Service
+description: Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Service personalizzati
+seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '418'
 ht-degree: 12%
 
 ---
 
-
 # Creazione di un Cloud Service personalizzato{#creating-a-custom-cloud-service}
 
-Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati. Questo consente di inserire tag personalizzati nella pagina in modo strutturato. Questo sarà utilizzato principalmente per fornitori di analisi di terze parti, ad esempio Google Analytics, heartbeat, ecc. Gli Cloud Services vengono ereditati dalle pagine padre alle pagine figlie, con la possibilità di interrompere l&#39;ereditarietà a qualsiasi livello.
+Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati. Ciò ti consente di inserire markup personalizzati nella pagina in modo strutturato. Questo verrà utilizzato principalmente per provider di analisi di terze parti, ad esempio Google Analytics, Chartbeat, ecc. I Cloud Services vengono ereditati dalle pagine padre alle pagine figlie, con la possibilità di interrompere l’ereditarietà a qualsiasi livello.
 
 >[!NOTE]
 >
->Questa guida dettagliata per la creazione di un nuovo Cloud Service è un esempio che utilizza le Google Analytics. Tutto potrebbe non essere applicabile al caso di utilizzo.
+>Questa guida dettagliata per la creazione di un nuovo Cloud Service è un esempio che utilizza Google Analytics. Tutto potrebbe non essere applicabile al tuo caso d’uso.
 
-1. In CRXDE Lite, create un nuovo nodo sotto `/apps`:
+1. In CRXDE Lite, crea un nuovo nodo sotto `/apps`:
 
    * **Nome**: `acs`
    * **Tipo**: `nt:folder`
 
-1. Crea un nuovo nodo in `/apps/acs`:
+1. Crea un nuovo nodo sotto `/apps/acs`:
 
    * **Nome**: `analytics`
    * **Tipo**: `sling:Folder`
 
-1. Create 2 nuovi nodi in `/apps/acs/analytics`:
+1. Crea 2 nuovi nodi sotto `/apps/acs/analytics`:
 
-   * **Nome**: components
+   * **Nome**: componenti
    * **Tipo**: `sling:Folder`
 
    e
 
-   * **Nome**: templates
+   * **Nome**: modelli
    * **Tipo**: `sling:Folder`
 
 
-1. Fare clic con il pulsante destro del mouse su `/apps/acs/analytics/components`. Selezionare **Crea...** seguito da **Crea componente...** La finestra di dialogo visualizzata consente di specificare:
+1. Fai clic con il pulsante destro del mouse `/apps/acs/analytics/components`. Seleziona **Crea...** seguito da **Crea componente...** La finestra di dialogo visualizzata consente di specificare:
 
    * **Etichetta**: `googleanalyticspage`
    * **Titolo**: `Google Analytics Page`
    * **Super Type**: `cq/cloudserviceconfigs/components/configpage`
    * **Gruppo**: `.hidden`
 
-1. Fare clic due volte su **Next** e specificare:
+1. Fai clic su **Successivo** due volte e specifica:
 
    * **Elementi padre consentiti:** `acs/analytics/templates/googleanalytics`
 
-   Fare clic due volte su **Next** e fare clic su **OK**.
+   Fai clic su **Successivo** due volte e fai clic su **OK**.
 
 1. Aggiungi una proprietà a `googleanalyticspage`:
 
    * **Nome:** `cq:defaultView`
    * **Valore:** `html`
 
-1. Create un nuovo file denominato `content.jsp` in `/apps/acs/analytics/components/googleanalyticspage`, con il seguente contenuto:
+1. Crea un nuovo file denominato `content.jsp` sotto `/apps/acs/analytics/components/googleanalyticspage`, con il seguente contenuto:
 
    ```xml
    <%@page contentType="text/html"
@@ -80,7 +79,7 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
    </div>
    ```
 
-1. Crea un nuovo nodo in `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Crea un nuovo nodo sotto `/apps/acs/analytics/components/googleanalyticspage/`:
 
    * **Nome**: `dialog`
    * **Tipo**: `cq:Dialog`
@@ -88,12 +87,12 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
 
       * **Nome**: `title`
       * **Tipo**: `String`
-      * **Valore**:  `Google Analytics Config`
+      * **Valore**: `Google Analytics Config`
       * **Nome**: `xtype`
       * **Tipo**: `String`
-      * **Valore**:  `dialog`
+      * **Valore**: `dialog`
 
-1. Crea un nuovo nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Crea un nuovo nodo sotto `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
    * **Nome**: `items`
    * **Tipo**: `cq:Widget`
@@ -101,24 +100,24 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
 
       * **Nome**: `xtype`
       * **Tipo**: `String`
-      * **Valore**:  `tabpanel`
+      * **Valore**: `tabpanel`
 
-1. Crea un nuovo nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Crea un nuovo nodo sotto `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
    * **Nome**: `items`
    * **Tipo**: `cq:WidgetCollection`
 
-1. Crea un nuovo nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Crea un nuovo nodo sotto `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
-   * **Nome**: tab1
+   * **Nome**: scheda1
    * **Tipo**: `cq:Panel`
    * **Proprietà**:
 
       * **Nome**: `title`
       * **Tipo**: `String`
-      * **Valore**:  `Config`
+      * **Valore**: `Config`
 
-1. Crea un nuovo nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Crea un nuovo nodo sotto `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **Nome**: items
    * **Tipo**: `nt:unstructured`
@@ -130,32 +129,32 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
 
       * **Nome**: `fieldDescription`
       * **Tipo**: `String`
-      * **Valore**:  `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+      * **Valore**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
       * **Nome**: `name`
       * **Tipo**: `String`
-      * **Valore**:  `./accountID`
+      * **Valore**: `./accountID`
       * **Nome**: `validateOnBlur`
       * **Tipo**: `String`
-      * **Valore**:  `true`
+      * **Valore**: `true`
       * **Nome**: `xtype`
       * **Tipo**: `String`
-      * **Valore**:  `textfield`
+      * **Valore**: `textfield`
 
-1. Copiare `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` in `/apps/acs/analytics/components/googleanalyticspage/body.jsp` e cambiare `libs` in `apps` alla riga 34 e rendere il riferimento script alla riga 79 un percorso completo.
-1. Create un nuovo modello in `/apps/acs/analytics/templates/`:
+1. Copia `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` a `/apps/acs/analytics/components/googleanalyticspage/body.jsp` e cambiare `libs` a `apps` alla riga 34 e rendere il riferimento script alla riga 79 un percorso completo.
+1. Crea un nuovo modello in `/apps/acs/analytics/templates/`:
 
    * con **Tipo di risorsa** = `acs/analytics/components/googleanalyticspage`
-   * con **Label** = `googleanalytics`
+   * con **Etichetta** = `googleanalytics`
    * con **Titolo**= `Google Analytics Configuration`
-   * con **allowPath** = `/etc/cloudservices/googleanalytics(/.*)?`
-   * con **allowChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * con **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (nel nodo del modello, non nel nodo jcr:content)
+   * con **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
+   * con **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
+   * con **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sul nodo modello, non sul nodo jcr:content)
    * con **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (su jcr:content)
 
-1. Crea nuovo componente: `/apps/acs/analytics/components/googleanalytics`.
+1. Crea un nuovo componente: `/apps/acs/analytics/components/googleanalytics`.
 
-   Aggiungete il contenuto seguente a `googleanalytics.jsp`:
+   Aggiungi il contenuto seguente a `googleanalytics.jsp`:
 
    ```xml
    <%@page import="org.apache.sling.api.resource.Resource,
@@ -194,28 +193,27 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
    %>
    ```
 
-   Questo deve restituire la marcatura personalizzata in base alle proprietà di configurazione.
+   Questo dovrebbe generare il markup personalizzato in base alle proprietà di configurazione.
 
-1. Andate a `http://localhost:4502/miscadmin#/etc/cloudservices` e create una nuova pagina:
+1. Passa a `http://localhost:4502/miscadmin#/etc/cloudservices` e crea una nuova pagina:
 
    * **Titolo**: `Google Analytics`
    * **Nome**: `googleanalytics`
 
-   Tornare indietro nel CRXDE Lite e, in `/etc/cloudservices/googleanalytics`, aggiungere la seguente proprietà a `jcr:content`:
+   Torna in CRXDE Lite e sotto `/etc/cloudservices/googleanalytics`, aggiungi la seguente proprietà a `jcr:content`:
 
    * **Nome**: `componentReference`
    * **Tipo**: `String`
-   * **Valore**:  `acs/analytics/components/googleanalytics`
+   * **Valore**: `acs/analytics/components/googleanalytics`
 
 
-1. Passate alla pagina del servizio appena creata ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) e fate clic su **+** per creare una nuova configurazione:
+1. Passa alla nuova pagina Servizio ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) e fai clic su **+** per creare una nuova configurazione:
 
    * **Configurazione elemento padre**: `/etc/cloudservices/googleanalytics`
    * **Titolo:**  `My First GA Config`
 
-   Scegliere **Configurazione Google Analytics** e fare clic su **Crea**.
+   Scegli **Configurazione Google Analytics** e fai clic su **Crea**.
 
-1. Immettere un **ID account**, ad esempio `AA-11111111-1`. Fai clic su **OK**.
-1. Passare a una pagina e aggiungere la configurazione appena creata nelle proprietà della pagina, nella scheda **Cloud Services**.
-1. Alla pagina verrà aggiunta la marcatura personalizzata.
-
+1. Inserisci un **ID account**, ad esempio `AA-11111111-1`. Fai clic su **OK**.
+1. Passa a una pagina e aggiungi la configurazione appena creata nelle proprietà della pagina, nella sezione **Cloud Services** scheda .
+1. Alla pagina verrà aggiunto il markup personalizzato.

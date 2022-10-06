@@ -1,22 +1,21 @@
 ---
 title: Controlli di coerenza e di transito
-seo-title: Controlli di coerenza e di transito
+seo-title: Consistency and Traversal Checks
 description: Scopri come eseguire controlli di coerenza e di attraversamento.
-seo-description: Scopri come eseguire controlli di coerenza e di attraversamento.
+seo-description: Learn how to perform consistency and traversal checks.
 uuid: 0304e378-7c60-4bf5-9052-d01149d2a6df
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
-
 
 # Controlli di coerenza e di transito{#consistency-and-traversal-checks}
 
@@ -32,7 +31,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 ...
 ```
 
-## Esegui un controllo di coerenza {#perform-a-consistency-check}
+## Eseguire un controllo di coerenza {#perform-a-consistency-check}
 
 Per eseguire un controllo di coerenza, passa alla pagina di amministrazione per JMX Mbean** com.adobe.granite (Repository)**. Dalla schermata principale AEM, vai a:
 
@@ -40,7 +39,6 @@ Per eseguire un controllo di coerenza, passa alla pagina di amministrazione per 
 
 In un&#39;installazione predefinita, si trova qui:  **[|Mostra utente|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-Nella sezione **Operazioni** della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fai clic sull’operazione e immetti i parametri desiderati.
+In **Operazioni** nella sezione della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fai clic sull’operazione e immetti i parametri desiderati.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
-

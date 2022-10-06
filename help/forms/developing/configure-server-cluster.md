@@ -35,7 +35,7 @@ Un cluster AEM Forms su JEE si basa sulle funzionalità di clustering del server
 
 ### Cache GemFire {#gemfire-cache}
 
-La cache GemFire è un meccanismo di cache distribuita implementato in ogni nodo del cluster. I nodi si trovano a vicenda e creano una singola cache logica che viene mantenuta coerente tra i nodi. I nodi che si ritrovano si uniscono per mantenere una singola cache nozionale mostrata come una nuvola nella Figura 1. A differenza di GDS e database, la cache è un’entità puramente teorica. Il contenuto effettivamente memorizzato nella cache viene memorizzato in memoria e nella directory `LC_TEMP` su ciascuno dei nodi del cluster.
+La cache GemFire è un meccanismo di cache distribuita implementato in ogni nodo del cluster. I nodi si trovano a vicenda e creano una singola cache logica che viene mantenuta coerente tra i nodi. I nodi che si ritrovano si uniscono per mantenere una singola cache nozionale mostrata come una nuvola nella Figura 1. A differenza di GDS e database, la cache è un’entità puramente teorica. Il contenuto effettivamente memorizzato nella cache viene memorizzato in memoria e nel `LC_TEMP` su ciascuno dei nodi del cluster.
 
 ### Database {#database}
 
@@ -47,7 +47,7 @@ L&#39;archiviazione globale dei documenti (GDS) è un&#39;area di archiviazione 
 
 ### Altre voci {#other-items}
 
-Oltre a queste risorse condivise principali, ci sono altri elementi che hanno un comportamento specifico del cluster, come il quarzo. Il quarzo è un sottosistema di pianificazione utilizzato da AEM Forms su JEE e utilizza tabelle di database per conoscere cosa è stato pianificato e quali attività pianificate sono in esecuzione. Il quarzo deve essere configurato in modo diverso per installazioni e cluster a nodo singolo e prende spunto da altre impostazioni AEM Forms su JEE.
+Oltre a queste risorse condivise principali, ci sono altri elementi che hanno un comportamento specifico del cluster, come il quarzo. Il quarzo è un sottosistema di pianificazione utilizzato da AEM Forms su JEE e utilizza tabelle di database per conoscere ciò che è stato pianificato e quali attività pianificate sono in esecuzione. Il quarzo deve essere configurato in modo diverso per installazioni e cluster a nodo singolo e prende spunto da altre impostazioni AEM Forms su JEE.
 
 ## Problemi comuni di configurazione {#common-configuration}
 
@@ -117,7 +117,7 @@ GemFire produce informazioni di registrazione che possono essere utilizzate per 
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-La stringa numerica dopo `adobeZZ_` è univoca per il nodo del server, pertanto è necessario cercare il contenuto effettivo della directory temporanea. I due caratteri dopo `adobe` dipendono dal tipo di server dell&#39;applicazione: `wl`, `jb` o `ws`.
+La stringa numerica dopo `adobeZZ_` è univoco per il nodo del server, quindi è necessario cercare il contenuto effettivo della directory temporanea. I due caratteri dopo `adobe` dipendono dal tipo di server dell&#39;applicazione: o `wl`, `jb`oppure `ws`.
 
 I registri di esempio seguenti mostrano cosa accade quando un cluster a due nodi si trova.
 
@@ -264,12 +264,11 @@ Nota che un&#39;impostazione utilizza un punto tra &quot;cluster&quot; e &quot;l
 
 Per determinare come Quartz si è configurato, è necessario esaminare i messaggi generati dal servizio AEM Forms on JEE Scheduler durante l&#39;avvio. Questi messaggi vengono generati con la gravità INFO e potrebbe essere necessario regolare il livello di log e riavviare per ottenere i messaggi. All&#39;interno della sequenza di avvio di AEM Forms su JEE, l&#39;inizializzazione di Quartz inizia con la seguente riga:
 
-INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
-È importante individuare questa prima riga nei registri perché alcuni server applicativi utilizzano anche Quartz e le relative istanze Quartz non devono essere confuse con l’istanza utilizzata dal servizio AEM Forms on JEE Scheduler. Questo è l&#39;indicazione che il servizio di pianificazione è in fase di avvio e le linee che lo seguono vi indicheranno se sta iniziando o meno in modalità cluster correttamente. In questa sequenza compaiono diversi messaggi, ed è l’ultimo messaggio &quot;avviato&quot; che rivela la configurazione del quarzo:
+INFORMAZIONI  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad È importante individuare questa prima riga nei log perché alcuni server applicativi utilizzano anche Quartz e le relative istanze Quartz non devono essere confuse con l&#39;istanza utilizzata da AEM Forms sul servizio di pianificazione JEE. Questo è l&#39;indicazione che il servizio di pianificazione è in fase di avvio e le linee che lo seguono vi indicheranno se sta iniziando o meno in modalità cluster correttamente. In questa sequenza compaiono diversi messaggi, ed è l’ultimo messaggio &quot;avviato&quot; che rivela la configurazione del quarzo:
 
-Qui viene fornito il nome dell&#39;istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dello scheduler inizierà sempre con la stringa `IDPSchedulerService_$_`. La stringa aggiunta alla fine indica se quarz è in esecuzione o meno in modalità cluster. L&#39;identificatore univoco lungo generato dal nome host del nodo e una lunga stringa di cifre, in questo caso `ap-hp8.ottperflab.adobe.com1312883903975`, indica che funziona in un cluster. Se funziona come un singolo nodo, l&#39;identificatore sarà un numero a due cifre, &quot;20&quot;:
+Qui viene fornito il nome dell&#39;istanza Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Il nome dell&#39;istanza Quartz dello scheduler inizierà sempre con la stringa `IDPSchedulerService_$_`. La stringa aggiunta alla fine indica se quarz è in esecuzione o meno in modalità cluster. L&#39;identificatore univoco lungo generato dal nome host del nodo e da una lunga stringa di cifre, qui `ap-hp8.ottperflab.adobe.com1312883903975`, indica che funziona in un cluster. Se funziona come un singolo nodo, l&#39;identificatore sarà un numero a due cifre, &quot;20&quot;:
 
-INFO `[org.quartz.core.QuartzScheduler]` Pianificazione `IDPSchedulerService_$_20` avviata.
+INFORMAZIONI  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` Ho iniziato.
 Questo controllo deve essere eseguito separatamente su tutti i nodi del cluster, in quanto la pianificazione di ciascun nodo determina in modo indipendente se operare in modalità cluster.
 
 ### Quali tipi di problemi si verificano se il quarzo è in esecuzione in modalità sbagliata? {#quartz-running-in-wrong-mode}

@@ -1,8 +1,8 @@
 ---
 title: Lanci
-seo-title: Lanci
+seo-title: Launches
 description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
-seo-description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 93%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -39,9 +38,9 @@ I lanci possono anche essere:
 
 Questa sezione spiega come creare, modificare e promuovere (e, se necessario, [eliminare](/help/sites-authoring/launches-creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Sites o [della console dei lanci](#the-launches-console):
 
-* [Creazione di lanci](/help/sites-authoring/launches-creating.md)
+* [Creazione dei lanci](/help/sites-authoring/launches-creating.md)
 * [Modifica dei lanci](/help/sites-authoring/launches-editing.md)
-* [Promozione del lancio](/help/sites-authoring/launches-promoting.md)
+* [Promozione dei lanci](/help/sites-authoring/launches-promoting.md)
 
 ## Lanci - Ordine degli eventi {#launches-the-order-of-events}
 
@@ -99,7 +98,7 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->La creazione e la modifica dei lanci richiede diritti di accesso a `/content/launches`, come nel gruppo predefinito `content-authors`.
+>La creazione e la modifica dei lanci richiede diritti di accesso a `/content/launches`- come per il gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
@@ -126,6 +125,6 @@ La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intrap
 
    ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili :
+1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili:
 
    ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)

@@ -117,7 +117,7 @@ Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo
 
       `/libs/foundation/components/text/cq:dialog`
 
-   * Per eseguire l&#39;override, crea il seguente nodo, ad esempio:
+   * Per eseguire l&#39;override, crea il nodo seguente, ad esempio:
 
       `/apps/the-project/components/text/cq:dialog`
 

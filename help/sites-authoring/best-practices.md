@@ -1,22 +1,21 @@
 ---
-title: 'Best practice  '
-seo-title: 'Best practice  '
+title: Best practice
+seo-title: Best Practices
 description: Come utilizzare AEM nel modo più efficace ed efficiente possibile
-seo-description: Come utilizzare AEM nel modo più efficace ed efficiente possibile
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 72%
+source-wordcount: '287'
+ht-degree: 70%
 
 ---
-
 
 # Best practice  {#best-practices}
 
@@ -36,9 +35,9 @@ Per le best practice relative ad amministrazione, distribuzione e manutenzione o
 
 Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
 
-## Assets {#assets}
+## Risorse {#assets}
 
-Le best practice relative alle risorse, comprese le funzionalità di Dynamic Media e l&#39;integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
+Le best practice relative alle risorse, tra cui funzionalità Dynamic Media e integrazione Dynamic Media Classic, sono descritte nei seguenti argomenti:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Le best practice relative alle risorse, comprese le funzionalità di Dynamic Med
   <tr>
    <td>Imaging dinamico</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best practice relative all’imaging dinamico</a></td>
-   <td><p>Descrive come rendere nitida un’immagine per ottenere risultati ottimali e come ottimizzare la qualità delle immagini se utilizzate la funzionalità Dynamic Media o se vi state integrando con Dynamic Media Classic. </p> </td>
+   <td><p>Descrive come aumentare la nitidezza di un’immagine per ottenere risultati ottimali e il modo migliore per ottimizzare la qualità delle immagini quando si utilizza la funzionalità Dynamic Media o si esegue l’integrazione con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Risorse multilingua</td>
@@ -71,8 +70,8 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
 
 |  |  |  |
 |---|---|---|
-| Strumenti di authoring | [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md) | Fornisce una panoramica degli strumenti utilizzati per creare le pagine. |
-| Organizzazione delle pagine | [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md) | Fornisce una panoramica su come organizzare al meglio le pagine, comprese le convenzioni di denominazione. |
+| Strumenti di authoring | [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md) | Offre una panoramica degli strumenti utilizzati per la creazione delle pagine. |
+| Organizzazione delle pagine | [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md) | Offre una panoramica dei modi migliori di organizzare le pagine, incluse le convenzioni di denominazione. |
 
 ## Forms {#forms}
 

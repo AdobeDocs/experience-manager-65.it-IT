@@ -14,7 +14,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -27,11 +27,11 @@ Caratteristiche di un Frammento esperienza:
 * È parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
 * Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
-* Questo modello viene utilizzato per creare il *pagina principale* del frammento esperienza.
+* Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
 * È composto da uno o più componenti, con layout, in un sistema di paragrafo.
 * Può contenere altri frammenti esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
-* Puoi creare una o più varianti in base alla pagina principale.
+* Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
 * Può essere suddiviso in blocchi predefiniti che possono essere utilizzati in più varianti del frammento.
 
@@ -178,8 +178,8 @@ Per creare un frammento esperienza:
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
-   I tag del modello Frammento esperienza non verranno uniti ai tag presenti nella pagina principale Frammento esperienza.
-   Queste sono completamente separate.
+   I tag del modello Frammento di esperienza non verranno uniti ai tag presenti nella pagina root Frammento di esperienza.
+   Sono completamente separati.
 
 1. Fai clic su **Crea**.
 
@@ -285,7 +285,7 @@ Per creare un nuovo blocco predefinito:
 
 Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni blocco sono disponibili le azioni seguenti:
 
-* Vai al master: apri la variante della pagina principale in una nuova scheda
+* Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
 * Elimina
 

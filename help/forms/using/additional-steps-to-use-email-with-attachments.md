@@ -1,6 +1,6 @@
 ---
-title: 'Passaggi aggiuntivi per ricevere e-mail con allegato '
-description: 'Passaggi aggiuntivi per ricevere e-mail con allegato   '
+title: Passaggi aggiuntivi per ricevere e-mail con allegato
+description: Passaggi aggiuntivi per ricevere e-mail con allegato
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '226'

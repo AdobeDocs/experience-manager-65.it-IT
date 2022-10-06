@@ -1,8 +1,8 @@
 ---
 title: Configurazione dei componenti in modalità Progettazione
-seo-title: Configurazione dei componenti in modalità Progettazione
+seo-title: Configuring Components in Design Mode
 description: Quando si installa un’istanza di AEM out-of-the-box, nella barra laterale è immediatamente disponibile una serie di componenti. Oltre a questi, sono disponibili anche vari altri componenti. Puoi usare la modalità Progettazione per attivarli o disattivarli.
-seo-description: Quando si installa un’istanza di AEM out-of-the-box, nella barra laterale è immediatamente disponibile una serie di componenti. Oltre a questi, sono disponibili anche vari altri componenti. Puoi usare la modalità Progettazione per attivarli o disattivarli.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 93%
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
-
 
 # Configurazione dei componenti in modalità Progettazione{#configuring-components-in-design-mode}
 
@@ -50,7 +49,7 @@ In modalità Progettazione, la barra laterale viene ridotta a icona ed è possib
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Fare clic su **Modifica** nel sistema Paragrafo (**Progettazione di par**).
+1. Fai clic su **Modifica** sul sistema Paragrafo (**Progettazione di par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +73,7 @@ In modalità Progettazione è inoltre possibile configurare gli attributi di sin
 
 1. È possibile configurare l’aspetto dei componenti.
 
-   Ad esempio, se fai clic su **Modifica** nel componente Immagine (**Progettazione di immagine**), puoi configurare i parametri specifici del componente:
+   Ad esempio, se fai clic su **Modifica** sul componente Immagine (**Progettazione di immagini**) puoi configurare i parametri specifici del componente:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

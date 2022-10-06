@@ -104,7 +104,6 @@ Se utilizzi un WCM di terze parti (Web Content Manager), devi integrare il nuovo
 >
 >* Per aggiungere interattività al video, attiva Quickview.
 >* La tua implementazione di Experience Manager *not* utilizza un framework di integrazione eCommerce per estrarre i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Vedi [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
 >
 >Se l’implementazione di Experience Manager utilizza eCommerce, puoi saltare questa attività e passare all’attività successiva.
 

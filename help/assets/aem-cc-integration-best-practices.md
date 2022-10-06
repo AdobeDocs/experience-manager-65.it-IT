@@ -33,7 +33,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 ## Esigenze di collaborazione di creativi, esperti marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
-| Requisiti | Caso d’uso | Superfici interessate |
+| Requisiti  | Caso d’uso | Superfici interessate |
 |---|---|---|
 | Semplificare l&#39;esperienza per i creativi sul desktop | Semplificare l’accesso alle risorse da un DAM ([!DNL Experience Manager Assets]) per i creativi o, più in generale, per gli utenti desktop che lavorano in applicazioni native per la creazione di risorse. Hanno bisogno di un modo semplice e semplice per scoprire, utilizzare (aprire), modificare e salvare le modifiche in [!DNL Experience Manager], e carica nuovi file. | desktop Win o Mac; [!DNL Creative Cloud] app |
 | Fornire risorse pronte all’uso di alta qualità da [!DNL Adobe Stock] | Gli addetti al marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l’origine e l’individuazione delle risorse. I professionisti creativi utilizzano le risorse approvate direttamente dai propri strumenti creativi. | [!DNL Experience Manager Assets]; [!DNL Adobe Stock] mercato; campi metadati |

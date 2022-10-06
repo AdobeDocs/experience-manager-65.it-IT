@@ -1,8 +1,8 @@
 ---
 title: Pubblicare cartelle su Brand Portal
-seo-title: Pubblicare cartelle su Brand Portal
+seo-title: Publish folders to Brand Portal
 description: Scopri come pubblicare e annullare la pubblicazione delle cartelle in Brand Portal.
-seo-description: Scopri come pubblicare e annullare la pubblicazione delle cartelle in Brand Portal.
+seo-description: Learn how to publish and unpublish folders to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '566'
 ht-degree: 38%
 
 ---
@@ -30,7 +30,7 @@ Se apporti modifiche successive alla risorsa o alla cartella originale in AEM As
 
 ## Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Nell’interfaccia di AEM Assets, passa il puntatore del mouse sulla cartella desiderata e seleziona l’opzione **Pubblica** dalle azioni rapide.
+1. Dall’interfaccia di AEM Assets, passa il puntatore del mouse sulla cartella desiderata e seleziona **Pubblica** dalle azioni rapide.
 
    In alternativa, seleziona la cartella desiderata e segui i passaggi successivi.
 
@@ -40,10 +40,10 @@ Se apporti modifiche successive alla risorsa o alla cartella originale in AEM As
 
    Per pubblicare le cartelle selezionate su Brand Portal, effettua una delle seguenti operazioni:
 
-   * Dalla barra degli strumenti, seleziona **Pubblicazione rapida**. Dal menu, seleziona **Pubblica in Brand Portal**.
+   * Dalla barra degli strumenti, seleziona **Pubblicazione rapida**. Dal menu , seleziona **Pubblicare su Brand Portal**.
 
    * Dalla barra degli strumenti, seleziona **Gestisci pubblicazione**.
-   1. In **Azione** selezionare **Pubblica in Brand Portal**, in **Pianificazione** selezionare **Ora** e fare clic su **Avanti.**
+   1. Da **Azione** select **Pubblicare su Brand Portal** da **Pianificazione** select **Ora** e fai clic su **Avanti.**
    1. Conferma la selezione in **Ambito** e fai clic su **Pubblica su Brand Portal**.
 
    Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Accedi all’interfaccia di Brand Portal per visualizzare la cartella pubblicata.
@@ -52,8 +52,8 @@ Se apporti modifiche successive alla risorsa o alla cartella originale in AEM As
 
    Per pianificare la pubblicazione in Brand Portal del flusso di lavoro delle cartelle di risorse in una data o un’ora successiva:
 
-   1. Dopo aver selezionato le risorse o le cartelle da pubblicare, seleziona **Gestisci pubblicazione** dalla barra degli strumenti in alto.
-   1. In **Azione** seleziona **Pubblica in Brand Portal**, in **Pianificazione** seleziona **Più tardi**.
+   1. Dopo aver selezionato le risorse o le cartelle da pubblicare, seleziona **Gestisci pubblicazione** dalla barra degli strumenti nella parte superiore.
+   1. Da **Azione** select **Pubblicare su Brand Portal** da **Pianificazione** select **Più tardi**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -82,7 +82,7 @@ Per rimuovere una cartella di risorse pubblicata in Brand Portal, annullane la p
    Per annullare rapidamente la pubblicazione della cartella desiderata da Brand Portal:
 
    1. Dalla barra degli strumenti, seleziona **Gestisci pubblicazione**.
-   1. In **Azione** selezionare **Annulla pubblicazione da Brand Portal**, in **Pianificazione** selezionare **Ora** e fare clic su **Avanti.**
+   1. Da **Azione** select **Annulla pubblicazione da Brand Portal** da **Pianificazione** select **Ora** e fai clic su **Avanti.**
    1. Conferma la selezione in **Ambito** e fai clic su **Annulla pubblicazione su Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
@@ -92,7 +92,7 @@ Per rimuovere una cartella di risorse pubblicata in Brand Portal, annullane la p
    Per pianificare la pubblicazione di una cartella da Brand Portal in una data e un’ora successive:
 
    1. Dalla barra degli strumenti, seleziona **Gestisci pubblicazione**.
-   1. In **Azione** selezionare **Annulla pubblicazione da Brand Portal**, quindi in **Pianificazione** selezionare **Più tardi**.
+   1. Da **Azione** select **Annulla pubblicazione da Brand Portal** e da **Pianificazione** select **Più tardi**.
    1. Seleziona un valore per **Data di attivazione** e specifica l’ora. Fai clic su **Avanti**.
    1. Conferma la selezione in **Ambito** e fai clic su **Avanti**.
    1. Specifica un valore per **Titolo flusso di lavoro** in **Flussi di lavoro**. Fai clic su **Annulla pubblicazione più tardi.**

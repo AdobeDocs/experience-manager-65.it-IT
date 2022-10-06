@@ -1,8 +1,8 @@
 ---
-title: 'Utilizzo delle versioni di una pagina  '
-seo-title: 'Utilizzo delle versioni di una pagina  '
+title: Utilizzo delle versioni di una pagina
+seo-title: Working with Page Versions
 description: Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento.
-seo-description: Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 91%
 
 ---
-
 
 # Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
@@ -37,15 +36,14 @@ Per creare una nuova versione di una pagina:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Inserisci un **Commento** (facoltativo).
-1. Per impostare un&#39;etichetta per la versione (facoltativo), fare clic sul pulsante **Altro >>** e impostare l&#39; **Label** in modo da assegnare un nome alla versione. Se l&#39;etichetta non è impostata, la versione è un numero incrementato automaticamente.
-1. Fare clic su **Crea versione**. Sulla pagina viene visualizzato un messaggio in grigio; ad esempio:
-Versione 1.2 creata per: Camicie.
+1. Per impostare un’etichetta per la versione (facoltativa), fai clic sul pulsante **Altro >>** e impostare **Etichetta** per assegnare un nome alla versione. Se l’etichetta non è impostata, la versione è un numero incrementato automaticamente.
+1. Fai clic su **Crea versione**. Sulla pagina viene visualizzato un messaggio in grigio; ad esempio: La versione 1.2 creata per: Camicie.
 
 >[!NOTE]
 >
 >Quando la pagina viene attivata, viene automaticamente creata una versione.
 
-## Ripristino di una versione di una pagina dalla barra laterale  {#restoring-a-page-version-from-sidekick}
+## Ripristino di una versione di una pagina dalla barra laterale {#restoring-a-page-version-from-sidekick}
 
 Per ripristinare una versione precedente della pagina:
 
@@ -71,7 +69,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una pagina
 
 1. Seleziona la versione da ripristinare e fai clic su **Ripristina**. AEM ripristina le versioni o gli alberi selezionati.
 
-### Ripristino di una struttura ad albero dalla console  {#restoring-a-tree-from-the-console}
+### Ripristino di una struttura ad albero dalla console {#restoring-a-tree-from-the-console}
 
 Questo metodo può essere utilizzato per ripristinare una versione di una pagina o pagine precedentemente eliminate:
 
@@ -83,12 +81,12 @@ Questo metodo può essere utilizzato per ripristinare una versione di una pagina
 
 1. Fai clic su **Ripristina**. AEM ripristina la struttura ad albero selezionata.
 
-## Confronto con una versione precedente  {#comparing-with-a-previous-version}
+## Confronto con una versione precedente {#comparing-with-a-previous-version}
 
 Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nel browser, apri la pagina da confrontare con una versione precedente.
-1. Nella barra laterale selezionate la scheda **Gestione versioni**, quindi la sottoscheda **Ripristina versione** n.
+1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la **Ripristina versione** n sottoscheda.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -103,13 +101,13 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nella barra laterale seleziona la sottoscheda **Ripristina versione** e fai clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
 
-## Timewarp    {#timewarp}
+## Timewarp   {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
 Questo consente di tenere tracciare del sito pubblicato in un particolare momento. Le attivazioni pagina vengono usate per determinare lo stato dell’ambiente di pubblicazione.
 
-Per effettuare ciò:
+Per effettuare questo collegamento:
 
 * Il sistema cerca la versione della pagina che era attiva nel momento temporale selezionato.
 * In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
@@ -120,7 +118,7 @@ Per effettuare ciò:
 >
 >Se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css, immagini ecc.) per la riproduzione del sito Web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nella directory archivio.
 
-### Utilizzo del calendario Timewarp  {#using-the-timewarp-calendar}
+### Utilizzo del calendario Timewarp {#using-the-timewarp-calendar}
 
 Timewarp è disponibile dalla barra laterale.
 
@@ -196,4 +194,4 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 
 >[!CAUTION]
 >
->Timewarp è uno strumento che consente agli autori di comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.
+>Timewarp è uno strumento utile per aiutare gli autori a comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.

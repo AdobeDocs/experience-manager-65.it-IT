@@ -1,21 +1,20 @@
 ---
 title: Sistema di stili
-seo-title: Sistema di stili
+seo-title: Style System
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
-seo-description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
+seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 uuid: 0d857650-8738-49e6-b431-f69c088be74f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
+exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 96%
+source-wordcount: '1314'
+ht-degree: 98%
 
 ---
-
 
 # Sistema di stili{#style-system}
 
@@ -62,7 +61,7 @@ Il diagramma seguente illustra l’architettura del sistema di stili.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Utilizzo {#use}
+## Utilizzare {#use}
 
 Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
 
@@ -74,7 +73,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
-### Autore di contenuti   {#as-a-content-author}
+### Autore di contenuti  {#as-a-content-author}
 
 1. Dopo aver installato il progetto WKND, visita la pagina principale in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modifica la pagina.
 1. Seleziona un componente **Titolo** più in basso nella pagina.
@@ -89,7 +88,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
    >
    >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni di **Stile** (**Sottolineato**, **Allinea a destra** e **Spaziatura minima**) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
-### Autore di modelli   {#as-a-template-author}
+### Autore di modelli  {#as-a-template-author}
 
 1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
 
@@ -112,7 +111,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Per poter funzionare, le classi CSS (così come qualsiasi codice JavaScript necessario) configurate come proprietà di stile del criterio di un componente devono essere distribuite come [librerie client](/help/sites-developing/clientlibs.md).
+>Le classi CSS (nonché eventuale codice Javascript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [librerie client](/help/sites-developing/clientlibs.md) per poter funzionare.
 
 ## Configurazione {#setup}
 
@@ -131,7 +130,7 @@ Con il componente configurato, gli stili configurati dall’autore della pagina 
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
-AEM versione 6.5.3.0 è ora disponibile una scheda Stili nella finestra di dialogo Modifica. A differenza della scheda della finestra di progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
+AEM versione 6.5.3.0 è ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica . A differenza della scheda della finestra di progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
 
 La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo di progettazione:
 
@@ -142,7 +141,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 >
 >Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
-### Stili con nomi di elementi   {#styles-with-element-names}
+### Stili con nomi di elementi  {#styles-with-element-names}
 
 Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio nella finestra di dialogo della progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. In questo modo verrà impostato il nome dell’elemento wrapper.
 
@@ -159,7 +158,6 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
 
 >
-
 
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout, o il componente Frammento di contenuto, al fine di attribuire loro un significato aggiuntivo.

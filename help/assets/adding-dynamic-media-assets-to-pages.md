@@ -128,7 +128,6 @@ Il componente Dynamic Media è intelligente. Sia che si aggiunga un’immagine o
 >
 >* istanze multiple del componente Dynamic Media in uso sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >L’assegnazione di un predefinito visualizzatore diverso a ciascun componente Dynamic Media in quella pagina non è supportata.
 >
@@ -284,7 +283,6 @@ Il componente File multimediali interattivi è intelligente. Sia che si aggiunga
 >
 >* Nella stessa pagina vengono utilizzate più istanze del componente File multimediali interattivi.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >L’assegnazione di un predefinito visualizzatore diverso a ciascun componente File multimediali interattivi in quella pagina non è supportata.
 >
@@ -325,7 +323,6 @@ Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse p
 >
 >* Più istanze del **[!UICONTROL Supporti panoramici]** componente utilizzato sulla stessa pagina.
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
-
 >
 >Assegnazione di un predefinito visualizzatore diverso a ogni **[!UICONTROL Supporti panoramici]** il componente in quella pagina non è supportato.
 >

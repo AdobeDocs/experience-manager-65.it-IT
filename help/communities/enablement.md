@@ -1,8 +1,8 @@
 ---
 title: Configurazione delle funzionalità di abilitazione
-seo-title: Configurazione delle funzionalità di abilitazione
+seo-title: Configuring Enablement Features
 description: Configurare le funzioni di abilitazione in Communities
-seo-description: Configurare le funzioni di abilitazione in Communities
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Le funzioni di abilitazione consentono di creare [community di abilitazione](overview.md#enablement-community).
+Le funzioni di abilitazione consentono di creare [comunità di abilitazione](overview.md#enablement-community).
 
 * Questa funzione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
 
@@ -40,13 +40,13 @@ Installazione di:
 
 * **FFmpeg**
 
-   FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installato, viene utilizzato per la corretta transcodifica di [Risorse video](../../help/sites-authoring/default-components-foundation.md#video). Per le community di abilitazione, viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare durante l’elenco della risorsa.
+   FFmpeg è una soluzione per la conversione e lo streaming audio e video e, quando installato, viene utilizzato per la corretta transcodifica di [Risorse video](../../help/sites-authoring/default-components-foundation.md#video). Per le community di abilitazione, viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare durante l’elenco della risorsa.
 
 Configurazione di:
 
 * **Manager community**
 
-   Per le community di abilitazione, solo ai membri del gruppo di utenti `Community Enablement Managers` può essere assegnato il ruolo di `Community Site Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuti, le assegnazioni e la gestione di membri nell’ambiente di pubblicazione.
+   Per le comunità di abilitazione, solo i membri del `Community Enablement Managers` al gruppo di utenti può essere assegnato il ruolo di `Community Site Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuti, le assegnazioni e la gestione dei membri nell’ambiente di pubblicazione.
 
 Configurazione opzionale di:
 
@@ -68,7 +68,7 @@ Ogni passaggio è collegato alla documentazione che fornisce i dettagli necessar
 
    Utilizzare la console Web (bundle): *http://localhost:4502/system/console/bundles*
 
-   Installa *prima* di installare il pacchetto SCORM
+   Installa *prima* installazione del pacchetto SCORM
 
 1. **[Installa il pacchetto SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,7 +105,7 @@ Ogni passaggio è collegato alla documentazione che fornisce i dettagli necessar
 
 **Nell’istanza dell’autore:**
 
-1. (*Facoltativo*) **[Configura il servizio Analytics](analytics.md)**
+1. (*Facoltativo*) **[Configurare il servizio Analytics](analytics.md)**
 
    Usa la console Strumenti, Implementazione, Cloud Services: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
@@ -130,4 +130,4 @@ Ogni passaggio è collegato alla documentazione che fornisce i dettagli necessar
 
 ## Dispatcher {#dispatcher}
 
-Quando la distribuzione include [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, le sezioni `clientheader` e `filter` devono essere modificate. Consulta [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).
+Quando la distribuzione include [Dispatcher AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, il `clientheader` e `filter` le sezioni devono essere modificate. Vedi [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).

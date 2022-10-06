@@ -1,22 +1,21 @@
 ---
 title: Panoramica sulla gestione della corrispondenza
-seo-title: Gestione della corrispondenza
+seo-title: Correspondence Management
 description: Questo argomento offre una panoramica di Gestione della corrispondenza.
-seo-description: Questo argomento offre una panoramica di Gestione della corrispondenza.
+seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c7f1acf3-ec2b-4a71-83a4-c71981d4cefa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
-
 
 # Panoramica sulla gestione della corrispondenza {#correspondence-management-overview}
 
@@ -49,4 +48,3 @@ Migliora il coinvolgimento del cliente, consentendoti di:
 * Aggiunta di tecnologie interattive per abilitare un canale bidirezionale, riducendo gli invii cartacei
 * Informazioni sensibili Protect con protezione integrata dei documenti end-to-end
 * Inviare la corrispondenza tramite il canale di comunicazione preferito del cliente, elettronico, postale, mobile o fax.
-

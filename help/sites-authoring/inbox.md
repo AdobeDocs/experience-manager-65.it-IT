@@ -1,22 +1,21 @@
 ---
-title: 'Casella in entrata  '
-seo-title: Casella in entrata
+title: Casella in entrata
+seo-title: Your Inbox
 description: Gestione delle attività con la casella in entrata
-seo-description: Gestione delle attività con la casella in entrata
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
-source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
+exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 76%
+source-wordcount: '1140'
+ht-degree: 77%
 
 ---
-
 
 # Casella in entrata  {#your-inbox}
 
@@ -49,9 +48,7 @@ Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e in
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md) 
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
-
 >
-
 
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
@@ -138,33 +135,33 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 ### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
-L&#39;opzione Controllo amministratore consente agli amministratori di:
+L’opzione Controllo amministratore consente agli amministratori di:
 
-* Personalizzare le colonne AEM Casella in entrata
+* Personalizzare le colonne della casella in entrata AEM
 
-* Personalizzare il testo dell’intestazione e il logo
+* Personalizzare il testo e il logo dell’intestazione
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del gruppo `administrators` o `workflow-administrators`.
+L’opzione Controllo amministratore è visibile solo ai membri del gruppo `administrators` o `workflow-administrators` gruppo.
 
-* **Personalizzazione** colonna: Personalizzare una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
-   * **Aggiungi colonna**: Selezionare una colonna da aggiungere AEM Posta in arrivo.
-   * **Modifica colonna**: Passate il mouse sul titolo della colonna e toccate l&#39;icona  ![](assets/edit.svg) di modifica per immettere un nome visualizzato per la colonna.
-   * **Elimina colonna**: Toccate l&#39; ![](assets/delete_updated.svg) icona di eliminazione per eliminare la colonna da AEM Posta in arrivo.
-   * **Sposta colonna**: Trascinare il  ![](assets/move_updated.svg) veic per spostare una colonna in una nuova posizione AEM Casella in entrata.
+* **Personalizzazione colonna**: Personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+   * **Aggiungi colonna**: Selezionare una colonna da aggiungere AEM casella in entrata.
+   * **Modifica colonna**: Passa il puntatore del mouse sul titolo della colonna e tocca ![modifica](assets/edit.svg) per immettere un nome visualizzato per la colonna.
+   * **Elimina colonna**: Tocca ![delete](assets/delete_updated.svg) per eliminare la colonna AEM casella in entrata.
+   * **Sposta colonna**: Trascina ![spostare](assets/move_updated.svg) per spostare una colonna in una nuova posizione in AEM casella in entrata.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizza il testo dell’intestazione:** specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito di  **Adobe Experience** Manager.
+   * **Personalizza il testo dell’intestazione:** Specifica il testo da visualizzare nell’intestazione per sostituire il valore predefinito **Adobe Experience Manager** testo.
 
-   * **Personalizza logo:** specifica l’immagine da visualizzare nell’intestazione come logo. Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine nel campo.
+   * **Personalizza logo:** Specifica l’immagine da visualizzare nell’intestazione come logo. Carica un’immagine in Digital Asset Management (DAM) e fai riferimento a tale immagine nel campo .
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca il logo o il testo Adobe Experience Manager.
-* **Salva:** Toccate o fate clic su questa opzione per salvare le impostazioni.
+   * **Nascondi opzioni di navigazione:** Seleziona questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamento Aiuto e opzioni di authoring disponibili quando si tocca il logo o il testo di Adobe Experience Manager.
+* **Salva:** Tocca o fai clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
@@ -179,7 +176,7 @@ L&#39;opzione Controllo amministratore è visibile solo ai membri del gruppo `ad
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di un flusso di lavoro.
+   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
@@ -242,7 +239,7 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto   {#creating-a-project}
+## Creazione di un progetto  {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
 
@@ -291,4 +288,3 @@ Puoi filtrare gli elementi elencati:
    >[!NOTE]
    >
    >Con [Impostazioni vista](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si utilizza la [Vista a elenco](#inbox-list-view).
-

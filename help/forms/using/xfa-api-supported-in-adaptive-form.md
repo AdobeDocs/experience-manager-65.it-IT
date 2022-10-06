@@ -1,22 +1,21 @@
 ---
 title: Supporto XFA nei moduli adattivi basati su XDP
-seo-title: Supporto XFA nei moduli adattivi basati su XDP
+seo-title: XFA support in XDP-based adaptive forms
 description: Elenca gli eventi XFA supportati, le proprietà, gli script e la convalida nei moduli adattivi.
-seo-description: Elenca gli eventi XFA supportati, le proprietà, gli script e la convalida nei moduli adattivi.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '683'
 ht-degree: 7%
 
 ---
-
 
 # Supporto XFA nei moduli adattivi basati su XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -34,7 +33,7 @@ Questo articolo elenca gli eventi, le proprietà e le convalide XFA supportati n
 
 ## Elementi XFA supportati e loro mappatura nei moduli adattivi {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### espandibili {#fields}
+### Campi {#fields}
 
 Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascinare un campo XFA nel modulo adattivo. La tabella seguente elenca il modo in cui i campi XFA vengono mappati ai campi del modulo adattivo.
 
@@ -142,7 +141,7 @@ La tabella seguente acquisisce il comportamento dei vari script XFA definiti nei
    <td><p>Mappata alla proprietà short description in forma adattiva.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (tutti i tipi di campo)</em></p> </td>
+   <td><p>didascalia<em> (tutti i tipi di campo)</em></p> </td>
    <td><p>Mappata alla proprietà Titolo in modulo adattivo.</p> </td>
   </tr>
   <tr>
@@ -154,7 +153,7 @@ La tabella seguente acquisisce il comportamento dei vari script XFA definiti nei
    <td><p>Mappata alla proprietà value in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Casella di riepilogo, Casella di controllo)</em></p> </td>
+   <td><p>items<em> (Casella Di Riepilogo, Casella Di Controllo)</em></p> </td>
    <td><p>Mappata alla proprietà options in forma adattiva. È possibile sostituirlo utilizzando l'espressione Options.</p> </td>
   </tr>
   <tr>
@@ -162,7 +161,7 @@ La tabella seguente acquisisce il comportamento dei vari script XFA definiti nei
    <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti in modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (Campo di testo)</em></p> </td>
+   <td><p>multilingue<em> (Campo di testo)</em></p> </td>
    <td><p>Mappata alla proprietà Consenti righe multiple in forma adattiva.</p> </td>
   </tr>
   <tr>
@@ -269,4 +268,3 @@ Nella tabella seguente viene illustrato come le convalide XFA vengono associate 
 >[!NOTE]
 >
 >Non è possibile ignorare la proprietà obbligatoria per i pulsanti di scelta modulo adattivo e il gruppo di caselle di controllo associati ai pulsanti di controllo XFA.
-

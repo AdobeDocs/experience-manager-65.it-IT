@@ -1,10 +1,11 @@
 ---
 title: Scopri lo sviluppo di CMS Headless
 description: In questa parte del Percorso AEM Headless Developer, scopri la tecnologia headless e perché utilizzarla.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri la 
 
 ## Obiettivo {#objective}
 
-Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzato. Dopo la lettura è necessario:
+Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzato. Dopo la lettura dovresti:
 
 * Comprendere i concetti e la terminologia di base per la distribuzione di contenuti headless
 * Capire perché e quando è richiesto un headless
@@ -113,7 +114,7 @@ Questo percorso si concentra sul modello di distribuzione dei contenuti headless
 
 ## Novità {#what-is-next}
 
-Grazie per aver iniziato sul tuo percorso AEM senza testa! Dopo aver letto questo documento, è necessario:
+Grazie per aver iniziato sul tuo percorso AEM senza testa! Dopo aver letto questo documento, devi:
 
 * Comprendi i concetti e la terminologia di base per la distribuzione di contenuti headless.
 * Capire perché e quando è richiesto il headless.
@@ -125,4 +126,4 @@ Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il 
 
 Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless rivedendo il documento [Guida introduttiva di AEM Headless](getting-started.md)Di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino nel percorso headless.
 
-* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
+* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.

@@ -1,22 +1,21 @@
 ---
 title: API per accedere alle istanze di lettere
-seo-title: API per accedere alle istanze di lettere
+seo-title: APIs to access letter instances
 description: Scopri come utilizzare le API per accedere alle istanze di lettere.
-seo-description: Scopri come utilizzare le API per accedere alle istanze di lettere.
+seo-description: Learn how to use APIs to access letter instances.
 uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
-
 
 # API per accedere alle istanze di lettere {#apis-to-access-letter-instances}
 
@@ -43,9 +42,9 @@ Gestione corrispondenza espone le API per recuperare le istanze di lettere trami
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API seguente trova le istanze della lettera in base all’oggetto query (Inviato e Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce l&#39;elenco degli oggetti [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), che possono essere utilizzati per estrarre informazioni aggiuntive sull&#39;istanza della lettera
+L’API seguente trova le istanze della lettera in base all’oggetto query (Inviato e Bozza). Se l&#39;oggetto query è nullo, restituisce tutte le istanze della lettera. Questa API restituisce un elenco di [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) oggetti, che possono essere utilizzati per estrarre informazioni aggiuntive sull&#39;istanza di una lettera
 
-**Sintassi**:  `List getAllLetterInstances(Query query) throws ICCException;`
+**Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table>
  <tbody>
@@ -55,14 +54,14 @@ L’API seguente trova le istanze della lettera in base all’oggetto query (Inv
   </tr>
   <tr>
    <td>query</td>
-   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza Letter. La query qui supporta solo gli attributi/proprietà di primo livello dell’oggetto. La query è costituita da istruzioni e il "attributeName" utilizzato nell'oggetto Statement deve essere il nome della proprietà nell'oggetto di istanza Letter.<br /> </td>
+   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza Letter. La query qui supporta solo gli attributi/proprietà di primo livello dell’oggetto. La query è costituita da istruzioni e il "attributeName" utilizzato nell’oggetto Statement deve essere il nome della proprietà nell’oggetto di istanza Letter.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Esempio 1: Recupera tutte le istanze di lettera di tipo INVIATO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Esempio 1: Recupera tutte le istanze di lettere di tipo INVIATO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, cambia il valore `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
+Il codice seguente restituisce l&#39;elenco delle istanze di lettere inviate. Per ottenere solo le bozze, modifica il `LetterInstanceType.COMPLETE.name()` a `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -123,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Controlla se esiste un&#39;istanza di Lettera in base al nome specificato
 
-**Sintassi**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Sintassi**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parametro** | **Descrizione** |
 |---|---|
@@ -140,7 +139,7 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L&#39;istanza della lettera può essere di tipo Inviato o Bozza. L’apertura di entrambi i tipi di istanza della lettera mostra diversi comportamenti:
 
-* Nel caso di istanza di lettera inviata, viene aperto un PDF che rappresenta l’istanza di lettera. L&#39;istanza Lettera inviata persistita sul server contiene anche i datiXML e XDP elaborati, che possono essere utilizzati per eseguire e personalizzare ulteriormente un caso d&#39;uso come la creazione di un PDF/A.
+* In caso di istanza di lettera inviata, viene aperto un PDF che rappresenta l’istanza di lettera. L&#39;istanza Lettera inviata persistita sul server contiene anche i datiXML e XDP elaborati, che possono essere utilizzati per eseguire e personalizzare ulteriormente un caso d&#39;uso come la creazione di un PDF/A.
 * Nel caso di un&#39;istanza di bozza di lettera, l&#39;interfaccia utente per la creazione della corrispondenza viene ricaricata allo stato precedente esatto come nel momento in cui è stata creata la bozza
 
 ### Apertura istanza bozza  {#opening-draft-letter-instance-nbsp}
@@ -155,6 +154,6 @@ L’interfaccia utente CCR supporta il parametro cmLetterInstanceId , che può e
 
 ### Apertura istanza lettera inviata {#opening-submitted-letter-instance}
 
-Il PDF inviato può essere aperto direttamente utilizzando l’ID di istanza della lettera:
+È possibile aprire direttamente PDF inviato utilizzando l’ID istanza di lettera:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

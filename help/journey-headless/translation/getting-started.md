@@ -1,10 +1,11 @@
 ---
-title: Guida introduttiva alla traduzione senza testa AEM
+title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 0%
+ht-degree: 43%
 
 ---
 
@@ -23,11 +24,11 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come AEM
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come iniziare a tradurre contenuti headless in AEM. Dopo la lettura è necessario:
+Questo documento ti aiuta a capire come iniziare a tradurre contenuti headless in AEM. Dopo la lettura dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
 * Comprendere come AEM memorizza i contenuti headless.
-* Conoscere AEM strumenti di traduzione.
+* Conoscere gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -37,19 +38,19 @@ Ci sono una serie di requisiti prima di iniziare a tradurre il tuo contenuto AEM
 
 * Esperienza nella traduzione dei contenuti in un CMS
 * Esperienza utilizzando le funzioni di base di un CMS su larga scala
-* Avere una conoscenza operativa AEM manipolazione di base
-* Informazioni sul servizio di traduzione utilizzato
+* Avere una conoscenza operativa dei fondamenti di AEM
+* Comprensione del servizio di traduzione utilizzato
 * Comprensione di base del contenuto che si sta traducendo
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, considera la revisione del [Operazioni di base](/help/sites-authoring/basic-handling.md) prima di procedere. La documentazione di base sulla gestione non fa parte del percorso, quindi torna a questa pagina una volta completata.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-authoring/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso, quindi torna a questa pagina una volta che l&#39;avrai letta.
 
 ### Strumenti {#tools}
 
 * Accesso alla sandbox per testare la traduzione del contenuto
 * Credenziali per la connessione al servizio di traduzione preferito
-* Essere membro del `project-administrators` gruppo in AEM
+* Essere membro del gruppo `project-administrators` in AEM
 
 ## La struttura è la chiave {#content-structure}
 
@@ -104,7 +105,7 @@ I frammenti di contenuto sono gestiti come risorse in AEM come parte della gesti
 
 ## Struttura dei contenuti consigliata {#recommended-structure}
 
-Come precedentemente consigliato, collabora con l’architettura dei contenuti per determinare la struttura del contenuto appropriata per il tuo progetto. Tuttavia il seguente è una struttura collaudata, semplice e intuitiva che è abbastanza efficace.
+Come precedentemente consigliato, collabora con l’architetto dei contenuti per determinare la struttura appropriata per il tuo progetto. Tuttavia la seguente è una struttura collaudata, semplice e intuitiva che è abbastanza efficace.
 
 Definire una cartella di base per il progetto in `/content/dam`.
 
@@ -112,19 +113,19 @@ Definire una cartella di base per il progetto in `/content/dam`.
 /content/dam/<your-project>
 ```
 
-La lingua in cui viene creato il contenuto è denominata radice della lingua. Nel nostro esempio è inglese e dovrebbe essere sotto questo percorso.
+La lingua in cui viene creato il contenuto è denominata lingua root. Nel nostro esempio è inglese e dovrebbe essere sotto questo percorso.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-Tutti i contenuti di progetto che possono essere necessari per essere localizzati devono essere posizionati sotto la directory principale della lingua.
+Tutti i contenuti di progetto che potrebbero essere localizzati devono essere posizionati sotto la lingua root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-Le traduzioni devono essere create come cartelle di pari livello accanto alla directory principale della lingua con il nome della cartella che rappresenta il codice della lingua ISO-2. Ad esempio, il percorso per il tedesco è il seguente.
+Le traduzioni devono essere create come cartelle di pari livello accanto alla lingua root con il nome della cartella che rappresenta il codice della lingua ISO-2. Ad esempio, il percorso per il tedesco è il seguente.
 
 ```text
 /content/dam/<your-project>/de
@@ -132,7 +133,7 @@ Le traduzioni devono essere create come cartelle di pari livello accanto alla di
 
 >[!NOTE]
 >
->L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di creare successivamente lavori di traduzione.
+>L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente lavori di traduzione.
 
 La struttura finale può avere un aspetto simile al seguente.
 
@@ -165,9 +166,9 @@ La struttura finale può avere un aspetto simile al seguente.
 
 Ora che capisci cosa sono i frammenti di contenuto e l’importanza della struttura del contenuto, possiamo capire come tradurre questo contenuto. Gli strumenti di traduzione in AEM sono abbastanza potenti, ma sono semplici da comprendere ad alto livello.
 
-* **Connettore di traduzione** - Il connettore è il collegamento tra AEM e il servizio di traduzione utilizzato.
-* **Regole di traduzione** - Le regole definiscono quali contenuti in determinati percorsi dovrebbero essere tradotti.
-* **Progetti di traduzione** - I progetti di traduzione raccolgono contenuti che devono essere affrontati come un unico sforzo di traduzione e tengono traccia dei progressi della traduzione, interfacciandosi con il connettore per trasmettere il contenuto da tradurre e riceverlo nuovamente dal servizio di traduzione.
+* **Connettore di traduzione**: il connettore è il collegamento tra AEM e il servizio di traduzione utilizzato.
+* **Regole di traduzione**: le regole definiscono quali contenuti in determinati percorsi dovrebbero essere tradotti.
+* **Progetti di traduzione**: i progetti di traduzione raccolgono contenuti che devono essere affrontati come un&#39;unica traduzione e ne tengono traccia dei progressi, interfacciandosi con il connettore per trasmettere il contenuto da tradurre e riceverlo nuovamente dal servizio di traduzione.
 
 In genere si imposta il connettore una sola volta per l&#39;istanza e le regole per ogni progetto headless. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
 
@@ -177,7 +178,7 @@ Ora che hai completato questa parte del percorso di traduzione headless dovresti
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
 * Comprendere come AEM memorizza i contenuti headless.
-* Conoscere AEM strumenti di traduzione.
+* Conoscere gli strumenti di traduzione di AEM.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM prossimo revisione del documento [Configurare il connettore di traduzione](configure-connector.md) dove verrà illustrato come connettersi AEM a un servizio di traduzione.|
 
@@ -185,7 +186,7 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa 
 
 Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Configurare il connettore di traduzione](configure-connector.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
-* [AEM Operazioni di base](/help/sites-authoring/basic-handling.md) - Scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
-* [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
-* [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md) - Scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
-* [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md) - Scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
+* [Operazioni di base AEM](/help/sites-authoring/basic-handling.md): scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
+* [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
+* [Configurazione del Translation Integration Framework](/help/sites-administering/tc-tic.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
+* [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.

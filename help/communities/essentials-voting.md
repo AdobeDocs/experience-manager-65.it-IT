@@ -1,42 +1,41 @@
 ---
-title: Voto Essenziali
-seo-title: Voto Essenziali
-description: Panoramica del componente di voto
-seo-description: Panoramica del componente di voto
+title: Elementi essenziali del voto
+seo-title: Voting Essentials
+description: Panoramica del componente Voto
+seo-description: Voting component overview
 uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
 
+# Elementi essenziali del voto {#voting-essentials}
 
-# Voto Essenziali {#voting-essentials}
+la componente di voto, [tally](tally.md) subclass, è uno strumento utile che consente ai membri di valutare un particolare contenuto semplicemente selezionando frecce verso l’alto o il basso per indicare la propria opinione.
 
-Il componente Voto, una sottoclasse [tally](tally.md), è uno strumento utile che consente ai membri di valutare un particolare contenuto semplicemente selezionando frecce verso l&#39;alto o il basso per indicare la propria opinione.
+È consentito posizionare più istanze di un componente con diritto di voto sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
 
-È possibile posizionare più istanze di un componente di voto sulla stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
+L&#39;invio anonimo di un voto non è supportato. I visitatori del sito devono registrarsi e accedere per partecipare al voto una sola volta, il visitatore (membro) che ha effettuato l&#39;accesso può modificare il proprio voto in qualsiasi momento.
 
-L&#39;invio anonimo di un voto non è supportato. I visitatori del sito devono registrarsi ed effettuare l&#39;accesso per partecipare al voto una sola volta, mentre il visitatore (membro) che ha effettuato l&#39;accesso può modificare il proprio voto in qualsiasi momento.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Funzionalità di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/tally/components/hbs/Votazione</td>
+   <td>social/tally/components/hbs/vote</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>modalità di progettazione </i>modo</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -52,34 +51,33 @@ L&#39;invio anonimo di un voto non è supportato. I visitatori del sito devono r
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Vedere <a href="voting.md">Utilizzo del voto</a></p> </td>
+   <td><p>Vedi <a href="voting.md">Utilizzo del voto</a></p> </td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Funzioni di base per lato server {#essentials-for-server-side}
 
 * [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoint di conteggio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoint tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso al Voto Pubblicato (UGC) {#accessing-posted-voting-ugc}
+### Accesso al voto postato (UGC) {#accessing-posted-voting-ugc}
 
-UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
+UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.
+Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md)  del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [SRP e UGC Essentials](srp-and-ugc.md)  - Metodi e esempi di utilità SRP.
-* [Accesso a UGC con linee guida di codifica SRP](accessing-ugc-with-srp.md) .
-* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
-
+* [Panoramica del provider di risorse di storage](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
+* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
+* [Refactoring di SocialUtils](socialutils.md) - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.

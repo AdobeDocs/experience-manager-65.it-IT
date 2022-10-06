@@ -1,24 +1,23 @@
 ---
 title: Modifica del contenuto della pagina Zero in Designer
-seo-title: Modifica del contenuto della pagina Zero in Designer
+seo-title: Changing Page Zero content in Designer
 description: Sai come modificare il messaggio visualizzato sulla pagina Zero di un PDF XFA quando lo visualizzi in un visualizzatore non Adobe PDF?
-seo-description: Sai come modificare il messaggio visualizzato sulla pagina Zero di un PDF XFA quando lo visualizzi in un visualizzatore non Adobe PDF?
+seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
-
-# Modifica del contenuto di Page Zero in Designer {#changing-page-zero-content-in-designer}
+# Modifica del contenuto della pagina Zero in Designer {#changing-page-zero-content-in-designer}
 
 Il contenuto della pagina Zero viene visualizzato per impostazione predefinita quando un visualizzatore non Adobe PDF, ad esempio il visualizzatore PDF predefinito in [!DNL Chrome] o [!DNL Firefox], non è in grado di leggere il contenuto del modulo PDF/XFA. Il messaggio predefinito Zero pagina è mostrato di seguito.
 
@@ -26,13 +25,13 @@ Il contenuto della pagina Zero viene visualizzato per impostazione predefinita q
 
 [!DNL AEM Forms] La versione di Designer consente di modificare il messaggio visualizzato sulla pagina Zero. Per modificare il messaggio Zero pagina, esegui le seguenti operazioni:
 
-1. Verificare che sia installata la versione [!DNL AEM Forms] di Designer. È possibile controllare la versione dalla schermata Informazioni su di designer.
+1. Assicurati di disporre della [!DNL AEM Forms] versione di Designer installata. È possibile controllare la versione dalla schermata Informazioni su di designer.
 
 1. Aprire il modulo per il quale si desidera modificare il contenuto Zero pagina.
 
-1. Fare clic su **[!UICONTROL File]** > **[!UICONTROL Proprietà modulo]**.
+1. Fai clic su **[!UICONTROL File]** > **[!UICONTROL Proprietà modulo]**.
 
-1. Nella finestra di dialogo [!UICONTROL Proprietà modulo], fai clic su ![più](assets/plus.png) (icona Più) per aggiungere una proprietà personalizzata.
+1. In [!UICONTROL Proprietà modulo] finestra di dialogo, fai clic su ![plus](assets/plus.png) (Icona Plus) per aggiungere una proprietà personalizzata.
 
 1. Specifica **_pagezerocontent** come nome della proprietà.
 1. Aggiungi come valore il nuovo messaggio Zero pagina in formato RTF. Esempio:

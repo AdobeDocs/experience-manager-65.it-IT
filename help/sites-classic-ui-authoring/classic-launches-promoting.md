@@ -1,8 +1,8 @@
 ---
 title: Promozione dei lanci
-seo-title: Promozione dei lanci
+seo-title: Promoting Launches
 description: Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa.
-seo-description: Con la promozione delle pagine di lancio si sposta il contenuto nella sorgente (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing. When a launch page is promoted, the corresponding page of the source pages is replaced with the content of the promoted page.
 uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 92%
+source-wordcount: '314'
+ht-degree: 91%
 
 ---
-
 
 # Promozione dei lanci{#promoting-launches}
 
@@ -34,8 +33,8 @@ Per promuovere le pagine, esegui le seguenti operazioni durante la modifica dell
 1. Nella scheda **Pagina** nella barra laterale, fai clic su **Promuovi lancio**.
 1. Specifica le pagine da promuovere:
 
-   * (Impostazione predefinita) Per promuovere solo la pagina corrente, selezionare **Promuovi modifiche pagina a versione produzione**.
-   * Per promuovere anche le pagine figlie della pagina corrente, selezionare **Includi sottopagine**.
+   * (Impostazione predefinita) Per promuovere solo la pagina corrente, seleziona **Promuovi modifiche pagina a versione produzione**.
+   * Per promuovere anche le pagine figlie della pagina corrente, seleziona **Includi sottopagine**.
    * Per promuovere tutte le pagine del lancio, seleziona **Promuovi lancio completo alla versione in produzione**.
 
 1. Per aggiungere le pagine di produzione a un pacchetto flusso di lavoro, seleziona **Aggiungi al pacchetto flusso di lavoro**, quindi selezionalo.
@@ -54,4 +53,3 @@ Per avviare automaticamente un flusso di lavoro quando vengono promosse le pagin
 Ad esempio, puoi generare automaticamente le richieste di attivazione pagina non appena un autore promuove una pagina di lancio. Configura un programma di avvio per avviare il flusso di lavoro Attivazione richiesta quando viene modificato il nodo del pacchetto.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-

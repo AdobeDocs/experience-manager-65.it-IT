@@ -1,6 +1,6 @@
 ---
 title: Avvio rapido JavaAPI di Application Manager Service (SOAP)
-seo-title: Avvio rapido JavaAPI di Application Manager Service (SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Avvio rapido JavaAPI di Application Manager Service (SOAP)
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
-
-# Guida rapida a JavaAPI (SOAP) di Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
+# Avvio rapido JavaAPI di Application Manager Service (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 Java API Quick Start (SOAP) è disponibile per il servizio Application Manager.
 
@@ -34,9 +33,9 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->La procedura rapida Java API(SOAP) disponibile in Programmazione con moduli AEM si basa su Forms se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La procedura rapida Java API(SOAP) disponibile in Programmazione con moduli AEM si basa su Forms se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 Il seguente esempio di codice Java importa un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
 
@@ -138,9 +137,9 @@ Il seguente esempio di codice Java importa un&#39;applicazione basata su un file
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione utilizzando l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di un’applicazione tramite l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denominata *EncryptDocument*.
+Il seguente esempio di codice Java rimuove un&#39;applicazione denominata *Crittografa documento*.
 
 ```java
  /*
@@ -249,4 +248,3 @@ Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denom
  }
  
 ```
-

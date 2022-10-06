@@ -1,8 +1,8 @@
 ---
-title: 'Creazione di modelli di pagina  '
-seo-title: 'Creazione di modelli di pagina  '
+title: Creazione di modelli di pagina
+seo-title: Creating Page Templates
 description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
-seo-description: Un modello definisce la struttura della pagina risultante. Con l’Editor modelli, la creazione e manutenzione dei modelli non è più un’attività riservata agli sviluppatori.
+seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '4901'
-ht-degree: 96%
+source-wordcount: '4874'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 >[!CAUTION]
 >
->Le pagine e i modelli creati con la **Console modelli** non sono destinati all’uso con l’interfaccia classica e tale uso non è supportato.
+>Pagine e modelli creati con **Console Modelli** non sono progettati per essere utilizzati con l’interfaccia classica e tale uso non è supportato.
 
 ## Prima di iniziare {#before-you-start}
 
@@ -147,7 +147,7 @@ Durante la creazione di un nuovo modello modificabile:
 
 >[!CAUTION]
 >
->Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello. A scopo di internalizzazione, si consiglia di utilizzare le [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) .
+>Non inserire mai informazioni che devono essere [internazionalizzate](/help/sites-developing/i18n.md) in un modello. Ai fini dell&#39;internalizzazione, la [funzioni di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it) sono consigliati.
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Per visualizzare e/o modificare le proprietà:
 
 >[!NOTE]
 >
->I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione delle pagine. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
+>I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione della pagina. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
 >Adobe consiglia di non disporre di più di 1000 modelli a causa di potenziali impatti sulle prestazioni.
 
@@ -278,7 +278,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >Se l’elenco dei **Modelli consentiti** viene lasciato vuoto, l’albero viene asceso fino a quando non viene trovato un valore o un elenco.
    >
    >
-   >Consulta [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability) - i principi per i modelli consentiti rimangono gli stessi.
+   >Consulta [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability): i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
 
@@ -491,7 +491,7 @@ In modalità **Struttura** dell’Editor modelli:
 
    >[!NOTE]
    >
-   >[](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+   >[I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 
@@ -622,7 +622,7 @@ La progettazione della pagina, comprese le librerie lato client e le policy di p
 
 Per accedere alla finestra di dialogo **Progettazione pagina**:
 
-1. Dall&#39; **Editor modelli**, seleziona **Informazioni pagina** dalla barra degli strumenti, quindi **Progettazione pagina** per aprire la finestra di dialogo.
+1. Da **Editor modelli**, seleziona **Informazioni pagina** dalla barra degli strumenti, quindi **Progettazione pagina** per aprire la finestra di dialogo.
 1. Si apre la finestra di dialogo **Progettazione pagina**, divisa in due sezioni:
 
    * Nella metà sinistra si definiscono i [criteri della pagina](/help/sites-authoring/templates.md#page-policies).
@@ -657,7 +657,7 @@ Per accedere alla finestra di dialogo **Progettazione pagina**:
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-#### Proprietà pagina   {#page-properties}
+#### Proprietà pagina {#page-properties}
 
 Con le proprietà della pagina è possibile definire le librerie lato client richieste mediante la finestra di dialogo **Progettazione pagina**. Le librerie lato client includono fogli di stile e Javascript da caricare con il modello e le pagine create con tale modello.
 

@@ -1,8 +1,8 @@
 ---
 title: Attività di manutenzione pre-aggiornamento
-seo-title: Attività di manutenzione pre-aggiornamento
+seo-title: Pre-Upgrade Maintenance Tasks
 description: Scopri le attività di pre-aggiornamento in AEM.
-seo-description: Scopri le attività di pre-aggiornamento in AEM.
+seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: upgrading
 discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2148'
 ht-degree: 0%
 
 ---
-
 
 # Attività di manutenzione pre-aggiornamento{#pre-upgrade-maintenance-tasks}
 
@@ -47,21 +46,21 @@ Durante l’esecuzione dell’aggiornamento, oltre alle attività di aggiornamen
 
 ## Backup completo AEM {#fully-back-up-aem}
 
-È necessario eseguire il backup completo di AEM prima di avviare l&#39;aggiornamento. Se applicabile, assicurati di eseguire il backup dell’archivio, dell’installazione dell’applicazione, del datastore e delle istanze Mongo. Per ulteriori informazioni sul backup e il ripristino di un&#39;istanza AEM, vedere [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
+È necessario eseguire il backup completo di AEM prima di avviare l&#39;aggiornamento. Se applicabile, assicurati di eseguire il backup dell’archivio, dell’installazione dell’applicazione, del datastore e delle istanze Mongo. Per ulteriori informazioni sul backup e il ripristino di un&#39;istanza AEM, vedi [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
 ## Backup delle modifiche a /etc {#backup-changes-etc}
 
-Il processo di aggiornamento consente di mantenere e unire i contenuti e le configurazioni esistenti dai percorsi `/apps` e `/libs` nell’archivio. Per le modifiche apportate al percorso `/etc`, incluse le configurazioni di Context Hub, spesso è necessario riapplicare queste modifiche dopo l’aggiornamento. Anche se l&#39;aggiornamento effettuerà una copia di backup delle modifiche che non possono essere unite in `/var`, è consigliabile eseguire manualmente il backup di queste modifiche prima di avviare l&#39;aggiornamento.
+Il processo di aggiornamento consente di mantenere e unire i contenuti e le configurazioni esistenti da in `/apps` e `/libs` nel repository. Per le modifiche apportate al `/etc` percorso, incluse le configurazioni di Context Hub, spesso è necessario riapplicare queste modifiche dopo l&#39;aggiornamento. Mentre l&#39;aggiornamento effettuerà una copia di backup di tutte le modifiche che non può unire in `/var`, è consigliabile eseguire manualmente il backup di queste modifiche prima di avviare l’aggiornamento.
 
 ## Genera il file quickstart.properties {#generate-quickstart-properties}
 
-Quando si avvia AEM dal file jar, un file `quickstart.properties` viene generato in `crx-quickstart/conf`. Se AEM è stato avviato solo con lo script di avvio in passato, questo file non sarà presente e l&#39;aggiornamento non riuscirà. Assicurati di verificare l&#39;esistenza di questo file e riavvia AEM dal file jar se non è presente.
+Quando si avvia AEM dal file jar, un `quickstart.properties` il file verrà generato in `crx-quickstart/conf`. Se AEM è stato avviato solo con lo script di avvio in passato, questo file non sarà presente e l&#39;aggiornamento non riuscirà. Assicurati di verificare l&#39;esistenza di questo file e riavvia AEM dal file jar se non è presente.
 
-## Configurare l&#39;eliminazione del flusso di lavoro e del registro di controllo {#configure-wf-audit-purging}
+## Configurare l’eliminazione del flusso di lavoro e del registro di controllo {#configure-wf-audit-purging}
 
-Le attività `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` richiedono configurazioni OSGi separate e non funzioneranno senza di esse. Se non riescono durante l’esecuzione di un’attività di pre-aggiornamento, la ragione più probabile è la mancanza di configurazioni. Assicurati quindi di aggiungere le configurazioni OSGi per queste attività o rimuoverle completamente dall&#39;elenco delle attività di ottimizzazione pre-aggiornamento se non desideri eseguirle. La documentazione per la configurazione delle attività di eliminazione del flusso di lavoro si trova in [Amministrazione delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md) e la configurazione delle attività di manutenzione del registro di controllo si trova in [Gestione del registro di controllo in AEM 6](/help/sites-administering/operations-audit-log.md).
+La `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` le attività richiedono configurazioni OSGi separate e non funzioneranno senza di esse. Se non riescono durante l’esecuzione di un’attività di pre-aggiornamento, la ragione più probabile è la mancanza di configurazioni. Assicurati quindi di aggiungere le configurazioni OSGi per queste attività o rimuoverle completamente dall&#39;elenco delle attività di ottimizzazione pre-aggiornamento se non desideri eseguirle. La documentazione per la configurazione delle attività di eliminazione del flusso di lavoro si trova in [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md) e la configurazione dell&#39;attività di manutenzione del registro di controllo si trova in [Manutenzione del registro di controllo in AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Per l&#39;eliminazione del flusso di lavoro e del registro di controllo su CQ 5.6 e per l&#39;eliminazione del registro di controllo su AEM 6.0, consulta [Eliminare il flusso di lavoro e i nodi di controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+Per l&#39;eliminazione del flusso di lavoro e del registro di controllo su CQ 5.6 e per l&#39;eliminazione del registro di controllo su AEM 6.0, vedi [Elimina il flusso di lavoro e i nodi di controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Installare, configurare ed eseguire le attività di pre-aggiornamento {#install-configure-run-pre-upgrade-tasks}
 
@@ -89,11 +88,11 @@ Puoi trovare i pacchetti nelle seguenti posizioni:
 
 ### Come usarlo {#how-to-use-it}
 
-Il componente `PreUpgradeTasksMBean` OSGI è preconfigurato con un elenco di attività di manutenzione pre-aggiornamento che possono essere eseguite tutte insieme. Puoi configurare le attività seguendo la procedura seguente:
+La `PreUpgradeTasksMBean` Il componente OSGI è preconfigurato con un elenco di attività di manutenzione pre-aggiornamento che possono essere eseguite tutte insieme. Puoi configurare le attività seguendo la procedura seguente:
 
-1. Vai alla Console web navigando su *https://serveraddress:serverport/system/console/configMgr*
+1. Passa alla console Web sfogliando *https://serveraddress:serverport/system/console/configMgr*
 
-1. Cerca &quot;**preupgradeTasks**&quot;, quindi fai clic sul primo componente corrispondente. Il nome completo del componente è `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
+1. Cerca &quot;**preupgradeattività**&quot;, quindi fai clic sul primo componente corrispondente. Il nome completo del componente è `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. Modificare l&#39;elenco delle attività di manutenzione da eseguire come illustrato di seguito:
 
@@ -116,7 +115,7 @@ L&#39;elenco delle attività varia a seconda della modalità di esecuzione utili
   <tr>
    <td><code>DataStoreGarbageCollectionTask</code></td>
    <td>crx2</td>
-   <td>Correrà mark e sweep. Per i datastore condivisi, rimuovi questo passaggio ed esegui<br /> manualmente o in modo appropriato le istanze prima dell'esecuzione.</td>
+   <td>Correrà mark e sweep. Per i datastore condivisi, rimuovi questo passaggio ed esegui<br /> preparare le istanze manualmente o in modo appropriato prima dell'esecuzione.</td>
   </tr>
   <tr>
    <td><code>ConsistencyCheckTask</code></td>
@@ -152,26 +151,26 @@ L&#39;elenco delle attività varia a seconda della modalità di esecuzione utili
 
 ### Configurazione predefinita dei controlli di stato pre-aggiornamento {#default-configuration-of-the-pre-upgrade-health-checks}
 
-Il componente `PreUpgradeTasksMBeanImpl` OSGI è preconfigurato con un elenco di tag di controllo dello stato di pre-aggiornamento da eseguire quando si chiama il metodo `runAllPreUpgradeHealthChecks` :
+La `PreUpgradeTasksMBeanImpl` Il componente OSGI è preconfigurato con un elenco di tag di controllo dello stato di pre-aggiornamento da eseguire quando `runAllPreUpgradeHealthChecks` viene chiamato il metodo :
 
-* **sistema** : il tag utilizzato dai controlli di integrità della manutenzione granitica
+* **sistema** - il tag utilizzato dai controlli di integrità della manutenzione granitica
 
-* **pre-aggiornamento** : si tratta di un tag personalizzato che può essere aggiunto a tutti i controlli di integrità che è possibile impostare per l&#39;esecuzione prima di un aggiornamento
+* **pre-aggiornamento** - questo tag personalizzato può essere aggiunto a tutti i controlli di integrità che è possibile impostare per l&#39;esecuzione prima di un aggiornamento
 
-L’elenco è modificabile. È possibile utilizzare i pulsanti più **(+)** e meno **(-)** oltre ai tag per aggiungere altri tag personalizzati o rimuovere quelli predefiniti.
+L’elenco è modificabile. Puoi utilizzare il segno più **(+)** e meno **(-)** oltre ai tag per aggiungere altri tag personalizzati o rimuovere quelli predefiniti.
 
 **Metodi MBean**
 
-È possibile accedere alla funzionalità dei fagioli gestiti tramite la [console JMX](/help/sites-administering/jmx-console.md).
+È possibile accedere alla funzionalità dei fagioli gestiti utilizzando [Console JMX](/help/sites-administering/jmx-console.md).
 
 Per accedere ai MBeans:
 
-1. Andando alla console JMX all&#39;indirizzo *https://serveraddress:serverport/system/console/jmx*
+1. Andando alla console JMX in *https://serveraddress:serverport/system/console/jmx*
 1. Cerca **PreUpgradeTasks** e fai clic sul risultato
 
-1. Seleziona un metodo dalla sezione **Operazioni** e seleziona **Richiama** nella finestra seguente.
+1. Seleziona qualsiasi metodo dal **Operazioni** e seleziona **Richiama** nella finestra seguente.
 
-Di seguito è riportato un elenco di tutti i metodi disponibili esposti da `PreUpgradeTasksMBeanImpl`:
+Di seguito è riportato un elenco di tutti i metodi disponibili che `PreUpgradeTasksMBeanImpl` espone:
 
 <table>
  <tbody>
@@ -203,7 +202,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili esposti da `PreU
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Controlla se l'attività <code>runAllPreUpgradeTasksmaintenance</code> è attualmente in esecuzione.</td>
+   <td>Controlla se la <code>runAllPreUpgradeTasksmaintenance</code> attività in esecuzione.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
@@ -223,12 +222,12 @@ Di seguito è riportato un elenco di tutti i metodi disponibili esposti da `PreU
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>AZIONE</td>
-   <td><p>Esegue tutti i controlli di integrità pre-aggiornamento e ne salva lo stato in un file denominato <code>preUpgradeHCStatus.properties</code> che si trova nel percorso principale sling. Se il parametro <code>shutDownOnSuccess</code> è impostato su <code>true</code>, l'istanza AEM verrà chiusa, ma solo se tutti i controlli di integrità precedenti all'aggiornamento hanno uno stato OK.</p> <p>Il file delle proprietà verrà utilizzato come condizione preliminare per qualsiasi aggiornamento futuro<br /> e il processo di aggiornamento verrà interrotto se l'esecuzione del controllo dello stato di pre-aggiornamento<br /> non è riuscita. Se desideri ignorare il risultato dei controlli di integrità pre-aggiornamento<br /> e avviare comunque l'aggiornamento, puoi eliminare il file.</p> </td>
+   <td><p>Esegue tutti i controlli di integrità pre-aggiornamento e ne salva lo stato in un file denominato <code>preUpgradeHCStatus.properties</code> che si trova nel percorso home sling. Se la <code>shutDownOnSuccess</code> è impostato su <code>true</code>, l’istanza AEM verrà chiusa, ma solo se tutti i controlli di integrità pre-aggiornamento hanno uno stato OK.</p> <p>Il file delle proprietà verrà utilizzato come condizione preliminare per qualsiasi aggiornamento futuro<br /> e il processo di aggiornamento verrà interrotto se il controllo dello stato di pre-aggiornamento<br /> esecuzione non riuscita. Se desideri ignorare il risultato del pre-aggiornamento<br /> verifica lo stato di salute e avvia comunque l'aggiornamento, puoi eliminare il file.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>AZIONE</td>
-   <td>Elenca tutti i pacchetti importati che non saranno più soddisfatti quando<br /> viene eseguito l'aggiornamento alla versione AEM specificata. La versione di destinazione AEM deve essere<br /> specificata come parametro.</td>
+   <td>Elenca tutti i pacchetti importati che non saranno più soddisfatti quando<br /> aggiornamento alla versione AEM specificata. La versione di destinazione AEM deve essere<br /> come parametro.</td>
   </tr>
  </tbody>
 </table>
@@ -240,9 +239,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili esposti da `PreU
 >* Console JMX
 >* Qualsiasi applicazione esterna che si connette a JMX
 >* cURL
-
 >
-
 
 
 ## Disattiva moduli di accesso personalizzati {#disable-custom-login-modules}
@@ -251,13 +248,13 @@ Di seguito è riportato un elenco di tutti i metodi disponibili esposti da `PreU
 >
 >Questo passaggio è necessario solo se si esegue l’aggiornamento da una versione AEM 5. Può essere ignorato completamente per gli aggiornamenti dalle versioni precedenti di AEM 6.
 
-Il modo in cui le `LoginModules` personalizzate sono configurate per l&#39;autenticazione a livello di archivio è cambiato radicalmente in Apache Oak.
+Modalità personalizzata `LoginModules` sono configurati per l’autenticazione a livello di archivio è stato modificato radicalmente in Apache Oak.
 
-Nelle versioni AEM che utilizzavano la configurazione CRX2 venivano inseriti nel file `repository.xml`, mentre a partire da AEM 6 viene eseguito nel servizio Apache Felix JAAS Configuration Factory tramite la console Web.
+Nelle versioni AEM che utilizzavano la configurazione CRX2 era stato inserito nel `repository.xml` file, mentre a partire dal AEM 6 viene fatto nel servizio Apache Felix JAAS Configuration Factory tramite la Web Console.
 
 Pertanto, tutte le configurazioni esistenti dovranno essere disabilitate e ricreate per Apache Oak dopo l&#39;aggiornamento.
 
-Per disabilitare i moduli personalizzati definiti nella configurazione JAAS di `repository.xml`, è necessario modificare la configurazione per utilizzare i moduli predefiniti `LoginModule`, come in questo esempio:
+Per disabilitare i moduli personalizzati definiti nella configurazione JAAS di `repository.xml`, è necessario modificare la configurazione per utilizzare il valore predefinito `LoginModule`, come in questo esempio:
 
 ```xml
 <Security >
@@ -280,15 +277,15 @@ Per disabilitare i moduli personalizzati definiti nella configurazione JAAS di `
 >
 >Per ulteriori informazioni, consulta [Autenticazione con il modulo di accesso esterno](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 >
->Per un esempio di configurazione `LoginModule` nel AEM 6, consulta [Configurazione di LDAP con AEM 6](/help/sites-administering/ldap-config.md).
+>Per un esempio di `LoginModule` configurazione nel AEM 6, vedi [Configurazione di LDAP con AEM 6](/help/sites-administering/ldap-config.md).
 
-## Rimuovi aggiornamenti dalla directory /install {#remove-updates-install-directory}
+## Rimuovere Gli Aggiornamenti Dalla Directory /install {#remove-updates-install-directory}
 
 >[!NOTE]
 >
 >Rimuovi i pacchetti solo dalla directory crx-quickstart/install DOPO aver chiuso l&#39;istanza AEM. Questo sarà uno degli ultimi passaggi prima di avviare la procedura di aggiornamento in-place.
 
-Rimuovi tutti i service pack, i feature pack o gli hotfix distribuiti tramite la directory `crx-quickstart/install` nel file system locale. Questo impedirà l&#39;installazione involontaria di vecchi hotfix e service pack sulla nuova versione AEM al termine dell&#39;aggiornamento.
+Rimuovi i service pack, i feature pack o gli hotfix distribuiti tramite `crx-quickstart/install` nel file system locale. Questo impedirà l&#39;installazione involontaria di vecchi hotfix e service pack sulla nuova versione AEM al termine dell&#39;aggiornamento.
 
 ## Interrompi istanze di standby a freddo {#stop-tarmk-coldstandby-instance}
 
@@ -304,7 +301,7 @@ Disattiva tutti i processi pianificati OSGi inclusi nel codice dell&#39;applicaz
 >
 >Questo passaggio è necessario solo per le installazioni TarMK
 
-Se utilizzi TarMK, devi eseguire il cleanup delle revisioni offline prima di eseguire l&#39;aggiornamento. In questo modo la fase di migrazione dell&#39;archivio e le successive attività di aggiornamento verranno eseguite molto più velocemente e sarà utile per garantire che il cleanup delle revisioni online possa essere eseguito correttamente al termine dell&#39;aggiornamento. Per informazioni sull&#39;esecuzione del cleanup delle revisioni offline, vedere [Esecuzione del cleanup delle revisioni offline](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Se utilizzi TarMK, devi eseguire il cleanup delle revisioni offline prima di eseguire l&#39;aggiornamento. In questo modo la fase di migrazione dell&#39;archivio e le successive attività di aggiornamento verranno eseguite molto più velocemente e sarà utile per garantire che il cleanup delle revisioni online possa essere eseguito correttamente al termine dell&#39;aggiornamento. Per informazioni sull&#39;esecuzione del cleanup delle revisioni offline, vedi [Esecuzione del cleanup delle revisioni offline](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## Esegui raccolta oggetti inattivi del datastore {#execute-datastore-garbage-collection}
 
@@ -312,9 +309,9 @@ Se utilizzi TarMK, devi eseguire il cleanup delle revisioni offline prima di ese
 >
 >Questo passaggio è necessario solo per le istanze che eseguono crx3
 
-Dopo aver eseguito la pulizia revisioni sulle istanze CRX3, esegui la raccolta oggetti inattivi Datastore per rimuovere eventuali BLOB non referenziati nell&#39;archivio dati. Per istruzioni, consulta la documentazione su [Raccolta rifiuti del Data Store](/help/sites-administering/data-store-garbage-collection.md).
+Dopo aver eseguito la pulizia revisioni sulle istanze CRX3, esegui la raccolta oggetti inattivi Datastore per rimuovere eventuali BLOB non referenziati nell&#39;archivio dati. Per istruzioni, consulta la documentazione su [Raccolta rifiuti dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md).
 
-## Aggiornare lo schema di database se necessario {#upgrade-the-database-schema-if-needed}
+## Se necessario, aggiornare lo schema del database {#upgrade-the-database-schema-if-needed}
 
 Di solito, lo stack Apache Oak sottostante utilizzato AEM per la persistenza si occuperà di aggiornare lo schema del database, se necessario.
 
@@ -323,13 +320,13 @@ Tuttavia, potrebbero verificarsi casi in cui lo schema non può essere aggiornat
 Per evitare che ciò si verifichi, devi aggiornare lo schema seguendo la procedura seguente:
 
 1. Arresta l&#39;istanza AEM che deve essere aggiornata.
-1. Aggiornare lo schema del database. Consulta la documentazione relativa al tipo di database in uso per vedere quali strumenti devi utilizzare per ottenere questo risultato.
+1. Aggiornare lo schema del database. Consulta la documentazione relativa al tipo di database in uso per vedere quali sono gli strumenti necessari per ottenere questo risultato.
 
-   Per ulteriori informazioni su come Oak gestisce gli aggiornamenti dello schema, consulta [questa pagina sul sito web Apache](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   Per ulteriori informazioni su come Oak gestisce gli aggiornamenti dello schema, vedi [questa pagina sul sito web Apache](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Procedi con l&#39;aggiornamento AEM.
 
-## Eliminare gli utenti che potrebbero ostacolare l&#39;aggiornamento {#delete-users-that-might-hinder-the-upgrade}
+## Eliminare gli utenti che potrebbero ostacolare l’aggiornamento {#delete-users-that-might-hinder-the-upgrade}
 
 >[!NOTE]
 >
@@ -337,9 +334,7 @@ Per evitare che ciò si verifichi, devi aggiornare lo schema seguendo la procedu
 >
 >* È in corso l&#39;aggiornamento da AEM versioni precedenti a AEM 6.3
 >* Durante l&#39;aggiornamento si verifica uno degli errori indicati di seguito.
-
 >
-
 
 
 Ci sono casi eccezionali in cui gli utenti del servizio possono finire in una versione precedente AEM con tag non corretti come utenti normali.
@@ -354,7 +349,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 Per risolvere questo problema, assicurati di effettuare le seguenti operazioni:
 
 1. Stacca l’istanza dal traffico di produzione
-1. Crea un backup degli utenti che causano il problema. Puoi eseguire questa operazione tramite Gestione pacchetti. Per ulteriori informazioni, vedere [Come lavorare con i pacchetti.](/help/sites-administering/package-manager.md)
+1. Crea un backup degli utenti che causano il problema. Puoi eseguire questa operazione tramite Gestione pacchetti. Per ulteriori informazioni, consulta [Come lavorare con i pacchetti.](/help/sites-administering/package-manager.md)
 1. Elimina gli utenti che causano il problema. Di seguito è riportato un elenco di utenti che potrebbero rientrare in questa categoria:
 
    1. `dynamic-media-replication`

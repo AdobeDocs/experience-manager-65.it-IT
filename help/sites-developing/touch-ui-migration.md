@@ -1,8 +1,8 @@
 ---
 title: Migrazione all’interfaccia utente touch
-seo-title: Migrazione all’interfaccia utente touch
+seo-title: Migration to the Touch UI
 description: Migrazione all’interfaccia utente touch
-seo-description: Migrazione all’interfaccia utente touch
+seo-description: Migration to the Touch UI
 uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,24 +10,23 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '673'
 ht-degree: 6%
 
 ---
 
-
 # Migrazione all’interfaccia utente touch{#migration-to-the-touch-ui}
 
-A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (nota semplicemente come *interfaccia touch*). È allineato a Adobe Marketing Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l&#39;interfaccia standard in AEM con l&#39;interfaccia legacy, orientata al desktop, denominata *interfaccia classica*.
+A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (noto anche come *interfaccia touch*). È allineato a Adobe Marketing Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l’interfaccia standard in AEM con l’interfaccia legacy, orientata al desktop, denominata *interfaccia classica*.
 
 Se utilizzi AEM con l’interfaccia classica, devi intervenire per eseguire la migrazione dell’istanza. Questa pagina ha lo scopo di fungere da trampolino di lancio fornendo collegamenti a singole risorse.
 
 >[!NOTE]
 >
->Un tale progetto di migrazione può avere un impatto significativo sulla tua istanza. Per le linee guida consigliate, consulta [Gestione dei progetti - Best practice](/help/managing/best-practices.md) .
+>Un tale progetto di migrazione può avere un impatto significativo sulla tua istanza. Vedi [Gestione dei progetti - Best practice](/help/managing/best-practices.md) per le linee guida consigliate.
 
 ## Nozioni di base {#the-basics}
 
@@ -40,7 +39,7 @@ Durante la migrazione è necessario tenere presente le seguenti differenze (prin
    <td>Interfaccia utente touch</td>
   </tr>
   <tr>
-   <td>È descritto nell’archivio JCR come una struttura di nodi. Ogni nodo che rappresenta un elemento dell'interfaccia utente è denominato <em>widget ExtJS</em> ed è rappresentato sul lato client da <code>ExtJS</code>.</td>
+   <td>È descritto nell’archivio JCR come una struttura di nodi. Ogni nodo che rappresenta un elemento dell’interfaccia utente è denominato <em>Widget ExtJS</em> ed è eseguito il rendering sul lato client tramite <code>ExtJS</code>.</td>
    <td>Anche descritto nell’archivio JCR come una struttura di nodi. Tuttavia, in questo caso ogni nodo fa riferimento a un tipo di risorsa Sling (componente Sling), che è responsabile del suo rendering. Quindi l'interfaccia utente viene (sostanzialmente) sottoposta a rendering lato server.</td>
   </tr>
   <tr>
@@ -51,7 +50,7 @@ Durante la migrazione è necessario tenere presente le seguenti differenze (prin
    <td><code>sling:resourceType</code>
     <ul>
      <li>utilizzato</li>
-     <li>ad esempio<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+     <li>per esempio<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -95,13 +94,13 @@ Durante la migrazione è necessario tenere presente le seguenti differenze (prin
    <td>Rendering eseguito dal server:
     <ul>
      <li>Il client richiede le pagine insieme all’interfaccia utente correlata.</li>
-     <li>Il server invia (push) l’interfaccia utente come documenti HTML; utilizzo dei componenti dell'interfaccia Coral.<br /> </li>
+     <li>Il server invia (push) l’interfaccia utente come documenti HTML; utilizzo dei componenti dell’interfaccia Coral.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-In altre parole, per migrare una sezione dell&#39;interfaccia utente dall&#39;interfaccia classica all&#39;interfaccia touch si intende portare un *widget ExtJS* in un *componente Sling*. Per facilitare questa fase, l’interfaccia utente touch si basa sul framework dell’interfaccia utente Granite, che fornisce già alcuni componenti Sling per l’interfaccia utente (denominati componenti dell’interfaccia Granite).
+In altre parole, la migrazione di una sezione dell’interfaccia utente dall’interfaccia classica all’interfaccia touch significa portare un *Widget ExtJS* a *Componente Sling*. Per facilitare questa fase, l’interfaccia utente touch si basa sul framework dell’interfaccia utente Granite, che fornisce già alcuni componenti Sling per l’interfaccia utente (denominati componenti dell’interfaccia Granite).
 
 Prima di iniziare, controlla lo stato e i consigli correlati:
 
@@ -117,27 +116,27 @@ Le nozioni di base per lo sviluppo dell’interfaccia touch forniscono una solid
 
 Le finestre di dialogo sono un fattore importante durante la migrazione dei componenti:
 
-* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md)  (con interfaccia touch)
+* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) (con interfaccia touch)
 * [Migrazione da un componente Classic](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) : per convertire le finestre di dialogo dei componenti dell’interfaccia classica in interfaccia touch
+* [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) : per convertire le finestre di dialogo dei componenti dell’interfaccia classica in un’interfaccia touch
 
    * Nell’interfaccia touch è disponibile un livello di compatibilità per aprire una finestra di dialogo dell’interfaccia classica all’interno di un wrapper per dell’interfaccia touch, ma questo ha funzionalità limitate e non è consigliato a lungo termine.
 
 * [Personalizzazione dei campi di dialogo nell’interfaccia utente touch](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creazione di un nuovo componente campo dell’interfaccia Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalizzazione dell’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)  (con l’interfaccia touch)
+* [Personalizzazione dell’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md) (con interfaccia touch)
 
 ## Migrazione delle console {#migrating-consoles}
 
 È inoltre possibile personalizzare le console:
 
-* [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md)  (per l’interfaccia touch)
+* [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) (per l’interfaccia touch)
 
 ## Considerazioni correlate {#related-considerations}
 
 Anche se non è direttamente correlato a una migrazione all’interfaccia utente touch, esistono problemi correlati che è bene considerare allo stesso tempo, in quanto sono anche la pratica consigliata:
 
-* [Modelli](/help/sites-developing/templates.md)  - Modelli  [modificabili](/help/sites-developing/page-templates-editable.md)
+* [Modelli](/help/sites-developing/templates.md) - [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
 * [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 
@@ -159,4 +158,3 @@ Per informazioni complete sullo sviluppo di AEM vedere la raccolta di risorse in
 >[!CAUTION]
 >
 >Gli strumenti di modernizzazione AEM sono uno sforzo comunitario e non sono supportati o garantiti dall&#39;Adobe.
-

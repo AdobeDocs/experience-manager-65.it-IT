@@ -1,70 +1,69 @@
 ---
-title: Applicazione sandbox iniziale
-seo-title: Applicazione sandbox iniziale
-description: Creare un modello, un componente e uno script
-seo-description: Creare un modello, un componente e uno script
+title: Applicazione Sandbox iniziale
+seo-title: Initial Sandbox Application
+description: Creare modelli, componenti e script
+seo-description: Create template, component, and script
 uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
 
+# Applicazione Sandbox iniziale {#initial-sandbox-application}
 
-# Applicazione sandbox iniziale {#initial-sandbox-application}
+In questa sezione verrà creato quanto segue:
 
-In questa sezione, creerete i seguenti elementi:
-
-* Il **[modello](#createthepagetemplate)** che verrà utilizzato per creare pagine di contenuto nel sito Web di esempio.
-* Il **[componente e lo script](#create-the-template-s-rendering-component)** che verranno utilizzati per il rendering delle pagine del sito Web.
+* La **[template](#createthepagetemplate)** che verrà utilizzato per creare pagine di contenuto nel sito web di esempio.
+* La **[componente e script](#create-the-template-s-rendering-component)** che verrà utilizzato per il rendering delle pagine del sito web.
 
 ## Creare il modello di contenuto {#create-the-content-template}
 
-Un modello definisce il contenuto predefinito di una nuova pagina. I siti Web complessi possono utilizzare diversi modelli per la creazione di diversi tipi di pagine nel sito. Inoltre, il set di modelli potrebbe diventare un blueprint utilizzato per il rollout delle modifiche a un cluster di server.
+Un modello definisce il contenuto predefinito di una nuova pagina. I siti web complessi possono utilizzare diversi modelli per la creazione di diversi tipi di pagine nel sito. Inoltre, il set di modelli può diventare un blueprint utilizzato per il rollout delle modifiche a un cluster di server.
 
 In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
-1. Nel riquadro di esplorazione del CRXDE Lite:
+1. Nel riquadro Esplora risorse di CRXDE Lite:
 
    * Seleziona `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL Crea]** >  **[!UICONTROL Crea modello]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**
 
-1. Nella finestra di dialogo Crea modello, digitate i seguenti valori e fate clic su **[!UICONTROL Avanti]**:
+1. Nella finestra di dialogo Crea modello, digita i seguenti valori e fai clic su **[!UICONTROL Successivo]**:
 
    * Etichetta: `playpage`
    * Titolo: `An SCF Sandbox Play Template`
    * Descrizione: `An SCF Sandbox template for play pages`
    * Tipo risorsa: `an-scf-sandbox/components/playpage`
-   * Classificazione: &lt;lasciare come predefinito>
+   * Classifica: &lt;leave as=&quot;&quot; default=&quot;&quot;>
 
    Etichetta utilizzata per il nome del nodo.
 
-   Il tipo di risorsa viene visualizzato sul nodo jcr:content di `playpage` come proprietà `sling:resourceType`. Identifica il componente (risorsa) che esegue il rendering del contenuto quando richiesto da un browser.
+   Il tipo di risorsa viene visualizzato nella sezione `playpage`nodo jcr:content come proprietà `sling:resourceType`. Identifica il componente (risorsa) che esegue il rendering del contenuto quando richiesto da un browser.
 
-   In questo caso, tutte le pagine create con il modello `playpage` vengono rappresentate dal componente `an-scf-sandbox/components/playpage`. Per convenzione, il percorso del componente è relativo, consentendo a Sling di cercare la risorsa prima nella cartella `/apps` e, se non trovata, nella cartella `/libs`.
+   In questo caso, tutte le pagine create utilizzando il `playpage` viene eseguito il rendering del modello dal `an-scf-sandbox/components/playpage` componente. Per convenzione, il percorso del componente è relativo, consentendo a Sling di cercare la risorsa per prima nella `/apps` e, se non trovato, nella cartella `/libs` cartella.
 
    ![create-content-template](assets/create-content-template-1.png)
 
-1. Se si utilizza Copia/Incolla, assicurarsi che il valore Tipo risorsa non contenga spazi iniziali o finali.
+1. Se utilizzi copia/incolla, assicurati che il valore Tipo di risorsa non contenga spazi iniziali o finali.
 
    Fai clic su **[!UICONTROL Avanti]**.
 
-1. Per &quot;Percorsi consentiti&quot; si intendono i percorsi delle pagine che utilizzano questo modello, in modo che il modello sia elencato per la finestra di dialogo **[!UICONTROL Nuova pagina]**.
+1. Per &quot;Percorsi consentiti&quot; si intendono i percorsi delle pagine che utilizzano questo modello, in modo che il modello sia elencato per **[!UICONTROL Nuova pagina]** finestra di dialogo.
 
-   Per aggiungere un percorso, fare clic sul pulsante più `+` e digitare `/content(/.&ast;)?` nella casella di testo visualizzata. Se usate Copia/Incolla, accertatevi che non vi siano spazi iniziali o finali.
+   Per aggiungere un percorso, fai clic sul pulsante più `+` e tipo `/content(/.&ast;)?` nella casella di testo visualizzata. Se utilizzi copia/incolla, assicurati che non vi siano spazi iniziali o finali.
 
-   Nota: Il valore della proprietà path consentita è un&#39;espressione *regolare*. Le pagine di contenuto con un percorso che corrisponde all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le relative sottopagine.
+   Nota: Il valore della proprietà percorso consentita è un *espressione regolare*. Le pagine di contenuto con un percorso che corrisponde all’espressione possono utilizzare il modello . In questo caso, l’espressione regolare corrisponde al percorso del **/content** e tutte le relative sottopagine.
 
-   Quando un autore crea una pagina sotto `/content`, il modello `playpage` denominato &quot;An SCF Sandbox Page Template&quot; viene visualizzato in un elenco di modelli disponibili da utilizzare.
+   Quando un autore crea una pagina qui sotto `/content`, `playpage` il modello denominato &quot;An SCF Sandbox Page Template&quot; viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
-   Una volta creata la pagina principale dal modello, l&#39;accesso al modello potrebbe essere limitato a questo sito Web modificando la proprietà per includere il percorso principale nell&#39;espressione regolare, ovvero
+   Una volta creata la pagina principale dal modello, l’accesso al modello potrebbe essere limitato a questo sito web modificando la proprietà per includere il percorso principale nell’espressione regolare, ovvero
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -72,48 +71,48 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
 1. Fai clic su **[!UICONTROL Avanti]**.
 
-   Fare clic su **[!UICONTROL Next]** nel pannello **[!UICONTROL Genitori consentiti]**.
+   Fai clic su **[!UICONTROL Successivo]** in **[!UICONTROL Genitori consentiti]** pannello.
 
-   Fare clic su **[!UICONTROL Next]** nei pannelli **[!UICONTROL Bambini consentiti]**.
+   Fai clic su **[!UICONTROL Successivo]** in **[!UICONTROL Bambini consentiti]** pannelli.
 
    Fai clic su **[!UICONTROL OK]**.
 
-1. Dopo aver fatto clic su OK e aver completato la creazione del modello, agli angoli dei valori della scheda Proprietà per il nuovo modello `playpage` verranno visualizzati triangoli rossi. Questi triangoli rossi indicano le modifiche che non sono state salvate.
+1. Dopo aver fatto clic su OK e aver completato la creazione del modello, si noteranno triangoli rossi negli angoli dei valori della scheda Proprietà per il nuovo modello `playpage` modello. Questi triangoli rossi indicano le modifiche che non sono state salvate.
 
-   Fare clic su **[!UICONTROL Salva tutto]** per salvare il nuovo modello nella directory archivio.
+   Fai clic su **[!UICONTROL Salva tutto]** per salvare il nuovo modello nel repository.
 
    ![verify-content-template](assets/verify-content-template.png)
 
 ### Creare il componente di rendering del modello {#create-the-template-s-rendering-component}
 
-Create il *componente* che definisce il contenuto ed esegue il rendering di tutte le pagine create in base al [modello di pagina di riproduzione](#createthepagetemplate).
+Crea il *component* che definisce il contenuto ed esegue il rendering delle pagine create in base al [modello di playpage](#createthepagetemplate).
 
-1. In CRXDE Lite, fare clic con il pulsante destro del mouse su **`/apps/an-scf-sandbox/components`** e scegliere **[!UICONTROL Crea > Componente]**.
+1. In CRXDE Lite, fai clic con il pulsante destro del mouse su **`/apps/an-scf-sandbox/components`** e fai clic su **[!UICONTROL Crea > Componente]**.
 1. Impostando il nome del nodo (Etichetta) su *playpage*, il percorso del componente è
 
    `/apps/an-scf-sandbox/components/playpage`
 
-   che corrisponde al Tipo risorsa del modello della pagina di riproduzione (facoltativamente meno la parte iniziale **`/apps/`** del percorso).
+   che corrisponde al tipo di risorsa del modello di playpage (facoltativamente meno il valore iniziale **`/apps/`** parte del percorso).
 
-   Nella finestra di dialogo **[!UICONTROL Crea componente]**, digitare i seguenti valori di proprietà:
+   In **[!UICONTROL Crea componente]** digitare i seguenti valori di proprietà nella finestra di dialogo:
 
-   * Etichetta: **pagina di riproduzione**
-   * Titolo: **Un componente di riproduzione sandbox SCF**
-   * Descrizione: **Questo è il componente che esegue il rendering del contenuto per una pagina sandbox SCF.**
-   * Super Type: *&lt;lasciare vuoto>*
-   * Gruppo: *&lt;lasciare vuoto>*
+   * Etichetta: **playpage**
+   * Titolo: **Componente di riproduzione sandbox SCF**
+   * Descrizione: **È il componente che esegue il rendering del contenuto per una pagina Sandbox SCF.**
+   * Super Type: *&lt;leave blank=&quot;&quot;>*
+   * Gruppo: *&lt;leave blank=&quot;&quot;>*
 
    ![create-template-component](assets/create-template-component.png)
 
-1. Fare clic su **[!UICONTROL Next]** fino a quando non viene visualizzato il pannello **[!UICONTROL Allowed Children]** della finestra di dialogo:
+1. Fai clic su **[!UICONTROL Successivo]** fino al **[!UICONTROL Bambini consentiti]** viene visualizzato il pannello della finestra di dialogo:
 
    * Fai clic su **[!UICONTROL OK]**.
-   * Fare clic su **[!UICONTROL Salva tutto]**.
+   * Fai clic su **[!UICONTROL Salva tutto]**.
 
 1. Verifica che il percorso del componente e il resourceType per il modello corrispondano.
 
    >[!CAUTION]
    >
-   >La corrispondenza tra il percorso del componente della pagina di riproduzione e la proprietà sling:resourceType del modello della pagina di riproduzione è fondamentale per il corretto funzionamento del sito Web.
+   >La corrispondenza tra il percorso del componente playpage e la proprietà sling:resourceType del modello playpage è fondamentale per il corretto funzionamento del sito web.
 
    ![verify-template-component](assets/verify-template-component.png)

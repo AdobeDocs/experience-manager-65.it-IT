@@ -1,8 +1,8 @@
 ---
 title: Supporto della clausola immagine per i moduli HTML5
-seo-title: Supporto della clausola immagine per i moduli HTML5
-description: I moduli HTML5 supportano la clausola Immagine XFA per la visualizzazione di valori e valori formattati per data, testo e simboli numerici.
-seo-description: I moduli HTML5 supportano la clausola Immagine XFA per la visualizzazione di valori e valori formattati per data, testo e simboli numerici.
+seo-title: Picture clause support for HTML5 forms
+description: HTML5 forms supporta la clausola Immagine XFA per la visualizzazione di valori e valori formattati per data, testo e simboli numerici.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '612'
 ht-degree: 5%
 
 ---
 
-
 # Supporto della clausola immagine per i moduli HTML5 {#picture-clause-support-for-html-forms}
 
-I moduli HTML5 supportano la clausola Immagine XFA per la visualizzazione di valori e valori formattati per data, testo e simboli numerici. Sono supportate le seguenti espressioni della clausola Picture:
+HTML5 forms supporta la clausola Immagine XFA per la visualizzazione di valori e valori formattati per data, testo e simboli numerici. Sono supportate le seguenti espressioni della clausola Picture:
 
 * category(locale){illustrazione} | category(locale){illustrazione} | category(locale){illustrazione}
 * category.subcategory{}
@@ -30,7 +29,7 @@ I moduli HTML5 supportano la clausola Immagine XFA per la visualizzazione di val
 >
 >Attualmente, Mobile Forms non supporta la clausola Edit Picture. Inoltre, i simboli della clausola DateTime e Time Picture non sono supportati.
 
-## Simboli dei campi di data supportati {#supported-date-field-symbols}
+## Simboli dei campi data supportati {#supported-date-field-symbols}
 
 Espressione supportata per la clausola Date Picture:
 
@@ -57,23 +56,23 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>DD</td>
-   <td>Giorno del mese di due cifre (01-31) completato con zero.<br /> </td>
+   <td>Giorno del mese di due cifre completato con zero (01-31).<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>Mese dell'anno di 1 o 2 cifre (1-12).<br /> </td>
+   <td>Mese dell’anno di 1 o 2 cifre (1-12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
-   <td>Mese dell'anno di due cifre completato con zero (01-12).<br /> </td>
+   <td>Mese dell’anno di due cifre completato con zero (01-12).<br /> </td>
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Nome del mese abbreviato dell'impostazione internazionale corrente<br /> </td>
+   <td>Nome del mese abbreviato delle impostazioni internazionali correnti<br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
-   <td>Nome completo del mese delle impostazioni internazionali correnti<br /> </td>
+   <td>Nome mese completo delle impostazioni internazionali correnti<br /> </td>
   </tr>
   <tr>
    <td>EEE</td>
@@ -81,7 +80,7 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>Nome completo del giorno feriale dell'impostazione internazionale corrente<br /> </td>
+   <td>Nome completo del giorno della settimana delle impostazioni internazionali correnti<br /> </td>
   </tr>
   <tr>
    <td>YY</td>
@@ -94,21 +93,21 @@ Espressione supportata per la clausola Date Picture:
  </tbody>
 </table>
 
-## Clausola numerica delle immagini {#numeric-picture-clause}
+## Clausola di immagine numerica {#numeric-picture-clause}
 
-I moduli HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza nel supporto tra PDF forms e Forms HTML.
+I moduli di HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza di supporto tra PDF forms e HTML Forms.
 
-In **PDF forms** viene formattato un numero indipendentemente dal numero di simboli nella clausola Picture
+In **PDF forms**, un numero viene formattato indipendentemente dal numero di simboli nella clausola Picture
 
-In **HTML Forms**, un numero viene formattato solo se il numero ha cifre inferiori al numero di simboli nella clausola Picture.
+In **HTML Forms**, un numero viene formattato solo se il numero ha cifre inferiori al numero di simboli della clausola Picture.
 
 **Esempio**: Considerare una clausola Picture: num{zzz,zzz,zz9}.
 
-Il numero **10000** viene formattato come **10.000** sia in HTML che in PDF forms.
+Il numero **10000** è formattato come **10.000** sia in HTML che in PDF forms.
 
 Il numero 1000000 è formattato come 1.000.000 in PDF forms. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
 
-Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
+Espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
 
 * num.integer{}
 * num.decimal{}
@@ -125,22 +124,22 @@ Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formattazione</strong> output: una cifra singola. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una cifra singola. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
    <td>Singola cifra</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formattazione</strong> output: una cifra singola. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una cifra singola. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Singola cifra o spazio</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formattazione</strong> output: una cifra singola. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione output</strong>: una cifra singola. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Singola cifra o nulla</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formattazione</strong> output: la parte esponenziale di un numero a virgola mobile costituita dal simbolo esponenziale (E). Seguito da un segno più o meno facoltativo. Seguito dal valore esponente.<br /> </td>
+   <td><strong>Formattazione output</strong>: la parte esponenziale di un numero a virgola mobile costituita dal simbolo esponenziale (E). Seguito da un segno più o meno facoltativo. Seguito dal valore esponenziale.<br /> </td>
    <td>Come per la formattazione dell'output</td>
   </tr>
   <tr>
@@ -150,7 +149,7 @@ Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono
   </tr>
   <tr>
    <td>S o s<br /> </td>
-   <td>Formattazione output: un segno meno se il numero è negativo. Spazio rimanente.<br /> </td>
+   <td>Formattazione output: un segno meno se il numero è negativo. Altro spazio.<br /> </td>
    <td>Segno meno se il numero è negativo. Segno più se il numero è positivo</td>
   </tr>
   <tr>
@@ -203,7 +202,7 @@ Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono
 
 ## Clausola immagine testo {#text-picture-clause}
 
-I moduli HTML5 supportano le seguenti espressioni della clausola Text Picture:
+I moduli di HTML5 supportano le seguenti espressioni della clausola Text Picture:
 
 * testo{simboli della clausola illustrazione}
 

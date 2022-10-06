@@ -1,7 +1,8 @@
 ---
 title: Come mettere tutto insieme - La tua app e il tuo contenuto in AEM headless
 description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come prendere il tuo progetto AEM compresi i frammenti di contenuto, le chiamate GraphQL, le chiamate API REST e l’applicazione e prepararlo per il loro lancio.
-source-git-commit: e3b3c3202b718da063392c33739c0f109b619ac7
+exl-id: 7087a742-732d-41d1-88a5-ac29083cf726
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%

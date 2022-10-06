@@ -145,7 +145,6 @@ La [modalità di modifica dell’editor Rich Text (e dell’interfaccia utente)]
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valore**: percorso del nodo contenente la configurazione effettiva
-
 >
 >Non denominare il nodo di configurazione dell’editor Rich Text come `config`. In caso contrario, le configurazioni dell’editor Rich Text hanno effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
@@ -192,7 +191,6 @@ Per configurazioni dettagliate dei plug-in RTE, consulta [come attivare e config
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >Per creare un componente di testo personalizzato, copia il componente di cui sopra invece di modificare questi componenti.
 

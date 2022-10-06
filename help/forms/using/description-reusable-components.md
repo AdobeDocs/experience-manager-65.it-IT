@@ -1,26 +1,25 @@
 ---
 title: Descrizione dei componenti riutilizzabili
-seo-title: Descrizione dei componenti riutilizzabili
-description: Un elenco completo di componenti riutilizzabili con nomi di file e dipendenze per integrare  componente area di lavoro AEM Forms nelle applicazioni Web.
-seo-description: Un elenco completo di componenti riutilizzabili con nomi di file e dipendenze per integrare  componente area di lavoro AEM Forms nelle applicazioni Web.
+seo-title: Description of reusable components
+description: Un elenco completo dei componenti riutilizzabili con nomi di file e dipendenze, per facilitare l’integrazione del componente Workspace di AEM Forms nelle applicazioni web.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1231'
 ht-degree: 9%
 
 ---
 
-
 # Descrizione dei componenti riutilizzabili {#description-of-reusable-components}
 
-&#39;area di lavoro AEM Forms è composta da [componenti riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) organizzati in una struttura [di cartelle ](/help/forms/using/folder-structure.md) specifica in CRX™. Ciascun componente dispone di un modello, una vista e un file di modello nella posizione specificata nella struttura delle cartelle, dipendenze JavaScript™ da altri file componenti, eventi ascoltati dagli oggetti componenti e JavaScript che attivano tali eventi &#39;area di lavoro di AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi file e dipendenze dei componenti è riportato qui.
+L’area di lavoro di AEM Forms è composta da [riutilizzabile](/help/forms/using/integrating-html-ws-components-web.md) componenti organizzati in un [struttura a cartelle](/help/forms/using/folder-structure.md) in CRX™. Ogni componente dispone di un file modello, vista e modello nel percorso specificato nella struttura delle cartelle, dipendenze JavaScript™ da altri file di componenti, eventi ascoltati dal componente e oggetti JavaScript che attivano tali eventi nell’area di lavoro di AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi di file e dipendenze costituenti è riportato qui.
 
 ## Elenco attività {#tasklist}
 
@@ -42,26 +41,26 @@ ht-degree: 9%
    <td><p>Richiede componenti</p></td>
    <td>
     <ul>
-     <li><p>UserSearch</p></li>
+     <li><p>RicercaUtente</p></li>
      <li><p>Attività</p></li>
-     <li><p>Teamtask</p></li>
+     <li><p>Gruppo</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>task model</p></li>
-     <li><p>modello di gruppo</p></li>
+     <li><p>modello task</p></li>
+     <li><p>modello a mano</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>filterSelected - modello elenco di task</p></li>
-     <li><p>remove - modello elenco attività</p></li>
-     <li><p>updateQueue - modello elenco di task</p></li>
+     <li><p>filterSelected - modello elenco task</p></li>
+     <li><p>remove - tasklist, modello</p></li>
+     <li><p>updateQueue - modello elenco task</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -69,7 +68,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Questo componente può essere utilizzato indipendentemente ’area di lavoro di AEM Forms, a condizione che sia attivato un evento filterSelezionato per questo componente dall’applicazione personalizzata.
+>Questo componente può essere utilizzato indipendentemente dall’area di lavoro di AEM Forms, a condizione che si attivi l’evento filterSelected per questo componente dall’applicazione personalizzata.
 
 ## Attività {#task}
 
@@ -89,22 +88,22 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>modello lista di task</p></li>
-     <li><p>utility task</p></li>
+     <li><p>modello a elenco delle applicazioni</p></li>
+     <li><p>utility taskazioni</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
      <li><p>submitComplete - modello task</p></li>
-     <li><p>Rifiuta - modello task</p></li>
+     <li><p>Rifiuto: modello task</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -112,7 +111,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->L&#39;area di lavoro chiama la funzione fetchTasks del modello TaskList per creare modelli di task per questo componente.
+>Workspace chiama la funzione fetchTasks del modello TaskList per creare modelli Task per questo componente.
 
 ## FilterList {#filterlist}
 
@@ -132,21 +131,21 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>fetching - modello elenco attività </p></li>
-     <li><p>remove - modello elenco attività </p></li>
-     <li><p>updateQueue - modello elenco di task </p></li>
-     <li><p>refreshQueue - modello elenco di task </p></li>
-     <li><p>filterSelected - modello elenco di task</p></li>
+     <li><p>recuperato - modello elenco task </p></li>
+     <li><p>remove - tasklist, modello </p></li>
+     <li><p>updateQueue - modello elenco task </p></li>
+     <li><p>refreshQueue - modello elenco task </p></li>
+     <li><p>filterSelected - modello elenco task</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -166,27 +165,27 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
    <td>
     <ul>
-     <li><p>Campo: coda: { name, qid, isDefault, type}</p> </li>
+     <li><p>Campo: coda: { nome, qid, isDefault, type}</p> </li>
      <li><p>Campo: query: string</p> </li>
      <li><p>Campo: parentView: visualizzazione elenco filtri</p> </li>
-     <li><p>Campo: parentModel: modello lista di task</p> </li>
-     <li><p>Campo: utility</p> </li>
+     <li><p>Campo: parentModel: modello a elenco delle applicazioni</p> </li>
+     <li><p>Campo: utilità</p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Eventi ascoltati</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
  </tbody>
 </table>
 
-## TeamCode {#teamqueues}
+## CodeTeam {#teamqueues}
 
 <table>
  <tbody>
@@ -204,20 +203,20 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>fetching - modello elenco attività </p></li>
-     <li><p>remove - modello elenco attività </p></li>
-     <li><p>updateQueue - modello elenco di task </p></li>
-     <li><p>teamQueuesFetched - modello elenco di task </p></li>
+     <li><p>recuperato - modello elenco task </p></li>
+     <li><p>remove - tasklist, modello </p></li>
+     <li><p>updateQueue - modello elenco task </p></li>
+     <li><p>teamQueuesFetched - modello elenco task </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -229,7 +228,7 @@ ht-degree: 9%
  <tbody>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p> </td>
@@ -241,32 +240,32 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
    <td>
     <ul>
-     <li><p>Estende : visualizzazione filtro</p> </li>
-     <li><p>Campo : queue :{ nome, qid, isDefault, type }</p> </li>
-     <li><p>Campo : query: string</p> </li>
+     <li><p>Estende : vista a filtri</p> </li>
+     <li><p>Campo : coda :{ nome, qid, isDefault, type }</p> </li>
+     <li><p>Campo : query : string</p> </li>
      <li><p>Campo : parentView : visualizzazione elenco filtri</p> </li>
-     <li><p>Campo : parentModel : modello lista di task</p> </li>
-     <li><p>Campo : utility</p> </li>
+     <li><p>Campo : parentModel : modello a elenco delle applicazioni</p> </li>
+     <li><p>Campo : utilità</p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Eventi ascoltati</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->TeamFilter riceve l&#39;evento che indica quale attività è stata selezionata dal componente TaskList. Sebbene questi componenti condividano la classe del modello, non esiste altra dipendenza.
+>TeamFilter ottiene l&#39;evento che indica quale attività è stata selezionata dal componente TaskList. Sebbene questi componenti condividano la classe del modello, non vi sono altre dipendenze.
 
-## TaskDetails {#taskdetails}
+## DettagliAttività {#taskdetails}
 
 <table>
  <tbody>
@@ -291,40 +290,40 @@ ht-degree: 9%
    <td>
     <ul>
      <li><p>processinstancehistory.html</p> </li>
-     <li><p>formrendering, utilità</p> </li>
-     <li><p>notes utility</p> </li>
-     <li><p>utility allegati</p> </li>
-     <li><p>utility task</p> </li>
-     <li><p>utility di cronologia</p> </li>
+     <li><p>utility di rendering dei moduli</p> </li>
+     <li><p>utilità note</p> </li>
+     <li><p>utilità allegati</p> </li>
+     <li><p>utility taskazioni</p> </li>
+     <li><p>utilità di cronologia</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>inoltrato - modello di task</p> </li>
-     <li><p>shared - task model</p> </li>
-     <li><p>Consultato - modello dei compiti</p> </li>
+     <li><p>condiviso - modello task</p> </li>
+     <li><p>consultato - modello dei compiti</p> </li>
      <li><p>rifiutato - modello task</p> </li>
-     <li><p>abbandonato - modello</p> </li>
+     <li><p>abbandonato - modello di task</p> </li>
      <li><p>sbloccato - modello task</p> </li>
      <li><p>bloccato - modello task</p> </li>
-     <li><p>reclamato - modello task</p> </li>
+     <li><p>rivendicato - modello task</p> </li>
      <li><p>modifica:task selezionato - modello elenco task</p> </li>
      <li><p>change:formUrl - modello di task</p> </li>
-     <li>attachmentURLFetched - modello attività</li>
+     <li>attachmentURLFetched - modello di task</li>
     </ul>
     <ul>
      <li>newAttachment - modello di task</li>
-     <li><p>taskHistoryFetched - modello di task</p> </li>
-     <li>readyForSubmitComplete - modello di task</li>
+     <li><p>taskHistoryFetched - modello task</p> </li>
+     <li>PrepareForSubmitComplete - modello di task</li>
      <li><p>submitComplete - modello task</p> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## CategoryList {#categorylist}
+## Elenco categorie {#categorylist}
 
 <table>
  <tbody>
@@ -348,15 +347,15 @@ ht-degree: 9%
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>favoritecategoryfactory</p></li>
-     <li><p>allcategoryfactory, modello</p></li>
+     <li><p>modello favoritecategoryfactory</p></li>
+     <li><p>modello allcategoryfactory</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>allInitipointsFetched - categorylist model </p></li>
+     <li><p>allStartpointsFetched - categorylist model </p></li>
      <li><p>add - categorylist, modello </p></li>
     </ul></td>
   </tr>
@@ -385,22 +384,22 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>categorylist, modello</p></li>
-     <li><p>startpointlist, modello</p></li>
+     <li><p>modello a elenco categorie</p></li>
+     <li><p>modello startpointlist</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>changed - category model </p></li>
-     <li><p>childFetched - modello di categoria </p></li>
+     <li><p>modificato - modello di categoria </p></li>
+     <li><p>childrenFetched - modello di categoria </p></li>
      <li><p>categoria:selezionata - modello elenco categorie </p></li>
     </ul></td>
   </tr>
@@ -425,30 +424,30 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>category model</p></li>
-     <li><p>favoritecategoryfactory</p></li>
-     <li><p>allcategoryfactory, modello</p></li>
-     <li><p>startpoint view</p></li>
-     <li><p>startpointlist, modello</p></li>
-     <li><p>startpoint, modello</p></li>
-     <li><p>task model</p></li>
-     <li><p>task model</p></li>
-     <li><p>modello lista di task</p></li>
-     <li><p>modello di gruppo</p></li>
+     <li><p>modello di categoria</p></li>
+     <li><p>modello favoritecategoryfactory</p></li>
+     <li><p>modello allcategoryfactory</p></li>
+     <li><p>vista iniziale</p></li>
+     <li><p>modello startpointlist</p></li>
+     <li><p>modello startpoint</p></li>
+     <li><p>modello task</p></li>
+     <li><p>modello task</p></li>
+     <li><p>modello a elenco delle applicazioni</p></li>
+     <li><p>modello a mano</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
      <li><p>categoria:selezionata - modello elenco categorie </p></li>
-     <li><p>allInitipointsFetched - categorylist model </p></li>
+     <li><p>allStartpointsFetched - categorylist model </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -456,7 +455,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->I componenti StartPointList e CategoryList condividono la classe del modello, pertanto il primo dipende dal secondo. CategoryList accede alle informazioni sui punti iniziali della categoria visualizzati. Per utilizzare StartPointList in modo indipendente, simulare l&#39;attivatore dell&#39;evento da CategoryList.
+>I componenti StartPointList e CategoryList condividono la classe del modello, quindi il primo dipende da quest&#39;ultimo. CategoryList accede alle informazioni sui punti iniziali della categoria visualizzati. Per utilizzare StartPointList in modo indipendente, simulare il trigger dell&#39;evento da CategoryList.
 
 ## StartPoint {#startpoint}
 
@@ -476,15 +475,15 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>task model</p></td>
+   <td><p>modello task</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
-   <td><p>change - startpoint model </p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
+   <td><p>change - modello startpoint </p></td>
   </tr>
  </tbody>
 </table>
@@ -510,39 +509,39 @@ ht-degree: 9%
    <td>
     <ul>
      <li><p>La maggior parte delle classi Utility</p> </li>
-     <li><p>UserSearch</p> </li>
+     <li><p>RicercaUtente</p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
    <td>
     <ul>
-     <li><p>category model</p> </li>
-     <li><p>favoritecategoryfactory</p> </li>
-     <li><p>allcategoryfactory, modello</p> </li>
-     <li><p>formrendering, utilità</p> </li>
-     <li><p>notes utility</p> </li>
-     <li><p>utility allegati</p> </li>
-     <li><p>utility task</p> </li>
+     <li><p>modello di categoria</p> </li>
+     <li><p>modello favoritecategoryfactory</p> </li>
+     <li><p>modello allcategoryfactory</p> </li>
+     <li><p>utility di rendering dei moduli</p> </li>
+     <li><p>utilità note</p> </li>
+     <li><p>utilità allegati</p> </li>
+     <li><p>utility taskazioni</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>categoria:selezionata - modello elenco categorie</p> </li>
-     <li><p>change:invogliateTask - startpointlist, modello</p> </li>
+     <li><p>change:invogliatoTask - modello startpointlist</p> </li>
      <li><p>change:formUrl - modello di task</p> </li>
-     <li><p>startpoint:selected - startpointlist, modello</p> </li>
+     <li><p>startpoint:selected - modello startpointlist</p> </li>
      <li><p>inoltrato - modello di task</p> </li>
-     <li><p>abbandonato - modello</p> </li>
+     <li><p>abbandonato - modello di task</p> </li>
      <li><p>sbloccato - modello task</p> </li>
      <li><p>bloccato - modello task</p> </li>
-     <li>attachmentURLFetched - modello attività</li>
+     <li>attachmentURLFetched - modello di task</li>
      <li>newAttachment - modello di task</li>
-     <li>readyForSubmitComplete - modello di task </li>
+     <li>PrepareForSubmitComplete - modello di task </li>
      <li><p>submitComplete - modello task</p> </li>
-     <li><p>allInitipointsFetched - categorylist model</p> </li>
+     <li><p>allStartpointsFetched - categorylist model</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -550,9 +549,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->I componenti StartProcess e StartPointList condividono la classe del modello. Questo componente diventa rilevante e si seleziona un punto di inizio da StartPointList.
+>I componenti StartProcess e StartPointList condividono la classe del modello. Questo componente diventa rilevante quando si seleziona un punto iniziale da StartPointList.
 
-## ProcessNameList {#processnamelist}
+## ElencoNomeProcesso {#processnamelist}
 
 <table>
  <tbody>
@@ -566,23 +565,23 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>tracking.html (nella cartella route)</p></td>
+   <td><p>tracking.html (nella cartella del percorso)</p></td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>processname, modello</p></td>
+   <td><p>modello nome processo</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>add - processnamelist model </p></li>
-     <li><p>fetching:processnames - processnamelist model </p></li>
-     <li><p>change - processnamelist model </p></li>
+     <li><p>add - processnamelist, modello </p></li>
+     <li><p>fetched:processnames - modello processnamelist </p></li>
+     <li><p>change - modello processnamelist </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -592,7 +591,7 @@ ht-degree: 9%
 >
 >ProcessNameList non dipende da altri componenti. Tuttavia, internamente dipende dalla classe del modello ProcessInstanceList che a sua volta dipende da altri componenti. Quindi, ProcessNameList utilizza molte classi di modelli come ProcessInstanceList, ProcessInstance, TaskList, Teamtask e Task. Oltre a queste dipendenze, ProcessNameList può essere utilizzato in modo indipendente.
 
-## ProcessName {#processname}
+## NomeProcesso {#processname}
 
 <table>
  <tbody>
@@ -610,14 +609,14 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>processinstancelist, modello</p></td>
+   <td><p>modello processinstancelist</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td><p>change - processname model </p></td>
   </tr>
  </tbody>
@@ -637,22 +636,22 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>tracking.html (nella cartella route)</p></td>
+   <td><p>tracking.html (nella cartella del percorso)</p></td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>processname, modello</p></td>
+   <td><p>modello nome processo</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>nomeprocesso:selected - modello di elenco di processi </p></li>
-     <li><p>processname:instancesfetched - processnamelist model </p></li>
+     <li><p>nome processo:selected - modello di elenchi di processi </p></li>
+     <li><p>nomeprocesso:instancesfetched - modello processnamelist </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -672,7 +671,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Visualizzazione</p></td>
-   <td><p>processname inside processnamelist.js</p></td>
+   <td><p>processname all'interno di processnamelist.js</p></td>
   </tr>
   <tr>
    <td><p>Modello</p></td>
@@ -680,14 +679,14 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>modello lista di task</p></td>
+   <td><p>modello a elenco delle applicazioni</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td><p>change - process instance model </p></td>
   </tr>
  </tbody>
@@ -711,23 +710,23 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p>processname, modello</p></li>
-     <li><p>utility di cronologia</p></li>
+     <li><p>modello nome processo</p></li>
+     <li><p>utilità di cronologia</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>nomeprocesso:selected - modello di elenco di processi </p></li>
+     <li><p>nome processo:selected - modello di elenchi di processi </p></li>
      <li><p>processinstance:selected - processinstancelist model </p></li>
-     <li><p>TasksFetched - Process instance model </p></li>
+     <li><p>TasksFetched - process instance model </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -755,19 +754,19 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>UserSearch</p> </td>
+   <td><p>RicercaUtente</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
    <td><p>visualizzazione ricerca utente</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsFetched - Modello outofoffice</p> </li>
-     <li><p>outOfOfficeSettingsSaved - outOfOfficeSettingsSaved</p> </li>
-     <li><p>processFetched - Modello outofoffice</p> </li>
+     <li><p>outOfOfficeSettingsFetched - modello outofoffice</p> </li>
+     <li><p>outOfOfficeSettingsSaved - modello di spazio</p> </li>
+     <li><p>processFetched - modello outofoffice</p> </li>
      <li><p>principalSelected - visualizzazione ricerca principale</p> </li>
     </ul> </td>
   </tr>
@@ -796,22 +795,22 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>UserSearch</p> </td>
+   <td><p>RicercaUtente</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
    <td><p>visualizzazione ricerca utente</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
-     <li><p>queueAccessGranted - sharequeue, modello</p> </li>
-     <li><p>queueAccessRequired - sharequeue, modello</p> </li>
-     <li><p>givenUsersFetched - sharequeue, modello</p> </li>
-     <li>accessUsersFetched - sharequeue, modello</li>
-     <li><p>queueAccessRevked - modello di nitidezza</p> </li>
-     <li><p>queueAccessRemoved - sharequeue, modello</p> </li>
+     <li><p>queueAccessGranted - modello di condivisione</p> </li>
+     <li><p>queueAccessRequested - modello di condivisione</p> </li>
+     <li><p>allowUsersFetched - modello di condivisione</p> </li>
+     <li>accessibleUsersFetched - modello di condivisione</li>
+     <li><p>queueAccessRevked - modello di condivisione</p> </li>
+     <li><p>queueAccessRemoved - modello di condivisione</p> </li>
      <li><p>principalSelected - visualizzazione ricerca principale</p> </li>
     </ul> </td>
   </tr>
@@ -840,18 +839,18 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>preferencesFetched - modello di impostazioni </p></li>
-     <li><p>settingUpdated - uisettings model </p></li>
+     <li><p>preferencesFetched - modello di utenze </p></li>
+     <li><p>settingUpdated - modello di utilizzo </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -859,9 +858,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->UISettings può essere utilizzato in modo indipendente.
+>UISettings può essere utilizzato indipendentemente.
 
-## AppNavigation {#appnavigation}
+## NavigazioneApp {#appnavigation}
 
 <table>
  <tbody>
@@ -879,24 +878,24 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Eventi ascoltati</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->AppNavigation può essere utilizzato in modo indipendente.
+>AppNavigation può essere utilizzato indipendentemente.
 
-## UserInfo {#userinfo}
+## InformazioniUtente {#userinfo}
 
 <table>
  <tbody>
@@ -914,18 +913,18 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched - modello userinfo</li>
-     <li>sessionRinnovato - modello userinfo <br /> </li>
+     <li>sessionRenewed - modello userinfo <br /> </li>
      <li>sessionExpired - modello userinfo </li>
     </ul> </td>
   </tr>
@@ -954,20 +953,20 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p>NA</p></td>
+   <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
-   <td><p>newWsError - modello di errore </p></td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p></td>
+   <td><p>newWsError - modello wserror </p></td>
   </tr>
  </tbody>
 </table>
 
-## Ricerca utente {#usersearch}
+## RicercaUtente {#usersearch}
 
 <table>
  <tbody>
@@ -985,14 +984,14 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td>
     <ul>
      <li>principalSearched - modello di ricerca principale</li>
@@ -1002,7 +1001,7 @@ ht-degree: 9%
  </tbody>
 </table>
 
-## SearchTemplate {#searchtemplate}
+## Modello di ricerca {#searchtemplate}
 
 <table>
  <tbody>
@@ -1012,7 +1011,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Visualizzazione</p> </td>
-   <td><p>search template (in search templatelist.js) </p> </td>
+   <td><p>searchtemplate (in searchtemplatelist.js) </p> </td>
   </tr>
   <tr>
    <td><p>Modello</p> </td>
@@ -1020,20 +1019,20 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
-   <td><p>templateFetched - modello di ricerca</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
+   <td><p>templateFetched- modello di ricerca</p> </td>
   </tr>
  </tbody>
 </table>
 
-## SearchTemplateList {#searchtemplatelist}
+## ElencoModelliRicerca {#searchtemplatelist}
 
 <table>
  <tbody>
@@ -1047,24 +1046,24 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>tracking.html (nella cartella route)</p> </td>
+   <td><p>tracking.html (nella cartella del percorso)</p> </td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
-   <td><p>search template, modello</p> </td>
+   <td><p>modello di ricerca</p> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
-   <td><p>change - ricertemplatelist model</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
+   <td><p>change - modello searchtemplatelist</p> </td>
   </tr>
  </tbody>
 </table>
 
-## SearchTemplateDetails {#searchtemplatedetails}
+## DettagliModelloRicerca {#searchtemplatedetails}
 
 <table>
  <tbody>
@@ -1082,14 +1081,14 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
-   <td><p>NA</p> </td>
+   <td><p>ND</p> </td>
   </tr>
   <tr>
    <td><p>Dipendenze JS</p> </td>
-   <td>NA<br /> </td>
+   <td>ND<br /> </td>
   </tr>
   <tr>
-   <td><p>Eventi ascoltati (nome evento - Trigger)</p> </td>
+   <td><p>Eventi ascoltati (Nome evento - Trigger)</p> </td>
    <td><p>searchTemplate:selected - modello di ricerca</p> </td>
   </tr>
  </tbody>

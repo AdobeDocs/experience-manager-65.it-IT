@@ -1,22 +1,21 @@
 ---
 title: Proprietà di configurazione della gestione della corrispondenza
-seo-title: Proprietà di configurazione della gestione della corrispondenza
+seo-title: Correspondence Management Configuration Properties
 description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per la soluzione. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
-seo-description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per la soluzione. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '845'
 ht-degree: 4%
 
 ---
-
 
 # Proprietà di configurazione della gestione della corrispondenza {#correspondence-management-configuration-properties}
 
@@ -53,11 +52,11 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td>Tipo di rappresentazione</td>
    <td>Il tipo di rendering utilizzato dall'applicazione Create Correspondence per eseguire il rendering dell'anteprima della lettera. </td>
-   <td>Rendering HTML</td>
-   <td>Rendering HTML / Rendering PDF</td>
+   <td>Rendering di HTML</td>
+   <td>Rendering di HTML / Rendering di PDF</td>
   </tr>
   <tr>
-   <td><p>Attiva evidenziazione PDF CCR</p> </td>
+   <td><p>Abilita l’evidenziazione di CCR PDF</p> </td>
    <td><p>Abilita l’evidenziazione su PDF nell’applicazione Crea corrispondenza</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
@@ -130,12 +129,12 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Tipo di invio PDF</p> </td>
-   <td><p>Tipo di invio PDF (tipo di PDF generato all’invio dall’applicazione Crea corrispondenza)</p> </td>
+   <td><p>Tipo di invio PDF (tipo di PDF generato all’invio dall’applicazione Create Correspondence)</p> </td>
    <td><p>nonInteractive</p> </td>
    <td><p>interattivo/non interattivo</p> </td>
   </tr>
   <tr>
-   <td><p>Ottimizza istanza del dizionario dati</p> </td>
+   <td><p>Ottimizza istanza dizionario dati</p> </td>
    <td><p>Consente il trasferimento ottimizzato del server e del client dell’istanza del dizionario dati</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
@@ -250,13 +249,13 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Dimensione cache lettera</p> </td>
-   <td><p>Specifica il numero massimo di lettere da conservare nella cache.</p> <p>La modifica di questo valore comporterà la pulizia della cache <code>in-memory</code>.</p> </td>
+   <td><p>Specifica il numero massimo di lettere da conservare nella cache.</p> <p>La modifica di questo valore comporterà la pulizia di <code>in-memory</code> cache.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualsiasi valore numerico</p> </td>
   </tr>
   <tr>
    <td><p>Abilita cache lettera</p> </td>
-   <td><p>Attiva/Disattiva la cache delle lettere.</p> <p>La modifica di questo valore comporterà la pulizia della cache <code>in-memory </code>.</p> </td>
+   <td><p>Attiva/Disattiva la cache delle lettere.</p> <p>La modifica di questo valore comporterà la pulizia di <code>in-memory </code> cache.</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -292,7 +291,7 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Directory di debug </p> <p> </p> </td>
-   <td>Percorso della cartella del file system per il debug. Se la directory non <code>exists</code>, non verranno generate immagini di debug.</td>
+   <td>Percorso della cartella del file system per il debug. Se la directory non <code>exists</code>, non verrà generato alcun dump di debug.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

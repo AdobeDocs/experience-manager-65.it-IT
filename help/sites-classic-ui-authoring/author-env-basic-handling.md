@@ -1,35 +1,31 @@
 ---
 title: Operazioni di base
-seo-title: Operazioni di base
+seo-title: Basic Handling
 description: Panoramica sulle operazioni di base per l’utilizzo dell’ambiente di authoring di AEM. Usa la console Sites come base.
-seo-description: Panoramica sulle operazioni di base per l’utilizzo dell’ambiente di authoring di AEM. Usa la console Sites come base.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 94%
 
 ---
-
 
 # Operazioni di base{#basic-handling}
 
 >[!NOTE]
 >
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di creazione AEM. Usa la console **Sites** come base.
-   >
-   >
-* Alcune funzionalità non sono disponibili su tutte le console e/o certe funzionalità aggiuntive sono disponibili solo in determinate console. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
+>* Alcune funzionalità non sono disponibili su tutte le console e/o certe funzionalità aggiuntive sono disponibili solo in determinate console. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
+>* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>
 
 
 ## Schermata di benvenuto {#the-welcome-screen}
@@ -60,7 +56,7 @@ Le console principali sono:
   </tr>
   <tr>
    <td><strong>Lanci</strong></td>
-   <td>Questa console consente di gestire i <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a> e sviluppare i contenuti per rilasci futuri di una o più pagine Web attivate.<br /> <i>Nota: Nell’interfaccia touch molte delle funzionalità sono disponibili nella console Siti e nella barra laterale Riferimenti.</i><i>Se necessario, questa console è disponibile dalla console Strumenti; selezionate Operazioni, quindi Lanci. </i></td>
+   <td>Questa console consente di gestire i <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a> e sviluppare i contenuti per rilasci futuri di una o più pagine Web attivate.<br /> <i>Nota: Nell’interfaccia touch molte delle funzionalità sono disponibili nella console Sites e nella barra laterale Riferimenti.</i><i>Se necessario, questa console è disponibile dalla console Strumenti; selezionate Operazioni, quindi Lanci. </i></td>
   </tr>
   <tr>
    <td><strong>Casella in entrata </strong></td>
@@ -93,13 +89,13 @@ La console **Siti Web** offre due riquadri che consentono di navigare e gestire 
 
 * Riquadro a sinistra
 
-   Viene visualizzata la struttura ad albero dei siti Web e le relative pagine.
+   Mostra la struttura ad albero dei siti web e le relative pagine.
 
    Contiene inoltre informazioni su altri aspetti o su AEM, compresi progetti, blueprint e risorse.
 
 * Riquadro a destra
 
-   Vengono visualizzate le pagine (nella posizione selezionata nel riquadro a sinistra) e possono essere utilizzate per eseguire azioni.
+   Mostra le pagine (nella posizione selezionata nel riquadro a sinistra) e può essere utilizzato per eseguire azioni.
 
 Consente di [gestire le pagine](/help/sites-authoring/managing-pages.md) mediante la barra degli strumenti, un menu di scelta rapida o l’apertura della pagina per ulteriori interventi.
 
@@ -109,7 +105,7 @@ Consente di [gestire le pagine](/help/sites-authoring/managing-pages.md) mediant
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Accedere all’Aiuto {#accessing-help}
+## Accedere all’Aiuto   {#accessing-help}
 
 In diverse console (ad esempio Siti web) è disponibile anche il pulsante **Aiuto**, che permette di accedere a Condivisione pacchetti o al sito della documentazione.
 
@@ -149,7 +145,7 @@ Nella console **Siti web** le pagine di contenuto sono elencate in una struttura
 >
 >Per ulteriori informazioni, consulta [SiteAdmin in CQ Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
-## Informazioni sulla pagina nella console Siti web  {#page-information-on-the-websites-console}
+## Informazioni sulla pagina nella console Siti web {#page-information-on-the-websites-console}
 
 Nel riquadro a destra nella console **Siti web** è disponibile una vista a elenco con le seguenti informazioni sulle pagine:
 
@@ -234,4 +230,3 @@ Lo stato di pubblicazione è indicato dai colori accanto alle pagine nelle colon
 Nell’interfaccia classica, la navigazione e le azioni vengono eseguite mediante operazioni consuete, quali clic e doppio clic. A seconda della situazione corrente, sono inoltre disponibili diversi menu di scelta rapida (solitamente accessibili mediante clic con il pulsante destro del mouse):
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-

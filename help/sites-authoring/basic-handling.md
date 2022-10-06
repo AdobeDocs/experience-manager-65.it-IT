@@ -1,8 +1,8 @@
 ---
 title: Operazioni di base
-seo-title: Operazioni di base
+seo-title: Basic Handling
 description: Acquisisci dimestichezza con AEM e le funzioni di base
-seo-description: Acquisisci dimestichezza con AEM e le funzioni di base
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2969'
 ht-degree: 95%
 
 ---
@@ -23,13 +23,10 @@ ht-degree: 95%
 >[!NOTE]
 >
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di creazione AEM. Usa la console **Sites** come base.
-   >
-   >
-* Alcune funzionalità non sono disponibili su tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
-
+>* Alcune funzionalità non sono disponibili su tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
+>* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>
 
 
 ## Guida introduttiva {#getting-started}
@@ -81,7 +78,7 @@ La navigazione globale presenta due pannelli, rappresentati da icone sul lato si
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione   {#navigation-panel}
+### Pannello di navigazione  {#navigation-panel}
 
 Il pannello Navigazione consente di accedere alle console AEM:
 
@@ -146,7 +143,7 @@ Nel pannello Strumenti, tutte le opzioni nel pannello laterale contengono una se
 
 L’intestazione è sempre presente nella parte superiore dello schermo. Anche se la maggior parte delle opzioni presenti nell’intestazione rimangono invariate ovunque ti trovi nel sistema, alcune dipendono dal contesto.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 * [Navigazione globale](#navigatingconsolesandtools)
 
@@ -204,7 +201,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Questa funzione è disponibile solo nella vista a elenco. Per ulteriori informazioni, consulta [Vista a elenco](#list-view) .
+   Questa funzione è disponibile solo nella vista a elenco. Vedi [vista a elenco](#list-view) per ulteriori informazioni.
 
 * Pulsante **Crea**
 
@@ -224,13 +221,13 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabili*.
+   Potete navigare in un sito web utilizzando solo la tastiera. In questo modo viene utilizzata la funzionalità standard del browser **SCHEDA** key (o **OPT+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabile*.
 
-   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile mentre si passa alla *scheda* tra le opzioni di intestazione e accelera la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile come *scheda* attraverso le opzioni di intestazione e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
 
    ![bh-30](assets/bh-30.png)
 
-## Accedere all’Aiuto {#accessing-help}
+## Accedere all’Aiuto   {#accessing-help}
 
 Sono disponibili diverse risorse di Aiuto:
 
@@ -268,10 +265,10 @@ Sono disponibili diverse risorse di Aiuto:
    >Per una panoramica di tutte le scelte rapide da tastiera, consulta la documentazione seguente:
    >
    >    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
+   >    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni   {#actions-toolbar}
+## Barra delle azioni  {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -288,9 +285,10 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 ![Barra delle azioni ](assets/bh-12.png)
 
 >[!NOTE]
-Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
+>
+>Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide   {#quick-actions}
+## Azioni rapide  {#quick-actions}
 
 Nella [Vista a schede](#cardviewquickactions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -310,9 +308,10 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a elenco ](#list-view)
 
 >[!NOTE]
-Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
+>
+>Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse   {#selecting-resources}
+### Selezionare le risorse  {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -340,7 +339,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
    <td>Vista a schede<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Passate il puntatore del mouse, quindi utilizzate l'azione rapida con il segno di spunta</li>
+     <li>Desktop:<br /> Passa il mouse, quindi utilizza l’azione rapida con il segno di spunta</li>
      <li>Dispositivo mobile: <br /> Tenete premuto sulla scheda</li>
     </ul> </td>
    <td>
@@ -455,7 +454,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco   {#list-view}
+### Vista a elenco  {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -494,7 +493,8 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
    >[!NOTE]
-   La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+   >
+   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -519,7 +519,8 @@ Ad esempio, in Sites puoi selezionare solo il contenuto (opzione predefinita), l
 Se selezioni solo il contenuto, appare solo l’icona della barra. Quando selezioni qualsiasi altra opzione, il nome è visualizzato accanto all’icona della barra.
 
 >[!NOTE]
-Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
+>
+>Sono disponibili [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md) per passare rapidamente da un’opzione all’altra della barra.
 
 ### Struttura contenuto {#content-tree}
 
@@ -530,8 +531,10 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
-Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
-Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
+>
+>Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
+>
+>Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
 ### Timeline  {#timeline}
 

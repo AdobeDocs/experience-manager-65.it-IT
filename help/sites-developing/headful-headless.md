@@ -1,14 +1,15 @@
 ---
-title: Cefalea e senza testa in AEM
+title: Headful e Headless in AEM
 description: AEM progetti possono essere implementati in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Cefalea e senza testa in AEM {#headful-headless}
+# Headful e Headless in AEM {#headful-headless}
 
 I progetti Adobe Experience Manager possono essere implementati sia in modelli headful che headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto. Questo documento fornisce una panoramica dei diversi modelli e descrive i livelli di integrazione SPA.
 
@@ -20,7 +21,7 @@ AEM può essere utilizzato anche per gestire semplicemente i contenuti, consente
 
 Ma questa non deve essere una scelta binaria. AEM offre una flessibilità senza precedenti, che consente di sfruttare i vantaggi di entrambi i modelli per il progetto.
 
-![Modelli di implementazione AEM](headless/assets/aem-implementation-models.png)
+![Modelli di implementazione di AEM](headless/assets/aem-implementation-models.png)
 
 In un modello headful o full-stack, il contenuto viene gestito nell’archivio AEM e nei componenti AEM basati su Java, HTL, ecc. vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, lo stile, la presentazione e la distribuzione avvengono in AEM.
 

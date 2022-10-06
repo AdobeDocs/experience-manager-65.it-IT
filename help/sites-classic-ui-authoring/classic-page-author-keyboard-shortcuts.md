@@ -1,22 +1,21 @@
 ---
-title: Scelte rapide da tastiera durante la modifica di pagine
-seo-title: Scelte rapide da tastiera per la modifica delle pagine
-description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
-seo-description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
+title: Scelte rapide da tastiera per la modifica delle pagine
+seo-title: Keyboard Shortcuts when Editing Pages
+description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
-
 
 # Scelte rapide da tastiera per la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->Nelle tabelle seguenti, per le combinazioni di tasti nella colonna **Collegamento**, i tasti Ctrl e Comando funzionano su macOS.
+>Nelle tabelle seguenti, per le combinazioni di tasti nel **Scelta rapida** In macOS, i tasti Ctrl e Comando funzionano.
 
 >[!NOTE]
 >
@@ -32,9 +31,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
 >* Mac: Comando+clic sui componenti richiesti.
-
 >
-
 
 
 ## Scelte rapide da tastiera per la modifica {#editing-keyboard-shortcuts}
@@ -169,9 +166,8 @@ Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponi
   </tr>
   <tr>
    <td>Modalità Modifica</td>
-   <td>Impostate il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizzate:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Imposta il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Visualizza le statistiche sui tempi di caricamento della pagina.</td>
   </tr>
  </tbody>
 </table>
-

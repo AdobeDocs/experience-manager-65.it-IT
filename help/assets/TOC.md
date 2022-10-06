@@ -9,7 +9,7 @@ user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digita
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
@@ -56,13 +56,13 @@ ht-degree: 49%
    + [Profili video di Dynamic Media](video-profiles.md)
    + [Profili immagine di Dynamic Media](image-profiles.md)
    + [Imaging avanzato](imaging-faq.md)
-   + [Imaging avanzato con rapporto pixel del dispositivo lato client](client-side-dpr.md)
+   + [Imaging avanzato con proporzioni pixel del dispositivo lato client](client-side-dpr.md)
    + [Video](s7-video.md)
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuire elementi multimediali dinamici](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
    + [Supporto 3D](/help/assets/assets-3d.md)
-   + [Limiti Dynamic Media](limitations.md)
+   + [Limiti di Dynamic Media](limitations.md)
    + [Set di immagini](image-sets.md)
    + [Immagini panoramiche](panoramic-images.md)
    + [Set di file multimediali diversi](mixed-media-sets.md)
@@ -145,7 +145,7 @@ ht-degree: 49%
    + [Abilita funzionalità frammento di contenuto per la tua istanza](content-fragments/content-fragments-configuration-browser.md)
    + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
    + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
-   + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
+   + [Varianti - Authoring dei contenuti di frammenti ](content-fragments/content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)

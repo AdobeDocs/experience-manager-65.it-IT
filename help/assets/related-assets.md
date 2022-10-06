@@ -3,11 +3,11 @@ title: Attività correlate
 description: Scopri come mettere in relazione le risorse digitali che condividono alcuni attributi comuni. Crea anche relazioni derivate dall’origine tra le risorse digitali.
 contentOwner: AG
 role: User
-feature: Collaborazione, Gestione risorse
+feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '632'
 ht-degree: 2%
 
 ---
@@ -24,11 +24,11 @@ Utilizzando questa funzione, hai la flessibilità di condividere un file PDF o J
 
 ## Collegare le risorse {#relating-assets}
 
-1. Dall’interfaccia [!DNL Experience Manager], apri la pagina **[!UICONTROL Proprietà]** per una risorsa che desideri correlare.
+1. Da [!DNL Experience Manager] , apri **[!UICONTROL Proprietà]** pagina di una risorsa che desideri correlare.
 
    ![apri la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
 
-   *Figura:  [!DNL Assets]  Pagina delle proprietà per correlare le risorse.*
+   *Figura: [!DNL Assets] [!UICONTROL Proprietà] per correlare le risorse.*
 
    In alternativa, seleziona la risorsa dalla vista a elenco.
 
@@ -38,29 +38,29 @@ Utilizzando questa funzione, hai la flessibilità di condividere un file PDF o J
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Per correlare un’altra risorsa alla risorsa selezionata, fai clic su **[!UICONTROL Relate]** ![correlate assets](assets/do-not-localize/link-relate.png) nella barra degli strumenti.
+1. Per collegare un’altra risorsa alla risorsa selezionata, fai clic su **[!UICONTROL Relate]** ![attività correlate](assets/do-not-localize/link-relate.png) dalla barra degli strumenti.
 1. Effettua una delle operazioni seguenti:
 
-   * Per correlare il file di origine della risorsa, seleziona **[!UICONTROL Origine]** dall’elenco.
+   * Per correlare il file di origine della risorsa, seleziona **[!UICONTROL Origine]** dall&#39;elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
-   * Per creare una relazione bidirezionale tra le risorse, seleziona **[!UICONTROL Altri]** dall’elenco.
+   * Per creare una relazione bidirezionale tra le risorse, seleziona **[!UICONTROL Altro]** dall&#39;elenco.
 
-1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individua la posizione della risorsa da correlare e selezionala.
+1. Da **[!UICONTROL Seleziona risorsa]** , individua la posizione della risorsa che desideri correlare e selezionala.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Fare clic su **[!UICONTROL Conferma]**.
-1. Fare clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. A seconda della relazione scelta nel passaggio 3, la risorsa correlata è elencata sotto una categoria appropriata nella sezione **[!UICONTROL Correlata]** . Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, è elencata in **[!UICONTROL Origine]**.
+1. Fai clic su **[!UICONTROL Conferma]**.
+1. Fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. A seconda della scelta della relazione nel passaggio 3, l’attività correlata è elencata sotto una categoria appropriata nel **[!UICONTROL Correlati]** sezione . Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, viene elencata in **[!UICONTROL Origine]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Per annullare la relazione di una risorsa, fai clic su **[!UICONTROL Annulla relazione]** ![scollega risorse](assets/do-not-localize/link-unrelate-icon.png) nella barra degli strumenti.
+1. Per non correlare una risorsa, fai clic su **[!UICONTROL Non correlato]** ![attività non correlate](assets/do-not-localize/link-unrelate-icon.png) dalla barra degli strumenti.
 
-1. Seleziona le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e fai clic su **[!UICONTROL Annulla relazione]**.
+1. Seleziona le risorse da rimuovere dalla relazione **[!UICONTROL Rimuovi relazioni]** e fai clic su **[!UICONTROL Non correlato]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Fare clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Le risorse per le quali hai rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate nella sezione **[!UICONTROL Correlate]** .
+1. Fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Le risorse per le quali hai rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate in **[!UICONTROL Correlati]** sezione .
 
 ## Tradurre le risorse correlate {#translating-related-assets}
 
@@ -76,7 +76,7 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
 1. Traduci le risorse nella cartella di origine in una lingua di destinazione seguendo i passaggi descritti in [Crea un nuovo progetto di traduzione](translation-projects.md#create-a-new-translation-project). Ad esempio, in questo caso, traduci le tue risorse in francese.
 
-1. Dalla pagina [!UICONTROL Progetti] , apri la cartella di traduzione.
+1. Da [!UICONTROL Progetti] , apri la cartella di traduzione.
 
 1. Fai clic sulla sezione del progetto per aprire la pagina dei dettagli.
 
@@ -86,10 +86,10 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Seleziona la risorsa e fai clic su **[!UICONTROL Mostra in Assets]** nella barra degli strumenti per visualizzare lo stato di traduzione della risorsa.
+1. Seleziona la risorsa e fai clic su **[!UICONTROL Mostra in Assets]** dalla barra degli strumenti per visualizzare lo stato di traduzione della risorsa.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
 1. Per verificare che le risorse correlate all’origine siano state tradotte, fai clic sulla risorsa di origine.
 
-1. Seleziona la risorsa correlata all&#39;origine, quindi fai clic su **[!UICONTROL Mostra in Assets]**. Viene visualizzata la risorsa correlata tradotta.
+1. Seleziona la risorsa correlata all’origine, quindi fai clic su **[!UICONTROL Mostra in Assets]**. Viene visualizzata la risorsa correlata tradotta.

@@ -1,8 +1,8 @@
 ---
 title: Creazione e gestione di revisioni per le risorse nei moduli
-seo-title: Creazione e gestione di revisioni per le risorse nei moduli
-description: 'La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
-seo-description: 'La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
+seo-title: Creating and managing reviews for assets in forms
+description: La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 1%
+source-wordcount: '655'
+ht-degree: 0%
 
 ---
-
 
 # Creazione e gestione di revisioni per le risorse nei moduli{#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -28,7 +27,7 @@ La funzione Revisione è un meccanismo che consente a uno o più revisori di com
 ## Impostazione di una revisione {#setting-up-a-review}
 
 1. Passare alla scheda Forms e selezionare un modulo.
-1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fai clic sull&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Se la risorsa non dispone di una revisione in corso, avvia una revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni. Fai clic su Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icona.
 1. Inserite le seguenti informazioni:
 
    * Nome revisione: Obbligatorio, può contenere caratteri alfanumerici, trattini o caratteri di sottolineatura.
@@ -38,7 +37,7 @@ La funzione Revisione è un meccanismo che consente a uno o più revisori di com
 
 1. Compila tutti i dettagli rimanenti, quindi fai clic su Avvia.
 
-### Azioni che si verificano quando una revisione è impostata {#actions-that-occur-when-a-review-is-set-up}
+### Azioni che si verificano quando viene impostata una revisione {#actions-that-occur-when-a-review-is-set-up}
 
 Questa sezione descrive cosa accade quando viene creata o impostata una revisione.
 
@@ -59,19 +58,19 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 
 1. Passare alla scheda Forms e selezionare un modulo.
 
-1. Se una risorsa è in corso di revisione e sei l’iniziatore della revisione, nella barra delle azioni viene visualizzata l’icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Solo l’iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
+1. Se una risorsa è in corso di revisione e sei l’iniziatore della revisione, consulta Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni vengono visualizzate le icone. Solo l’iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
 
-   Fai clic sull&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+   Fai clic su Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icona.
 
    Per gli utenti diversi dall&#39;iniziatore, l&#39;icona Gestisci revisione è disabilitata.
 
 1. Viene visualizzata una schermata con le informazioni seguenti:
 
-   * **Nome** revisione: Impossibile modificare.
+   * **Nome della revisione**: Impossibile modificare.
 
-   * **Descrizione** revisione: Disponibile per la modifica.
+   * **Descrizione della revisione**: Disponibile per la modifica.
 
-   * **Termine** di revisione: Disponibile per la modifica. È possibile modificare la scadenza in qualsiasi data e ora successive alla data e all’ora correnti.
+   * **Termine di revisione**: Disponibile per la modifica. È possibile modificare la scadenza in qualsiasi data e ora successive alla data e all’ora correnti.
 
    * **Revisori**: Disponibile per la modifica. È possibile aggiungere o rimuovere revisori. Se un&#39;attività è scaduta, è possibile aggiungere revisori solo dopo aver esteso la scadenza oltre la data corrente.
 
@@ -113,4 +112,3 @@ Questa sezione descrive cosa succede al termine della revisione / modifica:
    1. **Revisori**: Per ogni revisore, l&#39;attività incompleta relativa alla revisione viene terminata. L&#39;attività non viene più visualizzata come &quot;In sospeso&quot; nella sezione Notifiche del revisore.
    1. **Iniziatore**: L&#39;attività assegnata all&#39;iniziatore Revisione è contrassegnata come completata. L&#39;attività viene rimossa dalla sezione Notifica dell&#39;iniziatore della revisione.
    1. **Tutto**: La revisione viene visualizzata nella sezione Recensioni precedenti . Non è possibile aggiungere ulteriori osservazioni.
-

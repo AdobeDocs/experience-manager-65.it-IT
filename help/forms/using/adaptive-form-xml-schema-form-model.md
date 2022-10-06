@@ -1,14 +1,14 @@
 ---
 title: Come creare un Forms adattivo utilizzando lo schema XML?
 description: Scopri come utilizzare lo schema XML come modello di modulo in un modulo adattivo. È possibile applicare modelli XSD esistenti per creare moduli adattivi e trascinare elementi dello schema da XSD sul modulo adattivo. Approfondisci un esempio di schema XML, aggiungi proprietà speciali ai campi utilizzando lo schema XML e limita i valori accettabili per un componente modulo adattivo.
-feature: Moduli adattivi
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 6%
+source-wordcount: '1073'
+ht-degree: 5%
 
 ---
 
@@ -165,10 +165,8 @@ Ecco un esempio di schema XML.
 >
 >* Capitalizzazione del primo carattere del nome dell’elemento
 >* Inserimento di spazio bianco ai limiti Camel Case.
-
 >
->
-Ad esempio, se aggiungi l’elemento dello schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
+>Ad esempio, se aggiungi il `userFirstName` elemento schema, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare i valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -288,15 +286,15 @@ Ad esempio, se aggiungi l’elemento dello schema `userFirstName`, la didascalia
 
 **Come faccio a sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando si fa doppio clic su un elemento in Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando si fa doppio clic su un elemento nel Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
 
 ![Campo di binding di un elemento di schema XML](assets/dblclick.png)
 
-Il campo bindRef</code> mostra l&#39;associazione tra un elemento ad albero e un elemento o un attributo in uno schema.
+bindRef</code> mostra l&#39;associazione tra un elemento struttura e un elemento o un attributo in uno schema.
 
 >[!NOTE]
 >
->Gli attributi hanno un simbolo `@` nel loro valore `bindRef`per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
+>Gli attributi hanno un `@` simbolo `bindRef`per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccours sono maggiori di 1)?**
 
@@ -311,4 +309,4 @@ Sono disponibili due opzioni:
 
 **Cos&#39;è un bindRef?**
 
-Un `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo schema. Determina il `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Viene inoltre utilizzato un valore `bindRef`per precompilare un valore di campo da un XML precompilato (precompilato).
+A `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo schema. Stabilisce la `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. A `bindRef`viene utilizzato anche durante la precompilazione di un valore di campo da XML precompilato (prepopolato).

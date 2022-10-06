@@ -1,44 +1,43 @@
 ---
-title: Utilizzo di Maven for Communities
-seo-title: Utilizzo di Maven for Communities
-description: Jar API Uber AEM
-seo-description: Jar API Uber AEM
+title: Utilizzo di Maven per Communities
+seo-title: Using Maven for Communities
+description: JAR API Uber AEM
+seo-description: AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
-translation-type: tm+mt
-source-git-commit: 5e7cc6ab82ba450b9be7c97266ec4c81b18fe3d2
+exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
-
-# Utilizzo di Paradiso per community {#using-maven-for-communities}
+# Utilizzo di Maven per Communities {#using-maven-for-communities}
 
 ## Panoramica {#overview}
 
-Questa sezione della documentazione AEM Communities  si aggiunge a:
+Questa sezione della documentazione di AEM Communities si aggiunge a:
 
-* [Creazione AEM progetti con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
+Esiste un solo artefatto &quot;uber&quot; che sostituisce singoli artefatti:
 
-* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [JAR API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->A partire dal AEM 6.4, le API Communities non vengono rilasciate in modo esplicito. Tutte le API Communities ora sono incluse nello jar Uber stesso.
+>A partire da AEM 6.4, le API di Communities non vengono rilasciate esplicitamente. Tutte le API di Communities sono ora incluse nel jar Uber stesso.
 >
->Si consiglia di essere aggiornati con la versione più recente di Communities.
+>Si consiglia di essere sempre aggiornato con la versione più recente di Communities.
 >
->Consultate la sezione [Ultime release](deploy-communities.md#latest-releases) per identificare la versione più recente.
+>Vedi [Versioni più recenti](deploy-communities.md#latest-releases) per identificare la versione più recente.
 
-## Esempio di dipendenza del cielo {#maven-dependency-example}
+## Esempio di dipendenza Maven {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -51,7 +50,7 @@ Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
 
 >[!NOTE]
 >
->Vedere [AEM repository Uber jar](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l&#39;ultimo artefatto Uber jar.
+>Vedi [Archivio jar Uber AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l’ultimo artefatto del jar Uber.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

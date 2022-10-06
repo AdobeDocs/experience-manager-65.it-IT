@@ -1,8 +1,8 @@
 ---
 title: Condizione in linea e ripetizione in comunicazioni interattive e lettere
-seo-title: Condizione in linea e ripetizione in comunicazioni interattive e lettere
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: Utilizzando le comunicazioni in linea e le lettere ripetute, puoi creare comunicazioni altamente contestuali e ben strutturate.
-seo-description: Utilizzando le comunicazioni in linea e le lettere ripetute, puoi creare comunicazioni altamente contestuali e ben strutturate.
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,13 @@ topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
-
 
 # Condizione in linea e ripetizione in comunicazioni interattive e lettere{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
@@ -41,7 +40,7 @@ Per ulteriori informazioni, consulta Creare una regola nel testo in [Testi nelle
 
 Una volta incluso il frammento di testo in una comunicazione interattiva e l’agente utilizza l’interfaccia utente dell’agente per preparare una comunicazione interattiva, i dati (modello dati modulo) per i destinatari vengono valutati e il testo viene mostrato solo ai destinatari negli Stati Uniti.
 
-### Esempio: Uso della condizione in linea in una lettera per eseguire il rendering dell&#39;indirizzo appropriato {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Esempio: Utilizzo di condizioni in linea in una lettera per eseguire il rendering dell’indirizzo appropriato  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 È possibile inserire una condizione in linea in una lettera inserendo la condizione in linea nel modulo di testo appropriato. L&#39;esempio seguente utilizza due condizioni per valutare e visualizzare l&#39;indirizzo appropriato, Signore o Signora, in una lettera basata sull&#39;elemento DD Genere. Utilizzando passaggi simili, puoi creare altre condizioni.
 
@@ -59,7 +58,7 @@ Una volta incluso il frammento di testo in una comunicazione interattiva e l’a
 
    >[!NOTE]
    >
-   >Impossibile salvare un&#39;espressione condizionale vuota o non valida. Per salvare l’espressione, è necessario che all’interno di `${}` sia presente un’espressione condizionale valida.
+   >Impossibile salvare un&#39;espressione condizionale vuota o non valida. All&#39;interno deve essere presente un&#39;espressione condizionale valida `${}` per salvare l’espressione.
 
 1. Effettua le seguenti operazioni per creare una condizione per valutare se il testo selezionato/condizionalizzato viene visualizzato nella lettera, quindi tocca il segno di spunta per salvare l’espressione:
 
@@ -69,7 +68,7 @@ Una volta incluso il frammento di testo in una comunicazione interattiva e l’a
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Per ulteriori informazioni sulla creazione dell&#39;espressione, consulta **Creazione di espressioni e funzioni remote con generatore di espressioni** in [Generatore di espressioni](../../forms/using/expression-builder.md). Il valore specificato nell&#39;espressione deve essere supportato per l&#39;elemento nel dizionario dati. Per ulteriori informazioni, consulta [Dizionario dati](../../forms/using/data-dictionary.md).
+   Per ulteriori informazioni sulla creazione dell’espressione, consulta **Creazione di espressioni e funzioni remote con il generatore di espressioni** in [Generatore di espressioni](../../forms/using/expression-builder.md). Il valore specificato nell&#39;espressione deve essere supportato per l&#39;elemento nel dizionario dati. Per ulteriori informazioni, consulta [Dizionario dati](../../forms/using/data-dictionary.md).
 
    Una volta inserita la condizione, puoi passare il cursore del mouse sulla maniglia a sinistra della condizione per visualizzarla. Tocca la maniglia per visualizzare il menu a comparsa della condizione, che consente di modificare o rimuovere la condizione.
 
@@ -187,7 +186,7 @@ L&#39;esempio seguente fornisce i passaggi per utilizzare la funzione di ripetiz
 
 1. Seleziona un separatore per la formattazione del testo dinamico e tocca il segno di spunta da salvare:
 
-   * **Interruzione** linea: Inserisce un&#39;interruzione di riga dopo ogni voce di transazione nella lettera di output.
+   * **Interruzione di riga**: Inserisce un&#39;interruzione di riga dopo ogni voce di transazione nella lettera di output.
    * **Testo**: Inserisce il carattere di testo specificato dopo ogni voce di transazione nella lettera di output.
 
    Una volta inserita la condizione, il testo con ripetizione viene evidenziato in rosso e sulla sua sinistra appare una maniglia. Per visualizzare il costrutto di ripetizione, posizionate il puntatore del mouse sulla maniglia a sinistra della ripetizione.
@@ -213,9 +212,9 @@ L&#39;esempio seguente fornisce i passaggi per utilizzare la funzione di ripetiz
    >
    >È possibile inserire una condizione e ripetere solo durante la creazione o la modifica del modulo di testo pertinente. Durante l&#39;anteprima della lettera, anche se è possibile apportare modifiche al modulo di testo, non è possibile inserire condizione o ripetere.
 
-## Uso della condizione in linea e della ripetizione - alcuni casi d&#39;uso {#using-inline-condition-and-repeat-some-use-cases}
+## Utilizzo di condizioni in linea e ripetizione - alcuni casi d’uso  {#using-inline-condition-and-repeat-some-use-cases}
 
-### Ripeti nella condizione {#repeat-within-condition}
+### Ripeti in condizioni {#repeat-within-condition}
 
 Potrebbe essere necessario utilizzare la ripetizione all’interno di una condizione. Gestione della corrispondenza consente di utilizzare la ripetizione all’interno di un costrutto di condizione in linea.
 

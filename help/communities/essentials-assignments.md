@@ -1,8 +1,8 @@
 ---
 title: Componenti di base per le assegnazioni
-seo-title: Componenti di base per le assegnazioni
+seo-title: Assignments Essentials
 description: Panoramica della funzione Assegnazioni per le community di abilitazione
-seo-description: Panoramica della funzione Assegnazioni per le community di abilitazione
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '214'
 ht-degree: 13%
 
 ---
 
 # Componenti di base per le assegnazioni {#assignments-essentials}
 
-Continua a leggere per conoscere le informazioni essenziali per l&#39;utilizzo della funzione di assegnazione dei siti [enablement community](/help/communities/overview.md#enablement-community).
+Continua a leggere per conoscere le informazioni essenziali per lavorare con la funzione di assegnazione di [comunità di abilitazione](/help/communities/overview.md#enablement-community) siti.
 
 La funzione assegnazioni consente di assegnare risorse di abilitazione e percorsi di apprendimento ai membri delle comunità di abilitazione.
 
@@ -38,7 +38,7 @@ La funzione assegnazioni consente di assegnare risorse di abilitazione e percors
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
+   <td>cq.social.enablement.hbs.breadcrumb<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -50,7 +50,7 @@ La funzione assegnazioni consente di assegnare risorse di abilitazione e percors
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consultare <a href="/help/communities/assignments.md">Assegnazioni Feature</a></td>
+   <td>Vedi <a href="/help/communities/assignments.md">Funzione Assegnazioni</a></td>
   </tr>
  </tbody>
 </table>
@@ -85,7 +85,7 @@ Le uniche combinazioni possibili di stato di completamento e successo sono:
 
 ### Funzione Assegnazioni {#assignments-function}
 
-Una struttura del sito community che include la [funzione Assegnazioni](/help/communities/functions.md#assignments-function), include un componente ` [assignments](/help/communities/assignments.md)` configurato.
+Una struttura del sito community che include [Funzione Assegnazioni](/help/communities/functions.md#assignments-function)include un ` [assignments](/help/communities/assignments.md)` componente.
 
 ### API di riferimento {#reference-apis}
 

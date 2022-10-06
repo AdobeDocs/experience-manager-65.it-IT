@@ -1,8 +1,8 @@
 ---
 title: Personalizza editor di testo
-seo-title: Personalizza editor di testo
+seo-title: Customize text editor
 description: Scopri come personalizzare l’editor di testo.
-seo-description: Scopri come personalizzare l’editor di testo.
+seo-description: Learn how to customize text editor.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
-
 
 # Personalizza editor di testo{#customize-text-editor}
 
@@ -44,7 +43,7 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, procedi come
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 1. Nella cartella delle app, crea una cartella denominata config con percorso/struttura simile alla cartella di configurazione, che si trova in libs/fd/cm/config, utilizzando i seguenti passaggi:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e seleziona **Sovrapponi nodo**:
+   1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e seleziona **Nodo di sovrapposizione**:
 
       `/libs/fd/cm/config`
 
@@ -56,13 +55,13 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, procedi come
 
       **Posizione:** /apps/
 
-      **Tipi di nodo di corrispondenza:** selezionati
+      **Tipi di nodo di corrispondenza:** Selezionati
 
       ![nodo di sovrapposizione](assets/2.png)
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
-   1. Fare clic su **Salva tutto**.
+   1. Fai clic su **Salva tutto**.
 
 1. Crea una copia del file tbxeditor-config.xml nella cartella di configurazione appena creata, seguendo la procedura seguente:
 
@@ -71,7 +70,7 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, procedi come
 
       `apps/fd/cm/config`
 
-   1. Per impostazione predefinita, il nome del file incollato è `copy of tbxeditor-config.xml.` Rinomina il file in `tbxeditor-config.xml` e fai clic su **Salva tutto**.
+   1. Il nome del file incollato, per impostazione predefinita, è `copy of tbxeditor-config.xml.` Rinomina il file in `tbxeditor-config.xml` e fai clic su **Salva tutto**.
 
 1. Apri il file tbxeditor-config.xml in apps/fd/cm/config e apporta le modifiche necessarie.
 
@@ -169,11 +168,11 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, procedi come
       * Valori predefiniti per famiglia e dimensione del font, altezza, spaziatura tra le lettere e formato della data
       * Punti elenco
 
-      Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la seguente voce nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client utilizzato per accedere e lavorare con la personalizzazione del font. Per ulteriori informazioni, vedere [Aggiungere font personalizzati al computer client](#addcustomfonts).
+      Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la seguente voce nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client utilizzato per accedere e lavorare con la personalizzazione del font. Per ulteriori informazioni, consulta [Aggiungi font personalizzati al computer client](#addcustomfonts).
 
       È inoltre possibile modificare le impostazioni predefinite per vari aspetti del testo e, rimuovendo le voci, rimuovere i font dall’editor di testo.
 
-   1. Fare clic su **Salva tutto**.
+   1. Fai clic su **Salva tutto**.
 
 
 ## Aggiungi font personalizzati al computer client {#addcustomfonts}
@@ -185,15 +184,14 @@ Per ulteriori informazioni sull&#39;installazione dei font, consulta quanto segu
 * [Installa o disinstalla i font in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
 * [Nozioni di base su Mac: Font Book](https://support.apple.com/en-us/HT201749)
 
-## Accedi alle personalizzazioni dei font {#access-font-customizations}
+## Accedere alle personalizzazioni dei font {#access-font-customizations}
 
 Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti sul computer client utilizzato per accedere ad AEM Forms, le modifiche vengono visualizzate nell&#39;editor di testo.
 
-Ad esempio, il font Sazanami Mincho Medium aggiunto in [Personalizza font modificando il file tbxeditor-config.xml nella procedura CRX](#customizefonts) viene visualizzato nell&#39;interfaccia utente dell&#39;editor di testo come segue:
+Ad esempio, il font Sazanami Mincho Medium aggiunto nel [Personalizza i font modificando il file tbxeditor-config.xml in CRX](#customizefonts) nell’interfaccia utente dell’editor di testo viene visualizzata la procedura seguente:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >
 >Per visualizzare il testo in giapponese, è innanzitutto necessario immettere il testo con caratteri giapponesi. L&#39;applicazione di un font giapponese personalizzato formatta solo il testo in un certo modo. L&#39;applicazione di un font giapponese personalizzato non cambia l&#39;inglese o altri caratteri in caratteri giapponesi.
-

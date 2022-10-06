@@ -1,22 +1,21 @@
 ---
 title: Avviso sulla fine del ciclo di vita dei visualizzatori Flash
-description: A partire dal 31 gennaio 2017,  Adobe Dynamic Media Claasic ha dichiarato ufficialmente terminato il supporto per la piattaforma di visualizzatori Flash.
+description: A partire dal 31 gennaio 2017, Adobe Dynamic Media Claasic ha ufficialmente terminato il supporto per la piattaforma di visualizzatori di Flash.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+exl-id: bb87898d-252e-4907-af03-11021d0d57fe
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 21%
 
 ---
 
-
 # Avviso sulla fine del ciclo di vita dei visualizzatori Flash{#flash-viewers-end-of-life-notice}
 
-*A partire dal 31 gennaio 2017,  Dynamic Media Classic (ex Scene7) Adobe ha ufficialmente terminato il supporto per la piattaforma di visualizzatori di Flash.*
+*Dal 31 gennaio 2017, Adobe Dynamic Media Classic (precedentemente Scene7) ha ufficialmente terminato il supporto per la piattaforma di visualizzatori di Flash.*
 
 <!-- *For more information about this important change, see the following FAQ website:*
 

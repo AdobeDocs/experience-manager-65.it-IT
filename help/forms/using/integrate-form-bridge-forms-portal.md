@@ -1,8 +1,8 @@
 ---
 title: Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5
-seo-title: Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5
+seo-title: Integrating Form Bridge with custom portal for HTML5 forms
 description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi del modulo dalla pagina HTML e inviare il modulo.
-seo-description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi del modulo dalla pagina HTML e inviare il modulo.
+seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: c8911f82-1a25-47a5-9a06-19b5dce74a2c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,24 +10,23 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
 
-
 # Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge è un’API di bridge per moduli HTML5 che consente di interagire con un modulo. Per il riferimento API FormBridge, vedere [Riferimento API FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge è un’API bridge di HTML5 forms che consente di interagire con un modulo. Per informazioni di riferimento sulle API di FormBridge, consulta [Riferimento API di FormBridge](/help/forms/using/form-bridge-apis.md).
 
 È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi del modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile alla procedura guidata.
 
 Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagire con un modulo e incorporarlo nella pagina HTML. Per impostare il valore di un campo utilizzando l’API Form Bridge, è possibile effettuare le seguenti operazioni.
 
-## Integrazione dei moduli HTML5 in una pagina web {#integrating-html-forms-to-a-web-page}
+## Integrazione dei moduli di HTML5 in una pagina web {#integrating-html-forms-to-a-web-page}
 
 1. **Scegli un profilo o crea un profilo**
 
@@ -37,9 +36,9 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
 
       Per informazioni dettagliate su come creare un profilo, consulta [Creazione di un nuovo profilo](/help/forms/using/custom-profile.md).
 
-1. **Modificare il profilo HTML**
+1. **Modificare il profilo di HTML**
 
-   Includi runtime XFA, libreria locale XFA e snippet HTML del modulo XFA nel modulo di rendering del profilo, progetta la pagina web e inserisci il modulo nella pagina web.
+   Includere runtime XFA, libreria locale XFA e snippet di moduli XFA HTML nel modulo di rendering del profilo, progettare la pagina web e posizionare il modulo all’interno della pagina web.
 
    Ad esempio, utilizza il seguente frammento di codice per creare un’app con due campi di input e un modulo per illustrare l’interazione tra il modulo e un’app esterna.
 
@@ -77,24 +76,24 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
 
    >[!NOTE]
    >
-   >La **riga 9** contiene riferimenti JSP aggiuntivi per gli stili CSS e i file JavaScript per la progettazione della pagina.
+   >La **Linea 9**, contiene riferimenti JSP aggiuntivi per gli stili CSS e i file JavaScript per la progettazione della pagina.
    >
    >
-   >Il tag &lt;div id=&quot;rightdiv&quot;> sulla riga 18 **contiene lo snippet HTML del modulo XFA.**
-   La pagina è formattata in due contenitori: **sinistra** e **destra**. Il contenitore di destra contiene il modulo. Il contenitore sinistro ha due campi di input e parte della pagina HTML esterna.
+   >La &lt;div id=&quot;rightdiv&quot;> tag su **linea 18** contiene lo snippet HTML del modulo XFA.
+   La pagina è formattata in due contenitori: **sinistra** e **right**. Il contenitore di destra contiene il modulo. Il contenitore sinistro dispone di due campi di input e parte della pagina esterna di HTML.
    La seguente schermata mostra come viene visualizzato il modulo in un browser.
 
    ![portale](assets/portal.jpg)
 
-   Il lato sinistro fa parte della **pagina HTML**. Il lato destro contenente i campi è il **modulo xfa**.
+   Il lato sinistro è parte del **Pagina HTML**. Il lato destro contenente i campi è il **modulo xfa**.
 
 1. **Accesso ai campi del modulo dalla pagina**
 
    Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare valori in un campo modulo.
 
-   Ad esempio, se desideri impostare il **NomeDipendente** utilizzando i valori nei campi **Nome** e **Cognome**, chiama la funzione **window.formBridge.setFieldValue** .
+   Ad esempio, se desideri impostare il **NomeDipendente** utilizzo dei valori nei campi **Nome** e **Cognome**, chiama **window.formBridge.setFieldValue** funzione .
 
-   Allo stesso modo, è possibile leggere il valore chiamando l&#39;API **window.formBridge.getFieldValue** .
+   Allo stesso modo, è possibile leggere il valore chiamando **window.formBridge.getFieldValue** API.
 
    ```javascript
    $(function() {

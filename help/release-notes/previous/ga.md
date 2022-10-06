@@ -1,6 +1,6 @@
 ---
 title: Note generali sulla versione di [!DNL Adobe Experience Manager] 6,5
-description: '"[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."'
+description: "[!DNL Adobe Experience Manager] Note 6.5 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
@@ -44,7 +44,7 @@ Quickstart utilizza Eclipse Jetty 9.4.15 come motore servlet.
 
 * Nuovo supporto per Java™ 11 e Java™ 8 già supportato.
 * Per prestazioni ottimali, sovrascrivi i valori GC predefiniti con altri valori. Per ulteriori informazioni, consulta la sezione [installare e aggiornare](/help/sites-deploying/custom-standalone-install.md) sezione .
-* Gli aggiornamenti di manutenzione per Java™ 11 e Java™ 8 sono distribuiti per Adobe per l&#39;utilizzo da parte del cliente nei progetti relativi alla AEM, quando non sono disponibili pubblicamente dall&#39;Oracle.
+* Gli aggiornamenti di manutenzione per Java™ 11 e Java™ 8 sono distribuiti per Adobe per l&#39;utilizzo da parte del cliente nei progetti relativi alla AEM, quando non sono disponibili al pubblico dall&#39;Oracle.
 
 #### Sviluppo Java™ {#java-development}
 

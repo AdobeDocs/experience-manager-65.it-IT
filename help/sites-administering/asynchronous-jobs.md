@@ -1,14 +1,13 @@
 ---
 title: Processi asincroni
-description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.'
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # Operazioni asincrone {#asynchronous-operations}
 
@@ -145,8 +144,8 @@ Quando il numero di riferimenti o pagine da spostare supera la soglia impostata,
 >
 >* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
 >* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
->* [Configura e-mail in  Experience Manager](/help/sites-administering/notification.md).
->* [Importare i metadati](/help/assets/metadata.md#import-metadata) delle risorse.
->* [Esportare i metadati](/help/assets/metadata.md#export-metadata) delle risorse.
+>* [Configurare l’e-mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Importare i metadati delle risorse](/help/assets/metadata.md#import-metadata).
+>* [Esportare i metadati delle risorse](/help/assets/metadata.md#export-metadata).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).
 

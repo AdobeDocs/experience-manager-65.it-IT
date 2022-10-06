@@ -183,7 +183,6 @@ La `cq:OwnerTaggable` mixin, che eredita da `cq:Taggable`, indica che il contenu
 >* pagine ( `cq:Page`) dove `jcr:content`il nodo è di tipo `cq:PageContent` che include `cq:Taggable` mixin.
 >
 >* risorse ( `cq:Asset`) dove `jcr:content/metadata` il nodo ha sempre `cq:Taggable` mixin.
-
 >
 
 
@@ -335,7 +334,7 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` (nel caso in cui `/etc/tags` viene rilevato nel valore).
+Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` percorsi (nel caso in cui `/etc/tags` viene rilevato nel valore).
 
 ### Se l’istanza AEM aggiornata viene eseguita nell’interfaccia classica {#upgraded-instance-runs-classic-ui}
 

@@ -1,8 +1,8 @@
 ---
 title: Componenti
-seo-title: Componenti
+seo-title: Components
 description: AEM viene fornito con diversi componenti che offrono funzionalità complete per gli autori di siti web
-seo-description: AEM viene fornito con diversi componenti che offrono funzionalità complete per gli autori di siti web
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '429'
 ht-degree: 92%
 
 ---
@@ -52,17 +51,17 @@ I componenti sono ordinati in base alle varie categorie, o gruppi di componenti.
 
 ## Panoramica di tutti i componenti {#overview-of-all-components}
 
-La [Console componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti che vengono forniti con l’installazione AEM. È possibile visualizzare le informazioni principali sui singoli componenti e sul loro utilizzo.
+La [Console componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti che vengono forniti con l’installazione AEM. Puoi visualizzare le informazioni principali sui singoli componenti e sul relativo utilizzo.
 
-## Componenti: principali aree  {#components-major-areas}
+## Componenti: principali aree {#components-major-areas}
 
 Le seguenti pagine forniscono collegamenti ad alcune informazioni aggiuntive importanti sui componenti:
 
 * [Componenti principali](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html): i componenti principali offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando viene creato un [sito della community](/help/communities/overview.md).
+* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando un [Sito community](/help/communities/overview.md) viene creato.
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - La funzionalità eCommerce di AEM include anche una serie di componenti. L’utilizzo effettivo può dipendere dal motore di e-commerce utilizzato.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - La funzionalità eCommerce di AEM include anche una serie di componenti. L’utilizzo effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ### Configurazione dei componenti {#configuring-components}
 

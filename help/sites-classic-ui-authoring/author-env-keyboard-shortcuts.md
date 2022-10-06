@@ -1,24 +1,23 @@
 ---
-title: 'Scelte rapide da tastiera per le console  '
-seo-title: 'Scelte rapide da tastiera per le console  '
+title: Scelte rapide da tastiera per le console
+seo-title: Keyboard Shortcuts for Consoles
 description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la modifica delle pagine.
-seo-description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la modifica delle pagine.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '114'
 ht-degree: 100%
 
 ---
 
-
-# Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
+# Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
 
 AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
@@ -30,7 +29,6 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 >
 >* Mac: **Comando**+**clic** sui componenti richiesti.
 >
-
 
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}

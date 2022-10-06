@@ -1,8 +1,8 @@
 ---
 title: Assemblaggio di più frammenti XDP
-seo-title: Assemblaggio di più frammenti XDP
+seo-title: Assembling Multiple XDP Fragments
 description: Assembla più frammenti XDP in un singolo documento XDP utilizzando l’API Java e l’API del servizio Web.
-seo-description: Assembla più frammenti XDP in un singolo documento XDP utilizzando l’API Java e l’API del servizio Web.
+seo-description: Assemble multiple XDP fragments into a single XDP document using the Java API and Web Service API.
 uuid: 0e35ff85-ff40-4878-ae31-aa8da75bd3ec
 contentOwner: admin
 content-type: reference
@@ -12,26 +12,25 @@ topic-tags: operations
 discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
 
-
 # Assemblaggio di più frammenti XDP{#assembling-multiple-xdp-fragments}
 
-È possibile assemblare più frammenti XDP in un unico documento XDP. Ad esempio, si considerino frammenti XDP in cui ogni file XDP contiene uno o più sottomoduli utilizzati per creare un modulo di integrità. L&#39;illustrazione seguente mostra la vista struttura (rappresenta il file tuc018_template_flowed.xdp utilizzato in *Assembling multiple XDP fragments* quick start):
+È possibile assemblare più frammenti XDP in un unico documento XDP. Ad esempio, si considerino frammenti XDP in cui ogni file XDP contiene uno o più sottomoduli utilizzati per creare un modulo di integrità. La figura seguente mostra la vista struttura (rappresenta il file tuc018_template_flowed.xdp utilizzato nel *Assemblaggio di più frammenti XDP* avvio rapido):
 
 ![am_am_forma](assets/am_am_forma.png)
 
-La figura seguente mostra la sezione paziente (rappresenta il file tuc018_contact.xdp utilizzato nel *assemblaggio di più frammenti XDP* avvio rapido):
+La figura seguente mostra la sezione paziente (rappresenta il file tuc018_contact.xdp utilizzato nel *Assemblaggio di più frammenti XDP* avvio rapido):
 
 ![am_am_formb](assets/am_am_formb.png)
 
-L&#39;illustrazione seguente mostra la sezione salute paziente (rappresenta il file tuc018_paziente.xdp utilizzato nel *assemblaggio di più frammenti XDP* avvio rapido):
+La figura seguente mostra la sezione salute paziente (rappresenta il file tuc018_paziente.xdp utilizzato nel *Assemblaggio di più frammenti XDP* avvio rapido):
 
 ![am_am_formc](assets/am_am_formc.png)
 
@@ -54,7 +53,7 @@ Il seguente documento DDX assembla più frammenti XDP in un documento XDP.
  </DDX>
 ```
 
-Il documento DDX contiene un tag XDP `result` che specifica il nome del risultato. In questa situazione, il valore è `tuc018result.xdp`. Questo valore è riportato nella logica dell&#39;applicazione utilizzata per recuperare il documento XDP dopo che il servizio Assembler restituisce il risultato. Ad esempio, considera la seguente logica di applicazione Java utilizzata per recuperare il documento XDP assemblato (notare che il valore è bloccato):
+Il documento DDX contiene un file XDP `result` che specifica il nome del risultato. In questa situazione, il valore è `tuc018result.xdp`. Questo valore è riportato nella logica dell&#39;applicazione utilizzata per recuperare il documento XDP dopo che il servizio Assembler restituisce il risultato. Ad esempio, considera la seguente logica di applicazione Java utilizzata per recuperare il documento XDP assemblato (notare che il valore è bloccato):
 
 ```java
  //Iterate through the map object to retrieve the result XDP document
@@ -75,9 +74,9 @@ Il documento DDX contiene un tag XDP `result` che specifica il nome del risultat
  }
 ```
 
-Il tag `XDP source` specifica il file XDP che rappresenta un documento XDP completo che può essere utilizzato come contenitore per aggiungere frammenti XDP o come uno dei vari documenti che vengono aggiunti insieme in ordine. In questa situazione, il documento XDP viene utilizzato solo come contenitore (la prima illustrazione mostrata in *Assembling Multiple XDP Fragments*). In altre parole, gli altri file XDP vengono inseriti all’interno del contenitore XDP.
+La `XDP source` tag specifica il file XDP che rappresenta un documento XDP completo che può essere utilizzato come contenitore per aggiungere frammenti XDP o come uno dei vari documenti che vengono aggiunti insieme in ordine. In questa situazione, il documento XDP viene utilizzato solo come contenitore (la prima illustrazione mostrata in *Assemblaggio di più frammenti XDP*). In altre parole, gli altri file XDP vengono inseriti all’interno del contenitore XDP.
 
-Per ciascun sottomodulo, è possibile aggiungere un elemento `XDPContent` (questo elemento è facoltativo). Nell’esempio precedente, si noti che sono presenti tre sottomoduli: `subPatientContact`, `subPatientPhysical` e `subPatientHealth`. Sia il sottomodulo `subPatientPhysical` che il sottomodulo `subPatientHealth` si trovano nello stesso file XDP, tuc018_paziente.xdp. L’elemento frammento specifica il nome del sottomodulo, come definito in Designer.
+Per ciascun sottomodulo è possibile aggiungere un `XDPContent` (questo elemento è facoltativo). Nell’esempio precedente, si noti che sono presenti tre sottomoduli: `subPatientContact`, `subPatientPhysical`e `subPatientHealth`. Entrambi i `subPatientPhysical` sottomodulo e `subPatientHealth` i sottomoduli si trovano nello stesso file XDP, tuc018_paziente.xdp. L’elemento frammento specifica il nome del sottomodulo, come definito in Designer.
 
 >[!NOTE]
 >
@@ -85,14 +84,14 @@ Per ciascun sottomodulo, è possibile aggiungere un elemento `XDPContent` (quest
 
 >[!NOTE]
 >
->Per ulteriori informazioni su un documento DDX, vedere [Servizio Assembler e Riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Per ulteriori informazioni su un documento DDX, consulta [Servizio di assemblaggio e riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
 Per assemblare più frammenti XDP, esegui le seguenti operazioni:
 
 1. Includi file di progetto.
-1. Creare un client Assembler PDF.
+1. Creare un client PDF Assembler.
 1. Fai riferimento a un documento DDX esistente.
 1. Fai riferimento ai documenti XDP.
 1. Impostare le opzioni di esecuzione.
@@ -111,23 +110,23 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-**Creare un client Assembler PDF**
+**Creare un client PDF Assembler**
 
 Prima di eseguire un&#39;operazione Assembler a livello di programmazione, creare un client di servizio Assembler.
 
 **Riferimento a un documento DDX esistente**
 
-Per assemblare più documenti XDP è necessario fare riferimento a un documento DDX. Il documento DDX deve contenere elementi `XDP result`, `XDP source` e `XDPContent`.
+Per assemblare più documenti XDP è necessario fare riferimento a un documento DDX. Il documento DDX deve contenere `XDP result`, `XDP source`e `XDPContent` elementi.
 
 **Riferimento ai documenti XDP**
 
-Per assemblare più documenti XDP, fare riferimento a tutti i file XDP utilizzati per assemblare il documento XDP risultante. Assicurarsi che il nome del sottomodulo contenuto nel documento XDP a cui fa riferimento l&#39;attributo `source` sia specificato nell&#39;attributo `fragment`. Un sottomodulo è definito in Designer. Ad esempio, considerare il seguente XML.
+Per assemblare più documenti XDP, fare riferimento a tutti i file XDP utilizzati per assemblare il documento XDP risultante. Assicurarsi che il nome del sottomodulo contenuto nel documento XDP a cui fa riferimento il `source` è specificato nel `fragment` attributo. Un sottomodulo è definito in Designer. Ad esempio, considerare il seguente XML.
 
 ```xml
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-Il sottomodulo *subPatientContact* deve trovarsi nel file XDP denominato *tuc018_contact.xdp*.
+Il sottomodulo denominato *subPatientContact* deve trovarsi nel file XDP denominato *tuc018_contact.xdp*.
 
 **Impostare le opzioni di esecuzione**
 
@@ -135,7 +134,7 @@ Il sottomodulo *subPatientContact* deve trovarsi nel file XDP denominato *tuc018
 
 **Assemblare i più documenti XDP**
 
-Per assemblare più file XDP, chiama l&#39;operazione `invokeDDX`. Il servizio Assembler restituisce il documento XDP assemblato all&#39;interno di un oggetto raccolta.
+Per assemblare più file XDP, chiama il `invokeDDX` funzionamento. Il servizio Assembler restituisce il documento XDP assemblato all&#39;interno di un oggetto raccolta.
 
 **Recupera il documento XDP assemblato**
 
@@ -151,11 +150,11 @@ All&#39;interno di un oggetto raccolta viene restituito un documento XDP assembl
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Assemblaggio programmatico di documenti PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)
+[Assemblaggio di documenti PDF a livello di programmazione](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)
 
 [Creazione di documenti PDF tramite frammenti](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-## Assemblare più frammenti XDP utilizzando l&#39;API Java {#assemble-multiple-xdp-fragments-using-the-java-api}
+## Assemblare più frammenti XDP utilizzando l’API Java {#assemble-multiple-xdp-fragments-using-the-java-api}
 
 Assemblare più frammenti XDP utilizzando l&#39;API del servizio Assembler (Java):
 
@@ -163,56 +162,56 @@ Assemblare più frammenti XDP utilizzando l&#39;API del servizio Assembler (Java
 
    Includi file JAR client, come adobe-assembler-client.jar, nel percorso di classe del progetto Java.
 
-1. Creare un client Assembler PDF.
+1. Creare un client PDF Assembler.
 
-   * Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione.
-   * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
+   * Crea un `ServiceClientFactory` oggetto contenente le proprietà di connessione.
+   * Crea un `AssemblerServiceClient` utilizzando il relativo costruttore e passando `ServiceClientFactory` oggetto.
 
 1. Fai riferimento a un documento DDX esistente.
 
-   * Creare un oggetto `java.io.FileInputStream` che rappresenta il documento DDX utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del file DDX.
-   * Creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e passando l&#39;oggetto `java.io.FileInputStream`.
+   * Crea un `java.io.FileInputStream` oggetto che rappresenta il documento DDX utilizzando il relativo costruttore e passando un valore di stringa che specifica la posizione del file DDX.
+   * Crea un `com.adobe.idp.Document` utilizzando il relativo costruttore e passando `java.io.FileInputStream` oggetto.
 
 1. Fai riferimento ai documenti XDP.
 
-   * Creare un oggetto `java.util.Map` utilizzato per memorizzare i documenti XDP di input utilizzando un costruttore `HashMap`.
-   * Crea un oggetto `com.adobe.idp.Document` e passa l&#39;oggetto `java.io.FileInputStream` che contiene il file XDP di input (ripeti questa attività per ogni file XDP).
-   * Aggiungere una voce all&#39;oggetto `java.util.Map` richiamando il relativo metodo `put` e passando i seguenti argomenti:
+   * Crea un `java.util.Map` oggetto utilizzato per memorizzare i documenti XDP di input utilizzando un `HashMap` costruttore.
+   * Crea un `com.adobe.idp.Document` e passare `java.io.FileInputStream` oggetto che contiene il file XDP di input (ripetere questa attività per ogni file XDP).
+   * Aggiungi una voce al `java.util.Map` richiamandone l&#39;oggetto `put` e passare gli argomenti seguenti:
 
-      * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento `source` specificato nel documento DDX (ripeti questa attività per ogni file XDP).
-      * Un oggetto `com.adobe.idp.Document` contenente il documento XDP che corrisponde all&#39;elemento `source` (ripeti questa attività per ogni file XDP).
+      * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al `source` valore dell&#39;elemento specificato nel documento DDX (ripetere questa attività per ogni file XDP).
+      * A `com.adobe.idp.Document` oggetto contenente il documento XDP corrispondente al `source` (ripeti questa attività per ogni file XDP).
 
 1. Impostare le opzioni di esecuzione.
 
-   * Creare un oggetto `AssemblerOptionSpec` che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di esecuzione per soddisfare i requisiti aziendali richiamando un metodo appartenente all&#39;oggetto `AssemblerOptionSpec`. Ad esempio, per dare istruzioni al servizio Assembler di continuare a elaborare un processo quando si verifica un errore, richiamare il metodo `setFailOnError` dell&#39;oggetto `AssemblerOptionSpec` e passare `false`.
+   * Crea un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
+   * Impostare le opzioni di esecuzione per soddisfare i requisiti aziendali richiamando un metodo che appartiene al `AssemblerOptionSpec` oggetto. Ad esempio, per dare istruzioni al servizio Assembler di continuare a elaborare un processo quando si verifica un errore, richiama il `AssemblerOptionSpec` dell’oggetto `setFailOnError` metodo e passaggio `false`.
 
 1. Assembla i documenti XDP multipli.
 
-   Richiama il metodo `invokeDDX` dell&#39;oggetto `AssemblerServiceClient` e passa i seguenti valori obbligatori:
+   Richiama il `AssemblerServiceClient` dell’oggetto `invokeDDX` e trasmettere i seguenti valori richiesti:
 
-   * Un oggetto `com.adobe.idp.Document` che rappresenta il documento DDX da utilizzare
-   * Un oggetto `java.util.Map` che contiene i file XDP di input
-   * Un oggetto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` che specifica le opzioni di esecuzione, incluso il font predefinito e il livello di log del processo
+   * A `com.adobe.idp.Document` oggetto che rappresenta il documento DDX da utilizzare
+   * A `java.util.Map` oggetto che contiene i file XDP di input
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il carattere predefinito e il livello del registro di lavoro
 
-   Il metodo `invokeDDX` restituisce un oggetto `com.adobe.livecycle.assembler.client.AssemblerResult` contenente il documento XDP assemblato.
+   La `invokeDDX` restituisce un `com.adobe.livecycle.assembler.client.AssemblerResult` oggetto contenente il documento XDP assemblato.
 
 1. Recupera il documento XDP assemblato.
 
    Per ottenere il documento XDP assemblato, eseguire le operazioni seguenti:
 
-   * Richiama il metodo `getDocuments` dell&#39;oggetto `AssemblerResult`. Questo metodo restituisce un oggetto `java.util.Map`.
-   * Iterare l&#39;oggetto `java.util.Map` fino a trovare l&#39;oggetto `com.adobe.idp.Document` risultante.
-   * Richiamare il metodo `copyToFile` dell&#39;oggetto `com.adobe.idp.Document` per estrarre il documento XDP assemblato.
+   * Richiama il `AssemblerResult` dell’oggetto `getDocuments` metodo . Questo metodo restituisce un `java.util.Map` oggetto.
+   * Itera attraverso il `java.util.Map` finché non trovi il risultato `com.adobe.idp.Document` oggetto.
+   * Richiama il `com.adobe.idp.Document` dell’oggetto `copyToFile` metodo per estrarre il documento XDP assemblato.
 
 **Consulta anche**
 
-[Assemblaggio di più ](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[frammenti XDP Avvio rapido (modalità SOAP): Assemblaggio di più frammenti XDP utilizzando Java ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[APIInclusi ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[file libreria Java AEM FormsImpostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Assemblaggio di più frammenti XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Avvio rapido (modalità SOAP): Assemblaggio di più frammenti XDP utilizzando l’API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Assemblare più frammenti XDP utilizzando l&#39;API del servizio Web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
+## Assemblare più frammenti XDP utilizzando l’API del servizio Web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
 Assemblare più frammenti XDP utilizzando l&#39;API del servizio Assembler (servizio Web):
 
@@ -226,66 +225,66 @@ Assemblare più frammenti XDP utilizzando l&#39;API del servizio Assembler (serv
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l&#39;indirizzo IP del server che ospita AEM Forms.
+   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
 
-1. Creare un client Assembler PDF.
+1. Creare un client PDF Assembler.
 
-   * Creare un oggetto `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `AssemblerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms, ad esempio `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version` . Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
-   * Crea un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `AssemblerServiceClient.Endpoint.Binding` . Imposta il valore restituito su `BasicHttpBinding`.
-   * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
+   * Crea un `AssemblerServiceClient` utilizzando il relativo costruttore predefinito.
+   * Crea un `AssemblerServiceClient.Endpoint.Address` utilizzando `System.ServiceModel.EndpointAddress` costruttore. Passa un valore stringa che specifica il WSDL al servizio AEM Forms, ad esempio `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare il `lc_version` attributo. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
+   * Crea un `System.ServiceModel.BasicHttpBinding` ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo . Imposta il valore restituito su `BasicHttpBinding`.
+   * Imposta la `System.ServiceModel.BasicHttpBinding` dell’oggetto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegna il nome utente del modulo di AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName` .
-      * Assegna il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Assegnare il nome utente dei moduli di AEM al `AssemblerServiceClient.ClientCredentials.UserName.UserName` campo .
+      * Assegna il valore della password corrispondente al `AssemblerServiceClient.ClientCredentials.UserName.Password`campo .
+      * Assegna `HttpClientCredentialType.Basic` valore costante nel `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo .
+      * Assegna `BasicHttpSecurityMode.TransportCredentialOnly` valore costante nel `BasicHttpBindingSecurity.Security.Mode`campo .
 
 1. Fai riferimento a un documento DDX esistente.
 
-   * Creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il documento DDX.
-   * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento DDX e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni dell&#39;array di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
-   * Compilare l’array di byte con i dati del flusso richiamando il metodo `Read` dell’oggetto `System.IO.FileStream`. Passa la matrice byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Compilare l&#39;oggetto `BLOB` assegnando la relativa proprietà `MTOM` con il contenuto dell&#39;array di byte.
+   * Crea un `BLOB` utilizzando il relativo costruttore. La `BLOB` viene utilizzato per memorizzare il documento DDX.
+   * Crea un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento DDX e la modalità in cui aprire il file.
+   * Creare un array di byte che memorizza il contenuto del `System.IO.FileStream` oggetto. È possibile determinare le dimensioni dell&#39;array di byte ottenendo il `System.IO.FileStream` dell’oggetto `Length` proprietà.
+   * Compilare l&#39;array di byte con i dati del flusso richiamando il `System.IO.FileStream` dell’oggetto `Read` metodo . Passa la matrice byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Popolare `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto dell&#39;array di byte.
 
 1. Fai riferimento ai documenti XDP.
 
-   * Per ogni file XDP di input, creare un oggetto `BLOB` utilizzando il relativo costruttore. L&#39;oggetto `BLOB` viene utilizzato per memorizzare il file di input.
-   * Creare un oggetto `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file di input e la modalità di apertura del file.
-   * Creare una matrice di byte che memorizza il contenuto dell&#39;oggetto `System.IO.FileStream`. È possibile determinare le dimensioni dell&#39;array di byte ottenendo la proprietà `Length` dell&#39;oggetto `System.IO.FileStream`.
-   * Compilare l’array di byte con i dati del flusso richiamando il metodo `Read` dell’oggetto `System.IO.FileStream`. Passa la matrice byte, la posizione iniziale e la lunghezza del flusso da leggere.
-   * Compilare l&#39;oggetto `BLOB` assegnando il relativo campo `MTOM` con il contenuto dell&#39;array di byte.
-   * Creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType`. Questo oggetto raccolta viene utilizzato per memorizzare i file di input necessari per creare un documento XDP assemblato.
-   * Per ciascun file di input, creare un oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Assegna un valore stringa che rappresenta il nome della chiave al campo `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key`. Questo valore deve corrispondere al valore dell&#39;elemento specificato nel documento DDX. (Esegui questa operazione per ogni file XDP di input.)
-   * Assegna l&#39;oggetto `BLOB` che memorizza il file di input nel campo `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value`. (Esegui questa operazione per ogni file XDP di input.)
-   * Aggiungere l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType_Item` all&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. Richiama il metodo `Add` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType` e passa l&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType`. (Esegui questa operazione per ogni documento XDP di input.)
+   * Per ogni file XDP di input, crea un `BLOB` utilizzando il relativo costruttore. La `BLOB` viene utilizzato per memorizzare il file di input.
+   * Crea un `System.IO.FileStream` richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file di input e la modalità di apertura del file.
+   * Creare un array di byte che memorizza il contenuto del `System.IO.FileStream` oggetto. È possibile determinare le dimensioni dell&#39;array di byte ottenendo il `System.IO.FileStream` dell’oggetto `Length` proprietà.
+   * Compilare l&#39;array di byte con i dati del flusso richiamando il `System.IO.FileStream` dell’oggetto `Read` metodo . Passa la matrice byte, la posizione iniziale e la lunghezza del flusso da leggere.
+   * Popolare `BLOB` oggetto assegnando il relativo `MTOM` con il contenuto dell&#39;array di byte.
+   * Crea un `MyMapOf_xsd_string_To_xsd_anyType` oggetto. Questo oggetto raccolta viene utilizzato per memorizzare i file di input necessari per creare un documento XDP assemblato.
+   * Per ogni file di input, crea un `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto.
+   * Assegna un valore stringa che rappresenta il nome della chiave al `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `key` campo . Questo valore deve corrispondere al valore dell&#39;elemento specificato nel documento DDX. (Esegui questa operazione per ogni file XDP di input.)
+   * Assegna `BLOB` oggetto che memorizza il file di input nel `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `value` campo . (Esegui questa operazione per ogni file XDP di input.)
+   * Aggiungi il `MyMapOf_xsd_string_To_xsd_anyType_Item` dell&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType` oggetto. Richiama il `MyMapOf_xsd_string_To_xsd_anyType` dell&#39;oggetto `Add` e passare il `MyMapOf_xsd_string_To_xsd_anyType` oggetto. (Esegui questa operazione per ogni documento XDP di input.)
 
 1. Impostare le opzioni di esecuzione.
 
-   * Creare un oggetto `AssemblerOptionSpec` che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di esecuzione per soddisfare i requisiti aziendali assegnando un valore a un membro dati appartenente all&#39;oggetto `AssemblerOptionSpec`. Ad esempio, per dare istruzioni al servizio Assembler di continuare a elaborare un processo in caso di errore, assegna `false` al membro dati `AssemblerOptionSpec` dell&#39;oggetto `failOnError`.
+   * Crea un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
+   * Impostare le opzioni di esecuzione per soddisfare i requisiti aziendali assegnando un valore a un membro dati che appartiene al `AssemblerOptionSpec` oggetto. Ad esempio, per dare istruzioni al servizio Assembler di continuare a elaborare un processo quando si verifica un errore, assegnare `false` al `AssemblerOptionSpec` dell’oggetto `failOnError` membro dati.
 
 1. Assembla i documenti XDP multipli.
 
-   Richiama il metodo `invokeDDX` dell&#39;oggetto `AssemblerServiceClient` e passa i seguenti valori:
+   Richiama il `AssemblerServiceClient` dell’oggetto `invokeDDX` e passare i seguenti valori:
 
-   * Un oggetto `BLOB` che rappresenta il documento DDX
-   * L&#39;oggetto `MyMapOf_xsd_string_To_xsd_anyType` che contiene i file richiesti
-   * Un oggetto `AssemblerOptionSpec` che specifica le opzioni di esecuzione
+   * A `BLOB` oggetto che rappresenta il documento DDX
+   * La `MyMapOf_xsd_string_To_xsd_anyType` oggetto contenente i file richiesti
+   * Un `AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione
 
-   Il metodo `invokeDDX` restituisce un oggetto `AssemblerResult` contenente i risultati del processo ed eventuali eccezioni.
+   La `invokeDDX` restituisce un `AssemblerResult` oggetto contenente i risultati del processo ed eventuali eccezioni.
 
 1. Recupera il documento XDP assemblato.
 
    Per ottenere il documento XDP appena creato, esegui le seguenti operazioni:
 
-   * Accedere al campo `documents` dell&#39;oggetto `AssemblerResult`, che è un oggetto `Map` che contiene i documenti PDF risultanti.
-   * Iterare attraverso l&#39;oggetto `Map` per ottenere ogni documento risultante. Quindi, eseguire il cast di `value` del membro della matrice su un `BLOB`.
-   * Estrarre i dati binari che rappresentano il documento PDF accedendo alla proprietà `MTOM` dell’oggetto `BLOB` corrispondente. Restituisce una matrice di byte che è possibile scrivere in un file XDP.
+   * Accedere al `AssemblerResult` dell’oggetto `documents` un campo `Map` oggetto contenente i documenti PDF risultanti.
+   * Itera attraverso il `Map` per ottenere ogni documento risultante. Quindi, eseguire il cast del membro dell&#39;array `value` a `BLOB`.
+   * Estrarre i dati binari che rappresentano il documento PDF accedendo ai relativi `BLOB` dell’oggetto `MTOM` proprietà. Restituisce una matrice di byte che è possibile scrivere in un file XDP.
 
 **Consulta anche**
 
-[Assemblaggio di più ](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[frammenti XDPrichiamo di AEM Forms utilizzando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Assemblaggio di più frammenti XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Richiamo di AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

@@ -1,22 +1,21 @@
 ---
 title: Guida rapida all’API di Acrobat Reader DC extensions ServiceJava (SOAP)
-seo-title: Guida rapida all’API di Acrobat Reader DC extensions ServiceJava (SOAP)
-description: Utilizzare il servizio Acrobat Reader DC Extensions per applicare diritti di utilizzo a un documento PDF, rimuovere i diritti di utilizzo dai documenti PDF e recuperare informazioni sulle credenziali utilizzate per applicare diritti di utilizzo a un documento PDF abilitato tramite diritti denominato LoanUsageRights.pdf.
-seo-description: Utilizzare il servizio Acrobat Reader DC Extensions per applicare diritti di utilizzo a un documento PDF, rimuovere i diritti di utilizzo dai documenti PDF e recuperare informazioni sulle credenziali utilizzate per applicare diritti di utilizzo a un documento PDF abilitato tramite diritti denominato LoanUsageRights.pdf.
+seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
+description: Utilizzare il servizio Acrobat Reader DC Extensions per applicare i diritti di utilizzo a un documento PDF, rimuovere i diritti di utilizzo dai documenti PDF e recuperare informazioni sulle credenziali utilizzate per applicare i diritti di utilizzo a un documento PDF con diritti abilitati denominato LoanUsageRights.pdf.
+seo-description: Use the  Acrobat Reader DC Extensions service to apply usage rights to a PDF document, remove usage rights from PDF documents, and retrieve  information about the credential that is used to apply usage-rights to a rights-enabled PDF document named LoanUsageRights.pdf.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
-
 
 # Guida rapida all’API di Acrobat Reader DC extensions ServiceJava (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
@@ -32,11 +31,11 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP):applicazione dei diritti di utilizzo tramite l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-Il seguente esempio di codice Java applica i diritti di utilizzo a un documento PDF denominato *Loan.pdf*. Il documento PDF abilitato per i diritti viene salvato come file PDF denominato *LoanUsageRights.pdf*. A questo documento PDF vengono applicati i seguenti diritti di utilizzo: `enabledComments`, `enabledFormFillIn` e `enabledDigitalSignatures`. (Vedere [Applicazione dei diritti di utilizzo ai documenti PDF](/help/forms/developing/assigning-usage-rights.md).)
+Il seguente esempio di codice Java applica i diritti di utilizzo a un documento PDF denominato *Loan.pdf*. Il documento PDF abilitato per i diritti viene salvato come file PDF denominato *LoanUsageRights.pdf*. Al documento PDF vengono applicati i seguenti diritti di utilizzo: `enabledComments`, `enabledFormFillIn`e `enabledDigitalSignatures`. (Vedi [Applicazione dei diritti di utilizzo ai documenti PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -146,9 +145,9 @@ Il seguente esempio di codice Java applica i diritti di utilizzo a un documento 
   
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione dei diritti di utilizzo da un documento PDF tramite l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di diritti di utilizzo da un documento PDF tramite l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente vengono rimossi i diritti di utilizzo da un documento PDF abilitato per i diritti denominato *LoanUsageRights.pdf*. (Vedere [Rimozione dei diritti di utilizzo dai documenti PDF](/help/forms/developing/assigning-usage-rights.md).)
+Il seguente esempio di codice Java rimuove i diritti di utilizzo da un documento PDF abilitato per i diritti denominato *LoanUsageRights.pdf*. (Vedi [Rimozione dei diritti di utilizzo dai documenti PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -246,9 +245,9 @@ Nell&#39;esempio di codice Java seguente vengono rimossi i diritti di utilizzo d
  
 ```
 
-## Avvio rapido (modalità SOAP): Recupero delle informazioni sulle credenziali tramite l&#39;API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## Avvio rapido (modalità SOAP): Recupero delle informazioni sulle credenziali tramite l’API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente vengono recuperate le informazioni sulle credenziali utilizzate per applicare diritti di utilizzo a un documento PDF abilitato per i diritti denominato *LoanUsageRights.pdf*. (Vedere [Recupero di informazioni sulle credenziali](/help/forms/developing/assigning-usage-rights.md).)
+Nell&#39;esempio di codice Java seguente vengono recuperate le informazioni sulle credenziali utilizzate per applicare diritti di utilizzo a un documento PDF abilitato per i diritti denominato *LoanUsageRights.pdf*. (Vedi [Recupero delle informazioni sulle credenziali](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -356,4 +355,3 @@ Nell&#39;esempio di codice Java seguente vengono recuperate le informazioni sull
  } 
  
 ```
-

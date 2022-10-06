@@ -1,8 +1,8 @@
 ---
 title: Introduzione ad AEM Forms
-seo-title: Introduzione ad AEM Forms
+seo-title: Introduction to AEM Forms
 description: Con Adobe Experience Manager Forms, gli utenti aziendali possono integrare moduli coinvolgenti, reattivi e adattivi nei siti web e mobili, semplificando il processo di iscrizione digitale e aumentando i tassi di conversione dei clienti.
-seo-description: Con Adobe Experience Manager Forms, gli utenti aziendali possono integrare moduli coinvolgenti, reattivi e adattivi nei siti web e mobili, semplificando il processo di iscrizione digitale e aumentando i tassi di conversione dei clienti.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,32 +10,31 @@ topic-tags: introduction
 discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '891'
 ht-degree: 3%
 
 ---
 
-
 # Introduzione ad AEM Forms{#introduction-to-aem-forms}
 
-Per informazioni sulle funzioni e sui miglioramenti più recenti in AEM Forms, consulta [Novità in AEM Forms](../../forms/using/whats-new.md).
+Per informazioni sulle funzioni e sui miglioramenti più recenti in AEM Forms, vedi [Novità di AEM Forms](../../forms/using/whats-new.md).
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrandosi con processi di back-end, regole aziendali e dati.
+Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, da integrare con processi di back-end, regole aziendali e dati.
 
 AEM Forms combina le attività di authoring, gestione e pubblicazione dei moduli con funzionalità di gestione della corrispondenza, sicurezza dei documenti e analisi integrata, al fine di creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi e gli errori cartacei e migliorando al contempo l&#39;efficienza.
 
 Nelle grandi aziende, i moduli vengono spesso creati una sola volta e riutilizzati copiando in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili.
 
-AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche moduli XFA, PDF forms e risorse correlate. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
+AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche moduli XFA, PDF forms e risorse correlate. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
-### Funzionalità chiave {#key-capabilities}
+### Funzionalità principali {#key-capabilities}
 
 In sintesi, AEM Forms offre potenti funzioni di gestione dei moduli, come le seguenti, che riducono i processi manuali e aumentano la soddisfazione del cliente.
 
@@ -51,7 +50,7 @@ In sintesi, AEM Forms offre potenti funzioni di gestione dei moduli, come le seg
 
 AEM Forms consente di estendere moduli nuovi ed esistenti per creare:
 
-* HTML e PDF forms impaginati e perfetti per i pixel, che assomigliano quasi a carta, oppure
+* HTML e PDF forms impaginati e perfetti in pixel, quasi come carta, oppure
 * moduli adattivi per il rendering automatico del dispositivo e del browser di un utente.
 
 **PDF forms**
@@ -60,7 +59,7 @@ AEM Forms consente di estendere moduli nuovi ed esistenti per creare:
 
 **Moduli HTML**
 
-I moduli basati su browser HTML5 possono essere visualizzati sia su dispositivi mobili che sui browser desktop. È possibile firmare elettronicamente i moduli HTML utilizzando i servizi Scribble o eSign.
+I moduli basati su browser HTML5 possono essere visualizzati sia sui dispositivi mobili che sui browser desktop. È possibile firmare elettronicamente i moduli di HTML utilizzando i servizi Scribble o eSign.
 
 **Moduli adattivi**
 
@@ -77,7 +76,7 @@ Tutti i tipi di modulo supportano le seguenti funzioni:
 * Progettazione e controllo dell’accessibilità
 * Possibilità di salvare i moduli sul lato server
 * Supporto per gli allegati di file
-* Integrazione con l’area di lavoro HTML per l’acquisizione dei dati
+* Integrazione con HTML Workspace per l’acquisizione dei dati
 
 ## Raccolta dati offline {#offline-data-collection}
 
@@ -89,11 +88,11 @@ L’acquisizione dei dati offline e la successiva sincronizzazione dei dati onli
 
 **Vantaggi dell’utilizzo di Forms Workspace per la raccolta dati offline**
 
-* Applicazione HTML Workspace di facile utilizzo per l&#39;assegnazione e il tracciamento delle attività
+* Applicazione workspace HTML facile da usare per l&#39;assegnazione e il tracciamento delle attività
 * Ambiente di progettazione del flusso di lavoro con trascinamento della selezione
 * Connettori per la gestione dei contenuti aziendali (ECM)
 * Supporto di standard aperti, inclusi XML e SOAP, per la connessione dei dati dei moduli con i sistemi aziendali
-* I rapporti HTML preconfigurati controllano i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI, Key Performance Indicators)
+* I rapporti predefiniti di HTML controllano i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI, Key Performance Indicators)
 * Dashboard personalizzabili per informazioni in tempo reale sulle operazioni aziendali
 * API per la connessione con strumenti di reporting di terze parti
 

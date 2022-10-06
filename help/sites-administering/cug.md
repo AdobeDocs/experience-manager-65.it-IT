@@ -1,8 +1,8 @@
 ---
 title: Creazione di un gruppo utenti chiuso
-seo-title: Creazione di un gruppo utenti chiuso
+seo-title: Creating a Closed User Group
 description: Scopri come creare un gruppo utenti chiuso.
-seo-description: Scopri come creare un gruppo utenti chiuso.
+seo-description: Learn how to create a Closed User Group.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-translation-type: tm+mt
 source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '795'
+ht-degree: 4%
 
 ---
 
@@ -27,10 +26,10 @@ Per configurare tale area all’interno del sito web:
 
 * [creare il gruppo utenti chiuso effettivo e assegnare i membri](#creating-the-user-group-to-be-used).
 
-* [applica questo gruppo alle ](#applying-your-closed-user-group-to-content-pages) pagine richieste e seleziona (o crea) la pagina di accesso da utilizzare dai membri del CUG; specificato anche quando si applica un gruppo utenti chiuso a una pagina di contenuto.
+* [applica questo gruppo alle pagine richieste](#applying-your-closed-user-group-to-content-pages) e selezionare (o creare) la pagina di accesso da utilizzare per i membri del CUG; specificato anche quando si applica un gruppo utenti chiuso a una pagina di contenuto.
 
-* [crea un collegamento, di un modulo, ad almeno una pagina all’interno dell’area](#linking-to-the-realm) protetta, altrimenti non sarà visibile.
-* [configura il ](#configure-dispatcher-for-cugs) Dispatcherif in uso.
+* [creare un collegamento, di un modulo, ad almeno una pagina all&#39;interno dell&#39;area protetta](#linking-to-the-realm)altrimenti non sarà visibile.
+* [configurare il Dispatcher](#configure-dispatcher-for-cugs) se in uso.
 
 >[!CAUTION]
 >
@@ -40,33 +39,33 @@ Per configurare tale area all’interno del sito web:
 >
 >L’impatto dei CUG deve sempre essere considerato durante il test delle prestazioni.
 
-## Creazione del gruppo di utenti da utilizzare {#creating-the-user-group-to-be-used}
+## Creazione Del Gruppo Di Utenti Da Utilizzare {#creating-the-user-group-to-be-used}
 
 Per creare un gruppo utenti chiuso:
 
-1. Vai a **Strumenti - Sicurezza** dalla schermata iniziale AEM.
+1. Vai a **Strumenti - Sicurezza** dal AEM home screen.
 
    >[!NOTE]
    >
-   >Per informazioni complete sulla creazione e la configurazione di utenti e gruppi, consulta [Gestione di utenti e gruppi](/help/sites-administering/security.md#managing-users-and-groups) .
+   >Vedi [Gestione di utenti e gruppi](/help/sites-administering/security.md#managing-users-and-groups) per informazioni complete sulla creazione e la configurazione di utenti e gruppi.
 
-1. Seleziona la scheda **Gruppi** dalla schermata successiva.
+1. Seleziona la **Gruppi** scheda dalla schermata successiva.
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Premi il pulsante **Crea** nell&#39;angolo in alto a destra per creare un nuovo gruppo.
+1. Premere **Crea** nell’angolo in alto a destra, per creare un nuovo gruppo.
 1. Assegnare un nome al nuovo gruppo; ad esempio, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. Vai alla scheda **Membri** e assegna gli utenti richiesti a questo gruppo.
+1. Vai a **Membri** e assegna gli utenti richiesti a questo gruppo.
 
    ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. Attivare gli utenti assegnati al gruppo utenti chiuso; in questo caso, tutti i membri di `cug_access`.
+1. Attivare gli utenti assegnati al gruppo utenti chiuso; in questo caso, tutti i membri `cug_access`.
 1. Attiva il gruppo di utenti chiusi in modo che sia disponibile nell&#39;ambiente di pubblicazione; in questo esempio, `cug_access`.
 
-## Applicazione del gruppo utenti chiuso alle pagine dei contenuti {#applying-your-closed-user-group-to-content-pages}
+## Applicazione Del Gruppo Di Utenti Chiuso Alle Pagine Dei Contenuti {#applying-your-closed-user-group-to-content-pages}
 
 Per applicare il CUG a una pagina:
 
@@ -75,33 +74,33 @@ Per applicare il CUG a una pagina:
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. Nella finestra seguente, vai alla scheda **Avanzate** .
-1. Scorri verso il basso e abilita la casella di controllo nella sezione **Autenticazione richiesta** .
+1. Nella finestra seguente, vai alla **Avanzate** scheda .
+1. Scorri verso il basso e abilita la casella di controllo nel **Autenticazione richiesta** sezione .
 
 1. Aggiungi il percorso di configurazione qui sotto, quindi premi Salva.
-1. Quindi, vai alla scheda **Autorizzazioni** e premi il pulsante **Modifica gruppo utenti chiuso** .
+1. Quindi, vai a **Autorizzazioni** premere il tasto **Modifica gruppo utenti chiuso** pulsante .
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
    >[NOTA!]
    >
-   > Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione di Live Copy.
+   > Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
    >
    > Per ulteriori informazioni, consulta [questa pagina](closed-user-groups.md#aem-livecopy).
 
-1. Cerca e aggiungi il tuo CUG nella finestra seguente - in questo caso aggiungi il gruppo denominato **cug_access**. Infine, premere **Save**.
-1. Fai clic su **Abilitato** per definire che questa pagina (e tutte le pagine figlie) appartiene a un CUG.
-1. Specificare la **pagina di accesso** che i membri del gruppo utilizzeranno; ad esempio:
+1. Cerca e aggiungi il tuo CUG nella finestra seguente - in questo caso aggiungi il gruppo denominato **cug_access**. Infine, premere **Salva**.
+1. Fai clic su **Abilitato** per definire che questa pagina (ed eventuali pagine figlie) appartenga a un CUG.
+1. Specifica la **Pagina di accesso** che i membri del gruppo utilizzino; ad esempio:
 
    `/content/geometrixx/en/toolbar/login.html`
 
    Questa opzione è facoltativa, se viene lasciata vuota, verrà utilizzata la pagina di accesso standard.
 
-1. Aggiungi i **Gruppi consentiti**. Utilizza + per aggiungere gruppi o - per rimuovere. Solo i membri di questi gruppi potranno accedere alle pagine e accedervi.
-1. Assegna un **realm** (un nome per i gruppi di pagine) se necessario. Lascia vuoto per usare il titolo della pagina.
-1. Fare clic su **OK** per salvare la specifica.
+1. Aggiungi il **Gruppi ammessi**. Utilizza + per aggiungere gruppi o - per rimuovere. Solo i membri di questi gruppi potranno accedere alle pagine e accedervi.
+1. Assegnare un **Realm** (un nome per i gruppi di pagine) se necessario. Lascia vuoto per usare il titolo della pagina.
+1. Fai clic su **OK** per salvare la specifica.
 
-Per informazioni sui profili nell’ambiente di pubblicazione e sui moduli per l’accesso e la disconnessione, consulta [Identity Management](/help/sites-administering/identity-management.md) .
+Vedi [Identity Management](/help/sites-administering/identity-management.md) per informazioni sui profili nell’ambiente di pubblicazione e per fornire moduli per l’accesso e la disconnessione.
 
 ## Collegamento Al Realm {#linking-to-the-realm}
 
@@ -117,9 +116,9 @@ Se utilizzi Dispatcher, devi definire una farm del Dispatcher con le seguenti pr
 * \sessionmanagement: vedi sotto.
 * [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Directory cache dedicata ai file a cui si applica il CUG.
 
-### Configurazione della gestione della sessione di Dispatcher per i gruppi di utenti chiusi {#configuring-dispatcher-session-management-for-cugs}
+### Configurazione della gestione delle sessioni di Dispatcher per i gruppi di utenti chiusi {#configuring-dispatcher-session-management-for-cugs}
 
-Configura la gestione delle sessioni [nel file dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l’accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
+Configura [gestione delle sessioni nel file dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l’accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
 
 ```xml
 /sessionmanagement
@@ -143,4 +142,4 @@ Configura la gestione delle sessioni [nel file dispatcher.any](https://helpx.ado
      }
    ```
 
-1. Impostare [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) su `0`.
+1. Imposta [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) a `0`.

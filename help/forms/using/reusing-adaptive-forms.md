@@ -1,21 +1,20 @@
 ---
 title: Riutilizzo dei moduli adattivi
-seo-title: Riutilizzo dei moduli adattivi
+seo-title: Reusing adaptive forms
 description: È possibile riutilizzare un modulo adattivo esistente per creare nuovi moduli adattivi.
-seo-description: È possibile riutilizzare un modulo adattivo esistente per creare nuovi moduli adattivi.
+seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # Riutilizzo dei moduli adattivi {#reusing-adaptive-forms}
 
@@ -31,7 +30,7 @@ Se si desidera utilizzare alcune delle proprietà di un modulo adattivo esistent
 
 Copia un modulo adattivo utilizzando uno dei seguenti approcci:
 
-1. Fai clic sull&#39;icona Copia ![aem6forms_copy](assets/aem6forms_copy.png) dalle azioni rapide.
+1. Fai clic su Copia ![aem6forms_copy](assets/aem6forms_copy.png) da Azioni rapide.
 
    >[!NOTE]
    >
@@ -39,7 +38,7 @@ Copia un modulo adattivo utilizzando uno dei seguenti approcci:
 
 1. Seleziona il modulo adattivo. Il processo di selezione è diverso per le diverse viste.
 
-   Se ti trovi nella vista a schede, passa alla modalità di selezione facendo clic sull’icona ![aem6forms_check-cerchio](assets/aem6forms_check-circle.png) e fai clic su tutti i moduli adattivi da copiare.
+   Se siete nella vista a schede, passate alla modalità di selezione facendo clic sulla selezione ![aem6forms_check-cerchio](assets/aem6forms_check-circle.png) e fai clic su tutti i moduli adattivi da copiare.
 
    Se ti trovi nella vista a elenco, fai clic sulle caselle di controllo di tutti i moduli adattivi per selezionarli.
 
@@ -47,17 +46,17 @@ Copia un modulo adattivo utilizzando uno dei seguenti approcci:
    >
    >Tutte le risorse selezionate devono essere moduli adattivi perché la funzionalità di copia e incolla è supportata solo per i moduli adattivi e tutte le risorse selezionate devono essere presenti nella stessa cartella.
 
-   Dopo aver selezionato le risorse, fai clic sull’icona copia ![aem6forms_copy](assets/aem6forms_copy.png) presente nella barra degli strumenti per copiare il modulo adattivo selezionato.
+   Dopo aver selezionato le risorse, fai clic sulla copia ![aem6forms_copy](assets/aem6forms_copy.png) presente nella barra degli strumenti per copiare il modulo adattivo selezionato.
 
 ### Incolla un modulo adattivo {#paste-an-adaptive-form}
 
-Facendo clic sull&#39;azione di copia si esce automaticamente dalla modalità di selezione e l&#39;icona Incolla ![aem6forms_Paste](assets/aem6forms_paste.png) diventa visibile. Ora vai al percorso della cartella desiderato e fai clic sull&#39;icona incolla ![aem6forms_Paste](assets/aem6forms_paste.png) per incollare il modulo adattivo copiato.
+Quando si fa clic sull’azione di copia, la modalità di selezione viene automaticamente chiusa e l’opzione incolla ![aem6forms_paste](assets/aem6forms_paste.png) icona visibile. Ora vai al percorso della cartella desiderato e fai clic su incolla ![aem6forms_paste](assets/aem6forms_paste.png) per incollare il modulo adattivo copiato.
 
 Se si incolla nella stessa cartella o in un altro file con lo stesso nome di nodo (con il quale è memorizzato nell&#39;archivio CRX) esiste in questa cartella di destinazione, viene aggiunto 1 al suffisso (ad esempio, myaf diventa myaf1 e se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
 
-Dopo aver fatto clic sull&#39;icona incolla ![aem6forms_Paste](assets/aem6forms_paste.png) , diventerà nuovamente nascosta. È possibile incollare una sola volta. Per creare nuovamente una copia della stessa risorsa, copiala nuovamente.
+Dopo aver fatto clic sul pulsante Incolla ![aem6forms_paste](assets/aem6forms_paste.png) icona, si nasconderà di nuovo. È possibile incollare una sola volta. Per creare nuovamente una copia della stessa risorsa, copiala nuovamente.
 
-### Modifica del contenuto del nuovo modulo adattivo {#change-contents-of-new-adaptive-form}
+### Modificare il contenuto del nuovo modulo adattivo {#change-contents-of-new-adaptive-form}
 
 Il contenuto di un modulo adattivo incollato può essere modificato utilizzando i seguenti approcci per renderlo diverso dal modulo copiato:
 
@@ -71,5 +70,4 @@ Il contenuto di un modulo adattivo incollato può essere modificato utilizzando 
 
 1. **Ripubblica:**
 
-   La risorsa incollata è diversa da quella copiata. Puoi pubblicarlo come nuova risorsa per renderlo disponibile agli utenti finali. Per informazioni su come pubblicare una risorsa, consulta [Pubblicazione e annullamento della pubblicazione di moduli](/help/forms/using/publishing-unpublishing-forms.md)
-
+   La risorsa incollata è diversa da quella copiata. Puoi pubblicarlo come nuova risorsa per renderlo disponibile agli utenti finali. Per informazioni su come pubblicare una risorsa, consulta [Pubblicazione e annullamento della pubblicazione dei moduli](/help/forms/using/publishing-unpublishing-forms.md)

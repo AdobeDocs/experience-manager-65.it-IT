@@ -1,8 +1,8 @@
 ---
 title: Utilizzo delle pagine web sulla sicurezza dei documenti
-seo-title: Utilizzo delle pagine web sulla sicurezza dei documenti
+seo-title: Using the document security webpages
 description: Scopri come accedere, navigare e utilizzare le pagine web sulla sicurezza dei documenti.
-seo-description: Scopri come accedere, navigare e utilizzare le pagine web sulla sicurezza dei documenti.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
@@ -10,22 +10,21 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
-
-# Utilizzo delle pagine Web relative alla protezione dei documenti {#using-the-document-security-webpages}
+# Utilizzo delle pagine web sulla sicurezza dei documenti {#using-the-document-security-webpages}
 
 Gli utenti e gli amministratori utilizzano le pagine web sulla sicurezza dei documenti per creare e gestire i criteri, gestire i documenti protetti da policy e monitorare gli eventi associati ai documenti protetti da policy. Gli amministratori utilizzano inoltre le pagine web per creare set di criteri e designare i coordinatori dei set di criteri, configurare le impostazioni predefinite per la protezione dei documenti, gestire la registrazione e gli account degli utenti invitati e monitorare e gestire gli eventi relativi a server, criteri, utenti e documenti.
 
 >[!NOTE]
 >
->Puoi anche accedere alla sicurezza dei documenti tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. (Vedere [Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>Puoi anche accedere alla sicurezza dei documenti tramite Acrobat e altre applicazioni client utilizzando il tuo account di accesso utente. (Vedi [Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni client](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Per aprire le pagine web, è necessario un browser e l’URL e le informazioni di accesso per la sicurezza dei documenti. L’URL per gli utenti è diverso dall’URL per gli amministratori.
 
@@ -86,7 +85,7 @@ Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibi
 
 ## Impostazione dell&#39;accesso alla protezione dei documenti dalle applicazioni client {#setting-up-access-to-document-security-from-client-applications}
 
-Le applicazioni client devono essere configurate per connettersi alla protezione dei documenti per proteggere i documenti, aprire documenti protetti da policy e connettersi alle pagine Web di protezione dei documenti. Per informazioni sulla configurazione della connessione all&#39;interno dell&#39;applicazione client, consulta la *Guida di Acrobat* o la *Guida di RightsManagementExtension* appropriata.
+Le applicazioni client devono essere configurate per connettersi alla protezione dei documenti per proteggere i documenti, aprire documenti protetti da policy e connettersi alle pagine Web di protezione dei documenti. Vedi *Guida di Acrobat* o *Guida di RightsManagementExtension* per informazioni sulla configurazione della connessione all&#39;interno dell&#39;applicazione client.
 
 La sicurezza dei documenti è accessibile tramite Secure Sockets Layer (SSL). È necessario installare il certificato del sito Web nell’archivio certificati in modo da poter accedere alla protezione dei documenti tramite le applicazioni client.
 
@@ -107,4 +106,3 @@ Disconnettiti quando hai finito di utilizzare le pagine web in modo da poter uti
 
 1. Nell’angolo in alto a destra della pagina, fai clic su Logout.
 1. Se nella pagina Logout viene visualizzato un messaggio, chiudi la finestra del browser per disconnetterti completamente. In caso contrario, puoi continuare a utilizzare il browser per altri scopi.
-

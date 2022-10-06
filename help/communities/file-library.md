@@ -1,8 +1,8 @@
 ---
 title: Funzione Libreria file
-seo-title: Funzione Libreria file
-description: La funzione Libreria file consente ai visitatori del sito che hanno effettuato l’accesso di caricare, gestire e scaricare i file
-seo-description: La funzione Libreria file consente ai visitatori del sito che hanno effettuato l’accesso di caricare, gestire e scaricare i file
+seo-title: File Library Feature
+description: La funzione Libreria file consente ai visitatori del sito con accesso di caricare, gestire e scaricare file
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,43 +10,42 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
+exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 9%
 
 ---
-
 
 # Funzione Libreria file{#file-library-feature}
 
 ## Introduzione {#introduction}
 
-La funzione di libreria dei file consente ai visitatori del sito che hanno effettuato l&#39;accesso (membri della community) di caricare, gestire e scaricare i file all&#39;interno del sito della community.
+La funzione di libreria dei file consente ai visitatori del sito che hanno effettuato l’accesso (membri della community) di caricare, gestire e scaricare file all’interno del sito della community.
 
-Questa sezione della documentazione descrive quanto segue:
+Questa sezione della documentazione descrive:
 
-* Aggiunta della funzione di libreria file a un sito AEM.
-* Impostazioni di configurazione per il componente `File Library`.
+* Aggiunta della funzionalità di libreria file a un sito AEM.
+* Impostazioni di configurazione per `File Library` componente.
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
-Per aggiungere un componente `File Library` a una pagina in modalità di creazione, individuare il componente:
+Per aggiungere una `File Library` in una pagina in modalità di authoring, individua il componente:
 
 * `Communities / File Library`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](/help/communities/basics.md).
 
-Quando vengono incluse le [librerie lato client ](/help/communities/essentials-file-library.md#essentials-for-client-side), viene visualizzato il componente `File Library`:
+Quando il [librerie lato client richieste](/help/communities/essentials-file-library.md#essentials-for-client-side) sono inclusi, è così che `File Library` apparirà il componente:
 
 ![file-library1](assets/file-library1.png)
 
-### Configurazione della libreria di file {#configuring-file-library}
+### Configurazione della libreria dei file {#configuring-file-library}
 
-Selezionare il componente `File Library` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
+Seleziona il `File Library` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -54,11 +53,11 @@ Selezionare il componente `File Library` inserito a cui accedere e selezionare l
 
 #### Scheda Commenti {#comments-tab}
 
-Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti per i file caricati:
+Sotto la **Commenti** scheda , specifica se e come vengono visualizzati i commenti per i file caricati:
 
 * **Consenti commenti sui file**
 
-   Se questa opzione è selezionata, consentite commenti sui file caricati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti commenti sui file caricati. Il valore predefinito è deselezionato.
 
 * **Commenti per pagina**
 
@@ -66,7 +65,7 @@ Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti
 
 * **Dimensione file massima**
 
-   Questo valore limita le dimensioni del file caricato. Il limite predefinito è 104857600 (10 Mb).
+   Questo valore limiterà la dimensione del file caricato. Il limite predefinito è 104857600 (10 Mb).
 
 * **Lunghezza massima messaggio**
 
@@ -74,11 +73,11 @@ Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti
 
 * **Tipi di file consentiti**
 
-   Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
+   Elenco di estensioni di file separate da virgola con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
 
 * **Editor Rich Text**
 
-   Se questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, è possibile inserire commenti con markup. Il valore predefinito è deselezionato.
 
 * **Elimina commenti**
 
@@ -86,15 +85,15 @@ Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere un tag al file. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere un tag al file . Il valore predefinito è deselezionato.
 
 * **Namespace consentiti**
 
-   Se l’opzione Consenti tag è selezionata, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non ne è selezionata alcuna, sono tutti consentiti. Il valore predefinito è tutti gli spazi dei nomi.
+   Se l’opzione Consenti assegnazione tag è selezionata, i tag disponibili saranno limitati ai namespace selezionati. Se non ne è selezionata alcuna, sono consentiti tutti. Il valore predefinito è tutti i namespace.
 
 * **Limite di suggerimenti**
 
-   Se l’opzione Consenti tag è selezionata, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non è previsto alcun limite. Il valore predefinito è -1.
+   Se l’opzione Consenti assegnazione tag è selezionata, il numero di tag suggeriti da visualizzare è limitato. Se è impostato su -1, non vi è alcun limite. Il valore predefinito è -1.
 
 * **Consenti votazione**
 
@@ -102,11 +101,11 @@ Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti
 
 * **Consenti Segui**
 
-   Se questa opzione è attivata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) di nuovi post. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includi la seguente funzione per gli articoli di blog, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. Il valore predefinito è deselezionato.
 
 * **Abilita menzione**
 
-   Se abilitata, consente agli utenti della community registrati di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la sintassi comune @user-name. Gli utenti con tag ricevono notifiche sulle proprie menzioni.
+   Se attivato, consente agli utenti della community registrata di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la comune sintassi @user-name. Gli utenti con tag ricevono notifiche sulle loro menzioni.
 
 * **Max menzioni**
 
@@ -114,23 +113,23 @@ Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti
 
 * **Pattern menzioni interfaccia**
 
-   Specificare la stringa di pattern consentita per assegnare un tag (@reference) all&#39;utente registrato in un post. Ad esempio ~{{familyName}}{{givenName}}.
+   Specifica la stringa di pattern consentita per assegnare il tag (@menzione) all’utente registrato in un post. Esempio ~{{familyName}}{{givenName}}.
 
 * **Consenti risposte concatenate**
 
-   Se questa opzione è selezionata, consentire le risposte ai commenti inviati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti risposte ai commenti inviati. Il valore predefinito è deselezionato.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda **Moderazione utente**, configurare la moderazione dei commenti, se i commenti sono consentiti:
+Sotto la **Moderazione utente** , configura la moderazione dei commenti, se i commenti sono consentiti :
 
 * **Premoderazione**
 
-   Se questa opzione è attivata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
 * **Elimina commenti**
 
-   Se questa opzione è attivata, al visitatore che ha pubblicato il commento viene fornita la possibilità di eliminarlo. Il valore predefinito è selezionato.
+   Se questa opzione è selezionata, il visitatore che ha pubblicato il commento potrà eliminarlo. Il valore predefinito è selezionato.
 
 * **Rifiuta commenti**
 
@@ -142,25 +141,25 @@ Nella scheda **Moderazione utente**, configurare la moderazione dei commenti, se
 
 * **Segnala commenti**
 
-   Se questa opzione è selezionata, consentire ai visitatori di contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai visitatori di contrassegnare i commenti come inappropriati. Il valore predefinito è deselezionato.
 
 * **Elenco di motivi per segnalazione**
 
-   Se questa opzione è selezionata, consentire ai visitatori di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai visitatori di scegliere, da un elenco a discesa, il motivo per cui contrassegnano un commento come inappropriato. Il valore predefinito è deselezionato.
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consentite ai visitatori di inserire il proprio motivo per cui un commento viene contrassegnato come inappropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai visitatori di inserire il proprio motivo per contrassegnare un commento come inappropriato. Il valore predefinito è deselezionato.
 
 * **Soglia moderazione**
 
-   Immettete il numero di volte in cui un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (**1**).
+   Immetti il numero di volte in cui un commento deve essere segnalato dai visitatori prima che i moderatori vengano informati. Il valore predefinito è una tantum (**1**).
 
 * **Limite segnalazione**
 
-   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla **Soglia moderazione**. Il valore predefinito è 5.
+   Immetti il numero di volte in cui un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale a **Soglia moderazione**. Il valore predefinito è 5.
 
-### Scheda Ordina impostazioni {#sort-settings-tab}
+### Scheda Impostazioni di ordinamento {#sort-settings-tab}
 
 Ordina per
 
@@ -168,8 +167,8 @@ Imposta come predefinito
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [File Library Essentials](/help/communities/essentials-file-library.md) per gli sviluppatori.
+Per ulteriori informazioni, consulta [Nozioni di base sulla libreria dei file](/help/communities/essentials-file-library.md) per sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
+Per la moderazione degli argomenti e dei commenti pubblicati, vedi [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti generati dall&#39;utente](/help/communities/tag-ugc.md).
+Per assegnare tag agli argomenti e ai commenti pubblicati, vedi [Assegnazione tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).

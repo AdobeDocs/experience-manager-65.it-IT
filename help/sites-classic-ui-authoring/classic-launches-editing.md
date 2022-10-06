@@ -1,8 +1,8 @@
 ---
 title: Modifica dei lanci
-seo-title: Modifica dei lanci
+seo-title: Editing Launches
 description: Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile modificarne il contenuto nella copia di lancio.
-seo-description: Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile modificarne il contenuto nella copia di lancio.
+seo-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # Modifica dei lanci{#editing-launches}
 
@@ -68,4 +67,3 @@ Quando si modifica il lancio di una pagina, le informazioni sul lancio vengono v
 * Lo stato del flag **Produzione pronta** (arancione = non impostato; verde = impostato).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-

@@ -1,22 +1,21 @@
 ---
 title: Visualizzazione dei dati analitici sulle pagine
-seo-title: Visualizzazione dei dati analitici sulle pagine
+seo-title: Seeing Page Analytics Data
 description: Utilizza i dati analitici pagina per misurare l'efficacia del contenuto della pagina
-seo-description: Utilizza i dati analitici pagina per misurare l'efficacia del contenuto della pagina
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 92%
+source-wordcount: '628'
+ht-degree: 91%
 
 ---
-
 
 # Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
@@ -24,7 +23,7 @@ Utilizza i dati analitici pagina per misurare l&#39;efficacia del contenuto dell
 
 ## Dati analitici visibili dalla console {#analytics-visible-from-the-console}
 
-![a-10](assets/aa-10.png)
+![aa-10](assets/aa-10.png)
 
 I dati analitici pagina vengono visualizzati nella [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view) della console Sites. Quando le pagine vengono visualizzate nel formato elenco, sono disponibili le colonne seguenti per impostazione predefinita:
 
@@ -43,7 +42,7 @@ Ciascuna colonna mostra un valore per il periodo di generazione rapporti in cors
 
 1. Di nuovo, all&#39;estrema destra della barra degli strumenti (angolo in alto a destra) tocca o fai clic sull&#39;icona **Visualizza impostazioni**. Si aprirà la finestra di dialogo **Configura colonne**. Apporta le modifiche necessarie e conferma con **Aggiorna**.
 
-   ![a-04](assets/aa-04.png)
+   ![aa-04](assets/aa-04.png)
 
 ### Selezione del periodo di generazione rapporti {#selecting-the-reporting-period}
 
@@ -54,7 +53,7 @@ Seleziona il periodo di generazione rapporti per il quale i dati di Analytics ve
 * Dati di quest&#39;anno
 
 Il periodo di rigenerazione rapporti corrente viene visualizzato nella barra degli strumenti della console Sites (a destra della barra degli strumenti superiore). Utilizza il menu a discesa per selezionare il periodo di generazione rapporti desiderato.
-![a-05](assets/aa-05.png)
+![aa-05](assets/aa-05.png)
 
 ### Configurazione delle colonne di dati disponibili {#configuring-available-data-columns}
 
@@ -64,26 +63,26 @@ I membri del gruppo utenti amministratori-analytics possono configurare la conso
 >
 >Quando una struttura ad albero di pagine contiene elementi secondari associati a diverse configurazioni cloud di Adobe Analytics, non potrai configurare le colonne di dati disponibili per le pagine.
 
-1. In visualizzazione Elenco, utilizzate i selettori di visualizzazione (a destra della barra degli strumenti), selezionate **Visualizza impostazioni**, quindi **Aggiungi dati di analisi personalizzati**.
+1. Nella Vista a elenco, utilizza i selettori di visualizzazione (a destra della barra degli strumenti), seleziona **Visualizza impostazioni** e poi **Aggiungi dati di Analytics personalizzati**.
 
-   ![a-15](assets/aa-15.png)
+   ![aa-15](assets/aa-15.png)
 
 1. Seleziona le metriche che desideri esporre agli autori nella console Sites, quindi fai clic su **Aggiungi**.
 
-   Le colonne visualizzate vengono recuperate da  Adobe Analytics.
+   Le colonne visualizzate vengono recuperate da Adobe Analytics.
 
-   ![a-16](assets/aa-16.png)
+   ![aa-16](assets/aa-16.png)
 
 ### Apertura di approfondimenti sui contenuti da Sites {#opening-content-insights-from-sites}
 
-Aprite [Content Insight](/help/sites-authoring/content-insights.md) dalla console Siti per approfondire l&#39;efficacia della pagina.
+Apri [Approfondimenti contenuto](/help/sites-authoring/content-insights.md) dalla console Sites per approfondire l’efficacia della pagina.
 
 1. Nella console Sites, seleziona la pagina per la quale desideri visualizzare gli approfondimenti dei contenuti.
 1. Nella barra degli strumenti, fai clic sull’icona di Analytics e Recommendations.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Dati analitici visibili dall’Editor pagine (Mappa attività)  {#analytics-visible-from-the-page-editor-activity-map}
+## Dati analitici visibili dall’Editor pagine (Mappa attività) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
@@ -95,13 +94,13 @@ Aprite [Content Insight](/help/sites-authoring/content-insights.md) dalla consol
 
 Se il sito web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare la [modalità Mappa attività](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati pertinenti. Esempio:
 
-![a-07](assets/aa-07.png)
+![aa-07](assets/aa-07.png)
 
 ### Accesso alla mappa attività {#accessing-the-activity-map}
 
 Dopo aver selezionato la modalità [Mappa attività](/help/sites-authoring/author-environment-tools.md#page-modes), ti verrà richiesto di immettere le credenziali di Adobe Analytics.
 
-![a-03](assets/aa-03.png)
+![aa-03](assets/aa-03.png)
 
 Viene visualizzata la barra degli strumenti mobile **Analytics**; qui puoi:
 
@@ -111,7 +110,7 @@ Viene visualizzata la barra degli strumenti mobile **Analytics**; qui puoi:
 * Selezionare le analisi da visualizzare (vari selettori a discesa)
 * Chiudere la mappa attività e la barra degli strumenti (x)
 
-![a-09](assets/aa-09.png)
+![aa-09](assets/aa-09.png)
 
 ### Selezione dei dati analitici da visualizzare {#selecting-the-analytics-to-show}
 
@@ -125,17 +124,17 @@ Puoi selezionare i dati analitici da mostrare e come devono essere visualizzati,
 
 * Periodo da visualizzare
 
-![a-13](assets/aa-13.png)
+![aa-13](assets/aa-13.png)
 
 ### Configurazione della mappa attività {#configuring-the-activity-map}
 
 Utilizza l’icona **Show Settings** (Mostra impostazioni) per aprire la finestra di dialogo **Mappa attività**.
 
-![a-04-1](assets/aa-04-1.png)
+![aa-04-1](assets/aa-04-1.png)
 
 La finestra di dialogo delle **impostazioni della mappa attività** fornisce una serie di opzioni su tre schede:
 
-![a-06](assets/aa-06.png)
+![aa-06](assets/aa-06.png)
 
 * Generale
 
@@ -159,4 +158,3 @@ La finestra di dialogo delle **impostazioni della mappa attività** fornisce una
    * Visualizza i migliori (vincenti o perdenti)
    * Escludi la % inferiore
    * Aggiornamento automatico (dati e periodo)
-

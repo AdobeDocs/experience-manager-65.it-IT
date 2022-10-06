@@ -1,8 +1,8 @@
 ---
 title: Esternalizzazione degli URL
-seo-title: Esternalizzazione degli URL
-description: Il servizio Externalizer è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse in un URL esterno e assoluto
-seo-description: Il servizio Externalizer è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse in un URL esterno e assoluto
+seo-title: Externalizing URLs
+description: L’esternalizzatore è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorsa in un URL esterno e assoluto
+seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
 uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,34 +10,33 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
+# Esternalizzazione degli URL{#externalizing-urls}
 
-# Esternalizzazione di URL{#externalizing-urls}
+In AEM, il **Esternalizzatore** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorsa (ad es. `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
-In AEM, il **Externalizer** è un servizio OSGI che consente di trasformare programmaticamente un percorso di risorse (ad es. `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`), anteponendo il percorso a un DNS preconfigurato.
+Poiché un’istanza non può conoscere il suo URL visibile esternamente se è in esecuzione dietro un livello web e poiché a volte un collegamento deve essere creato al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare gli URL esterni e generarli.
 
-Poiché un’istanza non è in grado di conoscere il relativo URL visibile esternamente se è in esecuzione dietro un livello Web e poiché a volte è necessario creare un collegamento all’esterno dell’ambito della richiesta, il servizio fornisce una posizione centrale per configurare tali URL esterni e crearli.
-
-In questa pagina viene illustrato come configurare il servizio **Externalizer** e come utilizzarlo. Per ulteriori dettagli, fare riferimento al [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Questa pagina spiega come configurare il **Esternalizzatore** e come usarlo. Per ulteriori informazioni, consulta la [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
-Il servizio **Externalizer** consente di definire a livello centrale più domini che possono essere utilizzati per il prefisso programmatico dei percorsi delle risorse. Ogni dominio è identificato da un nome univoco utilizzato per fare riferimento al dominio a livello di programmazione.
+La **Esternalizzatore** il servizio ti consente di definire centralmente più domini che possono essere utilizzati per prefisso programmaticamente i percorsi delle risorse. Ogni dominio è identificato da un nome univoco utilizzato per fare riferimento programmaticamente al dominio.
 
-Per definire un mapping di dominio per il servizio **Externalizer**:
+Per definire una mappatura del dominio per **Esternalizzatore** servizio:
 
-1. Andate alla gestione della configurazione tramite **Strumenti**, quindi **Console Web** oppure immettete:
+1. Passa alla gestione della configurazione tramite **Strumenti**, quindi **Console web** oppure immetti:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Fare clic su **Day CQ Link Externalizer** per aprire la finestra di dialogo di configurazione.
+1. Fai clic su **Day CQ Link Externalizer** per aprire la finestra di dialogo di configurazione.
 
    >[!NOTE]
    >
@@ -45,41 +44,41 @@ Per definire un mapping di dominio per il servizio **Externalizer**:
 
    ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
-1. Definire una mappatura **Domains**: un mapping è costituito da un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
+1. Definire un **Domini** mappatura: una mappatura consiste in un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    Dove:
 
-   * **Gli** schemi sono in genere http o https, ma possono anche essere ftp, ecc.
+   * **schema** di solito è http o https, ma può anche essere ftp, ecc.
 
-      * utilizzate https per applicare eventuali collegamenti https
-      * viene utilizzato se il codice client non esclude lo schema quando si richiede l&#39;esternalizzazione di un URL.
-   * **Il** server è il nome host (può essere un nome di dominio o un indirizzo IP).
-   * **port**  (facoltativo) è il numero della porta.
-   * **contextpath** (facoltativo) è impostato solo se AEM è installato come app Web in un percorso contestuale diverso.
+      * utilizza https per applicare i collegamenti https, se necessario
+      * viene utilizzato se il codice client non sostituisce lo schema quando si richiede l’esternalizzazione di un URL.
+   * **server** è il nome host (può essere un nome di dominio o un indirizzo ip).
+   * **porta** (facoltativo) è il numero di porta.
+   * **contextpath** (facoltativo) è impostato solo se AEM è installato come applicazione web in un percorso contestuale diverso.
 
    Esempio: `production https://my.production.instance`
 
-   I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati come AEM dipende da essi:
+   I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati in base a AEM:
 
    * `local` - l&#39;istanza locale
    * `author` - DNS del sistema di authoring
-   * `publish` - DNS sito Web pubblico
+   * `publish` - DNS del sito web pubblico
 
    >[!NOTE]
    >
-   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM come `my-internal-webservice`. È utile evitare di codificare tali URL in diverse aree della base di codice di un progetto.
+   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM quali `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse della codebase di un progetto.
 
-1. Fare clic su **Salva** per salvare le modifiche.
+1. Fai clic su **Salva** per salvare le modifiche.
 
 >[!NOTE]
 >
-> Adobe consiglia di [aggiungere la configurazione al repository](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
+>L’Adobe consiglia di [aggiungi la configurazione al repository](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
 
 ### Utilizzo del servizio Externalizer {#using-the-externalizer-service}
 
-In questa sezione sono riportati alcuni esempi di utilizzo del servizio **Externalizer**:
+Questa sezione mostra alcuni esempi di come **Esternalizzatore** è possibile utilizzare il servizio:
 
 1. **Per ottenere il servizio Externalizer in un JSP:**
 
@@ -87,13 +86,13 @@ In questa sezione sono riportati alcuni esempi di utilizzo del servizio **Extern
    Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
    ```
 
-1. **Per esternalizzare un percorso con il dominio &#39;pubblica&#39;:**
+1. **Per esternalizzare un percorso con il dominio &quot;pubblica&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
    ```
 
-   Presupponendo la mappatura del dominio:
+   Supponendo la mappatura del dominio:
 
    * `publish https://www.website.com`
 
@@ -102,13 +101,13 @@ In questa sezione sono riportati alcuni esempi di utilizzo del servizio **Extern
    * `https://www.website.com/contextpath/my/page.html`
 
 
-1. **Per esternalizzare un percorso con il dominio &#39;author&#39;:**
+1. **Per esternalizzare un percorso con il dominio &quot;author&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
    ```
 
-   Presupponendo la mappatura del dominio:
+   Supponendo la mappatura del dominio:
 
    * `author https://author.website.com`
 
@@ -117,13 +116,13 @@ In questa sezione sono riportati alcuni esempi di utilizzo del servizio **Extern
    * `https://author.website.com/contextpath/my/page.html`
 
 
-1. **Per esternalizzare un percorso con il dominio &#39;locale&#39;:**
+1. **Per esternalizzare un percorso con il dominio &quot;locale&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
    ```
 
-   Presupponendo la mappatura del dominio:
+   Supponendo la mappatura del dominio:
 
    * `local https://publish-3.internal`
 
@@ -132,4 +131,4 @@ In questa sezione sono riportati alcuni esempi di utilizzo del servizio **Extern
    * `https://publish-3.internal/contextpath/my/page.html`
 
 
-1. Per ulteriori esempi, vedere [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. Puoi trovare ulteriori esempi nella sezione [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

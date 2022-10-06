@@ -1,8 +1,8 @@
 ---
 title: Creazione e gestione delle offerte
-seo-title: Creazione e gestione delle offerte
+seo-title: Creating and Managing Offers
 description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
-seo-description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
+seo-description: Use the Offers console to create offers that you can use in activity experiences
 uuid: be0a53da-a979-4a30-a4bb-7c9ce26ae1a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 98%
+source-wordcount: '866'
+ht-degree: 99%
 
 ---
-
 
 # Creazione e gestione delle offerte{#creating-and-managing-offers}
 
@@ -38,12 +37,12 @@ Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Tocca o fai clic su **Crea**, quindi su **Crea** **Marchio**.
+1. Tocca o fai clic su **Crea** e quindi su **Crea** **marchio**.
 1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
 1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di una cartella a una libreria di offerte  {#add-a-folder-to-an-offer-library}
+## Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
 
 Consente di aggiungere una cartella alla libreria di offerte di un marchio per organizzare e salvare le offerte. Puoi creare una sottocartella sotto il marchio o altre cartelle.
 
@@ -59,7 +58,7 @@ Consente di aggiungere una cartella alla libreria di offerte di un marchio per o
 
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di un&#39;offerta a una libreria di offerte  {#add-an-offer-to-an-offer-library}
+## Aggiunta di un&#39;offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
 
 Consente di aggiungere un&#39;offerta alla libreria delle offerte di un marchio in modo che possa essere aggiunta alle esperienze del marchio. Quando aggiungi un&#39;offerta devi inserire un titolo. Puoi anche associare l&#39;offerta con uno o più tag per migliorare la ricerca.
 
@@ -83,7 +82,7 @@ Puoi aprire un&#39;offerta da una cartella in una libreria di offerte o dai risu
 1. Nella console Offerte, tocca o fai clic sull&#39;icona accanto all&#39;offerta e tocca o fai clic su **Modifica**.
 1. Aggiungi componenti all&#39;offerta e modifica il contenuto dei componenti come d&#39;abitudine.
 
-## Eliminazione di un&#39;offerta  {#deleting-an-offer}
+## Eliminazione di un&#39;offerta {#deleting-an-offer}
 
 Consente di eliminare un&#39;offerta quando non è più necessaria. Quando tenti di eliminare un&#39;offerta utilizzata in un&#39;esperienza, ti viene richiesto di confermare l&#39;eliminazione. Con la conferma viene eliminata l&#39;offerta e la rimuove dalle esperienze.
 
@@ -99,7 +98,7 @@ Puoi eliminare un&#39;offerta visualizzando il contenuto di una cartella in una 
    * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
    * Per mantenere l&#39;offerta, tocca o fai clic su **Annulla**.
 
-## Ricerca delle offerte  {#searching-for-offers}
+## Ricerca delle offerte {#searching-for-offers}
 
 Consente di cercare offerte di qualsiasi marchio utilizzando parole chiave per abbinare il titolo.
 

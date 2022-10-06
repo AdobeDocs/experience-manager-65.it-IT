@@ -1,8 +1,8 @@
 ---
-title: 'Esportazione in formato CSV  '
-seo-title: 'Esportazione in formato CSV  '
+title: Esportazione in formato CSV
+seo-title: Export to CSV
 description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
-seo-description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 86%
+source-wordcount: '191'
+ht-degree: 85%
 
 ---
-
 
 # Esportazione in formato CSV  {#export-to-csv}
 
@@ -42,7 +41,7 @@ La procedura guidata **Crea esportazione CSV** permette di selezionare:
       * Flusso di lavoro
    * Traduzione
       * Tradotto
-   * Analisi
+   * Analytics
       * Visualizzazioni pagina
       * Visitatori univoci
       * Tempo sulla pagina
@@ -56,7 +55,7 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 ![etc-01](assets/etc-01.png)
 
-L&#39;opzione Crea rapporto CSV **è disponibile quando si sfoglia la console** Siti **(in vista Elenco): è un&#39;opzione del menu a discesa** Crea **:**
+La creazione **Rapporto CSV** è disponibile quando esplori la pagina **Sites** console (nella vista a elenco): è un&#39;opzione del **Crea** menu a discesa:
 
 ![etc-02](assets/etc-02.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Modelli di lettera di riferimento
 seo-title: Reference letter templates
-description: 'AEM Forms fornisce modelli di layout per lettere di Gestione corrispondenza che è possibile utilizzare per creare rapidamente le lettere. '
+description: AEM Forms fornisce modelli di layout per lettere di Gestione corrispondenza che è possibile utilizzare per creare rapidamente le lettere.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 In Gestione corrispondenza un modello di lettera contiene campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree target&quot; vuote per il posizionamento del contenuto.
 
-Gestione corrispondenza fornisce modelli di lettera nel [pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). È possibile personalizzare i modelli in Designer in base alle esigenze aziendali e di branding. Il pacchetto include i seguenti modelli:
+La gestione della corrispondenza fornisce modelli di lettera nel [Pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). È possibile personalizzare i modelli in Designer in base alle esigenze aziendali e di branding. Il pacchetto include i seguenti modelli:
 
 * Classica
 * Classic semplice
@@ -83,7 +83,7 @@ Il modello a sinistra visivo ha una testa laterale a sinistra della pagina con i
 
 ![piano verticale](assets/visualleft.png)
 
-Anteprima PDF di una lettera creata utilizzando il modello a sinistra visivo
+Anteprima PDF di una lettera creata utilizzando il modello Visual Left
 
 ## Visual Top {#visual-top}
 

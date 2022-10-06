@@ -1,8 +1,8 @@
 ---
 title: Hardening e protezione dei moduli AEM in ambiente OSGi
-seo-title: Hardening e protezione dei moduli AEM in ambiente OSGi
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Scopri i consigli e le best practice per proteggere AEM Forms sul server OSGi.
-seo-description: Scopri i consigli e le best practice per proteggere AEM Forms sul server OSGi.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
@@ -10,7 +10,7 @@ role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Un&#39;organizzazione può disporre di un firewall esterno per limitare l&#39;ac
 
 #### Configurare un firewall esterno  {#configure-external-firewall}
 
-È possibile configurare un firewall esterno per consentire a un determinato URL di AEM Forms di accedere a Internet. L’accesso a questi URL è necessario per compilare o inviare un modulo adattivo, un HTML5, una lettera di gestione della corrispondenza o per accedere a un server AEM Forms:
+È possibile configurare un firewall esterno per consentire a un determinato URL di AEM Forms di accedere a Internet. L’accesso a questi URL è necessario per compilare o inviare un modulo adattivo, HTML5, una lettera di gestione della corrispondenza o per accedere a un server AEM Forms:
 
 <table> 
  <tbody>
@@ -152,9 +152,9 @@ Utilizzare le credenziali del server di elaborazione per AEM servizio impostazio
 Utilizzare gli account utente con privilegi minimi richiesti per configurare le origini dati per il modello dati del modulo (FDM). L&#39;utilizzo di account amministrativo può fornire accesso aperto di metadati ed entità dello schema a utenti non autorizzati.\
 L’integrazione dei dati fornisce anche metodi per autorizzare le richieste di servizi FDM. Puoi inserire meccanismi di autorizzazione pre e post-esecuzione per convalidare una richiesta. Le richieste di servizio vengono generate durante la precompilazione di un modulo, l’invio di un modulo e la chiamata di servizi tramite una regola.
 
-**Autorizzazione preliminare:** puoi utilizzare l’autorizzazione preliminare per convalidare l’autenticità di una richiesta prima di eseguirla. Puoi utilizzare input, servizi e dettagli della richiesta per consentire o interrompere l’esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene interrotta. Puoi anche modificare la richiesta del client prima di inviarla per l’esecuzione. Ad esempio, modifica dell’input e aggiunta di informazioni aggiuntive.
+**Autorizzazione preliminare:** Puoi utilizzare l’autorizzazione preliminare per convalidare l’autenticità di una richiesta prima di eseguirla. Puoi utilizzare input, servizi e dettagli della richiesta per consentire o interrompere l’esecuzione della richiesta. È possibile restituire un&#39;eccezione di integrazione dei dati OPERATION_ACCESS_DENIED se l&#39;esecuzione viene interrotta. Puoi anche modificare la richiesta del client prima di inviarla per l’esecuzione. Ad esempio, modifica dell’input e aggiunta di informazioni aggiuntive.
 
-**Autorizzazione post-elaborazione:** è possibile utilizzare l&#39;autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituire i risultati al richiedente. È inoltre possibile filtrare, perfezionare e inserire dati aggiuntivi ai risultati.
+**Autorizzazione post-elaborazione:** È possibile utilizzare l’autorizzazione post-elaborazione per convalidare e controllare i risultati prima di restituire i risultati al richiedente. È inoltre possibile filtrare, perfezionare e inserire dati aggiuntivi ai risultati.
 
 ### Limitare l&#39;accesso degli utenti {#limit-user-access}
 
@@ -198,4 +198,4 @@ Un cluster di elaborazione viene eseguito in modalità di authoring ma non viene
 
 ### Utilizzare AEM best practice per proteggere un ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Assicurati che l&#39;installazione AEM sottostante sia sicura quando distribuita. Per istruzioni dettagliate, consulta la documentazione [AEM Lista di controllo protezione](/help/sites-administering/security-checklist.md) .
+Questo documento fornisce istruzioni specifiche per l’ambiente AEM Forms. Assicurati che l&#39;installazione AEM sottostante sia sicura quando distribuita. Per istruzioni dettagliate, vedi [Elenco di controllo AEM](/help/sites-administering/security-checklist.md) documentazione.

@@ -1,8 +1,8 @@
 ---
-title: 'Annotazioni durante la modifica di una pagina:'
-seo-title: 'Annotazioni durante la modifica di una pagina:'
+title: Annotazioni durante la modifica di una pagina
+seo-title: Annotations when Editing a Page
 description: Quando si aggiunge del contenuto alle pagine di un sito Web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per semplificare le cose, molti componenti direttamente correlati al contenuto supportano l’inserimento di annotazioni.
-seo-description: Quando si aggiunge del contenuto alle pagine di un sito Web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per semplificare le cose, molti componenti direttamente correlati al contenuto supportano l’inserimento di annotazioni.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+exl-id: d60e9601-d15b-4378-a33e-e90961f63195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 95%
 
 ---
-
 
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ Un’annotazione si presenta come una nota colorata applicata alla pagina. può 
 
 >[!NOTE]
 >
->A seconda delle esigenze è anche possibile sviluppare un flusso di lavoro per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
+>A seconda delle esigenze è inoltre possibile sviluppare un flusso di lavoro per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
 
 ## Annotazioni {#annotations}
 
@@ -53,7 +52,7 @@ Se necessario, sposta l’annotazione altrove sulla pagina. Fai clic sul bordo s
 
 Le annotazioni (ed eventuali schizzi correlati) vengono inoltre incluse in qualsiasi operazione Copia, Taglia e Incolla eseguita sui paragrafi ai quali sono collegate. Per le operazioni Copia o Taglia, viene mantenuta la posizione dell’annotazione (e dei relativi schizzi) in relazione al paragrafo di origine.
 
-È inoltre possibile aumentare o diminuire le dimensioni dell’annotazione trascinando l’angolo inferiore destro.
+È inoltre possibile aumentare o diminuire le dimensioni dell’annotazione trascinando l’angolo in basso a destra.
 
 Per motivi di tracciamento, nella riga piè di pagina viene indicato l’utente che ha creato l’annotazione e l’ora in cui è stata creata. Altri autori possono quindi modificare l’annotazione (il piè di pagina viene aggiornato di conseguenza) o creare una nuova annotazione per lo stesso paragrafo.
 
@@ -79,9 +78,7 @@ Le tre icone in alto a sinistra consentono di ridurre l’annotazione (ed eventu
 >
 >* l’icona non è disponibile;
 >* eventuali schizzi esistenti creati in altri browser non vengono mostrati.
-
 >
-
 
 
 Gli schizzi sono una funzione di annotazione per la creazione di grafica semplice, composta di linee, ovunque nella porzione visibile della finestra del browser:
@@ -106,4 +103,3 @@ Gli schizzi sono una funzione di annotazione per la creazione di grafica semplic
 
 * Se si sposta o copia un paragrafo, vengono spostate o copiate anche tutte le relative annotazioni con gli schizzi ad esse associati, mantenendo la stessa posizione relativa al paragrafo.
 * Se si elimina un’annotazione, vengono eliminati anche tutti gli schizzi ad essa associati.
-

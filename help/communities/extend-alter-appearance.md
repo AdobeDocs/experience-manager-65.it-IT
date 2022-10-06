@@ -1,8 +1,8 @@
 ---
-title: Modifica dell'aspetto (HBS)
-seo-title: Modifica dell'aspetto
+title: Modificare l’aspetto (HBS)
+seo-title: Alter the Appearance
 description: Modificare gli script HBS
-seo-description: Modificare gli script HBS
+seo-description: Modify the HBS scripts
 uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,32 +10,31 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
+# Modificare l’aspetto (HBS) {#alter-the-appearance-hbs}
 
-# Modifica dell&#39;aspetto (HBS) {#alter-the-appearance-hbs}
+Ora che i componenti per il sistema di commento personalizzato nella directory dell&#39;applicazione (/apps) sono in posizione, con una risorsaSuperType che fa riferimento al sistema di commento predefinito e il modello/vista personalizzato registrato, è possibile modificare l&#39;implementazione.
 
-Ora che i componenti per il sistema di commenti personalizzati nella directory dell&#39;applicazione (/apps) sono già presenti, con un resourceSuperType che fa riferimento al sistema di commenti predefinito e il modello/vista personalizzato registrato, è possibile modificare l&#39;implementazione.
-
-Per una semplice dimostrazione, viene rimossa una funzione visiva, l’avatar mostrato dall’utente che ha effettuato l’accesso e che ha pubblicato un commento.
+Per una semplice dimostrazione, viene rimosso l’avatar visualizzato dall’utente che ha effettuato l’accesso e che ha pubblicato un commento.
 
 >[!NOTE]
 >
->Per utilizzare l’estensione, l’istanza del sistema di commenti in un sito Web da influenzare (/content) deve impostare resourceType come sistema di commenti personalizzato.
+>Per utilizzare l’estensione, l’istanza del sistema di commenti in un sito web da modificare (/content) deve impostare il relativo resourceType come sistema di commenti personalizzato.
 
 ## Modificare gli script HBS {#modify-the-hbs-scripts}
 
-Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Aprire [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Apri [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Aggiungete un commento al tag che include l&#39;avatar per un post di commento (~ riga 21):
+   * Aggiungi un commento al tag che include l&#39;avatar per un commento (~ riga 21):
 
       ```
         <!--
@@ -43,9 +42,9 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Aprire [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Apri [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * Aggiungete un commento al tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
+   * Aggiungi un commento al tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
 
       ```
         <!--
@@ -53,9 +52,9 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Selezionare **Salva tutto**
+* Seleziona **Salva tutto**
 
-### Replica app personalizzata {#replicate-custom-app}
+### Replicare l&#39;app personalizzata {#replicate-custom-app}
 
 Dopo che l’applicazione è stata modificata, è necessario replicare nuovamente il componente personalizzato.
 
@@ -63,20 +62,20 @@ Un modo per farlo è:
 
 * Dal menu principale
 
-   * Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
-   * Selezionare **[!UICONTROL Attiva albero]**.
-   * Impostare `Start Path` su `/apps/custom`.
-   * Deselezionare **[!UICONTROL Solo modificate]**.
-   * Selezionare il pulsante **[!UICONTROL Activate]**.
+   * Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
+   * Seleziona **[!UICONTROL Attiva albero]**.
+   * Imposta `Start Path` a `/apps/custom`.
+   * Deseleziona **[!UICONTROL Modificato solo]**.
+   * Seleziona **[!UICONTROL Attiva]** pulsante .
 
 ### Visualizza commento modificato sulla pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
-[Continuando l’](/help/communities/extend-sample-page.md#publish-sample-page) esperienza nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
+[Continuazione dell’esperienza](/help/communities/extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora connesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
 
 ![view-modified-content](assets/view-modified-content.png)
 
-### Pacchetto di estensioni di commenti di esempio {#sample-comment-extension-package}
+### Pacchetto di estensione dei commenti di esempio {#sample-comment-extension-package}
 
-Allegato è un pacchetto dell&#39;applicazione di commenti personalizzata creata in questa esercitazione.
+In allegato è presente un pacchetto dell’applicazione di commenti personalizzati creata in questa esercitazione.
 
 [Ottieni file](assets/sample-comment-extension-6-1-fp3.zip)

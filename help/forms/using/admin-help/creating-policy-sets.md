@@ -1,8 +1,8 @@
 ---
 title: Creazione e gestione dei set di criteri
-seo-title: Creazione e gestione dei set di criteri
+seo-title: Creating and managing policy sets
 description: I set di criteri vengono utilizzati per raggruppare i criteri con uno scopo aziendale comune. È possibile creare, modificare ed eliminare i criteri in un set di criteri.
-seo-description: I set di criteri vengono utilizzati per raggruppare i criteri con uno scopo aziendale comune. È possibile creare, modificare ed eliminare i criteri in un set di criteri.
+seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
@@ -10,20 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 736926af-ae41-4da3-b181-444de72407bd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
-
 
 # Creazione e gestione dei set di criteri {#creating-and-managing-policy-sets}
 
 I set di criteri vengono utilizzati per raggruppare i criteri con uno scopo aziendale comune. I set di criteri possono essere resi disponibili a un sottoinsieme di utenti nel sistema.
 
-A ciascun set di criteri è associato almeno un coordinatore set di criteri. Il *coordinatore del set di criteri* è un amministratore o un utente con autorizzazioni aggiuntive. Il coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un determinato set di criteri.
+A ciascun set di criteri è associato almeno un coordinatore set di criteri. La *coordinatore del set di regole* è un amministratore o un utente con autorizzazioni aggiuntive. Il coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un determinato set di criteri.
 
 I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
@@ -41,9 +40,9 @@ Quando si elimina un set di criteri, i criteri che facevano parte del set non po
 
 Il super utente o il coordinatore del set di criteri aggiunge i domini creati in Gestione utente all&#39;utente e al gruppo visibili per ciascun set di criteri. Questo elenco è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini che il coordinatore del set di criteri può cercare quando sceglie gli utenti da aggiungere ai criteri.
 
-Quando si creano set di criteri, si assegna agli utenti il ruolo di editore del documento. L&#39; *autore di documenti* è l&#39;utente che protegge il documento con un criterio. Per impostazione predefinita, questo utente è sempre incluso in un criterio con diritti di accesso completi, incluse le funzionalità di revoca e di cambio di policy. Tuttavia, gli amministratori possono modificare i diritti di accesso dell’editore del documento per i criteri condivisi. Ad esempio, l’amministratore può disabilitare il diritto dell’autore del documento di revocare l’accesso al documento o di cambiare il criterio. Se un amministratore cambia il criterio associato al documento, il nome dell&#39;autore verrà aggiornato al nome del proprietario del criterio applicato per ultimo al documento.
+Quando si creano set di criteri, si assegna agli utenti il ruolo di editore del documento. La *editore di documenti* è l&#39;utente che protegge il documento con un criterio. Per impostazione predefinita, questo utente è sempre incluso in un criterio con diritti di accesso completi, incluse le funzionalità di revoca e di cambio di policy. Tuttavia, gli amministratori possono modificare i diritti di accesso dell’editore del documento per i criteri condivisi. Ad esempio, l’amministratore può disabilitare il diritto dell’autore del documento di revocare l’accesso al documento o di cambiare il criterio. Se un amministratore cambia il criterio associato al documento, il nome dell&#39;autore verrà aggiornato al nome del proprietario del criterio applicato per ultimo al documento.
 
-Al momento dell&#39;installazione della sicurezza dei documenti, viene creato un set di criteri predefinito denominato *Set di criteri globali*. Questo set di criteri viene gestito dall&#39;amministratore che ha installato il software o dal coordinatore del set di criteri designato per questo set di criteri.
+Al momento dell&#39;installazione della protezione dei documenti, viene creato un set di criteri predefinito denominato *Set di criteri globale*. Questo set di criteri viene gestito dall&#39;amministratore che ha installato il software o dal coordinatore del set di criteri designato per questo set di criteri.
 
 ## Creare un set di criteri {#create-a-policy-set}
 
@@ -88,25 +87,25 @@ Durante la creazione del set di criteri, è possibile utilizzare il pulsante Ind
 
 1. Fai clic su Salva.
 
-È ora possibile aggiungere criteri al set di criteri. (Consulta [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+È ora possibile aggiungere criteri al set di criteri. (Vedi [Creazione e modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Modificare un set di criteri {#edit-a-policy-set}
 
 1. Nella pagina Protezione documento fare clic su Criteri, fare clic sulla scheda Set di criteri e quindi sul set di criteri da modificare.
 1. Fai clic sulla scheda appropriata e modifica come necessario:
 
-   * **Dettaglio:** modifica il nome e la descrizione del set di criteri.
-   * **Criteri:** consente di creare, abilitare, modificare ed eliminare i criteri all&#39;interno del set di criteri.
+   * **Dettagli:** Modifica il nome e la descrizione del set di criteri.
+   * **Criteri:** Creare, abilitare, modificare ed eliminare i criteri all&#39;interno del set di criteri.
    * **Utenti e gruppi visibili:** Aggiungi e rimuovi utenti e gruppi visibili che possono essere inclusi in un criterio.
-   * **Coordinatori set di criteri:** aggiunta, rimozione e modifica delle autorizzazioni per i coordinatori.
-   * **Editori di documenti:** consente di aggiungere e rimuovere utenti che possono pubblicare documenti utilizzando i criteri del set.
+   * **Coordinatori set di criteri:** Aggiungi, rimuovi e modifica le autorizzazioni per i coordinatori.
+   * **Editori di documenti:** Aggiungi e rimuovi utenti che possono pubblicare documenti utilizzando i criteri del set.
 
 1. Per eliminare un utente o un gruppo visibile, Coordinatore set di criteri o Editore documenti, fare clic sulla scheda appropriata, selezionare la casella di controllo relativa alla voce, fare clic su Elimina e quindi su OK.
 1. Per aggiungere utenti o gruppi visibili, un coordinatore set di criteri o un editore di documenti, fare clic sulla scheda appropriata, fare clic su Aggiungi utenti o gruppi, cercare l&#39;utente o il gruppo da aggiungere, selezionare la voce, fare clic su Aggiungi, quindi fare clic su OK.
 1. Nella scheda Criteri , cerca i criteri da aggiungere al set di criteri e crea nuovi criteri:
 
    * Per cercare un criterio, selezionare ID criterio o Nome criterio, digitare il valore corrispondente, selezionare il numero di elementi da visualizzare e fare clic su Trova.
-   * Per informazioni dettagliate sulla creazione di un nuovo criterio, vedere [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Per informazioni dettagliate sulla creazione di un nuovo criterio, consulta [Creazione e modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Eliminare un set di criteri {#delete-a-policy-set}
 
@@ -115,4 +114,3 @@ Quando si elimina un set di criteri, i criteri che facevano parte del set non po
 1. Fare clic su Criteri e quindi sulla scheda Set di criteri.
 1. Selezionare la casella di controllo relativa al set di criteri da eliminare.
 1. Fare clic su Elimina, quindi su OK.
-

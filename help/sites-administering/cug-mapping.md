@@ -1,8 +1,8 @@
 ---
 title: Mappatura di gruppi di utenti personalizzati in AEM 6.5
-seo-title: Mappatura di gruppi di utenti personalizzati in AEM 6.5
+seo-title: Custom User Group Mapping in AEM 6.5
 description: Scopri come funziona la Mappatura di gruppi di utenti personalizzati in AEM.
-seo-description: Scopri come funziona la Mappatura di gruppi di utenti personalizzati in AEM.
+seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +12,9 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -34,12 +33,12 @@ ht-degree: 1%
   <tr>
    <td><p>Proprietà: cq:cugEnabled</p> <p>Dichiarazione del tipo di nodo: N/D, proprietà residua</p> </td>
    <td><p>Autorizzazione:</p> <p>Nodo: rep:cugPolicy del tipo di nodo rep:CugPolicy</p> <p>Dichiarazione del tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione:</p> <p>Tipo di miscela: granite:AuthenticationRequired</p> </td>
-   <td><p>Per limitare l’accesso in lettura, al nodo di destinazione viene applicata una policy CUG dedicata.</p> <p>NOTA: I criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>I nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando normali chiamate API JCR; utilizza invece la gestione del controllo accessi JCR.</p> <p>Per ulteriori informazioni, consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> .</p> <p>Per applicare i requisiti di autenticazione su un nodo è sufficiente aggiungere il tipo mixin granite:AuthenticationRequired.</p> <p>NOTA: Solo rispettati sotto i percorsi supportati configurati.</p> </td>
+   <td><p>Per limitare l’accesso in lettura, al nodo di destinazione viene applicata una policy CUG dedicata.</p> <p>NOTA: I criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>I nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando normali chiamate API JCR; utilizza invece la gestione del controllo accessi JCR.</p> <p>Vedi <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> per ulteriori informazioni.</p> <p>Per applicare i requisiti di autenticazione su un nodo è sufficiente aggiungere il tipo mixin granite:AuthenticationRequired.</p> <p>NOTA: Solo rispettati sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugPrincipals</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
    <td><p>Proprietà: rep:principalNames</p> <p>Dichiarazione del tipo di nodo: rep:CugPolicy</p> </td>
-   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto al di sotto del gruppo di utenti chiuso è protetta e non può essere scritta utilizzando normali chiamate API JCR; utilizza invece la gestione del controllo accessi JCR.</p> <p>Per ulteriori informazioni sull’implementazione, consulta <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">questa pagina</a> .</p> </td>
+   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto al di sotto del gruppo di utenti chiuso è protetta e non può essere scritta utilizzando normali chiamate API JCR; utilizza invece la gestione del controllo accessi JCR.</p> <p>Vedi <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">questa pagina</a> per maggiori dettagli sull'implementazione.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugLoginPage</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
@@ -90,7 +89,7 @@ Servizio per configurare l’elenco di esclusione delle entità che non dovrebbe
 
    >[!NOTE]
    > 
-   >Se il `CugExcludeImpl` non è configurato, il `CugConfiguration` torna al valore predefinito.
+   >Se la `CugExcludeImpl` non è configurato, il `CugConfiguration` tornerà al valore predefinito.
 
    È possibile collegare un’implementazione personalizzata di CugExclude in caso di esigenze specifiche.
 

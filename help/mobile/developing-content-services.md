@@ -2,20 +2,19 @@
 title: Content Services
 seo-title: Content Services
 description: Content Services
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 3%
 
 ---
-
 
 # Content Services{#content-services}
 
@@ -35,7 +34,7 @@ Content Services introduce diversi nuovi costrutti AEM che consentono a uno svil
 
 Questi costrutti sono necessari per mantenere la flessibilità e consentire un&#39;espansione futura fornendo un livello di astrazione tra il contenuto gestito AEM e le app mobili che consumano il contenuto. Questo consente a AEM Content Services di funzionare come livello di astrazione tra i requisiti di contenuto dell’applicazione nativa e l’archivio di contenuti AEM.
 
-Content Services può distribuire i contenuti come risorse, in pacchetti HTML (HTML/CSS/JS) o come contenuto indipendente dal canale.
+Content Services può distribuire i contenuti come risorse, pacchetti HTML (HTML/CSS/JS) o come contenuto indipendente dal canale.
 
 >[!CAUTION]
 >
@@ -43,7 +42,7 @@ Content Services può distribuire i contenuti come risorse, in pacchetti HTML (H
 >
 >Prima di iniziare a utilizzare Content Services, assicurati di abilitare il flag Content Services . Per abilitare la creazione e la gestione di modelli nell’app, devi abilitare i modelli di dati in Browser configurazioni.
 >
->Per ulteriori informazioni, consulta **[Amministrazione di Content Services](/help/mobile/developing-content-services.md)** e la documentazione [Browser di configurazione](/help/sites-administering/configurations.md) .
+>Vedi **[Amministrazione dei servizi di contenuti](/help/mobile/developing-content-services.md)** e [Browser di configurazione](/help/sites-administering/configurations.md) documentazione per ulteriori informazioni.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

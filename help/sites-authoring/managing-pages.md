@@ -1,14 +1,13 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Creare e gestire le pagine con AEM
-translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
-
 
 # Creazione e organizzazione delle pagine {#creating-and-organizing-pages}
 
@@ -35,7 +34,7 @@ In qualità di autore dovrai organizzare il sito Web in AEM. Questo richiede che
 
 La struttura di un sito Web può essere pensata come una struttura ad albero che include le pagine di contenuti. I nomi di queste pagine di contenuti vengono utilizzati per formare gli URL, mentre il titolo è visualizzato alla visualizzazione del contenuto della pagina.
 
-Di seguito è riportato un esempio dal sito We.Retail, in cui è possibile accedere a una pagina di pantaloncini da trekking ( `desert-sky-shorts`):
+Di seguito è riportato un esempio del sito We.Retail, in cui una pagina di pantaloncini da trekking ( `desert-sky-shorts`) è accessibile:
 
 * Ambiente di authoring
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -43,7 +42,7 @@ Di seguito è riportato un esempio dal sito We.Retail, in cui è possibile acced
 * Ambiente di pubblicazione
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-A seconda della configurazione dell’istanza, l’utilizzo di `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
+A seconda della configurazione dell’istanza, utilizza `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
 
 ```xml
  /content
@@ -105,7 +104,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una nuova pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+Durante la creazione di una nuova pagina, AEM ne [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -123,16 +122,16 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome**[ da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) Un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;*ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc---c-.html |
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR. [](/help/sites-developing/naming-conventions.md) Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi il campo viene evidenziato con un messaggio di avviso.
+Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi il campo viene evidenziato con un messaggio di avviso.
 
 ![caop-02](assets/caop-02.png)
 
@@ -165,7 +164,7 @@ Elenco di modelli disponibili per la generazione della nuova pagina.
 
 ### Componenti {#components}
 
-I componenti sono gli elementi forniti da AEM in modo da poter aggiungere tipi specifici di contenuto. AEM viene fornita una serie di [componenti out-of-the-box](/help/sites-authoring/default-components-console.md) che forniscono funzionalità complete. Tra questi:
+I componenti sono gli elementi forniti da AEM per l’aggiunta di tipi specifici di contenuto. AEM viene fornito con una serie di [componenti predefiniti](/help/sites-authoring/default-components-console.md) che forniscono funzionalità complete. Tra questi figurano:
 
 * Testo
 * Immagine
@@ -185,7 +184,7 @@ Dopo aver creato e aperto una pagina, è possibile [aggiungere il contenuto util
 
 A meno che non siano state precedentemente create tutte le pagine necessarie, prima di iniziare a creare il contenuto è necessario creare una pagina:
 
-1. Aprite la console Siti (ad esempio, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Apri la console Sites (ad esempio, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Passa alla posizione in cui desideri creare la nuova pagina.
 1. Apri il selettore a discesa utilizzando l’opzione **Crea** nella barra degli strumenti, quindi seleziona **Pagina** dall’elenco:
 
@@ -213,7 +212,7 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se specifichi il **nome**[ della pagina quando crei una nuova pagina, AEM lo convalida in base alle convenzioni imposte da AEM e JCR.](/help/sites-developing/naming-conventions.md)
+      * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
    >[!NOTE]
@@ -300,7 +299,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
 >[!NOTE]
 >
->Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni, vedere [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability).
+>Una pagina può essere spostata solo in una posizione in cui è consentito il modello su cui si basa la pagina. Per ulteriori informazioni consulta la sezione dedicata alla [disponibilità dei modelli](/help/sites-developing/templates.md#template-availability).
 
 Per spostare o rinominare la pagina viene utilizzata la stessa procedura guidata. Con questa procedura guidata è possibile:
 
@@ -393,11 +392,11 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento/ridenominazione delle pagine, consultare il documento [Processi asincrono](/help/sites-administering/asynchronous-jobs.md) nella guida utente di amministrazione.
+>Per ulteriori informazioni sull’elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, consulta la sezione [Processi asincroni](/help/sites-administering/asynchronous-jobs.md) nella guida utente Amministrazione.
 
 >[!NOTE]
 >
->L&#39;elaborazione asincrona dello spostamento delle pagine richiede AEM 6.5.3.0 o superiore.
+>L’elaborazione asincrona dello spostamento delle pagine richiede AEM 6.5.3.0 o versioni successive.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
@@ -422,7 +421,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 >
 >Se una pagina è già stata pubblicata, prima di eliminarla ne verrà automaticamente annullata la pubblicazione.
 
-### Blocco di una pagina {#locking-a-page}
+### Blocco di una pagina   {#locking-a-page}
 
 È possibile [bloccare/sbloccare una pagina](/help/sites-authoring/editing-content.md#locking-a-page) da una console o quando si modifica una singola pagina. L’indicazione relativa al fatto che una pagina sia bloccata o meno è visualizzata in entrambe le posizioni.
 
@@ -441,9 +440,7 @@ Puoi creare cartelle per organizzare file e pagine.
 >* Le cartelle possono essere create direttamente solo in **Sites** o in altre cartelle. Non possono essere create da una pagina.
 >* Le azioni standard Sposta, Copia, Incolla, Elimina, Modifica, Pubblica, Annulla pubblicazione e Visualizza/Modifica proprietà possono essere eseguite in una cartella.
 >* Le cartelle non sono disponibili per la selezione all’interno di una Live Copy.
-
 >
-
 
 
 1. Apri la console **Sites** e passa alla posizione richiesta.

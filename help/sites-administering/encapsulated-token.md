@@ -33,7 +33,7 @@ Un utente può essere autenticato nell&#39;istanza di pubblicazione 1, ma se una
 
 La soluzione è quella di configurare connessioni permanenti a livello di load balancer. Con le connessioni permanenti, un utente veniva sempre indirizzato alla stessa istanza di pubblicazione. Di conseguenza, non è possibile un bilanciamento del carico ottimale.
 
-Nel caso in cui un&#39;istanza di pubblicazione diventi non disponibile, tutti gli utenti autenticati in quella istanza perderanno la sessione. Questo perché l&#39;accesso al repository è necessario per convalidare il cookie di autenticazione.
+Nel caso in cui un&#39;istanza di pubblicazione diventi non disponibile, tutti gli utenti autenticati in tale istanza perderanno la sessione. Questo perché l&#39;accesso al repository è necessario per convalidare il cookie di autenticazione.
 
 ## Autenticazione senza stato con token incapsulato {#stateless-authentication-with-the-encapsulated-token}
 
@@ -58,7 +58,7 @@ Puoi vedere come funziona in una distribuzione geograficamente distribuita con a
 >
 >* Le sessioni permanenti sono abilitate oppure
 >
->* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui i gestori **creano** utenti durante il processo di sincronizzazione.
+>* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati in situazioni in cui i gestori **creare** utenti durante il processo di sincronizzazione.
 
 
 Quando configuri il token incapsulato, è necessario tenere in considerazione alcuni aspetti:
@@ -68,18 +68,18 @@ Quando configuri il token incapsulato, è necessario tenere in considerazione al
 
 ### Replica della chiave HMAC {#replicating-the-hmac-key}
 
-La chiave HMAC è presente come proprietà binaria di `/etc/key` nell&#39;archivio. Puoi scaricarlo separatamente premendo il link **view** accanto ad esso:
+La chiave HMAC è presente come proprietà binaria di `/etc/key` nel repository. È possibile scaricarlo separatamente premendo il pulsante **visualizzare** link accanto ad esso:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 Per replicare la chiave tra le istanze, è necessario:
 
 1. Accedi all&#39;istanza AEM, in genere un&#39;istanza dell&#39;autore, che contiene il materiale chiave da copiare;
-1. Individua il bundle `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, sotto questo percorso:
+1. Individua il `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, sotto questo percorso:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
 
-   Il file `bundle.info` all&#39;interno di ogni cartella identificherà il nome del bundle.
+   La `bundle.info` all&#39;interno di ogni cartella identificherà il nome del bundle.
 
 1. Passa alla cartella dati. Esempio:
 
@@ -91,7 +91,7 @@ Per replicare la chiave tra le istanze, è necessario:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Incolla i due file copiati in precedenza.
-1. [Aggiorna il Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) Bundlese l&#39;istanza di destinazione è già in esecuzione.
+1. [Aggiorna il bundle Crypto](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l’istanza target è già in esecuzione.
 
 1. Ripeti i passaggi precedenti per tutte le istanze a cui desideri replicare la chiave.
 
@@ -100,5 +100,5 @@ Per replicare la chiave tra le istanze, è necessario:
 Una volta replicata la chiave HMAC, puoi abilitare il Token incapsulato tramite la console Web:
 
 1. Posiziona il browser su `https://serveraddress:port/system/console/configMgr`
-1. Cerca una voce chiamata **Adobe Granite Token Authentication Handler** e fai clic su di essa.
-1. Nella finestra seguente, spuntare la casella **Abilita supporto token incapsulato** e premere **Salva**.
+1. Cerca una voce chiamata **Gestore autenticazione token di Granite Adobe** e fai clic su di esso.
+1. Nella finestra seguente, spunta la **Abilita supporto token incapsulati** e premere **Salva**.

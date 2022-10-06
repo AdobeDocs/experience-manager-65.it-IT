@@ -1,103 +1,101 @@
 ---
 title: Sincronizzazione delle directory
-seo-title: Sincronizzazione delle directory
-description: Scoprite come sincronizzare il database Gestione utenti con le modifiche apportate ai server di directory di origine mediante la sincronizzazione manuale o pianificata.
-seo-description: Scoprite come sincronizzare il database Gestione utenti con le modifiche apportate ai server di directory di origine mediante la sincronizzazione manuale o pianificata.
+seo-title: Synchronizing directories
+description: Scopri come sincronizzare il database User Management con le modifiche ai server delle directory di origine utilizzando la sincronizzazione manuale o pianificata.
+seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
 uuid: 71cbc04d-6172-49b7-a490-ff3233c1b2bb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
+source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
 
-
 # Sincronizzazione delle directory {#synchronizing-directories}
 
-Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. Una *sincronizzazione manuale* sincronizza tutti i domini selezionati. Una *sincronizzazione pianificata* sincronizza tutti i domini.
+Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manuale o pianificata. A *sincronizzazione manuale* sincronizza tutti i domini selezionati. A *sincronizzazione pianificata* sincronizza tutti i domini.
 
-La sincronizzazione della directory viene utilizzata per estrarre i dettagli dai server di directory specificati nelle impostazioni della directory nel database Gestione utente. In seguito, è inoltre possibile eseguire una sincronizzazione manuale in caso di modifiche o aggiornamenti sui server di directory. Ad esempio, potete eseguire una sincronizzazione manuale se vengono aggiunti utenti e gruppi o se vengono apportate modifiche all’account di un utente.
+La sincronizzazione della directory viene utilizzata per estrarre i dettagli dai server di directory specificati nelle impostazioni di directory nel database di Gestione utente. In seguito, è anche possibile eseguire una sincronizzazione manuale se si verificano modifiche o aggiornamenti sui server di directory. Ad esempio, puoi eseguire una sincronizzazione manuale se vengono aggiunti utenti e gruppi o se vengono apportate modifiche all’account di un utente.
 
-È inoltre possibile impostare una pianificazione di sincronizzazione giornaliera per sincronizzare automaticamente il database Gestione utente con le modifiche o gli aggiornamenti ai server di directory di origine. Tuttavia, tenete presente che questo processo utilizza risorse di rete e server. Scegliete periodi di tempo ridotti ed evitate di pianificare sincronizzazioni non necessarie che colleghino le risorse di rete e di sistema. Per ridurre al minimo le sincronizzazioni non necessarie, utilizzate invece l&#39;opzione di sincronizzazione immediata.
+È inoltre possibile impostare una pianificazione della sincronizzazione giornaliera per sincronizzare automaticamente il database User Management con le modifiche o gli aggiornamenti ai server delle directory di origine. Tuttavia, tenere presente che questo processo utilizza risorse di rete e server. Scegli periodi di tempo ridotti ed evita la pianificazione di sincronizzazioni non necessarie che collegano le risorse di sistema e di rete. Per ridurre al minimo le sincronizzazioni non necessarie, utilizza invece l’opzione di sincronizzazione immediata.
 
-È inoltre possibile specificare se inviare le informazioni di utenti e gruppi  Adobe a Content Services 9 (obsoleto) durante la sincronizzazione dei domini.
-
->[!NOTE]
->
->Non create più utenti e gruppi locali mentre è in corso la sincronizzazione di una directory LDAP. Il tentativo di eseguire questo processo potrebbe causare errori.
+È inoltre possibile specificare se inviare le informazioni di utenti e gruppi in Adobe LiveCycle Content Services 9 (obsoleto) durante la sincronizzazione dei domini.
 
 >[!NOTE]
 >
->Se il processo di sincronizzazione del dominio viene interrotto (ad esempio, il server applicazione viene arrestato durante il processo), attendere un po&#39; prima di tentare di sincronizzare il dominio. Per valutare lo stato della sincronizzazione, controllate lo stato. Se User Management ha acquisito un blocco prima dell&#39;arresto, attendere 10 minuti prima che il blocco venga rilasciato dopo il riavvio del server. Se lo stato di sincronizzazione è &quot;In corso&quot; ma la sincronizzazione viene interrotta o bloccata, Gestione utente riprova la sincronizzazione dopo 3 minuti. Dopo tre tentativi non riusciti, Gestione utente dichiara la sincronizzazione un errore e rilascia il blocco.
+>Non creare più utenti e gruppi locali mentre è in corso la sincronizzazione di una directory LDAP. Il tentativo di questo processo può causare errori.
 
 >[!NOTE]
 >
-> Adobe® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle LiveCycle®. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Vedere [ documento sul ciclo di vita del prodotto del Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Per informazioni sulla configurazione di Content Services (obsoleto), vedere [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Se il processo di sincronizzazione del dominio viene interrotto (ad esempio, l&#39;application server viene arrestato durante il processo), attendere un po&#39; prima di provare a sincronizzare il dominio. Per valutare lo stato della sincronizzazione, guarda lo stato . Se User Management ha acquisito un blocco prima dello spegnimento, attendere 10 minuti per il rilascio del blocco dopo il riavvio del server. Se lo stato di sincronizzazione è &quot;In corso&quot; ma la sincronizzazione viene interrotta o bloccata, Gestione utente ritenta la sincronizzazione dopo 3 minuti. Dopo tre tentativi non riusciti, Gestione utente dichiara la sincronizzazione un errore e rilascia il blocco.
+
+>[!NOTE]
+>
+>Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con il LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare processi incentrati sulle persone. Il supporto per Content Services (obsoleto) termina il 31/12/2014. Vedi [Adobe del documento sul ciclo di vita del prodotto](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Abilita sincronizzazione directory delta {#enable-delta-directory-synchronization}
 
-La sincronizzazione delle directory Delta migliora l&#39;efficienza della sincronizzazione delle directory. Quando la sincronizzazione della directory delta è abilitata, Gestione utente sincronizza solo gli utenti e i gruppi che sono stati aggiunti o aggiornati dall&#39;ultima sincronizzazione.
+La sincronizzazione della directory Delta migliora l&#39;efficienza della sincronizzazione della directory. Quando la sincronizzazione della directory delta è abilitata, User Management sincronizza solo gli utenti e i gruppi aggiunti o aggiornati dall’ultima sincronizzazione.
 
-Gestione utente esegue i seguenti passaggi quando la sincronizzazione della directory delta è abilitata:
+Quando la sincronizzazione della directory delta è abilitata, la gestione utente esegue i seguenti passaggi:
 
-* Recuperate tutti gli utenti dai server di directory, ma aggiornate il database di Gestione utente con solo gli utenti la cui marca temporale è cambiata.
-* Recuperate tutti i gruppi ma aggiornate il database Gestione utenti con solo i gruppi la cui marca temporale è cambiata.
-* Recupera i membri del gruppo solo per i gruppi le cui marche temporali sono cambiate e aggiorna il database Gestione utente con tali informazioni.
+* Recupera tutti gli utenti dai server delle directory ma aggiorna il database di Gestione utente con solo gli utenti la cui marca temporale è cambiata.
+* Recupera tutti i gruppi ma aggiorna il database di Gestione utente con solo i gruppi la cui marca temporale è stata modificata.
+* Recupera i membri del gruppo solo per i gruppi i cui timestamp sono cambiati e aggiorna il database di Gestione utente con tali informazioni.
 
 >[!NOTE]
 >
->Gli utenti e i gruppi che sono stati rimossi dalla directory non vengono eliminati dal database Gestione utenti fino a quando non viene eseguita la sincronizzazione completa della directory.
+>Gli utenti e i gruppi rimossi dalla directory non vengono eliminati dal database di Gestione utente fino a quando non si esegue una sincronizzazione completa della directory.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
-1. In Delta Synch (Sincronizzazione delta), selezionate la casella di controllo e fate clic su Save (Salva).
-1. Modificate le impostazioni di directory per ciascuno dei domini aziendali che utilizzeranno la funzione di sincronizzazione della directory delta. Nelle pagine Impostazioni utente e Impostazioni gruppo, individuate l&#39;impostazione Modifica marca temporale e immettete `modify TimeStamp` come valore. Per informazioni dettagliate sulla modifica dei domini enterprise, vedere [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+1. In Sincronizzazione delta selezionare la casella di controllo e fare clic su Salva.
+1. Modifica le impostazioni della directory per ciascuno dei domini aziendali che utilizzeranno la funzione di sincronizzazione della directory delta. Nelle pagine Impostazioni utente e Impostazioni gruppo, individua l’impostazione Modifica timestamp e immetti . `modify TimeStamp` come valore. Per informazioni sulla modifica dei domini aziendali, consulta [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
-## Attivare o disattivare la registrazione dettagliata durante la sincronizzazione {#enable-or-disable-detailed-logging-during-synchronization}
+## Attiva o disattiva la registrazione dettagliata durante la sincronizzazione {#enable-or-disable-detailed-logging-during-synchronization}
 
-Per impostazione predefinita, Gestione utenti registra statistiche dettagliate durante il processo di sincronizzazione.
+Per impostazione predefinita, Gestione utente registra statistiche dettagliate durante il processo di sincronizzazione.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
-1. In Sincronizza registrazione statistiche, deselezionate la casella di controllo per disattivare la registrazione dettagliata o selezionatela per abilitare la registrazione, quindi fate clic su Salva.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
+1. In Sincronizza registrazione statistiche deselezionare la casella di controllo per disabilitare la registrazione dettagliata o selezionarla per abilitare la registrazione, quindi fare clic su Salva.
 
-## Configurare l&#39;opzione dei tentativi di sincronizzazione della directory {#configure-the-directory-synchronization-retry-option}
+## Configurare l’opzione di esecuzione di un nuovo tentativo di sincronizzazione della directory {#configure-the-directory-synchronization-retry-option}
 
-È possibile configurare Gestione utente per controllare periodicamente la presenza di eventuali tentativi di sincronizzazione delle directory non riusciti. Gestione utente tenta quindi di completare le sincronizzazioni non riuscite.
+È possibile configurare Gestione utenti per verificare periodicamente la presenza di eventuali tentativi di sincronizzazione della directory non riusciti. Gestione utente cerca quindi di completare le sincronizzazioni non riuscite.
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
-1. In Espressione cron Synch Finisher, immettere un&#39;espressione cron che rappresenta l&#39;intervallo in cui i tentativi di gestione utente non sono riusciti a eseguire la sincronizzazione. L&#39;utilizzo dell&#39;espressione cron si basa sul sistema di programmazione dei processi open source Quartz, versione 1.4.0.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
+1. In Espressione cron di Synch Finisher immettere un&#39;espressione cron che rappresenta l&#39;intervallo in cui la Gestione utente tenta di eseguire sincronizzazioni non riuscite. L&#39;utilizzo dell&#39;espressione cron si basa sul sistema di programmazione dei processi open source Quartz, versione 1.4.0.
 
-   Il valore predefinito è 0/13 &amp;ast; ? &amp;ast; , che significa che il controllo viene effettuato ogni 13 minuti.
+   Il valore predefinito è 0/13 &amp;ast; ? &amp;ast; , il che significa che il controllo si verifica ogni 13 minuti.
 
-## Sincronizzazione manuale delle directory {#manually-synchronize-directories}
+## Sincronizza manualmente le directory {#manually-synchronize-directories}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
-1. (Facoltativo) Per inviare le informazioni di utenti e gruppi in Content Services (obsoleto), selezionate l&#39;opzione Seleziona questa opzione per inviare utenti e gruppi nei provider di archiviazione principale esterni registrati. Questa opzione si applica anche quando si aggiungono nuovi utenti e gruppi tramite la pagina Utenti e gruppi.
-1. Selezionate la casella di controllo per ciascun dominio Enterprise da sincronizzare e fate clic su Sincronizza ora.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+1. (Facoltativo) Per inviare le informazioni di utenti e gruppi in Content Services (obsoleto), selezionare l&#39;opzione Seleziona questa opzione per l&#39;invio di utenti e gruppi in provider di archiviazione entità esterni registrati. Questa opzione si applica anche quando si aggiungono nuovi utenti e gruppi tramite la pagina Utenti e gruppi .
+1. Selezionare la casella di controllo per ogni dominio enterprise da sincronizzare e fare clic su Sincronizza ora.
 
-   Se selezionate più domini, la sincronizzazione del dominio per tutti i domini può essere eseguita contemporaneamente. Tuttavia, se si selezionano i domini separatamente, è possibile eseguire una sola sincronizzazione di dominio alla volta.
+   Se selezioni più domini, puoi eseguire contemporaneamente la sincronizzazione del dominio per tutti i domini. Tuttavia, se selezioni i domini separatamente, è possibile eseguire una sola sincronizzazione di dominio alla volta.
 
-## Pianificare la sincronizzazione della directory {#schedule-directory-synchronization}
+## Sincronizzazione della directory {#schedule-directory-synchronization}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
-1. Pianificare la sincronizzazione:
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+1. Sincronizzazione programmata:
 
-   * Per abilitare la sincronizzazione automatica su base giornaliera, in Scheduler selezionare Generato. Selezionare Giornaliero dall&#39;elenco e digitare l&#39;ora nel formato 24 ore nella casella corrispondente. Quando salvate le impostazioni, questo valore viene convertito in un&#39;espressione cron, che viene visualizzata nella casella Espressione cron.
-   * Per pianificare la sincronizzazione in un giorno particolare della settimana o del mese, oppure in un mese particolare, selezionate Espressione cursore e digitate l&#39;espressione appropriata nella casella. Ad esempio, eseguire la sincronizzazione alle 1:30 di mattina. l&#39;ultimo venerdì del mese.
+   * Per abilitare la sincronizzazione automatica su base giornaliera, in Scheduler selezionare Generato. Selezionare Giornaliero dall’elenco e digitare l’ora nel formato 24 ore nella casella corrispondente. Quando salvi le impostazioni, questo valore viene convertito in un’espressione cron, visualizzata nella casella Espressione Cron.
+   * Per pianificare la sincronizzazione in un giorno specifico della settimana o del mese, o in un mese particolare, selezionare Espressione Cron e digitare l&#39;espressione appropriata nella casella. Ad esempio, effettua la sincronizzazione alle 00:30 dell’ultimo venerdì del mese.
 
 L&#39;utilizzo dell&#39;espressione cron si basa sul sistema di programmazione dei processi open source Quartz, versione 1.4.0.
 
-* Per disattivare la sincronizzazione automatica, selezionare Si verifica e selezionare Mai dall&#39;elenco.
-* (Facoltativo) Per inviare le informazioni di utenti e gruppi in Content Services (obsoleto), selezionate l&#39;opzione Seleziona questa opzione per inviare utenti e gruppi nei provider di archiviazione principale esterni registrati. Questa opzione si applica anche quando si aggiungono nuovi utenti e gruppi tramite la pagina Utenti e gruppi.
-* Fate clic su Salva.
+* Per disattivare la sincronizzazione automatica, selezionare Generato e selezionare Mai dall’elenco.
+* (Facoltativo) Per inviare le informazioni di utenti e gruppi in Content Services (obsoleto), selezionare l&#39;opzione Seleziona questa opzione per l&#39;invio di utenti e gruppi in provider di archiviazione entità esterni registrati. Questa opzione si applica anche quando si aggiungono nuovi utenti e gruppi tramite la pagina Utenti e gruppi .
+* Fai clic su Salva.
 
-## Interrompi tutte le sincronizzazioni di directory attualmente in corso {#stop-all-directory-synchronizations-currently-in-progress}
+## Interrompi tutte le sincronizzazioni delle directory attualmente in corso {#stop-all-directory-synchronizations-currently-in-progress}
 
-1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
-1. Fate clic su Interrompi. Questo pulsante viene visualizzato solo mentre è in corso la sincronizzazione di una directory.
-
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+1. Fare clic su Interrompi. Questo pulsante viene visualizzato solo mentre è in corso la sincronizzazione di una directory.

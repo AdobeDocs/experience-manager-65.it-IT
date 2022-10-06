@@ -1,41 +1,40 @@
 ---
 title: Archiviazione personalizzata per le bozze e i componenti di invio
-seo-title: Archiviazione personalizzata per le bozze e i componenti di invio
+seo-title: Custom storage for drafts and submissions component
 description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
-seo-description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
-
-# Archiviazione personalizzata per le bozze e i componenti inviati {#custom-storage-for-drafts-and-submissions-component}
+# Archiviazione personalizzata per le bozze e i componenti di invio {#custom-storage-for-drafts-and-submissions-component}
 
 ## Panoramica {#overview}
 
 AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza ti consente di mantenere un modulo in corso di lavorazione, che puoi completare e inviare in un secondo momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo `/content/forms/fp` nell’istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che è possibile utilizzare per personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, in AEM Forms i dati utente associati alla bozza e all’invio di un modulo vengono memorizzati nel `/content/forms/fp` nell’istanza Pubblica . Inoltre, i componenti del portale AEM Forms forniscono servizi dati che è possibile utilizzare per personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
-* Abilita [componenti del portale dei moduli](/help/forms/using/enabling-forms-portal-components.md)
-* Creare una [pagina del portale dei moduli](/help/forms/using/creating-form-portal-page.md)
-* Abilita [moduli adattivi per il portale dei moduli](/help/forms/using/draft-submission-component.md)
-* Informazioni [sui dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Abilita [componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md)
+* Crea un [pagina del portale moduli](/help/forms/using/creating-form-portal-page.md)
+* Abilita [portale moduli adattivi per moduli](/help/forms/using/draft-submission-component.md)
+* Scopri [dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi dell&#39;interfaccia `DraftDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi del `DraftDataService` interfaccia. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -104,7 +103,7 @@ public interface DraftDataService {
 
 ## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi dell&#39;interfaccia `SubmitDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
+Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi `SubmitDataService` interfaccia. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -214,4 +213,3 @@ Per utilizzare l’annotazione precedente, importa quanto segue nel progetto:
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 ```
-

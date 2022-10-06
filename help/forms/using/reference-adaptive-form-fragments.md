@@ -1,7 +1,7 @@
 ---
 title: Frammenti di modulo adattivo di riferimento
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms fornisce frammenti di modulo adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo. '
+description: AEM Forms fornisce frammenti di modulo adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # Frammenti di modulo adattivo di riferimento{#reference-adaptive-form-fragments}
 
-[La ](../../forms/using/adaptive-form-fragments.md) frammentazione del modulo adattivo è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare per creare un modulo. Consente di creare un modulo in modo semplice e rapido. È possibile trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor del modulo.
+[Frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare per creare un modulo. Consente di creare un modulo in modo semplice e rapido. È possibile trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor del modulo.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nella sezione [Pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
@@ -33,7 +33,7 @@ Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [
 * Termini e condizioni
 * Termini e condizioni con Scribble
 
-Quando installi il pacchetto, in Forms &amp; Documents viene creata una cartella di frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
+Quando installi il pacchetto, in Forms &amp; Documents viene creata una cartella di frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 

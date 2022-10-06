@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 73fba5249a05b0bdb9871a6e19c6bed10a7e7e4b
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,7 +276,7 @@ Durante la creazione di una nuova configurazione, non apportare modifiche alla c
 
 >[!CAUTION]
 >
->Quando si modifica l&#39;impostazione per **Miniatura** o **Gzip** dovrai anche eliminare il contenuto della cache clientlibs. Fai riferimento a questo [Articolo della Knowledge Base](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) per i dettagli.
+>Quando si modifica l&#39;impostazione per **Miniatura** o **Gzip** dovrai anche eliminare il contenuto di `/var/clientlibs`. Si tratta di una versione cache delle clientlibs e verrà ricreata quando richiesto.
 
 >[!NOTE]
 >

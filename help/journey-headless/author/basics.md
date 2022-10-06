@@ -1,10 +1,11 @@
 ---
 title: Informazioni di base sull’authoring
 description: Scopri i concetti e le modalità di creazione dei contenuti per i CMS headless utilizzando i frammenti di contenuto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1693'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -206,7 +207,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
    Questa è un’altra scheda nell’editor e fornisce una vista tecnica, destinata principalmente agli sviluppatori.
 
-* **Aggiorna i riferimenti pagina**
+* **Aggiorna i riferimenti di pagina**
 
    Questa azione è disponibile nella pagina **...** (puntini di sospensione) a discesa. Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
@@ -263,6 +264,6 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [Scopr
 * Guide introduttive
    * [Guida rapida alla creazione di una cartella Assets Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [percorso di architetti di contenuti headless AEM](/help/journey-headless/architect/overview.md)
+* [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 
 * [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md)

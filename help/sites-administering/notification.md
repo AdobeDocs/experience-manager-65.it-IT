@@ -13,7 +13,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -308,7 +308,7 @@ Per aggiungere un modello per una nuova lingua:
 Quando le raccolte in AEM Assets vengono condivise o non condivise, gli utenti possono ricevere notifiche e-mail da AEM. Per configurare le notifiche e-mail, segui questi passaggi.
 
 1. Configura il servizio e-mail come descritto sopra in [Configurazione del servizio e-mail](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Accedi a AEM come amministratore. Fai clic su **Strumenti** >  **Operazioni** >  **Console web** per aprire la configurazione della console Web.
+1. Accedi ad AEM come amministratore. Fai clic su **Strumenti** >  **Operazioni** >  **Console web** per aprire la configurazione della console Web.
 1. Modifica **Servizio di raccolta risorse DAM Day CQ**. Seleziona **invia e-mail**. Fai clic su **Salva**.
 
 ## Configurazione di OAuth {#setting-up-oauth}
@@ -391,12 +391,12 @@ Infine, conferma la configurazione:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Vai a [https://portal.azure.com/](https://portal.azure.com/) e accedi.
-1. Cerca **Azure Active Directory** nella barra di ricerca e fai clic sul risultato. In alternativa, è possibile sfogliare direttamente in [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Cerca **Azure Active Directory** nella barra di ricerca e fai clic sul risultato. In alternativa, è possibile navigare direttamente in [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Fai clic su **Registrazione app** - **Nuova registrazione**
 
    ![](assets/oauth-outlook1.png)
 
-1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registro**
+1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**
 1. Vai alla nuova app creata e seleziona **Autorizzazioni API**
 1. Vai a **Aggiungi autorizzazione** - **Autorizzazione grafico** - **Autorizzazioni delegate**
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
@@ -410,7 +410,7 @@ Infine, conferma la configurazione:
 1. Ripeti quanto sopra per ogni istanza di pubblicazione
 1. Configura le impostazioni in base alle tue esigenze
 1. Quindi, vai a **Certificati e segreti**, fai clic su **Nuovo segreto client** e segui i passaggi sullo schermo per creare un segreto. Assicurati di prendere nota di questo segreto per un uso successivo
-1. Press **Panoramica** nel riquadro a sinistra e copia i valori per **ID applicazione (client)** e **ID directory (tenant)** per un uso successivo
+1. Premi **Panoramica** nel riquadro a sinistra e copia i valori per **ID applicazione (client)** e **ID directory (tenant)** per un uso successivo
 
 Per ricapitolare, dovrai disporre delle seguenti informazioni per configurare OAuth2 per il servizio Mailer sul lato AEM:
 

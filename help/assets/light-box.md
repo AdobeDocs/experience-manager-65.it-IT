@@ -3,11 +3,11 @@ title: Lightbox come galleria di immagini personali
 description: Scopri Lightbox come galleria di immagini personali in Adobe Experience Manager Assets].
 contentOwner: AG
 role: User, Admin
-feature: Strumenti Per Sviluppatori, Rendering
+feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 Lightbox è un tipo speciale di raccolta che consente di accedere facilmente alle risorse. Puoi accedere rapidamente a Lightbox per aggiungere o eliminare risorse. Funge da galleria di immagini personale.
 
-Se sei un utente [!DNL Adobe Experience Manager Assets], la Lightbox viene creata automaticamente al primo accesso all&#39;applicazione. È esclusivo per il tuo accesso. Altri utenti non possono accedere alla Lightbox.
+Se sei un [!DNL Adobe Experience Manager Assets] utente, Lightbox viene creato automaticamente al primo accesso all&#39;applicazione. È esclusivo per il tuo accesso. Altri utenti non possono accedere alla Lightbox.
 
 ## Aggiungi risorse a lightbox {#adding-assets-to-lightbox}
 
-1. Dall’interfaccia utente di [!DNL Assets] , seleziona le risorse da aggiungere a Lightbox.
-1. Trascina le risorse nella zona **[!UICONTROL Drop in Lightbox]** . Rilasciare quando la zona di rilascio diventa attiva e la relativa etichetta diventa **[!UICONTROL Rilascia per aggiungere]**.
+1. Da [!DNL Assets] nell’interfaccia utente, seleziona le risorse da aggiungere a Lightbox.
+1. Trascina le risorse nella sezione **[!UICONTROL Drop in Lightbox]** zona. Rilascia quando la zona di rilascio diventa attiva e l’etichetta diventa **[!UICONTROL Rilascia per aggiungere]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Nella finestra di dialogo, fai clic su **[!UICONTROL Aggiungi]**, quindi chiudi per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
+1. Nella finestra di dialogo, fai clic su **[!UICONTROL Aggiungi]**, quindi chiuderlo per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
 1. Per visualizzare Lightbox, passa alla console Raccolte .
 1. Fai clic su **[!UICONTROL Lightbox]** per visualizzare le risorse al suo interno.
 

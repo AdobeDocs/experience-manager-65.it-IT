@@ -13,7 +13,7 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 53%
+ht-degree: 60%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 53%
 
 I flussi di lavoro per progetti disponibili includono i seguenti:
 
-* **Flusso di lavoro di approvazione del progetto** - Questo flusso di lavoro ti consente di assegnare contenuti a un utente, rivederli e approvarli.
-* **Richiedi lancio** - Un flusso di lavoro per richiedere un lancio.
-* **Richiedi pagina di destinazione** - Questo flusso di lavoro richiede una pagina di destinazione.
+* **Flusso di lavoro di approvazione progetto:** questo flusso di lavoro consente di assegnare dei contenuti a un utente, rivederli e approvarli.
+* **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
+* **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
 * **Servizio fotografico prodotti e servizio fotografico prodotti (e-commerce):** consentono di associare le risorse ai prodotti.
 * **Crea e traduci copia DAM e Crea copia per lingua DAM:** consentono di creare dati binari, metadati ed etichette tradotti per risorse e cartelle.
@@ -40,12 +40,12 @@ A seconda del modello di progetto selezionato, hai determinati flussi di lavoro 
 | Richiedi lancio | x |  |  |  |
 | Richiedi pagina di destinazione | x |  |  |  |
 | Richiedi e-mail | x |  |  |  |
-| Crea copia &amp;ast in lingua DAM; |  |  |  | x |
-| Crea e traduci copia&amp;ast in lingua DAM; |  |  |  | x |
+| Creazione DAM copia in lingua &amp;ast; |  |  |  | x |
+| Creazione DAM e traduzione copia in lingua &amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Questi flussi di lavoro non vengono avviati dalla **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per le risorse.](/help/sites-administering/tc-manage.md)
+>&amp;ast Questi flussi di lavoro non si trovano nella sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per le risorse.](/help/sites-administering/tc-manage.md)
 
 I passaggi per avviare e completare i flussi di lavoro sono sempre gli stessi, indipendentemente dal flusso di lavoro che scegli. Cambiano solo i passaggi intermedi.
 

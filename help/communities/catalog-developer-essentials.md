@@ -1,8 +1,8 @@
 ---
 title: Nozioni di base sul catalogo
-seo-title: Nozioni di base sul catalogo
+seo-title: Catalog Essentials
 description: Panoramica del catalogo
-seo-description: Panoramica del catalogo
+seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
 
 La funzione catalogo, se inclusa in un sito community, consente ai membri della community di sfogliare e selezionare le risorse di abilitazione elencate in un catalogo.
 
-Il [ `enablement catalog` componente](catalog.md) consente ai membri della community di accedere a un catalogo di [risorse di abilitazione](resources.md). L’utilizzo dei tag AEM è una parte importante della gestione dell’aspetto delle risorse di abilitazione in un catalogo.
+La [ `enablement catalog` component](catalog.md) consente ai membri della community di accedere a un catalogo di [risorse di abilitazione](resources.md). L’utilizzo dei tag AEM è una parte importante della gestione dell’aspetto delle risorse di abilitazione in un catalogo.
 
-Consulta [Assegnazione tag alle risorse di abilitazione](tag-resources.md).
+Vedi [Risorse di abilitazione assegnazione tag](tag-resources.md).
 
 ## Funzionalità di base per lato client {#essentials-for-client-side}
 
@@ -41,7 +41,7 @@ Consulta [Assegnazione tag alle risorse di abilitazione](tag-resources.md).
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
+   <td>cq.social.enablement.hbs.breadcrumb<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -53,7 +53,7 @@ Consulta [Assegnazione tag alle risorse di abilitazione](tag-resources.md).
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consulta <a href="catalog.md">Funzionalità del catalogo</a></td>
+   <td>Vedi <a href="catalog.md">Funzione catalogo</a></td>
   </tr>
  </tbody>
 </table>
@@ -62,16 +62,16 @@ Consulta [Assegnazione tag alle risorse di abilitazione](tag-resources.md).
 
 ### Funzione Catalogo {#catalog-function}
 
-Una struttura del sito community che include la [funzione Catalogo](functions.md#catalog-function), include un componente `enablement catalog` configurato.
+Una struttura del sito community che include [Funzione di catalogo](functions.md#catalog-function)include un `enablement catalog` componente.
 
 ### Pre-filtri {#pre-filters}
 
 Quando una funzione Catalogo è stata aggiunta a un sito community, è possibile limitare le risorse di abilitazione e i percorsi di apprendimento visualizzati nel catalogo specificando un filtro preliminare. A questo scopo, imposta le proprietà sull’istanza della risorsa del catalogo per il sito.
 
-Utilizzando l&#39;esempio del [Tutorial di abilitazione](getting-started-enablement.md):
+Utilizzando l’esempio di [Tutorial sull’abilitazione](getting-started-enablement.md):
 
 * Autore
-* Utilizzo di [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
+* Utilizzo [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
    * Ad esempio [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
@@ -81,21 +81,21 @@ Utilizzando l&#39;esempio del [Tutorial di abilitazione](getting-started-enablem
 
 * Aggiungi un nodo di filtri figlio
 
-   * Selezionare il nodo `catalog`
+   * Seleziona la `catalog`nodo
    * Seleziona **[!UICONTROL Crea nodo]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
       * Seleziona **[!UICONTROL Salva tutto]**
 
-* Aggiungi la proprietà `se_resource-tags` al nodo `filters`
+* Aggiungi `se_resource-tags` della proprietà `filters` nodo
 
-   * Seleziona il nodo `filters`
+   * Seleziona la `filters` nodo
    * Aggiungi una proprietà multipla
 
       * Nome: `se_resource-tags`
       * Tipo: Stringa
-      * Valore: *&lt;enter a [TagID](#pre-filter-tagids)>*
+      * Valore: *&lt;enter a=&quot;&quot; span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />TagID](#pre-filter-tagids)>*[
          * Seleziona **[!UICONTROL Multi]**
          * Seleziona **[!UICONTROL Aggiungi]**
 
@@ -107,7 +107,7 @@ Utilizzando l&#39;esempio del [Tutorial di abilitazione](getting-started-enablem
 
 #### Tag ID pre-filtro {#pre-filter-tagids}
 
-Il pre-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corrispondere esattamente ai tag applicati alle risorse di abilitazione. Questi sono visibili nella cartella `resources` del sito come valori della proprietà `se_resource-tags`.
+Il pre-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corrispondere esattamente ai tag applicati alle risorse di abilitazione. Sono visibili nella `resources` cartella del sito come valori della proprietà `se_resource-tags`.
 
 ![configure-filters](assets/configure-catalog1.png)
 

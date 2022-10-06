@@ -1,22 +1,21 @@
 ---
 title: Registrazione come utente
-seo-title: Registrazione come utente
+seo-title: Registering as a User
 description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
-seo-description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '700'
 ht-degree: 6%
 
 ---
-
 
 # Registrazione come utente {#registering-as-a-user}
 
@@ -58,7 +57,7 @@ L’account rimane attivo finché l’amministratore non lo disattiva o lo elimi
 1. Nella casella Nome utente digitare l&#39;indirizzo e-mail registrato con la protezione del documento. Questo indirizzo e-mail è il nome utente predefinito per la sicurezza dei documenti.
 1. Nella casella Password digitare la password creata al momento della registrazione, quindi fare clic su Accesso.
 
-## Reimposta la password {#reset-your-password}
+## Ripristino della password {#reset-your-password}
 
 Se dimentichi la password, l&#39;amministratore dei criteri può reimpostarla automaticamente. La reimpostazione di una password genera un messaggio e-mail che ti invita ad accedere utilizzando una password temporanea. Puoi quindi creare una nuova password.
 
@@ -70,4 +69,3 @@ Per informazioni su come contattare un amministratore della sicurezza dei docume
 1. Fai clic su Opzioni nell’angolo superiore destro della pagina. Viene visualizzata la pagina Utenti esterni.
 1. Selezionare Cambia password e digitare la password temporanea nella casella Vecchia password.
 1. Nella casella Nuova password, digitare una nuova password e quindi ridigitarla nella casella Conferma password.
-

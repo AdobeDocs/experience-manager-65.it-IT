@@ -1,8 +1,8 @@
 ---
 title: Supporto degli script per i moduli HTML5
-seo-title: Supporto degli script per i moduli HTML5
+seo-title: Scripting support for HTML5 forms
 description: JavaScript, proprietà FormCalc e altri metodi supportati in HTML5 Forms.
-seo-description: JavaScript, proprietà FormCalc e altri metodi supportati in HTML5 Forms.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3892'
 ht-degree: 36%
 
 ---
-
 
 # Supporto degli script per i moduli HTML5 {#scripting-support-for-html-forms}
 
@@ -37,7 +36,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>Specifica il contenuto del campo prima che venga modificato in risposta alle azioni dell'utente. Questo valore può essere richiamato, in modo analogo a una funzione di annullamento.</td>
    <td><p>Non funziona per i menu a discesa e le caselle di riepilogo. <code>PrevText </code>non funziona correttamente per i seguenti casi:</p>
     <ul>
-     <li>Digitando alcuni tasti carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici dell’iPad, e </li>
+     <li>Digitando alcune chiavi di carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici in iPad, e </li>
      <li>Per il campo Data (quando la data viene immessa attraverso il calendario).<br /> </li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
   </tr>
@@ -49,11 +48,11 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td><code>newtext</code></td>
    <td>Specifica il contenuto del campo dopo che questo è stato modificato in risposta alle azioni dell'utente.</td>
-   <td><p>La proprietà <code>newText</code> non funziona correttamente per i seguenti casi:</p>
+   <td><p>La <code>newText</code> la proprietà non funziona correttamente per i seguenti casi :</p>
     <ul>
      <li>Selezione e sostituzione dei testi</li>
      <li>Eliminazione, copia e incolla dei testi.</li>
-     <li>Digitando alcuni tasti carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Durante la digitazione di alcuni tasti carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza Maiusc+combinazione alfanumerica. </li>
      <li>Uso dei campi data/ora.</li>
     </ul>
@@ -68,7 +67,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
     <ul>
      <li>Selezione e sostituzione dei testi</li>
      <li>Eliminazione, copia e incolla dei testi.</li>
-     <li>Digitando alcuni tasti carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Durante la digitazione di alcuni tasti carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza Maiusc+combinazione alfanumerica. </li>
      <li>Uso dei campi data/ora.</li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
@@ -76,12 +75,12 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>keydown</td>
    <td>Determina se l'utente sta premendo un tasto di direzione per eseguire una selezione. Questa proprietà è disponibile solo per le caselle di riepilogo e per gli elenchi a discesa.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>modifier</td>
    <td>Determina se il tasto modificatore (ad esempio, Ctrl in Microsoft® Windows®) viene tenuto premuto durante l'esecuzione di un particolare evento.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
@@ -113,7 +112,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td><code>platform</code></td>
    <td>Restituisce una stringa che rappresenta la piattaforma del computer che esegue lo script.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>title</code></td>
@@ -128,17 +127,17 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td><code>calculationsEnabled</code></td>
    <td>Specifica se verranno eseguiti gli script di calcolo.<br /> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Specifica se gli script di convalida verranno eseguiti.<br /> </td>
-   <td>Nessuna</td>
+   <td>Specifica se verranno eseguiti gli script di convalida.<br /> </td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>pageUp</code></td>
    <td>Passa alla pagina precedente.</td>
-   <td>I moduli HTML5 non seguono gli stessi criteri di impaginazione dei moduli PDF, pertanto la pagina precedente di un modulo HTML5 è diversa da quella precedente di un modulo PDF.</td>
+   <td>I moduli di HTML5 non seguono gli stessi criteri di impaginazione dei moduli di PDF, pertanto la pagina precedente di un modulo di HTML5 è diversa da quella precedente di un modulo di PDF.</td>
   </tr>
   <tr>
    <td><code>pageDown</code></td>
@@ -163,7 +162,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>currentPage</td>
    <td><p>Imposta la pagina attualmente attiva di un documento in fase di esecuzione.</p> <p>I valori della pagina sono basati su 0, dunque la prima pagina di un documento restituisce un valore pari a 0.</p> <p>La proprietà currentPage è disponibile quando layout:ready viene eseguito su un client. Non è invece disponibile quando layout:ready viene eseguito sul server in quanto la proprietà non viene eseguita fino a quando viene eseguito il layout del modulo.</p> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
@@ -180,42 +179,42 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td><code>presence</code></td>
    <td>Controlla la partecipazione dell'oggetto associato nelle diverse fasi di elaborazione. Se l'oggetto è un contenitore, il contenuto del contenitore eredita le restrizioni applicate dal controllo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>access</code></td>
    <td>Controlla l’accesso degli utenti ai contenuti.</td>
-   <td>Non funziona per il gruppo di esclusione. Inoltre, i moduli HTML5 offrono lo stesso trattamento agli oggetti non interattivi e protetti.<br /> </td>
+   <td>Non funziona per il gruppo di esclusione. Inoltre, HTML5 Forms offre lo stesso trattamento agli oggetti non interattivi e protetti.<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
-   <td>I moduli HTML5 non consentono l’impostazione della proprietà del nome per gli oggetti. È una proprietà di sola lettura per i moduli HTML5.</td>
+   <td>I moduli di HTML5 non consentono l’impostazione della proprietà name per gli oggetti. È una proprietà di sola lettura per i moduli HTML5.</td>
   </tr>
   <tr>
    <td><code>value</code></td>
    <td>Elemento di contenuto che racchiude una singola unità di contenuto dati.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>rawValue</code></td>
    <td>Specifica il valore non formattato per il campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifica il valore formattato per questo campo.</td>
-   <td>L'impostazione <code>formattedValue</code> tramite script non è supportata.</td>
+   <td>Impostazione <code>formattedValue</code> script through non supportato.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifica il valore di modifica per questo campo.</td>
-   <td>L'impostazione di <code>editValue </code>attraverso script non è supportata.</td>
+   <td>Impostazione <code>editValue </code>script through non supportato.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Specifica la stringa del messaggio di convalida del formato per il campo.</td>
-   <td>L'impostazione di <code>formatMessage </code>attraverso script non è supportata.</td>
+   <td>Impostazione <code>formatMessage </code>script through non supportato.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -245,97 +244,97 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td><code>length</code></td>
    <td>Numero di elementi nell’elenco.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>addItem</code></td>
    <td>Aggiunge nuove voci al campo corrente.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>clearItem</code></td>
    <td>Rimuove tutte le voci dal campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>boundItem</code></td>
    <td>Ottiene il valore associato di una specifica voce di visualizzazione di un elenco a discesa o di una casella di riepilogo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>execCalculate</code></td>
    <td>Esegue lo script calculate del campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>execValidate</code></td>
    <td>Esegue lo script di convalida del campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>execEvent</code></td>
    <td>Esegue lo script di evento dell'oggetto.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>getItemState</code></td>
    <td>Restituisce lo stato di selezione dell'elemento specificato</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>setItemState</code></td>
    <td>Imposta lo stato di selezione dell'elemento specificato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>getDisplayItem</code></td>
    <td>Recupera il testo visualizzato dell'elemento per l'indice dell'elemento specificato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>getSaveItem</code></td>
    <td>Recupera il valore dei dati per l'indice dell'elemento specificato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>deleteItem</code></td>
    <td>Elimina l'elemento in corrispondenza dell'indice specificato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td><code>setItems</code></td>
    <td>Imposta gli elementi specificati nel campo corrente. Sostituisce gli elementi preesistenti.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Misura dell'altezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Misura che specifica la larghezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Specifica la coordinata x del punto di ancoraggio del contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Specifica la coordinata y del punto di ancoraggio di un contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.<br /> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L'oggetto validate controlla la convalida dei dati immessi dall'utente in un modulo. L'oggetto validate può essere attivato più volte nella vita di un modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>parentSubform</td>
@@ -345,7 +344,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>selectedIndex</td>
    <td>Indice del primo elemento selezionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
@@ -371,7 +370,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
 | `moveInstance` | Sposta un oggetto secondario di un oggetto modello di modulo in un&#39;altra posizione specificata all&#39;interno del modello di modulo. Anche le informazioni corrispondenti del modello dati per l’oggetto vengono trasferite all’interno del modello dati. |
 | `insertInstance` | Inserisce una nuova istanza di un sottomodulo o di un set di sottomoduli in questo nodo. |
 
-## elenco {#list}
+## list {#list}
 
 | Proprietà | Descrizione |
 |---|---|
@@ -385,17 +384,17 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
 
 | Proprietà | Descrizione | Eccezione |
 |---|---|---|
-| createNode | Crea un nuovo nodo in base a un nome di classe valido. | Nessuna |
-| `isContainer` | Specifica se l&#39;oggetto è un oggetto contenitore. | Nessuna |
-| `isNull` | Indica se il valore dei dati corrente è un valore null. | Nessuna |
-| `resolveNode` | Valuta l&#39;espressione SOM specificata, a partire dall&#39;oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell&#39;oggetto specificato nell&#39;espressione SOM. | Nessuna |
-| `resolveNodes` | Valuta l&#39;espressione SOM specificata, a partire dall&#39;oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell&#39;oggetto specificato nell&#39;espressione SOM. | Nessuna |
-| oneOfChild | Crea un nuovo nodo in base a un nome di classe valido. | Nessuna |
-| getElement | Restituisce un oggetto secondario specificato. | Nessuna |
-| getAttribute | Ottiene il valore di una proprietà specificata. | Nessuna |
-| setAttribute | Imposta il valore della proprietà specificata. | Nessuna |
+| createNode | Crea un nuovo nodo in base a un nome di classe valido. | Nessuno |
+| `isContainer` | Specifica se l&#39;oggetto è un oggetto contenitore. | Nessuno |
+| `isNull` | Indica se il valore dei dati corrente è un valore null. | Nessuno |
+| `resolveNode` | Valuta l&#39;espressione SOM specificata, a partire dall&#39;oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell&#39;oggetto specificato nell&#39;espressione SOM. | Nessuno |
+| `resolveNodes` | Valuta l&#39;espressione SOM specificata, a partire dall&#39;oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell&#39;oggetto specificato nell&#39;espressione SOM. | Nessuno |
+| oneOfChild | Crea un nuovo nodo in base a un nome di classe valido. | Nessuno |
+| getElement | Restituisce un oggetto secondario specificato. | Nessuno |
+| getAttribute | Ottiene il valore di una proprietà specificata. | Nessuno |
+| setAttribute | Imposta il valore della proprietà specificata. | Nessuno |
 
-## modello {#model}
+## model {#model}
 
 | Proprietà | Descrizione | Eccezione |
 |---|---|---|
@@ -413,72 +412,72 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>instanceIndex</td>
    <td>Specifica l'indice dell'oggetto, relativo alle altre istanze create.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>execEvent</td>
    <td>Esegue lo script di evento dell'oggetto.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>getInvalidObjects</td>
    <td>Restituisce un elenco dei nodi contenuti nel sottomodulo (inclusi) che non sono riusciti nel test di convalida.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>border</td>
    <td>L'oggetto border descrive i bordi che circondano un oggetto.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Specifica il valore del colore dei bordi per questo campo. È necessario impostare la proprietà border.edge.presence su visibile separatamente.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Misura dell'altezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Misura che specifica la larghezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Specifica la coordinata x del punto di ancoraggio del contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Specifica la coordinata y del punto di ancoraggio di un contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L'oggetto validate controlla la convalida dei dati immessi dall'utente in un modulo. L'oggetto validate può essere attivato più volte nella vita di un modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>name</td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>presence (presenza)</td>
    <td>Specifica la visibilità dell'oggetto.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>access</td>
    <td>Controlla l’accesso degli utenti al contenuto di un contenitore. oggetto, ad esempio un sottomodulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>execValidate</td>
    <td>Calcola l'indice di un sottomodulo o di un set di sottomoduli in base alla sua posizione rispetto alle altre istanze dello stesso oggetto modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>instanceManager</td>
@@ -494,7 +493,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
 |---|---|
 | target | URL a cui vengono inviati i dati. L’omissione di questo attributo implica che l’applicazione di elaborazione XFA ottiene l’URI utilizzando una tecnica specifica per il prodotto, ad esempio l’accesso alle informazioni specifiche per il prodotto nell’oggetto di configurazione. |
 
-## struttura {#tree}
+## albero {#tree}
 
 <table>
  <tbody>
@@ -520,36 +519,36 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>parent</td>
    <td>Ottiene l'elemento padre del nodo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>index</td>
    <td>Restituisce la posizione di questo nodo nel relativo insieme di nodi di relazione simili, in-scope e simili a quelli secondari.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>somExpression</td>
    <td>Ottiene l'espressione SOM per questo nodo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>resolveNode</td>
    <td>Valuta l'espressione SOM specificata, a partire dall'oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell'oggetto specificato nell'espressione SOM.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>resolveNodes</td>
    <td>Valuta l'espressione SOM specificata, a partire dall'oggetto modello di oggetto modulo XML corrente, e restituisce il valore dell'oggetto specificato nell'espressione SOM.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
 
-## subformset {#subformset}
+## sottomodulo {#subformset}
 
 | Proprietà | Descrizione | Eccezione |
 |---|---|---|
-| instanceManager | L&#39;oggetto instanceManager gestisce la creazione delle istanze, la rimozione e lo spostamento degli oggetti struttura del modulo. | Nessuna |
+| instanceManager | L&#39;oggetto instanceManager gestisce la creazione delle istanze, la rimozione e lo spostamento degli oggetti struttura del modulo. | Nessuno |
 
 ## content {#content}
 
@@ -578,7 +577,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -599,7 +598,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -620,13 +619,13 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## line {#line}
+## riga {#line}
 
 <table>
  <tbody>
@@ -638,7 +637,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Attributi come colore, cap e altro ancora non sono supportati.<br /> </td>
+   <td>Gli attributi quali colore, cap e altro ancora non sono supportati.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -658,7 +657,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -679,7 +678,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -700,7 +699,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -758,7 +757,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -776,7 +775,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>border</td>
    <td>L'oggetto border descrive il bordo intorno all'oggetto checkButton. </td>
-   <td>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi HTML. Pertanto, le modifiche non vengono riportate nell'interfaccia utente.<br /> </td>
+   <td>Le modifiche si riflettono nel modello e sono disponibili per lo scripting ma non sono sincronizzate con gli elementi di HTML. Pertanto, le modifiche non vengono riportate nell’interfaccia utente.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -816,7 +815,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>contentType</td>
    <td>Specifica il tipo di contenuto del documento a cui viene fatto riferimento, espresso come tipo MIME.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>name<br /> </td>
@@ -826,7 +825,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
  </tbody>
 </table>
 
-## imageEdit  {#imageedit}
+## imageEdit {#imageedit}
 
 | **Proprietà** | **Descrizione** | **Eccezione** |
 |---|---|---|
@@ -884,7 +883,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>border</td>
    <td>L'oggetto border descrive i bordi che circondano un oggetto.<br /> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
@@ -901,67 +900,67 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>layout</td>
    <td>Specifica la strategia di layout da utilizzare con l'oggetto.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>border</td>
    <td>Specifica il bordo intorno al campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>mandatory</td>
    <td>Specifica il valore nullTest per il campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Specifica il valore del colore del bordo per questo campo.È necessario definire un bordo prima di poter modificare il colore mediante script.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>borderWidth</td>
    <td>Specifica la larghezza dei bordi per questo campo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Misura dell'altezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>transient</td>
    <td>Specifica se l'applicazione di elaborazione deve salvare il valore del gruppo di esclusione nell'ambito di un'operazione di invio o di salvataggio del modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Misura che specifica la larghezza per il layout.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Specifica la coordinata x del punto di ancoraggio del contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Specifica la coordinata y del punto di ancoraggio di un contenitore rispetto all'angolo superiore sinistro del contenitore principale quando viene inserito con layout posizionato.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.<br /> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L'oggetto validate controlla la convalida dei dati immessi dall'utente in un modulo. L'oggetto validate può essere attivato più volte nella vita di un modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>dataNode</td>
    <td>Ottiene il nodo dei dati a cui viene legato il nodo di un modulo dopo l'unione.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>presence (presenza)</td>
@@ -976,27 +975,27 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>name</td>
    <td>Specifica un identificatore che può essere utilizzato per specificare questo oggetto o evento nelle espressioni di script.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>membri</td>
    <td>Specificare i membri del gruppo di esclusione. </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>selectedMember</td>
    <td>Restituisce il membro selezionato di un gruppo di esclusione.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>execCalculate</td>
    <td>Esegue qualsiasi script nell'evento calculate associato all'oggetto specificato e a eventuali oggetti secondari.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>calculate</td>
    <td>L'oggetto calculate controlla il calcolo del valore di un campo.<br /> </td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
  </tbody>
 </table>
@@ -1092,7 +1091,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
   <tr>
    <td>pagecontent</td>
    <td>Recupera vari tipi di oggetti struttura del modulo da una pagina specifica di un modulo.</td>
-   <td>Nessuna</td>
+   <td>Nessuno</td>
   </tr>
   <tr>
    <td>absPageCount</td>
@@ -1110,7 +1109,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
 
 | **Proprietà** | **Descrizione** | **Eccezione** |
 |---|---|---|
-| presence (presenza) | Specifica la visibilità dell&#39;oggetto. | Nessuna |
+| presence (presenza) | Specifica la visibilità dell&#39;oggetto. | Nessuno |
 
 ## FormCalc {#formcalc}
 
@@ -1144,7 +1143,7 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
      <li>Logica (e/o)</li>
      <li>Confronto (maggiore/minore/uguale)</li>
     </ul> </td>
-   <td>A o 1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A o 1<br /> 1 &lt;&gt; 2<br /> A NE B</td>
+   <td>A o 1<br /> 1 &lt;&gt; 2<br /> A<br /> A o 1<br /> 1 &lt;&gt; 2<br /> A</td>
   </tr>
   <tr>
    <td>Espressione if</td>
@@ -1159,7 +1158,7 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
   <tr>
    <td>per</td>
    <td><br type="_moz" /> </td>
-   <td>per i = 100 fino a 1 <br /> do s = s + i endfor</td>
+   <td>per i = da 100 a 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>per ciascuno</td>
@@ -1174,7 +1173,7 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
  </tbody>
 </table>
 
-### Supporto API Acrobat {#acrobat-api-support}
+### Supporto API di Acrobat {#acrobat-api-support}
 
 1. **Funzioni aritmetiche**
 
@@ -1197,7 +1196,7 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Tan()
+   1. Cannella()
    1. Exp()
    1. Registro()
    1. Pow()
@@ -1294,12 +1293,12 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
   <tr>
    <td>app.clearInterval()</td>
    <td>Annulla un intervallo precedentemente registrato inizialmente impostato dal metodo setInterval .</td>
-   <td>Nei moduli HTML5, l’API non funziona correttamente.</td>
+   <td>Nei moduli di HTML5, l’API non funziona correttamente.</td>
   </tr>
   <tr>
    <td>app.clearTimeOut()</td>
    <td>Annulla un intervallo di timeout registrato in precedenza. Tale intervallo viene inizialmente impostato da setTimeOut.</td>
-   <td>Nei moduli HTML5, l'API non funziona correttamente.<br /> </td>
+   <td>Nei moduli di HTML5, l’API non funziona correttamente.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1319,12 +1318,12 @@ FormCalc è un linguaggio specifico per XFA per la creazione di una logica incen
   <tr>
    <td>app.constants</td>
    <td>Un oggetto wrapper per contenente vari valori costanti. Attualmente, questa proprietà restituisce un oggetto con una singola proprietà, align.</td>
-   <td>I moduli HTML5 restituiscono un oggetto align vuoto.</td>
+   <td>I moduli di HTML5 restituiscono un oggetto align vuoto.</td>
   </tr>
   <tr>
    <td>app.focusRect</td>
    <td>Attiva e disattiva il rettangolo di attivazione. Il rettangolo di attivazione è costituito da una debole linea tratteggiata intorno a pulsanti, caselle di controllo, pulsanti di scelta e firme per indicare che il campo modulo è attivo da tastiera. Il valore true attiva il rettangolo di attivazione.</td>
-   <td>Sempre true per i moduli HTML5.</td>
+   <td>Sempre true per i moduli di HTML5.</td>
   </tr>
   <tr>
    <td>app.formsVersion</td>
@@ -1347,11 +1346,11 @@ Sono supportati i seguenti eventi XFA lato client:
 * Convalida
 * Calcola
 * Clic
-* Invio
+* Inserisci
 * Esci
 * Cambia
 * ValidationState
 
 >[!NOTE]
 >
->I moduli HTML5 vengono sottoposti a rendering sul lato client (browser). Si consiglia di utilizzare gli script **validate** e **calculate** lato client invece degli script lato server.
+>I moduli di HTML5 vengono sottoposti a rendering sul lato client (browser). Si consiglia di utilizzare il lato client **validate** e **calculate** script invece di script sul lato server.

@@ -1,28 +1,27 @@
 ---
 title: Modifica delle proprietà di una pagina
-seo-title: Modifica delle proprietà di una pagina
+seo-title: Editing Page Properties
 description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
-seo-description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 96%
 
 ---
-
 
 # Modifica delle proprietà di una pagina{#editing-page-properties}
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
 
-## Proprietà pagina {#page-properties}
+## Proprietà pagina   {#page-properties}
 
 Le proprietà sono distribuite su più schede:
 
@@ -82,7 +81,7 @@ Le proprietà sono distribuite su più schede:
 
    Consente di inserire un URL personalizzato per questa pagina. Questo consente di ottenere un URL più breve e significativo.
 
-   Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,`, h `ttp://example.com/welcome`sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
+   Ad esempio, se l’URL personalizzato è impostato su w `elcome`alla pagina identificata dal percorso / `v1.0/startpage`per il sito web h `ttp://example.com,` allora h `ttp://example.com/welcome`è l’URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -106,7 +105,7 @@ Le proprietà sono distribuite su più schede:
 
    Indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente.
 
-* **Progettazione**
+* **Design**
 
    Indica il [design](/help/sites-developing/designer.md) da utilizzare per la pagina.
 
@@ -134,7 +133,7 @@ Le proprietà sono distribuite su più schede:
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 * **Miniatura pagina**
 
@@ -160,7 +159,7 @@ Le proprietà sono distribuite su più schede:
 
    Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Autorizzazioni    {#permissions}
+### Autorizzazioni   {#permissions}
 
 * **Autorizzazioni** (interfaccia touch)
 
@@ -172,13 +171,13 @@ Le proprietà sono distribuite su più schede:
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito   {#site-structure}
+### Struttura sito  {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
@@ -186,7 +185,7 @@ Le proprietà sono distribuite su più schede:
 
 ### Modifica delle proprietà pagina per una pagina specifica {#editing-page-properties-for-a-specific-page}
 
-Nella finestra Proprietà pagina vengono definite le varie proprietà della pagina, ad esempio i titoli, che vengono visualizzate nel sito Web e in altre aree.
+Nella finestra Proprietà pagina vengono definite le varie proprietà della pagina, ad esempio i titoli, che sono visualizzati nel sito web e in altre aree.
 
 1. Aprite la pagina da modificare.
 
@@ -195,4 +194,3 @@ Nella finestra Proprietà pagina vengono definite le varie proprietà della pagi
    Viene visualizzata una finestra di dialogo con più schede.
 
 1. Apportate le modifiche necessarie, quindi fate clic su **OK** per salvare.
-

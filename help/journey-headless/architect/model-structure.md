@@ -1,10 +1,11 @@
 ---
 title: Scopri come creare modelli di frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 2%
+ht-degree: 13%
 
 ---
 
@@ -91,7 +92,7 @@ La gestione dei modelli di frammenti di contenuto comporta:
 
 <!-- needs more details -->
 
-I modelli di frammento di contenuto devono essere pubblicati quando/prima che vengano pubblicati eventuali frammenti di contenuto dipendenti.
+I modelli per frammenti di contenuto devono essere pubblicati quando/prima che vengano pubblicati eventuali frammenti di contenuto dipendenti.
 
 >[!NOTE]
 >
@@ -117,15 +118,15 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
       * [Definizione del modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Abilitazione o disabilitazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Consentire modelli di frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Eliminazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Pubblicazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Annullamento della pubblicazione di un modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
       * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 

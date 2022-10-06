@@ -1,8 +1,8 @@
 ---
 title: Console Web
-seo-title: Console Web
+seo-title: Web Console
 description: Scopri come utilizzare la console web AEM.
-seo-description: Scopri come utilizzare la console web AEM.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 3%
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
-
 # Console Web{#web-console}
 
-La console Web in AEM si basa sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della comunità per implementare la piattaforma di servizi OSGi R4, che include il framework OSGi e i servizi standard.
+La console Web in AEM si basa sul [Console di gestione web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della comunità per implementare la piattaforma di servizi OSGi R4, che include il framework OSGi e i servizi standard.
 
 >[!NOTE]
 >
@@ -43,13 +42,13 @@ Tutte le modifiche apportate vengono immediatamente applicate al sistema in esec
 
 ## Configurazione {#configuration}
 
-La scheda **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per la configurazione AEM parametri di sistema.
+La **Configurazione** viene utilizzata per configurare i bundle OSGi ed è quindi il meccanismo sottostante per configurare i parametri di sistema AEM.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md) .
+>Vedi [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli.
 
-La scheda **Configurazione** è accessibile da:
+La **Configurazione** è accessibile tramite:
 
 * Menu a discesa:
 
@@ -65,14 +64,14 @@ Verrà visualizzato un elenco di configurazioni:
 
 Sono disponibili due tipi di configurazioni dagli elenchi a discesa in questa schermata:
 
-* ****
-ConfigurazioniConsente di aggiornare le configurazioni esistenti. Hanno un identificatore di identità persistente (PID) e possono essere:
+* **Configurazioni**
+Consente di aggiornare le configurazioni esistenti. Hanno un identificatore di identità persistente (PID) e possono essere:
 
    * standard e integrale a AEM; se vengono eliminati, i valori vengono ripristinati alle impostazioni predefinite.
    * istanze create da configurazioni di fabbrica; queste istanze vengono create dall&#39;utente, l&#39;eliminazione rimuove l&#39;istanza.
 
-* **Configurazioni**
-di fabbricaConsente di creare un&#39;istanza dell&#39;oggetto funzionalità richiesto.
+* **Configurazioni di fabbrica**
+Consente di creare un’istanza dell’oggetto funzionalità richiesto.
 
    A questo verrà assegnata un’identità persistente ed è quindi elencata nell’elenco a discesa Configurazioni .
 
@@ -92,7 +91,7 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
    Reimposta i parametri visualizzati sullo schermo su quelli salvati per ultimi.
 
-* **Elimina**
+* **Eliminare**
 
    Elimina la configurazione corrente. Se standard, i parametri vengono restituiti alle impostazioni predefinite. Se creato da una configurazione di fabbrica, l&#39;istanza specifica viene eliminata.
 
@@ -106,7 +105,7 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
 ## Bundle {#bundles}
 
-La scheda **Bundle** è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda utilizzando uno dei seguenti metodi:
+La **Bundle** tab è il meccanismo per installare i bundle OSGi necessari per AEM. È possibile accedere alla scheda utilizzando uno dei seguenti metodi:
 
 * Menu a discesa:
 
@@ -124,7 +123,7 @@ Questa scheda consente di:
 
 * **Installa o aggiorna**
 
-   Puoi **Sfoglia** per trovare il file contenente il tuo bundle e specificare se deve **Avviare** immediatamente e in quale **Livello iniziale**.
+   È possibile **Sfoglia** per trovare il file contenente il bundle e specificare se deve **Inizio** immediatamente e **Livello iniziale**.
 
 * **Ricarica**
 
@@ -158,7 +157,7 @@ Questa scheda consente di:
 
 ## Componenti {#components}
 
-La scheda **Componenti** consente di abilitare e/o disabilitare i vari componenti. È accessibile da:
+La **Componenti** consente di abilitare e/o disabilitare i vari componenti. È accessibile da:
 
 * Menu a discesa:
 
@@ -181,4 +180,3 @@ Facendo clic sul nome di un particolare componente verranno visualizzate ulterio
 >L’abilitazione o la disattivazione di un componente viene applicata solo fino al riavvio di AEM/CRX.
 >
 >Lo stato di avvio è definito nel descrittore del componente, che viene generato durante lo sviluppo e memorizzato nel bundle al momento della creazione del bundle.
-

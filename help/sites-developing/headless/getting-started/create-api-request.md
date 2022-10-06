@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 1%
+ht-degree: 75%
 
 ---
 
@@ -18,10 +18,10 @@ Scopri come utilizzare AEM API REST di Assets per gestire i frammenti di contenu
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
 * [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
-   * Per utilizzare questo [gli endpoint devono essere definiti e abilitati in AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)e, se necessario, il [Interfaccia GraphiQL installata](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
+   * Per utilizzare questo [gli endpoint devono essere definiti e abilitati in AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) e, se necessario, l’[Interfaccia GraphiQL deve essere installata](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Il resto di questa guida sarà incentrato sull’accesso GraphQL e la distribuzione di frammenti di contenuto.
+Il resto di questa guida sarà incentrato sull’accesso a GraphQL e la distribuzione di frammenti di contenuto.
 
 ## Come consegnare un frammento di contenuto utilizzando GraphQL {#how-to-deliver-a-content-fragment}
 
@@ -36,7 +36,7 @@ Gli architetti di informazioni dovranno progettare query per i loro endpoint di 
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
       ![Editor GraphiQL](../assets/graphiql.png)
 
-1. Supponendo che il modello che abbiamo creato si chiama `person` con campi `firstName`, `lastName`e `position`, possiamo creare una semplice query per recuperare il contenuto del frammento di contenuto.
+1. Supponendo che il modello che abbiamo creato si chiama `person` con campi `firstName`, `lastName` e `position`, possiamo creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
    ```text
    query 
@@ -55,7 +55,7 @@ Gli architetti di informazioni dovranno progettare query per i loro endpoint di 
 1. Inserisci la query nel pannello a sinistra.
    ![Query GraphiQL](../assets/graphiql-query.png)
 
-1. Fai clic sul pulsante **Esegui query** o utilizzare `Ctrl-Enter` il tasto di scelta rapida e i risultati vengono visualizzati come JSON nel pannello di destra.
+1. Fai clic sul pulsante **Esegui query** o utilizza il tasto di scelta rapida `Ctrl-Enter` e i risultati vengono visualizzati come JSON nel pannello di destra.
    ![Risultati GraphiQL](../assets/graphiql-results.png)
 
 1. Clic:
@@ -69,9 +69,9 @@ GraphQL può evitare richieste API iterative e consegna in eccesso, e consente i
 
 ## Passaggi successivi {#next-steps}
 
-Tutto qui! Ora hai una conoscenza di base della gestione dei contenuti headless in AEM. Naturalmente, ci sono molte altre risorse in cui puoi immergerti per una comprensione completa delle funzioni disponibili.
+Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless in AEM. Naturalmente, sono disponibili molte altre risorse da approfondire per una comprensione completa delle funzioni disponibili.
 
 * **[Browser di configurazione](create-configuration.md)** - Per informazioni dettagliate sul browser di configurazione AEM
-* **[Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)** - Per informazioni dettagliate sulla creazione e la gestione dei frammenti di contenuto
-* **[Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/assets-api-content-fragments.md)** - Per informazioni sull’accesso diretto AEM contenuto tramite l’API HTTP tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina)
-* **[API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)** - Per informazioni dettagliate su come distribuire i frammenti di contenuto senza problemi
+* **[Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)**: per informazioni dettagliate sulla creazione e la gestione dei frammenti di contenuto
+* **[Supporto per frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/assets-api-content-fragments.md)**: per informazioni dettagliate sull’accesso diretto ai contenuti AEM tramite l’API HTTP, mediante operazioni CRUD (Crea, Leggi, Aggiorna, Elimina)
+* **[API di GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)**: per informazioni dettagliate su come distribuire i frammenti di contenuto in modo corretto

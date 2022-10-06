@@ -1,8 +1,8 @@
 ---
 title: Condivisione di cartelle con Adobe Creative Cloud
-seo-title: Condivisione di cartelle con Adobe Creative Cloud
+seo-title: Folder sharing with Adobe Creative Cloud
 description: Informazioni sulla condivisione di cartelle con Adobe Creative Cloud
-seo-description: Informazioni sulla condivisione di cartelle con Adobe Creative Cloud
+seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 12%
+source-wordcount: '66'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->La funzione AEM alla condivisione cartelle Creative Cloud è obsoleta. Consigliamo vivamente ai clienti di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [AEM app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it). Ulteriori informazioni sono disponibili in [Best practice per l&#39;integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione AEM alla condivisione cartelle Creative Cloud è obsoleta. Consigliamo vivamente ai clienti di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it). Ulteriori informazioni in [Tecniche consigliate per l&#39;integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

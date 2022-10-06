@@ -1,5 +1,5 @@
 ---
-title: 'Procedure consigliate per l''utilizzo dei moduli adattivi '
+title: Procedure consigliate per l'utilizzo dei moduli adattivi
 seo-title: Best practices for working with adaptive forms
 description: Illustra le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni per il sistema AEM Forms.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
@@ -128,11 +128,11 @@ AEM Forms fornisce un [editor di regole](/help/forms/using/rule-editor.md) che c
 L’editor di regole fornisce un editor visivo e un editor di codice per la scrittura di regole. Quando scrivi regole utilizzando la modalità editor di codice , tieni presente quanto segue:
 
 * Utilizza nomi significativi e univoci per i campi e i componenti del modulo per evitare possibili conflitti durante la scrittura delle regole.
-* Utilizzo `this` di un componente per fare riferimento a se stesso in un&#39;espressione di una regola. La regola rimane valida anche se il nome del componente cambia. Esempio, `field1.valueCommit script: this.value > 10`.
+* Utilizzo `this` di un componente per fare riferimento a se stesso in un&#39;espressione di una regola. La regola rimane valida anche se il nome del componente cambia. Esempio: `field1.valueCommit script: this.value > 10`.
 
-* Utilizzare i nomi dei componenti quando si fa riferimento ad altri componenti del modulo. Utilizza la `value` per recuperare il valore di un campo o di un componente. Esempio, `field1.value`.
+* Utilizzare i nomi dei componenti quando si fa riferimento ad altri componenti del modulo. Utilizza la `value` per recuperare il valore di un campo o di un componente. Esempio: `field1.value`.
 
-* Per evitare conflitti, fai riferimento ai componenti in base a una gerarchia univoca relativa. Esempio, `parentName.fieldName`.
+* Per evitare conflitti, fai riferimento ai componenti in base a una gerarchia univoca relativa. Esempio: `parentName.fieldName`.
 
 * Quando si gestiscono regole complesse o comunemente utilizzate, è consigliabile scrivere regole di business logic come funzioni in una libreria client separata che è possibile specificare e riutilizzare nei moduli adattivi. La libreria client deve essere una libreria indipendente e non deve avere dipendenze esterne, ad eccezione di jQuery e Underscore.js. Puoi inoltre utilizzare la libreria client per applicare [riconvalida lato server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) dei dati del modulo inviati.
 * I moduli adattivi forniscono un set di API che è possibile utilizzare per comunicare ed eseguire azioni sui moduli adattivi. Alcune delle API chiave sono le seguenti. Per ulteriori informazioni, consulta [Riferimento API della libreria JavaScript per Forms adattivo](https://adobe.com/go/learn_aemforms_documentation_63).

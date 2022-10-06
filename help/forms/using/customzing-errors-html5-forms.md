@@ -1,27 +1,26 @@
 ---
-title: Personalizzazione dei messaggi di errore per i moduli HTML5
-seo-title: Personalizzazione dei messaggi di errore per i moduli HTML5
-description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5, tra cui come modificarne posizione e aspetto.
-seo-description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5, tra cui come modificarne posizione e aspetto.
+title: Personalizzazione dei messaggi di errore per i moduli di HTML5
+seo-title: Customizing error messages for HTML5 forms
+description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli di HTML5, incluso come modificarne posizione e aspetto.
+seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '515'
 ht-degree: 2%
 
 ---
 
+# Personalizzazione dei messaggi di errore per i moduli di HTML5 {#customizing-error-messages-for-html-forms}
 
-# Personalizzazione dei messaggi di errore per i moduli HTML5 {#customizing-error-messages-for-html-forms}
+Nei moduli di HTML5, i messaggi di errore e gli avvisi sono preconfigurati con una posizione e un aspetto fissi (font e colore), l’errore viene visualizzato solo per un campo selezionato e viene visualizzato un solo errore.
 
-Nei moduli HTML5, i messaggi di errore e gli avvisi hanno una posizione e un aspetto fissi (font e colore), l’errore viene visualizzato solo per un campo selezionato e viene visualizzato un solo errore.
-
-L’articolo fornisce i passaggi per personalizzare i messaggi di errore dei moduli HTML5 in,
+L’articolo fornisce i passaggi necessari per personalizzare i messaggi di errore dei moduli di HTML5,
 
 * modificare l’aspetto e la posizione dei messaggi di errore. È possibile visualizzare un errore nella parte superiore, inferiore e destra di qualsiasi campo.
 * visualizzare messaggi di errore per più campi in un dato momento.
@@ -37,10 +36,10 @@ Dopo aver estratto il pacchetto, apri la cartella CustomErrorManager-1.0-SNAPSHO
 
 ### Personalizzazione della posizione dei messaggi di errore  {#customizing-the-position-of-error-messages-nbsp}
 
-Per personalizzare la posizione del messaggio di errore, aggiungi il tag &lt;div> per ogni campo di errore e avviso, posiziona il tag &lt;div> a sinistra o a destra e applica gli stili CSS sul tag &lt;div> . Per i passaggi dettagliati, vedi la procedura seguente:
+Per personalizzare la posizione del messaggio di errore, aggiungi &lt;div> tag per ogni campo di errore e avviso, posizione &lt;div> a sinistra o a destra e applica gli stili CSS sul &lt;div> tag . Per i passaggi dettagliati, vedi la procedura seguente:
 
-1. Passa alla cartella `CustomErrorManager-1.0-SNAPSHOT`e apri la cartella `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` .
-1. Apri il file `customErrorManager.js` per la modifica. La funzione `markError` nel file accetta i seguenti parametri:
+1. Passa a `CustomErrorManager-1.0-SNAPSHOT`e apri la `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella.
+1. Apri `customErrorManager.js` file da modificare. La `markError` nel file accetta i seguenti parametri:
 
    |  |  |
    |---|---|
@@ -78,7 +77,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungi il tag &lt;div
    ```
 
 1. Salva e chiudi il file 
-1. Passa alla cartella `CustomErrorManager-1.0-SNAPSHOT` e crea un archivio delle cartelle jcr_root e META-INF. Rinomina l&#39;archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Passa a `CustomErrorManager-1.0-SNAPSHOT` e crea un archivio delle cartelle jcr_root e META-INF. Rinomina l&#39;archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizza il gestore dei pacchetti per caricare e installare il pacchetto.
 
 ## Visualizza messaggi di errore per più campi  {#display-error-messages-for-multiple-fields-nbsp}
@@ -121,11 +120,10 @@ Utilizza il pacchetto allegato per visualizzare contemporaneamente i messaggi di
 
 ## Eseguire il rendering del modulo con il nuovo profilo.  {#render-the-form-with-the-new-profile-nbsp}
 
-I moduli html5 utilizzano un profilo predefinito: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;nome dell&#39;xdp>
+I moduli html5 utilizzano un profilo predefinito: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
-Per visualizzare un modulo con messaggi di errore personalizzati, eseguire il rendering del modulo con un profilo di errore: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;nome dell&#39;xdp>
+Per visualizzare un modulo con messaggi di errore personalizzati, eseguire il rendering del modulo con un profilo di errore: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
 >[!NOTE]
 >
 >Il pacchetto allegato installa il profilo di errore.
-

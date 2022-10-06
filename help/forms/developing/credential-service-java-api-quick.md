@@ -1,6 +1,6 @@
 ---
 title: QuickStart(SOAP) API Java per servizi creativi
-seo-title: QuickStart(SOAP) API Java per servizi creativi
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: QuickStart(SOAP) API Java per servizi creativi
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
-
-# Guida rapida a Java API per servizi credenziali (SOAP) {#credential-service-java-api-quickstart-soap}
+# Guida rapida a Java API per il servizio credenziali (SOAP) {#credential-service-java-api-quickstart-soap}
 
 Java API Quick Start(SOAP) è disponibile per il servizio Credenziali.
 
@@ -30,7 +29,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su FormsServer distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su FormsServer distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -38,7 +37,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 ## Avvio rapido (modalità SOAP): Importazione di credenziali tramite l’API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (Vedere [Importazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (Vedi [Importazione delle credenziali tramite l’API di Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -137,9 +136,9 @@ Nell&#39;esempio di codice seguente viene importata una credenziale basata su un
  
 ```
 
-## Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l&#39;API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l’API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un valore alias *secure*. (Vedere [Eliminazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un valore di alias *sicuro*. (Vedi [Eliminazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -229,4 +228,3 @@ Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un
  }
  
 ```
-

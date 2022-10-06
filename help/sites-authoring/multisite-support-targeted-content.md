@@ -1,22 +1,21 @@
 ---
 title: Utilizzo dei contenuti di destinazione in più siti
-seo-title: Utilizzo dei contenuti di destinazione in più siti
+seo-title: Working with Targeted Content in Multisites
 description: Se devi gestire contenuti di destinazione, ad esempio attività, esperienze e offerte tra i vari siti, è possibile sfruttare il supporto per più siti AEM integrato per il contenuto di destinazione
-seo-description: Se devi gestire contenuti di destinazione, ad esempio attività, esperienze e offerte tra i vari siti, è possibile sfruttare il supporto per più siti AEM integrato per il contenuto di destinazione
+seo-description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
 uuid: acb2ffe1-d846-4580-bb69-d5af860796db
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2906'
-ht-degree: 92%
+source-wordcount: '2872'
+ht-degree: 100%
 
 ---
-
 
 # Utilizzo dei contenuti di destinazione in più siti{#working-with-targeted-content-in-multisites}
 
@@ -24,7 +23,7 @@ Per gestire i contenuti di destinazione, come le attività, le esperienze e le o
 
 >[!NOTE]
 >
->Utilizzare il supporto per più siti per il contenuto di destinazione è una funzionalità avanzata. Per utilizzare questa funzione, è necessario avere familiarità con [Multi Site Manager](/help/sites-administering/msm.md) e con l&#39;integrazione con AEM [ Adobe Target](/help/sites-administering/target.md).
+>Utilizzare il supporto per più siti per il contenuto di destinazione è una funzionalità avanzata. Per utilizzare questa funzionalità, è necessario avere dimestichezza con [Multi Site Manager](/help/sites-administering/msm.md) e [l’integrazione Adobe Target](/help/sites-administering/target.md) con AEM.
 
 Il presente documento descrive quanto segue:
 
@@ -45,7 +44,7 @@ Puoi sospendere o ripristinare l’ereditarietà in qualsiasi momento. Inoltre, 
 
 Il supporto multisito per i contenuti di destinazione è disponibile immediatamente e consente di trasferire i contenuti di destinazione dalla pagina maestro gestita tramite MSM a una Live Copy locale o di gestire le modifiche globali e locali di tali contenuti.
 
-La si gestisce in una **Area**. Le aree separano il contenuto di destinazione (attività, esperienze e offerte) utilizzato in siti diversi e forniscono un meccanismo MSM per creare e gestire l’ereditarietà di contenuti di destinazione insieme all’ereditarietà del sito. In questo modo si impedisce di dover ricreare i contenuti di destinazione in siti ereditati come era richiesto in AEM prima di 6.2.
+È possibile gestirlo in un’**area**. Le aree separano il contenuto di destinazione (attività, esperienze e offerte) utilizzato in siti diversi e forniscono un meccanismo MSM per creare e gestire l’ereditarietà di contenuti di destinazione insieme all’ereditarietà del sito. In questo modo si impedisce di dover ricreare i contenuti di destinazione in siti ereditati come era richiesto in AEM prima di 6.2.
 
 In un’area, solo le attività associate a tale area vengono inviate a Live Copy. L’Area master è selezionata per impostazione predefinita. Dopo aver creato le aree aggiuntive, puoi collegarle ai siti o le pagine per indicare quale contenuto di destinazione viene indirizzato.
 
@@ -57,12 +56,10 @@ Un sito o una Live Copy collegano a un’area che contiene le attività che devo
 >
 >* Quando utilizzi il rollout o le Live Copy è richiesta una licenza MSM.
 >* Quando utilizzi la sincronizzazione con Adobe Target è richiesta la licenza per Adobe Target.
-
 >
 
 
-
-## Casi di utilizzo  {#use-cases}
+## Casi di utilizzo {#use-cases}
 
 Puoi installare il supporto multisito per contenuti di destinazione in diversi modi, a seconda del caso. In questa sezione viene descritto il funzionamento teorico di questo supporto con un unico marchio. Inoltre, nell’[esempio: Targeting del contenuto in base ai dati geografici](#example-targeting-content-based-on-geography), puoi vedere un’applicazione reale di ottimizzazione del contenuto multisito.
 
@@ -80,7 +77,7 @@ Con il supporto multisito per contenuti di destinazione è possibile, ad esempio
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area X
 
-* Un insieme distinto di contenuti mirati *ereditati* da un altro sito tramite MSM - Il contenuto può essere implementato in modo unidirezionale dal master alla live copy. Esempio:
+* Un set distinto di contenuti mirati *ereditato* da un altro sito tramite MSM: il contenuto può essere implementato in modo unidirezionale dalla pagina master alla Live Copy. Esempio:
 
    * Il sito A è collegato all’area X
    * Il sito B è collegato all’Area Y (che è una Live Copy dell’Area X).
@@ -91,7 +88,7 @@ Puoi avere **più** marchi in un sito; la situazione reale potrebbe essere più 
 
 >[!NOTE]
 >
->Per un&#39;analisi più tecnica di questa funzione, consultate [How Multisite Management for Targeting Content is Structures](/help/sites-authoring/technical-multisite-targeted.md) (Gestione multisito per contenuti mirati).
+>Per informazioni tecniche su questa funzione, consulta [Struttura della gestione multisito per contenuti mirati](/help/sites-authoring/technical-multisite-targeted.md).
 
 ## Esempio: targeting del contenuto in base all’area geografica {#example-targeting-content-based-on-geography}
 
@@ -132,7 +129,7 @@ In qualsiasi momento, puoi sospendere l’ereditarietà o scollegarla completame
 
 >[!NOTE]
 >
->Per un&#39;analisi più tecnica di questa funzione, consultate [How Multisite Management for Targeting Content is Structures](/help/sites-authoring/technical-multisite-targeted.md) (Gestione multisito per contenuti mirati).
+>Per informazioni tecniche su questa funzione, consulta [Struttura della gestione di più siti per contenuti mirati](/help/sites-authoring/technical-multisite-targeted.md).
 
 ### Creazione di una nuova area e creazione di una nuova area come Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -142,7 +139,7 @@ Se, tuttavia, hai impostato l’ereditarietà tramite l’MSM tra i due siti, è
 
 >[!NOTE]
 >
->Il rollout predefinito attiva i rollout successivi del contenuto di destinazione ogni volta che una pagina è una Live Copy collegata a un&#39;area che è di per sé una Live Copy dell&#39;area collegata al blueprint Pages.
+>Il rollout predefinito attiva i rollout successivi di contenuti di destinazione ogni volta che una pagina è una Live Copy, attraverso il collegamento a un’area che è una Live Copy dell’area associata alle pagine blueprint.
 
 Ad esempio, nel diagramma seguente, sono disponibili quattro siti in cui due condividono l’area master (e tutte le attività che fanno parte di tale area), un sito ha un’area che è una Live Copy di un’area, quindi condivide le attività dopo il rollout, e un sito è completamente diverso (che quindi richiede un’area per le relative attività).
 
@@ -155,7 +152,7 @@ Per ottenere questo risultato in AEM, effettua le seguenti operazioni:
 * Il sito C si collega all’Area ereditata, che è una Live Copy dell’Area master: Crea area come Live Copy in cui viene creata una Live Copy in base all’Area master. L’area ereditata eredita le attività dall’Area master dopo il rollout.
 * Il sito D si collega alla propria Area isolata: Crea area in cui viene creata una nuova area senza attività ancora definite. L’area isolata non condivide le attività con nessun altro sito.
 
-## Creazione di nuove aree  {#creating-new-areas}
+## Creazione di nuove aree {#creating-new-areas}
 
 Le aree possono misurare attività e offerte. Dopo aver creato un’area in una di esse (ad esempio, attività), avrai a disposizione anche l’area disponibile nell’altra (ad esempio, offerte).
 
@@ -221,13 +218,13 @@ Una volta stabilita la connessione, sono disponibili solo attività, esperienze 
 
 >[!NOTE]
 >
->Le pagine o i siti che fanno riferimento alla stessa area utilizzano il *set di attività, esperienze e offerte condiviso*. La modifica di un&#39;attività, un&#39;esperienza o un&#39;offerta condivisa da più siti interessa tutti i siti.
+>Le pagine o i siti che fanno riferimento alla stessa area utilizzano *lo stesso* insieme comune delle attività, delle esperienze e delle offerte. La modifica di attività, esperienze o offerte che viene condivisa da più siti agisce su tutti i siti.
 
 Per collegare un sito a un’area:
 
 1. Accedi al sito (o alla pagina) a cui desideri collegare un’area.
 1. Seleziona il sito o la pagina e tocca o fai clic su **Visualizza proprietà**.
-1. Toccate o fate clic sulla scheda **Personalizzazione**.
+1. Tocca o fai clic sulla scheda **Personalizzazione**.
 1. Nel menu **Marchio**, seleziona il marchio a cui desideri collegare l’area. Dopo aver selezionato il marchio, le aree disponibili sono disponibili nel menu **Riferimento area**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
@@ -236,7 +233,7 @@ Per collegare un sito a un’area:
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-## Distacco di Live Copy o dissociazione di ereditarietà di contenuti di destinazione.{#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
+## Distacco di Live Copy o dissociazione di ereditarietà di contenuti di destinazione. {#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
 
 È possibile sospendere o scollegare l’ereditarietà di contenuti di destinazione. Si sospende o si scollega la Live Copy per attività. Ad esempio, puoi modificare le esperienze nell’attività, ma se l’attività è ancora collegata alla copia ereditata, non è possibile modificare l’esperienza o una qualsiasi delle proprietà dell’attività.
 
@@ -250,12 +247,10 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >
 >* Puoi sospendere o scollegare solo le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuove** esperienze e offerte locali per l’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
-
 >
 
 
-
-### Sospensione dell’ereditarietà  {#suspending-inheritance}
+### Sospensione dell’ereditarietà {#suspending-inheritance}
 
 Sospendere o scollegare ereditarietà di contenuti di destinazione in un’attività:
 
@@ -268,7 +263,7 @@ Sospendere o scollegare ereditarietà di contenuti di destinazione in un’attiv
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Toccate o fate clic su **Sospendi** per sospendere l&#39;attività. Le attività sospese sono contrassegnate in rosso.
+1. Tocca o fai clic su **Sospendi** per sospendere l’attività. Le attività sospese sono contrassegnate in rosso.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -289,7 +284,7 @@ Se è stata sospesa l’ereditarietà di contenuti di destinazione in un’attiv
 
 Per ripristinare l’ereditarietà di contenuti di destinazione in un’attività:
 
-1. Andate alla pagina in cui desiderate ripristinare l&#39;ereditarietà e toccate o fate clic su **Targeting** nel menu a discesa della modalità.
+1. Accedi alla pagina in cui desideri ripristinare l’ereditarietà e tocca o fai clic su **Targeting** nel menu a discesa della modalità.
 1. Tocca o fai clic su **Inizia impostazione destinazione**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Riprendi Live Copy**.
 
@@ -297,13 +292,12 @@ Per ripristinare l’ereditarietà di contenuti di destinazione in un’attivit�
 
 1. Tocca o fai clic su **Ripristina** per confermare che desideri ripristinare l’ereditarietà della Live Copy. Tutte le modifiche apportate all’attività corrente andranno perse se ripristini l’ereditarietà.
 
-## Eliminazione delle aree  {#deleting-areas}
+## Eliminazione delle aree {#deleting-areas}
 
-Quando elimini un’area, elimini tutte le attività in tale area. AEM ti avvisa prima di poter eliminare un’area. Se si elimina un&#39;area a cui è collegato un sito, la mappatura di questo marchio verrà automaticamente mappata all&#39;area master.
+Quando elimini un’area, elimini tutte le attività in tale area. AEM ti avvisa prima di poter eliminare un’area. Se elimini un’area a cui è collegato un sito, la mappatura per questo marchio riassocia automaticamente all’area master.
 
 Eliminare un’area:
 
-1. Passa a **Personalizzazione** > **Attività** o **Offerte** e quindi al tuo marchio.
+1. Vai su **Personalizzazione** > **Attività** or **Offerte** e quindi al tuo marchio.
 1. Tocca o fai clic sull’icona accanto all’area da cancellare.
 1. Tocca o fai clic su **Elimina** e conferma l’eliminazione dell’area.
-

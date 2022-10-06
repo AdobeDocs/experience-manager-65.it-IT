@@ -1,50 +1,49 @@
 ---
 title: Suggerimenti sulla codifica
-seo-title: Suggerimenti sulla codifica
+seo-title: Coding Tips
 description: Suggerimenti per la codifica dei AEM
-seo-description: Suggerimenti per la codifica dei AEM
+seo-description: Tips for coding for AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
+# Suggerimenti sulla codifica{#coding-tips}
 
-# Suggerimenti per la codifica{#coding-tips}
+## Utilizza taglibs o HTL il più possibile {#use-taglibs-or-htl-as-much-as-possible}
 
-## Usare il più possibile taglibs o HTL {#use-taglibs-or-htl-as-much-as-possible}
+L&#39;inclusione degli script in JSP rende difficile il debug dei problemi nel codice. Inoltre, includendo gli script in JSP, è difficile separare la logica di business dal livello di visualizzazione, che è una violazione del principio di responsabilità singola e del modello di progettazione MVC.
 
-L&#39;inclusione di script in JSP rende difficile il debug dei problemi nel codice. Inoltre, includendo gli script in JSP, è difficile separare la logica aziendale dal livello di visualizzazione, che è una violazione del principio di responsabilità singola e del modello di progettazione MVC.
+### Scrivi codice leggibile {#write-readable-code}
 
-### Codice leggibile in scrittura {#write-readable-code}
+Il codice viene scritto una volta, ma letto molte volte. Trascorrere un po&#39; di tempo in anticipo per pulire il codice che scriviamo pagherà dividendi lungo la strada come noi e altri sviluppatori hanno bisogno di leggerlo più tardi.
 
-Il codice viene scritto una volta, ma letto più volte. Trascorrere un po &#39;di tempo in avanti per pulire il codice che scriviamo pagherà i dividendi lungo la strada come noi e altri sviluppatori hanno bisogno di leggerlo più tardi.
+### Scegliere i nomi che rivelano le intenzioni {#choose-intention-revealing-names}
 
-### Scegliere i nomi di rivelazione delle intenzioni {#choose-intention-revealing-names}
+Idealmente, un altro programmatore non dovrebbe dover aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di dire cosa fa un metodo senza leggerlo. Meglio possiamo abbonarci a queste idee, più facile sarà leggere il nostro codice e più velocemente saremo in grado di scrivere e cambiare il nostro codice.
 
-Idealmente, un altro programmatore non dovrebbe dover aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di capire cosa fa un metodo senza leggerlo. Meglio possiamo abbonarci a queste idee, più facile sarà leggere il nostro codice e più velocemente saremo in grado di scrivere e cambiare il nostro codice.
-
-Nella base di codici AEM sono utilizzate le seguenti convenzioni:
-
-
-* Un&#39;unica implementazione di un&#39;interfaccia è denominata `<Interface>Impl`, ovvero `ReaderImpl`.
-* Più implementazioni di un&#39;interfaccia sono denominate `<Variant><Interface>`, ovvero `JcrReader` e `FileSystemReader`.
-* Le classi di base astratte sono denominate `Abstract<Interface>` o `Abstract<Variant><Interface>`.
-* I pacchetti sono denominati `com.adobe.product.module`.  Ogni manufatto Maven o bundle OSGi deve avere un proprio pacchetto.
-* Le implementazioni Java vengono inserite in un pacchetto impl sotto la relativa API.
+Nella base di codice AEM vengono utilizzate le seguenti convenzioni:
 
 
-Tenete presente che queste convenzioni non devono necessariamente essere applicate alle implementazioni dei clienti, ma è importante che le convenzioni siano definite e rispettate in modo che il codice possa essere mantenuto.
+* Viene denominata una singola implementazione di un’interfaccia `<Interface>Impl`, vale a dire `ReaderImpl`.
+* Sono denominate più implementazioni di un&#39;interfaccia `<Variant><Interface>`, vale a dire `JcrReader` e `FileSystemReader`.
+* Le classi base astratte sono denominate `Abstract<Interface>` o `Abstract<Variant><Interface>`.
+* I pacchetti sono denominati `com.adobe.product.module`.  Ogni artefatto Maven o bundle OSGi deve avere un proprio pacchetto.
+* Le implementazioni Java vengono inserite in un pacchetto impl sotto la loro API.
 
-Idealmente, i nomi dovrebbero rivelare le loro intenzioni. Un test comune del codice per i nomi che non sono chiari come dovrebbero essere è la presenza di commenti che spiegano a cosa serve la variabile o il metodo:
+
+Tieni presente che queste convenzioni non devono necessariamente essere applicate alle implementazioni dei clienti, ma è importante che le convenzioni siano definite e rispettate in modo che il codice possa rimanere gestibile.
+
+Idealmente, i nomi dovrebbero rivelare le loro intenzioni. Un test comune del codice per quando i nomi non sono chiari come dovrebbero essere è la presenza di commenti che spiegano a cosa serve la variabile o il metodo:
 
 <table>
  <tbody>
@@ -57,48 +56,48 @@ Idealmente, i nomi dovrebbero rivelare le loro intenzioni. Un test comune del co
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
+   <td><p>//Ottenere immagini con tag<br /> public List getItems() {}</p> </td>
    <td><p>public List getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Non ripetere {#don-t-repeat-yourself}
+### Non ripeterti  {#don-t-repeat-yourself}
 
-DRY afferma che lo stesso set di codici non deve mai essere duplicato. Questo vale anche per cose come i letterali stringa. La duplicazione del codice apre la porta a difetti ogni volta che qualcosa deve cambiare e deve essere ricercato ed eliminato.
+DRY afferma che lo stesso set di codice non deve mai essere duplicato. Questo vale anche per cose come le stringhe letterali. La duplicazione del codice apre la strada ai difetti ogni volta che qualcosa deve cambiare e deve essere ricercato ed eliminato.
 
 ### Evitare regole CSS nude {#avoid-naked-css-rules}
 
-Le regole CSS devono essere specifiche per l&#39;elemento di destinazione nel contesto dell&#39;applicazione. Ad esempio, una regola CSS applicata a *.content.center* sarebbe troppo ampia e potrebbe potenzialmente avere un impatto su un sacco di contenuto nel sistema, richiedendo ad altri di ignorare questo stile in futuro. *.myapp-* centertextè una regola più specifica in quanto specifica il  ** testo centrato nel contesto dell&#39;applicazione.
+Le regole CSS devono essere specifiche per l’elemento di destinazione nel contesto dell’applicazione. Ad esempio, una regola CSS applicata a *.content .center* sarebbe eccessivamente ampio e potrebbe potenzialmente influenzare molti contenuti nel sistema, richiedendo ad altri di ignorare questo stile in futuro. *.myapp-centertext* sarebbe una regola più specifica mentre specifica centrato *text* nel contesto dell&#39;applicazione.
 
-### Eliminazione dell&#39;utilizzo di API obsolete {#eliminate-usage-of-deprecated-apis}
+### Eliminazione dell’utilizzo di API obsolete {#eliminate-usage-of-deprecated-apis}
 
-Quando un&#39;API è obsoleta, è sempre meglio trovare il nuovo approccio consigliato invece di affidarsi all&#39;API obsoleta. In questo modo, gli aggiornamenti saranno più fluidi in futuro.
+Quando un’API è obsoleta, è sempre meglio trovare il nuovo approccio consigliato invece di basarsi sull’API obsoleta. In questo modo gli aggiornamenti saranno più semplici in futuro.
 
 ### Scrivi codice localizzabile {#write-localizable-code}
 
 Le stringhe che non vengono fornite da un autore devono essere racchiuse in una chiamata al dizionario i18n di AEM tramite *I18n.get()* in JSP/Java e *CQ.I18n.get()* in JavaScript. Questa implementazione restituirà la stringa che gli è stata passata se non viene trovata alcuna implementazione, quindi offre la flessibilità di implementare la localizzazione dopo l&#39;implementazione delle funzionalità nella lingua primaria.
 
-### Escape resource path for security {#escape-resource-paths-for-safety}
+### Esci dai percorsi delle risorse per la sicurezza {#escape-resource-paths-for-safety}
 
-Mentre i percorsi nel JCR non devono contenere spazi, la loro presenza non deve causare l&#39;interruzione del codice. Jackrabbit fornisce una classe di utilità Testo con i metodi *escape()* e *escapePath()*. Per i JSP, l&#39;interfaccia Granite espone una funzione *granite:encodeURIPath() EL*.
+Anche se i percorsi nel JCR non devono contenere spazi, la loro presenza non deve causare l&#39;interruzione del codice. Jackrabbit fornisce una classe di utilità di testo con *escape()* e *escapePath()* metodi. Per i JSP, l’interfaccia Granite espone un *granite:encodeURIPath() EL* funzione .
 
-### Utilizzate l&#39;API XSS e/o l&#39;HTL per proteggere dagli attacchi di script tra siti {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
+### Utilizza l’API XSS e/o HTL per proteggere dagli attacchi di script tra siti diversi {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM fornisce un&#39;API XSS per pulire facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti. Inoltre, HTL ha queste protezioni integrate direttamente nel linguaggio di modellazione. Un foglio di supporto API è disponibile per il download all&#39;indirizzo [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM fornisce un’API XSS per pulire facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti diversi. Inoltre, HTL dispone di queste protezioni integrate direttamente nel linguaggio dei modelli. È disponibile un foglio di supporto API da scaricare all’indirizzo [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implementare la registrazione appropriata {#implement-appropriate-logging}
 
-Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e dovrebbe essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per garantire la coerenza dell&#39;amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere quale livello registrare un messaggio, consigliamo di utilizzare le seguenti linee guida:
+Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per motivi di coerenza nell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. È consigliabile utilizzare le seguenti linee guida quando si sceglie a quale livello registrare un messaggio:
 
-* ERRORE: Quando un elemento è danneggiato nel codice e l&#39;elaborazione non può continuare. Ciò si verificherà spesso a seguito di un&#39;eccezione imprevista. In genere è utile includere tracce di stack in questi scenari.
-* AVVISO: Quando qualcosa non funziona correttamente, ma l&#39;elaborazione può continuare. Spesso questo è il risultato di un&#39;eccezione prevista, ad esempio *PathNotFoundException*.
-* INFORMAZIONI: Informazioni utili per il monitoraggio di un sistema. Tieni presente che questa è l&#39;impostazione predefinita e che la maggior parte dei clienti lascerà tale impostazione agli ambienti. Pertanto, non utilizzarla eccessivamente.
-* DEBUG: Informazioni di livello inferiore sull&#39;elaborazione. Utile quando si esegue il debug di un problema con il supporto.
-* TRACE: Le informazioni di livello più basso, ad esempio i metodi di immissione/uscita. In genere questo viene utilizzato solo dagli sviluppatori.
+* ERRORE: Quando qualcosa è rotto nel codice e l&#39;elaborazione non può continuare. Questo si verificherà spesso a seguito di un&#39;eccezione imprevista. In genere è utile includere tracce di stack in questi scenari.
+* AVVERTENZA: Quando qualcosa non funziona correttamente, ma l&#39;elaborazione può continuare. Questo sarà spesso il risultato di un&#39;eccezione che ci aspettavamo, come *PathNotFoundException*.
+* INFORMAZIONI: Informazioni utili per il monitoraggio di un sistema. Tieni presente che questa è l’impostazione predefinita e che la maggior parte dei clienti lo lascerà in posizione nei propri ambienti. Pertanto, non utilizzarlo eccessivamente.
+* DEBUG: Informazioni di livello inferiore sull’elaborazione. Utile quando si esegue il debug di un problema con il supporto.
+* TRACE: Informazioni di livello più basso, ad esempio metodi di immissione/uscita. In genere questo viene utilizzato solo dagli sviluppatori.
 
 Nel caso di JavaScript, *console.log* deve essere utilizzato solo durante lo sviluppo e tutte le istruzioni di registro devono essere rimosse prima del rilascio.
 
 ### Evitare la programmazione di cult cargo {#avoid-cargo-cult-programming}
 
-Evitate di copiare il codice senza comprendere cosa fa. In caso di dubbi, è sempre meglio chiedere a qualcuno che ha più esperienza con il modulo o l&#39;API su cui non si è chiari.
+Evita di copiare il codice senza capire cosa fa. In caso di dubbi, è sempre meglio chiedere a qualcuno che ha più esperienza con il modulo o l’API su cui non sei chiaro.

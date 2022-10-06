@@ -1,8 +1,8 @@
 ---
 title: Console Rapporti
-seo-title: Console Rapporti
+seo-title: Reports Console
 description: Scopri come accedere ai rapporti
-seo-description: Scopri come accedere ai rapporti
+seo-description: Learn how to access reports
 uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '618'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ In generale, le varie relazioni sono:
 
 * [Rapporto assegnazioni](#assignments-report)
 
-   Per una [community di abilitazione](/help/communities/overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro assegnazioni, con un punteggio associato se si implementa lo standard SCORM.
+   Per un [comunità di abilitazione](/help/communities/overview.md#enablement-community)fornisce una panoramica dell’avanzamento degli studenti nelle loro assegnazioni, con un punteggio associato se si implementa lo standard SCORM.
 
 * [Rapporto visualizzazioni](#views-report)
 
@@ -47,7 +47,7 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
 
 ### Rapporti per siti della community {#reports-for-community-sites}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Comunità]** > **[!UICONTROL Rapporti]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** >  **[!UICONTROL Rapporti]**
 
 * Scegli tra:
 
@@ -59,7 +59,7 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
       * Genera un report per il sito della community selezionato, il tipo di contenuto e il periodo di tempo.
    * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un rapporto per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
+      * genera un rapporto per il sito della community, il tipo di contenuto e il periodo di tempo selezionati.
 
 
 
@@ -67,13 +67,13 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
 
 ### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
 
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Comunità]** > **[!UICONTROL Risorse]**
+* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** >  **[!UICONTROL Risorse]**
 
 * Seleziona un sito community di abilitazione esistente:
 
-   * Seleziona l’icona **Report** per generare rapporti che coprono tutte le risorse di abilitazione.
+   * Seleziona **Rapporto** icona per generare rapporti che coprono tutte le risorse di abilitazione.
    * Seleziona un percorso di apprendimento per l’abilitazione.
-   * Seleziona l&#39;icona **Report** per generare report per:
+   * Seleziona **Rapporto** icona per generare rapporti per:
 
       * Le risorse di abilitazione incluse.
       * Gli studenti assegnati al percorso di apprendimento.
@@ -180,10 +180,10 @@ Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non è presente alcun sito community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
+Se non sono elencati siti della community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
 
 ### I rapporti non vengono visualizzati nell’istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell’istanza di authoring di AEM, controlla le personalizzazioni, ad esempio la mappatura degli URL sull’istanza di pubblicazione. Se la mappatura URL viene eseguita solo sull&#39;istanza di pubblicazione AEM del sito Communities, assicurati che lo stesso sia stato configurato nell&#39;istanza di authoring AEM nella configurazione **Site Trend Report Social Component Factory** .
+Se i rapporti non vengono visualizzati nell’istanza di authoring di AEM, controlla le personalizzazioni, ad esempio la mappatura degli URL sull’istanza di pubblicazione. Se la mappatura URL viene eseguita solo sull’istanza di pubblicazione AEM del sito Communities, assicurati che lo stesso sia stato configurato nell’istanza di authoring AEM in **Report Trend del sito Social Component Factory** configurazione.
 
 ![Mappatura URL su AEM Author](assets/sitetrend.png)

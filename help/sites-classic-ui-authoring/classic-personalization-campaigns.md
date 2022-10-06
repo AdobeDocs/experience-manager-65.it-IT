@@ -1,22 +1,21 @@
 ---
 title: Gestione delle campagne
-seo-title: Gestione delle campagne
+seo-title: Campaign Management
 description: La gestione delle campagne consente ai professionisti del marketing digitale di inviare contenuti personalizzati e creare esperienze mirate per i visitatori. Permette inoltre di orchestrare le campagne marketing per web, e-mail e dispositivi mobili, per meglio coinvolgere i visitatori.
-seo-description: La gestione delle campagne consente ai professionisti del marketing digitale di inviare contenuti personalizzati e creare esperienze mirate per i visitatori. Permette inoltre di orchestrare le campagne marketing per web, e-mail e dispositivi mobili, per meglio coinvolgere i visitatori.
+seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d1741525-a475-4a76-bd16-55318023495e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '628'
 ht-degree: 94%
 
 ---
-
 
 # Gestione delle campagne{#campaign-management}
 
@@ -37,15 +36,15 @@ In questo documento vengono illustrati i vari elementi che compongono le campagn
 La gestione delle campagne consiste di vari elementi:
 
 * **Marchi**
-In AEM, i marchi sono l&#39;unità di livello principale e costituiscono una raccolta di 
+In AEM, i marchi sono l’unità di livello superiore e costituiscono una raccolta di 
 **Campagne**.
 
-* **CampagneUna campagna è un insieme di singole campagne**
- 
+* **Campagne**
+Una campagna è una raccolta individuale 
 **Esperienze**.
 
-* ****
-EsperienzeIl contenuto specifico forma le varie esperienze, presentate al visitatore in 
+* **Esperienze**
+Le esperienze sono composte di contenuti mirati, presentati al visitatore all’indirizzo 
 **Punti di contatto**. Sono disponibili diversi tipi di esperienze:
 
    * **Teaser**
@@ -96,4 +95,3 @@ EsperienzeIl contenuto specifico forma le varie esperienze, presentate al visita
    È possibile accedervi da diversi luoghi (con etichetta **Campagne**) oppure tramite l’URL:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-

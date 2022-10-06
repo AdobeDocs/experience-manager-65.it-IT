@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-feature: Modalità Scene7, Modalità ibrida
+feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '524'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Quando si passa da Dynamic Media-Hybrid a Dynamic Media-Scene7 sono disponibili 
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di non migrare un’implementazione Dynamic Media-Hybrid a Dynamic Media-Scene7 su istanze di produzione live.
+>L’Adobe consiglia di non migrare un’implementazione ibrida di Dynamic Media a Dynamic Media-Scene7 nelle istanze di produzione live.
 
 ## Opzione 1 - Provisioning di una nuova istanza di Dynamic Media-Scene7 sull&#39;Experience Manager {#provision-new-dms7}
 

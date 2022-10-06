@@ -1,41 +1,40 @@
 ---
 title: Informazioni sulla struttura delle cartelle
-seo-title: Informazioni sulla struttura delle cartelle
-description: Come comprendere la struttura di cartelle  codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
-seo-description: Come comprendere la struttura di cartelle  codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
+seo-title: Understanding the folder structure
+description: Informazioni sulla struttura delle cartelle del codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
+seo-description: How to understand the folder structure of AEM Forms workspace source code to customize.
 uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
 
-
 # Informazioni sulla struttura delle cartelle {#understanding-the-folder-structure}
 
- componenti dell’area di lavoro di AEM Forms sono progettati su un’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
+I componenti dell’area di lavoro di AEM Forms sono progettati sull’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
 
-* Modello, che contiene logica di business.
-* Modello, ovvero un file HTML contenente controlli di interfaccia.
+* Modello, che contiene la logica di business.
+* Modello, ovvero un file HTML contenente i controlli dell’interfaccia.
 * Visualizza, che funge da classe Controller in Modello.
 
-Le risorse per tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, effettuate l’accesso al CRXDE Lite e andate a `/libs/ws/js/runtime/`.
+Le risorse per tutti i componenti vengono posizionate nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Lite e sfoglia fino a `/libs/ws/js/runtime/`.
 
-**** modelsContiene modelli di dorsale.
+**modelli** Contiene modelli di dorsale.
 
-**** visteContiene le viste della colonna vertebrale.
+**visualizzazioni** Contiene le visualizzazioni della spina dorsale.
 
-**** modelliContiene solo i modelli HTML per i componenti.
+**modelli** Contiene solo i modelli di HTML per i componenti.
 
-**** routeContiene route universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
+**rotte** Contiene percorsi universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
 
-**** servicesContiene l&#39;interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull&#39;endpoint REST.
+**servizi** Contiene l’interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
 
-**** utilContiene utility generiche utilizzabili da più componenti.
+**util** Contiene utilità generiche utilizzabili da più componenti.

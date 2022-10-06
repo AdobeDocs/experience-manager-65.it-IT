@@ -1,39 +1,38 @@
 ---
-title: ' AEM Forms Workspace Architecture'
-seo-title: ' AEM Forms Workspace Architecture'
-description: Informazioni concettuali e panoramica dell'architettura dell'area di lavoro di LiveCycle  AEM Forms.
-seo-description: Informazioni concettuali e panoramica dell'architettura dell'area di lavoro di LiveCycle  AEM Forms.
+title: Architettura di AEM Forms Workspace
+seo-title: AEM Forms Workspace Architecture
+description: Informazioni concettuali e panoramica dell’architettura di LiveCycle AEM Forms Workspace.
+seo-description: Conceptual information and overview of the architecture of LiveCycle AEM Forms workspace.
 uuid: e1a48452-ed44-4ea7-ba38-d961c8faafa5
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: c6f216d4-781c-4356-b9f0-3324903a28e7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
+# Architettura di AEM Forms Workspace {#aem-forms-workspace-architecture}
 
-#  Architettura di AEM Forms Workspace {#aem-forms-workspace-architecture}
+AEM Forms workspace è un&#39;applicazione web ospitata su CRX™. Quando workspace viene aperto in un browser, si accede a una risorsa CRX e l&#39;applicazione viene riprodotta come pagina HTML nel browser.
 
-&#39;area di lavoro AEM Forms è un&#39;applicazione Web ospitata su CRX™. Quando l&#39;area di lavoro viene aperta in un browser, si accede a una risorsa CRX e l&#39;applicazione viene rappresentata come pagina HTML nel browser.
+L’applicazione accede al server AEM Forms sugli endpoint REST per effettuare le seguenti operazioni:
 
-L&#39;applicazione accede  server AEM Forms sugli endpoint REST per eseguire le operazioni seguenti:
-
-* Recupero di attività utente, punti di avvio del processo, cronologia del processo e informazioni utente
-* Esecuzione di azioni sulle attività
+* Recupera attività utente, punti iniziali del processo, cronologia del processo e informazioni utente
+* Eseguire azioni sulle attività
 * Attività di query nel database
-* Aggiornare le preferenze utente e altro
+* Aggiorna le preferenze utente e altro ancora
 
-Il server AEM Forms  accede  database AEM Forms tramite JDBC. Il database persiste nelle attività, nei processi e nelle relative istanze, negli utenti e nelle relative informazioni.
+Il server AEM Forms accede al database AEM Forms tramite JDBC. Il database persiste le attività, i processi e le relative istanze, gli utenti e le informazioni correlate.
 
-L&#39;area di lavoro di  AEM Forms è progettata per componenti JavaScript™ modulari che possono essere personalizzati e riutilizzati in altre applicazioni Web. I componenti sono basati su BackBone, una libreria JavaScript che fornisce struttura alle applicazioni Web. Un articolo dettagliato che descrive l&#39;interazione dei componenti con BackBone è [qui](/help/forms/using/backbone-interaction.md). L&#39;organizzazione dei componenti nella struttura di cartelle CRX è descritta nell&#39;articolo [this](/help/forms/using/folder-structure.md).
+L&#39;area di lavoro AEM Forms è progettata in componenti JavaScript™ modulari che possono essere personalizzati e riutilizzati individualmente in altre applicazioni web. I componenti sono basati su BackBone, una libreria JavaScript che fornisce struttura alle applicazioni web. Un articolo dettagliato che descrive l&#39;interazione dei componenti con BackBone è [qui](/help/forms/using/backbone-interaction.md). L’organizzazione dei componenti nella struttura di cartelle CRX è discussa in [questo](/help/forms/using/folder-structure.md) articolo.
 
-Pacchetti consegnati per &#39;area di lavoro AEM Forms:
+Pacchetti consegnati per l&#39;area di lavoro AEM Forms:
 
-* `adobe-lc-workspace-pkg-<version>.zip`: È un pacchetto CRX, ovvero può essere distribuito in CRX utilizzando Package Manager.
-* `adobe-lc-workspace-<version>-src.zip`: Si tratta di un archivio che contiene il codice completo dell&#39;area di lavoro  AEM Forms e degli script per creare i pacchetti di distribuzione: Spedizione, Debug e Sviluppo.
+* `adobe-lc-workspace-pkg-<version>.zip`: È un pacchetto CRX, cioè, può essere distribuito in CRX utilizzando la Gestione pacchetti.
+* `adobe-lc-workspace-<version>-src.zip`: Si tratta di un archivio che contiene il codice completo dell&#39;area di lavoro di AEM Forms e gli script per creare i pacchetti di distribuzione, ovvero i pacchetti di spedizione, debug e sviluppo.

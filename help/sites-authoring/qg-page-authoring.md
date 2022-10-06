@@ -1,8 +1,8 @@
 ---
-title: Guida rapida all'authoring delle pagine
-seo-title: Guida rapida all’authoring delle pagine
+title: Guida rapida all’authoring delle pagine
+seo-title: Quick Guide to Authoring Pages
 description: Guida rapida di alto livello alle azioni chiave per creare e modificare i contenuti delle pagine
-seo-description: Guida rapida di alto livello alle azioni chiave per creare e modificare i contenuti delle pagine
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 97%
 
 ---
-
 
 # Guida rapida all’authoring delle pagine{#quick-guide-to-authoring-pages}
 
@@ -64,9 +63,7 @@ Prima di fornire la panoramica degli approfondimenti, ecco una piccola raccolta 
 >
 >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
-
 >
-
 
 
 ### Ricerca di una pagina {#finding-your-page}
@@ -98,7 +95,7 @@ Per [creare una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a
 
 1. Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie per la [creazione della nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page). Segui le istruzioni sullo schermo.
 
-### Selezione della pagina per ulteriori azioni   {#selecting-your-page-for-further-action}
+### Selezione della pagina per ulteriori azioni {#selecting-your-page-for-further-action}
 
 È possibile selezionare una pagina in modo da poter intervenire su di essa. Selezionando una pagina la barra degli strumenti si aggiornerà automaticamente mostrando le azioni pertinenti a tale risorsa.
 
@@ -200,7 +197,7 @@ Per modificare la pagina:
    >
    >Per spostarsi mediante i collegamenti presenti nel contenuto, è necessario utilizzare la [modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Modifica delle proprietà pagina    {#editing-the-page-properties}
+### Modifica delle proprietà pagina   {#editing-the-page-properties}
 
 Esistono due metodi (principali) per [modificare le proprietà di pagina](/help/sites-authoring/editing-page-properties.md):
 
@@ -253,7 +250,7 @@ Esistono due metodi principali per [pubblicare una pagina](/help/sites-authoring
 
    Per ulteriori informazioni, consulta [Pubblicazione di pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina    {#move-copy-and-paste-or-delete-your-page}
+### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
 
 Queste azioni possono essere attivate da:
 
@@ -304,7 +301,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 1. Tocca/fai clic sul tipo di riferimento richiesto per visualizzare maggiori dettagli e (se necessario) eseguire ulteriori azioni.
 
-### Creazione di una versione della pagina    {#creating-a-version-of-your-page}
+### Creazione di una versione della pagina   {#creating-a-version-of-your-page}
 
 Per creare una [versione](/help/sites-authoring/working-with-page-versions.md) di una pagina:
 

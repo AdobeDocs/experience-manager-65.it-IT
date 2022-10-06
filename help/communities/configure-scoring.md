@@ -1,8 +1,8 @@
 ---
-title: Punteggio e Badge Essentials
-seo-title: Punteggio e Badge Essentials
-description: Panoramica delle funzioni Punteggio e Badge
-seo-description: Panoramica delle funzioni Punteggio e Badge
+title: Nozioni di base sul punteggio e sui badge
+seo-title: Scoring and Badges Essentials
+description: Panoramica della funzione Punteggio e badge
+seo-description: Scoring and Badges feature overview
 uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,38 +10,37 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
+# Nozioni di base sul punteggio e sui badge {#scoring-and-badges-essentials}
 
-# Punteggio e Badge Essentials {#scoring-and-badges-essentials}
+La funzione di valutazione e badge di AEM Communities consente di identificare e premiare i membri della community.
 
-La funzione  punteggio e distintivi AEM Communities consente di identificare e premiare i membri della community.
+I dettagli della configurazione della funzione sono descritti in
 
-I dettagli relativi alla configurazione della funzione sono descritti in
-
-* [Punteggio e distintivi delle community](/help/communities/implementing-scoring.md)
+* [Punteggio e badge delle community](/help/communities/implementing-scoring.md)
 
 Questa pagina contiene ulteriori dettagli tecnici :
 
-* Come [visualizzare un contrassegno](#displaying-badges) come immagine o testo
-* Come attivare la registrazione [debug estesa](#debug-log-for-scoring-and-badging)
-* Come [accedere a UGC](#ugc-for-scoring-and-badging) in relazione al punteggio e al contrassegno
+* Come fare per [visualizzare un badge](#displaying-badges) come immagine o testo
+* Come attivare esteso [registrazione debug](#debug-log-for-scoring-and-badging)
+* Come fare per [accesso UGC](#ugc-for-scoring-and-badging) relativo al punteggio e al contrassegno
 
 >[!CAUTION]
 >
 >La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche.
 
-## Visualizzazione dei Badge {#displaying-badges}
+## Visualizzazione dei badge {#displaying-badges}
 
-Se un contrassegno viene visualizzato come testo o immagine viene controllato sul lato client nel modello HBS.
+Se un badge viene visualizzato come testo o immagine è controllato sul lato client nel modello HBS.
 
-Ad esempio, cercare `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+Ad esempio, cerca `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}
@@ -69,32 +68,32 @@ Ad esempio, cercare `this.isAssigned` in `/libs/social/forum/components/hbs/topi
 {{/each}}
 ```
 
-Se true, isAssigned indica che il contrassegno è stato assegnato a un ruolo e che il contrassegno deve essere visualizzato come testo.
+Se true, isAssigned indica che il badge è stato assegnato a un ruolo e che il badge deve essere visualizzato come testo.
 
-Se false, viene assegnato indica che il contrassegno è stato assegnato per un punteggio ottenuto e che il contrassegno deve essere visualizzato come immagine.
+Se false, viene assegnato indica che il badge è stato assegnato per un punteggio ottenuto e che il badge deve essere visualizzato come immagine.
 
-Eventuali modifiche a questo comportamento devono essere apportate in uno script personalizzato (override o sovrapposizione). Vedere [Personalizzazione lato client](/help/communities/client-customize.md).
+Qualsiasi modifica a questo comportamento deve essere apportata in uno script personalizzato (override o sovrapposizione). Vedi [Personalizzazione lato client](/help/communities/client-customize.md).
 
 ## Registro di debug per il punteggio e il contrassegno {#debug-log-for-scoring-and-badging}
 
-Per facilitare il debug del punteggio e del contrassegno, è possibile configurare un file di registro personalizzato. Il contenuto di questo file di registro può quindi essere fornito all&#39;assistenza clienti in caso di problemi con la funzionalità.
+Per facilitare il debug del punteggio e del badging, è possibile impostare un file di registro personalizzato. Il contenuto di questo file di registro può quindi essere fornito all’assistenza clienti in caso di problemi con la funzione .
 
-Per istruzioni dettagliate, visitare [Crea un file di registro personalizzato](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Per istruzioni dettagliate, visita [Creare un file di registro personalizzato](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
-Per impostare rapidamente un file slinglog:
+Per impostare rapidamente un file slinglog :
 
-1. Accedere al **supporto dei registri della console Web Adobe Experience Manager**, ad esempio
+1. Accedere al **Supporto per il registro della console Web di Adobe Experience Manager**, ad esempio
 
    * https://localhost:4502/system/console/slinglog
 
-1. Selezionare **Aggiungi nuovo logger**
+1. Seleziona **Aggiungi nuovo logger**
 
-   1. Selezionare `DEBUG` per **Livello di registro**
+   1. Seleziona `DEBUG` per **Livello di log**
 
-   1. Immettere un nome per **File di registro**, ad esempio
+   1. Immettere un nome per **File di log**, ad esempio
 
       * logs/scoring-debug.log
-   1. Immettere due voci **Logger** (classe) (utilizzando l&#39;icona `+`)
+   1. Inserisci due **Registratore** (classe) voci (utilizzando `+` icona)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -108,53 +107,53 @@ Per visualizzare le voci di registro:
 
 * Dalla console Web
 
-   * Nel menu **Stato**
-   * Selezionare **File di registro**
+   * Sotto la **Stato** menu
+   * Seleziona **File di registro**
    * Cerca il nome del file di registro, ad esempio `scoring-debug`
 
 * Sul disco locale del server
 
-   * Il file di registro si trova in &lt;*server-install-dir*/crx-quickstart/logs/&lt;*log-file-name*.log
+   * Il file di registro si trova in &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*nome-file-registro*>.log
 
    * Esempio, `.../crx-quickstart/logs/scoring-debug.log`
 
-![punteggio-log](assets/scoring-log.png)
+![registro di valutazione](assets/scoring-log.png)
 
-## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
+## UGC per il punteggio e il badge {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) e [Panoramica del provider di risorse di storage](/help/communities/srp.md).)
+È possibile visualizzare l’UGC relativo al punteggio e al contrassegno quando l’SRP scelto è JSRP o MSRP, ma non ASRP. (Se non conosci questi termini, consulta [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md) e [Panoramica del provider di risorse di storage](/help/communities/srp.md).)
 
-Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Le descrizioni per l’accesso ai dati di punteggio e badging utilizzano JSRP, in quanto l’UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP sull’autore**: la sperimentazione nell’ambiente di authoring produce UGC visibile solo dall’ambiente di authoring.
+**JSRP sull&#39;autore**: la sperimentazione nell’ambiente di authoring genera contenuti generati dagli utenti che sono visibili solo nell’ambiente di authoring.
 
-**JSRP al momento della pubblicazione**: analogamente, se si eseguono test nell’ambiente di pubblicazione, sarà necessario accedere ai CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l&#39;istanza di pubblicazione è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (modalità di esecuzione nosamplecontent), sarà necessario [abilitare CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP in pubblicazione**: analogamente, se esegui test sull’ambiente di pubblicazione, sarà necessario accedere ad CRXDE Lite con privilegi amministrativi su un’istanza di pubblicazione. Se l&#39;istanza di pubblicazione è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (modalità runmode nosamplecontent), è necessario [abilita CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-La posizione di base dell&#39;UGC su JSRP è `/content/usergenerated/asi/jcr/`.
+La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
-### API Punteggio e Badging {#scoring-and-badging-apis}
+### API di valutazione e contrassegno {#scoring-and-badging-apis}
 
-Le seguenti API sono disponibili per l&#39;uso:
+Le seguenti API sono disponibili per l’uso :
 
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-I più recenti Javadocs per il pacchetto di funzionalità installato sono disponibili per gli sviluppatori dall&#39;archivio del Adobe . Vedere [Utilizzo di Maven per Communities: Javadocs](/help/communities/maven.md#javadocs).
+Gli sviluppatori dell’archivio Adobe possono accedere agli ultimi Javadocs per il feature pack installato. Vedi [Utilizzo di Maven per Communities: Javadocs](/help/communities/maven.md#javadocs).
 
-**La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
-### Impostazione esempio {#example-setup}
+### Configurazione di esempio {#example-setup}
 
-Le schermate dei dati del repository derivano dalla configurazione del punteggio e del contrassegno per un forum su due siti AEM diversi:
+Le schermate dei dati dell’archivio provengono dalla configurazione del punteggio e del contrassegno per un forum su due siti di AEM diversi :
 
-1. Un sito AEM *con* un ID univoco (sito community creato tramite la procedura guidata):
+1. Un sito AEM *con* un id univoco (sito community creato tramite la procedura guidata) :
 
-   * Utilizzo del sito relativo all&#39;esercitazione introduttiva (interazione) creato durante l&#39;esercitazione [guida introduttiva](/help/communities/getting-started.md)
-   * Individuare il nodo della pagina del forum
+   * Utilizzo del sito tutorial (coinvolgi) introduttivo creato durante [esercitazione introduttiva](/help/communities/getting-started.md)
+   * Individua il nodo della pagina del forum
 
       `/content/sites/engage/en/forum/jcr:content`
 
-   * Aggiunta di proprietà di punteggio e contrassegno
+   * Aggiungere proprietà di valutazione e contrassegno
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -166,26 +165,26 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    /libs/settings/community/badging/rules/forums-scoring]
    ```
 
-   * Individuare il nodo del componente forum
+   * Individua il nodo componente forum
 
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Aggiungi proprietà a simboli di visualizzazione
+   * Aggiungi proprietà per visualizzare i badge
 
       `allowBadges = true`
 
-   * Un utente accede, crea un argomento del forum e riceve un contrassegno di bronzo
+   * L&#39;utente effettua l&#39;accesso, crea un argomento del forum e viene assegnato un badge in bronzo
 
 
-1. Un sito AEM *senza* un ID univoco:
+1. Un sito AEM *senza* un id univoco :
 
-   * Utilizzo della guida [Community Components](/help/communities/components-guide.md)
-   * Individuare il nodo della pagina del forum
+   * Utilizzo della [Guida ai componenti della community](/help/communities/components-guide.md)
+   * Individua il nodo della pagina del forum
 
       `/content/community-components/en/forum/jcr:content`
 
-   * Aggiunta di proprietà di punteggio e contrassegno
+   * Aggiungere proprietà di valutazione e contrassegno
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -197,82 +196,81 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    /libs/settings/community/badging/rules/forums-badging]
    ```
 
-   * Individuare il nodo del componente forum
+   * Individua il nodo componente forum
 
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Aggiungi proprietà a simboli di visualizzazione
+   * Aggiungi proprietà per visualizzare i badge
 
       `allowBadges = true`
 
-   * Un utente accede, crea un argomento del forum e riceve un contrassegno di bronzo
+   * L&#39;utente effettua l&#39;accesso, crea un argomento del forum e viene assegnato un badge in bronzo
 
 
-1. A un utente viene assegnato un contrassegno moderatore utilizzando cURL:
+1. A un utente viene assegnato un badge moderatore utilizzando cURL :
 
    ```shell
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Poiché un utente ha guadagnato due simboli di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la sua voce forum.
+   Come un utente ha guadagnato due distintivi di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la loro voce del forum.
 
    ![moderatore](assets/moderator.png)
 
 >[!NOTE]
 >
->Questo esempio non segue le best practice seguenti:
+>Questo esempio non segue le seguenti best practice:
 >
 >* I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
 >
->  
-Esempio di operazione *not*:
+>  Un esempio di cosa *not* per eseguire:
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
->* Creazione di immagini di contrassegno univoche per diversi siti AEM
+>* Creazione di immagini di badge univoche per siti AEM diversi
 
 
-### UGC punteggio di accesso {#access-scoring-ugc}
+### UGC per il punteggio di accesso {#access-scoring-ugc}
 
-È preferibile utilizzare le [API](#scoring-and-badging-apis).
+Uso del [API](#scoring-and-badging-apis) è da preferirsi.
 
-A scopo investigativo, utilizzando JSRP per esempio, la cartella base contenente i punteggi è
+A scopo investigativo, utilizzando JSRP per l’esempio, la cartella base contenente i punteggi è
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-Il nodo secondario di `scoring` è il nome della regola di punteggio. Di conseguenza, si consiglia di assegnare a un server nomi univoci per le regole di punteggio.
+Il nodo figlio di `scoring` è il nome della regola di punteggio. Di conseguenza, è consigliabile che i nomi delle regole di punteggio su un server siano univoci a livello globale.
 
-Per il sito di Geometrixx Engage, l&#39;utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un ID univoco e l&#39;ID dell&#39;utente:
+Per il sito Geometrixx Engage, l&#39;utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un id univoco e l&#39;id dell&#39;utente :
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Per il sito della guida per i componenti della community, l&#39;utente e il relativo punteggio si trovano in un percorso costruito con il nome della regola di punteggio, un ID predefinito ( `default-site`), un ID univoco e l&#39;ID dell&#39;utente:
+Per il sito della guida ai componenti della community, l’utente e il relativo punteggio si trovano in un percorso costruito con il nome della regola di punteggio, un id predefinito ( `default-site`), un id univoco e l&#39;id dell&#39;utente :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Il punteggio è memorizzato nella proprietà `scoreValue_tl` che può contenere direttamente solo un valore o fare riferimento indirettamente a un atomicCounter.
+Il punteggio viene memorizzato nella proprietà `scoreValue_tl` che può contenere solo un valore o fare riferimento indirettamente a un atomicCounter.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
-### Accesso UGC Badge {#access-badging-ugc}
+### UGC di accesso {#access-badging-ugc}
 
-È preferibile utilizzare le [API](#scoring-and-badging-apis).
+Uso del [API](#scoring-and-badging-apis) è da preferirsi.
 
-A scopo investigativo, utilizzando JSRP per esempio, la cartella di base contenente informazioni sui simboli assegnati o assegnati è
+A scopo investigativo, utilizzando JSRP per esempio, la cartella base contenente informazioni sui badge assegnati o assegnati è
 
 * `/content/usergenerated/asi/jcr`
 
-Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella dei simboli, ad esempio:
+Seguito dal percorso del profilo dell’utente, che termina in una cartella dei badge, ad esempio:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### Contrassegno assegnato {#awarded-badge}
+#### Badge aggiudicato {#awarded-badge}
 
 ![badging-ugc](assets/access-badging-ugc.png)
 
-#### Etichetta assegnata {#assigned-badge}
+#### Badge assegnato {#assigned-badge}
 
 ![badge assegnato](assets/assigned-badge.png)
 
@@ -280,6 +278,5 @@ Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella de
 
 Per visualizzare un elenco ordinato di membri in base ai punti:
 
-* [Funzione ](/help/communities/functions.md#leaderboard-function) della classifica per l&#39;inclusione in un sito o modello di gruppo community.
-* [Componente](/help/communities/enabling-leaderboard.md) Leaderboard, componente della funzione Leaderboard per l’authoring delle pagine.
-
+* [Funzione di classifica](/help/communities/functions.md#leaderboard-function) per l&#39;inclusione in un sito o modello di gruppo community.
+* [Componente della classifica](/help/communities/enabling-leaderboard.md), il componente in primo piano della funzione Leaderboard per la creazione delle pagine.

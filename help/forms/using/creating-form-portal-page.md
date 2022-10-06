@@ -1,8 +1,8 @@
 ---
 title: Creazione di una pagina del portale moduli
-seo-title: Creazione di una pagina del portale moduli
+seo-title: Creating a forms portal page
 description: Forms Portal fornisce agli sviluppatori web componenti per creare e personalizzare un portale moduli sui siti web creati con Adobe Experience Manager (AEM).
-seo-description: Forms Portal fornisce agli sviluppatori web componenti per creare e personalizzare un portale moduli sui siti web creati con Adobe Experience Manager (AEM).
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: a5017de5-616c-4ce4-81aa-f28c741f8e8f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,26 +10,25 @@ topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1641'
 ht-degree: 1%
 
 ---
 
+# Creazione di una pagina del portale moduli{#creating-a-forms-portal-page}
 
-# Creazione di una pagina del portale dei moduli{#creating-a-forms-portal-page}
-
-I componenti del portale Forms forniscono agli sviluppatori web componenti che consentono di creare e personalizzare un portale moduli sui siti web creati con Adobe Experience Manager (AEM). Per una panoramica rapida del portale dei moduli, vedere [Introduzione alla pubblicazione dei moduli su un portale](../../forms/using/introduction-publishing-forms.md).
+I componenti del portale Forms forniscono agli sviluppatori web componenti che consentono di creare e personalizzare un portale moduli sui siti web creati con Adobe Experience Manager (AEM). Per una rapida panoramica del portale dei moduli, consulta [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md).
 
 ## Prerequisiti {#prerequisites}
 
-I componenti del portale Forms non sono disponibili per l&#39;uso predefinito. Assicurati che le seguenti categorie di componenti del portale moduli siano abilitate come descritto in [Abilitazione dei componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md).
+I componenti del portale Forms non sono disponibili per l&#39;uso predefinito. Assicurati che le seguenti categorie di componenti del portale dei moduli siano abilitate come descritto in [Abilitazione dei componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md).
 
-**Document** ServicesInclude i componenti Search&amp;Lister, Link, Bozze e Invii.
+**Servizi basati su documenti** Include i componenti Ricerca e filtro, Collegamento, Bozze e Invii.
 
-**Predicati di Document ServicesInclude** i componenti Predicato data, Predicato testo completo, Predicato proprietà e Predicato tag. Questi componenti vengono utilizzati per configurare la ricerca nel componente Ricerca e filtro .
+**Predicati di Document Services** Include i componenti Predicato data, Predicato testo completo, Predicato proprietà e Predicato tag. Questi componenti vengono utilizzati per configurare la ricerca nel componente Ricerca e filtro .
 
 Una volta abilitate in una pagina AEM siti, queste categorie di componenti sono disponibili per l’uso nel browser componenti.
 
@@ -54,30 +53,30 @@ Componente Search&amp;Lister in una pagina con layout Griglia
 
 Il riquadro Elenco è un’area in cui sono elencati i moduli. Il componente Ricerca e filtro offre diverse opzioni di configurazione che è possibile utilizzare per controllare la visualizzazione dei moduli nel riquadro Elenco.
 
-Per configurare il riquadro Elenco, tocca il componente Ricerca e filtro , quindi tocca ![settings_icon](assets/settings_icon.png). Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica componente]** .
+Per configurare il riquadro Elenco, tocca il componente Ricerca e filtro , quindi tocca ![settings_icon](assets/settings_icon.png). La **[!UICONTROL Modifica componente]** viene visualizzata la finestra di dialogo .
 
 ![Riquadro elenco in modalità di modifica](assets/edit-list.png)
 
 Riquadro elenco in modalità di modifica
 
-La finestra di dialogo **Modifica** include diverse schede che forniscono le opzioni di configurazione descritte nella tabella seguente. Al termine, tocca **OK** per salvare la configurazione.
+La **Modifica** La finestra di dialogo include diverse schede che forniscono le opzioni di configurazione descritte nella tabella seguente. Tocca **OK** al termine, per salvare la configurazione.
 
 <table>
  <tbody>
   <tr>
-   <th>Scheda</th>
+   <th>Tabulazione</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Cartelle risorse</strong></code></td>
    <td>Aggiungi elemento</td>
-   <td>Configura le cartelle in cui le risorse vengono caricate tramite l’interfaccia utente di AEM Forms. Per impostazione predefinita, elenca tutte le risorse caricate. Per ulteriori informazioni sull’interfaccia utente di AEM Forms, consulta <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduzione alla gestione dei moduli</a>.</td>
+   <td>Configura le cartelle in cui le risorse vengono caricate tramite l’interfaccia utente di AEM Forms. Per impostazione predefinita, elenca tutte le risorse caricate. Per ulteriori informazioni sull’interfaccia utente di AEM Forms, vedi <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduzione alla gestione dei moduli</a>.</td>
   </tr>
   <tr>
    <td><p><span class="uicontrol"><strong>Visualizzazione</strong></code></p> </td>
    <td>Testo titolo</td>
-   <td>Titolo del componente Ricerca e filtro . Il titolo predefinito è <strong>Forms Portal.</strong></td>
+   <td>Titolo del componente Ricerca e filtro . Il titolo predefinito è <strong>Portale Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -102,17 +101,17 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   <tr>
    <td> </td>
    <td>Testo risultati</td>
-   <td><p>Configura il testo dei risultati (ad esempio, 1-12 di 601 <strong>Risultati</strong>). Il valore predefinito è <strong>Risultati</strong>.</p> <p>Ad esempio, se in questo campo si specifica <strong>Forms </strong>e sono presenti in totale 601 moduli, il testo del risultato verrà modificato in 1-12 di 601 <strong>Forms.</strong></p> </td>
+   <td><p>Configura il testo dei risultati (ad esempio, 1-12 di 601 <strong>Risultati</strong>). Il valore predefinito è <strong>Risultati</strong>.</p> <p>Ad esempio, se specifichi <strong>Forms </strong>in questo campo e sono presenti in totale 601 moduli, il testo del risultato cambia a 1-12 di 601 <strong>Forms.</strong></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Testo pagina</td>
-   <td><p>Configura il testo della pagina (ad esempio, <strong>Pagina </strong>1 di 51). Il valore predefinito è <strong>Page</strong>.</p> <p>Ad esempio, se in questo campo si specifica <strong>Modulo applicazione </strong>e sono presenti 51 pagine, il testo della pagina viene modificato in <strong>Modulo applicazione </strong>1 di 51.</p> </td>
+   <td><p>Configura il testo della pagina (ad esempio, <strong>Pagina </strong>1 di 51). Il valore predefinito è <strong>Pagina</strong>.</p> <p>Ad esempio, se specifichi <strong>Modulo di richiesta </strong>in questo campo e sono presenti 51 pagine, il testo della pagina diventa <strong>Modulo di richiesta </strong>1 di 51.</p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Di testo</td>
-   <td><p>Sostituisce la parola <strong>di</strong> con il testo specificato (Pagina 1 <strong>di </strong>51). Il valore predefinito è <strong>di</strong>.</p> <p>Ad esempio, se si specifica <strong>out of </strong>in questo campo, il testo diventa Pagina 1 <strong>fuori da </strong>51.</p> </td>
+   <td><p>Sostituisce la parola <strong>di</strong> con il testo specificato (Pagina 1) <strong>di </strong>51). Il valore predefinito è <strong>di</strong>.</p> <p>Ad esempio, se specifichi <strong>di </strong>in questo campo il testo diventa Pagina 1 <strong>di </strong>51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Collegamento modulo</strong></code></td>
@@ -127,7 +126,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   <tr>
    <td> </td>
    <td>Invia URL</td>
-   <td><p>Configura un servlet in cui vengono inviati i dati del modulo.</p> <p><strong>Nota:</strong> <em>è possibile specificare l’URL di invio di un modulo in più posizioni e il relativo ordine di precedenza è il seguente:</em></p>
+   <td><p>Configura un servlet in cui vengono inviati i dati del modulo.</p> <p><strong>Nota:</strong> <em>L’URL di invio di un modulo può essere specificato in più posizioni e il relativo ordine di precedenza è il seguente:</em></p>
     <ol>
      <li><em>L’URL di invio incorporato nel modulo (nel pulsante Invia) ha la priorità più alta.</em></li>
      <li><em>L’URL di invio menzionato nell’interfaccia utente di AEM Forms ha la seconda priorità più alta.</em></li>
@@ -136,18 +135,18 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Suggerimento per l'azione di rendering HTML</td>
-   <td>Configura il testo per la descrizione comando, che viene visualizzata quando si passa il puntatore del mouse su <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (icona HTML5).</td>
+   <td>Descrizione comandi di HTML Render Action</td>
+   <td>Configura il testo per la descrizione comandi, visualizzata quando si passa il puntatore del mouse sopra <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (icona di HTML5).</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Suggerimento per l’azione di rendering PDF</td>
-   <td>Configura il testo per la descrizione comandi, visualizzata quando si passa il puntatore del mouse su <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (icona PDF).</td>
+   <td>Descrizione comandi di PDF Render Action</td>
+   <td>Configura il testo per la descrizione comandi, visualizzata quando si passa il puntatore del mouse sopra <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (icona PDF).</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Stile</strong></code></td>
    <td>Tipo di stile</td>
-   <td>Consente di specificare <strong>Nessuno stile, Stile predefinito</strong> o <strong>Stile personalizzato </strong>per elencare i moduli.</td>
+   <td>Consente di specificare <strong>Nessuno stile, Stile predefinito</strong>oppure <strong>Stile personalizzato </strong>per elencare i moduli.</td>
   </tr>
   <tr>
    <td> </td>
@@ -161,7 +160,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
 
 Il riquadro Ricerca consente di aggiungere i componenti Predicato data, Predicato testo completo, Predicato proprietà e Predicato tag dalla categoria Predicati di Document Services nella barra laterale AEM. Questi componenti implementano la funzionalità di ricerca che consente agli utenti di eseguire ricerche nei moduli elencati.
 
-**Suggerimento:** *puoi controllare l’elenco dei moduli visualizzati sul portale dei moduli in base a criteri preimpostati e nascondere la funzionalità di ricerca per gli utenti finali. Per controllare l’elenco dei moduli, utilizzare i componenti Predicate per applicare i filtri di ricerca. È inoltre possibile specificare i valori di filtro predefiniti e disattivare la ricerca nella scheda Visualizzazione della finestra di dialogo Modifica componente.*
+**Suggerimento:** *È possibile controllare l’elenco dei moduli visualizzati sul portale dei moduli in base a criteri predefiniti e nascondere la funzionalità di ricerca per gli utenti finali. Per controllare l’elenco dei moduli, utilizzare i componenti Predicate per applicare i filtri di ricerca. È inoltre possibile specificare i valori di filtro predefiniti e disattivare la ricerca nella scheda Visualizzazione della finestra di dialogo Modifica componente.*
 
 ![Pannello di ricerca con predicato data, testo completo, proprietà e tag](assets/search-with-predicates.png)
 
@@ -176,13 +175,13 @@ Per configurare il componente Predicato data :
 1. Tocca il componente, quindi tocca ![settings_icon](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
 1. Specifica quanto segue:
 
-   * **Tipo:** L’unica opzione disponibile è Data  **ultima modifica**
+   * **Tipo:** L’unica opzione disponibile è **Data ultima modifica**
 
-   * **Testo:** etichetta o didascalia per il componente Date Predicate. Il valore predefinito è **Data ultima modifica.**
+   * **Testo:** Etichetta o didascalia per il componente Predicato data . Il valore predefinito è **Data ultima modifica.**
 
-   * **Etichetta data inizio:** Etichetta o didascalia del campo data iniziale
-   * **Etichetta data fine:** etichetta o didascalia per il campo data di fine
-   * **Nascondi:** per applicare il filtro data predefinito all’elenco dei moduli
+   * **Etichetta data inizio:** Etichetta o didascalia del campo data di inizio
+   * **Etichetta data fine:** Etichetta o didascalia per il campo della data di fine
+   * **Nascondi:** Applicazione del filtro data predefinito per elencare i moduli
 
 1. Tocca **OK**
 
@@ -193,7 +192,7 @@ Il componente Predicato full-text implementa la ricerca full-text sui dati del m
 Per configurare il componente Predicato a testo completo:
 
 1. Tocca il componente, quindi tocca ![settings_icon](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
-1. Specifica il titolo nel campo **Titolo principale** .
+1. Specifica il titolo nel **Titolo principale** campo .
 1. Tocca **Ok**
 
 #### Predicato proprietà {#properties-predicate}
@@ -227,11 +226,11 @@ I tag selezionati vengono visualizzati nel riquadro Ricerca insieme alle caselle
 
 ## Elencare moduli in una pagina {#list-forms-on-a-page-br}
 
-Per elencare i moduli su una pagina, aggiungi il componente **[!UICONTROL Ricerca e filtro]** alla pagina e configura il **[!UICONTROL Riquadro di elenco]**. Per consentire agli utenti finali di eseguire ricerche nei moduli con data, testo e tag, aggiungere un componente **[!UICONTROL Riquadro di ricerca]**.
+Per elencare i moduli su una pagina, aggiungi **[!UICONTROL Ricerca e filtro]** Componente nella pagina e configura il **[!UICONTROL Riquadro elenco]**. Per consentire agli utenti finali di eseguire ricerche nei moduli con data, testo e tag, aggiungere una **[!UICONTROL Riquadro di ricerca]** componente.
 
-Per collegare un modulo da un punto qualsiasi della pagina, utilizza il componente Collegamento . Per ulteriori informazioni sul componente collegamento, consulta [Incorporare un componente collegamento in una pagina](../../forms/using/embedding-link-component-page.md).
+Per collegare un modulo da un punto qualsiasi della pagina, utilizza il componente Collegamento . Per ulteriori informazioni sul componente collegamento, consulta [Incorporazione di un componente collegamento in una pagina](../../forms/using/embedding-link-component-page.md).
 
-Per elencare i moduli in stato di bozza e quelli già inviati, utilizza il componente **[!UICONTROL Bozze e invii]** . Per ulteriori informazioni, consulta [Personalizzazione del componente Bozze e invii](../../forms/using/draft-submission-component.md).
+Per elencare i moduli in stato bozza e quelli già inviati, utilizzare la **[!UICONTROL Bozze e invii]** componente. Per ulteriori informazioni, consulta [Personalizzazione del componente Bozze e invii](../../forms/using/draft-submission-component.md).
 
 ## Facilità di utilizzo dei dispositivi mobili {#mobile-device-friendliness}
 
@@ -243,13 +242,13 @@ L’immagine seguente rappresenta il componente Ricerca e filtro quando viene ap
 
 Componente Ricerca e filtro
 
-## Personalizzazione di una pagina del portale dei moduli {#customizing-a-forms-portal-page-br}
+## Personalizzazione di una pagina del portale moduli {#customizing-a-forms-portal-page-br}
 
 È possibile personalizzare una pagina del portale dei moduli in modo da fornire un aspetto distinto alla pagina. Puoi anche aggiungere metadati per migliorare l’esperienza di ricerca, modificare il layout della pagina e aggiungere stili CSS personalizzati. Per ulteriori informazioni, consulta [Personalizzazione dei modelli per i componenti del portale Forms](../../forms/using/customizing-templates-forms-portal-components.md).
 
 L’interfaccia utente di AEM Forms consente di aggiungere metadati personalizzati ai moduli. I metadati personalizzati sono utili per fornire agli utenti finali un’esperienza di elenco e ricerca dei moduli. Per ulteriori informazioni sui metadati personalizzati, consulta [Personalizzazione dei modelli per i componenti del portale Forms](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Con il portale dei moduli sono disponibili azioni di rendering. È possibile personalizzare il portale dei moduli per aggiungere altre azioni. Per informazioni dettagliate, vedere [Aggiunta di azioni personalizzate agli elementi dell&#39;elenco dei moduli.](../../forms/using/add-custom-action-form-lister.md)
+Con il portale dei moduli sono disponibili azioni di rendering. È possibile personalizzare il portale dei moduli per aggiungere altre azioni. Per informazioni dettagliate, consulta [Aggiunta di un’azione personalizzata agli elementi dell’elenco moduli.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Articoli correlati
 

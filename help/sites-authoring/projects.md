@@ -13,14 +13,14 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
 
 
 # Progetti {#projects}
 
-La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le porzioni possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Porzioni progetto.](#project-tiles)
+La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. I riquadri possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altro, come descritto in dettaglio in [Riquadri di progetto.](#project-tiles)
 
 In qualità di utente, puoi:
 
@@ -129,7 +129,7 @@ La **Esperienze** consente di aggiungere al progetto un’app mobile, un sito we
 Le icone indicano quale tipo di esperienza è rappresentata.
 
 * Sito Web
-* applicazione Mobile
+* App mobile
 
 ### Collegamenti {#links}
 
@@ -149,7 +149,7 @@ La **Informazioni sul progetto** La sezione fornisce informazioni generali sul p
 
 La **Processo di traduzione** riquadro è dove si inizia una traduzione e anche dove si vede lo stato delle traduzioni.
 
-![Riquadro dei lavori di traduzione](assets/project-tile-translation.png)
+![Riquadro del processo di traduzione](assets/project-tile-translation.png)
 
 Per impostare la traduzione, vedere il documento [Creazione di progetti di traduzione.](/help/assets/translation-projects.md)
 
@@ -157,7 +157,7 @@ Per impostare la traduzione, vedere il documento [Creazione di progetti di tradu
 
 In questa porzione, è possibile specificare i membri del team del progetto. Durante la modifica, è possibile immettere il nome del membro del team e assegnare un ruolo all’utente.
 
-![Riquadro del team](assets/project-tile-team.png)
+![Riquadro team](assets/project-tile-team.png)
 
 Puoi aggiungere ed eliminare membri dal team. Inoltre, puoi modificare il [ruolo utente](#userroles) assegnato al membro del team.
 
@@ -195,7 +195,7 @@ La **Lanci** mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro La
 
 ### Attività {#tasks}
 
-Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. I compiti sono trattati in dettaglio all&#39;indirizzo [Utilizzo delle attività](/help/sites-authoring/task-content.md).
+Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. Le attività sono trattate in dettaglio in [Lavorare con le attività](/help/sites-authoring/task-content.md).
 
 ![Riquadro attività](assets/project-tile-tasks.png)
 

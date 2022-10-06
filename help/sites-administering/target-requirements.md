@@ -1,8 +1,8 @@
 ---
-title: Prerequisiti per l’integrazione con  Adobe Target
-seo-title: Prerequisiti per l’integrazione con  Adobe Target
-description: Scoprite i prerequisiti per l'integrazione con  Adobe Target.
-seo-description: Scoprite i prerequisiti per l'integrazione con  Adobe Target.
+title: Prerequisiti per l’integrazione con Adobe Target
+seo-title: Prerequisites for Integrating with Adobe Target
+description: Scopri i prerequisiti per l’integrazione con Adobe Target.
+seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,76 +10,74 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 3%
+source-wordcount: '557'
+ht-degree: 7%
 
 ---
 
+# Prerequisiti per l’integrazione con Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-# Prerequisiti per l&#39;integrazione con  Adobe Target{#prerequisites-for-integrating-with-adobe-target}
+Come parte del [Integrazione di AEM e Adobe Target](/help/sites-administering/target.md), è necessario registrarsi con Adobe Target, configurare l’agente di replica e proteggere le impostazioni delle attività sul nodo di pubblicazione.
 
-Come parte dell&#39;integrazione di [AEM e  Adobe Target](/help/sites-administering/target.md), è necessario registrarsi  Adobe Target, configurare l&#39;agente di replica e le impostazioni dell&#39;attività protetta sul nodo di pubblicazione.
+## Registrazione con Adobe Target {#registering-with-adobe-target}
 
-## Registrazione con  Adobe Target {#registering-with-adobe-target}
+Per integrare AEM con Adobe Target, è necessario disporre di un account Adobe Target valido. Questo account deve avere **approvatore** autorizzazioni di livello minimo. Quando ti registri ad Adobe Target, ricevi un codice cliente. Per connettersi AEM ad Adobe Target è necessario il codice client e il nome di accesso e la password di Adobe Target.
 
-Per integrare AEM con  Adobe Target, è necessario disporre di un account  Adobe Target valido. Questo account deve disporre di autorizzazioni di livello **approver** almeno. Quando vi registrate  Adobe Target, ricevete un codice cliente. Per connettersi AEM a  Adobe Target, è necessario disporre del codice client e del nome di accesso e della password  Adobe Target.
-
-Il Codice client identifica l&#39;account cliente Adobe Target  quando si chiama il server Adobe Target .
+Il codice client identifica l&#39;account cliente Adobe Target quando si chiama il server Adobe Target.
 
 >[!NOTE]
 >
->Per poter utilizzare l&#39;integrazione, l&#39;account deve essere abilitato anche dal team di Target.
+>Per poter utilizzare l’integrazione, l’account deve essere abilitato anche dal team di Target.
 >
->In caso contrario, contattare l&#39;Assistenza clienti [ Adobe](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
+>In caso contrario, contattare [Adobe Customer Care](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
-## Abilitazione dell&#39;agente di replica di destinazione {#enabling-the-target-replication-agent}
+## Abilitazione dell’agente di replica di Target {#enabling-the-target-replication-agent}
 
-L&#39;agente di replica Test e Target [agente di replica](/help/sites-deploying/replication.md) deve essere abilitato nell&#39;istanza di creazione. Questo agente di replica non è abilitato per impostazione predefinita se per l&#39;installazione del AEM è stata utilizzata la modalità di esecuzione [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent). Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, vedere [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md).
+Test e Target [agente di replica](/help/sites-deploying/replication.md) deve essere abilitato nell’istanza di authoring. Tieni presente che questo agente di replica non è abilitato per impostazione predefinita se è stato utilizzato il [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) modalità di esecuzione per l&#39;installazione di AEM. Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, consulta [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md).
 
-1. Nella pagina principale AEM, fare clic o toccare **Strumenti** > **Distribuzione** > **Replica**.
+1. Nella home page di AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Replica**.
 1. Tocca o fai clic su **Agenti sull&#39;autore**.
-1. Tocca o fai clic sull&#39;agente di replica **Test and Target (test and target)**, quindi tocca o fai clic su **Edit**.
-1. Selezionate l&#39;opzione Attivato, quindi toccate o fate clic su **OK**.
+1. Tocca o fai clic su **Test e Target (test e target)** agente di replica, quindi tocca o fai clic su **Modifica**.
+1. Seleziona l’opzione Attivato, quindi tocca o fai clic su **OK**.
 
    >[!NOTE]
    >
-   >Quando configurate l&#39;agente di replica Test e Target, nella scheda **Transport** l&#39;URI è impostato per impostazione predefinita su **tnt:///**. Non sostituire questo URI con **https://admin.testandtarget.omniture.com**.
+   >Quando configuri l’agente di replica Test e Target, nella **Trasporti** scheda , l’URI è impostato per impostazione predefinita su **tnt:///**. Non sostituire questo URI con **https://admin.testandtarget.omniture.com**.
    >
-   >Se si tenta di verificare la connessione con **tnt:///**, verrà generato un errore. Questo comportamento è previsto perché l&#39;URI è solo per uso interno e non deve essere utilizzato con **Test Connection**.
+   >Se provi a verificare la connessione con **tnt:///**, genererà un errore. Questo comportamento è previsto perché questo URI è solo per uso interno e non deve essere utilizzato con **Prova connessione**.
 
-## Protezione del nodo delle impostazioni dell&#39;attività {#securing-the-activity-settings-node}
+## Protezione del nodo Impostazioni attività {#securing-the-activity-settings-node}
 
-È necessario proteggere il nodo delle impostazioni dell&#39;attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 
-Il nodo **cq:ActivitySettings** è disponibile in CRXDE lite in `/content/campaigns/*nameofbrand*`* *sotto il nodo jcr:content delle attività;* *ad esempio `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
+La **cq:ActivitySettings** node è disponibile in CRXDE lite in `/content/campaigns/*nameofbrand*`* *sotto il nodo jcr:content delle attività;* *ad esempio `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
 
-Il nodo **cq:ActivitySettings** sotto il nodo jcr:content dell&#39;attività è protetto dai seguenti ACL:
+La **cq:ActivitySettings** il nodo sotto il jcr:content dell&#39;attività è protetto dalle seguenti ACL:
 
-* Nega tutti per tutti
-* Consenti jcr:read,rep:write per &quot;target-activity-authors&quot; (l’autore è un membro di questo gruppo)
-* Consenti jcr:read,rep:write per &quot;target service&quot;
+* Nega tutto per tutti
+* Consenti jcr:read,rep:write per &quot;target-activity-authors&quot; (l&#39;autore è un membro di questo gruppo pronto all&#39;uso)
+* Consenti jcr:read,rep:write per &quot;targetservice&quot;
 
-Queste impostazioni assicurano che gli utenti normali non abbiano accesso alle proprietà del nodo. Utilizzate gli stessi ACL per l&#39;autore e la pubblicazione. Per ulteriori informazioni, vedere [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
+Queste impostazioni assicurano che gli utenti normali non abbiano accesso alle proprietà del nodo. Utilizza gli stessi ACL sull&#39;autore e sulla pubblicazione. Vedi [Amministrazione degli utenti e sicurezza](/help/sites-administering/security.md) per ulteriori informazioni.
 
 ## Configurazione di AEM Link Externalizer {#configuring-the-aem-link-externalizer}
 
-Durante la modifica di un&#39;attività in  Adobe Target, l&#39;URL punta a **localhost** a meno che non cambiate l&#39;URL sul nodo di creazione AEM. Potete configurare AEM Link Externalizer se desiderate che il contenuto esportato punti a un dominio specifico *publish*.
+Quando modifichi un’attività in Adobe Target, l’URL punta a **localhost** a meno che non modifichi l’URL sul nodo di authoring AEM. Puoi configurare AEM Link Externalizer se desideri che il contenuto esportato punti a uno specifico *pubblicare* dominio.
 
 >[!NOTE]
 >
->Vedi anche [Aggiungi la configurazione cloud](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
+>Vedi anche [Aggiungere la configurazione cloud](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
 Per configurare l&#39;esternalizzatore AEM:
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedere [Esternalizzazione di URL](/help/sites-developing/externalizer.md).
+>Per ulteriori dettagli vedi [Esternalizzazione degli URL](/help/sites-developing/externalizer.md).
 
-1. Andate alla console Web OSGi all&#39;indirizzo **https://&lt;server>:&lt;porta>/system/console/configMgr.**
-1. Trovate **Day CQ Link Externalizer** e immettete il dominio per il nodo dell&#39;autore.
+1. Passa alla console web OSGi all’indirizzo **https://&lt;server>:&lt;port>/system/console/configMgr.**
+1. Trova **Day CQ Link Externalizer** e immetti il dominio per il nodo autore.
 
    ![chlimage_1-120](assets/aem-externalizer-01.png)
-

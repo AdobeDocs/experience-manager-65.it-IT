@@ -1,8 +1,8 @@
 ---
 title: Authoring delle pagine con frammenti di contenuto
-seo-title: Authoring delle pagine con frammenti di contenuto
+seo-title: Page Authoring with Content Fragments
 description: I frammenti di contenuto di AEM consentono di progettare, creare, perfezionare e utilizzare contenuti indipendenti dalle pagine
-seo-description: I frammenti di contenuto di AEM consentono di progettare, creare, perfezionare e utilizzare contenuti indipendenti dalle pagine
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 99%
+source-wordcount: '1140'
+ht-degree: 100%
 
 ---
-
 
 # Authoring delle pagine con frammenti di contenuto{#page-authoring-with-content-fragments}
 
@@ -29,14 +28,12 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
->* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
-
+>* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
->
-I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
+>I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 
 >[!CAUTION]
 >
@@ -129,14 +126,14 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **Paragrafi**: specifica l’intervallo di paragrafi da includere:
 
-   * **Tutti**
+   * **Tutti i bundle**
    * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
 
       * **Tratta le intestazioni come paragrafi propri**
 
 * **Tratta le intestazioni come paragrafi propri**
 
-### Collegamento rapido all’Editor frammento di contenuto   {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -144,7 +141,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-### Aggiunta di contenuto intermedio   {#adding-in-between-content}
+### Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -176,15 +173,12 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >
 >* I componenti intermedi hanno una posizione assoluta all’interno della sequenza di componenti nel flusso del frammento. Questa posizione resta invariata, anche quando cambia il contenuto dei paragrafi nel frammento.
 >
->  
-Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
+>  Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
-
 >
 
 
-
-### Uso di contenuti associati   {#using-associated-content}
+### Uso di contenuti associati  {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
@@ -204,7 +198,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-Se sono state inserite risorse, ad esempio immagini, nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.  <!-- Removed link as it was a 404 on helpx -->
+Se sono state inserite risorse, ad esempio immagini, nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate. <!-- Removed link as it was a 404 on helpx -->
 
 Ad esempio, per un’immagine è possibile:
 
@@ -221,4 +215,3 @@ I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle
 
 * Un frammento può essere pubblicato dopo che è stato [creato nella console Risorse](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Se in una pagina in corso di pubblicazione viene utilizzato un *frammento non pubblicato*, è possibile pubblicare anche quest’ultimo allo stesso tempo.
-

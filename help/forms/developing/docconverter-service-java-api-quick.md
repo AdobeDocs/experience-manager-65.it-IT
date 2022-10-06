@@ -1,6 +1,6 @@
 ---
 title: QuickStart (SOAP) API Java del servizio DocConverter
-seo-title: QuickStart (SOAP) API Java del servizio DocConverter
+seo-title: DocConverter Service Java API QuickStart(SOAP)
 description: QuickStart (SOAP) API Java del servizio DocConverter
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # Avvio rapido API Java del servizio DocConverter (SOAP) {#docconverter-service-java-api-quickstart-soap}
 
@@ -30,11 +29,11 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Conversione di un documento in un documento PDF/A utilizzando l&#39;API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Avvio rapido (modalità SOAP): Conversione di un documento in un documento PDF/A tramite l’API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente un documento PDF denominato *Loan.pdf* viene convertito in un documento PDF/A salvato come file PDF denominato *LoanArchive.pdf*. (Vedere [Conversione di documenti in documenti PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+Il seguente esempio di codice Java converte un documento PDF denominato *Loan.pdf* in un documento PDF/A salvato come file PDF denominato *LoanArchive.pdf*. (Vedi [Conversione di documenti in documenti PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -137,7 +136,7 @@ Nell&#39;esempio di codice Java seguente un documento PDF denominato *Loan.pdf* 
 
 ## Avvio rapido (modalità SOAP): Determinazione della conformità PDF/A tramite l’API Java {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-Il seguente esempio di codice Java determina se il documento PDF di input è conforme a PDF/A. Il documento PDF di input passato al servizio DocConverter è denominato *LoanArchive.pdf*. I risultati della convalida vengono scritti in un file XML denominato *ValidationResults.xml*. (Consultare [Determinazione programmatica della conformità PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Il seguente esempio di codice Java determina se il documento di input PDF è conforme a PDF/A. Il documento PDF di input passato al servizio DocConverter viene denominato *LoanArchive.pdf*. I risultati della convalida vengono scritti in un file XML denominato *ValidationResults.xml*. (Vedi [Determinazione programmatica della conformità PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*
@@ -244,4 +243,3 @@ Il seguente esempio di codice Java determina se il documento PDF di input è con
       }
  }
 ```
-

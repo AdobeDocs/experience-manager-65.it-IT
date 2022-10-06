@@ -1,8 +1,8 @@
 ---
 title: Sviluppo e differenze tra pagine
-seo-title: Sviluppo e differenze tra pagine
+seo-title: Developing and Page Diff
 description: Sviluppo e differenze tra pagine
-seo-description: 'null'
+seo-description: null
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '360'
 ht-degree: 11%
 
 ---
-
 
 # Sviluppo e differenze tra pagine{#developing-and-page-diff}
 
@@ -25,7 +24,7 @@ ht-degree: 11%
 
 La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente affiancata alle differenze evidenziate.
 
-Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Page Diff](/help/sites-authoring/page-diff.md).
+Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
 ## Dettagli operazione {#operation-details}
 
@@ -39,9 +38,9 @@ Quando si confronta il contenuto, l’intera struttura fino alla pagina da confr
 
 Un’attività di pulizia viene eseguita automaticamente per pulire questo contenuto temporaneo.
 
-## Autorizzazioni  {#permissions}
+## Autorizzazioni {#permissions}
 
-In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione AEM (ad esempio, per usare la libreria di tag `cq:text` o per integrare il servizio `DiffService` OSGi nei componenti). Questa funzione non è più necessaria per la nuova funzione di confronto delle differenze, in quanto si verifica sul lato client tramite il confronto DOM.
+In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione AEM (ad esempio l’utilizzo di `cq:text` libreria a tag, o personalizzata che integra `DiffService` servizio OSGi nei componenti). Questa funzione non è più necessaria per la nuova funzione di confronto delle differenze, in quanto si verifica sul lato client tramite il confronto DOM.
 
 Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 

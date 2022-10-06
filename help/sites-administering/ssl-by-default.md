@@ -1,8 +1,8 @@
 ---
 title: SSL per impostazione predefinita
-seo-title: SSL per impostazione predefinita
-description: Scoprite come utilizzare SSL per impostazione predefinita in AEM.
-seo-description: Scoprite come utilizzare SSL per impostazione predefinita in AEM.
+seo-title: SSL By Default
+description: Scopri come utilizzare SSL per impostazione predefinita in AEM.
+seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
@@ -10,62 +10,61 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
 
+# SSL per impostazione predefinita{#ssl-by-default}
 
-# SSL Per impostazione predefinita{#ssl-by-default}
-
-Nel tentativo di migliorare continuamente la sicurezza dei AEM,  Adobe ha introdotto una funzione chiamata SSL By Default. Lo scopo è incoraggiare l&#39;uso di HTTPS per connettersi alle istanze AEM.
+Nel tentativo di migliorare continuamente la sicurezza di AEM, Adobe ha introdotto una funzione chiamata SSL By Default. Lo scopo è incoraggiare l’uso di HTTPS per connettersi alle istanze AEM.
 
 ## Abilitazione di SSL per impostazione predefinita {#enabling-ssl-by-default}
 
-Per iniziare a configurare SSL per impostazione predefinita, fai clic sul messaggio Inbox corrispondente nella schermata iniziale AEM. Per raggiungere la casella in entrata, premere l&#39;icona a forma di campana nell&#39;angolo superiore destro dello schermo. Quindi fare clic su **Visualizza tutto**. Verrà visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
+Per iniziare a configurare SSL per impostazione predefinita, fai clic sul messaggio casella in entrata corrispondente nella schermata iniziale AEM. Per raggiungere la casella in entrata, premere l&#39;icona della campana nell&#39;angolo superiore destro dello schermo. Quindi, fai clic su **Visualizza tutto**. Verrà visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
 
-Nell&#39;elenco, selezionare e aprire l&#39;avviso **Configura HTTPS**:
+Nell’elenco, seleziona e apri le **Configura HTTPS** avviso:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Se l&#39;avviso **Configura HTTPS** non è presente nella casella in entrata, è possibile accedere direttamente alla procedura guidata HTTPS andando a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Se la **Configura HTTPS** L&#39;avviso non è presente nella casella in entrata, è possibile passare direttamente alla procedura guidata HTTPS andando a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Per questa funzione è stato creato un utente di servizio denominato **ssl-service**. Una volta aperto l’avviso, verrà visualizzata la seguente procedura guidata di configurazione:
+Utente di un servizio denominato **servizio ssl** è stato creato per questa funzione. Una volta aperto l’avviso, verrà visualizzata la seguente procedura guidata di configurazione:
 
-1. Innanzitutto, impostare le credenziali store. Queste sono le credenziali per l&#39;archivio chiavi dell&#39;utente di sistema **ssl-service** che conterrà la chiave privata e l&#39;archivio delle credenziali per il listener HTTPS.
+1. Impostare innanzitutto le credenziali dell&#39;archivio. Queste sono le credenziali per **servizio ssl** archivio chiavi dell&#39;utente del sistema che conterrà la chiave privata e l&#39;archivio di attendibilità per il listener HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Una volta immesse le credenziali, fate clic su **Next** nell&#39;angolo superiore destro della pagina. Quindi, caricate la chiave privata e il certificato associati per la connessione SSL.
+1. Una volta immesse le credenziali, fai clic su **Successivo** nell’angolo superiore destro della pagina. Quindi, carica la chiave privata e il certificato associati per la connessione SSL.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >Per informazioni su come generare una chiave privata e un certificato da utilizzare con la procedura guidata, vedere [questa procedura](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) di seguito.
+   >Per informazioni su come generare una chiave privata e un certificato da utilizzare con la procedura guidata, consulta [presente procedura](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) sotto.
 
-1. Infine, specificate il nome host HTTPS e la porta TCP per il listener HTTPS.
+1. Infine, specifica il nome host HTTPS e la porta TCP per il listener HTTPS.
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## Automatizzazione SSL per impostazione predefinita {#automating-ssl-by-default}
+## Automazione SSL per impostazione predefinita {#automating-ssl-by-default}
 
-Sono disponibili tre modi per automatizzare SSL per impostazione predefinita.
+Esistono tre modi per automatizzare SSL per impostazione predefinita.
 
-### Tramite POST HTTP {#via-http-post}
+### Tramite HTTP POST {#via-http-post}
 
-Il primo metodo prevede l&#39;invio al server SSLSetup utilizzato dalla procedura guidata di configurazione:
+Il primo metodo prevede la pubblicazione sul server SSLSetup utilizzato dalla configurazione guidata:
 
 ```shell
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Puoi utilizzare il payload seguente nel tuo POST per automatizzare la configurazione:
+Puoi utilizzare il seguente payload in POST per automatizzare la configurazione:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -94,11 +93,11 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-Il servlet, come qualsiasi servlet POST Sling, risponderà con 200 OK o con un codice di stato HTTP di errore. Potete trovare i dettagli sullo stato nel corpo HTML della risposta.
+Il servlet, come qualsiasi servlet sling POST, risponderà con 200 OK o con un codice di stato HTTP di errore. Puoi trovare i dettagli sullo stato nel corpo HTML della risposta.
 
-Di seguito sono riportati alcuni esempi sia di una risposta corretta che di un errore.
+Di seguito sono riportati alcuni esempi di risposta corretta e di errore.
 
-**ESEMPIO**  DI SUCCESSO(status = 200):
+**ESEMPIO DI SUCCESSO** (stato = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -129,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**ESEMPIO**  DI ERRORE (stato = 500):
+**ESEMPIO DI ERRORE** (stato = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -151,35 +150,35 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Via pacchetto {#via-package}
+### Tramite pacchetto {#via-package}
 
-In alternativa, potete automatizzare la configurazione SSL caricando un pacchetto che contiene già i seguenti elementi richiesti:
+In alternativa, puoi automatizzare la configurazione SSL caricando un pacchetto che contiene già questi elementi richiesti:
 
-* Keystore dell&#39;utente ssl-service. Questo si trova in */home/users/system/security/ssl-service/keystore* nella directory archivio.
-* La configurazione `GraniteSslConnectorFactory`
+* L&#39;archivio chiavi dell&#39;utente del servizio ssl. Si trova in */home/users/system/security/ssl-service/keystore* nel repository.
+* La `GraniteSslConnectorFactory` configurazione
 
 ### Generazione di una coppia chiave/certificato privata da utilizzare con la procedura guidata {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Di seguito è riportato un esempio per la creazione di un certificato autofirmato in formato DER utilizzabile dalla procedura guidata SSL. Installate OpenSSL basato sul sistema operativo, aprite il prompt dei comandi OpenSSL e modificate la directory nella cartella in cui desiderate generare la chiave privata/certificato.
+Di seguito è riportato un esempio per la creazione di un certificato autofirmato in formato DER utilizzabile dalla procedura guidata SSL. Installa OpenSSL basato sul sistema operativo, apri il prompt dei comandi OpenSSL e modifica la directory nella cartella in cui desideri generare la chiave privata/certificato.
 
 >[!NOTE]
 >
->L&#39;uso di un certificato autofirmato è ad esempio solo a scopo e non deve essere utilizzato in produzione.
+>L’uso di un certificato autofirmato è ad esempio limitato e non deve essere utilizzato in produzione.
 
-1. Innanzitutto, create la chiave privata:
+1. Innanzitutto, crea la chiave privata:
 
    ```shell
    openssl genrsa -aes256 -out localhostprivate.key 4096
    openssl rsa -in localhostprivate.key -out localhostprivate.key
    ```
 
-1. Quindi, generate una richiesta di firma dei certificati (CSR) utilizzando la chiave privata:
+1. Quindi, genera una richiesta di firma del certificato (CSR, Certificate Signing Request) utilizzando una chiave privata:
 
    ```shell
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Generate il certificato SSL e firmatelo con la chiave privata. In questo esempio, scadrà tra un anno:
+1. Genera il certificato SSL e firma con la chiave privata. In questo esempio, scadrà tra un anno:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
@@ -191,42 +190,42 @@ Converti la chiave privata in formato DER. Questo perché la procedura guidata S
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Infine, caricate **localhostprivate.der** come Chiave privata e **localhost.crt** come Certificato SSL al punto 2 della procedura guidata SSL grafica descritta all&#39;inizio di questa pagina.
+Infine, carica il **localhostprivate.der** come chiave privata e **localhost.crt** come certificato SSL nel passaggio 2 della procedura guidata SSL grafica descritta all’inizio di questa pagina.
 
 ### Aggiornamento della configurazione SSL tramite cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Per un elenco centralizzato di utili comandi cURL in AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
+>Vedi [Utilizzo di cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) per un elenco centralizzato di comandi cURL utili in AEM.
 
-Potete anche automatizzare la configurazione SSL usando lo strumento cURL. A questo scopo, potete inserire i parametri di configurazione nel seguente URL:
+Puoi anche automatizzare la configurazione SSL utilizzando lo strumento cURL. Per farlo, pubblica i parametri di configurazione in questo URL:
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
-Di seguito sono riportati i parametri che potete usare per modificare le varie impostazioni della procedura guidata di configurazione:
+Di seguito sono riportati i parametri che è possibile utilizzare per modificare le varie impostazioni della procedura guidata di configurazione:
 
 * `-F "keystorePassword=password"` - la password del keystore;
 
 * `-F "keystorePasswordConfirm=password"` - confermare la password del keystore;
 
-* `-F "truststorePassword=password"` - la password del trust store;
+* `-F "truststorePassword=password"` - la password del truststore;
 
-* `-F "truststorePasswordConfirm=password"` - confermare la password dell&#39;archivio attendibili;
+* `-F "truststorePasswordConfirm=password"` - confermare la password del truststore;
 
 * `-F "privatekeyFile=@localhostprivate.der"` - specificare la chiave privata;
 
 * `-F "certificateFile=@localhost.crt"` - specificare il certificato;
 
 * `-F "httpsHostname=host.example.com"`- specificare il nome host;
-* `-F "httpsPort=8443"` - la porta su cui lavorerà il listener HTTPS.
+* `-F "httpsPort=8443"` - la porta su cui funzionerà il listener HTTPS.
 
 >[!NOTE]
 >
->Il modo più veloce per eseguire cURL per automatizzare la configurazione SSL è dalla cartella in cui si trovano i file DER e CRT. In alternativa, è possibile specificare il percorso completo negli argomenti `privatekeyFile` e certificateFile.
+>Il modo più veloce per eseguire cURL per automatizzare la configurazione SSL è dalla cartella in cui si trovano i file DER e CRT. In alternativa, è possibile specificare il percorso completo nel `privatekeyFile` e gli argomenti certificateFile.
 >
->È inoltre necessario essere autenticati per eseguire l&#39;aggiornamento, quindi assicurarsi di aggiungere il comando cURL con il parametro `-u user:passeword`.
+>È inoltre necessario essere autenticati per eseguire l&#39;aggiornamento, quindi assicurati di aggiungere il comando cURL con il comando `-u user:passeword` parametro .
 >
->Il comando cURL post corretto dovrebbe essere simile al seguente:
+>Un comando post cURL corretto dovrebbe essere simile al seguente:
 
 ```shell
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
@@ -234,9 +233,9 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 #### Più certificati utilizzando cURL {#multiple-certificates-using-curl}
 
-Potete inviare il servlet a una catena di certificati ripetendo il parametro certificateFile come segue:
+Puoi inviare al servlet una catena di certificati ripetendo il parametro certificateFile come riportato di seguito:
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Dopo aver eseguito il comando, verificate che tutti i certificati siano stati inviati all&#39;archivio chiavi. Controllare l&#39;archivio di chiavi da:
+Dopo aver eseguito il comando, verifica che tutti i certificati siano stati inviati all&#39;archivio chiavi. Controlla il keystore da:
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

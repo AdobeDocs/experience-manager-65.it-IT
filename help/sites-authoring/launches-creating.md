@@ -1,8 +1,8 @@
 ---
 title: Creazione dei lanci
-seo-title: Creazione dei lanci
+seo-title: Creating Launches
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
-seo-description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro.
+seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 94%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
-
 
 # Creazione dei lanci{#creating-launches}
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* Il titolo viene visualizzato nella barra laterale [Riferimenti](/help/sites-authoring/author-environment-tools.md#references), dalla quale gli autori possono accedervi per utilizzarlo.
+* Il titolo viene visualizzato nella barra [Riferimenti](/help/sites-authoring/author-environment-tools.md#references), dalla quale gli autori potranno accedere per lavorarci.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
 
@@ -85,7 +84,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Titolo lancio**: nome del lancio. Scegli un nome che possa essere facilmente riconosciuto dagli autori.
    * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione consente di ottenere questo risultato impostando il lancio come [live copy](/help/sites-administering/msm.md).
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione permette di ottenere questo risultato rendendo il lancio un [Live Copy](/help/sites-administering/msm.md).
 
       Per impostazione predefinita, questa opzione è selezionata.
 
@@ -135,7 +134,7 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 
 #### Creazione di un lancio nidificato: console Lanci {#creating-a-nested-launch-launches-console}
 
-La creazione di un lancio nidificato dalla console **Lanci** è sostanzialmente la stessa procedura utilizzata per creare qualsiasi altra forma di avvio, con l&#39;eccezione che è necessario passare al ramo avvii `/content/launches`:
+La creazione di un lancio nidificato dalla console **Lanci** è molto simile alla creazione di qualsiasi altra forma di lancio, con l’eccezione che è necessario passare al ramo dei lanci `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
 1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
@@ -170,4 +169,3 @@ Puoi eliminare un lancio dalla [console Lanci](/help/sites-authoring/launches.md
 >[!CAUTION]
 >
 >L’eliminazione del lancio rimuove il lancio stesso e tutti i lanci nidificati discendenti.
-

@@ -134,7 +134,7 @@ La creazione di un singolo controllo integrità prevede due passaggi: implementa
    >`sling:configPropertyInherit`
    >
    >
-   >In questo modo il gestore di configurazione unirà le nuove configurazioni con quelle esistenti da `/libs`.
+   >Questo indicherà al gestore della configurazione di unire le nuove configurazioni con quelle esistenti da `/libs`.
 
 ### Creazione di un controllo dello stato composito {#creating-a-composite-health-check}
 
@@ -566,7 +566,7 @@ Il tempo predefinito per la finestra di manutenzione giornaliera è compreso tra
 
 Per ulteriori informazioni sull&#39;esecuzione del cleanup delle revisioni, [consulta questo articolo dedicato](/help/sites-deploying/revision-cleanup.md).
 
-### Pulizia binary di Lucene {#lucene-binaries-cleanup}
+### Pulizia dati binari di Lucene {#lucene-binaries-cleanup}
 
 Utilizzando l&#39;attività Pulizia binari Lucene, è possibile eliminare i binari lucene e ridurre il fabbisogno di dimensioni dell&#39;archivio dati in esecuzione. Questo perché l&#39;abbandono binario di lucene verrà ririchiesto quotidianamente invece della dipendenza precedente su un successo [raccolta oggetti inattivi dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md) esegui.
 

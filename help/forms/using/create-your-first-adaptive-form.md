@@ -1,6 +1,6 @@
 ---
-title: '"Esercitazione: Crea il tuo primo modulo adattivo"'
-seo-title: 'Tutorial: Create your first adaptive form'
+title: "Esercitazione: Crea il tuo primo modulo adattivo"
+seo-title: "Tutorial: Create your first adaptive form"
 description: Scopri come creare moduli interattivi, di classe aziendale e reattivi.
 seo-description: Learn to create business class, interactive, and responsive forms.
 uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
@@ -12,7 +12,7 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
@@ -62,7 +62,7 @@ Obiettivi:
 * Creare un’azione di invio per inviare un’e-mail contenente il contenuto del modulo
 * Anteprima e invio di un modulo adattivo
 
-[![Vedi la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Passaggio 2: Crea modello dati modulo {#step-create-form-data-model}
 
@@ -78,7 +78,7 @@ Obiettivi:
 * Configurare i servizi di lettura e scrittura per il modello dati del modulo
 * Verificare il modello dati del modulo e i servizi configurati con i dati di prova
 
-[![Vedi la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Passaggio 3: Applicazione di regole ai campi del modulo adattivo {#step-apply-rules-to-adaptive-form-fields}
 
@@ -91,7 +91,7 @@ Obiettivi:
 * Creazione e applicazione di regole ai campi del modulo adattivo
 * Utilizzare le regole per attivare i servizi del modello dati modulo per aggiornare i dati al database
 
-[![Vedi la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Passaggio 4: Personalizzare lo stile del modulo adattivo {#step-style-your-adaptive-form}
 
@@ -105,7 +105,7 @@ Obiettivi:
 * Creare un tema per un modulo adattivo utilizzando l’editor di temi
 * Utilizzare i font web in un tema personalizzato
 
-[![Vedi la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Passaggio 5: Pubblicare il modulo adattivo {#step-publish-your-adaptive-form}
 
@@ -119,4 +119,4 @@ Obiettivi:
 * Incorporare il modulo adattivo in un AEM [!DNL Sites] Pagina
 * Incorporare il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata all’esterno di AEM)
 
-[![Vedi la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

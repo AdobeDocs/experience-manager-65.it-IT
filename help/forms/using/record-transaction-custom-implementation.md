@@ -1,33 +1,32 @@
 ---
-title: Registrazione di una transazione per le implementazioni personalizzate
-seo-title: Registrazione di una transazione per le implementazioni personalizzate
-description: Utilizzare l'API TransactionRecorder per registrare automaticamente le azioni non contabilizzate come transazioni
-seo-description: Utilizzare l'API TransactionRecorder per registrare automaticamente le azioni non contabilizzate come transazioni
+title: Registra una transazione per implementazioni personalizzate
+seo-title: Record a transaction for custom implementations
+description: Utilizzare l'API TransactionRecorder per registrare le azioni non contabilizzate automaticamente come transazioni
+seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-
 # Registra una transazione per implementazioni personalizzate {#record-a-transaction-for-custom-implementations}
 
-Utilizzare l&#39;API TransactionRecorder per registrare automaticamente le azioni non contabilizzate come transazioni
+Utilizzare l&#39;API TransactionRecorder per registrare le azioni non contabilizzate automaticamente come transazioni
 
-È possibile utilizzare un codice personalizzato per inviare un modulo PDF, l&#39;URL di anteprima dell&#39;interfaccia utente agente agli utenti finali per visualizzare l&#39;anteprima di una comunicazione interattiva, oppure per inviare un modulo utilizzando metodi personalizzati invece di utilizzare i metodi di invio forniti con  AEM Forms. Tutte le azioni e le implementazioni personalizzate precedentemente citate  API AEM Forms non sono considerate transazioni.  AEM Forms fornisce un&#39;API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), per registrare azioni come le transazioni.
+È possibile utilizzare un codice personalizzato per inviare un modulo PDF, per inviare l’URL di anteprima dell’interfaccia utente dell’agente agli utenti finali per visualizzare l’anteprima di una comunicazione interattiva o per inviare un modulo utilizzando metodi personalizzati anziché utilizzare i metodi di invio forniti con AEM Forms. Tutte le azioni e le implementazioni personalizzate precedentemente menzionate delle API AEM Forms non vengono contabilizzate come transazioni. AEM Forms fornisce un’API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), per registrare azioni quali transazioni.
 
-Per registrare una transazione, scrivere il [servlet sling standard](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) e chiamare il servlet da un client per registrare una transazione. È possibile chiamare il servlet utilizzando AJAX o qualsiasi altro metodo standard.
+Per registrare una transazione, scrivi la [servlet sling standard](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) e chiama il servlet da un client per registrare una transazione. Puoi chiamare il servlet utilizzando AJAX o qualsiasi altro metodo standard.
 
 ## Esempio di codice lato server {#sample-server-sided-code}
 
-È possibile utilizzare il codice di esempio seguente per eseguire l&#39;API TransactionRecorder da una classe JAVA utilizzando un bundle OSGi personalizzato.
+Puoi utilizzare il codice di esempio seguente per eseguire l&#39;API TransactionRecorder da una classe JAVA utilizzando un bundle OSGi personalizzato.
 
 ```java
 import com.adobe.aem.transaction.core.ITransactionRecorder;
@@ -75,7 +74,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Esempio di codice lato client {#sample-client-side-code}
 
-Potete utilizzare il codice di esempio riportato di seguito per chiamare il servlet che dispone dell&#39;API `TransactionRecorder`.
+Puoi usare il codice di esempio seguente per chiamare il servlet che ha `TransactionRecorder`API.
 
 ```javascript
 $.ajax({
@@ -93,7 +92,6 @@ $.ajax({
 
 ## Articoli correlati {#related-articles}
 
-* [Panoramica dei report sulle transazioni](/help/forms/using/transaction-reports-overview.md)
+* [Panoramica dei rapporti sulle transazioni](/help/forms/using/transaction-reports-overview.md)
 * [Visualizzazione e comprensione di rapporti sulle transazioni](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [API fatturabili report transazioni](/help/forms/using/transaction-reports-billable-apis.md)
-
+* [API fatturabili per report transazioni](/help/forms/using/transaction-reports-billable-apis.md)

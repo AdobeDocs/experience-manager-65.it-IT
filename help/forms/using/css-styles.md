@@ -1,8 +1,8 @@
 ---
 title: Creazione di stili CSS per i moduli HTML5
-seo-title: Creazione di stili CSS per i moduli HTML5
+seo-title: Creating CSS styles for HTML5 forms
 description: Scopri come modificare l’aspetto dei moduli HTML5 modificando la classe CSS associata all’elemento modulo HTML.
-seo-description: Scopri come modificare l’aspetto dei moduli HTML5 modificando la classe CSS associata all’elemento modulo HTML.
+seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
 content-type: reference
@@ -10,36 +10,35 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 4%
+source-wordcount: '812'
+ht-degree: 3%
 
 ---
 
-
 # Creazione di stili CSS per i moduli HTML5 {#creating-css-styles-for-html-forms}
 
-Il rendering HTML5 di un modello di modulo basato su XFA è costituito da diversi elementi HTML. Questi elementi sono disposti in ordine. Ogni elemento dispone di classi CSS ben definite. Puoi utilizzare queste classi CSS per selezionare e modificare l’aspetto di un elemento.
+Il rendering HTML5 di un modello di modulo basato su XFA è costituito da diversi elementi di HTML. Questi elementi sono disposti in ordine. Ogni elemento dispone di classi CSS ben definite. Puoi utilizzare queste classi CSS per selezionare e modificare l’aspetto di un elemento.
 
 >[!NOTE]
 >
 >Nelle classi CSS, non modificare il valore degli attributi di larghezza, altezza, spessore del bordo, superiore, sinistra, destra, inferiore, spaziatura, margine e altri attributi di posizione e dimensione. Qualsiasi modifica negli attributi di posizione e dimensione comporta modifiche al layout del modulo.
 
-## Classi CSS  per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
+## Classi CSS per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
 
 Ogni elemento contiene classi CSS ben definite. È possibile modificare queste classi per modificare l&#39;aspetto di un elemento. Ogni elemento, ad eccezione del campo e degli elementi di disegno, dispone di due classi CSS: Classe Type e Classe Name.
 
-* La **classe Type** rappresenta il tipo del campo XFA. È possibile ignorare la classe `type` per modificare gli stili di tutti gli elementi di un particolare tipo.
+* La **Classe Type** rappresenta il tipo del campo XFA. È possibile ignorare le `type` per modificare gli stili di tutti gli elementi di un particolare tipo.
 
-* La **classe Name** corrisponde al nome del campo XFA. È possibile ignorare la classe `name` per modificare e applicare lo stile personalizzato a un elemento.
+* La **Classe Nome** corrisponde al nome del campo XFA. È possibile ignorare le `name` per modificare e applicare uno stile personalizzato a un elemento.
 
 >[!NOTE]
 >
 >Alcuni elementi XFA non hanno un nome. Per modificare gli stili di tali componenti, modifica tutti i componenti di quel particolare tipo.
 
-Per le pagine non denominate in AEM Forms Designer, le pagine di un modulo HTML5 vengono denominate in ordine crescente rispetto al loro numero. Ad esempio, per un modulo HTML5 con due pagine le pagine sono denominate Pagina1, Pagina2.
+Per le pagine senza nome in AEM Forms Designer, le pagine di un modulo HTML5 vengono denominate in ordine crescente rispetto al loro numero. Ad esempio, per un modulo HTML5 con due pagine, le pagine sono denominate Pagina1, Pagina2.
 
 ## Elemento del campo {#field-element}
 
@@ -50,8 +49,8 @@ L’elemento campo contiene due elementi nidificati: widget e didascalia.
 L&#39;elemento widget contiene l&#39;elemento dell&#39;interfaccia utente per l&#39;interazione con gli utenti. Ha tre classi CSS:
 
 * **Widget**: Ogni widget ha questa classe.
-* **nome**: Tutti i widget forniti con AEM contengono la classe del nome del widget. Per i widget personalizzati, lo sviluppatore di widget fornisce la classe Widget name.
-* **tipo**: Ogni widget ha un elemento di interfaccia utente. Questa classe definisce il tipo di elemento dell&#39;interfaccia utente.
+* **name**: Tutti i widget forniti con AEM contengono la classe del nome del widget. Per i widget personalizzati, lo sviluppatore di widget fornisce la classe Widget name.
+* **type**: Ogni widget ha un elemento di interfaccia utente. Questa classe definisce il tipo di elemento dell&#39;interfaccia utente.
 
 ```xml
 <!--field with caption-->
@@ -70,7 +69,7 @@ L&#39;elemento widget contiene l&#39;elemento dell&#39;interfaccia utente per l&
 </div>
 ```
 
-Oltre alla classe tipo e nome, il componente campo contiene anche una classe CSS aggiuntiva denominata **subtype**. Un sottotipo identifica il tipo di campo, ad esempio NumericField, DateField, TextField. È possibile sostituire la classe di sottotipo per modificare lo stile di tutti i campi di tipo, sottotipo.
+Oltre alla classe tipo e nome, il componente campo contiene anche una classe CSS aggiuntiva denominata **sottotipo**. Un sottotipo identifica il tipo di campo, ad esempio NumericField, DateField, TextField. È possibile sostituire la classe di sottotipo per modificare lo stile di tutti i campi di tipo, sottotipo.
 
 ## Classi CSS per diversi componenti {#css-classes-for-different-components}
 
@@ -84,7 +83,7 @@ Oltre alla classe tipo e nome, il componente campo contiene anche una classe CSS
   <tr>
    <td>Pagina</td>
    <td>page</td>
-   <td>Nome definito dall'utente<br /> o<br /> Page&lt;pageNumber&gt; (predefinito)</td>
+   <td>Nome definito dall'utente<br /> o<br /> Pagina&lt;pagenumber&gt; (predefinito)</td>
   </tr>
   <tr>
    <td>Area contenuto</td>
@@ -124,7 +123,7 @@ Oltre alla classe tipo e nome, il componente campo contiene anche una classe CSS
  </tbody>
 </table>
 
-## Classi CSS per diversi campi {#css-classes-for-different-fields}
+## Classi CSS per campi diversi {#css-classes-for-different-fields}
 
 AEM Forms Designer supporta diversi tipi di campi in un modulo come NumericField, DecimalField e Date Field. Tutti questi campi in HTML contengono le classi CSS sopra menzionate. Inoltre, contengono alcune classi aggiuntive a seconda del tipo di campo.
 
@@ -144,11 +143,11 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
    <td>ND</td>
    <td>xfaButton<br type="_moz" /> </td>
    <td>buttonfieldwidget<br type="_moz" /> </td>
-   <td>tipo di input=button<br type="_moz" /> </td>
+   <td>input type=button<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>CheckButton<br type="_moz" /> </td>
-   <td>checkboxfield<br /> </td>
+   <td>campo di controllo<br /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
    <td>checkboxfieldwidget<br type="_moz" /> </td>
    <td>tipo di input=casella di controllo<br type="_moz" /> </td>
@@ -162,35 +161,35 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
   </tr>
   <tr>
    <td>DateTimeField<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget</td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DecimalField<br type="_moz" /> </td>
-   <td>numericfield<br type="_moz" /> </td>
+   <td>CampoDecimale<br type="_moz" /> </td>
+   <td>campo numerico<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DropDown<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>sciolto<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>select</td>
   </tr>
   <tr>
-   <td>ListBox<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>CasellaDiRiepilogo<br type="_moz" /> </td>
+   <td>sciolto<br type="_moz" /> </td>
    <td>listBoxWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>ol</td>
   </tr>
   <tr>
    <td>NumericField<br type="_moz" /> </td>
-   <td>numericfield<br type="_moz" /> </td>
+   <td>campo numerico<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
@@ -204,21 +203,21 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
   </tr>
   <tr>
    <td>RadioButton<br type="_moz" /> </td>
-   <td>radiofield<br type="_moz" /> </td>
+   <td>radiocampo<br type="_moz" /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
    <td>radiofieldwidget<br type="_moz" /> </td>
-   <td>tipo di input=radio<br type="_moz" /> </td>
+   <td>input type=radio<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>TextField<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>CampoTesto<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>TimeField<br type="_moz" /> </td>
-   <td>textfield<br type="_moz" /> </td>
+   <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
@@ -232,10 +231,10 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
 
 | **Tipo di disegno** | **Classe CSS** |
 |---|---|
-| Testo | testo |
+| Testo | text |
 | Immagine | immagine |
 | Rettangolo | rectangle |
-| Linea | line |
+| Linea | riga |
 
 ## Stile di altre parti del modulo {#styling-other-parts-of-the-form}
 
@@ -243,7 +242,7 @@ Oltre all’aspetto dei componenti dell’interfaccia utente nel modulo HTML, è
 
 `Styling Inline Errors`
 
-Quando la convalida di un campo genera un errore, quando il campo è attivo viene visualizzato un errore in linea. Per modificare lo stile degli errori in linea, sovrascrivi l&#39;ID CSS **error-msg**.
+Quando la convalida di un campo genera un errore, quando il campo è attivo viene visualizzato un errore in linea. Per modificare lo stile degli errori in linea, sovrascrivi l’ID CSS **error-msg**.
 
 `Styling Inline Warnings`
 
@@ -251,4 +250,4 @@ Quando la convalida di un campo genera un avviso, quando il campo è attivo vien
 
 `Styling Fields with Validation Errors`
 
-Quando la convalida di un campo non riesce, cambia lo stile del widget. Questa modifica allo stile viene eseguita applicando una classe CSS **widgetError** sul componente widget. Per modificare lo stile predefinito, sovrascrivi la classe **widgetError** .
+Quando la convalida di un campo non riesce, cambia lo stile del widget. Questa modifica allo stile viene eseguita applicando una classe CSS **widgetError** sul componente widget. Per modificare lo stile predefinito, sovrascrivi il **widgetError** classe.

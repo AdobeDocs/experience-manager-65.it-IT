@@ -1,8 +1,8 @@
 ---
 title: Funzioni per community
-seo-title: Funzioni per community
+seo-title: Community Functions
 description: Scopri come accedere alla console Funzioni della community
-seo-description: Scopri come accedere alla console Funzioni della community
+seo-description: Learn how to access the Community Functions console
 uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,29 +11,29 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2448'
 ht-degree: 6%
 
 ---
 
-
 # Funzioni per community{#community-functions}
 
-Il tipo di funzionalità previsto da un’esperienza community è noto. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine precablate per implementare una funzione community che richiede più che semplicemente l’aggiunta di un componente a una pagina in modalità di authoring. Si tratta dei blocchi costitutivi utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da cui vengono [creati i siti community](/help/communities/sites-console.md).
+Il tipo di funzionalità previsto da un’esperienza community è noto. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine precablate per implementare una funzione community che richiede più che semplicemente l’aggiunta di un componente a una pagina in modalità di authoring. Sono gli elementi costitutivi utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da quali siti comunitari [creato](/help/communities/sites-console.md).
 
-Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità di authoring standard [AEM](/help/sites-authoring/editing-content.md). Sono disponibili varie funzioni della community, come mostrato nella console delle funzioni della community.
+Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando lo standard [Modalità di authoring AEM](/help/sites-authoring/editing-content.md). Sono disponibili varie funzioni della community, come mostrato nella console delle funzioni della community.
 
 >[!NOTE]
 >
->Le console per la creazione di [siti della community](/help/communities/sites-console.md), [modelli di sito della community](/help/communities/sites.md), [modelli di gruppo della community](/help/communities/tools-groups.md) e [funzioni della community](/help/communities/functions.md) sono utilizzabili solo nell’ambiente di authoring.
+>Le console per la creazione di [siti della community](/help/communities/sites-console.md), [modelli di sito community](/help/communities/sites.md), [modelli di gruppo community](/help/communities/tools-groups.md)e [funzioni della community](/help/communities/functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
 ## Console Funzioni community {#community-functions-console}
 
 Per accedere alla console funzioni della community nell’ambiente di authoring:
 
-* Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Funzioni community]**.
+* Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Funzioni della community]**.
 
 ![funzioni di comunità](assets/community-functions.png)
 
@@ -45,9 +45,9 @@ Un modello di sito community fornisce la struttura di un sito community con logi
 
 ### Impostazioni titolo e URL {#title-and-url-settings}
 
-**** Titleand  **** URLsono proprietà comuni a tutte le funzioni della community.
+**Titolo** e **URL** sono proprietà comuni a tutte le funzioni della community.
 
-Quando una funzione community viene aggiunta a un modello di sito community o quando [modifica](/help/communities/sites-console.md#modifying-site-properties) la struttura di un sito community, viene visualizzata la finestra di dialogo della funzione in modo che sia possibile configurare il Titolo e l’URL.
+Quando una funzione community viene aggiunta a un modello di sito community o quando [modifica](/help/communities/sites-console.md#modifying-site-properties) la struttura di un sito community, la finestra di dialogo della funzione viene visualizzata in modo da configurare il Titolo e l’URL.
 
 #### Dettagli funzione di configurazione {#configuration-function-details}
 
@@ -55,13 +55,13 @@ Quando una funzione community viene aggiunta a un modello di sito community o qu
 
 * **Titolo**
 
-   (*Richiesto*) Testo visualizzato nel menu delle funzioni del sito
+   (*Obbligatorio*) Testo visualizzato nel menu delle funzioni del sito
 
 * **URL**
 
-   (*Obbligatorio*) Il nome utilizzato per generare l’URI. Il nome deve essere conforme alle [convenzioni di denominazione](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+   (*Obbligatorio*) Nome utilizzato per generare l’URI. Il nome deve essere conforme al [convenzioni di denominazione](/help/sites-developing/naming-conventions.md) imposto da AEM e JCR.
 
-Ad esempio, utilizzando il sito creato seguendo l&#39;esercitazione [Guida introduttiva](/help/communities/getting-started.md), se
+Ad esempio, utilizzando il sito creato da [Introduzione](/help/communities/getting-started.md) esercitazione, se
 
 * Titolo = Pagina Web
 * URL = page
@@ -74,7 +74,7 @@ e il collegamento del menu per la pagina viene visualizzato come:
 
 ### Funzione Flusso attività {#activity-stream-function}
 
-La funzione flusso di attività è una pagina con un [componente Flussi di attività](/help/communities/activities.md) con tutte le visualizzazioni selezionate (tutte le attività, le attività dell&#39;utente e seguenti). Per gli sviluppatori, consulta anche [Activity Stream Essentials](/help/communities/essentials-activities.md) .
+La funzione di flusso di attività è una pagina con un [Componente Flussi di attività](/help/communities/activities.md) con tutte le visualizzazioni selezionate (tutte le attività, le attività utente e seguenti). Vedi anche [Nozioni di base sul flusso di attività](/help/communities/essentials-activities.md) per sviluppatori.
 
 Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
@@ -98,15 +98,15 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 ### Funzione Assegnazioni {#assignments-function}
 
-La funzione assegnazioni è la funzione di base che definisce un [sito community per l&#39;abilitazione](/help/communities/overview.md#enablement-community). Consente l&#39;assegnazione di risorse di abilitazione ai membri della community. Per gli sviluppatori, consulta anche [Assegnazioni Essentials](/help/communities/essentials-assignments.md) .
+La funzione di assegnazione è la funzione di base che definisce un [sito comunitario di abilitazione](/help/communities/overview.md#enablement-community). Consente l&#39;assegnazione di risorse di abilitazione ai membri della community. Vedi anche [Componenti di base per le assegnazioni](/help/communities/essentials-assignments.md) per sviluppatori.
 
-Questa funzione è disponibile come funzione del componente aggiuntivo [enablement](/help/communities/enablement.md). Il componente aggiuntivo per l’abilitazione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
+Questa funzione è disponibile come funzione del [componente aggiuntivo per l’abilitazione](/help/communities/enablement.md). Il componente aggiuntivo per l’abilitazione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
 
 Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Blog {#blog-function}
 
-La funzione blog è una pagina con un [componente Blog](/help/communities/blog-feature.md) configurato per l&#39;assegnazione di tag, il caricamento di file, il seguito, i membri per la modifica automatica, il voto e la moderazione. Per gli sviluppatori, consulta anche [Blog Essentials](/help/communities/blog-developer-basics.md) .
+La funzione blog è una pagina con un [Componente blog](/help/communities/blog-feature.md) configurati per l’assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione. Vedi anche [Blog Essentials](/help/communities/blog-developer-basics.md) per sviluppatori.
 
 Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
@@ -128,11 +128,11 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 * **Consenti contenuto in primo piano**
 
-   Se selezionato, il blog è identificato come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è selezionato.
+   Se selezionato, il blog viene identificato come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è selezionato.
 
 ### Funzione Calendario {#calendar-function}
 
-La funzione Calendario è una pagina con un [componente Calendario](/help/communities/calendar.md) configurato per consentire l’assegnazione di tag. Per gli sviluppatori, consulta anche [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) .
+La funzione calendario è una pagina con un [Componente calendario](/help/communities/calendar.md) configurato per consentire l’assegnazione di tag. Vedi anche [Nozioni di base sul calendario](/help/communities/calendar-basics-for-developers.md) per sviluppatori.
 
 Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
@@ -162,9 +162,9 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 ### Funzione Catalogo {#catalog-function}
 
-La funzione di catalogo consente ai membri della [community di abilitazione](/help/communities/overview.md#enablement-community) di sfogliare le risorse di abilitazione che non sono loro assegnate. Per gli sviluppatori, consulta [Assegnazione tag alle risorse di abilitazione](/help/communities/tag-resources.md) e [Nozioni di base sul catalogo](/help/communities/catalog-developer-essentials.md) .
+La funzione di catalogo permette di [comunità di abilitazione](/help/communities/overview.md#enablement-community) membri per sfogliare le risorse di abilitazione che non sono assegnate a loro. Vedi [Risorse di abilitazione assegnazione tag](/help/communities/tag-resources.md) e [Nozioni di base sul catalogo](/help/communities/catalog-developer-essentials.md) per sviluppatori.
 
-Tutte le risorse di abilitazione e i percorsi di apprendimento per il sito community vengono visualizzati in tutti i cataloghi se la relativa proprietà, ` [Show in Catalog](/help/communities/resources.md)`, è impostata su true. Per includere in modo esplicito le risorse e i percorsi di apprendimento, è necessario applicare un [pre-filtro](/help/communities/catalog-developer-essentials.md#pre-filters) al catalogo.
+Tutte le risorse di abilitazione e i percorsi di apprendimento per il sito community vengono visualizzati in tutti i cataloghi, se di proprietà, ` [Show in Catalog](/help/communities/resources.md)`, è impostato su true. Per includere esplicitamente le risorse e i percorsi di apprendimento, è necessario applicare un [pre-filtro](/help/communities/catalog-developer-essentials.md#pre-filters) al catalogo.
 
 Quando viene aggiunta a un modello, la configurazione consente di specificare i namespace dei tag utilizzati per configurare il filtro tag presentato ai visitatori del sito:
 
@@ -181,21 +181,21 @@ Il valore predefinito è selezionato.
 
 ### Funzione di contenuto {#featured-content-function}
 
-La funzione di contenuto in primo piano è una pagina con un [componente Contenuto in primo piano](/help/communities/featured.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
+La funzione di contenuto in primo piano è una pagina con un [Componente Contenuto](/help/communities/featured.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
-La possibilità di utilizzare il contenuto può essere consentita o disabilitata per componente (consulta [Funzione blog](#blog-function), [Funzione calendario](#calendar-function), [Funzione forum](#forum-function), [Funzione ideazione](#ideation-function) e [Funzione QnA](#qna-function)).
+La possibilità di utilizzare il contenuto può essere consentita o disabilitata per ciascun componente (consulta [Funzione blog](#blog-function), [Funzione Calendario](#calendar-function), [Funzione Forum](#forum-function), [Funzione di ideazione](#ideation-function)e [Funzione QnA](#qna-function)).
 
 Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Libreria file {#file-library-function}
 
-La funzione libreria file è una pagina con un [componente Libreria file](/help/communities/file-library.md) configurato per consentire l&#39;aggiunta e l&#39;eliminazione di commenti.
+La funzione libreria file è una pagina con un [Componente Libreria file](/help/communities/file-library.md) configurato per consentire l’aggiunta e l’eliminazione di commenti.
 
 Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione Forum {#forum-function}
 
-La funzione forum è una pagina con un [componente Forum](/help/communities/forum.md) configurato per l’assegnazione di tag, il caricamento di file, i seguenti membri per la modifica automatica, il voto e la moderazione.
+La funzione forum è una pagina con un [Componente Forum](/help/communities/forum.md) configurati per l’assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione.
 
 Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
@@ -229,17 +229,17 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 >[!CAUTION]
 >
->La funzione dei gruppi deve essere *not* la funzione *prima o la funzione unica* nella struttura di un sito o in un modello di sito community.
+>La funzione gruppi deve *not* essere *primo né unico* funziona nella struttura di un sito o in un modello di sito community.
 >
->Qualsiasi altra funzione, come la [funzione pagina](#page-function), deve essere inclusa ed elencata per prima.
+>Qualsiasi altra funzione, ad esempio [funzione pagina](#page-function), deve essere incluso ed elencato per primo.
 
 La funzione gruppi consente ai membri della community di creare sottocommunity all’interno del sito della community nell’ambiente di pubblicazione.
 
-A seconda delle [impostazioni](/help/communities/sites-console.md#groupmanagement) quando la funzione Groups è inclusa in un [modello di sito community](/help/communities/sites.md), i gruppi possono essere pubblici o privati e uno o più modelli di gruppo community possono essere configurati per fornire una scelta di modelli quando il gruppo community viene effettivamente creato (ad esempio dall&#39;ambiente di pubblicazione). Un [modello di gruppo community](/help/communities/tools-groups.md) specifica quali funzioni di Communities vengono create per le pagine del gruppo, ad esempio forum e calendari.
+A seconda [impostazioni](/help/communities/sites-console.md#groupmanagement) quando la funzione Groups è inclusa in un [modello di sito community](/help/communities/sites.md), i gruppi possono essere pubblici o privati e uno o più modelli di gruppo community possono essere configurati per fornire una scelta di modelli quando il gruppo community viene effettivamente creato (ad esempio dall’ambiente di pubblicazione). A [modello di gruppo community](/help/communities/tools-groups.md) specifica quali funzioni di Communities vengono create per le pagine del gruppo, ad esempio forum e calendari.
 
 Quando viene creato un gruppo di community, viene creato in modo dinamico un gruppo di membri per il nuovo gruppo, a cui è possibile assegnare o unire i membri. Per ulteriori informazioni, consulta [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
-A partire dal [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack) di Communities, i gruppi di community vengono creati nell&#39;ambiente di authoring utilizzando la [console Gruppi di siti di Communities](/help/communities/groups.md) e possono essere creati nell&#39;ambiente di pubblicazione quando abilitato.
+A livello di Comunità [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack), i gruppi community vengono creati nell’ambiente di authoring utilizzando [Console Gruppi di Communities Sites](/help/communities/groups.md)e può essere creato nell’ambiente di pubblicazione quando è abilitato.
 
 Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
@@ -249,11 +249,11 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
 * **Seleziona modelli per gruppi**
 
-   Un elenco a discesa che consente di selezionare uno o più modelli di gruppo abilitati da cui scegliere il futuro creatore di un nuovo gruppo community (nell’ambiente di pubblicazione).
+   Un elenco a discesa che consente di selezionare uno o più modelli di gruppo abilitati da cui può scegliere il futuro creatore di un nuovo gruppo community (nell’ambiente di pubblicazione).
 
 * **Consenti membri privilegiati**
 
-   Se selezionato, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza dei membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
+   Se selezionato, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **Consenti creazione pubblicazione**
 
@@ -262,7 +262,7 @@ Il valore predefinito è selezionato.
 
 ### Funzione ideazione {#ideation-function}
 
-La funzione di ideazione è una pagina con un [componente Ideazione](/help/communities/ideation-feature.md).
+La funzione ideazione è una pagina con una [Componente ideazione](/help/communities/ideation-feature.md).
 
 Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo seguente, che specifica il Titolo e i nomi URL predefiniti, nonché le impostazioni di visualizzazione predefinite per il modello:
 
@@ -272,7 +272,7 @@ Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo se
 
 * **Consenti membri privilegiati**
 
-   Se selezionato, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza dei membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
+   Se selezionato, il forum consente solo ai membri privilegiati di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono effettuare la pubblicazione. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
@@ -288,9 +288,9 @@ Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo se
 
 ### Funzione Classifica {#leaderboard-function}
 
-La funzione della classifica è una pagina con un [componente della classifica](/help/communities/enabling-leaderboard.md).
+La funzione della classifica è una pagina con una [Componente della classifica](/help/communities/enabling-leaderboard.md).
 
-**NOTA**: Il componente Leaderboard deve essere ulteriormente configurato  ** dopo la creazione di un sito community da un modello community che include la funzione Leaderboard. Specifica le [regole](/help/communities/enabling-leaderboard.md#rules-tab) del componente Leaderboard, che dipendono dalla configurazione di [punteggio e badge](/help/communities/implementing-scoring.md) per il sito della community.
+**NOTA**: Il componente Leaderboard deve essere configurato ulteriormente *dopo* un sito community viene creato da un modello community che include la funzione Leaderboard. Specifica il componente della classifica [regole](/help/communities/enabling-leaderboard.md#rules-tab), che dipendono dalla configurazione di [punteggio e badge](/help/communities/implementing-scoring.md) per il sito della community.
 
 Quando viene aggiunta a un modello, viene visualizzata la finestra di dialogo seguente, che specifica il Titolo e i nomi URL predefiniti, nonché le impostazioni di visualizzazione predefinite per il modello:
 
@@ -315,13 +315,13 @@ Il valore predefinito è deselezionato.
 
 ### Funzione Pagina {#page-function}
 
-La funzione page aggiunge al sito community una pagina vuota che è collegata alle funzioni del sito community: accesso, menu, notifiche, messaggistica, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando la [modalità di creazione AEM standard](/help/sites-authoring/editing-content.md).
+La funzione page aggiunge al sito community una pagina vuota che è collegata alle funzioni del sito community: accesso, menu, notifiche, messaggistica, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando [modalità di authoring standard AEM](/help/sites-authoring/editing-content.md).
 
 Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
 
 ### Funzione D/R {#qna-function}
 
-La funzione QnA è una pagina con un componente [QnA](/help/communities/working-with-qna.md) configurato per l&#39;assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione.
+La funzione QnA è una pagina con un [Componente QnA](/help/communities/working-with-qna.md) configurati per l’assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione.
 
 Quando viene aggiunta a un modello, la configurazione consente restrizioni ai membri con privilegi:
 
@@ -351,7 +351,7 @@ Quando viene aggiunta a un modello, la configurazione consente restrizioni ai me
 
 ## Crea funzione community {#create-community-function}
 
-Per creare una funzione community, seleziona l’icona `Create Community Function` situata nella parte superiore della console Funzioni community . È possibile creare più funzioni basate sullo stesso Blueprint AEM e quindi personalizzate in modo univoco aprendo in modalità di modifica dell’autore.
+La possibilità di creare una funzione community viene raggiunta selezionando la `Create Community Function` nella parte superiore della console Funzioni della community. È possibile creare più funzioni basate sullo stesso Blueprint AEM e quindi personalizzate in modo univoco aprendo in modalità di modifica dell’autore.
 
 ![funzione create-community](assets/create-community-function.png)
 
@@ -377,25 +377,25 @@ Nel pannello Nome funzione community sono configurati un nome, una descrizione e
 
 ![blueprint aem](assets/aem-blueprint.png)
 
-Nel pannello `AEM Blueprint` è possibile selezionare il modello che è l&#39;implementazione sottostante della funzione community.
+Sulla `AEM Blueprint` è possibile selezionare il modello che è l&#39;attuazione sottostante della funzione comunitaria.
 
-La funzione community è un mini sito che include una o più pagine, preconnesso per l’inclusione in un sito community con login, profili utente, notifiche, messaggistica, menu del sito, ricerca, temi e funzioni di branding. Una volta creata la funzione, è possibile [aprire la funzione](#open-community-function) in modalità di modifica dell&#39;autore e personalizzare le impostazioni della pagina o del componente.
+La funzione community è un mini sito che include una o più pagine, preconnesso per l’inclusione in un sito community con login, profili utente, notifiche, messaggistica, menu del sito, ricerca, temi e funzioni di branding. Una volta creata la funzione, è possibile [aprire la funzione](#open-community-function) in modalità di modifica dell’autore e personalizzare le impostazioni della pagina o del componente.
 
-Poiché la funzione community è implementata come [Live Copy](/help/sites-administering/msm.md#live-copies) di un [blueprint](/help/sites-administering/msm-livecopy.md#creatingablueprint), è possibile eseguire il rollout delle modifiche apportate a una funzione che interessa tutte le pagine del sito community create dal [modello di sito community](/help/communities/sites.md) o dal [modello di gruppo community](/help/communities/tools-groups.md) che include la funzione. È inoltre possibile dissociare una pagina dalla blueprint principale per apportare modifiche a livello di pagina.
+Poiché la funzione comunitaria è attuata come [Live Copy](/help/sites-administering/msm.md#live-copies) di [blueprint](/help/sites-administering/msm-livecopy.md#creatingablueprint), è possibile eseguire il rollout delle modifiche apportate a una funzione che interessa tutte le pagine del sito community create da [modello di sito community](/help/communities/sites.md) o [modello di gruppo community](/help/communities/tools-groups.md) che includeva la funzione . È inoltre possibile dissociare una pagina dalla blueprint principale per apportare modifiche a livello di pagina.
 
-Vedere anche [Multi Site Manager](/help/sites-administering/msm.md).
+Vedi anche [Multi Site Manager](/help/sites-administering/msm.md).
 
 ### Miniatura  {#thumbnail}
 
 ![miniatura funzione](assets/funtion-thumbnail.png)
 
-Nel pannello Miniatura, è possibile caricare un&#39;immagine da visualizzare nella [console Funzioni della community](#community-functions-console).
+Nel pannello Miniatura, è possibile caricare un’immagine da visualizzare nel [Console Funzioni community](#community-functions-console).
 
 ## Apri funzione community {#open-community-function}
 
 ![a funzionamento aperto](assets/open-function.png)
 
-Seleziona l’ icona `Open Community Function` per accedere alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
+Seleziona la `Open Community Function` per accedere alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
 
 ### Configurazione dei componenti {#configuring-components}
 
@@ -403,7 +403,7 @@ Una funzione community viene implementata come Live Copy di una blueprint AEM, i
 
 È possibile non solo creare il contenuto della pagina, ma anche configurare i componenti.
 
-Se si configura un componente in una pagina di un sito community creato, potrebbe essere necessario annullare [ereditarietà](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) per configurare il componente. L’ereditarietà deve essere ristabilita al termine della configurazione.
+Se si configura un componente in una pagina di un sito community creato, può essere necessario annullare [eredità](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) per configurare il componente . L’ereditarietà deve essere ristabilita al termine della configurazione.
 
 Per informazioni sulla configurazione, visita [Componenti di Communities](/help/communities/author-communities.md) per gli autori.
 
@@ -411,4 +411,4 @@ Per informazioni sulla configurazione, visita [Componenti di Communities](/help/
 
 ![funzione di modifica](assets/edit-function.png)
 
-Seleziona l&#39;icona `Edit Community Function` per modificare le proprietà della funzione utilizzando gli stessi pannelli di [creazione di una funzione community](#create-community-function), inclusa l&#39;abilitazione o la disattivazione della funzione.
+Seleziona la `Edit Community Function` per modificare le proprietà della funzione utilizzando gli stessi pannelli di [creazione di una funzione community](#create-community-function), inclusa l’abilitazione o la disattivazione della funzione.

@@ -13,7 +13,7 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -39,11 +39,11 @@ Il modo più semplice per farlo è quello di dare **utenti dei progetti** access
 Per creare un nuovo progetto, effettua le seguenti operazioni.
 
 1. In **Progetti** console, tocca o fai clic **Crea** per aprire **Crea progetto** procedura guidata.
-1. Seleziona un modello e fai clic su **Successivo**. Ulteriori informazioni sui modelli di progetto standard [qui.](/help/sites-authoring/projects.md#project-templates)
+1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [qui.](/help/sites-authoring/projects.md#project-templates)
 
    ![Creazione guidata progetto](assets/create-project-wizard.png)
 
-1. Definisci la **Titolo** e **Descrizione** e aggiungi un **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono,
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono,
 
    ![Passaggio delle proprietà della procedura guidata](assets/create-project-wizard-properties.png)
 
@@ -58,7 +58,7 @@ I progetti consentono di raggruppare le risorse in un’unica entità per gestir
 Per associare risorse a un progetto:
 
 1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di porzioni.
+1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiungi riquadro](assets/project-add-tile.png)
 

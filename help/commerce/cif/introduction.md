@@ -6,7 +6,7 @@ exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di creare rap
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Area di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)e modelli di integrazione per PWA (contenuto headless e commerce).
+Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Area di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)e modelli di integrazione per PWA (contenuto headless e commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 

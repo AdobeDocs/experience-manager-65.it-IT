@@ -1,8 +1,8 @@
 ---
 title: Console Strumenti
-seo-title: Console Strumenti
+seo-title: Tools Consoles
 description: Informazioni sulle diverse console Strumenti disponibili in AEM.
-seo-description: Informazioni sulle diverse console Strumenti disponibili in AEM.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 45%
+source-wordcount: '609'
+ht-degree: 44%
 
 ---
 
-
 # Console Strumenti{#tools-consoles}
 
-Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Esistono attualmente due versioni della console **Strumenti** a seconda dell&#39;interfaccia in uso:
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Attualmente esistono due sapori del **Strumenti** a seconda dell’interfaccia in uso:
 
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
@@ -34,7 +33,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
 
 >[!NOTE]
 >
->Poiché le schede nell&#39;interfaccia utente forniscono dettagli sullo scopo di ciascuna opzione, questa tabella fornisce semplicemente un riferimento rapido alla posizione delle funzioni nella struttura.
+>Poiché le schede nell’interfaccia utente forniscono dettagli sullo scopo di ciascuna opzione, questa tabella fornisce semplicemente un riferimento rapido sulla posizione delle funzioni nella struttura.
 
 <table>
  <tbody>
@@ -260,7 +259,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>Autorizzazioni </td>
+   <td>Autorizzazioni</td>
   </tr>
   <tr>
    <td> </td>
@@ -378,20 +377,20 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Punto centralizzato per la gestione di più siti.</td>
   </tr>
   <tr>
-   <td>Configurazioni ClientContext<br /> </td>
-   <td>ClientContext rappresenta una raccolta di dati utente assemblata in modo dinamico. Le configurazioni predefinite e di Marketing Cloud si trovano qui.<br /> </td>
+   <td>Configurazioni del contesto client<br /> </td>
+   <td>ClientContext rappresenta una raccolta di dati utente assemblata in modo dinamico. Le configurazioni predefinite e di marketing cloud si trovano qui.<br /> </td>
   </tr>
   <tr>
    <td>Configurazioni servizi cloud<br /> </td>
-   <td>Contiene le configurazioni relative all'integrazione con l'Adobe Marketing Cloud.</td>
+   <td>Contiene le configurazioni relative all’integrazione con Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Impostazioni cloud<br /> </td>
-   <td>Impostazioni di Gestione configurazione.</td>
+   <td>Impostazioni di Configuration Manager.</td>
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Consente l'accesso a importatori e a vari dati di prodotto.</td>
+   <td>Consente l'accesso agli importatori e a vari dati di prodotto.</td>
   </tr>
   <tr>
    <td>DAM </td>
@@ -399,11 +398,11 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Dashboard</td>
-   <td>Consente di creare dashboard di reporting; questi forniscono un modo personalizzabile per definire le pagine che visualizzano dati consolidati.</td>
+   <td>Consente di creare dashboard di reporting; queste forniscono un modo personalizzabile per definire pagine che visualizzano dati consolidati.</td>
   </tr>
   <tr>
    <td>Documentazione personalizzata</td>
-   <td>Utilizzato per estendere la documentazione e la guida in linea.</td>
+   <td>Utilizzato per l’estensione della documentazione e della guida in linea.</td>
   </tr>
   <tr>
    <td>fd</td>
@@ -411,7 +410,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Invii modulo</td>
-   <td>Contiene l'elenco degli invii di moduli ricevuti.</td>
+   <td>Contiene l’elenco degli invii dei moduli ricevuti.</td>
   </tr>
   <tr>
    <td>Importatori </td>
@@ -419,23 +418,23 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Verifica collegamenti esterni</td>
-   <td>Controllo dei collegamenti esterni.</td>
+   <td>Verifica collegamenti esterni.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Consente di creare siti Web progettati per dispositivi mobili.</td>
+   <td>Consente di creare siti web progettati per dispositivi mobili.</td>
   </tr>
   <tr>
    <td>Pacchetti</td>
-   <td>Un collegamento alternativo a Gestione pacchetti che mostra i pacchetti caricati per AEM WCM. Simili alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
+   <td>Un collegamento alternativo a Gestione pacchetti che mostra i pacchetti caricati per AEM WCM. Simile alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
   </tr>
   <tr>
    <td>Replica - Agenti di replica</td>
-   <td>Utilizzato per replicare i dati dall’autore alla pubblicazione al momento della pubblicazione delle pagine o con replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’autore.</td>
+   <td>Utilizzato per replicare i dati dall’autore alla pubblicazione durante la pubblicazione delle pagine o con replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’autore.</td>
   </tr>
   <tr>
    <td>Rapporti</td>
-   <td>AEM offre una serie di rapporti personalizzati, che consentono di creare rapporti personalizzati e/o di sviluppare rapporti personalizzati.</td>
+   <td>AEM fornisce una serie di report personalizzati, ti consente di creare report personalizzati e/o di svilupparne uno personalizzato.</td>
   </tr>
   <tr>
    <td>Scaffolding pagine predefinito</td>
@@ -443,7 +442,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Sicurezza - Configurazione self-service </td>
-   <td>Consente di configurare le e-mail che gli utenti ricevono automaticamente quando creano un account o reimpostano una password e di confermare una password che è stata reimpostata.</td>
+   <td>Consente di configurare le e-mail che gli utenti ricevono automaticamente quando creano un account o reimpostano una password e di confermare una password reimpostata.</td>
   </tr>
   <tr>
    <td>Segmentazione</td>
@@ -454,12 +453,12 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
-   <td>trust store</td>
+   <td>truststore</td>
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
-   <td>Gestione versioni - Rimuovi versioni</td>
-   <td>Consente di eliminare le versioni delle pagine come necessario.</td>
+   <td>Gestione versioni - Eliminare le versioni</td>
+   <td>Consente di eliminare le versioni della pagina in base alle esigenze.</td>
   </tr>
   <tr>
    <td>Flusso di lavoro</td>
@@ -467,4 +466,3 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
  </tbody>
 </table>
-

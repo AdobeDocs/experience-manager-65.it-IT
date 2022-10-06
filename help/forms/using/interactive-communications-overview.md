@@ -133,12 +133,12 @@ La comunicazione interattiva è l’approccio predefinito e consigliato per crea
   <tr>
    <td>Controllo</td>
    <td>Non supportato</td>
-   <td>Supportata</td>
+   <td>Funzione supportata</td>
   </tr>
    <tr>
    <td>Controllo delle versioni</td>
    <td>Non supportato</td>
-   <td>Supportata</td>
+   <td>Funzione supportata</td>
   </tr>
    <td>Elaborazione batch</td>
    <td>Supportato </td>
@@ -147,12 +147,12 @@ La comunicazione interattiva è l’approccio predefinito e consigliato per crea
   <tr>
    <td>Firma dell'agente</td>
    <td>Non supportato</td>
-   <td>Supportata</td>
+   <td>Funzione supportata</td>
   </tr>
   <tr>
    <td>Funzioni remote</td>
    <td>Non supportato</td>
-   <td>Supportata</td>
+   <td>Funzione supportata</td>
   </tr>
  </tbody>
 </table>

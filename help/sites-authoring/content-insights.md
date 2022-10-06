@@ -1,22 +1,21 @@
 ---
 title: Approfondimenti contenuto
-seo-title: Approfondimenti contenuto
+seo-title: Content Insight
 description: Gli Approfondimenti contenuto forniscono informazioni sulle prestazioni della pagina mediante l’analisi del web e dei consigli SEO
-seo-description: Approfondimenti contenuto fornisce informazioni sulle prestazioni delle pagine utilizzando l'analisi Web e la raccomandazione SEO
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 95%
+source-wordcount: '521'
+ht-degree: 97%
 
 ---
-
 
 # Approfondimenti contenuto{#content-insight}
 
@@ -51,7 +50,7 @@ Vedi [Modifica del periodo di riferimento](/help/sites-authoring/ci-analyze.md#c
 
 >[!NOTE]
 >
->I rapporti sugli Approfondimenti contenuto richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Consultate [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con  Adobe Target](/help/sites-administering/target.md) e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
+>I rapporti sugli Approfondimenti contenuto richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Vedi [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con Adobe Target](/help/sites-administering/target.md)e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Il Rapporto delle visualizzazioni {#the-views-report}
 
@@ -99,4 +98,3 @@ Il Rapporto sui consigli SEO contiene i risultati dell’analisi BrightEdge per 
 Il rapporto consente di creare attività in modo da apportare migliorie per migliorare la capacità della pagina di essere trovata. I consigli indicano che le attività sono state create per la loro attuazione. Vedi [Assegnazione delle attività per Consigli SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-

@@ -1,8 +1,8 @@
 ---
 title: Pagine di destinazione
-seo-title: Pagine di destinazione
+seo-title: Landing Pages
 description: Le pagine di destinazione consentono di importare rapidamente una progettazione o contenuti direttamente in una pagina AEM. Lo sviluppatore web può preparare il codice HTML e contenuti aggiuntivi da importare come pagina completa o come parte di una pagina.
-seo-description: Le pagine di destinazione consentono di importare rapidamente una progettazione o contenuti direttamente in una pagina AEM. Lo sviluppatore web può preparare il codice HTML e contenuti aggiuntivi da importare come pagina completa o come parte di una pagina.
+seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3381'
+source-wordcount: '3335'
 ht-degree: 84%
 
 ---
-
 
 # Pagine di destinazione{#landing-pages}
 
@@ -38,7 +37,7 @@ La preparazione del pacchetto di progettazione per l&#39;importazione è descrit
 
 >[!CAUTION]
 >
->Poiché Importazione progettazione richiede l&#39;accesso a `/apps`, non funzionerà in ambienti cloud containerizzati in cui `/apps` è immutabile.
+>Poiché Importazione progettazione richiede l’accesso a `/apps`, non funzionerà in ambienti cloud containerizzati in cui `/apps` è immutabile.
 
 ## Cosa sono le pagine di destinazione? {#what-are-landing-pages}
 
@@ -50,7 +49,7 @@ Per creare delle pagine di destinazione in AEM, esegui i passaggi seguenti:
 
 1. Crea in AEM una pagina che contenga un elemento canvas per pagina di destinazione. AEM viene fornito con un campione chiamato **Pagina importazione**.
 
-1. [Prepara l&#39;HTML e le risorse.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) 
+1. [Prepara l&#39;HTML e le risorse. ](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Crea un pacchetto con le risorse in un file ZIP al quale si fa riferimento come pacchetto di progettazione.
 1. Importa il pacchetto progettazione nella pagina di importazione. 
 1. Modificate e pubblicate la pagina.
@@ -63,7 +62,7 @@ Esempio di pagina di destinazione in AEM:
 
 ### Pagine di destinazione per dispositivi mobili {#mobile-landing-pages}
 
-Una pagina di destinazione può disporre anche di una versione per dispositivi mobili. Per avere una versione separata per dispositivi mobili della pagina di destinazione, il progetto di importazione deve disporre di due file html: *index.htm(l)* e *mobile.index.htm(l)*.
+Una pagina di destinazione può disporre anche di una versione per dispositivi mobili. Per disporre di una versione mobile separata della pagina di destinazione, la progettazione di importazione deve disporre di due file html: *index.htm(l)* e *mobile.index.htm(l)*.
 
 La procedura di importazione della pagina di destinazione è uguale a quella per una pagina di destinazione normale, ma contiene un file html aggiuntivo per dispositivi mobili. Anche questo file HTML deve disporre di un elemento canvas `div` con `id=cqcanvas` come il file HTML della versione per desktop. Inoltre supporta tutti i componenti modificabili descritti per la pagina di destinazione.
 
@@ -75,7 +74,7 @@ La pagina di destinazione per dispositivi mobili viene creata come pagina figlia
 >
 >Se la pagina di destinazione desktop viene eliminata o disattivata, anche la pagina di destinazione per dispositivi mobili viene eliminata o disattivata con essa.
 
-## Componenti per pagina di destinazione  {#landing-page-components}
+## Componenti per pagina di destinazione {#landing-page-components}
 
 Affinché alcune parti dell’HTML importato possano essere modificate in AEM, puoi mappare i contenuti dell’HTML delle pagine di destinazione su componenti AEM. Importazione progettazione riconosce per impostazione predefinita i seguenti componenti:
 
@@ -122,7 +121,7 @@ Esempio di un componente Immagine in una pagina di destinazione:
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Invito all’azione (CTA, Call To Action) {#call-to-action-cta}
+#### Invito all’azione {#call-to-action-cta}
 
 La progettazione di una pagina di destinazione può contenere diversi collegamenti, alcuni dei quali possono avere una funzione di “Invito all’azione”.
 
@@ -139,20 +138,20 @@ Questo componente di Invito all&#39;azione può essere usato per aggiungere un t
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**** EtichettaTesto visibile agli utenti. Puoi modificare la formattazione con l’editor Rich Text.
+**Etichetta** Testo visualizzato dagli utenti. Puoi modificare la formattazione con l’editor Rich Text.
 
-**Target** URLEimmettete l’URI che gli utenti dovranno visitare se fanno clic sul testo.
+**URL di destinazione** Inserisci l’URI che gli utenti visitano se fanno clic sul testo.
 
-**Opzioni** di renderingDescrive le opzioni di rendering. Puoi selezionare le seguenti opzioni:
+**Opzioni di rendering** Descrive le opzioni di rendering. Puoi selezionare le seguenti opzioni:
 
 * Carica pagina in una nuova finestra browser
 * Carica pagina nella finestra corrente
 * Carica la pagina nel frame padre/superiore
 * Cancella tutti i frame e carica in finestra browser completa
 
-**Nella** scheda Stile, immettere un percorso del foglio di stile CSS.
+**CSS** Nella scheda Stile, immetti un percorso al foglio di stile CSS.
 
-**Nella** scheda Stile, immettere un ID per identificare in modo univoco il componente.
+**ID** Nella scheda Stile , inserisci un ID con cui identificare il componente in modo univoco.
 
 Esempio di collegamento ClickThrough:
 
@@ -164,20 +163,20 @@ Questo componente Invito all&#39;azione può essere usato per aggiungere un’im
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-**** EtichettaTesto visibile agli utenti nell’elemento grafico. Puoi modificare la formattazione con l’editor Rich Text.
+**Etichetta** Testo visualizzato dagli utenti nell’immagine. Puoi modificare la formattazione con l’editor Rich Text.
 
-**Target** URLEimmettete l’URI che gli utenti dovranno visitare se fanno clic sull’immagine.
+**URL di destinazione** Inserisci l’URI che gli utenti visiteranno se fanno clic sull’immagine.
 
-**Opzioni** di renderingDescrive le opzioni di rendering. Puoi selezionare le seguenti opzioni:
+**Opzioni di rendering** Descrive le opzioni di rendering. Puoi selezionare le seguenti opzioni:
 
 * Carica pagina in una nuova finestra browser
 * Carica pagina nella finestra corrente
 * Carica la pagina nel frame padre/superiore
 * Cancella tutti i frame e carica in finestra browser completa
 
-**Nella** scheda Stile, immettere un percorso del foglio di stile CSS.
+**CSS** Nella scheda Stile, immetti un percorso al foglio di stile CSS.
 
-**Nella** scheda Stile, immettere un ID per identificare in modo univoco il componente.
+**ID** Nella scheda Stile , inserisci un ID con cui identificare il componente in modo univoco.
 
 Esempio di collegamento grafico:
 
@@ -199,7 +198,7 @@ I moduli lead Invito all&#39;azione sono composti di diversi componenti distinti
 
 * **Componenti profilo** I componenti profilo si riferiscono ai profili dei visitatori utilizzati per la collaborazione sui social network e in altre aree in cui è richiesta la personalizzazione in base al visitatore.
 
-L&#39;esempio precedente mostra un modulo di esempio; è composto dai campi **Modulo lead** (inizio e fine), con i campi **Nome** e **ID e-mail** utilizzati per l&#39;input e un campo **Invia**
+L’esempio precedente mostra un modulo di esempio; è costituito da **Modulo lead** componente (inizio e fine), con **Nome** e **ID e-mail** campi utilizzati per l’input e **Invia** field
 
 Nella barra laterale sono disponibili i seguenti componenti per Modulo lead con Invito all’azione:
 
@@ -226,43 +225,43 @@ Qui si specificano le informazioni di base, ad esempio il titolo del componente 
 >
 >Non tutte le opzioni sono disponibili per tutti i componenti per modulo lead. Per ulteriori informazioni su queste [impostazioni comuni](/help/sites-authoring/default-components.md#formsgroup), Consulta i Moduli.
 
-#### Componenti per Moduli lead  {#lead-form-components}
+#### Componenti per Moduli lead {#lead-form-components}
 
 Nella sezione di seguito vengono descritti i componenti disponibili per i Moduli lead con Invito all’azione.
 
-**Informazioni** suConsente agli utenti di aggiungere informazioni.
+**Informazioni** Consente agli utenti di aggiungere informazioni.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-**Campo** indirizzo: consente agli utenti di inserire le informazioni sull’indirizzo. Quando si configura questo componente, è necessario inserire il Nome elemento nella finestra di dialogo. Il Nome elemento è il nome assegnato all’elemento modulo. Indica dove vengono registrati i dati nella directory archivio.
+**Campo indirizzo** Consente agli utenti di inserire le informazioni relative all’indirizzo. Quando si configura questo componente, è necessario inserire il Nome elemento nella finestra di dialogo. Il Nome elemento è il nome assegnato all’elemento modulo. Indica dove vengono registrati i dati nella directory archivio.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
-**Data di** nascitaGli utenti possono immettere la data di nascita.
+**Data di nascita** Gli utenti possono inserire la data di nascita.
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-**ID e-mail:** consente agli utenti di immettere un indirizzo e-mail (identificazione).
+**ID e-mail** Consente agli utenti di inserire un indirizzo e-mail (identificazione).
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-**Nome:** fornisce un campo in cui gli utenti possono immettere il proprio nome.
+**Nome** Fornisce un campo in cui gli utenti possono immettere il proprio nome.
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-**Gli** utenti di genere possono selezionare il genere da un elenco a discesa.
+**Genere** Gli utenti possono selezionare il proprio genere da un elenco a discesa.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
-**Cognome:** gli utenti possono immettere le informazioni sul Cognome.
+**Cognome** Gli utenti possono immettere le informazioni sul cognome.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Modulo lead:** aggiungete questo componente per aggiungere un modulo lead alla pagina di destinazione. Un modulo lead contiene automaticamente i campi Inizio del modulo lead e Fine del modulo lead. Tra questi due campi puoi aggiungere i componenti per modulo lead descritti in questa sezione.
+**Modulo lead** Aggiungi questo componente per aggiungere un modulo per lead alla pagina di destinazione. Un modulo lead contiene automaticamente i campi Inizio del modulo lead e Fine del modulo lead. Tra questi due campi puoi aggiungere i componenti per modulo lead descritti in questa sezione.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Il componente Modulo lead definisce l’inizio e la fine di un modulo utilizzando gli elementi **Inizio modulo** e **Fine modulo**. Questi sono sempre utilizzati in coppia per garantire la corretta definizione del modulo.
+Il componente Modulo lead definisce sia l’inizio che la fine di un modulo utilizzando **Inizio modulo** e **Fine modulo** elementi. Questi sono sempre utilizzati in coppia per garantire la corretta definizione del modulo.
 
 Una volta aggiunto il modulo lead, si possono configurare l’inizio o la fine del modulo facendo clic su **Modifica** nella barra corrispondente.
 
@@ -274,27 +273,27 @@ Sono disponibili due schede di configurazione, **Modulo** e **Avanzato**:
 
 **Pagina di ringraziamento** La pagina a cui viene fatto riferimento per ringraziare i visitatori dopo l’invio del modulo. Se lasciato vuoto, dopo l’invio viene visualizzato di nuovo il modulo.
 
-**Avvia** flusso di lavoro: determina il flusso di lavoro attivato dopo l’invio del modulo per lead.
+**Avvia flusso di lavoro** Determina il flusso di lavoro che viene attivato dopo l’invio del modulo per lead.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Post** OptionsSono disponibili le seguenti opzioni di post:
+**Opzioni post** Sono disponibili le seguenti opzioni di pubblicazione:
 
 * Crea lead
 * Servizio e-mail: crea utente con sottoscrizione e aggiungi all’elenco - Utilizza questa opzione se ti servi di un provider di servizi e-mail come ExactTarget.
-* Servizio e-mail: Invia messaggio di risposta automatica - Utilizzate questa opzione se utilizzate un provider di servizi e-mail come ExactTarget.
-* Servizio e-mail: Cancella sottoscrizione a mailing list - Utilizzate questa opzione se utilizzate un provider di servizi e-mail come ExactTarget.
+* Servizio e-mail: Invia e-mail di risposta automatica: da utilizzare se utilizzi un provider di servizi e-mail come ExactTarget.
+* Servizio e-mail: Annulla sottoscrizione a mailing list - Utilizza questa opzione se utilizzi un provider di servizi e-mail come ExactTarget.
 * Annulla sottoscrizione utente
 
-**Identificatore** modulo: l’identificatore del modulo identifica in modo univoco il modulo lead. Utilizza l’identificatore del modulo se sono presenti diversi moduli su una stessa pagina, avendo cura di utilizzare identificatori diversi per ciascun modulo.
+**Identificatore modulo** L’identificatore del modulo identifica il modulo per lead in modo univoco. Utilizza l’identificatore del modulo se sono presenti diversi moduli su una stessa pagina, avendo cura di utilizzare identificatori diversi per ciascun modulo.
 
-**Percorso di caricamento: percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi del modulo per lead.** 
+**Percorso di caricamento** Percorso delle proprietà nodo utilizzato per caricare valori predefiniti nei campi del modulo per lead.
 
 Si tratta di un campo facoltativo, per specificare il percorso di un nodo nella directory archivio. Quando alcune proprietà di questo nodo corrispondono ai nomi dei campi, i relativi campi del modulo vengono precompilati con il valore della proprietà corrispondente. In assenza di proprietà corrispondenti, il campo contiene il valore predefinito.
 
-**Convalida** client: indica se per il modulo è richiesta la convalida client (la convalida server si verifica sempre). Questo può essere ottenuto in combinazione con il componente Forms Captcha.
+**Convalida client** Indica se il modulo richiede la convalida client (la convalida server viene sempre eseguita). Questo può essere ottenuto in combinazione con il componente Forms Captcha.
 
-**Tipo risorsa validazione:** definisce il tipo di risorsa per la convalida del modulo se si desidera convalidare l’intero modulo lead (anziché i singoli campi).
+**Tipo di risorsa convalida** Definisce il tipo di risorsa per la convalida del modulo se si desidera convalidare l’intero modulo per lead (anziché i singoli campi).
 
 Se si convalida l’intero modulo, occorre includere anche uno dei seguenti elementi:
 
@@ -304,7 +303,7 @@ Se si convalida l’intero modulo, occorre includere anche uno dei seguenti elem
 * Uno script per la convalida lato server:
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configurazione azione:** a seconda della selezione in Opzioni post, la Configurazione azione cambia. Ad esempio, se si seleziona Crea lead è possibile configurare in quale elenco aggiungere il lead.
+**Configurazione azione** A seconda della selezione in Opzioni post, la Configurazione azione cambia. Ad esempio, se si seleziona Crea lead è possibile configurare in quale elenco aggiungere il lead.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -325,16 +324,16 @@ Se si convalida l’intero modulo, occorre includere anche uno dei seguenti elem
 Per creare una pagina di destinazione devi eseguire tre passaggi:
 
 1. Crea una pagina di importazione.
-1. [Prepara l&#39;HTML da importare.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) 
+1. [Prepara l&#39;HTML da importare. ](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importa il pacchetto di progettazione.
 
-### Utilizzo dell’importazione di progettazione  {#use-of-the-design-importer}
+### Utilizzo dell’importazione di progettazione {#use-of-the-design-importer}
 
 Poiché l’importazione di pagine comporta la preparazione del codice HTML, la verifica e il test delle pagine, l’importazione delle pagine di destinazione è concepita come attività riservata agli amministratori. In qualità di amministratori, gli utenti che eseguono l’importazione devono disporre delle autorizzazioni necessarie per poter leggere, scrivere, creare ed eliminare i file in `/apps`. Se l’utente non dispone di queste autorizzazioni, l’importazione avrà esito negativo.
 
 >[!NOTE]
 >
->Poiché Importazione progettazione è uno strumento di amministrazione che richiede autorizzazioni di lettura, scrittura, creazione ed eliminazione su `/apps`,  Adobe non consiglia di utilizzare Importazione progettazione in produzione.
+>Poiché Importazione progettazione è inteso come strumento di amministrazione che richiede autorizzazioni di lettura, scrittura, creazione ed eliminazione su `/apps`, Adobe sconsiglia di utilizzare Importazione progettazione in produzione.
 
 Adobe consiglia di utilizzare l’importazione di progettazione su un’istanza di pre-produzione. Su un’istanza di pre-produzione l’importazione può essere testata e convalidata da uno sviluppatore che diventa responsabile per la distribuzione del codice all’istanza di produzione.
 
@@ -357,11 +356,11 @@ Per creare una nuova pagina di destinazione:
 
    La nuova pagina di importazione viene visualizzata.
 
-### Preparazione dell’HTML per l’Importazione  {#preparing-the-html-for-import}
+### Preparazione dell’HTML per l’Importazione {#preparing-the-html-for-import}
 
 Prima di importare il pacchetto di progettazione, occorre preparare l’HTML. Consulta [Estensione e configurazione dell&#39;importazione di progettazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md) per ulteriori informazioni.
 
-### Importazione del pacchetto di progettazione  {#importing-the-design-package}
+### Importazione del pacchetto di progettazione {#importing-the-design-package}
 
 Una volta creata la pagina di importazione, puoi importare in essa un pacchetto di progettazione. Informazioni su come creare il pacchetto di progettazione e la relativa struttura consigliata sono disponibili in [Estensione e configurazione dell&#39;importazione di progettazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
@@ -372,7 +371,7 @@ Presupponendo che il pacchetto di progettazione sia già pronto, i seguenti pass
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Trascina il pacchetto di progettazione fino alla casella di rilascio. Osserva come la freccia cambia direzione quando un pacchetto di progettazione viene trascinato su di essa.
-1. A seguito del trascinamento, la pagina di destinazione viene visualizzata al posto della pagina di importazione. La pagina di destinazione HTML è stata importata correttamente.
+1. A seguito del trascinamento, la pagina di destinazione viene visualizzata al posto della pagina di importazione. La pagina di destinazione di HTML è stata importata correttamente.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -384,7 +383,7 @@ Presupponendo che il pacchetto di progettazione sia già pronto, i seguenti pass
 >
 >In caso di problemi durante l&#39;importazione del pacchetto progettazione, consulta [Risoluzione dei problemi](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
-## Utilizzo delle Pagine di destinazione  {#working-with-landing-pages}
+## Utilizzo delle Pagine di destinazione {#working-with-landing-pages}
 
 La progettazione e i contenuti di una pagina di destinazione sono in genere creati da un designer, eventualmente presso un’agenzia, con strumenti quali Adobe Photoshop o Adobe Dreamweaver. Una volta completata la progettazione, il designer invia un file ZIP con tutti i contenuti al reparto marketing. L’addetto marketing diventa quindi responsabile per il rilascio del file ZIP in AEM e la pubblicazione dei contenuti.
 
@@ -410,13 +409,13 @@ Quando si scarica il file ZIP, si registra quale file ZIP è stato importato con
 
 Per scaricare il pacchetto di progettazione importato, fai clic su **Scarica ZIP** nella barra degli strumenti della pagina di destinazione.
 
-### Visualizzare le informazioni di importazione  {#viewing-import-information}
+### Visualizzare le informazioni di importazione {#viewing-import-information}
 
 In qualsiasi momento puoi visualizzare le informazioni sull’ultima importazione facendo clic sul punto esclamativo blu nella parte superiore della pagina di destinazione nell’interfaccia utente classica.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Qualora il pacchetto di progettazione importato presenti dei problemi, ad esempio se contiene riferimenti a immagini o script non disponibili nel pacchetto, tali problemi vengono elencati da Importazione progettazione. Per visualizzare un elenco dei problemi rilevati, nell’interfaccia utente classica fai clic sul collegamento dei problemi nella barra degli strumenti della Pagina di destinazione. Nell&#39;immagine seguente, facendo clic sul collegamento **Problemi** si apre la finestra Problemi di importazione.
+Qualora il pacchetto di progettazione importato presenti dei problemi, ad esempio se contiene riferimenti a immagini o script non disponibili nel pacchetto, tali problemi vengono elencati da Importazione progettazione. Per visualizzare un elenco dei problemi rilevati, nell’interfaccia utente classica fai clic sul collegamento dei problemi nella barra degli strumenti della Pagina di destinazione. Nell’immagine seguente, fai clic su **Problemi** apre la finestra Problemi di importazione.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -424,7 +423,7 @@ Qualora il pacchetto di progettazione importato presenti dei problemi, ad esempi
 
 Nel caso desideraste reimportare il pacchetto di progettazione della pagina di destinazione dopo aver apportato delle modifiche, puoi “cancellare” la pagina di destinazione facendo clic su **Cancella** nella parte superiore della pagina di destinazione nell’interfaccia utente classica o fare clic su Cancella nel menu impostazioni nell’interfaccia utente touch. In questo modo viene eliminata la pagina di destinazione importata e viene creata una nuova pagina di importazione vuota.
 
-Quando cancelli la pagina di destinazione, puoi rimuovere le modifiche apportate ai contenuti. Se si fa clic su **No**, le modifiche al contenuto vengono mantenute, ovvero viene mantenuta la struttura in `jcr:content/importer`e vengono rimossi solo il componente della pagina di importazione e le risorse in `etc/design`. Se invece si fa clic su **Sì**, viene rimosso anche il `jcr:content/importer`.
+Quando cancelli la pagina di destinazione, puoi rimuovere le modifiche apportate ai contenuti. Se fai clic su **No**, quindi le modifiche al contenuto vengono mantenute, ovvero la struttura sotto `jcr:content/importer`viene mantenuto e solo il componente della pagina di importazione e le risorse in `etc/design` vengono rimossi. Considerando che, se fai clic su **Sì**, `jcr:content/importer` viene rimosso anche .
 
 >[!NOTE]
 >
@@ -440,15 +439,15 @@ Per aggiungere componenti alla pagina di destinazione, trascinali e rilasciali n
 >
 >Se un componente nella pagina di destinazione non può essere modificato, devi reimportare il file zip dopo [la modifica del file HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Questo significa che durante l’importazione le parti non modificabili non erano state convertite in componenti AEM.
 
-### Eliminare una pagina di destinazione  {#deleting-a-landing-page}
+### Eliminare una pagina di destinazione {#deleting-a-landing-page}
 
 L’eliminazione di una pagina di destinazione è come l’eliminazione di una normale pagina AEM.
 
 L’unica differenza è che quando si elimina una pagina di destinazione desktop, viene eliminata anche la corrispondente pagina di destinazione per dispositivi mobili (se presente), ma non viceversa.
 
-### Pubblicare una pagina di destinazione  {#publishing-a-landing-page}
+### Pubblicare una pagina di destinazione {#publishing-a-landing-page}
 
-Potete pubblicare la pagina di destinazione e tutte le relative dipendenze esattamente come una pagina normale.
+Puoi pubblicare la pagina di destinazione e tutte le relative dipendenze esattamente come per la pubblicazione di una pagina normale.
 
 >[!NOTE]
 >

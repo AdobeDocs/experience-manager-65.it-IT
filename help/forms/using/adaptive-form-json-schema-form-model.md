@@ -1,13 +1,13 @@
 ---
 title: Come si crea un Forms adattivo utilizzando lo schema JSON?
 description: Scopri come creare moduli adattivi utilizzando lo schema JSON come modello di modulo. Puoi utilizzare schemi JSON esistenti per creare moduli adattivi. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente modulo adattivo e scopri i costrutti non supportati.
-feature: Moduli adattivi
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1448'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 
 ## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme a [Specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le caratteristiche principali dell’utilizzo di uno schema JSON sono le seguenti:
 
@@ -81,8 +81,8 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>number property<br /> </td>
-   <td>Campo numerico con sottotipo impostato su mobile<br /> </td>
+   <td>proprietà number<br /> </td>
+   <td>Campo numerico con sottotipo impostato come mobile<br /> </td>
   </tr>
   <tr>
    <td>proprietà integer<br /> </td>
@@ -107,17 +107,17 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ogni campo generato. In particolare:
 
-* La proprietà `title` funge da etichetta per i componenti dei moduli adattivi.
-* La proprietà `description` viene impostata come descrizione lunga per un componente modulo adattivo.
-* La proprietà `default` funge da valore iniziale di un campo modulo adattivo.
-* La proprietà `maxLength` viene impostata come attributo `maxlength` del componente campo di testo.
-* Le proprietà `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum` vengono utilizzate per il componente Casella numerica.
-* Per supportare l’intervallo per `DatePicker component` vengono fornite proprietà aggiuntive dello schema JSON `minDate` e `maxDate`.
-* Le proprietà `minItems` e `maxItems` vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente del pannello.
-* La proprietà `readOnly` imposta l&#39;attributo `readonly` di un componente modulo adattivo.
-* La proprietà `required` contrassegna il campo modulo adattivo come obbligatorio, mentre nel pannello (in cui il tipo è oggetto), i dati JSON inviati finali hanno campi con valore vuoto corrispondente a tale oggetto.
-* La proprietà `pattern` viene impostata come pattern di convalida (espressione regolare) in forma adattiva.
-* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio, &lt;filename>.schema.json.
+* La `title` funge da etichetta per i componenti del modulo adattivo.
+* La `description` viene impostata come descrizione lunga per un componente modulo adattivo.
+* La `default` funge da valore iniziale di un campo modulo adattivo.
+* La `maxLength` è impostato come `maxlength` attributo del componente campo di testo.
+* La `minimum`, `maximum`, `exclusiveMinimum`e `exclusiveMaximum` vengono utilizzate per il componente Casella numerica .
+* Per supportare la gamma di `DatePicker component` proprietà aggiuntive dello schema JSON `minDate` e `maxDate` sono forniti.
+* La `minItems` e `maxItems` vengono utilizzate per limitare il numero di elementi/campi che possono essere aggiunti o rimossi da un componente pannello.
+* La `readOnly` imposta la proprietà `readonly` di un componente modulo adattivo.
+* La `required` La proprietà contrassegna il campo modulo adattivo come obbligatorio, mentre nel pannello (in cui il tipo è oggetto), i dati JSON inviati finali hanno campi con valore vuoto corrispondente a tale oggetto.
+* La `pattern` viene impostata come pattern di convalida (espressione regolare) in forma adattiva.
+* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio: &lt;filename>.schema.json.
 
 ## Schema JSON di esempio {#sample-json-schema}
 
@@ -334,7 +334,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 ## Preconfigurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puoi utilizzare la proprietà **aem:afProperties** per preconfigurare il campo Schema JSON per la mappatura su un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
+È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON in modo che venga eseguito il mapping a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
 
 ```json
 {
@@ -356,7 +356,7 @@ Puoi utilizzare la proprietà **aem:afProperties** per preconfigurare il campo S
 
 ## Configurare script o espressioni per gli oggetti modulo  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API modello di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo in modo da [valutare un&#39;espressione](adaptive-form-expressions.md) su un evento modulo.
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API modello di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo in [valutare un&#39;espressione](adaptive-form-expressions.md) su un evento modulo.
 
 Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli script di moduli adattivi per i componenti di moduli adattivi. Ad esempio, quando viene attivato l’evento initialize , il codice seguente imposta il valore del campo telefonico e stampa un valore nel registro :
 
@@ -376,7 +376,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli 
 }
 ```
 
-È necessario essere membro del gruppo [forms-power-user](forms-groups-privileges-tasks.md) per configurare script o espressioni per l&#39;oggetto modulo. Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
+È necessario essere un membro del [gruppo form-power-user](forms-groups-privileges-tasks.md) per configurare script o espressioni per l’oggetto modulo. Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
 
 <table>
  <tbody>
@@ -480,7 +480,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli 
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>A discesa</td>
+   <td>Elenchi a discesa</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -581,7 +581,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli 
  </tbody>
 </table>
 
-Alcuni esempi dell’utilizzo di eventi in un JSON nascondono un campo su un evento initialize e configurano il valore di un altro campo su un evento di commit dei valori. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere [Espressioni modulo adattivo](adaptive-form-expressions.md).
+Alcuni esempi dell’utilizzo di eventi in un JSON nascondono un campo su un evento initialize e configurano il valore di un altro campo su un evento di commit dei valori. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere [Espressioni dei moduli adattivi](adaptive-form-expressions.md).
 
 Di seguito è riportato il codice JSON di esempio per gli esempi menzionati in precedenza.
 
@@ -744,4 +744,4 @@ Sono disponibili due opzioni:
 
 **Quale dovrebbe essere l&#39;estensione del file di schema JSON?**
 
-L’estensione del file di schema JSON deve essere .schema.json. Ad esempio, &lt;filename>.schema.json.
+L’estensione del file di schema JSON deve essere .schema.json. Ad esempio: &lt;filename>.schema.json.

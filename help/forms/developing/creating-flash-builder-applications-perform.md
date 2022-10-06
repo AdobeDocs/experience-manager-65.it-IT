@@ -1,8 +1,8 @@
 ---
 title: Creazione di applicazioni di Flash Builder che eseguono l’autenticazione SSO utilizzando token HTTP
-seo-title: Creazione di applicazioni di Flash Builder che eseguono l’autenticazione SSO utilizzando token HTTP
+seo-title: Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens
 description: Crea un'applicazione client utilizzando un Flash Builder che esegue l'autenticazione single sign on (SSO) utilizzando i token HTTP. Autentica un utente per un’operazione una volta e utilizza tale autenticazione per eseguire più operazioni AEM Forms.
-seo-description: Crea un'applicazione client utilizzando un Flash Builder che esegue l'autenticazione single sign on (SSO) utilizzando i token HTTP. Autentica un utente per un’operazione una volta e utilizza tale autenticazione per eseguire più operazioni AEM Forms.
+seo-description: Create a client application using Flash Builder that performs single-sign on (SSO) authentication using HTTP tokens. Authenticate a user for an operation once and use that authentication to perform multiple AEM Forms operations.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # Creazione di applicazioni di Flash Builder che eseguono l&#39;autenticazione SSO utilizzando i token HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
@@ -25,31 +24,31 @@ ht-degree: 0%
 
 Puoi creare un’applicazione client utilizzando un Flash Builder che esegue l’autenticazione single sign on (SSO) utilizzando i token HTTP. Supponiamo, ad esempio, di creare un&#39;applicazione basata sul Web utilizzando Flash Builder. Successivamente, si presuppone che l&#39;applicazione contenga visualizzazioni diverse, in cui ogni visualizzazione richiama un&#39;operazione AEM Forms diversa. Invece di autenticare un utente per ogni operazione Forms, puoi creare una pagina di accesso che consenta a un utente di effettuare l&#39;autenticazione una volta. Una volta autenticato, un utente è in grado di richiamare più operazioni senza dover ripetere l&#39;autenticazione. Ad esempio, se un utente ha effettuato l’accesso a Workspace (o a un’altra applicazione Forms), non dovrà effettuare nuovamente l’autenticazione.
 
-Sebbene l’applicazione client contenga la logica di applicazione necessaria per eseguire l’autenticazione SSO, AEM Forms User Management esegue l’autenticazione utente effettiva. Per autenticare un utente utilizzando i token HTTP, l’applicazione client richiama l’operazione `authenticateWithHTTPToken` del servizio Authentication Manager. User Management è in grado di autenticare gli utenti utilizzando un token HTTP. Per le successive chiamate a servizi Web o remoti ad AEM Forms, non è necessario passare le credenziali per l&#39;autenticazione.
+Sebbene l’applicazione client contenga la logica di applicazione necessaria per eseguire l’autenticazione SSO, AEM Forms User Management esegue l’autenticazione utente effettiva. Per autenticare un utente utilizzando i token HTTP, l’applicazione client richiama il servizio Authentication Manager `authenticateWithHTTPToken` funzionamento. User Management è in grado di autenticare gli utenti utilizzando un token HTTP. Per le successive chiamate a servizi Web o remoti ad AEM Forms, non è necessario passare le credenziali per l&#39;autenticazione.
 
 >[!NOTE]
 >
->Prima di leggere questa sezione, si consiglia di avere familiarità con l&#39;utilizzo di Invoking AEM Forms utilizzando Remoting. (Consultare [Richiamo di AEM Forms tramite AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+>Prima di leggere questa sezione, si consiglia di avere familiarità con l&#39;utilizzo di Invoking AEM Forms utilizzando Remoting. (Vedi [Richiamo di AEM Forms tramite AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Il seguente processo AEM Forms di breve durata, denominato `MyApplication/EncryptDocument`, viene richiamato dopo che un utente è autenticato utilizzando SSO. (Per informazioni su questo processo, ad esempio sui valori di input e output, vedere [Esempio di processo a breve durata](/help/forms/developing/aem-forms-processes.md).)
+Il seguente processo AEM Forms di breve durata, denominato `MyApplication/EncryptDocument`, viene richiamato dopo che un utente è autenticato utilizzando SSO. (Per informazioni su questo processo, ad esempio sui valori di input e output, consulta [Esempio di processo a breve termine](/help/forms/developing/aem-forms-processes.md).)
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, crea un processo denominato `MyApplication/EncryptDocument` utilizzando workbench. (Vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, crea un processo denominato `MyApplication/EncryptDocument` utilizzo di workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-L’applicazione client creata utilizzando il Flash Builder interagisce con il servlet di sicurezza di User Manager configurato in `/um/login` e `/um/logout`. In altre parole, l&#39;applicazione client invia una richiesta all&#39; `/um/login` URL durante l&#39;avvio per determinare lo stato dell&#39;utente. Quindi User Manager risponde con lo stato dell&#39;utente. L&#39;applicazione client e il servlet di sicurezza User Manager comunicano tramite HTTP.
+L’applicazione client creata utilizzando il Flash Builder interagisce con il servlet di sicurezza di User Manager configurato in `/um/login` e `/um/logout`. In altre parole, l’applicazione client invia una richiesta al `/um/login` URL durante l&#39;avvio per determinare lo stato dell&#39;utente. Quindi User Manager risponde con lo stato dell&#39;utente. L&#39;applicazione client e il servlet di sicurezza User Manager comunicano tramite HTTP.
 
 **Formato richiesta**
 
 Il servlet di sicurezza richiede le seguenti variabili di input:
 
-* `um_no_redirect` - Questo valore deve essere  `true`. Questa variabile accompagna tutte le richieste effettuate al servlet di sicurezza User Manager. Aiuta inoltre il servlet di sicurezza a differenziare la richiesta in arrivo proveniente da un client flex o da altre applicazioni web.
+* `um_no_redirect` - Questo valore deve essere `true`. Questa variabile accompagna tutte le richieste effettuate al servlet di sicurezza User Manager. Aiuta inoltre il servlet di sicurezza a differenziare la richiesta in arrivo proveniente da un client flex o da altre applicazioni web.
 * `j_username` - Questo valore è il valore dell&#39;identificatore di accesso dell&#39;utente fornito nel modulo di accesso.
 * `j_password` - Questo valore è la password corrispondente dell&#39;utente fornita nel modulo di accesso.
 
-Il valore `j_password` è necessario solo per le richieste di credenziali. Se il valore della password non è specificato, il servlet di sicurezza controlla se l&#39;account utilizzato è già autenticato. In caso affermativo, è possibile procedere; tuttavia, il servlet di sicurezza non ti autentica nuovamente.
+La `j_password` è necessario solo per le richieste di credenziali. Se il valore della password non è specificato, il servlet di sicurezza controlla se l&#39;account utilizzato è già autenticato. In caso affermativo, è possibile procedere; tuttavia, il servlet di sicurezza non ti autentica nuovamente.
 
 >[!NOTE]
 >
@@ -57,22 +56,22 @@ Il valore `j_password` è necessario solo per le richieste di credenziali. Se il
 
 **Formato di risposta**
 
-Il servlet di sicurezza configurato in `/um/login` risponde utilizzando il formato `URLVariables`. In questo formato, l’output del tipo di contenuto è text/plain. L&#39;output contiene coppie di valori di nome separate da un carattere e commerciale (&amp;). La risposta contiene le seguenti variabili:
+Il servlet di sicurezza configurato in `/um/login` risponde utilizzando `URLVariables` formato. In questo formato, l’output del tipo di contenuto è text/plain. L&#39;output contiene coppie di valori di nome separate da un carattere e commerciale (&amp;). La risposta contiene le seguenti variabili:
 
-* `authenticated` - Il valore è  `true` o  `false`.
+* `authenticated` - Il valore è `true` o `false`.
 * `authstate` - Questo valore può contenere uno dei seguenti valori:
 
    * `CREDENTIAL_CHALLENGE` - Questo stato indica che User Manager non è in grado di determinare l&#39;identità dell&#39;utente con alcun mezzo. Per consentire l&#39;autenticazione, è necessario il nome utente e la password dell&#39;utente.
-   * `SPNEGO_CHALLENGE`- Questo stato viene trattato allo stesso modo di  `CREDENTIAL_CHALLENGE`.
+   * `SPNEGO_CHALLENGE`- Questo stato viene trattato come `CREDENTIAL_CHALLENGE`.
    * `COMPLETE` - Questo stato indica che User Manager è in grado di autenticare l&#39;utente.
    * `FAILED` - Questo stato indica che User Manager non è stato in grado di autenticare l&#39;utente. Come risposta a questo stato, il client flex può mostrare un messaggio di errore all&#39;utente.
    * `LOGGED_OUT` - Questo stato indica che l’utente si è disconnesso correttamente.
 
-* `assertionid` - Se lo stato è  `COMPLETE` allora contiene il  `assertionId` valore dell&#39;utente. Un&#39;applicazione client può ottenere il valore `AuthResult` per l&#39;utente.
+* `assertionid` - Se lo stato è `COMPLETE` quindi contiene il `assertionId` valore. Un&#39;applicazione client può ottenere `AuthResult` per l&#39;utente.
 
 **Processo di accesso**
 
-All&#39;avvio di un&#39;applicazione client, puoi effettuare una richiesta POST al servlet di sicurezza `/um/login`. Esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
+All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
 
 1. Cerca un cookie denominato `lcAuthToken`. Se l’utente ha già effettuato l’accesso a un’altra applicazione Forms, questo cookie è presente. Se il cookie viene trovato, il relativo contenuto viene convalidato.
 1. Se l&#39;SSO basato su intestazione è abilitato, il servlet cerca le intestazioni configurate per determinare l&#39;identità dell&#39;utente.
@@ -80,14 +79,14 @@ All&#39;avvio di un&#39;applicazione client, puoi effettuare una richiesta POST 
 
 Se il servlet di sicurezza individua un token valido che corrisponde a un utente, il servlet di sicurezza consente di procedere e rispondere con `authstate=COMPLETE`. In caso contrario, il servlet di sicurezza risponde con `authstate=CREDENTIAL_CHALLENGE`. Nell&#39;elenco seguente sono illustrati questi valori:
 
-* `Case authstate=COMPLETE`: Indica che l&#39;utente è autenticato e che il  `assertionid` valore contiene l&#39;identificatore di asserzione per l&#39;utente. A questo punto, l’applicazione client può connettersi ad AEM Forms. Il servlet configurato per tale URL può ottenere il `AuthResult` per l&#39;utente richiamando il metodo `AuthenticationManager.authenticate(HttpRequestToken)` . L’istanza `AuthResult` può creare il contesto di user manager e memorizzarlo nella sessione.
+* `Case authstate=COMPLETE`: Indica che l&#39;utente è autenticato e il `assertionid` contiene l&#39;identificatore di asserzione per l&#39;utente. A questo punto, l’applicazione client può connettersi ad AEM Forms. Il servlet configurato per tale URL può ottenere il `AuthResult` per l&#39;utente richiamando il `AuthenticationManager.authenticate(HttpRequestToken)` metodo . La `AuthResult` L’istanza può creare il contesto di user manager e memorizzarlo nella sessione.
 * `Case authstate=CREDENTIAL_CHALLENGE`: Indica che il servlet di sicurezza richiede le credenziali dell&#39;utente. Come risposta, l’applicazione client può visualizzare la schermata di accesso all’utente e inviare le credenziali ottenute al servlet di sicurezza (ad esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`. Se l’autenticazione ha esito positivo, il servlet di sicurezza risponde con `authstate=COMPLETE`.
 
 Se l’autenticazione non ha ancora esito positivo, il servlet di sicurezza risponde con `authstate=FAILED`. Per rispondere a questo valore, l&#39;applicazione client può visualizzare un messaggio per ottenere nuovamente le credenziali.
 
 >[!NOTE]
 >
->Mentre `authstate=CREDENTIAL_CHALLENGE`, si consiglia al client di inviare le credenziali ottenute al servlet di sicurezza in un modulo POST.
+>Quando `authstate=CREDENTIAL_CHALLENGE`, si consiglia al client di inviare le credenziali ottenute al servlet di sicurezza in un modulo POST.
 
 **Processo di disconnessione**
 
@@ -95,7 +94,7 @@ Quando un&#39;applicazione client si disconnette, puoi inviare una richiesta al 
 
 `https://<your_serverhost>:<your_port>/um/logout?um_no_redirect=true`
 
-Al ricevimento di questa richiesta, il servlet di sicurezza User Manager elimina il cookie `lcAuthToken` e risponde con `authstate=LOGGED_OUT`. Dopo che l&#39;applicazione client ha ricevuto questo valore, l&#39;applicazione può eseguire attività di pulizia.
+Al ricevimento di questa richiesta, il servlet di sicurezza User Manager elimina il `lcAuthToken` cookie e risponde con `authstate=LOGGED_OUT`. Dopo che l&#39;applicazione client ha ricevuto questo valore, l&#39;applicazione può eseguire attività di pulizia.
 
 ## Creazione di un&#39;applicazione client che esegue l&#39;autenticazione AEM utenti dei moduli utilizzando SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
@@ -105,25 +104,25 @@ Per dimostrare come creare un&#39;applicazione client che esegue l&#39;autentica
 
 L&#39;illustrazione precedente descrive il flusso dell&#39;applicazione che si verifica all&#39;avvio dell&#39;applicazione client.
 
-1. L&#39;applicazione client attiva l&#39;evento `applicationComplete` .
-1. Viene effettuata la chiamata a `ISSOManager.singleSignOn` . L&#39;applicazione client invia una richiesta al servlet di sicurezza User Manager.
-1. Se il servlet di sicurezza autentica l’utente, `ISSOManager` invia `SSOEvent.AUTHENTICATION_SUCCESS`. Come risposta, l&#39;applicazione client mostra la pagina principale. In questo esempio, la pagina principale richiama il processo AEM Forms di breve durata denominato MyApplication/EncryptDocument.
-1. Se il servlet di sicurezza non è in grado di determinare se l&#39;utente è valido, l&#39;applicazione richiede nuovamente le credenziali utente. La classe `ISSOManager` invia l&#39;evento `SSOEvent.AUTHENTICATION_REQUIRED`. L&#39;applicazione client visualizza la pagina di accesso.
-1. Le credenziali fornite nella pagina di accesso vengono inviate al metodo `ISSOManager.login` . Se l&#39;autenticazione ha esito positivo, allora porta al passaggio 3. In caso contrario, viene attivato l&#39;evento `SSOEvent.AUTHENTICATION_FAILED` . L&#39;applicazione client visualizza la pagina di accesso e un messaggio di errore appropriato.
+1. L&#39;applicazione client attiva la `applicationComplete` evento.
+1. La chiamata a `ISSOManager.singleSignOn` è fatto. L&#39;applicazione client invia una richiesta al servlet di sicurezza User Manager.
+1. Se il servlet di sicurezza autentica l’utente, allora `ISSOManager` spedizioni `SSOEvent.AUTHENTICATION_SUCCESS`. Come risposta, l&#39;applicazione client mostra la pagina principale. In questo esempio, la pagina principale richiama il processo AEM Forms di breve durata denominato MyApplication/EncryptDocument.
+1. Se il servlet di sicurezza non è in grado di determinare se l&#39;utente è valido, l&#39;applicazione richiede nuovamente le credenziali utente. La `ISSOManager` la classe invia il `SSOEvent.AUTHENTICATION_REQUIRED` evento. L&#39;applicazione client visualizza la pagina di accesso.
+1. Le credenziali fornite nella pagina di accesso vengono inviate al `ISSOManager.login` metodo . Se l&#39;autenticazione ha esito positivo, allora porta al passaggio 3. In caso contrario, `SSOEvent.AUTHENTICATION_FAILED` viene attivato. L&#39;applicazione client visualizza la pagina di accesso e un messaggio di errore appropriato.
 
-### Creazione dell&#39;applicazione client {#creating-the-client-application}
+### Creazione dell’applicazione client {#creating-the-client-application}
 
 L&#39;applicazione client è costituita dai file seguenti:
 
-* `SSOStandalone.mxml`: Il file MXML principale che rappresenta l&#39;applicazione client. (Consulta [Creazione del file SSOStandalone.mxml](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file).)
-* `um/ISSOManager.as`: Esporre le operazioni relative al Single Sign On (SSO). (Vedere [Creazione del file ISSOManager.as](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
-* `um/SSOEvent.as`: L&#39;  `SSOEvent` viene inviato per gli eventi correlati a SSO. (Vedere [Creazione del file SSOEvent.as](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
-* `um/SSOManager.as`: Gestisce le operazioni correlate all&#39;SSO e invia eventi appropriati. (Consulta [Creazione del file SSOManager.as](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file).)
-* `um/UserManager.as`: Contiene la logica dell&#39;applicazione che richiama il servizio Authentication Manager utilizzando la relativa WSDL. (Vedere [Creazione del file UserManager.as](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
-* `views/login.mxml`: Rappresenta la schermata di accesso. (Vedere [Creazione del file login.mxml](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
-* `views/logout.mxml`: Rappresenta la schermata di logout. (Vedere [Creazione del file logout.mxml](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
-* `views/progress.mxml`: Rappresenta una visualizzazione di avanzamento. (Vedere [Creazione del file progress.mxml](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
-* `views/remoting.mxml`: Rappresenta la visualizzazione che richiama il processo a breve termine AEM Forms denominato MyApplication/EncryptDocument utilizzando la rimozione. (Vedere [Creazione del file remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file).)
+* `SSOStandalone.mxml`: Il file MXML principale che rappresenta l&#39;applicazione client. (Vedi [Creazione del file SSOStandalone.mxml](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file).)
+* `um/ISSOManager.as`: Esporre le operazioni relative al Single Sign On (SSO). (Vedi [Creazione del file ISSOManager.as](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
+* `um/SSOEvent.as`: La `SSOEvent` viene inviato per eventi correlati a SSO. (Vedi [Creazione del file SSOEvent.as](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
+* `um/SSOManager.as`: Gestisce le operazioni correlate all&#39;SSO e invia eventi appropriati. (Vedi [Creazione del file SSOManager.as](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file).)
+* `um/UserManager.as`: Contiene la logica dell&#39;applicazione che richiama il servizio Authentication Manager utilizzando la relativa WSDL. (Vedi [Creazione del file UserManager.as](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
+* `views/login.mxml`: Rappresenta la schermata di accesso. (Vedi [Creazione del file login.mxml](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
+* `views/logout.mxml`: Rappresenta la schermata di logout. (Vedi [Creazione del file logout.mxml](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
+* `views/progress.mxml`: Rappresenta una visualizzazione di avanzamento. (Vedi [Creazione del file progress.mxml](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
+* `views/remoting.mxml`: Rappresenta la visualizzazione che richiama il processo a breve termine AEM Forms denominato MyApplication/EncryptDocument utilizzando la rimozione. (Vedi [Creazione del file remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file).)
 
 L&#39;illustrazione seguente fornisce una rappresentazione visiva dell&#39;applicazione client.
 
@@ -131,7 +130,7 @@ L&#39;illustrazione seguente fornisce una rappresentazione visiva dell&#39;appli
 
 >[!NOTE]
 >
->Tieni presente che esistono due pacchetti denominati um e visualizzazioni. Quando crei l&#39;applicazione client, assicurati di inserire i file nei relativi pacchetti appropriati. Inoltre, aggiungi il file adobe-remoting-provider.swc al percorso della classe del progetto. (Consulta [Inclusione del file di libreria AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Tieni presente che esistono due pacchetti denominati um e visualizzazioni. Quando crei l&#39;applicazione client, assicurati di inserire i file nei relativi pacchetti appropriati. Inoltre, aggiungi il file adobe-remoting-provider.swc al percorso della classe del progetto. (Vedi [Inclusione del file della libreria AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Creazione del file SSOStandalone.mxml {#creating-the-ssostandalone-mxml-file}
 
@@ -673,7 +672,7 @@ Il codice seguente rappresenta il file progress.mxml.
 
 ### Creazione del file remoting.mxml {#creating-the-remoting-mxml-file}
 
-Il codice seguente rappresenta il file remoting.mxml che richiama il processo `MyApplication/EncryptDocument`. Poiché un documento viene passato al processo, la logica applicativa responsabile del passaggio di un documento protetto ad AEM Forms si trova in questo file. (Vedere [Trasmissione di documenti protetti per richiamare i processi utilizzando Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+Il codice seguente rappresenta il file remoting.mxml che richiama il `MyApplication/EncryptDocument` processo. Poiché un documento viene passato al processo, la logica applicativa responsabile del passaggio di un documento protetto ad AEM Forms si trova in questo file. (Vedi [Trasferimento di documenti protetti per richiamare i processi utilizzando Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
@@ -875,7 +874,7 @@ Le sezioni seguenti forniscono dettagli aggiuntivi che descrivono la comunicazio
 
 ### Si verifica una nuova autenticazione {#a-new-authentication-occurs}
 
-In questa situazione, l’utente tenta di accedere per la prima volta da un’applicazione client ad AEM Forms. (non esiste una sessione precedente che coinvolge l&#39;utente.) Nell&#39;evento `applicationComplete` viene richiamato il metodo `SSOManager.singleSignOn` che invia una richiesta all&#39;User Manager.
+In questa situazione, l’utente tenta di accedere per la prima volta da un’applicazione client ad AEM Forms. (non esiste una sessione precedente che coinvolge l&#39;utente.) In `applicationComplete` evento `SSOManager.singleSignOn` viene richiamato che invia una richiesta all&#39;User Manager.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -885,7 +884,7 @@ Il servlet di sicurezza User Manager risponde con il seguente valore:
 
 `authenticated=false&authstate=CREDENTIAL_CHALLENGE`
 
-Come risposta a questo valore, viene inviato un valore `SSOEvent.AUTHENTICATION_REQUIRED` . Di conseguenza, l&#39;applicazione client visualizza una schermata di accesso per l&#39;utente. Le credenziali vengono inviate nuovamente al servlet di sicurezza User Manager.
+Come risposta a questo valore, un `SSOEvent.AUTHENTICATION_REQUIRED` viene inviato. Di conseguenza, l&#39;applicazione client visualizza una schermata di accesso per l&#39;utente. Le credenziali vengono inviate nuovamente al servlet di sicurezza User Manager.
 
 `GET /um/login?um%5Fno%5Fredirect=true&j%5Fusername=administrator&j%5Fpassword=password HTTP/1.1`
 
@@ -897,7 +896,7 @@ Il servlet di sicurezza User Manager risponde con il seguente valore:
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-Di conseguenza, viene inviato `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS`. Se necessario, l’applicazione client può eseguire ulteriori elaborazioni. Ad esempio, è possibile creare un registro che tenga traccia della data e dell’ora dell’autenticazione dell’utente.
+Di conseguenza, `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` viene inviato. Se necessario, l’applicazione client può eseguire ulteriori elaborazioni. Ad esempio, è possibile creare un registro che tenga traccia della data e dell’ora dell’autenticazione dell’utente.
 
 ### Utente già autenticato {#the-user-is-already-authenticated}
 
@@ -908,7 +907,7 @@ In questa situazione, l’utente ha già effettuato l’accesso ad AEM Forms e q
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-Poiché l’utente è già autenticato, il cookie User Manager è presente e viene inviato al servlet di sicurezza User Manager. Il servlet ottiene quindi il valore `assertionId` e verifica se è valido. Se è valido, viene restituito `authstate=COMPLETE`. In caso contrario, viene restituito `authstate=CREDENTIAL_CHALLENGE`. Di seguito è riportata una tipica risposta:
+Poiché l’utente è già autenticato, il cookie User Manager è presente e viene inviato al servlet di sicurezza User Manager. Il servlet quindi ottiene il `assertionId` e verifica se è valido. Se è valido, allora `authstate=COMPLETE` viene restituito . Diversamente `authstate=CREDENTIAL_CHALLENGE` viene restituito . Di seguito è riportata una tipica risposta:
 
 ```verilog
  HTTP/1.1 200 OK

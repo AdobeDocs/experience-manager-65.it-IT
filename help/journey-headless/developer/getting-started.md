@@ -1,10 +1,11 @@
 ---
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso di sviluppo headless AEM, scopri AEM prerequisiti headless.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '3031'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +25,7 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come uti
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire AEM Headless nel contesto del tuo progetto. Dopo la lettura è necessario:
+Questo documento ti aiuta a capire AEM Headless nel contesto del tuo progetto. Dopo la lettura dovresti:
 
 * Comprendere le nozioni di base AEM funzioni headless.
 * Conoscere i prerequisiti per l&#39;utilizzo di AEM funzionalità headless.
@@ -65,20 +66,20 @@ Le funzionalità headless di AEM si basano su alcune funzioni chiave. Questi son
 
 ### Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto creati e gestiti in AEM. Servono come una sorta di impalcatura per i vostri contenuti. Quando scegli di creare un contenuto, gli autori selezionano tra i modelli di frammento di contenuto definiti, che li guida nella creazione di contenuti.
+I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto creati e gestiti in AEM. Servono come una sorta di impalcatura per i tuoi contenuti. Quando scegli di creare un contenuto, gli autori selezionano tra i modelli di frammento di contenuto definiti, che li guida nella creazione di contenuti.
 
 ### Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare i contenuti pronti per l’uso in più posizioni e su più canali.
+I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali.
 
-I frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
 
 ### API GraphQL e REST {#apis}
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API GraphQL consente di creare richieste di accesso e distribuzione di frammenti di contenuto.
-* L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
+* API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento al [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
 
@@ -149,7 +150,7 @@ I ruoli di ogni singolo progetto variano, ma quelli importanti da considerare ne
 * [Administrator](#administrator)
 * [Autore del contenuto](#content-author)
 * [Architetto dei contenuti](#content-architect)
-* [Developer (Sviluppatore)](#developer)
+* [Sviluppatore](#developer)
 
 #### Amministratore {#administrator}
 
@@ -219,7 +220,7 @@ Un approccio utile nella definizione dei modelli di frammento di contenuto consi
 
 Poiché gli autori dei contenuti interagiscono continuamente con i modelli durante la creazione di nuovi contenuti, l’allineamento dei modelli all’UX li aiuta a visualizzare l’esperienza digitale risultante. Facendo un ulteriore passo avanti, puoi assegnare icone ai Modelli di frammento di contenuto che rappresentano l’elemento UX in modo che gli autori possano selezionare in modo intuitivo il modello corretto in base ai suggerimenti visivi.
 
-#### Developer (Sviluppatore) {#developer}
+#### Sviluppatore {#developer}
 
 Gli sviluppatori sono responsabili di unire i contenuti creati senza problemi AEM al consumatore di tali contenuti, che spesso possono essere un’applicazione a pagina singola (SPA), un’app web progressiva (PWA), un negozio di web o un altro servizio esterno a AEM.
 
@@ -275,7 +276,7 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Percors
 Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless rivedendo il documento [Percorso alla tua prima esperienza utilizzando AEM Headless,](path-to-first-experience.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
 
 * [AEM Percorso di traduzione headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, di come AEM i contenuti headless e di come tradurli.
-* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
+* [AEM Tutorials headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui questi tutorial pratici per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello che fa per te.
 * [Gestione dei contenuti headless tramite API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guide AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che evidenziano AEM API GraphQL.
 * [Authoring dei concetti](/help/sites-authoring/author.md) - Documentazione tecnica per l&#39;ambiente di authoring dei AEM, compresi i dettagli sull&#39;impostazione di authoring-pubblicazione

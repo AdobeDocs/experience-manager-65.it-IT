@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '5351'
+source-wordcount: '5317'
 ht-degree: 1%
 
 ---
@@ -23,10 +23,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio _Reagire_). [Per saperne di più](/help/sites-developing/spa-overview.md).
-
->[!NOTE]
->
->Vari esempi si basano sul contenuto di esempio di Geometrixx, che non viene più fornito con AEM, essendo stato sostituito da We.Retail. Vedere il documento [Implementazione di riferimento di We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) per informazioni su come scaricare e installare Geometrixx.
 
 Progetta le pagine web in modo che si adattino al riquadro di visualizzazione client in cui sono visualizzate. Con il design reattivo, le stesse pagine possono essere visualizzate in modo efficace su più dispositivi in entrambi gli orientamenti. L&#39;immagine seguente illustra alcuni modi in cui una pagina può rispondere ai cambiamenti nelle dimensioni del riquadro di visualizzazione:
 
@@ -662,7 +658,7 @@ La `ImageReferenceModificationServlet` sostituisce la classe `createLayer` e imp
 
 AEM consente di implementare in modo efficiente ed efficace le griglie fluide. Questa pagina spiega come integrare la griglia fluida o un’implementazione della griglia esistente (ad esempio [Bootstrap](https://twitter.github.com/bootstrap/)) nell&#39;applicazione AEM.
 
-Se non hai familiarità con le griglie fluide, consulta la sezione [Introduzione alle griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid) in fondo a questa pagina. Questa introduzione fornisce una panoramica delle griglie fluide e indicazioni per la loro progettazione.
+Se non hai familiarità con le griglie fluide, consulta la [Introduzione alle griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid) in fondo a questa pagina. Questa introduzione fornisce una panoramica delle griglie fluide e indicazioni per la loro progettazione.
 
 ### Definizione della griglia utilizzando un componente Pagina {#defining-the-grid-using-a-page-component}
 

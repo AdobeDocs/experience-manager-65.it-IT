@@ -21,40 +21,40 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-I moduli adattivi sfruttano il [framework di aspetto](/help/forms/using/introduction-widgets.md) per creare aspetto personalizzato per i campi dei moduli adattivi e fornire un’esperienza utente diversa. Ad esempio, sostituisci i pulsanti di scelta e le caselle di controllo con i pulsanti di attivazione o utilizza i plug-in jQuery personalizzati per limitare gli input degli utenti in campi come numeri di telefono o ID e-mail.
+I moduli adattivi sfruttano [framework di aspetto](/help/forms/using/introduction-widgets.md) per creare un aspetto personalizzato per i campi modulo adattivi e fornire un’esperienza utente diversa. Ad esempio, sostituisci i pulsanti di scelta e le caselle di controllo con i pulsanti di attivazione o utilizza i plug-in jQuery personalizzati per limitare gli input degli utenti in campi come numeri di telefono o ID e-mail.
 
 Questo documento spiega come utilizzare un plug-in jQuery per creare queste esperienze alternative per i campi del modulo adattivo. Inoltre, mostra un esempio per creare un aspetto personalizzato per l’aspetto che il componente campo numerico deve avere come passo o cursore numerico.
 
 Analizziamo innanzitutto i termini e i concetti chiave utilizzati in questo articolo.
 
-**** AppearanceSi riferisce allo stile, all’aspetto e all’organizzazione di vari elementi di un campo modulo adattivo. In genere include un’etichetta, un’area interattiva per fornire gli input, un’icona della guida e descrizioni brevi e lunghe del campo. La personalizzazione dell&#39;aspetto di cui al presente articolo è applicabile per l&#39;aspetto dell&#39;area di input del campo.
+**Aspetto** Si riferisce allo stile, all’aspetto e all’organizzazione di vari elementi di un campo modulo adattivo. In genere include un’etichetta, un’area interattiva per fornire gli input, un’icona della guida e descrizioni brevi e lunghe del campo. La personalizzazione dell&#39;aspetto di cui al presente articolo è applicabile per l&#39;aspetto dell&#39;area di input del campo.
 
-**jQuery** pluginFornisce un meccanismo standard, basato sul framework dei widget jQuery, per implementare un aspetto alternativo.
+**Plug-in jQuery** Fornisce un meccanismo standard, basato sul framework di widget jQuery, per implementare un aspetto alternativo.
 
-**** ClientLibUn sistema di librerie lato client AEM elaborazione lato client basato su codice JavaScript e CSS complessi. Per ulteriori informazioni, vedere Uso delle librerie lato client.
+**ClientLib** Un sistema di librerie lato client in AEM elaborazione lato client basato su codice JavaScript e CSS complessi. Per ulteriori informazioni, vedere Uso delle librerie lato client.
 
-**** ArchetypeUn toolkit per modelli di progetto Maven definito come modello o modello originale per i progetti Maven. Per ulteriori informazioni, vedere Introduzione agli Archetipi.
+**Archetipo** toolkit per modelli di progetto Maven definito come modello o modello originale per i progetti Maven. Per ulteriori informazioni, vedere Introduzione agli Archetipi.
 
-**User** ControlFa riferimento all&#39;elemento principale di un widget che contiene il valore del campo e viene utilizzato dal framework di aspetto per collegare l&#39;interfaccia utente dei widget personalizzati con il modello di modulo adattivo.
+**Controllo utente** Si riferisce all&#39;elemento principale di un widget che contiene il valore del campo e viene utilizzato dal framework di aspetto per collegare l&#39;interfaccia utente dei widget personalizzati con il modello di modulo adattivo.
 
 ## Passaggi per creare un aspetto personalizzato {#steps-to-create-a-custom-appearance}
 
 I passaggi da seguire per creare un aspetto personalizzato sono i seguenti:
 
-1. **Crea un progetto**: Crea un progetto Maven che genera un pacchetto di contenuti da distribuire in AEM.
-1. **Estendi una classe** di widget esistente: Estendi una classe di widget esistente e sovrascrivi le classi richieste.
-1. **Creare una libreria** client: Crea una  `clientLib: af.customwidget` libreria e aggiungi i file JavaScript e CSS richiesti.
+1. **Creare un progetto**: Crea un progetto Maven che genera un pacchetto di contenuti da distribuire in AEM.
+1. **Estendere una classe di widget esistente**: Estendi una classe di widget esistente e sovrascrivi le classi richieste.
+1. **Creare una libreria client**: Crea un `clientLib: af.customwidget` e aggiungi i file JavaScript e CSS richiesti.
 
 1. **Crea e installa il progetto**: Crea il progetto Maven e installa il pacchetto di contenuti generato su AEM.
-1. **Aggiorna il modulo** adattivo: Aggiornare le proprietà dei campi del modulo adattivo per utilizzare l’aspetto personalizzato.
+1. **Aggiornare il modulo adattivo**: Aggiornare le proprietà dei campi del modulo adattivo per utilizzare l’aspetto personalizzato.
 
 ### Creare un progetto {#create-a-project}
 
 Un archetipo maven è un punto di partenza per la creazione di un aspetto personalizzato. I dettagli dell&#39;archetipo da utilizzare sono i seguenti:
 
 * **Archivio**: https://repo1.maven.org/maven2/com/adobe/
-* **Id** Artifact: custom-Appe-Archetype
-* **ID** gruppo: com.adobe.aemforms
+* **Id Artifact**: custom-Appe-Archetype
+* **ID gruppo**: com.adobe.aemforms
 * **Versione**: 1.0.4
 
 Esegui il comando seguente per creare un progetto locale basato sull&#39;archetipo:
@@ -65,7 +65,7 @@ Il comando scarica i plug-in Maven e le informazioni sull’archetipo dall’arc
 
 * **groupId**: ID gruppo utilizzato dal progetto Maven generato
 * **artifactId**: ID artefatto utilizzato dal progetto Maven generato.
-* **versione**: Versione per il progetto Maven generato.
+* **version**: Versione per il progetto Maven generato.
 * **pacchetto**: Pacchetto utilizzato per la struttura del file.
 * **artifactName**: Nome dell&#39;artefatto del pacchetto AEM generato.
 * **packageGroup**: Gruppo di pacchetti del pacchetto AEM generato.
@@ -113,9 +113,9 @@ Una volta creato il modello di progetto, apporta le seguenti modifiche, a second
 
 1. Includi la dipendenza del plug-in di terze parti nel progetto.
 
-   1. Posiziona i plug-in jQuery di terze parti o personalizzati nella cartella `jqueryplugin/javascript` e i file CSS correlati nella cartella `jqueryplugin/css` . Per ulteriori dettagli, consulta i file JS e CSS nella cartella `jqueryplugin/javascript and jqueryplugin/css` .
+   1. Posiziona i plug-in jQuery di terze parti o personalizzati nel `jqueryplugin/javascript` e i relativi file CSS nel `jqueryplugin/css` cartella. Per ulteriori dettagli, consulta i file JS e CSS nella sezione `jqueryplugin/javascript and jqueryplugin/css` cartella.
 
-   1. Modifica i file `js.txt` e `css.txt` in modo da includere eventuali file JavaScript e CSS aggiuntivi del plug-in jQuery.
+   1. Modifica la `js.txt` e `css.txt` file per includere eventuali file JavaScript e CSS aggiuntivi del plug-in jQuery.
 
 1. Integra il plug-in di terze parti con il framework per abilitare l’interazione tra il framework di aspetto personalizzato e il plug-in jQuery. Il nuovo widget funzionerà solo dopo aver esteso o sostituito le seguenti funzioni.
 
@@ -127,17 +127,17 @@ Una volta creato il modello di progetto, apporta le seguenti modifiche, a second
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. L’elemento restituito viene utilizzato come <code>$userControl</code>. Se il <code>$userControl</code> specifica il vincolo di cui sopra, le funzioni della classe <code>AbstractWidget</code> funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
+   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio: <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>e <code>&lt;li&gt;</code>. L’elemento restituito viene utilizzato come <code>$userControl</code>. Se la <code>$userControl</code> specifica il vincolo di cui sopra, le funzioni del <code>AbstractWidget</code> funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Questo esempio mostra che  <code>blur</code> è un evento HTML ed  <code>XFA_EXIT_EVENT</code> è l’evento XFA corrispondente. </td>
+      }</code><br /> Questo esempio mostra che <code>blur</code> è un evento di HTML e <code>XFA_EXIT_EVENT</code> è l'evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
-   <td>Restituisce una mappa che fornisce dettagli sull'azione da eseguire in caso di modifica di un'opzione. Le chiavi sono le opzioni fornite al widget e i valori sono funzioni che vengono chiamate ogni volta che viene rilevata una modifica nell'opzione. Il widget fornisce gestori per tutte le opzioni comuni (ad eccezione di <code>value</code> e <code>displayValue</code>).</td>
+   <td>Restituisce una mappa che fornisce dettagli sull'azione da eseguire in caso di modifica di un'opzione. Le chiavi sono le opzioni fornite al widget e i valori sono funzioni che vengono chiamate ogni volta che viene rilevata una modifica nell'opzione. Il widget fornisce gestori per tutte le opzioni comuni (tranne <code>value</code> e <code>displayValue</code>).</td>
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
@@ -145,32 +145,32 @@ Una volta creato il modello di progetto, apporta le seguenti modifiche, a second
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>Per impostazione predefinita, in XFA all’evento enter viene visualizzato il valore <code>rawValue</code> del campo. Questa funzione viene chiamata per mostrare l’ <code>rawValue</code> all’utente. </td>
+   <td>Per impostazione predefinita, in XFA su evento enter, il <code>rawValue</code> del campo viene visualizzato. Questa funzione viene chiamata per mostrare la <code>rawValue</code> all'utente. </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>Per impostazione predefinita, in XFA all'evento di uscita viene visualizzato il simbolo <code>formattedValue</code> del campo . Questa funzione viene chiamata per mostrare l’ <code>formattedValue</code> all’utente. </td>
+   <td>Per impostazione predefinita, in XFA all'evento exit, l' <code>formattedValue</code> del campo viene visualizzato. Questa funzione viene chiamata per mostrare la <code>formattedValue</code> all'utente. </td>
   </tr>
  </tbody>
 </table>
 
-1. Se necessario, aggiorna il file JavaScript nella cartella `integration/javascript` .
+1. Aggiorna il file JavaScript nel `integration/javascript` se necessario.
 
-   * Sostituisci il testo `__widgetName__` con il nome effettivo del widget.
-   * Estendi il widget da una classe di widget preconfigurata adatta. Nella maggior parte dei casi, si tratta della classe di widget corrispondente al widget esistente che viene sostituito. Il nome della classe padre viene utilizzato in più posizioni, pertanto si consiglia di cercare tutte le istanze della stringa `xfaWidget.textField` nel file e sostituirle con la classe padre effettiva utilizzata.
-   * Estendi il metodo `render` per fornire un’interfaccia utente alternativa. È la posizione da cui verrà richiamato il plug-in jQuery per aggiornare l’interfaccia utente o il comportamento di interazione. Il metodo `render` deve restituire un elemento di controllo utente.
+   * Sostituire il testo `__widgetName__` con il nome effettivo del widget.
+   * Estendi il widget da una classe di widget preconfigurata adatta. Nella maggior parte dei casi, si tratta della classe di widget corrispondente al widget esistente che viene sostituito. Il nome della classe padre viene utilizzato in più posizioni, pertanto si consiglia di cercare tutte le istanze della stringa `xfaWidget.textField` nel file e sostituiscili con la classe padre effettiva utilizzata.
+   * Estendi la `render` per fornire un&#39;interfaccia utente alternativa. È la posizione da cui verrà richiamato il plug-in jQuery per aggiornare l’interfaccia utente o il comportamento di interazione. La `render` deve restituire un elemento di controllo utente.
 
-   * Estendi il metodo `getOptionsMap` per sostituire qualsiasi impostazione di opzione interessata a causa di una modifica nel widget. La funzione restituisce una mappatura che fornisce dettagli sull&#39;azione da eseguire in caso di modifica di un&#39;opzione. Le chiavi sono le opzioni fornite al widget e i valori sono le funzioni chiamate ogni volta che viene rilevata una modifica nell&#39;opzione.
-   * Il metodo `getEventMap` mappa gli eventi attivati dal widget, con gli eventi richiesti dal modello di modulo adattivo. Il valore predefinito mappa gli eventi HTML standard per il widget predefinito e deve essere aggiornato se viene attivato un evento alternativo.
-   * I valori `showDisplayValue` e `showValue` applicano la clausola di visualizzazione e modifica dell&#39;immagine e possono essere ignorati per avere un comportamento alternativo.
+   * Estendi la `getOptionsMap` per ignorare qualsiasi impostazione di opzione interessata a causa di una modifica nel widget. La funzione restituisce una mappatura che fornisce dettagli sull&#39;azione da eseguire in caso di modifica di un&#39;opzione. Le chiavi sono le opzioni fornite al widget e i valori sono le funzioni chiamate ogni volta che viene rilevata una modifica nell&#39;opzione.
+   * La `getEventMap` Il metodo mappa gli eventi attivati dal widget, con gli eventi richiesti dal modello di modulo adattivo. Il valore predefinito mappa gli eventi HTML standard per il widget predefinito e deve essere aggiornato se viene attivato un evento alternativo.
+   * La `showDisplayValue` e `showValue` applicare la clausola di visualizzazione e modificare l&#39;immagine e può essere ignorato per avere un comportamento alternativo.
 
-   * Il metodo `getCommitValue` viene chiamato dal framework dei moduli adattivi quando si verifica l&#39;evento `commit`. In genere si tratta dell’evento exit , ad eccezione degli elementi a discesa, pulsante di scelta e casella di controllo in cui si verifica al momento della modifica). Per ulteriori informazioni, consulta [Espressioni Forms adattive](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * La `getCommitValue` viene richiamato dal framework dei moduli adattivi quando il `commit`si verifica l&#39;evento . In genere si tratta dell’evento exit , ad eccezione degli elementi a discesa, pulsante di scelta e casella di controllo in cui si verifica al momento della modifica). Per ulteriori informazioni, consulta [Espressioni Forms adattive](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * Il file modello fornisce un esempio di implementazione per vari metodi. Rimuovere i metodi da non estendere.
 
 ### Creare una libreria client {#create-a-client-library}
 
-Il progetto di esempio generato dall’archetipo Maven crea automaticamente le librerie client richieste e le racchiude in una libreria client con una categoria `af.customwidgets`. I file JavaScript e CSS disponibili in `af.customwidgets` vengono inclusi automaticamente in fase di runtime.
+Il progetto di esempio generato dall’archetipo Maven crea automaticamente le librerie client richieste e le racchiude in una libreria client con una categoria `af.customwidgets`. I file JavaScript e CSS disponibili nel `af.customwidgets` sono inclusi automaticamente in fase di runtime.
 
 ### Creare e installare {#build-and-install}
 
@@ -180,15 +180,15 @@ Per creare il progetto, esegui il seguente comando sulla shell per generare un p
 
 >[!NOTE]
 >
->Il progetto maven si riferisce a un archivio remoto all’interno del file POM. Questo è solo a scopo di riferimento e, secondo gli standard Maven, le informazioni dell’archivio vengono acquisite nel file `settings.xml`.
+>Il progetto maven si riferisce a un archivio remoto all’interno del file POM. Questo è solo a scopo di riferimento e, secondo gli standard Maven, le informazioni dell’archivio vengono acquisite nel `settings.xml` file.
 
 ### Aggiornare il modulo adattivo {#update-the-adaptive-form}
 
 Per applicare l’aspetto personalizzato a un campo modulo adattivo:
 
 1. Apri il modulo adattivo in modalità di modifica.
-1. Apri la finestra di dialogo **Proprietà** per il campo in cui desideri applicare l’aspetto personalizzato.
-1. Nella scheda **Stile** , aggiorna la proprietà `CSS class` per aggiungere il nome dell’aspetto nel formato `widget_<widgetName>`. Ad esempio: **widget_numericstepper**
+1. Apri **Proprietà** finestra di dialogo relativa al campo in cui applicare l’aspetto personalizzato.
+1. In **Stile** scheda , aggiorna `CSS class` per aggiungere il nome dell&#39;aspetto nel `widget_<widgetName>` formato. Ad esempio: **widget_numericstepper**
 
 ## Esempio: Creare un aspetto personalizzato   {#sample-create-a-custom-appearance-nbsp}
 
@@ -199,7 +199,7 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
    `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    Viene richiesto di specificare i valori per i seguenti parametri.
-   *I valori utilizzati in questo esempio sono in grassetto*.
+   *I valori utilizzati in questo esempio sono evidenziati in grassetto*.
 
    `Define value for property 'groupId': com.adobe.afwidgets`
 
@@ -215,7 +215,7 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
 
    `Define value for property 'widgetName': numericStepper`
 
-1. Passa alla directory `customWidgets` (valore specificato per la proprietà `artifactID` ) ed esegui il comando seguente per generare un progetto Eclipse:
+1. Passa a `customWidgets` (valore specificato per `artifactID` property) ed esegui il seguente comando per generare un progetto Eclipse:
 
    `mvn eclipse:eclipse`
 
@@ -223,9 +223,9 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
 
    1. Seleziona **[!UICONTROL File > Importa > Progetti esistenti in Workspace]**.
 
-   1. Sfoglia e seleziona la cartella in cui è stato eseguito il comando `archetype:generate`.
+   1. Sfoglia e seleziona la cartella in cui è stato eseguito il `archetype:generate` comando.
 
-   1. Fare clic su **[!UICONTROL Fine]**.
+   1. Fai clic su **[!UICONTROL Fine]**.
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
@@ -233,20 +233,20 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
-   Nel progetto Eclipse, controlla il codice plug-in nel file `plugin.js` per assicurarti che corrisponda ai requisiti per l’aspetto. In questo esempio, l&#39;aspetto soddisfa i seguenti requisiti:
+   Nel progetto Eclipse, controlla il codice plug-in nel `plugin.js` per assicurarsi che corrisponda ai requisiti dell&#39;aspetto. In questo esempio, l&#39;aspetto soddisfa i seguenti requisiti:
 
-   * Il passo numerico deve estendersi da `- $.xfaWidget.numericInput`.
-   * Il metodo `set value` del widget imposta il valore dopo che lo stato attivo è sul campo. È un requisito obbligatorio per un widget modulo adattivo.
-   * Per richiamare il metodo `bootstrapNumber` è necessario ignorare il metodo `render`.
+   * Lo step numerico deve estendersi da `- $.xfaWidget.numericInput`.
+   * La `set value` Il metodo del widget imposta il valore dopo che lo stato attivo è sul campo. È un requisito obbligatorio per un widget modulo adattivo.
+   * La `render` per richiamare `bootstrapNumber` metodo .
 
    * Non esiste alcuna dipendenza aggiuntiva per il plug-in che non sia il codice sorgente principale del plug-in.
    * L’esempio non esegue alcuno stile sullo stepper, pertanto non è necessario alcun CSS aggiuntivo.
-   * L&#39;oggetto `$userControl` deve essere disponibile per il metodo `render` . Si tratta di un campo del tipo `text` che viene clonato con il codice del plug-in.
+   * La `$userControl` deve essere disponibile per `render` metodo . È un campo della `text` tipo clonato con il codice del plug-in.
 
-   * I pulsanti **+** e **-** devono essere disattivati quando il campo è disabilitato.
+   * La **+** e **-** i pulsanti devono essere disattivati quando il campo è disabilitato.
 
-1. Sostituisci il contenuto del `bootstrap-number-input.js` (plugin jQuery) con il contenuto del file `numericStepper-plugin.js`.
-1. Nel file `numericStepper-widget.js`, aggiungi il seguente codice per sostituire il metodo di rendering per richiamare il plug-in e restituire l&#39;oggetto `$userControl` :
+1. Sostituire il contenuto della `bootstrap-number-input.js` (plugin jQuery) con il contenuto del `numericStepper-plugin.js` file.
+1. In `numericStepper-widget.js` aggiungi il seguente codice per ignorare il metodo di rendering per richiamare il plug-in e restituire `$userControl` oggetto:
 
    ```javascript
    render : function() {
@@ -266,7 +266,7 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
    }
    ```
 
-1. Nel file `numericStepper-widget.js` , sovrascrivi la proprietà `getOptionsMap` per ignorare l’opzione di accesso e nascondi i pulsanti + e - in modalità disabilitata.
+1. In `numericStepper-widget.js` , sovrascrivi `getOptionsMap` per ignorare l&#39;opzione di accesso e nascondere i pulsanti + e - in modalità disabilitata.
 
    ```javascript
    getOptionsMap: function(){
@@ -308,7 +308,7 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
     }
    ```
 
-1. Salva le modifiche, accedi alla cartella contenente il file `pom.xml` ed esegui il seguente comando Maven per creare il progetto:
+1. Salva le modifiche, passa alla cartella contenente il `pom.xml` ed esegui il seguente comando Maven per creare il progetto:
 
    `mvn clean install`
 
@@ -316,8 +316,8 @@ Vediamo ora un esempio per creare un aspetto personalizzato in modo che un campo
 
 1. Apri il modulo adattivo in modalità di modifica in cui desideri applicare l’aspetto personalizzato ed effettua le seguenti operazioni:
 
-   1. Fare clic con il pulsante destro del mouse sul campo in cui si desidera applicare l&#39;aspetto e fare clic su **[!UICONTROL Modifica]** per aprire la finestra di dialogo Modifica componente.
+   1. Fare clic con il pulsante destro del mouse sul campo a cui si desidera applicare l&#39;aspetto e fare clic su **[!UICONTROL Modifica]** per aprire la finestra di dialogo Modifica componente.
 
-   1. Nella scheda Stile , aggiorna la proprietà **[!UICONTROL Classe CSS]** per aggiungere `widget_numericStepper`.
+   1. Nella scheda Stile , aggiorna la **[!UICONTROL Classe CSS]** proprietà da aggiungere `widget_numericStepper`.
 
 Il nuovo aspetto appena creato è ora disponibile per l’uso.

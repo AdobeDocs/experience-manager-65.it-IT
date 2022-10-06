@@ -1,8 +1,8 @@
 ---
 title: Ristrutturazione dell’archivio in AEM 6.5
-seo-title: Ristrutturazione dell’archivio in AEM 6.5
+seo-title: Repository Restructuring in AEM 6.5
 description: Scopri le nozioni di base e le motivazioni alla base della ristrutturazione dell’archivio in AEM 6.5
-seo-description: Scopri le nozioni di base e le motivazioni alla base della ristrutturazione dell’archivio in AEM 6.5
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-
-# Ristrutturazione dell&#39;archivio in AEM 6.5{#repository-restructuring-in-aem}
+# Ristrutturazione dell’archivio in AEM 6.5{#repository-restructuring-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -39,7 +38,7 @@ Quando si aggiorna a AEM 6.5, un grande sottoinsieme di contenuto sotto /etc ver
 * Con l&#39;aggiornamento alla versione 6.5 - una manciata delle modifiche alla ristrutturazione /etc non sono compatibili con le versioni precedenti e pertanto le modifiche dovrebbero essere pianificate e implementate come parte dell&#39;aggiornamento alla versione 6.5 di AEM.
 * Prima dell&#39;aggiornamento futuro - la stragrande maggioranza delle modifiche alla ristrutturazione /etc può essere posticipata fino a un certo tempo nel futuro post-aggiornamento. Come accennato in precedenza, AEM codice 6.5 continuerà a fare riferimento alle posizioni precedenti fino a quando le modifiche non saranno implementate come parte di un rilascio da parte del cliente. Sebbene non vi sia una tempistica forzata per la quale le modifiche devono essere apportate, si consiglia di effettuarle prima dell’aggiornamento futuro, in quanto le funzioni future potrebbero dipendere dalle nuove posizioni a cui si fa riferimento. Inoltre, la documentazione di una data funzione farà riferimento per convenzione alle nuove posizioni e potrebbe quindi confondere se le vecchie posizioni sono ancora in uso.
 
-### Guida alla ristrutturazione {#restructuring-guidance}
+### Orientamento alla ristrutturazione {#restructuring-guidance}
 
 Durante la pianificazione di un aggiornamento al AEM 6.5, per valutare lo sforzo di lavoro è necessario fare riferimento alle seguenti pagine per soluzione:
 

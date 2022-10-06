@@ -1022,7 +1022,7 @@ Per determinare la dimensione totale del `/var/dam` cartella:
 
 #### Quanti modelli sono attualmente utilizzati? {#how-many-templates-are-currently-used}
 
-Per visualizzare il numero di modelli attualmente sul server utilizzare una query del repository; via CRXDE - Strumenti - Query:
+Per visualizzare il numero di modelli attualmente sul server, utilizzare una query del repository; via CRXDE - Strumenti - Query:
 
 * **Tipo** `XPath`
 * **Percorso** `/`

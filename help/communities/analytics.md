@@ -67,7 +67,7 @@ Questa sezione della documentazione descrive come collegare una suite di rapport
 
 Per configurare le funzioni di Analytics for Communities, è necessario collaborare con il rappresentante commerciale di riferimento per impostare un account Adobe Analytics e [suite di rapporti](#adobe-analytics-report-suite-for-video-reporting). Una volta stabiliti, devono essere disponibili le seguenti informazioni:
 
-* **Nome dell&#39;azienda**
+* **Nome dell’azienda**
 
    Società associata all’account Adobe Analytics.
 
@@ -134,7 +134,6 @@ Contatta il rappresentante del tuo account per eventuali dubbi sulle variabili d
 >* Da **`evar1`** a **`evar11`**
 >
 >* Da **`event1`** a **`event7`**
-
 >
 >**Prima della pubblicazione del sito,** è importante ripristinare la mappatura preesistente spostando le variabili AEM mappate automaticamente alle variabili di Analytics quando Analytics era abilitato per un sito community.
 >
@@ -274,7 +273,7 @@ La creazione del framework di Analytics apre il framework per la configurazione.
 
 ## Configurazione AEM framework di Analytics {#aem-analytics-framework-configuration}
 
-The purpose of the framework is to map AEM variables to Analytics variables (eVars and events). The Analytics variables available for mapping are [defined in the report suite](#adobe-analytics-report-suite-for-video-reporting).
+Lo scopo del framework è quello di mappare AEM variabili alle variabili di Analytics (eVar ed eventi). Le variabili di Analytics disponibili per la mappatura sono [definiti nella suite di rapporti](#adobe-analytics-report-suite-for-video-reporting).
 
 ![analytics-enablement-framework](assets/analytics-framework1.png)
 
@@ -390,11 +389,11 @@ Una volta salvato il sito community con Analytics abilitato e selezionato il fra
 
 Se utilizzi una suite di rapporti esistente che ha mappato una qualsiasi delle variabili all’interno di evar1-evar11 e event1-event7, sarà necessario [rimappare le variabili AEM](#modifying-analytics-variable-mapping) e ripristinare la mappatura originale.
 
-Following is an example of default mappings after following the [getting started tutorial](/help/communities/getting-started-enablement.md):
+Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [esercitazione introduttiva](/help/communities/getting-started-enablement.md):
 
 ![map-analytics](assets/map-analytics1.png)
 
-#### Map of eVars sent with each event {#map-of-evars-sent-with-each-event}
+#### Mappa delle eVar inviate con ogni evento {#map-of-evars-sent-with-each-event}
 
 <table>
  <tbody>
@@ -405,7 +404,7 @@ Following is an example of default mappings after following the [getting started
    <td><strong>Funzione<br /> Tipo</strong></td>
    <td><strong>Gruppo<br /> Titolo</strong></td>
    <td><strong>Gruppo<br /> Percorso</strong></td>
-   <td><strong>UGC<br /> Type</strong></td>
+   <td><strong>UGC<br /> Tipo</strong></td>
    <td><strong>UGC<br /> Titolo</strong></td>
    <td><strong>Utente<br /> (membro)</strong></td>
    <td><strong>UGC<br /> Percorso</strong></td>
@@ -466,9 +465,9 @@ Following is an example of default mappings after following the [getting started
   <tr>
    <td><strong>evento4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>b)</em></td>
+   <td><em>c)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
@@ -480,14 +479,14 @@ Following is an example of default mappings after following the [getting started
    <td><strong>evento5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
-   <td><em>(c)</em></td>
+   <td><em>c)</em></td>
    <td><em>d)</em></td>
    <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>(j)</em></td>
+   <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento6<br /> SCFVoteDown</strong></td>
@@ -568,17 +567,16 @@ Se le eVar e gli eventi di Communities sovrascrivono le mappature preesistenti n
 
 Vedere le sezioni:
 
-* [Mapped Analytics to AEM Variables](#mapped-analytics-to-aem-variables)
+* [Analytics mappato alle variabili AEM](#mapped-analytics-to-aem-variables)
 * [Modifica della mappatura delle variabili di Analytics](#modifying-analytics-variable-mapping)
 
 >[!CAUTION]
 >
->**If using an existing report suite that already uses variables within**
+>**Se utilizzi una suite di rapporti esistente che utilizza già variabili all’interno di**
 >
 >* Da **`evar1`** a **`evar11`**
 >
 >* Da **`event1`** a **`event7`**
-
 >
 >**Prima della pubblicazione del sito,** è importante ripristinare la mappatura preesistente e spostare le variabili AEM community mappate automaticamente (quando Analytics era abilitato per il sito community) su altre variabili Analytics. Questa nuova mappatura deve essere coerente per tutti i componenti di Communities.
 >
@@ -586,7 +584,7 @@ Vedere le sezioni:
 
 ### Editore principale {#primary-publisher}
 
-When the deployment chosen is a [publish farm](/help/communities/topologies.md#tarmk-publish-farm), then one AEM publish instance must be identified as the primary publisher for polling Adobe Analytics for report data to write to [SRP](/help/communities/working-with-srp.md).
+Quando la distribuzione scelta è un [pubblica azienda](/help/communities/topologies.md#tarmk-publish-farm), quindi un’istanza di pubblicazione AEM deve essere identificata come editore principale per il polling di Adobe Analytics per i dati del rapporto in cui scrivere [SRP](/help/communities/working-with-srp.md).
 
 Per impostazione predefinita, la `AEM Communities Publisher Configuration` La configurazione OSGi identifica la propria istanza di pubblicazione come editore principale, in modo tale che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principali.
 

@@ -1,8 +1,8 @@
 ---
 title: E-mail marketing
-seo-title: E-mail marketing
+seo-title: E-mail Marketing
 description: Le comunicazioni di e-mail marketing, come le newsletter, sono una parte importante delle campagne marketing, in quanto utili a veicolare i contenuti verso i lead. In AEM è possibile creare newsletter a partire da contenuti AEM esistenti, nonché aggiungere nuovi contenuti specifici per le newsletter.
-seo-description: Le comunicazioni di e-mail marketing, come le newsletter, sono una parte importante delle campagne marketing, in quanto utili a veicolare i contenuti verso i lead. In AEM è possibile creare newsletter a partire da contenuti AEM esistenti, nonché aggiungere nuovi contenuti specifici per le newsletter.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1758'
 ht-degree: 96%
 
 ---
-
 
 # E-mail marketing{#e-mail-marketing}
 
@@ -38,9 +37,9 @@ AEM permette inoltre di amministrare la funzionalità newsletter e di effettuare
 
 Questo documento descrive le nozioni di base per la creazione di newsletter in AEM. Per informazioni più dettagliate su come lavorare con l’e-mail marketing, consulta i seguenti documenti:
 
-* [Creare un’efficace pagina di destinazione di newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
-* [Gestione sottoscrizioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Pubblicazione di un&#39;e-mail ai fornitori del servizio e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Creazione di una pagina di destinazione efficace per una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Gestione delle registrazioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
+* [Pubblicazione di un’e-mail ai provider di servizi e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Tracciamento dei messaggi e-mail non pervenuti a destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
@@ -133,7 +132,7 @@ Per personalizzare una newsletter e simularne l’aspetto risultante:
 
 >[!NOTE]
 >
->Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `https://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controlla la configurazione OSGi per Day CQ Link Externalizer all’indirizzo `https://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -221,7 +220,7 @@ Per effettuare una prova rapida della newsletter:
 
 >[!NOTE]
 >
->Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `https://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controlla la configurazione OSGi per Day CQ Link Externalizer all’indirizzo `https://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -256,7 +255,7 @@ Per inviare una newsletter dalla campagna:
    >
    >Accertatevi di essere tra i destinatari, in modo da verificare personalmente che la newsletter arrivi a destinazione.
 
-### Invio delle newsletter da un elenco  {#sending-newsletters-from-a-list}
+### Invio delle newsletter da un elenco {#sending-newsletters-from-a-list}
 
 Per inviare una newsletter da un elenco:
 
@@ -286,7 +285,7 @@ Per inviare una newsletter da un elenco:
 
 Questa sezione descrive come registrarsi ad una newsletter.
 
-### Registrazione a una newsletter  {#subscribing-to-a-newsletter-1}
+### Registrazione a una newsletter {#subscribing-to-a-newsletter-1}
 
 Per effettuare la sottoscrizione a una newsletter (utilizzando come esempio il sito Web Geometrixx):
 

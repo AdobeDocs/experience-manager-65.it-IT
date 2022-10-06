@@ -1,8 +1,8 @@
 ---
 title: Modifica dei lanci
-seo-title: Modifica dei lanci
-description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
-seo-description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
+seo-title: Editing Launches
+description: Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine).
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 93%
+source-wordcount: '525'
+ht-degree: 99%
 
 ---
-
 
 # Modifica dei lanci{#editing-launches}
 
@@ -33,7 +32,7 @@ Dopo aver creato un lancio per una pagina o un insieme di pagine, è possibile m
 >
 >Non puoi spostare una pagina all’interno di un lancio. Il tentativo di eseguire questa azione attiva un messaggio di avviso:
 >
->* Avviso: Questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
+>* Attenzione: questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
 
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
@@ -66,7 +65,7 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **R
 
    Per informazioni complete sull&#39;utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
-## Modifica delle pagine di origine utilizzate  {#changing-the-source-pages-used}
+## Modifica delle pagine di origine utilizzate {#changing-the-source-pages-used}
 
 In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la gamma di pagine di origine per un lancio:
 
@@ -87,7 +86,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    >
    >Per aggiungere pagine a un lancio, queste devono essere sotto una radice linguistica comune, cioè all&#39;interno di un singolo sito.
 
-## Modifica di una configurazione di lancio  {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
 
 In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
@@ -104,9 +103,9 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 
-   Consulta [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione dei campi **Data lancio** e **Produzione pronta**.
+   Consulta la sezione [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione dei campi **Data lancio** e **Production Ready**.
 
-## Rilevamento dello stato del lancio di una pagina  {#discovering-the-launch-status-of-a-page}
+## Rilevamento dello stato del lancio di una pagina {#discovering-the-launch-status-of-a-page}
 
 Lo stato viene visualizzato quando si seleziona un lancio specifico dalla scheda Riferimenti (consulta [Avvia in Riferimenti (Console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 

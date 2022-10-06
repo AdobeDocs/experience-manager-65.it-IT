@@ -1,8 +1,8 @@
 ---
 title: Ricerca
-seo-title: Ricerca
+seo-title: Search
 description: L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
-seo-description: L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 86%
+source-wordcount: '470'
+ht-degree: 85%
 
 ---
-
 
 # Ricerca{#searching}
 
@@ -33,7 +32,7 @@ Per accedere al pannello di ricerca, fai clic sulla scheda **Cerca** nella parte
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del sito Web. Contiene campi e widget per i seguenti elementi:
+Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del sito web. Contiene campi e widget per i seguenti elementi:
 
 * **Testo completo**: consente di cercare il testo specificato.
 * **Modificato prima/dopo**: consente di ricercare solo le pagine modificate tra due date specifiche.
@@ -46,15 +45,11 @@ Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del si
 >
 >* [Caratteri jolly](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operatori booleani](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [Espressioni regolari](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Espressioni regolari](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Gruppi di campi](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Incremento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
-
 >
-
 
 
 Per eseguire la ricerca, fai clic su **Cerca** nella parte inferiore del riquadro. Per azzerare i criteri di ricerca, fai clic su **Ripristina**.
@@ -82,7 +77,7 @@ Nella console **Siti web**, l’opzione di menu **Trova e sostituisci** consente
    * Specificare se nella ricerca è necessario distinguere tra maiuscole e minuscole
    * Specificare se cercare solo parole intere (in caso contrario vengono trovate anche le sottostringhe)
 
-   Facendo clic su **Preview** vengono elencati i punti in cui è stato trovato il termine. È possibile selezionare o deselezionare le istanze specifiche da sostituire:
+   Clic **Anteprima** elenchi in cui è stato trovato il termine. È possibile selezionare o deselezionare istanze specifiche da sostituire:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +90,7 @@ L’ambito predefinito del servlet di ricerca e sostituzione include le seguenti
 * `jcr:text`
 * `text`
 
-L&#39;ambito può essere modificato utilizzando la console di gestione Web Apache Felix (ad esempio, in `https://localhost:4502/system/console/configMgr`). Selezionare `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configurare l&#39;ambito come necessario.
+L’ambito può essere modificato utilizzando la console di gestione web Apache Felix (ad esempio, in `https://localhost:4502/system/console/configMgr`). Seleziona `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configura l&#39;ambito come necessario.
 
 >[!NOTE]
 >

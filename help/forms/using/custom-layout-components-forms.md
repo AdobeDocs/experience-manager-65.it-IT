@@ -1,49 +1,48 @@
 ---
 title: Creazione di componenti di layout personalizzati per i moduli adattivi
-seo-title: Creazione di componenti di layout personalizzati per i moduli adattivi
+seo-title: Creating custom layout components for adaptive forms
 description: Procedura per creare componenti di layout personalizzati per i moduli adattivi.
-seo-description: Procedura per creare componenti di layout personalizzati per i moduli adattivi.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 1%
 
 ---
 
-
-# Creazione di componenti di layout personalizzati per moduli adattivi{#creating-custom-layout-components-for-adaptive-forms}
+# Creazione di componenti di layout personalizzati per i moduli adattivi{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Prerequisito {#prerequisite}
 
-Conoscenza dei layout, che consente di creare/utilizzare un layout personalizzato. Vedere [Modifica del layout del pannello](../../forms/using/layout-capabilities-adaptive-forms.md).
+Conoscenza dei layout, che consente di creare/utilizzare un layout personalizzato. Vedi [Modifica del layout del pannello](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Componente Layout del pannello dei moduli adattivi {#adaptive-form-panel-layout-component}
+## Componente Layout del pannello dei moduli adattivo {#adaptive-form-panel-layout-component}
 
-Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i componenti per moduli adattivi vengono disposti in un pannello relativo all’interfaccia utente.
+Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i componenti dei moduli adattivi vengono disposti in un pannello relativo all’interfaccia utente.
 
 ## Creazione di un layout di pannello personalizzato {#creating-a-custom-panel-layout}
 
-1. Andate alla posizione `/crx/de`.
-1. Copiate un layout del pannello dalla posizione `/libs/fd/af/layouts/panel` (ad esempio, `tabbedPanelLayout`) a `/apps` (ad esempio, `/apps/af-custom-layout`).
-1. Rinominare il layout copiato in `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificateli in `Custom layout - Toggle tabs`.
+1. Passa alla posizione `/crx/de`.
+1. Copiare un layout di un pannello dalla posizione `/libs/fd/af/layouts/panel` (ad esempio, `tabbedPanelLayout`) a `/apps` (ad esempio, `/apps/af-custom-layout`).
+1. Rinomina il layout copiato in `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificali in `Custom layout - Toggle tabs`.
 
-qtip
+suggerimento
 
-![Layout del pannello personalizzato CRX DE Snapshot](assets/custom_layout_new.png)
+![Snapshot CRX DE layout del pannello personalizzato](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
->L&#39;impostazione della proprietà `guideComponentType`sul valore `fd/af/layouts/panel` determina che il layout è un layout a pannello.
+>Impostazione della proprietà `guideComponentType`al valore `fd/af/layouts/panel` determina che il layout è un layout a pannello.
 
-1. Rinominare il file `tabbedPanelLayout.jsp` nel nuovo layout in customPanelLayout.jsp.
-1. Per introdurre nuovi stili e comportamenti, create una libreria client sotto il nodo `etc`. Ad esempio, nel percorso /etc/af-custom-layout-clientlib, creare il nodo client-library. Lasciare al nodo la proprietà category af.panel.custom. Contiene i seguenti file .css e .js:
+1. Rinomina il file `tabbedPanelLayout.jsp` sotto il nuovo layout a customPanelLayout.jsp.
+1. Per introdurre nuovi stili e comportamenti, crea una libreria client nella sezione `etc` nodo. Ad esempio, nel percorso /etc/af-custom-layout-clientlib, crea il nodo client-library. Consenti al nodo di avere la proprietà categories af.panel.custom. Contiene i seguenti file .css e .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -115,9 +114,9 @@ qtip
    });
    ```
 
-1. Per migliorare l&#39;aspetto e il comportamento, potete includere un `client library`.
+1. Per migliorare l’aspetto e il comportamento, puoi includere `client library`.
 
-   Inoltre, aggiornate i percorsi degli script inclusi nei file .jsp. Ad esempio, aggiornare il file `customPanelLayout.jsp` nel modo seguente:
+   Inoltre, aggiorna i percorsi degli script inclusi nei file .jsp. Ad esempio, aggiorna il `customPanelLayout.jsp` file come segue:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +145,7 @@ qtip
    </div>
    ```
 
-   Il file `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`:
+   La `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` file:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -175,7 +174,7 @@ qtip
    </ul>
    ```
 
-   Il `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` aggiornato:
+   Il `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -202,9 +201,9 @@ qtip
    </div>
    ```
 
-1. Aprire un modulo adattivo in modalità Authoring. Il layout del pannello definito viene aggiunto all’elenco per la configurazione dei layout dei pannelli.
+1. Apri un modulo adattivo in modalità Creazione. Il layout del pannello definito viene aggiunto all’elenco per la configurazione dei layout dei pannelli.
 
-   ![Il layout del pannello personalizzato viene visualizzato nell&#39;](assets/auth-layt.png) ![elenco del layout del pannelloSchermata del modulo adattivo, utilizzando il ](assets/s1.png) ![layout personalizzato del pannelloScreenshot che mostra la funzionalità di attivazione/disattivazione del layout personalizzato](assets/s2.png)
+   ![Il layout del pannello personalizzato viene visualizzato nell’elenco del layout del pannello](assets/auth-layt.png) ![Schermata del modulo adattivo, con layout personalizzato del pannello](assets/s1.png) ![Schermata che mostra la funzionalità di attivazione/disattivazione del layout personalizzato](assets/s2.png)
 
 ZIP di esempio per un layout di pannello personalizzato e un modulo adattivo che lo utilizza.
 

@@ -1,91 +1,89 @@
 ---
 title: Personalizzazione dei modelli di ricerca
-seo-title: Personalizzazione dei modelli di ricerca
-description: È possibile creare modelli di ricerca da utilizzare in Workspace per cercare le istanze di processi dalle pagine Attività e Tracciamento. Potete inoltre modificare o eliminare i modelli di ricerca esistenti.
-seo-description: È possibile creare modelli di ricerca da utilizzare in Workspace per cercare le istanze di processi dalle pagine Attività e Tracciamento. Potete inoltre modificare o eliminare i modelli di ricerca esistenti.
+seo-title: Customizing search templates
+description: È possibile creare modelli di ricerca da utilizzare in Workspace per cercare le istanze dei processi nelle pagine Da fare e Tracking. È inoltre possibile modificare o eliminare i modelli di ricerca esistenti.
+seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-
 # Personalizzazione dei modelli di ricerca {#customizing-search-templates}
 
-È possibile creare modelli di ricerca da utilizzare in Workspace per cercare le istanze di processi dalle pagine Attività e Tracciamento. Potete inoltre modificare o eliminare i modelli di ricerca esistenti.
+È possibile creare modelli di ricerca da utilizzare in Workspace per cercare le istanze dei processi nelle pagine Da fare e Tracking. È inoltre possibile modificare o eliminare i modelli di ricerca esistenti.
 
-Quando create o modificate un modello di ricerca, potete specificare il layout e l’ordine dei risultati della ricerca. Tuttavia, gli utenti possono modificare queste impostazioni in Workspace dopo la visualizzazione dei risultati della ricerca.
+Quando crei o modifichi un modello di ricerca, puoi specificare il layout e l’ordine dei risultati della ricerca. Tuttavia, gli utenti possono modificare queste impostazioni in Workspace dopo la visualizzazione dei risultati della ricerca.
 
-Potete creare tutti i modelli di ricerca richiesti.
+Puoi creare tutti i modelli di ricerca richiesti.
 
 >[!NOTE]
 >
->Quando salvate un modello di ricerca, dovete assegnargli un nome univoco. In caso contrario, un modello esistente può essere sovrascritto senza ricevere un messaggio di avviso.
+>Quando salvi un modello di ricerca, devi assegnargli un nome univoco. In caso contrario, un modello esistente può essere sovrascritto senza un messaggio di avviso.
 
 ## Creare un modello di ricerca semplice {#create-a-simple-search-template}
 
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Cerca modelli.
-1. Nella scheda Identificazione, nella casella Descrizione modello di ricerca, specificare lo scopo del modello.
-1. (Facoltativo) Fate clic sulla scheda Criteri e specificate i criteri di ricerca per il modello.
-1. Fate clic sulla scheda Salva, immettete un nome univoco per il modello, quindi fate clic su Salva.
+1. Nella casella Descrizione modello di ricerca della scheda Identificazione specificare lo scopo del modello.
+1. (Facoltativo) Fai clic sulla scheda Criteri e specifica i criteri di ricerca per il modello.
+1. Fare clic sulla scheda Salva, immettere un nome univoco per il modello, quindi fare clic su Salva.
 
 ## Creare o modificare un modello di ricerca {#create-or-edit-a-search-template}
 
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Cerca modelli.
-1. (Facoltativo) Se state modificando un modello esistente o utilizzando un modello esistente come base per un nuovo modello, selezionate il modello dall&#39;elenco Nome modello di ricerca.
-1. Nella casella Descrizione modello di ricerca, specificare lo scopo del modello.
-1. (Facoltativo) Nella casella Istruzioni utente, fornite tutte le istruzioni utili per l’utilizzo del modello. Queste istruzioni vengono visualizzate in Workspace quando un utente seleziona il modello di ricerca.
-1. Fare clic sulla scheda Criteri. Qui si definiscono uno o più criteri di ricerca. Per aggiungere un criterio di ricerca:
+1. (Facoltativo) Se stai modificando un modello esistente o utilizzando un modello esistente come base per un nuovo modello, selezionalo dall’elenco Nome modello di ricerca.
+1. Nella casella Descrizione modello di ricerca specificare lo scopo del modello.
+1. (Facoltativo) Nella casella Istruzioni utente , fornisci tutte le istruzioni utili per l’utilizzo del modello. Queste istruzioni vengono visualizzate in Workspace quando un utente seleziona il modello di ricerca.
+1. Fai clic sulla scheda Criteri . In questo punto puoi definire uno o più criteri di ricerca. Per aggiungere un criterio di ricerca:
 
-   * Nella parte superiore della scheda Criteri, selezionare un elemento di processo o un elemento di attività.
+   * Nella parte superiore della scheda Criteri, seleziona un elemento del processo o un elemento dell’attività.
 
-      **Suggerimento**:  *Se in precedenza è stato selezionato l&#39;elemento Nome processo e specificato un processo, tutte le variabili di processo definite in tale processo sono disponibili anche per la selezione.*
+      **Suggerimento**: *Se in precedenza hai selezionato l&#39;elemento Nome processo e hai specificato un processo, puoi selezionare anche tutte le variabili di processo definite in tale processo.*
 
-      **Suggerimento**:  *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
+      **Suggerimento**: *Se selezioni l’elemento Visualizzazione attività , gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
 
-      I campi dei criteri di ricerca per l&#39;elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
+      I campi dei criteri di ricerca per l’elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
 
-   * Per ogni elemento di processo, elemento task e variabile di processo selezionato, compilare i campi di ricerca corrispondenti nella parte inferiore della scheda Criteri:
+   * Per ogni elemento di processo, elemento task e variabile di processo selezionato, compila i campi di ricerca corrispondenti nella parte inferiore della scheda Criteri:
 
-      * Selezionare un operatore relazionale (ad esempio &quot;essere uguale a&quot;) dall&#39;elenco fornito e specificare il valore dell&#39;operando nella casella accanto ad esso.
+      * Seleziona un operatore relazionale (ad esempio &quot;essere uguale a&quot;) dall’elenco fornito e specifica il valore dell’operando nella casella accanto a esso.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
-      * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato, selezionate gli operatori che saranno disponibili per l&#39;utente.
+      * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell’elenco visualizzato, seleziona gli operatori che saranno disponibili per l’utente.
 
-      **Suggerimento**:  *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull’icona accanto al campo operando per visualizzare un elenco in cui selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
-      **Suggerimento**:  *Per eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
+      **Suggerimento**: *Per eliminare un elemento dal modello di ricerca, fai clic sull’icona Elimina accanto ai criteri di ricerca dell’elemento.*
 
 
-1. (Facoltativo) Per ogni intestazione di colonna da visualizzare nei risultati della ricerca, fare clic sulla scheda Layout ed eseguire le operazioni seguenti:
+1. (Facoltativo) Per visualizzare l’intestazione di ogni colonna nei risultati della ricerca, fai clic sulla scheda Layout ed esegui le seguenti operazioni:
 
-   * Selezionate un processo o un elemento attività e fate clic sulla freccia destra per spostarlo nell’elenco Colonne in cui visualizzare il rapporto.
-   * Nell&#39;elenco Colonne su rapporto, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o sulla freccia giù per portarlo nella posizione desiderata nell&#39;ordine delle colonne. Le intestazioni di colonna nei risultati della ricerca vengono visualizzate nell’ordine in cui sono elencate qui.
-   * (Facoltativo) Per modificare il nome dell&#39;elemento per l&#39;intestazione della colonna, selezionate l&#39;elemento dall&#39;elenco Colonne in rapporto e fornite il nuovo nome.
+   * Selezionare un processo o un elemento dell&#39;attività e fare clic sulla freccia destra per spostarlo nell&#39;elenco Colonne da report.
+   * Nell’elenco Colonne per report selezionare l’elemento del processo o dell’attività e fare clic sulla freccia su o sulla freccia giù per spostarlo nella posizione desiderata nell’ordine delle colonne. Le intestazioni di colonna nei risultati della ricerca vengono visualizzate nell’ordine in cui sono elencate.
+   * (Facoltativo) Per modificare il nome dell’elemento per l’intestazione della colonna, selezionare l’elemento dall’elenco Colonne in cui creare un rapporto e specificare il nuovo nome.
 
    >[!NOTE]
    >
-   >Il layout specificato nel modello di ricerca ha la priorità sulle preferenze dell&#39;utente specificate per le intestazioni di colonna in Workspace.
+   >Il layout specificato nel modello di ricerca sostituisce le preferenze dell’utente specificate per le intestazioni di colonna in Workspace.
 
-1. (Facoltativo) Per ogni colonna da ordinare nei risultati della ricerca, fate clic sulla scheda Ordina ed eseguite i seguenti passaggi:
+1. (Facoltativo) Per ogni colonna da ordinare nei risultati della ricerca, fare clic sulla scheda Ordina ed eseguire i seguenti passaggi:
 
-   * Selezionare un processo o un elemento attività e fare clic sulla freccia destra per spostarlo nell&#39;elenco Ordinamento.
-   * Nell&#39;elenco Ordina, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o giù per portarlo nella posizione desiderata nell&#39;ordine di ordinamento. Le colonne nei risultati della ricerca verranno ordinate in base all&#39;ordine in cui sono elencate.
-   * (Facoltativo) Per ordinare una colonna in ordine decrescente, selezionate la casella di controllo accanto al nome dell&#39;elemento. Se la casella di controllo non è selezionata, la colonna viene ordinata in ordine crescente.
+   * Selezionare un elemento di processo o di attività e fare clic sulla freccia destra per spostarlo nell&#39;elenco Ordina ordine.
+   * Nell&#39;elenco Ordina selezionare l&#39;elemento del processo o dell&#39;attività e fare clic sulla freccia Su o sulla freccia Giù per spostarlo nella posizione desiderata nell&#39;ordinamento. Le colonne nei risultati della ricerca vengono ordinate in base all’ordine in cui sono elencate.
+   * (Facoltativo) Per ordinare una colonna in ordine decrescente, seleziona la casella di controllo accanto al nome dell’elemento. Se la casella di controllo non è selezionata, la colonna viene ordinata in ordine crescente.
 
-1. Fate clic sulla scheda Salva.
-1. (Facoltativo) Se create un nuovo modello di ricerca, assegnategli un nome univoco. Se non specificate un nome univoco, potete sovrascrivere un modello esistente.
-1. Fate clic sul pulsante Salva.
+1. Fai clic sulla scheda Salva .
+1. (Facoltativo) Se crei un nuovo modello di ricerca, assegnagli un nome univoco. Se non si specifica un nome univoco, è possibile sovrascrivere un modello esistente.
+1. Fai clic sul pulsante Salva .
 
 ## Eliminare un modello di ricerca {#delete-a-search-template}
 
-1. Nella scheda Identificazione, selezionate un nome dall’elenco Nome modello di ricerca.
-1. Fate clic su Elimina questo modello e su OK.
-
+1. Nella scheda Identificazione , seleziona un nome dall’elenco Nome modello di ricerca.
+1. Fare clic su Elimina modello e quindi su OK.

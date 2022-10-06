@@ -1,8 +1,8 @@
 ---
 title: Teaser e strategie
-seo-title: Teaser e strategie
+seo-title: Teasers and Strategies
 description: Per le campagne vengono spesso utilizzati i teaser per veicolare uno specifico segmento di visitatori verso contenuti che corrispondono ai loro interessi. Per una specifica campagna è possibile definire uno o più teaser.
-seo-description: Per le campagne vengono spesso utilizzati i teaser per veicolare uno specifico segmento di visitatori verso contenuti che corrispondono ai loro interessi. Per una specifica campagna è possibile definire uno o più teaser.
+seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1200'
 ht-degree: 89%
 
 ---
-
 
 # Teaser e strategie{#teasers-and-strategies}
 
@@ -27,27 +26,27 @@ Per le campagne vengono spesso utilizzati i teaser per veicolare uno specifico s
 >
 >Il componente Teaser è diventato obsoleto in AEM 6.2. Al suo posto, utilizza il [componente Target](/help/sites-authoring/content-targeting-touch.md).
 
-* **Le** pagine dei marchi sono memorizzate nella sezione Campagne del sito Web. Un marchio contiene le singole campagne.
-* **Le** pagine delle campagne sono memorizzate nella sezione Campagne del sito Web. Ciascuna campagna ha una singola pagina, nella quale vengono memorizzate le definizioni dei teaser. La pagina contenitore, o di panoramica, contiene alcune informazioni e dati statistici sulle singole pagine teaser.
+* **Pagine dei marchi** sono memorizzate nella sezione Campagne del sito web. Un marchio contiene le singole campagne.
+* **Pagine di Campaign** sono memorizzate nella sezione Campagne del sito web. Ciascuna campagna ha una singola pagina, nella quale vengono memorizzate le definizioni dei teaser. La pagina contenitore, o di panoramica, contiene alcune informazioni e dati statistici sulle singole pagine teaser.
 
 I teaser in AEM sono composti di diverse parti:
 
-* **Le** pagine teaser vengono memorizzate nella pagina della campagna appropriata e contengono le definizioni dei paragrafi teaser disponibili per ogni campagna specifica. Tali definizioni sono usate per visualizzare i paragrafi teaser, comprese le varianti dei contenuti, il segmento che determina la selezione di una variante e il fattore di incremento.
-* Il **componente Teaser** è fornito con il prodotto e permette di creare un’istanza del paragrafo teaser in una pagina di contenuto. Per creare un paragrafo teaser, trascina il componente teaser dalla barra laterale, quindi specifica la definizione. **Nota:** il componente Teaser è stato dichiarato obsoleto in AEM 6.2. Utilizzate invece il  [componente ](/help/sites-authoring/content-targeting-touch.md) Target.
+* **Pagine teaser** sono memorizzati nella pagina della campagna appropriata e contengono le definizioni dei paragrafi teaser disponibili per ogni campagna specifica. Tali definizioni sono usate per visualizzare i paragrafi teaser, comprese le varianti dei contenuti, il segmento che determina la selezione di una variante e il fattore di incremento.
+* Il **componente Teaser** è fornito con il prodotto e permette di creare un’istanza del paragrafo teaser in una pagina di contenuto. Per creare un paragrafo teaser, trascina il componente teaser dalla barra laterale, quindi specifica la definizione. **Nota:** Il componente Teaser è stato dichiarato obsoleto in AEM 6.2. Utilizza il [Componente Target](/help/sites-authoring/content-targeting-touch.md) invece.
 * I **paragrafi teaser** sono istanze effettive del teaser in una pagina di contenuto. Hanno il ruolo di invitare un segmento di utenti a visitare contenuti particolari, in base ai loro interessi.
 * Pagine con il contenuto della campagna per un particolare segmento di visitatori. I paragrafi teaser invitano gli utenti a visitare queste pagine.
 
 ## Strategie {#strategies}
 
-Quando si aggiunge un paragrafo teaser a una pagina è necessario definire la **Strategia**.
+Quando si aggiunge un paragrafo teaser a una pagina, è necessario definire la **Strategia**.
 
 Questo parametro serve qualora siano disponibili per la selezione più teaser in seguito alla risoluzione di tutti i segmenti ad essi associati. Con la **Strategia** viene quindi specificato un ulteriore criterio per selezionare il teaser da mostrare:
 
 * **Punteggio clickstream**: si basa sui tag e sugli hit di tag correlati presenti nel ClientContext del visitatore (mostra la frequenza con cui il visitatore ha fatto clic su pagine contenenti il relativo tag). Vengono confrontate le frequenze dei tag definiti nella pagina teaser.
-* **Casuale**, per selezione &quot;casuale&quot;; utilizza il fattore casuale generato per una pagina, visibile con il contesto [ ](/help/sites-administering/client-context.md)client.
-* **Innanzitutto,** nell&#39;elenco dei segmenti risolti. L’ordine corrisponde a quello dei teaser nella pagina contenitore della campagna.
+* **Casuale**, per una selezione &quot;casuale&quot;; utilizza il fattore casuale generato per una pagina, visibile con [contesto client](/help/sites-administering/client-context.md).
+* **Primo** nell’elenco dei segmenti risolti. L’ordine corrisponde a quello dei teaser nella pagina contenitore della campagna.
 
-Anche il fattore di incremento [Fattore di incremento](/help/sites-administering/campaign-segmentation.md#boost-factor) del segmento ha un impatto sulla selezione. Si tratta di un fattore di rilevanza aggiunto a una definizione di segmento per aumentare o ridurre la probabilità che venga selezionato.
+La [Fattore di incremento](/help/sites-administering/campaign-segmentation.md#boost-factor) del segmento ha anche un impatto sulla selezione. Si tratta di un fattore di rilevanza aggiunto a una definizione di segmento per aumentare o ridurre la probabilità che venga selezionato.
 
 È più facile illustrare il processo e le interrelazioni dei vari criteri di selezione tramite un esempio (utile anche per verificare che i teaser creati vengano visualizzati dal pubblico richiesto).
 
@@ -67,7 +66,7 @@ Considerate inoltre le seguenti definizioni di teaser:
 <table>
  <tbody>
   <tr>
-   <td>Campagna</td>
+   <td>Campaign</td>
    <td>Teaser</td>
    <td>Segmenti assegnati</td>
    <td>Tag assegnati </td>
@@ -113,7 +112,7 @@ Considerate inoltre le seguenti definizioni di teaser:
 
 Se si applica questo a un visitatore con le seguenti caratteristiche:
 
-* **S1**,  **S2** e  **S6** vengono risolti correttamente
+* **S1**, **S2** e **S6** risolvere
 
 * Il tag **marketing** ha 3 hit
 * Il tag **business** ha 6 hit
@@ -129,7 +128,7 @@ calcolati prima di applicare la strategia appropriata:
 <table>
  <tbody>
   <tr>
-   <td>Campagna</td>
+   <td>Campaign</td>
    <td>Teaser</td>
    <td>Segmenti assegnati</td>
    <td>Tag </td>
@@ -141,7 +140,7 @@ calcolati prima di applicare la strategia appropriata:
    <td>C1</td>
    <td>T1</td>
    <td>S1, S2</td>
-   <td>Business, Marketing</td>
+   <td>Business, marketing</td>
    <td>Sì</td>
    <td>0</td>
    <td>9</td>

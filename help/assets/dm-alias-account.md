@@ -38,7 +38,7 @@ Vedi anche [Creare una configurazione Dynamic Media nei Cloud Services](/help/as
 
 Per iniziare a configurare un account alias società Dynamic Media, invia prima un caso di assistenza. Questo passaggio è obbligatorio.
 
-1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    * Il nome dell&#39;alias della società Dynamic Media che si desidera utilizzare. Il nome deve contenere *only* lettere (è consentita la combinazione di maiuscole e minuscole), numeri, trattini e caratteri di sottolineatura.

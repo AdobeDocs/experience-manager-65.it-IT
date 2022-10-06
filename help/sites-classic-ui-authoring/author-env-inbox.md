@@ -1,8 +1,8 @@
 ---
-title: 'Casella in entrata  '
-seo-title: 'Casella in entrata  '
+title: Casella in entrata
+seo-title: Your Inbox
 description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
-seo-description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,25 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 94%
+source-wordcount: '581'
+ht-degree: 93%
 
 ---
 
-
-# Casella in entrata  {#your-inbox}
+# Casella in entrata{#your-inbox}
 
 Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 
 Tali notifiche vengono recapitate in due caselle in entrata, a seconda del tipo di notifica:
 
 * Una casella in entrata per le notifiche ricevute in seguito alla sottoscrizione di un abbonamento, descritta nella sezione successiva.
-* Una casella in entrata specializzata per gli elementi del flusso di lavoro è descritta nel documento [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
+* Una casella in entrata specializzata per gli elementi del flusso di lavoro è descritta in [Partecipazione ai flussi di lavoro](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
 
-## Viewing Your Notifications {#viewing-your-notifications}
+## Visualizzazione delle notifiche {#viewing-your-notifications}
 
 Per visualizzare le notifiche:
 
@@ -93,7 +92,7 @@ Quando una pagina viene eliminata o spostata, l’azione di eliminazione viene r
 1. Specificate i percorsi delle pagine per cui desiderate ricevere le notifiche:
 
    * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
-   * Fare clic sulla cella **Percorso** della tabella e immettere il percorso, ad esempio `/content/docs`.
+   * Fai clic sul pulsante **Percorso** e inserire il percorso, ad esempio `/content/docs`.
 
    * Per ricevere le notifiche per tutte le pagine appartenenti al sottoalbero, imposta **Esatto?** su **No**.
 Per ricevere le notifiche solo per la pagina definita dal percorso, impostate **Esatto?** su **Sì**.

@@ -1,22 +1,21 @@
 ---
 title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
-seo-title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
+seo-title: Previewing Pages Using ContextHub Data
 description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
-seo-description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
+seo-description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
 uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 94%
+source-wordcount: '365'
+ht-degree: 96%
 
 ---
-
 
 # Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub{#previewing-pages-using-contexthub-data}
 
@@ -49,9 +48,9 @@ La barra degli strumenti di ContextHub è disponibile nella modalità di antepri
 
 Ogni modulo di interfaccia utente fornisce un diverso insieme di funzioni, ma i seguenti tipi di funzioni sono comuni. Poiché i moduli di interfaccia utente sono estensibili, lo sviluppatore può implementare altre funzioni, a seconda delle necessità.
 
-### Contenuto della barra degli strumenti  {#toolbar-content}
+### Contenuto della barra degli strumenti {#toolbar-content}
 
-I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli dell’interfaccia utente utilizzano un’icona e un titolo per identificarsi.
+I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi. 
 
 ![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 
@@ -65,9 +64,8 @@ Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando 
 
 La finestra a comparsa di un modulo può includere elementi modulo che ti consentono di modificare i dati nell’archivio di ContextHub. Se il contenuto della pagina viene determinato dai dati archiviati, puoi utilizzare il modulo e visualizzare le modifiche apportate al contenuto della pagina.
 
-### Modalità a schermo intero  {#fullscreen-mode}
+### Modalità a schermo intero {#fullscreen-mode}
 
 Le finestre a comparsa possono includere un’icona su cui fare clic o toccare per espandere il contenuto a comparsa fino a coprire l’intera finestra del browser o schermata.
 
 ![](do-not-localize/chlimage_1-18.png)
-

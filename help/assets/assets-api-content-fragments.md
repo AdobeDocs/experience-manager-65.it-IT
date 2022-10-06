@@ -239,7 +239,7 @@ Attualmente i modelli che definiscono la struttura di un frammento di contenuto 
 
 Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
 
-#### Contenuto associato {#associated-content}
+#### Contenuto associato  {#associated-content}
 
 Il contenuto associato non è attualmente esposto.
 

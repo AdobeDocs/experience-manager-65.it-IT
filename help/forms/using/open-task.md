@@ -1,50 +1,49 @@
 ---
-title: Apertura di un'attività
-seo-title: Apertura di un'attività
-description: Passaggi per aprire un’attività nell’app  AEM Forms.
-seo-description: Passaggi per aprire un’attività nell’app  AEM Forms.
+title: Apertura di un’attività
+seo-title: Opening a task
+description: Passaggi per aprire un’attività sull’app AEM Forms.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
+# Apertura di un’attività {#opening-a-task}
 
-# Apertura di un&#39;attività {#opening-a-task}
+Se l’app AEM Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività assegnate a te. Le attività sono passaggi nel flusso di lavoro definito in workbench o nell’editor del flusso di lavoro AEM.
 
-Se l&#39;app AEM Forms  si sincronizza con un server AEM Forms , potete lavorare con le attività assegnate. Le attività sono passi nel flusso di lavoro definito in workbench o nell&#39;editor del flusso di lavoro AEM.
+Gli altri moduli vengono salvati come bozza nella scheda Bozze . Vedi [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+**Per aprire un’attività**
 
-**Per aprire un&#39;attività**
+1. Toccare l’attività nell’elenco delle attività.
 
-1. Toccare l&#39;attività nell&#39;elenco delle attività.
+   Quando si seleziona un’attività, sotto il nome dell’attività viene visualizzata la descrizione dell’attività, come impostata in Workbench. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’attività.
 
-   Quando si seleziona un&#39;attività, sotto il nome dell&#39;attività viene visualizzata la descrizione dell&#39;attività, come impostato in Workbench. Dopo la descrizione, viene visualizzata l&#39;azione/le azioni dell&#39;utente associate all&#39;attività.
+   * Se a un’attività sono associate azioni, toccando i puntini di sospensione orizzontali accanto all’attività nella schermata iniziale vengono visualizzate le azioni disponibili.
+   * Se la finestra di progettazione del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
 
-   * Se a un&#39;attività sono associate azioni, toccando i puntini di sospensione orizzontali accanto all&#39;attività nella schermata iniziale vengono visualizzate le azioni.
-   * Se il progettista del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
+1. Toccare l’attività per aprirla.
 
-1. Toccate l&#39;attività per aprirla.
-
-   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo di Workbench.
+   Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo Workbench.
 
 **Per aprire un&#39;applicazione**
 
-1. Toccate l&#39;applicazione **application** nella scheda **Forms**.
+1. Tocca **applicazione** in **Forms** scheda .
 
-   Quando selezionate un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione, vengono visualizzate le azioni/azioni dell&#39;utente associate all&#39;applicazione.
+   Quando si seleziona un&#39;applicazione, sotto il nome dell&#39;applicazione viene visualizzata la descrizione dell&#39;applicazione. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’applicazione.
 
    * Se a un&#39;applicazione sono associate azioni, toccando i puntini di sospensione orizzontali accanto all&#39;applicazione nella schermata iniziale vengono visualizzate le azioni.
-   * Se il modello di workflow dell&#39;applicazione non associa alcuna azione all&#39;applicazione, viene visualizzata l&#39;azione predefinita associata all&#39;applicazione.
+   * Se il modello di flusso di lavoro dell&#39;applicazione non associa alcuna azione all&#39;applicazione, viene visualizzata l&#39;azione predefinita associata all&#39;applicazione.
 
-1. Toccate l&#39;attività per aprirla.
+1. Toccare l’attività per aprirla.
 
-   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
+   Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.

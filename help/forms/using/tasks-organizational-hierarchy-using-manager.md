@@ -1,8 +1,8 @@
 ---
-title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager
-seo-title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager
-description: In che modo i manager e gli amministratori dell'organizzazione possono accedere e lavorare alle attività dei propri rapporti diretti e indiretti nella scheda Da fare dell'area di lavoro  AEM Forms.
-seo-description: In che modo i manager e gli amministratori dell'organizzazione possono accedere e lavorare alle attività dei propri rapporti diretti e indiretti nella scheda Da fare dell'area di lavoro  AEM Forms.
+title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Gestione
+seo-title: Managing tasks in an organizational hierarchy using Manager View
+description: Modalità di accesso e di lavoro dei manager e dei responsabili dell’organizzazione ai rapporti diretti e indiretti nella scheda Da fare dell’area di lavoro di AEM Forms.
+seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
@@ -10,31 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
+# Gestione delle attività in una gerarchia organizzativa utilizzando la vista Gestione{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-# Gestione delle attività in una gerarchia organizzativa utilizzando la vista Manager{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+Nell’area di lavoro di AEM Forms, i responsabili possono ora accedere alle attività assegnate a qualsiasi persona nella propria gerarchia, ovvero ai rapporti diretti o indiretti, ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Da eseguire nell’area di lavoro di AEM Forms. Le azioni supportate sulle attività dei rapporti diretti sono:
 
-&#39;area di lavoro di AEM Forms, i manager possono ora accedere alle attività assegnate a chiunque all&#39;interno della propria gerarchia, sia direttamente che indirettamente, ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Operazioni nell&#39;area di lavoro di  AEM Forms. Le azioni supportate per le attività dei rapporti diretti sono:
+**Avanti** Inoltrare un&#39;attività dal rapporto diretto a qualsiasi utente.
 
-**** Inoltra: consente di inoltrare un&#39;attività dal rapporto diretto a qualsiasi utente.
+**Richiesta** Rivendicare un’attività di un rapporto diretto.
 
-**** ClaimClaim un&#39;attività di un report diretto.
+**Richiesta e apertura** Richiedere l&#39;attività di un rapporto diretto e aprirlo automaticamente nell&#39;elenco To-do del manager.
 
-**Reclami e** OpenClaim un&#39;attività di un rapporto diretto e lo apra automaticamente nell&#39;elenco A-do del manager.
+**Rifiuta** Rifiuta un&#39;attività inoltrata a un report diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un rapporto diretto.
 
-**Rifiuta:** rifiuta un&#39;attività inoltrata a un rapporto diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un rapporto diretto.
+AEM Forms limita l&#39;accesso degli utenti solo alle attività per le quali l&#39;utente ha il controllo degli accessi (ACL). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l’utente dispone delle autorizzazioni di accesso. Utilizzando servizi web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
 
- AEM Forms limita l&#39;accesso di un utente solo alle attività per le quali l&#39;utente dispone del controllo di accesso (ACL). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l&#39;utente dispone delle autorizzazioni di accesso. Utilizzando servizi Web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
-
-1. Creare un DSC. Per ulteriori informazioni, consultate l&#39;argomento &quot;Sviluppo di componenti per AEM Forms&quot; nella guida [Programmazione con  AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
-1. Nel DSC, definite un nuovo SPI per la gestione gerarchica per definire rapporti diretti e la gerarchia all&#39;interno degli utenti AEM Forms . Segue un esempio di snippet di codice Java™.
+1. Crea un DSC. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
+1. Nel DSC, definisci un nuovo SPI per la gestione della gerarchia per definire rapporti diretti e la gerarchia all’interno degli utenti AEM Forms. Di seguito è riportato un esempio di frammento di codice Java™.
 
    ```java
    public class MyHierarchyMgmtService
@@ -69,7 +68,7 @@ ht-degree: 0%
    }
    ```
 
-1. Create un file component.xml. Assicurarsi che spec-id sia uguale a quanto mostrato nello snippet di codice riportato di seguito. Segue un frammento di codice di esempio che è possibile riadattare.
+1. Crea un file component.xml. Assicurati che spec-id sia lo stesso mostrato nello snippet di codice sottostante. Di seguito è riportato un frammento di codice di esempio che è possibile riutilizzare.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -113,11 +112,11 @@ ht-degree: 0%
    </component>
    ```
 
-1. Implementare DSC tramite Workbench. Riavviate il servizio `ProcessManagementTeamTasksService`.
+1. Distribuire DSC tramite Workbench. Riavvia `ProcessManagementTeamTasksService` servizio.
 1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere nuovamente con l&#39;utente.
 
 La schermata seguente illustra l’accesso alle attività dei rapporti diretti e alle azioni disponibili.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 
-Accesso alle attività dei rapporti diretti e azione sulle attività
+Accesso ai compiti dei rapporti diretti e azione sui compiti

@@ -1,26 +1,25 @@
 ---
 title: Limitazioni per l’editor
-seo-title: Limitazioni per l’editor
-description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell'utilizzo dell'editor che per gli sviluppatori.
-seo-description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell'utilizzo dell'editor che per gli sviluppatori.
+seo-title: Editor Limitations
+description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori.
+seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
-translation-type: tm+mt
-source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 0%
+source-wordcount: '316'
+ht-degree: 10%
 
 ---
 
+# Limitazioni per l’editor{#editor-limitations}
 
-# Limitazioni per l&#39;editor{#editor-limitations}
-
-L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell&#39;utilizzo dell&#39;editor che per gli sviluppatori. In questa pagina vengono riepilogati questi limiti e vengono fornite soluzioni o soluzioni alternative, laddove possibile.
+L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori. Questa pagina riepiloga queste limitazioni e fornisce soluzioni o soluzioni alternative, ove possibile.
 
 ## Limitazioni funzionali {#functional-limitations}
 
@@ -28,39 +27,39 @@ Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l�
 
 ### Collegamenti non attivi {#links-not-active}
 
-Durante la [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
+Quando [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
 
-* [Passate a  **** ](/help/sites-authoring/editing-content.md#preview-mode) Anteprima per navigare utilizzando i collegamenti presenti nel contenuto.
+* [Passa a **Anteprima** modalità](/help/sites-authoring/editing-content.md#preview-mode) per spostarsi utilizzando i collegamenti presenti nel contenuto.
 
 ### Pagine struttura {#structure-pages}
 
-Le pagine non possono essere denominate `structure`. Le pagine denominate `structure` non saranno modificabili nell&#39;editor pagina.
+Le pagine non possono essere denominate `structure`. Pagine denominate `structure` non sarà modificabile nell’editor pagina.
 
 ## Limitazioni CSS {#css-limitations}
 
-Uno sviluppatore può incontrare le seguenti limitazioni con le interazioni dell&#39;editor con CSS.
+Uno sviluppatore può incontrare le seguenti limitazioni con le interazioni dell’editor con i CSS.
 
 ### Elementi posizionati in modo assoluto {#absolutely-positioned-elements}
 
 Gli elementi posizionati in modo assoluto possono causare problemi nella posizione della sovrapposizione.
 
-* In questo caso, accertatevi che le dimensioni dell’elemento con posizione assoluta siano corrette perché l’editor creerà una sovrapposizione con le stesse dimensioni.
+* In questo caso, accertati che le dimensioni dell’elemento con posizione assoluta siano corrette perché l’editor creerà una sovrapposizione con le stesse dimensioni.
 
-### unità VH {#vh-units}
+### unità vh {#vh-units}
 
-`vh` le unità non sono supportate perché l&#39;altezza iframe deve essere regolata automaticamente da AEM.
+`vh` le unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente da AEM.
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 
-Le immagini di sfondo fisse potrebbero non essere visualizzate come fisse durante lo scorrimento a causa del fatto che sono incorporate all&#39;interno di un iframe.
+Le immagini di sfondo fisse potrebbero non essere visualizzate come fisse durante lo scorrimento a causa del fatto che sono incorporate in un iframe.
 
-* Se si seleziona **Visualizza pagina come pubblicata** nelle azioni della barra di intestazione, la pagina viene visualizzata correttamente.
+* Selezione **Visualizza pagina come pubblicata** nella barra dell’intestazione le azioni visualizzano la pagina correttamente.
 
 ### Altezza 100% {#height}
 
-Altezza 100% non supportata nell&#39;elemento body di una pagina.
+L’altezza del 100% non è supportata nell’elemento corpo di una pagina.
 
-* È possibile una soluzione alternativa per implementare un corpo a schermo intero &quot;allungando&quot; l&#39;elemento body come segue:
+* È possibile una soluzione alternativa per implementare un corpo a schermo intero &quot;allungando&quot; l&#39;elemento corpo come segue:
 
 ```xml
 body {
@@ -72,11 +71,11 @@ body {
 }
 ```
 
-### Margine di riduzione {#margin-collapsing}
+### Riduzione dei margini {#margin-collapsing}
 
-I problemi di riduzione del margine possono essere visti se il primo elemento figlio dell&#39;elemento body ha un margine.
+I problemi di compressione del margine possono essere visti se il primo elemento figlio dell&#39;elemento corpo ha un margine.
 
-* La soluzione consiste nell&#39;aggiungere una correzione a livello dell&#39;elemento body, come segue:
+* La soluzione è quella di aggiungere un clearfix a livello di elemento corpo, come segue:
 
 ```xml
 body:before, body:after{
@@ -84,4 +83,3 @@ body:before, body:after{
     display: table;
 }
 ```
-

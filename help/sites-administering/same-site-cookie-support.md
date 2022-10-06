@@ -6,7 +6,7 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -20,13 +20,13 @@ Per aggirare questo problema, è necessario impostare il `SameSite` attributo co
 
 >[!CAUTION]
 >
->La `SameSite=None` viene applicata solo se il protocollo è protetto (HTTPS).
+>L’impostazione `SameSite=None` viene applicata solo se il protocollo è protetto (HTTPS).
 >
->Se il protocollo non è protetto (HTTP), l&#39;impostazione viene ignorata e il server visualizza questo messaggio WARN:
+>Se il protocollo non è protetto (HTTP), l’impostazione viene ignorata e il server persenta questo messaggio di avvertenza:
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-Puoi aggiungere l’impostazione seguendo i passaggi seguenti:
+Per aggiungere l’impostazione, segui questi passaggi:
 
 1. Passa alla console Web all’indirizzo `http://serveraddress:serverport/system/console/configMgr`
 1. Cerca e fai clic sull’**handler di autenticazione token di Adobe Granite**

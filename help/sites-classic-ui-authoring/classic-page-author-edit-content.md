@@ -1,8 +1,8 @@
 ---
 title: Modifica del contenuto di una pagina
-seo-title: Modifica del contenuto di una pagina
+seo-title: Editing Page Content
 description: Per aggiungere i contenuti, si trascinano sulla pagina specifici componenti che possono quindi essere modificati, spostati o eliminati.
-seo-description: Per aggiungere i contenuti, si trascinano sulla pagina specifici componenti che possono quindi essere modificati, spostati o eliminati.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1755'
 ht-degree: 98%
 
 ---
-
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
@@ -40,7 +39,7 @@ Sono disponibili diverse schede e icone, tra cui:
 * Componenti
 * Pagina
 * Informazioni
-* Gestione versioni
+* Controllo delle versioni
 * Flusso di lavoro
 * Modalità
 * Scaffolding
@@ -61,7 +60,7 @@ Queste consentono di accedere a numerose funzionalità, tra cui:
 
 * [modifica delle proprietà di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [impalcatura](/help/sites-authoring/scaffolding.md)
 
 * [ClientContext](/help/sites-administering/client-context.md)
 
@@ -88,7 +87,7 @@ Per inserire un nuovo componente:
 
 1. Inserisci nella pagina il componente desiderato. Quindi fai doppio clic sul paragrafo. Viene visualizzata una finestra che consente di configurare il paragrafo e aggiungere il contenuto.
 
-### Inserimento di un componente tramite Content Finder  {#inserting-a-component-using-the-content-finder}
+### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
 
 Per aggiungere un nuovo componente alla pagina, puoi anche trascinare una risorsa da [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo, si crea automaticamente un nuovo componente di tipo appropriato, che contiene la risorsa.
 
@@ -115,7 +114,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 1. Se necessario, [modifica](#editmovecopypastedelete) il componente.
 
-## Modifica di un componente (contenuto e proprietà)  {#editing-a-component-content-and-properties}
+## Modifica di un componente (contenuto e proprietà) {#editing-a-component-content-and-properties}
 
 Per modificare un paragrafo esistente, è possibile effettuare una delle seguenti operazioni:
 
@@ -206,7 +205,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Le [annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consentono agli autori di fornire feedback sui contenuti. Spesso vengono utilizzate a scopo di revisione e convalida.
 
-## Anteprima delle pagine    {#previewing-pages}
+## Anteprima delle pagine   {#previewing-pages}
 
 Lungo il lato inferiore della barra laterale sono disponibili due icone importanti per visualizzare le pagine in anteprima:
 
@@ -228,7 +227,7 @@ Lungo il lato inferiore della barra laterale sono disponibili due icone importan
 
 Per modificare più occorrenze di una stessa parola o frase, l’opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa in una sezione del sito Web.
 
-## Blocco di una pagina {#locking-a-page}
+## Blocco di una pagina   {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
 
@@ -288,9 +287,7 @@ Il comportamento dei comandi di annullamento e ripristino è simile a quello del
 >* Le azioni annullate possono essere ripristinate solo se dopo l’annullamento non sono state apportate altre modifiche alla pagina.
 >* Per impostazione predefinita, è possibile annullare fino a 20 azioni di modifica.
 >* Puoi eseguire le operazioni Annulla e Ripristina anche con le relative [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
 
 
 I comandi Annulla e Ripristina possono essere utilizzati per i seguenti tipi di modifiche:
@@ -298,7 +295,7 @@ I comandi Annulla e Ripristina possono essere utilizzati per i seguenti tipi di 
 * Aggiunta, modifica, rimozione e spostamento di paragrafi
 * Modifica locale del contenuto dei paragrafi
 * Operazioni Copia, Taglia e Incolla per elementi all’interno di una pagina
-* Operazioni Copia, Taglia e Incolla per elementi tra pagine diverse
+* Copiare, tagliare e incollare elementi tra pagine diverse
 * Aggiunta, rimozione e modifica di file e immagini
 * Aggiunta, rimozione e modifica di annotazioni e schizzi
 * Modifiche alla pagina di scaffolding

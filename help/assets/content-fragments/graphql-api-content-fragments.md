@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
 workflow-type: tm+mt
 source-wordcount: '3986'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -435,7 +435,7 @@ Vedi [Query di esempio: tutte le città con una variante denominata](/help/asset
 
 >[!NOTE]
 >
->Se la variante specificata non esiste per un frammento di contenuto, la variante principale verrà restituita come impostazione predefinita (fallback).
+>Se per un frammento di contenuto non esiste la variante determinata, la variante principale verrà restituita come impostazione predefinita (fallback).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -570,7 +570,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
          >[!NOTE]
          >
-         >Se la variante specificata non esiste per un frammento di contenuto, la variante principale verrà restituita come impostazione predefinita (fallback).
+         >Se per un frammento di contenuto non esiste la variante determinata, la variante principale verrà restituita come impostazione predefinita (fallback).
 
          * Vedi [Query di esempio: tutte le città con una variante denominata](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
    * E operazioni:

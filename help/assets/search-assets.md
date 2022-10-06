@@ -176,7 +176,7 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Ora di attivazione | ontime:YYYY-MM-DDTHH |
 | Ora di disattivazione | tempo libero:AAAA-MM-DDTHH |
 | Intervallo di tempo (dateontime di scadenza, offtime) | campo facet : in basso..superiore |
-| Percorso | /content/dam/&lt;folder name=&quot;&quot;> |
+| Percorso  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Titolo PDF | pdftitle:&quot;Documento di Adobe&quot; |
 | Oggetto | oggetto: &quot;Formazione&quot; |
 | Tag | tags:&quot;Località E Viaggi&quot; |

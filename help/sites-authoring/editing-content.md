@@ -1,8 +1,8 @@
 ---
 title: Modifica del contenuto di una pagina
-seo-title: Modifica del contenuto di una pagina
+seo-title: Editing Page Content
 description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
-seo-description: Una volta creata la pagina, è possibile modificarla per aggiornarne i contenuti
+seo-description: Once your page is created you can edit the content to make the updates you require
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 94%
+source-wordcount: '3045'
+ht-degree: 93%
 
 ---
-
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
@@ -89,7 +88,7 @@ La barra degli strumenti offre l&#39;accesso a numerose opzioni. A seconda del c
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
-* **Annota**
+* **Annotazioni**
 
    Consente di aggiungere [annotazioni](/help/sites-authoring/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona viene sostituita da un numero che indica quante annotazioni sono presenti sulla pagina.
 
@@ -107,9 +106,9 @@ Se una pagina fa parte di uno o più [flussi di lavoro](/help/sites-authoring/wo
 
 La notifica riporta il flusso di lavoro in esecuzione sulla pagina. Se l’utente è coinvolto nella fase attuale del flusso di lavoro, sono anche disponibili opzioni per [modificare lo stato del flusso di lavoro](/help/sites-authoring/workflows-participating.md) e ottenere ulteriori informazioni sul flusso di lavoro. Per esempio:
 
-* **Completa**  - Apre la finestra di dialogo  **Completa** workitemdialog
+* **Completa** - Apre la **Elemento di lavoro completo** dialogo
 
-* **Delega**  - Apre la finestra di dialogo  **Completa** workitemdialog
+* **Delega** - Apre la **Elemento di lavoro completo** dialogo
 
 * **Visualizza dettagli**: apre la finestra **Dettagli** del flusso di lavoro
 
@@ -166,7 +165,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 1. Il componente selezionato verrà aggiunto in fondo alla pagina. [Modifica](#editmovecopypastedelete) il componente come preferisci.
 
-### Inserimento di un componente utilizzando il browser Risorse    {#inserting-a-component-using-the-assets-browser}
+### Inserimento di un componente utilizzando il browser Risorse   {#inserting-a-component-using-the-assets-browser}
 
 È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
 
@@ -195,8 +194,8 @@ Questo vale per i seguenti tipi di risorse (alcune dipenderanno dal sistema dell
    <td>Flash</td>
   </tr>
   <tr>
-   <td>Frammento di contenuto</td>
-   <td>Frammento di contenuto<br /> </td>
+   <td>Frammenti di contenuto</td>
+   <td>Frammenti di contenuto<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -223,7 +222,7 @@ Se sfogliando le risorse disponibili scopri che è necessario eseguire una rapid
 
 ![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
 
-## Modifica/Configura/Copia/Copia/Taglia/Elimina/Incolla {#edit-configure-copy-cut-delete-paste}
+## Modificare/configurare/copiare/tagliare/eliminare/incollare {#edit-configure-copy-cut-delete-paste}
 
 Selezionando un componente si aprirà la barra degli strumenti, che consente di accedere alle azioni disponibili per tale componente.
 
@@ -255,7 +254,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
    ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
-* **Elimina**
+* **Eliminare**
 
    Questo comando elimina il componente dalla pagina, previa conferma.
 
@@ -312,7 +311,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 * Apri la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * Per aggiungere direttamente contenuti [trascina una risorsa](#draganddropintocomponent) dal browser risorse.
 
-### Finestra di dialogo di modifica del componente    {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
 
 Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
 
@@ -353,9 +352,9 @@ Per tipi di componenti specifici è possibile trascinare risorse dal browser ris
 | Documento | Scarica |
 | Prodotto | Prodotto |
 | Video | Flash |
-| Frammento di contenuto | Frammento di contenuto |
+| Frammenti di contenuto | Frammenti di contenuto |
 
-## Modifica (contenuto) - Modalità a schermo intero  {#edit-content-full-screen-mode}
+## Modifica (contenuto) - Modalità a schermo intero {#edit-content-full-screen-mode}
 
 Per tutti i componenti è possibile accedere alla (e uscire dalla) modalità a tutto tramite:
 
@@ -412,7 +411,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 >[!NOTE]
 >
->L’azione Layout è limitata al componente selezionato. Ad esempio, se state modificando il layout di un componente e fate clic su un altro componente, viene visualizzata la barra degli strumenti di modifica standard (non la barra degli strumenti del layout) per il componente appena selezionato e le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore vengono nascosti.
+>L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore vengono nascosti.
 >
 >Se devi modificare il layout globale della pagina, interessando più componenti, passa alla [modalità di layout](/help/sites-authoring/responsive-layout.md).
 
@@ -454,11 +453,11 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Se la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates), puoi facilmente passare [all’editor modelli](/help/sites-authoring/templates.md#editing-templates-template-authors) selezionando **Modifica modello** nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates), è possibile passare alla [modalità Progettazione](/help/sites-authoring/default-components-designmode.md) utilizzando il [selettore modalità pagina](/help/sites-authoring/author-environment-tools.md#page-modes) sulla barra degli strumenti per attivare/disattivare i componenti da utilizzare sulla pagina.
+Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates), puoi passare a [Modalità Progettazione](/help/sites-authoring/default-components-designmode.md) utilizzando [selettore della modalità pagina](/help/sites-authoring/author-environment-tools.md#page-modes) sulla barra degli strumenti per abilitare/disabilitare i componenti da utilizzare nella pagina.
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view).
 
-## Stato della Live Copy    {#live-copy-status}
+## Stato della Live Copy   {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di visualizzare una panoramica rapida dello stato della live copy e di quali componenti sono ereditati o no:
 
@@ -473,7 +472,7 @@ Esempio:
 
 Le [Annotazioni](/help/sites-authoring/annotations.md) consentono a revisori e altri autori di fornire un riscontro sui contenuti. Spesso sono utilizzate a scopo di revisione e di convalida.
 
-## Anteprima delle pagine    {#previewing-pages}
+## Anteprima delle pagine   {#previewing-pages}
 
 Esistono due opzioni per visualizzare in anteprima una pagina:
 
@@ -486,9 +485,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 >* In modalità Modifica, i collegamenti nel contenuto sono visibili, ma non sono accessibili.
 >* Per effettuare la navigazione tramite i collegamenti, utilizza una delle opzioni di anteprima.
 >* Utilizza la [scelta rapida da tastiera](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` per passare dall’anteprima all’ultima modalità selezionata.
-
 >
-
 
 
 >[!NOTE]
@@ -511,7 +508,7 @@ Quando si creano contenuti, la modalità di anteprima è disponibile utilizzando
 
 L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information). Permette di aprire la pagina in una nuova scheda, aggiornando il contenuto e visualizzando la pagina esattamente come apparirebbe nell’ambiente di pubblicazione.
 
-## Blocco di una pagina {#locking-a-page}
+## Blocco di una pagina   {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
 
@@ -561,7 +558,7 @@ Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono vi
 
 >[!NOTE]
 >
->Per annullare le azioni di modifica della pagina è inoltre disponibile la [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z`.
+>La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` è inoltre disponibile per annullare le azioni di modifica della pagina.
 >
 >La scelta rapida da tastiera `Ctrl-Y` è disponibile anche per ripristinare le azioni di modifica della pagina.
 
@@ -588,9 +585,7 @@ Il comportamento dei comandi di annullamento e ripristino è simile a quello del
 >* Le azioni annullate possono essere ripristinate solo se dopo l’annullamento non sono state apportate altre modifiche alla pagina.
 >* Per impostazione predefinita, è possibile annullare fino a 20 azioni di modifica.
 >* Puoi eseguire le operazioni Annulla e Ripristina anche con le relative [scelte rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
-
 
 
 I comandi Annulla e Ripristina possono essere utilizzati per i seguenti tipi di modifiche:
@@ -608,4 +603,3 @@ Per i campi modulo generati dai componenti modulo non deve essere specificato al
 >[!NOTE]
 >
 >La cronologia delle modifiche ai file e alle immagini viene conservata per almeno dieci ore. Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può cambiare il tempo predefinito di dieci ore.
-

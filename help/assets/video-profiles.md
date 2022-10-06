@@ -309,7 +309,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Aggiungi]**.
+1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Aggiungi]**.
 1. Effettua una delle operazioni seguenti:
 
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.

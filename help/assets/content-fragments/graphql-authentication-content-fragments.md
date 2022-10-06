@@ -6,7 +6,7 @@ exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 0%
+ht-degree: 61%
 
 ---
 
@@ -16,7 +16,7 @@ Un caso d’uso principale per [API GraphQL di Adobe Experience Manager (AEM) pe
 
 >[!NOTE]
 >
->Per i test e lo sviluppo è inoltre possibile accedere all’API GraphQL AEM direttamente utilizzando l’ [Interfaccia GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interfaccia.
+>Per i test e lo sviluppo è inoltre possibile accedere all’API GraphQL AEM direttamente utilizzando l’ [Interfaccia GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface).
 
 Per l&#39;autenticazione il servizio di terze parti deve autenticarsi, utilizzando il nome utente e la password dell&#39;account AEM.
 

@@ -1,18 +1,18 @@
 ---
 title: Tabelle nei moduli adattivi
-seo-title: Tabelle nei moduli adattivi
+seo-title: Tables in adaptive forms
 description: Il componente Tabella di AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout per dispositivi mobili e di utilizzare componenti per tabelle XDP.
-seo-description: Il componente Tabella di AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout per dispositivi mobili e di utilizzare componenti per tabelle XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Moduli adattivi
+feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '2430'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Per creare una tabella, trascinate il componente Tabella dal browser Componenti 
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 
-Le celle di intestazione sono campi di testo. Per modificare l&#39;etichetta di un&#39;intestazione, fare clic con il pulsante destro del mouse sulla cella di intestazione e fare clic su **Modifica**. Nella finestra di dialogo Modifica, aggiorna l’etichetta nel campo **Valore** e fai clic su **OK**.
+Le celle di intestazione sono campi di testo. Per modificare l’etichetta di un’intestazione, fai clic con il pulsante destro del mouse sulla cella di intestazione e fai clic su **Modifica**. Nella finestra di dialogo Modifica , aggiorna l’etichetta nel **Valore** campo e fai clic su **OK**.
 
 Per impostazione predefinita, le celle corpo sono caselle di testo. È possibile sostituire una cella corpo con qualsiasi altro componente di moduli adattivi disponibile nella barra laterale, ad esempio una casella numerica, un selettore data o un elenco a discesa.
 
@@ -75,7 +75,7 @@ Il menu a discesa della riga fornisce inoltre l’operazione Modifica per modifi
 
 1. Seleziona la tabella e tocca ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare il riepilogo nella scheda Accessibilità.
-1. Fare clic su **Fine**.
+1. Fai clic su **Fine**.
 
 ### Ordinare le colonne in una tabella {#sortcolumnstable}
 
@@ -91,13 +91,13 @@ Per applicare l’ordinamento alle colonne di una tabella, le celle di colonna d
 
 Per abilitare l’ordinamento:
 
-1. Seleziona la tabella e tocca ![configure_icon](assets/configure_icon.png) (Configura). Puoi anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
-1. Selezionare **Abilita ordinamento**.
+1. Seleziona la tabella e tocca ![configure_icon](assets/configure_icon.png) (Configura). È inoltre possibile selezionare la tabella utilizzando **Contenuto** nella barra laterale della comunicazione interattiva.
+1. Seleziona **Abilita ordinamento**.
 1. Tocca ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, le frecce su e giù nelle intestazioni delle colonne indicano che l’ordinamento è stato attivato.
 
    ![Abilita ordinamento](assets/enable_sorting_new.png)
 
-1. Passa alla modalità **Anteprima** per visualizzare l&#39;output. La tabella viene ordinata automaticamente in base alla prima colonna della tabella.
+1. Passa alla **Anteprima** per visualizzare l&#39;output. La tabella viene ordinata automaticamente in base alla prima colonna della tabella.
 1. Fai clic sull’intestazione della colonna per ordinare i valori in base alla colonna.
 
    Un’intestazione di colonna con una freccia su indica che la tabella è ordinata in base a tale colonna. Inoltre, i valori nella colonna vengono visualizzati in ordine crescente.
@@ -106,23 +106,23 @@ Per abilitare l’ordinamento:
 
    Analogamente, un’intestazione di colonna con una freccia giù rappresenta la visualizzazione dei valori della colonna in ordine decrescente.
 
-   È inoltre possibile apportare modifiche alla tabella in modalità **Anteprima** e fare di nuovo clic sull&#39;intestazione della colonna per ordinare i valori della colonna.
+   È inoltre possibile apportare modifiche alla tabella nella **Anteprima** e fai nuovamente clic sull&#39;intestazione della colonna per ordinare i valori della colonna.
 
 ## Impostare la larghezza della colonna per una tabella {#set-column-width}
 
 Esegui i seguenti passaggi per impostare la larghezza della colonna per una tabella:
 
-1. Nella scheda **[!UICONTROL Contenuto]** , tocca il componente **[!UICONTROL Tabella]** e tocca l’icona Configura (![Configura](assets/configure-icon.svg)).
+1. In **[!UICONTROL Contenuto]** tocca **[!UICONTROL Tabella]** e tocca Configura (![Configura](assets/configure-icon.svg))icona.
 
-1. Immettere l&#39;elenco di valori separati da virgole nel campo **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel campo **[!UICONTROL Larghezza colonna]**, si imposta la larghezza delle colonne su 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
+1. Inserisci l’elenco di valori separati da virgole nel **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nel **[!UICONTROL Larghezza colonna]** il campo restituisce come valore di larghezza le colonne 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12 in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la seconda larghezza della colonna come un terzo della larghezza della tabella e 6/12 imposta la terza larghezza della colonna come metà della larghezza della tabella.
 
 ## Configurare lo stile di tabella {#configure}
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Esegui i seguenti passaggi per passare alla modalità stile e modificare lo stile della tabella
 
-1. Nella barra degli strumenti della pagina, prima di Anteprima, tocca ![a discesa canvas](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra degli strumenti della pagina, prima di Anteprima, tocca ![elenco a discesa canvas](assets/canvas-drop-down.png) > **Stile**.
 
-1. Nella barra laterale seleziona la tabella e tocca il pulsante di modifica ![edit-button](assets/edit-button.png).
+1. Nella barra laterale seleziona la tabella e tocca il pulsante di modifica ![pulsante di modifica](assets/edit-button.png).
 Le proprietà di stile vengono visualizzate nella barra laterale.
 
 ![Proprietà di stile di una tabella](assets/style-table.png)
@@ -137,9 +137,9 @@ Le tabelle forniscono supporto predefinito per l’aggiunta o l’eliminazione d
 
 1. Seleziona una riga di tabella e tocca ![cmppr](assets/cmppr.png).
 1. Nella scheda Ripeti impostazioni specificare i conteggi minimo e massimo per limitare il numero di righe nella tabella.
-1. Fare clic su **Fine**.
+1. Fai clic su **Fine**.
 
-In fase di esecuzione, i pulsanti **+** e *-* vengono visualizzati per aggiungere o eliminare una riga.
+In fase di esecuzione, vedrai **+** e *-* per aggiungere o eliminare una riga.
 
 ![add-delete-rows-dinamicamente](assets/add-delete-rows-dynamically.png)
 
@@ -160,14 +160,14 @@ Mentre tabelle e righe supportano solo espressioni di visibilità per controllar
 >
 >Se lo script XFA change/exit viene applicato anche allo stesso campo, lo script XFA change/exit viene eseguito prima dello script Value Commit.
 
-* **Calcola espressioni**: per calcolare automaticamente il valore di un campo.
-* **Espressioni** di convalida: per convalidare un campo.
-* **Espressioni** di accesso: per abilitare/disabilitare un campo.
-* **Espressione** di visibilità: per controllare la visibilità di un campo e di un pannello.
+* **Calcolare espressioni**: per calcolare automaticamente il valore di un campo.
+* **Espressioni di convalida**: per convalidare un campo.
+* **Espressioni di accesso**: per abilitare/disabilitare un campo.
+* **Espressione di visibilità**: per controllare la visibilità di un campo e di un pannello.
 
 L’espressione di visibilità per una tabella o una riga può essere definita nella scheda Proprietà pannello della finestra di dialogo corrispondente del componente Modifica . Le espressioni per una cella possono essere definite nella scheda Script della finestra di dialogo del componente Modifica.
 
-Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Per l’elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layout dei dispositivi mobili {#mobile-layouts}
 
@@ -279,9 +279,9 @@ File XML contenente i dati nel formato seguente:
 </afData>
 ```
 
-Nell’XML di esempio, i dati di una riga sono definiti dai tag `<Row1>` , che è il nome dell’elemento per la riga nella tabella. All’interno del tag `<Row1>` , i dati di ogni cella vengono definiti all’interno del tag relativo al nome dell’elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
+Nell’XML di esempio, i dati di una riga sono definiti dalla variabile `<Row1>` tag, che è il nome dell’elemento per la riga nella tabella. All&#39;interno di `<Row1>` i dati di ogni cella vengono definiti all’interno del tag per il nome dell’elemento, ad esempio `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare il modulo adattivo contenente la tabella al percorso XML assoluto con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in *https://localhost:4502/myForms/bankTransaction.html* e il file XML di dati viene salvato in *C:/myTransactions/bankSummary.xml*, è possibile visualizzare la tabella con i dati al seguente URL:
+Per unire questi dati alla tabella in fase di runtime, è necessario indirizzare il modulo adattivo contenente la tabella al percorso XML assoluto con wcmmode disattivato. Ad esempio, se il modulo adattivo si trova in *https://localhost:4502/myForms/bankTransaction.html* e il file XML di dati viene salvato in *C:/myTransactions/bankSummary.xml*, puoi visualizzare la tabella con i dati al seguente URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

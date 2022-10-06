@@ -221,7 +221,7 @@ Vedi [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
+1. Nell’elenco a discesa Predefinito visualizzatore della finestra di dialogo File multimediali 3D , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 

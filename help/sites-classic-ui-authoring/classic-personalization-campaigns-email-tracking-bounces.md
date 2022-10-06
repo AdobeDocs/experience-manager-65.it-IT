@@ -1,34 +1,33 @@
 ---
 title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
-seo-title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
+seo-title: Tracking Bounced Emails
 description: Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi.
-seo-description: Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 79%
+source-wordcount: '711'
+ht-degree: 78%
 
 ---
-
 
 # Tracciamento dei messaggi e-mail non pervenuti a destinazione{#tracking-bounced-emails}
 
 >[!NOTE]
 >
-> Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate AEM servizio SMTP.
+>L’Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate dal servizio SMTP AEM.
 >
->La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
+>La raccomandazione è di [sfruttare Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
 
 Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi. La frequenza di rimbalzo è impostata su 3 come impostazione predefinita, ma è possibile modificarla.
 
-Per impostare AEM per il tracciamento dei messaggi e-mail non pervenuti a destinazione, è necessario impostare AEM per il polling di una casella postale esistente che riceva i messaggi di rimbalzo (in genere si tratta dell’indirizzo e-mail “Da” specificato per l’invio della newsletter). AEM controlla tale casella in entrata e importa tutti i messaggi e-mail che si trovano nel percorso specificato nella configurazione di polling. Viene quindi attivato un flusso di lavoro per cercare gli indirizzi e-mail rimbalzati all&#39;interno degli utenti e aggiorna di conseguenza il valore della proprietà bounceCounter dell&#39;utente. Una volta raggiunto il limite massimo di rimbalzi, l’utente viene rimosso dalla mailing list della newsletter.
+Per impostare AEM per il tracciamento dei messaggi e-mail non pervenuti a destinazione, è necessario impostare AEM per il polling di una casella postale esistente che riceva i messaggi di rimbalzo (in genere si tratta dell’indirizzo e-mail “Da” specificato per l’invio della newsletter). AEM controlla tale casella in entrata e importa tutti i messaggi e-mail che si trovano nel percorso specificato nella configurazione di polling. Viene quindi attivato un flusso di lavoro per cercare gli indirizzi e-mail rimbalzati all’interno degli utenti e aggiorna di conseguenza il valore della proprietà bounceCounter dell’utente. Una volta raggiunto il limite massimo di rimbalzi, l’utente viene rimosso dalla mailing list della newsletter.
 
 ## Configurazione di Feed Importer {#configuring-the-feed-importer}
 
@@ -66,9 +65,9 @@ Per configurare Feed Importer per il tracciamento dei messaggi e-mail rimbalzati
 
    Consente di impostare i flag da cercare. 
 
-   `imap.flag.SEEN`:Impostate false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
+   `imap.flag.SEEN`:Imposta false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
 
-   Per l&#39;elenco completo dei flag, vedere [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
+   Vedi [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) per l&#39;elenco completo dei flag.
 
    **Esempi IMAP:**
 
@@ -77,15 +76,15 @@ Per configurare Feed Importer per il tracciamento dei messaggi e-mail rimbalzati
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Per utilizzare IMAP su SSL per collegarsi a GMail sulla porta 993 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot; e per ricevere solo i messaggi già letti. |
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Per utilizzare IMAP su SSL per collegarsi a GMail sulla porta 993 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot; e per ricevere i messaggi già letti OPPURE quelli nuovi. |
 
-1. Salvate la configurazione.
+1. Salva la configurazione.
 
-## Configurazione del componente del servizio newsletter  {#configuring-the-newsletter-service-component}
+## Configurazione del componente del servizio newsletter {#configuring-the-newsletter-service-component}
 
 Dopo aver configurato Importazione feed, è necessario configurare l’indirizzo mittente e il contatore per non arrivate a destinazione.
 
 Per configurare il servizio newsletter:
 
-1. Nella console OSGi all&#39;indirizzo `<host>:<port>/system/console/configMgr` e passare a **MCM Newsletter**.
+1. Nella console OSGi in `<host>:<port>/system/console/configMgr` e passa a **Newsletter MCM**.
 
 1. Configurate il servizio e salvate le modifiche.
 

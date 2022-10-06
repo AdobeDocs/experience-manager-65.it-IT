@@ -1,22 +1,21 @@
 ---
 title: Utilizzo di espressioni SOM nei moduli adattivi
-seo-title: Utilizzo di espressioni SOM nei moduli adattivi
+seo-title: Using SOM expressions in adaptive forms
 description: Scopri come estrarre le espressioni SOM di un pannello di un modulo adattivo.
-seo-description: Scopri come estrarre le espressioni SOM di un pannello di un modulo adattivo.
+seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di espressioni SOM nei moduli adattivi{#using-som-expressions-in-adaptive-forms}
 
@@ -24,13 +23,13 @@ I moduli adattivi sono modellati come pagina AEM rappresentata come struttura di
 
 È possibile utilizzare un modello di oggetto script (SOM) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello di oggetto documento (DOM). Un DOM organizza gli oggetti e le proprietà di memoria in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegno ed elementi.
 
-Nell’immagine seguente viene illustrata una struttura di nodo a cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, puoi aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L’espressione SOM per il campo pulsante di scelta nel modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
+Nell’immagine seguente viene illustrata una struttura di nodo a cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, puoi aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L’espressione SOM per il campo pulsante di scelta in un modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
 ![Struttura DOM](assets/hierarchy.png)
 
 Struttura DOM
 
-Un&#39;espressione SOM per qualsiasi elemento in un modulo adattivo è preceduta da `guide[0].guide1[0]`. La posizione di un componente nella gerarchia della struttura del nodo viene utilizzata per derivare la relativa espressione SOM.
+Un&#39;espressione SOM per qualsiasi elemento in un modulo adattivo ha il prefisso `guide[0].guide1[0]`. La posizione di un componente nella gerarchia della struttura del nodo viene utilizzata per derivare la relativa espressione SOM.
 
 ![Struttura DOM con due pulsanti di scelta](assets/hierarchy_radio_button.png)
 
@@ -48,4 +47,4 @@ All’interno dei pannelli, potete accedere alla funzione dalla barra degli stru
 
 Estrazione di espressioni SOM tramite la barra degli strumenti del pannello
 
-Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per attivare un particolare campo in un modulo adattivo, passa l’espressione SOM corrispondente all’ `getFocus`API in `guideBridge`.
+Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) utilizza l’espressione SOM di un elemento. Ad esempio, per attivare un particolare campo in un modulo adattivo, passa l’espressione SOM corrispondente al `getFocus`API in `guideBridge`.

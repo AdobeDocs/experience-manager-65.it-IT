@@ -1,10 +1,11 @@
 ---
 title: AEM Percorso di authoring dei contenuti headless
 description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager e alle modalità di creazione dei contenuti per il progetto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -77,6 +78,6 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
 * AEM Percorso di sviluppatori headless
    * [Scopri lo sviluppo di CMS Headless](/help/journey-headless/developer/learn-about.md)
 
-* [percorso di architetti di contenuti headless AEM](/help/journey-headless/architect/overview.md)
+* [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 
 * [AEM Percorso di traduzione dei contenuti headless](/help/journey-headless/translation/overview.md)
