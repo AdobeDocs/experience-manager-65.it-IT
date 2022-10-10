@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 1%
 
 ---
@@ -128,14 +128,14 @@ Per eliminare le versioni di un sito Web, procedere come segue:
    ![Configurazione eliminazione versione](assets/version-purge-configuration.png)
 
    * **Percorsi di eliminazione**
-Imposta il percorso iniziale del contenuto da eliminare (ad es. 
-`/content/wknd`).
+Impostare il percorso iniziale del contenuto da eliminare; ad esempio, 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >È consigliabile definire più percorsi per ciascuno dei siti web.
+      >È consigliabile definire più percorsi, per ciascuno dei siti web.
       >
-      >Definire un percorso con troppi elementi figlio allunga il tempo necessario per eseguire l&#39;eliminazione.
+      >La definizione di un percorso con troppi elementi figlio può allungare notevolmente il tempo necessario per eseguire l’eliminazione.
 
    * **Eliminare le versioni in modo ricorsivo**
 
@@ -1048,7 +1048,7 @@ Per determinare la dimensione totale del `/var/dam` cartella:
 
 #### Quanti modelli sono attualmente utilizzati? {#how-many-templates-are-currently-used}
 
-Per visualizzare il numero di modelli attualmente sul server, utilizzare una query del repository; via CRXDE - Strumenti - Query:
+Per visualizzare il numero di modelli attualmente sul server utilizzare una query del repository; via CRXDE - Strumenti - Query:
 
 * **Tipo** `XPath`
 * **Percorso** `/`
