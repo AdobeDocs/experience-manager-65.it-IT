@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
+source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
 workflow-type: tm+mt
 source-wordcount: '5901'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Per eliminare le versioni di un sito Web, procedere come segue:
 
    * **Percorsi di eliminazione**
 Imposta il percorso iniziale del contenuto da eliminare (ad es. 
-`/content/geometrixx-outdoors`).
+`/content/wknd`).
 
       >[!CAUTION]
       >
@@ -1048,7 +1048,7 @@ Per determinare la dimensione totale del `/var/dam` cartella:
 
 #### Quanti modelli sono attualmente utilizzati? {#how-many-templates-are-currently-used}
 
-Per visualizzare il numero di modelli attualmente sul server utilizzare una query del repository; via CRXDE - Strumenti - Query:
+Per visualizzare il numero di modelli attualmente sul server, utilizzare una query del repository; via CRXDE - Strumenti - Query:
 
 * **Tipo** `XPath`
 * **Percorso** `/`
