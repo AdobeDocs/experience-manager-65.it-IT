@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
+source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '5901'
 ht-degree: 1%
 
 ---
@@ -131,6 +131,12 @@ Per eliminare le versioni di un sito Web, procedere come segue:
 Imposta il percorso iniziale del contenuto da eliminare (ad es. 
 `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >È consigliabile definire più percorsi per ciascuno dei siti web.
+      >
+      >Definire un percorso con troppi elementi figlio allunga il tempo necessario per eseguire l&#39;eliminazione.
+
    * **Eliminare le versioni in modo ricorsivo**
 
       * Deseleziona se desideri eliminare solo il nodo definito dal percorso.
@@ -173,7 +179,7 @@ Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, u
 Inoltre, la console fornisce utili informazioni sulle versioni:
 
 * `V 1.0`: il numero di versione.
-* `V 1.0.1`&#42;: la stella indica che la versione è quella corrente.
+* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
@@ -1042,7 +1048,7 @@ Per determinare la dimensione totale del `/var/dam` cartella:
 
 #### Quanti modelli sono attualmente utilizzati? {#how-many-templates-are-currently-used}
 
-Per visualizzare il numero di modelli attualmente sul server, utilizzare una query del repository; via CRXDE - Strumenti - Query:
+Per visualizzare il numero di modelli attualmente sul server utilizzare una query del repository; via CRXDE - Strumenti - Query:
 
 * **Tipo** `XPath`
 * **Percorso** `/`
