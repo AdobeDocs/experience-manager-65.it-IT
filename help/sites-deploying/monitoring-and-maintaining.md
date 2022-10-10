@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
 workflow-type: tm+mt
-source-wordcount: '5866'
+source-wordcount: '5868'
 ht-degree: 1%
 
 ---
@@ -100,48 +100,68 @@ Questa sezione tratta le operazioni di manutenzione relative alla funzione di co
 
 ### Panoramica {#overview}
 
-La **Eliminare le versioni** lo strumento è disponibile nella **[Strumenti](/help/sites-administering/tools-consoles.md) console** sotto **Controllo delle versioni** o direttamente da:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Percorso iniziale** Un percorso assoluto su cui deve essere fatta la pulizia. È possibile selezionare il Percorso iniziale facendo clic sul navigatore della struttura dell&#39;archivio.
-
-**Ricorsivo** Durante l&#39;eliminazione dei dati è possibile scegliere se eseguire l&#39;operazione su un nodo o su un&#39;intera gerarchia selezionando Ricorsivo. Nell&#39;ultimo caso il percorso specificato definisce il nodo principale della gerarchia.
-
-**Numero massimo di versioni da mantenere** Il numero massimo di versioni da mantenere per un nodo. Quando questo numero supera questo valore, le versioni meno recenti vengono eliminate.
-
-**Età massima della versione** L&#39;età massima della versione di un nodo. Quando l’età di una versione supera questo valore, viene eliminata.
-
-**Prova a secco** Poiché la rimozione delle versioni del contenuto è definita e non può essere ripristinata senza il ripristino di un backup, lo strumento Purge Versions fornisce una modalità di esecuzione a secco che consente di visualizzare in anteprima le versioni eliminate. Per avviare una prova del processo di eliminazione, fare clic su Prova.
-
-**Elimina** Avvia l&#39;eliminazione delle versioni sul nodo definito dal Percorso iniziale.
+La **Eliminare le versioni** Lo strumento è disponibile come attività di manutenzione settimanale. Prima di utilizzarlo per la prima volta, è necessario aggiungerlo e configurarlo. Dopo di che può essere eseguito su richiesta, o su base settimanale.
 
 ### Rimozione di versioni di un sito Web {#purging-versions-of-a-web-site}
 
 Per eliminare le versioni di un sito Web, procedere come segue:
 
-1. Passa a **[Strumenti](/help/sites-administering/tools-consoles.md)** **console**, seleziona **Controllo delle versioni** e fai doppio clic **Elimina versioni.**
-1. Imposta il percorso iniziale del contenuto da eliminare (ad es. `/content/geometrixx-outdoors`).
+1. Passa a **[Strumenti](/help/sites-administering/tools-consoles.md)** **console**, seleziona **Funzionamento**, **Manutenzione**, quindi **Finestra Manutenzione settimanale**.
 
-   * Per eliminare solo il nodo definito dal percorso, deselezionare **Ricorsivo**.
-   * Se desideri eliminare il nodo definito dal percorso e dai relativi discendenti, seleziona **Ricorsivo**.
+1. Seleziona **+ Aggiungi** dalla barra degli strumenti superiore.
 
-1. Imposta il numero massimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non utilizzare questa impostazione.
+   ![Aggiungi eliminazione versione](assets/version-purge-add.png)
 
-1. Imposta l&#39;età massima della versione in giorni (per ogni nodo) che desideri mantenere. Lascia vuoto per non utilizzare questa impostazione.
+1. Seleziona **Eliminazione versione** dall’elenco a discesa in **Aggiungi nuova attività** finestra di dialogo. Then **Salva**.
 
-1. Fai clic su **Prova a secco** per visualizzare un&#39;anteprima del processo di eliminazione.
-1. Fai clic su **Elimina** per avviare il processo.
+   ![Aggiungi eliminazione versione](assets/version-purge-add-new-task.png)
+
+1. La **Eliminazione versione** verrà aggiunta l’attività . Utilizza le azioni della scheda per:
+   * Seleziona : consente di visualizzare azioni aggiuntive nella barra degli strumenti superiore
+   * Esegui - per eseguire immediatamente l&#39;eliminazione configurata
+   * Configura: per configurare l&#39;attività di eliminazione settimanale
+
+   ![Azioni di eliminazione della versione](assets/version-purge-actions.png)
+
+1. Seleziona la **Configura** per aprire la console Web per **Attività di eliminazione della versione di CQ WCM Day**, dove puoi configurare:
+
+   ![Configurazione eliminazione versione](assets/version-purge-configuration.png)
+
+   * **Percorsi di eliminazione**
+Imposta il percorso iniziale del contenuto da eliminare (ad es. 
+`/content/geometrixx-outdoors`).
+
+   * **Eliminare le versioni in modo ricorsivo**
+
+      * Deseleziona se desideri eliminare solo il nodo definito dal percorso.
+      * Selezionare questa opzione se si desidera eliminare il nodo definito dal percorso e dai relativi discendenti.
+   * **Numero massimo di versioni**
+Imposta il numero massimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non utilizzare questa impostazione.
+
+   * **Numero minimo di versioni**
+Imposta il numero minimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non utilizzare questa impostazione.
+
+   * **Età massima della versione**
+Imposta l’età massima della versione in giorni (per ogni nodo) che desideri mantenere. Lascia vuoto per non utilizzare questa impostazione.
+   Then **Salva**.
+
+1. Passa/torna alla sezione **Finestra Manutenzione settimanale** finestra e seleziona **Esegui** per avviare immediatamente il processo.
 
 >[!CAUTION]
 >
+>Puoi usare la finestra di dialogo Interfaccia classica per eseguire un [Prova a secco](#analyzing-the-console) della configurazione:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >I nodi eliminati non possono essere ripristinati senza il ripristino dell&#39;archivio. È necessario prendersi cura della configurazione, quindi si consiglia di eseguire sempre una prova prima di eliminare.
 
-### Analisi della console {#analyzing-the-console}
+#### Prova - Analisi della console {#analyzing-the-console}
 
-La **Prova a secco** e **Elimina** I processi elencano tutti i nodi che sono stati elaborati. Durante il processo, un nodo può avere uno dei seguenti stati:
+L’interfaccia classica fornisce una **Prova a secco** opzione da:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, un nodo può avere uno dei seguenti stati:
 
 * `ignore (not versionnable)`: il nodo non supporta il controllo delle versioni e viene ignorato durante il processo.
 
@@ -650,7 +670,7 @@ Alcune dipenderanno dal sistema operativo in uso.
 
 ### Interpretazione del request.log {#interpreting-the-request-log}
 
-Questo file registra informazioni di base su ogni richiesta effettuata a AEM. Da queste preziose conclusioni si possono trarre.
+Questo file registra informazioni di base su ogni richiesta effettuata a AEM. Da ciò si possono trarre conclusioni preziose.
 
 La `request.log` offre un modo integrato per vedere quanto tempo richiedono le richieste. Ai fini dello sviluppo è utile `tail -f` la `request.log` e controlla i tempi di risposta lenti. Per analizzare un `request.log` consigliamo [utilizzo di `rlog.jar` che consente di ordinare e filtrare i tempi di risposta](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -665,7 +685,7 @@ Il registro delle richieste registra ogni richiesta effettuata, unitamente alla 
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Sommando tutte le voci del GET in un determinato periodo (ad esempio per diversi periodi di 24 ore) è possibile fare dichiarazioni sul traffico medio del sito web.
+Totalizzando tutte le voci del GET in periodi specifici (ad es. in diversi periodi di 24 ore) è possibile fare dichiarazioni sul traffico medio sul sito web.
 
 #### Monitoraggio dei tempi di risposta con request.log {#monitoring-response-times-with-the-request-log}
 
