@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 81%
+source-wordcount: '1787'
+ht-degree: 78%
 
 ---
 
@@ -35,9 +35,13 @@ AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consen
 
 La [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o Client Context, nonché i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti di contesto client](/help/sites-administering/campaign-segmentation.md) e i segmenti Adobe Target, consulta la documentazione pertinente.
 
-Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**.
+Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Pubblico**. Verranno visualizzate le configurazioni disponibili:
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Tipi di pubblico - Configurazioni](assets/segmentation-access-confs.png)
+
+Seleziona la configurazione per visualizzare i segmenti, ad esempio Sito WKND:
+
+![Tipi di pubblico - Segmenti](assets/segmentation-access-segments.png)
 
 ## Editor segmento {#segment-editor}
 
@@ -130,7 +134,7 @@ Sono disponibili i seguenti riferimenti predefiniti per eseguire un collegamento
 
 Per definire il nuovo segmento:
 
-1. Dopo l’[accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento o lascialo nella directory principale.
+1. Dopo [accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento.
 
 1. tocca o fai clic sul pulsante Crea e seleziona **Creare un segmento ContextHub**.
 
