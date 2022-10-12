@@ -3,14 +3,8 @@ title: Sicurezza
 seo-title: Security
 description: La sicurezza dell'applicazione viene avviata durante la fase di sviluppo
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -23,7 +17,7 @@ La sicurezza dell&#39;applicazione viene avviata durante la fase di sviluppo. Ad
 
 ## Usa sessione di richiesta {#use-request-session}
 
-In base al principio dei privilegi minimi, l&#39;Adobe raccomanda che ogni accesso all&#39;archivio venga effettuato utilizzando la sessione associata alla richiesta dell&#39;utente e al controllo di accesso adeguato.
+In base al principio del privilegio minimo, l&#39;Adobe raccomanda che ogni accesso all&#39;archivio venga effettuato utilizzando la sessione associata alla richiesta dell&#39;utente e al controllo di accesso adeguato.
 
 ## Protect contro lo scripting tra siti (XSS) {#protect-against-cross-site-scripting-xss}
 
