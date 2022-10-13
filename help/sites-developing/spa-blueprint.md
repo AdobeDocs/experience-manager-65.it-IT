@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ modulo npm: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-modulo npm: presto disponibile
+modulo npm: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Servizi e componenti principali {#main-services-and-components}
 
@@ -166,8 +166,6 @@ Il componente Griglia reattiva deve essere pre-mappato sulla sua controparte AEM
 
 * `gridClassNames:` Nomi di classe forniti per la griglia reattiva
 * `columnClassNames:` Nomi di classe forniti per la colonna reattiva
-
-Vedi anche la risorsa npm [@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Segnaposto della griglia reattiva {#placeholder-of-the-reponsive-grid}
 
