@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 5df1579a341f70c93a3c4b43a278bc99794a4652
+source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -33,8 +33,6 @@ Questo gestore memorizza il messaggio di risposta SAML crittografato nel nodo ut
 >[!NOTE]
 >
 >Vedi [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
->
->Per leggere un articolo della community end to end, fai clic su: [Integrazione di SAML con Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## Configurazione Del Gestore Di Autenticazione SAML 2.0 {#configuring-the-saml-authentication-handler}
 
