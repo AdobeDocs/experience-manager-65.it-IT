@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,15 @@ Per sincronizzare il modulo nell’app AEM Forms:
 
 Per sincronizzare più moduli, nell’istanza di authoring, seleziona più moduli in Forms Manager e tocca **Sincronizzazione con l’app AEM Forms**. Quando il modulo viene pubblicato, l’app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
 
+Se la sincronizzazione dell&#39;app Android AFA (AEM Form Application) non riesce, procedi come segue per risolvere il problema di sincronizzazione:
+
+1. Vai a **https://&#39;[server]:[porta]&#39;system/console/configMgr**.
+1. Cerca il **[!UICONTROL Gestore autenticazione token di Granite Adobe]** e fai clic su **[!UICONTROL Modifica]**.
+1. Seleziona la **[!UICONTROL Nessuno]** dal menu a discesa per **[!UICONTROL Attributo SameSite per il cookie login-token]** attributo.
+1. Fai clic su **[!UICONTROL Salva]**.
+
+![Sincronizza immagine con l’app Android AFA](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >Moduli supportati:
@@ -39,7 +48,8 @@ Per sincronizzare più moduli, nell’istanza di authoring, seleziona più modul
 >
 >Gli allegati a livello di modulo non sono supportati nei moduli adattivi recuperati nell’app AEM Forms sincronizzati con il server OSGi di AEM Forms. Gli utenti possono allegare file in un campo se l’autore ha abilitato allegati a livello di campo al momento della creazione del modulo.
 
+
 **Apertura e aggiornamento di un modulo**
 
-1. Per aprire un modulo, toccare il modulo nella schermata iniziale.
+1. Per aprire un modulo, toccare il pulsante **[!UICONTROL Modulo]** nella schermata iniziale.
 1. È possibile aggiornare i campi del modulo, aggiungere allegati, salvare come bozza e inviarlo.
