@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4034'
 ht-degree: 0%
 
 ---
@@ -281,7 +281,10 @@ I messaggi e-mail possono contenere un collegamento che apre l’attività nell�
 
 >[!NOTE]
 >
->Per configurare l’area di lavoro in modo che utilizzi i modelli e-mail appropriati, consulta la sezione [Guida per l’amministratore JEE di AEM Forms](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>* Per configurare l’area di lavoro in modo che utilizzi i modelli e-mail appropriati, consulta la sezione [Guida per l’amministratore JEE di AEM Forms](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>
+>* Se le bozze vengono inoltrate dopo l’invio dell’attività nell’area di lavoro di AEM Forms, vengono inviate notifiche e-mail. Se le bozze vengono inoltrate dal punto iniziale dell’area di lavoro di AEM Forms, non vengono inviate notifiche e-mail.
+
 
 Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimossa dall&#39;elenco A-do nell&#39;area di lavoro di AEM Forms.
 
