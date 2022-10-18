@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 0%
 
 ---
@@ -40,16 +40,16 @@ L’area di lavoro di AEM Forms presenta i tre tipi seguenti di elenchi Da esegu
 
 Quando si apre e si lavora su un&#39;attività, gli strumenti disponibili dipendono dall&#39;attività. Per diverse attività è necessario eseguire diverse azioni e, per questo motivo, alcuni strumenti potrebbero non essere disponibili. Di seguito sono descritte le attività tipiche che è possibile ricevere.
 
-**Fornire informazioni**: Viene visualizzata un’attività che richiede la compilazione e l’invio di un modulo.
+* **Fornire informazioni**: Viene visualizzata un’attività che richiede la compilazione e l’invio di un modulo.
 
-**Informazioni sulla revisione**: Ricevi un’attività che richiede di rivedere le informazioni e di disconnettersi dal contenuto.
+* **Informazioni sulla revisione**: Ricevi un’attività che richiede di rivedere le informazioni e di disconnettersi dal contenuto.
 
-**Recensione multiutente**: Ricevi un’attività contemporaneamente da altri utenti. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
+* **Recensione multiutente**: Ricevi un’attività contemporaneamente da altri utenti. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
 
-* Visualizzazione delle istruzioni per l&#39;attività
-* Visualizzazione dello stato di completamento di tutti gli utenti a cui è stata assegnata l’attività
-* Visualizzazione dei commenti di tutti gli utenti a cui è stata assegnata l’attività
-* Aggiunta di commenti all&#39;attività da solo
+   * Visualizzazione delle istruzioni per l&#39;attività
+   * Visualizzazione dello stato di completamento di tutti gli utenti a cui è stata assegnata l’attività
+   * Visualizzazione dei commenti di tutti gli utenti a cui è stata assegnata l’attività
+   * Aggiunta di commenti all&#39;attività da solo
 
 Gli strumenti aggiuntivi che possono essere disponibili con una delle attività di cui sopra includono:
 
@@ -106,17 +106,17 @@ Quando si apre e si dichiara un&#39;attività da un gruppo o da un elenco condiv
 
 Dopo aver aperto un&#39;attività, le schede visualizzate nel riquadro principale e gli strumenti disponibili dipendono dall&#39;attività. Le schede che potresti vedere sono descritte di seguito:
 
-**Riepilogo attività**: Quando si apre un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se esistente, utilizzando un URL specificato nel processo al passaggio Assegna attività. È possibile visualizzare informazioni aggiuntive e rilevanti relative a un&#39;attività utilizzando il riquadro di riepilogo attività per aggiungere ulteriori valori all&#39;utente finale dell&#39;area di lavoro di AEM Forms. Questa scheda non è disponibile, se l’URL di riepilogo attività non esiste.
+* **Riepilogo attività**: Quando si apre un&#39;attività, il riquadro Riepilogo attività consente di visualizzare informazioni sull&#39;attività, se esistente, utilizzando un URL specificato nel processo al passaggio Assegna attività. È possibile visualizzare informazioni aggiuntive e rilevanti relative a un&#39;attività utilizzando il riquadro di riepilogo attività per aggiungere ulteriori valori all&#39;utente finale dell&#39;area di lavoro di AEM Forms. Questa scheda non è disponibile, se l’URL di riepilogo attività non esiste.
 
-**Dettagli**: Fornisce alcune informazioni sull&#39;attività corrente e sul processo a cui appartiene.
+* **Dettagli**: Fornisce alcune informazioni sull&#39;attività corrente e sul processo a cui appartiene.
 
-**Modulo**: Visualizza il modulo associato all’attività. Il modulo può essere di molti tipi di file, inclusi file PDF, HTML, Guide e SWF. Per raccogliere informazioni, il modulo può avere l’aspetto di un modulo normale stampabile o basato su Web oppure può essere utilizzato come guida attraverso una serie di pannelli in stile guidato.
+* **Modulo**: Visualizza il modulo associato all’attività. Il modulo può essere di molti tipi di file, inclusi file PDF, HTML, Guide e SWF. Per raccogliere informazioni, il modulo può avere l’aspetto di un modulo normale stampabile o basato su Web oppure può essere utilizzato come guida attraverso una serie di pannelli in stile guidato.
 
-**Cronologia**: Elenca le attività che fanno parte dell&#39;istanza di processo e il modulo associato, le assegnazioni delle attività e gli allegati per ogni attività.
+* **Cronologia**: Elenca le attività che fanno parte dell&#39;istanza di processo e il modulo associato, le assegnazioni delle attività e gli allegati per ogni attività.
 
-**Allegati**: Visualizza gli allegati esistenti associati all&#39;attività e, se necessario, aggiunge gli allegati.
+* **Allegati**: Visualizza gli allegati esistenti associati all&#39;attività e, se necessario, aggiunge gli allegati.
 
-**Note**: Visualizza le note esistenti associate all&#39;attività e, se necessario, aggiunge note.
+* **Note**: Visualizza le note esistenti associate all&#39;attività e, se necessario, aggiunge note.
 
 Quando si lavora a un&#39;attività, di seguito sono descritti gli strumenti che è possibile visualizzare e le azioni che è possibile eseguire.
 
