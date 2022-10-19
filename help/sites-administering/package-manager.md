@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
+source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
 workflow-type: tm+mt
-source-wordcount: '3525'
-ht-degree: 2%
+source-wordcount: '3573'
+ht-degree: 1%
 
 ---
 
@@ -506,6 +506,16 @@ Prima dell’installazione del pacchetto, Gestione pacchetti crea automaticament
 1. Fai clic su **Installa**.
 
 1. Il registro attività descrive l’avanzamento dell’installazione.
+
+>[!CAUTION]
+>
+>* Se stai installando risorse digitali, devi:
+   >  Per prima cosa, disattiva WorkflowLauncher.
+   >  Per disattivare, utilizza l’opzione di menu Componenti della console OSGi
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Al termine dell’installazione, riattiva WorkflowLauncher.
+>
+>La disattivazione di WorkflowLauncher assicura che il framework di Importazione risorse non manipoli (involontariamente) le risorse al momento dell’installazione.
 
 Una volta completata e completata l&#39;installazione, l&#39;elenco dei pacchetti viene aggiornato e la parola **Installato** viene visualizzato nello stato del pacchetto.
 
