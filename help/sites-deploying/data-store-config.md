@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -353,7 +353,7 @@ Per configurare la replica binaryless con S3, sono necessari i seguenti passaggi
 1. Assicurati che MongoDB sia installato e che un&#39;istanza di `mongod` è in esecuzione.
 1. Inizia AEM con il seguente comando:
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Ripetere i passaggi da 1 a 4 per la seconda istanza AEM.
 1. Avvia la seconda istanza AEM.
