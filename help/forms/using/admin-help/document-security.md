@@ -12,7 +12,7 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 0%
@@ -276,4 +276,4 @@ Aggiungi i gruppi di utenti ai criteri anziché ai singoli utenti. Semplifica la
 
    >[!NOTE]
    >
-   > È possibile utilizzare [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+   >È possibile utilizzare [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il invoker API dispone dell’autorizzazione di pubblicazione dei documenti, quindi crea e restituisce un elenco di nomi di set di criteri univoci associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.

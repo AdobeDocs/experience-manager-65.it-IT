@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 25%
@@ -24,7 +24,7 @@ La [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) è una bas
 
 >[!TIP]
 >
-> Utilizza la [Archetipo AEM progetto](https://github.com/adobe/aem-project-archetype) all’avvio dell’implementazione Commerce personalizzata.
+>Utilizza la [Archetipo AEM progetto](https://github.com/adobe/aem-project-archetype) all’avvio dell’implementazione Commerce personalizzata.
 
 ## Cosa Verrà Generato
 
@@ -44,7 +44,7 @@ Cloneremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) qui
 
 >[!NOTE]
 >
-> **Sentitevi liberi di utilizzare un progetto esistente** (in base al AEM Project Archetype con CIF incluso) e salta questa sezione.
+>**Sentitevi liberi di utilizzare un progetto esistente** (in base al AEM Project Archetype con CIF incluso) e salta questa sezione.
 
 1. Esegui il seguente comando git per clonare il progetto:
 
@@ -83,7 +83,7 @@ Il componente Product Teaser verrà esteso durante l’esercitazione. Come primo
 
    >[!NOTE]
    >
-   > Puoi anche configurare il prodotto visualizzato impostando il componente tramite la finestra di dialogo (clic sull’icona a forma di _chiave inglese_).
+   >Puoi anche configurare il prodotto visualizzato impostando il componente tramite la finestra di dialogo (clic sull’icona a forma di _chiave inglese_).
 
 4. Ora puoi vedere un prodotto visualizzato dal Product Teaser. Il nome del prodotto e il prezzo del prodotto sono attributi predefiniti visualizzati.
 
@@ -95,7 +95,7 @@ I prodotti e i dati di prodotto visualizzati in AEM vengono memorizzati in Adobe
 
 >[!TIP]
 >
-> Disponi già di un **Sì/No** come parte del set di attributi del prodotto? Puoi usarlo e saltare questa sezione.
+>Disponi già di un **Sì/No** come parte del set di attributi del prodotto? Puoi usarlo e saltare questa sezione.
 
 1. Accedi alla tua istanza Adobe Commerce.
 1. Passa a **Catalogo** > **Prodotti**.
@@ -124,7 +124,7 @@ I prodotti e i dati di prodotto visualizzati in AEM vengono memorizzati in Adobe
 
    >[!TIP]
    >
-   > Ulteriori dettagli sulla gestione [Gli attributi del prodotto si trovano nella guida utente di Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   >Ulteriori dettagli sulla gestione [Gli attributi del prodotto si trovano nella guida utente di Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
 1. Passa a **Sistema** > **Strumenti** > **Gestione cache**. Poiché è stato effettuato un aggiornamento allo schema dati, è necessario annullare la validità di alcuni tipi di cache in Adobe Commerce.
 1. Seleziona la casella accanto a **Configurazione** e invia il tipo di cache per **Aggiorna**
@@ -133,7 +133,7 @@ I prodotti e i dati di prodotto visualizzati in AEM vengono memorizzati in Adobe
 
    >[!TIP]
    >
-   > Maggiori dettagli [Gestione della cache si trova nella guida utente di Adobe Commerce](https://docs.magento.com/user-guide/system/cache-management.html).
+   >Maggiori dettagli [Gestione della cache si trova nella guida utente di Adobe Commerce](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## Utilizzare un IDE GraphQL per verificare l&#39;attributo {#use-graphql-ide}
 
@@ -182,7 +182,7 @@ Quindi, utilizza un IDE GraphQL per verificare che `eco_friendly` è stato aggiu
 
    >[!TIP]
    >
-   > Documentazione più dettagliata su [Adobe Commerce GraphQL è disponibile qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >Documentazione più dettagliata su [Adobe Commerce GraphQL è disponibile qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Aggiornare il modello Sling per il Product Teaser {#updating-sling-model-product-teaser}
 
@@ -289,7 +289,7 @@ Utilizzo [l&#39;IDE che preferisci](https://docs.adobe.com/content/help/en/exper
 
    >[!NOTE]
    >
-   > La `createdAt()` è stato effettivamente implementato come parte del [Interfaccia prodotto](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). La maggior parte degli attributi dello schema comunemente trovati è già stata implementata, quindi utilizza solo gli attributi `addCustomSimpleField` per gli attributi realmente personalizzati.
+   >La `createdAt()` è stato effettivamente implementato come parte del [Interfaccia prodotto](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). La maggior parte degli attributi dello schema comunemente trovati è già stata implementata, quindi utilizza solo gli attributi `addCustomSimpleField` per gli attributi realmente personalizzati.
 
 1. Aggiungi un logger per eseguire il debug del codice Java:
 
@@ -336,7 +336,7 @@ Nel nostro caso, vogliamo eseguire il rendering di un banner sopra il teaser per
 
 >[!NOTE]
 >
-> Se personalizzi un componente utilizzando i selettori di prodotti CIF e categorie come questo Product Teaser o il componente di pagina CIF, accertati di includere il `cif.shell.picker` clientlib per le finestre di dialogo dei componenti. Vedi [Utilizzo del selettore di prodotti e categorie CIF](use-cif-pickers.md) per i dettagli.
+>Se personalizzi un componente utilizzando i selettori di prodotti CIF e categorie come questo Product Teaser o il componente di pagina CIF, accertati di includere il `cif.shell.picker` clientlib per le finestre di dialogo dei componenti. Vedi [Utilizzo del selettore di prodotti e categorie CIF](use-cif-pickers.md) per i dettagli.
 
 1. Nell’IDE, naviga ed espandi la `ui.apps` modulo ed espandi la gerarchia delle cartelle per: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` e ispezionare `.content.xml` file.
 
@@ -430,7 +430,7 @@ Nel nostro caso, vogliamo eseguire il rendering di un banner sopra il teaser per
 
    >[!CAUTION]
    >
-   > È inoltre possibile che vengano visualizzate delle tracce di stack se il prodotto utilizzato nel teaser non contiene `eco_friendly` come parte del set di attributi.
+   >È inoltre possibile che vengano visualizzate delle tracce di stack se il prodotto utilizzato nel teaser non contiene `eco_friendly` come parte del set di attributi.
 
 ## Aggiungi stili per il badge eco-compatibile {#add-styles}
 
@@ -471,7 +471,7 @@ A questo punto, la logica che determina quando visualizzare il **Ecologico** il 
 
    >[!NOTE]
    >
-   > Consulta [Definizione dello stile dei componenti core CIF](./style-cif-component.md) per maggiori dettagli sui flussi di lavoro front-end.
+   >Consulta [Definizione dello stile dei componenti core CIF](./style-cif-component.md) per maggiori dettagli sui flussi di lavoro front-end.
 
 1. Salva le modifiche e distribuisci gli aggiornamenti per AEM utilizzando le tue competenze Maven, da un terminale di riga di comando:
 

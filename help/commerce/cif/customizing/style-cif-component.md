@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 26%
@@ -22,7 +22,7 @@ La [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) è una bas
 
 >[!TIP]
 >
-> Utilizza la [Archetipo AEM progetto](https://github.com/adobe/aem-project-archetype) all’avvio dell’implementazione Commerce personalizzata.
+>Utilizza la [Archetipo AEM progetto](https://github.com/adobe/aem-project-archetype) all’avvio dell’implementazione Commerce personalizzata.
 
 ## Cosa Verrà Generato
 
@@ -40,7 +40,7 @@ Cloneremo il [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) qui
 
 >[!NOTE]
 >
-> **Sentitevi liberi di utilizzare un progetto esistente** (in base al AEM Project Archetype con CIF incluso) e salta questa sezione.
+>**Sentitevi liberi di utilizzare un progetto esistente** (in base al AEM Project Archetype con CIF incluso) e salta questa sezione.
 
 1. Esegui il seguente comando git per clonare il progetto:
 
@@ -137,7 +137,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    >[!NOTE]
    >
-   > File come questo vengono ignorati dal controllo del codice sorgente poiché dovrebbero essere generati durante il tempo di creazione.
+   >File come questo vengono ignorati dal controllo del codice sorgente poiché dovrebbero essere generati durante il tempo di creazione.
 
 1. Inspect il file `ui.frontend/clientlib.config.js`.
 
@@ -168,7 +168,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    >[!NOTE]
    >
-   > File come questo vengono anche ignorati dal controllo del codice sorgente, in quanto dovrebbero essere generati durante il tempo di creazione.
+   >File come questo vengono anche ignorati dal controllo del codice sorgente, in quanto dovrebbero essere generati durante il tempo di creazione.
 
 1. Ispeziona quindi le altre librerie client generate dal progetto:
 
@@ -190,7 +190,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    >[!NOTE]
    >
-   > Solo le librerie di base sono &quot;hard-coded&quot; come parte degli script di pagina. `venia.site` non è incluso in questi file, ma è incluso come parte del modello di pagina per una maggiore flessibilità. Questo verrà esaminato successivamente.
+   >Solo le librerie di base sono &quot;hard-coded&quot; come parte degli script di pagina. `venia.site` non è incluso in questi file, ma è incluso come parte del modello di pagina per una maggiore flessibilità. Questo verrà esaminato successivamente.
 
 1. Dal terminale, crea e implementa l’intero progetto in un’istanza locale di AEM:
 
@@ -265,7 +265,7 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Control
 
    >[!NOTE]
    >
-   > Per visualizzare tutti i modelli disponibili dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli**.
+   >Per visualizzare tutti i modelli disponibili dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli**.
 
 1. Nell’angolo in alto a sinistra, seleziona l’icona **Informazioni pagina** e fai clic su **Criterio pagina**.
 
@@ -328,7 +328,7 @@ Il webpack-dev-server proxy immagini e alcuni dei CSS/JavaScript dell&#39;istanz
 
    >[!CAUTION]
    >
-   > Se ricevi un errore relativo a Sass, interrompi il server ed esegui il comando `npm rebuild node-sass` e ripeti i passaggi precedenti. Questo può verificarsi se si dispone di una versione diversa di `npm` e `node` quindi specificato nel progetto `aem-cif-guides-venia/pom.xml`.
+   >Se ricevi un errore relativo a Sass, interrompi il server ed esegui il comando `npm rebuild node-sass` e ripeti i passaggi precedenti. Questo può verificarsi se si dispone di una versione diversa di `npm` e `node` quindi specificato nel progetto `aem-cif-guides-venia/pom.xml`.
 
 1. Passa a [http://localhost:8080/](Http://localhost:8080/) in una nuova scheda con lo stesso browser di un’istanza di AEM registrata. Dovresti vedere la home page di Venia tramite il webpack-dev-server:
 

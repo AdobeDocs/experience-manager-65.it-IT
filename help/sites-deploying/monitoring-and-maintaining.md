@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 1%
@@ -448,11 +448,12 @@ In alcune circostanze è possibile creare un file di registro personalizzato con
    >| `'.'yyyy-MM-dd-HH-mm` | Rotazione all&#39;inizio di ogni minuto. |
    >
    >Nota: Quando si specifica un’ora/data:
-   > 1. È necessario eseguire l’escape del testo letterale all’interno di una coppia di virgolette singole (&#39; &#39;);
-      >
-      >     per evitare che determinati caratteri vengano interpretati come lettere del pattern.
    >
-   >  1. Utilizza solo i caratteri consentiti per un nome di file valido in qualsiasi punto dell’opzione .
+   >1. È necessario eseguire l’escape del testo letterale all’interno di una coppia di virgolette singole (&#39; &#39;);
+      >
+      >    per evitare che determinati caratteri vengano interpretati come lettere del pattern.
+   >
+   >1. Utilizza solo i caratteri consentiti per un nome di file valido in qualsiasi punto dell’opzione .
 
 
 1. Leggere il nuovo file di log con lo strumento scelto.

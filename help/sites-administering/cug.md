@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 4%
+source-wordcount: '794'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +82,11 @@ Per applicare il CUG a una pagina:
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[NOTA!]
+   >[!NOTE]
    >
-   > Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
+   >Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
    >
-   > Per ulteriori informazioni, consulta [questa pagina](closed-user-groups.md#aem-livecopy).
+   >Per ulteriori informazioni, consulta [questa pagina](closed-user-groups.md#aem-livecopy).
 
 1. Cerca e aggiungi il tuo CUG nella finestra seguente - in questo caso aggiungi il gruppo denominato **cug_access**. Infine, premere **Salva**.
 1. Fai clic su **Abilitato** per definire che questa pagina (ed eventuali pagine figlie) appartenga a un CUG.

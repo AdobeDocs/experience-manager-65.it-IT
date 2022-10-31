@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -493,11 +493,12 @@ Puoi eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati:
 >Quando si esegue la raccolta oggetti inattivi in una configurazione dell’archivio dati in cluster o condiviso (con Mongo o Segment Tar), il registro potrebbe visualizzare avvisi sull’impossibilità di eliminare determinati ID BLOB. Questo accade perché gli ID BLOB eliminati in una precedente raccolta oggetti inattivi vengono erroneamente referenziati da altri nodi cluster o condivisi che non hanno informazioni sulle eliminazioni degli ID. Di conseguenza, quando si esegue la raccolta oggetti inattivi, viene registrato un avviso quando si tenta di eliminare un ID già eliminato nell’ultima esecuzione. Questo comportamento non influisce sulle prestazioni o sulle funzionalità.
 
 >[!NOTE]
-> Se utilizzi una configurazione del datastore condiviso e la raccolta degli oggetti inattivi del datastore è disabilitata, l&#39;esecuzione dell&#39;attività di pulizia binaria Lucene può improvvisamente aumentare lo spazio su disco utilizzato. Per evitare questo problema, devi disabilitare BlobTracker su tutte le istanze di authoring e pubblicazione come segue:
 >
-> 1. Interrompi l&#39;istanza AEM.
-> 2. Aggiungi il `blobTrackSnapshotIntervalInSecs=L"0"` nel `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. Questo parametro richiede Oak 1.12.0, 1.10.2 o versione successiva.
-> 3. Riavvia l&#39;istanza AEM.
+>Se utilizzi una configurazione del datastore condiviso e la raccolta degli oggetti inattivi del datastore è disabilitata, l&#39;esecuzione dell&#39;attività di pulizia binaria Lucene può improvvisamente aumentare lo spazio su disco utilizzato. Per evitare questo problema, devi disabilitare BlobTracker su tutte le istanze di authoring e pubblicazione come segue:
+>
+>1. Interrompi l&#39;istanza AEM.
+>2. Aggiungi il `blobTrackSnapshotIntervalInSecs=L"0"` nel `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. Questo parametro richiede Oak 1.12.0, 1.10.2 o versione successiva.
+>3. Riavvia l&#39;istanza AEM.
 
 
 Con le versioni più recenti di AEM, la raccolta degli oggetti inattivi dell&#39;archivio dati può essere eseguita anche sugli archivi di dati condivisi da più di un archivio. Per poter eseguire la raccolta degli oggetti inattivi dell&#39;archivio dati in un archivio dati condiviso, procedi come segue:

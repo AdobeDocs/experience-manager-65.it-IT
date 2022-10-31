@@ -2,7 +2,7 @@
 title: Integrazione con Adobe Target tramite IMS
 description: Scopri come integrare AEM con Adobe Target utilizzando IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 55%
@@ -278,9 +278,9 @@ Come indicato in precedenza, il primo caso è il più comune per AEM 6.5. In ent
 
 >[!NOTE]
 >
-> Per modificare una configurazione target esistente:
+>Per modificare una configurazione target esistente:
 >
-> 1. Immetti nuovamente l&#39;ID tenant.
-> 2. Riconnetti a Target.
-> 3. Salva la configurazione.
+>1. Immetti nuovamente l&#39;ID tenant.
+>2. Riconnetti a Target.
+>3. Salva la configurazione.
 

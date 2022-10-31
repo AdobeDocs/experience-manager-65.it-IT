@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 44%
@@ -46,7 +46,7 @@ Per collegare un sito AEM e AEM componenti core CIF a una visualizzazione dedica
 
    >[!TIP]
    >
-   > I cataloghi commerciali possono essere gestiti utilizzando ID o UID. Gli UID sono stati introdotti in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+   >I cataloghi commerciali possono essere gestiti utilizzando ID o UID. Gli UID sono stati introdotti in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 
 4. Assegnare la configurazione figlio a un sito AEM
 

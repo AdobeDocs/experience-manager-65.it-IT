@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 0%
@@ -295,15 +295,17 @@ Esegui i seguenti passaggi per configurare il componente Passaggio firma:
 
    >[!NOTE]
    >
-   > * Quando trascini e rilascia la **[!UICONTROL Passaggio firma]** al modulo, la **[!UICONTROL Il firmatario e la persona che compila il modulo sono uguali?]** è automaticamente impostato su **Sì**. È necessario mantenere il funzionamento del modulo.
+   >* Quando trascini e rilascia la **[!UICONTROL Passaggio firma]** al modulo, la **[!UICONTROL Il firmatario e la persona che compila il modulo sono uguali?]** è automaticamente impostato su **Sì**. È necessario mantenere il funzionamento del modulo.
+   >* Utilizza il componente Passaggio di riepilogo dopo il componente Passaggio firma per una migliore esperienza. Il passaggio Riepilogo invia automaticamente e immediatamente il modulo dopo aver completato la firma di un modulo nel componente Passaggio firma. Se non si utilizza il passaggio di riepilogo, viene attivato un invio automatico solo dopo l&#39;intervallo impostato utilizzando [Servizio di configurazione di Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
-   > * Utilizza il componente Passaggio di riepilogo dopo il componente Passaggio firma per una migliore esperienza. Il passaggio Riepilogo invia automaticamente e immediatamente il modulo dopo aver completato la firma di un modulo nel componente Passaggio firma. Se non si utilizza il passaggio di riepilogo, viene attivato un invio automatico solo dopo l&#39;intervallo impostato utilizzando [Servizio di configurazione di Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-      > Alcune best practice sono:
-   > * Il pannello adattivo del modulo contenente il passaggio Firma si trova sempre nell’ultimo o nel secondo pannello di un modulo adattivo. Può essere il secondo ultimo pannello solo quando l’ultimo pannello contiene il passaggio Riepilogo .
-   > * Il pannello contenente il componente Passaggio firma o Riepilogo non può contenere altri componenti.
-   > * I moduli adattivi contenenti il Passaggio firma non possono avere un pulsante di invio.
-   > * L’invio dei moduli adattivi contenenti la fase Firma viene gestito tramite un servizio in background o la fase Riepilogo. Se un firmatario configurato sta anche compilando il modulo, il vantaggio di gestire l’invio del modulo adattivo utilizzando il passaggio Riepilogo è che valuta immediatamente che il firmatario ha firmato il modulo e richiama l’azione di invio. Un servizio in background richiede più tempo per valutare se tutti i firmatari configurati hanno firmato il modulo e ritarda l’invio del modulo adattivo.
-   > * Creare un modulo per impedire all’utente di tornare da un pannello contenente il passaggio Firma o Riepilogo.
+   >Alcune best practice sono:
+   >
+   >* Il pannello adattivo del modulo contenente il passaggio Firma si trova sempre nell’ultimo o nel secondo pannello di un modulo adattivo. Può essere il secondo ultimo pannello solo quando l’ultimo pannello contiene il passaggio Riepilogo .
+   >* Il pannello contenente il componente Passaggio firma o Riepilogo non può contenere altri componenti.
+   >* I moduli adattivi contenenti il Passaggio firma non possono avere un pulsante di invio.
+   >* L’invio dei moduli adattivi contenenti la fase Firma viene gestito tramite un servizio in background o la fase Riepilogo. Se un firmatario configurato sta anche compilando il modulo, il vantaggio di gestire l’invio del modulo adattivo utilizzando il passaggio Riepilogo è che valuta immediatamente che il firmatario ha firmato il modulo e richiama l’azione di invio. Un servizio in background richiede più tempo per valutare se tutti i firmatari configurati hanno firmato il modulo e ritarda l’invio del modulo adattivo.
+   >* Creare un modulo per impedire all’utente di tornare da un pannello contenente il passaggio Firma o Riepilogo.
 
 
 

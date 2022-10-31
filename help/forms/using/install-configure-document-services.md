@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5529'
 ht-degree: 2%
@@ -252,7 +252,7 @@ Imposta le variabili di ambiente per Java Development Kit a 32 bit e 64 bit, app
 >* Sulle piattaforme basate su UNIX, installare OpenOffice come /root. Se OpenOffice non è installato come radice, il servizio PDF Generator non riesce a convertire i documenti OpenOffice in documenti PDF. Se è necessario installare ed eseguire OpenOffice come utente non root, fornire i diritti di sudo all&#39;utente non root.
 >* Se si utilizza OpenOffice su una piattaforma basata su UNIX, eseguire il comando seguente per impostare la variabile del percorso:
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Solo per IBM® WebSphere®) Configura il provider di socket SSL IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -415,7 +415,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
    >[!NOTE]
    >
    >Il tuo diritto di utilizzare i font forniti da soggetti diversi dall&#39;Adobe è disciplinato dai contratti di licenza forniti da tali soggetti con tali font e non è coperto dalla tua licenza per l&#39;uso del software di Adobe. L&#39;Adobe consiglia di rivedere e assicurarsi di essere in conformità con tutti i contratti di licenza applicabili non Adobi prima di utilizzare font non Adobi con il software di Adobe, in particolare per quanto riguarda l&#39;utilizzo di font in un ambiente server.
-   > Quando installi nuovi font nella cartella dei font, riavvia l’istanza AEM Forms.
+   >Quando installi nuovi font nella cartella dei font, riavvia l’istanza AEM Forms.
 
 ### Configurare un account utente locale per eseguire il servizio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -596,7 +596,8 @@ La [Strumento di preparazione al sistema](#srt-configuration) controlla se il co
 
    >[!NOTE]
    >
-   > * Se il System Readiness Tool segnala che il file pdfgen.api non è disponibile nella cartella dei plug-in di Acrobat, copia il file pdfgen.api dal file `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` nella directory `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >* Se il System Readiness Tool segnala che il file pdfgen.api non è disponibile nella cartella dei plug-in di Acrobat, copia il file pdfgen.api dal file `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` nella directory `[Acrobat_root]\Acrobat\plug_ins` directory.
+
 
 1. Accedi a `[Path_of_reports_folder]`. Apri il file SystemReadinessTool.html . Verifica il rapporto e risolvi i problemi menzionati.
 

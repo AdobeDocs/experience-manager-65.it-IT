@@ -2,7 +2,7 @@
 title: AEM Percorso di sviluppatori headless
 description: Documentazione AEM CMS headless. Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità di AEM, le loro capacità e come sfruttarle per il tuo primo progetto di sviluppo.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 26%
@@ -33,7 +33,7 @@ Se desideri sapere come Adobe consiglia di risolvere i casi aziendali headless c
 
 >[!TIP]
 >
-> Se preferisci **imparare facendo** e sono tecnicamente inclinati, visita i tutorial AEM Headless, organizzati per API e framework e disponibili in [Sezione Risorse aggiuntive](#additional-resources) alla fine del presente documento.
+>Se preferisci **imparare facendo** e sono tecnicamente inclinati, visita i tutorial AEM Headless, organizzati per API e framework e disponibili in [Sezione Risorse aggiuntive](#additional-resources) alla fine del presente documento.
 
 ## Pubblico {#audience}
 
@@ -54,7 +54,7 @@ Le informazioni in questo percorso possono ovviamente essere utili a tutti gli u
 
 In questo percorso esplorerai molti argomenti. I seguenti articoli ti offrono conoscenze fondamentali sui headless in AEM e ti collegano alla documentazione tecnica dettagliata.
 
-Anche se puoi passare direttamente a una parte specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei nuovo a headless in AEM, ti consigliamo di iniziare dall’inizio e procedere in sequenza.
+Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei nuovo a headless in AEM, ti consigliamo di iniziare dall’inizio e procedere in sequenza.
 
 | # | Articolo | Descrizione |
 |---|---|---|
@@ -69,7 +69,7 @@ Anche se puoi passare direttamente a una parte specifica del percorso, molti con
 | 8 | [Come vivere con la tua applicazione headless](go-live.md) | Scopri come distribuire l’applicazione in tempo reale e prendere il codice locale in Git e spostarlo nella pipeline CI/CD di Cloud Manager Git. |
 | 9 | [Facoltativo - Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md) | Una volta comprese AEM funzionalità headless, scopri come combinare consegne headful e headless e come creare SPA modificabili utilizzando AEM framework di Editor. |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora sei pronto per iniziare sul tuo percorso headless Adobe. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l&#39;articolo [Scopri lo sviluppo headless di CMS.](learn-about.md)
 

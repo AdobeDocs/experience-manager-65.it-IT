@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 1%
@@ -204,9 +204,11 @@ Per eseguire l&#39;application server su cui viene distribuito AEM Forms su JEE,
 
    >[!NOTE]
    >
-   > Percorso di installazione predefinito di JBoss Application Server:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jboss/
+   >Percorso di installazione predefinito di JBoss Application Server:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jboss/
+
 
 1. Avvia l&#39;application server.
 
@@ -1024,9 +1026,10 @@ L&#39;installazione chiavi in mano di AEM Forms su JEE imposta un account di ser
 
    >[!NOTE]
    >
-   > Percorso di installazione predefinito di JBoss Application Server:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jboss/.
+   >Percorso di installazione predefinito di JBoss Application Server:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jboss/.
 
 
 1. Avviare il servizio server applicazioni.

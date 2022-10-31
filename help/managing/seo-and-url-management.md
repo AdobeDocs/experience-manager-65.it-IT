@@ -7,7 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 97%
@@ -366,9 +366,9 @@ AEM utilizza il [Modulo Sling Sitemap di Apache](https://github.com/apache/sling
 
 >[!NOTE]
 >
-> Questa funzione è disponibile come funzionalità del prodotto a partire dalla versione 6.5.11.0 di Adobe Experience Manager.
+>Questa funzione è disponibile come funzionalità del prodotto a partire dalla versione 6.5.11.0 di Adobe Experience Manager.
 > 
-> Per le versioni precedenti è possibile registrare un servlet Sling autonomamente, per ascoltare un `sitemap.xml` chiama e utilizza la risorsa fornita tramite l’API del servlet per cercare la pagina corrente e i relativi discendenti e generare un file sitemap.xml.
+>Per le versioni precedenti è possibile registrare un servlet Sling autonomamente, per ascoltare un `sitemap.xml` chiama e utilizza la risorsa fornita tramite l’API del servlet per cercare la pagina corrente e i relativi discendenti e generare un file sitemap.xml.
 
 Il modulo Sling Sitemap di Apache distingue tra una sitemap di livello superiore e una sidemap nidificata, entrambe generate per qualsiasi risorsa con la `sling:sitemapRoot` proprietà impostata su `true`. In generale, le sitemap vengono sottoposte a rendering utilizzando i selettori nel percorso della sitemap di primo livello della struttura, che è la risorsa senza altri predecessori della radice della sitemap. Questa radice di sitemap di livello superiore espone anche l’indice della sitemap, che normalmente è ciò che un proprietario del sito configurerebbe nel portale di configurazione del motore di ricerca o aggiungerebbe al sito `robots.txt`.
 
@@ -380,7 +380,7 @@ Ad esempio, considera un sito che definisce una directory principale di sitemap 
 
 >[!NOTE]
 >
-> I selettori `sitemap` e `sitemap-index` possono interferire con le implementazioni personalizzate. Se non desideri utilizzare la funzione del prodotto, configura il tuo servlet che serve questi selettori con un `service.ranking` superiore a 0.
+>I selettori `sitemap` e `sitemap-index` possono interferire con le implementazioni personalizzate. Se non desideri utilizzare la funzione del prodotto, configura il tuo servlet che serve questi selettori con un `service.ranking` superiore a 0.
 
 Nella configurazione predefinita, la finestra di dialogo Proprietà pagina consente di contrassegnare una pagina come radice di una sitemap e quindi, come descritto in precedenza, di generare una sitemap di se stessa e dei suoi discendenti. Questo comportamento è implementato dalle implementazioni dell’interfaccia `SitemapGenerator` e può essere esteso aggiungendo implementazioni alternative. Tuttavia, dato che la frequenza con cui rigenerare sitemap XML dipende fortemente dai flussi di lavoro e dai carichi di lavoro per l’authoring dei contenuti, il prodotto non presenta configurazioni `SitemapScheduler`. In questo modo la funzione può essere effettivamente opt-in.
 

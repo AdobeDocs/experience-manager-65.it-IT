@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 923ee0e20a6e41c9493a77b179f93dd81ff91020
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3683'
 ht-degree: 1%
@@ -39,8 +39,8 @@ In questo documento sono elencate le piattaforme client e server supportate per 
 
 >[!NOTE]
 >
-> - Per un elenco completo delle eccezioni alle piattaforme server supportate, vedi [Eccezioni alle piattaforme server supportate](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
-> - AEM Forms su JEE supporta solo le versioni inglese, francese, tedesca e giapponese dei sistemi operativi e delle applicazioni supportati.
+>- Per un elenco completo delle eccezioni alle piattaforme server supportate, vedi [Eccezioni alle piattaforme server supportate](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- AEM Forms su JEE supporta solo le versioni inglese, francese, tedesca e giapponese dei sistemi operativi e delle applicazioni supportati.
 
 
 ### Configurazioni consigliate {#recommendedconfigurations}
@@ -77,15 +77,16 @@ L&#39;Adobe consiglia queste configurazioni e fornisce supporto completo o limit
 
 >[!NOTE]
 >
-> Per aiutare i clienti AEM Forms a ridurre i costi di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server delle applicazioni a favore di implementazioni indipendenti basate su OSGi. Adobe continua a supportare lo stack JEE di AEM Forms con una matrice ridotta di componenti dell’infrastruttura.
+>Per aiutare i clienti AEM Forms a ridurre i costi di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server delle applicazioni a favore di implementazioni indipendenti basate su OSGi. Adobe continua a supportare lo stack JEE di AEM Forms con una matrice ridotta di componenti dell’infrastruttura.
 >
-> Con la versione 6.5 di , i componenti dell’infrastruttura con l’utilizzo più basso tra i clienti non sono più supportati come segue:
-> ・ Database IBM DB2
-> ・ Sistemi operativi IBM AIX e Sun Solaris
+>Con la versione 6.5 di , i componenti dell’infrastruttura con l’utilizzo più basso tra i clienti non sono più supportati come segue:
 >
-> Per le nuove installazioni, se possibile, si consiglia di implementare AEM Forms nel moderno stack OSGi per sfruttare le ultime innovazioni relative a Forms adattivo reattivo per le comunicazioni interattive mobili, multicanale e back-end di dati integrativi tramite Form Data Model.
+>- Database IBM DB2
+>- Sistemi operativi IBM AIX e Sun Solaris
 >
-> Riconosciamo che gli utenti esistenti devono continuare a distribuire AEM Forms sullo stack JEE. In tali scenari, Adobe richiede la distribuzione di JEE AEM Forms sull’infrastruttura supportata come descritto in questa documentazione. Se esegui l’aggiornamento a Forms 6.5 e utilizzi una piattaforma non supportata nella versione precedente di AEM Forms, contatta il Supporto di Adobe per assistenza sull’aggiornamento a una piattaforma supportata.
+>Per le nuove installazioni, se possibile, si consiglia di implementare AEM Forms nel moderno stack OSGi per sfruttare le ultime innovazioni relative a Forms adattivo reattivo per le comunicazioni interattive mobili, multicanale e back-end di dati integrativi tramite Form Data Model.
+>
+>Riconosciamo che gli utenti esistenti devono continuare a distribuire AEM Forms sullo stack JEE. In tali scenari, Adobe richiede la distribuzione di JEE AEM Forms sull’infrastruttura supportata come descritto in questa documentazione. Se esegui l’aggiornamento a Forms 6.5 e utilizzi una piattaforma non supportata nella versione precedente di AEM Forms, contatta il Supporto di Adobe per assistenza sull’aggiornamento a una piattaforma supportata.
 
 ### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
@@ -133,8 +134,8 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 
 >[!NOTE]
 >
-> - Si consiglia di tenere traccia dei bollettini sulla sicurezza dal fornitore Java per garantire la sicurezza degli ambienti di produzione e installare gli ultimi aggiornamenti Java.
-> - AEM Forms su JEE supporta solo JVM a 64 bit in ambienti di produzione.
+>- Si consiglia di tenere traccia dei bollettini sulla sicurezza dal fornitore Java per garantire la sicurezza degli ambienti di produzione e installare gli ultimi aggiornamenti Java.
+>- AEM Forms su JEE supporta solo JVM a 64 bit in ambienti di produzione.
 
 
 ### Database e persistenza CRX {#databases-and-crx-persistence}
@@ -281,7 +282,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 
 >[!NOTE]
 >
-> I cluster IBM® WebSphere® sono supportati solo nelle edizioni di distribuzione in rete.
+>I cluster IBM® WebSphere® sono supportati solo nelle edizioni di distribuzione in rete.
 
 ### Sistemi operativi server {#server-operating-systems}
 
@@ -517,18 +518,18 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 
 >[!NOTE]
 >
-> PDF Generator supporta solo le versioni inglese, francese, tedesca e giapponese dei sistemi operativi e delle applicazioni supportati.
+>PDF Generator supporta solo le versioni inglese, francese, tedesca e giapponese dei sistemi operativi e delle applicazioni supportati.
 >
-> Inoltre:
+>Inoltre:
 >
-> - PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
-> - PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione.
-> - PDF Generator non supporta Microsoft Office 365.
-> - Le conversioni di PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
-> - Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
-> - Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
+>- PDF Generator supporta solo la versione Retail a 32 bit di Microsoft Office Professional Plus e altri software necessari per la conversione.
+>- PDF Generator non supporta Microsoft Office 365.
+>- Le conversioni di PDF Generator per OpenOffice sono supportate solo su Windows e Linux.
+>- Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
+>- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
-> - Il servizio PDF Generator non supporta Microsoft Windows 10.
+>- Il servizio PDF Generator non supporta Microsoft Windows 10.
 
 
 ### Eccezioni al supporto per l’accessibilità {#exceptions-to-accessibility-support}
@@ -642,7 +643,7 @@ Per ulteriori requisiti consulta:
 
 >[!NOTE]
 >
-> La famiglia di prodotti Acrobat DC introduce due tracce sia per Acrobat che per il Reader, che sono essenzialmente prodotti diversi: &quot;Classic&quot; e &quot;Continuous&quot;. Per i dettagli e un confronto delle due tracce, vedere [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>La famiglia di prodotti Acrobat DC introduce due tracce sia per Acrobat che per il Reader, che sono essenzialmente prodotti diversi: &quot;Classic&quot; e &quot;Continuous&quot;. Per i dettagli e un confronto delle due tracce, vedere [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Browser {#browsers}
 
@@ -695,13 +696,13 @@ Per ulteriori requisiti consulta:
 
 >[!NOTE]
 >
-> Alcune eccezioni relative al browser per i desktop sono le seguenti:
+>Alcune eccezioni relative al browser per i desktop sono le seguenti:
 >
-> - Safari è supportato solo su Macintosh OS X.
-> - Workspace supporta Safari 5.1 su Macintosh OS X 10.6 e 10.7 con Acrobat DC o versioni successive. Per ulteriori informazioni sulla compatibilità di Safari 5.1 con Adobe Reader e Acrobat, consulta [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
-> - La console di amministrazione non è supportata in Safari.
-> - Gestione corrispondenza non supporta Windows® Internet Explorer 9.0 per i moduli AEM 6.1.
-> - Il portale Forms supporta il software per assistenti vocali JAWS 14.0 su Internet Explorer 11 per l’accessibilità.
+>- Safari è supportato solo su Macintosh OS X.
+>- Workspace supporta Safari 5.1 su Macintosh OS X 10.6 e 10.7 con Acrobat DC o versioni successive. Per ulteriori informazioni sulla compatibilità di Safari 5.1 con Adobe Reader e Acrobat, consulta [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- La console di amministrazione non è supportata in Safari.
+>- Gestione corrispondenza non supporta Windows® Internet Explorer 9.0 per i moduli AEM 6.1.
+>- Il portale Forms supporta il software per assistenti vocali JAWS 14.0 su Internet Explorer 11 per l’accessibilità.
 
 
 #### Client mobili {#mobile-clients}
@@ -733,7 +734,7 @@ Per ulteriori requisiti consulta:
 
 >[!NOTE]
 >
-> - Forms Portal è supportato solo su Safari in iPad.
+>- Forms Portal è supportato solo su Safari in iPad.
 
 
 ### app AEM Forms {#aem-forms-workspace-app}
@@ -800,7 +801,7 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
 
 >[!NOTE]
 >
-> Piattaforme contrassegnate come [obsoleto in con AEM Forms 6.5.12.0 e 6.5.10.0 rimane in supporto fino alla versione 6.5 Service Pack 18 (6.5.18.0) di AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>Piattaforme contrassegnate come [obsoleto in con AEM Forms 6.5.12.0 e 6.5.10.0 rimane in supporto fino alla versione 6.5 Service Pack 18 (6.5.18.0) di AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Cronologia revisioni {#revision-history}
 

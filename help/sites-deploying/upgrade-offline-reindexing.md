@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> Il processo di creazione della definizione dell&#39;indice di cui sopra è supportato solo da `oak-run-1.12.0` a partire dalla versione. Il targeting viene eseguito utilizzando il bundle dell&#39;archivio Granite `com.adobe.granite.repository-x.x.xx.jar`.
+>Il processo di creazione della definizione dell&#39;indice di cui sopra è supportato solo da `oak-run-1.12.0` a partire dalla versione. Il targeting viene eseguito utilizzando il bundle dell&#39;archivio Granite `com.adobe.granite.repository-x.x.xx.jar`.
 
 I passaggi precedenti creano un file JSON denominato `merge-index-definitions_target.json` che è la definizione dell&#39;indice.
 
@@ -141,7 +141,7 @@ Una volta fatto questo, copia il nuovo id del punto di controllo creato e conval
 
 >[!NOTE]
 >
-> Questo punto di controllo verrà eliminato quando l&#39;indice viene importato in un secondo momento.
+>Questo punto di controllo verrà eliminato quando l&#39;indice viene importato in un secondo momento.
 
 Per maggiori dettagli, consulta [creazione di checkpoint](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) dalla documentazione Oak.
 

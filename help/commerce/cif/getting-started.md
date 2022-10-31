@@ -4,7 +4,7 @@ description: Scopri come distribuire un progetto AEM Content and Commerce .
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 6%
@@ -70,17 +70,22 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 - Client GraphQL: seleziona il client GraphQL configurato per la comunicazione back-end Commerce. In genere questo dovrebbe rimanere il valore predefinito.
 - Visualizzazione archivio: l&#39;identificatore della vista archivio. Se questo campo viene lasciato vuoto, verrà utilizzata la visualizzazione archivio predefinita.
 - Percorso proxy GraphQL: percorso URL del proxy GraphQL in AEM per le richieste proxy all’endpoint GraphQL di back-end per e-commerce.
+
    >[!NOTE]
    >
-   > Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non devono essere modificate. Solo la configurazione avanzata che non utilizza il proxy GraphQL fornito dovrebbe modificare questa impostazione.
+   >Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non devono essere modificate. Solo la configurazione avanzata che non utilizza il proxy GraphQL fornito dovrebbe modificare questa impostazione.
+
 - Abilita supporto UID catalogo : abilita il supporto per UID invece di ID nelle chiamate GraphQL di back-end per e-commerce.
+
    >[!NOTE]
    >
-   > Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+   >Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilitalo solo se il backend commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+
 - Identificatore della categoria principale del catalogo: l&#39;identificatore (UID o ID) della directory principale del catalogo store
+
    >[!CAUTION]
    >
-   > A partire dalla versione 2.0.0 dei componenti core CIF , il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, è necessario abilitare il supporto per gli UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore di categoria principale del catalogo&quot;.
+   >A partire dalla versione 2.0.0 dei componenti core CIF , il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core CIF versione 2.0.0, è necessario abilitare il supporto per gli UID del catalogo e utilizzare un UID di categoria valido come &quot;Identificatore di categoria principale del catalogo&quot;.
 
 La configurazione mostrata sopra è di riferimento. I progetti devono fornire le proprie configurazioni.
 

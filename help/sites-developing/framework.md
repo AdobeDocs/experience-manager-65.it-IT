@@ -12,7 +12,7 @@ discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 4db9279f2d15f2e08939ba453ae8ddbbc3c3d69f
+source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 0%
@@ -230,8 +230,9 @@ Un valore speciale per `cq:movedTo` è `nirvana`: viene applicata quando il tag 
    >[!NOTE]
    >
    >La `cq:movedTo` viene aggiunta al tag spostato o unito solo se viene soddisfatta una delle seguenti condizioni:
-   > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O
-   > 1. Il tag include elementi secondari già spostati.
+   >
+   >1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O
+   >1. Il tag include elementi secondari già spostati.
 
 
 * `cq:backlinks` mantiene i riferimenti nell’altra direzione, ovvero mantiene un elenco di tutti i tag spostati o uniti al tag B. Questo è richiesto principalmente per mantenere `cq:movedTo`le proprietà sono aggiornate anche quando il tag B viene spostato/unito/eliminato o quando il tag B viene attivato, nel qual caso devono essere attivati anche tutti i suoi tag backlink.
@@ -240,8 +241,8 @@ Un valore speciale per `cq:movedTo` è `nirvana`: viene applicata quando il tag 
    >
    >La `cq:backlinks` viene aggiunta al tag spostato o unito solo se viene soddisfatta una delle seguenti condizioni:
    >
-   > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O >
-   > 1. Il tag include elementi secondari già spostati.
+   >1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento) O
+   >1. Il tag include elementi secondari già spostati.
 
 
 * Lettura di un `cq:tags` di un nodo di contenuto comporta la seguente risoluzione:
@@ -334,7 +335,7 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` percorsi (nel caso in cui `/etc/tags` viene rilevato nel valore).
+Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` (nel caso in cui `/etc/tags` viene rilevato nel valore).
 
 ### Se l’istanza AEM aggiornata viene eseguita nell’interfaccia classica {#upgraded-instance-runs-classic-ui}
 

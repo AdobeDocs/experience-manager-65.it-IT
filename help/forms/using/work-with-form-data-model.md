@@ -10,7 +10,7 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '4128'
 ht-degree: 0%
@@ -199,10 +199,10 @@ Utilizza l’attributo di richiesta per recuperare le proprietà associate dall�
 
    >[!NOTE]
    >
-   > * Se utilizzi un modello statico, sovrapponi head.jsp in:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * Se utilizzi un modello modificabile, sovrapponi aftemplatedpage.jsp in:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* Se utilizzi un modello statico, sovrapponi head.jsp in:
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* Se utilizzi un modello modificabile, sovrapponi aftemplatedpage.jsp in:
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Imposta [!DNL paramMap] per l’attributo di richiesta. Ad esempio, includi il seguente codice nel file .jsp nella cartella apps :
