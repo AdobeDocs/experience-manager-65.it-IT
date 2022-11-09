@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
 workflow-type: tm+mt
-source-wordcount: '4679'
-ht-degree: 9%
+source-wordcount: '4664'
+ht-degree: 10%
 
 ---
 
@@ -176,7 +176,7 @@ Gli indici Solr possono essere configurati per l&#39;esecuzione di dati incorpor
 
 >[!NOTE]
 >
->Se si adotta l&#39;approccio integrato di ricerca Solr, si può scaricare l&#39;indicizzazione su un server Solr. Se le funzioni più avanzate del server Solr vengono utilizzate tramite un approccio basato su crawler, sarà necessario un ulteriore lavoro di configurazione. La cuffia ha creato un [connettore open source](https://www.aemsolrsearch.com/#/) accelerare questi tipi di implementazioni.
+>Se si adotta l&#39;approccio integrato di ricerca Solr, si può scaricare l&#39;indicizzazione su un server Solr. Se le funzioni più avanzate del server Solr vengono utilizzate tramite un approccio basato su crawler, sarà necessario un ulteriore lavoro di configurazione.
 
 Il lato negativo di questo approccio è che, mentre per impostazione predefinita, le query AEM rispetteranno le ACL e quindi nascondono i risultati a cui un utente non ha accesso, esternalizzare la ricerca a un server Solr non supporterà questa funzione. Se la ricerca deve essere esternalizzata in questo modo, occorre prestare maggiore attenzione affinché gli utenti non ricevano risultati che non dovrebbero vedere.
 
@@ -458,9 +458,9 @@ In condizioni normali di AEM, ad esempio durante il caricamento di risorse trami
 
 *Esegui il passaggio 1(a-b) durante una finestra di manutenzione/un periodo di utilizzo ridotto, mentre il Node Store viene attraversato durante questa operazione, che può comportare un carico significativo sul sistema.*
 
-1 bis. Esegui `oak-run.jar --generate` per creare un elenco di nodi in cui il loro testo verrà pre-estratto.
+1a. Esegui `oak-run.jar --generate` per creare un elenco di nodi in cui il loro testo verrà pre-estratto.
 
-1 ter. L’elenco dei nodi (1a) è memorizzato nel file system come file CSV
+1b. L’elenco dei nodi (1a) è memorizzato nel file system come file CSV
 
 Tieni presente che l’intero Node Store viene attraversato ogni volta (come specificato dai percorsi nel comando oak-run) `--generate` viene eseguito e viene eseguito un **nuovo** Viene creato un file CSV. Il file CSV è **not** riutilizzato tra esecuzioni discrete del processo di preestrazione del testo (passaggi 1 - 2).
 
@@ -468,9 +468,9 @@ Tieni presente che l’intero Node Store viene attraversato ogni volta (come spe
 
 *Il passaggio 2 (a-c) può essere eseguito durante il normale funzionamento di AEM se interagisce solo con l&#39;archivio dati.*
 
-2 bis. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
+2a. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
 
-2 ter. Il processo avviato in (2a) accede direttamente ai nodi binari definiti nel CSV nel Data Store ed estrae il testo.
+2b. Il processo avviato in (2a) accede direttamente ai nodi binari definiti nel CSV nel Data Store ed estrae il testo.
 
 2 quater.  Il testo estratto viene memorizzato nel file system in un formato assimilabile dal processo di reindicizzazione Oak (3a)
 
@@ -482,6 +482,6 @@ Il testo pre-estratto può essere aggiunto in modo incrementale nel tempo. La pr
 
 *Esegui la reindicizzazione (passaggi 3a-b) durante un periodo di manutenzione/basso utilizzo mentre il Node Store viene attraversato durante questa operazione, che può comportare un carico significativo sul sistema.*
 
-3 bis. [Reindicizzazione](#how-to-re-index) di indici Lucene viene richiamato in AEM
+3a. [Reindicizzazione](#how-to-re-index) di indici Lucene viene richiamato in AEM
 
-3 ter. La configurazione OSGi Apache Jackrabbit Oak DataStore PreExtraitTextProvider OSGi (configurata per puntare al testo estratto tramite un percorso del file system) istruisce Oak al testo full-text ottenuto dai file estratti ed evita di colpire ed elaborare direttamente i dati memorizzati nell&#39;archivio.
+3b. La configurazione OSGi Apache Jackrabbit Oak DataStore PreExtraitTextProvider OSGi (configurata per puntare al testo estratto tramite un percorso del file system) istruisce Oak al testo full-text ottenuto dai file estratti ed evita di colpire ed elaborare direttamente i dati memorizzati nell&#39;archivio.
