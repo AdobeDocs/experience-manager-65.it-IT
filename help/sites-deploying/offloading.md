@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2364'
 ht-degree: 2%
 
 ---
@@ -237,7 +237,7 @@ Il framework di offload utilizza la replica per trasportare le risorse tra autor
 
 >[!CAUTION]
 >
->Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica. Segui la procedura descritta in [Problemi relativi all’utilizzo degli agenti di replica generati automaticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) prima di creare gli agenti per lo scaricamento.
+>Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica.
 
 Creare gli agenti di replica che trasportano i payload di lavoro tra le istanze per lo scaricamento. L’illustrazione seguente mostra gli agenti necessari per scaricare dall’autore a un’istanza di lavoro. L’autore ha un Sling ID di 1 e l’istanza di lavoro ha un Sling ID di 2:
 
