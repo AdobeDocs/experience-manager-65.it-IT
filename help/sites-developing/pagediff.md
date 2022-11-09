@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85895215904b8706830d20f7714de5512b2c3ec2
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 11%
+source-wordcount: '375'
+ht-degree: 10%
 
 ---
 
@@ -58,3 +58,7 @@ Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni
    * Componenti che utilizzano AJAX per includere i contenuti
    * Applicazioni a pagina singola
    * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.
+
+>[!NOTE]
+>
+>Il confronto delle differenze tra pagine funziona solo per i componenti che hanno nodi cq:editConfig validi.
