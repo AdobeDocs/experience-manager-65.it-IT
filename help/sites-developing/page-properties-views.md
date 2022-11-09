@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Ad esempio, vedere le impostazioni per i campi raggruppati sotto la **Altri tito
 
 >[!TIP]
 >
->Consulta la sezione [Esercitazione sull’estensione delle proprietà pagina](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) per una guida alla personalizzazione delle proprietà della pagina.
+>Consulta la sezione [Esercitazione sull’estensione delle proprietà pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) per una guida alla personalizzazione delle proprietà della pagina.
 
 ## Configurazione delle proprietà di pagina {#configuring-your-page-properties}
 
@@ -103,7 +103,7 @@ Durante la configurazione delle proprietà della pagina da utilizzare con le Liv
 
 ## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 
-Questo esempio illustra la tecnica di dialogo delle differenze tra [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Illustra inoltre l&#39;uso di entrambi `cq:showOnCreate` e `cq:hideOnEdit`.
+Questo esempio illustra la tecnica di dialogo delle differenze tra [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Illustra inoltre l&#39;uso di `cq:showOnCreate` e `cq:hideOnEdit`.
 
 CODICE SU GITHUB
 

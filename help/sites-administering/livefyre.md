@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: e1536c370b37d82d4d7890dcc063af85145730bb
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1648'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ L’integrazione di autenticazione predefinita potrebbe non essere perfetta per 
 
    Per ulteriori informazioni sulla personalizzazione di un delegato di autenticazione, vedi [Integrazione di Identity](https://answers.livefyre.com/developers/identity-integration/).
 
-   Per ulteriori informazioni sulle AEM Clientlibs, vedi [Utilizzo delle librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
+   Per ulteriori informazioni sulle AEM Clientlibs, vedi [Utilizzo delle librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it).
 
 ## Utilizzare Livefyre con AEM Sites {#use-livefyre-with-aem-sites}
 
@@ -141,7 +141,7 @@ Puoi importare contenuti generati dagli utenti di Twitter e Instagram (UGC) da L
 
 >[!NOTE]
 >
->Prima di utilizzare Assets per importare UGC, è necessario impostare gli account Social Accounts e Rights Requests in Livefyre Studio. Vedi [Impostazione: Richieste di diritti](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) per ulteriori informazioni.
+>Prima di utilizzare Assets per importare UGC, è necessario impostare gli account Social Accounts e Rights Requests in Livefyre Studio. Vedi [Impostazione: Richieste di diritti](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) per ulteriori informazioni.
 
 Per importare UGC in AEM Assets:
 

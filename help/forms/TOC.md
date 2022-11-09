@@ -8,10 +8,10 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 5%
+source-wordcount: '3801'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 5%
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
    + [Introduzione alla gestione dei moduli](using/introduction-managing-forms.md)
-   + [Introduzione al servizio di conversione automatica dei moduli](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
       + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
       + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
@@ -57,12 +57,12 @@ ht-degree: 5%
    + [Architettura e topologie di implementazione per AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Scelta di un tipo di persistenza per un’installazione di AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Installare AEM Forms su OSGi {#osgi-installation}
-      + [Piattaforme supportate per i moduli AEM su OSGi](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Piattaforme supportate per i moduli AEM su OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [Installare e configurare document services](using/install-configure-document-services.md)
       + [Installare e configurare le funzionalità di acquisizione dati](using/installing-configuring-aem-forms-osgi.md)
       + [Installare e configurare un flusso di lavoro incentrato su Forms su OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installare e configurare le comunicazioni interattive](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Installare e configurare il servizio Automated forms conversion](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Installare e configurare il servizio Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Installare AEM Forms su JEE {#jee-installation}
       + [Piattaforme supportate per AEM moduli su JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installazione e distribuzione di AEM Forms su JEE utilizzando JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -578,8 +578,8 @@ ht-degree: 5%
    + [Query ad hoc nel reporting dei processi](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Risoluzione dei problemi di reporting dei processi](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guida per gli sviluppatori {#developer-reference}
-   + [Nozioni di base sugli sviluppatori](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML Template Language ](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+   + [Nozioni di base sugli sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+   + [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
    + [AEM plug-in per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java di AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Riferimento API di AEM Forms su JEE Java](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)

@@ -10,9 +10,9 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3755'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Quando implementi AEM (in particolare per la prima volta) dovrai rivedere il [ca
 Considera le caratteristiche di AEM che utilizzerai e l’impatto sul tuo design; ad esempio:
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
 * [Assets](/help/assets/assets.md)
 * [Tag](/help/sites-administering/tags.md)
 * [Gestione e traduzione multisito](/help/sites-administering/msm-and-translation.md)
@@ -480,7 +480,7 @@ L&#39;elenco seguente mostra le approssimazioni standard e le interrelazioni di 
 
 | Fase | Sforzo |
 |---|---|
-| Sviluppo | Una stima approssimativa di 2 - 4 ore per ciascun nodo componente copre tutti i requisiti di sviluppo. |
+| Ambiente di sviluppo | Una stima approssimativa di 2 - 4 ore per ciascun nodo componente copre tutti i requisiti di sviluppo. |
 | Test per sviluppatori | 15% di sviluppo |
 | Seguito | 10% di sviluppo |
 | Documentazione | 15% di sviluppo |

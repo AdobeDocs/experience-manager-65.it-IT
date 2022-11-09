@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 4%
 
 ---
 
@@ -137,8 +137,8 @@ Le finestre di dialogo sono un fattore importante durante la migrazione dei comp
 Anche se non è direttamente correlato a una migrazione all’interfaccia utente touch, esistono problemi correlati che è bene considerare allo stesso tempo, in quanto sono anche la pratica consigliata:
 
 * [Modelli](/help/sites-developing/templates.md) - [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
-* [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Per informazioni complete sullo sviluppo di AEM vedere la raccolta di risorse in
 
 * [Guida utente allo sviluppo](/help/sites-developing/home.md)
 * [Documentazione dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutorials e video AEM 6.5 Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Tutorials e video AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](/help/sites-developing/getting-started.md)
 * [AEM gemme](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1743'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ La tabella seguente descrive le variabili CQ predefinite fornite per il metodo M
 
 1. Per mappare le variabili CQ alle proprietà Adobe Analytics, trascina le proprietà Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull’ottimizzazione delle mappature, consulta la sezione [Misurazione di video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guida.
+   Per informazioni sull’ottimizzazione delle mappature, consulta la sezione [Misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guida.
 
 1. [Aggiungi il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare la configurazione in **Modalità Anteprima**, riproduci il video per attivare le chiamate Adobe Analytics.
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. Per mappare le variabili CQ alle proprietà Adobe Analytics, trascina le proprietà Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull’ottimizzazione delle mappature, consulta la sezione [Misurazione di video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guida.
+   Per informazioni sull’ottimizzazione delle mappature, consulta la sezione [Misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guida.
 
 1. [Aggiungi il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare la configurazione in **Modalità Anteprima**, riproduci il video per attivare le chiamate Adobe Analytics.
@@ -383,4 +383,4 @@ Quando si utilizza il metodo** dei secondi precedenti**, le chiamate Adobe Analy
 
 **Riferimenti utilizzati in questa esercitazione:**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

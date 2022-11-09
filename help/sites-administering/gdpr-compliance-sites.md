@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 54%
+source-wordcount: '832'
+ht-degree: 55%
 
 ---
 
@@ -51,13 +51,13 @@ AEM [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) ch
 
 AEM Sites include un’integrazione opzionale con gli approfondimenti migliorati di Analytics che utilizza funzionalità all’interno del servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalizzazione migliorata da Target {#enhanced-personalization-by-target}
 
 AEM Sites include un’integrazione opzionale con la personalizzazione avanzata di Target che utilizza funzionalità all’interno del servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Per ulteriori informazioni sulla gestione delle richieste relative alle persone interessate al RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati (RGPD)](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=it).
 
 ## ContextHub {#contexthub}
 

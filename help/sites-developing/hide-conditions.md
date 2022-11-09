@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 3%
+source-wordcount: '626'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Quando definisci l’espressione nascondi , tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Esempi di condizioni di nascondere possono essere trovati in tutto AEM e [componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) in particolare. Ad esempio, considera il [elenco dei componenti core](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Esempi di condizioni di nascondere possono essere trovati in tutto AEM e [componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Ad esempio, considera il [elenco dei componenti core](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
 [Utilizzo dell’editor modelli](/help/sites-authoring/templates.md), l’autore del modello può definire nella finestra di dialogo della progettazione quali opzioni del componente elenco sono disponibili per l’autore della pagina. Ad esempio, se consentire o meno che l’elenco sia un elenco statico, un elenco di pagine figlie, un elenco di pagine con tag e così via. possono essere abilitate o disabilitate.
 

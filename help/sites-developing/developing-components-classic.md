@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2392'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’asp
 >
 >Sebbene sia HTML Template Language (HTL) che JSP possano essere utilizzati per lo sviluppo di componenti per l’interfaccia classica, questa pagina illustra lo sviluppo con JSP. Ciò è dovuto esclusivamente alla cronologia dell’utilizzo di JSP nell’interfaccia classica.
 >
->HTL è ora il linguaggio di script consigliato per AEM. Vedi [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
+>HTL è ora il linguaggio di script consigliato per AEM. Vedi [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
 
 ## Struttura {#structure}
 

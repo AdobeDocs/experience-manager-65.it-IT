@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Dopo aver eseguito questi passaggi, l&#39;app verrà abilitata per segnalare tut
 
 ### Strumento il codice per il tracciamento completo delle app {#instrument-your-code-for-full-app-tracking}
 
-Sono disponibili diverse API di tracciamento fornite nel [API Plug-in Phonegap AMS.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Sono disponibili diverse API di tracciamento fornite nel [API Plug-in Phonegap AMS.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Questi ti consentono di tenere traccia degli stati e delle azioni, ad esempio le pagine a cui gli utenti si spostano nell’app, quali controlli vengono utilizzati di più. Il modo più semplice per abilitare il tracciamento dell’app è quello di utilizzare le API di Analytics fornite dal plug-in AMS.
 

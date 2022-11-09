@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 81%
+source-wordcount: '1216'
+ht-degree: 83%
 
 ---
 
@@ -68,7 +68,7 @@ AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefin
 >Per ulteriori informazioni, consulta:
 >
 >* [Sviluppo Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
->* [Componenti core: Frammenti di esperienza](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+>* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=it)
 >
 
 
@@ -118,7 +118,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
    >
    >Consulta il componente core :
    >
-   >[Componenti core: Frammenti di esperienza](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
    Sotto **Adobe Target** seleziona:
 

@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: d31fef1fe7023dfa5129bb8d136550b43ef197d1
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3302'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->I servizi di contenuti avanzati non saranno disponibili per i nuovi clienti Experience Manager Assets On-Premise a partire dal 1° settembre 2022. Nessun impatto sui clienti esistenti On-Premise e Adobe Managed Services che dispongono già di questa funzionalità abilitata.
+>I servizi di contenuti avanzati non saranno disponibili per i nuovi clienti Experience Manager Assets On-Premise a partire dal 1° settembre 2022. Nessun impatto sui clienti esistenti On-Premise e Adobe Managed Services che hanno già abilitato questa funzionalità.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
@@ -93,7 +93,7 @@ ht-degree: 5%
 -->
 
 * Quando un file viene allegato a un modulo adattivo per più pannelli e viene salvata una bozza del modulo adattivo, si verifica un errore. (NPR-38978)
-* Quando un utente converte un profilo RGB in un profilo CMYK utilizzando l’API Java createPDF2 con le impostazioni AdobePDF, l’opzione non funziona con l’API Java. L’opzione funziona correttamente con l’applicazione indipendente DistillerClient. (NPR-38858, CQ-4346181)
+* Quando un utente converte un profilo RGB in un profilo CMYK utilizzando l’API createPDF2 Java™ con le impostazioni AdobePDF, l’opzione non funziona con l’API Java™. L’opzione funziona correttamente con l’applicazione indipendente DistillerClient. (NPR-38858, CQ-4346181)
 * Dopo aver installato AEM Service Pack 12 6.5 di Forms (6.5.12.0), tutte le opzioni eccetto per chiudere l&#39;attività diventano non disponibili nel passaggio Assegna task di AEM flussi di lavoro. (NPR-38743)
 * In un documento di record (DoR), alcuni valori in una tabella vengono troncati. (NPR-38657)
 * Quando si visualizza l&#39;anteprima di FormSet con Data XML, quando l&#39;XDP contiene un campo mobile, quando si visualizza l&#39;anteprima di un FormSet non vengono visualizzati dati, ma vengono visualizzati dati quando si utilizza l&#39;opzione Preview PDF.
@@ -109,12 +109,12 @@ ht-degree: 5%
 * Quando si crea un portale web e si generano codici a barre basati sui dati, alcuni codici a barre non vengono decodificati correttamente. (CQ-4345743)
 * La conversione Postscript in PDF non esegue il rendering del documento di output con i colori previsti. (CQ-4345074)
 * Il risolutore risorse causa errori di invio intermittenti e fa sì che la stessa traccia dello stack venga visualizzata più volte per un singolo invio. (CQ-4344764)
-* Gli utenti non possono aprire le bozze modificate che utilizzano il `cmDataUrl` parametro . Le bozze si aprono bene per la prima volta. I problemi iniziano a comparire nei tentativi successivi. (CQ-4344418)
+* Gli utenti non possono aprire le bozze modificate che utilizzano il `cmDataUrl` parametro . La bozza si apre bene per la prima volta. I problemi iniziano a comparire nei tentativi successivi. (CQ-4344418)
 * Quando l’utente accede al `&` simbolo in una comunicazione interattiva (IC), la bozza del codice IC corrispondente non viene caricata. (CQ-4343969)
 * Quando si utilizzano le opzioni di stile in AEM Forms Designer per generare file PCL, lo stile specificato non viene applicato ai file generati. (CQ-4339573)
 * Quando il conteggio delle pagine è superiore a 15, la conversione automatica dei moduli XDP dinamici in moduli adattivi non riesce. Questo funziona bene quando il conteggio delle pagine è inferiore a 15. (NPR-35337)
 * Quando si utilizza l’opzione Aggiungi ai preferiti, lo stato dell’interruttore non viene indicato nell’assistente vocale. (NPR-37137)
-* In Modello dati modulo, i valori dopo il decimale nel modello dati modulo basato su database vengono troncati per il tipo di dati in denaro e denaro piccolo. . (CQDOC-19509)
+* In Modello dati modulo, i valori dopo il decimale nel modello dati modulo basato su database vengono troncati per il tipo di dati in denaro e denaro piccolo. (CQDOC-19509)
 * Quando si seleziona un collegamento di navigazione per un flusso di lavoro in HTML Workspace, non viene indicato che il collegamento di navigazione è selezionato. (NPR-37138)
 * La funzione Firma digitale non è compatibile con le linee guida di accessibilità. (NPR-37596)
 * AEM Forms utilizza log4j 1.x. Il supporto per log4j 1.x ha raggiunto la fine del ciclo di vita. (NPR-38273)
@@ -122,8 +122,8 @@ ht-degree: 5%
 * In Forms 6.5 Designer, quando si apre un modulo creato con Forms 6.1 Designer e si modifica una casella di testo, la spaziatura tra i paragrafi supera lo spazio specificato. Tutte le impostazioni precedenti dello spazio vengono rimosse e è necessario riformattare manualmente la casella di testo. (CQ-4341899)
 * Viene visualizzato un valore non corretto per il codice a barre SSCC-18. I server Forms omettono il valore nella parte destra del codice a barre. (CQ-4342400)
 * Per i PDF forms statici creati con Forms 6.5 Designer, l’accessibilità di PDF non riesce e viene generato un errore `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Aggiunta la possibilità di specificare il testo del Reader di schermate per i collegamenti ipertestuali in Forms Designer.(NPR-36221)
-* Quando si aggiunge un pannello ripetibile a una forma adattiva non XFA e il conteggio dei pannelli ripetibili in una forma non XFA è superiore a 15, l’aggiunta di una nuova istanza può richiedere fino a 7-8 secondi. (NPR-37346)
+* Aggiunta la possibilità di specificare il testo del Reader di schermate per i collegamenti ipertestuali in Forms Designer. (NPR-36221)
+* Quando si aggiunge un pannello ripetibile a una forma adattiva non XFA e il conteggio dei pannelli ripetibili in una forma non XFA è superiore a 15, l&#39;aggiunta di un&#39;istanza può richiedere fino a 7-8 secondi. (NPR-37346)
 
 ## Integrazioni {#integrations-6514}
 
@@ -206,9 +206,9 @@ ht-degree: 5%
 * Il download del service pack è disponibile ad Adobe [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 * In una distribuzione con MongoDB e più istanze, installare [!DNL Experience Manager] 6.5.14.0 su una delle istanze Autore che utilizza Gestione pacchetti.<!-- UPDATE FOR EACH NEW RELEASE -->
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Adobe sconsiglia di rimuovere o disinstallare il [!DNL Experience Manager] pacchetto 6.5.14.0. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Adobe sconsiglia di rimuovere o disinstallare il [!DNL Experience Manager] pacchetto 6.5.14.0. Pertanto, prima di installare il service pack, è necessario creare un backup del `crx-repository` nel caso sia necessario riportarlo indietro. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ### Installa il service pack su [!DNL Experience Manager] 6,5 {#install-service-pack}
 
@@ -284,7 +284,7 @@ UberJar per [!DNL Experience Manager] 6.5.13.0 è disponibile nella [Archivio ce
 
 >[!NOTE]
 >
->In Experience Manager 6.5.14.0, tieni presente che la versione UberJar (6.5.13.0) rimane la stessa della versione precedente.
+>In Experience Manager 6.5.14.0, la versione UberJar (6.5.13.0) rimane la stessa della versione precedente.
 
 Per utilizzare UberJar in un progetto Maven, vedi [come utilizzare UberJar](/help/sites-developing/ht-projects-maven.md) e includere nel POM del progetto la seguente dipendenza: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 

@@ -1,7 +1,7 @@
 ---
 title: Best practice
 seo-title: Best Practices
-description: I team di ingegneria e consulenza Adobe hanno sviluppato una serie completa di best practice per gli sviluppatori AEM
+description: I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM
 seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 14%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 ## Procedure consigliate per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
-I team tecnici e di consulenza di Adobe hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM. Gli sviluppatori di Adobe aderiscono a queste best practice nello sviluppo di aggiornamenti di base AEM prodotto e codice cliente per le implementazioni dei clienti.
+I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM. Gli sviluppatori di Adobe aderiscono a queste best practice nello sviluppo di aggiornamenti di base AEM prodotto e codice cliente per le implementazioni dei clienti.
 
 Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le seguenti best practice:
 
@@ -32,7 +32,7 @@ Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le seguenti
 * [Insidie del codice](/help/sites-developing/code-pitfalls.md)
 * [Interazione JCR](/help/sites-developing/jcr-integration.md)
 * [Bundle OSGi](/help/sites-developing/osgi-bundles.md)
-* [Best practice per le API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informazioni aggiuntive sulle best practice {#additional-best-practices-information}
 
@@ -96,7 +96,7 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML, introdotto con
 
 |  |  |  |
 |---|---|---|
-| Panoramica di HTL | [Panoramica e sintassi di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) | Questo documento descrive cosa è HTL, come passare a HTL, un progetto di esempio, sintassi, espressioni e istruzioni. |
+| Panoramica di HTL | [Panoramica e sintassi di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Questo documento descrive cosa è HTL, come passare a HTL, un progetto di esempio, sintassi, espressioni e istruzioni. |
 | Utilizzo dell&#39;API in java | [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | L’API di utilizzo Java HTL abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. |
 
 >[!NOTE]

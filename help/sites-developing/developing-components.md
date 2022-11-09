@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '3485'
-ht-degree: 3%
+source-wordcount: '3477'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ Verrà eseguito il rendering del componente con [HTML](https://www.w3schools.com
 
 ### Utilizzo di HTML Template Language {#using-the-html-template-language}
 
-La [Lingua dei modelli HTML (HTL)](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che hanno bisogno di creare siti web aziendali affidabili, HTL consente di ottenere maggiore sicurezza ed efficienza di sviluppo.
+La [Lingua dei modelli HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che hanno bisogno di creare siti web aziendali affidabili, HTL consente di ottenere maggiore sicurezza ed efficienza di sviluppo.
 
 >[!NOTE]
 >
@@ -433,7 +433,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 >[!NOTE]
 >
->La creazione automatica delle istanze dei componenti può ora essere facilmente configurata all’interno dell’interfaccia utente quando utilizzi [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) e Modelli modificabili. Vedi [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) per ulteriori informazioni sulla definizione dei componenti che vengono associati automaticamente a determinati tipi di file multimediali.
+>La creazione automatica delle istanze dei componenti può ora essere facilmente configurata all’interno dell’interfaccia utente quando utilizzi [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e Modelli modificabili. Vedi [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) per ulteriori informazioni sulla definizione dei componenti che vengono associati automaticamente a determinati tipi di file multimediali.
 
 ## Utilizzo dell’estensione AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -442,7 +442,7 @@ La [Estensione Bracket AEM](/help/sites-developing/aem-brackets.md) fornisce un 
 Estensione:
 
 * Semplifica la sincronizzazione (senza Maven o File Vault necessari) per aumentare l&#39;efficienza degli sviluppatori e aiuta gli sviluppatori front-end con limitata conoscenza AEM a partecipare ai progetti.
-* Fornisce alcuni [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) supporto, il linguaggio dei modelli progettato per semplificare lo sviluppo dei componenti e aumentare la sicurezza.
+* Fornisce alcuni [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) supporto, il linguaggio dei modelli progettato per semplificare lo sviluppo dei componenti e aumentare la sicurezza.
 
 >[!NOTE]
 >
@@ -454,7 +454,7 @@ Durante la migrazione di un componente progettato per l’uso con l’interfacci
 
 * HTL
 
-   * Utilizzo di [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per considerare [migrazione da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Utilizzo di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per considerare [migrazione da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componenti
 

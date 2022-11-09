@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ I campi sono abilitati nel componente pagina (*not* sul modello):
 
    >[!NOTE]
    >
-   >Questo esempio presuppone che i componenti core siano stati installati nell&#39;istanza, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio di We.Retail. Consulta la sezione [Documentazione sui componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) per ulteriori informazioni.
+   >Questo esempio presuppone che i componenti core siano stati installati nell&#39;istanza, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio di We.Retail. Consulta la sezione [Documentazione sui componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per ulteriori informazioni.
 
 1. Passa al campo richiesto all’interno della `cq:dialog` definizione.
 1. Definire la seguente proprietà sul nodo del campo:

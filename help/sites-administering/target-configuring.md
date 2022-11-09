@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: f64319e88687ba1f53c98d4768492a0b4f4b08b8
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2204'
 ht-degree: 44%
 
 ---
@@ -47,7 +47,7 @@ I seguenti valori di proprietà vengono utilizzati nella configurazione cloud di
 
 >[!NOTE]
 >
->Nella AEM 6.3, puoi selezionare il file della libreria di Target, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
+>Nella AEM 6.3, puoi selezionare il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola.
 >
 >AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 >
@@ -107,7 +107,7 @@ Fai clic su **OK**. Quando esegui il targeting del contenuto con Adobe Target, p
 Effettua l’integrazione manuale con Adobe Target invece di utilizzare la procedura guidata di consenso.
 
 >[!NOTE]
-Il file della libreria di Target, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+Il file della libreria di Target, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
 AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 * Tempi di caricamento delle pagine migliorati per le implementazioni web
 * Maggiore sicurezza
@@ -209,7 +209,7 @@ Il framework viene creato. Per replicare il framework nell’istanza di pubblica
 
 ### Associazione di attività alla configurazione di Target Cloud  {#associating-activities-with-the-target-cloud-configuration}
 
-Associa il tuo [Attività AEM](/help/sites-authoring/activitylib.md) con la configurazione cloud di Target in modo da poter eseguire il mirroring delle attività in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
+Associa il tuo [Attività AEM](/help/sites-authoring/activitylib.md) con la configurazione cloud di Target in modo da poter eseguire il mirroring delle attività in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:

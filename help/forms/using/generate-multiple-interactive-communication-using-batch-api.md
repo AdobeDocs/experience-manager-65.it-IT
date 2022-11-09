@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2228'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Per semplificare l’utilizzo dell’API, AEM Forms fornisce un servizio per car
 
 Per creare comunicazioni interattive dai record salvati in un file JSON:
 
-1. Crea un [Cartella controllata](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo dell’API Batch:
+1. Crea un [Cartella controllata](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo dell’API Batch:
    1. Accedi all’istanza di authoring di AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella osservata]**. Tocca **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
@@ -109,7 +109,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
 
 #### Utilizzare i dati di input salvati in un’origine dati esterna e accessibili tramite il modello dati del modulo per produrre una comunicazione interattiva {#use-fdm-as-data-source}
 
-È possibile combinare i dati (record) salvati in un’origine dati esterna con un modello di comunicazione interattivo per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, è necessario collegarla a un’origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. È possibile configurare il servizio di elaborazione batch Cartelle controllate per recuperare i dati utilizzando lo stesso modello dati modulo da un’origine dati esterna. A [creare una comunicazione interattiva dai record salvati in un’origine dati esterna](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+È possibile combinare i dati (record) salvati in un’origine dati esterna con un modello di comunicazione interattivo per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, è necessario collegarla a un’origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. È possibile configurare il servizio di elaborazione batch Cartelle controllate per recuperare i dati utilizzando lo stesso modello dati modulo da un’origine dati esterna. A [creare una comunicazione interattiva dai record salvati in un’origine dati esterna](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configura il Modello dati modulo del modello:
    1. Aprire il modello dati modulo associato al modello di comunicazione interattivo.
@@ -141,7 +141,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
 
    1. Salva e chiudi il file 
 
-1. Crea un [Cartella controllata](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo del servizio API Batch:
+1. Crea un [Cartella controllata](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo del servizio API Batch:
    1. Accedi all’istanza di authoring di AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella osservata]**. Tocca **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.

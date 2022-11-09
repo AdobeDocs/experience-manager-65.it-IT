@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 2%
+source-wordcount: '925'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-L’estensione Brackets AEM fornisce un flusso di lavoro fluido per la modifica AEM componenti e librerie client e sfrutta la potenza del [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso dall&#39;interno dell&#39;editor di codice a file e livelli Photoshop. La facile sincronizzazione fornita dall&#39;estensione (senza Maven o File Vault richiesti) aumenta l&#39;efficienza degli sviluppatori e aiuta gli sviluppatori front-end con limitata conoscenza AEM a partecipare ai progetti. Questa estensione fornisce anche supporto per [Linguaggio dei modelli di HTML (HTL)](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
+L’estensione Brackets AEM fornisce un flusso di lavoro fluido per la modifica AEM componenti e librerie client e sfrutta la potenza del [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso dall&#39;interno dell&#39;editor di codice a file e livelli Photoshop. La facile sincronizzazione fornita dall&#39;estensione (senza Maven o File Vault richiesti) aumenta l&#39;efficienza degli sviluppatori e aiuta gli sviluppatori front-end con limitata conoscenza AEM a partecipare ai progetti. Questa estensione fornisce anche supporto per [Linguaggio dei modelli di HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

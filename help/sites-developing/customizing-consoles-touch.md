@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,8 @@ che possono essere utilizzati in diversi modi per estendere le console AEM. Di s
 >* Utilizzo e creazione [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
->Questo argomento è trattato anche nella [AEM gemme](https://docs.adobe.com/content/ddc/en/gems.html) sessione - [Personalizzazione dell&#39;interfaccia utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+
+
 
 >[!CAUTION]
 >

@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 9%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -78,7 +78,7 @@ Per definire quali metodi devono essere serializzati, è necessario annotare cor
 
 ## Esempio {#example}
 
-I componenti core supportano l’esportazione JSON a partire dalla versione [1.1.0 dei componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html) e può essere utilizzato come riferimento.
+I componenti core supportano l’esportazione JSON a partire dalla versione [1.1.0 dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e può essere utilizzato come riferimento.
 
 Per un esempio, vedi l’implementazione del modello Sling del componente di base immagine e la relativa interfaccia annotata.
 
@@ -98,4 +98,4 @@ Per maggiori dettagli vedi:
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Esportatore JSON per Content Services](/help/sites-developing/json-exporter.md)
-* [Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) e [Componente Frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente Frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

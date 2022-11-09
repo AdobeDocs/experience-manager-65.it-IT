@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1600'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Esempio di configurazione del tracciamento dei collegamenti {#example-link-tracking-configuration}
 
-Esegui le seguenti procedure per esplorare il comportamento di tracciamento dei collegamenti dell’integrazione Adobe Analytics. Le procedure mostrano i risultati [Debugger Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Esegui le seguenti procedure per esplorare il comportamento di tracciamento dei collegamenti dell’integrazione Adobe Analytics. Le procedure mostrano i risultati [Debugger Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 ### Configurazione generale {#general-configuration}
 

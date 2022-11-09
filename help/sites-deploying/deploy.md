@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1802'
 ht-degree: 8%
 
 ---
@@ -58,7 +58,7 @@ Una volta acquisita familiarità con queste nozioni di base, troverai informazio
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Cos’è AEM Screens?](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Cos’è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
 
 ## Concetti di base {#basic-concepts}
 
@@ -127,7 +127,7 @@ Con AEM i clienti Managed Services possono realizzare i seguenti vantaggi:
 
 **Cloud Manager**: Cloud Manager, parte dell’offerta Adobe Experience Manager Managed Services, è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include una pipeline CI/CD (Continuous Integration/Continuous Delivery) all’avanguardia che consente ai team IT e ai partner di implementazione di velocizzare la distribuzione di personalizzazioni o aggiornamenti senza compromettere prestazioni o sicurezza. Cloud Manager è disponibile solo per i clienti di Adobe Managed Service.
 
-Per ulteriori informazioni su Cloud Manager e le relative risorse, consulta [**Guida utente di Cloud Manager**](https://docs.adobe.com/content/help/it/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Per ulteriori informazioni su Cloud Manager e le relative risorse, consulta [**Guida utente di Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
 
 ## Guida introduttiva {#getting-started}
 
@@ -313,4 +313,4 @@ La sezione precedente dovrebbe fornire una buona comprensione delle basi dell&#3
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva di AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Cos’è AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Cos’è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)

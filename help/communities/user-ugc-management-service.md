@@ -12,10 +12,10 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 0%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni, consulta [Pagina RGPD nell’Adobe Privacy Center](h
 
 >[!NOTE]
 >
->Se hai configurato [Adobe Analytics in AEM Communities](/help/communities/analytics.md) sito, i dati utente acquisiti vengono inviati al server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare i dati utente e di rispettare i requisiti RGPD. Per ulteriori informazioni, consulta [Inviare richieste di accesso e cancellazione](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Se hai configurato [Adobe Analytics in AEM Communities](/help/communities/analytics.md) sito, i dati utente acquisiti vengono inviati al server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare i dati utente e di rispettare i requisiti RGPD. Per ulteriori informazioni, consulta [Inviare richieste di accesso e cancellazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 Per utilizzare queste API, devi abilitare la `/services/social/ugcmanagement` attivazione del servizio UserUgcManagement. Per attivare questo servizio, installare il [servlet di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponibile su [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Quindi, colpisci l&#39;endpoint nell&#39;istanza di pubblicazione del sito Communities con i parametri appropriati utilizzando una richiesta http, simile a:
 
@@ -63,7 +63,7 @@ Ad esempio, per eliminare l’UGC di un utente con ID autorizzabile weston.mccal
 
 ### Eliminare UGC da Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Per eliminare i dati utente da Adobe Analytics, segui la [Flusso di lavoro di analisi del RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html); poiché l’API non elimina i dati utente da Adobe Analytics.
+Per eliminare i dati utente da Adobe Analytics, segui la [Flusso di lavoro di analisi del RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); poiché l’API non elimina i dati utente da Adobe Analytics.
 
 Per le mappature delle variabili Adobe Analytics utilizzate da AEM Communities, fai riferimento alla seguente immagine:
 

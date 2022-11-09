@@ -2,10 +2,10 @@
 title: Tag di decorazione
 description: Quando viene eseguito il rendering di un componente in una pagina web, è possibile generare un elemento HTML che racchiude all’interno il componente renderizzato. AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 10%
+source-wordcount: '876'
+ht-degree: 9%
 
 ---
 
@@ -62,7 +62,7 @@ Il comportamento del wrapper può anche essere completamente controllato.
 
 È possibile controllare completamente il comportamento dei tag wrapper dagli script HTL e la logica associata.
 
-Per ulteriori informazioni sullo sviluppo in HTL, consulta la sezione [Documentazione di HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html).
+Per ulteriori informazioni sullo sviluppo in HTL, consulta la sezione [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Albero decisionale {#decision-tree}
 

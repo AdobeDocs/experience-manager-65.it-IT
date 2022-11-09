@@ -11,9 +11,9 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
@@ -62,10 +62,10 @@ Puoi anche configurare il caching dei moduli adattivi al dispatcher per ulterior
 
 Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazione in cache dei moduli adattivi sul dispatcher:
 
-1. Apri il seguente URL per ogni istanza di pubblicazione dell’ambiente e [abilita l&#39;agente di scaricamento per pubblicare le istanze dell&#39;ambiente](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Apri il seguente URL per ogni istanza di pubblicazione dell’ambiente e [abilita l&#39;agente di scaricamento per pubblicare le istanze dell&#39;ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Aggiungi quanto segue al file dispatcher.any](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Aggiungi quanto segue al file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -94,7 +94,7 @@ Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazi
    * Un modulo adattivo rimane nella cache fino a quando non viene pubblicata una versione aggiornata del modulo.
 
    * Quando viene pubblicata una versione più recente della risorsa a cui viene fatto riferimento in un modulo adattivo, i moduli adattivi interessati vengono automaticamente invalidati. Sono presenti alcune eccezioni all’annullamento automatico della validità delle risorse di riferimento. Per la soluzione alle eccezioni, vedi [risoluzione](#troubleshooting) sezione .
-1. [Aggiungi il seguente file di regole dispatcher.any o il file di regole personalizzate](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Sono esclusi gli URL che non supportano la memorizzazione in cache. Ad esempio, la comunicazione interattiva.
+1. [Aggiungi il seguente file di regole dispatcher.any o il file di regole personalizzate](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Sono esclusi gli URL che non supportano la memorizzazione in cache. Ad esempio, la comunicazione interattiva.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazi
       }
    ```
 
-1. [Aggiungi i seguenti parametri all’elenco dei parametri dell’URL di ignoramento](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Aggiungi i seguenti parametri all’elenco dei parametri dell’URL di ignoramento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazi
       }
    ```
 
-L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza in cache tutti i tipi di moduli adattivi. Se hai l’obbligo di controllare le autorizzazioni di accesso utente per una pagina prima di consegnare la pagina in cache, consulta [memorizzazione in cache di contenuto protetto](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza in cache tutti i tipi di moduli adattivi. Se hai l’obbligo di controllare le autorizzazioni di accesso utente per una pagina prima di consegnare la pagina in cache, consulta [memorizzazione in cache di contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

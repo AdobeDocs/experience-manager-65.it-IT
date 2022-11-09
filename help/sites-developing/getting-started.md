@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 22%
+source-wordcount: '259'
+ht-degree: 18%
 
 ---
 
@@ -30,16 +30,16 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[L’esercitazione per sviluppatori WKND è disponibile qui](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e ti guida nella creazione di un progetto AEM utilizzando le tecnologie e le best practice più recenti.
+[L’esercitazione per sviluppatori WKND è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) e ti guida nella creazione di un progetto AEM utilizzando le tecnologie e le best practice più recenti.
 
 ## Concetti di base {#core-concepts}
 
 L’implementazione delle esercitazioni sfrutta molte funzioni avanzate di AEM. Il sito verrà implementato utilizzando:
 
-* [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Interfaccia utente touch](/help/sites-developing/touch-ui-concepts.md)
-* [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
 
 Procedi con l’esercitazione prima di immergerti nei dettagli dei concetti precedenti.

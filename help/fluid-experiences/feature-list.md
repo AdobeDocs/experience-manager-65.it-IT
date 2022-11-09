@@ -4,10 +4,10 @@ description: Elenco delle funzioni per esperienze fluide
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 12%
+source-wordcount: '342'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 Le esperienze fluide Adobe Experience Manager si basano sui potenti set di funzioni di AEM Sites, AEM Dynamic Media e AEM Assets per fornire una soluzione solida per la distribuzione di contenuti headless.
 
-AEM esperienze fluide si differenziano dal AEM classico in quanto viene affrontato solo il caso di utilizzo della consegna headless. L’authoring e la distribuzione di contenuti headful e il supporto forte AEM casi d’uso ibridi sono disponibili con [soluzioni AEM Sites, Assets e Dynamic Media complete.](https://docs.adobe.com/content/help/it-IT/experience-manager-65/user-guide/home.html)
+AEM esperienze fluide si differenziano dal AEM classico in quanto viene affrontato solo il caso di utilizzo della consegna headless. L’authoring e la distribuzione di contenuti headful e il supporto forte AEM casi d’uso ibridi sono disponibili con [soluzioni AEM Sites, Assets e Dynamic Media complete.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it)
 
 Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si collegano alla relativa documentazione di supporto.
 
@@ -53,7 +53,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 | [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) |
 | API HTTP per contenuti strutturati (lettura) |
 | API HTTP per contenuti strutturati (CRUD) |
-| [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) |
+| [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Funzionalità di amministrazione e integrazione {#admin-and-integration-features}
@@ -66,7 +66,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 | [Traduzione dei contenuti](/help/sites-administering/translation.md) |
 | [Monitoraggio](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Backup](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [Integrazione PIM](/help/sites-authoring/managing-product-information.md) |
 | [Progetti e attività](/help/sites-authoring/projects.md) |
 | [Flussi di lavoro](/help/sites-administering/workflows-starting.md) |
@@ -85,7 +85,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 * [Esperienze fluide per casi d’uso headless](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [Servizio di contenuti AEM: Cosa, perché e come?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Utilizzo dei servizi di contenuto](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Sviluppo di app per dispositivi mobili](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
+* [Sviluppo di app per dispositivi mobili](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
 * [Domande frequenti per l’accesso di terze parti](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [Esperienze fluide ovunque](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
 * [Utilizzo delle API Sling](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

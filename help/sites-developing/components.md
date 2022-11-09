@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 10%
+source-wordcount: '590'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,7 @@ Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager
 * Avere un’interfaccia utente standard.
 * Avere un comportamento di modifica configurabile.
 * Utilizzare le finestre di dialogo create utilizzando elementi secondari basati sui componenti dell’interfaccia Granite
-* Sono sviluppati utilizzando [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) (consigliato) o JSP.
+* Sono sviluppati utilizzando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (consigliato) o JSP.
 * Può essere sviluppato per creare componenti personalizzati che estendono la funzionalità predefinita.
 
 Poiché i componenti sono modulari, puoi:
@@ -64,7 +64,7 @@ I componenti forniti e il loro utilizzo all’interno della [siti web di esempio
 
 Sono disponibili due set di componenti AEM forniti da Adobe:
 
-* [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Componenti di base](/help/sites-authoring/default-components-foundation.md)
 
 **Componenti core** sono stati introdotti con AEM 6.3 e offrono funzionalità di authoring flessibili e avanzate. La [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md) illustra come utilizzare i componenti core e rappresentano le best practice correnti per lo sviluppo dei componenti.
@@ -73,7 +73,7 @@ Sono disponibili due set di componenti AEM forniti da Adobe:
 
 >[!NOTE]
 >
->[Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) rappresentano le best practice correnti per la progettazione e lo sviluppo dei componenti e fungono da implementazioni di riferimento.
+>[Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) rappresentano le best practice correnti per la progettazione e lo sviluppo dei componenti e fungono da implementazioni di riferimento.
 >
 >[Strumenti di modernizzazione AEM](modernization-tools.md) può facilitare la migrazione ai componenti core.
 
@@ -106,7 +106,7 @@ Le pagine seguenti forniscono informazioni più dettagliate sullo sviluppo di qu
 * [Componenti per frammenti di contenuto](/help/sites-developing/components-content-fragments.md)
 * [Ottenimento di informazioni di pagina in formato JSON](/help/sites-developing/pageinfo.md)
 * [Componenti di internazionalizzazione](/help/sites-developing/i18n.md)
-* [Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Utilizzo di Nascondi condizioni](/help/sites-developing/hide-conditions.md)
 * Interfaccia classica
 
