@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4165'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,10 @@ Per aggiungere oggetti e servizi del modello dati:
    ![oggetti selezionati](assets/selected-objects.png)
 
    Oggetti e servizi del modello dati selezionato
+
+   >[!NOTE]
+   >
+   > Se Forms Data Model contiene un oggetto riservato per il database relazionale, può verificarsi un problema di aggiunta, aggiornamento o recupero dei dati. Pertanto, evitare di utilizzare tali oggetti nel modello dati del modulo.
 
    Nella scheda Modello viene visualizzata una rappresentazione grafica di tutti gli oggetti del modello dati e delle relative proprietà aggiunte al modello dati del modulo. Ciascun oggetto modello dati è rappresentato da una casella nel modello dati del modulo.
 

@@ -10,16 +10,16 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
 
 # Configurare origini dati{#configure-data-sources}
 
-![](do-not-localize/data-integeration.png)
+![Integrazione dei dati](do-not-localize/data-integeration.png)
 
 L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. I seguenti tipi sono supportati come predefiniti. Tuttavia, con poca personalizzazione, puoi integrare anche altre origini dati.
 
@@ -35,7 +35,7 @@ L’integrazione dei dati supporta i tipi di autenticazione predefiniti OAuth2.0
 
 È possibile configurare database relazionali utilizzando AEM configurazione della console Web. Effettua le seguenti operazioni:
 
-1. Vai AEM console Web all&#39;indirizzo https://server:host/system/console/configMgr.
+1. Vai AEM console Web all&#39;indirizzo `https://server:host/system/console/configMgr`.
 1. Cerca **[!UICONTROL Origine dati in pool di connessione Apache Sling]** configurazione. Tocca per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione, specifica i dettagli del database da configurare, ad esempio:
 
@@ -49,14 +49,10 @@ L’integrazione dei dati supporta i tipi di autenticazione predefiniti OAuth2.0
    >
    >Prima di configurare l’origine dati, assicurati di crittografare le informazioni sensibili come le password. Per crittografare:
    >
-   >    
-   >    
-   >    1. Vai su https://&#39;[server]:[porta]&#39;/system/console/crypto.
-   >    1. In **[!UICONTROL Testo normale]** campo , specifica la password o qualsiasi stringa da crittografare e toccare **[!UICONTROL Protect]**.
+   > 1. Vai su https://&#39;[server]:[porta]&#39;/system/console/crypto.
+   > 1. In **[!UICONTROL Testo normale]** campo , specifica la password o qualsiasi stringa da crittografare e toccare **[!UICONTROL Protect]**.
 
-   >    
-   >    
-   >    
+   >
    >Il testo crittografato viene visualizzato nel campo Testo protetto che è possibile specificare nella configurazione.
 
 1. Abilita **[!UICONTROL Test su credito]** o **[!UICONTROL Test al ritorno]** per specificare che gli oggetti vengono convalidati prima di essere presi in prestito o restituiti rispettivamente da e al pool.
@@ -67,13 +63,17 @@ L’integrazione dei dati supporta i tipi di autenticazione predefiniti OAuth2.0
 
 1. Tocca **[!UICONTROL Salva]** per salvare la configurazione.
 
+   >[!NOTE]
+   >
+   > Se Forms Data Model contiene un oggetto riservato per il database relazionale, può verificarsi un problema di aggiunta, aggiornamento o recupero dei dati. Pertanto, evitare di utilizzare tali oggetti nel modello dati del modulo.
+
 ## Configurare AEM profilo utente {#configure-aem-user-profile}
 
 È possibile configurare AEM profilo utente utilizzando la configurazione di User Profile Connector in AEM Web Console. Effettua le seguenti operazioni:
 
 1. Vai AEM console Web all&#39;indirizzo https://&#39;[server]:[porta]&#39;system/console/configMgr.
 1. Cerca **[!UICONTROL Integrazioni dei dati AEM Forms - Configurazione del connettore del profilo utente]** e tocca per aprire la configurazione in modalità di modifica.
-1. Nella finestra di dialogo Configurazione connettore profilo utente puoi aggiungere, rimuovere o aggiornare le proprietà del profilo utente. Le proprietà specificate saranno disponibili per l’uso nel modello dati del modulo. Utilizza il formato seguente per specificare le proprietà del profilo utente:
+1. Nella finestra di dialogo Configurazione connettore profilo utente puoi aggiungere, rimuovere o aggiornare le proprietà del profilo utente. Le proprietà specificate sono disponibili per l’uso nel modello dati del modulo. Utilizza il formato seguente per specificare le proprietà del profilo utente:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -161,7 +161,6 @@ Per configurare il client HTTP del modello di dati del modulo, effettua le segue
 
    * Specifica il periodo di tempo massimo per l&#39;inattività tra due pacchetti di dati nel **[!UICONTROL Timeout del socket]** campo . Il valore predefinito è 30 secondi.
 
-
 ## Configurare i servizi Web SOAP {#configure-soap-web-services}
 
 I servizi web basati su SOAP sono descritti utilizzando [Specifiche WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Per configurare il servizio Web basato su SOAP in AEM Cloud Services, assicurati di disporre dell’URL WSDL per il servizio Web ed effettua le seguenti operazioni:
@@ -224,4 +223,4 @@ Quando si abilita l’autenticazione reciproca per il modello dati modulo, sia l
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato le origini dati. Successivamente è possibile creare un modello dati modulo oppure, se è già stato creato un modello dati modulo senza un’origine dati, è possibile associarlo alle origini dati appena configurate. Vedi [Crea modello dati modulo](/help/forms/using/create-form-data-models.md) per i dettagli.
+Hai configurato le origini dati. Successivamente è possibile creare un modello dati modulo oppure, se è già stato creato un modello dati modulo senza un’origine dati, è possibile associarlo alle origini dati configurate. Vedi [Crea modello dati modulo](/help/forms/using/create-form-data-models.md) per i dettagli.
