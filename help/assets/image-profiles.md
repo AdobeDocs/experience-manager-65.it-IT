@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
 workflow-type: tm+mt
 source-wordcount: '2831'
 ht-degree: 10%
@@ -21,13 +21,10 @@ ht-degree: 10%
 
 Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al momento del caricamento applicando un profilo immagine alla cartella.
 
->[!NOTE]
->
->Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
-
 >[!IMPORTANT]
 >
->I profili immagine non sono applicabili ai file PDF, animated GIF o INDD (Adobe InDesign).
+>・ Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
+・ I profili immagine non sono applicabili ai file PDF, animated GIF o INDD (Adobe InDesign).
 
 ## Opzioni di ritaglio {#crop-options}
 
@@ -58,8 +55,7 @@ Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un
 Usa **[!UICONTROL Maschera definizione dettagli]** per regolare con precisione un effetto filtro di nitidezza sull’immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. Questo effetto utilizza le stesse opzioni di Adobe Photoshop *Maschera definizione dettagli* filtro.
 
 >[!NOTE]
->
->Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostrano la maschera di contrasto).
+Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del font non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostrano la maschera di contrasto).
 
 In **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le seguenti opzioni di filtro:
 
@@ -163,9 +159,8 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 ## Modificare il ritaglio avanzato o il campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
->
->Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
+>[!IMPORTANT]
+Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
 
 È possibile riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 
