@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 10%
 
 ---
@@ -23,16 +23,16 @@ Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al mome
 
 >[!IMPORTANT]
 >
->・ Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
+>・ Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
 ・ I profili immagine non sono applicabili ai file PDF, animated GIF o INDD (Adobe InDesign).
 
 ## Opzioni di ritaglio {#crop-options}
 
 Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di ritagli avanzati per immagine | 5 | 100 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 ## Modificare il ritaglio avanzato o il campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
+・ Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
 
 È possibile riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 
@@ -188,6 +188,9 @@ Vedi anche [Modificare il ritaglio avanzato o il campione avanzato di più immag
 1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
 ## Modificare il ritaglio avanzato o il campione avanzato di più immagini {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Il ritaglio avanzato è disponibile solo in modalità Dynamic Media - Scene7.
 
 Dopo aver applicato un profilo immagine contenente Smart Crop a una cartella, a tutte le immagini in tale cartella viene applicato un ritaglio. Se lo desideri, puoi *manuale* riallineare o ridimensionare la finestra di ritaglio avanzato in più immagini per perfezionare ulteriormente il punto focale.
 
