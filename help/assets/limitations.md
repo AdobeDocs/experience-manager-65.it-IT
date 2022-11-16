@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 7c0d5f7d1286bdcc0189f3c6ffecbd2149d6a78a
+source-git-commit: cd4342740a09cb5315c640768bf24af6c7788a48
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,7 @@ Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazio
 
 | Risorsa - Tipo limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
 | --- | --- | --- | --- |
-| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
+| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 | Non applicabile |
 | **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 | Non applicabile |
 | **Tutti i set** - Numero massimo di risorse per set | 5-10 immagini per set | 1000 | Non applicabile |
 | **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 | Non applicabile |
