@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1518'
 ht-degree: 1%
 
 ---
@@ -57,6 +57,7 @@ Effettua le seguenti operazioni per configurare il tuo [!DNL MySQL] database:
 
 1. Installa il driver JDBC per [!DNL MySQL] database come bundle OSGi:
 
+   1. Scarica [[!DNL MySQL] Bundle OSGi del driver JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
    1. Accedi a AEM [!DNL Forms] Istanza autore come amministratore e vai AEM bundle della console web. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tocca **[!UICONTROL Installazione/aggiornamento]**. Un [!UICONTROL Caricare/installare i bundle] viene visualizzata la finestra di dialogo .
@@ -73,8 +74,18 @@ Effettua le seguenti operazioni per configurare il tuo [!DNL MySQL] database:
       * **Nome della proprietà del servizio DataSource**: Specifica il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell&#39;istanza dell&#39;origine dati come servizio OSGi. Ad esempio: **datasource.name**.
       * **Classe del driver JDBC**: Specifica il nome della classe Java del driver JDBC. Per [!DNL MySQL] database, specificare **com.mysql.jdbc.Driver**.
       * **URI di connessione JDBC**: Specifica l&#39;URL di connessione del database. Per [!DNL MySQL] database in esecuzione sulla porta 3306 e schema weretail, l&#39;URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+
+      >[!NOTE]
+      >
+      > Quando il [!DNL MySQL] il database è protetto da un firewall, quindi il nome host del database non è un DNS pubblico. È necessario aggiungere l’indirizzo IP del database nel */etc/hosts* file della macchina host AEM.
+
       * **Nome utente:** Nome utente del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
+
+      >[!NOTE]
+      >
+      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai AEM console Web all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca &quot;Apache Sling Connection Pooled Datasource&quot;.Per &quot;JDBC connection URI&quot; il valore della proprietà impostato di &quot;IntegratedSecurity&quot; come False e utilizza il nome utente e la password creati per la connessione con [!DNL MySQL] database.
+
       * **Prova su prestito:** Abilita la **[!UICONTROL Test su credito]** opzione .
       * **Test al ritorno:** Abilita la **[!UICONTROL Test al ritorno]** opzione .
       * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **select &#42; dai dettagli del cliente**.
@@ -85,6 +96,8 @@ Effettua le seguenti operazioni per configurare il tuo [!DNL MySQL] database:
          Viene creata una configurazione simile a quella riportata di seguito.
 
          ![relazionale-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
+
+
 
 ## Passaggio 2: Crea modello dati modulo {#create-fdm}
 
