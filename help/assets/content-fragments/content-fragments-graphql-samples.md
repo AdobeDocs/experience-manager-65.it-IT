@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -348,6 +348,58 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Query di esempio: nomi di tutte le città Contrassegnati come interruzioni città {#sample-names-all-cities-tagged-city-breaks}
+
+Se:
+
+* creare una varietà di tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* e assegnarle alla variante principale di varie `City` istanze
+
+Puoi quindi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci con tag di City Breaks nel `city`schema.
+
+**Query di esempio**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Risultati di esempio**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1477,6 +1529,62 @@ Questa query rappresenta un’interrogazione per ottenere:
         markdown
         plaintext
         json
+      }
+    }
+  }
+}
+```
+
+### Query di esempio per più frammenti di contenuto e relative varianti di un modello specifico {#sample-wknd-multiple-fragment-variations-given-model}
+
+Questa query rappresenta un’interrogazione per ottenere:
+
+* per frammenti di contenuto di tipo `article` e tutte le varianti
+
+**Query di esempio**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Query di esempio per le varianti di frammento di contenuto di un modello specifico a cui è associato un tag specifico{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Questa query rappresenta un’interrogazione per ottenere:
+
+* per frammenti di contenuto di tipo `article` con una o più varianti con il tag `WKND : Activity / Hiking`
+
+**Query di esempio**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
       }
     }
   }

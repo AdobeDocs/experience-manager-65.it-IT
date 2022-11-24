@@ -4,10 +4,10 @@ description: Scopri in che modo le varianti possono rendere i contenuti headless
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 95%
+source-wordcount: '2426'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ Dalla scheda **Varianti** è possibile:
 * [Inserire il contenuto](#authoring-your-content) del frammento
 * [Creare e gestire le varianti](#managing-variations) del contenuto **principale**
 
-Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifica; ad esempio:
+Eseguire una serie di altre azioni a seconda del tipo di dati in fase di modifica; ad esempio:
 
 * [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment) (immagini)
 
@@ -40,24 +40,37 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, per vari tipi di dati, definiti nel modello di contenuto.
+Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** viene aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene vari campi, di vari tipi di dati, definiti nel modello di contenuto.
 
 Esempio:
 
 ![editor a schermo intero](assets/cfm-variations-02.png)
-Puoi eseguire le seguenti operazioni:
 
-* Apportare modifiche direttamente nella scheda **Varianti**
+Operazioni disponibili:
 
-   * Ogni tipo di dati offre specifiche opzioni di modifica.
+* Apporta modifiche ai contenuti direttamente nel **Variazioni** scheda; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
-* Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
+   * Per i campi di **Testo su più righe** è inoltre possibile aprire l’[editor a schermo intero](#full-screen-editor) per:
 
-   * Selezionare il [Formato](#formats)
-   * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
-   * Accedere a una serie di [azioni](#actions)
+      * Selezionare il [Formato](#formats)
+      * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
+      * Accedere a una serie di [azioni](#actions)
+   * Per i campi **Riferimento frammento** può essere disponibile l’opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment), a seconda della definizione del modello.
 
-* Per i campi **Riferimento frammento** può essere disponibile l’opzione **[Modifica frammento di contenuto](#fragment-references-edit-content-fragment)**, a seconda della definizione del modello.
+
+* Assegna **Tag** alla variazione attuale; i tag possono essere aggiunti, aggiornati e rimossi
+
+   * I [tag](/help/sites-authoring/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+
+      * La ricerca di un tag restituisce il frammento, evidenziando la variante con tag .
+      * I tag di variante possono essere utilizzati anche per raggruppare le varianti per un profilo CDN (Content Delivery Network) specifico (per la memorizzazione in cache CDN), invece di usare il nome della variante.
+
+      Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Avvio di Natale&quot; per consentire la navigazione solo come sottoinsieme o copiarli per utilizzarli con un altro lancio futuro in una nuova cartella.
+   >[!NOTE]
+   >
+   >**Tag** può anche essere aggiunto (al **Master** come parte del [Metadati](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Creare e gestire le varianti](#managing-variations) del **Master** contenuto.
 
 ### Editor a schermo intero {#full-screen-editor}
 
@@ -389,6 +402,9 @@ Per creare una nuova variante:
    >[!NOTE]
    Quando crei una nuova variante, viene sempre copiato l’elemento **Principale**, non la variante attualmente aperta.
 
+   >[!NOTE]
+   Quando crei una nuova variante, tutte le **Tag** attualmente assegnato al **Master** La variante viene copiata nella nuova variante.
+
 ### Modifica di una variante {#editing-a-variation}
 
 Puoi apportare modifiche al contenuto della variante dopo:
@@ -435,7 +451,7 @@ Quando modifichi una variante, hai accesso all’azione che consente di sincroni
 >[!CAUTION]
 La sincronizzazione è disponibile solo per copiare le modifiche *dall’elemento **Principale** alla variante*.
 Viene sincronizzato solo l’elemento corrente della variante.
-La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
+La sincronizzazione funziona solo su **Testo a più righe** tipo di dati.
 Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -460,4 +476,4 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
    ![sincronizzazione con l’elemento principale](assets/cfm-variations-11c.png)
 
-1. Seleziona **Sincronizza**; la variante viene aggiornata e visualizzata.
+1. Seleziona **Sincronizza**, la variante viene aggiornata e visualizzata.

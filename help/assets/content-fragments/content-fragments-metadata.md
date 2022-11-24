@@ -4,10 +4,10 @@ description: Scopri come visualizzare e modificare le proprietà dei metadati pe
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 65%
+source-wordcount: '222'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,6 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
 
    * Seleziona [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperte e visualizzate le proprietà, puoi anche modificarle.
    * Apri il frammento di contenuto per la modifica, quindi seleziona **Metadati** dal pannello laterale.
-
    ![metadati](assets/cfm-metadata-01.png)
 
 3. La scheda **Base** fornisce alcune opzioni che è possibile visualizzare o modificare:
@@ -36,5 +35,10 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
    * **Tag**
       * I [tag](/help/sites-authoring/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Avvio di Natale&quot; per consentire la navigazione solo come sottoinsieme o copiarli per utilizzarli con un altro lancio futuro in una nuova cartella.
-   * Creato (solo visualizzazione)
+      >[!NOTE]
+      >
+      >**Tag** può essere aggiunto anche quando [creazione di contenuti Variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
+   * **Creato** (solo visualizzazione)
+   Esempio:
    ![metadati](assets/cfm-metadata-02.png)

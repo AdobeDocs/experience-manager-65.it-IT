@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
-ht-degree: 91%
+source-wordcount: '4089'
+ht-degree: 88%
 
 ---
 
@@ -543,6 +543,11 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * aggiungi `List` al nome del modello; ad esempio, `cityList`
    * Vedi [Query di esempio: informazioni su tutte le città](#sample-all-information-all-cities)
 
+* Il filtro `includeVariations` è incluso nel `List` tipo di query.  Per recuperare le varianti dei frammenti di contenuto nei risultati della query, quindi la `includeVariations` il filtro deve essere impostato su `true`.
+
+   >[!CAUTION]
+   >Il filtro `includeVariations` non può essere utilizzato insieme al campo generato dal sistema `_variation`.
+
 * Se vuoi utilizzare un operatore OR logico:
    * utilizza ` _logOp: OR`
    * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -572,7 +577,18 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          >
          >Se per un frammento di contenuto non esiste la variante determinata, la variante principale verrà restituita come impostazione predefinita (fallback).
 
+         >[!CAUTION]
+         >Campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
+
          * Vedi [Query di esempio: tutte le città con una variante denominata](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * `_tags` : rivelare gli ID di frammenti di contenuto o varianti che contengono tag; è un array di `cq:tags` identificatori.
+
+         * Vedi [Query di esempio - Nomi di tutte le città con tag come interruzioni di città](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Vedi [Query di esempio per le varianti di frammento di contenuto di un modello specifico a cui è associato un tag specifico](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >È inoltre possibile eseguire una query sui tag elencando i metadati di un frammento di contenuto.
    * E operazioni:
 
       * `_operator`: applica operatori specifici; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
          * Vedi [Query di esempio: applica filtro su un array con un elemento che deve verificarsi almeno una volta](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: per ignorare il caso durante la query
          * Vedi [Query di esempio: tutte le città che contengono SAN nel nome, indipendentemente da maiuscole/minuscole](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+
+
 
 
 
