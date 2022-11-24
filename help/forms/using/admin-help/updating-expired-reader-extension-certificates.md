@@ -2,7 +2,7 @@
 title: Scadenza dei certificati di estensione del Reader e relativo impatto
 description: Scadenza dei certificati di estensione del Reader e relativo impatto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
+source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 2%
@@ -27,7 +27,9 @@ Tutti i documenti PDF, il Reader esteso utilizzando i certificati precedenti pri
 A. Adobe Root CA è l’autorità di certificato da cui viene rilasciato un certificato di estensione Acrobat Reader. Il 7 gennaio 2023, &quot;Adobe Root CA&quot; e tutti i certificati rilasciati da esso scadono.
 
 **D. C&#39;era una comunicazione precedente dell&#39;Adobe relativa alla scadenza dei certificati e all&#39;impatto sull&#39;utilizzo/apertura di documenti PDF. Questa comunicazione dovrebbe essere ignorata?**
-A. Sulla base della rivalutazione della situazione, tutti i documenti PDF estesi utilizzando i certificati di produzione rilasciati dal vecchio &quot;Adobe Root CA&quot; prima del 7 gennaio 2023 continuano a funzionare senza alcuna modifica dopo il 7 gennaio 2023. Se hai già aggiornato i PDF, l’esperienza non subirà modifiche
+
+A. Sulla base della rivalutazione della situazione, tutti i documenti PDF estesi utilizzando i certificati di produzione rilasciati dal vecchio &quot;Adobe Root CA&quot; prima del 7 gennaio 2023 continuano a funzionare senza alcuna modifica dopo il 7 gennaio 2023. Se hai già aggiornato i PDF, l’esperienza non subirà modifiche.
+
 
 **D. Chi devo contattare se ho ulteriori domande?**
 
