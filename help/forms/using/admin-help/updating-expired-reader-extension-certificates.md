@@ -1,139 +1,191 @@
 ---
-title: Aggiornamento dei certificati del servizio di estensione del Reader scaduti
-description: Reader documenti estesi non funzionanti, aggiornamento certificati
+title: Scadenza dei certificati di estensione del Reader e relativo impatto
+description: Scadenza dei certificati di estensione del Reader e relativo impatto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 0%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
-# Aggiornamento dei certificati del servizio di estensione del Reader scaduti {#Updating-expired-Reader-Extension-service-certificates}
 
-I clienti Adobe Experience Manager Forms (AEM Forms) con licenze Adobe Managed Services o Enterprise Base locale possono utilizzare il servizio di estensione del Reader. Il servizio consente a un’organizzazione di condividere facilmente i documenti PDF interattivi estendendo le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio aggiunge diritti di utilizzo a un documento di PDF e attiva le funzioni solitamente non disponibili quando un documento di PDF viene aperto tramite Adobe Acrobat Reader DC, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti. I documenti di PDF a cui sono stati aggiunti i diritti di utilizzo sono denominati documenti abilitati per i diritti. Un utente che apre un documento PDF abilitato per i diritti in Adobe Reader può eseguire le operazioni abilitate per tale documento.
+# Scadenza dei certificati di estensione del Reader e relativo impatto {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Ad Adobe, sfrutta una PKI (Public Key Infrastructure) per rilasciare certificati digitali da utilizzare per la concessione di licenze e l’abilitazione delle funzioni. L’Adobe ha rilasciato certificati ai sensi dell’autorità di certificazione &quot;Adobe Root CA&quot;, la cui scadenza è prevista per il 7 gennaio 2023. Porterà alla scadenza di tutti i certificati rilasciati in base a questa autorità di certificazione. Una volta scaduto il certificato, tutte le funzioni dipendenti dai certificati non funzionano più. Ad esempio, un documento PDF esteso tramite un lettore che consente l’aggiunta di commenti tramite Adobe Acrobat Reader smette di funzionare per i clienti dopo il 7 gennaio 2023. Per risolvere il problema, l&#39;amministratore del servizio Estensione Reader, utilizzando vecchi certificati, deve ottenere e riapplicare i nuovi certificati rilasciati dal nuovo Adobe Root CA G2 ai propri documenti PDF (il lettore estende i documenti PDF con nuovi certificati).
+I clienti Adobe Experience Manager Forms (AEM Forms) con Adobe Managed Services o licenze Enterprise Base locali possono utilizzare il servizio Acrobat Reader DC Extensions. Il servizio consente a un’organizzazione di condividere facilmente i documenti PDF interattivi estendendo le funzionalità di Acrobat Reader con diritti di utilizzo aggiuntivi. Il servizio aggiunge diritti di utilizzo a un documento di PDF e attiva le funzioni non disponibili quando un documento di PDF viene aperto tramite Adobe Acrobat Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti. I documenti di PDF a cui sono stati aggiunti i diritti di utilizzo sono denominati documenti abilitati per i diritti. Un utente che apre un documento PDF abilitato per i diritti in Acrobat Reader può eseguire le operazioni abilitate per tale documento.
 
-La scadenza dei certificati ha un impatto sia su AEM Forms su JEE che su AEM Forms sugli stack OSGi. Entrambi gli stack hanno un diverso set di istruzioni. Dopo la riunione [pre-richieste](#Pre-requisites) e [ottenimento di nuovi certificati](#obtain-the-certificates), a seconda della pila, scegli uno dei percorsi seguenti:
+Adobe sfrutta un’infrastruttura a chiave pubblica (PKI) per rilasciare certificati digitali da utilizzare in licenze e abilitazione delle funzioni. L’Adobe ha rilasciato certificati nell’ambito dell’autorità di certificazione &quot;Adobe Root CA&quot;, che scade il 7 gennaio 2023. Sono ora disponibili una nuova autorità di certificazione, &quot;Adobe Root CA G2&quot;, e certificati basati sulla nuova autorità di certificazione.
 
-* [Aggiornamento dei certificati per un ambiente AEM Forms in JEE](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment)
-* [Aggiornamento dei certificati per un ambiente AEM Forms in OSGi](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
+I vecchi certificati (certificati basati su &quot;Adobe Root CA&quot;) non funzionano più dopo il 7 gennaio 2023. L’Adobe consiglia di iniziare a utilizzare i nuovi certificati, quelli basati su &quot;Adobe Root CA G2&quot;, per Reader estendere i documenti PDF a partire dal 7 gennaio 2023 o prima di tale data.  È possibile [ottenere nuovi certificati dal sito web Adobe Licensing](https://licensing.adobe.com/) o Adobe Support.
 
->[!NOTE]
->
->Il documento utilizza certificati a termine e credenziali in modo intercambiabile.
-
-## Prerequisiti {#Pre-requisites}
-
-L’aggiornamento dei certificati richiede l’utilizzo delle azioni disponibili nella console di amministrazione di AEM Forms e nelle API di estensione di Reader fornite da AEM Forms. Il documento è destinato agli utenti e agli amministratori che conoscono l’utilizzo delle API Forms di Adobe Experience Manager. Prima di iniziare, assicurati che:
-
-* l’utente dispone dei diritti di amministratore nell’ambiente AEM Forms sottostante.
-* l&#39;utente ha impostato il [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) e ha accesso ad esso.
-* ottenere i certificati.
-
-### Recuperare i certificati {#obtain-the-certificates}
-
-La credenziale dei diritti viene consegnata come certificato digitale contenente la chiave pubblica, la chiave privata e la password utilizzata per accedere alla credenziale.
-
-Se l’organizzazione acquista una versione di produzione di Estensioni di Reader, la credenziale Diritti di produzione viene consegnata dal sito Web delle licenze Adobe (LWS). Una credenziale dei diritti di produzione è univoca per la tua organizzazione e può abilitare i diritti di utilizzo specifici necessari.
-
-Se hai ottenuto estensioni di Reader tramite un partner o un fornitore di software che ha integrato le estensioni di Reader nel loro software, la credenziale relativa ai diritti viene fornita da quel partner che, a sua volta, riceve tale credenziale da Adobe.
-
->[!NOTE]
->
->Impossibile utilizzare la credenziale dei diritti per la firma o l&#39;asserzione tipica del documento. Per queste applicazioni è possibile utilizzare un certificato autofirmato o acquisire un certificato di identità da un’autorità di certificazione (CA).
-
-Sono disponibili i seguenti tipi di credenziali dei diritti:
-
-**Valutazione del cliente**: Credenziale con un breve periodo di validità fornito ai clienti che desiderano valutare le estensioni del Reader. I diritti di utilizzo applicati ai documenti che utilizzano questa credenziale scadono alla scadenza della credenziale. Questo tipo di credenziale è valido solo per due o tre mesi.
-
-**Produzione**: Una credenziale con un periodo di validità lungo fornita ai clienti che hanno acquistato il prodotto completo. Le credenziali di produzione sono univoche per ogni cliente, ma possono essere installate su più sistemi.
-
-Se hai già utilizzato dei certificati per l’estensione dei file PDF, scarica un certificato di produzione da [Sito Web Adobe Licensing (LWS)](https://licensing.adobe.com/).
-
-## Aggiornamento e applicazione dei certificati per un ambiente AEM Forms in JEE {#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment}
-
-L’aggiornamento e l’applicazione di nuovi certificati su AEM Forms nello stack JEE richiede l’importazione di nuove credenziali, la rimozione dei diritti di utilizzo dai documenti PDF esistenti e l’applicazione dei diritti di utilizzo. Puoi utilizzare Admin Console per importare le credenziali e le API di AEM Forms Reader Extension per rimuovere e applicare i diritti di utilizzo.
-
-### Importare e configurare le credenziali
-
-È possibile utilizzare le pagine Gestione archivi attendibili per importare una credenziale nuova o sostitutiva. L&#39;archivio fonti attendibili può contenere più di un Reader di credenziali di estensione. È necessario specificare una di queste credenziali come credenziale predefinita delle estensioni di Reader. La credenziale predefinita viene utilizzata quando un utente di Workbench non è in grado di determinare quale credenziale utilizzare durante la creazione del processo. Queste regole si applicano alle credenziali predefinite:
-
-* Se si importa una credenziale Estensioni di Reader e l&#39;archivio attendibilità non contiene altre credenziali delle Estensioni di Reader, questa viene impostata come predefinita.
-* Se si importa una credenziale Estensioni Reader con l’opzione Predefinito selezionata, il tipo predefinito viene rimosso da una credenziale predefinita esistente. La credenziale importata diventa l’impostazione predefinita.
-* Non è possibile eliminare una credenziale di estensioni di Reader predefinita. Per eliminare la credenziale predefinita, impostare prima un&#39;altra credenziale come predefinita. Fa eccezione il fatto che, se esiste una sola credenziale, è possibile eliminarla anche se è l’impostazione predefinita.
-* Non è possibile aggiornare una credenziale di estensioni di Reader predefinita.
-
-Per importare le credenziali:
-
-1. Nella console di amministrazione, fare clic su Impostazioni > Gestione archivio attendibilità > Credenziali locali.
-1. Fare clic su Importa e, in Tipo archivio fonti attendibili, selezionare Credenziali estensioni Acrobat Reader DC.
-1. (Facoltativo) Per indicare che questa credenziale è la credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC, selezionare Predefinito.
-1. Nella casella Alias digitare un identificatore per la credenziale. Questo identificatore viene utilizzato come nome visualizzato per la credenziale nelle estensioni Acrobat Reader DC. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione utilizzando l’SDK per moduli AEM.
-1. Fare clic su Scegli file per individuare la credenziale, digitare la password della credenziale, quindi fare clic su OK.
-
-Se viene visualizzato il messaggio di errore &quot;Impossibile importare le credenziali a causa di un formato di file errato o di una password errata&quot;, verificare che la password sia valida.
-
-È inoltre possibile importare ed eliminare le credenziali a livello di programmazione. (Vedi [Programmazione con moduli AEM](../../developing/credentials.md).)
-
-### Rimuovere i diritti di utilizzo dai documenti PDF abilitati per i diritti esistenti
-
-Rimuovere i diritti di utilizzo dai documenti PDF abilitati per i diritti esistenti prima di applicare i diritti di utilizzo con le credenziali più recenti. AEM Forms su JEE fornisce API per rimuovere i diritti di utilizzo. Per istruzioni dettagliate, vedi [Rimozione dei diritti di utilizzo dai documenti PDF](../../developing/assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
-
-Per rimuovere i diritti di utilizzo per AEM Forms sui processi JEE sviluppati in Workbench, vedi [Guida di Workbench](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf).
-
-### Applicazione dei diritti di utilizzo ai documenti PDF
-
-Dopo aver importato nuove credenziali e rimosso i diritti di utilizzo dai documenti PDF abilitati per i diritti esistenti, applicare i diritti di utilizzo ai documenti PDF utilizzando le nuove credenziali. Puoi applicare i diritti di utilizzo ai documenti PDF utilizzando l’API client Java e il servizio Web Acrobat Reader DC extensions.  Per maggiori dettagli, vedi [Applicazione dei diritti di utilizzo ai documenti PDF](../../developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
-
-
-## Aggiornamento e applicazione dei certificati per un ambiente AEM Forms in OSGi {#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment}
-
-L’aggiornamento e l’applicazione di nuovi certificati su AEM Forms nello stack OSGi richiede l’importazione di nuove credenziali, la rimozione dei diritti di utilizzo dai documenti PDF esistenti e l’applicazione dei diritti di utilizzo. Puoi utilizzare Admin Console per importare le credenziali e le API di AEM Forms Reader Extension per rimuovere e applicare i diritti di utilizzo.
-
-### Importa credenziali {#Import-credentials}
-
-In un ambiente AEM Forms su OSGi, una credenziale di estensione del Reader è associata a un utente del servizio fd. Prima di aggiungere le credenziali per l&#39;archivio chiavi dell&#39;utente fd, esegui seguenti passaggi per creare un archivio chiavi:
-
-1. Accedi all’istanza di AEM Author come amministratore.
-1. Vai a **[!UICONTROL Strumenti]**> **[!UICONTROL Sicurezza]**>**[!UICONTROL Utenti]**.
-1. Scorri verso il basso l’elenco degli utenti fino a trovare l’account utente del servizio fd.
-1. Fai clic su **[!UICONTROL servizio fd]** utente.
-1. Fai clic sulla scheda keystore .
-1. Fai clic su **[!UICONTROL Crea KeyStore]**.
-1. Impostare la Password di accesso KeyStore e salvare le impostazioni per creare la password KeyStore.
-
-Dopo aver creato l&#39;archivio chiavi, aggiungi le credenziali all&#39;utente del servizio fd. Il video seguente spiega i passaggi:
-
->[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
-
-Il seguente comando elenca i dettagli del file pfx. Prima di eseguire il comando, passare alla directory rettangolare contenente il file .pfx.
-
-`keytool -v -list -storetype pkcs12 -keystore <name of your .pfx file>`
-
-Ad esempio keytool -v -list -storetype pkcs12 -keystore 1005566.pfx dove 1005566.pfx è il nome del mio file pfx
-
-### Rimuovere i diritti di utilizzo dai documenti PDF abilitati per i diritti esistenti
-
-Rimuovere i diritti di utilizzo dai documenti PDF abilitati per i diritti esistenti prima di applicare i diritti di utilizzo con le credenziali più recenti. È possibile rimuovere i diritti di utilizzo di un documento richiamando l&#39;API removeUsageRights dall&#39;interno di docAssuranceServiceAPI. Per informazioni dettagliate, consulta [Rimuovi diritti di utilizzo](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights) documento.
-
-### Applicazione dei diritti di utilizzo ai documenti PDF
-
-Per applicare i diritti di utilizzo in un ambiente AEM Forms su OSGi, crea un servizio OSGi personalizzato per i diritti di utilizzo dei documenti. È inoltre possibile creare un servlet con un metodo POST per restituire all’utente l’estensione di PDF del lettore. Per istruzioni dettagliate, vedi [Applicazione delle estensioni del Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
+Tutti i documenti PDF, il Reader esteso utilizzando i certificati precedenti prima del 7 gennaio 2023, inclusi quelli scaricati dai clienti, continueranno a funzionare con tutti i diritti di utilizzo ad essi applicati e non richiedono alcun aggiornamento.
 
 ## Domande frequenti
 
-**Chi devo contattare se ho ulteriori domande?**
+**D. Qual è la differenza tra un certificato radice di Adobe e un certificato di estensione di Acrobat Reader? L’Adobe del certificato radice dipende da un certificato delle estensioni Acrobat Reader? Entrambi questi certificati scadono nel gennaio 2023?**
 
-È possibile contattare [Supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) o aumentare un ticket di supporto.
+A. Adobe Root CA è l’autorità di certificato da cui viene rilasciato un certificato di estensione Acrobat Reader. Il 7 gennaio 2023, &quot;Adobe Root CA&quot; e tutti i certificati rilasciati da esso scadono.
 
-**Cosa succede se non aggiorno il certificato prima del 7 gennaio 2023?**
+**D. C&#39;era una comunicazione precedente dell&#39;Adobe relativa alla scadenza dei certificati e all&#39;impatto sull&#39;utilizzo/apertura dei PDF? Questa comunicazione dovrebbe essere ignorata?**
+A. Sulla base di una nuova valutazione della situazione, tutti i documenti PDF estesi utilizzando i certificati di produzione rilasciati dal vecchio &quot;Adobe Root CA&quot; prima del 7 gennaio 2023 continuano a funzionare senza alcuna modifica dopo il 7 gennaio 2023. Se hai già aggiornato i PDF, l’esperienza non subirà modifiche
 
-Quando si tenta di aprire un Reader di documenti PDF esteso con vecchi certificati, gli utenti ricevono un messaggio di errore e non possono più accedere alle funzioni estese del lettore. Un esempio di errore è .
 
-`The document has been changed since it was created and use of extended features in no longer available. Please contact the author for the orignal version of this document.`
+**D. Chi devo contattare se ho ulteriori domande?**
 
-**C&#39;è qualche modifica nel nome della nuova descrizione?**
+A. È possibile contattare [Supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) o aumentare un ticket di supporto.
 
-I nuovi certificati di estensione del Reader menzionano G3-P24 come nome del programma nella descrizione. Nei vecchi certificati, il nome del programma P24 è stato indicato nella descrizione.
+**D. Cosa succede se non aggiorno il certificato prima del 7 gennaio 2023?**
+
+R. Tutti i documenti PDF estesi utilizzando i certificati di produzione rilasciati dal vecchio &#39;Adobe Root CA&#39; prima del 7 gennaio 2023 continuano a funzionare senza modifiche dopo il 7 gennaio 2023. I PDF estesi con i certificati di valutazione non funzionano dopo la data di scadenza.
+
+**D. La descrizione dei nuovi certificati è diversa da quella dei vecchi certificati?**
+
+A. La descrizione dei nuovi certificati delle estensioni Acrobat Reader menziona **G3-P24** come nome del programma. Nella descrizione dei certificati precedenti (certificati basati su &quot;Adobe Root CA&quot;), **P24** è indicato come nome del programma.
+
+**D. Come posso ottenere i certificati più recenti?**
+
+A. Tutti i clienti Forms autorizzati (con licenza attiva) possono scaricare i nuovi certificati (certificati basati su &quot;Adobe Root CA G2&quot;) dal [Sito Web Adobe Licensing](https://licensing.adobe.com/). Se non riesci a trovare il certificato sul sito Web Adobe Licensing, contatta [Supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) o aumentare un ticket di supporto.
+
+**D. I miei documenti PDF estesi utilizzando i certificati rilasciati da &quot;Adobe Root CA&quot; (vecchia autorità di certificazione) continuano a funzionare dopo il 7 gennaio 2023?**
+
+R. Sì, tutti i documenti PDF estesi utilizzando i certificati di produzione rilasciati dall&#39;autorità di certificazione &quot;Adobe radice CA&quot; prima del 7 gennaio 2023 continuano a funzionare senza modifiche dopo il 7 gennaio 2023. I documenti PDF estesi con certificati di valutazione cessano di funzionare oltre la data di scadenza.
+
+**D. Quale versione di Adobe Acrobat Reader è necessaria per continuare a utilizzare i documenti di PDF estesi con i certificati rilasciati da &quot;Adobe Root CA&quot; (la vecchia autorità di certificazione)?**
+
+A. Adobe Acrobat Reader 2020 o versione successiva è necessario per utilizzare i documenti PDF estesi con &quot;Adobe Root CA&quot; (la vecchia autorità di certificazione). È la versione supportata di Acrobat Reader al momento della pubblicazione del documento. Se utilizzi un [versione non supportata di Adobe Acrobat](https://helpx.adobe.com/it/support/programs/eol-matrix.html), l’Adobe consiglia di: [scarica e installa la versione più recente di Adobe Acrobat Reader](https://get.adobe.com/reader/).
+
+**D. Quale versione di Adobe Acrobat Reader è necessaria per continuare a utilizzare i documenti di PDF estesi con i certificati rilasciati da &quot;Adobe Root CA 2&quot; (la nuova autorità di certificazione)?**
+
+A. Adobe Acrobat Reader 2020 o versione successiva è necessario per utilizzare i documenti PDF estesi con &quot;Adobe Root CA 2&quot; (la nuova autorità di certificazione). Se utilizzi un [versione non supportata di Adobe Acrobat Reader](https://helpx.adobe.com/support/programs/eol-matrix.html), l’Adobe consiglia di: [scarica e installa la versione più recente di Adobe Acrobat Reader](https://get.adobe.com/reader/).
+
+**D. Posso eliminare un vecchio certificato delle estensioni Acrobat Reader e aggiungerne uno nuovo su un server Adobe Experience Manager Forms mentre continuo a utilizzare l&#39;alias esistente?**
+
+R. Sì, puoi eliminare un vecchio certificato delle estensioni Acrobat Reader e aggiungerne uno nuovo con l’alias esistente a un server Adobe Experience Manager Forms.
+
+**D. Posso mantenere certificati di estensioni Acrobat Reader sia nuovi che vecchi su un server Adobe Experience Manager Forms?**
+
+R. Sì, è possibile conservare entrambi i certificati ma con alias diversi su un server Adobe Experience Manager Forms. Dopo il 7 gennaio 2023, è possibile utilizzare solo il nuovo certificato per estendere un documento PDF in Reader.
+
+**D. Posso importare lo stesso certificato delle estensioni Acrobat Reader in tutti gli ambienti Adobe Experience Manager Forms?**
+
+R. Sì, lo stesso certificato delle estensioni Acrobat Reader può essere utilizzato in più ambienti.
+
+**D. Come posso verificare i diritti di utilizzo applicati a un documento PDF?**
+
+A. È possibile utilizzare il [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API per recuperare le informazioni sui diritti di utilizzo applicati a un documento PDF.
+
+**D. Come posso modificare la password di un file di certificato delle estensioni Acrobat Reader?**
+
+A. In Microsoft Windows, per modificare la password del certificato, installare il certificato utilizzando la console di gestione Microsoft (MMC) e selezionare **Contrassegna la chiave come esportabile**. Una volta installato, esporta il certificato con una chiave privata e utilizza un&#39;altra password per il file PFX.
+
+
+<!-- 
+## Applying the certificates {#obtaning-and-applying-the-certificates} 
+
+You can choose one of the following paths to apply latest certificates:
+
+* [Updating certificates for an AEM Forms on JEE environment](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment) 
+* [Updating certificates for an AEM Forms on OSGi environment](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
+
+>[!NOTE]
+>
+>The document uses the term certificates and credentials interchangeably.
+
+### Pre-requisites {#Pre-requisites}
+
+Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
+
+* the user has administrator rights on underlying AEM Forms environment. 
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
+* [obtain the certificates](#obtain-the-certificates).
+
+
+### Obtain the certificates {#obtain-the-certificates}
+
+The Rights credential is delivered as a digital certificate that contains the public key, the private key, and the password used to access the credential.
+
+If your organization purchases a production version of Reader Extensions, the production Rights credential is delivered by Adobe Licensing Website (LWS). A production Rights credential is unique to your organization and can enable the specific usage rights that you require.
+
+If you obtained Reader Extensions through a partner or software provider who integrated Reader Extensions into their software, the Rights credential is provided to you by that partner who, in turn, receives this credential from Adobe.
+
+>[!NOTE]
+>
+>The Rights credential cannot be used for typical document signing or assertion of identity. For these applications, you can use a self-sign certificate or acquire an identity certificate from a Certificate Authority (CA).
+
+The following types of Rights credentials are available:
+
+**Customer Evaluation**: A credential with a short validity period that is provided to customers who want to evaluate Reader Extensions. Usage rights applied to documents using this credential expire when the credential expires. This type of credential is valid only for two to three months.
+
+**Production**: A credential with a long validity period that is provided to customers who purchased the full product. Production credentials are unique to each customer but can be installed on multiple systems.
+
+If you have already used certificates to reader extend PDF files, download a production certificate from [Adobe Licensing Website (LWS)](https://licensing.adobe.com/).
+
+### Applying certificates for an AEM Forms on JEE environment {#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment} 
+
+Applying new certificates on AEM Forms on JEE stack requires importing new credentials and applying usage rights. You can use admin console to import credentials and AEM Forms Reader Extension APIs to apply usage rights. 
+
+#### Import and configure credentials 
+
+You can use the Trust Store Management pages to import a new credential. The Trust Store may contain more than one Reader Extensions credential. You must designate one of those credentials as the default Reader Extensions credential. The default credential is used when a Workbench user is unable to determine which credential to use during process creation. These rules apply to default credentials:
+
+* If you import a Reader Extensions credential and the Trust Store contains no other Reader Extensions credentials, it is set as the default.
+* If you import a Reader Extensions credential with the Default option selected, the default type is removed from an existing default credential. The imported credential becomes the default.
+* You cannot delete a default Reader Extensions credential. To delete the default credential, first set another credential as the default. An exception to this rule is that if there is only one credential, you can delete it even though it is the default.
+* You cannot update a default Reader Extensions credential.
+
+To import the credentials: 
+
+1. In administration console, click Settings > Trust Store Management > Local Credentials.
+1. Click Import and, under Trust Store Type, select Acrobat Reader DC extensions Credential.
+1. (Optional) To indicate that this credential is the default credential to use with Acrobat Reader DC extensions, select Default.
+1. In the Alias box, type an identifier for the credential. This identifier is used as the display name for the credential in Acrobat Reader DC extensions. This alias is also used to access the credential programmatically using the AEM forms SDK.
+1. Click Choose File to locate the credential, type the password of the credential, and then click OK.
+
+If the error message "Failed to import credential due to either incorrect file format, or incorrect password" appears, verify that the password is valid.
+
+You can also import and delete credentials programmatically. (See [Programming with AEM forms](../../developing/credentials.md).)
+
+<!-- ### Remove usage rights from existing rights-enabled PDF documents
+
+Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. AEM Forms on JEE provides APIs to remove usage rights. For detailed instructions, see [Removing Usage Rights from PDF Documents](../../developing/assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
+
+To remove usage rights for AEM Forms on JEE processes developed in Workbench, see [Workbench Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf). 
+
+#### Apply the usage rights to PDF documents 
+
+After importing new credentials, you can apply usage rights to PDF documents using the Acrobat Reader DC extensions Java Client API and web service.  For details, see [Applying Usage Rights to PDF Documents](../../developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents). 
+
+
+### Applying certificates for an AEM Forms on OSGi environment {#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment}
+
+Applying new certificates on AEM Forms on OSGi stack requires importing new credentials and applying usage rights. You can use admin console to import credentials and AEM Forms Reader Extension APIs to apply usage rights. 
+
+#### Import credentials {#Import-credentials}
+
+In an AEM Forms on OSGi environment, a Reader Extension credential is associated with fd-service user. Before adding credentials for fd-user key store, perform the following steps to create a key store: 
+
+1. Log in to your AEM Author instance as an Administrator.
+1. Go to **[!UICONTROL Tools]**> **[!UICONTROL Security]**>**[!UICONTROL Users]**.
+1. Scroll down the list of users until you find fd-service user account.
+1. Click **[!UICONTROL fd-service]** user.
+1. Click keystore tab.
+1. Click **[!UICONTROL Create KeyStore]**.
+1. Set the KeyStore Access Password and save your settings to create the KeyStore password.
+
+After creating the key-store, add credentials to fd-service user. The following video explains the steps: 
+
+>[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
+
+The following command list the details of the pfx file. Before running the command, navigate to the directory that contains the .pfx file.
+
+`keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
+
+For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+
+<!-- ### Remove usage rights from existing rights-enabled PDF documents
+
+Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. You can remove the usage rights for a document by invoking the removeUsageRights API from within the docAssuranceServiceAPI. For detailed information, see [Remove Usage Rights](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights) document.
+
+#### Apply the usage rights to PDF documents 
+
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->
