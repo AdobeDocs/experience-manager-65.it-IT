@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 89bb9223bb5e1e1d8719c5d957ec380872ed3e96
+source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 3%
@@ -203,7 +203,7 @@ La password modificata viene salvata quando selezioni **[!UICONTROL Salva]** nel
 
 Se desideri personalizzare ulteriormente la configurazione e l&#39;impostazione della modalità Dynamic Media - Scene7 o ottimizzarne le prestazioni, puoi completare una o più delle seguenti operazioni *facoltativo* attività:
 
-* [(Facoltativo) Attiva l&#39;autorizzazione ACL in Dynamic Media - Modalità Scene7](#optional-enable-acl)
+* [(Facoltativo) Attiva le autorizzazioni ACL in Dynamic Media - Modalità Scene7](#optional-enable-acl)
 
 * [(Facoltativo) Configura Dynamic Media - Modalità Scene7 per il caricamento di risorse superiori a 2 GB](#optional-config-dms7-assets-larger-than-2gb)
 
