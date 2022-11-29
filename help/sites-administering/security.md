@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
+source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5454'
 ht-degree: 2%
 
 ---
@@ -215,16 +215,17 @@ Gli elenchi di controllo degli accessi sono costituiti dalle singole autorizzazi
 
 >[!NOTE]
 >
->Ci sono ACL inclusi con i campioni. È consigliabile esaminare e determinare ciò che è appropriato per le applicazioni. Per rivedere le ACL incluse, vai su **CRXDE **e seleziona la **Controllo degli accessi** scheda per i seguenti nodi:
+>Ci sono ACL inclusi con i campioni. È consigliabile esaminare e determinare ciò che è appropriato per le applicazioni. Per esaminare le ACL incluse, vai a **CRXDE** e seleziona la **Controllo degli accessi** scheda per i seguenti nodi:
 >
->`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Consente a tutti l&#39;accesso in lettura.
->`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Consente a tutti l&#39;accesso in lettura.
->`/home/users/geometrixx-outdoors`: Consente a tutti l&#39;accesso in lettura per `*/profile*` e
->`*/social/relationships/following/*`.
+>* `/etc/cloudservices`
+>* `/home/users/we-retail`
 >
->L&#39;applicazione personalizzata può impostare l&#39;accesso per altre relazioni, ad esempio `*/social/relationships/friend/*` o `*/social/relationships/pending-following/*`.
+>L&#39;applicazione personalizzata può impostare l&#39;accesso per altre relazioni, ad esempio:
 >
->Quando crei ACL specifici per le community, ai membri che si uniscono a tali community possono essere concesse autorizzazioni aggiuntive. Ad esempio, questo potrebbe accadere quando gli utenti si uniscono alle community in `/content/geometrixx-outdoors/en/community/hiking` o `/content/geometrixx-outdoors/en/community/winter-sports`.
+>* `*/social/relationships/friend/*`
+>* oppure `*/social/relationships/pending-following/*`.
+>
+>Quando crei ACL specifici per le community, ai membri che si uniscono a tali community possono essere concesse autorizzazioni aggiuntive. Ad esempio, questo potrebbe accadere quando gli utenti si uniscono alle community all’indirizzo: `/content/we-retail/us/en/community`
 
 ### Stati delle autorizzazioni {#permission-states}
 
