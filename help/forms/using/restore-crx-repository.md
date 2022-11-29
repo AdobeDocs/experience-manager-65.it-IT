@@ -2,9 +2,9 @@
 title: Impossibile ripristinare l'archivio CRX danneggiato applicabile al server cluster JEE
 description: Passaggi per ripristinare l'archivio CRX danneggiato
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ Esegui i seguenti passaggi per risolvere il problema:
 
 Questa soluzione si applica a:
 
-* Ambiente cluster AEM Forms su JEE
+* AEM Forms su cluster JEE
