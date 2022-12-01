@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 4%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 4%
    + [Reader che estende i documenti PDF protetti da policy utilizzando la Libreria di protezione portatile](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Abilita AEM per cercare documenti PDF e Microsoft Office protetti da protezione dei documenti](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento per conto di un altro utente](using/protect-document-on-behalf-of-another-user.md)
-   + [Supporto di Auth2.0 per il servizio di posta Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
    + [Guida di Forms Designer](using/forms-designer-help.md)
    + [Utilizzo di Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
@@ -453,6 +452,7 @@ ht-degree: 4%
    + Gestione degli endpoint {#manage-endpoints}
       + [Aggiunta, abilitazione, modifica o rimozione di endpoint](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configurazione degli endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configurare l’autenticazione oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configurazione degli endpoint remoti](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configurazione degli endpoint della cartella controllati](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
