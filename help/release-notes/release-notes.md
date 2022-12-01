@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3853'
 ht-degree: 4%
 
 ---
@@ -105,9 +105,44 @@ ht-degree: 4%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Correzioni in [!DNL Experience Manager] Forms viene fornito tramite un pacchetto aggiuntivo separato una settimana dopo il programma [!DNL Experience Manager] Data di rilascio del Service Pack. In questo caso, i pacchetti aggiuntivi rilasceranno giovedì 1 dicembre 2022. Inoltre, a questa sezione verrà aggiunto anche un elenco di correzioni e miglioramenti di Forms.
+### Funzioni principali {#keyfeatures}
+
+* AEM Forms Designer è ora disponibile nelle impostazioni internazionali spagnole. (LC-3920051)
+* È ora possibile utilizzare OAuth2 per l’autenticazione con i protocolli del server di posta elettronica di Microsoft Office 365 (SMTP e IMAP). (NPR-35177)
+* È possibile impostare [Rivelare sul server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) su true per identificare i campi nascosti per l&#39;esclusione da un documento di record sul lato server. (NPR-38149)
+* AEM Forms Designer richiede la versione a 32 bit di Visual C++ 2019 Redistributable (x86).  (NPR-36690)
+
+### Problemi risolti {#fixes}
+
+* Quando la proprietà disattivata dei dati di un modulo adattivo è attivata, l’aspetto dei gruppi di pulsanti di scelta e di caselle di controllo non cambia. (NPR-39368)
+* Quando un Modulo adattivo viene tradotto, alcune traduzioni vengono perse e non vengono visualizzate correttamente. (NPR-39367)
+* Quando la proprietà di una pagina è impostata su nascosta, la pagina non viene rimossa dal set di moduli. (NPR-39325)
+* In un documento di record, la sezione della nota a piè di pagina dinamica alla fine della pagina non è presente. (NPR-39322)
+* Quando per un modulo adattivo viene generato un documento di record, per i pulsanti di scelta e le caselle di controllo è consentito solo l’allineamento verticale. L&#39;utente non può impostare l&#39;allineamento orizzontale per i pulsanti di scelta e le caselle di controllo. (NPR-39321)
+* Dopo aver distribuito Gestione della corrispondenza, se più utenti tentano di accedere a un modulo, org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots diventa un collo di bottiglia e viene colpita la maggior parte dei thread. Il caricamento di varie richieste di pagina dei moduli richiede spesso più di 1 minuto ciascuna anche quando il server ha un carico molto basso. (NPR-39176, CQ-4347710)
+* In un modulo adattivo, quando si utilizza un campo Rich Text in un frammento di modulo adattivo caricato lentamente, si verificano alcuni dei seguenti errori:
+   * Non è possibile modificare il contenuto o aggiungere elementi al campo RTF.
+   * Il pattern di visualizzazione applicato al testo RTF non viene rispettato. 
+   * All’invio del modulo non viene visualizzato il messaggio di errore relativo alla lunghezza minima del campo.
+   * Il contenuto di questo campo RTF viene incluso più volte nel file submit-XML prodotto. (NPR-39168)
+* Quando l’opzione del selettore data viene utilizzata in un modulo adattivo, non riesce a convertire il valore nel formato corretto. (NPR-39156)
+* Durante l’anteprima di un modulo adattivo come modulo HTML, questo non viene riprodotto correttamente, in quanto alcuni dei sottomoduli si sovrappongono al modulo principale. (NPR-39046)
+* Se nel pannello è presente una tabella nascosta e il rendering del modulo adattivo viene eseguito utilizzando la visualizzazione a tabella, i campi della prima scheda non vengono visualizzati correttamente. (NPR-39025)
+* La `Body` tag mancante per il modello OOTB (Out-of-the-box). (NPR-39022)
+* Il documento di record non viene generato nella lingua del modulo adattivo. Viene sempre generato in inglese. (NPR-39020)
+* Quando un modulo adattivo dispone di più pannelli e alcuni pannelli utilizzano la funzione integrata **File allegato** il componente `Error occurred while draft saving` si verifica un errore . (NPR-38978)
+* Quando `=` il segno viene utilizzato nei campi casella di controllo, elenco a discesa o pulsante di scelta di un modulo adattivo e il documento di record viene generato, quindi `=` il segno non è visibile nel documento di record generato.(NPR-38859)
+* Il numero di errori di elaborazione batch dell&#39;avviso aumenta in modo multiplo dopo l&#39;aggiornamento del service pack 6.5.11.0. (NPR-39636)
+* Se non si forniscono dati di prova, le lettere di gestione della corrispondenza non vengono caricate nell’interfaccia utente dell’agente. (CQ-4348702)
+* Quando l&#39;utente applica il Service Pack 14 (SP14) di AEM Forms da AEM Forms distribuito utilizzando IBM® WebSphere®, l&#39;avvio non riesce durante l&#39;inizializzazione di un database e il `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` si verifica un errore.(NPR-39414)
+* Su un modulo AEM sul server OSGi, quando si utilizza l’API Document Service per certificare PDF, questo non riesce e viene restituito un errore: com.adobe.fd.signature.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* Quando l&#39;utente prova a utilizzare il servizio wrapper per il rendering delle lettere con Forms 6.3, il `java.lang.reflect.UndeclaredThrowableException` si verifica un errore. (CQ-4347259)
+* Quando si esegue il rendering di un file XDP come modulo HTML5, il contenuto della pagina master viene sottoposto a rendering per primo, indipendentemente dal posizionamento degli oggetti in un modulo adattivo. (CQ-4345218)
+* La configurazione dell&#39;applicazione nel server di destinazione cambia alle impostazioni definite nel server di origine anche se il **Sovrascrivi la configurazione al termine dell’importazione** non è selezionata al momento dell&#39;importazione dell&#39;applicazione. (NPR-39044)
+* Quando un utente prova ad aggiornare la configurazione del connettore utilizzando Configuration Manager, questo non riesce.(CQ-4347077)
+* Quando l&#39;utente tenta di eseguire una patch AEM Forms su JEE dopo aver modificato la password predefinita dell&#39;utente amministratore, viene visualizzata un&#39;eccezione `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` si verifica. (CQ-4348277)
+* In AEM Designer, i campi modulo senza didascalie vengono inseriti nelle celle di una tabella, incluse le caselle di controllo.(LC-3920410)
+* Quando l&#39;utente tenta di aprire la Guida in AEM Forms Designer, questa non viene visualizzata correttamente. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -130,7 +165,7 @@ ht-degree: 4%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL genera un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
+* GraphQL solleva un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
 * Ordinamento degli ordini dei titoli nella vista Elenco, sia ascendente che decrescente, modalità con l’ordine A, C e B. (SITES-7585)
 * È stato aggiunto il supporto per l’assegnazione tag per le varianti dei frammenti di contenuto. (SITES-8168)
 * Codice specifico Odin identificato e rimosso dall’Experience Manager 6.5 non necessario. (SITES-3574)

@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3466'
 ht-degree: 2%
 
 ---
@@ -298,10 +298,10 @@ Durante la generazione di un documento di record, è possibile modificare le inf
 Per localizzare le informazioni di branding immesse nella scheda Documento di record, è necessario assicurarsi che le impostazioni internazionali del browser siano impostate in modo appropriato. Per personalizzare le informazioni di branding del documento di registrazione, completa i seguenti passaggi:
 
 1. Seleziona un pannello (pannello principale) nel documento del record, quindi tocca ![configurare](assets/configure.png).
-1. Tocca ![scheda](assets/dortab.png). Viene visualizzata la scheda Documento di record.
+1. Tocca ![scheda](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento di record.
 1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento di record. Se si seleziona il modello predefinito, sotto il menu a discesa Modello viene visualizzata una miniatura del documento di record.
 
-   ![modello di branding](assets/brandingtemplate.png)
+   ![modello di branding](/help/forms/using/assets/brandingtemplate.png)
 
    Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul server AEM Forms. Se desideri utilizzare un modello che non è già sul server AEM Forms, devi prima caricare XDP sul server AEM Forms.
 
@@ -396,7 +396,7 @@ Per informazioni su come applicare interruzioni di pagina e applicare più pagin
 **Impostazioni a livello di modulo**
 
 * **Includi campi non associati in DoR:** L’impostazione della proprietà include campi non associati di un modulo adattivo basato su schema nel documento di registrazione. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** L&#39;impostazione della proprietà sostituisce il comportamento della proprietà a livello di campo &quot;Escludi dal documento di record&quot; quando non è true. Se i campi sono nascosti al momento dell’invio del modulo, verranno esclusi dal documento se la proprietà è impostata su true, purché la proprietà &quot;Escludi dal documento di record&quot; non sia impostata.
+* **Escludere i campi dal DoR se nascosti:** Imposta la proprietà per escludere i campi nascosti da [!UICONTROL Documento di registrazione] all’invio del modulo. Quando si abilita [Rivelare sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL Documento di registrazione].
 
 ## Applicazione di un&#39;interruzione di pagina in un documento di registrazione {#apply-page-breaks-in-dor}
 
@@ -404,13 +404,12 @@ Per informazioni su come applicare interruzioni di pagina e applicare più pagin
 
 Per applicare un&#39;interruzione di pagina a un documento di record:
 
-1. Tocca il pannello e seleziona ![Configura](assets/configure-icon.svg).
-
+1. Tocca il pannello e seleziona ![Configura](/help/forms/using/assets/configure.png)
 1. Espandi **[!UICONTROL Documento di registrazione]** per visualizzare le proprietà.
 
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](assets/folder-icon.svg) in **[!UICONTROL Luogo]** campo .
+1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Luogo]** campo .
 1. Tocca **[!UICONTROL Parte superiore pagina successiva]** e toccare **[!UICONTROL Seleziona]**. Puoi anche toccare **[!UICONTROL Parte superiore pagina]**, seleziona la pagina master e tocca **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
-1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 
 Il pannello selezionato si sposta sulla pagina successiva.
 
@@ -424,13 +423,13 @@ Di seguito è riportato un esempio di come applicare più pagine master a un doc
 
 Per applicare le proprietà della seconda pagina master a un pannello e le proprietà della terza pagina master ai pannelli seguenti, eseguire la procedura seguente:
 
-1. Toccare il pannello per applicare la seconda pagina master e selezionare ![Configura](assets/configure-icon.svg).
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](assets/folder-icon.svg) in **[!UICONTROL Luogo]** campo .
+1. Toccare il pannello per applicare la seconda pagina master e selezionare ![Configura](assets/cmppr.png).
+1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Luogo]** campo .
 1. Tocca **[!UICONTROL Sulla pagina]**, seleziona la seconda pagina master e tocca **[!UICONTROL Seleziona]**.
 AEM Forms applica la seconda pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](assets/folder-icon.svg) in **[!UICONTROL Dopo]** campo .
+1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Dopo]** campo .
 1. Tocca **[!UICONTROL Vai alla pagina]**, seleziona la terza pagina master e tocca **[!UICONTROL Seleziona]**.
-1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 AEM Forms applica la terza pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
 
 

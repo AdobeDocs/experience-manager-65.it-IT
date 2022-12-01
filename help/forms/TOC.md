@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3824'
+source-wordcount: '3830'
 ht-degree: 4%
 
 ---
@@ -371,6 +371,7 @@ ht-degree: 4%
    + [Reader che estende i documenti PDF protetti da policy utilizzando la Libreria di protezione portatile](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Abilita AEM per cercare documenti PDF e Microsoft Office protetti da protezione dei documenti](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento per conto di un altro utente](using/protect-document-on-behalf-of-another-user.md)
+   + [Supporto di Auth2.0 per il servizio di posta Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
    + [Guida di Forms Designer](using/forms-designer-help.md)
    + [Utilizzo di Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
