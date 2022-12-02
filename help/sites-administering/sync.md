@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2445'
 ht-degree: 5%
 
 ---
@@ -47,13 +47,13 @@ I vantaggi della sincronizzazione utente tramite la distribuzione Sling, rispett
 
 >[!NOTE]
 >
->Se sono necessarie sessioni, si consiglia di utilizzare una soluzione SSO o una sessione appiccicosa e chiedere ai clienti di effettuare l&#39;accesso se passano a un altro editore.
+>Se sono necessarie sessioni, si consiglia di utilizzare una soluzione SSO o una sessione appiccicosa e chiedere ai clienti di effettuare l&#39;accesso se passano a un&#39;altra istanza di pubblicazione.
 
 >[!CAUTION]
 >
->Sincronizzazione delle ***amministratori*** gruppo non supportato, anche quando la sincronizzazione utente è abilitata. Al contrario, un errore di &quot;importazione del diff&quot; verrà registrato nel registro degli errori.
+>Sincronizzazione delle **amministratori** gruppo non supportato, anche quando la sincronizzazione utente è abilitata. Al contrario, un errore di &quot;importazione del diff&quot; verrà registrato nel registro degli errori.
 >
->Pertanto, quando la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dal ***amministratori** gruppo, la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
+>Pertanto, quando la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dalla **amministratori** gruppo, la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
 
 ## Abilita sincronizzazione utente {#enable-user-sync}
 
@@ -71,7 +71,7 @@ Di seguito sono riportati i passaggi necessari per abilitare la sincronizzazione
 
 ### Prerequisiti {#prerequisites}
 
-1. Se utenti e gruppi di utenti sono già stati creati su un solo editore, si consiglia di [sincronizzazione manuale](#manually-syncing-users-and-user-groups) i dati utente a tutti gli editori prima di configurare e abilitare la sincronizzazione utente.
+1. Se utenti e gruppi di utenti sono già stati creati su un&#39;istanza di pubblicazione, si consiglia di [sincronizzazione manuale](#manually-syncing-users-and-user-groups) i dati utente a tutte le istanze di pubblicazione prima di configurare e abilitare la sincronizzazione utente.
 
 Una volta abilitata la sincronizzazione utente, vengono sincronizzati solo gli utenti e i gruppi appena creati.
 
@@ -159,7 +159,7 @@ Consulta anche
 
 **Configurare le autorizzazioni**
 
-Una volta autorizzato l&#39;utente, un membro del **`administrators`**gruppo di utenti, creato su tutte le istanze di pubblicazione, l&#39;utente autorizzato deve essere identificato nell&#39;autore come avente l&#39;autorizzazione per sincronizzare i dati utente dall&#39;autore alla pubblicazione.
+Una volta che un utente autorizzato, un membro del **`administrators`** gruppo di utenti, è stato creato su tutte le istanze di pubblicazione, l&#39;utente autorizzato deve essere identificato all&#39;autore come avente l&#39;autorizzazione per sincronizzare i dati utente dall&#39;autore alla pubblicazione.
 
 * **sull&#39;autore**
 
@@ -181,7 +181,7 @@ Una volta autorizzato l&#39;utente, un membro del **`administrators`**gruppo di 
 
 **Abilita sincronizzazione utente**
 
-* **al momento della pubblicazione**:
+* **su ogni istanza di pubblicazione**:
 
    * accesso con privilegi di amministratore
    * accedere al [Console web](/help/sites-deploying/configuring-osgi.md)
@@ -193,7 +193,7 @@ Una volta autorizzato l&#39;utente, un membro del **`administrators`**gruppo di 
 
       * seleziona la `Enabled` spunta
       * select `Save`
-   * **ripetere **per ogni istanza di pubblicazione
+   * **repeat** per ogni istanza di pubblicazione
 
 
 
@@ -267,13 +267,13 @@ La configurazione predefinita è per una singola istanza di pubblicazione. Poich
 ![](assets/chlimage_1-25.png)
 
 * **Endpoint per l’esportazione**
-Deve essere presente un endpoint di esportazione per ogni editore. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, ci dovrebbero essere 2 voci:
+Dovrebbe essere presente un endpoint di esportazione per ogni istanza di pubblicazione. Ad esempio, se ci sono 2 istanze di pubblicazione, localhost:4503 e 4504, ci dovrebbero essere 2 voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Endpoint importazione**
-Per ogni editore deve essere presente un endpoint di importazione. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, ci dovrebbero essere 2 voci:
+Deve essere presente un endpoint di importazione per ogni istanza di pubblicazione. Ad esempio, se ci sono 2 istanze di pubblicazione, localhost:4503 e 4504, ci dovrebbero essere 2 voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -400,7 +400,7 @@ Per garantire la corretta sincronizzazione degli aggiornamenti, è necessario mo
 
 Per progettazione, gli utenti e i profili creati nell’ambiente di pubblicazione (registrazione automatica) non vengono visualizzati nell’ambiente di authoring.
 
-Quando la topologia è un [pubblica azienda](/help/sites-deploying/recommended-deploys.md#tarmk-farm) e la sincronizzazione utente è stata configurata correttamente, il *user *e *profilo utente* viene sincronizzato nella farm di pubblicazione utilizzando la distribuzione Sling.
+Quando la topologia è un [pubblica azienda](/help/sites-deploying/recommended-deploys.md#tarmk-farm) e la sincronizzazione utente è stata configurata correttamente, *user* e *profilo utente* viene sincronizzato nella farm di pubblicazione utilizzando la distribuzione Sling.
 
 ### Utenti o gruppi di utenti creati tramite la console di sicurezza {#users-or-user-groups-are-created-using-security-console}
 
@@ -412,7 +412,7 @@ Quando il [Amministrazione degli utenti e sicurezza](/help/sites-administering/s
 
 ### Come attivare la sincronizzazione utente offline {#how-to-take-user-sync-offline}
 
-Per impostare la sincronizzazione utente su fine, al fine di [rimuovere un editore](#how-to-remove-a-publisher) o [sincronizzazione manuale dei dati](#manually-syncing-users-and-user-groups), la coda di distribuzione deve essere vuota e silenziosa.
+Per portare la sincronizzazione utente offline, al fine di [rimuovere un&#39;istanza di pubblicazione](#how-to-remove-a-publish-instance) o [sincronizzazione manuale dei dati](#manually-syncing-users-and-user-groups), la coda di distribuzione deve essere vuota e silenziosa.
 
 Per controllare lo stato della coda di distribuzione:
 
@@ -455,7 +455,7 @@ Questo è ciò che viene visualizzato quando la sincronizzazione utente non è s
 
 ![](assets/chlimage_1-28.png)
 
-#### Come eseguire la diagnostica per gli editori {#how-to-run-diagnostics-for-publishers}
+#### Come eseguire la diagnostica per le istanze di pubblicazione {#how-to-run-diagnostics-for-publish-instances}
 
 Quando la diagnostica viene eseguita dall’ambiente di authoring, i risultati di pass/fail includono un [INFORMAZIONI] visualizzazione dell’elenco delle istanze di pubblicazione configurate per la conferma.
 
@@ -531,7 +531,7 @@ Vedere la sezione [9. ID Sling univoco](#unique-sling-id)
 
 ### Sincronizzazione manuale di utenti e gruppi di utenti {#manually-syncing-users-and-user-groups}
 
-* sull&#39;editore in cui esistono utenti e gruppi di utenti:
+* su istanze di pubblicazione in cui esistono utenti e gruppi di utenti:
 
    * [se attivato, disattiva la sincronizzazione utente](#how-to-take-user-sync-offline)
    * [creare un pacchetto](/help/sites-administering/package-manager.md#creating-a-new-package) di `/home`
@@ -549,13 +549,13 @@ Vedere la sezione [9. ID Sling univoco](#unique-sling-id)
 
 Per configurare o abilitare la sincronizzazione utente, passa al passaggio 1: [Agente di distribuzione Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
-### Quando un editore diventa non disponibile {#when-a-publisher-becomes-unavailable}
+### Quando un&#39;istanza di pubblicazione diventa non disponibile {#when-a-publish-instance-becomes-unavailable}
 
-Quando un’istanza di pubblicazione diventa non disponibile, non deve essere rimossa se torna online in futuro. Le modifiche verranno messe in coda per l&#39;editore e, una volta tornate online, le modifiche saranno elaborate.
+Quando un’istanza di pubblicazione diventa non disponibile, non deve essere rimossa se torna online in futuro. Le modifiche verranno accodate per l&#39;istanza di pubblicazione e, una volta tornate online, le modifiche saranno elaborate.
 
 Se l’istanza di pubblicazione non torna mai online, se è offline in modo permanente, deve essere rimossa perché la compilazione della coda comporterà un notevole utilizzo dello spazio su disco nell’ambiente di authoring.
 
-Quando un editore non è attivo, il registro dell&#39;autore avrà eccezioni simili a:
+Quando un&#39;istanza di pubblicazione è disattivata, il registro dell&#39;autore avrà eccezioni simili a:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -565,14 +565,14 @@ Quando un editore non è attivo, il registro dell&#39;autore avrà eccezioni sim
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### Come rimuovere un editore {#how-to-remove-a-publisher}
+### Come rimuovere un&#39;istanza di pubblicazione {#how-to-remove-a-publish-instance}
 
-Per rimuovere un editore dal [Agente di distribuzione Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory), la coda di distribuzione deve essere vuota e silenziosa.
+Per rimuovere un’istanza di pubblicazione dal [Agente di distribuzione Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory), la coda di distribuzione deve essere vuota e silenziosa.
 
 * autore:
 
    * [Disconnetti utente offline](#how-to-take-user-sync-offline)
-   * seguire [passaggio 7](#apache-sling-distribution-agent-sync-agents-factory) per rimuovere l&#39;editore da entrambi gli elenchi server:
+   * seguire [passaggio 7](#apache-sling-distribution-agent-sync-agents-factory) per rimuovere l&#39;istanza di pubblicazione da entrambi gli elenchi server:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
