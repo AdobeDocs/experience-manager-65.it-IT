@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Il framework utilizza i token per garantire che la richiesta del cliente sia leg
 >
 >Non ci sono token nelle istanze di pubblicazione per gli utenti anonimi.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 ### Dipendenze {#dependencies}
 
@@ -35,7 +35,7 @@ Qualsiasi componente che si basa sul `granite.jquery` La dipendenza beneficerà 
 
 ### Replicazione della chiave Crypto {#replicating-crypto-keys}
 
-Per utilizzare i token, è necessario replicare il `/etc/keys/hmac` binario per tutte le istanze nella distribuzione. Un modo pratico per copiare la chiave HMAC in tutte le istanze è quello di creare un pacchetto contenente la chiave e installarla tramite Gestione pacchetti su tutte le istanze.
+Per utilizzare i token, devi replicare il binario HMAC a tutte le istanze nella distribuzione. Vedi [Replica della chiave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) per ulteriori dettagli.
 
 >[!NOTE]
 >

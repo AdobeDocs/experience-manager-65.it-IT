@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -68,16 +68,12 @@ Quando configuri il token incapsulato, è necessario tenere in considerazione al
 
 ### Replica della chiave HMAC {#replicating-the-hmac-key}
 
-La chiave HMAC è presente come proprietà binaria di `/etc/key` nel repository. È possibile scaricarlo separatamente premendo il pulsante **visualizzare** link accanto ad esso:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 Per replicare la chiave tra le istanze, è necessario:
 
 1. Accedi all&#39;istanza AEM, in genere un&#39;istanza dell&#39;autore, che contiene il materiale chiave da copiare;
 1. Individua il `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, sotto questo percorso:
 
-   * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    La `bundle.info` all&#39;interno di ogni cartella identificherà il nome del bundle.
 
