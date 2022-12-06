@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1784'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,19 @@ Esempio:
 Il selettore di rendering normale utilizza un trasformatore invece degli script aggiuntivi; la [Rewriter Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) viene utilizzato come trasformatore. Questa configurazione è disponibile in
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configurazione della generazione del rendering di HTML {#configuring-html-rendition-generation}
+
+Il rendering di HTML viene generato utilizzando le pipeline di rewriter Sling. La pipeline è definita in `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer supporta le seguenti opzioni:
+
+* `allowedCssClasses`
+   * Espressione RegEx che corrisponde alle classi CSS che devono essere lasciate nel rendering finale.
+   * Questa funzione è utile se il cliente desidera eliminare alcune classi CSS specifiche
+* `allowedTags`
+   * Elenco di tag HTML da consentire nel rendering finale.
+   * Per impostazione predefinita sono consentiti i seguenti tag (non è necessaria alcuna configurazione): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
+
+Si consiglia di configurare il rewriter utilizzando una sovrapposizione. Vedi [Sovrapposizioni in AEM as a Cloud Service](/help/sites-developing/overlays.md)
 
 ## Variazioni social {#social-variations}
 
