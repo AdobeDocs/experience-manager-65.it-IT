@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
-source-wordcount: '6794'
+source-wordcount: '6888'
 ht-degree: 0%
 
 ---
@@ -572,6 +572,9 @@ Mostra i parametri utilizzati dalla funzione . Una funzione può avere più tag 
    1. stringa
    1. numero
    1. booleano
+   1. scope
+
+   L’ambito viene utilizzato per i campi di riferimento di un modulo adattivo. Quando un modulo utilizza il caricamento lento, è possibile utilizzare `scope` per accedere ai relativi campi. È possibile accedere ai campi sia quando i campi sono caricati sia se i campi sono contrassegnati come globali.
 
    Tutti gli altri tipi di parametri sono classificati in una delle categorie precedenti. Nessuno non supportato. Assicurati di selezionare uno dei tipi indicati sopra. I tipi non sono sensibili all’uso di maiuscole e minuscole. Gli spazi non sono consentiti nel parametro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
@@ -586,6 +589,29 @@ Aggiunge informazioni sulla funzione, ad esempio la sua finalità.
    1. booleano
 
    Tutti gli altri tipi di restituzione sono classificati in una delle situazioni precedenti. Nessuno non supportato. Assicurati di selezionare uno dei tipi indicati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
+
+* **Questo**
+Sintassi: 
+`@this currentComponent`
+
+   Utilizza @this per fare riferimento al componente Modulo adattivo su cui viene scritta la regola.
+
+   L&#39;esempio seguente è basato sul valore del campo. Nell’esempio seguente, la regola nasconde un campo nel modulo. La `this` porzione di `this.value` si riferisce al componente Modulo adattivo sottostante, su cui viene scritta la regola.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+   ```
 
 >[!NOTE]
 >
