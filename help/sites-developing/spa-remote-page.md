@@ -2,10 +2,10 @@
 title: Componente RemotePage
 description: Il componente RemotePage è un componente di pagina personalizzato per la modifica del SPA React remoto in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
+source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Il componente RemotePage recupera tutte le risorse necessarie dall&#39;applicazi
 
 Vedi l&#39;articolo [Modifica di un SPA esterno in AEM](spa-edit-external.md) per ulteriori dettagli sulle SPA modificabili esterne in AEM.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 * Abilitare CORS nello sviluppo
 * Configurare l’URL remoto nelle Proprietà pagina
@@ -37,9 +37,9 @@ Vedi l&#39;articolo [Modifica di un SPA esterno in AEM](spa-edit-external.md) pe
 
 * L&#39;applicazione deve essere in grado di inizializzare in un `<div id="root"></div>` sotto l&#39;elemento body. Se è previsto un markup diverso per l’istanza dell’app, questo deve essere regolato di conseguenza negli script HTL del componente proxy che ha un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
-* L&#39;implementazione corrente del componente RemotePage supporta solo le applicazioni React remote.
+* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [Ho trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato solo per funzionare con il framework React (e Next.js tramite il componente Remote-page-next) e quindi non supporta il caricamento in remoto di applicazioni da altri framework, come ad Angular.
 * I CSS interni definiti nel file HTML principale dell’applicazione e i CSS in linea sul nodo DOM principale non saranno disponibili quando si esegue il rendering remoto in AEM.
 
 ## Dettagli tecnici {#technical-details}
