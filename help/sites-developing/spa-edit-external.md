@@ -2,9 +2,9 @@
 title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
+source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
@@ -358,6 +358,10 @@ Per abilitare la modifica in AEM per questo esempio SPA, sono necessari i seguen
 1. Verifica di modificare la pagina in AEM.
 
    * Distribuisci il progetto da AEM e passa alla nuova creazione `test` pagina. Il contenuto della pagina viene ora sottoposto a rendering e i componenti AEM sono modificabili.
+
+## Limitazioni del framework {#framework-limitations}
+
+Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [Ho trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato solo per funzionare con il framework React (e Next.js tramite il componente Remote-page-next) e quindi non supporta il caricamento in remoto di applicazioni da altri framework, come ad Angular.
 
 ## Risorse aggiuntive {#additional-resources}
 
