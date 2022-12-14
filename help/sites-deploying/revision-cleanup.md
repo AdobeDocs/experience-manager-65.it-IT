@@ -1,8 +1,8 @@
 ---
 title: Pulizia revisioni
 seo-title: Revision Cleanup
-description: Scopri come utilizzare la funzionalità Revision Cleanup (Pulizia delle revisioni) in AEM 6.3.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Scopri come utilizzare la funzionalità Revision Cleanup (Pulizia delle revisioni) in AEM 6.5.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
+source-wordcount: '5918'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento le dimensioni dell&#39;archivio crescono. Per evitare una crescita incontrollata dell&#39;archivio, è necessario ripulire le vecchie revisioni per liberare le risorse del disco. Questa funzionalità di manutenzione è denominata Revision Cleanup (Pulizia delle revisioni). È disponibile come routine offline dal AEM 6.0.
 
-Con AEM 6.3 è stata introdotta una versione online di questa funzionalità chiamata Pulizia revisioni online. Rispetto al cleanup delle revisioni offline in cui l&#39;istanza AEM deve essere chiusa, il cleanup delle revisioni online può essere eseguito mentre l&#39;istanza AEM è online. Il cleanup delle revisioni online è attivato per impostazione predefinita ed è il modo consigliato per eseguire una pulizia delle revisioni.
+Con AEM 6.3 e versioni successive, è stata introdotta una versione online di questa funzionalità chiamata Pulizia revisioni online. Rispetto al cleanup delle revisioni offline in cui l&#39;istanza AEM deve essere chiusa, il cleanup delle revisioni online può essere eseguito mentre l&#39;istanza AEM è online. Il cleanup delle revisioni online è attivato per impostazione predefinita ed è il modo consigliato per eseguire una pulizia delle revisioni.
 
 **Nota**: [Guarda il video](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) per un&#39;introduzione e come utilizzare il cleanup delle revisioni online.
 
@@ -162,7 +162,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
   </tr>
   <tr>
    <td><strong>Il formato Tar precedente è ancora supportato?</strong></td>
-   <td>Solo il nuovo Segment Tar di Oak è supportato con AEM 6.3.</td>
+   <td>È supportato solo il nuovo Segment Tar di Oak con AEM 6.3 o versione successiva.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Posso effettuare l’aggiornamento alla versione 6.3 e la migrazione in un secondo momento (ad esempio, utilizzando un’altra finestra di manutenzione)?</strong></td>
+   <td><strong>Posso effettuare l’aggiornamento alla versione 6.3 o successiva e la migrazione in un secondo momento (ad esempio, utilizzando un’altra finestra di manutenzione)?</strong></td>
    <td>No, come spiegato in precedenza, la migrazione dei contenuti è obbligatoria.</td>
    <td> </td>
   </tr>
@@ -249,7 +249,7 @@ In alcuni casi, alternando tra la coda e le modalità di compattazione completa 
   </tr>
   <tr>
    <td><strong>Ci sono dei prerequisiti prima di eseguire il cleanup delle revisioni online?</strong></td>
-   <td><p>Il cleanup delle revisioni online è disponibile solo con AEM 6.3 e versioni successive. Inoltre, se utilizzi una versione precedente di AEM, devi effettuare la migrazione al nuovo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
+   <td><p>Il cleanup delle revisioni online è disponibile solo con le versioni AEM 6.3 e successive. Inoltre, se utilizzi una versione precedente di AEM, devi effettuare la migrazione al nuovo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
