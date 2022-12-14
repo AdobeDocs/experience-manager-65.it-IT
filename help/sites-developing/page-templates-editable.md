@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3252'
 ht-degree: 10%
 
 ---
@@ -435,7 +435,7 @@ Se hai creato un modello che può fungere da base per altri modelli, puoi copiar
 1. Crea un modello come qualsiasi altro modello modificabile [come documentato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
 1. Utilizzando CRXDE Lite, copia il modello appena creato dal `templates` al nodo `template-types` sotto il nodo [cartella dei modelli](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Elimina il modello dal `templates` sotto il nodo [cartella dei modelli](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Nella copia del modello che si trova sotto il `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` `jcr:content` proprietà.
+1. Nella copia del modello che si trova sotto il `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` proprietà da tutti `jcr:content` nodi.
 
 Puoi anche sviluppare un tipo di modello personalizzato utilizzando un modello modificabile di esempio come base, disponibile su GitHub.
 
