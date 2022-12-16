@@ -1,24 +1,18 @@
 ---
 title: Introduzione a SPA e procedura dettagliata
-seo-title: SPA Introduction and Walkthrough
 description: Questo articolo introduce i concetti di un SPA e spiega come utilizzare un'applicazione SPA di base per l'authoring, mostrando come si relaziona con l'Editor SPA sottostante.
-seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
-uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
-contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
-docset: aem65
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Introduzione a SPA e procedura dettagliata{#spa-introduction-and-walkthrough}
+
+# Introduzione a SPA e procedura dettagliata {#spa-introduction-and-walkthrough}
 
 Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano poter creare siti utilizzando framework SPA e gli autori desiderano modificare facilmente i contenuti all’interno di AEM per un sito creato utilizzando tali framework.
 
@@ -36,16 +30,23 @@ Questo articolo introduce i concetti di base di SPA prima di guidare il lettore 
 
 L&#39;obiettivo di questa introduzione e di questa procedura dettagliata è dimostrare a uno sviluppatore AEM perché SPA sono rilevanti, come funzionano in generale, come un SPA viene gestito dall&#39;editor di SPA AEM e come è diverso da un&#39;applicazione AEM standard.
 
-La procedura dettagliata si basa sulla funzionalità AEM standard e sull&#39;app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
+## Requisiti {#requirements}
 
-* [AEM versione 6.4 con service pack 2 o successivo](/help/release-notes/release-notes.md)
-* [Installa l&#39;app di esempio We.Retail Journal disponibile qui su GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+La procedura dettagliata si basa sulle funzionalità AEM standard e sull’app di esempio WKND SPA Project . Per seguire questa procedura dettagliata, è necessario disporre dei seguenti elementi.
+
+* [AEM versione 6.5.4 o successiva](/help/release-notes/release-notes.md)
+   * Devi disporre dei diritti di amministratore del sistema.
+* [L’app di esempio WKND SPA Project disponibile su GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Scarica la [versione più recente dell’app React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sarà denominato simile a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Scarica la [ultime immagini di esempio](https://github.com/adobe/aem-guides-wknd-spa/releases) per l’app. Sarà denominato simile a `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Utilizza il gestore dei pacchetti](/help/sites-administering/package-manager.md) per installare i pacchetti come qualsiasi altro pacchetto in AEM.
+   * Ai fini della procedura dettagliata, non è necessario installare l’app tramite Maven.
 
 >[!CAUTION]
 >
->Questo documento utilizza [App Journal We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
+>Questo documento utilizza [App WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
 >
->Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+>Qualsiasi progetto AEM deve sfruttare [Archetipo AEM progetto,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
 
 ### Cos&#39;è un SPA? {#what-is-a-spa}
 
@@ -98,39 +99,31 @@ Effettuando il rendering sul lato client, l’elemento pagina reagisce più rapi
 
 Quando viene creata una SPA per sfruttare l’Editor SPA AEM, l’autore del contenuto non nota alcuna differenza durante la modifica e la creazione di contenuti. È disponibile una funzionalità AEM comune e non è necessaria alcuna modifica al flusso di lavoro dell’autore.
 
->[!NOTE]
->
->La procedura dettagliata si basa sulla funzionalità AEM standard e sull&#39;app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
->
->* [AEM versione 6.4 con service pack 2](/help/release-notes/release-notes.md)
->* [Installa l&#39;app di esempio We.Retail Journal disponibile qui su GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
->
+1. Modifica l’app WKND SPA Project in AEM.
 
+   `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Modifica l’app We.Retail Journal in AEM.
-
-   `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
-
-   ![screen_shot_2018-06-07at142533](assets/screen_shot_2018-06-07at142533.png)
+   ![Passaggio 1](assets/spa-walkthrough-step-1.png)
 
 1. Seleziona un componente di intestazione e osserva che la barra degli strumenti è simile a quella di qualsiasi altro componente. Seleziona **Modifica**.
 
-   ![screen_shot_2018-06-07at142937](assets/screen_shot_2018-06-07at142937.png)
+   ![Passaggio 2](assets/spa-walkthrough-step-2.png)
 
 1. Modifica il contenuto come normale in AEM e osserva che le modifiche sono persistenti.
 
-   ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
+   ![Passaggio 3](assets/spa-walkthrough-step-3.png)
 
    >[!NOTE]
+   >
    >Consulta la sezione [Panoramica dell’editor di SPA](spa-overview.md#requirements-limitations) per ulteriori informazioni sull&#39;editor di testo e sulle SPA in posizione.
 
 1. Utilizza il browser Risorse per trascinare una nuova immagine in un componente immagine.
 
-   ![screen_shot_2018-06-07at143530](assets/screen_shot_2018-06-07at143530.png)
+   ![Passaggio 4](assets/spa-walkthrough-step-4.png)
 
 1. La modifica viene mantenuta.
 
-   ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
+   ![Passaggio 5](assets/spa-walkthrough-step-5.png)
 
 Sono supportati ulteriori strumenti di authoring, come il trascinamento e il rilascio di componenti aggiuntivi sulla pagina, la ridisposizione dei componenti e la modifica del layout, come in qualsiasi applicazione non SPA.
 
@@ -138,7 +131,7 @@ Sono supportati ulteriori strumenti di authoring, come il trascinamento e il ril
 >
 >L’Editor SPA non modifica il DOM dell’applicazione. Il SPA stesso è responsabile del DOM.
 >
->Per vedere come funziona, continua con la sezione successiva di questo articolo [App SPA e editor SPA AEM](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
+>Per vedere come funziona, continua con la sezione successiva di questo articolo [App SPA e editor SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
 ## App SPA e editor SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
@@ -146,21 +139,21 @@ L’esperienza di come si comporta un SPA per l’utente finale e quindi l’ana
 
 ### Utilizzo di un&#39;applicazione SPA {#using-an-spa-application}
 
-1. Carica l&#39;applicazione We.Retail Journal sul server di pubblicazione o utilizzando l&#39;opzione **Visualizza come pubblicato** dal **Informazioni pagina** nell’editor pagina.
+1. Carica l&#39;applicazione WKND SPA Project sul server di pubblicazione o utilizzando l&#39;opzione **Visualizza come pubblicato** dal **Informazioni pagina** nell’editor pagina.
 
-   `/content/we-retail-journal/react.html`
+   `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![screen_shot_2018-06-08at102650](assets/screen_shot_2018-06-08at102650.png)
+   ![Passaggio 1](assets/spa-walkthrough-step-1-1.png)
 
    Osserva la struttura delle pagine, inclusa la navigazione verso pagine figlie, widget meteo e articoli.
 
 1. Passa a una pagina figlia utilizzando il menu e controlla che la pagina venga caricata immediatamente senza la necessità di un aggiornamento.
 
-   ![screen_shot_2018-06-08at102815](assets/screen_shot_2018-06-08at102815.png)
+   ![Passaggio 2](assets/spa-walkthrough-step-1-2.png)
 
 1. Apri gli strumenti di sviluppo incorporati del browser e monitora l’attività di rete mentre navighi nelle pagine figlie.
 
-   ![screen_shot_2018-06-08at103922](assets/screen_shot_2018-06-08at103922.png)
+   ![Passaggio 3](assets/spa-walkthrough-step-1-3.png)
 
    C&#39;è molto poco traffico mentre si passa da una pagina all&#39;altra nell&#39;app. La pagina non viene ricaricata e vengono richieste solo le nuove immagini.
 
@@ -168,106 +161,79 @@ L’esperienza di come si comporta un SPA per l’utente finale e quindi l’ana
 
 Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine figlie, come viene caricata?
 
-La sezione successiva, [Caricamento di un&#39;applicazione SPA](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application), approfondisce la procedura di caricamento del SPA e spiega come caricare il contenuto in modo sincrono e asincrono.
+La sezione successiva, [Caricamento di un&#39;applicazione SPA,](#loading-an-spa-application) approfondisce la procedura di caricamento del SPA e il modo in cui il contenuto può essere caricato in modo sincrono e asincrono.
 
 ### Caricamento di un&#39;applicazione SPA {#loading-an-spa-application}
 
-1. Se non è già caricato, carica l&#39;applicazione We.Retail Journal sul server di pubblicazione o utilizzando l&#39;opzione **Visualizza come pubblicato** dal **Informazioni pagina** nell’editor pagina.
+1. Se non è già stato caricato, carica l’app WKND SPA Project sul server di pubblicazione o utilizzando l’opzione **Visualizza come pubblicato** dal **Informazioni pagina** nell’editor pagina.
 
-   `/content/we-retail-journal/react.html`
+   `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![screen_shot_2018-06-07at144736](assets/screen_shot_2018-06-07at144736.png)
+   ![Passaggio 1](assets/spa-walkthrough-step-1-1.png)
 
 1. Utilizza lo strumento incorporato del browser per visualizzare l’origine della pagina.
 1. Il contenuto della sorgente è estremamente limitato.
 
-   ```
-   <!DOCTYPE HTML>
-   <html lang="en-CH">
-       <head>
-       <meta charset="UTF-8">
-       <title>We.Retail Journal</title>
-   
-       <meta name="template" content="we-retail-react-template"/>
-   
-   <link rel="stylesheet" href="/etc.clientlibs/we-retail-journal/react/clientlibs/we-retail-journal-react.css" type="text/css">
-   
-   <link rel="stylesheet" href="/libs/wcm/foundation/components/page/responsive.css" type="text/css">
-   
-   </head>
-       <body class="page basicpage">
-   
-   <div id="page"></div>
-   
-   <script type="text/javascript" src="/etc.clientlibs/we-retail-journal/react/clientlibs/we-retail-journal-react.js"></script>
-   
-       </body>
-   </html>
-   ```
-
-   La pagina non ha alcun contenuto all’interno del suo corpo. È composto principalmente da fogli di stile e una chiamata a un copione React, `we-retail-journal-react.js`.
-
-   Questo script React è il driver principale di questa applicazione ed è responsabile del rendering di tutti i contenuti.
+   * La pagina non ha alcun contenuto all’interno del suo corpo. È composto principalmente da fogli di stile e una chiamata a vari script come `clientlib-react.min.js`.
+   * Questi script sono i driver principali di questa applicazione e sono responsabili del rendering di tutti i contenuti.
 
 1. Utilizza gli strumenti incorporati del browser per ispezionare la pagina. Visualizzare il contenuto del DOM completamente caricato.
 
-   ![screen_shot_2018-06-07at151848](assets/screen_shot_2018-06-07at151848.png)
+   ![Passaggio 4](assets/spa-walkthrough-step-1-4.png)
 
-1. Passa alla scheda Rete in Ispettore e ricarica la pagina.
+1. Passa alla **Rete** scheda degli strumenti per sviluppatori e ricarica la pagina.
 
    Le richieste di immagini vengono ignorate. Le risorse principali caricate per la pagina sono la pagina stessa, CSS, il JavaScript di React, le sue dipendenze e i dati JSON per la pagina.
 
-   ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
+   ![Passaggio 5](assets/spa-walkthrough-step-1-5.png)
 
 1. Carica il `react.model.json` in una nuova scheda.
 
-   `/content/we-retail-journal/react.model.json`
+   `http://<host>:<port>/content/wknd-spa-react/us/en/home.model.json`
 
-   ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
+   ![Passaggio 6](assets/spa-walkthrough-step-1-6.png)
 
    L’editor SPA AEM sfrutta [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per fornire l’intero contenuto della pagina come modello JSON.
 
    Implementando interfacce specifiche, i modelli Sling forniscono le informazioni necessarie al SPA. La consegna dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina, al paragrafo, al componente, ecc.).
 
-   Ogni componente sceglie ciò che espone e come viene riprodotto (lato server con HTL o lato client con React). Naturalmente questo articolo si concentra sul rendering lato client con React.
+   Ogni componente sceglie ciò che espone e come viene riprodotto (lato server con HTL o lato client con React). Questo articolo si concentra sul rendering lato client con React.
 
 1. Il modello può anche raggruppare le pagine in modo che vengano caricate in modo sincrono, riducendo il numero di ricaricamenti di pagina necessari.
 
-   Nell&#39;esempio di We.Retail Journal, il `home`, `blog`e `aboutus` le pagine vengono caricate in modo sincrono, in quanto i visitatori visitano solitamente tutte le pagine. Tuttavia, `weather` La pagina viene caricata in modo asincrono, in quanto i visitatori hanno meno probabilità di visitarla.
+   Nell’esempio dell’app WKND SPA Project , la variabile `home`, `page-1`, `page-2`e `page-3` le pagine vengono caricate in modo sincrono, in quanto i visitatori visitano solitamente tutte le pagine.
 
    Questo comportamento non è obbligatorio ed è completamente definibile.
 
-   ![screen_shot_2018-06-07at153945](assets/screen_shot_2018-06-07at153945.png)
+   ![Passaggio 7](assets/spa-walkthrough-step-1-7.png)
 
-1. Per visualizzare questa differenza di comportamento, ricaricare la pagina e cancellare l&#39;attività di rete del controllo. Accedi al blog e alle nostre pagine nel menu della pagina e scopri che non è stata segnalata alcuna attività di rete.
+1. Per visualizzare questa differenza di comportamento, ricarica la pagina e cancella l’attività di rete degli strumenti per sviluppatori. Passa a `page-1` nel menu della pagina e vedi che l’unica attività di rete è una richiesta per l’immagine di `page-1`. `page-1` non è necessario caricare.
 
-   Passa alla pagina del meteo e osserva come `weather.model.json` viene chiamato in modo asincrono.
-
-   ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
+   ![Passaggio 8](assets/spa-walkthrough-step-1-8.png)
 
 ### Interazione con l’editor SPA {#interaction-with-the-spa-editor}
 
-Utilizzando l’applicazione di esempio We.Retail Journal, è chiaro come funziona l’app e come viene caricata quando viene pubblicata, sfruttando i servizi di contenuto per la distribuzione dei contenuti JSON e il caricamento asincrono delle risorse.
+Utilizzando l’applicazione di esempio WKND SPA Project , è chiaro come l’app si comporta e viene caricata quando viene pubblicata, sfruttando i servizi di contenuto per la distribuzione di contenuti JSON e il caricamento asincrono delle risorse.
 
 Inoltre, per l’autore dei contenuti, la creazione di contenuti tramite un editor di SPA è semplice all’interno di AEM.
 
 Nella sezione seguente esploreremo il contratto che consente all’editor di SPA di correlare i componenti all’interno del SPA a AEM componenti e di ottenere questa esperienza di editing perfetta.
 
-1. Carica l&#39;applicazione We.Retail Journal nell&#39;editor e passa a **Anteprima** modalità.
+1. Carica l’applicazione WKND SPA Project nell’editor e passa a **Anteprima** modalità.
 
-   `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
+   `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
 1. Utilizzando gli strumenti di sviluppo incorporati del browser, esamina il contenuto della pagina. Con lo strumento di selezione, seleziona un componente modificabile nella pagina e visualizza i dettagli dell’elemento.
 
    Il componente ha un nuovo attributo dati `data-cq-data-path`.
 
-   ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
+   ![Passaggio 2](assets/spa-walkthrough-step-2-2.png)
 
    Esempio
 
-   `data-cq-data-path="root/responsivegrid/paragraph_1`
+   `data-cq-data-path="/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid/text`
 
-   Questi percorsi consentono il recupero e l&#39;associazione dell&#39;oggetto di configurazione del contesto di modifica di ciascun componente.
+   Questo percorso consente il recupero e l&#39;associazione dell&#39;oggetto di configurazione del contesto di modifica di ciascun componente.
 
    Questo è l’unico attributo di markup necessario affinché l’editor riconosca questo come componente modificabile all’interno del SPA. In base a questo attributo, l’Editor SPA determinerà quale configurazione modificabile è associata al componente, in modo che la cornice, la barra degli strumenti e così via corretta. è caricato.
 
