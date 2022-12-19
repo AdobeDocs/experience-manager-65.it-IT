@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 41de0aab537ae227fc6da20941502d155b45f65d
+source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3452'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 | Oracle Java SE 11 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: Non supportato `[1]` |
 | Oracle Java SE 9 JDK | Z: Non supportato `[1]` |
-| Oracle Java SE 8 JDK - 64 bit | R: Supportato `[1]` | [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java SE 8 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | R: Supportato `[2]` |
 | IBM J9 VM - build 2.8, JRE 1.8.0 | R: Supportato `[2]` |
 | Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[3]` |  |
@@ -112,7 +112,7 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 
 Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manager. Consulta il seguente elenco per le tecnologie supportate e le opzioni di storage.
 
-| **Piattaforma** | **Descrizione** | **Livello di supporto** |
+| **Platform** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
 | **File system con file TAR** `[1]` | Archivio | R: Supportato |
 | **File system con Datastore** `[1]` | Binari | R: Supportato |
@@ -185,7 +185,7 @@ La versione minima dell’API del servlet è Servlet 3.1
 
 Adobe Experience Manager funziona con le seguenti piattaforme server per gli ambienti di produzione:
 
-| **Piattaforma** | **Livello di supporto** |
+| **Platform** | **Livello di supporto** |
 |---|---|
 | **Linux, basato sulla distribuzione Red Hat** | R: Supportato `[1]` `[3]` |
 | Linux, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` `[2]` |
@@ -197,8 +197,8 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | IBM AIX 7.2 | Z: Non supportato |
 
 1. Linux Kernel 2.6, 3.x, 4.x e 5.x include derivati dalla distribuzione Red Hat, inclusi Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Le funzionalità aggiuntive di AEM Forms sono supportate solo su CentOS 7, Red Hat Enterprise Linux 7 e Red Hat Enterprise Linux 8.
-1. AEM Forms è supportato solo su Ubuntu 16.04 LTS
-1. Distribuzione Linux supportata da Adobe Managed Services
+1. AEM Forms è supportato su Ubuntu 20.04 LTS.
+1. Distribuzione Linux supportata da Adobe Managed Services.
 1. Le distribuzioni di produzione Microsoft Windows sono supportate per i clienti che eseguono l’aggiornamento alla versione 6.5 e per utilizzi non di produzione. Le nuove distribuzioni sono su richiesta per AEM Sites e Assets.
 1. AEM Forms è supportato su Microsoft Window Server senza le restrizioni del livello di supporto R.
 
@@ -221,7 +221,7 @@ Dispatcher è il componente di memorizzazione in cache e bilanciamento del caric
 
 I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4.3.2:
 
-| Piattaforma | Livello di supporto |
+| Platform | Livello di supporto |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | R: Supportato |
 | Microsoft IIS 10 (Internet Information Server) | R: Supportato |
