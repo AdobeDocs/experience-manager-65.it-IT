@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Per sincronizzare più moduli, nell’istanza di authoring, seleziona più modul
 
 Se la sincronizzazione dell&#39;app Android AFA (AEM Form Application) non riesce, procedi come segue per risolvere il problema di sincronizzazione:
 
-1. Vai a **https://&#39;[server]:[porta]&#39;system/console/configMgr**.
+1. Vai a **https://[server]:[porta]/system/console/configMgr**.
 1. Cerca il **[!UICONTROL Gestore autenticazione token di Granite Adobe]** e fai clic su **[!UICONTROL Modifica]**.
 1. Seleziona la **[!UICONTROL Nessuno]** dal menu a discesa per **[!UICONTROL Attributo SameSite per il cookie login-token]** attributo.
 1. Fai clic su **[!UICONTROL Salva]**.
