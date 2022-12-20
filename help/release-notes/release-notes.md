@@ -2,9 +2,10 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
+source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
 workflow-type: tm+mt
-source-wordcount: '3858'
+source-wordcount: '3989'
 ht-degree: 4%
 
 ---
@@ -112,7 +113,7 @@ ht-degree: 4%
 * È possibile impostare [Rivelare sul server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) su true per identificare i campi nascosti per l&#39;esclusione da un documento di record sul lato server. (NPR-38149)
 * AEM Forms Designer richiede la versione a 32 bit di Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
-### Problemi risolti {#fixes}
+### Correzioni {#fixes}
 
 * Quando la proprietà disattivata dei dati di un modulo adattivo è attivata, l’aspetto dei gruppi di pulsanti di scelta e di caselle di controllo non cambia. (NPR-39368)
 * Quando un Modulo adattivo viene tradotto, alcune traduzioni vengono perse e non vengono visualizzate correttamente. (NPR-39367)
@@ -165,7 +166,7 @@ ht-degree: 4%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL solleva un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
+* GraphQL genera un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
 * Ordinamento degli ordini dei titoli nella vista Elenco, sia ascendente che decrescente, modalità con l’ordine A, C e B. (SITES-7585)
 * È stato aggiunto il supporto per l’assegnazione tag per le varianti dei frammenti di contenuto. (SITES-8168)
 * Codice specifico Odin identificato e rimosso dall’Experience Manager 6.5 non necessario. (SITES-3574)
@@ -220,6 +221,15 @@ ht-degree: 4%
 
 ### Installa il service pack su [!DNL Experience Manager] 6,5 {#install-service-pack}
 
+>[!NOTE]
+>
+> Prima di installare la versione più recente [Service Pack di AEM 6.5.15.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), esegui le seguenti operazioni:
+> 1. Installa il [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) frammento del servlet.
+> 1. Attendi la stabilizzazione del server applicazioni.
+> 1. Installa [Service Pack di AEM 6.5.15.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
+
+
+
 1. Riavvia l’istanza prima dell’installazione se l’istanza è in modalità di aggiornamento (quando l’istanza è stata aggiornata da una versione precedente). L&#39;Adobe consiglia un riavvio se il tempo di attività corrente per un&#39;istanza è elevato.
 
 1. Prima di installare, scegli uno snapshot o un nuovo backup del tuo [!DNL Experience Manager] istanza.
@@ -257,6 +267,11 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 
 1. Il bundle OSGi `org.apache.jackrabbit.oak-core` è versione 1.22.13 o successiva (Usa console Web: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
+>[!NOTE]
+>
+>Se installi la versione più recente [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), il CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibili, [fai clic qui](/help/forms/using/aem-service-pack-installation-solution.md).
+
+
 ### Installa [!DNL Experience Manager] Pacchetto aggiuntivo di Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -282,7 +297,7 @@ Per informazioni sull&#39;installazione del programma di installazione cumulativ
 
 >[!NOTE]
 >
->Dopo aver installato il programma di installazione cumulativo per [!DNL Experience Manager] Forms su JEE, installa il pacchetto aggiuntivo Forms più recente, elimina il pacchetto aggiuntivo Forms dal `crx-repository\install` e riavviare il server.
+>Dopo aver installato il programma di installazione cumulativo per [!DNL Experience Manager] Forms su JEE, installa l&#39;ultimo Service Pack. Dopo l&#39;installazione corretta di Service Pack, installa il pacchetto aggiuntivo Forms più recente, elimina il pacchetto aggiuntivo Forms dal `crx-repository\install` e riavviare il server.
 
 ### UberJar {#uber-jar}
 
