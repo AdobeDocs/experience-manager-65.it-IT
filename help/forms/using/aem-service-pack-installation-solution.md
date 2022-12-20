@@ -1,7 +1,7 @@
 ---
 title: Errore non disponibile del servizio CRX/bundle e Start page dopo l'installazione del service pack 6.5.15.0 più recente
 description: Errore non disponibile del servizio CRX/bundle e Start page dopo l'installazione del service pack 6.5.15.0 più recente
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Dopo l&#39;installazione [Service Pack di AEM 6.5.15.0](https://experience.adobe
 1. Individua il `bundle.info` file.
 1. Apri `bundle.info` nell&#39;editor di testo formativo e cerca il nome del bundle come `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->Nel caso in cui `bundle.info` sotto `bundle52` non contiene il `org.apache.felix.http.bridge` bundle, controlla il numero del bundle in parentesi quadre accanto al `org.apache.felix.http.bridge`. Quindi passa a [root di aem forms]\crx-repository\launchpad\felix\bundle[x] ed esegui i passaggi successivi in questa posizione.
+   >[!NOTE]
+   >
+   >Nel caso in cui `bundle.info` sotto `bundle52` non contiene il `org.apache.felix.http.bridge` bundle, controlla il numero del bundle in parentesi quadre accanto al `org.apache.felix.http.bridge`. Quindi passa a [root di aem forms]\crx-repository\launchpad\felix\bundle[x] ed esegui i passaggi successivi in questa posizione.
 
 1. Accedi all’URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Cerca `bundle.jar` e rinomina il `bundle.jar` a `bundle.jar.bak`.
