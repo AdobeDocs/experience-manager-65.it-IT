@@ -12,7 +12,7 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 58c89e0b96da0f36d233cb8c14e259cc595ddda7
+source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 3%
@@ -409,18 +409,18 @@ In particolare, devi:
 1. Accedi all&#39;istanza AEM, in genere un&#39;istanza dell&#39;autore, che contiene il materiale chiave da copiare;
 1. Individua il bundle com.adobe.granite.crypto.file nel file system locale. Ad esempio, sotto questo percorso:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    La `bundle.info` all&#39;interno di ogni cartella identificherà il nome del bundle.
 
 1. Passa alla cartella dati. Esempio:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copiare i file HMAC e master.
 1. Quindi, vai all&#39;istanza di destinazione a cui desideri duplicare la chiave HMAC e passa alla cartella dei dati. Esempio:
 
-   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Incolla i due file copiati in precedenza.
 1. [Aggiorna il bundle Crypto](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l’istanza target è già in esecuzione.
