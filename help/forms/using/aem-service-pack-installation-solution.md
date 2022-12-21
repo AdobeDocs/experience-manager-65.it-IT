@@ -1,9 +1,9 @@
 ---
 title: Errore non disponibile del servizio CRX/bundle e Start page dopo l'installazione del service pack 6.5.15.0 più recente
 description: Errore non disponibile del servizio CRX/bundle e Start page dopo l'installazione del service pack 6.5.15.0 più recente
-source-git-commit: 813d8ffc53dc1928674367c9568b6269642cecb7
+source-git-commit: 3c04322ef2801246044f9b316962d4d37b972213
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Dopo l&#39;installazione [Service Pack di AEM 6.5.15.0](https://experience.adobe
 1. Cerca `bundle.jar` e rinomina il `bundle.jar` a `bundle.jar.bak`.
 1. Copia `bundle.jar` in questa posizione dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Avvia l&#39;application server, attendi che i registri si stabilizzino e controlla lo stato del bundle.
-1. Una volta che tutti i bundle sono nello stato attivato, installa il `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` frammento servlet dal `system/console/bundles` scaricato da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) e attendere la stabilizzazione del server applicazioni.
+1. Una volta che tutti i bundle sono nello stato attivo, installa il [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) frammento servlet dal `system/console/bundles` e attendere la stabilizzazione del server applicazioni.
 1. Arrestare il server applicazioni.
 1. Passa a `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` ed eliminare `bundle.jar`.
 1. Rinomina il `bundle.jar.bak` al `bundle.jar`.
