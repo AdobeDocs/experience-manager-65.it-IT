@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
+source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3974'
 ht-degree: 4%
 
 ---
@@ -260,8 +260,7 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 
 >[!NOTE]
 >
->Se installi la versione più recente [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), il CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibili, [fai clic qui](/help/forms/using/aem-service-pack-installation-solution.md) per conoscere i passaggi per la risoluzione dei problemi.
-
+>Se installi la versione più recente [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prima del servlet frammento `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` per l’ambiente AEM Forms su JEE, il CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibili, [fai clic qui](/help/forms/using/aem-service-pack-installation-solution.md) per conoscere i passaggi per la risoluzione dei problemi.
 
 ### Installa [!DNL Experience Manager] Pacchetto aggiuntivo di Forms {#install-aem-forms-add-on-package}
 
@@ -273,7 +272,7 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 -->
 
-1. Assicurati di aver installato la [!DNL Experience Manager] Service Pack.
+1. Assicurati di aver installato la [!DNL Experience Manager] service pack.
 1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) per il sistema operativo in uso.
 1. Installa il pacchetto aggiuntivo di Forms come descritto in [Installazione dei pacchetti aggiuntivi di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 1. Se utilizzi le lettere in Experience Manager 6.5 Forms, installa il [pacchetto di compatibilità AEM più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
@@ -288,7 +287,7 @@ Esegui i seguenti passaggi per tutti gli ambienti AEM Forms su JEE che utilizzan
 
 1. Installa il programma di installazione cumulativo per [!DNL Experience Manager] Forms su JEE e configurazione post-distribuzione, vedi [note sulla versione](jee-patch-installer-65.md).
 
-1. Installa il [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) frammento di servlet e attendere che Application Server si stabilizzi.
+1. Installa il [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) frammento di servlet e attendere che l&#39;application server si stabilizzi. —>
 1. Installa [Service Pack di AEM 6.5.15.0](#install-service-pack).
 1. Installa il [pacchetto aggiuntivo di Forms più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), elimina il pacchetto aggiuntivo di Forms dal `crx-repository\install` e riavviare il server.
 
