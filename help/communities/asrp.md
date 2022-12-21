@@ -12,7 +12,7 @@ discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Quando AEM Communities è configurato per utilizzare ASRP come archivio comune, 
 
 Vedi anche [Caratteristiche delle opzioni SRP](/help/communities/working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](/help/communities/topologies.md).
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Per l’utilizzo dell’ASRP è necessaria una licenza aggiuntiva.
 
@@ -97,7 +97,7 @@ Per rendere disponibile nell’ambiente di pubblicazione la stessa configurazion
 
 Nell’istanza di AEM Author:
 
-* Passa dal menu principale a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**
+* Passa dal menu principale a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
 * Seleziona **Attiva albero**
 * **Percorso iniziale**: naviga a `/conf/global/settings/communities/srpc/`
 * Deseleziona **Modificato solo**
