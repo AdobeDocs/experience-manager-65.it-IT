@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: c98ca7cafd559aaf0b0b889f8f03690de880e944
+source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
 workflow-type: tm+mt
-source-wordcount: '3975'
-ht-degree: 4%
+source-wordcount: '4036'
+ht-degree: 3%
 
 ---
 
@@ -280,16 +280,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >Ignora questa sezione se non usi AEM Forms in JEE. Correzioni in [!DNL Experience Manager] Forms su JEE viene fornito tramite un programma di installazione separato.
 
 Esegui i seguenti passaggi per tutti gli ambienti AEM Forms su JEE che utilizzano server applicativi diversi da JBoss EAP 7.4.0.
-
-1. Installa il programma di installazione cumulativo per [!DNL Experience Manager] Forms su JEE e configurazione post-distribuzione, vedi [note sulla versione](jee-patch-installer-65.md).
-
-1. Installa il [Frammento per Forms 6.5 AEM su JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) frammento di servlet e attendere che l&#39;application server si stabilizzi.
-1. Installa il [Service Pack di AEM 6.5.15.0](#install-service-pack).
+1. Installa [Patch JEE per AEM Forms](jee-patch-installer-65.md). L’ include tutti i problemi risolti per tutti i componenti di Forms 6.5 AEM su JEE.
+1. Installa il [Frammento per Forms 6.5 AEM su JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). Il frammento aggiunge le dipendenze necessarie per installare AEM Service Pack 15 (6.5.15.0).
+1. Dopo aver installato il frammento, attendere che l&#39;application server si stabilizzi.
+1. [Installare il service pack all&#39;Experience Manager 6.5](#install-service-pack).
 
    >[!NOTE]
    >
-   >Se installi la versione più recente [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prima della `Fragment for AEM 6.5 Forms on JEE Service Pack 15` nell’ambiente JEE, il CRX/bundle e la pagina iniziale mostrano errori di servizio non disponibili, [fai clic qui](/help/forms/using/aem-service-pack-installation-solution.md) per conoscere i passaggi per la risoluzione dei problemi.
-
+   >Se installi la versione più recente [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prima di installare [Frammento per Forms 6.5 AEM su JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) nell’ambiente JEE di AEM 6.5 Forms, il CRX/bundle e la pagina iniziale possono interrompere il funzionamento e si verifica l’errore di non disponibilità del servizio. Per risolvere il problema, esegui le azioni [qui](/help/forms/using/aem-service-pack-installation-solution.md).
 1. Installa il [pacchetto aggiuntivo di Forms più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), elimina il pacchetto aggiuntivo di Forms dal `crx-repository\install` e riavviare il server.
 
 ### UberJar {#uber-jar}
