@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3720'
 ht-degree: 1%
 
 ---
@@ -143,7 +143,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Piattaforma</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> Descrizione</strong></p> </td>
    <td><p><strong>Livello di supporto</strong></p> </td>
   </tr>
@@ -217,7 +217,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
  <tbody>
   <tr>
    <th>Database </th>
-   <th><p><strong>Piattaforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
   <tr>
@@ -253,7 +253,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Piattaforma</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Livello di supporto</strong></p> </td>
    <td><p><strong>Definizioni di patch supportate</strong></p> </td>
   </tr>
@@ -291,7 +291,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Piattaforma</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Livello di supporto</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
@@ -419,7 +419,7 @@ Inoltre, considera i seguenti punti durante la scelta del software per Adobe AEM
   </tr>
   <tr>
    <td>EMC Documentum</td>
-   <td>7.3.</td>
+   <td>7.3</td>
   </tr>
   <tr>
    <td>Filenet IBM</td>
@@ -431,7 +431,7 @@ Inoltre, considera i seguenti punti durante la scelta del software per Adobe AEM
   </tr>
   <tr>
    <td> Client IBM Content Manager (obsoleto)</td>
-   <td>8,5 </td>
+   <td>8.5 </td>
   </tr>
   <tr>
    <td>Microsoft Sharepoint </td>
@@ -482,10 +482,6 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -530,6 +526,9 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono elencate le versi
 >- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- Il servizio PDF Generator non supporta Microsoft Windows 10.
+>- PDF Generator non riesce a convertire i file utilizzando Microsoft Visio 2019. È possibile continuare a utilizzare Microsoft Visio 2016 per convertire i file .VSD e .VSDX.
+>- PDF Generator non riesce a convertire i file utilizzando Microsoft Project 2019. Puoi continuare a utilizzare Microsoft Project 2016 per convertire i file .MPP.
+>
 
 
 ### Eccezioni al supporto per l’accessibilità {#exceptions-to-accessibility-support}
@@ -548,7 +547,7 @@ I seguenti sottosistemi di AEM Forms non sono [508](https://www.section508.gov/)
 <table>
  <tbody>
   <tr>
-   <td>Piattaforma</td>
+   <td>Platform</td>
    <td>Requisiti hardware minimi</td>
   </tr>
   <tr>
@@ -586,7 +585,7 @@ Per ulteriori requisiti consulta:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Piattaforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
   <tr>
@@ -801,7 +800,7 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione AEM Fo
 
 >[!NOTE]
 >
->Piattaforme contrassegnate come [obsoleto in con AEM Forms 6.5.12.0 e 6.5.10.0 rimane in supporto fino alla versione 6.5 Service Pack 18 (6.5.18.0) di AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>Piattaforme contrassegnate come [obsoleto in con AEM Forms 6.5.12.0 e 6.5.10.0 rimane in supporto fino alla versione 6.5 Service Pack 18 (6.5.18.0) di AEM Forms](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
 
 ## Cronologia revisioni {#revision-history}
 

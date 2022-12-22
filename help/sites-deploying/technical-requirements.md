@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3488'
 ht-degree: 1%
 
 ---
@@ -451,10 +451,6 @@ Per Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -465,10 +461,6 @@ Per Windows x86:
   <tr>
    <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Progetto Microsoft® 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Microsoft® Project 2016 (obsoleto)<br /> </td>
@@ -499,6 +491,8 @@ Per Windows x86:
 >* Le funzioni OCR PDF, Optimize PDF ed Export PDF sono supportate solo su Windows.
 >* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. La versione del bundle deve essere accessibile solo a livello di programmazione con AEM Forms, durante il periodo di validità della licenza AEM Forms, per l’utilizzo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Il servizio PDF Generator non supporta Microsoft Windows 10.
+>* PDF Generator non riesce a convertire i file utilizzando Microsoft Visio 2019. È possibile continuare a utilizzare Microsoft Visio 2016 per convertire i file .VSD e .VSDX.
+>* PDF Generator non riesce a convertire i file utilizzando Microsoft Project 2019. Puoi continuare a utilizzare Microsoft Project 2016 per convertire i file .VSD e .VSDX.
 >
 
 
