@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '4036'
-ht-degree: 3%
+source-wordcount: '4046'
+ht-degree: 4%
 
 ---
 
@@ -144,6 +144,7 @@ ht-degree: 3%
 * Quando l&#39;utente tenta di eseguire un modulo AEM su una patch JEE dopo aver modificato la password predefinita dell&#39;utente amministratore, viene visualizzata un&#39;eccezione `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` si verifica. (CQ-4348277)
 * In AEM Designer, i campi modulo senza didascalie vengono inseriti nelle celle di una tabella, incluse le caselle di controllo.(LC-3920410)
 * Quando l&#39;utente tenta di aprire la Guida in AEM Forms Designer, questa non viene visualizzata correttamente. (CQ-4341996)
+* La funzione Adattivo Forms con più impostazioni internazionali è lenta da caricare. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -166,7 +167,7 @@ ht-degree: 3%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL solleva un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
+* GraphQL genera un&#39;eccezione. Ad esempio, non è possibile ottenere tag di variante da un frammento di contenuto. Non c&#39;è alcuna variazione con il nome &quot;elettrico&quot;. Questo problema è dovuto alla chiamata di `getVariationTags` per una variazione non esistente che solleva un&#39;eccezione. (SITES-8898)
 * Ordinamento degli ordini dei titoli nella vista Elenco, sia ascendente che decrescente, modalità con l’ordine A, C e B. (SITES-7585)
 * È stato aggiunto il supporto per l’assegnazione tag per le varianti dei frammenti di contenuto. (SITES-8168)
 * Codice specifico Odin identificato e rimosso dall’Experience Manager 6.5 non necessario. (SITES-3574)
