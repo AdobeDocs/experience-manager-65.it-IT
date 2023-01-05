@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 10%
+source-wordcount: '3005'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,20 @@ Le coordinate di ritaglio avanzato dipendono dalle proporzioni. Per le varie imp
 
 Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato Ritaglio avanzato può causare un tasso di inserimento delle risorse lento. Provoca inoltre un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *only* dove è necessario.
 
-Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un’opzione per automatizzare la creazione di campioni di colore e immagine.
+**Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
+Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di lavorazione e la conservazione delle colture, l’Adobe consiglia le seguenti linee guida e suggerimenti:
+
+* Evita di creare profili di ritaglio avanzati duplicati con gli stessi valori di larghezza e altezza.
+* Denomina le colture avanzate in base alle dimensioni di ritaglio, non in base all&#39;utilizzo finale. In questo modo è possibile ottimizzare i duplicati in cui una singola dimensione viene utilizzata su più pagine.
+* Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
+* Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
+* Idealmente, puoi utilizzare 10-15 ritagli avanzati per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
+
+È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
+
+>[!IMPORTANT]
+・ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e rilevanti per il marchio e i valori.
+・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
 
 | Opzione | Quando utilizzare | Descrizione |
 | --- | --- | --- |
