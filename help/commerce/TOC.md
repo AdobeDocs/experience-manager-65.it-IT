@@ -13,7 +13,7 @@ ht-degree: 70%
 
 # Commerce {#commerce}
 
-+ [Contenuto AEM e commercio](/help/commerce/home.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
 + [Modifiche di rilievo apportate a Contenuto AEM e Commerce](cif/changes.md)
 + [Introduzione e panoramica](cif/introduction.md)
 + Integrazioni {#integrations}
