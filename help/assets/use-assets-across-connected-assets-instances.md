@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
+source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3877'
 ht-degree: 18%
 
 ---
@@ -44,7 +44,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] in AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]come[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] in AMS** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] on-premise** | Non supportato | Non supportato | Non supportato |
 
@@ -64,7 +64,7 @@ Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell�
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | `admin` | Configurazione [!DNL Experience Manager] e configura l&#39;integrazione con il telecomando [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
 | [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | `ksaner` | Gli utenti finali [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
-| [!DNL Assets] amministratore | Remoto | [!DNL Experience Manager] `administrators` | `admin` in remoto [!DNL Experience Manager] | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
+| [!DNL Assets] administrator | Remoto | [!DNL Experience Manager] `administrators` | `admin` in remoto [!DNL Experience Manager] | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
 | Utente DAM | Remoto | `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Ruolo autore nel remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate mediante l’ [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Questo utente presente nell&#39;implementazione remota viene utilizzato da [!DNL Experience Manager] server locale (non il [!DNL Sites] ruolo autore) per recuperare le risorse remote, per conto di [!DNL Sites] autore. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
 
@@ -252,7 +252,7 @@ Durante lo spostamento di una risorsa da una posizione a un&#39;altra, assicurat
 >
 >Gli aggiornamenti alle risorse in DAM remoto sono resi disponibili al [!DNL Sites] distribuzione solo se DAM remoto e [!DNL Sites] implementazioni in corso [!DNL Experience Manager].
 
-## Domande frequenti  {#frequently-asked-questions}
+## Domande frequenti {#frequently-asked-questions}
 
 +++**Configurare le risorse collegate se è necessario utilizzare le risorse disponibili nel [!DNL Sites] distribuzione?**
 
@@ -356,6 +356,13 @@ Per risolvere eventuali errori comuni, procedi come segue:
 * Se non riesci ad accedere all’implementazione remota di DAM dal locale [!DNL Sites] , assicurati che siano consentiti i cookie intersito e [supporto per cookie dello stesso sito](/help/sites-administering/same-site-cookie-support.md) è configurato. Se i cookie intersito vengono bloccati, le distribuzioni di [!DNL Experience Manager] impossibile eseguire l&#39;autenticazione. Ad esempio: [!DNL Google Chrome] in modalità in incognito possono bloccare i cookie di terze parti. Per consentire i cookie in [!DNL Chrome] browser, fai clic sull&#39;icona &quot;occhio&quot; nella barra degli indirizzi, vai a **Sito non funzionante** > **Bloccato**, seleziona l’URL DAM remoto e consenti il cookie login-token. In alternativa, vedere [come abilitare i cookie di terze parti](https://support.google.com/chrome/answer/95647).
 
    ![Errore cookie nel browser Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
+
+* Se non riesci ad accedere alla distribuzione remota DAM di Adobe Managed Services dalla distribuzione di Experience Manager Sites as a Cloud Service Sites, aggiorna la sezione `aem_author.vhost` file, disponibile all&#39;indirizzo `"/etc/httpd/conf.d/available_vhosts`, affinché DAM remoto includa le seguenti intestazioni nella configurazione del Dispatcher:
+
+   ```xml
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
 
 * Se i riferimenti remoti non vengono recuperati e si verifica un messaggio di errore, controlla se [!DNL Sites] la distribuzione è disponibile e verifica la presenza di problemi di connettività di rete. Riprova più tardi per controllare. [!DNL Assets] la distribuzione tenta due volte di stabilire una connessione con [!DNL Sites] e quindi segnala un errore.
 
