@@ -9,10 +9,10 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 0%
+source-wordcount: '965'
+ht-degree: 9%
 
 ---
 
@@ -41,7 +41,7 @@ Il sito web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ### Prerequisito {#prerequisite}
 
-* Imposta un&#39;istanza di authoring AEM.
+* Imposta un [istanza di authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa [Componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sull’istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell’esercitazione si basano su [!DNL MySQL] database e utilizzo [!DNL Oracle's] [Driver del database JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
