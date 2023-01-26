@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
+source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 97%
@@ -219,7 +219,7 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
 1. **Crea** ti consente di creare:
 
    * **Variazione**
-   * **Variante come Live Copy**.
+   * **[Variante come Live Copy](/help/sites-administering/msm.md#live-copies)**.
 
 1. Definisci le proprietà richieste:
 
@@ -299,7 +299,7 @@ Puoi trascinare il blocco predefinito nel sistema di paragrafi di qualsiasi fram
 
 I dettagli del frammento vengono visualizzati in diverse posizioni:
 
-1. I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco**[ sono visualizzati i dettagli di un’esportazione in Target](/help/sites-administering/experience-fragments-target.md):
+1. I dettagli vengono visualizzati in tutte le viste della console **Frammenti esperienza**. Nella **vista a elenco** sono visualizzati i dettagli di un’[esportazione in Target](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
@@ -327,7 +327,7 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
       * **Numero di varianti non web** - solo **informativo**
 
       * **Numero di pagine con questo frammento** - solo informativo
-   * **Cloud Services**
+   * **Servizi cloud**
 
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
