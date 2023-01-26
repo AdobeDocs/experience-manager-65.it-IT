@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -539,7 +539,7 @@ Quando [modifica di un modello da definire](/help/sites-authoring/templates.md),
 
 ### Criteri di contenuto {#content-policies}
 
-I criteri relativi ai contenuti (o alle progettazioni) definiscono le proprietà di progettazione (o design) di un componente. Ad esempio, i componenti disponibili o le dimensioni minime e massime. Questi sono applicabili al modello (e alle pagine create con tale modello). I criteri del contenuto possono essere creati e selezionati nell’editor modelli.
+I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente, ad esempio la disponibilità del componente o le dimensioni minime/massime. Questi sono applicabili al modello (e alle pagine create con tale modello). I criteri del contenuto possono essere creati e selezionati nell’editor modelli.
 
 * La proprietà `cq:policy`, sul `root` nodo
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
