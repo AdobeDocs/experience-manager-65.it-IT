@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 6%
@@ -37,7 +37,7 @@ Questo articolo illustra l’esempio del componente meteo nel SPA di esempio di 
 Devi acquisire familiarità con le [struttura di una domanda SPA di AEM](/help/sites-developing/spa-getting-started-react.md) prima di leggere questo articolo.
 
 >[!CAUTION]
->Questo documento utilizza [App Journal We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
+>Questo documento utilizza [App Journal We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
 >
 >Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 

@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ La `ModelRouter` automatizza il recupero dei frammenti del modello. Ma come ogni
 
 >[!NOTE]
 >
->Attualmente il progetto React di esempio We.Retail Journal illustra l&#39;approccio automatico, mentre il progetto Angular illustra quello manuale. Un approccio semi-automatizzato sarebbe anche un caso d’uso valido.
+>La [Journal We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) il progetto React di esempio illustra l’approccio automatico, mentre il progetto di Angular illustra quello manuale. Un approccio semi-automatizzato sarebbe anche un caso d’uso valido.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ La `ModelRouter` supporta il concetto di indirizzamento del modello in attesa di
 Per impostazione predefinita, questo comportamento è abilitato automaticamente. Per disattivarlo, il SPA deve eseguire il rendering della seguente proprietà meta:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Tieni presente che ogni percorso del SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`) dal `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente una volta selezionato il percorso. Anche se, se necessario, il SPA può anche definire un &quot;elenco Bloccati&quot; di rotte che devono essere ignorate dal `PageModelManager`:

@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 1%
@@ -150,7 +150,7 @@ Ogni componente deve essere esteso con una funzionalità che decori l’elemento
 
 Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari. A tal fine, il contenitore si ripeterà sul `:itemsOrder`, `:items` e `:children` proprietà del modello.
 
-Il contenitore ottiene in modo dinamico i componenti secondari dall’archivio del ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` libreria. Il contenitore estende quindi il componente secondario con le funzionalità del provider di modelli e, infine, lo crea in istanza.
+Il contenitore ottiene in modo dinamico i componenti secondari dall’archivio del [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) libreria. Il contenitore estende quindi il componente secondario con le funzionalità del provider di modelli e, infine, lo crea in istanza.
 
 ### Pagina {#page}
 
