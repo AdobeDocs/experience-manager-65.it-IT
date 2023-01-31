@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
+source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '850'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,15 @@ Le asserzioni SAML sono firmate e possono essere facoltativamente crittografate.
 >
 >I passaggi seguenti sono necessari solo se il gestore deve essere in grado di firmare o decrittografare i messaggi.
 
-1. Carica il file della chiave privata facendo clic su **Seleziona file di chiave privata**. La chiave deve essere in formato PKCS#8 con codifica DER.
+1. Crea il certificato/la coppia di chiavi per AEM. Il comando per generarlo tramite openssl deve essere simile all&#39;esempio seguente:
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. Converti la chiave in formato PKCS#8 con codifica DER. Questo è il formato richiesto dal keystore AEM.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. Carica il file della chiave privata facendo clic su **Seleziona file di chiave privata**.
 1. Carica il file del certificato facendo clic su **Seleziona file della catena di certificati**.
 1. Assegna un alias, come illustrato di seguito:
 
