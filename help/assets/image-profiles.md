@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3000'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,7 @@ In **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le seguenti 
 | Raggio | Determina quanti pixel attorno al bordo vengono interessati dalla nitidezza. Per le immagini ad alta risoluzione, inserite un valore da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore più elevato agisce su una fascia più ampia di pixel. Il valore adatto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. Intervallo compreso tra 0 e 250. |
 | Soglia | Determina l&#39;intervallo di contrasto da ignorare quando viene applicato il filtro Maschera definizione dettagli. In altre parole, questa opzione determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e resi più nitidi. Per evitare di introdurre rumore, prova con valori compresi tra 0 e 255. |
 
-La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/assets/sharpening_images.pdf)
+La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/assets/sharpening_images.pdf).
 
 ## Creare profili immagine Dynamic Media {#creating-image-profiles}
 
