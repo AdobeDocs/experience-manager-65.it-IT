@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
 source-wordcount: '7792'
 ht-degree: 2%
@@ -161,13 +161,13 @@ Per abilitare Dynamic Media, è necessario abilitare la modalità di esecuzione 
 
    * Aggiungi `-r dynamicmedia` alla fine della riga di comando quando si avvia il file jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
    ```
 
    Se pubblichi su s7delivery, devi includere anche i seguenti argomenti di trustStore:
 
-   ```
+   ```shellsession {.line-numbers}
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -216,7 +216,7 @@ Per disabilitare Dynamic Media dopo averlo abilitato, rimuovi `-r dynamicmedia` 
 
    * Non aggiungere `-r dynamicmedia` alla riga di comando quando si avvia il file jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
    ```
 
@@ -291,7 +291,7 @@ Imposta l’autenticazione della replica sull’autore in modo da poter replicar
    * Seleziona **[!UICONTROL File KeyStore]**. Passa al file KeyStore fornito per Adobe, selezionalo, quindi seleziona **[!UICONTROL Apri]**.
    * In **[!UICONTROL Password file KeyStore]** immettere la password del file KeyStore. Questa password è **not** la password KeyStore che hai creato nel passaggio 5 ma è l&#39;Adobe della password del file KeyStore fornito nel messaggio e-mail di benvenuto che ti è stato inviato durante il provisioning. Se non hai ricevuto una password del file KeyStore, contatta l’Assistenza clienti di Adobe.
    * In **[!UICONTROL Password chiave privata]** immetti la password della chiave privata (può essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto una password di chiave privata, contatta l’Assistenza clienti di Adobe.
-   * In **[!UICONTROL Alias chiave privata]** immettere l&#39;alias della chiave privata. Esempio: `*companyname*-alias`. Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti di Adobe.
+   * In **[!UICONTROL Alias chiave privata]** immettere l&#39;alias della chiave privata. Esempio, `*companyname*-alias`. Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti di Adobe.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -898,7 +898,7 @@ Per utilizzare le funzionalità di gestione del colore di Dynamic Media, install
 
 **Per installare feature pack 12445:**
 
-1. Passa a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) e scaricare `cq-6.3.0-featurepack-12445`.
+1. Passa a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) e scaricare `cq-6.3.0-featurepack-12445`.
 
    Vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md) per ulteriori informazioni sull’utilizzo dei pacchetti in [!DNL Adobe Experience Manager].
 
@@ -1019,12 +1019,12 @@ Sono installati i seguenti profili di colore:
    <td>RGB CIE</td>
   </tr>
   <tr>
-   <td>Fogra27 rivestito</td>
+   <td>CoatedFogra27</td>
    <td>CMYK</td>
    <td>Rivestito FOGRA27 (ISO 12647-2:2004)</td>
   </tr>
   <tr>
-   <td>Fogra39 rivestito</td>
+   <td>CoatedFogra39</td>
    <td>CMYK</td>
    <td>Rivestito FOGRA39 (ISO 12647-2:2004)</td>
   </tr>
@@ -1129,7 +1129,7 @@ Sono installati i seguenti profili di colore:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>Fogra29 non rivestito</td>
+   <td>UncoatedFogra29</td>
    <td>CMYK</td>
    <td>FOGRA29 non rivestito (ISO 12647-2:2004)</td>
   </tr>

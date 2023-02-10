@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 3%
@@ -56,7 +56,7 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse di o
 
 Per abilitare Dynamic Media, avvia Experience Manager utilizzando `dynamicmedia_scene7` modalità di esecuzione dalla riga di comando immettendo quanto segue in una finestra terminale (la porta di esempio utilizzata è 4502):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -238,7 +238,7 @@ Quando si esegue Dynamic Media - Modalità Scene7 su AEM, al momento viene inolt
 
    ![Abilita le impostazioni dell&#39;elenco di controllo accessi in modalità Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
 
-1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### (Facoltativo) Configura Dynamic Media - Modalità Scene7 per il caricamento di risorse superiori a 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 
@@ -533,7 +533,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 
 Ad esempio, supponi di voler creare un set 360 gradi con più assi denominato `spin-2dspin`. Hai un set di immagini per set 360 gradi che contengono tre righe, con 12 immagini per riga. Le immagini vengono denominate come segue:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …
