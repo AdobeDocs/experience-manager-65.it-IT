@@ -1,20 +1,11 @@
 ---
 title: Gestione dei progetti di traduzione
-seo-title: Managing Translation Projects
 description: Scopri come gestire i progetti di traduzione in AEM.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 57%
+source-wordcount: '3536'
+ht-degree: 56%
 
 ---
 
@@ -418,6 +409,16 @@ Compila la copia per lingua in modo che contenga il contenuto del master lingua 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Tocca o fai clic su Avvia .
+
+## Spostamento o ridenominazione di una pagina sorgente {#move-source}
+
+Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), se la pagina viene nuovamente tradotta dopo lo spostamento, verrà creata una nuova copia in lingua in base al nome o alla posizione della nuova pagina. La copia in lingua precedente basata sul nome/posizione precedente sarà ancora presente.
+
+La migliore pratica in questo scenario è seguire questa procedura:
+1. Annulla la pubblicazione delle copie della lingua associate alla pagina sorgente da spostare.
+1. Le elimini.
+1. Crea nuove copie in lingua dalla pagina sorgente appena spostata.
+1. Pubblica le nuove copie della lingua create.
 
 ## Creazione di un progetto di traduzione tramite la console Progetti {#creating-a-translation-project-using-the-projects-console}
 
