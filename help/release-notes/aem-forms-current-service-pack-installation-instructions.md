@@ -1,13 +1,13 @@
 ---
 title: Istruzioni di installazione delle patch di AEM Forms per AEM Forms
 description: Istruzioni per le installazioni dei service pack AEM Forms per l'ambiente OSGi e JEE
-source-git-commit: a470627eb87735dd55edda93c3e2dac4a2c36752
+exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
+source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 7%
+source-wordcount: '1817'
+ht-degree: 9%
 
 ---
-
 
 # Istruzioni per l&#39;installazione di AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
@@ -18,11 +18,11 @@ ht-degree: 7%
 | Versione | 6.5.15.0 |
 | Tipo | Versione Service Pack |
 | Data | 01 dicembre 2022 |
-| URL di download | [Versioni più recenti di AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) |
+| URL di download | [Versioni più recenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
 >
->Scopri le ultime [Note sulla versione di AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html#forms-6515) per un elenco completo dei problemi risolti.
+>Scopri le ultime [Note sulla versione di AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it) per un elenco completo dei problemi risolti.
 
 ## Contenuto in Experience Manager Forms 6.5
 
@@ -52,9 +52,9 @@ Il service pack di Adobe Experience Manager (AEM) Forms include funzioni nuove e
 
 +++2.Scarica il software richiesto:
 
-* [AEM Forms su JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/jee-patch-installer-65.html)
-* [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fservicepack%2Faem-service-pkg-6.5.15.0.zip)
-* [Pacchetto di componenti aggiuntivi per Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-forms-addon-2022.12.20.00-220900.zip)
+* [AEM Forms su JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [AEM 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it)
+* [Pacchetto di componenti aggiuntivi per Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Servlet frammenti](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
 +++
@@ -95,22 +95,20 @@ Passa alla directory appropriata e da una shell e digita
 
 1. **[Solo per basati su Unix]:** La **Avvia Configuration Manager** la casella di controllo è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Gestione configurazione all&#39;istante o per eseguire **Gestione configurazione** in seguito, deseleziona la **Avvia Configuration Manager** prima di fare clic **[!UICONTROL Fine]**. Puoi iniziare **Gestione configurazione** in seguito utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
 
-   È necessario eseguire le attività di cui sopra durante l&#39;esecuzione del **Gestione configurazione**:
-   * Configura CRX
-   * Distribuire gli EAR di Adobe Experience Manager Forms
-   * Inizializza database Adobe Experience Manager Forms
-   * Distribuzione di componenti Adobe Experience Manager Forms
-   * Distribuisci e convalida jar DSC.
-
 1. A seconda del server delle applicazioni, scegli uno dei seguenti documenti e segui le istruzioni in *Configurazione e distribuzione dei moduli AEM* sezione .
 
    * [Installazione e distribuzione di moduli AEM per JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [Installazione e distribuzione di moduli AEM per WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
    * [Installazione e distribuzione di AEM Forms per WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+   * [Installazione e distribuzione di moduli AEM per il cluster JBoss®](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
+   * [Installazione e distribuzione di moduli AEM per il cluster WebSphere®](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
+   * [Installazione e distribuzione del cluster AEM Forms per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
+
+È
 
 >[!NOTE]
 >
-> Dopo aver installato AEM Forms su JEE service pack, devi rimuovere il pacchetto aggiuntivo Forms da `crx-repository\install` prima di riavviare l&#39;appserver. Scarica il pacchetto aggiuntivo di Forms più recente dal [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
+> Dopo aver installato AEM Forms su JEE service pack, devi rimuovere il pacchetto aggiuntivo Forms da `crx-repository\install` prima di riavviare l&#39;appserver. Scarica il pacchetto aggiuntivo di Forms più recente dal [Portale di distribuzione software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
@@ -165,8 +163,8 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 +++6. Installare AEM pacchetto aggiuntivo di Experience Manager Forms
 
 1. Assicurati di aver installato la [!DNL Experience Manager] service pack.
-1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) per il sistema operativo in uso.
-1. Installa il pacchetto aggiuntivo di Forms come descritto in [Installazione dei pacchetti aggiuntivi di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=en#install-aem-forms-add-on-package).
+1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per il sistema operativo in uso.
+1. Installa il pacchetto aggiuntivo di Forms come descritto in [Installazione dei pacchetti aggiuntivi di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 1. Se utilizzi le lettere in Experience Manager 6.5 Forms, installa il [pacchetto di compatibilità AEM più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
@@ -200,8 +198,8 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 
 +++2.Scarica il software richiesto:
 
-* [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fservicepack%2Faem-service-pkg-6.5.15.0.zip)
-* [Pacchetto di componenti aggiuntivi per Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-forms-addon-2022.12.20.00-220900.zip)
+* [AEM 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it)
+* [Pacchetto di componenti aggiuntivi per Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
 
@@ -240,20 +238,18 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 +++4. Installare AEM pacchetto aggiuntivo di Experience Manager Forms
 
 1. Assicurati di aver installato la [!DNL Experience Manager] service pack.
-1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) per il sistema operativo in uso.
-1. Installa il pacchetto aggiuntivo di Forms come descritto in [Installazione dei pacchetti aggiuntivi di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=en#install-aem-forms-add-on-package).
+1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per il sistema operativo in uso.
+1. Installa il pacchetto aggiuntivo di Forms come descritto in [Installazione dei pacchetti aggiuntivi di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 1. Se utilizzi le lettere in Experience Manager 6.5 Forms, installa il [pacchetto di compatibilità AEM più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
 ## Risoluzione dei problemi
 
-* Reinstallare i Service Pack di AEM Forms se si verifica un errore durante l&#39;installazione. Se il problema persiste, contatta il team di prodotto.
+* Reinstallare i Service Pack di AEM Forms se si verifica un errore durante l&#39;installazione. Se il problema persiste, contatta il supporto Adobe.
 
 * Se **Finestra di dialogo nell’interfaccia utente di Gestione pacchetti** esce durante l&#39;installazione del service pack, attendere che i registri di errore si stabilizzino prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle dell’aggiornamento prima di essere certi che le installazioni abbiano esito positivo. In genere questo problema si verifica nel browser Safari ma può verificarsi a intermittenza su qualsiasi browser.
 
 * Controlla i log di monitoraggio (error.log) una volta che l&#39;installazione è completa per qualsiasi attività. Attendi per alcuni minuti finché non vi è alcuna attività nei registri. Riavvia l&#39;istanza AEM.
 
 * Nel caso in cui si ottenga un **errore servizio-non disponibile** dopo aver installato l’ultimo service pack AEM Forms 6.5.15.0, [installare il frammento e il bundle del servlet](/help/forms/using/aem-service-pack-installation-solution.md) per correggere l&#39;errore.
-
-
