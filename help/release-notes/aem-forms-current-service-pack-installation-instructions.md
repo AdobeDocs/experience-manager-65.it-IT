@@ -2,9 +2,9 @@
 title: Istruzioni di installazione delle patch di AEM Forms per AEM Forms
 description: Istruzioni per le installazioni dei service pack AEM Forms per l'ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1797'
 ht-degree: 9%
 
 ---
@@ -91,7 +91,8 @@ Passa alla directory appropriata e da una shell e digita
 
       >[!NOTE]
       >
-      > Utilizzo della **ConfigurationManager.bat** file aiuta a evitare di aggiornare manualmente il nome dei file .lax.
+      >* Aggiornamento o sostituzione del **ConfigurationManager.bat** file ti aiuta a evitare di aggiornare manualmente il nome dei file .lax.
+
 
 1. **[Solo per basati su Unix]:** La **Avvia Configuration Manager** la casella di controllo è selezionata per impostazione predefinita. Fai clic su **[!UICONTROL Fine]** per eseguire Gestione configurazione all&#39;istante o per eseguire **Gestione configurazione** in seguito, deseleziona la **Avvia Configuration Manager** prima di fare clic **[!UICONTROL Fine]**. Puoi iniziare **Gestione configurazione** in seguito utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
 
@@ -104,7 +105,6 @@ Passa alla directory appropriata e da una shell e digita
    * [Installazione e distribuzione di moduli AEM per il cluster WebSphere®](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [Installazione e distribuzione del cluster AEM Forms per WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-È
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 +++
 
 ## Risoluzione dei problemi
-
-* Reinstallare i Service Pack di AEM Forms se si verifica un errore durante l&#39;installazione. Se il problema persiste, contatta il supporto Adobe.
 
 * Se **Finestra di dialogo nell’interfaccia utente di Gestione pacchetti** esce durante l&#39;installazione del service pack, attendere che i registri di errore si stabilizzino prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle dell’aggiornamento prima di essere certi che le installazioni abbiano esito positivo. In genere questo problema si verifica nel browser Safari ma può verificarsi a intermittenza su qualsiasi browser.
 
