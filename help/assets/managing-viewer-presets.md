@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
+source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
 workflow-type: tm+mt
-source-wordcount: '4507'
+source-wordcount: '4520'
 ht-degree: 9%
 
 ---
@@ -461,7 +461,7 @@ Vedi [Considerazioni speciali per la creazione di un predefinito visualizzatore 
 1. Nella pagina Editor predefiniti per visualizzatori , seleziona la **[!UICONTROL Comportamento]** scheda . In alternativa, puoi selezionare qualsiasi elemento visivo nel visualizzatore per selezionarlo per la configurazione.
 Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UICONTROL Riproduzione]**, puoi scegliere tra una delle tre opzioni di streaming adattivo:
 
-   * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come trattino.
+   * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come trattino. Tuttavia, sui dispositivi Safari/iOS, devi selezionare **[!UICONTROL hls]** come tipo, invece.
    * **[!UICONTROL hls]** - I video vengono trasmessi solo come hls.
    * **[!UICONTROL auto]** - Best practice. La creazione di flussi DASH e HLS è ottimizzata per lo storage. Pertanto, l’Adobe consiglia di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come trattini, hls o progressivi, come illustrato di seguito:
       * Se il browser supporta DASH, viene prima utilizzato lo streaming DASH.
