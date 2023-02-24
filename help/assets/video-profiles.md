@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '3689'
+source-wordcount: '3727'
 ht-degree: 9%
 
 ---
@@ -284,7 +284,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    <td><code>keyframe</code></td>
    <td>Il numero di fotogrammi di destinazione tra i fotogrammi chiave. Calcola questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo del fotogramma chiave dovrebbe essere 60-300.<br /> <br /> Intervalli di fotogrammi chiave più bassi migliorano il comportamento di ricerca e commutazione del flusso per le codifiche video adattive e possono anche migliorare la qualità dei video che hanno molto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito si traduce in una qualità video complessiva inferiore a un dato bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è 60-90.</p> </td>
+   <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per DASH o HLS è 60-90. (Per utilizzare DASH per i video, deve prima essere abilitato sul tuo account. Vedi <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    <td><code>audioBitrateCustom</code></td>
    <td>Imposta valore su <code>true</code> per forzare un bitrate costante per lo streaming audio, se supportato dal codec audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per HLS (HTTP Live Streaming) è <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Il valore predefinito è <code>false</code>.</p> <p>Il valore consigliato per DASH o HLS è <code>false</code>. (Per utilizzare DASH per i video, deve prima essere abilitato sul tuo account. Vedi <a href="/help/assets/video.md#enable-dash">Abilita DASH sul tuo account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

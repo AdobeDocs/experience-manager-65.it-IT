@@ -4,14 +4,14 @@ description: Scopri come abilitare alcune funzionalità dei frammenti di contenu
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
+source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 70%
+source-wordcount: '271'
+ht-degree: 76%
 
 ---
 
-# Frammenti di contenuto - Browser configurazioni {#content-fragments-configuration-browser}
+# Frammenti di contenuto - Browser configurazioni{#content-fragments-configuration-browser}
 
 Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
 
@@ -43,10 +43,6 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 >
 >Per maggiori dettagli vedi anche [Browser configurazioni:](/help/sites-administering/configurations.md#using-configuration-browser).
 
->[!CAUTION]
->
->Le sottoconfigurazioni (una configurazione nidificata all’interno di una configurazione) sono supportate per l’utilizzo con Frammenti di contenuto, ma non possono essere utilizzate per le query GraphQL.
-
 1. Accedi a **Strumenti**, **Generali**, quindi apri **Browser configurazioni**.
 
 1. Utilizza **Crea** per aprire la finestra di dialogo, in cui:
@@ -67,6 +63,6 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 
 Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Assets.
 
-Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Cloud Services** della finestra **Proprietà cartella** della cartella specifica.
+Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Servizi cloud** della finestra **Proprietà cartella** della cartella specifica.
 
 ![Applica configurazione](assets/cfm-conf-02.png)
