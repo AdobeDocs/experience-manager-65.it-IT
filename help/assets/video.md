@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 86394ab7e7de89615218d6ddd6843ec9276275cd
+source-git-commit: fb287b3082a9376c01fd609edd0f4782278e6b37
 workflow-type: tm+mt
-source-wordcount: '12734'
+source-wordcount: '12760'
 ht-degree: 5%
 
 ---
@@ -173,11 +173,11 @@ Vedi anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic
 
 ## Procedure consigliate: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
-I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. È possibile utilizzarli per evitare molti problemi comuni associati alla riproduzione video di HTML5. Inoltre, problemi associati a dispositivi mobili quali la mancanza di distribuzione in streaming adattiva e la portata limitata del browser desktop.
+I predefiniti per visualizzatori video Dynamic Media HTML5 sono lettori video affidabili. È possibile utilizzarli per evitare molti problemi comuni associati alla riproduzione video di HTML5. Inoltre, problemi associati a dispositivi mobili come la mancanza di distribuzione con bitrate adattivo e la portata limitata del browser desktop.
 
 Dal lato del design del lettore, è possibile progettare le funzionalità del lettore video utilizzando gli strumenti standard di sviluppo web. Ad esempio, puoi progettare pulsanti, controlli e sfondo personalizzato dell’immagine miniatura utilizzando HTML5 e CSS per aiutarti a raggiungere i clienti con un aspetto personalizzato.
 
-Dal lato della riproduzione del visualizzatore, rileva automaticamente la funzionalità video del browser. Il video viene quindi trasmesso utilizzando HLS o DASH, noto anche come streaming video adattivo. Oppure, se tali metodi di consegna non sono presenti, viene invece utilizzato HTML5 progressive.
+Dal lato della riproduzione del visualizzatore, rileva automaticamente la funzionalità video del browser. Il video viene quindi trasmesso tramite HLS (HTTP Live Streaming) o DASH (Dynamic Adaptive Streaming over HTTP) , noto anche come streaming a bitrate adattivo. Oppure, se tali metodi di consegna non sono presenti, viene invece utilizzato HTML5 progressive.
 
 Combinando in un singolo player quanto segue:
 
@@ -193,14 +193,14 @@ Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adob
 
 Per lo streaming video adattivo per desktop e dispositivi mobili, i video utilizzati per la commutazione del bit rate si basano su tutti i video MP4 nel set video adattivo.
 
-La riproduzione video si verifica utilizzando HLS o DASH, o il download progressivo del video. Nelle versioni precedenti di Experience Manager, ad esempio 6.0, 6.1 e 6.2, i video venivano trasmessi in streaming via HTTP.
+La riproduzione video si verifica utilizzando DASH o HLS, oppure tramite il download progressivo del video. Nelle versioni precedenti di Experience Manager, ad esempio 6.0, 6.1 e 6.2, i video venivano trasmessi in streaming via HTTP.
 
-Tuttavia, all’Experience Manager 6.3 e versioni successive, i video vengono ora trasmessi in streaming su HTTPS (ovvero HLS o DASH) perché l’URL del servizio gateway DM utilizza sempre anche HTTPS. Questo comportamento predefinito non ha alcun impatto sui clienti. In altre parole, lo streaming video si verifica sempre su HTTPS a meno che non sia supportato dal browser. (vedere la tabella seguente). Quindi,
+All’Experience Manager 6.3 e versioni successive, i video vengono ora trasmessi in streaming su HTTPS (ovvero DASH o HLS) perché l’URL del servizio gateway DM utilizza sempre anche HTTPS. Questo comportamento predefinito non ha alcun impatto sui clienti. In altre parole, lo streaming video si verifica sempre su HTTPS a meno che non sia supportato dal browser. (vedere la tabella seguente). Quindi,
 
 * Se disponi di un sito web HTTPS con streaming video HTTPS, lo streaming è a posto.
 * Se disponi di un sito web HTTP con streaming video HTTPS, lo streaming è a posto e il browser Web non presenta problemi di contenuto misto.
 
-HLS è uno standard Apple per lo streaming video adattivo che regola automaticamente la riproduzione in base alla capacità della larghezza di banda della rete. Permette inoltre al cliente di &quot;cercare&quot; in qualsiasi punto del video senza dover attendere che il resto del video venga scaricato.
+DASH è lo standard internazionale e HLS è uno standard Apple. Entrambi vengono utilizzati per lo streaming video adattivo. Inoltre, entrambe le tecnologie regolano automaticamente la riproduzione in base alla capacità della larghezza di banda della rete. Permette inoltre al cliente di &quot;cercare&quot; in qualsiasi punto del video senza dover attendere che il resto del video venga scaricato.
 
 Il video progressivo viene distribuito scaricando e memorizzando il video localmente sul sistema desktop o sul dispositivo mobile di un utente.
 
@@ -231,17 +231,17 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 o versione successiva</td>
-   <td>Streaming adattivo DASH* o HLS.</td>
+   <td>Streaming con bitrate adattivo DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>Streaming adattivo DASH* o HLS.</td>
+   <td>Streaming con bitrate adattivo DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>Streaming adattivo HLS.</td>
+   <td>Streaming con bitrate adattivo HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -251,7 +251,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android™ 7 o successivo)</td>
-   <td>Streaming adattivo DASH* o HLS.</td>
+   <td>Streaming con bitrate adattivo DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -261,17 +261,17 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>Streaming adattivo HLS.</td>
+   <td>Streaming con bitrate adattivo HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>Streaming adattivo HLS.</td>
+   <td>Streaming con bitrate adattivo HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
-   <td>Streaming adattivo DASH* o HLS./td&gt;
+   <td>Streaming con bitrate adattivo DASH* o HLS./td&gt;
   </tr>
  </tbody>
 </table>
@@ -436,7 +436,7 @@ DASH (Digital Adaptive Streaming via HTTP) è lo standard internazionale per lo 
 
 Alcuni vantaggi principali dell’abilitazione di DASH sul tuo account includono:
 
-* Crea un pacchetto video di streaming DASH per lo streaming adattivo. Questo metodo porta ad una maggiore efficienza della consegna. Lo streaming adattivo assicura la migliore esperienza di visualizzazione per i clienti.
+* Pacchetto video di streaming DASH per lo streaming a bitrate adattivo. Questo metodo porta ad una maggiore efficienza della consegna. Lo streaming adattivo assicura la migliore esperienza di visualizzazione per i clienti.
 * Streaming ottimizzato dal browser con lettori Dynamic Media passa tra lo streaming HLS e DASH per garantire la migliore qualità del servizio. Il lettore video passa automaticamente a HLS quando viene utilizzato un browser Safari.
 * Puoi configurare il metodo di streaming preferito (HLS o DASH) modificando il predefinito visualizzatore video.
 * La codifica video ottimizzata assicura che non venga utilizzato spazio di archiviazione aggiuntivo durante l’abilitazione della funzionalità DASH. Viene creato un singolo set di codifiche video sia per HLS che per DASH per ottimizzare i costi di archiviazione video.

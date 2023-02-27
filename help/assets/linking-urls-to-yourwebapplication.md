@@ -10,9 +10,9 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1279'
 ht-degree: 6%
 
 ---
@@ -158,7 +158,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    Questo esempio è l’URL video completo per un rendering video pubblicato.
 
-## Ottieni un URL video per lo streaming adattivo (DASH o HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Ottieni un URL video per lo streaming a bitrate adattivo (DASH o HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Sulla **[!UICONTROL Cloud Services]** , scorri verso il basso fino a **[!UICONTROL Cloud Services Dynamic Media]** intestazione, quindi selezionare **[!UICONTROL Mostra configurazioni]**.
