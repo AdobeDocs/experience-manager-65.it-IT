@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 36%
    + [Supporto per cookie per lo stesso sito](same-site-cookie-support.md)
 + Personalizzazione {#personalization}
    + [Personalizzazione](personalization.md)
-   + [Configurazione di ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
+   + [Configurando ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Campagne](campaigns.md)
    + [Configurazione della segmentazione con ContextHub](segmentation.md)
@@ -137,7 +137,7 @@ ht-degree: 36%
    + [Integrazione con BrightEdge Content Optimizer](brightedge.md)
    + [Produttore catalogo](catalog-producer.md)
    + [Integrazione con Silverpop Engage](silverpop.md)
-   + [Integrazione con Adobe Campaign](campaign.md)
+   + [Integrazione con Adobe Campaign ](campaign.md)
    + [Integrazione con ExactTarget](exacttarget.md)
    + [Analytics con fornitori esterni](external-providers.md)
    + [Integrazione con Adobe Marketing Cloud](marketing-cloud.md)
