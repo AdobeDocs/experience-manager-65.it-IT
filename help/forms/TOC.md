@@ -145,7 +145,7 @@ ht-degree: 4%
    + [Incorporare un modulo adattivo o una comunicazione interattiva nella pagina dei siti AEM](using/embed-adaptive-form-aem-sites.md)
    + [Incorporare un modulo adattivo in una pagina web esterna](using/embed-adaptive-form-external-web-page.md)
    + [Stile in linea dei componenti di moduli adattivi](using/inline-style-adaptive-forms.md)
-   + [Introduzione alla sequenza di moduli in più passaggi](using/introduction-form-sequence.md)
+   + [Introduzione alla sequenza di moduli a più passaggi](using/introduction-form-sequence.md)
    + [Funzionalità di layout dei moduli adattivi](using/layout-capabilities-adaptive-forms.md)
    + [Testo segnaposto in AEM Forms](using/placeholder-text-in-aem-forms-.md)
    + [Anteprima di un modulo](using/previewing-forms.md)

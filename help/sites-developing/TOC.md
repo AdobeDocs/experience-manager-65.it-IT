@@ -96,7 +96,7 @@ ht-degree: 37%
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtypes (interfaccia classica)](xtypes.md)
       + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
-+ [Headful e Headless in AEM](headful-headless.md)
++ [Headful e headless in AEM](headful-headless.md)
 + Gestione delle esperienze headless{#headless}
    + [Headless e AEM](headless/introduction.md)
    + Percorsi headless {#journeys}
@@ -106,16 +106,16 @@ ht-degree: 37%
          + [Guida introduttiva ad AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
          + [Percorso della tua prima esperienza con AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
          + [Come modellare il contenuto come modelli di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
-         + [Come accedere ai contenuti tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
-         + [Come aggiornare i contenuti tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+         + [Come accedere al contenuto tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+         + [Come aggiornare il contenuto tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
          + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
-         + [Come vivere con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+         + [Come effettuare il Go Live con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
          + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
       + Percorso Architect di contenuti headless {#architect}
          + [Panoramica del percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
          + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
          + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
-         + [Scopri come creare modelli di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
+         + [Scopri come creare modelli per frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Guide introduttive {#getting-started}
       + [Introduzione](headless/getting-started/introduction.md)
       + [Creazione di una configurazione ](headless/getting-started/create-configuration.md)
