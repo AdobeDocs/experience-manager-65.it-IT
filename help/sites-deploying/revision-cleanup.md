@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
+source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5903'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento aumenta la dimensione dell’archivio. Per evitare una crescita incontrollata dell&#39;archivio, è necessario pulire le vecchie revisioni per liberare risorse su disco. Questa funzionalità di manutenzione è denominata Pulizia revisioni. È disponibile come routine offline a partire da AEM 6.0.
+Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento, le dimensioni dell’archivio aumentano. Le vecchie revisioni devono essere ripulite per liberare le risorse su disco - questo è importante per evitare una crescita incontrollata dell’archivio. Questa funzionalità di manutenzione è denominata Pulizia revisioni. È disponibile come routine offline a partire da AEM 6.0.
 
 Con AEM 6.3 e versioni successive, è stata introdotta una versione online di questa funzionalità chiamata Online Revision Cleanup (Pulizia delle revisioni online). Rispetto alla funzione di pulizia delle revisioni offline, in cui l&#39;istanza AEM deve essere chiusa, la funzione di pulizia delle revisioni online può essere eseguita mentre l&#39;istanza AEM è online. La funzione Pulizia revisioni online è attivata per impostazione predefinita ed è la modalità consigliata per eseguire la pulizia delle revisioni.
 
