@@ -2,16 +2,16 @@
 title: Estensione [!DNL Adobe Experience Manager] 6.5 con Adobe Developer App Builder.
 description: Estensione [!DNL Adobe Experience Manager] 6.5 con Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: cc1b86a15eb7ef45616bc9ea4f8aab4a28e74add
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # Estensione [!DNL Adobe Experience Manager] utilizzo di Adobe Developer App Builder {#extend-using-app-builder}
 
-## Cos’è App Builder per AEM {#project-firefly}
+## Cos’è App Builder per AEM {#project-appbuilder}
 
 Il nuovo Adobe Developer App Builder fornisce un framework di estensibilità per uno sviluppatore per estendere facilmente AEM funzionalità.
 
@@ -23,7 +23,7 @@ App Builder consente ai clienti di estendere facilmente Adobe Experience Manager
 * Estensibilità servizi di base : estende le funzionalità delle applicazioni di base estendendo il comportamento predefinito con funzioni personalizzate e logica di business.
 * Estensibilità dell’esperienza utente : estende l’esperienza di base per supportare i requisiti aziendali o creare proprietà digitali, vetrine e app back-office specifiche per i clienti.
 
-App Builder (precedentemente noto come Project Firefly) è disponibile per clienti e partner aziendali tramite la nostra anteprima per sviluppatori dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Gli sviluppatori possono provare App Builder tramite la nostra [Programma di prova](https://adobe.ly/appbuilder-trial).
+App Builder è disponibile per clienti e partner aziendali tramite la nostra anteprima per sviluppatori dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Gli sviluppatori possono provare App Builder tramite la nostra [Programma di prova](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Invece di una soluzione standard, Adobe Developer App Builder fornisce una piatt
 
 Il diagramma seguente illustra come un’applicazione standard creata con App Builder sfrutta queste funzionalità:
 
-![Architettura](assets/firefly-architecture.jpg)
+![Architettura](assets/appbuilder-architecture.jpg)
 
 Per ulteriori dettagli sull’architettura di App Builder, consulta [Panoramica dell’architettura](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -63,6 +63,3 @@ Pronti per iniziare lo sviluppo? Sono disponibili numerose applicazioni di esemp
 
 * [Labs di codice di App Builder sul sito web Adobe Developer](https://www.adobe.io/app-builder/docs/resources/)
 
-## Supporto {#support}
-
-Per il tipo di richieste di supporto per sviluppatori, invitiamo gli sviluppatori a utilizzare il nostro [Forum Experience League](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
