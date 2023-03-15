@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: f93e57c861ceda20ee82019da38b3b16791dbd0d
+source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3008'
 ht-degree: 7%
 
 ---
@@ -45,14 +45,14 @@ Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione
 **Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
 Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di lavorazione e la conservazione delle colture, l’Adobe consiglia le seguenti linee guida e suggerimenti:
 
-* Le risorse immagine a cui verrà applicato uno smart crop devono essere almeno 50 x 50 pixel o più grandi. &lt;!— CQDOC-20087>
-* Un profilo immagine contenente dimensioni di ritaglio avanzate duplicate non è consentito. &lt;!— CQDOC-20087>
-* Non sono consentiti i profili immagine denominati duplicati con opzioni di ritaglio avanzate impostate. &lt;!— CQDOC-20087>
+* Le risorse immagine a cui verrà applicato uno smart crop devono essere almeno 50 x 50 pixel o più grandi. <!-- CQDOC-20087 -->
+* Un profilo immagine contenente dimensioni di ritaglio avanzate duplicate non è consentito. <!-- CQDOC-20087 -->
+* Non sono consentiti i profili immagine denominati duplicati con opzioni di ritaglio avanzate impostate. <!-- CQDOC-20087 -->
 * Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
 * Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
 * Idealmente, puoi utilizzare 10-15 ritagli avanzati per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
 
