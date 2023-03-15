@@ -7,7 +7,7 @@ exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 31%
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 31%
 
 La Comunità AEM ha migliaia di membri in tutto il mondo. da principianti di Experience Manager ad amministratori e sviluppatori esperti.  Siamo pronti ad aiutarti nel rispondere a domande sulle funzionalità di AEM così come a quesiti sullo sviluppo. Organizziamo regolarmente sessioni con esperti interni ed esterni e contribuiamo alla produzione di campioni di codice, articoli e tutorial per i membri.
 
-[Entra a far parte della community e accedi a contenuti, persone e conoscenze di alto livello.](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) È aperto a tutti. Se hai un interesse per AEM, allora sei il benvenuto. Passa oggi!
+[Entra a far parte della community e accedi a contenuti, persone e conoscenze di alto livello.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it) È aperto a tutti. Se hai un interesse per AEM, allora sei il benvenuto. Passa oggi!
 
 ## Quali eventi sono previsti per AEM membri della community? {#events}
 

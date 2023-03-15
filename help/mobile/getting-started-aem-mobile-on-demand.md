@@ -49,7 +49,7 @@ AEM Mobile è solo uno dei pilastri che costituisce la piattaforma AEM completa.
 
 L’avvio di una nuova esperienza con le app AEM Mobile richiede una combinazione di ruoli prima di essere pronto per la modifica dei contenuti. I seguenti ruoli forniscono un punto di partenza per la creazione di una nuova applicazione AEM Mobile:
 
-* **Administrator**
+* **Amministratore**
 * **Sviluppatore**
 * **Autore**
 

@@ -175,7 +175,7 @@ Verifica i seguenti parametri:
    <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: Il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>Byte di dati codificati UTF-8 uniti al modello.</td>
   </tr>
  </tbody>

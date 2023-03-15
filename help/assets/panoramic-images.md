@@ -24,7 +24,7 @@ Questa sezione descrive come utilizzare il visualizzatore di immagini panoramich
 
 Vedi anche [Gestire i predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md).
 
-![panoramico-immagine2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Caricare le risorse da utilizzare con il visualizzatore di immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

@@ -306,4 +306,4 @@ Per i campi modulo generati dai componenti modulo non deve essere specificato al
 
 >[!NOTE]
 >
->Per annullare e ripristinare le modifiche apportate a file e immagini sono necessarie autorizzazioni speciali. Inoltre, la cronologia di annullamento per le modifiche apportate a file e immagini ha una durata in ore minima, oltre la quale la possibilità di annullare le modifiche non è garantita. L’amministratore può concedere le autorizzazioni e cambiare l’intervallo predefinito di dieci ore.
+>Per annullare e ripristinare le modifiche apportate a file e immagini sono necessarie autorizzazioni speciali. Inoltre, la cronologia di annullamento per le modifiche apportate a file e immagini ha una durata in ore minima, Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può concedere le autorizzazioni e cambiare l’intervallo predefinito di dieci ore.

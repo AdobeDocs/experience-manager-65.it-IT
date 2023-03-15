@@ -33,7 +33,7 @@ Offre diverse funzioni che semplificano AEM sviluppo:
 * Bootstrap semplice dei progetti AEM tramite una Creazione guidata progetto specifica.
 * Facile editing delle proprietà JCR.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Prima di utilizzare gli strumenti per sviluppatori AEM, è necessario:
 

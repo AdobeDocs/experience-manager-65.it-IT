@@ -170,7 +170,7 @@ AEM proprietà sono quelle con spazio dei nomi con &quot;cq&quot;, &quot;sling&q
 
 * ***path **-**Stringa*** - percorso di una posizione in un&#39;istanza dell&#39;app in cui sono memorizzate le risorse dell&#39;app
 
-**telefonatori** È stato introdotto un nuovo gestore di sincronizzazione dei contenuti per il caso di utilizzo Personalizzazione per eseguire il rendering del contenuto di destinazione. Il gestore &quot;mobileappoffers&quot; sa come eseguire il rendering delle offerte target associate create dall’autore del contenuto. Il gestore mobileappoffers estende il gestore di aggiornamenti delle pagine astratte, pertanto molte delle proprietà sono simili. I dettagli del gestore mobileappoffer hanno le seguenti proprietà.
+**telefonatori** È stato introdotto un nuovo gestore di sincronizzazione dei contenuti per il caso d’uso Personalizzazione per eseguire il rendering del contenuto di destinazione. Il gestore &quot;mobileappoffers&quot; sa come eseguire il rendering delle offerte target associate create dall’autore del contenuto. Il gestore mobileappoffers estende il gestore di aggiornamenti delle pagine astratte, pertanto molte delle proprietà sono simili. I dettagli del gestore mobileappoffer hanno le seguenti proprietà.
 
 Il gestore mobileappsoffers estende il gestore mobileappspages e aggiunge le seguenti proprietà:
 

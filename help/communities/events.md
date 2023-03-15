@@ -121,7 +121,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| NEGA | Il contenuto del membro è negato |
+| RIFIUTA | Il contenuto del membro è negato |
 | FLAG-AS INAPPROPRIATO | Il contenuto del membro è contrassegnato |
 | NON APPROPRIATO | Il contenuto del membro non è contrassegnato |
 | ACCETTARE | Il contenuto del membro è approvato dal moderatore |

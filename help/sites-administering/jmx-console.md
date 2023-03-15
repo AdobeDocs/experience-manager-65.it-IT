@@ -54,7 +54,7 @@ Operazioni per l’amministrazione di istanze del flusso di lavoro in esecuzione
 * Argomenti: nessuno
 * Valore restituito: Dati della tabella contenenti le colonne seguenti:
 
-   * Processi
+   * Jobs
    * Nome coda
    * Lavori attivi
    * Tempo medio di elaborazione

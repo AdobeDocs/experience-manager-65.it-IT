@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Gestione utente {#user-management}
+# User Management {#user-management}
 
 User Management consente di abilitare l&#39;accesso single sign-on (SSO) tra moduli AEM e applicazioni protette da Netegrity SiteMinder utilizzando Security Assertion Markup Language (SAML). Quando l’SSO è implementato, le pagine di accesso utente dei moduli di AEM non sono necessarie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 

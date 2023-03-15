@@ -295,7 +295,8 @@ Per la variante del frammento esperienza interessata dal processo di riscrittura
 
 Come input, il metodo riceve i parametri:
 
-* `link`Le azioni    
+* `link`
+Le azioni 
 `String` rappresentazione del collegamento in corso di elaborazione. In genere si tratta di un URL relativo che punta alla risorsa sull’istanza di authoring.
 
 * `tag`

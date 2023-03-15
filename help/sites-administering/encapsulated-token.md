@@ -33,7 +33,7 @@ Un utente può essere autenticato nell&#39;istanza di pubblicazione 1, ma se una
 
 La soluzione è quella di configurare connessioni permanenti a livello di load balancer. Con le connessioni permanenti, un utente veniva sempre indirizzato alla stessa istanza di pubblicazione. Di conseguenza, non è possibile un bilanciamento del carico ottimale.
 
-Nel caso in cui un&#39;istanza di pubblicazione diventi non disponibile, tutti gli utenti autenticati in tale istanza perderanno la sessione. Questo perché l&#39;accesso al repository è necessario per convalidare il cookie di autenticazione.
+Nel caso in cui un&#39;istanza di pubblicazione diventi non disponibile, tutti gli utenti autenticati in quella istanza perderanno la sessione. Questo perché l&#39;accesso al repository è necessario per convalidare il cookie di autenticazione.
 
 ## Autenticazione senza stato con token incapsulato {#stateless-authentication-with-the-encapsulated-token}
 

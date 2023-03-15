@@ -169,7 +169,7 @@ Il file XML di precompilazione viene specificato utilizzando il parametro dataRe
 
 Ad esempio, nel set di moduli sono presenti tre moduli (modulo1, modulo2 e modulo3) con la seguente struttura:
 
-modulo1
+form1
 
 campo modulo1
 
@@ -364,7 +364,7 @@ I seguenti pattern di dati non sono completamente supportati nel set di moduli:
   </tr>
   <tr>
    <td>Dimensione dell'input e dimensione del pattern non corrispondenti</td>
-   <td><p>Quando pattern= num{z,zzz}</p> <p>E input=</p> <p>12.345 o</p> <p>1.23</p> </td>
+   <td><p>Quando pattern= num{z,zzz}</p> <p>E input=</p> <p>12.345 o</p> <p>1,23</p> </td>
   </tr>
   <tr>
    <td>Pattern di clausole immagine con parentesi graffe "(" ")"</td>

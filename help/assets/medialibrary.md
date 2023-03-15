@@ -69,7 +69,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare la [!DNL 
 * Annotare le risorse.
 * Aggiungi risorse a [!DNL Sites] tramite Content Finder.
 * Utilizzo [!DNL Content Fragments].
-* Utilizza le API REST HTTP e GraphQL per [!DNL Content Fragments] e risorse multimediali di riferimento, in licenza Sites.
+* Utilizza le API HTTP REST e GraphQL per [!DNL Content Fragments] e risorse multimediali di riferimento, in licenza Sites.
 * Integrazione del Marketing Cloud.
 * Personalizza ed espandi l’interfaccia utente per la gestione delle risorse.
 * Accedi all’API di Query Builder per estendere la funzionalità di ricerca.

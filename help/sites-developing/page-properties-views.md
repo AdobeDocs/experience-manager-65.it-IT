@@ -103,7 +103,7 @@ Durante la configurazione delle proprietà della pagina da utilizzare con le Liv
 
 ## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 
-Questo esempio illustra la tecnica di dialogo delle differenze tra [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Illustra inoltre l&#39;uso di `cq:showOnCreate` e `cq:hideOnEdit`.
+Questo esempio illustra la tecnica di dialogo delle differenze tra [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); compreso l&#39;uso di [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Illustra inoltre l&#39;uso di entrambi `cq:showOnCreate` e `cq:hideOnEdit`.
 
 CODICE SU GITHUB
 

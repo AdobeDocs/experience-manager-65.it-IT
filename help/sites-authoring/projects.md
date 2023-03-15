@@ -88,7 +88,7 @@ I progetti sono composti da diversi tipi di informazioni che desideri gestire in
 
 È possibile associare le seguenti porzioni al progetto.
 
-* [Assets](#assets)
+* [Risorse](#assets)
 * [Raccolte di risorse](#asset-collections)
 * [Esperienze](#experiences)
 * [Collegamenti](#links)
@@ -104,7 +104,7 @@ Fai clic sul menu a discesa in alto a destra di qualsiasi riquadro per aggiunger
 
 Fai clic sul pulsante dei puntini di sospensione in basso a destra di qualsiasi riquadro per aprire i dati della tessera nella console associata.
 
-### Risorse {#assets}
+### Assets {#assets}
 
 Nella sezione **Risorse**, puoi raccogliere tutte le risorse usate per un particolare progetto.
 

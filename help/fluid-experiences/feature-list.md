@@ -53,7 +53,7 @@ Le tabelle seguenti definiscono le caratteristiche di AEM esperienze fluide e si
 | [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) |
 | API HTTP per contenuti strutturati (lettura) |
 | API HTTP per contenuti strutturati (CRUD) |
-| [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) |
+| [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Funzionalità di amministrazione e integrazione {#admin-and-integration-features}

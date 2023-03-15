@@ -71,7 +71,7 @@ Puoi utilizzare l’espressione di accesso per abilitare o disabilitare un campo
 
 ### Calcola espressione {#calculate-expression}
 
-L&#39;espressione calculate viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un&#39;espressione. In genere, tale espressione utilizza la proprietà value di un altro campo. Esempio: `field2.value + field3.value`. Ogniqualvolta il valore del `field2`o `field3`cambia, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L&#39;espressione calculate viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un&#39;espressione. In genere, tale espressione utilizza la proprietà value di un altro campo. Esempio, `field2.value + field3.value`. Ogniqualvolta il valore del `field2`o `field3`cambia, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Si applica a**: field
 

@@ -176,14 +176,14 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Ora di attivazione | ontime:YYYY-MM-DDTHH |
 | Ora di disattivazione | tempo libero:AAAA-MM-DDTHH |
 | Intervallo di tempo (dateontime di scadenza, offtime) | campo facet : in basso..superiore |
-| Percorso  | /content/dam/&lt;folder name=&quot;&quot;> |
+| Percorso | /content/dam/&lt;folder name=&quot;&quot;> |
 | Titolo PDF | pdftitle:&quot;Documento di Adobe&quot; |
 | Oggetto | oggetto: &quot;Formazione&quot; |
 | Tag | tags:&quot;Località E Viaggi&quot; |
 | Tipo | tipo:&quot;image\png&quot; |
 | Larghezza immagine | larghezza:in basso.superiore |
 | Altezza dell&#39;immagine | altezza:in basso.superiore |
-| Utente | persona:John |
+| Persona | persona:John |
 
 Proprietà `path`, `limit`, `size`e `orderby` non può essere combinato utilizzando `OR` con qualsiasi altra proprietà.
 
@@ -262,7 +262,7 @@ Per accedere all’interfaccia del selettore risorse, vai a `https://[aem_server
 
 *Figura: Sfoglia e seleziona la risorsa nel selettore delle risorse.*
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 La funzionalità di ricerca in [!DNL Experience Manager Assets] presenta le seguenti limitazioni:
 

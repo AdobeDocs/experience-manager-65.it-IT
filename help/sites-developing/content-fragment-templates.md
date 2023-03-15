@@ -143,7 +143,7 @@ Maggiori dettagli sui nodi e sulle loro proprietà sono:
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>obbligatorio</p> </td>
+     <td><p><code>Long</code></p> <p>required</p> </td>
      <td><p>Versione della struttura del contenuto; attualmente supportato:</p> <p><strong>Nota</strong>: al momento questo parametro deve essere impostato su <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -160,7 +160,7 @@ Maggiori dettagli sui nodi e sulle loro proprietà sono:
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>obbligatorio</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
      <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per <strong>Principale</strong> ma può contenere [1.n] nodi figlio.</p> <p>Quando il modello viene utilizzato, il ramo secondario degli elementi viene copiato nel ramo del modello del frammento.</p> <p>Il primo elemento (visualizzato in CRXDE Lite) viene automaticamente considerato come il <i>principale</i> elemento; il nome del nodo è irrilevante e il nodo stesso non ha un significato speciale, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come attività secondarie.</p> </td>
     </tr>
    </tbody>
@@ -182,7 +182,7 @@ Maggiori dettagli sui nodi e sulle loro proprietà sono:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obbligatorio</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>Titolo dell’elemento (visualizzato nel selettore di elementi dell’editor frammento).</td>
     </tr>
     <tr>
@@ -202,7 +202,7 @@ Maggiori dettagli sui nodi e sulle loro proprietà sono:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>obbligatorio</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>Nome interno dell’elemento; deve essere univoco per il tipo di frammento.</td>
     </tr>
    </tbody>
@@ -242,7 +242,7 @@ Maggiori dettagli sui nodi e sulle loro proprietà sono:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obbligatorio</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>Il titolo della variante (visualizzato nell’editor frammenti) <strong>Variazione</strong> (barra a sinistra).</td>
     </tr>
     <tr>

@@ -383,7 +383,7 @@ Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentit
 I modelli per frammenti di contenuto consentiti per una cartella vengono risolti come segue:
 * I **Criteri** dei **Modelli per frammenti di contenuto consentiti**.
 * Se vuoto, prova a determinare il criterio utilizzando le regole di ereditarietà.
-* Se la catena di ereditarietà non fornisce un risultato, consulta la sezione Configurazione di **Cloud Services** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
+* Se la catena di ereditarietà non fornisce un risultato, consulta la sezione Configurazione di **Servizi cloud** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
 * Se nessuno dei risultati di cui sopra fornisce risultati, allora non ci sono modelli consentiti per quella cartella.
 
 ## Eliminazione di un modello per frammenti di contenuto {#deleting-a-content-fragment-model}

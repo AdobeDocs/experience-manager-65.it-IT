@@ -26,7 +26,7 @@ Quando AEM Communities è configurato per utilizzare MSRP come archivio comune, 
 
 Vedi anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 * [MongoDB](https://www.mongodb.org/):
 

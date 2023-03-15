@@ -13,11 +13,11 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 26%
+ht-degree: 32%
 
 ---
 
-# Integrazione con Adobe Campaign{#integrating-with-adobe-campaign}
+# Integrazione con Adobe Campaign {#integrating-with-adobe-campaign}
 
 Adobe Campaign è un insieme di soluzioni che consente di personalizzare e distribuire campagne su tutti i canali online e offline.
 

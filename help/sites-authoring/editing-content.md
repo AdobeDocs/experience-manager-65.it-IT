@@ -313,7 +313,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 
 ### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
 
-Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
+Per aprire un componente e modificarne il contenuto, utilizza l’icona [Modifica (a forma di matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
 
 Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti [tutte le azioni sono disponibili solo in modalità a schermo intero](#edit-content-full-screen-mode). Esempio:
 

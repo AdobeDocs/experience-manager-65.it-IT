@@ -52,19 +52,19 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 [Linea guida 1.1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto non testuale in modo che possa essere convertito in altri formati richiesti, come la stampa a caratteri grandi, il Braille, la sintesi vocale, i simboli o un linguaggio più semplice.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Contenuto non testuale (1.1.1)  {#non-text-content}
+### Contenuto non testuale (1.1.1) {#non-text-content}
 
 * Criterio di successo 1.1.1
 * Livello A
 * Contenuto non testuale: tutto il contenuto non testuale presentato all’utente dispone di un’alternativa testuale che svolge la finalità equivalente, fatta eccezione per le situazioni elencate di seguito.
 
-#### Finalità: contenuto non testuale (1.1.1) {#purpose-non-text-content}
+#### Finalità - Contenuto non testuale (1.1.1) {#purpose-non-text-content}
 
 Le informazioni su una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, tabelle e grafici. Le persone non vedenti o con gravi problemi visivi non sono in grado di vedere il contenuto non testuale, ma possono accedere ai contenuti testuali letti mediante un’utilità per la lettura dello schermo o presentati in forma tattile da un dispositivo Braille. Così, grazie alla disponibilità di alternative testuali al contenuto in formato grafico, i non vedenti possono accedere a una versione equivalente delle informazioni veicolate.
 
 Un ulteriore vantaggio è rappresentato dal fatto che le alternative testuali consentono l’indicizzazione dei contenuti non testuali da parte dei motori di ricerca.
 
-#### Come soddisfare il criterio - Contenuto non testuale (1.1.1)  {#how-to-meet-non-text-content}
+#### Come soddisfare il criterio - Contenuto non testuale (1.1.1) {#how-to-meet-non-text-content}
 
 Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un&#39;alternativa testuale equivalente. Ciò può essere effettuato tramite il campo **Testo alternativo**, vedi ad esempio l’**[Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it)** del componente di base.
 
@@ -109,7 +109,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 >
 >Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano; questo elemento viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
 
-#### Ulteriori informazioni - Contenuto non testuale (1.1.1)  {#more-information-non-text-content}
+#### Ulteriori informazioni - Contenuto non testuale (1.1.1) {#more-information-non-text-content}
 
 * [Comprendere i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Come soddisfare i criteri di successo 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -447,7 +447,7 @@ Assicurati che tutte le informazioni che si basano su caratteristiche visive del
 >
 >L’utilizzo di termini descrittivi sarà accettabile se questi hanno un significato in un contesto non visivo. Ad esempio, l’utilizzo dei termini *sopra* e *sotto* sarà generalmente accettabile, in quanto si riferiscono rispettivamente al contenuto prima e dopo un particolare elemento di contenuto; questa indicazione continuerà ad avere senso quando il contenuto è parlato.
 
-#### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3)  {#more-information-sensory-characteristics}
+#### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
 * [Comprendere i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Come soddisfare i criteri di successo 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
@@ -607,7 +607,7 @@ Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](
 
 Le immagini di testo vengono spesso utilizzate quando un particolare stile di testo è quello preferenziale (ad esempio un logo) o se il testo è stato generato da un’altra sorgente (ad esempio la scansione di un documento cartaceo). Tuttavia, rispetto al testo presentato in HTML e formattato mediante i CSS, le immagini di testo non hanno la flessibilità necessaria per modificarsi in dimensioni o aspetto nel modo che potrebbe essere necessario per le persone con disabilità visive o difficoltà di lettura.
 
-#### Come soddisfare il criterio - Immagini di testo (1.4.5)  {#how-to-meet-images-of-text}
+#### Come soddisfare il criterio - Immagini di testo (1.4.5) {#how-to-meet-images-of-text}
 
 Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Per visualizzare un esempio di come ottenere questo risultato, consulta [C30: Utilizzare CSS per sostituire il testo con immagini di testo e fornire i comandi dell’interfaccia utente per effettuare il passaggio](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
@@ -939,7 +939,7 @@ Lo scopo di questo criterio di successo è aiutare l’utente a individuare l’
 
 In presenza di più elementi, l’utente deve poter individuare con facilità l’elemento attivo. Se sullo schermo è presente un solo controllo utilizzabile da tastiera, il criterio di successo sarà soddisfatto perché la progettazione visiva presenta un solo elemento utilizzabile da tastiera.
 
-Dove il criterio di successo indica &quot;modalità operativa&quot;, questo significa tenere conto delle piattaforme che potrebbero non sempre mostrare un indicatore di messa a fuoco. Nella maggior parte dei casi, è disponibile una sola modalità operativa, pertanto questo criterio di successo è già soddisfatto.
+Nei punti in cui il criterio di successo indica “modalità operativa”, si fa riferimento alle piattaforme che potrebbero non mostrare sempre un indicatore dell’elemento di interesse. Nella maggior parte dei casi, è disponibile una sola modalità operativa, pertanto questo criterio di successo è già soddisfatto.
 
 #### Come soddisfare il criterio - Focus visibile (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1008,7 +1008,7 @@ Le pagine che applicano questo criterio di successo consentono:
 
 #### Come soddisfare il criterio - Parti in lingua (3.1.2)  {#how-to-meet-language-of-parts}
 
-L’attributo `lang` può essere utilizzato per identificare le modifiche nella lingua del contenuto. Ad esempio, una citazione in tedesco (codice ISO 639-1 &quot;de&quot;) può essere mostrata come segue:
+L’attributo `lang` può essere utilizzato per identificare le modifiche nella lingua del contenuto. Ad esempio, una citazione in tedesco (codice ISO 639-1 “de”) può essere mostrata come segue:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">

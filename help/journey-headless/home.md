@@ -5,7 +5,7 @@ exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 47%
+ht-degree: 65%
 
 ---
 
@@ -17,7 +17,7 @@ Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere A
 
 L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovi e indipendentemente dal canale utilizzato.
 
-L’implementazione headless dimentica la gestione delle pagine e dei componenti come avviene nelle soluzioni stack complete e si concentra sulla creazione di frammenti di contenuto riutilizzabili e neutri per i canali e sulla loro distribuzione cross-channel. Si tratta di un modello di sviluppo moderno e dinamico per l&#39;implementazione delle esperienze digitali.
+L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni full-stack e si concentra sulla creazione dei frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Si tratta di un modello di sviluppo dinamico e moderno per implementare esperienze digitali.
 
 Se siete nuovi a AEM e/o senza testa, AEM Percorsi headless sono un ottimo posto per iniziare a comprendere la teoria e la tecnologia attraverso una narrazione per risolvere vari problemi di business in modo headless.
 
@@ -27,7 +27,7 @@ Se siete nuovi a AEM e/o senza testa, AEM Percorsi headless sono un ottimo posto
 
 I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
 
-Se si desidera sapere come Adobe consiglia di risolvere i casi aziendali headless con AEM, AEM Percorsi headless sono il punto di partenza.
+Se desideri sapere come Adobe consiglia di risolvere dei casi di business headless con AEM, inizia con i Percorsi AEM Headless.
 
 ## Pubblico {#audiences}
 

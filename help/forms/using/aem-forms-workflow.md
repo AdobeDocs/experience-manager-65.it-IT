@@ -231,7 +231,7 @@ Un amministratore (membro del gruppo fd-administrators ) può configurare una ca
    <td>Specifica il nome della cartella controllata. Questo campo supporta solo caratteri alfanumerici.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Percorso </code></td>
+   <td><span class="uicontrol">Percorso</code></td>
    <td>Specificare la posizione fisica della cartella osservata. In un ambiente cluster, utilizza una cartella di rete condivisa accessibile AEM nodo cluster.</td>
   </tr>
   <tr>

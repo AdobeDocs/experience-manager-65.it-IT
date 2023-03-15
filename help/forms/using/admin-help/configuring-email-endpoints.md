@@ -74,7 +74,7 @@ Affinché il flusso di lavoro dei moduli possa ricevere e gestire i messaggi e-m
 
 **Espressione Cron:** L&#39;espressione cron utilizzata dal quarzo per pianificare il polling della directory di input.
 
-**Intervallo di ripetizione:** Numero di volte in cui viene ripetuto il polling della directory. L&#39;intervallo di ripetizione predefinito è in secondi se questo valore non è specificato nella configurazione dell&#39;endpoint. Il valore predefinito è 10. Questo valore non può essere inferiore a 10.
+**Intervallo di ripetizione:** Il numero di volte in cui viene ripetuto il polling della directory. L&#39;intervallo di ripetizione predefinito è in secondi se questo valore non è specificato nella configurazione dell&#39;endpoint. Il valore predefinito è 10. Questo valore non può essere inferiore a 10.
 
 **Conteggio ripetizioni:** Numero di volte in cui viene effettuato il polling della directory di input. Il conteggio di ripetizione predefinito da utilizzare se questo valore non è specificato nella configurazione dell’endpoint. Il valore -1 indica una scansione indefinita della directory. Il valore predefinito è -1.
 

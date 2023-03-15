@@ -1,7 +1,7 @@
 ---
 title: Creazione e gestione delle offerte
 seo-title: Creating and Managing Offers
-description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
+description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
 seo-description: Use the Offers console to create offers that you can use in activity experiences
 uuid: be0a53da-a979-4a30-a4bb-7c9ce26ae1a1
 contentOwner: Guillaume Carlino

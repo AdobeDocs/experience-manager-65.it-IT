@@ -23,7 +23,7 @@ Le configurazioni sono progettate per fornire la logica e la struttura per l’a
 
 Puoi estendere le istanze esistenti per creare configurazioni personalizzate.
 
-## Concetti  {#concepts}
+## Concetti {#concepts}
 
 I principi utilizzati nello sviluppo delle configurazioni sono stati basati sui seguenti concetti:
 

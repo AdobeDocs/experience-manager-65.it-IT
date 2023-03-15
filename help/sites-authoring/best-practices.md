@@ -23,7 +23,7 @@ Le best practice di authoring illustrano come utilizzare AEM nel modo più effic
 
 La documentazione relativa alle best practice disponibile per le aree seguenti:
 
-* [Assets](#assets)
+* [Risorse](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 

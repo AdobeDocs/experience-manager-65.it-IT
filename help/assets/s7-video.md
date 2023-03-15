@@ -137,7 +137,7 @@ La tabella seguente fornisce un confronto ad alto livello delle funzionalità su
 | Distribuzione | Progressivo | Streaming adattivo |
 | Tracciamento | Sì | Sì |
 | Estensibilità | Sì | No |
-| Video mobile | Sì | Sì |
+| Video mobile | Sì | Yes |
 
 ### Configurazione {#setting-up}
 

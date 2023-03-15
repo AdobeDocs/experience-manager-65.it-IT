@@ -115,7 +115,7 @@ Gli svantaggi:
 
 Questo approccio implica l&#39;accesso di più istanze Oak a un set di repliche MongoDB su più data center, in effetti creando un cluster attivo-attivo per l&#39;ambiente di authoring AEM. Con più data center, la replica MongoDB fornisce la stessa elevata disponibilità e ridondanza, ma ora include la possibilità di gestire un&#39;interruzione del data center.
 
-![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
 
 I vantaggi:
 

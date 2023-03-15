@@ -105,7 +105,7 @@ Per l&#39;archivio, utilizzare SSD o dischi con un livello IOPS superiore a 3000
 
 [!DNL Assets] ha una serie di casi d&#39;uso che rendono le prestazioni di rete più importanti rispetto a molte delle nostre [!DNL Experience Manager] progetti. Un cliente può disporre di un server veloce, ma se la connessione di rete non è abbastanza grande per supportare il carico degli utenti che caricano e scaricano risorse dal sistema, allora apparirà comunque lento. Esiste una buona metodologia per determinare il punto di interruzione nella connessione di rete di un utente a [!DNL Experience Manager] a [Considerazioni sulle risorse per l’esperienza utente, il dimensionamento dell’istanza, la valutazione del flusso di lavoro e la topologia di rete](/help/assets/assets-network-considerations.md).
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 Quando si dimensiona un&#39;implementazione, è importante tenere presenti le limitazioni di sistema. Se l’implementazione proposta supera tali limiti, utilizza strategie creative, ad esempio la suddivisione delle risorse tra più risorse [!DNL Assets] implementazioni.
 

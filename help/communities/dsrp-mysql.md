@@ -24,7 +24,7 @@ MySQL è un database relazionale che può essere utilizzato per memorizzare il c
 
 Queste istruzioni descrivono come connettersi al server MySQL e stabilire il database UGC.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 * [Feature pack per le community più recenti](deploy-communities.md#latestfeaturepack)
 * [Driver JDBC per MySQL](deploy-communities.md#jdbc-driver-for-mysql)

@@ -7,7 +7,7 @@ exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
 source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -59,7 +59,7 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Applica la configurazione alla cartella delle risorse {#apply-the-configuration-to-your-assets-folder}
+### Applica la configurazione alla cartella Risorse {#apply-the-configuration-to-your-assets-folder}
 
 Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Assets.
 

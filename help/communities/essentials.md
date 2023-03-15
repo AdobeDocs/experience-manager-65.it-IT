@@ -65,7 +65,7 @@ Di seguito sono riportati i collegamenti alle informazioni essenziali per i comp
 * [Grafico social](essentials-socialgraph.md)
 * [Provider di risorse di storage](srp-and-ugc.md) `(SRP)`
 
-* [Assegnazione tag](tag.md)
+* [Assegnazione dei tag](tag.md)
 
 ## Javadocs {#javadocs}
 

@@ -55,7 +55,7 @@ Gli utenti che devono accedere alla console di personalizzazione devono far part
 >
 >Se dimentichi di aggiungere al gruppo target-activity-authors gli utenti o i gruppi a cui desideri accedere da admin console di personalizzazione, gli utenti non potranno più visualizzare la console di personalizzazione.
 
-### Cloud Services {#cloud-services}
+### Servizi cloud {#cloud-services}
 
 Per il funzionamento del contenuto di destinazione per le applicazioni mobili sono necessari due servizi: Adobe Target Service e Adobe Mobile Services. Il servizio Adobe Target fornisce il motore per l’elaborazione delle richieste dei clienti e la restituzione del contenuto personalizzato. Il servizio Adobe Mobile Services fornisce la connessione tra Adobe Services e l’app mobile tramite il file ADBMobileConfig.json, utilizzato dal plug-in AMS Cordova. Dalla dashboard di AEM Mobile è possibile configurare l&#39;applicazione aggiungendo i due servizi.
 
@@ -279,7 +279,7 @@ Per facilitare il rendering del contenuto in modo specifico per le applicazioni 
 
 Per ogni mbox un attributo di **cq-targeting** è stato aggiunto per consentire agli sviluppatori di applicazioni di scrivere codice personalizzato da utilizzare e utilizzare in qualsiasi momento. La [App di riferimento ibrida di AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) ha un esempio di direttiva di Angular che utilizza l&#39;attributo cq-targeting. Il concetto di sostituzione dei contenuti quando e come viene fatto dipende in larga misura dallo sviluppatore di applicazioni mobili. È disponibile un SDK mobile fornito tramite AEM /etc/clientlibs/mobileapps/js/mobileapps.js che fornisce un’API per chiamare il servizio di targeting di Adobe. Spetta allo sviluppatore dell’applicazione specificare quando effettuare la chiamata in base alla progettazione della propria applicazione.
 
-## Novità? {#what-s-next}
+## Passaggio successivo? {#what-s-next}
 
 1. [Avvia la mia esperienza con l’app AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gestire il contenuto dell’app](/help/mobile/phonegap-manage-app-content.md)

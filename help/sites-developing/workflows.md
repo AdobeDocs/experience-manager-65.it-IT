@@ -66,7 +66,7 @@ Modifiche al modello di flusso di lavoro che si verifica e/o ai modelli di runti
 >
 >Se il modello di flusso di lavoro viene modificato dopo questo momento (senza **Sincronizzazione** attivando), l&#39;istanza di runtime non rifletterà tali modifiche. Le modifiche verranno applicate solo ai modelli di runtime generati dopo l’aggiornamento. Le eccezioni sono gli script ECMA sottostanti, che vengono conservati solo una volta che le modifiche vengono effettuate.
 
-### Incremento {#step}
+### Passaggio {#step}
 
 Ogni passaggio esegue un task discreto. Esistono diversi tipi di passaggi del flusso di lavoro:
 

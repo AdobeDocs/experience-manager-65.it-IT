@@ -133,7 +133,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 1.1.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 1.1.1 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,11,0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetype | 0.11.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-june}
 
@@ -161,7 +161,7 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 1.0.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 1.0.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,11,0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetype | 0.11.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-may}
 
@@ -183,9 +183,9 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 0,10,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 0,10,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,10,0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Connettore CIF | 0.10.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 0.10.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.10.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-april}
 
@@ -207,9 +207,9 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 0,9,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 0,9,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,9,0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Connettore CIF | 0.9.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 0.9.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.9.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-february}
 
@@ -233,9 +233,9 @@ Questa è la prima versione dei componenti core CIF supportati da Adobe Experien
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 0,8,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 0,8,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,7,0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Connettore CIF | 0.8.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 0.8.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.7.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-january}
 

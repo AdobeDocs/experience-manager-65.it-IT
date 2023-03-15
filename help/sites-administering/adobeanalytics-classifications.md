@@ -98,7 +98,7 @@ Nell&#39;implementazione predefinita SAINTDefaultTransformer, le risorse figlio 
 
 | **Chiave** | **Prodotto** | **Prezzo** | **Dimensione** | **Colore** | **Colore^Codice** |
 |---|---|---|---|---|---|
-| 1 | Nome del prodotto | 120,90 | M | black | 101 |
+| 1 | Nome del prodotto | 120.90 | M | black | 101 |
 
 Le proprietà includono quanto segue:
 

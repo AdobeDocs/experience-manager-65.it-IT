@@ -354,7 +354,7 @@ Per generare il rapporto puoi specificare:
 
    Predefiniti: `50`
 
-* **max Richieste**
+* **max. Richieste**
 
    Numero massimo di richieste da analizzare.
 

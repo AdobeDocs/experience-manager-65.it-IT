@@ -38,7 +38,7 @@ Adobe fornisce documentazione e procedure (con API se disponibili) per l’ammin
 >
 >I dati provenienti da un altro servizio Adobe on-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiederanno azioni su tale servizio.
 >
->Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/privacy.html).
+>Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
 ## Introduzione {#introduction}
 

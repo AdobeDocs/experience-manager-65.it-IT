@@ -564,7 +564,7 @@ Per il servizio Firma sono disponibili le seguenti impostazioni.
 
 **Firme Di Supporto Create Dalle Build PreRelease Dei Prodotti Di Adobe:** Quando questa opzione è selezionata, la firma creata con una versione precedente al rilascio dei prodotti Adobe viene convalidata correttamente. Il valore predefinito è false.
 
-**Opzione di verifica:** Specifica l&#39;ora di verifica del certificato di un firmatario. Il valore predefinito è Secure Time Else Current Time (Tempo residuo protetto).
+**Opzione di verifica:** Specifica l&#39;ora di verifica del certificato di un firmatario. Il valore predefinito è Secure Time Else Current Time (Tempo rimanente protetto).
 
 **Utilizzare le informazioni sulla revoca archiviate nella firma durante la convalida:** Specifica se le informazioni di revoca archiviate con la firma vengono utilizzate per il controllo di revoca. Il valore predefinito è vero.
 

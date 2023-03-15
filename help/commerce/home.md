@@ -9,7 +9,7 @@ ht-degree: 28%
 
 ---
 
-# Contenuto AEM e commercio {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 Scopri come utilizzare e amministrare AEM contenuti e commercio, con i nostri utili articoli sulle integrazioni e come iniziare a utilizzare AEM Storefront.
 
@@ -46,7 +46,7 @@ Scopri come utilizzare e amministrare AEM contenuti e commercio, con i nostri ut
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
 * [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Guida utente ai componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
-* [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it)

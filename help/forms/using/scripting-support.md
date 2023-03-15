@@ -720,7 +720,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td> </td>
   </tr>
   <tr>
-   <td>didascalia</td>
+   <td>caption</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.</td>
    <td> </td>
   </tr>
@@ -948,7 +948,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>didascalia</td>
+   <td>caption</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.<br /> </td>
    <td>Nessuno</td>
   </tr>
@@ -968,7 +968,7 @@ JavaScript, proprietà FormCalc e metodi supportati nei moduli HTML5 sono elenca
    <td> </td>
   </tr>
   <tr>
-   <td>accesso</td>
+   <td>access</td>
    <td>Controlla l’accesso degli utenti al contenuto di un contenitore. oggetto, ad esempio un sottomodulo.</td>
    <td>Per i singoli elementi nell'exclgrp, restituisce sempre open. </td>
   </tr>

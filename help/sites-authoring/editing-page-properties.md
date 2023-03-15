@@ -199,12 +199,11 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
    * **Abilita condivisione da parte degli utenti su Facebook**
    * **Abilita condivisione da parte degli utenti su Pinterest**
-   * **Variante XF preferita**
-Consente di definire la variante del frammento esperienza utilizzato per generare i metadati della pagina.
+   * **Variante XF preferita** definisce la variante del frammento esperienza utilizzato per generare i metadati della pagina.
 
-### Cloud Services {#cloud-services}
+### Servizi cloud {#cloud-services}
 
-* **Cloud Services**
+* **Servizi cloud**
 
    Consente di definire le proprietà per i [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 

@@ -73,13 +73,13 @@ Nelle tabelle seguenti sono elencate tutte le voci insieme a:
   </tr>
   <tr>
    <td><p>anonimo</p> <p> </p> </td>
-   <td>Utente</td>
+   <td>User</td>
    <td><p>Contiene i diritti predefiniti per l’accesso non autenticato a un’istanza. Per impostazione predefinita, questa contiene i diritti di accesso minimi.</p> <p>Se elimini accidentalmente questo account, verrà ricreato all'avvio. Non può essere eliminato in modo permanente, ma può essere disattivato.</p> </td>
    <td>Evita di eliminare o disabilitare questo account, in quanto influirà negativamente sul funzionamento delle istanze di authoring. Se sono presenti requisiti di sicurezza che ti impongono di eliminarli, assicurati di testare correttamente gli effetti che ha sul tuo sistema prima.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Password predefinita: autore</p> </td>
-   <td>Utente</td>
+   <td>User</td>
    <td><p>Un account autore autorizzato a scrivere su /content. Comprende i privilegi di collaboratore e surfista.</p> <p>Può essere utilizzato come webmaster in quanto ha accesso all’intera struttura /content.</p> <p>Questo non è un utente incorporato, ma un altro utente demo geometrixx</p> </td>
    <td><p>L’Adobe consiglia di eliminare completamente l’account o di modificare la password rispetto a quella predefinita.</p> <p>Preferibilmente dopo l'installazione, anche se può essere fatto dopo.</p> </td>
   </tr>
@@ -181,7 +181,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina nella
     </ul> <p>Se <strong>modificare</strong> Le sottostrutture sotto jcr:content sono state negate perché la creazione di jcr:content e dei relativi nodi figlio sono considerate una modifica della pagina. Questo vale solo per i nodi che definiscono un nodo figlio jcr:content.</p> </td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td><p>L’utente può:</p>
     <ul>
      <li>eliminare i paragrafi esistenti dalla pagina o da una pagina figlia.</li>

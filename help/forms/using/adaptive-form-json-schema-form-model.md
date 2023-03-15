@@ -90,7 +90,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
   </tr>
   <tr>
    <td>proprietà booleana<br /> </td>
-   <td>Scambia<br /> </td>
+   <td>Interruttore<br /> </td>
   </tr>
   <tr>
    <td>proprietà oggetto<br /> </td>
@@ -447,7 +447,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli 
    <td> </td>
   </tr>
   <tr>
-   <td>Scambia</td>
+   <td>Interruttore</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -491,7 +491,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare le espressioni o gli 
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Scelta immagine</td>
+   <td>Scelta dell'immagine</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>

@@ -79,7 +79,7 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
  </tbody>
 </table>
 
-## Community {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) semplifica la creazione e la gestione delle comunità locali.
 

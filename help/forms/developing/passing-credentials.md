@@ -32,7 +32,7 @@ Questo documento tratta i seguenti argomenti:
 * Richiamo del servizio di crittografia tramite un&#39;intestazione WS-Security
 
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Per sfruttare al meglio questo documento, è necessario avere una solida conoscenza del software AEM Forms on JEE.
 

@@ -41,7 +41,7 @@ Per i membri con accesso, il dispatcher bypassa la cache, inoltrando le richiest
 
 Quando è configurato per supportare il caching del dispatcher, all’intestazione viene aggiunta una scadenza &quot;età massima&quot; basata su TTL per garantire che le pagine memorizzate nella cache del dispatcher siano correnti.
 
-### Requisiti  {#requirements}
+### Requisiti {#requirements}
 
 * Dispatcher versione 4.1.2 o successiva (vedi [Installazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) per la versione più recente)
 * [Pacchetto ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
@@ -86,7 +86,7 @@ Gli esempi seguenti utilizzano nomi di proprietà che probabilmente dovranno ess
 
 Consulta anche:
 
-* [Elenco di controllo della sicurezza del dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Elenco di controllo della sicurezza del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it#getting-started)
 
 >[!NOTE]
 >

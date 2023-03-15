@@ -141,7 +141,7 @@ Per maggiori dettagli consultare:
 
    * Fornisce un&#39;interfaccia utente coerente in tutte le soluzioni cloud
    * [Concetti dell’interfaccia AEM touch - Interfaccia Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interfaccia Granite
 
@@ -269,7 +269,7 @@ Per inserire una logica nel campo, devi:
 1. Fai in modo che il tuo campo sia contrassegnato con una determinata classe CSS (l&#39; *gancio*).
 1. Definisci, nella libreria client, un listener JS collegato al nome della classe CSS (in questo modo la logica personalizzata viene delimitata solo nel campo e non influisce su altri campi dello stesso tipo).
 
-Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
+Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
 
 Ad esempio, consulta:
 

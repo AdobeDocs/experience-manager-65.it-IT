@@ -61,7 +61,7 @@ Elenco delle funzionalità per l’amministrazione dei siti nell’interfaccia c
 | Annullare la pubblicazione di pagine | Completa |  |
 | Annullare la pubblicazione di pagine senza diritti di replica | Completa |  |
 | Annulla pubblicazione più tardi | Completa |  |
-| Elimina | Completa |  |
+| Eliminare | Completa |  |
 | Blocca/Sblocca | Completa |  |
 | Visualizza/Modifica proprietà | Completa |  |
 | Impostare le autorizzazioni sulle pagine | Completa |  |
@@ -118,7 +118,7 @@ Elenco delle funzionalità dell’interfaccia classica Editor pagina (`/cf#`) e 
 | Elenco dei componenti | Completa |  |
 | Copiare e incollare i componenti | Completa |  |
 | Elenco dei componenti negli Appunti | Mancante |  |
-| Annulla/Ripristina | Completa |  |
+| Annulla/Ripeti | Completa |  |
 | Trascina il contenuto nel segnaposto del componente | Completa |  |
 | Trascina i contenuti direttamente nel segnaposto parsys con la creazione automatica dei componenti | Completa |  |
 

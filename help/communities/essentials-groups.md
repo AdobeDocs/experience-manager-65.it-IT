@@ -65,7 +65,7 @@ A livello di Comunità [feature pack 1](deploy-communities.md#latestfeaturepack)
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>modelli</strong></td>
+   <td> <strong>templates</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>

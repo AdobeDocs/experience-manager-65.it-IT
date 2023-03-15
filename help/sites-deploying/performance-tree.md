@@ -56,7 +56,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
 <table>
  <tbody>
   <tr>
-   <td><strong>Incremento</strong></td>
+   <td><strong>Passaggio</strong></td>
    <td><strong>Titolo</strong></td>
    <td><strong>Riferimenti</strong></td>
   </tr>
@@ -259,7 +259,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr>
    <td><strong>Passaggio 35</strong></td>
    <td>Configurare il dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del Dispatcher</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 36</strong></td>

@@ -5,7 +5,7 @@ exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
@@ -15,11 +15,11 @@ Scopri come connettere AEM a un servizio di traduzione.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione senza testa AEM, [Guida introduttiva alla traduzione senza testa AEM](learn-about.md) hai imparato a organizzare i contenuti headless e come funzionano gli strumenti di traduzione AEM e dovresti ora:
+Nel documento precedente del percorso di traduzione di AEM headless, [Guida introduttiva alla traduzione in AEM headless](learn-about.md), hai imparato a organizzare i contenuti headless e il modo in cui gli strumenti di traduzione di AEM funzionano. Ora dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM memorizza i contenuti headless.
-* Conoscere gli strumenti di traduzione di AEM.
+* Avere compreso come AEM archivia il contenuto headless.
+* conoscere gli strumenti di traduzione di AEM.
 
 Questo articolo si basa su queste nozioni di base per permetterti di compiere il primo passaggio di configurazione e impostare un servizio di traduzione, che utilizzerai successivamente nel percorso per tradurre i contenuti.
 
@@ -66,7 +66,7 @@ Dopo aver installato il pacchetto del connettore per il servizio di traduzione p
 
 * Quale fornitore di servizi di traduzione utilizzare
 * Se deve essere eseguita la traduzione umana o automatica
-* Se tradurre altri contenuti associati al frammento di contenuto, ad esempio i tag
+* Se tradurre altri contenuti associati ai Frammenti di contenuto, come i tag
 
 Per creare una nuova configurazione di traduzione:
 
@@ -78,14 +78,14 @@ Per creare una nuova configurazione di traduzione:
 
 1. Fornisci le seguenti informazioni nei campi, quindi tocca o fai clic su **Crea**.
    1. Seleziona **Tipo di configurazione** nel menu a discesa. Seleziona **Integrazione della traduzione** dall’elenco.
-   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Cloud Services** così come nell’elenco a discesa delle proprietà della pagina.
+   1. Inserisci un **Titolo** per la configurazione. Il **Titolo** identifica la configurazione nella console **Servizi cloud** così come nell’elenco a discesa delle proprietà della pagina.
    1. Facoltativamente, digita un **Nome** da utilizzare per il nodo dell’archivio che memorizza la configurazione.
 
    ![Creare una configurazione di traduzione](assets/create-translation-configuration.png)
 
 1. Tocca o fai clic su **Crea**, viene visualizzata la finestra **Modifica configurazione** in cui è possibile configurare le proprietà di configurazione.
 
-1. I frammenti di contenuto sono memorizzati come risorse in AEM. Tocca o fai clic sul pulsante **Risorse** scheda .
+1. I frammenti di contenuto sono memorizzati come risorse in AEM. Tocca o fai clic sulla scheda **Risorse**.
 
 ![Proprietà di configurazione della traduzione](assets/translation-configuration.png)
 
@@ -94,10 +94,10 @@ Per creare una nuova configurazione di traduzione:
    1. **Metodo di traduzione** - Seleziona **Traduzione automatica** o **Traduzione manuale** a seconda del provider di traduzione. Ai fini di questo percorso, si assume la traduzione automatica.
    1. **Fornitori di traduzioni** - Seleziona dall’elenco il connettore installato per il servizio di traduzione.
    1. **Categoria contenuto** - Seleziona la categoria più appropriata per eseguire meglio il targeting della traduzione (solo per la traduzione automatica).
-   1. **Tradurre le risorse dei frammenti di contenuto** : seleziona questa opzione per tradurre le risorse associate ai frammenti di contenuto.
-   1. **Tradurre le risorse** - Controlla questo per tradurre le risorse.
-   1. **Traduci metadati** - Controlla questo per tradurre i metadati delle risorse.
-   1. **Traduci tag** - Seleziona questa opzione per tradurre i tag associati alla risorsa.
+   1. **Traduci le risorse dei Frammenti di contenuto**: seleziona questa opzione per tradurre le risorse associate ai Frammenti di contenuto.
+   1. **Traduci risorse**: seleziona questa opzione per tradurre le risorse.
+   1. **Traduci metadati**: seleziona questa opzione per tradurre i metadati delle risorse.
+   1. **Traduci tag**: seleziona questa opzione per tradurre i tag associati alle risorse.
    1. **Esegui automaticamente la traduzione** - Seleziona questa proprietà se vuoi che le traduzioni vengano inviate automaticamente al tuo servizio di traduzione.
 
 1. Tocca o fai clic su **Salva e chiudi**.
@@ -123,9 +123,9 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 
 ![Seleziona le configurazioni del servizio cloud](assets/select-cloud-service-configurations.png)
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
-Ora che hai completato questa parte del percorso di traduzione headless dovresti:
+Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
@@ -134,7 +134,7 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Configurare le regole di traduzione](translation-rules.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non è necessario che continuino sul percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Configurare le regole di traduzione](translation-rules.md), le seguenti risorse sono aggiuntive e opzionali e approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md) - Rivedi un elenco di connettori di traduzione selezionati e scopri come configurare il framework di integrazione della traduzione per l’integrazione con i servizi di traduzione di terze parti.
 * [Connessione a Microsoft Translator](/help/sites-administering/tc-msconf.md) - AEM fornisce un account di traduzione Microsoft di prova a scopo di test.

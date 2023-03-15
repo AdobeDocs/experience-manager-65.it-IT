@@ -116,7 +116,7 @@ Dopo aver creato un progetto, devi creare ruoli e concedere l’accesso agli ute
 
 Nello sviluppo dell’app AEM Mobile esistono tre ruoli diversi:
 
-* Administrator
+* Amministratore
 * Sviluppatore
 * Autore
 

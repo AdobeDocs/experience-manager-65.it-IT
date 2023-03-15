@@ -46,7 +46,7 @@ Segui questi passaggi per configurare l’eliminazione del registro di controllo
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
-1. Quindi, configura la pianificazione della rimozione in base alle tue esigenze. Le opzioni disponibili sono:
+1. Quindi, configura la pianificazione della rimozione in base alle tue esigenze. Opzioni disponibili:
 
    * **Nome regola:** il nome della regola della politica di audit;
    * **Percorso contenuto:** il percorso del contenuto a cui si applicherà la regola;

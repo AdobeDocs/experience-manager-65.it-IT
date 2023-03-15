@@ -44,7 +44,7 @@ Quickstart utilizza Eclipse Jetty 9.4.15 come motore servlet.
 
 * Nuovo supporto per Java™ 11 e Java™ 8 già supportato.
 * Per prestazioni ottimali, sovrascrivi i valori GC predefiniti con altri valori. Per ulteriori informazioni, consulta la sezione [installare e aggiornare](/help/sites-deploying/custom-standalone-install.md) sezione .
-* Gli aggiornamenti di manutenzione per Java™ 11 e Java™ 8 sono distribuiti per Adobe per l&#39;utilizzo da parte del cliente nei progetti relativi alla AEM, quando non sono disponibili al pubblico dall&#39;Oracle.
+* Gli aggiornamenti di manutenzione per Java™ 11 e Java™ 8 sono distribuiti per Adobe per l&#39;utilizzo da parte del cliente nei progetti relativi alla AEM, quando non sono disponibili pubblicamente dall&#39;Oracle.
 
 #### Sviluppo Java™ {#java-development}
 
@@ -473,7 +473,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.5 sono stati risolti oltr
 
 * AEM Modernizza la suite di strumenti, ad esempio lo strumento di conversione finestra di dialogo. ([Progetto GitHub](https://github.com/adobe/aem-modernize-tools))
 
-**Assets**
+**Risorse**
 
 * Pacchetto per aggiungere PDF Rasterizer migliorato ([ulteriori informazioni](/help/assets/aem-pdf-rasterizer.md))
 * Pacchetto per aggiungere il supporto esteso per le immagini RAW ([ulteriori informazioni](/help/assets/camera-raw.md))
@@ -557,7 +557,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * **Utilizzo delle versioni di una pagina**: [Se una pagina è stata spostata, non è più possibile eseguire un’anteprima su nessuna versione effettuata prima dello spostamento](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
-### Assets {#assets}
+### Risorse {#assets}
 
 * **Ricerca:** La ricerca non restituisce alcun risultato se la stringa di ricerca contiene spazi iniziali ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Schema metadati cartelle**: dopo aver aggiunto un pulsante di selezione, i campi ID e Valore non vengono visualizzati come previsto e l’opzione Elimina non funziona correttamente. (CQ-4261144)

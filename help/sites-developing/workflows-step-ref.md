@@ -134,7 +134,7 @@ Per configurare il passaggio , modifica e utilizza le seguenti schede:
 * **Processo**
 
    * **Passaggio di Target**: Selezionare il passaggio da eseguire dopo aver valutato la condizione per l&#39;espressione di indirizzamento.
-   * **Espressione di routing**: Selezionare Definizione regola, Script esterno o uno script ECMA che determina se eseguire o meno la **Passaggio di Target**.
+   * **Espressione di routing**: Selezionare Definizione regola, Script esterno o script ECMA che determina se eseguire o meno la **Passaggio di Target**.
 
       * **Definizione regola:** Utilizza la [editor di espressioni](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) per definire la regola.
       * **Script esterno:** Percorso dello script esterno.

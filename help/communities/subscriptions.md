@@ -32,7 +32,7 @@ Ciò che distingue gli abbonamenti dalle notifiche è:
 * L&#39;unica azione che i membri devono intraprendere è quella di selezionare `Email Subscriptions` quando segue.
 * Quando la risposta e-mail è configurata, i membri possono pubblicare efficacemente il contenuto semplicemente rispondendo all&#39;e-mail ricevuta.
 
-### Requisiti  {#requirements}
+### Requisiti {#requirements}
 
 **Configura e-mail**
 

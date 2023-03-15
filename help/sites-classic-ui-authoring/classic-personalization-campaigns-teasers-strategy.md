@@ -140,7 +140,7 @@ calcolati prima di applicare la strategia appropriata:
    <td>C1</td>
    <td>T1</td>
    <td>S1, S2</td>
-   <td>Business, marketing</td>
+   <td>Business, Marketing</td>
    <td>Sì</td>
    <td>0</td>
    <td>9</td>

@@ -28,7 +28,7 @@ Se le raccolte Oak e SRP vengono utilizzate intensamente, è possibile installar
 
 Per ambienti di produzione, [Modalità SolrCloud](#solrcloud-mode) offre prestazioni migliori rispetto alla modalità autonoma (una singola configurazione Solr locale).
 
-### Requisiti  {#requirements}
+### Requisiti {#requirements}
 
 Scarica e installa Apache Solr:
 

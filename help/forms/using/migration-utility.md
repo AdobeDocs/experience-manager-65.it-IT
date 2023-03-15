@@ -45,7 +45,7 @@ Quindi devi aggiornare le risorse e i documenti per [esecuzione dell&#39;utility
 
 **In caso di installazione fuori luogo**
 
-Se si tratta di un&#39;installazione obsoleta (nuova), prima di poter utilizzare le risorse e i documenti, sarà necessario installare [Pacchetto di compatibilità AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (include il pacchetto di compatibilità per la gestione della corrispondenza).
+Se si tratta di un&#39;installazione obsoleta (nuova), prima di poter utilizzare le risorse e i documenti, sarà necessario installare [Pacchetto di compatibilità AEMFD](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) (include il pacchetto di compatibilità per la gestione della corrispondenza).
 
 Quindi devi importare il pacchetto risorse (zip o cmp) nella nuova configurazione e quindi aggiornare le risorse e i documenti per [esecuzione dell&#39;utility Migration](#runningmigrationutility). Adobe consiglia di creare nuove risorse nella nuova configurazione solo dopo aver eseguito l&#39;utilità di migrazione.
 

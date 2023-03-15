@@ -64,7 +64,7 @@ Pubblicazione anonima di una revisione non supportata. Per aggiungere una revisi
 |---|---|
 | [**comprensivo**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design *mode |
 | [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **modelli** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **proprietà** | Vedi [Utilizzo delle revisioni](reviews.md) |
 

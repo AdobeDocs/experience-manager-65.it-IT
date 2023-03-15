@@ -24,7 +24,7 @@ In questa pagina sono elencate le risorse di supporto autonomo relative a AEM CI
 
 ## Articoli principali su CIF Classic {#key-articles}
 
-* [Concetti ](administering/concepts.md)
+* [Concetti](administering/concepts.md)
 * [Amministrazione](administering/generic.md)
 * [Distribuzione](deploying/ecommerce.md)
 * [Sviluppo](developing/ecommerce.md)

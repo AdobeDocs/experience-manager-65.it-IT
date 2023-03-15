@@ -52,7 +52,7 @@ ht-degree: 70%
       + [Commerce Cloud SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Amministrazione {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
-      + [Concetti ](/help/commerce/cif-classic/administering/concepts.md)
+      + [Concetti](/help/commerce/cif-classic/administering/concepts.md)
       + [Amministrazione di eCommerce generici](/help/commerce/cif-classic/administering/generic.md)
       + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Sviluppo {#developing}

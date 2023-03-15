@@ -1,5 +1,5 @@
 ---
-title: Ottimizzazione delle prestazioni [!DNL Assets].
+title: Miglioramento delle prestazioni [!DNL Assets].
 description: Suggerimenti e indicazioni [!DNL Experience Manager] configurazione, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1

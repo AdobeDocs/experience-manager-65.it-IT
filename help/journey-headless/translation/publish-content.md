@@ -5,7 +5,7 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -15,17 +15,17 @@ Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggi
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione senza testa AEM, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare AEM progetti di traduzione per tradurre i contenuti headless. Ora dovresti:
+Nel documento precedente del percorso di traduzione di AEM headless, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare i progetti di traduzione in AEM per tradurre i contenuti headless. Ora dovresti:
 
 * Sapere cos’è un progetto di traduzione.
 * Essere in grado di creare nuovi progetti di traduzione.
-* Utilizza i progetti di traduzione per tradurre i tuoi contenuti headless.
+* Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Una volta completata la traduzione iniziale, questo articolo illustra il passaggio successivo per la pubblicazione di tale contenuto e le operazioni da eseguire per aggiornare le traduzioni quando il contenuto sottostante nella directory principale della lingua cambia.
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come pubblicare contenuti headless in AEM e come creare un flusso di lavoro continuo per mantenere le traduzioni aggiornate. Dopo aver letto questo documento, dovresti:
+Questo documento è utile per comprendere come pubblicare contenuti headless in AEM e come creare un flusso di lavoro continuo per mantenere le traduzioni aggiornate. Dopo aver letto questo documento, dovresti:
 
 * Comprendere il modello di pubblicazione dell’autore di AEM.
 * Sapere come pubblicare i contenuti tradotti.
@@ -47,7 +47,7 @@ Per essere disponibile per il consumo, dopo essere stato creato sull’istanza d
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 
-Quando sei soddisfatto dello stato dei contenuti tradotti, devi pubblicarli in modo che i servizi headless possano utilizzarli. Questa attività di solito non è responsabilità dello specialista della traduzione, ma è documentata qui per illustrare il flusso di lavoro completo.
+Quando si è soddisfatti dello stato dei contenuti tradotti, si devono pubblicare in modo che i servizi headless possano utilizzarli. Questa attività di solito non è responsabilità dello specialista della traduzione, ma è documentata qui per illustrare il flusso di lavoro completo.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Quando sei soddisfatto dello stato dei contenuti tradotti, devi pubblicarli in m
 >
 >Le seguenti fasi sono fornite per completezza.
 
-Il modo più semplice per pubblicare le traduzioni è passare alla cartella delle risorse del progetto.
+Il modo più semplice per pubblicare le traduzioni è passare alla cartella risorse del progetto.
 
 ```text
 /content/dam/<your-project>/
@@ -63,7 +63,7 @@ Il modo più semplice per pubblicare le traduzioni è passare alla cartella dell
 
 In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e puoi scegliere quale pubblicare.
 
-1. Vai a **Navigazione** -> **Risorse** -> **File** e apri la cartella del progetto.
+1. Vai su **Navigazione** -> **Risorse** -> **File** e apri la cartella del progetto.
 1. Qui puoi vedere la cartella principale della lingua e tutte le altre cartelle della lingua. Seleziona la lingua o le lingue localizzate da pubblicare.
    ![Seleziona cartella della lingua](assets/select-language-folder.png)
 1. Tocca o fai clic su **Gestisci pubblicazione**.
@@ -74,7 +74,7 @@ In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e p
 1. AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
    ![Banner risorse pubblicate](assets/resources-published-message.png)
 
-Il tuo contenuto tradotto headless è ora pubblicato! È ora possibile accedervi e utilizzarli dai servizi headless.
+Il contenuto headless tradotto è ora pubblicato. È ora possibile accedervi e utilizzarli dai servizi headless.
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 
 ### Aggiornamento di un progetto di traduzione creato automaticamente {#updating-automatic-project}
 
-1. Passa a **Navigazione** -> **Risorse** -> **File**. Il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
+1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso abbiamo selezionato `/content/dam/wknd/en`.
 1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
 1. Tocca o fai clic su **Copie in lingua**.
@@ -100,7 +100,7 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Aggiungi a un progetto di traduzione esistente**.
 1. Nel menu a discesa **Progetto di traduzione esistente**, seleziona il progetto creato per la traduzione iniziale.
-1. Tocca o fai clic su **Inizio**.
+1. Tocca o fai clic su **Inizia**.
 
 ![Aggiungi elementi al progetto di traduzione esistente](assets/add-to-existing-project.png)
 
@@ -118,7 +118,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-È possibile notare che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
+Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
 
 Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come hai fatto con l’originale.](translate-content.md#using-translation-project)
 
@@ -154,14 +154,14 @@ Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come h
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni! Hai completato il percorso di traduzione headless! Ora dovresti:
+Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti:
 
-* Panoramica della distribuzione headless dei contenuti.
-* Avere una comprensione di base AEM funzionalità headless.
-* Comprendere AEM funzioni di traduzione e come si relazionano al contenuto headless.
-* Avere la possibilità di iniziare a tradurre i propri contenuti headless.
+* Avrai una panoramica della distribuzione headless dei contenuti.
+* avere una comprensione di base delle funzionalità headless di AEM.
+* Comprenderai le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
+* Avrai la possibilità di iniziare a tradurre i tuoi contenuti headless.
 
-Ora sei pronto a tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+essere in grado di tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

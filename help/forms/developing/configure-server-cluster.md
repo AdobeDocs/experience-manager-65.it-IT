@@ -181,7 +181,7 @@ Una possibile modalità di errore per il cluster è se la condivisione file remo
 
 **Cosa succede se una condivisione NFS non viene caricata?**
 
-Su UNIX, il modo in cui i montaggi NFS sono mappati alla struttura della directory può consentire la disponibilità di una directory GDS apparentemente utilizzabile, anche se il montaggio non riesce. Considera:
+Su UNIX, il modo in cui i montaggi NFS sono mappati alla struttura della directory può consentire la disponibilità di una directory GDS apparentemente utilizzabile, anche se il montaggio non riesce. Ritieni che:
 
 * Server NAS: Cartella condivisa NFS /u01/iapply/livecycle_gds
 * Nodo 1: un punto di montaggio della cartella condivisa (ospitata sul server DB) che si trova qui: /u01/iapply/livecycle_gds

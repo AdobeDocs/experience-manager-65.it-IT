@@ -255,7 +255,7 @@ Nella tabella seguente sono descritte le autorizzazioni necessarie per la modifi
 <table>
  <tbody>
   <tr>
-   <th>Percorso </th>
+   <th>Percorso</th>
    <th>Ruolo/Gruppo</th>
    <th>Autorizzazioni<br /> </th>
    <th>Descrizione</th>
@@ -315,7 +315,7 @@ I modelli non devono più essere memorizzati in `/conf/global`tuttavia, per alcu
 <table>
  <tbody>
   <tr>
-   <th>Percorso </th>
+   <th>Percorso</th>
    <th>Ruolo/Gruppo</th>
    <th>Autorizzazioni<br /> </th>
    <th>Descrizione</th>

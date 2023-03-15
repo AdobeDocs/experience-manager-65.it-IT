@@ -60,7 +60,7 @@ Di seguito sono illustrate le opzioni di distribuzione disponibili per AEM (scor
    <td><p>Destinazione</p> </td>
   </tr>
   <tr>
-   <td><p>Assets</p> </td>
+   <td><p>Risorse</p> </td>
    <td><p>Publish-HA</p> </td>
    <td><p>Solaris</p> </td>
    <td><p>WebLogic</p> </td>
@@ -242,7 +242,7 @@ Di seguito sono illustrate le opzioni di distribuzione disponibili per AEM (scor
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>App desktop </p> </td>
+   <td><p>App desktop</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -497,10 +497,10 @@ Le prove di riferimento sono state eseguite sulle seguenti specifiche:
 | Server | Hardware a metallo nudo (HP) |
 | Sistema operativo | RedHat Linux |
 | CPU/core | CPU Intel(R) Xeon(R) E5-2407 @2,40 GHz, 8 core |
-| RAM | 32 GB |
+| RAM | 32GB |
 | Disco | Magnetico |
 | Java | Oracle JRE versione 8 |
-| Heap JVM | 16 GB |
+| Heap JVM | 16GB |
 | Prodotto | AEM 6.2 |
 | Nodestore | TarMK |
 | Datastore | File DS |
@@ -584,7 +584,7 @@ Per ottenere prestazioni ottimali, segui le linee guida sulle impostazioni illus
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30</p> <p>(3)</p> <p>4</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
    <td><p>La dimensione predefinita della cache è impostata su 256 MB.</p> <p>Ha un impatto sul tempo necessario per eseguire l’annullamento della validità della cache.</p> </td>
   </tr>
   <tr>
@@ -607,10 +607,10 @@ Le prove di riferimento sono state eseguite sulle seguenti specifiche:
 | Server | Hardware a metallo nudo (HP) | Hardware a metallo nudo (HP) |
 | Sistema operativo | RedHat Linux | RedHat Linux |
 | CPU/core | CPU Intel(R) Xeon(R) E5-2407 @2,40 GHz, 8 core | CPU Intel(R) Xeon(R) E5-2407 @2,40 GHz, 8 core |
-| RAM | 32 GB | 32 GB |
+| RAM | 32GB | 32GB |
 | Disco | Magnetico - >1k IOPS | Magnetico - >1k IOPS |
 | Java | Oracle JRE versione 8 | N/D |
-| Heap JVM | 16 GB | N/D |
+| Heap JVM | 16GB | N/D |
 | Prodotto | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | N/D |
 | Datastore | File DS | N/D |
@@ -686,8 +686,8 @@ Per maggiori dettagli su TarMK vs MongoMK, vedi [Implementazioni consigliate](/h
   </tr>
   <tr>
    <td>RAM</td>
-   <td>32 GB</td>
-   <td>32 GB</td>
+   <td>32GB</td>
+   <td>32GB</td>
    <td> </td>
   </tr>
   <tr>
@@ -704,7 +704,7 @@ Per maggiori dettagli su TarMK vs MongoMK, vedi [Implementazioni consigliate](/h
   </tr>
   <tr>
    <td>Heap JVM da 16 GB</td>
-   <td>16 GB</td>
+   <td>16GB</td>
    <td>N/D</td>
    <td> </td>
   </tr>
@@ -773,9 +773,9 @@ Per maggiori dettagli su TarMK vs MongoMK, vedi [Implementazioni consigliate](/h
   </tr>
   <tr>
    <td>RAM</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
   </tr>
   <tr>
    <td>Disco</td>
@@ -791,8 +791,8 @@ Per maggiori dettagli su TarMK vs MongoMK, vedi [Implementazioni consigliate](/h
   </tr>
   <tr>
    <td>Heap JVM da 16 GB</td>
-   <td>30 GB</td>
-   <td>30 GB</td>
+   <td>30GB</td>
+   <td>30GB</td>
    <td>N/D</td>
   </tr>
   <tr>

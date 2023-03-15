@@ -50,7 +50,7 @@ Esempio:
 
 La grafica vettoriale scalabile (SVG) è supportata dall’Editor immagini.
 
-* Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
+* L’inserimento tramite trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 
 ## Abilitazione dei plug-in per tipo MIME {#enabling-plugins-by-mime-type}
 

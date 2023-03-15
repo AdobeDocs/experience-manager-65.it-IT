@@ -282,7 +282,7 @@ Per uscire dalla modalità di selezione in blocco, seleziona l’icona Annulla (
 Le azioni di moderazione che possono essere eseguite su più post sono:
 
 * Rifiuta
-* Elimina
+* Eliminare
 * Chiudi/riapri i post
 
 Le icone che consentono di eseguire queste operazioni vengono visualizzate sulla barra degli strumenti solo se sono selezionati più post.
@@ -298,7 +298,7 @@ In modalità di selezione singola è possibile:
 * [Risposta](#reply)
 * [Consenti](#allow)
 * [Rifiuta](#deny)
-* [Elimina](#delete)
+* [Eliminare](#delete)
 * [Chiudi](#close)
 * Visualizza [Cronologia moderazione](#moderation-history)
 * [Visualizza dettagli](#viewdetails)
@@ -336,7 +336,7 @@ Il contenuto moderato inizialmente entra in uno stato In sospeso e può essere s
 
 Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in sospeso. I contenuti contrassegnati come approvati o negati possono essere modificati in uno stato diverso in qualsiasi momento.
 
-#### Elimina {#delete}
+#### Eliminare {#delete}
 
 ![delete](assets/delete.png)
 

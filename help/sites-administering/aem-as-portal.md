@@ -333,7 +333,7 @@ Per abilitare SSO in AEM WCM, accedi alla voce di configurazione pertinente nell
 1. Accedi alla console tramite il suo URI all’indirizzo https://&lt;aem-host>:&lt;port>/system/console.
 1. Nel menu Configurazione, selezionare Handler autenticazione SSO. In questo esempio, il gestore SSO accetta richieste SSO per tutti i percorsi in base al cookie fornito dal portlet AEM. La configurazione può variare.
 
-   | Percorso  | / | Abilita il gestore SSO per tutte le richieste |
+   | Percorso | / | Abilita il gestore SSO per tutte le richieste |
    |---|---|---|
    | Nomi dei cookie | cqpsso | Nome del cookie fornito dal portlet configurato nella console OSGi del portlet. |
 

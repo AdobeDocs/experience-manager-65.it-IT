@@ -164,7 +164,7 @@ Per modificare una stringa in un dizionario, attenersi alla procedura descritta 
 Per rimuovere una stringa da un dizionario, attenersi alla procedura descritta di seguito.
 
 1. Nel menu a discesa Dizionari selezionare il dizionario da cui si sta rimuovendo una stringa.
-1. Fate clic su Rimuovi.
+1. Fai clic su Rimuovi.
 
    ![chlimage_1-213](assets/chlimage_1-213.png)
 

@@ -18,7 +18,7 @@ ht-degree: 44%
 
 # Configurazione di Commerce Multi-Store {#multi-store}
 
-I componenti core CIF AEM possono essere utilizzati su più strutture AEM sito e l’implementazione client GraphQL sottostante può connettersi a diversi store/viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
+I componenti core CIF AEM possono essere utilizzati su più strutture AEM sito e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 
 Una procedura dettagliata video che illustra le opzioni di integrazione di più visualizzazioni archivio Adobe Commerce con Adobe Experience Manager Sites.
 

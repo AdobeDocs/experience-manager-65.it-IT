@@ -129,7 +129,7 @@ Anche il modo in cui è strutturato un archivio di contenuti può influire sulle
 
 I tuoi migliori amici durante un normale esercizio di ottimizzazione delle prestazioni sono:
 
-* Le azioni   `request.log`
+* Le azioni `request.log`
 * Temporizzazione basata su componenti
 * Ultimo, ma non meno importante, profilatore java.
 
@@ -615,7 +615,7 @@ Si consiglia di limitare la personalizzazione a dove necessario. Ecco il perché
 Se personalizza ogni pagina (ad esempio inserendo il nome dell’utente nella barra del titolo), può avere un impatto sulle prestazioni.
 
 >[!TIP]
->Per la memorizzazione in cache del contenuto protetto, vedere [Memorizzazione in cache di contenuti protetti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) nella guida di Dispatcher.
+>Per la memorizzazione in cache del contenuto protetto, vedere [Memorizzazione in cache di contenuti protetti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it) nella guida di Dispatcher.
 
 Per quanto riguarda il mixaggio di contenuti pubblici e limitati su una pagina, è consigliabile prendere in considerazione una strategia che sfrutti gli include lato server in Dispatcher, o include lato client tramite Ajax nel browser.
 
@@ -675,7 +675,7 @@ La tabella seguente illustra le dimensioni dei volumi di dati utilizzati nei ben
 
 | Contenuto | Nodi | Pagine | Immagini | Tag |
 |---|---|---|---|---|
-| Installazione di base | 69.610 | 562 | 256 | 237 |
+| Installazione di base | 69 610 | 562 | 256 | 237 |
 | Contenuti di piccole dimensioni per backup incrementale |  | +100 | +2 | +2 |
 | Contenuti di grandi dimensioni per backup completo |  | +10 000 | +100 | +100 |
 

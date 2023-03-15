@@ -345,7 +345,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Implementazione di robots.txt per proteggere gli ambienti di sviluppo {#implementing-robots-txt-to-protect-development-environments}
 
-I motori di ricerca *devono* verificare la presenza di un file `robots.txt` nella directory principale del sito prima di eseguire la ricerca per indicizzazione del sito. È importante sottolineare la parola “devono” perché mentre i principali motori di ricerca come Google, Yahoo o Bing rispettano tutti questo requisito, alcuni motori di ricerca stranieri lo ignorano.
+I motori di ricerca *devono* verificare la presenza di un file `robots.txt` nella directory principale del sito prima di eseguire la ricerca per l’indicizzazione del sito. È importante sottolineare la parola “devono” perché mentre i principali motori di ricerca come Google, Yahoo o Bing rispettano tutti questo requisito, alcuni motori di ricerca stranieri lo ignorano.
 
 Il modo più semplice per bloccare l’accesso all’intero sito consiste nell’inserire nella directory principale del sito un file denominato `robots.txt` con il seguente contenuto:
 

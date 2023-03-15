@@ -49,7 +49,7 @@ Nell’ambiente di authoring, per accedere alla console Membri per la gestione d
 >
 >Non sarà possibile utilizzare la console Membri se la [servizio tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
 
-![membro-console1](assets/member-console1.png)
+![member-console1](assets/member-console1.png)
 
 ### Ricerca {#search-features}
 
@@ -58,7 +58,7 @@ Seleziona l’icona del pannello laterale sul lato sinistro del `Members` per ap
 ![](assets/leftpanel-icon.png)
 
 
-![membro-console2](assets/member-console2.png)
+![member-console2](assets/member-console2.png)
 
 Seleziona l’icona di ricerca sul lato sinistro del `Members` intestazione per chiudere il pannello laterale di ricerca.
 
@@ -78,7 +78,7 @@ Le intestazioni di colonna sono
 
 Seleziona `Create Member` per creare un utente nell’ambiente di pubblicazione.
 
-![create-membro1](assets/create-member1.png)
+![create-member1](assets/create-member1.png)
 
 ### GENERALE - Dettagli dei membri {#general-member-details}
 
@@ -152,7 +152,7 @@ La `BADGES` Il pannello consente di assegnare manualmente i badge e di revocarli
 
 Vedi anche [Punteggio e badge](implementing-scoring.md).
 
-![create-membro2](assets/create-member2.png)
+![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Aggiungi badge]**
    * Inizia a digitare per selezionare [badge disponibili](badges.md). Dopo aver selezionato un badge, scegli ogni sito o tutti i siti in cui deve essere visualizzato il badge insieme all’avatar del membro.

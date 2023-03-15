@@ -377,7 +377,7 @@ Se vengono creati nuovi componenti personalizzati che sono strumentalizzati per 
 
 ### Configurazione del componente {#component-configuration}
 
-![configurazione componente1](assets/component-configuration1.png)
+![component-configuration1](assets/component-configuration1.png)
 
 >[!NOTE]
 >
@@ -413,14 +413,14 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
   <tr>
    <td><strong> </strong></td>
    <td><strong>eVar1</strong></td>
-   <td><strong>eVar 2</strong></td>
-   <td><strong>eVar 3</strong></td>
+   <td><strong>eVar2</strong></td>
+   <td><strong>eVar3</strong></td>
    <td><strong>eVar4</strong></td>
    <td><strong>eVar5</strong></td>
-   <td><strong>eVar 6</strong></td>
+   <td><strong>eVar6</strong></td>
    <td><strong>eVar7</strong></td>
    <td><strong>eVar8</strong></td>
-   <td><strong>eVar 9</strong></td>
+   <td><strong>eVar9</strong></td>
    <td><strong>eVar10</strong></td>
   </tr>
   <tr>
@@ -438,8 +438,8 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>a)</em></td>
-   <td><em>b)</em></td>
+   <td><em>(a)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
    <td><em>(e)</em></td>
@@ -452,65 +452,65 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>evento7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

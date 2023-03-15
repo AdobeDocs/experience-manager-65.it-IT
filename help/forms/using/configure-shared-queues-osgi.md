@@ -84,7 +84,7 @@ Esegui i seguenti passaggi per rilasciare un elemento:
 1. Accedi alla tua istanza AEM. Tocca Casella in entrata ![Inbox](assets/bell.svg) icona e tocco **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
 1. Seleziona l’elemento da rilasciare e tocca **[!UICONTROL Cancella]**. L&#39;elemento viene aggiunto nuovamente al pool. Altri possono ora reclamare l&#39;articolo.
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 * La condivisione di elementi con un gruppo non è supportata.
 * La condivisione di attività di progetto non è supportata.

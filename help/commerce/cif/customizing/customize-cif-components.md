@@ -20,7 +20,7 @@ ht-degree: 24%
 
 # Personalizzare i componenti core CIF di AEM {#customize-cif-components}
 
-La [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l&#39;utilizzo di [Componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questa esercitazione, estenderai ulteriormente la [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) per visualizzare un attributo personalizzato da Adobe Commerce. Ulteriori informazioni sull’integrazione GraphQL tra AEM e Adobe Commerce e gli hook di estensione forniti dai componenti core CIF.
+La [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l&#39;utilizzo di [Componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questa esercitazione, estenderai ulteriormente la [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) per visualizzare un attributo personalizzato da Adobe Commerce. Ulteriori informazioni sull’integrazione di GraphQL tra AEM e Adobe Commerce e sugli hook dell’estensione forniti dai componenti core CIF.
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ Il brand Venia ha recentemente iniziato a produrre alcuni prodotti utilizzando m
 
 Per completare questa esercitazione è necessario un ambiente di sviluppo locale. Questo include un&#39;istanza in esecuzione di AEM configurata e connessa a un&#39;istanza Adobe Commerce. Rivedi i requisiti e le fasi per [creazione di uno sviluppo locale con AEM](../develop.md). Per seguire completamente l’esercitazione, dovrai disporre delle autorizzazioni per aggiungere [Attributi a un prodotto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-Sarà inoltre necessario GraphQL IDE come [GraphiQL](https://github.com/graphql/graphiql) o un&#39;estensione del browser per eseguire gli esempi di codice e le esercitazioni. Se installi un&#39;estensione del browser, assicurati che sia in grado di impostare le intestazioni della richiesta. Su Google Chrome, [Client Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) è un&#39;estensione che può eseguire il lavoro.
+Sarà inoltre necessario GraphQL IDE, ad esempio [GraphiQL](https://github.com/graphql/graphiql) o un&#39;estensione del browser per eseguire gli esempi di codice e le esercitazioni. Se installi un&#39;estensione del browser, assicurati che sia in grado di impostare le intestazioni della richiesta. Su Google Chrome, [Client Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) è un&#39;estensione che può eseguire il lavoro.
 
 ## Clona il progetto Venia {#clone-venia-project}
 
@@ -137,11 +137,11 @@ I prodotti e i dati di prodotto visualizzati in AEM vengono memorizzati in Adobe
 
 ## Utilizzare un IDE GraphQL per verificare l&#39;attributo {#use-graphql-ide}
 
-Prima di saltare nel codice AEM è utile esplorare [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) utilizzando un IDE GraphQL. L’integrazione di Adobe Commerce con AEM viene eseguita principalmente tramite una serie di query GraphQL. Comprendere e modificare le query GraphQL è uno dei modi principali in cui è possibile estendere i componenti core CIF.
+Prima di saltare nel codice AEM è utile esplorare [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) utilizzo di un IDE GraphQL. L’integrazione di Adobe Commerce con AEM viene eseguita principalmente tramite una serie di query GraphQL. Comprendere e modificare le query GraphQL è uno dei modi principali in cui è possibile estendere i componenti core CIF.
 
 Quindi, utilizza un IDE GraphQL per verificare che `eco_friendly` è stato aggiunto al set di attributi del prodotto. Le schermate in questa esercitazione utilizzano [Client Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. Apri l’IDE GraphQL e immetti l’URL . `http://<server>/graphql` nella barra degli URL dell’IDE o dell’estensione.
+1. Apri GraphQL IDE e immetti l’URL `http://<server>/graphql` nella barra degli URL dell’IDE o dell’estensione.
 2. Aggiungi quanto segue [query sui prodotti](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) dove `YOUR_SKU` è **SKU** del prodotto utilizzato nell&#39;esercizio precedente:
 
    ```json
@@ -176,13 +176,13 @@ Quindi, utilizza un IDE GraphQL per verificare che `eco_friendly` è stato aggiu
    }
    ```
 
-   ![Esempio di risposta GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Risposta GraphQL di esempio](../assets/customize-cif-components/sample-graphql-query.png)
 
    Tieni presente che il valore di **Sì** è un numero intero di **1**. Questo sarà utile quando scriviamo la query GraphQL in Java.
 
    >[!TIP]
    >
-   >Documentazione più dettagliata su [Adobe Commerce GraphQL è disponibile qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >Documentazione più dettagliata su [Adobe Commerce GraphQL si trova qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Aggiornare il modello Sling per il Product Teaser {#updating-sling-model-product-teaser}
 
@@ -261,7 +261,7 @@ Utilizzo [l&#39;IDE che preferisci](https://experienceleague.adobe.com/docs/expe
 
    La `@PostConstruct` l’annotazione assicura che questo metodo venga chiamato non appena viene inizializzato il modello Sling.
 
-   La query GraphQL del prodotto è già stata estesa utilizzando la variabile `extendProductQueryWith` metodo per recuperare l&#39;ulteriore `created_at` attributo. Questo attributo viene successivamente utilizzato come parte del `isShowBadge()` metodo .
+   La query GraphQL del prodotto è già stata estesa utilizzando `extendProductQueryWith` metodo per recuperare l&#39;ulteriore `created_at` attributo. Questo attributo viene successivamente utilizzato come parte del `isShowBadge()` metodo .
 
 1. Aggiorna la query GraphQL per includere il `eco_friendly` attributo nella query parziale:
 
@@ -496,9 +496,9 @@ Esamina la funzionalità del **Nuovo** badge già implementato nel Product Tease
 
 ## Risorse aggiuntive {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 - [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Personalizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it)
 - [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 - [Utilizzo del selettore di prodotti e categorie CIF](use-cif-pickers.md)

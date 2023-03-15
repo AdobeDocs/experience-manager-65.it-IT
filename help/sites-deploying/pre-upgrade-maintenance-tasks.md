@@ -186,7 +186,7 @@ Di seguito è riportato un elenco di tutti i metodi disponibili che `PreUpgradeT
   </tr>
   <tr>
    <td><code>getAvailablePreUpgradeHealthChecksTagNames()</code></td>
-   <td>INFORMAZIONI</td>
+   <td>INFO</td>
    <td>Visualizza l'elenco dei nomi dei tag dei controlli di integrità pre-aggiornamento.</td>
   </tr>
   <tr>

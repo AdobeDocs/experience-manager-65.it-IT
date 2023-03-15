@@ -190,12 +190,12 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
   <tr>
    <td>eventdata.keyword</td>
    <td>eVar personalizzato 2 (eVar2)</td>
-   <td>eVar 2</td>
+   <td>eVar2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
    <td>eVar personalizzato 3 (eVar3)</td>
-   <td>eVar 3</td>
+   <td>eVar3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

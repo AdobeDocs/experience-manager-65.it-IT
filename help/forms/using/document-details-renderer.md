@@ -85,7 +85,7 @@ Viene eseguito il rendering di applicazioni di terze parti utilizzando la visual
 
 **Comunicazione dell’applicazione di terze parti all’area di lavoro di AEM Forms**
 
-L’area di lavoro di AEM Forms ascolta `window.global.postMessage([Message],[Payload])`
+L’area di lavoro di AEM Forms è in ascolto su `window.global.postMessage([Message],[Payload])`
 
 [Messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per notificare l’area di lavoro di AEM Forms in base alle esigenze. L’utilizzo di questa interfaccia è obbligatorio, perché l’area di lavoro di AEM Forms deve sapere che quando l’attività viene inviata in modo da poter ripulire la finestra dell’attività.
 

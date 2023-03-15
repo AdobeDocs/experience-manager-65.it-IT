@@ -60,7 +60,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Esempio: `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
+   Esempio, `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
 
    >[!NOTE]
    >
@@ -287,7 +287,7 @@ Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel se
 
 1. Per scaricare il rapporto, selezionalo dall’elenco e fai clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo di Microsoft Excel.
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 * Gli smart tag migliorati si basano su modelli di apprendimento delle immagini e dei relativi tag. Questi modelli non sono sempre perfetti per identificare i tag. La versione corrente del Servizio di contenuti avanzati presenta le seguenti limitazioni:
 

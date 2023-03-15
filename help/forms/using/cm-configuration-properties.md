@@ -34,19 +34,19 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td><p>Rientro</p> </td>
    <td>Rientro sui moduli<p> </p> </td>
-   <td><p>12,7 mm</p> </td>
+   <td><p>12.7mm</p> </td>
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
    <td>Larghezza minima</td>
    <td>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano elenchi numerati diversi dai numeri romani</td>
-   <td>8,0 mm</td>
+   <td>8.0mm</td>
    <td>Qualsiasi numero</td>
   </tr>
   <tr>
    <td><p>Larghezza minima numeri romani</p> </td>
    <td><p>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano numeri romani</p> </td>
-   <td><p>12,7 mm</p> </td>
+   <td><p>12.7mm</p> </td>
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
    <td><p>Formato di modifica dati</p> </td>
    <td><p>Modifica il formato dei dati. Viene utilizzato quando si scrivono dati come String o si analizzano dati da String</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
    <td><p>Gestisci istanze lettera su pubblicazione</p> </td>
@@ -244,7 +244,7 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td><p>Directory principale utente di CM</p> </td>
    <td><p>URL della cartella contenente tutte le risorse utente di Gestione Corrispondenza</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>Posizione cartella valida</p> </td>
   </tr>
   <tr>

@@ -214,7 +214,7 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Elimina</p> </td>
+   <td><p>Eliminare</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>

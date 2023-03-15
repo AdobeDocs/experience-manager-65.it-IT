@@ -33,7 +33,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 ## Esigenze di collaborazione di creativi, esperti marketing e utenti DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
-| Requisiti  | Caso d’uso | Superfici interessate |
+| Requisiti | Caso d’uso | Superfici interessate |
 |---|---|---|
 | Semplificare l&#39;esperienza per i creativi sul desktop | Semplificare l’accesso alle risorse da un DAM ([!DNL Experience Manager Assets]) per i creativi o, più in generale, per gli utenti desktop che lavorano in applicazioni native per la creazione di risorse. Hanno bisogno di un modo semplice e semplice per scoprire, utilizzare (aprire), modificare e salvare le modifiche in [!DNL Experience Manager], e carica nuovi file. | desktop Win o Mac; [!DNL Creative Cloud] app |
 | Fornire risorse pronte all’uso di alta qualità da [!DNL Adobe Stock] | Gli addetti al marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l’origine e l’individuazione delle risorse. I professionisti creativi utilizzano le risorse approvate direttamente dai propri strumenti creativi. | [!DNL Experience Manager Assets]; [!DNL Adobe Stock] mercato; campi metadati |
@@ -43,7 +43,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 | Proposta di valore per i soggetti coinvolti | offerta Adobe | Superfici interessate |
 |---|---|---|
-| Gli utenti creativi scoprono le risorse da [!DNL Experience Manager], aprilo e utilizzali, modifica e carica le modifiche in [!DNL Experience Manager], nonché carica nuovi file in [!DNL Experience Manager], senza uscire [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign]. |
+| Gli utenti creativi scoprono le risorse da [!DNL Experience Manager], aprilo e utilizzali, modifica e carica le modifiche in [!DNL Experience Manager], nonché carica nuovi file in [!DNL Experience Manager], senza uscire [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | .[!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. |
 | Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche a [!DNL Experience Manager]e il caricamento di nuovi file in [!DNL Experience Manager] dall’ambiente desktop. Utilizzano un’integrazione generica per aprire qualsiasi tipo di risorsa nell’applicazione desktop nativa, inclusi quelli non Adobi. | [app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] app desktop su desktop Win e Mac |
 | Gli addetti al marketing e gli utenti aziendali possono individuare, visualizzare in anteprima, concedere in licenza e salvare e gestire [!DNL Adobe Stock] risorse interne [!DNL Experience Manager]. Le risorse concesse in licenza e salvate forniscono una selezione [!DNL Adobe Stock] metadati per una migliore governance. | [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaccia web |
 
@@ -65,7 +65,7 @@ Questo articolo si concentra principalmente sui primi due aspetti delle esigenze
 | Utilizzare: posizionare una risorsa da DAM in un documento | Sì - incorporazione | Sì: collegamento o incorporamento | [!DNL Experience Manager] l’app desktop consente l’accesso alle risorse come file nel file system locale. Questi collegamenti nelle app native sono rappresentati da percorsi locali. |
 | Modifica : aperto per la modifica | Sì - Azione di ritiro | Sì - Azione aperta (nella condivisione di rete) | [Check-out in AAL](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) salva la risorsa nell’account di archiviazione creative cloud dell’utente (sincronizzato da app Creative Cloud) per impostazione predefinita. |
 | Modifica : lavoro in corso al di fuori di DAM | Sì: risorsa disponibile nell’account di archiviazione Creative Cloud dell’utente sincronizzato con il desktop. | Sì |  |
-| Modifica - Carica modifiche | Sì - [Azione di archiviazione](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento opzionale | Sì |  |
+| Modifica - Carica modifiche | Sì - [Azione di archiviazione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) con commento opzionale | Sì |  |
 | Carica - file singolo | Sì - carica il documento attivo corrente | Sì | [Caricare tramite interfaccia web](manage-assets.md#uploading-assets) |
 | Caricamento: più file / strutture di cartelle gerarchiche | No | Sì | [Caricare tramite interfaccia web](manage-assets.md#uploading-assets) o tramite script o strumenti personalizzati. |
 | Varie - utente e accesso | Viene riconosciuto l’accesso dell’utente Creative Cloud all’app desktop Creative Cloud (SSO) | [!DNL Experience Manager] utente e credenziali | Gli utenti di entrambe le soluzioni contano per [!DNL Experience Manager] quota utente. |
@@ -97,7 +97,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 * Vedi [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Vedi [Integrazione Adobe Stock](aem-assets-adobe-stock.md)
-* Consulta [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+* Consulta [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 
 Questo è un breve riepilogo delle best practice per [!DNL Experience Manager] e [!DNL Creative Cloud] integrazione. Leggi il resto di questo documento per ottenere la comprensione dettagliata di questi.
 
@@ -231,7 +231,7 @@ Per pianificare ed eseguire le migrazioni delle risorse dal sistema esistente a 
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Experience Manager - Best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Experience Manager Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integrazione di Experience Manager e Adobe Stock](aem-assets-adobe-stock.md)

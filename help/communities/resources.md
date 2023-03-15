@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Per AEM Communities, nella console Risorse è disponibile la posizione [Manager di abilitazione](users.md) creare, gestire e assegnare risorse ai membri di un sito community di abilitazione.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Prima di aggiungere risorse di abilitazione per un sito community, le istanze AEM devono essere configurate correttamente, tra cui:
 
@@ -43,7 +43,7 @@ Per maggiori dettagli, vedi [Configurazione dell’abilitazione](enablement.md).
 
 ### Risorsa {#resource}
 
-Le risorse sono essenziali per [comunità di abilitazione](overview.md#enablement-community). Sono i materiali assegnati ai membri che consentono loro di migliorare le loro capacità.
+Le risorse sono essenziali per [comunità di abilitazione](overview.md#enablement-community). Sono i materiali assegnati ai membri che consentono loro di migliorare le loro competenze.
 
 Caratteristiche di una risorsa:
 
@@ -389,7 +389,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 ### Impostazioni {#settings-1}
 
-![apprendimento di percorso-settings1](assets/learningpath-settings1.png)
+![learningpath-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL Aggiungi adesioni]**
 
@@ -418,7 +418,7 @@ Per la risorsa di abilitazione selezionata, è possibile:
 
 * Visualizza proprietà (predefinito)
 * Modifica delle proprietà
-* Elimina
+* Eliminare
 * Pubblicazione
 * Annulla pubblicazione
 

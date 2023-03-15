@@ -12,11 +12,11 @@ ht-degree: 29%
 
 # Integrazione di AEM e Adobe Commerce (Magento) tramite Commerce Integration Framework {#aem-commerce-framework}
 
-Experience Manager e Adobe Commerce sono perfettamente integrati tramite Commerce Integration Framework (CIF). CIF consente a AEM di accedere e comunicare direttamente con l’istanza Commerce utilizzando Adobe Commerce [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager e Adobe Commerce sono perfettamente integrati tramite Commerce Integration Framework (CIF). CIF consente a AEM di accedere e comunicare direttamente con l’istanza Commerce utilizzando Adobe Commerce [API di GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
->La versione minima supportata dell’API GraphQL è la 2.3.5. Alcune funzioni sono supportate solo nelle versioni più recenti o solo nell’edizione Adobe Commerce.
+>La versione API minima supportata di GraphQL è la 2.3.5. Alcune funzionalità sono supportate solo nelle versioni più recenti o solo nell’edizione Adobe Commerce.
 
 ## Panoramica dell’architettura {#overview}
 

@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 42ef4694a3301ae1cd34766ce4c19f4b0e2f2c38
 workflow-type: tm+mt
 source-wordcount: '3695'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -100,22 +100,22 @@ Con GraphQL è possibile eseguire query per ottenere:
 
 * Un **[elenco delle voci](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM fornisce funzionalità per convertire le query (entrambi i tipi) in [Query persistenti](/help/assets/content-fragments/persisted-queries.md), che può essere memorizzato nella cache da Dispatcher e CDN.
+AEM fornisce funzionalità per convertire le query (entrambi i tipi) in [](/help/assets/content-fragments/persisted-queries.md)Query persistenti, che possono essere memorizzate nella cache da Dispatcher e CDN.
 
-### Tecniche consigliate per le query GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
+### Best practice per le query GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
 
-La [Query persistenti](/help/assets/content-fragments/persisted-queries.md) sono il metodo consigliato da utilizzare nelle istanze di pubblicazione come:
+Le [Query persistenti](/help/assets/content-fragments/persisted-queries.md) sono il metodo consigliato da utilizzare nelle istanze di pubblicazione come:
 
 * vengono memorizzate nella cache;
 * sono gestite centralmente da AEM
 
 >[!NOTE]
 >
->Di solito non esiste un dispatcher/CDN sull’autore, quindi non c’è alcun guadagno nell’utilizzo di query persistenti lì; oltre a testarli.
+>Di solito non esiste un dispatcher/CDN sull’autore, quindi in quel caso non c’è alcun vantaggio nell’utilizzo di query persistenti; oltre ai test.
 
-Le query GraphQL che utilizzano richieste POST non sono consigliate in quanto non sono memorizzate nella cache, pertanto in un’istanza predefinita Dispatcher è configurato per bloccare tali query.
+Le query GraphQL con l’utilizzo di POST non sono consigliate in quanto non sono memorizzate nella cache. Quindi, in un’istanza predefinita, Dispatcher è configurato per bloccarle.
 
-Anche se GraphQL supporta anche le richieste GET, possono raggiungere i limiti (ad esempio la lunghezza dell’URL) che possono essere evitati utilizzando le query persistenti.
+GraphQL supporta anche le richieste GET, ma queste devono sottostare a limiti (ad esempio la lunghezza dell’URL) che possono essere evitati utilizzando le query persistenti.
 
 >[!NOTE]
 >
@@ -245,9 +245,9 @@ I casi di utilizzo possono dipendere dal tipo di ambiente AEM:
 
 Le autorizzazioni sono quelle necessarie per accedere ad Assets.
 
-Le query GraphQL vengono eseguite con l&#39;autorizzazione dell&#39;utente AEM della richiesta sottostante. Se l’utente non dispone dell’accesso in lettura ad alcuni frammenti (memorizzati come risorse), non farà parte del set di risultati.
+Le query GraphQL vengono eseguite con l’autorizzazione dell’utente AEM della richiesta sottostante. Se l’utente non dispone dell’accesso in lettura ad alcuni frammenti (memorizzati come risorse), questi non faranno parte del set di risultati.
 
-Inoltre, l’utente deve avere accesso a un endpoint GraphQL per poter eseguire query GraphQL.
+Inoltre, per poter eseguire query GraphQL l’utente deve avere accesso a un endpoint GraphQL.
 
 ## Generazione schema {#schema-generation}
 

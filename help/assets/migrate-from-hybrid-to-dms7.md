@@ -39,7 +39,7 @@ Quando si passa da Dynamic Media-Hybrid a Dynamic Media-Scene7 sono disponibili 
 
 ## Opzione 2: migrazione dell&#39;istanza esistente di Dynamic Media-Hybrid a Dynamic Media-Scene7 {#process-for-migrating}
 
-| Incremento | Attività | Considerazioni |
+| Passaggio | Attività | Considerazioni |
 |---|---|---|
 | 1 | Clona l’istanza di authoring Dynamic Media-Hybrid. | Mantieni l’istanza esistente di Dynamic Media-Hybrid Author a scopo di fallback fino a quando i passaggi rimanenti in questo processo di migrazione non vengono completati correttamente. |
 | 2 | Avvia l&#39;istanza Author clonata in modalità Dynamic Media-Scene7. |  |

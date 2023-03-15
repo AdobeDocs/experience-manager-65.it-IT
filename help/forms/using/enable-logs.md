@@ -133,7 +133,7 @@ La configurazione del registro è composta dal livello di registro e dalla categ
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>una sessione lavagna </td>
+   <td>a</td>
    <td>xfa (registri relativi al motore di script)</td>
   </tr>
   <tr>

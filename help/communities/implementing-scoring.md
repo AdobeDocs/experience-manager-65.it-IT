@@ -218,7 +218,7 @@ Le sub-regole sono nodi di tipo `cq:Page` con proprietà `jcr:content`nodo che s
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th> Descrizione valore</th>
+   <th> Valore Descrizione</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -341,7 +341,7 @@ La `scoringRules` in una regola di badging è sufficiente limitare quali regole 
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th>Descrizione valore</th>
+   <th>Valore Descrizione</th>
   </tr>
   <tr>
    <td>soglie</td>
@@ -539,7 +539,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| NEGA | contenuto del membro negato |
+| RIFIUTA | contenuto del membro negato |
 | FLAG-AS INAPPROPRIATO | il contenuto del membro è contrassegnato |
 | NON APPROPRIATO | il contenuto del membro viene rimosso |
 | ACCETTARE | il contenuto del membro è approvato dal moderatore |

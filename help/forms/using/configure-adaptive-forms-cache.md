@@ -128,7 +128,7 @@ Esegui i passaggi elencati di seguito per abilitare e configurare la memorizzazi
       }
    ```
 
-L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza in cache tutti i tipi di moduli adattivi. Se hai l’obbligo di controllare le autorizzazioni di accesso utente per una pagina prima di consegnare la pagina in cache, consulta [memorizzazione in cache di contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza in cache tutti i tipi di moduli adattivi. Se hai l’obbligo di controllare le autorizzazioni di accesso utente per una pagina prima di consegnare la pagina in cache, consulta [memorizzazione in cache di contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

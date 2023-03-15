@@ -435,7 +435,7 @@ L’illustrazione seguente mostra il contenuto del progetto Eclipse, che viene a
 
 ### Distribuire il file WAR al server applicazioni J2EE che ospita AEM Forms {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
 
-Distribuisci il file WAR al server dell&#39;applicazione J2EE in cui viene distribuito AEM Forms. Per distribuire il file WAR al server applicazioni J2EE, copia il file WAR dal percorso di esportazione in `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
+Distribuire il file WAR al server dell&#39;applicazione J2EE in cui viene distribuito AEM Forms. Per distribuire il file WAR al server applicazioni J2EE, copia il file WAR dal percorso di esportazione in `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
 
 >[!NOTE]
 >
@@ -545,7 +545,7 @@ Nella tabella seguente sono elencati i controlli che fanno parte di questa appli
    <td><p>Specifica l'importo del prestito.</p></td>
   </tr>
   <tr>
-   <td><p>Pulsante1</p></td>
+   <td><p>Button1</p></td>
    <td><p>Rappresenta il pulsante Invia applicazione.</p></td>
   </tr>
   <tr>

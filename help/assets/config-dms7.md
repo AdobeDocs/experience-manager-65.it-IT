@@ -238,7 +238,7 @@ Quando si esegue Dynamic Media - Modalità Scene7 su AEM, al momento viene inolt
 
    ![Abilita le impostazioni dell&#39;elenco di controllo accessi in modalità Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
 
-1. Nell’angolo in basso a destra della pagina, seleziona **[!UICONTROL Salva]**.
+1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
 ### (Facoltativo) Configura Dynamic Media - Modalità Scene7 per il caricamento di risorse superiori a 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 

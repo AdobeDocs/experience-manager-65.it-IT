@@ -83,11 +83,11 @@ Esegui i seguenti passaggi per creare e distribuire l’app AEM Forms.
 
 1. Nella procedura guidata Crea pacchetti app , seleziona il meteo o non desideri caricare l’app in windows store e fai clic su **Successivo**.
 
-   ![createapppackagesWizard1](assets/createapppackageswizard1.png)
+   ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
 1. Apporta le modifiche necessarie ai parametri, ad esempio la versione e il percorso di output della build dell’app, a seconda delle esigenze.
 
-   ![createapppackagesWizard2](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. Una volta creato il progetto, puoi installare l’app utilizzando:
 

@@ -17,7 +17,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schema GraphQL |
+| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schemi GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 

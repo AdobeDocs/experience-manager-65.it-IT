@@ -51,7 +51,7 @@ A livello di Comunità [FP1](/help/communities/deploy-communities.md#latestfeatu
 
 I canali futuri sono mobile e desktop.
 
-### Requisiti  {#requirements}
+### Requisiti {#requirements}
 
 **Configura e-mail**
 
@@ -94,17 +94,17 @@ Selezionando il collegamento Impostazioni notifiche dalla pagina Notifiche, è p
 
 Il canale web è sempre abilitato.
 
-![Notifiche14](assets/notifications1.png)
+![notifications14](assets/notifications1.png)
 
 Il canale e-mail, che si basa sul [configurazione dell’e-mail](/help/communities/email.md), fornisce le stesse impostazioni del canale web.
 
 Il canale e-mail è disattivato per impostazione predefinita.
 
-![Notifiche2](assets/notifications2.png)
+![notifications2](assets/notifications2.png)
 
 Può essere attivato da un membro, ma dipende comunque dalla configurazione dell’e-mail.
 
-![Notifiche3](assets/notifications3.png)
+![notifications3](assets/notifications3.png)
 
 ## Visualizzazione delle notifiche {#viewing-notifications}
 
@@ -114,13 +114,13 @@ A [creazione guidata sito community](/help/communities/sites-console.md) ora inc
 
 Quando visiti il sito pubblicato, seleziona la `Notifications` visualizza tutte le notifiche per il membro.
 
-![Notifiche4](assets/notifications4.png)
+![notifications4](assets/notifications4.png)
 
 ### Notifiche e-mail {#email-notifications}
 
 Quando il canale e-mail è abilitato, il membro riceve un messaggio e-mail contenente un collegamento al contenuto sul web.
 
-![Notifiche5](assets/notifications5.png)
+![notifications5](assets/notifications5.png)
 
 ## Personalizzare le notifiche e-mail {#customize-email-notifications}
 

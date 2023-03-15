@@ -10,14 +10,26 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2371'
 ht-degree: 3%
 
 ---
 
 # Riferimento predicato di Query Builder{#query-builder-predicate-reference}
+
+>[!CAUTION]
+>
+>Le informazioni su questa pagina non sono esaustive.
+>
+>Per informazioni complete, consulta l’elenco in **Predicati disponibili** nella console di debug di Query Builder; ad esempio, in:
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>Ad esempio, vedi:
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
 
 ## Generale {#general}
 
@@ -366,7 +378,7 @@ Supporta l’estrazione dei facet. Fornirà bucket per ogni valore di proprietà
 
    impostato su true per combinare più valori ( `N_value`) con AND (da 5.3)
 
-* **funzionamento**
+* **operation**
 
    &quot;`equals`&quot; per corrispondenza esatta (predefinito), &quot; `unequals`&quot; per il confronto tra diseguaglianza, &quot; `like`&quot; per utilizzare `jcr:like` funzione xpath (opzionale), &quot; `not`&quot; per nessuna corrispondenza (ad esempio &quot;`not(@prop)`&quot; in xpath, il parametro del valore verrà ignorato) o &quot; `exists`&quot; per il controllo dell&#39;esistenza (il valore può essere true - la proprietà deve esistere, il valore predefinito - o falso - è uguale a &quot; `not`&quot;)
 

@@ -104,11 +104,11 @@ Ogni assegnazione fornisce informazioni di base su:
 
 Il tipo di assegnazione è indicato da un&#39;icona nell&#39;angolo superiore sinistro della scheda. L&#39;immagine di una strada è per un percorso di apprendimento con il numero di risorse di abilitazione incluse.
 
-![assegnazione1](assets/assignment1.png)
+![assignment1](assets/assignment1.png)
 
 Selezione *Lezioni di sci* visualizza le due risorse di abilitazione a cui fa riferimento il percorso di apprendimento.
 
-![assegnazione2](assets/assignment2.png)
+![assignment2](assets/assignment2.png)
 
 Selezione *Lezioni di sci 1* aprirà la pagina dei dettagli della risorsa di abilitazione.
 
@@ -116,7 +116,7 @@ Dalla pagina dei dettagli, il membro è in grado di imparare, [rate](rating.md) 
 
 Le interazioni con la risorsa di abilitazione saranno annotate nella sezione Rapporto accessibile nell’ambiente di authoring.
 
-![assegnazione3](assets/assignment3.png)
+![assignment3](assets/assignment3.png)
 
 ### Catalogo degli sci {#ski-catalog}
 

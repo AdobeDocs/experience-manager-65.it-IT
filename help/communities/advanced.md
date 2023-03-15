@@ -130,7 +130,7 @@ Invece di associare i punti a un’immagine del badge, è necessario solo identi
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th>Descrizione valore</th>
+   <th>Valore Descrizione</th>
   </tr>
   <tr>
    <td>badgingPath</td>

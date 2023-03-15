@@ -14,7 +14,7 @@ exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -209,7 +209,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
    <td>input type=radio<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>CampoTesto<br type="_moz" /> </td>
+   <td>TextField<br type="_moz" /> </td>
    <td>campo di testo<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>

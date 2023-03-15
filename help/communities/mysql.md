@@ -24,7 +24,7 @@ MySQL è un database relazionale utilizzato principalmente per il tracciamento S
 
 Queste istruzioni descrivono come connettersi al server MySQL, stabilire il database di abilitazione e popolare il database con i dati iniziali.
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 Prima di configurare la funzionalità di abilitazione di MySQL for Communities, assicurati di
 
@@ -110,7 +110,7 @@ Gli script SQL vengono ottenuti utilizzando CRXDE Lite nell&#39;istanza di autho
    * Ad esempio: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Espandi la `/libs/social/config/scorm/` cartella
 1. Download `database_scormengine.sql`
-1. Scarica `database_scorm_integration.sql`
+1. Download `database_scorm_integration.sql`
 
 ![sqlscripts](assets/sqlscripts.png)
 

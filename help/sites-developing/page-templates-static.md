@@ -160,8 +160,7 @@ Per visualizzare un elenco di tutti i modelli nel repository, procedere come seg
 1. Nella scheda Query
 1. Per **Tipo** selezionate **XPath**.
 
-1. Nel campo di inserimento **Query** immettete la stringa seguente:
-//element()&#42;, cq:Template)
+1. In **Query** campo di input, immetti la stringa seguente: //element()&#42;, cq:Template)
 
 1. Fate clic su **Esegui**. Nella casella dei risultati viene visualizzato l’elenco di modelli disponibili.
 

@@ -26,7 +26,7 @@ Quando AEM Communities è configurato per utilizzare un database relazionale com
 
 Vedi anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
 
-## Requisiti  {#requirements}
+## Requisiti {#requirements}
 
 * [MySQL](#mysql-configuration), un database relazionale.
 * [Apache Solr](#solr-configuration), una piattaforma di ricerca.

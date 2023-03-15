@@ -111,7 +111,7 @@ Quando si seleziona uno spazio dei nomi o un altro tag, sono disponibili le segu
 * [Unisci](#merging-tags)
 * [Pubblicazione](#publishing-tags)
 * [Annulla pubblicazione](#unpublishing-tags)
-* [Elimina](#deleting-tags)
+* [Eliminare](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 

@@ -313,7 +313,7 @@ Per abilitare la funzione Salva come bozza, sostituisci l’URL esistente in [!U
 
 1. Fai clic su Salva.
 
-![Pubblica istanza](/help/forms/using/assets/correspondencemanagement.png)
+![Istanza di pubblicazione](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando il salvataggio delle istanze di lettera è attivato, è possibile selezionare la posizione in cui salvare le istanze di lettera. Sono disponibili due opzioni per salvare le istanze di lettera: Salvataggio locale o salvataggio remoto.
 

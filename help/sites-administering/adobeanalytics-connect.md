@@ -95,7 +95,7 @@ Utilizza la [Console web per configurare il bundle OSGi](/help/sites-deploying/c
 >
 >In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
->La [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) Da utilizzare.
+>La [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it) Da utilizzare.
 
 ## Creazione di un framework Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -169,7 +169,7 @@ Inizia aprendo il pannello. Premere la freccia rivolta verso il basso accanto a 
 
 ## Associazione di una pagina a un framework Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Quando una pagina è associata a un framework Adobe Analytics, la pagina invia i dati ad Adobe Analytics quando la pagina viene caricata. Le variabili compilate dalla pagina vengono mappate e recuperate dalle variabili di Adobe Analytics nel framework. Ad esempio, le visualizzazioni di pagina vengono recuperate da Adobe Analytics.
+Quando una pagina è associata a un framework Adobe Analytics, la pagina invia dati ad Adobe Analytics quando la pagina viene caricata. Le variabili compilate dalla pagina vengono mappate e recuperate dalle variabili di Adobe Analytics nel framework. Ad esempio, le visualizzazioni di pagina vengono recuperate da Adobe Analytics.
 
 I discendenti della pagina ereditano l’associazione al framework. Ad esempio, quando si associa la pagina principale del sito a un framework, tutte le pagine del sito sono associate al framework.
 

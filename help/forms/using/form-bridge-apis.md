@@ -83,7 +83,7 @@ Restituisce il numero di versione della libreria di script
 
 **registerConfig(configName, config)** Registra le configurazioni specifiche di utente/portale con FormBridge. Queste configurazioni sostituiscono le configurazioni predefinite. Le configurazioni supportate sono specificate nella sezione di configurazione .
 
-* **Ingresso:**
+* **Input:**
 
    * **configName:** Nome della configurazione da sovrascrivere
 
@@ -129,7 +129,7 @@ Restituisce il numero di versione della libreria di script
 
 **hideFields(fieldArray)** Nasconde i campi di cui sono fornite le espressioni Som nel campoArray. Imposta la proprietà presence dei campi specificati su invisible
 
-* **Ingresso:**
+* **Input:**
 
    * **fieldArray:** Array di espressioni Som per i campi da nascondere
 
@@ -138,7 +138,7 @@ Restituisce il numero di versione della libreria di script
 
 **showFields(fieldArray)** Mostra i campi di cui sono fornite le espressioni Som nel campoArray. Imposta la proprietà presence dei campi forniti su visible
 
-* **Ingresso:**
+* **Input:**
 
    * **fieldArray:** Array di espressioni Som per i campi da visualizzare
 
@@ -160,7 +160,7 @@ Restituisce il numero di versione della libreria di script
 
 **restoreFormState(options)** Ripristina lo stato del modulo dallo stato JSON fornito nell’oggetto options . Lo stato viene applicato e i gestori di errori o di successo vengono chiamati al termine dell’operazione
 
-* **Ingresso:**
+* **Input:**
 
    * **Opzioni:** Oggetto JavaScript contenente le proprietà seguenti:
 
@@ -180,7 +180,7 @@ Restituisce il numero di versione della libreria di script
 
 **setFieldValue (som, value)** Imposta il valore dei campi per le espressioni Som specificate
 
-* **Ingresso:**
+* **Input:**
 
    * **som:** Array contenente espressioni Som del campo. La stessa espressione per impostare il valore dei campi.
    * **valore:** Array contenente valori corrispondenti alle espressioni Som fornite in un **som** array. Se il tipo di dati del valore non è lo stesso di fieldType, il valore non viene modificato.
@@ -210,7 +210,7 @@ if(a.errors) {
 
 **getFieldProperties(som, proprietà)** Recupera l’elenco dei valori per la proprietà specificata dei campi specificati nelle espressioni Som
 
-* **Ingresso:**
+* **Input:**
 
    * **som:** Array contenente espressioni Som per i campi
    * **property**: Nome della proprietà il cui valore è obbligatorio
@@ -221,7 +221,7 @@ if(a.errors) {
 
 **setFieldProperties(som, property, values)** Imposta il valore della proprietà specificata per tutti i campi specificati nelle espressioni Som
 
-* **Ingresso:**
+* **Input:**
 
    * **som:** Array contenente espressioni Som dei campi il cui valore deve essere impostato
    * **property**: Proprietà il cui valore deve essere impostato

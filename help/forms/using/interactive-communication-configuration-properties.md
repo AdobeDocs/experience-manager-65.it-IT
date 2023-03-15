@@ -62,19 +62,19 @@ Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della
   <tr> 
    <td>Rientro</td> 
    <td>Larghezza della singola unità di rientro applicata al testo nei frammenti di documento elenco.</td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima numeri romani</td> 
    <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano numeri romani nei frammenti di documento elenco. </td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima</td> 
    <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano elenchi numerati diversi dai numeri romani nei frammenti di documento elenco.</td> 
-   <td>8,0 mm</td> 
+   <td>8.0mm</td> 
    <td>Numero</td> 
   </tr> 
  </tbody> 

@@ -13,7 +13,7 @@ exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -69,8 +69,8 @@ Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/
 L’integrazione di AEM con Adobe Target richiede la conoscenza di Adobe Target, la gestione delle attività di AEM e la gestione AEM audience. Devi avere familiarità con le seguenti informazioni:
 
 * Adobe Target (consulta [Documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=it)).
-* AEM console Attività (consulta [Gestione delle attività](/help/sites-authoring/activitylib.md)).
-* Pubblico AEM (Vedi [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md)).
+* Console Attività di AEM (consulta [Gestione delle attività](/help/sites-authoring/activitylib.md)).
+* Tipi di pubblico di AEM (consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

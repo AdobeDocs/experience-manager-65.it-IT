@@ -182,11 +182,11 @@ Sarah Rose riceve un&#39;e-mail di notifica della necessità di ulteriori inform
 
 Sarah fa clic sul collegamento Fornisci dettagli nell&#39;e-mail. Viene visualizzato un modulo. Sarah compila i dati richiesti su istruzione e occupazione come richiesto da John Doe clicca su Invia.
 
-![informazioni aggiuntive1](assets/additionalinformation1.png)
+![additionalinformation1](assets/additionalinformation1.png)
 
 Sarah apre il modulo di informazioni aggiuntive facendo clic sul collegamento presente nell’e-mail
 
-![informazioni aggiuntive2](assets/additionalinformation2.png)
+![additionalinformation2](assets/additionalinformation2.png)
 
 Sarah compila informazioni aggiuntive richieste da John Doe e fa clic su Invia
 

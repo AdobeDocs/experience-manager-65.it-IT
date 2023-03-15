@@ -94,7 +94,7 @@ La tabella seguente illustra l’origine dati di ciascun campo nell’anatomia d
      <li>Codice di stato</li>
      <li>Numero di connessioni</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Riepilogo fatturazione</td>
@@ -108,7 +108,7 @@ La tabella seguente illustra l’origine dati di ciascun campo nell’anatomia d
      <li>Importo dovuto</li>
      <li>Data di scadenza</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Sommario degli oneri</td>
@@ -126,7 +126,7 @@ La tabella seguente illustra l’origine dati di ciascun campo nell’anatomia d
      <li>TOTALE PAGABILE (campo calcolato spese d'uso)</li>
     </ul> <p>Tabella - distinte</p> </td>
    <td>Nessun campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Chiamate dettagliate - In uscita</td>
@@ -140,20 +140,20 @@ La tabella seguente illustra l’origine dati di ciascun campo nell’anatomia d
     </ul> </td>
    <td><p>Tutti i valori</p> <p>Tabella: chiamate</p> </td>
    <td>Nessun campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Paga ora</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Servizi a valore aggiunto</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

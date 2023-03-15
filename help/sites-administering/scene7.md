@@ -165,7 +165,7 @@ Per utilizzare contemporaneamente Dynamic Media e Dynamic Media Classic:
    1. (Facoltativo) Configura il video nella configurazione Dynamic Media Classic. È possibile abilitare la codifica video sia per Dynamic Media che per Dynamic Media Classic simultaneamente. Le rappresentazioni dinamiche vengono utilizzate per l’anteprima e la riproduzione localmente nell’istanza di Experience Manager, mentre le rappresentazioni video Dynamic Media Classic vengono generate e memorizzate sui server Dynamic Media Classic. Quando configuri servizi di codifica video sia per Dynamic Media che per Dynamic Media Classic, applica un [profilo di elaborazione video](/help/assets/video-profiles.md) nella cartella delle risorse di Dynamic Media Classic.
    1. (Facoltativo) [Configurare l’anteprima protetta in Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
-#### Limitazioni  {#limitations}
+#### Limitazioni {#limitations}
 
 Quando Dynamic Media Classic e Dynamic Media sono abilitati, sono presenti le seguenti limitazioni:
 
@@ -420,7 +420,7 @@ Tuttavia, se non desideri che le risorse inviate a Dynamic Media Classic vengano
 
 Prima di poter inviare risorse in Dynamic Media Classic senza pubblicarle, è necessario impostare quanto segue:
 
-1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Nel tuo caso di assistenza, richiedi l&#39;abilitazione dell&#39;anteprima sicura per il tuo account Dynamic Media Classic.
+1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Nel tuo caso di assistenza, richiedi l&#39;abilitazione dell&#39;anteprima sicura per il tuo account Dynamic Media Classic.
 1. [Configurare un&#39;anteprima sicura per il tuo account Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
 
 Questi passaggi sono gli stessi che segui per creare qualsiasi configurazione di test sicuro in Dynamic Media Classic.
@@ -567,7 +567,7 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
 1. Sul lato destro della pagina CRXDE Lite, seleziona la **[!UICONTROL Proprietà]** scheda .
 1. Specifica un parametro di processo di caricamento Dynamic Media Classic nel **[!UICONTROL jobParam]** campo valore.
 
-   Esempio: `psprocess="rasterize"&psresolution=120`.
+   Esempio, `psprocess="rasterize"&psresolution=120` .
 
    Consulta la sezione [API di Adobe Dynamic Media Classic Image Production System](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) per ulteriori parametri di processo di caricamento, puoi utilizzare .
 

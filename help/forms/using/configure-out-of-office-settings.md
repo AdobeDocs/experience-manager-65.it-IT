@@ -62,7 +62,7 @@ Ora, gli elementi assegnati durante il periodo di tempo Fuori sede vengono asseg
 >
 >(Solo per gli elementi del flusso di lavoro incentrati su Forms) Attiva la **Consenti agli assegnatari di delegare utilizzando le impostazioni &quot;Fuori sede&quot;** opzione **Assegna attività** nel flusso di lavoro. Solo gli elementi che hanno abilitato la suddetta opzione sono delegati ad altri utenti.
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 * L&#39;assegnazione di elementi a un gruppo non è supportata.
 * L&#39;abilitazione di Out of Office per le attività di progetto non è attualmente supportata.

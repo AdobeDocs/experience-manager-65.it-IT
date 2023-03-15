@@ -151,7 +151,7 @@ La topologia presunta per questa sezione è costituita da un cluster Autore Mong
 
 La topologia presunta per questa sezione è costituita da due istanze di pubblicazione TarMK, precedute da Dispatcher che a loro volta sono precedute da un load balancer. La replica si verifica dal server Author alla farm di pubblicazione TarMK.
 
-![tarmk-pub-farm v5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
 ### Esecuzione aggiornamento {#upgrade-execution-2}
 

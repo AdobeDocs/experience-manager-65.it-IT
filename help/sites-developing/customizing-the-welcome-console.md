@@ -85,7 +85,7 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
    <td> </td>
   </tr>
   <tr>
-   <td> Cloud Services</td>
+   <td> Servizi cloud</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>

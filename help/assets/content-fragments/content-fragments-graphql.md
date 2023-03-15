@@ -13,7 +13,7 @@ ht-degree: 89%
 
 # Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto, insieme all’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard), per distribuire in modo headless contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare un’unica query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
+Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto, insieme all’API GraphQL AEM (un’implementazione personalizzata, basata su GraphQL standard), per distribuire in modo headless contenuti strutturati da utilizzare nelle tue applicazioni. La possibilità di personalizzare un’unica query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
 
 <!--
 >[!NOTE]
@@ -55,7 +55,7 @@ L’[API GraphQL di AEM](#aem-graphql-api) consente di eseguire query (complesse
 
 ## API GraphQL di AEM {#aem-graphql-api}
 
-Per Adobe Experience è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md).
+Per Adobe Experience è stata sviluppata un’implementazione personalizzata dell’API standard di GraphQL. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 L’implementazione dell’API GraphQL per AEM si basa sulle [librerie Java GraphQL](https://graphql.org/code/#java).
 

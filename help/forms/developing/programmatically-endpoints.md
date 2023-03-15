@@ -193,7 +193,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 Questi file JAR sono necessari per creare un endpoint SOAP. Tuttavia, è necessario aggiungere file JAR se si utilizza l’endpoint SOAP per richiamare il servizio. Per informazioni sui file JAR di AEM Forms, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto client EndpointRegistry**
+**Creare un oggetto Client EndpointRegistry**
 
 Per aggiungere programmaticamente un endpoint SOAP a un servizio, è necessario creare un `EndpointRegistryClient` oggetto.
 
@@ -536,7 +536,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 Per informazioni sulla posizione di questi file JAR, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto client EndpointRegistry**
+**Creare un oggetto Client EndpointRegistry**
 
 Prima di poter aggiungere programmaticamente un endpoint e-mail, devi creare un `EndpointRegistryClient` oggetto.
 
@@ -791,7 +791,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 Per informazioni sulla posizione di questi file JAR, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto Client EndpointRegistry**
+**Creare un oggetto client EndpointRegistry**
 
 Per aggiungere programmaticamente un endpoint Remoting, è necessario creare un `EndpointRegistryClient` oggetto.
 
@@ -893,7 +893,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 Per informazioni sulla posizione di questi file JAR, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto Client EndpointRegistry**
+**Creare un oggetto client EndpointRegistry**
 
 Prima di poter aggiungere programmaticamente un endpoint TaskManager, è necessario creare un `EndpointRegistryClient` oggetto.
 
@@ -1116,7 +1116,7 @@ I seguenti file JAR devono essere aggiunti al percorso della classe del progetto
 
 Per informazioni sulla posizione di questi file JAR, vedi [Inclusione dei file libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Creare un oggetto client EndpointRegistry**
+**Creare un oggetto Client EndpointRegistry**
 
 Per rimuovere un endpoint a livello di programmazione, devi creare un `EndpointRegistryClient` oggetto.
 

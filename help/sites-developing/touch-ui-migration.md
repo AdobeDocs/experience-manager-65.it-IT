@@ -137,7 +137,7 @@ Le finestre di dialogo sono un fattore importante durante la migrazione dei comp
 Anche se non è direttamente correlato a una migrazione all’interfaccia utente touch, esistono problemi correlati che è bene considerare allo stesso tempo, in quanto sono anche la pratica consigliata:
 
 * [Modelli](/help/sites-developing/templates.md) - [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]

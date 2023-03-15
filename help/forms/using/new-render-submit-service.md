@@ -69,7 +69,7 @@ Input - `taskContext`
 
 Output - `runtimeMap`
 
-Uscita - `outFormDoc`
+Output - `outFormDoc`
 
 Questo metodo simula il comportamento esatto di `renderHTMLForm` API di NewHTMLFormsService. Chiama il `generateFormURL` API per ottenere l’URL per il rendering HTML del modulo. Quindi compila runtimeMap con la chiave o i valori seguenti:
 
@@ -81,11 +81,11 @@ newHTMLFormURL = l&#39;URL restituito dopo la chiamata `generateFormURL` API.
 
 Questo processo per l’invio di un nuovo modulo HTML funziona con i seguenti parametri di I/O:
 
-Ingresso - `taskContext`
+Input - `taskContext`
 
-Uscita - `runtimeMap`
+Output - `runtimeMap`
 
-Uscita - `outputDocument`
+Output - `outputDocument`
 
 Il processo imposta le `outputDocument`al `inputDocument`recuperato da `taskContext`.
 

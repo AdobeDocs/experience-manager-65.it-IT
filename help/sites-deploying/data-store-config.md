@@ -232,7 +232,7 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 | --- | --- | --- | --- |
 | accessKey | Accedi all’ID chiave per l’utente IAM con accesso al bucket . |  | Sì, quando non utilizzi i ruoli IAM. |
 | secretKey | Chiave di accesso segreta per l’utente IAM con accesso al bucket. |  | Sì, quando non utilizzi i ruoli IAM. |
-| cacheSize | Dimensione (in byte) della cache locale. | 64 GB | No. |
+| cacheSize | Dimensione (in byte) della cache locale. | 64GB | No. |
 | connectionTimeout | Impostare il tempo di attesa (in millisecondi) prima dell&#39;interruzione quando si stabilisce inizialmente una connessione. | 10000 | No. |
 | maxCachedBinarySize | I file binari con dimensioni inferiori o uguali a questo valore (in byte) verranno memorizzati nella cache della memoria. | 17408 (17 KB) | No. |
 | maxConnections | Imposta il numero massimo di connessioni HTTP aperte consentite. | 50 | No. |

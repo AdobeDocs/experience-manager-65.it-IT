@@ -1,5 +1,5 @@
 ---
-title: Assegnazione tag
+title: Assegnazione dei tag
 seo-title: Tagging
 description: L’assegnazione tag consente di classificare e organizzare i contenuti
 seo-description: Tagging allows content to be categorized and organized
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ---
 
-# Assegnazione tag{#tagging}
+# Assegnazione dei tag{#tagging}
 
 I tag consentono di classificare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia.
 

@@ -29,7 +29,7 @@ L’onboarding per AEM contenuto e commerce è un processo in due fasi:
 
 ### Installare il componente aggiuntivo Contenuto AEM e Commerce per AEM 6.5 {#install-add-on}
 
-Scarica e installa AEM Commerce Add-On per AEM 6.5 dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portale.
+Scarica e installa AEM Commerce Add-On per AEM 6.5 dal [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) portale.
 
 Avvia e installa il Service Pack AEM 6.5 richiesto. È consigliabile installare l’ultimo service pack disponibile.
 
@@ -45,11 +45,11 @@ Facoltativamente, è possibile fornire l’intestazione di autenticazione per ut
 
 Progetti generati da [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype)e [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) che è già incluso nel [configurazione predefinita](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) devono essere adeguati.
 
-Sostituisci il valore del `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l’endpoint GraphQL del sistema commerce. Questa configurazione può essere effettuata tramite la console OSGI o distribuendo la configurazione OSGI tramite il progetto. Sono supportate configurazioni diverse per i sistemi di staging e produzione utilizzando diverse modalità di esecuzione AEM.
+Sostituisci il valore del `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l&#39;endpoint GraphQL del sistema commerce. Questa configurazione può essere effettuata tramite la console OSGI o distribuendo la configurazione OSGI tramite il progetto. Sono supportate configurazioni diverse per i sistemi di staging e produzione utilizzando diverse modalità di esecuzione AEM.
 
 I componenti core AEM Content and Commerce e CIF utilizzano sia connessioni lato server che lato client AEM. I componenti core CIF lato client e gli strumenti di authoring dei componenti aggiuntivi CIF si collegano per impostazione predefinita a `/api/graphql`. Se necessario, è possibile regolarlo tramite la configurazione del Cloud Service CIF (vedi di seguito).
 
-Il componente aggiuntivo CIF fornisce un servlet proxy GraphQL in `/api/graphql` che possono essere eventualmente utilizzati per [sviluppo locale](develop.md). Per le distribuzioni di produzione si consiglia vivamente di impostare un proxy inverso per l’endpoint GraphQL di e-commerce tramite il Dispatcher AEM o altri livelli di rete (come CDN).
+Il componente aggiuntivo CIF fornisce un servlet proxy GraphQL all’indirizzo `/api/graphql` che possono essere eventualmente utilizzati per [sviluppo locale](develop.md). Per le distribuzioni di produzione si consiglia vivamente di impostare un proxy inverso per l’endpoint GraphQL di e-commerce tramite il Dispatcher AEM o su altri livelli di rete (come CDN).
 
 ## Configurazione di store e cataloghi {#catalog}
 
@@ -69,13 +69,13 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 
 - Client GraphQL: seleziona il client GraphQL configurato per la comunicazione back-end Commerce. In genere questo dovrebbe rimanere il valore predefinito.
 - Visualizzazione archivio: l&#39;identificatore della vista archivio. Se questo campo viene lasciato vuoto, verrà utilizzata la visualizzazione archivio predefinita.
-- Percorso proxy GraphQL: percorso URL del proxy GraphQL in AEM per le richieste proxy all’endpoint GraphQL di back-end per e-commerce.
+- Percorso proxy GraphQL: percorso URL del proxy GraphQL AEM utilizzato per le richieste proxy all’endpoint GraphQL di back-end Commerce.
 
    >[!NOTE]
    >
-   >Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non devono essere modificate. Solo la configurazione avanzata che non utilizza il proxy GraphQL fornito dovrebbe modificare questa impostazione.
+   >Nella maggior parte delle impostazioni il valore predefinito `/api/graphql` non devono essere modificate. Solo la configurazione avanzata che non utilizza il proxy GraphQL fornito deve modificare questa impostazione.
 
-- Abilita supporto UID catalogo : abilita il supporto per UID invece di ID nelle chiamate GraphQL di back-end per e-commerce.
+- Abilita supporto UID catalogo : abilita il supporto per UID invece dell’ID nelle chiamate GraphQL di back-end per e-commerce.
 
    >[!NOTE]
    >

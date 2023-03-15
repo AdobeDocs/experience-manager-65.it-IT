@@ -86,7 +86,7 @@ Puoi scegliere di utilizzare la raccolta di statistiche di utilizzo utilizzando 
 
 Fai riferimento a [Perché effettuare l’aggiornamento AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) descrive una suddivisione di alto livello delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager.
 
-## Assets {#assets}
+## Risorse {#assets}
 
 ### Perché il flusso di lavoro Assets si ripete durante il caricamento di file MP4 (ad esempio, utilizzando il metodo di trascinamento della selezione)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 

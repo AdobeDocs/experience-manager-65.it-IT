@@ -9,11 +9,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '4514'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Concetti {#concepts}
+# Concetti{#concepts}
 
 Il quadro di integrazione fornisce i meccanismi e le componenti per:
 
@@ -395,7 +395,7 @@ Tieni presente che questo test delle prestazioni richiede conoscenze e analisi d
 
 * Volume dei contenuti
 
-   * Assets
+   * Risorse
    * Prodotti e SKU localizzati, I18ned
 
 * Attività utente:

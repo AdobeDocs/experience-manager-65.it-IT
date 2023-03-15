@@ -23,7 +23,7 @@ Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel m
 
 La documentazione relativa alle best practice disponibile per le aree seguenti:
 
-* [Assets](#assets)
+* [Risorse](#assets)
 * [Sites](#sites)
 
 Per le best practice per l’authoring, la distribuzione e la manutenzione o lo sviluppo, consulta uno dei seguenti argomenti:

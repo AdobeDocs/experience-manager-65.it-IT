@@ -59,7 +59,7 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
       * Genera un report per il sito della community selezionato, il tipo di contenuto e il periodo di tempo.
    * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un rapporto per il sito della community, il tipo di contenuto e il periodo di tempo selezionati.
+      * genera un rapporto per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
 
 

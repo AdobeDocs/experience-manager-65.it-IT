@@ -108,7 +108,7 @@ Fai clic sul pulsante &quot;Carica file di configurazione dell’applicazione Mo
 
 Ora che l’app mobile ha accesso al file ADBMobileConfig.json , ha la conoscenza su come comunicare di nuovo ad Adobe Analytics e iniziare a generare rapporti su questi valori importanti delle metriche che contribuiranno al successo delle app.
 
-## Novità? {#what-s-next}
+## Passaggio successivo? {#what-s-next}
 
 1. [Avvia la mia esperienza con l’app AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gestire il contenuto dell’app](/help/mobile/phonegap-manage-app-content.md)

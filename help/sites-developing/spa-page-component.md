@@ -14,7 +14,7 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -43,7 +43,7 @@ Non dimenticare di limitare l’inclusione del `cq.authoring.pagemodel.messaging
 
 ## Tipo di dati di comunicazione {#communication-data-type}
 
-Il tipo di dati di comunicazione è impostato un elemento HTML all’interno del componente Pagina AEM utilizzando `data-cq-datatype` attributo. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET hanno raggiunto gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello pagina. La libreria Modello pagina avvisa quindi il SPA degli aggiornamenti.
+Il tipo di dati di comunicazione è impostato un elemento HTML all’interno del componente Pagina AEM utilizzando `data-cq-datatype` attributo. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET hanno raggiunto gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello di pagina. La libreria Modello pagina avvisa quindi il SPA degli aggiornamenti.
 
 **Componente pagina SPA -`body.html`**
 
@@ -91,7 +91,7 @@ Proprietà della risorsa meta che descrivono il contenuto SPA:
 
 >[!CAUTION]
 >
->Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
+>Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. L’app non deve essere utilizzata per alcun progetto di lavoro.
 >
 >Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta SPA progetti utilizzando React o Angular e sfrutta l’SDK SPA. Tutti i progetti SPA su AEM devono essere basati su Maven Archetype for SPA Starter Kit.
 

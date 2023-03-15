@@ -471,7 +471,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 | `-N (--non-recursive)` | funziona su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory per visualizzare lo stato |
 
-### Aggiorna {#update}
+### Aggiornare {#update}
 
 Copia le modifiche dall&#39;archivio nella copia di lavoro.
 
@@ -656,7 +656,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da aggiungere |
 
-### Elimina {#delete}
+### Eliminare {#delete}
 
 Rimuove file e directory dal controllo della versione.
 

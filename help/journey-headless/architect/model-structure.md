@@ -1,25 +1,25 @@
 ---
-title: Scopri come creare modelli di frammenti di contenuto in AEM
+title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 13%
+ht-degree: 92%
 
 ---
 
-# Scopri come creare modelli di frammenti di contenuto in AEM {#architect-headless-content-fragment-models}
+# Scopri come creare modelli per frammenti di contenuto in AEM {#architect-headless-content-fragment-models}
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-All&#39;inizio del [AEM Percorso di authoring dei contenuti headless](overview.md) la [Nozioni di base sulla modellazione dei contenuti per headless con AEM](basics.md) ha trattato i concetti e la terminologia di base relativi all&#39;authoring per headless.
+All’inizio del [Percorso di authoring di contenuti AEM Headless](overview.md), [Nozioni di base sulla modellazione dei contenuti per headless con AEM](basics.md) ha trattato i concetti e la terminologia di base relativi all’authoring per headless.
 
-Questo articolo si basa su questi elementi per comprendere come creare modelli di frammenti di contenuto personalizzati per il progetto AEM headless.
+L&#39;articolo si basa su questi elementi per comprendere come creare modelli per frammenti di contenuto personalizzati per il progetto AEM headless.
 
 ## Obiettivo {#objective}
 
-* **Pubblico**: Principiante
+* **Pubblico**: principiante
 * **Obiettivo**: i concetti e la meccanica di modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 
 <!-- which persona does this? -->
@@ -37,29 +37,29 @@ At the very start you need to enable Content Fragment Models for your site, this
 >See Additional Resources - Content Fragments in the Configuration Browser
 -->
 
-## Creazione di modelli di frammenti di contenuto {#creating-content-fragment-models}
+## Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-È quindi possibile creare modelli di frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto.
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto.
 
 ![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
 
-Dopo aver selezionato questa opzione, si passa alla posizione del modello e si seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
+Dopo aver selezionato questa opzione, passa alla posizione del modello e seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
 
-Opzione **Abilita modello** è attivato per impostazione predefinita. Ciò significa che il modello sarà disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo avrai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
+L’opzione **Abilita modello** è attivata per impostazione predefinita. Ciò significa che il modello sarà disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo avrai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
 
-![Crea modello di frammento di contenuto](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Crea modello per frammento di contenuto](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Conferma con **Crea** e potete **Apri** il modello per iniziare a definire la struttura.
+Conferma con **Crea** e poi **Apri** il modello per iniziare a definire la struttura.
 
-## Definizione dei modelli di frammenti di contenuto {#defining-content-fragment-models}
+## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
 La prima volta che apri un nuovo modello viene visualizzato un grande spazio vuoto a sinistra e un lungo elenco di **Tipi di dati** a destra:
 
 ![Modello vuoto](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-Quindi - cosa fare?
+Quindi, cosa fare?
 
-Puoi trascinare le istanze della **Tipi di dati** nello spazio a sinistra - state già definendo il vostro modello!
+Puoi trascinare le istanze dei **Tipi di dati** nello spazio a sinistra: stai già definendo il tuo modello!
 
 ![Definizione dei campi](/help/assets/content-fragments/assets/cfm-models-04.png)
 
@@ -67,26 +67,26 @@ Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel c
 
 ![Proprietà dati](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-È possibile aggiungere tutti i campi necessari. Esempio:
+È possibile aggiungere un numero illimitato di campi. Esempio:
 
 ![Modello per frammenti di contenuto](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### Autori dei contenuti {#your-content-authors}
+### Gli autori dei contenuti {#your-content-authors}
 
-Gli autori dei contenuti non visualizzano i tipi di dati e le proprietà effettivamente utilizzati per creare i modelli. Ciò significa che potrebbe essere necessario fornire aiuto e informazioni su come completare campi specifici. Per informazioni di base è possibile utilizzare Etichetta campo e Valore predefinito, ma in casi più complessi potrebbe essere necessario prendere in considerazione la documentazione specifica del progetto.
+Gli autori dei contenuti non visualizzano i tipi di dati e le proprietà effettivamente utilizzati per creare i modelli. Ciò significa che potresti dover fornire loro aiuto e informazioni su come completare campi specifici. Per informazioni di base è possibile utilizzare Etichetta campo e Valore predefinito, ma in casi più complessi potrebbe essere necessario prendere in considerazione la documentazione specifica del progetto.
 
 >[!NOTE]
 >
 >Consulta Risorse aggiuntive - Modelli per frammenti di contenuto.
 
-## Gestione dei modelli di frammenti di contenuto {#managing-content-fragment-models}
+## Gestione dei modelli per frammenti di contenuto {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
-La gestione dei modelli di frammenti di contenuto comporta:
+La gestione dei modelli per frammenti di contenuto comporta:
 
 * Abilitarli (o disattivarli), per renderli disponibili agli autori al momento della creazione dei frammenti di contenuto.
-* Eliminazione: è sempre necessario eliminare, ma è necessario tenere presente che si elimina un modello già utilizzato per i frammenti di contenuto, in particolare i frammenti già pubblicati.
+* Eliminazione: è sempre necessario eliminare, ma ci si deve accertare di eliminare un modello già utilizzato per i frammenti di contenuto, in particolare i frammenti già pubblicati.
 
 ## Pubblicazione {#publishing}
 
@@ -96,15 +96,15 @@ I modelli per frammenti di contenuto devono essere pubblicati quando/prima che v
 
 >[!NOTE]
 >
->Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
+>Se un autore cerca di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
-Non appena un modello viene pubblicato, viene *bloccato* in modalità READ-ONLY sull&#39;autore. Questo obiettivo è quello di evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console da **Bloccato**.
+Non appena un modello viene pubblicato, viene *bloccato* in modalità SOLA LETTURA sull’autore. Questo serve a evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console come **Bloccato**.
 
-Quando il modello è **Bloccato** (in modalità DI SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire **Bloccato** modelli dalla console o dall’editor modelli.
+Quando il modello è **Bloccato** (in modalità SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli direttamente; anche se puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli.
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’iniziare a creare modelli di frammenti di contenuto personalizzati.
+Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’iniziare a creare modelli per frammenti di contenuto personalizzati.
 
 ## Risorse aggiuntive {#additional-resources}
 

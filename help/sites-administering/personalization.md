@@ -117,7 +117,7 @@ Quando utilizzi la personalizzazione, considera quanto segue:
 * Non c&#39;è niente di più frustrante per l&#39;utente che avere contenuti forzati o negati a loro a causa della logica imprecisa di una regola.
 * Pertanto, le regole devono essere ben concepite - con i requisiti dell&#39;utente in primo piano. Questo può richiedere molto lavoro e non deve essere sottovalutato; definire le regole di business spesso supera lo sforzo tecnico durante l’implementazione della personalizzazione.
 
-#### Quando utilizzare {#when-to-use}
+#### Applicazione consigliata {#when-to-use}
 
 * Come molte funzioni sul web, la personalizzazione deve essere utilizzata con attenzione. Il suo utilizzo andrà a vantaggio dell&#39;utente? Dovrebbe sempre essere la prima considerazione - o se l&#39;obiettivo desiderato può essere raggiunto con meno sforzo con un altro metodo. La personalizzazione può correre il rischio di essere una funzione che gli utenti configurano una volta (per vedere come funziona) e una sola volta, in quanto non offre loro vantaggi reali.
 * La personalizzazione ha un significato solo quando il contenuto è dinamico, in qualche modo dipende dall’utente. Se tutti gli utenti visualizzano lo stesso contenuto, la personalizzazione è ridondante.

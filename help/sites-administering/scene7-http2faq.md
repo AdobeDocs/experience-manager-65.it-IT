@@ -9,7 +9,7 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 ## Qual è la procedura per abilitare HTTP/2 per il mio account Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e richiedere il passaggio a HTTP/2; non viene fatto automaticamente per te.
+1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e richiedere il passaggio a HTTP/2; non viene fatto automaticamente per te.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    * Nome contatto principale, indirizzo e-mail e numero di telefono.

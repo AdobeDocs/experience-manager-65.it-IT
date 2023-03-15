@@ -34,7 +34,7 @@ Per il momento sono state aggiunte tre operazioni all&#39;elaborazione in serie:
 
 * Sposta
 * Copia
-* Elimina
+* Eliminare
 
 Il supporto per ulteriori operazioni verrà aggiunto in futuro.
 Per utilizzare questa funzione, devi passare alla cartella o alla raccolta in cui desideri eseguire un’operazione in blocco sulle pagine o sulle risorse.

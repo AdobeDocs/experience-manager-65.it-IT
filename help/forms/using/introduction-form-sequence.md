@@ -14,7 +14,7 @@ exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 0%
+ht-degree: 54%
 
 ---
 
@@ -28,24 +28,24 @@ Se il tuo caso d’uso richiede una serie di passaggi per l’acquisizione dei d
 
 Esempio di sequenza di moduli a più passaggi
 
-Prendiamo un caso d’uso in cui è necessario creare una sequenza per compilare, verificare, firmare e confermare i passaggi di un modulo. La procedura per creare una sequenza di questo tipo è la seguente:
+Prendiamo un caso d’uso in cui è necessario creare una sequenza per compilare, verificare, firmare e confermare i passaggi di un modulo. I passaggi per creare una sequenza di questo tipo sono i seguenti:
 
 1. Definire un modello di modulo e aggiungergli il pannello richiesto. Tieni presente che per ogni passaggio della sequenza deve essere presente un pannello. Tuttavia, puoi includere pannelli secondari all’interno di un pannello.
 
    In questo esempio, possiamo aggiungere i seguenti pannelli:
 
-   * **Riempimento**: Contiene campi dei moduli per l’acquisizione dei dati. In questo caso puoi includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari, finanziarie e così via.
+   * **Riempimento**: contiene campi dei moduli per l’acquisizione dei dati. In questo caso puoi includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari, finanziarie e così via.
 
    * **Verifica**: Contiene il **Verifica** che può essere utilizzato in un modulo adattivo basato su XFA. Visualizza le informazioni acquisite nel pannello Riempimento in modalità di sola lettura per la verifica.
 
    * **E-sign**: Contiene il **Sign** che può essere utilizzato in un modulo adattivo basato su XFA. fornisce i seguenti servizi di firma:
 
-      * Servizi eSign di Adobe Document Cloud
+      * Servizi di firma elettronica di Adobe Document Cloud
       * Firma scarabocchio
-   * **Conferma**: Contiene il **Riepilogo** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente Riepilogo, visualizzare un messaggio di ringraziamento, visualizzare un collegamento al PDF generato e così via.
+   * **Conferma**: contiene il componente **Riepilogo** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente Riepilogo con un messaggio di ringraziamento, un collegamento al PDF generato e così via.
 
 
-1. Seleziona il layout del pannello principale come **[!UICONTROL Creazione guidata]**.
+1. Seleziona il layout del pannello principale come **[!UICONTROL Procedura guidata]**.
 1. Completare i passaggi successivi per creare il modello di modulo. Per ulteriori informazioni, consulta [Creazione di un modello di modulo adattivo personalizzato](../../forms/using/custom-adaptive-forms-templates.md).
 
 Dopo aver definito la sequenza del modulo nel modello di modulo, è possibile utilizzarla per creare moduli che avranno la struttura di base definita come sequenza in posizione, anche se è sempre possibile personalizzare il modulo in base alle proprie esigenze.

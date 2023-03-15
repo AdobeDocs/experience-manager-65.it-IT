@@ -49,7 +49,7 @@ Di seguito sono riportate le immagini che mostrano come selezionare alcuni compo
 
 I componenti selezionati sono ora disponibili nel browser Componenti:
 
-![component design1](assets/component-design1.png)
+![component-design1](assets/component-design1.png)
 
 ## Clientlibs richiesti {#required-clientlibs}
 
@@ -65,7 +65,7 @@ Quando si aggiunge un componente Communities a una pagina, se il risultato è un
 
 ![clientlibs2](assets/clientlibs2.png)
 
-## Assegnazione tag {#tagging}
+## Assegnazione dei tag {#tagging}
 
 È possibile configurare molte funzioni di Communities per consentire ai membri di assegnare tag al contenuto immesso (pubblicato) nell’ambiente di pubblicazione.
 

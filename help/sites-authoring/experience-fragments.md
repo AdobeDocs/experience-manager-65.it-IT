@@ -287,7 +287,7 @@ Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni
 
 * Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
-* Elimina
+* Eliminare
 
 ![xf-13](assets/xf-13.png)
 

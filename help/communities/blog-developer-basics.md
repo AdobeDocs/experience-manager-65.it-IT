@@ -71,7 +71,7 @@ La funzione blog è composta da due componenti principali disponibili aggiungend
 |---|---|
 | [**comprensivo**](/help/communities/scf.md#add-or-include-a-communities-component) | No |
 | [**clientlibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **modelli** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **proprietà** | vedere [Funzione blog](/help/communities/blog-feature.md) |
 

@@ -39,7 +39,7 @@ La procedura seguente utilizza l’interfaccia touch per creare una configurazio
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. Digita un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Cloud Services che negli elenchi a discesa delle proprietà della pagina. Il nome predefinito si basa sul titolo. Facoltativamente, digita un nome da utilizzare per il nodo dell’archivio che memorizza la configurazione. Utilizzare il valore predefinito per la proprietà Configurazione padre che rappresenta il percorso del nodo del repository.
+1. Digita un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Servizi cloud che negli elenchi a discesa delle proprietà della pagina. Il nome predefinito si basa sul titolo. Facoltativamente, digita un nome da utilizzare per il nodo dell’archivio che memorizza la configurazione. Utilizzare il valore predefinito per la proprietà Configurazione padre che rappresenta il percorso del nodo del repository.
 1. Fai clic su Crea.
 1. Nella finestra di dialogo visualizzata, digitare i valori delle proprietà e quindi fare clic su OK.
 

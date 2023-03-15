@@ -420,7 +420,7 @@ Per configurare la replica dei contenuti per un’istanza di pubblicazione aggiu
 1. Imposta la **Titolo** e **Nome**, quindi seleziona **Agente di replica**.
 1. Fai clic su **Crea** per creare il nuovo agente.
 1. Fai doppio clic sul nuovo elemento dell&#39;agente per aprire il pannello di configurazione.
-1. Fai clic su **Modifica** - il **Impostazioni agente** viene aperta la finestra di dialogo - **Tipo di serializzazione** è già definito come predefinito, ma deve rimanere tale.
+1. Fai clic su **Modifica** - il **Impostazioni agente** si aprirà il dialogo - il **Tipo di serializzazione** è già definito come predefinito, ma deve rimanere tale.
 
    * In **Impostazioni** scheda:
 

@@ -13,7 +13,7 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ Facendo clic sul nome di un pacchetto, si espande la voce nell’elenco dei pacc
 
 Ulteriori azioni sono disponibili sotto **Altro** pulsante .
 
-* [Elimina](#deleting-packages)
+* [Eliminare](#deleting-packages)
 * [Copertura](#package-coverage)
 * [Contenuti](#viewing-package-contents-and-testing-installation)
 * [Ripeti adattamento](#rewrapping-a-package)

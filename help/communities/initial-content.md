@@ -86,7 +86,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-è stato definito, che offre la possibilità opzionale di fare riferimento a risorse di progettazione in uno script utilizzando `currentDesign.getPath()`. Esempio
+è stato definito, che offre la possibilità opzionale di fare riferimento a risorse di progettazione in uno script utilizzando `currentDesign.getPath()`. Per esempio
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 

@@ -244,7 +244,7 @@ Esempio:
 
 * /
 
-   * una sessione lavagna 
+   * a
    * b
 
       * sling:resourceSuperType = a

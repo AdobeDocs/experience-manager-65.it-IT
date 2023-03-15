@@ -8,7 +8,7 @@ feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2161'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ I seguenti gestori di contenuti multimediali sono disponibili in [!DNL Assets] e
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback nel caso in cui non sia stato trovato nessun altro gestore per estrarre dati da una risorsa |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Tutti i gestori eseguono le seguenti attività:
 

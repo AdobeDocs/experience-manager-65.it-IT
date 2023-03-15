@@ -14,7 +14,7 @@ exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -101,7 +101,7 @@ I punti chiave per l’utilizzo dei componenti di comunicazione interattivi sono
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**Configura**: Quando tocchi **Configura**, le proprietà dei componenti sono visibili nella barra laterale.
+A.**Configura**: quando tocchi **Configura**, le proprietà dei componenti sono visibili nella barra laterale.
 
 B.**Modifica regole**: Quando tocchi Modifica regole, viene visualizzato Editor regole in cui puoi modificare e creare regole per il componente selezionato. Nell’Editor regole è inoltre possibile selezionare altri oggetti modulo (componenti) e modificare/creare regole per tali oggetti modulo.
 
@@ -115,9 +115,9 @@ F. **Inserisci componente**: Consente di inserire un componente sopra il compone
 
 G. **Incolla**: Consente di incollare il componente tagliato o copiato utilizzando le opzioni descritte in precedenza.
 
-H. **Gruppo**: Consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
+H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **Elemento padre**: Consente di selezionare l’elemento padre di un componente.
+I. **Elemento principale**: consente di selezionare l’elemento principale di un componente.
 
 J. **Visualizza espressione SOM:** Consente di visualizzare il [Espressione SOM](../../forms/using/using-som-expressions-adaptive-forms.md) per il componente.
 
@@ -133,17 +133,17 @@ Inoltre, il **Sostituisci** nella barra degli strumenti puoi sostituire il compo
 
 La barra degli strumenti Pagina nella parte superiore fornisce opzioni che consentono di visualizzare in anteprima la comunicazione interattiva e di modificarne le proprietà. Puoi visualizzare in anteprima la comunicazione interattiva quando la crei e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili le seguenti opzioni:
 
-* Attiva/Disattiva pannello laterale ![pannello laterale di attivazione](assets/toggle-side-panel.png): Consente di mostrare o nascondere Sidebar.
+* Attiva/Disattiva pannello laterale![ attiva/disattiva pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
 * Informazioni sulla pagina ![pageinformationad](assets/pageinformationad.png): Consente di visualizzare le proprietà della pagina.
 * Emulatore ![righello](assets/ruler.png): Consente di emulare l’aspetto della comunicazione interattiva per diverse dimensioni di visualizzazione, come tablet e telefoni.
-* Modifica: Consente di selezionare altre modalità, ad esempio: Modifica, Stile, Sviluppatore e Progettazione.
+* Modifica: consente di selezionare altre modalità, ad esempio: Modifica, Stile, Sviluppatore e Progettazione.
 
    * Modifica: Consente di modificare le proprietà della comunicazione interattiva e dei relativi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
    * Stile: Consente di definire lo stile dei componenti della comunicazione interattiva. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
-   * Sviluppatore: Consente a uno sviluppatore di:
+   * Sviluppatore: consente a uno sviluppatore di:
 
       * Scopri la composizione della comunicazione interattiva.
-      * Esegui il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
    * Target: Consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 

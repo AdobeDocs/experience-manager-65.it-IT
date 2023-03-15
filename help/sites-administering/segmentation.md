@@ -13,7 +13,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -134,7 +134,7 @@ Sono disponibili i seguenti riferimenti predefiniti per eseguire un collegamento
 
 Per definire il nuovo segmento:
 
-1. Dopo [accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) dove desideri creare il segmento.
+1. Dopo l’[accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
 1. tocca o fai clic sul pulsante Crea e seleziona **Creare un segmento ContextHub**.
 

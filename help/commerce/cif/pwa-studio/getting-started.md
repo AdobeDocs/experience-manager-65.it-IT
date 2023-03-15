@@ -16,9 +16,9 @@ ht-degree: 0%
 
 PWA Studi si integra perfettamente con Adobe Commerce tramite GraphQL, offrendo opzioni illimitate per la creazione di vetrine innovative e coinvolgenti e di altre esperienze digitali.
 
-I frammenti di contenuto sono parti di contenuto con una struttura predefinita che consente loro di essere utilizzate in modo headless utilizzando GraphQL come API in diversi formati (ad esempio JSON, Markdown) ed eseguirne il rendering indipendente. I frammenti di contenuto includono tutti i tipi di dati e i campi necessari per GraphQL per garantire che l’applicazione richieda solo ciò che è disponibile e riceva ciò che è previsto. La flessibilità che offrono in termini di struttura li rende perfetti per l&#39;utilizzo in più posizioni e su più canali.
+I frammenti di contenuto sono parti di contenuto con una struttura predefinita che consente di utilizzarle in modo headless utilizzando GraphQL come API in diversi formati (ad esempio JSON, Markdown) ed eseguirne il rendering in modo indipendente. I frammenti di contenuto includono tutti i tipi di dati e i campi necessari affinché GraphQL possa richiedere solo ciò che è disponibile e ricevere ciò che è previsto. La flessibilità che offrono in termini di struttura li rende perfetti per l&#39;utilizzo in più posizioni e su più canali.
 
-La progettazione della struttura necessaria è semplice grazie all’Editor modelli di frammento di contenuto in Adobe Experience Manager. La sfida principale per integrare frammenti di contenuto Adobe Experience Manager (o qualsiasi altro dato) con l’applicazione PWA Studi è rappresentata dal recupero di dati da più endpoint GraphQL. Questo perché PWA Studi funziona con un singolo endpoint GraphQL di Adobe Commerce.
+La progettazione della struttura necessaria è semplice grazie all’Editor modelli di frammento di contenuto in Adobe Experience Manager. La sfida principale per integrare frammenti di contenuto Adobe Experience Manager (o qualsiasi altro dato) con l’applicazione PWA Studi è il recupero di dati da più endpoint GraphQL. Questo perché PWA Studi funziona con un singolo endpoint GraphQL di Adobe Commerce.
 
 ## Architettura {#architecture}
 
@@ -28,7 +28,7 @@ La progettazione della struttura necessaria è semplice grazie all’Editor mode
 
 Segui Adobe Commerce [Documentazione di PWA Studi](https://developer.adobe.com/commerce/pwa-studio/tutorials/) per configurare l’app PWA Studi.
 
-Per collegare PWA Studi all’endpoint GraphQL di AEM, è possibile utilizzare la variabile [Estensione AEM per PWA Studi](https://github.com/adobe/aem-pwa-studio-extensions).
+Per collegare PWA Studi all’endpoint GraphQL di AEM, è possibile utilizzare la funzione [Estensione AEM per PWA Studi](https://github.com/adobe/aem-pwa-studio-extensions).
 
 1. Consulta il repository
 
@@ -89,7 +89,7 @@ Per collegare PWA Studi all’endpoint GraphQL di AEM, è possibile utilizzare l
 
 ## AEM di installazione {#setup-aem}
 
-Per impostare un endpoint GraphQL per il progetto AEM, segui la documentazione AEM Frammenti di contenuto . Inoltre, nel progetto AEM, aggiungi le seguenti configurazioni per consentire all’applicazione PWA Studi di accedere all’endpoint GraphQL:
+Per impostare un endpoint GraphQL per il progetto AEM, segui la documentazione sui frammenti di contenuto AEM . Inoltre, nel progetto AEM, aggiungi le seguenti configurazioni per consentire all’applicazione PWA Studi di accedere all’endpoint GraphQL:
 
 * Criterio per la condivisione delle risorse tra le origini di Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
@@ -105,7 +105,7 @@ Per impostare un endpoint GraphQL per il progetto AEM, segui la documentazione A
 
 Puoi trovare esempi completi di entrambe le configurazioni qui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Per mostrare l’endpoint GraphQL, abbiamo preparato alcuni modelli e dati di frammenti di contenuto di esempio tramite un pacchetto di contenuti. Questi funzionano bene insieme ai componenti React forniti con l’estensione PWA Studi.
+Per mostrare l’endpoint GraphQL, abbiamo preparato alcuni modelli e dati di frammento di contenuto di esempio tramite un pacchetto di contenuti. Questi funzionano bene insieme ai componenti React forniti con l’estensione PWA Studi.
 
 ## Guida all’uso {#how-to-use}
 

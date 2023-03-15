@@ -20,7 +20,7 @@ L’architettura generale è la seguente:
 
 ![Panoramica dell’architettura AEM non di Magento/di terze parti](../assets//AEM_nonMagento_Architecture.png)
 
-Lo scopo di questo livello di integrazione è mappare API e schemi di terze parti rispetto alle API e agli schemi Adobe Commerce GraphQL supportati al di fuori dell’Experience Manager. Grazie a questa incapsulazione, la logica di integrazione e i sistemi possono essere aggiornati senza modificare il codice all’interno dell’Experience Manager.
+Lo scopo di questo livello di integrazione è mappare API e schemi di terze parti rispetto alle API e agli schemi di Adobe Commerce GraphQL supportati al di fuori dell’Experience Manager. Grazie a questa incapsulazione, la logica di integrazione e i sistemi possono essere aggiornati senza modificare il codice all’interno dell’Experience Manager.
 
 ## Requisiti della soluzione per un&#39;integrazione
 
@@ -61,4 +61,4 @@ I connettori forniscono un buon inizio per i progetti. Sono dotati di una connes
 
 >[!TIP]
 >
->Anche se i connettori aiutano i progetti ad accelerare l’integrazione Commerce, non sono plug-in-play. Le soluzioni di e-commerce Enterprise sono solitamente fortemente personalizzate e richiedono un’integrazione personalizzata. È necessaria una buona conoscenza della piattaforma e-commerce, degli schemi Adobe Commerce GraphQL e di Adobe I/O Runtime.
+>Anche se i connettori aiutano i progetti ad accelerare l’integrazione Commerce, non sono plug-in-play. Le soluzioni di e-commerce Enterprise sono solitamente fortemente personalizzate e richiedono un’integrazione personalizzata. È necessaria una buona conoscenza della piattaforma e-commerce, degli schemi GraphQL di Adobe Commerce e di Adobe I/O Runtime.

@@ -179,7 +179,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>evento4<br /> </td>
+   <td>event4<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestone4</td>
@@ -203,7 +203,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar 3</td>
+   <td>eVar3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -211,7 +211,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar 2</td>
+   <td>eVar2</td>
   </tr>
  </tbody>
 </table>

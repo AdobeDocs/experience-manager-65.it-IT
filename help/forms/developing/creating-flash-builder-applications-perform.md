@@ -71,7 +71,7 @@ Il servlet di sicurezza configurato in `/um/login` risponde utilizzando `URLVari
 
 **Processo di accesso**
 
-All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
+All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
 
 1. Cerca un cookie denominato `lcAuthToken`. Se l’utente ha già effettuato l’accesso a un’altra applicazione Forms, questo cookie è presente. Se il cookie viene trovato, il relativo contenuto viene convalidato.
 1. Se l&#39;SSO basato su intestazione è abilitato, il servlet cerca le intestazioni configurate per determinare l&#39;identità dell&#39;utente.
@@ -874,7 +874,7 @@ Le sezioni seguenti forniscono dettagli aggiuntivi che descrivono la comunicazio
 
 ### Si verifica una nuova autenticazione {#a-new-authentication-occurs}
 
-In questa situazione, l’utente tenta di accedere per la prima volta da un’applicazione client ad AEM Forms. (non esiste una sessione precedente che coinvolge l&#39;utente.) In `applicationComplete` evento `SSOManager.singleSignOn` viene richiamato che invia una richiesta all&#39;User Manager.
+In questa situazione, l’utente tenta di accedere per la prima volta da un’applicazione client ad AEM Forms. (non esiste una sessione precedente che coinvolge l&#39;utente). In `applicationComplete` evento `SSOManager.singleSignOn` viene richiamato che invia una richiesta all&#39;User Manager.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 

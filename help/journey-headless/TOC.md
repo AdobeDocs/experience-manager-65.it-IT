@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 # Percorsi AEM Headless {#headless-journey}
 
 + [Percorsi AEM Headless](/help/journey-headless/home.md)
-+ AEM Percorso di sviluppatori headless {#developer}
++ Percorso per sviluppatori headless di AEM {#developer}
    + [Capire headless in AEM](developer/overview.md)
    + [Informazioni sullo sviluppo headless di CMS](developer/learn-about.md)
    + [Guida introduttiva ad AEM Headless](developer/getting-started.md)
@@ -32,13 +32,13 @@ ht-degree: 94%
    + [Modellazione dei contenuti per headless con AEM - Introduzione](architect/introduction.md)
    + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](architect/basics.md)
    + [Scopri come creare modelli di frammenti di contenuto in AEM](architect/model-structure.md)
-+ AEM Percorso di authoring dei contenuti headless {#author}
++ Percorso di authoring di contenuti AEM headless {#author}
    + [Percorso di authoring di contenuti AEM headless - Panoramica](author/overview.md)
    + [Authoring per headless con AEM - Introduzione](author/introduction.md)
    + [Nozioni di base sull’authoring per headless con AEM](author/basics.md)
    + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](author/references.md)
    + [Scopri come definire metadati e tag per i frammenti di contenuto](author/metadata-tagging.md)
-+ AEM Percorso di traduzione headless {#translation}
++ Percorso di traduzione headless di AEM {#translation}
    + [Comprendere la traduzione headless in AEM](translation/overview.md)
    + [Guida introduttiva alla traduzione headless in AEM](translation/getting-started.md)
    + [Scopri i contenuti headless e come tradurre in AEM](translation/learn-about.md)

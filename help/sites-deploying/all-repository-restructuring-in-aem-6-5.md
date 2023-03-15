@@ -12,8 +12,8 @@ discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
-source-wordcount: '2693'
-ht-degree: 3%
+source-wordcount: '2690'
+ht-degree: 2%
 
 ---
 
@@ -747,7 +747,7 @@ Ad esempio, la `sling:resourceType` della configurazione ContextHub deve essere 
 | **Orientamento alla ristrutturazione** | Non è richiesta alcuna azione. |
 | **Note** | La console Web Attivazione albero è ora disponibile tramite **Strumenti > Implementazione > Replica > Attiva albero**. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Cloud Services connettore di traduzione fornitore {#vendor-translation-connector-cloud-services}
 

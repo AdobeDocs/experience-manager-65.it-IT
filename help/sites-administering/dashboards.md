@@ -61,7 +61,7 @@ Può essere utile disporre di più dashboard per vedere rapidamente le informazi
 1. Nella struttura ad albero, fate clic su **Dashboard**.
 1. Fate clic sul dashboard da eliminare.
 
-1. Fate clic su **Rimuovi**.
+1. Fai clic su **Rimuovi**.
 
 1. Fai clic su **Sì** per confermare.
 

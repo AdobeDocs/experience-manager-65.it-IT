@@ -254,7 +254,7 @@ Sling Resource Merger include due provider di risorse personalizzati, uno per le
 
    * finalità: unire le risorse in base al loro super-type
    * punto di montaggio: `/mnt/overide`
-   * utilizzo: `mount point + absolute path`
+   * usage: `mount point + absolute path`
    * esempio:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

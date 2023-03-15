@@ -70,7 +70,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>modelli</strong></td>
+   <td> <strong>templates</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 >Il parametro String deve *not* contiene una barra finale &quot;/&quot; per i seguenti metodi di MessageBuilder:
 >
 >* `setInboxPath`()
->* `setSentItemsPath`(1)
+>* `setSentItemsPath`()
 >
 >Esempio:
 >

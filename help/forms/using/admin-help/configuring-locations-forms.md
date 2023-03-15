@@ -53,7 +53,7 @@ Dove `host name`e `port` sono il nome server e il numero di porta del server che
 
 Il valore predefinito è una stringa vuota.
 
-**URI radice web:** La radice Web dell&#39;applicazione. Questo valore viene combinato con il parametro sTargetURL (quando sTargetURL è fornito come relativo), specificato tramite l’SDK per moduli di AEM, per creare un URL assoluto per accedere al contenuto web specifico per l’applicazione.
+**URI radice web:** La radice Web dell&#39;applicazione. Questo valore viene combinato con il parametro sTargetURL (quando sTargetURL è fornito come relativo), specificato tramite l’SDK per moduli AEM, per creare un URL assoluto per accedere al contenuto web specifico per l’applicazione.
 
 Il valore predefinito è una stringa vuota.
 

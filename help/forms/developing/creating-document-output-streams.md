@@ -906,7 +906,7 @@ Passa un documento recuperato dall’archivio utilizzando il servizio di output 
 
 1. Recupera la struttura del modulo dall’archivio AEM Forms.
 
-   Richiama il `ResourceRepositoryClient` dell’oggetto `readResourceContent` e passare un valore stringa che specifica la posizione URI nel file XDP. Esempio: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` istanza che rappresenta il file XDP.
+   Richiama il `ResourceRepositoryClient` dell’oggetto `readResourceContent` e passare un valore stringa che specifica la posizione URI nel file XDP. Esempio, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` istanza che rappresenta il file XDP.
 
 1. Eseguire il rendering del modulo PDF non interattivo.
 
@@ -1438,7 +1438,7 @@ Per recuperare un documento da stampare, utilizzare la `generatePrintedOutput` m
   </tr>
   <tr>
    <td><p>DPL 300 DPI </p></td>
-   <td><p>Crea un flusso di output DPL 300 DPI.</p></td>
+   <td><p>Crea un flusso di uscita DPL 300 DPI.</p></td>
   </tr>
   <tr>
    <td><p>DPL 406 DPI </p></td>

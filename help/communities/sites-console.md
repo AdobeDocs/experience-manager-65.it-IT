@@ -476,7 +476,7 @@ Il pannello PROGETTAZIONE consente di applicare un nuovo tema:
 
 Il pannello IMPOSTAZIONI consente di accedere alla maggior parte delle impostazioni sotto i pannelli secondari di per il passaggio 3 della creazione di siti community:
 
-* [Gestione utente](#user-management)
+* [User Management](#user-management)
 * [Tag](#tagging)
 * [Moderazione](#moderation)
 * [Ruoli dei membri](#roles)

@@ -8,7 +8,7 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ Puoi anche aggiungere altre schede al [!DNL Assets] pannello di amministrazione.
 
 >[!CAUTION]
 >
->A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per l&#39;annuncio, vedi [funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
+>A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per l&#39;annuncio, vedi [funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it). Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 

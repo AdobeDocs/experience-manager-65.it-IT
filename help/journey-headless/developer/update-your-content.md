@@ -1,35 +1,35 @@
 ---
-title: Come aggiornare i contenuti tramite le API di AEM Assets
-description: In questa parte del Percorso di sviluppatori AEM Headless, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
+title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
+description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 3%
+ht-degree: 93%
 
 ---
 
-# Come aggiornare i contenuti tramite le API di AEM Assets {#update-your-content}
+# Come aggiornare il contenuto utilizzando le API di AEM Assets. {#update-your-content}
 
-In questa parte del [AEM Percorso di sviluppo headless,](overview.md) scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
+In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso senza testa AEM, [Come accedere ai contenuti tramite API di consegna AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM tramite l’API GraphQL di AEM e ora dovresti:
+Nel documento precedente del percorso headless di AEM, [Come accedere ai contenuti utilizzando API di distribuzione di AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM utilizzando l’API GraphQL AEM e ora dovresti:
 
-* Comprendere ad alto livello GraphQL.
-* Scopri come funziona l’API GraphQL di AEM.
-* Comprendere alcune domande pratiche di esempio.
+* Conoscere GraphQL ad alto livello.
+* Sapere come funziona l’API GraphQL di AEM.
+* Comprendere alcune query pratiche di esempio.
 
-Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare il contenuto headless esistente in AEM tramite l’API REST.
+Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare il contenuto headless esistente in AEM utilizzando l’API REST.
 
 ## Obiettivo {#objective}
 
-* **Pubblico**: Avanzate
-* **Obiettivo**: Scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto:
-   * Introduzione all’API HTTP di AEM Assets.
-   * È possibile introdurre e discutere il supporto per i frammenti di contenuto nell’API.
-   * Illustrare i dettagli dell’API.
+* **Pubblico**: avanzato
+* **Obiettivo**: scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto:
+   * introduzione all’API HTTP di AEM Assets.
+   * Introduzione e discussione sul supporto per i frammenti di contenuto nell’API.
+   * Illustrazione dei dettagli dell’API.
 
 <!--
   * Look at sample code to see how things work in practice.
@@ -37,22 +37,22 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come agg
 
 ## Perché è necessaria l’API HTTP delle risorse per i frammenti di contenuto {#why-http-api}
 
-Nella fase precedente del Percorso Headless hai appreso dell’utilizzo dell’API GraphQL di AEM per recuperare il contenuto utilizzando le query.
+Nella fase precedente del Percorso Headless, hai imparato a usare l’API GraphQL di AEM per recuperare il contenuto utilizzando le query.
 
 Allora perché è necessaria un&#39;altra API?
 
-L’API HTTP di Assets consente di: **Leggi** i contenuti, ma consente anche di: **Crea**, **Aggiorna** e **Elimina** contenuto : azioni non possibili con l’API GraphQL.
+L’API HTTP di Assets ti consente quanto segue: **Lettura** dei contenuti, ma consente anche di **Creare**, **Aggiornare** ed **Eliminare** i contenuti: azioni impossibili con l’API GraphQL.
 
 L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente.
 
 ## API HTTP di Assets {#assets-http-api}
 
-L’API HTTP delle risorse include:
+L’API HTTP di Assets include:
 
 * API REST di Assets
 * incluso il supporto per i frammenti di contenuto
 
-L’implementazione corrente dell’API HTTP Assets si basa sul **REST** stile architettonico e consente di accedere ai contenuti (memorizzati in AEM) tramite **CRUDO** operazioni (Crea, Leggi, Aggiorna, Elimina).
+L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico **REST** e consente di accedere ai contenuti (memorizzati in AEM) utilizzando operazioni **CRUD** (Create (Crea), Read (Leggi), Update (Aggiorna) e Delete (Elimina)).
 
 Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
 
@@ -178,7 +178,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## API HTTP Assets e frammenti di contenuto {#assets-http-api-content-fragments}
+## API HTTP di Assets e frammenti di contenuto {#assets-http-api-content-fragments}
 
 I frammenti di contenuto vengono utilizzati per la distribuzione headless e un frammento di contenuto è un tipo speciale di risorsa. Sono utilizzati per accedere a dati strutturati, quali testi, numeri, date, ecc.
 
@@ -209,53 +209,53 @@ Associated content is currently not exposed.
 
 ### Accesso {#access}
 
-L’API REST di Assets utilizza l’ `/api/assets` e richiede il percorso della risorsa per accedervi (senza l’iniziale `/content/dam`).
+L’API REST di Assets utilizza l’`/api/assets` endpoint e richiede il percorso della risorsa per accedervi (senza l’iniziale `/content/dam`).
 
 * Ciò significa che per accedere alla risorsa in:
    * `/content/dam/path/to/asset`
-* È necessario richiedere:
+* è necessario richiedere:
    * `/api/assets/path/to/asset`
 
-Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiesta `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiedi `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->Accedere a:
+>l’accesso a:
 >
->* `/api/assets` **non** l&#39;uso `.model` selettore.
->* `/content/path/to/page` **does** richiedere l&#39;uso `.model` selettore.
+>* `/api/assets` **non è** necessario l’uso del selettore `.model`.
+>* `/content/path/to/page` **richiede** l’uso del selettore `.model`.
 
 
 ### Operazione {#operation}
 
-Il metodo HTTP determina l&#39;operazione da eseguire:
+Il metodo HTTP determina l’operazione da eseguire:
 
-* **GET** - per recuperare una rappresentazione JSON di una risorsa o di una cartella
-* **POST** - per creare nuove risorse o cartelle
-* **PUT** - per aggiornare le proprietà di una risorsa o di una cartella
-* **DELETE** - per eliminare una risorsa o una cartella
+* **GET**: per recuperare una rappresentazione JSON di una risorsa o di una cartella
+* **POST**: per creare nuove risorse o cartelle
+* **PUT**: per aggiornare le proprietà di una risorsa o di una cartella
+* **DELETE**: per eliminare una risorsa o una cartella
 
 >[!NOTE]
 >
->Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debba essere creata da un **POST** richiesta.
+>Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debbano essere create da una richiesta **POST**.
 
-Il formato esatto delle richieste supportate è definito nella documentazione Riferimento API.
+Il formato esatto delle richieste supportate è definito nella documentazione di riferimento API.
 
-L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubblicazione AEM e del tuo caso d’uso specifico.
+L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubblicazione di AEM, insieme al tuo caso d’uso specifico.
 
 * Si consiglia vivamente di associare la creazione a un’istanza di authoring (e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API).
-* La consegna è possibile da entrambi, in quanto AEM il contenuto richiesto solo in formato JSON.
+* La distribuzione è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
-   * L&#39;archiviazione e la consegna da un&#39;istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
+   * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
 
    * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
 
 >[!CAUTION]
 >
->La configurazione del dispatcher su AEM istanze potrebbe bloccare l’accesso a `/api`.
+>La configurazione del dispatcher su istanze AEM potrebbe bloccare l’accesso a `/api`.
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta Riferimento API . In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, consulta la Guida di riferimento API. In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -280,11 +280,11 @@ L’utilizzo avviene tramite:
 
 `POST /{cfParentPath}/{cfName}`
 
-Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare il `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostato su `application/json`.
+Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare la proprietà `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostata su `application/json`.
 
-### Aggiorna {#update}
+### Aggiornare {#update}
 
-Utilizzo tramite
+L’utilizzo avviene tramite:
 
 `PUT /{cfParentPath}/{cfName}`
 
@@ -292,7 +292,7 @@ Il corpo deve contenere una rappresentazione JSON di ciò che deve essere aggior
 
 Può trattarsi semplicemente del titolo o della descrizione di un frammento di contenuto, di un singolo elemento o di tutti i valori e/o metadati degli elementi.
 
-### Elimina {#delete}
+### Eliminare {#delete}
 
 L’utilizzo avviene tramite:
 
@@ -303,9 +303,9 @@ Per ulteriori dettagli sull’utilizzo dell’API REST di AEM Assets, puoi fare 
 * API HTTP di Adobe Experience Manager Assets (risorse aggiuntive)
 * Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets (risorse aggiuntive)
 
-## Novità {#whats-next}
+## Passaggio successivo {#whats-next}
 
-Dopo aver completato questa parte del Percorso di sviluppatori AEM Headless, devi:
+Ora che hai completato questa parte del percorso per sviluppatori headless di AEM, dovresti:
 
 * Scopri le nozioni di base dell’API HTTP di AEM Assets.
 * Scopri in che modo i frammenti di contenuto sono supportati in questa API.
@@ -328,5 +328,5 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Come an
 * [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=it)
+* [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=it)

@@ -247,7 +247,7 @@ Per definire **Fasi** per il flusso di lavoro:
 
    Un passaggio può essere assegnato a più passaggi. Esempio:
 
-   | **Incremento** | **Stadio** |
+   | **Passaggio** | **Ambiente di staging** |
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |

@@ -111,7 +111,7 @@ Di seguito viene descritto come modificare il file HTML al fine di convertire al
 >
 >La marcatura HTML per convertire parti della pagina di destinazione in componenti AEM dispone di una forma estesa e di una dichiarazione di tag con abbreviazioni. Per ciascun componente vengono descritte entrambe queste forme.
 
-### Limitazioni  {#limitations}
+### Limitazioni {#limitations}
 
 Prima di procedere all’importazione, considerate i seguenti limiti:
 

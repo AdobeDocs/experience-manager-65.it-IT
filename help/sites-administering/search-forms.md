@@ -225,7 +225,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
     </ul> </td>
   </tr>
   <tr>
-   <td>Percorso  </td>
+   <td>Percorso </td>
    <td>Cerca le risorse situate sotto un percorso specifico.</td>
    <td>
     <ul>
@@ -545,7 +545,7 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire l
    <td>Autorizzazioni di lettura e scrittura sul <code>/apps </code>nodo.</td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td>Autorizzazioni di lettura, scrittura, eliminazione per <code>/apps</code> nodo</td>
   </tr>
   <tr>

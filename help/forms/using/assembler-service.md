@@ -13,7 +13,7 @@ exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ Il servizio Assembler consente di combinare, ridisporre e integrare documenti PD
 
 È possibile utilizzare il servizio di assemblaggio per le seguenti operazioni:
 
-## Assemblare documenti PDF {#assemble-pdf-documents}
+## assemblare documenti PDF {#assemble-pdf-documents}
 
 È possibile utilizzare il servizio Assembler per assemblare due o più documenti PDF in un singolo documento PDF o Portfolio PDF. È inoltre possibile applicare funzioni al documento PDF per facilitarne la navigazione o migliorarne la sicurezza. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
 
@@ -53,7 +53,7 @@ caratteristiche:
 * Altre caratteristiche adottate dal documento di base (Doc1), compresi metadati, etichette di pagina e dimensioni della pagina
 * Facoltativamente, il documento risultante include un sommario costruito a partire dai segnalibri nei documenti di origine
 
-### Creare un Portfolio PDF {#create-a-pdf-portfolio}
+### Creare un portfolio PDF {#create-a-pdf-portfolio}
 
 Il servizio Assembler può creare Portfoli PDF contenenti una raccolta di documenti e un&#39;interfaccia utente autonoma. L’interfaccia è denominata Layout Portfolio di PDF o navigatore Portfolio di PDF (navigatore). I Portfoli di PDF estendono la funzionalità dei pacchetti di PDF aggiungendo un navigatore, cartelle e pagine di benvenuto. L’interfaccia può migliorare l’esperienza utente sfruttando le stringhe di testo localizzate, le combinazioni di colori personalizzate e le risorse grafiche. Il Portfolio PDF può anche includere cartelle per organizzare i file nel portfolio.
 
@@ -92,7 +92,7 @@ L’illustrazione seguente mostra un documento PDF contenente un identificatore 
 
 Documento PDF contenente un identificatore univoco nell&#39;intestazione del documento
 
-### Flatten e assemblare documenti {#flatten-and-assemble-documents}
+### Uniformare e assemblare documenti {#flatten-and-assemble-documents}
 
 È possibile utilizzare il servizio Assembler per trasformare un documento PDF interattivo (ad esempio un modulo) in un documento PDF non interattivo. Un documento PDF interattivo consente agli utenti di immettere o modificare i dati contenuti nei campi del documento di PDF. Il processo di trasformazione di un documento PDF interattivo in un documento PDF non interattivo è denominato appiattimento. Quando un documento PDF viene appiattito, l’aspetto grafico dei campi modulo viene mantenuto ma non è più interattivo. Un motivo per appiattire un documento di PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
 
@@ -262,7 +262,7 @@ source="myFragmentSource"/>
 
 ## Separare i documenti PDF {#disassemble-pdf-documents}
 
-È possibile utilizzare il servizio Assembler per smontare un documento PDF. Il servizio può estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti, ad esempio da una raccolta di istruzioni.
+È possibile utilizzare il servizio Assembler per smontare un documento PDF. Il servizio può estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti singoli, ad esempio da una raccolta di istruzioni.
 
 ### Estrarre pagine da un documento di origine {#extract-pages-from-a-source-document}
 
@@ -280,7 +280,7 @@ L&#39;esempio seguente è un documento DDX utilizzato per smontare il documento.
 </PDF>
 ```
 
-### Dividi un documento di origine basato sui segnalibri {#divide-a-source-document-based-on-bookmarks}
+### Dividere un documento di origine basato sui segnalibri {#divide-a-source-document-based-on-bookmarks}
 
 Nell&#39;illustrazione seguente, DocA è suddiviso in più documenti risultanti. Il primo segnalibro di livello 1 in una pagina identifica l&#39;inizio di un nuovo documento risultante.
 
@@ -298,7 +298,7 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per smontare 
 
 ## Determinare se i documenti sono conformi a PDF/A {#determine-whether-documents-are-pdf-a-compliant}
 
-È possibile utilizzare il servizio Assembler per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video.
+È possibile utilizzare il servizio Assembler per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
 
 ## Ottenere informazioni su un documento PDF {#obtain-information-about-a-pdf-document}
 

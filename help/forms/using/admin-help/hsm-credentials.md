@@ -33,7 +33,7 @@ AEM moduli Le firme digitali possono utilizzare le credenziali memorizzate in un
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio attendibilità > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni relative alle firme digitali, ad esempio l’operazione Firma campo firma.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Fai clic su Test della connettività HSM. Se AEM moduli è in grado di connettersi al dispositivo HSM, viene visualizzato un messaggio in cui si informa che l’HSM è disponibile. Fai clic su Avanti.
 1. Utilizza il Nome token, l’ID slot o l’indice dell’elenco di slot per identificare la posizione in cui le credenziali sono memorizzate nell’HSM.
 
@@ -48,7 +48,7 @@ AEM moduli Le firme digitali possono utilizzare le credenziali memorizzate in un
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio attendibilità > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni relative alle firme digitali, ad esempio l’operazione Firma campo firma.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Selezionare la casella di controllo Creazione profilo offline. Fai clic su Avanti.
 1. Nell’elenco dei dispositivi HSM, selezionare il produttore del dispositivo HSM in cui è memorizzata la credenziale.
 1. Nell’elenco Tipo di slot, selezionare ID slot, Indice slot o Nome token e specificare un valore nella casella Informazioni slot. Nei moduli AEM vengono utilizzate queste impostazioni per determinare dove sono memorizzate le credenziali nell’HSM.

@@ -14,7 +14,7 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ Questo articolo riassume il funzionamento di base di un SPA semplice e il minimo
 
 Per ulteriori dettagli sul funzionamento SPA in AEM, consulta i seguenti documenti:
 
-* [Introduzione a SPA e procedura dettagliata](/help/sites-developing/spa-walkthrough.md)
+* [Introduzione alla SPA e procedura dettagliata](/help/sites-developing/spa-walkthrough.md)
 * [Introduzione all’authoring SPA](/help/sites-developing/spa-overview.md)
 * [Blueprint SPA](/help/sites-developing/spa-blueprint.md)
 
@@ -122,7 +122,7 @@ Una volta generato, il pacchetto può essere caricato in un&#39;istanza AEM.
 
 ### Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 

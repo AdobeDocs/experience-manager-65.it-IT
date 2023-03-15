@@ -117,7 +117,7 @@ Finestra di dialogo Modifica proprietà per una comunicazione interattiva
 
 ## Scrivere i dati del modulo adattivo inviati nelle origini dati {#write-af}
 
-Quando un utente invia un modulo basato su un modello di dati modulo, è possibile configurare il modulo in modo da scrivere i dati inviati per un oggetto modello dati nelle relative origini dati. Per ottenere questo caso d’uso, AEM Forms fornisce [Azione di invio del modello dati modulo](../../forms/using/configuring-submit-actions.md), disponibile solo per i moduli adattivi basati su un modello dati del modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
+Quando un utente invia un modulo basato su un modello di dati modulo, è possibile configurare il modulo in modo da scrivere i dati inviati per un oggetto modello dati nelle relative origini dati. Per ottenere questo caso d’uso, AEM Forms fornisce [Azione di invio del modello dati modulo](../../forms/using/configuring-submit-actions.md), disponibile solo per i moduli adattivi basati su un modello di dati modulo. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
 
 Per configurare l’azione di invio Modello dati modulo, apri le proprietà Contenitore modulo adattivo e seleziona **[!UICONTROL Invia utilizzando il modello dati del modulo]** dal menu a discesa Invia azione sotto il pannello a soffietto Invio. Quindi, sfoglia e seleziona un oggetto modello dati dal **[!UICONTROL Nome dell’oggetto modello dati da inviare]** a discesa. Salva le proprietà.
 

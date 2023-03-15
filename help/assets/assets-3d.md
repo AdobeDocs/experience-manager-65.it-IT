@@ -221,7 +221,7 @@ Vedi [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. Nell’elenco a discesa Predefinito visualizzatore della finestra di dialogo File multimediali 3D , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
+1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
@@ -270,7 +270,7 @@ Vedi anche [Pubblicare pagine](/help/sites-authoring/publishing-pages.md).
 1. Seleziona **[!UICONTROL Chiudi]** per uscire dalla finestra di dialogo e tornare alla pagina dei dettagli della risorsa.
 1. Dall’elenco a discesa a sinistra del nome del file della risorsa 3D, seleziona **[!UICONTROL Rendering]**.
 
-   ![3d-asset-rendering](/help/assets/assets-dm/3d-asset-renditions.png)
+   ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
 1. Seleziona **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), la **[!UICONTROL URL]** viene visualizzato vicino all’angolo in basso a sinistra della pagina se sono soddisfatte tutte le seguenti condizioni della risorsa 3D:
    * Il asset 3D è un formato supportato (GLB, OBJ, STL e USDZ).

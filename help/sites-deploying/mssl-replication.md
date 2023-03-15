@@ -80,7 +80,7 @@ Segui la procedura seguente per creare una chiave privata e un certificato autof
 
    | Opzione | Autore | Pubblicazione |
    |---|---|---|
-   | -alias | autore | pubblicazione |
+   | -alias | author | pubblicazione |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -134,7 +134,7 @@ Genera una chiave privata e un certificato in formato pkcs#12. Utilizzo [openSSL
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -name | autore | pubblicazione |
+   | -name | author | pubblicazione |
 
 ## Installare la chiave privata e TrustStore sull’autore {#install-the-private-key-and-truststore-on-author}
 

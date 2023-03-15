@@ -233,7 +233,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Sotto **[!UICONTROL Requisito]**, scegli **[!UICONTROL Obbligatorio, in base a una nuova regola]** opzione .
-1. Fai clic su **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Fai clic su **[!UICONTROL Fine]** per salvare le modifiche.
+1. Fai clic su **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, fai clic su **[!UICONTROL Completati]**.
 
    ![define_rule](assets/define_rule.png)
 
@@ -243,7 +243,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. In **[!UICONTROL Visibilità]**, scegli l’opzione **[!UICONTROL Visibile, in base alla nuova regola]**.
 
-1. Fai clic su **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Fai clic su **[!UICONTROL Fine]** per salvare le modifiche.
+1. Fai clic su **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo di risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Per salvare le modifiche, fai clic su **[!UICONTROL Completati]**.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 

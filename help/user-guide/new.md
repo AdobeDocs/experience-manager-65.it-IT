@@ -7,7 +7,7 @@ exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -26,11 +26,11 @@ I clienti con un contratto di manutenzione e assistenza valido devono aver ricev
 
 [Ulteriori informazioni sulla distribuzione del software AEM.](/help/sites-deploying/home.md)
 
-Visita la nostra [Hub di AEM](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) per informazioni sulle versioni AEM.
+Visita la nostra [Hub di AEM](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) per informazioni sulle versioni AEM.
 
 ## Come è possibile ricevere assistenza ufficiale per AEM? {#official-support}
 
-In qualità di cliente con licenza, puoi ottenere assistenza per AEM dal nostro [team di assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html). Puoi anche farci domande nella [Community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) o [@AdobeExpCare](https://twitter.com/adobeexpcare) Maniglia twitter.
+In qualità di cliente con licenza, puoi ottenere assistenza per AEM dal nostro [team di assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html). Puoi anche farci domande nella [Community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it) o [@AdobeExpCare](https://twitter.com/adobeexpcare) Maniglia twitter.
 
 ## Dove si trova la documentazione per altre versioni di AEM? {#versions}
 
@@ -44,11 +44,11 @@ Abbiamo anche la documentazione per le versioni precedenti di Adobe Experience M
 * [AEM 6.1](https://docs.adobe.com/docs/it/aem/6-1.html)**
 * [AEM 6.0](https://docs.adobe.com/docs/it/aem/6-0.html)**
 * [AEM 5.6.1](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
-* [AEM 5.6](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.5](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.4](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.3](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CRX 2.3](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
+* [AEM 5.6](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
+* [CQ 5.5](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
+* [CQ 5.4](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
+* [CQ 5.3](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
+* [CRX 2.3](https://helpx.adobe.com/it/experience-manager/aem-previous-versions.html)**
 
 ** Indica che le versioni non sono più supportate ufficialmente da Adobe.
 

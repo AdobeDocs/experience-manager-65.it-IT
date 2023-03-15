@@ -37,7 +37,7 @@ Gli utenti che devono accedere alla console di personalizzazione devono far part
 
 Se dimentichi di aggiungere al gruppo target-activity-authors gli utenti o i gruppi a cui desideri accedere da admin console di personalizzazione, gli utenti non potranno più visualizzare la console di personalizzazione.
 
-## Cloud Services {#cloud-services}
+## Servizi cloud {#cloud-services}
 
 Per il funzionamento del contenuto di destinazione per le applicazioni mobili sono necessari due servizi: Adobe Target Service e Adobe Mobile Services. Il servizio Adobe Target fornisce il motore per l’elaborazione delle richieste dei clienti e la restituzione del contenuto personalizzato. Il servizio Adobe Mobile Services fornisce la connessione tra Adobe Services e l’app mobile tramite il file ADBMobileConfig.json, utilizzato dal plug-in AMS Cordova. Dalla dashboard di AEM Mobile è possibile configurare l&#39;applicazione aggiungendo i due servizi.
 

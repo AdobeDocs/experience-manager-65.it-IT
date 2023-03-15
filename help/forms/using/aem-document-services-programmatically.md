@@ -30,7 +30,7 @@ Esempi ed esempi in questo documento sono utili per comprendere e utilizzare AEM
 
 * Prima di utilizzare le API del servizio DocAssurance, [configurare il servizio DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) con te AEM progetto maven. Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* Scarica e configura [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) con te AEM progetto maven. Le classi client necessarie per creare progetti Maven utilizzando AEM Document Services sono disponibili in [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 
 * Scopri [come creare il progetto AEM utilizzando Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -3771,7 +3771,7 @@ L’API generatePDFOutput genera un documento PDF unendo una struttura del modul
    <td>Specifica il percorso e il nome del file di input. Il file può essere di tipo PDF o XDP. Se viene specificato solo il nome del file, il file viene letto in relazione a contentRoot specificato nelle opzioni. <br /> </td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>File XML contenente i dati uniti al documento PDF.<br /> </td>
   </tr>
   <tr>
@@ -3881,7 +3881,7 @@ Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativa
    <td>Specifica la mappa del nome del file della chiave e del modello.<br /> </td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>Specifica la mappa della chiave e del documento dati. Se la chiave non è null, viene eseguito il rendering del documento dati con il modello per la chiave corrispondente specificata nella mappa modelli. </td>
   </tr>
   <tr>
@@ -3998,7 +3998,7 @@ Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file 
    <td>Specifica il percorso e il nome del file di input. Se viene specificato solo il nome del file, il file viene letto in relazione a contentRoot specificato nelle opzioni. Il file può essere di tipo PDF o XDP.<br /> </td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>File XML contenente dati uniti a documenti PDF.<br /> </td>
   </tr>
   <tr>
@@ -4089,7 +4089,7 @@ Genera un output PCL, PostScript e ZPL in base a una struttura del modulo e a un
    <td>Specifica il percorso e il nome del file di input. Se viene specificato solo il nome del file, il file viene letto in relazione a contentRoot specificato nelle opzioni. Il file può essere di tipo XDP. </td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>File XML contenente dati uniti a documenti PDF.<br /> </td>
   </tr>
   <tr>
@@ -4170,11 +4170,11 @@ Genera un documento in formato PS, PCL e ZPL unendo una struttura del modulo ai 
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>modelli<br /> </td>
+   <td>templates<br /> </td>
    <td>Specifica la mappa del nome del file della chiave e del modello.<br /> </td>
   </tr>
   <tr>
-   <td>dati</td>
+   <td>data</td>
    <td>Specifica la mappa della chiave e del documento dati. Se la chiave non è null, viene eseguito il rendering del documento dati con il modello per la chiave corrispondente nella mappa modelli.<br /> </td>
   </tr>
   <tr>
@@ -4502,12 +4502,12 @@ Il servizio GeneratePDFService fornisce API per convertire vari formati di file 
   <tr>
    <td>exportPDF</td>
    <td><strong>✓</strong></td>
-   <td>.</td>
+   <td>✖</td>
   </tr>
   <tr>
    <td>OCR PDF (PDF ricercabile)</td>
    <td><strong>✓</strong></td>
-   <td>.</td>
+   <td>✖</td>
   </tr>
  </tbody>
 </table>

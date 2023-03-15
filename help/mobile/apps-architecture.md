@@ -63,7 +63,7 @@ Il corpo di una pagina di Angular viene rappresentato in modo diverso a seconda 
 
 In modalità di authoring, ogni singola pagina viene riprodotta separatamente. Angular non gestisce il routing tra le pagine, né un ng-view utilizzato per caricare un modello parziale che contiene i componenti della pagina. Invece, il contenuto del modello di pagina (template.jsp) è incluso sul lato server tramite il `cq:include` tag .
 
-Questa strategia abilita le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel sistema di paragrafi, nella barra laterale, in modalità progettazione, ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di authoring AEM.
+Questa strategia abilita le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel sistema paragrafo, nella barra laterale, in modalità progettazione, ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di authoring AEM.
 
 Tieni presente che template.jsp include è racchiuso in un `div` che contiene `ng-controller` direttiva. Questa struttura consente il collegamento del contenuto DOM con il controller. Pertanto, anche se le pagine con rendering sul lato client non riescono, i singoli componenti che lo fanno funzionano correttamente (consulta la sezione sui componenti di seguito).
 

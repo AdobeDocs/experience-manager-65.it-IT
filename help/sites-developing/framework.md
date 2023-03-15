@@ -335,7 +335,7 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` (nel caso in cui `/etc/tags` viene rilevato nel valore).
+Lo script recupera tutti i tag che hanno `/etc/tags` nel valore di `cq:movedTo/cq:backLinks` proprietà. Quindi esegue un&#39;iterazione del set di risultati recuperato e risolve il `cq:movedTo` e `cq:backlinks` valori delle proprietà su `/content/cq:tags` percorsi (nel caso in cui `/etc/tags` viene rilevato nel valore).
 
 ### Se l’istanza AEM aggiornata viene eseguita nell’interfaccia classica {#upgraded-instance-runs-classic-ui}
 

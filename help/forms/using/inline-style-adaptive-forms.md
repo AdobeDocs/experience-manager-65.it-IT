@@ -79,7 +79,7 @@ Osserva la modifica nello stile della casella di testo come mostrato nell’imma
   <tr>
    <td><p>Etichetta</p> </td>
    <td><p>Dimensioni e posizione &gt; larghezza</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>Corregge la larghezza di 100 px per l’etichetta</p> </td>
   </tr>
   <tr>

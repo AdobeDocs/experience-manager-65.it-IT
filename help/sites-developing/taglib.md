@@ -599,7 +599,7 @@ La `<sling:defineObjects>` Il tag espone i seguenti oggetti di script, utilizzat
 
 * Un oggetto SlingScriptHelper contenente metodi di convenienza per gli script, principalmente sling.include(&#39;/some/other/resource&#39;) per includere le risposte di altre risorse all&#39;interno di questa risposta (ad esempio incorporamento di snippet html di intestazione) e sling.getService(foo.bar.Service.class) per recuperare i servizi OSGi disponibili in Sling (Notazione classe a seconda del linguaggio di script).
 
-**risorsa**
+**resource**
 
 * l&#39;oggetto Resource corrente da gestire, a seconda dell&#39;URL della richiesta. È lo stesso di slingRequest.getResource().
 

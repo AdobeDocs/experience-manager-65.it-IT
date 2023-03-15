@@ -32,13 +32,13 @@ Ciò include l’utilizzo di risorse, contenuto del sito, contenuto CaaS (over-t
 
 I Content Services forniscono tre tipi principali di materiale:
 
-1. **Assets**
+1. **Risorse**
 1. **Contenuto HTML in pacchetto (HTML/CSS/JS)**
 1. **Contenuto indipendente dal canale**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Assets {#assets}
+## Risorse {#assets}
 
 Le raccolte di risorse sono costrutti AEM che contengono riferimenti ad altre raccolte.
 

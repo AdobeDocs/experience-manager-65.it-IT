@@ -157,7 +157,7 @@ Un amministratore o un moderatore della community può spostare uno o più argom
 
 Selezionando l’azione Taglia, il contenuto viene copiato negli Appunti. Più post possono essere copiati e spostati come gruppo nella nuova posizione.
 
-![cutgc](assets/cutugc.png)
+![cutugo](assets/cutugc.png)
 
 ![putbackugc](assets/putbackugc.png)
 

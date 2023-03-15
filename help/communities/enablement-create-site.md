@@ -71,7 +71,7 @@ Selezionare lo stile desiderato da applicare al modello. Se selezionato, il tema
 
 ![site-branding1](assets/site-branding1.png)
 
-![site branding2](assets/site-branding2.png)
+![site-branding2](assets/site-branding2.png)
 
 Seleziona **Avanti**.
 
@@ -129,7 +129,7 @@ Ad esempio:
 
 Accettare le impostazioni globali predefinite per [moderatore](/help/communities/sites-console.md#moderation) contenuto generato dall’utente (UGC).
 
-![moderazione1](assets/moderation1.png)
+![moderation1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 

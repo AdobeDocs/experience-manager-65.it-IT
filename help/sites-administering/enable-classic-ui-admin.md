@@ -30,7 +30,7 @@ In questo esempio, riattiveremo l’interfaccia classica per la console Sites .
 
    `/libs/cq/core/content/nav`
 
-   Esempio
+   Per esempio
 
    [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 

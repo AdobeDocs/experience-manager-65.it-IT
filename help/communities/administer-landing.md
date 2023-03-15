@@ -84,7 +84,7 @@ Una caratteristica principale di AEM Communities è la generazione di contenuti 
 * [Configurazione di Analytics](analytics.md): informazioni necessarie per abilitare le funzionalità di Adobe Analytics for Communities.
 * [Risorse di abilitazione assegnazione tag](tag-resources.md): necessari per creare cataloghi di abilitazione.
 
-### Implementazione {#deployment}
+### Distribuzione {#deployment}
 
 La sezione Distribuzione contiene informazioni specifiche di AEM Communities.
 

@@ -93,7 +93,7 @@ A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene 
 
 * [UGC](#user-generated-content)
 * [Gruppi di utenti](#community-user-groups)
-* [Assets](#enablement-assets)
+* [Risorse](#enablement-assets)
 * [Record del database](#database-records)
 
 ### ID sito univoco della community {#community-unique-site-id}

@@ -79,7 +79,7 @@ Quando la topologia è un’azienda di pubblicazione, gli argomenti rilevanti so
 ### JSRP {#jsrp}
 
 
-| Implementazione | CONTENUTO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | NEGOZIO COMUNE |
+| Distribuzione | CONTENUTO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | NEGOZIO COMUNE |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Farm TarMK (predefinito) | JCR | JCR | JSRP | No |
 | Cluster Oak | JCR | JCR | JSRP | Sì solo per ambiente di pubblicazione |

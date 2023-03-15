@@ -1537,7 +1537,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 ### Query di esempio per più frammenti di contenuto e relative varianti di un modello specifico {#sample-wknd-multiple-fragment-variations-given-model}
 
-Questa query rappresenta un’interrogazione per ottenere:
+Questa query rappresenta un’interrogazione:
 
 * per frammenti di contenuto di tipo `article` e tutte le varianti
 
@@ -1564,7 +1564,7 @@ query {
 
 ### Query di esempio per le varianti di frammento di contenuto di un modello specifico a cui è associato un tag specifico{#sample-wknd-fragment-variations-given-model-specific-tag}
 
-Questa query rappresenta un’interrogazione per ottenere:
+Questa query rappresenta un’interrogazione:
 
 * per frammenti di contenuto di tipo `article` con una o più varianti con il tag `WKND : Activity / Hiking`
 
@@ -1641,10 +1641,10 @@ I campi di base che definiscono l’azienda sono:
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
 | Nome dell’azienda | Testo su riga singola |  |
-| CEO | Riferimento frammento (singolo) | [Utente](#model-person) |
+| CEO | Riferimento frammento (singolo) | [Persona](#model-person) |
 | Dipendenti | Riferimento frammento (con più campi) | [Persona](#model-person) |
 
-#### Utente {#model-person}
+#### Persona {#model-person}
 
 I campi che definiscono un’utente, che può anche essere un dipendente:
 
@@ -1680,7 +1680,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 #### Azienda {#fragment-company}
 
-| Nome dell’azienda | Amministratore delegato | Dipendenti |
+| Nome dell’azienda | CEO | Dipendenti |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
@@ -1717,4 +1717,4 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San Jose |  USA |  102635 |  city:na |
 | Stoccarda |  Germania |  634830 |  city:emea |
-|  Zurigo |  Svizzera |  415367 |  città:capitale<br>città:emea |
+|  Zurigo |  Svizzera |  415367 |  city:capital<br>city:emea |

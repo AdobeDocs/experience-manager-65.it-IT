@@ -13,7 +13,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ AEM fornisce un set di strumenti per la creazione e modifica di contenuti con de
 
 ## Modalità di targeting {#targeting-mode}
 
-[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti per la creazione di contenuti per le esperienze delle vostre attività di marketing.
+[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
 
 ## Attività {#activities}
 
@@ -55,19 +55,19 @@ Ad esempio, la pagina Donne del sito web di esempio We.Retail può utilizzare le
 
 Usa la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea le offerte per un uso singolo o aggiungi le offerte da una libreria di offerte durante la [creazione di contenuti personalizzati](/help/sites-authoring/content-targeting-touch.md).
 
-## Motore di destinazione {#targeting-engine}
+## Motore di targeting {#targeting-engine}
 
-Il motore di destinazione è il meccanismo che definisce la logica per la creazione dei contenuti mirati. Le [Attività](/help/sites-authoring/activitylib.md) sono configurate per l&#39;utilizzo di uno di due motori di targeting a tua disposizione: AEM e Adobe Target.
+Il motore di destinazione è il meccanismo che definisce la logica per la creazione dei contenuti mirati. Le [attività](/help/sites-authoring/activitylib.md) sono configurate per utilizzare uno di due motori di targeting disponibili: AEM e Adobe Target.
 
 ### AEM {#aem}
 
-AEM fornisce un motore di destinazione integrato che elabora le richieste delle pagine e determina il contenuto da visualizzare. Quando utilizzi il motore di destinazione AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
+AEM fornisce un motore di destinazione integrato che elabora le richieste delle pagine e determina il contenuto da visualizzare. Quando utilizzi il motore di targeting di AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
 
 ### Adobe Target {#adobe-target}
 
-Il motore di destinazione Adobe Target permette di tenere traccia e raccogliere le informazioni sulle visite della pagina.
+Il motore di targeting di Adobe Target permette di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
 * Con questo motore di destinazione, si utilizzano i segmenti importati da Adobe Target per definire il pubblico delle esperienze.
 * Le attività che sfruttano Adobe Target vengono [sincronizzate con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-Puoi utilizzare questo motore quando hai [integrato con Adobe Target](/help/sites-administering/opt-in.md).
+Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-administering/opt-in.md).

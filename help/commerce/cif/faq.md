@@ -1,8 +1,8 @@
 ---
 title: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
 description: Domande frequenti sull'integrazione di AEM e commerce tramite Commerce Integration Framework
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 38%
@@ -13,7 +13,7 @@ ht-degree: 38%
 
 ## 1. CIF GraphQL è utilizzato solo per l’e-commerce o sarà disponibile per eseguire query sui contenuti creati su AEM JCR?
 
-Adobe ha adottato le API GraphQL di Adobe Commerce come API Commerce ufficiali per tutti i dati relativi all’e-commerce. Pertanto, AEM utilizza GraphQL per scambiare dati di e-commerce con Adobe Commerce e con qualsiasi motore di e-commerce tramite I/O Runtime. Questa API GraphQL è indipendente AEM API GraphQL per accedere ai frammenti di contenuto.
+Adobe ha adottato le API GraphQL di Adobe Commerce come API Commerce ufficiale per tutti i dati relativi all’e-commerce. Pertanto, AEM utilizza GraphQL per scambiare dati di e-commerce con Adobe Commerce e con qualsiasi motore di e-commerce tramite I/O Runtime. Questa API GraphQL è indipendente AEM API GraphQL per accedere ai frammenti di contenuto.
 
 ## 2. È possibile memorizzare le risorse di prodotto (immagini) e farvi riferimento da AEM tramite l’amministratore di Adobe Commerce? Come possono essere utilizzate le risorse da Dynamic Media?
 
@@ -55,7 +55,7 @@ Viene fornita un’implementazione di riferimento per la ricerca di prodotti, ma
 
 ## 11. Come funziona la ricerca con AEM e commercio utilizzando CIF?
 
-CIF fornisce i componenti Barra di ricerca e Risultati di ricerca. Il componente Barra di ricerca invia una richiesta GraphQL con il termine di ricerca alla soluzione di e-commerce che restituisce un elenco di prodotti che include nome prodotto, prezzo, SLUG, ecc. Il componente Risultato di ricerca visualizza quindi i risultati della ricerca in una visualizzazione a galleria su una pagina di risultati di ricerca creata su AEM. Il componente Ricerca supporta la ricerca full-text. Utilizziamo la chiave SLUG/url per creare un riferimento al PDP.
+CIF fornisce i componenti Barra di ricerca e Risultati di ricerca. Il componente Barra di ricerca invia una richiesta GraphQL con il termine di ricerca alla soluzione commerce che restituisce un elenco di prodotti che include nome prodotto, prezzo, SLUG, ecc. Il componente Risultato di ricerca visualizza quindi i risultati della ricerca in una visualizzazione a galleria su una pagina di risultati di ricerca creata su AEM. Il componente Ricerca supporta la ricerca full-text. Utilizziamo la chiave SLUG/url per creare un riferimento al PDP.
 
 ## 12. Come possono essere utilizzati i dati di prodotto in MSM o nelle traduzioni?
 

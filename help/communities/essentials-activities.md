@@ -26,7 +26,7 @@ La possibilità di seguire aggiunge un altro insieme di attività quando i membr
 
 Tutto [siti della community](/help/communities/overview.md#communitiessites) includere una pagina del profilo utente per il membro firmato che visualizzerà le attività membro nello stesso modo.
 
-## Concetti  {#concepts}
+## Concetti {#concepts}
 
 Un *flusso di attività* è l’elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti relative a un singolo thread di contenuto, ad esempio un argomento del forum o un blog.
 

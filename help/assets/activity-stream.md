@@ -19,7 +19,7 @@ Questa funzione visualizza i registri attività per le risorse nella timeline. S
 Le seguenti operazioni vengono registrate nel flusso di attività:
 
 * Creare
-* Elimina
+* Eliminare
 * Download (incluse le rappresentazioni)
 * Pubblicazione
 * Annulla pubblicazione

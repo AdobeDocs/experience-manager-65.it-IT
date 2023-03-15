@@ -460,7 +460,7 @@ Sono forniti diversi componenti preconfigurati; è possibile farvi riferimento n
 
 * **`rootPath`**
 
-   Questo limita il rapporto a una determinata sezione (struttura ad albero o sottoalbero) dell’archivio, consigliata per l’ottimizzazione delle prestazioni. Il percorso principale è specificato dal `rootPath` proprietà `report` nodo di ogni pagina del rapporto (tratto dal modello al momento della creazione della pagina).
+   Questo limita il rapporto a una determinata sezione (struttura ad albero o sottoalbero) dell’archivio, consigliata per l’ottimizzazione delle prestazioni. Il percorso principale è specificato dal `rootPath` proprietà `report` nodo di ciascuna pagina del rapporto (tratto dal modello al momento della creazione della pagina).
 
    Può essere specificato da:
 
@@ -654,7 +654,7 @@ N:definitions
 
          Definisce il percorso da anteporre.
 
-      * `propertyName` (obbligatorio)
+      * `propertyName` (mandatory)
 
          Definisce la proprietà nel percorso risolto in cui si trova il valore effettivo.
 

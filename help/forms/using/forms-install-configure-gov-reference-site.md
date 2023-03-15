@@ -25,8 +25,8 @@ Il pacchetto è stato creato per **Autore di AEM Forms 6.4 OSGI**, è stato test
 
 | VERSIONE AEM | VERSIONE DEL PACCHETTO AEM FORMS | STATO |
 |---|---|---|
-| 6.4 | 5,0,86 | **Funzione supportata** |
-| 6.5 | 6,0,80 | **Funzione supportata** |
+| 6.4 | 5.0.86 | **Funzione supportata** |
+| 6.5 | 6.0.80 | **Funzione supportata** |
 | 6.5.3 | 6.0.122 | **Funzione supportata** |
 
 Questo pacchetto contiene la configurazione cloud che supporta le seguenti versioni della piattaforma:

@@ -687,7 +687,7 @@ La configurazione dell’Experience Manager consiste dei due passaggi principali
 
    Per chiudere la finestra di dialogo Informazioni, selezionare **[!UICONTROL OK]**.
 
-   ![24/07/2019](assets/2019-07-25_12-09-24.png)
+   ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
 1. Per scaricare un file di chiave pubblica (&#42;.crt) nel sistema locale, seleziona **[!UICONTROL Scarica chiave pubblica]**.
 
@@ -854,4 +854,4 @@ Attualmente, Experience Manager Author non supporta l’integrazione dei visuali
 
 È possibile aggirare questa limitazione. Specifica l’URL di sviluppo o staging della libreria Tag piattaforma nella configurazione Experience Platform Tags Cloud per il nodo di pubblicazione Experience Manager di cui sopra. In questo modo il nodo di pubblicazione Experience Manager utilizza la versione di Sviluppo o Staging della libreria Tag Experience Platform.
 
-Vedi [Integrare Experience Manager con i tag di Experience Platform tramite [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) per ulteriori informazioni sulla configurazione di Experience Platform Tags Cloud Configuration.
+Vedi [Integrare Experience Manager con i tag di Experience Platform tramite [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it) per ulteriori informazioni sulla configurazione di Experience Platform Tags Cloud Configuration.

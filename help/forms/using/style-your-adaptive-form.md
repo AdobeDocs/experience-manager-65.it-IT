@@ -133,7 +133,7 @@ Le intestazioni e i piè di pagina forniscono un aspetto coerente e distintivo a
    |---|---|
    | Famiglia font | Arial |
    | Colore font | FFFFFF |
-   | Dimensione font | 54 px |
+   | Dimensione font | 54px |
 
 1. Tocca [!UICONTROL header] widget e toccare **[!UICONTROL Intestazione]**. Le opzioni di stile del widget Intestazione vengono visualizzate a sinistra. Espandi la **[!UICONTROL Dimension e posizione]** a soffietto, impostare **[!UICONTROL Altezza]** a `120px`, e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Espandi la **[!UICONTROL Sfondo]** a seconda del widget di intestazione, imposta il **[!UICONTROL Colore di sfondo]** a `F6921E.`
@@ -165,7 +165,7 @@ Le intestazioni e i piè di pagina forniscono un aspetto coerente e distintivo a
      </tr> 
      <tr> 
       <td>Altezza</td> 
-      <td>4,75rem</td> 
+      <td>4.75rem</td> 
      </tr> 
     </tbody> 
    </table>
@@ -214,7 +214,7 @@ Le intestazioni e i piè di pagina forniscono un aspetto coerente e distintivo a
      <tr> 
       <td>Testo</td> 
       <td>Dimensione font</td> 
-      <td>18 px</td> 
+      <td>18px</td> 
      </tr> 
      <tr> 
       <td>Dimension e posizione</td> 
@@ -283,7 +283,7 @@ Le intestazioni e i piè di pagina forniscono un aspetto coerente e distintivo a
      <tr> 
       <td>Testo</td> 
       <td>Dimensione font</td> 
-      <td>18 px</td> 
+      <td>18px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -338,7 +338,7 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
      <tr> 
       <td>Dimensioni e posizione</td> 
       <td>Altezza</td> 
-      <td>40 px</td> 
+      <td>40px</td> 
      </tr> 
      <tr> 
       <td>Dimensioni e posizione<br /> </td> 
@@ -357,7 +357,7 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
      <tr> 
       <td>Bordo</td> 
       <td>Spessore bordo</td> 
-      <td>1 px</td> 
+      <td>1px</td> 
      </tr> 
      <tr> 
       <td>Bordo</td> 
@@ -372,7 +372,7 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
      <tr> 
       <td>Bordo</td> 
       <td>Raggio bordo</td> 
-      <td>7 px</td> 
+      <td>7px</td> 
      </tr> 
      <tr> 
       <td>Testo</td> 
@@ -387,7 +387,7 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
      <tr> 
       <td>Testo</td> 
       <td>Dimensione font</td> 
-      <td>18 px</td> 
+      <td>18px</td> 
      </tr> 
      <tr> 
       <td>Testo</td> 

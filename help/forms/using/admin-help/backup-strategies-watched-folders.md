@@ -24,7 +24,7 @@ Questo contenuto descrive come le cartelle controllate sono influenzate da diver
 *Cartella osservata* è un&#39;applicazione basata su file system che richiama le operazioni di servizio configurate che manipolano il file all&#39;interno di una delle seguenti cartelle nella gerarchia delle cartelle controllate:
 
 * Input
-* Area di visualizzazione
+* Ambiente di staging
 * Output
 * Errore
 * Mantieni
@@ -58,7 +58,7 @@ La tabella seguente descrive la manipolazione dei file di cinque file di esempio
  </thead>
  <tbody>
   <tr>
-   <td><p>Ingresso</p></td>
+   <td><p>Input</p></td>
    <td><p>file1, file2, file3, file4</p></td>
    <td><p>file2, file3, file4</p></td>
    <td><p>file3, file4</p></td>
@@ -68,7 +68,7 @@ La tabella seguente descrive la manipolazione dei file di cinque file di esempio
    <td><p>vuoto</p></td>
   </tr>
   <tr>
-   <td><p>Area di visualizzazione</p></td>
+   <td><p>Ambiente di staging</p></td>
    <td><p>vuoto</p></td>
    <td><p>file1</p></td>
    <td><p>file2</p></td>
@@ -78,7 +78,7 @@ La tabella seguente descrive la manipolazione dei file di cinque file di esempio
    <td><p>file5</p></td>
   </tr>
   <tr>
-   <td><p>Uscita</p></td>
+   <td><p>Output</p></td>
    <td><p>vuoto</p></td>
    <td><p>vuoto</p></td>
    <td><p>file1_out</p></td>

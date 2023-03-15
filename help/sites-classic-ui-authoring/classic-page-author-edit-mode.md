@@ -1056,7 +1056,7 @@ Utilizzando **Percorso di caricamento** potete precaricare il modulo con valori 
          * **Visualizza dati...**
 
             Fate clic su questo pulsante per accedere a informazioni sui risultati del modulo in Bulk Editor. Da qui puoi esportare le informazioni in un `.tsv` File (separato da tabulazioni) da utilizzare, ad esempio, in un foglio di calcolo Excel.
-      * **Posta**
+      * **Mail**
 
          * **Da**
 

@@ -359,7 +359,7 @@ Al momento il &quot;Dough Day 2&quot; indica 9 metriche di test che puoi valutar
 | StdDev&#42; | La deviazione standard. |
 | 90p&#42; | 90 percentile. |
 | 99p&#42; | 99 percentile. |
-| 99,9p&#42; | 99,9 percentile. |
+| 99.9p&#42; | 99,9 percentile. |
 | Throughput reale&#42; | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
 
 Queste metriche vengono scritte con l’aiuto degli editori che possono essere aggiunti con `add` (simile all’aggiunta di test). Al momento sono disponibili due opzioni:

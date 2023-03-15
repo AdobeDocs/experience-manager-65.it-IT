@@ -38,9 +38,9 @@ Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.5
 
 Dopo aver eseguito un aggiornamento, procedi come segue per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
 
-Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) preinstallato.
+Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) preinstallato.
 
-1. Installa l&#39;ultima versione 6.5 [Pacchetto di compatibilità](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Installa l&#39;ultima versione 6.5 [Pacchetto di compatibilità](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
 
    Per ulteriori informazioni sul caricamento e l’installazione del pacchetto, vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ---
 
-# Strumento AEM repository{#aem-repo-tool}
+# AEM Repo Tool{#aem-repo-tool}
 
 AEM Repo Tool è una soluzione semplice per trasferire il contenuto JCR tra il filesystem locale e il server AEM tramite la riga di comando paragonabile a FTP. Lo strumento Repo AEM è simile al [Strumento Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), ma è più veloce, ha dipendenze minime ed è un semplice script bash.
 

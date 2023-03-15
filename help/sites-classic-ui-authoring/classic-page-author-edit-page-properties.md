@@ -147,9 +147,9 @@ Le proprietà sono distribuite su più schede:
 
       Carica un’immagine da usare come miniatura.
 
-### Cloud Services {#cloud-services}
+### Servizi cloud {#cloud-services}
 
-* **Cloud Services**
+* **Servizi cloud**
 
    Consente di definire le proprietà per i [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 

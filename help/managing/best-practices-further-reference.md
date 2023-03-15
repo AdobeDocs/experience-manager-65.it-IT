@@ -35,7 +35,7 @@ Considera le caratteristiche di AEM che utilizzerai e l’impatto sul tuo design
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
-* [Assets](/help/assets/assets.md)
+* [Risorse](/help/assets/assets.md)
 * [Tag](/help/sites-administering/tags.md)
 * [Gestione e traduzione multisito](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)

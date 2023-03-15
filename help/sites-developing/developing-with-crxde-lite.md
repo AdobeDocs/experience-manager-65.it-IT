@@ -104,11 +104,11 @@ CRXDE Lite offre le seguenti funzionalità:
    <td><p><strong>Salva tutto</strong>:<br /> </p> <p>Salva tutte le modifiche apportate. Fino a quando non fai clic su salva, le modifiche sono temporanee e andranno perse quando chiudi la console.</p> <p><strong>Versione precedente</strong>:</p> <p>Ignora tutte le modifiche apportate al nodo selezionato dall'ultima azione di salvataggio, quindi ricarica lo stato corrente dell'archivio per il nodo selezionato.</p> <p><strong>Ripristina tutto</strong>:</p> <p>Elimina tutte le modifiche apportate all’intero archivio dall’ultima azione di salvataggio, quindi ricarica lo stato corrente dell’archivio.</p> </td>
   </tr>
   <tr>
-   <td>Crea ...<br /> </td>
+   <td>Creare ...<br /> </td>
    <td><p>Menu a discesa per creare quanto segue sotto il nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nodo nt:file e il relativo sottonodo nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder node</p> <p>- <strong>Modello</strong>: modello AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Finestra</strong>: Finestra di dialogo AEM</p> </td>
   </tr>
   <tr>
-   <td>Elimina<br /> </td>
+   <td>Eliminare<br /> </td>
    <td>Elimina il nodo selezionato.<br /> </td>
   </tr>
   <tr>

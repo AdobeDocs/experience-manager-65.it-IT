@@ -11,7 +11,7 @@ ht-degree: 67%
 
 # Memorizzazione in cache e prestazioni {#caching}
 
-## Memorizzazione in cache di componenti e risposte GraphQL {#graphql}
+## Memorizzazione in cache di risposta di componenti e GraphQL {#graphql}
 
 I componenti core CIF di AEM dispongono già del supporto integrato necessario per memorizzare nella cache le risposte GraphQL per i singoli componenti. Questa funzione può essere utilizzata per ridurre notevolmente il numero di chiamate back-end di GraphQL. È possibile ottenere una memorizzazione efficace nella cache, in particolare per query ripetute come il recupero della struttura delle categorie per un componente di navigazione o il recupero di tutti i valori aggregati/facet disponibili visualizzati sulle pagine di ricerca di prodotto e categoria.
 
@@ -63,4 +63,4 @@ Con il caching basato su TTL, uno sviluppatore definisce in genere una o più du
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione della cache per GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)

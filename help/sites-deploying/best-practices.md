@@ -70,7 +70,7 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
  </tbody>
 </table>
 
-## Community {#communities}
+## Communities {#communities}
 
 AEM Communities semplifica la creazione e la gestione di community on-premise. Le best practice per AEM Communities sono descritte qui:
 

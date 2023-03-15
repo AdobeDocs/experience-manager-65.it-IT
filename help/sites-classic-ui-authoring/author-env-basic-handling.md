@@ -63,7 +63,7 @@ Le console principali sono:
    <td>In molti casi, le attività secondarie di un flusso di lavoro coinvolgono più persone, ognuna delle quali deve completare un passaggio prima che il lavoro possa essere passato alla persona successiva. La Casella in entrata permette di visualizzare tutte le notifiche relative a tali attività. Consultate <a href="/help/sites-administering/workflows.md">Lavorare con flussi di lavoro</a>. <br /> </td>
   </tr>
   <tr>
-   <td><strong>Assegnazione tag</strong></td>
+   <td><strong>Assegnazione dei tag</strong></td>
    <td>Questa console consente di gestire i tag. I tag sono parole o termini con cui è possibile e annotare i contenuti per facilitarne la ricerca e l’organizzazione. Per ulteriori informazioni consultate <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Uso e Gestione dei tag</a>.</td>
   </tr>
   <tr>

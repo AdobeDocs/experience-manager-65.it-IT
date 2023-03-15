@@ -764,7 +764,7 @@ Definisce un tipo mixin che contrassegna i file che possono essere aperti con l&
 
 `[cq:ComponentExtractorSource] mixin`
 
-## Assegnazione tag {#tagging}
+## Assegnazione dei tag {#tagging}
 
 ### cq:Tag {#cq-tag}
 

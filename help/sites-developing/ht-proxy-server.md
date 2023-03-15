@@ -88,7 +88,7 @@ Ad esempio, una richiesta per una pagina Web potrebbe avere il seguente aspetto:
 
 * C indica che questa voce proviene dal client (è una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
-* # 00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
+* #00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
 * `[GET <?>]` è il contenuto della richiesta, nell’esempio di una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:

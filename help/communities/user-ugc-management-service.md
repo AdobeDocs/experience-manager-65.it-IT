@@ -63,7 +63,7 @@ Ad esempio, per eliminare l’UGC di un utente con ID autorizzabile weston.mccal
 
 ### Eliminare UGC da Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Per eliminare i dati utente da Adobe Analytics, segui la [Flusso di lavoro di analisi del RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); poiché l’API non elimina i dati utente da Adobe Analytics.
+Per eliminare i dati utente da Adobe Analytics, segui la [Flusso di lavoro di analisi del RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=it); poiché l’API non elimina i dati utente da Adobe Analytics.
 
 Per le mappature delle variabili Adobe Analytics utilizzate da AEM Communities, fai riferimento alla seguente immagine:
 

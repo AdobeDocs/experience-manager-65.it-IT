@@ -59,7 +59,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>Assegnazione tag</td>
+   <td>Assegnazione dei tag</td>
   </tr>
   <tr>
    <td> </td>
@@ -139,7 +139,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>Processi</td>
+   <td>Jobs</td>
   </tr>
   <tr>
    <td>Sites</td>

@@ -89,5 +89,5 @@ Le seguenti linee guida aiuteranno gli sviluppatori esperti AEM per i siti che d
 
 Per ulteriori informazioni sugli altri due ruoli e responsabilità, consulta le risorse seguenti:
 
-* [Administrator](/help/mobile/aem-mobile.md)
+* [Amministratore](/help/mobile/aem-mobile.md)
 * [Autore](/help/mobile/aem-mobile-on-demand.md)

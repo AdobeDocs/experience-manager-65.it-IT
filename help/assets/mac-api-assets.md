@@ -70,7 +70,7 @@ Le cartelle sono simili alle directory dei file system tradizionali. Sono conten
 * `parent`: Collega alla cartella principale.
 * `thumbnail`: (Facoltativo) collega a un&#39;immagine miniatura della cartella.
 
-### Assets {#assets}
+### Risorse {#assets}
 
 Ad Experience Manager, una risorsa contiene i seguenti elementi:
 

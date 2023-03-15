@@ -15,13 +15,13 @@ exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2082'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Determinare Se I Documenti Sono Conformi A PDF/A {#determining-whether-documents-are-pdf-a-compliant}
 
-È possibile determinare se un documento PDF è conforme a PDF/A utilizzando il servizio Assembler. Un documento PDF/A esiste come formato di archiviazione per la conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video.
+È possibile determinare se un documento PDF è conforme a PDF/A utilizzando il servizio Assembler. Un documento PDF/A esiste come formato di archiviazione per la conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
 
 La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero A e B. La differenza principale tra i due livelli è rappresentata dal supporto della struttura logica (accessibilità), che non è necessario per il livello di conformità B. Indipendentemente dal livello di conformità, PDF/A-1 determina che tutti i font sono incorporati nel documento PDF/A generato. Al momento, la convalida (e la conversione) supporta solo PDF/A-1b.
 

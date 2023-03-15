@@ -6,7 +6,7 @@ exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 2%
+ht-degree: 24%
 
 ---
 
@@ -65,28 +65,28 @@ Utilizza il `/api/assets` e richiede il percorso della risorsa per accedervi (se
 
 * Ciò significa che per accedere alla risorsa in:
    * `/content/dam/path/to/asset`
-* È necessario richiedere:
+* è necessario richiedere:
    * `/api/assets/path/to/asset`
 
-Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiesta `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiedi `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->Accedere a:
+>l’accesso a:
 >
->* `/api/assets` **non** l&#39;uso `.model` selettore.
->* `/content/path/to/page` **does** richiedere l&#39;uso `.model` selettore.
+>* `/api/assets` **non è** necessario l’uso del selettore `.model`.
+>* `/content/path/to/page` **richiede** l’uso del selettore `.model`.
 
 
-Il metodo HTTP determina l&#39;operazione da eseguire:
+Il metodo HTTP determina l’operazione da eseguire:
 
-* **GET** - per recuperare una rappresentazione JSON di una risorsa o di una cartella
-* **POST** - per creare nuove risorse o cartelle
-* **PUT** - per aggiornare le proprietà di una risorsa o di una cartella
-* **DELETE** - per eliminare una risorsa o una cartella
+* **GET**: per recuperare una rappresentazione JSON di una risorsa o di una cartella
+* **POST**: per creare nuove risorse o cartelle
+* **PUT**: per aggiornare le proprietà di una risorsa o di una cartella
+* **DELETE**: per eliminare una risorsa o una cartella
 
 >[!NOTE]
 >
->Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debba essere creata da un **POST** richiesta.
+>Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debbano essere create da una richiesta **POST**.
 
 Il formato esatto delle richieste supportate è definito nella [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference) documentazione.
 
@@ -210,7 +210,7 @@ L’API REST di Assets espone l’accesso alle proprietà di una cartella; ad es
 >
 >A seconda del tipo di risorsa delle risorse e delle cartelle secondarie, l’elenco delle entità figlio può già contenere l’intero set di proprietà che definisce la rispettiva entità figlio. In alternativa, solo un set ridotto di proprietà può essere esposto per un’entità in questo elenco di entità figlio.
 
-### Assets {#assets}
+### Risorse {#assets}
 
 Se viene richiesta una risorsa, la risposta restituirà i relativi metadati; quali titolo, nome e altre informazioni definite dal rispettivo schema di risorse.
 
@@ -245,18 +245,18 @@ Il contenuto associato non è attualmente esposto.
 
 ## Utilizzando {#using}
 
-L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubblicazione AEM e del tuo caso d’uso specifico.
+L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubblicazione di AEM, insieme al tuo caso d’uso specifico.
 
 * Si consiglia vivamente di associare la creazione a un’istanza di authoring ([e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
-* La consegna è possibile da entrambi, in quanto AEM il contenuto richiesto solo in formato JSON.
+* La distribuzione è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
-   * L&#39;archiviazione e la consegna da un&#39;istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
+   * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
 
    * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
 
 >[!CAUTION]
 >
->La configurazione del dispatcher su AEM istanze potrebbe bloccare l’accesso a `/api`.
+>La configurazione del dispatcher su istanze AEM potrebbe bloccare l’accesso a `/api`.
 
 >[!NOTE]
 >
@@ -285,11 +285,11 @@ L’utilizzo avviene tramite:
 
 `POST /{cfParentPath}/{cfName}`
 
-Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare il `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostato su `application/json`.
+Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare la proprietà `cq:model` e deve puntare a un modello di frammento di contenuto valido. In caso contrario si verifica un errore. È inoltre necessario aggiungere un’intestazione `Content-Type` che è impostata su `application/json`.
 
-### Aggiorna {#update}
+### Aggiornare {#update}
 
-Utilizzo tramite
+L’utilizzo avviene tramite:
 
 `PUT /{cfParentPath}/{cfName}`
 
@@ -297,13 +297,13 @@ Il corpo deve contenere una rappresentazione JSON di ciò che deve essere aggior
 
 Può trattarsi semplicemente del titolo o della descrizione di un frammento di contenuto, di un singolo elemento o di tutti i valori e/o metadati degli elementi.
 
-### Elimina {#delete}
+### Eliminare {#delete}
 
 L’utilizzo avviene tramite:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 Ci sono alcune limitazioni:
 

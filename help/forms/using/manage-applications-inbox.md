@@ -155,4 +155,4 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
 
 1. Dopo aver configurato gli indici in CRX DE o aver distribuito tramite un pacchetto, [reindicizzare l&#39;archivio](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=it

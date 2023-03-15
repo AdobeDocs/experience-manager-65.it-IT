@@ -70,7 +70,7 @@ La tabella seguente descrive i processi comuni che riducono le vulnerabilità re
    <td><p>Utilizza i seguenti criteri per selezionare una soluzione firewall:</p> 
     <ul> 
      <li><p>Implementa firewall che supportano server proxy e/o <em>ispezione di stato</em> invece di semplici soluzioni di filtraggio dei pacchetti.</p> </li> 
-     <li><p>Utilizzare un firewall che supporta un <em>negare tutti i servizi, tranne quelli esplicitamente consentiti</em> paradigmi di sicurezza.</p> </li> 
+     <li><p>Utilizzare un firewall che supporta un <em>negare tutti i servizi tranne quelli esplicitamente consentiti</em> paradigmi di sicurezza.</p> </li> 
      <li><p>Implementa una soluzione firewall con doppia home o multihomed. Questa architettura fornisce il massimo livello di sicurezza e aiuta a evitare che utenti non autorizzati bypassino la sicurezza del firewall.</p> </li> 
     </ul> </td> 
   </tr> 
