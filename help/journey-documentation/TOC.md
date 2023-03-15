@@ -30,10 +30,10 @@ Please note that all links to other guides need to be absolute references with l
       + [Guida introduttiva ad AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
       + [Percorso della tua prima esperienza con AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
       + [Come modellare il contenuto come modelli di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
-      + [Come accedere ai contenuti tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
-      + [Come aggiornare i contenuti tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+      + [Come accedere al contenuto tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+      + [Come aggiornare il contenuto tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
       + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
-      + [Come vivere con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+      + [Come effettuare il Go Live con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
       + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
    + Percorso di traduzione headless {#translation}
       + [Comprendere la traduzione headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
@@ -53,7 +53,7 @@ Please note that all links to other guides need to be absolute references with l
       + [Panoramica del percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
       + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
       + [Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
-      + [Scopri come creare modelli di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
+      + [Scopri come creare modelli per frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Percorso di traduzione headless {#translation}
       + [Comprendere la traduzione headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
       + [Guida introduttiva alla traduzione headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)
