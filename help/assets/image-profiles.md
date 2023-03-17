@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
+source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
 workflow-type: tm+mt
-source-wordcount: '3008'
-ht-degree: 7%
+source-wordcount: '3047'
+ht-degree: 6%
 
 ---
 
@@ -45,12 +45,21 @@ Per ogni generazione di ritaglio avanzato creata è necessaria un’elaborazione
 **Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
 Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di lavorazione e la conservazione delle colture, l’Adobe consiglia le seguenti linee guida e suggerimenti:
 
-* Le risorse immagine a cui verrà applicato uno smart crop devono essere almeno 50 x 50 pixel o più grandi. <!-- CQDOC-20087 -->
-* Un profilo immagine contenente dimensioni di ritaglio avanzate duplicate non è consentito. <!-- CQDOC-20087 -->
-* Non sono consentiti i profili immagine denominati duplicati con opzioni di ritaglio avanzate impostate. <!-- CQDOC-20087 -->
+* Evita di creare profili di ritaglio avanzati duplicati con gli stessi valori di larghezza e altezza.
+* Denomina le colture avanzate in base alle dimensioni di ritaglio, non in base all&#39;utilizzo finale. In questo modo è possibile ottimizzare i duplicati in cui una singola dimensione viene utilizzata su più pagine.
+* Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
+* Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
 * Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
 * Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
 * Idealmente, puoi utilizzare 10-15 ritagli avanzati per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -157,7 +166,7 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse di Experience Manager in una cartella sia applicato il profilo selezionato.
 
-Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
+Puoi rielaborare le risorse in una cartella che dispone già di un profilo video esistente che hai successivamente modificato. Vedi [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
 **Per applicare un profilo immagine Dynamic Media a livello globale:**
 
@@ -194,7 +203,7 @@ Vedi anche [Modificare il ritaglio avanzato o il campione avanzato di più immag
 1. Selezionate l’immagine di cui desiderate regolare il ritaglio avanzato o il campione avanzato.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Ritaglio avanzato]**.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Nell’angolo in alto a destra della pagina, trascinate la barra di scorrimento verso sinistra o verso destra per aumentare o diminuire rispettivamente la visualizzazione dell’immagine.
    * Sull&#39;immagine, trascinate una maniglia d&#39;angolo per regolare le dimensioni dell&#39;area visibile del ritaglio o del campione.
