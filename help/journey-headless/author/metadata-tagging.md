@@ -2,10 +2,10 @@
 title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 97%
+source-wordcount: '259'
+ht-degree: 91%
 
 ---
 
@@ -31,6 +31,10 @@ Esistono tre metodi per aggiungere metadati e tag:
 * Al primo momento della creazione del frammento:
 
    ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* La **Variazioni** La scheda dell’editor Frammento di contenuto ti consente di aggiungere **Tag** dal progetto:
+
+   ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * La scheda **Metadati** dell’editor Frammento di contenuto ti consente di aggiungere sia vari campi di metadati sia **Tag** predefiniti dal progetto:
 
