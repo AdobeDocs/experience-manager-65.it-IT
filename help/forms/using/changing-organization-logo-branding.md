@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 0%
+source-wordcount: '133'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ Il logo dell’organizzazione viene visualizzato nell’angolo in alto a sinistr
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sull&#39;accesso a WebDAV, vedi [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Per ulteriori informazioni sull&#39;accesso a WebDAV, vedi [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
 1. Fare riferimento alla nuova immagine del logo nel foglio di stile /apps/ws/css/newStyle.css aggiungendo il seguente stile.
 

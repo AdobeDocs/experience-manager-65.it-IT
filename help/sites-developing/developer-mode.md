@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '688'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Queste consentono a uno sviluppatore di:
 >Vedi:
 >
 >* articolo della knowledge base, [Risoluzione dei problemi AEM TouchUI](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
->* sessione AEM Gems su [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+>* sessione AEM Gems su [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 >
 
 

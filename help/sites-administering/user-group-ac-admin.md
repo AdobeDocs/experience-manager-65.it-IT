@@ -11,7 +11,7 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 1%
@@ -277,8 +277,8 @@ Se un account ne impersona un altro è molto difficile da vedere. I file di regi
 >
 >A volte si può notare una perdita di prestazioni durante la registrazione di nuovi utenti in installazioni con un numero elevato di:
 >
->* users
->* groups con molti membri
+>* utenti
+>* gruppi con molti membri
 >
 
 
@@ -494,7 +494,7 @@ I criteri possono essere selezionati per:
 
 ### Privilegi {#privileges}
 
-Sono disponibili i seguenti privilegi per la selezione quando si aggiunge una voce di controllo di accesso (consulta la sezione [API di sicurezza](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) per maggiori dettagli):
+Sono disponibili i seguenti privilegi per la selezione quando si aggiunge una voce di controllo di accesso (consulta la sezione [API di sicurezza](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) per maggiori dettagli):
 
 <table>
  <tbody>
@@ -601,7 +601,7 @@ Sono disponibili i seguenti privilegi per la selezione quando si aggiunge una vo
 
    ![ac_privilegeregister](assets/ac_privilegeregister.png)
 
-1. Fai clic su **OK** per salvare. Il privilegio sarà ora disponibile per la selezione.
+1. Fai clic su **OK** da salvare. Il privilegio sarà ora disponibile per la selezione.
 
 ### Aggiunta di una voce di controllo di accesso {#adding-an-access-control-entry}
 

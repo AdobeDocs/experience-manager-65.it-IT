@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1098'
 ht-degree: 3%
 
 ---
 
 # Gestione di applicazioni e attività Forms nella casella in entrata AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Uno dei molti modi per avviare o attivare un flusso di lavoro incentrato su Forms è attraverso le applicazioni nella casella in entrata AEM. È necessario creare un’applicazione flusso di lavoro per rendere disponibile un flusso di lavoro Forms come applicazione nella casella in entrata. Per ulteriori informazioni sull&#39;applicazione del flusso di lavoro e su altri modi per avviare i flussi di lavoro Forms, vedi [Avvia un flusso di lavoro incentrato su Forms su OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Uno dei molti modi per avviare o attivare un flusso di lavoro incentrato su Forms è attraverso le applicazioni nella casella in entrata AEM. Per rendere disponibile un flusso di lavoro Forms come applicazione in Posta in arrivo, crea un’applicazione flusso di lavoro. Per ulteriori informazioni sull&#39;applicazione del flusso di lavoro e su altri modi per avviare i flussi di lavoro Forms, vedi [Avvia un flusso di lavoro incentrato su Forms su OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Inoltre, AEM Posta in arrivo consolida le notifiche e le attività da vari componenti AEM, inclusi i flussi di lavoro Forms. Quando viene attivato un flusso di lavoro dei moduli contenente un passaggio dell’attività Assegna, l’applicazione associata viene elencata come un’attività nella casella in entrata dell’assegnatario. Se l&#39;assegnatario è un gruppo, l&#39;attività viene visualizzata nella casella in entrata di tutti i membri del gruppo fino a quando l&#39;attività non viene attestata o delegata da un singolo utente.
 
@@ -64,7 +64,7 @@ Le attività assegnate a un gruppo vengono visualizzate nella casella in entrata
 Quando si apre un&#39;attività, è possibile visualizzare i dettagli dell&#39;attività ed eseguire le azioni disponibili. Le azioni disponibili per un&#39;attività sono definite nella fase Assegna attività del flusso di lavoro Forms associato.
 
 1. Tocca per selezionare la miniatura dell’attività. Le opzioni per aprire o delegare l’attività selezionata vengono visualizzate nella parte superiore.
-1. Tocca **Apri** per visualizzare i dettagli delle attività e intraprendere azioni. Viene visualizzata la visualizzazione dettagliata delle attività. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e intraprendere azioni sull&#39;attività.
+1. Tocca **Apri** per visualizzare i dettagli dell&#39;attività. Viene visualizzata la visualizzazione dettagliata delle attività. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e lavorare sull&#39;attività.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ Nella scheda Modulo dell’area di contenuto principale sono visualizzati gli ev
 
 La scheda Dettagli flusso di lavoro nella parte superiore mostra l’avanzamento dell’attività nelle varie fasi del flusso di lavoro. Mostra le fasi completate, correnti e in sospeso per l&#39;attività. Le fasi di un flusso di lavoro sono definite nella sezione [Assegna passaggio attività](/help/sites-developing/workflows-step-ref.md) del flusso di lavoro associato.
 
-Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Puoi toccare **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli relativi a tale fase. Visualizza commenti, allegati di moduli e attività, stato, date di inizio e fine e così via sull&#39;attività.
+Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Puoi toccare **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli relativi a tale fase. Visualizza commenti, allegati di moduli e attività, stato, date di inizio e fine e così via, sull&#39;attività.
 
 ![dettagli del flusso di lavoro](assets/workflow-details.png)
 
@@ -99,11 +99,11 @@ Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni 
 
 La barra degli strumenti Azioni mostra tutte le opzioni disponibili per l’attività. Le azioni predefinite Salva, Reimposta e Delega sono le azioni predefinite, mentre le altre azioni disponibili sono configurate in [Assegna passaggio attività](/help/sites-developing/workflows-step-ref.md). Nell’esempio precedente, Approva e Rifiuta sono configurati nel flusso di lavoro.
 
-Quando esegui un’azione sull’attività, continua a essere nel flusso di lavoro.
+Man mano che lavori sull’attività, questa continua a essere inclusa nel flusso di lavoro.
 
 ### Visualizza attività completate {#view-completed-tasks}
 
-AEM casella in entrata visualizza solo le attività attive. Le attività completate non vengono visualizzate nell’elenco. Tuttavia, è possibile utilizzare i filtri Casella in entrata per filtrare le attività in base a diversi parametri, ad esempio tipo di attività, stato, date di inizio e fine e così via. Per visualizzare le attività completate:
+AEM casella in entrata visualizza solo le attività attive. Le attività completate non vengono visualizzate nell’elenco. Tuttavia, è possibile utilizzare i filtri Casella in entrata per filtrare le attività in base a diversi parametri, ad esempio il tipo di attività, lo stato e le date di inizio e fine. Per visualizzare le attività completate:
 
 1. Nella casella in entrata AEM toccare ![pannello laterale di attivazione/disattivazione1](assets/toggle-side-panel1.png) per aprire il selettore del filtro.
 1. Tocca **[!UICONTROL Stato attività]** fisarmonica e selezionare **[!UICONTROL Completa]**. Vengono visualizzate tutte le attività completate.
@@ -141,7 +141,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
       | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuisci gli indici tramite un pacchetto AEM. Puoi utilizzare un [Archetipo AEM](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto Archetype AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. Puoi utilizzare un [Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto Archetype AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

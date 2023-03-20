@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Ci sono molti strumenti di test delle prestazioni disponibili sul mercato. Quand
 
 #### Strumenti di test {#testing-tools}
 
-* dell’Adobe **Giorno difficile** può essere utilizzato per generare carico sulle istanze AEM e raccogliere dati sulle prestazioni. Il team di progettazione AEM di Adobe utilizza effettivamente lo strumento per eseguire il test di carico del prodotto AEM stesso. Gli script eseguiti in Tough Day sono configurati tramite file di proprietà e file XML JMX. Per ulteriori informazioni, consulta la sezione [Documentazione del giorno difficile](/help/sites-developing/tough-day.md).
+* Adobe **Giorno difficile** può essere utilizzato per generare carico sulle istanze AEM e raccogliere dati sulle prestazioni. Il team di ingegneri AEM Adobe utilizza effettivamente lo strumento per eseguire il test di carico del prodotto AEM stesso. Gli script eseguiti in Tough Day sono configurati tramite file di proprietà e file XML JMX. Per ulteriori informazioni, consulta la sezione [Documentazione del giorno difficile](/help/sites-developing/tough-day.md).
 
 * AEM fornisce strumenti pronti all’uso per visualizzare rapidamente query, richieste e messaggi di errore problematici. Per ulteriori informazioni, consulta la sezione [Strumenti di diagnosi](/help/sites-administering/operations-dashboard.md#diagnosis-tools) sezione della documentazione del dashboard delle operazioni.
-* Apache fornisce un prodotto chiamato **JMeter** che può essere utilizzato per i test di prestazioni e carico e per il comportamento funzionale. È un software open source e gratuito da utilizzare, ma ha un set di funzioni più piccolo rispetto ai prodotti aziendali e una curva di apprendimento più ampia. JMeter è disponibile sul sito web di Apache all&#39;indirizzo [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache fornisce un prodotto chiamato **JMeter** che può essere utilizzato per i test di prestazioni e carico e per il comportamento funzionale. È un software open source e gratuito da utilizzare, ma ha un set di funzioni più piccolo rispetto ai prodotti aziendali e una curva di apprendimento più ampia. JMeter può essere trovato sul sito web di Apache all&#39;indirizzo [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Load Runner** è un prodotto di test del carico di livello enterprise. È disponibile una versione di valutazione gratuita. Ulteriori informazioni sono disponibili all&#39;indirizzo [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
@@ -76,7 +76,7 @@ La [Monitoraggio delle prestazioni](/help/sites-deploying/monitoring-and-maintai
 
 **Modalità sviluppatore nell’interfaccia utente touch**
 
-Una delle nuove funzioni nell’interfaccia touch di AEM 6 è la modalità Sviluppatore . Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità di sviluppo nell’interfaccia utente dell’autore per visualizzare il tempo di rendering per ciascuno dei componenti della pagina e per vedere le tracce di stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questo [Presentazione di CQ Gems](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+Una delle nuove funzioni nell’interfaccia touch di AEM 6 è la modalità Sviluppatore . Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità di sviluppo nell’interfaccia utente dell’autore per visualizzare il tempo di rendering per ciascuno dei componenti della pagina e per vedere le tracce di stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questo [Presentazione di CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
 **Utilizzo di rlog.jar per leggere i registri delle richieste**
 
@@ -88,7 +88,7 @@ La [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#ex
 
 **Strumenti PageSpeed**
 
-Gli strumenti PageSpeed di Google offrono analisi del sito per rispettare le best practice per le prestazioni della pagina, oltre a un plug-in che può essere installato insieme al dispatcher su un’istanza Apache per ulteriori ottimizzazioni. Per ulteriori informazioni, consulta la sezione [Sito Web degli strumenti PageSpeed](https://developers.google.com/speed/pagespeed/).
+Gli strumenti Google PageSpeed offrono analisi del sito per garantire l’aderenza alle best practice per le prestazioni della pagina, nonché un plug-in che può essere installato insieme al dispatcher su un’istanza Apache per ulteriori ottimizzazioni. Per ulteriori informazioni, consulta la sezione [Sito Web degli strumenti PageSpeed](https://developers.google.com/speed/pagespeed/).
 
 ## Ambiente di authoring {#author-environment}
 
@@ -114,7 +114,7 @@ Per la cache denominata **Document-Diff**, il tasso di hit deve essere superiore
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-La **ObservationQueueMaxLength** la sezione mostrerà il numero di eventi nella coda di osservazione di Oak nelle ultime ore, minuti, secondi e settimane. Trova il maggior numero di eventi nella sezione &quot;per ora&quot;. Questo numero deve essere confrontato con il `oak.observation.queue-length` impostazione. Se il numero più alto indicato per la coda di osservazione supera il `queue-length` impostazione:
+La **ObservationQueueMaxLength** La sezione mostrerà il numero di eventi nella coda di osservazione di Oak nelle ultime ore, minuti, secondi e settimane. Trova il maggior numero di eventi nella sezione &quot;per ora&quot;. Questo numero deve essere confrontato con il `oak.observation.queue-length` impostazione. Se il numero più alto indicato per la coda di osservazione supera il `queue-length` impostazione:
 
 1. Crea un file denominato: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` contenente il parametro `oak.observation.queue‐length=50000`
 1. Posizionalo nella cartella /crx-quickstart/install .
@@ -153,6 +153,6 @@ Dopo aver eseguito i test delle prestazioni sull&#39;istanza dell&#39;autore, tu
 * Se sono presenti problemi nella modifica di determinate pagine o componenti nelle istanze dell&#39;autore, utilizza la modalità TouchUI Developer per controllare la pagina in questione. Questo fornisce un raggruppamento di ogni area di contenuto della pagina e del relativo tempo di caricamento
 * Minimizza tutti i JS e i CSS sul sito. Per ulteriori informazioni su come eseguire questa operazione, consulta [post di blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Elimina CSS e JS incorporati dai componenti. Devono essere inclusi e minimizzati con le librerie lato client per ridurre al minimo il numero di richieste necessarie per eseguire il rendering della pagina
-* Utilizza gli strumenti del browser come la scheda Rete di Chrome per controllare le richieste del server e vedere quali richiedono più tempo.
+* Utilizza gli strumenti del browser come la scheda Rete di Chrome per controllare le richieste del server e vedere quali stanno prendendo più a lungo.
 
 Una volta individuate le aree problematiche, il codice dell&#39;applicazione può essere esaminato per individuare ottimizzazioni delle prestazioni. Qualsiasi funzionalità preconfigurata AEM che non funziona correttamente può essere risolta con il supporto Adobe.

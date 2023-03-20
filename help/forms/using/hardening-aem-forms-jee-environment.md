@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Prima di installare AEM Forms su JEE , puoi applicare soluzioni di sicurezza al 
 
 **Installazione e configurazione su UNIX e Linux**
 
-Non installare o configurare AEM Forms su JEE utilizzando una shell principale. Per impostazione predefinita, i file sono installati nella directory /opt e l&#39;utente che esegue l&#39;installazione ha bisogno di tutte le autorizzazioni dei file in /opt. In alternativa, è possibile eseguire un’installazione sotto la directory /user di un singolo utente, in cui dispongono già di tutte le autorizzazioni per i file.
+Non installare o configurare AEM Forms su JEE utilizzando una shell principale. Per impostazione predefinita, i file sono installati nella directory /opt e l&#39;utente che esegue l&#39;installazione ha bisogno di tutte le autorizzazioni dei file in /opt. In alternativa, è possibile eseguire un&#39;installazione sotto la directory /user di un singolo utente in cui dispongono già di tutte le autorizzazioni per i file.
 
 **Installazione e configurazione in Windows**
 
@@ -193,7 +193,7 @@ Per eseguire l&#39;application server su cui viene distribuito AEM Forms su JEE,
    * **Directory CRX-Repository**: Il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
    * **Directory temporanee di AEM Forms**:
       * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
-      * (AIX, Linux o Solaris) La directory principale dell&#39;utente registrato nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+      * (AIX, Linux o Solaris) Directory home dell&#39;utente registrato Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp
@@ -519,7 +519,7 @@ Alcuni URL vengono evidenziati come applicazioni web rivolte all’utente finale
    <td><p>Sì</p> </td> 
   </tr> 
   <tr> 
-   <td><p>/Workspace/*</p> </td> 
+   <td><p>/workspace/*</p> </td> 
    <td><p>Applicazione web per l’utente finale di Workspace</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>Sì</p> </td> 
@@ -958,7 +958,7 @@ Riferimento all’architettura fisica descritta nella sezione [Architettura fisi
 
 Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, consulta &quot;Configuring SSL&quot; in [aiuto amministrativo](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Per istruzioni su come importare certificati in JVM (Java Virtual Machine) configurati per un server AEM Forms, consulta la sezione Autenticazione reciproca in [Guida di AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
+Per istruzioni su come importare certificati in JVM (Java Virtual Machine) configurati per un server AEM Forms, consulta la sezione Autenticazione reciproca in [Guida di AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configurazione del reindirizzamento SSL {#configuring-ssl-redirect}
 
@@ -1015,7 +1015,7 @@ L&#39;installazione chiavi in mano di AEM Forms su JEE imposta un account di ser
    * **Directory CRX-Repository**: Il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
    * **Directory temporanee di AEM Forms**:
       * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
-      * (AIX, Linux o Solaris) La directory principale dell&#39;utente registrato nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+      * (AIX, Linux o Solaris) Directory home dell&#39;utente registrato Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp

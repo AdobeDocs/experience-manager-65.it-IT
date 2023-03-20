@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 8%
+source-wordcount: '1288'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
       * Componente che l’utente può aggiungere a una pagina.
       * Come impostazione predefinita parsys per la pagina.
-      * Entrambe.
+      * Entrambi.
 
          È possibile avere il Contenitore di layout come standard per la pagina, consentendo all’utente di aggiungere altri contenitori di layout al suo interno; ad esempio, per ottenere il controllo delle colonne.
 
@@ -48,17 +48,18 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la funzione 
 **Layout** per posizionare il contenuto all’interno della griglia reattiva.
 
-* [**Emulatore**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) Consente di creare e modificare siti Web reattivi il cui layout si riorganizza in base alle dimensioni del dispositivo/finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
+* [**Emulatore**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
+Questo consente di creare e modificare siti web reattivi il cui layout si riorganizza in base alle dimensioni del dispositivo/finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare il rendering del contenuto utilizzando l’emulatore.
 
 >[!CAUTION]
 >
 >Anche se la **Contenitore di layout** Il componente è disponibile nell’interfaccia classica, le sue funzionalità complete sono disponibili solo nell’interfaccia touch.
 
-Con questi meccanismi basati su una griglia reattiva è possibile:
+Con questi meccanismi a griglia reattiva è possibile:
 
 * Utilizza i punti di interruzione (che indicano il raggruppamento dei dispositivi) per definire comportamenti di contenuto diversi in base al layout del dispositivo.
 * Nascondere i componenti in base al gruppo di dispositivi (definire il punto di interruzione che un componente deve nascondere).
-* Utilizzare l&#39;ancoraggio orizzontale sulla griglia (posizionare i componenti sulla griglia, ridimensionarli come necessario, definire quando dovrebbero venire compressi/ridisposti in modo da essere affiancati o sovrapposti).
+* Utilizzare l’ancoraggio orizzontale sulla griglia (posizionare i componenti nella griglia, ridimensionarli, definire quando dovrebbero venire compressi/ridisposti in modo da essere affiancati o sovrapposti).
 * Gestire il controllo delle colonne.
 
 >[!NOTE]
@@ -79,7 +80,7 @@ Per specificare i gruppi di dispositivi visualizzati nell&#39;elenco Dispositivi
 
 ### Collegare il sito ai gruppi di dispositivi specificati {#link-your-site-to-the-specified-device-groups}
 
-Per includere l&#39;emulatore è necessario collegare il sito ai gruppi di dispositivi. Vedi [Aggiunta dell’elenco dei dispositivi](/help/sites-developing/responsive.md#adding-the-devices-list) (sia per l’interfaccia classica che per quella touch).
+Per includere l’emulatore, collega il sito ai gruppi di dispositivi. Vedi [Aggiunta dell’elenco dei dispositivi](/help/sites-developing/responsive.md#adding-the-devices-list) (sia per l’interfaccia classica che per quella touch).
 
 ## Attiva la modalità Layout per il sito {#activate-layout-mode-for-your-site}
 
@@ -92,12 +93,12 @@ Tali procedure sono utilizzate per **Layout** sul sito.
 * Sono utilizzati nel design reattivo.
 * Può essere definito:
 
-   * Nel modello di pagina, da dove le impostazioni verranno copiate in tutte le pagine create con tale modello.
-   * Sul nodo della pagina, da dove le impostazioni verranno ereditate da qualsiasi pagina figlia.
+   * Nel modello di pagina, da dove le impostazioni vengono copiate in tutte le pagine create con tale modello.
+   * Sul nodo della pagina, da dove le impostazioni vengono ereditate da qualsiasi pagina figlia.
 
 * Definire un titolo e una larghezza:
 
-   * Il titolo descrive il raggruppamento di dispositivi generico, con orientamento se necessario; ad esempio telefono, tablet, tablet.
+   * Il titolo descrive il raggruppamento di dispositivi generico, con eventuale orientamento; ad esempio, telefono, tablet, tablet.
    * La larghezza definisce la larghezza massima in pixel per quel raggruppamento di dispositivi generico. Ad esempio, se il telefono punto di interruzione ha una larghezza di 768, la larghezza massima del layout utilizzato per un dispositivo telefonico.
 
 * Sono visibili come marcatori nella parte superiore dell’editor di pagine quando utilizzi l’emulatore.
@@ -110,7 +111,7 @@ Tali procedure sono utilizzate per **Layout** sul sito.
 >
 >Se stai impostando un nuovo progetto:
 >
->* è necessario aggiungere punti di interruzione ai modelli.
+>* aggiungi punti di interruzione ai modelli.
 >
 >Se stai eseguendo la migrazione di un progetto esistente (con contenuto esistente), devi:
 >
@@ -174,7 +175,7 @@ Queste procedure sono necessarie per ridimensionare i componenti nel **Layout** 
 
 ### Imposta contenitore di layout come parsys principale {#set-layout-container-as-main-parsys}
 
-Per impostare parsys principale della pagina come contenitore di layout, è necessario definire parsys come segue:
+Per impostare parsys principale della pagina come contenitore di layout, definisci parsys come:
 
 `wcm/foundation/components/responsivegrid`
 
@@ -203,7 +204,7 @@ I due esempi seguenti illustrano la definizione:
 
 AEM utilizza LESS per generare parti del CSS necessario, queste devono essere incluse nei progetti.
 
-Sarà inoltre necessario creare un [libreria client](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) per fornire ulteriori chiamate di configurazione e di funzione. Il seguente estratto di LESS è un esempio del minimo da aggiungere al progetto:
+Sarà inoltre necessario creare un [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e di funzione. Il seguente estratto LESS è un esempio del minimo che devi aggiungere al progetto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
