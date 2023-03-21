@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 0%
+source-wordcount: '934'
+ht-degree: 2%
 
 ---
 
 # Nozioni di base sul punteggio e sui badge {#scoring-and-badges-essentials}
 
-La funzione di valutazione e badge di AEM Communities consente di identificare e premiare i membri della community.
+La funzione di valutazione e badge di AEM Communities identifica e premia i membri della community.
 
 I dettagli della configurazione della funzione sono descritti in
 
@@ -70,7 +70,7 @@ Ad esempio, cerca `this.isAssigned` in `/libs/social/forum/components/hbs/topic/
 
 Se true, isAssigned indica che il badge è stato assegnato a un ruolo e che il badge deve essere visualizzato come testo.
 
-Se false, viene assegnato indica che il badge è stato assegnato per un punteggio ottenuto e che il badge deve essere visualizzato come immagine.
+Se false, isAssigned indica che il badge è stato assegnato per un punteggio ottenuto e che il badge deve essere visualizzato come immagine.
 
 Qualsiasi modifica a questo comportamento deve essere apportata in uno script personalizzato (override o sovrapposizione). Vedi [Personalizzazione lato client](/help/communities/client-customize.md).
 
@@ -127,7 +127,7 @@ Le descrizioni per l’accesso ai dati di punteggio e badging utilizzano JSRP, i
 
 **JSRP sull&#39;autore**: la sperimentazione nell’ambiente di authoring genera contenuti generati dagli utenti che sono visibili solo nell’ambiente di authoring.
 
-**JSRP in pubblicazione**: analogamente, se esegui test sull’ambiente di pubblicazione, sarà necessario accedere ad CRXDE Lite con privilegi amministrativi su un’istanza di pubblicazione. Se l&#39;istanza di pubblicazione è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (modalità runmode nosamplecontent), è necessario [abilita CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP in pubblicazione**: analogamente, se esegui test nell’ambiente di pubblicazione, è necessario accedere ad CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l&#39;istanza di pubblicazione è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (modalità runmode nosamplecontent), è necessario [abilita CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
@@ -135,8 +135,8 @@ La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
 Le seguenti API sono disponibili per l’uso :
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)
+* [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)
 
 Gli sviluppatori dell’archivio Adobe possono accedere agli ultimi Javadocs per il feature pack installato. Vedi [Utilizzo di Maven per Communities: Javadocs](/help/communities/maven.md#javadocs).
 
@@ -170,7 +170,7 @@ Le schermate dei dati dell’archivio provengono dalla configurazione del punteg
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Aggiungi proprietà per visualizzare i badge
+   * Per visualizzare i badge, aggiungi proprietà
 
       `allowBadges = true`
 
@@ -201,7 +201,7 @@ Le schermate dei dati dell’archivio provengono dalla configurazione del punteg
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Aggiungi proprietà per visualizzare i badge
+   * Per visualizzare i badge, aggiungi proprietà
 
       `allowBadges = true`
 
@@ -214,7 +214,7 @@ Le schermate dei dati dell’archivio provengono dalla configurazione del punteg
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Come un utente ha guadagnato due distintivi di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la loro voce del forum.
+   Come un utente ha guadagnato due distintivi di bronzo ed è stato assegnato un badge moderatore, l&#39;utente appare con la loro voce del forum come segue:
 
    ![moderatore](assets/moderator.png)
 
@@ -242,11 +242,11 @@ A scopo investigativo, utilizzando JSRP per l’esempio, la cartella base conten
 
 Il nodo figlio di `scoring` è il nome della regola di punteggio. Di conseguenza, è consigliabile che i nomi delle regole di punteggio su un server siano univoci a livello globale.
 
-Per il sito Geometrixx Engage, l&#39;utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un id univoco e l&#39;id dell&#39;utente :
+Per il sito Geometrixx Engage, l&#39;utente e il relativo punteggio sono in un percorso costruito con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un id univoco e l&#39;id dell&#39;utente :
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Per il sito della guida ai componenti della community, l’utente e il relativo punteggio si trovano in un percorso costruito con il nome della regola di punteggio, un id predefinito ( `default-site`), un id univoco e l&#39;id dell&#39;utente :
+Per il sito della guida Componenti della community, l’utente e il relativo punteggio si trovano in un percorso costruito con il nome della regola di punteggio, un ID predefinito ( `default-site`), un id univoco e l&#39;id dell&#39;utente :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 

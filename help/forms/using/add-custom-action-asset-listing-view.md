@@ -11,10 +11,10 @@ discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Per completare lo scenario seguente o uno scenario simile, è necessario conosce
 
 * CRX
 * JavaScript
-* Java
+* Java™
 
 ## Scenario: Aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione di una lettera di flat PDF {#addcommandtoletters}
 
@@ -55,7 +55,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
       >[!NOTE]
       >
-      >Questo percorso è specifico per la creazione di un’azione che funziona con la selezione di una o più risorse/lettere. Se desideri creare un&#39;azione che funzioni senza selezione, devi invece creare un nodo di sovrapposizione per il seguente percorso e completare di conseguenza i passaggi rimanenti:
+      >Questo percorso è specifico per la creazione di un’azione che funziona con la selezione di una o più risorse/lettere. Se desideri creare un&#39;azione che funzioni senza selezione, crea un nodo di sovrapposizione per il seguente percorso e completa di conseguenza i passaggi rimanenti:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -110,7 +110,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
         <tr>
         <td>icon</td>
         <td>Stringa</td>
-        <td>icona-download<br /> <br /> Icona visualizzata sul lato sinistro del comando o del menu. Per le diverse icone e impostazioni disponibili, consulta <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Documentazione di CoralUI Icons</a>.<br /> </td>
+        <td>icona-download<br /> <br /> Icona visualizzata sul lato sinistro del comando o del menu. Per le diverse icone e impostazioni disponibili, consulta <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it" target="_blank">Documentazione di CoralUI Icons</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -279,7 +279,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
    1. Fai doppio clic sul pulsante **POST.jsp** per aprirlo in CRX.
    1. Aggiungi il codice seguente al file POST.jsp e fai clic su **Salva tutto**:
 
-      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie java della risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, consulta [API AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie Java™ della risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, consulta [API AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
       Per ulteriori informazioni sulle librerie AEM, consulta AEM [Componenti](/help/sites-developing/components.md).
 
@@ -348,7 +348,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
       %>
       ```
 
-## Scarica un PDF di lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Scaricare un PDF di lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
 Dopo aver aggiunto funzionalità personalizzate per scaricare le lettere in PDF flat, è possibile utilizzare i seguenti passaggi per scaricare la versione a PDF flat della lettera selezionata:
 

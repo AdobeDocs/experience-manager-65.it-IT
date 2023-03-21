@@ -1,7 +1,7 @@
 ---
 title: AEM Concetti di base
 seo-title: The Basics
-description: Una panoramica dei concetti fondamentali su come AEM è strutturato e come svilupparla al di sopra, compresi JCR, Sling, OSGi, il dispatcher, i flussi di lavoro e MSM
+description: Panoramica dei concetti fondamentali su come AEM è strutturato e come svilupparla, compresi JCR, Sling, OSGi, Dispatcher, flussi di lavoro e MSM
 seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3324'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## Prerequisiti per lo sviluppo su AEM {#prerequisites-for-developing-on-aem}
 
-Avrai bisogno delle seguenti competenze per sviluppare su AEM:
+Per sviluppare su AEM devi disporre delle seguenti competenze:
 
 * Conoscenza di base delle tecniche di applicazione web, tra cui:
 
@@ -39,25 +39,25 @@ Avrai bisogno delle seguenti competenze per sviluppare su AEM:
 
 Si consiglia inoltre di leggere e seguire il [Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
-## Archivio dei contenuti Java {#java-content-repository}
+## Archivio dei contenuti Java™ {#java-content-repository}
 
-Lo standard Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifica un modo indipendente dal fornitore e indipendente dall’implementazione per accedere al contenuto in modo bidirezionale a un livello granulare all’interno di un archivio di contenuti.
+Lo standard Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifica un modo indipendente dal fornitore e indipendente dall’implementazione per accedere al contenuto in modo bidirezionale a un livello granulare all’interno di un archivio di contenuti.
 
 Il piombo specifico è detenuto da Adobe Research (Svizzera) AG.
 
-La [API JCR 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) pacchetto, javax.jcr.&amp;ast; viene utilizzato per l’accesso diretto e la manipolazione del contenuto dell’archivio.
+La [API JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pacchetto, javax.jcr.&amp;ast; viene utilizzato per l’accesso diretto e la manipolazione del contenuto dell’archivio.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
 Experience Server fornisce i servizi Experience AEM basati su e che possono essere utilizzati per creare applicazioni personalizzate e incorpora l’archivio dei contenuti basato su Jackrabbit.
 
-[Apache Jackrabbit](https://jackrabbit.apache.org/) è un’implementazione open source, completamente conforme, dell’API JCR 2.0.
+[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) è un’implementazione open source, completamente conforme, dell’API JCR 2.0.
 
 ## Elaborazione delle richieste Sling {#sling-request-processing}
 
 ### Introduzione a Sling {#introduction-to-sling}
 
-AEM viene generato utilizzando [Sling](https://sling.apache.org/site/index.html), un framework di applicazione web basato su principi REST che fornisce un facile sviluppo di applicazioni orientate ai contenuti. Sling utilizza un archivio JCR, come Apache Jackrabbit, o nel caso di AEM, il CRX Content Repository, come archivio dati. Sling è stato contribuito a Apache Software Foundation - ulteriori informazioni sono disponibili su Apache.
+AEM viene generato utilizzando [Sling](https://sling.apache.org/index.html), un framework di applicazione web basato su principi REST che fornisce un facile sviluppo di applicazioni orientate ai contenuti. Sling utilizza un archivio JCR, come Apache Jackrabbit o, nel caso di AEM, il CRX Content Repository, come archivio dati. Sling è stato contribuito a Apache Software Foundation - ulteriori informazioni sono disponibili su Apache.
 
 Utilizzando Sling, il tipo di contenuto di cui eseguire il rendering non è il primo aspetto di elaborazione. La considerazione principale è se l’URL viene risolto in un oggetto di contenuto per il quale è quindi possibile trovare uno script per eseguire il rendering. Questo offre un supporto eccellente agli autori di contenuti web per creare pagine facilmente personalizzate in base alle loro esigenze.
 
@@ -78,7 +78,7 @@ Il diagramma seguente illustra tutti i parametri di richiesta nascosti ma potent
 Sling è *incentrato sul contenuto*. Ciò significa che l’elaborazione è incentrata sul contenuto, in quanto ogni richiesta (HTTP) viene mappata sul contenuto sotto forma di una risorsa JCR (un nodo di archivio):
 
 * il primo target è la risorsa (nodo JCR) che contiene il contenuto
-* in secondo luogo, la rappresentazione, o script, si trova dalle proprietà della risorsa in combinazione con alcune parti della richiesta (ad esempio selettori e/o estensione)
+* in secondo luogo, la rappresentazione, o script, si trova dalle proprietà della risorsa combinate con alcune parti della richiesta (ad esempio, selettori e/o estensione)
 
 ### Sling RESTful {#restful-sling}
 
@@ -104,7 +104,7 @@ Possiamo suddividerlo nelle sue parti composite:
 
 | protocollo | host | percorso del contenuto | selettori | estensione |  | suffisso |  | param(i) |
 |---|---|---|---|---|---|---|---|---|
-| https:// | mihost | strumenti/spia | .printable.a4. | viene | / | a/b | ? | x=12 |
+| https:// | mihost | strumenti/spia | .printable.a4. | html | / | a/b | ? | x=12 |
 
 **protocollo** HTTP
 
@@ -158,13 +158,13 @@ Tutti gli script Sling sono memorizzati in sottocartelle di `/apps` o `/libs`, c
 
 Alcuni altri punti da sottolineare sono:
 
-* quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo come in base alla specifica HTTP, ad esempio jobs.POST.esp (vedi sotto)
+* quando il metodo (GET, POST) è obbligatorio, viene specificato in maiuscolo come in base alla specifica HTTP, ad esempio, jobs.POST.esp (vedi sotto)
 * sono supportati diversi motori di script:
 
    * HTL (HTML Template Language - Sistema di modelli lato server preferito e consigliato da Adobe Experience Manager per HTML): `.html`
    * ECMAScript (JavaScript) Pagine (esecuzione lato server): `.esp, .ecma`
-   * Java Server Pages (esecuzione lato server): `.jsp`
-   * Compilatore Java Servlet (esecuzione lato server): `.java`
+   * Pagine server Java™ (esecuzione lato server): `.jsp`
+   * Compilatore Java™ Servlet (esecuzione lato server): `.java`
    * Modelli JavaScript (esecuzione lato client): `.jst`
 
 L&#39;elenco dei motori di script supportati dalla data istanza di AEM è elencato nella console di gestione Felix ( `http://<host>:<port>/system/console/slingscripting`).
@@ -175,17 +175,17 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` quind
 
 * Richieste GET/HEAD e URL che terminano con .html (tipi di richiesta predefiniti, formato predefinito)
 
-   Lo script sarà /apps/hr/jobs/jobs.esp; l&#39;ultima sezione dell&#39;sling:resourceType forma il nome del file.
+   Lo script è /apps/hr/jobs/jobs.esp; l&#39;ultima sezione dell&#39;sling:resourceType forma il nome del file.
 
 * Richieste POST (tutti i tipi di richiesta ad eccezione di GET/HEAD, il nome del metodo deve essere maiuscolo)
 
-   POST verrà utilizzato nel nome dello script.
+   POST viene utilizzato nel nome dello script.
 
-   Lo script sarà `/apps/hr/jobs/jobs.POST.esp`.
+   Lo script è `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL in altri formati, che non terminano con .html
 
-   Esempio `../content/corporate/jobs/developer.pdf`
+   Esempio, `../content/corporate/jobs/developer.pdf`
 
    Lo script sarà `/apps/hr/jobs/jobs.pdf.esp`; il suffisso viene aggiunto al nome dello script.
 
@@ -317,7 +317,7 @@ Un framework OSGi ti offre quindi il caricamento/scaricamento dinamico, la confi
 >
 >In particolare, la pagina Basic Education contiene una raccolta di presentazioni ed esercitazioni.
 
-Questa architettura consente di estendere Sling con moduli specifici per le applicazioni. Sling, e quindi CQ5, utilizza il [Apache Felix](https://felix.apache.org/) implementazione di OSGI (Open Services Gateway Initiative) basata sulle specifiche della versione 4.2 di OSGi Service Platform. Sono entrambe raccolte di bundle OSGi in esecuzione all&#39;interno di un framework OSGi.
+Questa architettura consente di estendere Sling con moduli specifici per le applicazioni. Sling, e quindi CQ5, utilizza il [Apache Felix](https://felix.apache.org/documentation/index.html) implementazione di OSGI (Open Services Gateway Initiative) basata sulle specifiche della versione 4.2 di OSGi Service Platform. Sono entrambe raccolte di bundle OSGi in esecuzione all&#39;interno di un framework OSGi.
 
 Questo consente di eseguire le seguenti azioni su uno qualsiasi dei pacchetti all’interno dell’installazione:
 
@@ -337,7 +337,7 @@ Sono di interesse per lo sviluppo:
 
 **Elemento** Un elemento è un nodo o una proprietà.
 
-Per informazioni dettagliate sulla manipolazione degli oggetti Articolo, fare riferimento alla sezione [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) dell&#39;interfaccia javax.jcr.Item
+Per informazioni dettagliate sulla manipolazione degli oggetti Articolo, fare riferimento alla sezione [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) dell&#39;interfaccia javax.jcr.Item
 
 **Nodo (e relative proprietà)** I nodi e le loro proprietà sono definiti nella specifica JCR API 2.0 (JSR 283). Memorizzano il contenuto, le definizioni degli oggetti, gli script di rendering e altri dati.
 
@@ -353,7 +353,7 @@ Ad esempio, per ottenere le proprietà del nodo corrente, è possibile utilizzar
 
 Con currentNode come oggetto nodo corrente.
 
-Per ulteriori informazioni sulla manipolazione degli oggetti Node, consulta [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Per ulteriori informazioni sulla manipolazione degli oggetti Node, consulta [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM tutti gli input dell’utente vengono gestiti tramite widget. Spesso sono utilizzati per controllare la modifica di un contenuto.
 
@@ -392,7 +392,7 @@ Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare 
 
 S`tring pageName = currentPage.getName();`
 
-Con currentPage come oggetto pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti pagina, consulta [Javadocs](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Con currentPage come oggetto pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti pagina, consulta [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestione pagine** Il gestore pagine è un&#39;interfaccia che fornisce metodi per le operazioni a livello di pagina.
 
@@ -400,11 +400,11 @@ Ad esempio, per ottenere la pagina contenente una risorsa, puoi utilizzare il se
 
 Page myPage = pageManager.getContainPage(myResource);
 
-Con pageManager come oggetto page manager e myResource come oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore di pagine, consulta [Javadocs](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Con pageManager come oggetto page manager e myResource come oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore di pagine, consulta [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struttura all’interno dell’archivio {#structure-within-the-repository}
 
-L’elenco seguente fornisce una panoramica della struttura che verrà visualizzata all’interno dell’archivio.
+L’elenco seguente fornisce una panoramica della struttura visualizzata all’interno dell’archivio.
 
 >[!CAUTION]
 >
@@ -414,7 +414,7 @@ L’elenco seguente fornisce una panoramica della struttura che verrà visualizz
 
 >[!CAUTION]
 >
->Non devi cambiare nulla nel `/libs` percorso. Per la configurazione e altre modifiche, copia l’elemento da `/libs` a `/apps` e apporta eventuali modifiche all&#39;interno di `/apps`.
+>Non modificare nulla nel `/libs` percorso. Per la configurazione e altre modifiche, copia l’elemento da `/libs` a `/apps` e apporta eventuali modifiche all&#39;interno di `/apps`.
 
 * `/apps`
 
@@ -432,7 +432,7 @@ L’elenco seguente fornisce una panoramica della struttura che verrà visualizz
 
 * `/libs`
 
-   Librerie e definizioni che appartengono al nucleo di AEM. Le sottocartelle in `/libs` rappresentano le funzionalità predefinite AEM come ad esempio ricerca o replica. Contenuto `/libs` non devono essere modificate in quanto incidono sul funzionamento AEM. Le funzionalità specifiche del tuo sito web devono essere sviluppate in `/apps` (vedi [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Librerie e definizioni che appartengono al nucleo di AEM. Le sottocartelle in `/libs` rappresenta le funzionalità predefinite AEM come ricerca o replica. Contenuto `/libs` non devono essere modificate in quanto incidono sul funzionamento AEM. Le funzionalità specifiche del tuo sito web devono essere sviluppate in `/apps` (vedi [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -448,7 +448,7 @@ Con AEM un ambiente di produzione spesso è costituito da due diversi tipi di is
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher è lo strumento di Adobe per la memorizzazione in cache e/o il bilanciamento del carico. Ulteriori informazioni sono disponibili in [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+Dispatcher è lo strumento di Adobe per la memorizzazione in cache e/o il bilanciamento del carico. Ulteriori informazioni sono disponibili in [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## FileVault (sistema di revisione sorgente) {#filevault-source-revision-system}
 
@@ -466,7 +466,7 @@ Il motore di flusso di lavoro viene utilizzato per gestire l’implementazione d
 
 Multi Site Manager (MSM) consente di gestire facilmente più siti web che condividono contenuti comuni. MSM consente di definire le relazioni tra i siti in modo che le modifiche di contenuto in un sito vengano replicate automaticamente in altri siti.
 
-Ad esempio, i siti web sono spesso disponibili in più lingue per il pubblico internazionale. Quando il numero di siti nella stessa lingua è basso (da tre a cinque), è possibile eseguire un processo manuale per la sincronizzazione dei contenuti tra siti diversi. Tuttavia, non appena il numero di siti cresce o quando sono coinvolte più lingue, diventa più efficiente automatizzare il processo.
+Ad esempio, i siti web sono spesso disponibili in più lingue per il pubblico internazionale. Quando il numero di siti nella stessa lingua è basso (da tre a cinque), è possibile eseguire un processo manuale per la sincronizzazione dei contenuti tra siti diversi. Tuttavia, quando il numero di siti cresce o quando sono coinvolte più lingue, diventa più efficiente automatizzare il processo.
 
 * Gestire in modo efficiente diverse versioni linguistiche di un sito web.
 * Aggiorna automaticamente uno o più siti in base a un sito di origine:

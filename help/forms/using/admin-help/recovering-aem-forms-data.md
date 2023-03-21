@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ Se un singolo nodo di un cluster multinode non è riuscito e i nodi rimanenti de
 1. Arrestare i servizi e il server applicazioni di AEM forms se in esecuzione.
 1. Se necessario, ricreare il sistema fisico da un&#39;immagine di sistema. Ad esempio, questo passaggio potrebbe non essere necessario se il motivo del ripristino è un database server difettoso.
 1. Applicare patch o aggiornamenti ai moduli AEM applicati dopo la creazione dell’immagine. Queste informazioni sono state registrate nella procedura di backup. AEM moduli devono essere patch allo stesso livello di patch di quando è stato eseguito il backup del sistema.
-1. (WebSphere Application Server) Se si sta eseguendo il ripristino di una nuova istanza di WebSphere Application Server, eseguire il comando restoreConfig.bat/sh.
+1. (WebSphere® Application Server) Se si esegue il ripristino in una nuova istanza di WebSphere® Application Server, eseguire il comando restoreConfig.bat/sh.
 1. Ripristinare il database dei moduli AEM eseguendo prima un&#39;operazione di ripristino del database utilizzando i file di backup del database e quindi applicando i redo log delle transazioni al database recuperato. (Vedi [Database dei moduli AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, vedere uno dei seguenti articoli della knowledge base:
 
-   * [Backup e ripristino di Oracle per i moduli AEM](https://www.adobe.com/go/kb403624)
-   * [Backup e ripristino di MySQL per i moduli AEM](https://www.adobe.com/go/kb403625)
-   * [Backup e ripristino di Microsoft SQL Server per i moduli AEM](https://www.adobe.com/go/kb403623)
-   * [Backup e ripristino DB2 per moduli AEM](https://www.adobe.com/go/kb403626)
+   * [Backup e ripristino DB2® per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
+   * [Backup e ripristino di Oracle per i moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
+   * [Backup e ripristino di Microsoft® SQL Server per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
+   * [Backup e ripristino di MySQL per i moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
 
 1. Recuperare la directory GDS eliminando prima il contenuto della directory GDS sull&#39;installazione esistente di moduli AEM e quindi copiando il contenuto della directory GDS dal GDS di backup. Se hai modificato la posizione della directory GDS, vedi [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Rinomina la directory di backup GDS da ripristinare come mostrato nei seguenti esempi:
@@ -69,7 +69,7 @@ Se un singolo nodo di un cluster multinode non è riuscito e i nodi rimanenti de
    >
    >Se la directory /restore esiste già, eseguine il backup e quindi eliminala prima di rinominare la directory /backup che contiene i dati più recenti.
 
-   * Rinomina (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` a:
+   * Rinomina (JBoss®) `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` a:
 
       `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
@@ -77,7 +77,7 @@ Se un singolo nodo di un cluster multinode non è riuscito e i nodi rimanenti de
 
       `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * Rinomina (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` a:
+   * Rinomina (WebSphere®) `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` a:
 
       `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
@@ -99,7 +99,7 @@ Se un singolo nodo di un cluster multinode non è riuscito e i nodi rimanenti de
 
    * **Standalone**
 
-      *Ripristinare le istanze di authoring e pubblicazione*: Se si verifica un problema, puoi ripristinare l’archivio all’ultimo stato di backup eseguendo i passaggi descritti in [Backup e ripristino.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Ripristinare le istanze di authoring e pubblicazione*: Se si verifica un problema, puoi ripristinare l’archivio all’ultimo stato di backup eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
       Il ripristino completo del nodo Author verifica il ripristino dei dati di Forms Manager e AEM Forms Workspace.
 

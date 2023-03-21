@@ -10,10 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '984'
+ht-degree: 8%
 
 ---
 
@@ -26,13 +26,13 @@ Puoi utilizzare l’interfaccia REST di QueryBuilder o creare un servizio OSGi u
 Prima di aggiungere un rapporto personalizzato, esegui la seguente procedura modello:
 
 1. I dati utilizzati nei rapporti personalizzati devono essere disponibili in Reporting dei processi. Per garantire la disponibilità dei dati, pianificare un lavoro cron o utilizzare **[Sincronizzazione](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** nell’interfaccia utente di Process Reporting.
-1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, puoi utilizzare l’interfaccia REST di [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) per creare un servizio OSGi utilizzando l’API QueryBuilder. È possibile creare query dinamiche o statiche.
+1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, puoi utilizzare l’interfaccia REST di [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) per creare un servizio OSGi utilizzando l’API QueryBuilder. È possibile creare query dinamiche o statiche.
 
 1. Crea un’interfaccia utente personalizzata per visualizzare i risultati. È possibile creare un&#39;interfaccia utente autonoma o integrare i risultati con l&#39;interfaccia utente esistente di Process Reporting.
 
 ## Utilizzo dell’interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare [Interfaccia REST di CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), prima di eseguire i seguenti passaggi:
+L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare [Interfaccia REST di CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), prima di eseguire i seguenti passaggi:
 
 1. Passa all’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Crea una query basata sulla struttura del nodo di archiviazione Report del processo e sulle proprietà del nodo.
@@ -49,7 +49,7 @@ L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share 
 
 ## Creazione di un servizio tramite l’API di Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-Il prerequisito per la creazione di un servizio utilizzando l’API Query Builder sono [creazione e distribuzione del bundle OSGI CQ](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) e [utilizzo dell’API di Query Builder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+Il prerequisito per la creazione di un servizio utilizzando l’API Query Builder sono [creazione e distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [utilizzo dell’API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crea un servizio OSGi con le annotazioni appropriate. Per accedere a QueryBuilder utilizza:
 
@@ -65,7 +65,7 @@ Il prerequisito per la creazione di un servizio utilizzando l’API Query Builde
     predicateGroup.setAllRequired(true);
    ```
 
-1. Aggiungi i predicati al predicateGroup appena creato. Alcuni costrutti predicati utili sono [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateValutator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)e [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Aggiungi i predicati al predicateGroup appena creato. Alcuni costrutti predicati utili sono [JcrBoolPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [JcrPropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [RangePropertyPredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [DateRangePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)e [TypePredicateEvaluator in 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
    Per i rapporti statici codificano i predicati, mentre per i rapporti dinamici, recupera i predicati dalla richiesta.
 
@@ -424,7 +424,7 @@ Il campione `pom.xml`file da generare sopra il servizio:
 
 ## Creazione di un’interfaccia utente separata  {#creating-a-separate-ui-nbsp}
 
-I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Nozioni di base su Sling](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creazione di un nodo CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornire [privilegi di accesso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Nozioni di base su Sling in 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it), [Creazione di un nodo CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e fornire [privilegi di accesso](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
 1. Crea un nodo CRX nella pagina `/apps` e concedere autorizzazioni di accesso appropriate. (PERM_PROCESS_REPORTING_USER)
 1. Definisci il renderer nella `/content` nodo.

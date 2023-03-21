@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 0%
+source-wordcount: '1616'
+ht-degree: 1%
 
 ---
 
@@ -53,11 +53,11 @@ I dati XML vengono inviati al servlet utilizzando **`jcr:data`** parametro di ri
 
 ### Campi azione {#action-fields}
 
-Un’azione Invia può aggiungere campi di input nascosti (utilizzando HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) al modulo di cui è stato effettuato il rendering in HTML. Questi campi nascosti possono contenere i valori necessari durante l’elaborazione dell’invio del modulo. Quando si invia il modulo, questi valori dei campi vengono inviati nuovamente come parametri di richiesta che l’azione Invia può utilizzare durante la gestione dell’invio. I campi di input sono chiamati campi di azione.
+Un’azione Invia può aggiungere campi di input nascosti (utilizzando HTML [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) al modulo di cui è stato effettuato il rendering in HTML. Questi campi nascosti possono contenere i valori necessari durante l’elaborazione dell’invio del modulo. Quando si invia il modulo, questi valori dei campi vengono inviati nuovamente come parametri di richiesta che l’azione Invia può utilizzare durante la gestione dell’invio. I campi di input sono chiamati campi di azione.
 
 Ad esempio, un’azione Invia che acquisisce anche il tempo necessario per compilare un modulo può aggiungere campi di input nascosti `startTime` e `endTime`.
 
-Uno script può fornire i valori `startTime` e `endTime` i campi in cui viene eseguito il rendering del modulo e prima dell’invio del modulo, rispettivamente. Lo script di azione Invia `post.jsp` può quindi accedere a questi campi utilizzando i parametri di richiesta e calcolare il tempo totale necessario per compilare il modulo.
+Uno script può fornire i valori `startTime` e `endTime` i campi in cui viene eseguito il rendering del modulo e prima dell’invio del modulo, rispettivamente. ActionScript di invio `post.jsp` può quindi accedere a questi campi utilizzando i parametri di richiesta e calcolare il tempo totale necessario per compilare il modulo.
 
 ### Allegati file {#file-attachments}
 
@@ -102,7 +102,7 @@ Un’azione Invia è una sling:Folder che include quanto segue:
 
 ## Creazione di un’azione di invio personalizzata {#creating-a-custom-submit-action}
 
-Esegui i seguenti passaggi per creare un’azione di invio personalizzata che salva i dati nell’archivio CRX e quindi invia un’e-mail. Il modulo adattivo contiene l’azione Invia Contenuto archivio azioni (obsoleto) di OOTB che salva i dati nell’archivio CRX. Inoltre, CQ fornisce un [Posta](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l&#39;API Mail, [configurare](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring il servizio Mail) il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleto) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleto) è disponibile nel percorso /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
+Esegui i seguenti passaggi per creare un’azione di invio personalizzata che salva i dati nell’archivio CRX e quindi invia un’e-mail. Il modulo adattivo contiene l’azione Invia Contenuto archivio azioni (obsoleto) di OOTB che salva i dati nell’archivio CRX. Inoltre, CQ fornisce un [Posta](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l&#39;API Mail, [configurare](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it&amp;wcmmode=disabled) il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleto) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleto) è disponibile nel percorso /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
 
 1. Accedi a CRXDE Lite all’URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crea un nodo con la proprietà sling:Folder e il nome store_and_mail nella cartella /apps/custom_submit_action . Crea la cartella custom_submit_action se non esiste già.
 
@@ -138,7 +138,7 @@ Esegui i seguenti passaggi per creare un’azione di invio personalizzata che sa
 
    Aggiungi lo script post.POST.jsp all&#39;azione. (/apps/custom_submit_action/store_and_mail/).
 
-   Esegui l&#39;azione OOTB Store (script post.POST.jsp). Utilizza la [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API che CQ fornisce nel codice per eseguire l&#39;azione Store. Aggiungi il seguente codice nel file JSP:
+   Esegui l&#39;azione OOTB Store (script post.POST.jsp). Utilizza la [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)(java.lang.String, java.lang.String, org.apache.sling.api.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API che CQ fornisce nel codice per eseguire l&#39;azione Store. Aggiungi il seguente codice nel file JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

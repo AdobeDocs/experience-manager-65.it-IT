@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3477'
-ht-degree: 2%
+source-wordcount: '3456'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Vedi [Sviluppo di eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
    * Durante la costruzione di un [Community](/help/communities/author-communities.md) i componenti possono fornire informazioni ai visitatori e raccogliere informazioni da essi.
 Vedi [Sviluppo di Communities](/help/communities/communities.md) per ulteriori informazioni.
 
-* Nell’istanza di pubblicazione i componenti eseguono il rendering del contenuto, presentandolo come necessario ai visitatori del sito web.
+* Nell’istanza di pubblicazione, i componenti eseguono il rendering del contenuto, presentandolo come necessario ai visitatori del sito web.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ L’estensione di un componente esistente può essere ottenuta con [Gerarchia de
 
 >[!NOTE]
 >
->I componenti possono anche essere ridefiniti con una sovrapposizione in base alla logica del percorso di ricerca. Tuttavia, in tal caso, il [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) non verranno attivati e `/apps` deve definire l&#39;intera sovrapposizione.
+>I componenti possono anche essere ridefiniti con una sovrapposizione in base alla logica del percorso di ricerca. Tuttavia, in tal caso, il [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) non viene attivato e `/apps` deve definire l&#39;intera sovrapposizione.
 
 >[!NOTE]
 >
@@ -95,11 +95,11 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 ### Utilizzo di Java {#using-java}
 
-[L’API di utilizzo Java HTL abilita un file HTL per accedere a metodi helper in una classe Java personalizzata](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
+[L’API di utilizzo Java HTL abilita un file HTL per accedere a metodi helper in una classe Java personalizzata](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 
-### Uso di JavaScript {#using-javascript}
+### Utilizzo di JavaScript {#using-javascript}
 
-[L’API di utilizzo JavaScript HTL abilita un file HTL per accedere al codice helper scritto in JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
+[L’API di utilizzo JavaScript HTL abilita un file HTL per accedere al codice helper scritto in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 
 ### Utilizzo delle librerie HTML lato client {#using-client-side-html-libraries}
 
@@ -117,13 +117,13 @@ La [è configurato il comportamento di modifica di un componente](/help/sites-de
 
 ## Configurazione del comportamento di anteprima {#configuring-the-preview-behavior}
 
-La [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie impostato quando si passa a **Anteprima** anche quando la pagina non viene aggiornata.
+La [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie impostato quando si passa a **Anteprima** anche quando la pagina non viene aggiornata.
 
 Per i componenti con un rendering sensibile alla modalità WCM, è necessario definirli per aggiornarsi in modo specifico, quindi basarsi sul valore del cookie.
 
 >[!NOTE]
 >
->Nell’interfaccia touch solo i valori `EDIT` e `PREVIEW` vengono utilizzati per [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
+>Nell’interfaccia touch solo i valori `EDIT` e `PREVIEW` vengono utilizzati per [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
 
 ## Creazione e configurazione di una finestra di dialogo {#creating-and-configuring-a-dialog}
 
@@ -131,9 +131,9 @@ Le finestre di dialogo consentono all’autore di interagire con il componente. 
 
 ### Interfaccia Coral e interfaccia Granite {#coral-ui-and-granite-ui}
 
-[Interfaccia Coral](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) e [Interfaccia Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) definisci l&#39;aspetto e la sensazione moderni di AEM.
+[Interfaccia Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) e [Interfaccia Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) definisci l&#39;aspetto e la sensazione moderni di AEM.
 
-[L’interfaccia utente Granite offre una vasta gamma di componenti di base (widget)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) necessaria per creare una finestra di dialogo sull’ambiente di authoring. Se necessario, puoi estendere questa selezione e [crea un widget personalizzato](#creatinganewwidget).
+[L’interfaccia utente Granite offre una vasta gamma di componenti di base (widget)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) necessaria per creare una finestra di dialogo sull’ambiente di authoring. Se necessario, puoi estendere questa selezione e [crea un widget personalizzato](#creatinganewwidget).
 
 Per maggiori dettagli consultare:
 
@@ -141,13 +141,13 @@ Per maggiori dettagli consultare:
 
    * Fornisce un&#39;interfaccia utente coerente in tutte le soluzioni cloud
    * [Concetti dell’interfaccia AEM touch - Interfaccia Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guida all’interfaccia utente Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Interfaccia Granite
 
    * Fornisce il markup dell’interfaccia utente Coral nei componenti Sling per la creazione di console e finestre di dialogo dell’interfaccia utente
    * [Concetti dell’interfaccia AEM touch - Interfaccia Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentazione dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Per esempi, consulta:
 >
 >Consulta:
 >
->* la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 >* il relativo codice di esempio di cui [Esempio di codice - Come personalizzare i campi della finestra di dialogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -211,13 +211,13 @@ Per creare un nuovo widget da utilizzare in una finestra di dialogo dei componen
 
 >[!NOTE]
 >
->Per informazioni dettagliate sull’interfaccia utente Granite, consulta la sezione [Documentazione dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Per informazioni dettagliate sull’interfaccia utente Granite, consulta la sezione [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Se si considera la finestra di dialogo come un contenitore semplice per un elemento modulo, è anche possibile visualizzare il contenuto principale del contenuto della finestra di dialogo come campi modulo. La creazione di un nuovo campo modulo richiede la creazione di un tipo di risorsa; equivale a creare un nuovo componente. Per facilitare l’esecuzione di tale attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (utilizzando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-In particolare, l’interfaccia utente Granite offre una serie di componenti per campo adatti all’uso nelle finestre di dialogo (o, più in generale, in [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+In particolare, l’interfaccia utente Granite offre una serie di componenti per campo adatti all’uso nelle finestre di dialogo (o, più in generale, in [forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Per inserire una logica nel campo, devi:
 1. Fai in modo che il tuo campo sia contrassegnato con una determinata classe CSS (l&#39; *gancio*).
 1. Definisci, nella libreria client, un listener JS collegato al nome della classe CSS (in questo modo la logica personalizzata viene delimitata solo nel campo e non influisce su altri campi dello stesso tipo).
 
-Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
+Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
 
 Ad esempio, consulta:
 
@@ -308,7 +308,7 @@ Ad esempio, consulta:
 
 #### Convalida del campo (interfaccia utente Granite) {#field-validation-granite-ui}
 
-La convalida dei campi nell’interfaccia utente Granite e nei componenti dell’interfaccia Granite (equivalenti ai widget) viene eseguita utilizzando `foundation-validation` API. [Consulta la sezione `foundation-valdiation` Documentazione Granite per i dettagli.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+La convalida dei campi nell’interfaccia utente Granite e nei componenti dell’interfaccia Granite (equivalenti ai widget) viene eseguita utilizzando `foundation-validation` API. [Consulta la sezione `foundation-valdiation` Documentazione Granite per i dettagli.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Per esempi, consulta:
 
@@ -428,8 +428,8 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto aem-project-archetype su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip)
+* [Apri progetto aem-project-archetype su GitHub](https://github.com/adobe/aem-project-archetype)
+* Scarica il progetto come [un file ZIP](https://github.com/adobe/aem-project-archetype/archive/master.zip)
 
 >[!NOTE]
 >
@@ -464,12 +464,12 @@ Durante la migrazione di un componente progettato per l’uso con l’interfacci
 
 * Finestre di dialogo
 
-   * Sarà necessario creare una nuova finestra di dialogo da utilizzare nell’interfaccia touch. Tuttavia, a fini di compatibilità, l’interfaccia touch può utilizzare la definizione di una finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per l’interfaccia touch.
+   * Crea una finestra di dialogo da utilizzare nell’interfaccia touch. Tuttavia, a fini di compatibilità, l’interfaccia touch può utilizzare la definizione di una finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per l’interfaccia touch.
    * La [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) vengono forniti per estendere i componenti esistenti.
    * [Mappatura di ExtJS sui componenti dell’interfaccia Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornisce una comoda panoramica degli xtype e dei tipi di nodo ExtJS con i tipi di risorse equivalenti dell’interfaccia Granite.
-   * Personalizzazione dei campi, per ulteriori informazioni consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-   * Migrare da tipi a [Convalida dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilizzando gli ascoltatori JS, per ulteriori informazioni vedi [Gestione degli eventi dei campi](#handling-field-events) e la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Personalizzazione dei campi, per ulteriori informazioni consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * Migrare da tipi a [Convalida dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+   * Utilizzando gli ascoltatori JS, per ulteriori informazioni vedi [Gestione degli eventi dei campi](#handling-field-events) e la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
 ### Migrazione del codice cq:listener {#migrating-cq-listener-code}
 
@@ -497,11 +497,11 @@ In qualità di sviluppatore, desideri accedere facilmente alla documentazione de
 * Uso previsto
 * Struttura e proprietà del contenuto
 * API e punti di estensione esposti
-* Ecc.
+* E così via
 
-Per questo motivo, è abbastanza semplice rendere disponibile qualsiasi markdown della documentazione esistente all’interno del componente stesso.
+Per questo motivo, è facile rendere disponibile qualsiasi markdown della documentazione esistente all’interno del componente stesso.
 
-Tutto quello che devi fare è mettere un `README.md` nella struttura del componente. Questa Markdown verrà quindi visualizzata nella [console dei componenti](/help/sites-authoring/default-components-console.md).
+Posiziona un `README.md` nella struttura del componente. Questa Markdown viene visualizzata nella [console dei componenti](/help/sites-authoring/default-components-console.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 

@@ -8,9 +8,9 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -56,15 +56,15 @@ Evita di utilizzare caratteri di sottolineatura (_) nei nomi canonici, ad esempi
 
 **E-mail:** Indirizzo e-mail dell’utente
 
-**Telefono:** Numero di telefono dell’utente
+**Telefono:** Numero di telefono dell&#39;utente
 
 **Descrizione:** Descrizione facoltativa. Utilizza questo campo in base alle esigenze della tua organizzazione.
 
-**Indirizzo:** Indirizzo postale dell’utente
+**Indirizzo:** Indirizzo postale dell&#39;utente
 
 **Organizzazione:** Organizzazione a cui appartiene l&#39;utente
 
-**Alias e-mail:** Alias e-mail dell’utente. Separa gli alias e-mail con virgole.
+**Alias e-mail:** Alias e-mail dell&#39;utente. Separa gli alias e-mail con virgole.
 
 **Dominio:** Dominio a cui appartiene l&#39;utente
 
@@ -90,7 +90,7 @@ I moduli AEM non possono distinguere tra account utente che hanno ID utente e pa
 
 Quando si utilizza SQL Server come database, non è possibile creare un ID utente che superi i 255 caratteri.
 
-Quando si utilizza MySQL, l&#39;ID utente può contenere caratteri estesi. Tuttavia, quando si effettua un confronto tra due stringhe, quali abcde e âbcdè, esse sono considerate uguali. Ad esempio, durante la sincronizzazione, se un nuovo utente è stato aggiunto al database, viene effettuato un confronto per verificare se nel database esiste un utente con lo stesso ID utente. Se l&#39;utente *basso* esiste già nel database quando il nuovo utente *âbcdè* viene aggiunto, il confronto non è in grado di distinguere tra i due nomi. Si presume che l&#39;utente esista già nel database e che il nuovo utente venga ignorato e non aggiunto.
+Quando si utilizza MySQL, l&#39;ID utente può contenere caratteri estesi. Tuttavia, quando si effettua un confronto tra due stringhe, quali abcde e âbcdè, esse sono considerate uguali. Ad esempio, durante la sincronizzazione, se un nuovo utente è stato aggiunto al database, viene effettuato un confronto per verificare se nel database esiste un utente con lo stesso ID utente. Se l&#39;utente *basso* esiste nel database quando il nuovo utente *âbcdè* viene aggiunto, il confronto non è in grado di distinguere tra i due nomi. Si presume che l&#39;utente esista nel database e che il nuovo utente venga ignorato e non aggiunto.
 
 Evitare di creare nomi utente che iniziano con un simbolo cancelletto (#). L&#39;esecuzione delle ricerche delle attività non restituisce alcun risultato per questi nomi utente. (Vedi [Utilizzo delle attività](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
@@ -173,4 +173,4 @@ Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accede
 
 CQ fornisce un meccanismo per sostituire il jsp 404 handler predefinito.
 
-Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, consulta [Personalizzazione delle pagine mostrate dal gestore errori](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) nella documentazione di Adobe Experience Manager.
+Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, consulta [Personalizzazione delle pagine mostrate dal gestore errori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) nella documentazione di Adobe Experience Manager.
