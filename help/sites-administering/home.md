@@ -2,10 +2,10 @@
 title: Guida utente all’amministrazione di AEM 6.5
 description: Informazioni sull’amministrazione di AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di distribuzione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 29%
+source-wordcount: '328'
+ht-degree: 26%
 
 ---
 
@@ -15,10 +15,10 @@ Informazioni sull’amministrazione di AEM 6.5. Queste guide descrivono le funzi
 
 ## Articoli chiave
 
-* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
+* [Guida introduttiva a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Note sulla versione di AEM 6.5](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
+* [Elenco di controllo AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.5
 
@@ -37,7 +37,6 @@ Informazioni sull’amministrazione di AEM 6.5. Queste guide descrivono le funzi
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida mostra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 

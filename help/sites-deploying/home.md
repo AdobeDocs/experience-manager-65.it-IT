@@ -3,10 +3,10 @@ title: Guida utente alla distribuzione di AEM 6.5
 seo-title: AEM 6.5 Deploying User Guide
 description: Scopri come installare e distribuire Adobe Experience Manager 6.5 e la relativa architettura, inclusa la distribuzione cloud di Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 26%
+source-wordcount: '361'
+ht-degree: 21%
 
 ---
 
@@ -16,10 +16,10 @@ Questa guida descrive tutte le attività AEM distribuzione, ad esempio l’insta
 
 ## Articoli principali AEM
 
-* [Guida introduttiva di AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
+* [Guida introduttiva a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Note sulla versione di AEM 6.5](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
+* [Elenco di controllo AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.5
 
@@ -38,7 +38,6 @@ Questa guida descrive tutte le attività AEM distribuzione, ad esempio l’insta
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida mostra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 

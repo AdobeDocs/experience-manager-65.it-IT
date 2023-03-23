@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Scopri come utilizzare e amministrare AEM contenuti e commercio, con i nostri utili articoli sulle integrazioni e come iniziare a utilizzare AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 28%
+source-wordcount: '336'
+ht-degree: 27%
 
 ---
 
@@ -38,7 +38,6 @@ Scopri come utilizzare e amministrare AEM contenuti e commercio, con i nostri ut
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare la tua istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html) | Questa guida mostra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 

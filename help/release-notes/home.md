@@ -2,10 +2,10 @@
 title: Note sulla versione di Adobe Experience Manager 6.5
 description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 38%
+source-wordcount: '355'
+ht-degree: 36%
 
 ---
 
@@ -19,7 +19,7 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 
 * [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it)
-* [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
+* [Elenco di controllo AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.5
 
@@ -37,7 +37,6 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida mostra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 

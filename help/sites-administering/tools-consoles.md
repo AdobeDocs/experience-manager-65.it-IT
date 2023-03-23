@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 44%
+source-wordcount: '607'
+ht-degree: 33%
 
 ---
 
@@ -238,10 +238,6 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Offload</td>
   </tr>
   <tr>
-   <td> </td>
-   <td>Configurazione Livefyre</td>
-  </tr>
-  <tr>
    <td>Sicurezza</td>
    <td> </td>
   </tr>
@@ -327,7 +323,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione dell’archiviazione</td>
+   <td>Configurazione archiviazione</td>
   </tr>
   <tr>
    <td> </td>
@@ -335,7 +331,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>Funzioni per community</td>
+   <td>Funzioni community</td>
   </tr>
   <tr>
    <td> </td>
@@ -438,7 +434,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Scaffolding pagine predefinito</td>
-   <td>Con la funzione di scaffolding è invece possibile creare un modulo (scaffolding significa letteralmente impalcatura) con i campi necessari per creare la struttura desiderata per le pagine e quindi utilizzare il modulo per creare agevolmente pagine basate su tale struttura.</td>
+   <td>Con la pagina di scaffolding è possibile creare un modulo (scaffolding) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare il modulo per creare facilmente pagine basate su questa struttura.</td>
   </tr>
   <tr>
    <td>Sicurezza - Configurazione self-service </td>
@@ -446,7 +442,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Segmentazione</td>
-   <td>I visitatori che arrivano a un sito hanno interessi e obiettivi diversi. Per il successo di operazioni di marketing online, è importante comprendere tali obiettivi e soddisfare le aspettative dei visitatori. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td>
+   <td>I visitatori del sito hanno interessi e obiettivi diversi quando accedono a un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td>
   </tr>
   <tr>
    <td>inquilini</td>
