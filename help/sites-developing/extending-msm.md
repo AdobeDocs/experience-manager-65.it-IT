@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 3%
+source-wordcount: '2593'
+ht-degree: 2%
 
 ---
 
@@ -172,8 +172,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 Crea una configurazione di rollout quando le configurazioni di rollout installate non soddisfano i requisiti dell&#39;applicazione:
 
-* [Crea la configurazione di rollout](#create-the-rollout-configuration).
-* [Aggiungi le azioni di sincronizzazione alla configurazione di rollout](#add-synchronization-actions-to-the-rollout-configuration).
+* [Creare la configurazione di rollout](#create-the-rollout-configuration).
+* [Aggiungere azioni di sincronizzazione alla configurazione di rollout](#add-synchronization-actions-to-the-rollout-configuration).
 
 La nuova configurazione di rollout è quindi disponibile quando imposti le configurazioni di rollout su una pagina blueprint o Live Copy.
 
@@ -194,13 +194,14 @@ Per creare una nuova configurazione di rollout:
    >[!NOTE]
    >Questa è la versione personalizzata del progetto di:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Deve essere creato se si tratta della prima configurazione.
+   >Se questa è la tua prima configurazione, `/libs` il ramo deve essere utilizzato come modello per creare il nuovo ramo sotto `/apps`.
 
    >[!NOTE]
    >
    >Non devi modificare nulla nel percorso /libs.
    >Questo perché il contenuto di /libs viene sovrascritto la prossima volta che aggiorni l&#39;istanza (e potrebbe essere sovrascritto quando applichi un hotfix o un feature pack).
    >Il metodo consigliato per la configurazione e altre modifiche è:
+   >
    >* Ricrea l&#39;elemento richiesto (cioè come esiste in /libs) sotto /apps
    >* Apporta modifiche a /apps
 
@@ -256,7 +257,7 @@ Segui le procedure descritte in questa sezione per sviluppare un `LiveActionFact
 1. [Crea il progetto Maven](#create-the-maven-project) e importalo in Eclipse.
 1. [Aggiungi dipendenze](#add-dependencies-to-the-pom-file) al file POM.
 1. [Implementare `LiveActionFactory` interfaccia](#implement-liveactionfactory) e distribuire il bundle OSGi.
-1. [Crea la configurazione di rollout](#create-the-example-rollout-configuration).
+1. [Creare la configurazione di rollout](#create-the-example-rollout-configuration).
 1. [Creare la Live Copy](#create-the-live-copy).
 
 Il progetto Maven e il codice sorgente della classe Java sono disponibili nell’archivio Git pubblico.
@@ -675,11 +676,11 @@ Poi devi assicurarti che:
 
 * E-mail di contatto:
 
-   * è escluso dalle proprietà di rollout; vedere [Esclusione di proprietà e tipi di nodo dalla sincronizzazione](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+* è escluso dalle proprietà di rollout; vedere [Esclusione di proprietà e tipi di nodo dalla sincronizzazione](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Stile visivo chiave:
 
-   * Assicurati di non poter modificare questa proprietà nell’interfaccia touch a meno che l’ereditarietà non venga annullata e di poter quindi ripristinare l’ereditarietà; questa opzione è controllata facendo clic sui collegamenti a catena o a catena interrotta che si attivano per indicare lo stato della connessione.
+* Assicurati di non poter modificare questa proprietà nell’interfaccia touch a meno che l’ereditarietà non venga annullata e di poter quindi ripristinare l’ereditarietà; questa opzione è controllata facendo clic sui collegamenti a catena o a catena interrotta che si attivano per indicare lo stato della connessione.
 
 Il fatto che una proprietà di pagina sia soggetta a rollout e, quindi, soggetta a annullamento/ripristino dell’ereditarietà durante la modifica, sia controllata dalla proprietà di dialogo:
 
@@ -689,10 +690,10 @@ Il fatto che una proprietà di pagina sia soggetta a rollout e, quindi, soggetta
    * crea il simbolo di collegamento a catena nella finestra di dialogo
    * consente la modifica solo se l’ereditarietà viene annullata (il collegamento a catena è interrotto)
    * si applica solo al primo livello figlio della risorsa
-   * **Tipo**: `String`
+      * **Tipo**: `String`
 
-   * **Valore**: contiene il nome dell&#39;immobile considerato (ed è paragonabile al valore dell&#39;immobile `name`; ad esempio, vedi
-      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+      * **Valore**: contiene il nome dell&#39;immobile considerato (ed è paragonabile al valore dell&#39;immobile `name`; ad esempio, vedi
+         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Quando `cq-msm-lockable` è stato definito, rompere/chiudere la catena interagisce con MSM nel modo seguente:
 
