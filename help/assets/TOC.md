@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 50%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -107,8 +107,8 @@ ht-degree: 50%
    + [Facet di ricerca](search-facets.md)
    + [Concetti di metadati](metadata-concepts.md)
    + [Configurare la funzionalità metadati](metadata-config.md)
-   + [Schemi metadati](metadata-schemas.md)
-   + [Write-back XMP per le rappresentazioni](xmp-writeback.md)
+   + [Schemi di metadati](metadata-schemas.md)
+   + [XMP di ritorno alle rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Configurare il Servizio di contenuti avanzati per l’assegnazione tag](config-smart-tagging.md)
@@ -158,6 +158,7 @@ ht-degree: 50%
 + Gestire le risorse {#managing}
    + [Consente di gestire i contenuti digitali](manage-assets.md)
    + [Gestire le raccolte](manage-collections.md)
+   + [Selettore risorse](asset-selector.md)
    + [Abilita rilevamento duplicati](duplicate-detection.md)
    + [Organizzare le risorse digitali](organize-assets.md)
    + [Gestire le risorse video](managing-video-assets.md)

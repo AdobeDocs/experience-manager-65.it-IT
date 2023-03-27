@@ -1,14 +1,14 @@
 ---
 title: Selettore risorse
 description: Scopri come utilizzare il selettore delle risorse per cercare, filtrare, sfogliare e recuperare metadati per le risorse in Adobe Experience Manager Assets. Inoltre, scopri come personalizzare l’interfaccia del selettore risorse.
-contentOwner: AG
+contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 4139b42d5cd3d7d1d93863dc07cfafd58c3f64f2
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
