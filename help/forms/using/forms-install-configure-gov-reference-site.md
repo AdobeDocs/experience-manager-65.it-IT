@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '4689'
+source-wordcount: '4677'
 ht-degree: 3%
 
 ---
@@ -281,7 +281,7 @@ I passaggi descritti in questa sezione sono inclusi per individuare ID client, S
 1. Per individuare l’URL risorsa/URL principale del servizio, passa al dashboard dell’istanza di MS Dynamics.
 1. Nella barra di navigazione superiore, fai clic su &quot;Vendite&quot; o sul tipo di istanza desiderato e su &quot;Seleziona impostazioni&quot;.
 1. Fai clic su &quot;Personalizzazioni&quot; e &quot;Risorse per sviluppatori&quot; in basso a destra.
-1. Qui trovi l’URL principale del servizio: ad esempio
+1. Qui trovi l&#39;URL principale del servizio: ad esempio
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -348,7 +348,7 @@ Questa sezione contiene dettagli e istruzioni sulla configurazione di Adobe Anal
 
 * [Connessione ad Adobe Analytics e creazione di framework](../../sites-administering/adobeanalytics-connect.md)
 
-* [Visualizzazione dei dati analitici sulle pagine](../../sites-authoring/pa-using.md)
+* [Visualizzazione dei dati di analisi delle pagine](../../sites-authoring/pa-using.md)
 
 * [Configurazione di analisi e rapporti](configure-analytics-forms-documents.md)
 
@@ -748,12 +748,12 @@ Questa sezione contiene informazioni sulle funzioni demo e sulle decisioni di pr
 
 ### Abilitazione del componente aggiuntivo Chrome per il test di accessibilità {#enable-chrome-add-on}
 
-Per eseguire prima i test di accessibilità è necessario installare il plug-in Chrome, è possibile trovarlo [qui](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+Per eseguire il test di accessibilità, installa il plug-in Chrome trovato [qui](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Una volta installata, carica la pagina da testare nel browser Chrome (Nota: La presenza di più schede aperte potrebbe influenzare il punteggio, è preferibile avere una sola scheda aperta). Una volta caricata la pagina
-**clic destro** nella pagina e seleziona **Audit** scheda . Alcuni sviluppatori possono selezionare il tipo di controllo da eseguire dal plug-in Accessibilità. Dopo aver selezionato tutte le opzioni desiderate, l’utente può selezionare il pulsante Genera report . Questo genera un documento PDF che mostra il punteggio complessivo di accessibilità e ciò che può essere utilizzato per aumentare il livello complessivo di accessibilità.
+Dopo l&#39;installazione, carica la pagina da testare nel browser Chrome (Nota: La presenza di più schede aperte potrebbe influenzare il punteggio, è preferibile avere una sola scheda aperta). Una volta caricata la pagina
+**clic destro** nella pagina e seleziona **Audit** scheda . Alcuni sviluppatori possono selezionare il tipo di controllo da eseguire dal plug-in Accessibilità. Dopo aver selezionato tutte le opzioni desiderate, l’utente può fare clic sul pulsante Genera report . Questo genera un documento PDF che mostra il punteggio complessivo di accessibilità e ciò che può essere utilizzato per aumentare il livello complessivo di accessibilità.
 
-Una volta eseguito il rapporto, gli utenti possono aspettarsi di vedere quanto segue:
+Dopo l’esecuzione del rapporto, gli utenti possono vedere quanto segue:
 
 ![Rapporto sull’accessibilità](assets/aftia-accessibility.jpg)
 
