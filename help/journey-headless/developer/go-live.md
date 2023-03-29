@@ -2,7 +2,7 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso di sviluppo headless AEM, scopri come distribuire in tempo reale un’applicazione headless.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 54%
@@ -104,7 +104,7 @@ Ora è il momento di preparare l&#39;applicazione senza testa AEM per il lancio,
 
 ### Proteggere l&#39;applicazione headless prima di Launch {#secure-and-scale-before-launch}
 
-1. Preparare [Autenticazione](/help/assets/content-fragments/graphql-authentication-content-fragments.md) per le richieste GraphQL
+1. Preparare [Autenticazione](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) per le richieste GraphQL
 
 ### Struttura del modello e output GraphQL {#structure-vs-output}
 

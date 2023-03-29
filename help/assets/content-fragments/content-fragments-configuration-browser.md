@@ -4,7 +4,7 @@ description: Scopri come abilitare alcune funzionalità dei frammenti di contenu
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 78%
@@ -27,7 +27,7 @@ Prima di utilizzare i frammenti di contenuto, è necessario utilizzare la funzio
 >Se non si abilita **Modelli per frammenti di contenuto**:
 >
 >* l’opzione **Crea** non sarà disponibile per la creazione di nuovi modelli.
->* non potrai [selezionare la configurazione Sites per creare il relativo endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* non potrai [selezionare la configurazione Sites per creare il relativo endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 
 Per abilitare la funzionalità dei frammenti di contenuto è necessario:

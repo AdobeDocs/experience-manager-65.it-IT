@@ -4,10 +4,10 @@ description: Scopri come i frammenti di contenuto in Adobe Experience Manager (A
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 >* [Personalizzazione ed estensione dei frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md)
 >* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/assets-api-content-fragments.md)
->* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
@@ -133,7 +133,7 @@ I frammenti di contenuto sono:
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
-* Accessibili tramite l’[API GraphQL di AEM](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Accessibili tramite l’[API GraphQL di AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 I frammenti di contenuto sono una struttura di contenuto che:
 
@@ -269,7 +269,7 @@ Contenuto intermedio:
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 

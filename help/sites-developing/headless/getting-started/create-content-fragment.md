@@ -2,7 +2,7 @@
 title: Guida rapida alla creazione di frammenti di contenuto senza intestazione
 description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 91%
@@ -32,16 +32,16 @@ Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per ra
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.
    * Se ricevi il messaggio `We could not find any models`, controlla la configurazione della cartella delle risorse.
 
-   ![Seleziona modello di Frammento di contenuto](../assets/content-fragment-model-select.png)
+   ![Seleziona modello di Frammento di contenuto](assets/content-fragment-model-select.png)
 1. Fornisci **Titolo**, **Descrizione** e **Tag** secondo necessità, quindi tocca o fai clic su **Crea**.
 
-   ![Creare Frammento di contenuto](../assets/content-fragment-create.png)
+   ![Creare Frammento di contenuto](assets/content-fragment-create.png)
 1. Tocca o fai clic su **Apri** nella finestra di conferma.
 
-   ![Conferma di creazione del Frammento di contenuto](../assets/content-fragment-confirmation.png)
+   ![Conferma di creazione del Frammento di contenuto](assets/content-fragment-confirmation.png)
 1. Fornisci i dettagli del Frammento di contenuto nell’Editor frammento di contenuto.
 
-   ![Editor frammento di contenuto](../assets/content-fragment-edit.png)
+   ![Editor frammento di contenuto](assets/content-fragment-edit.png)
 1. Tocca o fai clic su **Salva** o **Salva e chiudi**.
 
 I Frammenti di contenuto possono fare riferimento ad altri Frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.

@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1285'
 ht-degree: 37%
 
 ---
@@ -138,11 +138,12 @@ ht-degree: 37%
    + API di distribuzione{#delivery-api}
       + [API HTTP di Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
-      + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [Utilizzo dell’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
-      + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
-      + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
-      + [API GraphQL per AEM con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [API GraphQL per frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+      + [Gestione degli endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+      + [Utilizzo dell’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
+      + [Query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
+      + [API GraphQL per AEM con frammenti di contenuto - Contenuto di esempio e query](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Sviluppo ibrido e AEM SPA{#spas}
    + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Introduzione a SPA e procedura dettagliata](spa-walkthrough.md)
@@ -221,7 +222,7 @@ ht-degree: 37%
       + [Creazione di un Cloud Service personalizzato](extending-cloud-config-custom-cloud.md)
    + [Creazione di estensioni personalizzate](extending-campaign-extensions.md)
    + Forms{#extending-forms}
-      + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
+      + [Creazione di mappature dei moduli personalizzate](extending-campaign-form-mapping.md)
       + [Creazione di un modello di pagina AEM personalizzato con i componenti del modulo Adobe Campaign](extending-campaign-custom-template.md)
       + [Script di analisi delle richieste](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
@@ -243,7 +244,7 @@ ht-degree: 37%
    + [Elenchi di controllo](checklists.md)
    + [Giorno difficile](tough-day.md)
    + [Verifica dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
-+ Best practice  {#bestpractices}
++ Best practice{#bestpractices}
    + [Panoramica delle best practice](best-practices.md)
    + [Linee guida per lo sviluppo AEM e best practice](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=it)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)

@@ -2,7 +2,7 @@
 title: Guida rapida alla creazione di modelli di frammenti di contenuto headless
 description: Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 93%
@@ -26,21 +26,21 @@ Un architetto dell’informazione esegue tali attività solo occasionalmente, qu
 1. Accedi a AEM e dal menu principale seleziona **Strumenti -> Risorse -> Modelli per frammenti di contenuto**.
 1. Tocca o fai clic sulla cartella creata durante la creazione della configurazione.
 
-   ![Cartella dei modelli](../assets/models-folder.png)
+   ![Cartella dei modelli](assets/models-folder.png)
 1. Tocca o fai clic su **Crea**.
 1. Specifica un **titolo modello**, **tag** e **descrizione**. Puoi anche selezionare/deselezionare **Abilita modello** per assicurarti che il modello venga subito abilitato al momento della creazione.
 
-   ![Creare un modello](../assets/models-create.png)
+   ![Creare un modello](assets/models-create.png)
 1. Nella finestra di conferma, tocca o fai clic su **Apri** per configurare il modello.
 
-   ![Finestra di conferma](../assets/models-confirmation.png)
+   ![Finestra di conferma](assets/models-confirmation.png)
 1. Utilizzando l’**Editor modello per frammenti di contenuto**, crea il modello per frammenti di contenuto trascinando i campi dalla colonna **Tipi di dati**.
 
-   ![Trascinare i campi](../assets/models-drag-and-drop.png)
+   ![Trascinare i campi](assets/models-drag-and-drop.png)
 
 1. Dopo aver inserito un campo, è necessario configurarne le proprietà. L’editor passa automaticamente alla scheda **Proprietà** per il campo aggiunto, dove puoi specificare i campi obbligatori.
 
-   ![Configurare proprietà](../assets/models-configure-properties.png)
+   ![Configurare proprietà](assets/models-configure-properties.png)
 1. Al termine della creazione del modello, tocca o fai clic su **Salva**.
 
 1. La modalità del modello appena creato dipende dalla selezione o meno dell’opzione **Abilita modello** durante la creazione dello stesso:
@@ -50,13 +50,13 @@ Un architetto dell’informazione esegue tali attività solo occasionalmente, qu
 1. Se non abilitato, per poter essere utilizzato il modello deve essere **abilitato**.
    1. Seleziona il modello appena creato, quindi tocca o fai clic su **Abilita**.
 
-      ![Abilitazione del modello](../assets/models-enable.png)
+      ![Abilitazione del modello](assets/models-enable.png)
    1. Conferma l’abilitazione del modello toccando o facendo clic su **Abilita** nella finestra di dialogo di conferma.
 
-      ![Abilitazione della finestra di dialogo di conferma](../assets/models-enabling.png)
+      ![Abilitazione della finestra di dialogo di conferma](assets/models-enabling.png)
 1. Il modello è ora abilitato e pronto per essere utilizzato.
 
-   ![Modello abilitato](../assets/models-enabled.png)
+   ![Modello abilitato](assets/models-enabled.png)
 
 L’**Editor modello per frammenti di contenuto** supporta differenti tipi di dati, ad esempio campi di testo semplice, riferimenti alle risorse, riferimenti ad altri modelli e dati JSON.
 

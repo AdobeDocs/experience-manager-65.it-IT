@@ -2,7 +2,7 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 99%
@@ -275,6 +275,6 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti basandoti
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): creazione e modifica di modelli per frammenti di contenuto
    * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): creazione e authoring dei frammenti di contenuto; questa pagina ti porterà ad altre sezioni dettagliate
 * [Schemi GraphQL AEM](access-your-content.md): come GraphQL realizza i modelli
-* [La struttura del frammento di contenuto di esempio](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [La struttura del frammento di contenuto di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it): una breve serie di esercitazioni video che offre una panoramica dell’utilizzo delle funzioni headless in AEM, inclusa la modellazione dei contenuti e GraphQL
    * [Nozioni di base sulla modellazione di GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=it): scopri come definire e inserire i frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.

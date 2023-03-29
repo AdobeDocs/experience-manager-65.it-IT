@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '723'
+ht-degree: 46%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 0%
    + [Estendi editor risorse](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
    + [Supporto dei frammenti di contenuto in [!DNL Assets] API HTTP](assets-api-content-fragments.md)
-   + [API di GraphQL per frammenti di contenuto](content-fragments/graphql-api-content-fragments.md)
-   + [Utilizzo dell’IDE GraphiQL](content-fragments/graphiql-ide.md)
-   + [Query persistenti](content-fragments/persisted-queries.md)
-   + [Autenticazione per query GraphQL remote sui frammenti di contenuto](content-fragments/graphql-authentication-content-fragments.md)
-   + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API di GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
+   + [Utilizzo dell’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
+   + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [Autenticazione per query GraphQL remote sui frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
+   + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets] sviluppo proxy](proxy.md)
 + Amministrare le risorse {#administer}
    + [Formati di file supportati](assets-formats.md)

@@ -2,7 +2,7 @@
 title: Guida rapida alla creazione di un headless di configurazione
 description: Crea una configurazione come primo passaggio per iniziare a utilizzare headless in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 69%
@@ -34,7 +34,7 @@ Un amministratore deve creare una configurazione solo una volta oppure, molto ra
    * **Modelli per frammenti di contenuto**
    * **Query GraphQL persistenti**
 
-   ![Crea configurazione](../assets/create-configuration.png)
+   ![Crea configurazione](assets/create-configuration.png)
 
 1. Tocca o fai clic su **Crea**.
 
