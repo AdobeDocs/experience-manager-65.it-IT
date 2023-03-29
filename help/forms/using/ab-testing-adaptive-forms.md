@@ -10,15 +10,16 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 5fdd76a907c444a90fdda76ffb314888fe92e839
+source-git-commit: ccbb6a33c2ee8029d2e82d9098c07de18af166ac
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # Creazione e gestione di test A/B per i moduli adattivi{#create-and-manage-a-b-test-for-adaptive-forms}
 
+|Negativo|[!BADGE Disattivato]{type=negative tooltip="Questa funzione è ora terminata"}
 <div class="preview"> Il test A/B per la funzione Moduli adattivi ha raggiunto la fine del ciclo di vita e non è più supportato. </div>
 
 ## Panoramica {#overview-br}
