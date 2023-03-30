@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Creazione e gestione di test A/B per i moduli adattivi{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Negativo|[!BADGE Disattivato]{type=negative tooltip="Questa funzione è ora terminata"}
+|Negativo|[!BADGE Disattivato]{type=negative tooltip="Questa funzione è ora terminata"}|
 <div class="preview"> Il test A/B per la funzione Moduli adattivi ha raggiunto la fine del ciclo di vita e non è più supportato. </div>
 
 ## Panoramica {#overview-br}
