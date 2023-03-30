@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
+source-wordcount: '6053'
 ht-degree: 2%
 
 ---
@@ -138,9 +138,9 @@ La creazione di un singolo controllo integrità prevede due passaggi: implementa
 
 ### Creazione di un controllo dello stato composito {#creating-a-composite-health-check}
 
-Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diversi controlli di integrità individuali che condividono un insieme di funzioni comuni. Ad esempio, Security Composite Health Check raggruppa tutti i singoli controlli di integrità che eseguono verifiche relative alla sicurezza. Il primo passo per creare un controllo composito è quello di aggiungere una configurazione OSGI. Affinché possa essere visualizzato nel Dashboard delle operazioni, è necessario aggiungere un nuovo nodo di configurazione, come abbiamo fatto per un semplice controllo.
+Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diversi controlli di integrità individuali che condividono un insieme di funzioni comuni. Ad esempio, Security Composite Health Check raggruppa tutti i singoli controlli di integrità che eseguono verifiche relative alla sicurezza. Il primo passo per creare un controllo composito è quello di aggiungere una configurazione OSGI. Affinché possa essere visualizzato nel Dashboard delle operazioni, è necessario aggiungere un nuovo nodo di configurazione nello stesso modo di un semplice controllo.
 
-1. Vai a Web Configuration Manager nella console OSGI. Per farlo, accedi a `https://serveraddress:port/system/console/configMgr`
+1. Vai a Web Configuration Manager nella console OSGI. Accesso `https://serveraddress:port/system/console/configMgr`
 1. Cerca la voce chiamata **Verifica dello stato composito di Apache Sling**. Una volta trovato, noterai che sono già disponibili due configurazioni: uno per i controlli di sistema e un altro per i controlli di sicurezza.
 1. Crea una configurazione premendo il pulsante &quot;+&quot; sul lato destro della configurazione. Viene visualizzata una nuova finestra, come illustrato di seguito:
 
@@ -153,7 +153,7 @@ Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diver
    * **Nome (hc.name):** Nome del controllo di integrità composito. Si consiglia di assegnare un nome significativo.
    * **Tag (hc.tags):** Tag per il controllo dello stato di salute. Se questo controllo di integrità composito è destinato a far parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui questo composito è correlato.
    * **Nome MBean (hc.mbean.name):** Il nome del Mbean che viene dato al MBean JMX di questo controllo di integrità composito.
-   * **Tag filtro (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi sono i tag che il composito deve aggregare. Il controllo dello stato di salute composito aggrega sotto il suo gruppo tutti i controlli di integrità che hanno un tag corrispondente a uno dei tag di filtro di questo composito. Ad esempio, un controllo di integrità composito con tag filtro **test** e **check**, aggrega tutti i controlli sanitari individuali e compositi che hanno uno dei **test** e **check** tag nella relativa proprietà tag ( `hc.tags`).
+   * **Tag filtro (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi tag sono aggregati dal composito. Il controllo dello stato di salute composito aggrega sotto il suo gruppo tutti i controlli di integrità che hanno un tag corrispondente a uno dei tag di filtro di questo composito. Ad esempio, un controllo di integrità composito con tag filtro **test** e **check**, aggrega tutti i controlli sanitari individuali e compositi che hanno uno dei **test** e **check** tag nella relativa proprietà tag ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diver
 
    >[!NOTE]
    >
-   >Se crei controlli di integrità individuali che logicamente appartengono a un controllo composito già presente nel dashboard per impostazione predefinita, questi vengono acquisiti automaticamente e raggruppati sotto il rispettivo controllo composito. Per questo motivo, non è necessario creare un nodo di configurazione per questi controlli.
+   >Se crei controlli di integrità individuali che logicamente appartengono a un controllo composito già presente nel dashboard per impostazione predefinita, questi vengono acquisiti automaticamente e raggruppati sotto il rispettivo controllo composito. Di conseguenza, non è necessario creare un nodo di configurazione per questi controlli.
    >
    >Ad esempio, se crei un singolo controllo di integrità della sicurezza, assegnalo il &quot;**sicurezza**&quot; e viene installato. Viene visualizzato automaticamente sotto il controllo composito Controlli di sicurezza nel dashboard Operazioni.
 
@@ -309,11 +309,11 @@ Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diver
   </tr>
   <tr>
    <td>Controllo della cache del codice</td>
-   <td><p>Questo è un controllo dello stato che verifica diverse condizioni JVM che possono attivare un bug CodeCache presente in Java 7:</p>
+   <td><p>Un controllo dello stato che verifica diverse condizioni JVM che possono attivare un bug CodeCache presente in Java™ 7:</p>
     <ul>
-     <li>restituisce Avvisa se l'istanza è in esecuzione su Java 7, con lo scaricamento della cache del codice abilitato</li>
-     <li>restituisce Avvisa se l'istanza è in esecuzione su Java 7 e la dimensione della cache del codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
-    </ul> <p>La <code>minimum.code.cache.size</code> la soglia è configurabile. Per ulteriori informazioni sul bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">controlla questa pagina</a>.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7, con lo scaricamento della cache del codice abilitato</li>
+     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7 e la dimensione della cache del codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
+    </ul> <p>La <code>minimum.code.cache.size</code> la soglia è configurabile. Per ulteriori informazioni sul bug, vedi <a href="https://bugs.java.com/bugdatabase/"> e cerca il Bug ID 8012547</a>.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errori nel percorso di ricerca delle risorse</td>
@@ -630,7 +630,7 @@ Per la manutenzione del log di controllo, consulta la sezione [pagina separata d
 
 ## Attività di manutenzione personalizzate {#custom-maintenance-tasks}
 
-Le attività di manutenzione personalizzate possono essere implementate come servizi OSGi. Poiché l’infrastruttura delle attività di manutenzione si basa sulla gestione dei processi di Apache Sling, un’attività di manutenzione deve implementare l’interfaccia java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Inoltre, deve dichiarare diverse proprietà di registrazione del servizio da rilevare come attività di manutenzione, come indicato di seguito:
+Le attività di manutenzione personalizzate possono essere implementate come servizi OSGi. Poiché l&#39;infrastruttura delle attività di manutenzione si basa sulla gestione dei processi di Apache Sling, un&#39;attività di manutenzione deve implementare l&#39;interfaccia Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Inoltre, deve dichiarare diverse proprietà di registrazione del servizio da rilevare come attività di manutenzione, come indicato di seguito:
 
 <table>
  <tbody>
@@ -767,7 +767,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Sistema</td>
    <td>
     <ul>
-     <li>sistema operativo e versione del sistema operativo (ad esempio, Mac OS X)</li>
+     <li>sistema operativo e versione del sistema operativo (ad esempio, macOS X)</li>
      <li>media del carico del sistema, come recuperato da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">SistemaOperativoMXBeable</a></li>
      <li>spazio su disco (sulla partizione in cui si trova la home directory)</li>
      <li>heap massimo, come restituito da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>

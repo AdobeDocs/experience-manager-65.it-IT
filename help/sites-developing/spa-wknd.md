@@ -1,8 +1,6 @@
 ---
 title: Tutorial WKND per SPA
-seo-title: SPA WKND Tutorial
-description: Immergiti nello sviluppo SPA con questa esercitazione in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA.
-seo-description: Immerse yourself in SPA development with this multi-part tutorial leading you through project setup, component mapping, front-end development tools, and application routing to implement your own SPA.
+description: Immergiti nello sviluppo SPA con questa esercitazione in più parti. Implementa un tuo SPA che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
 uuid: f57be84b-a037-4c76-856e-afb0275c1a0f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +8,22 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 exl-id: 59ada14e-3cb1-4f2c-b866-a2bb130db3fc
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '145'
 ht-degree: 17%
 
 ---
 
 # Tutorial WKND per SPA{#spa-wknd-tutorial}
 
-Immergiti nello sviluppo SPA con questa esercitazione in più parti che ti guida attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni per implementare il tuo SPA.
+Immergiti nello sviluppo SPA con questa esercitazione in più parti. Implementa un tuo SPA che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
 
 ## Esercitazioni {#tutorials}
 
 Per un esempio end-to-end di creazione di un&#39;applicazione a pagina singola modificabile con AEM che inizia con la configurazione del progetto attraverso il routing dell&#39;applicazione, vedere i Tutorials di SPA WKND:
 
-* [Guida introduttiva ad AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Guida introduttiva ad AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Guida introduttiva ad AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+* [Guida introduttiva ad AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 Prima di iniziare il progetto di SPA per AEM, tuttavia, assicurati di rivedere anche il [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) documento.
