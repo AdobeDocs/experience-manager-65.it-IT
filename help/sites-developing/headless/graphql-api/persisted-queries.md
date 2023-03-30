@@ -1,7 +1,7 @@
 ---
 title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client utilizzando il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli Dispatcher e CDN, migliorando in ultima analisi le prestazioni delle applicazioni client.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 72%
@@ -266,7 +266,7 @@ Le query persistenti sono consigliate in quanto possono essere memorizzate nella
 Per impostazione predefinita, AEM la cache viene annullata in base alla definizione TTL (Time To Live). Questi TTL possono essere definiti dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 
 | Tipo di cache | [Intestazione HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configurazione OSGi  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
