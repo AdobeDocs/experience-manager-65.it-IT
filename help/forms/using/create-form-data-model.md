@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1512'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Effettua le seguenti operazioni per configurare il tuo [!DNL MySQL] database:
 
 1. Installa il driver JDBC per [!DNL MySQL] database come bundle OSGi:
 
-   1. Scarica [[!DNL MySQL] Bundle OSGi del driver JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+   1. Scarica [!DNL MySQL] Bundle OSGi del driver JDBC `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Accedi a AEM [!DNL Forms] Istanza autore come amministratore e vai AEM bundle della console web. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tocca **[!UICONTROL Installazione/aggiornamento]**. Un [!UICONTROL Caricare/installare i bundle] viene visualizzata la finestra di dialogo .
@@ -191,7 +191,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
       * **Matrice di ritorno**: Disattiva la **Matrice di ritorno** opzione .
       * **Argomenti**: Seleziona argomento denominato **ID**.
 
-      Toccate **[!UICONTROL Chiudi]**. Il servizio per recuperare i dettagli del cliente dal database MySQL è configurato.
+      Tocca **[!UICONTROL Fine]**. Il servizio per recuperare i dettagli del cliente dal database MySQL è configurato.
 
       ![spogliarello-indirizzo-recupero](assets/shiiping-address-retrieval.png)
 
@@ -211,7 +211,7 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
       * **Tipo di uscita**: Seleziona **BOOLEANO**.
 
       * **Argomenti**: Seleziona argomento denominato **ID** e **dettagli cliente**.
-      Toccate **[!UICONTROL Chiudi]**. La **[!UICONTROL update]** per aggiornare i dettagli del cliente nel [!DNL MySQL] database configurato.
+      Tocca **[!UICONTROL Fine]**. La **[!UICONTROL update]** per aggiornare i dettagli del cliente nel [!DNL MySQL] database configurato.
 
       ![invio-indirizzo-aggiornamento](assets/shiiping-address-update.png)
 
