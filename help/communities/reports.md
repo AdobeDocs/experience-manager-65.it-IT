@@ -12,10 +12,10 @@ discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 7%
+source-wordcount: '381'
+ht-degree: 9%
 
 ---
 
@@ -27,10 +27,6 @@ Per AEM Communities, è possibile accedere a diversi rapporti in diversi modi da
 
 In generale, le varie relazioni sono:
 
-* [Rapporto assegnazioni](#assignments-report)
-
-   Per un [comunità di abilitazione](/help/communities/overview.md#enablement-community)fornisce una panoramica dell’avanzamento degli studenti nelle loro assegnazioni, con un punteggio associato se si implementa lo standard SCORM.
-
 * [Rapporto visualizzazioni](#views-report)
 
    Fornisce un grafico dei contenuti dei membri della community e dei visitatori del sito per qualsiasi sito della community.
@@ -38,8 +34,6 @@ In generale, le varie relazioni sono:
 * [Rapporto sui post](#posts-report)
 
    Fornisce un grafico dei vari tipi di post dei membri della community su qualsiasi sito della community.
-
-Quando [Adobe Analytics è abilitato](/help/communities/sites-console.md#analytics), i rapporti includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ogni risorsa di abilitazione nel tempo.
 
 I rapporti tabulari possono essere esportati in formato .csv per successive elaborazioni.
 
@@ -59,64 +53,11 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
       * Genera un report per il sito della community selezionato, il tipo di contenuto e il periodo di tempo.
    * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un rapporto per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
+      * genera un rapporto per il sito della community, il tipo di contenuto e il periodo di tempo selezionati.
 
 
 
 ![rapporti](assets/reports1.png)
-
-### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
-
-* Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** >  **[!UICONTROL Risorse]**
-
-* Seleziona un sito community di abilitazione esistente:
-
-   * Seleziona **Rapporto** icona per generare rapporti che coprono tutte le risorse di abilitazione.
-   * Seleziona un percorso di apprendimento per l’abilitazione.
-   * Seleziona **Rapporto** icona per generare rapporti per:
-
-      * Le risorse di abilitazione incluse.
-      * Gli studenti assegnati al percorso di apprendimento.
-
-* Tali rapporti forniscono:
-
-   * Dati tabella, scaricabili come CSV:
-
-      * Identificazione dello studente
-      * Il loro status
-      * Assegnazione o accesso tramite catalogo
-      * Numero di osservazioni formulate
-      * Classificazione a stelle
-
-Per ulteriori dettagli, consulta [Sezione Rapporti](/help/communities/resources.md#report) della console Risorse .
-
-## Rapporto assegnazioni {#assignments-report}
-
-La console Assegnazioni consente di filtrare i rapporti in base al sito della community di abilitazione, agli utenti o ai gruppi e all’assegnazione.
-
-La relazione fornisce informazioni sui loro progressi nonché eventuali commenti o valutazioni forniti.
-
-![rapporto di assegnazione](assets/assignment-report.png)
-
-Seleziona i criteri per il rapporto :
-
-* **Sito**
-
-   Seleziona un sito community di abilitazione.
-
-* **Utente o gruppo**
-   * Selezionare Utente per generare un rapporto per uno studente.
-   * Selezionare Gruppo per generare un rapporto per un gruppo di studenti.
-
-   Il servizio tunnel accederà ai membri e ai gruppi di membri dall’ambiente di pubblicazione.
-
-* **Assegnazione**
-
-   Scegli tra le risorse di abilitazione assegnate agli studenti selezionati.
-
-Seleziona **Genera** per creare il rapporto:
-
-![genera rapporto](assets/generate-assignment-report.png)
 
 ## Rapporto visualizzazioni {#views-report}
 

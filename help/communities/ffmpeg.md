@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-FFmpeg è una soluzione per la conversione e lo streaming audio e video e, quando installato, viene utilizzato per la corretta transcodifica di [risorse video](../../help/sites-authoring/default-components-foundation.md#video) e per la funzione di abilitazione di AEM Communities.
-
-FFmpeg viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse di abilitazione caricate e generare una miniatura da visualizzare quando si elenca la risorsa di abilitazione.
+FFmpeg è una soluzione per la conversione e lo streaming audio e video e, quando installato, viene utilizzato per la corretta transcodifica di [risorse video](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Installazione di FFmpeg {#installing-ffmpeg}
 

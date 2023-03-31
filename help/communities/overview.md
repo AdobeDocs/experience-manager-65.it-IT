@@ -11,20 +11,16 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 4%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
 # Panoramica di AEM Communities {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities permette di creare rapidamente un sito di community on-premise con prestazioni ottimizzate e una migliore gestione del sito, che favorisce la conversione dei visitatori in membri attivi della community.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
+Adobe Experience Manager (AEM) Communities consente di creare rapidamente un sito di community on-premise con prestazioni migliorate, una migliore gestione del sito e la possibilità di convertire i visitatori del sito in membri di valore della community.
 
 ## Funzioni di Communities {#communities-features}
 
@@ -40,7 +36,6 @@ AEM Communities consente lo sviluppo di una relazione con i visitatori del sito,
 * **Condivisione file**,
 * **Notifiche** e **flussi di attività**,
 * Permette **assegnazione tag** (@menzione) altri membri registrati in Contenuto generato dagli utenti, per attirare la loro attenzione.
-* Supporti **navigazione da tastiera** sui componenti di abilitazione (ad esempio Riproduzione di catalogo e corso, Assegnazioni, Libreria file) .
 
 Le funzioni di Communities possono essere dimostrate utilizzando [AEM Demo](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponibile pubblicamente su GitHub.com o con la nuova implementazione di riferimento We.Retail.
 
@@ -98,7 +93,7 @@ Per ulteriori informazioni sulla persistenza dei contenuti della community e sul
 
 Nell’ambiente di authoring, la console di navigazione globale consente di accedere alle [Console di Communities](/help/communities/consoles.md), che contiene:
 
-* La console [Sites](/help/communities/sites-console.md)
+* [Sites](/help/communities/sites-console.md) console
 
    * Creazione di siti
    * Modifica del sito
@@ -119,11 +114,6 @@ Nell’ambiente di authoring, la console di navigazione globale consente di acce
 * [Rapporti](/help/communities/reports.md) console
 
    * Consente di generare rapporti su assegnazioni, post e viste.
-
-* [Risorse](/help/communities/resources.md) console
-
-   * Consente di creare risorse di abilitazione e percorsi di apprendimento.
-   * Consente di accedere ai rapporti sulle risorse di abilitazione e sui percorsi di apprendimento.
 
 La console strumenti globali consente di accedere ai seguenti strumenti di Communities:
 
@@ -155,7 +145,7 @@ Un modello di sito community, composto da funzioni community e modelli di gruppo
 
 Consulta la sezione [Console Modelli per siti](/help/communities/sites.md).
 
-## Funzioni per community {#community-functions}
+## Funzioni community {#community-functions}
 
 Le funzioni previste per un’esperienza comunitaria sono ben note. Con AEM Communities, queste funzioni sono disponibili come blocchi predefiniti, noti come funzioni per community.
 
@@ -183,9 +173,7 @@ La [componenti della community](/help/communities/author-communities.md) può es
 
 La [guida ai componenti della community](/help/communities/components-guide.md) è disponibile per l’esplorazione interattiva dei componenti.
 
-## Tipi di comunità {#types-of-communities}
-
-### Community di coinvolgimento {#engagement-community}
+## Community di coinvolgimento {#engagement-community}
 
 Una community di coinvolgimento è un sito della community incentrato sul coinvolgimento dei clienti per informare, richiedere un feedback e consentire ai clienti di interagire come membri della community.
 
@@ -208,23 +196,6 @@ Le caratteristiche di una community di coinvolgimento possono includere:
 * Reporting di Analytics
 
 Per scoprire la facilità di creare rapidamente una nuova community di coinvolgimento, visita [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md).
-
-### Community di abilitazione {#enablement-community}
-
-Una community di abilitazione è un sito della community che include funzionalità per l’apprendimento online.
-
-Le caratteristiche di una community di abilitazione possono includere:
-
-* Tutte le caratteristiche di un [community di coinvolgimento](#engagement-community).
-* capacità di assegnare contenuti e apprendimento. risorse ai membri e ai gruppi di membri.
-* Supporta contenuti SCORM, come quiz e test.
-* Monitoraggio del completamento delle assegnazioni.
-* Accesso a reporting e analisi.
-* La possibilità di parlare di una risorsa di apprendimento attraverso forum, messaggi, commenti e valutazioni.
-
-È possibile creare una community di abilitazione quando [Il componente aggiuntivo di abilitazione è configurato](/help/communities/enablement.md), che richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione. Un sito della community di abilitazione includerà la [funzione di assegnazione](#community-functions).
-
-Per scoprire la facilità di creazione di una nuova community di abilitazione, visita [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md).
 
 ## AEM Demo {#aem-demo-machine}
 

@@ -7,10 +7,10 @@ breadcrumb-title: Guida di Communities
 user-guide-description: Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.
 feature: Communities
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 12%
+source-wordcount: '451'
+ht-degree: 10%
 
 ---
 
@@ -22,19 +22,14 @@ ht-degree: 12%
    + [Siti community](administer-landing.md)
    + [Panoramica di AEM Communities](overview.md)
    + [Note sulla versione di AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
-   + [Guida introduttiva di AEM Communities](getting-started.md)
-   + [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+   + [Guida introduttiva ad AEM Communities](getting-started.md)
    + [Configurazione iniziale](setup.md)
    + [Creare un nuovo sito della community](create-site.md)
    + [Esperienza con il sito pubblicato](published-site.md)
    + [Creazione di gruppi nidificati](nested-groups.md)
-   + [Configurazione iniziale per l&#39;abilitazione](enablement-setup.md)
-   + [Creare un nuovo sito community per l’abilitazione](enablement-create-site.md)
-   + [Creare e assegnare risorse di abilitazione](resource.md)
-   + [Esperienza con il sito di abilitazione pubblicato](enablement-published-site.md)
 + Distribuzione {#deploy}
    + [Distribuzione di Communities](deploy-communities.md)
-   + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
+   + [Aggiornamento a AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)
    + [Configurazione di Dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
@@ -42,7 +37,6 @@ ht-degree: 12%
    + [Siti community](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Console di Communities](consoles.md)
    + [Funzionalità di configurazione di Analytics for Communities](analytics.md)
-   + [Configurazione delle funzionalità di abilitazione](enablement.md)
    + [Configurazione della messaggistica](messaging.md)
    + [Moderazione dei contenuti della community](moderate-ugc.md)
    + [Configurazione e-mail](email.md)
@@ -59,12 +53,10 @@ ht-degree: 12%
    + [Strumenti per le community](tools.md)
    + [Modelli per siti](sites.md)
    + [Modelli per gruppi](tools-groups.md)
-   + [Funzioni per community](functions.md)
-   + [Configurazione dell’archiviazione](srp-config.md)
+   + [Funzioni community](functions.md)
+   + [Configurazione archiviazione](srp-config.md)
    + [Console dei badge](badges.md)
-   + [Console Risorse di abilitazione](resources.md)
    + [Console Rapporti](reports.md)
-   + [Configurazione di MySQL per le funzionalità di abilitazione](mysql.md)
    + [FFmpeg per Communities](ffmpeg.md)
    + [Moderazione nel contesto](in-context.md)
    + [Punteggio e badge avanzati](advanced.md)
@@ -75,7 +67,6 @@ ht-degree: 12%
    + [Configurazione MySQL per DSRP](dsrp-mysql.md)
    + [JSRP - Provider risorsa di archiviazione JCR](jsrp.md)
    + [Configurazione Solr per SRP](solr.md)
-   + [Risorse di abilitazione assegnazione tag](tag-resources.md)
    + [Assegnazione tag ai contenuti generati dagli utenti](tag-ugc.md)
    + [Traduzione di contenuti generati dagli utenti](translate-ugc.md)
    + [Sincronizzazione utente community](sync.md)
@@ -83,7 +74,7 @@ ht-degree: 12%
 + Sviluppo {#develop}
    + [Sviluppo di Communities](communities.md)
    + [Quadro dei componenti sociali](scf.md)
-   + [Guida ai componenti community](components-guide.md)
+   + [Guida ai componenti della community](components-guide.md)
    + [Componenti, funzioni e funzioni di base](essentials.md)
    + [Esercitazioni](tutorials.md)
    + [Risoluzione dei problemi](troubleshooting.md)
@@ -94,10 +85,8 @@ ht-degree: 12%
    + [Panoramica del provider di risorse di storage](srp.md)
    + [Nozioni di base sul sito community](sites-for-developers.md)
    + [Nozioni di base sul flusso di attività](essentials-activities.md)
-   + [Componenti di base per le assegnazioni](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Nozioni di base sul calendario](calendar-basics-for-developers.md)
-   + [Nozioni di base sul catalogo](catalog-developer-essentials.md)
    + [Componenti Clientlibs for Communities](clientlibs.md)
    + [Nozioni di base sui commenti](essentials-comments.md)
    + [Componenti di OSGi Events for Communities](events.md)
@@ -145,10 +134,8 @@ ht-degree: 12%
    + [Componenti di Communities](author-communities.md)
    + [Nozioni di base sui componenti di Communities](basics.md)
    + [Funzionalità dei flussi di attività](activities.md)
-   + [Funzione Assegnazioni](assignments.md)
    + [Funzione blog](blog-feature.md)
    + [Funzione calendario](calendar.md)
-   + [Funzione catalogo](catalog.md)
    + [Utilizzo dei commenti](comments.md)
    + [Funzionalità di contenuto](featured.md)
    + [Funzione Libreria file](file-library.md)

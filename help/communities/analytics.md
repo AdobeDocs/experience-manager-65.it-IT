@@ -12,10 +12,10 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0f7d4aba0b8c79039918e1338007a4277a5030f2
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 4%
+source-wordcount: '2694'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Analytics e Adobe Experience Manager (AEM) sono entrambe soluzioni di Adob
 
 Adobe Analytics può essere configurato per AEM Communities in modo che, quando un membro interagisce con le funzioni di Communities supportate, gli eventi vengano inviati ad Adobe Analytics da cui vengono generati i rapporti.
 
-Ad esempio, quando un membro di un sito della community di abilitazione visualizza una risorsa video assegnata loro, il lettore della risorsa invierà gli eventi ad Analytics, inclusi i dati heartbeat video. Dal sito della community, gli amministratori possono vedere vari report relativi alla riproduzione del video.
+Ad esempio, dal sito della community, gli amministratori possono visualizzare vari report relativi alla riproduzione del video.
 
 Inoltre, l’analisi è necessaria per:
 
@@ -44,7 +44,6 @@ Inoltre, l’analisi è necessaria per:
 
 Le funzioni supportate da Communities includono:
 
-* [Risorse di abilitazione](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [D/R](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
@@ -83,7 +82,7 @@ Per configurare le funzioni di Analytics for Communities, è necessario collabor
 
    URL del data center di Analytics per l’account.
 
-* **Suite di rapporti**
+* **Suite per report**
 
    Nome della suite di rapporti di Analytics da utilizzare.
 
@@ -105,7 +104,7 @@ Accedendo a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/ana
 
    * tipo **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * non **`Counter (no subrelations)`**
    * Può ridefinire (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni di Communities
 
 
@@ -151,7 +150,7 @@ Per abilitare il reporting di Video Heartbeat dopo [configurazione della suite d
 * Abilita [Analytics per un sito community](#enable-analytics-for-a-community-site)
 * Associa il `Marketing Cloud Org Id` con il sito della community
 
-La `Marketing Cloud Org Id` possono essere inseriti al momento [creazione di siti community](/help/communities/sites-console.md#enablement) o successivamente [modifica](/help/communities/sites-console.md#modifying-site-properties) le proprietà del sito community.
+La `Marketing Cloud Org Id` possono essere inseriti al momento [creazione di siti community](/help/communities/sites-console.md) o successivamente [modifica](/help/communities/sites-console.md#modifying-site-properties) le proprietà del sito community.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -180,7 +179,7 @@ Nella finestra di dialogo Crea configurazione, i valori da immettere identifican
 * **Titolo**
 
    (Obbligatorio) Un titolo di visualizzazione per la configurazione.
-Ad esempio, immetti *Abilitazione di Analytics community*
+Ad esempio, immetti *Analisi della community*
 
 * **Nome**
 
@@ -244,7 +243,7 @@ Per salvare le impostazioni:
 
 * Seleziona **OK**.
 
-   ![analytics-enablement-settings](assets/analytics-settings1.png)
+   ![analytics-settings](assets/analytics-settings1.png)
 
 ### Crea framework {#create-framework}
 
@@ -256,7 +255,7 @@ Dopo aver configurato correttamente la connessione di base ad Adobe Analytics, �
 
 * **Titolo**
 
-   (Obbligatorio) Un titolo di visualizzazione per il framework Ad esempio, immetti *Quadro comunitario di abilitazione*.
+   (Obbligatorio) Un titolo di visualizzazione per il framework Ad esempio, immetti *Quadro comunitario*.
 
 * **Nome**
 
@@ -275,7 +274,7 @@ La creazione del framework di Analytics apre il framework per la configurazione.
 
 Lo scopo del framework è quello di mappare AEM variabili alle variabili di Analytics (eVar ed eventi). Le variabili di Analytics disponibili per la mappatura sono [definiti nella suite di rapporti](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytics-enablement-framework](assets/analytics-framework1.png)
+![framework di analytics](assets/analytics-framework1.png)
 
 ### Seleziona suite di rapporti {#select-report-suite}
 
@@ -307,7 +306,7 @@ La barra laterale non è necessaria e può essere ridotta a icona in modo da non
 
 1. Scegli un `Run Mode`.
 
-1. Selezionate **Pubblica**.
+1. Seleziona **Pubblica**.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -389,7 +388,7 @@ Una volta salvato il sito community con Analytics abilitato e selezionato il fra
 
 Se utilizzi una suite di rapporti esistente che ha mappato una qualsiasi delle variabili all’interno di evar1-evar11 e event1-event7, sarà necessario [rimappare le variabili AEM](#modifying-analytics-variable-mapping) e ripristinare la mappatura originale.
 
-Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [esercitazione introduttiva](/help/communities/getting-started-enablement.md):
+Di seguito è riportato un esempio di mappature predefinite:
 
 ![map-analytics](assets/map-analytics1.png)
 
@@ -442,9 +441,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -455,9 +454,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -468,9 +467,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -481,9 +480,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -494,9 +493,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -507,9 +506,9 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>

@@ -5,9 +5,9 @@ description: Come distribuire AEM Communities
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 14a33b14043869614efcdbf8cb413333d0fa644b
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1682'
 ht-degree: 2%
 
 ---
@@ -71,13 +71,6 @@ ht-degree: 2%
          * UGC è visibile solo su AEM&#39;istanza o cluster in cui è stato inserito.
       * Il valore predefinito è JSRP
 
-   Per **[funzione di abilitazione](/help/communities/overview.md#enablement-community)**
-
-   * [Installare e configurare FFmpeg](/help/communities/ffmpeg.md)
-   * [Installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
-   * [Installare AEM Communities SCORM-Engine](#scorm-package)
-   * [Installare e configurare MySQL per l&#39;abilitazione](/help/communities/mysql.md)
-
 
 
 
@@ -99,9 +92,8 @@ Come in AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communiti
 
 ### Driver JDBC per MySQL {#jdbc-driver-for-mysql}
 
-Due funzionalità di Communities utilizzano un database MySQL:
+Una funzione di Communities utilizza un database MySQL:
 
-* Per [abilitazione](/help/communities/enablement.md): registrazione di attività SCORM e studenti
 * Per [DSRP](/help/communities/dsrp.md): archiviazione di contenuti generati dall’utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
@@ -133,28 +125,6 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili sul [C
 #### Esempio : Bundle del connettore MySQL installato {#example-installed-mysql-connector-bundle}
 
 ![](../assets/mysql-connector.png)
-
-### Pacchetto SCORM {#scorm-package}
-
-SCORM (Shared Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere confezionato in un file ZIP trasferibile.
-
-Il motore AEM Communities SCORM è richiesto per [abilitazione](/help/communities/overview.md#enablement-community) funzionalità. Pacchetti Scorm supportati su AEM 6.5 Communities:
-
-* [cq-social-scorm-package, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) che include [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) motore.
-
-**Per installare un pacchetto SCORM**
-
-1. Installa il [cq-social-scorm-package, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) da Package Share
-1. Scarica `/libs/social/config/scorm/database_scormengine_data.sql` dall&#39;istanza cq e eseguiscila in mysql server per creare uno schema scormEngineDB aggiornato.
-1. Aggiungi `/content/communities/scorm/RecordResults` in Proprietà Percorsi esclusi nel filtro CSRF da `https://<hostname>:<port>/system/console/configMgr` sugli editori.
-
-#### Registrazione SCORM {#scorm-logging}
-
-Come installato, tutte le attività di abilitazione vengono registrate in modo dettagliato nella console di sistema.
-
-Se lo desideri, puoi impostare il livello di log su WARN per `RusticiSoftware.*` pacchetto.
-
-Per lavorare con i registri, consulta [Utilizzo dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### MLS avanzate AEM {#aem-advanced-mls}
 

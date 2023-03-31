@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
@@ -51,8 +51,6 @@ Questa esercitazione crea un [sito community di coinvolgimento](overview.md#enga
 Per verificare che sia installato il pacchetto di funzionalità più recente, visita:
 
 * [Versioni più recenti](deploy-communities.md#latest-releases)
-
-Per un&#39;esercitazione che crea un [sito della community di abilitazione](overview.md#enablement-community)visita [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md).
 
 ## Configura Analytics {#configure-analytics}
 
@@ -130,7 +128,7 @@ Vedi [Accesso social con Facebook e Twitter](social-login.md).
 
 ## Creare tag tutorial {#create-tutorial-tags}
 
-Crea tag da utilizzare per le esercitazioni di coinvolgimento e abilitazione, utilizzando lo spazio dei nomi tag di `Tutorial`.
+Crea tag da utilizzare per le esercitazioni con coinvolgimento, utilizzando lo spazio dei nomi tag di `Tutorial`.
 
 Utilizza la [Console di assegnazione tag](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
 

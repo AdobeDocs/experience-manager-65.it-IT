@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ In AEM Communities, nell’ambiente di pubblicazione, gli utenti possono registr
 * Crea sub-community all’interno del sito della community (consulta [gruppi comunitari](creating-groups.md)).
 
 * [Moderato](moderation.md) contenuto generato dall’utente (UGC).
-
-* Essere [risorsa di abilitazione](resources.md) contatti.
 
 * Essere [privilegiato](#privileged-members-group) per creare voci per blog, calendari, QnA e forum.
 
@@ -79,8 +77,6 @@ Per gestire gli utenti e i gruppi di utenti registrati nell’ambiente di author
 | amministratori | Il gruppo di amministratori è costituito da amministratori di sistema che dispongono di tutte le capacità di un amministratore della community e dalla possibilità di gestire il gruppo di amministratori della community. |
 | Amministratori community | Il gruppo Amministratori community diventa automaticamente membro di tutti i siti della community e di tutti i gruppi della community creati sul sito. Un membro iniziale del gruppo Amministratori community è il gruppo Amministratori. Nell’ambiente di authoring, gli amministratori della community possono creare siti di community, gestirli, gestirli e moderare i contenuti. |
 | Community &lt;*nome del sito*> Sitecontentmanager | Community Site Content Manager è in grado di eseguire operazioni di authoring AEM tradizionali, creazione di contenuti e modifica di pagine per un sito community. |
-| Responsabili dell&#39;abilitazione della community | Il gruppo Community Enablement Manager è costituito da utenti disponibili per l&#39;assegnazione per gestire il gruppo Enablement Manager di un sito community. |
-| Community &lt;*nome del sito* > Siteenablementmanager | Il gruppo Community Site Enablement Manager è costituito da utenti che sono stati assegnati per gestire l&#39;abilitazione di un sito community [risorse](resources.md). |
 | Nessuno | Un visitatore anonimo del sito non può accedere all’ambiente di authoring. |
 
 ### Amministratori di sistema {#system-administrators}
@@ -196,43 +192,11 @@ Sono disponibili quattro console separate solo nell’ambiente di authoring:
 | gestisce | utenti su autore | gruppi di utenti sull’autore | membri in pubblicazione | gruppi di membri in pubblicazione |
 | richiede | autorizzazione amministratore | autorizzazione amministratore | autorizzazione amministratore, servizio tunnel, sincronizzazione utente per farm di pubblicazione | autorizzazione amministratore, servizio tunnel, sincronizzazione utente per farm di pubblicazione |
 
-### Ruolo di Community Enablement Manager {#community-enablement-manager-role}
-
-In genere, la possibilità per un visitatore del sito di registrarsi autonomamente non è consentita per un [comunità di abilitazione](overview.md#enablement-community) in quanto i costi sono associati a ciascun membro. Gli studenti di abilitazione e le risorse vengono gestiti da un utente a cui è stato assegnato il [ruolo](#author-group-roles) di `enablement manager` [durante la creazione del sito](sites-console.md#enablement) sull&#39;autore (aggiunto come membro del gruppo) `Community <site-name> Siteenablementmanagers`). La `enablement manager` è anche responsabile [assegnazione di risorse di apprendimento](resources.md) ai membri della comunità su autore.
-
-Solo utenti membri del gruppo globale `Community Enablement Managers` può essere selezionato come `enablement manager` per un sito specifico della community.
-
-Per creare un utente a cui può essere assegnato il ruolo di `Community Site Enablement Manager`, utilizza la console di sicurezza dell’interfaccia classica per specificare il percorso:
-
-Su un&#39;istanza dell&#39;autore:
-
-1. Accesso con privilegi di amministratore, passa alla console di sicurezza dell’interfaccia classica.
-
-   Ad esempio: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. Dal menu Modifica, seleziona **[!UICONTROL Crea utente]**.
-3. Compila il `Create User` finestra di dialogo.
-   * Il percorso deve essere `/home/users/community`.
-4. Seleziona **[!UICONTROL Crea]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* Nel riquadro a sinistra, cerca l’utente appena creato e seleziona per visualizzarlo nel riquadro a destra.
-
-   ![utente della community](assets/view-community-user.png)
-
-Nel riquadro a sinistra:
-
-1. Deseleziona la casella di ricerca e seleziona **[!UICONTROL Nascondi utenti]**.
-2. Individua e trascina `community-enablementmanagers` al **[!UICONTROL Gruppi]** scheda del nuovo utente visualizzato nel riquadro a destra.
-
-   ![gruppo di assegnazione](assets/assign-group.png)
-
 ### Ruolo degli amministratori della community {#community-administrators-role}
 
 Come indicato nella [Ruoli gruppo autore](#author-group-roles) I membri del gruppo Amministratori community possono creare siti di community, gestire siti, gestire membri (possono vietare membri della community) e moderare contenuti.
 
-Segui gli stessi passaggi della creazione e dell’assegnazione di un utente al ruolo di [responsabile dell&#39;abilitazione](#communitysiteenablementmanagerrole), ma aggiungi c `ommunity-administrators` nella scheda Gruppi dell’utente.
+Segui gli stessi passaggi della creazione e dell’assegnazione di un utente al ruolo di gestione dell’abilitazione, ma aggiungi c `ommunity-administrators` nella scheda Gruppi dell’utente.
 
 ### Integrazione LDAP {#ldap-integration}
 

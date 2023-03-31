@@ -12,9 +12,9 @@ discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3106'
 ht-degree: 4%
 
 ---
@@ -62,10 +62,6 @@ Nella console Sites di Communities vengono visualizzati tutti i siti della commu
 Per creare un nuovo sito community, seleziona la **Crea** icona.
 
 Per accedere a un sito community esistente, allo scopo di creare, modificare, pubblicare, esportare o aggiungere un gruppo nidificato, seleziona l’icona della cartella del sito.
-
-Ad esempio, l’immagine seguente mostra la console Sites principale di Communities, che visualizza le cartelle per due siti della community : [abilita](/help/communities/getting-started-enablement.md) e [coinvolgere](/help/communities/getting-started.md):
-
-![console sito](assets/site-console.png)
 
 ## Creazione di siti {#site-creation}
 
@@ -165,7 +161,6 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano funz
 * [MODERAZIONE](#moderation)
 * [ANALYTICS](#analytics)
 * [TRADUZIONE](#translation)
-* [ABILITARE](#enablement)
 
 >[!NOTE]
 >
@@ -182,12 +177,6 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano funz
 #### GESTIONE UTENTE {#user-management}
 
 ![createsitesettes](assets/createsitesettings.png)
-
->[!NOTE]
->
->Si consiglia di: [attivazione di siti comunitari](/help/communities/overview.md#enablement-community) essere privato (per ulteriori informazioni, contattare il rappresentante commerciale di riferimento).
->
->Un sito community è privato quando ai visitatori anonimi viene negato l’accesso, non può registrarsi autonomamente e non può utilizzare l’accesso social.
 
 * **Consenti registrazione utente**
 
@@ -231,7 +220,7 @@ Lascia deselezionata una *privato* sito della community. Il valore predefinito �
 
 I tag che possono essere applicati al contenuto della community vengono controllati selezionando i namespace definiti in precedenza tramite [Console assegnazione tag](/help/sites-administering/tags.md#tagging-console).
 
-Inoltre, la selezione dei namespace dei tag per il sito community limita la selezione presentata durante la definizione di cataloghi e risorse. Vedi [Risorse di abilitazione assegnazione tag](/help/communities/tag-resources.md) per informazioni importanti.
+Inoltre, la selezione dei namespace dei tag per il sito community limita la selezione presentata durante la definizione di cataloghi e risorse.
 
 * casella di ricerca testo : Inizia a digitare per identificare i tag consentiti nel sito.
 
@@ -350,21 +339,6 @@ Se selezionato, il contenuto non viene tradotto fino a quando non viene effettua
    * `Always show contributions in the original language` (impostazione predefinita)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
-
-#### ABILITARE {#enablement}
-
-![abilitazione del sito](assets/site-enablement.png)
-
-La `ENABLEMENT`le impostazioni sono applicabili quando il modello di sito community scelto include [funzione di assegnazione](/help/communities/functions.md#assignments-function), disponibile quando le funzioni di abilitazione sono concesse in licenza e [configurato](/help/communities/enablement.md). Il modello di sito di riferimento che include la funzione assegnazioni è `Reference Structured Learning Site Template.`
-
-* **Manager di abilitazione**
-(Obbligatorio) Solo membri del gruppo `Community Enablementmanagers` sono disponibili per la gestione di questa community di abilitazione. I responsabili dell&#39;abilitazione sono responsabili dell&#39;assegnazione dei membri alle risorse. Vedi anche [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
-
-* **ID organizzazione Marketing Cloud**
-
-   (facoltativo) L&#39;ID di un [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) licenza.
-
-* Seleziona **Avanti**.
 
 ### Passaggio 4 : Crea sito community {#step-create-communities-site}
 
@@ -486,12 +460,6 @@ Il pannello IMPOSTAZIONI consente di accedere alla maggior parte delle impostazi
 ### Modifica miniatura {#modify-thumbnail}
 
 Il pannello THUMBNAIL consente di caricare un’immagine per rappresentare il sito nella console Sites di Communities.
-
-### Modifica abilitazione {#modify-enablement}
-
-Il pannello ENABLEMENT consente di accedere alle impostazioni fornite durante la creazione del sito community.
-
-Consulta la sezione [ABILITARE](#enablement) descrizione.
 
 ## Pubblicazione del sito {#publishing-the-site}
 

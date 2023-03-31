@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 18%
+source-wordcount: '207'
+ht-degree: 17%
 
 ---
 
@@ -39,11 +39,9 @@ Di seguito sono riportati i collegamenti alle informazioni essenziali per i comp
 ## Componenti con funzioni {#components-with-functions}
 
 * [Flussi attività](essentials-activities.md)
-* [Assegnazioni](essentials-assignments.md)
 * [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Calendario](calendar-basics-for-developers.md)
-* [Catalogo](catalog-developer-essentials.md)
 * [Contenuto in primo piano](essentials-featured.md)
 * [Libreria file](essentials-file-library.md)
 * [Forum](essentials-forum.md)

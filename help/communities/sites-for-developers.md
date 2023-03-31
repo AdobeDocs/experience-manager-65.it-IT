@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -93,7 +93,6 @@ A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene 
 
 * [UGC](#user-generated-content)
 * [Gruppi di utenti](#community-user-groups)
-* [Risorse](#enablement-assets)
 * [Record del database](#database-records)
 
 ### ID sito univoco della community {#community-unique-site-id}
@@ -134,18 +133,3 @@ Per tutte le istanze di authoring e pubblicazione, dalla [console di sicurezza](
 * Seguito da [id sito univoco](#community-unique-site-id)
 
 Esempio: `community-engage-x0e11-members`.
-
-### Risorse di abilitazione {#enablement-assets}
-
-Dalla console principale:
-
-* Seleziona **[!UICONTROL Risorse]**.
-* Invio **[!UICONTROL Seleziona]** modalità.
-* Seleziona la cartella denominata con [ID sito univoco](#community-unique-site-id).
-* Seleziona **[!UICONTROL Elimina]** (potrebbe essere necessario selezionare tra **[!UICONTROL Altro...]**).
-
-### Record del database {#database-records}
-
-Non esiste uno strumento per eliminare selettivamente le voci di database per un sito community di abilitazione specifico.
-
-Quando tutti i siti della community vengono eliminati, eliminare enablementdb e scormenginedb utilizzando MySQL Workbench.
