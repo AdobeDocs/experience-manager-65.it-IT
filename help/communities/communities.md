@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 6%
+source-wordcount: '385'
+ht-degree: 5%
 
 ---
 
@@ -28,8 +28,7 @@ La base di un [sito della community](overview.md#communitiessites) è [quadro de
 Per una panoramica e le esercitazioni introduttive, visita:
 
 * [Panoramica di AEM Communities](overview.md)
-* [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+* [Guida introduttiva ad AEM Communities](getting-started.md)
 
 >[!NOTE]
 > 
@@ -56,7 +55,7 @@ I componenti, le funzioni e le funzioni di AEM Communities costituiscono gli ele
 
 * [Componenti, funzioni e funzioni di base](essentials.md)
 * [Componenti Clientlibs for Communities](clientlibs.md)
-* [Funzioni per community](functions.md)
+* [Funzioni community](functions.md)
 * [Modelli per gruppi community](tools-groups.md)
 * [Modelli per sito community](sites.md)
 

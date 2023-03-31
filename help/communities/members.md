@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '946'
 ht-degree: 4%
 
 ---
@@ -162,9 +162,7 @@ Vedi anche [Punteggio e badge](implementing-scoring.md).
 
 ## Console Gruppi {#groups-console}
 
-La console Gruppi, disponibile nell’ambiente di authoring, consente di creare e gestire i gruppi di membri registrati nell’ambiente di pubblicazione. È particolarmente utile per:
-* [Gruppi di membri privilegiati](users.md#privilegedmembersgroups)
-* Assegnazione basata su gruppi di [risorse di abilitazione](resources.md)
+La console Gruppi, disponibile nell’ambiente di authoring, consente di creare e gestire i gruppi di membri registrati nell’ambiente di pubblicazione. È particolarmente utile per [Gruppi di membri privilegiati](users.md#privilegedmembersgroups).
 
 Per accedere alla console Gruppi :
 * Dalla navigazione globale, seleziona **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Gruppi]**.

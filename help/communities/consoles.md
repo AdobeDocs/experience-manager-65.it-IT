@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 1%
 
 ---
 
@@ -66,10 +66,6 @@ Per accedere alle varie console Community, dalla navigazione globale seleziona *
 * [Rapporti](reports.md)
 
    Nella console Rapporti è possibile generare rapporti su assegnazioni, visualizzazioni di pagina e contenuti pubblicati (UGC) quando un sito della community dispone di [abilitato Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
-
-* [Riferimenti](resources.md)
-
-   La console Risorse si trova nella posizione [responsabili dell&#39;abilitazione](enablement.md#communitymanagers) creare, gestire e assegnare risorse ai membri di un [sito della community di abilitazione](overview.md#enablement-community). La console è disponibile solo nell’ambiente di authoring.
 
 ## Console Strumenti {#tools-console}
 

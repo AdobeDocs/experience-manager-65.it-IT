@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 3%
 
 ---
@@ -28,8 +28,6 @@ L’infrastruttura sottostante per i tag applicati nell’ambiente di pubblicazi
 * Vedi [Assegnazione tag per sviluppatori](../../help/sites-developing/tags.md) per informazioni sulle [framework di assegnazione tag](../../help/sites-developing/framework.md) nonché l&#39;inclusione e l&#39;estensione dei tag in [applicazioni personalizzate](../../help/sites-developing/building.md).
 
 * Vedi [Utilizzo di Social Tag Cloud](tagcloud.md) informazioni per gli autori su come aggiungere un `social tag cloud` per evidenziare i tag applicati a UGC nell’ambiente di pubblicazione.
-
-* Vedi [Risorse di abilitazione assegnazione tag](tag-resources.md) per informazioni sull’assegnazione di tag alle risorse per i cataloghi.
 
 Durante la configurazione di un [sito della community](sites-console.md#tagging) o una delle seguenti caratteristiche:
 
@@ -58,7 +56,7 @@ Durante la configurazione di un [sito della community](sites-console.md#tagging)
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>

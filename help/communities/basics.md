@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Se l&#39;assegnazione tag è consentita, la configurazione del sito della commun
 
 Funzioni che consentono l’assegnazione tag: [blog](blog-feature.md), [calendario](calendar.md), [libreria file](file-library.md), [forum](forum.md)
 
-Funzioni che utilizzano i tag: [catalogo](catalog.md), [ricerca](search.md), [social tag cloud](tagcloud.md)
+Funzioni che utilizzano i tag: [ricerca](search.md), [social tag cloud](tagcloud.md)
 
 Per informazioni sull’authoring:
 
@@ -84,7 +84,6 @@ Per informazioni amministrative:
 * Creazione di spazi dei nomi dei tag (tassonomia): [Amministrazione dei tag](../../help/sites-administering/tags.md)
 * Configurazione sito community: vedere [TAG](sites-console.md#tagging)
 * [Assegnazione tag ai contenuti generati dagli utenti](../../help/sites-authoring/tags.md)
-* [Risorse di abilitazione assegnazione tag](tag-resources.md)
 
 Per informazioni sugli sviluppatori:
 

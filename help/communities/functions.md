@@ -1,5 +1,5 @@
 ---
-title: Funzioni per community
+title: Funzioni community
 seo-title: Community Functions
 description: Scopri come accedere alla console Funzioni della community
 seo-description: Learn how to access the Community Functions console
@@ -12,14 +12,14 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2224'
 ht-degree: 6%
 
 ---
 
-# Funzioni per community{#community-functions}
+# Funzioni community{#community-functions}
 
 Il tipo di funzionalità previsto da un’esperienza community è noto. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine precablate per implementare una funzione community che richiede più che semplicemente l’aggiunta di un componente a una pagina in modalità di authoring. Sono gli elementi costitutivi utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da quali siti comunitari [creato](/help/communities/sites-console.md).
 
@@ -96,14 +96,6 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 
    Se selezionata, le pagine Attività includono una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. Il valore predefinito è selezionato.
 
-### Funzione Assegnazioni {#assignments-function}
-
-La funzione di assegnazione è la funzione di base che definisce un [sito comunitario di abilitazione](/help/communities/overview.md#enablement-community). Consente l&#39;assegnazione di risorse di abilitazione ai membri della community. Vedi anche [Componenti di base per le assegnazioni](/help/communities/essentials-assignments.md) per sviluppatori.
-
-Questa funzione è disponibile come funzione del [componente aggiuntivo per l’abilitazione](/help/communities/enablement.md). Il componente aggiuntivo per l’abilitazione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
-
-Quando viene aggiunta a un modello, l’unica configurazione è per [Impostazioni titolo e URL](#title-and-url-settings).
-
 ### Funzione Blog {#blog-function}
 
 La funzione blog è una pagina con un [Componente blog](/help/communities/blog-feature.md) configurati per l’assegnazione di tag, il caricamento di file, i seguenti elementi, i membri per la modifica automatica, il voto e la moderazione. Vedi anche [Blog Essentials](/help/communities/blog-developer-basics.md) per sviluppatori.
@@ -159,25 +151,6 @@ Quando viene aggiunto a un modello, si apre la seguente finestra di dialogo:
 * **Consenti contenuto in primo piano**
 
    Se selezionato, il relativo contenuto è identificato come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è selezionato.
-
-### Funzione Catalogo {#catalog-function}
-
-La funzione di catalogo permette di [comunità di abilitazione](/help/communities/overview.md#enablement-community) membri per sfogliare le risorse di abilitazione che non sono assegnate a loro. Vedi [Risorse di abilitazione assegnazione tag](/help/communities/tag-resources.md) e [Nozioni di base sul catalogo](/help/communities/catalog-developer-essentials.md) per sviluppatori.
-
-Tutte le risorse di abilitazione e i percorsi di apprendimento per il sito community vengono visualizzati in tutti i cataloghi, se di proprietà, ` [Show in Catalog](/help/communities/resources.md)`, è impostato su true. Per includere esplicitamente le risorse e i percorsi di apprendimento, è necessario applicare un [pre-filtro](/help/communities/catalog-developer-essentials.md#pre-filters) al catalogo.
-
-Quando viene aggiunta a un modello, la configurazione consente di specificare i namespace dei tag utilizzati per configurare il filtro tag presentato ai visitatori del sito:
-
-![Funzione di catalogo](assets/catalog-function.png)
-
-* [Impostazioni titolo e URL](#title-and-url-settings)
-
-* **Seleziona tutti i namespace**
-
-   Gli spazi dei nomi dei tag selezionati definiscono quali tag possono essere selezionati dai visitatori per filtrare l’elenco delle risorse di abilitazione elencate nel catalogo.
-Se selezionato, sono disponibili tutti i namespace dei tag consentiti per il sito community.
-Se deselezionato, è possibile selezionare uno o più namespace consentiti per il sito community.
-Il valore predefinito è selezionato.
 
 ### Funzione di contenuto {#featured-content-function}
 

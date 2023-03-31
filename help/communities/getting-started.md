@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva di AEM Communities
+title: Guida introduttiva ad AEM Communities
 seo-title: Getting Started with AEM Communities
 description: Esercitazione su come iniziare a utilizzare AEM Communities
 seo-description: A tutorial on getting started with AEM Communities
@@ -11,20 +11,18 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 exl-id: 14ecaef7-d9fc-45ea-8feb-16ad8946508e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 11%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
-# Guida introduttiva di AEM Communities {#getting-started-with-aem-communities}
+# Guida introduttiva ad AEM Communities {#getting-started-with-aem-communities}
 
 AEM Communities consente alle aziende di creare esperienze di community con marchio dedicato da una libreria di modelli di sito. Forum, gruppi, blog, condivisione di file, calendari, feed di attività e profili utente estesi possono essere integrati nel tuo sito web per favorire le interazioni tra proprietà, clienti e aziende.
 
 Di seguito è riportata un&#39;esercitazione sulla configurazione rapida di un [community di coinvolgimento](/help/communities/overview.md#engagement-community) a scopo dimostrativo o di sviluppo.
-
-Per un&#39;esercitazione sulla configurazione rapida di un [comunità di abilitazione](/help/communities/overview.md#enablement-community)visita [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md).
 
 * [Configurazione iniziale](/help/communities/setup.md)
 

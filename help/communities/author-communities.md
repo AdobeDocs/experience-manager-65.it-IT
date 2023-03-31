@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 44%
+source-wordcount: '273'
+ht-degree: 30%
 
 ---
 
@@ -22,13 +22,12 @@ ht-degree: 44%
 
 ## Introduzione {#introduction}
 
-Con una licenza di AEM Communities, oltre a creare siti di community, è possibile aggiungere funzionalità di community a qualsiasi sito AEM con gli strumenti standard di authoring AEM.
+Quando AEM Communities è concesso in licenza, oltre a creare siti community, è possibile aggiungere funzionalità per community a qualsiasi sito AEM utilizzando strumenti standard di authoring AEM.
 
 Per ulteriori informazioni sulla creazione di un sito community, visita:
 
 * [Panoramica di AEM Communities](/help/communities/overview.md)
-* [Guida introduttiva di AEM Communities](/help/communities/getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md)
+* [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md)
 
 >[!NOTE]
 >
@@ -54,8 +53,6 @@ Vedere anche interattivo [Guida ai componenti della community](/help/communities
 | Elenco attività community | [Tendenze delle attività](/help/communities/trends.md) |
 | Elenco membri di gruppo community | [Gruppi community](/help/communities/creating-groups.md) |
 | Componi messaggio | [Messaggi](/help/communities/configure-messaging.md) |
-| Assegnazioni di abilitazione | [Assegnazioni](/help/communities/assignments.md) |
-| Abilitazione catalogo | [Catalogo](/help/communities/catalog.md) |
 | Contenuto in primo piano | [Contenuto in primo piano](/help/communities/featured.md) |
 | Libreria file | [Libreria file](/help/communities/file-library.md) |
 | Segui | [Grafico social](/help/communities/socialgraph.md) |
@@ -73,7 +70,7 @@ Vedere anche interattivo [Guida ai componenti della community](/help/communities
 | Recensioni | [Recensioni](/help/communities/reviews.md) |
 | Riepilogo recensioni (visualizzazione) | [Recensioni](/help/communities/reviews.md) |
 | Ricerca | [Ricerca](/help/communities/search.md) |
-| Risultato di ricerca | [Ricerca](/help/communities/search.md) |
+| Risultato di ricerca  | [Ricerca](/help/communities/search.md) |
 | Tag cloud per social network | [Tag cloud per social network](/help/communities/tagcloud.md) |
 | Votazione | [Votazione](/help/communities/voting.md) |
 

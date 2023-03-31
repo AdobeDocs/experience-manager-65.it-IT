@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1601'
 ht-degree: 2%
 
 ---
@@ -78,9 +78,7 @@ Seleziona **Avanti**.
 
 ### Passaggio 3: Impostazioni {#step-settings}
 
-Nel passaggio Impostazioni, prima di selezionare `Next`, nota che esistono sette sezioni che forniscono accesso alle configurazioni che coinvolgono gestione utenti, assegnazione tag, moderazione, gestione dei gruppi, analisi, traduzione e abilitazione.
-
-Visita il [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md) esercitazione per scoprire come utilizzare le funzioni di abilitazione.
+Nel passaggio Impostazioni, prima di selezionare `Next`, tieni presente che esistono sette sezioni che forniscono accesso alle configurazioni che coinvolgono gestione utenti, assegnazione tag, moderazione, gestione gruppi, analisi e traduzione.
 
 #### User Management {#user-management}
 
@@ -118,7 +116,7 @@ Per consentire a un membro della comunità (o a un gruppo di membri) di utilizza
 Ad esempio:
 
 * Tipo `q`
-* Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Seleziona Quinn Harper
 
 >[!NOTE]
 >
@@ -152,16 +150,6 @@ La [Impostazioni di traduzione](/help/communities/sites-console.md#translation) 
 * Lascia l’opzione di persistenza predefinita
 
 ![impostazioni di traduzione](assets/translation-settings.png)
-
-#### ABILITARE {#enablement}
-
-Lascia vuoto quando crei una community di coinvolgimento.
-
-Per un&#39;esercitazione simile per creare rapidamente un [comunità di abilitazione](/help/communities/overview.md#enablement-community), vedi [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md).
-
-Seleziona **Avanti**.
-
-![abilitazione](assets/enablement.png)
 
 ### Passaggio 4: Crea sito community {#step-create-communities-site}
 
@@ -226,7 +214,7 @@ UGC non è incluso nel pacchetto del sito.
 >1. (Facoltativo) Seleziona **[!UICONTROL Cancella]** o **[!UICONTROL Forza nuovo tentativo]** per reimpostare la coda di replica.
 
 
-### Selezionate Pubblica {#select-publish}
+### Seleziona Pubblica {#select-publish}
 
 Dopo aver verificato che il server di pubblicazione sia in esecuzione, seleziona l’icona del mondo per pubblicare il sito della community.
 

@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento ad AEM 6.5 Communities
+title: Aggiornamento a AEM 6.5 Communities
 seo-title: Upgrading to AEM 6.5 Communities
 description: Come effettuare l’aggiornamento da una versione precedente a AEM community 6.5
 seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
@@ -11,14 +11,14 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
-# Aggiornamento ad AEM 6.5 Communities {#upgrading-to-aem-communities}
+# Aggiornamento a AEM 6.5 Communities {#upgrading-to-aem-communities}
 
 A seconda della topologia e delle funzioni di ogni sito, possono essere necessarie le seguenti azioni durante l’aggiornamento ad AEM Communities 6.5 o l’installazione del pacchetto di funzioni più recente.
 
@@ -33,12 +33,6 @@ Quando installi un nuovo pacchetto di funzioni di Communities su una distribuzio
 1. Installa il [pacchetto di funzionalità più recente](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Installa il [file di configurazione Solr più recenti](/help/communities/msrp.md#upgrading).
 1. Reindicizzazione MSRP vedi sezione [Strumento di reindicizzazione MSRP](/help/communities/msrp.md#msrp-reindex-tool).
-
-### Abilitazione 2.0 {#enablement}
-
-A partire da AEM 6.3, le funzioni di abilitazione non memorizzano più le informazioni di reporting in MySQL. La dipendenza MySQL è presente solo per il tracciamento del contenuto SCORM.
-
-Contattare [assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) per assistenza nella migrazione dei contenuti da Abilitazione 1.0.
 
 ## Aggiornamento da AEM 6.0 {#upgrading-from-aem}
 

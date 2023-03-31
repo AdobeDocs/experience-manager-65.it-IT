@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '430'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,7 @@ Questa sezione è destinata a coloro che amministrano AEM Communities e acquisis
 Per una panoramica e le esercitazioni introduttive, visita:
 
 * [Panoramica di AEM Communities](overview.md)
-* [Guida introduttiva di AEM Communities](getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+* [Guida introduttiva ad AEM Communities](getting-started.md)
 
 ## Argomenti di amministrazione e configurazione {#administration-and-configuration-topics}
 
@@ -41,7 +40,6 @@ Per una panoramica e le esercitazioni introduttive, visita:
       * [Gruppi (sottocomunità)](groups.md)
    * [Moderazione](moderation.md)
    * [Gestione dei membri e dei gruppi](members.md)
-   * [Risorse di abilitazione](resources.md)
    * [Rapporti](reports.md)
 
 
@@ -49,8 +47,8 @@ Per una panoramica e le esercitazioni introduttive, visita:
 
    * [Modelli per siti](sites.md)
    * [Modelli per gruppi](tools-groups.md)
-   * [Funzioni per community](functions.md)
-   * [Configurazione dell’archiviazione](srp-config.md)
+   * [Funzioni community](functions.md)
+   * [Configurazione archiviazione](srp-config.md)
    * [Guida dei componenti](components-guide.md)
    * [Badge](badges.md)
 
@@ -77,12 +75,6 @@ Una caratteristica principale di AEM Communities è la generazione di contenuti 
 * [Notifiche](notifications.md): la possibilità per i membri di essere informati dell&#39;attività che seguono.
 * [Abbonamenti](subscriptions.md): possibilità per i membri di interagire con la community utilizzando e-mail esterne.
 * [Messaggistica](messaging.md): capacità dei membri di interagire con la comunità utilizzando messaggi interni.
-
-### Funzioni di abilitazione {#enablement-features}
-
-* [Configurazione dell’abilitazione](enablement.md): informazioni necessarie per configurare correttamente le funzioni di abilitazione.
-* [Configurazione di Analytics](analytics.md): informazioni necessarie per abilitare le funzionalità di Adobe Analytics for Communities.
-* [Risorse di abilitazione assegnazione tag](tag-resources.md): necessari per creare cataloghi di abilitazione.
 
 ### Distribuzione {#deployment}
 
