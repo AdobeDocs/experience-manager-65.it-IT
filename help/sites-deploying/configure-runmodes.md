@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -122,10 +122,9 @@ Queste cartelle sono di tipo `nt:folder` e deve contenere il pacchetto appropria
 
 Se hai definito configurazioni per più modalità di esecuzione, devi definire quale deve essere utilizzato all&#39;avvio. Esistono diversi metodi per specificare quale modalità di esecuzione utilizzare; l&#39;ordine di risoluzione è il seguente:
 
+1. [proprietà del sistema (](#using-a-system-property-in-the-start-script)
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
-1. [proprietà del sistema (](#using-a-system-property-in-the-start-script)
-
 1. [Rilevamento nome file](#filename-detection-renaming-the-jar-file)
 
 Quando utilizzi un server applicazioni puoi anche [definire la modalità di esecuzione in web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -163,7 +162,7 @@ java -jar cq-56-p4545.jar -r dev
 È possibile attivare le due seguenti modalità di esecuzione dell&#39;installazione rinominando il file jar dell&#39;installazione prima dell&#39;installazione:
 
 * pubblicazione
-* author
+* creazione
 
 Il file jar deve utilizzare la convenzione di denominazione:
 
