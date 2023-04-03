@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 74535a6ad78abf795f55f1ba4e1123b58802aefe
+source-git-commit: 64a15e970bc72114c14ed60e4bec3e694584eb16
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3546'
 ht-degree: 1%
 
 ---
@@ -100,8 +100,8 @@ Adobe Experience Manager funziona con le seguenti versioni di Java Virtual Machi
 | Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[3]` |  |
 | Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[3]` |  |
 
-1. Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando la tecnologia Oracle Java SE. Consulta la sezione [Criteri di supporto Java per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) per ulteriori informazioni.
-
+1. Oracle è stato spostato in un modello &quot;Long Term Support&quot; (LTS) per i prodotti Java SE di Oracle. Java 9, Java 10 e Java 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java. Il supporto e la distribuzione dell&#39;Oracle Java SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, saranno supportati da Adobe direttamente per tutti i clienti AEM utilizzando la tecnologia Oracle Java SE. Consulta la sezione [Criteri di supporto Java per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) per ulteriori informazioni.
+   **Importante: Java 11 rimarrà supportato almeno fino a settembre 2026.**
 
 1. IBM JRE è supportato solo insieme a WebSphere Application Server.
 
