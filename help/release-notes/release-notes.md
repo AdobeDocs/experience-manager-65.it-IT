@@ -2,10 +2,10 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 676472125cf472d42b792fae87dffe263e499014
+source-git-commit: 72b3eaea279911569dbd6b9acf41527111e9e53c
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 4%
+source-wordcount: '2665'
+ht-degree: 3%
 
 ---
 
@@ -272,6 +272,17 @@ Questo pacchetto è necessario per i clienti che utilizzano GraphQL; questo cons
 
 * Aggiorna le query GraphQL che potrebbero aver utilizzato un nome API personalizzato per il modello di contenuto utilizzando invece il nome predefinito del modello di contenuto.
 
+* Una query GraphQL può utilizzare `damAssetLucene` al posto del `fragments` indice. Questo potrebbe causare un errore delle query GraphQL o richiedere molto tempo per l’esecuzione.
+
+   Per correggere il problema, `damAssetLucene` deve essere configurato in modo da includere le due proprietà seguenti:
+
+   * `contentFragment`
+   * `model`
+
+   Una volta modificata la definizione dell&#39;indice, è necessaria una reindicizzazione (`reindex` = `true`).
+
+   Dopo questi passaggi, le query GraphQL dovrebbero essere eseguite più velocemente.
+
 * Come [!DNL Microsoft®® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] non supporta installazioni chiavi in mano per [!DNL AEM Forms 6.5.10.0].
 
 * Se si aggiorna il [!DNL Experience Manager] istanza da 6.5.0 a 6.5.4 all&#39;ultimo service pack su Java™ 11, vedi `RRD4JReporter` eccezioni `error.log` file. Per interrompere le eccezioni, riavvia l&#39;istanza di [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
@@ -282,9 +293,9 @@ Questo pacchetto è necessario per i clienti che utilizzano GraphQL; questo cons
 
 * Durante l&#39;installazione di [!DNL Experience Manager] 6.5.x.x:
    * &quot;Quando l’integrazione Adobe Target è configurata in [!DNL Experience Manager] se si utilizza l’API di Target Standard (autenticazione IMS) e poi si esportano frammenti di esperienza in Target, vengono creati tipi di offerta errati. Invece del tipo &quot;Frammento esperienza&quot;/sorgente &quot;Adobe Experience Manager&quot;, Target crea diverse offerte con il tipo &quot;HTML&quot;/sorgente &quot;Adobe Target Classic&quot;.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nessuna finestra di manutenzione trovata in granite/operazioni/manutenzione.
    * La convalida lato server del modulo adattivo non riesce quando vengono utilizzate funzioni di aggregazione come SUM, MAX e MIN (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Nessuna finestra di manutenzione trovata in granite/operazioni/manutenzione.
    * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner acquistabili.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
 
@@ -310,7 +321,7 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 
 ## Siti web limitati {#restricted-sites}
 
-Questi siti web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
+Questi siti web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il tuo responsabile commerciale di Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
 * [Contatta l’Assistenza clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
