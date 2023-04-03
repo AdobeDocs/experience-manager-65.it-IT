@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 6%
+source-wordcount: '1178'
+ht-degree: 8%
 
 ---
 
@@ -62,7 +62,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr>
    <td><strong>Passaggio 0</strong></td>
    <td>Analizza flusso di richieste</td>
-   <td><p>Puoi utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso delle richieste. Per ulteriori informazioni su come eseguire questa analisi su Chrome, vedi:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>Puoi utilizzare l’analisi standard delle richieste HTTP nel browser per analizzare il flusso delle richieste. Per ulteriori informazioni su come eseguire questa analisi su Chrome, vedi:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 2</strong></td>
@@ -97,7 +97,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr>
    <td><strong>Passaggio 8</strong></td>
    <td>La lentezza è riproducibile con un'istanza locale?</td>
-   <td><br /> <p>Utilizzo <a href="/help/sites-developing/tough-day.md">Giorno difficile</a> per replicare le condizioni del "mondo reale" dalle istanze di produzione. Se questo scenario non è realistico per lo spazio dello sviluppo, assicurati di testare l’istanza di produzione (o una staging identica) in un contesto di rete diverso.<br /> </p> </td>
+   <td><br /> <p>Utilizzo <a href="/help/sites-developing/tough-day.md">Giorno difficile</a> per replicare le condizioni "nel mondo reale" dalle istanze di produzione. Se questo scenario non è realistico per lo spazio dello sviluppo, assicurati di testare l’istanza di produzione (o una staging identica) in un contesto di rete diverso.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 9</strong></td>
@@ -212,7 +212,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servizio di sincronizzazione delle risorse</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Più istanze DAM</a></li>
-     <li>Articoli per suggerimenti sull’ottimizzazione delle prestazioni <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">qui</a> e <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">qui</a>.<br /> </li>
+     <li>Articolo sui suggerimenti per l'ottimizzazione delle prestazioni <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">qui</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr>
    <td><strong>Passaggio 31</strong></td>
    <td>Utilizzare CDN di fronte a Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 32</strong></td>
@@ -240,11 +240,11 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
    <td>Effettuare le richieste in cache</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configurazione generale del Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it">Configurazione generale del Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configurazione della cache del Dispatcher</a></li>
     </ol> <p>Come migliorare il rapporto cache; rende le richieste compatibili con la cache (best practice per Dispatcher)</p> <p>Inoltre, considera le seguenti impostazioni per ottimizzare le configurazioni di memorizzazione in cache<br /> </p>
     <ol>
-     <li>Imposta una regola di no-cache per le richieste HTTP che non sono GET</li>
+     <li>Imposta una regola di no-cache per la richiesta HTTP che non è GET</li>
      <li>Configurare le stringhe di query per non essere memorizzabili nella cache</li>
      <li>Non memorizzare in cache gli URL con estensioni mancanti</li>
      <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 di Dispatcher)</li>
@@ -277,7 +277,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr>
    <td><strong>Passaggio 39</strong></td>
    <td>Utilizzare la preconnessione per ridurre il sovraccarico di connessione</td>
-   <td>Consulta la sessione Gem qui sopra. Inoltre, preconnessione della documentazione aggiuntiva su W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Consulta la sessione Gem qui sopra. Inoltre, ulteriore documentazione pre-connect su W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Passaggi 40 e 41</strong><br /> </td>
