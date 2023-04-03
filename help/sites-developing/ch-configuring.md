@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 2%
+source-wordcount: '1787'
+ht-degree: 1%
 
 ---
 
@@ -24,18 +24,22 @@ Configura le [ContextHub](/help/sites-developing/contexthub.md) per controllare 
 
 ## Disabilitazione di ContextHub {#disabling-contexthub}
 
-Per impostazione predefinita, ContextHub è abilitato in un&#39;installazione AEM. ContextHub può essere disabilitato per impedirgli di caricare js/css e di inizializzare. Esistono due opzioni per disabilitare ContextHub:
+Per impostazione predefinita, ContextHub è abilitato in un&#39;installazione AEM. ContextHub può essere disabilitato per impedirgli di caricare js/css e di inizializzare.
 
-* Modifica la configurazione di ContextHub e seleziona l’opzione **Disattiva ContextHub**
+<!--
+There are two options to disable ContextHub:
 
-   1. Nella barra, tocca o fai clic su **Strumenti > Siti > ContextHub**
-   1. Tocca o fai clic sul valore predefinito **Contenitore di configurazione**
-   1. Seleziona la **Configurazione ContextHub** e tocca o fai clic su **Modifica elemento selezionato**
-   1. Tocca o fai clic su **Disattiva ContextHub** e tocca o fai clic su **Salva**
+* Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-oppure
+    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
+    1. Click or tap the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
+    1. Click or tap **Disable ContextHub** and click or tap **Save**
 
-* Utilizzare CRXDE Lite per impostare la proprietà `disabled` a **true** sotto `/libs/settings/cloudsettings`
+or
+-->
+
+* Utilizzare CRXDE Lite per impostare la proprietà `disabled` a **true** sotto `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
