@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
+source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
 workflow-type: tm+mt
-source-wordcount: '3877'
+source-wordcount: '3856'
 ht-degree: 18%
 
 ---
@@ -63,7 +63,7 @@ Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell�
 |---|---|---|---|---|
 | [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | `admin` | Configurazione [!DNL Experience Manager] e configura l&#39;integrazione con il telecomando [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | `ksaner` | Gli utenti finali [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
+| [!DNL Sites] creazione | Locale | <ul><li>`Authors` (con accesso in lettura sul DAM remoto e accesso all’authoring sul locale) [!DNL Sites]) </li> <li>`dam-users` locale [!DNL Sites]</li></ul> | `ksaner` | Gli utenti finali [!DNL Sites] autori che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
 | [!DNL Assets] administrator | Remoto | [!DNL Experience Manager] `administrators` | `admin` in remoto [!DNL Experience Manager] | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
 | Utente DAM | Remoto | `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Ruolo autore nel remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate mediante l’ [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` in remoto [!DNL Experience Manager] | Questo utente presente nell&#39;implementazione remota viene utilizzato da [!DNL Experience Manager] server locale (non il [!DNL Sites] ruolo autore) per recuperare le risorse remote, per conto di [!DNL Sites] autore. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
@@ -247,10 +247,6 @@ Durante lo spostamento di una risorsa da una posizione a un&#39;altra, assicurat
 [!DNL Sites] gli autori possono visualizzare in anteprima gli aggiornamenti disponibili su [!DNL Sites] distribuzione e quindi ripubblica le modifiche per renderle disponibili nella [!DNL Experience Manager] pubblica istanza.
 
 [!DNL Experience Manager] visualizza un indicatore visivo di stato scaduto sulle risorse in `Remote Assets Content Finder` per impedire agli autori del sito di utilizzare la risorsa su un [!DNL Sites] pagina. Se utilizzi una risorsa con stato scaduto su un [!DNL Sites] la risorsa non viene visualizzata nella pagina [!DNL Experience Manager] pubblica istanza.
-
->[!NOTE]
->
->Gli aggiornamenti alle risorse in DAM remoto sono resi disponibili al [!DNL Sites] distribuzione solo se DAM remoto e [!DNL Sites] implementazioni in corso [!DNL Experience Manager].
 
 ## Domande frequenti {#frequently-asked-questions}
 
