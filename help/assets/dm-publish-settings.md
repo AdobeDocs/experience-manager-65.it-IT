@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
+source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
 workflow-type: tm+mt
-source-wordcount: '3467'
+source-wordcount: '3494'
 ht-degree: 3%
 
 ---
@@ -136,7 +136,7 @@ Vedi anche [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-med
 | **[!UICONTROL Spazio colore predefinito CMYK]** | Specifica il nome del profilo colore ICC da utilizzare come profilo di lavoro per i dati CMYK. Se **[!UICONTROL Nessuno specificato]** se si sceglie , la gestione del colore è disabilitata per questo catalogo di immagini quando sono coinvolte immagini sorgente CMYK. Tutti gli spazi di lavoro CMYK dipendono dal dispositivo, il che significa che sono basati su combinazioni effettive di inchiostro e carta. L&#39;Adobe degli spazi di lavoro CMYK si basa sulle condizioni di stampa commerciale standard.<br> Vedi anche [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) nella Guida di riferimento visualizzatori di Dynamic Media. |
 | **[!UICONTROL Spazio colore predefinito scala di grigi]** | Specifica il nome del profilo colore ICC da utilizzare come profilo di lavoro per i dati in scala di grigi. Se **[!UICONTROL Nessuno specificato]** se si sceglie , la gestione del colore viene disabilitata per questo catalogo di immagini quando sono coinvolte immagini sorgente in scala di grigi.<br>Vedi anche [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) nella Guida di riferimento visualizzatori di Dynamic Media. |
 | **[!UICONTROL Spazio colore predefinito RGB]** | Specifica il nome del profilo colore ICC da utilizzare come profilo di lavoro per i dati di RGB. Se **[!UICONTROL Nessuno specificato]** se si sceglie , la gestione del colore è disabilitata per questo catalogo di immagini quando sono interessate immagini di sorgenti RGB. In generale, è meglio scegliere **[!UICONTROL Adobe RGB]** o **[!UICONTROL sRGB]**, anziché il profilo di un dispositivo specifico (ad esempio un profilo di monitoraggio). **[!UICONTROL sRGB]** è consigliato quando si preparano le immagini per il web o i dispositivi mobili, in quanto definisce lo spazio colore del monitor standard utilizzato per visualizzare le immagini sul web. **[!UICONTROL sRGB]** è anche una buona scelta quando si lavora con immagini provenienti da fotocamere digitali consumer, perché la maggior parte di queste telecamere utilizza sRGB come spazio colore predefinito.<br>Vedi anche [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) nella Guida di riferimento visualizzatori di Dynamic Media. |
-| **[!UICONTROL Intento di rendering per conversione colore]** | **[!UICONTROL Percettivo]** - Mira a preservare il rapporto visivo tra i colori in modo che sia percepito come naturale per l’occhio umano, anche se i valori dei colori stessi possono cambiare. Questo intento è adatto per immagini fotografiche con molti colori fuori gamma. Questa impostazione è l’intento di rendering standard per l’industria di stampa giapponese. |
+| **[!UICONTROL Intento di rendering per conversione colore]** | **[!UICONTROL Percettivo]** - Mira a preservare il rapporto visivo tra i colori in modo che sia percepito come naturale per l&#39;occhio umano, anche se i valori dei colori stessi possono cambiare. Questo intento è adatto per immagini fotografiche con molti colori fuori gamma. Questa impostazione è l’intento di rendering standard per l’industria di stampa giapponese. |
 |  | **[!UICONTROL Colorimetrico relativo]** - Confronta l&#39;estrema evidenziazione dello spazio colore sorgente a quello dello spazio colore di destinazione e sposta tutti i colori di conseguenza. I colori fuori gamma vengono spostati sul colore riproducibile più vicino nello spazio colore di destinazione. Colorimetrico relativo conserva più i colori originali in un&#39;immagine rispetto a Perceptual. Questa impostazione è l’intento di rendering standard per la stampa in Nord America ed Europa. |
 |  | **[!UICONTROL Saturazione]** - Cerca di produrre colori vividi in un&#39;immagine a scapito della precisione del colore. Questo intento di rendering è adatto a elementi grafici aziendali come grafici o grafici, in cui i colori satura brillante sono più importanti della relazione esatta tra i colori. |
 |  | **[!UICONTROL Colorimetrico assoluto]** - Lascia invariati i colori che rientrano nella gamma di destinazione. I colori fuori gamma vengono ritagliati. Non viene eseguita alcuna scala dei colori al punto bianco di destinazione. Questo intento mira a mantenere la precisione del colore a scapito della conservazione delle relazioni tra i colori ed è adatto per la correzione per simulare l&#39;output di un particolare dispositivo. Questo intento è utile per visualizzare in anteprima come il colore della carta influisce sui colori stampati. |
@@ -163,7 +163,7 @@ La maggior parte delle aziende gestisce Internet dietro un firewall. L’accesso
 
 Dalla tua rete aziendale, puoi capire il tuo indirizzo IP pubblico utilizzando siti web come [https://www.whatismyip.com](https://www.whatismyip.com/) oppure richiedi queste informazioni alla tua organizzazione IT aziendale.
 
-Con Secure Testing, Adobe Dynamic Media stabilisce un server di immagini dedicato per gli ambienti di staging o le applicazioni interne. Qualsiasi richiesta a questo server controlla l&#39;indirizzo IP di origine. Se la richiesta in entrata non si trova nell’elenco di indirizzi IP approvato, viene restituita una risposta di errore. L’amministratore aziendale di Adobe Dynamic Media configura l’elenco approvato di indirizzi IP per l’ambiente Secure Testing della propria azienda.
+Con Secure Testing, Adobe Dynamic Media stabilisce un server di immagini dedicato per gli ambienti di staging o le applicazioni interne. Qualsiasi richiesta a questo server controlla l&#39;indirizzo IP di origine. Se la richiesta in entrata non si trova nell’elenco di indirizzi IP approvato, viene restituita una risposta di errore. L’amministratore aziendale Dynamic Media di Adobe configura l’elenco approvato di indirizzi IP per l’ambiente Secure Testing della propria azienda.
 
 Poiché la posizione della richiesta originale deve essere confermata, il traffico del servizio Secure Testing non viene instradato attraverso una rete di distribuzione del contenuto come il traffico pubblico di Dynamic Media Image Server. Le richieste al servizio Secure Testing hanno una latenza leggermente più elevata rispetto ai server immagini pubblici di Dynamic Media.
 
@@ -192,9 +192,13 @@ Al momento non sono supportati i seguenti tipi di risorse e funzionalità:
 * Web-stampa
 * Servizi UGC (User-Generated Content)
 
->[!IMPORTANT]
->
->Il supporto per risorse di immagini vettoriali nuove o esistenti UGC in Adobe Dynamic Media è terminato il 30 settembre 2021.
+   >[!IMPORTANT]
+   >
+   >A partire dal 1° maggio 2023, le risorse UGC in Dynamic Media saranno disponibili per l’utilizzo fino a 60 giorni dalla data di caricamento. Dopo 60 giorni, le risorse verranno rimosse.
+
+   >[!NOTE]
+   >
+   >Il supporto per risorse di immagini vettoriali nuove o esistenti UGC in Adobe Dynamic Media è terminato il 30 settembre 2021.
 
 ### Test del servizio Secure Testing {#test-secure-testing-service}
 
