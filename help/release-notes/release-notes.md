@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 72b3eaea279911569dbd6b9acf41527111e9e53c
+source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2692'
 ht-degree: 3%
 
 ---
@@ -224,6 +224,14 @@ Per informazioni sulle piattaforme certificate per l’utilizzo con questa versi
 
 Per istruzioni su come installare il service pack su AEM Forms, vedi [Istruzioni per l&#39;installazione di AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
+### Installa il pacchetto indice GraphQL per frammenti di contenuto di Experience Manager {#install-aem-graphql-index-add-on-package}
+
+I clienti che utilizzano GraphQL devono installare [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). Questo consente loro di aggiungere la definizione di indice richiesta in base alle funzioni effettivamente utilizzate.
+
+>[!NOTE]
+>
+>Questo pacchetto deve essere installato una sola volta per istanza; non è necessario reinstallarlo con ogni Service Pack.
+
 ### UberJar {#uber-jar}
 
 UberJar per [!DNL Experience Manager] 6.5.16.0 è disponibile nella [Archivio centrale Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
@@ -266,9 +274,6 @@ Controlla se utilizzi una funzione o una funzionalità in una distribuzione. Ino
 <!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
-
-* [Frammento di contenuto AEM con pacchetto indice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Questo pacchetto è necessario per i clienti che utilizzano GraphQL; questo consente loro di aggiungere la definizione dell&#39;indice richiesta in base alle funzioni effettivamente utilizzate.
 
 * Aggiorna le query GraphQL che potrebbero aver utilizzato un nome API personalizzato per il modello di contenuto utilizzando invece il nome predefinito del modello di contenuto.
 
