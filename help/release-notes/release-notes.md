@@ -2,7 +2,7 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
+source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
 workflow-type: tm+mt
 source-wordcount: '2705'
 ht-degree: 2%
@@ -80,7 +80,7 @@ Vedi [Abilita DASH sul tuo account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Funzioni principali {#forms-features-6516}
 
-* [Forms adattivo headless](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) consentono agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale.
+* [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) consentono agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale.
 
 * [Componenti core adattabili di Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sono un set di 24 componenti open-source compatibili con BEM basati sulle basi dei componenti core di Adobe Experience Manager WCM. Questi componenti sono open-source e offrono agli sviluppatori la possibilità di personalizzare ed estendere facilmente questi componenti in base alle esigenze specifiche della loro organizzazione. Chiunque abbia le competenze esistenti da personalizzare [Componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) possono personalizzare e personalizzare facilmente lo stile di questi componenti.
 
@@ -100,7 +100,7 @@ Vedi [Abilita DASH sul tuo account](/help/assets/video.md#enable-dash).
    * Microsoft® Excel si blocca frequentemente.
    * Durante l&#39;apertura di un documento protetto, il **Ufficio sicurezza dei documenti** estensione non rilevata come installata in un computer. Indica all&#39;utente di scaricare e installare l&#39;estensione di sicurezza. (NPR-39768)
 * Dopo l&#39;aggiornamento a AEM Service Pack 6.5.15.0 da parte di un utente, la conversione da PostScript a Pdf non funziona. (NPR-39765), (NPR-39764)
-* Quando l&#39;utente tenta di aprire la schermata introduttiva dopo l&#39;apertura di un Modulo adattivo, l&#39;operazione non riesce con un&#39;eccezione NullPointer:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* Quando l&#39;utente tenta di aprire la schermata introduttiva dopo l&#39;apertura di un Modulo adattivo, l&#39;operazione non riesce con un&#39;eccezione NullPointer:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * In Windows, quando l’utente abilita impostazioni di nero ad alto contrasto, il contenuto Forms di HTML5 non risulta chiaro quando viene eseguito il rendering come anteprima HTML nel browser. (NPR-39018)
 
 ## Integrazioni {#integrations-6516}
