@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '8091'
+source-wordcount: '8098'
 ht-degree: 3%
 
 ---
@@ -278,7 +278,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
 
 >[!IMPORTANT]
 >
->*Per utilizzare DASH per i video, deve essere attivato innanzitutto dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).)
+>*Per utilizzare DASH per i video, deve essere attivato innanzitutto dal supporto tecnico Adobe sul tuo account. Vedi [Abilita DASH sul tuo account](#enable-dash).
 
 ## Architettura della soluzione video Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -445,7 +445,7 @@ Alcuni vantaggi principali dell’abilitazione di DASH sul tuo account includono
 
    >[!IMPORTANT]
    >
-   >L’abilitazione di DASH sul tuo account è attualmente disponibile solo in Nord America.
+   >L’abilitazione di DASH sul tuo account è attualmente disponibile solo in Asia-Pacifico e Nord America; presto in Europa-Medio Oriente-Africa.
 
 L’abilitazione di DASH sul tuo account richiede due passaggi:
 
@@ -476,7 +476,7 @@ L’abilitazione di DASH sul tuo account richiede due passaggi:
 >
 >I rapporti video sono disponibili solo quando si esegue Dynamic Media - Modalità ibrida.
 
-I rapporti video mostrano diverse metriche aggregate in un determinato periodo di tempo per aiutarti a monitorare che i video *pubblicati *singoli e aggregati abbiano prestazioni come previsto. I seguenti dati di metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
+I rapporti video mostrano diverse metriche aggregate in un determinato periodo di tempo per facilitare il monitoraggio *pubblicato* le prestazioni dei video singoli e aggregati sono quelle previste. I seguenti dati di metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
 
 * Inizio video
 * Percentuale completata

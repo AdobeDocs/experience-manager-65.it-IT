@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4523'
 ht-degree: 9%
 
 ---
@@ -348,7 +348,7 @@ La tabella seguente identifica i movimenti dei visualizzatori mobili supportati 
    <td><p>Pannelli</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Selezionare</strong></p> </td>
+   <td><p><strong>Seleziona</strong></p> </td>
    <td><p>Mostra la finestra a comparsa</p> </td>
    <td><p>Mostra o nasconde l’interfaccia utente</p> </td>
    <td><p>Mostra o nasconde l’interfaccia utente</p> </td>
@@ -463,7 +463,7 @@ Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UI
 
    * **[!UICONTROL sciocco]** - I video vengono trasmessi solo come trattino. Tuttavia, sui dispositivi Safari/iOS, devi selezionare **[!UICONTROL hls]** come tipo, invece.
    * **[!UICONTROL hls]** - I video vengono trasmessi solo come hls.
-   * **[!UICONTROL auto]** - Best practice. La creazione di flussi DASH e HLS è ottimizzata per lo storage. Pertanto, l’Adobe consiglia di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come trattini, hls o progressivi, come illustrato di seguito:
+   * **[!UICONTROL auto]** - Best practice. La creazione di flussi DASH e HLS è ottimizzata per lo storage. Pertanto, l’Adobe consiglia di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come trattini, hls o progressivi, come nell&#39;ordine di riproduzione seguente:
       * Se il browser supporta DASH, viene prima utilizzato lo streaming DASH.
       * Se il browser non supporta DASH, viene utilizzato lo streaming HLS, secondo.
       * Se il browser non supporta DASH o HLS, si utilizza infine la riproduzione progressiva.
@@ -492,7 +492,7 @@ Ad esempio, per *VideoPlayer* tipo, sotto **[!UICONTROL Modificatori]** > **[!UI
 
    >[!IMPORTANT]
    >
-   >Per i vecchi video che utilizzano un profilo di streaming a bitrate adattivo, l’URL continua a essere riprodotto come al solito, con streaming HLS, fino a quando non si [rielaborare le risorse video](/help/assets/processing-profiles.md#reprocessing-assets). Dopo la rielaborazione, lo stesso URL continuerà a funzionare ma ora con *entrambi* Streaming DASH e HLS abilitato.
+   >Per i vecchi video che utilizzano un profilo di streaming a bitrate adattivo, l’URL continua a essere riprodotto come al solito, con streaming HLS, fino a quando non si [rielaborare le risorse video](/help/assets/processing-profiles.md#reprocessing-assets). Dopo la rielaborazione, lo stesso URL continua a funzionare, ma ora con *entrambi* Streaming DASH e HLS abilitato.
 
 ### Considerazioni speciali per la creazione di un predefinito visualizzatore interattivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
