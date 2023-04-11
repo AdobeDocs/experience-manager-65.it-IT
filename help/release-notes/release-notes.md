@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova le informazioni sulla versione, le novità, installa le procedure guidate e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 2%
 
 ---
@@ -111,7 +111,7 @@ Vedi [Abilita DASH sul tuo account](/help/assets/video.md#enable-dash).
 * Quando un utente visualizza l’anteprima di un modulo adattivo come HTML nel browser Microsoft Edge con modalità di compatibilità IE, questo non viene visualizzato correttamente.(CQ-4352216)
 * Per abilitare la traduzione, il dizionario deve includere nuove impostazioni internazionali con caratteri speciali, ad esempio caratteri di sottolineatura o trattini. (NPR-40088)
 
-Dopo aver installato il service pack aggiuntivo Forms 6.5.16.0 di AEM, i clienti si trovavano di fronte al seguente problema. Pertanto, viene rilasciata una versione aggiornata del service pack aggiuntivo di Forms 6.5.16.0 AEM:
+Dopo aver installato il service pack aggiuntivo Forms 6.5.16.0 di AEM, i clienti si trovavano di fronte ai problemi elencati di seguito. Quindi, una versione aggiornata di [Service Pack aggiuntivo di Forms 6.5.16.0 - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) viene rilasciato. L&#39;Adobe consiglia di utilizzare il service pack aggiornato:
 * Quando un utente tenta di creare un modulo adattivo con un utente nel gruppo utenti moduli, l&#39;opzione per selezionare un modello non è presente e si verifica l&#39;errore simile al seguente: errore interno del server: java.lang.NullPointerException su com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) su java.base/java.util.stream.ReferencePipeline$2$1.accept(Reference Pipeline.java:176) a java.base/java.util.Iterator.foreachRemain(Iterator.java:133) (FORMS-7629)
 * Le modifiche apportate nelle regole dell&#39;editor di codice non vengono salvate.(FORMS-7532)
 
