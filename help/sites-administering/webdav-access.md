@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1097'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Per connettersi a AEM tramite WebDAV con KDE:
 
-AEM offre il supporto WebDAV che consente di visualizzare e modificare il contenuto del repository. La connessione tramite WebDAV consente di accedere direttamente all’archivio dei contenuti tramite il desktop. I file di testo e PDF che vengono aggiunti all&#39;archivio tramite la connessione WebDAV vengono indicizzati automaticamente in formato full-text e possono essere cercati nelle interfacce di ricerca standard e tramite le API Java standard.
+AEM offre il supporto WebDAV che consente di visualizzare e modificare il contenuto del repository. La connessione tramite WebDAV consente di accedere direttamente all’archivio dei contenuti tramite il desktop. I file di testo e PDF che vengono aggiunti all&#39;archivio tramite la connessione WebDAV vengono indicizzati automaticamente in formato full-text e possono essere cercati nelle interfacce di ricerca standard e tramite le API Java™ standard.
 
 ## Generale {#general}
 
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Connessione tramite WebDAV {#connecting-via-webdav}
 
-[Come indicato sopra](/help/sites-administering/webdav-access.md#general), per connettersi al repository utilizzando il protocollo WebDAV, posizionare il client WebDAV nel percorso del repository. Tuttavia, a seconda del sistema operativo, i passaggi necessari per la connessione al client sono diversi e potrebbe essere necessaria la configurazione del sistema operativo.
+[Come indicato sopra](/help/sites-administering/webdav-access.md#general), per connettersi al repository utilizzando il protocollo WebDAV, posizionare il client WebDAV nel percorso del repository. Tuttavia, a seconda del sistema operativo in uso, i passaggi necessari per la connessione al client sono diversi e potrebbe essere necessaria la configurazione del sistema operativo.
 
 Vengono fornite istruzioni su come collegare i seguenti sistemi operativi:
 
@@ -108,7 +108,7 @@ Vengono fornite istruzioni su come collegare i seguenti sistemi operativi:
 
 ### Windows {#windows}
 
-Per connettere correttamente un sistema Microsoft Windows 7 (e versioni successive) a un&#39;istanza AEM non protetta con SSL, l&#39;opzione per stabilire l&#39;autenticazione di base su una rete non protetta deve essere abilitata esplicitamente in Windows. Ciò richiede una modifica nel Registro di sistema di Windows del WebClient.
+Per collegare correttamente un sistema Microsoft® Windows 7 (e versioni successive) a un&#39;istanza AEM non protetta con SSL, l&#39;opzione per stabilire l&#39;autenticazione di base su una rete non protetta deve essere abilitata esplicitamente in Windows. Questa funzionalità richiede una modifica nel Registro di sistema di Windows del WebClient.
 
 Una volta aggiornato il registro, l&#39;istanza AEM può essere mappata come unità.
 
@@ -126,11 +126,7 @@ Per aggiornare il Registro di sistema per consentire l&#39;autenticazione di bas
 
    Se non è presente, aggiungi la sottochiave.
 
-1. Per rendere effettiva la modifica del Registro di sistema, è necessario riavviare il sistema.
-
-Vedi [Supporto Microsoft KB 841215](https://support.microsoft.com/default.aspx/kb/841215) per ulteriori informazioni su questa modifica del Registro di sistema.
-
-Vedi [Supporto Microsoft KB 2445570](https://support.microsoft.com/kb/2445570) per informazioni su come migliorare la reattività del client WebDav in Windows.
+1. Riavvia il sistema per rendere effettiva la modifica del Registro di sistema.
 
 >[!NOTE]
 >
@@ -138,11 +134,11 @@ Vedi [Supporto Microsoft KB 2445570](https://support.microsoft.com/kb/2445570) p
 
 #### Configurazione di Windows 8 {#windows-configuration}
 
-Per Windows 8 è inoltre necessario modificare la voce del Registro di sistema [come descritto per Windows 7 e versioni successive](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Tuttavia, prima di eseguire questa operazione, per visualizzare la voce del Registro di sistema è necessario abilitare l’esperienza desktop.
+Per Windows 8, modificare la voce del Registro di sistema [come descritto per Windows 7 e versioni successive](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Tuttavia, prima di eseguire questa operazione, per visualizzare la voce del Registro di sistema è necessario abilitare l’esperienza desktop.
 
 Per abilitare l’esperienza desktop, apri **Server Manager**, quindi **Funzioni**, quindi **Aggiungi funzionalità**, quindi **Esperienza desktop**.
 
-Dopo il riavvio è disponibile la voce del Registro di sistema descritta per Windows 7 e versioni successive. Modificarlo come descritto per Windows 7 e versioni successive.
+Dopo il riavvio, è disponibile la voce del Registro di sistema descritta per Windows 7 e versioni successive. Modificarlo come descritto per Windows 7 e versioni successive.
 
 #### Connessione a Windows {#connecting-in-windows}
 
@@ -152,7 +148,7 @@ Per connettersi a AEM tramite WebDAV in un ambiente Windows:
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. Fai clic su **Mappa unità di rete** per avviare la procedura guidata.
+1. Per avviare la procedura guidata, fai clic su **Mappa unità di rete**.
 1. Immetti i dettagli di mappatura:
 
    * **Unità**: Scegli qualsiasi lettera disponibile
@@ -165,7 +161,7 @@ Per connettersi a AEM tramite WebDAV in un ambiente Windows:
 
    >[!NOTE]
    >
-   >Se AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
+   >Se AEM su un&#39;altra porta, utilizza quel numero di porta invece di 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
 
 1. Immetti nome utente `admin` e password `admin`. Adobe consiglia di utilizzare l&#39;account amministratore preconfigurato per il test.
 
@@ -179,7 +175,7 @@ Windows ha ora mappato AEM come unità tramite WebDAV e può essere utilizzato c
 
 ### macOS {#macos}
 
-Non sono necessari passaggi di configurazione per la connessione tramite WebDAV su macOS. È sufficiente connettersi al server WebDAV.
+Non sono necessari passaggi di configurazione per la connessione tramite WebDAV su macOS. È possibile connettersi al server WebDAV.
 
 1. Passa a qualsiasi **Finder** finestra e fai clic su **Vai** e **Connetti al server** o premere **Comando+k**.
 1. In **Connetti al server** nella finestra immetti la posizione AEM:
@@ -187,15 +183,15 @@ Non sono necessari passaggi di configurazione per la connessione tramite WebDAV 
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Se AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
+   >Se AEM su un&#39;altra porta, utilizza quel numero di porta invece di 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
 
 1. Quando ti viene richiesto di eseguire l&#39;autenticazione, immetti il nome utente `admin` e password `admin`. Adobe consiglia di utilizzare l&#39;account amministratore preconfigurato per il test.
 
 macOS è ora connesso a AEM tramite WebDAV e può essere utilizzato come qualsiasi altra cartella sul Mac.
 
-### Linux {#linux}
+### Linux® {#linux}
 
-La connessione tramite WebDAV su Linux non richiede alcuna configurazione, ma richiede alcuni passaggi per effettuare la connessione che variano a seconda dell&#39;ambiente desktop.
+La connessione tramite WebDAV su Linux® non richiede alcuna configurazione, ma richiede alcuni passaggi per effettuare la connessione che variano a seconda dell&#39;ambiente desktop.
 
 #### GNOME {#gnome}
 
@@ -208,7 +204,7 @@ Per connettersi a AEM tramite WebDAV con GNOME:
 
    >[!NOTE]
    >
-   >Se AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
+   >Se AEM su un&#39;altra porta, utilizza quel numero di porta invece di 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP.
 
 1. In **Cartella**, inserisci `/dav`
 1. Immetti il nome utente `admin`. Adobe consiglia di utilizzare l&#39;account amministratore preconfigurato per il test.
@@ -228,7 +224,7 @@ GNOME è ora montato AEM come volume e può essere utilizzato come qualsiasi alt
 
    >[!NOTE]
    >
-   >Se AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP
+   >Se AEM su un&#39;altra porta, utilizza quel numero di porta invece di 4502. Inoltre, se non esegui l’archivio dei contenuti sul computer locale, sostituisci `localhost` con il rispettivo nome server o indirizzo IP
 
 1. In **Cartella**, inserisci `dav`
 
