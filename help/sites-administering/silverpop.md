@@ -11,18 +11,19 @@ content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 2%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
 # Integrazione con Silverpop Engage{#integrating-with-silverpop-engage}
 
+<!-- THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
 >[!NOTE]
 >
->L&#39;integrazione Silverpop è **not** disponibile in dotazione. È necessario scaricare il [Pacchetto di integrazione Silverpop](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) da Condivisione pacchetti e installalo nell&#39;istanza. Dopo aver installato il pacchetto, puoi configurarlo come descritto in questo documento.
+>Silverpop integration is **not** available out of the box. You must download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
 
 L’integrazione di AEM con Silverpop Engage consente di gestire e inviare e-mail create in AEM tramite Silverpop. Consente inoltre di utilizzare le funzioni di gestione dei lead di Silverpop tramite moduli AEM su pagine AEM.
 
@@ -35,9 +36,9 @@ Dopo la configurazione di Silverpop Engage, puoi pubblicare newsletter o e-mail 
 
 ## Creazione di una configurazione Silverpop {#creating-a-silverpop-configuration}
 
-Le configurazioni Silverpop possono essere aggiunte tramite **Servizi cloud**, **Strumenti** oppure **Endpoint API**. Tutti i metodi sono descritti in questa sezione.
+Le configurazioni Silverpop possono essere aggiunte tramite **Cloud Services**, **Strumenti** oppure **Endpoint API**. Tutti i metodi sono descritti in questa sezione.
 
-### Configurazione di Silverpop tramite Cloudservices {#configuring-silverpop-via-cloudservices}
+### Configurazione di Silverpop tramite Cloud Services {#configuring-silverpop-via-cloudservices}
 
 Per creare una configurazione Silverpop nei Cloud Services:
 
@@ -49,10 +50,10 @@ Per creare una configurazione Silverpop nei Cloud Services:
    >Silverpop Engage non è disponibile come opzione nei servizi di terze parti a meno che tu non scarichi il pacchetto da Package Share.
 
 1. Inserisci un titolo e, facoltativamente, un nome e fai clic su **Crea**. Viene visualizzata la finestra di configurazione** Silverpop Settings**.
-1. Immetti nome utente e password e seleziona un endpoint API dall’elenco a discesa.
-1. Fai clic su **Connettiti a Silverpop.** Una volta effettuata la connessione, viene visualizzata una finestra di dialogo di successo. Fai clic su **OK** per uscire dalla finestra. Per passare a Silverpop fai clic su **Vai a Silverpop Engage**.
+1. Immetti nome utente e password e seleziona un endpoint API dall&#39;elenco a discesa.
+1. Fai clic su **Connettiti a Silverpop.** Una volta effettuata la connessione, viene visualizzata una finestra di dialogo di successo. Fai clic su **OK** quindi esci dalla finestra. Per passare a Silverpop fai clic su **Vai a Silverpop Engage**.
 1. Silverpop è stato configurato. Per modificare la configurazione, fai clic su **Modifica**.
-1. Inoltre, il framework Silverpop Engage può essere configurato per azioni personalizzate fornendo titolo e nome (facoltativo). Fai clic su Crea per creare correttamente il framework per la connessione Silverpop già configurata.
+1. Inoltre, il framework Silverpop Engage può essere configurato per azioni personalizzate fornendo titolo e nome (facoltativo). Fare clic su Crea per creare il framework per la connessione Silverpop già configurata.
 
    Le colonne di estensione dei dati importate possono essere utilizzate in un secondo momento tramite il componente AEM - **Testo e personalizzazione**.
 
@@ -62,11 +63,11 @@ Per creare una configurazione Silverpop in Strumenti:
 
 1. In AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Cloud Services**. Oppure puoi navigare direttamente da `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleziona **Strumenti**, quindi **Configurazioni Cloud Services,** then **Silverpop Engage**.
-1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina**.
+1. Fai clic su **Nuovo**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-1. Inserisci il **Titolo** e facoltativamente **Nome** e fai clic su **Crea**.
+1. In **Crea pagina** nella finestra **Titolo** e facoltativamente **Nome** e fai clic su **Crea**.
 1. Immettere le informazioni di configurazione descritte al punto 4 della procedura precedente. Segui questa procedura per completare la configurazione di Silverpop.
 
 ### Aggiunta di più configurazioni {#adding-multiple-configurations}
@@ -74,11 +75,11 @@ Per creare una configurazione Silverpop in Strumenti:
 Per aggiungere più configurazioni:
 
 1. Nella pagina di benvenuto, fai clic su **Cloud Services** e fai clic su **Silverpop Engage**. Fai clic su **Mostra configurazioni** che appare se sono disponibili una o più configurazioni Silverpop. Sono elencate tutte le configurazioni disponibili.
-1. Fai clic sul pulsante **+** Accedi a Configurazioni disponibili. Viene aperta la **Creare configurazioni** finestra. Segui la procedura di configurazione precedente per creare una nuova configurazione.
+1. Fai clic sul pulsante **+** Accedi a Configurazioni disponibili. Apre la **Creare configurazioni** finestra. Segui la procedura di configurazione precedente per creare una configurazione.
 
 ### Configurazione dei punti finali API per la connessione a Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}
 
-Attualmente, AEM ha sei punti finali non sicuri (da 1 a 6). Silverpop ora fornisce due nuovi punti finali e punti finali di connessione modificati per quelli esistenti.
+Attualmente, AEM ha sei punti finali non sicuri (Engage 1 - 6). Silverpop ora fornisce due nuovi punti finali e i punti finali di connessione modificati per quelli esistenti.
 
 Per configurare gli endpoint API:
 
@@ -92,7 +93,7 @@ Per configurare gli endpoint API:
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
-   Fai clic sul pulsante &quot;Salva tutto&quot;.
+   Fai clic su &quot;Salva tutto&quot;.
 
 1. Crea un altro nodo con **Nome** come `sp-e7` e **Tipo** come `cq:Widget`.
 
@@ -101,16 +102,16 @@ Per configurare gli endpoint API:
    1. **Nome**: `text`, **Tipo**: `String`, **Valore**: `Pilot`
    1. **Nome**: `value`, **Tipo**: `String`, **Valore**: `https://apipilot.silverpop.com/XMLAPI`
 
-1. Per modificare i punti finali dell’API esistenti (da 1 a 6), fai clic su ciascuno di essi uno per uno e sostituisci i valori come segue:
+1. Per modificare i punti finali dell’API esistenti (Coinvolgi 1 - 6), fai clic su ciascuno di essi uno per uno e sostituisci i valori come segue:
 
    | **Nome nodo** | **Valore del punto finale esistente** | **Nuovo valore del punto finale** |
    |---|---|---|
-   | sp-e1 | https://api.engage1.silverpop.com/XMLAPI | https://api1.silverpop.com |
-   | sp-e2 | https://api.engage2.silverpop.com/XMLAPI | https://api2.silverpop.com |
-   | sp-e3 | https://api.engage3.silverpop.com/XMLAPI | https://api3.silverpop.com |
-   | sp-e4 | https://api.engage4.silverpop.com/XMLAPI | https://api4.silverpop.com |
-   | sp-e5 | https://api.engage5.silverpop.com/XMLAPI | https://api5.silverpop.com |
-   | sp-e6 | https://api.pilot.silverpop.com/XMLAPI | https://api6.silverpop.com |
+   | sp-e1 | `https://api.engage1.silverpop.com/XMLAPI` | `https://api1.silverpop.com` |
+   | sp-e2 | `https://api.engage2.silverpop.com/XMLAPI` | `https://api2.silverpop.com` |
+   | sp-e3 | `https://api.engage3.silverpop.com/XMLAPI` | `https://api3.silverpop.com` |
+   | sp-e4 | `https://api.engage4.silverpop.com/XMLAPI` | `https://api4.silverpop.com` |
+   | sp-e5 | `https://api.engage5.silverpop.com/XMLAPI` | `https://api5.silverpop.com` |
+   | sp-e6 | `https://api.pilot.silverpop.com/XMLAPI` | `https://api6.silverpop.com` |
 
 1. Fai clic su **Salva tutto**. AEM è ora pronto per il collegamento a Silverpop su punti finali protetti.
 

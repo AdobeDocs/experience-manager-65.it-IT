@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Sostituisce Jackrabbit 2 e viene utilizzato da AEM 6 come backend predefinito pe
 
 ## Principi e obiettivi di progettazione {#design-principles-and-goals}
 
-Oak implementa le [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0) specifiche. I suoi principali obiettivi sono:
+Oak implementa le [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specifiche. I suoi principali obiettivi sono:
 
 * Supporto migliorato per archivi di grandi dimensioni
 * Più nodi cluster distribuiti per un&#39;elevata disponibilità
@@ -74,17 +74,17 @@ Al momento sono disponibili due implementazioni di storage in AEM6: **Archiviazi
 
 Lo storage Tar utilizza file tar. Memorizza il contenuto come vari tipi di record all’interno di segmenti più grandi. Le scritture contabili vengono utilizzate per tenere traccia dello stato più recente dell’archivio.
 
-Ci sono diversi principi chiave di progettazione intorno a cui è stato costruito:
+Ci sono diversi principi chiave di progettazione intorno ai quali è stato costruito:
 
 * **Segmenti immutabili**
 
-Il contenuto viene memorizzato in segmenti di dimensioni fino a 256 KiB. Sono immutabili, il che rende facile memorizzare nella cache i segmenti a cui si accede di frequente e riduce gli errori di sistema che possono danneggiare l’archivio.
+Il contenuto viene memorizzato in segmenti che possono essere fino a 256 KB. Sono immutabili, il che rende facile memorizzare nella cache i segmenti a cui si accede di frequente e riduce gli errori di sistema che possono danneggiare l’archivio.
 
 Ogni segmento è identificato da un identificatore univoco (UUID) e contiene un sottoinsieme continuo della struttura del contenuto. Inoltre, i segmenti possono fare riferimento ad altri contenuti. Ogni segmento mantiene un elenco di UUID di altri segmenti di riferimento.
 
 * **Località**
 
-I record correlati come un nodo e i relativi figli immediati vengono solitamente memorizzati nello stesso segmento. Questo rende la ricerca dell&#39;archivio molto veloce ed evita la maggior parte degli errori di cache per i clienti tipici che accedono a più di un nodo correlato per sessione.
+I record correlati come un nodo e i relativi figli immediati vengono memorizzati nello stesso segmento. In questo modo la ricerca dell’archivio diventa veloce ed evita la maggior parte dei problemi di cache per i client tipici che accedono a più di un nodo correlato per sessione.
 
 * **Compattezza**
 
@@ -92,7 +92,7 @@ La formattazione dei record è ottimizzata per le dimensioni per ridurre i costi
 
 ### Archiviazione Mongo {#mongo-storage}
 
-Lo storage MongoDB sfrutta MongoDB per la condivisione e il clustering. La struttura dell&#39;archivio viene mantenuta in un database MongoDB in cui ogni nodo è un documento separato.
+L&#39;archiviazione MongoDB utilizza MongoDB per la condivisione e il clustering. La struttura dell&#39;archivio viene mantenuta in un database MongoDB in cui ogni nodo è un documento separato.
 
 Ha diverse particolarità:
 
@@ -122,10 +122,10 @@ Configurazione cluster AEM tipica con archiviazione MongoDB:
 
 ## Quali sono le differenze rispetto a Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Poiché Oak è progettato per essere compatibile con lo standard JCR 1.0, non ci saranno quasi modifiche a livello di utente. Tuttavia, ci sono alcune differenze notevoli che è necessario tenere in considerazione quando si imposta un&#39;installazione di AEM basata su Oak:
+Poiché Oak è compatibile con lo standard JCR 1.0, non ci sono quasi modifiche a livello di utente. Tuttavia, ci sono alcune differenze notevoli che è necessario tenere conto quando si imposta un&#39;installazione di AEM basata su Oak:
 
-* Oak non crea indici automaticamente. Per questo motivo, se necessario, sarà necessario creare indici personalizzati.
-* A differenza di Jackrabbit 2, dove le sessioni riflettono sempre lo stato più recente dell’archivio, con Oak una sessione riflette una vista stabile dell’archivio dal momento in cui la sessione è stata acquisita. Questo è dovuto al modello MVCC su cui si basa Oak.
+* Oak non crea indici automaticamente. Di conseguenza, gli indici personalizzati devono essere creati quando necessario.
+* A differenza di Jackrabbit 2, dove le sessioni riflettono sempre lo stato più recente dell’archivio, con Oak una sessione riflette una vista stabile dell’archivio dal momento in cui la sessione è stata acquisita. Il motivo è dovuto al modello MVCC su cui si basa Oak.
 * Gli elementi di pari livello con lo stesso nome (SNS) non sono supportati in Oak.
 
 ## Documentazione correlata ad altre piattaforme {#other-platform-related-documentation}

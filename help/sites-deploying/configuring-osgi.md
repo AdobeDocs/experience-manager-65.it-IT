@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 55f6aab3e41159735e332b2740e3a21c563c1157
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 OSGi &quot;*fornisce le primitive standardizzate che consentono di creare applicazioni a partire da componenti di piccole dimensioni, riutilizzabili e collaborative. Questi componenti possono essere composti in un’applicazione e distribuiti*&quot;.
 
-In questo modo è possibile gestire facilmente i bundle in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi (vedi la [Specifiche OSGi](https://www.osgi.org/Specifications/HomePage)) è contenuta in uno dei vari bundle.
+In questo modo è possibile gestire facilmente i bundle in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi (vedi la [Specifiche OSGi](https://docs.osgi.org/specification/)) è contenuta in uno dei vari bundle.
 
 Puoi gestire le impostazioni di configurazione per tali bundle:
 

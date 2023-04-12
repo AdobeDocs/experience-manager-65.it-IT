@@ -1,8 +1,6 @@
 ---
 title: Editor immagine
-seo-title: Image Editor
-description: L’editor di immagini è una parte fondamentale della AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
-seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+description: L’Editor immagini è un elemento fondamentale di AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,20 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 14%
+source-wordcount: '312'
+ht-degree: 16%
 
 ---
 
 # Editor immagine{#image-editor}
 
-L’editor di immagini è una parte fondamentale della AEM e può essere sfruttato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+L’Editor immagini è un elemento fondamentale di AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 
 >[!CAUTION]
 >
->Per utilizzare le funzioni dell’Editor immagini descritte in questo articolo, [feature pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve essere installato.
+>Per utilizzare le funzioni dell’Editor immagini descritte in questo articolo, [feature pack 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve essere installato.
 
 ## Unità relative per la mappa immagine {#relative-units-for-image-map}
 

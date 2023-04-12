@@ -4,9 +4,9 @@ description: Elenco delle piattaforme client e server supportate per Adobe Exper
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3498'
 ht-degree: 1%
 
 ---
@@ -214,7 +214,7 @@ Per raccomandazioni su come distribuire AEM su Azure o AWS, al di fuori di Adobe
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di memorizzazione in cache e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 richiede la versione 4.3.2 o successiva di Dispatcher.
+Dispatcher è il componente di memorizzazione in cache e di bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 richiede la versione 4.3.2 o successiva di Dispatcher.
 
 I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4.3.2:
 
