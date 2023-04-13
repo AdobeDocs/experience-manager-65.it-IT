@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2986'
 ht-degree: 1%
 
 ---
@@ -389,6 +389,14 @@ Anche se non consigliato, puoi disattivarlo nel caso in cui sia necessaria la ve
 >[!NOTE]
 >
 >Per ulteriori informazioni, consulta la documentazione Oak su [Generazione di nomi di nodo autorizzati](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Pacchetto di indurimento delle autorizzazioni anonime**
+
+Per impostazione predefinita, AEM memorizza i metadati del sistema, ad esempio `jcr:createdBy` o `jcr:lastModifiedBy` come proprietà del nodo, accanto al contenuto regolare, nell’archivio. A seconda della configurazione e della configurazione del controllo di accesso, in alcuni casi ciò potrebbe portare all’esposizione di informazioni personali identificabili (PII), ad esempio quando tali nodi vengono sottoposti a rendering come JSON o XML non elaborati.
+
+Come tutti i dati dell&#39;archivio, queste proprietà sono mediate dallo stack di autorizzazioni Oak. L&#39;accesso ad essi dovrebbe essere limitato in base al principio del minimo privilegio.
+
+Per supportare questo, Adobe fornisce un pacchetto di protezione delle autorizzazioni come base su cui i clienti possono basarsi. Funziona installando una voce di controllo accessi &quot;negati&quot; nella directory principale dell&#39;archivio, limitando l&#39;accesso anonimo alle proprietà di sistema comunemente utilizzate. Il pacchetto è disponibile per il download [qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e può essere installato su tutte le versioni supportate di AEM. Per ulteriori informazioni, consulta le note sulla versione .
 
 ### Previeni il clickjacking {#prevent-clickjacking}
 
