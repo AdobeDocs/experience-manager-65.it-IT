@@ -1,8 +1,6 @@
 ---
 title: Ottimizzazione delle prestazioni
-seo-title: Performance Optimization
 description: Scopri come configurare alcuni aspetti di AEM per ottimizzare le prestazioni.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -26,7 +24,7 @@ ht-degree: 12%
 >
 >Per ulteriori informazioni sulla risoluzione dei problemi e sulla risoluzione dei problemi di prestazioni, consulta anche la sezione [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
->Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti sull&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti sull&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 Un problema chiave è il tempo impiegato dal sito web per rispondere alle richieste dei visitatori. Anche se questo valore varia per ogni richiesta, è possibile definire un valore target medio. Una volta dimostrato che questo valore è raggiungibile e maneggevole, può essere utilizzato per monitorare le prestazioni del sito web e indicare lo sviluppo di potenziali problemi.
 
@@ -43,7 +41,7 @@ Questo ambiente contiene i contenuti che puoi rendere disponibili agli utenti. Q
 >[!NOTE]
 >
 >* Dopo aver configurato l’ottimizzazione delle prestazioni, segui le procedure descritte in [Giorno difficile](/help/sites-developing/tough-day.md) per testare l&#39;ambiente a carico pesante.
->* Vedi anche [Suggerimenti sull’ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* Vedi anche [Suggerimenti sull’ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
 
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
@@ -102,12 +100,12 @@ Questo obiettivo significa che lo sviluppatore che implementa l’ottimizzazione
 
 ## Linee guida sulle prestazioni di base {#basic-performance-guidelines}
 
-In generale, mantieni le richieste html non memorizzate nella cache a meno di 100 ms. Più specificamente, possono fungere da linea guida:
+In generale, mantieni le richieste html non memorizzate nella cache a meno di 100 millisecondi. Più specificamente, possono fungere da linea guida:
 
-* Il 70% delle richieste di pagine deve rispondere in meno di 100 ms.
-* Il 25% delle richieste di pagine deve ricevere una risposta entro 100-300 ms.
-* Il 4% delle richieste di pagine deve ricevere una risposta entro 300-500 ms.
-* L’1% delle richieste di pagine deve ricevere una risposta entro 500-1000 ms.
+* Il 70% delle richieste di pagine deve ricevere risposta in meno di 100 millisecondi.
+* Il 25% delle richieste per le pagine deve ricevere una risposta entro 100 millisecondi - 300 millisecondi.
+* Il 4% delle richieste per le pagine deve ricevere una risposta entro 300 millisecondi - 500 millisecondi.
+* L’1% delle richieste per le pagine deve ricevere una risposta entro 500 millisecondi - 1000 millisecondi.
 * Nessuna pagina deve rispondere più lentamente di 1 secondo.
 
 I numeri di cui sopra presuppongono le seguenti condizioni:
@@ -206,7 +204,7 @@ Alcuni aspetti di AEM (e/o dell’archivio sottostante) possono essere configura
 
 >[!NOTE]
 >
->Vedi [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Vedi [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 ### Indicizzazione ricerca {#search-indexing}
 
@@ -459,14 +457,12 @@ Eventuali ottimizzazioni effettuate devono essere testate per garantire che:
 * Funzionalità non interessate
 * è stato verificato con le prove di carico prima del rilascio
 
-È disponibile una selezione di strumenti per aiutarti con la generazione del carico, il monitoraggio delle prestazioni e/o l’analisi dei risultati:
+È disponibile una selezione di strumenti per aiutarti con la generazione del carico, il monitoraggio delle prestazioni e l’analisi dei risultati. Alcuni di questi strumenti includono:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determine](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Profilo interattivo Java™](https://jiprof.sourceforge.net/)
-* molti altri...
 
 Dopo l’ottimizzazione, esegui di nuovo il test per confermare l’impatto.
 
@@ -691,7 +687,7 @@ Il caricamento è costituito da pagine create, pagine eliminate, traversate e qu
 
 L&#39;impatto del carico sulle prestazioni di backup può essere stimato dalla differenza tra le prestazioni con e senza questo carico dell&#39;applicazione. L&#39;impatto del backup sul throughput dell&#39;applicazione si riscontra confrontando il throughput dello scenario nelle transazioni all&#39;ora con e senza un backup simultaneo in corso e con i backup che funzionano con diverse impostazioni di &quot;ritardo del backup&quot;.
 
-* **Impostazione ritardata** - Per diversi scenari, anche l&#39;impostazione del ritardo di backup è stata modificata, utilizzando valori di 10 ms (impostazione predefinita), 1 ms e 0 ms, per esplorare come questa impostazione ha influenzato le prestazioni dei backup.
+* **Impostazione ritardata** - Per diversi scenari, anche l&#39;impostazione del ritardo di backup è stata modificata, utilizzando valori di 10 millisecondi (valore predefinito), 1 millisecondi e 0 millisecondi, per esplorare come questa impostazione ha influenzato le prestazioni dei backup.
 * **Tipo di backup** - Tutti i backup erano backup esterni dell&#39;archivio effettuati in una directory di backup senza creare un file zip, tranne in un caso per il confronto in cui il comando tar è stato utilizzato direttamente. Poiché i backup incrementali non possono essere creati su un file zip o quando il backup completo precedente è un file zip, il metodo di directory di backup è il più utilizzato in situazioni di produzione.
 
 ### Riepilogo dei risultati {#summary-of-results}
@@ -720,7 +716,7 @@ Il parametro di ritardo del backup viene fornito per limitare il grado di interf
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Per un confronto, il throughput ottenuto utilizzando un backup del file system (&quot;tar&quot;) per eseguire il backup degli stessi file di archivio. Le prestazioni del tar sono paragonabili, ma leggermente superiori al backup con ritardo impostato a zero. L&#39;impostazione di un ritardo minimo riduce notevolmente il throughput di backup e il ritardo predefinito di 10 ms riduce notevolmente il throughput. In situazioni in cui i backup possono essere pianificati quando l&#39;utilizzo complessivo dell&#39;applicazione è basso o l&#39;applicazione può essere inattiva, ridurre il ritardo al di sotto del valore predefinito per consentire al backup di procedere più rapidamente.
+Per un confronto, il throughput ottenuto utilizzando un backup del file system (&quot;tar&quot;) per eseguire il backup degli stessi file di archivio. Le prestazioni del tar sono paragonabili, ma leggermente superiori al backup con ritardo impostato a zero. L&#39;impostazione di un ritardo minimo riduce notevolmente il throughput di backup e il ritardo predefinito di 10 millisecondi riduce notevolmente il throughput. In situazioni in cui i backup possono essere pianificati quando l&#39;utilizzo complessivo dell&#39;applicazione è basso o l&#39;applicazione può essere inattiva, ridurre il ritardo al di sotto del valore predefinito per consentire al backup di procedere più rapidamente.
 
 L&#39;impatto effettivo del throughput dell&#39;applicazione di un backup continuo dipende dai dettagli dell&#39;applicazione e dell&#39;infrastruttura. La scelta del valore di ritardo dovrebbe essere effettuata mediante analisi empirica dell&#39;applicazione, ma dovrebbe essere scelta il più piccolo possibile, in modo che i backup possano essere completati il più rapidamente possibile. Poiché esiste solo una correlazione debole tra la scelta del valore di ritardo e l&#39;impatto sul throughput dell&#39;applicazione, la scelta del ritardo dovrebbe favorire tempi di backup globali più brevi per ridurre al minimo l&#39;impatto complessivo dei backup. Un backup che richiede otto ore per essere completato, ma influisce sul throughput del -20% è probabile che abbia un impatto complessivo maggiore di uno che richiede due ore per essere completato, ma influisce sul throughput del -30%.
 

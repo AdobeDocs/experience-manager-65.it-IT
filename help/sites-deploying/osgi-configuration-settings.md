@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 * Per lo sviluppo JS (in particolare quando si esegue il firebugging/debug):
 
    * disable **Miniatura**
-   * abilita **Debug** per separare i file per il debug e utilizzarli con firebug.
+   * abilita **Debug** per separare i file per il debug e utilizzarli con un bug di attivazione.
    * abilita **Tempi** se interessato ai tempi.
    * abilita **Debug** per visualizzare i messaggi di log della console JS.
 
@@ -381,7 +381,7 @@ Indica il formato in cui viene fornito l&#39;ID utente. Utilizzare:
 
 **Configuratore Day CQ WCM Link Checker** Configura:
 
-* **Elenco delle configurazioni di riscrittura** per specificare un elenco di posizioni per le configurazioni del linkchecker basato su contenuti. Le configurazioni possono essere basate sulla modalità di esecuzione. Questo fatto è importante per distinguere tra ambienti di authoring e di pubblicazione, in quanto le impostazioni del linkchecker possono variare.
+* **Elenco delle configurazioni di riscrittura** per specificare un elenco di posizioni per le configurazioni del link checker basato su contenuti. Le configurazioni possono essere basate sulla modalità di esecuzione. Questo fatto è importante per distinguere tra ambienti di authoring e di pubblicazione, in quanto le impostazioni di controllo dei collegamenti possono variare.
 
 **Day CQ WCM Page Manager Factory** Configura:
 
@@ -443,7 +443,7 @@ Una configurazione di fabbrica, in modo che possano essere configurate più ista
 **Rewriter CDN** La comunicazione tra AEM e una rete CDN deve essere assicurata in modo che le risorse/i file binari siano consegnati all’utente finale in modo sicuro. Questo processo comporta le due attività seguenti:
 
 * Accedere alla risorsa da AEM tramite la rete CDN la prima volta (o dopo la sua scadenza nella cache).
-* Accedere alla risorsa memorizzata nella cache CDN in modo sicuro perché dopo la memorizzazione nella cache della risorsa in CDN, la richiesta non va in AEM e tutti gli utenti che hanno accesso a tale risorsa in devono essere serviti da CDN.
+* Accedere alla risorsa memorizzata nella cache CDN in modo sicuro. Una volta che la risorsa è memorizzata nella cache in CDN, la richiesta non va in AEM e tutti gli utenti che hanno accesso a tale risorsa in devono essere serviti da CDN.
 
 AEM fornisce un rewriter per riscrivere gli URL delle risorse interne in URL CDN esterni. Riscrive i collegamenti da trasmettere alla rete CDN, inclusa una firma JWS, e scade il tempo necessario per consentire l’accesso sicuro alla risorsa. Questa funzione deve essere utilizzata nelle istanze di authoring.
 

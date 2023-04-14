@@ -1,8 +1,6 @@
 ---
 title: Come sviluppare progetti AEM utilizzando IntelliJ IDEA
-seo-title: How to Develop AEM Projects using IntelliJ IDEA
 description: Utilizzo di IntelliJ IDEA per sviluppare progetti AEM
-seo-description: Using IntelliJ IDEA to develop AEM projects
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 Per iniziare a utilizzare AEM sviluppo su IntelliJ, sono necessari i seguenti passaggi.
 
-Ognuno di essi viene spiegato più dettagliatamente nel resto del presente How-To.
+Ogni passaggio è spiegato più dettagliatamente nel resto di questo argomento.
 
 * Installa IntelliJ
 * Imposta il progetto AEM in base a Maven
@@ -36,7 +34,7 @@ Ognuno di essi viene spiegato più dettagliatamente nel resto del presente How-T
 
 ### Installa IntelliJ IDEA {#install-intellij-idea}
 
-Scarica IntelliJ IDEA da [la pagina Download su JetBrains](https://www.jetbrains.com/idea/download/index.html).
+Scarica IntelliJ IDEA da [la pagina Download su JetBrains](https://www.jetbrains.com/idea/download/).
 
 Quindi, segui le istruzioni di installazione su quella pagina.
 
@@ -48,7 +46,7 @@ Per iniziare a lavorare con progetti AEM in IntelliJ IDEA, la configurazione di 
 
 ### Preparare il supporto JSP per IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
-IntelliJ IDEA può anche fornire supporto per lavorare con JSP, ad esempio
+IntelliJ IDEA può anche fornire supporto nell&#39;utilizzo di JSP, ad esempio:
 
 * completamento automatico delle librerie di tag
 * conoscenza degli oggetti definiti `<cq:defineObjects />` e `<sling:defineObjects />`
@@ -86,12 +84,12 @@ I seguenti passaggi sono necessari per il debug di JSP con IntelliJ IDEA
 
 #### Configurare un facet Web nel progetto {#set-up-a-web-facet-in-the-project}
 
-IntelliJ IDEA deve capire dove trovare i JSP per il debug. Poiché IDEA non è in grado di interpretare il `content-package-maven-plugin` impostazioni, deve essere configurato manualmente.
+IntelliJ IDEA deve capire dove trovare i JSP per il debug. Poiché IDEA non è in grado di interpretare il `content-package-maven-plugin` deve essere configurato manualmente.
 
 1. Vai a **File -> Struttura del progetto**
 1. Seleziona la **Contenuto** modulo
 1. Fai clic su **+** sopra l’elenco dei moduli e seleziona **Web**
-1. Come directory delle risorse Web, selezionare il `content/src/main/content/jcr_root subdirectory` del progetto come mostrato nella schermata sottostante.
+1. Come directory delle risorse Web, selezionare il `content/src/main/content/jcr_root subdirectory` del progetto, come illustrato nella schermata seguente.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
@@ -120,7 +118,7 @@ IntelliJ IDEA deve capire dove trovare i JSP per il debug. Poiché IDEA non è i
 
 L&#39;ultimo passo necessario è quello di iniziare AEM con le opzioni JVM proposte da IntelliJ IDEA.
 
-Per farlo, avvia direttamente il file jar AEM e aggiungi queste opzioni, ad esempio con la seguente riga di comando:
+Avvia direttamente il file jar AEM e aggiungi queste opzioni, ad esempio con la seguente riga di comando:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -151,4 +149,4 @@ Ora tutti gli utenti sono configurati per eseguire il debug dei JSP in AEM.
 
 ### Debug dei bundle con IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-È possibile eseguire il debug del codice nei bundle utilizzando una connessione di debug remota standard generica. Puoi seguire la [Documentazione JetBrain sul debug remoto](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).
+È possibile eseguire il debug del codice nei bundle utilizzando una connessione di debug remota standard generica. Puoi seguire la [Documentazione JetBrain sul debug remoto](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).
