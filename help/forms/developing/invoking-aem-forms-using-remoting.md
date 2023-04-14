@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '4628'
+source-wordcount: '4599'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Quando si richiama questo processo, vengono eseguite le azioni seguenti:
 
 [Creazione di applicazioni di Flash Builder che eseguono l&#39;autenticazione SSO utilizzando i token HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Per informazioni su come visualizzare i dati del processo in un controllo grafico Flex, vedi [Visualizzazione dei dati del processo AEM Forms nei grafici Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+<!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 >[!NOTE]
 >
@@ -98,9 +98,9 @@ Per richiamare programmaticamente i processi AEM Forms utilizzando Remoting, agg
 
 ## Gestione dei documenti con la rimozione {#handling-documents-with-remoting}
 
-Uno dei tipi Java non primitivi più importanti utilizzati in AEM Forms è il `com.adobe.idp.Document` classe. Un documento viene comunemente richiesto per richiamare un’operazione AEM Forms. Si tratta principalmente di un documento PDF, ma può contenere altri tipi di documenti, ad esempio SWF, HTML, XML o un file DOC. (Vedi [Trasmissione di dati ai servizi AEM Forms tramite l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+Uno dei tipi Java™ non primitivi più importanti utilizzati in AEM Forms è il `com.adobe.idp.Document` classe. Un documento viene comunemente richiesto per richiamare un’operazione AEM Forms. Si tratta principalmente di un documento PDF, ma può contenere altri tipi di documenti, ad esempio SWF, HTML, XML o un file DOC. (Vedi [Trasmissione di dati ai servizi AEM Forms tramite l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Un&#39;applicazione client creata con Flex non può richiedere direttamente un documento. Ad esempio, non puoi avviare Adobe Reader per richiedere un URL che produca un file PDF. Le richieste per tipi di documenti, ad esempio documenti PDF e Microsoft Word, restituiscono un risultato che è un URL. È responsabilità del cliente mostrare il contenuto dell’URL. Il servizio Gestione documenti consente di generare l’URL e le informazioni sul tipo di contenuto. Le richieste di documenti XML restituiscono il documento XML completo nel risultato.
+Un&#39;applicazione client creata con Flex non può richiedere direttamente un documento. Ad esempio, non puoi avviare Adobe Reader per richiedere un URL che produca un file PDF. Le richieste per tipi di documenti, ad esempio documenti PDF e Microsoft® Word, restituiscono un risultato che è un URL. È responsabilità del cliente mostrare il contenuto dell’URL. Il servizio Gestione documenti consente di generare l’URL e le informazioni sul tipo di contenuto. Le richieste di documenti XML restituiscono il documento XML completo nel risultato.
 
 ### Passaggio di un documento come parametro di input {#passing-a-document-as-an-input-parameter}
 
@@ -114,7 +114,7 @@ Un&#39;applicazione client creata con Flex non può passare un documento diretta
  docRef.fileRef = "C:/install/adobe/cs2/How to Uninstall.pdf"; ...
 ```
 
-* Quando il documento si trova sul server e si conosce il relativo URL, impostare la proprietà referenceType dell&#39;oggetto DocumentReference su REF_TYPE_URL. Imposta la proprietà url sull’URL, come illustrato nell’esempio seguente:
+* Quando il documento è sul server e si conosce il relativo URL, impostare la proprietà referenceType dell&#39;oggetto DocumentReference su REF_TYPE_URL. Imposta la proprietà url sull’URL, come illustrato nell’esempio seguente:
 
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
@@ -127,7 +127,7 @@ docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
 docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
-docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
+docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
 * Se il documento non è sul server, utilizza il servlet di caricamento Remoting per caricare un documento in AEM Forms. La novità di AEM Forms è la possibilità di caricare documenti protetti. Quando si carica un documento protetto, è necessario utilizzare un utente che ha *Utente applicazione di caricamento documenti* ruolo. Senza questo ruolo, l&#39;utente non può caricare un documento protetto. È consigliabile utilizzare il single sign on per caricare un documento protetto. (Vedi [Trasferimento di documenti protetti per richiamare i processi utilizzando Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
@@ -173,7 +173,7 @@ Per passare un file PDF al servizio di caricamento Remoting, è necessario utili
 
 ### Restituzione di un documento a un&#39;applicazione client {#passing-a-document-back-to-a-client-application}
 
-Un&#39;applicazione client riceve un oggetto di tipo `mx.rpc.livecycle.DocumentReference` per un&#39;operazione di servizio che restituisce un `com.adobe.idp.Document` istanza come parametro di output. Poiché un’applicazione client si occupa di oggetti ActionScript e non di Java, non è possibile restituire un oggetto Document basato su Java a un client Flex. Invece, il server genera un URL per il documento e lo trasmette nuovamente al client. La `DocumentReference` dell’oggetto `referenceType` specifica se il contenuto si trova nel `DocumentReference` o deve essere recuperato da un URL nel `DocumentReference.url` proprietà. La `DocumentReference.contentType` specifica il tipo di documento.
+Un&#39;applicazione client riceve un oggetto di tipo `mx.rpc.livecycle.DocumentReference` per un&#39;operazione di servizio che restituisce un `com.adobe.idp.Document` istanza come parametro di output. Poiché un’applicazione client si occupa di oggetti ActionScript e non di Java, non è possibile restituire un oggetto Document basato su Java a un client Flex. Invece, il server genera un URL per il documento e lo trasmette nuovamente al client. La `DocumentReference` dell&#39;oggetto `referenceType` specifica se il contenuto si trova nel `DocumentReference` o deve essere recuperato da un URL nel `DocumentReference.url` proprietà. La `DocumentReference.contentType` specifica il tipo di documento.
 
 **Consulta anche**
 
@@ -233,7 +233,7 @@ Un’applicazione client può richiamare AEM Forms specificando un canale in MXM
      ...
 ```
 
-Assegna `ChannelSet` l&#39;istanza `mx:RemoteObject` dell’istanza `channelSet` (come mostrato nell’esempio di codice precedente). In genere, si importa la classe di canale in un&#39;istruzione di importazione anziché specificare il nome completo quando si richiama il `ChannelSet.addChannel` metodo .
+Assegna `ChannelSet` l&#39;istanza `mx:RemoteObject` dell&#39;istanza `channelSet` (come mostrato nell’esempio di codice precedente). In genere, si importa la classe di canale in un&#39;istruzione di importazione anziché specificare il nome completo quando si richiama il `ChannelSet.addChannel` metodo .
 
 **Trasferimento dei valori di ingresso**
 
@@ -286,9 +286,9 @@ I parametri di output del processo AEM Forms vengono deserializzati in oggetti A
 
 1. Crea un `mx:RemoteObject` tramite ActionScript o MXML. Consulta Creazione di un&#39;istanza mx:RemoteObject .
 1. Imposta un `ChannelSet` istanza per comunicare con AEM Forms e associarla al `mx:RemoteObject` istanza. Consulta Creare un canale su AEM Forms .
-1. Chiamare il `login` metodo o del servizio `setCredentials` per specificare il valore dell&#39;identificatore utente e la password. (Vedi [Utilizzo del single sign-on](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Chiama il ChannelSet `login` del servizio `setCredentials` per specificare il valore dell&#39;identificatore utente e la password. (Vedi [Utilizzo del single sign-on](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Popolare un `mx.rpc.livecycle.DocumentReference` istanza con un documento PDF non protetto da passare a `MyApplication/EncryptDocument` processo. (Vedi [Passaggio di un documento come parametro di input](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Cifrare il documento PDF chiamando il `mx:RemoteObject` dell’istanza `invoke` metodo . Passa la `Object` che contiene il parametro di input (che è il documento PDF non protetto). Vedere Trasmissione dei valori di input.
+1. Cifrare il documento PDF chiamando il `mx:RemoteObject` dell&#39;istanza `invoke` metodo . Passa la `Object` che contiene il parametro di input (che è il documento PDF non protetto). Vedere Trasmissione dei valori di input.
 1. Recupera il documento PDF crittografato con password restituito dal processo. Consulta Gestione dei valori restituiti.
 
 [Avvio rapido: Richiamare un processo di breve durata passando un documento non sicuro utilizzando (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -732,7 +732,7 @@ se AEM Forms è configurato per consentire solo il caricamento di documenti sicu
       // Called once the file is completely uploaded.
       private function completeHandler(event:DataEvent):void {
  
-        // Set the docRef’s url and referenceType parameters
+        // Set the docRef's url and referenceType parameters
         docRef.url = event.data as String;
         docRef.referenceType=DocumentReference.REF_TYPE_URL;
         executeInvokeProcess();
@@ -977,7 +977,7 @@ La classe Customer ActionScript appartiene a un pacchetto denominato cliente. È
 
 ### Avvio rapido: Richiamo del servizio personalizzato Cliente tramite Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-Nell&#39;esempio di codice seguente viene richiamato il servizio clienti e viene creato un nuovo cliente. Quando esegui questo esempio di codice, assicurati di compilare tutte le caselle di testo. Inoltre, assicurati di creare il file Customer.as associato a `com.adobe.livecycle.sample.customer.Customer`.
+Nell&#39;esempio di codice seguente viene richiamato il servizio clienti e viene creato un cliente. Quando esegui questo esempio di codice, assicurati di compilare tutte le caselle di testo. Inoltre, assicurati di creare il file Customer.as associato a `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 Prima di eseguire questo avvio rapido, è necessario creare e distribuire il componente personalizzato Banca.

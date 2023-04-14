@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Per informazioni sulla sicurezza dei sistemi operativi supportati da AEM Forms s
   </tr>
   <tr>
    <td>Oracle Linux® 7 Aggiornamento 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guida alla sicurezza per la versione 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guida alla sicurezza per la versione 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -212,7 +212,7 @@ JBoss® Application Server utilizza 8080 come porta HTTP predefinita. JBoss® di
 
 1. Apri il file seguente per la modifica:
 
-   Installazione di un singolo server: [Radice JBoss®]/standalone/configuration/standalone.xml
+   Installazione a server singolo: [Radice JBoss®]/standalone/configuration/standalone.xml
 
    Installazioni cluster: [Radice JBoss®]/domain/configuration/domain.xml
 
@@ -245,8 +245,8 @@ Lc_[database]Il file .xml non deve contenere password in formato testo libero. C
 >
 >Il programma di installazione chiavi in mano di AEM Forms su JEE JBoss® crittografa la password del database.
 
-Per impostazione predefinita, IBM® WebSphere® Application Server e Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, conferma con la documentazione del server dell&#39;applicazione per assicurarti che ciò si verifichi.
+Per impostazione predefinita, IBM® WebSphere® Application Server e Oracle WebLogic Server possono crittografare le password delle origini dati. Tuttavia, è necessario confermare con la documentazione del server dell&#39;applicazione per assicurarsi che ciò si verifichi.
 
 ### Protezione della chiave privata archiviata nell&#39;archivio fonti attendibili {#protecting-the-private-key-stored-in-trust-store}
 
-Le chiavi private o le credenziali importate in Trust Store sono memorizzate in AEM Forms nel database JEE. Prendere le dovute precauzioni per proteggere il database e limitare l&#39;accesso solo agli amministratori designati.
+Le chiavi private o le credenziali importate in Trust Store sono memorizzate in AEM Forms nel database JEE. Per proteggere il database e limitare l&#39;accesso solo agli amministratori designati, prendere le dovute precauzioni.

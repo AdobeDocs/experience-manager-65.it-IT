@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '3867'
+source-wordcount: '3855'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Seleziona la lettera da visualizzare in anteprima seguendo la procedura seguente
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul passaggio tra la modalità di rendering di HTML o PDF nell’anteprima delle lettere, consulta [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto PDF in Gestione e AEM Corrispondenza, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms a HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Per ulteriori informazioni sul passaggio tra la modalità di rendering di HTML o PDF nell’anteprima delle lettere, consulta [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto PDF in Gestione e AEM Corrispondenza, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Immettere i dati {#enterdata}
 
@@ -379,7 +379,7 @@ Per ulteriori informazioni sul supporto degli script nei moduli di HTML5, consul
 
 Per impostazione predefinita, l’interfaccia utente Crea corrispondenza utilizza i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L’anteprima dei moduli mobili non presenta problemi di rendering in alcun browser, in quanto utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. È possibile modificare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell’anteprima interattiva PDF della lettera.
 
-Per ulteriori informazioni sulla compatibilità del browser con l’anteprima delle lettere, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Per ulteriori informazioni sulla compatibilità del browser con l’anteprima delle lettere, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Per modificare la modalità di anteprima della lettera, completa i seguenti passaggi:
 

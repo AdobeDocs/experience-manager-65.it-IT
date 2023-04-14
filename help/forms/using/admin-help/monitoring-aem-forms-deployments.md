@@ -10,25 +10,25 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
 # Monitoraggio delle distribuzioni di moduli AEM {#monitoring-aem-forms-deployments}
 
-È possibile monitorare AEM distribuzioni dei moduli sia a livello di sistema che a livello interno. È possibile utilizzare strumenti di gestione specializzati come HP OpenView, IBM Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare in modo specifico l’attività Java. L’implementazione di una strategia di monitoraggio migliora la disponibilità, l’affidabilità e le prestazioni delle distribuzioni di moduli AEM.
+È possibile monitorare AEM distribuzioni dei moduli sia a livello di sistema che a livello interno. È possibile utilizzare strumenti di gestione specializzati come HP OpenView, IBM® Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare in modo specifico l&#39;attività Java™. L’implementazione di una strategia di monitoraggio migliora la disponibilità, l’affidabilità e le prestazioni delle distribuzioni di moduli AEM.
 
-Per ulteriori informazioni sul monitoraggio delle distribuzioni di moduli AEM, vedere [Guida tecnica per il monitoraggio delle distribuzioni di moduli AEM](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+<!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 ## Monitoraggio tramite MBeans {#monitoring-using-mbeans}
 
-AEM forms fornisce due MBeans registrati che forniscono informazioni statistiche e di navigazione. Sono gli unici MBeans supportati per l’integrazione e l’ispezione:
+AEM Forms fornisce due MBeans registrati che forniscono informazioni statistiche e di navigazione. Queste parti sono gli unici MBeans supportati per l’integrazione e l’ispezione:
 
 * **ServiceStatistic:** Questo MBean fornisce informazioni sul nome del servizio e la relativa versione.
-* **OperationStatistic:** Questo MBean fornisce le statistiche di ogni servizio del server dei moduli. Qui gli amministratori possono ottenere informazioni su un particolare servizio come il tempo di chiamata, il numero di errori e così via.
+* **OperationStatistic:** Questo MBean fornisce le statistiche di ogni servizio del server AEM Forms. Questo MBean è il luogo in cui gli amministratori possono ottenere informazioni su un particolare servizio come il tempo di chiamata e il numero di errori.
 
 ### Interfacce pubbliche ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
@@ -84,7 +84,7 @@ Utilizzando una console JMX (JConsole), sono disponibili le statistiche di Opera
 
 **Statistiche operative**
 
-**Ora dell&#39;intervento:** Tempo impiegato per l&#39;esecuzione del metodo. Ciò non include il momento in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
+**Ora dell&#39;intervento:** Tempo impiegato per l&#39;esecuzione del metodo. Questa chiamata non include il momento in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
 
 **Conteggio delle vocazioni:** Il numero di volte in cui viene richiamato il servizio.
 
@@ -106,7 +106,7 @@ Per abilitare il monitoraggio JMX, i server applicativi in genere necessitano di
 
 ### Esempi di come configurare l&#39;accesso JMX aperto {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss 4.0.3/4.2.0 - configurare l&#39;avvio JVM**
+**JBoss® 4.0.3/4.2.0 - configurare l&#39;avvio JVM**
 
 Per visualizzare MBeans da JConsole, configura i parametri di avvio JVM dell&#39;application server JBoss. Assicurati che JBoss sia avviato dal file run.bat/sh.
 
@@ -137,9 +137,9 @@ Per visualizzare MBeans da JConsole, configura i parametri di avvio JVM dell&#39
 1. Avvia JConsole per la nuova connessione e fai clic sulla scheda remota.
 1. Immetti il nome host e la porta (9088, il numero specificato durante le opzioni di avvio di JVM).
 
-**Websphere 6.1: configurare l&#39;avvio JVM**
+**WebSphere® 6.1 - configurare l&#39;avvio JVM**
 
-1. In Admin Console (Application server > server1 > Process Definition > JVM), aggiungi la seguente riga nel campo Generic JVM Argument:
+1. Nell’Admin Console (Application Server > server1 > Process Definition > JVM), aggiungi la seguente riga nel campo Generic JVM Argument:
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
