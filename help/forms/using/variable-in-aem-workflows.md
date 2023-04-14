@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 0%
@@ -29,6 +29,8 @@ Nei modelli AEM flusso di lavoro puoi:
 
 Il video seguente illustra come creare, impostare e utilizzare le variabili nei modelli di flusso di lavoro AEM:
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
 Le variabili sono un&#39;estensione dell&#39;esistente [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interfaccia. È possibile utilizzare [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript per accedere ai metadati salvati utilizzando le variabili.
@@ -44,7 +46,7 @@ Puoi creare le variabili utilizzando la sezione Variabili disponibile nella barr
 >
 >I flussi di lavoro supportano solo il formato ISO8601 per le variabili di tipo Data.
 
-Richiedi [Pacchetto aggiuntivo di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i tipi di dati Document e Form Data Model.  Utilizzare il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, creare una variabile ArrayList e selezionare Stringa come sottotipo per memorizzare più valori stringa utilizzando la variabile .
+Richiedi [Pacchetto aggiuntivo di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per i tipi di dati Document e Form Data Model.  Utilizzare il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, creare una variabile ArrayList e selezionare Stringa come sottotipo per memorizzare più valori stringa utilizzando la variabile .
 
 Esegui i seguenti passaggi per creare una variabile:
 
@@ -115,6 +117,8 @@ Utilizza un&#39;espressione per calcolare la somma delle variabili e memorizzare
 
 In questo esempio, utilizza l’editor di espressioni per definire un’espressione per calcolare la somma di **assetscost** e **saldo** e memorizza il risultato in **total value** variabile.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilizza editor di espressioni {#use-expression-editor}
@@ -162,6 +166,8 @@ Puoi utilizzare le variabili per definire l’espressione di indirizzamento util
 
 In questo esempio, prima di definire l&#39;espressione di indirizzamento, utilizza [esempio 2](../../forms/using/variable-in-aem-workflows.md#example2) per impostare il valore per **total value** variabile. La diramazione 1 è attiva se il valore della **total value** è maggiore di 50000. Allo stesso modo, è possibile definire una regola per rendere attivo il ramo 2 se il valore del **total value** è inferiore a 50000.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Analogamente, selezionare un percorso di script esterno o specificare lo script ECMA per le espressioni di routing per valutare il ramo attivo. Tocca **[!UICONTROL Rinomina ramo]** per specificare un nome alternativo per il ramo.
@@ -184,7 +190,7 @@ Per ulteriori esempi sull’utilizzo della definizione della regola nel passaggi
 
 #### Passaggi del flusso di lavoro incentrati sul flusso di lavoro Forms {#forms-workflow-centric-workflow-steps}
 
-Tutti i passaggi del flusso di lavoro di AEM Forms supportano le variabili. Per ulteriori informazioni, consulta [Flusso di lavoro incentrato su Forms su OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
+Tutti i passaggi del flusso di lavoro AEM Forms supportano le variabili. Per ulteriori informazioni, consulta [Flusso di lavoro incentrato su Forms su OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
 ### Passaggi del flusso di lavoro senza supporto per le variabili {#workflow-steps-without-support-for-variables}
 
@@ -202,7 +208,7 @@ Utilizza le seguenti API nello script ECMA per recuperare i valori per le variab
 | Modello dati modulo | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Richiedi [Pacchetto aggiuntivo di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i tipi di dati variabili del modello dati documento e modulo.
+Richiedi [Pacchetto aggiuntivo di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per i tipi di dati variabili del modello dati documento e modulo.
 
 **Esempio**
 
@@ -271,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Archiviare dati utente sensibili al di fuori di JCR utilizzando variabili di flusso di lavoro {#jcr-independent-persistance}
 
-I dati elaborati utilizzando il flusso di lavoro dei moduli possono contenere dati utente sensibili, ad esempio informazioni personali identificabili e informazioni personali riservate. Le aziende possono scegliere di archiviare i dati, elaborati da vari passaggi del flusso di lavoro (e trasmessi utilizzando variabili di flusso di lavoro), dall’archiviazione JCR in un archivio dati esterno di loro proprietà e gestito. Per ulteriori informazioni sulla persistenza dei dati del flusso di lavoro in uno storage esterno, consulta [Utilizzo delle variabili di flusso di lavoro per i datastore di proprietà del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+I dati elaborati utilizzando il Forms Workflow possono contenere dati utente sensibili, ad esempio informazioni personali identificabili e informazioni personali riservate. Le aziende possono scegliere di archiviare i dati, elaborati da vari passaggi del flusso di lavoro (e trasmessi utilizzando variabili di flusso di lavoro), dall’archiviazione JCR in un archivio dati esterno di loro proprietà e gestito. Per ulteriori informazioni sulla persistenza dei dati del flusso di lavoro in uno storage esterno, consulta [Utilizzo delle variabili di flusso di lavoro per i datastore di proprietà del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] fornisce API per i flussi di lavoro [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) per memorizzare le variabili del flusso di lavoro negli archivi BLOB di Azure esterni. Per informazioni dettagliate sull’utilizzo dell’API, consulta [Utilizza le variabili del flusso di lavoro per parametrizzare i dati sensibili e archiviarli in archivi di dati esterni](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Modificare una variabile {#edit-a-variable}
