@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3430'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 OSGi &quot;*fornisce le primitive standardizzate che consentono di creare applicazioni a partire da componenti di piccole dimensioni, riutilizzabili e collaborative. Questi componenti possono essere composti in un’applicazione e distribuiti*&quot;.
 
-Questa funzionalità consente di gestire facilmente i bundle in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi (vedi la [Specifiche OSGi](https://www.osgi.org/Specifications/HomePage)) è contenuta in uno dei vari bundle. Quando lavori con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali bundle; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e procedure consigliate.
+Questa funzionalità consente di gestire facilmente i bundle in quanto possono essere arrestati, installati, avviati individualmente. Le interdipendenze vengono gestite automaticamente. Ogni componente OSGi (vedi la [Specifiche OSGi](https://docs.osgi.org/specification/)) è contenuta in uno dei vari bundle. Quando lavori con AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali bundle; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e procedure consigliate.
 
 Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) sono rilevanti per l&#39;implementazione del progetto. Non tutte le impostazioni elencate devono essere regolate, alcune sono menzionate per aiutarti a capire come funziona AEM.
 

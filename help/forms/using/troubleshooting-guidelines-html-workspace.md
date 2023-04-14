@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Dopo aver installato la patch, apri l’area di lavoro AEM Forms. Se incontri l&
 
 Durante l&#39;installazione del pacchetto, in caso di errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, esegui le seguenti operazioni:
 
-1. Accedi a CRX DE lite. L’URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Accedi a CRXDE Lite. L’URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimina il seguente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -155,9 +155,9 @@ Nell’area di lavoro di AEM Forms:
 
 È possibile eseguire il debug di script e stili in diversi browser.
 
-* **Debug in IE**: Per eseguire il debug dell&#39;area di lavoro AEM Forms in IE, vedi: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Debug in IE**: Per eseguire il debug dell&#39;area di lavoro AEM Forms in IE, vedi: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Debug in Chrome**: Per aprire debugger in Chrome, utilizza il collegamento: Ctrl+Maiusc+I. Per ulteriori informazioni, consulta: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debug in Chrome**: Per aprire debugger in Chrome, utilizza il collegamento: Ctrl+Maiusc+I. Per ulteriori informazioni, consulta: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Debug in Firefox**: Diversi componenti aggiuntivi sono disponibili per eseguire il debug di script e stili in Firefox. Ad esempio, Firebug è una di tali utility di debug ([https://getfirebug.com](https://getfirebug.com)).
 
