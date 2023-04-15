@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Questo documento fornisce istruzioni per l’installazione e la configurazione d
 
 ## Chi dovrebbe leggere questo documento? {#who-should-read-this-doc}
 
-Questo documento è destinato agli amministratori o agli sviluppatori responsabili dell’installazione, della configurazione, dell’amministrazione o della distribuzione di Workbench. Sono incluse anche le informazioni necessarie per configurare il sistema per supportare i processi AEM Forms aggiornati. Le informazioni fornite si basano sul presupposto che chiunque legga questo documento abbia familiarità con il sistema operativo Microsoft® Windows®.
+Questo documento è destinato agli amministratori o agli sviluppatori responsabili dell’installazione, della configurazione, dell’amministrazione o della distribuzione di Workbench. Sono incluse anche le informazioni per configurare il sistema per supportare i processi AEM Forms aggiornati. Le informazioni fornite si basano sul presupposto che chiunque legga questo documento abbia familiarità con il sistema operativo Microsoft® Windows®.
 
 ## Informazioni aggiuntive {#additional-information}
 
@@ -36,11 +36,11 @@ Le risorse presenti in questa tabella sono utili per ulteriori informazioni e pe
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
@@ -51,7 +51,7 @@ Le risorse presenti in questa tabella sono utili per ulteriori informazioni e pe
 
 >[!NOTE]
 >
->L’area di lavoro Flex è obsoleta per AEM Forms. È disponibile per la versione AEM Forms.
+>Flex Workspace è obsoleto per AEM Forms. È disponibile per la versione AEM Forms.
 
 ## Prima dell’installazione {#before-you-install}
 
@@ -65,7 +65,7 @@ La figura seguente illustra l’installazione di Workbench, che include:
 
 >[!NOTE]
 >
->Il server AEM Forms richiede un programma di installazione separato. Per ulteriori informazioni consulta la documentazione di installazione di AEM Forms su JEE .
+>AEM Forms Server richiede un programma di installazione separato. Per ulteriori informazioni, consulta la documentazione di installazione di AEM Forms su JEE.
 
 ![modulo di rendering predefinito](assets/installing-workbench.png)
 
@@ -85,7 +85,7 @@ Si raccomandano come minimo i seguenti requisiti: Spazio su disco per l&#39;inst
 >
 >Se tutte queste posizioni risiedono su un&#39;unica unità, durante l&#39;installazione deve essere disponibile uno spazio di 1,5 GB. I file copiati nelle directory temporanee vengono eliminati al termine dell&#39;installazione.
 
-* Requisiti hardware: Processore Intel® Pentium® 4 o AMD equivalente, 1 GHz.
+* Requisiti hardware: Processore Intel® Pentium® 4 o AMD® equivalente a 1 GHz.
 * Java™ Runtime Environment (JRE) 7.0 aggiorna 51 o versione successiva alla versione 7.0.
 * Risoluzione minima del monitor di 1024 X 768 pixel o superiore con colore a 16 bit o superiore.
 * Connessione di rete TCP/IPv4 o TCP/IPv6 al server AEM Forms.
@@ -94,16 +94,16 @@ Si raccomandano come minimo i seguenti requisiti: Spazio su disco per l&#39;inst
 
 >[!NOTE]
 >
->Per installare Workbench è necessario disporre dei privilegi di amministratore. Se stai effettuando l’installazione utilizzando un account non amministratore, il programma di installazione ti chiederà le credenziali per un account appropriato.
+>Per installare Workbench è necessario disporre dei privilegi di amministratore. Se si sta installando utilizzando un account non amministratore, il programma di installazione richiede le credenziali per un account appropriato.
 
 ### Piattaforme supportate {#supported-platforms}
 
-Vedi l’elenco completo delle piattaforme supportate per Workbench all’indirizzo [Piattaforme supportate da AEM Forms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Vedi l’elenco completo delle piattaforme supportate per Workbench all’indirizzo [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
-Per impostazione predefinita, l’installazione di Workbench include una versione di Designer in lingua inglese corrispondente. Se l&#39;applicazione di installazione di Workbench rileva una versione esistente di Designer sul computer in uso, l&#39;installazione potrebbe terminare e sarà necessario rimuovere la versione corrente di Designer prima di continuare.
-Nella tabella seguente è riportato un elenco completo dei possibili scenari di installazione di Designer che è possibile incontrare, nonché delle azioni da intraprendere durante l’installazione di Workbench.
+Per impostazione predefinita, l’installazione di Workbench include una versione di Designer in lingua inglese corrispondente. Se l&#39;applicazione di installazione di Workbench rileva una versione esistente di Designer sul computer in uso, è possibile che l&#39;installazione venga interrotta e che prima di continuare è necessario rimuovere la versione corrente di Designer.
+Nella tabella seguente è riportato un elenco completo dei possibili scenari di installazione di Designer che è possibile incontrare e delle azioni da intraprendere durante l’installazione di Workbench.
 
 <table>
  <tbody>
@@ -151,21 +151,19 @@ Prima di installare Workbench, è necessario assicurarsi che l’ambiente includ
 
    >[!NOTE]
    >
-   >Se si verifica un errore &quot;Impossibile creare la macchina virtuale Java&quot;, creare una variabile di ambiente denominata _JAVA_OPTIONS con valore -Xmx512M ed eseguire il programma di installazione.
+   >Se si verifica un errore &quot;Impossibile creare la macchina virtuale Java™&quot;, creare una variabile di ambiente denominata _JAVA_OPTIONS con valore -Xmx512M ed eseguire il programma di installazione.
 
 1. Nella schermata Introduzione fare clic su Avanti.
 1. Leggere il Contratto di licenza del prodotto, selezionare Accetto i termini del Contratto di licenza, quindi fare clic su Avanti.
 1. (Facoltativo) Selezionare Installa Adobe Designer se è necessario questo strumento per creare e modificare i moduli.
 
    >[!NOTE]
-   >
-   >Per continuare a utilizzare Designer installato con Acrobat 10, lasciare deselezionata questa opzione.
+   Per continuare a utilizzare Designer installato con Acrobat 10, lasciare deselezionata questa opzione.
 
-1. Accettare la directory predefinita come elencata oppure fare clic su Scegli e passare alla directory in cui si installerà Workbench, quindi fare clic su Avanti.
+1. Accettare la directory predefinita come elencata oppure fare clic su Scegli e passare alla directory in cui si desidera installare Workbench, quindi fare clic su Avanti.
 
    >[!NOTE]
-   >
-   >Il percorso della directory di installazione non deve contenere caratteri # (pound) e $ (dollaro).
+   Il percorso della directory di installazione non deve contenere caratteri # (pound) e $ (dollaro).
 
 1. Rivedi il riepilogo della preinstallazione e fai clic su Installa. Il programma di installazione visualizza l&#39;avanzamento dell&#39;installazione.
 1. Rivedi il riepilogo dell&#39;installazione. Selezionare Avvia AEM Forms Workbench per avviare Workbench e fare clic su Avanti.
@@ -173,7 +171,7 @@ Prima di installare Workbench, è necessario assicurarsi che l’ambiente includ
 1. Gli elementi seguenti sono ora installati nel computer:
    * **Workbench**: Per eseguire Workbench dal menu Start, selezionare Tutti i programmi > AEM Forms > Workbench, se si sceglie di archiviare la cartella dei collegamenti. Per informazioni, consulta la sezione <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a> documentazione.
    * **Designer**: È possibile accedere a Designer direttamente da Workbench. Per informazioni, consultare l&#39;argomento Guida introduttiva in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Guida di Designer</a>.
-   * **AEM Forms SDK**: Per ulteriori informazioni sull&#39;utilizzo dell&#39;SDK, vedi <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmazione con AEM Forms</a>.
+   * **AEM Forms SDK**: Per ulteriori informazioni sull&#39;utilizzo dell&#39;SDK, vedi <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programmazione con AEM Forms</a>.
 
 ## Aggiornamento dei processi {#upgrading-processes}
 
@@ -181,11 +179,10 @@ Prima di installare Workbench, è necessario assicurarsi che l’ambiente includ
 
 ### Configurazione e accesso a un server {#configuring-and-logging-server}
 
-Per utilizzare Workbench, è necessario che sia in esecuzione un&#39;istanza di AEM Forms, in genere su un computer separato. Devi disporre di un nome utente e di una password per accedere ad AEM Forms, nonché di dettagli sulla posizione del server.
+Per utilizzare Workbench, è necessario che sia in esecuzione un&#39;istanza di AEM Forms, in genere su un computer separato. È necessario disporre di un nome utente e di una password per accedere ad AEM Forms e dei dettagli sulla posizione del server.
 
 >[!NOTE]
->
->Se AEM Forms è stato configurato per l&#39;utilizzo del provider di repository EMC Documentum o IBM FileNet e si desidera accedere a un repository diverso da quello configurato come predefinito nella console di amministrazione di AEM forms, specificare il nome utente username@Repository.
+Se AEM Forms è stato configurato per l&#39;utilizzo del provider di repository EMC Documentum® o IBM® FileNet e si desidera effettuare l&#39;accesso a un repository diverso da quello configurato come predefinito nella console di amministrazione di AEM forms, specificare il nome utente come username@Repository.
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
@@ -193,11 +190,10 @@ Per impostazione predefinita, Workbench scade dopo due ore, indipendentemente da
 
 ### Configurazione di Workbench per la connessione tramite HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Per collegare Workbench a un server AEM Forms tramite HTTPS, è necessario assicurarsi che l’autorità di certificazione (CA) che ha rilasciato la chiave pubblica sia riconosciuta attendibile da Workbench. Se il certificato non è riconosciuto come proveniente da un&#39;origine attendibile, è necessario aggiornare il file di registro che si trova in [Workbench_HOME]/workbench/jre/lib/security directory.
+Per collegare Workbench a un server AEM Forms tramite HTTPS, è necessario assicurarsi che l’autorità di certificazione (CA) che ha rilasciato la chiave pubblica sia riconosciuta attendibile da Workbench. Se il certificato non è riconosciuto come proveniente da un&#39;origine attendibile, è necessario aggiornare il file di certificato nel [Workbench_HOME]/workbench/jre/lib/security directory.
 
 >[!NOTE]
->
->[Workbench_HOME] rappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+[Workbench_HOME] rappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificato. Questo nome è in genere il nome host completo.
 
@@ -205,19 +201,18 @@ Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificat
 1. Verifica di disporre di una copia del certificato SSL (Secure Sockets Layer). Contatta l’amministratore che ha configurato il server SSL o esporta il certificato utilizzando un browser web.
 
    >[!NOTE]
-   >
-   >Per esportare il certificato, apri un browser web e accedi alla console di amministrazione, installa il certificato nel browser, quindi esporta il certificato dal browser in un percorso di archiviazione temporanea (o direttamente nel [Workbench_HOME]/workbench/jre/lib/security directory).
+   Per esportare il certificato, apri un browser web e accedi alla console di amministrazione, installa il certificato nel browser, quindi esporta il certificato dal browser in un percorso di archiviazione temporanea (o direttamente nel [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Copia il certificato nel [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Apri una finestra del prompt dei comandi e passa a [Workbench_HOME]/workbench/jre/bin, quindi digitare il comando seguente:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
 Dove:
-   * changeit è la password predefinita del keystore di cacerts.
+   * `changeit` è la password predefinita dell&#39;archivio chiavi di cacerts.
    * certname è il certificato selezionato al passaggio 1.
-   * esempio è l’alias scelto per il certificato. Questo valore può essere modificato
+   * esempio è l’alias scelto per il certificato. Questo valore può essere modificato.
 
-1. Quando viene richiesto di dichiarare attendibile il certificato, digitare Sì e premere il tasto Invio. Il keytool prosegue per importare il file dei cacerts in [Workbench_HOME]/workbench/jre/lib/security directory.
+1. Quando viene richiesto di dichiarare attendibile il certificato, digitare Sì e premere il tasto Invio. Il keytool prosegue per importare il file dei cacerts nel [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Chiudere e riavviare Workbench per applicare le modifiche.
 
@@ -238,8 +233,8 @@ Quando il generatore di moduli o l’output cerca, o aggiorna, le voci nella cac
 
 
 Il servizio Forms riceve i modelli in riferimento al nome del file o alla posizione del repository, o in base al valore come oggetto XML in memoria.
-* **Modelli trasmessi tramite riferimento**: Utilizza la directory principale del contenuto e il nome del modulo. Se in ogni richiesta che utilizza questo metodo vengono trasmessi modelli univoci con nomi di file diversi, la cache del disco crescerà all’infinito e non verrà mai riutilizzata. Per evitare questo problema, è necessario trasmettere modelli univoci con lo stesso nome file per garantire che la stessa cache venga aggiornata per tutte le richieste.
-* **Modelli passati per valore**: Utilizza i byte dei modelli passati insieme ai dati utilizzando il parametro theinDataDoc . Se vengono passati modelli univoci con UUID diversi utilizzando questo metodo, la cache del disco crescerà all’infinito e non verrà mai riutilizzata. Per evitare questo problema, l’attributo UUID deve essere rimosso da tutti i modelli per garantire che non venga creata alcuna cache per il modello. In alternativa, il passaggio dello stesso UUID non-null consente di creare gli oggetti cache, ma assicura che la stessa cache venga aggiornata con ogni richiesta.
+* **Modelli trasmessi tramite riferimento**: Utilizza la directory principale del contenuto e il nome del modulo. Se in ogni richiesta che utilizza questo metodo vengono trasmessi modelli univoci con nomi di file diversi, la cache del disco si espande all’infinito e non viene mai riutilizzata. Per evitare questo problema, è necessario trasmettere modelli univoci con lo stesso nome file per garantire che la stessa cache venga aggiornata per tutte le richieste.
+* **Modelli passati per valore**: Utilizza i byte dei modelli passati insieme ai dati utilizzando il parametro theinDataDoc . Se si passano modelli univoci con UUID diversi utilizzando questo metodo, la cache del disco cresce all’infinito e non verrà mai riutilizzata. Per evitare questo problema, l’attributo UUID deve essere rimosso da tutti i modelli per garantire che non venga creata alcuna cache per il modello. In alternativa, il passaggio dello stesso UUID non-null consente di creare gli oggetti cache, ma assicura che la stessa cache venga aggiornata con ogni richiesta.
 
 Per evitare che la cache cresca all’infinito, considera i seguenti fattori per il rendering dei modelli generati dinamicamente utilizzando le nuove API di AEM Forms, ovvero renderHTMLForm2 e renderPDFForm2.
 
@@ -251,7 +246,7 @@ Per i documenti passiving in cui l’UUID e la directory principale del contenut
 
 Per i documenti non passivati in cui il nome del file e la directory principale del contenuto fungono da chiave di cache, considera il seguente aspetto:
 * Per i modelli di input non passivati, la memorizzazione in cache dipende dalla directory principale del contenuto e dal nome del file da cui è stato generato il documento.
-La stessa cache verrà utilizzata solo per le richieste con la stessa directory principale del contenuto e lo stesso nome del file modello.
+La stessa cache viene utilizzata solo per le richieste con la stessa directory principale del contenuto e lo stesso nome del file modello.
 Le seguenti best practice garantiscono che la cache non cresca all’infinito quando i modelli generati dinamicamente vengono passati al servizio Forms:
    * Elimina l’UUID o passa lo stesso UUID in tutti i modelli generati dinamicamente.
    * Generare il documento da byte di modello o dallo stesso nome di file su disco.
