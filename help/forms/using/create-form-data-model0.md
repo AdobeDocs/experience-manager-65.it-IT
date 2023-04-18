@@ -1,8 +1,6 @@
 ---
-title: "Esercitazione: Crea modello dati modulo"
-seo-title: Create form data model for Interactive Communication
+title: "Esercitazione: Creare un modello dati modulo in AEM Forms"
 description: Creare un modello dati modulo per la comunicazione interattiva
-seo-description: Create form data model for Interactive Communication
 uuid: b56d3dac-be54-4812-b958-38a085686218
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +8,14 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2739'
 ht-degree: 0%
 
 ---
 
-# Esercitazione: Crea modello dati modulo{#tutorial-create-form-data-model}
+# Esercitazione: Creare un modello dati modulo in AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -239,7 +237,7 @@ Eseguire i seguenti passaggi per creare proprietà figlio calcolate per l&#39;og
 
    ![Regola dei costi di utilizzo](assets/usage_charges_rule_all_new.png)
 
-1. Toccate **Chiudi**. La regola viene creata nell&#39;editor di regole.
+1. Tocca **Fine**. La regola viene creata nell&#39;editor di regole.
 1. Tocca **Chiudi** per chiudere la finestra Editor regole.
 
 ### Aggiungi associazioni tra gli oggetti del modello dati {#add-associations-between-data-model-objects}
@@ -342,7 +340,7 @@ Dopo aver creato le associazioni tra il cliente e altri oggetti del modello dati
 
 1. Seleziona la casella di controllo nella parte superiore della **chiama** oggetto modello dati per selezionarlo e toccarlo **Modifica proprietà**. La **Modifica proprietà** si apre il riquadro .
 1. Disattiva la **Oggetto modello di livello superiore** per **chiama** oggetto modello dati.
-1. Toccate **Chiudi**.
+1. Tocca **Fine**.
 
    Ripeti i passaggi 8-10 per configurare le proprietà per **fatture** oggetto modello dati.
 
@@ -365,7 +363,7 @@ Dopo aver creato le associazioni tra il cliente e altri oggetti del modello dati
    * Immetti un titolo e una descrizione facoltativi.
    * Seleziona **cliente** dal **Oggetto modello di input** elenco a discesa.
 
-   * Toccate **Chiudi**.
+   * Tocca **Fine**.
    * Tocca **Salva** per salvare il modello dati del modulo.
 
    ![Aggiornare le proprietà del servizio](assets/update_service_properties_new.png)

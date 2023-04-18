@@ -1,8 +1,6 @@
 ---
-title: Aggiornamento ad AEM 6.5 Forms
-seo-title: Upgrade to AEM 6.5 Forms
+title: Aggiornamento a AEM 6.5 Forms su OSGi
 description: È possibile eseguire un aggiornamento diretto da Forms 6.1, Forms 6.2 AEM e LiveCycle ES4 SP1 a Forms 6.3.
-seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -11,10 +9,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 6%
+source-wordcount: '933'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +52,7 @@ Effettua le seguenti operazioni per eseguire l’aggiornamento da Forms 6.3 o Fo
    1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
    1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-      Puoi anche scaricare il pacchetto utilizzando il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) articolo.
+      Puoi anche scaricare il pacchetto utilizzando il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
 
       >[!NOTE]
       >

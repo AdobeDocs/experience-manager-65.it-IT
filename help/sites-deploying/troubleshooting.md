@@ -1,8 +1,6 @@
 ---
-title: Risoluzione dei problemi
-seo-title: Troubleshooting
+title: Risoluzione dei problemi di installazione di AEM
 description: Questo articolo tratta alcuni dei problemi di installazione che potresti incontrare con AEM.
-seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +8,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
 
-# Risoluzione dei problemi{#troubleshooting}
+# Risoluzione dei problemi di installazione di AEM{#troubleshooting}
 
 Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere i problemi e include anche informazioni su alcuni dei problemi che potresti incontrare con AEM.
 

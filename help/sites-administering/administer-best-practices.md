@@ -1,8 +1,6 @@
 ---
-title: Best practice
-seo-title: Best Practices
+title: Best practice per aiutare gli amministratori a iniziare a utilizzare
 description: Trova le best practice compilate dai team di ingegneria e consulenza di Adobe per aiutare gli amministratori a iniziare a utilizzare.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 17%
+source-wordcount: '531'
+ht-degree: 7%
 
 ---
 
-# Best practice  {#best-practices}
+# Best practice{#best-practices}
 
-Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficiente ed efficace possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
+Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficiente ed efficace possibile. Questo crescente elenco di argomenti include una varietà di aree in AEM.
 
-La documentazione relativa alle best practice disponibile per le aree seguenti:
+Le aree seguenti dispongono di documentazione relativa alle best practice:
 
 * [Risorse](#assets)
 * [Sites](#sites)
@@ -29,10 +27,10 @@ La documentazione relativa alle best practice disponibile per le aree seguenti:
 Per le best practice per l’authoring, la distribuzione e la manutenzione o lo sviluppo, consulta uno dei seguenti argomenti:
 
 * [Best practice di authoring](/help/sites-authoring/best-practices.md)
-* [Best practice di sviluppo](/help/sites-developing/best-practices.md)
+* [Best practice per lo sviluppo](/help/sites-developing/best-practices.md)
 * [Best practice di distribuzione](/help/sites-deploying/best-practices.md)
 
-Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
+I documenti specifici sono descritti e collegati nelle tabelle che seguono.
 
 ## Risorse {#assets}
 
@@ -70,7 +68,7 @@ Le best practice relative alle risorse, tra cui la funzionalità Dynamic Media e
 
 ## Sites {#sites}
 
-Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
+La gestione e l’authoring dei contenuti del sito web sono caratterizzati da alcune best practice descritte di seguito:
 
 <table>
  <tbody>

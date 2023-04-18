@@ -1,8 +1,6 @@
 ---
-title: Best practice
-seo-title: Best Practices
-description: Segui questa pagina per scoprire le best practice e linee guida utili per gli sviluppatori esperti AEM per i siti che desiderano creare modelli e componenti per app mobili.
-seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
+title: Best practice per AEM Mobile On-demand Services
+description: Scopri le best practice e le linee guida per gli sviluppatori AEM esperti per i siti che desiderano creare modelli e componenti per app mobili.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -10,18 +8,18 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
 
-# Best practice   {#best-practices}
+# Best practice {#best-practices}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 La creazione di un’app AEM Mobile On-demand Services è diversa dalla creazione di un’app che viene eseguita direttamente nella shell Cordova (o PhoneGap). Gli sviluppatori devono avere familiarità con:
 

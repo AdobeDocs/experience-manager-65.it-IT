@@ -1,8 +1,6 @@
 ---
-title: Frammenti di esperienza
-seo-title: Experience Fragments
+title: Frammenti esperienza nello sviluppo di AEM Sites
 description: Scopri come personalizzare i frammenti esperienza.
-seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 3%
+source-wordcount: '1787'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +20,7 @@ ht-degree: 3%
 
 ## Nozioni di base {#the-basics}
 
-Un [Frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine.
+Un [Frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, tra cui contenuto e layout, a cui è possibile fare riferimento all’interno delle pagine.
 
 Un elemento principale e/o variante del frammento esperienza utilizza:
 
@@ -44,7 +42,7 @@ Il rendering HTML semplice aggiunge il protocollo, l&#39;host e il percorso cont
 
 * o termina con: `-src`oppure `-href`
 
-Esempio:
+Ad esempio:
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -92,7 +90,7 @@ A questo scopo, è necessario utilizzare le seguenti proprietà:
 
    * `text`
 
-I componenti che non utilizzano questa convenzione non saranno presi in considerazione.
+I componenti che non utilizzano questa convenzione non sono presi in considerazione.
 
 ## Modelli per frammenti esperienza {#templates-for-experience-fragments}
 
@@ -104,7 +102,7 @@ Quando si sviluppa un nuovo modello per Frammenti esperienza è possibile seguir
 
 Per creare un modello di frammento di esperienza rilevato dalla **Crea frammento esperienza** è necessario seguire uno dei seguenti set di regole:
 
-1. Entrambe:
+1. Entrambi:
 
    1. Il tipo di risorsa del modello (il nodo iniziale) deve ereditare da:
       `cq/experience-fragments/components/xfpage`
@@ -133,7 +131,7 @@ L’unica configurazione aggiuntiva è quella di garantire che i componenti sian
 
 ## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-In AEM puoi creare frammenti esperienza. Caratteristiche di un Frammento esperienza:
+In AEM puoi creare frammenti esperienza. Un Frammento Esperienza:
 
 * è costituito da un gruppo di componenti e da un layout,
 * può esistere indipendentemente da una pagina AEM.
@@ -220,7 +218,7 @@ Per utilizzare l&#39;interfaccia è innanzitutto necessario creare un bundle con
 
 Questo servizio verrà utilizzato per eseguire il plug in Experience Fragment Export to Target rewrite (Esportazione frammento esperienza in riscrittura) al fine di poter accedere ai vari collegamenti.
 
-Esempio, `ComponentService`:
+Ad esempio, `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
@@ -265,7 +263,7 @@ Devi indicare al sistema se è necessario riscrivere i collegamenti quando viene
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-Esempio:
+Ad esempio:
 
 ```java
 @Override

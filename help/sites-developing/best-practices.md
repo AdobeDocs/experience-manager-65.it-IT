@@ -1,8 +1,6 @@
 ---
-title: Best practice
-seo-title: Best Practices
-description: I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM
-seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
+title: Best practice per gli sviluppatori di AEM
+description: I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM.
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +8,14 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 19%
+source-wordcount: '466'
+ht-degree: 13%
 
 ---
 
-# Best practice  {#best-practices}
+# Best practice{#best-practices}
 
 ## Procedure consigliate per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
@@ -42,7 +40,7 @@ Le aree seguenti dispongono di documentazione specifica per lo sviluppo delle be
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Strumenti/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
+I documenti specifici sono descritti e collegati nelle tabelle che seguono.
 
 Per le best practice relative all’amministrazione, alla distribuzione e alla manutenzione o all’authoring, consulta uno dei seguenti argomenti:
 
@@ -52,7 +50,7 @@ Per le best practice relative all’amministrazione, alla distribuzione e alla m
 
 ## Sites {#sites}
 
-Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
+La gestione e l’authoring dei contenuti del sito web sono caratterizzati da alcune best practice descritte di seguito:
 
 <table>
  <tbody>
@@ -88,7 +86,7 @@ Alcune best practice per Communities sono descritte qui:
 |  |  |  |
 |---|---|---|
 | Best practice per l’utilizzo di contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di un codice flessibile e portatile per [quadro della componente sociale](/help/communities/scf.md) (SCF) |
-| Esempio di utilizzo dei componenti di Communities | [Guida ai componenti community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
+| Esempio di utilizzo dei componenti di Communities | [Guida ai componenti della community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
 
 ## Strumenti/HTL {#tooling-htl}
 
@@ -96,7 +94,7 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML, introdotto con
 
 |  |  |  |
 |---|---|---|
-| Panoramica di HTL | [Panoramica e sintassi di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Questo documento descrive cosa è HTL, come passare a HTL, un progetto di esempio, sintassi, espressioni e istruzioni. |
+| Panoramica di HTL | [Panoramica e sintassi di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) | Questo documento descrive cosa è HTL, come passare a HTL, un progetto di esempio, sintassi, espressioni e istruzioni. |
 | Utilizzo dell&#39;API in java | [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | L’API di utilizzo Java HTL abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. |
 
 >[!NOTE]

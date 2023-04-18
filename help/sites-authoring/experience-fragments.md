@@ -1,8 +1,6 @@
 ---
-title: Frammenti di esperienza
-seo-title: Experience Fragments
+title: Frammenti esperienza nell’authoring di AEM Sites
 description: Frammenti di esperienza
-seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,25 +9,25 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 97%
+source-wordcount: '1444'
+ht-degree: 69%
 
 ---
 
 # Frammenti di esperienza{#experience-fragments}
 
-Un Frammento esperienza è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine. Possono contenere qualsiasi componente.
+Un frammento esperienza è un gruppo di uno o più componenti, compresi contenuto e layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
 
-Caratteristiche di un Frammento esperienza:
+Un Frammento Esperienza:
 
-* È parte di un’esperienza (pagina).
+* Fa parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
-* Si basa su un modello (solo modificabile) per la definizione di struttura e componenti.
+* Si basa su un modello (solo modificabile) per definire struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
-* È composto da uno o più componenti, con layout, in un sistema di paragrafo.
-* Può contenere altri frammenti esperienza.
+* È costituito da uno o più componenti, con layout, in un sistema paragrafo.
+* Può contenere altri frammenti di esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
@@ -37,7 +35,7 @@ Caratteristiche di un Frammento esperienza:
 
 Puoi utilizzare Frammenti esperienza:
 
-* Se un autore desidera riutilizzare delle parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare il frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
+* Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
 
 >[!NOTE]
@@ -45,11 +43,11 @@ Puoi utilizzare Frammenti esperienza:
 >Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo
 >
 >    `experience-fragments-editors`
-Per qualsiasi problema riscontrato, contatta l’amministratore del sistema.
+In caso di problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
-I frammenti esperienza devono essere utilizzati:
+I frammenti esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
 
@@ -63,7 +61,7 @@ I frammenti esperienza devono essere utilizzati:
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
 
    * Varianti per un canale o per un contesto specifico. 
-   * Per esperienze che è utile raggruppare (ad esempio una campagna con diverse esperienze per i vari canali).
+   * Esperienze che è utile raggruppare (ad esempio una campagna con diverse esperienze tra i vari canali)
 
 * Quando utilizzi Commerce omnichannel.
 
@@ -173,7 +171,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   Il campo **Titolo** è obbligatorio. Se il campo **Nome** è lasciato vuoto, verrà derivato dal **Titolo**.
+   A **Titolo** è obbligatorio. Se la **Nome** viene lasciato vuoto e viene derivato da **Titolo**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -183,7 +181,7 @@ Per creare un frammento esperienza:
 
 1. Fai clic su **Crea**.
 
-   Viene visualizzato un messaggio. Seleziona:
+   Verrà visualizzato un messaggio. Seleziona:
 
    * **Fine** per tornare alla console
 
@@ -194,29 +192,29 @@ Per creare un frammento esperienza:
 L’editor dei frammenti esperienza offre funzionalità simili al normale editor di pagina.
 
 >[!NOTE]
-Consulta [Modifica del contenuto di pagina](/help/sites-authoring/editing-content.md) per ulteriori informazioni su come usare questo strumento.
+Vedi [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md) per ulteriori informazioni su come utilizzare l’editor di pagine.
 
 L’esempio seguente illustra come creare un teaser per un prodotto:
 
-1. Trascina un **Teaser** dal [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Trascina e rilascia una **Teaser** dal [Browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. Seleziona **[Configura](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** nella barra degli strumenti del componente.
+1. Seleziona **[Configura](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** dalla barra degli strumenti del componente.
 1. Aggiungi la **Risorsa** e definisci le **Proprietà** secondo le esigenze.
 1. Conferma le definizioni con **Fine** (icona di spunta).
 1. Aggiungi altri componenti in base alle esigenze.
 
 ## Creazione di una variante del frammento esperienza {#creating-an-experience-fragment-variation}
 
-Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esigenze:
+Puoi creare varianti del frammento esperienza, a seconda delle tue esigenze:
 
-1. Apri la pagina per la [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Apri il frammento per [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Apri la scheda **Varianti**.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Crea** ti consente di creare:
+1. **Crea** consente di creare:
 
    * **Variazione**
    * **[Variante come Live Copy](/help/sites-administering/msm.md#live-copies)**.
@@ -225,21 +223,21 @@ Puoi creare diverse varianti per un Frammento esperienza a seconda delle tue esi
 
    * **Modello**
    * **Titolo**
-   * **Nome**; se lasciato vuoto, verrà derivato dal Titolo
+   * **Nome**; se lasciato vuoto, verrà derivato dal campo Titolo
    * **Descrizione**
    * **Tag varianti**
 
    ![xf-06](assets/xf-06.png)
 
-1. Conferma con **Fine** (icona di spunta); la nuova variante viene visualizzata nel pannello:
+1. Conferma con **Fine** (icona di spunta), la nuova variante verrà visualizzata nel pannello:
 
    ![xf-07](assets/xf-07.png)
 
 ## Utilizzo del frammento esperienza {#using-your-experience-fragment}
 
-A questo punto puoi utilizzare il frammento esperienza durante l’authoring delle pagine:
+È ora possibile utilizzare il Frammento esperienza durante la creazione delle pagine:
 
-1. Apri la pagina da modificare.
+1. Apri una pagina qualsiasi per la modifica.
 
    Ad esempio: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
@@ -250,7 +248,7 @@ A questo punto puoi utilizzare il frammento esperienza durante l’authoring del
 1. Aggiungi il frammento esperienza effettivo all’istanza del componente, eseguendo una delle seguenti operazioni:
 
    * Trascina il frammento richiesto dal browser Risorse e rilascialo nel componente
-   * Seleziona **Configura** nella barra degli strumenti del componente e specifica il frammento da utilizzare, quindi conferma con **Fine** (spunta)
+   * Seleziona **Configura** dalla barra degli strumenti del componente e specifica il frammento da utilizzare, quindi conferma con **Fine** (segno di spunta)
 
    ![xf-09](assets/xf-09.png)
 
@@ -283,7 +281,7 @@ Per creare un nuovo blocco predefinito:
 
 #### Gestione di un blocco predefinito {#managing-a-building-block}
 
-Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ogni blocco sono disponibili le azioni seguenti:
+Il blocco predefinito è visibile nel **Blocchi predefiniti** scheda . Per ogni blocco sono disponibili le seguenti azioni:
 
 * Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
@@ -324,9 +322,9 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
       * **Numero totale di varianti** - solo informativo
 
       * **Numero di varianti web** - solo informativo
-      * **Numero di varianti non web** - solo **informativo**
+      * **Numero di varianti non web** - inf **solo informativo**
 
-      * **Numero di pagine con questo frammento** - solo informativo
+      * **Numero di pagine che utilizzano il frammento** - solo informativo
    * **Servizi cloud**
 
       * **Configurazione cloud**
@@ -352,6 +350,6 @@ Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti esperienza vengono forniti nel formato HTML che può essere utilizzati sia da AEM che da canali di terze parti.
+Per impostazione predefinita, i frammenti esperienza vengono consegnati nel formato HTML. Può essere utilizzato sia da canali AEM che di terze parti.
 
-Per l’esportazione in Adobe Target, è possibile utilizzare anche il formato JSON. Per informazioni complete, consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md).
+Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Vedi [Integrazione di Target con i frammenti esperienza](/help/sites-administering/experience-fragments-target.md) per informazioni complete.

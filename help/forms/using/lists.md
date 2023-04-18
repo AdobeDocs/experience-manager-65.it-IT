@@ -1,8 +1,6 @@
 ---
-title: Frammenti del documento
-seo-title: Document Fragments
+title: Frammenti di documenti in AEM
 description: I frammenti di documento, ad esempio Testo, elenchi, condizioni e frammenti di layout, in Gestione corrispondenza consentono di creare i componenti statici, dinamici e ripetibili della corrispondenza del cliente.
-seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '6906'
+source-wordcount: '6908'
 ht-degree: 0%
 
 ---
@@ -298,9 +296,12 @@ In base alle opzioni selezionate, viene valutata solo la prima espressione che s
 
 L’Editor condizioni viene fornito con un’ [Generatore di espressioni](/help/forms/using/expression-builder.md) interfaccia utente che supporta la creazione di espressioni utilizzando più segnaposto ed elementi del dizionario dati. In tali espressioni è possibile utilizzare operandi comuni e funzioni locali/globali. Ciascuna espressione può essere associata ad alcuni contenuti ed eventualmente potrebbe essere presente una sezione predefinita se nessuna delle espressioni restituisce true. Tutte le espressioni vengono valutate nella sequenza in cui sono definite e le prime espressioni che restituiscono true vengono selezionate e il relativo contenuto associato viene restituito da quel modulo condizionale.
 
-Ad esempio, se il testo dei termini e delle condizioni in una lettera varia a seconda dello stato in cui si trova il cliente e il dizionario dati contiene un elemento denominato &quot;state&quot;, puoi aggiungere la condizione come segue: ・ stato = NY, selezionare il paragrafo di testo T&amp;C_NY ・ stato = NC, selezionare il paragrafo di testo T&amp;C_NC
+Ad esempio, se il testo dei termini e delle condizioni in una lettera varia a seconda dello stato in cui si trova il cliente e il dizionario dati contiene un elemento denominato &quot;state&quot;, puoi aggiungere la condizione come segue:
+* stato = NY, selezionare il paragrafo di testo T&amp;C_NY
+* stato = NC, selezionate il paragrafo di testo T&amp;C_NC
 
-L’editor Condizione consente di specificare una condizione predefinita. Se il valore delle variabili di controllo non corrisponde a nessuna delle condizioni, viene utilizzato il contenuto associato alla condizione predefinita. Nell’esempio precedente, è possibile aggiungere questa riga di condizione: ・ Predefinito, selezionare T&amp;C_Rest
+L’editor Condizione consente di specificare una condizione predefinita. Se il valore delle variabili di controllo non corrisponde a nessuna delle condizioni, viene utilizzato il contenuto associato alla condizione predefinita. Nell’esempio precedente, è possibile aggiungere questa riga di condizione:
+* Predefinito, selezionare T&amp;C_Rest
 
 ### Creare una condizione {#create-a-condition}
 
