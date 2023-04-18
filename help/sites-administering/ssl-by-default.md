@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Utente di un servizio denominato **servizio ssl** è stato creato per questa fun
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Una volta immesse le credenziali, fai clic su **Successivo** nell’angolo superiore destro della pagina. Quindi, carica la chiave privata e il certificato associati per la connessione SSL.
+1. Una volta immesse le credenziali, fai clic su **Successivo** nell’angolo superiore destro della pagina. Quindi, carica la chiave privata e il certificato associati per la connessione SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Tramite pacchetto {#via-package}
 
-In alternativa, puoi automatizzare la configurazione SSL caricando un pacchetto che contiene già questi elementi richiesti:
+In alternativa, puoi automatizzare la configurazione di SSL/TLS caricando un pacchetto che contiene già questi elementi richiesti:
 
 * L&#39;archivio chiavi dell&#39;utente del servizio ssl. Si trova in */home/users/system/security/ssl-service/keystore* nel repository.
 * La `GraniteSslConnectorFactory` configurazione
@@ -178,7 +178,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Genera il certificato SSL e firma con la chiave privata. In questo esempio, scadrà tra un anno:
+1. Genera il certificato SSL/TLS e firma con la chiave privata. In questo esempio, scadrà tra un anno:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
