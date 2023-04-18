@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1275'
 ht-degree: 3%
 
 ---
@@ -222,7 +222,7 @@ La maggior parte dei componenti può essere convertita in componenti di destinaz
 Per rimuovere il comando Target dal menu di scelta rapida, aggiungi la seguente proprietà al nodo cq:editConfig del componente:
 
 * Nome: cq:disableTargeting
-* Tipo: booleano
+* Tipo: Booleano
 * Valore: True
 
 Ad esempio, per disabilitare il targeting per i componenti titolo delle pagine di Geometrixx Demo Site, aggiungi la proprietà al nodo /apps/geometrixx/components/title/cq:editConfig .
@@ -235,7 +235,7 @@ Ad esempio, per disabilitare il targeting per i componenti titolo delle pagine d
 >
 >Se non utilizzi DTM, invia la conferma dell’ordine ad Adobe Target.
 
-Per tenere traccia delle prestazioni del sito web, invia ad Adobe Target le informazioni di acquisto dalla pagina di conferma dell’ordine. (Vedi [Creare una mbox orderConfirmPage](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) nella documentazione di Adobe Target.) Adobe Target riconosce i dati mbox come dati di conferma dell&#39;ordine quando il nome della MBox è `orderConfirmPage` e utilizza i seguenti nomi di parametro specifici:
+Per tenere traccia delle prestazioni del sito web, invia ad Adobe Target le informazioni di acquisto dalla pagina di conferma dell’ordine. (Vedi [Creare una mbox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) e [Mbox di conferma dell’ordine - Aggiungi parametri personalizzati.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target riconosce i dati mbox come dati di conferma dell&#39;ordine quando il nome della MBox è `orderConfirmPage` e utilizza i seguenti nomi di parametro specifici:
 
 * productPurchasedId: Elenco di ID che identificano i prodotti acquistati.
 * orderId: ID dell&#39;ordine.

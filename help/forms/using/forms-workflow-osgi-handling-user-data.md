@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Per identificare e accedere ai dati utente memorizzati per un’istanza di fluss
 
 1. Passa alle posizioni per le bozze e la cronologia per l&#39;istanza del flusso di lavoro.
 
-   Esempio:
+   Ad esempio:
 
    `/var/fd/dashboard/instances/server0/2018-04-09/_var_workflow_instances_server0_2018-04-09_basicmodel_54/draft/`
 
@@ -158,5 +158,5 @@ Per eliminare i dati utente dalle istanze del flusso di lavoro, devi essere un a
 Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per ulteriori informazioni, consulta i seguenti documenti.
 
 * [Come accedere programmaticamente a AEM JCR](/help/sites-developing/access-jcr.md)
-* [Rimozione di nodi e proprietà](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Rimozione di nodi e proprietà](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Riferimento API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

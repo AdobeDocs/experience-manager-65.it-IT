@@ -3,9 +3,9 @@ title: Configura l’editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’editor Rich Text di Adobe Experience Manager per creare contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3021'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | sottolineato in corsivo grassetto | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [immagine](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto immagini di base (trascinamento da contenuto o Content Finder). A seconda del browser, il supporto offre diversi comportamenti per gli autori |
 | [chiavi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Per definire questo valore, vedi [dimensione della scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter copyright | Allineamento paragrafo. |
+| [giustificare](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter copyright | Allineamento paragrafo. |
 | [collegamenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ancoraggio di scollegamento modifica collegamento | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | [elenchi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | rientro fuori linea ordinato | Questo plug-in controlla entrambi [rientri ed elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusi gli elenchi nidificati. |
 | [strumenti cattivi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Gli strumenti vari consentono agli autori di accedere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) per definire un proprio elenco. |
@@ -259,7 +259,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell’interfaccia utente dell’editor Rich Text è stata rimossa o non abilita un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, puoi visualizzare il [Documentazione sui componenti core di testo](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi visualizzare il [Documentazione sui componenti core di testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
@@ -377,7 +377,7 @@ Non aggiungere un HTML soggetto a XSS. AEM, e non l’editor Rich Text, può rim
 
 Per verificare che HTML incollato sia salvato, controlla il contenuto salvato in CRXDE (nel nodo del contenuto).
 
-Se non viene salvato, HTML deve essere stato rimosso dall’editor Rich Text in quanto non rispettava le regole dell’editor Rich Text.
+Se non viene salvato, il HTML deve essere stato rimosso dall’editor Rich Text in quanto non rispettava le regole dell’editor Rich Text.
 
 Se salvato in CRXDE ma non sottoposto a rendering nella pagina (per controllare il rendering, consulta la pagina [anteprima](/help/sites-authoring/editing-content.md#preview-mode), viene rimosso dalle regole XSS AEM.
 
