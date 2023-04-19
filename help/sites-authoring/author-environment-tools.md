@@ -1,8 +1,6 @@
 ---
-title: Ambiente e strumenti di authoring
-seo-title: Authoring - the Environment and Tools
-description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
-seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
+title: Authoring - Ambiente e strumenti in AEM
+description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti.
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,20 +9,20 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 97%
+source-wordcount: '2230'
+ht-degree: 44%
 
 ---
 
-# Ambiente e strumenti di authoring{#authoring-the-environment-and-tools}
+# Authoring - Ambiente e strumenti{#authoring-the-environment-and-tools}
 
 L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
-La console **Sites** consente di navigare nel sito Web e di gestirlo utilizzando la barra dell’intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
+La **Sites** La console consente di navigare nel sito web e di gestirlo utilizzando la barra dell’intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
 
 Ad esempio, nella vista a colonne:
 
@@ -32,7 +30,7 @@ Ad esempio, nella vista a colonne:
 
 ## Modifica del contenuto di una pagina {#editing-page-content}
 
-Puoi modificare una pagina con l’editor di pagina. Esempio:
+È possibile modificare una pagina con l’editor di pagine. Esempio:
 
 `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -42,44 +40,44 @@ Puoi modificare una pagina con l’editor di pagina. Esempio:
 >
 >La prima volta che apri una pagina per la modifica, una serie di diapositive illustra le funzioni disponibili.
 >
->Puoi saltare questa presentazione introduttiva e richiamarla in qualsiasi momento dal menu **Informazioni pagina**.
+>Puoi saltare il tour se lo desideri e ripeterlo in qualsiasi momento selezionando dalla **Informazioni pagina** menu.
 
 ## Accedere all’Aiuto   {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
-* il selettore [**Informazioni pagina**](/help/sites-authoring/editing-page-properties.md#page-properties), che mostrerà le diapositive introduttive (così come visualizzate al primo accesso all’editor);
-* la finestra di dialogo di [configurazione](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) per i componenti specifici (utilizzando l’icona ? nella barra degli strumenti della finestra di dialogo), che mostrerà le informazioni di aiuto specifiche per il contesto.
+* la [**Informazioni pagina**](/help/sites-authoring/editing-page-properties.md#page-properties) selettore; vengono mostrate le diapositive introduttive (come mostrato al primo accesso all’editor).
+* la [configurazione](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) finestra di dialogo per componenti specifici (utilizzando l’icona ? nella barra degli strumenti della finestra di dialogo); questo mostrerà la guida sensibile al contesto.
 
-Ulteriori [risorse di aiuto sono disponibili dalle console](/help/sites-authoring/basic-handling.md#accessing-help).
+Ulteriori informazioni [le risorse relative all’Aiuto sono disponibili dalle console](/help/sites-authoring/basic-handling.md#accessing-help).
 
 ## Browser Componenti   {#components-browser}
 
-Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Puoi trascinarli nella posizione desiderata, quindi modificarli per aggiungere i contenuti richiesti.
+Il browser Componenti mostra tutti i componenti disponibili per la pagina corrente. Puoi trascinarli nella posizione appropriata e quindi modificarli per aggiungere il contenuto.
 
 Il browser Componenti è una scheda che si trova nel pannello laterale, insieme al [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser) e alla [struttura dei contenuti](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![ateat-03](assets/ateat-03.png)
 
-All’apertura, il pannello laterale scivolerà in posizione da sinistra (se necessario seleziona la scheda **Componenti**). Quando la scheda è aperta, puoi passare ai componenti disponibili per la pagina.
+All’apertura, il pannello laterale scivolerà in posizione da sinistra (seleziona la **Componenti** (se necessario). Quando è aperta, puoi sfogliare tutti i componenti disponibili per la pagina.
 
-L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in uso:
+L’aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 >[!NOTE]
 >
->Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px. Ciò può applicarsi anche a una piccola finestra desktop.
+>Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px. Questo può accadere anche per una piccola finestra desktop.
 
-* **Dispositivo mobile (ad es. iPad)**
+* **Dispositivo mobile (ad esempio iPad)**
 
    Il browser Componenti copre completamente la pagina in corso di modifica.
 
-   Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra: il browser Componenti si chiude e torna a essere visibile la pagina, dove potrai posizionare il componente.
+   Per aggiungere un componente alla pagina, toccate e tenete premuto il componente richiesto e spostatelo verso destra: il browser Componenti si chiude e torna a essere visibile la pagina, dove potete posizionare il componente.
 
    ![ateat-04](assets/ateat-04.png)
 
 * **Dispositivo desktop**
 
-   Il browser Componenti si apre nella parte sinistra della finestra.
+   Il browser componenti viene aperto sul lato sinistro della finestra.
 
    Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
 
@@ -107,9 +105,9 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
 ## Browser Risorse {#assets-browser}
 
-Il browser Risorse mostra tutte le [risorse](/help/assets/home.md) disponibili per la pagina corrente.
+Il browser Risorse mostra tutti [assets](/help/assets/home.md) disponibili per l’utilizzo diretto nella pagina corrente.
 
-Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e alla [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
+Il browser Risorse è una scheda che si trova nel pannello laterale insieme al [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser)r e [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
@@ -117,11 +115,11 @@ All’apertura, il pannello laterale scivolerà in posizione da sinistra. Se nec
 
 ![ateat-07](assets/ateat-07.png)
 
-Quando il browser Risorse è aperto, puoi sfogliare tutte le risorse disponibili per la pagina. Per espandere l’elenco, scorri in base alle necessità.
+Quando il browser Risorse è aperto, puoi sfogliare tutte le risorse disponibili per la pagina. Lo scorrimento infinito viene utilizzato per espandere l’elenco quando necessario.
 
 ![ateat-08](assets/ateat-08.png)
 
-Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione desiderata. Questa può essere:
+Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione desiderata. Può essere:
 
 * Un componente esistente del tipo appropriato.
 
@@ -133,18 +131,18 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione
 
 >[!NOTE]
 >
->Questo è disponibile per risorse e tipi di componenti specifici. Per ulteriori informazioni, consulta [Inserimento di un componente utilizzando il browser Risorse](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser).
+>Questa funzione è disponibile per risorse e tipi di componenti specifici. Vedi [Inserimento di un componente utilizzando il browser Risorse](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) per ulteriori dettagli.
 
-Dalla barra degli strumenti nella parte superiore del browser Risorse è possibile filtrare le risorse in base ai seguenti criteri:
+Dalla barra degli strumenti nella parte superiore del browser Risorse, puoi filtrare le risorse in base a:
 
 * Nome
 * Percorso
 * Tipo di risorsa, ad esempio immagini, manoscritti, documenti, video, pagine, paragrafi e prodotti
 * Caratteristiche della risorsa, ad esempio Orientamento (Verticale, Orizzontale, Quadrato) e Stile (Colore, Monocromatico, Scala di grigio)
 
-   * Disponibile solo per alcuni tipi di risorsa
+   * Disponibile solo per determinati tipi di risorse
 
-L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in uso:
+L’aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 >[!NOTE]
 >
@@ -152,9 +150,9 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
 * **Dispositivo mobile, ad esempio iPad**
 
-   Il browser Risorse occupa completamente la pagina in corso di modifica.
+   Il browser Risorse copre completamente la pagina in corso di modifica.
 
-   Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta e spostala verso destra: il browser Risorse si chiude e torna a essere visibile la pagina, dove potrai aggiungere la risorsa al componente richiesto.
+   Per aggiungere una risorsa alla pagina, toccate e tenete premuto sulla risorsa richiesta, quindi spostatela verso destra: il browser Risorse si chiude e torna a essere visibile la pagina, dove potete aggiungere la risorsa al componente richiesto.
 
    ![ateat-09](assets/ateat-09.png)
 
@@ -162,7 +160,7 @@ L’aspetto effettivo e il comportamento dipendono dal tipo di dispositivo in us
 
    Il browser Risorse si apre nella parte sinistra della finestra.
 
-   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o nella posizione desiderata.
+   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione richiesta.
 
    ![ateat-10](assets/ateat-10.png)
 
@@ -172,21 +170,21 @@ Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’edit
 
 ## Struttura contenuto {#content-tree}
 
-La scheda **Struttura contenuto** offre una panoramica di tutti i componenti nella pagina sotto forma di struttura gerarchica ad albero, che permette di vedere subito come è composta la pagina.
+La **Struttura contenuto** offre una panoramica di tutti i componenti della pagina sotto forma di gerarchia, per vedere subito come è composta la pagina.
 
 Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai browser Componenti e Risorse. Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
 ![](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa rende più facile passare tra i vari componenti della pagina.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa rende più facile passare da un componente all’altro della pagina.
 
 ![ateat-11](assets/ateat-11.png)
 
-Poiché una pagina può essere composta da numerosi componenti dello stesso tipo, la struttura del contenuto (componente) presenta un testo descrittivo (in grigio) dopo il nome del tipo di componente (in nero). Il testo descrittivo è composto dalle proprietà comuni del componente, come ad esempio il titolo o il testo.
+Poiché una pagina può essere composta da numerosi componenti dello stesso tipo, la struttura del contenuto (componente) presenta un testo descrittivo (in grigio) dopo il nome del tipo di componente (in nero). Il testo descrittivo proviene dalle proprietà comuni del componente, ad esempio titolo o testo.
 
-I tipi di componente sono indicati nella lingua preferita dall&#39;utente, mentre il testo descrittivo del componente nella lingua della pagina.
+I tipi di componente vengono visualizzati nella lingua dell’utente, mentre il testo della descrizione del componente viene dalla lingua della pagina.
 
-Fai clic sulla freccia accanto a un componente per comprimere o espandere il livello.
+Facendo clic sulla freccia accanto a un componente, questo livello viene compresso o espanso.
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
@@ -194,9 +192,9 @@ Fai clic sulla freccia accanto a un componente per comprimere o espandere il liv
 >
 >La struttura del contenuto non è disponibile quando si modifica una pagina su un dispositivo mobile (se la larghezza del browser è inferiore a 1024 px).
 
-Fai clic sul componente per evidenziarlo nell’editor di pagine. Le azioni disponibili dipendono dallo stato della pagina:
+Facendo clic sul componente viene evidenziato il componente nell’editor di pagine. Le azioni disponibili dipendono dallo stato della pagina:
 
-* Ad esempio, una pagina base:
+* Ad esempio, una pagina di base:
 
    `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
@@ -206,7 +204,7 @@ Fai clic sul componente per evidenziarlo nell’editor di pagine. Le azioni disp
 
    ![](do-not-localize/screen_shot_2018-03-22at142725.png)
 
-* Oppure una pagina che fa parte di una [Live Copy](/help/sites-administering/msm.md), dove i componenti vengono ereditati da un’altra pagina, ad esempio:
+* O di una pagina che fa parte di un [livecopy](/help/sites-administering/msm.md), in cui i componenti vengono ereditati da un’altra pagina; ad esempio:
 
    `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -218,7 +216,7 @@ Se la pagina contiene frammenti di contenuto, avrai accesso anche al [browser Co
 
 ## Riferimenti {#references}
 
-I **riferimenti** mostrano i collegamenti alla pagina selezionata:
+**Riferimenti** mostra i collegamenti alla pagina selezionata:
 
 * Blueprint
 * Lanci
@@ -226,7 +224,7 @@ I **riferimenti** mostrano i collegamenti alla pagina selezionata:
 * Copie per lingua
 * Collegamenti in entrata
 * Uso del componente di riferimento: contenuto prestato e preso in prestito
-* Riferimenti alle pagine prodotto (dalla console Commerce - Prodotti)
+* Riferimenti alle pagine dei prodotti (dalla console Commerce - Prodotti )
 
 Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Riferimenti** utilizzando:
 
@@ -242,13 +240,13 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 
-* [Riferimenti alle pagine prodotto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibili dalla console Commerce - Prodotti)
+* [Riferimenti alle pagine di prodotto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibile dalla console Commerce - Prodotti)
 * [Lanci](/help/sites-authoring/launches.md): fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-administering/msm.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
 * [Blueprint](/help/sites-administering/msm-best-practices.md) fornisce dettagli e varie azioni
 * [Copie per lingua](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel): fornisce dettagli e varie azioni
 
-Ad esempio, è possibile correggere un riferimento interrotto all’interno di un componente Riferimento:
+Ad esempio, puoi correggere un riferimento interrotto all’interno di un componente Riferimento :
 
 ![ateat-14](assets/ateat-14.png)
 
@@ -266,7 +264,7 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Tim
 
 ## Informazioni sulle pagine {#page-information}
 
-Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dettagli sull’ultima operazione di modifica e di pubblicazione. A seconda delle caratteristiche della pagina, del sito e delle istanze, potrebbero essere disponibili più o meno opzioni:
+Il pulsante Informazioni pagina (icona equalizzatore) apre un menu che fornisce anche dettagli sull’ultima modifica e sull’ultima pubblicazione. A seconda delle caratteristiche della pagina, del sito e delle istanze, potrebbero essere disponibili più o meno opzioni:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -276,36 +274,36 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 * [Blocca pagina](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Pubblica pagina](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Annulla pubblicazione pagina](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
-* [Modifica modello](/help/sites-authoring/templates.md): se la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Modifica modello](/help/sites-authoring/templates.md); quando la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Visualizza come pubblicato](/help/sites-authoring/editing-content.md#view-as-published)
-* [Visualizza in Amministrazione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Visualizza in Amministratore; apre la pagina nel [console siti](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aiuto](/help/sites-authoring/basic-handling.md#accessing-help)
 
-Ad esempio, quando appropriato, da **Informazioni pagina** possono essere disponibili le funzioni seguenti:
+Ad esempio, se del caso, **Informazioni pagina** dispone anche delle seguenti opzioni:
 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio.
 * [Apri nell’interfaccia classica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se questa opzione è stata [abilitato da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
-Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
+Inoltre, **Informazioni pagina** può fornire l&#39;accesso ad analisi e consigli, se appropriato.
 
 ## Modalità pagina   {#page-modes}
 
-Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
+Quando si modifica una pagina sono disponibili diverse modalità che consentono di eseguire diverse azioni:
 
-* [Modifica](/help/sites-authoring/editing-content.md): modalità da utilizzare per modificare il contenuto della pagina.
+* [Modifica](/help/sites-authoring/editing-content.md) - la modalità da utilizzare per modificare il contenuto della pagina.
 * [Layout](/help/sites-authoring/responsive-layout.md): consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
 
-* [Scaffolding](/help/sites-authoring/scaffolding.md): consente di creare un insieme costituito da più pagine con la stessa struttura e contenuti diversi.
-* [Sviluppatore](/help/sites-developing/developer-mode.md): consente di eseguire varie azioni (sono richiesti privilegi specifici), compresa l’analisi dei dettagli tecnici di una pagina e dei suoi componenti.
+* [Scaffolding](/help/sites-authoring/scaffolding.md) : consente di creare un insieme di pagine di grandi dimensioni con la stessa struttura e contenuti diversi.
+* [Sviluppatore](/help/sites-developing/developer-mode.md) - consente di eseguire varie azioni (sono richiesti privilegi ). Ad esempio, è possibile esaminare i dettagli tecnici di una pagina e dei suoi componenti.
 
-* [Progettazione](/help/sites-authoring/default-components-designmode.md): consente di abilitare o disabilitare i componenti da usare su una pagina e di configurare la struttura del componente (nel caso di una pagina basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Progettazione](/help/sites-authoring/default-components-designmode.md) - consente di abilitare/disabilitare i componenti da utilizzare in una pagina e di configurare la progettazione del componente (se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
-* [Impostazione destinazione](/help/sites-authoring/content-targeting-touch.md): consente di incrementare la rilevanza dei contenuti tramite il targeting e la misurazione su tutti i canali.
-* [Mappa attività](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor): mostra i dati Analisi per la pagina.
+* [Targeting](/help/sites-authoring/content-targeting-touch.md) - aumentare la pertinenza dei contenuti mediante il targeting e la misurazione su tutti i canali.
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - mostra i dati di Analytics per la pagina.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp): consente di visualizzare lo stato delle pagine in un particolare momento.
-* [Stato Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): consente di visualizzare una panoramica rapida dello stato della live copy e dei componenti ereditati e non.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - consente di visualizzare lo stato delle pagine in un particolare momento.
+* [Stato Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) - consente di visualizzare una panoramica rapida dello stato della Live Copy e dei componenti ereditati o non ereditati.
 * [Anteprima](/help/sites-authoring/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 
 * [Annota](/help/sites-authoring/annotations.md): utilizzato per aggiungere o visualizzare annotazioni nella pagina.
@@ -316,22 +314,22 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 >[!NOTE]
 >
->* A seconda delle caratteristiche della pagina, alcune modalità possono non essere disponibili.
->* L’accesso ad alcune modalità richiede autorizzazioni o privilegi adeguati.
->* La modalità Sviluppatore non è disponibile su dispositivi mobili a causa di limitazioni di spazio.
+>* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
+>* L&#39;accesso ad alcune modalità richiede autorizzazioni/privilegi appropriati.
+>* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di limitazioni di spazio.
 >* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
 
 ## Selezione del percorso {#path-selection}
 
-Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
+Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) l&#39;offerta è stata completata automaticamente e [browser del percorso](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
 
 ### Campi percorso   {#path-fields}
 
-L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-authoring/default-components.md).
+L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring delle pagine](/help/sites-authoring/default-components.md).
 
-I campi percorso dispongono della funzione di completamento automatico e di look-ahead per rendere più facile individuare una risorsa.
+I campi percorso dispongono della funzione di completamento automatico e di look-ahead per rendere più semplice l’individuazione di una risorsa.
 
 Fai clic sul pulsante **Apri finestra di dialogo per selezione** nel campo percorso per aprire la finestra di dialogo del [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e utilizzare opzioni di selezione più dettagliate.
 
@@ -347,10 +345,10 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-authori
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Una volta che la risorsa è selezionata, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic su questo pulsante per confermare la selezione oppure su **Annulla** per annullare l’operazione.
+* Una volta selezionata una risorsa, la funzione **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic su per confermare la selezione o **Annulla** per interrompere.
 * Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
-* Quando navighi attraverso la struttura ad albero, la posizione viene riportata nelle breadcrumb nella parte superiore della finestra di dialogo. Le breadcrumb possono anche essere utilizzate per passare rapidamente alla gerarchia delle risorse.
-* In qualsiasi momento puoi usare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic sulla **X** nel campo di ricerca per cancellare la ricerca.
+* Quando vi spostate all’interno della struttura, la posizione viene visualizzata nelle breadcrumb nella parte superiore della finestra di dialogo. Queste breadcrumb possono anche essere utilizzate per passare rapidamente alla gerarchia delle risorse.
+* In qualsiasi momento puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic sul pulsante **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
 
    ![ateat-21](assets/ateat-21.png)
