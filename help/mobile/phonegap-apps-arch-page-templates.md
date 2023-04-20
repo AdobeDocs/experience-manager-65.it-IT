@@ -1,8 +1,6 @@
 ---
-title: Modelli di pagina per le app mobili
-seo-title: Page Templates for Mobile Apps
+title: Modelli di pagina del contenuto per le app mobili
 description: Segui questa pagina per informazioni sui modelli di pagina per le app per dispositivi mobili.
-seo-description: Follow this page to learn about page templates for mobile apps.
 uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 ## Modelli di pagina per le app mobili {#page-templates-for-mobile-apps-1}
 
@@ -63,7 +61,7 @@ Il corpo di una pagina di Angular viene rappresentato in modo diverso a seconda 
 
 In modalità di authoring, ogni singola pagina viene riprodotta separatamente. Angular non gestisce il routing tra le pagine, né un ng-view utilizzato per caricare un modello parziale che contiene i componenti della pagina. Invece, il contenuto del modello di pagina (template.jsp) è incluso sul lato server tramite il `cq:include` tag .
 
-Questa strategia abilita le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel sistema paragrafo, nella barra laterale, in modalità progettazione, ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di authoring AEM.
+Questa strategia abilita le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel sistema di paragrafi, nella barra laterale, in modalità progettazione, ecc.) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di authoring AEM.
 
 Tieni presente che template.jsp include è racchiuso in un `div` che contiene `ng-controller` direttiva. Questa struttura consente il collegamento del contenuto DOM con il controller. Pertanto, anche se le pagine con rendering sul lato client non riescono, i singoli componenti che lo fanno funzionano correttamente (consulta la sezione sui componenti di seguito).
 
