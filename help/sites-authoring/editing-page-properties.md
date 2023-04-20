@@ -1,8 +1,6 @@
 ---
-title: Modifica delle proprietà di una pagina
-seo-title: Editing Page Properties
-description: Puoi impostare le proprietà richieste per una pagina.
-seo-description: Define the required properties for a page
+title: Modifica delle proprietà della pagina di contenuto
+description: Imposta le proprietà richieste per una pagina.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 90%
+source-wordcount: '1885'
+ht-degree: 61%
 
 ---
 
-# Modifica delle proprietà di una pagina  {#editing-page-properties}
+# Modifica delle proprietà di una pagina{#editing-page-properties}
 
-Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
+Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
 
 ## Proprietà pagina   {#page-properties}
 
@@ -30,7 +28,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Titolo**
 
-   Il titolo della pagina viene visualizzato in diversi punti. Ad esempio, nell’elenco della scheda **Siti web** e nelle viste a scheda o elenco di **Sites**.
+   Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** l&#39;elenco delle schede e **Sites** viste a schede o a elenco.
 
    Questo campo è obbligatorio.
 
@@ -38,13 +36,13 @@ Le proprietà sono distribuite su più schede.
 
    Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione:
 
-   * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. Per rimuovere un tag dall’elenco, utilizza l’icona x.
-   * Per aggiungere un tag nuovo, digita il nome in una casella di selezione vuota.
+   * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
+   * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
 
       * Il nuovo tag viene creato quando premi Invio.
-      * Un asterisco a destra del nome lo identifica come nuovo tag.
-   * L’elenco a discesa consente di selezionare uno dei tag esistenti.
-   * Quando sposti il mouse su un tag nella casella di selezione viene visualizzata una x, che consente di rimuovere il tag dalla pagina in questione.
+      * Il nuovo tag viene quindi mostrato con un asterisco a destra che lo identifica come nuovo tag.
+   * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
+   * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
 
    Per ulteriori informazioni sui tag, consulta [Utilizzo dei tag](/help/sites-authoring/tags.md).
 
@@ -62,11 +60,11 @@ Le proprietà sono distribuite su più schede.
       * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 * **Titolo pagina**
 
-   Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se questo campo è vuoto, viene utilizzato il **Titolo**.
+   Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se viene lasciato vuoto, sarà utilizzato il **Titolo**.
 
 * **Titolo navigazione**
 
-   Puoi specificare un diverso titolo da usare per la navigazione (ad esempio un titolo più conciso). Se questo campo è vuoto, viene utilizzato il **Titolo**.
+   Puoi specificare un diverso titolo da usare nella navigazione (ad esempio, se desideri un elemento più conciso). Se vuoto, il **Titolo** verrà utilizzato.
 
 * **Sottotitolo**
 
@@ -74,11 +72,11 @@ Le proprietà sono distribuite su più schede.
 
 * **Descrizione**
 
-   La descrizione della pagina, del suo ruolo o altri dettagli.
+   Descrizione della pagina, del suo scopo o altri dettagli da aggiungere.
 
 * **Ora di attivazione**
 
-   Data e ora in cui verrà attivata la pagina pubblicata. Dopo la pubblicazione, la pagina rimarrà inattiva fino alla data e all’ora specificate. 
+   Data e ora in cui verrà attivata la pagina pubblicata. Dopo la pubblicazione, la pagina rimarrà inattiva fino alla data e all’ora specificate.
 
    Lascia vuoti questi campi per le pagine da pubblicare immediatamente (lo scenario più consueto).
 
@@ -86,11 +84,11 @@ Le proprietà sono distribuite su più schede.
 
    Data e ora in cui verrà disattivata la pagina pubblicata.
 
-   Lascia questi campi vuoti per un’azione immediata.
+   Lascia nuovamente vuoti questi campi per un&#39;azione immediata.
 
 * **URL personalizzato**
 
-   Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
+   Permette di inserire un URL personalizzato per questa pagina, che può consentirti di avere un URL più breve e/o più significativo.
 
    Ad esempio, se l’URL personalizzato è impostato su `welcome`alla pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` then `http://example.com/welcome`è l’URL personalizzato di `http://example.com/content/v1.0/startpage`
 
@@ -107,17 +105,17 @@ Le proprietà sono distribuite su più schede.
 
 * **Reindirizza URL personalizzato**
 
-   Specifica se vuoi che la pagina usi l’URL personalizzato.
+   Indica se desideri che la pagina utilizzi l’URL personalizzato.
 
 ### Avanzate  {#advanced}
 
 * **Lingua**
 
-   Indica la lingua della pagina.
+   Lingua della pagina.
 
 * **Directory principale lingua**
 
-   Deve essere selezionata, se la pagina è la pagina principale di una copia lingua.
+   È necessario controllare se la pagina è la pagina principale di una copia per lingua.
 
 * **Reindirizza**
 
@@ -125,7 +123,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Design**
 
-   Indica il [design](/help/sites-developing/designer.md) da utilizzare per la pagina.
+   Indica il [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 
 * **Alias**
 
@@ -134,11 +132,11 @@ Le proprietà sono distribuite su più schede.
    * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
    * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
    * Le pagine a cui si accede tramite alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-authoring/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-   * Per maggiori dettagli vedi [Nomi di pagina localizzati nelle best practice SEO (Search Engine Optimization) e Gestione URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Per maggiori dettagli, consulta [Nomi di pagina localizzati nelle best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Ereditato da &lt;*percorso*>**
+* **Ereditato da &lt;*path*>**
 
-   Indica se la pagina viene ereditata e da dove.
+   Indica se la pagina viene ereditata. e da dove.
 
 * **Configurazione cloud**
 
@@ -146,11 +144,11 @@ Le proprietà sono distribuite su più schede.
 
 * **Modelli consentiti**
 
-   [Definisci l’elenco di modelli che saranno disponibili](/help/sites-authoring/templates.md#allowingatemplate) in questo ramo secondario.
+   [Definire l’elenco di modelli disponibili](/help/sites-authoring/templates.md#allowingatemplate) all’interno di questo ramo secondario.
 
-* **Attiva** (richiesta di autenticazione)
+* **Abilita** (Autenticazione richiesta)
 
-   Attiva (o disattiva) l’uso dell’autenticazione per accedere alla pagina.
+   Abilita o disabilita l’utilizzo dell’autenticazione per accedere alla pagina.
 
    >[!NOTE]
    >
@@ -161,15 +159,15 @@ Le proprietà sono distribuite su più schede.
    >La **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del gruppo `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , in viene visualizzato un messaggio di avviso **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né il [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) sia modificabile.
    >
    >
-   >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >In tal caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate nella sezione [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Pagina di accesso**
 
-   Indica la pagina da utilizzare per l’accesso.
+   Pagina da utilizzare per l’accesso.
 
 * **Configurazione esportazione**
 
-   Consente di specificare una configurazione di esportazione.
+   Specifica una configurazione di esportazione.
 
 ### Miniatura  {#thumbnail}
 
@@ -177,7 +175,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 * **Genera anteprima**
 
-   Genera un’anteprima della pagina da usare come miniatura.
+   Genera un’anteprima della pagina da utilizzare come miniatura.
 
 * **Carica immagine**
 
@@ -189,29 +187,30 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 * **Versione precedente**
 
-   Questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi ripristinarla prima di salvare.
+   Questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi annullarla prima di salvare.
 
 ### Social media {#social-media}
 
 * **Condivisione social media**
 
-   Definisce le opzioni di condivisione disponibili sulla pagina. Rende disponibili le opzioni per la [Condivisione dei componenti di base](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+   Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per il [Condivisione dei componenti core](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
-   * **Abilita condivisione da parte degli utenti su Facebook**
-   * **Abilita condivisione da parte degli utenti su Pinterest**
-   * **Variante XF preferita** definisce la variante del frammento esperienza utilizzato per generare i metadati della pagina.
+   * **Abilita condivisione da parte degli utenti in Facebook**
+   * **Abilita condivisione da parte degli utenti in Pinterest**
+   * **Variante XF preferita**
+Definire la variante del frammento esperienza utilizzato per generare i metadati per la pagina
 
 ### Servizi cloud {#cloud-services}
 
 * **Servizi cloud**
 
-   Consente di definire le proprietà per i [servizi cloud](/help/sites-developing/extending-cloud-config.md).
+   Consente di definire le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalizzazione {#personalization}
 
 * **Configurazioni ContextHub**
 
-   Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e il [Percorso segmenti](/help/sites-administering/segmentation.md).
+   Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e [Percorso segmenti](/help/sites-administering/segmentation.md).
 
 * **Configurazione targeting**
 
@@ -229,29 +228,29 @@ Mostra la miniatura della pagina. Operazioni disponibili:
    * [Aggiungere autorizzazioni](/help/sites-administering/user-group-ac-admin.md)
    * [Modificare un gruppo utenti chiuso](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
 
-   * Visualizzare le [Autorizzazioni effettive](/help/sites-administering/user-group-ac-admin.md)
+   * Visualizza le [autorizzazioni effettive](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >La **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del gruppo `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
+   >La **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiuso in base alla presenza del gruppo `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , viene visualizzato un messaggio di avviso e le autorizzazioni del gruppo utenti chiuso non saranno modificabili, né il requisito di autenticazione relativo al gruppo [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced) può essere modificata.
    >
    >
-   >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >In tal caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate nella sezione [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Vedere il documento [Amministrazione di diritti di accesso, gruppi e utenti](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
+   >La scheda Autorizzazioni non consente la creazione di gruppi CUG vuoti, il che può essere utile come modo semplice per negare l’accesso a ogni utente. Per fare questo CRX Explorer deve essere utilizzato. Vedere il documento [Amministrazione di diritti di accesso, gruppi e utenti](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
+   Consente di definire le proprietà per una pagina Blueprint all&#39;interno di [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Livecopy**
 
-   Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
+   Consente di definire le proprietà per una pagina Live Copy all’interno di [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
 ### Struttura sito  {#site-structure}
 
@@ -259,7 +258,7 @@ Mostra la miniatura della pagina. Operazioni disponibili:
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-1}
 
-Puoi definire le proprietà di pagina:
+Puoi definire le proprietà della pagina:
 
 * Dalla console **Sites**:
 
@@ -268,7 +267,7 @@ Puoi definire le proprietà di pagina:
    * Tocca o fai clic su **Proprietà**
 
       * Per una singola pagina
-      * Per più pagine (solo un sottoinsieme di proprietà è disponibile per la modifica in blocco)
+      * Per più pagine (solo un sottoinsieme delle proprietà è disponibile per la modifica in blocco)
 
 * Dall’editor di pagine:
 
@@ -314,14 +313,14 @@ Dalla console **Sites** è possibile selezionare più pagine e quindi utilizzare
 
 >[!NOTE]
 >
->La modifica in serie delle proprietà è disponibile anche per le risorse. È molto simile, ma differisce per alcuni aspetti. Per ulteriori informazioni, consulta [Modificare le proprietà di risorse multiple](/help/assets/metadata.md).
+>La modifica in serie delle proprietà è disponibile anche per le risorse. È molto simile, ma differisce per alcuni aspetti. Vedi [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per i dettagli.
 >
->È disponibile anche lo strumento di [Modifica collettiva](/help/sites-administering/bulk-editor.md), che consente di cercare contenuti da più pagine tramite GQL (Google Query Language), e quindi di modificare il contenuto direttamente sullo strumento prima di salvare le modifiche sulle pagine originate.
+>C&#39;è anche la [Editor in serie](/help/sites-administering/bulk-editor.md), che consente di cercare contenuti da più pagine tramite GQL (Google Query Language) e quindi di modificare il contenuto direttamente nell’editor in blocco prima di salvare le modifiche nelle pagine originarie.
 
 Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi, tra i quali:
 
-* Utilizzare la console **Sites**.
-* Dopo aver utilizzato **Cerca** per individuare un insieme di pagine.
+* Quando esplori la console **Sites**
+* Dopo l’utilizzo di **Ricerca** per individuare un set di pagine
 
 ![epp-01](assets/epp-01.png)
 
@@ -340,15 +339,15 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 
 * **Visualizza**
 
-   Quando visualizzi le Proprietà pagina per pagine multiple puoi vedere:
+   Quando visualizzi Proprietà pagina per più pagine puoi vedere:
 
-   * Un elenco delle pagine interessate.
+   * Un elenco delle pagine interessate
 
-      * Puoi selezionarle/deselezionarle se necessario.
+      * Se necessario, seleziona o deseleziona
    * Schede
 
-      * Come per la visualizzazione delle proprietà di una pagina singola, le proprietà sono ordinate in schede.
-   * Un sottoinsieme di proprietà.
+      * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
+   * Un sottoinsieme di proprietà
 
       * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
       * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
@@ -361,15 +360,15 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 
 * **Modifica**
 
-   Quando modifichi le Proprietà pagina per pagine multiple:
+   Durante la modifica delle proprietà pagina per più pagine:
 
    * Puoi aggiornare i valori nei campi disponibili.
 
-      * I nuovi valori saranno applicati a tutte le pagine selezionate quando fai clic su **Fine**.
-      * Quando il campo ha valori multipli (ad esempio i Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
+      * I nuovi valori verranno applicati a tutte le pagine selezionate quando si seleziona **Fine**.
+      * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
    * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
 
 
 >[!NOTE]
 >
->Il componente di pagina può essere configurato in modo da specificare i campi disponibili per la modifica collettiva. Consulta [Configurazione della pagina per la modifica collettiva delle proprietà di pagina](/help/sites-developing/bulk-editing.md).
+>Il componente pagina può essere configurato per specificare i campi disponibili per la modifica collettiva. Vedi [Configurazione della pagina per la modifica collettiva delle proprietà di pagina](/help/sites-developing/bulk-editing.md).
