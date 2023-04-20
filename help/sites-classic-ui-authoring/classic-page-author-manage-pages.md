@@ -1,8 +1,6 @@
 ---
 title: Creazione e organizzazione delle pagine
-seo-title: Creating and Organizing Pages
-description: Questa sezione illustra come creare e gestire pagine in AEM, per poi creare contenuti su di esse.
-seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
+description: Questa sezione descrive come creare e gestire le pagine con AEM per poi creare contenuti su di esse.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,35 +8,35 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 88%
+ht-degree: 14%
 
 ---
 
 # Creazione e organizzazione delle pagine{#creating-and-organizing-pages}
 
-Questa sezione illustra come creare e gestire pagine in Adobe Experience Manager (AEM), per poi [creare contenuti](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) su di esse.
+Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) su quelle pagine.
 
 >[!NOTE]
 >
->Il tuo account necessita dei [diritti di accesso](/help/sites-administering/security.md) e delle [autorizzazioni](/help/sites-administering/security.md#permissions) adeguati per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare, eliminare elementi.
+>Il tuo account deve [diritti di accesso appropriati](/help/sites-administering/security.md) e [permissions](/help/sites-administering/security.md#permissions) per intervenire sulle pagine, ad esempio per creare, copiare, spostare, modificare, eliminare elementi.
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore dovrai organizzare il sito Web in AEM. Questo richiede che vengano create e denominate delle pagine di contenuto affinché:
+In qualità di autore dovrai organizzare il tuo sito web all’interno di AEM. Ciò comporta la creazione e la denominazione delle pagine di contenuto in modo che:
 
-* possiate trovare facilmente tali pagine nell’ambiente di authoring;
-* i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
+* sono facilmente reperibili nell’ambiente di authoring
+* i visitatori del sito possono facilmente sfogliare le pagine nell’ambiente di pubblicazione
 
 È inoltre possibile utilizzare le [cartelle](#creating-a-new-folder) per organizzare i contenuti.
 
-La struttura di un sito Web può essere pensata come una *struttura ad albero* che include le pagine di contenuti. I nomi di queste pagine di contenuti vengono utilizzati per formare gli URL, mentre il titolo è visualizzato alla visualizzazione del contenuto della pagina.
+La struttura di un sito web può essere pensata come *struttura ad albero* che contiene le pagine di contenuto. I nomi di queste pagine di contenuto vengono utilizzati per formare gli URL, mentre il titolo viene visualizzato quando viene visualizzato il contenuto della pagina.
 
-Di seguito è riportato un estratto del sito Geometrixx in cui, a titolo di esempio, verrà eseguito l’accesso alla pagina `Triangle`:
+di seguito è riportato un estratto del sito di Geometrixx; dove, ad esempio, il `Triangle` è accessibile la pagina:
 
 * Ambiente di authoring
 
@@ -92,17 +90,17 @@ Quando si crea una nuova pagina, AEM [convalida il nome della pagina in base all
 
 L’implementazione e l’elenco dei caratteri consentiti variano leggermente a seconda dell’interfaccia utente (è più esteso per l’interfaccia touch), ma il minimo consentito è:
 
-* da “a” a “z”
-* da “A” a “Z”
-* da “0” a “9”
+* da &quot;a&quot; a &quot;z&quot;
+* Da &quot;A&quot; a &quot;Z&quot;
+* da &quot;0&quot; a &quot;9&quot;
 * _ (trattino basso)
 * `-` (trattino/segno meno)
 
-Utilizza esclusivamente questi caratteri se vuoi essere sicuro che vengano accettati e utilizzati (per informazioni complete sui caratteri consentiti, consulta le [convenzioni di denominazione](/help/sites-developing/naming-conventions.md)).
+Utilizza solo questi caratteri se vuoi essere sicuro che vengano accettati e utilizzati (per informazioni complete su tutti i caratteri consentiti, consulta [le convenzioni di denominazione](/help/sites-developing/naming-conventions.md)).
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) In entrambe le interfacce, un campo **Titolo** che contiene caratteri non validi viene accettato, ma tali caratteri vengono sostituiti nel nome derivato dal titolo. Ad esempio:
+Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) In entrambe le interfacce **Titolo** Il campo contenente caratteri non validi viene accettato, ma i caratteri non validi vengono sostituiti nel nome derivato dal campo. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -116,21 +114,21 @@ Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [con
 Nell’interfaccia classica, **impossibile immettere caratteri non validi** in **Nome** campo .
 
 >[!NOTE]
->Nell’interfaccia touch è possibile: **impossibile inviare caratteri non validi** in **Nome** campo . Quando AEM rileva i caratteri non validi, il campo viene evidenziato e un messaggio di avviso segnala i caratteri che devono essere rimossi o sostituiti.
+>Nell’interfaccia touch è possibile: **impossibile inviare caratteri non validi** in **Nome** campo . Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio di avviso che indica i caratteri che devono essere rimossi o sostituiti.
 
 >[!NOTE]
 >
->È consigliabile evitare di utilizzare codici di due lettere, come specificato dallo standard ISO-639-1, a meno che non si tratti dell’identificativo della lingua.
+>È consigliabile evitare di utilizzare un codice a due lettere come definito dallo standard ISO-639-1, a meno che non si tratti di una radice linguistica.
 >
->Per ulteriori informazioni, consulta l’argomento relativo alla [preparazione dei contenuti per la traduzione](/help/sites-administering/tc-prep.md).
+>Vedi [Preparazione del contenuto per la traduzione](/help/sites-administering/tc-prep.md) per ulteriori informazioni.
 
 ### Modelli {#templates}
 
-In AEM, un modello specifica un particolare tipo di pagina e funge da base per la creazione di nuove pagine.
+In AEM, un modello specifica un tipo di pagina specializzato. Un modello viene utilizzato come base per la creazione di nuove pagine.
 
-Il modello definisce la struttura di una pagina, inclusa un’immagine miniatura e altre proprietà. Ad esempio, potrai disporre di modelli separati per le pagine di prodotto, le sitemap e le informazioni di contatto. I modelli sono costituiti da [componenti](#components).
+Il modello definisce la struttura di una pagina; inclusa un&#39;immagine in miniatura e altre proprietà. Ad esempio, puoi disporre di modelli separati per le pagine di prodotto, le mappe dei siti e le informazioni di contatto. I modelli sono formati da [componenti](#components).
 
-Con AEM vengono forniti diversi modelli. I modelli disponibili dipendono dal singolo sito Web e le informazioni da fornire (per la creazione di nuove pagine) dipendono dall’interfaccia in uso. I campi chiave sono i seguenti:
+AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito web e le informazioni da fornire (per la creazione di una nuova pagina) dipendono dall’interfaccia in uso. I campi chiave sono i seguenti:
 
 * **Titolo**
 Il titolo visualizzato nella pagina web risultante.
@@ -149,7 +147,7 @@ I componenti sono gli elementi forniti da AEM che consentono di aggiungere speci
 * Immagine
 * Presentazione
 * Video
-* e molti altri.
+* molti altri
 
 Dopo aver creato e aperto una pagina è possibile [aggiungere contenuti utilizzando i componenti](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibile dal [barra laterale](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
@@ -157,168 +155,168 @@ Dopo aver creato e aperto una pagina è possibile [aggiungere contenuti utilizza
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-A meno che non siano state precedentemente create tutte le pagine necessarie, prima di iniziare a creare il contenuto è necessario creare una pagina:
+A meno che non siano state create tutte le pagine in anticipo, prima di iniziare a creare il contenuto devi creare una pagina:
 
-1. Nella console **Siti Web** seleziona il livello al quale desideri creare la nuova pagina.
+1. Da **Siti Web** seleziona il livello in cui desideri creare una nuova pagina.
 
-   Nell’esempio seguente viene creata una pagina al livello **Prodotti**, visualizzato nel riquadro di sinistra. Nel riquadro di destra sono visualizzate le pagine già presenti al livello **Prodotti**.
+   Nell’esempio seguente viene creata una pagina sotto il livello **Prodotti** - nel riquadro a sinistra; il riquadro a destra mostra le pagine già presenti al livello sotto **Prodotti**.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. Seleziona **Nuova pagina** nel menu **Nuovo** (fai clic sulla freccia accanto a **Nuovo**). Viene visualizzata la finestra **Crea pagina**.
+1. In **Nuovo...** (fai clic sulla freccia accanto a **Nuovo...**), seleziona **Nuova pagina...**. La **Crea pagina** si apre la finestra.
 
-   Fai clic sul menu **Nuovo** per accedere direttamente all’opzione **Nuova pagina**.
+   Clic **Nuovo...** agisce anche come una scorciatoia **Nuova pagina...** opzione .
 
-1. Nella finestra di dialogo **Crea pagina** effettua le seguenti operazioni:
+1. La **Crea pagina** consente di:
 
-   * Specifica un **Titolo** da mostrare all’utente.
-   * Specifica un **Nome**, che verrà utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
+   * Fornisci un **Titolo**; viene visualizzato all’utente.
+   * Fornisci un **Nome**; viene utilizzato per generare l’URI. Se non viene specificato, il nome verrà derivato dal titolo.
 
-      * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM [lo convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
-      * Nell’interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Nome**.
-   * Fate clic sul modello da utilizzare per creare la nuova pagina.
+      * Se fornisci una pagina **Nome** quando si crea una nuova pagina, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto da AEM e JCR.
+      * Nell’interfaccia classica, **impossibile immettere caratteri non validi** in **Nome** campo .
+   * Fai clic sul modello da utilizzare per creare la nuova pagina.
 
-      Tale modello viene utilizzato come base per la nuova pagina, ad esempio per determinare il layout di base di una pagina di contenuto.
+      Il modello viene utilizzato come base per la nuova pagina; ad esempio, per determinare il layout di base di una pagina di contenuto.
    >[!NOTE]
    >
-   >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
+   >Vedi [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Per creare una nuova pagina è necessario specificare almeno il **Titolo** e il modello richiesto.
+   Le informazioni minime necessarie per creare una nuova pagina sono le seguenti: **Titolo** e il modello richiesto.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
    >[!NOTE]
    >
-   >Se desideri usare caratteri Unicode negli URL, imposta la proprietà Alias (`sling:alias`) ([proprietà Pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
+   >Se desideri utilizzare caratteri unicode negli URL, imposta l’alias ( `sling:alias`), proprietà ([proprietà pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
-1. Fai clic su **Crea** per creare la pagina. Viene nuovamente visualizzata la console **Siti Web**, che ora contiene una voce per la nuova pagina.
+1. Fai clic su **Crea** per creare la pagina. Torna alla pagina **Siti Web** console che consente di visualizzare una voce per la nuova pagina.
 
    La console fornisce informazioni sulla pagina (ad esempio l’autore e la data dell’ultima modifica), che vengono aggiornate come necessario.
 
    >[!NOTE]
    >
-   >È inoltre possibile creare una pagina mentre si modifica una pagina esistente. Utilizzo di **Crea pagina figlia **dal **Pagina** crea una nuova pagina direttamente sotto la pagina in corso di modifica.
+   >Puoi anche creare una pagina mentre modifichi una pagina esistente. Utilizzo di **Crea pagina figlia **dal **Pagina** crea una nuova pagina direttamente sotto la pagina in corso di modifica.
 
 ### Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
-Per aprire la pagina [da modificare](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) sono disponibili vari metodi:
+È possibile aprire la pagina [modificato](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) con uno dei vari metodi:
 
-* Nella console **Siti Web** fai **doppio clic** sulla voce relativa alla pagina per aprirla in modalità di modifica.
+* Da **Siti Web** console **doppio clic** la voce della pagina per aprirla in modalità di modifica.
 
-* Nella console **Siti Web** fate **clic con il pulsante destro del mouse** sull’elemento pagina e scegliete **Apri** dal menu di scelta rapida.
+* Da **Siti Web** console **fare clic con il pulsante destro del mouse** (menu di scelta rapida) l’elemento di pagina, quindi seleziona **Apri** dal menu.
 
-* Dopo avere aperto una pagina, fai clic sui collegamenti ipertestuali per accedere ad altre pagine del sito e modificarle.
+* Dopo aver aperto una pagina, fai clic sui collegamenti ipertestuali per passare ad altre pagine del sito e modificarle.
 
 ### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
 
-La funzione di copia consente di copiare:
+Durante la copia, puoi copiare:
 
-* Una singola pagina
-* Una pagina con tutte le relative sottopagine
+* una singola pagina
+* una pagina con tutte le relative sottopagine
 
-1. Nella console **Siti Web** seleziona la pagina da copiare.
-
-   >[!NOTE]
-   >
-   >In questa fase non c’è differenza tra la copia di una singola pagina e la copia di una pagina con tutte le relative sottopagine.
-
-1. Fate clic su **Copia**.
-
-1. Passate alla nuova posizione e fate clic su:
-
-   * **Incolla**, per incollare la pagina con tutte le relative sottopagine
-   * **Maiusc+Incolla**, per incollare solo la pagina selezionata
-
-   La pagina o le pagine vengono incollate nella nuova posizione.
+1. Da **Siti Web** seleziona la pagina da copiare.
 
    >[!NOTE]
    >
-   >Se è già presente una pagina con lo stesso nome, il nome della pagina copiata viene modificato automaticamente.
+   >A questo punto, è irrilevante se si desidera copiare una singola pagina o le pagine secondarie sottostanti.
+
+1. Fai clic su **Copia**.
+
+1. Passa alla nuova posizione e fai clic su:
+
+   * **Incolla** - per incollare la pagina con tutte le relative sottopagine
+   * **Maiusc+Incolla** - per incollare solo la pagina selezionata
+
+   Le pagine vengono incollate nella nuova posizione.
 
    >[!NOTE]
    >
-   >Puoi anche usare **Copia pagina** dalla scheda **Pagina** della barra laterale. Viene aperta una finestra di dialogo in cui puoi specificare la destinazione ecc.
+   >Se una pagina esistente ha già lo stesso nome, il nome della pagina può essere modificato automaticamente.
+
+   >[!NOTE]
+   >
+   >È inoltre possibile utilizzare **Copia pagina** dal **Pagina** scheda della barra laterale. Viene visualizzata una finestra di dialogo in cui puoi specificare la destinazione e così via.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-page}
 
 >[!NOTE]
 >
->Quando si rinomina una pagina, occorre rispettare le [convenzioni di denominazione delle pagine](#page-naming-conventions).
+>Anche la ridenominazione di una pagina è soggetta alla [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della pagina.
 
-La procedura consente sia di spostare che di rinominare la pagina. La stessa procedura consente di effettuare le seguenti operazioni:
+La procedura per spostare o rinominare una pagina è la stessa. Con la stessa azione puoi:
 
-* Spostare una pagina in un nuovo percorso
-* Rinominare una pagina mantenendola nello stesso percorso
-* Spostare una pagina in un nuovo percorso e rinominarla
+* spostare una pagina in un nuovo percorso
+* rinominare una pagina nella stessa posizione
+* spostare una pagina in un nuovo percorso e rinominarla
 
-In AEM è disponibile una funzionalità che consente di aggiornare i collegamenti interni alla pagina rinominata o spostata. L’operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
+AEM offre la funzionalità di aggiornare i collegamenti interni alla pagina rinominata o spostata. Questa operazione può essere eseguita pagina per pagina per garantire la massima flessibilità.
 
 Per spostare o rinominare una pagina:
 
-1. Lo spostamento può essere effettuato tramite diversi metodi:
+1. Esistono diversi metodi per attivare uno spostamento:
 
-   * Nella console **Siti Web** fate clic per selezionare la pagina, quindi selezionate **Sposta**.
-   * Nella console **Siti Web** puoi inoltre selezionare l’elemento di pagina, quindi fare **clic con il pulsante destro del mouse** e scegliere **Sposta**
-   * Mentre modifichi una pagina puoi selezionare **Sposta pagina** dalla scheda **Pagina** della barra laterale.
+   * Da **Siti Web** console, fai clic su per selezionare la pagina, quindi seleziona **Sposta...**
+   * Da **Siti Web** è inoltre possibile selezionare l’elemento pagina, quindi **fare clic con il pulsante destro del mouse** e seleziona **Sposta...**
+   * Durante la modifica di una pagina è possibile selezionare **Sposta pagina** dal **Pagina** scheda della barra laterale.
 
-1. Viene visualizzata la finestra **Sposta**, in cui è possibile specificare una nuova posizione, un nuovo nome per la pagina o entrambi.
+1. La **Sposta** finestre aperte; qui puoi specificare una nuova posizione, un nuovo nome per la pagina o entrambi.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Vengono inoltre elencate tutte le pagine che fanno riferimento alla pagina da spostare. A seconda della pagina che contiene il riferimento, può essere possibile modificare direttamente tali collegamenti e/o ripubblicare la pagina.
+   Vengono inoltre elencate tutte le pagine che fanno riferimento alla pagina da spostare. A seconda dello stato della pagina di riferimento, è possibile modificare tali collegamenti sulle pagine e/o ripubblicarli.
 
-1. Compila i seguenti campi:
+1. Compila i campi seguenti, a seconda dei casi:
 
    * **Destinazione**
 
-      Usate la mappa del sito (disponibile dal selettore a discesa) per selezionare la posizione in cui spostare la pagina.
+      Utilizza la mappa del sito (disponibile dal selettore a discesa) per selezionare il percorso in cui spostare la pagina.
 
-      Se desiderate solo rinominare la pagina, ignorate questo campo.
+      Se la pagina viene rinominata, ignora questo campo.
 
    * **Sposta**
 
-      Specificate la pagina da spostare. In genere questo campo viene precompilato per impostazione predefinita, a seconda di come e dove è stata avviata l’operazione di spostamento.
+      Specifica la pagina da spostare. In genere questo campo viene precompilato per impostazione predefinita, a seconda di come e dove è stata avviata l’azione di spostamento.
 
    * **Rinomina in**
 
-      Per impostazione predefinita viene visualizzata l’etichetta della pagina corrente. Se necessario, specificate la nuova etichetta della pagina.
+      Per impostazione predefinita viene visualizzata l’etichetta della pagina corrente. Specifica la nuova etichetta di pagina, se necessario.
 
    * **Regola**
 
-      Nelle pagine elencate, vengono aggiornati i collegamenti che puntano alla pagina spostata. Se ad esempio la pagina A include collegamenti alla pagina B, quando si sposta la pagina B AEM modifica automaticamente i collegamenti presenti nella pagina A.
+      Aggiorna i collegamenti nella pagina elencata che puntano alla pagina spostata: ad esempio, se la pagina A include collegamenti alla pagina B, AEM regola i collegamenti nella pagina A nel caso in cui si sposti la pagina B.
 
-      Questa casella di controllo può essere selezionata o deselezionata per ogni singola pagina contenente il riferimento.
+      Questa opzione può essere selezionata/deselezionata per ogni singola pagina contenente un riferimento.
 
    * **Ripubblica**
 
-      Ripubblica la pagina che contiene il riferimento. Anche questa opzione può essere selezionata per ogni singola pagina.
+      Ripubblica la pagina di riferimento; anche questa opzione può essere selezionata per ogni singola pagina.
    >[!NOTE]
    >
-   >Se la pagina era già stata attivata, lo spostamento ne determina automaticamente la disattivazione. Per impostazione predefinita, viene riattivato al termine dello spostamento, ma questo può essere modificato deselezionando la **Ripubblica** per la pagina nel **Sposta** finestra.
+   >Se la pagina era già stata attivata, lo spostamento la disattiverà automaticamente. Per impostazione predefinita, viene riattivato al termine dello spostamento, ma questo può essere modificato deselezionando la **Ripubblica** per la pagina nel **Sposta** finestra.
 
-1. Fai clic su **Sposta**. Verrà richiesto di confermare l’operazione. Fai clic su **OK** per confermare.
+1. Fai clic su **Sposta**. Sarà richiesta la conferma. Fai clic su **OK** per confermare.
 
    >[!NOTE]
    >
-   >Il titolo della pagina non verrà aggiornato.
+   >Il titolo della pagina non viene aggiornato.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
-1. Per eliminare una pagina è possibile procedere in vari modi:
+1. È possibile eliminare una pagina da diverse posizioni:
 
-   * Nella console **Siti Web** fai clic per selezionare la pagina, quindi fai clic con il pulsante destro del mouse e scegli **Elimina** dal menu visualizzato.
-   * Nella console **Siti Web** fai clic per selezionare la pagina, quindi seleziona **Elimina** dal menu della barra degli strumenti.
-   * Nella barra laterale utilizza la scheda **Pagina** per selezionare **Elimina pagina**. La pagina attualmente aperta viene eliminata.
+   * All&#39;interno di **Siti Web** console, fai clic per selezionare la pagina, quindi fai clic con il pulsante destro del mouse e seleziona **Elimina** dal menu risultante.
+   * All&#39;interno di **Siti Web** console, fai clic su per selezionare la pagina, quindi seleziona **Elimina** dal menu della barra degli strumenti.
+   * Nella barra laterale utilizza la **Pagina** scheda da selezionare **Elimina pagina** : consente di eliminare la pagina attualmente aperta.
 
-1. Poiché l’operazione non può essere annullata, dopo aver scelto di eliminare la pagina è necessario confermare la richiesta.
+1. Dopo aver selezionato di eliminare una pagina è necessario confermare la richiesta, poiché l’azione non può essere annullata.
 
    >[!NOTE]
    >
-   >Dopo l’eliminazione, se la pagina è stata pubblicata è possibile ripristinarne l’ultima versione o una versione specifica. Tuttavia, se erano state apportate ulteriori modifiche, la versione ripristinata potrebbe non avere esattamente lo stesso contenuto dell’ultima. Per ulteriori informazioni, consulta [Come ripristinare le pagine](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages).
+   >Dopo l’eliminazione, se la pagina è stata pubblicata è possibile ripristinare l’ultima versione (o una versione specifica), ma questo potrebbe non avere esattamente lo stesso contenuto dell’ultima versione se sono state apportate ulteriori modifiche. Vedi [Come ripristinare le pagine](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) per ulteriori dettagli.
 
 >[!NOTE]
 >
->Se una pagina è già stata attivata, viene automaticamente disattivata prima dell’eliminazione.
+>Se una pagina è già stata attivata, verrà automaticamente disattivata prima dell’eliminazione.
 
 ### Blocco di una pagina   {#locking-a-page}
 
@@ -328,11 +326,11 @@ Per spostare o rinominare una pagina:
 
 >[!NOTE]
 >
->Anche quando si rinomina una cartella occorre rispettare le [convenzioni di denominazione delle pagine](#page-naming-conventions).
+>Anche le cartelle sono soggette al [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della cartella.
 
-1. Apri la console **Siti Web** e passa alla posizione desiderata.
+1. Apri **Siti Web** e passa alla posizione desiderata.
 1. In **Nuovo...** (fai clic sulla freccia accanto a **Nuovo...**), seleziona **Nuova cartella...**.
-1. Verrà visualizzata la finestra di dialogo **Crea cartella**. Qui è possibile specificare il **Nome** e il **Titolo**:
+1. La **Crea cartella** si aprirà la finestra di dialogo . Nella finestra puoi immettere il **Nome** e il **Titolo**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
