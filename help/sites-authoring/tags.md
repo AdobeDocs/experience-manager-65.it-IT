@@ -1,8 +1,6 @@
 ---
-title: Utilizzo dei tag
-seo-title: Using Tags
-description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web
-seo-description: Tags are a quick and easy method of classifying content within a website
+title: Utilizzo di tag per classificare il contenuto di un sito web
+description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 87%
+source-wordcount: '575'
+ht-degree: 70%
 
 ---
 
-# Utilizzo dei tag  {#using-tags}
+# Utilizzo dei tag{#using-tags}
 
-I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
+I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati parole chiave o etichette da allegare a una pagina, a una risorsa o ad altro contenuto per consentire la ricerca di tale contenuto e del relativo contenuto.
 
 * Vedi [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, vedi [Tagging per sviluppatori](/help/sites-developing/tags.md).
@@ -36,9 +34,9 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 1. **Abilitazione SEO**: i tag applicati come proprietà della pagina vengono visualizzati automaticamente nei metatag della pagina, rendendola visibile ai motori di ricerca.
 1. **Funzionalità sofisticate e al contempo semplici**: per creare i tag, basta selezionare una parola e fare clic su un pulsante. In seguito, è possibile aggiungere un titolo, una descrizione ed etichette illimitate per fornire ulteriore semantica al tag.
 1. **Coerenza di base**: il sistema di assegnazione tag è un componente di base di AEM ed è utilizzato in tutte le funzioni AEM per la classificazione dei contenuti. Inoltre, per gli sviluppatori è disponibile l’API di assegnazione tag che consente di creare applicazioni abilitate per l’assegnazione tag con accesso alle stesse tassonomie.
-1. **Struttura e flessibilità**: AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È molto efficace anche per la gestione delle informazioni non strutturate, grazie alla funzione integrata di ricerca testuale. L’assegnazione di tag offre i vantaggi delle struttura e della flessibilità.
+1. **Struttura e flessibilità**: AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È altrettanto potente quando si lavora con informazioni non strutturate, a causa della ricerca full-text integrata. L’assegnazione tag combina i punti di forza sia della struttura che della flessibilità.
 
-Quando progetti la struttura dei contenuti di un sito e lo schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dai tag.
+Durante la progettazione della struttura del contenuto per un sito e dello schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dall’assegnazione di tag.
 
 ## Applicazione dei tag   {#applying-tags}
 
@@ -50,7 +48,7 @@ Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Propr
 
 ### Pubblicazione dei tag {#publishing-tags}
 
-Come avviene per le pagine, su tag e namespace è possibile effettuare le operazioni descritte di seguito.
+Come per le pagine, è possibile eseguire le seguenti operazioni su tag e namespace:
 
 **Attiva**
 
