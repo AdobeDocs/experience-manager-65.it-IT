@@ -1,8 +1,6 @@
 ---
-title: Layout reattivo
-seo-title: Responsive Layout
-description: AEM consente di realizzare un layout reattivo per le pagine
-seo-description: AEM allows you to realize a responsive layout for your pages
+title: Layout reattivo per le pagine dei contenuti
+description: Adobe Experience Manager consente di realizzare un layout dinamico per le pagine.
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,27 +8,27 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 93%
+source-wordcount: '1787'
+ht-degree: 54%
 
 ---
 
-# Layout reattivo  {#responsive-layout}
+# Layout reattivo{#responsive-layout}
 
-AEM consente di creare un layout reattivo per le pagine mediante il componente **Contenitore di layout**.
+AEM consente di avere un layout reattivo per le pagine utilizzando la **Contenitore di layout** componente.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Con questa griglia è possibile riorganizzare il layout in base alla dimensione e al formato del dispositivo o della finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo/finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
 
-Il Contenitore di layout:
+Contenitore di layout:
 
-* Fornisce ancoraggio orizzontale sulla griglia, unitamente alla possibilità di posizionare componenti affiancati sulla griglia e definire quando dovrebbero venire compressi/ridisposti.
-* Utilizza punti di interruzione predefiniti (ad es. per smartphone, tablet ecc.) per definire il comportamento del contenuto per i relativi dispositivi e orientamenti.
+* Fornisce ancoraggio orizzontale sulla griglia, insieme alla possibilità di posizionare i componenti affiancati nella griglia e definire quando dovrebbero venire compressi o ridisposti.
+* Utilizza punti di interruzione predefiniti (ad esempio per telefono, tablet, ecc.) per definire il comportamento richiesto del contenuto per i relativi dispositivi/orientamento.
 
-   * Ad esempio, puoi personalizzare le dimensioni del componente o specificare se il componente può essere visualizzato su dispositivi specifici.
+   * Ad esempio, puoi personalizzare la dimensione del componente o se il componente può essere visualizzato su dispositivi specifici.
 
-* Può essere nidificato per abilitare il controllo delle colonne.
+* Può essere nidificato per consentire il controllo delle colonne.
 
 L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti per dispositivi specifici utilizzando l’emulatore.
 
@@ -51,9 +49,9 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 * [**Emulatore**](#selecting-a-device-to-emulate)
 Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
 
-Con questi meccanismi basati su una griglia reattiva è possibile:
+Con questi meccanismi a griglia reattiva è possibile:
 
-* Utilizzare i punti di interruzione per definire il layout di contenuti diversi in base alla larghezza del dispositivo (in relazione al tipo di dispositivo e all’orientamento).
+* Utilizza i punti di interruzione per definire layout di contenuto diversi in base alla larghezza del dispositivo (in relazione al tipo di dispositivo e all’orientamento).
 * Utilizzare questi stessi punti di interruzione e layout di contenuti per assicurare che il contenuto sia dinamico rispetto alle dimensioni della finestra del browser sul desktop.
 * Utilizzare l’ancoraggio orizzontale sulla griglia per posizionarvi i componenti, ridimensionarli, definire quando dovrebbero venire compressi o ridisposti in modo da risultare affiancati o sovrapposti.
 * Nascondere componenti per layout di dispositivo specifici.
@@ -75,7 +73,7 @@ Quando si crea il contenuto del sito web è importante assicurarsi che venga vis
 
 AEM consente di definire layout dipendenti dalla larghezza del dispositivo:
 
-* L’emulatore consente di emulare i layout su una gamma di dispositivi. Oltre al tipo di dispositivo, anche l’orientamento impostato dall’opzione **Ruota dispositivo** può influenzare il punto di interruzione che viene selezionato quando cambia la larghezza.
+* L’emulatore consente di emulare questi layout su una serie di dispositivi. Oltre al tipo di dispositivo, anche l’orientamento impostato dall’opzione **Ruota dispositivo** può influenzare il punto di interruzione che viene selezionato quando cambia la larghezza.
 * I punti di interruzione sono i punti che separano le definizioni di layout.
 
    * Essi definiscono a tutti gli effetti la larghezza massima (in pixel) di qualsiasi dispositivo che utilizza un layout specifico.
@@ -89,9 +87,9 @@ Il dispositivo **Desktop** è privo di una larghezza specifica e fa riferimento 
 >
 >È teoricamente possibile definire punti di interruzione per ogni singolo dispositivo, ma questo rende decisamente più macchinose la definizione e la manutenzione dei layout.
 
-Quando utilizzi l’emulatore e selezioni un dispositivo specifico per l’emulazione, la definizione del layout e il relativo punto di interruzione vengono evidenziati. Eventuali modifiche apportate al layout verranno riconosciute per altri dispositivi su cui si applica il punto di interruzione, ovvero qualsiasi dispositivo disponibile a sinistra del marcatore del punto di interruzione attivo, ma prima del marcatore del punto di interruzione successivo.
+Quando utilizzi l’emulatore, selezioni un dispositivo specifico per l’emulazione e la definizione del layout; viene evidenziato anche il relativo punto di interruzione. Eventuali modifiche apportate al layout saranno applicabili agli altri dispositivi a cui si applica il punto di interruzione, ovvero a tutti i dispositivi posizionati a sinistra del marcatore del punto di interruzione attivo, ma prima del marcatore del punto di interruzione successivo.
 
-Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 540 pixel) per l’emulazione e il layout, verrà attivato anche il punto di interruzione **Telefono** (definito con 768 pixel). Tutte le modifiche di layout apportate per **iPhone 6** diverranno applicabili per altri dispositivi nel punto di interruzione **Telefoni**, come **iPhone 5** (definito con 320 pixel).
+Ad esempio, quando selezioni il dispositivo **iPhone 6 Plus** (definito con una larghezza di 540 pixel) per l’emulazione e il layout, il punto di interruzione **Telefono** (definito a 768 pixel) verrà attivato anche. Qualsiasi modifica apportata al layout per **iPhone 6** sono applicabili ad altri dispositivi ai sensi del **Telefoni** punto di interruzione, ad esempio **iPhone 5** (definito a 320 pixel).
 
 ![screen_shot_2018-03-23at084058](assets/screen_shot_2018-03-23at084058.png)
 
@@ -111,7 +109,7 @@ Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 
 
    La barra degli strumenti dell’emulatore mostra le seguenti opzioni di layout aggiuntive:
 
-   * **Ruota dispositivo**: consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
+   * **Ruota dispositivo** - Consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
 
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -119,10 +117,10 @@ Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 
 
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
-1. Per selezionare un dispositivo specifico da emulare è possibile:
+1. Per selezionare un dispositivo specifico da emulare è possibile effettuare le seguenti operazioni:
 
-   * Utilizzare l’icona Seleziona il dispositivo e scegliere il dispositivo dal selettore a discesa.
-   * Toccare o fare clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
+   * Utilizza l’icona Seleziona il dispositivo e seleziona da un selettore a discesa.
+   * Tocca o fai clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -133,12 +131,12 @@ Ad esempio, se selezioni il dispositivo **iPhone 6 Plus** (con una larghezza di 
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * La linea punteggiata blu rappresenta la *piega* per il dispositivo selezionato (qui un **iPhone 6)**.
+   * La linea punteggiata blu rappresenta la *piegare* per il dispositivo selezionato (qui **iPhone 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
-   * La piega può essere anche considerata l’interruzione di riga della pagina (da non confondere con i [punti di interruzione](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Questa è visualizzata per comodità, per mostrare quale parte del contenuto è visibile all’utente sul dispositivo prima di scorrere in basso.
-   * La riga della piega non viene visualizzata se l’altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
+   * La piega può anche essere considerata un’interruzione di riga della pagina (da non confondere con [punti di interruzione](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzata per comodità, per mostrare quale parte del contenuto verrà visualizzata dall’utente sul dispositivo prima dello scorrimento.
+   * La linea della piega non viene visualizzata se l&#39;altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
    * La piega è indicata per comodità dell’autore e non viene visualizzata nella pagina pubblicata.
 
 
@@ -153,7 +151,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 
 >[!NOTE]
 >
->Se non è già disponibile, il **Contenitore di layout** deve essere [attivato esplicitamente per un sistema paragrafo/pagina](/help/sites-administering/configuring-responsive-layout.md) (ad esempio, utilizzando la modalità [**Progettazione**).](/help/sites-authoring/default-components-designmode.md)
+>Se non è già disponibile, la **Contenitore di layout** devono essere esplicitamente [attivato per un sistema paragrafo/pagina](/help/sites-administering/configuring-responsive-layout.md) (ad esempio, utilizzando [**Progettazione** modalità](/help/sites-authoring/default-components-designmode.md)).
 
 1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché verrà visualizzato il segnaposto **Trascina qui i componenti**.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
@@ -166,9 +164,9 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
 >[!CAUTION]
 >
->Dato che un Contenitore di layout è un sistema paragrafo, la sua eliminazione comporta l’eliminazione della griglia di layout e di tutti i componenti (e relativo contenuto) inclusi all’interno del contenitore.
+>Poiché un contenitore di layout è un sistema paragrafo, l’eliminazione del componente comporta l’eliminazione della griglia di layout e di tutti i componenti (e del relativo contenuto) contenuti all’interno del contenitore .
 
-1. Se passi il cursore del mouse o tocchi il segnaposto di una griglia, viene visualizzato il menu delle azioni.
+1. Se passi il cursore del mouse o tocchi il segnaposto della griglia, viene visualizzato il menu delle azioni.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -176,12 +174,12 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
    ![](do-not-localize/screen_shot_2018-03-23at085417.png)
 
-1. Se il componente del layout è nidificato, seleziona l’opzione **Elemento padre** per avere una selezione a discesa, che consente di selezionare il contenitore nidificato del layout o il relativo elemento padre.
+1. Se il componente di layout è nidificato, selezionando la **Elemento padre** presenta una selezione a discesa, che consente di selezionare il contenitore di layout nidificato o quello principale.
 
-   Quando passi il cursore del mouse sui nomi dei contenitori nel menu a discesa, sulla pagina vengono visualizzati i relativi contorni.
+   Quando passi il puntatore del mouse sui nomi dei contenitori nel menu a discesa, i relativi contorni verranno visualizzati sulla pagina.
 
    * Il contenitore di layout nidificato inferiore presenta un contorno nero.
-   * Il contenitore di layout nidificato inferiore successivo è contornato in grigio scuro.
+   * Il contenitore di layout nidificato inferiore successivo è di colore grigio scuro.
    * Ogni contenitore successivo viene visualizzato in una tonalità di grigio più chiara.
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
@@ -205,14 +203,14 @@ La modalità **Layout** può essere avviata in due modi.
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
-* Quando [si modifica un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Quando [modifica di un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Utilizzando l’opzione **Layout** nel menu Azioni rapide del componente è possibile passare alla modalità **Layout**.
-   * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
+   * Utilizzando **Layout** nel menu Azioni rapide del componente, puoi passare a **Layout** modalità.
+   * **Layout** persiste durante la modifica del componente e torna a **Modifica** una volta che lo stato attivo diventa un altro componente.
 
-In modalità Layout puoi eseguire diverse azioni su una griglia:
+In modalità layout è possibile eseguire varie azioni su una griglia:
 
-* Ridimensionare i componenti di contenuto utilizzando i punti blu. Il ridimensionamento sarà sempre con ancoraggio sulla griglia. Quando si esegue un’operazione di ridimensionamento, verrà visualizzata la griglia di sfondo per facilitare l’allineamento:
+* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento sarà sempre snap-in-griglia. Quando si ridimensiona la griglia di sfondo, questa viene visualizzata per facilitare l’allineamento:
 
    ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
@@ -235,9 +233,9 @@ In modalità Layout puoi eseguire diverse azioni su una griglia:
       Il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Viene quindi visualizzata la barra degli strumenti per questa modalità.
+* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente del layout e dei componenti che ne fanno parte. Esempio:
+   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti che lo appartengono. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
