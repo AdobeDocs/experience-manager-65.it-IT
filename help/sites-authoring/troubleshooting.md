@@ -1,8 +1,6 @@
 ---
-title: Risoluzione di problemi AEM nell’ambiente di authoring
-seo-title: Troubleshooting AEM when Authoring
-description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
-seo-description: Some issues that you might encounter when using AEM
+title: Risoluzione dei problemi relativi all’authoring in AEM
+description: Alcuni problemi che potresti riscontrare durante l’utilizzo di AEM.
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,38 +8,38 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '295'
+ht-degree: 47%
 
 ---
 
-# Risoluzione di problemi AEM nell’ambiente di authoring {#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM nell’ambiente di authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
 >[!NOTE]
 >
->Quando si verificano problemi, è anche utile controllare l’elenco dei [Problemi noti](/help/release-notes/release-notes.md) per l’istanza (release e service pack).
+>Quando si verificano problemi, è anche utile controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
 
 >[!NOTE]
 >
->Gli utenti con diritti di amministratore possono seguire i metodi di risoluzione di problemi descritti in [Troubleshooting AEM (for Administrators) ](/help/sites-administering/troubleshoot.md)(Risoluzione di problemi in AEM - Per amministratori). Se non disponi delle autorizzazioni necessarie, rivolgiti al tuo amministratore di sistema per la risoluzione dei problemi AEM.
+>Gli utenti con privilegi di amministratore possono utilizzare i metodi di risoluzione dei problemi descritti in [AEM per la risoluzione dei problemi (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti all’amministratore di sistema per informazioni sulla risoluzione dei AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Hai apportato delle modifiche a una pagina e l’hai replicata sul sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la *vecchia* versione della pagina.
+   * Hai apportato modifiche a una pagina e l&#39;hai replicata sul sito pubblicato, ma la *vecchio* sul sito di pubblicazione viene ancora visualizzata la versione della pagina.
 
 * **Motivo**:
 
-   * Questo può dipendere da diverse cause. In genere si tratta di un problema di cache (del browser locale o del Dispatcher), ma a volte può dipendere da un problema relativo alla coda di replica.
+   * Questo può avere diverse cause, più spesso la cache (sia il browser locale che il Dispatcher), anche se a volte può essere un problema con la coda di replica.
 
 * **Soluzioni**:
 
-   * Esistono diverse possibilità:
+   * Ci sono diverse possibilità qui:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
    * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
@@ -59,7 +57,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Motivo**:
 
-   * In rari casi, un’azione precedente potrebbe pregiudicare il funzionamento della barra degli strumenti.
+   * In rari casi, un’azione precedente potrebbe influenzare la barra degli strumenti.
 
 * **Soluzione**:
 
