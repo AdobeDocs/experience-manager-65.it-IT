@@ -1,8 +1,6 @@
 ---
 title: Lanci
-seo-title: Launches
-description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine.
-seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
+description: Crea un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 70%
+ht-degree: 24%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 70%
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
-Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo a sorgente e quindi attivi le pagine sorgente (livello superiore). Con la promozione il contenuto del lancio viene duplicato sulle pagine sorgente. La promozione può essere effettuata manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi nuovamente all’origine e quindi attivi le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
 >[!NOTE]
 >
