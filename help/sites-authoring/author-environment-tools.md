@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 44%
+source-wordcount: '2222'
+ht-degree: 45%
 
 ---
 
@@ -264,7 +264,7 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Tim
 
 ## Informazioni sulle pagine {#page-information}
 
-Il pulsante Informazioni pagina (icona equalizzatore) apre un menu che fornisce anche dettagli sull’ultima modifica e sull’ultima pubblicazione. A seconda delle caratteristiche della pagina, del sito e delle istanze, potrebbero essere disponibili più o meno opzioni:
+Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dettagli sull’ultima operazione di modifica e di pubblicazione. A seconda delle caratteristiche della pagina, del sito e delle istanze, potrebbero essere disponibili più o meno opzioni:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ Il pulsante Informazioni pagina (icona equalizzatore) apre un menu che fornisce 
 * [Modifica modello](/help/sites-authoring/templates.md); quando la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Visualizza come pubblicato](/help/sites-authoring/editing-content.md#view-as-published)
-* Visualizza in Amministratore; apre la pagina nel [console siti](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* [Visualizza in Amministrazione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aiuto](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Ad esempio, se del caso, **Informazioni pagina** dispone anche delle seguenti opzioni:
