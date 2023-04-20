@@ -1,8 +1,6 @@
 ---
 title: Pubblicazione delle pagine
-seo-title: Publishing Pages
-description: Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, devi renderli disponibili nel sito web pubblico.
-seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
+description: Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, rendili disponibili nel sito web pubblico.
 uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +9,24 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 79%
+source-wordcount: '1036'
+ht-degree: 6%
 
 ---
 
 # Pubblicazione delle pagine{#publishing-pages}
 
-Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, devi renderli disponibili nel sito Web pubblico (l’ambiente di pubblicazione).
+Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, rendili disponibili nel sito web pubblico (l’ambiente di pubblicazione).
 
-Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Quando si pubblica e si annulla la pubblicazione di una pagina, quest’ultima rimane disponibile nell’ambiente di authoring per ulteriori modifiche, finché non decidi di eliminarla.
+Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione della pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche, finché non viene eliminata.
 
-Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
+Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
 
 >[!NOTE]
 >
->Alcuni termini correlati alla pubblicazione possono creare confusione:
+>Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
    >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
@@ -43,68 +41,69 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 
 >[!NOTE]
 >
->Se non disponi delle autorizzazioni necessarie per pubblicare una specifica pagina:
+>Se non disponi dei privilegi necessari per pubblicare una pagina specifica:
 >
->* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
->* Viene visualizzato brevemente un messaggio di notifica al riguardo.
+>* Viene avviato un flusso di lavoro per inviare alla persona appropriata la richiesta di pubblicazione.
+>* Viene visualizzato un messaggio di notifica (per un breve periodo di tempo).
 >
 
 
 ## Pubblicazione di una pagina {#publishing-a-page}
 
-Per attivare una pagina è possibile procedere in due modi:
+Esistono due metodi per attivare una pagina:
 
-* [dalla console Siti Web](#activating-a-page-from-the-websites-console)
-* [dalla barra laterale nella pagina](#activating-a-page-from-sidekick)
+* [dalla console Siti web](#activating-a-page-from-the-websites-console)
+* [dalla barra laterale della pagina stessa](#activating-a-page-from-sidekick)
 
 >[!NOTE]
 >
->È inoltre possibile attivare una struttura ad albero secondaria, composta da più pagine, utilizzando [Attiva albero](#howtoactivateacompletesectiontreeofyourwebsite) nella console Strumenti.
+>È inoltre possibile attivare una struttura secondaria composta da più pagine utilizzando [Attiva albero](#howtoactivateacompletesectiontreeofyourwebsite) nella console Strumenti.
 
-### Attivazione di una pagina dalla console Siti web {#activating-a-page-from-the-websites-console}
+### Attivazione di una pagina dalla console Siti Web {#activating-a-page-from-the-websites-console}
 
-È possibile attivare le pagine dalla console Siti web. Dopo avere aperto una pagina e modificato il contenuto, torna alla console Siti web.
+Puoi attivare le pagine nella console Siti web . Dopo aver aperto una pagina e modificato il contenuto, torna alla console Siti Web :
 
-1. Nella console Siti web seleziona la pagina da attivare.
-1. Seleziona **Attiva** nel menu principale o nel menu a discesa dell’elemento pagina selezionato.
+1. Nella console Siti Web selezionate la pagina da attivare.
+1. Seleziona **Attiva**, dal menu principale o dal menu a discesa dell’elemento pagina selezionato.
 
-   Per attivare il contenuto della pagina e di tutte le relative sottopagine, utilizza la console [**Strumenti**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Per attivare il contenuto della pagina e di tutte le relative sottopagine, utilizza la funzione [**Strumenti** console](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
    >[!NOTE]
    >
-   >Se necessario viene richiesto di attivare o riattivare tutte le risorse eventualmente collegate alla pagina. In questo caso seleziona o deseleziona le caselle di controllo per l’attivazione di tali risorse.
+   >Se necessario, AEM richiede di attivare o riattivare tutte le risorse collegate alla pagina. Puoi selezionare o deselezionare le caselle di controllo per attivare tali risorse.
 
-1. Se necessario viene richiesto di attivare o riattivare tutte le risorse eventualmente collegate alla pagina. In questo caso seleziona o deseleziona le caselle di controllo per l’attivazione di tali risorse.
+1. Se necessario, AEM richiede di attivare o riattivare tutte le risorse collegate alla pagina. Puoi selezionare o deselezionare le caselle di controllo per attivare tali risorse.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. Il contenuto selezionato viene attivato in WCM AEM. Le pagine pubblicate vengono visualizzate in verde nella [console Siti web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), con informazioni relative all’utente che ha attivato il contenuto e alla data/ora dell’attivazione.
+1. AEM WCM attiva il contenuto selezionato. La pagina o le pagine pubblicate vengono visualizzate nel [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (in verde) con informazioni su chi ha attivato il contenuto e sulla data e ora dell’attivazione.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
 ### Attivazione di una pagina dalla barra laterale {#activating-a-page-from-sidekick}
 
-È inoltre possibile attivare la pagina quando viene aperta per la modifica.
+È inoltre possibile attivare una pagina quando è aperta per la modifica.
 
-Dopo avere aperto la pagina e modificato il contenuto:
+Dopo aver aperto la pagina e modificato il suo contenuto:
 
-1. Seleziona la scheda **Pagina** nella barra laterale.
-1. Fai clic su **Attiva pagina**. Nella parte superiore destra della finestra viene visualizzato un messaggio di conferma dell’attivazione della pagina.
+1. Seleziona la **Pagina** nella barra laterale.
+1. Fai clic su **Attiva pagina**.
+Nella parte superiore destra della finestra viene visualizzato un messaggio di conferma dell’attivazione della pagina.
 
 ## Annullamento della pubblicazione di una pagina {#unpublishing-a-page}
 
 Per rimuovere una pagina dall’ambiente di pubblicazione, è necessario disattivarne il contenuto.
 
-Per disattivare la pagina:
+Per disattivare una pagina:
 
-1. Nella console Siti web seleziona la pagina da disattivare.
-1. Seleziona **Disattiva** nel menu principale o nel menu a discesa dell’elemento pagina selezionato. Viene richiesto di confermare l’eliminazione.
+1. Nella console Siti Web selezionate la pagina da disattivare.
+1. Seleziona **Disattiva**, dal menu principale o dal menu a discesa dell’elemento pagina selezionato. Viene richiesto di confermare l’eliminazione.
 
    ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
 
-1. Aggiorna la [console Siti web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Il contenuto viene contrassegnato in rosso, per indicare che non è più pubblicato.
+1. Aggiorna [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) e il contenuto è contrassegnato in rosso, per indicare che non è più pubblicato.
 
    ![screen_shot_2012-02-08at15018pm](assets/screen_shot_2012-02-08at15018pm.png)
 
@@ -112,20 +111,20 @@ Per disattivare la pagina:
 
 ### Attiva più tardi {#activate-later}
 
-Per pianificare l’attivazione in un momento successivo:
+Per pianificare l&#39;attivazione in un secondo momento:
 
-1. Nella console Siti Web selezionate **Attiva più tardi** nel menu **Attiva**.
+1. Nella console Siti web , passa a **Attiva** e seleziona **Attiva più tardi**.
 1. Nella la finestra di dialogo visualizzata specifica la data e l’ora dell’attivazione e fai clic su **OK**. Viene creata una versione della pagina che viene attivata al momento specificato.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
-Verrà avviato un flusso di lavoro per attivare tale versione della pagina alla data e all’ora specificate. In modo analogo, se scegli di eseguire la disattivazione in un secondo momento, verrà avviato un flusso di lavoro per disattivare tale versione della pagina alla data e all’ora specificate.
+Verrà avviato un flusso di lavoro per attivare tale versione della pagina alla data e all’ora specificate. In modo analogo, se si sceglie di annullare l’attivazione in un secondo momento, verrà avviato un flusso di lavoro per disattivare tale versione della pagina alla data e all’ora specificate.
 
-Per annullare questa attività di attivazione/disattivazione, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) e interrompi il flusso di lavoro corrispondente.
+Per annullare questa attivazione/disattivazione, vai alla pagina [Console del flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) per interrompere il flusso di lavoro corrispondente.
 
 ### Disattiva più tardi {#deactivate-later}
 
-Per pianificare la disattivazione in un momento successivo:
+Per pianificare la disattivazione in un secondo momento:
 
 1. Nella console Siti Web passate alla **Disattiva** e seleziona **Disattiva più tardi**.
 
@@ -133,38 +132,38 @@ Per pianificare la disattivazione in un momento successivo:
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
-**Disattiva più tardi** avvia un flusso di lavoro che disattiva tale versione della pagina nel momento specificato.
+**Disattivazione in ritardo** r avvia un flusso di lavoro per disattivare tale versione della pagina alla data e all’ora specificate.
 
-Per annullare questa attività di disattivazione, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) e interrompi il flusso di lavoro corrispondente.
+Per annullare questa disattivazione, vai alla pagina [Console del flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) per interrompere il flusso di lavoro corrispondente.
 
 ## Attivazione/Disattivazione pianificata (ora di attivazione/disattivazione) {#scheduled-activation-deactivation-on-off-time}
 
-Puoi pianificare il momento della pubblicazione o dell’annullamento della pubblicazione di una pagina tramite le opzioni **Ora di attivazione** e **Ora di disattivazione** nelle [Proprietà pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+Puoi pianificare la pubblicazione o l’annullamento della pubblicazione di una pagina utilizzando **Ora di attivazione** e **Ora di disattivazione** che può essere definito nella [Proprietà pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 ### Determinazione dello stato di pubblicazione di una pagina {#determining-page-publication-status-classic-ui}
 
-Lo stato è visibile dalla [console Siti web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). I colori indicano lo stato di pubblicazione.
+Lo stato può essere visualizzato dal [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). I colori indicano lo stato di pubblicazione.
 
-## Attivazione di una sezione (struttura ad albero) completa del sito web {#activating-a-complete-section-tree-of-your-website}
+## Attivazione di una sezione completa (struttura ad albero) del sito web {#activating-a-complete-section-tree-of-your-website}
 
-La scheda **Siti web** consente di attivare le singole pagine. Dopo avere inserito o aggiornato un numero considerevole di pagine di contenuto, tutte residenti sotto la stessa pagina principale, può essere più semplice attivare l’intero albero con una singola azione. Puoi anche eseguire una prova per simulare l’attivazione e identificare le pagine da attivare.
+Da **Siti Web** è possibile attivare le singole pagine. Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte residenti sotto la stessa pagina principale, può essere più semplice attivare l’intero albero con una singola azione. Puoi anche eseguire una prova per simulare un’attivazione ed evidenziare le pagine da attivare.
 
 1. Apri **Strumenti** selezionando la console dalla **Benvenuto** e quindi fai doppio clic su **Replica** per aprire la console ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. Nella console **Replica** fai clic su **Attiva albero**.
+1. Sulla **Replica** console, fai clic su **Attiva albero**.
 
    La finestra seguente ( `https://localhost:4502/etc/replication/treeactivation.html`).
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
 1. Inserisci il **Percorso iniziale**. Specifica il percorso della directory principale della sezione da attivare (pubblicare). Questa pagina e tutte le pagine sottostanti vengono considerate per l’attivazione o utilizzate per la simulazione, se è selezionata l’opzione Prova.
-1. Attiva il criterio di selezione come necessario:
+1. Attiva i criteri di selezione come necessario:
 
-   * **Solo elementi modificati**: vengono attivate solo le pagine che sono state modificate.
-   * **Solo elementi attivati**: vengono attivate solo le pagine che sono già state attivate in precedenza. Si tratta di una forma di riattivazione.
-   * **Ignora elementi disattivati**: vengono ignorate tutte le pagine che sono state disattivate.
+   * **Modificato solo**: vengono attivate solo le pagine modificate.
+   * **Solo attivato**: vengono attivate solo le pagine che sono già state attivate. Agisce come una forma di riattivazione.
+   * **Ignora disattivati**: ignora le pagine disattivate.
 
 1. Seleziona l’azione da eseguire:
 
