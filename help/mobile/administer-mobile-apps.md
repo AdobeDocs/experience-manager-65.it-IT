@@ -1,8 +1,6 @@
 ---
-title: App mobili
-seo-title: Mobile Apps
+title: Amministrazione delle app mobili
 description: Segui questa pagina per iniziare ad amministrare i contenuti per le app per dispositivi mobili.
-seo-description: Follow this page to get started with administering content for mobile apps.
 uuid: 0ef31513-b720-46cb-b162-35883ae48912
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 4%
+source-wordcount: '132'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di installazione, consentendo alle aziende di utilizzare una varietà di fonti di contenuto.
 
