@@ -1,13 +1,13 @@
 ---
-title: eCommerce
+title: Framework di integrazione di eCommerce
 description: AEM eCommerce aiuta gli esperti di marketing a fornire esperienze di acquisto personalizzate su diversi punti di contatto web, mobili e social.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 2%
 
 ---
