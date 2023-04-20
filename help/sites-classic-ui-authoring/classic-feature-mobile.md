@@ -1,8 +1,6 @@
 ---
 title: Authoring di una pagina per dispositivi mobili
-seo-title: Authoring a Page for Mobile Devices
-description: Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Quando crei la pagina, puoi scegliere tra diversi emulatori per verificare come la pagina verrà effettivamente vista dal visitatore.
-seo-description: When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
+description: Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 82%
+ht-degree: 13%
 
 ---
 
 # Authoring di una pagina per dispositivi mobili{#authoring-a-page-for-mobile-devices}
 
-Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Quando crei la pagina, puoi scegliere tra diversi emulatori per verificare come la pagina verrà effettivamente vista dal visitatore.
+Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
 
-I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda delle funzionalità dei dispositivi di riprodurre una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione che corrisponde al gruppo di dispositivi a cui appartiene.
+I dispositivi sono raggruppati nelle categorie feature, smart e touch in base alle capacità dei dispositivi di rendering di una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione corrispondente al gruppo di dispositivi.
 
 >[!NOTE]
 >
@@ -31,18 +29,18 @@ I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda
 
 Segui la procedura seguente per creare una pagina mobile:
 
-1. Nel browser, passate alla console **Site Admin** (Amministrazione sito).
+1. Nel browser, vai alla pagina **Siteadmin** console.
 1. Apri **Prodotti** pagina sottostante **Siti Web** >> **Sito Demo Di Geometrixx Mobile** >> **Inglese**.
 
-1. Passa a un altro emulatore effettuando una delle seguenti operazioni:
+1. Passa a un emulatore diverso. A questo scopo, puoi effettuare le seguenti operazioni:
 
-   * Fate clic sull’icona del dispositivo nella parte superiore della pagina.
-   * Fate clic sul pulsante **Modifica** nella **barra laterale** e selezionate il dispositivo dal menu a discesa.
+   * Fai clic sull’icona del dispositivo nella parte superiore della pagina.
+   * Fai clic sul pulsante **Modifica** nel **Barra laterale** e seleziona il dispositivo nel menu a discesa.
 
 1. Trascina e rilascia la **Testo e immagine** Dalla scheda Mobile della barra laterale alla pagina.
-1. Modificate il componente e aggiungete del testo. Fate clic su **OK** per salvare le modifiche.
+1. Modifica il componente e aggiungi del testo. Fai clic su **OK** per salvare le modifiche.
 
-La pagina si presenta come illustrato di seguito:
+La pagina si presenta come segue:
 
 ![mobileipademu](assets/mobileipademu.png)
 
