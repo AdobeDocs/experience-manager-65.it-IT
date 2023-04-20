@@ -1,11 +1,11 @@
 ---
-title: Percorso di authoring di contenuti AEM headless
+title: Authoring per headless con Adobe Experience Manager
 description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager e alle modalità di creazione dei contenuti per il progetto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 91%
+source-wordcount: '632'
+ht-degree: 90%
 
 ---
 
