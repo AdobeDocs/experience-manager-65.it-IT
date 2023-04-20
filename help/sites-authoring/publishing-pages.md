@@ -1,8 +1,6 @@
 ---
-title: Pubblicazione delle pagine
-seo-title: Publishing Pages
-description: Pubblicazione delle pagine
-seo-description: null
+title: Pubblicazione delle pagine di contenuto
+description: Scopri come pubblicare le pagine di contenuto.
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +9,24 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 88%
+source-wordcount: '1662'
+ht-degree: 59%
 
 ---
 
 # Pubblicazione delle pagine {#publishing-pages}
 
-Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, [devi renderli disponibili nel sito Web pubblico](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (l’ambiente di pubblicazione).
+Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, [renderlo disponibile sul sito web pubblico](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (ambiente di pubblicazione).
 
-Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Quando si pubblica e si annulla la pubblicazione di una pagina, quest’ultima rimane disponibile nell’ambiente di authoring per ulteriori modifiche, finché non decidi di eliminarla.
+Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione della pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche, finché non viene eliminata.
 
-Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
+Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
 
 >[!NOTE]
 >
->Alcuni termini correlati alla pubblicazione possono creare confusione:
+>Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
    >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
@@ -43,17 +41,17 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 
 >[!NOTE]
 >
->Se non disponi delle autorizzazioni necessarie per pubblicare una specifica pagina:
+>Se non disponi dei privilegi necessari per pubblicare una pagina specifica:
 >
->* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
->* Questo [flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal team di sviluppo.
+>* Viene avviato un flusso di lavoro per inviare alla persona appropriata la richiesta di pubblicazione.
+>* Questo [workflow potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal team di sviluppo.
 >* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
 >
 
 
 ## Pubblicazione delle pagine {#publishing-pages-1}
 
-A seconda della tua posizione, puoi pubblicare:
+A seconda della posizione, puoi pubblicare:
 
 * [Dall’editor di pagine](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Dalla console Sites](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
@@ -87,7 +85,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>La pubblicazione dall’editor è superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
 >[!NOTE]
 >
@@ -95,7 +93,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
-Nella console Sites vi sono due opzioni di modifica:
+Nella console Sites sono disponibili due opzioni di pubblicazione:
 
 * [Pubblicazione rapida ](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Gestisci pubblicazione ](/help/sites-authoring/publishing-pages.md#manage-publication)
@@ -118,7 +116,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 >[!NOTE]
 >
->La pubblicazione rapida è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>Pubblicazione rapida è una pubblicazione superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
 #### Gestisci pubblicazione  {#manage-publication}
 
@@ -133,9 +131,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passaggio, **Opzioni**, consente di:
 
    * Scegliere di pubblicare le pagine selezionate o annullarne la pubblicazione.
-   * Scegliere di eseguire l’azione immediatamente o in un secondo momento.
+   * Scegli di eseguire questa azione subito o in un secondo momento.
 
-   Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. In modo analogo, se si sceglie di annullare la pubblicazione in un secondo momento, verrà attivato un flusso di lavoro per disattivare le pagine selezionate alla data e all’ora specificate.
+   Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. In modo analogo, se si sceglie di annullare la pubblicazione in un secondo momento, verrà avviato un flusso di lavoro per annullare la pubblicazione delle pagine selezionate alla data e all’ora specificate.
 
    Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-administering/workflows.md) e interrompete il flusso di lavoro corrispondente.
 
@@ -153,11 +151,11 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Seleziona le pagine desiderate e fai clic su **Seleziona** per aggiungere contenuti alla procedura guidata o su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
-   Nella procedura guidata puoi selezionare un elemento nell’elenco per configurare ulteriori opzioni, come:
+   Nella procedura guidata, puoi selezionare un elemento nell’elenco per configurarne altre opzioni, ad esempio:
 
-   * Includere gli elementi figlio.
-   * Rimuoverlo dalla selezione.
-   * Gestire i relativi riferimenti pubblicati.
+   * Includi i relativi figli.
+   * Rimuovi dalla selezione.
+   * Gestire i riferimenti pubblicati.
 
    ![pp-03](assets/pp-03.png)
 
@@ -195,9 +193,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    >
    >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone l’utente. Consulta la sezione [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) per quanto riguarda i privilegi di pubblicazione e [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) per i dettagli.
 
-   Le risorse vengono raggruppate in base ai flussi di lavoro attivati e per ognuna sono disponibili opzioni per:
+   Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna delle opzioni seguenti:
 
-   * Definire il titolo del flusso di lavoro.
+   * Definisci il titolo del flusso di lavoro.
    * Mantenere il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro [supporto per più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
 
@@ -239,26 +237,26 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
 
 ## Pubblicazione e annullamento della pubblicazione di una struttura {#publishing-and-unpublishing-a-tree}
 
-Se hai inserito o aggiornato un numero considerevole di pagine di contenuto, tutte residenti sotto la stessa pagina principale, può essere più semplice pubblicare l’intera struttura con una singola azione.
+Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte residenti sotto la stessa pagina principale, può essere più semplice pubblicare l’intero albero con una singola azione.
 
-Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication) sulla console Sites per eseguire questa operazione.
+È possibile utilizzare [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication) nella console Sites per eseguire questa operazione.
 
-1. Nella console Sites, seleziona la pagina principale della struttura che desideri pubblicare o di cui desideri annullare la pubblicazione e seleziona **Gestisci pubblicazione**.
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se e quando eseguire o annullare la pubblicazione, quindi seleziona **Avanti** per continuare.
-1. Nel passaggio **Ambito**, seleziona la pagina principale e seleziona **Includi elementi figlio**.
+1. Nella console Sites, seleziona la pagina principale della struttura da pubblicare o di cui vuoi annullare la pubblicazione e seleziona **Gestisci pubblicazione**.
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se pubblicare o annullare la pubblicazione e quando dovrebbe verificarsi e seleziona **Successivo** per continuare.
+1. In **Ambito** , seleziona la pagina principale e seleziona **Includi elementi figlio**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. Nella finestra di dialogo **Includi elementi figlio**, deseleziona le opzioni:
+1. In **Includi elementi figlio** deseleziona le opzioni:
 
    * Solo gli elementi figli di primo livello
    * Solo pagine già pubblicate
 
-   Queste opzioni sono selezionate per impostazione predefinita, pertanto dovrai ricordarti di deselezionarle. Fai clic su **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
+   Queste opzioni sono selezionate per impostazione predefinita, pertanto è necessario ricordarsi di deselezionarle. Fai clic su **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
-1. La procedura guidata **Gestisci pubblicazione** elenca il contenuto della struttura a scopi di revisione. Puoi personalizzare ulteriormente la selezione aggiungendo ulteriori pagine o rimuovendo quelle selezionate.
+1. La **Gestisci pubblicazione** viene visualizzato il contenuto della struttura ad albero per la revisione. Puoi personalizzare ulteriormente la selezione aggiungendo ulteriori pagine o rimuovendo quelle selezionate.
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
@@ -268,7 +266,7 @@ Puoi utilizzare l’opzione [Gestisci pubblicazione](/help/sites-authoring/publi
 
 ## Determinazione dello stato di pubblicazione {#determining-publication-status}
 
-Puoi determinare lo stato di pubblicazione di una pagina:
+È possibile determinare lo stato di pubblicazione di una pagina:
 
 * Nelle [informazioni generali sulla risorsa nella console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
