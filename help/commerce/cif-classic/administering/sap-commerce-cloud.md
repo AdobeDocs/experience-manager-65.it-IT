@@ -1,16 +1,14 @@
 ---
-title: Commerce Cloud SAP
-seo-title: SAP Commerce Cloud
+title: Utilizzare AEM con Commerce Cloud SAP
 description: Scopri come utilizzare AEM con SAP Commerce Cloud.
-seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1717'
 ht-degree: 2%
 
 ---
@@ -213,7 +211,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
       `/etc/commerce/products`
 
-      Esempio:
+      Ad esempio:
 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -224,7 +222,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
    `/etc/importers/hybris.html`
 
-   Esempio:
+   Ad esempio:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
@@ -260,7 +258,7 @@ Le seguenti proprietà indicano il collegamento con hybris:
 
    `/etc/importers/hybris.html`
 
-   Esempio:
+   Ad esempio:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
@@ -296,7 +294,7 @@ Il processo di importazione può richiedere molto tempo, in modo che un&#39;este
 
    `/etc/importers/hybris.html`
 
-   Esempio:
+   Ad esempio:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
@@ -373,7 +371,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 
 1. Rimuovi il prodotto dalla console hybris. Utilizza l’opzione **Modifica stato approvazione** per impostare lo stato su `unapproved`. Il prodotto verrà rimosso dal feed live.
 
-   Esempio:
+   Ad esempio:
 
    * Apri la pagina [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit)
    * Selezionare il catalogo `Outdoors Staged`
@@ -383,7 +381,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 1. Esegui un altro aggiornamento incrementale (vedi [Importazione catalogo](#catalog-import)). Il registro elencherà il prodotto eliminato.
 1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) il catalogo appropriato. La pagina prodotto e prodotto sarà stata rimossa da AEM.
 
-   Esempio:
+   Ad esempio:
 
    * Apri:
 
@@ -415,7 +413,7 @@ Per aggiungere la cronologia degli ordini al [contesto client](/help/sites-devel
    * Passa direttamente a [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Aggiungi il **Cronologia ordini** component](/help/sites-administering/client-context.md#adding-a-property-component) al **Auto Shopping** al componente del contesto client.
-1. Puoi confermare che il contesto client sta mostrando i dettagli della cronologia degli ordini. Esempio:
+1. Puoi confermare che il contesto client sta mostrando i dettagli della cronologia degli ordini. Ad esempio:
 
    1. Apri [contesto client](/help/sites-administering/client-context.md).
    1. Aggiungi un elemento al carrello.
