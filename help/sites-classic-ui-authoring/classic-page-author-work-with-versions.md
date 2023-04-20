@@ -1,8 +1,6 @@
 ---
-title: Utilizzo delle versioni di una pagina
-seo-title: Working with Page Versions
-description: Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento.
-seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
+title: Utilizzo delle versioni di pagina
+description: Il controllo delle versioni crea uno "snapshot" di una pagina in un momento specifico.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,27 +9,27 @@ content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 91%
+ht-degree: 22%
 
 ---
 
 # Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
-Quando si crea una versione, viene creata un’istantanea di una pagina in un particolare momento. La funzione di gestione delle versioni consente di effettuare le seguenti operazioni:
+Il controllo delle versioni crea uno &quot;snapshot&quot; di una pagina in un momento specifico. Con il controllo delle versioni è possibile eseguire le seguenti operazioni:
 
-* Creare una versione di una pagina.
-* Ripristinare una versione precedente di una pagina, ad esempio per annullare una modifica apportata alla pagina.
-* Confrontare la versione corrente di una pagina con una versione precedente, evidenziando le differenze nel testo e nelle immagini.
+* Crea una versione di una pagina.
+* Ripristinare una versione precedente di una pagina per annullare, ad esempio, una modifica apportata a una pagina.
+* Confronta la versione corrente di una pagina con una versione precedente con le differenze nel testo e nelle immagini evidenziate.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
 
 Per creare una nuova versione di una pagina:
 
 1. Nel browser, apri la pagina per la quale desideri creare una nuova versione.
-1. Nella barra laterale, seleziona la scheda **Gestione versioni**, quindi la sottoscheda **Crea versione**.
+1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la **Crea versione** sottoscheda .
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -41,29 +39,29 @@ Per creare una nuova versione di una pagina:
 
 >[!NOTE]
 >
->Quando la pagina viene attivata, viene automaticamente creata una versione.
+>Una versione viene creata automaticamente quando la pagina viene attivata.
 
-## Ripristino di una versione di una pagina dalla barra laterale {#restoring-a-page-version-from-sidekick}
+## Ripristino di una versione di pagina dalla barra laterale {#restoring-a-page-version-from-sidekick}
 
 Per ripristinare una versione precedente della pagina:
 
 1. Apri la pagina di cui desideri ripristinare una versione precedente.
-1. Nella barra laterale seleziona la scheda **Gestione versioni**, quindi la sottoscheda **Ripristina versione**.
+1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la **Ripristina versione** sottoscheda .
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Selezionate la versione da ripristinare e selezionate **Ripristina**.
+1. Seleziona la versione da ripristinare e seleziona **Ripristina**.
 
-## Ripristino di una versione di una pagina dalla console {#restoring-a-page-version-from-the-console}
+## Ripristino di una versione della pagina dalla console {#restoring-a-page-version-from-the-console}
 
-Questo metodo può essere utilizzato per ripristinare una versione di una pagina o pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare una versione di una pagina. Può essere utilizzato anche per ripristinare le pagine precedentemente eliminate:
 
-1. Nella console **Siti Web** individua e seleziona la pagina da ripristinare.
-1. Nel menu principale seleziona **Strumenti**, quindi **Ripristina**:
+1. In **Siti Web** console, passa alla pagina da ripristinare e selezionala.
+1. Dal menu principale seleziona **Strumenti**, quindi **Ripristina**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Se selezioni **Ripristina versione**, vengono elencate le versioni precedenti dei documenti presenti nella cartella corrente. Anche se una pagina è stata eliminata, ne viene elencata l’ultima versione:
+1. Selezione **Ripristina versione..** elenca le versioni dei documenti presenti nella cartella corrente. Anche se una pagina è stata eliminata, viene elencata l’ultima versione:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -71,11 +69,11 @@ Questo metodo può essere utilizzato per ripristinare una versione di una pagina
 
 ### Ripristino di una struttura ad albero dalla console {#restoring-a-tree-from-the-console}
 
-Questo metodo può essere utilizzato per ripristinare una versione di una pagina o pagine precedentemente eliminate:
+Questo metodo può essere utilizzato per ripristinare una versione di una pagina. Può essere utilizzato anche per ripristinare le pagine precedentemente eliminate:
 
-1. Nella console **Siti Web** individua e seleziona la cartella da ripristinare.
-1. Nel menu principale seleziona **Strumenti**, quindi **Ripristina**.
-1. Seleziona **Ripristina albero** per aprire la finestra di dialogo in cui selezionare la struttura ad albero da ripristinare:
+1. In **Siti Web** console, individua la cartella da ripristinare e selezionala.
+1. Dal menu principale seleziona **Strumenti**, quindi **Ripristina**.
+1. Selezione **Ripristina albero..** apre la finestra di dialogo per selezionare la struttura ad albero da ripristinare:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
@@ -90,51 +88,51 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Seleziona la versione da utilizzare per il confronto e fai clic sul pulsante **Diff**.
+1. Seleziona la versione da confrontare e fai clic sul pulsante **Differenze** pulsante .
 1. Le differenze tra la versione corrente e quella selezionata vengono visualizzate come segue:
 
-   * Il testo eliminato è barrato in rosso.
+   * Il testo eliminato è rosso ed è barrato.
    * Il testo aggiunto è evidenziato in verde.
-   * Le immagini aggiunte o eliminate sono circondate da una cornice verde.
+   * Le immagini aggiunte o eliminate sono contrassegnate in verde.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Nella barra laterale seleziona la sottoscheda **Ripristina versione** e fai clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
+1. Nella barra laterale, seleziona la **Ripristina versione** sottoscheda e fai clic su **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> per visualizzare la versione corrente.**
 
 ## Timewarp   {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
-Questo consente di tenere tracciare del sito pubblicato in un particolare momento. Le attivazioni pagina vengono usate per determinare lo stato dell’ambiente di pubblicazione.
+Lo scopo è quello di consentire di tenere traccia del sito web pubblicato in un determinato momento. Questo utilizza le attivazioni di pagina per determinare lo stato dell’ambiente di pubblicazione.
 
 Per effettuare questo collegamento:
 
-* Il sistema cerca la versione della pagina che era attiva nel momento temporale selezionato.
+* Il sistema cerca la versione della pagina che era attiva al momento selezionato.
 * In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
-* Quando si passa a una pagina che è stata successivamente eliminata, questa viene riprodotta purché nella directory archivio siano ancora disponibili le precedenti versioni di tale pagina.
-* Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di creazione (in modo da evitare un errore 404 di pagina non trovata, che impedirebbe di continuare la navigazione).
+* Quando si passa a una pagina che è stata eliminata, questa viene riprodotta purché nella directory archivio siano ancora disponibili le versioni precedenti della pagina.
+* Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (in modo da evitare un errore 404 di pagina non trovata, che impedirebbe di continuare la navigazione).
 
 >[!NOTE]
 >
->Se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css, immagini ecc.) per la riproduzione del sito Web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nella directory archivio.
+>Se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css, immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, in quanto per tali elementi non vengono conservate precedenti versioni nell’archivio.
 
 ### Utilizzo del calendario Timewarp {#using-the-timewarp-calendar}
 
 Timewarp è disponibile dalla barra laterale.
 
-La versione Calendario viene usata per visualizzare uno specifico giorno:
+La versione Calendario viene utilizzata per visualizzare un giorno specifico:
 
-1. Aprite la scheda **Gestione versioni** e fate clic su **Timewarp** (verso il fondo della barra laterale). Viene visualizzata la seguente finestra di dialogo:
+1. Apri **Controllo delle versioni** , quindi fai clic su **Timewarp** (vicino alla parte inferiore della barra laterale). Viene visualizzata la seguente finestra di dialogo:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Specificate la data e ora desiderata con gli appositi selettori e fate clic su **Vai**.
+1. Utilizzando i selettori data e ora, specifica la data/ora desiderata e fai clic su **Vai**.
 
-   Timewarp presenta la pagina così come era nel suo stato pubblicato prima o alla data specificata.
+   Timewarp visualizza la pagina così come era nel suo stato di pubblicazione prima o alla data scelta.
 
    >[!NOTE]
    >
-   >Timewarp funziona correttamente solo se la pagina era effettivamente stata precedentemente pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
+   >Timewarp funziona correttamente solo se la pagina è stata precedentemente pubblicata. In caso contrario viene mostrata la pagina corrente nell’ambiente di authoring.
 
    >[!NOTE]
    >
@@ -142,43 +140,43 @@ La versione Calendario viene usata per visualizzare uno specifico giorno:
 
    >[!NOTE]
    >
-   >Non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Non è possibile modificare la versione precedente della pagina. ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
-1. Dopo aver visualizzato la pagina, fai clic su:
+1. Al termine della visualizzazione della pagina, fai clic su:
 
-   * **Esci dal Timewarp** per uscire e tornare alla pagina corrente in modalità di creazione.
-   * [Mostra timeline](#using-the-timewarp-timeline) consente di visualizzare la timeline.
+   * **Esci da Timewarp** per uscire e tornare alla pagina corrente di authoring.
+   * [Mostra timeline](#using-the-timewarp-timeline) per visualizzare la timeline.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
 ### Utilizzo della timeline Timewarp {#using-the-timewarp-timeline}
 
-La versione timeline permette di vedere una panoramica delle attività di pubblicazione effettuate sulla pagina.
+La versione timeline consente di visualizzare una panoramica delle attività di pubblicazione presenti nella pagina.
 
-Per visualizzare la timeline di un documento:
+Per visualizzare la timeline del documento:
 
-1. Per mostrare la timeline potete effettuare una delle seguenti operazioni:
+1. Per visualizzare la timeline potete effettuare le seguenti operazioni:
 
-   1. Apri la scheda **Gestione versioni** e fai clic su **Timewarp** (verso il fondo della barra laterale).
+   1. Apri **Controllo delle versioni** , quindi fai clic su **Timewarp** (vicino alla parte inferiore della barra laterale).
 
-   1. Utilizza la finestra di dialogo della barra laterale visualizzata dopo [l’utilizzo del calendario Timewarp](#using-the-timewarp-calendar).
+   1. Usa la finestra di dialogo della barra laterale visualizzata dopo [utilizzo del calendario Timewarp](#using-the-timewarp-calendar).
 
-1. Fate clic su **Mostra timeline**. Viene visualizzata la timeline del documento, ad esempio:
+1. Fai clic su **Mostra timeline** - verrà visualizzata la timeline del documento; ad esempio:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Selezionate e spostate (trascinate) la timeline per spostare la timeline del documento.
+1. Seleziona e sposta (trascina) la timeline per spostarti all’interno della timeline del documento.
 
-   * Le linee indicano le versioni pubblicate.
-Quando una pagina viene attivata, inizia una nuova inea. Ogni volta che il documento viene modificato, compare un nuovo colore.
-Nell’esempio di seguito, la linea rossa indica che la pagina è stata modificata nel periodo di tempo della versione iniziale verde e la linea gialla indica che la pagina è stata modificata nel corso della versione rossa, e così via.
+   * Tutte le righe indicano le versioni pubblicate.
+Quando una pagina viene attivata, inizia una nuova riga. Ogni volta che il documento viene modificato viene visualizzato un nuovo colore.
+Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione iniziale verde e la linea gialla indica che la pagina è stata modificata in un secondo momento durante la versione rossa, ecc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Clic:
 
-   1. **Vai** per mostrare il contenuto della pagina pubblicata al momento selezionato.
-   1. Quando tale contenuto è visualizzato, **Esci dal Timewarp** consente di uscire e tornare alla pagina corrente in modalità di authoring.
+   1. **Vai** per visualizzare il contenuto della pagina pubblicata nel momento in cui è selezionata.
+   1. Quando visualizzi il contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina corrente di authoring.
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
