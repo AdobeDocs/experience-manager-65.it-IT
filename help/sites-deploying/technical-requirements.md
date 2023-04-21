@@ -4,9 +4,9 @@ description: Elenco delle piattaforme client e server supportate per Adobe Exper
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 32af8ee1680bb0a357e64d614f22234ed331d314
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3513'
 ht-degree: 1%
 
 ---
@@ -89,6 +89,7 @@ Adobe Experience Manager funziona con le seguenti versioni delle macchine virtua
 
 | **Platform** | **Livello di supporto** | **Collegamento** |
 |---|---|---|
+| Oracle Java™ SE 17 JDK | Z: Non supportato `[1]` |
 | Oracle Java™ SE 11 JDK - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java™ SE 10 JDK | Z: Non supportato `[1]` |
 | Oracle Java™ SE 9 JDK | Z: Non supportato `[1]` |
@@ -99,7 +100,7 @@ Adobe Experience Manager funziona con le seguenti versioni delle macchine virtua
 | Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[3]` |  |
 
 1. Oracle è stato spostato su un modello &quot;Long Term Support&quot; (LTS) per i prodotti Java™ SE di Oracle. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java™ SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per implementare AEM in ambiente di produzione, Adobe fornisce il supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione dell&#39;Oracle Java™ SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, è supportato da Adobe direttamente per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Consulta la sezione [Criteri di supporto Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Java™ 11 è supportato almeno fino a settembre 2026.**
+**Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. Il supporto per Oracle Java™ 17 è in preparazione. **
 
 1. IBM® JRE è supportato solo insieme a WebSphere® Application Server.
 
@@ -329,13 +330,13 @@ Il funzionamento è semplice in quanto non è necessaria alcuna configurazione s
 
 Quando è necessario specificare un indirizzo IP, è possibile selezionare (come richiesto) tra le seguenti opzioni:
 
-* Indirizzo IPv6. Esempio, `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Indirizzo IPv6. Ad esempio `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Indirizzo IPv4. Esempio, `https://123.1.1.4:4502`
+* Indirizzo IPv4. Ad esempio `https://123.1.1.4:4502`
 
-* Nome server. Esempio, `https://www.yourserver.com:4502`
+* Nome server. Ad esempio `https://www.yourserver.com:4502`
 
-* Il caso predefinito di `localhost` viene interpretato sia per le installazioni di rete IPv4 che IPv6. Esempio, `https://localhost:4502`
+* Il caso predefinito di `localhost` viene interpretato sia per le installazioni di rete IPv4 che IPv6. Ad esempio `https://localhost:4502`
 
 ### Requisiti del componente aggiuntivo AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
