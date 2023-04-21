@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
+source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 12%
@@ -146,7 +146,7 @@ Dove &lt;text_x> può essere un insieme di variabili di testo statiche e di stri
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Esempio:
+   Ad esempio:
 
    PageModified => /content/geometrixx/en/products
 
@@ -464,6 +464,6 @@ Ora attiva i componenti OAuth. Per farlo, segui questi passaggi:
 Infine, conferma la configurazione:
 
 1. Andando all&#39;indirizzo dell&#39;istanza Publish e accedendo come amministratore.
-1. Apri una nuova scheda nel browser e vai a `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Questo ti reindirizzerà alla pagina del tuo provider SMTP, in questo caso Gmail.
+1. Apri una nuova scheda nel browser e vai a `http://serveraddress:serverport/services/mailer/oauth2/authorize`. In questo caso verrà reindirizzato alla pagina del provider SMTP, in Outlook.
 1. Accedi e acconsenti a concedere le autorizzazioni richieste
 1. Dopo il consenso, il token verrà memorizzato nell’archivio. Puoi accedervi in `accessToken` accedendo direttamente a questo URL nella tua istanza di pubblicazione: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
