@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: d0233ba5358f961339317bc1d63d51f1826d8c13
 workflow-type: tm+mt
-source-wordcount: '4677'
+source-wordcount: '4670'
 ht-degree: 3%
 
 ---
@@ -472,7 +472,7 @@ Per installare e configurare AEM Forms con Adobe Forms, gli utenti dello strumen
 
 Prima di leggere ulteriori istruzioni, controlla quanto segue:
 
-* [Configurazione del servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configurazione del servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
 
 #### Creazione di una parte 1 della configurazione IMS {#creating-ims-config}
 
@@ -748,7 +748,7 @@ Questa sezione contiene informazioni sulle funzioni demo e sulle decisioni di pr
 
 ### Abilitazione del componente aggiuntivo Chrome per il test di accessibilità {#enable-chrome-add-on}
 
-Per eseguire il test di accessibilità, installa il plug-in Chrome trovato [qui](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Per eseguire il test di accessibilità, installa il plug-in Chrome qui a `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Dopo l&#39;installazione, carica la pagina da testare nel browser Chrome (Nota: La presenza di più schede aperte potrebbe influenzare il punteggio, è preferibile avere una sola scheda aperta). Una volta caricata la pagina
 **clic destro** nella pagina e seleziona **Audit** scheda . Alcuni sviluppatori possono selezionare il tipo di controllo da eseguire dal plug-in Accessibilità. Dopo aver selezionato tutte le opzioni desiderate, l’utente può fare clic sul pulsante Genera report . Questo genera un documento PDF che mostra il punteggio complessivo di accessibilità e ciò che può essere utilizzato per aumentare il livello complessivo di accessibilità.
