@@ -1,10 +1,9 @@
 ---
 title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
-content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 32af8ee1680bb0a357e64d614f22234ed331d314
+source-git-commit: fe9c77644daf3669df8cca18e65fb0f6918f853b
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
@@ -100,7 +99,7 @@ Adobe Experience Manager funziona con le seguenti versioni delle macchine virtua
 | Azul Zulu OpenJDK 8 - 64 bit | R: Supportato `[3]` |  |
 
 1. Oracle è stato spostato su un modello &quot;Long Term Support&quot; (LTS) per i prodotti Java™ SE di Oracle. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java™ SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per implementare AEM in ambiente di produzione, Adobe fornisce il supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione dell&#39;Oracle Java™ SE JDK, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, è supportato da Adobe direttamente per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Consulta la sezione [Criteri di supporto Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-**Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. Il supporto per Oracle Java™ 17 è in preparazione. **
+   **Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. Il supporto per Oracle Java™ 17 è in preparazione.**
 
 1. IBM® JRE è supportato solo insieme a WebSphere® Application Server.
 
