@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
+source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
 workflow-type: tm+mt
-source-wordcount: '4664'
+source-wordcount: '4663'
 ht-degree: 10%
 
 ---
@@ -113,7 +113,7 @@ Una volta effettuato l’accesso alla console JMX, esegui una ricerca per **Stat
 
 Per le statistiche delle query, controlla l’MBean denominato **Statistiche query Oak**.
 
-Se desideri approfondire gli indici utilizzando uno strumento come [Luca](https://code.google.com/p/luke/), sarà necessario utilizzare la console Oak per scaricare l’indice dal `NodeStore` in una directory filesystem. Per istruzioni su come eseguire questa operazione, leggere il [Documentazione di Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Se desideri approfondire gli indici utilizzando uno strumento come [Luca](https://code.google.com/archive/p/luke/), devi usare la console Oak per scaricare l’indice dal `NodeStore` in una directory filesystem. Per istruzioni su come eseguire questa operazione, leggere il [Documentazione di Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Puoi anche estrarre gli indici nel tuo sistema in formato JSON. Per farlo, devi accedere a `https://server:port/oak:index.tidy.-1.json`
 
@@ -391,7 +391,7 @@ I seguenti dettagli possono essere presentati insieme alle risoluzioni:
 
 * Reindicizza l&#39;indice delle proprietà in modo asincrono utilizzando la Console web tramite la **PropertyIndexAsyncReindex** MBean;
 
-   Esempio,
+   ad esempio,
 
    [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
