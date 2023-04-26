@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: cee709161100db6597bdb18ca03b3130d9e242f1
+source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
 workflow-type: tm+mt
-source-wordcount: '3225'
-ht-degree: 89%
+source-wordcount: '3250'
+ht-degree: 88%
 
 ---
 
@@ -239,7 +239,7 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
 * Campi generati dall’utente.
 
-   Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di campo](#field-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dato**.
+   Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dato**.
 
    * C&#39;è da prendere in considerazione anche la proprietà **Rendering come**, perché gli utenti possono configurare determinati tipi di dati; ad esempio, come testo a riga singola o come campo multiplo.
 
@@ -247,21 +247,23 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
    Questi vengono utilizzati per identificare un Frammento di contenuto o per ottenere ulteriori informazioni su di esso.
 
-### Tipi di campi {#field-types}
+### Tipi di dati {#data-types}
 
 GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi di dati dei modelli di Frammento di contenuto supportati e i corrispondenti tipi GraphQL:
 
 | Modello di Frammento di contenuto: tipo di dati | Tipo GraphQL | Descrizione |
 |--- |--- |--- |
-| Testo su riga singola | Stringa, [Stringa] |  Utilizzato per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
-| Testo su più righe | Stringa |  Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
-| Numero |  Mobile, [Mobile] | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
-| Booleano |  Booleano |  Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
-| Data e ora | Calendario |  Utilizzato per visualizzare la data e l’ora in formato ISO 8086. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Enumerazione |  Stringa |  Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
-|  Tag |  [Stringa] |  Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
-| Riferimento contenuto |  Stringa |  Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
-| Riferimento frammento |  *Un tipo di modello* |  Utilizzato per fare riferimento ad altri frammenti di contenuto di un determinato tipo di modello, definito al momento della creazione del modello |
+| Testo su riga singola | `String`, `[String]` |  Utilizzato per stringhe semplici come nomi di autore, nomi di posizione, ecc. |
+| Testo su più righe | `String` |  Utilizzato per l’output di testo, ad esempio il corpo di un articolo |
+| Numero |  `Float`, `[Float]` | Utilizzato per visualizzare il numero a virgola mobile e i numeri regolari |
+| Booleano |  `Boolean` |  Utilizzato per visualizzare le caselle di controllo → semplici istruzioni true/false |
+| Data e ora | `Calendar` |  Utilizzato per visualizzare la data e l’ora in formato ISO 8086. A seconda del tipo selezionato, sono disponibili tre versioni da utilizzare in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Enumerazione |  `String` |  Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
+|  Tag |  `[String]` |  Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
+| Riferimento contenuto |  `String` |  Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
+| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multifield, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
+
+{style="table-layout:auto"}
 
 ### Campi di supporto {#helper-fields}
 
