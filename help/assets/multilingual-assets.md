@@ -1,14 +1,14 @@
 ---
-title: Risorse multilingue e traduzione delle risorse
-description: Scopri come automatizzare i flussi di lavoro per tradurre le risorse, inclusi binari, metadati e tag in più lingue.
+title: Risorsa multilingue
+description: Scopri come automatizzare i flussi di lavoro per la traduzione di risorse, inclusi binari, metadati e tag in più lingue.
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 68f9179222c55840c4edf8774687cd8fde8cde4b
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 11%
+source-wordcount: '199'
+ht-degree: 9%
 
 ---
 
