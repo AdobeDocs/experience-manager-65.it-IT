@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
+source-git-commit: 9406dc74887d29e93461e1015a8f52fa7ee196f6
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5613'
 ht-degree: 6%
 
 ---
 
-# Cercare risorse in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Cercare risorse digitali in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -38,7 +38,7 @@ ht-degree: 6%
 | [Limitazioni](#limitations) e [Suggerimenti](#tips) |  |  |
 | [Esempi illustrati](#samples) |  |  |
 
-Cerca le risorse utilizzando il campo Omnisearch nella parte superiore della [!DNL Experience Manager] interfaccia web. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in [!DNL Experience Manager], fai clic su ![search_icon](assets/do-not-localize/search_icon.png) nella barra superiore, immetti parola chiave di ricerca e seleziona `Return`. In alternativa, utilizza la scelta rapida per parole chiave `/` (barra) per aprire il campo Omnisearch. `Location:Assets` è preselezionato per limitare le ricerche alle risorse DAM. [!DNL Experience Manager] fornisce suggerimenti durante la digitazione di una parola chiave di ricerca.
+Cerca risorse digitali utilizzando il campo Omnisearch nella parte superiore della [!DNL Experience Manager] interfaccia web. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in [!DNL Experience Manager], fai clic su ![search_icon](assets/do-not-localize/search_icon.png) nella barra superiore, immetti parola chiave di ricerca e seleziona `Return`. In alternativa, utilizza la scelta rapida per parole chiave `/` (barra) per aprire il campo Omnisearch. `Location:Assets` è preselezionato per limitare le ricerche alle risorse DAM. [!DNL Experience Manager] fornisce suggerimenti durante la digitazione di una parola chiave di ricerca.
 
 Utilizza la **[!UICONTROL Filtri]** per cercare risorse, cartelle, tag e metadati. Puoi filtrare i risultati della ricerca in base alle varie opzioni (predicati), ad esempio tipo di file, dimensione del file, data dell’ultima modifica, stato della risorsa, dati insights e licenze Adobe Stock. Puoi personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando [facet di ricerca](/help/assets/search-facets.md). La [!UICONTROL Tipo di file] nella [!UICONTROL Filtri] il pannello presenta caselle di controllo con stato misto. Pertanto, a meno che non si selezionino tutti i predicati (o formati) nidificati, le caselle di controllo di primo livello non vengono selezionate in parte.
 
@@ -159,7 +159,7 @@ Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Fil
 
 ### Ricerca GQL utilizzando valori specifici nei campi di metadati {#gql-search}
 
-Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esempio titolo, descrizione e creatore. La funzione di ricerca full-text GQL recupera solo le risorse il cui valore di metadati corrisponde esattamente alla query di ricerca. I nomi delle proprietà (Creatore, Titolo e così via) e dei valori sono sensibili all’uso di maiuscole e minuscole.
+Puoi cercare le risorse digitali in base ai valori esatti dei campi di metadati, ad esempio titolo, descrizione e creatore. La funzione di ricerca full-text GQL recupera solo le risorse il cui valore di metadati corrisponde esattamente alla query di ricerca. I nomi delle proprietà (Creatore, Titolo e così via) e dei valori sono sensibili all’uso di maiuscole e minuscole.
 
 | Campo metadati | Valore e utilizzo dei facet |
 |---|---|
@@ -202,19 +202,19 @@ Di seguito sono riportati alcuni esempi di formati di ricerca per query compless
 * Per visualizzare le risorse con un valore di proprietà contenente una stringa specifica (ad esempio: title = Sala riunioni di Basilea): `title:*Meeting*`
 * Per visualizzare le risorse che contengono una stringa particolare e hanno un valore di proprietà specifico (ad esempio: cerca Adobe stringa nelle risorse con title=John Doe): `*Adobe* title:"John Doe"`
 
-## Cercare risorse da altri [!DNL Experience Manager] offerte o interfacce {#search-assets-other-surfaces}
+## Cercare risorse digitali da altri [!DNL Experience Manager] offerte o interfacce {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] collega l’archivio DAM a varie altre [!DNL Experience Manager] soluzioni per fornire un accesso più rapido alle risorse digitali e semplificare i flussi di lavoro creativi. L’individuazione delle risorse inizia con ricerca o ricerca. Il comportamento di ricerca rimane sostanzialmente lo stesso tra le varie superfici e soluzioni. Alcuni metodi di ricerca cambiano a seconda del pubblico di destinazione, dei casi d’uso e dell’interfaccia utente [!DNL Experience Manager] soluzioni. I metodi specifici sono documentati per le singole soluzioni ai link seguenti. I suggerimenti e i comportamenti universalmente applicabili sono documentati in questo articolo.
 
-### Cercare risorse dal pannello Asset Link di Adobe {#aal}
+### Cercare risorse digitali dal pannello Asset Link di Adobe {#aal}
 
 Utilizzando Adobe Asset Link, i creativi possono ora accedere ai contenuti archiviati in [!DNL Experience Manager Assets], senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nella sezione [!DNL Adobe Creative Cloud] app: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign]. Asset Link consente inoltre di cercare risultati visivamente simili. I risultati della ricerca visiva sono basati su algoritmi di apprendimento automatico di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Vedi [cercare e sfogliare le risorse](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) utilizzo di Adobe Asset Link.
 
-### Cercare risorse in [!DNL Experience Manager] app desktop {#desktop-app}
+### Cercare risorse digitali in [!DNL Experience Manager] app desktop {#desktop-app}
 
 I creativi professionisti utilizzano l’app desktop per [!DNL Experience Manager Assets] facilmente ricercabili e disponibili sul desktop locale (Win o Mac). I creativi possono facilmente rivelare le risorse desiderate in Mac Finder o Esplora risorse, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell’archivio. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, `*` e `?` caratteri jolly, e `AND` operatore. Vedi [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
 
-### Cercare risorse in [!DNL Brand Portal] {#brand-portal}
+### Cercare risorse digitali in [!DNL Brand Portal] {#brand-portal}
 
 Gli utenti e i professionisti del marketing del settore utilizzano Brand Portal per condividere in modo efficiente e sicuro le risorse digitali approvate con i team interni, i partner e i rivenditori estesi. Vedi [cercare risorse in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
@@ -226,7 +226,7 @@ Da all’interno di [!DNL Experience Manager] nell’interfaccia utente, gli ute
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine web, gli autori possono cercare i set direttamente da Content Finder. Nel menu pop-up è disponibile un filtro per i set.
 
-### Cercare le risorse in Content Finder durante la creazione di pagine web {#content-finder}
+### Cercare risorse digitali in Content Finder durante la creazione di pagine web {#content-finder}
 
 Gli autori possono utilizzare Content Finder per cercare nell’archivio DAM le risorse pertinenti e utilizzarle nelle pagine web create. Gli autori possono inoltre utilizzare la funzionalità Risorse collegate per cercare le risorse disponibili in un sito remoto [!DNL Experience Manager] distribuzione. Gli autori possono quindi utilizzare queste risorse nelle pagine web di un sito locale [!DNL Experience Manager] distribuzione. Vedi [utilizzare risorse remote](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
