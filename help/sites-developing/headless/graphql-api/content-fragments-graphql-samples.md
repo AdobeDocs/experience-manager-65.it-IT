@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1306,15 +1306,15 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1323,16 +1323,42 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 ### Query di esempio per un frammento di contenuto nidificato: più tipi di modello {#sample-wknd-nested-fragment-multiple-model}
 
+#### Tipo di modello a riferimento singolo
+
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `article` e `adventure`
+   * con i riferimenti a frammenti ad altri frammenti del tipo di modello specifico `article`
 
 >[!NOTE]
 >
->Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati.
+>Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegna query `fragments` come array di `[Article]`.
 
-```xml
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Più tipi di modelli di riferimento
+
+Questa query rappresenta un’interrogazione per ottenere:
+
+* più frammenti di contenuto di tipo `bookmark`
+   * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `Article` e `Adventure`
+
+>[!NOTE]
+>
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegna query `fragments` come array di `[AllFragmentModels]`, che viene fatto riferimento al tipo di unione.
+
+```graphql
 {
   bookmarkList {
     items {
