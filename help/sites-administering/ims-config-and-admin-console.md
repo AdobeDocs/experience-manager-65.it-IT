@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 778987e69a23f81584f7a86db2fe24df64035919
+source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1677'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 12%
 
 AEM 6.4.3.0 introduce [!DNL Admin Console] supporto per le istanze AEM e l’autenticazione basata su Adobe IMS (Identity Management System) per **AEM Managed Services** clienti.
 
-AEM onboarding [!DNL Admin Console] consentirà AEM clienti Managed Services di gestire tutti gli utenti di Experience Cloud in un’unica console. Gli utenti e i gruppi possono essere assegnati ai profili di prodotto associati alle istanze AEM, consentendo loro di accedere a un’istanza specifica.
+AEM onboarding [!DNL Admin Console] consentirà AEM clienti Managed Services di gestire tutti gli utenti di Experience Cloud in un’unica console. Gli utenti possono essere assegnati a profili di prodotto associati a istanze AEM, consentendo loro di accedere a un’istanza specifica.
 
 ## Elementi di rilievo {#key-highlights}
 
@@ -106,9 +106,9 @@ Per facilitare la creazione di utenti, è possibile caricare un file CSV per agg
 
 Lo strumento User Sync (UST) consente ai clienti aziendali di creare o gestire gli utenti Adobe che utilizzano Active Directory o altri servizi di directory OpenLDAP testati. Gli utenti di destinazione sono amministratori di identità IT (directory Enterprise e amministratori di sistema) che saranno in grado di installare e configurare lo strumento. Lo strumento open source è personalizzabile in modo che i clienti possano modificarlo in base a specifiche esigenze.
 
-Durante l’esecuzione di User Sync, recupera un elenco di utenti da Active Directory dell’organizzazione (o da qualsiasi altra origine dati compatibile) e lo confronta con l’elenco di utenti all’interno della [!DNL Admin Console]. Chiama quindi l&#39;Adobe [!DNL User Management] in modo che [!DNL Admin Console] viene sincronizzato con la directory dell’organizzazione. Il flusso di variazione è interamente unidirezionale; eventuali modifiche apportate nel [!DNL Admin Console] non venire spinti nella directory.
+Durante l&#39;esecuzione di User Sync, recupera un elenco di utenti da Active Directory dell&#39;organizzazione (o da qualsiasi altra origine dati compatibile) e lo confronta con l&#39;elenco di utenti all&#39;interno della [!DNL Admin Console]. Chiama quindi l&#39;Adobe [!DNL User Management] in modo che [!DNL Admin Console] è sincronizzato con la directory dell&#39;organizzazione. Il flusso di variazione è interamente unidirezionale; eventuali modifiche apportate nel [!DNL Admin Console] non venire spinti nella directory.
 
-Lo strumento consente all’amministratore di sistema di mappare i gruppi di utenti nella directory del cliente con la configurazione del prodotto e i gruppi di utenti nel [!DNL Admin Console], la nuova versione di UST consente anche la creazione dinamica di gruppi di utenti nel [!DNL Admin Console].
+Lo strumento consente all&#39;amministratore di sistema di mappare i gruppi di utenti nella directory del cliente con la configurazione del prodotto e i gruppi di utenti nel [!DNL Admin Console], la nuova versione di UST consente anche la creazione dinamica di gruppi di utenti nel [!DNL Admin Console].
 
 Per configurare User Sync, l’organizzazione deve creare un set di credenziali in modo analogo a come userebbe l’[[!DNL User Management] API ](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
@@ -158,11 +158,11 @@ Puoi controllare i dettagli dell’istanza per identificare l’istanza:
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-In ogni istanza del contesto di prodotto, sarà presente un profilo di prodotto associato. Questo profilo di prodotto viene utilizzato per assegnare l’accesso a utenti e gruppi.
+In ogni istanza del contesto di prodotto, sarà presente un profilo di prodotto associato. Questo profilo di prodotto viene utilizzato per assegnare l’accesso agli utenti.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
-Tutti gli utenti e i gruppi aggiunti sotto questo profilo di prodotto potranno accedere a tale istanza come mostrato nell’esempio seguente:
+Tutti gli utenti aggiunti sotto questo profilo di prodotto potranno accedere a tale istanza come mostrato nell’esempio seguente:
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
