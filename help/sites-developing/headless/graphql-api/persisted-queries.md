@@ -1,16 +1,17 @@
 ---
 title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client utilizzando il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli Dispatcher e CDN, migliorando in ultima analisi le prestazioni delle applicazioni client.
-source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
+exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1424'
 ht-degree: 72%
 
 ---
 
 # Query GraphQL persistenti {#persisted-queries-caching}
 
-Le query persistenti sono query GraphQL create e memorizzate sul server di Adobe Experience Manager (AEM) as a Cloud Service. Possono essere richiamate tramite una richiesta GET da parte delle applicazioni client. La risposta di una richiesta di GET può essere memorizzata nella cache ai livelli Dispatcher e Content Delivery Network (CDN), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. In questo sono diverse dalle query GraphQL standard, che vengono eseguite utilizzando richieste POST in cui la risposta non può essere facilmente memorizzata nella cache.
+Le query persistenti sono query GraphQL create e memorizzate sul server Adobe Experience Manager (AEM). Possono essere richiamate tramite una richiesta GET da parte delle applicazioni client. La risposta di una richiesta di GET può essere memorizzata nella cache ai livelli Dispatcher e Content Delivery Network (CDN), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. In questo sono diverse dalle query GraphQL standard, che vengono eseguite utilizzando richieste POST in cui la risposta non può essere facilmente memorizzata nella cache.
 
 <!--
 >[!NOTE]
@@ -261,7 +262,7 @@ Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
-Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) e i livelli CDN (Content Delivery Network), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) e i livelli CDN (Content Delivery Network), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
 
 Per impostazione predefinita, AEM la cache viene annullata in base alla definizione TTL (Time To Live). Questi TTL possono essere definiti dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 
