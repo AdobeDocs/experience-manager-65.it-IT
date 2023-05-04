@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
+source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3045'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di 
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
+Potete scegliere tra due opzioni di ritaglio immagine: Ritaglio pixel o ritaglio avanzato. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine.
 
 >[!IMPORTANT]
 ・ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e rilevanti per il marchio e i valori.
