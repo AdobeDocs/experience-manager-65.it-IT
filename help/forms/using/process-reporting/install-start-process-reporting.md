@@ -8,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Se si utilizza Forms Workflow, il database AEM Forms può contenere potenzialmen
 
 I servizi di pubblicazione Process Reporting pubblicano tutti i dati di AEM Forms attualmente disponibili nel database. Ciò implica che se il database contiene dati legacy sui quali non si desidera eseguire rapporti e query, tutti i dati verranno pubblicati nell&#39;archivio anche se non è necessario per il reporting. È consigliabile eliminare questi dati prima di eseguire i servizi per pubblicare i dati nell&#39;archivio di Process Reporting. In questo modo si migliorano le prestazioni sia del servizio di pubblicazione che del servizio che esegue una query dei dati per la creazione di rapporti.
 
-Per informazioni dettagliate sull&#39;eliminazione dei dati del processo AEM Forms, vedi [Rimozione dei dati del processo](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Per informazioni dettagliate sull&#39;eliminazione dei dati del processo AEM Forms, vedi [Rimozione dei dati del processo](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Per suggerimenti e trucchi di Purge Utility, vedi l&#39;articolo Adobe Developer Connection su [Rimozione di processi e processi](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Per suggerimenti e trucchi di Purge Utility, vedi l&#39;articolo Adobe Developer Connection su [Rimozione di processi e processi](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Configurazione dei servizi di reporting dei processi {#configuring-process-reporting-services}
 

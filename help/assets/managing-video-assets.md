@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5499'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 8%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-video-assets.html?lang=en) |
 
 Il formato video è una parte fondamentale delle risorse digitali di un&#39;organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l’intero ciclo di vita delle risorse video dopo la loro creazione.
 
@@ -168,7 +167,7 @@ Per configurare le impostazioni Google Cloud:
 
    `https://<servername.domain>:<port_number>`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321`
+   Ad esempio `https://1a2b3c.mycompany.com:4321`
 
    **Nota**: L’esempio di percorso sopra è destinato solo a scopo dimostrativo.
 
@@ -178,7 +177,7 @@ Per configurare le impostazioni Google Cloud:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Ad esempio `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **Nota**: L’esempio di percorso sopra è destinato solo a scopo dimostrativo.
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Per semplificare l’utilizzo dell’API, AEM Forms fornisce un servizio per car
 
 Per creare comunicazioni interattive dai record salvati in un file JSON:
 
-1. Crea un [Cartella controllata](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo dell’API Batch:
+1. Crea un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per l’utilizzo dell’API Batch:
    1. Accedi all’istanza di authoring di AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella osservata]**. Tocca **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
@@ -95,7 +95,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /dipendente/ID, il valore del campo id diventa nome per la comunicazione interattiva corrispondente. Il valore predefinito è casuale [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booleano | Impostare il valore su False. Puoi utilizzare il parametro usePrefillService per precompilare la comunicazione interattiva con i dati recuperati dal servizio di precompilazione configurato per la comunicazione interattiva corrispondente. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. Il valore predefinito è false. |
       | batchType | Stringa | Impostare il valore su STAMPA, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
-      | locale | Stringa | Specifica le impostazioni internazionali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione locale , ma puoi creare un servizio personalizzato per la generazione di comunicazioni interattive localizzate. Il valore predefinito è en_US |
+      | lingua | Stringa | Specifica le impostazioni internazionali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione locale , ma puoi creare un servizio personalizzato per la generazione di comunicazioni interattive localizzate. Il valore predefinito è en_US |
 
    1. Tocca **[!UICONTROL Crea]** Viene creata la cartella controllata.
 1. Utilizza la cartella controllata per generare la comunicazione interattiva:
@@ -109,7 +109,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
 
 #### Utilizzare i dati di input salvati in un’origine dati esterna e accessibili tramite il modello dati del modulo per produrre una comunicazione interattiva {#use-fdm-as-data-source}
 
-È possibile combinare i dati (record) salvati in un’origine dati esterna con un modello di comunicazione interattivo per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, è necessario collegarla a un’origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. È possibile configurare il servizio di elaborazione batch Cartelle controllate per recuperare i dati utilizzando lo stesso modello dati modulo da un’origine dati esterna. A [creare una comunicazione interattiva dai record salvati in un’origine dati esterna](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+È possibile combinare i dati (record) salvati in un’origine dati esterna con un modello di comunicazione interattivo per produrre una comunicazione interattiva. Quando si crea una comunicazione interattiva, è necessario collegarla a un’origine dati esterna tramite un modello dati modulo (FDM) per accedere ai dati. È possibile configurare il servizio di elaborazione batch Cartelle controllate per recuperare i dati utilizzando lo stesso modello dati modulo da un’origine dati esterna. A [creare una comunicazione interattiva dai record salvati in un’origine dati esterna](/help/forms/using/work-with-form-data-model.md):
 
 1. Configura il Modello dati modulo del modello:
    1. Aprire il modello dati modulo associato al modello di comunicazione interattivo.
@@ -141,7 +141,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
 
    1. Salva e chiudi il file 
 
-1. Crea un [Cartella controllata](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configuralo per l’utilizzo del servizio API Batch:
+1. Crea un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per l’utilizzo del servizio API Batch:
    1. Accedi all’istanza di authoring di AEM Forms.
    1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella osservata]**. Tocca **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
@@ -157,7 +157,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /dipendente/ID, il valore del campo id diventa nome per la comunicazione interattiva corrispondente. Il valore predefinito è casuale [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
       | usePrefillService | Booleano | Impostare il valore su True. Il valore predefinito è false.  Quando il valore è impostato su true, l’API Batch legge i dati dal modello dati di modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostare il valore su STAMPA, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
-      | locale | Stringa | Specifica le impostazioni internazionali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione locale , ma puoi creare un servizio personalizzato per la generazione di comunicazioni interattive localizzate. Il valore predefinito è en_US. |
+      | lingua | Stringa | Specifica le impostazioni internazionali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione locale , ma puoi creare un servizio personalizzato per la generazione di comunicazioni interattive localizzate. Il valore predefinito è en_US. |
 
    1. Tocca **[!UICONTROL Crea]** Viene creata la cartella controllata.
 1. Utilizza la cartella controllata per generare la comunicazione interattiva:

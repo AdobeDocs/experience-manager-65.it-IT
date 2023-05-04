@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Inoltre, imposta il percorso della cartella temporanea di ImageMagick nel `confi
 >
 >ImageMagick `policy.xml` e `configure.xml` i file sono disponibili in `/usr/lib64/ImageMagick-&#42;/config/` anziché `/etc/ImageMagick/`.See [Documentazione di ImageMagick](https://www.imagemagick.org/script/resources.php) per la posizione dei file di configurazione.
 
-Se utilizzi [!DNL Experience Manager] in Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante di Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con più di 3000 x 23000 pixel.
+Se utilizzi [!DNL Experience Manager] in Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante di Assistenza clienti Adobe per implementare queste best practice per la distribuzione AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
 
 ### XMP {#xmp-writeback}
 
@@ -222,7 +222,7 @@ XMP writeback aggiorna la risorsa originale ogni volta che i metadati vengono mo
 * Viene creata una versione della risorsa
 * [!UICONTROL Risorsa di aggiornamento DAM] viene eseguito sulla risorsa
 
-I risultati elencati consumano notevoli risorse. Pertanto, Adobe consiglia di disabilitare XMP write-back se non è necessario. Per ulteriori informazioni, consulta [XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
+I risultati elencati consumano notevoli risorse. Pertanto, Adobe consiglia di disabilitare XMP write-back se non è necessario. Per ulteriori informazioni, consulta [XMP](/help/assets/xmp-writeback.md).
 
 Se è selezionato il flag di esecuzione dei flussi di lavoro, l’importazione di una grande quantità di metadati può comportare un’attività di XMP write-back ad uso intensivo di risorse. Pianifica un&#39;importazione di questo tipo durante l&#39;utilizzo snello del server in modo che le prestazioni per altri utenti non siano influenzate.
 

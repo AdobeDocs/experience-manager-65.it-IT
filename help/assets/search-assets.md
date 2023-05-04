@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 9406dc74887d29e93461e1015a8f52fa7ee196f6
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '5613'
+source-wordcount: '5601'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=it) |
 
 [!DNL Adobe Experience Manager Assets] fornisce solidi metodi di individuazione delle risorse che consentono di raggiungere una maggiore velocità dei contenuti. I team possono ridurre i tempi di commercializzazione grazie a un’esperienza di ricerca intelligente e continua, utilizzando funzionalità predefinite e metodi personalizzati. La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing, sia per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che puoi eseguire tramite [!DNL Assets] l&#39;interfaccia utente o altre app e superfici aiutano a soddisfare questi casi d&#39;uso.
 

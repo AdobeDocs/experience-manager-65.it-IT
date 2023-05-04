@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2245'
 ht-degree: 32%
 
 ---
@@ -60,7 +60,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Esempio, `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
+   Ad esempio, `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel se
 
    * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
    * Incapacità di identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i loghi sulle T-shirt.
-   * L’assegnazione tag è supportata nelle impostazioni internazionali che [!DNL Experience Manager] è supportato in . Per un elenco delle lingue, vedi [Note sulla versione di Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * L’assegnazione tag è supportata nelle impostazioni internazionali che [!DNL Experience Manager] è supportato in .
 
 * Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la funzione [!DNL Assets] Omnisearch (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 

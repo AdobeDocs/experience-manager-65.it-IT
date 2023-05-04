@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 2%
+source-wordcount: '1746'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en) |
 
 ## Panoramica {#overview}
 
@@ -43,7 +42,7 @@ A [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) 
 
 Per ulteriori informazioni consulta [Supporto dei frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
 
-## Dati, modello {#data-model}
+## Modello dati {#data-model}
 
 La [!DNL Assets] L’API HTTP espone due elementi principali, cartelle e risorse (per le risorse standard).
 

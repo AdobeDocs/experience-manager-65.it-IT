@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ Se vengono apportate troppe modifiche e commit all&#39;archivio in un breve peri
 1. Per evitare di superare i limiti accettabili della coda di osservazione, si raccomanda di:
 
    * Ridurre la frequenza costante di commit. I picchi brevi nei commit sono accettabili, ma il tasso costante dovrebbe essere ridotto.
-   * Aumenta le dimensioni del `DiffCache` come descritto in [Suggerimenti per l&#39;ottimizzazione delle prestazioni > Ottimizzazione archiviazione Mongo > Dimensione della cache del documento](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+   * Aumenta le dimensioni del `DiffCache` come descritto in [Suggerimenti per l&#39;ottimizzazione delle prestazioni > Ottimizzazione archiviazione Mongo > Dimensione della cache del documento](/help/sites-deploying/configuring-performance.md).
 
 ## Identificazione e correzione di un processo di reindicizzazione bloccato {#identifying-and-remediating-a-stuck-re-indexing-process}
 

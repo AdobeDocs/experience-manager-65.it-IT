@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ Se un singolo nodo di un cluster multinode non è riuscito e i nodi rimanenti de
 1. (WebSphere® Application Server) Se si esegue il ripristino in una nuova istanza di WebSphere® Application Server, eseguire il comando restoreConfig.bat/sh.
 1. Ripristinare il database dei moduli AEM eseguendo prima un&#39;operazione di ripristino del database utilizzando i file di backup del database e quindi applicando i redo log delle transazioni al database recuperato. (Vedi [Database dei moduli AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, vedere uno dei seguenti articoli della knowledge base:
 
-   * [Backup e ripristino DB2® per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [Backup e ripristino di Oracle per i moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Backup e ripristino di Microsoft® SQL Server per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [Backup e ripristino di MySQL per i moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Backup e ripristino di Oracle per i moduli AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Backup e ripristino di MySQL per i moduli AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recuperare la directory GDS eliminando prima il contenuto della directory GDS sull&#39;installazione esistente di moduli AEM e quindi copiando il contenuto della directory GDS dal GDS di backup. Se hai modificato la posizione della directory GDS, vedi [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Rinomina la directory di backup GDS da ripristinare come mostrato nei seguenti esempi:

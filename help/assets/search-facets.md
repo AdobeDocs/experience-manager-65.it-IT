@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2417'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 17%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Un&#39;implementazione a livello aziendale di [!DNL Adobe Experience Manager Assets] ha la capacità di memorizzare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede tempo se si utilizzano solo le funzionalità di ricerca generiche di [!DNL Experience Manager].
 

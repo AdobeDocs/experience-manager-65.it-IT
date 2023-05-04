@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2493'
-ht-degree: 8%
+source-wordcount: '2481'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 8%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
 
 <!-- old content
 
@@ -32,7 +31,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 <!-- New overview content
 -->
 
-[!DNL Adobe Stock]Il servizio offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo.
+[!DNL Adobe Stock] Il servizio consente a designer e aziende di accedere a milioni di foto, vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate e prive di royalty, per tutti i loro progetti creativi.
 
 [!DNL Adobe Stock] per l’offerta enterprise, per impostazione predefinita, include la condivisione di diritti in tutta l’organizzazione. Una volta concessa la licenza a una risorsa da parte di un utente dell’organizzazione, altri utenti dell’organizzazione possono identificare, scaricare e utilizzare questa risorsa senza dover concedere nuovamente la licenza. Una volta che una risorsa è stata concessa in licenza dalla tua organizzazione, il diritto di utilizzarla è permanente.
 
@@ -260,7 +259,7 @@ Di seguito sono riportate le autorizzazioni necessarie per consentire a un utent
    * Privilegi: `jcr:read`
    * Tipo di autorizzazione: `Allow`
 
-   Fate clic su **[!UICONTROL Aggiungi]**.
+   Fai clic su **[!UICONTROL Aggiungi]**.
 
    ![autorizzazioni utente](assets/aem-stock-user-permissions.png)
 

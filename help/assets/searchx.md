@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 20%
+source-wordcount: '825'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ Puoi anche aggiungere altre schede al [!DNL Assets] pannello di amministrazione.
 
 >[!CAUTION]
 >
->A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per l&#39;annuncio, vedi [funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it). Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
+>A partire da [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Adobe consiglia di utilizzare l’interfaccia touch. Per la personalizzazione, consulta [facet di ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
@@ -273,7 +273,7 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 | predicateName | Stringa | Nome del predicato. Impostazione predefinita `path` |
 | rootPath | Stringa | Percorso principale del predicato. Impostazione predefinita `/content/dam` |
 | pathFieldPredicateName | Stringa | Impostazione predefinita `folder` |
-| showFlatOption | Booleano | Flag per visualizzare la casella di controllo `search in subfolders`. Valori predefiniti per true. |
+| showFlatOption | Booleano | Flag per visualizzare la casella di controllo `search in subfolders`. Predefinito su true. |
 
 ### DatePredicate {#datepredicate}
 

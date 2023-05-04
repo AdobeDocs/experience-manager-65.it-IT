@@ -6,20 +6,19 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3618'
 ht-degree: 8%
 
 ---
 
-# Schemi metadati {#metadata-schemas}
+# Schemi di metadati {#metadata-schemas}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-schemas.html?lang=en) |
 
 Le organizzazioni hanno a disposizione un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. La correzione dell&#39;applicazione dei metadati è sacrosanta per mantenere flussi di lavoro e processi basati su metadati. Per aderire alla strategia e agli standard dei metadati a livello aziendale, puoi utilizzare schemi di metadati che aiutano gli utenti DAM ad allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
 
@@ -53,7 +52,7 @@ Per visualizzare un elenco di moduli o modelli, in [!DNL Experience Manager] int
 |  | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> La [!UICONTROL immagine] Il modulo presenta i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL sciocco]: Modulo schema per le risorse con TIFF di sottotipo.</li></ul> |
 |  | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Modulo schema per risorse con PDF di sottotipo. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Modulo di schema per le risorse video con tipo MIME, ad esempio `video/avi` e `video/mp4`. |
-| [!UICONTROL collection] |  | Modulo schema per le raccolte. |
+| [!UICONTROL raccolta] |  | Modulo schema per le raccolte. |
 | [!UICONTROL contentfragment] |  | [Modulo schema per frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Modulo di schema per elementi di contenuto generati dall’utente e risorse integrate in Experience Manager dai social media. |

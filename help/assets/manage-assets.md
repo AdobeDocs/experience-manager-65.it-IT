@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb60913e125d89c7494c21cfd6432b659695670a
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '9982'
-ht-degree: 4%
+source-wordcount: '9970'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 In [!DNL Adobe Experience Manager Assets], puoi fare di più che archiviare e gestire le risorse. [!DNL Experience Manager] offre funzionalità di gestione delle risorse di livello enterprise. Puoi modificare e condividere le risorse, eseguire ricerche avanzate e creare più rappresentazioni di decine di formati di file supportati. Puoi anche gestire versioni e diritti digitali, automatizzare l’elaborazione delle risorse, gestire e gestire i metadati, collaborare con le annotazioni e molto altro.
 
@@ -572,7 +571,7 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
 
    * Se la risorsa non ha riferimenti, viene eliminata.
 
-   * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **Riferimento a una o più risorse**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+   * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **Riferimento a una o più risorse**. È possibile selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
    >[!NOTE]
    >
    >* Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. Inoltre, disattiva l&#39;opzione force delete utilizzando una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
@@ -869,7 +868,7 @@ Ecco un esempio di come configurare [!DNL Experience Manager] per stampare annot
 
 ## Creare, gestire, visualizzare in anteprima e ripristinare le versioni delle risorse {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa. In [!DNL Experience Manager], puoi creare una versione, visualizzare la revisione corrente, visualizzare le differenze affiancate tra due versioni di immagini e ripristinare la versione precedente di una risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa. In [!DNL Experience Manager], puoi creare una versione, visualizzare la revisione corrente, visualizzare le differenze affiancate tra due versioni di immagini e ripristinare la versione precedente di una risorsa.
 
 Puoi creare versioni in [!DNL Experience Manager] nei seguenti scenari:
 

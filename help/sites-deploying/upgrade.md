@@ -10,10 +10,10 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,6 @@ AEM di recente introduce [Rilevatore pattern](/help/sites-deploying/pattern-dete
 
 Per ulteriori dettagli sulle modifiche apportate alle versioni recenti di AEM, consulta le note complete sulla versione:
 
-* [Note generali sulla versione per Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=it)
 * [Note sulla versione più recente del Service Pack di Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
 ## Panoramica dell&#39;aggiornamento {#upgrade-overview}

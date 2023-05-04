@@ -1,23 +1,22 @@
 ---
-title: Installare la versione [!DNL Workfront for Experience Manager enhanced connector]
-description: Installare la versione [!DNL Workfront for Experience Manager enhanced connector]
+title: Installa [!DNL Workfront for Experience Manager enhanced connector]
+description: Installa [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '489'
 ht-degree: 4%
 
 ---
 
-# Installare la versione [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# Installa [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Questo articolo |
-| AEM 6.4 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-install.html?lang=en) |
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] installa il connettore avanzato. Prima di eseguire l’installazione, controlla il supporto della piattaforma e altri [prerequisiti per il connettore](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
