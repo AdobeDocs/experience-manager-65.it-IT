@@ -1,12 +1,10 @@
 ---
-title: Risorse per i nuovi utenti AEM
-seo-title: Resources for New AEM Users
-description: Domande, risposte e risorse per gli utenti non ancora AEM
-seo-description: Questions, answers, and resources for users new to AEM
+title: Risorse per i nuovi utenti di Adobe Experience Manager
+description: Domande, risposte e risorse per gli utenti non esperti di Adobe Experience Manager
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 9%
 
 ---
@@ -30,7 +28,7 @@ Visita [Hub di AEM](https://experienceleague.adobe.com/docs/experience-manager-r
 
 ## Come posso ottenere il supporto ufficiale per AEM? {#official-support}
 
-In qualità di cliente con licenza, puoi ottenere assistenza per AEM da [team di assistenza clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support). Puoi anche farci domande nella [Community AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) o [@AdobeExpCare](https://twitter.com/adobeexpcare) Maniglia twitter.
+In qualità di cliente con licenza, puoi ottenere assistenza per AEM da [team di assistenza clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support). Puoi anche farci domande nella [Community AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) o sull&#39;handle Twitter di AdobeExpCare in `https://twitter.com/adobeexpcare`.
 
 ## Dove si trova la documentazione per altre versioni di AEM? {#versions}
 
@@ -45,4 +43,4 @@ Puoi trovare tutte le note sulla versione per AEM qui:
 * [Note sulla versione di AEM 6.5](/help/release-notes/home.md)
 * [Elenco delle funzioni rimosse e dichiarate obsolete in AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-In caso di domande, contatta il [AEM Community](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) o chiedi su Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
+In caso di domande, contatta il [AEM Community](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) oppure chiedi all&#39;account Twitter di AdobeExpCare all&#39;indirizzo `https://twitter.com/adobeexpcare`.

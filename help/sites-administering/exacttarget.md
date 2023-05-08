@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Per creare una configurazione ExactTarget nei Cloud Services:
 
    ExactTarget è stato configurato. Per modificare la configurazione, fai clic su **Modifica**. Per accedere a ExactTarget, fai clic su **Vai a ExactTarget**.
 
-1. AEM ora fornisce una funzione di estensione dati. Puoi importare le colonne di estensione dati ExactTarget. Per configurarlo, fai clic sul segno &quot;+&quot; visualizzato, oltre a creare correttamente la configurazione ExactTarget. Puoi selezionare una qualsiasi delle estensioni di dati esistenti dall’elenco a discesa. Per ulteriori informazioni su come configurare le estensioni dati, consulta [Documentazione ExactTarget](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM ora fornisce una funzione di estensione dati. Puoi importare le colonne di estensione dati ExactTarget. È possibile configurarlo facendo clic sul segno &quot;+&quot; visualizzato, oltre a creare correttamente la configurazione ExactTarget. Puoi selezionare una qualsiasi delle estensioni di dati esistenti dall’elenco a discesa. Per ulteriori informazioni su come configurare le estensioni dati, consulta [Documentazione ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
 
    Le colonne di estensione dei dati importati possono essere successivamente utilizzate tramite **Testo e personalizzazione** componente.
 

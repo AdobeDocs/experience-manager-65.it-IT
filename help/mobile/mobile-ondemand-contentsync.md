@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2995'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ Per ogni tipo di configurazione, è disponibile un *Gestore dell’aggiornamento
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interfaccia che tutti i gestori di aggiornamento devono implementare
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Classe astratta che semplifica il rendering delle risorse utilizzando Sling
 
-Registra la classe come componente factory OSGi e distribuiscila nel contenitore OSGi in un bundle. Questa operazione può essere eseguita utilizzando [Plug-in Maven SCR](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) utilizzando tag JavaDoc o annotazioni. L&#39;esempio seguente mostra la versione di JavaDoc:
+Registra la classe come componente factory OSGi e distribuiscila nel contenitore OSGi in un bundle. Questa operazione può essere eseguita utilizzando [Plug-in Maven SCR](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) utilizzando tag JavaDoc o annotazioni. L&#39;esempio seguente mostra la versione di JavaDoc:
 
 ```java
 /*

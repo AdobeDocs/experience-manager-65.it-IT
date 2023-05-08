@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 Il dashboard di AEM Mobile consente di creare, creare e distribuire l’app mobile, creare, eliminare e modificare i metadati dell’applicazione. Una volta che l’applicazione è attiva, puoi analizzare l’analisi delle applicazioni, incluse le metriche relative al ciclo di vita e all’utilizzo, per migliorare la conversione dei clienti e la fedeltà al marchio.
 
@@ -33,7 +33,7 @@ Per configurare l’ambiente e iniziare, consulta [Amministrazione AEM utilizzar
 
 La [Catalogo delle app AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) visualizza tutta la tua app mobile gestita in AEM.
 
-Considera questo catalogo come la &quot;pagina di destinazione&quot; di AEM Mobile, in cui gli amministratori possono avviare una nuova applicazione AEM Mobile creando in base a un modello o caricando un&#39;app esistente già avviata da uno sviluppatore di dispositivi mobili.
+Considera questo catalogo come la &quot;pagina di destinazione&quot; di AEM Mobile, in cui gli amministratori possono avviare una nuova applicazione AEM Mobile creando in base a un modello o caricando un&#39;app esistente già avviata da uno sviluppatore mobile.
 
 Per passare alla pagina di destinazione del catalogo delle app, effettua le seguenti operazioni:
 
@@ -45,7 +45,7 @@ Per passare alla pagina di destinazione del catalogo delle app, effettua le segu
 
 ## Dashboard dell&#39;app AEM Mobile {#the-aem-mobile-app-dashboard}
 
-Quando si seleziona un’app AEM Mobile dal catalogo, viene visualizzata la relativa dashboard. Qui puoi gestire l’applicazione, visualizzare le statistiche, generare, distribuire e gestire il contenuto dell’app mobile.
+Quando si seleziona un’app AEM Mobile dal catalogo, viene visualizzato il relativo dashboard. Qui puoi gestire l’applicazione, visualizzare le statistiche, generare, distribuire e gestire il contenuto dell’app mobile.
 
 Per visualizzare o modificare i dettagli in ogni riquadro del dashboard di AEM Mobile, fai clic su &quot;..&quot; nell&#39;angolo in basso a destra.
 
@@ -53,7 +53,7 @@ Per visualizzare o modificare i dettagli in ogni riquadro del dashboard di AEM M
 
 ### La sezione Gestione app {#the-manage-app-tile}
 
-Il riquadro Gestisci app visualizza l&#39;icona dell&#39;applicazione, il nome, la descrizione, le piattaforme supportate, la pagina principale per gli aggiornamenti URL e le informazioni sulla versione. È possibile eseguire il drill-through in questa sezione per modificare e gestire la configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi delle applicazioni per la distribuzione.
+Il riquadro Gestisci app visualizza l&#39;icona dell&#39;applicazione, il nome, la descrizione, le piattaforme supportate, la pagina principale per gli aggiornamenti URL e le informazioni sulla versione. È possibile eseguire il drill-through in questa sezione per modificare e gestire la configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi dell&#39;applicazione per la distribuzione.
 
 Fai clic su [qui](/help/mobile/phonegap-app-details-tile.md) per i dettagli.
 
@@ -61,7 +61,7 @@ Fai clic su [qui](/help/mobile/phonegap-app-details-tile.md) per i dettagli.
 
 ### Sezione Gestisci contenuto pagina {#the-manage-page-content-tile}
 
-Il contenuto può essere creato, aggiornato ed eliminato in AEM Mobile nello stesso modo in cui lo si fa in AEM Sites. La **Gestisci sezione contenuto pagina** visualizza il numero di pagine del contenuto gestito e dell&#39;ultima modifica. Per approfondire i contenuti e creare, copiare, spostare, eliminare e aggiornare le pagine, fai clic su ogni record della tessera. Una volta aggiornato il contenuto, puoi inviare un aggiornamento del contenuto ai clienti tramite **Gestisci pacchetti di contenuto riquadro.**
+Il contenuto può essere creato, aggiornato ed eliminato in AEM Mobile nello stesso modo in cui esegui le stesse operazioni all’interno di AEM Sites. La **Gestisci sezione contenuto pagina** visualizza il numero di pagine del contenuto gestito e dell&#39;ultima modifica. Per approfondire i contenuti e creare, copiare, spostare, eliminare e aggiornare le pagine, fai clic su ogni record della tessera. Una volta aggiornato il contenuto, puoi inviare un aggiornamento del contenuto ai clienti tramite **Gestisci pacchetti di contenuto riquadro.**
 
 ![Riquadro contenuto](assets/chlimage_1-138.png)
 
@@ -69,17 +69,17 @@ Il contenuto può essere creato, aggiornato ed eliminato in AEM Mobile nello ste
 
 Dopo aver aggiunto o modificato il contenuto tramite la sezione Gestione contenuto pagina , puoi inviare tali modifiche ai clienti con un aggiornamento della versione del contenuto.
 
-Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina in AEM e, fa sì che il team di sviluppo apporti modifiche all’applicazione PhoneGap Shell (ad esempio, framework o infrastruttura dell’app) e poi invii tali modifiche ai clienti in modo rapido e senza dover coinvolgere uno sviluppatore per inviare nuovamente i vari store da distribuire.
+Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina in AEM e, fa sì che il team di sviluppo apporti modifiche all’applicazione PhoneGap Shell (ovvero, al framework dell’app o all’infrastruttura) e poi invii tali modifiche ai clienti in modo rapido e senza dover coinvolgere uno sviluppatore per inviare nuovamente i vari negozi per la distribuzione.
 
-Pacchetto di contenuto crea un file ZIP, considerato pacchetto di rilascio del contenuto, per ogni aggiornamento. Questi pacchetti contengono risorse html e pagine html generate durante il rendering dell&#39;app ed è sufficientemente intelligente da creare un pacchetto solo per i file che devono essere modificati dall&#39;ultimo aggiornamento.
+Pacchetto di contenuto crea un file ZIP, considerato pacchetto di rilascio del contenuto, per ogni aggiornamento. Questi pacchetti contengono risorse html e pagine html generate durante il rendering dell&#39;app ed è sufficientemente intelligente da creare un pacchetto solo per i file modificati dall&#39;ultimo aggiornamento.
 
-La sezione Gestione pacchetti contenuti **Tipo** La colonna verrà visualizzata come &quot;App&quot; per indicare il contenuto della shell dell’applicazione, ad esempio il framework o l’infrastruttura dell’app gestita da uno sviluppatore oppure come &quot;Contenuto&quot; che rappresenta il contenuto della pagina gestito dall’autore del contenuto.
+La sezione Gestione pacchetti contenuti **Tipo** viene visualizzata la colonna &quot;App&quot; per indicare il contenuto della shell dell’applicazione, ad esempio il framework o l’infrastruttura dell’app gestita da uno sviluppatore oppure &quot;Content&quot; che rappresenta il contenuto della pagina gestito dall’autore del contenuto.
 
-Il contenuto può essere rappresentato come una lingua o come una parte particolare dell’app in cui più pacchetti di rilascio del contenuto vengono utilizzati dall’app. La scelta della modalità di raggruppamento dei contenuti è progettata per essere flessibile e completamente all’altezza della modalità di gestione dei contenuti per l’applicazione.
+Il contenuto può essere rappresentato come una lingua o come una parte particolare dell’app in cui più pacchetti di rilascio del contenuto vengono utilizzati dall’app. La scelta della modalità di bundle dei contenuti è flessibile e completa in base alla modalità di gestione dei contenuti per l’applicazione.
 
 La **Modificato** indica quando le pagine sono state modificate più di recente.
 
-La **Staging** mostra quando è stato creato l’ultimo aggiornamento del contenuto. Per creare un nuovo aggiornamento del contenuto e creare uno stage delle modifiche, apri qualsiasi record nel riquadro e crea un nuovo aggiornamento.
+La **Staging** mostra quando è stato creato l’ultimo aggiornamento del contenuto. Per creare un aggiornamento del contenuto e creare uno stage delle modifiche, apri qualsiasi record nel riquadro e crea un aggiornamento.
 
 La **Pubblicato** mostra quando l’ultimo aggiornamento del contenuto è stato pubblicato e reso disponibile per il consumo da parte dei clienti. Per pubblicare il contenuto, devi prima eseguirne il stage e quindi pubblicare l’aggiornamento eseguendo il drilling in questo riquadro e pubblicando dalla console Dettagli rilascio contenuto .
 
@@ -89,11 +89,11 @@ Questa icona rappresenta un pacchetto di rilascio del contenuto per la shell del
 
 ![](do-not-localize/chlimage_1-6.png)
 
-Queste icone rappresentano un pacchetto di rilascio del contenuto dell’app
+Queste icone rappresentano un pacchetto di rilascio del contenuto per il contenuto dell’app
 
 ### Tile PhoneGap Build {#the-phonegap-build-tile}
 
-La **PhoneGap Build** si connette con [https://build.phonegap.com](https://build.phonegap.com) per creare e ospitare le build remote. Una volta generata, la build viene resa disponibile come download o direttamente sul tuo dispositivo tramite un codice QR.
+La **PhoneGap Build** si connette con [https://build.phonegap.com](https://build.phonegap.com) per creare e ospitare build remote. Una volta generata, la build viene resa disponibile come download o direttamente sul tuo dispositivo tramite un codice QR.
 
 In alternativa, è possibile scaricare l&#39;origine del dispositivo per generare localmente attraverso il [CLI di PhoneGap](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
 
@@ -107,7 +107,7 @@ In alternativa, è possibile scaricare l&#39;origine del dispositivo per generar
 >
 >Vedi [Configurare il Cloud Service Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) per i dettagli.
 
-AEM Mobile si integra con Adobe Analytics tramite [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS).
+AEM Mobile si integra con Adobe Analytics tramite [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
 
 Centro di controllo **Riquadro metriche** visualizza le analisi di riepilogo estratte da AMS per l’applicazione. Per approfondire il dashboard di analytics, fai clic su &quot;..&quot; in basso a destra.
 

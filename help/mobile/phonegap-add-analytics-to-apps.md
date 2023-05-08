@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 Vuoi creare esperienze coinvolgenti e rilevanti per gli utenti delle tue app mobili? Se non utilizzi l’SDK di Adobe Mobile Services per monitorare e misurare il ciclo di vita e l’utilizzo delle applicazioni, in base a cosa si basano le tue decisioni. Dove sono i tuoi clienti più fedeli? Come puoi garantire che le conversioni siano sempre rilevanti e ottimizzate?
 
@@ -67,7 +67,7 @@ Ogni piattaforma richiede che ADBMobileConfig venga copiato in una posizione spe
 
 Se si crea con PhoneGap CLI, è possibile farlo con uno script gancio di compilazione cordova. Questo è visibile nell’app Geometrixx Outdoors in:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Per iOS il file dovrà essere copiato nel progetto XCode **Risorse** directory (es. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se l&#39;app è destinata ad Android, il percorso in cui copiare la pagina è &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Per ulteriori dettagli sull’utilizzo degli hook durante la build CLI di PhoneGap, consulta [Tre ganci necessari per il progetto Cordova/PhoneGap](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+Per iOS il file dovrà essere copiato nel progetto XCode **Risorse** directory (es. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se l&#39;app è destinata ad Android, il percorso in cui copiare la pagina è &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Per ulteriori dettagli sull’utilizzo degli hook durante la build CLI di PhoneGap, consulta [Tre ganci necessari per il progetto Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

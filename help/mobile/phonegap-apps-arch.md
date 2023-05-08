@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2691'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 ## Modelli di pagina per le app mobili {#page-templates-for-mobile-apps}
 
@@ -309,7 +309,7 @@ Si tratta di una directory nascosta che potrebbe non essere visibile a seconda d
 
 #### .cordova/ganci/ {#cordova-hooks}
 
-Questa directory contiene [Hook CLI](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). Le cartelle nella directory degli hook contengono script node.js che vengono eseguiti nei punti esatti durante la generazione.
+Questa directory contiene [Hook CLI](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). Le cartelle nella directory degli hook contengono script node.js che vengono eseguiti nei punti esatti durante la generazione.
 
 #### .cordova/hook/after-platform_add/ {#cordova-hooks-after-platform-add}
 

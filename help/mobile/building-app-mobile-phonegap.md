@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 Crea l&#39;applicazione da installare su un dispositivo o simulatore per il test o la pubblicazione negli app store. È possibile creare applicazioni localmente utilizzando l&#39;interfaccia della riga di comando PhoneGap o nel cloud utilizzando la PhoneGap Build.
 
@@ -164,7 +164,7 @@ Invia le risorse dell&#39;applicazione a PhoneGap Build per la compilazione per 
 
 1. Nella finestra di dialogo Completato fare clic su PhoneGap Build per aprire la pagina Adobe PhoneGap Build in [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Se sei in attesa che appaia l’app, puoi controllare la [Stato PhoneGap Build](https://status.build.phonegap.com/) pagina.
 
-   Per informazioni sull’installazione della build, consulta la sezione [Documentazione PhoneGap Build](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
+   Per informazioni sull’installazione della build, consulta la sezione [Documentazione PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

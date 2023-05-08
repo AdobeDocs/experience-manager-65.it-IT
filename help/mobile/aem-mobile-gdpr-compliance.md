@@ -1,15 +1,13 @@
 ---
-title: AEM Mobile - Preparazione all’RGPD
-seo-title: AEM Mobile - GDPR Readiness
-description: "AEM Mobile - Preparazione all’RGPD"
-seo-description: null
+title: Adobe Experience Manager Mobile - Preparazione all’RGPD
+description: Adobe Experience Manager Mobile - Preparazione all’RGPD
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -24,15 +22,15 @@ ht-degree: 1%
 
 AEM Mobile è pronta ad assistere i clienti negli obblighi di conformità ai requisiti RGPD. Nessun dato personale viene memorizzato in AEM Mobile. Se hai il provisioning, puoi accedere ad Adobe Experience Mobile con il tuo Adobe ID.
 
-[https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
+<!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione all’RGPD di Adobe. Vedi [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono fornite informazioni specifiche sul supporto per le funzioni correlate al RGPD nel prodotto Digital Publishing Suite, tra cui come lavorare con Adobe per avviare richieste RGPD.
+Il prodotto di pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative di preparazione al RGPD di Adobe. Vedi [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono fornite informazioni specifiche sul supporto per le funzioni correlate al RGPD nel prodotto Digital Publishing Suite, tra cui come lavorare con Adobe per avviare richieste RGPD.
 
 Per evitare di confondere AEM Mobile con il vecchio prodotto Digital Publishing Suite, accedi al prodotto Digital Publishing Suite qui:
 
-[https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
+[https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Avvio di una richiesta RGPD {#initiating-a-gdpr-request}
 
