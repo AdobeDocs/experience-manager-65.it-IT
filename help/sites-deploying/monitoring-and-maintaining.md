@@ -10,7 +10,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
 workflow-type: tm+mt
 source-wordcount: '5934'
 ht-degree: 1%
@@ -247,9 +247,9 @@ Blocca i messaggi di registrazione che indicano gli eventi durante l&#39;avvio.
 Fornisce un registro di tutte le operazioni di aggiornamento eseguite da 
 `com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor` pacchetti.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `revision.log`
+   * `journal.log`
 Informazioni sulla registrazione delle revisioni.
 
 >[!NOTE]
@@ -266,7 +266,7 @@ Per attivare il livello di log di debug per un logger, impostare la proprietà `
 >
 >Non lasciare il registro a livello di log di debug più a lungo del necessario, perché genera numerose voci di log, consumando risorse.
 
-Una riga nel file di debug solitamente inizia con DEBUG, quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
+Una riga nel file di debug solitamente inizia con DEBUG, quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Ad esempio:
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -295,7 +295,7 @@ In alcune circostanze, è possibile creare un file di registro personalizzato co
 
       Dove `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni).
 
-      Esempio, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
@@ -389,7 +389,7 @@ In alcune circostanze, è possibile creare un file di registro personalizzato co
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (uno scrittore)
 
-      Come per il logger, `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Esempio, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Come per il logger, `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l’istanza (non è possibile omettere tali informazioni). Ad esempio `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
@@ -1095,9 +1095,9 @@ Di seguito è riportato un elenco di suggerimenti su come verificare se si inizi
 
 >[!NOTE]
 Per ulteriori informazioni, consulta anche i seguenti articoli:
-* [Immagini di thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analisi tramite profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Immagini di thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
+* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
+* [Analisi tramite profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=it)
 * [Analizzare i processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ In questi casi controlla:
 * Le impostazioni JVM utilizzate per [AEM](/help/sites-deploying/deploy.md#getting-started)
 * La Knowledge Base:
 
-   * [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
 
 ### I/O disco {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Se il sistema non dispone di spazio su disco o se si nota l&#39;arresto anomalo 
 * Se e come hai configurato [Rimozione delle versioni](/help/sites-deploying/version-purging.md)
 * La Knowledge Base:
 
-   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
    * [Journal consuma troppo spazio su disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradazione regolare delle prestazioni {#regular-performance-degradation}

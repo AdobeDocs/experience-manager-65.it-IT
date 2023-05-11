@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2019'
 ht-degree: 12%
 
 ---
@@ -150,57 +150,6 @@ Dove &lt;text_x> può essere un insieme di variabili di testo statiche e di stri
 
    PageModified => /content/geometrixx/en/products
 
-### Modelli e-mail per notifiche forum {#email-templates-for-forum-notification}
-
-I modelli e-mail per le notifiche dei forum si trovano in:
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-Il modello inglese predefinito ( `en.txt`) è definita come segue:
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-```
-
-#### Personalizzazione dei modelli e-mail per la notifica del forum {#customizing-email-templates-for-forum-notification}
-
-Per personalizzare il modello e-mail inglese per la notifica del forum:
-
-1. In CRXDE, apri il file:
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. Modifica il file in base alle tue esigenze.
-1. Salva le modifiche.
-
-Il modello deve avere il seguente formato:
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-Dove `<text_x>` può essere un insieme di variabili di testo statiche e di stringhe dinamiche.
-
-Le seguenti variabili possono essere utilizzate all&#39;interno del modello e-mail per le notifiche del forum:
-
-* `${time}`, la data e l’ora dell’evento.
-
-* `${forum.path}`, il percorso della pagina del forum.
-
 ### Modelli e-mail per notifiche flusso di lavoro {#email-templates-for-workflow-notification}
 
 Il modello e-mail per le notifiche del flusso di lavoro (inglese) si trova in:
@@ -293,7 +242,6 @@ Per aggiungere un modello per una nuova lingua:
 1. In CRXDE, aggiungi un file `<language-code>.txt` di seguito:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : per le notifiche di pagina
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : per le notifiche sul forum
    * `/libs/settings/workflow/notification/email/default` : per le notifiche del flusso di lavoro
 
 1. Adatta il file alla lingua.
