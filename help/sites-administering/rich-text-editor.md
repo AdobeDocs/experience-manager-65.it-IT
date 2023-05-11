@@ -3,9 +3,9 @@ title: Configura l’editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’editor Rich Text di Adobe Experience Manager per creare contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
 workflow-type: tm+mt
-source-wordcount: '3021'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -109,14 +109,14 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 | ID plug-in | caratteristiche | Descrizione |
 |--- |--- |--- |
 | modifica | taglia copia incolla-default-paste-plintext paste-wordhtml | [Taglia, copia e incolla le tre modalità](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [punto di arrivo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | trova sostituzione | Trova e sostituisci. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | sottolineato in corsivo grassetto | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [immagine](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto immagini di base (trascinamento da contenuto o Content Finder). A seconda del browser, il supporto offre diversi comportamenti per gli autori |
-| [chiavi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Per definire questo valore, vedi [dimensione della scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| [giustificare](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter copyright | Allineamento paragrafo. |
-| [collegamenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ancoraggio di scollegamento modifica collegamento | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [elenchi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | rientro fuori linea ordinato | Questo plug-in controlla entrambi [rientri ed elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusi gli elenchi nidificati. |
-| [strumenti cattivi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Gli strumenti vari consentono agli autori di accedere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) per definire un proprio elenco. |
+| punto di arrivo | trova sostituzione | Trova e sostituisci. |
+| format | sottolineato in corsivo grassetto | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| immagine | immagine | Supporto immagini di base (trascinamento da contenuto o Content Finder). A seconda del browser, il supporto offre diversi comportamenti per gli autori |
+| chiavi |  | Per definire questo valore, vedi [dimensione della scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| giustificare | justifyleft justifycenter copyright | Allineamento paragrafo. |
+| collegamenti | ancoraggio di scollegamento modifica collegamento | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| elenchi | rientro fuori linea ordinato | Questo plug-in controlla entrambi [rientri ed elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusi gli elenchi nidificati. |
+| strumenti cattivi | specialchars sourceedit | Gli strumenti vari consentono agli autori di accedere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) per definire un proprio elenco. |
 | Paraformato | paraformato | I formati di paragrafo predefiniti sono Paragrafo, Intestazione 1, Intestazione 2 e Intestazione 3 (`<p>`, `<h1>`, `<h2>`e `<h3>`). È possibile [aggiungere altri formati paragrafo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) o estendere l’elenco. |
 | controllo ortografico | spunta | [Controllo ortografico basato sulla lingua](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | stili | stili | Supporto per lo stile utilizzando una classe CSS. [Aggiungi nuovi stili di testo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) per aggiungere (o estendere) un proprio intervallo di stili da utilizzare con il testo. |
@@ -323,12 +323,12 @@ In una pagina puoi includere la clientlib dell’editor Rich Text CoralUI 2 o Co
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consulta la [API per i Widget AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) riferimento.
+Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consulta la [API per i Widget AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) riferimento.
 
 In particolare, per visualizzare i plug-in e le relative opzioni disponibili:
 
-* La [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) Il componente fornisce un campo modulo per la modifica di informazioni di testo formattate (testo RTF). Per conoscere tutti i parametri disponibili per il modulo RTF, vedere Opzioni di configurazione.
-* Il componente RichText fornisce un’ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
+* La [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) Il componente fornisce un campo modulo per la modifica di informazioni di testo formattate (testo RTF). Per conoscere tutti i parametri disponibili per il modulo RTF, vedere Opzioni di configurazione.
+* Il componente RichText fornisce un’ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
 
    * per informazioni dettagliate sulle funzionalità che possono essere abilitate (o disabilitate), consulta Funzioni .
    * Consulta Opzioni di configurazione per tutti i parametri disponibili per una configurazione dettagliata del plug-in appropriato
