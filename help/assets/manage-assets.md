@@ -6,10 +6,11 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '9970'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -96,7 +97,7 @@ Per configurare l’attività di pulizia per i processi di caricamento dei blocc
 
 >[!CAUTION]
 >
->Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione del blocco è 50 MB. Se si modifica [Configurazione token Oak Apache Jackrabbit](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e imposta `timeout configuration` a meno del tempo necessario al caricamento di una risorsa, si verifica una situazione di timeout della sessione mentre il caricamento della risorsa è in corso. Pertanto, modifica il `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
+>Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione del blocco è 50 MB. Se si modifica [Configurazione token Oak Apache Jackrabbit](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=it) e imposta `timeout configuration` a meno del tempo necessario al caricamento di una risorsa, si verifica una situazione di timeout della sessione mentre il caricamento della risorsa è in corso. Pertanto, modifica il `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
 >
 >Dato il timeout della scadenza delle credenziali, la latenza, la larghezza di banda e i caricamenti simultanei previsti, il valore più alto che consente di assicurarsi che venga selezionato quanto segue:
 >
