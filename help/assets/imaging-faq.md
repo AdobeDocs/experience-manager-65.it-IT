@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb42b5990993b0f8cea95cf1f6c033aed2713c1c
+source-git-commit: 164b3745c5bddf6ec77f9ac2ada19cfa10c6d266
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3624'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,18 @@ E ora, ottenere un punteggio migliore Google Core Web Vital per LCP (Paint più 
 >
 >L’imaging avanzato richiede l’utilizzo della rete CDN preconfigurata (Content Delivery Network) fornita in bundle con Adobe Experience Manager - Dynamic Media. Qualsiasi altra CDN personalizzata non è supportata con questa funzione.
 
-La funzione Smart imaging sfrutta l’aumento delle prestazioni in aggiunta, grazie all’integrazione completa con il servizio premium CDN (Content Delivery Network) di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer. Trova un percorso che ha la latenza più bassa e la velocità di perdita più bassa del pacchetto invece di utilizzare il percorso predefinito su Internet.
+>[!TIP]
+>
+>Prova e scopri i vantaggi dei modificatori di immagini Dynamic Media e Smart imaging utilizzando Dynamic Media [_Istantanea_](https://snapshot.scene7.com/).
+>
+> Lo snapshot è uno strumento di dimostrazione visiva progettato per illustrare la potenza di Dynamic Media per la distribuzione delle immagini ottimizzata e dinamica. Sperimenta con immagini di test o URL Dynamic Media, per osservare visivamente l’output di vari modificatori di immagini Dynamic Media e ottimizzazioni di Smart Imaging per i seguenti elementi:
+>* Dimensione del file (con distribuzione WebP e AVIF)
+>* Larghezza di banda della rete
+>* DPR (rapporto pixel dispositivo)
+>
+>Per imparare quanto è facile utilizzare Snapshot, riprodurre il [Video di formazione sulle istantanee](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minuti e 17 secondi).
+
+La funzione Smart imaging sfrutta l&#39;aumento delle prestazioni in aggiunta, grazie all&#39;integrazione completa con il servizio premium CDN (Content Delivery Network) di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer. Trova un percorso che ha la latenza più bassa e la velocità di perdita più bassa del pacchetto invece di utilizzare il percorso predefinito su Internet.
 
 Gli esempi di risorse immagine seguenti illustrano l’ottimizzazione Smart Imaging aggiunta:
 
@@ -43,7 +54,7 @@ Simile a quanto sopra, l’Adobe ha anche eseguito un test con un set di campion
 
 Confronta WebP e AVIF con PNG, si può vedere una riduzione delle dimensioni dell&#39;84% con WebP e 87% con AVIF. Inoltre, poiché sia i formati WebP che AVIF supportano la trasparenza e più animazioni delle immagini, è una buona sostituzione per i file PNG e GIF trasparenti.
 
-Vedi anche [Ottimizzazione delle immagini con formati di immagine di nuova generazione (WebP e AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+Vedi anche [Ottimizzazione delle immagini con formati di immagine di nuova generazione (WebP e AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -76,7 +87,7 @@ Vedi anche [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer
 
 Rapporto pixel del dispositivo (DPR) - noto anche come rapporto pixel CSS - è la relazione tra i pixel fisici di un dispositivo e i pixel logici. Soprattutto con l&#39;avvento degli schermi Retina, la risoluzione dei pixel dei moderni dispositivi mobili sta crescendo a un ritmo veloce.
 
-Attivando l&#39;ottimizzazione del rapporto pixel del dispositivo, l&#39;immagine viene riprodotta alla risoluzione nativa dello schermo, rendendo più nitida l&#39;immagine.
+Attivando l’ottimizzazione del rapporto pixel del dispositivo, l’immagine viene riprodotta alla risoluzione nativa dello schermo, rendendo più nitida l’immagine.
 
 Attualmente, la densità di pixel del display proviene dai valori di intestazione CDN di Akamai.
 
@@ -147,7 +158,7 @@ I seguenti formati immagine sono supportati per Smart imaging:
 * JPEG
 * PNG
 
-Per il formato di file immagine di JPEG, la qualità del nuovo formato viene ricalcolata mediante Smart imaging.
+Per il formato di file immagine di JPEG, la qualità del nuovo formato viene ricalcolata da Smart imaging.
 
 Per i formati di file immagine che supportano la trasparenza come PNG, è possibile configurare Smart imaging per fornire AVIF e WebP con perdita di dati. Per la conversione del formato con perdita di dati, Smart imaging utilizza la qualità indicata nell’URL dell’immagine o la qualità configurata nell’account aziendale Dynamic Media.
 
@@ -155,7 +166,7 @@ Per i formati di file immagine che supportano la trasparenza come PNG, è possib
 
 Smart imaging funziona con i predefiniti per immagini esistenti ed osserva tutte le impostazioni delle immagini. Ciò che cambia è il formato dell&#39;immagine, l&#39;impostazione della qualità, o entrambi. Per la conversione del formato, l&#39;imaging intelligente mantiene la fedeltà visiva completa, come definita dalle impostazioni del predefinito per immagini, ma con dimensioni file inferiori.
 
-Ad esempio, supponiamo che un predefinito per immagini sia definito con formato JPEG, dimensioni 500 x 500, qualità=85 e maschera di contrasto=0.1,1,5. Quando Smart imaging rileva che un utente si trova su un browser Chrome, l&#39;immagine viene convertita in formato WebP, con dimensioni 500 x 500 e maschera di contrasto=0.1,1,5 a una qualità WebP che corrisponde a una qualità JPEG di 85 il più vicino possibile. L&#39;impronta di tale conversione WebP viene confrontata con il JPEG e viene restituito il minore dei due.
+Ad esempio, supponiamo che un predefinito per immagini sia definito con formato JPEG, dimensioni 500 x 500, qualità=85 e maschera di contrasto=0.1,1,5. Quando Smart imaging rileva che un utente si trova in un browser Chrome, l&#39;immagine viene convertita in formato WebP, con dimensioni 500 x 500. E, Maschera definizione dettagli=0.1,1,5 è a una qualità WebP che corrisponde a una qualità JPEG di 85 il più vicino possibile. L&#39;impronta di tale conversione WebP viene confrontata con il JPEG e viene restituito il minore dei due.
 
 ## Devo modificare URL, predefiniti per immagini o distribuire un nuovo codice sul mio sito per Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
