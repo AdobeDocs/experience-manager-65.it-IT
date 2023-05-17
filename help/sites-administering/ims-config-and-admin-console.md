@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
+source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 12%
+source-wordcount: '1676'
+ht-degree: 11%
 
 ---
 
@@ -133,10 +133,10 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 >
 >Lo strumento User Sync deve essere registrato come client UMAPI di Adobe I/O utilizzando la procedura descritta [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->È possibile trovare la documentazione della console Adobe I/O [qui](https://www.adobe.io/apis/cloudplatform/console.html).
+>È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->La [!DNL User Management] L’API utilizzata dallo strumento User Sync viene descritta in [posizione](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>La [!DNL User Management] L’API utilizzata dallo strumento User Sync viene descritta in [posizione](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
