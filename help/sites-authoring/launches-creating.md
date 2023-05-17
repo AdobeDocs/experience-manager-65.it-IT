@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 50%
+source-wordcount: '1018'
+ht-degree: 48%
 
 ---
 
@@ -66,6 +66,8 @@ Puoi creare un lancio dalla console Sites o Lanci :
    >Per aggiungere pagine e/o rami a un lancio, questi devono trovarsi all’interno di un sito; ovvero sotto una radice di livello superiore comune.
    >
    >Se un sito contiene directory principali per la lingua al di sotto del livello superiore, le pagine e i rami di un lancio devono trovarsi al di sotto di una directory principale per la lingua comune.
+   >
+   >Se tenti di creare un lancio con una pagina padre o figlia nel percorso di origine, questo non riuscirà e restituirà l’errore &quot;La destinazione esiste già in :path alla pagina&quot;.
 
 1. Per ogni voce è possibile specificare se:
 
