@@ -6,7 +6,8 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+hide: true
+source-git-commit: c1878d6aadba9c795168459dbd5f09abfe0fc327
 workflow-type: tm+mt
 source-wordcount: '1751'
 ht-degree: 10%
@@ -40,7 +41,7 @@ Formati immagine raster supportati in [!DNL Assets] sono:
 | PGM | ✓ | ✓ | − | − | − | − | ✓ |
 | PBM | ✓ | ✓ | − | − | − | − | ✓ |
 | PPM | ✓ | ✓ | − | − | − | − | ✓ |
-| PSD | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
 | PICT | − | − | − | − | − | − | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
@@ -279,7 +280,7 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
 | BMP | ✓ | − | − | − | − | [Immagine](/help/assets/image-sets.md), [File multimediali diversi](/help/assets/mixed-media-sets.md)e [Centrifuga](/help/assets/spin-sets.md) |
-| PSD | ✓ | − | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | PICT | ✓ | − | − | − | − | − |
 
