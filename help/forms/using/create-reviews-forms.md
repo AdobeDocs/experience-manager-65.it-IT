@@ -11,9 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4edfc51227607b4fb3ee4b97443d2040015b6a65
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La funzione Revisione è un meccanismo che consente a uno o più revisori di com
 
 1. Passare alla scheda Forms e selezionare un modulo.
 1. Se la risorsa non dispone di una revisione in corso, avvia una revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni. Fai clic su Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icona.
-1. Inserite le seguenti informazioni:
+1. Immetti le seguenti informazioni:
 
    * Nome revisione: Obbligatorio, può contenere caratteri alfanumerici, trattini o caratteri di sottolineatura.
    * Descrizione della revisione: Facoltativo, descrizione dello scopo/contenuto da rivedere.
@@ -73,12 +73,6 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
    * **Termine di revisione**: Disponibile per la modifica. È possibile modificare la scadenza in qualsiasi data e ora successive alla data e all’ora correnti.
 
    * **Revisori**: Disponibile per la modifica. È possibile aggiungere o rimuovere revisori. Se un&#39;attività è scaduta, è possibile aggiungere revisori solo dopo aver esteso la scadenza oltre la data corrente.
-
-1. Modificare i campi necessari, quindi fare clic su Aggiorna.
-
-   ![Rivedere lo stato aggiornato in Gestione attività](assets/tskmgr.png)
-
-   Rivedere lo stato aggiornato in Gestione attività
 
 1. Per terminare la revisione, fare clic su Fine.
 
