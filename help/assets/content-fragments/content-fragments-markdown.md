@@ -1,6 +1,6 @@
 ---
 title: Markdown
-description: Scopri in che modo l’editor Frammento di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
+description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
@@ -13,7 +13,7 @@ ht-degree: 91%
 
 # Markdown {#markdown}
 
-Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor dei frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
+Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
 
 ![editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

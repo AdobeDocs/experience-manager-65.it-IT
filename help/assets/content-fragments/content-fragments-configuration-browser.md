@@ -1,6 +1,6 @@
 ---
 title: Frammenti di contenuto - Browser configurazioni
-description: Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
+description: Scopri come abilitare alcune funzionalità relative ai frammenti di contenuto nel browser configurazioni per sfruttare le potenti funzionalità di distribuzione headless dell’AEM.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Frammenti di contenuto - Browser configurazioni{#content-fragments-configuration-browser}
 
-Scopri come abilitare alcune funzionalità dei frammenti di contenuto nel browser di configurazione per sfruttare AEM potenti funzionalità di distribuzione headless.
+Scopri come abilitare alcune funzionalità relative ai frammenti di contenuto nel browser configurazioni per sfruttare le potenti funzionalità di distribuzione headless dell’AEM.
 
 ## Abilita funzionalità frammento di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
 
@@ -61,7 +61,7 @@ Per [utilizzare alcune funzionalità dei frammenti di contenuto](#creating-a-con
 
 ### Applica la configurazione alla cartella Risorse {#apply-the-configuration-to-your-assets-folder}
 
-Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Assets.
+Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Risorse.
 
 Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Servizi cloud** della finestra **Proprietà cartella** della cartella specifica.
 

@@ -1,6 +1,6 @@
 ---
 title: Creazione di più pagine per categorie e prodotti
-description: Scopri come arricchire le pagine di destinazione delle categorie e dei dettagli dei prodotti con contenuti di marketing mirati.
+description: Scopri come arricchire le pagine di destinazione delle categorie e i dettagli dei prodotti con contenuti di marketing mirati.
 sub-product: Commerce
 doc-type: feature-video
 activity: use

@@ -1,7 +1,7 @@
 ---
-title: Linee guida per la risoluzione dei problemi relativi all’area di lavoro di AEM Forms
+title: Linee guida per la risoluzione dei problemi per AEM Forms Workspace
 seo-title: Troubleshooting guidelines for AEM Forms workspace
-description: Abilita i registri e utilizza il debugger nel browser per risolvere i problemi relativi all’area di lavoro di AEM Forms.
+description: Abilita i registri e utilizza il debugger nel browser per la risoluzione dei problemi di AEM Forms Workspace.
 seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 ---
 
-# Linee guida per la risoluzione dei problemi relativi all’area di lavoro di AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Linee guida per la risoluzione dei problemi per AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-Questo articolo illustra come eseguire il debug dell’area di lavoro AEM Forms abilitando la registrazione e utilizzando il debugger in un browser. Vengono inoltre illustrati alcuni problemi comuni che è possibile incontrare quando si utilizza l’area di lavoro di AEM Forms e le relative soluzioni alternative.
+Questo articolo illustra come eseguire il debug dell’area di lavoro di AEM Forms abilitando la registrazione e utilizzando il debugger in un browser. Vengono inoltre illustrati alcuni problemi comuni che è possibile incontrare durante l’utilizzo di AEM Forms Workspace e delle relative soluzioni.
 
-## Impossibile installare il pacchetto dell&#39;area di lavoro AEM Forms {#unable-to-install-aem-forms-workspace-package}
+## Impossibile installare il pacchetto dell’area di lavoro di AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Dopo aver installato la patch, apri l’area di lavoro AEM Forms. Se incontri l&#39;errore No Resource Found (Nessuna risorsa trovata), apri la Gestione pacchetti CRX e reinstalla la `adobe-lc-workspace-pkg-<version>.zip` pacchetto.
+Dopo aver installato la patch, apri l’area di lavoro di AEM Forms. Se riscontri l’errore Nessuna risorsa trovata, apri Gestione pacchetti CRX e reinstalla `adobe-lc-workspace-pkg-<version>.zip` pacchetto.
 
-Durante l&#39;installazione del pacchetto, in caso di errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, esegui le seguenti operazioni:
+Se durante l’installazione del pacchetto si verifica un errore `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, effettua le seguenti operazioni:
 
 1. Accedi a CRXDE Lite. L’URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimina il seguente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Vai a Gestione pacchetti. L’URL predefinito è `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Cerca e installa il `adobe-lc-workspace-pkg-[version].zip` pacchetto.
-1. Riavvia il server applicazioni.
+1. Passa a Gestione pacchetti. L’URL predefinito è `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Cerca e installa `adobe-lc-workspace-pkg-[version].zip` pacchetto.
+1. Riavviare il server applicazioni.
 
 ## Registrazione nell’area di lavoro di AEM Forms {#aem-forms-workspace-nbsp-logging}
 
-È possibile generare registri a vari livelli per consentire una risoluzione ottimale degli errori. Ad esempio, in un’applicazione complessa, la registrazione a livello di componente consente di eseguire il debug e risolvere problemi relativi a componenti specifici.
+Puoi generare i registri a vari livelli per consentire una risoluzione ottimale degli errori. Ad esempio, in un’applicazione complessa, la registrazione a livello di componente aiuta a eseguire il debug e a risolvere i problemi di componenti specifici.
 
-Nell’area di lavoro di AEM Forms:
+Nell’area di lavoro AEM Forms:
 
-* Per ottenere le informazioni di registrazione su un file di componente specifico, aggiungi `/log/<ComponentFile>/<LogLevel>` nell’URL, quindi premi `Enter`. Tutte le informazioni di registrazione per il file componente a livello di registro specificato vengono stampate sulla console.
+* Per ottenere le informazioni di registrazione relative a un file di componente specifico, aggiungere `/log/<ComponentFile>/<LogLevel>` nell’URL, quindi premi `Enter`. Tutte le informazioni di registrazione per il file componente al livello di registro specificato vengono stampate sulla console.
 
 * Per ottenere le informazioni di registrazione di tutti i file dei componenti, aggiungi `/log/all/trace` nell’URL, quindi premi `Enter`.
 
@@ -52,9 +52,9 @@ Nell’area di lavoro di AEM Forms:
 >
 >Per impostazione predefinita, il livello di registro di tutti i componenti è impostato su INFO.
 
-* Il livello di log impostato dall&#39;utente viene mantenuto solo per la sessione del browser. Quando l’utente aggiorna la pagina, il livello di registro viene impostato sul valore iniziale per tutti i componenti.
+* Il livello di registro impostato dall&#39;utente viene mantenuto solo per quella sessione del browser. Quando l’utente aggiorna la pagina, il livello di registro viene impostato sul valore iniziale per tutti i componenti.
 
-### Elenco dei file di componenti nell’area di lavoro di AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Elenco dei file dei componenti nell’area di lavoro di AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table>
  <tbody>
@@ -143,7 +143,7 @@ Nell’area di lavoro di AEM Forms:
 
 ### Livelli di registro disponibili nell’area di lavoro di AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
-* GRASSETTO
+* FATALE
 * ERRORE
 * AVVISO
 * INFO
@@ -153,44 +153,44 @@ Nell’area di lavoro di AEM Forms:
 
 ## Informazioni di debug per i browser {#debugging-information-for-browsers}
 
-È possibile eseguire il debug di script e stili in diversi browser.
+È possibile eseguire il debug di script e stili in browser diversi.
 
-* **Debug in IE**: Per eseguire il debug dell&#39;area di lavoro AEM Forms in IE, vedi: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Debug in IE**: per eseguire il debug dell’area di lavoro di AEM Forms in IE, consulta: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Debug in Chrome**: Per aprire debugger in Chrome, utilizza il collegamento: Ctrl+Maiusc+I. Per ulteriori informazioni, consulta: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Debug in Chrome**: per aprire il debugger in Chrome, utilizza la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, consulta: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
-* **Debug in Firefox**: Diversi componenti aggiuntivi sono disponibili per eseguire il debug di script e stili in Firefox. Ad esempio, Firebug è una di tali utility di debug ([https://getfirebug.com](https://getfirebug.com)).
+* **Debug in Firefox**: sono disponibili diversi componenti aggiuntivi per il debug di script e stili in Firefox. Firebug, ad esempio, è una di queste utility di debug ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Domande frequenti {#faqs}
 
-1. Il rendering o l’invio del modulo PDF in Google Chrome non viene eseguito.
+1. Il modulo PDF non viene renderizzato o inviato in Google Chrome.
 
    1. Installare il plug-in Adobe® Reader®.
    1. In Chrome, apri chrome://plugins per visualizzare i plug-in disponibili.
-   1. Disattiva il plug-in Visualizzatore di Chrome PDF e abilita il plug-in Adobe Reader.
+   1. Disattiva il plug-in Chrome PDF Viewer e abilita il plug-in Adobe Reader.
 
-1. Il rendering del modulo o della Guida di SWF non viene eseguito in Google Chrome.
+1. Il rendering del modulo o della Guida SWF non viene eseguito in Google Chrome.
 
    1. In Chrome, apri chrome://plugins per visualizzare i plug-in disponibili.
-   1. Vedi i dettagli del plug-in Adobe Flash® Player.
-   1. Disattiva PepperFlash sotto il plug-in Flash Player Adobe.
+   1. Vedi i dettagli per Adobe plug-in Flash® Player.
+   1. Disattivare PepperFlash sotto il plug-in Flash Player Adobe.
 
-1. Ho personalizzato l&#39;area di lavoro di AEM Forms ma non riesco a vedere le modifiche.
+1. Ho personalizzato l’area di lavoro di AEM Forms, ma non riesco a vedere le modifiche.
 
-   Elimina la cache del browser e accedi all’area di lavoro AEM Forms.
+   Cancella la cache del browser, quindi accedi all’area di lavoro di AEM Forms.
 
-1. Cosa deve essere fatto dall’utente per consentire il rendering del modulo in HTML quando viene aperto sul desktop?
+1. Cosa deve fare l’utente per abilitare il rendering del modulo in HTML quando viene aperto sul desktop?
 
-   Selezionare il pulsante di scelta HTML per il profilo predefinito nel passaggio assegnazione attività durante l’utilizzo di Workbench.
+   Selezionare il pulsante di scelta HTML per il profilo predefinito nel passaggio Assegna attività quando si utilizza Workbench.
 
 1. L&#39;allegato non viene visualizzato quando si fa clic su di esso.
 
    Per visualizzare gli allegati, abilita i popup nel browser.
 
-1. Un utente ha effettuato l’accesso a un’applicazione forms. Se l&#39;utente tenta di accedere all&#39;area di lavoro, potrebbe non essere caricato, se l&#39;utente non dispone di autorizzazioni dell&#39;area di lavoro.
+1. Un utente ha eseguito l&#39;accesso a un&#39;applicazione Forms. Se l’utente tenta di accedere all’area di lavoro, è possibile che non venga caricato, se non dispone delle autorizzazioni per l’area di lavoro.
 
-   Disconnettiti dall’applicazione altri moduli e accedi a workspace.
+   Disconnettersi dall&#39;altra applicazione Forms, quindi accedere all&#39;area di lavoro.
 
-1. Nei moduli di HTML, utilizzando le proprietà del processo nella relativa progettazione, quando viene eseguito il rendering nell’area di lavoro di AEM Forms, viene visualizzato il pulsante Invia all’interno del modulo.
+1. I moduli HTML, utilizzando le Proprietà processo nella progettazione, quando vengono sottoposti a rendering nell’area di lavoro di AEM Forms, visualizzano il pulsante Invia all’interno del modulo.
 
-   Durante la progettazione dei moduli, quando si utilizza Proprietà processo, all’interno del modulo viene aggiunto un pulsante Invia. Durante il rendering come PDF nell’area di lavoro di AEM Forms, il pulsante Invia non è visibile all’utente finale. Tuttavia, durante il rendering come modulo HTML nell’area di lavoro di AEM Forms, il pulsante Invia è visibile all’utente finale. Se si fa clic sul pulsante Invia all’interno del modulo, non viene avviata alcuna azione. L’attività viene completata facendo clic sul pulsante Invia nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo.
+   Durante la progettazione dei moduli, quando si utilizzano le proprietà del processo, viene aggiunto un pulsante Invia all&#39;interno del modulo. Quando viene eseguito il rendering come PDF nell’area di lavoro di AEM Forms, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo HTML nell’area di lavoro di AEM Forms, il pulsante Invia è visibile all’utente finale. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Per completare l’attività, fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo.

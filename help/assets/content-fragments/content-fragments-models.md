@@ -1,6 +1,6 @@
 ---
 title: Modelli per frammenti di contenuto
-description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuto strutturato.
+description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto in AEM definiscono la struttura del contenuto per il [frammenti di contenuto,](/help/assets/content-fragments/content-fragments.md) funge da base per i contenuti headless.
+I modelli per frammenti di contenuto nell’AEM definiscono la struttura del contenuto per il [frammenti di contenuto,](/help/assets/content-fragments/content-fragments.md) fungere da base per i contenuti headless.
 
 Per utilizzare i modelli di frammento di contenuto:
 
@@ -24,8 +24,8 @@ Per utilizzare i modelli di frammento di contenuto:
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
-1. Passa alla cartella appropriata [configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Accedi a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Passa alla cartella appropriata per [configurazione](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilizza **Crea** per aprire la procedura guidata.
 
    >[!CAUTION]
@@ -46,7 +46,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 >
 >La modifica di un modello per frammento di contenuto esistente può avere un impatto sui frammenti dipendenti.
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Accedi a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 
@@ -394,7 +394,7 @@ I modelli per frammenti di contenuto consentiti per una cartella vengono risolti
 
 Per eliminare un modello per frammenti di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Accedi a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Elimina** dalla barra degli strumenti.
@@ -409,7 +409,7 @@ I modelli per frammenti di contenuto devono essere pubblicati quando/prima che v
 
 Per pubblicare un modello per frammenti di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Accedi a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Pubblica** dalla barra degli strumenti.
@@ -425,7 +425,7 @@ Si può annullare la pubblicazione di modelli per frammenti di contenuto che non
 
 Per annullare la pubblicazione di un modello per frammenti di contenuto:
 
-1. Passa a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
+1. Accedi a **Strumenti**, **Risorse**, quindi apri **Modelli per frammenti di contenuto**.
 
 1. Passa alla cartella contenente il modello per frammenti di contenuto.
 1. Seleziona il modello e poi **Annulla pubblicazione** dalla barra degli strumenti.

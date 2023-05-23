@@ -13,26 +13,26 @@ exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 96%
+ht-degree: 30%
 
 ---
 
 # Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub{#previewing-pages-using-contexthub-data}
 
-La barra degli strumenti di [ContextHub](/help/sites-developing/contexthub.md) mostra i dati provenienti dagli archivi di ContextHub e consente di modificare i dati store. La barra degli strumenti ContextHub è utile per visualizzare in anteprima il contenuto determinato dai dati di uno Store ContextHub.
+Il [ContextHub](/help/sites-developing/contexthub.md) La barra degli strumenti visualizza i dati dagli archivi di ContextHub e consente di modificare i dati degli archivi. La barra degli strumenti di ContextHub è utile per visualizzare in anteprima il contenuto determinato dai dati in un archivio ContextHub.
 
-La barra degli strumenti è composta da una serie di modalità di interfaccia utente che contengono uno o più moduli di interfaccia utente.
+La barra degli strumenti è costituita da una serie di modalità di interfaccia utente che contengono uno o più moduli di interfaccia utente.
 
-* Le modalità di interfaccia utente sono icone che vengono visualizzate sul lato sinistro della barra degli strumenti. Quando fai clic o tocchi un’icona, la barra degli strumenti rivela i moduli di interfaccia utente che contiene.
-* I moduli di interfaccia utente visualizzano dati da uno o più archivi di ContextHub. Alcuni moduli di interfaccia utente ti consentono inoltre di manipolare i dati archiviati.
+* Le modalità dell’interfaccia utente sono icone visualizzate sul lato sinistro della barra degli strumenti. Quando tocchi un’icona o fai clic su di essa, la barra degli strumenti mostra i moduli dell’interfaccia utente in essa contenuti.
+* I moduli di interfaccia utente visualizzano i dati da uno o più archivi ContextHub. Alcuni moduli di interfaccia utente consentono inoltre di manipolare i dati dell’archivio.
 
-ContextHub installa varie modalità di interfaccia utente e moduli di interfaccia utente. L’amministratore può aver [configurato ContextHub](/help/sites-developing/ch-configuring.md) per visualizzarne di diversi.
+ContextHub installa diverse modalità e moduli di interfaccia utente. L&#39;amministratore potrebbe avere [ContextHub configurato](/help/sites-developing/ch-configuring.md) per visualizzarne di diversi.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
-## Visualizzare la barra degli strumenti di ContextHub {#revealing-the-contexthub-toolbar}
+## Visualizzazione della barra degli strumenti di ContextHub {#revealing-the-contexthub-toolbar}
 
-La barra degli strumenti di ContextHub è disponibile nella modalità di anteprima. La barra degli strumenti è disponibile solo nelle istanze dell’autore e solo se l’amministratore l’ha abilitata.
+La barra degli strumenti di ContextHub è disponibile in modalità Anteprima. La barra degli strumenti è disponibile solo nelle istanze dell’autore e solo se l’amministratore l’ha abilitata.
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
@@ -44,11 +44,11 @@ La barra degli strumenti di ContextHub è disponibile nella modalità di antepri
 
    ![](do-not-localize/screen_shot_2018-03-23at093621.png)
 
-## Funzioni dei moduli di interfaccia utente {#ui-module-features}
+## Funzioni del modulo interfaccia utente {#ui-module-features}
 
-Ogni modulo di interfaccia utente fornisce un diverso insieme di funzioni, ma i seguenti tipi di funzioni sono comuni. Poiché i moduli di interfaccia utente sono estensibili, lo sviluppatore può implementare altre funzioni, a seconda delle necessità.
+Ogni modulo di interfaccia utente fornisce un diverso set di funzioni, ma i seguenti tipi di funzioni sono comuni. Poiché i moduli di interfaccia utente sono estensibili, lo sviluppatore può implementare altre funzioni in base alle esigenze.
 
-### Contenuto della barra degli strumenti {#toolbar-content}
+### Contenuto barra degli strumenti {#toolbar-content}
 
 I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi. 
 
@@ -56,16 +56,16 @@ I moduli di interfaccia utente possono visualizzare dati da uno o più archivi d
 
 ### Contenuto a comparsa {#popup-content}
 
-Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando l’utente fa clic su di essi o li seleziona mediante un tocco. In genere, la finestra a comparsa contiene informazioni aggiuntive rispetto a quelle visualizzate nella barra degli strumenti.
+Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando si fa clic su di essi o li si tocca. In genere, la finestra a comparsa contiene informazioni aggiuntive rispetto a quelle visualizzate nella barra degli strumenti.
 
 ![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
 
-### Moduli a comparsa {#popup-forms}
+### Popup Forms {#popup-forms}
 
-La finestra a comparsa di un modulo può includere elementi modulo che ti consentono di modificare i dati nell’archivio di ContextHub. Se il contenuto della pagina viene determinato dai dati archiviati, puoi utilizzare il modulo e visualizzare le modifiche apportate al contenuto della pagina.
+La sovrapposizione a comparsa di un modulo può includere elementi modulo che consentono di modificare i dati nell’archivio ContextHub. Se il contenuto della pagina è determinato dai dati del negozio, puoi utilizzare il modulo e osservare le modifiche apportate al contenuto della pagina.
 
-### Modalità a schermo intero {#fullscreen-mode}
+### Modalità schermo intero {#fullscreen-mode}
 
-Le finestre a comparsa possono includere un’icona su cui fare clic o toccare per espandere il contenuto a comparsa fino a coprire l’intera finestra del browser o schermata.
+Le sovrapposizioni a comparsa possono includere un&#39;icona su cui si tocca o si fa clic per espandere il contenuto a comparsa in modo da coprire l&#39;intera finestra o schermata del browser.
 
 ![](do-not-localize/chlimage_1-18.png)

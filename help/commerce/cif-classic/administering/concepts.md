@@ -15,18 +15,18 @@ ht-degree: 2%
 
 # Concetti{#concepts}
 
-Il quadro di integrazione fornisce i meccanismi e le componenti per:
+Il framework di integrazione fornisce i meccanismi e i componenti necessari per:
 
-* connessione a un motore eCommerce
-* estrazione dei dati in AEM
-* visualizzazione di tali dati e raccolta delle risposte dell&#39;acquirente
+* connessione a un motore di eCommerce
+* inserire dati nell’AEM
+* visualizzazione dei dati e raccolta delle risposte dell&#39;acquirente
 * restituzione dei dettagli della transazione
-* cerca i dati di entrambi i sistemi
+* eseguire ricerche nei dati di entrambi i sistemi
 
 Ciò significa che:
 
-* Gli acquirenti possono registrarsi e fare acquisti senza aspettare.
-* Le variazioni dei prezzi saranno visibili immediatamente dagli acquirenti.
+* Gli acquirenti possono registrarsi e fare acquisti senza attendere.
+* Gli acquirenti vedranno immediatamente le variazioni di prezzo.
 * I prodotti possono essere aggiunti in base alle esigenze.
 
 >[!NOTE]
@@ -34,51 +34,51 @@ Ciò significa che:
 >Il framework eCommerce può essere utilizzato con:
 >
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
->* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+>* [COMMERCE CLOUD SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
 >
 
 
 >[!CAUTION]
 >
->La [Framework di integrazione di eCommerce](https://www.adobe.com/solutions/web-experience-management/commerce.html) è un componente aggiuntivo AEM.
+>Il [Framework di integrazione eCommerce](https://www.adobe.com/solutions/web-experience-management/commerce.html) è un componente aggiuntivo AEM.
 >
->Il rappresentante commerciale sarà in grado di fornire tutti i dettagli, in base al motore appropriato.
+>Il vostro rappresentante commerciale sarà in grado di fornire tutti i dettagli, secondo il motore appropriato.
 
 >[!CAUTION]
 >
->Il framework fornisce i requisiti di base per il tuo progetto.
+>Il framework fornisce i requisiti di base per il progetto.
 >
->Una certa quantità di lavoro di sviluppo è sempre necessaria per adattare il framework alle tue specifiche.
+>È sempre necessario un certo impegno di sviluppo per adattare il framework alle proprie specifiche.
 
 >[!CAUTION]
 >
->L’installazione standard AEM include l’implementazione generica di eCommerce (JCR) AEM.
+>L’installazione standard dell’AEM include l’implementazione eCommerce generica dell’AEM (JCR).
 >
->Al momento questo è destinato a scopi dimostrativi o come base di partenza per un’implementazione personalizzata in base alle tue esigenze.
+>Attualmente, questa funzione è intesa a scopo dimostrativo o come base per un’implementazione personalizzata in base alle tue esigenze.
 
-Per ottimizzare il funzionamento, sia AEM che il motore di e-commerce si concentrano sulla propria area di competenza. Le informazioni sono trasferite tra i due in tempo reale; ad esempio:
+Per ottimizzare il funzionamento, sia l’AEM che il motore di eCommerce si concentrano sulla propria area di competenza. Le informazioni vengono trasferite tra i due in tempo reale, ad esempio:
 
-* AEM:
+* L’AEM può:
 
    * Richiesta:
 
-      * Informazioni sul prodotto dal motore eCommerce.
-   * Fornire:
+      * Informazioni sul prodotto dal motore di eCommerce.
+   * Fornisci:
 
-      * Visualizzazioni utente per informazioni sul prodotto, carrello acquisti e checkout.
-      * Carrello acquisti e informazioni sul pagamento al motore eCommerce.
+      * Visualizzazioni utente per informazioni sul prodotto, carrello e pagamento.
+      * Carrello acquisti e informazioni di pagamento al motore di eCommerce.
       * Ottimizzazione dei motori di ricerca (SEO).
-      * Funzionalità Community.
+      * Funzionalità community.
       * Interazioni di marketing non strutturate.
 
 
-* Il motore eCommerce può:
+* Il motore di eCommerce può:
 
-   * Fornire:
+   * Fornisci:
 
-      * Informazioni di prodotto dal database.
-      * Gestione delle varianti di prodotto.
+      * Informazioni sul prodotto dal database.
+      * Gestione varianti prodotto.
       * Gestione degli ordini.
       * ERP (Enterprise Resource Planning).
       * Cerca nelle informazioni sul prodotto.
@@ -86,25 +86,25 @@ Per ottimizzare il funzionamento, sia AEM che il motore di e-commerce si concent
 
       * Il carrello.
       * Il pagamento.
-      * Esecuzione dell&#39;ordine.
+      * Evasione dell&#39;ordine.
 
 
 >[!NOTE]
 >
->I dettagli esatti dipenderanno dal motore eCommerce e dall’implementazione del progetto.
+>I dettagli esatti dipenderanno dal motore di eCommerce e dall’implementazione del progetto.
 
-Per utilizzare il livello di integrazione, sono disponibili diversi componenti AEM pronti all’uso. Attualmente questi includono:
+Per utilizzare il livello di integrazione è disponibile una serie di componenti AEM pronti all’uso. Attualmente questi includono:
 
 * Informazioni sul prodotto
 * Carrello
 * Check-out
 * Account personale
 
-Sono disponibili anche diverse opzioni di ricerca.
+Sono inoltre disponibili varie opzioni di ricerca.
 
 ## Architettura {#architecture}
 
-Il framework di integrazione fornisce l’API , una serie di componenti per illustrare funzionalità e diverse estensioni per fornire esempi di metodi di connessione:
+Il framework di integrazione fornisce l’API, una serie di componenti per illustrare le funzionalità e diverse estensioni per fornire esempi di metodi di connessione:
 
 ![chlimage_1-4](/help/sites-administering/assets/chlimage_1-4.png)
 
@@ -114,82 +114,82 @@ Il framework consente di accedere a funzionalità quali:
 
 ### Implementazioni {#implementations}
 
-AEM eCommerce viene implementato con un motore eCommerce:
+L’eCommerce dell’AEM è implementato con un motore di eCommerce:
 
-* Il framework di integrazione di eCommerce è stato creato per consentirti di integrare facilmente un motore di e-commerce con AEM. Il motore eCommerce appositamente progettato controlla i dati dei prodotti, i carrelli commerciali, il pagamento e l’esecuzione degli ordini, mentre AEM controlla le campagne di visualizzazione e marketing dei dati.
+* Il framework di integrazione dell’eCommerce è stato creato per consentire di integrare facilmente un motore di eCommerce con l’AEM. Il motore di eCommerce appositamente creato controlla i dati dei prodotti, i carrelli, il pagamento e l’evasione degli ordini, mentre l’AEM controlla la visualizzazione dei dati e le campagne di marketing.
 
 
 >[!NOTE]
 >
->L’installazione standard AEM include l’implementazione generica di eCommerce (JCR) AEM.
+>L’installazione standard dell’AEM include l’implementazione eCommerce generica dell’AEM (JCR).
 >
->Al momento questo è destinato a scopi dimostrativi o come base di partenza per un’implementazione personalizzata in base alle tue esigenze.
+>Attualmente, questa funzione è intesa a scopo dimostrativo o come base per un’implementazione personalizzata in base alle tue esigenze.
 >
->AEM eCommerce implementato in AEM utilizzando lo sviluppo generico basato su JCR è:
+>L’eCommerce AEM implementato all’interno dell’AEM utilizzando lo sviluppo generico basato sul JCR è:
 >
->* Un esempio di eCommerce autonomo e nativo AEM per illustrare l’utilizzo dell’API. Può essere utilizzato per controllare i dati dei prodotti, i carrelli commerciali e il pagamento insieme alle campagne di visualizzazione dei dati esistenti e di marketing. In questo caso il database del prodotto viene memorizzato nell&#39;archivio nativo di AEM (implementazione Adobe di [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Un esempio di e-commerce indipendente e nativo per l’AEM che illustra l’utilizzo dell’API. Questa può essere utilizzata per controllare i dati di prodotto, i carrelli e il pagamento insieme alle campagne di marketing e visualizzazione dati esistenti. In questo caso, il database dei prodotti viene memorizzato nel repository nativo dell&#39;AEM (implementazione Adobe di [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
 >  L&#39;installazione standard AEM contiene le nozioni di base [implementazione eCommerce generica](/help/commerce/cif-classic/administering/generic.md).
 
-### Fornitori commerciali {#commerce-providers}
+### Provider commerce {#commerce-providers}
 
-Quando si importano dati da un motore di e-commerce nel sito di e-commerce AEM, viene utilizzato un provider di e-commerce per fornire i dati agli importatori. Un unico fornitore commerciale può supportare più importatori.
+Quando si importano dati da un motore di e-commerce nel sito eCommerce dell’AEM, viene utilizzato un provider di e-commerce per fornire i dati agli importatori. Un unico fornitore di servizi commerce può supportare più importatori.
 
-Un provider di servizi commerce è AEM codice personalizzato per:
+Un provider di servizi commerce è un codice AEM personalizzato in base a:
 
-* interfaccia a un motore di e-commerce back-end
+* interfaccia con un motore di commerce back-end
 * implementare un sistema commerce sopra l’archivio JCR
 
-Per AEM sono attualmente disponibili due provider di commercio di esempio:
+Due esempi di fornitori commerciali sono attualmente disponibili per l’AEM:
 
 * uno per geometrixx-hybris
-* un altro per geometrixx-generico (JCR)
+* un altro per geometrixx-generic (JCR)
 
-Anche se in genere un progetto deve sviluppare un proprio provider di e-commerce personalizzato specifico per il proprio PIM e lo schema dei dati di prodotto.
+Anche se in genere un progetto deve sviluppare un provider di e-commerce personalizzato in base allo schema PIM e ai dati di prodotto.
 
 >[!NOTE]
 >
->Gli importatori geometrixx utilizzano file CSV; nei commenti sopra la loro implementazione è presente una descrizione dello schema accettato (con proprietà personalizzate consentite).
+>Gli importatori di geometrixx utilizzano file CSV; nei commenti riportati sopra l’implementazione è riportata una descrizione dello schema accettato (con le proprietà personalizzate consentite).
 
-La [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings))un elenco delle implementazioni  [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfacce. Sono elencati in **Fornitore importazione/commercio** campo a discesa della procedura guidata di importazione (utilizzando `commerceProvider` (come nome).
+Il [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings))un elenco delle implementazioni di  [Importazione prodotti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [ImportazioneBlueprintCatalogo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfacce. Questi sono elencati nella **Importatore/Fornitore commerce** campo a discesa della procedura guidata di importazione (utilizzando `commerceProvider` come nome).
 
-Quando un provider di importazione/commercio specifico è disponibile dal menu a discesa, tutti i dati supplementari necessari devono essere definiti (a seconda del tipo di importazione) in:
+Quando uno specifico provider di importazione/commercio è disponibile dal menu a discesa, tutti i dati supplementari necessari devono essere definiti (a seconda del tipo di importatore) in:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-La cartella sotto il `importers` la cartella deve corrispondere al nome dell’importatore; ad esempio:
+La cartella nella cartella appropriata `importers` la cartella deve corrispondere al nome dell’importazione, ad esempio:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
-Il formato del file di importazione di origine è definito dall’importazione. Oppure l’importatore può stabilire una connessione (ad esempio WebDAV o http) al motore di e-commerce.
+Il formato del file di importazione di origine è definito dall&#39;importazione. In alternativa, l’importazione può stabilire una connessione (ad esempio WebDAV o http) al motore di e-commerce.
 
 ## Ruoli {#roles}
 
-Il sistema integrato gestisce i seguenti ruoli per la gestione dei dati:
+Il sistema integrato gestisce i seguenti ruoli per mantenere i dati:
 
-* Product Information Management (PIM) Utente che gestisce:
+* Gestione delle informazioni sul prodotto (PIM) Utente che gestisce:
 
    * Informazioni sul prodotto.
-   * Tassonomia, categorizzazione, approvazione.
-   * Interagisce con la gestione delle risorse digitali.
-   * Prezzi - spesso questo proviene da un sistema ERP e non viene mantenuto esplicitamente nel sistema commerce.
+   * Tassonomia, classificazione, approvazione.
+   * Interagisce direttamente con la gestione delle risorse digitali.
+   * Determinazione dei prezzi: spesso questo deriva da un sistema ERP e non viene mantenuto esplicitamente nel sistema commerciale.
 
 * Autore/Marketing Manager che gestisce:
 
-   * Contenuto marketing per tutti i canali.
+   * Contenuti di marketing per tutti i canali.
    * Promozioni.
    * Voucher.
    * Campagne.
 
-* Surfer / Shopper che:
+* Acquirente che:
 
    * Visualizza le informazioni sul prodotto.
-   * Inserisce oggetti nel carrello.
-   * Controlla i loro ordini.
-   * Attesa evasione ordine.
+   * Inserisce gli articoli nel carrello.
+   * Esegue il check-out degli ordini.
+   * Prevista evasione ordine.
 
-Anche se la posizione effettiva può dipendere dall’implementazione; ad esempio, generico o con un motore eCommerce:
+Anche se la posizione effettiva può dipendere dall’implementazione; ad esempio, generica o con un motore di eCommerce:
 
 ![chlimage_1-6](/help/sites-administering/assets/chlimage_1-6.png)
 
@@ -199,11 +199,11 @@ Anche se la posizione effettiva può dipendere dall’implementazione; ad esempi
 
 #### Categorie strutturali e di marketing {#structural-versus-marketing-categories}
 
-Se le due categorie seguenti possono essere differenziate, questo ti consente di specificare URL chiari con una struttura significativa (alberi di `cq:Page` nodi) e quindi molto vicino alla gestione classica dei contenuti AEM):
+Se le due categorie seguenti possono essere differenziate, ciò ti consente di specificare chiaramente gli URL con una struttura significativa (strutture di `cq:Page` e quindi molto vicino alla classica gestione dei contenuti AEM):
 
 * *Categorie strutturali
 
-   Definizione della struttura delle categorie *che cos’è un prodotto*; ad esempio:
+   Struttura ad albero delle categorie che definisce *cos’è un prodotto*; ad esempio:
 
    `/products/mens/shoes/sneakers`
 
@@ -215,32 +215,32 @@ Se le due categorie seguenti possono essere differenziate, questo ti consente di
 
 ### Dati prodotto {#product-data}
 
-Per rappresentare e gestire il prodotto è necessario disporre di una serie di informazioni.
+Per riprodurre e gestire il prodotto è necessario disporre di una serie di informazioni.
 
 I dati di prodotto possono essere:
 
-* mantenuti direttamente in AEM (generico).
-* mantenuti nel motore eCommerce e resi disponibili in AEM.
+* mantenuti direttamente nell’AEM (generico).
+* mantenuti nel motore di eCommerce e resi disponibili nell’AEM.
 
-   A seconda del tipo di dati, lo è [sincronizzato](#catalog-maintenance-data-synchronization) se necessario o direttamente accessibile; ad esempio, i dati altamente volatili e critici come i prezzi dei prodotti vengono recuperati dal motore di e-commerce in ogni richiesta di pagina per assicurarsi che siano sempre aggiornati.
+   A seconda del tipo di dati [sincronizzato](#catalog-maintenance-data-synchronization) se necessario, o a cui si accede direttamente; ad esempio, dati altamente volatili e critici come i prezzi dei prodotti vengono recuperati dal motore di e-commerce in ogni richiesta di pagina per garantire che siano sempre aggiornati.
 
-In entrambi i casi, quando i dati del prodotto sono stati immessi o importati in AEM, possono essere visualizzati dalla **Prodotti** console. Qui le visualizzazioni a schede ed elenco di un prodotto mostrano informazioni quali:
+In entrambi i casi, quando i dati del prodotto sono stati inseriti/importati nell’AEM, è possibile visualizzarli dal **Prodotti** console. Qui le viste a schede e a elenco di un prodotto mostrano informazioni quali:
 
 * l&#39;immagine
 * il codice SKU
-* all&#39;ultima modifica
+* quando viene modificata per ultima
 
 ![chlimage_1-7](/help/sites-administering/assets/chlimage_1-7.png)
 
 ### Varianti prodotto {#product-variants}
 
-Per i prodotti appropriati è inoltre possibile conservare informazioni sulle varianti. Ad esempio, per gli articoli di abbigliamento i diversi colori disponibili sono considerati varianti:
+Per i prodotti appropriati possono essere conservate anche informazioni sulle varianti. Ad esempio, per gli articoli di abbigliamento i diversi colori disponibili sono tenuti come varianti:
 
-![ecommerceproductvariants](/help/sites-administering/assets/ecommerceproductvariants.png)
+![ecommerce productvariants](/help/sites-administering/assets/ecommerceproductvariants.png)
 
 ### Attributi del prodotto {#product-attributes}
 
-I singoli attributi contenuti in ciascun prodotto possono dipendere dal motore di eCommerce utilizzato e dall’implementazione di AEM. Sono disponibili (a seconda delle necessità) quando si visualizzano le pagine dei prodotti e/o si modificano le informazioni sui prodotti e possono includere:
+I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore di eCommerce utilizzato e dall’implementazione dell’AEM. Sono disponibili (a seconda del caso) quando si visualizzano pagine di prodotto e/o si modificano informazioni sul prodotto e possono includere:
 
 * **Immagine**
 
@@ -248,7 +248,7 @@ I singoli attributi contenuti in ciascun prodotto possono dipendere dal motore d
 
 * **Titolo**
 
-   Nome del prodotto.
+   Il nome del prodotto.
 
 * **Descrizione**
 
@@ -256,25 +256,25 @@ I singoli attributi contenuti in ciascun prodotto possono dipendere dal motore d
 
 * **Tag**
 
-   Tag utilizzati per raggruppare prodotti correlati.
+   Tag utilizzati per raggruppare i prodotti correlati.
 
 * **Categoria risorse predefinita**
 
-   Una categoria predefinita per le risorse.
+   Categoria predefinita per le risorse.
 
 * **Dati ERP**
 
-   Informazioni sulla pianificazione delle risorse aziendali (ERP).
+   Informazioni ERP (Enterprise Resource Planning).
 
    * **SKU**
 
-      Informazioni sulle unità di custodia (SKU).
+      Informazioni sulle SKU (Stock Keeping Unit).
 
    * **Colore**
    * **Dimensione**
    * **Prezzo**
 
-      Prezzo unitario del prodotto.
+      Il prezzo unitario del prodotto.
 
 * **Riepilogo**
 
@@ -282,23 +282,23 @@ I singoli attributi contenuti in ciascun prodotto possono dipendere dal motore d
 
 * **Funzioni**
 
-   Dettagli più completi sulle caratteristiche del prodotto.
+   Dettagli più completi sulle funzioni del prodotto.
 
-### Risorse del prodotto {#product-assets}
+### Risorse di prodotto {#product-assets}
 
-È possibile conservare una selezione di risorse per singoli prodotti. Comunemente questi includono immagini e video.
+È possibile selezionare le risorse per i singoli prodotti. Di solito includono immagini e video.
 
 ## Cataloghi {#catalogs}
 
-Un catalogo raggruppa i dati dei prodotti per facilitare la gestione e la rappresentazione dell’acquirente. Spesso un catalogo è strutturato in base ad attributi quali lingua, area geografica, marchio, stagione, hobby, sport, tra molti altri.
+Un catalogo raggruppa i dati dei prodotti per semplificare la gestione e la rappresentazione da parte dell&#39;acquirente. Spesso un catalogo è strutturato in base ad attributi come lingua, area geografica, marchio, stagione, hobby, sport, tra molti altri.
 
 ### Struttura del catalogo {#catalog-structure}
 
 #### Cataloghi in più lingue {#catalogs-in-multiple-languages}
 
-AEM supporta il contenuto del prodotto in più lingue. Quando si richiedono i dati, il framework di integrazione recupera la lingua dalla struttura corrente (ad esempio, `en_US` per le pagine sotto `/content/geometrixx-outdoors/en_US`).
+L’AEM supporta i contenuti dei prodotti in più lingue. Quando si richiedono i dati, Integration Framework recupera la lingua dalla struttura corrente (ad esempio, `en_US` per le pagine in `/content/geometrixx-outdoors/en_US`).
 
-Per un archivio multilingue, è possibile importare il catalogo per ogni struttura linguistica singolarmente (o copiarlo tramite [MSM](/help/sites-administering/msm.md)).
+Per un archivio multilingue, è possibile importare il catalogo per ogni struttura ad albero della lingua singolarmente (oppure copiarlo tramite [MSM](/help/sites-administering/msm.md)).
 
 #### Cataloghi per più marchi {#catalogs-for-multiple-brands}
 
@@ -306,108 +306,108 @@ Come per le lingue, le grandi aziende multinazionali possono avere bisogno di oc
 
 #### Cataloghi per tag {#catalogs-by-tags}
 
-I tag possono anche essere utilizzati per raggruppare i prodotti in un catalogo. Questi possono essere utilizzati per cataloghi più dinamici, come le offerte stagionali.
+I tag possono essere utilizzati anche per raggruppare i prodotti in un catalogo. Possono essere utilizzati per cataloghi più dinamici, ad esempio per le offerte stagionali.
 
 ### Configurazione catalogo (importazione iniziale) {#catalog-setup-initial-import}
 
-A seconda dell’implementazione, puoi importare i dati di prodotto necessari per il catalogo di base in AEM da:
+A seconda dell’implementazione, puoi importare in AEM i dati di prodotto necessari per il catalogo di base da:
 
-* un file CSV (per l&#39;implementazione generica)
-* il motore eCommerce
+* un file CSV (per l’implementazione generica)
+* il motore di eCommerce
 
 ### Manutenzione del catalogo (sincronizzazione dati) {#catalog-maintenance-data-synchronization}
 
-Ulteriori modifiche ai dati sui prodotti saranno inevitabili:
+Ulteriori modifiche ai dati di prodotto saranno inevitabili:
 
-* per l&#39;implementazione generica, questi possono essere gestiti con il [editor di prodotti](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
-* quando si utilizza un [Motore eCommerce le modifiche devono essere sincronizzate](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* per l&#39;implementazione generica, questi possono essere gestiti con [editor prodotti](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
+* quando si utilizza un’ [Motore di eCommerce le modifiche devono essere sincronizzate](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
-#### Sincronizzazione dei dati con un motore di e-commerce (in corso) {#data-synchronization-with-an-ecommerce-engine-ongoing}
+#### Sincronizzazione dei dati con un motore di eCommerce (in corso) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
 Dopo l’importazione iniziale, le modifiche ai dati del prodotto sono inevitabili.
 
-Quando si utilizza un motore di e-commerce, i dati del prodotto vengono mantenuti e devono essere disponibili in AEM. Questi dati di prodotto devono essere sincronizzati quando vengono effettuati gli aggiornamenti.
+Quando si utilizza un motore di eCommerce, i dati dei prodotti vengono conservati lì e devono essere disponibili nell’AEM. Questi dati di prodotto devono essere sincronizzati quando vengono apportati aggiornamenti.
 
 Questo può dipendere dal tipo di dati:
 
-* A [la sincronizzazione periodica viene utilizzata insieme a un feed di dati delle modifiche](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
+* A [la sincronizzazione periodica viene utilizzata insieme a un feed di dati di modifiche](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
    Inoltre, puoi selezionare aggiornamenti specifici per un aggiornamento rapido.
 
-* I dati altamente volatili, come le informazioni sul prezzo, vengono recuperati dal motore di e-commerce per ogni richiesta di pagina, per garantire che siano sempre aggiornati.
+* Dati ad alta volatilità, come le informazioni sui prezzi, vengono recuperati dal motore di commerce per ogni richiesta di pagina, per garantire che siano sempre aggiornati.
 
 ### Cataloghi - Prestazioni e scalabilità {#catalogs-performance-and-scaling}
 
-L’importazione di un catalogo di grandi dimensioni con un numero elevato di prodotti (solitamente più di 100.000) da un motore di eCommerce (PIM) può influenzare il sistema a causa del numero elevato di nodi. Può anche rallentare l’istanza di authoring se i prodotti hanno risorse associate (ad esempio, immagini di prodotto). Ciò è dovuto al fatto che la post-elaborazione di queste risorse richiede un uso intensivo di CPU e memoria.
+L’importazione di un catalogo di grandi dimensioni con un numero elevato di prodotti (in genere più di 100.000) da un motore di eCommerce (PIM) può influire sul sistema a causa del numero elevato di nodi. Può anche rallentare l’istanza di authoring se ai prodotti sono associate delle risorse (ad esempio immagini di prodotto). Ciò è dovuto al fatto che la post-elaborazione di queste risorse richiede un uso intensivo della CPU e della memoria.
 
-Ci sono diverse strategie che puoi scegliere di aggirare questi problemi:
+È possibile scegliere tra diverse strategie per risolvere questi problemi:
 
-* [Bucket](#bucketing) - per soddisfare il gran numero di nodi
-* [Scaricare la post-elaborazione delle risorse in un’istanza dedicata](#offload-asset-post-processing-to-a-dedicated-instance)
-* [Importa solo dati di prodotto](#only-import-product-data)
-* [Importazione di rallentamenti e salvataggi batch](#import-throttling-and-batch-saves)
+* [Bucket](#bucketing) - per gestire un numero elevato di nodi
+* [Offload della post-elaborazione delle risorse in un’istanza dedicata](#offload-asset-post-processing-to-a-dedicated-instance)
+* [Importa solo dati prodotto](#only-import-product-data)
+* [Importa limitazione e salvataggi batch](#import-throttling-and-batch-saves)
 * [Test delle prestazioni](#performance-testing)
 * [Prestazioni - Varie](#performance-miscellaneous)
 
 #### Bucket {#bucketing}
 
-Se un nodo JCR ha molti nodi figlio diretti (ad esempio 1000 e più), sono necessari bucket (cartelle fantasma) per garantire che le prestazioni non siano influenzate. Questi vengono generati in base a un algoritmo al momento dell’importazione.
+Se un nodo JCR ha molti nodi secondari diretti (ad esempio 1000 e più), sono necessari bucket (cartelle fantasma) per garantire che le prestazioni non vengano influenzate. Questi vengono generati in base a un algoritmo durante l’importazione.
 
-Questi bucket si presentano come cartelle fantasma introdotte nella struttura del catalogo, ma possono essere configurate in modo che non siano visibili negli URL pubblici.
+Questi bucket assumono la forma di cartelle fantasma introdotte nella struttura del catalogo, ma possono essere configurate in modo da non risultare visibili negli URL pubblici.
 
-#### Scaricare la post-elaborazione delle risorse in un’istanza dedicata {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Offload della post-elaborazione delle risorse in un’istanza dedicata {#offload-asset-post-processing-to-a-dedicated-instance}
 
-Questo scenario comporta l’impostazione di due istanze di authoring:
+Questo scenario comporta la configurazione di due istanze di authoring:
 
-1. Istanza dell&#39;autore principale
+1. Istanza autore principale
 
    Importa i dati di prodotto da PIM, su cui è disabilitata la post-elaborazione per i percorsi delle risorse.
 
-1. istanza di authoring DAM dedicata
+1. Istanza di authoring DAM dedicata
 
-   Importa e post-elabora le risorse di prodotto dal PIM, quindi le replica nuovamente nell&#39;istanza dell&#39;autore principale per l&#39;uso.
+   Importa ed esegue la post-elaborazione delle risorse di prodotto da PIM, quindi le replica nell’istanza di authoring principale per l’utilizzo.
 
-![Diagramma dell&#39;architettura](/help/sites-administering/assets/chlimage_1-8.png)
+![Diagramma dell’architettura](/help/sites-administering/assets/chlimage_1-8.png)
 
-#### Importa solo dati di prodotto {#only-import-product-data}
+#### Importa solo dati prodotto {#only-import-product-data}
 
-Nei casi in cui i prodotti non contengono risorse (immagini) da importare, puoi importare i dati del prodotto senza essere interessati dalla post-elaborazione delle risorse.
+Nei casi in cui i prodotti non contengano risorse (immagini) da importare, puoi importare i dati dei prodotti senza subire l’effetto della post-elaborazione delle risorse.
 
-![Diagramma dell&#39;architettura](/help/sites-administering/assets/chlimage_1-9.png)
+![Diagramma dell’architettura](/help/sites-administering/assets/chlimage_1-9.png)
 
 #### Test delle prestazioni {#performance-testing}
 
-I test delle prestazioni devono essere presi in considerazione nelle implementazioni AEM eCommerce:
+Occorre valutare le prestazioni delle implementazioni di eCommerce AEM:
 
 * Ambiente di authoring:
 
-   L’attività in background (ad esempio, l’importazione) può verificarsi contemporaneamente alla normale attività dell’utente (ad esempio la modifica delle pagine) e anche se le prestazioni front-end sono in genere considerate con una priorità più elevata, le prestazioni sbagliate riscontrate dagli autori online possono portare a frustrazioni in grado di bloccare una decisione go-live.
+   L’attività in background (ad es. importazione) può verificarsi contemporaneamente alla normale attività dell’utente (ad es. modifica pagina) e anche se alle prestazioni front-end (in generale) è assegnata una priorità più elevata, le prestazioni errate rilevate dagli autori online possono portare a una frustrazione in grado di bloccare una decisione di pubblicazione.
 
 * Ambiente di pubblicazione:
 
-   La replica è un processo fondamentale per garantire che il contenuto venga pubblicato in modo rapido e affidabile. Questo può essere influenzato dal modo in cui l’autore raggruppa i contenuti da pubblicare.
+   La replica è un processo fondamentale per garantire che il contenuto venga pubblicato in modo rapido e affidabile. Questo può essere influenzato dal modo in cui l’autore raggruppa il contenuto da pubblicare.
 
 * Front-end:
 
-   La combinazione di invalidamenti front-end e cache può potenzialmente causare sorprese nelle prestazioni. Il test aiuta a evitarli.
+   La combinazione di invalidamenti front-end e cache può potenzialmente portare a sorprese nelle prestazioni. I test consentono di evitarli.
 
-Tieni presente che questo test delle prestazioni richiede conoscenze e analisi del tuo obiettivo:
+Tieni presente che questo test delle prestazioni richiede la conoscenza e l’analisi del target:
 
-* Volume dei contenuti
+* Volumi di contenuto
 
    * Risorse
-   * Prodotti e SKU localizzati, I18ned
+   * Prodotti e SKU localizzati I18ned
 
 * Attività utente:
 
-   * Edizione in serie
+   * Modifica in serie
    * Pubblicazione in blocco
    * Richieste di ricerca intense
 
 * Processi in background
 
    * Importazioni
-   * Aggiornamenti alla sincronizzazione (ad esempio, prezzi)
+   * Aggiornamenti della sincronizzazione (ad esempio, determinazione prezzi)
 
 * Requisiti di manutenzione (backup, ottimizzazione Tar PM, raccolta rifiuti del datastore, ecc.)
 
@@ -415,18 +415,18 @@ Tieni presente che questo test delle prestazioni richiede conoscenze e analisi d
 
 Per tutte le implementazioni è possibile tenere presenti i seguenti punti:
 
-* Come prodotto, le unità di conservazione e le categorie possono essere numerose, cercare di utilizzare il minor numero possibile di nodi per modellare il contenuto.
+* Poiché il prodotto, le unità e le categorie di stockkeeping possono essere numerose, prova a utilizzare il minor numero di nodi possibile per modellare il contenuto.
 
-   Maggiore è il numero di nodi, maggiore è la flessibilità del contenuto (ad es. parsys). Tuttavia, tutto è un compromesso e hai bisogno di flessibilità individuale (per impostazione predefinita) durante la manipolazione (per esempio) dei prodotti 30K?
+   Più nodi hai, più il contenuto è flessibile (ad esempio, parsys). Tuttavia, tutto è un compromesso e hai bisogno di flessibilità individuale (per impostazione predefinita) durante la manipolazione (ad esempio) di prodotti 30K?
 
-* Evita duplicazioni quanto puoi (consulta localizzazione) oppure, in caso affermativo, pensa a quanti nodi produrrà la duplicazione.
-* Per preparare l’ottimizzazione della query, prova a assegnare il tag al contenuto il più possibile.
+* Evita le duplicazioni il più possibile (consulta localizzazione), o quando sì, pensa a quanti nodi porterà la duplicazione.
+* Prova a assegnare tag al contenuto il più possibile per preparare l’ottimizzazione della query.
 
-   Esempio:
+   Ad esempio:
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
-   deve avere un tag per livello di contenuto (ad esempio paese, lingua, categoria, marchio, prodotto). Ricerca
+   deve avere un tag per livello di contenuto (ad es. paese, lingua, categoria, marchio, prodotto). Ricerca
 
    `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
 
@@ -434,131 +434,131 @@ Per tutte le implementazioni è possibile tenere presenti i seguenti punti:
 
    `@category=’shoe’ and @brand=’reebok’ and @product=’pump’]`
 
-   sarà drasticamente più veloce della ricerca
+   sarà drasticamente più veloce che cercare
 
    `/jcr:root/content/france/fr/shoe/reebok/pump/element(*,my:Sku)`
 
-* Nello stack tecnico, pianifica modelli e servizi di accesso ai contenuti molto fattoriali. Questa è una best practice generale, ma è ancora più cruciale lei, come è possibile, nelle fasi di ottimizzazione, aggiungere cache dell&#39;applicazione per i dati che vengono letti molto spesso (e che non si desidera riempire la cache del bundle con).
+* Nella tua stack tecnica, pianifica modelli e servizi di accesso ai contenuti molto personalizzati. Si tratta di una best practice generale, ma è ancora più cruciale in quanto, nelle fasi di ottimizzazione, puoi aggiungere cache dell’applicazione per i dati letti molto spesso (e che non desideri riempire la cache del bundle con).
 
-   Ad esempio, la gestione degli attributi è molto spesso un buon candidato per la memorizzazione in cache in quanto riguarda i dati che vengono aggiornati tramite l’importazione di prodotti.
-* Considera l&#39;uso di [pagine proxy](#proxy-pages).
+   Ad esempio, la gestione degli attributi è molto spesso un buon candidato per il caching in quanto riguarda i dati aggiornati tramite l’importazione di prodotti.
+* Valuta l’utilizzo di [pagine proxy](#proxy-pages).
 
-### Pagine delle sezioni del catalogo {#catalog-section-pages}
+### Pagine sezione catalogo {#catalog-section-pages}
 
 Le sezioni del catalogo forniscono, ad esempio:
 
-* un’introduzione (immagine e/o testo) alla categoria; può essere utilizzato anche per striscioni e teaser per promuovere offerte speciali
+* un’introduzione (immagine e/o testo) alla categoria; può essere utilizzata anche per banner e teaser per promuovere offerte speciali
 * collegamenti ai singoli prodotti di tale categoria
 * collegamenti alle altre categorie
 
-![ecommerce_categoryrunning](/help/sites-administering/assets/ecommerce_categoryrunning.png)
+![ecommerce_category in esecuzione](/help/sites-administering/assets/ecommerce_categoryrunning.png)
 
 ### Pagine prodotto {#product-pages}
 
-Le pagine dei prodotti forniscono informazioni complete sui singoli prodotti. Vengono anche rispecchiati gli aggiornamenti dinamici da; ad esempio, le variazioni di prezzo registrate nel motore eCommerce.
+Le pagine dei prodotti forniscono informazioni complete sui singoli prodotti. Vengono riflessi anche gli aggiornamenti dinamici di; ad esempio, le modifiche di prezzo registrate sul motore di eCommerce.
 
-Le pagine di prodotto sono AEM pagine che utilizzano **Prodotto** componente; ad esempio, all’interno di **Prodotto Commerce** modello:
+Le pagine di prodotto sono pagine AEM che utilizzano **Prodotto** componente; ad esempio, all’interno del **Prodotto Commerce** modello:
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
 Il componente Prodotto fornisce:
 
-* Informazioni generali sul prodotto; compresi testo e immagini.
-* Prezzi; in genere viene recuperato dal motore eCommerce ogni volta che la pagina viene visualizzata o aggiornata.
-* informazioni sulla variante del prodotto; ad esempio, colore e dimensione.
+* Informazioni generali sul prodotto, inclusi testo e immagini.
+* Prezzi; in genere vengono recuperati dal motore di eCommerce ogni volta che la pagina viene visualizzata o aggiornata.
+* Informazioni sulla variante del prodotto, ad esempio colore e dimensioni.
 
 Queste informazioni consentono all&#39;acquirente di selezionare quanto segue quando si aggiunge un articolo al carrello:
 
-* Varianti di colore e dimensioni
+* Varianti di colore e dimensione
 * Quantità
 
 #### Pagine di destinazione del prodotto {#product-landing-pages}
 
-Si tratta AEM pagine che forniscono principalmente informazioni statiche; ad esempio, un’introduzione e una panoramica con collegamenti alle pagine di prodotto sottostanti.
+Si tratta di pagine AEM che forniscono principalmente informazioni statiche; ad esempio, un’introduzione e una panoramica con collegamenti alle pagine di prodotto sottostanti.
 
 ### Componente prodotto {#product-component}
 
-La **Prodotto** può essere aggiunto a qualsiasi pagina con una pagina padre che fornisca i metadati richiesti (ovvero i percorsi `cartPage` e `cartObject`). Nel sito dimostrativo, i Geometrixx Outdoors sono forniti da `UserInfo.jsp`.
+Il **Prodotto** può essere aggiunto a qualsiasi pagina con una pagina padre che fornisce i metadati richiesti (ad esempio i percorsi per `cartPage` e `cartObject`). Nel sito della dimostrazione, Geometrixx Outdoors, questo viene fornito da `UserInfo.jsp`.
 
-La **Prodotto** Il componente può anche essere personalizzato in base alle proprie esigenze.
+Il **Prodotto** Il componente può anche essere personalizzato in base alle vostre esigenze individuali.
 
 ### Pagine proxy {#proxy-pages}
 
-Le pagine proxy vengono utilizzate per semplificare la struttura dell&#39;archivio e ottimizzare lo storage per i cataloghi di grandi dimensioni.
+Le pagine proxy vengono utilizzate per semplificare la struttura dell’archivio e ottimizzare l’archiviazione per i cataloghi di grandi dimensioni.
 
-La creazione di un catalogo utilizza dieci nodi per prodotto in quanto fornisce singoli componenti per ogni prodotto che è possibile aggiornare e personalizzare in AEM. Questo elevato numero di nodi può diventare un problema se il catalogo contiene centinaia o persino migliaia di prodotti. Per evitare problemi è possibile creare il catalogo utilizzando le pagine proxy.
+La creazione di un catalogo utilizza dieci nodi per prodotto, in quanto fornisce singoli componenti per ciascun prodotto che è possibile aggiornare e personalizzare in AEM. Questo numero elevato di nodi può diventare un problema se il catalogo contiene centinaia o anche migliaia di prodotti. Per evitare problemi puoi creare il catalogo utilizzando le pagine proxy.
 
-Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene il contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
+Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene nessuno del contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
 
-Tuttavia, esiste un compromesso. Non sarà possibile personalizzare le informazioni sui prodotti in AEM, verrà utilizzato un modello standard (definito per il sito).
+Tuttavia, c&#39;è un compromesso. Non sarà possibile personalizzare le informazioni di prodotto all’interno di AEM, verrà utilizzato un modello standard (definito per il sito).
 
 >[!NOTE]
 >
 >Non si verificheranno problemi se si importa un catalogo di grandi dimensioni senza pagine proxy.
 >
->Puoi convertire da una metodologia all’altra in qualsiasi momento. Puoi anche convertire una sottosezione del catalogo.
+>Puoi passare da una metodologia all’altra in qualsiasi momento. Puoi anche convertire una sottosezione del catalogo.
 
 ## Promozioni e voucher {#promotions-and-vouchers}
 
 ### Voucher {#vouchers}
 
-I voucher sono un metodo provato e collaudato di offrire sconti per attirare i consumatori nel fare un acquisto e/o premiare la fedeltà del cliente.
+I voucher sono un metodo collaudato per offrire sconti al fine di attirare gli acquirenti verso un acquisto e/o premiare la fedeltà del cliente.
 
-* Alimentazione:
+* Fornitura voucher:
 
-   * Un codice voucher (da inserire nel carrello dall&#39;acquirente).
-   * Etichetta del voucher (da visualizzare dopo che l’acquirente l’ha inserita nel carrello).
-   * Un percorso di promozione (che definisce l’azione applicata al voucher).
+   * Un codice voucher (che deve essere digitato nel carrello dall’acquirente).
+   * Etichetta del voucher (da mostrare dopo che l&#39;acquirente l&#39;ha inserito nel carrello).
+   * Un percorso di promozione (che definisce l&#39;azione applicata dal voucher).
 
-* I motori di commercio esterno possono anche fornire buoni.
+* Anche i motori di commercio esterno possono fornire voucher.
 
-In AEM:
+Per l&#39;AEM:
 
-* Un voucher è un componente basato su pagina che viene creato/modificato con la console Siti web .
-* La **Voucher** Il componente fornisce:
+* Un voucher è un componente basato su pagina che viene creato/modificato con la console Siti Web.
+* Il **Voucher** Il componente fornisce:
 
-   * un trasformatore per l&#39;amministrazione dei buoni; questo mostra tutti i voucher attualmente nel carrello.
-   * Le finestre di dialogo di modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
-   * Azioni necessarie per aggiungere/rimuovere voucher al carrello o dal carrello.
+   * Un renderer per l&#39;amministrazione dei voucher; questo mostra tutti i voucher attualmente nel carrello.
+   * Le finestre di dialogo per modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
+   * Azioni necessarie per aggiungere o rimuovere i voucher dal carrello.
 
-* I voucher non hanno la propria data/ora di attivazione e disattivazione, ma utilizzano quelle delle campagne principali.
+* I voucher non hanno date/ore di attivazione e disattivazione, ma utilizzano quelle delle campagne principali.
 
 >[!NOTE]
 >
->AEM utilizza il termine **Voucher**, questo è sinonimo di termine **Coupon**.
+>L’AEM utilizza il termine **Voucher**, questo è sinonimo del termine **Coupon**.
 
 ### Promozioni {#promotions}
 
 Le promozioni, insieme ai voucher, consentono di realizzare scenari come:
 
-* Un&#39;azienda fornisce prezzi personalizzati per i dipendenti, che è un elenco di utenti fatto a mano.
+* Un&#39;azienda fornisce prezzi personalizzati per i dipendenti, che è un elenco di utenti creato a mano.
 * I clienti a lungo termine ricevono sconti su tutti gli ordini.
-* Un prezzo di vendita offerto su un periodo di tempo ben definito.
+* Prezzo di vendita offerto in un periodo di tempo ben definito.
 * Un cliente riceve un voucher quando il suo ordine precedente supera un importo specifico.
-* Un cliente che acquista *product-X* viene offerto uno sconto il *product-Y* (prodotti coppia).
+* Un cliente che acquista *product-X* viene offerto uno sconto il *product-Y* (prodotti in coppia).
 
-Le promozioni non vengono generalmente mantenute dai responsabili delle informazioni sui prodotti, ma dai responsabili del marketing:
+Le promozioni non vengono in genere gestite dai responsabili delle informazioni sui prodotti, ma dai responsabili del marketing:
 
-* Una promozione è un componente basato su pagina che viene creato/modificato con la console Siti web . &quot;
-* Offerta promozionale:
+* Una promozione è un componente basato su pagina che viene creato/modificato con la console Siti web. &quot;
+* Offerta promozioni:
 
    * Una priorità
-   * Un percorso handler di promozione
+   * Un percorso del gestore delle promozioni
 
-* Puoi collegare le promozioni a una campagna per definirne la data/ora di attivazione/disattivazione.
+* È possibile collegare le promozioni a una campagna per definirne data/ora di attivazione/disattivazione.
 * Puoi collegare le promozioni a un’esperienza per definirne i segmenti.
-* Le promozioni non collegate a un’esperienza non si attivano da sole, ma possono ancora essere attivate da un Voucher.
+* Le promozioni non collegate a un’esperienza non si attivano da sole, ma possono comunque essere attivate da un voucher.
 * Il componente Promozione contiene:
 
-   * moduli di rendering e finestre di dialogo per l&#39;amministrazione delle promozioni
-   * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici per i gestori della promozione
+   * renderer e finestre di dialogo per l&#39;amministrazione della promozione
+   * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici dei gestori di promozioni
 
-AEM le promozioni sono integrate anche nel [Campaign Management](/help/sites-authoring/personalization.md):
+Nell&#39;AEM le promozioni sono integrate anche nel [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campagna](/help/sites-authoring/personalization.md) specifica i tempi di attivazione/disattivazione
 * [esperienze](/help/sites-authoring/personalization.md) *entro* la campagna viene utilizzata per raggruppare le risorse (pagine teaser, promozioni, ecc.) in base al segmento di pubblico a cui corrispondono
 
-Una promozione può essere organizzata in un’esperienza o direttamente nella campagna:
+Una promozione può essere effettuata in un’esperienza o direttamente nella campagna:
 
 * Se una promozione viene mantenuta in un’esperienza, può essere applicata automaticamente a un segmento di pubblico.
 
@@ -566,25 +566,25 @@ Una promozione può essere organizzata in un’esperienza o direttamente nella c
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   è in un’esperienza e quindi si attiva automaticamente ogni volta che il segmento ( `ordervalueover100`).
+   si trova in un’esperienza e viene quindi attivato automaticamente ogni volta che il segmento ( `ordervalueover100`) si risolve.
 
-* Se una promozione non viene visualizzata all’interno di un’esperienza (solo nella campagna), non può essere applicata automaticamente a un pubblico. Tuttavia, può ancora essere licenziato se l&#39;acquirente entra un voucher nel loro carrello e quel voucher fa riferimento alla promozione.
+* Se una promozione non viene visualizzata all’interno di un’esperienza (solo nella campagna), non può essere applicata automaticamente a un pubblico. Tuttavia, può comunque essere attivato se il cliente inserisce un voucher nel carrello e tale voucher fa riferimento alla promozione.
 
    Ad esempio, la promozione:
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   è al di fuori di un’esperienza e quindi non si attiva mai automaticamente (ad es: in base alla segmentazione). Tuttavia, i voucher fanno riferimento a questi ultimi che si trovano in diverse esperienze all’interno della campagna dell’articolo. L&#39;inserimento di questi codici voucher nel carrello provocherà l&#39;attivazione della promozione.
+   si trova al di fuori di un’esperienza e quindi non si attiva mai automaticamente (ovvero, in base alla segmentazione). Tuttavia, è indicato dai voucher che si trovano in diverse esperienze all’interno della campagna di articoli. L&#39;inserimento di tali codici voucher nel carrello causerà l&#39;attivazione della promozione.
 
 >[!NOTE]
 >
->[promozioni dell&#39;hybris](https://www.hybris.com/modules/promotion) e [buoni ibridi](https://www.hybris.com/en/modules/voucher) copre tutto ciò che influenza il carrello e che è correlato ai prezzi. La promozione di contenuti di marketing specifici (come banner, ecc.) non fa parte della promozione ibrida.
+>[promozioni ibride](https://www.hybris.com/modules/promotion) e [voucher ibridi](https://www.hybris.com/en/modules/voucher) coprire tutto ciò che influenza il carrello e che è correlato ai prezzi. I contenuti di marketing specifici per la promozione (come banner, ecc.) non fanno parte della promozione ibrida.
 
 ## Personalizzazione {#personalization}
 
 ### Registrazione clienti e account {#customer-registration-and-accounts}
 
-Quando un acquirente si registra, i dettagli dell’account devono essere sincronizzati tra AEM e il motore eCommerce. I dati sensibili vengono conservati in modo indipendente, ma i profili sono condivisi:
+Quando un acquirente si registra, i dettagli dell’account devono essere sincronizzati tra l’AEM e il motore di e-Commerce. I dati sensibili vengono conservati in modo indipendente, ma i profili vengono condivisi:
 
 ![chlimage_1-10](/help/sites-administering/assets/chlimage_1-10.png)
 
@@ -594,89 +594,89 @@ Il meccanismo esatto può dipendere dallo scenario:
 
    1. Non è richiesta alcuna azione.
 
-1. L&#39;account utente esiste solo in AEM:
+1. L’account utente esiste solo nell’AEM:
 
-   1. L’utente verrà creato nel motore eCommerce con lo stesso ID account e una password casuale che verrà memorizzata in AEM.
-   1. La password casuale è necessaria, in quanto AEM tenta di accedere al motore di eCommerce alla prima chiamata (ad esempio, quando viene richiesta una pagina di prodotto e il motore di eCommerce è indicato per il prezzo). Poiché questo accade dopo l&#39;accesso AEM, la password non è disponibile.
+   1. L’utente verrà creato nel motore di eCommerce con lo stesso ID account e una password casuale che verrà memorizzata nell’AEM.
+   1. La password casuale è necessaria, in quanto l’AEM tenta di accedere al motore di eCommerce alla prima chiamata (ad esempio, quando viene richiesta una pagina di prodotto e viene fatto riferimento al motore di eCommerce per il prezzo). Poiché ciò accade dopo l’accesso AEM, la password non è disponibile.
 
-1. L’account utente esiste solo nel motore eCommerce:
+1. L’account utente esiste solo nel motore di eCommerce:
 
-   1. L&#39;account verrà creato in AEM con lo stesso ID account e la stessa password.
+   1. L’account verrà creato in AEM con lo stesso ID account e la stessa password.
 
-Quando utilizzi un motore di eCommerce, AEM memorizza solo l’ID e la password dell’account (facoltativamente un gruppo di utenti). Tutte le altre informazioni sono memorizzate nel motore eCommerce.
+Quando si utilizza un motore di eCommerce, AEM memorizza solo l’ID account e la password (facoltativamente un gruppo di utenti). Tutte le altre informazioni vengono memorizzate nel motore di eCommerce.
 
 >[!NOTE]
 >
->Quando utilizzi un motore di eCommerce, devi assicurarti che gli account creati per gli utenti che accedono a un’istanza AEM vengano replicati (ad esempio tramite flussi di lavoro) in qualsiasi altra istanza AEM che comunica con tale motore.
+>Quando utilizzi un motore di eCommerce, devi assicurarti che gli account creati per gli utenti che accedono a un’istanza AEM vengano replicati (ad esempio tramite flussi di lavoro) in qualsiasi altra istanza AEM che comunichi con tale motore.
 >
->In caso contrario, anche queste altre istanze AEM cercheranno di creare account per gli stessi utenti nel motore. Queste azioni avranno esito negativo con un `DuplicateUidException` provenienti dal motore.
+>In caso contrario, anche queste altre istanze dell’AEM tenteranno di creare account per gli stessi utenti nel motore. Queste azioni avranno esito negativo con una `DuplicateUidException` proviene dal motore.
 
-### Iscrizione al cliente {#customer-sign-up}
+### Registrazione cliente {#customer-sign-up}
 
-Spesso è necessario iscriversi perché l&#39;acquirente abbia accesso al carrello. Questo richiede la registrazione (Crea account) in modo che sia possibile creare un account specifico per il cliente.
+Spesso è necessaria l’iscrizione per consentire al cliente di accedere al carrello. È necessaria la registrazione (Crea account) per creare un account specifico per il cliente.
 
 ![chlimage_1-11](/help/sites-administering/assets/chlimage_1-11.png)
 
 >[!NOTE]
 >
->È supportato anche un carrello e un pagamento anonimi.
+>Sono supportati anche un carrello e un pagamento anonimi.
 
-### Accesso cliente {#customer-sign-in}
+### Accesso del cliente {#customer-sign-in}
 
-Dopo l&#39;iscrizione l&#39;acquirente può accedere con il proprio account in modo che le loro azioni possano essere monitorate e i loro ordini eseguiti.
+Dopo l’iscrizione, l’acquirente può effettuare l’accesso con il proprio account, in modo da monitorare le azioni e soddisfare gli ordini.
 
 ![chlimage_1-12](/help/sites-administering/assets/chlimage_1-12.png)
 
 ### Single Sign-On {#single-sign-on}
 
-È disponibile l’accesso Single Sign-On (SSO), in modo che gli autori siano noti sia nel sistema AEM che eCommerce senza dover effettuare l’accesso due volte.
+Viene fornito il Single Sign-On (SSO), in modo che gli autori siano noti sia nell’AEM che nel sistema e-Commerce senza dover accedere due volte.
 
 ### myAccount {#myaccount}
 
-I dati delle transazioni del motore eCommerce sono combinati con informazioni personali sull&#39;acquirente. AEM utilizza alcuni di questi dati come dati di profilo. L’azione di un modulo in AEM scrive le informazioni nel motore di eCommerce.
+I dati delle transazioni provenienti dal motore di eCommerce vengono combinati con le informazioni personali relative all’acquirente. L’AEM utilizza alcuni di questi dati come dati di profilo. L’azione di un modulo nell’AEM scrive le informazioni nuovamente sul motore di eCommerce.
 
-C&#39;è una pagina che ti consente di gestire facilmente le informazioni sul tuo account. Per accedervi, fai clic su **Il mio account** nella parte superiore di una pagina geometrixx, oppure passando a `/content/geometrixx-outdoors/en/user/account.html`.
+È disponibile una pagina che consente di gestire facilmente le informazioni sull’account. Puoi accedervi facendo clic su **Il mio account** nella parte superiore di una pagina geometrixx oppure passando a `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
 ### Rubrica {#address-book}
 
-Il tuo sito dovrà memorizzare una selezione di indirizzi; compresi consegna, fatturazione e indirizzi alternativi. È possibile implementarlo utilizzando moduli basati sul formato dell’indirizzo predefinito oppure utilizzando il componente Rubrica fornito da AEM.
+Il sito dovrà memorizzare una selezione di indirizzi, tra cui consegna, fatturazione e indirizzi alternativi. È possibile implementare questa funzionalità utilizzando moduli basati sul formato di indirizzo predefinito oppure utilizzando il componente Rubrica fornito dall&#39;AEM.
 
 Questo componente Rubrica consente di:
 
-* modificare gli indirizzi nel libro
-* selezionare un indirizzo dal registro per l&#39;indirizzo di spedizione
-* selezionare un indirizzo dal registro per l&#39;indirizzo di fatturazione
+* modifica indirizzi nel registro
+* seleziona un indirizzo dalla rubrica per l&#39;indirizzo di spedizione
+* seleziona un indirizzo dalla rubrica per l&#39;indirizzo di fatturazione
 
-È possibile scegliere quale indirizzo si desidera impostare come predefinito.
+È possibile scegliere l&#39;indirizzo predefinito desiderato.
 
-Il componente Rubrica è raggiungibile dal **Il mio account** facendo clic su **Rubrica** o passando a `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+Il componente Rubrica è raggiungibile dal **Il mio account** pagina facendo clic su **Rubrica** o navigando su `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
-Puoi fare clic su **Aggiungi nuovo indirizzo..** per aggiungere un nuovo indirizzo nella rubrica. Apre un modulo che è possibile compilare e quindi fai clic su **Aggiungi indirizzo**.
+Puoi fare clic su **Aggiungi nuovo indirizzo...** per aggiungere un nuovo indirizzo nella rubrica. Verrà aperto un modulo che sarà possibile compilare e quindi fare clic su **Aggiungi indirizzo**.
 
 >[!NOTE]
 >
->È possibile inserire più indirizzi nella Rubrica.
+>È possibile immettere più indirizzi nella Rubrica.
 
-La Rubrica viene utilizzata per l&#39;estrazione del carrello:
+La Rubrica viene utilizzata per il pagamento del carrello:
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
 Gli indirizzi vengono mantenuti di seguito `user_home/profile/addresses`.
-Per esempio, per Alison Parker, sarebbe sotto /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
+Ad esempio, per Alison Parker, si troverebbe in /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
 
-Puoi scegliere l’indirizzo che desideri come impostazione predefinita. Queste informazioni vengono mantenute nel profilo dell’acquirente anziché con l’indirizzo. Proprietà profilo `address.default` viene impostato con il percorso dell&#39;indirizzo selezionato per il valore.
+Puoi scegliere l’indirizzo predefinito; queste informazioni vengono mantenute nel profilo dell’acquirente invece che con l’indirizzo. Proprietà profilo `address.default` viene impostato con il percorso dell’indirizzo selezionato per il valore.
 
-### Prezzi specifici per il cliente {#customer-specific-pricing}
+### Prezzi specifici del cliente {#customer-specific-pricing}
 
-Il motore eCommerce utilizza il contesto (essenzialmente le informazioni dell’acquirente) per determinare il prezzo che tiene, quindi fornire le informazioni corrette a AEM.
+Il motore di eCommerce utilizza il contesto (essenzialmente le informazioni relative all’acquirente) per determinare il prezzo che detiene, quindi fornisce le informazioni corrette all’AEM.
 
 ## Carrello e ordini {#shopping-cart-and-orders}
 
-Quando si effettua lo shopping, l&#39;acquirente sfoglia le pagine dei prodotti e seleziona gli articoli da posizionare nel carrello. Quando procedono al pagamento, è possibile inserire un ordine.
+Durante l’acquisto, l’acquirente sfoglia le pagine dei prodotti e seleziona gli articoli da inserire nel carrello. Quando procedono al pagamento, è possibile effettuare un ordine.
 
 ### Acquirenti anonimi {#anonymous-shoppers}
 
@@ -684,11 +684,11 @@ Un cliente anonimo può:
 
 * Visualizza prodotti
 * Aggiungi prodotti al carrello
-* Esegui il pagamento per inserire l&#39;ordine
+* Esegui il pagamento per effettuare l&#39;ordine
 
 >[!NOTE]
 >
->A seconda della configurazione delle informazioni sull’indirizzo dell’istanza o della registrazione del cliente, potrebbe essere necessario prima del pagamento.
+>A seconda della configurazione delle informazioni sull’indirizzo dell’istanza, o della registrazione del cliente, potrebbe essere necessario prima dell’estrazione.
 
 ### Acquirenti registrati {#registered-shoppers}
 
@@ -697,43 +697,43 @@ Un cliente registrato può:
 * Accedi al loro account
 * Visualizza prodotti
 * Aggiungi prodotti al carrello
-* Esegui il pagamento per inserire l&#39;ordine
-* Visualizzare e tenere traccia degli ordini precedenti
+* Esegui il pagamento per effettuare l&#39;ordine
+* Visualizza e tiene traccia degli ordini precedenti
 
-### Panoramica dei contenuti del carrello acquisti {#shopping-cart-content-overview}
+### Panoramica contenuti carrello {#shopping-cart-content-overview}
 
-Il carrello offre:
+Il carrello fornisce:
 
 * panoramica degli elementi selezionati
 * collegamenti alle pagine dei prodotti per gli elementi selezionati
 * la capacità di:
 
-   * aggiorna il numero/la quantità dei singoli articoli
+   * aggiorna il numero/quantità dei singoli articoli
    * rimuovere singoli elementi
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
 Il carrello viene salvato in base al motore utilizzato:
 
-* AEM generico memorizza il carrello in un cookie.
-* Alcuni motori di e-commerce possono memorizzare il carrello in una sessione.
+* Un generico AEM memorizza il carrello in un cookie.
+* Alcuni motori di eCommerce possono memorizzare il carrello in una sessione.
 
-In entrambi i casi, gli elementi rimangono nel carrello (e possono essere ripristinati) attraverso l&#39;accesso/disconnessione (ma solo sulla stessa macchina/browser). Esempio:
+In entrambi i casi, gli elementi rimangono nel carrello (e possono essere ripristinati) durante l’accesso o la disconnessione (ma solo sullo stesso computer/browser). Ad esempio:
 
-* naviga come `anonymous` e aggiungere prodotti al carrello
-* accedi come `Allison Parker` - il suo carrello è vuoto
+* sfoglia come `anonymous` e aggiungi prodotti al carrello
+* accedi come `Allison Parker` - il carrello è vuoto
 * aggiungi prodotti al carrello
-* disconnettiti - il carrello mostrerà i prodotti per `anonymous`
+* disconnetti: il carrello mostra i prodotti per `anonymous`
 
 * accedi di nuovo come `Allison Parker` - i suoi prodotti sono stati ripristinati
 
 >[!NOTE]
 >
->Un carrello anonimo può essere ripristinato solo sulla stessa macchina/browser.
+>Un carrello anonimo può essere ripristinato solo sullo stesso computer/browser.
 
 >[!NOTE]
 >
->Non è consigliabile testare il ripristino del contenuto del carrello con il `admin` , in quanto ciò può entrare in conflitto con `admin` conto del motore eCommerce (ad esempio hybris).
+>Si sconsiglia di testare il ripristino del contenuto del carrello con `admin` , in quanto potrebbe entrare in conflitto con `admin` conto del motore di eCommerce (ad esempio hybris).
 
 >[!NOTE]
 >
@@ -743,7 +743,7 @@ Prima del pagamento, le variazioni di prezzo vengono riportate (in entrambi i si
 
 ### Informazioni ordine {#order-information}
 
-A seconda delle informazioni di implementazione relative a un ordine nel motore eCommerce o AEM, queste informazioni vengono rese da AEM.
+A seconda delle informazioni di implementazione relative a un ordine che si trovano nel motore di eCommerce o nell’AEM, tali informazioni vengono visualizzate dall’AEM.
 
 Vengono memorizzate diverse informazioni, tra cui:
 
@@ -753,43 +753,43 @@ Vengono memorizzate diverse informazioni, tra cui:
 
 * **Inserito**
 
-   Data in cui è stato effettuato l’ordine.
+   La data in cui è stato effettuato l’ordine.
 
 * **Stato**
 
-   lo stato dell&#39;ordine; ad esempio, Spedito.
+   Stato dell&#39;ordine, ad esempio Spedito.
 
 * **Valuta**
 
-   La valuta dell&#39;ordine.
+   Valuta dell&#39;ordine.
 
 * **Elementi contenuto**
 
-   Elenco degli elementi ordinati.
+   Un elenco di elementi ordinati.
 
 * **Subtotale**
 
-   Costo totale degli articoli ordinati.
+   Il costo totale degli articoli ordinati.
 
 * **Imposte**
 
-   Importo delle eventuali imposte dovute sull&#39;ordine.
+   L’importo di eventuali imposte dovute sull’ordine.
 
 * **Spedizione**
 
-   Costi di spedizione.
+   Spese di spedizione.
 
 * **Totale**
 
-   il valore totale dell&#39;ordine; oggetti ordinati, tasse e spedizione.
+   Valore totale dell&#39;ordine: articoli ordinati, imposte e spedizioni.
 
 * **Indirizzo di fatturazione**
 
-   Indirizzo a cui deve essere inviata la fattura.
+   Indirizzo a cui inviare la fattura.
 
 * **Token di pagamento**
 
-   Metodo di pagamento.
+   Il metodo di pagamento.
 
 * **Stato dei pagamenti**
 
@@ -797,11 +797,11 @@ Vengono memorizzate diverse informazioni, tra cui:
 
 * **Indirizzo di spedizione**
 
-   L&#39;indirizzo al quale le merci devono essere spedite.
+   L’indirizzo a cui devono essere spedite le merci.
 
 * **Metodo di spedizione**
 
-   Il metodo di spedizione; ad esempio terra, mare o aria.
+   Il metodo di spedizione, ad esempio terra, mare o aria.
 
 * **Numero di tracciamento**
 
@@ -809,61 +809,61 @@ Vengono memorizzate diverse informazioni, tra cui:
 
 * **Collegamento per tracciamento**
 
-   Collegamento utilizzato per tenere traccia dell’ordine durante la spedizione.
+   Collegamento utilizzato per tenere traccia dell&#39;ordine durante la spedizione.
 
 >[!NOTE]
 >
->I campi utilizzati nella procedura guidata per la creazione dell’ordine dipendono dal fatto che per la posizione sia stato definito uno scaffolding ottimizzato per il tocco. Nell’esempio generico, questo è disponibile all’indirizzo:
+>I campi utilizzati nella procedura guidata Crea ordine dipendono dall’esistenza di uno scaffolding ottimizzato per il tocco definito per la posizione. Nell’esempio generico, il codice si trova in:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
-Quando l’ordine viene mantenuto all’interno AEM console Ordine, per ogni ordine viene visualizzato quanto segue:
+Quando l’ordine viene mantenuto all’interno di AEM, la console Ordine mostra quanto segue per ogni ordine:
 
-* il numero di elementi nel carrello
-* il valore totale dell&#39;ordine
-* quando è stato effettuato l&#39;ordine
+* il numero di articoli nel carrello
+* il valore totale dell’ordine
+* quando è stato effettuato l’ordine
 * lo stato
 
 ![chlimage_1-16](/help/sites-administering/assets/chlimage_1-16.png)
 
-### Tracciamento degli ordini {#order-tracking}
+### Tracciamento ordine {#order-tracking}
 
-Dopo aver effettuato un ordine, gli acquirenti spesso ritornano a:
+Dopo aver effettuato un ordine, gli acquirenti spesso tornano a:
 
-* Controlla lo stato del loro ordine
-* Rimuovere i prodotti dall&#39;ordine
-* Aggiungi prodotti all’ordine
+* Verifica lo stato del loro ordine
+* Rimuovi prodotti dall&#39;ordine
+* Aggiungi prodotti all&#39;ordine
 
-Dopo aver ricevuto la consegna dell&#39;ordine, gli acquirenti possono anche voler visualizzare la cronologia degli ordini effettuati in un periodo di tempo.
+Dopo aver ricevuto la consegna dell’ordine, gli acquirenti possono anche voler visualizzare la cronologia degli ordini effettuati in un determinato periodo di tempo.
 
-L’evasione e il tracciamento degli ordini sono in genere gestiti dal motore eCommerce. Le informazioni possono essere visualizzate AEM utilizzando il componente Cronologia ordini , che mostra tutti i dettagli rilevanti, inclusi i voucher e le promozioni applicate. Esempio:
+L’evasione e il tracciamento degli ordini sono in genere gestiti dal motore di eCommerce. Le informazioni possono essere visualizzate dall’AEM utilizzando il componente Cronologia ordini, che mostra tutti i dettagli rilevanti, inclusi i voucher e le promozioni applicati. Ad esempio:
 
 ![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 
 ## Pagamento {#checkout}
 
-L’estrazione è implementata con moduli AEM standard. Questo consente al responsabile marketing di personalizzare l’esperienza con i contenuti di marketing.
+Il checkout è implementato con i moduli standard per l’AEM. Questo consente al responsabile marketing di personalizzare l’esperienza con i contenuti di marketing.
 
-L’eCommerce gestisce quindi il processo di pagamento con l’input dei moduli di AEM.
+L’eCommerce gestisce quindi il processo di pagamento con l’input dei moduli AEM.
 
 ### Sicurezza dei pagamenti {#payment-security}
 
-I dettagli di pagamento, comprese le informazioni sulla carta di credito, sono spesso gestiti dal motore di eCommerce. AEM inoltrare tali informazioni transazionali al motore (da dove vengono poi inoltrate a un servizio di elaborazione dei pagamenti).
+I dettagli del pagamento, comprese le informazioni sulla carta di credito, sono spesso gestiti dal motore di eCommerce. L&#39;AEM inoltra tali informazioni transazionali al motore (dal quale le inoltra poi a un servizio di elaborazione dei pagamenti).
 
 È possibile ottenere la conformità PCI (Payment Card Industry).
 
-### Conferma dell&#39;ordine {#confirmation-of-order}
+### Conferma dell’ordine {#confirmation-of-order}
 
-L’ordine viene confermato sullo schermo e può essere monitorato con [tracciamento degli ordini](#order-tracking).
+L&#39;ordine viene confermato sullo schermo e può essere tracciato con [tracciamento degli ordini](#order-tracking).
 
 ## Ricerca {#search-features}
 
 ![chlimage_1-18](/help/sites-administering/assets/chlimage_1-18.png)
 
-Poiché AEM utilizza pagine standard per i prodotti, puoi utilizzare il componente di ricerca standard per creare una pagina di ricerca.
+Poiché l’AEM utilizza pagine standard per i prodotti, puoi utilizzare il componente di ricerca standard per creare una pagina di ricerca.
 
-Se hai bisogno di un’implementazione più completa, puoi:
+Se hai bisogno di un’implementazione più completa, puoi effettuare le seguenti operazioni:
 
-* Estendi il componente di ricerca predefinito con la funzionalità desiderata.
-* Implementa il metodo di ricerca nel tuo `CommerceService` quindi utilizza il componente di ricerca e-commerce nella pagina di ricerca.
+* Estendi il componente di ricerca predefinito con la funzionalità necessaria.
+* Implementare il metodo di ricerca nel `CommerceService` e quindi utilizza il componente di ricerca eCommerce nella pagina di ricerca.
 
-Quando utilizzi un motore di ricerca e-commerce, l’API di ricerca e-commerce può essere completamente implementata nella soluzione motore di e-commerce, in modo da poter utilizzare il componente di ricerca e-commerce fornito come standard. La ricerca sfaccettata consente di cercare JCR e/o il motore:
+Quando utilizzi un motore di eCommerce, l’API di ricerca di eCommerce può essere completamente implementata nella soluzione del motore di eCommerce, in modo da poter utilizzare il componente di ricerca di eCommerce fornito come strumento pronto all’uso. La ricerca con facet consente di cercare in JCR e/o nel motore:

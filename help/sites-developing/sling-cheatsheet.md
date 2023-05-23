@@ -19,6 +19,6 @@ ht-degree: 13%
 
 # Guida di riferimento rapido per Sling{#sling-cheatsheet}
 
-![Comprensione della risoluzione degli script Apache Sling.](assets/sling-cheatsheet-01.png)
+![Informazioni sulla risoluzione dello script Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Utilizzando SlingPostServlet - questo è il gestore predefinito per le richieste POST; può fare quasi qualsiasi cosa.](assets/sling-cheatsheet-02.png)
+![Utilizzo di SlingPostServlet: questo è il gestore predefinito per le richieste POST; può eseguire quasi tutte le operazioni.](assets/sling-cheatsheet-02.png)

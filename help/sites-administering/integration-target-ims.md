@@ -11,16 +11,16 @@ ht-degree: 55%
 
 # Integrazione con Adobe Target tramite IMS{#integration-with-adobe-target-using-ims}
 
-L’integrazione di AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System) tramite la console Adobe Developer.
+L’integrazione dell’AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System) tramite la console Adobe Developer.
 
 >[!NOTE]
 >
->Il supporto per l’API Adobe Target Standard è stato introdotto nella AEM 6.5. L’API di Target Standard utilizza l’autenticazione IMS.
+>Il supporto per l’API Adobe Target Standard è una novità dell’AEM 6.5. L’API di Target Standard utilizza l’autenticazione IMS.
 >
->L’utilizzo dell’API Adobe Target Classic in AEM è ancora supportato per la compatibilità con le versioni precedenti. La [L’API di Target Classic utilizza l’autenticazione delle credenziali utente](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+>L’utilizzo dell’API classica di Adobe Target nell’AEM è ancora supportato per la compatibilità con le versioni precedenti. Il [L’API di Target Classic utilizza l’autenticazione delle credenziali utente](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
 >La selezione API è guidata dal metodo di autenticazione utilizzato per l’integrazione AEM/Target.
->Vedi anche [ID tenant e codice client](#tenant-client) sezione .
+>Consulta anche [ID tenant e codice client](#tenant-client) sezione.
 
 ## Prerequisiti {#prerequisites}
 
@@ -33,7 +33,7 @@ Prima di iniziare questa procedura:
    * Adobe Target e
    * Adobe IMS (Identity Management System)
 
-* L’amministratore di sistema della tua organizzazione deve utilizzare l’Admin Console per aggiungere gli sviluppatori necessari nella tua organizzazione ai profili di prodotto pertinenti.
+* L’amministratore di sistema della tua organizzazione deve utilizzare l’Admin Console per aggiungere gli sviluppatori richiesti all’interno dell’organizzazione ai profili di prodotto pertinenti.
 
    * Questo fornisce agli sviluppatori specifici le autorizzazioni per abilitare le integrazioni all’interno della console Adobe Developer.
    * Per maggiori dettagli vedi [Gestire gli sviluppatori](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
@@ -62,7 +62,7 @@ La prima fase consiste nel creare una configurazione IMS in AEM e generare la ch
 
 ## Configurazione di IMS per l’integrazione di Adobe Target con AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Utilizzando la console Adobe Developer è necessario creare un progetto (integrazione) con Adobe Target da utilizzare, quindi assegnare i privilegi richiesti.
+Utilizzando la console Adobe Developer è necessario creare un progetto (integrazione) con Adobe Target che verrà utilizzato dall’AEM, quindi assegnare i privilegi richiesti.
 
 ### Creazione del progetto {#creating-the-project}
 
@@ -88,7 +88,7 @@ Apri Adobe Developer Console per creare un progetto con Adobe Target che AEM uti
 
    >[!NOTE]
    >
-   >Se sei abbonato a Adobe Target ma non lo vedi nell’elenco, controlla la [Prerequisiti](#prerequisites).
+   >Se sei abbonato a Adobe Target ma non lo vedi nell’elenco, controlla nel [Prerequisiti](#prerequisites).
 
    ![](assets/integration-target-io-12.png)
 
@@ -154,7 +154,7 @@ Alcune di queste sono necessarie per completare l’integrazione di Adobe Target
 
 ## Completamento della configurazione IMS in AEM {#completing-the-ims-configuration-in-aem}
 
-Torna a AEM puoi completare la configurazione IMS aggiungendo i valori richiesti dall’integrazione della console Adobe Developer per Target:
+Tornando a AEM puoi completare la configurazione IMS aggiungendo i valori richiesti dall’integrazione della console Adobe Developer per Target:
 
 1. Torna a [Configurazione IMS aperta in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Seleziona **Avanti**.
@@ -163,8 +163,8 @@ Torna a AEM puoi completare la configurazione IMS aggiungendo i valori richiesti
 
    * **Titolo**: testo.
    * **Server di autorizzazione**: copia/incolla questo dalla riga `aud` della sezione seguente del **Payload**, ad esempio `https://ims-na1.adobelogin.com` nell’esempio seguente
-   * **Chiave API**: Copia questo da [Panoramica](#details-stored-for-the-ims-integration-project) sezione
-   * **Segreto client**: Genera questo in [Panoramica](#details-stored-for-the-ims-integration-project) sezione e copia
+   * **Chiave API**: copia da [Panoramica](#details-stored-for-the-ims-integration-project) sezione
+   * **Segreto client**: generalo in [Panoramica](#details-stored-for-the-ims-integration-project) sezione e copia
    * **Payload**: copialo dalla sezione [Genera JWT](#details-stored-for-the-ims-integration-project)
 
    ![Configurazione account tecnico](assets/integrate-target-io-10.png)
@@ -197,67 +197,67 @@ Per confermare che la configurazione funziona come previsto:
 
    ![](assets/integrate-target-io-13.png)
 
-## Configurazione dell’Cloud Service Adobe Target {#configuring-the-adobe-target-cloud-service}
+## Configurazione del Cloud Service Adobe Target {#configuring-the-adobe-target-cloud-service}
 
 È ora possibile fare riferimento alla configurazione affinché un Cloud Service utilizzi l’API di Target Standard:
 
-1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Services** sezione , seleziona **Cloud Services legacy**.
+1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Services** sezione, seleziona **Cloud Services legacy**.
 1. Scorri verso il basso fino a **Adobe Target** e seleziona **Configura ora**.
 
-   La **Crea configurazione** si aprirà la finestra di dialogo .
+   Il **Crea configurazione** viene aperta una finestra di dialogo.
 
-1. Inserisci un **Titolo** e, se volete, un **Nome** (se lasciato vuoto, verrà generato dal titolo).
+1. Immetti un **Titolo** e, se lo desideri, un **Nome** (se lasciato vuoto, verrà generato dal titolo).
 
-   È inoltre possibile selezionare il modello richiesto (se sono disponibili più modelli).
+   Puoi anche selezionare il modello richiesto (se ne è disponibile più di uno).
 
 1. Conferma con **Crea**.
 
-   La **Modifica componente** si aprirà la finestra di dialogo .
+   Il **Modifica componente** viene aperta una finestra di dialogo.
 
-1. Immetti i dettagli nella **Impostazioni di Adobe Target** scheda:
+1. Inserisci i dettagli in **Impostazioni Adobe Target** scheda:
 
    * **Autenticazione**: IMS
 
-   * **ID tenant**: l’ID tenant di Adobe IMS. Vedi anche [ID tenant e codice client](#tenant-client) sezione .
+   * **ID tenant**: l’ID tenant di Adobe IMS. Consulta anche [ID tenant e codice client](#tenant-client) sezione.
 
       >[!NOTE]
       >
-      >Per IMS questo valore deve essere tratto da Target stesso. Puoi accedere a Target ed estrarre l’ID tenant dall’URL.
+      >Per IMS questo valore deve essere preso da Target stesso. Puoi accedere a Target ed estrarre l’ID tenant dall’URL.
       >
       >Ad esempio, se l’URL è:
       >
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
-      >Poi userebbe `yourtenantid`.
+      >A quel punto si utilizzerà `yourtenantid`.
 
-   * **Codice client**: Consulta la sezione [ID tenant e codice client](#tenant-client) sezione .
+   * **Codice client**: consulta [ID tenant e codice client](#tenant-client) sezione.
 
    * **Configurazione IMS**: seleziona il nome della configurazione IMS
 
    * **Tipo di API**: REST
 
-   * **Configurazione A4T Analytics Cloud**: seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se la configurazione cloud non viene visualizzata, consulta la nota in [Configurazione della configurazione di A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **Configurazione A4T Analytics Cloud**: seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se non vedi la configurazione cloud, vedi la nota in [Configurazione della configurazione di A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-   * **Utilizzare targeting accurato**: Per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
+   * **Utilizza il targeting accurato**: per impostazione predefinita questa casella di controllo è selezionata. Se questa opzione è selezionata, la configurazione del servizio cloud attenderà il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
 
-   * **Sincronizzare segmenti da Adobe Target**: Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Nota che il termine AEM “segmento” è equivalente a “pubblico” in Target.
+   * **Sincronizzare i segmenti da Adobe Target**: seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Devi selezionare questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi sempre utilizzare i segmenti da Target. Nota che il termine AEM “segmento” è equivalente a “pubblico” in Target.
 
-   * **Libreria client**: Seleziona se desideri la libreria client AT.js o mbox.js (obsoleto).
+   * **Libreria client**: seleziona se desideri la libreria client AT.js o mbox.js (obsoleto).
 
-   * **Utilizza Tag Management System per distribuire la libreria client**: Utilizza DTM (obsoleto), Adobe Launch o qualsiasi altro sistema di gestione dei tag.
+   * **Utilizza Tag Management System per distribuire la libreria client**: utilizza DTM (obsoleto), Adobe Launch o qualsiasi altro sistema di gestione dei tag.
 
-   * **AT.js personalizzato**: Lascia vuoto se hai selezionato la casella Tag Management o per utilizzare il file AT.js predefinito. In alternativa, carica il tuo AT.js personalizzato. Viene visualizzato solo se è stato selezionato AT.js.
+   * **AT.js personalizzato**: lascia vuoto se hai selezionato la casella Tag Management o per utilizzare il valore predefinito AT.js. In alternativa, carica il tuo file AT.js personalizzato. Viene visualizzato solo se avete selezionato AT.js.
    >[!NOTE]
    >
-   >[Configurazione di un Cloud Service per l’utilizzo dell’API di Target Classic](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) è stato dichiarato obsoleto (utilizza la scheda Impostazioni di Adobe Recommendations ).
+   >[Configurazione di un Cloud Service per l’utilizzo dell’API di Target Classic](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) è stato dichiarato obsoleto (utilizza la scheda Impostazioni di Adobe Recommendations).
 
-1. Fai clic su **Connettersi a Target** per inizializzare la connessione con Adobe Target.
+1. Clic **Connetti a Target** per inizializzare la connessione ad Adobe Target.
 
    Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita.**
 
 1. Seleziona **OK** sul messaggio, seguito da **OK** nella finestra di dialogo per confermare la configurazione.
 
-1. Ora puoi procedere con [Aggiunta di un framework di Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) per configurare i parametri ContextHub o di ClientContext che verranno inviati a Target. Questo potrebbe non essere necessario per esportare AEM frammenti esperienza in Target.
+1. Ora puoi passare a [Aggiunta di un framework Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) per configurare i parametri ContextHub o ClientContext che verranno inviati a Target. Tieni presente che questo potrebbe non essere necessario per esportare i frammenti esperienza AEM in Target.
 
 ### ID tenant e codice client {#tenant-client}
 
@@ -274,7 +274,7 @@ In entrambi i casi, tieni presente che:
 * Hai la possibilità di modificare il set di ID tenant predefinito.
 * Di conseguenza, le chiamate di backend a Target saranno basate sull’ID tenant e le chiamate lato client a Target saranno basate sul codice client.
 
-Come indicato in precedenza, il primo caso è il più comune per AEM 6.5. In entrambi i casi, assicurati **entrambi** i campi contengono le informazioni corrette a seconda dei requisiti.
+Come indicato in precedenza, il primo caso è il più comune per AEM 6.5. In entrambi i casi, assicurati che **entrambi** I campi contengono le informazioni corrette a seconda delle tue esigenze.
 
 >[!NOTE]
 >

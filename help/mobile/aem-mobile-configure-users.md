@@ -1,6 +1,6 @@
 ---
-title: Configurazione di utenti e gruppi di utenti
-description: Segui questa pagina per scoprire i ruoli utente e come configurare utenti e gruppi per supportare la creazione e la gestione dell’app mobile On-Demand Services.
+title: Configurare utenti e gruppi di utenti
+description: Segui questa pagina per comprendere i ruoli utente e come configurare utenti e gruppi per supportare l’authoring e la gestione dell’app Mobile On-Demand Services.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
@@ -19,94 +19,94 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Questo capitolo descrive i ruoli utente e come configurare utenti e gruppi per supportare la creazione e la gestione delle app mobili.
+Questo capitolo descrive i ruoli utente e le modalità di configurazione di utenti e gruppi per supportare l’authoring e la gestione delle app mobili.
 
-## Utenti di applicazioni e amministrazione di gruppi AEM Mobile {#aem-mobile-application-users-and-group-administration}
+## Utenti dell’applicazione AEM Mobile e amministrazione dei gruppi {#aem-mobile-application-users-and-group-administration}
 
-### Autori del contenuto dell&#39;applicazione AEM Mobile (gruppo autore dell&#39;app) {#aem-mobile-application-content-authors-app-author-group}
+### Autori di contenuti di applicazioni AEM Mobile (gruppo app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-I membri del gruppo di autori dell’app sono responsabili della creazione AEM contenuto dell’app mobile, compresi pagine, testo, immagini e video.
+I membri del gruppo di authoring delle app sono responsabili dell’authoring dei contenuti delle app mobili AEM, inclusi pagine, testo, immagini e video.
 
-#### Configurazione del gruppo - app-authors {#group-configuration-app-authors}
+#### Configurazione del gruppo - autori-app {#group-configuration-app-authors}
 
-1. Crea un nuovo gruppo di utenti denominato &quot;app-authors&quot;:
+1. Crea un nuovo gruppo di utenti denominato, &quot;app-authors&quot;:
 
    Passa all’Admin Console utente: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
-   Dall’interno della console dei gruppi di utenti, seleziona il pulsante &quot;+&quot; per creare un gruppo.
+   Dall’interno della console del gruppo di utenti, seleziona il pulsante &quot;+&quot; per creare il gruppo.
 
-   Imposta l&#39;ID di questo gruppo su &#39;app-authors&#39; per indicare che si tratta di un tipo specifico di gruppo di utenti autore specifico per la creazione di applicazioni mobili all&#39;interno di AEM.
+   Imposta l’ID di questo gruppo su &quot;app-authors&quot; per indicare che si tratta di un tipo specifico di gruppo di utenti Author specifico per l’authoring di applicazioni mobili all’interno dell’AEM.
 
 1. Aggiungi membro al gruppo: Autori
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Ora che hai creato il gruppo di utenti app-authors, puoi aggiungere singoli membri del team a questo nuovo gruppo tramite [Admin Console utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Dopo aver creato il gruppo utenti autori app, puoi aggiungere singoli membri del gruppo a questo nuovo gruppo tramite [User Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Di seguito è possibile aggiungere AEM gruppo di autori di contenuti:
+1. Di seguito è riportato come aggiungere al gruppo di autori di contenuti AEM:
 
-   (Leggi) su
+   (Lettura) il
 
    * /app
    * /etc/clientlibs
    * /etc/designs
    * /etc/cloudservices/dps2015
 
-### Gruppo Amministratori applicazioni AEM Mobile (gruppo Amministratori app) {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile Application Administrators Group (gruppo app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-I membri del gruppo di amministratori dell&#39;app possono creare contenuti dell&#39;applicazione con le stesse autorizzazioni incluse con gli autori dell&#39;app **E** inoltre sono responsabili:
+I membri del gruppo app-admins possono creare contenuti dell’applicazione con le stesse autorizzazioni fornite agli autori delle app **E** sono inoltre responsabili di:
 
-* Staging, pubblicazione e cancellazione degli aggiornamenti OTA di ContentSync dell’applicazione
+* Gestione temporanea, pubblicazione e cancellazione dell&#39;applicazione ContentSync OTA updates
 
 >[!NOTE]
 >
->Le autorizzazioni determinano la disponibilità di alcune azioni dell&#39;utente nel Centro comandi AEM app.
+>Le autorizzazioni determinano la disponibilità di alcune azioni dell’utente nel Centro comandi app AEM.
 >
->Noterai che alcune opzioni non sono disponibili per gli autori delle app disponibili per gli amministratori delle app.
+>Noterai che alcune opzioni non sono disponibili per gli autori di app che sono disponibili per gli amministratori di app.
 
-### Configurazione del gruppo - amministratori delle app {#group-configuration-app-admins}
+### Configurazione del gruppo - app-admins {#group-configuration-app-admins}
 
 1. Crea un nuovo gruppo denominato app-admins.
-1. Aggiungi i seguenti gruppi al nuovo gruppo di amministratori dell&#39;app:
+1. Aggiungi i seguenti gruppi al nuovo gruppo app-admins:
 
    * content-authors
-   * utenti del flusso di lavoro
+   * workflow-users
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
    >[!NOTE]
    >
-   >gli utenti del flusso di lavoro sono tenuti a creare in remoto con il servizio PhoneGap Build
+   >gli utenti del flusso di lavoro devono creare in remoto con il servizio PhoneGap Build
 
-1. Passa a [Console Autorizzazioni](http://localhost:4502/useradmin) e aggiungi le autorizzazioni per amministrare cloudservices
+1. Accedi a [Console Autorizzazioni](http://localhost:4502/useradmin) e aggiungere le autorizzazioni per amministrare cloudservices
 
-   * (Lettura, modifica, creazione, eliminazione, replica) su /etc/cloudservices/mobileservizi
+   * (Lettura, modifica, creazione, eliminazione, replica) in /etc/cloudservices/mobileservices
 
-1. Nella stessa console Autorizzazioni, aggiungi le autorizzazioni per impostare, pubblicare e cancellare gli aggiornamenti dei contenuti delle app;
+1. Nella stessa console Autorizzazioni, aggiungi le autorizzazioni per staging, pubblicazione e cancellazione degli aggiornamenti dei contenuti dell’app;
 
-   * (Leggi, Modifica, Crea, Elimina, Replica) su /etc/packages/mobileapp
-   * (Leggi) su /var/contentsync
+   * (Lettura, modifica, creazione, eliminazione, replica) in /etc/packages/mobileapp
+   * (Lettura) su /var/contentsync
 
    >[!NOTE]
    >
-   >La replica del pacchetto viene utilizzata per pubblicare gli aggiornamenti dell’app dall’istanza dell’autore all’istanza di pubblicazione
+   >La replica dei pacchetti viene utilizzata per pubblicare gli aggiornamenti dell’app dall’istanza di authoring a quella di pubblicazione
 
    >[!CAUTION]
    >
-   >L&#39;accesso a /var/contentsync è negato a OOTB.
+   >Accesso negato a /var/contentsync OOTB.
    >
-   >Se si omette l&#39;autorizzazione READ, i pacchetti di aggiornamento vuoti vengono generati e replicati.
+   >Se si omette l’autorizzazione READ, è possibile che vengano generati e replicati pacchetti di aggiornamento vuoti.
 
-1. Aggiungi i membri del gruppo in base alle esigenze
+1. Aggiungi membri al gruppo in base alle esigenze
 1. Per esportare contenuto o caricare
 
-   * (Leggi) su /etc/contentsync per accedere ai modelli di esportazione
-   * (Leggi) su /var a per l&#39;attraversamento del percorso sulle letture
-   * (Leggi, Scrivi, Modifica, Elimina) su /var/contentsync per scrivere, leggere e pulire il contenuto di esportazione in cache di ContentSync
+   * (Lettura) su /etc/contentsync per accedere ai modelli di esportazione
+   * (Lettura) su /var a per l’attraversamento del percorso in lettura
+   * (Lettura, scrittura, modifica, eliminazione) su /var/contentsync per scrivere, leggere e pulire il contenuto esportato memorizzato nella cache di ContentSync
 
 ### Risorse aggiuntive {#additional-resources}
 

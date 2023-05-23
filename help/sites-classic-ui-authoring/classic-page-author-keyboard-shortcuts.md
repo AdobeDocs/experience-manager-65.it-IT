@@ -15,20 +15,20 @@ ht-degree: 21%
 
 ---
 
-# Scelte rapide da tastiera per la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
+# Scelte rapide da tastiera durante la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
 
 In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si [utilizzano le console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Nelle tabelle seguenti, per le combinazioni di tasti nel **Scelta rapida** In macOS, i tasti Ctrl e Comando funzionano.
+>Nelle tabelle seguenti, per le combinazioni di tasti nella **Scelta rapida** , i tasti Ctrl e Comando funzionano su macOS.
 
 >[!NOTE]
 >
 >Selezione multipla su un dispositivo desktop:
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
->* Mac: Comando+clic sui componenti richiesti.
+>* Mac: Cmd+fai clic sui componenti richiesti.
 >
 
 
@@ -69,12 +69,12 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Taglia i paragrafi selezionati.<strong><br /> Nota:</strong> Il paragrafo tagliato non viene rimosso finché non viene incollato nella nuova posizione.</td>
+   <td>Taglia i paragrafi selezionati.<strong><br /> Nota:</strong> Il paragrafo tagliato non scompare finché non viene incollato nella nuova posizione.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Incolla i paragrafi presenti negli Appunti.</td>
+   <td>Incolla i paragrafi dagli Appunti.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,12 +94,12 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forza il menu di scelta rapida predefinito (del browser).<br /> <strong>Nota:</strong> I menu di scelta rapida AEM sono disponibili solo nell’interfaccia classica.</td>
+   <td>Forza menu di scelta rapida predefinito (browser).<br /> <strong>Nota:</strong> I menu di scelta rapida dell’AEM sono disponibili solo nell’interfaccia classica.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Mostra la <a href="/help/sites-administering/client-context.md">contesto client</a>.</td>
+   <td>Mostra il <a href="/help/sites-administering/client-context.md">contesto client</a>.</td>
   </tr>
   <tr>
    <td>Editor Rich Text<br /> </td>
@@ -117,9 +117,9 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
    <td>Sottolineato</td>
   </tr>
   <tr>
-   <td>Content Finder - Casella di ricerca</td>
+   <td>Finder contenuti - Casella di ricerca</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>Attiva un elenco di suggerimenti. Necessario quando sono stati immessi troppi caratteri per attivare automaticamente l’elenco (questo accade quando sono stati immessi due o più caratteri).</td>
+   <td>Attiva un elenco di suggerimenti. Necessario se è stato immesso un numero insufficiente di caratteri per attivare automaticamente l’elenco (ciò si verifica quando sono stati immessi 2 o più caratteri).</td>
   </tr>
   <tr>
    <td> </td>
@@ -129,31 +129,31 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>left-arrow</code></strong><br /> (su un percorso suggerito)</td>
-   <td>Seleziona l’elemento e attiva i suggerimenti per i relativi predecessori (come negli elementi di pari livello dell’elemento padre).</td>
+   <td>Seleziona l’elemento e attiva i suggerimenti per i suoi predecessori (come negli elementi di pari livello dell’elemento padre).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Enter</code></strong><br /> (su un percorso suggerito)</td>
-   <td>Seleziona l’elemento e attiva la ricerca.</td>
+   <td>Seleziona un elemento e attiva la ricerca.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Esc</code></strong></td>
-   <td>Chiude il livello dei suggerimenti.</td>
+   <td>Chiudete il livello dei suggerimenti.</td>
   </tr>
   <tr>
    <td>Content Finder<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>Trascina le risorse, rilascia la destinazione desiderata.</p> <p>L'azione di rilascio produce un nuovo paragrafo; invece di sostituire la risorsa nella destinazione.</p> </td>
+   <td><p>Trascina le risorse, rilasciale sulla destinazione.</p> <p>L’azione di rilascio genera un nuovo paragrafo; anziché sostituire la risorsa nella destinazione.</p> </td>
   </tr>
  </tbody>
 </table>
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
-## Scelte rapide da tastiera per lo sviluppo {#keyboard-shortcuts-for-development}
+## Tasti di scelta rapida per lo sviluppo {#keyboard-shortcuts-for-development}
 
-Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponibili ulteriori scelte rapide da tastiera.
+Sono disponibili scelte rapide da tastiera aggiuntive per gli sviluppatori desktop quando utilizzano l’editor pagina.
 
 <table>
  <tbody>
@@ -164,8 +164,8 @@ Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponi
   </tr>
   <tr>
    <td>Modalità modifica</td>
-   <td>Imposta il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
-   <td>Per visualizzare le statistiche sui tempi di caricamento della pagina.</td>
+   <td>Imposta il seguente suffisso nell’URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Per visualizzare le statistiche di tempo per il caricamento della pagina.</td>
   </tr>
  </tbody>
 </table>

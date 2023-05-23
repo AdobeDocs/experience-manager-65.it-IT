@@ -1,6 +1,6 @@
 ---
-title: Usa il pacchetto dimostrativo per Assets Insights
-description: Utilizza il pacchetto demo per abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web.
+title: Usa pacchetto demo per Informazioni su risorse
+description: Utilizza il pacchetto demo per abilitare Adobe Assets Insights per acquisire dati da una pagina web e generarne di nuovi.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
@@ -12,27 +12,27 @@ ht-degree: 2%
 
 ---
 
-# Usa il pacchetto dimostrativo per Assets Insights {#using-demo-package-for-asset-insights}
+# Usa pacchetto demo per Informazioni su risorse {#using-demo-package-for-asset-insights}
 
-Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da e generare informazioni per una pagina web di esempio.
+Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da una pagina web di esempio e generarne di nuovi.
 
-## [!DNL Use Experience Manager Assets] Informazioni approfondite con una pagina web di esempio  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Informazioni con pagina web di esempio  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configurare Assets Insights utilizzando le istruzioni in [Configurazione di Assets Insights](configure-asset-insights.md).
-1. Scarica il pacchetto di risorse di esempio da qui e installa il pacchetto da CRXDE package manager.
+1. Configurare Assets Insights seguendo le istruzioni riportate in [Configurazione di Assets Insights](configure-asset-insights.md).
+1. Scarica il pacchetto di esempio Assets da qui sotto e installa il pacchetto da Gestione pacchetti CRXDE.
 
 [Ottieni file](assets/insightsdemo.zip)
 
-1. Scarica il file ZIP contenente la pagina web di esempio da qui sotto ed estrai sul tuo file system locale.
+1. Scarica il file ZIP contenente la pagina web di esempio dal basso ed estrai sul file system locale.
 
 [Ottieni file](assets/demosite.zip)
 
-1. Fare clic sulla pagina Web per aprirla nel browser Web.
+1. Fare clic sulla pagina Web per aprirla nel browser.
 
    >[!CAUTION]
    >
-   >La pagina web è configurata per caricare la risorsa dal server localhost . Nel caso in cui il server sia in esecuzione in un altro punto, cambia l&#39;indirizzo del server da localhost a indirizzo del server nel contenuto HTML della pagina web.
+   >La pagina web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione altrove, modifica l’indirizzo del server da localhost a indirizzo del server nel contenuto HTML della pagina web.
 
    >[!NOTE]
    >
-   >La pagina web esterna può essere [!DNL Experience Manager] stesso.
+   >La pagina web esterna può essere in [!DNL Experience Manager] stesso.

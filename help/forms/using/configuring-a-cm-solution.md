@@ -18,38 +18,38 @@ ht-degree: 1%
 
 # Configurazione di una soluzione di gestione della corrispondenza {#configuring-a-correspondence-management-solution}
 
-## Definizione dell’URL dell’istanza dell’autore per VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
+## Definizione dell’URL dell’istanza di authoring per VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
 
-Utilizza i seguenti passaggi per definire l’URL di un’istanza di authoring per il ripristino della versione dell’istanza di authoring:
+Per definire l’URL di un’istanza di authoring per il ripristino della versione dell’istanza di authoring, effettua le seguenti operazioni:
 
-1. Vai a *https://&lt;publishhost>:&lt;publishport>/lc/system/console/configMgr*. Accedi con le credenziali utente della console di gestione OSGi. Le credenziali predefinite sono amministratore/amministratore.
-1. Trova e fai clic sul pulsante **[!UICONTROL Modifica]** accanto all’icona **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** impostazione.
-1. In **[!UICONTROL URL autore VersionRestoreManager]** Specifica l&#39;URL dell&#39;istanza Author di VersionRestoreManager.
+1. Vai a *https://:&lt;publishhost>:&lt;publishport>/lc/system/console/configMgr*. Accedi con le credenziali utente di OSGi Management Console. Le credenziali predefinite sono amministratore/amministratore.
+1. Trova e fai clic su **[!UICONTROL Modifica]** accanto al simbolo **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** impostazione.
+1. In **[!UICONTROL URL autore VersionRestoreManager]** , specificare l&#39;URL dell&#39;istanza Author di VersionRestoreManager.
 
-   **stringa URL**:
+   **Stringa URL**:
 
    `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.VersionRestoreManager`
 
    >[!NOTE]
    >
-   >Se esistono più istanze dell&#39;autore (in cluster) davanti a un load balancer, specifica l&#39;URL del load balancer in **[!UICONTROL URL autore VersionRestoreManager]** campo .
+   >Se sono presenti più istanze di authoring (cluster) gestite da un load balancer, specifica l’URL del load balancer in **[!UICONTROL URL autore VersionRestoreManager]** campo.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-## Definizione dell’URL dell’istanza di pubblicazione per ActivationManagerImpl (public instance activation manager) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## Definizione dell’URL dell’istanza Publish per ActivationManagerImpl (public instance activation manager) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Segui questi passaggi per definire l’URL dell’istanza di pubblicazione per l’attivazione di un’istanza pubblica:
+Segui questi passaggi quando definisci l’URL dell’istanza Publish per il gestore dell’attivazione dell’istanza pubblica:
 
-1. Vai a *https://&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Accedi con le credenziali utente della console di gestione OSGi. Le credenziali predefinite sono amministratore/amministratore.
-1. Trova e fai clic sul pulsante **[!UICONTROL Modifica]** accanto all’icona **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** impostazione.
-1. In **[!UICONTROL URL pubblicazione di ActivationManager]** specifica l’URL per l’accesso all’istanza Publish ActivationManager. Puoi fornire i seguenti URL.
+1. Vai a *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Accedi con le credenziali utente di OSGi Management Console. Le credenziali predefinite sono amministratore/amministratore.
+1. Trova e fai clic su **[!UICONTROL Modifica]** accanto al simbolo **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** impostazione.
+1. In **[!UICONTROL URL di pubblicazione di ActivationManager]** , specificare l&#39;URL per accedere all&#39;istanza Publish ActivationManager. Puoi fornire i seguenti URL.
 
-   * **URL di bilanciamento del carico (consigliato)**: Fornisci l&#39;URL del load balancer, se disponi di un server web che agisce come load balancer davanti alla farm di pubblicazione (più istanze di pubblicazione non in cluster).
-   * **URL dell’istanza di pubblicazione**: Fornisci qualsiasi URL di istanza di pubblicazione, Se disponi di un’unica istanza di pubblicazione o il server web che precede la farm di pubblicazione non è accessibile dall’ambiente di authoring a causa di eventuali restrizioni. Nel caso in cui l’istanza di pubblicazione specificata sia inattiva, è presente un meccanismo di fallback da gestire dal lato dell’autore.
-   * **stringa URL**:
+   * **URL del load balancer (consigliato)**: specifica l’URL del load balancer, se davanti alla farm di pubblicazione (più istanze di pubblicazione non cluster) hai un server web che funge da load balancer.
+   * **URL istanza di pubblicazione**: specifica un URL per l’istanza di pubblicazione . Se disponi di una singola istanza di pubblicazione o il server web che precede la farm di pubblicazione non è accessibile dall’ambiente di authoring a causa di eventuali restrizioni. Se l’istanza di pubblicazione specificata non è disponibile, è disponibile un meccanismo di fallback da gestire dal lato dell’autore.
+   * **Stringa URL**:
 
       `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-Per ulteriori informazioni sulla configurazione della gestione della corrispondenza, consulta [Proprietà di configurazione della gestione della corrispondenza](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Per ulteriori informazioni sulla configurazione di Gestione della corrispondenza, consulta [Proprietà di configurazione di Gestione corrispondenza](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

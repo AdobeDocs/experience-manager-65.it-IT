@@ -1,6 +1,6 @@
 ---
 title: Cockpit prodotto
-description: Utilizzo di Product Cockpit
+description: Utilizzo della cabina di comando del prodotto
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
@@ -13,72 +13,72 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Il Product Cockpit offre una panoramica unificata dei cataloghi di prodotti collegati e dei contenuti associati. Tutti i contenuti associati dispongono di collegamenti per accedervi rapidamente dal cockpit.
+Il pannello di controllo prodotto fornisce una panoramica unificata dei cataloghi di prodotti collegati e dei contenuti associati. Tutto il contenuto associato dispone di collegamenti per accedervi rapidamente dalla cabina di pilotaggio.
 
-I dati dei prodotti in fase di staging includono qualsiasi mutazione futura, ad esempio nuove categorie, prodotti o proprietà aggiornate.
+I dati dei prodotti in staging includono qualsiasi mutazione futura, ad esempio nuove categorie, prodotti o proprietà aggiornate.
 
 >[!NOTE]
 >
->Il termine catalogo dei prodotti è intercambiabile con l&#39;archivio, la vista Store e espressioni simili di e-commerce.
+>Il termine catalogo prodotti è intercambiabile con il punto vendita, la vista store e espressioni simili.
 
 ## Configurazione {#configuration}
 
-I cataloghi di prodotti devono essere configurati in AEM. Vedi [configurazione di store e cataloghi](/help/commerce/cif/getting-started.md#catalog) per ulteriori informazioni.
+I cataloghi di prodotti devono essere configurati nell’AEM. Consulta [configurazione di store e cataloghi](/help/commerce/cif/getting-started.md#catalog) per ulteriori informazioni.
 
-L’abilitazione delle funzioni di catalogo in fase di staging richiede l’autenticazione. Vedi [Introduzione](/help/commerce/cif/getting-started.md) per ulteriori informazioni.
+L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Consulta [Guida introduttiva](/help/commerce/cif/getting-started.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
->Le funzioni del catalogo di staging sono disponibili solo con i connettori Adobe Commerce e di terze parti che supportano l’autenticazione basata sui token.
+>Le funzioni di catalogo in staging sono disponibili solo con Adobe Commerce e connettori di terze parti che supportano l’autenticazione basata su token.
 
-## Apertura del prodotto Cockpit {#opening-product-cockpit}
+## Apertura della cabina di comando del prodotto {#opening-product-cockpit}
 
-Il modo più semplice per accedere al Product Cockpit è tramite il menu &#39;Commerce&#39; AEM menu principale. È anche possibile utilizzare Omnisearch (ricerca di commercio) o aprire `https://<yourAEMInstance>/commerce.html`.
+Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale dell’AEM. È inoltre possibile utilizzare Omnisearch (ricerca per Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
 
-![menu AEM](/help/commerce/cif/assets/aem-menu.png)
+![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
-## Navigazione nei cataloghi di prodotti {#browsing-product-catalogs}
+## Esplorazione dei cataloghi di prodotti {#browsing-product-catalogs}
 
-Il Product Cockpit è organizzato in modo gerarchico seguendo la struttura del catalogo dei prodotti. Il primo livello mostra il livello di directory principale del catalogo di tutti i cataloghi di prodotti configurati, comprese le metadati del back-end di commerce.
+Il pannello di controllo Prodotto è organizzato in modo gerarchico seguendo la struttura del catalogo dei prodotti. Il primo livello mostra il livello principale del catalogo di tutti i cataloghi di prodotti configurati, comprese le metainformazioni del backend di e-commerce.
 
 ![Cataloghi configurati](/help/commerce/cif/assets/catalog-overview.png)
 
-Facendo clic su una categoria verranno caricati gli elementi secondari della categoria selezionata.
+Facendo clic su una categoria vengono caricati gli elementi secondari della categoria selezionata.
 
-![Categoria bambini](/help/commerce/cif/assets/catalog-category-children.png)
+![Elementi figlio categoria](/help/commerce/cif/assets/catalog-category-children.png)
 
-Se disponibile, facendo clic su un prodotto verranno caricate le varianti di prodotto.
+Facendo clic su un prodotto vengono caricate le varianti di prodotto, se disponibili.
 
-![Varianti di prodotto](/help/commerce/cif/assets/catalog-product-variation.png)
+![Varianti prodotto](/help/commerce/cif/assets/catalog-product-variation.png)
 
 >[!NOTE]
 >
->I dati del catalogo di prodotto in AEM sono dati recuperati in tempo reale tramite l’endpoint di e-commerce configurato. Nessun dato di catalogo prodotti archiviato in AEM.
+>I dati del catalogo dei prodotti nell’AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. Nessun dato del catalogo prodotti viene archiviato nell’AEM.
 
 ## Ricerca nei cataloghi di prodotti {#searching-product-catalog}
 
-Nella scheda filtro a sinistra è disponibile una ricerca full-text sull’intero catalogo dei prodotti per trovare rapidamente i prodotti.
+Nella scheda del filtro a sinistra è disponibile una ricerca full-text sull’intero catalogo dei prodotti per trovare rapidamente i prodotti.
 
 ![ricerca](/help/commerce/cif/assets/search-cockpit.png)
 
-## Navigazione nel catalogo dei prodotti in fase di sviluppo {#staged-product-catalogs}
+## Esplorazione del catalogo prodotti di staging {#staged-product-catalogs}
 
-Per impostazione predefinita, il cockpit prodotto mostra i dati del catalogo prodotti in tempo reale. Utilizzando &quot;STAGED CATALOG&quot; nella scheda filtro a sinistra, il catalogo prodotti verrà caricato per qualsiasi data selezionata.
+Per impostazione predefinita, la cabina di comando del prodotto mostra i dati live del catalogo dei prodotti. Se si utilizza il &quot;CATALOGO STAGNATO&quot; nella scheda del filtro a sinistra, il catalogo dei prodotti viene caricato per qualsiasi data selezionata.
 
-![catalogo in serie](/help/commerce/cif/assets/staged-cockpit.png)
+![catalogo di staging](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Proprietà catalogo prodotti {#catalog-properties}
 
-Facendo clic sull’icona delle proprietà di un prodotto o di una categoria si aprirà la vista delle proprietà dell’oggetto selezionato. Le proprietà aperte di una variante di prodotto sono uguali per aprire le proprietà principali del prodotto.
+Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria si aprirà la visualizzazione delle proprietà dell&#39;oggetto selezionato. Le proprietà aperte di una variante di prodotto sono uguali alle proprietà del prodotto principale.
 
 ### Schede Commerce {#tabs}
 
-Le schede generale e variante mostrano le proprietà di e-commerce predefinite provenienti dal back-end di e-commerce. Questi dati (incl. varianti) è un dato di sola lettura in AEM in quanto il sistema di record è il back-end commerce. La scheda variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
+Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (inclusi variants) è un dato di sola lettura in AEM in quanto il sistema di registrazione è il back-end commerciale. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
 
-![proprietà del catalogo](/help/commerce/cif/assets/catalog-properties.png)
+![proprietà catalogo](/help/commerce/cif/assets/catalog-properties.png)
 
-### Schede Contenuto AEM {#content-tabs}
+### Schede contenuto AEM {#content-tabs}
 
-Queste schede, raggruppate per tipi di contenuto AEM (Frammenti esperienza, Frammenti di contenuto, Risorse associate), mostrano AEM contenuto associato all’oggetto commerce. L’azione &quot;Visualizza dettagli&quot; apre una nuova scheda del browser con il contenuto selezionato.
+In queste schede, raggruppate per tipi di contenuto AEM (Frammenti di esperienza, Frammenti di contenuto, Risorse associate), viene visualizzato il contenuto AEM associato all’oggetto commerce. L&#39;azione &#39;Visualizza dettagli&#39; apre una nuova scheda del browser con il contenuto selezionato.
 
-![proprietà del contenuto](/help/commerce/cif/assets/content-properties.png)
+![proprietà contenuto](/help/commerce/cif/assets/content-properties.png)

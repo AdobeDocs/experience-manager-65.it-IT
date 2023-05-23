@@ -1,7 +1,7 @@
 ---
-title: Modelli di lettera di riferimento
+title: Modelli di lettere di riferimento
 seo-title: Reference letter templates
-description: AEM Forms fornisce modelli di layout per lettere di Gestione corrispondenza che è possibile utilizzare per creare rapidamente le lettere.
+description: AEM Forms fornisce modelli di layout lettere per Gestione corrispondenza che è possibile utilizzare per creare lettere in modo rapido.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -12,25 +12,25 @@ exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Modelli di lettera di riferimento {#reference-letter-templates}
+# Modelli di lettere di riferimento {#reference-letter-templates}
 
-In Gestione corrispondenza un modello di lettera contiene campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree target&quot; vuote per il posizionamento del contenuto.
+In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-La gestione della corrispondenza fornisce modelli di lettera nel [Pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). È possibile personalizzare i modelli in Designer in base alle esigenze aziendali e di branding. Il pacchetto include i seguenti modelli:
+Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). È possibile personalizzare i modelli in Designer in base alle proprie esigenze di branding e aziendali. Il pacchetto include i seguenti modelli:
 
-* Classica
-* Classic semplice
+* Classico
+* Classic Semplice
 * Bilanciato a sinistra
-* Equilibrato a destra
-* A sinistra
-* Visual Top
+* Bilanciato a destra
+* Visivo a sinistra
+* Visivo in alto
 * Visual Top - Classic
 
-Dopo aver installato il pacchetto, i modelli di layout (XDP) sono elencati nella cartella dei modelli nel seguente percorso:
+Dopo aver installato il pacchetto, i modelli di layout (XDP) sono elencati nella cartella modelli nel percorso seguente:
 
 `https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
@@ -41,62 +41,62 @@ Di seguito sono riportati i campi comuni in tutti i modelli di questo pacchetto:
 * Testo di chiusura
 * Testo firma
 
-![Tutti i modelli di lettera CM elencati](assets/templatescorrespondence.png)
+![Tutti i modelli di lettere CM elencati](assets/templatescorrespondence.png)
 
-Dopo l&#39;installazione del pacchetto AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES, i modelli sono elencati in template-folder
+Dopo aver installato il pacchetto AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES, i modelli sono elencati in templates-folder
 
-## Classica {#classic}
+## Classico {#classic}
 
-Con un logo in alto, modello Classic è adatto per una semplice lettera professionale.
+Con un logo nella parte superiore, il modello Classic è adatto per una semplice lettera professionale.
 
-![Classica](assets/classic.png)
+![classico](assets/classic.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Classic
 
-## Classic semplice {#classic-simple}
+## Classic Semplice {#classic-simple}
 
-Include campi per l’acquisizione del numero di telefono e dell’indirizzo e-mail. Un modello Classic Simple è simile al modello Classic, ma non contiene campi in cui è possibile inserire l’indirizzo del destinatario.
+Include campi per acquisire numero di telefono e indirizzo e-mail. Un modello Classic Simple è simile al modello Classic, ma non contiene campi in cui è possibile immettere l&#39;indirizzo del destinatario.
 
-![Frammento di informazioni di contatto](assets/classicsimple.png)
+![Frammento informazioni contatto](assets/classicsimple.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Classic Simple
 
 ## Bilanciato a sinistra {#balanced-left}
 
-Il modello Bilanciamento a sinistra include il logo a sinistra della lettera.
+Il modello Balanced Left include il logo a sinistra della lettera.
 
-![bilanciato](assets/balancedleft.png)
+![balancedleft](assets/balancedleft.png)
 
-Anteprima PDF di una lettera creata utilizzando il modello Bilanciato a sinistra
+Anteprima PDF di una lettera creata utilizzando il modello Balanced Left
 
-## Equilibrato a destra {#balanced-right}
+## Bilanciato a destra {#balanced-right}
 
-Il modello bilanciato a destra presenta il logo della società a sinistra e offre spazio per l’inserimento dell’indirizzo dei destinatari nella lettera stessa. Il modello Balancing Right include anche un piè di pagina che si rifà quando la lettera ha più pagine.
+Il modello Balanced Right presenta il logo aziendale a sinistra e consente di inserire l&#39;indirizzo del destinatario nella lettera. Il modello Bilanciato a destra include anche un piè di pagina che viene ridisposto quando la lettera contiene più pagine.
 
-![bilanciato](assets/balancedright.png)
+![bilanciato a destra](assets/balancedright.png)
 
-Anteprima PDF di una lettera creata utilizzando il modello Balancing Right
+Anteprima PDF di una lettera creata utilizzando il modello Bilanciato a destra
 
-## A sinistra {#visual-left}
+## Visivo a sinistra {#visual-left}
 
-Il modello a sinistra visivo ha una testa laterale a sinistra della pagina con il logo della società posizionato sulla testa laterale. Il modello Visual Left include un campo oggetto ma non un piè di pagina.
+Il modello Visual Left presenta un&#39;intestazione laterale a sinistra della pagina con il logo aziendale posizionato sopra l&#39;intestazione laterale. Il modello Visual Left contiene un campo oggetto ma nessun piè di pagina.
 
-![piano verticale](assets/visualleft.png)
+![visualleft](assets/visualleft.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Visual Left
 
-## Visual Top {#visual-top}
+## Visivo in alto {#visual-top}
 
-Il modello Visual Top ha un margine visivo nella parte superiore. Il modello Visual Top dispone di un campo per l&#39;immissione dell&#39;indirizzo del destinatario sulla pagina stessa. Nel modello Visual Top sono inclusi il campo oggetto e il piè di pagina che si rifendono per le lettere che si estendono su più pagine.
+Il modello Visual Top presenta un margine visivo nella parte superiore. Il modello Visual Top include un campo per l&#39;immissione dell&#39;indirizzo del destinatario nella pagina stessa. Il modello Visual Top include il campo dell&#39;oggetto e un piè di pagina che esegue il reflow per le lettere che si estendono a più pagine.
 
-![piano visivo](assets/visualtop.png)
+![visualtop](assets/visualtop.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Visual Top
 
 ## Visual Top - Classic {#visual-top-classic}
 
-Il modello Visual Top - Classic ha un&#39;intestazione sopra la pagina con il logo aziendale. Nel modello Visual Top - Classic è disponibile un campo per l&#39;immissione di un oggetto, ma senza piè di pagina.
+Il modello Visual Top - Classic ha un’intestazione nella parte superiore della pagina con il logo dell’azienda. Il modello Visual Top - Classic include un campo per l&#39;immissione di un oggetto ma non di un piè di pagina.
 
-![visaltopclassico](assets/visualtopclassic.png)
+![visualtopclassic](assets/visualtopclassic.png)
 
 Anteprima PDF di una lettera creata utilizzando il modello Visual Top - Classic

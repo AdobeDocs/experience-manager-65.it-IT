@@ -5,23 +5,23 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
-# Panoramica sulla versione di Commerce Integration Framework GitHub
+# Panoramica sulla versione GitHub di Commerce Integration Framework
 
 ## Panoramica dei requisiti di sistema
 
-Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF in uso o che intendi utilizzare in futuro.
+Esaminare i requisiti di sistema minimi nella tabella seguente per la versione CIF in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, schemi GraphQL Adobe Commerce 2.3.5 |
+| Componente aggiuntivo CIF | Minimo: schemi GraphQL di AEM 6.5.7, Adobe Commerce 2.3.5 |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Data di rilascio: Novembre 2021
+## Data di rilascio: novembre 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -39,7 +39,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Supporto per le carte regalo in AEM Storefront
 
-## Data di rilascio: Ottobre 2021
+## Data di rilascio: ottobre 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -49,17 +49,17 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-october}
 
-* Il componente aggiuntivo CIF supporta la versione più recente di Commerce v2.4.3 con nuove API e schemi di GraphQL
+* Il componente aggiuntivo CIF supporta la versione più recente di Commerce v2.4.3 con nuovi API e schemi di GraphQL
 
-* Gli autori possono aggiungere collegamenti alle pagine di prodotti e catalogo nei campi di testo mediante l’editor Rich Text. È stata aggiunta un’icona CIF alla barra degli strumenti dell’editor Rich Text che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
+* Gli autori possono aggiungere collegamenti alle pagine di prodotti e cataloghi nei campi di testo utilizzando l’editor Rich Text. Alla barra degli strumenti dell’editor Rich Text è stata aggiunta un’icona CIF che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
-* Il carrello e il pagamento a comparsa esistenti sono stati sostituiti da pagine dedicate AEM carrello e per il pagamento. I componenti di queste pagine vengono creati utilizzando i componenti di Adobe Commerce per funzioni estese
+* I carrelli e le pagine di pagamento pop-up esistenti sono stati sostituiti da carrelli e pagine di pagamento dedicati per l’AEM. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
 
-* I commercianti possono nascondere alcune categorie di catalogo dei prodotti nella navigazione utilizzando il backend Commerce . Il componente core di navigazione CIF rispetta la configurazione back-end di e-commerce &quot;include nel menu&quot; per mostrare/nascondere categorie nella navigazione
+* Gli esercenti possono nascondere determinate categorie del catalogo dei prodotti nella navigazione utilizzando il backend di Commerce. Il componente core di navigazione CIF rispetta la configurazione back-end di commerce &quot;includi nel menu&quot; per mostrare/nascondere le categorie nella navigazione
 
-* AEM Storefront Venia restituisce un errore HTTP 404 se la pagina di categoria o prodotto non è trovata
+* AEM Storefront Venia restituisce l’errore HTTP 404 se la pagina della categoria o del prodotto non è stata trovata
 
-## Data di rilascio: Settembre 2021
+## Data di rilascio: settembre 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -69,11 +69,11 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-september}
 
-* La nuova scheda &quot;contenuti commerce associati&quot; nell’editor Sites aumenta l’efficienza dell’autore grazie all’accesso rapido ai contenuti di prodotti AEM pertinenti per il contesto corrente
+* La nuova scheda &quot;Contenuto e-commerce associato&quot; nell’editor di Sites aumenta l’efficienza dell’autore grazie all’accesso rapido ai contenuti dei prodotti AEM pertinenti per il contesto corrente
 
-   ![Contenuto di e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
+   ![Contenuto e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
 
-* Interfaccia utente del selettore prodotti migliorata per una migliore esperienza utente, una maggiore efficienza e il supporto per cataloghi di prodotti complessi
+* È stata migliorata l’interfaccia utente di selezione dei prodotti per una migliore esperienza utente, maggiore efficienza e supporto per cataloghi di prodotti complessi
 
    ![Nuovo selettore prodotti](/help/assets/CIF/product-picker.png)
 
@@ -81,13 +81,13 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Correzioni di bug {#bug-fixes-september}
 
-* Lo scaricamento della cache del menu non funziona come previsto
+* Lo svuotamento della cache del menu non funziona come previsto
 
-* Errori JS durante AEM passaggio di distribuzione CS e quando non si utilizzano componenti lato client
+* Errori JS durante il passaggio di distribuzione di AEM CS e quando non si utilizzano componenti lato client
 
-* Impossibile creare la configurazione cloud CIF nelle cartelle con un nodo sling:configs
+* Impossibile creare la configurazione cloud CIF in cartelle che hanno un nodo sling:configs
 
-## Data di rilascio: Agosto 2021
+## Data di rilascio: agosto 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -97,23 +97,23 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-august}
 
-* Nuova interfaccia utente del selettore categorie per migliorare l’esperienza utente, aumentare l’efficienza e migliorare il supporto per cataloghi di prodotti complessi
+* Nuova interfaccia utente per il selettore delle categorie per migliorare l’esperienza utente, l’efficienza e il supporto per cataloghi di prodotti complessi
 
-   ![Selezione nuova categoria](/help/assets/CIF/category-picker.png)
+   ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
 
-* Supporto migliorato per A11Y per i componenti core CIF
+* Migliore supporto A11Y per i componenti core CIF
 
 ### Correzioni di bug {#bug-fixes-august}
 
-* Impossibile chiudere il pannello a soffietto del filtro di categoria una volta aperto
+* Impossibile chiudere il pannello a soffietto del filtro categorie una volta aperto
 
-* Proprietà &#39;Invito all&#39;azione&#39; interrotta nel teaser prodotto
+* Proprietà &quot;Testo invito all’azione&quot; interrotta nel teaser del prodotto
 
-* Errori CIF JS durante AEM passaggio di distribuzione CS
+* Errori CIF JS durante il passaggio di distribuzione di AEM CS
 
-* Correggere l&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco di prodotti mappati
+* Correzione dell&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco prodotti mappati
 
-## Data di rilascio: Luglio 2021
+## Data di rilascio: luglio 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -125,12 +125,12 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Componenti core CIF v2
    * Configurazioni semplificate e migliorate per URL PDP/PLP e SEO
-   * Indicatore visivo per i dati di prodotto in fase di creazione in modalità per una migliore visibilità delle imminenti modifiche
-   * Nuovo componente mappa del sito per le pagine di contenuto e di e-commerce
+   * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
+   * Nuovo componente sitemap per contenuti e pagine commerce
 
-* Supporto per [Raccomandazione di prodotto Adobe Commerce Sensei, basata su Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o al volo creati
+* Supporto per [Consigli di prodotto per Adobe Commerce Sensei, con tecnologia Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in vetrina AEM utilizzando consigli predefiniti o al volo
 
-## Data di rilascio: Giugno 2021
+## Data di rilascio: giugno 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -140,14 +140,14 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-june}
 
-* Nuovi tipi di dati di riferimento CIF per prodotti e categorie per Frammenti di contenuto (Incl. supporto per l&#39;interfaccia utente del selettore prodotti/categorie)
+* Nuovi tipi di dati di riferimento per prodotti e categorie CIF per Frammenti di contenuto (incl. supporto dell’interfaccia utente per il selettore di prodotti/categorie)
 * Nuovo componente core Frammento di contenuto Commerce
-* Ricerca di e-commerce full-text supportata nel backend AEM
-* I componenti core di Commerce supportano la raccolta dati di Adobe Commerce Sensei Recs
-* URL ottimizzati per l’ottimizzazione SEO (Search Engine Optimization) per le pagine di categorie
+* Ricerca e-commerce full-text supportata nel back-end AEM
+* I componenti core Commerce supportano la raccolta dati di Adobe Commerce Sensei Recs
+* Sono stati migliorati gli URL SEO-friendly per le pagine delle categorie
 * Supporto per intestazioni HTTP personalizzate per sito/configurazione
 
-## Data di rilascio: Maggio 2021
+## Data di rilascio: maggio 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -157,15 +157,15 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-may}
 
-* Supporto per l’impaginazione del contenuto associato nelle proprietà della console del prodotto
+* Supporto dell’impaginazione per il contenuto associato nelle proprietà della console del prodotto
 
 ### Correzioni di bug {#bug-fixes-may}
 
-* Miniature delle risorse non visualizzate nella scheda Risorsa delle proprietà del prodotto
+* Le miniature delle risorse non vengono visualizzate nella scheda Risorsa delle proprietà del prodotto
 
-* Breadcrumb ripristina i dati di anteprima nella console del prodotto
+* Breadcrumb ripristina i dati di anteprima nella console prodotto
 
-## Data di rilascio: Aprile 2021
+## Data di rilascio: aprile 2021
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -175,17 +175,17 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-april}
 
-* Supporto per UID categoria : consente di sbloccare le integrazioni di e-commerce di terze parti per i sistemi che utilizzano stringhe per ID categoria
+* Supporto per la categoria UID: questo consente di sbloccare le integrazioni con soluzioni commerce di terze parti per i sistemi che utilizzano Stringhe per gli ID categoria
 
-* Estensione AEM per PWA Studi incl. integrazione di esempio
+* Estensione AEM per il PWA Studi, incl. integrazione di esempio
 
 * Nuovo componente core di navigazione CIF che estende il componente core di navigazione WCM
 
 ### Correzioni di bug {#bug-fixes-april}
 
-* Il campo della categoria principale non veniva visualizzato nella scheda commercio nelle proprietà della pagina delle pagine delle categorie
+* Il campo della categoria principale non veniva visualizzato nella scheda Commerce nelle proprietà della pagina delle pagine delle categorie
 
-## Data di rilascio: Marzo 2021 {#what-is-new-march}
+## Data di rilascio: marzo 2021 {#what-is-new-march}
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
@@ -197,15 +197,15 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Supporto per Adobe Commerce 2.4.2
 
-### Miglioramenti
+### Novità
 
-* È stata migliorata la riutilizzabilità del componente dettaglio del prodotto per le pagine basate su contenuti
+* È stata migliorata la riutilizzabilità del componente dei dettagli del prodotto per le pagine basate su contenuti
 
-* Memorizzazione in cache migliore e meno chiamate di backend per PDP
+* Migliore caching e meno chiamate back-end per i PDP
 
-* Correzioni di bug multiple.
+* Correzioni di bug multipli.
 
-## Data di rilascio: Febbraio 2021
+## Data di rilascio: febbraio 2021
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
@@ -215,17 +215,17 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-february}
 
-* Gestione dell&#39;esperienza del prodotto: Arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
+* Gestione dell’esperienza del prodotto: arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
 
-* Proprietà estese della console prodotti per mostrare le risorse collegate e i frammenti esperienza, inclusa l’azione per passare rapidamente al contenuto associato.
+* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
 
-### Miglioramenti  {#what-is-improved-february}
+### Novità  {#what-is-improved-february}
 
-* Livello dati lato client migliorato con url immagine prodotto e informazioni sulla categoria.
+* Livello dati lato client migliorato con URL dell&#39;immagine del prodotto e informazioni sulla categoria.
 
-* Correzioni di bug multiple.
+* Correzioni di bug multipli.
 
-## Data di rilascio: Gennaio 2021
+## Data di rilascio: gennaio 2021
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
@@ -235,10 +235,10 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-january}
 
-* Gestione dell&#39;esperienza del prodotto: Nuova scheda di proprietà &quot;Commerce&quot; per Assets e Frammenti esperienza. Questa scheda ti consente di collegare risorse e frammenti esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti di e-commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
+* Gestione dell’esperienza del prodotto: nuova scheda della proprietà &quot;Commerce&quot; per risorse e frammenti di esperienza. Questa scheda consente di collegare risorse e frammenti di esperienza a prodotti e categorie. La scheda mostra anche i dati in tempo reale per gli oggetti commerce collegati e un collegamento per mostrare i dettagli nella console del prodotto.
 
-### Miglioramenti  {#what-is-improved-january}
+### Novità  {#what-is-improved-january}
 
-* Invia i dati utente dopo l’autenticazione ad Adobe Client Data Layer.
+* Invia dati utente dopo l’autenticazione a Adobe Client Data Layer.
 
-* Correzioni di bug multiple.
+* Correzioni di bug multipli.

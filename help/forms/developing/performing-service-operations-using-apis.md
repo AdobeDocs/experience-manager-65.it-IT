@@ -1,5 +1,5 @@
 ---
-title: Esecuzione delle operazioni del servizio tramite API
+title: Esecuzione di operazioni di servizio tramite API
 seo-title: Performing Service Operations Using APIs
 description: Sviluppa applicazioni client utilizzando le API di AEM Forms.
 seo-description: Develop client applications using the AEM Forms APIs.
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 ---
 
-# Esecuzione delle operazioni del servizio tramite API {#performing-service-operations-using-apis}
+# Esecuzione di operazioni di servizio tramite API {#performing-service-operations-using-apis}
 
-**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
 
-Prima di iniziare a sviluppare applicazioni client utilizzando le API di AEM Forms, si consiglia di leggere innanzitutto Invoking AEM Forms, che descrive i diversi modi in cui invocare i servizi. (Vedi [Contenitore di servizio](/help/forms/developing/service-container.md#service-container).)
+Prima di iniziare a sviluppare applicazioni client utilizzando le API di AEM Forms, è consigliabile leggere Richiamare AEM Forms, che descrive i diversi modi in cui richiamare i servizi. (vedere [Contenitore servizio](/help/forms/developing/service-container.md#service-container).)
 
-Dopo aver acquisito familiarità con i diversi metodi di chiamata, puoi imparare a interagire programmaticamente con ogni servizio. È possibile sviluppare un&#39;applicazione client in Adobe Flex® Builder™, in un ambiente di sviluppo Java o in un ambiente come Microsoft Visual Studio .NET che consente di utilizzare la WSDL esposta per il consumo in uno stack SOAP nativo.
+Dopo aver acquisito familiarità con i diversi metodi di chiamata, puoi imparare a interagire a livello di programmazione con ciascun servizio. È possibile sviluppare un&#39;applicazione client in Adobe Flex® Builder™, in un ambiente di sviluppo Java o in un ambiente come Microsoft Visual Studio .NET che consente di utilizzare il WSDL esposto per l&#39;utilizzo in uno stack SOAP nativo.
 
-Ogni argomento include informazioni introduttive (inclusa una sezione di riepilogo dei passaggi), procedure dettagliate sul codice ed esempi di codice. Il riepilogo dei passaggi spiega le sottoattività richieste e ogni sottoattività si collega a una sezione nelle procedure dettagliate del codice. Tutti gli argomenti contengono collegamenti a Quick Starts, esempi di codice completi progettati per aiutarti a iniziare rapidamente copiando e incollando il codice nel tuo progetto.
+Ogni argomento include informazioni introduttive (inclusa una sezione di riepilogo dei passaggi), procedure dettagliate ed esempi di codice. Il riepilogo dei passaggi descrive le sottoattività richieste e ogni sottoattività viene collegata a una sezione nelle procedure dettagliate del codice. Tutti gli argomenti includono collegamenti a Avvii rapidi, esempi di codice completi progettati per aiutarti a iniziare rapidamente copiando e incollando il codice nel progetto.

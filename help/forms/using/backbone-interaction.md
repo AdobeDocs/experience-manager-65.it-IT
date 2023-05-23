@@ -1,7 +1,7 @@
 ---
-title: Interazione con la colonna vertebrale
+title: Interazione dorsale
 seo-title: Backbone interaction
-description: Informazioni concettuali sull’utilizzo dei modelli JavaScript di backbone nell’area di lavoro di AEM Forms.
+description: Informazioni concettuali sull’utilizzo dei modelli JavaScript per backbone nell’area di lavoro di AEM Forms.
 seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
@@ -17,45 +17,45 @@ ht-degree: 0%
 
 ---
 
-# Interazione con la colonna vertebrale{#backbone-interaction}
+# Interazione dorsale{#backbone-interaction}
 
-Backbone è una libreria che aiuta a creare e seguire l&#39;architettura MVC nelle applicazioni web. L’idea di base di Backbone consiste nell’organizzare l’interfaccia in viste logiche, affiancate da modelli, ciascuno dei quali può essere aggiornato in modo indipendente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni sulla colonna vertebrale, consulta [https://backbonejs.org](https://backbonejs.org/).
+Backbone è una libreria che aiuta a creare e seguire l’architettura MVC nelle applicazioni web. L’idea di base di Backbone consiste nell’organizzare l’interfaccia in viste logiche, supportate da modelli, ciascuno dei quali può essere aggiornato in modo indipendente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni su Backbone, consulta [https://backbonejs.org](https://backbonejs.org/).
 
 Alcuni concetti chiave sono i seguenti:
 
-**Modello a spina dorsale** Contiene dati e la maggior parte della logica relativa a tali dati.
+**Modello backbone** Contiene dati e la maggior parte della logica correlata a tali dati.
 
-**Vista dorsale** Utilizzato per rappresentare lo stato del modello corrispondente. La visualizzazione backbone si comporta come un controller, ascoltando eventi dell&#39;interfaccia utente come i clic dell&#39;utente o per modellare eventi (come i dati modificati) e modifica l&#39;interfaccia utente in base alle necessità.
+**Vista backbone** Utilizzato per rappresentare lo stato del modello corrispondente. Una vista backbone si comporta come un controller, ascoltando eventi dell’interfaccia utente come i clic dell’utente o gli eventi del modello (come i dati modificati) e modifica l’interfaccia utente in base alle esigenze.
 
 **Modello HTML** Un modello di wrapper con segnaposto popolati dal modello.
 
-**Area di lavoro di AEM Forms** Contiene diversi componenti singoli. Ogni componente:
+**Area di lavoro di AEM Forms** Contiene diversi componenti singoli. Ciascun componente:
 
-* Rappresenta un singolo elemento dell’interfaccia utente logica.
+* Rappresenta un singolo elemento dell&#39;interfaccia utente logico.
 * Può essere una raccolta di componenti simili.
-* È costituito da modello Backbone, vista Backbone e modello HTML.
+* Composto da modello Backbone, vista Backbone e modello HTML.
 * Contiene un riferimento a un servizio.
-* Contiene un riferimento alle utility richieste.
+* Contiene riferimenti alle utility richieste.
 
 Quando un componente viene inizializzato, vengono creati i seguenti oggetti:
 
-* Viene creata una nuova istanza di modello Backbone per il componente. Il servizio viene inserito nel modello.
+* Viene creata una nuova istanza del modello Backbone per il componente. Servizio inserito nel modello.
 * Viene creata una nuova istanza della vista Backbone.
-* L&#39;istanza del modello, del modello HTML e delle utility corrispondenti viene inserita nella vista.
+* L&#39;istanza del modello, della maschera HTML e delle utilità corrispondenti viene inserita nella vista.
 
-Nella vista Backbone è presente una mappa evento che mappa i vari eventi che possono verificarsi a causa delle interazioni dell’interfaccia utente con un gestore corrispondente. Questa mappatura viene avviata una volta inizializzato un componente.
+Nella vista Backbone è disponibile una mappa degli eventi che mappa i vari eventi che possono verificarsi a causa delle interazioni dell’interfaccia utente con un gestore corrispondente. Questa mappatura viene avviata una volta inizializzato un componente.
 
-Quando una visualizzazione viene inizializzata, la visualizzazione chiama il modello corrispondente per recuperare i dati dal server. Quando tutti i dati richiesti da una visualizzazione sono disponibili, la visualizzazione esegue il rendering dei dati nel formato specificato dal modello di HTML. Più visualizzazioni possono condividere lo stesso modello per la comunicazione.
+Quando una vista viene inizializzata, chiama il modello corrispondente per recuperare i dati dal server. Quando tutti i dati richiesti da una visualizzazione sono disponibili, la visualizzazione esegue il rendering dei dati nel formato specificato dal modello HTML. Più viste possono condividere lo stesso modello per la comunicazione.
 
 ![](do-not-localize/aem_forms_workflow.png)
 
-Esempio:
+Ecco un esempio:
 
-1. L&#39;utente fa clic su un modello di attività nell&#39;elenco delle attività.
-1. La visualizzazione attività ascolta il clic e chiama la funzione di rendering sul modello attività.
-1. Il modello di task successivamente chiama il servizio che è un punto comune per tutte le comunicazioni con il server AEM Forms.
-1. La classe di servizio chiama l’endpoint REST di AEM Forms per il metodo di rendering tramite ajax.
-1. Il callback di successo per questa chiamata Ajax è definito nel modello di task.
-1. Il modello di task genera un evento di backbone come notifica del completamento della chiamata di rendering.
-1. Un&#39;altra visualizzazione, la visualizzazione dei dettagli dell&#39;attività, ascolta l&#39;evento dal modello di task.
-1. La visualizzazione dei dettagli dell&#39;attività modifica quindi il modello dei dettagli dell&#39;attività in modo da visualizzare all&#39;utente l&#39;attività di cui è stato eseguito il rendering (modulo, dettagli, allegati, note e così via).
+1. L&#39;utente fa clic su un modello di operazione nell&#39;elenco delle operazioni.
+1. La vista Attività ascolta il clic e chiama la funzione di rendering sul modello di attività.
+1. Il modello di attività chiama successivamente il servizio, che è un punto comune per tutte le comunicazioni con il server di AEM Forms.
+1. La classe servizio chiama l’endpoint REST di AEM Forms per il metodo di rendering tramite AJAX.
+1. Il callback di successo per questa chiamata Ajax è definito nel modello di attività.
+1. Il modello di attività genera un evento backbone come notifica del completamento della chiamata di rendering.
+1. Un&#39;altra visualizzazione, la visualizzazione dettagli attività, ascolta questo evento dal modello attività.
+1. Nella visualizzazione Dettagli attività, il modello dei dettagli attività viene modificato in modo da visualizzare all&#39;utente l&#39;attività di cui è stato eseguito il rendering (modulo, dettagli, allegati, note e così via).

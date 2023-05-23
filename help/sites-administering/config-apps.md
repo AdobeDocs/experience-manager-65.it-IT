@@ -1,7 +1,7 @@
 ---
 title: Configurazione per le app AEM
 seo-title: Configuring for AEM Apps
-description: Scopri come configurare AEM app.
+description: Scopri come configurare le app AEM.
 seo-description: Learn how to configure AEM Apps.
 uuid: ab9acd93-da7f-4bb7-8d26-224044899068
 contentOwner: Guillaume Carlino
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Configurazione per le app AEM{#configuring-for-aem-apps}
 
-Le app Adobe Experience Manager consentono di aggiornare il contenuto dell’applicazione in modalità aerea (OTA). Il contenuto aggiornato viene memorizzato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza di pubblicazione e verificare la disponibilità di aggiornamenti, l’istanza di pubblicazione deve essere configurata per consentire un’intestazione di referente vuota.
+Le app Adobe Experience Manager consentono di aggiornare il contenuto dell’applicazione in diretta (OTA). Il contenuto aggiornato viene archiviato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza Publish e verificare la disponibilità di aggiornamenti, l’istanza Publish deve essere configurata in modo da consentire l’utilizzo di un’intestazione referente vuota.
 
-## Configurazione dell’intestazione di riferimento vuota {#configuring-empty-referrer-header}
+## Configurazione di un’intestazione di riferimento vuota {#configuring-empty-referrer-header}
 
-Per configurare il servizio filtro referrer:
+Per configurare il servizio filtro referenti:
 
-* Apri la console Apache Felix (**Configurazioni**) all&#39;indirizzo:
+* Apri la console Apache Felix (**Configurazioni**) in:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Accedi come amministratore.
-* In **Configurazioni** seleziona il menu: *Filtro di riferimento Apache Sling*
-* Seleziona il campo Consenti valori vuoti per consentire intestazioni referrer vuote o mancanti.
-* Fai clic su **Salva** per salvare le modifiche.
+* In **Configurazioni** , selezionare: *Filtro referrer Apache Sling*
+* Seleziona il campo Consenti vuoto per consentire intestazioni referente vuote/mancanti.
+* Clic **Salva** per salvare le modifiche.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Consulta la sezione [Impostazioni di configurazione OSGI](/help/sites-deploying/osgi-configuration-settings.md) e [Lista di controllo sicurezza - Problemi relativi alla falsificazione delle richieste tra siti diversi](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) per ulteriori dettagli.
+Consulta la [Impostazioni configurazione OSGI](/help/sites-deploying/osgi-configuration-settings.md) e [Elenco di controllo della sicurezza: problemi relativi alla falsificazione di richieste tra siti diversi](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) per ulteriori dettagli.

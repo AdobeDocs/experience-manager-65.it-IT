@@ -1,7 +1,7 @@
 ---
 title: Definizioni delle app
 seo-title: App definitions
-description: Leggi questa pagina per scoprire le definizioni delle app, che sono un modo per identificare gli spazi e altre configurazioni appropriati per l’app. Le definizioni delle app consentono all’utente di aggiungere spazio senza dover ricompilare l’app.
+description: Segui questa pagina per scoprire di più sulle definizioni delle app, che sono un modo per identificare quali spazi e altre configurazioni sono appropriati per l’app. Le definizioni di app consentono all’utente di aggiungere spazio, senza dover ricompilare l’app.
 seo-description: Follow this page to learn about app definitions, that are a way to identify what spaces and other configurations are appropriate for the app. App definitions allows the user to add space, without having to recompile the app.
 uuid: bdb4063b-1597-47e2-96d4-c4cc7c78c3d7
 contentOwner: User
@@ -21,37 +21,37 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Le definizioni delle app sono un modo per identificare gli spazi e altre configurazioni appropriati per l’app. Le definizioni delle app consentono all’utente di aggiungere spazio senza dover ricompilare l’app. La definizione dell’app viene aggiornata e include le informazioni per eventuali nuovi spazi.
+Le definizioni delle app sono un modo per identificare quali spazi e altre configurazioni sono appropriati per l’app. Le definizioni di app consentono all’utente di aggiungere spazio, senza dover ricompilare l’app. La definizione dell’app viene aggiornata e includerà le informazioni per eventuali nuovi spazi.
 
 >[!NOTE]
 >
->Le definizioni delle app sono associate a un’app, pertanto richiedono la creazione di un’app nella console App di AEM Mobile.
+>Le definizioni delle app sono collegate a un’app, pertanto richiedono la creazione di un’app nella console delle app AEM Mobile.
 
 ## Creazione di una nuova definizione di app {#creating-a-new-app-definition}
 
-1. Scegli **Mobile** dalla console di navigazione AEM.
+1. Scegli **Dispositivi mobili** dalla console di navigazione AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Scegli **App** da **Mobile** e fai clic su **Crea.**
+1. Scegli **App** da **Dispositivi mobili** e fai clic su **Crea.**
 
-   Scegli **App** e inserisci i dettagli per creare la nuova app.
+   Scegli **App** a e immetti i dettagli per creare la nuova app.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
 ### Passaggi successivi {#the-next-steps}
 
-Una volta acquisita familiarità con le definizioni delle app, scopri di più sulle seguenti risorse di authoring:
+Una volta acquisite familiarità con le definizioni delle app, scopri di più sulle seguenti risorse di authoring:
 
-* [Importare un’app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Creazione guidata nuova app](/help/mobile/phonegap-create-new-app.md)
+* [Importa un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
+* [Creare una nuova app mediante la Creazione guidata app](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
-Per scoprire i ruoli e le responsabilità di un amministratore e di uno sviluppatore, consulta le risorse seguenti:
+Per informazioni sui ruoli e le responsabilità di amministratore e sviluppatore, consulta le risorse seguenti:
 
 * [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
 * [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

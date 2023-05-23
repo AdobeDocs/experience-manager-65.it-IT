@@ -1,5 +1,5 @@
 ---
-title: Aggiunta e rimozione di credenziali per nome utente e password
+title: Aggiunta e rimozione delle credenziali di nome utente e password
 seo-title: Adding and removing user name and password credentials
 description: Scopri come aggiungere e rimuovere le credenziali di nome utente e password.
 seo-description: Learn how to add and remove user name and password credentials.
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 ---
 
-# Aggiunta e rimozione di credenziali per nome utente e password {#adding-and-removing-user-name-and-password-credentials}
+# Aggiunta e rimozione delle credenziali di nome utente e password {#adding-and-removing-user-name-and-password-credentials}
 
-Dalla pagina Gestione dell&#39;archivio protezione è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello di SOAP.
+Dalla pagina Gestione archivio fonti attendibili è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello SOAP.
 
-## Aggiungere credenziali di nome utente e password {#add-a-user-name-and-password-credential}
+## Aggiungere credenziali nome utente e password {#add-a-user-name-and-password-credential}
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Trust Store Management > Credenziali utente e password]** quindi fai clic su **[!UICONTROL Aggiungi]**.
-1. In **[!UICONTROL Nome profilo]** digitare un nome per la credenziale.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]** e quindi fare clic su **[!UICONTROL Aggiungi]**.
+1. In **[!UICONTROL Nome profilo]** digitare un nome per le credenziali.
 1. In **[!UICONTROL Nome utente]** digitare un nome utente univoco.
 1. In **[!UICONTROL Password]** digitare una password per l&#39;utente e quindi fare clic su **[!UICONTROL OK]**.
 
-## Eliminare una credenziale di nome utente e password {#delete-a-user-name-and-password-credential}
+## Eliminare le credenziali di nome utente e password {#delete-a-user-name-and-password-credential}
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Trust Store Management > Credenziali utente e password]**.
-1. Selezionare le caselle di controllo relative alle credenziali che si desidera eliminare, fare clic su **[!UICONTROL Elimina]**, quindi fai clic su **[!UICONTROL OK]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]**.
+1. Selezionare le caselle di controllo relative alle credenziali che si desidera eliminare, quindi fare clic su **[!UICONTROL Elimina]** e quindi fare clic su **[!UICONTROL OK]**.

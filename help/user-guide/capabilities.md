@@ -1,7 +1,7 @@
 ---
 title: Guida utente alle funzionalità di AEM 6.5
 seo-title: AEM 6.5 Capabilities User Guide
-description: Una panoramica delle capacità essenziali della AEM 6.5
+description: Panoramica delle capacità essenziali dell’AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
@@ -11,11 +11,11 @@ ht-degree: 55%
 
 ---
 
-# Guide utente delle funzionalità di AEM 6.5 {#aem-65-capabilities-user-guides}
+# Guide utente sulle funzionalità di AEM 6.5 {#aem-65-capabilities-user-guides}
 
-## AEM Foundation {#aem-foundation}
+## Fondazione AEM {#aem-foundation}
 
-[Ulteriori informazioni sull’installazione, la distribuzione e l’architettura di Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusa la distribuzione cloud di Adobe Managed Services.
+[Scopri come installare, distribuire e l’architettura di Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusa la distribuzione cloud di Adobe Managed Services.
 
 [Scopri come gestire un progetto AEM](/help/managing/home.md).
 
@@ -37,9 +37,9 @@ ht-degree: 55%
 
 [Scopri la soluzione di digital signage per pubblicare esperienze dinamiche e interattive.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
 
-## AEM Commerce {#aem-commerce}
+## Commerce AEM {#aem-commerce}
 
-[Scopri AEM Commerce.](/help/commerce/home.md)
+[Scopri di più su AEM Commerce.](/help/commerce/home.md)
 
 ## Community AEM {#aem-communities}
 

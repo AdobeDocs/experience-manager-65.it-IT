@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 47%
+ht-degree: 42%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 47%
 
 + [Note sulla versione di AEM 6.5](home.md)
 + [Note sulla versione corrente](release-notes.md)
-+ [Istruzioni per l&#39;installazione di AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
-+ [Note sulla versione precedenti]{#service-pack}
++ [Istruzioni di installazione di AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
++ [Note sulle versioni precedenti]{#service-pack}
    + [6.5.15](previous/6.5.15.md)
    + [6.5.14](previous/6.5.14.md)
    + [6.5.13](previous/6.5.13.md)
@@ -37,6 +37,6 @@ ht-degree: 47%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
-+ [Modulo di installazione delle patch di AEM Forms JEE](jee-patch-installer-65.md)
++ [Programma di installazione patch per AEM Forms JEE](jee-patch-installer-65.md)
 + [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 + [Stato delle funzioni dell’interfaccia touch](touch-ui-features-status.md)

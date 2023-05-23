@@ -1,6 +1,6 @@
 ---
-title: Personalizza ed estendi [!DNL Assets]
-description: Scopri come personalizzare ed estendere Asset Share e Asset Editor, che offre agli utenti un’interfaccia e un set di funzionalità personalizzati.
+title: Personalizzare ed estendere [!DNL Assets]
+description: Scopri come personalizzare ed estendere Condivisione risorse e Editor risorse, con un’interfaccia e un set di funzionalità specifiche per gli utenti.
 contentOwner: AG
 role: Developer
 feature: Developer Tools
@@ -12,31 +12,31 @@ ht-degree: 0%
 
 ---
 
-# Personalizza ed estendi [!DNL Assets] {#customizing-and-extending-assets}
+# Personalizzare ed estendere [!DNL Assets] {#customizing-and-extending-assets}
 
-Asset Editor è il punto di accesso principale che gli utenti di un sito web Adobe Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
+L’Editor risorse è il punto di accesso principale che gli utenti di un Adobe di sito Web Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
 
-Come [!DNL Experience Manager] per sviluppatori, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+Come un [!DNL Experience Manager] sviluppatore, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifiche.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
 * [Estendi editor risorse](asseteditorx.md)
 * [Estendi ricerca risorse](searchx.md)
-* [Elabora risorse utilizzando gestori di contenuti multimediali e flussi di lavoro](media-handlers.md)
+* [Elaborare risorse utilizzando gestori di file multimediali e flussi di lavoro](media-handlers.md)
 * [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
-* [Sviluppo proxy risorse](proxy.md)
+* [Sviluppo proxy delle risorse](proxy.md)
 * [Best practice per configurare ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzare l’aspetto {#customizing-the-look-and-feel}
+## Personalizzare l&#39;aspetto {#customizing-the-look-and-feel}
 
-Sono personalizzabili i seguenti aspetti dell’aspetto e del comportamento di Asset Editor:
+Sono personalizzabili i seguenti aspetti dell’Editor risorse:
 
-* Logo: Puoi aggiungere all’interfaccia il logo della tua organizzazione.
-* Colori e caratteri: È possibile modificare i colori e i font utilizzati nell’interfaccia.
-* Codice HTML: Per una personalizzazione più completa è possibile modificare il codice HTML sottostante che definisce le interfacce.
+* Logo: puoi aggiungere il logo della tua organizzazione all’interfaccia.
+* Colori e font: è possibile modificare i colori e i font utilizzati nell’interfaccia.
+* Codice HTML: per una personalizzazione più dettagliata è possibile modificare il codice HTML sottostante che definisce le interfacce.
 
 ## Personalizzare le rappresentazioni {#customizing-renditions}
 
-In [!DNL Experience Manager Assets] la terminologia di un rendering è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori completi può avere un rendering nelle dimensioni originali, un altro in una dimensione ridotta e un altro in scala di grigi.
+In entrata [!DNL Experience Manager Assets] terminologia per rappresentazione si intende la forma in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, un’immagine a colori può avere una rappresentazione nelle dimensioni originali, un’altra con dimensioni ridotte e un’altra con dimensioni ridotte e convertita in scala di grigio.
 
-Le rappresentazioni disponibili in una particolare risorsa possono essere personalizzate e possono essere create nuove rappresentazioni.
+È possibile personalizzare le rappresentazioni in cui è disponibile una particolare risorsa e crearne di nuove.

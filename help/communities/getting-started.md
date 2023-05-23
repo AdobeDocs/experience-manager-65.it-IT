@@ -1,7 +1,7 @@
 ---
 title: Guida introduttiva ad AEM Communities
 seo-title: Getting Started with AEM Communities
-description: Esercitazione su come iniziare a utilizzare AEM Communities
+description: Tutorial su come iniziare a utilizzare AEM Communities
 seo-description: A tutorial on getting started with AEM Communities
 uuid: b7adf7c0-5563-4e44-bb53-04a566f271d5
 contentOwner: Janice Kendall
@@ -20,14 +20,14 @@ ht-degree: 2%
 
 # Guida introduttiva ad AEM Communities {#getting-started-with-aem-communities}
 
-AEM Communities consente alle aziende di creare esperienze di community con marchio dedicato da una libreria di modelli di sito. Forum, gruppi, blog, condivisione di file, calendari, feed di attività e profili utente estesi possono essere integrati nel tuo sito web per favorire le interazioni tra proprietà, clienti e aziende.
+AEM Communities consente alle aziende di creare esperienze community con marchio dedicato da una libreria di modelli di sito. Forum, gruppi, blog, condivisione di file, calendari, feed di attività e profili utente estesi possono essere integrati nel sito Web per favorire le interazioni tra proposte, clienti e aziende.
 
-Di seguito è riportata un&#39;esercitazione sulla configurazione rapida di un [community di coinvolgimento](/help/communities/overview.md#engagement-community) a scopo dimostrativo o di sviluppo.
+Di seguito è riportato un tutorial sulla configurazione rapida di un [community di engagement](/help/communities/overview.md#engagement-community) a scopo dimostrativo o di sviluppo.
 
 * [Configurazione iniziale](/help/communities/setup.md)
 
-* [Creare un nuovo sito della community](/help/communities/create-site.md)
+* [Creare un nuovo sito community](/help/communities/create-site.md)
 
-* [Esperienza con il sito pubblicato](/help/communities/published-site.md)
+* [Esperienza del sito pubblicato](/help/communities/published-site.md)
 
-* [Creazione di gruppi nidificati](/help/communities/nested-groups.md)
+* [Authoring di gruppi nidificati](/help/communities/nested-groups.md)

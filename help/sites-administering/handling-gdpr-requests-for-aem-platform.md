@@ -1,7 +1,7 @@
 ---
-title: Gestione delle richieste RGPD per la AEM Foundation
+title: Gestione delle richieste RGPD per la Fondazione AEM
 seo-title: Handling GDPR Requests for the AEM Foundation
-description: Gestione delle richieste RGPD per la AEM Foundation
+description: Gestione delle richieste RGPD per la Fondazione AEM
 seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
@@ -14,27 +14,27 @@ ht-degree: 55%
 
 ---
 
-# Gestione delle richieste RGPD per la AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste RGPD per la Fondazione AEM{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli trattati sono applicabili a tutte le normative sulla protezione dei dati e sulla privacy; come RGPD, CCPA, ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA, ecc.
 
-## Supporto per il RGPD in AEM Foundation {#aem-foundation-gdpr-support}
+## Supporto per il RGPD di AEM Foundation {#aem-foundation-gdpr-support}
 
-A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo utente. Pertanto, le informazioni contenute in questo articolo si occupano principalmente di come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e cancellazione RGPD.
+A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso ed eliminazione relative al RGPD.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
 ### Passaggi manuali {#manual-steps}
 
-1. Apri la console di amministrazione degli utenti sfogliando **[!UICONTROL Impostazioni - Sicurezza - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Apri la console User Administration (Amministrazione utenti) navigando su **[!UICONTROL Impostazioni - Protezione - Utenti]** o navigando direttamente in `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
 1. Quindi, cerca l’utente in questione digitando il nome nella barra di ricerca nella parte superiore della pagina:
 
-   ![ricerca utente](assets/usersearch.png)
+   ![usersearch](assets/usersearch.png)
 
 1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
@@ -86,9 +86,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L’interfaccia utente indica quindi che l’utente è stato disattivato disattivando la visualizzazione in grigio e aggiungendo un blocco alla scheda del profilo:
+   L’interfaccia utente indica quindi che l’utente è stato disattivato togliendo il grigio e aggiungendo un blocco alla scheda del profilo:
 
-   ![disabilitato](assets/disableduser.png)
+   ![disableduser](assets/disableduser.png)
 
 ### Eliminare informazioni sul profilo utente {#delete-user-profile-information}
 
@@ -100,7 +100,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Elimina i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
+1. Elimina i nodi del profilo e tutti i relativi nodi secondari. Esistono due formati per i nodi del profilo, a seconda della versione dell’AEM:
 
    1. Il profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.5.

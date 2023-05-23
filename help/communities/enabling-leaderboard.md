@@ -1,7 +1,7 @@
 ---
-title: Funzionalità della classifica
+title: Funzione classifica
 seo-title: Leaderboard Feature
-description: Aggiunta di un componente della classifica a una pagina
+description: Aggiunta di un componente Classifica a una pagina
 seo-description: Adding a Leaderboard component to a page
 uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
 contentOwner: msm-service
@@ -18,72 +18,72 @@ ht-degree: 10%
 
 ---
 
-# Funzionalità della classifica {#leaderboard-feature}
+# Funzione classifica {#leaderboard-feature}
 
 ## Introduzione {#introduction}
 
-La `Leaderboard` Il componente consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+Il `Leaderboard` Questo componente consente di ottenere un’idea del modo in cui i membri interagiscono all’interno della community, classificandoli in base ai punti ottenuti (punteggio di base) o alle loro competenze (punteggio avanzato).
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio e badge delle community](/help/communities/implementing-scoring.md).
+Prima di includere il componente classifica in una pagina, è necessario configurare [Punteggio community e badge](/help/communities/implementing-scoring.md).
 
 Questa sezione della documentazione descrive:
 
-* Aggiunta di `Leaderboard` a un [sito della community](/help/communities/overview.md#community-sites).
+* Aggiunta di `Leaderboard` da componente a [sito community](/help/communities/overview.md#community-sites).
 * Impostazioni di configurazione per `Leaderboard` componente.
 
 ### Aggiunta di una classifica a una pagina {#adding-a-leaderboard-to-a-page}
 
-Per aggiungere una `Leaderboard` in una pagina in modalità di authoring, individua il componente
+Per aggiungere una `Leaderboard` a una pagina in modalità di authoring, individua il componente
 
 * `Communities / Leaderboard`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](/help/communities/basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
 
-Quando viene posizionato per la prima volta su una pagina di un sito della community, viene visualizzato questo componente:
+La prima volta che viene inserito in una pagina di un sito community, viene visualizzato questo componente:
 
 ![classifica](assets/leaderboard.png)
 
 ### Configurazione della classifica {#configuring-leaderboard}
 
-Seleziona il `Leaderboard` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Leaderboard` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
-![configurare la classifica](assets/configure-leaderboard.png)
+![configure-lead board](assets/configure-leaderboard.png)
 
 #### Scheda Impostazioni {#settings-tab}
 
-Sotto la **[!UICONTROL Impostazioni]** , specifica quali informazioni relative al membro vengono visualizzate :
+Sotto **[!UICONTROL Impostazioni]** , specificare le informazioni relative al membro visualizzate:
 
 * **Nome visualizzato**
 
-   Un nome descrittivo da visualizzare per la bacheca, che rifletta le regole selezionate per la visualizzazione di badge e punteggi.
-Il valore predefinito è `Leaderboard`, se non è stato inserito nulla.
+   Nome descrittivo da visualizzare per la bacheca, che riflette le regole selezionate per la visualizzazione di badge e punteggi.
+Il valore predefinito è `Leaderboard`, se non è stato immesso nulla.
 
 * **Badge**
 
-   Se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone del badge.
-Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
+L&#39;impostazione predefinita è deselezionata.
 
 * **Nome badge**
 
-   Se questa opzione è selezionata, nella classifica è inclusa una colonna relativa al nome del badge.
-Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
+L&#39;impostazione predefinita è deselezionata.
 
 * **Usa avatar**
 
-   Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo membro.
-Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al suo profilo membro.
+L&#39;impostazione predefinita è deselezionata.
 
 #### Scheda Regole {#rules-tab}
 
-Sotto la **Regole** scheda , il sito community e le relative regole di valutazione e contrassegno
+Sotto **Regole** , il sito community e le relative regole di punteggio e badge
 
 * **Percorso regola**
 
-   (Obbligatorio) Posizione in cui è configurata la regola Punteggio/Badging .
+   (Obbligatorio) Posizione in cui è configurata la regola Punteggio/Distintivo.
 
 * **Regola punteggio**
 
@@ -97,11 +97,11 @@ Sotto la **Regole** scheda , il sito community e le relative regole di valutazio
 
    Numero di membri da visualizzare per pagina. Il valore predefinito è 10.
 
-### Esempio: Leader dei partecipanti {#example-participants-leaderboard}
+### Esempio: classifica partecipanti {#example-participants-leaderboard}
 
-Questo rapporto della classifica deriva dall’applicazione di regole di punteggio di base.
+Questa classifica riporta i risultati dell’applicazione delle regole di punteggio di base.
 
-Configurazione del componente della classifica:
+Configurazione componente classifica:
 
 * Scheda Impostazioni:
 
@@ -112,20 +112,20 @@ Configurazione del componente della classifica:
       * Nome badge
       * Usa avatar
 
-* Scheda Regole :
+* Scheda Regole:
 
    * Percorso regola = `/content/sites/<site name>/jcr:content`
    * Regola punteggio = `/libs/settings/community/scoring/rules/forums-scoring`
    * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite di visualizzazione = `10`
 
-![consiglio dei partecipanti](assets/participants-leaderboard.png)
+![Participanti-classifica](assets/participants-leaderboard.png)
 
-### Esempio: Leaderboard di esperti {#example-experts-leaderboard}
+### Esempio: classifica degli esperti {#example-experts-leaderboard}
 
-Questo rapporto della classifica deriva dall’applicazione di regole di punteggio avanzate.
+Questa classifica riporta i risultati dell’applicazione di regole di punteggio avanzate.
 
-Configurazione del componente della classifica:
+Configurazione componente classifica:
 
 * Scheda Impostazioni:
 
@@ -135,17 +135,17 @@ Configurazione del componente della classifica:
       * Badge
       * Usa avatar
 
-* Scheda Regole :
+* Scheda Regole:
 
    * Percorso regola = `/content/sites/<site name>/jcr:content`
    * Regola punteggio = `/libs/settings/community/scoring/rules/adv-forums-scoring`
    * Regola assegnazione badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite di visualizzazione = `10`
 
-![classifica degli esperti](assets/experts-leaderboard.png)
+![esperti-classifica](assets/experts-leaderboard.png)
 
 ### Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base sulla classifica](/help/communities/leaderboard.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base sulla classifica](/help/communities/leaderboard.md) pagina per sviluppatori.
 
-Le istruzioni per la creazione delle regole sono fornite nella sezione [Punteggio e badge delle community](/help/communities/implementing-scoring.md) per amministratori.
+Le istruzioni per la creazione delle regole sono fornite nella [Punteggio community e badge](/help/communities/implementing-scoring.md) per gli amministratori.

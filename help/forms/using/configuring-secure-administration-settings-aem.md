@@ -1,7 +1,7 @@
 ---
-title: Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE
+title: Configurazione delle impostazioni di amministrazione protetta per AEM Forms su JEE
 seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
-description: Scopri come amministrare gli account utente e i servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
+description: Scopri come amministrare account utente e servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
 seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
@@ -17,115 +17,115 @@ ht-degree: 0%
 
 ---
 
-# Configurazione delle impostazioni di amministrazione sicura per AEM Forms su JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Configurazione delle impostazioni di amministrazione protetta per AEM Forms su JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Scopri come amministrare gli account utente e i servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
+Scopri come amministrare account utente e servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
 
-In genere, gli sviluppatori non utilizzano l’ambiente di produzione per creare e testare le applicazioni. Pertanto, devi amministrare gli account utente e i servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione.
+In genere, gli sviluppatori non utilizzano l’ambiente di produzione per generare e testare le applicazioni. Pertanto, devi amministrare account utente e servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione.
 
-Questo articolo descrive i metodi per ridurre la superficie di attacco complessiva attraverso le opzioni di amministrazione fornite da AEM Forms su JEE.
+Questo articolo descrive i metodi per ridurre la superficie di attacco complessiva tramite le opzioni di amministrazione fornite da AEM Forms su JEE.
 
-## Disabilitazione dell’accesso remoto non essenziale ai servizi {#disabling-non-essential-remote-access-to-services}
+## Disattivazione dell&#39;accesso remoto non essenziale ai servizi {#disabling-non-essential-remote-access-to-services}
 
-Dopo l&#39;installazione e la configurazione di AEM Forms su JEE, molti servizi sono disponibili per la chiamata remota tramite SOAP e Enterprise JavaBeans™ (EJB). Il termine remoto, in questo caso, fa riferimento a qualsiasi chiamante con accesso di rete alle porte SOAP, EJB o AMF (Action Message Format) per l&#39;application server.
+Dopo l’installazione e la configurazione di AEM Forms su JEE, molti servizi sono disponibili per la chiamata remota tramite SOAP e Enterprise JavaBeans™ (EJB). Il termine remoto, in questo caso, si riferisce a qualsiasi chiamante che dispone di accesso di rete alle porte SOAP, EJB o Action Message Format (AMF) per il server applicazioni.
 
-Anche se i servizi AEM Forms su JEE richiedono la trasmissione di credenziali valide per un chiamante autorizzato, è consigliabile consentire solo l&#39;accesso remoto ai servizi che devono essere accessibili in remoto. Per ottenere un&#39;accessibilità limitata, è necessario ridurre al minimo il set di servizi accessibili in remoto per un sistema funzionante e quindi abilitare la chiamata remota per i servizi aggiuntivi necessari.
+Sebbene i servizi AEM Forms su JEE richiedano il passaggio di credenziali valide per un chiamante autorizzato, è necessario consentire solo l’accesso remoto ai servizi che devono essere accessibili in remoto. Per ottenere un&#39;accessibilità limitata, è necessario ridurre al minimo l&#39;insieme di servizi accessibili in remoto per un sistema funzionante e quindi abilitare la chiamata remota per i servizi aggiuntivi necessari.
 
-AEM Forms sui servizi JEE richiede sempre almeno l’accesso SOAP. Questi servizi sono generalmente necessari per l’utilizzo da parte di Workbench, ma includono anche i servizi chiamati dall’applicazione Web Workspace.
+I servizi AEM Forms su JEE richiedono sempre almeno l’accesso SOAP. Questi servizi sono in genere necessari per l’utilizzo da Workbench, ma includono anche i servizi richiamati dall’applicazione web Workspace.
 
-Completa questa procedura utilizzando la pagina web Applicazioni e servizi in Admin Console:
+Eseguire questa procedura utilizzando la pagina Web Applicazioni e servizi di Administration Console:
 
-1. Accedi a Admin Console digitando il seguente URL in un browser web:
+1. Accedi ad Administration Console e digita il seguente URL in un browser web:
 
    ```java
             https://[host name]:'port'/adminui
    ```
 
-1. Fai clic su **Servizi > Applicazioni e servizi > Preferenze**.
-1. Imposta Preferenze per visualizzare fino a 200 servizi e endpoint sulla stessa pagina.
-1. Fai clic su **Servizi** > **Applicazioni e servizi** > **Gestione endpoint**.
-1. Seleziona **EJB** dal **Provider** elenco e quindi fai clic su **Filtro**.
-1. Per disabilitare tutti gli endpoint EJB, seleziona la casella di controllo accanto a ciascuno nell’elenco e fai clic su **Disattiva**.
-1. Fai clic su **Successivo** e ripeti il passaggio precedente per tutti gli endpoint EJB. Assicurati che EJB sia elencato nella colonna Provider prima di disabilitare gli endpoint .
-1. Seleziona **SOAP** dal **Provider** elenco e quindi fai clic su **Filtro**.
-1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno nell’elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
+1. Clic **Servizi > Applicazioni e servizi > Preferenze**.
+1. Imposta le Preferenze per visualizzare fino a 200 servizi ed endpoint sulla stessa pagina.
+1. Clic **Servizi** > **Applicazioni e servizi** > **Gestione degli endpoint**.
+1. Seleziona **EJB** dal **Provider** e quindi fare clic su **Filtro**.
+1. Per disattivare tutti gli endpoint EJB, selezionare la casella di controllo accanto a ciascuno degli endpoint nell&#39;elenco e fare clic su **Disattiva**.
+1. Clic **Successivo** e ripetere il passaggio precedente per tutti gli endpoint EJB. Prima di disabilitare gli endpoint, accertati che l’EJB sia elencato nella colonna Provider.
+1. Seleziona **SOAP** dal **Provider** e quindi fare clic su **Filtro**.
+1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno degli endpoint nell&#39;elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
 
    * AuthenticationManagerService
    * DirectoryManagerService
-   * JobManager
+   * Gestione processo
    * event_management_service
    * event_configuration_service
    * ProcessManager
    * TemplateManager
-   * RepositoryService
-   * TaskManagerService
+   * ServizioArchivio
+   * ServizioGestioneAttività
    * TaskQueueManager
    * TaskManagerQueryService
-   * Area di lavoroSingleSignOn
+   * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Fai clic su **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP non presenti nell’elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
+1. Clic **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP non inclusi nell&#39;elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
 
 ## Disabilitazione dell’accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
 
-Alcuni servizi server di Forms consentono chiamate non autenticate (anonime) per alcune operazioni. Ciò significa che una o più operazioni esposte dal servizio possono essere richiamate come qualsiasi utente autenticato o come nessun utente autenticato.
+Alcuni servizi del server Forms consentono chiamate non autenticate (anonime) per alcune operazioni. Ciò significa che una o più operazioni esposte dal servizio possono essere richiamate come qualsiasi utente autenticato o come nessun utente autenticato.
 
-1. Accedi alla console di amministrazione digitando il seguente URL in un browser web:
+1. Accedi alla console di amministrazione e digita il seguente URL in un browser web:
 
    ```java
             https://[host name]:'port'/adminui
    ```
 
-1. Fai clic su **Servizi > Applicazioni e servizi > Gestione dei servizi**.
-1. Fare clic sul nome del servizio che si desidera disabilitare (ad esempio, AuthenticationManagerService).
-1. Fai clic sul pulsante **Scheda Sicurezza**, deseleziona **Accesso anonimo consentito** e fai clic su **Salva**.
-1. Completa i passaggi 3 e 4 per i seguenti servizi:
+1. Clic **Servizi > Applicazioni e servizi > Gestione servizi**.
+1. Fare clic sul nome del servizio che si desidera disabilitare, ad esempio AuthenticationManagerService.
+1. Fai clic su **Scheda Sicurezza**, deseleziona **Accesso anonimo consentito** e fai clic su **Salva**.
+1. Completare i passaggi 3 e 4 per i seguenti servizi:
 
    * AuthenticationManagerService
    * EJB
    * E-mail
-   * JobManager
+   * Gestione processo
    * WatchedFolder
    * UsermanagerUtilService
-   * Remoto
-   * RepositoryProviderService
+   * Remoting
+   * ServizioProviderArchivio
    * EMCDocumentumRepositoryProvider
    * IBMFilenetRepositoryProvider
    * FormAugmenter
-   * TaskManagerService
+   * ServizioGestioneAttività
    * ConnettoreGestioneAttività
    * TaskManagerQueryService
    * TaskQueueManager
-   * TaskEndpointManager
+   * GestioneEndpointAttività
    * UserService
    * WorkspaceSearchTemplateService
    * WorkspacePropertyService
    * OutputService
    * FormsService
 
-   Se desideri esporre uno di questi servizi per la chiamata remota, dovresti anche considerare la possibilità di disabilitare l&#39;accesso anonimo per questi servizi. In caso contrario, qualsiasi chiamante con accesso di rete a questo servizio può richiamare il servizio senza passare credenziali valide.
+   Se si intende esporre uno di questi servizi per la chiamata remota, è consigliabile anche disabilitare l&#39;accesso anonimo per questi servizi. In caso contrario, qualsiasi chiamante con accesso di rete al servizio potrebbe richiamare il servizio senza passare credenziali valide.
 
-   L’accesso anonimo deve essere disattivato per tutti i servizi non necessari. Molti servizi interni richiedono l’abilitazione dell’autenticazione anonima perché devono essere richiamati da qualsiasi utente potenzialmente presente nel sistema senza essere preautorizzati.
+   L’accesso anonimo deve essere disabilitato per tutti i servizi non necessari. Molti servizi interni richiedono l&#39;autenticazione anonima perché devono essere richiamati da qualsiasi utente del sistema senza essere pre-autorizzati.
 
 ## Modifica del timeout globale predefinito {#changing-the-default-global-time-out}
 
-Gli utenti finali possono eseguire l’autenticazione in AEM Forms tramite Workbench, le applicazioni web AEM Forms o le applicazioni personalizzate che richiamano i servizi server AEM Forms. Viene utilizzata un’impostazione di timeout globale per specificare per quanto tempo questi utenti possono interagire con AEM Forms (utilizzando un’asserzione basata su SAML) prima di essere costretti a ripetere l’autenticazione. L&#39;impostazione predefinita è di due ore. In un ambiente di produzione, il tempo deve essere ridotto al numero minimo di minuti accettabile.
+Gli utenti finali possono eseguire l’autenticazione in AEM Forms tramite Workbench, applicazioni web AEM Forms o applicazioni personalizzate che richiamano i servizi server di AEM Forms. Viene utilizzata un’impostazione di timeout globale per specificare per quanto tempo tali utenti possono interagire con AEM Forms (utilizzando un’asserzione basata su SAML) prima di essere costretti a ripetere l’autenticazione. L’impostazione predefinita è due ore. In un ambiente di produzione, la quantità di tempo deve essere ridotta al numero minimo di minuti accettabile.
 
-### Limite minimo di tempo per la riautenticazione {#minimize-reauthentication-time-limit}
+### Riduci al minimo il limite di tempo per la riautenticazione {#minimize-reauthentication-time-limit}
 
-1. Accedi alla console di amministrazione digitando il seguente URL in un browser web:
+1. Accedi alla console di amministrazione e digita il seguente URL in un browser web:
 
    ```java
             https://[host name]:'port'/adminui
    ```
 
-1. Fai clic su **Impostazioni > Gestione utente > Configurazione > Importa ed Esporta file di configurazione**.
-1. Fai clic su **Esporta** per produrre un file config.xml con le impostazioni AEM Forms esistenti.
-1. Apri il file XML in un editor e individua la voce seguente:
+1. Clic **Impostazioni > Gestione Utente > Configurazione > Importa Ed Esporta File Di Configurazione**.
+1. Clic **Esporta** per produrre un file config.xml con le impostazioni AEM Forms esistenti.
+1. Apri il file XML in un editor e individua la seguente voce:
 
    `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Modifica il valore in un numero maggiore di 5 (in minuti) e salva il file.
-1. Nella console di amministrazione, passa alla pagina Importa ed esporta file di configurazione.
-1. Immettere il percorso del file config.xml modificato oppure fare clic su Sfoglia per individuarlo.
-1. Fai clic su **Importa** per caricare il file config.xml modificato e quindi fare clic su **OK**.
+1. Nella console di amministrazione, accedi alla pagina Importa ed esporta file di configurazione.
+1. Immettere il percorso del file config.xml modificato o fare clic su Sfoglia per individuarlo.
+1. Clic **Importa** per caricare il file config.xml modificato e quindi fare clic su **OK**.

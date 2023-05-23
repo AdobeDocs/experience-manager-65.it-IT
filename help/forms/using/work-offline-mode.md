@@ -1,7 +1,7 @@
 ---
 title: Utilizzo della modalità offline
 seo-title: Working in the offline mode
-description: Disconnetti il tuo dispositivo mobile al di fuori della gamma di rete AEM Forms o in modalità offline e lavora sull'app AEM Forms
+description: Disconnetti il tuo dispositivo mobile al di fuori dell’intervallo della rete AEM Forms o in modalità completamente offline e lavora sull’app AEM Forms
 seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
 uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
@@ -18,35 +18,35 @@ ht-degree: 0%
 
 # Utilizzo della modalità offline {#working-in-the-offline-mode}
 
-La modalità offline dell’app AEM Forms ti consente di lavorare senza problemi anche se l’app non è in linea. È possibile aprire, aggiornare e inviare un modulo senza richiedere alcuna connettività di rete.
+La modalità offline dell’app AEM Forms consente di lavorare senza problemi anche se l’app va offline. È possibile aprire, aggiornare e inviare un modulo senza richiedere alcuna connettività di rete.
 
-Inizia a lavorare sull’app AEM Forms sincronizzando l’app con il server AEM Forms. Tutti i moduli assegnati all’utente vengono scaricati nell’app. Per AEM Forms su JEE, le attività vengono recuperate nella scheda attività e i punti di partenza associati a moduli e altri moduli nella scheda Forms. Per AEM Forms su OSGi, nella scheda Forms vengono caricati solo Forms.
+Per iniziare a lavorare sull’app AEM Forms, sincronizza l’app con il server AEM Forms. Tutti i moduli assegnati vengono scaricati nell’app. In AEM Forms su JEE, le attività vengono recuperate nella scheda attività e i moduli associati ai punti iniziali e altri moduli nella scheda Forms. Per AEM Forms su OSGi, nella scheda Forms vengono caricati solo Forms.
 
-Per informazioni dettagliate su come sincronizzare l’app, vedi [Sincronizzazione dell’app](/help/forms/using/sync-app.md).
+Per informazioni dettagliate su come sincronizzare l’app, consulta [Sincronizzazione dell’app](/help/forms/using/sync-app.md).
 
-## Forms disponibile offline {#making-forms-available-offline}
+## Come rendere Forms disponibile offline {#making-forms-available-offline}
 
-Quando sincronizzi l’app con il server AEM Forms, i moduli vengono scaricati sul dispositivo mobile. Tuttavia, per impostazione predefinita, gli allegati associati al modulo non vengono scaricati. Ciò implica che se sei online, puoi visualizzare gli allegati. Tuttavia, per assicurarti di poter visualizzare l’allegato in modalità offline, modifica le impostazioni predefinite nell’app.
+Quando sincronizzi l’app con il server AEM Forms, i moduli vengono scaricati sul tuo dispositivo mobile. Tuttavia, per impostazione predefinita, gli allegati associati al modulo non vengono scaricati. Ciò significa che se si è in linea, è possibile visualizzare gli allegati. Tuttavia, per garantire che tu possa visualizzare l’allegato in modalità offline, modifica le impostazioni predefinite nell’app.
 
-Per fare in modo che gli allegati associati siano scaricati con ciascun modulo, impostare gli allegati di recupero su ON. Per maggiori dettagli, vedi [Aggiornamento delle impostazioni generali](/help/forms/using/update-general-settings.md).
+Per assicurarsi che gli allegati associati vengano scaricati con ogni modulo, impostare Recupera allegati su ON. Per ulteriori informazioni, consulta [Aggiornamento delle impostazioni generali](/help/forms/using/update-general-settings.md).
 
-Poiché il download dei dati sul dispositivo mobile può influire sulle prestazioni del dispositivo, per impostazione predefinita, l&#39;impostazione Fetch Allegati è impostata su OFF. Gli allegati vengono recuperati nel dispositivo per qualsiasi attività scaricata dal server dopo l&#39;aggiornamento dell&#39;impostazione su ON. In modalità offline, un utente può quindi lavorare su tutte le attività scaricate sul dispositivo dopo aver impostato il **Recupera allegati** opzioni su ON.
+Poiché il download di dati sul dispositivo mobile può influire sulle prestazioni del dispositivo, per impostazione predefinita l’impostazione Fetch attach (Recupero allegati) è disattivata. Gli allegati vengono recuperati sul dispositivo per tutte le attività scaricate dal server dopo l&#39;aggiornamento dell&#39;impostazione su ON. In modalità offline, un utente può quindi lavorare su tutte le attività scaricate sul dispositivo dopo aver impostato **Recupera allegati** su ON.
 
 ## Configurazione del servizio offline per l’app AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
-Il servizio AEM Forms app offline identifica le risorse utilizzate in un modulo. L’app AEM Forms si basa su questo servizio per ottenere informazioni sulle dipendenze del modulo. Per abilitare le funzionalità offline sono necessarie informazioni sulle dipendenze del modulo. Il servizio AEM Forms app offline memorizza in cache i percorsi o gli URL delle risorse utilizzate in un modulo. La cache viene aggiornata in base alle modifiche apportate al modulo e al periodo di validità configurato per il servizio offline. La memorizzazione nella cache di percorsi o URL delle risorse utilizzate in un modulo migliora le prestazioni lato server.
+Il servizio offline app di AEM Forms identifica le risorse utilizzate in un modulo. L’app AEM Forms si basa su questo servizio per ottenere informazioni sulle dipendenze dei moduli. Per abilitare le funzionalità offline sono necessarie informazioni sulle dipendenze dei moduli. Il servizio offline dell’app AEM Forms memorizza nella cache i percorsi o gli URL delle risorse utilizzate in un modulo. La cache viene aggiornata in base alle modifiche nel modulo e al periodo di validità configurato per il servizio offline. La memorizzazione nella cache di percorsi o URL delle risorse utilizzate in un modulo migliora le prestazioni lato server.
 
 Per configurare il componente offline lato server dell&#39;app AEM Forms:
 
-1. Nell’istanza di authoring, passa a **Adobe Experience Manager** >**Strumenti** > **Forms** > **Configurare il servizio offline app Forms**.
+1. Nell’istanza di authoring, passa a **Adobe Experience Manager** >**Strumenti** > **Forms** > **Configura servizio offline app Forms**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
-1. In Impostazioni generali puoi effettuare le seguenti operazioni:
+1. In Impostazioni generali (General Settings) potete effettuare le seguenti operazioni:
 
-   * **Cancella cache**: Cancella la cache lato server delle dipendenze del modulo.
-   * **Ripristina configurazione**: Ripristina la configurazione offline dell’app AEM Forms.
-   * **Validità cache**: Specifica il periodo di validità della cache offline lato server.
-   * **Percorsi di osservazione delle risorse**: Specifica i percorsi in cui il servizio offline controlla le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, viene aggiornata la cache offline di tutti i moduli dipendenti. Esempio: `/etc/clientlibs/fd,/content/dam/images`.
+   * **Cancella cache**: cancella la cache lato server delle dipendenze del modulo.
+   * **Ripristina configurazione**: reimposta la configurazione offline dell’app AEM Forms.
+   * **Validità cache**: specifica il periodo di validità per la cache offline lato server.
+   * **Percorsi di osservazione delle risorse**: specifica i percorsi in cui il servizio offline monitora le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Esempio: `/etc/clientlibs/fd,/content/dam/images`.
 
-1. In **Cache delle risorse manuali** scheda , specifica che il servizio offline dipendenze modulo non può identificare. Puoi specificare risorse quali le immagini caricate da JavaScript. L’app AEM Forms scaricherà anche queste risorse per la modalità offline.
+1. In **Cache risorse manuale** , specificare le dipendenze del modulo che il servizio offline non è in grado di identificare. È possibile specificare risorse quali immagini caricate da JavaScript. L’app AEM Forms scaricherà queste risorse anche per la modalità offline.

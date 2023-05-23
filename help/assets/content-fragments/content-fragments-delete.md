@@ -35,11 +35,11 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 >[!NOTE]
 >
->Quando un utente non dispone di [Elimina](/help/sites-administering/security.md#actions) autorizzazioni, l’editor Frammento di contenuto funziona in *sola lettura* modalità.
+>Quando un utente non ha [Elimina](/help/sites-administering/security.md#actions) , l’editor di frammenti di contenuto funziona in *sola lettura* modalità.
 
 >[!NOTE]
 >
->Vedi anche [Controllare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
+>Vedi anche [Come controllare le operazioni di gestione degli utenti in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Autorizzazioni necessarie solo per la funzionalità dell’editor {#permissions-required-for-editor-functionality-only}
 
@@ -49,7 +49,7 @@ Ad esempio, quando si manipolano le varianti, ma anche durante la modifica dei m
 
 >[!NOTE]
 >
->Le autorizzazioni di eliminazione, necessarie per modificare/aggiornare un frammento di contenuto, sono incluse nell’autorizzazione Elimina [assegnato tramite Gestione utenti e/o gruppi](/help/sites-administering/security.md#managing-permissions).
+>Le autorizzazioni di eliminazione, necessarie per modificare o aggiornare un frammento di contenuto, sono incluse nell’autorizzazione Elimina [assegnati tramite la gestione degli utenti e/o dei gruppi](/help/sites-administering/security.md#managing-permissions).
 
 Le autorizzazioni necessarie per modificare o aggiornare un frammento devono essere applicate al nodo contenente il frammento di contenuto o a un nodo principale appropriato (a qualsiasi livello in `/content/dam`). Le autorizzazioni assegnate a un nodo principale vengono applicate a tutti i nodi al suo interno.
 
@@ -81,9 +81,9 @@ I prerequisiti di autorizzazione per consentire a un utente e/o gruppo specifico
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Tali `remove` i privilegi devono essere [amministrato tramite elenchi di controllo di accesso, in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Questi `remove` i privilegi devono essere [amministrato tramite gli elenchi di controllo di accesso, in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-La `add` e `modify` è inoltre possibile amministrare i privilegi in CRXDE Lite o utilizzare la console Gestione utente.
+Il `add` e `modify` I privilegi possono essere amministrati anche in CRXDE Lite o utilizzando la console Gestione utente.
 
 Ad esempio, la definizione di `remove` privilegi per un gruppo `content-authors-no-delete`:
 

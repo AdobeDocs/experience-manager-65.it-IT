@@ -1,6 +1,6 @@
 ---
-title: Utilizzare l’imaging intelligente con il rapporto pixel del dispositivo lato client
-description: Scopri come utilizzare il rapporto pixel del dispositivo lato client con Smart imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
+title: Utilizzo di Smart Imaging con proporzioni pixel del dispositivo lato client
+description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
@@ -10,27 +10,27 @@ ht-degree: 0%
 
 ---
 
-# Informazioni sull’imaging intelligente con rapporto pixel del dispositivo lato client (DPR) {#client-side-dpr}
+# Informazioni sulla tecnologia Smart Imaging con rapporto pixel del dispositivo lato client (DPR) {#client-side-dpr}
 
-La soluzione di imaging avanzato corrente utilizza le stringhe dell&#39;agente utente per determinare il tipo di dispositivo (desktop, tablet, dispositivi mobili e così via) utilizzato.
+La soluzione di Smart Imaging corrente utilizza stringhe dell’agente utente per determinare il tipo di dispositivo (desktop, tablet, dispositivi mobili e così via) utilizzato.
 
-Le funzionalità di rilevamento dei dispositivi (DPR basato su stringhe dell’agente utente) sono spesso imprecise, soprattutto per i dispositivi Apple. Inoltre, ogni volta che un nuovo dispositivo viene avviato, deve essere convalidato.
+Le funzionalità di rilevamento dei dispositivi (DPR basato sulle stringhe dell’agente utente) sono spesso imprecise, soprattutto per i dispositivi Apple. Inoltre, ogni volta che viene avviato un nuovo dispositivo, questo deve essere convalidato.
 
-Il DPR lato client fornisce valori precisi al 100% e funziona per qualsiasi dispositivo, sia che si tratti di Apple o di qualsiasi altro nuovo dispositivo avviato.
+Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dispositivo, sia esso Apple o qualsiasi altro nuovo dispositivo avviato.
 
-## Usa il codice DPR lato client
+## Utilizzare il codice DPR lato client
 
-**App rappresentate lato server**
+**App con rendering lato server**
 
-1. Carica iniziale lavoratore del servizio (`srvinit.js`) includendo il seguente script nella sezione intestazione della pagina HTML:
+1. Carica processo di lavoro del servizio in corso (`srvinit.js`) includendo il seguente script nella sezione di intestazione della pagina HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe consiglia di caricare questo script _prima_ qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
+   L’Adobe consiglia di caricare questo script _prima di_ qualsiasi altro script in modo che service worker inizi immediatamente l&#39;inizializzazione.
 
-1. Includi il seguente codice tag immagine DPR nella parte superiore della sezione corpo della pagina HTML:
+1. Includi il seguente codice tag immagine DPR nella parte superiore della sezione body della pagina HTML:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -41,9 +41,9 @@ Il DPR lato client fornisce valori precisi al 100% e funziona per qualsiasi disp
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   È obbligatorio includere questo codice di tag immagine DPR _prima_ tutte le immagini statiche presenti nella pagina HTML.
+   È necessario includere il codice tag immagine DPR _prima di_ tutte le immagini statiche nella pagina HTML.
 
-**App sottoposte a rendering lato client**
+**App con rendering lato client**
 
 1. Includi i seguenti script DPR nella sezione di intestazione della pagina HTML:
 
@@ -54,12 +54,12 @@ Il DPR lato client fornisce valori precisi al 100% e funziona per qualsiasi disp
 
    È possibile combinare entrambi gli script DPR in uno per evitare più richieste di rete.
 
-   Adobe consiglia di caricare questi script _prima_ qualsiasi altro script nella pagina HTML.
-Adobe consiglia inoltre di Bootstrap l’app sotto il tag HTML diff anziché un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione corpo della pagina HTML.
+   L’Adobe consiglia di caricare questi script _prima di_ qualsiasi altro script nella pagina HTML.
+L’Adobe consiglia inoltre di eseguire la Bootstrap dell’app con il tag HTML diff anziché con un elemento body. Il motivo è perché `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
 
 ## Download di file JavaScript {#client-side-dpr-script}
 
-I seguenti file JavaScript nel download vengono forniti solo come riferimento di esempio. Se si desidera utilizzare questi file nelle pagine di HTML, assicurarsi di modificare il codice di ciascun file in base alle proprie esigenze.
+I seguenti file JavaScript nel download sono forniti solo come riferimento di esempio. Se intendi utilizzare questi file nelle pagine di HTML, assicurati di modificare il codice di ciascun file in base alle tue esigenze.
 
 * `dprImageInjection.js`
 * `srvinit.js`

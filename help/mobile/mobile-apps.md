@@ -1,5 +1,5 @@
 ---
-title: Mobile-Apps
+title: Mobile-App
 seo-title: Mobile-Apps
 description: "Mobile-Apps"
 seo-description: null
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 ---
 
-# Mobile-Apps{#mobile-apps}
+# Mobile-App{#mobile-apps}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di installazione, consentendo alle aziende di utilizzare una varietà di fonti di contenuto.
+Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di implementazione, consentendo alle aziende di utilizzare una varietà di origini di contenuto.
 
-AEM Mobile offre diversi metodi per creare le app. I diversi modi che puoi utilizzare per creare le app sono:
+AEM Mobile offre diversi metodi per la creazione di app. I diversi modi in cui puoi creare le app sono:
 
 * [Guida introduttiva ad AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
-* [Guida introduttiva ad Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
+* [Guida introduttiva di Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
 
 >[!NOTE]
 >
->Se hai poca esperienza con Adobe Experience Manager, ti consigliamo di seguire le istruzioni riportate di seguito. [Guida introduttiva a AEM](/help/sites-deploying/deploy.md).
+>Se hai poca esperienza con Adobe Experience Manager, potresti voler esaminare [Guida introduttiva all’AEM](/help/sites-deploying/deploy.md).

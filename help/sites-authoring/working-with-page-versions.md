@@ -1,6 +1,6 @@
 ---
-title: Operazioni con le versioni delle pagine di contenuto
-description: Creare, confrontare e ripristinare versioni di una pagina
+title: Utilizzare le versioni delle pagine di contenuto
+description: Creare, confrontare e ripristinare le versioni di una pagina
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,18 +18,18 @@ ht-degree: 66%
 
 # Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
-Il controllo delle versioni crea uno &quot;snapshot&quot; di una pagina in un momento specifico. Con il controllo delle versioni è possibile eseguire le seguenti operazioni:
+Il controllo delle versioni crea un&#39;istantanea di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
 * Crea una versione di una pagina.
-* Ripristinare una versione precedente di una pagina per annullare, ad esempio, una modifica apportata a una pagina.
-* Confronta la versione corrente di una pagina con una versione precedente con le differenze nel testo e nelle immagini evidenziate.
+* Ripristina una pagina a una versione precedente per annullare una modifica apportata, ad esempio, a una pagina.
+* Confronta la versione corrente di una pagina con una versione precedente, evidenziando differenze nel testo e nelle immagini.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
 
 Puoi creare una versione della risorsa da:
 
-* la [Barra laterale Timeline](#creating-a-new-version-timeline)
-* la [Crea](#creating-a-new-version-create-with-a-selected-resource) opzione (quando è selezionata una risorsa)
+* il [Barra Timeline](#creating-a-new-version-timeline)
+* il [Crea](#creating-a-new-version-create-with-a-selected-resource) opzione (quando è selezionata una risorsa)
 
 ### Creazione di una nuova versione - Timeline {#creating-a-new-version-timeline}
 
@@ -38,10 +38,10 @@ Puoi creare una versione della risorsa da:
 1. Apri **Timeline** colonna.
 1. Tocca o fai clic sulla freccia accanto al campo del commento per visualizzare le opzioni:
 
-   ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
+   ![schermata_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
 1. Seleziona **Salva come versione**.
-1. Inserisci un **Etichetta** e **Commento** se necessario.
+1. Immetti un **Etichetta** e **Commento** se necessario.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -89,22 +89,22 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 >1. Crea versioni di qualsiasi pagina.
 >1. Le etichette iniziali e i nomi dei nodi di versione saranno 1.0, 1.1, 1.2 e così via.
 >1. Ripristina la prima versione, ovvero 1.0.
->1. Crea di nuovo nuove versioni.
->1. Le etichette generate e i nomi dei nodi saranno ora 1.0.0, 1.0.1, 1.0.2, ecc.
+>1. Crea di nuovo le nuove versioni.
+>1. Le etichette e i nomi dei nodi generati saranno ora 1.0.0, 1.0.1, 1.0.2, ecc.
 
 
 ### Ripristina una versione {#revert-to-a-version}
 
 Per **ripristinare** la pagina selezionata in una versione precedente:
 
-1. Passa alla pagina da ripristinare a una versione precedente.
+1. Passa alla pagina in cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
-1. Seleziona la versione da ripristinare. Verranno visualizzate le opzioni possibili:
+1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni possibili:
 
    ![Ripristina questa versione](assets/screen-shot_2019-03-05at112505.png)
 
-1. Seleziona **Ripristina questa versione**. La versione selezionata viene ripristinata e le informazioni nella timeline vengono aggiornate.
+1. Seleziona **Ripristina questa versione**. La versione selezionata verrà ripristinata e le informazioni nella timeline verranno aggiornate.
 
 ### Ripristina versione {#restore-version}
 
@@ -166,10 +166,10 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
 Puoi visualizzare in anteprima una versione specifica:
 
-1. Passa alla pagina da confrontare.
+1. Passare alla pagina che si desidera confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
-1. Vengono elencate le versioni disponibili. Seleziona la versione da visualizzare in anteprima:
+1. Verranno elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
@@ -177,23 +177,23 @@ Puoi visualizzare in anteprima una versione specifica:
 
    >[!CAUTION]
    >
-   >Se una pagina è stata spostata, non è più possibile eseguire un’anteprima sulle versioni eseguite prima dello spostamento.
+   >Se una pagina è stata spostata, non è più possibile eseguire un&#39;anteprima sulle versioni create prima dello spostamento.
    >
-   >* Se riscontri dei problemi con un&#39;anteprima, controlla il [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
+   >* Se riscontri problemi con un’anteprima, controlla [Timeline](/help/sites-authoring/basic-handling.md#timeline) affinché la pagina possa vedere se è stata spostata.
 
 
 ## Confronto di una versione con la pagina corrente {#comparing-a-version-with-current-page}
 
 Per confrontare una versione precedente con la pagina corrente:
 
-1. Passa alla pagina da confrontare.
+1. Passare alla pagina che si desidera confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
-1. Vengono elencate le versioni disponibili. Seleziona la versione da confrontare:
+1. Verranno elencate le versioni della pagina. Seleziona la versione da confrontare:
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Seleziona **Confronta con corrente**. La [differenze tra pagine](/help/sites-authoring/page-diff.md) apre e visualizza le differenze.
+1. Seleziona **Confronta con corrente**. Il [differenze di pagina](/help/sites-authoring/page-diff.md) apre e visualizza le differenze.
 
 ## Timewarp   {#timewarp}
 
@@ -201,7 +201,7 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 
 >[!TIP]
 >
->[Timewarp può essere utilizzato anche con Lanci per visualizzare in anteprima il futuro](/help/sites-authoring/launches.md) quando si esegue AEM 6.5.10.0 o versione successiva.
+>[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime](/help/sites-authoring/launches.md) con AEM 6.5.10.0 o versione successiva.
 
 Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo da comprendere in che modo è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
@@ -214,19 +214,19 @@ Per effettuare questo collegamento:
 
 ### Utilizzo di Timewarp {#using-timewarp}
 
-Timewarp è un [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) dell’editor di pagine. Per avviarlo, è sufficiente attivarlo come per qualsiasi altra modalità.
+Timewarp è un [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
 
 1. Avvia l’editor per la pagina in cui desideri avviare Timewarp, quindi seleziona **Timewarp** nella selezione della modalità.
 
-   ![wpv-01](assets/wwpv-01.png)
+   ![wwpv-01](assets/wwpv-01.png)
 
 1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e tocca o fai clic su **Imposta data**. Se non si seleziona un’ora, per impostazione predefinita verrà utilizzata l’ora corrente.
 
-   ![wpv-02](assets/wwpv-02.png)
+   ![wwpv-02](assets/wwpv-02.png)
 
-1. La pagina viene visualizzata in base alla data impostata. La modalità Timewarp è indicata dalla barra di stato blu nella parte superiore della finestra. Utilizza i collegamenti nella barra di stato per selezionare una nuova data di destinazione o uscire dalla modalità Timewarp.
+1. La pagina viene visualizzata in base al set di date. La modalità Timewarp è indicata dalla barra di stato blu nella parte superiore della finestra. Utilizza i collegamenti nella barra di stato per selezionare una nuova data di destinazione o uscire dalla modalità Timewarp.
 
-   ![wpv-03](assets/wwpv-03.png)
+   ![wwpv-03](assets/wwpv-03.png)
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
@@ -242,4 +242,4 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 
 >[!CAUTION]
 >
->Timewarp è uno strumento utile per aiutare gli autori a comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.
+>Timewarp è uno strumento progettato per aiutare gli autori a comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.

@@ -1,5 +1,5 @@
 ---
-title: Configurare il progetto Android Studio e creare l'app Android
+title: Configurare il progetto Android Studio e creare l’app Android
 seo-title: Set up the Android studio project and build the Android app
 description: Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l’app AEM Forms
 seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
@@ -16,85 +16,85 @@ ht-degree: 7%
 
 ---
 
-# Configurare il progetto Android Studio e creare l&#39;app Android {#set-up-the-android-studio-project-and-build-the-android-app}
+# Configurare il progetto Android Studio e creare l’app Android {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Questo articolo è per la creazione di AEM Forms App 6.3.1.1 e versioni successive. Per la creazione di un&#39;app dal codice sorgente del codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
+Questo articolo è destinato alla creazione dell’app AEM Forms 6.3.1.1 e versioni successive. Per creare un’app dal codice sorgente del codice sorgente dell’app AEM Forms 6.3, consulta [Configurare il progetto Eclipse e creare l’app Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. La sorgente contiene tutti i componenti per creare un’app AEM Forms personalizzata. archivio del codice sorgente, `adobe-lc-mobileworkspace-src-<version>.zip` fa parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione software.
+AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per creare un’app AEM Forms personalizzata. L’archivio del codice sorgente, `adobe-lc-mobileworkspace-src-<version>.zip` fa parte di `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla Distribuzione di software.
 
-Per ottenere la sorgente dell’app AEM Forms, esegui i seguenti passaggi:
+Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
-   2. Seleziona la versione e digita il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Download di ricerca]** per filtrare i risultati.
-1. Toccare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accettare i termini dell&#39;EULA]**, e tocca **[!UICONTROL Scarica]**.
+   2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
+1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-L’immagine seguente visualizza il contenuto estratto del `adobe-lc-mobileworkspace-src-<version>.zip`.
+Nell&#39;immagine seguente viene visualizzato il contenuto estratto del `adobe-lc-mobileworkspace-src-<version>.zip`.
 
-![Contenuto estratto della sorgente Android™ zippata](assets/mws-content-1.png)
+![Contenuto estratto dell’origine Android™ compressa](assets/mws-content-1.png)
 
-Nell&#39;immagine seguente viene visualizzata la struttura di directory del `android`nella cartella `src`cartella.
+Nell&#39;immagine seguente viene visualizzata la struttura di directory del `android`cartella in `src`cartella.
 
-![Struttura della directory della cartella android in src](assets/android-folder.png)
+![Struttura di directory della cartella Android in src](assets/android-folder.png)
 
 ## Creare un’app AEM Forms standard {#set-up-the-xcode-project}
 
-1. Esegui i seguenti passaggi per configurare un progetto in Android™ Studio e fornire un’identità di firma:
+1. Per configurare un progetto in Android™ Studio e fornire un’identità di firma, effettua le seguenti operazioni:
 
-   Accedi a un computer con Android™ Studio installato e configurato.
+   Accedi a un computer in cui è installato e configurato Android™ Studio.
 
-1. Copia il download `adobe-lc-mobileworkspace-src-<version>.zip` archiviare in:
+1. Copia il scaricato `adobe-lc-mobileworkspace-src-<version>.zip` archivia in:
 
    **Per gli utenti MAC**: `[User_Home]/Projects`
 
-   **Per utenti Windows®**: `%HOMEPATH%\Projects`
+   **Per gli utenti Windows®**: `%HOMEPATH%\Projects`
 
    >[!NOTE]
    >
-   >Per Windows®, si consiglia di mantenere il progetto android nell&#39;unità di sistema.
+   >Per Windows®, si consiglia di mantenere il progetto Android nell&#39;unità di sistema.
 
 1. Estrai l’archivio nella seguente directory:
 
    **Per gli utenti MAC**: `[User_Home]/Projects/[your-project]`
 
-   **Per utenti Windows®**: `%HOMEPATH%\Projects\[your-project]`
+   **Per gli utenti Windows®**: `%HOMEPATH%\Projects\[your-project]`
 
    >[!NOTE]
    >
-   >Si consiglia di mantenere il progetto android estratto nell’unità di sistema prima di importare il progetto in Android Studio.
+   >Si consiglia di conservare il progetto Android estratto nell&#39;unità di sistema prima di importarlo in Android Studio.
 
 1. Avvia Android™ Studio.
 
-   **Per gli utenti MAC**: Aggiorna `local.properties` file presente nel `[User_Home]/Projects/[your-project]/android` la cartella e il punto `sdk.dir` variabile a `SDK` sul desktop.
+   **Per gli utenti MAC**: aggiorna il `local.properties` file presente in `[User_Home]/Projects/[your-project]/android` cartella e puntare `sdk.dir` variabile a `SDK` sul desktop.
 
-   **Per utenti Windows®**: Aggiorna `local.properties` file presente nel `%HOMEPATH%\Projects\[your-project]\android` la cartella e il punto `sdk.dir` variabile a `SDK` sul desktop.
+   **Per gli utenti Windows®**: aggiorna il `local.properties` file presente in `%HOMEPATH%\Projects\[your-project]\android` cartella e puntare `sdk.dir` variabile a `SDK` sul desktop.
 
-1. Fai clic su **[!UICONTROL Fine]** per creare il progetto.
+1. Clic **[!UICONTROL Fine]** per generare il progetto.
 
-   Il progetto è disponibile in ADT Project Explorer.
+   Il progetto è disponibile in Gestione progetti ADT.
 
-   ![progetto eclipse dopo la creazione dell&#39;app](assets/eclipsebuildmws.png)
+   ![progetto eclipse dopo la creazione dell’app](assets/eclipsebuildmws.png)
 
-1. In Android™ Studio, seleziona **[!UICONTROL Progetto Di Importazione (Eclipse ADT, Gradle, Ecc.)]**.
-1. Nell’explorer del progetto, seleziona la directory principale del progetto che desideri creare nel **Directory principale** casella di testo:
+1. In Android™ Studio, seleziona **[!UICONTROL Importa progetto (Eclipse ADT, Gradle, Ecc.)]**.
+1. In Esplora progetti, seleziona la directory principale del progetto che desideri creare in **Directory principale** casella di testo:
 
-   **Per gli utenti Mac:** [Utente_Home]/Projects/MobileWorkspace/src/android
+   **Per gli utenti di Mac:** [User_Home]/Projects/MobileWorkspace/src/android
 
-   **Per gli utenti Windows®:** %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Per gli utenti di Windows®:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
-1. Dopo l&#39;importazione del progetto, viene visualizzato un pop-up con l&#39;opzione per aggiornare il livello del plug-in Android™. Fai clic sul pulsante appropriato a seconda delle tue esigenze.
+1. Dopo l’importazione del progetto, viene visualizzato un pop-up con l’opzione di aggiornamento del plug-in Android™ Gradle. Fai clic sul pulsante appropriato a seconda delle tue esigenze.
 
-   ![dontremindmeagainotisproject](assets/dontremindmeagainforthisproject.png)
+   ![dontremindmeagainwithisproject](assets/dontremindmeagainforthisproject.png)
 
-1. Dopo la generazione gradle corretta, viene visualizzata la seguente schermata. Collegare il dispositivo o l&#39;emulatore appropriato al sistema e fare clic su **[!UICONTROL Esegui Android™]**.
+1. Dopo aver generato la gradle, viene visualizzata la seguente schermata. Collegare il dispositivo o l&#39;emulatore appropriato al sistema e fare clic su **[!UICONTROL Esegui Android™]**.
 
    ![gradleconsole](assets/gradleconsole.png)
 
-1. Android™ Studio visualizza i dispositivi collegati e gli emulatori disponibili. Selezionare il dispositivo sul quale si desidera eseguire l&#39;applicazione, quindi fare clic su **OK**.
+1. Android™ Studio visualizza i dispositivi collegati e gli emulatori disponibili. Selezionare il dispositivo su cui si desidera eseguire l&#39;applicazione e quindi fare clic su **OK**.
 
    ![connecteddevice](assets/connecteddevice.png)
 
@@ -106,4 +106,4 @@ Dopo aver creato il progetto, puoi scegliere di installare l’app utilizzando A
 
 **Per gli utenti MAC**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
-**Per utenti Windows®**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
+**Per gli utenti Windows®**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`

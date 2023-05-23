@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dei punti iniziali
+title: Utilizzo dei punti d'inizio
 seo-title: Working with Startpoints
 description: Passaggi per lavorare con un processo AEM Forms dal dispositivo mobile definito in Workbench.
 seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
@@ -17,35 +17,35 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo dei punti iniziali{#working-with-startpoints}
+# Utilizzo dei punti d&#39;inizio{#working-with-startpoints}
 
-Un punto di avvio richiama un processo creato in Workbench. È associato a un modulo che richiama il processo al momento dell’invio del modulo.
+Un punto iniziale richiama un processo creato in Workbench. È associata a un modulo che richiama il processo quando il modulo viene inviato.
 
 >[!NOTE]
 >
->I termini start point, start process e form vengono utilizzati in modo intercambiabile quando si fa riferimento a questo concetto.
+>I termini punti iniziali, processo iniziale e modulo vengono utilizzati in modo intercambiabile quando si fa riferimento a questo concetto.
 
-Per avviare un processo dall’app AEM Forms, devi disporre di un punto di partenza di tipo **Area di lavoro** nel tuo processo. Inoltre, è necessario selezionare il **[!UICONTROL Visibile in Workspace mobile]** per il punto iniziale.
+Per avviare un processo dall’app AEM Forms, devi disporre di un punto d’inizio di tipo **Workspace** nel processo. Inoltre, è necessario selezionare **[!UICONTROL Visibile in Mobile Workspace]** per il punto d&#39;inizio.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Per avviare un processo definito in Workbench**
 
-1. Per visualizzare i punti iniziali disponibili nell’app AEM Forms, passa a [Schermata principale](../../forms/using/home-screen.md).
-1. Sulla **[!UICONTROL Pagina principale]** per impostazione predefinita, la **[!UICONTROL Tutti i Forms]** viene visualizzato l&#39;elenco.
+1. Per visualizzare i punti d&#39;inizio disponibili nell&#39;app AEM Forms, vai a [Schermata iniziale](../../forms/using/home-screen.md).
+1. Il giorno **[!UICONTROL Home]** schermata, per impostazione predefinita, la **[!UICONTROL Tutti i Forms]** viene visualizzato l&#39;elenco.
 
-   Il punto iniziale è associato a un modulo. Toccare il modulo associato all’interno dell’elenco per aprirlo.
+   Il punto iniziale è associato a un modulo. Toccare il modulo associato al punto d&#39;inizio nell&#39;elenco per aprirlo.
 
-   Viene visualizzato il modulo associato al punto iniziale.
+   Viene aperto il modulo associato al punto d&#39;inizio.
 
-1. Immetti i dettagli nella **[!UICONTROL Startpoint]** modulo.
+1. Inserisci i dettagli in **[!UICONTROL Punto d&#39;inizio]** modulo.
 
-   È possibile aggiungere annotazioni a questa attività utilizzando [attacco](../../forms/using/add-attachments.md) pulsante .
+   È possibile aggiungere annotazioni a questa attività utilizzando [allegato](../../forms/using/add-attachments.md) pulsante.
 
-1. Dopo aver compilato il modulo, tocca **[!UICONTROL Invia]** pulsante .
+1. Dopo aver compilato il modulo, tocca il **[!UICONTROL Invia]** pulsante.
 
-Se l’app è offline, il modulo e i relativi dati vengono salvati nella cartella Posta in uscita.
+Se l&#39;app non è in linea, il modulo e i relativi dati vengono salvati nella cartella Posta in uscita.
 
-Se l’app è online, l’attività viene sincronizzata con il server AEM Forms e assegnata all’utente specificato nel processo.
+Se l&#39;app è online, l&#39;attività viene sincronizzata con il server AEM Forms e assegnata all&#39;utente specificato nel processo.
 
 Per utilizzare l&#39;attività nell&#39;elenco delle attività, vedere [Apertura di un’attività](/help/forms/using/open-task.md).

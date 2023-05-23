@@ -130,7 +130,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione senza testa AEM prossimo revisione del documento [Configura le regole di traduzione,](translation-rules.md) dove imparerai a definire quale contenuto tradurre.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Configurare le regole di traduzione,](translation-rules.md) dove imparerai a definire quale contenuto tradurre.
 
 ## Risorse aggiuntive {#additional-resources}
 

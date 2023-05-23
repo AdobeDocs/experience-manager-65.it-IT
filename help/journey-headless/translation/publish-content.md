@@ -71,7 +71,7 @@ In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e p
    ![Opzioni di Gestisci pubblicazione](assets/manage-publication-options.png)
 1. Nella prossima finestra **Gestisci pubblicazione**, conferma che i percorsi corretti siano selezionati. Tocca o fai clic su **Pubblica**.
    ![Ambito di Gestisci pubblicazione](assets/manage-publication-scope.png)
-1. AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
+1. L’AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
    ![Banner risorse pubblicate](assets/resources-published-message.png)
 
 Il contenuto headless tradotto è ora pubblicato. È ora possibile accedervi e utilizzarli dai servizi headless.
@@ -110,7 +110,7 @@ Il contenuto viene aggiunto al progetto di traduzione esistente. Per visualizzar
 1. Tocca o fai clic sul progetto appena aggiornato.
 1. Tocca o fai clic sulla lingua o su una delle lingue aggiornate.
 
-Le nuove schede di lavoro vengono aggiunte al progetto come appropriato.
+Al progetto vengono aggiunte le nuove schede dei processi, in base alle necessità.
 
 <!--
 You see that a new job card was added to the project. In this example, another Spanish translation was added.

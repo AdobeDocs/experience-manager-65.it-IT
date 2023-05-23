@@ -1,7 +1,7 @@
 ---
-title: Analytics con fornitori esterni
+title: Analytics con provider esterni
 seo-title: Analytics with External Providers
-description: Scopri di più su Analytics con fornitori esterni.
+description: Scopri Analytics con provider esterni.
 seo-description: Learn about Analytics with External Providers.
 uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
@@ -14,22 +14,22 @@ exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
-# Analytics con fornitori esterni {#analytics-with-external-providers}
+# Analytics con provider esterni {#analytics-with-external-providers}
 
-Analytics può fornire informazioni importanti e interessanti sull’utilizzo del sito web.
+Analytics può fornirti informazioni importanti e interessanti su come viene utilizzato il tuo sito web.
 
-Sono disponibili diverse configurazioni predefinite per l’integrazione con il servizio appropriato, ad esempio:
+Sono disponibili diverse configurazioni pronte all’uso per l’integrazione con il servizio appropriato, ad esempio:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Puoi anche configurare la tua istanza di **Frammenti generici di Analytics** per definire una nuova configurazione del servizio.
+Puoi anche configurare una tua istanza di **Snippet generici di analisi** per definire una nuova configurazione di servizio.
 
-Le informazioni vengono quindi raccolte tramite piccoli frammenti di codice che vengono aggiunti alle pagine web. Esempio:
+Le informazioni vengono quindi raccolte tramite piccoli frammenti di codice che vengono aggiunti alle pagine web. Ad esempio:
 
 >[!CAUTION]
 >
@@ -47,10 +47,10 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dati effettivi raccolti dipendono dal provider e dallo snippet di codice effettivo utilizzato. Le statistiche di esempio includono:
+Tali snippet consentono la raccolta dei dati e la generazione dei rapporti. I dati effettivi raccolti dipendono dal provider e dal frammento di codice effettivo utilizzato. Le statistiche di esempio includono:
 
 * quanti visitatori nel tempo
-* quante pagine sono state visitate
+* quante pagine visitate
 * termini di ricerca utilizzati
 * pagine di destinazione
 
@@ -58,51 +58,51 @@ Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dat
 >
 >Il sito demo Geometrixx-Outdoors è configurato in modo che gli attributi forniti nelle Proprietà pagina vengano aggiunti al codice sorgente html (appena sopra il `</html>` endtag) nel corrispondente `js` script.
 >
->Se il tuo `/apps` non ereditano dal componente pagina predefinito ( `/libs/foundation/components/page`) devi assicurarti (o i tuoi sviluppatori) che il `js` gli script sono inclusi, ad esempio, includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
+>Se il tuo `/apps` non ereditare dal componente pagina predefinito ( `/libs/foundation/components/page`) tu (o i tuoi sviluppatori) devi assicurarti che il corrispondente `js` gli script sono inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
 >
 >In caso contrario, nessuno dei servizi (Generico, Analytics, Target, ecc.) funzionerà.
 
-## Creazione di un nuovo servizio con un frammento generico {#creating-a-new-service-with-a-generic-snippet}
+## Creazione di un nuovo servizio con uno snippet generico {#creating-a-new-service-with-a-generic-snippet}
 
 Per la configurazione di base:
 
 1. Apri **Strumenti** console.
-1. Espandi il riquadro a sinistra **Configurazioni Cloud Services**.
-1. Fai doppio clic su **Frammento di analisi generico** per aprire la pagina:
+1. Dal riquadro di sinistra espandere **Configurazioni Cloud Services**.
+1. Doppio clic su **Snippet generico di analisi** per aprire la pagina:
 
    ![](assets/analytics_genericoverview.png)
 
-1. Fai clic sul segno + per aggiungere una nuova configurazione utilizzando la finestra di dialogo; almeno assegna un nome, ad esempio google analytics:
+1. Fai clic sul + per aggiungere una nuova configurazione utilizzando la finestra di dialogo; assegna almeno un nome, ad esempio Google Analytics:
 
    ![](assets/analytics_addconfig.png)
 
-1. Fai clic su **Crea**, la finestra di dialogo snippet si aprirà immediatamente - incolla lo snippet javascript appropriato nel campo :
+1. Clic **Crea**, la finestra di dialogo snippet si apre immediatamente - incolla il frammento javascript appropriato nel campo:
 
    ![](assets/analytics_snippet.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Clic **OK** per salvare.
 
 ## Utilizzo del nuovo servizio nelle pagine {#using-your-new-service-on-pages}
 
-Dopo aver creato la configurazione del servizio è ora necessario configurare le pagine necessarie per utilizzarla:
+Dopo aver creato la configurazione del servizio, è ora necessario configurare le pagine richieste per utilizzarla:
 
-1. Passa alla pagina .
-1. Apri **Proprietà pagina** dalla barra laterale, quindi il **Cloud Services** scheda .
-1. Fai clic su **Aggiungi servizio**, quindi seleziona il servizio richiesto; ad esempio **Frammento di analisi generico**:
+1. Passa alla pagina.
+1. Apri **Proprietà pagina** dalla barra laterale, quindi **Cloud Services** scheda.
+1. Clic **Aggiungi servizio**, quindi selezionare il servizio richiesto, ad esempio **Snippet generico di analisi**:
 
    ![](assets/analytics_selectservice.png)
 
-1. Fate clic su **OK** per salvare. 
-1. Verrà restituito al **Cloud Services** scheda . La **Frammento di analisi generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica; per esempio google-analytics:
+1. Clic **OK** per salvare.
+1. Verrai reindirizzato al **Cloud Services** scheda. Il **Snippet generico di analisi** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica, ad esempio google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Clic **OK** per salvare.
 
-   Lo snippet può ora essere visualizzato se visualizzi l’origine pagina per la pagina.
+   Lo snippet può ora essere visualizzato se si visualizza l’Origine pagina della pagina.
 
-   Una volta trascorso un adeguato periodo di tempo, potrai visualizzare le statistiche raccolte.
+   Trascorso un periodo di tempo adeguato, potrai visualizzare le statistiche raccolte.
 
    >[!NOTE]
    >
-   >Se la configurazione è associata a una pagina con pagine figlie, anche il servizio viene ereditato da tali pagine.
+   >Se la configurazione è associata a una pagina che ha pagine figlie, il servizio viene ereditato anche da queste.

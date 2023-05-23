@@ -23,13 +23,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Questo articolo riguarda la configurazione degli indici nel AEM 6. Per le best practice sull’ottimizzazione delle prestazioni di query e indicizzazione, consulta [Tecniche consigliate per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Questo articolo riguarda la configurazione degli indici in AEM 6. Per le best practice sull’ottimizzazione delle prestazioni di query e indicizzazione, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Introduzione {#introduction}
 
-A differenza di Jackrabbit 2, Oak non indicizza il contenuto per impostazione predefinita. Gli indici personalizzati devono essere creati quando necessario, proprio come con i database relazionali tradizionali. Se non è presente un indice per una query specifica, è possibile che molti nodi vengano attraversati. La query può ancora funzionare ma probabilmente è molto lenta.
+A differenza di Jackrabbit 2, Oak non indicizza il contenuto per impostazione predefinita. Quando necessario, è necessario creare indici personalizzati, in modo analogo a quanto avviene con i database relazionali tradizionali. Se non esiste un indice per una query specifica, verranno probabilmente attraversati molti nodi. La query può ancora funzionare, ma è probabilmente molto lenta.
 
-Se Oak incontra una query senza un indice, viene stampato un messaggio di log a livello WARN:
+Se Oak rileva una query senza un indice, viene stampato un messaggio di registro di livello WARN:
 
 ```xml
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
@@ -37,7 +37,7 @@ Se Oak incontra una query senza un indice, viene stampato un messaggio di log a 
 
 ## Lingue di query supportate {#supported-query-languages}
 
-Il motore di query Oak supporta le seguenti lingue:
+Il motore di query Oak supporta i seguenti linguaggi:
 
 * XPath (consigliato)
 * SQL-2
@@ -46,109 +46,109 @@ Il motore di query Oak supporta le seguenti lingue:
 
 ## Tipi di indicizzatore e calcolo dei costi {#indexer-types-and-cost-calculation}
 
-Il backend basato su Apache Oak consente di collegare diversi indicizzatori nell’archivio.
+Il backend basato su Apache Oak consente di collegare diversi indicizzatori all’archivio.
 
-Un indicizzatore è **Indice proprietà**, per i quali la definizione dell’indice è memorizzata nell’archivio stesso.
+Un indicizzatore è **Indice proprietà**, per il quale la definizione dell’indice è memorizzata nell’archivio stesso.
 
-Implementazioni per **Apache Lucene** e **Solr** sono disponibili anche per impostazione predefinita, che supportano entrambi l’indicizzazione full-text.
+Implementazioni per **Apache Lucene** e **Solr** sono inoltre disponibili per impostazione predefinita, entrambe supportano l’indicizzazione full-text.
 
-La **Indice trasversale** viene utilizzato se non è disponibile alcun altro indicizzatore. Ciò significa che il contenuto non è indicizzato e che i nodi di contenuto vengono attraversati per trovare corrispondenze alla query.
+Il **Indice trasversale** viene utilizzato se non è disponibile alcun altro indicizzatore. Ciò significa che il contenuto non è indicizzato e che i nodi di contenuto vengono attraversati per trovare corrispondenze alla query.
 
-Se per una query sono disponibili più indicizzatori, ogni indicizzatore disponibile stima il costo di esecuzione della query. Oak sceglie quindi l&#39;indicizzatore con il costo stimato più basso.
+Se per una query sono disponibili più indicizzatori, ogni indicizzatore disponibile stima il costo dell&#39;esecuzione della query. Oak sceglie quindi l&#39;indicizzatore con il costo stimato più basso.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-Il diagramma di cui sopra è una rappresentazione di alto livello del meccanismo di esecuzione delle query di Apache Oak.
+Il diagramma precedente è una rappresentazione di alto livello del meccanismo di esecuzione delle query di Apache Oak.
 
-Innanzitutto, la query viene analizzata in un albero di sintassi astratto. Quindi, la query viene controllata e trasformata in SQL-2 che è la lingua nativa per le query Oak.
+Innanzitutto, la query viene analizzata in una struttura ad albero della sintassi astratta. Quindi, la query viene controllata e trasformata in SQL-2, che è la lingua nativa per le query Oak.
 
-Successivamente, ogni indice viene consultato per stimare il costo della query. Una volta completato, vengono recuperati i risultati dell&#39;indice più economico. Infine, i risultati vengono filtrati, sia per garantire che l’utente corrente abbia accesso in lettura al risultato che il risultato corrisponda alla query completa.
+Successivamente, ogni indice viene consultato per stimare il costo della query. Una volta completato, vengono recuperati i risultati dall’indice più economico. Infine, i risultati vengono filtrati, sia per garantire che l’utente corrente abbia accesso in lettura al risultato sia che il risultato corrisponda alla query completa.
 
 ## Configurazione degli indici {#configuring-the-indexes}
 
 >[!NOTE]
 >
->Per un archivio di grandi dimensioni, la creazione di un indice richiede molto tempo. Questo vale sia per la creazione iniziale di un indice che per la reindicizzazione (ricostruzione di un indice dopo la modifica della definizione). Vedi anche [Risoluzione dei problemi degli indici Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Impedire la reindicizzazione lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Per un archivio di grandi dimensioni, la creazione di un indice è un’operazione che richiede tempo. Ciò vale sia per la creazione iniziale di un indice che per la reindicizzazione (ricostruzione di un indice dopo la modifica della definizione). Vedi anche [Risoluzione dei problemi degli indici Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Prevenzione della reindicizzazione lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Se è necessaria la reindicizzazione in archivi di grandi dimensioni, specialmente quando si utilizza MongoDB e per gli indici full-text, considera la preestrazione del testo e utilizza oak-run per generare l&#39;indice iniziale e reindicizzarlo.
+Se la reindicizzazione è necessaria in archivi molto grandi, specialmente quando si utilizza MongoDB e per gli indici full-text, considera la pre-estrazione del testo e l’utilizzo di oak-run per creare l’indice iniziale e reindicizzare.
 
-Gli indici sono configurati come nodi nell&#39;archivio sotto il **oak:index** nodo.
+Gli indici sono configurati come nodi nell’archivio sotto **oak:index** nodo.
 
-Il tipo del nodo indice deve essere **oak:QueryIndexDefinition.** Sono disponibili diverse opzioni di configurazione per ogni indicizzatore come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore qui sotto.
+Il tipo del nodo dell’indice deve essere **oak:QueryIndexDefinition.** Sono disponibili diverse opzioni di configurazione per ogni indicizzatore come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore riportati di seguito.
 
-### Indice delle proprietà {#the-property-index}
+### Indice proprietà {#the-property-index}
 
-L&#39;indice delle proprietà è generalmente utile per le query con vincoli di proprietà ma non con testo completo. Può essere configurato seguendo la procedura seguente:
+L&#39;indice delle proprietà è generalmente utile per le query che hanno vincoli di proprietà ma non sono full-text. Può essere configurato seguendo la procedura seguente:
 
-1. Apri CRXDE andando in `http://localhost:4502/crx/de/index.jsp`
-1. Crea un nuovo nodo sotto **oak:index**
-1. Assegna un nome al nodo **PropertyIndex** e imposta il tipo di nodo su **oak:QueryIndexDefinition**
+1. Apri CRXDE da `http://localhost:4502/crx/de/index.jsp`
+1. Crea un nuovo nodo in **oak:index**
+1. Denomina il nodo **PropertyIndex**, e impostare il tipo di nodo su **oak:QueryIndexDefinition**
 1. Imposta le seguenti proprietà per il nuovo nodo:
 
    * **tipo:**  `property` (di tipo String)
-   * **propertyNames:**  `jcr:uuid` (di tipo Nome)
+   * **nome proprietà:**  `jcr:uuid` (di tipo Nome)
 
-   Questo particolare esempio indicizza il `jcr:uuid` , il cui lavoro consiste nell&#39;esporre l&#39;identificatore universale univoco (UUID) del nodo a cui è associato.
+   Questo particolare esempio indicizzerà il `jcr:uuid` proprietà, il cui lavoro consiste nell’esporre l’identificatore univoco universale (UUID) del nodo a cui è associato.
 
 1. Salva le modifiche.
 
-L&#39;indice delle proprietà dispone delle seguenti opzioni di configurazione:
+L’indice delle proprietà dispone delle seguenti opzioni di configurazione:
 
-* La **type** specifica il tipo di indice e in questo caso deve essere impostato su **property**
+* Il **tipo** specifica il tipo di indice e in questo caso deve essere impostato su **proprietà**
 
-* La **propertyNames** indica l&#39;elenco delle proprietà che verranno memorizzate nell&#39;indice. Se manca, il nome del nodo verrà utilizzato come valore di riferimento del nome della proprietà. In questo esempio, la **jcr:uuid** all&#39;indice viene aggiunta la proprietà il cui lavoro consiste nell&#39;esporre l&#39;identificatore univoco (UUID) del suo nodo.
+* Il **propertyNames** proprietà indica l&#39;elenco delle proprietà che verranno memorizzate nell&#39;indice. Se manca, il nome del nodo verrà utilizzato come valore di riferimento del nome di proprietà. In questo esempio, la proprietà **jcr:uuid** La proprietà il cui lavoro consiste nell’esporre l’identificatore univoco (UUID) del relativo nodo viene aggiunta all’indice.
 
-* La **unico** che, se impostato su **true** aggiunge un vincolo di univocità all&#39;indice della proprietà.
+* Il **univoco** flag che, se impostato su **true** aggiunge un vincolo di univocità nell&#39;indice delle proprietà.
 
-* La **declaringNodeTypes** La proprietà ti consente di specificare un determinato tipo di nodo a cui l’indice si applica solo.
-* La **reindicizzare** che, se impostato su **true**, attiva una reindicizzazione completa del contenuto.
+* Il **DeclaringNodeTypes** la proprietà ti consente di specificare un determinato tipo di nodo a cui verrà applicato l’indice.
+* Il **reindicizzare** flag che, se impostato su **true**, attiva una reindicizzazione completa del contenuto.
 
 ### Indice ordinato {#the-ordered-index}
 
-L&#39;indice ordinato è un&#39;estensione dell&#39;indice Property. Tuttavia, è stato dichiarato obsoleto. Gli indici di questo tipo devono essere sostituiti con [Indice della proprietà Lucene](#the-lucene-property-index).
+L&#39;indice Ordinato è un&#39;estensione dell&#39;indice Proprietà. Tuttavia, è stato dichiarato obsoleto. Gli indici di questo tipo devono essere sostituiti con [Indice proprietà Lucene](#the-lucene-property-index).
 
-### L&#39;indice a testo completo Lucene {#the-lucene-full-text-index}
+### Indice full-text Lucene {#the-lucene-full-text-index}
 
-Un indicizzatore full text basato su Apache Lucene è disponibile in AEM 6.
+Un indicizzatore full-text basato su Apache Lucene è disponibile in AEM 6.
 
-Se è configurato un indice full-text, tutte le query con una condizione full-text utilizzano l&#39;indice full-text, indipendentemente dal fatto che vi siano altre condizioni indicizzate e indipendentemente da eventuali restrizioni del percorso.
+Se è configurato un indice full-text, tutte le query con una condizione full-text utilizzano l’indice full-text, indipendentemente dalle altre condizioni indicizzate e indipendentemente dalla restrizione del percorso.
 
 Se non è configurato alcun indice full-text, le query con condizioni full-text non funzioneranno come previsto.
 
 Poiché l’indice viene aggiornato tramite un thread in background asincrono, alcune ricerche full-text non saranno disponibili per una piccola finestra di tempo fino al completamento dei processi in background.
 
-Puoi configurare un indice full-text Lucene seguendo la procedura seguente:
+Per configurare un indice full-text Lucene, attenersi alla procedura descritta di seguito.
 
-1. Apri CRXDE e crea un nuovo nodo sotto **oak:index**.
-1. Assegna un nome al nodo **LuceneIndex** e imposta il tipo di nodo su **oak:QueryIndexDefinition**
-1. Aggiungi le seguenti proprietà al nodo :
+1. Apri CRXDE e crea un nuovo nodo in **oak:index**.
+1. Denomina il nodo **LuceneIndex** e imposta il tipo di nodo su **oak:QueryIndexDefinition**
+1. Aggiungi le seguenti proprietà al nodo:
 
    * **tipo:**  `lucene` (di tipo String)
    * **asincrono:**  `async` (di tipo String)
 
 1. Salva le modifiche.
 
-L&#39;indice Lucene dispone delle seguenti opzioni di configurazione:
+L’indice Lucene dispone delle seguenti opzioni di configurazione:
 
-* La **type** che specificherà il tipo di indice deve essere impostato su **lucene**
-* La **async** proprietà che deve essere impostata su **async**. Questo invierà il processo di aggiornamento dell&#39;indice a un thread in background.
-* La **includePropertyTypes** , che definirà quale sottoinsieme di tipi di proprietà sarà incluso nell&#39;indice.
-* La **excludePropertyNames** proprietà che definirà un elenco di nomi di proprietà - proprietà che devono essere escluse dall&#39;indice.
-* La **reindicizzare** che, se impostato su **true**, attiva una reindicizzazione completa del contenuto.
+* Il **tipo** che specificherà il tipo di indice deve essere impostato su **lucene**
+* Il **asincrono** proprietà che deve essere impostata su **asincrono**. In questo modo il processo di aggiornamento dell’indice verrà inviato a un thread in background.
+* Il **includePropertyTypes** , che definisce il sottoinsieme dei tipi di proprietà che verranno inclusi nell&#39;indice.
+* Il **excludePropertyNames** che definirà un elenco di nomi di proprietà, ossia proprietà da escludere dall’indice.
+* Il **reindicizzare** contrassegna che quando è impostato su **true**, attiva una reindicizzazione completa del contenuto.
 
 ### Indice della proprietà Lucene {#the-lucene-property-index}
 
-Da **Oak 1.0.8**, Lucene può essere utilizzato per creare indici che coinvolgono vincoli di proprietà non full-text.
+Da **Oak 1.0.8**, Lucene può essere utilizzato per creare indici che coinvolgono vincoli di proprietà che non sono full-text.
 
-Al fine di ottenere un indice di proprietà Lucene il **fulltextEnabled** deve sempre essere impostata su false.
+Per ottenere un indice della proprietà Lucene **fulltextEnabled** La proprietà deve sempre essere impostata su false.
 
-Prendi la seguente query di esempio:
+Prendi il seguente esempio di query:
 
 ```xml
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Per definire un indice delle proprietà Lucene per la query precedente, puoi aggiungere la seguente definizione creando un nuovo nodo in **quercia:index:**
+Per definire un indice della proprietà Lucene per la query precedente, puoi aggiungere la seguente definizione creando un nuovo nodo in **quercia:index:**
 
 * **Nome:** `LucenePropertyIndex`
 * **Tipo:** `oak:QueryIndexDefinition`
@@ -177,21 +177,21 @@ Una volta creato il nodo, aggiungi le seguenti proprietà:
 
 >[!NOTE]
 >
->Rispetto al normale indice delle proprietà, l&#39;indice delle proprietà Lucene è sempre configurato in modalità asincrona. Pertanto, i risultati restituiti dall&#39;indice potrebbero non sempre riflettere lo stato più aggiornato dell&#39;archivio.
+>Rispetto all&#39;indice proprietà regolare, l&#39;indice proprietà Lucene è sempre configurato in modalità asincrona. Pertanto, i risultati restituiti dall’indice potrebbero non riflettere sempre lo stato più aggiornato dell’archivio.
 
 >[!NOTE]
 >
->Per informazioni più specifiche sull&#39;indice delle proprietà Lucene, vedi la [Pagina della documentazione di Apache Jackrabbit Oak Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Per informazioni più specifiche sull’indice della proprietà Lucene, vedi [Pagina della documentazione di Apache Jackrabbit Oak Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### Analisi Lucene {#lucene-analyzers}
+### Analizzatori Lucene {#lucene-analyzers}
 
-A partire dalla versione 1.2.0, Oak supporta gli analizzatori Lucene.
+Dalla versione 1.2.0, Oak supporta gli analizzatori Lucene.
 
-Gli analisti vengono utilizzati sia quando un documento è indicizzato sia in fase di query. Un analizzatore esamina il testo dei campi e genera un flusso di token. Gli analizzatori Lucene sono composti da una serie di classi di tokenizer e filtri.
+Gli analizzatori vengono utilizzati sia quando un documento viene indicizzato che al momento della query. Un analizzatore esamina il testo dei campi e genera un flusso di token. Gli analizzatori Lucene sono composti da una serie di classi di tokenizzatore e filtro.
 
-Gli analizzatori possono essere configurati tramite il `analyzers` nodo (di tipo `nt:unstructured`) all&#39;interno del `oak:index` definizione.
+Gli analizzatori possono essere configurati tramite `analyzers` nodo (di tipo `nt:unstructured`) all&#39;interno del `oak:index` definizione.
 
-L&#39;analizzatore predefinito per un indice è configurato nel `default` figlio del nodo analizzatore.
+L’analizzatore predefinito per un indice è configurato in `default` elemento secondario del nodo analizzatori.
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -199,13 +199,13 @@ L&#39;analizzatore predefinito per un indice è configurato nel `default` figlio
 >
 >Per un elenco degli analizzatori disponibili, consulta la documentazione API della versione Lucene in uso.
 
-#### Specifica diretta della classe Analyzer {#specifying-the-analyzer-class-directly}
+#### Specifica diretta della classe dell&#39;analizzatore {#specifying-the-analyzer-class-directly}
 
-Se desideri utilizzare un analizzatore preconfigurato, puoi configurarlo seguendo la procedura seguente:
+Se desideri utilizzare un analizzatore predefinito, puoi configurarlo seguendo la procedura seguente:
 
-1. Individua l&#39;indice con cui desideri utilizzare l&#39;analizzatore sotto il `oak:index` nodo.
+1. Individua l’indice con cui desideri usare l’analizzatore sotto `oak:index` nodo.
 
-1. Sotto l&#39;indice, crea un nodo figlio denominato `default` di tipo `nt:unstructured`.
+1. Nell’indice, crea un nodo secondario denominato `default` di tipo `nt:unstructured`.
 
 1. Aggiungi una proprietà al nodo predefinito con le seguenti proprietà:
 
@@ -213,26 +213,26 @@ Se desideri utilizzare un analizzatore preconfigurato, puoi configurarlo seguend
    * **Tipo:** `String`
    * **Valore:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
-   Il valore è il nome della classe analizzatore che si desidera utilizzare.
+   Il valore è il nome della classe dell’analizzatore che desideri utilizzare.
 
-   È inoltre possibile impostare l&#39;analizzatore da utilizzare con una versione lucene specifica utilizzando l&#39;opzione opzionale `luceneMatchVersion` proprietà string. Una sintassi valida per utilizzarla con Lucene 4.7 sarebbe:
+   È inoltre possibile impostare l&#39;analizzatore da utilizzare con una versione specifica di Lucene utilizzando l&#39; `luceneMatchVersion` proprietà stringa. Un sintassi valido per utilizzarlo con Lucene 4.7 sarebbe:
 
    * **Nome:** `luceneMatchVersion`
    * **Tipo:** `String`
    * **Valore:** `LUCENE_47`
 
-   Se `luceneMatchVersion` non viene fornito, Oak utilizzerà la versione di Lucene con cui viene spedito.
+   Se `luceneMatchVersion` non viene fornito, Oak utilizzerà la versione di Lucene fornita con.
 
-1. Se desideri aggiungere un file stopwords alle configurazioni dell&#39;analizzatore, puoi creare un nuovo nodo sotto il `default` con le seguenti proprietà:
+1. Se desideri aggiungere alle configurazioni dell’analizzatore un file di parole d’arresto, puoi creare un nuovo nodo sotto `default` uno con le seguenti proprietà:
 
    * **Nome:** `stopwords`
    * **Tipo:** `nt:file`
 
-#### Creazione di analisi tramite composizione {#creating-analyzers-via-composition}
+#### Creazione di analizzatori tramite composizione {#creating-analyzers-via-composition}
 
-Gli analisti possono anche essere composti in base a `Tokenizers`, `TokenFilters` e `CharFilters`. A tale scopo, puoi specificare un analizzatore e creare nodi figlio dei relativi token e filtri facoltativi che verranno applicati nell’ordine elencato. Vedi anche [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Gli analizzatori possono essere composti anche in base a `Tokenizers`, `TokenFilters` e `CharFilters`. Per farlo, specifica un analizzatore e crea nodi secondari dei suoi tokenizer e filtri opzionali che verranno applicati nell’ordine elencato. Vedi anche [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
-Considera questa struttura del nodo come esempio:
+Considera questa struttura di nodi come un esempio:
 
 * **Nome:** `analyzers`
 
@@ -270,7 +270,7 @@ Considera questa struttura del nodo come esempio:
 
 
 
-Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi di fabbrica. Pertanto:
+Il nome dei filtri, charFilters e tokenizers viene formato rimuovendo i suffissi di fabbrica. Pertanto:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` diventa `standard`
 
@@ -278,35 +278,35 @@ Il nome dei filtri, charFilters e token viene creato rimuovendo i suffissi di fa
 
 * `org.apache.lucene.analysis.core.StopFilterFactory` diventa `Stop`
 
-Qualsiasi parametro di configurazione richiesto per la fabbrica è specificato come proprietà di questo codice.
+Qualsiasi parametro di configurazione richiesto per la factory viene specificato come proprietà del nodo in questione.
 
-Per casi come il caricamento di parole di arresto in cui è necessario caricare il contenuto da file esterni, è possibile fornire il contenuto creando un nodo figlio di `nt:file` digitare il file in questione.
+In casi quali il caricamento di parole non significative in cui è necessario caricare contenuto da file esterni, il contenuto può essere fornito creando un nodo figlio di `nt:file` digita per il file in questione.
 
 ### Indice Solr {#the-solr-index}
 
-Lo scopo dell&#39;indice Solr è principalmente ricerca full-text ma può anche essere utilizzato per indicizzare la ricerca per percorso, restrizioni di proprietà e restrizioni di tipo primario. Questo significa che l&#39;indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
+Lo scopo dell&#39;indice Solr è principalmente la ricerca full-text, ma può anche essere utilizzato per indicizzare la ricerca per percorso, restrizioni di proprietà e restrizioni di tipo primario. Ciò significa che l’indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
 
-L’integrazione in AEM avviene a livello di archivio in modo che Solr sia uno dei possibili indici che possono essere utilizzati in Oak, la nuova implementazione dell’archivio fornita con AEM.
+L’integrazione nell’AEM avviene a livello di archivio, in modo che Solr sia uno dei possibili indici che possono essere utilizzati in Oak, la nuova implementazione dell’archivio fornita con AEM.
 
-Può essere configurato per funzionare come server remoto con l&#39;istanza AEM.
+Può essere configurato per funzionare come server remoto con l’istanza AEM.
 
-### Configurazione di AEM con un singolo server Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
+### Configurazione di AEM con un unico server Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM può anche essere configurato per lavorare con un&#39;istanza remota del server Solr:
+L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota del server Solr:
 
-1. Scarica ed estrai la versione più recente di Solr. Per ulteriori informazioni su come eseguire questa procedura, consulta la [Documentazione sull&#39;installazione di Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Ora, crea due truffe Solr. Per farlo, crea cartelle per ogni frammento nella cartella in cui Solr è stato decompresso:
+1. Scarica ed estrai l’ultima versione di Solr. Per ulteriori informazioni su come eseguire questa operazione, consulta il [Documentazione di installazione di Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Ora, crea due frammenti Solr. A tale scopo, creare cartelle per ogni frammento della cartella in cui è stato decompresso Solr:
 
-   * Per la prima condivisione, crea la cartella:
+   * Per la prima partizione, crea la cartella:
 
    `<solrunpackdirectory>\aemsolr1\node1`
 
-   * Per la seconda parte, crea la cartella:
+   * Per la seconda partizione, crea la cartella:
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
-1. Individua l&#39;istanza di esempio nel pacchetto Solr. In genere si trova in una cartella denominata &quot; `example`&quot; nella radice del pacchetto.
-1. Copia le seguenti cartelle dall&#39;istanza di esempio alle due cartelle condivise ( `aemsolr1\node1` e `aemsolr2\node2`):
+1. Individuare l&#39;istanza di esempio nel pacchetto Solr. In genere si trova in una cartella denominata &quot; `example`&quot; nella radice del pacchetto.
+1. Copiare le cartelle seguenti dall&#39;istanza di esempio nelle due cartelle condivise ( `aemsolr1\node1` e `aemsolr2\node2`):
 
    * `contexts`
    * `etc`
@@ -317,47 +317,47 @@ AEM può anche essere configurato per lavorare con un&#39;istanza remota del ser
    * `webapps`
    * `start.jar`
 
-1. Crea una nuova cartella denominata &quot; `cfg`&quot; in ciascuna delle due cartelle condivise.
-1. Inserire i file di configurazione Solr e Zookeeper nella nuova creazione `cfg` cartelle.
+1. Crea una nuova cartella denominata &quot; `cfg`&quot; in ognuna delle due cartelle condivise.
+1. Posizionare i file di configurazione Solr e Zookeeper nella nuova `cfg` cartelle.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla configurazione Solr e ZooKeeper, consulta la [Documentazione sulla configurazione del solr](https://wiki.apache.org/solr/ConfiguringSolr) e [Guida introduttiva di ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Per ulteriori informazioni sulla configurazione di Solr e ZooKeeper, consulta [Documentazione sulla configurazione Solr](https://wiki.apache.org/solr/ConfiguringSolr) e [Guida introduttiva di ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
-1. Avvia la prima condivisione con il supporto di ZooKeeper andando a `aemsolr1\node1` ed eseguire il comando seguente:
+1. Iniziare la prima partizione con il supporto ZooKeeper andando a `aemsolr1\node1` ed eseguendo il comando seguente:
 
    ```xml
    java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
    ```
 
-1. Inizia la seconda parte andando `aemsolr2\node2` ed eseguire il comando seguente:
+1. Iniziare la seconda partizione scegliendo `aemsolr2\node2` ed eseguendo il comando seguente:
 
    ```xml
    java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
    ```
 
-1. Dopo l&#39;avvio di entrambi i frammenti, verificare che tutto sia pronto e funzionante collegandosi all&#39;interfaccia Solr in `http://localhost:8983/solr/#/`
-1. Avvia AEM e passa alla console Web all&#39;indirizzo `http://localhost:4502/system/console/configMgr`
-1. Imposta la seguente configurazione in **Configurazione del server remoto Oak Solr**:
+1. Dopo aver avviato entrambe le partizioni, verificare che tutto sia funzionante collegandosi all&#39;interfaccia Solr all&#39;indirizzo `http://localhost:8983/solr/#/`
+1. Avvia AEM e passa alla console web all’indirizzo `http://localhost:4502/system/console/configMgr`
+1. Imposta la seguente configurazione in **Configurazione server remoto Oak Solr**:
 
-   * URL HTTP solr: `http://localhost:8983/solr/`
+   * URL HTTP Solr: `http://localhost:8983/solr/`
 
-1. Scegli **Solr remoto** nell’elenco a discesa sotto **Oak Solr** provider di server.
+1. Scegli **Solr remoto** nell’elenco a discesa in **Oak Solr** provider di server.
 
-1. Vai a CRXDE e accedi come amministratore.
-1. Crea un nuovo nodo denominato **solrIndex** sotto **oak:index**, e imposta le seguenti proprietà:
+1. Vai a CRXDE e accedi come Amministratore.
+1. Crea un nuovo nodo denominato **solrIndex** in **oak:index** e impostare le seguenti proprietà:
 
    * **tipo:** solr (di tipo String)
-   * **asincrono:** async (di tipo String)
-   * **reindicizzazione:** true (di tipo booleano)
+   * **asincrono:** asincrono (di tipo String)
+   * **reindicizza:** true (di tipo Boolean)
 
 1. Salva le modifiche.
 
 #### Configurazione consigliata per Solr {#recommended-configuration-for-solr}
 
-Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le distribuzioni Solr descritte in questo articolo. Gestisce gli indici di proprietà dedicati già presenti in AEM e non devono essere utilizzati con altre applicazioni.
+Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Esso ospita gli indici di proprietà dedicati che sono già presenti nell’AEM e non devono essere utilizzati con altre applicazioni.
 
-Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella directory principale Solr. Nel caso di implementazioni con più nodi, deve trovarsi direttamente nella cartella principale di ciascun nodo.
+Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella home directory Solr. Nel caso di distribuzioni con più nodi, deve trovarsi direttamente nella cartella principale di ciascun nodo.
 
 File di configurazione Solr consigliati
 
@@ -365,97 +365,97 @@ File di configurazione Solr consigliati
 
 ### Strumenti di indicizzazione AEM {#aem-indexing-tools}
 
-AEM 6.1 integra anche due strumenti di indicizzazione presenti in AEM 6.0 come parte degli strumenti di Adobe Consulting Services Commons:
+AEM 6.1 integra anche due strumenti di indicizzazione presenti in AEM 6.0 come parte degli strumenti Adobe Consulting Services Commons:
 
-1. **Spiega query**, uno strumento progettato per aiutare gli amministratori a comprendere come vengono eseguite le query;
-1. **Gestione indici Oak**, un&#39;interfaccia utente web per la manutenzione degli indici esistenti.
+1. **Spiega query**, strumento progettato per aiutare gli amministratori a comprendere come vengono eseguite le query;
+1. **Gestore indice Oak**, interfaccia utente Web per la gestione degli indici esistenti.
 
-Ora puoi raggiungerli andando a **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata di benvenuto AEM.
+Ora puoi raggiungerli andando in **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata iniziale dell’AEM.
 
-Per ulteriori informazioni su come utilizzarli, consulta la [Documentazione del dashboard delle operazioni](/help/sites-administering/operations-dashboard.md).
+Per ulteriori informazioni su come utilizzarli, vedi [Documentazione del dashboard operazioni](/help/sites-administering/operations-dashboard.md).
 
 #### Creazione di indici di proprietà tramite OSGi {#creating-property-indexes-via-osgi}
 
-Il pacchetto ACS Commons espone anche le configurazioni OSGi che possono essere utilizzate per creare indici di proprietà.
+Il pacchetto ACS Commons espone anche configurazioni OSGi che possono essere utilizzate per creare indici di proprietà.
 
-Puoi accedervi dalla console Web cercando &quot;**Assicurati l&#39;indice delle proprietà Oak**&quot;.
+Puoi accedervi dalla console web cercando &quot;**Assicurati che l’indice della proprietà Oak sia corretto**&quot;.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
 ### Risoluzione dei problemi di indicizzazione {#troubleshooting-indexing-issues}
 
-Potrebbero verificarsi situazioni in cui l’esecuzione delle query richiede molto tempo e il tempo di risposta generale del sistema è lento.
+Possono verificarsi situazioni in cui l’esecuzione delle query richiede molto tempo e il tempo di risposta generale del sistema è lento.
 
-Questa sezione presenta una serie di raccomandazioni su ciò che è necessario fare per individuare la causa di tali problemi e consigli su come risolverli.
+Questa sezione presenta una serie di raccomandazioni su ciò che deve essere fatto per rintracciare la causa di tali problemi e consigli su come risolverli.
 
-#### Preparazione delle informazioni di debug per l’analisi {#preparing-debugging-info-for-analysis}
+#### Preparazione delle informazioni di debug per l&#39;analisi {#preparing-debugging-info-for-analysis}
 
-Il modo più semplice per ottenere le informazioni richieste per la query eseguita è tramite la [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query). Questo ti consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza la necessità di consultare le informazioni sul livello di log. Questa opzione è utile se si conosce la query di cui si sta eseguendo il debug.
+Il modo più semplice per ottenere le informazioni richieste per la query eseguita è tramite [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query). Questo consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza dover consultare le informazioni a livello di registro. Ciò è utile se si conosce la query di cui viene eseguito il debug.
 
-Se questo non è possibile per alcun motivo, è possibile raccogliere i registri di indicizzazione in un singolo file e usarlo per risolvere il problema specifico.
+Se questo non è possibile per qualsiasi motivo, puoi raccogliere i registri di indicizzazione in un singolo file e utilizzarli per risolvere il problema specifico.
 
 #### Abilita registrazione {#enable-logging}
 
-Per abilitare la registrazione, devi abilitare **DEBUG** registri di livello per le categorie relative all’indicizzazione e alle query Oak. Queste categorie sono:
+Per abilitare la registrazione, devi abilitare **DEBUG** registri a livello per le categorie relative all’indicizzazione Oak e alle query. Tali categorie sono:
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-La **com.day.cq.search** Questa categoria è applicabile solo se si utilizza l&#39;utility QueryBuilder AEM fornita.
+Il **com.day.cq.search** è applicabile solo se si utilizza l&#39;utilità QueryBuilder fornita dall&#39;AEM.
 
 >[!NOTE]
 >
->È importante che i registri siano impostati su DEBUG solo per la durata dell’esecuzione della query che si desidera risolvere i problemi, altrimenti nel tempo verrà generata una grande quantità di eventi nei registri. Per questo motivo, una volta raccolti i registri richiesti, torna alla registrazione a livello INFO per le categorie sopra menzionate.
+>È importante che i registri siano impostati su DEBUG solo per la durata di esecuzione della query che desideri risolvere, altrimenti nel tempo verrà generata una grande quantità di eventi nei registri. Per questo motivo, una volta raccolti i registri richiesti, torna alla registrazione a livello INFO per le categorie sopra menzionate.
 
-È possibile abilitare la registrazione seguendo questa procedura:
+Per abilitare la registrazione, segui questa procedura:
 
-1. Posiziona il browser su `https://serveraddress:port/system/console/slinglog`
-1. Fai clic sul pulsante **Aggiungi nuovo logger** nella parte inferiore della console.
-1. Nella riga appena creata, aggiungi le categorie sopra menzionate. È possibile utilizzare **+** firma per aggiungere più di una categoria a un singolo logger.
-1. Scegli **DEBUG** dal **Livello di log** elenco a discesa.
+1. Puntare il browser a `https://serveraddress:port/system/console/slinglog`
+1. Fai clic su **Aggiungi nuovo logger** nella parte inferiore della console.
+1. Nella riga appena creata, aggiungi le categorie sopra indicate. È possibile utilizzare **+** accedere per aggiungere più categorie a un singolo logger.
+1. Scegli **DEBUG** dal **Livello di registro** elenco a discesa.
 1. Imposta il file di output su `logs/queryDebug.log`. In questo modo tutti gli eventi DEBUG verranno correlati in un unico file di registro.
-1. Esegui la query o esegui il rendering della pagina che utilizza la query di cui desideri eseguire il debug.
-1. Dopo aver eseguito la query, torna alla console di registrazione e modifica il livello di log del logger appena creato in **INFORMAZIONI**.
+1. Esegui la query o esegui il rendering della pagina che utilizza la query su cui desideri eseguire il debug.
+1. Dopo aver eseguito la query, torna alla console di registrazione e modifica il livello di registro del logger appena creato in **INFO**.
 
 #### Configurazione indice {#index-configuration}
 
-Il modo in cui la query viene valutata è in gran parte influenzato dalla configurazione dell&#39;indice. È importante ottenere la configurazione dell&#39;indice per essere analizzata o inviata al supporto. Puoi ottenere la configurazione come pacchetto di contenuti o una rappresentazione JSON.
+Il modo in cui la query viene valutata è influenzato in gran parte dalla configurazione dell’indice. È importante ottenere la configurazione dell’indice per poter essere analizzata o inviata al supporto. Puoi ottenere la configurazione come pacchetto di contenuti o una rappresentazione JSON.
 
-Poiché nella maggior parte dei casi, la configurazione di indicizzazione è memorizzata nella variabile `/oak:index` in CRXDE, puoi ottenere la versione JSON in:
+Poiché nella maggior parte dei casi, la configurazione dell’indicizzazione viene memorizzata in `/oak:index` in CRXDE, puoi ottenere la versione JSON in:
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
-Se l&#39;indice è configurato in una posizione diversa, cambia di conseguenza il percorso.
+Se l’indice è configurato in una posizione diversa, modifica di conseguenza il percorso.
 
 #### Uscita MBean {#mbean-output}
 
-In alcuni casi è utile fornire l&#39;output di MBeans relativi all&#39;indice per il debug. Per farlo, segui questi passaggi:
+In alcuni casi è utile fornire l’output degli MBean correlati all’indice per il debug. Per farlo, segui questi passaggi:
 
-1. Andando alla console JMX in:
+1. Vai alla console JMX all’indirizzo:
    `https://serveraddress:port/system/console/jmx`
 
-1. Cerca i seguenti MBeans:
+1. Cerca i seguenti MBean:
 
-   * Statistiche dell&#39;indice di Lucene
-   * Statistiche di supporto di CopyOnRead
+   * Statistiche indice Lucene
+   * Statistiche di supporto CopyOnRead
    * Statistiche query Oak
    * IndexStats
 
-1. Fai clic su ciascuno dei MBeans per ottenere le statistiche sulle prestazioni. Crea uno screenshot o annotiamoli nel caso in cui sia necessario inviarli al supporto.
+1. Fare clic su ogni MBean per ottenere le statistiche sulle prestazioni. Crea uno screenshot o annotali in basso nel caso sia necessario l&#39;invio al supporto.
 
-Puoi anche ottenere la variante JSON di queste statistiche ai seguenti URL:
+Puoi ottenere la variante JSON di queste statistiche anche dai seguenti URL:
 
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-È inoltre possibile fornire un output JMX consolidato tramite `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Questo includerebbe tutti i dettagli MBean relativi a Oak nel formato JSON.
+Puoi anche fornire l’output JMX consolidato tramite `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Questo includerebbe tutti i dettagli MBean relativi a Oak in formato JSON.
 
 #### Altri dettagli {#other-details}
 
 Puoi raccogliere ulteriori dettagli per aiutarti a risolvere il problema, ad esempio:
 
-1. Versione Oak su cui l&#39;istanza è in esecuzione. Per visualizzarlo, apri CRXDE e osserva la versione nell’angolo in basso a destra della pagina di benvenuto, oppure controlla la versione della `org.apache.jackrabbit.oak-core` pacchetto.
-1. L&#39;output del debugger di QueryBuilder della query del problema. È possibile accedere al debugger all&#39;indirizzo: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
+1. La versione Oak su cui è in esecuzione l’istanza. Per visualizzarlo, apri CRXDE e osserva la versione nell’angolo in basso a destra della pagina di benvenuto, oppure controlla la versione di `org.apache.jackrabbit.oak-core` pacchetto.
+1. L’output di QueryBuilder Debugger della query problematica. Il debugger è accessibile all’indirizzo: `https://serveraddress:port/libs/cq/search/content/querydebug.html`

@@ -1,5 +1,5 @@
 ---
-title: Quadro di riferimento per la protezione del CSRF
+title: Il framework di protezione CSRF
 seo-title: The CSRF Protection Framework
 description: Il framework utilizza i token per garantire che la richiesta del cliente sia legittima
 seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 ---
 
-# Quadro di riferimento per la protezione del CSRF{#the-csrf-protection-framework}
+# Il framework di protezione CSRF{#the-csrf-protection-framework}
 
-Oltre al filtro di riferimento Apache Sling, l&#39;Adobe fornisce anche un nuovo quadro di protezione CSRF per proteggere da questo tipo di attacco.
+Oltre al filtro Apache Sling Referrer, Adobe fornisce anche un nuovo framework di protezione CSRF per proteggere da questo tipo di attacchi.
 
-Il framework utilizza i token per garantire che la richiesta del cliente sia legittima. I token vengono generati quando il modulo viene inviato al client e convalidato quando il modulo viene inviato nuovamente al server.
+Il framework utilizza i token per garantire che la richiesta del cliente sia legittima. I token vengono generati quando il modulo viene inviato al client e convalidati quando il modulo viene inviato nuovamente al server.
 
 >[!NOTE]
 >
->Non ci sono token nelle istanze di pubblicazione per gli utenti anonimi.
+>Le istanze di pubblicazione non contengono token per gli utenti anonimi.
 
 ## Requisiti {#requirements}
 
 ### Dipendenze {#dependencies}
 
-Qualsiasi componente che si basa sul `granite.jquery` La dipendenza beneficerà automaticamente del quadro di protezione CSRF. In caso contrario, è necessario dichiarare una dipendenza in `granite.csrf.standalone` prima di poter utilizzare il framework.
+Qualsiasi componente che si basa su `granite.jquery` La dipendenza trarrà automaticamente vantaggio dal framework di protezione CSRF. In caso contrario, è necessario dichiarare una dipendenza a `granite.csrf.standalone` prima di poter utilizzare il framework.
 
-### Replicazione della chiave Crypto {#replicating-crypto-keys}
+### Replica della chiave di crittografia {#replicating-crypto-keys}
 
-Per utilizzare i token, devi replicare il binario HMAC a tutte le istanze nella distribuzione. Vedi [Replica della chiave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) per ulteriori dettagli.
-
->[!NOTE]
->
->Assicurati anche di fare il necessario [Modifiche alla configurazione del dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per utilizzare il quadro di protezione CSRF.
+Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze della distribuzione. Consulta [Replica della chiave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) per ulteriori dettagli.
 
 >[!NOTE]
 >
->Se utilizzi la cache del manifesto con la tua applicazione web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non prenda offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta [collegamento](https://www.w3.org/TR/offline-webapps/).
+>Assicurati anche di fare il necessario [Modifiche alla configurazione del Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per utilizzare il quadro di protezione CSRF.
+
+>[!NOTE]
 >
->Per ulteriori informazioni sugli attacchi CSRF e sui modi per attenuarli, consulta la sezione [Pagina OWASP della struttura di richiesta tra siti](https://owasp.org/www-community/attacks/csrf).
+>Se utilizzi la cache del manifesto con l’applicazione web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta [link](https://www.w3.org/TR/offline-webapps/).
+>
+>Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, consulta la [Pagina OWASP per false richieste intersito](https://owasp.org/www-community/attacks/csrf).

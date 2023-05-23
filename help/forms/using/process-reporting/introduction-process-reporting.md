@@ -1,7 +1,7 @@
 ---
 title: Introduzione alla generazione di rapporti sui processi
 seo-title: Introduction to Process Reporting
-description: Introduzione e funzionalità chiave di AEM Forms per la generazione di rapporti sui processi JEE
+description: Introduzione e funzionalità chiave di AEM Forms su JEE Process Reporting
 seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
 uuid: a7f2455b-1b09-41a7-817b-e2e7a1ff9936
 content-type: reference
@@ -19,54 +19,54 @@ ht-degree: 0%
 
 # Introduzione alla generazione di rapporti sui processi{#introduction-to-process-reporting}
 
-![reportistica dei processi](assets/process-reporting.png)
+![reporting sui processi](assets/process-reporting.png)
 
-Process Reporting è uno strumento basato su browser che consente di creare e visualizzare rapporti sui processi e le attività di AEM Forms.
+Process Reporting è uno strumento basato su browser che consente di creare e visualizzare report sui processi e le attività di AEM Forms.
 
-La funzione di reporting dei processi fornisce una serie di rapporti predefiniti che ti consentono di filtrare, visualizzare informazioni sui processi in esecuzione a lungo termine, sulla durata del processo e sul volume del flusso di lavoro.
+Report processi fornisce una serie di report predefiniti che consentono di filtrare e visualizzare informazioni sui processi a esecuzione prolungata, sulla durata del processo e sul volume del flusso di lavoro.
 
-Inoltre, Process Reporting fornisce un&#39;interfaccia per eseguire query ad hoc e integrare visualizzazioni di report personalizzate nell&#39;interfaccia utente di Process Reporting.
+Process Reporting fornisce inoltre un&#39;interfaccia per l&#39;esecuzione di query ad hoc e per l&#39;integrazione di visualizzazioni report personalizzate nell&#39;interfaccia utente di Process Reporting.
 
-Per l’elenco dei browser supportati, consulta [Piattaforme supportate da AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Per un elenco dei browser supportati consulta [Piattaforme supportate da AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
-Il reporting dei processi è basato su moduli che:
+Process Reporting è basato su moduli che:
 
-* Lettura dei dati del processo dal database AEM Forms
-* Pubblicare i dati del processo in un archivio incorporato di Process Reporting
+* Leggi dati processo da AEM Forms Database
+* Pubblicare i dati del processo in un repository Process Reporting incorporato
 * Fornisce un&#39;interfaccia utente basata su browser per visualizzare i rapporti
 
 ## Funzionalità principali {#key-capabilities}
 
-### Generazione di rapporti sempre attiva {#always-on-reporting}
+### Reporting sempre attivo {#always-on-reporting}
 
-![gestione del sito](assets/site-management.png)
+![gestione dei siti](assets/site-management.png)
 
-Visualizza l’elenco dei processi in esecuzione a lungo termine, dei grafici della durata del processo e esegue query personalizzate utilizzando i filtri.
+Visualizzare l&#39;elenco dei processi con tempi di esecuzione lunghi, elaborare grafici della durata ed eseguire query personalizzate utilizzando i filtri.
 
-La funzione di reporting dei processi offre anche la possibilità di esportare il rapporto e di eseguire query sui dati in formato CSV.
+Process Reporting offre inoltre la possibilità di esportare il report ed eseguire query sui dati in formato CSV.
 
-### Report ad hoc {#adhoc-reports}
+### Rapporti ad hoc {#adhoc-reports}
 
-![stampa a colori](assets/print-&-colour.png)
+![stampa e colori](assets/print-&-colour.png)
 
-Utilizza i filtri per ottenere una visualizzazione specifica dei tuoi dati.
+Utilizza i filtri per ottenere una visualizzazione specifica dei dati.
 
-Puoi cercare processi o attività per ID, durata, date di inizio e fine, iniziatore del processo e così via.
+È possibile cercare i processi o le attività in base all&#39;ID, alla durata, alle date di inizio e di fine, all&#39;iniziatore del processo e così via.
 
 Puoi combinare più filtri per creare rapporti specifici.
 
-Puoi quindi salvare i filtri per i rapporti da eseguire in una data o in un’ora successive.
+Puoi quindi salvare i filtri del rapporto in modo che vengano eseguiti in una data o in un’ora successiva.
 
-### Cronologia processi/task {#process-task-history}
+### Cronologia processi/attività {#process-task-history}
 
 ![gestione dei file](assets/file-management.png)
 
-I server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando i dati di Forms nell’archivio di Process Reporting a intervalli regolari, Process Reporting conserva le informazioni di transizione sui processi in esecuzione in AEM Forms.
+I server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando i dati di Forms nel repository di Process Reporting a intervalli regolari, Process Reporting conserva le informazioni di transizione sui processi in esecuzione in AEM Forms.
 
 ### Controllo accesso {#access-control-br}
 
 ![senza titolo](assets/untitled.png)
 
-La funzione di reporting dei processi consente l’accesso all’interfaccia utente in base alle autorizzazioni.
+Process Reporting fornisce un accesso basato su autorizzazioni all&#39;interfaccia utente.
 
-Ciò significa che solo gli utenti con autorizzazioni di reporting possono accedere all’interfaccia utente di Process Reporting.
+Ciò significa che solo gli utenti con autorizzazioni di reporting hanno accesso all’interfaccia utente di Process Reporting.

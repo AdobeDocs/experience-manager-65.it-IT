@@ -1,7 +1,7 @@
 ---
-title: Nozioni di base sul calendario
+title: Elementi di base di Calendar
 seo-title: Calendar Essentials
-description: Panoramica delle funzioni del calendario
+description: Panoramica della funzione Calendario
 seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 ---
 
-# Nozioni di base sul calendario {#calendar-essentials}
+# Elementi di base di Calendar {#calendar-essentials}
 
-Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione calendario.
+Questa pagina fornisce informazioni essenziali sull&#39;utilizzo della funzione calendario.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -30,15 +30,15 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
    <td>social/calendario/componenti/hbs/calendario</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>
@@ -48,16 +48,16 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>vedere <a href="calendar.md">Utilizzo dei calendari</a></td>
+   <td>vedi <a href="calendar.md">Utilizzo dei calendari</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API del calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [API calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
 * [Endpoint calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
@@ -65,17 +65,17 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
 
 ### Funzione Calendario {#calendar-function}
 
-Una struttura del sito community che include [Funzione calendario](functions.md#calendar-function) avrà configurato un `calendar` componente. La funzione Calendario supporta l&#39;identificazione di un [gruppo utenti membro privilegiato](users.md#privileged-members-group).
+Una struttura del sito della community che include [Funzione calendario](functions.md#calendar-function) avrà configurato `calendar` componente. La funzione Calendar supporta l’identificazione di un’ [gruppo utenti membro privilegiato](users.md#privileged-members-group).
 
 ### Accesso ai post del calendario (UGC) {#accessing-calendar-posts-ugc}
 
-A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di storage](srp.md) - introduzione e utilizzo dell&#39;archivio
-* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica
-* [Refactoring di SocialUtils](socialutils.md) - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti

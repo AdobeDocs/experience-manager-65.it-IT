@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione della console di benvenuto (interfaccia classica)
 seo-title: Customizing the Welcome Console (Classic UI)
-description: La console Benvenuto fornisce un elenco di collegamenti alle varie console e funzionalità di AEM
+description: La console Benvenuti fornisce un elenco di collegamenti alle varie console e funzionalità dell’AEM
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -21,26 +21,26 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->Questa pagina fa riferimento all’interfaccia utente classica.
+>Questa pagina tratta l’interfaccia utente classica.
 >
->Vedi [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) per informazioni dettagliate sull’interfaccia touch standard.
+>Consulta [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) per informazioni dettagliate sull’interfaccia utente standard touch.
 
-La console Benvenuto fornisce un elenco di collegamenti alle varie console e funzionalità di AEM.
+La console di benvenuto fornisce un elenco di collegamenti alle varie console e funzionalità di AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-È possibile configurare i collegamenti visibili. Può essere definito per utenti e/o gruppi specifici. Le azioni da eseguire dipendono dal tipo di destinazione (correlato alla sezione della console in cui si trovano):
+È possibile configurare i collegamenti visibili. Questa può essere definita per utenti e/o gruppi specifici. Le azioni da intraprendere dipendono dal tipo di destinazione (che si collega alla sezione della console in cui si trovano):
 
 * [Console principali](#links-in-main-console-left-pane) - Collegamenti nella console principale (riquadro a sinistra)
-* [Risorse, documentazione e riferimenti, funzioni](#links-in-sidebar-right-pane) - Collegamenti nella barra laterale (riquadro a destra)
+* [Risorse, documentazione e riferimenti, funzioni](#links-in-sidebar-right-pane) - Collegamenti nella barra laterale (riquadro destro)
 
-## Collegamenti nella console principale (riquadro a sinistra) {#links-in-main-console-left-pane}
+## Collegamenti nella console principale (riquadro sinistro) {#links-in-main-console-left-pane}
 
-Vengono elencate le console principali di AEM.
+Elenco delle principali console dell’AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Configurazione della visibilità dei collegamenti alla console principale {#configuring-whether-main-console-links-are-visible}
+### Configurazione della visibilità dei collegamenti della console principale {#configuring-whether-main-console-links-are-visible}
 
 Le autorizzazioni a livello di nodo determinano se il collegamento può essere visualizzato o meno. I nodi in questione sono:
 
@@ -48,7 +48,7 @@ Le autorizzazioni a livello di nodo determinano se il collegamento può essere v
 
 * **Risorse digitali:** `/libs/wcm/core/content/damadmin`
 
-* **Comunità:** `/libs/collab/core/content/admin`
+* **Community:** `/libs/collab/core/content/admin`
 
 * **Campagne:** `/libs/mcm/content/admin`
 
@@ -60,23 +60,23 @@ Le autorizzazioni a livello di nodo determinano se il collegamento può essere v
 
 * **Assegnazione tag:** `/libs/cq/tagging/content/tagadmin`
 
-Esempio:
+Ad esempio:
 
-* Per limitare l&#39;accesso a **Strumenti**, rimuovi l&#39;accesso in lettura da
+* Per limitare l&#39;accesso a **Strumenti**, rimuovere l&#39;accesso in lettura da
 
    `/libs/wcm/core/content/misc`
 
-Consulta la sezione [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
+Consulta la [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
 
-### Collegamenti nella barra laterale (riquadro a destra) {#links-in-sidebar-right-pane}
+### Collegamenti nella barra laterale (riquadro destro) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Tali collegamenti si basano sull&#39;esistenza di *e* accesso in lettura ai nodi sotto il percorso seguente:
+Questi collegamenti si basano sull&#39;esistenza di *e* accesso in lettura ai nodi nel seguente percorso:
 
 `/libs/cq/core/content/welcome`
 
-Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermente):
+Per impostazione predefinita, sono disponibili tre sezioni (leggermente distanziate):
 
 <table>
  <tbody>
@@ -113,7 +113,7 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
    <td><code>/libs/cq/core/content/welcome/resources/manuscriptsadmin</code></td>
   </tr>
   <tr>
-   <td><strong>Documentazione e riferimento</strong></td>
+   <td><strong>Documentazione e riferimenti</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -159,37 +159,37 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
  </tbody>
 </table>
 
-#### Configurazione della visibilità dei collegamenti Sidebar {#configuring-whether-sidebar-links-are-visible}
+#### Configurazione della visibilità dei collegamenti della barra laterale {#configuring-whether-sidebar-links-are-visible}
 
-È possibile nascondere un collegamento da utenti o gruppi specifici rimuovendo l&#39;accesso in lettura ai nodi che rappresentano il collegamento.
+È possibile nascondere un collegamento a utenti o gruppi specifici rimuovendo l’accesso in lettura ai nodi che lo rappresentano.
 
-* Risorse - rimuovere l&#39;accesso a:
+* Risorse: rimuovi l’accesso a:
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Documenti: rimuovere l’accesso a:
+* Docs - rimuovi accesso a:
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Funzionalità : consente di rimuovere l&#39;accesso a:
+* Funzioni: rimuovi l’accesso a:
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
-Esempio:
+Ad esempio:
 
-* Per rimuovere il collegamento a **Rapporti**, rimuovi l&#39;accesso in lettura da
+* Per rimuovere il collegamento a **Rapporti**, rimuovere l&#39;accesso in lettura da
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Per rimuovere il collegamento a **Pacchetti**, rimuovi l&#39;accesso in lettura da
+* Per rimuovere il collegamento a **Pacchetti**, rimuovere l&#39;accesso in lettura da
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Consulta la sezione [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
+Consulta la [Sezione Sicurezza](/help/sites-administering/security.md) per ulteriori informazioni su come impostare le autorizzazioni desiderate.
 
-### Meccanismo di selezione del collegamento {#link-selection-mechanism}
+### Meccanismo di selezione dei collegamenti {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` è fatto di [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi con la proprietà :
+In entrata `/libs/cq/core/components/welcome/welcome.jsp` sia fatto di [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi che dispongono della proprietà:
 
 * `jcr:mixinTypes` con il valore: `cq:Console`
 
@@ -201,12 +201,12 @@ In `/libs/cq/core/components/welcome/welcome.jsp` è fatto di [ConsoleUtil](http
 >
 
 
-Quando un utente o un gruppo non ha l&#39;autorizzazione di lettura su un nodo con il mixin `cq:Console`, tale nodo non viene recuperato dal `ConsoleUtil` cerca, quindi non è elencato nella console.
+Quando un utente o un gruppo non dispone dell’autorizzazione di lettura per un nodo con il mixin `cq:Console`, tale nodo non viene recuperato da `ConsoleUtil` ricerca, pertanto non è elencato nella console.
 
 ### Aggiunta di un elemento personalizzato {#adding-a-custom-item}
 
-La [meccanismo di selezione dei collegamenti](#link-selection-mechanism) può essere utilizzato per aggiungere un elemento personalizzato all’elenco dei collegamenti.
+Il [meccanismo di selezione dei collegamenti](#link-selection-mechanism) può essere utilizzato per aggiungere un elemento personalizzato all’elenco dei collegamenti.
 
-Aggiungi l&#39;elemento personalizzato all&#39;elenco aggiungendo il `cq:Console` mixin per il widget o la risorsa. Questa operazione viene eseguita definendo la proprietà :
+Aggiungere l&#39;elemento personalizzato all&#39;elenco aggiungendo `cq:Console` mixin al widget o alla risorsa. A tale scopo, definisci la proprietà:
 
 * `jcr:mixinTypes` con il valore: `cq:Console`

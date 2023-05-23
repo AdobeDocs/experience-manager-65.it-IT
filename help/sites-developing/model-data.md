@@ -1,5 +1,5 @@
 ---
-title: Modellazione dei dati - Modello di David Nuescheler
+title: Modellazione dati - Modello di David Nuescheler
 seo-title: Data Modeling - David Nuescheler's Model
 description: Raccomandazioni per la modellazione dei contenuti di David Nuescheler
 seo-description: David Nuescheler's content modelling recommendations
@@ -17,71 +17,71 @@ ht-degree: 0%
 
 ---
 
-# Modellazione dei dati - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
+# Modellazione dati - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Sorgente {#source}
 
-I seguenti dettagli sono idee e commenti espressi da David Nuescheler.
+Di seguito sono riportate le idee e i commenti espressi da David Nuescheler.
 
-David è stato co-fondatore e CTO of Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura dei contenuti globali, richiesto dall&#39;Adobe nel 2010. È ora compagno e vicepresidente di Enterprise Technology all&#39;Adobe e guida anche lo sviluppo di JSR-170, l&#39;interfaccia API (Application Programming Interface) Java Content Repository, lo standard tecnologico per la gestione dei contenuti.
+David è stato co-fondatore e CTO di Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura dei contenuti globali, acquisito da Adobe nel 2010. È stato membro e vicepresidente della divisione Enterprise Technology di Adobe e guida lo sviluppo di JSR-170, l&#39;API Java Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
 
 Ulteriori aggiornamenti sono disponibili su [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
-## Introduzione da David {#introduction-from-david}
+## Introduzione di David {#introduction-from-david}
 
-In varie discussioni ho scoperto che gli sviluppatori sono in qualche modo a disagio con le funzioni e le funzionalità presentate da JCR per quanto riguarda la modellazione dei contenuti. Non esiste ancora una guida e poca esperienza su come modellare i contenuti in un archivio e sul perché un modello di contenuto è migliore dell’altro.
+In varie discussioni ho riscontrato che gli sviluppatori sono in qualche modo a disagio con le funzioni e le funzionalità presentate da JCR quando si tratta di modellazione dei contenuti. Non esiste ancora una guida e un’esperienza molto limitata su come modellare il contenuto in un archivio e sul perché un modello di contenuto è migliore dell’altro.
 
-Mentre nel mondo relazionale l&#39;industria del software ha molta esperienza su come modellare i dati, siamo ancora alle prime fasi per lo spazio dell&#39;archivio dei contenuti.
+Anche se nel mondo relazionale il settore del software ha molta esperienza su come modellare i dati, siamo ancora alle fasi iniziali per lo spazio dell&#39;archivio dei contenuti.
 
-Vorrei iniziare a riempire questo vuoto esprimendo le mie opinioni personali sul modo in cui i contenuti dovrebbero essere modellati, sperando che questo possa un giorno diventare qualcosa di più significativo per la comunità degli sviluppatori, che non è solo &quot;la mia opinione&quot;, ma qualcosa di più generale applicabile. Considerate questo il mio primo bersaglio veloce ed evoluto.
+Vorrei iniziare a riempire questo vuoto esprimendo le mie opinioni personali su come il contenuto dovrebbe essere modellato, sperando che questo potrebbe un giorno laurearsi in qualcosa di più significativo per la comunità degli sviluppatori, che non è solo &quot;la mia opinione&quot;, ma qualcosa di più genericamente applicabile. Considerate questo come la mia prima pugnalata che si evolve rapidamente.
 
 >[!NOTE]
 >
->Disclaimer: Queste linee guida esprimono le mie opinioni personali, talvolta controverse. Sono ansioso di discutere questi orientamenti e di perfezionarli.
+>Dichiarazione di non responsabilità: queste linee guida esprimono le mie opinioni personali, a volte controverse. Sono ansioso di discutere questi orientamenti e di perfezionarli.
 
-## Sette semplici regole {#seven-simple-rules}
+## Sette regole semplici {#seven-simple-rules}
 
-### Regola n. 1: Prima i dati, poi la struttura. Forse. {#rule-data-first-structure-later-maybe}
+### Regola #1: dati prima, struttura dopo. Forse. {#rule-data-first-structure-later-maybe}
 
 #### Spiegazione {#explanation-1}
 
-Consiglio di non preoccuparsi di una struttura dati dichiarata in senso ERD. Inizialmente.
+Raccomando di non preoccuparsi di una struttura di dati dichiarata in senso ERD. Inizialmente.
 
-Impara ad amare nt:unstructured (&amp; Friends) nello sviluppo.
+Scopri come amare nt:unstructured (&amp; friends) nello sviluppo.
 
-Credo che Stefano lo riassuma più o meno.
+Penso che Stefano riesca a riassumere più o meno questo.
 
-La mia linea di fondo: La struttura è costosa e in molti casi non è assolutamente necessario dichiarare esplicitamente la struttura allo stoccaggio sottostante.
+Il mio punto di vista: la struttura è costosa e in molti casi non è assolutamente necessario dichiarare esplicitamente la struttura nello storage sottostante.
 
-Esiste un contratto implicito sulla struttura che l&#39;applicazione utilizza in modo intrinseco. Supponiamo di memorizzare la data di modifica di un post di blog in una proprietà lastModified . La mia app saprà automaticamente leggere di nuovo la data di modifica da quella stessa proprietà, non c&#39;è davvero bisogno di dichiararlo esplicitamente.
+Esiste un contratto implicito relativo alla struttura utilizzata intrinsecamente dall&#39;applicazione. Supponiamo che memorizzi la data di modifica di un post di blog in una proprietà lastModified. La mia app saprà automaticamente di leggere di nuovo la data di modifica dalla stessa proprietà, non c’è davvero bisogno di dichiararla esplicitamente.
 
-Ulteriori vincoli relativi ai dati, come vincoli obbligatori o di tipo e di valore, dovrebbero essere applicati solo se richiesto per motivi di integrità dei dati.
+Ulteriori vincoli sui dati, come i vincoli obbligatori o di tipo e valore, devono essere applicati solo se necessario per motivi di integrità dei dati.
 
 #### Esempio {#example-1}
 
-L’esempio precedente di utilizzo di un `lastModified` La proprietà Date, ad esempio il nodo &quot;post di blog&quot;, non significa in realtà che ci sia bisogno di un tipo di nodo speciale. Io userei sicuramente `nt:unstructured` almeno inizialmente per i nodi del post del mio blog. Dal momento che nella mia applicazione di blog tutto ciò che farò è mostrare la data dell&#39;ultima modifica comunque (possibilmente &quot;ordine entro&quot;) Mi importa a malapena se è un Data affatto. Dato che mi fido implicitamente della mia applicazione di scrittura di blog per mettere lì una &quot;data&quot; comunque, non c&#39;è davvero bisogno di dichiarare la presenza di un `lastModified` data sotto forma di nodetype a.
+L’esempio precedente di utilizzo di una `lastModified` La proprietà della data, ad esempio sul nodo &quot;post di blog&quot;, non significa necessariamente che sia necessario un tipo di nodo speciale. Userei sicuramente `nt:unstructured` almeno inizialmente per i nodi del post di blog. Dato che nella mia applicazione di blogging tutto quello che sto per fare è quello di visualizzare la data ultima modificata comunque (possibilmente &quot;ordina per&quot;) mi importa a malapena se è una data affatto. Dato che implicitamente mi fido della mia applicazione di scrittura di blog per mettere un &quot;data&quot; lì comunque, non c&#39;è davvero bisogno di dichiarare la presenza di un `lastModified` data nella forma a di nodetype.
 
-### Regola n. 2: Guidare la gerarchia dei contenuti, non lasciare che accada. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
+### Regola #2: guida la gerarchia dei contenuti, non lasciare che accada. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
 #### Spiegazione {#explanation-2}
 
-La gerarchia dei contenuti è una risorsa molto preziosa. Quindi non lasciate che accada, progettatela. Se non avete un nome &quot;buono&quot; e leggibile per un nodo, probabilmente è qualcosa che dovreste riconsiderare. I numeri arbitrari non sono mai un &quot;buon nome&quot;.
+La gerarchia dei contenuti è una risorsa molto preziosa. Quindi non lasciate che accada, progettatelo. Se non hai un nome &quot;buono&quot; e leggibile per un nodo, è probabilmente qualcosa che dovresti riconsiderare. I numeri arbitrari non sono quasi mai un &quot;buon nome&quot;.
 
 Anche se può essere estremamente facile mettere rapidamente un modello relazionale esistente in un modello gerarchico, si dovrebbe mettere un po &#39;di pensiero in quel processo.
 
-Nella mia esperienza, se si pensa al controllo degli accessi e al contenimento, di solito sono buoni driver per la gerarchia dei contenuti. Immaginalo come se fosse il tuo file system. Forse anche utilizzare file e cartelle per modellarlo sul disco locale.
+Nella mia esperienza, se si pensa al controllo degli accessi e al contenimento, in genere si tratta di fattori validi per la gerarchia dei contenuti. Immaginatelo come se fosse il vostro file system. È possibile utilizzare anche file e cartelle per modellarli sul disco locale.
 
-Personalmente preferisco le convenzioni gerarchiche rispetto al sistema di digitazione dei nodi in molti casi inizialmente, e introdurrò la digitazione successivamente.
+Personalmente preferisco le convenzioni gerarchiche rispetto al sistema di nodetyping in molti casi inizialmente, e introduco la digitazione in un secondo momento.
 
 >[!CAUTION]
 >
->Anche il modo in cui è strutturato un archivio di contenuti può influire sulle prestazioni. Per ottenere prestazioni migliori, il numero di nodi figlio associati a singoli nodi in un archivio di contenuti non deve generalmente superare le 1.000.
+>La struttura di un archivio di contenuti può influire anche sulle prestazioni. Per prestazioni ottimali, il numero di nodi secondari collegati ai singoli nodi in un archivio di contenuti non deve in genere superare le 1.000 unità.
 >
->Vedi [Quanti dati può gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) per ulteriori informazioni.
+>Consulta [Quanti dati può gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) per ulteriori informazioni.
 
 #### Esempio {#example-2}
 
-Vorrei modellare un semplice sistema di blog come segue. Nota che inizialmente non mi interessa nemmeno i rispettivi nodetype che uso a questo punto.
+Modellerei un semplice sistema di blog come segue. Tieni presente che inizialmente non mi interessano nemmeno i rispettivi tipi di noduli che utilizzo a questo punto.
 
 ```xml
 /content/myblog
@@ -93,52 +93,52 @@ Vorrei modellare un semplice sistema di blog come segue. Nota che inizialmente n
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Credo che una delle cose che emergono sia che tutti comprendiamo la struttura del contenuto basata sull&#39;esempio senza ulteriori spiegazioni.
+Credo che una delle cose che diventano evidenti è che tutti comprendiamo la struttura del contenuto basata sull&#39;esempio senza ulteriori spiegazioni.
 
-Ciò che può essere inaspettato inizialmente è il motivo per cui non avrei conservato i &quot;commenti&quot; con il &quot;post&quot;, che è dovuto al controllo dell&#39;accesso che vorrei essere applicato in modo ragionevolmente gerarchico.
+Ciò che inizialmente può essere inaspettato è il motivo per cui non memorizzerei i &quot;commenti&quot; con il &quot;post&quot;, che è dovuto al controllo degli accessi che vorrei essere applicato in modo ragionevolmente gerarchico.
 
-Utilizzando il modello di contenuto di cui sopra posso facilmente consentire all&#39;utente &quot;anonimo&quot; di &quot;creare&quot; commenti, ma mantenere l&#39;utente anonimo su una base di sola lettura per il resto dell&#39;area di lavoro.
+Utilizzando il modello di contenuto di cui sopra posso consentire facilmente all’utente &quot;anonimo&quot; di &quot;creare&quot; commenti, ma mantenere l’utente anonimo in sola lettura per il resto dell’area di lavoro.
 
-### Regola n. 3: Le aree di lavoro sono per clone(), merge() e update(). {#rule-workspaces-are-for-clone-merge-and-update}
+### Regola #3: le aree di lavoro sono per clone(), merge() e update(). {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Spiegazione {#explanation-3}
 
-Se non utilizzi `clone()`, `merge()` o `update()` metodi nell&#39;applicazione un&#39;unica area di lavoro è probabilmente la strada da seguire.
+Se non usi `clone()`, `merge()` o `update()` metodi nell&#39;applicazione un&#39;unica area di lavoro è probabilmente la soluzione ideale.
 
-&quot;nodi corrispondenti&quot; è un concetto definito nelle specifiche JCR. In sostanza, si riduce a nodi che rappresentano lo stesso contenuto, in diverse cosiddette aree di lavoro.
+&quot;Nodi corrispondenti&quot; è un concetto definito nelle specifiche JCR. In sostanza, si riduce ai nodi che rappresentano lo stesso contenuto, in diverse cosiddette aree di lavoro.
 
-JCR introduce il concetto molto astratto di Workspace che lascia molti sviluppatori incerti su cosa fare con loro. Vorrei proporre di sottoporre a test l&#39;utilizzo degli spazi di lavoro.
+JCR introduce il concetto molto astratto di aree di lavoro che lascia molti sviluppatori non chiari su cosa fare con loro. Vorrei proporre di testare l’utilizzo delle aree di lavoro da parte tua.
 
-Se si dispone di una notevole sovrapposizione di nodi &quot;corrispondenti&quot; (essenzialmente i nodi con lo stesso UUID) in più aree di lavoro, probabilmente le aree di lavoro vengono utilizzate correttamente.
+Se si dispone di una notevole sovrapposizione di nodi &quot;corrispondenti&quot; (essenzialmente i nodi con lo stesso UUID) in più aree di lavoro, è probabile che le aree di lavoro vengano utilizzate correttamente.
 
-Se non vi è sovrapposizione di nodi con lo stesso UUID, probabilmente si abusano delle aree di lavoro.
+Se non vi è alcuna sovrapposizione di nodi con lo stesso UUID, probabilmente stai abusando delle aree di lavoro.
 
-Le aree di lavoro non devono essere utilizzate per il controllo degli accessi. La visibilità del contenuto per un particolare gruppo di utenti non è un buon argomento per separare gli elementi in aree di lavoro diverse. JCR dispone di &quot;Controllo accessi&quot; nell’archivio dei contenuti per fornire questo.
+Le aree di lavoro non devono essere utilizzate per il controllo degli accessi. La visibilità dei contenuti per un particolare gruppo di utenti non è un buon argomento per separare gli elementi in aree di lavoro diverse. JCR dispone del &quot;Controllo degli accessi&quot; nell’archivio dei contenuti.
 
-Le aree di lavoro sono il limite per riferimenti e query.
+Le aree di lavoro sono il limite per i riferimenti e le query.
 
 #### Esempio {#example-3}
 
-Utilizzare le aree di lavoro per elementi quali:
+Utilizza le aree di lavoro per:
 
-* v1.2 del progetto rispetto a a v1.3 del progetto
-* uno stato di &quot;sviluppo&quot;, &quot;controllo qualità&quot; e di contenuto &quot;pubblicato&quot;
+* v1.2 del progetto rispetto alla v1.3 del progetto
+* uno stato di &quot;sviluppo&quot;, &quot;QA&quot; e uno stato di &quot;pubblicazione&quot; del contenuto
 
 Non utilizzare le aree di lavoro per elementi quali:
 
-* directory home dell&#39;utente
-* contenuto distinto per diversi tipi di pubblico target come pubblico, privato, locale, ...
-* caselle di posta elettronica per utenti diversi
+* home directory utente
+* contenuti distinti per tipi di pubblico diversi, come pubblico, privato, locale, ...
+* caselle di posta per utenti diversi
 
-### Regola n. 4: Attenzione ai fratelli con lo stesso nome. {#rule-beware-of-same-name-siblings}
+### Regola #4: attenzione ai pari livello con lo stesso nome. {#rule-beware-of-same-name-siblings}
 
 #### Spiegazione {#explanation-4}
 
-Sebbene SNS (Same Name Siblings) sia stato introdotto nella specifica per consentire la compatibilità con le strutture di dati progettate ed espresse tramite XML e che siano quindi estremamente utili per JCR, SNS presenta un notevole sovraccarico e complessità per l’archivio.
+Sebbene nella specifica siano stati introdotti elementi di pari livello con lo stesso nome (SNS, Same Name Siblings) per consentire la compatibilità con strutture di dati progettate ed espresse tramite XML e pertanto estremamente utili per JCR, SNS presenta un sovraccarico e una complessità considerevoli per l’archivio.
 
-Qualsiasi percorso nell’archivio dei contenuti che contiene un SNS in uno dei suoi segmenti di percorso diventa molto meno stabile. Se un SNS viene rimosso o riordinato, ha un impatto sui percorsi di tutti gli altri SNS e dei relativi figli.
+Qualsiasi percorso all’interno dell’archivio dei contenuti che contiene un SNS in uno dei suoi segmenti di percorso diventa molto meno stabile; se un SNS viene rimosso o riordinato, ha un impatto sui percorsi di tutti gli altri SNS e dei relativi elementi secondari.
 
-Per l’importazione di XML o l’interazione con SNS XML esistenti può essere necessaria e utile, ma non ho mai utilizzato SNS e mai lo farò nei miei modelli di dati &quot;campo verde&quot;.
+Per l&#39;importazione di XML o l&#39;interazione con gli SNS XML esistenti può essere necessario e utile, ma non ho mai utilizzato SNS e non lo farò mai nei miei modelli di dati &quot;green field&quot;.
 
 #### Esempio {#example-4}
 
@@ -149,52 +149,52 @@ Utilizzare
 /content/myblog/posts/iphone_shipping
 ```
 
-anziché
+invece di
 
 ```xml
 /content/blog[1]/post[1]
 /content/blog[1]/post[2]
 ```
 
-### Regola n. 5: Riferimenti considerati dannosi. {#rule-references-considered-harmful}
+### Regola #5: riferimenti considerati dannosi. {#rule-references-considered-harmful}
 
 #### Spiegazione {#explanation-5}
 
-I riferimenti implicano l&#39;integrità referenziale. Trovo importante comprendere che i riferimenti non si limitano ad aggiungere costi aggiuntivi per l&#39;archivio che gestisce l&#39;integrità referenziale, ma sono anche costosi dal punto di vista della flessibilità dei contenuti.
+I riferimenti implicano integrità referenziale. È importante comprendere che i riferimenti non solo aggiungono costi aggiuntivi per l’archivio gestendo l’integrità referenziale, ma sono anche costosi dal punto di vista della flessibilità dei contenuti.
 
-Personalmente mi accerto di utilizzare sempre solo i riferimenti quando non sono in grado di gestire un riferimento pericoloso e utilizzare in altro modo un percorso, un nome o una stringa UID per fare riferimento a un altro nodo.
+Personalmente, mi assicuro di utilizzare sempre i riferimenti solo quando non riesco davvero a gestire un riferimento penzolante e altrimenti utilizzo un percorso, un nome o una stringa UUID per fare riferimento a un altro nodo.
 
 #### Esempio {#example-5}
 
-Supponiamo di consentire &quot;riferimenti&quot; da un documento (a) a un altro documento (b). Se si modella questa relazione utilizzando le proprietà di riferimento, ciò significa che i due documenti sono collegati a livello di archivio. Non è possibile esportare/importare i documenti (a) singolarmente, poiché la destinazione della proprietà di riferimento potrebbe non esistere. Sono interessate anche altre operazioni quali l’unione, l’aggiornamento, il ripristino o il clone.
+Supponiamo che io permetta &quot;riferimenti&quot; da un documento (a) a un altro documento (b). Se si modella questa relazione utilizzando le proprietà di riferimento, significa che i due documenti sono collegati a livello di repository. Non è possibile esportare/importare singolarmente il documento (a), poiché la destinazione della proprietà di riferimento potrebbe non esistere. Sono interessate anche altre operazioni quali unione, aggiornamento, ripristino o clonazione.
 
-Quindi, modellerei questi riferimenti come &quot;riferimenti deboli&quot; (in JCR v1.0 questo essenzialmente si riduce alle proprietà della stringa che contengono l&#39;uuid del nodo di destinazione) o semplicemente userei un percorso. A volte il percorso è più significativo per cominciare.
+Quindi modellerei quei riferimenti come &quot;riferimenti deboli&quot; (in JCR v1.0 questo si riduce essenzialmente alle proprietà stringa che contengono l’UUID del nodo di destinazione) o semplicemente utilizzerei un percorso. A volte il percorso è più significativo per iniziare.
 
-Penso che ci siano casi d&#39;uso in cui un sistema non può davvero funzionare se un riferimento è penzolante, ma non riesco a trovare un buon esempio &quot;reale&quot; ma semplice dalla mia esperienza diretta.
+Penso che ci siano casi d&#39;uso in cui un sistema non può davvero funzionare se un riferimento è penzolante, ma semplicemente non riesco a trovare un buon esempio &quot;reale&quot; ma semplice dalla mia esperienza diretta.
 
-### Regola n. 6: I file sono file. {#rule-files-are-files}
+### Regola #6: i file sono file. {#rule-files-are-files}
 
 #### Spiegazione {#explanation-6}
 
-Se un modello di contenuto espone qualcosa che anche in remoto *profumo* come un file o una cartella che cerco di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
+Se un modello di contenuto espone qualcosa che anche in remoto *odori* come un file o una cartella che tento di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
 
-Nella mia esperienza molte applicazioni generiche consentono l&#39;interazione con nt:folder e nt:files implicitamente e sanno come gestire e visualizzare tali eventi se sono arricchiti con metadati aggiuntivi. Ad esempio, un&#39;interazione diretta con le implementazioni del file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
+Nella mia esperienza, molte applicazioni generiche consentono l’interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
 
-Penso che come buona regola del pollice si potrebbe usare quanto segue: Se hai bisogno di memorizzare il nome del file e il tipo di MIME allora `nt:file`/ `nt:resource` È un fiammifero molto buono. Se si possono avere più &quot;file&quot; una nt:folder è un buon posto per memorizzarli.
+Penso che come buona regola generale si potrebbe usare quanto segue: Se avete bisogno di memorizzare il nome del file e il tipo di mime allora `nt:file`/ `nt:resource` è un&#39;ottima combinazione. Se si possono avere più &quot;file&quot;, la cartella nt:folder è un buon punto in cui memorizzarli.
 
-Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` non il `nt:file`. Estendo raramente nt:file e frequentemente `nt:resource`.
+Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` non il `nt:file`. Estendo raramente nt:file ed estendo frequentemente `nt:resource`.
 
 #### Esempio {#example-6}
 
-Supponiamo che qualcuno voglia caricare un&#39;immagine su un post di blog in:
+Supponiamo che qualcuno voglia caricare un&#39;immagine in un post di blog all&#39;indirizzo:
 
 ```xml
 /content/myblog/posts/iphone_shipping
 ```
 
-e forse la reazione istintiva sarebbe aggiungere una proprietà binaria contenente l&#39;immagine.
+e forse la reazione istintiva iniziale sarebbe di aggiungere una proprietà binaria contenente l&#39;immagine.
 
-Anche se ci sono sicuramente buoni casi d&#39;uso per utilizzare solo una proprietà binaria (diciamo che il nome è irrilevante e il mime-type è implicito) in questo caso consiglierei la seguente struttura per il mio esempio di blog.
+Anche se ci sono sicuramente casi d’uso validi per utilizzare solo una proprietà binaria (supponiamo che il nome sia irrilevante e il tipo mime implicito) in questo caso consiglierei la seguente struttura per il mio esempio di blog.
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments [nt:folder]
@@ -202,21 +202,21 @@ Anche se ci sono sicuramente buoni casi d&#39;uso per utilizzare solo una propri
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Regola n. 7: Gli ID sono malvagi. {#rule-ids-are-evil}
+### Regola #7: gli ID sono malvagi. {#rule-ids-are-evil}
 
 #### Spiegazione {#explanation-7}
 
-Nei database relazionali gli ID sono un mezzo necessario per esprimere le relazioni, in modo che le persone tendano ad usarli anche nei modelli di contenuto. Principalmente per le ragioni sbagliate.
+Nei database relazionali gli ID sono un mezzo necessario per esprimere le relazioni, quindi le persone tendono a utilizzarli anche nei modelli di contenuto. Soprattutto per i motivi sbagliati.
 
-Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente non stai sfruttando correttamente la gerarchia.
+Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, è probabile che la gerarchia non venga sfruttata correttamente.
 
-È vero che alcuni nodi hanno bisogno di un&#39;identificazione stabile durante il loro ciclo di vita. Molto meno di quello che potreste pensare. mix:referenceable fornisce un tale meccanismo integrato nell&#39;archivio, quindi non c&#39;è davvero bisogno di trovare un ulteriore mezzo per identificare un nodo in modo stabile.
+È vero che alcuni nodi necessitano di un’identificazione stabile durante il loro ciclo di vita. Molto meno di quanto possiate immaginare. mix:referenceable fornisce un meccanismo di questo tipo integrato nell&#39;archivio, pertanto non è necessario trovare un metodo aggiuntivo per identificare un nodo in modo stabile.
 
-Tieni presente anche che gli elementi possono essere identificati dal percorso, e tanto quanto i &quot;symlink&quot; hanno più senso per la maggior parte degli utenti rispetto ai collegamenti rigidi in un filesystem unix, un percorso ha senso per la maggior parte delle applicazioni fare riferimento a un nodo target.
+Tieni presente che gli elementi possono essere identificati in base al percorso e che i &quot;symlink&quot; hanno più senso per la maggior parte degli utenti rispetto ai collegamenti rigidi in un file system unix, un percorso ha un senso per la maggior parte delle applicazioni fare riferimento a un nodo di destinazione.
 
-Ancora più importante, è **mescolare**:referenceable significa che può essere applicata a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
+Ma, soprattutto, **mix**:referenceable significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
 
-Diciamo quindi che solo perché si desidera essere in grado di fare riferimento potenzialmente a un nodo di tipo &quot;Documento&quot; non significa che il vostro tipo di nodo &quot;Documento&quot; deve estendersi da mix:referenceable in modo statico in quanto può essere aggiunto a qualsiasi istanza del &quot;Documento&quot; dinamicamente.
+Supponiamo quindi che solo perché si desidera essere potenzialmente in grado di fare riferimento a un nodo di tipo &quot;Documento&quot; non significa che il tipo di nodo &quot;Documento&quot; debba estendersi da mix:referenziabile in modo statico, in quanto può essere aggiunto dinamicamente a qualsiasi istanza del &quot;Documento&quot;.
 
 #### Esempio {#example-7}
 

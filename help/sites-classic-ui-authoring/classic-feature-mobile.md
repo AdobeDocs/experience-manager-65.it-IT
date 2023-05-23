@@ -1,6 +1,6 @@
 ---
 title: Authoring di una pagina per dispositivi mobili
-description: Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
+description: Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,30 +17,30 @@ ht-degree: 13%
 
 # Authoring di una pagina per dispositivi mobili{#authoring-a-page-for-mobile-devices}
 
-Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
+Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
 
-I dispositivi sono raggruppati nelle categorie feature, smart e touch in base alle capacità dei dispositivi di rendering di una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione corrispondente al gruppo di dispositivi.
+I dispositivi sono raggruppati in categorie, funzione, smart e touch in base alle funzionalità dei dispositivi per il rendering di una pagina. Quando l’utente finale accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione che corrisponde al suo gruppo di dispositivi.
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedi [Creazione di una Live Copy per canali diversi](/help/sites-administering/msm-livecopy.md).)
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (vedere [Creazione di una Live Copy per canali diversi](/help/sites-administering/msm-livecopy.md).)
 >
->Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedi [Creazione di filtri per i gruppi di dispositivi.](/help/sites-developing/groupfilters.md))
+>Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (vedere [Creazione di filtri per gruppi di dispositivi.](/help/sites-developing/groupfilters.md))
 
 Segui la procedura seguente per creare una pagina mobile:
 
-1. Nel browser, vai alla pagina **Siteadmin** console.
-1. Apri **Prodotti** pagina sottostante **Siti Web** >> **Sito Demo Di Geometrixx Mobile** >> **Inglese**.
+1. Nel browser, vai al **Siteadmin** console.
+1. Apri **Prodotti** pagina sotto **Siti Web** >> **Geometrixx sito demo mobile** >> **Inglese**.
 
-1. Passa a un emulatore diverso. A questo scopo, puoi effettuare le seguenti operazioni:
+1. Passa a un emulatore diverso. A tale scopo, puoi effettuare le seguenti operazioni:
 
    * Fai clic sull’icona del dispositivo nella parte superiore della pagina.
-   * Fai clic sul pulsante **Modifica** nel **Barra laterale** e seleziona il dispositivo nel menu a discesa.
+   * Fai clic su **Modifica** pulsante in **Barra laterale** e selezionare il dispositivo nel menu a discesa.
 
-1. Trascina e rilascia la **Testo e immagine** Dalla scheda Mobile della barra laterale alla pagina.
-1. Modifica il componente e aggiungi del testo. Fai clic su **OK** per salvare le modifiche.
+1. Trascina la **Testo e immagine** dalla scheda Mobile della barra laterale alla pagina.
+1. Modifica il componente e aggiungi del testo. Clic **OK** per salvare le modifiche.
 
-La pagina si presenta come segue:
+L&#39;aspetto della pagina è lo stesso del seguente:
 
 ![mobileipademu](assets/mobileipademu.png)
 

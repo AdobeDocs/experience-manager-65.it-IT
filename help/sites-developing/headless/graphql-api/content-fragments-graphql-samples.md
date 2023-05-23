@@ -356,14 +356,14 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
 }
 ```
 
-### Query di esempio: nomi di tutte le città Contrassegnati come interruzioni città {#sample-names-all-cities-tagged-city-breaks}
+### Query di esempio: nomi di tutte le città Taggato come City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 Se:
 
-* creare una varietà di tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
-* e assegnarle alla variante principale di varie `City` istanze
+* creare diversi tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* e assegnarli alla variante principale di vari `City` istanze
 
-Puoi quindi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci con tag di City Breaks nel `city`schema.
+Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
 
 **Query di esempio**
 
@@ -1328,11 +1328,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con i riferimenti a frammenti ad altri frammenti del tipo di modello specifico `Article`
+   * con riferimenti ai frammenti per altri frammenti del tipo di modello specifico `Article`
 
 >[!NOTE]
 >
->Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegna query `fragments` come array di `[Article]`.
+>Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegne di query `fragments` come array di `[Article]`.
 
 ```graphql
 {
@@ -1347,7 +1347,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-#### Più tipi di modelli di riferimento
+#### Più tipi di modello a cui si fa riferimento
 
 Questa query rappresenta un’interrogazione per ottenere:
 
@@ -1356,7 +1356,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegna query `fragments` come array di `[AllFragmentModels]`, che viene fatto riferimento al tipo di unione.
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegne di query `fragments` come array di `[AllFragmentModels]`, a cui viene fatto riferimento con il tipo di unione.
 
 ```graphql
 {
@@ -1561,11 +1561,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per più frammenti di contenuto e relative varianti di un modello specifico {#sample-wknd-multiple-fragment-variations-given-model}
+### Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
 
 Questa query rappresenta un’interrogazione:
 
-* per frammenti di contenuto di tipo `article` e tutte le varianti
+* frammenti di contenuto di tipo `article` e tutte le varianti
 
 **Query di esempio**
 
@@ -1588,11 +1588,11 @@ query {
 }
 ```
 
-### Query di esempio per le varianti di frammento di contenuto di un modello specifico a cui è associato un tag specifico{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Query di esempio per le varianti di frammenti di contenuto di un determinato modello a cui è associato un tag specifico{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Questa query rappresenta un’interrogazione:
 
-* per frammenti di contenuto di tipo `article` con una o più varianti con il tag `WKND : Activity / Hiking`
+* frammenti di contenuto di tipo `article` con una o più varianti contrassegnate dal tag `WKND : Activity / Hiking`
 
 **Query di esempio**
 

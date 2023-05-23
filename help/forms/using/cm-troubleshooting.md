@@ -1,7 +1,7 @@
 ---
-title: "Gestione della corrispondenza: Risoluzione dei problemi"
+title: "Gestione della corrispondenza: risoluzione dei problemi"
 seo-title: Correspondence Management Troubleshooting
-description: Risoluzione dei problemi di gestione della corrispondenza
+description: Risoluzione dei problemi di Gestione della corrispondenza
 seo-description: Correspondence Management Troubleshooting
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ---
 
-# Gestione della corrispondenza: Risoluzione dei problemi {#correspondence-management-troubleshooting}
+# Gestione della corrispondenza: risoluzione dei problemi {#correspondence-management-troubleshooting}
 
 ## Errori durante il salvataggio di una lettera {#errors-when-saving-a-letter}
 
@@ -25,32 +25,32 @@ ht-degree: 6%
 
 Durante il salvataggio di una lettera viene visualizzato uno dei seguenti errori:
 
-* Binding dei dati non presente per il modulo di testo
+* Associazione dati non presente per il modulo di testo
 * Fornisci informazioni sulla proprietà necessarie per
 
 ### Motivo {#reason}
 
-Questi errori possono verificarsi a causa di uno dei seguenti elementi:
+Questi errori possono verificarsi a causa di uno dei seguenti motivi:
 
-* Un dizionario dati è associato alla lettera ma non è presente sul server.
-* Un dizionario dati è associato alla lettera ma il nome contiene un carattere di sottolineatura (_).
+* Un dizionario dati è associato alla lettera ma non è presente nel server.
+* Un dizionario dati è associato alla lettera ma presenta un carattere di sottolineatura (_) nel nome.
 
 ### Soluzione alternativa {#workaround}
 
-Assicurati che il dizionario dati che stai utilizzando nella lettera sia presente sul server e non abbia un carattere di sottolineatura (_) nel suo nome.
+Verifica che il dizionario dati utilizzato nella lettera sia presente sul server e non contenga un carattere di sottolineatura (_) nel nome.
 
-## Errore durante l&#39;anteprima di una lettera {#error-when-previewing-a-letter}
+## Errore durante l’anteprima di una lettera {#error-when-previewing-a-letter}
 
 ### Problema   {#issue-1}
 
-Durante l&#39;anteprima di una lettera, l&#39;errore &quot;Errore nel caricamento della lettera: Impossibile importare la risorsa da un input XML&quot; viene visualizzato anche quando viene pubblicata una risorsa di testo non pubblicata in precedenza nella lettera.
+Durante l’anteprima di una lettera, l’errore &quot;Errore durante il caricamento della lettera: impossibile importare la risorsa dall’input XML&quot; viene visualizzato anche quando viene pubblicata una risorsa di testo non pubblicata in precedenza nella lettera.
 
 ### Soluzione alternativa {#workaround-1}
 
-Reimposta la cache delle lettere sull&#39;istanza di pubblicazione seguendo i passaggi seguenti, quindi riprova a visualizzare la lettera:
+Reimposta la cache delle lettere sull’istanza di pubblicazione seguendo la procedura riportata di seguito, quindi prova a rivedere la lettera:
 
-1. Vai a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e accedi come amministratore.
-1. Seleziona **Configurazioni di gestione della corrispondenza**.
-1. In **Configurazioni di gestione della corrispondenza** disable **Abilita cache lettera** quindi fai clic su **Salva.**
-1. Abilita **Abilita cache lettera** quindi fai clic su **Salva**.
-1. Riprova a visualizzare la lettera.
+1. Vai a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e accedi come Amministratore.
+1. Seleziona **Configurazioni gestione corrispondenza**.
+1. In entrata **Configurazioni gestione corrispondenza**, disattiva **Abilita cache lettere** e quindi fare clic su **Salva.**
+1. Abilita **Abilita cache lettere** e quindi fare clic su **Salva**.
+1. Riprovare a visualizzare la lettera.

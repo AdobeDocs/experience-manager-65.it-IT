@@ -1,7 +1,7 @@
 ---
 title: Integrazione con Adobe Analytics
 seo-title: Integrating with Adobe Analytics
-description: Scopri come integrare AEM con Adobe Analytics.
+description: Scopri come integrare l’AEM con Adobe Analytics.
 seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
@@ -25,14 +25,14 @@ L’integrazione di Adobe Analytics e AEM consente di monitorare l’attività d
 * Una configurazione Adobe Analytics consente a AEM l’autenticazione con Adobe Analytics.
 * Un framework identifica i dati inviati alla suite di rapporti Adobe Analytics.
 
-I dati includono i dati di pagina e utente; ad esempio:
+I dati includono dati della pagina e dell’utente; ad esempio:
 
 * dati raccolti dai componenti AEM
 * clic sui collegamenti
 * informazioni sull&#39;utilizzo dei video
 * il numero di visite alla pagina da Adobe Analytics
 
-Le pagine seguenti consentono di configurare l’integrazione:
+Le pagine seguenti sono utili per configurare l’integrazione:
 
 * [Connessione ad Adobe Analytics e creazione di framework](/help/sites-administering/adobeanalytics-connect.md)
 * [Configurazione del tracciamento dei collegamenti per Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
@@ -40,11 +40,11 @@ Le pagine seguenti consentono di configurare l’integrazione:
 * [Configurazione del tracciamento video per Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Classificazioni Adobe](/help/sites-administering/adobeanalytics-classifications.md)
 
-È inoltre possibile utilizzare [Procedura guidata di Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l’integrazione.
+È inoltre possibile utilizzare [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) per eseguire facilmente l&#39;integrazione.
 
 >[!NOTE]
 >
->Vedi anche l&#39;articolo tutorial: [Integrazione di AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consulta anche l’articolo tutorial: [Integrazione dell’AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Ulteriori informazioni {#further-information}
 

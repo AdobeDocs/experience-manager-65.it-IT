@@ -53,36 +53,36 @@ Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso 
 
 La prima volta che esegui l’accesso a una piccola esercitazione online, verranno evidenziate alcune delle funzioni principali dell’interfaccia utente.
 
-È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto verrà utilizzato il **Console Risorse**.
+È quindi possibile utilizzare il pannello di navigazione per accedere alle aree chiave di AEM. Per i frammenti di contenuto utilizzerai **Console risorse**.
 
-Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra, seguita dall’icona a forma di piccola bussola:
+Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra, seguita dall’icona della bussola piccola:
 
 ![Pannello di navigazione](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Anche se i frammenti di contenuto sono una funzione di AEM **Sites**, si trovano nella **Risorse** console. Questo è un dettaglio tecnico che non dovrebbe influenzare l’utente, ma potrebbe essere utile da sapere.
+>Sebbene i frammenti di contenuto siano una funzione dell’AEM **Sites**, si trovano in **Risorse** console. Questo è un dettaglio tecnico che non dovrebbe influenzare l’utente, ma potrebbe essere utile da sapere.
 
-All’interno della console è possibile selezionare le cartelle per passare al frammento di contenuto oppure le breadcrumb (nell’intestazione) per risalire la struttura.
+All’interno della console puoi selezionare le cartelle per passare al frammento di contenuto oppure le breadcrumb (nell’intestazione) per tornare alla struttura.
 
 ![Breadcrumb](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
 ### Azioni, selezione, visualizzazione {#actions-selecting-viewing}
 
-La **Risorse** console dedicata **Barre degli strumenti Azioni** e **Azioni rapide** che puoi utilizzare dopo aver selezionato una risorsa (ad esempio una cartella o un frammento di contenuto).
+Il **Risorse** la console ha dedicato **Barre degli strumenti delle azioni**, e **Azioni rapide** che puoi utilizzare dopo aver selezionato una risorsa (ad esempio, una cartella o un frammento di contenuto).
 
 Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell’esempio seguente:
 
 ![Azioni rapide](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
-La barra degli strumenti Azioni consente di accedere a tutte le azioni applicabili allo scenario corrente. Le azioni disponibili possono cambiare; ad esempio, a seconda della posizione o se hai selezionato più risorse:
+La barra degli strumenti Azioni consente di accedere a tutte le azioni applicabili allo scenario corrente. Le azioni disponibili possono variare, ad esempio a seconda della posizione o se sono state selezionate più risorse:
 
 ![Barra degli strumenti delle azioni](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
-Puoi selezionare il formato per la visualizzazione delle risorse con il selettore di visualizzazione:
+Puoi selezionare il formato di visualizzazione delle risorse con il Selettore di visualizzazione:
 
 ![Selettore vista](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
-Puoi visualizzare ulteriori informazioni sugli elementi utilizzando il selettore della barra. Ciò consente anche di accedere ad azioni aggiuntive.
+Puoi visualizzare ulteriori informazioni sugli elementi utilizzando il Selettore della barra. Ciò consente anche di accedere ad azioni aggiuntive.
 
 ![Barra a sinistra](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
@@ -136,23 +136,23 @@ Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue 
 
 ### Creazione di un frammento di contenuto {#creating-fragment}
 
-La creazione di un frammento di contenuto è molto simile: è sufficiente utilizzare la **Frammento di contenuto** invece:
+La creazione di un frammento di contenuto è molto simile: puoi semplicemente utilizzare **Frammento di contenuto** invece:
 
 ![Opzione Crea frammento di contenuto](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-Questa volta si apre una procedura guidata. Il primo passaggio consiste nel selezionare il modello di frammento di contenuto su cui verrà basato il frammento:
+Questa volta viene aperta una procedura guidata. Il primo passaggio consiste nel selezionare il modello per frammenti di contenuto su cui basare il frammento:
 
-![Crea frammento di contenuto - seleziona Modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![Crea frammento di contenuto - seleziona modello](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Dopo aver continuato con **Successivo** puoi fornire i dettagli (**Base** e **Avanzate**) per il frammento:
+Dopo aver continuato con **Successivo** è possibile specificare i dettagli (**Base** e **Avanzate**) per il frammento:
 
 ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Conferma con **Crea** e potete **Apri** il frammento nell’editor.
+Conferma con **Crea** e puoi quindi **Apri** frammento nell’editor.
 
 ### Modifica di un frammento {#editing-fragment}
 
-È possibile aprire un frammento immediatamente dopo averlo creato, oppure selezionandolo dalla console Risorse.
+Puoi aprire un frammento immediatamente dopo averlo creato o selezionandolo dalla console Assets.
 
 Quando l’editor si apre per la prima volta, vedrai:
 
@@ -217,7 +217,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 Una volta completato il frammento, puoi **Pubblicare** in modo che sia disponibile per le applicazioni headless.
 
-Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti di **Risorse** console):
+Le azioni di pubblicazione sono disponibili nell’editor (o dalla barra degli strumenti del **Risorse** console):
 
 ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -262,7 +262,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella Assets Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Guida rapida alla creazione di una cartella di risorse headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Rileva il tipo MIME di risorse utilizzando Apache Tika
-description: Abilitare Apache Tika ad aiutare [!DNL Experience Manager Assets] rileva il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
+title: Rilevare il tipo MIME di risorse utilizzando Apache Tika
+description: Abilita Apache Tika per aiutarti [!DNL Experience Manager Assets] rileva il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento anziché dall’estensione del file.
 contentOwner: AG
 role: Admin, Architect
 feature: Metadata,Developer Tools,Asset Management
@@ -12,24 +12,24 @@ ht-degree: 0%
 
 ---
 
-# Rileva il tipo MIME di risorse utilizzando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
+# Rileva il tipo MIME di risorse tramite [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalmente, [!DNL Adobe Experience Manager Assets] rileva il tipo MIME di risorse caricate dalla loro estensione di file.
+Normalmente, [!DNL Adobe Experience Manager Assets] rileva il tipo MIME delle risorse caricate dall’estensione del file.
 
-Se utilizzi [!DNL Apache Tika] per caricare le risorse, [!DNL Assets] rileva il loro tipo MIME dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
+Se usa [!DNL Apache Tika] per caricare le risorse, [!DNL Assets] rileva il tipo MIME dal flusso di contenuto durante l’operazione di caricamento anziché dall’estensione del file.
 
-Questa funzione è disabilitata per impostazione predefinita. Per abilitare la funzione, configura la **[!UICONTROL Tipo MIME Day CQ]** servizio da [!UICONTROL Gestione configurazione].
+Questa funzione è disabilitata per impostazione predefinita. Per abilitare la funzione, configura **[!UICONTROL Tipo MIME DAM Day CQ]** servizio da [!UICONTROL Gestione configurazione].
 
 >[!NOTE]
 >
->Rilevamento del tipo MIME con [!DNL Apache Tika] libreria è un&#39;operazione ad alta intensità di risorse.
+>Rilevamento del tipo MIME tramite [!DNL Apache Tika] la libreria è un&#39;operazione che richiede molte risorse.
 
-1. Per aprire la console Web di Configuration Manager, accedere a `https://[aem_server]:[port]/system/console/configMgr`.
+1. Per aprire la console Web di Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Dall’elenco dei servizi, individua **[!UICONTROL Servizio Day CQ DAM Mime Type]** e fai clic su **[!UICONTROL Modifica]**.
 
-1. Seleziona la **[!UICONTROL Rileva MIME dal contenuto]** per abilitare l’analisi delle risorse caricate per determinare il loro tipo MIME mentre si ignorano le estensioni dei file. Per impostazione predefinita, questa opzione è deselezionata.
+1. Seleziona la **[!UICONTROL Rileva MIME dal contenuto]** per abilitare l’analisi delle risorse caricate per determinarne il tipo MIME, ignorando le estensioni dei file. Per impostazione predefinita, questa opzione è deselezionata.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
-1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
+1. Clic **[!UICONTROL Salva]** per salvare le modifiche.

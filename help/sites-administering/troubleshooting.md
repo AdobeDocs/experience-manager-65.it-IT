@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dei registri
 seo-title: Working with Logs
-description: Scopri come risolvere i problemi di AEM utilizzando i registri.
+description: Scopri come risolvere i problemi relativi all’AEM lavorando con i registri.
 seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Utilizzo dei registri{#working-with-logs}
 
-Questa sezione include informazioni dettagliate sui registri disponibili per la risoluzione dei problemi.
+Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi.
 
-CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart, puoi trovare i registri nelle seguenti posizioni:
+CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart, i registri sono disponibili nelle seguenti posizioni:
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -32,32 +32,32 @@ CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart,
 
 Il livello di registro predefinito è INFO, ovvero i messaggi DEBUG non vengono registrati.
 
-Per attivare il livello di log DEBUG, utilizza l&#39;explorer CRX per impostare il
+Per attivare il livello di registro DEBUG, utilizzare l&#39;Explorer CRX per impostare
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-per eseguire il debug. Non lasciare il registro a livello di registro DEBUG più a lungo del necessario, in quanto genera molti registri.
+proprietà di debug. Non lasciare il registro a livello di registro DEBUG più tempo del necessario, in quanto genera molti registri.
 
-Una riga nel file di debug solitamente inizia con DEBUG, e quindi fornisce il livello di log, l&#39;azione di installazione e il messaggio di log. Esempio:
+Una riga nel file di debug in genere inizia con DEBUG e quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
 
 ```xml
 DEBUG 3 WebApp Panel: WebApp successfully deployed
 ```
 
-I livelli di log sono i seguenti:
+I livelli del registro sono i seguenti:
 
-| 0 | Errore irreversibile | L&#39;azione non è riuscita e non è possibile continuare l&#39;installazione. |
+| 0 | Errore irreversibile | Azione non riuscita. Impossibile continuare l&#39;installazione. |
 |---|---|---|
-| 1 | Errore | L&#39;azione non è riuscita. L&#39;installazione continua, ma una parte di CRX non è stata installata correttamente e non funzionerà. |
-| 2 | Avvertenza | L&#39;azione è riuscita ma si sono verificati problemi. CRX potrebbe funzionare o meno correttamente. |
-| 3 | Informazioni | L&#39;azione è riuscita. |
+| 1 | Errore | Azione non riuscita. L&#39;installazione procede, ma una parte di CRX non è stata installata correttamente e non funzionerà. |
+| 2 | Avvertenza | L&#39;azione è stata completata ma si sono verificati problemi. CRX potrebbe funzionare correttamente o meno. |
+| 3 | Informazioni | Azione completata. |
 
 ## Opzione dettagliata utilizzata per la risoluzione dei problemi {#verbose-option-used-for-troubleshooting}
 
-Quando avvii CRX, puoi aggiungere l&#39;opzione -v (verbose) alla riga di comando come in:
+Quando si avvia CRX, è possibile aggiungere l&#39;opzione -v (verbose) alla riga di comando come in:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
-Utilizza l’opzione dettagliata per la risoluzione dei problemi in quanto questa opzione visualizza alcuni dei dati di log quickstart sulla console.
+Utilizza l’opzione dettagliata per la risoluzione dei problemi, in quanto questa opzione mostra parte dell’output del registro quickstart sulla console.

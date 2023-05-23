@@ -1,6 +1,6 @@
 ---
-title: Authoring delle pagine di contenuto con frammenti di contenuto
-description: I frammenti di contenuto AEM consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
+title: Authoring delle pagine di contenuti con frammenti di contenuto
+description: I Frammenti di contenuto AEM consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina.
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '1140'
-ht-degree: 57%
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 57%
 
 I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md).
 
-Consentono di creare contenuti neutri per il canale, insieme a varianti (eventualmente specifiche per il canale). Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
+I frammenti di contenuto consentono di creare contenuto utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
@@ -39,29 +39,29 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 I frammenti di contenuto consentono:
 
-* **Strategia di marketing e campagne**
+* La **Strategia di marketing e campagne**
 
-   * Revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
+   * La revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
 
 * **Creative Pro**
 
-   * Tracciamento delle risorse creative tramite raccolte associate ai frammenti di contenuto.
+   * Il tracciamento delle risorse creative tramite raccolte associate a frammenti di contenuto.
 
-* **Scrittori copia**
+* **Copywriter**
 
    * Creazione di contenuti nell’editor frammento di contenuto di AEM.
-   * Può creare varianti di contenuto.
-   * Può associare contenuti rilevanti al frammento di contenuto.
-   * Può utilizzare il controllo delle versioni/flusso di lavoro.
-   * Può condividere frammento di contenuto.
-   * Gestione centralizzata delle traduzioni.
+   * Possono creare varianti del contenuto.
+   * Possono associare contenuti rilevanti ai frammenti di contenuto.
+   * Possono utilizzare il controllo delle versioni/flusso di lavoro.
+   * Possono condividere dei frammenti di contenuto.
+   * Possono gestire le traduzioni a livello centrale.
 
-* **Produttori e Percorsi**
+* **Produttori e responsabili dei percorsi**
 
-   * Selezione di frammenti e varianti predefiniti con authoring in AEM.
-   * Può contare sul fatto che frammenti e contenuti associati siano sempre aggiornati, in quanto autori e creativi di copie possono eseguire gli aggiornamenti in frammenti e risorse gestiti a livello centrale.
-   * Può contare sul fatto che i contenuti multimediali associati siano curati per la loro rilevanza.
-   * È in grado di creare al volo varianti di contenuto ad hoc, garantendo al contempo che tali varianti rimangano gestite a livello centrale nel frammento.
+   * Scelta di frammenti e varianti predefiniti con l’authoring in AEM.
+   * Possono contare sul fatto che il frammento e il contenuto associato ad esso sono sempre aggiornati, poiché i copywriter e i creativi effettuano gli aggiornamenti su frammenti e risorse gestiti a livello centrale.
+   * Possono contare sul fatto che i contenuti multimediali associati sono sempre curati in base alla rilevanza.
+   * Possono creare all’istante varianti di contenuto ad hoc garantendo che queste restino comunque gestite a livello centrale nel frammento.
 
 ## Aggiunta di un frammento di contenuto alla pagina  {#adding-a-content-fragment-to-your-page}
 
@@ -71,7 +71,7 @@ I frammenti di contenuto consentono:
 
 1. Puoi effettuare le seguenti operazioni:
 
-   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Quindi trascina il frammento desiderato sull’istanza del componente.
+   * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Poi trascina il frammento desiderato sull’istanza del componente.
 
    * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **frammento di contenuto** richiesto.
    >[!NOTE]
@@ -84,7 +84,7 @@ I frammenti di contenuto consentono:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni su ulteriori funzionalità di modifica, consulta anche:
+   >Per informazioni su ulteriori funzionalità di modifica, consulta anche:
    >
    >
    >
@@ -111,7 +111,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 * **Elemento**
 
    * Il valore predefinito **Principale** sarà sempre disponibile.
-   * Una selezione è disponibile se il frammento è stato creato con un modello appropriato.
+   * Se il frammento è stato creato con un modello appropriato, sarà disponibile una selezione.
 
    >[!NOTE]
    >
@@ -122,7 +122,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * Il **Master** predefinito sarà sempre disponibile.
    * Se per il frammento sono state create delle varianti, sarà disponibile una selezione.
 
-* **Paragrafi**: specificare l’intervallo di paragrafi da includere:
+* **Paragrafi**: specifica l’intervallo di paragrafi da includere:
 
    * **Tutti i bundle**
    * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
@@ -141,19 +141,19 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 ### Aggiunta di contenuto intermedio  {#adding-in-between-content}
 
-Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un **Trascina qui i componenti** segnaposto tra ciascun paragrafo di HTML (e in alto/in basso) del frammento.
+Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [intermedio (ovvero contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Questo consente di aggiungere ulteriori contenuti [in mezzo (ovvero contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) al contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 
-* Aggiungi componenti dal [Browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
-* Aggiungi risorse da [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser).
-* Usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
+* aggiungere componenti dal [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser).
+* aggiungere risorse dal [bowser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser).
+* usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è il contenuto della pagina. Non viene memorizzato nel frammento di contenuto.
 
 ![cfm-6420-02](assets/cfm-6420-02.png)
 
@@ -186,7 +186,7 @@ Se hai [associato del contenuto](/help/assets/content-fragments/content-fragment
 
 >[!NOTE]
 >
->Se sulla stessa pagina sono presenti più frammenti di contenuto, la funzione **Contenuto associato** vengono visualizzate le risorse appropriate per tutti i frammenti.
+>Se sulla stessa pagina sono presenti più frammenti di contenuto, la scheda **Contenuto associato** mostrerà le risorse appropriate per tutti i frammenti.
 
 Una volta aggiunto alla pagina un frammento con contenuto associato, nel pannello laterale viene aperta una nuova scheda (**Contenuto associato**).
 
@@ -205,11 +205,11 @@ Ad esempio, per un’immagine è possibile:
 * Specifica una dimensione.
 * Puoi anche configurare il layout.
 
-Altre modifiche, ad esempio spostamento, copia, eliminazione, devono essere effettuate nell’editor frammenti.
+Altre modifiche, ad esempio sposta, copia ed elimina devono essere effettuate nell’editor frammenti.
 
 ### Pubblicazione {#publishing}
 
 I frammenti devono essere pubblicati in modo che possano essere utilizzati nelle pagine web pubblicate:
 
-* Un frammento può essere pubblicato dopo [creazione del frammento nella console Risorse](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
+* Un frammento può essere pubblicato dopo [creazione del frammento nella console Assets](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Se in una pagina in corso di pubblicazione viene utilizzato un *frammento non pubblicato*, è possibile pubblicare anche quest’ultimo allo stesso tempo.

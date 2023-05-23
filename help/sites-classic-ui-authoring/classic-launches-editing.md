@@ -1,6 +1,6 @@
 ---
 title: Modifica dei lanci
-description: Quando è stato creato un lancio per una pagina (o un insieme di pagine) è possibile modificare il contenuto nella copia di lancio delle pagine.
+description: Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,23 +18,23 @@ ht-degree: 3%
 
 # Modifica dei lanci{#editing-launches}
 
-## Modifica delle pagine di lancio {#editing-launch-pages}
+## Modifica delle pagine di un lancio {#editing-launch-pages}
 
-Quando è stato creato un lancio per una pagina (o un insieme di pagine) è possibile modificare il contenuto nella copia di lancio delle pagine.
+Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
 
 1. Apri la pagina per la modifica.
-1. Nella barra laterale, selezionate la **Controllo delle versioni** , quindi espandi la **Lanci** gruppo. Il titolo del lancio attualmente in corso di modifica utilizza un font in grassetto.
+1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi espandere **Lanci** gruppo. Il titolo del lancio attualmente in fase di modifica utilizza un font in grassetto.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Seleziona il lancio su cui desideri lavorare, quindi fai clic su **Interruttore**.
+1. Seleziona il lancio su cui vuoi lavorare e fai clic su **Switch**.
 1. Inizia a modificare.
 
    >[!NOTE]
    >
    >È possibile utilizzare **Pagina** scheda della barra laterale per eseguire azioni quali **Crea pagina figlia**, tra gli altri.
 
-## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
+## Modifica di una configurazione di Launch {#editing-a-launch-configuration}
 
 Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lancio. Puoi anche specificare un’immagine da associare al lancio.
 
@@ -42,26 +42,26 @@ Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lan
 
 1. Seleziona il lancio richiesto e fai clic su **Modifica** per aprire la finestra di dialogo:
 
-   * In **Generale** è possibile modificare:
+   * In **Generale** , è possibile modificare:
 
       * **Titolo**
-      * **Data live**: equivale alla data del lancio
+      * **Data attivazione**: equivalente alla data di lancio
       * **Produzione pronta**
 
-      Vedi [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione di questi campi.
+      Consulta [Lanci: l’ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione di questi campi.
 
-   * In **Immagine** è possibile caricare un file di immagine.
+   * In **Immagine** , puoi caricare un file di immagine.
 
 
 1. Fai clic su **Salva**.
 
-## Esplorazione dello stato di lancio di una pagina {#discovering-the-launch-status-of-a-page}
+## Esplorazione dello stato di avvio di una pagina {#discovering-the-launch-status-of-a-page}
 
-Quando modifichi un lancio di una pagina, le informazioni sul lancio vengono visualizzate nella parte inferiore della sezione **Controllo delle versioni** scheda della barra laterale:
+Quando modifichi un lancio di una pagina, le informazioni su tale lancio vengono visualizzate nella parte inferiore della sezione **Controllo delle versioni** scheda della barra laterale:
 
 * Nome del lancio.
-* L&#39;ora dall&#39;ultima modifica.
-* Utente che ha eseguito l’ultima modifica.
-* Lo stato del **Produzione pronta** flag (arancione=non impostato; green=set).
+* L’ora dall’ultima modifica.
+* Utente che ha eseguito l&#39;ultima modifica.
+* Stato del **Produzione pronta** flag (arancione=non impostato; verde=impostato).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)

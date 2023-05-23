@@ -1,7 +1,7 @@
 ---
 title: Assemblaggio di documenti PDF
 seo-title: Assembling PDF Documents
-description: Utilizzare il servizio Assembler per assemblare più documenti PDF in un unico documento PDF o per smontare un documento PDF in più documenti PDF.
+description: Utilizzare il servizio Assembler per assemblare più documenti PDF in un unico documento PDF o disassemblare un documento PDF in più documenti PDF.
 seo-description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Assemblaggio di documenti PDF {#assembling-pdf-documents}
 
-**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
 
 **Informazioni sul servizio Assembler**
 
-Il servizio Assembler può assemblare più documenti PDF in un unico documento PDF o smontare un documento PDF in più documenti PDF. Il servizio Assembler può manipolare i documenti in vari modi, ad esempio modificando le dimensioni della pagina e ruotando il contenuto. Può inserire contenuto aggiuntivo, ad esempio intestazioni, piè di pagina e un sommario, e può conservare, importare o esportare contenuti esistenti, come annotazioni, allegati di file e segnalibri.
+Il servizio Assembler può assemblare più documenti PDF in un unico documento PDF o disassemblare un documento PDF in più documenti PDF. Il servizio Assembler può manipolare i documenti in vari modi, ad esempio modificando le dimensioni della pagina e ruotando il contenuto. È possibile inserire contenuto aggiuntivo, ad esempio intestazioni, piè di pagina e sommario, nonché conservare, importare o esportare contenuto esistente, ad esempio annotazioni, allegati e segnalibri.
 
 A partire dal LiveCycle ES 8.0 e versioni successive, il supporto per i pacchetti PDF è disponibile nel servizio Assembler.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, vedere [Riferimento servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

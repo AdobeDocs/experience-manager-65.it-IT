@@ -1,7 +1,7 @@
 ---
-title: Integrazione con i servizi di terze parti
+title: Integrazione con servizi di terze parti
 seo-title: Integrating with Third-Party Services
-description: Scopri come integrare AEM con i servizi di terze parti.
+description: Scopri come integrare l’AEM con i servizi di terze parti.
 seo-description: Learn how to integrate AEM with third party services.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
@@ -17,29 +17,29 @@ ht-degree: 6%
 
 ---
 
-# Integrazione con i servizi di terze parti{#integrating-with-third-party-services}
+# Integrazione con servizi di terze parti{#integrating-with-third-party-services}
 
-Con AEM, puoi integrare con i seguenti prodotti non Adobi pronti all’uso:
+Con l’AEM, puoi integrarlo con i seguenti prodotti non Adobi preconfigurati:
 
-* Connessione Amazon SNS - Servizi web Amazon
+* Connessione Amazon SNS - Servizi Web Amazon
 * BrightEdge Content Optimizer - contenuto ottimizzato per la ricerca
-* ExactTarget - Marketing e-mail
-* Facebook Connect - Social networking
-* Frammento di analisi generico - analytics
-* Microsoft® Translator o altri fornitori di traduzione automatica
+* ExactTarget - marketing via e-mail
+* Facebook Connect - Social network
+* Snippet generico di analisi: analytics
+* Microsoft® Translator o altri fornitori di servizi di traduzione automatica
 * Connessione Pushwoosh - App - notifiche push
-* Salesforce - software di vendita e gestione delle relazioni con i clienti
-* Twitter - Social networking
-* YouTube - condivisione di video
+* Salesforce - software di vendita e CRM
+* Twitter - social network
+* YouTube - Condivisione video
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-Inoltre, è possibile integrare AEM con [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Inoltre, è possibile integrare l’AEM con il [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integrazione con Salesforce {#integrating-with-salesforce}
 
 Salesforce.com è l&#39;azienda per l&#39;elaborazione cloud di livello Enterprise leader nel passaggio a Social Enterprise.
 
-Per informazioni sull&#39;integrazione del sito AEM e di Salesforce, consulta [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
+Per informazioni sull’integrazione del sito AEM e di Salesforce, consulta [Integrazione con Salesforce](/help/sites-administering/salesforce.md).
 
 <!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
@@ -54,16 +54,16 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 ## Integrazione con ExactTarget {#integrating-with-exacttarget}
 
-Le soluzioni di marketing e-mail di ExactTarget consentono alle organizzazioni di qualsiasi dimensione di progettare e distribuire campagne e-mail altamente mirate, mission-critical e completamente integrate.
+Le soluzioni di e-mail marketing ExactTarget consentono alle organizzazioni di tutte le dimensioni di progettare e distribuire campagne e-mail altamente mirate, mission-critical e completamente integrate.
 
 Per informazioni sull’integrazione del sito AEM e di ExactTarget, consulta [Configurazione di ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integrazione con Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook e Twitter sono popolari servizi di social networking. L’integrazione AEM con Facebook e Twitter consente alle organizzazioni di fornire un’opzione di accesso Facebook o Twitter sulle proprietà digitali possedute e quindi di personalizzare l’esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono inoltre combinare le informazioni di profilo con i dati provenienti da fonti aggiuntive, come un sistema di gestione delle relazioni con i clienti o un profilo web, per creare una visualizzazione unificata del cliente.
+Facebook e Twitter sono servizi popolari di social networking. L’integrazione dell’AEM con Facebook e Twitter consente alle organizzazioni di fornire un’opzione di accesso Facebook o Twitter alle proprietà digitali possedute e quindi personalizzare l’esperienza utente in base alle informazioni del profilo. Gli addetti al marketing possono anche combinare le informazioni del profilo con i dati provenienti da fonti aggiuntive, ad esempio un sistema di gestione delle relazioni con i clienti o un profilo del sito web, per creare una visualizzazione unificata del cliente.
 
-Vedi [Accesso social](/help/communities/social-login.md) per ulteriori informazioni.
+Consulta [Accesso social network](/help/communities/social-login.md) per ulteriori informazioni.
 
 ## Integrazione con altri provider {#integrating-with-other-providers}
 
-AEM consente di connettersi ad altri provider esterni con un [Frammento di analisi generico.](/help/sites-administering/external-providers.md)
+AEM consente di connettersi ad altri provider esterni con un [Snippet generico di analisi.](/help/sites-administering/external-providers.md)

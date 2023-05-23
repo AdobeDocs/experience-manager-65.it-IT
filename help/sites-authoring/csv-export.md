@@ -1,7 +1,7 @@
 ---
 title: Esportazione in formato CSV
 seo-title: Export to CSV
-description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
+description: Esportare le informazioni sulle pagine in un file CSV nel sistema locale
 seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
@@ -14,7 +14,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 85%
+ht-degree: 75%
 
 ---
 
@@ -55,7 +55,7 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 ![etc-01](assets/etc-01.png)
 
-La creazione **Rapporto CSV** è disponibile quando esplori la pagina **Sites** console (nella vista a elenco): è un&#39;opzione del **Crea** menu a discesa:
+La creazione **Rapporto CSV** è disponibile quando si sfoglia il **Sites** console (nella vista a elenco): è un’opzione della **Crea** menu a discesa:
 
 ![etc-02](assets/etc-02.png)
 
@@ -66,5 +66,5 @@ Per creare un’esportazione CSV:
 
    ![etc-03](assets/etc-03.png)
 
-1. Seleziona le proprietà da esportare.
+1. Seleziona le proprietà richieste da esportare.
 1. Seleziona **Crea**.

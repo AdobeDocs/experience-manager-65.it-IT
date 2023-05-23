@@ -1,7 +1,7 @@
 ---
 title: Specifica delle impostazioni di protezione
 seo-title: Specifying security settings
-description: Scopri come specificare le impostazioni di protezione.
+description: Scopri come specificare le impostazioni di sicurezza.
 seo-description: Learn how to specify security settings.
 uuid: 63ba7819-e4eb-4d28-8463-142ff4233a1e
 contentOwner: admin
@@ -19,10 +19,10 @@ ht-degree: 2%
 
 # Specifica delle impostazioni di protezione {#specifying-security-settings}
 
-Forms consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita sono risolti, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema dei moduli AEM.
+Forms consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita, sono risolti, ma puoi modificare questo comportamento per aumentare la sicurezza del sistema AEM forms.
 
-**Impedisci l’elaborazione di file di dati XML contenenti riferimenti a entità esterne**
+**Impedisci l&#39;elaborazione di file di dati XML contenenti riferimenti a entità esterne**
 
 1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > Forms]**.
-1. Deseleziona la casella di controllo Risolvi entità esterne .
+1. Deselezionate la casella di controllo Risolvi entità esterne (Resolve External Entities).
 1. Fai clic su **[!UICONTROL Salva]**.

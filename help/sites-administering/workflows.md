@@ -21,14 +21,14 @@ ht-degree: 2%
 
 I flussi di lavoro consentono di automatizzare le attività di Adobe Experience Manager (AEM). Flussi di lavoro:
 
-* È costituito da una serie di passaggi eseguiti in un ordine specifico.
+* Consiste in una serie di passaggi eseguiti in un ordine specifico.
 
-   * Ogni passaggio esegue un’attività distinta; come l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
+   * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
 
-* Può interagire con le risorse nell’archivio, gli account utente e i servizi AEM.
-* Può coordinare attività complesse che coinvolgono qualsiasi aspetto del AEM.
+* Può interagire con le risorse nell’archivio, negli account utente e nei servizi AEM.
+* Può coordinare attività complicate che coinvolgono qualsiasi aspetto dell&#39;AEM.
 
-I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti del sito web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro AEM e applicati a pagine di contenuto e risorse.
+I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti dei siti web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro AEM e applicati a pagine di contenuti e risorse.
 
 * [Avvio dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md)
@@ -39,76 +39,76 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 >Per ulteriori informazioni, consulta:
 >
 >* Applicazione e partecipazione ai flussi di lavoro: [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
->* Creazione di modelli di flusso di lavoro ed estensione della funzionalità del flusso di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
->* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano risorse server significative: [Elaborazione simultanea del flusso di lavoro](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+>* Creazione di modelli di flusso di lavoro ed estensione delle funzionalità del flusso di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
+>* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano risorse server significative: [Elaborazione flusso di lavoro simultaneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 
-## Modelli e istanze di flussi di lavoro {#workflow-models-and-instances}
+## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
-[Modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) AEM sono la rappresentazione e l&#39;implementazione dei processi aziendali:
+[Modelli di flusso di lavoro](/help/sites-developing/workflows.md#model) nell&#39;AEM sono rappresentati e attuati i processi commerciali:
 
 * In genere agiscono su pagine o risorse per ottenere un risultato specifico.
 * Queste pagine e/o risorse sono denominate payload del flusso di lavoro.
-* I modelli di flusso di lavoro consistono in una serie di passaggi che eseguono un&#39;attività specifica.
-* Il payload viene passato da un passaggio all’altro mentre il flusso di lavoro progredisce.
+* I modelli di flusso di lavoro sono costituiti da una serie di passaggi che eseguono un&#39;attività specifica.
+* Il payload viene passato da un passaggio all’altro con l’avanzare del flusso di lavoro.
 
-Quando viene avviato (eseguito) un modello di flusso di lavoro, viene creata un’istanza di flusso di lavoro. Un modello di flusso di lavoro può essere avviato più volte, ogni volta che si genera un’istanza di flusso di lavoro distinta. Per ogni istanza, vengono eseguiti i passaggi definiti dal modello di flusso di lavoro.
+All’avvio (esecuzione) di un modello di flusso di lavoro, viene creata un’istanza di flusso di lavoro. Un modello di flusso di lavoro può essere avviato più volte, ogni volta generando un’istanza di flusso di lavoro distinta. Per ogni istanza, vengono eseguiti i passaggi definiti dal modello di flusso di lavoro.
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell’istanza*. Vedi [Sviluppo dei flussi di lavoro](/help/sites-developing/workflows.md#model) per ulteriori dettagli.
+>I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell’istanza*. Consulta [Sviluppo dei flussi di lavoro](/help/sites-developing/workflows.md#model) per ulteriori dettagli.
 
-Le istanze del flusso di lavoro procedono nel seguente ciclo di vita:
+Le istanze del flusso di lavoro avanzano nel seguente ciclo di vita:
 
-1. Il modello di flusso di lavoro viene avviato e viene creata e eseguita un’istanza di flusso di lavoro.
+1. Il modello di flusso di lavoro viene avviato e viene creata ed eseguita un’istanza di flusso di lavoro.
 
    1. Il payload dell’istanza del flusso di lavoro viene identificato all’avvio del modello.
-   1. L&#39;istanza è effettivamente una copia del modello (come al momento della creazione).
-   1. AEM autori, amministratori o servizi possono avviare modelli di flusso di lavoro.
+   1. La variante è di fatto una copia del modello (come al momento della creazione).
+   1. Gli autori, gli amministratori o i servizi AEM possono avviare modelli di flusso di lavoro.
 
 1. Viene eseguito il primo passaggio del modello di flusso di lavoro.
 1. Il passaggio viene completato e il motore del flusso di lavoro utilizza il modello per determinare il passaggio successivo da eseguire.
 1. I passaggi successivi nel modello di flusso di lavoro vengono eseguiti e completati.
 1. Una volta completato il passaggio finale, l’istanza del flusso di lavoro viene completata e quindi archiviata.
 
-Vengono forniti molti modelli di flusso di lavoro utili con AEM. Inoltre, gli sviluppatori della tua organizzazione possono creare modelli di flusso di lavoro personalizzati, personalizzati in base alle esigenze specifiche dei tuoi processi aziendali.
+Con l’AEM vengono forniti molti utili modelli di flusso di lavoro. Inoltre, gli sviluppatori dell’organizzazione possono creare modelli di flusso di lavoro personalizzati, personalizzati in base alle esigenze specifiche dei processi aziendali.
 
 ## Passaggi del flusso di lavoro {#workflow-steps}
 
-Quando i passaggi del flusso di lavoro vengono eseguiti, sono associati a un’istanza di flusso di lavoro. La cronologia di un&#39;istanza di flusso di lavoro include informazioni su ogni passaggio eseguito per l&#39;istanza. Queste informazioni sono utili per indagare i problemi che si verificano durante l’esecuzione.
+Quando vengono eseguiti, i passaggi del flusso di lavoro sono associati a un’istanza del flusso di lavoro. La cronologia di un’istanza del flusso di lavoro include informazioni su ogni passaggio eseguito per l’istanza. Queste informazioni sono utili per l&#39;analisi dei problemi che si verificano durante l&#39;esecuzione.
 
-Un utente o un servizio esegue passaggi del flusso di lavoro, a seconda del tipo di passaggio:
+Un utente o un servizio esegue i passaggi del flusso di lavoro, a seconda del tipo di passaggio:
 
-* Quando un utente esegue un passaggio, gli viene assegnato un elemento di lavoro inserito nella propria casella in entrata. L’utente è responsabile del completamento manuale del passaggio in modo che l’istanza del flusso di lavoro progredisca.
-* Quando un servizio esegue un passaggio, al completamento l&#39;istanza del flusso di lavoro procede automaticamente al passaggio successivo.
+* Quando un utente esegue un passaggio, gli viene assegnato un elemento di lavoro inserito nella casella in entrata. L’utente è responsabile del completamento manuale del passaggio in modo che l’istanza del flusso di lavoro possa progredire.
+* Quando un servizio esegue un passaggio, al completamento l&#39;istanza del flusso di lavoro passa automaticamente al passaggio successivo.
 
 >[!NOTE]
 >
->Se si verifica un errore, l’implementazione del servizio/passaggio deve gestire il comportamento per uno scenario di errore. Il motore del flusso di lavoro stesso riproverà il processo, quindi registrerà un errore e interromperà l’istanza.
+>Se si verifica un errore, l’implementazione del servizio/passaggio deve gestire il comportamento di uno scenario di errore. Il motore del flusso di lavoro ritenterà il processo, quindi registrerà un errore e arresterà l’istanza.
 
 ## Stato e azioni del flusso di lavoro {#workflow-status-and-actions}
 
 Un flusso di lavoro può avere uno dei seguenti stati:
 
-* **IN ESECUZIONE**: L’istanza del flusso di lavoro è in esecuzione.
-* **COMPLETATO**: L&#39;istanza del flusso di lavoro è stata terminata.
+* **IN ESECUZIONE**: l’istanza del flusso di lavoro è in esecuzione.
+* **COMPLETATO**: istanza del flusso di lavoro terminata correttamente.
 
-* **SOSPESO**: Segna il flusso di lavoro come sospeso. Tuttavia, consulta la nota di attenzione riportata di seguito su un problema relativo a questo stato.
-* **ABORTO**: L&#39;istanza del flusso di lavoro è stata terminata.
-* **SCALA**: La progressione dell&#39;istanza del flusso di lavoro richiede l&#39;esecuzione di un processo in background, tuttavia il processo non può essere trovato nel sistema. Questa situazione può verificarsi quando si verifica un errore durante l’esecuzione del flusso di lavoro.
+* **SOSPESO**: contrassegna il flusso di lavoro come sospeso. Tuttavia, consulta la nota di attenzione seguente su un problema noto con questo stato.
+* **INTERROTTO**: istanza del flusso di lavoro terminata.
+* **NON AGGIORNATO**: l’avanzamento dell’istanza del flusso di lavoro richiede l’esecuzione di un processo in background, tuttavia il processo non può essere trovato nel sistema. Questa situazione può verificarsi quando si verifica un errore durante l’esecuzione del flusso di lavoro.
 
 >[!NOTE]
 >
->Quando l&#39;esecuzione di un passaggio del processo genera errori, il passaggio viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
+>Quando l&#39;esecuzione di un passo del processo genera errori, il passo viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
 
-A seconda dello stato corrente, è possibile eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella normale progressione di un’istanza di flusso di lavoro:
+A seconda dello stato corrente, è possibile eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella normale progressione di un&#39;istanza del flusso di lavoro:
 
-* **Sospendi**: La sospensione modifica lo stato del flusso di lavoro in Sospeso. Vedi Cautela di seguito:
+* **Sospendi**: la sospensione modifica lo stato del flusso di lavoro in Sospeso. Vedi Attenzione di seguito:
 
 >[!CAUTION]
 >
->Il problema noto è se si contrassegna uno stato del flusso di lavoro come &quot;Sospendi&quot;. In questo stato è possibile intervenire sugli elementi del flusso di lavoro sospeso in una casella in entrata.
+>Si è verificato un problema noto quando si contrassegna lo stato di un flusso di lavoro come &quot;Sospendi&quot;. In questo stato è possibile eseguire azioni sugli elementi del flusso di lavoro sospesi in una casella in entrata.
 
-* **Riprendi**: Riavvia un flusso di lavoro sospeso nello stesso punto di esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
-* **Termina**: Termina l’esecuzione del flusso di lavoro e cambia lo stato in **ABORTO**. Impossibile riavviare un&#39;istanza di flusso di lavoro interrotta.
+* **Riprendi**: riavvia un flusso di lavoro sospeso nello stesso punto dell’esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
+* **Termina**: termina l’esecuzione del flusso di lavoro e modifica lo stato in **INTERROTTO**. Impossibile riavviare un&#39;istanza di flusso di lavoro interrotta.

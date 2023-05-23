@@ -1,7 +1,7 @@
 ---
-title: Problemi di codice
+title: Insidie del codice
 seo-title: Code pitfalls
-description: Problemi comuni di codifica da evitare durante lo sviluppo per AEM
+description: Insidie di codifica comuni da evitare durante lo sviluppo per l’AEM
 seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Problemi di codice{#code-pitfalls}
+# Insidie del codice{#code-pitfalls}
 
-## Evitare i binding Sling nel codice Java {#avoid-sling-bindings-in-java-code}
+## Evitare le associazioni Sling nel codice Java {#avoid-sling-bindings-in-java-code}
 
-I binding Sling sono un modo inappropriato per accedere a un servizio nel 90% dei casi. Invece, devi utilizzare *@Reference* o *@Inject* annotazioni.
+Le associazioni Sling rappresentano un modo inappropriato per accedere a un servizio nel 90% dei casi. Al loro posto, utilizza *@Reference* o *@Inject* annotazioni.
 
-## Evita Thread.interrupt nel codice Java {#avoid-thread-interrupt-in-java-code}
+## Evitare Thread.interrupt nel codice Java {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* è pericoloso perché può chiudere i file, inclusi i file Lucene e i file di cache persistenti, quando vengono chiamati al momento sbagliato.
 
-## Evita di mixare la sincronizzazione Java con ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Evitare di combinare la sincronizzazione Java con ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
-Questo può portare a una condizione di corsa in cui il codice alla fine si bloccherà.
+Questo può portare a una situazione di tipo &quot;race condition&quot; in cui il codice alla fine si blocca.

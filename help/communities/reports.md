@@ -23,23 +23,23 @@ ht-degree: 9%
 
 ## Panoramica {#overview}
 
-Per AEM Communities, è possibile accedere a diversi rapporti in diversi modi dall’ambiente di authoring.
+Per AEM Communities, esistono vari rapporti a cui è possibile accedere in diversi modi dall’ambiente di authoring.
 
-In generale, le varie relazioni sono:
+In generale, le varie relazioni sono le seguenti:
 
 * [Rapporto visualizzazioni](#views-report)
 
-   Fornisce un grafico dei contenuti dei membri della community e dei visitatori del sito per qualsiasi sito della community.
+   Fornisce un grafico delle visualizzazioni del contenuto da parte dei membri della community e dei visitatori del sito per qualsiasi sito della community.
 
 * [Rapporto sui post](#posts-report)
 
-   Fornisce un grafico dei vari tipi di post dei membri della community su qualsiasi sito della community.
+   Fornisce un grafico di vari tipi di post dei membri della community su qualsiasi sito della community.
 
-I rapporti tabulari possono essere esportati in formato .csv per successive elaborazioni.
+I report tabulari possono essere esportati in formato .csv per l’elaborazione successiva.
 
 ## Console di reporting {#reporting-consoles}
 
-### Rapporti per siti della community {#reports-for-community-sites}
+### Rapporti per i siti community {#reports-for-community-sites}
 
 * Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** >  **[!UICONTROL Rapporti]**
 
@@ -47,13 +47,13 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
 
    * **[!UICONTROL Rapporto assegnazioni]**
 
-      * Genera un report per la sede, l&#39;utente o il gruppo della community selezionati e l&#39;assegnazione.
+      * Genera un report per il sito community, l&#39;utente o il gruppo e l&#39;assegnazione selezionati.
    * **[!UICONTROL Rapporto sui post]**
 
-      * Genera un report per il sito della community selezionato, il tipo di contenuto e il periodo di tempo.
+      * Genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
    * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un rapporto per il sito della community, il tipo di contenuto e il periodo di tempo selezionati.
+      * genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
 
 
@@ -63,17 +63,17 @@ I rapporti tabulari possono essere esportati in formato .csv per successive elab
 
 La console Visualizzazioni consente di generare rapporti sulle visualizzazioni di pagina in base alle funzioni della community per un determinato periodo di tempo.
 
-![rapporto visivo](assets/view-report.png)
+![view-report](assets/view-report.png)
 
-Seleziona i criteri per il rapporto:
+Selezionare i criteri per il rapporto:
 
 * **[!UICONTROL Sito]**
 
-   Seleziona un sito community.
+   Selezionare un sito community.
 
 * **[!UICONTROL Tipo di contenuto]**
 
-   È possibile scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
+   Puoi scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
 * **[!UICONTROL Intervallo temporale]**
 
@@ -90,19 +90,19 @@ Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
 ## Rapporto sui post {#posts-report}
 
-La console Post consente di generare rapporti sul numero di post nelle funzioni della community per un determinato periodo di tempo.
+La console Post consente di generare report sul numero di post in funzioni per la community per un determinato periodo di tempo.
 
 ![post-report](assets/posts-report.png)
 
-Seleziona i criteri per il rapporto:
+Selezionare i criteri per il rapporto:
 
 * **[!UICONTROL Sito]**
 
-   Seleziona un sito community.
+   Selezionare un sito community.
 
 * **[!UICONTROL Tipo di contenuto]**
 
-   È possibile scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
+   Puoi scegliere Tutti i contenuti o selezionare una delle funzioni presenti sul sito.
 
 * **[!UICONTROL Intervallo temporale]**
 
@@ -115,16 +115,16 @@ Seleziona i criteri per il rapporto:
 
 Seleziona **[!UICONTROL Genera]** per creare il rapporto.
 
-![genera rapporto](assets/generate-posts-report.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non sono elencati siti della community, assicurati che Adobe Analytics sia stato abilitato per un sito. Se si selezionano i rapporti relativi alle assegnazioni, verificare che la funzione delle assegnazioni si trovi nella struttura del sito della community.
+Se non è elencato alcun sito community, verificare che Adobe Analytics sia stato abilitato per un sito. Se si sceglie di creare rapporti sulle assegnazioni, assicurarsi che la funzione delle assegnazioni si trovi nella struttura del sito community.
 
 ### I rapporti non vengono visualizzati nell’istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell’istanza di authoring di AEM, controlla le personalizzazioni, ad esempio la mappatura degli URL sull’istanza di pubblicazione. Se la mappatura URL viene eseguita solo sull’istanza di pubblicazione AEM del sito Communities, assicurati che lo stesso sia stato configurato nell’istanza di authoring AEM in **Report Trend del sito Social Component Factory** configurazione.
+Se i rapporti non vengono visualizzati nell’istanza Autore AEM, verifica le personalizzazioni, ad esempio la mappatura URL nell’istanza Pubblica. Se la mappatura URL viene eseguita solo sull’istanza AEM Publish del sito Communities, accertati che lo stesso sia stato configurato nell’istanza AEM Author in **Fabbrica componenti social per report tendenze sito** configurazione.
 
-![Mappatura URL su AEM Author](assets/sitetrend.png)
+![Mappatura URL in AEM Author](assets/sitetrend.png)

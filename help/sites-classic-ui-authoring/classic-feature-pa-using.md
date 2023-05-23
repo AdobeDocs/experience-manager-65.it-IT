@@ -1,7 +1,7 @@
 ---
-title: Visualizzazione dei dati analitici sulle pagine
+title: Visualizzazione dei dati di analisi delle pagine
 seo-title: Seeing Page Analytics Data
-description: Utilizza i dati di analisi della pagina per misurare l’efficacia dei contenuti della pagina.
+description: Utilizza i dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine.
 seo-description: Use page analytics data to gauge the effectiveness of their page content.
 uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
 contentOwner: Chris Bohnert
@@ -13,18 +13,18 @@ docset: aem65
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 86%
+ht-degree: 8%
 
 ---
 
 
-# Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
+# Visualizzazione dei dati di analisi delle pagine{#seeing-page-analytics-data}
 
-Utilizza i dati di analisi della pagina per misurare l’efficacia dei contenuti della pagina.
+Utilizza i dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-I dati di analisi della pagina vengono visualizzati nella console dei siti. Quando i siti vengono visualizzati nel formato elenco, le colonne seguenti sono disponibili per impostazione predefinita:
+I dati di analisi delle pagine vengono visualizzati nella console Sites. Quando i siti vengono visualizzati in formato elenco, per impostazione predefinita sono disponibili le colonne seguenti:
 
 * Visualizzazioni pagina
 * Visitatori univoci
@@ -32,4 +32,4 @@ I dati di analisi della pagina vengono visualizzati nella console dei siti. Quan
 
 >[!NOTE]
 >
->La visualizzazione dei dati di analisi del sito direttamente nella console è disponibile solo nell’interfaccia touch. Vedi [Visualizzazione dei dati di analisi delle pagine](/help/sites-authoring/page-analytics-using.md) per ulteriori informazioni, consulta la documentazione standard sull’authoring .
+>La visualizzazione diretta dei dati di analisi del sito nella console è disponibile solo nell’interfaccia utente ottimizzata per il tocco. Consulta [Visualizzazione dei dati di analisi delle pagine](/help/sites-authoring/page-analytics-using.md) per informazioni dettagliate, consulta la documentazione sull’authoring standard.

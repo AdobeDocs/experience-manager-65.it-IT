@@ -1,5 +1,5 @@
 ---
-title: Passaggi di aggiornamento per le installazioni di Application Server
+title: Passaggi per l'aggiornamento delle installazioni di Application Server
 description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
@@ -10,35 +10,35 @@ ht-degree: 0%
 
 ---
 
-# Passaggi di aggiornamento per le installazioni di Application Server{#upgrade-steps-for-application-server-installations}
+# Passaggi per l&#39;aggiornamento delle installazioni di Application Server{#upgrade-steps-for-application-server-installations}
 
-Questa sezione descrive la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
+In questa sezione viene descritta la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
 
-Tutti gli esempi in questa procedura utilizzano Tomcat come Application Server e implicano che sia già stata implementata una versione funzionante di AEM. La procedura è destinata a documentare gli aggiornamenti eseguiti da **AEM versione da 6.4 a 6.5**.
+Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti da **AEM versione da 6.4 a 6.5**.
 
-1. Per prima cosa, avviate TomCat. Nella maggior parte delle situazioni, puoi farlo eseguendo il comando `./catalina.sh` avvia lo script di avvio, eseguendo questo comando dal terminale:
+1. Per prima cosa, avvia TomCat. Nella maggior parte delle situazioni, è possibile farlo eseguendo il comando `./catalina.sh` avviare lo script di avvio eseguendo questo comando dal terminale:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Se AEM 6.4 è già distribuito, controlla che i bundle funzionino correttamente accedendo a:
+1. Se AEM 6.4 è già implementato, verifica che i bundle funzionino correttamente accedendo a:
 
    ```shell
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Quindi, disdistribuire AEM 6.4. Questo può essere fatto da TomCat App Manager (`http://serveraddress:serverport/manager/html`)
+1. Quindi, annulla la distribuzione di AEM 6.4. Questa operazione può essere eseguita da TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Ora, effettua la migrazione dell&#39;archivio utilizzando lo strumento di migrazione crx2oak. Per farlo, scarica l&#39;ultima versione di crx2oak da [questa posizione](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Ora esegui la migrazione dell’archivio utilizzando lo strumento di migrazione crx2oak. Per farlo, scarica l’ultima versione di crx2oak da [questa posizione](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
-1. Elimina le proprietà necessarie nel file sling.properties facendo quanto segue:
+1. Elimina le proprietà necessarie nel file sling.properties effettuando le seguenti operazioni:
 
-   1. Apri il file che si trova in `crx-quickstart/launchpad/sling.properties`
+   1. Apri il file in `crx-quickstart/launchpad/sling.properties`
    1. Testo del passaggio Rimuovi le seguenti proprietà e salva il file:
 
       1. `sling.installer.dir`
@@ -57,24 +57,24 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come Application Server e
 
       1. `sling.run.mode.install.options`
 
-1. Rimuovi i file e le cartelle non più necessari. Gli elementi da rimuovere sono:
+1. Rimuovere i file e le cartelle non più necessari. Gli elementi da rimuovere in modo specifico sono:
 
-   * La **cartella launchpad/avvio**. È possibile eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
+   * Il **cartella launchpad/startup**. Puoi eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
 
-   * La **file base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Il **file base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * La **FileFile_timestamp.txt di BootstrapCommand**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Il **BootstrapCommandFile_timestamp.txt, file**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-   * Rimuovi **sling.options.file** in esecuzione: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
+   * Rimuovi **sling.options.file** eseguendo: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. A questo punto, crea l&#39;archivio nodi e l&#39;archivio dati che verrà utilizzato con AEM 6.5. Puoi farlo creando due file con i seguenti nomi in `crx-quickstart\install`:
+1. Ora crea l’archivio nodi e l’archivio dati che verranno utilizzati con AEM 6.5. A tale scopo, è possibile creare due file con i seguenti nomi in `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   Questi due file configureranno AEM per utilizzare un archivio nodi TarMK e un archivio dati File.
+   Questi due file configureranno l’AEM per l’utilizzo di un archivio nodi TarMK e di un archivio dati File.
 
-1. Modifica i file di configurazione per renderli pronti all’uso. Più precisamente:
+1. Modifica i file di configurazione per renderli pronti per l’uso. Più precisamente:
 
    * Aggiungi la riga seguente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
@@ -87,19 +87,19 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come Application Server e
       minRecordLength=4096
       ```
 
-1. È ora necessario modificare le modalità di esecuzione nel file di guerra AEM 6.5. Per farlo, crea innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file WAR, estrarne il contenuto eseguendo la cartella temporanea:
+1. È ora necessario modificare le modalità di esecuzione nel file .war AEM 6.5. Per farlo, prima di tutto creare una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
 
    ```
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Una volta estratto il contenuto, vai alla **WEB-INF** e modifica il file web.xml per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nell&#39;XML, cerca il `sling.run.modes` stringa. Una volta trovato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata per l’authoring:
+1. Una volta estratto il contenuto, vai al **WEB-INF** e modificare il file web.xml per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nel file XML, cercare `sling.run.modes` stringa. Una volta individuato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata su author:
 
    ```bash
    <param-value >author</param-value>
    ```
 
-1. Modifica il valore dell&#39;autore riportato sopra e imposta le modalità di esecuzione su: `author,crx3,crx3tar`. Il blocco di codice finale deve essere simile al seguente:
+1. Modifica il valore di authoring riportato sopra e imposta le modalità di esecuzione su: `author,crx3,crx3tar`. Il blocco di codice finale deve essere simile al seguente:
 
    ```
    <init-param>
@@ -110,10 +110,10 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come Application Server e
    </servlet>
    ```
 
-1. Ricrea il jar con il contenuto modificato:
+1. Ricrea il file jar con il contenuto modificato:
 
    ```bash
    jar cvf aem65.war
    ```
 
-1. Infine, distribuisci il nuovo file di guerra in TomCat.
+1. Infine, distribuire il nuovo file di guerra in TomCat.

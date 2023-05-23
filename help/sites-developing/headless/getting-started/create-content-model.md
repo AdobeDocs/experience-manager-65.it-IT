@@ -1,5 +1,5 @@
 ---
-title: Guida rapida alla creazione di modelli di frammenti di contenuto headless
+title: Guida rapida alla creazione di modelli per frammenti di contenuto headless
 description: Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 93%
 
 ---
 
-# Guida rapida alla creazione di modelli di frammenti di contenuto headless {#creating-content-fragment-models}
+# Guida rapida alla creazione di modelli per frammenti di contenuto headless {#creating-content-fragment-models}
 
 Definisci la struttura del contenuto da creare e distribuire utilizzando le funzionalità headless di AEM, mediante i modelli per frammenti di contenuto.
 
@@ -23,7 +23,7 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 Un architetto dell’informazione esegue tali attività solo occasionalmente, quando sono necessari nuovi modelli. Ai fini di questa guida introduttiva, è necessario creare un solo modello.
 
-1. Accedi a AEM e dal menu principale seleziona **Strumenti -> Risorse -> Modelli per frammenti di contenuto**.
+1. Accedi all’AEM e dal menu principale seleziona **Strumenti -> Risorse -> Modelli per frammenti di contenuto**.
 1. Tocca o fai clic sulla cartella creata durante la creazione della configurazione.
 
    ![Cartella dei modelli](assets/models-folder.png)

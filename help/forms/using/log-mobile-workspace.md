@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Accesso all’app AEM Forms{#logging-in-to-aem-forms-app}
 
-Quando avvii l’app AEM Forms, devi prima fornire le credenziali di accesso e un URL del server AEM Forms.
+Quando avvii l’app AEM Forms, devi innanzitutto fornire le credenziali di accesso e l’URL di un server AEM Forms.
 
 ## Per avviare l’app {#to-start-the-app}
 
@@ -28,13 +28,13 @@ Quando avvii l’app AEM Forms, devi prima fornire le credenziali di accesso e u
 
    >[!NOTE]
    >
-   >L’app mobile memorizza in cache tutti gli URL del server AEM Forms immessi.
+   >L’app Mobile memorizza nella cache tutti gli URL del server AEM Forms che hai immesso.
    >
-   >    * Per visualizzare l’elenco degli URL del server, fare clic sulla freccia dell’elenco nell’angolo a destra della casella di testo URL server.
-   >    * Puoi selezionare un URL del server AEM Forms a cui accedere tramite l’app.
+   >    * Per visualizzare l&#39;elenco degli URL del server, fare clic sulla freccia dell&#39;elenco nell&#39;angolo destro della casella di testo URL server.
+   >    * Puoi selezionare l’URL di un server AEM Forms a cui accedere tramite l’app.
 
 
-Quando effettui l&#39;accesso all&#39;app, vieni indirizzato al [**Pagina principale** screen](../../forms/using/home-screen.md).
+Quando accedi all’app, vieni indirizzato al [**Home** screen](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

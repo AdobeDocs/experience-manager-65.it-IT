@@ -19,43 +19,43 @@ ht-degree: 1%
 
 È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Una tipica notifica e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività. L’immagine seguente mostra un esempio di notifica e-mail:
 
-![Notifica via e-mail con modello preconfigurato](do-not-localize/default_email_template_new.png)
+![Notifica e-mail con modello predefinito](do-not-localize/default_email_template_new.png)
 
-Puoi personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. AEM Forms fornisce un modello preconfigurato per le notifiche e-mail. Puoi personalizzare il modello preconfigurato o creare un nuovo modello da zero.
+Puoi personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. AEM Forms fornisce un modello preconfigurato per le notifiche e-mail. Puoi personalizzare il modello preconfigurato o crearne uno nuovo da zero.
 
-I modelli di notifica e-mail si basano su [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Queste e-mail si adattano a diversi client e-mail e dimensioni dello schermo. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
+I modelli di notifica e-mail si basano su [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Queste e-mail si adattano a client e-mail e dimensioni di schermo diversi. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
 
 L’immagine seguente mostra una notifica e-mail personalizzata:
 
-![Notifica tramite e-mail utilizzando un modello personalizzato](do-not-localize/customized-email.png)
+![Notifica e-mail tramite modello personalizzato](do-not-localize/customized-email.png)
 
-## Personalizzare il modello esistente {#customize-the-existing-template}
+## Personalizza il modello esistente {#customize-the-existing-template}
 
-Con AEM Forms è disponibile un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. È possibile personalizzare il modello per modificare l’aspetto. Esegui i seguenti passaggi per personalizzare il modello:
+AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell&#39;attività assegnata. Potete personalizzare il modello per modificare l&#39;aspetto. Per personalizzare il modello, effettua le seguenti operazioni:
 
-1. Accedi a CRXDE con l&#39;account amministratore.
+1. Accedi a CRXDE con l’account amministratore.
 
 1. Passa a /libs/fd/dashboard/templates/email.
 
-1. Apri il file htmlEmailTemplate.txt . Contiene il modello predefinito.
+1. Apri il file htmlEmailTemplate.txt. Contiene il modello predefinito.
 
 1. Sostituisci il contenuto del file htmlEmailTemplate.txt con contenuto personalizzato.
 
-   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi sostituire il codice HTML esistente con il codice personalizzato per modificare l’aspetto del modello.
+   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Per modificare l’aspetto del modello, puoi sostituire il codice html esistente con il codice personalizzato.
 
 1. Salva il file. Ora il modello personalizzato è pronto per l’uso.
 
 ## Creare un modello e-mail {#create-an-email-template}
 
-Con AEM Forms è disponibile un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell’attività assegnata. È inoltre possibile aggiungere un modello e-mail personalizzato (il proprio modello) per i passaggi dell’attività Assegna. Esegui i seguenti passaggi per aggiungere un modello e-mail personalizzato:
+AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modello fornisce la descrizione del titolo, la data di scadenza, la priorità, il nome del flusso di lavoro e il collegamento dell&#39;attività assegnata. Puoi anche aggiungere un modello e-mail personalizzato (il tuo) per i passaggi dell’attività Assegna. Per aggiungere un modello e-mail personalizzato, effettua le seguenti operazioni:
 
-1. Accedi a CRXDE con l&#39;account amministratore.
+1. Accedi a CRXDE con l’account amministratore.
 
 1. Passa a /libs/fd/dashboard/templates/email.
 
 1. Crea un file .txt. Ad esempio, EmailOnTaskAssign.txt.
 
-1. Aggiungi il codice HTML personalizzato al file .
+1. Aggiungi al file un codice HTML personalizzato.
 
    Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere codice HTML personalizzato al file per creare un nuovo modello.
 
@@ -63,13 +63,13 @@ Con AEM Forms è disponibile un modello per le notifiche e-mail. Il modello forn
 
 ## Utilizzare un modello e-mail in un passaggio Assegna attività {#use-an-email-template-in-an-assign-task-step}
 
-Il passaggio dell’attività Assegna è configurato in modo da utilizzare il modello predefinito, htmlEmailTemplate.txt. Puoi scegliere di utilizzare un modello personalizzato. Per modificare il modello:
+Il passaggio Assegna attività è configurato per l’utilizzo del modello predefinito htmlEmailTemplate.txt. Puoi scegliere di utilizzare un modello personalizzato. Per modificare il modello:
 
-1. Apri il passaggio Assegna attività .
+1. Apri il passaggio Assegna attività.
 
 1. Passa a Assegnatario > Modello e-mail HTML.
 
-1. Selezionare il modello e-mail di HTML appena creato.
+1. Seleziona il modello e-mail di HTML appena creato.
 
 1. Fai clic su OK. Il modello viene modificato.
 

@@ -1,7 +1,7 @@
 ---
-title: Tracciamento dei risultati e fornitura di feedback
+title: Tracciamento dei risultati e invio di feedback
 seo-title: Tracking results and providing feedback
-description: Come e dove si definiscono i casi di test e il piano di test risultante, è a tua discrezione
+description: Come e dove definire i casi di test e il piano di test risultante è a tua discrezione
 seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
 uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
 contentOwner: Guillaume Carlino
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 ---
 
-# Tracciamento dei risultati e fornitura di feedback{#tracking-results-and-providing-feedback}
+# Tracciamento dei risultati e invio di feedback{#tracking-results-and-providing-feedback}
 
-Come e dove si definiscono i casi di test e il piano di test risultante, è a tua discrezione; sono disponibili molti strumenti.
+Come e dove definire i casi di test e il piano di test risultante è a tua discrezione; sono disponibili molti strumenti.
 
 Tuttavia, indipendentemente dal metodo o dallo strumento scelto, le informazioni memorizzate:
 
 * Deve essere:
 
-   * Limitato al tracciamento del test case e dei relativi risultati. In questo modo la manutenzione rimane semplice e il documento può fornire una panoramica chiara dell&#39;avanzamento del test.
-   * Mantenuta come copia singola, disponibile per tutti i membri appropriati del team di progetto.
-   * Neutro e limitato ai risultati del test. È responsabilità del project manager prendere decisioni sulle azioni risultanti dai risultati dei test.
+   * Limitato al tracciamento del caso di test e dei relativi risultati. In questo modo la manutenzione rimane semplice e il documento può fornire una chiara panoramica dell’avanzamento dei test.
+   * Gestito come una singola copia, disponibile per tutti i membri appropriati del team di progetto.
+   * Neutro e limitato ai risultati del test. È responsabilità del project manager prendere decisioni in merito a qualsiasi azione risultante dai risultati del test.
 
 * Non deve essere:
 
-   * Esteso per includere informazioni di tracciamento - non bug, nuove funzionalità o azioni successive. Queste informazioni devono essere conservate altrove, anche in questo caso sono disponibili molti strumenti.
+   * Esteso per includere le informazioni di tracciamento, senza bug, nuove funzioni o azioni di seguito. Queste informazioni dovrebbero essere conservate altrove, anche in questo caso sono disponibili molti strumenti.

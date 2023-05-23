@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # Specificare le opzioni di configurazione XCI {#specify-xci-configuration-options}
 
-L&#39;output consente di specificare un file XCI personalizzato utilizzato per il rendering. (Vedi [Specificare le posizioni dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) Per impostazione predefinita, Output sostituisce alcune delle opzioni specificate nel file XCI, tra cui le seguenti:
+L’output consente di specificare un file XCI personalizzato da utilizzare per il rendering. (vedere [Specificare i percorsi dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) Per impostazione predefinita, Output sostituisce alcune delle opzioni specificate nel file XCI, tra cui le seguenti:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
 * `config/present/pdf/producer`
 * `config/present/pdf/compression/compressObjectStream`
 
-È possibile selezionare le opzioni che annullano l&#39;override per le opzioni elencate sopra, nel qual caso Output utilizza i valori specificati nel file XCI personalizzato.
+Puoi selezionare le opzioni che annullano l’override per le opzioni elencate qui sopra, nel qual caso Output utilizza i valori specificati nel file XCI personalizzato.
 
 1. Nella console di amministrazione, fai clic su Servizi > output.
-1. Selezionare o deselezionare la casella di controllo Usa opzioni XCI predefinite del sistema. Quando questa opzione è selezionata, Output utilizza i valori predefiniti per le impostazioni dei pacchetti, creatore, produttore e compressObjectStream. Quando questa opzione è deselezionata, Output utilizza i valori specificati nel file XCI personalizzato.
+1. Selezionare o deselezionare la casella di controllo Usa opzioni XCI predefinite di sistema. Quando questa opzione è selezionata, l&#39;output utilizza i valori predefiniti per le impostazioni packets, creator, producer e compressObjectStream. Quando questa opzione è deselezionata, l’output utilizza i valori specificati nel file XCI personalizzato.
 1. Fai clic su Salva.

@@ -11,7 +11,7 @@ ht-degree: 99%
 
 # Guida rapida alle linee guida WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) è stato sviluppato per massimizzare la conformità alle linee guida per l’accessibilità dei contenuti web.
+Adobe Experience Manager (AEM) è stato sviluppato per garantire la massima conformità alle linee guida per l’accessibilità dei contenuti web.
 
 La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCAG)](https://www.w3.org/TR/WCAG/) è costituita da una serie di indicazioni riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/).
 

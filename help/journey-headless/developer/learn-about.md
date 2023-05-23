@@ -86,7 +86,7 @@ La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL c
 
 Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più recente e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
 
-In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno effettua una chiamata al contenuto su un dispositivo mobile, che il CMS consegna il contenuto e che quindi il dispositivo mobile (il client) è responsabile del rendering del contenuto servito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
+In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno chiama il contenuto su un dispositivo mobile, che il CMS distribuisce il contenuto e quindi che il dispositivo mobile (il client) è responsabile del rendering del contenuto fornito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
 
 La possibilità di separare i contenuti dalla presentazione consente di avere un maggiore controllo su tali problemi di prestazioni dal lato client. Il rendering dal lato server (SSR) trasferisce la responsabilità del rendering del contenuto dal browser del client al server. In questo modo, in qualità di fornitore del contenuto, puoi offrire al pubblico un livello di prestazioni garantito, se necessario.
 
@@ -124,6 +124,6 @@ Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre è consigliabile passare alla parte successiva del percorso di sviluppo headless rivedendo il documento [Guida introduttiva di AEM Headless](getting-started.md)Di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino nel percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
 
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.

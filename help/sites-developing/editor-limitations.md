@@ -23,43 +23,43 @@ L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire c
 
 ## Limitazioni funzionali {#functional-limitations}
 
-Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l’editor per creare le pagine.
+Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l’editor per creare pagine.
 
 ### Collegamenti non attivi {#links-not-active}
 
 Quando [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
 
-* [Passa a **Anteprima** modalità](/help/sites-authoring/editing-content.md#preview-mode) per spostarsi utilizzando i collegamenti presenti nel contenuto.
+* [Passa a **Anteprima** modalità](/help/sites-authoring/editing-content.md#preview-mode) per navigare utilizzando i collegamenti presenti nel contenuto.
 
-### Pagine struttura {#structure-pages}
+### Strutturare le pagine {#structure-pages}
 
-Le pagine non possono essere denominate `structure`. Pagine denominate `structure` non sarà modificabile nell’editor pagina.
+Impossibile denominare le pagine `structure`. Pagine denominate `structure` non sarà modificabile nell’editor pagina.
 
 ## Limitazioni CSS {#css-limitations}
 
-Uno sviluppatore può incontrare le seguenti limitazioni con le interazioni dell’editor con i CSS.
+Con le interazioni dell’editor con CSS, uno sviluppatore potrebbe incontrare le seguenti limitazioni.
 
-### Elementi posizionati in modo assoluto {#absolutely-positioned-elements}
+### Elementi con posizione assoluta {#absolutely-positioned-elements}
 
-Gli elementi posizionati in modo assoluto possono causare problemi nella posizione della sovrapposizione.
+Gli elementi con posizionamento assoluto possono causare problemi nella posizione della sovrapposizione.
 
-* In questo caso, accertati che le dimensioni dell’elemento con posizione assoluta siano corrette perché l’editor creerà una sovrapposizione con le stesse dimensioni.
+* In questo caso, assicurati che le dimensioni dell’elemento con posizionamento assoluto siano corrette, perché l’editor creerà una sovrapposizione con le stesse dimensioni.
 
 ### unità vh {#vh-units}
 
-`vh` le unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente da AEM.
+`vh` non sono supportate perché l’altezza dell’iframe deve essere regolata automaticamente dall’AEM.
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 
-Le immagini di sfondo fisse potrebbero non essere visualizzate come fisse durante lo scorrimento a causa del fatto che sono incorporate in un iframe.
+È possibile che le immagini di sfondo fisse non vengano visualizzate come fisse durante lo scorrimento poiché sono incorporate in un iframe.
 
-* Selezione **Visualizza pagina come pubblicata** nella barra dell’intestazione le azioni visualizzano la pagina correttamente.
+* Selezione **Visualizza pagina come pubblicata** nelle azioni della barra dell’intestazione, la pagina viene visualizzata correttamente.
 
 ### Altezza 100% {#height}
 
-L’altezza del 100% non è supportata nell’elemento corpo di una pagina.
+L&#39;altezza 100% non è supportata nell&#39;elemento body di una pagina.
 
-* È possibile una soluzione alternativa per implementare un corpo a schermo intero &quot;allungando&quot; l&#39;elemento corpo come segue:
+* È possibile trovare una soluzione alternativa per implementare un corpo a schermo intero &quot;stirando&quot; l’elemento body come segue:
 
 ```xml
 body {
@@ -71,11 +71,11 @@ body {
 }
 ```
 
-### Riduzione dei margini {#margin-collapsing}
+### Compressione del margine {#margin-collapsing}
 
-I problemi di compressione del margine possono essere visti se il primo elemento figlio dell&#39;elemento corpo ha un margine.
+I problemi di compressione del margine possono essere rilevati se il primo elemento figlio dell&#39;elemento body ha un margine.
 
-* La soluzione è quella di aggiungere un clearfix a livello di elemento corpo, come segue:
+* La soluzione consiste nell’aggiungere un clearfix a livello di elemento body, come segue:
 
 ```xml
 body:before, body:after{

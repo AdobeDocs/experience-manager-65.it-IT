@@ -1,104 +1,104 @@
 ---
-title: Creazione di esperienze Commerce
-description: Esperienze di e-commerce di lavoro
+title: Authoring di esperienze Commerce
+description: Esperienze di lavoro e commerce
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Creazione di esperienze Commerce {#authoring-commerce-experiences}
+# Authoring di esperienze Commerce {#authoring-commerce-experiences}
 
 ## Panoramica {#overview}
 
-Il componente aggiuntivo CIF estende l’authoring AEM con funzionalità specifiche per l’e-commerce. In questo modo gli autori possono creare e gestire in modo efficiente esperienze relative all’e-commerce ottenendo l’accesso ai dati e ai contenuti dei prodotti senza lasciare il contesto.
+Il componente aggiuntivo CIF estende l’authoring AEM con funzionalità specifiche per l’e-commerce. Questo consente agli autori di creare e gestire in modo efficiente esperienze relative al commercio, accedendo ai dati e ai contenuti dei prodotti senza uscire dal contesto.
 
 ## Pickers {#pickers}
 
-I selettori di prodotti e categorie sono finestre di dialogo dell’interfaccia utente modali che offrono agli autori AEM un modo semplice per trovare e selezionare prodotti o categorie quando necessario. I componenti core, le associazioni di contenuti e i modelli di prodotto sono le aree tipiche con configurazioni che richiedono i dati del catalogo dei prodotti. I selettori supportano varie opzioni di configurazione, ad esempio selezione multipla, selezione di varianti e preselezione dei valori.
+I selettori di prodotti e categorie sono finestre di dialogo modali dell’interfaccia utente che offrono agli autori di AEM un modo comodo per trovare e selezionare prodotti o categorie quando necessario. I Componenti core, le associazioni di contenuti e i modelli di prodotto sono le aree tipiche con configurazioni che richiedono i dati del catalogo dei prodotti. I selettori supportano varie opzioni di configurazione, come la selezione multipla, la selezione delle varianti e la preselezione dei valori.
 
 ### Selettore prodotti {#product-picker}
 
-Questo selettore offre la navigazione nella struttura del catalogo o la ricerca full-text per trovare il prodotto. I prodotti con variante offrono un’icona di cartella nella colonna &quot;Tipo&quot;. Fai clic sull’icona della cartella per aprire le varianti del prodotto selezionato.
+Questo selettore consente di sfogliare la struttura del catalogo o di eseguire ricerche full-text per trovare il prodotto. I prodotti con variante offrono un’icona di cartella nella colonna &quot;Tipo&quot;. Fai clic sull’icona della cartella per aprire le varianti del prodotto selezionato.
 
 ![Selettore prodotti](/help/commerce/cif/assets/authoring/product-picker.png)
 
-Facendo clic sulla categoria padre, l’autore ritorna al livello di prodotto.
+Facendo clic sulla categoria principale, l’autore ritorna al livello del prodotto.
 
 ![Selettore prodotti](/help/commerce/cif/assets/authoring/product-picker-variation.png)
 
-**Esempio di teaser prodotto**
+**Esempio di teaser di prodotto**
 
 ![Componente teaser senza selezione](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-La finestra di dialogo di configurazione di questo componente richiede un prodotto. CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono inserire lo SKU manualmente oppure fare clic sull’icona della cartella per aprire il selettore dei prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
+La finestra di dialogo per la configurazione di questo componente richiede un prodotto. CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono immettere manualmente lo SKU oppure fare clic sull’icona della cartella per aprire il selettore prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
 
 ![Componente teaser con selezione](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
-### Selettore categoria {#category-picker}
+### Selettore categorie {#category-picker}
 
-Questo selettore offre una navigazione nella struttura del catalogo per trovare la categoria.
+Questo selettore consente di sfogliare la struttura del catalogo per trovare la categoria.
 
-![Selezione categorie](/help/commerce/cif/assets/authoring/category-picker.png)
+![Selettore categorie](/help/commerce/cif/assets/authoring/category-picker.png)
 
-**Carosello categoria di esempio**
+**Esempio di carosello categorie**
 
-![Componente carosello senza selezione](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
+![Componente Carosello senza selezione](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-La finestra di dialogo di configurazione di questo componente richiede 1 : n categorie. CIF utilizza l’UID / ID come identificatore della categoria. Gli autori possono inserire l’UID manualmente o fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
+La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. CIF utilizza l’UID/ID come identificatore della categoria. Gli autori possono immettere manualmente l’UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
 
-![Componente carosello con selezione](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
+![Componente Carosello con selezione](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
 ## Editor universale {#universal-editor}
 
-L’editor universale è stato esteso con funzionalità per accedere ai dati dei prodotti in tempo reale e ai contenuti dei prodotti associati.
+L’editor universale è esteso con funzionalità che consentono di accedere in tempo reale ai dati di prodotto e ai contenuti di prodotto associati.
 
 ### Accesso ai dati di prodotto {#access-product-data}
 
-La scheda &quot;Risorse&quot; nel pannello laterale dell’editor consente di accedere ai dati di prodotto selezionando il tipo &quot;Prodotti&quot;. I dati vengono recuperati in tempo reale dall’endpoint di e-commerce configurato. Il filtro è una ricerca full-text sull’endpoint e-commerce per trovare prodotti specifici.
+La scheda Risorse nel pannello laterale dell’editor consente di accedere ai dati dei prodotti selezionando il tipo &quot;Prodotti&quot;. I dati vengono recuperati in tempo reale dall’endpoint commerce configurato. Il filtro è una ricerca full-text sull’endpoint commerce per trovare prodotti specifici.
 
 ![Pannello laterale dati prodotto](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-Analogamente alle risorse, i prodotti possono essere eliminati su una pagina (che crea per impostazione predefinita un componente teaser di prodotto) o su componenti (attualmente supportati sono product teaser e product carosello).
+Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (creando un componente Product Teaser per impostazione predefinita) o a componenti (attualmente supportati sono Product Teaser e Product Carousel).
 
-### Aggiunta di collegamenti nei campi di testo tramite l’editor Rich Text {#rte}
+### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
-Le pagine di catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering al volo. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine di AEM. CIF aggiunge una nuova azione &quot;Collegamenti commerciali&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine del catalogo dei prodotti CIF sono pagine virtuali sottoposte a rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. CIF aggiunge una nuova azione &quot;Collegamenti commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
+    >[!NOTA]
     >
-    >Se vengono selezionati sia la categoria che il prodotto, il prodotto verrà preso.
+    >Se vengono selezionati sia la categoria che il prodotto, verrà utilizzato il prodotto.
 
-Questo crea un collegamento segnaposto che viene sostituito con un collegamento reale quando la pagina viene sottoposta a rendering.
+Questo crea un collegamento segnaposto che viene sostituito da un collegamento reale quando viene eseguito il rendering della pagina.
 
-### Accesso al contenuto del prodotto associato {#associated-content}
+### Accesso al contenuto prodotto associato {#associated-content}
 
-Se l’Editor universale riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente AEM contenuti ai quali è stato applicato un tag nel prodotto (consulta [arricchire i dati dei prodotti con il contenuto AEM associato](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare il tipo di contenuto e i prodotti specifici se sulla pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
+Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM a cui è stato applicato il tag del prodotto (vedere [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
 
 ![Pannello laterale dati prodotto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
-### Anteprima dei dati di prodotto in fase di staging {#staged-data}
+### Anteprima dati prodotto in staging {#staged-data}
 
-La modalità Timewarp nell’editor consente agli autori di visualizzare in anteprima e sfogliare un’esperienza AEM con dati di catalogo di prodotti in staging in base alla data di Timewarp.
+La modalità Timewarp nell’editor consente agli autori di visualizzare in anteprima e sfogliare un’esperienza AEM con i dati del catalogo dei prodotti in staging in base alla data Timewarp.
 
 ![Timewarp  ](/help/commerce/cif/assets/authoring/timewarp.png)
 
-I componenti visualizzano un indicatore visivo se la data utilizzata è in fase di staging.
+I componenti visualizzano un indicatore visivo se la data utilizzata è pubblicata nell’area intermedia.
 
-![Indicatore a scatto](/help/commerce/cif/assets/authoring/staged-indicator.png)
+![Indicatore Staged](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
 ## Omnisearch {#omnisearch}
 
-L’utilizzo di Omnisearch è un modo semplice per i professionisti di trovare AEM contenuti e dati di catalogo dei prodotti utilizzando la ricerca full-text. Omnisearch eseguirà la ricerca full-text in AEM e nel backend commerce per trovare oggetti catalogo prodotti nel backend e AEM contenuto commerce. I risultati di AEM includono anche il contenuto a cui sono stati assegnati tag con dati di prodotto/categoria.
+L’utilizzo di Omnisearch è un modo semplice per i professionisti di trovare i contenuti AEM e i dati del catalogo dei prodotti utilizzando la ricerca full-text. Omnisearch eseguirà una ricerca full-text in AEM e nel backend di e-commerce per trovare gli oggetti del catalogo dei prodotti nel backend di e-commerce e il contenuto dell’AEM. I risultati dell’AEM includono anche contenuti che sono stati taggati con dati di prodotto/categoria.
 
 ![Omnisearch](/help/commerce/cif/assets/authoring/omnisearch.png)
 
 Il risultato è raggruppato per tipo.
 
-    >[!NOTE]
+    >[!NOTA]
     >
     >La ricerca full-text in Omnisearch non supporta i frammenti di contenuto associati. Utilizza SKU o UID per trovare i frammenti di contenuto associati.

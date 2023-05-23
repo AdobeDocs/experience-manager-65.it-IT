@@ -1,7 +1,7 @@
 ---
 title: Pacchetto di compatibilità
 seo-title: Compatibility Package
-description: L’installazione del pacchetto di compatibilità su AEM Forms 6.5 consente di utilizzare le risorse Gestione Corrispondenza di AEM Forms 6.4 e versioni precedenti e i modelli e le pagine dei moduli adattivi obsoleti
+description: L’installazione del pacchetto di compatibilità su AEM Forms 6.5 consente di utilizzare le risorse di Gestione della corrispondenza di AEM Forms 6.4 e versioni precedenti e i modelli e le pagine obsoleti dei moduli adattivi
 seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
@@ -15,7 +15,7 @@ exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
@@ -23,37 +23,37 @@ ht-degree: 6%
 
 ## Panoramica {#overview}
 
-La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.5. Per continuare a utilizzare le lettere in AEM Forms 6.5, è necessario installare l’ultima versione [Pacchetto di compatibilità AEMFD](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
+La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.5. Per continuare a utilizzare le lettere in AEM Forms 6.5, devi installare la più recente [Pacchetto di compatibilità per AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-Il pacchetto di compatibilità AEMFD consente inoltre di: [utilizza le seguenti risorse da AEM Forms 6.4, 6.3 e 6.2 su AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Il pacchetto di compatibilità AEMFD consente inoltre di: [utilizza le seguenti risorse di AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
-* Frammenti di documento
+* Frammenti di documenti
 * Lettere
 * Dizionari dati
-* Modelli e pagine obsolete per i moduli adattivi
+* Moduli adattivi: modelli e pagine obsoleti
 
-Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto di compatibilità](../../forms/using/compatibility-package.md#assetsmadecompatible).
+Per ulteriori informazioni, consulta [Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto Compatibilità](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Supporto per risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Aggiunta del supporto per risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
-Dopo aver eseguito un aggiornamento, procedi come segue per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
+Dopo aver eseguito un aggiornamento, effettua le seguenti operazioni per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
 
-Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) preinstallato.
+Assicurati di avere [Pacchetto di compatibilità AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pre-installato.
 
-1. Installa l&#39;ultima versione 6.5 [Pacchetto di compatibilità](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
+1. Installare la versione 6.5 più recente [Pacchetto di compatibilità](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   Per ulteriori informazioni sul caricamento e l’installazione del pacchetto, vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
+   Per ulteriori informazioni sul caricamento e l’installazione del pacchetto, consulta [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 
-1. Dopo aver stabilizzato i registri, riavvia il server.
+1. Una volta stabilizzati i registri, riavviare il server.
 1. Utilizza l’utility di migrazione per rendere le risorse compatibili con la versione 6.5.
 
-   Per ulteriori informazioni, consulta [utility di migrazione](../../forms/using/migration-utility.md).
+   Per ulteriori informazioni, consulta [utilità di migrazione](../../forms/using/migration-utility.md).
 
-## Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto di compatibilità {#assetsmadecompatible}
+## Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto Compatibilità {#assetsmadecompatible}
 
 Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM Forms 6.5 le risorse e i modelli seguenti:
 
-* Attività di gestione della corrispondenza dal AEM 6.4 e precedenti:
+* Risorse di gestione della corrispondenza dell’AEM 6.4 e versioni precedenti:
 
    * [Lettere](../../forms/using/create-letter.md)
    * [Dizionari dati](/help/forms/using/data-dictionary.md)
@@ -66,13 +66,13 @@ Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM For
    * /libs/fd/af/templates/simpleEnrollmentTemplate2
    * /libs/fd/af/templates/surveyTemplate
    * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/ttabsEnrollmentTemplate
-   * /libs/fd/af/templates/taggedEnrollmentTemplate2
+   * /libs/fd/af/templates/tabbedEnrollmentTemplate
+   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
    * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
    * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * Pagine obsolete dei moduli adattivi:
 
    * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenregistrazione
-   * /libs/fd/afaddon/components/page/advancedensubscription
+   * /libs/fd/af/components/page/tabbedenrollment
+   * /libs/fd/afaddon/components/page/advancedenrollment

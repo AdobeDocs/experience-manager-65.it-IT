@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di risorse 3D in Dynamic Media
-description: Scopri come lavorare con le risorse 3D in Dynamic Media
+title: Utilizzo delle risorse 3D in Dynamic Media
+description: Scopri come utilizzare le risorse 3D in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -11,21 +11,21 @@ exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
 workflow-type: tm+mt
 source-wordcount: '2358'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
-# Utilizzare le risorse 3D in Dynamic Media {#working-with-three-d-assets-dm}
+# Utilizzare risorse 3D in Dynamic Media {#working-with-three-d-assets-dm}
 
-Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze immersive.
+Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
 
-* Pubblicazione con un solo clic (utilizzando **[!UICONTROL Pubblicazione rapida]** sulla barra degli strumenti) di risorse 3D per generare un URL.
-* Supporto ottimizzato per la visualizzazione di risorse 3D con il visualizzatore Dimensionale interattivo di alta qualità basato su Adobe Dimension.
-* Il componente 3D Media WCM consente di aggiungere facilmente risorse 3D alle pagine Adobe Experience Manager Sites.
+* Pubblicazione con un clic (tramite **[!UICONTROL Pubblicazione rapida]** sulla barra degli strumenti) di risorse 3D per generare un URL.
+* Supporto ottimizzato per la visualizzazione di risorse 3D con il predefinito visualizzatore dimensionale interattivo di alta qualità basato su Adobe Dimension.
+* Il componente WCM per contenuti multimediali 3D consente di aggiungere facilmente risorse 3D alle pagine Adobe Experience Manager Sites.
 
 Non è necessaria alcuna configurazione aggiuntiva per utilizzare le risorse 3D in Dynamic Media.
 
-![Scarpa in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Pagina dei dettagli di una scarpa tridimensionale.*
+![Attacco in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Pagina dei dettagli di una scarpa tridimensionale.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -37,33 +37,33 @@ Vedi anche [Formati 3D supportati](/help/assets/assets-formats.md).
 
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
-| GLB | Trasmissione GL binaria | model/gltf binario | Include i materiali e le texture come un’unica risorsa. |
-| OBJ | File oggetto 3D WaveFront | application/x-tgif |  |
+| GLB | Trasmissione GL binaria | model/gltf-binary | Include i materiali e le texture come un&#39;unica risorsa. |
+| OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Descrizione Archivio ZIP | model/vnd.usdz+zip | *Sostegno solo all&#39;acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modo nativo dai dispositivi Safari e iOS. |
+| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | *Supporto solo per l’acquisizione; non è disponibile alcuna visualizzazione o interazione.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa dai dispositivi Safari e iOS. |
 
 >[!NOTE]
 >
->Il componente 3D Media WCM e l’anteprima 3D nella pagina Dettagli di una risorsa non sono compatibili con l’ultima versione di Chrome (97.x). Invece, per lavorare con risorse 3D, utilizza Firefox o Safari o una versione precedente di Chrome (96.x).
+>Il componente WCM per contenuti multimediali 3D e l’anteprima 3D nella pagina Dettagli di una risorsa non sono compatibili con la versione più recente di Chrome (97.x). Invece, per lavorare con risorse 3D, utilizza Firefox o Safari oppure una versione precedente di Chrome (96.x).
 
-## Avvio rapido: Risorse 3D in Dynamic Media {#quick-start-three-d}
+## Guida introduttiva: risorse 3D in Dynamic Media {#quick-start-three-d}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le risorse 3D in modalità Dynamic Media - Scene7.
+La seguente descrizione dettagliata del flusso di lavoro è progettata per aiutarti a iniziare rapidamente a utilizzare risorse 3D in modalità Dynamic Media - Scene7.
 
 >[!IMPORTANT]
 >
->Le risorse 3D non sono supportate in Dynamic Media - Modalità ibrida.
+>Le risorse 3D non sono supportate in modalità Dynamic Media - Ibrido.
 
-Prima di lavorare con le risorse 3D in Dynamic Media, accertati che il tuo amministratore di Experience Manager abbia già abilitato e configurato i Cloud Services Dynamic Media in modalità Dynamic Media - Scene7.
+Prima di utilizzare risorse 3D in Dynamic Media, accertati che l’amministratore Experience Manager abbia già abilitato e configurato i Cloud Services Dynamic Media in modalità Dynamic Media - Scene7.
 
-Vedi [Cloud Services ConfiguraE Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
+Consulta [Configurare Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configurazione di Dynamic Media - Modalità Scene7 e [Risoluzione dei problemi di Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
 
-1. **Caricare risorse 3D**
+1. **Carica risorse 3D**
 
-   * [Caricare le risorse 3D da utilizzare in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
+   * [Carica le risorse 3D da utilizzare in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
    * [Formati di file 3D supportati per il caricamento in Dynamic Media](#supported-three-d-file-formats-in-dm).
 
-1. **Gestione delle risorse 3D**
+1. **Gestione risorse 3D**
 
    * Organizzare e cercare risorse 3D
 
@@ -72,223 +72,223 @@ Vedi [Cloud Services ConfiguraE Dynamic Media](/help/assets/config-dms7.md#confi
       * [Utilizzare predicati personalizzati per filtrare i risultati della ricerca](/help/assets/search-assets.md#custompredicates).
    * Visualizzare risorse 3D
 
-      * [Visualizzare e interagire con le risorse 3D](#viewing-three-d-assets).
-      * [Gestire il predefinito visualizzatore dimensionale](/help/assets/managing-viewer-presets.md).
+      * [Visualizzare e interagire con risorse 3D](#viewing-three-d-assets).
+      * [Gestione del predefinito visualizzatore dimensionale](/help/assets/managing-viewer-presets.md).
    * Utilizzare i metadati delle risorse 3D
 
-      * [Gestione dei metadati per le risorse digitali](/help/assets/metadata.md).
-      * [Schemi metadati](/help/assets/metadata-schemas.md).
+      * [Gestire i metadati per le risorse digitali](/help/assets/metadata.md).
+      * [Schemi di metadati](/help/assets/metadata-schemas.md).
 
 
 
 1. **Pubblicare risorse 3D**
 
-   * [Pubblicare risorse statiche Dynamic Media 3D](#publishing-three-d-assets)
-   * [Metodi alternativi per la pubblicazione di risorse 3D Dynamic Media utilizzando il visualizzatore dimensionale](#alternate-publish-methods)
+   * [Pubblicare risorse Dynamic Media 3D statiche](#publishing-three-d-assets)
+   * [Metodi alternativi per la pubblicazione di risorse 3D di Dynamic Media tramite il visualizzatore dimensionale](#alternate-publish-methods)
 
-## Informazioni sulla visualizzazione e sull’interazione con risorse 3D {#viewing-three-d-assets}
+## Informazioni sulla visualizzazione e l’interazione con risorse 3D {#viewing-three-d-assets}
 
-Questa sezione descrive come visualizzare e interagire con le risorse 3D in due modi diversi: dalla pagina dei dettagli della risorsa e dal componente Media 3D in Experience Manager Sites.
+Questa sezione descrive come visualizzare e interagire con le risorse 3D in due modi diversi: dalla pagina dei dettagli delle risorse e dal componente 3D Media di Experience Manager Sites.
 
-Il visualizzatore 3D interattivo include, tra le altre cose, una raccolta di controlli interattivi per le telecamere che consentono di orbitare, ingrandire e scorrere la risorsa 3D.
+Il visualizzatore 3D interattivo include, tra le altre cose, una raccolta di controlli interattivi della fotocamera che consentono di ruotare, ingrandire ed eseguire la panoramica della risorsa 3D.
 
-Il tempo necessario per aprire una risorsa 3D nella visualizzazione pagina Dettagli risorsa dipende da diversi fattori. quali:
+Il tempo necessario per aprire una risorsa 3D nella visualizzazione della pagina Dettagli risorsa dipende da diversi fattori. Questi fattori includono ad esempio:
 
-* Larghezza di banda per il server.
+* Larghezza di banda al server.
 * Latenze al server
-* Complessità dell&#39;immagine.
+* Complessità dell’immagine.
 
-Inoltre, le funzionalità del computer client, come una workstation, un notebook o un dispositivo touch mobile, sono importanti anche quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
+Inoltre, le funzionalità del computer client, ad esempio una workstation, un notebook o un dispositivo touch mobile, sono anch&#39;esse importanti da considerare quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l&#39;esperienza di visualizzazione 3D interattiva più fluida e più favorevole.
 
 >[!TIP]
 >
->Puoi aprire il predefinito visualizzatore dimensionale nell’Editor predefiniti per visualizzatori per esercitarti a navigare su una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui è possibile interagire.
+>Potete aprire il predefinito visualizzatore dimensionale nell&#39;Editor predefiniti visualizzatore per esercitarvi a navigare in una risorsa 3D senza dover prima caricare alcun file 3D. Il predefinito visualizzatore dimensionale dispone di una risorsa 3D incorporata con cui interagire.
 >
->Vedi [Gestire i predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md).
+>Consulta [Gestire i predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
 ## Visualizzare e interagire con una risorsa 3D dalla pagina dei dettagli della risorsa {#viewing-three-d-assets-from-asset-details-page}
 
-Vedi anche [Anteprima delle risorse tramite l’interfaccia software](/help/assets/previewing-assets.md).
+Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia software](/help/assets/previewing-assets.md).
 
 **Per visualizzare e interagire con una risorsa 3D dalla pagina dei dettagli della risorsa:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 
-   Vedi [Caricare le risorse 3D da utilizzare in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
+   Consulta [Carica le risorse 3D da utilizzare in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
 
-1. Dall’Experience Manager, sul **[!UICONTROL Navigazione]** vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
-1. Vicino all’angolo superiore destro della pagina, dal **[!UICONTROL Visualizza]** elenco a discesa, seleziona **[!UICONTROL Vista a schede]**.
-1. Accedi alla risorsa 3D da visualizzare.
+1. Da Experience Manager, il **[!UICONTROL Navigazione]** pagina, vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Nell&#39;angolo superiore destro della pagina, da **[!UICONTROL Visualizza]** elenco a discesa, seleziona **[!UICONTROL Vista a schede]**.
+1. Passa a una risorsa 3D che desideri visualizzare.
 1. Seleziona la scheda della risorsa 3D.
 1. Nella pagina di visualizzazione dei dettagli della risorsa 3D, effettua una delle seguenti operazioni:
 
-   | Visualizzazione | Descrizione | Azione del mouse | Azione touch screen |
+   | Visualizzazione | Descrizione | Azione del mouse | Azione schermo tattile |
    | --- | --- | --- | --- |
-   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Clic a sinistra + trascinamento. | Premere un dito singolo + trascinare. |
-   | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
-   | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
-   | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
+   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
+   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
+   | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
+   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-1. Nell’angolo in alto a destra della pagina, seleziona **[!UICONTROL Chiudi]** per tornare alla pagina Risorse .
+1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]** per tornare alla pagina Risorse.
 
-## Visualizzazione e interazione con una risorsa 3D all’interno di un componente Media 3D {#interacting-with-asset-inside-three-d-media-component}
+## Visualizzazione e interazione con una risorsa 3D all’interno di un componente 3D Media {#interacting-with-asset-inside-three-d-media-component}
 
-Quando una pagina web si trova in **[!UICONTROL Modifica]** con una risorsa 3D non è possibile interagire. Per rendere la risorsa interattiva, puoi utilizzare la funzione **[!UICONTROL Anteprima]** per visualizzare la pagina web nell’editor di pagine con accesso completo alle funzionalità del componente Media 3D.
+Quando una pagina web è in **[!UICONTROL Modifica]** in modalità, non è possibile alcuna interazione con una risorsa 3D. Per rendere interattiva la risorsa, puoi utilizzare **[!UICONTROL Anteprima]** per visualizzare la pagina web nell’editor pagina con accesso completo alle funzionalità del componente 3D Media.
 
 >[!IMPORTANT]
 >
->Puoi eseguire questa operazione solo dopo aver aggiunto un componente Media 3D a una pagina web e assegnato una risorsa 3D al componente. Vedi [Aggiunta del componente Media 3D a una pagina web](#adding-the-three-d-media-component-to-a-web-page) e [Assegnazione di una risorsa 3D a un componente Media 3D](#assigning-a-three-d-asset-to-the-component).
+>Puoi eseguire questa attività solo dopo aver aggiunto un componente File multimediali 3D a una pagina web e aver assegnato una risorsa 3D al componente. Consulta [Aggiunta del componente File 3D a una pagina web](#adding-the-three-d-media-component-to-a-web-page) e [Assegnazione di una risorsa 3D a un componente multimediale 3D](#assigning-a-three-d-asset-to-the-component).
 
-Vedi anche [Anteprima delle risorse tramite l’interfaccia software](/help/assets/previewing-assets.md).
+Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia software](/help/assets/previewing-assets.md).
 
-**Per visualizzare e interagire con una risorsa 3D all’interno di un componente File multimediali 3D:**
+**Per visualizzare e interagire con una risorsa 3D all’interno di un componente 3D Media:**
 
-1. Mentre una pagina web si trova in **[!UICONTROL Modifica]** eseguire una delle operazioni seguenti:
+1. Quando una pagina web è in **[!UICONTROL Modifica]** eseguire una delle operazioni seguenti:
 
-   * In alto a destra nella pagina, seleziona **[!UICONTROL Anteprima]** per immettere **[!UICONTROL Anteprima]** modalità.
+   * Nella parte superiore destra della pagina, seleziona **[!UICONTROL Anteprima]** per inserire **[!UICONTROL Anteprima]** modalità.
    * Elimina `/editor.html` dall’URL della pagina nel browser.
 
-Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata all’interno del componente Media 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata nel componente File 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Una risorsa 3D completamente interattiva come visualizzata in **[!UICONTROL Anteprima]** modalità.
 
-1. Quando **[!UICONTROL Anteprima]** eseguire una delle operazioni seguenti:
+1. In **[!UICONTROL Anteprima]** eseguire una delle operazioni seguenti:
 
-   | Visualizzazione | Descrizione | Azione del mouse | Azione touch screen |
+   | Visualizzazione | Descrizione | Azione del mouse | Azione schermo tattile |
    | --- | --- | --- | --- |
-   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Clic a sinistra + trascinamento. | Premere un dito singolo + trascinare. |
-   | **Panning della fotocamera** | Consente di scorrere la visualizzazione a sinistra, a destra, in alto o in basso. | Fai clic con il pulsante destro del mouse e trascina. | Premere due dita + trascinare. |
-   | **Zoom della fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Ruota di scorrimento. | Pizzico a due dita. |
-   | **Ricollegare la fotocamera** | Rientra la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione della visualizzazione al centro della risorsa 3D. Inoltre, la funzione Reset sposta la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per passare alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
+   | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
+   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
+   | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
+   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
+   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
 
-## Utilizzo del componente File multimediali 3D {#working-with-three-d-media-component}
+## Informazioni sull&#39;utilizzo del componente 3D Media {#working-with-three-d-media-component}
 
-Dynamic Media include un componente Media 3D di Dynamic Media che può essere utilizzato in Adobe Experience Manager Sites per abilitare la visualizzazione interattiva dei modelli 3D sulle pagine web.
+Dynamic Media include un componente Dynamic Media 3D Media che puoi utilizzare in Adobe Experience Manager Sites per abilitare la visualizzazione interattiva di modelli 3D sulle pagine web.
 
-* [Aggiungi il componente Media 3D al modello di pagina](#adding-three-d-media-component-to-page-template)
-* [Aggiungere il componente Media 3D a una pagina web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Facoltativo - Configura il componente File multimediali 3D](#configuring-the-three-d-component)
-* [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-three-d-asset-to-the-component)
+* [Aggiungere il componente 3D Media al modello della pagina](#adding-three-d-media-component-to-page-template)
+* [Aggiungere il componente 3D Media a una pagina web](#adding-the-three-d-media-component-to-a-web-page)
+   * [Facoltativo - Configurare il componente 3D Media](#configuring-the-three-d-component)
+* [Assegnare una risorsa 3D al componente File 3D](#assigning-a-three-d-asset-to-the-component)
 
-## Aggiungi il componente Media 3D al modello di pagina {#adding-three-d-media-component-to-page-template}
+## Aggiungere il componente 3D Media al modello della pagina {#adding-three-d-media-component-to-page-template}
 
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**.
-1. Passa al modello di pagina in cui desideri abilitare il componente 3D e seleziona il modello.
-1. Seleziona **[!UICONTROL Modifica]** quindi potete aprire il modello.
-1. Nel menu a discesa visualizzato in alto a destra della pagina, seleziona **[!UICONTROL Struttura]** se non è già attiva.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**.
+1. Passa al modello della pagina in cui desideri abilitare il componente 3D e seleziona il modello.
+1. Seleziona **[!UICONTROL Modifica]** in modo da poter aprire il modello.
+1. Nella parte superiore destra della pagina, nel menu a discesa, seleziona **[!UICONTROL Struttura]** , se non è già attiva.
 
    ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
-1. Selezionare un&#39;area vuota nel **[!UICONTROL Contenitore di layout]** selezionare e aprire la relativa barra degli strumenti associata.
-1. Nella barra degli strumenti, seleziona la **[!UICONTROL Criterio]** per aprire **[!UICONTROL Editor criteri]**.
-1. In **[!UICONTROL Proprietà]** nella sezione **[!UICONTROL Componenti consentiti]** scheda , scorri fino a **[!UICONTROL Dynamic Media]**, quindi espandi l’elenco e controlla **[!UICONTROL Supporti 3D]**.
-1. Seleziona **[!UICONTROL Fine]** per salvare le modifiche e chiudere il **[!UICONTROL Editor criteri]**.
+1. Seleziona un’area vuota nella sezione **[!UICONTROL Contenitore di layout]** in modo da selezionarla e aprirne la barra degli strumenti associata.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Policy]** per aprire **[!UICONTROL Editor criteri]**.
+1. In **[!UICONTROL Proprietà]** sezione, sotto **[!UICONTROL Componenti consentiti]** , scorri fino a **[!UICONTROL Dynamic Media]**, quindi espandi l’elenco e seleziona **[!UICONTROL File 3D]**.
+1. Seleziona **[!UICONTROL Fine]** per salvare le modifiche e chiudere **[!UICONTROL Editor criteri]**.
 
-   Ora puoi posizionare il componente Media 3D di Dynamic Media su tutte le pagine che utilizzano questo modello.
+   È ora possibile inserire il componente Dynamic Media 3D Media in tutte le pagine che utilizzano questo modello.
 
-## Aggiungere il componente Media 3D in una pagina web {#adding-the-three-d-media-component-to-a-web-page}
+## Aggiungere il componente 3D Media a una pagina web {#adding-the-three-d-media-component-to-a-web-page}
 
 Se utilizzi Experience Manager come sistema di gestione dei contenuti web, puoi aggiungere risorse 3D alle pagine web tramite il componente Media 3D.
 
-Vedi anche [Aggiungere risorse Dynamic Media nelle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Vedi anche [Aggiungere risorse Dynamic Media alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Per aggiungere il componente Media 3D in una pagina web:**
+**Per aggiungere il componente File 3D su una pagina web:**
 
-1. Apri Experience Manager Sites e seleziona la pagina web a cui desideri aggiungere il componente Media 3D di Dynamic Media.
-1. Seleziona la **[!UICONTROL Modifica]** (matita) per aprire la pagina nell’editor di pagine. Assicurati che **[!UICONTROL Modifica]** viene selezionata vicino alla parte superiore destra della pagina.
+1. Apri Experience Manager Sites e seleziona la pagina web alla quale desideri aggiungere il componente Dynamic Media 3D Media.
+1. Seleziona la **[!UICONTROL Modifica]** (matita) che consente di aprire la pagina nell’editor pagina. Assicurati che **[!UICONTROL Modifica]** viene selezionata in alto a destra della pagina.
 
    ![3d-media-component-add](/help/assets/assets-dm/3d-media-component-edit.png)
 
-1. Nella barra degli strumenti, seleziona l’icona Pannello laterale per attivare o disattivare la visualizzazione del pannello.
+1. Sulla barra degli strumenti, seleziona l’icona Pannello laterale per attivare o disattivare la visualizzazione del pannello.
 
-1. Nel pannello laterale, seleziona l’icona del segno più per aprire il **[!UICONTROL Componenti]** elenco.
+1. Nel pannello laterale, seleziona l’icona del segno più per aprire **[!UICONTROL Componenti]** elenco.
 
    ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
 
-1. Trascina **[!UICONTROL Supporti 3D]** dal **[!UICONTROL Componenti]** nella posizione della pagina in cui si desidera visualizzare il visualizzatore 3D.
+1. Trascina **[!UICONTROL File 3D]** componente da **[!UICONTROL Componenti]** nella posizione della pagina in cui si desidera visualizzare il visualizzatore 3D.
 
 Ora puoi assegnare una risorsa 3D al componente.
 
-Vedi [Assegnare una risorsa 3D al componente File multimediali 3D](#assigning-a-three-d-asset-to-the-component).
+Consulta [Assegnare una risorsa 3D al componente File 3D](#assigning-a-three-d-asset-to-the-component).
 
-### Facoltativo - Configura il componente File multimediali 3D {#configuring-the-three-d-component}
+### Facoltativo - Configurare il componente 3D Media {#configuring-the-three-d-component}
 
-1. Nell’editor pagina di Experience Manager Sites, seleziona il **[!UICONTROL Visualizzatore multimediale 3D]** componente precedentemente aggiunto alla pagina.
-1. Seleziona la **[!UICONTROL Configurazione]** icona (chiave inglese) per aprire la finestra di dialogo di configurazione del componente.
+1. Nell’editor pagina di Experience Manager Sites, seleziona la **[!UICONTROL Visualizzatore file 3D]** componente precedentemente aggiunto alla pagina.
+1. Seleziona la **[!UICONTROL Configurazione]** (chiave) che consente di aprire la finestra di dialogo configurazione componente (component configuration).
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. Nella finestra di dialogo File multimediali 3D, dall’elenco a discesa Predefinito visualizzatore , seleziona **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
+1. Nella finestra di dialogo 3D Media, seleziona dall’elenco a discesa Predefinito visualizzatore **[!UICONTROL Dimensionale]** per assegnare il predefinito visualizzatore dimensionale al componente.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
-1. Nell’angolo in alto a destra, seleziona il segno di spunta per salvare le modifiche.
+1. Nell&#39;angolo superiore destro selezionare il segno di spunta per salvare le modifiche.
 
-## Assegnare una risorsa 3D al componente File multimediali 3D {#assigning-a-three-d-asset-to-the-component}
+## Assegnare una risorsa 3D al componente File 3D {#assigning-a-three-d-asset-to-the-component}
 
-Dopo aver aggiunto un componente Media 3D a una pagina web, puoi assegnargli una risorsa 3D.
+Dopo aver aggiunto un componente 3D Media a una pagina web, puoi assegnargli una risorsa 3D.
 
-Vedi [Aggiungere il componente Media 3D a una pagina web](#adding-the-three-d-media-component-to-a-web-page).
+Consulta [Aggiungere il componente 3D Media a una pagina web](#adding-the-three-d-media-component-to-a-web-page).
 
-**Per assegnare una risorsa 3D al componente File multimediali 3D:**
+**Per assegnare una risorsa 3D al componente File 3D:**
 
-1. Nell’editor pagina di Experience Manager Sites, seleziona il **[!UICONTROL Risorse]** icona per aprire **[!UICONTROL Risorse]** nel pannello laterale.
-1. Nell’elenco a discesa , seleziona **[!UICONTROL 3D]** per mostrare solo i tipi di file di risorse 3D.
-1. Nel pannello laterale, cerca o scorri fino alla risorsa 3D che desideri visualizzare sulla pagina da modificare.
-1. Trascina la risorsa 3D dal pannello laterale Risorse e rilasciala sul pannello **[!UICONTROL Supporti 3D]** componente precedentemente aggiunto alla pagina.
+1. Nell’editor pagina di Experience Manager Sites, seleziona la **[!UICONTROL Risorse]** icona per aprire **[!UICONTROL Risorse]** nel pannello laterale.
+1. Nell’elenco a discesa, seleziona **[!UICONTROL 3D]** per visualizzare solo i tipi di file di risorse 3D.
+1. Nel pannello laterale, cerca o scorri fino alla risorsa 3D che desideri visualizzare nella pagina da modificare.
+1. Trascina la risorsa 3D dal pannello laterale Risorse e rilasciala sulla **[!UICONTROL File 3D]** componente precedentemente aggiunto alla pagina.
 
-   ![Assegnare risorse 3D al componente File multimediali 3D](/help/assets/assets-dm/3d-asset-add.png)
+   ![Assegna risorsa 3D al componente File 3D](/help/assets/assets-dm/3d-asset-add.png)
 
 >[!NOTE]
 >
->Mentre una pagina web si trova in Experience Manager Sites **[!UICONTROL Modifica]** In modalità 3D Media, il componente File multimediali 3D visualizza la risorsa 3D ma non è possibile interagire con essa. Per rendere la risorsa interattiva, puoi utilizzare la funzione **[!UICONTROL Anteprima]** per visualizzare la pagina web nell’editor di pagine con accesso completo alle funzionalità del componente Media 3D.
+>Quando una pagina web è in Experience Manager Sites **[!UICONTROL Modifica]** in modalità 3D, il componente File 3D visualizza la risorsa 3D ma non è possibile alcuna interazione con essa. Per rendere interattiva la risorsa, puoi utilizzare **[!UICONTROL Anteprima]** per visualizzare la pagina web nell’editor pagina con accesso completo alle funzionalità del componente 3D Media.
 
-## Pubblicare risorse statiche Dynamic Media 3D {#publishing-three-d-assets}
+## Pubblicare risorse Dynamic Media 3D statiche {#publishing-three-d-assets}
 
-Dynamic Media accetta vari formati di file 3D supportati come *contenuto statico* in Dynamic Media. Il contenuto statico consente di caricare e pubblicare risorse 3D, ma non è disponibile il supporto per *imaging a variabili* o la sostituzione dell’immagine associata alla risorsa 3D. Il motivo è che Dynamic Media Imaging Server non riconosce i formati 3D. Di conseguenza, dopo aver pubblicato una risorsa 3D in Dynamic Media, disponi di un URL istantaneo che puoi copiare. L’URL della risorsa 3D segue la consueta struttura URL di Dynamic Media. Tuttavia, non puoi modificare alcun parametro nell’URL della risorsa, a differenza delle risorse di immagini tradizionali in Dynamic Media.
+Dynamic Media accetta vari formati di file 3D supportati come *contenuto statico* in Dynamic Media. Il contenuto statico consente di caricare e pubblicare risorse 3D, ma non è supportato per *imaging variabile* o un adattamento dell&#39;immagine associato alla risorsa 3D. Il motivo è che Dynamic Media Imaging Server non riconosce i formati 3D. Di conseguenza, dopo aver pubblicato una risorsa 3D in Dynamic Media, disponi di un URL istantaneo da copiare. L’URL della risorsa 3D segue la consueta struttura URL di Dynamic Media. Tuttavia, a differenza delle risorse di immagini tradizionali in Dynamic Media, nell’URL della risorsa non è possibile modificare alcun parametro.
 
 Vedi anche [Ottenere un URL per una risorsa statica](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
-In **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
+In **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa e a sinistra della sua data e ora viene visualizzata una piccola icona a forma di globo, per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
-Se utilizzi Experience Manager come WCM, utilizza questo metodo di pubblicazione per aggiungere le risorse 3D di Dynamic Media direttamente sulla tua pagina web.
+Se utilizzi Experience Manager come WCM, utilizza questo metodo di pubblicazione per aggiungere le risorse 3D di Dynamic Media direttamente sulla pagina web.
 
 Vedi anche [Pubblicare risorse Dynamic Media](publishing-dynamicmedia-assets.md).
 
-Vedi anche [Pubblicare pagine](/help/sites-authoring/publishing-pages.md).
+Vedi anche [Pubblicare le pagine](/help/sites-authoring/publishing-pages.md).
 
-**Per pubblicare risorse 3D statiche di Dynamic Media:**
+**Per pubblicare risorse Dynamic Media 3D statiche:**
 
-1. Apri una risorsa 3D (formato di file GLB, OBJ o STL) per visualizzarla nella pagina dei dettagli della risorsa.
+1. Apri una risorsa 3D (in formato GLB, OBJ o STL) per visualizzarla nella pagina dei dettagli della risorsa.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**.
 
    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
 
-1. Seleziona **[!UICONTROL Chiudi]** per uscire dalla finestra di dialogo e tornare alla pagina dei dettagli della risorsa.
-1. Dall’elenco a discesa a sinistra del nome del file della risorsa 3D, seleziona **[!UICONTROL Rendering]**.
+1. Seleziona **[!UICONTROL Chiudi]** per uscire dalla finestra di dialogo e tornare alla pagina dettagli risorsa.
+1. Dall’elenco a discesa a sinistra del nome file della risorsa 3D, seleziona **[!UICONTROL Rappresentazioni]**.
 
    ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. Seleziona **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), la **[!UICONTROL URL]** viene visualizzato vicino all’angolo in basso a sinistra della pagina se sono soddisfatte tutte le seguenti condizioni della risorsa 3D:
-   * Il asset 3D è un formato supportato (GLB, OBJ, STL e USDZ).
-   * La risorsa 3D è stata assimilata in Dynamic Media Image Production System (IPS).
+1. Seleziona **[!UICONTROL originale]**. Quando una risorsa 3D viene pubblicata (o &quot;attivata&quot;), il **[!UICONTROL URL]** Il pulsante viene visualizzato nell&#39;angolo inferiore sinistro della pagina se sono soddisfatte tutte le seguenti condizioni per le risorse 3D:
+   * La risorsa 3D è un formato supportato (GLB, OBJ, STL e USDZ).
+   * La risorsa 3D è stata acquisita in Dynamic Media Image Production System (IPS).
    * La risorsa 3D viene pubblicata.
 
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
-1. Seleziona **[!UICONTROL URL]** così puoi visualizzare l’URL di produzione diretta della risorsa 3D che puoi copiare e utilizzare sulle pagine web.
+1. Seleziona **[!UICONTROL URL]** in modo da poter visualizzare l’URL di produzione diretto della risorsa 3D che puoi copiare e utilizzare sulle pagine web.
 
-### Metodi alternativi per la pubblicazione di risorse 3D Dynamic Media utilizzando il visualizzatore dimensionale {#alternate-publish-methods}
+### Metodi alternativi per la pubblicazione di risorse 3D di Dynamic Media tramite il visualizzatore dimensionale {#alternate-publish-methods}
 
-Utilizza i due metodi seguenti per pubblicare le risorse 3D di Dynamic Media se lo fai *not* utilizza Experience Manager come WCM.
+In caso contrario, utilizza i due metodi seguenti per pubblicare risorse Dynamic Media 3D *non* utilizza Experience Manager come WCM.
 
-* **[!UICONTROL URL]** - Utilizzo **[!UICONTROL URL]** se utilizzi un sistema di gestione dei contenuti web di terze parti e desideri collegare risorse Dynamic Media 3D alle tue pagine web utilizzando il visualizzatore dimensionale.
+* **[!UICONTROL URL]** - Utilizzo **[!UICONTROL URL]** se utilizzi un sistema di gestione dei contenuti web di terze parti e desideri collegare risorse 3D di Dynamic Media alle pagine web utilizzando il visualizzatore dimensionale.
 
-   Vedi [Collegare gli URL all’applicazione web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+   Consulta [Collegare gli URL all’applicazione web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Incorpora]** - Utilizzo **[!UICONTROL Incorpora]** per visualizzare una risorsa Dynamic Media 3D incorporata in una pagina web utilizzando il visualizzatore dimensionale. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nel **[!UICONTROL Incorpora]** finestra di dialogo.
+* **[!UICONTROL Incorpora]** - Utilizzo **[!UICONTROL Incorpora]** quando desideri visualizzare una risorsa 3D di Dynamic Media incorporata in una pagina web utilizzando il visualizzatore dimensionale. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita in **[!UICONTROL Incorpora]** .
 
-   Vedi [Incorporare un visualizzatore video, immagine o dimensionale di Dynamic Media in una pagina web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+   Consulta [Incorpora il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

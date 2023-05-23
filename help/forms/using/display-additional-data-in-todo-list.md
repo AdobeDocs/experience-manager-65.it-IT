@@ -1,7 +1,7 @@
 ---
-title: Visualizzazione di dati aggiuntivi nell'elenco ToDo
+title: Visualizzazione di dati aggiuntivi nell'elenco Da fare
 seo-title: Displaying additional data in ToDo list
-description: Come personalizzare la visualizzazione dell’elenco A-fare dell’area di lavoro di LiveCycle AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
+description: Come personalizzare la visualizzazione dell’elenco Da fare dell’area di lavoro AEM Forms di LiveCycle in modo da visualizzare ulteriori informazioni oltre a quelle predefinite.
 seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
@@ -17,26 +17,26 @@ ht-degree: 1%
 
 ---
 
-# Visualizzazione di dati aggiuntivi nell&#39;elenco ToDo{#displaying-additional-data-in-todo-list}
+# Visualizzazione di dati aggiuntivi nell&#39;elenco Da fare{#displaying-additional-data-in-todo-list}
 
-Per impostazione predefinita, nell’elenco To-do dell’area di lavoro di AEM Forms vengono visualizzati il nome e la descrizione dell’attività. Tuttavia, puoi aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
+Per impostazione predefinita, nell’elenco Da fare dell’area di lavoro di AEM Forms vengono visualizzati il nome visualizzato e la descrizione dell’attività. Tuttavia, puoi aggiungere altre informazioni quali la data di creazione e la data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
 
-![Osserva la scheda To-do di HTML Workspace che mostra la configurazione predefinita](assets/html-todo-list.png)
+![Scheda Da fare di HTML Workspace con la configurazione predefinita](assets/html-todo-list.png)
 
-Questo articolo descrive i passaggi per aggiungere informazioni da visualizzare per ogni attività nell&#39;elenco ToDo.
+Questo articolo descrive i passaggi per aggiungere informazioni da visualizzare per ogni attività nell&#39;elenco Da fare.
 
-## Cosa può essere aggiunto {#what-can-be-added}
+## Cosa è possibile aggiungere {#what-can-be-added}
 
-Puoi aggiungere le informazioni disponibili in `task.json` inviato dal server. Le informazioni possono essere aggiunte come testo normale oppure è possibile utilizzare gli stili per formattare le informazioni.
+È possibile aggiungere le informazioni disponibili in `task.json` inviato dal server. Le informazioni possono essere aggiunte come testo normale oppure è possibile utilizzare gli stili per formattarle.
 
-Per ulteriori informazioni sulla descrizione dell’oggetto JSON, consulta [questo](/help/forms/using/html-workspace-json-object-description.md) articolo.
+Per ulteriori informazioni sulla descrizione dell’oggetto JSON, vedi [questo](/help/forms/using/html-workspace-json-object-description.md) articolo.
 
-## Visualizzazione di informazioni su un&#39;attività {#displaying-information-on-a-task}
+## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Per visualizzare informazioni aggiuntive per un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti all&#39;interno del blocco attività di `translation.json`.
+1. Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Per visualizzare informazioni aggiuntive su un’attività, è necessario aggiungere le coppie chiave-valore corrispondenti nel blocco attività di `translation.json`.
 
-   Esempio di modifica `/apps/ws/locales/en-US/translation.json` per inglese:
+   Esempio di modifica `/apps/ws/locales/en-US/translation.json` per l&#39;inglese:
 
    ```json
    "task" : {
@@ -110,9 +110,9 @@ Per ulteriori informazioni sulla descrizione dell’oggetto JSON, consulta [ques
 
    >[!NOTE]
    >
-   >Aggiungi le coppie chiave-valore corrispondenti per tutte le lingue supportate.
+   >Aggiungi coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
-1. Ad esempio, aggiungere informazioni all’interno del blocco attività:
+1. Ad esempio, aggiungi informazioni all’interno del blocco di attività:
 
    ```json
    "stepname" : {
@@ -121,9 +121,9 @@ Per ulteriori informazioni sulla descrizione dell’oggetto JSON, consulta [ques
    }
    ```
 
-## Definizione del CSS per la nuova proprietà {#defining-css-for-the-new-property}
+## Definizione di CSS per la nuova proprietà {#defining-css-for-the-new-property}
 
-1. È possibile applicare uno stile alle informazioni (proprietà) aggiunte a un&#39;attività. A questo scopo, è necessario aggiungere informazioni sugli stili per la nuova proprietà aggiunta a `/apps/ws/css/newStyle.css`.
+1. È possibile applicare uno stile alle informazioni (proprietà) aggiunte a un&#39;attività. A questo scopo, devi aggiungere le informazioni di stile per la nuova proprietà aggiunta a `/apps/ws/css/newStyle.css`.
 
    Ad esempio, aggiungi:
 
@@ -135,9 +135,9 @@ Per ulteriori informazioni sulla descrizione dell’oggetto JSON, consulta [ques
    }
    ```
 
-## Aggiunta di una voce nel modello di HTML {#adding-entry-in-the-html-template}
+## Aggiunta di una voce nel modello HTML {#adding-entry-in-the-html-template}
 
-Infine, è necessario includere una voce nel pacchetto di sviluppo per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, fai riferimento a Creazione del codice dell’area di lavoro di AEM Forms .
+Infine, è necessario includere una voce nel pacchetto di sviluppo per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, consulta Creazione del codice dell’area di lavoro di AEM Forms.
 
 1. Copia `task.html`:
 

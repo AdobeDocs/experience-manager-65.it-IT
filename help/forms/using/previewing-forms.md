@@ -1,7 +1,7 @@
 ---
 title: Anteprima di un modulo
 seo-title: Previewing a form
-description: È possibile visualizzare l’anteprima dei moduli prima di pubblicarli o attivarli per assicurarsi che soddisfino le aspettative. Le opzioni di anteprima possono variare in base ai tipi di modulo supportati.
+description: Puoi visualizzare in anteprima i moduli prima di pubblicarli o attivarli per assicurarti che soddisfino le aspettative. Le opzioni di anteprima possono variare tra i tipi di modulo supportati.
 seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 ## Panoramica {#overview}
 
-In AEM Forms è possibile visualizzare in anteprima i moduli e i documenti presenti nella directory archivio. L’anteprima consente di sapere esattamente come si presentano e si comportano i moduli quando vengono rilasciati agli utenti finali.
+In AEM Forms puoi visualizzare in anteprima i moduli e i documenti presenti nell’archivio. L&#39;anteprima consente di conoscere esattamente l&#39;aspetto e il comportamento dei moduli quando vengono rilasciati agli utenti finali.
 
-Durante la visualizzazione dell’anteprima dei moduli, viene eseguito il rendering in un’interfaccia interattiva e l’utente può compilare i moduli con i relativi dati. Durante l&#39;anteprima dei documenti, il rendering viene eseguito in modalità non interattiva e l&#39;utente può visualizzare solo il documento. Per i moduli è disponibile un’opzione aggiuntiva Anteprima personalizzata. Utilizzando questa opzione, è possibile visualizzare in anteprima il modulo utilizzando i dati di un file XML. I dati compilano alcuni o tutti i campi del modulo visualizzati in anteprima.
+Quando si visualizza l’anteprima dei moduli, questi vengono riprodotti in un’interfaccia interattiva e l’utente può riempirli di dati. Quando si visualizza l’anteprima di un documento, questo viene riprodotto in modalità non interattiva e l’utente può solo visualizzarlo. Per i moduli è disponibile un’ulteriore opzione di Anteprima personalizzata. Questa opzione consente di visualizzare in anteprima il modulo utilizzando i dati di un file XML. I dati riempiono alcuni o tutti i campi del modulo visualizzato in anteprima.
 
 Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i diversi tipi di moduli supportati:
 
@@ -38,28 +38,28 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
   </tr>
   <tr>
    <td>Modulo PDF</td>
-   <td>Anteprima e anteprima di PDF con dati<br /> </td>
+   <td>Anteprima e anteprima PDF con i dati<br /> </td>
   </tr>
   <tr>
    <td>modulo adattivo</td>
-   <td>Anteprima HTML e anteprima HTML con dati</td>
+   <td>Anteprima HTML e Anteprima HTML con dati</td>
   </tr>
   <tr>
-   <td>Modello di modulo</td>
-   <td>Anteprima PDF, anteprima PDF con dati, anteprima HTML, anteprima HTML con dati<br /> </td>
+   <td>Modello modulo</td>
+   <td>Anteprima PDF, Anteprima PDF con dati, Anteprima HTML, Anteprima HTML con dati<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Anteprima di un modulo {#previewing-a-form-1}
 
-1. Seleziona una risorsa da visualizzare in anteprima e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti azioni.
+1. Seleziona una risorsa da visualizzare in anteprima e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra delle azioni.
 
    >[!NOTE]
    >
-   >Per selezionare una risorsa, passa alla vista Elenco dalla vista Scheda predefinita. Fai clic su ![aem6forms_viewlist](assets/aem6forms_viewlist.png) o ![aem6forms_viewcard](assets/aem6forms_viewcard.png) per cambiare visualizzazione.
+   >Per selezionare una risorsa, passa alla vista a elenco dalla vista a schede predefinita. Clic ![aem6forms_viewlist](assets/aem6forms_viewlist.png) o ![aem6forms_viewcard](assets/aem6forms_viewcard.png) per cambiare visualizzazione.
 
-1. Facendo clic su Anteprima sono elencate le opzioni di anteprima applicabili al tipo di risorsa selezionato. Fai clic sull’opzione desiderata per eseguire il rendering della risorsa selezionata in una nuova scheda.
+1. Facendo clic su Anteprima vengono elencate le possibili opzioni di anteprima applicabili al tipo di risorsa selezionato. Fai clic sull’opzione desiderata per eseguire il rendering della risorsa selezionata in una nuova scheda.
 
    Le opzioni disponibili sono:
 
@@ -69,7 +69,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
 ## Anteprima con i dati {#preview-with-data}
 
-Quando selezioni **Anteprima con dati**, è possibile visualizzare l’aspetto del modulo con i dati reali immessi al suo interno. L’opzione Anteprima con dati consente di caricare un file XML contenente dati utente di esempio. I dati utente di esempio vengono utilizzati per compilare il modulo di anteprima nel formato scelto.
+Quando selezioni **Anteprima con dati**, è possibile visualizzare l&#39;aspetto del modulo con i dati reali immessi. L’opzione Anteprima con dati consente di caricare un XML che contiene dati utente di esempio. I dati utente di esempio vengono utilizzati per compilare il modulo di anteprima nel formato scelto.
 
-1. Seleziona una risorsa e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png), quindi seleziona **Anteprima con dati**.
+1. Seleziona una risorsa e fai clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png), e seleziona **Anteprima con dati**.
 1. Nella finestra di dialogo Anteprima modulo, specificare FormData come file XML. Fare clic su Anteprima per eseguire il rendering del modulo con i dati uniti da XML.

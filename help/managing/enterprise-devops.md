@@ -32,7 +32,7 @@ DevOps punta a evitare problemi come:
 
 ## Ambienti {#environments}
 
-Una distribuzione Adobe Experience Manager (AEM) in genere consiste in più ambienti, utilizzati per scopi diversi a diversi livelli:
+Un’implementazione di Adobe Experience Manager (AEM) in genere è costituita da più ambienti, utilizzati per scopi diversi a diversi livelli:
 
 * [Sviluppo](#development)
 * [Controllo qualità](#quality-assurance)
@@ -62,7 +62,7 @@ A seconda delle dimensioni del sistema, nell’ambiente di sviluppo possono esse
 
 ### Controllo qualità {#quality-assurance}
 
-Questo ambiente viene utilizzato dal team di controllo qualità per [test](/help/sites-developing/test-plan.md) il tuo nuovo sistema; design e funzione. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
+Questo ambiente viene utilizzato dal team di controllo qualità per [test](/help/sites-developing/test-plan.md) il nuovo sistema, sia in termini di progettazione che di funzionalità. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
 
 ### Staging {#staging}
 
@@ -140,6 +140,6 @@ I contenuti di produzione devono essere spostati dall’ambiente di produzione a
 I contenuti possono essere trasferiti:
 
 * tra i diversi ambienti esportando e importando pacchetti;
-* Tra istanze diverse - tramite replica diretta ([Replica AEM](/help/sites-deploying/replication.md)) il contenuto (tramite una connessione HTTP o HTTPS).
+* Tra istanze diverse tramite replica diretta ([Replica AEM](/help/sites-deploying/replication.md)) il contenuto (utilizzando una connessione HTTP, o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

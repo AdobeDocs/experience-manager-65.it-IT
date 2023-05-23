@@ -1,7 +1,7 @@
 ---
-title: Uso della firma digitale nei moduli di HTML5
+title: Utilizzo della firma scarabocchio nei moduli di HTML5
 seo-title: Using Scribble Signature in HTML5 forms
-description: I moduli di HTML5 vengono sempre più utilizzati sui dispositivi touch e un requisito comune consiste nel supportare le firme. La firma di documenti su dispositivi mobili sta diventando un modo accettato di firmare moduli su dispositivi mobili.
+description: I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. La firma di documenti su dispositivi mobili sta diventando una modalità accettata per firmare moduli su dispositivi mobili.
 seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
 uuid: 163dd55a-971a-4dd4-93a7-a14e80184d9b
 contentOwner: robhagat
@@ -19,33 +19,33 @@ ht-degree: 0%
 
 ---
 
-# Uso della firma digitale nei moduli di HTML5{#using-scribble-signature-in-html-forms}
+# Utilizzo della firma scarabocchio nei moduli di HTML5{#using-scribble-signature-in-html-forms}
 
-I moduli HTML5 vengono sempre più utilizzati sui dispositivi touch e un requisito comune è il supporto delle firme. La scrittura (con un dito o uno stilo) sta diventando un modo accettato di firmare i moduli su dispositivi mobili. I moduli di HTML5 e Forms Designer consentono ora di utilizzare un campo firma script sul modulo. Quando viene eseguito il rendering del modulo nel browser, è possibile accedere a tali campi utilizzando uno stilo, un mouse o un tocco.
+I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. Scribing (scrittura con uno stilo o un dito) sta diventando un modo accettato di firmare moduli su dispositivi mobili. HTML5 Forms e Forms Designer ora abilitano l’opzione di avere un campo di firma scarabocchio sul modulo. Quando si esegue il rendering del modulo nel browser, è possibile firmare questi campi utilizzando uno stilo, un mouse o un tocco.
 
-## Progettazione di un modulo con il campo Firma digitale {#how-to-design-a-form-using-scribble-signature-field}
+## Progettare un modulo utilizzando il campo Firma a mano {#how-to-design-a-form-using-scribble-signature-field}
 
 1. Aprire un modulo in Forms Designer.
-1. Trascinare il campo Firma digitale sulla pagina.
+1. Trascina e rilascia il campo A mano libera nella pagina.
 
    ![designer_scribble](assets/designer_scribble.png)
 
    >[!NOTE]
    >
-   >I Dimension del campo selezionato in Forms Designer vengono visualizzati durante il rendering del campo. Tuttavia, le dimensioni della casella della firma di cui è stato eseguito il rendering vengono calcolate in base alle proporzioni del campo e non in base alla dimensione specificata in Forms Designer.
+   >I Dimension del campo selezionato in Forms Designer si riflettono durante il rendering del campo. Tuttavia, la dimensione della casella della firma di cui è stato eseguito il rendering viene calcolata in base alle proporzioni del campo e non alla dimensione specificata in Forms Designer.
 
-1. Configurare il campo Firma digitale.
+1. Configura il campo Disegno di firma.
 
-   Il campo Firma frammento, per impostazione predefinita, contrassegna le informazioni sulla geolocalizzazione come obbligatorie durante il processo di firma su iPad (ed è facoltativo per altri dispositivi). Questo comportamento predefinito può essere ignorato modificando il valore del `geoLocMandatoryOnIpad` proprietà. Questa proprietà viene esposta come extra nel campo Firma documento. I passaggi per modificarlo sono i seguenti:
+   Per impostazione predefinita, il campo Scribble firma contrassegna le informazioni di geolocalizzazione come obbligatorie durante il processo di firma su iPad (ed è facoltativo per altri dispositivi). Questo comportamento predefinito può essere ignorato modificando il valore della proprietà `geoLocMandatoryOnIpad` proprietà. Questa proprietà viene esposta come extra nel campo a mano libera della firma. I passaggi per modificarlo sono i seguenti:
 
-   1. Nel modulo, selezionare il campo Firma.
-   1. Seleziona la **Sorgente XML** scheda .
+   1. Nel modulo selezionare il campo Disegno firma.
+   1. Seleziona la **Origine XML** scheda.
 
       >[!NOTE]
       >
-      >Per aprire la scheda Sorgente XML, fare clic su **Visualizza** > **Sorgente XML**.
+      >Per aprire la scheda Origine XML, fare clic su **Visualizza** > **Origine XML**.
 
-   1. Individua il `<ui>` in `<field>` assegna tag al codice sorgente e modificalo nel modo seguente:
+   1. Individua il `<ui>` tag in `<field>` assegna tag e modifica al codice sorgente in modo che abbia l’aspetto seguente:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -53,54 +53,54 @@ I moduli HTML5 vengono sempre più utilizzati sui dispositivi touch e un requisi
       </extras>
       ```
 
-   1. Seleziona la **Visualizzazione Struttura** scheda . Nella casella di conferma, fai clic su **Sì**.
+   1. Seleziona la **Visualizzazione Progettazione** scheda. Nella casella di conferma fare clic su **Sì**.
    1. Salvare il modulo.
 
-1. Eseguire il rendering del modulo su un browser desktop/dispositivo supportato.
+1. Eseguire il rendering del modulo su un browser dispositivo/desktop supportato.
 
-## Interfaccia con le firme scorrevoli {#interfacing-with-the-scribble-signatures}
+## Interfaccia con le firme scarabocchio {#interfacing-with-the-scribble-signatures}
 
 ### Firma {#signing}
 
-Una volta aggiunto al modulo un campo Firma digitale ed eseguito il rendering, si apre una finestra di dialogo facendo clic o toccando il campo. L&#39;utente può scarabocchiare una firma nell&#39;area di disegno designata da un rettangolo punteggiato utilizzando un mouse, un dito o uno stilo.
+Dopo aver aggiunto al modulo e aver eseguito il rendering di un campo a mano libera di firma, tocca o fai clic sul campo per aprire una finestra di dialogo. L&#39;utente può scrivere una firma nell&#39;area di disegno designata da un rettangolo punteggiato utilizzando un mouse, un dito o uno stilo.
 
 ![geolocalizzazione](assets/geolocation.png)
 
-**A.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni sulla geolocalizzazione
+**R.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni di geolocalizzazione
 
 ### Geo-tagging {#geo-tagging}
 
-Facendo clic sull’icona di geolocalizzazione durante la creazione dello scarabocchio, le informazioni relative alla posizione geografica e all’ora vengono incorporate nel campo.
+Facendo clic sull’icona di geolocalizzazione durante la creazione dello scarabocchio, le informazioni relative a posizione geografica e ora vengono incorporate nel campo.
 
 >[!NOTE]
-In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni sulla geolocalizzazione.
+In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni di geolocalizzazione.
 
 In iPad, l’icona di geolocalizzazione non viene visualizzata per impostazione predefinita e le informazioni di geolocalizzazione vengono incorporate automaticamente quando fai clic su **OK**.
 
-Per gli iPad, questa impostazione può essere modificata modificando il valore di `geoLocManadatoryOnIpad` parametro a `0`, nei parametri init del campo .
+Per gli iPad, questa impostazione può essere modificata modificando il valore di `geoLocManadatoryOnIpad` parametro a `0`, nei parametri iniziali del campo.
 
-* Quando le informazioni sulla geolocalizzazione sono obbligatorie, all&#39;utente viene presentata un&#39;area di disegno ridotta. Il testo di geolocalizzazione viene aggiunto quando l’utente fa clic su **OK** sull&#39;area rimanente.
-* In altri casi, all&#39;utente viene presentata un&#39;area interamente disegnabile. Se l&#39;utente sceglie di incorporare le informazioni sulla geolocalizzazione, quest&#39;area viene ridimensionata per contenere il testo di geolocalizzazione.
+* Quando le informazioni di geolocalizzazione sono obbligatorie, l’utente dispone di un’area di prelievo ridotta. Il testo di geolocalizzazione viene aggiunto quando l’utente fa clic **OK** sull&#39;area rimanente.
+* In altri casi, all’utilizzatore viene presentata un’area completamente estraibile. Se l’utente sceglie di incorporare le informazioni di geolocalizzazione, quest’area viene ridimensionata per contenere il testo di geolocalizzazione.
 
 ### Cancellazione di una firma {#clearing-a-signature}
 
-Quando utilizzi questa funzione, un utente può fare clic sul pulsante **Gomma** per cancellare il campo e ricominciare da capo. Se sono state aggiunte informazioni sulla geolocalizzazione, anche queste vengono eliminate.
+Quando si utilizza questa funzione, un utente può fare clic sul pulsante **Gomma** per cancellare il campo e ricominciare da capo. Se sono state aggiunte informazioni di geolocalizzazione, anche queste vengono cancellate.
 
 ### Salvataggio di una firma {#saving-a-signature}
 
-Fai clic su **OK** salva lo scarabocchio come immagine nel campo . L&#39;immagine e i valori possono essere inviati al server per un&#39;ulteriore elaborazione. Una volta fatto clic su **OK**, il campo scarabocchio è bloccato. Impossibile modificare nuovamente la firma utilizzando il widget scarabocchio.
+Facendo clic su **OK** salva lo scarabocchio come immagine nel campo. L&#39;immagine e i valori possono essere inviati al server per ulteriore elaborazione. Dopo aver fatto clic su un utente **OK**, il campo scarabocchio è bloccato. Impossibile modificare nuovamente la firma utilizzando il widget a mano libera.
 
-Toccando o facendo clic sul campo Dispersione si apre la finestra di dialogo in modalità di sola lettura.
+Toccando o facendo clic sul campo Scarabocchio si apre la finestra di dialogo in modalità di sola lettura.
 
 ![3](assets/3.png)
 
-### Selezione della dimensione della penna {#selecting-pen-size}
+### Selezione delle dimensioni della penna {#selecting-pen-size}
 
-Fai clic sul pulsante **Pennelli** per visualizzare un elenco delle dimensioni disponibili della penna. Tocca o fai clic su una dimensione della penna per usare la penna corrispondente.
+Fai clic su **Pennelli** per visualizzare un elenco delle dimensioni di penna disponibili. Tocca o fai clic su una dimensione della penna per usare la penna corrispondente.
 
 ### Elimina firme dal modulo {#delete-signatures-from-the-form}
 
 Per eliminare le firme dal modulo:
 
-* (Dispositivi mobili) Premere a lungo il campo firma e, nella finestra di dialogo di conferma, toccare **Sì**.
-* (Desktop) Passa il puntatore del mouse sul campo firma e fai clic sul pulsante **Annulla** e nella finestra di dialogo di conferma fai clic su **Sì**.
+* (Dispositivi mobili) Premi a lungo il campo della firma e, nella finestra di dialogo di conferma, tocca **Sì**.
+* (Desktop) Passa il puntatore del mouse sul campo firma, fai clic sul pulsante **Annulla** e nella finestra di dialogo di conferma, fai clic su **Sì**.

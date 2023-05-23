@@ -1,5 +1,5 @@
 ---
-title: Web per dispositivi mobili
+title: Web mobile
 seo-title: Mobile Web
 description: AEM fornisce diversi strumenti che consentono di sviluppare siti per dispositivi mobili e di integrare i contenuti nelle applicazioni mobili
 seo-description: AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications
@@ -14,15 +14,15 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Web per dispositivi mobili{#mobile-web}
+# Web mobile{#mobile-web}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 AEM fornisce diversi strumenti che consentono di sviluppare siti per dispositivi mobili e di integrare i contenuti nelle applicazioni mobili.
 
@@ -30,13 +30,13 @@ Questa pagina deve essere letta insieme alla [Pagina mobile per autori](/help/si
 
 ## Sviluppo di siti web per dispositivi mobili {#developing-web-sites-for-mobile}
 
-Sviluppa modelli di pagina e componenti ottimizzati per la visualizzazione tramite dispositivi mobili. Sviluppa pagine che utilizzano un layout reattivo che si adatta a più dimensioni dello schermo o sviluppa pagine ottimizzate per una dimensione dello schermo specifica. Utilizza gli emulatori del dispositivo che AEM forniscono o creano emulatori personalizzati per la creazione e l’anteprima di WSYWIG:
+Sviluppa modelli di pagina e componenti ottimizzati per la visualizzazione tramite dispositivi mobili. Sviluppa pagine che utilizzano un layout reattivo adattato a più dimensioni di schermo o pagine ottimizzate per una dimensione di schermo specifica. Utilizza gli emulatori di dispositivi forniti da AEM o crea i tuoi emulatori per l’authoring e l’anteprima WSYWIG:
 
-* [Creazione di filtri per i gruppi di dispositivi](/help/sites-developing/groupfilters.md)
-* [Progettazione reattiva per le pagine web](/help/sites-developing/responsive.md)
+* [Creazione di filtri per gruppi di dispositivi](/help/sites-developing/groupfilters.md)
+* [Progettazione reattiva per pagine web](/help/sites-developing/responsive.md)
 * [Creazione di siti per dispositivi mobili](/help/sites-developing/mobile.md)
 * [Emulatori](/help/sites-developing/emulators.md)
 
 ## Sviluppo di app mobili {#developing-mobile-apps}
 
-Sviluppa applicazioni mobili che utilizzano AEM pagine come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente le app utilizzando AEM pagine. La sincronizzazione dei contenuti consente di creare archivi con versioni di pagine da abbinare alle app. Per ulteriori informazioni sulla sincronizzazione dei contenuti, fai clic su [qui](/help/mobile/phonegap-contentsync.md).
+Sviluppa applicazioni mobili che utilizzano le pagine AEM come interfaccia dell’applicazione. AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando le pagine AEM. Sincronizzazione contenuti consente di creare archivi con versioni delle pagine da includere nel bundle con le app. Per ulteriori informazioni sulla sincronizzazione dei contenuti, fai clic su [qui](/help/mobile/phonegap-contentsync.md).

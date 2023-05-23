@@ -25,14 +25,14 @@ Puoi estendere le istanze esistenti per creare configurazioni personalizzate.
 
 ## Concetti {#concepts}
 
-I principi utilizzati nello sviluppo delle configurazioni sono stati basati sui seguenti concetti:
+I principi utilizzati per lo sviluppo delle configurazioni si basano sui seguenti concetti:
 
 * I servizi/adattatori vengono utilizzati per recuperare le configurazioni.
-* Le configurazioni (ad esempio proprietà/paragrafi) sono ereditate dalle padre.
-* A cui si fa riferimento dai nodi di analisi per percorso.
+* Le configurazioni (ad esempio proprietà/paragrafi) vengono ereditate dai padri.
+* Riferito dai nodi di analisi per percorso.
 * Facilmente estensibile.
-* Dispone della flessibilità necessaria per gestire configurazioni più complesse, come [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Supporto delle dipendenze (ad esempio [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) i plugin hanno bisogno di un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configurazione).
+* Offre la flessibilità necessaria per gestire configurazioni più complesse, ad esempio [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Supporto per le dipendenze (ad es. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) i plug-in richiedono un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Struttura {#structure}
 
@@ -40,7 +40,7 @@ Il percorso di base delle configurazioni è:
 
 `/etc/cloudservices`.
 
-Per ogni tipo di configurazione verranno forniti un modello e un componente, che consentono di disporre di modelli di configurazione in grado di soddisfare le esigenze più specifiche dopo la personalizzazione.
+Per ogni tipo di configurazione verranno forniti un modello e un componente. In questo modo è possibile disporre di modelli di configurazione in grado di soddisfare la maggior parte delle esigenze dopo la personalizzazione.
 
 Per fornire una configurazione per un nuovo servizio è necessario:
 
@@ -48,16 +48,16 @@ Per fornire una configurazione per un nuovo servizio è necessario:
 
    `/etc/cloudservices`
 
-* in questo caso:
+* sotto questo:
 
    * un modello di configurazione
    * un componente di configurazione
 
-Il modello e il componente devono ereditare il `sling:resourceSuperType` dal modello di base:
+Il modello e il componente devono ereditare il `sling:resourceSuperType` dal modello base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-o componente di base
+o componente base rispettivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -71,7 +71,7 @@ Il modello estenderà il modello di base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-e definire un `resourceType` che punta al componente personalizzato.
+e definisci un `resourceType` che punta al componente personalizzato.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -94,7 +94,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### Componenti {#components}
 
-Il componente deve estendere il componente di base:
+Il componente deve estendere il componente base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -104,7 +104,7 @@ Il componente deve estendere il componente di base:
 /libs/cq/analytics/components/generictrackerpage
 ```
 
-Dopo aver impostato il modello e il componente, puoi aggiungere la configurazione aggiungendo le sottopagine in:
+Dopo aver configurato il modello e il componente, puoi aggiungere la configurazione aggiungendo pagine secondarie in:
 
 `/etc/cloudservices/<service-name>`
 
@@ -121,9 +121,9 @@ Il modello di contenuto viene memorizzato come `cq:Page` in:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-Le configurazioni sono memorizzate sotto il sottonodo `jcr:content`.
+Le configurazioni vengono memorizzate nel sottonodo `jcr:content`.
 
-* Le proprietà fisse, definite in una finestra di dialogo, devono essere memorizzate in `jcr:node` direttamente.
+* Le proprietà fisse, definite in una finestra di dialogo, devono essere memorizzate nel `jcr:node` direttamente.
 * Elementi dinamici (utilizzando `parsys` o `iparsys`) utilizza un sottonodo per memorizzare i dati del componente.
 
 ```xml
@@ -137,26 +137,26 @@ propertyname
 
 ### API {#api}
 
-Per la documentazione di riferimento sull&#39;API consulta [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Per la documentazione di riferimento sull’API consulta [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integrazione AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella sezione **Cloud Services** della scheda **Proprietà pagina** finestra di dialogo (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella **Cloud Services** scheda di **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
-La scheda fornisce inoltre:
+La scheda fornisce anche:
 
 * un collegamento alla posizione in cui è possibile abilitare il servizio
 * scegli una configurazione (sottonodo del servizio) da un campo percorso
 
-#### Crittografia della password {#password-encryption}
+#### Crittografia password {#password-encryption}
 
 Quando si memorizzano le credenziali utente per il servizio, tutte le password devono essere crittografate.
 
-A tal fine, è possibile aggiungere un campo modulo nascosto. Questo campo deve contenere l’annotazione `@Encrypted` nel nome della proprietà; vale a dire per `password` il nome viene scritto come segue:
+Per ottenere questo risultato, aggiungi un campo modulo nascosto. Questo campo deve contenere l’annotazione `@Encrypted` nel nome della proprietà, ad esempio per `password` il nome sarà scritto come:
 
 `password@Encrypted`
 
-La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSupport` dal `EncryptionPostProcessor`.
+La proprietà verrà quindi crittografata automaticamente (utilizzando `CryptoSupport` servizio) da parte di `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSup
 
 >[!NOTE]
 >
->Per impostazione predefinita, `EcryptionPostProcessor` crittografa solo `POST` richieste presentate `/etc/cloudservices`.
+>Per impostazione predefinita, il `EcryptionPostProcessor` crittografa solo `POST` richieste effettuate a `/etc/cloudservices`.
 
 #### Proprietà aggiuntive per i nodi jcr:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -176,7 +176,7 @@ La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSup
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento per un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> è incluso (normalmente prima del <code>body</code> tag).<br /> Nel caso di Analytics e Target, lo utilizziamo per includere funzionalità aggiuntive, come le chiamate JavaScript per tenere traccia del comportamento dei visitatori.</td>
+   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del <code>body</code> ).<br /> Nel caso di Analytics e Target, lo usiamo per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>
@@ -188,7 +188,7 @@ La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSup
   </tr>
   <tr>
    <td>classificazione</td>
-   <td>Classificazione del servizio da utilizzare negli elenchi.</td>
+   <td>Classificazione dei servizi da utilizzare nelle inserzioni.</td>
   </tr>
   <tr>
    <td>selectableChildren</td>
@@ -196,15 +196,15 @@ La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSup
   </tr>
   <tr>
    <td>serviceUrl</td>
-   <td>URL del sito web del servizio.</td>
+   <td>URL al sito Web del servizio.</td>
   </tr>
   <tr>
    <td>serviceUrlLabel</td>
-   <td>Etichetta per l’URL del servizio.</td>
+   <td>Etichetta per l'URL del servizio.</td>
   </tr>
   <tr>
-   <td>thumbnailPath</td>
-   <td>Percorso della miniatura del servizio.</td>
+   <td>miniaturaPercorso</td>
+   <td>Percorso della miniatura per il servizio.</td>
   </tr>
   <tr>
    <td>visibile</td>
@@ -213,11 +213,11 @@ La proprietà viene quindi crittografata automaticamente (utilizzando `CryptoSup
  </tbody>
 </table>
 
-### Casi d&#39;uso {#use-cases}
+### Casi d’uso {#use-cases}
 
 Questi servizi sono forniti per impostazione predefinita:
 
-* [Frammenti di tracciamento](/help/sites-administering/external-providers.md) (Google, WebTrends, ecc.)
+* [Snippet tracker](/help/sites-administering/external-providers.md) (Google, WebTrends, ecc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 

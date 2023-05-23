@@ -19,41 +19,41 @@ ht-degree: 2%
 
 # Utilizzo delle valutazioni {#using-ratings}
 
-La `Rating` viene utilizzato separatamente o insieme ad altre funzioni di Communities. Questo componente permette ai membri della community che hanno effettuato l’accesso di esprimere le proprie opinioni in base al contenuto del punteggio.
+Il `Rating` Il componente viene utilizzato da solo o insieme ad altre funzioni di Communities. Questo componente consente ai membri della community con accesso esterno di esprimere le proprie opinioni attraverso la valutazione del contenuto.
 
 ## Aggiunta di una valutazione a una pagina {#adding-a-rating-to-a-page}
 
-Per aggiungere una `Rating` in una pagina in modalità di authoring, individua il componente `Communities / Rating` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione per la valutazione dei membri.
+Per aggiungere una `Rating` a una pagina in modalità di authoring, individua il componente `Communities / Rating` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla caratteristica da assegnare ai membri.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando il [librerie lato client richieste](rating-basics.md#essentials-for-client-side) sono inclusi, è così che `Rating` apparirà .
+Quando [librerie lato client richieste](rating-basics.md#essentials-for-client-side) sono inclusi, è così che `Rating` verrà visualizzato.
 
 ![valutazione](assets/rating.png)
 
 ## Configurazione della valutazione {#configuring-rating}
 
-Seleziona il `Rating` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Rating` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
-Sotto la **[!UICONTROL Testi ed etichette]** Specifica l’identificatore interno per la valutazione.
+Sotto **[!UICONTROL Testi ed etichette]** specifica l’identificatore interno per la valutazione.
 
-![nome](assets/tallyname.png)
+![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nome dell’alleanza]**
-(*Obbligatorio*) Un nome semplice per `Rating` che identifica in modo univoco questa istanza. Deve essere un nome di nodo valido per il repository.
+**[!UICONTROL Nome conteggio]**
+(*Obbligatorio* a) Un nome semplice per il `Rating` che identifica in modo univoco questa istanza. Deve essere un nome di nodo valido per l’archivio.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatore del sito {#site-visitor-experience}
 
 ### Membri {#members}
 
-È consentita una sola classificazione per membro. Il membro può modificare il proprio rating in qualsiasi momento.
+È consentita una sola valutazione per membro. L&#39;iscritto può cambiare la propria valutazione in qualsiasi momento.
 
 ### Anonimo {#anonymous}
 
-Pubblicazione anonima di una classificazione non supportata. I visitatori del sito devono registrarsi (diventare membro) e accedere per partecipare.
+La pubblicazione anonima di una valutazione non è supportata. I visitatori del sito devono registrarsi (diventare membri) e accedere per partecipare.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base sulla valutazione](rating-basics.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base sulla valutazione](rating-basics.md) pagina per sviluppatori.

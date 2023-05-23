@@ -1,6 +1,6 @@
 ---
-title: percorso Adobe Experience Manager Headless Content Architect
-description: Introduzione alle funzioni avanzate, flessibili e headless di Adobe Experience Manager e modalità di modellazione dei contenuti per il progetto.
+title: Percorso Architect di contenuti Adobe Experience Manager headless
+description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 88%
 
 # Modellazione dei contenuti per headless con AEM - Introduzione {#architect-headless-introduction}
 
-In questa parte del [percorso di architetti di contenuti headless AEM](overview.md), puoi imparare i concetti e la terminologia di base necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
+In questa parte del [Percorso Architect di contenuti AEM headless](overview.md), puoi imparare i concetti e la terminologia (di base) necessari per comprendere la modellazione dei contenuti per la distribuzione di contenuti headless con Adobe Experience Manager (AEM).
 
 Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei contenuti, come è supportata da AEM e come vengono modellati i contenuti per questo tipo di distribuzione. Dopo la lettura dovresti:
 
@@ -68,7 +68,7 @@ Questo è più di un dettaglio di sviluppo, ma potrebbe interessarti anche solo 
 
 Dopo aver creato i modelli di frammento di contenuto e dopo che gli autori li hanno utilizzati per generare il contenuto, le applicazioni headless dovranno accedere a tale contenuto.
 
-Adobe Experience Manager (AEM) può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API di GraphQL AEM per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici. Questo processo di selezione si basa sui *tuoi* Modelli per frammenti di contenuto.
+Adobe Experience Manager (AEM) può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL dell’AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici. Questo processo di selezione si basa sui *tuoi* Modelli per frammenti di contenuto.
 
 Questo significa che il progetto può realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 

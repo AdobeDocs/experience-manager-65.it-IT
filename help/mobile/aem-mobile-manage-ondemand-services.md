@@ -1,7 +1,7 @@
 ---
-title: Anteprima con Preflight
+title: Anteprima con verifica preliminare
 seo-title: Previewing with Preflight
-description: Questa pagina spiega l’anteprima con l’app Preflight.
+description: Questa pagina spiega come visualizzare l’anteprima con l’app Verifica preliminare.
 seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
 uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
 contentOwner: User
@@ -17,42 +17,42 @@ ht-degree: 1%
 
 ---
 
-# Anteprima con Preflight {#previewing-with-preflight}
+# Anteprima con verifica preliminare {#previewing-with-preflight}
 
-Questa pagina spiega l’anteprima con l’app Preflight.
-
->[!NOTE]
->
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
-
-Le azioni seguenti vengono eseguite sull&#39;intera applicazione.
-
-Con l’app Mobile On Demand Preflight puoi visualizzare tutti i progetti a cui hai accesso. Dopo aver selezionato un progetto, puoi visualizzare in anteprima il contenuto dell’app, comprese le pagine di ricerca e gli articoli, per ottenere un’idea dell’aspetto e delle prestazioni dell’app su vari dispositivi.
+Questa pagina spiega come visualizzare l’anteprima con l’app Verifica preliminare.
 
 >[!NOTE]
 >
->L’app Preflight è simile al visualizzatore PhoneGap Enterprise in natura.
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-## Anteprima con Preflight {#previewing-with-preflight-1}
+Le azioni seguenti vengono eseguite sull&#39;applicazione nel suo insieme.
 
-1. Da Mobile, scegli l’app Mobile On-Demand dal catalogo.
-1. Fai clic sui puntini di sospensione (...) dal menu **Gestire gli articoli** (o Banner/Raccolte).
-1. Seleziona **Preflight** dalla barra delle azioni.
-1. Fai clic su **Attiva verifica preliminare** dalla finestra di dialogo.
-1. L’app sarà ora pronta per l’anteprima sull’app Mobile On-Demand Preflight.
+Con l’app Verifica preliminare Mobile On Demand puoi visualizzare tutti i progetti a cui hai accesso. Dopo aver selezionato un progetto, puoi visualizzare in anteprima il contenuto dell’app, incluse le pagine e gli articoli, per avere un’idea dell’aspetto e delle prestazioni dell’app su vari dispositivi.
+
+>[!NOTE]
+>
+>L&#39;app Verifica preliminare è simile per natura al visualizzatore PhoneGap Enterprise.
+
+## Anteprima con verifica preliminare {#previewing-with-preflight-1}
+
+1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
+1. Fai clic sui puntini di sospensione (...) dalla scheda **Gestisci articoli** (o Banner/Raccolte).
+1. Seleziona **Verifica preliminare** dalla barra delle azioni.
+1. Clic **Attiva verifica preliminare** dalla finestra di dialogo.
+1. Ora l’app sarà pronta per l’anteprima nell’app Verifica preliminare Mobile On-Demand.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->L’app AEM Preflight viene utilizzata per visualizzare in anteprima il contenuto e le pagine di esplorazione. Per informazioni approfondite su Preflight App, fai clic su [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell’app, fai clic su [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 
 ### Come procedere {#getting-ahead}
 
 Per ulteriori informazioni sull’authoring dei contenuti, consulta le risorse seguenti per creare e gestire i contenuti in un’applicazione AEM Mobile:
 
-* [Dashboard dell&#39;applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
-* [Gestione dei contenuti](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [Dashboard dell’applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [Gestione del contenuto](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 ## Risorse aggiuntive {#additional-resources}
 

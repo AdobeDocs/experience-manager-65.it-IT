@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione di AEM Content and Commerce 2019
-description: Note sulla versione di AEM Content and Commerce 2019
+title: Note sulla versione 2019 di AEM Content and Commerce
+description: Note sulla versione 2019 di AEM Content and Commerce
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
@@ -9,133 +9,133 @@ ht-degree: 10%
 
 ---
 
-# Panoramica sulla versione di Commerce Integration Framework GitHub
+# Panoramica sulla versione GitHub di Commerce Integration Framework
 
-## Data di rilascio: Novembre 2019
+## Data di rilascio: novembre 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.7.1 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.6.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.6.2 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetipo | 0.6.2 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-november}
 
-* Gli autori possono visualizzare in anteprima i dettagli del prodotto e le pagine dell’elenco dei prodotti con prodotti/categorie con una nuova opzione &quot;Visualizza con prodotto/categoria&quot; nell’editor Sites.
+* Con la nuova opzione &quot;Visualizza con prodotto/categoria&quot; nell’editor Sites, gli autori possono visualizzare in anteprima le pagine dei dettagli e degli elenchi dei prodotti insieme ai prodotti/categorie.
 
-* Gli autori possono assegnare tag alle risorse per SKU del prodotto e cercare le risorse specifiche per prodotto per SKU.
+* Gli autori possono assegnare tag alle risorse per SKU di prodotto e cercare risorse specifiche per prodotto per SKU.
 
-* Aggiungi/rimuovi il supporto coupon aggiunto nel carrello.
+* Aggiunta/rimozione del supporto per i coupon nel carrello.
 
-* Braintree il supporto per i pagamenti aggiunto AEM Venia store front.
+* Braintree il supporto per il pagamento aggiunto nella vetrina Venia AEM.
 
-### Miglioramenti {#what-is-improved-november}
+### Novità {#what-is-improved-november}
 
-* Selezione di categorie/prodotti migliorata per rispettare la visualizzazione specifica dell&#39;Adobe Commerce Store in una configurazione multi-store.
+* I selettori di categorie/prodotti sono stati migliorati per rispettare la visualizzazione specifica dello store di Adobe Commerce in una configurazione multi-store.
 
-* Componenti basati su React disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o sviluppare nuovi componenti basati su React.
+* Componenti basati su React disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o lo sviluppo di nuovi componenti basati su React.
 
 * Personalizzazione delle query GraphQL semplificata. Questo consente agli sviluppatori di personalizzare i componenti CIF di base con meno codice.
 
-## Data di rilascio: Ottobre 2019
+## Data di rilascio: ottobre 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.6.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetipo | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-october}
 
-* Modelli completamente modificabili per la pagina dei dettagli del prodotto e la pagina dell’elenco dei prodotti. Gli autori possono ora creare nuovi modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti di dettaglio dei prodotti su questi modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, offrendo loro la libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
+* Modelli completamente personalizzabili per la pagina dei dettagli e la pagina dell’elenco dei prodotti. Gli autori possono ora creare nuovi modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti dei dettagli dei prodotti su tali modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, dando loro una libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
 
 * Tutti i componenti core CIF compatibili con l’autore sono stati migliorati per supportare [Sistema di stili AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Sono stati forniti stili di esempio per il componente elenco prodotti.
 
 * Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Crea account.
 
-### Miglioramenti {#what-is-improved-october}
+### Novità {#what-is-improved-october}
 
-* I dettagli del prodotto e i componenti dell’elenco dei prodotti sono stati migliorati per mostrare i dati fittizi, in modo da fornire agli autori un’anteprima del layout quando questi componenti vengono inseriti in un modello/pagina.
+* I componenti Dettagli prodotto e Elenco prodotti sono stati migliorati per mostrare dati fittizi per fornire agli autori un’anteprima del layout quando tali componenti vengono inseriti in un modello/pagina.
 
-* I componenti Minicart e Checkout ora utilizzano gli hook di React per una migliore estensibilità.
+* Ora i componenti Minicart e Checkout utilizzano gli hook React per migliorare l’estensibilità.
 
-## Data di rilascio: Settembre 2019
+## Data di rilascio: settembre 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.5.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetipo | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-september}
 
-* Funzione multi-modello per consentire agli autori di arricchire una pagina di dettaglio del prodotto o una pagina dell’elenco di prodotti specifici. Gli autori possono creare facilmente una pagina di dettaglio del prodotto personalizzata o una pagina di elenco prodotti e utilizzare il selettore prodotto o categoria per assegnare la pagina personalizzata a uno o più prodotti o categorie specifici.
+* Funzione con più modelli per consentire agli autori di arricchire pagine specifiche dei dettagli o dell’elenco dei prodotti. Gli autori possono creare facilmente una pagina di dettagli del prodotto o una pagina di elenco dei prodotti personalizzata e utilizzare il selettore di prodotti o categorie per assegnare la pagina personalizzata a uno o più prodotti o categorie specifici.
 
-* Il binding a più cataloghi consente agli autori di eseguire il binding di più cataloghi nella console AEM prodotto. Gli autori possono inoltre modificare e visualizzare le proprietà di binding del catalogo dopo la creazione del binding.
+* Associazione di più cataloghi per consentire agli autori di associare più cataloghi nella console dei prodotti AEM. Gli autori possono inoltre modificare e visualizzare le proprietà di associazione del catalogo dopo aver creato l&#39;associazione.
 
-* Acquisto sul lato client basato su React e Mini carrello utilizzando GraphQL per supportare un percorso di acquisto di base completo.
+* Checkout lato client e Mini Cart basati su React che utilizzano GraphQL per supportare un percorso acquisti di base completo.
 
-* Il componente Pagamento include i moduli indirizzo, la selezione dei pagamenti e la selezione dei metodi di spedizione.
+* Il componente Pagamento include i moduli di indirizzo, la selezione del pagamento e la selezione del metodo di spedizione.
 
-### Miglioramenti {#what-is-improved-september}
+### Novità {#what-is-improved-september}
 
-* I componenti Product Teaser e Product Carousel supportano le varianti di prodotto.
+* I componenti Product Teaser e Product Carousel supportano varianti di prodotto.
 
-## Data di rilascio: Agosto 2019
+## Data di rilascio: agosto 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.4.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetipo | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-august}
 
-* L’integrazione del connettore CIF in CIF Archetype è opzionale per offrire agli sviluppatori una maggiore flessibilità.
+* L’incorporamento del connettore CIF in CIF Archetype è stato reso facoltativo per fornire agli sviluppatori maggiore flessibilità.
 
-* I componenti CIF disaccoppiati dallo stile CSS specifico &quot;Venia&quot; per consentire agli sviluppatori di applicare lo stile CSS desiderato.
+* I componenti CIF si sono separati dallo stile CSS specifico di &quot;Venia&quot; per consentire agli sviluppatori di applicare lo stile CSS desiderato.
 
-* Funzionalità per più store/siti per consentire l’utilizzo di componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Adobe Commerce.
+* Funzione multi-store/sito per consentire l’utilizzo di componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Adobe Commerce.
 
-* La memorizzazione in cache GraphQL è abilitata per alcune query GraphQL tramite HTTP per ridurre i tempi di risposta.
+* Il caching di GraphQL è abilitato per alcune query GraphQL tramite HTTP GET per ridurre i tempi di risposta.
 
-* Vista descrizione prodotto abilitata nella console Prodotti AEM.
+* Visualizzazione descrizione prodotto abilitata nella console Prodotti AEM.
 
-* Commerce Teaser estende il componente WCM Teaser per consentire agli autori di aggiungere campi CTA anche a una pagina di dettagli prodotto o a una pagina di elenco prodotti.
+* Commerce Teaser estende il componente WCM Teaser per consentire agli autori di aggiungere campi CTA anche a una pagina di dettagli del prodotto o a una pagina di elenco dei prodotti.
 
-* Pulsante per consentire agli autori di inserire in una pagina AEM un collegamento a una pagina AEM, a una pagina di dettagli del prodotto, a una pagina dell’elenco dei prodotti o a un collegamento esterno.
+* Pulsante che consente agli autori di inserire in una pagina AEM e di collegarsi a una pagina AEM, a una pagina dei dettagli del prodotto, a una pagina dell’elenco dei prodotti o a un collegamento esterno.
 
-### Miglioramenti {#what-is-improved-august}
+### Novità {#what-is-improved-august}
 
-* La configurazione dell’archivio Adobe Commerce è stata spostata da OSGi a AEM console del prodotto per rendere la configurazione dell’integrazione più semplice per gli autori.
+* La configurazione dello store di Adobe Commerce è stata spostata da OSGi alla console di prodotti AEM per rendere la configurazione dell’integrazione più semplice da creare.
 
-## Data di rilascio: Luglio 2019
+## Data di rilascio: luglio 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.3.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Archetipo | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-july}
 
-* Primo Archetipo CIF per fornire agli sviluppatori diverse opzioni di distribuzione: 1.Distribuzione AEM vetrina Venia 2. Distribuire l’impalcatura per un nuovo progetto 3. Utilizzare elementi CIF in un progetto esistente
+* Primo Archetipo CIF a fornire agli sviluppatori diverse opzioni di distribuzione: 1. Distribuire la vetrina Venia AEM 2. Distribuire lo scaffolding per un nuovo progetto 3. Utilizzare elementi CIF in un progetto esistente
 
-* Navigazione tra cataloghi a più livelli per supportare la navigazione tra categorie e sottocategorie.
+* Navigazione nel catalogo a più livelli per supportare la navigazione tra categorie e sottocategorie.
 
-* Paginazione su pagine di categorie per un UX migliore.
+* Paginazione sulle pagine delle categorie per una migliore esperienza utente.
 
-* Rendering lato client dell’attributo del prezzo nei componenti Product Detail e Product List per supportare il rendering degli attributi dinamici.
+* Rendering lato client dell’attributo price nei componenti Product Detail ed Product List per supportare il rendering degli attributi dinamici.
 
-* Carosello di prodotti lato server per visualizzare l’elenco dei prodotti in primo piano in stile carosello.
+* Carosello prodotti lato server per visualizzare l’elenco dei prodotti presentati in uno stile carosello.
 
-* Elenco categorie in primo piano lato server per visualizzare l&#39;elenco delle categorie su una pagina AEM.
+* Elenco di categorie in primo piano lato server per visualizzare l’elenco delle categorie su una pagina AEM.
 
-### Miglioramenti {#what-is-improved-july}
+### Novità {#what-is-improved-july}
 
 * Il supporto per Adobe Commerce 2.3.2 e le correzioni di bug relativi alle proprietà del prodotto vengono visualizzati nella console del prodotto.
 
-## Data di rilascio: Giugno 2019
+## Data di rilascio: giugno 2019
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
@@ -144,14 +144,14 @@ ht-degree: 10%
 
 ### Novità {#what-is-new-june}
 
-* AEM vetrina B2C con stile CSS Venia per dispositivi mobili, pagina di destinazione, navigazione dinamica del catalogo tramite pagine di prodotti e categorie, pagina di ricerca dei prodotti e funzionalità del carrello per avviare e accelerare i progetti di e-commerce.
+* Vetrina B2C AEM con stile CSS Venia mobile-first, pagina di destinazione, navigazione dinamica del catalogo tramite pagine di prodotti e categorie, pagina di ricerca dei prodotti e funzionalità del carrello per avviare e accelerare i progetti di e-commerce.
 
-* Connettore CIF e strumenti di creazione (console prodotto, selettore prodotto e selettore categoria) per consentire agli autori di creare esperienze in AEM con contenuti commerce.
+* Connettore CIF e strumenti di authoring (console prodotti, selettore prodotti e selettore categorie) per consentire agli autori di creare esperienze AEM con contenuti commerciali.
 
 * Prima versione dei componenti core CIF compatibili con Adobe Commerce 2.3.1:
    * Dettagli prodotto
    * Elenco prodotti
    * Product Teaser
    * Navigazione
-   * Ricerca di prodotti
+   * Ricerca prodotti
    * Carrello (REST)

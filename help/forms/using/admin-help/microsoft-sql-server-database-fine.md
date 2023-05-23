@@ -1,7 +1,7 @@
 ---
-title: "Database di Microsoft SQL Server: Ottimizzazione della configurazione"
+title: "Database di Microsoft SQL Server: ottimizzazione della configurazione"
 seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
-description: Scopri come ottimizzare la configurazione del database Microsoft SQL Server.
+description: Scopri come ottimizzare la configurazione del database di Microsoft SQL Server.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
@@ -17,24 +17,24 @@ ht-degree: 0%
 
 ---
 
-# Database Microsoft SQL Server: Ottimizzazione della configurazione {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Database di Microsoft SQL Server: ottimizzazione della configurazione {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-È necessario modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fare clic con il pulsante destro del mouse sul server locale in Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
+È consigliabile modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fare clic con il pulsante destro del mouse sul server locale in Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
 
 ## Impostazioni della memoria {#memory-settings}
 
-Modifica l&#39;allocazione minima della memoria in un numero quanto più grande possibile. Se il database è in esecuzione su un computer separato, utilizzare tutta la memoria. Le impostazioni predefinite non allocano in modo aggressivo la memoria, il che ostacola le prestazioni in quasi tutti i database. Dovresti essere più aggressivo nell&#39;allocare la memoria sulle macchine di produzione.
+Impostare l&#39;allocazione minima della memoria su un numero il più grande possibile. Se il database è in esecuzione su un computer separato, utilizzare tutta la memoria. Le impostazioni predefinite non allocano in modo aggressivo la memoria, il che ostacola le prestazioni su quasi tutti i database. Deve essere più aggressivo nell’allocare memoria sui macchinari di produzione.
 
-## Impostazioni del processore {#processor-settings}
+## Impostazioni processore {#processor-settings}
 
-Modificare le impostazioni del processore e, soprattutto, selezionare la casella di controllo Aumenta la priorità di SQL Server su Windows in modo che il server utilizzi il maggior numero possibile di cicli. L&#39;impostazione Usa fibre NT è meno importante, ma è consigliabile selezionarla.
+Modificare le impostazioni del processore e, soprattutto, selezionare la casella di controllo Aumenta priorità SQL Server in Windows in modo che il server utilizzi il maggior numero di cicli possibile. L&#39;impostazione Usa fibre NT è meno importante, ma potrebbe essere necessario selezionarla.
 
 ## Impostazioni del database {#database-settings}
 
-Modificare le impostazioni del database. L&#39;impostazione più importante è l&#39;intervallo di recupero, che specifica la quantità massima di tempo da attendere per il ripristino dopo un arresto anomalo. L&#39;impostazione predefinita è di un minuto. L&#39;utilizzo di un valore più grande, da 5 a 15 minuti, migliora le prestazioni perché dà al server più tempo per scrivere le modifiche dal log del database nei file di database.
+Modificare le impostazioni del database. L&#39;impostazione più importante è Intervallo di ripristino, che specifica il tempo massimo di attesa del ripristino dopo un arresto anomalo. L&#39;impostazione predefinita è un minuto. L&#39;utilizzo di un valore più grande, da 5 a 15 minuti, migliora le prestazioni perché consente al server di disporre di più tempo per scrivere le modifiche dal log del database nei file del database.
 
 >[!NOTE]
 >
->Questa impostazione non compromette il comportamento transazionale perché modifica solo la lunghezza della riproduzione del file di registro che deve essere eseguita all’avvio.
+>Questa impostazione non compromette il comportamento transazionale perché modifica solo la lunghezza della ripetizione del file di log che deve essere eseguita all&#39;avvio.
 
-Impostare le dimensioni Allocate dello spazio per il registro e il file di dati in modo che siano molto più grandi del database iniziale. Considera quanto il database può crescere in un anno. Idealmente, i file di log e di dati sono allocati in modo contiguo in modo che i dati non finiscano frammentati in tutto il disco.
+Impostare la dimensione Spazio allocato sia per il file di log che per il file di dati in modo che sia molto più grande del database iniziale. Considera la crescita del database nell&#39;arco di un anno. Idealmente, i file di registro e i file di dati vengono allocati in un&#39;estensione contigua in modo che i dati non finiscano frammentati su tutto il disco.

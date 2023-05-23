@@ -1,7 +1,7 @@
 ---
 title: AEM Forms su gruppi e privilegi OSGi
 seo-title: AEM Forms on OSGi Groups and Privileges
-description: Assegnare gli utenti ai gruppi per gestire AEM Forms su OSGi
+description: Assegnare utenti ai gruppi per gestire AEM Forms su OSGi
 seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegna politiche e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi dell&#39;AEM. Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Una volta installata [Pacchetto aggiuntivo di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio gli utenti di moduli e gli utenti di moduli-power, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
+Dopo l&#39;installazione [Pacchetto del componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio utenti di forms e utenti avanzati di forms, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
 
 <table>
  <tbody>
@@ -32,37 +32,37 @@ Una volta installata [Pacchetto aggiuntivo di AEM Forms](../../forms/using/insta
    <td>Attività</td> 
   </tr>
   <tr>
-   <td>utenti dei moduli <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
-     <li>Creazione, visualizzazione in anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
-     <li>Caricare le risorse in un’istanza AEM</li> 
+     <li>Creare, visualizzare in anteprima e pubblicare comunicazioni interattive e frammenti di documenti</li> 
+     <li>Caricare risorse in un’istanza AEM</li> 
      <li>Creare temi</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>utenti di moduli</td> 
+   <td>forms-power-users</td> 
    <td>
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
-     <li>Creazione, visualizzazione in anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
-     <li>Creazione di script per i moduli adattivi tramite l’editor di codice</li> 
-     <li>Caricare le risorse inclusi gli script</li> 
+     <li>Creare, visualizzare in anteprima e pubblicare comunicazioni interattive e frammenti di documenti</li> 
+     <li>Creare script per i moduli adattivi tramite l’editor di codice</li> 
+     <li>Caricare risorse, inclusi script</li> 
      <li>Creare temi</li> 
-     <li>Importa pacchetti contenenti XDP</li> 
+     <li>Importare pacchetti contenenti XDP</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>moduli-sottomissione-revisori</td> 
+   <td>forms-submit-reviewers</td> 
    <td>
     <ul> 
-     <li>Recensione dei documenti</li> 
+     <li>Rivedi gli invii</li> 
      <li>Approvare o rifiutare gli invii</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>autori di modelli <sup>[2]</sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Creare e visualizzare in anteprima moduli adattivi o modelli di comunicazione interattivi</li> 
@@ -79,36 +79,36 @@ Una volta installata [Pacchetto aggiuntivo di AEM Forms](../../forms/using/insta
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Accedere alle lettere di gestione della corrispondenza o alle comunicazioni interattive tramite l’interfaccia utente dell’agente</li> 
+     <li>Accedere a lettere o comunicazioni interattive di Gestione corrispondenza tramite l'interfaccia utente agente</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td><p>editor di workflow</p> </td> 
+   <td><p>workflow-editor</p> </td> 
    <td>
     <ul> 
-     <li>Creare un’applicazione inbox</li> 
+     <li>Creare un’applicazione casella in entrata</li> 
      <li>Creare un modello di flusso di lavoro</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>utenti del flusso di lavoro</td> 
+   <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni di posta in AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata è necessario disporre di assegnazioni di gruppi di utenti e utenti di un agente cm-agent e di un gruppo di utenti del flusso di lavoro.</li> 
+     <li>Utilizzare le applicazioni casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata dell’AEM, è necessario disporre delle assegnazioni di gruppi cm-agent-users e workflow-users.</li> 
      <li>Gestire le istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>amministratori di file</td> 
+   <td>amministratori fd</td> 
    <td>
     <ul> 
      <li>Configura PDF Generator</li> 
-     <li>Configura cartella di controllo</li> 
-     <li>Gestione delle applicazioni del flusso di lavoro</li> 
+     <li>Configura cartella controllata</li> 
+     <li>Gestire le applicazioni del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
  </tbody>
 </table>
 
-1. L’utente con privilegi di gruppo per gli utenti di moduli non può scrivere script per i moduli adattivi.
-1. L&#39;utente con privilegi di gruppo di autori modelli non può scrivere script per i modelli.
+1. L’utente con privilegi di gruppo forms-users non può scrivere script per i moduli adattivi.
+1. L’utente con privilegi di gruppo per autori di modelli non può scrivere script per i modelli.

@@ -1,7 +1,7 @@
 ---
 title: Dashboard operazioni
 seo-title: Operations Dashboard
-description: Scopri come utilizzare il dashboard delle operazioni.
+description: Scopri come utilizzare il dashboard operazioni.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
@@ -23,65 +23,65 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il dashboard delle operazioni nel AEM 6 aiuta gli operatori di sistema a monitorare AEM lo stato del sistema a colpo d&#39;occhio. Fornisce inoltre informazioni di diagnosi generate automaticamente sugli aspetti rilevanti della AEM e consente di configurare ed eseguire l&#39;automazione della manutenzione autonoma per ridurre in modo significativo le operazioni di progetto e i casi di supporto. Il dashboard delle operazioni può essere esteso con controlli di integrità personalizzati e attività di manutenzione. Inoltre, i dati del dashboard delle operazioni sono accessibili da strumenti di monitoraggio esterni tramite JMX.
+Il pannello operativo dell’AEM 6 aiuta gli operatori di sistema a monitorare immediatamente lo stato del sistema dell’AEM. Fornisce inoltre informazioni di diagnosi generate automaticamente su aspetti rilevanti dell’AEM e consente di configurare ed eseguire automazione della manutenzione autonoma per ridurre in modo significativo le operazioni del progetto e i casi di supporto. Il dashboard operazioni può essere esteso con controlli di integrità personalizzati e attività di manutenzione. Inoltre, i dati della dashboard operazioni sono accessibili da strumenti di monitoraggio esterni tramite JMX.
 
-**Dashboard delle operazioni:**
+**Dashboard operazioni:**
 
-* È uno stato di sistema con un solo clic per aiutare i reparti operativi a ottenere efficienza
-* Offre una panoramica dello stato di salute del sistema in un&#39;unica posizione centralizzata
-* Riduzione del tempo necessario per trovare, analizzare e risolvere i problemi
-* Offre automazione autonoma che consente di ridurre in modo significativo i costi delle operazioni di progetto
+* È uno stato di sistema con un solo clic per aiutare i reparti operativi a migliorare l&#39;efficienza
+* Panoramica sullo stato del sistema in un&#39;unica posizione centralizzata
+* Riduzione dei tempi di individuazione, analisi e risoluzione dei problemi
+* Automazione della manutenzione autonoma che consente di ridurre in modo significativo i costi operativi del progetto
 
-È accessibile da **Strumenti** - **Operazioni** dalla schermata di benvenuto AEM.
+È accessibile da **Strumenti** - **Operazioni** dalla schermata iniziale dell’AEM.
 
 >[!NOTE]
 >
->Per poter accedere al Dashboard delle operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md).
+>Per poter accedere al dashboard operazioni, l’utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md).
 
 ## Rapporti stato {#health-reports}
 
-Il sistema di rapporto sullo stato di salute fornisce informazioni sullo stato di un&#39;istanza AEM tramite Sling Health Checks. Puoi eseguire questa operazione tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l’interfaccia utente touch. Offre misurazioni e soglia di determinati contatori configurabili e, a volte, offre informazioni su come risolvere il problema.
+Il sistema di rapporti sullo stato fornisce informazioni sullo stato di un’istanza AEM tramite Sling Health Checks. Puoi eseguire questa operazione tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l’interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, a volte, offre informazioni su come risolvere il problema.
 
-Presenta diverse funzioni, descritte di seguito.
+Dispone di diverse funzioni, descritte di seguito.
 
 ## Verifiche stato {#health-checks}
 
-La **Rapporti stato** sono un sistema di carte che indicano una buona o cattiva salute su una specifica area di prodotto. Queste schede sono visualizzazioni degli Sling Health Checks, che aggregano i dati da JMX e altre fonti ed espongono di nuovo le informazioni elaborate come MBeans. Questi MBeans possono anche essere ispezionati nel [Console web JMX](/help/sites-administering/jmx-console.md), **org.apache.sling.health.check** dominio.
+Il **Rapporti stato** sono un sistema di schede che indicano una buona o cattiva salute in una specifica area di prodotto. Queste schede sono visualizzazioni dei controlli di integrità Sling, che aggregano i dati da JMX e altre origini ed espongono nuovamente le informazioni elaborate come MBean. Questi MBean possono essere esaminati anche nel [Console web JMX](/help/sites-administering/jmx-console.md), sotto il **org.apache.sling.healthcheck** dominio.
 
-L’interfaccia dei rapporti sullo stato è accessibile tramite **Strumenti** - **Operazioni** - **Rapporti stato** nella schermata di benvenuto AEM o direttamente tramite il seguente URL:
+È possibile accedere all&#39;interfaccia dei rapporti di stato tramite **Strumenti** - **Operazioni** - **Rapporti stato** nella schermata iniziale dell’AEM o direttamente tramite il seguente URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-Il sistema di carte espone tre possibili stati: **OK**, **AVVERTENZA** e **CRITICO**. Gli stati sono il risultato di regole e soglie, che possono essere configurate passando il mouse sulla scheda e facendo clic sull&#39;icona a forma di ingranaggio nella barra delle azioni:
+Il sistema di carte di pagamento espone tre possibili stati: **OK**, **AVVERTI** e **CRITICO**. Gli stati sono il risultato di regole e soglie, che possono essere configurate passando il mouse sulla scheda e facendo clic sull&#39;icona a forma di ingranaggio nella barra delle azioni:
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Tipi di controllo integrità {#health-check-types}
+### Tipi di verifica stato {#health-check-types}
 
-Nella AEM 6 esistono due tipi di controlli sanitari:
+Esistono due tipi di controlli sanitari nell&#39;AEM 6:
 
-1. Controlli di integrità individuali
-1. Controlli di integrità compositi
+1. Verifiche stato individuali
+1. Verifiche stato composito
 
-Un **Verifica dello stato di salute individuale** è un controllo di integrità singolo che corrisponde a una scheda di stato. I controlli di integrità individuali possono essere configurati con regole o soglie e possono fornire uno o più suggerimenti e collegamenti per risolvere problemi di salute identificati. Prendiamo il controllo &quot;Log Errors&quot; come esempio: se ci sono voci ERROR nei log delle istanze, trovale nella pagina dei dettagli del controllo di integrità. Nella parte superiore della pagina, puoi vedere un collegamento all’analizzatore &quot;Messaggio di log&quot; nella sezione Strumenti di diagnosi, che ti consente di analizzare questi errori in modo più dettagliato e riconfigurare i logger.
+Un **Verifica stato individuale** è un singolo controllo di integrità che corrisponde a una scheda di stato. I singoli controlli di integrità possono essere configurati con regole o soglie e possono fornire uno o più suggerimenti e collegamenti per risolvere i problemi di integrità identificati. Prendiamo il controllo &quot;Errori di registro&quot; come esempio: se ci sono voci ERROR nei registri delle istanze, trovale nella pagina dei dettagli del controllo di integrità. Nella parte superiore della pagina, è possibile visualizzare un collegamento all&#39;analizzatore &quot;Log Message&quot; (Messaggi di registro) nella sezione Strumenti di diagnostica, che consente di analizzare questi errori più dettagliatamente e riconfigurare i logger.
 
-A **Verifica dello stato di avanzamento composito** è un controllo che aggrega le informazioni derivanti da diversi controlli individuali.
+A **Verifica stato composito** è un controllo che aggrega le informazioni provenienti da diversi singoli controlli.
 
-I controlli di integrità compositi sono configurati con l&#39;ausilio di **tag filtro**. In sostanza, tutti i controlli singoli con lo stesso tag di filtro sono raggruppati come un controllo di integrità composito. Lo stato OK di un controllo di integrità composito è valido solo se tutti i controlli singoli che gli aggregati contengono anche lo stato OK.
+I controlli di integrità compositi sono configurati con l’aiuto di **filtrare i tag**. In sostanza, tutti i singoli controlli che hanno lo stesso tag filtro sono raggruppati come un controllo di integrità composito. Un controllo di integrità composito ha lo stato OK solo se anche tutti i singoli controlli che aggrega hanno lo stato OK.
 
 ### Come creare controlli di integrità {#how-to-create-health-checks}
 
-Nel dashboard delle operazioni è possibile visualizzare il risultato dei controlli di integrità individuali e compositi.
+Nel dashboard operazioni puoi visualizzare il risultato dei controlli di integrità sia singoli che compositi.
 
-### Creazione di un singolo controllo dello stato {#creating-an-individual-health-check}
+### Creazione di un singolo controllo di integrità {#creating-an-individual-health-check}
 
-La creazione di un singolo controllo integrità prevede due passaggi: implementazione di un controllo dello stato di Sling e aggiunta di una voce per il controllo dello stato nei nodi di configurazione del dashboard.
+La creazione di un singolo controllo di integrità prevede due passaggi: l’implementazione di un controllo di integrità Sling e l’aggiunta di una voce per il controllo di integrità nei nodi di configurazione del dashboard.
 
-1. Per creare un Sling Health Check, crea un componente OSGI che implementa l&#39;interfaccia Sling HealthCheck. Aggiungi questo componente all&#39;interno di un bundle. Le proprietà del componente identificano completamente il controllo integrità. Una volta installato il componente, viene automaticamente creato un MBean JMX per il controllo dello stato. Consulta la sezione [Documentazione Sling Health Check](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) per ulteriori informazioni.
+1. Per creare una verifica stato Sling, crea un componente OSGI che implementa l’interfaccia Sling HealthCheck. Aggiungi questo componente all’interno di un bundle. Le proprietà del componente identificano completamente il controllo di integrità. Una volta installato il componente, viene automaticamente creato un MBean JMX per il controllo dello stato. Consulta la [Documentazione di Sling Health Check](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) per ulteriori informazioni.
 
-   Esempio di un componente Sling Health Check, scritto con annotazioni del componente del servizio OSGI:
+   Esempio di componente Sling Health Check, scritto con annotazioni del componente del servizio OSGI:
 
    ```java
    @Component(service = HealthCheck.class,
@@ -101,9 +101,9 @@ La creazione di un singolo controllo integrità prevede due passaggi: implementa
 
    >[!NOTE]
    >
-   >La `MBEAN_NAME` la proprietà definisce il nome del mbean generato per questo controllo di integrità.
+   >Il `MBEAN_NAME` definisce il nome del mbean generato per questa verifica stato.
 
-1. Dopo aver creato un controllo dello stato, è necessario creare un nuovo nodo di configurazione per renderlo accessibile nell&#39;interfaccia del dashboard delle operazioni. Per questo passaggio, è necessario conoscere il nome del Mbean JMX della Verifica dello stato di salute (il `MBEAN_NAME` proprietà). Per creare una configurazione per il controllo dello stato, apri CRXDE e aggiungi un nodo (di tipo **nt:unstructured**) nel percorso seguente: `/apps/settings/granite/operations/hc`
+1. Dopo aver creato una verifica stato, è necessario creare un nuovo nodo di configurazione per renderlo accessibile nell’interfaccia del dashboard operazioni. Per questo passaggio, è necessario conoscere il nome Mbean JMX del controllo di integrità (il `MBEAN_NAME` proprietà ). Per creare una configurazione per il controllo dello stato, apri CRXDE e aggiungi un nodo (di tipo **nt:unstructured**) nel seguente percorso: `/apps/settings/granite/operations/hc`
 
    Le seguenti proprietà devono essere impostate sul nuovo nodo:
 
@@ -118,7 +118,7 @@ La creazione di un singolo controllo integrità prevede due passaggi: implementa
 
    >[!NOTE]
    >
-   >Il percorso della risorsa di cui sopra viene creato come segue: se il nome del fagiolo del controllo di integrità è &quot;test&quot;, aggiungi &quot;test&quot; alla fine del percorso `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >Il percorso della risorsa precedente viene creato come segue: se il nome mbean di Verifica stato è &quot;test&quot;, aggiungi &quot;test&quot; alla fine del percorso `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >Quindi il percorso finale è il seguente:
    >
@@ -134,15 +134,15 @@ La creazione di un singolo controllo integrità prevede due passaggi: implementa
    >`sling:configPropertyInherit`
    >
    >
-   >Questo processo indica al gestore della configurazione di unire le nuove configurazioni con quelle esistenti da `/libs`.
+   >Questo processo comunica al gestore della configurazione di unire le nuove configurazioni con quelle esistenti da `/libs`.
 
-### Creazione di un controllo dello stato composito {#creating-a-composite-health-check}
+### Creazione di un controllo di integrità composito {#creating-a-composite-health-check}
 
-Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diversi controlli di integrità individuali che condividono un insieme di funzioni comuni. Ad esempio, Security Composite Health Check raggruppa tutti i singoli controlli di integrità che eseguono verifiche relative alla sicurezza. Il primo passo per creare un controllo composito è quello di aggiungere una configurazione OSGI. Affinché possa essere visualizzato nel Dashboard delle operazioni, è necessario aggiungere un nuovo nodo di configurazione nello stesso modo di un semplice controllo.
+Il ruolo di una Verifica stato composita è quello di aggregare più verifiche di integrità individuali condividendo una serie di caratteristiche comuni. Ad esempio, il controllo di integrità del composto di sicurezza raggruppa tutti i singoli controlli di integrità che eseguono le verifiche relative alla sicurezza. Il primo passaggio per creare un controllo composito consiste nell’aggiungere una configurazione OSGI. Per visualizzarlo nel dashboard operazioni, è necessario aggiungere un nuovo nodo di configurazione nello stesso modo di un semplice controllo.
 
-1. Vai a Web Configuration Manager nella console OSGI. Accesso `https://serveraddress:port/system/console/configMgr`
-1. Cerca la voce chiamata **Verifica dello stato composito di Apache Sling**. Una volta trovato, noterai che sono già disponibili due configurazioni: uno per i controlli di sistema e un altro per i controlli di sicurezza.
-1. Crea una configurazione premendo il pulsante &quot;+&quot; sul lato destro della configurazione. Viene visualizzata una nuova finestra, come illustrato di seguito:
+1. Passa a Gestione configurazione Web nella console OSGI. Accesso `https://serveraddress:port/system/console/configMgr`
+1. Cerca la voce denominata **Verifica stato composito Apache Sling**. Dopo averlo trovato, noterai che sono già disponibili due configurazioni: una per i controlli di sistema e un’altra per i controlli di sicurezza.
+1. Per creare una configurazione, premi il pulsante &quot;+&quot; a destra. Viene visualizzata una nuova finestra, come illustrato di seguito:
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
@@ -150,18 +150,18 @@ Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diver
 
    Lo scopo di ciascuna proprietà di configurazione è il seguente:
 
-   * **Nome (hc.name):** Nome del controllo di integrità composito. Si consiglia di assegnare un nome significativo.
-   * **Tag (hc.tags):** Tag per il controllo dello stato di salute. Se questo controllo di integrità composito è destinato a far parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui questo composito è correlato.
-   * **Nome MBean (hc.mbean.name):** Il nome del Mbean che viene dato al MBean JMX di questo controllo di integrità composito.
-   * **Tag filtro (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi tag sono aggregati dal composito. Il controllo dello stato di salute composito aggrega sotto il suo gruppo tutti i controlli di integrità che hanno un tag corrispondente a uno dei tag di filtro di questo composito. Ad esempio, un controllo di integrità composito con tag filtro **test** e **check**, aggrega tutti i controlli sanitari individuali e compositi che hanno uno dei **test** e **check** tag nella relativa proprietà tag ( `hc.tags`).
+   * **Nome (hc.name):** Nome del controllo di integrità composito. Si consiglia un nome significativo.
+   * **Tag (hc.tags):** I tag per questa verifica stato. Se questo controllo di integrità composito è destinato a far parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui è correlato il composito.
+   * **Nome MBean (hc.mbean.name):** Il nome del Mbean assegnato all&#39;MBean JMX di questo controllo di integrità composito.
+   * **Filtra tag (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi tag sono aggregati dal composito. Il controllo di integrità composito aggrega nel relativo gruppo tutti i controlli di integrità con qualsiasi tag corrispondente ai tag di filtro del composito. Ad esempio, una verifica di integrità composita con i tag del filtro **test** e **spunta**, aggrega tutti i controlli di integrità individuali e compositi che hanno uno qualsiasi dei **test** e **spunta** tag nella proprietà tag ( `hc.tags`).
 
    >[!NOTE]
    >
-   >Viene creato un nuovo Mbean JMX per ogni nuova configurazione di Apache Sling Composite Health Check.**
+   >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo JMX Mbean.**
 
-1. Infine, la voce del controllo di integrità composito creato deve essere aggiunta nei nodi di configurazione del dashboard delle operazioni. La procedura è la stessa dei controlli sanitari individuali: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà della risorsa del nodo è definita dal valore di **hc.medium.name** nella configurazione OSGI.
+1. Infine, la voce del controllo di integrità composito creato deve essere aggiunta nei nodi di configurazione del dashboard operazioni. La procedura è la stessa dei singoli controlli di integrità: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà di risorsa del nodo è definita dal valore di **hc.media.name** nella configurazione OSGI.
 
-   Ad esempio, se hai creato una configurazione e impostato il **hc.mbean.name** valore a **diskusage**, i nodi di configurazione si presentano come segue:
+   Ad esempio, se hai creato una configurazione e hai impostato **hc.mbean.name** valore per **diskusage**, i nodi di configurazione si presentano come segue:
 
    * **Nome:** `Composite Health Check`
 
@@ -180,179 +180,179 @@ Il ruolo di un controllo dello stato composito consiste nell&#39;aggregare diver
 
    >[!NOTE]
    >
-   >Se crei controlli di integrità individuali che logicamente appartengono a un controllo composito già presente nel dashboard per impostazione predefinita, questi vengono acquisiti automaticamente e raggruppati sotto il rispettivo controllo composito. Di conseguenza, non è necessario creare un nodo di configurazione per questi controlli.
+   >Se si creano singoli controlli di integrità che appartengono logicamente a un controllo composito già presente nel dashboard per impostazione predefinita, questi vengono acquisiti e raggruppati automaticamente nel rispettivo controllo composito. Di conseguenza, non è necessario creare un nodo di configurazione per questi controlli.
    >
-   >Ad esempio, se crei un singolo controllo di integrità della sicurezza, assegnalo il &quot;**sicurezza**&quot; e viene installato. Viene visualizzato automaticamente sotto il controllo composito Controlli di sicurezza nel dashboard Operazioni.
+   >Ad esempio, se crei un singolo controllo di integrità della sicurezza, assegnalo al &quot;**protezione**&quot; ed è installato. Viene visualizzato automaticamente sotto il controllo composito dei controlli di sicurezza nel dashboard operazioni.
 
-### Controlli di integrità forniti con AEM {#health-checks-provided-with-aem}
+### Controlli sanitari forniti con l&#39;AEM {#health-checks-provided-with-aem}
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Nome zHealthcheck</strong></td>
+   <td><strong>Nome controllo di integrità</strong></td>
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
    <td>Prestazioni delle query</td>
-   <td><p>Questo controllo dello stato di salute è stato semplificato <strong>AEM 6.4</strong>e ora controlla il refactoring di recente <code>Oak QueryStats</code> MBean, più specificamente il <code>SlowQueries </code>attributo. Se le statistiche contengono query lente, il controllo di integrità restituisce un avviso. In caso contrario, restituisce lo stato OK.<br /> </p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.health.check:name=queryStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Questo controllo di integrità è stato semplificato <strong>AEM 6.4</strong>, e ora controlla il refactoring di recente <code>Oak QueryStats</code> MBean, in particolare il <code>SlowQueries </code>attributo. Se le statistiche contengono query lente, la verifica stato restituisce un avviso. In caso contrario, viene restituito lo stato OK.<br /> </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Lunghezza coda di osservazione</td>
-   <td><p>La lunghezza della coda di osservazione si ripete su tutti gli ascoltatori di eventi e gli osservatori di background, confronta i loro <code>queueSize </code>a <code>maxQueueSize</code> e:</p>
+   <td><p>La lunghezza della coda di osservazione viene iterata su tutti i listener di eventi e gli osservatori in background e ne confronta le <code>queueSize </code>alla loro <code>maxQueueSize</code> e:</p>
     <ul>
-     <li>restituisce lo stato Critico se <code>queueSize</code> supera il valore <code>maxQueueSize</code> value (ovvero quando gli eventi vengono eliminati)</li>
-     <li>restituisce Avvisa se il valore <code>queueSize</code> è superiore al <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li>
-    </ul> <p>La lunghezza massima di ogni coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questo controllo di integrità. MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health.check:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>restituisce lo stato Critico se <code>queueSize</code> il valore supera il <code>maxQueueSize</code> valore (quando gli eventi verrebbero eliminati)</li>
+     <li>restituisce Avvisa se <code>queueSize</code> il valore è superiore al <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li>
+    </ul> <p>La lunghezza massima di ciascuna coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questa verifica di integrità. MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=OsservazioneCodaLunghezzaVerificaStato,type=VerificaStato</a>.</p> </td>
   </tr>
   <tr>
    <td>Limiti di attraversamento per query</td>
-   <td><p>I limiti di attraversamento delle query controllano i <code>QueryEngineSettings</code> MBean, più specificamente il <code>LimitInMemory</code> e <code>LimitReads</code> e restituisce il seguente stato:</p>
+   <td><p>Query Traversal Limits controlla i <code>QueryEngineSettings</code> MBean, in particolare il <code>LimitInMemory</code> e <code>LimitReads</code> e restituisce il seguente stato:</p>
     <ul>
-     <li>restituisce lo stato Avvisa se uno dei limiti è uguale o superiore al valore <code>Integer.MAX_VALUE</code></li>
-     <li>restituisce lo stato Avvisa se uno dei limiti è inferiore a 10000 (l'impostazione consigliata da Oak)</li>
-     <li>restituisce lo stato Critico se il <code>QueryEngineSettings</code> o uno dei limiti non può essere recuperato</li>
-    </ul> <p>Il fagiolo per questo controllo dello stato di salute è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.health.check:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
+     <li>restituisce lo stato Warn se uno dei limiti è uguale o superiore al valore <code>Integer.MAX_VALUE</code></li>
+     <li>restituisce lo stato Warn se uno dei limiti è inferiore a 10000 (impostazione consigliata da Oak)</li>
+     <li>restituisce lo stato Critico se <code>QueryEngineSettings</code> o non è possibile recuperare uno dei limiti</li>
+    </ul> <p>Il Mbean per questo controllo stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Orologi sincronizzati</td>
-   <td><p>Questo controllo è pertinente solo per <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">document nodestore cluster</a>. Restituisce il seguente stato:</p>
+   <td><p>Questo controllo è pertinente solo per <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">cluster di tipo nodo documento</a>. Restituisce il seguente stato:</p>
     <ul>
-     <li>restituisce lo stato Avvisa quando gli orologi dell’istanza non vengono sincronizzati e superano una soglia minima predefinita</li>
-     <li>restituisce lo stato Critico quando gli orologi dell’istanza non vengono sincronizzati e superano una soglia elevata predefinita</li>
-    </ul> <p>Il fagiolo per questo controllo dello stato di salute è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.health.check:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
+     <li>restituisce lo stato Warn quando gli orologi dell’istanza escono dalla sincronizzazione e superano una soglia bassa predefinita</li>
+     <li>restituisce lo stato Critico quando gli orologi dell’istanza escono dalla sincronizzazione e superano una soglia elevata predefinita</li>
+    </ul> <p>Il Mbean per questo controllo stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Indici asincroni</td>
-   <td><p>Controllo degli indici asincroni:</p>
+   <td><p>La verifica degli indici asincroni:</p>
     <ul>
-     <li>restituisce lo stato critico se almeno una corsia di indicizzazione non riesce</li>
-     <li>controlla <code>lastIndexedTime</code> per tutte le corsie di indicizzazione e:
+     <li>restituisce lo stato Critico se almeno una corsia di indicizzazione non riesce</li>
+     <li>verifica la <code>lastIndexedTime</code> per tutte le corsie di indicizzazione e:
       <ul>
        <li>restituisce lo stato Critico se è più di 2 ore fa </li>
-       <li>restituisce lo stato di avviso se è compreso tra 2 ore e 45 minuti fa </li>
+       <li>restituisce lo stato di avvertenza se è compreso tra 2 ore e 45 minuti fa </li>
        <li>restituisce lo stato OK se è meno di 45 minuti fa </li>
       </ul> </li>
-     <li>se nessuna di queste condizioni è soddisfatta, restituisce lo stato OK</li>
-    </ul> <p>Le soglie di stato Critico e Avvisa sono configurabili. Il fagiolo per questo controllo dello stato di salute è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo dello stato di salute è disponibile con AEM 6.4 ed è stato riportato al AEM 6.3.0.1.</p> </td>
+     <li>se nessuna di queste condizioni è soddisfatta, viene restituito lo stato OK</li>
+    </ul> <p>È possibile configurare sia le soglie di stato Critico che quelle di Avviso. Il Mbean per questo controllo stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questa valutazione dello stato di salute è disponibile con AEM 6.4 ed è stata supportata come AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Indici Lucene di grandi dimensioni</td>
-   <td><p>Questo controllo utilizza i dati esposti dal <code>Lucene Index Statistics</code> MBean per identificare indici e rendimenti di grandi dimensioni:</p>
+   <td><p>Questo controllo utilizza i dati esposti da <code>Lucene Index Statistics</code> MBean per identificare indici di grandi dimensioni e restituisce:</p>
     <ul>
-     <li>uno stato di avviso se esiste un indice con più di 1 miliardo di documenti</li>
-     <li>uno stato critico se esiste un indice con più di 1,5 miliardi di documenti</li>
-    </ul> <p>Le soglie sono configurabili e la MBean per il controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Questo controllo è disponibile con AEM 6.4 ed è stato riportato a AEM 6.3.2.0.</p> </td>
+     <li>uno stato di avvertenza se è presente un indice con più di 1 miliardo di documenti</li>
+     <li>uno stato Critico se è presente un indice con più di 1,5 miliardi di documenti</li>
+    </ul> <p>Le soglie sono configurabili e la voce MBean per il controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Questo controllo è disponibile con AEM 6.4 ed è stato eseguito il backport a AEM 6.3.2.0.</p> </td>
   </tr>
   <tr>
    <td>Manutenzione sistema</td>
-   <td><p>La Manutenzione del sistema è un controllo composito che restituisce l'OK se tutte le attività di manutenzione sono in esecuzione come configurato. Tieni presente che:</p>
+   <td><p>Manutenzione sistema è un controllo composito che restituisce l'OK se tutte le attività di manutenzione sono in esecuzione come configurato. Tieni presente che:</p>
     <ul>
-     <li>ogni operazione di manutenzione è accompagnata da un relativo controllo dello stato di salute</li>
-     <li>se un'attività non viene aggiunta a una finestra di manutenzione, la relativa verifica dello stato restituisce Critico</li>
-     <li>configurare le attività di manutenzione Audit Log e Workflow Purge o rimuoverle dalle finestre di manutenzione. Se non viene configurata, queste attività non riescono al primo tentativo di esecuzione, pertanto il controllo Manutenzione del sistema restituisce lo stato Critico.</li>
-     <li><strong>Con AEM 6.4</strong>, esiste anche un controllo per <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenzione dei binari Lucene</a> compito</li>
-     <li>in AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce uno stato di avviso subito dopo l'avvio, in quanto le attività non vengono mai eseguite. A partire dalla versione 6.3, restituiscono OK se la prima finestra di manutenzione non è ancora stata raggiunta.</li>
-    </ul> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.health.check:name=systemcheck,type=HealthCheck</a>.</p> </td>
+     <li>ogni attività di manutenzione è accompagnata da un controllo di integrità associato</li>
+     <li>se un'attività non viene aggiunta a una finestra di manutenzione, la verifica dello stato restituisce un valore Critico</li>
+     <li>configurare le attività di manutenzione Registro di controllo e Rimozione flusso di lavoro o rimuoverle in altro modo dalle finestre di manutenzione. Se non viene configurata, queste attività non riusciranno al primo tentativo di esecuzione, pertanto la verifica di manutenzione del sistema restituirà lo stato Critico.</li>
+     <li><strong>Con AEM 6.4</strong>, è inoltre disponibile un controllo per <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenzione binary di Lucene</a> attività</li>
+     <li>in AEM 6.2 e versioni precedenti, il controllo di manutenzione del sistema restituisce lo stato di avviso subito dopo l'avvio perché le attività non vengono mai eseguite. A partire dalla versione 6.3, se la prima finestra di manutenzione non è stata ancora raggiunta viene visualizzato OK.</li>
+    </ul> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=systemchecs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Coda di replica</td>
-   <td><p>Questo controllo esegue iterazioni sugli agenti di replica e controlla le loro code. Per l'elemento nella parte superiore della coda, il controllo controlla quante volte l'agente ha effettuato un nuovo tentativo di replica. Se l'agente ha effettuato un nuovo tentativo di replica superiore al valore del <code>numberOfRetriesAllowed</code> restituisce un avviso. La <code>numberOfRetriesAllowed</code> è configurabile. </p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
+   <td><p>Questo controllo scorre gli agenti di replica e ne esamina le code. Per l'elemento nella parte superiore della coda, il controllo verifica il numero di tentativi di replica eseguiti dall'agente. Se l'agente ha ritentato la replica di un valore superiore a quello del <code>numberOfRetriesAllowed</code> , restituisce un avviso. Il <code>numberOfRetriesAllowed</code> Il parametro è configurabile. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Processi Sling</td>
    <td>
     <div>
-      Sling Jobs controlla il numero di processi in coda nel JobManager, confrontandolo con il
+      Sling Jobs controlla il numero di job in coda in JobManager, confrontandolo con
      <code>maxNumQueueJobs</code> soglia e:
     </div>
     <ul>
-     <li>restituisce Critico se il valore è superiore a <code>maxNumQueueJobs</code> sono in coda</li>
-     <li>restituisce Critico se sono presenti processi attivi di lunga durata con più di 1 ora</li>
-     <li>restituisce Critico se sono presenti processi in coda e l'ultima ora di lavoro completata è maggiore di 1 ora</li>
-    </ul> <p>È configurabile solo il numero massimo di processi in coda e il valore predefinito è 1000.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health.check:name=slingJobs,type=HealthCheck</a>.</p> </td>
+     <li>restituisce Critico se più del valore <code>maxNumQueueJobs</code> sono in coda</li>
+     <li>restituisce Critico se sono presenti processi attivi con tempi di esecuzione lunghi più vecchi di 1 ora</li>
+     <li>restituisce Critico se sono presenti processi in coda e l'ultima ora del processo finito è precedente a 1 ora</li>
+    </ul> <p>È possibile configurare solo il parametro relativo al numero massimo di processi in coda e il valore predefinito è 1000.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Prestazioni delle richieste</td>
-   <td><p>Questo controllo controlla il <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Metrica Sling </a>e:</p>
+   <td><p>Questo controllo esamina <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Metrica Sling </a>e:</p>
     <ul>
      <li>restituisce Critico se il valore del 75° percentile supera la soglia critica (il valore predefinito è 500 millisecondi)</li>
-     <li>restituisce Avvisa se il valore del 75° percentile supera la soglia di avviso (il valore predefinito è 200 millisecondi)</li>
-    </ul> <p>MBean per questo controllo di integrità è<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health.check:name=requestsStatus,type=HealthCheck</a>.</p> </td>
+     <li>restituisce Avvisa se il valore del 75° percentile supera la soglia di avvertenza (il valore predefinito è 200 millisecondi)</li>
+    </ul> <p>MBean per questa verifica stato è<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errori registro</td>
-   <td><p>Questo controllo restituisce lo stato Avvisa in caso di errori nel registro.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
+   <td><p>Questo controllo restituisce lo stato Warn in caso di errori nel registro.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Spazio su disco</td>
-   <td><p>Il controllo dello spazio su disco esamina il <code>FileStoreStats</code> MBean recupera le dimensioni del Node Store e la quantità di spazio su disco utilizzabile sulla partizione Node Store e:</p>
+   <td><p>Il controllo dello spazio su disco esamina <code>FileStoreStats</code> MBean, recupera le dimensioni dell'archivio nodi e la quantità di spazio su disco utilizzabile nella partizione dell'archivio nodi e:</p>
     <ul>
-     <li>restituisce Avvisa se il rapporto spazio su disco utilizzabile con dimensione archivio è inferiore alla soglia di avviso (il valore predefinito è 10)</li>
-     <li>restituisce Critico se il rapporto spazio su disco utilizzabile con dimensione archivio è inferiore alla soglia critica (il valore predefinito è 2)</li>
-    </ul> <p>Entrambe le soglie sono configurabili. Il controllo funziona solo sulle istanze con un archivio segmenti.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>restituisce Avvisa se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell'archivio è inferiore alla soglia di avviso (il valore predefinito è 10)</li>
+     <li>restituisce Critico se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell’archivio è inferiore alla soglia critica (il valore predefinito è 2)</li>
+    </ul> <p>Entrambe le soglie sono configurabili. Il controllo funziona solo sulle istanze con un archivio segmenti.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Verifica stato modulo di pianificazione</td>
-   <td><p>Questo controllo restituisce un avviso se l’istanza dispone di processi Quartz in esecuzione per più di 60 secondi. La soglia di durata accettabile è configurabile.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health.check:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td>
+   <td><p>Questo controllo restituisce un avviso se l’istanza ha processi Quartz in esecuzione per più di 60 secondi. È possibile configurare la soglia di durata accettabile.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td>
   </tr>
   <tr>
    <td>Verifiche di sicurezza</td>
-   <td><p>Il controllo di sicurezza è un composito che aggrega i risultati di più controlli relativi alla sicurezza. Tali controlli sanitari individuali rispondono a preoccupazioni diverse dalla lista di controllo della sicurezza disponibile presso <a href="/help/sites-administering/security-checklist.md">Pagina della documentazione della Lista di controllo protezione.</a> Il controllo è utile come prova di fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health.check:name=cartolarycheck,type=HealthCheck</a></p> </td>
+   <td><p>Il controllo di sicurezza è un elemento composito che aggrega i risultati di più controlli relativi alla sicurezza. Questi singoli controlli di integrità rispondono a diversi problemi segnalati nell'elenco di controllo della sicurezza disponibile all'indirizzo <a href="/help/sites-administering/security-checklist.md">Pagina della documentazione dell’elenco di controllo della sicurezza.</a> Il controllo è utile come test del fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=controlli di sicurezza,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Bundle attivi</td>
    <td><p>Bundle attivi controlla lo stato di tutti i bundle e:</p>
     <ul>
-     <li>restituisce lo stato Avvisa se uno dei bundle non è attivo o (a partire, con attivazione pigra)</li>
-     <li>ignora lo stato dei bundle nell'elenco ignora</li>
-    </ul> <p>Il parametro di elenco di ignoramenti è configurabile.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health.check:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
+     <li>restituisce lo stato Warn se uno dei bundle non è attivo o (a partire da, con attivazione lenta)</li>
+     <li>ignora lo stato dei bundle nell’elenco da ignorare</li>
+    </ul> <p>Il parametro dell’elenco da ignorare è configurabile.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Controllo della cache del codice</td>
-   <td><p>Un controllo dello stato che verifica diverse condizioni JVM che possono attivare un bug CodeCache presente in Java™ 7:</p>
+   <td>Controllo cache codice</td>
+   <td><p>Verifica stato che verifichi diverse condizioni JVM che possono attivare un bug CodeCache presente in Java™ 7:</p>
     <ul>
-     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7, con lo scaricamento della cache del codice abilitato</li>
-     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7 e la dimensione della cache del codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
-    </ul> <p>La <code>minimum.code.cache.size</code> la soglia è configurabile. Per ulteriori informazioni sul bug, vedi <a href="https://bugs.java.com/bugdatabase/"> e cerca il Bug ID 8012547</a>.</p> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>restituisce Warn se l’istanza è in esecuzione su Java™ 7, con lo svuotamento della cache del codice abilitato</li>
+     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7 e la dimensione della cache codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
+    </ul> <p>Il <code>minimum.code.cache.size</code> soglia configurabile. Per ulteriori informazioni sul bug, vedi <a href="https://bugs.java.com/bugdatabase/"> e quindi cerca in 8012547 ID bug</a>.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errori nel percorso di ricerca delle risorse</td>
    <td><p>Controlla se nel percorso sono presenti risorse <code>/apps/foundation/components/primary</code> e:</p>
     <ul>
      <li>restituisce Avvisa se sono presenti nodi figlio in <code>/apps/foundation/components/primary</code></li>
-    </ul> <p>MBean per questo controllo di integrità è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Configurazione del controllo integrità {#health-check-configuration}
+### Configurazione verifica stato {#health-check-configuration}
 
-Per impostazione predefinita, per un’istanza di AEM preconfigurata, i controlli di integrità vengono eseguiti ogni 60 secondi.
+Per impostazione predefinita, per un’istanza AEM preconfigurata, i controlli di integrità vengono eseguiti ogni 60 secondi.
 
-Puoi configurare le **Punto** con [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) **Configurazione del controllo dello stato della query** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
+È possibile configurare **Periodo** con [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) **Configurazione verifica stato query** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
 ## Monitoraggio con Nagios {#monitoring-with-nagios}
 
-Il dashboard di controllo dello stato può integrarsi con Nagios tramite il GRANITE JMX Mbeans. L&#39;esempio seguente illustra come aggiungere un controllo che mostra la memoria utilizzata sul server che esegue AEM.
+La dashboard di controllo dello stato può integrarsi con Nagios tramite Granite JMX Mbeans. L&#39;esempio seguente illustra come aggiungere un controllo che mostra la memoria utilizzata sul server che esegue AEM.
 
 1. Configurare e installare Nagios sul server di monitoraggio.
-1. Quindi, installare il plugin remoto Nagios (NRPE).
+1. Quindi, installare Nagios Remote Plugin Executor (NRPE).
 
    >[!NOTE]
    >
-   >Per maggiori informazioni su come installare Nagios e NRPE sul tuo sistema, consulta la [Documentazione di Nagios](https://library.nagios.com/library/products/nagios-core/manuals//).
+   >Per ulteriori informazioni su come installare Nagios e NRPE sul sistema, consultare [Documentazione di Nagios](https://library.nagios.com/library/products/nagios-core/manuals//).
 
-1. Aggiungi una definizione host per il server AEM. È possibile eseguire questo compito tramite l&#39;interfaccia Web Nagios XI, utilizzando Configuration Manager:
+1. Aggiungere una definizione host per il server AEM. È possibile eseguire questa operazione tramite l&#39;interfaccia Web Nagios XI, utilizzando Configuration Manager:
 
-   1. Aprire un browser e puntare al server Nagios.
-   1. Premere **Configura** nel menu principale.
-   1. Nel riquadro a sinistra, premi il pulsante **Gestione configurazione core** sotto **Configurazione avanzata**.
-   1. Premere **Host** link sotto **Monitoraggio** sezione .
-   1. Aggiungi la definizione dell&#39;host:
+   1. Apri un browser e punta al server Nagios.
+   1. Premere il tasto **Configura** nel menu principale.
+   1. Nel riquadro a sinistra, premere il tasto **Gestione configurazione core** in **Configurazione avanzata**.
+   1. Premere il tasto **Host** collegamento sotto **Monitorare** sezione.
+   1. Aggiungi la definizione host:
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
-   Di seguito è riportato un esempio di file di configurazione dell&#39;host, nel caso in cui utilizzi Nagios Core:
+   Di seguito è riportato un esempio di file di configurazione host, nel caso in cui si utilizzi Nagios Core:
 
    ```xml
    define host {
@@ -366,9 +366,9 @@ Il dashboard di controllo dello stato può integrarsi con Nagios tramite il GRAN
    }
    ```
 
-1. Installa Nagios e NRPE sul server AEM.
-1. Installa il [check_http_json](https://github.com/phrawzty/check_http_json) su entrambi i server.
-1. Definire un comando di controllo JSON generico su entrambi i server:
+1. Installare Nagios e NRPE sul server AEM.
+1. Installare [check_http_json](https://github.com/phrawzty/check_http_json) plug-in su entrambi i server.
+1. Definisci un comando di controllo JSON generico su entrambi i server:
 
    ```xml
    define command{
@@ -396,112 +396,112 @@ Il dashboard di controllo dello stato può integrarsi con Nagios tramite il GRAN
        }
    ```
 
-1. Controlla il tuo dashboard di Nagios per il servizio appena creato:
+1. Controlla la dashboard di Nagios per verificare se il servizio è stato appena creato:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
-## Strumenti di diagnosi {#diagnosis-tools}
+## Strumenti di diagnostica {#diagnosis-tools}
 
-Il dashboard dell&#39;operazione fornisce anche l&#39;accesso agli strumenti di diagnosi che possono aiutare a trovare e risolvere le cause principali degli avvisi provenienti dal dashboard di controllo dello stato e fornire informazioni di debug importanti per gli operatori di sistema.
+Il dashboard delle operazioni consente inoltre di accedere agli strumenti di diagnostica che consentono di individuare e risolvere le cause principali degli avvisi provenienti dal dashboard di verifica stato e di fornire importanti informazioni di debug per gli operatori di sistema.
 
 Tra le sue caratteristiche più importanti vi sono:
 
-* Un analizzatore di messaggi di log
-* La possibilità di accedere alle immagini heap e thread
-* Richieste e analisi delle prestazioni delle query
+* Un analizzatore di messaggi di registro
+* Possibilità di accedere alle immagini heap e thread
+* Richieste e analizzatori delle prestazioni delle query
 
-Per accedere alla schermata Strumenti di diagnosi, vai a **Strumenti - Operazioni - Diagnosi** dalla schermata di benvenuto AEM. Puoi anche accedere direttamente alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+Per accedere alla schermata Strumenti di diagnostica, vai a **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale dell’AEM. Puoi anche accedere alla schermata accedendo direttamente al seguente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ### Messaggi del registro {#log-messages}
 
-L&#39;interfaccia utente dei messaggi di log visualizza tutti i messaggi ERROR per impostazione predefinita. Se desideri visualizzare più messaggi di log, configura un logger con il livello di log appropriato.
+Per impostazione predefinita, nell&#39;interfaccia utente dei messaggi di registro vengono visualizzati tutti i messaggi di ERRORE. Per visualizzare più messaggi di registro, configura un logger con il livello di registro appropriato.
 
-I messaggi di log utilizzano un appender del log in memoria e quindi non sono correlati ai file di log. Un’altra conseguenza è che la modifica dei livelli di registro in questa interfaccia utente non modifica le informazioni registrate nei file di registro tradizionali. L’aggiunta e la rimozione dei logger in questa interfaccia utente influisce solo sul logger di memoria. Inoltre, la modifica delle configurazioni del logger si riflette nel futuro del logger di memoria. Le voci già registrate e non più rilevanti non vengono eliminate, ma voci simili non verranno registrate in futuro.
+I messaggi di log utilizzano un appender di log in memoria e pertanto non sono correlati ai file di log. Un’altra conseguenza è che la modifica dei livelli di registro in questa interfaccia utente non modifica le informazioni che vengono registrate nei file di registro tradizionali. L’aggiunta e la rimozione dei logger in questa interfaccia utente influisce solo sul logger di memoria. Inoltre, la modifica delle configurazioni del logger si riflette nel futuro del logger in memoria. Le voci già registrate e non più rilevanti non vengono eliminate, ma voci simili non verranno registrate in futuro.
 
-Puoi configurare ciò che viene registrato fornendo configurazioni del logger dal pulsante in alto a sinistra dell’ingranaggio nell’interfaccia utente. Qui puoi aggiungere, rimuovere o aggiornare le configurazioni del logger. Una configurazione del logger è composta da un **livello di log** (AVVERTENZA / INFORMAZIONI / DEBUG) e **nome del filtro**. La **nome del filtro** ha il ruolo di filtrare l’origine dei messaggi di log che vengono registrati. In alternativa, se un logger deve acquisire tutti i messaggi di log per il livello specificato, il nome del filtro deve essere &quot;**root**&quot;. L’impostazione del livello di un logger attiva l’acquisizione di tutti i messaggi con un livello uguale o superiore a quello specificato.
+Puoi configurare gli elementi registrati fornendo le configurazioni del logger dal pulsante in alto a sinistra nell’interfaccia utente. È possibile aggiungere, rimuovere o aggiornare le configurazioni del logger. Una configurazione logger è composta da un **livello di registro** (WARN / INFO / DEBUG) e un **nome filtro**. Il **nome filtro** ha il ruolo di filtrare l’origine dei messaggi di registro che vengono registrati. In alternativa, se un logger deve acquisire tutti i messaggi di registro per il livello specificato, il nome del filtro deve essere &quot;**radice**&quot;. L’impostazione del livello di un logger attiva l’acquisizione di tutti i messaggi con un livello uguale o superiore a quello specificato.
 
 Esempi:
 
-* Se hai intenzione di catturare tutti i **ERRORE** messaggi: non è richiesta alcuna configurazione. Tutti i messaggi ERROR vengono acquisiti per impostazione predefinita.
-* Se hai intenzione di catturare tutti i **ERRORE**, **AVVERTENZA** e **INFORMAZIONI** messages - il nome del logger deve essere impostato su: &quot;**root**&quot;, e il livello di logger a: **INFORMAZIONI**.
+* Se prevedi di acquisire tutti i **ERRORE** messaggi: non è richiesta alcuna configurazione. Tutti i messaggi ERROR vengono acquisiti per impostazione predefinita.
+* Se prevedi di acquisire tutti i **ERRORE**, **AVVERTI** e **INFO** messages - il nome del logger deve essere impostato su: &quot;**radice**&quot;, e il livello logger per: **INFO**.
 
-* Se prevedi di acquisire tutti i messaggi provenienti da un determinato pacchetto (ad esempio com.adobe.granite) - il nome del logger deve essere impostato su: &quot;com.adobe.granite&quot;. E, il livello di logger impostato su: **DEBUG** (in questo modo vengono catturate tutte le **ERRORE**, **AVVERTENZA**, **INFORMAZIONI** e **DEBUG** , come illustrato nell’immagine seguente.
+* Se prevedi di acquisire tutti i messaggi provenienti da un determinato pacchetto (ad esempio com.adobe.granite), il nome del logger deve essere impostato su: &quot;com.adobe.granite&quot;. E, il livello logger è impostato su: **DEBUG** (in questo modo acquisisce tutte le **ERRORE**, **AVVERTI**, **INFO**, e **DEBUG** ), come illustrato nell&#39;immagine seguente.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
->Non è possibile impostare un nome di logger per acquisire solo i messaggi ERROR tramite un filtro specificato. Per impostazione predefinita, tutti i messaggi ERROR vengono acquisiti.
+>Non è possibile impostare un nome di logger per acquisire solo i messaggi di ERRORE tramite un filtro specificato. Per impostazione predefinita, vengono acquisiti tutti i messaggi ERROR.
 
 >[!NOTE]
 >
->L&#39;interfaccia utente dei messaggi di log non riflette l&#39;effettivo registro degli errori. A meno che non si configurino altri tipi di messaggi di log nell&#39;interfaccia utente, vengono visualizzati solo i messaggi ERROR. Per informazioni su come visualizzare messaggi di log specifici, consulta le istruzioni riportate sopra.
+>L’interfaccia utente dei messaggi di registro non riflette il registro degli errori effettivo. A meno che non si configurino altri tipi di messaggi di registro nell&#39;interfaccia utente, vengono visualizzati solo i messaggi di ERRORE. Per informazioni su come visualizzare messaggi di registro specifici, consulta le istruzioni precedenti.
 
 >[!NOTE]
 >
->Le impostazioni nella pagina di diagnosi non influenzano ciò che viene registrato nei file di log e viceversa. Pertanto, anche se il registro degli errori potrebbe rilevare i messaggi INFO, potrebbero non essere visualizzati nell&#39;interfaccia utente dei messaggi di log. Inoltre, attraverso l&#39;interfaccia utente è possibile catturare i messaggi DEBUG da alcuni pacchetti senza che questo influisca sul registro degli errori. Per ulteriori informazioni su come configurare i file di registro, vedi [Registrazione](/help/sites-deploying/configure-logging.md).
+>Le impostazioni nella pagina di diagnostica non influenzano ciò che viene registrato nei file di registro e viceversa. Pertanto, anche se il registro degli errori può rilevare i messaggi INFO, è possibile che tali messaggi non vengano visualizzati nell’interfaccia utente dei messaggi di registro. Inoltre, tramite l’interfaccia utente di è possibile rilevare i messaggi DEBUG da alcuni pacchetti senza che questo influisca sul registro degli errori. Per ulteriori informazioni su come configurare i file di registro, vedere [Registrazione](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >
->**Con AEM 6.4**, le attività di manutenzione vengono disconnesse in un formato più ricco di informazioni a livello di INFO. Questo flusso di lavoro consente una migliore visibilità dello stato delle attività di manutenzione.
+>**Con AEM 6.4**, le attività di manutenzione vengono disconnesse in un formato più ricco di informazioni a livello INFO. Questo flusso di lavoro offre una migliore visibilità dello stato delle attività di manutenzione.
 >
->Se utilizzi strumenti di terze parti (come Splunk) per monitorare e reagire all’attività di manutenzione, puoi utilizzare le seguenti istruzioni di registro:
+>Se si utilizzano strumenti di terze parti, ad esempio Splunk, per monitorare e reagire all&#39;attività di manutenzione, è possibile utilizzare le istruzioni di registro seguenti:
 
 ```
 Log level: INFO
 DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, Error=<MT_ERROR>, Details=<MT_DETAILS>
 ```
 
-### Prestazioni della richiesta {#request-performance}
+### Prestazioni delle richieste {#request-performance}
 
-La pagina Prestazioni richiesta consente di analizzare le richieste di pagina più lente elaborate. Solo le richieste di contenuto sono registrate in questa pagina. In particolare, vengono acquisite le seguenti richieste:
+La pagina Prestazioni delle richieste consente di analizzare le richieste di pagina più lente elaborate. In questa pagina vengono registrate solo le richieste di contenuto. In particolare, vengono acquisite le seguenti richieste:
 
 1. Richieste di accesso alle risorse in `/content`
 1. Richieste di accesso alle risorse in `/etc/design`
-1. Le richieste di `".html"` estensione
+1. Richieste con `".html"` estensione
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-Viene visualizzata la pagina:
+La pagina mostra:
 
-* Data e ora della richiesta
+* Ora in cui è stata effettuata la richiesta
 * L’URL e il metodo di richiesta
 * Durata in millisecondi
 
-Per impostazione predefinita, vengono acquisite le 20 richieste di pagina più lente, ma il limite può essere modificato in Configuration Manager.
+Per impostazione predefinita, vengono acquisite le 20 richieste più lente, ma il limite può essere modificato in Configuration Manager.
 
 ### Prestazioni delle query {#query-performance}
 
-La pagina Prestazioni query consente di analizzare le query più lente eseguite dal sistema. Queste informazioni sono fornite dall&#39;archivio in un Mbean JMX. In Jackrabbit, il `com.adobe.granite.QueryStat` JMX Mbean fornisce queste informazioni, mentre nell&#39;archivio Oak, è offerto da `org.apache.jackrabbit.oak.QueryStats.`
+La pagina Prestazioni query consente di analizzare le query più lente eseguite dal sistema. Queste informazioni vengono fornite dall’archivio in un JMX Mbean. In Jackrabbit, il `com.adobe.granite.QueryStat` JMX Mbean fornisce queste informazioni, mentre nell’archivio Oak queste sono offerte da `org.apache.jackrabbit.oak.QueryStats.`
 
-Viene visualizzata la pagina:
+La pagina mostra:
 
-* Data e ora in cui è stata effettuata la query
+* Ora in cui è stata eseguita la query
 * Lingua della query
-* Numero di volte in cui è stata emessa la query
-* Istruzione della query
+* Il numero di volte in cui è stata inviata la query
+* Dichiarazione della query
 * Durata in millisecondi
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Spiega query {#explain-query}
 
-Per una determinata query, Oak cerca di capire il modo migliore per eseguire in base agli indici Oak definiti nell&#39;archivio sotto il **oak:index** nodo. A seconda della query, Oak può scegliere indici diversi. La comprensione di come Oak sta eseguendo una query è il primo passaggio per ottimizzare la query.
+Per una determinata query, Oak tenta di capire il modo migliore per eseguire in base agli indici Oak definiti nell’archivio in **oak:index** nodo. A seconda della query, Oak può scegliere indici diversi. Il primo passaggio per ottimizzare la query consiste nel comprendere in che modo Oak esegue una query.
 
-La query di spiegazione è uno strumento che spiega come Oak sta eseguendo una query. È accessibile da **Strumenti - Operazioni - Diagnosi** dalla schermata di benvenuto AEM. Quindi, fai clic su **Prestazioni query** e passa alla **Spiega query** scheda .
+Explain Query è uno strumento che spiega come Oak sta eseguendo una query. È accessibile da **Strumenti - Operazioni - Diagnosi** dalla schermata di benvenuto dell’AEM. Quindi, fai clic su **Prestazioni query** e passa al **Spiega query** scheda.
 
 **Funzioni**
 
 * Supporta i linguaggi di query Xpath, JCR-SQL e JCR-SQL2
 * Segnala il tempo di esecuzione effettivo della query fornita
-* Rileva query lente e avvisa di query potenzialmente lente
+* Rileva query lente e avvisi relativi a query potenzialmente lente
 * Segnala l’indice Oak utilizzato per eseguire la query
-* Visualizza la spiegazione effettiva del motore di query Oak
-* Elenco di clic-to-load delle query lente e popolari
+* Visualizza la spiegazione effettiva del modulo di gestione query Oak
+* Fornisce l’elenco di query lente e popolari da caricare tramite clic
 
-Dopo aver effettuato l’accesso all’interfaccia utente Explain Query, immetti la query e premi il pulsante **Spiegare** pulsante:
+Nell’interfaccia utente Spiega query, inserisci la query e premi **Spiega** pulsante:
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -509,90 +509,90 @@ La prima voce nella sezione Spiegazione query è la spiegazione effettiva. La sp
 
 La seconda voce è il piano di esecuzione.
 
-Tocca **Includi tempo di esecuzione** prima di eseguire la query mostra anche il tempo di esecuzione della query. La **Includi conteggio dei nodi** riporta il conteggio dei nodi. Il rapporto consente di ottenere ulteriori informazioni che possono essere utilizzate per ottimizzare gli indici per l’applicazione o la distribuzione.
+Come selezionare **Includi tempo di esecuzione** prima di eseguire la query mostra anche la quantità di tempo di esecuzione della query. Il **Includi conteggio nodi** riporta il conteggio dei nodi. Il rapporto consente di ottenere ulteriori informazioni che possono essere utilizzate per ottimizzare gli indici per l’applicazione o la distribuzione.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
-### Gestione dell&#39;indice {#the-index-manager}
+### Gestore indice {#the-index-manager}
 
 Lo scopo di Gestione indici è quello di facilitare la gestione degli indici, ad esempio la manutenzione degli indici o la visualizzazione del loro stato.
 
-Per accedervi, vai su **Strumenti - Operazioni - Diagnosi **dalla schermata iniziale, quindi fai clic sul pulsante **Gestione indici** pulsante .
+Per accedervi, vai a **Strumenti - Operazioni - Diagnosi **dalla schermata di benvenuto, quindi fai clic su **Gestore indice** pulsante.
 
-È inoltre possibile accedervi direttamente a questo URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
+È inoltre possibile accedervi direttamente da questo URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
 ![index_manager](assets/index_manager.png)
 
-L’interfaccia utente può essere utilizzata per filtrare gli indici nella tabella digitando i criteri del filtro nella casella di ricerca nell’angolo in alto a sinistra dello schermo.
+L’interfaccia utente può essere utilizzata per filtrare gli indici nella tabella digitando i criteri di filtro nella casella di ricerca nell’angolo in alto a sinistra dello schermo.
 
 ### Scarica ZIP stato {#download-status-zip}
 
-Questa azione attiva il download di un file ZIP contenente informazioni utili sullo stato e sulla configurazione del sistema. L&#39;archivio contiene configurazioni di istanza, un elenco di bundle, OSGI, metriche Sling e statistiche, che può portare a un file di grandi dimensioni. È possibile ridurre l&#39;impatto dei file di stato di grandi dimensioni utilizzando **Scarica ZIP di stato** finestra. È possibile accedere alla finestra da:**AEM > Strumenti > Operazioni > Diagnosi > Scarica ZIP dello stato.**
+Questa azione attiva il download di un file ZIP contenente informazioni utili sullo stato e sulla configurazione del sistema. L’archivio contiene configurazioni di istanze, un elenco di bundle, OSGI, metriche e statistiche Sling, che possono causare un file di grandi dimensioni. È possibile ridurre l’impatto dei file di stato di grandi dimensioni utilizzando **Scarica ZIP stato** finestra. La finestra è accessibile da:**AEM > Strumenti > Operazioni > Diagnosi > Scarica ZIP stato.**
 
-Da questa finestra, puoi selezionare cosa esportare (file di registro e o immagini di thread) e il numero di giorni di log inclusi nel download rispetto alla data corrente.
+Da questa finestra puoi selezionare gli elementi da esportare (file di registro e/o immagini thread) e il numero di giorni di registri inclusi nel download rispetto alla data corrente.
 
 ![download_status_zip](assets/download_status_zip.png)
 
 ### Scarica immagine thread {#download-thread-dump}
 
-Questa azione attiva il download di un file ZIP contenente informazioni sui thread presenti nel sistema. Vengono fornite informazioni su ogni thread, ad esempio il suo stato, il classloader e lo stacktrace.
+Questa azione attiva il download di un file ZIP contenente informazioni sui thread presenti nel sistema. Vengono fornite informazioni su ciascun thread, ad esempio il relativo stato, il caricatore di classi e la traccia dello stack.
 
 ### Scarica immagine heap {#download-heap-dump}
 
-È possibile scaricare un&#39;istantanea dell&#39;heap per analizzarla in un secondo momento. Questa azione attiva il download di un file di grandi dimensioni (centinaia di MB).
+Puoi scaricare un’istantanea dell’heap per analizzarla in un secondo momento. Questa azione attiva il download di un file di grandi dimensioni (centinaia di MB).
 
 ## Attività di manutenzione automatizzata {#automated-maintenance-tasks}
 
-La pagina Attività di manutenzione automatica è un luogo in cui è possibile visualizzare e tenere traccia delle attività di manutenzione consigliate pianificate per l’esecuzione periodica. Le attività sono integrate con il sistema di controllo dello stato di salute. Le attività possono anche essere eseguite manualmente dall’interfaccia .
+La pagina Attività di manutenzione automatizzata è un&#39;area in cui è possibile visualizzare e tenere traccia delle attività di manutenzione consigliate pianificate per l&#39;esecuzione periodica. Le attività sono integrate con il sistema di Verifica stato. Le attività possono anche essere eseguite manualmente dall’interfaccia.
 
-Per passare alla pagina Manutenzione nel Dashboard delle operazioni, dalla schermata di benvenuto AEM, vai a **Strumenti - Operazioni - Dashboard - Manutenzione** oppure segui direttamente questo collegamento:
+Per accedere alla pagina Manutenzione nel dashboard operazioni, dalla schermata di benvenuto AEM, vai a **Strumenti - Operazioni - Dashboard - Manutenzione**, oppure segui direttamente questo collegamento:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
-Le seguenti attività sono disponibili nel dashboard delle operazioni:
+Nel dashboard operazioni sono disponibili le seguenti attività:
 
-1. La **Pulizia revisioni** attività, situata sotto **Finestra Manutenzione giornaliera** menu.
-1. La **Pulizia dei binari Lucene** attività, situata sotto **Finestra Manutenzione giornaliera** menu.
-1. La **Eliminazione del flusso di lavoro** attività, situata sotto **Finestra Manutenzione settimanale** menu.
-1. La **Raccolta rifiuti dell&#39;archivio dati** attività, situata sotto **Finestra Manutenzione settimanale** menu.
-1. La **Manutenzione del registro di controllo** attività, situata sotto **Finestra Manutenzione settimanale** menu.
-1. La **Manutenzione e pulizia delle versioni** attività, situata sotto **Finestra Manutenzione settimanale** menu.
+1. Il **Pulizia revisioni** attività, situata sotto **Finestra di manutenzione giornaliera** menu.
+1. Il **Pulizia binary di Lucene** attività, situata sotto **Finestra di manutenzione giornaliera** menu.
+1. Il **Eliminazione flusso di lavoro** attività, situata sotto **Finestra di manutenzione settimanale** menu.
+1. Il **Raccolta oggetti inattivi dell’archivio dati** attività, situata sotto **Finestra di manutenzione settimanale** menu.
+1. Il **Manutenzione del registro di controllo** attività, situata sotto **Finestra di manutenzione settimanale** menu.
+1. Il **Manutenzione Pulizia versione** attività, situata sotto **Finestra di manutenzione settimanale** menu.
 
-Il tempo predefinito per la finestra di manutenzione giornaliera è dalle 2:00 alle 5:00 del mattino. Le attività configurate per l&#39;esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le 1:00 del mattino e le 2:00 del sabato.
+L&#39;orario predefinito per la finestra di manutenzione giornaliera è dalle 2.00 alle 5.00. Le attività configurate per l’esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 del sabato.
 
-È inoltre possibile configurare i tempi premendo l&#39;icona ingranaggio su una delle due schede di manutenzione:
+Puoi anche configurare gli intervalli premendo l’icona ingranaggio su una qualsiasi delle due schede di manutenzione:
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
 >[!NOTE]
 >
->A partire dal AEM 6.1, le finestre di manutenzione esistenti possono essere configurate per l&#39;esecuzione mensile.
+>A partire da AEM 6.1, è possibile configurare le finestre di manutenzione esistenti in modo che vengano eseguite mensilmente.
 
 ### Pulizia revisioni {#revision-clean-up}
 
-Per ulteriori informazioni sull&#39;esecuzione del cleanup delle revisioni, [consulta questo articolo dedicato](/help/sites-deploying/revision-cleanup.md).
+Per ulteriori informazioni sull&#39;esecuzione di Pulizia revisioni, [consulta questo articolo dedicato](/help/sites-deploying/revision-cleanup.md).
 
 ### Pulizia dati binari di Lucene {#lucene-binaries-cleanup}
 
-Utilizzando l&#39;attività Pulizia binari Lucene, è possibile eliminare i binari lucene e ridurre il fabbisogno di dimensioni dell&#39;archivio dati in esecuzione. Il churn binario di Lucene viene recuperato quotidianamente invece della dipendenza precedente su un successo [raccolta oggetti inattivi dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md) esegui.
+Utilizzando l&#39;attività Pulizia dati binari di Lucene, è possibile eliminare i dati binari di Lucene e ridurre i requisiti relativi alle dimensioni dell&#39;archivio dati in esecuzione. L&#39;abbandono binario di Lucene viene recuperato quotidianamente invece della precedente dipendenza da un [raccolta di oggetti inattivi dell’archivio dati](/help/sites-administering/data-store-garbage-collection.md) esegui.
 
-Anche se l&#39;attività di manutenzione è stata sviluppata per ridurre i rifiuti di revisione relativi a Lucene, ci sono miglioramenti generali di efficienza quando si esegue l&#39;attività:
+Anche se l’attività di manutenzione è stata sviluppata per ridurre i rifiuti di revisione correlati a Lucene, vi sono miglioramenti generali di efficienza durante l’esecuzione dell’attività:
 
-* L&#39;esecuzione settimanale dell&#39;attività di raccolta degli oggetti inattivi dell&#39;archivio dati può essere completata più rapidamente.
-* Può anche migliorare leggermente le prestazioni complessive AEM.
+* L’esecuzione settimanale dell’attività di Garbage Collection dell’archivio dati può essere completata più rapidamente.
+* Può anche migliorare leggermente le prestazioni complessive dell’AEM.
 
-Puoi accedere all’attività Pulizia binari Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra Manutenzione giornaliera > Pulizia binari Lucene**.
+Puoi accedere all’attività Pulizia binary di Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra Manutenzione giornaliera > Pulizia dati binari Lucene**.
 
 ### Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
 
-Per informazioni dettagliate sulla raccolta degli oggetti inattivi nell&#39;archivio dati, consulta la sezione dedicata [pagina della documentazione](/help/sites-administering/data-store-garbage-collection.md).
+Per informazioni dettagliate sulla raccolta di oggetti inattivi dell’archivio dati, consulta la sezione dedicata [pagina della documentazione](/help/sites-administering/data-store-garbage-collection.md).
 
-### Eliminazione del flusso di lavoro {#workflow-purge}
+### Eliminazione flusso di lavoro {#workflow-purge}
 
-I flussi di lavoro possono anche essere eliminati dal dashboard di manutenzione. Per eseguire l&#39;attività Elimina flusso di lavoro, procedi come segue:
+I flussi di lavoro possono essere eliminati anche dal dashboard di manutenzione. Per eseguire l&#39;attività Rimozione flusso di lavoro, eseguire le operazioni seguenti:
 
-1. Fai clic sul pulsante **Finestra Manutenzione settimanale** pagina.
-1. Nella pagina seguente, fai clic su **Play** in **Eliminazione del flusso di lavoro** il Card.
+1. Fai clic su **Finestra di manutenzione settimanale** pagina.
+1. Nella pagina seguente, fai clic su **Play** nel **Eliminazione flusso di lavoro** Card.
 
 >[!NOTE]
 >
@@ -600,37 +600,37 @@ I flussi di lavoro possono anche essere eliminati dal dashboard di manutenzione.
 
 ### Manutenzione del registro di controllo {#audit-log-maintenance}
 
-Per la manutenzione del log di controllo, consulta la sezione [pagina separata della documentazione.](/help/sites-administering/operations-audit-log.md)
+Per la manutenzione del registro di controllo, vedere [pagina separata della documentazione.](/help/sites-administering/operations-audit-log.md)
 
 ### Pulizia delle versioni {#version-purge}
 
-È possibile pianificare l&#39;attività di manutenzione Pulizia versione per eliminare automaticamente le versioni precedenti. Questa azione riduce al minimo la necessità di utilizzare manualmente i [Strumenti per l’eliminazione delle versioni](/help/sites-deploying/version-purging.md). Puoi pianificare e configurare l&#39;attività Pulizia versione accedendo a **Strumenti > Operazioni > Manutenzione > Finestra Manutenzione settimanale** e segui questi passaggi:
+È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. Questa azione riduce al minimo la necessità di utilizzare manualmente [Strumenti di Pulizia delle versioni](/help/sites-deploying/version-purging.md). È possibile pianificare e configurare l&#39;attività Pulizia delle versioni accedendo a **Strumenti > Operazioni > Manutenzione > Finestra Manutenzione settimanale** e seguendo questi passaggi:
 
-1. Fai clic su **Aggiungi**.
-1. Scegli **Eliminazione versione** dal menu a discesa.
+1. Clic **Aggiungi**.
+1. Scegli **Pulizia versione** dal menu a discesa.
 
-   ![version_purge_Maintenanceancetask](assets/version_purge_maintenancetask.png)
+   ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
 
-1. Per configurare l&#39;attività Elimina versione, fai clic sul pulsante **ingranaggi** sulla scheda di manutenzione Version Purge appena creata.
+1. Per configurare l&#39;attività Pulizia delle versioni, fare clic sul pulsante **ingranaggi** sulla scheda di manutenzione Pulizia delle versioni appena creata.
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**Con AEM 6.4**, è possibile interrompere l&#39;attività di manutenzione Pulizia versione come segue:
+**Con AEM 6.4**, è possibile interrompere l&#39;attività di manutenzione Pulizia delle versioni come indicato di seguito:
 
-* Automaticamente - Se la finestra di manutenzione programmata viene chiusa prima del completamento dell&#39;attività, l&#39;attività viene arrestata automaticamente. Viene ripreso quando si apre la prossima finestra di manutenzione.
-* Manualmente: per interrompere manualmente l&#39;attività, nella scheda di manutenzione Pulizia versione fai clic sul pulsante **Interrompi** icona. All’esecuzione successiva, l’attività riprenderà in modo sicuro.
+* Automaticamente: se la finestra di manutenzione programmata si chiude prima che l&#39;attività possa essere completata, l&#39;attività si interrompe automaticamente. L&#39;operazione riprenderà all&#39;apertura della finestra di manutenzione successiva.
+* Manualmente: per interrompere manualmente l&#39;attività, nella scheda Pulizia delle versioni fare clic su **Interrompi** icona. Alla successiva esecuzione, l’attività riprenderà in modo sicuro.
 
 >[!NOTE]
 >
->Arrestare l&#39;attività di manutenzione significa sospenderne l&#39;esecuzione senza perdere traccia del processo già in corso.
+>Interrompere l&#39;attività di manutenzione significa sospenderne l&#39;esecuzione senza perdere la traccia del processo già in corso.
 
 >[!CAUTION]
 >
->Per ottimizzare le dimensioni del repository, eseguire frequentemente l&#39;attività di eliminazione della versione. L&#39;attività deve essere pianificata al di fuori dell&#39;orario di lavoro quando vi è una quantità limitata di traffico.
+>Per ottimizzare le dimensioni dell&#39;archivio, è consigliabile eseguire frequentemente l&#39;operazione di rimozione della versione. L’attività deve essere pianificata al di fuori dell’orario di lavoro in presenza di una quantità limitata di traffico.
 
 ## Attività di manutenzione personalizzate {#custom-maintenance-tasks}
 
-Le attività di manutenzione personalizzate possono essere implementate come servizi OSGi. Poiché l&#39;infrastruttura delle attività di manutenzione si basa sulla gestione dei processi di Apache Sling, un&#39;attività di manutenzione deve implementare l&#39;interfaccia Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Inoltre, deve dichiarare diverse proprietà di registrazione del servizio da rilevare come attività di manutenzione, come indicato di seguito:
+Le attività di manutenzione personalizzate possono essere implementate come servizi OSGi. Poiché l’infrastruttura delle attività di manutenzione si basa sulla gestione dei processi di Apache Sling, un’attività di manutenzione deve implementare l’interfaccia Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Inoltre, deve dichiarare diverse proprietà di registrazione del servizio da rilevare come attività di manutenzione, come indicato di seguito:
 
 <table>
  <tbody>
@@ -648,36 +648,36 @@ Le attività di manutenzione personalizzate possono essere implementate come ser
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
-   <td>Attributo booleano che definisce se un'attività è obbligatoria e deve essere eseguita periodicamente. Se un'attività è obbligatoria, ma al momento non è presente in alcuna finestra di pianificazione attiva, il controllo integrità segnala questo errore. Il valore predefinito è false.</td>
+   <td>Attributo booleano che definisce se un’attività è obbligatoria e deve essere eseguita periodicamente. Se un'attività è obbligatoria ma al momento non è presente in alcuna finestra di programmazione attiva, un controllo di integrità segnala questo errore. Il valore predefinito è false.</td>
    <td>vero</td>
    <td>Facoltativo</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
-   <td>Un nome univoco per l'attività: il nome viene utilizzato per fare riferimento all'attività ed è solo un nome semplice.</td>
-   <td>AttivitàManutenzionePersonale</td>
+   <td>Nome univoco per l'attività: il nome viene utilizzato per fare riferimento all'attività ed è solo un nome semplice.</td>
+   <td>MyMaintenanceTask</td>
    <td>Obbligatorio</td>
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
    <td>Titolo visualizzato per l'attività</td>
-   <td>Attività di manutenzione speciale</td>
+   <td>La mia attività di manutenzione speciale</td>
    <td>Obbligatorio</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Argomento univoco dell'attività di manutenzione.<br /> La gestione dei processi Apache Sling avvia un processo con esattamente questo argomento per eseguire l'attività di manutenzione e quando l'attività viene registrata per questo argomento viene eseguita.<br /> L'argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>Argomento univoco dell’attività di manutenzione.<br /> La gestione del processo Apache Sling avvia un processo esattamente con questo argomento per eseguire l’attività di manutenzione e quando l’attività viene registrata per questo argomento viene eseguita.<br /> L’argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obbligatorio</td>
   </tr>
  </tbody>
 </table>
 
-Oltre alle proprietà del servizio di cui sopra, il `process()` metodo `JobConsumer` L’interfaccia deve essere implementata aggiungendo il codice da eseguire per l’attività di manutenzione. Il `JobExecutionContext` può essere utilizzato per generare informazioni sullo stato, controllare se il processo viene interrotto dall&#39;utente e creare un risultato (riuscito o non riuscito).
+Oltre alle proprietà del servizio di cui sopra, il `process()` metodo del `JobConsumer` L’interfaccia deve essere implementata aggiungendo il codice da eseguire per l’attività di manutenzione. Il fornito `JobExecutionContext` può essere utilizzato per generare informazioni sullo stato, verificare se il processo viene interrotto dall’utente e creare un risultato (positivo o negativo).
 
-Per le situazioni in cui un’attività di manutenzione non deve essere eseguita su tutte le installazioni (ad esempio, eseguita solo sull’istanza di pubblicazione), puoi rendere il servizio necessario che una configurazione sia attiva aggiungendo `@Component(policy=ConfigurationPolicy.REQUIRE)`. Puoi quindi contrassegnare la configurazione in base alla modalità di esecuzione a seconda dell’archivio. Per ulteriori informazioni, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+Per le situazioni in cui un&#39;attività di manutenzione non deve essere eseguita su tutte le installazioni (ad esempio, eseguire solo sull&#39;istanza Publish), è possibile rendere il servizio necessario per attivare una configurazione aggiungendo `@Component(policy=ConfigurationPolicy.REQUIRE)`. Puoi quindi contrassegnare la configurazione corrispondente come dipendente dalla modalità di esecuzione nell’archivio. Per ulteriori informazioni, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
-Di seguito è riportato un esempio di un&#39;attività di manutenzione personalizzata che elimina i file da una directory temporanea configurabile che sono stati modificati nelle ultime 24 ore:
+Di seguito è riportato un esempio di attività di manutenzione personalizzata che elimina i file da una directory temporanea configurabile che sono stati modificati nelle ultime 24 ore:
 
 src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java
 
@@ -689,53 +689,53 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[experiencemanager-java-Maintenance-ancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[experiencemanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
-Una volta implementato, il servizio viene esposto all&#39;interfaccia utente del dashboard delle operazioni. È possibile aggiungerlo a una delle pianificazioni di manutenzione disponibili:
+Dopo che il servizio è stato distribuito, viene esposto all’interfaccia utente del dashboard operazioni. Puoi aggiungerlo a una delle pianificazioni di manutenzione disponibili:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Questa azione aggiunge una risorsa corrispondente in /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Se l&#39;attività dipende dalla modalità di esecuzione, la proprietà granite.operations.condition.runmode deve essere impostata su quel nodo con i valori delle modalità di esecuzione che devono essere attive per questa attività di manutenzione.
+Questa azione aggiunge una risorsa corrispondente in /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Se l&#39;attività dipende dalla modalità di esecuzione, la proprietà granite.operations.conditions.runmode deve essere impostata su tale nodo con i valori delle modalità di esecuzione che devono essere attive per l&#39;attività di manutenzione.
 
 ## Panoramica sistema {#system-overview}
 
-La **Dashboard di panoramica del sistema** visualizza una panoramica di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza AEM. Lo stato di integrità del sistema è trasparente e tutte le informazioni sono aggregate in un unico dashboard.
+Il **Dashboard panoramica sistema** visualizza una panoramica di alto livello della configurazione, dell’hardware e dello stato dell’istanza AEM. Lo stato di integrità del sistema è trasparente e tutte le informazioni sono aggregate in un unico dashboard.
 
 >[!NOTE]
 >
 >È inoltre possibile [guarda questo video](https://video.tv.adobe.com/v/21340) per un&#39;introduzione al dashboard Panoramica sistema.
 
-### Accesso {#how-to-access}
+### Come Accedere {#how-to-access}
 
-Per accedere alla dashboard Panoramica sistema, passa a **Strumenti > Operazioni > Panoramica del sistema**.
+Per accedere al dashboard Panoramica sistema, passare a **Strumenti > Operazioni > Panoramica sistema**.
 
 ![system_overview_dashboard](assets/system_overview_dashboard.png)
 
-### Spiegazione del dashboard di panoramica del sistema {#system-overview-dashboard-explained}
+### Informazioni sul dashboard Panoramica sistema {#system-overview-dashboard-explained}
 
-La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Panoramica sistema. Quando non sono presenti informazioni rilevanti da mostrare (ad esempio, il backup non è in corso, non sono presenti controlli di integrità critici) nella rispettiva sezione viene visualizzato il messaggio &quot;Nessuna voce&quot;.
+La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Panoramica sistema. Se non sono presenti informazioni rilevanti da mostrare (ad esempio, se il backup non è in corso o non sono presenti controlli di integrità critici), nella rispettiva sezione viene visualizzato il messaggio &quot;Nessuna voce&quot;.
 
-È inoltre possibile scaricare un `JSON` file che riepiloga le informazioni del dashboard facendo clic sul pulsante **Scarica** nell&#39;angolo superiore destro del dashboard. La `JSON` endpoint `/libs/granite/operations/content/systemoverview/export.json` e può essere utilizzato in `curl` script per il monitoraggio esterno.
+È inoltre possibile scaricare un `JSON` file che riepiloga le informazioni del dashboard facendo clic sul pulsante **Scarica** nell&#39;angolo superiore destro del dashboard. Il `JSON` l&#39;endpoint è `/libs/granite/operations/content/systemoverview/export.json` e può essere utilizzato in un `curl` script per il monitoraggio esterno.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Sezione</strong></td>
    <td><strong>Informazioni visualizzate</strong></td>
-   <td><strong>Quando è critico</strong></td>
+   <td><strong>Quando è fondamentale</strong></td>
    <td><strong>Collegamenti a</strong></td>
   </tr>
   <tr>
    <td>Verifiche stato</td>
    <td>
     <ul>
-     <li>un elenco dei controlli in stato critico</li>
-     <li>un elenco dei controlli in stato di avviso</li>
+     <li>un elenco di controlli che si trovano nello stato Critico</li>
+     <li>un elenco di assegni in stato Avvertenza</li>
     </ul> </td>
-   <td>Indicato visivamente:<br />
+   <td>A vista:<br />
     <ul>
      <li>un tag rosso per i controlli critici</li>
-     <li>un tag arancione per i controlli Avvisa</li>
+     <li>un tag arancione per i controlli di avviso</li>
     </ul> </td>
    <td>
     <ul>
@@ -748,11 +748,11 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
     <ul>
      <li>elenco delle attività non riuscite</li>
      <li>un elenco delle attività attualmente in esecuzione</li>
-     <li>un elenco delle attività completate nell'ultima esecuzione</li>
-     <li>un elenco delle attività che non sono mai state eseguite</li>
+     <li>elenco delle attività completate nell'ultima esecuzione</li>
+     <li>un elenco di attività che non sono mai state eseguite</li>
      <li>un elenco di attività non pianificate</li>
     </ul> </td>
-   <td><p>Indicato visivamente:</p>
+   <td><p>A vista:</p>
     <ul>
      <li>un tag rosso per le attività non riuscite</li>
      <li>un tag arancione per l’esecuzione delle attività (in quanto potrebbero influire sulle prestazioni)</li>
@@ -767,10 +767,10 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Sistema</td>
    <td>
     <ul>
-     <li>sistema operativo e versione del sistema operativo (ad esempio, macOS X)</li>
-     <li>media del carico del sistema, come recuperato da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">SistemaOperativoMXBeable</a></li>
-     <li>spazio su disco (sulla partizione in cui si trova la home directory)</li>
-     <li>heap massimo, come restituito da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
+     <li>versione del sistema operativo e del sistema operativo (ad esempio, macOS X)</li>
+     <li>media del carico di sistema, recuperata da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
+     <li>spazio su disco (nella partizione in cui si trova la home directory)</li>
+     <li>heap massimo, restituito da <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
    <td>N/D</td>
    <td>N/D</td>
@@ -779,9 +779,9 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Istanza</td>
    <td>
     <ul>
-     <li>la versione AEM</li>
+     <li>versione AEM</li>
      <li>elenco delle modalità di esecuzione</li>
-     <li>la data di avvio dell’istanza</li>
+     <li>la data in cui è stata avviata l’istanza</li>
     </ul> </td>
    <td>N/D</td>
    <td>N/D</td>
@@ -800,9 +800,9 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
        <li>per un archivio dati file, viene visualizzato il percorso</li>
        <li>per un archivio dati S3, viene visualizzato il nome del bucket S3</li>
        <li>per un archivio dati S3 condiviso, viene visualizzato il nome del bucket S3</li>
-       <li>per un archivio dati di Azure, viene visualizzato il contenitore</li>
+       <li>per un Azure Data Store, viene visualizzato il contenitore</li>
       </ul> </li>
-     <li>in assenza di un datastore esterno personalizzato, viene visualizzato un messaggio che indica che questo fatto è</li>
+     <li>se non è presente un archivio dati esterno personalizzato, viene visualizzato un messaggio che indica tale fatto</li>
     </ul> </td>
    <td>N/D</td>
    <td>N/D</td>
@@ -811,29 +811,29 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Agenti di distribuzione</td>
    <td>
     <ul>
-     <li>un elenco di agenti con code bloccate</li>
+     <li>elenco di agenti con code bloccate</li>
      <li>un elenco di agenti non configurati correttamente ("Errore di configurazione")</li>
-     <li>un elenco di agenti in attesa di elaborazione della coda</li>
-     <li>un elenco degli agenti inattivi</li>
-     <li>un elenco di agenti in esecuzione (che stanno elaborando voci)</li>
+     <li>elenco di agenti con elaborazione coda in pausa</li>
+     <li>un elenco di agenti inattivi</li>
+     <li>un elenco di agenti in esecuzione (che stanno attualmente elaborando le voci)</li>
     </ul> </td>
-   <td><p>Indicato visivamente:</p>
+   <td><p>A vista:</p>
     <ul>
-     <li>un tag rosso per gli agenti bloccati o gli errori di configurazione</li>
+     <li>un tag rosso per gli agenti bloccati o per gli errori di configurazione</li>
      <li>un tag arancione per gli agenti in pausa</li>
-     <li>un tag grigio per agenti in pausa, inattivi o in esecuzione<br /> </li>
+     <li>un tag grigio per gli agenti in pausa, inattivi o in esecuzione<br /> </li>
     </ul> </td>
-   <td>Pagina di distribuzione<br /> </td>
+   <td>Pagina Distribuzione<br /> </td>
   </tr>
   <tr>
    <td>Agenti di replica</td>
    <td>
     <ul>
-     <li>un elenco di agenti con code bloccate</li>
-     <li>un elenco degli agenti inattivi</li>
-     <li>un elenco di agenti in esecuzione (che stanno elaborando voci)</li>
+     <li>elenco di agenti con code bloccate</li>
+     <li>un elenco di agenti inattivi</li>
+     <li>un elenco di agenti in esecuzione (che stanno attualmente elaborando le voci)</li>
     </ul> </td>
-   <td><p>Indicato visivamente:<br /> </p>
+   <td><p>A vista:<br /> </p>
     <ul>
      <li>un tag rosso per gli agenti bloccati</li>
      <li>un tag grigio per gli agenti in pausa</li>
@@ -851,23 +851,23 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
       </ul> </li>
     </ul>
     <ul>
-     <li>Conteggi flussi di lavoro - numero di flussi di lavoro in un dato stato (se presenti):
+     <li>Conteggi flussi di lavoro: numero di flussi di lavoro in un determinato stato (se presenti):
       <ul>
-       <li>esecuzione</li>
+       <li>in esecuzione</li>
        <li>non riuscito</li>
        <li>sospeso</li>
        <li>interrotto</li>
       </ul> </li>
-    </ul> <p>Per ciascuno degli stati presentati sopra viene eseguita una query con un limite di 400 millisecondi. A 400 millisecondi viene visualizzato il numero di voci ottenute fino a quel momento.</p> </td>
+    </ul> <p>Per ciascuno degli stati presentati sopra viene eseguita una query, con un limite di 400 millisecondi. A 400 millisecondi, viene visualizzato il numero di voci ottenute fino a quel punto.</p> </td>
    <td><p>Non interpretato:</p>
     <ul>
-     <li>l’utente deve indagare in caso di flussi di lavoro e processi con stati imprevisti.</li>
+     <li>l’utente deve analizzare quando esistono flussi di lavoro e processi con stati imprevisti.</li>
     </ul> </td>
    <td>Pagina Errori di flusso di lavoro</td>
   </tr>
   <tr>
    <td>Processi Sling</td>
-   <td><p>Conteggi dei processi Sling - numero di processi in uno stato specifico (se presenti):</p>
+   <td><p>Conteggi processi Sling - numero di processi in un determinato stato (se presenti):</p>
     <ul>
      <li>non riuscito</li>
      <li>in coda</li>
@@ -876,7 +876,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
     </ul> </td>
    <td><p>Non interpretato:</p>
     <ul>
-     <li>l’utente deve indagare quando ci sono processi in stati imprevisti o con conteggi elevati.</li>
+     <li>l’utente deve analizzare quando ci sono processi con stati imprevisti o conteggi elevati.</li>
     </ul> </td>
    <td>N/D</td>
   </tr>
@@ -885,17 +885,17 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td><p>Numero stimato di:</p>
     <ul>
      <li>pagine</li>
-     <li>assets</li>
+     <li>risorse</li>
      <li>tag</li>
      <li>autorizzabili</li>
      <li>numero totale di nodi<br /> </li>
-    </ul> <p>Il numero totale di nodi viene ottenuto da nodeCounterMBean, mentre il resto delle statistiche viene ottenuto da IndexInfoService.</p> </td>
+    </ul> <p>Il numero totale di nodi viene ottenuto da nodeCounterMBean, mentre le altre statistiche vengono ottenute da IndexInfoService.</p> </td>
    <td>N/D</td>
    <td>N/D</td>
   </tr>
   <tr>
    <td>Backup</td>
-   <td>Visualizza il messaggio "Backup online in corso".</td>
+   <td>In tal caso, viene visualizzato "Backup online in corso".</td>
    <td>N/D</td>
    <td>N/D</td>
   </tr>
@@ -905,7 +905,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
     <ul>
      <li>"Indicizzazione in corso"</li>
      <li>"Query in corso"</li>
-    </ul> <p>Se un thread di indicizzazione o query è presente nel dump di thread.</p> </td>
+    </ul> <p>Se nel dump del thread è presente un thread di indicizzazione o di query.</p> </td>
    <td>N/D</td>
    <td>N/D</td>
   </tr>

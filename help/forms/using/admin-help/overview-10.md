@@ -1,7 +1,7 @@
 ---
 title: Panoramica di Workspace
 seo-title: Overview of Workspace
-description: L’area di lavoro consente agli utenti di avviare, partecipare e tenere traccia dei processi aziendali. Ulteriori informazioni sull’area di lavoro.
+description: L’area di lavoro consente agli utenti di avviare, partecipare e tenere traccia dei processi aziendali. Apprendiamo ulteriori informazioni sull’area di lavoro.
 seo-description: The workspace lets users start, participate in, and track business processes. Let us learn more about the workspace.
 uuid: 25374641-a70b-485a-8d34-5d7b156c08e8
 contentOwner: admin
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 Workspace consente agli utenti di avviare, partecipare e tenere traccia dei processi aziendali.
 
-Nelle pagine Workspace nella console di amministrazione puoi eseguire le seguenti attività:
+Nelle pagine di Workspace della console di amministrazione, puoi eseguire le seguenti attività:
 
-* Impostare il messaggio da visualizzare nella pagina Benvenuto dell&#39;interfaccia utente di Workspace
-* Configurare i modelli di ricerca da utilizzare in Workspace per la ricerca di processi e attività
+* Impostare il messaggio da visualizzare nella pagina di benvenuto dell&#39;interfaccia utente di Workspace
+* Configurare i modelli di ricerca da utilizzare in Workspace per cercare processi e attività
 * Importare ed esportare modelli di ricerca e impostazioni globali
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per AEM versione dei moduli.
+>Flex Workspace è obsoleto per il rilascio di moduli AEM.
 
 >[!NOTE]
 >
->È necessario utilizzare i metodi di navigazione all’interno della console di amministrazione. Non utilizzare i pulsanti Indietro, Avanti o Aggiorna nel browser Web. L’utilizzo di questi pulsanti può causare problemi di acquisizione e visualizzazione dei dati.
+>È necessario utilizzare i metodi di navigazione all’interno della console di amministrazione. Non utilizzare i pulsanti Indietro, Avanti o Aggiorna nel browser Web. L&#39;utilizzo di questi pulsanti può causare problemi di acquisizione e visualizzazione dei dati.

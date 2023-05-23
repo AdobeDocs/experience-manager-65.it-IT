@@ -14,31 +14,31 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 97%
+ht-degree: 55%
 
 ---
 
 # Console Componenti{#components-console}
 
-La console Componenti consente di consultare tutti i componenti definiti nell’istanza e di visualizzare le informazioni chiave di ciascun componente.
+La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave di ciascun componente.
 
 È possibile accedervi da **Strumenti ->** **Generale ->** **Componenti**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
 
-![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
+![schermata_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
->La console dei componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili per gli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
+>La console Componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili per gli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
 
 ## Ricerca {#searching}
 
 L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello **Ricerca** per cercare e/o filtrare i componenti:
 
-![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
+![schermata_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
 ### Dettagli dei componenti {#component-details}
 
-Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic sulla risorsa desiderata. Sono disponibili tre schede:
+Per visualizzare i dettagli di un componente specifico, tocca o fai clic sulla risorsa richiesta. Tre schede forniscono:
 
 * **Proprietà**
 
@@ -47,12 +47,12 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
    Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
-   * Visualizzare come è stata definita [l’icona o l’abbreviazione](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+   * Visualizza come [è stata definita un&#39;icona o un&#39;abbreviazione](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
-      * Facendo clic sull’origine dell’icona passerai al relativo componente.
-   * Visualizzare il **tipo di risorsa** e il **Super Type della risorsa** (se definito) per il componente.
+      * Facendo clic sull’origine dell’icona si aprirà quel componente.
+   * Visualizza **Tipo di risorsa** e **Super Type risorsa** (se definito) per il componente.
 
-      * Facendo clic su Super Type della risorsa passerai al relativo componente.
+      * Facendo clic sul Super Type della risorsa si aprirà quel componente.
    >[!NOTE]
    >
    >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
@@ -71,6 +71,6 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
 
 * **Documentazione**
 
-   Se lo sviluppatore ha fornito la [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa viene visualizzata nella scheda **Documentazione**. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
+   Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)

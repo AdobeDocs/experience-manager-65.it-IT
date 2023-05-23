@@ -1,7 +1,7 @@
 ---
 title: Backup e ripristino del repository EMC Documentum
 seo-title: Backing up and recovering the EMC Documentum repository
-description: Questo documento descrive le attività necessarie per eseguire il backup e il ripristino del repository EMC Documentum configurato per l'ambiente dei moduli AEM.
+description: In questo documento vengono descritte le attività necessarie per eseguire il backup e il ripristino del repository EMC Documentum configurato per l'ambiente dei moduli AEM.
 seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
@@ -19,44 +19,44 @@ ht-degree: 0%
 
 # Backup e ripristino del repository EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
-Questa sezione descrive le attività necessarie per eseguire il backup e il ripristino del repository EMC Documentum configurato per l&#39;ambiente dei moduli AEM.
+In questa sezione vengono descritte le attività necessarie per eseguire il backup e il ripristino del repository EMC Documentum configurato per l&#39;ambiente dei moduli AEM.
 
 >[!NOTE]
 >
->Queste istruzioni presuppongono l&#39;installazione e la configurazione dei moduli AEM con i connettori per ECM e EMC Documentum Content Server in base alle esigenze.
+>Queste istruzioni presuppongono che i moduli AEM con Connectors per ECM e EMC Documentum Content Server siano installati e configurati come necessario.
 
 Per i processi di backup e ripristino sono disponibili due attività principali:
 
-* Eseguire il backup (o il ripristino) dell’ambiente dei moduli AEM.
-* Backup (o ripristino) di EMC Documentum Content Server.
+* Il backup (o il ripristino) dell’ambiente AEM Forms.
+* Backup o ripristino di EMC Documentum Content Server.
 
 >[!NOTE]
 >
->Eseguire il backup dei dati dei moduli AEM prima di eseguire il backup del sistema EMC Documentum e successivamente ripristinare il sistema EMC Documentum prima di ripristinare l&#39;ambiente dei moduli AEM.
+>Eseguire il backup dei dati dei moduli AEM prima di eseguire il backup del sistema EMC Documentum, quindi ripristinare il sistema EMC Documentum prima di ripristinare l&#39;ambiente dei moduli AEM.
 
 ## Requisiti software {#software-requirements}
 
-Per eseguire le attività di backup necessarie su EMC Documentum Content Server, acquistare un&#39;utility di terze parti appropriata, come EMC NetWorker da EMC o CYA SmartRecovery per EMC Documentum da CYA. Le istruzioni seguenti descrivono i passaggi necessari per l&#39;utilizzo del modulo EMC NetWorker versione 7.2.2.
+Per eseguire le attività di backup necessarie sul Content Server EMC Documentum, acquistare un&#39;utility di terze parti appropriata, ad esempio EMC NetWorker di EMC o CYA SmartRecovery per EMC Documentum di CYA. Le istruzioni seguenti descrivono i passaggi per l&#39;utilizzo del modulo EMC NetWorker versione 7.2.2.
 
 Sono necessari i seguenti moduli EMC NetWorker:
 
 * Modulo NetWorker
-* Configurazione guidata NetWorker
+* Configurazione guidata di NetWorker
 * Configurazione guidata dispositivo NetWorker
-* Modulo NetWorker per il tipo di database utilizzato da Content Server
+* Modulo NetWorker per il tipo di database utilizzato dal Content Server
 * Modulo NetWorker per Documentum
 
 ## Preparazione di EMC Document Content Server per il backup e il ripristino {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
-Questa sezione descrive l&#39;installazione e la configurazione del software EMC NetWorker sul server dei contenuti.
+Questa sezione descrive l&#39;installazione e la configurazione del software EMC NetWorker su Content Server.
 
-**Preparazione del server EMC Documentum per il backup**
+**Preparare il server EMC Documentum per il backup**
 
-1. In EMC Documentum Content Server, installare i moduli EMC NetWorker, accettando tutte le impostazioni predefinite.
+1. Su EMC Documentum Content Server, installare i moduli EMC NetWorker, accettando tutte le impostazioni predefinite.
 
-   Durante i processi di installazione, viene richiesto di immettere il nome server del computer Content Server come *Nome server NetWorker*. Quando si installa il modulo EMC NetWorker per il database, scegliere un&#39;installazione &quot;Completa&quot;.
+   Durante i processi di installazione, viene richiesto di immettere il nome del server del computer Content Server come *Nome server NetWorker*. Quando si installa il modulo EMC NetWorker per il database, scegliere un&#39;installazione &quot;completa&quot;.
 
-1. Utilizzando il contenuto di esempio riportato di seguito, crea un file di configurazione denominato *nsrnmd_win.cfg* e salvarlo in un percorso accessibile su Content Server. Questo file verrà chiamato dai comandi di backup e ripristino.
+1. Utilizzando il contenuto di esempio seguente, crea un file di configurazione denominato *nsrnmd_win.cfg* e salvarlo in una posizione accessibile sul Content Server. Il file verrà richiamato dai comandi di backup e ripristino.
 
    Il testo seguente contiene caratteri di formattazione per le interruzioni di riga. Se si copia il testo in una posizione esterna al documento, copiare una parte alla volta e rimuovere i caratteri di formattazione quando si incolla il testo nella nuova posizione.
 
@@ -187,60 +187,60 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Mantenere il campo password del file di configurazione `NMDDE_DM_PASSWD` vuoto. Imposta la password nel passaggio successivo.
+   Mantieni il campo della password del file di configurazione `NMDDE_DM_PASSWD` vuoto. La password verrà impostata nel passaggio successivo.
 
-1. Imposta la password del file di configurazione come segue:
+1. Impostare la password del file di configurazione come segue:
 
    * Apri un prompt dei comandi e cambia in `[NetWorker_root]\Legato\nsr\bin`.
    * Esegui il comando seguente: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. Crea i file batch eseguibili (.bat) utilizzati per il backup del database. (consultare la documentazione di NetWorker.) Imposta i dettagli nei file batch in base all&#39;installazione.
+1. Creare i file batch eseguibili (con estensione bat) utilizzati per eseguire il backup del database. Consultare la documentazione di NetWorker. Impostare i dettagli nei file batch in base all&#39;installazione.
 
    * Backup completo del database (nsrnmddbf.bat):
 
       `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
-   * Backup del database incrementale (nsrnmddbi.bat):
+   * Backup incrementale del database (nsrnmddbi.bat):
 
       `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
-   * Backup del registro di database (nsrnmddbl.bat):
+   * Backup del log del database (nsrnmddbl.bat):
 
       `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
       Dove:
 
-      `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker. Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+      `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-      `NetWorker_Server_Name` è il server in cui è installato NetWorker.
+      `NetWorker_Server_Name` è il server su cui è installato NetWorker.
 
-      `username` &amp; `password` sono il nome utente e la password dell&#39;utente amministratore del database.
+      `username` E `password` sono il nome utente e la password dell&#39;utente amministratore del database.
 
       `database_name` è il nome del database di cui eseguire il backup.
 
 **Creare un dispositivo di backup**
 
-1. Crea una nuova directory sul server EMC Documentum e condividi la cartella assegnando diritti completi a tutti gli utenti.
-1. Avviare EMC NetWorker Administrator e fare clic su Media Management > Dispositivi.
+1. Creare una nuova directory sul server EMC Documentum e condividere la cartella concedendo diritti completi a tutti gli utenti.
+1. Avviare EMC NetWorker Administrator e fare clic su Gestione supporti > Dispositivi.
 1. Fare clic con il pulsante destro del mouse su Dispositivi e selezionare Crea.
-1. Immetti i seguenti valori e fai clic su OK:
+1. Immettete i seguenti valori e fate clic su OK:
 
    **Nome:** Percorso completo della directory condivisa
 
-   **Tipo di supporto:** `File`
+   **Tipo di file multimediale:** `File`
 
 1. Fare clic con il pulsante destro del mouse sul nuovo dispositivo e selezionare Operazioni.
-1. Fare clic su Etichetta, immettere un nome, fare clic su OK e quindi su Montaggio.
+1. Fare clic su Etichetta, immettere un nome, fare clic su OK e quindi su Monta.
 
-Viene aggiunto un dispositivo al quale verranno salvati i file di backup. È possibile aggiungere più dispositivi di formati diversi.
+Viene aggiunta una periferica alla quale verranno salvati i file di cui è stato eseguito il backup. È possibile aggiungere più dispositivi di formati diversi.
 
 ## Backup di EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Esegui le seguenti operazioni dopo aver completato un backup completo dei dati dei moduli AEM. (Vedi [Backup dei dati dei moduli AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Dopo aver completato un backup completo dei dati dei moduli AEM, esegui le seguenti attività. (vedere [Backup dei dati dei moduli AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Gli script di comando richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Gli script dei comandi richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Apri un prompt dei comandi e cambia in `[NetWorker_root]\Legato\nsr\bin`.
 1. Esegui il comando seguente:
@@ -251,17 +251,17 @@ Esegui le seguenti operazioni dopo aver completato un backup completo dei dati d
 
 ## Ripristino di EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-Eseguire le operazioni seguenti prima di ripristinare i dati dei moduli AEM. (Vedi [Ripristino dei dati dei moduli AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Prima di ripristinare i dati dei moduli AEM, eseguire le operazioni seguenti. (vedere [Recupero dei dati dei moduli dell’AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Gli script di comando richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Gli script dei comandi richiedono il percorso completo del file nsrnmd_win.cfg creato in [Preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Arrestare il servizio Docbase che si sta ripristinando.
-1. Avviare l&#39;utility NetWorker User per il modulo di database (ad esempio, *Utente NetWorker per SQL Server*).
+1. Avviare l&#39;utilità utente NetWorker per il modulo di database (ad esempio, *Utente NetWorker per SQL Server*).
 1. Fare clic sullo strumento Ripristina, quindi selezionare Normale.
-1. Sul lato sinistro dello schermo, selezionare il database del Docbase e fare clic sul pulsante Start sulla barra degli strumenti.
-1. Quando il database viene ripristinato, riavviare il servizio Docbase.
+1. Nella parte sinistra della schermata selezionare il database del Docbase e fare clic sul pulsante Start sulla barra degli strumenti.
+1. Al ripristino del database, riavviare il servizio Docbase.
 1. Apri un prompt dei comandi e cambia in *[NetWorker_root]*\Legato\nsr\bin
 1. Esegui il comando seguente:
 

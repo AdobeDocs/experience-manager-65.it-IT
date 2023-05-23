@@ -1,5 +1,5 @@
 ---
-title: Genera documento di record per i moduli adattivi
+title: Generare un documento di record per i moduli adattivi
 seo-title: Generate Document of Record for adaptive forms
 description: Spiega come generare un modello per un documento di record (DoR) per i moduli adattivi.
 seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
@@ -14,83 +14,83 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
-# Genera documento di record per i moduli adattivi{#generate-document-of-record-for-adaptive-forms}
+# Generare un documento di record per i moduli adattivi{#generate-document-of-record-for-adaptive-forms}
 
 ## Panoramica {#overview}
 
-Dopo l&#39;invio di un modulo, i clienti in genere desiderano conservare un record, in formato cartaceo o in formato documento, delle informazioni che hanno compilato nel modulo per il riferimento futuro. Tale documento è denominato documento di registrazione.
+Dopo aver inviato un modulo, i clienti in genere desiderano conservare una registrazione, in formato cartaceo o documentale, delle informazioni che hanno compilato nel modulo per riferimento futuro. Tale documento è denominato documento di record.
 
 Questo articolo spiega come generare un documento di record per i moduli adattivi.
 
 >[!NOTE]
 >
->La generazione automatica del documento di record non è supportata per i moduli adattivi basati su XFA. Tuttavia, è possibile utilizzare XDP utilizzato per creare il modulo adattivo come documento di record.
+>La generazione automatica di documenti di record non è supportata per i moduli adattivi basati su XFA. Tuttavia, puoi utilizzare l’XDP utilizzato per creare il modulo adattivo come documento di record.
 
-## Tipi di moduli adattivi e relativi documenti di registrazione {#adaptive-form-types-and-their-documents-of-record}
+## Tipi di moduli adattivi e relativi documenti di record {#adaptive-form-types-and-their-documents-of-record}
 
-Quando si crea un modulo adattivo, è possibile selezionare un modello di modulo. Le opzioni disponibili sono:
+Quando crei un modulo adattivo, puoi selezionare un modello di modulo. Le opzioni disponibili sono:
 
 * [Modelli di modulo](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
-Consente di selezionare un modello XFA per il modulo adattivo. Quando selezioni un modello XFA, puoi utilizzare il file XDP associato per il documento di record come descritto sopra.
+Consente di selezionare un modello XFA per il modulo adattivo. Quando selezioni un modello XFA, puoi utilizzare il file XDP associato per il documento di record come descritto in precedenza.
 
 * [Schema XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
-Consente di selezionare una definizione di schema XML per il modulo adattivo. Quando si seleziona uno schema XML per il modulo adattivo, è possibile:
+Consente di selezionare una definizione di schema XML per il modulo adattivo. Quando selezioni uno schema XML per il modulo adattivo, puoi:
 
-   * Associa un modello XFA per il documento del record. Assicurati che il modello XFA associato utilizzi lo stesso schema XML del modulo adattivo
-   * Genera automaticamente il documento di registrazione
+   * Associa un modello XFA per un documento record. Assicurati che il modello XFA associato utilizzi lo stesso schema XML del modulo adattivo
+   * Genera automaticamente documento record
 
 * Nessuno Consente di creare un modulo adattivo senza un modello di modulo. Il documento di record viene generato automaticamente per il modulo adattivo.
 
-Quando si seleziona un modello di modulo, configurare il documento di record utilizzando le opzioni disponibili in Configurazione modello documento di record. Vedi [Configurazione del modello del documento di record](#document-of-record-template-configuration).
+Quando selezioni un modello di modulo, configura il documento di record utilizzando le opzioni disponibili in Configurazione modello documento di record. Consulta [Configurazione modello documento record](#document-of-record-template-configuration).
 
-## Documento generato automaticamente {#automatically-generated-document-of-record}
+## Documento di record generato automaticamente {#automatically-generated-document-of-record}
 
-Un documento di registrazione consente ai clienti di conservare una copia del modulo inviato a scopo di stampa. Quando si genera automaticamente un documento di record, ogni volta che si modifica il modulo, il relativo documento di record viene aggiornato immediatamente. Ad esempio, è possibile rimuovere il campo di età per i clienti che selezionano Stati Uniti d’America come proprio paese. Quando tali clienti generano un documento di record, il campo età non è visibile nel documento di record.
+Un documento record consente ai clienti di conservare una copia del modulo inviato a scopo di stampa. Quando si genera automaticamente un documento di record, ogni volta che si modifica il modulo, il relativo documento di record viene aggiornato immediatamente. Ad esempio, rimuovi il campo età per i clienti che hanno selezionato Stati Uniti d’America come paese. Quando tali clienti generano un documento di record, il campo età non è visibile nel documento di record.
 
-Il documento generato automaticamente presenta i seguenti vantaggi:
+Il documento di record generato automaticamente presenta i seguenti vantaggi:
 
-* Si occupa del binding dei dati.
-* Nasconde automaticamente i campi contrassegnati come esclusi dal documento al momento dell&#39;invio. Non è necessario uno sforzo supplementare.
-* Consente di risparmiare tempo per la progettazione di documenti di modelli di record.
-* Consente di provare stili e aspetto diversi utilizzando diversi modelli di base e scegliere lo stile e l&#39;aspetto migliori per il documento di record. Gli stili sono facoltativi e, se non si specifica lo stile, gli stili di sistema sono impostati come predefiniti.
-* In questo modo qualsiasi modifica del modulo viene immediatamente riflessa nel documento di registrazione.
+* Si occupa dell’associazione dei dati.
+* Nasconde automaticamente i campi contrassegnati come esclusi dal documento record al momento dell’invio. Non è richiesto alcuno sforzo aggiuntivo.
+* Consente di risparmiare tempo per la progettazione di un documento di modello record.
+* Consente di provare stili e aspetti diversi utilizzando diversi modelli di base e di scegliere lo stile e l&#39;aspetto migliori per il documento di record. Gli aspetti degli stili sono facoltativi. Se non specificate gli stili, gli stili di sistema vengono impostati come predefiniti.
+* Garantisce che qualsiasi modifica apportata al modulo venga immediatamente riportata nel documento di record.
 
-## Componenti per generare automaticamente un documento di registrazione {#components-to-automatically-generate-a-document-of-record}
+## Componenti per generare automaticamente un documento di record {#components-to-automatically-generate-a-document-of-record}
 
 Per generare un documento di record per i moduli adattivi, sono necessari i seguenti componenti:
 
 **Modulo adattivo** Modulo adattivo per il quale si desidera generare un documento di record.
 
-**Modello di base (consigliato)** Modello XFA (file XDP) creato in AEM Designer. Il modello di base viene utilizzato per specificare le informazioni relative allo stile e al branding per il modello di documento.
+**Modello di base (consigliato)** Modello XFA (file XDP) creato in Progettazione AEM. Il modello base viene utilizzato per specificare lo stile e le informazioni di branding per il modello del documento record.
 
-Vedi [Modello di base di un documento di registrazione](#base-template-of-a-document-of-record)
+Consulta [Modello di base di un documento record](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
->Il modello di base di un documento di record è anche chiamato meta-template di un documento di record.
+>Il modello base di un documento record è anche chiamato metamodello di un documento record.
 
-**Documento del modello di record** Modello XFA (file XDP) generato da un modulo adattivo.
+**Modello del documento record** Modello XFA (file XDP) generato da un modulo adattivo.
 
-Vedi [Configurazione del modello del documento di record](#document-of-record-template-configuration).
+Consulta [Configurazione modello documento record](#document-of-record-template-configuration).
 
-**Dati modulo** Informazioni inserite da un utente nel modulo adattivo. Si unisce al documento del modello di record per generare il documento di record.
+**Dati modulo** Informazioni inserite da un utente nel modulo adattivo. Si unisce con il modello del documento record per generare il documento record.
 
-## Mappatura degli elementi dei moduli adattivi {#mapping-of-adaptive-form-elements}
+## Mappatura degli elementi del modulo adattivo {#mapping-of-adaptive-form-elements}
 
-Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono visualizzati nel documento di registrazione.
+Nelle sezioni seguenti viene descritto come gli elementi di un modulo adattivo vengono visualizzati nel documento di record.
 
 ### Campi {#fields}
 
 <table>
  <tbody>
   <tr>
-   <th>Componente per moduli adattivi</th>
+   <th>Componente modulo adattivo</th>
    <th>Componente XFA corrispondente</th>
-   <th>Incluso per impostazione predefinita nel documento Modello record?</th>
+   <th>Incluso per impostazione predefinita nel modello del documento record?</th>
    <th>Note</th>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono
   </tr>
   <tr>
    <td>Firma a mano</td>
-   <td>Firma</td>
+   <td>Disegno a mano</td>
    <td>vero</td>
    <td> </td>
   </tr>
@@ -155,7 +155,7 @@ Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono
   </tr>
   <tr>
    <td>Pulsante Invia</td>
-   <td><p>Pulsante Invia per e-mail</p> <p>Pulsante Invia per HTTP</p> </td>
+   <td><p>Pulsante Invia e-mail</p> <p>Pulsante invio HTTP</p> </td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -169,7 +169,7 @@ Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono
    <td>Allegato file</td>
    <td> </td>
    <td>false</td>
-   <td>Non disponibile nel modello di documento. Disponibile solo nel documento di registrazione attraverso gli allegati.</td>
+   <td>Non disponibile nel modello del documento record. Disponibile solo in un documento record tramite allegati.</td>
   </tr>
  </tbody>
 </table>
@@ -179,157 +179,157 @@ Nelle sezioni seguenti viene descritto come gli elementi modulo adattivi vengono
 <table>
  <tbody>
   <tr>
-   <th>Componente per moduli adattivi</th>
+   <th>Componente modulo adattivo</th>
    <th>Componente XFA corrispondente</th>
    <th>Note</th>
   </tr>
   <tr>
    <td>Pannello<br /> </td>
    <td>Sottomodulo<br /> </td>
-   <td>Il pannello ripetibile è associato a un sottomodulo ripetibile.</td>
+   <td>Il pannello ripetibile viene mappato su una sottomaschera ripetibile.</td>
   </tr>
  </tbody>
 </table>
 
 ### Componenti statici {#static-components}
 
-| Componente per moduli adattivi | Componente XFA corrispondente | Note |
+| Componente modulo adattivo | Componente XFA corrispondente | Note |
 |---|---|---|
-| Immagine | Immagine | I componenti TestoDisegno e Immagine, associati o non associati, vengono sempre visualizzati nel documento di record di un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
+| Immagine | Immagine | I componenti TextDraw e Image, sia associati che non associati, vengono sempre visualizzati nel documento di record di un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
 | Testo | Testo |
 
 >[!NOTE]
 >
->Nell’interfaccia classica, sono disponibili diverse schede per la modifica delle proprietà dei campi.
+>Nell’interfaccia classica, si ottengono schede diverse per la modifica delle proprietà dei campi.
 
 ### Tabelle {#tables}
 
-I componenti della tabella dei moduli adattivi, come intestazione, piè di pagina e mappa di riga, vengono associati ai componenti XFA corrispondenti. È possibile mappare pannelli ripetibili su tabelle nel documento di registrazione.
+I componenti della tabella per moduli adattivi come intestazione, piè di pagina e riga vengono mappati sui componenti XFA corrispondenti. Puoi mappare i pannelli ripetibili alle tabelle nel documento di record.
 
-## Modello di base di un documento di registrazione {#base-template-of-a-document-of-record}
+## Modello di base di un documento record {#base-template-of-a-document-of-record}
 
-Il modello di base fornisce informazioni sullo stile e l&#39;aspetto del documento di record. Consente di personalizzare l&#39;aspetto predefinito del documento di record generato automaticamente. Ad esempio, aggiungere il logo della società nell’intestazione e le informazioni sul copyright nel piè di pagina del documento di registrazione. La pagina master del modello di base viene utilizzata come pagina master per il modello di documento. La pagina master può contenere informazioni quali intestazione di pagina, piè di pagina e numero di pagina che è possibile applicare al documento di record. È possibile applicare tali informazioni al documento di registrazione utilizzando il modello di base per la generazione automatica del documento di record. L’utilizzo del modello base consente di modificare le proprietà predefinite dei campi.
+Il modello base fornisce informazioni sullo stile e sull&#39;aspetto del documento di record. Consente di personalizzare l&#39;aspetto predefinito del documento di record generato automaticamente. Ad esempio, si desidera aggiungere il logo della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina del documento record. La pagina master del modello base viene utilizzata come pagina master per il modello del documento record. La pagina master può contenere informazioni quali intestazione di pagina, piè di pagina e numero di pagina che è possibile applicare al documento di record. È possibile applicare tali informazioni al documento record utilizzando il modello base per la generazione automatica del documento record. L&#39;utilizzo del modello di base consente di modificare le proprietà predefinite dei campi.
 
-Segui [Convenzioni dei modelli di base](#base-template-conventions) quando si progetta un modello di base.
+Segui [Convenzioni modello base](#base-template-conventions) quando si progetta un modello di base.
 
-## Convenzioni dei modelli di base {#base-template-conventions}
+## Convenzioni modello base {#base-template-conventions}
 
-Un modello di base viene utilizzato per definire intestazione, piè di pagina, stile e aspetto di un documento di record. L’intestazione e il piè di pagina possono includere informazioni quali il logo dell’azienda e il testo del copyright. La prima pagina master del modello base viene copiata e utilizzata come pagina master per il documento del record, che contiene intestazione, piè di pagina, numero di pagina o qualsiasi altra informazione che deve essere visualizzata in tutte le pagine del documento del record. Se si utilizza un modello di base non conforme alle convenzioni del modello di base, la prima pagina master del modello di base viene ancora utilizzata nel modello di documento. Si consiglia vivamente di progettare il modello di base in base alle sue convenzioni e di utilizzarlo per la generazione automatica del documento di registrazione.
+Un modello di base viene utilizzato per definire intestazione, piè di pagina, stile e aspetto di un documento di record. L&#39;intestazione e il piè di pagina possono includere informazioni quali il logo aziendale e il testo del copyright. La prima pagina master del modello di base viene copiata e utilizzata come pagina master per il documento di record, che contiene intestazione, piè di pagina, numero di pagina o qualsiasi altra informazione da visualizzare in tutte le pagine del documento di record. Se si utilizza un modello di base non conforme alle convenzioni del modello di base, la prima pagina master del modello di base viene ancora utilizzata nel modello del documento record. È consigliabile progettare il modello di base in base alle relative convenzioni e utilizzarlo per la generazione automatica del documento di record.
 
-**Convenzioni delle pagine master**
+**Convenzioni della pagina mastro**
 
-* Nel modello di base, assegnare al sottomodulo principale un nome come `AF_METATEMPLATE` e la pagina master come `AF_MASTERPAGE`.
+* Nel modello di base, è necessario denominare il sottomodulo principale come `AF_METATEMPLATE` e la pagina master come `AF_MASTERPAGE`.
 
-* La pagina master con il nome `AF_MASTERPAGE` situato sotto `AF_METATEMPLATE` al sottomodulo principale viene data la preferenza per l’estrazione di informazioni relative a intestazione, piè di pagina e stile.
+* Pagina master con il nome `AF_MASTERPAGE` si trova sotto `AF_METATEMPLATE` alla sottomaschera principale viene data la preferenza per l&#39;estrazione di informazioni su intestazione, piè di pagina e stile.
 
-* Se `AF_MASTERPAGE` è assente, viene utilizzata la prima pagina master presente nel modello base.
+* Se `AF_MASTERPAGE` è assente, viene utilizzata la prima pagina master presente nel modello di base.
 
 **Convenzioni di stile per i campi**
 
-* Per applicare lo stile ai campi del documento di record, il modello di base fornisce i campi che si trovano nel `AF_FIELDSSUBFORM` sotto il `AF_METATEMPLATE` sottomodulo principale.
+* Per applicare lo stile ai campi del documento record, il modello di base fornisce i campi che si trovano nel `AF_FIELDSSUBFORM` sottometti sotto `AF_METATEMPLATE` sottomodulo principale.
 
-* Le proprietà di questi campi vengono applicate ai campi del documento di registrazione. Questi campi devono seguire `AF_<name of field in all caps>_XFO` convenzione di denominazione. Ad esempio, il nome del campo per la casella di controllo deve essere `AF_CHECKBOX_XFO`.
+* Le proprietà di questi campi vengono applicate ai campi del documento record. Questi campi devono seguire la `AF_<name of field in all caps>_XFO` convenzione di denominazione. Ad esempio, il nome del campo per la casella di controllo deve essere `AF_CHECKBOX_XFO`.
 
-Per creare un modello di base, eseguire le operazioni seguenti in AEM Designer.
+Per creare un modello di base, eseguire le operazioni seguenti in Progettazione AEM.
 
-1. Fai clic su **File > Nuovo**.
-1. Seleziona la **Basato su un modello** opzione .
+1. Clic **File > Nuovo**.
+1. Seleziona la **In base a un modello** opzione.
 
-1. Seleziona la **Forms - Documento di registrazione** categoria.
-1. Seleziona **Modello di base DoR**.
-1. Fai clic su **Successivo** e fornire le informazioni richieste.
+1. Seleziona la **Forms - Documento record** categoria.
+1. Seleziona **Modello base DoR**.
+1. Clic **Successivo** e fornire le informazioni richieste.
 
-1. (Facoltativo) Modificare lo stile e l’aspetto dei campi che si desidera applicare ai campi del documento di record.
+1. (Facoltativo) Modificare lo stile e l&#39;aspetto dei campi che si desidera applicare ai campi del documento record.
 1. Salvare il modulo.
 
-È ora possibile utilizzare il modulo salvato come modello base per il documento di record.
+È ora possibile utilizzare il modulo salvato come modello di base per il documento di record.
 Non modificare o rimuovere gli script presenti nel modello di base.
 
 **Modifica del modello di base**
 
-* Se non si applica alcuno stile sui campi nel modello di base, è consigliabile rimuovere tali campi dal modello di base in modo che tutti gli aggiornamenti al modello di base vengano prelevati automaticamente.
-* Durante la modifica del modello di base, non rimuovere, aggiungere o modificare script.
+* Se non si applica alcuno stile ai campi nel modello di base, è consigliabile rimuovere tali campi dal modello di base in modo che gli aggiornamenti al modello di base vengano selezionati automaticamente.
+* Durante la modifica del modello di base, non rimuovere, aggiungere o modificare gli script.
 
 >[!NOTE]
 >
->Progettare un modello di base utilizzando le convenzioni e seguendo rigorosamente i passaggi descritti in precedenza.
+>Progettare il modello base utilizzando le convenzioni e seguendo rigorosamente i passaggi descritti in precedenza.
 
 ## Configurazione modello del documento record {#document-of-record-template-configuration}
 
-Configurare il modello di documento del modulo per consentire ai clienti di scaricare una copia del modulo inviato in formato cartaceo. Un file XDP funge da documento del modello di record. Il documento scaricato dai clienti del record viene formattato in base al layout specificato nel file XDP.
+Configurare il modello del documento di record del modulo per consentire ai clienti di scaricare una copia stampabile del modulo inviato. Un file XDP funge da modello del documento di record. Il documento di record che i clienti scaricano viene formattato in base al layout specificato nel file XDP.
 
 Per configurare un documento di record per i moduli adattivi, effettua le seguenti operazioni:
 
-1. Nell’istanza AEM autore, fai clic su **Forms > Forms e documenti.**
-1. Selezionare un modulo e fare clic su **Visualizza proprietà**.
-1. Nella finestra Proprietà, tocca **Modello Modulo**.
-È inoltre possibile selezionare un modello di modulo quando si crea un modulo.
+1. Nell’istanza di creazione dell’AEM, fai clic su **Forms > Forms e documenti.**
+1. Seleziona un modulo e fai clic su **Visualizza proprietà**.
+1. Nella finestra Proprietà, tocca **Modello modulo**.
+È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 
    >[!NOTE]
    >
-   >Nella scheda Modello modulo, assicurarsi di selezionare **Schema** o **Nessuno** dal **Seleziona da** a discesa. **[!UICONTROL Il documento di record non è supportato per i moduli basati su XFA o adattivi con Modello di modulo come modello di modulo.]**
+   >Nella scheda Modello modulo, accertati di selezionare **Schema** o **Nessuno** dal **Seleziona da** a discesa. **[!UICONTROL Il documento record non è supportato per i moduli basati su XFA o adattivi con modello modulo come modello modulo.]**
 
-1. Nella sezione Configurazione modello documento della scheda Modello modulo selezionare una delle opzioni seguenti.
+1. Nella sezione Configurazione modello documento record della scheda Modello modulo selezionare una delle opzioni seguenti.
 
    **Nessuno** Selezionare questa opzione se non si desidera configurare il documento di record per il modulo.
 
-   **Associa modello di modulo come modello di documento di record** Selezionare questa opzione se si dispone di un file XDP che si desidera utilizzare come modello per il documento di record. Selezionando questa opzione, vengono visualizzati tutti i file XDP disponibili nell’archivio AEM Forms. Selezionare il file appropriato.
+   **Associa modello modulo come modello del documento record** Seleziona questa opzione se disponi di un file XDP da utilizzare come modello per il documento di record. Quando si seleziona questa opzione, vengono visualizzati tutti i file XDP disponibili nell’archivio di AEM Forms. Selezionare il file appropriato.
 
    Il file XDP selezionato viene associato al modulo adattivo.
 
-   **Genera documento di registrazione** Selezionare questa opzione per utilizzare un file XDP come modello di base per definire lo stile e l&#39;aspetto del documento di record. Selezionando questa opzione, vengono visualizzati tutti i file XDP disponibili nell’archivio AEM Forms. Selezionare il file appropriato.
+   **Genera documento di record** Selezionare questa opzione per utilizzare un file XDP come modello di base per definire lo stile e l&#39;aspetto del documento di record. Quando si seleziona questa opzione, vengono visualizzati tutti i file XDP disponibili nell’archivio di AEM Forms. Selezionare il file appropriato.
 
    >[!NOTE]
    >
-   >Verificare che lo schema utilizzato per creare il modulo adattivo e lo schema (schema dati) del modulo XFA sia lo stesso se:
+   >Assicurati che lo schema utilizzato per creare il modulo adattivo e lo schema (schema dati) del modulo XFA siano gli stessi se:
    >
    >
    >
    >    * Il modulo adattivo è basato su schema
-   >    * Stai utilizzando **Associa modello di modulo come modello del documento di record** opzione per il documento di registrazione
+   >    * Stai utilizzando **Associa modello modulo come modello del documento record** opzione per documento record
 
 
-1. Fai clic su **Fatto.**
+1. Clic **Fine.**
 
-## Personalizzare le informazioni sul marchio nel documento di registrazione {#customize-the-branding-information-in-document-of-record}
+## Personalizzare le informazioni di branding nel documento record {#customize-the-branding-information-in-document-of-record}
 
-Durante la generazione di un documento di record, è possibile modificare le informazioni di branding per il documento di record nella scheda Documento di record. La scheda Documento di record include opzioni quali logo, aspetto, layout, intestazione e piè di pagina, liberatoria e se si desidera includere o meno le opzioni della casella di controllo e dei pulsanti di scelta non selezionati.
+Durante la generazione di un documento record, è possibile modificare le informazioni di branding per il documento record nella scheda Documento record. La scheda Documento record include opzioni quali logo, aspetto, layout, intestazione e piè di pagina, liberatoria e se si desidera includere o meno le opzioni di caselle di controllo e pulsanti di scelta non selezionate.
 
-Per localizzare le informazioni di branding immesse nella scheda Documento di record, è necessario assicurarsi che le impostazioni internazionali del browser siano impostate in modo appropriato. Per personalizzare le informazioni di branding del documento di registrazione, completa i seguenti passaggi:
+Per localizzare le informazioni di branding immesse nella scheda Documento record, è necessario assicurarsi che le impostazioni internazionali del browser siano impostate in modo appropriato. La procedura seguente illustra come personalizzare le informazioni di branding del documento record:
 
-1. Seleziona un pannello (pannello principale) nel documento del record, quindi tocca ![configurare](assets/configure.png).
-1. Tocca ![scheda](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento di record.
-1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento di record. Se si seleziona il modello predefinito, sotto il menu a discesa Modello viene visualizzata una miniatura del documento di record.
+1. Seleziona un pannello (pannello principale) nel documento di record, quindi tocca ![configura](assets/configure.png).
+1. Tocca ![dortab](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento record.
+1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento record. Se selezioni il modello predefinito, sotto il menu a discesa Modello viene visualizzata un’anteprima in miniatura del documento di record.
 
-   ![modello di branding](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
-   Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul server AEM Forms. Se desideri utilizzare un modello che non è già sul server AEM Forms, devi prima caricare XDP sul server AEM Forms.
+   Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul server AEM Forms. Se desideri utilizzare un modello che non è già presente nel server AEM Forms, devi innanzitutto caricare XDP nel server AEM Forms.
 
-1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento di record vengono visualizzate alcune o tutte le proprietà seguenti. Specifica in modo appropriato:
+1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento record vengono visualizzate alcune o tutte le proprietà seguenti. Specifica questi elementi in modo appropriato:
 
-   * **Immagine del logo**: Puoi scegliere di utilizzare l’immagine logo nel modulo adattivo, sceglierne uno da DAM o caricarne uno dal computer.
+   * **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
    * **Titolo modulo**
    * **Testo intestazione**
    * **Etichetta di dichiarazione di non responsabilità**
    * **Liberatoria**
    * **Testo della liberatoria**
-   * **Colore accento**: Colore in cui viene eseguito il rendering del testo dell&#39;intestazione e delle righe separatore nel documento o nel PDF record
-   * **Famiglia di font**: Famiglia di font del testo nel documento di record PDF
-   * **Per i componenti Casella di controllo e Pulsante di scelta, mostrare solo i valori selezionati**
+   * **Colore accento**: colore con cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel PDF del documento o del record
+   * **Famiglia font**: famiglia di caratteri del testo nel documento record PDF
+   * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**
    * **Separatore per più valori selezionati**
-   * **Includi oggetti modulo non associati a modelli dati**
-   * **Escludere i campi nascosti dal documento del record**
+   * **Includi oggetti modulo non associati al modello dati**
+   * **Escludi campi nascosti dal documento record**
    * **Nascondi descrizione pannelli**
 
-   Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nella **[!UICONTROL content]** della sezione **[!UICONTROL Documento di registrazione]** scheda .
+   Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nel **[!UICONTROL contenuto]** sezione del **[!UICONTROL Documento record]** scheda.
 
    ![Proprietà pagina mastro](assets/master-page-properties.png)
 
-   Le proprietà della pagina master includono Immagine logo, Testo intestazione, Titolo modulo, Etichetta liberatoria e Testo liberatoria. È possibile applicare le proprietà del modello XDP o del modulo adattivo al documento di record. Per impostazione predefinita, AEM Forms applica le proprietà del modello al documento di record. È inoltre possibile definire valori personalizzati per le proprietà della pagina master. Per informazioni su come applicare più pagine master in un documento di record, vedere [Applicare più pagine master a un documento di record](#apply-multiple-master-pages-dor).
+   Le proprietà della pagina master includono l&#39;immagine del logo, il testo dell&#39;intestazione, il titolo del modulo, l&#39;etichetta della liberatoria e il testo della liberatoria. Puoi applicare le proprietà del modulo adattivo o del modello XDP al documento di record. Per impostazione predefinita, AEM Forms applica le proprietà del modello al documento di record. È inoltre possibile definire valori personalizzati per le proprietà della pagina master. Per informazioni su come applicare più pagine master in un documento di record, vedere [Applicare più pagine master a un documento record](#apply-multiple-master-pages-dor).
 
    >[!NOTE]
    >
-   >Se si utilizza un modello di modulo adattivo creato con una versione di Designer precedente alla versione 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, assicurarsi che quanto segue sia presente nel modello di modulo adattivo sotto il sottomodulo principale:
+   >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
 
    ```xml
    <proto>
@@ -345,99 +345,99 @@ Per localizzare le informazioni di branding immesse nella scheda Documento di re
 
 1. Per salvare le modifiche di branding, tocca Fine.
 
-## Layout di tabelle e colonne per pannelli nel documento di registrazione {#table-and-column-layouts-for-panels-in-document-of-record}
+## Layout di tabella e colonna per i pannelli nel documento record {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Il modulo adattivo può essere lungo e contenere diversi campi del modulo. Potrebbe non essere necessario salvare un documento di record come copia esatta del modulo adattivo. Ora è possibile scegliere un layout di tabella o colonna per salvare uno o più pannelli di modulo adattivi nel documento di record PDF.
+Il modulo adattivo potrebbe essere lungo e contenere diversi campi modulo. È possibile che non si desideri salvare un documento record come copia esatta del modulo adattivo. Ora puoi scegliere un layout di tabella o colonna per salvare uno o più pannelli di moduli adattivi nel documento di record PDF.
 
-Prima di generare un documento di record, nelle impostazioni di un pannello selezionare Layout per il documento di record per tale pannello come Tabella o Colonna. I campi nel pannello vengono organizzati di conseguenza nel documento di registrazione.
+Prima di generare un documento di record, nelle impostazioni di un pannello, selezionate Layout per il documento di record del pannello come Tabella o Colonna. I campi nel pannello vengono organizzati di conseguenza nel documento di record.
 
-![Rendering dei campi in un pannello con layout di tabella nel documento del record](assets/dortablelayout.png)
+![Campi in un pannello sottoposti a rendering in un layout di tabella nel documento di record](assets/dortablelayout.png)
 
-Rendering dei campi in un pannello con layout di tabella nel documento del record
+Campi in un pannello sottoposti a rendering in un layout di tabella nel documento di record
 
-![Rendering dei campi in un pannello con layout a colonne nel documento del record](assets/dorcolumnlayout.png)
+![Campi in un pannello di cui è stato eseguito il rendering in un layout di colonna nel documento record](assets/dorcolumnlayout.png)
 
-Rendering dei campi in un pannello con layout a colonne nel documento del record
+Campi in un pannello di cui è stato eseguito il rendering in un layout di colonna nel documento record
 
-## Impostazioni del documento di registrazione {#document-of-record-settings}
+## Impostazioni del documento record {#document-of-record-settings}
 
-Le impostazioni del documento di record consentono di scegliere le opzioni che si desidera includere nel documento di record. Ad esempio, una banca accetta un modulo nome, età, numero di previdenza sociale e numero di telefono. Il modulo genera un numero di conto bancario e i dettagli della filiale. È possibile scegliere di visualizzare solo il nome, il numero di previdenza sociale, il conto bancario e i dettagli del ramo nel documento di registrazione.
+Le impostazioni del documento record consentono di scegliere le opzioni da includere nel documento record. Ad esempio, una banca accetta in un modulo nome, età, numero di previdenza sociale e numero di telefono. Il modulo genera un numero di conto bancario e i dettagli della filiale. È possibile scegliere di visualizzare solo il nome, il numero di previdenza sociale, il conto bancario e i dettagli della filiale nel documento di record.
 
-Il documento delle impostazioni di record di un componente è disponibile sotto le relative proprietà. Per accedere alle proprietà di un componente, selezionalo e fai clic su ![cmppr](assets/cmppr.png) nella sovrapposizione. Le proprietà sono elencate nella barra laterale ed è possibile trovare le seguenti impostazioni.
+Le impostazioni del documento record di un componente sono disponibili nelle relative proprietà. Per accedere alle proprietà di un componente, selezionalo e fai clic su ![cmppr](assets/cmppr.png) nella sovrapposizione. Le proprietà sono elencate nella barra laterale e le impostazioni seguenti sono disponibili.
 
 **Impostazioni a livello di campo**
 
-* **Escludi Dal Documento Di Registrazione**: L&#39;impostazione della proprietà su true esclude il campo dal documento del record. Si tratta di una proprietà modificabile in script denominata `excludeFromDoR`. Il suo comportamento dipende da **Escludere i campi dal DoR se nascosti** proprietà a livello di modulo.
+* **Escludi Da Documento Record**: impostando la proprietà su true il campo viene escluso dal documento di record. Questa è una proprietà che supporta lo script denominata `excludeFromDoR`. Il suo comportamento dipende da **Escludi campi dal DoR se nascosto** proprietà a livello di modulo.
 
-* **Visualizza pannello come tabella:** L’impostazione della proprietà visualizza il pannello come tabella nel documento se il pannello contiene meno di 6 campi. Applicabile solo al pannello.
-* **Escludi titolo dal documento di registrazione:** L&#39;impostazione della proprietà esclude il titolo del pannello/tabella dal documento di registrazione. Applicabile solo ai pannelli e alle tabelle.
-* **Escludi descrizione dal documento di registrazione:** L&#39;impostazione della proprietà esclude la descrizione del pannello/tabella dal documento di registrazione. Applicabile solo ai pannelli e alle tabelle.
-* **[!UICONTROL Impaginazione]** > **[!UICONTROL Luogo]**: Determina la posizione in cui si seleziona di posizionare il pannello.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Successivo]**: Posiziona il pannello dopo l’oggetto precedente nel pannello principale.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Nell’area contenuto]** > Nome dell’area contenuto: Posiziona il pannello nell’area di contenuto specificata.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Parte superiore area contenuto successiva]**: Posiziona il pannello nella parte superiore dell’area di contenuto successiva.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Parte superiore dell’area contenuto]** > Nome dell’area contenuto: Posiziona il pannello nella parte superiore dell’area di contenuto specificata.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Sulla pagina]** > Nome della pagina master: Posiziona il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un’interruzione di pagina.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Parte superiore pagina successiva]**: Posiziona il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un’interruzione di pagina.
-   * **[!UICONTROL Luogo]** > **[!UICONTROL Parte superiore pagina]** > Nome della pagina master: Posiziona il pannello nella parte superiore della pagina quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un’interruzione di pagina.
-* **[!UICONTROL Impaginazione]** > **[!UICONTROL Dopo]**: Determina l’area da compilare dopo aver inserito un pannello.I campi seguenti sono disponibili nella **[!UICONTROL Dopo]** sezione:
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Continua riempimento padre]**: Continua a unire i dati per tutti gli oggetti da riempire nel pannello principale.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all’area contenuto successiva]**: Inizia a riempire l’area di contenuto successiva dopo il posizionamento del pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all’area contenuto]** > Nome dell’area contenuto: Inizia a riempire l’area di contenuto specificata dopo il posizionamento del pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina successiva]**: Inizia a riempire la pagina successiva dopo aver posizionato il pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: Inizia a riempire la pagina specificata dopo il posizionamento del pannello.
-* **[!UICONTROL Impaginazione]** > **[!UICONTROL Overflow]**: Imposta un overflow per un pannello o una tabella che si estende su più pagine. I seguenti campi sono disponibili nella **[!UICONTROL Overflow]** sezione:
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Nessuno]**: Inizia a riempire la pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un’interruzione di pagina.
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai all’area contenuto]** > Nome dell’area contenuto: Inizia a riempire l&#39;area di contenuto specificata.
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: Inizia a riempire la pagina specificata.
+* **Visualizza pannello come tabella:** L’impostazione della proprietà mostra il pannello come tabella nel documento record se il pannello contiene meno di 6 campi. Applicabile solo al pannello.
+* **Escludi titolo da documento record:** L’impostazione della proprietà esclude il titolo del pannello o della tabella dal documento di record. Applicabile solo al pannello e alla tabella.
+* **Escludi descrizione da documento record:** L’impostazione della proprietà esclude la descrizione del pannello o della tabella dal documento di record. Applicabile solo al pannello e alla tabella.
+* **[!UICONTROL Paginazione]** > **[!UICONTROL Luogo]**: determina dove posizionare il pannello.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL Dopo precedente]**: posiziona il pannello dopo l’oggetto precedente nel pannello principale.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL In area contenuti]** > Nome dell’area di contenuto: inserisce il pannello nell’area di contenuto specificata.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL Inizio area contenuti successiva]**: posiziona il pannello nella parte superiore dell’area del contenuto successiva.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL Inizio area contenuti]** > Nome dell’area di contenuto: posiziona il pannello nella parte superiore dell’area di contenuto specificata.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL A pagina]** > Nome della pagina master: inserisce il pannello nella pagina specificata. Se un’interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL Inizio pagina successiva]**: posiziona il pannello nella parte superiore della pagina successiva. Se un’interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Luogo]** > **[!UICONTROL Inizio pagina]** > Nome della pagina master: inserisce il pannello nella parte superiore della pagina, quando viene eseguito il rendering della pagina specificata. Se un’interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+* **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina quale area riempire dopo aver posizionato un pannello. I campi seguenti sono disponibili nel **[!UICONTROL Dopo]** sezione:
+   * **[!UICONTROL Dopo]** > **[!UICONTROL Continua a riempire elemento padre]**: continua l’unione dei dati per tutti gli oggetti che devono ancora essere riempiti nel pannello principale.
+   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuti successiva]**: inizia a riempire l’area di contenuto successiva dopo il posizionamento del pannello.
+   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuti]** > Nome dell’area di contenuto: inizia a riempire l’area di contenuto specificata dopo il posizionamento del pannello.
+   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina successiva]**: inizia a riempire la pagina successiva dopo aver posizionato il pannello.
+   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai a pagina]** > Nome della pagina: inizia a riempire la pagina specificata dopo il posizionamento del pannello.
+* **[!UICONTROL Paginazione]** > **[!UICONTROL Overflow]**: imposta un overflow per un pannello o una tabella che si estende su più pagine. I campi seguenti sono disponibili nel **[!UICONTROL Overflow]** sezione:
+   * **[!UICONTROL Overflow]** > **[!UICONTROL Nessuno]**: inizia a riempire la pagina successiva. Se un’interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai a area contenuti]** > Nome dell’area di contenuto: inizia a riempire l’area di contenuto specificata.
+   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai a pagina]** > Nome della pagina: inizia a riempire la pagina specificata.
 
-Per informazioni su come applicare interruzioni di pagina e applicare più pagine master in un documento di record, vedere [Applica interruzione di pagina in un documento di registrazione](#apply-page-breaks-in-dor) e [Applicare più pagine master a un documento di record](#apply-multiple-master-pages-dor).
+Per informazioni su come applicare interruzioni di pagina e più pagine master in un documento di record, consulta [Applicare un’interruzione di pagina a un documento record](#apply-page-breaks-in-dor) e [Applicare più pagine master a un documento record](#apply-multiple-master-pages-dor).
 
-**Impostazioni a livello di modulo**
+**Impostazioni livello modulo**
 
-* **Includi campi non associati in DoR:** L’impostazione della proprietà include campi non associati di un modulo adattivo basato su schema nel documento di registrazione. Per impostazione predefinita è true.
-* **Escludere i campi dal DoR se nascosti:** Imposta la proprietà per escludere i campi nascosti da [!UICONTROL Documento di registrazione] all’invio del modulo. Quando si abilita [Rivelare sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL Documento di registrazione].
+* **Includi campi non associati nel DoR:** L’impostazione della proprietà include campi non associati da un modulo adattivo basato su schema in un documento di record. Per impostazione predefinita è true.
+* **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti da [!UICONTROL Documento record] all’invio del modulo. Quando si abilita [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL Documento record].
 
-## Applicazione di un&#39;interruzione di pagina in un documento di registrazione {#apply-page-breaks-in-dor}
+## Applicare un’interruzione di pagina a un documento record {#apply-page-breaks-in-dor}
 
-È possibile applicare interruzioni di pagina in un documento di record utilizzando più metodi.
+È possibile applicare le interruzioni di pagina a un documento di record utilizzando più metodi.
 
 Per applicare un&#39;interruzione di pagina a un documento di record:
 
 1. Tocca il pannello e seleziona ![Configura](/help/forms/using/assets/configure.png)
-1. Espandi **[!UICONTROL Documento di registrazione]** per visualizzare le proprietà.
+1. Espandi **[!UICONTROL Documento record]** per visualizzare le proprietà.
 
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Luogo]** campo .
-1. Tocca **[!UICONTROL Parte superiore pagina successiva]** e toccare **[!UICONTROL Seleziona]**. Puoi anche toccare **[!UICONTROL Parte superiore pagina]**, seleziona la pagina master e tocca **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
+1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
+1. Tocca **[!UICONTROL Inizio pagina successiva]** e tocca **[!UICONTROL Seleziona]**. Puoi anche toccare **[!UICONTROL Inizio pagina]**, seleziona la pagina master e tocca **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
 1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 
-Il pannello selezionato si sposta sulla pagina successiva.
+Il pannello selezionato passa alla pagina successiva.
 
-## Applicare più pagine master a un documento di record {#apply-multiple-master-pages-dor}
+## Applicare più pagine master a un documento record {#apply-multiple-master-pages-dor}
 
-Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nella [!UICONTROL content] della sezione [!UICONTROL Documento di registrazione] scheda . Per ulteriori informazioni, consulta [Personalizzare le informazioni sul marchio nel documento di registrazione](#customize-the-branding-information-in-document-of-record).
+Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nel [!UICONTROL contenuto] sezione del [!UICONTROL Documento record] scheda. Per ulteriori informazioni, consulta [Personalizzare le informazioni di branding nel documento record](#customize-the-branding-information-in-document-of-record).
 
-È possibile applicare più pagine master a un documento di record applicando diverse pagine master ai componenti di un modulo adattivo. Utilizza la [Impaginazione](#document-of-record-settings) sezione delle proprietà Document of Record per applicare più pagine master.
+Per applicare più pagine master a un documento record, devi applicare pagine master diverse ai componenti di un modulo adattivo. Utilizza il [Paginazione](#document-of-record-settings) della sezione delle proprietà del documento record per applicare più pagine master.
 
-Di seguito è riportato un esempio di come applicare più pagine master a un documento di record: Puoi caricare un modello XDP che include quattro pagine master [!DNL AEM Forms] server. [!DNL AEM Forms] applica le proprietà del modello al documento di record per impostazione predefinita. [!DNL AEM Forms] applica anche le proprietà della prima pagina master del modello al documento di record.
+Di seguito è riportato un esempio di applicazione di più pagine master a un documento record: puoi caricare un modello XDP che include quattro pagine master in [!DNL AEM Forms] server. [!DNL AEM Forms] applica le proprietà del modello al documento record per impostazione predefinita. [!DNL AEM Forms] applica anche le proprietà della prima pagina master del modello al documento di record.
 
-Per applicare le proprietà della seconda pagina master a un pannello e le proprietà della terza pagina master ai pannelli seguenti, eseguire la procedura seguente:
+Per applicare le proprietà della seconda pagina master a un pannello e della terza pagina master ai pannelli che seguono, eseguire la procedura seguente:
 
-1. Toccare il pannello per applicare la seconda pagina master e selezionare ![Configura](assets/cmppr.png).
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Luogo]** campo .
-1. Tocca **[!UICONTROL Sulla pagina]**, seleziona la seconda pagina master e tocca **[!UICONTROL Seleziona]**.
+1. Tocca il pannello per applicare la seconda pagina master e seleziona ![Configura](assets/cmppr.png).
+1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
+1. Tocca **[!UICONTROL A pagina]**, seleziona la seconda pagina master e tocca **[!UICONTROL Seleziona]**.
 AEM Forms applica la seconda pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
-1. In **[!UICONTROL Impaginazione]** sezione, toccare ![Cartella](/help/forms/using/assets/folder-icon.png) in **[!UICONTROL Dopo]** campo .
-1. Tocca **[!UICONTROL Vai alla pagina]**, seleziona la terza pagina master e tocca **[!UICONTROL Seleziona]**.
+1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Dopo]** campo.
+1. Tocca **[!UICONTROL Vai a pagina]**, seleziona la terza pagina master e tocca **[!UICONTROL Seleziona]**.
 1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 AEM Forms applica la terza pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
 
 
-## Considerazioni chiave durante l&#39;utilizzo del documento di registrazione {#key-considerations-when-working-with-document-of-record}
+## Considerazioni chiave durante l’utilizzo del documento record {#key-considerations-when-working-with-document-of-record}
 
-Quando si lavora su un documento di record per i moduli adattivi, tenere presente le considerazioni e le limitazioni seguenti.
+Quando lavori su un documento record per moduli adattivi, tieni presenti le considerazioni e le limitazioni seguenti.
 
-* I modelli dei documenti non supportano il testo RTF. Pertanto, qualsiasi testo RTF nel modulo adattivo statico o nelle informazioni inserite dall’utente finale viene visualizzato come testo normale nel documento di registrazione.
-* I frammenti di documento in un modulo adattivo non vengono visualizzati nel documento di registrazione. Tuttavia, i frammenti di modulo adattivo sono supportati.
-* Il binding del contenuto nel documento di record generato per il modulo adattivo basato su schema XML non è supportato.
-* La versione localizzata del documento di record viene creata su richiesta per un&#39;impostazione internazionale quando l&#39;utente richiede il rendering del documento di record. La localizzazione del documento di record avviene insieme alla localizzazione del modulo adattivo. Per ulteriori informazioni sulla localizzazione di documenti di record e moduli adattivi, consulta [Utilizzo AEM flusso di lavoro di traduzione per localizzare i moduli adattivi e il documento di registrazione](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* I modelli di documento record non supportano il formato RTF. Pertanto, qualsiasi testo RTF nel modulo adattivo statico o nelle informazioni fornite dall’utente finale viene visualizzato come testo normale nel documento di record.
+* I frammenti di documento in un modulo adattivo non vengono visualizzati nel documento di record. Tuttavia, sono supportati i frammenti di modulo adattivi.
+* L’associazione del contenuto nel documento record generato per un modulo adattivo basato su schema XML non è supportata.
+* La versione localizzata del documento record viene creata su richiesta per una lingua quando l’utente richiede il rendering del documento record. La localizzazione del documento di record si verifica insieme alla localizzazione del modulo adattivo. Per ulteriori informazioni sulla localizzazione del documento di record e dei moduli adattivi consulta [Utilizzo del flusso di lavoro di traduzione AEM per localizzare i moduli adattivi e i documenti di record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).

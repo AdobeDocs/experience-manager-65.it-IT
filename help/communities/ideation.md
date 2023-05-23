@@ -1,5 +1,5 @@
 ---
-title: Idee Essenziali
+title: Ideation Essentials
 seo-title: Ideation Essentials
 description: Panoramica della funzione Ideazione
 seo-description: Ideation feature overview
@@ -13,32 +13,32 @@ exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
-# Idee Essenziali {#ideation-essentials}
+# Ideation Essentials {#ideation-essentials}
 
-Questa pagina fornisce le informazioni essenziali per lavorare con la funzione di ideazione, che è simile a un forum, ma con la possibilità di salvare come bozza e una sensazione più collaborativa.
+Questa pagina fornisce le informazioni essenziali per lavorare con la funzione di ideazione, che è simile a un forum, ma con la possibilità di salvare come bozza e un tocco più collaborativo.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/ideation/components/hbs/ideation</td>
+   <td>social/idea/componenti/hbs/idea</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.vote<br /> cq.social.hbs.like<br /> cq.social.hbs.ideation</td>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.voting<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td>
   </tr>
   <tr>
@@ -47,7 +47,7 @@ Questa pagina fornisce le informazioni essenziali per lavorare con la funzione d
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Vedi <a href="ideation-feature.md">Funzione ideativa</a></td>
+   <td>Consulta <a href="ideation-feature.md">Funzione ideazione</a></td>
   </tr>
  </tbody>
 </table>
@@ -56,4 +56,4 @@ Questa pagina fornisce le informazioni essenziali per lavorare con la funzione d
 
 ### Funzione ideazione {#ideation-function}
 
-Una struttura del sito community che include [Funzione di ideazione](functions.md#ideation-function)include un `ideation` componente.
+Una struttura del sito della community che include [Funzione ideazione](functions.md#ideation-function), include un `ideation` componente.

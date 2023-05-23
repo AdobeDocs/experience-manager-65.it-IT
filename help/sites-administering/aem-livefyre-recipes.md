@@ -21,7 +21,7 @@ ht-degree: 51%
 
 >[!IMPORTANT]
 >
->[Adobe Livefyre è ufficialmente terminato il servizio dal 30 novembre 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[Adobe Livefyre termina ufficialmente il servizio il 30 novembre 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
 <!--
 Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.

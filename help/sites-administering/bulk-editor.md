@@ -1,5 +1,5 @@
 ---
-title: Editor in serie
+title: Editor in blocco
 seo-title: The Bulk Editor
 description: Scopri come utilizzare l’editor in blocco.
 seo-description: Learn how to use the Bulk Editor.
@@ -18,56 +18,56 @@ ht-degree: 1%
 
 ---
 
-# Editor in serie{#the-bulk-editor}
+# Editor in blocco{#the-bulk-editor}
 
-L’editor in serie consente di effettuare modifiche molto efficienti quando il contesto visivo della pagina non è necessario in quanto consente di:
+L’editor in blocco consente di modificare in modo molto efficiente quando il contesto della pagina visiva non è necessario, in quanto consente di:
 
-* cercare (e visualizzare) contenuti da più pagine; questa operazione viene eseguita utilizzando GQL (Google Query Language)
-* modifica il contenuto direttamente nell’editor in serie
-* salva le modifiche (nelle pagine originarie)
-* esporta il contenuto in un file di foglio di calcolo separato da tabulazioni (.tsv)
+* ricerca (e visualizzazione) di contenuti da più pagine, utilizzando GQL (Google Query Language)
+* modifica questo contenuto direttamente nell’editor in blocco
+* salva le modifiche (nelle pagine di origine)
+* esporta questo contenuto in un file di foglio di calcolo separato da tabulazioni (.tsv)
 
 >[!NOTE]
 >
->Puoi anche importare contenuti nell’archivio, ma per impostazione predefinita questa opzione è disabilitata per l’editor in blocco come disponibile nel **Strumenti** console.
+>Puoi anche importare il contenuto nell’archivio, ma per impostazione predefinita questa opzione è disabilitata per l’editor in blocco come disponibile nella **Strumenti** console.
 
-Questa sezione descrive come lavorare con l’editor in serie nel **Strumenti** console. In genere, gli amministratori utilizzano l’editor in blocco per cercare e modificare più elementi. A tal fine, compila la tabella utilizzando una query GQL e seleziona gli elementi di contenuto su cui lavorare. Gli autori generalmente utilizzano l&#39;editor in blocco come parte di un&#39;applicazione di editor in blocco personalizzata accessibile tramite [elenco prodotti](/help/sites-authoring/default-components.md#productlist) componente.
+Questa sezione descrive come lavorare con l’editor in blocco nel **Strumenti** console. In genere, gli amministratori utilizzano l’editor in blocco per cercare e modificare più elementi. A tale scopo, compila la tabella utilizzando una query GQL e quindi seleziona gli elementi di contenuto su cui lavorare. Gli autori generalmente utilizzano l’editor in blocco come parte di un’applicazione di editor in blocco personalizzata accessibile tramite [elenco prodotti](/help/sites-authoring/default-components.md#productlist) componente.
 
 >[!CAUTION]
 >
->Con la [deprecazione dell’interfaccia classica](/help/release-notes/deprecated-removed-features.md) nella AEM 6.4, anche l’editor di massa è stato dichiarato obsoleto e pertanto l’Adobe non prevede di migliorare ulteriormente l’editor di massa.
+>Con il [l’interfaccia classica è diventata obsoleta](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, anche l’Editor in blocco è stato dichiarato obsoleto, pertanto Adobe non prevede di migliorare ulteriormente l’Editor in blocco.
 
-## Esempio di utilizzo per l’editor in serie {#example-use-case-for-the-bulk-editor}
+## Caso di utilizzo di esempio per l’editor in blocco {#example-use-case-for-the-bulk-editor}
 
-Ad esempio, se hai bisogno di tutti i nomi e gli indirizzi e-mail degli utenti che hanno compilato un particolare sondaggio, l’editor bulk può fornire tali informazioni ed esportarle in un foglio di calcolo.
+Ad esempio, se hai bisogno di tutti i nomi e gli indirizzi e-mail degli utenti che hanno compilato un sondaggio particolare, l’Editor collettivo può fornire tali informazioni e puoi esportarle in un foglio di calcolo.
 
-Un esempio per illustrare un tale caso d’uso è incluso nel sito web Geometrixx:
+Un esempio per illustrare un caso d’uso di questo tipo è incluso nel Geometrixx web:
 
-1. Passa a **Supporto** e quindi alla pagina **Soddisfazione del servizio clienti** indagine.
-1. **Modifica** la **Inizio del modulo** paragrafo. Nella finestra di dialogo, fai clic su **Avanzate** scheda , espandi **Configurazione azione**, quindi fai clic su **Visualizza dati..**.
+1. Accedi a **Supporto** e quindi al **Soddisfazione del servizio clienti** sondaggio.
+1. **Modifica** il **Inizio modulo** paragrafo. Nella finestra di dialogo, fai clic su **Avanzate** , espandere la scheda **Configurazione azione**, quindi fai clic su **Visualizza dati...**.
 
    ![](assets/custsatsurvey.png)
 
-1. L&#39;editor di massa è completamente personalizzabile. Anche se in questo esempio l&#39;editor di massa non consente agli utenti di modificare il contenuto, ma consente loro solo di esportare le informazioni in un foglio di calcolo.
+1. L’editor collettivo è completamente personalizzabile. Tuttavia, in questo esempio l’editor collettivo non consente agli utenti di modificare il contenuto, ma solo di esportare le informazioni in un foglio di calcolo.
 
    ![](assets/bulkeditor.png)
 
 ## Come utilizzare l’editor in blocco {#how-to-use-the-bulk-editor}
 
-L’editor in serie consente di:
+L’editor in blocco consente di:
 
-* [cerca il contenuto in base ai parametri di query, visualizza le proprietà specificate dei risultati in colonne, modifica il contenuto e salva le modifiche](#searching-and-editing-content)
+* [cercare il contenuto in base ai parametri di query, visualizzare le proprietà specificate dei risultati in colonne, modificare il contenuto e salvare le modifiche](#searching-and-editing-content)
 * [per esportare il contenuto in un foglio di calcolo separato da tabulazioni](#exporting-content)
 
-* [importazione di contenuto da un foglio di calcolo separato da tabulazioni](#importing-content)
+* [per importare contenuto da un foglio di calcolo separato da tabulazioni](#importing-content)
 
 ### Ricerca e modifica dei contenuti {#searching-and-editing-content}
 
 Per utilizzare l&#39;editor in blocco per modificare più elementi contemporaneamente:
 
-1. In **Strumenti** nella console, fai clic su **Importatori** per espanderla.
-1. Fai doppio clic sul pulsante **Editor in serie** per aprirlo.
-1. Inserisci i requisiti per la selezione:
+1. In **Strumenti** , fai clic su **Importatori** per espanderla.
+1. Fai doppio clic su **Editor in blocco** per aprirlo.
+1. Inserire i requisiti di selezione:
 
 <table>
  <tbody>
@@ -77,41 +77,41 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
   </tr>
   <tr>
    <td>Percorso directory principale</td>
-   <td>Indica il percorso principale che l'editor in blocco cerca.<br /> Esempio, <code>/content/geometrixx/en</code>. L’editor in blocco esegue ricerche su tutti i nodi figlio.</td>
+   <td>Indica il percorso della directory principale cercato dall’editor in blocco.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue ricerche in tutti i nodi secondari.</td>
   </tr>
   <tr>
-   <td>Parametri della ricerca</td>
-   <td>Utilizzando i parametri GQL, immetti la stringa di ricerca che desideri cercare nell’archivio dall’editor in serie; ad esempio, <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine che contengono la parola "professionale", e <code>"jcr:title":English</code> cerca tutte le pagine che hanno come titolo "Inglese". È possibile cercare solo le stringhe.</td>
+   <td>Parametri di query</td>
+   <td>Utilizzando i parametri GQL, inserisci la stringa di ricerca che desideri che l’editor collettivo cerchi nel repository; ad esempio, <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine contenenti la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine il cui titolo è "English". È possibile cercare solo stringhe.</td>
   </tr>
   <tr>
    <td>Casella di controllo Modalità contenuto</td>
-   <td>Selezionare questa casella di controllo per leggere le proprietà all'interno di <code>jcr:content</code> sotto-nodo dei risultati della ricerca, se esiste. Utilizza solo per le pagine. I nomi delle proprietà hanno il prefisso <code>"jcr:content/"</code></td>
+   <td>Selezionare questa casella di controllo per leggere le proprietà in <code>jcr:content</code> nodo secondario dei risultati della ricerca, se esistente. Da utilizzare solo per le pagine. I nomi delle proprietà hanno il prefisso <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Proprietà/Colonne</td>
-   <td>Seleziona le caselle di controllo relative alle proprietà che desideri vengano restituite dall’editor in blocco. Le proprietà selezionate sono le intestazioni di colonna nel riquadro dei risultati. Per impostazione predefinita, il percorso del nodo viene visualizzato nei risultati.</td>
+   <td>Selezionare le caselle di controllo relative alle proprietà che si desidera vengano restituite dall'editor bulk. Le proprietà selezionate sono le intestazioni di colonna nel riquadro dei risultati. Per impostazione predefinita, il percorso del nodo viene visualizzato nei risultati.</td>
   </tr>
   <tr>
    <td>Proprietà personalizzate/Colonne</td>
-   <td>Immetti altre proprietà non elencate nella <strong>Proprietà/Colonne</strong> campo . Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. È possibile aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> Se si aggiunge una proprietà personalizzata che non esiste ancora, AEM WCM visualizza una cella vuota. Quando modifichi la cella vuota e la salvi, la proprietà viene aggiunta al nodo. La nuova proprietà creata deve rispettare i vincoli del tipo di nodo e i namespace della proprietà.</td>
+   <td>Inserisci altre proprietà non elencate in <strong>Proprietà/Colonne</strong> campo. Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. Puoi aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> Se aggiungi una proprietà personalizzata che non esiste ancora, WCM per AEM visualizza una cella vuota. Quando modifichi la cella vuota e la salvi, la proprietà viene aggiunta al nodo. La proprietà appena creata deve rispettare i vincoli del tipo di nodo e gli spazi dei nomi delle proprietà.</td>
   </tr>
  </tbody>
 </table>
 
-Esempio:
+Ad esempio:
 
 ![](assets/searchfilter.png)
 
-1. Fai clic su **Ricerca**. L’editor in blocco visualizza i risultati.
-Per l’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca vengono restituite e visualizzate con le colonne richieste.
+1. Clic **Ricerca**. L’Editor collettivo visualizza i risultati.
+Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca vengono restituite e visualizzate con le colonne richieste.
 
    ![](assets/chlimage_1-39.png)
 
-1. Apporta le modifiche necessarie facendo doppio clic in una cella.
+1. Per apportare le modifiche necessarie, fare doppio clic in una cella.
 
    ![](assets/srchresultedit.png)
 
-1. Fai clic su **Salva** per salvare le modifiche (il **Salva** viene attivato dopo la modifica di una cella).
+1. Clic **Salva** per salvare le modifiche (il **Salva** dopo aver modificato una cella).
 
    >[!CAUTION]
    >
@@ -119,43 +119,43 @@ Per l’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca 
 
 #### Parametri di query GQL aggiuntivi {#additional-gql-query-parameters}
 
-* **percorso:** Cerca solo i nodi sotto questo percorso. Se specifichi più di un termine con un prefisso del percorso, verrà considerato solo l&#39;ultimo.
-* **tipo:** restituisce solo i nodi dei tipi di nodo specificati. Ciò include sia i tipi primari che i tipi di mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituirà nodi di qualsiasi tipo specificato.
-* **ordine:** ordinare il risultato per le proprietà specificate. È possibile specificare più nomi di proprietà separati da virgola. Per ordinare il risultato in ordine decrescente, devi solo preimpostare il nome della proprietà con un meno. Ad esempio: order:-name. L’utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l’impostazione predefinita.
-* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio: limit:10..20 Si prega di notare che l&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo aperto:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limit:10 (restituirà i primi 10 risultati)
+* **percorso:** cerca solo nodi sotto questo percorso. Se specifichi più di un termine con un prefisso di percorso, verrà considerato solo l’ultimo.
+* **tipo:** restituisce solo nodi dei tipi di nodo specificati. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituirà nodi di uno qualsiasi dei tipi specificati.
+* **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio: order:-name. L&#39;utilizzo di un segno più restituirà il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
+* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio: limit:10..20 Si noti che l&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limite:10 (restituirà i primi 10 risultati)
 
 ### Esportazione del contenuto {#exporting-content}
 
-Potrebbe essere necessario esportare il contenuto e apportare modifiche in un foglio di calcolo Excel. Ad esempio, è possibile esportare una mailing list e modificare il prefisso di tutti i numeri di telefono elencati direttamente in Excel, aggiungere linee aggiuntive e così via.
+Potrebbe essere necessario esportare il contenuto e apportarvi modifiche in un foglio di calcolo Excel. È ad esempio possibile esportare una lista di distribuzione e modificare l&#39;indicativo di località di tutti i numeri di telefono elencati direttamente in Excel, aggiungere altre righe e così via.
 
 Per esportare il contenuto:
 
-1. Cerca il contenuto come descritto in [Ricerca e modifica dei contenuti](#searching-and-editing-content).
-1. Fai clic su **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. AEM WCM chiede dove si desidera scaricare il file.
+1. Cercare il contenuto come descritto in [Ricerca e modifica dei contenuti](#searching-and-editing-content).
+1. Clic **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. WCM AEM ti chiede dove desideri scaricare il file.
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, le modifiche vengono codificate in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (noto anche come CP-1252). È possibile selezionare UTF-8 per esportare le modifiche in UTF-8.
+   >Per impostazione predefinita, le modifiche sono codificate in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (noto anche come CP-1252). È possibile selezionare UTF-8 per esportare le modifiche in UTF-8.
 
    ![](assets/srchrsesultexport.png)
 
-1. Seleziona il percorso e conferma che desideri scaricare il file.
-1. Dopo aver scaricato il file, è possibile aprirlo dal programma del foglio di calcolo, ad esempio Microsoft Excel. Il programma per fogli di calcolo importa il file e lo converte in un formato foglio di calcolo.
+1. Seleziona il percorso e conferma di voler scaricare il file.
+1. Dopo aver scaricato il file, è possibile aprirlo dal foglio di calcolo, ad esempio Microsoft Excel. Il programma per fogli di calcolo importa il file e lo converte in un formato foglio di calcolo.
 
    ![](assets/exportinexcel.png)
 
-### Importazione di contenuto {#importing-content}
+### Importazione del contenuto {#importing-content}
 
-Per impostazione predefinita, la funzionalità di importazione è nascosta all’apertura dell’editor in blocco. È sufficiente aggiungere il parametro `hib=false` all’URL viene visualizzato il **Importa** nella pagina Modifiche in serie. Puoi importare il contenuto da qualsiasi carattere separato da tabulazioni ( `.tsv`). Per il corretto funzionamento dell’importazione, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si esegue l’importazione.
+Per impostazione predefinita, la funzionalità di importazione è nascosta all&#39;apertura dell&#39;Editor collettivo. Aggiunta del parametro `hib=false` all&#39;URL visualizzerà il **Importa** nella pagina Bulk Editor. È possibile importare contenuto da qualsiasi scheda ( `.tsv`). Affinché l&#39;importazione funzioni correttamente, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si esegue l&#39;importazione.
 
 >[!NOTE]
 >
->Quando reimporti il contenuto, cancelli qualsiasi contenuto precedente per tali nodi. Fai attenzione a non sovrascrivere informazioni importanti.
+>Quando reimporti il contenuto, cancelli eventuali contenuti precedenti per tali nodi. Fai attenzione a non sovrascrivere informazioni importanti.
 
-Per importare contenuti:
+Per importare il contenuto:
 
-1. Apri l’editor in blocco.
+1. Apri l’Editor collettivo.
 1. Aggiungi `?hib=false` all’URL, ad esempio:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
-1. Fai clic su **Importa**.
+1. Clic **Importa**.
 1. Seleziona la `.tsv` file. I dati vengono importati nell’archivio.

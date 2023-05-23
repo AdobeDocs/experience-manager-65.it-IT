@@ -1,7 +1,7 @@
 ---
-title: Personalizzazione dei servizi di dati Bozza e Invio
+title: Personalizzazione dei servizi dati per bozze e invii
 seo-title: Customizing Draft and Submission data services
-description: Per impostazione predefinita, AEM Forms memorizza i moduli adattivi bozza e inviati in un nodo predefinito sull’istanza Pubblica. Tuttavia, puoi configurare la bozza e l’invio di servizi dati di AEM Forms per personalizzare l’archiviazione dei moduli adattivi bozza e inviati.
+description: Per impostazione predefinita, AEM Forms memorizza le bozze e i moduli adattivi inviati in un nodo predefinito sull’istanza Publish. Tuttavia, puoi configurare i servizi dati bozza e invio di AEM Forms per personalizzare l’archiviazione delle bozze e dei moduli adattivi inviati.
 seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
@@ -16,30 +16,30 @@ ht-degree: 0%
 
 ---
 
-# Personalizzazione dei servizi di dati Bozza e Invio {#customizing-draft-and-submission-data-services}
+# Personalizzazione dei servizi dati per bozze e invii {#customizing-draft-and-submission-data-services}
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli utenti di salvare un modulo adattivo come bozza. La funzionalità bozza consente agli utenti di mantenere un modulo in corso di lavorazione. Un utente può quindi completare e inviare il modulo in qualsiasi momento da qualsiasi dispositivo.
+AEM Forms consente agli utenti di salvare un modulo adattivo come bozza. La funzionalità bozza offre agli utenti la possibilità di gestire un modulo in corso di lavorazione. L’utente può quindi completare e inviare il modulo in qualsiasi momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio nell’istanza Pubblica in `/content/forms/fp` nodo.
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio nell’istanza Publish in `/content/forms/fp` nodo.
 
-Tuttavia, i componenti del portale AEM Forms forniscono servizi dati che consentono di personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
+Tuttavia, i componenti del portale AEM Forms forniscono servizi di dati che consentono di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
-Per personalizzare la memorizzazione dei dati utente, è necessario implementare il [Dati bozza](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dati di invio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) servizi.
+Per personalizzare l’archiviazione dei dati utente, è necessario implementare [Dati bozza](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dati di invio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) servizi.
 
 ## Prerequisiti {#prerequisites}
 
-* Abilita [Componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Crea un [pagina del portale moduli](/help/forms/using/creating-form-portal-page.md)
+* Abilita [Componenti di Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Creare un [pagina portale moduli](/help/forms/using/creating-form-portal-page.md)
 * Abilita [portale moduli adattivi per moduli](/help/forms/using/draft-submission-component.md)
-* Scopri [dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Scopri [dettagli di implementazione dell’archiviazione personalizzata](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati di bozza dell&#39;utente, è necessario fornire l&#39;implementazione di tutti i metodi del `DraftAFDataService` interfaccia.
+Per personalizzare l’archiviazione dei dati delle bozze utente, è necessario fornire l’implementazione per tutti i metodi del `DraftAFDataService` di rete.
 
-Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente codice di esempio dell’interfaccia:
+Nell&#39;esempio di codice seguente dell&#39;interfaccia viene fornita una descrizione dei metodi e dei relativi argomenti:
 
 ```java
 public interface DraftAFDataService {
@@ -84,9 +84,9 @@ public interface DraftAFDataService {
 
 ## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare l’archiviazione dei dati di invio degli utenti, è necessario fornire l’implementazione di tutti i metodi del `SubmittedAFDataService` interfaccia.
+Per personalizzare l’archiviazione dei dati di invio degli utenti, devi fornire l’implementazione per tutti i metodi del `SubmittedAFDataService` di rete.
 
-Una descrizione dei metodi e dei relativi argomenti è fornita nel seguente codice di esempio dell’interfaccia:
+Nell&#39;esempio di codice seguente dell&#39;interfaccia viene fornita una descrizione dei metodi e dei relativi argomenti:
 
 ```java
 public interface SubmittedAFDataService {

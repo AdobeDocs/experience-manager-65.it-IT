@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base sull’editor Rich Text
 seo-title: Rich Text Editor Essentials
-description: Panoramica delle funzioni dell’editor Rich Text
+description: Panoramica della funzione Editor Rich Text
 seo-description: Rich text Editor feature overview
 uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
 contentOwner: msm-service
@@ -21,24 +21,24 @@ ht-degree: 3%
 
 ## Panoramica {#overview}
 
-Un editor Rich Text consente di immettere testo con tag.
+Un editor Rich Text consente di immettere testo con markup.
 
-Per i componenti Community, mentre è simile al [editor Rich Text nell’ambiente di authoring](../../help/sites-authoring/rich-text-editor.md), influisce sul testo immesso nell’ambiente di pubblicazione.
+Per i componenti Communities, anche se simile al [editor rich text nell’ambiente di authoring](../../help/sites-authoring/rich-text-editor.md), influisce sul testo immesso nell’ambiente di pubblicazione.
 
-![editor Rich Text](assets/rich-text-editor.png)
+![editor rich-text](assets/rich-text-editor.png)
 
 ## Abilitazione dell’editor Rich Text {#enabling-rich-text-editor}
 
-I componenti community che consentono l’editor Rich Text possono essere abilitati per i contenuti generati dall’utente (UGC). A seconda che il componente sia stato aggiunto a una pagina o incluso in un [Funzione](functions.md), l’editor Rich Text può essere abilitato o meno per impostazione predefinita.
+Per consentire l’editor Rich Text, è possibile abilitare i componenti delle community che consentono contenuti generati dagli utenti (UGC, User Generated Content). A seconda che il componente sia stato aggiunto a una pagina o incluso in una [funzione](functions.md), l’editor Rich Text può essere abilitato o meno per impostazione predefinita.
 
-Se non è abilitato, è sufficiente immettere [modalità modifica autore](sites-console.md#authoring-site-content), seleziona il componente da modificare e seleziona il `Rich Text Editor` casella di controllo.
+Se non è abilitata, immetti semplicemente [modalità modifica autore](sites-console.md#authoring-site-content), seleziona il componente da modificare e quindi fai clic su `Rich Text Editor` casella di controllo.
 
-L’editor Rich Text è disponibile per i seguenti componenti di Communities:
+L’editor Rich Text è disponibile per i seguenti componenti Community:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
 * [Commenti](comments.md)
-* [Filelibrio](file-library.md)
+* [Libreria file](file-library.md)
 * [Forum](forum.md)
 * [Messaggi](configure-messaging.md)
 * [D/R](working-with-qna.md)
@@ -46,19 +46,19 @@ L’editor Rich Text è disponibile per i seguenti componenti di Communities:
 
 ## Personalizzazione {#customization}
 
-È possibile personalizzare l’editor Rich Text in quanto l’implementazione si basa su [CKEditor](https://www.ckeditor.com/).
+È possibile personalizzare l’editor Rich Text perché l’implementazione si basa su [CKEditor](https://www.ckeditor.com/).
 
-La configurazione corrente per i componenti di Communities si trova nel `cq.social.  scf   clientlib`, situato nell’archivio all’indirizzo
+La configurazione corrente per i componenti Communities si trova in `cq.social.  scf   clientlib`, che si trova nell’archivio in
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-La modifica di cq.social.scf clientlib non è consigliata in quanto gli aggiornamenti futuri potrebbero sostituire qualsiasi modifica.
+La modifica della libreria client cq.social.scf non è consigliata in quanto gli aggiornamenti futuri potrebbero ignorare eventuali modifiche.
 
-### Esempio di personalizzazione: Collegamenti in linea {#example-customization-inline-links}
+### Esempio di personalizzazione: collegamenti in linea {#example-customization-inline-links}
 
-Per motivi di sicurezza, le opzioni dei collegamenti ipertestuali non sono incluse nel set di icone RTF presentate ai membri per impostazione predefinita. La capacità di errore è ampia quando gli hrefs sono ammessi in UGC.
+Per motivi di sicurezza, le opzioni del collegamento ipertestuale non sono incluse nel set di icone RTF presentate ai membri per impostazione predefinita. La possibilità di danno è ampia quando gli hrefs sono consentiti in UGC.
 
-Per aggiungere le opzioni per i collegamenti ipertestuali alla barra degli strumenti:
+Per aggiungere le opzioni del collegamento ipertestuale alla barra degli strumenti:
 
 * Aggiungi una barra degli strumenti denominata &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`

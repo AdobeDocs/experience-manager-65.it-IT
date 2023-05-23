@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Pagina Crea commenti {#create-comments-page}
 
-**[Componente Commenti Sovrapposizione ⇐](overlay-comments.md) [Crea nodi ⇒](overlay-create-nodes.md)**
+**[Componente ⇐ commenti sovrapposizione](overlay-comments.md) [Crea ⇒ nodi](overlay-create-nodes.md)**
 
 ## Pagina Commenti {#comments-page}
 
-La [Guida ai componenti della community](components-guide.md) consente di sovrapporre facilmente il componente commenti.
+Il [Guida ai componenti della community](components-guide.md) consente di avere un’esperienza semplice con la sovrapposizione del componente commenti.
 
 Visualizza la pagina nell’istanza di authoring:
 
@@ -31,4 +31,4 @@ Visualizza la pagina nell’istanza di authoring:
 
 ![commenti](assets/comments.png)
 
-**[Componente Commenti Sovrapposizione ⇐](overlay-comments.md) [Crea nodi ⇒](overlay-create-nodes.md)**
+**[Componente ⇐ commenti sovrapposizione](overlay-comments.md) [Crea ⇒ nodi](overlay-create-nodes.md)**

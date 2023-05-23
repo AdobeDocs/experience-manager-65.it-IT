@@ -14,7 +14,7 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 100%
+ht-degree: 47%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Introduzione {#introduction}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. Visualizzare una versione di pagina e l’altra è inefficiente e soggetto a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
 
 È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 
@@ -39,24 +39,24 @@ La visualizzazione affiancata delle differenze permette di confrontare:
 * [Lanci](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva sorgente
 * [Copie per lingua](/help/sites-administering/tc-manage.md#comparing-language-copies) - Una pagina prima e dopo la traduzione o la ritraduzione
 
-Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
+Consulta i rispettivi argomenti su come avviare la differenze all’interno di tali contesti.
 
 ### Presentazione delle differenze   {#presentation-of-differences}
 
-A prescindere dal contenuto, la presentazione delle differenze rimane la stessa.
+Indipendentemente dal contenuto confrontato, la presentazione della differenza rimane la stessa.
 
-* Il contenuto selezionato viene visualizzato a sinistra (punto di ingresso per il rilevamento delle differenze).
-* Il contenuto con cui viene confrontato è visualizzato a destra.
+* Il contenuto selezionato all&#39;avvio della diff viene visualizzato a sinistra (il punto di ingresso della diff).
+* Il contenuto di confronto viene visualizzato a destra (a cosa viene confrontato il contenuto selezionato).
 
-Ad esempio, se si confrontano due versioni, la versione corrente è a sinistra e quella precedente a destra.
+Ad esempio, se si confrontano le versioni, la versione corrente viene visualizzata a sinistra e la versione precedente a destra.
 
-L’origine di entrambe le pagine è indicata chiaramente nella barra dell’intestazione, nella parte superiore della finestra del browser.
+L’origine di entrambe le pagine viene visualizzata in modo chiaro nella barra dell’intestazione nella parte superiore della finestra del browser.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-Vengono rilevate le modifiche apportate a livello di componente e di codice HTML. Gli elementi che sono stati modificati sono evidenziati con colori diversi.
+La differenza rileva le modifiche a livello di componente e HTML. Gli elementi che sono stati modificati vengono evidenziati con colori diversi.
 
-**Modifica componenti**
+**Modifiche ai componenti**
 
 * Verde chiaro - Componente aggiunto
 * Rosa - Componente rimosso
@@ -68,7 +68,7 @@ Vengono rilevate le modifiche apportate a livello di componente e di codice HTML
 
 >[!NOTE]
 >
->Quando si confrontano le copie per lingua, l’evidenziazione è disattivata poiché in una traduzione tutto cambia.
+>Quando si confrontano le copie per lingua, l’evidenziazione viene disattivata in quanto in una traduzione cambia tutto e l’evidenziazione non sarebbe di alcun vantaggio.
 
 ### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
@@ -88,13 +88,13 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 
 ## Limiti   {#limitations}
 
-Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
+In alcune situazioni, la differenza di pagina potrebbe non rilevare una differenza come previsto.
 
-* Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
+* Quando si differenzia tra versioni e avvii, la diff non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per il rendering dei contenuti).
 * Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
-* Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
+* Se una pagina viene spostata, non è più possibile eseguire una differenze con le versioni effettuate prima dello spostamento.
 
-   * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
+   * Se riscontri problemi con una differenza, controlla [Timeline](/help/sites-authoring/basic-handling.md#timeline) affinché la pagina possa vedere se è stata spostata.
 
 >[!NOTE]
 >
@@ -102,4 +102,4 @@ Esistono alcune situazioni in cui il confronto delle differenze della pagina non
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’operazione del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per gli sviluppatori](/help/sites-developing/pagediff.md) per questa funzione.
+>Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.

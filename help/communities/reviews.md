@@ -1,7 +1,7 @@
 ---
-title: Riepilogo recensioni e revisioni (visualizzazione)
+title: Utilizzo di recensioni e riepilogo recensioni (visualizzazione)
 seo-title: Using Reviews and Reviews Summary (Display)
-description: Aggiunta dei componenti Riepilogo recensioni e revisioni a una pagina
+description: Aggiunta dei componenti Riepilogo recensioni e recensioni a una pagina
 seo-description: Adding the Reviews and Reviews Summary components to a page
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
@@ -17,81 +17,81 @@ ht-degree: 4%
 
 ---
 
-# Riepilogo recensioni e revisioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
+# Utilizzo di recensioni e riepilogo recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
 
-La `Reviews` un componente è un composito di [Commenti](comments.md) e [Valutazione](rating.md) componenti pronti per l’uso.
+Il `Reviews` il componente è un composito di [Commenti](comments.md) e [Valutazione](rating.md) componenti pronti per l’uso.
 
-La `Reviews Summary (Display)` fornisce un riepilogo di un’istanza attiva o chiusa di un `Reviews` per la visualizzazione in altre aree del sito.
+Il `Reviews Summary (Display)` componente fornisce un riepilogo di un&#39;istanza attiva o chiusa di un `Reviews` componente da visualizzare altrove sul sito.
 
 >[!NOTE]
 >
->Pubblicazione anonima di una revisione non supportata. I visitatori del sito devono registrarsi (diventare membro) e accedere per partecipare. Il visitatore che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
+>La pubblicazione anonima di una revisione non è supportata. I visitatori del sito devono registrarsi (diventare membri) e accedere per partecipare. Il visitatore che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
 
 ## Aggiunta di una revisione a una pagina {#adding-a-review-to-a-page}
 
-Per aggiungere una `Reviews` componente per una pagina in modalità di creazione, usate il browser componenti per individuare `Communities / Reviews` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione da rivedere per gli utenti.
+Per aggiungere una `Reviews` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare `Communities / Reviews` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla caratteristica da rivedere.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando il [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews` apparirà .
+Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews` verrà visualizzato.
 
-![creazione-revisione](assets/create-review.png)
+![create-review](assets/create-review.png)
 
-## Configurazione delle revisioni {#configuring-reviews}
+## Configurazione delle recensioni {#configuring-reviews}
 
-Seleziona il `Reviews` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Reviews` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
-Sotto la **[!UICONTROL Valutazioni consentite]** specificare l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale/generale, in quanto è il rating che fornisce il rating medio per `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita deve essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
+Sotto **[!UICONTROL Classificazioni consentite]** , specificare l&#39;elenco completo delle valutazioni da mostrare ai membri. Il primo rating dovrebbe essere generale, poiché è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita deve essere assegnato un titolo diverso, diverso da &quot;Subrazione 1&quot; o &quot;Subrazione 2&quot;.
 
-![abilitazione](assets/configure-review1.png)
+![valutazione consentita](assets/configure-review1.png)
 
 * **[!UICONTROL Classificazioni consentite]**
 
-   Un elenco di valutazioni da cui un membro può scegliere.
+   Un elenco di valutazioni tra cui un membro può scegliere.
 
-   Utilizzare i pulsanti freccia su, freccia giù ed Elimina per modificare le selezioni visibili.
+   Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
 
-   Fai clic su **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di valutazione.
+   Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di valutazione.
 
-Sotto la **[!UICONTROL Valutazioni richieste]** , reinserire elementi dall’elenco di **[!UICONTROL Valutazioni consentite]** che devono essere valutate. Se un elemento è specificato solo nella scheda Valutazioni consentite, può essere lasciato senza contrassegno quando viene inviato dal membro.
+Sotto **[!UICONTROL Classificazioni richieste]** , immettere nuovamente gli elementi dall&#39;elenco di **[!UICONTROL Classificazioni consentite]** che devono essere valutati. Se un elemento viene specificato solo nella scheda Classificazioni consentite, può non essere contrassegnato quando viene inviato dal membro.
 
-Sul sito web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato fino a quando non vengono contrassegnate tutte le valutazioni richieste.
+Sul sito web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e non è contrassegnato, viene visualizzato un messaggio per il membro e l&#39;invio viene negato fino a quando tutte le valutazioni richieste non vengono contrassegnate.
 
-![classificazione obbligatoria](assets/configure-review2.png)
+![classificazione richiesta](assets/configure-review2.png)
 
 * **[!UICONTROL Classificazioni richieste]**
 
-   Un sottoinsieme di rating consentiti, che indica quali rating sono richiesti.
+   Un sottoinsieme di valutazioni consentite, che indica quali valutazioni sono richieste.
 
-   Utilizzare i pulsanti freccia su, freccia giù ed Elimina per modificare le selezioni visibili.
+   Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
 
-   Fai clic su **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di risposta.
+   Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di risposta.
 
 >[!NOTE]
 >
->Se un articolo è inserito nella sezione **[!UICONTROL Valutazioni richieste]** scheda non specificata nel **[!UICONTROL Valutazioni consentite]** quindi non è incluso negli elementi da valutare.
+>Se un articolo viene immesso sul **[!UICONTROL Classificazioni richieste]** scheda non specificata nella **[!UICONTROL Classificazioni consentite]** , non è incluso negli elementi da valutare.
 
-Sotto la **[!UICONTROL Recensioni]** scheda , specifica come vengono gestite le revisioni.
+Sotto **[!UICONTROL Recensioni]** , specificare la modalità di gestione delle revisioni.
 
 ![recensioni](assets/configure-review3.png)
 
 * **[!UICONTROL Consenti risposte]**
 
-   Se questa opzione è selezionata, consentire le risposte alle revisioni. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti le risposte alle revisioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Chiuso]**
 
-   Se questa opzione è selezionata, la revisione è chiusa a nuove recensioni e risposte. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, la revisione verrà chiusa alle nuove revisioni e risposte. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Consenti caricamenti file]**
 
-   Se questa opzione è selezionata, consenti il caricamento di allegati di file per la revisione. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti il caricamento degli allegati per la revisione. L&#39;impostazione predefinita è deselezionata.
 
 * **Dimensione file massima**
 
-   Pertinente solo se **[!UICONTROL Consenti caricamenti file]** è controllata. Questo campo limita le dimensioni (in byte) di un file caricato. Il valore predefinito è 10 MB.
+   Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
 
 * **[!UICONTROL Lunghezza massima messaggio]**
 
@@ -99,147 +99,147 @@ Sotto la **[!UICONTROL Recensioni]** scheda , specifica come vengono gestite le 
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-   Pertinente solo se **[!UICONTROL Consenti caricamenti file]** è controllata. Elenco di estensioni di file separate da virgola con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
+   Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Editor Rich Text]**
 
-   Se questa opzione è selezionata, i post possono essere inseriti con markup. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, i post possono essere immessi con markup. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Consenti votazione]**
 
-   Se questa opzione è selezionata, includi la funzione di voto per un argomento. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includere la funzionalità di votazione per un argomento. L&#39;impostazione predefinita è deselezionata.
 
-Sotto la **[!UICONTROL Moderazione utente]** scheda , specifica come vengono gestite le revisioni pubblicate. Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le recensioni postate. Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-![moderazione dell&#39;utente](assets/configure-review4.png)
+![moderazione utente](assets/configure-review4.png)
 
 * **[!UICONTROL Premoderazione]**
 
-   Se questa opzione è selezionata, le revisioni devono essere approvate prima che vengano visualizzate su un sito di pubblicazione. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, le recensioni devono essere approvate prima di essere visualizzate su un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Elimina recensioni]**
 
-   Se questa opzione è selezionata, al membro che ha pubblicato la revisione viene offerta la possibilità di eliminarla. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, il membro che ha pubblicato la revisione potrà eliminarla. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Rifiuta recensioni]**
 
-   Se questa opzione è selezionata, consentire ai moderatori di negare le revisioni. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai moderatori di rifiutare le recensioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Chiudi/Riapri recensioni]**
 
-   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire le revisioni. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire le recensioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Segnala recensioni]**
 
-   Se questa opzione è selezionata, consenti ai membri di contrassegnare le revisioni come inadeguate. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai membri di segnalare le revisioni non appropriate. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Elenco di motivi per segnalazione]**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnano una revisione come inappropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Motivo per segnalazione personalizzato]**
 
-   Se questa opzione è selezionata, consenti ai membri di inserire il proprio motivo per contrassegnare una revisione come inappropriata. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Soglia moderazione]**
 
-   Immettere il numero di volte in cui una revisione deve essere contrassegnata dai membri prima che i moderatori siano informati. Il valore predefinito è una tantum (1).
+   Immetti il numero di volte in cui i membri devono segnalare una revisione prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (1).
 
 * **[!UICONTROL Limite segnalazione]**
 
-   Immetti il numero di volte in cui una revisione deve essere contrassegnata prima che sia nascosta dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale a **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
+   Immettere il numero di volte in cui è necessario contrassegnare una revisione prima che venga nascosta alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
 
-### Aggiunta di un riepilogo della revisione (visualizzazione) a una pagina {#adding-a-review-summary-display-to-a-page}
+### Aggiunta di un riepilogo di revisione (visualizzazione) a una pagina {#adding-a-review-summary-display-to-a-page}
 
-Per aggiungere una `Reviews Summary (Display)` in una pagina in modalità di authoring, individua il componente
+Per aggiungere una `Reviews Summary (Display)` a una pagina in modalità di authoring, individua il componente
 
 * `Communities / Reviews Summary (Display)`
 
-e trascinarlo nella posizione in una pagina in cui deve essere visualizzato un riepilogo di una revisione attiva o chiusa.
+e trascinarlo in una pagina in cui deve essere visualizzato un riepilogo di una revisione attiva o chiusa.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando il [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews Summary (Display)`apparirà .
+Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews Summary (Display)`verrà visualizzato.
 
-![riepilogo delle revisioni](assets/configure-review5.png)
+![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
 >
->La &quot;media&quot; riflette i voti per il primo elemento elencato nelle schede Valutazioni consentite della revisione che viene riepilogata.
+>La &quot;Media&quot; riflette i voti per il primo elemento elencato nelle schede Classificazioni consentite della revisione in fase di riepilogo.
 
-### Riepilogo della configurazione delle revisioni (visualizzazione) {#configuring-reviews-summary-display}
+### Configurazione del riepilogo delle recensioni (visualizzazione) {#configuring-reviews-summary-display}
 
-Seleziona il `Reviews Summary (Display)` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Reviews Summary (Display)` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
-![configurare](assets/configure-new.png)
+![configura](assets/configure-new.png)
 
-Sotto la **[!UICONTROL Riepilogo]** scheda
+Sotto **[!UICONTROL Riepilogo recensioni]** scheda
 
-![riepilogo delle revisioni](assets/configure-review6.png)
+![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-   entra o sfoglia fino all’istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunto alla pagina Web del [Sito Geometrixx Engage,](getting-started.md) il percorso sarebbe:
+   immetti o sfoglia l’istanza inserita del `reviews`componente da riepilogare, ad esempio, se aggiunto alla pagina web del [Geometrixx sito di coinvolgimento,](getting-started.md) il percorso sarà:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-   Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre che indica il numero di stelle di valutazione presenti nelle revisioni da riepilogare. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre indicante il numero di stelle di valutazione presenti nelle recensioni da riepilogare. L&#39;impostazione predefinita è deselezionata.
 
-### Modifica a un tipo di revisione personalizzato {#changing-to-a-custom-review-type}
+### Passaggio a un tipo di revisione personalizzato {#changing-to-a-custom-review-type}
 
-Il componente Revisioni utilizza il sistema di commenti.
+Il componente Recensioni utilizza il sistema di commenti.
 
-Modificando il tipo di risorsa commento, il sistema di commento non genererà più un&#39;istanza di un commento utilizzando il valore predefinito, ma piuttosto un&#39;istanza personalizzata (estesa) dagli sviluppatori.
+Modificando il tipo di risorsa Commento, il sistema di commenti non genererà più un&#39;istanza di un commento utilizzando l&#39;impostazione predefinita, ma piuttosto una che è stata personalizzata (estesa) dagli sviluppatori.
 
-Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fai doppio clic sul `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
+Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sulla `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Sotto la **[!UICONTROL Tipi di risorse]** specifica il resourceType personalizzato per le nuove istanze del `Comments or Voting` componenti:
+Sotto **[!UICONTROL Tipi di risorse]** , specificare il resourceType personalizzato per le nuove istanze del `Comments or Voting` componenti:
 
-![voto ai commenti](assets/configure-review7.png)
+![commenti-votazione](assets/configure-review7.png)
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passa al resourceType di un esteso `comment`componente (singolo commento) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
+   Passare al resourceType di un&#39;estensione `comment`componente (commento singolo) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
 
-   Questa risorsa identificherà il resourceType dell&#39;UGC creato quando un visitatore pubblica un commento.
+   Questa risorsa identificherà il resourceType del UGC creato quando un visitatore pubblica un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passa al resourceType di un esteso `voting`in /apps. Esempio: `/apps/social/components/hbs/voting`.
+   Passare al resourceType di un&#39;estensione `voting`componente in /apps. Esempio: `/apps/social/components/hbs/voting`.
 
    Questa risorsa identificherà il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
-* **[!UICONTROL Tipo risorsa sistema di commenti]**
+* **[!UICONTROL Tipo risorsa sistema commenti]**
 
-   Passa al resourceType di un esteso `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello di pagina [include dinamicamente](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante anziché essere aggiunto alla pagina come risorsa (nodo di commenti). Per saperne di più, leggi [{{include}} aiutante](handlebars-helpers.md#include).
+   Passare al resourceType di un&#39;estensione `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello della pagina non sia [include in modo dinamico](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Per saperne di più leggi le [{{include}} aiutante](handlebars-helpers.md#include).
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatore del sito {#site-visitor-experience}
 
 ### Moderatori e amministratori {#moderators-and-administrators}
 
-Quando l’utente connesso dispone di privilegi di moderatore o amministratore, può eseguire le attività di moderazione consentite dalla configurazione del componente, indipendentemente da chi ha creato la revisione.
+Quando l&#39;utente connesso dispone dei privilegi di moderatore o amministratore, può eseguire le attività di moderazione consentite dalla configurazione del componente, indipendentemente da chi ha creato la revisione.
 
 ### Membri {#members}
 
-Quando il visitatore del sito effettua l’accesso, a seconda della configurazione, può:
+Quando il visitatore del sito ha effettuato l’accesso, a seconda della configurazione, può:
 
 * Pubblica una nuova recensione
-* Modifica la propria revisione
-* Elimina la propria revisione
-* Contrassegna i commenti di revisione degli altri
+* Modifica la propria recensione
+* Elimina la propria recensione
+* Contrassegna i commenti di revisione di altri utenti
 
-È consentita una sola classificazione per membro. Il membro può modificare il proprio rating in qualsiasi momento.
+È consentita una sola valutazione per membro. L&#39;iscritto può cambiare la propria valutazione in qualsiasi momento.
 
 ### Anonimo {#anonymous}
 
-I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere le revisioni pubblicate, tradurle se supportate, ma non possono aggiungere una valutazione o una revisione, né contrassegnare i commenti di revisione di altri.
+I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere le recensioni postate, tradurle se supportate, ma non possono aggiungere una valutazione o una revisione, né segnalare i commenti di revisione di altri utenti.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Rivedi le nozioni di base](reviews-basics.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Rivedi elementi di base](reviews-basics.md) pagina per sviluppatori.
 
-Per la moderazione dei commenti pubblicati, vedere [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Per la moderazione dei commenti pubblicati, vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-Per la traduzione dei commenti pubblicati, consultare [Traduzione di contenuti generati dagli utenti](translate-ugc.md).
+Per la traduzione dei commenti pubblicati, vedi [Traduzione dei contenuti generati dagli utenti](translate-ugc.md).

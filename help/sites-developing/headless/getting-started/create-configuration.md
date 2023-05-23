@@ -1,6 +1,6 @@
 ---
-title: Guida rapida alla creazione di un headless di configurazione
-description: Crea una configurazione come primo passaggio per iniziare a utilizzare headless in AEM 6.5.
+title: Guida rapida alla creazione di una configurazione headless
+description: Crea una configurazione come primo passo per iniziare a utilizzare headless in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 69%
 
 ---
 
-# Guida rapida alla creazione di un headless di configurazione {#creating-configuration}
+# Guida rapida alla creazione di una configurazione headless {#creating-configuration}
 
 Come primo passo per iniziare a utilizzare headless in AEM 6.5, devi creare una configurazione.
 
@@ -27,9 +27,9 @@ Nel contesto della gestione dei contenuti headless in AEM, considera una configu
 
 Un amministratore deve creare una configurazione solo una volta oppure, molto raramente, se è necessaria una nuova area di lavoro per organizzare i modelli di contenuto. Ai fini di questa guida introduttiva, è sufficiente creare una sola configurazione.
 
-1. Accedi a AEM e dal menu principale seleziona **Strumenti -> Generale -> Browser di configurazione**.
+1. Accedi all’AEM e dal menu principale seleziona **Strumenti -> Generale -> Browser configurazioni**.
 1. Fornisci un **Titolo** per la configurazione.
-   * Un nome viene generato automaticamente in base al titolo e regolato in base a [AEM convenzioni di denominazione.](/help/sites-developing/naming-conventions.md). Diventerà il nome del nodo nel repository.
+   * Un nome verrà generato automaticamente in base al titolo e regolato in base a [Convenzioni di denominazione AEM.](/help/sites-developing/naming-conventions.md). Sarà il nome del nodo nell’archivio.
 1. Seleziona le seguenti opzioni:
    * **Modelli per frammenti di contenuto**
    * **Query GraphQL persistenti**

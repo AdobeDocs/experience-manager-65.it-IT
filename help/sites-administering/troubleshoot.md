@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di Adobe Experience Manager
-description: Scopri come risolvere i problemi relativi a AEM.
+description: Scopri come risolvere i problemi relativi all’AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,23 +12,23 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # Risoluzione dei problemi di Adobe Experience Manager {#troubleshooting-aem}
 
-La sezione seguente illustra alcuni problemi che potresti riscontrare durante l’utilizzo di AEM (Adobe Experience Manager), oltre a suggerimenti su come risolverli.
+Nella sezione seguente vengono descritti alcuni problemi che possono verificarsi durante l’utilizzo di AEM (Adobe Experience Manager) e vengono proposte possibili soluzioni.
 
 >[!NOTE]
 >
->Se stai risolvendo i problemi di authoring in AEM, vedi [Risoluzione dei problemi relativi agli autori.](/help/sites-authoring/troubleshooting.md)
+>Se stai risolvendo problemi di authoring in AEM, consulta [Risoluzione dei problemi per gli autori.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Quando si verificano problemi, vale anche la pena controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
+>Quando si verificano problemi, vale anche la pena controllare l’elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
 
-## Scenari di risoluzione dei problemi per gli amministratori {#troubleshooting-scenarios-for-administrators}
+## Risoluzione dei problemi relativi agli amministratori {#troubleshooting-scenarios-for-administrators}
 
 La tabella seguente fornisce una panoramica dei problemi che gli amministratori possono risolvere:
 
@@ -40,19 +40,19 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
   </tr>
   <tr>
    <td>Amministratore di sistema</td>
-   <td><p>Fare doppio clic sul file jar Quickstart non ha alcun effetto o apre il file jar con un altro programma (ad esempio, gestione archivi)</p> </td>
+   <td><p>Se si fa doppio clic sul file jar Quickstart, questo non ha alcun effetto o il file jar viene aperto con un altro programma (ad esempio, Archive Manager)</p> </td>
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> </td>
-   <td><p>La mia applicazione in esecuzione su CRX genera errori di memoria esaurita</p> </td>
+   <td><p>La mia applicazione in esecuzione su CRX genera errori di memoria insufficiente</p> </td>
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> </td>
-   <td><p>La schermata di benvenuto AEM non viene visualizzata nel browser dopo aver fatto doppio clic AEM CM Quickstart</p> </td>
+   <td><p>La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM CM Quickstart</p> </td>
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> <p>utente amministratore</p> </td>
-   <td><p>Creazione di un dump di thread</p> </td>
+   <td><p>Creazione di un'immagine thread</p> </td>
   </tr>
   <tr>
    <td><p>Amministratore di sistema</p> <p>utente amministratore</p> </td>
@@ -63,28 +63,28 @@ La tabella seguente fornisce una panoramica dei problemi che gli amministratori 
 
 ## Problemi di installazione {#installation-issues}
 
-Vedi [Problemi comuni di installazione](/help/sites-deploying/troubleshooting.md#common-installation-issues) per informazioni sui seguenti scenari di risoluzione dei problemi:
+Consulta [Problemi comuni di installazione](/help/sites-deploying/troubleshooting.md#common-installation-issues) per informazioni sui seguenti scenari di risoluzione dei problemi:
 
-* Fare doppio clic sul jar Quickstart non ha alcun effetto o sul file JAR con un altro programma (come archive manager).
-* Le applicazioni in esecuzione su CRX generano errori di memoria esaurita.
-* La schermata di benvenuto AEM non viene visualizzata nel browser dopo aver fatto doppio clic AEM Quickstart.
+* Il doppio clic sul file JAR Quickstart non ha alcun effetto o sul file JAR con un altro programma (ad esempio, Archive Manager).
+* Le applicazioni in esecuzione su CRX generano errori di memoria insufficiente.
+* La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart.
 
 ## Metodi per la risoluzione dei problemi di analisi {#methods-for-troubleshooting-analysis}
 
-### Creazione di un dump di thread {#making-a-thread-dump}
+### Creazione di un&#39;immagine thread {#making-a-thread-dump}
 
-Il dump di thread è un elenco di tutti i thread Java™ attualmente attivi. Se AEM non risponde correttamente, il dump di thread può aiutarti a identificare deadlock o altri problemi.
+L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. Se l’AEM non risponde correttamente, l’immagine thread può aiutarti a identificare deadlock o altri problemi.
 
-### Utilizzo del dump di thread Sling {#using-sling-thread-dumper}
+### Utilizzo di Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Apri **Console Web AEM**; ad esempio, in `https://localhost:4502/system/console/`.
-1. Seleziona la **Thread** sotto **Stato** scheda .
+1. Apri **Console web AEM**; ad esempio, in `https://localhost:4502/system/console/`.
+1. Seleziona la **Thread** in **Stato** scheda.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Utilizzo di jstack (riga di comando) {#using-jstack-command-line}
 
-1. Trova il PID (process id) dell&#39;istanza Java™ AEM.
+1. Trova il PID (ID processo) dell’istanza Java™ dell’AEM.
 
    Ad esempio, puoi utilizzare `ps -ef` o `jps`.
 
@@ -92,35 +92,35 @@ Il dump di thread è un elenco di tutti i thread Java™ attualmente attivi. Se 
 
    `jstack <pid>`
 
-1. Mostra il dump di thread.
+1. Mostra l’immagine thread.
 
 >[!NOTE]
 >
->Puoi aggiungere le immagini di thread a un file di registro utilizzando la `>>` reindirizzamento uscita:
+>È possibile aggiungere le immagini thread a un file di registro utilizzando `>>` reindirizzamento output:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulta la sezione [Come prendere i dump di thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentazione per ulteriori informazioni
+Consulta la [Come prendere Thread Dumps da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it) per ulteriori informazioni
 
 ### Verifica di sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
-Quando si sviluppano funzionalità per AEM WCM, è possibile aprire sessioni JCR (paragonabili all&#39;apertura di una connessione al database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe riscontrare i seguenti sintomi:
+Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (come per l’apertura di una connessione al database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
 
 * Il sistema diventa più lento.
-* Puoi vedere molto di CacheManager: ridimensionaTutte le voci nel file di log; numero seguente (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
-* Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane - a seconda della gravità).
+* È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
+* Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per analizzare le sessioni non chiuse e scoprire quale codice non sta chiudendo una sessione, consulta l’articolo della Knowledge Base [Analizzare le sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Per analizzare le sessioni non chiuse e individuare il codice che non chiude una sessione, consultare l&#39;articolo della Knowledge Base [Analizza sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
-### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Utilizzo della console web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
-Lo stato dei bundle OSGi può anche fornire un&#39;indicazione tempestiva di possibili problemi.
+Lo stato dei bundle OSGi può anche fornire un’indicazione anticipata di possibili problemi.
 
-1. Apri **Console Web AEM**; ad esempio, in `https://localhost:4502/system/console/`.
-1. Seleziona **Bundle** sotto **OSGI** scheda .
+1. Apri **Console web AEM**; ad esempio, in `https://localhost:4502/system/console/`.
+1. Seleziona **Bundle** in **OSGI** scheda.
 1. Seleziona:
 
-   * lo stato dei bundle. Se qualcuno è inattivo o non soddisfatto, prova a interrompere e riavviare il bundle. Se il problema persiste, indaga ulteriormente utilizzando altri metodi.
-   * se uno dei bundle ha dipendenze mancanti. Tali dettagli possono essere visualizzati facendo clic sul nome del singolo bundle, che è un collegamento (l&#39;esempio seguente non ha problemi):
+   * lo stato dei bundle. In caso contrario, prova ad arrestare e riavviare il bundle. Se il problema persiste, approfondisci ulteriormente utilizzando altri metodi.
+   * se uno dei bundle presenta dipendenze mancanti. Per visualizzare tali dettagli, fai clic sul nome del singolo bundle, che è un collegamento (il seguente esempio non presenta alcun problema):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

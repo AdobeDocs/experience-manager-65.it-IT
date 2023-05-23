@@ -1,7 +1,7 @@
 ---
-title: Guida rapida API Java di User Manager (SOAP)
+title: Guida introduttiva API Java di User Manager (SOAP)
 seo-title: User Manager Java API Quick Start(SOAP)
-description: Utilizza l’API User Manager per aggiungere utenti, eliminare utenti, creare gruppi, gestire utenti e gruppi, gestire ruoli e autorizzazioni, sincronizzare gli utenti a livello di programmazione e gestire i nodi Preferenze a livello di programmazione.
+description: Utilizza l’API di User Manager per aggiungere utenti, eliminare utenti, creare gruppi, gestire utenti e gruppi, gestire ruoli e autorizzazioni, sincronizzare gli utenti a livello di programmazione e gestire i nodi delle preferenze a livello di programmazione.
 seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
@@ -18,33 +18,33 @@ ht-degree: 0%
 
 ---
 
-# Guida rapida API Java di User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
+# Guida introduttiva API Java di User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
 
-Java API Quick Start (SOAP) è disponibile per l’API User Manager.
+API Java Quick Start (SOAP) è disponibile per l’API User Manager.
 
-[Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Quick Start (modalità SOAP): aggiunta di utenti utilizzando l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Eliminazione di utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[Quick Start (modalità SOAP): eliminazione di utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Creazione di gruppi tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[Guida introduttiva (modalità SOAP): creazione di gruppi mediante l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Gestione di utenti e gruppi tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di utenti e gruppi tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Gestione di ruoli e autorizzazioni tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Quick Start (modalità SOAP): gestione di ruoli e autorizzazioni tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Sincronizzazione programmatica degli utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
+[Quick Start (modalità SOAP): sincronizzazione programmatica degli utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Gestione programmatica dei nodi delle preferenze tramite l&#39;API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[Guida introduttiva (modalità SOAP): gestione programmatica dei nodi Preferences tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->L&#39;avvio rapido in Programmazione con moduli AEM si basa sul documento se si utilizza un altro sistema operativo, ad esempio Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva disponibile in Programmazione con moduli AEM si basa sul Documento se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Quick Start (modalità SOAP): aggiunta di utenti utilizzando l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Blue ad AEM Forms. (Vedi [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente di nome Wendy Blue ad AEM Forms. (vedere [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -160,9 +160,9 @@ Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Bl
  
 ```
 
-## Avvio rapido (modalità SOAP): Eliminazione di utenti tramite l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
+## Quick Start (modalità SOAP): eliminazione di utenti tramite l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene eliminato un utente denominato Wendy Blue da AEM Forms. (Vedi [Eliminazione degli utenti](/help/forms/developing/users.md#deleting-users).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene eliminato da AEM Forms un utente denominato Wendy Blue. (vedere [Eliminazione di utenti](/help/forms/developing/users.md#deleting-users).)
 
 ```java
  /*
@@ -256,9 +256,9 @@ Nell&#39;esempio di codice seguente viene eliminato un utente denominato Wendy B
  
 ```
 
-## Avvio rapido (modalità SOAP): Gestione di utenti e gruppi tramite l’API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
+## Quick Start (modalità SOAP): gestione di utenti e gruppi tramite l’API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene trovato un utente locale e il gruppo locale a cui appartiene l&#39;utente. (Vedi [Gestione di utenti e gruppi](/help/forms/developing/users.md#managing-users-and-groups).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene trovato un utente locale e il gruppo locale a cui appartiene l&#39;utente. (vedere [Gestione di utenti e gruppi](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```java
  /*
@@ -380,9 +380,9 @@ Nell&#39;esempio di codice seguente viene trovato un utente locale e il gruppo l
  
 ```
 
-## Avvio rapido (modalità SOAP): Gestione di ruoli e autorizzazioni tramite l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
+## Quick Start (modalità SOAP): gestione di ruoli e autorizzazioni tramite l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene assegnato il ruolo Utente servizi a un&#39;entità principale, vengono stampati i ruoli dell&#39;entità e successivamente il ruolo viene rimosso dall&#39;entità. Per questo avvio rapido vengono invocati due servizi: il servizio DirectoryManager e il servizio AuthorizationManager.(Vedi [Gestione di ruoli e autorizzazioni](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi viene assegnato a un utente/gruppo/ruolo, vengono stampati i ruoli dell&#39;utente/gruppo/ruolo e successivamente il ruolo viene rimosso dall&#39;utente/gruppo/ruolo. Per questo avvio rapido vengono richiamati due servizi: il servizio DirectoryManager e il servizio AuthorizationManager.(vedere [Gestione di ruoli e autorizzazioni](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*
@@ -523,9 +523,9 @@ Nell&#39;esempio di codice seguente viene assegnato il ruolo Utente servizi a un
  
 ```
 
-## Avvio rapido (modalità SOAP): Sincronizzazione programmatica degli utenti tramite l’API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
+## Quick Start (modalità SOAP): sincronizzazione programmatica degli utenti tramite l’API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-Il seguente esempio di codice Java sincronizza gli utenti utilizzando le API di gestione utenti. (Vedi [Sincronizzazione programmatica degli utenti](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+L’esempio di codice Java seguente sincronizza gli utenti utilizzando le API User Management. (vedere [Sincronizzazione degli utenti a livello di programmazione](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -632,9 +632,9 @@ Il seguente esempio di codice Java sincronizza gli utenti utilizzando le API di 
  
 ```
 
-## Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Quick Start (modalità SOAP): aggiunta di utenti utilizzando l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Blue ad AEM Forms. (Vedi [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente di nome Wendy Blue ad AEM Forms. (vedere [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -750,9 +750,9 @@ Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Bl
  
 ```
 
-## Avvio rapido (modalità SOAP): Creazione di gruppi tramite l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
+## Guida introduttiva (modalità SOAP): creazione di gruppi mediante l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene creato un gruppo denominato AdobeGroup in AEM Forms. (Vedi [Creazione di gruppi](/help/forms/developing/users.md#creating-groups).)
+Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo denominato AdobeGroup in AEM Forms. (vedere [Creazione di gruppi](/help/forms/developing/users.md#creating-groups).)
 
 ```java
  /*
@@ -902,9 +902,9 @@ Nell&#39;esempio di codice seguente viene creato un gruppo denominato AdobeGroup
  }
 ```
 
-## Avvio rapido (modalità SOAP) Gestione dei nodi delle preferenze {#quick-start-soap-mode-managing-preferences-nodes}
+## Guida introduttiva (modalità SOAP) Gestione dei nodi delle preferenze {#quick-start-soap-mode-managing-preferences-nodes}
 
-I seguenti modelli di codice Java gestiscono i nodi di preferenze utilizzando le API di gestione utenti. ( Vedi [Gestione programmatica dei nodi delle preferenze](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando le API User Management. ( Consulta [Gestione programmatica dei nodi delle preferenze](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*
@@ -1005,9 +1005,9 @@ public class ManagePreferences {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Gestione programmatica dei nodi delle preferenze tramite l&#39;API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Guida introduttiva (modalità SOAP): gestione programmatica dei nodi Preferences tramite l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-I seguenti modelli di codice Java per la gestione dei nodi di preferenze utilizzando le API di gestione utenti ( Vedi [Gestione programmatica dei nodi delle preferenze](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando le API di gestione utente ( Vedi [Gestione programmatica dei nodi delle preferenze](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*

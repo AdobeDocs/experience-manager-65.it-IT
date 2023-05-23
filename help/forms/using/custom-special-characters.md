@@ -1,5 +1,5 @@
 ---
-title: Caratteri speciali personalizzati in Gestione Corrispondenza
+title: Caratteri speciali personalizzati nella gestione della corrispondenza
 seo-title: Custom special characters in Correspondence Management
 description: Scopri come aggiungere caratteri speciali personalizzati in Gestione della corrispondenza.
 seo-description: Learn how to add custom special characters in Correspondence Management.
@@ -18,74 +18,74 @@ ht-degree: 1%
 
 ---
 
-# Caratteri speciali personalizzati in Gestione Corrispondenza{#custom-special-characters-in-correspondence-management}
+# Caratteri speciali personalizzati nella gestione della corrispondenza{#custom-special-characters-in-correspondence-management}
 
 ## Panoramica {#overview}
 
-Gestione corrispondenza ha un supporto predefinito integrato per 210 caratteri speciali che è possibile inserire in lettere con facilità.
+Gestione della corrispondenza dispone del supporto predefinito integrato di 210 caratteri speciali che è possibile inserire facilmente nelle lettere.
 
 Ad esempio, puoi inserire i seguenti caratteri speciali:
 
 * Simboli di valuta come €,¥ e £
-* Simboli matematici come ∑, Ö, , e ^
+* Simboli matematici come ∑, √, ∂ e ^
 * Simboli di punteggiatura come ‟ e &quot;
 
 È possibile inserire caratteri speciali nelle lettere:
 
 * In [editor di testo](/help/forms/using/document-fragments.md#createtext)
-* In un [modulo in linea modificabile in una corrispondenza](../../forms/using/create-correspondence.md#managecontent)
+* In un [modulo inline modificabile in una corrispondenza](../../forms/using/create-correspondence.md#managecontent)
 
-![specialtisinlinemodule](assets/specialcharactersinlinemodule.png)
+![modulato speciale di sinlinio](assets/specialcharactersinlinemodule.png)
 
-L’amministratore può aggiungere il supporto per caratteri speciali più o personalizzati tramite la personalizzazione. Questo articolo fornisce istruzioni su come aggiungere supporto per caratteri speciali aggiuntivi personalizzati.
+L’amministratore può aggiungere il supporto di caratteri speciali aggiuntivi/personalizzati tramite personalizzazione. In questo articolo vengono fornite istruzioni su come aggiungere supporto per caratteri speciali aggiuntivi personalizzati.
 
-## Aggiunta o modifica del supporto per i caratteri speciali personalizzati in Gestione Corrispondenza {#creatingfolderstructure}
+## Aggiunta o modifica del supporto per caratteri speciali personalizzati in Gestione corrispondenza {#creatingfolderstructure}
 
-Utilizza i seguenti passaggi per aggiungere il supporto per i caratteri speciali personalizzati:
+Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le seguenti operazioni:
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
-1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL caratteri speciali]** con percorso/struttura simile alla cartella caratteri speciali (che si trova nella cartella textEditorConfig in libs):
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
+1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL caratteri speciali]** con un percorso/struttura simile alla cartella dei caratteri speciali (che si trova nella cartella textEditorConfig in libs):
 
-   1. Fai clic con il pulsante destro del mouse sul pulsante **caratteri speciali** nel seguente percorso e seleziona **Nodo di sovrapposizione**:
+   1. Fare clic con il pulsante destro del mouse **caratteri speciali** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Assicurati che la finestra di dialogo Sovrapponi nodo abbia i seguenti valori:
 
-      **Percorso:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts
+      **Percorso:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
       **Posizione sovrapposizione:** /apps/
 
-      **Tipi di nodo di corrispondenza:** Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
-      >Non apportare modifiche al ramo /libs. Eventuali modifiche apportate potrebbero andare perse, in quanto questo ramo è soggetto a modifiche ogni volta che:
+      >Non apportare modifiche nel ramo /libs. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
       >
       >
       >
-      >    * Aggiorna l&#39;istanza
+      >    * Eseguire l’aggiornamento all’istanza
       >    * Applicare un hotfix
       >    * Installare un feature pack
 
 
-   1. Fai clic su **OK** quindi fai clic su **Salva tutto**. La cartella dei caratteri speciali viene creata nel percorso specificato.
+   1. Clic **OK** e quindi fare clic su **Salva tutto**. La cartella dei caratteri speciali viene creata nel percorso specificato.
 
-      Dopo aver creato la sovrapposizione, verifica i tag della struttura del nodo. Ogni nodo creato in /apps utilizzando la sovrapposizione deve avere la stessa classe e le stesse proprietà definite in /libs per quel nodo. Se manca una proprietà o un tag nella struttura del nodo sotto la posizione /apps, sincronizza i tag con il nodo corrispondente in /libs.
+      Dopo aver creato la sovrapposizione, verifica i tag della struttura del nodo. Ogni nodo creato in /apps utilizzando la sovrapposizione deve avere la stessa classe e le stesse proprietà definite in /libs per quel nodo. Se manca una proprietà o un tag nella struttura del nodo nella posizione /apps, sincronizza i relativi tag con il nodo corrispondente in /libs.
 
-1. Assicurati che **[!UICONTROL textEditorConfig]** il nodo presenta le proprietà e i valori seguenti:
+1. Assicurati che **[!UICONTROL textEditorConfig]** Il nodo ha le seguenti proprietà e valori:
 
    | Nome | Tipo | Valore |
    |---|---|---|
    | cmConfigurationType | Stringa | cmTextEditorConfiguration |
    | cssPath | Stringa | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL caratteri speciali]** nel seguente percorso e seleziona **Crea > Nodo figlio** quindi fai clic su **Salva tutto**:
+1. Fare clic con il pulsante destro del mouse **[!UICONTROL caratteri speciali]** cartella nel percorso seguente e selezionare **Crea > Nodo figlio** e quindi fare clic su **Salva tutto**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialCharac/&lt;yourchildnode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
 
-1. Aggiorna la pagina Editor di testo\Crea interfaccia utente Corrispondenza . Il nodo aggiunto è l’ultimo nell’elenco dei caratteri speciali nell’interfaccia utente.
-1. Fai clic su **Salva tutto**.
+1. Aggiorna la pagina Editor di testo\Crea interfaccia utente per la corrispondenza. Il nodo aggiunto è l’ultimo nell’elenco dei caratteri speciali dell’interfaccia utente.
+1. Clic **Salva tutto**.
 1. Apporta le modifiche necessarie ai caratteri speciali:
 
 <table>
@@ -95,53 +95,53 @@ Utilizza i seguenti passaggi per aggiungere il supporto per i caratteri speciali
    <td><strong>Completa i seguenti passaggi</strong></td>
   </tr>
   <tr>
-   <td>Aggiungi un carattere speciale personalizzato</td>
+   <td>Aggiungere un carattere speciale personalizzato</td>
    <td>
     <ol>
-     <li>Aggiungi un nodo figlio sotto "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialCharac" con proprietà obbligatorie.</li>
+     <li>Aggiungi un nodo figlio in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" con proprietà obbligatorie.</li>
      <li>Fai clic su Salva tutto</li>
-     <li>Aggiorna l'Editor di testo\Crea interfaccia utente Corrispondenza per visualizzare le modifiche.</li>
+     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
     </ol> </td>
   </tr>
   <tr>
    <td>Aggiornare le proprietà di un carattere speciale esistente</td>
    <td>
     <ol>
-     <li>Sovrapponi il nodo da aggiornare come spiegato in precedenza e verifica tag e classi.</li>
-     <li>Modificare qualsiasi valore, ad esempio didascalia, valore, endValue e multipleCaption. </li>
+     <li>Sovrapponi il nodo da aggiornare come descritto in precedenza e verifica tag e classi.</li>
+     <li>Modificare i valori, ad esempio caption, value, endValue e multipleCaption. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'Editor di testo\Crea interfaccia utente Corrispondenza per visualizzare le modifiche.</li>
+     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Nascondere un carattere speciale</td>
+   <td>Nascondi un carattere speciale</td>
    <td>
     <ol>
-     <li>Sovrapponi il nodo da nascondere sotto "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialCharac"</li>
-     <li>Aggiungi la proprietà sling:hideResource (Boolean) al nodo (sotto le app) da nascondere. </li>
+     <li>Sovrapponi il nodo da nascondere in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
+     <li>Aggiungi la proprietà sling:hideResource (booleana) al nodo (sotto le app) da nascondere. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'Editor di testo\Crea interfaccia utente Corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Nascondere più caratteri speciali</td>
+   <td>Nascondi più caratteri speciali</td>
    <td>
     <ol>
-     <li>Aggiungi la proprietà "sling:hideChildren (String o String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialCharac". </li>
-     <li>Aggiungi i nomi dei nodi (caratteri speciali da nascondere) come valori per la proprietà "sling:hideChildren". </li>
+     <li>Aggiungi la proprietà "sling:hideChildren (String o String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
+     <li>Aggiungi nomi di nodo (caratteri speciali da nascondere) come valori per la proprietà "sling:hideChildren". </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'Editor di testo\Crea interfaccia utente Corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
    <td>Ordinare caratteri speciali</td>
    <td>
     <ol>
-     <li>Aggiungi un nodo figlio sotto "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialCharac" con proprietà obbligatorie. </li>
+     <li>Aggiungi un nodo figlio in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" con proprietà obbligatorie. </li>
      <li>Aggiungi la proprietà "sling:orderBefore (String)" al nodo figlio appena creato. </li>
-     <li>Aggiungi il nome del nodo come valore prima del quale verrà mostrato il nuovo carattere speciale aggiunto. </li>
+     <li>Aggiungi il nome del nodo come valore prima del quale deve essere visualizzato il nuovo carattere speciale aggiunto. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'Editor di testo\Crea interfaccia utente Corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

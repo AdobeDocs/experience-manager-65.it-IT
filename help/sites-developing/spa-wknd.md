@@ -1,6 +1,6 @@
 ---
 title: Tutorial WKND per SPA
-description: Immergiti nello sviluppo SPA con questa esercitazione in più parti. Implementa un tuo SPA che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
+description: Immergiti nello sviluppo dell’SPA con questa esercitazione in più parti. Implementa un SPA personalizzato che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
 uuid: f57be84b-a037-4c76-856e-afb0275c1a0f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,13 +17,13 @@ ht-degree: 17%
 
 # Tutorial WKND per SPA{#spa-wknd-tutorial}
 
-Immergiti nello sviluppo SPA con questa esercitazione in più parti. Implementa un tuo SPA che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
+Immergiti nello sviluppo dell’SPA con questa esercitazione in più parti. Implementa un SPA personalizzato che ti guidi attraverso la configurazione del progetto, la mappatura dei componenti, gli strumenti di sviluppo front-end e il routing delle applicazioni.
 
 ## Esercitazioni {#tutorials}
 
-Per un esempio end-to-end di creazione di un&#39;applicazione a pagina singola modificabile con AEM che inizia con la configurazione del progetto attraverso il routing dell&#39;applicazione, vedere i Tutorials di SPA WKND:
+Per un esempio end-to-end di creazione di un’applicazione a pagina singola modificabile con AEM, a partire dalla configurazione del progetto fino al routing dell’applicazione, vedi Tutorials WKND SPA:
 
 * [Guida introduttiva ad AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 * [Guida introduttiva ad AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-Prima di iniziare il progetto di SPA per AEM, tuttavia, assicurati di rivedere anche il [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) documento.
+Tuttavia, prima di iniziare il progetto SPA per l’AEM, assicurati di rivedere anche [Sviluppo dell&#39;SPA per l&#39;AEM](/help/sites-developing/spa-architecture.md) documento.

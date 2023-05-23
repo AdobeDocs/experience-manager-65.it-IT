@@ -1,7 +1,7 @@
 ---
 title: Compilazione del piano di test
 seo-title: Compiling your Test Plan
-description: I singoli casi di test vengono combinati nel piano di test
+description: I singoli casi di test sono combinati nel piano di test
 seo-description: The individual test cases are amalgamated into your Test Plan
 uuid: d83ef902-e0ef-4f84-9477-be12dfe91742
 contentOwner: Guillaume Carlino
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 # Compilazione del piano di test{#compiling-your-test-plan}
 
-I singoli casi di test verranno quindi riuniti nel piano di test, che definirà anche:
+I singoli casi di test verranno quindi accorpati nel piano di test, che definirà anche:
 
 **Priorità**
 
-Alcuni test avranno più importanza di altri, pertanto è opportuno indicarne la priorità.
+Alcuni test avranno più significato di altri, pertanto è consigliabile indicarne la priorità.
 
-Ad esempio, alcuni test possono influenzare una decisione Go / No-Go e devono quindi essere confermati con ogni rilascio intermedio testato.
+Ad esempio, alcuni test possono influenzare una decisione Go / No-Go, e quindi devono essere confermati con ogni versione provvisoria testata.
 
 **Iterazioni**
 
-Se il progetto utilizza una qualsiasi forma di iterazione di sviluppo (che coinvolge più versioni rese disponibili), potrebbe essere necessario o necessario fornire un&#39;indicazione dei risultati per ogni iterazione. Può essere utilizzato per indicare:
+Se il progetto utilizza qualsiasi forma di iterazione di sviluppo (che prevede la disponibilità di più versioni), potrebbe essere necessaria o utile un’indicazione dei risultati per ogni iterazione. Può essere utilizzato per indicare:
 
-* quali prove saranno coperte in quale iterazione.
+* quali test verranno inclusi in quale iterazione.
 * i risultati osservati per i test ripetuti in varie iterazioni.
 * che le prove prioritarie e le prove sulle caratteristiche di base siano ripetute a intervalli regolari.
 
@@ -45,5 +45,5 @@ A un certo punto puoi assegnare il team di test appropriato o una persona di tes
 A scopo di reporting, è necessario fornire una panoramica dei risultati dei test:
 
 * Percentuale di test già coperti.
-* Percentuale di successo/errore.
+* Percentuale di successo/fallimento.
 * Dati specifici relativi ai test prioritari.

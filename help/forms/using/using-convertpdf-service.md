@@ -1,7 +1,7 @@
 ---
 title: Servizio ConvertPDF
 seo-title: ConvertPDF Service
-description: Utilizzare il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagine.
+description: Utilizza il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagine.
 seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
@@ -20,26 +20,26 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il servizio Convert PDF converte i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di gestione dei contenuti che non supportano documenti PDF.
+Il servizio Convert PDF converte i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di gestione del contenuto che non supportano i documenti PDF.
 
-Con il servizio Convert PDF puoi effettuare le seguenti operazioni:
+Con il servizio Convert PDF è possibile effettuare le seguenti operazioni:
 
-* Convertire documenti PDF in PostScript. Durante la conversione in PostScript, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e se convertire in PostScript di livello 2 o 3. Il documento PDF convertito in un file PostScript deve essere non interattivo.
-* Convertire i documenti PDF in formati immagine JPEG, JPEG 2000, PNG e TIFF. Durante la conversione in uno qualsiasi di questi formati immagine, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e le specifiche delle opzioni immagine. La specifica contiene varie preferenze, come il formato di conversione delle immagini, la risoluzione delle immagini e la conversione del colore.
+* Converte i documenti PDF in PostScript. Durante la conversione in PostScript, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e se eseguire la conversione in PostScript di livello 2 o 3. Il documento PDF convertito in file PostScript deve essere non interattivo.
+* Convertire i documenti PDF in formati immagine JPEG, JPEG 2000, PNG e TIFF. Quando si esegue la conversione in uno di questi formati, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e una specifica delle opzioni immagine. La specifica contiene varie preferenze, come il formato di conversione dell&#39;immagine, la risoluzione dell&#39;immagine e la conversione del colore.
 
 ## Configurare le proprietà del servizio   {#properties}
 
-È possibile utilizzare **Servizio Converti PDF AEMFD** in AEM Console per configurare le proprietà per questo servizio. L’URL predefinito di AEM console è `https://[host]:'port'/system/console/configMgr`.
+È possibile utilizzare **Servizio AEMFD ConvertPDF** nella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
 
 ## Utilizzo del servizio {#using-the-service}
 
 Il servizio ConvertPDF fornisce le due API seguenti:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Converte un documento PDF in un file PostScript.
+* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte un documento PDF in un file PostScript.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte un documento PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
 
-### Utilizzo dell’API toPS con JSP o Servlets {#using-tops-api-with-a-jsp-or-servlets}
+### Utilizzo dell&#39;API toPS con JSP o Servlet {#using-tops-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -83,7 +83,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Utilizzo dell’API toImage con JSP o Servlets {#using-toimage-api-with-a-jsp-or-servlets}
+### Utilizzo dell’API toImage con una JSP o Servlet {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -130,11 +130,11 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Utilizzo del servizio ConvertPDF con flussi di lavoro AEM {#using-convertpdf-service-with-aem-workflows}
+### Utilizzo del servizio ConvertPDF con i flussi di lavoro AEM {#using-convertpdf-service-with-aem-workflows}
 
-L&#39;esecuzione del servizio ConvertPDF da un flusso di lavoro è simile all&#39;esecuzione da JSP/Servlet.
+L’esecuzione del servizio ConvertPDF da un flusso di lavoro è simile all’esecuzione da JSP/Servlet.
 
-L&#39;unica differenza consiste nell&#39;eseguire il servizio da JSP/Servlet l&#39;oggetto document recupera automaticamente un&#39;istanza dell&#39;oggetto ResourceResolver dall&#39;oggetto ResourceResolverHelper. Questo meccanismo automatico non funziona quando il codice viene richiamato da un flusso di lavoro. Per un flusso di lavoro, passare esplicitamente un&#39;istanza dell&#39;oggetto ResourceResolver al costruttore della classe Document. Quindi, l&#39;oggetto Document utilizza l&#39;oggetto ResourceResolver fornito per leggere il contenuto dal repository.
+L&#39;unica differenza consiste nell&#39;esecuzione del servizio da JSP/Servlet. L&#39;oggetto documento recupera automaticamente un&#39;istanza dell&#39;oggetto ResourceResolver dall&#39;oggetto ResourceResolverHelper. Questo meccanismo automatico non funziona quando il codice viene chiamato da un flusso di lavoro. Per un flusso di lavoro, passare esplicitamente un&#39;istanza dell&#39;oggetto ResourceResolver al costruttore della classe Document. L&#39;oggetto Document utilizza quindi l&#39;oggetto ResourceResolver fornito per leggere il contenuto dal repository.
 
 Il seguente processo di flusso di lavoro di esempio converte il documento di input in un documento PostScript. Il codice viene scritto in ECMAScript e il documento viene passato come payload del flusso di lavoro:
 

@@ -1,6 +1,6 @@
 ---
 title: Segmentazione
-description: La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, è necessario che i segmenti siano già definiti prima di avviare la campagna.
+description: La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, prima di avviare la campagna dovrai aver già definito i segmenti.
 uuid: 609d83b3-df0e-44ad-8e27-90b676d2666b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,17 +17,17 @@ ht-degree: 30%
 
 # Segmentazione{#understanding-segmentation}
 
-La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, è necessario che i segmenti siano già definiti prima di avviare la campagna.
+La segmentazione è un concetto chiave per la creazione di una campagna. Nella maggior parte dei casi, prima di avviare la campagna dovrai aver già definito i segmenti.
 
-I visitatori del sito hanno interessi e obiettivi diversi quando accedono a un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online.
+I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online.
 
-La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i seguenti elementi:
+La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i:
 
 * attività sul sito web
 * profilo
 * attività su altri siti web
 
-Il contenuto può quindi essere mirato in modo specifico alle esigenze e agli interessi del visitatore, a seconda dei segmenti a cui corrisponde.
+Il contenuto può quindi essere mirato in modo specifico per le esigenze e gli interessi del visitatore, a seconda dei segmenti di corrispondenza.
 
 ## Utilizzo della segmentazione {#using-segmentation}
 
@@ -37,9 +37,9 @@ I segmenti sono definiti in [Configurazione della segmentazione](/help/sites-adm
 
 Quando si parla di segmentazione, viene spesso utilizzata la seguente terminologia:
 
-**Visitatore** Un visitatore è una persona che visita un sito web. La visita di tale persona inizia in genere da una pagina di riferimento, quindi passa a una o più visualizzazioni di pagina sul tuo sito web. Puoi creare un profilo comportamentale dai dettagli della visita di quella persona.
+**Visitatore** Un visitatore è una persona che visita un sito web. La visita di quella persona in genere inizia da una pagina di riferimento, quindi passa a una o più visualizzazioni di pagina sul tuo sito web. Puoi creare un profilo comportamentale dai dettagli della visita di quella persona.
 
-**Utente** Un utente è un visitatore che si registra con il sito web per ricevere un profilo di account. Per generare il loro profilo, forniscono un’identificazione aggiuntiva, ad esempio un indirizzo e-mail e un genere. È inoltre possibile raccogliere informazioni aggiuntive, tra cui attività della community e modelli di acquisto, ancora una volta. In base alle informazioni fornite nel profilo, è possibile creare un profilo demografico.
+**Utente** Un utente è un visitatore che si è registrato sul sito Web per ricevere un profilo di account. Per generare il loro profilo forniscono un’identificazione aggiuntiva, ad esempio un indirizzo e-mail e il genere, tra gli altri. È inoltre possibile raccogliere ulteriori informazioni, tra cui le attività della community e i modelli di acquisto. In base alle informazioni fornite nel profilo, è possibile creare un profilo demografico.
 
 **Caratteristica** Una caratteristica è una proprietà di un visitatore che può essere utilizzata per determinare l’appartenenza a un segmento specifico.
 
@@ -50,33 +50,33 @@ Quando si parla di segmentazione, viene spesso utilizzata la seguente terminolog
 * Interesse nel sito web, inclusi pagine visitate e prodotti acquistati.
 * Interesse nel sito Web di provenienza, inclusi termini di ricerca utilizzati o annunci pubblicitari su cui il visitatore ha fatto clic.
 * Interesse in altri siti; questo viene determinato tramite strumenti quali Spyjax.
-* Fedeltà dei visitatori; durata della visita, frequenza delle visite.
+* Fedeltà del visitatore; durata della visita, frequenza delle visite.
 
-**Caratteristiche demografiche** Queste caratteristiche comprendono:
+**Caratteristiche demografiche** Queste sono le caratteristiche della popolazione selezionata, tra cui:
 
 * Età
 * Reddito
-* Dimensione familiare
+* Dimensioni della famiglia
 * Stato civile
 * Genere
 * Dove si trova
 
 **Caratteristiche derivate**
 
-Alcune caratteristiche demografiche sono difficili da determinare senza la registrazione, ma possono essere derivate dalla combinazione di caratteristiche comportamentali e demografiche.
+Alcuni tratti demografici sono difficili da determinare senza la registrazione, ma possono essere derivati dalla combinazione di tratti comportamentali e demografici.
 
 Ad esempio, la combinazione dell’URL di riferimento (come tratto comportamentale) con i dati demografici (acquisiti da strumenti come [Google Ad Planner](https://www.google.com/adplanner/)) permette ai proprietari dei siti di ricavare i tratti demografici dei loro visitatori
 
 **Sottosegmento** Un segmento può essere suddiviso in diversi sottosegmenti. Questo viene effettuato mediante la definizione di caratteristiche aggiuntive.
 
-**Pagina teaser** Una pagina teaser viene indirizzata a un pubblico specifico. Contiene dei contenuti riutilizzabili che possono essere utilizzati nel paragrafo del teaser.
+**Pagina teaser** Una pagina teaser si rivolge a un pubblico specifico. Contiene dei contenuti riutilizzabili che possono essere utilizzati nel paragrafo del teaser.
 
-**Campaign** Una campagna è una raccolta di pagine teaser e pagine di marketing e-mail, come newsletter o inviti. In genere una campagna viene eseguita per un periodo limitato e viene sostituita da un’altra campagna.
+**Campagna** Una campagna è una raccolta di pagine teaser e pagine di marketing e-mail, come newsletter o inviti. In genere una campagna ha una durata limitata e viene sostituita da un’altra campagna.
 
-**Paragrafo teaser** Si tratta di un paragrafo che richiama il contenuto di un’altra pagina a seconda di una strategia di selezione. Tale strategia di selezione può basarsi su segmenti e campagne.
+**Paragrafo teaser** Questo è un paragrafo che richiama il contenuto da un’altra pagina a seconda di una strategia di selezione. Tale strategia di selezione può basarsi su segmenti e campagne.
 
 **Elenco** Un elenco viene estratto da un segmento di utenti registrati. Ad esempio, la località da cui dipende il contenuto del paragrafo teaser.
 
 >[!NOTE]
 >
->Vedi [Segmentazione](/help/sites-administering/campaign-segmentation.md) per ulteriori informazioni sui segmenti in AEM.
+>Consulta [Segmentazione](/help/sites-administering/campaign-segmentation.md) per ulteriori informazioni sui segmenti dell’AEM.

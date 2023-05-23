@@ -21,38 +21,38 @@ ht-degree: 0%
 
 AEM Forms su JEE consente di utilizzare un modulo adattivo in HTML Workspace.
 
-Poiché è possibile selezionare un file XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un modulo adattivo esistente AEM archivio. Questa funzionalità consente al progettista del processo di configurare un modulo adattivo sia nel punto iniziale che in Task.
+Poiché è possibile selezionare un XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un archivio AEM di un modulo adattivo esistente. Questa funzionalità consente al progettista di processi di configurare un modulo adattivo sia nel punto iniziale che nell’attività.
 
 ## Esperienza di progettazione del processo {#process-design-experience}
 
-Esegui le seguenti operazioni per abilitare i moduli adattivi da utilizzare nella progettazione del processo:
+Per abilitare i moduli adattivi da utilizzare nella progettazione dei processi, effettua le seguenti operazioni:
 
-* In Assegna attività e Punto iniziale, puoi passare a una risorsa modulo adattivo nell’archivio CRX quando assegni una risorsa modulo a un’attività.
-* Nel foglio delle proprietà Assegna attività/Avvia punto di Workbench è possibile nascondere la barra degli strumenti di livello superiore/globale di un modulo adattivo.
-* È possibile utilizzare nuovi profili di azione per le azioni Rendering e invio nei moduli adattivi.
+* In Assegna attività e punto iniziale, puoi passare a una risorsa di modulo adattivo nell’archivio CRX quando assegni una risorsa di modulo a un’attività.
+* Nel foglio delle proprietà Assegna attività/Punto iniziale del workbench è possibile nascondere la barra degli strumenti globale/di primo livello di un modulo adattivo.
+* Puoi utilizzare nuovi profili di azione per le azioni Rendering e Invio nei moduli adattivi.
 
-### Esportazione e importazione di applicazioni LiveCycli {#livecycle-application-export-and-import}
+### Esportazione e importazione applicazioni di LiveCycle {#livecycle-application-export-and-import}
 
-Poiché i moduli adattivi si trovano nell’archivio AEM, l’esportazione dell’applicazione di LiveCycle contiene solo i riferimenti per i moduli adattivi utilizzati. Pertanto, l&#39;esportazione e l&#39;importazione di applicazioni di LiveCycle è un processo in due fasi. L&#39;applicazione di LiveCycle include le definizioni dei processi e così via. Un pacchetto separato contenente moduli adattivi viene esportato come file ZIP da AEM. Durante l’importazione, l’applicazione di LiveCycle viene importata tramite Workbench e i moduli adattivi vengono importati tramite AEM.
+Poiché i moduli adattivi si trovano nell’archivio AEM, l’esportazione dell’applicazione di LiveCycle contiene solo i riferimenti per i moduli adattivi utilizzati. Pertanto, l&#39;esportazione e l&#39;importazione di applicazioni di LiveCycle è un processo in due fasi. L&#39;applicazione di LiveCycle include definizioni di processo e così via. Un pacchetto separato contenente moduli adattivi viene esportato come file ZIP dall’AEM. Durante l’importazione, l’applicazione di LiveCycle viene importata tramite Workbench e i moduli adattivi vengono importati tramite AEM.
 
 ## Esperienza utente del modulo adattivo in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-HTML Workspace offre alcuni controlli specifici per i moduli adattivi, oltre ai controlli disponibili per i moduli mobili. Un utente può aggiungere allegati, salvare, firmare, inviare e spostarsi all’interno dei moduli adattivi in HTML Workspace quando l’utente apre un’attività o un punto iniziale. Di seguito sono riportate le specifiche:
+HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre ai controlli disponibili per i moduli mobili. Quando un utente apre un’attività o un punto iniziale, può aggiungere allegati, salvare, firmare, inviare e navigare nei moduli adattivi in HTML Workspace. Di seguito sono riportate le specifiche:
 
-1. Per allegare i file, utilizza gli allegati task, come nel caso di Mobile Forms. Qualsiasi pulsante di tipo File allegato del modulo adattivo è nascosto.
+1. Per allegare i file, usate gli allegati delle attività, come in Mobile Forms. Qualsiasi pulsante di tipo File allegato di un modulo adattivo è nascosto.
 
-1. Per salvare un modulo adattivo, fai clic su **Salva**, come nel caso di Mobile Forms. Qualsiasi pulsante Save type del modulo adattivo è nascosto.
+1. Per salvare un modulo adattivo, fai clic su **Salva**, come nel caso di Mobile Forms. Qualsiasi pulsante Salva tipo di modulo adattivo è nascosto.
 
-1. Per inviare un modulo adattivo, utilizza il **Invia** azioni di pulsante o di indirizzamento disponibili, come nel caso di Mobile Forms. Qualsiasi pulsante di invio del modulo adattivo è nascosto.
+1. Per inviare un modulo adattivo, utilizza **Invia** o instradare le azioni disponibili, come nel caso di Mobile Forms. Qualsiasi pulsante Invia tipo di modulo adattivo è nascosto.
 
-1. **Visibilità globale della barra degli strumenti del modulo adattivo**: Se designer del processo nasconde la barra degli strumenti globale/di primo livello, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
+1. **Visibilità della barra degli strumenti Globale del modulo adattivo**: se Process Designer nasconde la barra degli strumenti globale/di primo livello, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
 
-1. **Controlli di navigazione nell’area di lavoro per Adaptive Forms**: I pulsanti Successivo/Precedente sono disponibili insieme ai pulsanti Salva, Invia e Inoltra azione per un modulo adattivo in HTML Workspace. Fare clic sui pulsanti Successivo/Precedente per spostarsi nei pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente forniscono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
+1. **Controlli di navigazione di Workspace per Adaptive Forms**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Inoltra azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
 
-1. **Servizi eSign e componente di riepilogo del modulo adattivo**: Il componente Riepilogo non è operativo in HTML Workspace. In altre parole, se un modulo adattivo ha un componente Riepilogo, non è visibile nell’area di lavoro. Invece dell’invio automatico nel componente Progettazione, l’utente dell’area di lavoro fa clic sull’azione Invia o su un percorso in HTML Workspace. Dopo la firma, un documento è visibile come documento firmato piatto. Fai clic su **Invia** oppure un&#39;azione di route per chiudere/completare l&#39;attività o il punto iniziale.\
-   Il documento firmato viene raccolto dal server dei servizi eSign e il file xml dei dati viene inoltrato al passaggio successivo del processo.
+1. **Componente servizi eSign e riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente Progettazione, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione del percorso in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Clic **Invia** oppure un&#39;azione di instradamento per chiudere/completare l&#39;attività o il punto iniziale.\
+   Il documento firmato viene raccolto dal server eSign Services e il file XML dati viene inoltrato al passaggio successivo del processo.
 
-## Passaggi per utilizzare i moduli adattivi nella progettazione del processo {#steps-to-use-adaptive-forms-in-process-design}
+## Passaggi per utilizzare i moduli adattivi nella progettazione dei processi {#steps-to-use-adaptive-forms-in-process-design}
 
 1. Apri Adobe Experience Manager Forms Workbench.
 
@@ -62,28 +62,28 @@ HTML Workspace offre alcuni controlli specifici per i moduli adattivi, oltre ai 
 
    Crea nuova applicazione
 
-1. Crea un processo o utilizza un processo esistente nell&#39;applicazione.
+1. Creare un processo o utilizzare un processo esistente nell&#39;applicazione.
 
    ![Crea nuovo processo](assets/create_new_process.png)
 
    Crea nuovo processo
 
-1. Crea un punto iniziale o Assegna attività e fai doppio clic su di esso.
-1. Sotto la **[!UICONTROL Presentazione e dati]** sezione , seleziona **[!UICONTROL utilizzare una risorsa CRX]** e fai clic sui puntini di sospensione prima della risorsa.
+1. Creare un punto iniziale o assegnare un&#39;attività e fare doppio clic su di essa.
+1. Sotto **[!UICONTROL Presentazione e dati]** sezione, seleziona **[!UICONTROL utilizzare una risorsa CRX]** e fai clic sui puntini di sospensione davanti alla risorsa.
 
    ![Utilizzare una risorsa CRX](assets/use_crx_asset.png)
 
    Utilizzare una risorsa CRX
 
-1. Seleziona il modulo adattivo creato tramite l’interfaccia utente Gestione risorse e fai clic su **[!UICONTROL OK]**.
+1. Seleziona il modulo adattivo creato tramite l’interfaccia utente di Gestione risorse e fai clic su **[!UICONTROL OK]**.
 
-   ![Selezionare un modulo adattivo](assets/selecting_form.png)
+   ![Seleziona un modulo adattivo](assets/selecting_form.png)
 
-   Selezionare un modulo adattivo
+   Seleziona un modulo adattivo
 
    >[!NOTE]
    >
    >Per informazioni dettagliate sulla creazione di un modulo adattivo, consulta [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Per informazioni dettagliate sulla creazione di un processo, vedi [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Per informazioni dettagliate sulla creazione di un processo, consulta [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

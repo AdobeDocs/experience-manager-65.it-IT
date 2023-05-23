@@ -1,6 +1,6 @@
 ---
-title: Configurare l’editor Rich Text per più editor in-place.
-description: Crea più editor in-place in Adobe Experience Manager configurando l’editor Rich Text.
+title: Configurare l’editor Rich Text per più editor locali.
+description: Crea più editor locali in Adobe Experience Manager configurando l’Editor Rich Text.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
@@ -10,17 +10,17 @@ ht-degree: 2%
 
 ---
 
-# Configurare più editor in-place {#configure-multiple-in-place-editors}
+# Configurare più editor locali {#configure-multiple-in-place-editors}
 
-È possibile configurare l’editor Rich Text in Adobe Experience Manager in modo che abbia più editor locali. Una volta configurato, puoi selezionare il contenuto appropriato e aprire l’editor appropriato.
+È possibile configurare l’Editor Rich Text in Adobe Experience Manager in modo che disponga di più editor locali. Una volta configurata, puoi selezionare il contenuto appropriato e aprire l’editor appropriato.
 
-![Un editor specifico sul posto](assets/rte-inplace-editor.png)
+![Un editor locale specifico](assets/rte-inplace-editor.png)
 
 ## Configurare più editor {#configure-multiple-editors}
 
-Per abilitare più editor in-place alla struttura di un `cq:InplaceEditingConfig` il tipo di nodo è stato migliorato con la definizione di `cq:ChildEditorConfig` tipo di nodo.
+Per abilitare più editor locali, la struttura di un `cq:InplaceEditingConfig` il tipo di nodo è stato migliorato con la definizione di `cq:ChildEditorConfig` tipo di nodo.
 
-Esempio:
+Ad esempio:
 
 ```js
    /**
@@ -53,39 +53,39 @@ Esempio:
       - title (string)
 ```
 
-Per configurare più editor, effettua le seguenti operazioni:
+Per configurare più editor, eseguire la procedura seguente:
 
-1. Sul nodo `cq:inplaceEditing` (di tipo `cq:InplaceEditingConfig`) definiscono le seguenti proprietà:
+1. Sul nodo `cq:inplaceEditing` (di tipo `cq:InplaceEditingConfig`) definisci le seguenti proprietà:
 
    * Nome:`editorType`
    * Tipo: `String`
    * Valore: `hybrid`
 
-1. Sotto questo nodo, crea un nodo:
+1. Crea un nodo sotto questo nodo:
 
    * Nome: `cq:ChildEditors`
    * Tipo: `nt:unstructured`
 
-1. Sotto `cq:childEditors` nodo, crea un nodo per ogni editor in-place:
+1. Sotto `cq:childEditors` , crea un nodo per ciascun editor locale:
 
-   * Nome: Il nome di ogni nodo è il nome della proprietà che rappresenta, come nel caso delle destinazioni di rilascio. Ad esempio: `image` e `text`.
+   * Nome: il nome di ciascun nodo è il nome della proprietà che rappresenta, come nel caso delle destinazioni di rilascio. Ad esempio: `image` e `text`.
    * Tipo: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Esiste una correlazione tra i target di rilascio definiti e gli editor figlio. Nome della `cq:ChildEditorConfig` node è considerato come ID target di rilascio, da utilizzare come parametro per l’editor figlio selezionato. Se l’area secondaria modificabile non dispone, ad esempio, di una destinazione di rilascio in un componente di testo, il nome dell’editor figlio viene comunque considerato come un ID per identificare l’area modificabile corrispondente.
+   >Esiste una correlazione tra le destinazioni di rilascio definite e gli editor secondari. Il nome del `cq:ChildEditorConfig` viene considerato come ID della destinazione di rilascio, da utilizzare come parametro per l’editor secondario selezionato. Se la sottoarea modificabile non ha una destinazione di rilascio, ad esempio, in un componente di testo, il nome dell’editor figlio viene comunque considerato un ID per identificare l’area modificabile corrispondente.
 
 1. Su ciascuno di questi nodi (`cq:ChildEditorConfig`) definisci le proprietà:
 
    * Nome: `type`.
-   * Valore: il nome dell&#39;editor interno registrato; ad esempio, `image` e `text`.
+   * Valore: nome dell’editor locale registrato; ad esempio, `image` e `text`.
 
    * Nome: `title`.
-   * Valore: Titolo visualizzato nell’elenco di selezione dei componenti degli editor disponibili. Ad esempio: `Image` e `Text`.
+   * Valore: il titolo visualizzato nell’elenco di selezione dei componenti degli editor disponibili. Ad esempio: `Image` e `Text`.
 
 ### Configurazione aggiuntiva per gli editor Rich Text {#additional-configuration-for-rich-text-editors}
 
-La configurazione per più editor Rich Text è leggermente diversa, in quanto puoi configurare ogni singola istanza RTE separatamente. Per maggiori dettagli, vedi [configurare l’editor Rich Text](/help/sites-administering/rich-text-editor.md). Per avere più editor Rich Text, crea una configurazione per ogni editor Rich Text sul posto. Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` poiché ogni singolo editor Rich Text può avere una configurazione diversa. Sotto il nuovo nodo crea ogni singola configurazione RTE.
+La configurazione di più editor Rich Text è leggermente diversa, in quanto è possibile configurare separatamente ogni singola istanza di RTE. Per ulteriori informazioni, consulta [configurare l’editor Rich Text](/help/sites-administering/rich-text-editor.md). Per disporre di più editor Rich Text, creare una configurazione per ogni editor Rich Text locale. L’Adobe consiglia di creare il nuovo nodo di configurazione in `cq:InplaceEditingConfig` in quanto ogni singolo editor Rich Text può avere una configurazione diversa. Nel nuovo nodo creare ogni singola configurazione dell’editor Rich Text.
 
 ```xml
     texttext
@@ -102,7 +102,7 @@ La configurazione per più editor Rich Text è leggermente diversa, in quanto pu
 
 >[!NOTE]
 >
->Tuttavia, per l’editor Rich Text, l’ `configPath` è supportata quando nel componente è presente una sola istanza dell&#39;editor di testo (sottoarea modificabile). Questo utilizzo `configPath` è fornito per supportare la compatibilità con le versioni precedenti delle finestre di dialogo dell’interfaccia utente del componente.
+>Tuttavia, per l’editor Rich Text, `configPath` questa proprietà è supportata quando nel componente è presente una sola istanza dell’editor di testo (sottoarea modificabile). Questo utilizzo di `configPath` viene fornito per supportare la compatibilità con le versioni precedenti delle finestre di dialogo dell’interfaccia utente del componente.
 
 >[!CAUTION]
 >
@@ -110,7 +110,7 @@ La configurazione per più editor Rich Text è leggermente diversa, in quanto pu
 
 ## Esempi di codice {#code-samples}
 
-Puoi trovare il codice di questa pagina in [progetto aem-authoring-hybridedit su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puoi scaricare l’intero progetto come [archivio ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Puoi trovare il codice di questa pagina su [progetto aem-authoring-hybrideditors su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puoi scaricare il progetto completo come [un archivio ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
 ## Aggiungere un editor locale {#add-an-in-place-editor}
 

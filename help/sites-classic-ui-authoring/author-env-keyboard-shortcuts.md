@@ -1,6 +1,6 @@
 ---
 title: Scelte rapide da tastiera per le console
-description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili per l’utilizzo delle console e altre per la modifica delle pagine.
+description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili per l’utilizzo delle console, altre per la modifica delle pagine.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -25,7 +25,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
 >
 >* Windows: **Ctrl**+**click** sui componenti richiesti.
 >
->* Mac: **Comando**+**click** sui componenti richiesti.
+>* Mac: **Cmd**+**click** sui componenti richiesti.
 >
 
 
@@ -40,10 +40,10 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
   </tr>
   <tr>
    <td>Console</td>
-   <td><strong><code>Shift-Double-Click</code></strong><br /> (sulla pagina richiesta)</td>
-   <td>Apri la pagina in una nuova finestra.<br /> <strong>Nota:</strong> è operativo se <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostati su Finestra singola; se Finestre multiple, questo è il comportamento predefinito.</td>
+   <td><strong><code>Shift-Double-Click</code></strong><br /> (nella pagina richiesta)</td>
+   <td>Apri la pagina in una nuova finestra.<br /> <strong>Nota:</strong> questa opzione è operativa se <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostati su Finestra singola; se Più finestre, questo è il comportamento predefinito.</td>
   </tr>
  </tbody>
 </table>
 
-Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano [editor di pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per creare pagine.
+Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano [editor pagina](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per l’authoring delle pagine.

@@ -19,16 +19,16 @@ ht-degree: 1%
 
 # Campagne{#campaigns}
 
-La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di distribuire contenuti personalizzati e creare esperienze dedicate ai visitatori.
+La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di fornire contenuti personalizzati e creare esperienze dedicate per i visitatori.
 
-Se gestisci le campagne (incluse le pagine di destinazione), puoi effettuare le seguenti operazioni:
+Se amministri campagne (comprese le pagine di destinazione), potrebbe essere necessario effettuare le seguenti operazioni:
 
-* **Definire i segmenti** - È necessario definire segmenti e strategie per il contenuto di destinazione.
-* **Preparare HTML per le pagine di destinazione** - Le pagine di destinazione consentono agli autori di importare rapidamente e facilmente design e contenuti direttamente in una pagina AEM. È necessario preparare HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili quando crei pagine di destinazione di marketing che sono attive solo per un periodo di tempo limitato e devono essere create rapidamente.
-* **Integrare con il SiteCatalyst** - È possibile integrare le pagine di destinazione con il SiteCatalyst.
+* **Definire i segmenti** - È necessario definire segmenti e strategie per i contenuti di destinazione.
+* **Preparare HTML per le pagine di destinazione** - Le pagine di destinazione consentono agli autori di importare la progettazione e i contenuti direttamente in una pagina AEM in modo rapido e semplice. Devi preparare il HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
+* **Integrare con SiteCatalyst** - È possibile integrare le pagine di destinazione con SiteCatalyst.
 
-Vedi le pagine seguenti:
+Consulta le pagine seguenti:
 
 * [Configurazione della segmentazione](/help/sites-administering/campaign-segmentation.md)
-* [Estensione e configurazione dell’importazione di progettazione per le pagine di destinazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Estensione e configurazione di Importazione progettazione per le pagine di destinazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 * [Integrazione delle pagine di destinazione con Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

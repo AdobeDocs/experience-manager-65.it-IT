@@ -1,7 +1,7 @@
 ---
-title: Minificazione dei file JavaScript
+title: Minimizzazione dei file JavaScript
 seo-title: Minification of the JavaScript files
-description: Istruzioni per generare codice minimizzato dopo le personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il web.
+description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il web.
 seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 ---
 
-# Minificazione dei file JavaScript {#minification-of-the-javascript-files}
+# Minimizzazione dei file JavaScript {#minification-of-the-javascript-files}
 
-La minimizzazione rimuove dal codice sorgente i caratteri ridondanti, ad esempio lo spazio vuoto, la nuova riga e i commenti. Questo migliora le prestazioni riducendo le dimensioni del codice. Anche se la minimizzazione non influisce sulla funzionalità, riduce la leggibilità del codice.
+La minimizzazione rimuove dal codice sorgente i caratteri ridondanti, come lo spazio vuoto, la nuova riga e i commenti. Questo migliora le prestazioni riducendo le dimensioni del codice. Anche se la minimizzazione non influisce sulla funzionalità, riduce la leggibilità del codice.
 
-Per generare codice minimizzato per le modifiche semantiche segui questi passaggi.
+Per generare un codice minimizzato per le modifiche semantiche, segui la procedura riportata di seguito.
 
 1. Copia `client-html/src/main/webapp/js` da src-package su filesystem.
 
    >[!NOTE]
    >
-   >Vedi [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per ulteriori dettagli sui pacchetti.
+   >Consulta [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per ulteriori dettagli sui pacchetti.
 
-1. Aggiorna percorsi in `main.js` in client-html/src/main/webapp/js, per modelli/visualizzazioni aggiunti/aggiornati.
+1. Aggiorna percorsi in `main.js` si trova in client-html/src/main/webapp/js, per modelli/viste aggiunti/aggiornati.
 
-   Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
+   Ad esempio, l’aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 
    ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -43,9 +43,9 @@ Per generare codice minimizzato per le modifiche semantiche segui questi passagg
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Aggiorna `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` nel caso in cui si verifichi una modifica/aggiunta dell&#39;alias in `main.js`.
+1. Aggiorna `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` nel caso in cui venga modificato/aggiunto un alias in `main.js`.
 
-   Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
+   Ad esempio, l’aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 
    ```xml
    <sharequeue
@@ -69,7 +69,7 @@ Per generare codice minimizzato per le modifiche semantiche segui questi passagg
    mvn clean install
    ```
 
-   Genera una cartella minified-files, sotto client-html/src/main/webapp/js con minified main.js e register.js.
+   Genera una cartella di file minimizzati, in client-html/src/main/webapp/js con main.js minimizzato e registry.js.
 
 >[!NOTE]
 >
@@ -77,4 +77,4 @@ Per generare codice minimizzato per le modifiche semantiche segui questi passagg
 
 >[!NOTE]
 >
->Se si minimizza, l’aggiornamento è interessato.
+>Se minimizzi, l’aggiornamento è interessato.

@@ -1,19 +1,19 @@
 ---
 title: Utilizzo di frammenti di contenuto
-description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per la distribuzione headless.
+description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per la distribuzione headless.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM), i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md) Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali, ideale per la distribuzione headless.
+Con Adobe Experience Manager (AEM), i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md) Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -43,7 +43,7 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
-* Utilizzo [Frammenti di contenuto e GraphQL per la distribuzione dei contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Utilizzare [Frammenti di contenuto, insieme a GraphQL, per distribuire i contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ I frammenti di contenuto possono quindi essere assemblati per fornire esperienze
 
 >[!NOTE]
 >
->Prima di AEM 6.3, venivano creati frammenti di contenuto con l’uso di modelli anziché modelli. I modelli non sono più disponibili per la creazione di nuovi frammenti, ma tutti i frammenti creati con tale modello sono ancora supportati.
+>Prima di AEM 6.3, i frammenti di contenuto venivano creati utilizzando modelli anziché modelli. I modelli non sono più disponibili per la creazione di nuovi frammenti, ma sono ancora supportati tutti i frammenti creati con tale modello.
 
 ## Frammenti di contenuto e Content Services {#content-fragments-and-content-services}
 
@@ -126,7 +126,7 @@ I frammenti di contenuto sono:
 
 * Memorizzati come **Risorse**:
 
-   * I frammenti di contenuto (e le relative varianti) possono essere creati e mantenuti dal **Risorse** console.
+   * I frammenti di contenuto (e le relative varianti) possono essere creati e manutenuti dalla sezione **Risorse** console.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
 * Utilizzati nell’[editor pagina tramite il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
@@ -269,7 +269,7 @@ Contenuto intermedio:
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è il contenuto della pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 

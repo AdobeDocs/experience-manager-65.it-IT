@@ -19,21 +19,21 @@ ht-degree: 0%
 
 # Configurazione degli endpoint e-mail {#configuring-email-endpoints}
 
-Gli endpoint e-mail consentono agli utenti di richiamare un servizio inviando uno o più documenti (come allegati e-mail) a un account e-mail specifico. La casella in entrata e-mail funge da punto di raccolta per gli allegati. Il servizio controlla la casella in entrata ed elabora gli allegati. I risultati della conversione vengono inoltrati all’utente definito nell’endpoint.
+Gli endpoint e-mail consentono agli utenti di richiamare un servizio inviando uno o più documenti (come allegati e-mail) a un account e-mail specificato. La posta in arrivo funge da punto di raccolta per gli allegati. Il servizio controlla la casella in entrata ed elabora gli allegati. I risultati della conversione vengono inoltrati all&#39;utente definito nell&#39;endpoint.
 
-Per un endpoint e-mail, gli utenti autorizzati possono richiamare un processo inviando file all’account appropriato. I risultati verranno restituiti all’utente che ha inviato il modulo (per impostazione predefinita) o all’utente definito nelle impostazioni dell’endpoint.
+Per un endpoint e-mail, gli utenti autorizzati possono richiamare un processo inviando i file all’account appropriato. I risultati verranno restituiti all’utente che ha inviato il messaggio (per impostazione predefinita) o all’utente definito nelle impostazioni dell’endpoint.
 
-Prima di configurare un endpoint e-mail, crea un account e-mail POP3 o IMAP da utilizzare per l’endpoint. Imposta un account separato per ciascun tipo di conversione. Ad esempio, è possibile configurare un account per generare documenti PDF standard da allegati di file in entrata e un altro account per generare documenti PDF protetti.
+Prima di configurare un endpoint e-mail, crea un account e-mail POP3 o IMAP da utilizzare per l’endpoint. Imposta un conto separato per ogni tipo di conversione. Ad esempio, un account può essere configurato per generare documenti PDF standard da allegati di file in arrivo e un altro account può essere configurato per generare documenti PDF protetti.
 
 >[!NOTE]
 >
->Ogni indirizzo e-mail deve essere mappato su un solo endpoint e-mail. Non puoi configurare più endpoint e-mail in un unico indirizzo e-mail, anche se gli endpoint e-mail aggiuntivi sono disattivati.
+>Ogni indirizzo e-mail deve essere mappato su un solo endpoint e-mail. Non puoi configurare più endpoint e-mail su un singolo indirizzo e-mail, anche se gli endpoint e-mail aggiuntivi sono disabilitati.
 
 Tutti gli endpoint e-mail sono configurati con un nome utente e una password autorizzati per la casella in entrata e-mail, necessari quando si richiama il servizio. L’account e-mail è protetto dal sistema del server di posta in cui è configurato.
 
-Se gli utenti inviano documenti con caratteri di lingua occidentale europea nei nomi dei file e dei percorsi di conversione, devono utilizzare un&#39;applicazione e-mail che supporti i tipi di codifica richiesti (Latin1 [ISO-8859-1], Europa occidentale [Windows]o UTF-8). Per ulteriori informazioni, consulta la sezione *Installazione e distribuzione di moduli AEM* documento per il server applicazioni.
+Se gli utenti inviano documenti con caratteri di lingua dell&#39;Europa occidentale nei nomi dei percorsi di file e conversione, devono utilizzare un&#39;applicazione e-mail che supporti i tipi di codifica richiesti (Latin1 [ISO-8859-1], Europa occidentale [Windows]o UTF-8). Per ulteriori informazioni, vedere *Installazione e distribuzione di moduli AEM* per il server applicazioni.
 
-Prima di configurare un endpoint e-mail, configura il servizio e-mail. (Vedi [Configurare le impostazioni dell’endpoint e-mail predefinite](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) I parametri di configurazione del servizio e-mail hanno due finalità:
+Prima di configurare un endpoint e-mail, configura il servizio e-mail. (vedere [Configurare le impostazioni predefinite dell’endpoint e-mail](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) I parametri di configurazione del servizio e-mail hanno due scopi:
 
 * Per configurare gli attributi comuni a tutti gli endpoint e-mail
 * Per fornire valori predefiniti per tutti gli endpoint e-mail
@@ -42,232 +42,232 @@ Prima di configurare un endpoint e-mail, configura il servizio e-mail. (Vedi [Co
 
 È possibile configurare POP3, IMAP o SMTP per utilizzare Secure Sockets Layer (SSL) per un endpoint e-mail.
 
-1. Sul server di posta elettronica, abilita SSL per POP3, IMAP o SMTP, in base alla documentazione del produttore.
+1. Sul server e-mail, abilita SSL per POP3, IMAP o SMTP in base alla documentazione del produttore.
 1. Esporta un certificato client dal server e-mail.
-1. Utilizza il programma keytool per importare il file del certificato client nell’archivio certificati Java Virtual Machine (JVM) del server dell’applicazione. La procedura per questo passaggio dipenderà dai percorsi di installazione JVM e client.
+1. Utilizzare il programma keytool per importare il file di certificato client nell&#39;archivio certificati Java Virtual Machine (JVM) del server applicazioni. La procedura per questo passaggio dipende dai percorsi di installazione JVM e client.
 
-   Ad esempio, se utilizzi un&#39;installazione predefinita di Oracle WebLogic Server con JDK 1.5.0 su Microsoft Windows Server® 2003, digitare il testo seguente nel prompt dei comandi:
+   Se ad esempio si utilizza un&#39;installazione predefinita di Oracle WebLogic Server con JDK 1.5.0 in Microsoft Windows Server® 2003, digitare il testo seguente al prompt dei comandi:
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
-1. Quando richiesto, immetti la password (per Java, la password predefinita è `changeit`). Riceverai un messaggio in cui viene indicato che il certificato è stato importato correttamente.
+1. Quando richiesto, immettere la password (per Java, la password predefinita è `changeit`). Verrà visualizzato un messaggio che informa che il certificato è stato importato correttamente.
 1. Utilizza la console di amministrazione per aggiungere l’endpoint e-mail al servizio.
-1. Crea l’endpoint e-mail nella console di amministrazione. Durante la configurazione delle impostazioni dell’endpoint, selezionare SSL POP3/IMAP abilitato per i messaggi in arrivo e SSL SMTP abilitato per i messaggi in uscita e modificare di conseguenza le proprietà della porta.
+1. Crea l’endpoint e-mail nella console di amministrazione. Durante la configurazione delle impostazioni dell&#39;endpoint, selezionare POP3/IMAP SSL Enabled per i messaggi in arrivo e SMTP SSL Enabled per i messaggi in uscita e modificare di conseguenza le proprietà della porta.
 
 >[!NOTE]
 >
->Suggerimento: Se rilevi dei problemi durante l&#39;utilizzo di SSL, utilizza un client e-mail come Microsoft Outlook per verificare se può accedere al server e-mail utilizzando SSL. Se il client di posta elettronica non può accedere al server di posta elettronica, il problema è correlato alla configurazione del certificato o del server di posta elettronica.
+>Suggerimento: se si verificano problemi durante l&#39;utilizzo di SSL, utilizzare un client di posta elettronica come Microsoft Outlook per verificare se è possibile accedere al server di posta elettronica utilizzando SSL. Se il client e-mail non è in grado di accedere al server e-mail, il problema è relativo alla configurazione del certificato o del server e-mail.
 
-## Configurare le impostazioni dell’endpoint e-mail predefinite {#configure-default-email-endpoint-settings}
+## Configurare le impostazioni predefinite dell’endpoint e-mail {#configure-default-email-endpoint-settings}
 
-Puoi utilizzare la pagina Gestione servizi per configurare gli attributi comuni a tutti gli endpoint e-mail e per fornire valori predefiniti per tutti gli endpoint e-mail.
+È possibile utilizzare la pagina Gestione del servizio per configurare attributi comuni a tutti gli endpoint e-mail e per fornire valori predefiniti per tutti gli endpoint e-mail.
 
-Affinché il flusso di lavoro dei moduli possa ricevere e gestire i messaggi e-mail in arrivo dagli utenti, è necessario creare un endpoint e-mail per il servizio Attività completa. Questo endpoint e-mail richiede impostazioni aggiuntive, come descritto in [Creare un endpoint e-mail per il servizio Attività completa](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
+Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in arrivo dagli utenti, è necessario creare un endpoint e-mail per il servizio Completa attività. Questo endpoint e-mail richiede impostazioni aggiuntive, come descritto in [Creare un endpoint e-mail per il servizio Attività completa](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
 ### Modificare i valori predefiniti per gli endpoint e-mail {#change-the-default-values-for-email-endpoints}
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione dei servizi.
-1. Nella pagina Gestione servizi, fai clic su E-mail: 1.0 (l&#39;ID componente è com.adobe.idp.dsc.provider.service.email.Email).
-1. Nella scheda Configurazione, specifica le impostazioni dell’endpoint e-mail predefinito, quindi fai clic su Salva.
+1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella pagina Gestione servizi, fai clic su E-mail: 1.0 (l’ID componente è com.adobe.idp.dsc.provider.service.email.Email).
+1. Nella scheda Configurazione specifica le impostazioni predefinite dell’endpoint e-mail, quindi fai clic su Salva.
 
-### Impostazioni dell’endpoint e-mail predefinito {#default-email-endpoint-settings}
+### Impostazioni endpoint e-mail predefinito {#default-email-endpoint-settings}
 
-**Espressione Cron:** L&#39;espressione cron utilizzata dal quarzo per pianificare il polling della directory di input.
+**Espressione Cron:** Espressione cron utilizzata da quartz per pianificare il polling della directory di input.
 
-**Intervallo di ripetizione:** Il numero di volte in cui viene ripetuto il polling della directory. L&#39;intervallo di ripetizione predefinito è in secondi se questo valore non è specificato nella configurazione dell&#39;endpoint. Il valore predefinito è 10. Questo valore non può essere inferiore a 10.
+**Intervallo ripetizione:** Il numero di volte in cui il polling della directory viene ripetuto. L’intervallo di ripetizione predefinito è in secondi se questo valore non è specificato nella configurazione dell’endpoint. Il valore predefinito è 10. Questo valore non può essere inferiore a 10.
 
-**Conteggio ripetizioni:** Numero di volte in cui viene effettuato il polling della directory di input. Il conteggio di ripetizione predefinito da utilizzare se questo valore non è specificato nella configurazione dell’endpoint. Il valore -1 indica una scansione indefinita della directory. Il valore predefinito è -1.
+**Conteggio ripetizioni:** Il numero di volte in cui viene eseguito il polling della directory di input. Il conteggio di ripetizioni predefinito da utilizzare se questo valore non è specificato nella configurazione dell’endpoint. Il valore -1 indica l&#39;analisi indefinita della directory. Il valore predefinito è -1.
 
-**Ritardo all&#39;avvio del processo:** Il valore predefinito, in secondi, per il ritardo prima che il processo inizi la scansione dell&#39;endpoint. Il valore predefinito è 0.
+**Ritardo all&#39;avvio del processo:** Valore predefinito, in secondi, del ritardo prima che il processo inizi la scansione dell’endpoint. Il valore predefinito è 0.
 
-**Dimensione batch:** Il numero di e-mail che il ricevitore elabora per scansione per ottenere prestazioni ottimali. Il valore -1 indica tutte le e-mail. Il valore predefinito è 2.
+**Dimensione batch:** Il numero di e-mail elaborate dal ricevitore per scansione per ottenere prestazioni ottimali. Il valore -1 indica tutte le e-mail. Il valore predefinito è 2.
 
-**Asincrono:** Identifica il tipo di chiamata come asincrono o sincrono. I processi transitori e sincroni possono essere richiamati solo in modo sincrono. Il valore predefinito è asincrono.
+**Asincrono:** Identifica il tipo di chiamata come asincrona o sincrona. I processi transitori e sincroni possono essere richiamati solo in modo sincrono. Il valore predefinito è asincrono.
 
-**Pattern di dominio:** Il pattern del nome di dominio utilizzato per filtrare le e-mail in arrivo. Ad esempio, se utilizzi adobe.com, verranno elaborati solo i messaggi e-mail provenienti da adobe.com; le e-mail provenienti da altri domini vengono ignorate.
+**Pattern dominio:** Schema del nome di dominio utilizzato per filtrare le e-mail in arrivo. Ad esempio, se utilizzi adobe.com, verranno elaborate solo le e-mail da adobe.com; le e-mail da altri domini verranno ignorate.
 
-**Pattern file:** I pattern di file allegato in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell&#39;estensione (.[dD][aA]&quot;port&quot;). Il valore predefinito è &amp;ast;.&amp;ast;.
+**Pattern file:** I modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell&#39;estensione (.[dD][aA]&#39;porta&#39;). Il valore predefinito è &amp;ast;.&amp;ast;.
 
-**Destinatari del processo riuscito:** Uno o più indirizzi e-mail utilizzati per inviare e-mail per indicare processi riusciti. Per impostazione predefinita, al mittente del processo iniziale viene sempre inviato un messaggio di lavoro riuscito. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto questo campo.
+**Destinatari processo riusciti:** Uno o più indirizzi e-mail utilizzati per inviare e-mail per indicare processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente del processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
 
-**Destinatari del processo non riuscito:** Uno o più indirizzi e-mail utilizzati per inviare e-mail per indicare processi non riusciti. Per impostazione predefinita, al mittente che ha inviato il processo iniziale viene sempre inviato un messaggio di lavoro non riuscito. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto questo campo.
+**Destinatari processo non riuscito:** Uno o più indirizzi e-mail utilizzati per inviare e-mail per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente che ha inviato il processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
 
-**Host casella in entrata:** Nome host della casella in entrata o indirizzo IP da analizzare dal provider di posta elettronica.
+**Host casella in entrata:** Il nome host della casella in entrata o l’indirizzo IP che il provider e-mail deve analizzare.
 
-**Porta in entrata:** Numero della porta in entrata per il provider di posta elettronica da analizzare. Se il valore è 0, verrà utilizzata la porta IMAP o POP3 predefinita.
+**Porta casella in entrata:** Numero della porta della casella in entrata da analizzare per il provider e-mail. Se il valore è 0, verrà utilizzata la porta IMAP o POP3 predefinita.
 
-**Protocollo casella in entrata:** Il protocollo e-mail per l’endpoint e-mail da utilizzare per la scansione della casella in entrata. Le scelte sono IMAP o POP3. Il server di posta elettronica host della casella in entrata deve supportare questi protocolli.
+**Protocollo casella in entrata:** Il protocollo e-mail per l’endpoint e-mail da utilizzare per la scansione della casella in entrata. Le opzioni disponibili sono IMAP o POP3. Il server di posta host della casella in entrata deve supportare questi protocolli.
 
-**Timeout casella in entrata:** Specifica il tempo di attesa dell&#39;endpoint prima dell&#39;annullamento durante il tentativo di connessione alla casella in entrata. Se una connessione non viene acquisita prima del raggiungimento del valore di timeout, il polling della casella in entrata non viene eseguito.
+**Timeout casella in entrata:** Specifica il tempo di attesa dell&#39;endpoint prima dell&#39;annullamento quando si tenta di connettersi alla casella in entrata. Se una connessione non viene acquisita prima del raggiungimento del valore di timeout, la casella in entrata non verrà sottoposta a polling.
 
-**Utente casella in entrata:** Nome utente necessario per accedere all’account e-mail. A seconda del server e-mail e della configurazione, questo nome può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
+**Utente casella in entrata:** Il nome utente necessario per accedere all’account e-mail. A seconda del server e della configurazione di e-mail, questo nome può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
 
-**Password casella in entrata:** Password per l&#39;utente in entrata.
+**Password casella in entrata:** Password per l&#39;utente della casella in entrata.
 
-**SSL POP3/IMAP abilitato:** Se selezionata, abilita SSL.
+**SSL POP3/IMAP abilitato:** Se questa opzione è selezionata, abilita SSL.
 
-**Host SMTP:** Nome host del server di posta che il provider di posta elettronica utilizza per inviare i risultati e i messaggi di errore. Ad esempio, mail.example.com.
+**Host SMTP:** Nome host del server di posta utilizzato dal provider di posta elettronica per inviare risultati e messaggi di errore. Ad esempio, mail.example.com.
 
-**Porta SMTP:** La porta utilizzata per la connessione al server di posta. Il valore predefinito è 25.
+**Porta SMTP:** Porta utilizzata per la connessione al server di posta. Il valore predefinito è 25.
 
-**Utente SMTP:** L’account utente del provider di posta elettronica da utilizzare quando invia e-mail per risultati ed errori.
+**Utente SMTP:** Account utente del provider di posta elettronica da utilizzare per l&#39;invio di messaggi di posta elettronica per risultati ed errori.
 
-**Password SMTP:** Password dell&#39;account SMTP. Alcuni server di posta non richiedono una password SMTP.
+**Password SMTP:** La password per l&#39;account SMTP. Alcuni server di posta non richiedono una password SMTP.
 
-**Invia da:** L’indirizzo e-mail (ad esempio, user@company.com) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server e-mail tenta di determinare l’indirizzo e-mail combinando il valore specificato nell’impostazione Utente SMTP con un dominio predefinito configurato sul server e-mail. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi errori. Per garantire che l’indirizzo del messaggio e-mail sia corretto, specifica un valore per l’impostazione Invia da.
+**Invia da:** L’indirizzo e-mail (ad esempio, user@company.com) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server di posta elettronica tenta di determinare l&#39;indirizzo di posta elettronica combinando il valore specificato nell&#39;impostazione Utente SMTP con un dominio predefinito configurato sul server di posta elettronica. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi degli errori. Per verificare che i messaggi e-mail abbiano l’indirizzo di origine corretto, specifica un valore per l’impostazione Invia da.
 
-**SSL SMTP abilitato:** Se selezionata, abilita SSL su SMTP.
+**SSL SMTP abilitato:** Se questa opzione è selezionata, abilita SSL su SMTP.
 
-**Includi Il Corpo E-Mail Originale Come Allegato:** Per impostazione predefinita, quando si invia un’e-mail al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere invece il testo come allegato, selezionare questa opzione.
+**Includi Il Corpo Dell’E-Mail Originale Come Allegato:** Per impostazione predefinita, quando si invia un messaggio di posta elettronica al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
 
-**Utilizza La Riga Oggetto Originale Per Le E-Mail Di Risultato:** Per impostazione predefinita, il server Forms utilizza come oggetto i valori specificati nelle impostazioni Soggetto e-mail con esito positivo e Oggetto e-mail con errore durante l’invio dei messaggi e-mail con risultati. Per utilizzare invece la stessa riga dell’oggetto dell’e-mail originale inviata al server, seleziona questa opzione.
+**Utilizza La Riga Oggetto Originale Per Le E-Mail Dei Risultati:** Per impostazione predefinita, il server Forms utilizza i valori specificati nelle impostazioni Oggetto e-mail riuscito e Oggetto e-mail errore come riga dell’oggetto quando si inviano i messaggi e-mail dei risultati. Selezionare questa opzione per utilizzare invece la stessa riga dell&#39;oggetto dell&#39;e-mail originale inviata al server.
 
-**Oggetto e-mail di successo:** Dopo aver inviato un’e-mail a un endpoint e-mail per avviare o continuare un processo, riceverai un messaggio e-mail di ritorno dal server dei moduli di AEM. Se l’e-mail ha esito positivo, riceverai un messaggio e-mail di successo. Se l’e-mail non riesce, riceverai un messaggio e-mail di errore per informarne il motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per l’endpoint.
+**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, si riceve un messaggio e-mail di ritorno dal server dei moduli AEM. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
 
-**Corpo e-mail di successo:** Consente di specificare il corpo dei messaggi e-mail con esito positivo inviati per l’endpoint.
+**Corpo e-mail di successo:** Consente di specificare il corpo del testo dei messaggi e-mail di successo inviati per questo endpoint.
 
-**Prefisso oggetto e-mail errore:** Consente di specificare il testo utilizzato all’inizio della riga dell’oggetto dei messaggi e-mail di errore inviati per l’endpoint.
+**Errore Prefisso oggetto e-mail:** Consente di specificare il testo utilizzato all&#39;inizio della riga dell&#39;oggetto dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Oggetto e-mail errore:** Consente di specificare l’oggetto dei messaggi e-mail di errore inviati per l’endpoint. Questo testo viene visualizzato dopo il prefisso Oggetto e-mail di errore.
+**Oggetto e-mail errore:** Consente di specificare l’oggetto dei messaggi e-mail di errore inviati per questo endpoint. Questo testo viene visualizzato dopo il prefisso dell’oggetto e-mail di errore.
 
-**Corpo e-mail errore:** Consente di specificare la prima riga nel testo del corpo dei messaggi e-mail di errore inviati per l’endpoint.
+**Corpo e-mail errore:** Consente di specificare la prima riga nel corpo del testo dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Informazioni di riepilogo e-mail:** Ogni messaggio di errore o di successo include una sezione contenente il testo e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
+**Informazioni di riepilogo e-mail:** Ogni messaggio di operazione riuscita o non riuscita include una sezione contenente il testo dell&#39;e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
 
-**Convalida La Casella In Entrata Prima Di Creare/Aggiornare Questo Endpoint:** Quando questa opzione è selezionata, il server dei moduli controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server dei moduli AEM crea l’endpoint senza convalidare la casella in entrata.
+**Convalida Casella In Entrata Prima Di Creare/Aggiornare Questo Endpoint:** Quando questa opzione è selezionata, il server Forms controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server AEM forms crea l&#39;endpoint senza convalidare la casella in entrata.
 
 **Codifica set di caratteri:** Formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in un ambiente giapponese possono scegliere ISO2022-JP.
 
-**Cartella inviata via e-mail non riuscita:** Specifica una directory in cui memorizzare i risultati se il server di posta SMTP non è operativo.
+**Cartella e-mail inviata non riuscita:** Specifica una directory in cui archiviare i risultati se il server di posta SMTP non è operativo.
 
-## Impostazioni dell’endpoint e-mail {#email-endpoint-settings}
+## Impostazioni endpoint e-mail {#email-endpoint-settings}
 
 Utilizza le seguenti impostazioni per configurare un endpoint e-mail.
 
-**Nome:** Impostazione obbligatoria che identifica l’endpoint. Non includere un carattere &lt; perché tronca il nome visualizzato in Workspace. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate nella RFC1738.
+**Nome:** Un’impostazione obbligatoria che identifica l’endpoint. Non includere un carattere &lt; perché tronca il nome visualizzato in Workspace. Se immetti un URL come nome dell’endpoint, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
 
 **Descrizione:** Descrizione dell&#39;endpoint. Non includere un carattere &lt; perché tronca la descrizione visualizzata in Workspace.
 
-**Espressione Cron:** Immetti un’espressione cron se l’e-mail deve essere pianificata utilizzando un’espressione cron.
+**Espressione Cron:** Inserisci un’espressione cron se l’e-mail deve essere pianificata utilizzando un’espressione cron.
 
 **Conteggio ripetizioni:** Numero di volte in cui l’endpoint e-mail esegue la scansione della cartella o della directory. Il valore -1 indica una scansione indefinita. Il valore predefinito è -1.
 
-**Intervallo di ripetizione:** Frequenza di scansione utilizzata dal ricevitore per il controllo della posta in arrivo.
+**Intervallo ripetizione:** Velocità di scansione utilizzata dal ricevitore per il controllo della posta in arrivo.
 
-**Ritardo all&#39;avvio del processo:** Tempo di attesa per l&#39;analisi dopo l&#39;avvio della pianificazione.
+**Ritardo all&#39;avvio del processo:** Tempo di attesa per la scansione dopo l&#39;avvio della pianificazione.
 
-**Dimensione batch:** Il numero di e-mail che il ricevitore elabora per scansione per ottenere prestazioni ottimali. Il valore -1 indica tutte le e-mail. Il valore predefinito è 2.
+**Dimensione batch:** Il numero di e-mail elaborate dal ricevitore per scansione per ottenere prestazioni ottimali. Il valore -1 indica tutte le e-mail. Il valore predefinito è 2.
 
-**Nome utente:** Un’impostazione obbligatoria, che è il nome utente utilizzato quando si richiama un servizio di destinazione da un’e-mail. Il valore predefinito è SuperAdmin.
+**Nome utente:** Un’impostazione obbligatoria, che è il nome utente utilizzato quando si richiama un servizio target da e-mail. Il valore predefinito è SuperAdmin.
 
-**Nome di dominio:** Un’impostazione obbligatoria, che è il dominio dell’utente. Il valore predefinito è DefaultDom.
+**Nome dominio:** Un’impostazione obbligatoria, che è il dominio dell’utente. Il valore predefinito è DefaultDom.
 
-**Pattern di dominio:** Specifica i pattern di dominio delle e-mail in arrivo accettate dal provider. Ad esempio, se utilizzi adobe.com, viene elaborato solo l’e-mail da adobe.com; le e-mail provenienti da altri domini vengono ignorate.
+**Pattern dominio:** Specifica i pattern di dominio dei messaggi e-mail in arrivo accettati dal provider. Ad esempio, se utilizzi adobe.com, vengono elaborate solo le e-mail da adobe.com; le e-mail da altri domini vengono ignorate.
 
-**Pattern file:** Specifica i pattern di file allegato in ingresso accettati dal provider. Questo include i file che hanno estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&amp;ast;.[dD][aA]&quot;port&quot;).
+**Pattern file:** Specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&amp;ast;.[dD][aA]&#39;porta&#39;).
 
-**Destinatari del processo riuscito:** Indirizzo e-mail a cui vengono inviati i messaggi per indicare l’esito positivo dei processi. Per impostazione predefinita, al mittente viene sempre inviato un messaggio di lavoro riuscito. Se digiti il mittente, i risultati delle e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica altri destinatari con indirizzi e-mail, separati da virgole (,).
+**Destinatari processo riusciti:** Un indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
 
-Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, desideri attivare un processo e non desideri una notifica e-mail del risultato.
+Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, si desidera attivare un processo e non inviare una notifica e-mail del risultato.
 
-**Destinatari del processo non riuscito:** Indirizzo e-mail a cui vengono inviati i messaggi per indicare processi non riusciti. Per impostazione predefinita, al mittente viene sempre inviato un messaggio di lavoro non riuscito. Se digiti il mittente, i risultati delle e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica altri destinatari con indirizzi e-mail, separati da virgole (,).
+**Destinatari processo non riuscito:** Un indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
 
-Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, desideri attivare un processo e non desideri una notifica e-mail del risultato.
+Per disattivare questa impostazione, lasciare vuota l&#39;impostazione. In alcuni casi, si desidera attivare un processo e non inviare una notifica e-mail del risultato.
 
-**Host casella in entrata:** Nome host della casella in entrata o indirizzo IP da analizzare dal provider di posta elettronica.
+**Host casella in entrata:** Il nome host della casella in entrata o l’indirizzo IP che il provider e-mail deve analizzare.
 
-**Porta in entrata:** La porta utilizzata dal server e-mail. Il valore predefinito per POP3 è 110 e il valore predefinito per IMAP è 143. Se SSL è abilitato, il valore predefinito per POP3 è 995 e il valore predefinito per IMAP è 993.
+**Porta casella in entrata:** La porta utilizzata dal server e-mail. Il valore predefinito per POP3 è 110 e quello per IMAP è 143. Se SSL è abilitato, il valore predefinito per POP3 è 995 e quello per IMAP è 993.
 
-**Protocollo casella in entrata:** Il protocollo e-mail per l’endpoint e-mail da utilizzare per la scansione della casella in entrata. I valori sono IMAP o POP3. Il server di posta elettronica host della casella in entrata deve supportare questi protocolli.
+**Protocollo casella in entrata:** Il protocollo e-mail per l’endpoint e-mail da utilizzare per la scansione della casella in entrata. I valori sono IMAP o POP3. Il server di posta host della casella in entrata deve supportare questi protocolli.
 
-**Timeout casella in entrata:** Timeout, in secondi, del provider di posta elettronica per attendere le risposte della casella in entrata.
+**Timeout casella in entrata:** Timeout, in secondi, dell’attesa delle risposte della casella in entrata da parte del provider e-mail.
 
-**Utente casella in entrata:** Nome utente necessario per accedere all’account e-mail. A seconda del server e-mail e della configurazione, questo valore può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
+**Utente casella in entrata:** Il nome utente necessario per accedere all’account e-mail. A seconda del server e della configurazione di e-mail, questo valore può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
 
-**Password casella in entrata:** Password per l’utente della inbox.
+**Password casella in entrata:** Password per l&#39;utente della casella in entrata.
 
-**SSL POP3/IMAP abilitato:** Seleziona questa impostazione per forzare il provider di posta elettronica a utilizzare SSL per la scansione della casella in entrata. Assicurati che il server di posta elettronica supporti SSL.
+**SSL POP3/IMAP abilitato:** Seleziona questa impostazione per forzare il provider di posta elettronica a utilizzare SSL per la scansione della casella in entrata. Assicurati che il server di posta supporti SSL.
 
-**Host SMTP:** Il nome host del server di posta elettronica utilizzato dal provider di posta elettronica per inviare i risultati e i messaggi di errore.
+**Host SMTP:** Il nome host del server di posta utilizzato dal provider di posta elettronica per inviare risultati e messaggi di errore.
 
 **Porta SMTP:** Il valore predefinito per la porta SMTP è 25.
 
-**Utente SMTP:** L’account utente del provider di posta elettronica da utilizzare quando invia notifiche e-mail di risultati ed errori.
+**Utente SMTP:** L’account utente che il provider di posta elettronica deve utilizzare per inviare notifiche e-mail di risultati ed errori.
 
-**Password SMTP:** Password dell&#39;account SMTP. Alcuni server di posta non richiedono una password SMTP.
+**Password SMTP:** La password per l&#39;account SMTP. Alcuni server di posta non richiedono una password SMTP.
 
-**Invia da:** L’indirizzo e-mail (ad esempio, user@company.com) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server e-mail tenta di determinare l’indirizzo e-mail combinando il valore specificato nell’impostazione Utente SMTP con un dominio predefinito configurato sul server e-mail. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi errori. Per garantire che l’indirizzo del messaggio e-mail sia corretto, specifica un valore per l’impostazione Invia da.
+**Invia da:** L’indirizzo e-mail (ad esempio, user@company.com) utilizzato per inviare notifiche e-mail di risultati ed errori. Se non si specifica un valore Invia da, il server di posta elettronica tenta di determinare l&#39;indirizzo di posta elettronica combinando il valore specificato nell&#39;impostazione Utente SMTP con un dominio predefinito configurato sul server di posta elettronica. Se il server di posta elettronica non dispone di un dominio predefinito e non si specifica un valore per Invia da, potrebbero verificarsi degli errori. Per verificare che i messaggi e-mail abbiano l’indirizzo di origine corretto, specifica un valore per l’impostazione Invia da.
 
-**SSL SMTP abilitato:** Seleziona questa impostazione per forzare il provider di posta elettronica a utilizzare SSL per la scansione della casella in entrata. Assicurati che il server di posta elettronica supporti SSL.
+**SSL SMTP abilitato:** Seleziona questa impostazione per forzare il provider di posta elettronica a utilizzare SSL per la scansione della casella in entrata. Assicurati che il server di posta supporti SSL.
 
-**Cartella inviata via e-mail non riuscita:** Specifica una directory in cui memorizzare i risultati se il server di posta SMTP non è operativo.
+**Cartella e-mail inviata non riuscita:** Specifica una directory in cui archiviare i risultati se il server di posta SMTP non è operativo.
 
-**asincrono:** Se è impostato su sincrono, vengono elaborati tutti i documenti di input e viene restituita una sola risposta. Quando è impostato su asincrono, viene inviata una risposta per ogni documento elaborato.
+**asincrono:** Quando è impostato su synchronous, tutti i documenti di input vengono elaborati e viene restituita una singola risposta. Quando è impostato su asincrono, viene inviata una risposta per ogni documento elaborato.
 
-Ad esempio, viene creato un endpoint e-mail per un servizio che prende un singolo documento Word e lo restituisce come file PDF. È possibile inviare un messaggio e-mail alla casella in entrata dell’endpoint contenente più (3) documenti Word. Quando vengono elaborati tutti e tre i documenti, se l’endpoint è configurato come sincrono, viene inviata un’e-mail di risposta singola con tutti e tre i documenti allegati. Se l’endpoint è asincrono, viene inviato un messaggio e-mail di risposta dopo la conversione in PDF di ogni documento Word. Il risultato sono tre e-mail, ciascuna con un singolo allegato PDF.
+Ad esempio, viene creato un endpoint e-mail per un servizio che accetta un singolo documento di Word e restituisce tale documento come file PDF. È possibile inviare un’e-mail alla casella in entrata dell’endpoint contenente più (3) documenti Word. Quando vengono elaborati tutti e tre i documenti, se l’endpoint è configurato come sincrono, viene inviata un’unica e-mail di risposta con tutti e tre i documenti allegati. Se l’endpoint è asincrono, viene inviata un’e-mail di risposta dopo che ogni documento di Word è stato convertito in PDF. Il risultato sono tre e-mail, ciascuna con un singolo allegato PDF.
 
 Il valore predefinito è asincrono.
 
-**Includi il corpo dell’e-mail originale come allegato:** Per impostazione predefinita, quando si invia un’e-mail al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere invece il testo come allegato, selezionare questa opzione.
+**Includi il corpo dell’e-mail originale come allegato:** Per impostazione predefinita, quando si invia un messaggio di posta elettronica al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
 
-**Utilizza l’oggetto originale per le e-mail dei risultati:** Per impostazione predefinita, il server Forms utilizza come oggetto i valori specificati nelle impostazioni Soggetto e-mail con esito positivo e Oggetto e-mail con errore durante l’invio dei messaggi e-mail con risultati. Per utilizzare invece la stessa riga dell’oggetto dell’e-mail originale inviata al server, seleziona questa opzione.
+**Utilizza l’oggetto originale per le e-mail dei risultati:** Per impostazione predefinita, il server Forms utilizza i valori specificati nelle impostazioni Oggetto e-mail riuscito e Oggetto e-mail errore come riga dell’oggetto quando si inviano i messaggi e-mail dei risultati. Selezionare questa opzione per utilizzare invece la stessa riga dell&#39;oggetto dell&#39;e-mail originale inviata al server.
 
-**Oggetto e-mail di successo:** Dopo aver inviato un’e-mail a un endpoint e-mail per avviare o continuare un processo, riceverai un messaggio e-mail di ritorno dal server dei moduli di AEM. Se l’e-mail ha esito positivo, riceverai un messaggio e-mail di successo. Se l’e-mail non riesce, riceverai un messaggio e-mail di errore per informarne il motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per l’endpoint.
+**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, si riceve un messaggio e-mail di ritorno dal server dei moduli AEM. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
 
-**Corpo e-mail di successo:** Consente di specificare il corpo dei messaggi e-mail con esito positivo inviati per l’endpoint.
+**Corpo e-mail di successo:** Consente di specificare il corpo del testo dei messaggi e-mail di successo inviati per questo endpoint.
 
-**Prefisso oggetto e-mail errore:** Consente di specificare il testo utilizzato all’inizio della riga dell’oggetto dei messaggi e-mail di errore inviati per l’endpoint.
+**Errore Prefisso oggetto e-mail:** Consente di specificare il testo utilizzato all&#39;inizio della riga dell&#39;oggetto dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Oggetto e-mail errore:** Consente di specificare l’oggetto dei messaggi e-mail di errore inviati per l’endpoint. Questo testo viene visualizzato dopo il prefisso Oggetto e-mail di errore.
+**Oggetto e-mail errore:** Consente di specificare l’oggetto dei messaggi e-mail di errore inviati per questo endpoint. Questo testo viene visualizzato dopo il prefisso dell’oggetto e-mail di errore.
 
-**Corpo e-mail errore:** Consente di specificare la prima riga nel testo del corpo dei messaggi e-mail di errore inviati per l’endpoint.
+**Corpo e-mail errore:** Consente di specificare la prima riga nel corpo del testo dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Informazioni di riepilogo e-mail:** Ogni messaggio di errore o di successo include una sezione contenente il testo e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
+**Informazioni di riepilogo e-mail:** Ogni messaggio di operazione riuscita o non riuscita include una sezione contenente il testo dell&#39;e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
 
-**Convalida la casella in entrata prima di creare/aggiornare questo endpoint:** Quando questa opzione è selezionata, il server dei moduli controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server dei moduli AEM crea l’endpoint senza convalidare la casella in entrata.
+**Convalida casella in entrata prima di creare/aggiornare questo endpoint:** Quando questa opzione è selezionata, il server Forms controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server AEM forms crea l&#39;endpoint senza convalidare la casella in entrata.
 
-**Nome operazione:** Questa impostazione è obbligatoria. Elenco di operazioni che possono essere assegnate all’endpoint e-mail. L’operazione selezionata determina quali campi vengono visualizzati nelle sezioni Mappature parametri di input e Mappature parametri di output .
+**Nome operazione:** Questa impostazione è obbligatoria. Elenco di operazioni che possono essere assegnate all’endpoint e-mail. L&#39;operazione selezionata determina i campi da visualizzare nelle sezioni Mapping parametri di input e Mapping parametri di output.
 
-**Mappature dei parametri di input:** Utilizzato per configurare l&#39;input necessario per elaborare il servizio e l&#39;operazione. I due tipi di input sono letterali e variabili:
+**Mappature parametri di input:** Utilizzato per configurare l’input necessario per elaborare il servizio e l’operazione. I due tipi di input sono letterali e variabili:
 
-**Letterale:** L’e-mail utilizza il valore immesso nel campo così come viene visualizzato.
+**Valore letterale:** L’e-mail utilizza il valore immesso nel campo così come viene visualizzato.
 
-**Variabile:** Puoi mappare una stringa dall’oggetto dell’e-mail, dal corpo, dall’intestazione o dall’indirizzo e-mail del mittente. A questo scopo, utilizza una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Ad esempio, se utilizzi %SUBJECT%, il contenuto dell’oggetto dell’e-mail viene utilizzato come parametro di input. Per raccogliere gli allegati, immettere un pattern di file che l’endpoint e-mail può utilizzare per selezionare i documenti allegati. Ad esempio, l&#39;immissione di &amp;ast;.pdf seleziona qualsiasi documento allegato con estensione .pdf. Immissione &amp;ast; seleziona qualsiasi documento allegato. Se si immette example.pdf, verrà selezionato qualsiasi documento allegato denominato example.pdf.
+**Variabile:** Puoi mappare una stringa dall’oggetto dell’e-mail, dal corpo, dall’intestazione o dall’indirizzo e-mail del mittente. A tale scopo, utilizzare una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Se ad esempio si utilizza %SUBJECT%, il contenuto dell&#39;oggetto dell&#39;e-mail verrà utilizzato come parametro di input. Per prelevare gli allegati, immettere un modello di file che l&#39;endpoint e-mail può utilizzare per selezionare i documenti allegati. Se ad esempio si immette &amp;ast;.pdf, verranno selezionati tutti i documenti allegati con estensione pdf. Se si immette &amp;ast;, viene selezionato qualsiasi documento allegato. L&#39;immissione di example.pdf consente di selezionare qualsiasi documento allegato denominato example.pdf.
 
-**Mappature dei parametri di output:** Utilizzato per configurare l&#39;output del servizio e l&#39;operazione. I seguenti caratteri nei valori di mappatura dei parametri di output vengono espansi nel nome file allegato:
+**Mappature parametri di output:** Utilizzato per configurare l’output del servizio e dell’operazione. I seguenti caratteri nei valori di mappatura dei parametri di output vengono espansi nel nome file allegato:
 
-**%F** Rappresenta il nome del file di origine (senza un&#39;estensione ).
+**%F** Rappresenta il nome del file di origine (senza estensione).
 
-**%E** Rappresenta l&#39;estensione del file di origine.
+**%E** Rappresenta l’estensione del file sorgente.
 
 Qualsiasi occorrenza della barra rovesciata (\) viene sostituita con %%.
 
-***nota **: Se il messaggio di richiesta del servizio include più allegati di file, non è possibile utilizzare i parametri %F e %E per la proprietà Mapping parametri di output dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati di file, non è possibile specificare lo stesso nome di file per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi dei file restituiti e i nomi non sono prevedibili.*
+***nota **: se il messaggio di richiesta del servizio include più file allegati, non è possibile utilizzare i parametri %F e %E per la proprietà Output Parameter Mappints dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati, non è possibile specificare lo stesso nome per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi per i file restituiti e i nomi non sono prevedibili.*
 
 Sono disponibili i seguenti valori:
 
-**Oggetto singolo:** Il provider di posta elettronica non ha la destinazione della cartella di origine; i risultati vengono restituiti come allegati. Il pattern è Result/%F.ps e restituisce Result%%sourcefilename.ps come allegato del nome file.
+**Oggetto singolo:** Il provider di posta elettronica non dispone della destinazione della cartella di origine. I risultati vengono restituiti come allegati. Il modello è Result/%F.ps e restituisce Result%%sourcefilename.ps come allegato del nome file.
 
-**Elenco:** Il pattern è Risultato/%F/ e restituisce Risultato%%sourcefilename%%file1 come allegato del nome file.
+**Elenco:** Il modello è Result/%F/ e restituisce Result%%sourcefilename%%file1 come allegato del nome file.
 
-**Mappa:** Il pattern è Risultato/%F/ e la destinazione di origine è Risultato%%sourcefilename%%file1 e Risultato%%sourcefilename%%file2. Se la mappa contiene più di un oggetto e il pattern è Risultato/%F.ps, gli allegati del file di risposta sono Risultato%%sourcefilename1.ps (output 1) e Risultato%%sourcefilename2.ps (output 2).
+**Mappa:** Il modello è Result/%F/ e la destinazione di origine è Result%%sourcefilename%%file1 e Result%%sourcefilename%%file2. Se la mappa contiene più oggetti e il modello è Result/%F.ps, gli allegati del file di risposta sono Result%%sourcefilename1.ps (output 1) e Result%%sourcefilename2.ps (output 2).
 
 ## Creare un endpoint e-mail per il servizio Attività completa {#create-an-email-endpoint-for-the-complete-task-service}
 
-Affinché il flusso di lavoro dei moduli possa ricevere e gestire i messaggi e-mail in arrivo dagli utenti, è necessario creare un endpoint e-mail per il servizio Attività completa.
+Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in arrivo dagli utenti, è necessario creare un endpoint e-mail per il servizio Completa attività.
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione dei servizi.
-1. Nella pagina Gestione servizi fare clic sul servizio Attività completa.
-1. Nella scheda Endpoint selezionare E-mail dall’elenco a discesa e fare clic su Aggiungi.
-1. Nella casella Host casella in entrata digitare il nome host o l&#39;indirizzo IP del server di posta.
-1. Nella casella Utente casella in entrata digitare il nome utente necessario per accedere all’account e-mail creato per gestire gli invii del modulo. A seconda del server e-mail e della configurazione, questo nome può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
-1. Nella casella Password casella in entrata digitare la password per l&#39;utente in entrata.
-1. Nella casella Host SMTP digitare il nome host o l&#39;indirizzo IP del server di posta da cui il provider di posta elettronica invia i risultati e i messaggi di errore.
-1. Nella casella Utente SMTP, digitare l’account utente da utilizzare per il provider di posta elettronica quando invia un’e-mail per individuare risultati ed errori. Questo account utente può essere lo stesso valore utilizzato per Posta in arrivo utente.
-1. Nella casella Password SMTP, digitare la password per l&#39;account SMTP.
-1. Nell&#39;elenco Nome operazione selezionare invoke.
-1. Nell’elenco attachmentMap , seleziona Variabile e digita `*.*` nella casella adiacente. Questo invia tutti gli allegati dei messaggi di posta in entrata a una variabile di mappa per il processo Attività completa.
-1. Nell&#39;elenco mailBody, selezionare variabile e digitare `%BODY%` nella casella adiacente.
-1. Nell&#39;elenco mailFrom, selezionare Variabile e digitare `%SENDER%` nella casella adiacente. In questo modo l’indirizzo del mittente viene mappato sui dati del processo Attività completa.
-1. Nella casella dei risultati, digita `results`. In questo modo l&#39;attività Completa o il processo di avvio restituirà una stringa di risultato.
-1. Fate clic su Aggiungi.
+1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella pagina Gestione servizio fare clic sul servizio Completa attività.
+1. Nella scheda Endpoint, seleziona E-mail dall’elenco a discesa, quindi fai clic su Aggiungi.
+1. Nella casella Posta in arrivo host digitare il nome host o l&#39;indirizzo IP del server di posta.
+1. Nella casella Utente casella in entrata digitare il nome utente necessario per accedere all&#39;account di posta elettronica creato per gestire l&#39;invio dei moduli. A seconda del server e della configurazione di e-mail, questo nome può essere solo la parte del nome utente dell’e-mail o l’indirizzo e-mail completo.
+1. Nella casella Password casella in entrata digitare la password per l&#39;utente casella in entrata.
+1. Nella casella Host SMTP digitare il nome host o l&#39;indirizzo IP del server di posta da cui il provider di posta elettronica invia risultati e messaggi di errore.
+1. Nella casella Utente SMTP digitare l&#39;account utente che il provider di posta elettronica dovrà utilizzare per inviare l&#39;e-mail per i risultati e gli errori. Questo account utente può essere lo stesso valore utilizzato per l&#39;utente della casella in entrata.
+1. Nella casella Password SMTP digitare la password per l&#39;account SMTP.
+1. Nell&#39;elenco Nome operazione selezionare richiama.
+1. Nell&#39;elenco attachmentMap, selezionare Variabile e digitare `*.*` nella casella adiacente. In questo modo tutti gli allegati dei messaggi di posta in arrivo vengono inviati a una variabile di mappa per il processo Completa attività.
+1. Nell&#39;elenco mailBody, selezionare la variabile e digitare `%BODY%` nella casella adiacente.
+1. Nell&#39;elenco mailFrom, selezionare Variabile e digitare `%SENDER%` nella casella adiacente. L&#39;indirizzo del mittente viene mappato sui dati del processo di completamento dell&#39;attività.
+1. Nella casella dei risultati digitare `results`. In questo modo l&#39;attività completa o il processo di avvio restituirà una stringa di risultati.
+1. Fai clic su Aggiungi.

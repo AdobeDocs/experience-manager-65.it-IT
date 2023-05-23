@@ -1,7 +1,7 @@
 ---
-title: Definizione dei casi di test
+title: Definizione dei test case
 seo-title: Defining your Test Cases
-description: I casi di test devono essere basati sui casi di utilizzo e sulle specifiche dei requisiti dettagliati
+description: I test case devono essere basati sui casi d’uso e sulle specifiche dettagliate dei requisiti
 seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
@@ -18,93 +18,93 @@ ht-degree: 0%
 
 ---
 
-# Definizione dei casi di test{#defining-your-test-cases}
+# Definizione dei test case{#defining-your-test-cases}
 
-I casi di test devono essere basati su:
+I test case devono essere basati su:
 
-**Casi d&#39;uso**
+**Casi d’uso**
 
-* Questi definiscono la funzionalità necessaria in termini di interazione tra gli attori (ruoli che avviano determinate azioni) e il sistema.
+* Definiscono le funzionalità richieste in termini di interazione tra gli attori (ruoli che avviano determinate azioni) e il sistema.
 * I casi d’uso devono essere definiti dal cliente.
 
-**Specifiche tecniche**
+**Specifiche dettagliate dei requisiti**
 
-* Tutti i requisiti funzionali e di prestazioni devono essere verificati.
+* Tutti i requisiti funzionali e prestazionali devono essere testati.
 
-Le prove devono definire chiaramente:
+I test dovrebbero definire chiaramente:
 
-* Prerequisiti; questi possono riguardare sistemi, configurazioni o esperienza di tester specifici.
-* Le misure da seguire; ad un livello di dettaglio adeguato.
+* Prerequisiti, che possono riguardare sistemi, configurazioni o esperienze di test specifici.
+* Passaggi da seguire; a un livello di dettaglio adeguato.
 * Risultati previsti.
-* Cancella i criteri per il superamento o il mancato funzionamento.
+* Cancella i criteri per il superamento o il fallimento.
 
-La prospettiva di automatizzare i test case è ovviamente attraente in quanto può eliminare i compiti ripetitivi.
+La prospettiva di automatizzare i test case è ovviamente allettante in quanto può eliminare le attività ripetitive.
 
-## Test manuali e automatici {#manual-versus-automated-tests}
+## Test manuali e automatizzati {#manual-versus-automated-tests}
 
 Tuttavia, automatizzare i test case è un investimento significativo, pertanto alcuni aspetti dovrebbero essere presi in considerazione:
 
-* Richiedi tempo, fatica ed esperienza per la configurazione e la configurazione.
-* Se basato sul browser, aumenta il rischio di problemi quando vengono installati gli aggiornamenti del browser; che richiedono ulteriore tempo per correggere.
-* Solo progetti veramente realizzabili.
-* È utile quando vengono generate più versioni per eseguire test o nel piano di rilascio a lungo termine.
+* Richiede tempo, fatica ed esperienza per l&#39;installazione e la configurazione.
+* Se basati su browser, aumenta il rischio di problemi durante l’installazione degli aggiornamenti del browser, che richiedono ulteriore tempo per la correzione.
+* Realmente realizzabile solo per grandi progetti.
+* Questa opzione è utile quando vengono generate più versioni a scopo di test o nel piano di rilascio a lungo termine.
 
 ## Verifica di aspetti specifici {#testing-specific-aspects}
 
-Nel testare AEM alcuni dettagli specifici sono di particolare interesse:
+Durante il test dell’AEM, sono di particolare interesse alcuni dettagli specifici:
 
-**Ambienti di authoring e pubblicazione**
+**Ambienti Author e Publish**
 
-Tuttavia, sono coperti [Ambienti](/help/sites-developing/the-basics.md#environments) vale la pena evidenziare un fattore decisivo di AEM per quanto riguarda i test.
+Anche se, coperto in [Ambienti](/help/sites-developing/the-basics.md#environments) è opportuno sottolineare un fattore decisivo dell’AEM per quanto riguarda i test.
 
-È necessario considerare AEM come due applicazioni:
+Deve considerare l’AEM come due applicazioni:
 
-* la *Autore* ambiente Questa istanza consente agli autori di inserire e pubblicare contenuti.
-Questo dispone di un set di utenti piccolo (er) e prevedibile, per i quali funzionalità e prestazioni specifiche sono cruciali.
+* il *Autore* ambiente Questa istanza consente agli autori di inserire e pubblicare contenuti.
+Questo ha un piccolo(i) set prevedibile di utenti, per i quali sono fondamentali funzionalità e prestazioni specifiche.
 
-* la *Pubblica* ambiente Questa istanza presenta il sito web nel relativo modulo pubblicato per l’accesso dei visitatori.
-Questo di solito ha un set più ampio di utenti, in cui il volume di traffico non è sempre prevedibile al 100%. Le prestazioni restano cruciali quando si risponde alle richieste. Occorre inoltre considerare la memorizzazione in cache e il bilanciamento del carico.
+* il *Pubblica* ambiente Questa istanza presenta il sito web come forma pubblicata, accessibile ai visitatori.
+Questo di solito ha un set più ampio di utenti, dove il volume di traffico non è sempre prevedibile al 100%. Le prestazioni sono ancora cruciali, quando si risponde alle richieste. Devono essere presi in considerazione anche il caching e il bilanciamento del carico.
 
-Anche se lo stesso software in quanto tale, essi:
+Anche se lo stesso software come tale, essi:
 
-* a scopi diversi
+* per scopi diversi
 * hanno requisiti diversi in termini di funzionalità e prestazioni
 * sono configurati in modo diverso
 * sono sintonizzati separatamente
-* avranno ciascuno una propria serie di prove di accettazione
+* avranno ciascuno una propria serie di test di accettazione
 
-In altre parole devono essere testati separatamente e con diversi casi di prova.
+In altre parole, devono essere testati separatamente e con test case diversi.
 
 **Personalizzazione**
 
-Quando verifichi la personalizzazione ogni singolo caso d’uso deve essere ripetuto utilizzando più account utente per dimostrare il comportamento.
+Durante il test di personalizzazione, ogni singolo caso d’uso deve essere ripetuto utilizzando più account utente per dimostrare il comportamento.
 
-È inoltre necessario controllare il comportamento corretto nella memorizzazione in cache.
+È inoltre necessario verificare il comportamento corretto della memorizzazione in cache.
 
 **Dispatcher**
 
-La maggior parte dei progetti installerà Dispatcher per la memorizzazione in cache e il bilanciamento del carico.
+La maggior parte dei progetti installa Dispatcher per il caching e il bilanciamento del carico.
 
-Il test è difficile (la memorizzazione in cache si verifica a vari livelli e in varie posizioni) e deve essere eseguita a livello di black-box. Gli aspetti chiave per i quali eseguire la prova sono:
+Il test è difficile (la memorizzazione in cache si verifica a vari livelli e in varie posizioni) e deve essere eseguito in modalità black box. Gli aspetti chiave da testare per sono:
 
 * **Precisione**
-assicurati che gli aggiornamenti dei contenuti siano visualizzati dal visitatore del sito web.
+assicurati che gli aggiornamenti dei contenuti vengano visualizzati dal visitatore del sito web.
 
 * **Continuità**
-assicurati che il sito web sia ancora disponibile quando un server viene arrestato.
+assicurarsi che il sito Web sia ancora disponibile quando un server viene arrestato.
 
 * **Cluster**
 I cluster vengono utilizzati per fornire:
 
    * **Failover**
-Se un server non riesce, gli altri server del cluster subiranno un&#39;elaborazione.
+Se un server ha esito negativo, l&#39;elaborazione verrà ripresa dagli altri server del cluster.
 
    * **Prestazioni**
 Il bilanciamento del carico con failover completo aumenta le prestazioni di un cluster.
-Se utilizzato per un progetto cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
+Se utilizzato per un progetto del cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
 
-## Verifica di software di terze parti {#testing-third-party-software}
+## Verifica del software di terze parti {#testing-third-party-software}
 
-Qualsiasi software di terze parti interfacciato a AEM sarà menzionato nelle Specifiche dettagliate dei requisiti.
+Qualsiasi software di terze parti interfacciato con l&#39;AEM sarà menzionato nelle Specifiche dettagliate dei requisiti.
 
-Eventuali prove richieste (in funzione della portata definita) devono essere analizzate e sottoposte a prova pulita.
+Tutte le prove necessarie (a seconda dell’ambito definito) devono essere analizzate e si deve ottenere una prova pulita.

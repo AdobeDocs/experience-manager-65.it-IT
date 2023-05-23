@@ -1,7 +1,7 @@
 ---
-title: Modifica del logo dell’organizzazione per il branding
+title: Modifica del logo organizzazione per il branding
 seo-title: Changing the organization logo for branding
-description: Per assegnare il marchio all’area di lavoro AEM Forms, fornisci il logo della tua organizzazione personalizzando il logo predefinito.
+description: Per aggiungere un marchio all’area di lavoro di AEM Forms, fornisci il logo della tua organizzazione personalizzando il logo predefinito.
 seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
@@ -17,21 +17,21 @@ ht-degree: 6%
 
 ---
 
-# Modifica del logo dell’organizzazione per il branding {#changing-the-organization-logo-for-branding}
+# Modifica del logo organizzazione per il branding {#changing-the-organization-logo-for-branding}
 
-Il logo dell’organizzazione viene visualizzato nell’angolo in alto a sinistra dell’area di lavoro di AEM Forms. Per aggiornare il logo, segui la [Passaggi generici della personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) e quindi i seguenti passaggi.
+Il logo dell’organizzazione viene visualizzato nell’angolo superiore sinistro dell’area di lavoro AEM Forms. Per aggiornare il logo, attenersi alla [Passaggi generici della personalizzazione di AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) e quindi i seguenti passaggi.
 
-1. Creare un logo e denominare il file come `NewWorkspace.png`. Posiziona il file immagine nella cartella /apps/ws/images utilizzando un client WebDAV.
-
-   >[!NOTE]
-   >
-   >La dimensione consigliata dell&#39;immagine logo è 218 px × 20 px.
+1. Creare un logo e denominare il file come `NewWorkspace.png`. Inserire il file immagine nella cartella /apps/ws/images utilizzando un client WebDAV.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sull&#39;accesso a WebDAV, vedi [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
+   >Le dimensioni consigliate per l&#39;immagine del logo sono 218 × 20 px.
 
-1. Fare riferimento alla nuova immagine del logo nel foglio di stile /apps/ws/css/newStyle.css aggiungendo il seguente stile.
+   >[!NOTE]
+   >
+   >Per ulteriori informazioni sull&#39;accesso WebDAV, vedere [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
+
+1. Fare riferimento alla nuova immagine del logo nel foglio di stile all&#39;indirizzo /apps/ws/css/newStyle.css aggiungendo il seguente stile.
 
    ```css
    #logo {

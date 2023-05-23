@@ -20,30 +20,30 @@ ht-degree: 0%
 
 # Configurazione dei font di fallback {#configuring-fallback-fonts}
 
-È possibile configurare manualmente il file FontManagerResources.properties per mappare i font predefiniti dei moduli AEM a fallback (o sostituzione) se i font predefiniti non sono disponibili sul server. Questo file di proprietà si trova nel file adobe-fontmanager.jar .
+È possibile configurare manualmente il file FontManagerResources.properties per associare i tipi di carattere predefiniti di AEM forms al fallback (o alla sostituzione) se i tipi di carattere predefiniti non sono disponibili sul server. Questo file di proprietà si trova nel file adobe-fontmanager.jar.
 
 >[!NOTE]
 >
->La configurazione dei font di fallback si applica anche al servizio assembler.
+>La configurazione del font di fallback si applica anche al servizio Assembler.
 
-1. Passa a adobe-livecycle-*`[appserver]`* file .ear nel *`[aem-forms root]`*/configurationManager/export directory, crea una copia di backup e scompone l&#39;originale.
-1. Individua il file adobe-fontmanager.jar e decrea il pacchetto.
-1. Individua il file FontManagerResources.properties e aprilo in un editor di testo.
-1. Modifica le posizioni e i nomi dei font Generico e Fallback come richiesto e salva il file.
+1. Passa ad adobe-livecycle-*`[appserver]`* file .ear nella *`[aem-forms root]`*/configurationManager/export, creare una copia di backup e rimuovere il pacchetto originale.
+1. Individua il file adobe-fontmanager.jar e decomprimi il file.
+1. Individuare il file FontManagerResources.properties e aprirlo in un editor di testo.
+1. Modificate le posizioni e i nomi dei caratteri generici e di fallback in base alle esigenze, quindi salvate il file.
 
-   Le voci di font nel file FontManagerResources.properties sono relative al *`[aem-forms root]`*/fonts directory. Se si specificano font che non sono predefiniti AEM font dei moduli, è necessario installarli all’interno di questa struttura di directory (all’interno di una directory esistente o in una directory appena creata).
+   Le voci relative ai tipi di carattere nel file FontManagerResources.properties sono relative al *`[aem-forms root]`* directory /fonts. Se si specificano tipi di carattere diversi da quelli predefiniti per i moduli AEM, è necessario installare tali tipi di carattere all&#39;interno di questa struttura di directory (all&#39;interno di una directory esistente o in una directory appena creata).
 
    >[!NOTE]
    >
-   >Se il font o il font predefinito specificato non contiene un carattere unicode specifico o se non è disponibile, il carattere viene tratto da un font di fallback in base alla seguente priorità:
+   >Se il tipo di carattere specificato o il tipo di carattere predefinito non contiene un carattere Unicode specifico o non è disponibile, il carattere viene preso da un tipo di carattere di fallback in base alla seguente priorità:
 
    * Font specifico per le impostazioni internazionali
-   * Font ROOT se le impostazioni internazionali non sono impostate
-   * Font generico, ricercato per ordine impostato nella tabella di fallback
+   * Font ROOT se non è impostata la lingua
+   * Font generico, ricerca per set di ordini nella tabella di fallback
 
-1. Ricomprimi il file adobe-fontmanager.jar.
-1. Ricompila il pacchetto adobe-livecycle-*`[appserver]`*.ear e quindi ridistribuirlo manualmente o eseguendo Configuration Manager.
+1. Riconfeziona il file adobe-fontmanager.jar.
+1. Riconfezionare il ciclo di vita di Adobe *`[appserver]`* file .ear e quindi distribuirlo manualmente o eseguendo Configuration Manager.
 
 >[!NOTE]
 >
->Non utilizzare Configuration Manager per creare un nuovo pacchetto di adobe-livecycle-`[appserver]`file .ear perché le modifiche verranno sovrascritte con i valori predefiniti dei moduli AEM.
+>Non utilizzare Configuration Manager per creare un nuovo pacchetto di adobe-livecycle-`[appserver]`file .ear perché sovrascriverà le modifiche con i valori predefiniti di AEM forms.

@@ -1,7 +1,7 @@
 ---
-title: Siti Web del server applicazioni
+title: Siti Web server applicazioni
 seo-title: Application server websites
-description: Questo documento contiene collegamenti ai siti web del produttore per tutti i server applicazioni supportati.
+description: Questo documento contiene i collegamenti ai siti Web del produttore per tutti i server applicazioni supportati.
 seo-description: This document contains links to the manufacturer websites for all supported application servers.
 uuid: a5db777e-646a-4f12-9705-6ca50d9339d4
 contentOwner: admin
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Siti Web del server applicazioni {#application-server-websites}
+# Siti Web server applicazioni {#application-server-websites}
 
-Questo elenco contiene i collegamenti ai siti web del produttore per tutti i server applicazioni supportati.
+Questo elenco contiene i collegamenti ai siti Web del produttore per tutti i server applicazioni supportati.
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 

@@ -1,6 +1,6 @@
 ---
 title: Modelli
-description: I modelli vengono utilizzati per creare una pagina che viene utilizzata come base per la nuova pagina.
+description: I modelli vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 # Modelli{#templates}
 
-I modelli vengono utilizzati in vari punti di AEM:
+I modelli vengono utilizzati in vari punti dell’AEM:
 
-* [Quando crei una pagina, selezioni un modello](#templates-pages). Questo modello viene utilizzato come base per la nuova pagina. Il modello definisce la struttura della pagina, gli eventuali contenuti iniziali e il [componenti](/help/sites-authoring/default-components.md) che possono essere utilizzati (proprietà di progettazione).
+* [Quando crei una pagina, selezioni un modello](#templates-pages). Questo modello viene utilizzato come base per la nuova pagina. Il modello definisce la struttura della pagina, l’eventuale contenuto iniziale e il [componenti](/help/sites-authoring/default-components.md) utilizzabili (proprietà di progettazione).
 
 * [Quando crei un frammento di contenuto, selezioni anche un modello](#templates-content-fragments). Questo modello definisce la struttura, gli elementi iniziali e le varianti.
 
-Vengono descritti in dettaglio i seguenti modelli:
+Sono trattati in dettaglio i seguenti modelli:
 
 * [Modelli di pagina - Modificabili](/help/sites-developing/page-templates-editable.md)
 * [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md)
 * [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md)
-* [Rendering di modelli adattivi](/help/sites-developing/templates-adaptive-rendering.md)
+* [Rendering modello adattivo](/help/sites-developing/templates-adaptive-rendering.md)
 
 ## Modelli - Pagine {#templates-pages}
 
@@ -37,7 +37,7 @@ AEM ora offre due tipi di modelli di base per la creazione di pagine:
 
 >[!NOTE]
 >
->Quando si utilizza un modello per [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page), non vi è alcuna differenza visibile (per l’autore della pagina) e non vi è alcuna indicazione del tipo di modello utilizzato.
+>Quando si utilizza un modello per [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page), non ci sono differenze visibili (per l’autore della pagina) e nessuna indicazione del tipo di modello utilizzato.
 
 ### Modelli modificabili {#editable-templates}
 
@@ -47,82 +47,82 @@ Vantaggi dei modelli modificabili:
 
 * Può essere [creato](/help/sites-authoring/templates.md#creating-a-new-template-template-author) e [modificato](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) dai tuoi autori.
 
-* Sono stati introdotti per consentire di definire quanto segue per le pagine create con il modello:
+* Sono state introdotte per consentirti di definire quanto segue per tutte le pagine create con il modello:
 
    * la struttura
    * il contenuto iniziale
-   * criteri dei contenuti
+   * criteri per contenuti
 
-* Dopo la creazione della nuova pagina, viene mantenuta una connessione dinamica tra la pagina e il modello. Questa connessione significa che le modifiche alla struttura del modello si riflettono su tutte le pagine create con tale modello; le modifiche al contenuto iniziale non vengono applicate.
-* Utilizza i criteri del contenuto (modificati dall’editor dei modelli) per mantenere le proprietà di progettazione (non utilizza la modalità Progettazione nell’editor di pagine).
-* Sono memorizzati in `/conf`
-* Vedi [Modelli modificabili](/help/sites-developing/page-templates-editable.md) per ulteriori informazioni.
+* Dopo la creazione della nuova pagina, viene mantenuta una connessione dinamica tra la pagina e il modello. Ciò significa che le modifiche alla struttura del modello vengono applicate a tutte le pagine create con tale modello, mentre le modifiche al contenuto iniziale non vengono applicate.
+* Utilizza i criteri per contenuto (modificati dall’editor modelli) per mantenere le proprietà di progettazione (non utilizza la modalità Progettazione nell’editor pagina).
+* Sono archiviati in `/conf`
+* Consulta [Modelli modificabili](/help/sites-developing/page-templates-editable.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
->Vedi [Utilizzo di modelli di pagina modificabili per sviluppare un sito di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
+>Consulta [Utilizzo di modelli di pagina modificabili per sviluppare un sito di Experienci Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
 
 ### Modelli statici {#static-templates}
 
 Modelli statici:
 
 * Deve essere definito e configurato dagli sviluppatori.
-* Il sistema di modelli originale di AEM che è stato disponibile per molte versioni.
+* Il sistema di modelli originale dell’AEM che è stato reso disponibile per molte versioni.
 * Un modello statico è una gerarchia di nodi con la stessa struttura della pagina da creare, ma senza alcun contenuto effettivo.
-* Vengono copiati per creare la pagina, in seguito non esiste alcuna connessione dinamica.
-* Usi [Modalità Progettazione](/help/sites-authoring/default-components-designmode.md) per mantenere le proprietà di progettazione.
-* Sono memorizzati in `/apps`
-* Vedi [Modelli statici](/help/sites-developing/page-templates-static.md) per ulteriori informazioni.
+* Vengono copiati per creare la pagina, ma in seguito non esiste alcuna connessione dinamica.
+* Usa [Modalità Progettazione](/help/sites-authoring/default-components-designmode.md) per mantenere le proprietà di progettazione.
+* Sono archiviati in `/apps`
+* Consulta [Modelli statici](/help/sites-developing/page-templates-static.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
->A partire dalla AEM 6.5, l’utilizzo di modelli statici non è considerata una best practice. In alternativa, utilizza i modelli modificabili .
+>A partire dalla versione 6.5 dell’AEM, l’uso di modelli statici non è considerato una best practice. Utilizza invece i modelli modificabili.
 >
->[Modernizzazione AEM](modernization-tools.md) Gli strumenti consentono di migrare da modelli statici a modelli modificabili.
+>[Modernizzazione dell’AEM](modernization-tools.md) Gli strumenti consentono di passare da modelli statici a modificabili.
 
 ### Disponibilità dei modelli {#template-availability}
 
 >[!CAUTION]
 >
->AEM offre più proprietà per controllare i modelli consentiti in **Sites**. Tuttavia, combinarle può portare a regole complesse che sono difficili da monitorare e gestire.
+>L’AEM offre più proprietà per controllare i modelli consentiti in **Sites**. Tuttavia, la loro combinazione può portare a regole complesse difficili da tracciare e gestire.
 >
->Pertanto, Adobe consiglia di iniziare con semplicità, definendo:
+>Pertanto, l’Adobe consiglia di iniziare da semplice, definendo:
 >
->* solo il `cq:allowedTemplates` property
+>* solo il `cq:allowedTemplates` proprietà
 >
 >* solo nella directory principale del sito
 >
->Ad esempio, consulta We.Retail: `/content/we-retail/jcr:content`
+>Ad esempio, vedi We.Retail: `/content/we-retail/jcr:content`
 >
->Proprietà `allowedPaths`, `allowedParents`e `allowedChildren` può anche essere posizionato sui modelli per definire regole più sofisticate. Tuttavia, quando possibile, è *molto* più semplice da definire `cq:allowedTemplates` nelle sottosezioni del sito se è necessario limitare ulteriormente i modelli consentiti.
+>Le proprietà `allowedPaths`, `allowedParents`, e `allowedChildren` può essere posizionato anche sui modelli per definire regole più sofisticate. Tuttavia, quando possibile, è *molto* definizione più semplice `cq:allowedTemplates` proprietà nelle sottosezioni del sito, se è necessario limitare ulteriormente i modelli consentiti.
 >
->Un vantaggio extra è che la `cq:allowedTemplates` le proprietà possono essere aggiornate da un autore nel **Avanzate** della scheda **Proprietà pagina**. Le altre proprietà del modello non possono essere aggiornate utilizzando l’interfaccia utente (standard), pertanto per ogni modifica sarebbe necessario uno sviluppatore per mantenere le regole e una distribuzione del codice.
+>Un ulteriore vantaggio è che il `cq:allowedTemplates` Le proprietà possono essere aggiornate da un autore in **Avanzate** scheda di **Proprietà pagina**. Le altre proprietà del modello non possono essere aggiornate utilizzando l’interfaccia utente (standard), pertanto avrebbe bisogno di uno sviluppatore per mantenere le regole e una distribuzione del codice per ogni modifica.
 
-Quando crei una pagina nell’interfaccia di amministrazione del sito, l’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle restrizioni di posizionamento specificate in ciascun modello.
+Durante la creazione di una pagina nell’interfaccia di amministrazione del sito, l’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle restrizioni sul posizionamento specificate in ciascun modello.
 
-Le proprietà seguenti determinano se un modello `T` viene utilizzato per inserire una nuova pagina come elemento secondario di una pagina `P`. Ciascuna di queste proprietà è una stringa con più valori contenente zero o più espressioni regolari utilizzate per la corrispondenza con i percorsi:
+Le seguenti proprietà determinano se un modello `T` viene utilizzato per inserire una nuova pagina come pagina figlia di `P`. Ciascuna di queste proprietà è una stringa con più valori contenente zero o più espressioni regolari utilizzate per la corrispondenza con i percorsi:
 
-* La `cq:allowedTemplates` proprietà `jcr:content` sottonodo di `P` o un antenato di `P`.
+* Il `cq:allowedTemplates` proprietà del `jcr:content` sottonodo di `P` o un predecessore di `P`.
 
-* La `allowedPaths` proprietà di `T`.
+* Il `allowedPaths` proprietà di `T`.
 
-* La `allowedParents` proprietà di `T`.
+* Il `allowedParents` proprietà di `T`.
 
-* La `allowedChildren` proprietà del modello di `P`.
+* Il `allowedChildren` proprietà del modello di `P`.
 
 La valutazione funziona come segue:
 
-* Il primo non vuoto `cq:allowedTemplates` trovato durante l&#39;ascesa della gerarchia di pagina che inizia con `P` viene confrontato con il percorso di `T`. Se nessuno dei valori corrisponde, `T` è rifiutato.
+* Il primo non vuoto `cq:allowedTemplates` è stata trovata una proprietà durante l’ascensione della gerarchia delle pagine che inizia con `P` corrisponde al percorso di `T`. Se nessuno dei valori corrisponde, `T` è stato rifiutato.
 
-* Se `T` non è vuoto `allowedPaths` , ma nessuno dei valori corrisponde al percorso di `P`, `T` è rifiutato.
+* Se `T` ha un valore non vuoto `allowedPaths` , ma nessuno dei valori corrisponde al percorso di `P`, `T` è stato rifiutato.
 
-* Se entrambe le proprietà di cui sopra sono vuote o inesistenti, `T` è rifiutato a meno che non appartenga alla stessa domanda `P`. `T` appartiene alla stessa applicazione `P` se e solo se il nome del secondo livello del percorso `T` è lo stesso del nome del secondo livello del percorso `P`. Ad esempio, il modello `/apps/geometrixx/templates/foo` appartiene alla stessa applicazione della pagina `/content/geometrixx`.
+* Se entrambe le proprietà di cui sopra sono vuote o inesistenti, `T` viene rifiutato a meno che non appartenga alla stessa applicazione di `P`. `T` appartiene alla stessa applicazione di `P` se e solo se il nome del secondo livello del percorso di `T` è uguale al nome del secondo livello del percorso di `P`. Ad esempio, il modello `/apps/geometrixx/templates/foo` appartiene alla stessa applicazione della pagina `/content/geometrixx`.
 
-* Se `T` non è vuoto `allowedParents` , ma nessuno dei valori corrisponde al percorso di `P`, `T` è rifiutato.
+* Se `T` ha un valore non vuoto `allowedParents` , ma nessuno dei valori corrisponde al percorso di `P`, `T` è stato rifiutato.
 
-* Se il modello di `P` non è vuoto `allowedChildren` , ma nessuno dei valori corrisponde al percorso di `T`, `T` è rifiutato.
+* Se il modello di `P` ha un valore non vuoto `allowedChildren` , ma nessuno dei valori corrisponde al percorso di `T`, `T` è stato rifiutato.
 
-* In tutti gli altri casi, `T` è consentito.
+* In tutti gli altri casi: `T` è consentito.
 
 Il diagramma seguente illustra il processo di valutazione del modello:
 
@@ -130,12 +130,12 @@ Il diagramma seguente illustra il processo di valutazione del modello:
 
 #### Limitazione dei modelli utilizzati nelle pagine figlie {#limiting-templates-used-in-child-pages}
 
-Per limitare i modelli che possono essere utilizzati per creare pagine figlie sotto una determinata pagina, utilizza la funzione `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli da consentire come pagine figlie. Ogni valore nell’elenco deve essere un percorso assoluto a un modello per una pagina figlio consentita, ad esempio `/apps/geometrixx/templates/contentpage`.
+Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio `/apps/geometrixx/templates/contentpage`.
 
-È possibile utilizzare `cq:allowedTemplates` nella proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le pagine appena create che utilizzano questo modello.
+È possibile utilizzare `cq:allowedTemplates` proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le nuove pagine create che utilizzano questo modello.
 
-Se desideri aggiungere altri vincoli, ad esempio per quanto riguarda la gerarchia dei modelli, puoi utilizzare la funzione `allowedParents/allowedChildren` nel modello. È quindi possibile specificare esplicitamente che le pagine create da un modello T devono essere padre/figlio di pagine create da un modello T.
+Per aggiungere altri vincoli, ad esempio relativi alla gerarchia dei modelli, è possibile utilizzare `allowedParents/allowedChildren` proprietà nel modello. È quindi possibile specificare esplicitamente che le pagine create da un modello devono essere padri/figli di pagine create da un modello T.
 
 ## Modelli - Frammenti di contenuto {#templates-content-fragments}
 
-Vedi [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md).
+Consulta [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md).

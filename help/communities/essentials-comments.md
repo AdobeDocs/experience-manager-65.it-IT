@@ -1,5 +1,5 @@
 ---
-title: Nozioni di base sui commenti
+title: Commenti essenziali
 seo-title: Comments Essentials
 description: Panoramica del componente Commenti
 seo-description: Comments component overview
@@ -17,30 +17,30 @@ ht-degree: 4%
 
 ---
 
-# Nozioni di base sui commenti {#comments-essentials}
+# Commenti essenziali {#comments-essentials}
 
-Questa pagina fornisce le funzionalità essenziali per l’utilizzo del sistema di commenti (componente commenti) e le opzioni per la gestione del contenuto generato dall’utente (UGC) prodotto quando i membri pubblicano commenti o risposte.
+Questa pagina fornisce informazioni di base sull’utilizzo del sistema dei commenti (componente commenti) e opzioni per la gestione dei contenuti generati dagli utenti (UGC, User Generated Content) generati quando i membri pubblicano commenti o risposte.
 
-Il componente commenti stabilisce un sistema di commento in modo che ogni singolo post sia rappresentato da un componente commento (singolare). È il sistema di commenti che viene incluso nella pagina. Il sistema di commento crea i singoli commenti quando viene richiamato.
+Il componente commenti stabilisce un sistema di commenti tale che ogni singolo post sia rappresentato da una componente commento (singolare). È il sistema di commenti incluso nella pagina. Il sistema di commenti creerà i singoli commenti quando richiamato.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td> social/commons/components/hbs/comments</td>
+   <td> social/commons/components/hbs/commenti</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.vote</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td>
   </tr>
   <tr>
@@ -49,18 +49,18 @@ Il componente commenti stabilisce un sistema di commento in modo che ogni singol
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td> Vedi <a href="comments.md">Utilizzo dei commenti</a></td>
+   <td> Consulta <a href="comments.md">Utilizzo dei commenti</a></td>
   </tr>
  </tbody>
 </table>
 
 [Personalizzazioni lato client](client-customize.md)
 
-### Una istanza per pagina {#one-instance-per-page}
+### Una Istanza Per Pagina {#one-instance-per-page}
 
-L’impaginazione e l’uso degli URL per il caching e il collegamento richiedono che l’URL sia univoco per sistema di commenti. Pertanto, è consentita una sola istanza di un sistema di commenti per pagina.
+L’impaginazione e l’utilizzo di URL per il caching e il collegamento richiedono che l’URL sia univoco per sistema di commenti. Pertanto, è consentita una sola istanza di un sistema di commenti per pagina.
 
-Altre caratteristiche includono già il sistema di commenti. Secondo questi principi, il contenuto deve essere:
+Altre funzioni includono già il sistema di commenti. Secondo questi principi, il contenuto deve essere:
 
 * [Blog](blog-developer-basics.md)
 * [Calendario](calendar-basics-for-developers.md)
@@ -71,32 +71,32 @@ Altre caratteristiche includono già il sistema di commenti. Secondo questi prin
 
 ### Elenco di motivi per segnalazione {#flag-reason-list}
 
-L’elenco dei motivi di contrassegno può essere personalizzato aggiungendo flagreasonlist.hbs all’app per sovrascrivere l’elemento presente
+Per personalizzare l’elenco dei motivi di segnalazione, aggiungi flagreasonlist.hbs all’app per sovrascrivere i contenuti di
 
 * `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
-Questo vale per qualsiasi componente che estende un sistema di commenti.
+Ciò si applica a qualsiasi componente che estende un sistema di commenti.
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API dei commenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API Commenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
 * [Endpoint commenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso ai commenti inviati (UGC) {#accessing-posted-comments-ugc}
+### Accesso ai commenti pubblicati (UGC) {#accessing-posted-comments-ugc}
 
-UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.
-Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
+Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di storage](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring di SocialUtils](socialutils.md) - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.

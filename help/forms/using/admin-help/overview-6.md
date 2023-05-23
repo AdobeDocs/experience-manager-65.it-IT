@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # Panoramica sulla configurazione di SSL {#overview-of-configuring-ssl}
 
-Puoi creare credenziali SSL (Secure Sockets Layer) e configurare SSL sul server dell&#39;applicazione per migliorare la sicurezza della comunicazione con il server dell&#39;applicazione.
+È possibile creare credenziali SSL (Secure Sockets Layer) e configurare SSL sul server applicazioni per migliorare la sicurezza delle comunicazioni con il server applicazioni.
 
-Come prodotto di sicurezza, il Rights Management richiede la configurazione di SSL. Durante la configurazione dei certificati SSL, assicurati di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
+Come prodotto per la sicurezza, il Rights Management richiede la configurazione di SSL. Durante la configurazione dei certificati SSL, accertati di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
 
 Le informazioni fornite si applicano alle installazioni chiavi in mano, automatiche e manuali. Offre un esempio di metodo per configurare SSL. È inoltre possibile utilizzare altri metodi più appropriati per la rete o l&#39;organizzazione.
 
 >[!NOTE]
 >
->È consigliabile completare l’installazione, la configurazione e la distribuzione dei moduli AEM e assicurarsi che i prodotti siano in esecuzione correttamente prima di configurare SSL sul server dell’applicazione.
+>Prima di configurare SSL sul server applicazioni, è consigliabile completare l&#39;installazione, la configurazione e la distribuzione dei moduli AEM e verificare che i prodotti funzionino correttamente.
 
 >[!NOTE]
 >
->Durante la creazione di certificati di sicurezza e credenziali SSL, utilizza gli stessi privilegi dell’account utente utilizzati per eseguire il server dell’applicazione. Se il server applicazioni viene eseguito utilizzando altri privilegi utente, il modulo potrebbe non essere eseguito correttamente per le rappresentazioni PDFForm quando ContentRootURI punta a https.
+>Quando si creano certificati e credenziali di protezione SSL, utilizzare gli stessi privilegi dell&#39;account utente utilizzati per eseguire il server applicazioni. Se il server applicazioni viene eseguito utilizzando altri privilegi utente, è possibile che il modulo non venga eseguito correttamente per le rappresentazioni di PDForm quando ContentRootURI punta a https.
 
-Se disponi di un server LDAP abilitato per SSL, configura Gestione utente per utilizzarlo. (Vedi [Configurare la gestione utente per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Se si dispone di un server LDAP abilitato per SSL, configurare User Management per utilizzarlo. (vedere [Configurare la gestione degli utenti per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

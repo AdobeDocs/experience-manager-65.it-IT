@@ -14,26 +14,26 @@ feature: Asset Management,Renditions
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
 # Distribuire elementi multimediali dinamici{#delivering-dynamic-media-assets}
 
-La modalità di distribuzione delle risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
+Il modo in cui distribuisci le risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
 
-Con Dynamic Media hai diverse opzioni:
+Dynamic Media offre diverse opzioni:
 
-* Se il sito web è ospitato su Adobe Experience Manager, è necessario aggiungere le risorse Dynamic Media direttamente alla pagina.
-* Se il tuo sito web non è disponibile come Experience Manager, puoi scegliere tra:
+* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Media direttamente alla tua pagina.
+* Se il tuo sito web non è sull’Experience Manager, puoi scegliere:
 
    * Incorporare il video o l’immagine sul sito web.
-   * Collegamento degli URL all’applicazione Web. Utilizza il collegamento quando desideri distribuire un lettore video come finestra a comparsa o modale.
-   * Se il sito è reattivo, puoi [fornire immagini ottimizzate](/help/assets/responsive-site.md).
+   * Collegamento degli URL all’applicazione Web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
+   * Se il sito è dinamico, puoi [fornire immagini ottimizzate](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->La funzione Smart imaging funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base al browser o alla velocità di connessione di rete. Vedi [Imaging avanzato](/help/assets/imaging-faq.md) per ulteriori informazioni.
+>L&#39;imaging avanzato funziona con i predefiniti immagine esistenti e utilizza l&#39;intelligenza all&#39;ultimo millisecondo di consegna per ridurre ulteriormente le dimensioni del file immagine in base alla velocità di connessione del browser o della rete. Consulta [Imaging avanzato](/help/assets/imaging-faq.md) per ulteriori informazioni.
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
@@ -47,8 +47,8 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 * [Utilizzo di set di regole per la trasformazione degli URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Distribuzione di risorse Dynamic Media HTTP/2 {#http-delivery-of-dynamic-media-assets}
+## Distribuzione HTTP/2 delle risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) su HTTP/2. In altre parole, è disponibile un URL o un codice di incorporamento pubblicato per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di consegna migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) tramite HTTP/2. In altre parole, è disponibile un URL pubblicato o un codice di incorporamento per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui browser e server comunicano, consentendo tempi di risposta e di caricamento migliori per tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione di contenuti HTTP/2](/help/sites-administering/scene7-http2faq.md).
+Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione HTTP/2 dei contenuti](/help/sites-administering/scene7-http2faq.md).

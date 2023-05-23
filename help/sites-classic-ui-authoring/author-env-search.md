@@ -22,35 +22,35 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 >[!NOTE]
 >
->Al di fuori dell’ambiente di authoring sono disponibili anche altri meccanismi per la ricerca, come [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>All&#39;esterno dell&#39;ambiente di authoring sono disponibili altri meccanismi di ricerca, ad esempio [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
-Per accedere al pannello di ricerca, fai clic sul pulsante **Ricerca** nella parte superiore del riquadro a sinistra della console appropriata.
+Per accedere al pannello di ricerca, fai clic su **Ricerca** nella parte superiore del riquadro a sinistra della console appropriata.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del sito web. Contiene campi e widget per i seguenti elementi:
+Il pannello di ricerca consente di eseguire ricerche in tutte le pagine del sito web. Contiene campi e widget per:
 
-* **Testo completo**: Cerca il testo specificato
-* **Modificato dopo/prima**: Cerca solo nelle pagine modificate tra date specifiche
-* **Modello**: Cerca solo le pagine basate sul modello specificato
-* **Tag**: Cerca solo nelle pagine con i tag specificati
+* **Testo intero**: cerca il testo specificato
+* **Modificato dopo/prima**: cerca solo le pagine modificate tra date specifiche
+* **Modello**: cerca solo le pagine basate sul modello specificato
+* **Tag**: cerca solo le pagine con i tag specificati
 
 >[!NOTE]
 >
->Quando l’istanza è configurata per [Ricerca Lucene](/help/sites-deploying/queries-and-indexing.md) puoi utilizzare quanto segue in **Testo completo**:
+>Quando l’istanza è configurata per [Ricerca Lucene](/help/sites-deploying/queries-and-indexing.md) puoi utilizzare quanto segue in **Testo intero**:
 >
 >* [Caratteri jolly](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operatori booleani](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
 >* [Espressioni regolari](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Raggruppamento campi](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [Incremento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [Potenziamento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 
-Esegui la ricerca facendo clic su **Ricerca** nella parte inferiore del riquadro. Fai clic su **Reimposta** per cancellare i criteri di ricerca.
+Eseguire la ricerca facendo clic su **Ricerca** nella parte inferiore del riquadro. Clic **Reimposta** per cancellare i criteri di ricerca.
 
 ## Filtro {#filter}
 
@@ -60,38 +60,38 @@ In varie posizioni è possibile impostare (e cancellare) un filtro per approfond
 
 ## Trova e sostituisci {#find-and-replace}
 
-In **Siti Web** console a **Trova e sostituisci** l’opzione di menu consente di cercare e sostituire più istanze di una stringa all’interno di una sezione del sito web.
+In **Siti Web** console a **Trova e sostituisci** L&#39;opzione di menu consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
 
-1. Selezionare la pagina o la cartella principale in cui si desidera eseguire l’azione Trova e sostituisci.
-1. Seleziona **Strumenti** then **Trova e sostituisci**:
+1. Selezionare la pagina principale, o cartella, in cui si desidera eseguire l&#39;azione di ricerca e sostituzione.
+1. Seleziona **Strumenti** allora **Trova e sostituisci**:
 
-   ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
+   ![screen_shot_2012-02-15alle120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. La **Trova e sostituisci** la finestra di dialogo effettua le seguenti operazioni:
+1. Il **Trova e sostituisci** effettua le seguenti operazioni:
 
-   * conferma il percorso principale in cui deve iniziare l&#39;azione di ricerca
+   * conferma il percorso della directory principale da cui deve iniziare l&#39;azione di ricerca
    * definisce il termine da trovare
    * definisce il termine che deve sostituirlo
    * indica se la ricerca deve fare distinzione tra maiuscole e minuscole
-   * indica se devono essere trovate solo parole intere (in caso contrario vengono trovate anche le sottostringhe)
+   * indica se devono essere trovate solo parole intere (altrimenti vengono trovate anche sottostringhe)
 
-   Clic **Anteprima** elenchi in cui è stato trovato il termine. È possibile selezionare o deselezionare istanze specifiche da sostituire:
+   Clic **Anteprima** elenca dove è stato trovato il termine. È possibile selezionare/cancellare istanze specifiche da sostituire:
 
-   ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
+   ![screen_shot_2012-02-15alle120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Fai clic su **Sostituisci** per sostituire effettivamente tutte le istanze. Viene richiesto di confermare l’operazione.
+1. Clic **Sostituisci** per sostituire tutte le istanze. Viene richiesto di confermare l’operazione.
 
-L’ambito predefinito del servlet di ricerca e sostituzione include le seguenti proprietà:
+L&#39;ambito predefinito per il servlet find e replace include le seguenti proprietà:
 
 * `jcr:title`
 * `jcr:description`
 * `jcr:text`
 * `text`
 
-L’ambito può essere modificato utilizzando la console di gestione web Apache Felix (ad esempio, in `https://localhost:4502/system/console/configMgr`). Seleziona `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configura l&#39;ambito come necessario.
+L’ambito può essere modificato utilizzando Apache Felix Web Management Console (ad esempio, in `https://localhost:4502/system/console/configMgr`). Seleziona `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configura l’ambito in base alle esigenze.
 
 >[!NOTE]
 >
->In un’installazione standard AEM Trova e sostituisci utilizza Lucene per la funzionalità di ricerca.
+>In un’installazione standard di AEM, Find and Replace utilizza Lucene per la funzionalità di ricerca.
 >
->Lucene indicizza le proprietà delle stringhe con lunghezza fino a 16 k. Per le stringhe di lunghezza superiore a tale valore la ricerca non viene eseguita.
+>Lucene indicizza proprietà di stringa fino a 16 KB di lunghezza. Le stringhe che superano questo valore non verranno cercate.

@@ -144,7 +144,7 @@ Quando il numero di riferimenti o pagine da spostare supera la soglia impostata,
 >
 >* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
 >* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
->* [Configurare l’e-mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Configurare le e-mail in Experience Manager](/help/sites-administering/notification.md).
 >* [Importare i metadati delle risorse](/help/assets/metadata.md#import-metadata).
 >* [Esportare i metadati delle risorse](/help/assets/metadata.md#export-metadata).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).

@@ -1,6 +1,6 @@
 ---
 title: Intestazioni HTTP personalizzate
-description: Configurazione di intestazioni HTTP personalizzate
+description: Configurazione delle intestazioni HTTP personalizzate
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
@@ -13,27 +13,27 @@ ht-degree: 5%
 
 ## Panoramica {#overview}
 
-Per ottenere un maggiore controllo sul back-end, gli autori possono configurare intestazioni HTTP personalizzate che verrebbero inviate al motore di e-commerce, insieme a quelle già inviate da CIF. I casi d’uso comuni includono configurazioni multi-store in cui puoi utilizzare intestazioni HTTP per controllare la risposta del back-end commerce.
+Per ottenere un maggiore controllo sul backend, gli autori possono configurare intestazioni HTTP personalizzate da inviare al motore di e-commerce, insieme a quelle già inviate da CIF. I casi d’uso comuni includono impostazioni multi-store in cui puoi utilizzare le intestazioni HTTP per controllare la risposta del back-end di Commerce.
 
 >[!NOTE]
 >
->Gli sviluppatori possono sempre configurare intestazioni HTTP personalizzate utilizzando la configurazione client GraphQL.
+>Gli sviluppatori possono sempre configurare intestazioni HTTP personalizzate utilizzando la configurazione client di GraphQL.
 
 ## Configurazione {#configuration}
 
-Per configurare le intestazioni HTTP personalizzate, è innanzitutto necessario definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configurazione del servizio utilizzando una configurazione OSGi.
+Per configurare le intestazioni HTTP personalizzate, è necessario prima definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configurazione del servizio tramite una configurazione OSGi.
 
 Puoi configurare i valori delle intestazioni HTTP nella pagina Configurazione Cloud Service per il progetto:
 
 1. Vai alla pagina di configurazione del Cloud Service in Strumenti -> Cloud Services -> Configurazione CIF
 1. Apri una configurazione esistente o creane una nuova
-1. Vai alla scheda &quot;Avanzate&quot; e trova il campo multiplo &quot;Intestazioni HTTP personalizzate&quot;. È possibile selezionare le intestazioni definite in precedenza e assegnare loro valori.
+1. Vai alla scheda &quot;Avanzate&quot; e trova il multicampo &quot;Intestazioni HTTP personalizzate&quot;. Puoi selezionare le intestazioni definite in precedenza e assegnarvi dei valori.
 
-I componenti che utilizzano la configurazione del servizio cloud di cui sopra invieranno queste intestazioni HTTP con ogni richiesta GraphQL.
+I componenti che utilizzano la configurazione del servizio cloud precedente invieranno queste intestazioni HTTP a ogni richiesta di GraphQL.
 
 ## Restrizioni {#restrictions}
 
-Il servizio consente di definire i nomi di intestazione, inclusi quelli standard, ma non sarà disponibile per la configurazione. In altre parole, non è possibile ignorare le intestazioni HTTP standard utilizzando questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a questi, ci sono altre due intestazioni che non possono essere utilizzate:
+Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non saranno disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
-* &quot;Store&quot; - utilizzato da CIF per identificare l’archivio Adobe Commerce
-* &quot;Preview-Version&quot; - utilizzato da CIF per recuperare i prodotti in staging
+* &quot;Store&quot;: utilizzato da CIF per identificare lo store di Adobe Commerce
+* &quot;Preview-Version&quot;: utilizzato da CIF per recuperare i prodotti in staging

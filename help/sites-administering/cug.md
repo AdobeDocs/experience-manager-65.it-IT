@@ -20,42 +20,42 @@ ht-degree: 1%
 
 # Creazione di un gruppo utenti chiuso{#creating-a-closed-user-group}
 
-I gruppi di utenti chiusi vengono utilizzati per limitare l’accesso a pagine specifiche che risiedono all’interno di un sito Internet pubblicato. Tali pagine richiedono l’accesso ai membri assegnati e l’immissione di credenziali di sicurezza.
+I gruppi chiusi di utenti (CUG) vengono utilizzati per limitare l’accesso a pagine specifiche che risiedono in un sito Internet pubblicato. Tali pagine richiedono ai membri assegnati di accedere e fornire le credenziali di sicurezza.
 
 Per configurare tale area all’interno del sito web:
 
-* [creare il gruppo utenti chiuso effettivo e assegnare i membri](#creating-the-user-group-to-be-used).
+* [creare il gruppo utenti chiuso effettivo e assegnare membri](#creating-the-user-group-to-be-used).
 
-* [applica questo gruppo alle pagine richieste](#applying-your-closed-user-group-to-content-pages) e selezionare (o creare) la pagina di accesso da utilizzare per i membri del CUG; specificato anche quando si applica un gruppo utenti chiuso a una pagina di contenuto.
+* [applica questo gruppo alle pagine richieste](#applying-your-closed-user-group-to-content-pages) e seleziona (o crea) la pagina di accesso per l’utilizzo da parte dei membri del CUG; specificato anche quando si applica un CUG a una pagina di contenuto.
 
-* [creare un collegamento, di un modulo, ad almeno una pagina all&#39;interno dell&#39;area protetta](#linking-to-the-cug-pages)altrimenti non sarà visibile.
+* [creare un collegamento, sotto forma di testo, ad almeno una pagina nell&#39;area protetta](#linking-to-the-cug-pages), altrimenti non sarà visibile.
 
-* [configurare il Dispatcher](#configure-dispatcher-for-cugs) se in uso.
+* [configurare Dispatcher](#configure-dispatcher-for-cugs) se in uso.
 
 >[!CAUTION]
 >
->I gruppi di utenti chiusi devono sempre essere creati tenendo presenti le prestazioni.
+>I gruppi chiusi di utenti (CUG) devono sempre essere creati tenendo presenti le prestazioni.
 >
 >Anche se il numero di utenti e gruppi in un CUG non è limitato, un numero elevato di CUG in una pagina può rallentare le prestazioni di rendering.
 >
->L’impatto dei CUG deve sempre essere considerato durante il test delle prestazioni.
+>L’impatto dei gruppi di utenti chiusi (CUG) deve sempre essere considerato durante l’esecuzione del test delle prestazioni.
 
 ## Creazione Del Gruppo Di Utenti Da Utilizzare {#creating-the-user-group-to-be-used}
 
 Per creare un gruppo utenti chiuso:
 
-1. Vai a **Strumenti - Sicurezza** dal AEM home screen.
+1. Vai a **Strumenti - Sicurezza** dal homescreen dell&#39;AEM.
 
    >[!NOTE]
    >
-   >Vedi [Gestione di utenti e gruppi](/help/sites-administering/security.md#managing-users-and-groups) per informazioni complete sulla creazione e la configurazione di utenti e gruppi.
+   >Consulta [Gestione di utenti e gruppi](/help/sites-administering/security.md#managing-users-and-groups) per informazioni complete sulla creazione e la configurazione di utenti e gruppi.
 
-1. Seleziona la **Gruppi** scheda dalla schermata successiva.
+1. Seleziona la **Gruppi** dalla schermata successiva.
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Premere **Crea** nell’angolo in alto a destra, per creare un nuovo gruppo.
-1. Assegnare un nome al nuovo gruppo; ad esempio, `cug_access`.
+1. Premere il tasto **Crea** nell’angolo in alto a destra, per creare un nuovo gruppo.
+1. Assegna un nome al nuovo gruppo; ad esempio, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -63,30 +63,30 @@ Per creare un gruppo utenti chiuso:
 
    ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. Attivare gli utenti assegnati al gruppo utenti chiuso; in questo caso, tutti i membri `cug_access`.
-1. Attiva il gruppo di utenti chiusi in modo che sia disponibile nell&#39;ambiente di pubblicazione; in questo esempio, `cug_access`.
+1. Attiva tutti gli utenti che hai assegnato al tuo CUG; in questo caso, tutti i membri di `cug_access`.
+1. Attiva il gruppo utenti chiuso in modo che sia disponibile nell’ambiente di pubblicazione; in questo esempio, `cug_access`.
 
-## Applicazione Del Gruppo Di Utenti Chiuso Alle Pagine Dei Contenuti {#applying-your-closed-user-group-to-content-pages}
+## Applicazione Del Gruppo Di Utenti Chiuso Alle Pagine Di Contenuto {#applying-your-closed-user-group-to-content-pages}
 
-Per applicare il CUG a una pagina o alle pagine:
+Per applicare il gruppo utenti chiusi a una o più pagine:
 
-1. Passa alla pagina principale della sezione con restrizioni che desideri assegnare al CUG.
-1. Seleziona la pagina facendo clic sulla relativa miniatura e quindi seleziona **Proprietà** nella barra degli strumenti superiore.
+1. Passare alla pagina principale della sezione limitata che si desidera assegnare al gruppo utenti chiusi.
+1. Seleziona la pagina facendo clic sulla relativa miniatura e selezionando **Proprietà** nella barra degli strumenti superiore.
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. Nella finestra seguente, apri le **Avanzate** scheda .
+1. Nella finestra seguente aprire **Avanzate** scheda.
 
-1. Scorri verso il basso fino a **Autenticazione richiesta** sezione .
+1. Scorri verso il basso fino a **Autenticazione richiesta** sezione.
 
-   1. Attiva la **Abilita** tickbox.
+   1. Attiva il **Abilita** casella di spunta.
 
-   1. Aggiungi il percorso al **Pagina di accesso**.
-Questa opzione è facoltativa, se viene lasciata vuota, verrà utilizzata la pagina di accesso standard.
+   1. Aggiungi il percorso al tuo **Pagina di accesso**.
+Questo è facoltativo; se lasciato vuoto, verrà utilizzata la pagina di accesso standard.
 
    ![CUG aggiunto](assets/cug-authentication-requirement.png)
 
-1. Quindi, vai a **Autorizzazioni** e seleziona **Modifica gruppo utenti chiuso**.
+1. Quindi, vai al **Autorizzazioni** e seleziona **Modifica gruppo utenti chiuso**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
@@ -96,9 +96,9 @@ Questa opzione è facoltativa, se viene lasciata vuota, verrà utilizzata la pag
    >
    >Per ulteriori informazioni, consulta [questa pagina](closed-user-groups.md#aem-livecopy).
 
-1. La **Modifica gruppo utenti chiuso** si aprirà la finestra di dialogo . Qui puoi cercare e selezionare il tuo CUG, quindi confermare la selezione del gruppo con **Salva**.
+1. Il **Modifica gruppo utenti chiuso** viene aperta una finestra di dialogo. Qui puoi cercare e selezionare il tuo CUG, quindi confermare la selezione del gruppo con **Salva**.
 
-   Il gruppo sarà aggiunto all&#39;elenco; ad esempio, il gruppo **cug_access**.
+   Il gruppo verrà aggiunto all’elenco; ad esempio, il gruppo **cug_access**.
 
    ![CUG aggiunto](assets/cug-added.png)
 
@@ -106,25 +106,25 @@ Questa opzione è facoltativa, se viene lasciata vuota, verrà utilizzata la pag
 
 >[!NOTE]
 >
->Vedi [Identity Management](/help/sites-administering/identity-management.md) per informazioni sui profili nell’ambiente di pubblicazione e per fornire moduli per l’accesso e la disconnessione.
+>Consulta [Identity Management](/help/sites-administering/identity-management.md) per informazioni sui profili nell’ambiente di pubblicazione e per fornire moduli per l’accesso e la disconnessione.
 
-## Collegamento Alle Pagine CUG {#linking-to-the-cug-pages}
+## Collegamento alle pagine dei gruppi utenti chiusi (CUG) {#linking-to-the-cug-pages}
 
-Poiché la destinazione di qualsiasi collegamento alle pagine CUG non è visibile all’utente anonimo, il linkchecker rimuoverà tali collegamenti.
+Poiché la destinazione di qualsiasi collegamento alle pagine CUG non è visibile all’utente anonimo, il LinkChecker rimuoverà tali collegamenti.
 
-Per evitare questo problema, è consigliabile creare pagine di reindirizzamento non protette che puntano a pagine all’interno dell’area CUG. Le voci di navigazione vengono quindi rese senza causare problemi al linkchecker. Solo quando si accede effettivamente alla pagina di reindirizzamento, l&#39;utente verrà reindirizzato all&#39;interno dell&#39;area CUG, dopo aver fornito con successo le proprie credenziali di accesso.
+Per evitare questo problema, è consigliabile creare pagine di reindirizzamento non protette che puntano a pagine all’interno dell’area CUG. Le voci di navigazione vengono quindi sottoposte a rendering senza causare problemi al LinkChecker. Solo quando accede effettivamente alla pagina di reindirizzamento, l’utente viene reindirizzato all’interno dell’area del gruppo utenti chiusi (CUG), dopo aver fornito correttamente le credenziali di accesso.
 
-## Configurare Dispatcher per i gruppi di utenti chiusi {#configure-dispatcher-for-cugs}
+## Configurare Dispatcher per i gruppi utenti chiusi (CUG) {#configure-dispatcher-for-cugs}
 
-Se utilizzi Dispatcher, devi definire una farm del Dispatcher con le seguenti proprietà:
+Se utilizzi Dispatcher, devi definire una farm di Dispatcher con le seguenti proprietà:
 
-* [virtualhost](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): Corrisponde al percorso delle pagine a cui si applica il CUG.
-* \sessionmanagement: vedi sotto.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): Directory cache dedicata ai file a cui si applica il CUG.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): corrisponde al percorso delle pagine a cui si applica il CUG.
+* \sessionmanagement: vedi di seguito.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): directory della cache dedicata ai file a cui si applica il gruppo utenti chiusi (CUG).
 
-### Configurazione della gestione delle sessioni di Dispatcher per i gruppi di utenti chiusi {#configuring-dispatcher-session-management-for-cugs}
+### Configurazione della gestione delle sessioni del Dispatcher per i gruppi utenti chiusi (CUG) {#configuring-dispatcher-session-management-for-cugs}
 
-Configura [gestione delle sessioni nel file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l’accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
+Configura [gestione delle sessioni nel file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l&#39;accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
 
 ```xml
 /sessionmanagement
@@ -135,8 +135,8 @@ Configura [gestione delle sessioni nel file dispatcher.any](https://experiencele
 
 >[!NOTE]
 >
->Quando una farm del Dispatcher ha abilitato la gestione delle sessioni, tutte le pagine gestite dalla farm non vengono memorizzate nella cache. Per memorizzare nella cache le pagine esterne al gruppo di lavoro chiuso, crea una seconda farm in dispatcher.any
->che gestisce le pagine non CUG.
+>Quando la gestione delle sessioni è abilitata in una farm di Dispatcher, tutte le pagine gestite dalla farm non vengono memorizzate in cache. Per memorizzare in cache le pagine che si trovano al di fuori del gruppo utenti chiusi (CUG), crea una seconda farm in dispatcher.any
+>che gestisce le pagine non appartenenti a gruppi utenti chiusi (CUG).
 
 1. Configura [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) definendo `/directory`; ad esempio:
 

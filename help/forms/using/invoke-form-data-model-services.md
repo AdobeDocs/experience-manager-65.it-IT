@@ -1,7 +1,7 @@
 ---
-title: API per richiamare il servizio del modello dati modulo dai moduli adattivi
+title: API per richiamare il servizio modello dati modulo da moduli adattivi
 seo-title: API to invoke form data model service from adaptive forms
-description: Spiega l’API invokeWebServices che è possibile utilizzare per richiamare servizi Web scritti in WSDL da un campo modulo adattivo.
+description: Spiega l’API invokeWebServices che è possibile utilizzare per richiamare i servizi web scritti in WSDL dall’interno di un campo modulo adattivo.
 seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,23 +16,23 @@ ht-degree: 0%
 
 ---
 
-# API per richiamare il servizio del modello dati modulo dai moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API per richiamare il servizio modello dati modulo da moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello di dati del modulo dall’interno di un campo modulo adattivo. Per richiamare un servizio del modello dati, puoi creare una regola nell’editor visivo o specificare un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API nell’editor di codice del [editor di regole](/help/forms/using/rule-editor.md).
+AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello di dati del modulo dall’interno di un campo di modulo adattivo. Per richiamare un servizio del modello dati, puoi creare una regola nell’editor visivo o specificare un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice di [editor di regole](/help/forms/using/rule-editor.md).
 
 Questo documento si concentra sulla scrittura di un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
 
 ## Utilizzo dell’API {#using-the-api}
 
-La `guidelib.dataIntegrationUtils.executeOperation` L’API richiama un servizio dall’interno di un campo modulo adattivo. La sintassi API è la seguente:
+Il `guidelib.dataIntegrationUtils.executeOperation` L’API richiama un servizio dall’interno di un campo di un modulo adattivo. La sintassi API è la seguente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La struttura del `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
+La struttura del `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull’operazione del servizio. La sintassi della struttura è la seguente.
 
 ```javascript
 var operationInfo = {
@@ -50,7 +50,7 @@ outputFieldN
 }
 ```
 
-La struttura API specifica i seguenti dettagli sull’operazione del servizio.
+La struttura API specifica i dettagli seguenti sull’operazione del servizio.
 
 <table>
  <tbody>
@@ -60,31 +60,31 @@ La struttura API specifica i seguenti dettagli sull’operazione del servizio.
   </tr>
   <tr>
    <td><code>operationInfo</code></td>
-   <td>Struttura per specificare l’identificatore del modello di dati del modulo, il titolo dell’operazione e il nome dell’operazione</td>
+   <td>Struttura per specificare l'identificatore del modello dati del modulo, il titolo dell'operazione e il nome dell'operazione</td>
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Specifica il percorso del repository del modello dati del modulo, incluso il suo nome</td>
+   <td>Specifica il percorso del repository del modello dati del modulo, incluso il nome</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
-   <td>Specifica il nome dell'operazione del servizio da eseguire</td>
+   <td>Specifica il nome dell'operazione di servizio da eseguire</td>
   </tr>
   <tr>
    <td><code>inputs</code></td>
-   <td>Mappa uno o più oggetti modulo agli argomenti di input per l'operazione del servizio</td>
+   <td>Esegue il mapping di uno o più oggetti modulo agli argomenti di input per l'operazione di servizio</td>
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Mappa uno o più oggetti modulo ai valori di output dall’operazione del servizio per comporre i campi modulo<br /> </td>
+   <td>Esegue il mapping di uno o più oggetti modulo ai valori di output dell'operazione di servizio per compilare i campi modulo<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Restituisce valori in base agli argomenti di input per l'operazione del servizio. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
+   <td>Restituisce valori in base agli argomenti di input per l'operazione di servizio. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Visualizza un messaggio di errore se la funzione di callback di successo non riesce a visualizzare i valori di output in base agli argomenti di input. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
+   <td>Visualizza un messaggio di errore se la funzione di callback di successo non visualizza i valori di output in base agli argomenti di input. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -93,7 +93,7 @@ La struttura API specifica i seguenti dettagli sull’operazione del servizio.
 
 Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `getAccountById` operazione di servizio configurata in `employeeAccount` modello dati modulo.
 
-La `getAccountById` prende il valore nel `employeeID` campo modulo come input per `empId` argomento e restituisce il nome del dipendente, il numero di conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore in `name` viene popolato in `fullName` elemento e valore modulo per `accountNumber` argomento in `account` elemento modulo.
+Il `getAccountById` l&#39;operazione assume il valore nel `employeeID` campo modulo come input per `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto del dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore `name` viene popolato in `fullName` elemento modulo e valore per `accountNumber` argomento in `account` elemento modulo.
 
 ```javascript
 var operationInfo = {
@@ -111,7 +111,7 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## Utilizzo dell&#39;API con la funzione di callback {#using-the-api-callback}
+## Utilizzo dell’API con la funzione di callback {#using-the-api-callback}
 
 È inoltre possibile richiamare il servizio del modello dati modulo utilizzando `guidelib.dataIntegrationUtils.executeOperation` API con una funzione di callback. La sintassi API è la seguente:
 
@@ -119,17 +119,17 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-La funzione di chiamata di ritorno può avere `success` e `failure` funzioni di callback.
+La funzione di richiamata può avere `success` e `failure` funzioni di callback.
 
-### Script di esempio con funzioni di callback di successo e di errore {#callback-function-success-failure}
+### Script di esempio con funzioni di callback riuscite e non riuscite {#callback-function-success-failure}
 
 Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `GETOrder` operazione di servizio configurata in `employeeOrder` modello dati modulo.
 
-La `GETOrder` prende il valore nel `Order ID` campo modulo come input per `orderId` argomento e restituisce il valore della quantità dell&#39;ordine nel `success` funzione di callback.  Se la `success` la funzione di callback non restituisce la quantità dell&#39;ordine, il `failure` la funzione di callback visualizza `Error occured` messaggio.
+Il `GETOrder` l&#39;operazione assume il valore nel `Order ID` campo modulo come input per `orderId` e restituisce il valore della quantità dell&#39;ordine in `success` callback.  Se il `success` funzione di callback non restituisce la quantità dell&#39;ordine, il `failure` funzione di callback visualizza `Error occured` messaggio.
 
 >[!NOTE]
 >
->Se utilizzi `success` funzione di callback, i valori di output non vengono compilati nei campi modulo specificati.
+>Se si utilizza `success` funzione di callback, i valori di output non vengono inseriti nei campi modulo specificati.
 
 ```javascript
 var operationInfo = {

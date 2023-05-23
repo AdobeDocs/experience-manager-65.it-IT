@@ -1,7 +1,7 @@
 ---
-title: Proprietà di configurazione della gestione della corrispondenza
+title: Proprietà di configurazione di Gestione corrispondenza
 seo-title: Correspondence Management Configuration Properties
-description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per la soluzione. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
+description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per le soluzioni. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
 seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
@@ -13,15 +13,15 @@ exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
-# Proprietà di configurazione della gestione della corrispondenza {#correspondence-management-configuration-properties}
+# Proprietà di configurazione di Gestione corrispondenza {#correspondence-management-configuration-properties}
 
-Per configurare queste proprietà, apri il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e seleziona **Configurazioni di gestione della corrispondenza**.
+Per configurare queste proprietà, apri il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e seleziona **Configurazioni gestione corrispondenza**.
 
-La gestione della corrispondenza ha le seguenti proprietà di configurazione:
+Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
 
 <table>
  <tbody>
@@ -33,12 +33,12 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Rientro</p> </td>
-   <td>Rientro sui moduli<p> </p> </td>
+   <td>Rientro nei moduli<p> </p> </td>
    <td><p>12.7mm</p> </td>
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
-   <td>Larghezza minima</td>
+   <td>Larghezza minima numero</td>
    <td>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano elenchi numerati diversi dai numeri romani</td>
    <td>8.0mm</td>
    <td>Qualsiasi numero</td>
@@ -51,51 +51,51 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td>Tipo di rappresentazione</td>
-   <td>Il tipo di rendering utilizzato dall'applicazione Create Correspondence per eseguire il rendering dell'anteprima della lettera. </td>
-   <td>Rendering di HTML</td>
-   <td>Rendering di HTML / Rendering di PDF</td>
+   <td>Tipo di rappresentazione utilizzato dall'applicazione Create Correspondence per eseguire il rendering dell'anteprima della lettera. </td>
+   <td>Rappresentazione HTML</td>
+   <td>Rendering HTML/PDF</td>
   </tr>
   <tr>
-   <td><p>Abilita l’evidenziazione di CCR PDF</p> </td>
-   <td><p>Abilita l’evidenziazione su PDF nell’applicazione Crea corrispondenza</p> </td>
+   <td><p>Abilita evidenziazione CCR PDF</p> </td>
+   <td><p>Abilita l’evidenziazione su PDF nell’applicazione Create Correspondence</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo di evidenziazione di Target</p> </td>
-   <td><p>Tipo di evidenziazione di Target nell’applicazione Crea corrispondenza</p> </td>
-   <td><p>border</p> </td>
-   <td><p>bordo / riempimento / nessuno</p> </td>
+   <td><p>Tipo evidenziazione destinazione</p> </td>
+   <td><p>Tipo di evidenziazione target nell’applicazione Create Correspondence</p> </td>
+   <td><p>bordo</p> </td>
+   <td><p>bordo/riempimento/nessuno</p> </td>
   </tr>
   <tr>
    <td><p>Colore evidenziazione destinazione</p> </td>
-   <td><p>Colore evidenziazione target nell’applicazione Crea corrispondenza</p> </td>
+   <td><p>Colore evidenziazione destinazione nell’applicazione Crea corrispondenza</p> </td>
    <td><p>90;155;245</p> </td>
-   <td><p>Qualsiasi colore RGB nel formato R;G;B</p> </td>
+   <td><p>Qualsiasi colore RGB in formato R;G;B</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo di evidenziazione del contenuto</p> </td>
-   <td><p>Tipo di evidenziazione del contenuto nell’applicazione Crea corrispondenza</p> </td>
-   <td><p>Riempimento</p> </td>
-   <td><p>bordo / riempimento / nessuno</p> </td>
+   <td><p>Tipo evidenziazione contenuto</p> </td>
+   <td><p>Tipo di evidenziazione contenuto nell’applicazione Create Correspondence</p> </td>
+   <td><p>Riempi</p> </td>
+   <td><p>bordo/riempimento/nessuno</p> </td>
   </tr>
   <tr>
    <td><p>Colore evidenziazione contenuto</p> </td>
-   <td><p>Colore evidenziazione contenuto nell’applicazione Crea corrispondenza</p> </td>
+   <td><p>Colore evidenziazione contenuti nell’applicazione Create Correspondence</p> </td>
    <td><p>210;225;245</p> </td>
-   <td><p>Qualsiasi colore RGB nel formato R;G;B</p> </td>
+   <td><p>Qualsiasi colore RGB in formato R;G;B</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo di evidenziazione del campo</p> </td>
-   <td><p>Tipo di evidenziazione del campo nell’applicazione Crea corrispondenza</p> </td>
-   <td><p>fill</p> </td>
-   <td><p>bordo / riempimento / nessuno</p> </td>
+   <td><p>Tipo evidenziazione campo</p> </td>
+   <td><p>Tipo di evidenziazione campo nell’applicazione Crea corrispondenza</p> </td>
+   <td><p>riempimento</p> </td>
+   <td><p>bordo/riempimento/nessuno</p> </td>
   </tr>
   <tr>
-   <td><p>Colore evidenziatore campo</p> </td>
-   <td><p>Colore evidenziazione campo nell’applicazione Crea corrispondenza</p> </td>
+   <td><p>Colore evidenziazione campo</p> </td>
+   <td><p>Colore evidenziazione campo nell'applicazione Crea corrispondenza</p> </td>
    <td><p>210;225;245</p> </td>
-   <td><p>Qualsiasi colore RGB nel formato R;G;B</p> </td>
+   <td><p>Qualsiasi colore RGB in formato R;G;B</p> </td>
   </tr>
   <tr>
    <td><p>Timeout applicazione</p> </td>
@@ -104,86 +104,86 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
-   <td><p>Nome parametro del documento PDF</p> </td>
-   <td><p>Nome del parametro per il documento PDF in fase di post-elaborazione</p> </td>
+   <td><p>Nome parametro documento PDF</p> </td>
+   <td><p>Nome del parametro per il documento PDF nella fase di post-elaborazione</p> </td>
    <td><p>inPDFDoc</p> </td>
    <td><p>Qualsiasi nome di variabile stringa</p> </td>
   </tr>
   <tr>
    <td><p>Nome parametro dati XML</p> </td>
-   <td><p>Nome del parametro per il documento XML (dati) nel processo post</p> </td>
+   <td><p>Nome del parametro per il documento XML (dati) nella fase di post-elaborazione</p> </td>
    <td><p>inXMLDoc</p> </td>
    <td><p>Qualsiasi nome di variabile stringa</p> </td>
   </tr>
   <tr>
-   <td><p>Nome del parametro del documento XDP</p> </td>
-   <td><p>Nome del parametro per il documento XDP inviato al processo post</p> </td>
+   <td><p>Nome parametro documento XDP</p> </td>
+   <td><p>Nome del parametro per il documento XDP inviato al post-processo</p> </td>
    <td><p>inXDPDoc</p> </td>
    <td><p>Qualsiasi nome di variabile stringa</p> </td>
   </tr>
   <tr>
    <td><p>Nome parametro URL di reindirizzamento</p> </td>
-   <td><p>Nome del parametro per l'URL di reindirizzamento inviato dal processo post Questo valore può essere un nome di variabile stringa</p> </td>
+   <td><p>Nome del parametro per l’URL di reindirizzamento inviato dal processo post Questo valore può essere qualsiasi nome di variabile stringa</p> </td>
    <td><p>redirectURL</p> </td>
    <td><p>Qualsiasi nome di variabile stringa</p> </td>
   </tr>
   <tr>
    <td><p>Tipo di invio PDF</p> </td>
-   <td><p>Tipo di invio PDF (tipo di PDF generato all’invio dall’applicazione Create Correspondence)</p> </td>
-   <td><p>nonInteractive</p> </td>
+   <td><p>Tipo di invio PDF (tipo di PDF generato al momento dell'invio dall'applicazione Create Correspondence)</p> </td>
+   <td><p>non interattivo</p> </td>
    <td><p>interattivo/non interattivo</p> </td>
   </tr>
   <tr>
    <td><p>Ottimizza istanza dizionario dati</p> </td>
-   <td><p>Consente il trasferimento ottimizzato del server e del client dell’istanza del dizionario dati</p> </td>
+   <td><p>Consente il trasferimento ottimizzato dell’istanza del dizionario dati tra server e client</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Correzione automatica delle incongruenze </p> </td>
-   <td><p>Quando è attivata, gestisce automaticamente le eventuali incongruenze nelle assegnazioni di lettere</p> </td>
+   <td><p>Correzione automatica delle incoerenze </p> </td>
+   <td><p>Quando questa opzione è attivata, gestisce automaticamente le possibili incoerenze nelle assegnazioni di lettere</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Usa formati dati configurati</p> </td>
-   <td><p>Controlla se utilizzare i formati di modifica dei dati configurati e il formato di visualizzazione dei dati</p> </td>
+   <td><p>Controlla se utilizzare i formati di modifica dati configurati e il formato di visualizzazione dati</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Formati di visualizzazione dei dati</p> </td>
-   <td><p>Specifica il formato di visualizzazione specifico per le impostazioni internazionali per i dati</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>Specifica il formato di visualizzazione specifico per la lingua per i dati</p> </td>
+   <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=gg-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Formato di modifica dati</p> </td>
-   <td><p>Modifica il formato dei dati. Viene utilizzato quando si scrivono dati come String o si analizzano dati da String</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>Modifica il formato dei dati. Utilizzato per scrivere dati come stringa o analizzare dati da stringa</p> </td>
+   <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td>--<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gestisci istanze lettera su pubblicazione</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità Gestisci lettere (applicabile solo per Publish Server)</p> </td>
+   <td><p>Gestisci istanze lettere al momento della pubblicazione</p> </td>
+   <td><p>Attiva/disattiva la funzionalità Gestisci lettera (applicabile solo al server di pubblicazione)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Abilita controllo</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo. Se false, i registri di controllo per tutte le azioni verranno disabilitati.</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo. Se è false, i registri di audit per tutte le azioni vengono disabilitati</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Abilita controllo lettura</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per la lettura delle risorse</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per la lettura delle risorse</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita creazione controllo</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per la creazione delle risorse</p> </td>
+   <td><p>Abilita Crea controllo</p> </td>
+   <td><p>Attivare/disattivare la funzionalità di controllo per la creazione di risorse</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -194,8 +194,8 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita controllo di ripristino</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per il ripristino delle risorse</p> </td>
+   <td><p>Abilita Ripristina controllo</p> </td>
+   <td><p>Attivare/disattivare la funzionalità di controllo per il ripristino delle risorse</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -206,92 +206,92 @@ La gestione della corrispondenza ha le seguenti proprietà di configurazione:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita controllo SaveAsDraft</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per il salvataggio delle bozze di lettere</p> </td>
+   <td><p>Abilita controllo Salva come bozza</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per il salvataggio delle bozze di lettere</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Abilita controllo invio</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per l'invio delle lettere</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per l'invio di lettere</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Abilita controllo e-mail</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per le lettere di posta elettronica</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per l'invio di lettere tramite posta elettronica</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita controllo stampa</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per la stampa delle lettere</p> </td>
+   <td><p>Abilita controllo di stampa</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per la stampa delle lettere</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Abilita controllo consegna personalizzato</p> </td>
-   <td><p>Attiva/Disattiva la funzionalità di controllo per la consegna personalizzata delle lettere</p> </td>
+   <td><p>Attiva/disattiva la funzionalità di controllo per la consegna personalizzata delle lettere</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Nome del parametro dei documenti allegati</p> </td>
-   <td><p>Nome del parametro per i documenti allegati inviati al processo post</p> </td>
+   <td><p>Nome parametro documenti allegati</p> </td>
+   <td><p>Nome del parametro per i documenti allegati inviati al processo successivo</p> </td>
    <td><p>inAttachmentDocs</p> </td>
    <td><p>Qualsiasi nome di variabile stringa</p> </td>
   </tr>
   <tr>
-   <td><p>Directory principale utente di CM</p> </td>
-   <td><p>URL della cartella contenente tutte le risorse utente di Gestione Corrispondenza</p> </td>
+   <td><p>Directory principale utente CM</p> </td>
+   <td><p>URL della cartella contenente tutte le risorse utente di Gestione della corrispondenza</p> </td>
    <td><p>--</p> </td>
-   <td><p>Posizione cartella valida</p> </td>
+   <td><p>Percorso cartella valido</p> </td>
   </tr>
   <tr>
-   <td><p>Dimensione cache lettera</p> </td>
-   <td><p>Specifica il numero massimo di lettere da conservare nella cache.</p> <p>La modifica di questo valore comporterà la pulizia di <code>in-memory</code> cache.</p> </td>
+   <td><p>Letter Cache Size</p> </td>
+   <td><p>Specifica il numero massimo di lettere da mantenere nella cache.</p> <p>La modifica di questo valore determinerà la pulizia di <code>in-memory</code> cache.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualsiasi valore numerico</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita cache lettera</p> </td>
-   <td><p>Attiva/Disattiva la cache delle lettere.</p> <p>La modifica di questo valore comporterà la pulizia di <code>in-memory </code> cache.</p> </td>
+   <td><p>Abilita cache lettere</p> </td>
+   <td><p>Attiva/disattiva la cache delle lettere.</p> <p>La modifica di questo valore determinerà la pulizia di <code>in-memory </code> cache.</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ordinamento degli elementi dati</p> </td>
-   <td><p>Mantiene l’ordinamento degli elementi dati in un’interfaccia per la corrispondenza in base alla sequenza in Letter</p> </td>
+   <td><p>Ordinamento elementi dati</p> </td>
+   <td><p>Mantiene l’ordine degli elementi dati nell’interfaccia per la creazione di corrispondenza in base alla sequenza in Lettera</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ricarica supporto</p> </td>
-   <td><p>Attiva/Disattiva il supporto per il ricaricamento nelle lettere sottoposte a rendering sul lato server.</p> <p>La disattivazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td>
+   <td><p>Ricaricamento supporto</p> </td>
+   <td><p>Abilita/disabilita il supporto per il ricaricamento nelle lettere sottoposte a rendering sul lato server.</p> <p>La disattivazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Cartella temporanea</td>
+   <td>Cartella Temp</td>
    <td>Posizione della cartella temporanea.</td>
    <td>acm.tpmFolder</td>
    <td> </td>
   </tr>
   <tr>
    <td>Salvataggio remoto</td>
-   <td>Salva le istanze della lettera sull'autore di elaborazione specificato.</td>
+   <td>Salva le istanze di lettere sull'autore di elaborazione specificato.</td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Opzioni di compatibilità</td>
-   <td>Opzioni di compatibilità del formato configname:configvalue separate da virgola.</td>
+   <td>Opzioni di compatibilità del formato nomeconfigurazione:valore separato da virgole.</td>
    <td>acm.compatibilityOptions</td>
    <td> </td>
   </tr>
   <tr>
    <td><p>Directory di debug </p> <p> </p> </td>
-   <td>Percorso della cartella del file system per il debug. Se la directory non <code>exists</code>, non verrà generato alcun dump di debug.</td>
+   <td>Percorso della cartella del file system per il debug. Se la directory non <code>exists</code>, non verranno generate immagini di debug.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

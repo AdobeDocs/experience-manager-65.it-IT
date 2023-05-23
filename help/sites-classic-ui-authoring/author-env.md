@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dell’ambiente di authoring
 seo-title: Working with the Author Environment
-description: L’Ambiente Autore consente di eseguire attività correlate alla creazione (inclusa la creazione delle pagine e la gestione delle risorse) e di amministrare le attività necessarie durante la scrittura e la manutenzione dei contenuti del tuo sito web.
+description: L’ambiente di authoring consente di eseguire attività relative all’authoring (inclusa l’authoring delle pagine e la gestione delle risorse) e di amministrare le attività necessarie per generare e gestire i contenuti sul sito web.
 seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 85%
+ht-degree: 2%
 
 ---
 
@@ -21,31 +21,31 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->La documentazione seguente si concentra sull’interfaccia classica. Per informazioni sull’authoring nell’interfaccia touch moderna, consulta la sezione [documentazione standard sull’authoring](/help/assets/assets.md).
+>La documentazione seguente si concentra sull’interfaccia utente classica. Per informazioni sull’authoring nella moderna interfaccia utente touch, consulta la sezione [Documentazione di authoring standard](/help/assets/assets.md).
 
-L’ambiente di authoring consente di eseguire attività correlate a:
+L’ambiente di authoring consente di eseguire attività relative a:
 
-* [Authoring](/help/sites-authoring/author.md) (tra cui [authoring delle pagine](/help/sites-authoring/qg-page-authoring.md) e [gestione delle risorse](/help/assets/assets.md))
+* [Authoring](/help/sites-authoring/author.md) (incluso [authoring delle pagine](/help/sites-authoring/qg-page-authoring.md) e [gestione delle risorse](/help/assets/assets.md))
 
-* [Attività di amministrazione](/help/sites-administering/administer-best-practices.md) per generare e mantenere i contenuti del sito web
+* [Amministrazione](/help/sites-administering/administer-best-practices.md) attività necessarie per la generazione e la manutenzione del contenuto del sito web
 
-Sono disponibili due interfacce grafiche, accessibili dalle versioni più recenti dei normali browser:
+Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, accessibili tramite qualsiasi browser moderno:
 
 1. Interfaccia classica
 
-   * Questa interfaccia utente è disponibile in AEM ormai da molti anni.
-   * Il colore predominante è il verde.
-   * È stata progettata per l’uso con i dispositivi desktop.
-   * Non viene più aggiornata.
-   * La documentazione seguente si concentra sull’interfaccia classica. Per informazioni sulla creazione nella moderna interfaccia utente touch, consulta la [documentazione standard sulla creazione](/help/sites-authoring/author.md).
+   * Questa interfaccia utente è sempre stata disponibile in AEM per molti anni.
+   * È prevalentemente verde.
+   * È stato progettato per essere utilizzato su dispositivi desktop.
+   * Non viene più mantenuto.
+   * La documentazione seguente si concentra su questa interfaccia classica. Per informazioni sull’authoring nell’interfaccia utente moderna basata su touch, consulta la sezione [Documentazione di authoring standard](/help/sites-authoring/author.md).
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
-1. Interfaccia utente touch
+1. Interfaccia touch
 
-   * È la moderna interfaccia utente standard di AEM.
-   * È un’interfaccia pulita e lineare, prevalentemente di colore grigio.
-   * È stata progettata per essere utilizzata sia con i dispositivi touch che con i dispositivi desktop ed è ottimizzata per le funzioni touch. L’aspetto è lo stesso su tutti i dispositivi, mentre le operazioni per [visualizzare e selezionare le risorse](/help/sites-authoring/basic-handling.md) sono leggermente diverse (mediante tocco o clic, a seconda dei casi).
-   * Consulta la sezione [documentazione standard sull’authoring](/help/sites-authoring/author.md) per ulteriori informazioni su come creare utilizzando l’interfaccia utente touch. La documentazione seguente si concentra sull’interfaccia classica.
+   * Questa è la moderna interfaccia utente AEM standard.
+   * È prevalentemente grigia, con un&#39;interfaccia pulita e piatta.
+   * È progettato per essere utilizzato sia su dispositivi touch che desktop (ottimizzati per il touch). Il look and feel è lo stesso su tutti i dispositivi, tuttavia [visualizzazione e selezione delle risorse](/help/sites-authoring/basic-handling.md) differisce leggermente (tocchi rispetto a clic).
+   * Consulta la [Documentazione di authoring standard](/help/sites-authoring/author.md) per ulteriori dettagli su come effettuare l’authoring utilizzando l’interfaccia utente touch. La documentazione seguente si concentra sull’interfaccia utente classica.
 
    * Desktop:
    ![chlimage_1-150](assets/chlimage_1-150.png)

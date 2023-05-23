@@ -1,7 +1,7 @@
 ---
-title: Impostazione della campagna
+title: Configurazione della campagna
 seo-title: Setting up your campaign
-description: Per l’impostazione di una nuova campagna è necessario creare un marchio a cui associare le campagne, creare una campagna a cui associare le esperienze, e definire infine le proprietà per la nuova campagna.
+description: Per impostare una nuova campagna devi creare un marchio che contenga le campagne, creare una campagna che contenga le esperienze e infine definire le proprietà per la nuova campagna.
 seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
@@ -14,128 +14,128 @@ exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
 source-wordcount: '2257'
-ht-degree: 94%
+ht-degree: 1%
 
 ---
 
-# Impostazione della campagna{#setting-up-your-campaign}
+# Configurazione della campagna{#setting-up-your-campaign}
 
-L’impostazione di una nuova campagna prevede i seguenti passaggi generali:
+La configurazione di una nuova campagna include i seguenti passaggi (generici):
 
-1. [Crea un marchio](#creating-a-new-brand) per le tue campagne.
-1. Se necessario, puoi [definire le proprietà del nuovo marchio](#defining-the-properties-for-your-new-brand).
-1. [Crea una campagna](#creating-a-new-campaign) a cui associare le esperienze, ad esempio pagine teaser o newsletter.
-1. Se necessario puoi [definire le proprietà della nuova campagna](#defining-the-properties-for-your-new-campaign).
+1. [Creare un brand](#creating-a-new-brand) per mantenere le campagne.
+1. Se necessario, è possibile [definire le proprietà per il nuovo brand](#defining-the-properties-for-your-new-brand).
+1. [Creare una campagna](#creating-a-new-campaign) per memorizzare le esperienze, ad esempio pagine teaser o newsletter.
+1. Se necessario, è possibile [definire le proprietà per la nuova campagna](#defining-the-properties-for-your-new-campaign).
 
-Quindi, a seconda del tipo di esperienza da creare, dovrai [creare un’esperienza](#creating-a-new-experience). I dettagli dell’esperienza e le azioni da eseguire dopo che sarà stata creata dipendono dal tipo di esperienza:
+A seconda del tipo di esperienza che stai creando, dovrai: [creare un’esperienza](#creating-a-new-experience). I dettagli dell’esperienza e le azioni che seguono la sua creazione dipendono dal tipo di esperienza che desideri creare:
 
-* Per la creazione di un teaser:
+* Se crei un teaser:
 
-   1. [Crea un’esperienza teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Aggiungi contenuti al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
+   1. [Creare un’esperienza teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+   1. [Aggiungere contenuto al teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+   1. [Creare un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
 
-* Per la creazione di una newsletter:
+* Durante la creazione di una newsletter:
 
-   1. [Crea un’esperienza newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Aggiungi i contenuti alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+   1. [Creare un’esperienza di newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+   1. [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    1. [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crea una pagina di destinazione accattivante per la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a utenti abbonati o lead.
+   1. [Creare una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   1. [Inviare la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
 
-* Per la creazione di un’offerta Adobe Target (ex Test&amp;Target):
+* Durante la creazione di un&#39;offerta Adobe Target (precedentemente Test&amp;Target):
 
-   1. [Crea un’esperienza offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+   1. [Creare un’esperienza di offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Procedi all’integrazione con Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
->Per istruzioni dettagliate sulla definizione dei segmenti, consulta [Segmentazione](/help/sites-administering/campaign-segmentation.md).
+>Consulta [Segmentazione](/help/sites-administering/campaign-segmentation.md) per istruzioni dettagliate sulla definizione dei segmenti.
 
 ## Creazione di un nuovo marchio {#creating-a-new-brand}
 
-Per creare un nuovo marchio:
+Per creare un nuovo brand:
 
-1. Aprite **MCM** e selezionate **Campagne** nel riquadro a sinistra.
+1. Apri **MCM** e seleziona **Campagne** nel riquadro a sinistra.
 
-1. Selezionate **Nuovo...** per inserire il **Titolo** e il **Nome** e specificare il modello da usare per il marchio:
+1. Seleziona **Nuovo...** per inserire **Titolo** e **Nome** e modello da utilizzare per il nuovo brand:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Fai clic su **Crea**. Il nuovo marchio verrà visualizzato in MCM (con un’icona predefinita).
+1. Fai clic su **Crea**. Il nuovo brand verrà visualizzato in MCM (con un’icona predefinita).
 
-### Definizione delle proprietà del nuovo marchio {#defining-the-properties-for-your-new-brand}
+### Definizione delle proprietà per il nuovo marchio {#defining-the-properties-for-your-new-brand}
 
-1. Da **Campagne** nel riquadro a sinistra, selezionate l’icona del nuovo marchio nel riquadro a destra e fate clic su **Proprietà...**
+1. Da **Campagne** nel riquadro di sinistra, seleziona l’icona del nuovo brand nel riquadro di destra e fai clic su **Proprietà...**
 
-   Potete specificare il **Titolo**, la **Descrizione** e un’immagine da usare come icona.
+   È possibile immettere un valore **Titolo**, **Descrizione** e un’immagine da utilizzare come icona.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Clic **OK** per salvare.
 
 ### Creazione di una nuova campagna {#creating-a-new-campaign}
 
 Per creare una nuova campagna:
 
-1. Da **Campagne**, selezionate il nuovo marchio nel riquadro a sinistra o fate doppio clic sull’icona nel riquadro a sinistra.
+1. Da **Campagne**, selezionare il nuovo brand nel riquadro di sinistra o fare doppio clic sull&#39;icona nel riquadro di destra.
 
-   Viene visualizzata la panoramica (vuota, in caso di nuovo marchio).
+   Viene visualizzata la panoramica (vuota se il brand è nuovo).
 
-1. Fate clic su **Nuovo...** e specificate il **Titolo**, il **Nome** e il modello da usare per la nuova campagna.
+1. Clic **Nuovo...** e specificare **Titolo**, **Nome** e modello da utilizzare per la nuova campagna.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Fai clic su **Crea**. La nuova campagna verrà mostrata in MCM.
+1. Fai clic su **Crea**. La nuova campagna verrà visualizzata in MCM.
 
-### Definizione delle proprietà della nuova campagna {#defining-the-properties-for-your-new-campaign}
+### Definizione delle proprietà per la nuova campagna {#defining-the-properties-for-your-new-campaign}
 
-Configura le proprietà per le campagne che controllano il comportamento:
+Configura le proprietà della campagna che controllano il comportamento:
 
-* **Priorità:** la priorità di questa campagna rispetto alle altre. Quando sono attive più campagne simultaneamente, la campagna con la priorità più elevata controlla l’esperienza del visitatore.
-* **Tempo di attivazione e disattivazione:** queste proprietà consentono di controllare il periodo di tempo durante il quale la campagna controlla l’esperienza del visitatore. La proprietà Ora di attivazione controlla il momento in cui la campagna comincia a controllare l&#39;esperienza. La proprietà Ora di disattivazione controlla il momento in cui la campagna smette di controllare l&#39;esperienza.
-* **Immagine:** l’immagine che rappresenta la campagna in AEM.
-* **Servizi cloud:** le configurazioni del servizio cloud con cui la campagna è integrata. Vedi [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).
+* **Priorità:** La priorità di questa campagna rispetto ad altre campagne. Quando più campagne sono contemporaneamente attive, la campagna con priorità più alta controlla l’esperienza del visitatore.
+* **Ora di attivazione e disattivazione:** Queste proprietà controllano il periodo di tempo in cui la campagna controlla l&#39;esperienza del visitatore. La proprietà On Time controlla il momento in cui la campagna inizia a controllare l’esperienza. La proprietà Off Time controlla quando le campagne non controllano più l’esperienza.
+* **Immagine:** L&#39;immagine che rappresenta la campagna in AEM.
+* **Cloud Services:** Le configurazioni di Cloud Service con cui è integrata la campagna. (vedere [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
-* **Adobe Target:** proprietà che consentono di configurare campagne integrate con Adobe Target. Vedi [Integrazione con Adobe Target](/help/sites-administering/target.md).
+* **Adobe Target:** Proprietà che configurano le campagne integrate con Adobe Target. (vedere [Integrazione con Adobe Target](/help/sites-administering/target.md).)
 
-1. Da **Campagne**, seleziona il marchio. Nel riquadro a destra, seleziona la campagna e fai clic su **Proprietà**.
+1. Da **Campagne**, seleziona il tuo marchio. Nel riquadro a destra, seleziona la campagna e fai clic su **Proprietà**.
 
-   Potete inserire varie proprietà, compresi un **Titolo**, una **Descrizione** ed eventuali **Servizi cloud**.
+   Puoi immettere varie proprietà, tra cui una **Titolo**, **Descrizione** e qualsiasi **Cloud Services** tu vuoi.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Clic **OK** per salvare.
 
 ### Creazione di una nuova esperienza {#creating-a-new-experience}
 
 La procedura per la creazione di una nuova esperienza dipende dal tipo di esperienza:
 
-* [Creazione di un teaser ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
+* [Creazione di un teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Creazione di una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
 * [Creazione di un’offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
 >
->Come nelle precedenti versioni, è ancora possibile creare l’esperienza come una pagina nella console **Siti web**. Sono inoltre supportate simili pagine create con le precedenti versioni.
+>Come per le versioni precedenti, è ancora possibile creare l’esperienza come pagina in **Siti Web** (e tutte le pagine create nelle versioni precedenti sono ancora completamente supportate).
 >
->Ora, tuttavia, si consiglia di creare nuove esperienze mediante MCM.
+>Ora si consiglia di utilizzare MCM per creare le esperienze.
 
 ### Configurazione della nuova esperienza {#configuring-your-new-experience}
 
-Una volta creata la base dell’esperienza occorre effettuare le seguenti operazioni, a seconda del tipo di esperienza:
+Dopo aver creato l’ossatura di base per l’esperienza, devi continuare con le seguenti azioni, a seconda del tipo di esperienza:
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Collega la pagina teaser ai segmenti di visitatori.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Crea un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
+   * [Connetti la pagina del teaser ai segmenti dei visitatori.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+   * [Creare un punto di contatto per il teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (aggiungi il teaser a una pagina di contenuto).
 
 * [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Aggiungi i contenuti alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+   * [Aggiungi contenuto alla newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    * [Personalizza la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Invia la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) a utenti abbonati o lead.
-   * [Crea una pagina di destinazione accattivante per la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   * [Inviare la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) agli abbonati o ai lead.
+   * [Creare una pagina di destinazione interessante per le newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Offerta Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
@@ -143,75 +143,75 @@ Una volta creata la base dell’esperienza occorre effettuare le seguenti operaz
 
 ### Aggiunta di un nuovo punto di contatto {#adding-a-new-touchpoint}
 
-Se disponete di esperienze esistenti, potete aggiungere un nuovo punto di contatto direttamente dalla vista Calendario di MCM:
+Se disponi di esperienze esistenti, puoi aggiungere un punto di contatto direttamente dalla vista Calendario di MCM:
 
-1. Selezionate la vista Calendario per la campagna.
+1. Seleziona la vista calendario per la campagna.
 
-1. Fate clic su **Aggiungi punto di contatto...** per aprire la finestra di dialogo. Specifica l’esperienza che desideri aggiungere:
+1. Clic **Aggiungi punto di contatto...** per aprire la finestra di dialogo. Specifica l’esperienza da aggiungere:
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Clic **OK** per salvare.
 
 ## Utilizzo dei lead {#working-with-leads}
 
 >[!NOTE]
 >
->Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione dei lead).
->Si consiglia di utilizzare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
+>Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione dei lead).
+>Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
 
-In MCM AEM è possibile organizzare e aggiungere i lead inserendoli manualmente oppure importando un elenco di voci separate da virgola, ad esempio una mailing list. I lead possono inoltre essere generati dalle registrazioni a newsletter o community (se configurate, queste possono avviare un workflow per la compilazione automatica dei lead).
+In AEM MCM, puoi organizzare e aggiungere lead immettendoli manualmente o importando un elenco separato da virgole, ad esempio una mailing list. Ulteriori modi per generare i lead sono dalle iscrizioni a newsletter o community (se configurate, possono attivare un flusso di lavoro che popola i lead).
 
-In genere i lead sono organizzati per categorie e inseriti in un elenco in modo da consentire successive operazioni quali l’invio di messaggi e-mail personalizzati per un particolare gruppo.
+I lead vengono generalmente suddivisi in categorie e inseriti in un elenco, in modo da poter eseguire successivamente azioni sull’intero elenco, ad esempio l’invio di un’e-mail personalizzata a un determinato elenco.
 
-Nel dashboard, potete accedere a tutti i lead facendo clic su **Lead** nel riquadro a sinistra. oppure accedendo dal riquadro **Elenchi**.
+Nel dashboard, puoi accedere a tutti i lead facendo clic su **Lead** dal riquadro di sinistra. Puoi anche accedere ai lead da **Elenchi** riquadro.
 
 ![screen_shot_2012-02-21at114748am](assets/screen_shot_2012-02-21at114748am.png)
 
 >[!NOTE]
 >
->Per aggiungere o modificare gli avatar degli utenti, apri il cloud di clickstream (Ctrl+Alt+C), carica il profilo e fai clic su **Modifica**.
+>Per aggiungere o modificare gli avatar degli utenti, apri il cloud di click-stream (Ctrl+Alt+c), carica il profilo e fai clic su **Modifica**.
 
 ### Creazione di nuovi lead {#creating-new-leads}
 
-Dopo aver creato nuovi lead, è necessario [attivarli](#activating-or-deactivating-leads) per poterne tracciare l’attività nell’istanza pubblicata e personalizzarne l’esperienza di utilizzo.
+Dopo aver creato nuovi lead, assicurati di [attivali](#activating-or-deactivating-leads) in modo da poter tenere traccia della loro attività sull’istanza Publish e personalizzare la loro esperienza.
 
 Per creare manualmente un nuovo lead:
 
-1. In AEM, passa a MCM. Nella dashboard, fai clic su **Lead**.
-1. Fai clic su **Nuovo**. Si apre la finestra **Crea nuovo**.
+1. In AEM, passa a MCM. Nel dashboard, fai clic su **Lead**.
+1. Clic **Nuovo**. Il **Crea nuovo** viene visualizzata la finestra.
 
    ![screen_shot_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
 
-1. Inserisci le informazioni appropriate nei campi, quindi fai clic sulla scheda **Indirizzo**.
+1. Immettere le informazioni nei campi, a seconda delle necessità. Fai clic su **Indirizzo** scheda.
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Inserisci i dati dell’indirizzo appropriati, quindi fai clic su **Salva** per salvare il lead. Per aggiungere altri lead, fai clic su **Salva e nuovo**.
+1. Immettere le informazioni sull&#39;indirizzo, se necessario. Clic **Salva** per salvare il lead. Per aggiungere altri lead, fai clic su **Salva e nuovo**.
 
-   Il nuovo lead viene visualizzato nel riquadro Lead. Quando fai clic sulla voce, nel riquadro a destra vengono visualizzate tutte le informazioni inserite. Dopo aver creato un lead, è possibile aggiungerlo a un elenco.
+   Il nuovo lead viene visualizzato nel riquadro Lead. Quando si fa clic sulla voce, tutte le informazioni immesse vengono visualizzate nel riquadro di destra. Dopo aver creato un lead, è possibile aggiungerlo a un elenco.
 
    ![screen_shot_2012-02-21at120307pm](assets/screen_shot_2012-02-21at120307pm.png)
 
-### Attivazione o disattivazione dei lead {#activating-or-deactivating-leads}
+### Attivazione o disattivazione di lead {#activating-or-deactivating-leads}
 
-L’attivazione dei lead consente di tenere traccia della loro attività nell’istanza pubblicata e di personalizzarne l’esperienza di utilizzo. Se non si desidera più tracciarne l’attività, è possibile disattivarli.
+L’attivazione dei lead consente di tenere traccia della loro attività sull’istanza Publish e di personalizzare la loro esperienza. Se non desideri più tenere traccia della loro attività, puoi disattivarle.
 
-Per attivare o disattivare i lead:
+Per i lead attivi o disattivi:
 
 1. In AEM, passa a MCM e fai clic su **Lead**.
 
-1. Selezionate i lead da attivare o disattivare e fate clic su **Attiva** o **Disattiva**.
+1. Selezionare i lead da attivare o disattivare e fare clic su **Attiva** o **Disattiva**.
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Come per le pagine AEM, lo stato di pubblicazione è indicato nella colonna **Pubblicato**.
+   Come per le pagine dell’AEM, lo stato di pubblicazione è indicato nel **Pubblicato** colonna.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
 ### Importazione di nuovi lead {#importing-new-leads}
 
-Quando si importano nuovi lead, è possibile aggiungerli automaticamente a un elenco esistente oppure creare un nuovo elenco in cui includerli.
+Quando si importano nuovi lead, è possibile aggiungerli automaticamente a un elenco esistente o crearne uno nuovo per includerli.
 
 Per importare i lead da un elenco separato da virgole:
 
@@ -219,99 +219,99 @@ Per importare i lead da un elenco separato da virgole:
 
    >[!NOTE]
    >
-   >In alternativa, importa i lead effettuando una delle seguenti operazioni:
+   >In alternativa, è possibile importare i lead eseguendo una delle operazioni seguenti:
    >
-   >* Nel dashboard, fate clic su **Importa lead** nel riquadro **Elenchi**.
-   >* Fate clic su **Elenchi** e, nel menu **Strumenti**, selezionate **Importa lead**.
+   >* Nel dashboard, fai clic su **Importa lead** nel **Elenchi** riquadro
+   >* Clic **Elenchi** e nella **Strumenti** menu, seleziona **Importa lead**.
 
 
-1. Nel menu **Strumenti**, selezionate **Importa** **lead**.
+1. In **Strumenti** menu, seleziona **Importa** **Lead**.
 
-1. Inserite le informazioni come descritto in Esempio di dati. È possibile importare i seguenti campi: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
+1. Immettere le informazioni come descritto in Dati di esempio. È possibile importare i campi seguenti: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
 
    >[!NOTE]
    >
-   >La prima riga nell’elenco CSV contiene etichette predefinite che devono essere scritte esattamente come in questo esempio:
+   >La prima riga nell’elenco CSV è costituita da etichette predefinite che devono essere scritte esattamente come nell’esempio:
    >
    >
-   >`email,givenName,familyName` - se scritto come `givenname`, ad esempio, il sistema non lo riconoscerà.
+   >`email,givenName,familyName` - se è redatto come `givenname`Ad esempio, il sistema non lo riconoscerà.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Fai clic su **Avanti**. Viene visualizzata un’anteprima dei lead per verificarne la correttezza.
+1. Fai clic su **Avanti**. Qui puoi visualizzare in anteprima i lead per assicurarti che siano accurati.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Fai clic su **Avanti**. Seleziona l’elenco in cui inserire i lead. Se non desideri inserirli in alcun elenco, elimina le informazioni presenti nel campo. Per impostazione predefinita, in AEM viene creato un nome di elenco con data e ora. Fai clic su **Importa**.
+1. Fai clic su **Avanti**. Selezionare l&#39;elenco a cui si desidera che appartengano i lead. Se non desideri che appartengano a un elenco, elimina le informazioni nel campo. Per impostazione predefinita, AEM crea un nome di elenco che include la data e l’ora. Clic **Importa**.
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
-   Il nuovo lead viene visualizzato nel riquadro Lead. Quando fai clic sulla voce, nel riquadro a destra vengono visualizzate tutte le informazioni inserite. Dopo aver creato un lead, è possibile aggiungerlo a un elenco.
+   Il nuovo lead viene visualizzato nel riquadro Lead. Se si fa clic sulla voce, tutte le informazioni immesse vengono visualizzate nel riquadro di destra. Dopo aver creato un lead, è possibile aggiungerlo a un elenco.
 
-### Aggiunta di lead a elenchi {#adding-leads-to-lists}
+### Aggiunta di lead agli elenchi {#adding-leads-to-lists}
 
-Per aggiungere i lead a elenchi esistenti:
+Per aggiungere lead a elenchi preesistenti:
 
-1. In MCM, fate clic su **Lead** per visualizzare tutti i lead disponibili.
+1. In MCM, fai clic su **Lead** per visualizzare tutti i lead disponibili.
 
-1. Per selezionare i lead da aggiungere a un elenco, attivate la casella di selezione accanto a ciascun lead. È possibile aggiungere un numero illimitato di lead.
+1. Selezionare i lead da aggiungere a un elenco selezionando la casella di controllo accanto al lead. Puoi aggiungere tutti i lead che desideri.
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Nel menu **Strumenti**, seleziona **Aggiungi all’elenco.** Viene aperta la finestra **Aggiungi all’elenco**.
+1. In **Strumenti** menu, seleziona **Aggiungi all&#39;elenco....** Il **Aggiungi all&#39;elenco** viene visualizzata la finestra.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
-1. Seleziona l’elenco a cui desideri aggiungere i lead e fai clic su **OK**. I lead vengono aggiunti ai relativi elenchi.
+1. Seleziona l’elenco a cui desideri aggiungere i lead e fai clic su **OK**. I lead vengono aggiunti agli elenchi appropriati.
 
-### Visualizzazione delle informazioni sui lead {#viewing-lead-information}
+### Visualizzazione delle informazioni sul lead {#viewing-lead-information}
 
-Per visualizzare le informazioni su un lead, in MCM fai clic sulla casella di selezione accanto al lead. Viene aperto un riquadro a destra contenente le informazioni sul lead, compresi gli elenchi a cui appartiene.
+Per visualizzare le informazioni sul lead, in MCM fare clic sulla casella di controllo accanto al lead e viene visualizzato un riquadro a destra con tutte le informazioni sul lead visualizzate, inclusa l&#39;affiliazione a un elenco.
 
 ![screen_shot_2012-02-21at124228pm](assets/screen_shot_2012-02-21at124228pm.png)
 
-### Modifica di lead esistenti {#modifying-existing-leads}
+### Modifica dei lead esistenti {#modifying-existing-leads}
 
-Per modificare le informazioni di un lead:
+Per modificare le informazioni sui lead esistenti:
 
-1. In MCM, fate clic su **Lead**. Nell’elenco dei lead, seleziona la casella accanto al lead da modificare. Nel riquadro a destra vengono visualizzate tutte le informazioni del lead.
+1. In MCM, fai clic su **Lead**. Dall&#39;elenco dei lead, selezionare la casella di controllo accanto al lead che si desidera modificare. Tutte le informazioni sul lead vengono visualizzate nel riquadro di destra.
 
    ![screen_shot_2012-02-21at124514pm](assets/screen_shot_2012-02-21at124514pm.png)
 
    >[!NOTE]
    >
-   >È possibile modificare un solo lead alla volta. Per modificare i lead che appartengono a uno stesso elenco, modificate l’elenco stesso.
+   >È possibile modificare un solo lead alla volta. Se è necessario modificare i lead che fanno parte dello stesso elenco, è possibile modificare l&#39;elenco.
 
-1. Fate clic su **Modifica**. Viene aperta la finestra **Modifica lead**.
+1. Clic **Modifica**. Il **Modifica lead** viene visualizzata la finestra.
 
    ![screen_shot_2012-02-21at124609pm](assets/screen_shot_2012-02-21at124609pm.png)
 
-1. Apportate le modifiche necessarie e fate clic su **Salva** per salvarle.
+1. Apporta le modifiche necessarie e fai clic su **Salva** per salvare le modifiche.
 
    >[!NOTE]
    >
-   >Per cambiare l’avatar del lead, passate al profilo dell’utente. Per caricare il profilo in Client Context, premete CTRL+ALT+C, fate clic su **Carica**, quindi selezionate il profilo.
+   >Per modificare l’avatar del lead, passa al profilo utenti. Per caricare il profilo nel cloud clickstream, premere CTRL+ALT+c e fare clic su **Carica**, quindi selezionare il profilo.
 
 ### Eliminazione di lead esistenti {#deleting-existing-leads}
 
-Per eliminare i lead esistenti, in MCM seleziona la casella di selezione accanto al lead e fai clic su **Elimina**. Il lead viene rimosso dall’elenco dei lead e da tutti i relativi elenchi associati.
+Per eliminare i lead esistenti nel MCM, seleziona la casella di controllo accanto al lead e fai clic su **Elimina**. Il lead viene rimosso dall&#39;elenco dei lead e da tutti gli elenchi associati.
 
 >[!NOTE]
 >
->Prima di procedere all’eliminazione, viene chiesto di confermare se si desidera eliminare il lead esistente. Una volta eliminato non sarà più possibile ripristinarlo.
+>Prima di eliminarlo, AEM conferma che desideri eliminare il lead esistente. Una volta eliminato, non è più possibile recuperarlo.
 
 ## Utilizzo degli elenchi {#working-with-lists}
 
 >[!NOTE]
 >
->Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione degli elenchi).
->Si consiglia di utilizzare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
+>L’Adobe non prevede di migliorare ulteriormente questa funzionalità (gestione degli elenchi).
+>Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
 
-Gli elenchi consentono di organizzare i lead in gruppi. Tramite gli elenchi è possibile indirizzare una campagna di marketing a un determinato gruppo di utenti. Ad esempio, è possibile inviare una newsletter a un particolare elenco. Gli elenchi sono visibili in MCM, nella dashboard o facendo clic su **Elenchi**. Entrambi presentano il nome dell’elenco e il numero di membri.
+Gli elenchi ti consentono di organizzare i lead in gruppi. Con gli elenchi, puoi indirizzare le tue campagne di marketing a un gruppo selezionato di persone, ad esempio puoi inviare una newsletter mirata a un elenco. Gli elenchi sono visibili in MCM, nel dashboard o facendo clic su **Elenchi**. Entrambi ti forniscono il nome dell’elenco e il numero di membri.
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-Facendo clic su **Elenchi** è possibile vedere se l’elenco stesso è membro di un altro elenco e ottenerne una descrizione.
+Se si fa clic su **Elenchi**, è inoltre possibile verificare se l&#39;elenco è un membro di un altro elenco e visualizzare una descrizione.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
@@ -319,11 +319,11 @@ Facendo clic su **Elenchi** è possibile vedere se l’elenco stesso è membro d
 
 Per creare un nuovo elenco (gruppo):
 
-1. Nel dashboard di MCM, fate clic su **Nuovo elenco...**; oppure, in **Elenchi** fate clic su **Nuovo...**. Viene aperta la finestra Crea elenco.
+1. Nel dashboard MCM, fai clic su **Nuovo elenco...** o in **Elenchi**, fai clic su **Nuovo** ... Viene visualizzata la finestra Crea elenco.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
 
-1. Inserisci un nome (obbligatorio) e una descrizione (facoltativa), quindi fai clic su **Salva**. L’elenco viene visualizzato nel riquadro **Elenchi**.
+1. Inserisci un nome (obbligatorio) e, se necessario, una descrizione e fai clic su **Salva**. L&#39;elenco viene visualizzato nel **Elenchi** riquadro.
 
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
@@ -331,9 +331,9 @@ Per creare un nuovo elenco (gruppo):
 
 Per modificare un elenco esistente:
 
-1. In MCM, fate clic su **Elenchi**.
+1. In MCM, fai clic su **Elenchi**.
 
-1. Selezionate la casella accanto all’elenco da modificare e fate clic su **Modifica**. viene aperta la finestra **Modifica elenco**.
+1. Dall&#39;elenco, selezionare la casella di controllo accanto all&#39;elenco che si desidera modificare e fare clic su **Modifica**. Il **Modifica elenco** viene visualizzata la finestra.
 
    ![screen_shot_2012-02-21at125452pm](assets/screen_shot_2012-02-21at125452pm.png)
 
@@ -341,64 +341,64 @@ Per modificare un elenco esistente:
    >
    >È possibile modificare un solo elenco alla volta.
 
-1. Apportate le modifiche necessarie e fate clic su **Salva** per salvarle.
+1. Apporta le modifiche necessarie e fai clic su **Salva** per salvare le modifiche.
 
 ### Eliminazione di elenchi esistenti {#deleting-existing-lists}
 
-Per eliminare gli elenchi esistenti, in MCM seleziona la casella accanto all’elenco e fai clic su **Elimina**. L’elenco viene rimosso. Non vengono rimossi i lead che appartenevano all’elenco, ma solo l’associazione con l’elenco.
+Per eliminare gli elenchi esistenti, in MCM selezionare la casella di controllo accanto all&#39;elenco e fare clic su **Elimina**. L’elenco viene rimosso. I lead che erano affiliati all’elenco non vengono rimossi, ma solo l’affiliazione con l’elenco viene eliminata.
 
 >[!NOTE]
 >
->Prima di procedere all’eliminazione, viene chiesto di confermare se si desidera eliminare l’elenco esistente. Una volta eliminato non sarà più possibile ripristinarlo.
+>Prima di eliminarli, AEM conferma che desideri eliminare gli elenchi esistenti. Una volta eliminato, non è più possibile recuperarlo.
 
 ### Unione di elenchi {#merging-lists}
 
-È possibile unire un elenco esistente a un altro elenco. Così facendo, l’elenco che viene unito diventa membro dell’altro elenco. Non viene eliminato e resta comunque disponibile come entità separata.
+È possibile unire un elenco esistente con un altro elenco. In questo caso, l&#39;elenco che si sta unendo diventa un membro dell&#39;altro elenco. Esiste ancora come entità separata e non deve essere eliminata.
 
-L’unione di elenchi è utile, ad esempio, se una stessa conferenza avrà luogo in due città diverse e si desidera ottenere un elenco unico per i partecipanti di entrambe le città.
+È possibile unire gli elenchi se si dispone della stessa conferenza in due posizioni diverse e si desidera unirli in un elenco dei partecipanti di tutte le conferenze.
 
-Per unire elenchi esistenti:
+Per unire gli elenchi esistenti:
 
-1. In MCM, fate clic su **Elenchi**.
+1. In MCM, fai clic su **Elenchi**.
 
-1. Selezionate l’elenco da unire a un altro elenco, selezionandone la casella.
+1. Selezionare l&#39;elenco con cui si desidera unire un altro elenco selezionando la casella di controllo accanto ad esso.
 
-1. Nel menu **Strumenti**, selezionate **Unisci elenco**.
+1. In **Strumenti** menu, seleziona **Unione elenco**.
 
    >[!NOTE]
    >
    >È possibile unire un solo elenco alla volta.
 
-1. Nella finestra **Unisci elenco**, selezionate l’elenco di destinazione e fate clic su **OK**.
+1. In **Unione elenco** selezionare l&#39;elenco con cui si desidera eseguire l&#39;unione e fare clic su **OK**.
 
    ![screen_shot_2012-02-21at10259pm](assets/screen_shot_2012-02-21at10259pm.png)
 
-   Il numero di membri dell’elenco di destinazione viene incrementato di uno. Per verificare che l’elenco è stato unito, selezionate l’elenco di destinazione e, nel menu **Strumenti**, selezionate **Mostra lead**.
+   L&#39;elenco unito deve essere aumentato di un membro. Per verificare che l’elenco sia stato unito, seleziona l’elenco unito e nel **Strumenti** menu, seleziona **Mostra lead**.
 
-1. Ripetete questo passaggio per tutti gli elenchi da unire.
+1. Ripetere il passaggio fino a unire tutti gli elenchi desiderati.
 
    ![screen_shot_2012-02-21at10538pm](assets/screen_shot_2012-02-21at10538pm.png)
 
 >[!NOTE]
 >
->Per rimuovere un elenco unito dal suo elenco di destinazione si esegue la stessa procedura richiesta per rimuovere un lead da un elenco. Apri la scheda **Elenchi**, seleziona l’elenco che comprende l’elenco unito e rimuovi l’iscrizione facendo clic sul cerchio rosso accanto all’elenco.
+>La rimozione di un elenco unito dalla sua appartenenza è identica alla rimozione di un lead da un elenco. Apri **Elenchi** , selezionare l&#39;elenco che include l&#39;elenco unito e rimuovere l&#39;appartenenza facendo clic sul cerchio rosso accanto all&#39;elenco.
 
 ### Visualizzazione dei lead negli elenchi {#viewing-leads-in-lists}
 
-In qualsiasi momento è possibile vedere quali lead appartengono a uno specifico elenco tramite navigazione o ricerca dei membri.
+In qualsiasi momento, è possibile visualizzare i lead che appartengono a un elenco specifico sfogliando o cercando i membri.
 
-Per vedere i lead che appartengono a un elenco:
+Per visualizzare i lead che appartengono a un elenco:
 
-1. In MCM, fate clic su **Elenchi**.
+1. In MCM, fai clic su **Elenchi**.
 
-1. Selezionate la casella accanto all’elenco di interesse.
+1. Selezionare la casella di controllo accanto all&#39;elenco per il quale si desidera visualizzare i membri.
 
-1. Nel menu **Strumenti**, seleziona **Mostra lead**. AEM visualizza i lead che fanno parte di tale elenco. È possibile sfogliare un elenco oppure ricercare i membri.
+1. In **Strumenti** menu, seleziona **Mostra lead**. In AEM vengono visualizzati i lead che sono membri di tale elenco. È possibile sfogliare l&#39;elenco o cercare membri.
 
    >[!NOTE]
    >
-   >Inoltre, è possibile eliminare i lead da un elenco selezionandoli e facendo clic su **Rimuovi appartenenza**.
+   >È inoltre possibile eliminare i lead da un elenco selezionandoli e facendo clic su **Rimuovi appartenenza**.
 
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
-1. Fai clic su **Chiudi** per tornare a MCM.
+1. Clic **Chiudi** per tornare a MCM.

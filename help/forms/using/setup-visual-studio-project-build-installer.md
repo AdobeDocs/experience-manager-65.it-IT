@@ -1,7 +1,7 @@
 ---
 title: Configurare il progetto Visual Studio e creare l'app Windows
 seo-title: Set up the Visual Studio project and build the Windows app
-description: Scopri come configurare un progetto Visual Studio per la creazione dell’app mobile AEM Forms Windows.
+description: Informazioni su come configurare un progetto Visual Studio per creare l'app per dispositivi mobili AEM Forms Windows.
 seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
 uuid: 9559e584-2a40-4740-a29a-d7ad66220224
 topic-tags: forms-app
@@ -17,95 +17,95 @@ ht-degree: 5%
 
 # Configurare il progetto Visual Studio e creare l&#39;app Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;applicazione Workspace personalizzata. archivio del codice sorgente, `adobe-lc-mobileworkspace-src-<version>.zip`fa parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione software.
+AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per creare un’applicazione Workspace personalizzata. L’archivio del codice sorgente, `adobe-lc-mobileworkspace-src-<version>.zip`fa parte di `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla Distribuzione di software.
 
-Per ottenere la sorgente dell’app AEM Forms, esegui i seguenti passaggi:
+Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
-   2. Seleziona la versione e digita il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Download di ricerca]** per filtrare i risultati.
-1. Toccare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accettare i termini dell&#39;EULA]**, e tocca **[!UICONTROL Scarica]**.
+   2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
+1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-1. Per scaricare l&#39;archivio del codice sorgente, apri `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.\
+1. Per scaricare l’archivio del codice sorgente, apri `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.\
    Il pacchetto sorgente viene scaricato sul dispositivo.
 
-L’immagine seguente visualizza il contenuto estratto del `adobe-lc-mobileworkspace-src-<version>.zip`.
+Nell&#39;immagine seguente viene visualizzato il contenuto estratto del `adobe-lc-mobileworkspace-src-<version>.zip`.
 
 ![mws-content-1](assets/mws-content-1.png)
 
-Nell&#39;immagine seguente viene visualizzata la struttura di directory del `windows` nella cartella `src` cartella.
+Nell&#39;immagine seguente viene visualizzata la struttura di directory del `windows` cartella in `src` cartella.
 
 ![win-dir](assets/win-dir.png)
 
-## Configurazione dell&#39;ambiente {#setting-up-the-environment}
+## Configurazione dell’ambiente {#setting-up-the-environment}
 
 Per i dispositivi Windows, è necessario:
 
 * Microsoft Windows 8.1 o Windows 10
 * Microsoft Visual Studio 2015
-* Strumenti di Microsoft Visual Studio per Apache Cordova
+* Strumenti Microsoft Visual Studio per Apache Cordova
 
 ## Configurazione del progetto Visual Studio per l&#39;app AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
 
-Esegui i seguenti passaggi per configurare il progetto dell’app AEM Forms in Visual Studio.
+Per configurare il progetto di app AEM Forms in Visual Studio, eseguire la procedura seguente.
 
-1. Copia il `adobe-lc-mobileworkspace-src-<version>.zip` archiviare `%HOMEPATH%\Projects` in Windows 8.1 o Windows 10 con Visual Studio 2015 installato e configurato.
-1. Estrai l’archivio nel `%HOMEPATH%\Projects\MobileWorkspace` directory.
-1. Passa a `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
-1. Apri `CordovaApp.sln` utilizzando Visual Studio 2015 e procedere alla creazione dell&#39;app AEM Forms.
+1. Copia il `adobe-lc-mobileworkspace-src-<version>.zip` archivia in `%HOMEPATH%\Projects` cartella nel dispositivo Windows 8.1 o Windows 10 con Visual Studio 2015 installato e configurato.
+1. Estrarre l’archivio in `%HOMEPATH%\Projects\MobileWorkspace` directory.
+1. Accedi a `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
+1. Apri `CordovaApp.sln` mediante Visual Studio 2015 e procedere alla creazione dell&#39;app AEM Forms.
 
 ## Creare un’app AEM Forms {#build-aem-forms-app}
 
-Esegui i seguenti passaggi per creare e distribuire l’app AEM Forms.
+Per generare e distribuire l’app AEM Forms, effettua le seguenti operazioni.
 
 >[!NOTE]
 >
->I dati memorizzati nel file system di Windows per l&#39;app AEM Forms non sono crittografati. È consigliabile utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
+>I dati memorizzati nel file system di Windows per l’app AEM Forms non sono crittografati. È consigliabile utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
 
-1. Nella barra degli strumenti di Visual Studio Standard, selezionare **Versione** dall’elenco a discesa per la modalità build.
+1. Nella barra degli strumenti di Visual Studio Standard selezionare **Versione** dall’elenco a discesa per la modalità di build.
 
-1. Selezionare Windows-AnyCPU, Windows-x64 o Windows-x86 in base alla piattaforma. Si consiglia Windows-AnyCPU.
-1. In Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto **CordovaApp.Windows** e seleziona **Store > Crea pacchetti app**.
+1. Seleziona Windows-AnyCPU, Windows-x64 o Windows-x86 in base alla tua piattaforma. Si consiglia Windows-AnyCPU.
+1. In Gestione soluzioni Visual Studio fare clic con il pulsante destro del mouse sul progetto **CordovaApp.Windows** e seleziona **Store > Crea pacchetti app**.
 
    ![createapppackages](assets/createapppackages.png)
 
-   Viene visualizzata la procedura guidata Crea pacchetti app .
+   Viene visualizzata la procedura guidata Crea pacchetti app.
 
-   Il file di installazione CordovaApp.Windows_3.0.2.0_anycpu.appx viene creato nella directory platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test .
+   Il file di installazione di CordovaApp.Windows_3.0.2.0_anycpu.appx viene creato nella directory platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test.
 
-   Se si verifica l&#39;errore `Retarget to windows 8.1 required`, fai clic con il pulsante destro del mouse sull&#39;errore e nel menu a comparsa seleziona **Esegui Il Retargeting A Windows 8.1**.
+   Se si verifica l&#39;errore `Retarget to windows 8.1 required`, fare clic con il pulsante destro del mouse sull&#39;errore e nel menu a comparsa selezionare **Retargeting a Windows 8.1**.
 
    ![soluzione di retargeting](assets/retarget-solution.png)
 
-1. Nella procedura guidata Crea pacchetti app , seleziona il meteo o non desideri caricare l’app in windows store e fai clic su **Successivo**.
+1. Nella procedura guidata Crea pacchetti app, seleziona meteo o meno per caricare l’app in Windows Store, quindi fai clic su **Successivo**.
 
    ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
-1. Apporta le modifiche necessarie ai parametri, ad esempio la versione e il percorso di output della build dell’app, a seconda delle esigenze.
+1. Apporta le modifiche necessarie nei parametri, ad esempio la versione e il percorso di output della build dell’app.
 
    ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
-1. Una volta creato il progetto, puoi installare l’app utilizzando:
+1. Dopo aver generato il progetto, puoi installare l’app utilizzando:
 
    * Windows PowerShell
    * Visual Studio
 
-   La `.appx` Il pacchetto richiede la corretta installazione dei seguenti elementi:
+   Il `.appx` Il pacchetto richiede i seguenti elementi per essere installato correttamente:
 
    1. Libreria WinJS
-   1. Assicurati che il pacchetto sia dotato di un certificato autofirmato o di un certificato pubblico con firma di un&#39;autorità affidabile, ad esempio VeriSign.
-   1. Licenza per sviluppatori
+   1. Verificare che il pacchetto sia dotato di un certificato autofirmato o di un certificato pubblico firmato da un&#39;autorità attendibile, ad esempio VeriSign.
+   1. Licenza sviluppatore
 
    La directory Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contiene i quattro componenti principali:
 
    1. `.appx` file
    1. Certificato (attualmente è un certificato autofirmato da Apache Cordova)
-   1. Cartella di dipendenza
-   1. File PowerShell (.ps1 extension)
+   1. Cartella dipendenze
+   1. File di PowerShell (estensione ps1)
 
 
 
@@ -115,41 +115,41 @@ Esistono due modi per installare l&#39;applicazione su un dispositivo Windows.
 
 ### Acquisendo la licenza per sviluppatori {#by-acquiring-the-developer-license}
 
-1. Fare clic con il pulsante destro del mouse sul file PowerShell ( `Add-AppDevPackage.ps1)`, e scegli **Esegui con PowerShell**.
+1. Fare clic con il pulsante destro del mouse sul file di PowerShell ( `Add-AppDevPackage.ps1)`e scegli **Esecuzione con PowerShell**.
 
-1. Il programma di installazione richiede di ottenere una licenza per sviluppatori. Utilizza le credenziali dell’account Microsoft per acquisire la licenza per sviluppatori.\
+1. Viene richiesto di ottenere una licenza per sviluppatori. Utilizza le credenziali dell’account Microsoft per acquisire la licenza di sviluppatore.\
    Questa licenza è valida per 30 giorni ed è possibile rinnovarla gratuitamente.
-1. Quando si acquisisce la licenza per sviluppatori, l&#39;installazione installa il certificato autofirmato sul sistema e l&#39;applicazione viene installata correttamente.
+1. Quando si acquisisce la licenza per sviluppatori, il certificato autofirmato viene installato nel sistema e l&#39;applicazione viene installata correttamente.
 
-### Utilizzando dispositivi di proprietà aziendale {#by-using-enterprise-owned-devices}
+### Utilizzando dispositivi di proprietà dell&#39;azienda {#by-using-enterprise-owned-devices}
 
-Per i dispositivi di proprietà dell’organizzazione che sono collegati al dominio dell’azienda, non è necessario acquisire una licenza per sviluppatori.
+Per i dispositivi di proprietà dell’azienda che fanno parte del dominio dell’azienda, l’acquisizione di una licenza per sviluppatori non è richiesta.
 
 I dispositivi di proprietà aziendale utilizzano le edizioni Professional ed Enterprise di Windows.
 
-Microsoft consiglia di installare un certificato pubblico rilasciato da un&#39;autorità attendibile, ad esempio VeriSign.
+Microsoft consiglia di installare un certificato pubblico emesso da un’autorità attendibile, ad esempio VeriSign.
 
 Per distribuire l’app:
 
-* Assicurati che il dispositivo sia unito al dominio dell&#39;organizzazione.
-* Abilita l&#39;impostazione dei criteri di gruppo.
+* Verificare che il dispositivo sia aggiunto al dominio dell&#39;organizzazione.
+* Abilitare l&#39;impostazione di Criteri di gruppo.
 
-**Per abilitare l&#39;impostazione dei criteri di gruppo:**
+**Per abilitare l&#39;impostazione di Criteri di gruppo:**
 
 1. Nel dispositivo, esegui `gpedit.msc`.
-1. Passa a **Configurazione computer > Modelli amministrativi > Componente Windows > Distribuzione pacchetti app**.
-1. Fai clic con il pulsante destro del mouse su **Consenti l&#39;installazione di tutte le app fidate**.
-1. Fai clic su **Modifica** e seleziona **Abilitato**.
+1. Accedi a **Configurazione computer > Modelli amministrativi > Componente Windows > Distribuzione pacchetto app**.
+1. Fare clic con il pulsante destro del mouse su **Consenti l&#39;installazione di tutte le app attendibili**.
+1. Clic **Modifica** e seleziona **Abilitato**.
 
 1. Fai clic su **OK**.
 
-Modificare lo script PowerShell generato da Visual Studio per impedirne l&#39;acquisizione della licenza per gli sviluppatori.
+Modificare lo script di PowerShell generato da Visual Studio per impedirgli di acquisire la licenza per sviluppatori.
 
-Nello script PowerShell, impostare la variabile: `$NeedDeveloperLicense = $false`.
+Nello script di PowerShell, impostare la variabile: `$NeedDeveloperLicense = $false`.
 
-Per i dispositivi non collegati al dominio, è necessaria la chiave di attivazione del prodotto per il caricamento laterale. È possibile acquistarlo da un rivenditore Windows.
+Per i dispositivi che non fanno parte di un dominio, è necessario il codice di attivazione del prodotto con caricamento laterale. Puoi acquistarlo da un rivenditore Windows.
 
-Per Windows 8.1 Home Edition non sono presenti criteri di gruppo, il caricamento laterale dell&#39;organizzazione non è consentito e non è possibile unirsi al dominio dell&#39;organizzazione. Distribuisci l’app su un dispositivo Windows 8.1 Home Edition utilizzando una licenza per sviluppatori.
+Per Windows 8.1 Home Edition non esistono criteri di gruppo, il caricamento laterale dell&#39;organizzazione non è consentito e non è possibile aggiungerlo al dominio enterprise. Distribuisci l’app su un dispositivo Windows 8.1 Home Edition con una licenza per sviluppatori.
 
 Per ulteriori informazioni, fai clic su [qui](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
@@ -158,7 +158,7 @@ Per ulteriori informazioni, fai clic su [qui](https://blogs.msdn.com/b/mvpawardp
 Per installare l&#39;app in Windows utilizzando Visual Studio:
 
 1. Connetti il dispositivo utilizzando il debugger remoto.\
-   Per ulteriori informazioni, consulta [Eseguire app Windows Store su un computer remoto](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
+   Per ulteriori informazioni, consulta [Eseguire applicazioni Windows Store in un computer remoto](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
 1. Con l&#39;app aperta in Visual Studio, scegliere Windows-x64, Windows-x86 o Windows-AnyCPU dall&#39;elenco Piattaforme soluzione e selezionare **Computer remoto**.
-1. L’app viene distribuita sul computer remoto.
+1. L&#39;app viene distribuita nel computer remoto.

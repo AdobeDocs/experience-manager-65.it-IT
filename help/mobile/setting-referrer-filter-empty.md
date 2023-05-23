@@ -1,7 +1,7 @@
 ---
-title: Impostazione del filtro di riferimento per consentire l'utilizzo vuoto
+title: Impostazione del filtro Referrer su Allow Empty
 seo-title: Setting Your Referrer Filter to Allow Empty
-description: Segui questa pagina per informazioni sul filtro referente. Per consentire ad AEM Mobile Application Viewer di visualizzare le app nell’istanza di authoring, è necessario impostare il filtro di riferimento HTML su "Consenti vuoto".
+description: Segui questa pagina per scoprire di più sul filtro Referrer. Per consentire al Visualizzatore applicazioni di AEM Mobile di visualizzare le app nell’istanza Autore, imposta il filtro del referente HTML su "Consenti vuoto".
 seo-description: Follow this page to learn about Referrer Filter. In order to allow the AEM Mobile Application Viewer to view apps on your Author instance, you'll need to set your HTML referrer filter to 'allow empty'.
 uuid: 4fb0f95c-ac8f-4a14-8c46-6616d9d4f380
 contentOwner: User
@@ -17,16 +17,16 @@ ht-degree: 3%
 
 ---
 
-# Impostazione del filtro di riferimento per consentire l&#39;utilizzo vuoto{#setting-your-referrer-filter-to-allow-empty}
+# Impostazione del filtro Referrer su Allow Empty{#setting-your-referrer-filter-to-allow-empty}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Per consentire ad AEM Mobile Application Viewer di visualizzare le app nell’istanza di authoring, è necessario impostare il filtro di riferimento HTML su &quot;Consenti vuoto&quot;.
+Per consentire al Visualizzatore applicazioni di AEM Mobile di visualizzare le app nell’istanza Autore, imposta il filtro del referente HTML su &quot;Consenti vuoto&quot;.
 
-Se non si intende utilizzare il Visualizzatore applicazioni per rivedere le applicazioni negli stati di sviluppo e di staging, non è necessario modificare l&#39;impostazione predefinita del filtro referente.
+Se non si intende utilizzare il Visualizzatore applicazioni per esaminare le applicazioni all&#39;interno degli stati di sviluppo e staging, non è necessario modificare l&#39;impostazione predefinita del filtro referente.
 
-Nell’istanza di authoring di AEM in esecuzione, passa a: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) e cerca &#39;Apache Sling Referrer Filter&#39;. Fai clic su per modificare il filtro del referente e seleziona la casella di controllo &quot;Consenti vuoto&quot; (vedi l&#39;immagine seguente). Quindi premi il pulsante salva e chiudi la pagina del browser.
+Nell’istanza di authoring in esecuzione dell’AEM, accedi a: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) e cerca &quot;Apache Sling Referrer Filter&quot;. Fai clic su per modificare il filtro del referente e seleziona la casella di controllo &quot;Consenti vuoto&quot; (vedi immagine seguente). Quindi premi il pulsante Salva e chiudi la pagina del browser.
 
-![Impostazioni filtro referente](assets/chlimage_1-106.png)
+![Impostazioni filtro referrer](assets/chlimage_1-106.png)

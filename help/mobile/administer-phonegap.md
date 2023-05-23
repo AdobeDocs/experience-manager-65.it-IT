@@ -21,32 +21,32 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Un ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, tramite la creazione di una nuova app tramite la procedura guidata di creazione o l’importazione di un’applicazione esistente. Amministratori AEM che creano una nuova app utilizzando AEM Mobile *creazione guidata* in genere seleziona uno dei modelli di app desiderati dai nostri esempi di riferimento predefiniti o (nella maggior parte dei casi) un modello di app personalizzato creato da *Sviluppatori AEM.*
+Un ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, sia tramite la creazione guidata di una nuova app, sia tramite l’importazione di un’applicazione esistente. Amministratori AEM che creano una nuova app utilizzando AEM Mobile *creazione guidata* in genere, seleziona uno dei modelli di app desiderati dai nostri esempi di riferimento predefiniti o (nella maggior parte dei casi) da un modello di app personalizzato creato da *Sviluppatori AEM.*
 
-Una volta creata l’app mobile utilizzando HTML5 e PhoneGap, è possibile gestirla all’interno del Centro comandi. Naturalmente è anche possibile gestire il contenuto di HTML5 per un’app nativa nel Centro comandi, utilizzando le visualizzazioni web Cordova (per consentire ai plug-in PhoneGap di accedere alle funzioni native).
+Dopo aver creato l’app mobile utilizzando HTML5 e PhoneGap, puoi gestirla all’interno del Centro comandi. Naturalmente puoi anche gestire il contenuto HTML5 per un’app nativa nel centro comandi, utilizzando le visualizzazioni web di Cordova (per consentire ai plug-in PhoneGap di accedere alle funzioni native).
 
-Il Centro per il controllo app AEM consente di creare e distribuire l&#39;applicazione mobile, creare e modificare i metadati dell&#39;applicazione prima di pubblicare l&#39;applicazione mobile, curare in collaborazione e pubblicare frequentemente contenuti freschi e pertinenti senza dover rivedere i processi di invio dell&#39;archivio applicazioni e analizzare il ciclo di vita dell&#39;applicazione e le metriche di utilizzo per migliorare la conversione dei clienti e la brand loyalty.
+Il Centro di controllo delle app AEM ti consente di creare e distribuire l’app mobile, creare e modificare i metadati dell’applicazione prima di pubblicarla, curare in collaborazione e pubblicare frequentemente contenuti nuovi e pertinenti senza dover rivedere i processi di invio dell’archivio applicazioni e analizzare il ciclo di vita e le metriche di utilizzo dell’applicazione per migliorare la conversione dei clienti e la brand loyalty.
 
-Per creare l&#39;applicazione AEM Mobile, vedi [Creazione di applicazioni mobili](/help/mobile/building-app-mobile-phonegap.md) , nella sezione Sviluppatori .
+Per creare la tua applicazione AEM Mobile, consulta [Creazione di applicazioni mobili](/help/mobile/building-app-mobile-phonegap.md) , nella sezione Sviluppatori.
 
 Per configurare l&#39;ambiente e iniziare a utilizzare Control Center,
 
-1. [Configurazione di utenti e gruppi](/help/mobile/configure-users-groups.md)
-1. [Imposta il filtro di riferimento per consentire lo spazio vuoto](/help/mobile/setting-referrer-filter-empty.md)
+1. [Configurare utenti e gruppi](/help/mobile/configure-users-groups.md)
+1. [Imposta il filtro referente per consentire l’utilizzo di vuoto](/help/mobile/setting-referrer-filter-empty.md)
 1. [Configurare il Cloud Service Adobe PhoneGap Build](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Configurare il servizio Adobe Analytics Cloud](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
-Per informazioni sui servizi di contenuti Content Services, consulta [Amministrazione dei servizi di contenuti](/help/mobile/developing-content-services.md).
+Per informazioni sui servizi per contenuti Content Services, consulta [Amministrazione di Content Services](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->La *Verifica AEM* è un modo rapido e semplice per eseguire le tue applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android. La *Verifica AEM* è un’app mobile sul tuo dispositivo e ti connetti al server che esegue quickstart per ottenere un elenco di app da visualizzare. Fai clic su [qui](/help/mobile/phonegap-mobile-quickstart.md) per visualizzare i dettagli.
+>Il *Verifica AEM* è un modo rapido e semplice per eseguire le applicazioni mobili AEM su qualsiasi dispositivo mobile iOS o Android. Il *Verifica AEM* è un’app mobile, sul tuo dispositivo e collegala al server che esegue l’avvio rapido per ottenere un elenco di app da visualizzare. Clic [qui](/help/mobile/phonegap-mobile-quickstart.md) per visualizzare i dettagli.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Per scoprire i ruoli e le responsabilità di un autore e uno sviluppatore, consulta le risorse seguenti:
+Per informazioni sui ruoli e sulle responsabilità di un autore e di uno sviluppatore, consulta le risorse seguenti:
 
 * [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
-* [Authoring per Adobe PhoneGap Enterprise in AEM](/help/mobile/phonegap.md)
+* [Authoring per Adobe PhoneGap Enterprise nell’AEM](/help/mobile/phonegap.md)

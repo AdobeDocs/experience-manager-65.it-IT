@@ -1,5 +1,5 @@
 ---
-title: FFmpeg per Communities
+title: FFmpeg per community
 seo-title: FFmpeg for Communities
 description: Come installare e configurare FFmpeg per Communities
 seo-description: How to install and configure FFmpeg for Communities
@@ -18,51 +18,51 @@ ht-degree: 1%
 
 ---
 
-# FFmpeg per Communities {#ffmpeg-for-communities}
+# FFmpeg per community {#ffmpeg-for-communities}
 
 ## Panoramica {#overview}
 
-FFmpeg è una soluzione per la conversione e lo streaming audio e video e, quando installato, viene utilizzato per la corretta transcodifica di [risorse video](../../help/sites-authoring/default-components-foundation.md#video).
+FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installata, viene utilizzata per la corretta trascodifica di [risorse video](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Installazione di FFmpeg {#installing-ffmpeg}
 
-FFmpeg deve essere installato sui server che ospitano il AEM *autore* istanze.
+FFmpeg deve essere installato sui server che ospitano l’AEM *autore* istanze.
 
 1. Vai a [https://www.ffmpeg.org](https://www.ffmpeg.org/).
-1. Scarica la versione più recente di FFmpeg per il tuo ambiente specifico (Macintosh, Windows o Linux).
+1. Scarica la versione più recente di FFmpeg per l’ambiente specifico (Macintosh, Windows o Linux).
 
-   * È importante mantenere aggiornato FFmpeg a causa di vulnerabilità di sicurezza nelle versioni precedenti.
+   * È importante mantenere FFmpeg aggiornato a causa di vulnerabilità di sicurezza nelle versioni precedenti.
 
-1. Installa FFmpeg seguendo le istruzioni per il sistema operativo.
+1. Installare FFmpeg seguendo le istruzioni per il sistema operativo.
 
-1. Assicurati che l&#39;eseguibile FFmpeg sia impostato nel percorso del sistema.
+1. Verificare che l&#39;eseguibile FFmpeg sia impostato nel percorso di sistema.
 
    Dovresti essere in grado di eseguire FFmpeg da qualsiasi directory del sistema.
 
    * Esempio: `ffmpeg -version`.
 
-## Configurare il servizio di transcodifica FFmpeg {#configure-ffmpeg-transcoding-service}
+## Configura servizio di trascodifica FFmpeg {#configure-ffmpeg-transcoding-service}
 
-Per impostazione predefinita, quando FFmpeg è installato, vengono configurate più rappresentazioni (transcodings) in base al [!UICONTROL Risorsa di aggiornamento DAM] definizione del flusso di lavoro.
+Per impostazione predefinita, quando è installato FFmpeg, vengono configurate (transcodifiche) più rappresentazioni in base a [!UICONTROL Aggiorna risorsa DAM] definizione del flusso di lavoro.
 
-Poiché le transcodings sono ad alta intensità di CPU, si consiglia di modificare l’elenco delle rappresentazioni di destinazione. Nella maggior parte dei casi, la transcodifica non è necessaria.
+Poiché le trascodifiche richiedono un uso intensivo della CPU, si consiglia di modificare l’elenco delle rappresentazioni di destinazione. Nella maggior parte dei casi, la transcodifica non è necessaria.
 
-Per modificare il [!UICONTROL Risorsa di aggiornamento DAM] e in questo esempio per disattivare la transcodifica:
+Per modificare [!UICONTROL Aggiorna risorsa DAM] e, in questo esempio, per disattivare la transcodifica:
 
-* Accedi all’istanza di authoring con privilegi amministrativi.
-* Dalla navigazione globale, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-* Individua **[!UICONTROL Risorsa di aggiornamento DAM]**.
+* Accedi all’istanza di authoring con privilegi di amministratore.
+* Dalla navigazione globale, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+* Individua **[!UICONTROL Aggiorna risorsa DAM]**.
 * Fai doppio clic per aprire il flusso di lavoro per la modifica nell’interfaccia classica.
 
    Posizione risultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Fai doppio clic sul pulsante **[!UICONTROL Transcodifica FFmpeg]** per accedere alla finestra di dialogo Proprietà passaggio .
-* Sotto la **[!UICONTROL Processo]** scheda:
+* Fai doppio clic su **[!UICONTROL Transcodifica FFmpeg]** per accedere alla finestra di dialogo Proprietà passaggio.
+* Sotto **[!UICONTROL Processo]** scheda:
 
-   * **[!UICONTROL Arruoli]**: Cancella tutte le voci per disabilitare la transcodifica Valori predefiniti: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Argomenti]**: cancella tutte le voci per disabilitare la transcodifica. Valori predefiniti: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
-* Seleziona **[!UICONTROL OK]** per chiudere `Step Properties` finestra di dialogo.
+* Seleziona **[!UICONTROL OK]** per chiudere `Step Properties` .
 
-* Seleziona **[!UICONTROL Salva]** per salvare `DAM Update Asset` workflow.
+* Seleziona **[!UICONTROL Salva]** per salvare `DAM Update Asset` flusso di lavoro.

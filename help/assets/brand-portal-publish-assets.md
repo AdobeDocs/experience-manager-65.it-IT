@@ -28,7 +28,7 @@ ht-degree: 46%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-In qualità di amministratore di Adobe Experience Manager (AEM) Assets, puoi pubblicare risorse e cartelle nell’istanza AEM Assets Brand Portal (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Devi però prima configurare AEM Assets con Brand Portal. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+In qualità di amministratore di Adobe Experience Manager (AEM) Assets, puoi pubblicare risorse e cartelle nell’istanza di AEM Assets Brand Portal (o pianificare il flusso di lavoro di pubblicazione in una data/ora successiva) per la tua organizzazione. Devi però prima configurare AEM Assets con Brand Portal. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Una volta completata la replica, puoi pubblicare risorse, cartelle e raccolte in Brand Portal. Per pubblicare le risorse in Brand Portal, effettua le seguenti operazioni:
 
@@ -36,9 +36,9 @@ Una volta completata la replica, puoi pubblicare risorse, cartelle e raccolte in
 >
 >Adobe consiglia di scaglionare la pubblicazione, eseguendola preferibilmente nelle ore non di picco, in modo che AEM Author non utilizzi troppe risorse.
 
-1. Dalla console Risorse, seleziona le risorse o la cartella da pubblicare e fai clic su **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
+1. Dalla console Assets, seleziona le risorse o la cartella da pubblicare e fai clic su **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
 
-   In alternativa, seleziona le risorse da pubblicare in Brand Portal.
+   In alternativa, seleziona le risorse da pubblicare su Brand Portal.
 
    ![publish2bp-2](assets/publish2bp.png)
 
@@ -50,13 +50,13 @@ Una volta completata la replica, puoi pubblicare risorse, cartelle e raccolte in
 
 Per pubblicare le risorse selezionate su Brand Portal, effettua una delle seguenti operazioni:
 
-* Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Dal menu , seleziona **[!UICONTROL Pubblicare su Brand Portal]**.
+* Dalla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**. Quindi dal menu, seleziona **[!UICONTROL Pubblica su Brand Portal]**.
 
 * Dalla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**.
 
-   1. Poi dal **[!UICONTROL Azione]** select **[!UICONTROL Pubblicare su Brand Portal]** e da **[!UICONTROL Pianificazione]** select **[!UICONTROL Ora]**. Fai clic su **[!UICONTROL Avanti]**.
+   1. Quindi dal **[!UICONTROL Azione]** seleziona **[!UICONTROL Pubblica su Brand Portal]**, e da **[!UICONTROL Pianificazione]** seleziona **[!UICONTROL Ora]**. Fai clic su **[!UICONTROL Avanti]**.
 
-   2. Within **[!UICONTROL Ambito]**, conferma la selezione e fai clic su **[!UICONTROL Pubblicare su Brand Portal]**.
+   2. Entro **[!UICONTROL Ambito]**, conferma la selezione e fai clic su **[!UICONTROL Pubblica su Brand Portal]**.
 
 Viene visualizzato un messaggio per informare che le risorse sono state accodate per la pubblicazione su Brand Portal. Per visualizzare le risorse pubblicate, accedi all’interfaccia di Brand Portal.
 
@@ -66,7 +66,7 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 
 1. Dopo aver selezionato le risorse o le cartelle da pubblicare, seleziona **[!UICONTROL Gestisci pubblicazione]** dalla barra degli strumenti nella parte superiore.
 
-1. On **[!UICONTROL Gestisci pubblicazione]** pagina, seleziona **[!UICONTROL Pubblicare su Brand Portal]** da **[!UICONTROL Azione]** e seleziona **[!UICONTROL Più tardi]** da **[!UICONTROL Pianificazione]**.
+1. On **[!UICONTROL Gestisci pubblicazione]** pagina, seleziona **[!UICONTROL Pubblica su Brand Portal]** da **[!UICONTROL Azione]** e seleziona **[!UICONTROL Più tardi]** da **[!UICONTROL Pianificazione]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
@@ -78,6 +78,6 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Ora accedi a Brand Portal per verificare se le risorse pubblicate sono disponibili nell’interfaccia Brand Portal.
+Ora accedi a Brand Portal per verificare se le risorse pubblicate sono disponibili sull’interfaccia di Brand Portal.
 
 ![bp_landingpage](assets/bp_landingpage.png)

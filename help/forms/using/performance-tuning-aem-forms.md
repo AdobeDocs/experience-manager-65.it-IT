@@ -1,7 +1,7 @@
 ---
 title: Ottimizzazione delle prestazioni del server AEM Forms
 seo-title: Performance tuning of AEM Forms server
-description: Affinché AEM Forms funzioni in modo ottimale, puoi regolare con precisione le impostazioni della cache e i parametri JVM. Inoltre, l’utilizzo di un server web può migliorare le prestazioni della distribuzione AEM Forms.
+description: Affinché AEM Forms possa funzionare in modo ottimale, puoi ottimizzare le impostazioni della cache e i parametri JVM. Inoltre, l’utilizzo di un server web può migliorare le prestazioni dell’implementazione di AEM Forms.
 seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
 content-type: reference
@@ -20,36 +20,36 @@ ht-degree: 1%
 
 # Ottimizzazione delle prestazioni del server AEM Forms{#performance-tuning-of-aem-forms-server}
 
-Questo articolo illustra le strategie e le best practice che puoi implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni della distribuzione AEM Forms.
+Questo articolo illustra strategie e best practice da implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni dell’implementazione di AEM Forms.
 
 ## Impostazioni cache {#cache-settings}
 
-Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando la **Configurazioni Forms per dispositivi mobili** componente nella console di configurazione AEM Web in:
+Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando **Configurazioni Forms per dispositivi mobili** Componente nella console Configurazione Web AEM all&#39;indirizzo:
 
 * (AEM Forms su OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms su JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
-Le opzioni disponibili per la memorizzazione in cache sono le seguenti:
+Le opzioni disponibili per il caching sono le seguenti:
 
-* **Nessuno**: Impone di non memorizzare in cache alcun artefatto. In pratica, ciò rallenta le prestazioni e richiede un&#39;elevata disponibilità di memoria a causa dell&#39;assenza di cache.
-* **conservatore**: Consente di memorizzare nella cache solo gli artefatti intermedi generati prima del rendering del modulo, ad esempio un modello contenente frammenti e immagini in linea.
-* **Aggressivo**: Impone di memorizzare in cache quasi tutto ciò che può essere memorizzato in cache, incluso il contenuto HTML di cui è stato eseguito il rendering oltre a tutti gli artefatti dal livello di memorizzazione in cache conservativa. Consente di ottenere le migliori prestazioni, ma consuma anche più memoria per memorizzare gli artefatti memorizzati nella cache. La strategia di caching aggressiva consente di ottenere prestazioni a tempo costante nel rendering di un modulo mentre il contenuto di cui è stato eseguito il rendering viene memorizzato nella cache.
+* **Nessuno**: impone di non memorizzare in cache alcun artefatto. In pratica, questo rallenterà le prestazioni e richiederà un’elevata disponibilità di memoria a causa dell’assenza di cache.
+* **Conservatore**: determina la cache solo degli artefatti intermedi generati prima del rendering del modulo, ad esempio un modello contenente frammenti e immagini in linea.
+* **Aggressivo**: impone di memorizzare in cache quasi tutto ciò che può essere memorizzato in cache, incluso il contenuto HTML sottoposto a rendering, oltre a tutti gli artefatti del livello di memorizzazione in cache conservativa. Offre le migliori prestazioni ma consuma anche più memoria per l’archiviazione degli artefatti memorizzati nella cache. Una strategia di caching aggressiva consente di ottenere prestazioni di tempo costanti nel rendering di un modulo quando il contenuto sottoposto a rendering viene memorizzato nella cache.
 
-Le impostazioni di cache predefinite per AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
+Le impostazioni predefinite della cache per AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
 
-* **Strategia cache**: Aggressivo
-* **Dimensione cache** (in termini di numero di moduli): Come richiesto
-* **Dimensione massima dell&#39;oggetto**: Come richiesto
+* **Strategia cache**: aggressivo
+* **Dimensione cache** (in termini di numero di moduli): come richiesto
+* **Dimensione massima oggetto**: secondo necessità
 
 ![Configurazioni Forms per dispositivi mobili](assets/snap.png)
 
 >[!NOTE]
 >
->Se utilizzi AEM Dispatcher per memorizzare nella cache i moduli adattivi, questo memorizza anche nella cache i moduli adattivi che contengono moduli con dati precompilati. Se tali moduli vengono serviti dalla cache AEM Dispatcher, potrebbe portare a fornire agli utenti dati precompilati o non aggiornati. Utilizza quindi AEM Dispatcher per memorizzare nella cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache del dispatcher non annulla automaticamente la validità dei frammenti memorizzati nella cache. Pertanto, non utilizzarlo per memorizzare nella cache i frammenti di modulo. Per tali moduli e frammenti, utilizzare [Cache dei moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
+>Se utilizzi Dispatcher AEM per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono forniti dalla cache di Dispatcher AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza il Dispatcher dell’AEM per memorizzare in cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, la cache di un dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per tali moduli e frammenti, utilizza [Cache dei moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parametri JVM {#jvm-parameters}
 
-Per ottenere prestazioni ottimali, si consiglia di utilizzare la seguente JVM `init` argomenti per configurare i `Java heap` e `PermGen`.
+Per prestazioni ottimali, si consiglia di utilizzare la seguente JVM `init` argomenti per configurare `Java heap` e `PermGen`.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -60,29 +60,29 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Le impostazioni consigliate sono per Windows 2008 R2 8 Core e Oracle HotSpot 1.7 (64-bit) JDK e devono essere potenziate o ridotte in base alla configurazione del sistema.
+>Le impostazioni consigliate sono per Windows 2008 R2 8 Core e Oracle HotSpot 1.7 (64 bit) JDK e devono essere scalate verso l&#39;alto o verso il basso in base alla configurazione del sistema.
 
 ## Utilizzo di un server web {#using-a-web-server}
 
-Il rendering dei moduli adattivi e dei moduli di HTML5 in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento dei dati, l’approccio consigliato consiste nel comprimere la risposta di HTML utilizzando il server web da cui viene distribuita la richiesta. Questo approccio riduce le dimensioni di risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e computer client.
+I moduli adattivi e i moduli HTML5 vengono riprodotti in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento di dati, l’approccio consigliato consiste nel comprimere la risposta del HTML utilizzando il server web da cui viene trasmessa la richiesta. Questo approccio riduce le dimensioni della risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e client.
 
-Ad esempio, esegui i seguenti passaggi per abilitare la compressione su Apache Web Server 2.0 a 32 bit con JBoss:
+Ad esempio, per abilitare la compressione sul server web Apache 2.0 a 32 bit con JBoss, effettua le seguenti operazioni:
 
 >[!NOTE]
 >
->Le istruzioni seguenti non si applicano ad alcun server diverso da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici per qualsiasi altro server, consulta la documentazione di prodotto corrispondente.
+>Le istruzioni seguenti non sono valide per i server diversi da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici di qualsiasi altro server, consulta la relativa documentazione di prodotto.
 
-I passaggi seguenti mostrano le modifiche necessarie per abilitare la compressione con Apache Web Server
+La procedura seguente illustra le modifiche necessarie per abilitare la compressione con il server web Apache
 
-**Ottieni il software del server web Apache applicabile al tuo sistema operativo**
+**Ottenere il software del server web Apache applicabile al sistema operativo**
 
-* Windows: scarica il server web Apache dal sito Apache HTTP Server Project.
-* Solaris a 64 bit: scaricare il server web Apache dal sito web Sunfreeware for Solaris.
-* Linux: il server web Apache viene preinstallato su un sistema Linux.
+* Windows: scarica il server web Apache dal sito del progetto Apache HTTP Server.
+* Solaris a 64 bit: scarica il server web Apache dal sito web Sunfreeware for Solaris.
+* Linux: il server web Apache è preinstallato su un sistema Linux.
 
-Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono per l’ottimizzazione tramite HTTP.
+Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono ottimizzate tramite HTTP.
 
-1. Rimuovi il commento alle seguenti configurazioni del modulo in `APACHE_HOME/conf/httpd.conf` file.
+1. Rimuovi commento dalle seguenti configurazioni di modulo in `APACHE_HOME/conf/httpd.conf` file.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -102,7 +102,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Abilita compressione. Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di configurazione.
+1. Abilita Compressione. Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di configurazione.
 
    **Per moduli HTML5**
 
@@ -121,7 +121,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    </Location>
    ```
 
-   **Per i moduli adattivi**
+   **Per moduli adattivi**
 
    ```xml
    <Location /content/forms/af>
@@ -138,40 +138,40 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    </Location>
    ```
 
-   Per accedere al server crx, utilizza `https://'server':80`, dove `server` è il nome del server su cui è in esecuzione il server Apache.
+   Per accedere al server crx, utilizza `https://'server':80`, dove `server` è il nome del server in cui è in esecuzione il server Apache.
 
-## Utilizzo di un antivirus sul server che esegue AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
+## Utilizzo di un antivirus su un server che esegue AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
-È possibile riscontrare prestazioni lente sui server che eseguono un software antivirus. Un software sempre su antivirus (on-access scansione) scansiona tutti i file di un sistema. Può rallentare il server e le prestazioni di AEM Forms sono interessate.
+È possibile riscontrare un rallentamento delle prestazioni sui server che eseguono un software antivirus. Un software antivirus sempre attivo (scansione all&#39;accesso) esegue la scansione di tutti i file di un sistema. Può rallentare il server e influire sulle prestazioni dell’AEM Forms.
 
-Per migliorare le prestazioni, è possibile indirizzare il software antivirus per escludere i seguenti file e cartelle AEM Forms dalla scansione sempre attiva (all&#39;accesso):
+Per migliorare le prestazioni, è possibile indirizzare il software antivirus per escludere i seguenti file e cartelle di AEM Forms dalla scansione sempre attiva (all&#39;accesso):
 
-* Directory di installazione AEM. Se non è possibile escludere la directory completa, escludi quanto segue:
+* Directory di installazione AEM. Se non è possibile escludere la directory completa, escludere quanto segue:
 
    * [Directory di installazione AEM]\crx-repository\temp
    * [Directory di installazione AEM]\crx-repository\repository
    * [Directory di installazione AEM]\crx-repository\launchpad
 
-* Directory temporanea del server applicazioni. Il percorso predefinito è:
+* Directory temporanea del server applicazioni. La posizione predefinita è:
 
    * (Jboss) [Directory di installazione AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (Websphere) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(AEM Forms solo su JEE)** Directory GDS (Global Document Storage). Il percorso predefinito è:
+* **(AEM Forms solo su JEE)** Directory Global Document Storage (GDS). La posizione predefinita è:
 
-   * (JBoss) [root appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss) [directory principale del server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [root appserver]/installApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere) [directory principale del server applicazioni]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(AEM Forms solo su JEE)** Registri del server AEM Forms e directory temporanea. Il percorso predefinito è:
+* **(AEM Forms solo su JEE)** Registri del server AEM Forms e directory temporanea. La posizione predefinita è:
 
-   * Registri server - [Directory di installazione di AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
+   * Registri del server - [Directory di installazione di AEM Forms]\Adobe\moduli AEM\[app-server]\server\all\logs
    * Directory temporanea - [Directory di installazione di AEM Forms]\temp
 
 >[!NOTE]
 >
->* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni del sistema di base > Configurazioni di base** per confermare la posizione in uso.
-* Se il server AEM Forms esegue lentamente anche dopo aver escluso le directory suggerite, escludere anche il file eseguibile Java (java.exe).
+>* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
+* Se le prestazioni del server AEM Forms sono lente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java (java.exe).
 >
 

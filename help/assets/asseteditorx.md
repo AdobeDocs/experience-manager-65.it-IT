@@ -1,6 +1,6 @@
 ---
 title: Estendi editor risorse
-description: Scopri come estendere le funzionalità di Asset Editor utilizzando componenti personalizzati.
+description: Scopri come estendere le funzionalità dell’Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools
@@ -14,68 +14,68 @@ ht-degree: 13%
 
 # Estendi editor risorse {#extending-asset-editor}
 
-L’Editor risorse è la pagina che si apre quando si fa clic su una risorsa reperibile tramite Condivisione risorse per consentire all’utente di modificare tali aspetti della risorsa quali metadati, miniature, titoli e tag.
+L’Editor risorse è la pagina che si apre quando si fa clic su una risorsa trovata tramite Condivisione risorse, consentendo all’utente di modificare aspetti della risorsa come metadati, miniature, titolo e tag.
 
-La configurazione dell’editor che utilizza i componenti di modifica predefiniti è descritta in [Creazione e configurazione di una pagina dell’Editor risorse](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+La configurazione dell’editor utilizzando i componenti di modifica predefiniti è descritta in [Creazione e configurazione di una pagina Editor risorse](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Oltre a utilizzare componenti dell’editor preesistenti, [!DNL Adobe Experience Manager] gli sviluppatori possono anche creare i propri componenti.
+Oltre a utilizzare componenti editor preesistenti, [!DNL Adobe Experience Manager] gli sviluppatori possono anche creare i propri componenti.
 
-## Creare un modello di Asset Editor {#creating-an-asset-editor-template}
+## Creare un modello di Editor risorse {#creating-an-asset-editor-template}
 
 Le pagine di esempio seguenti sono incluse in Geometrixx:
 
-* Pagina di esempio di Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
+* Pagina di esempio Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
 * Modello di esempio: `/apps/geometrixx/templates/asseteditor`
 * Componente pagina di esempio: `/apps/geometrixx/components/asseteditor`
 
 ### Configurare Clientlib {#configuring-clientlib}
 
-[!DNL Assets] i componenti utilizzano un’estensione della clientlib di modifica WCM. Le clientlibs di solito sono caricate in `init.jsp`.
+[!DNL Assets] I componenti utilizzano un’estensione della libreria client di modifica WCM. Le clientlibs vengono generalmente caricate in `init.jsp`.
 
-Confrontato con il caricamento clientlib predefinito (nei’ `init.jsp`), [!DNL Assets] Il modello deve avere i seguenti elementi:
+Rispetto al caricamento clientlib predefinito (in core `init.jsp`), un [!DNL Assets] il modello deve presentare le seguenti caratteristiche:
 
 * Il modello deve includere `cq.dam.edit` clientlib (anziché `cq.wcm.edit`).
 
 * Per poter eseguire il rendering di predicati, azioni e obiettivi, clientlib deve essere incluso anche in modalità WCM disabilitata (ad esempio, caricata **al momento della pubblicazione**).
 
-Nella maggior parte dei casi, copia il campione esistente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) dovrebbe soddisfare queste esigenze.
+Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) deve soddisfare queste esigenze.
 
-### Configurare le azioni JS {#configuring-js-actions}
+### Configurare azioni JS {#configuring-js-actions}
 
-Alcuni dei [!DNL Assets] i componenti richiedono funzioni JS definite in `component.js`. Copia questo file nella directory dei componenti e collegalo.
+Alcune delle [!DNL Assets] I componenti richiedono le funzioni JS definite in `component.js`. Copia il file nella directory dei componenti e collegalo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-L&#39;esempio carica questa origine JavaScript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+L’esempio carica questa origine JavaScript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Fogli di stile aggiuntivi {#additional-style-sheets}
 
-Alcuni dei [!DNL Assets] i componenti utilizzano la libreria widget. Per eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente di azione tag ne richiede un altro.
+Alcune delle [!DNL Assets] i componenti utilizzano la libreria widget. Per eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente Azione tag ne richiede un altro.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Foglio di stile di Geometrixx {#geometrixx-style-sheet}
+### Foglio di stile Geometrixx {#geometrixx-style-sheet}
 
-I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Procedure consigliate: Copia tutto `.asseteditor` seleziona il foglio di stile e regola le regole nel modo desiderato.
+I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Best practice: copia tutto `.asseteditor` selettori nel foglio di stile e regola le regole come desiderato.
 
-### Selettore modulo: Adeguamenti per le risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser: regolazioni per le risorse caricate {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Editor risorse utilizza il Selettore moduli, che consente di modificare le risorse, in questo caso le risorse, nella stessa pagina del modulo semplicemente aggiungendo un selettore di moduli e il percorso del modulo all’URL della risorsa.
 
-Esempio:
+Ad esempio:
 
 * Pagina modulo normale: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * Risorsa caricata nella pagina del modulo: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) effettua le seguenti operazioni:
+Gli handle di esempio in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) effettuare le seguenti operazioni:
 
 * Rilevano se una risorsa è caricata o se è necessario visualizzare il modulo normale.
-* Se una risorsa viene caricata, disabilitano la modalità WCM in quanto parsys può essere modificato solo in una pagina di modulo normale.
-* Se una risorsa viene caricata, utilizza il suo titolo invece di quello nella pagina del modulo.
+* Se viene caricata una risorsa, viene disabilitata la modalità WCM, in quanto è possibile modificare i dati parsys solo su una pagina modulo normale.
+* Se viene caricata una risorsa, ne viene utilizzato il titolo invece di quello presente nella pagina del modulo.
 
 ```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
@@ -115,7 +115,7 @@ Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor
     }
 ```
 
-Nella parte HTML, utilizza il set di titoli precedente (risorsa o titolo della pagina):
+Nella parte HTML, utilizza il set di titoli precedente (titolo della risorsa o della pagina):
 
 ```html
 <title><%= title %></title>
@@ -123,10 +123,10 @@ Nella parte HTML, utilizza il set di titoli precedente (risorsa o titolo della p
 
 ## Creare un componente campo modulo semplice {#creating-a-simple-form-field-component}
 
-Questo esempio descrive come creare un componente che mostri e visualizzi i metadati di una risorsa caricata.
+Questo esempio descrive come creare un componente che mostra e visualizza i metadati di una risorsa caricata.
 
-1. Crea una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/samplemeta`.
-1. Aggiungi `content.xml` con lo snippet seguente:
+1. Crea una cartella di componenti nella directory dei progetti, ad esempio: `/apps/geometrixx/components/samplemeta`.
+1. Aggiungi `content.xml` con il seguente frammento:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -138,7 +138,7 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
        componentGroup="Asset Editor"/>
    ```
 
-1. Aggiungi `samplemeta.jsp` con lo snippet seguente:
+1. Aggiungi `samplemeta.jsp` con il seguente frammento:
 
    ```javascript
    <%--
@@ -198,19 +198,19 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
 
 1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Lite aggiungi un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
 
-1. Passa al browser e alla pagina di esempio (ad esempio, `asseteditor.html`) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo.
+1. Passa al browser e nella pagina di esempio (ad esempio, `asseteditor.html`) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo.
 
 1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
 
-## Modifica delle opzioni dei metadati {#modifying-metadata-options}
+## Modifica opzioni metadati {#modifying-metadata-options}
 
-Puoi modificare i namespace disponibili nella [modulo metadati](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+È possibile modificare gli spazi dei nomi disponibili nella [modulo metadati](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
 I metadati attualmente disponibili sono definiti in `/libs/dam/options/metadata`:
 
-* Il primo livello all’interno di questa directory contiene i namespace.
-* Gli elementi all’interno di ogni spazio dei nomi rappresentano metadati, ad esempio un elemento locale parte.
-* Il contenuto di metadati contiene le informazioni per il tipo e le opzioni multivalore.
+* Il primo livello all&#39;interno di questa directory contiene gli spazi dei nomi.
+* Gli elementi all&#39;interno di ogni spazio dei nomi rappresentano metadati, ad esempio il risultato in un elemento di parte locale.
+* Il contenuto dei metadati contiene le informazioni per il tipo e le opzioni con più valori.
 
 Le opzioni possono essere sovrascritte in `/apps/dam/options/metadata`:
 
@@ -220,4 +220,4 @@ Le opzioni possono essere sovrascritte in `/apps/dam/options/metadata`:
 
 >[!NOTE]
 >
->Se aggiungi nuovi namespace, devono essere registrati nel repository/CRX. In caso contrario, l’invio del modulo di metadati genererà un errore.
+>Se aggiungi nuovi spazi dei nomi, questi devono essere registrati nel tuo archivio/CRX. In caso contrario, l’invio del modulo di metadati genererà un errore.

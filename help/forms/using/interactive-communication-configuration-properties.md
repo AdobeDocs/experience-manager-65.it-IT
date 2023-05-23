@@ -1,7 +1,7 @@
 ---
-title: Proprietà di configurazione di Interactive Communications
+title: Proprietà di configurazione delle comunicazioni interattive
 seo-title: Interactive Communication configuration properties
-description: Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
+description: Modificare le proprietà di configurazione predefinite per le comunicazioni interattive
 seo-description: Edit default configuration properties for Interactive Communications
 uuid: 4030078f-64a3-40bb-9892-49e22a8da561
 contentOwner: anujkapo
@@ -19,24 +19,24 @@ ht-degree: 7%
 
 ---
 
-# Proprietà di configurazione di Interactive Communications{#interactive-communications-configuration-properties}
+# Proprietà di configurazione delle comunicazioni interattive{#interactive-communications-configuration-properties}
 
-Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del [Componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) pacchetto. Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando **Configurazione della console Web di Adobe Experience Manager** pagina.
+Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione di [Componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) pacchetto. Gli autori delle comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando **Configurazione della console web Adobe Experience Manager** pagina.
 
-Apri **Configurazione della console Web di Adobe Experience Manager** utilizzando il seguente URL:
+Apri **Configurazione della console web Adobe Experience Manager** utilizzando il seguente URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
 Le proprietà di configurazione includono:
 
-* [Configurazione dei frammenti di documento](#document-fragments-configuration)
-* [Creare la configurazione della corrispondenza](#create-correspondence-configuration)
-* [Configurazione del canale web per moduli adattivi e comunicazioni interattive](#adaptive-form-and-interactive-communication-web-channel-configuration)
-* [Configurazione del tema del canale web di comunicazione e modulo adattivo](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
+* [Configurazione frammenti di documenti](#document-fragments-configuration)
+* [Crea configurazione corrispondenza](#create-correspondence-configuration)
+* [Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva](#adaptive-form-and-interactive-communication-web-channel-configuration)
+* [Configurazione del tema per canale web di comunicazione interattiva e modulo adattivo](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
-## Configurazione dei frammenti di documento {#document-fragments-configuration}
+## Configurazione frammenti di documenti {#document-fragments-configuration}
 
-Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione dei frammenti di documento.
+Tocca **Configurazione di frammenti di documenti** il **Configurazione della console web Adobe Experience Manager** per visualizzare le proprietà di configurazione per i frammenti di documento.
 
 <table>
  <tbody> 
@@ -48,11 +48,11 @@ Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della
   </tr> 
   <tr> 
    <td>Formati di visualizzazione dei dati</td> 
-   <td>Formato di visualizzazione specifico per le impostazioni internazionali per campi, variabili ed elementi del modello dati del modulo disponibili durante la creazione di una comunicazione interattiva per i canali Stampa e Web.</td> 
+   <td>Formato di visualizzazione specifico per la lingua per campi, variabili ed elementi del modello dati del modulo disponibili durante la creazione di una comunicazione interattiva per la stampa e i canali web.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR e ja_JP</li> 
-     <li>dateFormat = dd-MM-yyyy</li> 
+     <li>dateFormat = gg-MM-aaaa</li> 
      <li>numberDecimalSeparator = .</li> 
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
@@ -67,22 +67,22 @@ Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della
   </tr> 
   <tr> 
    <td>Larghezza minima numeri romani</td> 
-   <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano numeri romani nei frammenti di documento elenco. </td> 
+   <td>Larghezza minima da applicare al punto elenco o al campo numerico quando si utilizzano numeri romani nei frammenti di documento elenco. </td> 
    <td>12.7mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
-   <td>Larghezza minima</td> 
-   <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano elenchi numerati diversi dai numeri romani nei frammenti di documento elenco.</td> 
+   <td>Larghezza minima numero</td> 
+   <td>Larghezza minima da applicare al punto elenco o al campo numerico quando si utilizzano elenchi numerati oltre ai numeri romani nei frammenti di documenti elenco.</td> 
    <td>8.0mm</td> 
    <td>Numero</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Creare la configurazione della corrispondenza {#create-correspondence-configuration}
+## Crea configurazione corrispondenza {#create-correspondence-configuration}
 
-Tocca **Creare la configurazione della corrispondenza** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente dell&#39;agente.
+Tocca **Crea configurazione corrispondenza** il **Configurazione della console web Adobe Experience Manager** per visualizzare le proprietà di configurazione per l’interfaccia utente dell’agente.
 
 <table>
  <tbody> 
@@ -94,38 +94,38 @@ Tocca **Creare la configurazione della corrispondenza** sulla **Configurazione d
   </tr> 
   <tr> 
    <td>Mostra contenuto risolto per la modifica</td> 
-   <td>Selezionare la casella di controllo per visualizzare il contenuto risolto (valori effettivi anziché segnaposto) durante la modifica del modulo di testo nell'interfaccia utente dell'agente.</td> 
+   <td>Seleziona la casella di controllo per mostrare il contenuto risolto (valori effettivi anziché segnaposto) durante la modifica del modulo di testo nell’interfaccia utente dell’agente.</td> 
    <td>Non selezionato</td> 
    <td>Non applicabile</td> 
   </tr> 
   <tr> 
    <td>Applica filigrana durante l'anteprima</td> 
-   <td>Selezionare la casella di controllo per applicare la filigrana al canale Stampa di comunicazione interattiva in modalità Anteprima.</td> 
+   <td>Selezionare la casella di controllo per applicare la filigrana al canale di stampa della comunicazione interattiva in modalità Anteprima.</td> 
    <td>Non selezionato</td> 
    <td>Non applicabile</td> 
   </tr> 
   <tr> 
-   <td>Abilitare l’incorporazione dei font in PDF</td> 
-   <td><p>Selezionare la casella di controllo per abilitare i font da incorporare nei documenti PDF. Dopo aver selezionato questa opzione, è possibile incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti PDF tramite l’interfaccia utente di Agent. Utilizzare il canale Stampa di comunicazioni interattive per generare e visualizzare in anteprima documenti PDF.</p> <p>L’incorporazione di font in un documento PDF è utile se un font è disponibile su un computer utilizzato per generare PDF e non è disponibile sul computer client che accede a PDF.</p> <p>Per ulteriori informazioni sull'incorporazione dei font, consulta <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizza editor di testo</a>.</p> </td> 
+   <td>Abilitare l’incorporamento di font in PDF</td> 
+   <td><p>Selezionare la casella di controllo per abilitare l'incorporamento dei caratteri nei documenti PDF. Dopo aver selezionato questa opzione, puoi incorporare nuovi font dopo aver generato o visualizzato in anteprima i documenti PDF utilizzando l’interfaccia utente di Agent. Utilizza il canale Stampa di comunicazione interattiva per generare e visualizzare in anteprima i documenti PDF.</p> <p>L'incorporamento di tipi di carattere in un documento PDF è utile se un tipo di carattere è disponibile in un computer utilizzato per generare il PDF e non è disponibile nel computer client che accede al PDF.</p> <p>Per ulteriori informazioni sull'incorporamento dei tipi di carattere, vedere <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizzare l’editor di testo</a>.</p> </td> 
    <td>Non selezionato</td> 
    <td>Non applicabile</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Configurazione del canale web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tocca **Configurazione del canale web per moduli adattivi e comunicazioni interattive** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per il canale web Adaptive Forms e Interactive Communications. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
+Tocca **Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva** il **Configurazione della console web Adobe Experience Manager** per visualizzare le proprietà di configurazione per il canale web Forms adattivo e comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
 | Mostra segnaposto | Seleziona la casella di controllo per abilitare la visualizzazione dei segnaposto per i campi inclusi nei moduli adattivi e nelle comunicazioni interattive. | Selezionato | Non applicabile |
-| Numero massimo di voci della cache | Imposta il numero massimo di moduli adattivi e comunicazioni interattive recuperabili utilizzando la memoria cache. | 100 | Numero |
-| Rendi univoco il nome del file | Seleziona la casella di controllo per assegnare nomi univoci ai file inclusi come allegati in Adaptive Forms e Interactive Communications. | Non selezionato | Non applicabile |
+| Numero massimo di voci cache | Imposta il numero massimo di moduli adattivi e comunicazioni interattive che possono essere recuperati utilizzando la memoria cache. | 100 | Numero |
+| Rendi univoco il nome del file | Seleziona la casella di controllo per assegnare nomi univoci ai file da includere come allegati in Adaptive Forms e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
 
-## Configurazione del tema del canale web di comunicazione e modulo adattivo {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configurazione del tema per canale web di comunicazione interattiva e modulo adattivo {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tocca **Configurazione del tema del canale web di comunicazione e modulo adattivo** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per i temi del canale web Adaptive Forms e Interactive Communications.
+Tocca **Configurazione del tema per canale web di comunicazione interattiva e modulo adattivo** il **Configurazione della console web Adobe Experience Manager** per visualizzare le proprietà di configurazione per i temi del canale web Adaptive Forms e Interactive Communications.
 
 <table>
  <tbody> 
@@ -136,10 +136,10 @@ Tocca **Configurazione del tema del canale web di comunicazione e modulo adattiv
    <td>Valori accettabili</td> 
   </tr> 
   <tr> 
-   <td>Nome elenco caratteri</td> 
-   <td>Elenco dei font disponibili per la creazione di Adattivo Forms e comunicazioni interattive.</td> 
+   <td>Nome elenco tipi di carattere</td> 
+   <td>Elenco di font disponibili per la creazione di Forms adattivi e comunicazioni interattive.</td> 
    <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impatto</p> <p>Palatino Linotype</p> </td> 
-   <td>Tutti i font validi del server di Adobe</td> 
+   <td>Tutti i font server Adobe validi</td> 
   </tr> 
  </tbody> 
 </table>

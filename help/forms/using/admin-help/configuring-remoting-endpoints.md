@@ -1,5 +1,5 @@
 ---
-title: Configurazione degli endpoint remoti
+title: Configurazione degli endpoint di comunicazione remota
 seo-title: Configuring Remoting endpoints
 description: Scopri come configurare gli endpoint remoti.
 seo-description: Learn how to configure remoting endpoints.
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ---
 
-# Configurazione degli endpoint remoti {#configuring-remoting-endpoints}
+# Configurazione degli endpoint di comunicazione remota {#configuring-remoting-endpoints}
 
-Un endpoint remoto consente a un&#39;applicazione creata con Flex di richiamare il servizio utilizzando (obsoleto per i moduli AEM) AEM Remoting dei moduli. Viene creato automaticamente un endpoint remoto per ogni servizio attivato. Una destinazione Flex con lo stesso nome dell&#39;endpoint viene creata e i client Flex possono creare oggetti remoti che puntano a questa destinazione per richiamare le operazioni sul servizio pertinente.
+Un endpoint remoto consente a un’applicazione creata con Flex di richiamare il servizio utilizzando i moduli AEM Remoting (obsoleti per i moduli AEM). Per ogni servizio attivato viene creato automaticamente un endpoint di comunicazione remota. Viene creata una destinazione Flex con lo stesso nome dell&#39;endpoint e i client Flex possono creare oggetti remoti che puntano a questa destinazione per richiamare operazioni sul servizio pertinente.
 
 ## Impostazioni endpoint remoto {#remoting-endpoint-settings}
 
-**Metodo di autenticazione client Flex:** Determina il tipo di risposta che il server invia al client quando il servizio richiamato è protetto, l&#39;operazione richiamata non supporta le chiamate anonime e il client trasmette credenziali non valide o non valide.
+**Metodo di autenticazione client Flex:** Determina il tipo di risposta che il server invia al client quando il servizio richiamato è abilitato per la sicurezza, l&#39;operazione richiamata non supporta chiamate anonime e il client trasmette credenziali non valide o non valide.

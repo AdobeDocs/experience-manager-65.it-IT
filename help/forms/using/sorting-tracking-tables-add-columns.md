@@ -1,7 +1,7 @@
 ---
 title: Personalizzare le tabelle di tracciamento
 seo-title: Customize tracking tables
-description: Come personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento di AEM Forms workspace.
+description: Come personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro di AEM Forms.
 seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 # Personalizzare le tabelle di tracciamento{#customize-tracking-tables}
 
-La scheda di tracciamento nell’area di lavoro di AEM Forms viene utilizzata per visualizzare i dettagli delle istanze del processo in cui è coinvolto l’utente connesso. Per visualizzare le tabelle di tracciamento, seleziona innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l’elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare una tabella delle attività generate da questa istanza nel riquadro a destra. Per impostazione predefinita, le colonne della tabella visualizzano i seguenti attributi di attività (l&#39;attributo corrispondente nel modello di task è indicato tra parentesi):
+La scheda di tracciamento nell’area di lavoro di AEM Forms viene utilizzata per visualizzare i dettagli delle istanze di processo a cui è coinvolto l’utente connesso. Per visualizzare le tabelle di rilevamento, selezionare innanzitutto un nome di processo nel riquadro sinistro per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare una tabella delle attività generate da questa istanza nel riquadro di destra. Per impostazione predefinita, nelle colonne della tabella vengono visualizzati i seguenti attributi di task (l&#39;attributo corrispondente nel modello di task è indicato tra parentesi):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
 * Istruzioni ( `instructions`)
 * Azione selezionata ( `selectedRoute`)
-* Tempo di creazione ( `createTime`)
+* Ora di creazione ( `createTime`)
 * Ora di completamento ( `completeTime`)
 * Proprietario ( `currentAssignment.queueOwner`)
 
@@ -35,7 +35,7 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
   <tr>
    <td><p>actionInstanceId</p> </td>
    <td><p>isOpenFullScreen</p> </td>
-   <td><p>promemoriaCount</p> </td>
+   <td><p>reminderCount</p> </td>
   </tr>
   <tr>
    <td><p>classOfTask</p> </td>
@@ -43,7 +43,7 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
    <td><p>routeList</p> </td>
   </tr>
   <tr>
-   <td><p>consultareGroupId</p> </td>
+   <td><p>consultGroupId</p> </td>
    <td><p>isRouteSelectionRequired</p> </td>
    <td><p>saveFormCount</p> </td>
   </tr>
@@ -58,7 +58,7 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
    <td><p>serviceName</p> </td>
   </tr>
   <tr>
-   <td><p>createdId</p> </td>
+   <td><p>creationId</p> </td>
    <td><p>isVisible</p> </td>
    <td><p>serviceTitle</p> </td>
   </tr>
@@ -85,11 +85,11 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
   <tr>
    <td><p>forwardGroupId</p> </td>
    <td><p>outOfOfficeUserName</p> </td>
-   <td><p>supportSave</p> </td>
+   <td><p>supportedSave</p> </td>
   </tr>
   <tr>
-   <td><p>isApprovazioneUI</p> </td>
-   <td><p>priority</p> </td>
+   <td><p>isApprovalUI</p> </td>
+   <td><p>priorità</p> </td>
    <td><p>taskACL</p> </td>
   </tr>
   <tr>
@@ -115,11 +115,11 @@ Gli attributi rimanenti nel modello di task disponibili per la visualizzazione n
  </tbody>
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Vedi [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per sapere come apportare modifiche semantiche utilizzando l’SDK di workspace e creare un pacchetto minimizzato dall’origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche al codice sorgente. Consulta [Introduzione alla personalizzazione dell’area di lavoro di AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) su come apportare modifiche semantiche utilizzando l’SDK di Workspace e creare un pacchetto minimizzato dall’origine modificata.
 
-## Modifica dell’ordine delle colonne delle tabelle {#changing-table-columns-and-their-order}
+## Modifica delle colonne della tabella e del relativo ordine {#changing-table-columns-and-their-order}
 
-1. Per modificare gli attributi delle attività visualizzati nella tabella e il relativo ordine, configura il file /ws/js/runtime/templates/processinstancehistory.html :
+1. Per modificare gli attributi delle operazioni visualizzati nella tabella e il relativo ordine, configurare il file /ws/js/runtime/templates/processinstancehistory.html :
 
    ```html
    <table>
@@ -155,7 +155,7 @@ Per le seguenti personalizzazioni nella tabella delle attività, è necessario a
 
 ## Ordinamento di una tabella di tracciamento {#sorting-a-tracking-table}
 
-Per ordinare la tabella dell’elenco delle attività facendo clic sull’intestazione della colonna:
+Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#39;intestazione di colonna:
 
 1. Registra un gestore di clic per `.fixedTaskTableHeader th` nel file `js/runtime/views/processinstancehistory.js`.
 
@@ -167,7 +167,7 @@ Per ordinare la tabella dell’elenco delle attività facendo clic sull’intest
    }
    ```
 
-   Nel gestore, richiama il `onTaskTableHeaderClick` funzione `js/runtime/util/history.js`.
+   Nel gestore, richiama `onTaskTableHeaderClick` funzione di `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -175,11 +175,11 @@ Per ordinare la tabella dell’elenco delle attività facendo clic sull’intest
    }
    ```
 
-1. Esporre le `TaskTableHeaderClick` metodo in `js/runtime/util/history.js`.
+1. Esporre `TaskTableHeaderClick` metodo in `js/runtime/util/history.js`.
 
-   Il metodo trova l&#39;attributo task dall&#39;evento click, ordina l&#39;elenco task su tale attributo ed esegue il rendering della tabella task con l&#39;elenco task ordinato.
+   Il metodo trova l&#39;attributo task dall&#39;evento click, ordina l&#39;elenco di task su tale attributo ed esegue il rendering della tabella di task con l&#39;elenco di task ordinato.
 
-   L&#39;ordinamento viene eseguito utilizzando la funzione di ordinamento Backbone nell&#39;insieme tasklist fornendo una funzione di confronto.
+   L&#39;ordinamento viene eseguito utilizzando la funzione di ordinamento Backbone nell&#39;insieme di elenchi di task mediante una funzione di confronto.
 
    ```javascript
        return {

@@ -1,5 +1,5 @@
 ---
-title: Best practice di distribuzione
+title: Implementazione delle best practice
 seo-title: Deploying Best Practices
 description: Implementazione e manutenzione delle best practice.
 seo-description: Deploying and maintaining best practices.
@@ -13,89 +13,89 @@ exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 16%
+ht-degree: 9%
 
 ---
 
-# Best practice di distribuzione{#deploying-best-practices}
+# Implementazione delle best practice{#deploying-best-practices}
 
-Le best practice di distribuzione descrivono come implementare o mantenere AEM nel modo più efficiente ed efficace possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
+Le best practice per l’implementazione descrivono come implementare o mantenere l’AEM nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti comprende una varietà di aree dell&#39;AEM.
 
-Nelle seguenti aree è disponibile la documentazione relativa all’implementazione e alla manutenzione delle best practice e dei consigli:
+Nelle seguenti aree è disponibile la documentazione relativa all’implementazione e alla manutenzione delle best practice e delle raccomandazioni:
 
 * [OAK](#oak)
 * [Communities](#communities)
 * [Interfaccia](#ui)
-* [Spettacolo](#performance)
+* [Prestazioni](#performance)
 
-Per le best practice relative all’amministrazione, allo sviluppo o all’authoring, consulta uno dei seguenti argomenti:
+Per le best practice sull’amministrazione, lo sviluppo o l’authoring, consulta una delle seguenti sezioni:
 
-* [Best practice di amministrazione](/help/sites-administering/administer-best-practices.md)
-* [Best practice di sviluppo](/help/sites-developing/best-practices.md)
+* [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
+* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
 * [Best practice di authoring](/help/sites-authoring/best-practices.md)
 
-Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
+I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile ed efficiente alla base di AEM.
+[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile ed efficiente, alla base dell’AEM.
 
 <table>
  <tbody>
   <tr>
    <td><p>Scalabilità, prestazioni e disaster recovery</p> </td>
    <td><a href="/help/sites-deploying/performance.md">Prestazioni e scalabilità</a></td>
-   <td>Fornisce un white paper sulle caratteristiche di agilità tecnica, prestazioni elevate e ripristino di emergenza audio</td>
+   <td>Un white paper che illustra l'agilità tecnica, le prestazioni elevate e le funzionalità di disaster recovery</td>
   </tr>
   <tr>
-   <td>Implementazioni OAK consigliate</td>
-   <td><a href="/help/sites-deploying/recommended-deploys.md">Implementazioni consigliate</a></td>
+   <td>Distribuzioni OAK consigliate</td>
+   <td><a href="/help/sites-deploying/recommended-deploys.md">Distribuzioni consigliate</a></td>
    <td>Descrive gli scenari di distribuzione</td>
   </tr>
   <tr>
-   <td>Topologia mongo</td>
-   <td><a href="/help/sites-deploying/recommended-deploys.md">Best practice per la topologia dei Mongo</a></td>
+   <td>Topologia di Mongo</td>
+   <td><a href="/help/sites-deploying/recommended-deploys.md">Best practice per la topologia Mongo</a></td>
    <td>Descrive la topologia mongo - quando utilizzare quale topologia.</td>
   </tr>
   <tr>
-   <td>Opzioni del datastore</td>
+   <td>Opzioni archivio dati</td>
    <td><a href="/help/sites-deploying/data-store-config.md">Configurazione di nodi e archivi dati</a></td>
-   <td>In questo documento vengono illustrate le best practice relative all’archiviazione dei dati binari e dei nodi di contenuto. Include informazioni sull'utilizzo dell'archivio dati Amazon S3.</td>
+   <td>In questo documento vengono illustrate le best practice per l’archiviazione di dati binari e nodi di contenuto. Include informazioni sull’utilizzo dell’archivio dati Amazon S3.</td>
   </tr>
   <tr>
    <td>Cerca in OAK</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Tecniche consigliate per query e indicizzazione</a><br /> </td>
-   <td>Descrive le best practice per indicizzare il contenuto.</td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Best practice per query e indicizzazione</a><br /> </td>
+   <td>Vengono descritte le procedure consigliate per l'indicizzazione del contenuto.</td>
   </tr>
  </tbody>
 </table>
 
 ## Communities {#communities}
 
-AEM Communities semplifica la creazione e la gestione di community on-premise. Le best practice per AEM Communities sono descritte qui:
+AEM Communities semplifica la creazione e la gestione delle community on-premise. Le best practice per AEM Communities sono descritte qui:
 
-[Archivio dei contenuti della community](/help/communities/working-with-srp.md) - Illustra la nuova funzione di archiviazione condivisa per i contenuti generati dall&#39;utente (UGC) e le considerazioni per la scelta del sottostante [topologia](/help/communities/topologies.md).
+[Archivio contenuti community](/help/communities/working-with-srp.md) : descrive la nuova funzione di archiviazione condivisa per i contenuti generati dagli utenti (UGC, User Generated Content) e le considerazioni per la scelta del sottostante [topologia](/help/communities/topologies.md).
 
-[Implementazioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per Communities. |
+[Distribuzioni consigliate per community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per le community. |
 
 ## Interfaccia {#ui}
 
 Le best practice relative all’interfaccia utente sono descritte qui:
 
-[Interfaccia utente Recommendations per clienti](/help/sites-deploying/ui-recommendations.md)
+[Interfaccia utente di Recommendations per i clienti](/help/sites-deploying/ui-recommendations.md)
 
-AEM dispone attualmente di due interfacce: Interfaccia classica e touch nella stessa versione. Pertanto, i clienti devono decidere quale utilizzare durante l’implementazione del progetto. Questo documento ha lo scopo di aiutare a trovare la scelta giusta.
+L’AEM dispone attualmente di due interfacce: classica e ottimizzata per il tocco nella stessa versione. Pertanto, i clienti devono prendere una decisione su quale utilizzare durante l’implementazione del progetto. Questo documento ha lo scopo di aiutare a trovare la scelta giusta.
 
-## Spettacolo {#performance}
+## Prestazioni {#performance}
 
-Le best practice relative alle prestazioni sono elencate qui:
+Le best practice sulle prestazioni sono elencate qui:
 
 <table>
  <tbody>
   <tr>
    <td>Best practice per la garanzia della qualità</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per la garanzia della qualità</a></td>
-   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni <em>pubblicare</em> ambiente. Questo è di particolare interesse per ingegneri QA, project manager e amministratori di sistema.</td>
+   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test delle prestazioni su <em>pubblicare</em> ambiente. Questo è di interesse soprattutto per gli ingegneri QA, i project manager e gli amministratori di sistema.</td>
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
@@ -109,8 +109,8 @@ Le best practice relative alle prestazioni sono elencate qui:
   </tr>
   <tr>
    <td>Test delle prestazioni</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Tecniche consigliate per il test delle prestazioni</a></td>
-   <td>Descrive le best practice per eseguire test delle prestazioni in una distribuzione AEM.<br /> </td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per i test delle prestazioni</a></td>
+   <td>Descrive le best practice per l’esecuzione di test delle prestazioni in una distribuzione AEM.<br /> </td>
   </tr>
  </tbody>
 </table>

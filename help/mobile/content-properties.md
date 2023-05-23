@@ -1,7 +1,7 @@
 ---
-title: Proprietà e nodi contenuto
+title: Proprietà e nodi di contenuto
 seo-title: Content Properties and Nodes
-description: Segui questa pagina per informazioni sulle proprietà del contenuto e sui nodi.
+description: Segui questa pagina per scoprire di più sulle proprietà e sui nodi del contenuto.
 seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
@@ -17,15 +17,15 @@ ht-degree: 21%
 
 ---
 
-# Proprietà e nodi contenuto {#content-properties-and-nodes}
+# Proprietà e nodi di contenuto {#content-properties-and-nodes}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Gli articoli, i banner e le raccolte sono rappresentati come cq:Pages in AEM.
+Articoli, banner e raccolte sono rappresentati come cq:Pages in AEM.
 
-Condividono le stesse proprietà comuni presenti in qualsiasi cq:Page oltre a diverse altre mostrate di seguito che rappresentano i metadati dei servizi Adobe Experience Manager (AEM) Mobile On-Demand e le proprietà di supporto dell&#39;integrazione.
+Condividono le stesse proprietà comuni presenti in qualsiasi cq:Page, oltre a diverse altre mostrate di seguito che rappresentano i metadati di Adobe Experience Manager (AEM) Mobile On-Demand Services e le proprietà di supporto dell’integrazione.
 
 Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 
@@ -33,12 +33,12 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 
 | **Nome proprietà** | **Tipo** | **Valori predefiniti o previsti** | **Descrizione** |
 |---|---|---|---|
-| dps-id | Stringa |  | assegnato da AEM Mobile e memorizzato da AEM una volta caricato su AEM Mobile o importato da AEM Mobile |
-| dps-resourceType | Stringa | dps:Article | dps:Banner | dps:Collection | proprietà tipo di entità |
-| versione dps | Stringa |  | versione dell’entità AEM Mobile (contenuta anche nell’intero aemm-id) |
-| dps-lastSynced | Data |  | data dell’ultima sincronizzazione/importazione da AEM Mobile in AEM |
-| dps-lastUploaded | Data |  | data dell’ultimo caricamento da AEM ad AEM Mobile |
-| dps-lastUploadedBy | Stringa:userid |  | utente id che ha eseguito l’ultima richiesta di caricamento da AEM ad AEM Mobile |
+| dps-id | Stringa |  | assegnati da AEM Mobile e memorizzati dall’AEM dopo essere stati caricati su AEM Mobile o importati da AEM Mobile |
+| dps-resourceType | Stringa | dps:Article | dps:Banner | dps:Collection | proprietà del tipo di entità |
+| dps-version | Stringa |  | versione dell’entità AEM Mobile (contenuta anche nell’aemm-id completo) |
+| dps-lastSynced | Data |  | data dell’ultima sincronizzazione/importazione da AEM Mobile a AEM |
+| dps-lastUploaded | Data |  | data dell’ultimo caricamento dall’AEM ad AEM Mobile |
+| dps-lastUploadedBy | Stringa:userid |  | ID utente che ha eseguito l’ultima richiesta di caricamento dall’AEM ad AEM Mobile |
 
 ## Proprietà metadati core {#core-metadata-properties}
 
@@ -48,20 +48,20 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 | dps-shortTitle | Stringa |  |
 | dps-abstract | Stringa |  |
 | dps-shortAbstract | Stringa |  |
-| dipartimento del dps | Stringa |  |
+| dps-reparto | Stringa |  |
 | dps-category | Stringa |  |
 | parole chiave dps | Stringa[] |  |
 | dps-internalKeywords | Stringa[] |  |
-| importanza dps | Stringa[] | Importanza da {&quot;low&quot;, &quot;Normal&quot;, &quot;high&quot;} |
+| dps-importance | Stringa[] | Importanza da {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Articoli {#articles}
 
 | **Nome proprietà** | **Tipo** | **Valori predefiniti o previsti** |
 |---|---|---|
-| autore di dps | Stringa |  |
+| dps-author | Stringa |  |
 | dps-authorURL | Stringa |  |
 | dps-hideFromBrowsePage | Booleano |  |
-| accesso dps | Stringa | ProtectedAccess da {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
+| accesso a dps | Stringa | ProtectedAccess da {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
 | **Social network** |  |  |
 | dps-socialShareURL | Stringa |  |
 | dps-articleText | Stringa |  |
@@ -80,12 +80,12 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 |--- |--- |--- |
 | dps-productId | Stringa |  |
 | dps-readingPosition | Stringa | da {&quot;reset&quot;,&quot;keep&quot;} |
-| dps-HorizontalSwipe | Booleano |  |
+| dps-horizontalSwipe | Booleano |  |
 | dps-allowDownload | Booleano |  |
 | dps-openDefault | Stringa | da {&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-layout | Stringa |  |
 
-## Nodi contenuto {#content-nodes}
+## Nodi di contenuto {#content-nodes}
 
 ### Nodi comuni {#common-nodes}
 
@@ -111,4 +111,4 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 
 | Nome nodo | Tipo | Valori predefiniti dei valori previsti | Descrizione |
 |--- |--- |--- |--- |
-| immagine di sfondo | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| background-image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |

@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Architettura di AEM Forms Workspace {#aem-forms-workspace-architecture}
 
-AEM Forms workspace è un&#39;applicazione web ospitata su CRX™. Quando workspace viene aperto in un browser, si accede a una risorsa CRX e l&#39;applicazione viene riprodotta come pagina HTML nel browser.
+L’area di lavoro AEM Forms è un’applicazione web ospitata su CRX™. Quando l’area di lavoro viene aperta in un browser, si accede a una risorsa CRX e l’applicazione viene riprodotta come pagina HTML nel browser.
 
-L’applicazione accede al server AEM Forms sugli endpoint REST per effettuare le seguenti operazioni:
+L’applicazione accede al server AEM Forms sugli endpoint REST per eseguire le seguenti operazioni:
 
-* Recupera attività utente, punti iniziali del processo, cronologia del processo e informazioni utente
+* Recupera le attività utente, i punti d&#39;inizio processo, la cronologia processo e le informazioni utente
 * Eseguire azioni sulle attività
-* Attività di query nel database
-* Aggiorna le preferenze utente e altro ancora
+* Eseguire query sulle attività nel database
+* Aggiornare le preferenze utente e altro ancora
 
-Il server AEM Forms accede al database AEM Forms tramite JDBC. Il database persiste le attività, i processi e le relative istanze, gli utenti e le informazioni correlate.
+Il server AEM Forms accede al database di AEM Forms tramite JDBC. Il database consente di salvare in modo permanente le attività, i processi e le relative istanze, gli utenti e le informazioni correlate.
 
-L&#39;area di lavoro AEM Forms è progettata in componenti JavaScript™ modulari che possono essere personalizzati e riutilizzati individualmente in altre applicazioni web. I componenti sono basati su BackBone, una libreria JavaScript che fornisce struttura alle applicazioni web. Un articolo dettagliato che descrive l&#39;interazione dei componenti con BackBone è [qui](/help/forms/using/backbone-interaction.md). L’organizzazione dei componenti nella struttura di cartelle CRX è discussa in [questo](/help/forms/using/folder-structure.md) articolo.
+L’area di lavoro di AEM Forms è progettata in componenti modulari JavaScript™ che possono essere personalizzati individualmente e riutilizzati in altre applicazioni web. I componenti sono basati su BackBone, una libreria JavaScript che dà struttura alle applicazioni web. Un articolo dettagliato che descrive l’interazione dei componenti con BackBone è [qui](/help/forms/using/backbone-interaction.md). L’organizzazione dei componenti nella struttura delle cartelle CRX è discussa in [questo](/help/forms/using/folder-structure.md) articolo.
 
-Pacchetti consegnati per l&#39;area di lavoro AEM Forms:
+Pacchetti consegnati per l’area di lavoro di AEM Forms:
 
-* `adobe-lc-workspace-pkg-<version>.zip`: È un pacchetto CRX, cioè, può essere distribuito in CRX utilizzando la Gestione pacchetti.
-* `adobe-lc-workspace-<version>-src.zip`: Si tratta di un archivio che contiene il codice completo dell&#39;area di lavoro di AEM Forms e gli script per creare i pacchetti di distribuzione, ovvero i pacchetti di spedizione, debug e sviluppo.
+* `adobe-lc-workspace-pkg-<version>.zip`: si tratta di un pacchetto CRX, ovvero può essere distribuito in CRX utilizzando Gestione pacchetti.
+* `adobe-lc-workspace-<version>-src.zip`: è un archivio che contiene il codice completo dell’area di lavoro di AEM Forms e gli script per creare i pacchetti di distribuzione: spedizione, debug e sviluppo.

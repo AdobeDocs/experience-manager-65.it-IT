@@ -1,17 +1,17 @@
 ---
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
-description: Utilizzare AEM per rendere i contenuti web accessibili e utilizzabili da persone con disabilità
+description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
 source-wordcount: '13818'
-ht-degree: 77%
+ht-degree: 85%
 
 ---
 
 # Creazione di contenuto accessibile (conformità WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-La [Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redatto da [un gruppo di lavoro del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), è costituito da una serie di linee guida e criteri di successo indipendenti dalla tecnologia, per consentire alle persone con disabilità di accedere ai contenuti web e utilizzarli per il loro utilizzo.
+Il [Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redatto da [un gruppo di lavoro del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consistono in una serie di linee guida tecnologiche indipendenti e criteri di successo per contribuire a rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità.
 
 Come introduzione, viene fornito un elenco di sezioni e documenti di supporto:
 
@@ -22,7 +22,7 @@ Come introduzione, viene fornito un elenco di sezioni e documenti di supporto:
 * [Documentazione delle linee guida WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Inoltre, vedi:
-* La [Guida rapida alle linee guida WCAG 2.1](/help/managing/qg-wcag.md).
+* Il [Guida rapida alle linee guida WCAG 2.1](/help/managing/qg-wcag.md).
 * [Rapporti sulla conformità per l’accessibilità relativi alle soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).
 * [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/sites-administering/rte-accessible-content.md)
 
@@ -60,13 +60,13 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 
 #### Finalità - Contenuto non testuale (1.1.1) {#purpose-non-text-content}
 
-Le informazioni in una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, tabelle e grafici. Le persone disabilità visive parziali o totali non sono in grado di visualizzare i contenuti non testuali. Tuttavia, possono accedere al contenuto di testo se questo viene letto da un assistente vocale o presentato in forma tattile da un dispositivo di visualizzazione Braille. Pertanto, fornendo alternative testuali al contenuto in formato grafico, le persone che non possono vedere il contenuto grafico possono accedere a una versione equivalente delle informazioni fornite dal contenuto.
+Le informazioni in una pagina web possono essere fornite in diversi formati non testuali, ad esempio immagini, video, animazioni, tabelle e grafici. Le persone disabilità visive parziali o totali non sono in grado di visualizzare i contenuti non testuali. Tuttavia, possono accedere al contenuto di testo se questo viene letto da un assistente vocale o presentato in forma tattile da un dispositivo di visualizzazione Braille. Pertanto, fornendo alternative testuali al contenuto in formato grafico, gli utenti che non possono vedere il contenuto grafico possono accedere a una versione equivalente delle informazioni fornite dal contenuto.
 
-Un vantaggio aggiuntivo utile è che le alternative testuali consentono l’indicizzazione dei contenuti non testuali da parte della tecnologia dei motori di ricerca.
+Un ulteriore vantaggio utile riguarda le alternative testuali, le quali consentono l’indicizzazione dei contenuti non testuali da parte della tecnologia dei motori di ricerca.
 
 #### Come soddisfare il criterio - Contenuto non testuale (1.1.1) {#how-to-meet-non-text-content}
 
-Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un’alternativa testuale equivalente. Questa operazione può essere eseguita nella **Testo alternativo** campo . Consulta, ad esempio, il componente core **[Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it)**.
+Per gli elementi grafici statici, il requisito fondamentale consiste nel fornire un’alternativa testuale equivalente. Questa operazione può essere eseguita nel **Testo alternativo** campo. Vedi, ad esempio, Componente core **[Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it)**.
 
 >[!NOTE]
 >
@@ -78,15 +78,15 @@ In AEM il campo **Testo alternativo** deve essere compilato per impostazione pre
 
 #### Creazione di buone alternative testuali  {#creating-good-text-alternatives}
 
-Esistono varie forme di contenuti non testuali, di conseguenza il valore del testo alternativo dipende dal ruolo dell’elemento grafico all’interno della pagina Web. Alcune regole generali da seguire sono:
+Esistono varie forme di contenuti non testuali, di conseguenza il valore del testo alternativo dipende dal ruolo dell’elemento grafico all’interno della pagina Web. Alcune regole generali da seguire includono:
 
-* Le alternative testuali dovrebbero essere succinte ma acquisire chiaramente le informazioni essenziali fornite dal contenuto non testuale.
+* Le alternative testuali dovrebbero essere concise ma acquisire chiaramente le informazioni essenziali fornite dal contenuto non testuale.
 * È necessario evitare descrizioni eccessivamente lunghe (oltre 100 caratteri). Se un testo alternativo richiede ulteriori dettagli:
    * fornisci una breve descrizione nel testo alternativo
    * e fornisci una descrizione testuale più lunga sulla stessa pagina o in una pagina web a parte. Collega questa descrizione separata creando un collegamento nell’immagine o inserendo un collegamento di testo accanto all’immagine.
-* Il testo alternativo non deve replicare il contenuto vicino, fornito sotto forma di testo sulla stessa pagina. Ricorda che molte immagini sono illustrazioni di punti già trattati nel testo di una pagina, pertanto potrebbe esistere un&#39;alternativa testuale dettagliata.
-* Se il contenuto non testuale è un collegamento a un’altra pagina o documento e non esiste altro testo che faccia parte dello stesso collegamento, il testo alternativo per l’immagine deve indicare la destinazione del collegamento. Non dovrà descrivere l’immagine.
-* Se il contenuto non testuale è contenuto in un elemento pulsante e non esiste testo che faccia parte dello stesso pulsante, il testo alternativo dell’immagine deve indicare la funzionalità del pulsante. Non dovrà descrivere l’immagine.
+* Il testo alternativo non deve replicare il contenuto vicino, fornito sotto forma di testo sulla stessa pagina. Tieni presente che molte immagini sono illustrazioni di punti già trattati nel testo di una pagina, pertanto potrebbe esistere un’alternativa testuale dettagliata.
+* Se il contenuto non testuale è un collegamento a un&#39;altra pagina o a un altro documento e non è presente altro testo che fa parte dello stesso collegamento, il testo alternativo per l&#39;immagine deve indicare la destinazione del collegamento. Non dovrà descrivere l’immagine.
+* Se il contenuto non testuale è contenuto in un elemento pulsante e non è presente testo che fa parte dello stesso pulsante, il testo alternativo dell’immagine deve indicare la funzionalità del pulsante. Non dovrà descrivere l’immagine.
 * È perfettamente accettabile che a un’immagine sia assegnato un testo alternativo vuoto (null), ma solo se l’immagine non richiede testo alternativo. Questo avviene ad esempio con un elemento grafico puramente decorativo o se il testo equivalente è presente nel testo della pagina.
 
 <!--
@@ -99,8 +99,8 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * Icone: si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
 * Grafici e diagrammi: solitamente rappresentano dati numerici. Di conseguenza, un possibile testo alternativo potrebbe consistere in una breve sintesi delle principali tendenze indicate nel grafico o diagramma. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Descrizione** nella scheda **Avanzate** delle proprietà dell’immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
-* CAPTCHA: Un CAPTCHA è un *Test di Turing Pubblico Completamente Automatizzato per dire computer e umani a parte*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannoso, ma che può causare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che vedono per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C offre alcuni suggerimenti, ad esempio:
-   * rompicapi logici
+* CAPTCHA: un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani dal software dannoso, ma che può causare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che vedono per superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce alcuni suggerimenti, ad esempio:
+   * Rompicapi logici
    * L&#39;uso dell&#39;output sonoro invece delle immagini
    * Account a utilizzo limitato e filtri anti-spam.
 * Immagini di sfondo: sono ottenute utilizzando i CSS (Cascading Style Sheets, fogli di stile a cascata) anziché in HTML, e non è quindi possibile specificare un valore di testo alternativo. Pertanto le immagini di sfondo non dovrebbero includere informazioni testuali importanti, a meno che non siano incluse anche nel testo della pagina. Tuttavia, è importante utilizzare uno sfondo alternativo per i casi in cui l’immagine non possa essere visualizzata.
@@ -119,7 +119,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### Media temporizzati (1.2)  {#time-based-media}
+### Media temporizzati (1.2) {#time-based-media}
 
 [Linea guida 1.2 - Media temporizzati: fornire alternative per gli elementi multimediali temporizzati.](https://www.w3.org/TR/WCAG/#time-based-media)
 
@@ -130,28 +130,28 @@ Questo argomento riguarda i contenuti web *temporizzati*, ossia contenuti che l�
 * Criterio di successo 1.2.1
 * Livello A
 * Solo audio e solo video (preregistrati): per gli elementi solo video e solo audio preregistrati vale quanto segue, tranne quando l’audio o il video sia un elemento alternativo per il testo, chiaramente indicato come tale:
-   * Solo audio preregistrato: È disponibile un’alternativa per i contenuti multimediali temporizzati che presenta informazioni equivalenti ai contenuti solo audio preregistrati.
-   * Solo video preregistrato: È disponibile un’alternativa per gli elementi multimediali temporizzati o una traccia audio che presenti informazioni equivalenti per i contenuti solo video preregistrati.
+   * Solo audio preregistrato: viene fornita un’alternativa per gli elementi multimediali temporizzati che presenta informazioni equivalenti per contenuti solo audio preregistrati.
+   * Solo video preregistrato: è disponibile un’alternativa per gli elementi multimediali temporizzati oppure è disponibile una traccia audio che presenta informazioni equivalenti per i contenuti solo video preregistrati.
 
 #### Finalità - Solo audio e solo video (preregistrati) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
 
 Problemi di accessibilità per audio e video possono essere riscontrati da:
 
-* persone con disabilità visive in assenza di colonna sonora o la colonna sonora non è sufficiente per informarli di ciò che sta accadendo nel video o nell’animazione;
-* persone con disabilità uditive o non udenti, che non possono sentire la colonna sonora;
-* Persone che possono ascoltare la colonna sonora, ma non capiscono cosa si sta parlando (per esempio, perché si trova in una lingua che non capiscono).
+* persone con disabilità visive in caso di assenza di audio o quando non sufficiente per essere informati su ciò che sta accadendo nel video o nell’animazione;
+* persone con disabilità uditive o non udenti, che non sono in grado di sentire l’audio;
+* persone che possono sentire l’audio, ma non capiscono cosa si sta dicendo (per esempio, perché non conoscono la lingua utilizzata).
 
-Video o audio possono anche non essere disponibili per le persone che utilizzano browser o dispositivi che non supportano la riproduzione di contenuti in formati multimediali specifici, ad Adobe Flash.
+Video o audio potrebbero non essere disponibili per le persone che utilizzano browser o dispositivi che non supportano la riproduzione di contenuto in formati multimediali specifici, come Adobe Flash.
 
 Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per video senza audio) può renderle accessibili alle persone che non possono accedere al contenuto originale.
 
 #### Come soddisfare il criterio - Solo audio e solo video (preregistrati) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * Se il contenuto è una traccia audio preregistrata senza video (come un podcast):
-   * Fornisci un collegamento immediatamente prima o dopo il contenuto, a una trascrizione testuale del contenuto audio. La trascrizione deve essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e non parlati importanti, oltre all’indicazione di chi sta parlando, una descrizione dell’ambientazione, le espressioni vocali e una descrizione di qualsiasi altro elemento sonoro significativo.
+   * Fornisci un collegamento immediatamente prima o dopo il contenuto a una trascrizione testuale del contenuto audio. La trascrizione deve essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e non parlati importanti, oltre a un’indicazione di chi sta parlando, una descrizione dell’ambientazione, espressioni vocali e una descrizione di qualsiasi altro audio significativo.
 * Se il contenuto è un’animazione o un video preregistrato senza audio:
-   * Fornisci un collegamento immediatamente prima o dopo il contenuto ad una descrizione testuale equivalente delle informazioni fornite dal video
-   * Oppure una descrizione audio equivalente in un formato audio comunemente utilizzato come MP3.
+   * Fornisci un collegamento ad una descrizione testuale equivalente alle informazioni fornite dal video ed immediatamente prima o dopo il contenuto
+   * oppure una descrizione audio equivalente in un formato audio comunemente utilizzato come MP3.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per
 >
 >Le linee guida [Comprendere WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) forniscono ulteriori informazioni.
 
-L’inserimento di contenuti multimediali nelle pagine web AEM è simile a quello di un’immagine. Tuttavia, dato che il contenuto multimediale è molto più di un&#39;immagine fissa, esistono diverse impostazioni e opzioni per controllare come viene riprodotto il contenuto multimediale.
+L’inserimento di contenuti multimediali nelle pagine web AEM è simile a quello di un’immagine. Tuttavia, poiché il contenuto multimediale è molto più di un fermo immagine, esistono diverse impostazioni e opzioni per controllare la riproduzione del contenuto multimediale.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ I sottotitoli possono essere:
 
 Se possibile, utilizza i sottotitoli codificati in modo da consentire agli utenti di scegliere se visualizzarli o meno.
 
-Per i sottotitoli codificati, creare e fornire un file di sottotitoli sincronizzati nel formato appropriato (ad esempio [SMIL](https://www.w3.org/AudioVideo/)) accanto al file video (i dettagli su come eseguire questa operazione vanno oltre lo scopo di questa guida, ma abbiamo fornito collegamenti ad alcune esercitazioni in [Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2)](#more-information-captions-prerecorded)). Assicurati di includere una nota o di attivare la funzione dei sottotitoli nel lettore video per informare gli utenti che per il video sono disponibili i sottotitoli.
+Per i sottotitoli codificati, crea e fornisci un file di sottotitoli sincronizzato in un formato appropriato, ad esempio [SMIL](https://www.w3.org/AudioVideo/)) accanto al file video (i dettagli su come eseguire questa operazione vanno oltre lo scopo di questa guida, ma abbiamo incluso collegamenti ad alcune esercitazioni in [Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2)](#more-information-captions-prerecorded)). Assicurati di includere una nota o di attivare la funzione dei sottotitoli nel lettore video per informare gli utenti che per il video sono disponibili i sottotitoli.
 
 Se è necessario utilizzare sottotitoli non codificati, inserisci il testo nella traccia video. A questo scopo è possibile utilizzare applicazioni di editing video che consentono di sovrapporre i sottotitoli al video.
 
@@ -215,14 +215,14 @@ Se le informazioni in un video o in un’animazione vengono fornite solo visivam
 
 #### Come soddisfare il criterio - Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
-Per soddisfare questo criterio di successo è possibile adottare due approcci. È accettabile:
+Per soddisfare questo criterio di successo è possibile adottare due approcci. Entrambi sono accettabili:
 
-1. Includi una descrizione audio aggiuntiva per il contenuto video. Questo può essere ottenuto in uno dei tre modi seguenti:
-   * Durante le pause nella finestra di dialogo esistente, fornisci informazioni sui cambiamenti della scena che non vengono presentati come parte della traccia audio esistente;
+1. Includere una descrizione audio aggiuntiva per i contenuti video. Questo si può ottenere in uno dei tre modi seguenti:
+   * Durante le pause nella finestra di dialogo esistente, fornisci informazioni sulle modifiche della scena che non vengono presentate come parte della traccia audio esistente;
    * Fornisci una nuova traccia audio, aggiuntiva e facoltativa, contenente l’audio originale, ma anche informazioni audio ulteriori sui cambiamenti nella scena.
-      * Gli utenti possono passare dalla traccia audio esistente (che *non* contengono una descrizione audio) e la nuova traccia audio (che *does* contiene una descrizione audio).
-      * In questo modo si evitano interruzioni per gli utenti che non necessitano della descrizione aggiuntiva.
-   * Crea una seconda versione del contenuto video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all&#39;interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l&#39;audio e il video nei punti appropriati. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l&#39;azione ricominci. Come nell’esempio precedente, questa funzione è fornita come traccia audio aggiuntiva opzionale per evitare interruzioni agli utenti che non necessitano della descrizione aggiuntiva.
+      * Gli utenti possono passare dalla traccia audio esistente (che *non* contiene una descrizione audio) e la nuova traccia audio (che *fa* contiene una descrizione audio).
+      * in questo modo si evitano interruzioni per gli utenti che non necessitano di desscrizione aggiuntiva.
+   * Creare una seconda versione dei contenuti video per consentire descrizioni audio estese. Questo riduce le difficoltà associate alla fornitura di descrizioni audio dettagliate all’interno degli spazi tra la finestra di dialogo esistente, mettendo temporaneamente in pausa l’audio e il video nei punti opportuni. Di conseguenza, è possibile fornire una descrizione audio molto più lunga prima che l’azione ricominci. Come nell’esempio precedente, questa è meglio fornita come traccia audio aggiuntiva opzionale per evitare interruzioni per gli utenti che non hanno bisogno della descrizione aggiuntiva.
 1. Fornisci una trascrizione testuale che rappresenti un equivalente testuale adatto per gli elementi sonori e visivi del video o dell’animazione. Queste dovrebbero includere, a seconda del caso, l’indicazione di chi sta parlando, una descrizione dell’ambientazione, eventuali eventi o informazioni presentate visivamente e le espressioni vocali. A seconda della lunghezza, è possibile inserire la trascrizione nella stessa pagina del video o dell’animazione oppure in una pagina separata. Se scegli la seconda opzione, includi un collegamento alla trascrizione accanto al video o all’animazione.
 
 La descrizione dettagliata delle modalità di creazione di video con descrizione audio esula dallo scopo di questa guida. La creazione di video e descrizioni audio può richiedere parecchio tempo, ma puoi ricorrere ad altri prodotti Adobe per facilitare l’esecuzione di tali attività.
@@ -250,7 +250,7 @@ Questo criterio di successo è identico a [Sottotitoli (preregistrati)](#caption
 
 Segui le indicazioni fornite sopra per i [Sottotitoli (preregistrati)](#captions-prerecorded). Tuttavia, dato che l’elemento multimediale è in tempo reale, i sottotitoli dovranno essere creati il più rapidamente possibile e in modo reattivo. Pertanto, è consigliabile utilizzare strumenti per la creazione di sottotitoli in tempo reale o di sintesi vocale.
 
-Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
+Istruzioni dettagliate al riguardo vanno oltre l&#39;ambito di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
 
 * [WebAIM: aggiunta di sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime)
 
@@ -265,7 +265,7 @@ Istruzioni dettagliate al riguardo vanno oltre lo scopo di questo documento, ma 
 
 * Criterio di successo 1.2.5
 * Livello AA
-* Descrizione audio (preregistrato): La descrizione audio viene fornita per tutti i contenuti video preregistrati negli elementi multimediali sincronizzati.
+* Descrizione audio (preregistrato): la descrizione audio viene fornita per tutti i contenuti video preregistrati negli elementi multimediali sincronizzati.
 
 #### Finalità: Audiodescrizione (preregistrata) (1.2.5) {#purpose-audio-description-prerecorded}
 
@@ -294,17 +294,17 @@ Questa linea guida copre i requisiti necessari per supportare le persone che:
 
 * Criterio di successo 1.3.1
 * Livello A
-* Informazioni e correlazioni: Le informazioni, la struttura e le relazioni veicolate attraverso la presentazione possono essere determinate a livello di programmazione o sono disponibili nel testo.
+* Informazioni e correlazioni: le informazioni, la struttura e le correlazioni veicolate attraverso la presentazione possono essere determinate a livello di programmazione o sono disponibili nel testo.
 
 #### Finalità - Informazioni e correlazioni (1.3.1)  {#purpose-info-and-relationships}
 
-Molte tecnologie per l’accessibilità utilizzate da persone con disabilità si basano su informazioni strutturali per essere visualizzate in modo efficace o *comprendere* contenuto. Queste informazioni strutturali possono assumere la forma di intestazioni di pagina, intestazioni di riga e colonna di tabella e tipi di elenco. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
+Molte tecnologie per l’accessibilità utilizzate da persone con disabilità si basano su informazioni strutturali per visualizzare o *comprendere* contenuto. Queste informazioni strutturali possono assumere la forma di intestazioni di pagina, intestazioni di riga e colonna di una tabella e tipi di elenco. Ad esempio, un’utilità di lettura dello schermo potrebbe consentire a un utente di spostarsi all’interno di una pagina passando da un’intestazione a un’altra. Tuttavia, quando la struttura del contenuto della pagina dipende esclusivamente da uno stile visivo, anziché dal codice HTML sottostante, non sono presenti informazioni strutturali utilizzabili dalle tecnologie per l’accessibilità, il che ne limita la capacità di supportare la navigazione facilitata.
 
 Questo criterio di successo esiste affinché tali informazioni strutturali vengano fornite a livello di programmazione tramite HTML o con altre tecniche di scrittura del codice, in modo che i browser e le tecnologie per l’accessibilità possano accedervi e sfruttarle.
 
 #### Come soddisfare il criterio - Informazioni e correlazioni (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM consente di creare facilmente contenuti web significativi dal punto di vista semantico utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente di testo) e utilizza l’ **Paraformato** menu (simbolo di paragrafo) per specificare l’elemento strutturale appropriato (ad esempio, paragrafo e intestazione).
+AEM consente di creare facilmente contenuti web significativi dal punto di vista semantico utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente testo) e utilizza **Paraformat** menu (simbolo di paragrafo) per specificare l&#39;elemento strutturale appropriato, ad esempio paragrafo e intestazione.
 
 Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizzando i seguenti elementi, dove necessario:
 
@@ -314,7 +314,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * L’elemento `<ul>` viene utilizzato per gli elenchi *non ordinati* (puntati). Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco puntato**.
    * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
-   Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco appropriato. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente al HTML.
+   Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente all’HTML.
 
    In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
 
@@ -327,23 +327,23 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    Inoltre, le tabelle accessibili utilizzano i seguenti elementi e attributi:
 
    * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, i sottotitoli vengono visualizzati centrati sopra la tabella, ma possono essere posizionati in modo appropriato utilizzando le CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
-   * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Questa opzione è utile quando si utilizzano layout di tabella complessi o non convenzionali (questo attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
+   * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Questo è utile quando si utilizzano layout di tabella complessi o non convenzionali (questo attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
    * L’attributo `scope` dell’elemento `<th>` viene utilizzato per indicare se una cella rappresenta un’intestazione per una particolare riga o colonna. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
 
    >[!NOTE]
    >
    >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
-   Per aprire **Tabella** in cui è possibile selezionare la **Proprietà tabella** scheda:
+   Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
 
-   * Definire un **Didascalia**.
+   * definisci una **Didascalia** appropriata.
    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
    Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
 
 * **Enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
    * Evidenzia il testo che desideri mettere in evidenza.
-   * Fai clic sul pulsante **B** (per `<strong>`) o **I** (per `<em>`) all&#39;interno della **Proprietà** pannello (accertati che HTML sia selezionato).
+   * Fai clic su **B** icona (per `<strong>`) o **I** icona (per `<em>`) visualizzato all&#39;interno del **Proprietà** (assicurati che sia selezionato HTML).
 
       >[!NOTE]
       >
@@ -355,7 +355,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
       >
       >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
-* **Tabelle dati complesse**: Talvolta, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà di tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **header** e **id** attributi.
+* **Tabelle dati complesse**: a volte, in presenza di tabelle complesse con due o più livelli di intestazioni, le Proprietà tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **intestazione** e **id** attributi.
 
    >[!NOTE]
    >
@@ -394,7 +394,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 
    >[!NOTE]
    >
-   >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole di HTML e del serializzatore.
+   >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor RTF, delle regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -430,7 +430,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.3.
 
 Nel presentare le informazioni, i designer spesso si concentrano sulle caratteristiche di progettazione visiva come il colore, la forma, lo stile del testo o la posizione assoluta o relativa di un elemento di contenuto. Anche se queste possono essere tecniche di progettazione molto potenti per veicolare le informazioni (e migliorare l’accessibilità complessiva per le persone senza disabilità visiva ma con esigenze di accessibilità cognitive), le persone con disabilità visiva totale o parziale potrebbero non essere in grado di accedere alle informazioni che richiedono l’identificazione visiva di attributi come la posizione, il colore o la forma.
 
-Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci maschili o femminili) presentano barriere di accessibilità per le persone con disabilità uditive, se non sono incluse in un testo alternativo per il contenuto audio.
+Allo stesso modo, le informazioni che richiedono di distinguere tra suoni diversi (ad esempio, contenuti parlati da voci di sesso maschile o femminile) presentano ostacoli di accessibilità per le persone con disabilità uditive, se non vengono riportate in alcun testo alternativo per il contenuto audio.
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ Assicurati che anche tutte le informazioni che si basano sulle caratteristiche v
 
 >[!NOTE]
 >
->L’utilizzo di termini descrittivi è accettabile se questi hanno un significato in un contesto non visivo. Ad esempio, l’uso di *sopra* e *sotto* è generalmente accettabile, in quanto i due termini implicano rispettivamente un contenuto prima e dopo un particolare elemento di contenuto e risulterebbero comprensibili anche per contenuti espressi oralmente.
+>L’uso di termini descrittivi è accettabile se si ritiene che abbiano un significato in un contesto non visivo. Ad esempio, l’uso di *sopra* e *sotto* è generalmente accettabile, in quanto i due termini implicano rispettivamente un contenuto prima e dopo un particolare elemento di contenuto e risulterebbero comprensibili anche per contenuti espressi oralmente.
 
 #### Ulteriori informazioni - Caratteristiche sensoriali (1.3.3) {#more-information-sensory-characteristics}
 
@@ -464,17 +464,17 @@ Assicurati che anche tutte le informazioni che si basano sulle caratteristiche v
 
 >[!NOTE]
 >
->Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono coperte [Adattabile (1.3)](#adaptable); incluso l&#39;accesso programmatico al colore e ad altre codifiche di presentazione visiva.
+>Questo criterio di successo riguarda in particolare la percezione del colore. Altre forme di percezione sono trattate in [Adattabilità (1.3)](#adaptable), incluso l’accesso programmatico al colore e ad altre codifiche di presentazione visiva.
 
 #### Finalità - Uso del colore (1.4.1)  {#purpose-use-of-color}
 
 Il colore è un modo efficace per migliorare l’aspetto estetico delle pagine web ed è utile anche per trasmettere informazioni. Tuttavia esistono diverse disabilità visive, dalla cecità al daltonismo, che impediscono ad alcune persone di distinguere determinati colori. Questo rende la codifica a colori un metodo inaffidabile per fornire informazioni.
 
-Ad esempio, una persona con deficit di visione del colore rosso-verde non sarà in grado di distinguere tra sfumature di verde e tonalità di rosso. Può vedere entrambi i colori come un terzo colore (ad esempio, il marrone), ma non è in grado di distinguere tra rosso, verde e marrone.
+Ad esempio, una persona con deficit di visione dei colori rosso-verde non sarà in grado di distinguere tra le sfumature di verde e quelle di rosso. Può vedere entrambi i colori come un terzo colore (ad esempio, il marrone), ma non è in grado di distinguere tra rosso, verde e marrone.
 
 Inoltre, il colore non può essere percepito da persone che utilizzano browser di solo testo, dispositivi di visualizzazione in bianco e nero o una stampa in bianco e nero della pagina.
 
-Un&#39;ulteriore considerazione è la *selezionato* per un elemento dell’interfaccia (ad esempio schede, pulsanti di attivazione/disattivazione, ecc.), che deve essere veicolato in un modo diverso rispetto al solo colore e oltre una semplice presentazione visiva. Per questi elementi può essere utile aggiungere pattern, forme e informazioni a livello di programmazione per creare un’esperienza completa, non basata su un senso specifico.
+Un ulteriore aspetto da considerare è il *selezionato* state di un elemento dell’interfaccia (ad esempio schede, interruttori, ecc.) che deve essere veicolato in un modo diverso rispetto al solo colore e a una semplice presentazione visiva. Per questi elementi può essere utile aggiungere pattern, forme e informazioni a livello di programmazione per creare un’esperienza completa, non basata su un senso specifico.
 
 #### Come soddisfare il criterio - Uso del colore (1.4.1)  {#how-to-meet-use-of-color}
 
@@ -518,9 +518,9 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.
 
 * Criterio di successo 1.4.3
 * Livello AA
-* Contrasto (minimo): La presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 4,5:1, fatta eccezione per quanto segue:
-   * Testo grande: Il testo su larga scala e le immagini di testo su larga scala hanno un rapporto di contrasto di almeno 3:1.
-   * Incidentale: Testo o immagini di testo che fanno parte di un componente dell’interfaccia utente inattivo, [decorazione pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), non visibili o fanno parte di un&#39;immagine che contiene altri contenuti visivi significativi, non presentano requisiti di contrasto.
+* Contrasto (minimo): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 4,5:1, fatta eccezione per quanto segue:
+   * Testo di grandi dimensioni: testo di grandi dimensioni e immagini di testo di grandi dimensioni hanno un rapporto di contrasto di almeno 3:1.
+   * Incidentale: testo o immagini di testo che fanno parte di un componente dell’interfaccia inattivo, [decorazione pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), non visibili o che fanno parte di un&#39;immagine che contiene altri contenuti visivi significativi, non richiedono alcun contrasto.
    * Logotipi: per il testo che fa parte di un logo o di un marchio non è previsto alcun requisito minimo di contrasto.
 
    >[!NOTE]
@@ -532,7 +532,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.
 Le persone con determinate disabilità visive possono non essere in grado di distinguere tra alcune coppie di colori a basso contrasto. Queste persone possono riscontrare problemi di accessibilità se:
 
 * Il testo contrasta poco con il relativo colore di sfondo.
-* La codifica del colore del testo (come il testo di collegamento e il testo non di collegamento) è importante per distinguere le informazioni.
+* La codifica a colori del testo (ad esempio, per differenziare il testo normale dal testo dei collegamenti) è importante per distinguere i diversi tipi di informazioni.
 
 >[!NOTE]
 >
@@ -544,28 +544,28 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 
 * Per testi con dimensioni inferiori a 18 punti (o 14 se in grassetto), il rapporto di contrasto tra testo/immagini di testo e sfondo deve essere pari ad almeno 4,5:1.
 * Per il testo con dimensioni almeno pari a 18 punti (o 14 se in grassetto), il rapporto di contrasto deve essere pari ad almeno 3:1.
-* Se viene creato un motivo per uno sfondo, lo sfondo intorno a qualsiasi testo deve essere ombreggiato in modo da mantenere il rapporto 4.5:1 o 3:1.
+* Se lo sfondo include una texture, lo sfondo intorno al testo dovrà essere ombreggiato in modo da mantenere il rapporto di 4,5:1 o 3:1.
 
 >[!NOTE]
 >
->Ricorda che i font possono differire nel rendering dell’equivalente dimensionamento PT/PX/EM.
+>Ricordate che i font possono differire nel modo in cui vengono riprodotti le dimensioni PT/PX/EM equivalenti.
 >
->Utilizza il buon senso e immetti a lato leggibilità e usabilità quando selezioni i font e le dimensioni appropriati per i contenuti web.
+>Utilizza il buon senso ed esprimi dal punto di vista della leggibilità e dell’usabilità quando selezioni i font e le dimensioni appropriati per il contenuto web.
 
 >[!NOTE]
 >
 >I seguenti siti possono esserti utili per le conversioni in altre unità:
 >
->* [Calcolatore da Px a Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* Vedere &quot;Conversione delle dimensioni del font: pixel-point-em-rem-percent&quot; a `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
->* Vedi PMtoEM.com: Conversione da PX a EM resa semplice da `http://pxtoem.com/`
+>* [Px to Em Calculator - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* Consulta &quot;Conversione dimensioni font: pixel-point-em-rem-percent&quot; (Conversione dimensioni font: pixel-point-em-rem-percent) in `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
+>* Vedi PMtoEM.com: conversione da PX a EM semplificata all’indirizzo `http://pxtoem.com/`
 
 
-Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, ad esempio [Paciello Group Color Contrast Analyzer](https://www.paciellogroup.com/resources/contrast-analyser.html) o [Verifica del contrasto del colore di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare le coppie di colori e segnalare eventuali problemi di contrasto.
+Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, ad esempio [Color Contrast Analyzer di The Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) o [Color Contrast Checker di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare coppie di colori e rilevare eventuali problemi di contrasto.
 
 In alternativa, se non desiderI specificare l’aspetto della pagina, puoi scegliere di non definire i colori del testo di sfondo e in primo piano. Non è richiesto alcun controllo del contrasto, in quanto il browser dell’utente determina i colori del testo e dello sfondo.
 
-Se non è possibile soddisfare i livelli di contrasto consigliati, fornisci un collegamento a una versione alternativa equivalente della pagina (che non ha problemi di contrasto del colore). In alternativa, è possibile regolare il contrasto della combinazione di colori della pagina in base alle proprie esigenze.
+Se non è possibile soddisfare i livelli di contrasto consigliati, fornisci un collegamento a una versione alternativa equivalente della pagina (che non presenta problemi di contrasto dei colori). In alternativa, l’utente può regolare il contrasto della combinazione di colori della pagina in base alle proprie esigenze.
 
 #### Ulteriori informazioni - Contrasto (minimo) (1.4.3)  {#more-information-contrast-minimum}
 
@@ -584,7 +584,7 @@ Lo scopo di questo criterio di successo è garantire che il rendering visivo di 
 
 #### Come soddisfare il criterio - Ridimensionamento del testo (1.4.4) {#how-to-meet-resize-text}
 
-Oltre a seguire le linee guida di cui [Come soddisfare i criteri di successo 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) è possibile incoraggiare gli autori di contenuti a utilizzare larghezze fluide e flessibili e altezze nelle strutture di pagina e nelle dimensioni dei font (ad esempio, design responsive) per consentire ai lettori di ridimensionare il testo.
+Oltre a seguire le linee guida in [Come soddisfare i criteri di successo 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) puoi incoraggiare gli autori di contenuti a utilizzare larghezze e altezze fluide e flessibili per le strutture di pagina e le dimensioni dei font (ad esempio, design responsive) per consentire ai lettori di ridimensionare il testo.
 
 #### Ulteriori informazioni - Ridimensionamento del testo (1.4.4) {#more-information-resize-text}
 
@@ -596,8 +596,8 @@ Oltre a seguire le linee guida di cui [Come soddisfare i criteri di successo 1.4
 * Criterio di successo 1.4.5
 * Livello AA
 * Immagini di testo: se le tecnologie utilizzate consentono la presentazione visiva, per trasmettere informazioni viene utilizzato il testo, anziché le immagini di testo, con le seguenti eccezioni:
-   * Personalizzabile: L&#39;immagine del testo può essere personalizzata visivamente in base alle esigenze dell&#39;utente;
-   * Essenziale: Una particolare presentazione del testo è essenziale per le informazioni trasmesse.
+   * Personalizzabile: l&#39;immagine del testo può essere personalizzata visivamente in base alle esigenze dell&#39;utente;
+   * Essenziale: una presentazione del testo specifica è essenziale per le informazioni trasmesse.
 
 >[!NOTE]
 >
@@ -609,7 +609,7 @@ Le immagini di testo vengono spesso utilizzate quando si preferisce un particola
 
 #### Come soddisfare il criterio - Immagini di testo (1.4.5) {#how-to-meet-images-of-text}
 
-Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Ad esempio, vedi [C30: Utilizzo di CSS per sostituire il testo con immagini di testo e fornitura di controlli dell’interfaccia utente per passare a](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle con testo equivalente in HTML, in modo che sia possibile personalizzare il testo. Per un esempio, vedi [C30: Utilizzo di CSS per sostituire il testo con immagini di testo e fornitura di controlli dell’interfaccia utente per cambiare](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### Ulteriori informazioni - Immagini di testo (1.4.5) {#more-information-images-of-text}
 
@@ -680,7 +680,7 @@ L’obiettivo di questo criterio è garantire agli utenti tempo sufficiente per 
 
 #### Finalità - Regolazione tempi di esecuzione (2.2.1) {#purpose-timing-adjustable}
 
-Lo scopo di questo criterio di successo è garantire che gli utenti disabili abbiano il tempo necessario per interagire con i contenuti web tutte le volte che è possibile. Le persone con disabilità quali cecità, ipovisione, limitazioni della destrezza o cognitive potrebbero avere bisogno di più tempo per leggere il contenuto o per eseguire azioni come la compilazione di moduli online. Se le funzioni web sono dipendenti dai tempi di esecuzione, per alcuni utenti sarà difficile eseguire l’azione richiesta entro i tempi stabiliti. Ciò potrebbe rendere il servizio inaccessibile. La progettazione di funzioni indipendenti dai tempi di esecuzione consente alle persone con disabilità di riuscire a completare queste operazioni. Le opzioni per disattivare i limiti di tempo, personalizzare i limiti di tempo o richiedere più tempo prima che si verifichi un limite di tempo consentono agli utenti che richiedono più tempo del previsto di completare le attività con successo. Le opzioni sono elencate secondo l’ordine più utile per l’utente. La disattivazione dei limiti di tempo è migliore rispetto alla personalizzazione e quest’ultima, a sua volta, è migliore della richiesta di estensione prima dello scadere.
+Lo scopo di questo criterio di successo è garantire che gli utenti disabili abbiano il tempo necessario per interagire con i contenuti web tutte le volte che è possibile. Le persone con disabilità quali cecità, ipovisione, limitazioni della destrezza o cognitive potrebbero avere bisogno di più tempo per leggere il contenuto o per eseguire azioni come la compilazione di moduli online. Se le funzioni web sono dipendenti dai tempi di esecuzione, per alcuni utenti sarà difficile eseguire l’azione richiesta entro i tempi stabiliti. Ciò potrebbe rendere il servizio inaccessibile. La progettazione di funzioni indipendenti dai tempi di esecuzione consente alle persone con disabilità di riuscire a completare queste operazioni. Le opzioni che consentono di disattivare i limiti di tempo, personalizzarli o richiederne di più prima del raggiungimento aiutano gli utenti che necessitano di più tempo del previsto a completare le attività. Le opzioni sono elencate secondo l’ordine più utile per l’utente. La disattivazione dei limiti di tempo è migliore rispetto alla personalizzazione e quest’ultima, a sua volta, è migliore della richiesta di estensione prima dello scadere.
 
 #### Come soddisfare il criterio - Regolazione tempi di esecuzione (2.2.1) {#how-to-meet-timing-adjustable}
 
@@ -697,14 +697,14 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.2.
 * Livello A
 * Pausa, stop, nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue:
    * In movimento, lampeggiante, in scorrimento: per qualsiasi informazione in movimento, lampeggiante o in scorrimento che (a) parta automaticamente, (b) duri più di cinque secondi, e (c) sia rappresentata in parallelo con altro contenuto, esiste un meccanismo che consente all’utente di mettere in pausa, interrompere o nascondere l’effetto, a meno che esso sia parte di un’attività per la quale sia essenziale;
-   * Aggiornamento automatico: Per ogni informazione con aggiornamento automatico che (a) si avvia automaticamente e (b) viene presentata in parallelo con altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
+   * Aggiornamento automatico: per qualsiasi informazione con aggiornamento automatico che (a) inizia automaticamente e (b) viene presentata in parallelo ad altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
 
 Elementi da sottolineare:
 
 1. Per i requisiti relativi a contenuti che sfarfallano o lampeggiano, consulta Non progettare contenuti con modalità che possano causare attacchi epilettici (2.3).
 1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: Non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
-1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’avvio della pausa e la ripresa della presentazione, in quanto ciò potrebbe non essere tecnicamente possibile e in molte situazioni potrebbe risultare fuorviante.
-1. Un&#39;animazione che si verifica come parte di una fase di precaricamento o situazione simile può essere considerata essenziale se l&#39;interazione non può verificarsi durante quella fase per tutti gli utenti e se non indica l&#39;avanzamento può confondere gli utenti o far loro pensare che il contenuto sia bloccato o interrotto.
+1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’inizio della pausa e la ripresa della presentazione, in quanto ciò potrebbe non essere tecnicamente possibile e in molte situazioni potrebbe risultare fuorviante.
+1. Un&#39;animazione che si verifica come parte di una fase di precaricamento o situazione simile può essere considerata essenziale se non si possono verificare interazioni durante quella fase per tutti gli utenti e, se non viene indicato l&#39;avanzamento, potrebbe confondere l’utente o indurre a pensare che il contenuto sia bloccato o interrotto.
 
 #### Finalità - Pausa, stop, nascondi (2.2.2)  {#purpose-pause-stop-hide}
 
@@ -748,7 +748,7 @@ In alcuni casi i contenuti lampeggianti possono causare crisi epilettiche dovute
 Adotta misure per assicurare che siano applicate le seguenti tecniche:
 
 * Assicurati che i componenti non lampeggino per più di tre volte al secondo.
-* Se la condizione precedente non può essere soddisfatta, visualizza il contenuto lampeggiante all’interno di una *piccola area di sicurezza* in pixel sullo schermo. Quest&#39;area è calcolata utilizzando una formula complessa, coperta da [G176: Mantenere l&#39;area lampeggiante sufficientemente piccola](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), quindi questa tecnica deve essere seguita solo se è necessario lampeggiare il contenuto *.
+* Se la condizione precedente non può essere soddisfatta, visualizza il contenuto lampeggiante all’interno di una *piccola area di sicurezza* in pixel sullo schermo. Quest&#39;area è calcolata utilizzando una formula complessa, trattata in [G176: Mantenere l’area lampeggiante sufficientemente piccola](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), quindi questa tecnica deve essere applicata solo se *è necessario lampeggiare il contenuto.
 
 #### Ulteriori informazioni - Tre lampeggiamenti o inferiore alla soglia (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
@@ -824,7 +824,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.
 
 * Criterio di successo 2.4.4
 * Livello A
-* Scopo del collegamento (nel contesto): Lo scopo di ciascun collegamento può essere determinato dal solo testo del collegamento o dal testo del collegamento insieme al relativo contesto di collegamento definito a livello di programmazione, a meno che lo scopo del collegamento non sia ambiguo per gli utenti in generale.
+* Scopo del collegamento (nel contesto): lo scopo di ciascun collegamento può essere determinato dal solo testo del collegamento oppure dal testo del collegamento insieme al relativo contesto definito a livello di programmazione, a meno che lo scopo del collegamento non sia ambiguo per gli utenti in generale.
 
 #### Finalità - Scopo del collegamento (nel contesto) (2.4.4)  {#purpose-link-purpose-in-context}
 
@@ -845,9 +845,9 @@ I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in pa
 
 Al momento in cui scriviamo, l’uso degli attributi title per garantire che collegamenti simili presentati in una pagina forniscano informazioni univoche sulla destinazione (ad esempio, “Ulteriori informazioni” spesso fa riferimento a una serie di destinazioni diverse) implica alcuni problemi:
 
-* Il testo contenuto all’interno dell’attributo title è disponibile solo per gli utenti che utilizzano mouse come pop-up con la descrizione comando e non è accessibile in modo coerente tramite la tastiera o per gli utenti di dispositivi mobili.
+* Il testo contenuto all&#39;interno dell&#39;attributo title è disponibile solo per gli utenti del mouse come finestra a comparsa con la descrizione comando e non è accessibile in modo coerente tramite la tastiera o da utenti di dispositivi mobili.
 * Gli assistenti vocali possono leggere gli attributi del titolo, ma questa funzionalità potrebbe non essere abilitata per impostazione predefinita; gli utenti potrebbero ignorare l’esistenza di un attributo title.
-* È difficile modificare l’aspetto del testo del titolo, il che significa che può essere difficile o impossibile leggere da parte di alcuni utenti.
+* È difficile modificare l’aspetto del testo del titolo, il che significa che per alcune persone può essere difficile o impossibile da leggere.
 
 Pertanto, anche se l’attributo title può essere utilizzato per fornire contesto aggiuntivo a un collegamento, è importante essere consapevoli dei suoi limiti e non utilizzarlo come alternativa al testo di collegamento appropriato.
 
@@ -864,19 +864,19 @@ John Smith's publications
 
 >[!NOTE]
 >
->Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il **Immagine** componente.
+>Lo snippet di cui sopra è un&#39;illustrazione, si consiglia di utilizzare il componente **Immagine**.
 
-Anche se è opportuno fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Sebbene sia consigliabile fornire un testo di collegamento che identifichi lo scopo del collegamento senza necessità di ulteriore contesto, questo non è sempre possibile. I collegamenti senza contesto possono essere utilizzati nei casi seguenti, di cui è possibile trovare alcuni esempi HTML in [Come soddisfare il criterio di successo 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
-* Il testo di collegamento fa parte di un elenco di collegamenti strettamente correlati e quando la voce di elenco che racchiude il collegamento fornisce contesto sufficiente.
-* Lo scopo di un collegamento può essere chiaramente identificato dal *precedente* (non il seguente) testo di paragrafo.
-* Il collegamento è contenuto all’interno di una tabella di dati e pertanto lo scopo può essere chiaramente identificato dalle intestazioni associate.
-* Un elenco di collegamenti è contenuto all’interno di un insieme di intestazioni e l’intestazione stessa fornisce un contesto appropriato.
-* Un elenco di collegamenti è contenuto all’interno di un collegamento nidificato e la voce dell’elenco principale sopra il collegamento nidificato fornisce il contesto appropriato.
+* Il testo del collegamento fa parte di un elenco di collegamenti strettamente correlati e quando la voce di elenco che racchiude il collegamento fornisce un contesto sufficiente.
+* Lo scopo di un collegamento può essere chiaramente identificato dalla *precedente* (non il testo seguente).
+* Il collegamento è contenuto in una tabella di dati e quindi lo scopo può essere chiaramente identificato dalle intestazioni associate.
+* Un elenco di collegamenti è contenuto all’interno di una serie di titoli e il titolo stesso fornisce il contesto appropriato.
+* Un elenco di collegamenti è contenuto all’interno di un collegamento nidificato e la voce di elenco principale sopra il collegamento nidificato fornisce il contesto appropriato.
 
 In alcuni casi, laddove in una pagina siano presenti diversi collegamenti (ciascuno dei quali fornisce la direzione di un collegamento con dettagli complessi ma necessari), può essere opportuno prevedere una versione alternativa della pagina web che mostri lo stesso contenuto, ma in cui il testo dei collegamenti non sia così dettagliato.
 
-In alternativa, utilizza gli script in modo che all’interno del collegamento sia fornita una quantità minima di testo. Quando si attiva un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento è *espanso* ulteriori dettagli. Un approccio simile consiste nell’utilizzare CSS per *nascondere* il collegamento completo da parte di utenti vedenti, ma lo trasmette comunque in versione completa agli utenti di utilità di lettura dello schermo. Questo non rientra nell&#39;ambito di applicazione del presente documento, ma ulteriori informazioni su come ottenere questo risultato sono disponibili nella [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context) sezione .
+In alternativa, utilizza gli script in modo da fornire una quantità minima di testo nel collegamento stesso. Quando si attiva un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento è *espanso* in dettaglio. Un approccio simile consiste nell’utilizzare i CSS per *nascondi* il collegamento completo da parte di utenti normovedenti, ma lo invia comunque a tutti gli utenti di utilità di lettura dello schermo. Questo obiettivo non rientra nel campo di applicazione del presente documento, ma ulteriori informazioni su come raggiungerlo sono reperibili nel [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context) sezione.
 
 #### Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -939,7 +939,7 @@ Lo scopo di questo criterio di successo è aiutare l’utente a individuare l’
 
 In presenza di più elementi, l’utente deve poter individuare con facilità l’elemento attivo. Se sullo schermo è presente un solo controllo utilizzabile da tastiera, il criterio di successo sarà soddisfatto perché la progettazione visiva presenta un solo elemento utilizzabile da tastiera.
 
-Nei punti in cui il criterio di successo indica “modalità operativa”, si fa riferimento alle piattaforme che potrebbero non mostrare sempre un indicatore dell’elemento di interesse. Di solito, esiste una sola modalità operativa, quindi questo criterio di successo si applica.
+Nei punti in cui il criterio di successo indica “modalità operativa”, si fa riferimento alle piattaforme che potrebbero non mostrare sempre un indicatore dell’elemento di interesse. Di solito esiste una sola modalità operativa, quindi questo criterio di successo è applicabile.
 
 #### Come soddisfare il criterio - Focus visibile (2.4.7) {#how-to-meet-focus-visible}
 
@@ -962,7 +962,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.4.
 
 * Criterio di successo 3.1.1
 * Livello A
-* Lingua della pagina: La lingua predefinita di ogni pagina web può essere determinata a livello di programmazione.
+* Lingua della pagina: la lingua predefinita di ogni pagina web può essere determinata a livello di programmazione.
 
 #### Finalità - Lingua della pagina (3.1.1)  {#purpose-language-of-page}
 
@@ -994,15 +994,15 @@ In AEM, la lingua predefinita della pagina viene impostata durante la creazione,
 
 * Criterio di successo 3.1.2
 * Livello AA
-* Lingua delle parti: La lingua di ogni passaggio o frase nel contenuto può essere determinata a livello di programmazione. Le eccezioni sono nomi propri, termini tecnici, parole in lingue indeterminate e parole o frasi che sono diventate parte del vernacolare del testo immediatamente circostante.
+* Parti in lingua: il linguaggio umano di ciascun passaggio o frase nel contenuto può essere determinato a livello di programmazione. Le eccezioni sono nomi propri, termini tecnici, parole in linguaggio indeterminato e parole o frasi che sono diventate parte del gergo del testo immediatamente circostante.
 
 #### Finalità - Parti in lingua (3.1.2)  {#purpose-language-of-parts}
 
 Lo scopo di questo criterio di successo è simile al criterio di successo [Lingua della pagina](#language-of-page), tranne per le pagine web che contengono contenuti in più lingue su una singola pagina (ad esempio, a causa di citazioni o prestiti lessicali non comuni).
 
-Le pagine che applicano questo criterio di successo consentono:
+Le pagine in cui viene applicato questo criterio di successo consentono quanto segue:
 
-* Software di transizione Braille per inserire caratteri accentuati.
+* Inserimento di caratteri accentuati da parte di software di traduzione Braille.
 * Pronuncia corretta da parte dell’utilità di lettura dello schermo di quelle parole che contengono caratteri speciali o non siano nella lingua predefinita identificata a livello di pagina.
 * Traduzione corretta del contenuto da una lingua all’altra da parte di strumenti di traduzione come Google Traduttore.
 
@@ -1028,7 +1028,7 @@ Analogamente, il browser può rappresentare correttamente un prestito lessicale 
 
 >[!NOTE]
 >
->Non è necessario seguire questo criterio di successo quando si includono nomi o città in lingue diverse. Oppure, quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita, ad esempio *schadenfreude* in inglese.
+>Non è necessario seguire questo criterio di successo per nomi o città in lingue diverse. Oppure, quando si utilizzano prestiti lessicali o frasi diventati comuni nella lingua predefinita, ad esempio *schadenfreude* in inglese.
 
 Per aggiungere l’elemento span con una lingua appropriata, è possibile modificare manualmente il codice HTML nella modalità di modifica sorgente dell’editor Rich Text, affinché venga letto come sopra indicato. In alternativa, l’attributo `lang` può essere incluso nell’editor Rich Text da un amministratore di sistema (consulta [ Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -1057,7 +1057,7 @@ L’obiettivo di questo criterio di successo è garantire prevedibilità durante
 * nuove finestre aperte quando un componente diventa attivo;
 * stato di attivazione che passa a un altro componente quando un componente diventa attivo.
 
-Lo stato attivo può essere spostato su un controllo tramite la tastiera (ad esempio, tasto di tabulazione su un controllo) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Per alcuni tipi di controlli, facendo clic su un controllo è possibile attivare anche il controllo (ad esempio, pulsante), che a sua volta può avviare una modifica nel contesto.
+Lo stato di attivazione può essere spostato su un controllo tramite la tastiera (ad esempio, tasto Tab per passare da un controllo all’altro) o il mouse (ad esempio, clic su un campo di testo). Lo spostamento del mouse su un controllo non ne determina l’attivazione, a meno che questo comportamento non venga implementato mediante script. Per alcuni tipi di controlli, il clic su un controllo può anche attivare il controllo, ad esempio un pulsante, che a sua volta può determinare un cambiamento del contesto.
 
 #### Come soddisfare il criterio - Al focus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1095,9 +1095,9 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.
 
 #### Finalità - Navigazione coerente (3.2.3) {#purpose-consistent-navigation}
 
-Lo scopo di questo criterio di successo è incoraggiare l’uso di presentazioni e layout coerenti per gli utenti che interagiscono con contenuti ripetuti all’interno di un set di pagine web e devono individuare informazioni o funzionalità specifiche più di una volta. Le persone ipovedenti che utilizzano l’ingrandimento dello schermo per visualizzare una piccola parte dello schermo alla volta spesso utilizzano riferimenti visivi o i margini della pagina per individuare rapidamente contenuti ripetuti. Presentare contenuti ripetuti nello stesso ordine è importante anche per gli utenti che si basano su elementi visivi e utilizzano la memoria spaziale o indicazioni visive all’interno del layout per individuare contenuti ripetuti.
+Lo scopo di questo criterio di successo è incoraggiare l’utilizzo di presentazioni e layout coerenti per gli utenti che interagiscono con contenuti ripetuti all’interno di un insieme di pagine web e che devono individuare informazioni o funzionalità specifiche più di una volta. Le persone ipovedenti che utilizzano l’ingrandimento dello schermo per visualizzare una piccola parte dello schermo alla volta spesso utilizzano riferimenti visivi o i margini della pagina per individuare rapidamente contenuti ripetuti. Presentare contenuti ripetuti nello stesso ordine è importante anche per gli utenti che si basano su elementi visivi e utilizzano la memoria spaziale o indicazioni visive all’interno del layout per individuare contenuti ripetuti.
 
-È importante notare che l’uso dell’espressione “stesso ordine” in questa sezione non implica l’impossibilità di utilizzare i menu o i blocchi di navigazione secondaria, né la struttura della pagina. Questo criterio di successo ha lo scopo di aiutare gli utenti che interagiscono con contenuti ripetuti in più pagine web a prevedere la posizione del contenuto che stanno cercando. E, trovarla più rapidamente quando lo incontrano di nuovo.
+È importante notare che l’uso dell’espressione “stesso ordine” in questa sezione non implica l’impossibilità di utilizzare i menu o i blocchi di navigazione secondaria, né la struttura della pagina. Questo criterio di successo ha lo scopo di aiutare gli utenti che interagiscono con contenuti ripetuti in più pagine web a prevedere la posizione del contenuto che stanno cercando. E, per trovarlo più rapidamente quando lo incontrano di nuovo.
 
 Gli utenti possono avviare una modifica dell’ordine utilizzando agenti utente adattivi o impostando le preferenze in modo che le informazioni vengano presentate nel modo più utile per loro.
 
@@ -1147,14 +1147,14 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.
 
 #### Finalità - Identificazione di errori (3.3.1) {#purpose-error-identification}
 
-L’obiettivo di questo criterio di successo è garantire che gli utenti siano informati della presenza di un errore e possano comprendere quale sia l’anomalia. Il messaggio di errore deve essere il più specifico possibile. In caso di invio non riuscito del modulo, la visualizzazione ripetuta del modulo e l’indicazione dei campi con errore non sono sufficienti per consentire ad alcuni utenti di rilevare che si è verificato un errore. Gli utenti che usano le utilità di lettura dello schermo, ad esempio, non potranno sapere che si è verificato un errore finché non incontrano uno degli indicatori di errore. È possibile che abbandonino completamente il modulo prima di incontrare l’indicatore di errore, ritenendo che la pagina semplicemente non funzioni. In WCAG, per [errore di inserimento](https://www.w3.org/TR/WCAG/#dfn-input-error) si intende un errore causato da informazioni fornite dall’utente che non vengono accettate dal sistema. Ciò include quanto segue.
+L’obiettivo di questo criterio di successo è garantire che gli utenti siano informati della presenza di un errore e possano comprendere quale sia l’anomalia. Il messaggio di errore deve essere il più specifico possibile. In caso di invio non riuscito di un modulo, la visualizzazione ripetuta del modulo e l’indicazione dei campi che presentano l’errore non sono sufficienti per consentire ad alcuni utenti di comprendere che si è verificato un errore. Gli utenti che usano le utilità di lettura dello schermo, ad esempio, non potranno sapere che si è verificato un errore finché non incontrano uno degli indicatori di errore. È possibile che abbandonino completamente il modulo prima di incontrare l’indicatore di errore, ritenendo che la pagina semplicemente non funzioni. In WCAG, per [errore di inserimento](https://www.w3.org/TR/WCAG/#dfn-input-error) si intende un errore causato da informazioni fornite dall’utente che non vengono accettate dal sistema. Ciò include quanto segue.
 
-Informazioni richieste dalla pagina web ma omesse dall’utente o informazioni fornite dall’utente ma non conformi al formato dati richiesto o ai valori consentiti.
-Esempio:
+Informazioni richieste dalla pagina web ma omesse dall’utente o informazioni fornite dall’utente ma che non rientrano nel formato dati richiesto o nei valori consentiti.
+Ad esempio:
 
-* l&#39;utente non immette l&#39;abbreviazione appropriata nel campo stato, provincia o regione;
+* l’utente non immette l’abbreviazione corretta nel campo stato, provincia o regione;
 * l’utente immette nel campo Stato un’abbreviazione che non corrisponde a uno stato valido;
-* l’utente immette un codice postale o un codice postale inesistente;
+* l’utente immette un codice postale inesistente;
 * l’utente immette una data di nascita collocata nel futuro;
 * l’utente immette caratteri alfabetici o parentesi nel campo relativo al numero di telefono che accetta solo numeri;
 * l’utente immette un’offerta inferiore all’offerta precedente o all’incremento dell’offerta minima.
@@ -1172,7 +1172,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.3.
 
 * Criterio di successo 3.3.2
 * Livello A
-* Etichette o istruzioni: Etichette o istruzioni vengono fornite quando il contenuto richiede l’input dell’utente.
+* Etichette o istruzioni: le etichette o le istruzioni vengono fornite quando il contenuto richiede l’input dell’utente.
 
 #### Finalità - Etichette o istruzioni (3.3.2)  {#purpose-labels-or-instructions}
 
@@ -1184,17 +1184,17 @@ Nel progetto demo AEM WKND viene aggiunta un&#39;etichetta predefinita quando si
 
 Il campo **Titolo** deve essere utilizzato per gli elementi di campo in quanto fornisce un’etichetta che è disponibile per la tecnologia per l’accessibilità. Scrivere semplicemente un’etichetta di testo accanto al campo non è sufficiente.
 
-Per alcuni componenti modulo, è anche possibile nascondere visivamente le etichette utilizzando la casella di controllo **Nascondi titolo**. Le etichette nascoste in questo modo sono ancora disponibili per la tecnologia di assistenza, ma non vengono visualizzate sullo schermo. Anche se questo può essere un buon approccio in alcune situazioni, è meglio includere un’etichetta visiva laddove possibile, in quanto alcuni utenti potrebbero osservare una piccola sezione dello schermo (un campo alla volta) e dover utilizzare le etichette per identificare correttamente il campo.
+Per alcuni componenti modulo, è anche possibile nascondere visivamente le etichette utilizzando la casella di controllo **Nascondi titolo**. Le etichette nascoste in questo modo sono ancora disponibili per la tecnologia di assistenza, ma non vengono visualizzate sullo schermo. Anche se questo può essere un buon approccio in alcune situazioni, è meglio includere un’etichetta visiva laddove possibile, in quanto alcuni utenti potrebbero stare guardando una piccola sezione dello schermo (un campo alla volta) e necessitare delle etichette per identificare il campo in modo corretto.
 
 ###### Pulsanti immagine {#image-buttons}
 
-Dove vengono utilizzati i pulsanti immagine (ad esempio, **Pulsante Immagine** componente del progetto WKND), **Titolo** nel campo **Titolo e testo** la scheda della finestra di dialogo di modifica fornisce effettivamente il testo alt per l’immagine, anziché l’etichetta. Nell’esempio seguente, l’immagine con il testo `Submit` presenta il testo alt `Submit`, aggiunto dal campo **Titolo** della finestra di dialogo di modifica.
+Dove vengono utilizzati i pulsanti immagine (ad esempio, **Pulsante immagine** componente del progetto WKND), la **Titolo** campo in **Titolo e testo** scheda della finestra di dialogo per modifica fornisce effettivamente il testo alternativo per l’immagine, anziché l’etichetta. Nell’esempio seguente, l’immagine con il testo `Submit` presenta il testo alt `Submit`, aggiunto dal campo **Titolo** della finestra di dialogo di modifica.
 
 ###### Gruppi di campi modulo {#groups-of-form-fields}
 
 Nel progetto WKND, se esiste un gruppo di controlli correlati, come **Gruppo pulsanti di scelta**, potrebbe essere necessario assegnargli un titolo e dei controlli specifici. Quando si aggiunge un set di pulsanti di scelta in AEM, il campo **Titolo** fornisce il titolo del gruppo, mentre i singoli titoli vengono specificati durante la creazione dei pulsanti di scelta (**Elementi**).
 
-Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Gli editori di modelli devono racchiudere il titolo nel testo necessario `fieldset` e `legend` per creare questa associazione e questo può essere fatto solo modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Tuttavia, non esiste alcuna associazione programmatica tra il titolo del gruppo e i pulsanti di scelta. Gli editor di modelli devono racchiudere il titolo tra i `fieldset` e `legend` tag per creare questa associazione. Questa operazione può essere eseguita solo modificando il codice sorgente della pagina. In alternativa, un amministratore di sistema può aggiungere il supporto di questi elementi affinché vengano visualizzati nella finestra di dialogo **Proprietà campo** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 ###### Considerazioni aggiuntive relative ai moduli {#additional-considerations-for-forms}
 
@@ -1209,7 +1209,7 @@ Le etichette sono posizionate immediatamente a destra del campo.
 * Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
 Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
-Nei moduli semplici con funzionalità limitata, etichettare in modo appropriato un `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
+In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 
 #### Ulteriori informazioni - Etichette o istruzioni (3.3.2) {#more-information-labels-or-instructions}
 
@@ -1254,7 +1254,7 @@ I dati inseriti dall’utente vengono verificati e all’utente viene data l’o
 
 #### Finalità - Prevenzione degli errori (legali, finanziari, dati) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-L’obiettivo di questo criterio di successo è aiutare gli utenti con disabilità a evitare gravi conseguenze in seguito a un errore durante l’esecuzione di un’azione che non può essere annullata. Ad esempio, l’acquisto di biglietti aerei non rimborsabili o l’invio di un ordine per l’acquisto di azioni in un conto di intermediazione sono transazioni finanziarie con conseguenze importanti. Se un utente commette un errore nella data del viaggio aereo, potrebbe acquistare un biglietto non modificabile per il giorno sbagliato. Se l’utente commette un errore nell’indicare il numero di azioni da comprare, potrebbe acquistare un numero di azioni superiore al previsto. Entrambi questi tipi di errori costosi implicano transazioni che avvengono immediatamente e che non possono essere successivamente modificate. Allo stesso modo, può essere un errore irreversibile se gli utenti modificano o cancellano involontariamente i dati memorizzati in un database a cui successivamente devono accedere, come l&#39;intero profilo di viaggio in un sito web di servizi di viaggio. Con il riferimento alla modifica o all’eliminazione di dati “controllabili dall’utente” si intende evitare la perdita di massa di dati, ad esempio a causa dell’eliminazione di un file o un record. Non si intende chiedere conferma per ogni comando Salva o per la semplice creazione o modifica di documenti, record o altri dati.
+L’obiettivo di questo criterio di successo è aiutare gli utenti con disabilità a evitare gravi conseguenze in seguito a un errore durante l’esecuzione di un’azione che non può essere annullata. Ad esempio, l’acquisto di biglietti aerei non rimborsabili o l’invio di un ordine per l’acquisto di azioni in un conto di intermediazione sono transazioni finanziarie con conseguenze importanti. Se un utente commette un errore nella data del viaggio aereo, potrebbe acquistare un biglietto non modificabile per il giorno sbagliato. Se l’utente commette un errore nell’indicare il numero di azioni da comprare, potrebbe acquistare un numero di azioni superiore al previsto. Entrambi questi tipi di errori costosi implicano transazioni immediate che non possono essere successivamente modificate. Analogamente, può essere considerato errore irreversibile la modifica o l’eliminazione accidentale da parte dell’utente di dati memorizzati in un database a cui successivamente deve accedere, ad esempio l’intero profilo di viaggio in un sito web dei servizi di viaggio. Con il riferimento alla modifica o all’eliminazione di dati “controllabili dall’utente” si intende evitare la perdita di massa di dati, ad esempio a causa dell’eliminazione di un file o un record. Non si intende chiedere conferma per ogni comando Salva o per la semplice creazione o modifica di documenti, record o altri dati.
 
 Per gli utenti con disabilità, la probabilità di commettere degli errori è maggiore. Le persone con disabilità di lettura potrebbero scambiare numeri e lettere, le persone con disabilità motorie potrebbero premere un tasto accidentalmente. La possibilità di annullare le azioni consente agli utenti di correggere un errore che potrebbe causare gravi conseguenze. La possibilità di rivedere e correggere le informazioni offre all’utente l’opportunità di rilevare un errore prima di intraprendere un’azione che comporta gravi conseguenze.
 
@@ -1289,7 +1289,7 @@ Garantire la massima compatibilità con i programmi utente attuali e futuri, com
 
 Lo scopo di questo criterio di successo è garantire che gli agenti utente, comprese le tecnologie per l’accessibilità, possano interpretare e analizzare in modo preciso il contenuto. Se non è possibile analizzare il contenuto in una struttura dati, agenti utente diversi potrebbero presentarlo in modo diverso o non essere in grado di analizzarlo. Alcuni agenti utente utilizzano “tecniche di correzione” per eseguire il rendering di contenuto codificato in modo limitato.
 
-Poiché le tecniche di correzione variano da un agente utente all’altro, gli autori non possono presumere che il contenuto sia analizzato accuratamente in una struttura di dati o che venga eseguito correttamente il rendering da parte di agenti utente specializzati, incluse le tecnologie per l’accessibilità, a meno che il contenuto non venga creato in base alle regole definite nella grammatica formale per tale tecnologia. Nei linguaggi di marcatura, gli errori nella sintassi di elementi e attributi e la mancata fornitura di tag di apertura e chiusura nidificati in modo corretto generano errori che impediscono agli agenti utente di analizzare il contenuto in modo affidabile. Pertanto, il criterio di successo richiede che il contenuto possa essere analizzato utilizzando solo le regole della grammatica formale.
+Poiché le tecniche di correzione variano nei diversi agenti utente, gli autori non possono presumere che il contenuto venga analizzato in modo accurato in una struttura di dati o che ne venga eseguito correttamente il rendering da parte di agenti utente specializzati, incluse le tecnologie per l’accessibilità, a meno che il contenuto non venga creato in base alle regole definite nella grammatica formale per tale tecnologia. Nei linguaggi di marcatura, gli errori nella sintassi di elementi e attributi e la mancata fornitura di tag di apertura e chiusura nidificati in modo corretto generano errori che impediscono agli agenti utente di analizzare il contenuto in modo affidabile. Pertanto, il criterio di successo richiede che il contenuto possa essere analizzato utilizzando solo le regole della grammatica formale.
 
 #### Come soddisfare il criterio - Analisi sintattica (parsing) (4.1.1) {#how-to-meet-parsing}
 
@@ -1312,9 +1312,9 @@ Lo scopo di questo criterio di successo è garantire che le tecnologie per l’a
 
 Quando si utilizzano controlli standard tramite tecnologie accessibili, questo processo è semplice. Se gli elementi dell&#39;interfaccia utente vengono utilizzati in base alle specifiche, le condizioni di questa indicazione saranno soddisfatte. (vedi gli esempi di criteri di successo 4.1.2 di seguito).
 
-Tuttavia, se vengono creati controlli personalizzati o se gli elementi dell’interfaccia sono programmati (in codice o script) in modo da avere un ruolo e/o una funzione diversi dal solito, è necessario adottare ulteriori misure per garantire che i controlli forniscano informazioni importanti alle tecnologie per l’accessibilità e si permettano di essere controllati dalle tecnologie per l’accessibilità.
+Tuttavia, se vengono creati controlli personalizzati o se gli elementi dell’interfaccia sono programmati (nel codice o nello script) in modo da avere un ruolo e/o una funzione diversi rispetto al solito, è necessario adottare ulteriori misure per garantire che i controlli forniscano informazioni importanti alle tecnologie per l’accessibilità e che possano essere controllati da tali tecnologie.
 
-Uno stato particolarmente importante di un controllo dell’interfaccia utente è quello dell’attivazione. Lo stato di attivazione di un controllo può essere determinato a livello di programmazione e le notifiche sul passaggio a un altro elemento attivo vengono inviate agli agenti utente e alla tecnologia per l’accessibilità. Altri esempi di stato del controllo dell’interfaccia utente sono la selezione di una casella di controllo o di un pulsante di scelta. Oppure, se un albero o un nodo di elenco comprimibili viene espanso o compresso.
+Uno stato particolarmente importante di un controllo dell’interfaccia utente è quello dell’attivazione. Lo stato di attivazione di un controllo può essere determinato a livello di programmazione e le notifiche sul passaggio a un altro elemento attivo vengono inviate agli agenti utente e alla tecnologia per l’accessibilità. Altri esempi di stato del controllo dell’interfaccia utente sono la selezione di una casella di controllo o di un pulsante di scelta. Oppure, se una struttura o un nodo di elenco comprimibile è espanso o compresso.
 
 #### Come soddisfare il criterio - Nome, ruolo, valore (4.1.2) {#how-to-meet-ame-role-value}
 

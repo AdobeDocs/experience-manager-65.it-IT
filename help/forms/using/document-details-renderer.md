@@ -1,7 +1,7 @@
 ---
-title: Dettagli del documento per il renderer
+title: Dettagli documento per renderer
 seo-title: Document details for renderer
-description: Informazioni concettuali sul funzionamento dei rendering nell’area di lavoro di AEM Forms per eseguire il rendering dei vari tipi di modulo e file supportati.
+description: Informazioni concettuali sul funzionamento dei rendering nell’area di lavoro di AEM Forms per eseguire il rendering dei vari tipi di file e moduli supportati.
 seo-description: Conceptual information on how renders work in AEM Forms workspace to render the various supported form and file types.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
@@ -16,83 +16,83 @@ ht-degree: 0%
 
 ---
 
-# Dettagli del documento per il renderer {#document-details-for-renderer}
+# Dettagli documento per renderer {#document-details-for-renderer}
 
 ## Introduzione {#introduction}
 
-Nell’area di lavoro di AEM Forms, sono supportati più tipi di moduli senza soluzione di continuità. Comprendono:
+Nell’area di lavoro di AEM Forms, sono supportati senza problemi più tipi di modulo. Comprendono:
 
 * PDF forms (XDP/Acroform/Flat PDF)
 * Nuovi moduli HTML
 * Immagini
 * Applicazioni di terze parti (ad esempio, Gestione della corrispondenza)
 
-Questo documento spiega il funzionamento di questi moduli di rendering dal punto di vista della personalizzazione semantica / riutilizzo dei componenti, in modo che i requisiti del cliente siano soddisfatti senza interrompere il rendering. Sebbene lo spazio di lavoro di AEM Forms consenta qualsiasi modifica dell’interfaccia utente/semantica, si consiglia di non modificare la logica di rendering di diversi tipi di modulo, altrimenti i risultati potrebbero essere imprevedibili. Questo documento fornisce indicazioni/conoscenze per supportare il rendering dello stesso modulo, l’utilizzo degli stessi componenti Workspace in portali diversi e non per modificare la logica di rendering stessa.
+Questo documento spiega il funzionamento di questi renderer dal punto di vista della personalizzazione semantica e del riutilizzo dei componenti, in modo da soddisfare i requisiti dei clienti senza interrompere alcuna rappresentazione. Sebbene l’area di lavoro di AEM Forms consenta qualsiasi modifica semantica o all’interfaccia utente, si consiglia di non modificare la logica di rendering dei diversi tipi di modulo, altrimenti i risultati potrebbero essere imprevedibili. Questo documento offre indicazioni e supporto per il rendering dello stesso modulo, l’utilizzo degli stessi componenti dell’area di lavoro in portali diversi e non per la modifica della logica di rendering.
 
 ## PDF forms {#pdf-forms}
 
-Viene eseguito il rendering dei PDF forms da `PdfTaskForm View`.
+Il rendering dei PDF forms viene eseguito da `PdfTaskForm View`.
 
-Quando si esegue il rendering di un modulo XDP come PDF, viene eseguito un `FormBridge` JavaScript™ viene aggiunto dal servizio FormsAugmenter. Questo JavaScript™ (all’interno del modulo PDF) consente di eseguire azioni quali l’invio, il salvataggio di moduli o l’utilizzo offline del modulo.
+Quando si esegue il rendering di un modulo XDP come PDF, viene `FormBridge` JavaScript™ viene aggiunto dal servizio FormsAugmenter. Questo JavaScript™ (all’interno del modulo PDF) consente di eseguire azioni quali l’invio di un modulo, il salvataggio di un modulo o la disconnessione del modulo.
 
-Nell’area di lavoro di AEM Forms, la visualizzazione PDFTaskForm comunica con `FormBridge`javascript, tramite un HTML intermediario presente a `/lc/libs/ws/libs/ws/pdf.html`. Il flusso è:
+Nell’area di lavoro di AEM Forms, la vista PDFTaskForm comunica con `FormBridge`javascript, tramite un HTML intermedio presente all’indirizzo `/lc/libs/ws/libs/ws/pdf.html`. Il flusso è:
 
-**Visualizzazione PDFTaskForm - pdf.html**
+**Vista PDFTaskForm - pdf.html**
 
-Comunica utilizzando `window.postMessage` / `window.attachEvent('message')`
+Comunica tramite `window.postMessage` / `window.attachEvent('message')`
 
-Questo metodo è il modo standard di comunicazione tra un frame principale e un iframe. I listener di eventi esistenti dai PDF forms aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. Questa eliminazione considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli delle attività.
+Questo metodo è il metodo standard di comunicazione tra un frame principale e un iframe. I listener di eventi esistenti dai PDF forms aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. Questa rimozione considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli delle attività.
 
-**pdf.html - `FormBridge`javascript all’interno del PDF renderizzato**
+**pdf.html - `FormBridge`javascript all’interno del PDF di cui è stato eseguito il rendering**
 
-Comunica utilizzando `pdfObject.postMessage` / `pdfObject.messageHandler`
+Comunica tramite `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-Questo metodo è il metodo standard di comunicazione con un PDFJavaScript di un HTML. La visualizzazione PdfTaskForm si occupa anche di flat PDF e lo rende semplice.
+Questo metodo è il metodo standard di comunicazione con un PDFJavaScript di un HTML. La visualizzazione PdfTaskForm si occupa anche di flat PDF e la rende in modo semplice.
 
 >[!NOTE]
 >
->Non è consigliabile modificare il contenuto pdf.html / della visualizzazione PdfTaskForm.
+>Si sconsiglia di modificare il file pdf.html / contenuto della visualizzazione PdfTaskForm.
 
 ## Nuovo HTML Forms {#new-html-forms}
 
-Il rendering dei nuovi moduli HTML viene eseguito tramite la visualizzazione NewHTMLTaskForm.
+Il rendering dei nuovi moduli HTML viene eseguito dalla vista NewHTMLTaskForm.
 
-Quando viene eseguito il rendering di un modulo XDP come HTML utilizzando il pacchetto di moduli mobili distribuito su CRX, viene aggiunto anche `FormBridge`JavaScript al modulo, che espone diversi metodi di salvataggio e invio dei dati del modulo.
+Quando viene eseguito il rendering di un modulo XDP come HTML utilizzando il pacchetto di moduli mobili distribuito su CRX, vengono aggiunti anche altri `FormBridge`JavaScript per il modulo, che espone diversi metodi per salvare e inviare i dati del modulo.
 
 Questo JavaScript è diverso da quello indicato nei PDF forms precedenti, ma ha uno scopo simile.
 
 >[!NOTE]
 >
->Non è consigliabile modificare il contenuto della visualizzazione NewHTMLTaskForm.
+>Si consiglia di non modificare il contenuto della visualizzazione NewHTMLTaskForm.
 
-## Forms e guide di Flex {#flex-forms-and-guides}
+## Flex Forms e guide {#flex-forms-and-guides}
 
-Il rendering di Flex Forms viene eseguito da SwfTaskForm e il rendering delle guide viene eseguito rispettivamente da HtmlTaskForm Views.
+Il rendering dei Forms di Flex viene eseguito da SwfTaskForm e il rendering delle guide viene eseguito rispettivamente da HtmlTaskForm Views.
 
-Nell’area di lavoro di AEM Forms, queste visualizzazioni comunicano con l’effettivo SWF che costituisce la forma/guida flex utilizzando un SWF intermedio presente in `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+Nell’area di lavoro di AEM Forms, queste visualizzazioni comunicano con il SWF effettivo che costituisce la maschera/guida flex utilizzando un SWF intermedio presente in `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicazione avviene utilizzando `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Questo protocollo è definito dalla `WsNextAdapter.swf`. L&#39;esistente `flexMessageHandlers`su un oggetto finestra, i moduli di SWF aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. La logica considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli dell’attività. `WsNextAdapter.swf` viene utilizzato per eseguire varie azioni del modulo, come salvataggio o invio.
+Questo protocollo è definito dal `WsNextAdapter.swf`. L&#39;esistente `flexMessageHandlers`in un oggetto finestra, i form SWF aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. La logica considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli delle attività. `WsNextAdapter.swf` viene utilizzato per eseguire varie azioni del modulo, ad esempio salva o invia.
 
 >[!NOTE]
 >
->Si sconsiglia di modificare `WSNextAdapter.swf` o il contenuto della visualizzazione SwfTaskForm / HtmlTaskForm.
+>Non è consigliabile modificare `WSNextAdapter.swf` o il contenuto della visualizzazione SwfTaskForm/HtmlTaskForm.
 
 ## Applicazioni di terze parti (ad esempio, Gestione della corrispondenza) {#third-party-applications-for-example-correspondence-management}
 
-Viene eseguito il rendering di applicazioni di terze parti utilizzando la visualizzazione ExtAppTaskForm.
+Il rendering delle applicazioni di terze parti viene eseguito utilizzando la vista ExtAppTaskForm.
 
-**Comunicazione dell’applicazione di terze parti all’area di lavoro di AEM Forms**
+**Applicazione di terze parti per la comunicazione nell’area di lavoro di AEM Forms**
 
-L’area di lavoro di AEM Forms è in ascolto su `window.global.postMessage([Message],[Payload])`
+L’area di lavoro AEM Forms è in ascolto `window.global.postMessage([Message],[Payload])`
 
-[Messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per notificare l’area di lavoro di AEM Forms in base alle esigenze. L’utilizzo di questa interfaccia è obbligatorio, perché l’area di lavoro di AEM Forms deve sapere che quando l’attività viene inviata in modo da poter ripulire la finestra dell’attività.
+[Messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`nel `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche necessarie all’area di lavoro di AEM Forms. L’utilizzo di questa interfaccia è obbligatorio perché l’area di lavoro di AEM Forms deve sapere quando l’attività viene inviata in modo da poter pulire la finestra dell’attività.
 
-**Comunicazione tra l’area di lavoro di AEM Forms e applicazioni di terze parti**
+**Comunicazione tra AEM Forms Workspace e applicazioni di terze parti**
 
-Se i pulsanti di azione diretta dell’area di lavoro AEM Forms sono visibili, effettua una chiamata `window.[External-App-Name].getMessage([Action])`, dove `[Action]` viene letto dal `routeActionMap`. L’applicazione di terze parti deve ascoltare questa interfaccia e quindi inviare una notifica all’area di lavoro di AEM Forms tramite l’ `postMessage ()` API.
+Se i pulsanti di azione diretta dell’area di lavoro AEM Forms sono visibili, effettua una chiamata `window.[External-App-Name].getMessage([Action])`, dove `[Action]` viene letto da `routeActionMap`. L’applicazione di terze parti deve rimanere in ascolto su questa interfaccia, quindi inviare una notifica all’area di lavoro di AEM Forms tramite `postMessage ()` API.
 
-Ad esempio, un&#39;applicazione Flex può definire `ExternalInterface.addCallback('getMessage', listener)` a sostegno della presente comunicazione. Se l’applicazione di terze parti desidera gestire l’invio del modulo tramite i propri pulsanti, è necessario specificare `hideDirectActions = true() in the runtimeMap` e puoi saltare questo ascoltatore. Pertanto, questo costrutto è facoltativo.
+Ad esempio, un’applicazione Flex può definire `ExternalInterface.addCallback('getMessage', listener)` a sostegno di questa comunicazione. Se l’applicazione di terze parti desidera gestire l’invio del modulo tramite i propri pulsanti, è necessario specificare `hideDirectActions = true() in the runtimeMap` e questo listener può essere ignorato. Pertanto, questo costrutto è facoltativo.
 
-Per ulteriori informazioni sull’integrazione di applicazioni di terze parti per quanto riguarda la gestione della corrispondenza, consulta [Integrazione della gestione della corrispondenza nell’area di lavoro di AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
+Per ulteriori informazioni sull’integrazione di applicazioni di terze parti in relazione alla gestione della corrispondenza, consulta [Integrazione della gestione della corrispondenza nell’area di lavoro di AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).

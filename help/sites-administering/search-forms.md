@@ -15,11 +15,11 @@ ht-degree: 12%
 
 # Configurazione dei moduli di ricerca{#configuring-search-forms}
 
-Utilizzo **Ricerca Forms** per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili in diverse console AEM e/o pannelli dell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle esigenze specifiche.
+Utilizzare **Cerca in Forms** personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili in varie console e/o pannelli AEM dell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle tue esigenze specifiche.
 
-A [gamma di predicati](#predicates-and-their-settings)Sono disponibili preconfigurati. Puoi aggiungere più predicati, tra cui il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata dall’utente, oppure il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori specificati per una particolare proprietà.
+A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili come strumenti predefiniti. Puoi aggiungere più predicati, tra cui il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata dall’utente o il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori specificati per una particolare proprietà.
 
-È possibile [configurare i moduli di ricerca](#configuring-your-search-forms) utilizzato in diverse console e nel browser delle risorse (durante la modifica delle pagine). La [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) accessibile tramite:
+È possibile [configurare i moduli di ricerca](#configuring-your-search-forms) utilizzato nelle diverse console e nel browser risorse (durante la modifica delle pagine). Il [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) accessibile tramite:
 
 * **Strumenti**
 
@@ -27,7 +27,7 @@ A [gamma di predicati](#predicates-and-their-settings)Sono disponibili preconfig
 
       * **Moduli di ricerca**
 
-La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo a lucchetto. Indica che la configurazione appropriata è quella predefinita (preconfigurata) e non può essere eliminata. Una volta personalizzata la configurazione il blocco scompare - a meno che tu non [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso viene ripristinato il valore predefinito (e l’indicatore a forma di lucchetto).
+La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare, a meno che non si [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso vengono ripristinati il valore predefinito (e l’indicatore del lucchetto).
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
@@ -37,43 +37,43 @@ Le configurazioni predefinite disponibili sono:
 
 * **Editor pagina (ricerca documenti):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di documenti nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di un documento nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca immagini):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di immagini nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili per la ricerca di immagini nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca manoscritto):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di manoscritti nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili per la ricerca di manoscritti nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca pagine):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di pagine nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di pagine nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca paragrafi):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di paragrafi nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di paragrafi nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca prodotti):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
 
-* **Editor pagina (Dynamic Media Classic) [ex Scene7] ricerca)**:
+* **Editor pagina (Dynamic Media Classic) [precedentemente Scene7] search)**:
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
 
 * **Barra di ricerca amministrazione sito**:
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando si utilizza la barra di ricerca della console Sites .
+   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la barra di ricerca della console Sites.
 
 * **Editor pagina (ricerca video):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di video nel browser Risorse (durante la modifica di una pagina).
+   Questa configurazione definisce le opzioni disponibili durante la ricerca di video nel browser Risorse (quando si modifica una pagina).
 
 * **Barra di ricerca amministrazione risorse:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando si utilizza la console Assets.
+   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la console Assets.
 
 * **Barra di ricerca amministrazione progetti:**
 
@@ -81,7 +81,7 @@ Le configurazioni predefinite disponibili sono:
 
 * **Barra di ricerca amministrazione ordini:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l&#39;utente durante la ricerca di ordini di e-commerce.
+   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di ordini commerce.
 
 * **Barra di ricerca amministrazione raccolte prodotti:**
 
@@ -93,7 +93,7 @@ Le configurazioni predefinite disponibili sono:
 
 * **Barra di ricerca amministrazione progetti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di progetti.
+   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nei progetti.
 
 ## Predicati e relative impostazioni {#predicates-and-their-settings}
 
@@ -110,7 +110,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Analytics </td>
-   <td>Funzionalità di ricerca/filtro nel browser Sites quando vengono visualizzati i dati basati su Analytics. I filtri di ricerca di Analytics vengono caricati per corrispondere alle colonne di analisi personalizzate mappate.</td>
+   <td>Funzionalità di ricerca/filtro nel browser Sites quando vengono visualizzati i dati basati su Analytics. I filtri di ricerca di Analytics si caricano per corrispondere alle colonne di analisi personalizzate mappate.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -120,11 +120,11 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   <tr>
    <td>Ultima modifica risorsa </td>
    <td>Data dell’ultima modifica apportata alla risorsa.<br /> </td>
-   <td>Un predicato personalizzato in base al predicato della data.</td>
+   <td>Un predicato personalizzato, basato sul predicato Data.</td>
   </tr>
   <tr>
    <td>Componenti </td>
-   <td>Consente a un autore di cercare/filtrare le pagine che contengono un componente specifico. Ad esempio, una galleria di immagini.<br /> </td>
+   <td>Consente all’autore di cercare/filtrare le pagine contenenti un componente specifico. Ad esempio una galleria di immagini.<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -136,7 +136,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Data </td>
-   <td>Ricerca basata su cursore delle risorse in base a una proprietà data .</td>
+   <td>Ricerca delle risorse basata su cursore in base a una proprietà data.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -146,7 +146,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo date </td>
-   <td>Cerca le risorse create all’interno di un intervallo specificato per una proprietà data. Nel pannello Ricerca, puoi specificare le date di inizio e fine.</td>
+   <td>Cerca le risorse create all’interno di un intervallo specificato per una proprietà di data. Nel pannello Ricerca, potete specificare le date di inizio e fine.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -180,7 +180,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Filtro nascosto</td>
-   <td>Filtro su proprietà e valore non visibile all'utente.</td>
+   <td>Un filtro per proprietà e valore, non visibile all’utente.</td>
    <td>
     <ul>
      <li>Nome proprietà</li>
@@ -190,7 +190,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Opzioni </td>
-   <td><p>Le opzioni sono nodi di contenuto creati dall’utente.</p> <p>Vedi <a href="#addinganoptionspredicate">Aggiunta di un predicato Opzioni</a> per ulteriori informazioni.</p> </td>
+   <td><p>Le opzioni sono nodi di contenuto creati dall’utente.</p> <p>Consulta <a href="#addinganoptionspredicate">Aggiunta di un predicato opzioni</a> per ulteriori informazioni.</p> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -203,7 +203,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Opzioni Proprietà </td>
-   <td>Cerca una proprietà dell’opzione.</td>
+   <td>Cerca in una proprietà dell’opzione.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -226,7 +226,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Percorso </td>
-   <td>Cerca le risorse situate sotto un percorso specifico.</td>
+   <td>Cerca le risorse che si trovano in un percorso specifico.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -251,7 +251,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo </td>
-   <td>Cerca risorse che si trovano in un intervallo specificato. Nel pannello Ricerca puoi specificare i valori minimo e massimo per l’intervallo.</td>
+   <td>Cerca le risorse che si trovano all’interno di un intervallo specificato. Nel pannello Ricerca, potete specificare i valori minimo e massimo per l'intervallo.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -261,7 +261,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Opzioni intervallo </td>
-   <td>Un predicato di ricerca specifico per le risorse e lo stesso predicato comune del cursore. È ancora disponibile a causa di problemi di compatibilità con versioni precedenti.</td>
+   <td>Un predicato di ricerca specifico per Assets e lo stesso del predicato cursore comune. È ancora disponibile a causa di problemi di compatibilità con le versioni precedenti.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -272,7 +272,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Valutazione </td>
-   <td>Cerca le risorse in base al loro rating.<br /> </td>
+   <td>Cerca le risorse in base alla loro valutazione.<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -283,7 +283,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Data relativa </td>
-   <td>Cerca le risorse in base alla data relativa della loro creazione<br /> </td>
+   <td>Cercare le risorse in base alla data relativa di creazione<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -294,7 +294,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo cursore </td>
-   <td>Un predicato di ricerca comune che estende il predicato dell'intervallo con la funzionalità di scorrimento. Il valore della proprietà ricercata deve essere compreso tra i limiti del cursore.</td>
+   <td>Un predicato di ricerca comune che estende il predicato di intervallo con la funzionalità del cursore. Il valore della proprietà ricercata deve essere compreso tra i limiti del cursore.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -304,7 +304,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Tag </td>
-   <td>Cerca le risorse in base ai tag. Puoi configurare la proprietà Path per popolare vari tag nell’elenco Tag .</td>
+   <td>Cerca le risorse in base ai tag. È possibile configurare la proprietà Path per compilare vari tag nell'elenco Tag.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -331,37 +331,37 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
 >* I predicati di ricerca comuni sono definiti in:
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* I predicati di ricerca relativi solo all’amministrazione del sito (interfaccia classica) si trovano in:
+>* I predicati di ricerca relativi solo a siteadmin (interfaccia classica) si trovano in:
    >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Sono obsoleti e sono disponibili solo per la compatibilità con le versioni precedenti.
+   >   * Sono obsoleti e disponibili solo per compatibilità con le versioni precedenti.
 >
 >Queste informazioni sono solo a scopo di riferimento, non è necessario apportare modifiche a `/libs`.
 
-### Impostazioni del predicato {#predicate-settings}
+### Impostazioni predicato {#predicate-settings}
 
-A seconda del predicato è disponibile una selezione di impostazioni per la configurazione:
+A seconda del predicato, è disponibile una selezione di impostazioni per la configurazione:
 
 * **Etichetta campo**
 
-   Etichetta che verrà visualizzata come intestazione comprimibile o come etichetta di campo del predicato.
+   L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
 
 * **Descrizione**
 
-   Dettagli descrittivi per l&#39;utente.
+   Dettagli descrittivi per l’utente.
 
 * **Segnaposto**
 
-   Testo vuoto o il segnaposto del predicato nel caso in cui non venga inserito alcun testo di filtro.
+   Testo vuoto o il segnaposto del predicato se non viene immesso testo filtrante.
 
 * **Nome proprietà**
 
-   Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` nodo (ogni asterisco rappresenta un livello di nodo).
+   Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` (ogni asterisco rappresenta un livello di nodo).
 
-   Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` sulla proprietà `jcr:content` uso del nodo `*/jcr:content/x`
+   Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` proprietà sul `jcr:content` utilizzo del nodo `*/jcr:content/x`
 
 * **Profondità proprietà**
 
-   Profondità massima per la ricerca di tale proprietà all&#39;interno delle risorse. È quindi possibile eseguire una ricerca su tale proprietà su una risorsa e sugli elementi secondari ricorsivi fino a quando il livello degli elementi secondari non è uguale a profondità specificata.
+   Profondità massima per la ricerca di tale proprietà nelle risorse. Quindi una ricerca su quella proprietà può essere eseguita su una risorsa e su elementi figlio ricorsivi fino a quando il livello degli elementi figlio non è uguale alla profondità specificata.
 
 * **Valore proprietà**
 
@@ -375,74 +375,74 @@ A seconda del predicato è disponibile una selezione di impostazioni per la conf
 
 * **Percorso opzione**
 
-   L’utente può selezionare il percorso utilizzando il browser percorsi nella scheda delle impostazioni del predicato. Dopo aver selezionato la **+** viene utilizzata per aggiungere la selezione all&#39;elenco delle opzioni valide (quindi la **-** da rimuovere se necessario).
+   L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
 
    Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Percorso nodo opzioni**
-Efficacemente la stessa 
-**Percorso opzioni**, solo nel campo predicato comune, l’altro è specifico per le risorse.
+Effettivamente uguale al 
+**Percorso opzioni**, solo questo campo si trova nel predicato comune, l’altro è specifico per le risorse.
 
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
-* **Nome/i proprietà Publish and Live Copy**
-Le etichette per le caselle di controllo pubblica e Live Copy per il predicato specifico Sites.
+* **Nome/i proprietà Publish e Live Copy**
+Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* &amp;Ultimo; sulle etichette dei campi nel **Impostazioni** tab indica che i campi sono obbligatori e se lasciato vuoto viene visualizzato un messaggio di errore
+* &amp;ast; sulle etichette dei campi nel **Impostazioni** scheda indica che i campi sono obbligatori e se viene lasciato vuoto, viene visualizzato un messaggio di errore
 
-## Configurazione della ricerca in Forms {#configuring-your-search-forms}
+## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
 ### Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
 
-1. Passa a **Strumenti**, **Generale**, **Ricerca Forms**.
+1. Accedi a **Strumenti**, **Generale**, **Cerca in Forms**.
 
 1. Seleziona la configurazione da personalizzare.
-1. Utilizza la **Modifica** per aprire la configurazione da aggiornare.
-1. Se vuoi personalizzare una nuova [aggiungi nuovi campi predicato e definisci le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) se necessario. Se disponi di una personalizzazione esistente puoi selezionare un campo esistente e [aggiorna le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
+1. Utilizza il **Modifica** per aprire la configurazione per l’aggiornamento.
+1. Se desideri effettuare una nuova personalizzazione, [aggiungere nuovi campi predicato e definire le impostazioni](#add-edit-a-predicate-field-and-define-field-settings) secondo necessità. Se esiste una personalizzazione, puoi selezionare un campo esistente e [aggiornare le impostazioni](#add-edit-a-predicate-field-and-define-field-settings).
 1. Seleziona **Fine** per salvare la configurazione.
 
    >[!NOTE]
    >
-   >Le configurazioni personalizzate sono memorizzate (a seconda dei casi) in:
+   >Le configurazioni personalizzate vengono memorizzate (come appropriato) in:
    >
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Aggiungere o modificare un campo predicato e definire le impostazioni del campo {#add-edit-a-predicate-field-and-define-field-settings}
+### Aggiungere/modificare un campo predicato e definire le impostazioni dei campi {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
 1. [Apri la configurazione personalizzata](#creating-opening-a-customized-configuration) per l&#39;aggiornamento.
-1. Per aggiungere un nuovo campo, apri la **Seleziona predicato** e trascina il predicato desiderato nella posizione desiderata. Ad esempio, il **Predicato intervallo date**:
+1. Per aggiungere un nuovo campo, aprire **Seleziona predicato** e trascina il predicato richiesto nella posizione desiderata. Ad esempio, il **Predicato intervallo di date**:
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
-1. A seconda se:
+1. A seconda che:
 
-   * Si sta aggiungendo un nuovo campo:
+   * Stai aggiungendo un nuovo campo:
 
-      Dopo aver aggiunto il predicato **Impostazioni** viene aperta la scheda e vengono visualizzate le proprietà che è possibile definire.
+      Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
 
-   * Aggiornare un predicato esistente:
+   * Desideri aggiornare un predicato esistente:
 
-      Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda .
-   Ad esempio, le impostazioni per **Predicato intervallo date**:
+      Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda.
+   Ad esempio, le impostazioni per **Predicato intervallo di date**:
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
 1. Apporta le modifiche necessarie e conferma con **Fine**.
 
-### Anteprima della configurazione di ricerca {#previewing-the-search-configuration}
+### Anteprima della configurazione della ricerca {#previewing-the-search-configuration}
 
-1. Seleziona l’icona Anteprima :
+1. Seleziona l’icona Anteprima:
 
    ![](do-not-localize/chlimage_1-31.png)
 
-1. In questo modo i moduli di ricerca vengono visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
+1. In questo modo i moduli di ricerca verranno visualizzati così come saranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 
    ![chlimage_1-377](assets/chlimage_1-377.png)
 
@@ -451,17 +451,17 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 ### Eliminazione di un campo predicato {#deleting-a-predicate-field}
 
 1. [Apri la configurazione personalizzata](#creating-opening-a-customized-configuration) per l&#39;aggiornamento.
-1. Seleziona il campo predicato (a destra), apri il **Impostazioni** , quindi seleziona la **Elimina** (in basso a sinistra).
+1. Seleziona il campo predicato (a destra), apri la **Impostazioni** e quindi selezionare la scheda **Elimina** in basso a sinistra.
 
    ![](do-not-localize/chlimage_1-32.png)
 
-1. Viene visualizzata una finestra di dialogo per richiedere la conferma dell’azione di eliminazione.
+1. Una finestra di dialogo richiede la conferma dell’azione di eliminazione.
 
-1. Conferma questa e tutte le altre modifiche con **Fine**.
+1. Conferma questa e altre modifiche con **Fine**.
 
 ### Eliminazione di una configurazione (per ripristinare il valore predefinito) {#deleting-a-configuration-to-reinstate-the-default}
 
-Una volta personalizzata una configurazione, le impostazioni predefinite verranno ignorate. È possibile ripristinare la configurazione predefinita eliminando la configurazione personalizzata.
+Dopo aver personalizzato una configurazione, i valori predefiniti verranno sostituiti. Puoi ripristinare la configurazione predefinita eliminando la configurazione personalizzata.
 
 >[!NOTE]
 >
@@ -473,66 +473,66 @@ L’eliminazione di una configurazione personalizzata viene eseguita dalla conso
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. La configurazione personalizzata verrà eliminata e quella predefinita ripristinata (questo è indicato dalla riapparizione del simbolo del lucchetto nella console).
+1. La configurazione personalizzata verrà eliminata e verrà ripristinata la configurazione predefinita (indicata dalla ricomparsa del simbolo del lucchetto nella console).
 
 ### Aggiunta di predicati di opzioni {#adding-options-predicates}
 
-I predicati di opzione (Opzioni, Proprietà Opzioni) consentono di configurare un elemento da cercare. Sono solitamente utilizzati per cercare qualcosa direttamente sotto la pagina; ad esempio, una proprietà sul nodo della pagina.
+I predicati di opzione (Opzioni, Proprietà opzioni) consentono di configurare un elemento da cercare. Vengono in genere utilizzati per cercare elementi direttamente sotto la pagina, ad esempio una proprietà sul nodo della pagina.
 
-L’esempio seguente (per eseguire ricerche in base al modello utilizzato per creare una pagina) illustra i passaggi necessari:
+L’esempio seguente (per eseguire ricerche in base al modello utilizzato per creare una pagina), illustra i passaggi necessari:
 
 1. Crea il nodo che definisce la proprietà su cui eseguire la ricerca.
 
-   Sarà necessario un nodo principale che contenga le definizioni delle singole opzioni per renderle disponibili all&#39;utente.
+   Per essere disponibile per l’utente, è necessario un nodo principale contenente le definizioni delle singole opzioni.
 
-   I nodi per le singole opzioni hanno bisogno delle proprietà:
+   I nodi delle singole opzioni richiedono le proprietà seguenti:
 
-   * `jcr:title` - l’etichetta del campo da visualizzare nella barra di ricerca
-   * `value` - il valore della proprietà su cui eseguire la ricerca
+   * `jcr:title` : l’etichetta del campo da visualizzare nella barra di ricerca
+   * `value` : il valore della proprietà in cui eseguire la ricerca
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
-   >You ***deve*** non modificare nulla nel `/libs` percorso.
+   >Tu ***deve*** non modificare nulla in `/libs` percorso.
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto la prossima volta che aggiorni l’istanza (e potrebbe essere sovrascritto quando applichi un hotfix o un feature pack).
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   >1. Ricrea l&#39;elemento richiesto, così come esiste in `/libs`, `/apps`. In questo caso da:
+   >1. Ricrea l&#39;elemento richiesto, in quanto esiste in `/libs`, in `/apps`. In questo caso da:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Apporta modifiche a `/apps.`
+   >1. Apporta le modifiche in `/apps.`
 
 
-1. Apri **Ricerca Forms** e seleziona la configurazione da aggiornare. Ad esempio: **Barra di ricerca amministrazione siti**.
+1. Apri **Cerca in Forms** e selezionare la configurazione da aggiornare. Ad esempio: **Barra di ricerca amministrazione siti**.
 
-   Quindi tocca o fai clic sul pulsante **Modificare i moduli di ricerca** icona.
+   Quindi tocca o fai clic sul pulsante **Modifica moduli di ricerca** icona.
 
 1. A seconda della configurazione, aggiungi un **Opzioni** o **Proprietà Options** alla configurazione.
 1. Aggiornare i campi, in particolare:
 
    * **Nome proprietà**
 
-      Specifica la proprietà nodo da cercare sui nodi target. Esempio:
+      Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
 
       `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Seleziona il percorso in cui vengono mantenute le opzioni. Esempio:
+      Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![chlimage_1-380](assets/chlimage_1-380.png)
 
 1. Seleziona **Fine** per salvare la configurazione.
-1. Passa alla console appropriata (in questo esempio, **Sites**) e apri la **Ricerca** barra. Saranno visibili i nuovi moduli di ricerca definiti e le varie opzioni disponibili. Seleziona l’opzione richiesta per visualizzare i risultati della ricerca:
+1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca** barra. Saranno visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca:
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
 ## Autorizzazioni utente {#user-permissions}
 
-Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire le azioni di modifica, eliminazione e visualizzazione in anteprima sui moduli di ricerca.
+Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire azioni di modifica, eliminazione e anteprima sui moduli di ricerca.
 
 <table>
  <tbody>
@@ -542,15 +542,15 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire l
   </tr>
   <tr>
    <td>Modifica </td>
-   <td>Autorizzazioni di lettura e scrittura sul <code>/apps </code>nodo.</td>
+   <td>Autorizzazioni di lettura e scrittura su <code>/apps </code>nodo.</td>
   </tr>
   <tr>
    <td>Eliminare</td>
-   <td>Autorizzazioni di lettura, scrittura, eliminazione per <code>/apps</code> nodo</td>
+   <td>Autorizzazioni di lettura, scrittura ed eliminazione su <code>/apps</code> nodo</td>
   </tr>
   <tr>
    <td>Anteprima</td>
-   <td>Autorizzazioni di lettura, scrittura, eliminazione per <code>/var/dam/content</code> nodo.<br /> Autorizzazioni di lettura e scrittura sul <code>/apps</code> nodo.</td>
+   <td>Autorizzazioni di lettura, scrittura ed eliminazione su <code>/var/dam/content</code> nodo.<br /> Autorizzazioni di lettura e scrittura su <code>/apps</code> nodo.</td>
   </tr>
  </tbody>
 </table>

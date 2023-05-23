@@ -1,5 +1,5 @@
 ---
-title: Creazione di una pagina di contenuto per dispositivi mobili
+title: Authoring di una pagina di contenuti per dispositivi mobili
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale.
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
@@ -17,15 +17,15 @@ ht-degree: 27%
 
 # Authoring di una pagina per dispositivi mobili{#authoring-a-page-for-mobile-devices}
 
-Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
+Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
 
-I dispositivi sono raggruppati nelle categorie feature, smart e touch in base alle capacità dei dispositivi di rendering di una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione corrispondente al gruppo di dispositivi.
+I dispositivi sono raggruppati in categorie, funzione, smart e touch in base alle funzionalità dei dispositivi per il rendering di una pagina. Quando l’utente finale accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione che corrisponde al suo gruppo di dispositivi.
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedi [Creazione di una Live Copy per canali diversi](/help/sites-administering/msm-livecopy.md).)
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (vedere [Creazione di una Live Copy per canali diversi](/help/sites-administering/msm-livecopy.md).)
 >
->Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedi [Creazione di filtri per i gruppi di dispositivi](/help/sites-developing/groupfilters.md).)
+>Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (vedere [Creazione di filtri per gruppi di dispositivi](/help/sites-developing/groupfilters.md).)
 
 Segui la procedura seguente per creare una pagina mobile:
 
@@ -34,9 +34,9 @@ Segui la procedura seguente per creare una pagina mobile:
 
 1. Passa a **Anteprima** modalità.
 1. Passa all’emulatore desiderato facendo clic sull’icona del dispositivo nella parte superiore della pagina.
-1. Trascina i componenti dal browser Componenti alla pagina.
+1. Trascina i componenti nella pagina dal browser Componenti.
 
-La pagina ha un aspetto simile al seguente:
+La pagina è simile alla seguente:
 
 ![mobileipademu](assets/mobileipademu.png)
 

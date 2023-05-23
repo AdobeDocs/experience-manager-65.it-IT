@@ -1,7 +1,7 @@
 ---
-title: Configurazione della pagina per la modifica in serie delle proprietà di pagina
+title: Configurazione della pagina per la modifica in blocco delle proprietà di pagina
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: La modifica collettiva delle proprietà di pagina consente di modificare le proprietà di più pagine alla volta
+description: La modifica in blocco delle proprietà di pagina consente di modificare le proprietà di più pagine contemporaneamente
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
@@ -17,20 +17,20 @@ ht-degree: 2%
 
 ---
 
-# Configurazione della pagina per la modifica in serie delle proprietà di pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurazione della pagina per la modifica in blocco delle proprietà di pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Modifica in serie delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine alla volta.
+[Modifica in serie delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 
-A causa della possibilità di valori diversi, le proprietà della pagina non sono abilitate per la modifica collettiva come impostazione predefinita. Devono essere esplicitamente consentiti (abilitati). Quando definisci le proprietà di pagina da rendere disponibili per la modifica collettiva, devi considerare alcune implicazioni, come:
+A causa della possibilità di valori diversi, le proprietà della pagina non sono abilitate per la modifica in serie come impostazione predefinita. Devono essere esplicitamente consentiti (abilitati). Quando definisci le proprietà della pagina da rendere disponibili per la modifica in blocco, devi tenere in considerazione alcune implicazioni, ad esempio:
 
-* Taluni campi sono in genere unici; ad esempio un titolo della pagina. È necessario stabilire se è utile abilitare tali campi per la modifica collettiva, quando verrà applicato un valore.
-* Alcuni campi possono avere più valori; questo richiede una rappresentazione significativa durante il rendering.
+* Alcuni campi sono in genere univoci, ad esempio il titolo di una pagina. È necessario decidere se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
+* Alcuni campi possono avere più valori, che devono essere rappresentati in modo significativo durante il rendering.
 
-   Ad esempio, una casella di controllo che indica &quot;Pronto per la pubblicazione&quot;. Potrebbero essere presenti diversi valori prima della modifica in serie (ad esempio pronti, in revisione o in corso).
+   Ad esempio, la casella di controllo &quot;Pronto per la pubblicazione&quot;. Questo potrebbe avere diversi valori prima della modifica in blocco (ad esempio pronto, in revisione, in corso).
 
 >[!CAUTION]
 >
->Modifica in serie delle proprietà di pagina:
+>La modifica in blocco delle proprietà di pagina è:
 >
 >* Non disponibile nell’interfaccia classica.
 >* Non disponibile per le pagine all’interno di una Live Copy.
@@ -40,13 +40,13 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 
 >[!NOTE]
 >
->La modifica in serie è disponibile anche per Assets. È molto simile, ma differisce in alcuni punti. Vedi [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per informazioni complete. Puoi personalizzare i campi nell’editor metadati in blocco per Assets utilizzando [Editor di schema](/help/assets/metadata-schemas.md).
+>La modifica in blocco è disponibile anche per Assets. È molto simile, ma differisce in alcuni punti. Consulta [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per informazioni complete. Puoi personalizzare i campi nell’editor di metadati in blocco per le risorse utilizzando [Editor schema](/help/assets/metadata-schemas.md).
 
 ## Abilitazione di un campo {#enabling-a-field}
 
 >[!NOTE]
 >
->Alcuni campi possono avere più valori; questo richiede una rappresentazione significativa durante il rendering. Per questo motivo è consigliabile abilitare solo i seguenti tipi di campi:
+>Alcuni campi possono avere più valori, che devono essere rappresentati in modo significativo durante il rendering. Per questo motivo è necessario abilitare solo i seguenti tipi di campo:
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`
@@ -57,41 +57,41 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 >
 
 
-I campi sono abilitati nel componente pagina (*not* sul modello):
+I campi sono abilitati nel componente Pagina (*non* sul modello):
 
-1. Utilizzando CRXDE Lite (o un metodo equivalente) apri il componente pagina.
+1. Utilizzando CRXDE Lite (o un metodo equivalente) apri il componente Pagina.
 
    Esempio: `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Questo esempio presuppone che i componenti core siano stati installati nell&#39;istanza, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio di We.Retail. Consulta la sezione [Documentazione sui componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per ulteriori informazioni.
+   >Questo esempio presuppone che i Componenti core siano stati installati nell&#39;istanza, il che avviene se l&#39;istanza è in esecuzione con il contenuto di esempio We.Retail. Consulta la [Documentazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per ulteriori informazioni.
 
-1. Passa al campo richiesto all’interno della `cq:dialog` definizione.
-1. Definire la seguente proprietà sul nodo del campo:
+1. Passa al campo richiesto all’interno di `cq:dialog` definizione.
+1. Definisci la seguente proprietà sul nodo del campo:
 
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valore**: `true`
 
-   Ad esempio, per la pagina standard [componente base](/help/sites-authoring/default-components-foundation.md):
+   Ad esempio, per la pagina standard [componente di base](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
-   La proprietà viene definita in:
+   La proprietà viene definita il:
 
    `cq:dialog/content/items/tabs/items/basic/items/column/items/onofftime/items/ondate`
 
    >[!CAUTION]
    >
-   >You ***deve*** non modificare nulla nel `/libs` percorso.
+   >Tu ***deve*** non modificare nulla in `/libs` percorso.
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto la prossima volta che aggiorni l’istanza (e potrebbe essere sovrascritto quando applichi un hotfix o un feature pack).
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   >    1. Ricrea l&#39;elemento richiesto (ovvero così come esiste in `/libs`) `/apps`
-   >    1. Apporta modifiche a `/apps`
+   >    1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+   >    1. Apporta le modifiche in `/apps`
 
 
 1. Seleziona **Salva tutto** per mantenere gli aggiornamenti.

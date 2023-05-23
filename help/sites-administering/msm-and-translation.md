@@ -1,7 +1,7 @@
 ---
-title: Amministrazione di siti Web
+title: Amministrazione sito Web
 seo-title: Website Administration
-description: Scopri come gestire i siti web multilingue in AEM.
+description: Scopri come gestire siti web multilingue in AEM.
 seo-description: Learn how to manage multilingual websites in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
@@ -13,23 +13,23 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
-# Amministrazione di siti Web{#website-administration}
+# Amministrazione sito Web{#website-administration}
 
-Per la gestione di siti web e pagine sono disponibili i seguenti strumenti di amministrazione:
+Sono disponibili i seguenti strumenti di amministrazione per la gestione di siti web e pagine:
 
-* Multi Site Manager (MSM) consente di utilizzare lo stesso contenuto del sito in più posizioni, consentendo al contempo le varianti:
+* Multi Site Manager (MSM) consente di utilizzare lo stesso contenuto del sito in più posizioni, consentendo al contempo l’utilizzo di varianti:
 
    * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-administering/msm.md)
 
-* La traduzione automatizzata consente di automatizzare la traduzione del contenuto della pagina, delle risorse e dei contenuti generati dagli utenti per creare e gestire siti web multilingue:
+* La traduzione consente di automatizzare la traduzione di contenuti di pagina, risorse e contenuti generati dall’utente per creare e gestire siti web multilingue:
 
    * [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md)
 
-* Queste due funzioni possono essere combinate per gestire i siti web che sono entrambi [Multinazionale e multilingue](#multinational-and-multilingual-sites).
+* Queste due funzioni possono essere combinate per gestire i siti Web che sono entrambi [Multinazionale e multilingue](#multinational-and-multilingual-sites).
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
@@ -39,8 +39,8 @@ Puoi creare contenuti per siti multinazionali e multilingue in modo efficiente t
 
 * Utilizza [Multi Site Manager](/help/sites-administering/msm.md) per:
 
-   * Riutilizza i contenuti del sito principale e le traduzioni per creare siti per altri paesi e culture.
-   * Assicurati di limitare l&#39;utilizzo di Multi Site Manager ai contenuti in una lingua, ad esempio master inglese -> filiali in lingua inglese in siti di paese, master francese -> filiali in lingua francese in siti di paese.
+   * Riutilizzare i contenuti del sito master e delle traduzioni per creare siti per altri paesi e culture.
+   * Assicurati di limitare l’utilizzo del Gestore multisito ai contenuti in una sola lingua, ad esempio master inglese -> filiali in lingua inglese nei siti dei paesi, master francese -> filiali in lingua francese nei siti dei paesi.
    * Se necessario, scollega gli elementi delle Live Copy per aggiungere i dettagli di localizzazione.
 
 Il diagramma seguente illustra l’intersezione dei concetti principali (ma non tutti i livelli/elementi coinvolti):
@@ -51,7 +51,7 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 >
 >In questo scenario (e simili) MSM non gestisce le diverse versioni linguistiche in quanto tali.
 >
->* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da un blueprint (ad esempio un master globale) alle Live Copy (ad esempio i siti locali), entro i limiti di una lingua.
+>* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da un blueprint (ad esempio, un master globale) alle live copy (ad esempio, i siti locali), entro i limiti della lingua.
 >* Le capacità di integrazione delle [traduzioni](/help/sites-administering/translation.md) di AEM, in collaborazione con servizi di gestione della localizzazione di terze parti, gestiscono le lingue e traducono i contenuti in diverse lingue.
 >
 >Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra le lingue master.

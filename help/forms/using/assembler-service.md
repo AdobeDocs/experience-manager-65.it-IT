@@ -19,17 +19,17 @@ ht-degree: 6%
 
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
-Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni processo inviato al servizio Assembler include un documento Document Description XML (DDX), documenti di origine e risorse esterne (stringhe e grafica). Per ulteriori informazioni sul servizio assembler, vedi [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
-È possibile utilizzare il servizio di assemblaggio per le seguenti operazioni:
+È possibile utilizzare il servizio di assemblaggio per le operazioni seguenti:
 
 ## assemblare documenti PDF {#assemble-pdf-documents}
 
-È possibile utilizzare il servizio Assembler per assemblare due o più documenti PDF in un singolo documento PDF o Portfolio PDF. È inoltre possibile applicare funzioni al documento PDF per facilitarne la navigazione o migliorarne la sicurezza. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
+È possibile utilizzare il servizio Assembler per assemblare due o più documenti PDF in un unico documento PDF o Portfolio PDF. È inoltre possibile applicare al documento PDF funzionalità che facilitano la navigazione o migliorano la sicurezza. Di seguito sono riportati alcuni modi per assemblare documenti PDF:
 
 ### Assemblare un semplice documento PDF {#assemble-a-simple-pdf-document}
 
-Nell&#39;illustrazione seguente sono illustrati tre documenti di origine che vengono uniti in un singolo documento risultante.
+Nella figura seguente vengono illustrati tre documenti di origine uniti in un unico documento risultante.
 
 ![Assemblaggio di un semplice documento PDF da più documenti PDF](assets/as_document_assembly.png)
 
@@ -45,19 +45,19 @@ L&#39;esempio seguente è un semplice documento DDX utilizzato per assemblare il
 </PDF>
 ```
 
-L&#39;assieme del documento produce un documento risultante contenente il seguente contenuto e\
+L&#39;assieme Document produce un documento risultante che contiene il seguente contenuto e\
 caratteristiche:
 
 * Tutto o parte di ciascun documento di origine
 * Tutti o parte dei segnalibri di ciascun documento di origine, normalizzati per il documento risultante assemblato
-* Altre caratteristiche adottate dal documento di base (Doc1), compresi metadati, etichette di pagina e dimensioni della pagina
-* Facoltativamente, il documento risultante include un sommario costruito a partire dai segnalibri nei documenti di origine
+* Altre caratteristiche adottate dal documento di base (Doc1), inclusi metadati, etichette di pagina e dimensioni di pagina
+* Facoltativamente, il documento risultante include un sommario creato dai segnalibri nei documenti di origine
 
 ### Creare un portfolio PDF {#create-a-pdf-portfolio}
 
-Il servizio Assembler può creare Portfoli PDF contenenti una raccolta di documenti e un&#39;interfaccia utente autonoma. L’interfaccia è denominata Layout Portfolio di PDF o navigatore Portfolio di PDF (navigatore). I Portfoli di PDF estendono la funzionalità dei pacchetti di PDF aggiungendo un navigatore, cartelle e pagine di benvenuto. L’interfaccia può migliorare l’esperienza utente sfruttando le stringhe di testo localizzate, le combinazioni di colori personalizzate e le risorse grafiche. Il Portfolio PDF può anche includere cartelle per organizzare i file nel portfolio.
+Il servizio Assembler può creare Portfoli di PDF che contengono una raccolta di documenti e un&#39;interfaccia utente autonoma. L’interfaccia è denominata Layout Portfolio di PDF o Navigatore Portfolio di PDF. I Portfoli PDF estendono le funzionalità dei pacchetti PDF aggiungendo un navigatore, cartelle e pagine di benvenuto. L’interfaccia può migliorare l’esperienza utente sfruttando la stringa di testo localizzata, le combinazioni di colori personalizzate e le risorse grafiche. Il Portfolio PDF può anche includere cartelle per organizzare i file nel portfolio.
 
-Quando il servizio Assembler interpreta il seguente documento DDX, assembla un Portfolio PDF che include un navigatore di Portfolio PDF e un pacchetto di due file. Il servizio ottiene il navigatore dalla posizione specificata dall&#39;origine myNavigator. Cambia la combinazione di colori predefinita del navigatore nella combinazione di colori rosaSchema.
+Quando il servizio Assembler interpreta il seguente documento DDX, assembla un Portfolio di PDF che include un navigatore di Portfoli di PDF e un pacchetto di due file. Il servizio ottiene il navigatore dalla posizione specificata dall&#39;origine myNavigator. Cambia la combinazione di colori predefinita del navigatore alla combinazione di colori rosaScheme.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -76,41 +76,41 @@ Quando il servizio Assembler interpreta il seguente documento DDX, assembla un P
 
 ### Assemblare documenti crittografati {#assemble-encrypted-documents}
 
-Quando si assembla un documento, è inoltre possibile crittografare il documento PDF con una password. Dopo aver crittografato un documento PDF con una password, è necessario che l’utente specifichi la password per visualizzare il documento PDF in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
+Quando si assembla un documento, è inoltre possibile crittografare il documento PDF con una password. Dopo aver crittografato un documento PDF PDF con una password, l’utente deve specificare la password per visualizzarlo in Adobe Reader o Acrobat. Per crittografare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di crittografia necessari per crittografare un documento PDF.
 
-Il servizio di crittografia non deve far parte dell’installazione del LiveCycle per crittografare un documento PDF con una password.
+Il servizio Crittografia non deve far parte dell&#39;installazione del LiveCycle per crittografare un documento PDF con una password.
 
-Se uno o più documenti di input sono crittografati, fornisci una password per aprire il documento come parte del DDX.
+Se uno o più documenti di input sono crittografati, specificare una password per aprire il documento come parte del DDX.
 
 ### Assemblare documenti utilizzando la numerazione Bates {#assemble-documents-using-bates-numbering}
 
-Quando si assembla un documento, è possibile utilizzare la numerazione Bates per applicare un identificatore di pagina univoco a ogni pagina. Quando si utilizza la numerazione Bates, a ogni pagina del documento (o set di documenti) viene assegnato un numero che identifica la pagina in modo univoco. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico sequenzialmente incrementato e un prefisso e un suffisso facoltativi. Il prefisso + valore numerico + suffisso è denominato pattern a blocchi.
+Quando si assembla un documento, è possibile utilizzare la numerazione Bates per applicare un identificatore di pagina univoco a ogni pagina. Quando si utilizza la numerazione Bates, a ogni pagina del documento (o set di documenti) viene assegnato un numero che identifica in modo univoco la pagina. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico incrementato in sequenza e un prefisso e un suffisso opzionali. Il prefisso + valore numerico + suffisso è chiamato pattern di Bates.
 
-L’illustrazione seguente mostra un documento PDF contenente un identificatore univoco presente nell’intestazione del documento.
+Nella figura seguente viene illustrato un documento PDF contenente un identificatore univoco presente nell&#39;intestazione del documento.
 
-![Documento PDF contenente un identificatore univoco nell&#39;intestazione del documento](do-not-localize/as_batesnumber.png)
+![Un documento PDF che contiene un identificatore univoco presente nell’intestazione del documento](do-not-localize/as_batesnumber.png)
 
-Documento PDF contenente un identificatore univoco nell&#39;intestazione del documento
+Un documento PDF che contiene un identificatore univoco presente nell’intestazione del documento
 
 ### Uniformare e assemblare documenti {#flatten-and-assemble-documents}
 
-È possibile utilizzare il servizio Assembler per trasformare un documento PDF interattivo (ad esempio un modulo) in un documento PDF non interattivo. Un documento PDF interattivo consente agli utenti di immettere o modificare i dati contenuti nei campi del documento di PDF. Il processo di trasformazione di un documento PDF interattivo in un documento PDF non interattivo è denominato appiattimento. Quando un documento PDF viene appiattito, l’aspetto grafico dei campi modulo viene mantenuto ma non è più interattivo. Un motivo per appiattire un documento di PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
+È possibile utilizzare il servizio Assembler per trasformare un documento interattivo di PDF (ad esempio un modulo) in un documento non interattivo di PDF. Un documento PDF interattivo consente agli utenti di immettere o modificare i dati presenti nei campi del documento PDF. Il processo di trasformazione di un documento interattivo di PDF in un documento non interattivo di PDF è denominato appiattimento. Quando un documento PDF viene appiattito, i campi modulo mantengono il loro aspetto grafico ma non sono più interattivi. Uno dei motivi per appiattire un documento PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
 
 Quando si crea un documento PDF assemblato da documenti PDF interattivi, il servizio Assembler appiattisce tali moduli prima di assemblarli nel documento risultante.
 
 >[!NOTE]
 >
->Il servizio Assembler utilizza il servizio Output per appiattire i moduli XFA dinamici. Se il servizio Assembler elabora un DDX che richiede l&#39;appiattimento di un modulo dinamico XFA e il servizio Output non è disponibile, viene generata un&#39;eccezione. Il servizio Assembler può appiattire un modulo Acrobat o un modulo XFA statico senza utilizzare il servizio Output.
+>Il servizio Assembler utilizza il servizio Output per appiattire i moduli XFA dinamici. Se il servizio Assembler elabora un DDX che richiede di appiattire un modulo dinamico XFA e il servizio Output non è disponibile, viene generata un&#39;eccezione. Il servizio Assembler può appiattire un modulo Acrobat o un modulo XFA statico senza utilizzare il servizio Output.
 
 ## Assemblare documenti XDP {#assemble-xdp-documents}
 
-È possibile utilizzare il servizio Assembler per assemblare più documenti XDP in un singolo documento XDP o in un documento PDF. Per i file XDP di origine che includono punti di inserimento, è possibile specificare i frammenti da inserire.
+È possibile utilizzare il servizio Assembler per assemblare più documenti XDP in un singolo documento XDP o in un documento PDF. Per i file XDP di origine che includono punti di inserimento, puoi specificare i frammenti da inserire.
 
-Ecco alcuni dei modi per assemblare documenti XDP:
+Di seguito sono riportati alcuni dei modi per assemblare i documenti XDP:
 
-### Assembla un semplice documento XDP {#assemble-a-simple-xdp-document}
+### Assemblare un semplice documento XDP {#assemble-a-simple-xdp-document}
 
-La figura seguente mostra tre documenti XDP di origine che vengono assemblati in un singolo documento XDP risultante. Il documento XDP risultante contiene i tre documenti XDP di origine, inclusi i relativi dati associati. Il documento risultante ottiene attributi di base dal documento di base, che è il primo documento XDP di origine.
+La figura seguente mostra tre documenti XDP di origine assemblati in un unico documento XDP risultante. Il documento XDP risultante contiene i tre documenti XDP di origine, inclusi i dati associati. Il documento risultante ottiene gli attributi di base dal documento di base, che è il primo documento XDP di origine.
 
 ![Assemblaggio di un semplice documento XDP da più documenti XDP](assets/as_assembler_xdpassembly.png)
 
@@ -128,11 +128,11 @@ Ecco un documento DDX che produce il risultato illustrato sopra.
 </DDX>
 ```
 
-### Risoluzione dei riferimenti durante l&#39;assieme {#resolving-references-during-assembly}
+### Risoluzione dei riferimenti durante l&#39;assemblaggio {#resolving-references-during-assembly}
 
-In genere, i documenti XDP possono contenere immagini a cui si fa riferimento tramite riferimenti assoluti o relativi. Il servizio Assembler, per impostazione predefinita, mantiene i riferimenti alle immagini nel documento XDP risultante.
+In genere, i documenti XDP possono contenere immagini a cui si fa riferimento tramite riferimenti assoluti o relativi. Per impostazione predefinita, il servizio Assembler mantiene i riferimenti alle immagini nel documento XDP risultante.
 
-È possibile specificare come il servizio Assembler gestisce le immagini a cui si fa riferimento nei documenti XDP di origine tramite riferimenti assoluti o relativi nei file XDP durante l&#39;assemblaggio. È possibile scegliere di incorporare tutte le immagini nel risultato in modo che non contenga riferimenti relativi o assoluti. Puoi definirlo impostando il valore del tag resolveAssets , che può assumere una delle seguenti opzioni. Per impostazione predefinita, nessun riferimento viene risolto nel documento dei risultati.
+È possibile specificare il modo in cui il servizio Assembler gestisce le immagini a cui si fa riferimento nei documenti XDP di origine tramite riferimenti assoluti o relativi nei file XDP durante l&#39;assemblaggio. Potete scegliere di incorporare tutte le immagini nel risultato in modo che non contenga riferimenti relativi o assoluti. Per definire questo valore, imposta il valore del tag resolveAssets, che può accettare una qualsiasi delle seguenti opzioni. Per impostazione predefinita, nel documento dei risultati non vengono risolti riferimenti.
 
 <table>
  <tbody> 
@@ -145,26 +145,26 @@ In genere, i documenti XDP possono contenere immagini a cui si fa riferimento tr
    <td>Non risolve alcun riferimento.</td> 
   </tr> 
   <tr> 
-   <td>all</td> 
+   <td>tutti</td> 
    <td>Incorpora tutte le immagini di riferimento nel documento XDP di origine.</td> 
   </tr> 
   <tr> 
    <td>relativo</td> 
-   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti relativi nell'XDP di origine<br /> documento.</td> 
+   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti relativi nell’XDP di origine<br /> documento.</td> 
   </tr> 
   <tr> 
    <td>assoluto</td> 
-   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti assoluti nell'XDP di origine<br /> documento.</td> 
+   <td>Incorpora tutte le immagini a cui si fa riferimento tramite riferimenti assoluti nell’XDP di origine<br /> documento.</td> 
   </tr> 
  </tbody> 
 </table>
 
-È possibile specificare il valore dell&#39;attributo resolveAssets nel tag di origine XDP o nel tag di risultato XDP padre. Se l&#39;attributo è specificato per il tag di risultato XDP, verrà ereditato da tutti gli elementi sorgente XDP che sono figli del risultato XDP. Tuttavia, specificando esplicitamente l&#39;attributo per un elemento di origine si esclude l&#39;impostazione dell&#39;elemento di risultato solo per quel documento di origine.
+Puoi specificare il valore dell’attributo resolveAssets nel tag di origine XDP o nel tag di risultato XDP principale. Se l&#39;attributo viene specificato nel tag dei risultati XDP, verrà ereditato da tutti gli elementi di origine XDP che sono figli del risultato XDP. Tuttavia, specificando in modo esplicito l&#39;attributo per un elemento di origine, viene ignorata l&#39;impostazione dell&#39;elemento risultato per il solo documento di origine.
 
 #### Risolvere tutti i riferimenti di origine in un documento XDP {#resolve-all-source-references-in-an-xdp-document}
 
-Per risolvere tutti i riferimenti nei documenti XDP di origine, specifica l&#39;attributo resolveAssets per\
-documento risultante per tutti, come nell&#39;esempio seguente:
+Per risolvere tutti i riferimenti nei documenti XDP di origine, specificate l&#39;attributo resolveAssets per\
+documento risultante a tutti, come nell&#39;esempio seguente:
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -189,9 +189,9 @@ risultato.
 </DDX>
 ```
 
-#### Risolvere i riferimenti sorgente selezionati in un documento XDP {#resolve-selected-source-references-in-an-xdp-document}
+#### Risolvere i riferimenti di origine selezionati in un documento XDP {#resolve-selected-source-references-in-an-xdp-document}
 
-È possibile specificare in modo selettivo i riferimenti di origine che si desidera risolvere specificando l&#39;attributo resolveAssets corrispondente. Gli attributi per i singoli documenti di origine sostituiscono l’impostazione del documento XDP risultante. In questo esempio vengono risolti anche i frammenti inclusi.
+È possibile specificare in modo selettivo i riferimenti di origine che si desidera risolvere specificando l&#39;attributo resolveAssets relativo. Gli attributi dei singoli documenti di origine sovrascrivono l’impostazione del documento XDP risultante. In questo esempio, vengono risolti anche i frammenti inclusi.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -205,7 +205,7 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Risolvere in modo selettivo i riferimenti assoluti o relativi {#selectively-resolve-absolute-or-relative-references}
+#### Risoluzione selettiva di riferimenti assoluti o relativi {#selectively-resolve-absolute-or-relative-references}
 
 È possibile risolvere in modo selettivo i riferimenti assoluti o relativi in tutti o in alcuni dei documenti di origine, come illustrato nell&#39;esempio seguente:
 
@@ -218,21 +218,21 @@ fragment="myFragment"/>
 </DDX
 ```
 
-### Inserimento dinamico di frammenti di modulo in un modulo XFA {#dynamically-insert-form-fragments-into-an-xfa-form}
+### Inserire dinamicamente frammenti di modulo in un modulo XFA {#dynamically-insert-form-fragments-into-an-xfa-form}
 
-È possibile utilizzare il servizio Assembler per creare un modulo XFA creato da un altro modulo XFA in cui vengono inseriti i frammenti. Questa funzione consente di utilizzare i frammenti per creare più moduli.
+È possibile utilizzare il servizio Assembler per creare un modulo XFA creato da un altro modulo XFA in cui vengono inseriti i frammenti. Utilizzando questa funzione è possibile utilizzare i frammenti per creare più moduli.
 
-Il supporto per l’inserimento dinamico dei frammenti di modulo supporta il controllo a singola origine. È possibile mantenere una singola sorgente di componenti comunemente utilizzati. Ad esempio, puoi creare un frammento per il banner aziendale. Se il banner cambia, è sufficiente modificare il frammento. Gli altri moduli che includono il frammento rimangono invariati.
+Il supporto per l’inserimento dinamico di frammenti di modulo supporta il controllo di un’unica origine. Puoi mantenere un’unica origine dei componenti di uso comune. Ad esempio, puoi creare un frammento per il banner dell’azienda. Se il banner cambia, devi solo modificare il frammento. Gli altri moduli che includono il frammento rimangono invariati.
 
-I progettisti di moduli utilizzano Progettazione LiveCycli per creare frammenti di modulo. Questi frammenti sono sottomoduli con nome univoco all’interno di un modulo XFA. I form designer utilizzano anche Designer per creare moduli XFA con punti di inserimento denominati in modo univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
+I progettisti di moduli utilizzano Progettazione LiveCycli per creare frammenti di modulo. Questi frammenti sono sottomaschere con nomi univoci all’interno di un modulo XFA. I progettisti di moduli utilizzano inoltre Designer per creare moduli XFA con punti di inserimento con un nome univoco. Il programmatore scrive documenti DDX che specificano la modalità di inserimento dei frammenti nel modulo XFA.
 
-Nella figura seguente sono illustrati due moduli XML (modelli XFA). Il modulo a sinistra contiene un punto di inserimento denominato myInsertionPoint. Il modulo sulla destra contiene un frammento denominato myFragment.
+Nella figura seguente vengono illustrati due moduli XML (modelli XFA). La maschera a sinistra contiene un punto di inserimento denominato myInsertionPoint. Il modulo a destra contiene un frammento denominato myFragment.
 
 ![Inserimento di frammenti di modulo in un modulo XFA](assets/as_assembler_fragment_assy_assembled.png)
 
 Inserimento di frammenti di modulo in un modulo XFA
 
-Quando il servizio Assembler interpreta il seguente documento DDX, crea un modulo XML che contiene un altro modulo XML. Il sottomodulo myFragment del documento myFragmentSource viene inserito in myInsertionPoint nel documento myFormSource.
+Quando il servizio Assembler interpreta il seguente documento DDX, crea un modulo XML contenente un altro modulo XML. Il sottomodulo myFragment del documento myFragmentSource viene inserito in myInsertionPoint nel documento myFormSource.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -247,7 +247,7 @@ source="myFragmentSource"/>
 
 ### Creare un pacchetto di un documento XDP come PDF {#package-an-xdp-document-as-pdf}
 
-È possibile utilizzare il servizio Assembler per creare un pacchetto di un documento XDP come documento PDF, come mostrato in questo documento DDX.
+È possibile utilizzare il servizio Assembler per creare un pacchetto di un documento XDP come documento PDF, come illustrato in questo documento DDX.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -262,17 +262,17 @@ source="myFragmentSource"/>
 
 ## Separare i documenti PDF {#disassemble-pdf-documents}
 
-È possibile utilizzare il servizio Assembler per smontare un documento PDF. Il servizio può estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti singoli, ad esempio da una raccolta di istruzioni.
+È possibile utilizzare il servizio Assembler per disassemblare un documento PDF. Il servizio può estrarre pagine dal documento di origine o dividere un documento di origine in base ai segnalibri. In genere, questa attività è utile se il documento PDF è stato creato in origine da molti documenti singoli, ad esempio da una raccolta di istruzioni.
 
 ### Estrarre pagine da un documento di origine {#extract-pages-from-a-source-document}
 
-Nell&#39;illustrazione seguente, le pagine 1-3 vengono estratte dal documento di origine e inserite in un nuovo documento risultante.
+Nella figura seguente, le pagine 1-3 vengono estratte dal documento di origine e inserite in un nuovo documento risultante.
 
 ![Estrazione di pagine specifiche da un documento di origine](assets/as_intro_page_extraction.png)
 
 Estrazione di pagine specifiche da un documento di origine
 
-L&#39;esempio seguente è un documento DDX utilizzato per smontare il documento.
+Nell&#39;esempio seguente viene illustrato un documento DDX utilizzato per disassemblare il documento.
 
 ```xml
 <PDF result="Doc4">
@@ -282,13 +282,13 @@ L&#39;esempio seguente è un documento DDX utilizzato per smontare il documento.
 
 ### Dividere un documento di origine basato sui segnalibri {#divide-a-source-document-based-on-bookmarks}
 
-Nell&#39;illustrazione seguente, DocA è suddiviso in più documenti risultanti. Il primo segnalibro di livello 1 in una pagina identifica l&#39;inizio di un nuovo documento risultante.
+Nella figura seguente, DocA è diviso in più documenti risultanti. Il segnalibro di primo livello 1 in una pagina identifica l&#39;inizio di un nuovo documento risultante.
 
-![Dividere un documento di origine basato sui segnalibri in più documenti](assets/as_intro_pdfsfrombookmarks.png)
+![Divisione di un documento di origine basato su segnalibri in più documenti](assets/as_intro_pdfsfrombookmarks.png)
 
-Dividere un documento di origine basato sui segnalibri in più documenti
+Divisione di un documento di origine basato su segnalibri in più documenti
 
-L&#39;esempio seguente è un documento DDX che utilizza segnalibri per smontare un documento sorgente.
+L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemblare un documento di origine.
 
 ```xml
 <PDFsFromBookmarks prefix="A">
@@ -298,40 +298,40 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per smontare 
 
 ## Determinare se i documenti sono conformi a PDF/A {#determine-whether-documents-are-pdf-a-compliant}
 
-È possibile utilizzare il servizio Assembler per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
+È possibile utilizzare il servizio Assembler per determinare se un documento PDF è compatibile con PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
 
 ## Ottenere informazioni su un documento PDF {#obtain-information-about-a-pdf-document}
 
 È possibile utilizzare il servizio Assembler per ottenere le seguenti informazioni su un documento PDF:
 
-* Informazioni sul testo.
+* Informazioni di testo.
 
    * Parole in ogni pagina del documento
-   * Posizione di ogni parola su ogni pagina del documento
+   * Posizione di ciascuna parola in ogni pagina del documento
    * Frasi in ogni paragrafo di ogni pagina del documento
 
-* Segnalibri, compresi il numero di pagina, il titolo, la destinazione e l’aspetto. Puoi esportarlo\
-   i dati di un documento PDF e importarli in un documento PDF.
+* Segnalibri, inclusi numero di pagina, titolo, destinazione e aspetto. Puoi esportare questo\
+   dati da un documento PDF e importarli in un documento PDF.
 
-* Allegati di file, comprese le informazioni sui file. Per gli allegati a livello di pagina, include anche\
-   posizione dell&#39;annotazione dell&#39;allegato del file. È possibile esportare questi dati da un documento PDF e\
+* File allegati, incluse le informazioni sui file. Per gli allegati a livello di pagina, include anche\
+   posizione dell&#39;annotazione dell&#39;allegato. Puoi esportare questi dati da un documento PDF e\
    importarlo in un documento PDF.
 
-* File del pacchetto, compresi informazioni sui file, cartelle, pacchetti, schemi e dati dei campi. È possibile esportare i dati da un documento PDF e importarli in un documento PDF.
+* File del pacchetto, incluse informazioni sui file, cartelle, pacchetto, schema e dati di campo. Puoi esportare questi dati da un documento PDF e importarli in un documento PDF.
 
 ## Convalida documenti DDX {#validate-ddx-documents}
 
-È possibile utilizzare il servizio Assembler per determinare se un documento DDX è valido. Ad esempio, se si esegue l&#39;aggiornamento da una versione precedente del LiveCycle, la convalida assicura la validità del documento DDX.
+È possibile utilizzare il servizio Assembler per determinare se un documento DDX è valido. Se ad esempio si è eseguito l&#39;aggiornamento da una versione precedente del LiveCycle, la convalida garantisce che il documento DDX sia valido.
 
-## Chiamare altri servizi {#call-other-services}
+## Chiama altri servizi {#call-other-services}
 
-È possibile utilizzare documenti DDX che fanno chiamare il servizio Assembler i seguenti servizi LiveC. Il servizio Assembler può chiamare solo i servizi installati con LiveCycle.
+È possibile utilizzare i documenti DDX che fanno sì che il servizio Assembler chiami i seguenti servizi ciclo LiveC. Il servizio Assembler può chiamare solo i servizi installati con LiveCycle.
 
-**Servizio Estensioni Reader**: Consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
+**Servizio Reader Extensions**: consente agli utenti di Adobe Reader di firmare digitalmente il documento PDF risultante.
 
-**Servizio Forms**: Unisce un file XDP e un file di dati XML per produrre un documento PDF contenente il modulo interattivo compilato.
+**servizio Forms**: unisce un file XDP e un file di dati XML per produrre un documento PDF contenente il modulo interattivo compilato.
 
-**Servizio di uscita**: Converte un modulo XML dinamico in un documento PDF contenente un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio Output.
+**Servizio di output**: converte un modulo XML dinamico in un documento PDF che contiene un modulo non interattivo (appiattisce il modulo). Il servizio Assembler appiattisce i moduli XML statici e i moduli Acrobat senza chiamare il servizio di output.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -346,4 +346,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L&#39;utilizzo di DDX e del servizio Assembler per chiamare altri servizi LiveC per il ciclo può semplificare il diagramma del processo. Può anche ridurre lo sforzo per personalizzare i flussi di lavoro. (Consulta anche
+L&#39;utilizzo di DDX e del servizio Assembler per richiamare altri servizi ciclici LiveC può semplificare il diagramma dei processi. Può anche ridurre il carico di lavoro dedicato alla personalizzazione dei flussi di lavoro. (Consulta anche

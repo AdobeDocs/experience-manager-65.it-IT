@@ -1,7 +1,7 @@
 ---
 title: Apertura di un’attività
 seo-title: Opening a task
-description: Passaggi per aprire un’attività sull’app AEM Forms.
+description: Passaggi per aprire un’attività nell’app AEM Forms.
 seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
@@ -18,32 +18,32 @@ ht-degree: 0%
 
 # Apertura di un’attività {#opening-a-task}
 
-Se l’app AEM Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività assegnate a te. Le attività sono passaggi nel flusso di lavoro definito in workbench o nell’editor del flusso di lavoro AEM.
+Se l’app AEM Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività che ti sono state assegnate. Le attività sono passaggi del flusso di lavoro definito in Workbench o nell’editor del flusso di lavoro AEM.
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze . Vedi [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consulta [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
-**Per aprire un’attività**
+**Per aprire un&#39;attività**
 
 1. Toccare l’attività nell’elenco delle attività.
 
-   Quando si seleziona un’attività, sotto il nome dell’attività viene visualizzata la descrizione dell’attività, come impostata in Workbench. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’attività.
+   Quando si seleziona un task, la descrizione del task, impostata in Workbench, viene visualizzata sotto il nome del task. Dopo la descrizione viene visualizzata l’azione utente o le azioni associate all’attività.
 
-   * Se a un’attività sono associate azioni, toccando i puntini di sospensione orizzontali accanto all’attività nella schermata iniziale vengono visualizzate le azioni disponibili.
-   * Se la finestra di progettazione del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
+   * Se a un&#39;attività sono associate delle azioni, le azioni vengono visualizzate toccando i puntini di sospensione orizzontali accanto all&#39;attività nella schermata iniziale.
+   * Se il progettista del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
 
-1. Toccare l’attività per aprirla.
+1. Tocca l’attività per aprirla.
 
    Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo Workbench.
 
 **Per aprire un&#39;applicazione**
 
-1. Tocca **applicazione** in **Forms** scheda .
+1. Tocca il **applicazione** nel **Forms** scheda.
 
-   Quando si seleziona un&#39;applicazione, sotto il nome dell&#39;applicazione viene visualizzata la descrizione dell&#39;applicazione. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’applicazione.
+   Quando si seleziona un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione vengono visualizzate l’azione utente e le azioni associate all’applicazione.
 
-   * Se a un&#39;applicazione sono associate azioni, toccando i puntini di sospensione orizzontali accanto all&#39;applicazione nella schermata iniziale vengono visualizzate le azioni.
-   * Se il modello di flusso di lavoro dell&#39;applicazione non associa alcuna azione all&#39;applicazione, viene visualizzata l&#39;azione predefinita associata all&#39;applicazione.
+   * Se a un’applicazione sono associate delle azioni, le azioni vengono visualizzate toccando i puntini di sospensione orizzontali accanto all’applicazione nella schermata iniziale.
+   * Se il modello di workflow dell&#39;applicazione non associa alcuna azione all&#39;applicazione, verrà visualizzata l&#39;azione predefinita associata all&#39;applicazione.
 
-1. Toccare l’attività per aprirla.
+1. Tocca l’attività per aprirla.
 
    Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.

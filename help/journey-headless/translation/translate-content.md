@@ -15,12 +15,12 @@ Utilizza il connettore di traduzione e le regole per tradurre il contenuto headl
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione senza testa AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare AEM regole di traduzione per identificare il contenuto di traduzione. Ora dovresti:
+Nel documento precedente del percorso di traduzione headless dell&#39;AEM, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti:
 
 * Comprendere come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
-Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo ti guida attraverso il passaggio successivo per tradurre i tuoi contenuti headless.
+Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo illustra il passaggio successivo per la traduzione dei contenuti headless.
 
 ## Obiettivo {#objective}
 
@@ -79,7 +79,7 @@ Per i translation project manager, spesso è necessario selezionare manualmente 
 1. Passa a **Navigazione** -> **Progetti**.
 1. Tocca o fai clic su **Crea** -> **Cartella** per creare una cartella per i progetti.
    * Questo è facoltativo, ma utile per organizzare le attività di traduzione.
-1. In **Crea cartella** aggiungi una finestra **Titolo** per la cartella, quindi tocca o fai clic su **Crea**.
+1. In **Crea cartella** finestra, aggiungi un **Titolo** per la cartella, quindi tocca o fai clic su **Crea**.
 
    ![Crea cartella di progetto](assets/create-project-folder.png)
 

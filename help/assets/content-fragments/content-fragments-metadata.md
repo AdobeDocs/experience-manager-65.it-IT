@@ -1,6 +1,6 @@
 ---
 title: Metadati - Proprietà dei frammenti
-description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare il contenuto headless.
+description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare i contenuti headless.
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
@@ -13,7 +13,7 @@ ht-degree: 59%
 
 # Metadati - Proprietà dei frammenti {#metadata-fragment-properties}
 
-Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare il contenuto headless.
+Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto in AEM per regolare i contenuti headless.
 
 ## Modifica di proprietà o metadati {#editing-properties-meta-data}
 
@@ -34,11 +34,11 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
    * **Descrizione**
    * **Tag**
       * I [tag](/help/sites-authoring/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
-Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Avvio di Natale&quot; per consentire la navigazione solo come sottoinsieme o copiarli per utilizzarli con un altro lancio futuro in una nuova cartella.
+Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Lancio di Natale&quot; per consentire la navigazione solo come sottoinsieme oppure per copiarli e utilizzarli per un altro lancio futuro in una nuova cartella.
       >[!NOTE]
       >
-      >**Tag** può essere aggiunto anche quando [creazione di contenuti Variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+      >**Tag** può essere aggiunto anche quando [authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
    * **Creato** (solo visualizzazione)
-   Esempio:
+   Ad esempio:
    ![metadati](assets/cfm-metadata-02.png)

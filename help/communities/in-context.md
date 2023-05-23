@@ -1,7 +1,7 @@
 ---
-title: Moderazione nel contesto
+title: Moderazione in contesto
 seo-title: In-Context Moderation
-description: Come eseguire azioni di moderatore
+description: Come eseguire le azioni del moderatore
 seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
@@ -18,33 +18,33 @@ ht-degree: 1%
 
 ---
 
-# Moderazione nel contesto {#in-context-moderation}
+# Moderazione in contesto {#in-context-moderation}
 
-Per AEM Communities, la moderazione può essere eseguita da amministratori e membri della community fidati direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
+Per AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community attendibile direttamente sulla pagina pubblicata in cui è stato pubblicato il contenuto della community.
 
-Quando si utilizza un [console di moderazione](moderation.md), le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l’accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
+Quando si utilizza una [console di moderazione](moderation.md), le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso alle azioni di moderazione aggiuntive disponibili durante la moderazione nel contesto.
 
 ## Azioni di moderazione {#moderation-actions}
 
-Per una descrizione di [azioni di moderazione](moderate-ugc.md#moderation-actions).
+Visita la panoramica sulla moderazione per una descrizione [azioni di moderazione](moderate-ugc.md#moderation-actions).
 
 ## Interfaccia utente di moderazione {#moderation-ui}
 
-L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione del contenuto generato dall’utente (UGC). Gli elementi dell’interfaccia utente sono determinati dallo stato del visitatore del sito, indipendentemente dal fatto che siano...
+L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione dei contenuti generati dagli utenti (UGC, User Generated Content). Gli elementi dell’interfaccia utente dipendono dallo stato del visitatore del sito, che si tratti o meno di...
 
 1. Membro che ha pubblicato il contenuto.
-1. Un moderatore membro affidabile.
+1. Un moderatore membro attendibile.
 1. Un amministratore.
-1. Accesso eseguito da un amministratore, un moderatore o un autore del contenuto.
-1. Non connesso.
+1. Accesso eseguito, ma nessun amministratore, moderatore o autore del contenuto.
+1. Accesso non eseguito.
 
 ## Esempio {#example}
 
-Utilizzo della [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
+Utilizzo di [Coinvolgi Geometrixx](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum su cui si possono eseguire varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della comunità aggiungendo lui al gruppo di moderatori-impegnati della comunità durante la creazione del sito.
+Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della community, aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo di membri della community che coinvolgono i membri utilizzando [Console dei membri](members.md).
+Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md).
 
 Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
@@ -54,81 +54,81 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
    * Seleziona forum
    * Seleziona nuovo post
-   * Inserisci l&#39;oggetto
+   * Inserisci l’oggetto
 
-      Quando cambiare il nettare nell&#39;Alimentatore Umano di Uccello
+      Quando cambiare il nettare in Alimentazione Uccelli Humming
 
-   * Inserisci il testo del corpo
+   * Inserisci il corpo del testo
 
-      Non ho avuto molto successo quando appendo un mangime per colibrì ogni anno. Sembra che arrivino un giorno o due allora questo è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
+      Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarlo prima?
 
    * Seleziona post
-   * Seleziona Esci
+   * Seleziona disconnessione
 
 * Accedi come Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionare Leggi tutto
-   * Inserisci il commento per Risposta post
+   * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
+   * Inserisci il commento per Pubblica risposta
 
-      Io cambio la mia una volta alla settimana e le ricevo da maggio a ottobre.
+      Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
 
    * Seleziona risposta
-   * Seleziona Esci
+   * Seleziona disconnessione
 
 * Accedi come Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionare Leggi tutto
-   * Inserisci il commento per Risposta post
+   * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
+   * Inserisci il commento per Pubblica risposta
 
       Vendo nettare e alimentatori - visita https://my.viral.url/
 
    * Seleziona risposta
-   * Seleziona Esci
+   * Seleziona disconnessione
 
-### Visitatore del sito anonimo (#5) {#anonymous-site-visitor}
+### Visitatore sito anonimo (#5) {#anonymous-site-visitor}
 
-Di seguito è riportata una visualizzazione del forum visualizzato da un visitatore del sito che non ha effettuato l’accesso (5).
+Di seguito è riportata una visualizzazione del forum visualizzata da un visitatore del sito che non ha effettuato l’accesso (5).
 
-Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare alcun contenuto né eseguire azioni di moderazione.
+Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare contenuti né eseguire azioni di moderazione.
 
 ![community-forum-visitor](assets/community-forum-visitor.png)
 
 ### Nuovo membro (#4) {#new-member}
 
-Sull&#39;autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo di membri della community-coinvolgiti utilizzando [Console dei membri](members.md), quindi Esci.
+All’autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md), quindi disconnettiti.
 
-Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`e quindi `Read more` per il post colibrì.
+Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`, e quindi `Read more` per la postazione colibrì.
 
 Avviso:
 
 * Boyd non ha partecipato al forum.
 * Boyd non può eliminare nulla.
-* Boyd è connesso e può rispondere o contrassegnare il contenuto.
+* Boyd ha effettuato l&#39;accesso e può rispondere o contrassegnare il contenuto.
 
-Chiedi a Boyd di selezionare Flag per contrassegnare il contenuto pubblicato da Andrew.
+Chiedi a Boyd di selezionare Flag per segnalare il contenuto pubblicato da Andrew.
 
 Disconnetti
 
-![membro della comunità](assets/community-forum-member.png)
+![membro del forum della community](assets/community-forum-member.png)
 
 ### Amministratore (#3) {#administrator}
 
-Accedi come amministratore (amministratore) e accedi al thread selezionando Forum, quindi Ulteriori informazioni per un post.
+Accedi come amministratore (admin) e accedi al thread selezionando Forum e quindi Leggi tutto per un post.
 
 Avviso:
 
-* L’Amministratore può contrassegnare, eliminare, modificare, rifiutare, tagliare, chiudere, fissare, feature.
-* L’amministratore può selezionare Amministrazione per accedere alla console di moderazione.
+* L&#39;amministratore può contrassegnare, eliminare, modificare, negare, tagliare, chiudere, fissare, feature.
+* L&#39;amministratore può selezionare Amministrazione per accedere alla console di moderazione.
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
+Seleziona la voce di menu Amministrazione per accedere al [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
 
-Tieni presente che, per un amministratore, tutti i contenuti modificabili sono visibili, non solo quelli del sito della community di Geometrixx Engage.
+Tieni presente che, per un amministratore, tutto il contenuto moderabile è visibile, non solo il contenuto del sito della community Geometrixx Engage.
 
-Il filtro di ricerca è un pannello laterale che attiva o disattiva l’apertura o la chiusura.
+Il filtro di ricerca è un pannello laterale che consente di aprire o chiudere alternativamente.
 
 Disconnetti.
 
@@ -136,35 +136,35 @@ Disconnetti.
 
 ### Moderatore community (#2) {#community-moderator}
 
-Accedi come Aaron McDonald (aaron.mcdonal@mailinator.com), un moderatore della comunità, e accedi al thread selezionando Forum, e poi Ulteriori informazioni per il post colibrì.
+Accedi come Aaron McDonald (aaron.mcdonal@mailinator.com), un moderatore della community, e accedi al thread selezionando Forum, quindi Leggi tutto per il post su hummingbird.
 
 Avviso:
 
-* Aaron può rispondere, eliminare, modificare o negare il proprio post.
-* Aaron può anche contrassegnare/consentire, rispondere, eliminare, modificare, negare altri contenuti.
-* Aaron può tagliare l&#39;argomento del forum per spostarlo in un altro forum di cui modera.
+* Aaron può Rispondere, Eliminare, Modificare o Negare il proprio post.
+* Aaron può anche Contrassegnare/Consentire, Rispondere, Eliminare, Modificare, Negare altri contenuti.
+* Aaron può tagliare l&#39;argomento del forum per spostarlo in un altro forum per cui modera.
 * Aaron può selezionare Amministrazione per accedere alla console di moderazione.
 
-![community-forum-moderatore](assets/community-forum-moderator.png)
+![community-forum-moderator](assets/community-forum-moderator.png)
 
-Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
+Seleziona la voce di menu Amministrazione per accedere al [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
 
-Nota che, per un moderatore della community, è visibile solo il contenuto moderabile del sito della community di Geometrixx Engage.
+Tieni presente che, per un moderatore della community, è visibile solo il contenuto moderabile del sito community di Geometrixx Engage.
 
-Il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine è con la barra laterale di ricerca disattivata), ma non ha accesso ad altre console AEM.
+Nota che il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine mostra la barra laterale di ricerca chiusa), ma non ha accesso ad altre console AEM.
 
 Disconnetti.
 
-![moderatore-accesso](assets/moderator-access.png)
+![moderator-access](assets/moderator-access.png)
 
-### Autore del contenuto (#1) {#content-author}
+### Autore di contenuti (#1) {#content-author}
 
-Accedi come Rebekah Larsen (rebekah.larsen@mailinator.com), un membro della comunità che ha avviato il thread, e accedi al thread selezionando Forum, e poi Ulteriori informazioni per il post di colibrì.
+Accedi come Rebekah Larsen (rebekah.larsen@mailinator.com), un membro della community che ha avviato il thread, e accedi al thread selezionando Forum e quindi Leggi tutto per il post su hummingbird.
 
 Avviso:
 
-* Rebekah può eliminare o modificare il proprio post.
-* Rebekah può anche rispondere o contrassegnare altri contenuti.
+* Rebekah può cancellare o modificare il proprio post.
+* Rebekah può anche Rispondere o Contrassegnare altri contenuti.
 * Rebekah non può accedere alla console di moderazione.
 
 ![community-forum-author](assets/community-forum-author.png)

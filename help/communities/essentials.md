@@ -1,7 +1,7 @@
 ---
-title: Componenti, funzioni e funzioni di base
+title: Nozioni di base su componenti, funzioni e funzioni
 seo-title: Component, Function and Feature Essentials
-description: Funzionamento di siti, modelli e gruppi community
+description: Funzionamento di siti, modelli e gruppi della community
 seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
@@ -17,15 +17,15 @@ ht-degree: 17%
 
 ---
 
-# Componenti, funzioni e funzioni di base  {#component-function-and-feature-essentials}
+# Nozioni di base su componenti, funzioni e funzioni  {#component-function-and-feature-essentials}
 
-Le funzioni di AEM Communities richiedono ai visitatori del sito di diventare membri e di accedere al [sito della community](overview.md#communitiessites) prima di poter pubblicare contenuti. Pertanto, [modelli di sito community](sites.md), da cui proviene un sito della comunità [creato](sites-console.md), sono progettati per includere una funzione di accesso, nonché profili utente, messaggistica, ricerca, moderazione e traduzione.
+Le funzioni di AEM Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, [modelli per sito community](sites.md), da cui è stato creato un sito community [creato](sites-console.md), sono progettati per includere una funzione di accesso, nonché profili utente, messaggi, ricerca, moderazione e traduzione.
 
-Un sito community supporterà i membri che creano gruppi community quando [funzione dei gruppi community](functions.md#groups-function) è incluso nel modello di sito community selezionato.
+Un sito community supporta i membri che creano gruppi community quando [funzione gruppi community](functions.md#groups-function) è incluso nel modello di sito community selezionato.
 
-Di seguito sono riportati i collegamenti alle informazioni essenziali per i componenti, le funzioni e le funzioni di Communities.
+Di seguito sono riportati collegamenti a informazioni essenziali su componenti, funzioni e funzioni di Communities.
 
-## Componenti di base {#base-components}
+## Componenti base {#base-components}
 
 * [Commenti](essentials-comments.md)
 * [Recensioni](reviews-basics.md)
@@ -54,32 +54,32 @@ Di seguito sono riportati i collegamenti alle informazioni essenziali per i comp
 
 * [Librerie client](clientlibs.md)
 * [Siti community](sites-for-developers.md)
-* [Eventi OSGi component](events.md)
+* [Eventi OSGi componenti](events.md)
 * [Caricamento laterale componente](sideloading.md)
 * [Messaggi](essentials-messaging.md)
 * [Editor Rich Text](rte.md)
-* [Punteggio e badge](configure-scoring.md)
+* [Punteggio e distintivi](configure-scoring.md)
 * [Ricerca](search-implementation.md)
 * [Grafico social](essentials-socialgraph.md)
-* [Provider di risorse di storage](srp-and-ugc.md) `(SRP)`
+* [Provider risorsa di archiviazione](srp-and-ugc.md) `(SRP)`
 
 * [Assegnazione dei tag](tag.md)
 
-## Javadocs {#javadocs}
+## JavaScript {#javadocs}
 
-La [javadocs online](../../help/sites-developing/reference-materials.md) riflettono le API disponibili nella versione 6.3 di AEM.
-Le API di Communities sono in `com.adobe.cq.social.*` pacchetti.
+Il [javadoc online](../../help/sites-developing/reference-materials.md) riflette le API disponibili nella versione AEM 6.3.
+Le API delle community sono in `com.adobe.cq.social.*` pacchetti.
 
-Per ogni [feature pack](deploy-communities.md#latestfeaturepack), viene reso disponibile un jar javadoc. Per ulteriori informazioni, visita [Utilizzo di Maven per Communities](maven.md#javadocs).
+Per ogni [feature pack](deploy-communities.md#latestfeaturepack), è disponibile un file javadoc jar. Per ulteriori informazioni, visita [Utilizzo di Maven per le community](maven.md#javadocs).
 
 ## Informazioni aggiuntive {#additional-information}
 
-* [Quadro dei componenti sociali (SCF)](scf.md)
+* [Framework componenti social network (SCF)](scf.md)
 
    * [Personalizzazioni lato client](client-customize.md)
    * [Personalizzazioni lato server](server-customize.md)
-   * [Panoramica del provider di risorse di storage](srp.md)
+   * [Panoramica del provider di risorse di archiviazione](srp.md)
 
-* [Linee guida sulla codifica](code-guide.md)
+* [Linee guida per la codifica](code-guide.md)
 * [Esercitazioni](tutorials.md)
 * [Risoluzione dei problemi](troubleshooting.md)

@@ -25,13 +25,13 @@ Un frammento di contenuto estende una risorsa standard; vedi:
 
 ## Architettura {#architecture}
 
-Le basi [parti costituenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
+La base [parti costitutive](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) di un frammento di contenuto:
 
 * A *Frammento di contenuto,*
-* costituito da uno o più *Elemento contenuto* s,
-* e che possono avere uno o più *Variazione di contenuto* s.
+* costituito da uno o più *Elemento contenuto* s
+* e che possono avere uno o più *Variante contenuto* s.
 
-A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
+A seconda del tipo di frammento, vengono utilizzati anche i modelli o i modelli:
 
 >[!CAUTION]
 >
@@ -43,107 +43,107 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
 >
 >Prima di AEM 6.3, i frammenti di contenuto venivano creati in base a modelli anziché a modelli.
 >
->I modelli per frammenti di contenuto sono diventati obsoleti. Possono ancora essere utilizzati per creare frammenti, ma si consiglia invece di utilizzare Modelli per frammenti di contenuto . Non verranno aggiunte nuove funzioni ai modelli di frammento e verranno rimosse in una versione futura.
+>I modelli per frammenti di contenuto sono ora obsoleti. Possono comunque essere utilizzati per la creazione di frammenti, ma si consiglia l’utilizzo di modelli per frammenti di contenuto. Non verranno aggiunte nuove funzioni ai modelli di frammenti e verranno rimosse in una versione futura.
 
 * Modelli per frammenti di contenuto:
 
-   * Utilizzato per definire frammenti di contenuto contenenti contenuto strutturato.
-   * I modelli di frammento di contenuto definiscono la struttura di un frammento di contenuto al momento della creazione.
-   * Un frammento fa riferimento al modello; le modifiche al modello possono quindi influire su eventuali frammenti dipendenti.
-   * I modelli sono formati da tipi di dati.
+   * Utilizzato per definire frammenti di contenuto che contengono contenuto strutturato.
+   * I modelli per frammenti di contenuto definiscono la struttura di un frammento di contenuto al momento della creazione.
+   * Un frammento fa riferimento al modello, pertanto le modifiche apportate al modello possono influire o influenzeranno eventuali frammenti dipendenti.
+   * I modelli sono costituiti da tipi di dati.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
 
    >[!CAUTION]
    >
-   >Qualsiasi modifica apportata a un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti; questo può portare a proprietà orfane in tali frammenti.
+   >Eventuali modifiche apportate a un modello per frammenti di contenuto esistente possono influire sui frammenti dipendenti, con conseguenti proprietà orfane.
 
-* Modelli di frammento di contenuto:
+* Modelli per frammenti di contenuto:
 
    * Utilizzato per definire frammenti di contenuto semplici.
-   * I modelli definiscono la struttura di base (solo testo) di un frammento di contenuto al momento della creazione.
-   * Il modello viene copiato nel frammento quando viene creato; pertanto, ulteriori modifiche al modello non verranno applicate ai frammenti esistenti.
+   * I modelli definiscono la struttura (di base, di solo testo) di un frammento di contenuto al momento della creazione.
+   * Il modello viene copiato nel frammento quando viene creato; pertanto, eventuali modifiche al modello non verranno applicate ai frammenti esistenti.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
-   * [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) operano in modo diverso da quello di altri meccanismi di modellazione all’interno dell’ecosistema AEM (ad esempio modelli di pagina, ecc.). Dovrebbero pertanto essere considerati separatamente.
-   * Se si basa su un modello, il tipo MIME del contenuto viene gestito sul contenuto effettivo; ciò significa che ogni elemento e variante può avere un tipo MIME diverso.
+   * [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) operare in modo diverso rispetto ad altri meccanismi di creazione di modelli all’interno dell’ecosistema AEM (ad esempio, modelli di pagina, ecc.). Pertanto, essi devono essere considerati separatamente.
+   * Se basato su un modello, il tipo MIME del contenuto viene gestito in base al contenuto effettivo; ciò significa che ogni elemento e variante può avere un tipo MIME diverso.
 
-### Integrazione con le risorse {#integration-with-assets}
+### Integrazione con Assets {#integration-with-assets}
 
-Content Fragment Management (CFM) fa parte di AEM Assets come:
+La gestione dei frammenti di contenuto (CFM) fa parte di AEM Assets in quanto:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Assets esistente.
 * Sono completamente integrati con Assets (console di amministrazione, ecc.).
 
-#### Mappatura di frammenti di contenuto strutturati sulle risorse {#mapping-structured-content-fragments-to-assets}
+#### Mappatura di frammenti di contenuto strutturati alle risorse {#mapping-structured-content-fragments-to-assets}
 
-![strutturata da frammento a risorsa](assets/fragment-to-assets-structured.png)
+![da frammento ad asset strutturato](assets/fragment-to-assets-structured.png)
 
-I frammenti di contenuto con contenuto strutturato (ovvero basati su un modello di frammento di contenuto) vengono mappati su un’unica risorsa:
+I frammenti di contenuto con contenuto strutturato (ovvero basati su un modello per frammenti di contenuto) sono mappati su una singola risorsa:
 
-* Tutti i contenuti sono memorizzati nella `jcr:content/data` nodo della risorsa:
+* Tutto il contenuto viene archiviato in `jcr:content/data` nodo della risorsa:
 
-   * I dati dell’elemento vengono memorizzati sotto il sotto-nodo principale:
+   * I dati dell’elemento vengono memorizzati nel sottonodo principale:
       `jcr:content/data/master`
 
-   * Le varianti sono memorizzate sotto un nodo secondario che porta il nome della variante: ad esempio `jcr:content/data/myvariation`
+   * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante: ad esempio `jcr:content/data/myvariation`
 
-   * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come proprietà con il nome dell’elemento: Ad esempio, il contenuto dell’elemento `text` viene memorizzato come proprietà `text` su `jcr:content/data/master`
+   * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come una proprietà con il nome dell’elemento: ad esempio, il contenuto dell’elemento `text` viene memorizzato come proprietà `text` il `jcr:content/data/master`
 
 * I metadati e il contenuto associato sono memorizzati di seguito `jcr:content/metadata`
-Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati su 
+Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati in 
 `jcr:content`
 
 #### Mappatura di frammenti di contenuto semplici sulle risorse {#mapping-simple-content-fragments-to-assets}
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-I frammenti di contenuto semplice (basati su un modello) sono mappati su un composito costituito da una risorsa principale e (facoltativo) da risorse secondarie:
+I frammenti di contenuto semplici (basati su un modello) sono mappati su un contenuto composito costituito da una risorsa principale e da risorse secondarie (facoltative):
 
-* Tutte le informazioni non relative al contenuto di un frammento (ad esempio titolo, descrizione, metadati, struttura) vengono gestite esclusivamente sulla risorsa principale.
-* Il contenuto del primo elemento di un frammento è mappato al rendering originale della risorsa principale.
+* Tutte le informazioni non relative al contenuto di un frammento (come titolo, descrizione, metadati, struttura) vengono gestite esclusivamente sulla risorsa principale.
+* Il contenuto del primo elemento di un frammento è mappato alla rappresentazione originale della risorsa principale.
 
-   * Le varianti (se ce ne sono) del primo elemento sono mappate ad altre rappresentazioni della risorsa principale.
+   * Le varianti (se presenti) del primo elemento sono mappate ad altre rappresentazioni della risorsa principale.
 
-* Eventuali elementi aggiuntivi (se esistenti) sono mappati su risorse secondarie della risorsa principale.
+* Elementi aggiuntivi (se esistenti) sono mappati su risorse secondarie della risorsa principale.
 
-   * Il contenuto principale di questi elementi aggiuntivi viene mappato sul rendering originale della relativa risorsa secondaria.
-   * Altre variazioni (se applicabili) di qualsiasi elemento aggiuntivo sono associate ad altre rappresentazioni della rispettiva attività secondaria.
+   * Il contenuto principale di questi elementi aggiuntivi corrisponde alla rappresentazione originale della rispettiva risorsa secondaria.
+   * Altre varianti (se applicabili) di eventuali elementi aggiuntivi sono associate ad altre rappresentazioni della rispettiva risorsa secondaria.
 
 #### Posizione risorsa {#asset-location}
 
-Come per le risorse standard, un frammento di contenuto è conservato in:
+Come per le risorse standard, un frammento di contenuto si trova in:
 
 `/content/dam`
 
-#### Autorizzazioni delle risorse {#asset-permissions}
+#### Autorizzazioni risorse {#asset-permissions}
 
 Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’eliminazione](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Integrazione delle funzioni {#feature-integration}
 
-* La funzione Content Fragment Management (CFM) si basa sul core Assets, ma deve essere il più indipendente possibile.
-* CFM fornisce le proprie implementazioni per gli elementi nelle viste a schede/colonne/elenco; questi plug in nelle implementazioni di rendering dei contenuti di Assets esistenti.
-* Sono stati estesi diversi componenti di Assets per gestire i frammenti di contenuto.
+* La funzione di gestione dei frammenti di contenuto (CFM) si basa sul core Assets, ma deve esserne il più indipendente possibile.
+* CFM fornisce implementazioni proprie per gli elementi nelle viste a schede/colonne/elenchi; queste si collegano alle implementazioni di rendering dei contenuti delle risorse esistenti.
+* Sono stati estesi diversi componenti Assets per gestire i frammenti di contenuto.
 
-### Utilizzo di frammenti di contenuto nelle pagine {#using-content-fragments-in-pages}
+### Utilizzo dei frammenti di contenuto nelle pagine {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
->La [Componente core frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Vedi [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
+>Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
 
-È possibile fare riferimento ai frammenti di contenuto da AEM pagine, come per qualsiasi altro tipo di risorsa. AEM fornisce [**Frammento di contenuto** componente principale](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) - a [che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo **Frammento di contenuto** componente di base.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine dell’AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce [**Frammento di contenuto** componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere, questo **Frammento di contenuto** Componente core.
 
-* Il componente utilizza il `fragmentPath` per fare riferimento al frammento di contenuto effettivo. La `fragmentPath` la proprietà è gestita allo stesso modo di proprietà simili di altri tipi di attività; ad esempio, quando il frammento di contenuto viene spostato in un’altra posizione.
+* Il componente utilizza `fragmentPath` per fare riferimento al frammento di contenuto effettivo. Il `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 
 * Il componente ti consente di selezionare la variante da visualizzare.
-* È inoltre possibile selezionare una serie di paragrafi per limitare l’output; ad esempio, può essere utilizzato per l’output a più colonne.
-* Il componente permette [contenuto intermedio](/help/sites-developing/components-content-fragments.md#in-between-content):
+* Inoltre, è possibile selezionare un intervallo di paragrafi per limitare l’output; ad esempio, può essere utilizzato per l’output a più colonne.
+* Il componente consente [contenuto intermedio](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Qui il componente permette di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
-   * Per il contenuto intermedio è necessario:
+   * In questo caso il componente ti consente di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
+   * Per i contenuti intermedi è necessario:
 
-      * essere consapevole della possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non presenta alcuna relazione fissa con il paragrafo accanto al quale è posizionato, mediante l’inserimento di un nuovo paragrafo (nell’editor dei frammenti di contenuto) prima che la posizione del contenuto intermedio perda la posizione relativa
-      * considera i parametri aggiuntivi (come i filtri di variante e paragrafo) per evitare falsi positivi nei risultati della ricerca
+      * tieni presente la possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha una relazione fissa con il paragrafo a cui è posizionato, inserendo un nuovo paragrafo (nell’editor frammento di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
+      * considera i parametri aggiuntivi (come i filtri di variante e di paragrafo) per evitare falsi positivi nei risultati di ricerca
 
 >[!NOTE]
 >
@@ -151,47 +151,47 @@ Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’elimi
 >
 >Quando si utilizza un frammento di contenuto basato su un modello di frammento di contenuto su una pagina, viene fatto riferimento al modello. Ciò significa che se il modello non è stato pubblicato al momento della pubblicazione della pagina, verrà contrassegnato e il modello verrà aggiunto alle risorse da pubblicare con la pagina.
 >
->**Modello per frammento di contenuto:**
+>**Modello per frammenti di contenuto:**
 >
->Quando si utilizza un frammento di contenuto basato su un modello di frammento di contenuto in una pagina, non esiste alcun riferimento in quanto il modello è stato copiato al momento della creazione del frammento.
+>Quando si utilizza un frammento di contenuto basato su un modello di frammento di contenuto su una pagina, non esiste alcun riferimento in quanto il modello è stato copiato durante la creazione del frammento.
 
 #### Configurazione tramite la console OSGi {#configuration-using-osgi-console}
 
-L’implementazione back-end dei frammenti di contenuto, ad esempio, è responsabile della possibilità di cercare le istanze di un frammento utilizzato in una pagina o della gestione di contenuti multimediali diversi. Questa implementazione deve sapere quali componenti vengono utilizzati per il rendering dei frammenti e come viene parametrizzato il rendering.
+L’implementazione back-end dei frammenti di contenuto è, ad esempio, responsabile della possibilità di cercare le istanze di un frammento utilizzato su una pagina o della gestione di contenuti multimediali diversi. Questa implementazione deve sapere quali componenti vengono utilizzati per il rendering dei frammenti e come viene parametrizzato il rendering.
 
-I parametri di questo possono essere configurati nel [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), per il bundle OSGi **Configurazione del componente Frammento di contenuto**.
+I parametri per questo possono essere configurati in [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), per il bundle OSGi **Configurazione del componente Frammento di contenuto**.
 
 * **Tipi di risorse**
 Un elenco di 
-`sling:resourceTypes` può essere fornito per definire i componenti utilizzati per il rendering dei frammenti di contenuto e a cui applicare l’elaborazione in background.
+`sling:resourceTypes` può essere fornito per definire componenti utilizzati per il rendering dei frammenti di contenuto e a cui applicare l’elaborazione in background.
 
 * **Proprietà riferimento**
-È possibile configurare un elenco di proprietà per specificare dove memorizzare il riferimento al frammento per il rispettivo componente.
+È possibile configurare un elenco di proprietà per specificare dove viene memorizzato il riferimento al frammento per il rispettivo componente.
 
 >[!NOTE]
 >
->Non esiste una mappatura diretta tra proprietà e tipo di componente.
+>Non esiste alcuna mappatura diretta tra la proprietà e il tipo di componente.
 >
->AEM semplicemente la prima proprietà che si trova in un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
+>L&#39;AEM prende semplicemente la prima proprietà che si trova su un paragrafo. Quindi devi scegliere le proprietà con attenzione.
 
 ![screenshot_2019-03-18at100941](assets/screenshot_2019-03-18at100941.png)
 
-Per garantire la compatibilità del componente con l’elaborazione in background del frammento di contenuto, è necessario seguire alcune linee guida:
+Sono ancora presenti alcune linee guida da seguire per garantire che il componente sia compatibile con l’elaborazione in background del frammento di contenuto:
 
-* Il nome della proprietà in cui è definito l’elemento o gli elementi di cui eseguire il rendering deve essere `element` o `elementNames`.
+* Il nome della proprietà in cui sono definiti gli elementi di cui eseguire il rendering deve essere `element` o `elementNames`.
 
-* Il nome della proprietà in cui è definita la variante di cui eseguire il rendering deve essere `variation` o `variationName`.
+* Il nome della proprietà in cui è definita la variante da sottoporre a rendering deve essere `variation` o `variationName`.
 
-* Se è supportato l’output di più elementi (utilizzando `elementNames` per specificare più elementi), la modalità di visualizzazione effettiva è definita dalla proprietà `displayMode`:
+* Se è supportato l’output di più elementi (utilizzando `elementNames` per specificare più elementi), la modalità di visualizzazione effettiva è definita da una proprietà `displayMode`:
 
-   * Se il valore è `singleText` (e è configurato un solo elemento) l’elemento viene rappresentato come un testo con contenuto intermedio, supporto del layout, ecc. Questa è l’impostazione predefinita per i frammenti in cui viene eseguito il rendering di un solo elemento.
-   * In caso contrario, viene utilizzato un approccio molto più semplice (potrebbe essere denominato &quot;visualizzazione modulo&quot;), in cui non è supportato alcun contenuto intermedio e il contenuto del frammento viene rappresentato &quot;così com’è&quot;.
+   * Se il valore è `singleText` (e c’è un solo elemento configurato), quindi l’elemento viene riprodotto come testo con contenuto intermedio, supporto del layout, ecc. Questa è l’impostazione predefinita per i frammenti in cui viene eseguito il rendering di un solo elemento.
+   * In caso contrario, viene utilizzato un approccio molto più semplice (che potrebbe essere denominato &quot;visualizzazione modulo&quot;), in cui non è supportato alcun contenuto intermedio e il contenuto del frammento viene renderizzato &quot;così com’è&quot;.
 
-* Se viene eseguito il rendering del frammento per `displayMode` == `singleText` (implicitamente o esplicitamente) entrano in gioco le seguenti proprietà aggiuntive:
+* Se il frammento è sottoposto a rendering per `displayMode` == `singleText` (implicitamente o esplicitamente) entrano in gioco le seguenti proprietà aggiuntive:
 
-   * `paragraphScope` definisce se deve essere eseguito il rendering di tutti i paragrafi o solo di un intervallo di paragrafi (valori: `all` rispetto a `range`)
+   * `paragraphScope` definisce se devono essere visualizzati tutti i paragrafi o solo un intervallo di paragrafi (valori: `all` rispetto a `range`)
 
-   * if `paragraphScope` == `range` quindi la proprietà `paragraphRange` definisce l’intervallo di paragrafi da sottoporre a rendering
+   * se `paragraphScope` == `range` quindi la proprietà `paragraphRange` definisce l’intervallo di paragrafi di cui eseguire il rendering
 
 ### Integrazione con altri framework {#integration-with-other-frameworks}
 
@@ -203,7 +203,7 @@ I frammenti di contenuto possono essere integrati con:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
-      * si trovano sotto diverse radici linguistiche:
+      * si trovano in diverse radici linguistiche:
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -211,7 +211,7 @@ I frammenti di contenuto possono essere integrati con:
 
          `/content/dam/<path>/de/<to>/<fragment>`
 
-      * ma condividono esattamente lo stesso percorso relativo sotto la radice della lingua:
+      * ma condividono esattamente lo stesso percorso relativo sotto la directory principale della lingua:
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -221,23 +221,23 @@ I frammenti di contenuto possono essere integrati con:
    * Oltre ai percorsi basati su regole, non esiste un’ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; vengono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per navigare tra le varianti di lingua.
    >[!NOTE]
    >
-   >Il flusso di lavoro di traduzione AEM funziona con `/content`:
+   >Il flusso di lavoro di traduzione dell’AEM funziona con `/content`:
    >
-   >* Poiché i modelli di frammento di contenuto risiedono in `/conf`, non sono incluse in tali traduzioni. È possibile [internazionalizzare le stringhe di interfaccia utente](/help/sites-developing/i18n-dev.md).
+   >* Come risiedono i modelli per frammenti di contenuto `/conf`, questi non sono inclusi in tali traduzioni. È possibile [internazionalizzare le stringhe dell’interfaccia utente](/help/sites-developing/i18n-dev.md).
    >
-   >* I modelli vengono copiati per creare il frammento in modo che ciò sia implicito.
+   >* I modelli vengono copiati per creare il frammento, in modo che questo sia implicito.
 
 
-* **Schemi metadati**
+* **Schemi di metadati**
 
-   * Frammenti di contenuto (ri)utilizza l’ [schemi di metadati](/help/assets/metadata-schemas.md), che può essere definito con risorse standard.
-   * CFM fornisce il proprio schema specifico:
+   * I frammenti di contenuto (ri)utilizzano [schemi di metadati](/help/assets/metadata-schemas.md), che può essere definito con le risorse standard.
+   * CFM fornisce uno schema specifico:
 
       `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      se necessario, può essere esteso.
+      se necessario, questa funzione può essere estesa.
 
-   * Il rispettivo modulo schema viene integrato con l’editor frammento.
+   * Il rispettivo modulo schema è integrato con l’editor di frammenti.
 
 ## API di gestione dei frammenti di contenuto - Lato server {#the-content-fragment-management-api-server-side}
 
@@ -247,15 +247,15 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 >[!CAUTION]
 >
->È consigliabile utilizzare l’API lato server invece di accedere direttamente alla struttura dei contenuti.
+>Si consiglia vivamente di utilizzare l’API lato server invece di accedere direttamente alla struttura del contenuto.
 
 ### Interfacce chiave {#key-interfaces}
 
 Le tre interfacce seguenti possono fungere da punti di ingresso:
 
-* **Modello frammento** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modello frammento** ([ModelloFrammento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-   Utilizzo `FragmentTemplate.createFragment()` per la creazione di un nuovo frammento.
+   Utilizzare `FragmentTemplate.createFragment()` per creare un nuovo frammento.
 
    ```
    Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -265,22 +265,22 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    Questa interfaccia rappresenta:
 
-   * un modello di frammento di contenuto o un modello di frammento di contenuto da cui creare un frammento di contenuto,
-   * e (dopo la creazione) le informazioni strutturali di tale frammento
+   * un modello per frammenti di contenuto o un modello per frammenti di contenuto dal quale creare un frammento di contenuto,
+   * e (dopo la creazione) le informazioni strutturali di quel frammento
 
    Queste informazioni possono includere:
 
    * Accedere ai dati di base (titolo, descrizione)
-   * Accedere a modelli/modelli per gli elementi del frammento:
+   * Accedi a modelli/modelli per gli elementi del frammento:
 
-      * Modelli di elementi di elenco
-      * Ottenere informazioni strutturali per un dato elemento
-      * Accedere al modello di elemento (vedi `ElementTemplate`)
-   * Modelli di accesso per le varianti del frammento:
+      * Elencare modelli di elementi
+      * Ottenere informazioni strutturali per un determinato elemento
+      * Accedi al modello di elemento (consulta `ElementTemplate`)
+   * Accedi ai modelli per le varianti del frammento:
 
       * Elencare modelli di varianti
-      * Ottieni informazioni strutturali per una determinata variante
-      * Accedere al modello di variazione (vedi `VariationTemplate`)
+      * Ottenere informazioni strutturali per una determinata variante
+      * Accedi al modello di variante (consulta `VariationTemplate`)
    * Ottieni contenuto associato iniziale
 
    Interfacce che rappresentano informazioni importanti:
@@ -288,7 +288,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
    * `ElementTemplate`
 
       * Ottieni dati di base (nome, titolo)
-      * Ottenere il contenuto iniziale dell’elemento
+      * Ottieni contenuto elemento iniziale
    * `VariationTemplate`
 
       * Ottenere dati di base (nome, titolo, descrizione)
@@ -304,26 +304,26 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    >[!CAUTION]
    >
-   >È consigliabile accedere a un frammento tramite questa interfaccia. È necessario evitare di modificare direttamente la struttura del contenuto.
+   >Si consiglia vivamente di accedere a un frammento tramite questa interfaccia. È necessario evitare di modificare direttamente la struttura del contenuto.
 
-   L’interfaccia ti fornisce i mezzi per:
+   L’interfaccia consente di:
 
-   * Gestire i dati di base (ad esempio nome get; get/set title/description)
+   * Gestisci dati di base (ad esempio nome get, titolo/descrizione get/set)
    * Accedere ai metadati
    * Elementi di accesso:
 
       * Elementi elenco
       * Ottieni elementi per nome
-      * Crea nuovi elementi (vedi [Avvertenze](#caveats))
+      * Creare nuovi elementi (consulta [Avvertenze](#caveats))
 
-      * Accedere ai dati degli elementi (vedi `ContentElement`)
-   * Varianti di elenco definite per il frammento
-   * Crea nuove varianti a livello globale
-   * Gestisci il contenuto associato:
+      * Accedere ai dati degli elementi (vedere `ContentElement`)
+   * Elenca le varianti definite per il frammento
+   * Creare nuove varianti a livello globale
+   * Gestisci contenuto associato:
 
       * Elencare raccolte
-      * Aggiungi raccolte
-      * Rimuovere le raccolte
+      * Aggiungere raccolte
+      * Rimuovi raccolte
    * Accedere al modello o al modello del frammento
 
    Le interfacce che rappresentano gli elementi principali di un frammento sono:
@@ -334,23 +334,23 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Ottieni/Imposta contenuto
       * Accedere alle varianti di un elemento:
 
-         * Varianti di elenco
+         * Varianti elenco
          * Ottieni varianti per nome
-         * Crea nuove varianti (vedi [Avvertenze](#caveats))
-         * Rimuovere le varianti (vedi [Avvertenze](#caveats))
-         * Accedere ai dati sulle varianti (vedi `ContentVariation`)
-      * Collegamento per la risoluzione delle varianti (se la variante specificata non è disponibile per un elemento, è possibile applicare una logica di fallback aggiuntiva specifica per l’implementazione)
-   * **Variazione di contenuto** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+         * Crea nuove varianti (consulta [Avvertenze](#caveats))
+         * Rimuovi varianti (consulta [Avvertenze](#caveats))
+         * Accedere ai dati delle varianti (vedere `ContentVariation`)
+      * Scelta rapida per la risoluzione delle varianti (applicazione di alcune logiche di fallback aggiuntive specifiche per l’implementazione se la variante specificata non è disponibile per un elemento)
+   * **Variante contenuto** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
-      * Sincronizzazione semplice in base alle ultime informazioni modificate
+      * Sincronizzazione semplice, basata sulle informazioni modificate più di recente
 
-   Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`) estendi `Versionable` Interfaccia, che aggiunge funzionalità di controllo delle versioni, necessaria per i frammenti di contenuto:
+   Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`a) estendere `Versionable` Interfaccia di, che aggiunge funzionalità di controllo delle versioni, necessaria per i frammenti di contenuto:
 
-   * Creare una nuova versione dell’elemento
-   * Elencare versioni dell’elemento
-   * Ottenere il contenuto di una versione specifica dell’elemento con versione
+   * Crea una nuova versione dell’elemento
+   * Elencare le versioni dell’elemento
+   * Ottenere il contenuto di una versione specifica dell&#39;elemento con versione
 
 
 
@@ -360,13 +360,13 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 ### Adattamento - Utilizzo di adaptTo() {#adapting-using-adaptto}
 
-È possibile adattare quanto segue:
+È possibile adattare:
 
 * `ContentFragment` può essere adattato a:
 
-   * `Resource` - la risorsa Sling sottostante; tenere presente che l&#39;aggiornamento del sottostante `Resource` direttamente, richiede la ricostruzione del `ContentFragment` oggetto.
+   * `Resource` - la risorsa Sling sottostante; tieni presente che aggiornando la risorsa sottostante `Resource` direttamente, richiede la ricostruzione del `ContentFragment` oggetto.
 
-   * `Asset` - DAM `Asset` astrazione che rappresenta il frammento di contenuto; nota che l&#39;aggiornamento `Asset` direttamente, richiede la ricostruzione del `ContentFragment` oggetto.
+   * `Asset` - il DAM `Asset` astrazione che rappresenta il frammento di contenuto; tieni presente che aggiornando il `Asset` direttamente, richiede la ricostruzione del `ContentFragment` oggetto.
 
 * `ContentElement` può essere adattato a:
 
@@ -376,7 +376,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    * `Resource` - il `Resource` determinazione del modello di riferimento o del modello originale copiato;
 
-      * modifiche apportate tramite `Resource` non vengono riflessi automaticamente nel `FragmentTemplate`.
+      * modifiche apportate tramite `Resource` non si riflettono automaticamente nel `FragmentTemplate`.
 
 * `Resource` può essere adattato a:
 
@@ -385,16 +385,16 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 ### Avvertenze {#caveats}
 
-Va osservato che:
+Si noti che:
 
-* L’API viene implementata per fornire funzionalità supportate dall’interfaccia utente.
-* L’intera API è progettata per **not** le modifiche persistono automaticamente (salvo diversa indicazione nel JavaDoc API). Quindi sarà sempre necessario impegnare il risolutore risorse della rispettiva richiesta (o il resolver che si sta effettivamente utilizzando).
-* Attività che potrebbero richiedere ulteriore sforzo:
+* L’API è implementata per fornire funzionalità supportate dall’interfaccia utente.
+* L’intera API è progettata per **non** le modifiche persistono automaticamente (se non diversamente indicato in API JavaDoc). Pertanto, dovrai sempre eseguire il commit del risolutore risorse della rispettiva richiesta (o del risolutore che stai utilizzando).
+* Attività che potrebbero richiedere un ulteriore impegno:
 
-   * La creazione e la rimozione di nuovi elementi non comporta l’aggiornamento della struttura dati di frammenti semplici (basati su un modello di frammento).
-   * Creazione di nuove varianti da `ContentElement` non aggiornerà la struttura dei dati (ma le creerà a livello globale da `ContentFragment` ).
+   * La creazione o la rimozione di nuovi elementi non aggiorna la struttura dati dei frammenti semplici (in base a un modello di frammento).
+   * Creazione di nuove varianti da `ContentElement` non aggiorna la struttura dei dati (ma li crea a livello globale da `ContentFragment` will).
 
-   * La rimozione di varianti esistenti non aggiornerà la struttura dati.
+   * La rimozione delle varianti esistenti non aggiorna la struttura dati.
 
 ## API di gestione dei frammenti di contenuto - Lato client {#the-content-fragment-management-api-client-side}
 
@@ -408,40 +408,40 @@ Consulta le seguenti risorse:
 
 * `filter.xml`
 
-   La `filter.xml` per la gestione dei frammenti di contenuto è configurata in modo che non si sovrapponga al pacchetto di contenuto core Assets.
+   Il `filter.xml` per la gestione dei frammenti di contenuto è configurato in modo da non sovrapporsi al pacchetto di contenuti core Assets.
 
 ## Modifica sessioni {#edit-sessions}
 
-Una sessione di modifica viene avviata quando l’utente apre un frammento di contenuto in una delle pagine dell’editor. La sessione di modifica viene terminata quando l’utente esce dall’editor selezionando **Salva** o **Annulla**.
+Una sessione di modifica viene avviata quando l’utente apre un frammento di contenuto in una delle pagine dell’editor. La sessione di modifica viene completata quando l’utente esce dall’editor selezionando una delle seguenti opzioni: **Salva** o **Annulla**.
 
 ### Requisiti {#requirements}
 
-Requisiti per il controllo di una sessione di modifica:
+I requisiti per il controllo di una sessione di modifica sono i seguenti:
 
-* La modifica di un frammento di contenuto, che può estendersi su più visualizzazioni (= pagine di HTML), deve essere atomica.
-* L&#39;editing dovrebbe essere *transazionale*; alla fine della sessione di modifica le modifiche devono essere salvate o ripristinate (annullate).
-* I casi di bordo devono essere gestiti correttamente; ad esempio, quando l’utente lascia la pagina immettendo manualmente un URL o utilizzando la navigazione globale.
-* Per evitare la perdita di dati, deve essere disponibile un salvataggio automatico periodico (ogni x minuti).
-* Se due utenti modificano contemporaneamente un frammento di contenuto, non sovrascriveranno le rispettive modifiche.
+* La modifica di un frammento di contenuto, che può estendersi su più visualizzazioni (= pagine HTML), deve essere atomica.
+* La modifica deve essere *transazionale*; al termine della sessione di modifica le modifiche devono essere applicate (salvate) o riportate indietro (annullate).
+* I casi Edge di devono essere gestiti correttamente; questi includono situazioni come quando l’utente esce dalla pagina immettendo manualmente un URL o utilizzando la navigazione globale.
+* Per evitare perdite di dati, è necessario che sia disponibile un salvataggio automatico periodico (ogni x minuti).
+* Se un frammento di contenuto viene modificato contemporaneamente da due utenti, questi non devono sovrascrivere le rispettive modifiche.
 
 #### Processi {#processes}
 
-I processi in questione sono i seguenti:
+I processi coinvolti sono:
 
 * Avvio di una sessione
 
    * Viene creata una nuova versione del frammento di contenuto.
-   * Viene avviato il salvataggio automatico.
-   * I cookie sono impostati; definiscono il frammento attualmente modificato e che sia aperta una sessione di modifica.
+   * Salvataggio automatico avviato.
+   * I cookie sono impostati, definiscono il frammento attualmente modificato e indica che è aperta una sessione di modifica.
 
 * Completamento di una sessione
 
-   * Il salvataggio automatico viene interrotto.
-   * Al momento del commit:
+   * Salvataggio automatico interrotto.
+   * Al commit:
 
-      * Le ultime informazioni modificate vengono aggiornate.
+      * Le informazioni dell’ultima modifica vengono aggiornate.
       * I cookie vengono rimossi.
-   * Al momento del ripristino:
+   * Al momento del rollback:
 
       * Viene ripristinata la versione del frammento di contenuto creato all’avvio della sessione di modifica.
       * I cookie vengono rimossi.
@@ -450,7 +450,7 @@ I processi in questione sono i seguenti:
 * Modifica
 
    * Tutte le modifiche (salvataggio automatico incluso) vengono eseguite sul frammento di contenuto attivo, non in un’area separata e protetta.
-   * Pertanto, tali modifiche si riflettono immediatamente su AEM pagine che fanno riferimento al rispettivo frammento di contenuto
+   * Pertanto, tali modifiche vengono immediatamente applicate alle pagine AEM che fanno riferimento al rispettivo frammento di contenuto
 
 #### Azioni {#actions}
 
@@ -458,14 +458,14 @@ Le azioni possibili sono:
 
 * Inserimento di una pagina
 
-   * Controlla se è già presente una sessione di modifica; controllando il rispettivo cookie.
+   * Verifica se è già presente una sessione di modifica controllando il rispettivo cookie.
 
-      * Se esiste, verifica che la sessione di modifica sia stata avviata per il frammento di contenuto in fase di modifica
+      * Se ne esiste una, verifica che la sessione di modifica sia stata avviata per il frammento di contenuto attualmente in fase di modifica
 
-         * Se il frammento corrente, ristabilire la sessione.
-         * In caso contrario, prova ad annullare la modifica del frammento di contenuto precedentemente modificato e a rimuovere i cookie (nessuna sessione di modifica presente in seguito).
-      * Se non esiste alcuna sessione di modifica, attendi la prima modifica apportata dall’utente (vedi di seguito).
-   * Controlla se in una pagina è già presente un riferimento al frammento di contenuto e visualizza le informazioni appropriate in tal caso.
+         * Se il frammento corrente, ristabilisci la sessione.
+         * In caso contrario, prova ad annullare la modifica per il frammento di contenuto modificato in precedenza e a rimuovere i cookie (nessuna sessione di modifica successiva).
+      * Se non esiste alcuna sessione di modifica, attendi la prima modifica apportata dall’utente (vedi sotto).
+   * Verifica se in una pagina è già presente un riferimento al frammento di contenuto e, in tal caso, visualizza le informazioni appropriate.
 
 
 
@@ -475,17 +475,17 @@ Le azioni possibili sono:
 
 * Uscita da una pagina
 
-   * Se è presente una sessione di modifica e le modifiche non sono state mantenute, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di rimanere sulla pagina.
+   * Se è presente una sessione di modifica e le modifiche non sono state rese permanenti, viene visualizzata una finestra di dialogo di conferma modale per notificare all’utente i contenuti potenzialmente persi e consentirne la permanenza nella pagina.
 
 ## Esempi {#examples}
 
-### Esempio: Accesso a un frammento di contenuto esistente {#example-accessing-an-existing-content-fragment}
+### Esempio: accesso a un frammento di contenuto esistente {#example-accessing-an-existing-content-fragment}
 
 A questo scopo, puoi adattare la risorsa che rappresenta l’API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Esempio:
+Ad esempio:
 
 ```java
 // first, get the resource
@@ -497,13 +497,13 @@ if (fragmentResource != null) {
 }
 ```
 
-### Esempio: Creazione di un nuovo frammento di contenuto {#example-creating-a-new-content-fragment}
+### Esempio: creazione di un nuovo frammento di contenuto {#example-creating-a-new-content-fragment}
 
 Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-Esempio:
+Ad esempio:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -511,15 +511,15 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Esempio: Specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
+### Esempio: specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-L&#39;intervallo di salvataggio automatico (misurato in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
+L&#39;intervallo di salvataggio automatico (misurato in secondi) può essere definito utilizzando Gestione configurazione (ConfMgr):
 
 * Nodo: `<*conf-root*>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`
 * Tipo: `Long`
 
-* Predefinito: `600` (10 minuti); questo è definito in `/libs/settings/dam/cfm/jcr:content`
+* Predefinito: `600` (10 minuti); definito il `/libs/settings/dam/cfm/jcr:content`
 
 Se desideri impostare un intervallo di salvataggio automatico di 5 minuti, devi definire la proprietà sul nodo; ad esempio:
 
@@ -528,15 +528,15 @@ Se desideri impostare un intervallo di salvataggio automatico di 5 minuti, devi 
 
 * Tipo: `Long`
 
-* Valore: `300` (5 minuti equivale a 300 secondi)
+* Valore: `300` (da 5 minuti a 300 secondi)
 
 ## Modelli per frammenti di contenuto {#content-fragment-templates}
 
-Vedi [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) per informazioni complete.
+Consulta [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) per informazioni complete.
 
 ## Componenti per l’authoring delle pagine {#components-for-page-authoring}
 
 Per ulteriori informazioni, consulta
 
-* [Componenti core - Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) (consigliato)
-* [Componenti per frammenti di contenuto - Componenti per l’authoring delle pagine](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)
+* [Componenti core: componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) (consigliato)
+* [Componenti Frammento di contenuto: componenti per l’authoring delle pagine](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

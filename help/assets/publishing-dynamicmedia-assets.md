@@ -1,6 +1,6 @@
 ---
-title: Pubblicazione delle risorse Dynamic Media
-description: Come pubblicare risorse Dynamic Media
+title: Pubblicazione di risorse Dynamic Media
+description: Come pubblicare le risorse Dynamic Media
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -19,34 +19,34 @@ ht-degree: 4%
 
 # Pubblicare risorse Dynamic Media {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse Dynamic Media, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Dopo la pubblicazione delle risorse Dynamic Media, sono disponibili per l’inclusione in una pagina web tramite un URL o incorporando il codice nella pagina.
+Per pubblicare le risorse Dynamic Media, seleziona quelle già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida]**. Una volta pubblicate, le risorse Dynamic Media possono essere incluse in una pagina web tramite un URL o incorporando il codice nella pagina.
 
-Puoi anche pubblicare istantaneamente le risorse caricate, senza alcun intervento dell’utente. Vedi [Configurare Dynamic Media - Modalità Scene7](config-dms7.md).
-Oppure puoi pubblicare in modo selettivo le risorse su Dynamic Media o Adobe Experience Manager, reciprocamente esclusive, utilizzando **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Vedi [Utilizzo della pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).
+Puoi anche pubblicare immediatamente le risorse caricate, senza alcun intervento da parte dell’utente. Consulta [Configurare Dynamic Media - Modalità Scene7](config-dms7.md).
+In alternativa, puoi pubblicare selettivamente le risorse in Dynamic Media o Adobe Experience Manager, escludendovi a vicenda, utilizzando **[!UICONTROL Pubblicazione selettiva]** a livello di cartella. Consulta [Utilizzare la pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).
 
-In **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa viene visualizzata una piccola icona a forma di globo, a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
-
->[!NOTE]
->
->Se una risorsa è già stata pubblicata, utilizza Experience Manager per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è &quot;persa&quot; in Experience Manager e non può essere annullata. Pertanto, come best practice, annulla la pubblicazione delle risorse prima di spostarle in un’altra cartella.
-
-Se intendi pubblicare le risorse video subito dopo averle codificate, accertati di effettuare la codifica. Durante la codifica dei video, il sistema ti informa che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, puoi visualizzare in anteprima le rappresentazioni video. A questo punto, è sicuro per te pubblicare i video senza che si verifichino errori di pubblicazione.
-
-Vedi anche [Collegare gli URL all’applicazione Web](linking-urls-to-yourwebapplication.md).
-
-Vedi anche [Incorporare il visualizzatore video o immagine Dynamic Media in una pagina web](embed-code.md)
+In **[!UICONTROL Vista a schede]**, sotto il nome di una risorsa e a sinistra della data e dell’ora viene visualizzata una piccola icona a forma di globo, per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
 >[!NOTE]
 >
->* Per utilizzare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, la copia e l’incolla dell’URL in un browser web non funziona.
->* I predefiniti per immagini e visualizzatori devono essere attivati e pubblicati per la distribuzione in diretta.
+>Se una risorsa è già pubblicata, utilizza Experience Manager per spostarla in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile, insieme alla risorsa appena ripubblicata. La risorsa pubblicata originale, tuttavia, viene persa per Experience Manager e non può essere annullata. Di conseguenza, come best practice, è consigliabile annullare la pubblicazione delle risorse prima di spostarle in un’altra cartella.
+
+Se intendi pubblicare le risorse video subito dopo averle codificate, assicurati che sia eseguita la codifica. Durante la codifica dei video, il sistema ti informa che è in corso un flusso di lavoro di elaborazione video. Al termine della codifica video, puoi visualizzare in anteprima le rappresentazioni video. A questo punto, puoi pubblicare i video senza incorrere in errori di pubblicazione.
+
+Vedi anche [Collegare gli URL all’applicazione web](linking-urls-to-yourwebapplication.md).
+
+Vedi anche [Incorporare il visualizzatore di video o immagini Dynamic Media in una pagina web](embed-code.md)
+
+>[!NOTE]
+>
+>* Per utilizzare l’URL, le risorse devono essere pubblicate. Se le risorse non sono pubblicate, non è possibile copiare e incollare l’URL in un browser web.
+>* Per la distribuzione live, è necessario attivare e pubblicare i predefiniti immagine e i predefiniti visualizzatore.
 >
 
 
 Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, consulta [Pubblicare le risorse](manage-assets.md).
 
-## Distribuzione di risorse Dynamic Media HTTP/2 {#http-delivery-of-dynamic-media-assets}
+## Distribuzione HTTP/2 delle risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) su HTTP/2. In altre parole, è disponibile un URL o un codice di incorporamento pubblicato per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di consegna migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) tramite HTTP/2. In altre parole, è disponibile un URL pubblicato o un codice di incorporamento per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui browser e server comunicano, consentendo tempi di risposta e di caricamento migliori per tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione di contenuti HTTP/2](/help/sites-administering/scene7-http2faq.md).
+Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione HTTP/2 dei contenuti](/help/sites-administering/scene7-http2faq.md).

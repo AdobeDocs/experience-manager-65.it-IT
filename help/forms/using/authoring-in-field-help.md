@@ -1,7 +1,7 @@
 ---
-title: Guida all’authoring nel contesto per i campi del modulo
+title: Creazione della Guida contestuale per i campi modulo
 seo-title: Authoring in-context help for form fields
-description: AEM Forms consente di aggiungere aiuto contestuale ai campi e ai pannelli dei moduli adattivi, come testo o rich media, compresi i video.
+description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli dei moduli adattivi, come testo o rich media, inclusi i video.
 seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,55 +17,55 @@ ht-degree: 1%
 
 ---
 
-# Guida all’authoring nel contesto per i campi del modulo{#authoring-in-context-help-for-form-fields}
+# Creazione della Guida contestuale per i campi modulo{#authoring-in-context-help-for-form-fields}
 
 ## Introduzione {#introduction}
 
-In alcune situazioni gli utenti finali che compilano un modulo non sono sicuri di come compilare i dettagli in un particolare campo del modulo. Per risolvere tali problemi, i moduli adattivi supportano l’aggiunta di testo o di aiuto contestuale avanzato a un campo modulo. Consente di migliorare l’esperienza di compilazione del modulo ed evita qualsiasi ambiguità per gli utenti finali.
+In alcune situazioni, gli utenti finali che compilano un modulo non sono sicuri di come compilare i dettagli di un determinato campo modulo. Per risolvere tali problemi, i moduli adattivi supportano l’aggiunta di testo o di informazioni contestuali a un campo modulo. Consente di migliorare l’esperienza di compilazione dei moduli ed evita ambiguità per gli utenti finali.
 
-Questo articolo illustra come gli autori dei moduli possono aggiungere aiuto contestuale durante la creazione di Forms adattivo.
+Questo articolo illustra come gli autori di moduli possono aggiungere aiuto contestuale durante l’authoring di Adaptive Forms.
 
-## Aggiungi aiuto nel contesto {#add-in-context-help}
+## Aggiungi guida nel contesto {#add-in-context-help}
 
-È possibile specificare la guida contestuale utilizzando le seguenti opzioni nella sezione Contenuto della Guida della scheda delle proprietà nella barra laterale.
+Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezione Contenuto della guida della scheda Proprietà nella barra laterale.
 
 * [Breve descrizione](../../forms/using/authoring-in-field-help.md#p-short-description-p)
 * [Descrizione lunga](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
-![Aiuto contestuale per i campi modulo](assets/descriptions.png)
+![Guida contestuale per i campi modulo](assets/descriptions.png)
 
 >[!NOTE]
 >
->La descrizione lunga sostituisce la descrizione breve. Se sono stati specificati entrambi, verrà visualizzata solo la descrizione lunga.
+>La descrizione lunga sostituisce la descrizione breve. Se sono stati specificati entrambi, verrà visualizzata solo la descrizione Long.
 
 ### Breve descrizione {#short-description}
 
-Il campo Breve descrizione fornisce suggerimenti rapidi e brevi sulla compilazione di un campo del modulo. Il testo specificato nel campo Descrizione breve viene visualizzato come descrizione comando quando si passa il mouse sul campo.
+Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazione di un campo modulo. Il testo specificato nel campo Descrizione breve viene visualizzato come descrizione comando quando si passa il puntatore del mouse sul campo.
 
-![Breve descrizione dell’aggiunta della guida contestuale per i campi modulo](assets/tooltip.png)
+![Breve descrizione per l&#39;aggiunta della guida contestuale per i campi modulo](assets/tooltip.png)
 
 >[!NOTE]
 >
 >Seleziona **Mostra sempre una breve descrizione** per visualizzare in modo permanente il testo della guida sotto il campo.
 
-![Aiuto permanente nel contesto sotto il campo](assets/short1.png)
+![Guida contestuale breve permanente sotto il campo](assets/short1.png)
 
 ### Descrizione lunga {#long-description}
 
-Puoi utilizzare il campo Descrizione lunga per specificare il testo lungo o incorporare contenuti rich media, compresi video, come aiuto contestuale. Ad esempio, l’immagine seguente mostra come incorporare un video come aiuto contestuale.
+È possibile utilizzare il campo Descrizione lunga per specificare testo lungo o incorporare contenuti rich media, inclusi i video, come guida contestuale. Ad esempio, l’immagine seguente mostra come incorporare un video come aiuto contestuale.
 
-![Aggiunta di contenuti multimediali avanzati come aiuto contestuale per i campi modulo](assets/long-descriptions.png)
+![Aggiunta di rich media come guida contestuale per i campi modulo](assets/long-descriptions.png)
 
-Aggiunta di una descrizione lunga **?** accanto al campo . Fai clic sull’icona per visualizzare il contenuto aggiunto nella sezione della descrizione lunga.
+Quando si aggiunge una descrizione lunga viene visualizzata una **?** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
 
-![Esempio di aiuto contestuale rich media](assets/photoshop.png)
+![Esempio di aiuto contestuale per rich media](assets/photoshop.png)
 
-### Aiuto a livello di pannello {#panel-level-help}
+### Guida a livello di pannello {#panel-level-help}
 
-Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda Contenuto della Guida della finestra di dialogo di modifica del pannello.
+Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda Contenuto guida della finestra di dialogo di modifica del pannello.
 
-![Aggiunta di aiuto contestuale a un pannello del modulo](assets/panel-level-help.png)
+![Aggiunta di informazioni della Guida contestuale a un pannello modulo](assets/panel-level-help.png)
 
-Aggiunta di aiuto per la visualizzazione di un pannello **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della Guida della finestra di dialogo di modifica del pannello.
+L’aggiunta della guida per il pannello mostra una **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
-![Esempio di aiuto contestuale a livello di pannello del modulo](assets/photoshop-1.png)
+![Esempio di guida contestuale a livello di pannello modulo](assets/photoshop-1.png)

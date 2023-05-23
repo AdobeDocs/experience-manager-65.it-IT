@@ -22,19 +22,19 @@ ht-degree: 2%
 
 # Console Gruppi per community {#community-groups-console}
 
-La console Gruppi consente di accedere alla creazione di gruppi di community quando un sito di una community è [struttura del modello](/help/communities/sites-console.md#step1) include [funzione gruppi](/help/communities/functions.md#groups-function).
+La console Gruppi consente di creare gruppi della community quando il sito [struttura del modello](/help/communities/sites-console.md#step1) include [funzione gruppi](/help/communities/functions.md#groups-function).
 
-* Supporto AEM Communities per la nidificazione dei gruppi all’interno di altri gruppi. La nidificazione del gruppo è possibile quando [Struttura del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione gruppi .
-* Solo per l’ambiente di authoring, esiste una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
-* Il fatto che i membri possano o meno creare gruppi in ambiente di pubblicazione può essere configurato quando si aggiunge una funzione Groups a una struttura del sito community o a una struttura di gruppo community.
+* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando [struttura del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione groups.
+* Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
+* Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarlo quando si aggiunge una funzione Gruppi a una struttura del sito o del gruppo di community.
 
-Dei tre modelli di gruppo inclusi, solo il `Reference Group` il modello include una funzione di gruppi nella relativa struttura.
+Dei tre modelli di gruppo inclusi, solo `Reference Group` Il modello include una funzione di gruppi nella struttura.
 
-I diversi aspetti dei gruppi comunitari sono i seguenti:
+I diversi aspetti dei gruppi comunitari sono:
 
-* **Creazione**: è possibile creare un nuovo gruppo sull’istanza di authoring ed eventualmente di pubblicazione.
-* **Controllo**: Il gruppo può essere aperto o segreto.
-* **Nidificazione**: Il gruppo può contenere zero o più gruppi.
+* **Creazione**: è possibile creare un nuovo gruppo nell’istanza di authoring e, facoltativamente, in quella di pubblicazione.
+* **Controllo**: il gruppo può essere aperto o segreto.
+* **Nidificazione**: il gruppo può contenere zero o più gruppi.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
@@ -44,42 +44,42 @@ I diversi aspetti dei gruppi comunitari sono i seguenti:
 
 >[!NOTE]
 >
->Questa console Gruppi, accessibile solo dalla console Sites di Communities, non deve essere confusa con il membro [Console Gruppi](/help/communities/members.md) per la gestione dei gruppi di membri.
+>Questa console Gruppi, accessibile solo dalla console Siti di Communities, non deve essere confusa con il membro [Console Gruppi](/help/communities/members.md) per la gestione dei gruppi membri.
 >
 >I gruppi di membri sono gruppi di utenti registrati nell’ambiente di pubblicazione e a cui si accede dall’ambiente di authoring utilizzando [servizio tunnel](/help/communities/deploy-communities.md#tunnel-service-on-author).
 
 ## Creazione gruppo {#group-creation}
 
-Per accedere alla console Gruppi :
+Per accedere alla console Gruppi:
 
 * All&#39;autore, accedi con privilegi di amministratore.
 * Dalla navigazione globale: **[!UICONTROL Community]** > **[!UICONTROL Sites]**.
-* Seleziona una cartella del sito community esistente per aprirla.
-* Seleziona un&#39;istanza di un sito community all&#39;interno della cartella.
+* Selezionare una cartella del sito community esistente per aprirla.
+* Selezionare un&#39;istanza di un sito community all&#39;interno della cartella.
 
-   * La struttura del sito comunitario deve comprendere una funzione di gruppo.
-   * Queste schermate vengono visualizzate nell&#39;esercitazione Guida introduttiva dopo [creazione di gruppi in pubblicazione](/help/communities/published-site.md).
+   * La struttura del sito community deve includere una funzione di gruppo.
+   * Queste schermate sono riprese dall&#39;esercitazione introduttiva dopo [creazione di gruppi al momento della pubblicazione](/help/communities/published-site.md).
 
    ![create-group](assets/create-group.png)
 
 * Seleziona la **Cartella Gruppi** per aprirlo.
 
-   Quando vengono aperti, vengono visualizzati tutti i gruppi esistenti, creati in fase di creazione o di pubblicazione.
+   All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante l’authoring o la pubblicazione.
 
    Da questa console Gruppi è possibile creare nuovi gruppi.
 
    ![create-new-group](assets/create-new-group.png)
 
-* Seleziona la **Crea gruppo** pulsante .
+* Seleziona la **Crea gruppo** pulsante.
 
-### Passaggio 1: Modello Gruppo community {#step-community-group-template}
+### Passaggio 1: modello per gruppo community {#step-community-group-template}
 
-![Gruppi di community multilingue](assets/multi-lingual-group.png)
+![Gruppi community multilingue](assets/multi-lingual-group.png)
 
 * **Titolo gruppo community**
 
    Titolo da visualizzare per il gruppo.
-Il titolo viene visualizzato sul sito pubblicato per il gruppo.
+Il titolo del gruppo viene visualizzato nel sito pubblicato.
 
 * **Descrizione gruppo community**
 
@@ -87,225 +87,225 @@ Il titolo viene visualizzato sul sito pubblicato per il gruppo.
 
 * **Directory principale gruppo community**
 
-   Percorso principale del gruppo.
-La radice predefinita è il sito padre, ma può essere spostata in qualsiasi posizione all’interno del sito web. Non è consigliabile modificarlo.
+   Percorso della directory principale del gruppo.
+La directory principale predefinita è il sito padre, ma la directory principale può essere spostata in qualsiasi posizione all’interno del sito web. Non è consigliabile modificarlo.
 
-* **Lingue disponibili supplementari per i gruppi della community** menu
+* **Lingue aggiuntive gruppo community disponibili** menu
 
-   Utilizza il menu a discesa per selezionare le lingue disponibili per i gruppi di community. Nel menu vengono visualizzate tutte le lingue in cui viene creato il sito della community principale. In questo singolo passaggio gli utenti possono selezionare una di queste lingue per creare gruppi in più impostazioni internazionali. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti della community.
+   Utilizzare il menu a discesa per selezionare le lingue disponibili per i gruppi community. Il menu visualizza tutte le lingue in cui è stato creato il sito della community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
 
 * **Nome gruppo community**
 
-   Nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come le risorse e la configurazione nel nome del gruppo.
+   Il nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
 
-   * Ricontrolla il nome in quanto non viene facilmente modificato dopo la creazione del gruppo.
-   * L’URL di base verrà visualizzato sotto la `Community Group Name`.
+   * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
+   * L’URL di base viene visualizzato sotto al `Community Group Name`.
    * Per un URL valido, aggiungi &quot;.html&quot;
-      *per esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+      *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
-* **Modello Gruppo community** menu
+* **Modello per gruppo community** menu
 
-   Utilizza il menu a discesa per scegliere una [modello di gruppo community](/help/communities/tools.md).
+   Utilizza il menu a discesa per scegliere un [modello per gruppo community](/help/communities/tools.md).
 
 ### Passaggio 2: Progettazione {#step-design}
 
-### TEMA DEL GRUPPO COMUNITARIO {#community-group-theme}
+### TEMA GRUPPO COMMUNITY {#community-group-theme}
 
-![communitygrouptheme](assets/communitygrouptheme.png)
+![community grouptheme](assets/communitygrouptheme.png)
 
-Il framework utilizza `Twitter Bootstrap` per fornire al sito un design dinamico e flessibile. È possibile selezionare uno dei molti temi di Bootstrap precaricati per personalizzare lo stile del modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
+Il framework utilizza `Twitter Bootstrap` per offrire al sito un design flessibile e reattivo. È possibile selezionare uno dei numerosi temi di Bootstrap precaricati per assegnare uno stile al modello di gruppo community selezionato oppure caricare un tema di Bootstrap.
 
-Se selezionato, il tema verrà sovrapposto con un segno di spunta blu opaco.
+Se questa opzione è selezionata, il tema viene sovrapposto con un segno di spunta blu opaco.
 
-È possibile selezionare un tema diverso dal tema del sito padre.
+È possibile selezionare un tema diverso da quello del sito principale.
 
-Dopo la pubblicazione del sito, è possibile [modificare le proprietà](#modifyinggroupproperties) e selezionare un tema diverso.
+Dopo la pubblicazione del sito della community, è possibile [modificare le proprietà](#modifyinggroupproperties) e seleziona un tema diverso.
 
-### MARCHIO DEL GRUPPO COMUNITARIO {#community-group-branding}
+### MARCHIO PER GRUPPO COMMUNITY {#community-group-branding}
 
-![marchio di gruppo](assets/community-group-branding.png)
+![community-group-branding](assets/community-group-branding.png)
 
-Il branding del sito community è un’immagine visualizzata come intestazione nella parte superiore di ogni pagina. È possibile visualizzare un banner per il gruppo che differisce dalle altre pagine del sito.
+Il branding del sito community è un’immagine visualizzata come intestazione nella parte superiore di ogni pagina. È possibile visualizzare un banner per il gruppo diverso da altre pagine del sito.
 
-Le dimensioni dell’immagine devono essere pari alla visualizzazione prevista della pagina nel browser e a 120 pixel in altezza.
+L’immagine deve essere ridimensionata in modo da avere la larghezza prevista per la pagina nel browser e un’altezza di 120 pixel.
 
 Quando crei o selezioni un’immagine, tieni presente quanto segue:
 
-* L&#39;altezza dell&#39;immagine viene ritagliata a 120 pixel misurati dal bordo superiore dell&#39;immagine
-* L&#39;immagine viene fissata al bordo sinistro della finestra del browser
-* L&#39;immagine non viene ridimensionata, in modo tale che quando la larghezza dell&#39;immagine è:
+* L’altezza dell’immagine viene ritagliata a 120 pixel misurati dal bordo superiore dell’immagine
+* L&#39;immagine è bloccata sul bordo sinistro della finestra del browser
+* Non esiste alcun ridimensionamento dell’immagine, tale che quando la larghezza dell’immagine è:
 
-   * Inferiore alla larghezza del browser, l&#39;immagine si ripeterà in orizzontale.
-   * Maggiore della larghezza del browser, l&#39;immagine apparirà ritagliata.
+   * Inferiore alla larghezza del browser, l’immagine viene ripetuta orizzontalmente.
+   * Maggiore della larghezza del browser, l’immagine verrà ritagliata.
 
 ### Passaggio 3: Impostazioni {#step-settings}
 
 **MODERAZIONE**
 
-![selezionare i ruoli dei membri del gruppo community](assets/group-admin.png)
+![seleziona i ruoli dei membri del gruppo community](assets/group-admin.png)
 
 **Moderatori gruppo community**
 
-Per impostazione predefinita, viene ereditato l&#39;elenco dei moderatori del sito della comunità padre.
+Per impostazione predefinita, viene ereditato l&#39;elenco di moderatori del sito della community principale.
 
-È possibile aggiungere moderatori specifici al gruppo. Cerca membri (da ambiente di pubblicazione) per aggiungerli come moderatori
+È possibile aggiungere moderatori specifici al gruppo. Cerca membri (dall’ambiente di pubblicazione) per aggiungerli come moderatori
 
 **Amministratori gruppo**
 
-Per impostazione predefinita, l&#39;amministratore del sito della community padre è l&#39;amministratore per i gruppi.
+Per impostazione predefinita, l&#39;amministratore del sito della community padre è anche l&#39;amministratore dei gruppi.
 
-Tuttavia, è possibile assegnare amministratori di gruppo indipendenti. Gli amministratori del gruppo possono gestire il proprio gruppo (ad esempio G1) e creare un sottogruppo nidificato sotto G1. Possono inoltre assegnare amministratori diversi al sottogruppo.
+Tuttavia, è possibile assegnare amministratori di gruppi indipendenti. Gli amministratori di gruppi possono gestire il proprio gruppo (ad esempio G1) e creare un sottogruppo nidificato in G1. Possono inoltre assegnare amministratori diversi per il sottogruppo.
 
-Un utente U1, quindi, può essere un amministratore in un gruppo G1 e un utente regolare nel suo gruppo nidificato G2.
+Un utente U1 può quindi essere un amministratore in un gruppo G1 e un utente normale nel suo gruppo nidificato G2.
 
 **ISCRIZIONE**
 
-L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per garantire un gruppo di comunità.
+L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per proteggere un gruppo community.
 
-![appartenenza a un gruppo](assets/community-group-membership.png)
+![appartenenza a un gruppo community](assets/community-group-membership.png)
 
 * **Iscrizione opzionale**
 
-   Se selezionato, il gruppo community è un gruppo pubblico. I membri del sito possono partecipare al gruppo e pubblicare senza entrare esplicitamente nel gruppo. Il valore predefinito è selezionato.
+   Se viene selezionato, il gruppo community è un gruppo pubblico. I membri del sito possono partecipare al gruppo e pubblicare i post senza partecipare esplicitamente al gruppo. L&#39;opzione Predefinita è selezionata.
 
 * **Iscrizione obbligatoria**
 
-   Se selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare i contenuti del gruppo, ma devono unirsi al gruppo per pubblicare contenuti. I membri si uniscono selezionando `Join` nell’ambiente di pubblicazione. Il valore predefinito non è selezionato.
+   Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma per pubblicare il contenuto è necessario unirsi al gruppo. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
 
 * **Iscrizione limitata**
 
-   Se selezionato, il gruppo della community è un gruppo segreto. I membri della comunità devono essere invitati esplicitamente. I membri invitati vengono inseriti nella casella di ricerca. I membri possono essere aggiunti successivamente utilizzando [Console Membri e gruppi](/help/communities/members.md) l’ambiente di authoring. Il valore predefinito non è selezionato.
+   Se viene selezionato, il gruppo community è un gruppo segreto. I membri della community devono essere invitati esplicitamente. I membri invitati vengono inseriti nella casella di ricerca. I membri possono essere aggiunti in un secondo momento utilizzando [Console membri e gruppi](/help/communities/members.md) l’ambiente di authoring. Impostazione predefinita non selezionata.
 
 **MINIATURA**
 
 ![community-group-thumbnail](assets/community-group-thumbnail.png)
 
-La miniatura è un’immagine da visualizzare per il gruppo all’atto dell’authoring e della pubblicazione.
+La miniatura è un’immagine da visualizzare per il gruppo durante l’authoring e la pubblicazione.
 
-Le dimensioni ottimali per un&#39;immagine di gruppo sono 170 x 90 pixel in un formato immagine supportato (ad esempio JPG o PNG).
+Le dimensioni ottimali di un&#39;immagine di gruppo sono 170 x 90 pixel in un formato di immagine supportato (ad esempio JPG o PNG).
 
-Se non viene aggiunta alcuna immagine, viene visualizzata un’immagine predefinita.
+Se non viene aggiunta alcuna immagine, viene visualizzata un&#39;immagine predefinita.
 
-![immagine thumbnail](assets/thumbnail-image.png)
+![miniatura-immagine](assets/thumbnail-image.png)
 
-### Passaggio 4: Crea gruppo {#step-create-group}
+### Passaggio 4: creare un gruppo {#step-create-group}
 
 ![community-create-group](assets/community-create-group.png)
 
-Se sono necessarie delle regolazioni, utilizza **Indietro** per farli.
+Se sono necessarie delle regolazioni, utilizzare **Indietro** per farle.
 
-Una volta **Crea** viene selezionato e avviato, il processo di creazione del gruppo non può essere interrotto.
+Una volta **Crea** è selezionato e avviato, il processo di creazione del gruppo non può essere interrotto.
 
-Al termine del processo, la scheda per il nuovo sito della sottocomunità (gruppo) viene visualizzata nella console Gruppi di siti di Communities, da cui gli autori possono aggiungere contenuti di pagina o gli amministratori possono modificare le proprietà del sito.
+Al termine del processo, la scheda del nuovo sito (gruppo) della comunità secondaria viene visualizzata nella console Gruppi di siti community, da cui gli autori possono aggiungere contenuto di pagina o gli amministratori possono modificare le proprietà del sito.
 
 ![crea gruppo community](assets/create-community-groups.png)
 
 >[!NOTE]
 >
->Il gruppo viene creato in tutte le lingue, come specificato in [Passaggio 1: Modello Gruppo community](/help/communities/groups.md#step-community-group-template) in Lingue supplementari disponibili per i gruppi della community, nella console Gruppi della community dei rispettivi siti della community.
+>Il gruppo viene creato in tutte le lingue, come specificato in [Passaggio 1: modello per gruppo community](/help/communities/groups.md#step-community-group-template) in Lingue aggiuntive disponibili per il gruppo community, nella console Gruppi community dei rispettivi siti community.
 
-## Contenuto gruppo autore {#author-group-content}
+## Contenuto gruppo di authoring {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
-Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina AEM. Per aprire il gruppo per l’authoring, selezionate l’icona Apri sito che viene visualizzata quando passate il puntatore del mouse sulla scheda del gruppo.
+Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina dell’AEM. Per aprire il gruppo per la creazione, seleziona l’icona Apri sito che viene visualizzata quando passi il puntatore sulla scheda del gruppo.
 
 ## Modifica proprietà gruppo {#modify-group-properties}
 
-È possibile modificare le proprietà di un sito della sottocomunità esistente, specificate durante il processo di creazione del gruppo community, selezionando l’icona Modifica sito che viene visualizzata quando si passa il mouse sulla scheda del gruppo:
+Le proprietà di un sito della comunità secondaria esistente, specificate durante il processo di creazione del gruppo della comunità, possono essere modificate selezionando l&#39;icona Modifica sito che viene visualizzata quando si passa il puntatore sulla scheda del gruppo:
 
-![sito di modifica](assets/edit-site.png)
+![edit-site](assets/edit-site.png)
 
-I dettagli delle seguenti proprietà corrispondono alle descrizioni fornite nella [Creazione di gruppi](#group-creation) sezione . È possibile modificare qualsiasi gruppo nidificato, creato nell’ambiente di pubblicazione o di authoring.
+I dettagli delle seguenti proprietà corrispondono alle descrizioni fornite nella [Creazione gruppo](#group-creation) sezione. Qualsiasi gruppo nidificato può essere modificato, sia che venga creato nell’ambiente di pubblicazione che in quello di authoring.
 
 ![community-group-basic](assets/community-group-basic.png)
 
-### Modifica base {#modify-basic}
+### Modifica di base {#modify-basic}
 
 Il pannello BASIC consente di modificare
 
 * Titolo gruppo community
 * Descrizione gruppo community
 
-Impossibile modificare il nome del gruppo comunitario.
+Il nome del gruppo community non può essere modificato.
 
-La scelta di un diverso modello di gruppo community non avrebbe alcun impatto su un sito di gruppo community esistente, in quanto non rimane alcuna connessione tra modelli e siti.
+La scelta di un modello di gruppo community diverso non avrà alcun effetto su un sito di gruppo community esistente, poiché non rimane alcuna connessione tra modelli e siti.
 
-Invece, [STRUTTURA](#modify-structure) della sottocomunità può essere modificata.
+Al contrario, [STRUTTURA](#modify-structure) della sottocomunità può essere modificata.
 
 ### Modifica struttura {#modify-structure}
 
-Il pannello STRUTTURA consente di modificare la struttura inizialmente creata dal modello di gruppo community selezionato durante la creazione del sito sub-community dall’ambiente di authoring o di pubblicazione. Dal pannello è possibile:
+Il pannello STRUTTURA consente di modificare la struttura inizialmente creata dal modello di gruppo community selezionato durante la creazione del sito della sottocommunity dall’ambiente di authoring o di pubblicazione. Dal pannello, è possibile:
 
-* Trascina e rilascia altri [funzioni della community](/help/communities/functions.md) nella struttura del sito.
-* In un&#39;istanza di una funzione comunitaria nella struttura del sito:
+* Trascinamento della selezione [funzioni community](/help/communities/functions.md) nella struttura del sito.
+* In un’istanza di una funzione community nella struttura del sito:
 
    * **`Gear icon`**
-Modifica le impostazioni, inclusi il titolo della visualizzazione, l’URL e [gruppi di membri privilegiati](/help/communities/users.md#privilegedmembersgroups).
+Modifica le impostazioni, tra cui il titolo visualizzato, l’URL e [gruppi di membri con privilegi](/help/communities/users.md#privilegedmembersgroups).
 
    * **`Trashcan icon`**
 Rimuovere (eliminare) le funzioni dalla struttura del sito.
 
    * **`Grid icon`**
-Modifica l&#39;ordine delle funzioni come visualizzato nella barra di navigazione di livello superiore del sito.
+Modificare l&#39;ordine delle funzioni visualizzato nella barra di navigazione di primo livello del sito.
 
 >[!CAUTION]
 >
 >Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si sconsiglia di modificare il nome URL di una funzione community appartenente a un sito community.
 >
->Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’UGC esistente, con l’effetto di perdere l’UGC.
+>Ad esempio, la ridenominazione dell’URL non sposterà l’UGC esistente, causando la perdita dell’UGC.
 
 >[!CAUTION]
 >
->La funzione gruppi deve *not* essere *primo né unico* nella struttura del sito.
+>La funzione dei gruppi deve *non* essere *primo e unico* nella struttura del sito.
 >
->Qualsiasi altra funzione, ad esempio [funzione pagina](/help/communities/functions.md#page-function), deve essere incluso ed elencato per primo.
+>Qualsiasi altra funzione, ad esempio [funzione page](/help/communities/functions.md#page-function), deve essere incluso ed elencato per primo.
 
-**Esempio: Aggiunta di una funzione di calendario a una struttura della sottocomunità (gruppo)**
+**Esempio: aggiunta di una funzione Calendario a una struttura di sottocomunità (gruppo)**
 
-![add-calendar per gruppo community](assets/community-group-add-calendar.png)
+![community-group-add-calendar](assets/community-group-add-calendar.png)
 
 ### Modifica progettazione {#modify-design}
 
-Il pannello PROGETTAZIONE consente di modificare il tema:
+Il pannello DESIGN consente di modificare il tema:
 
 * [Tema gruppo community](#community-group-theme)
 * [Marchio gruppo community](#community-group-branding)
 
-   * Scorri fino alla parte inferiore del pannello per modificare l’immagine del marchio.
+   * Scorri fino alla parte inferiore del pannello per modificare l’immagine del brand.
 
 ### Modifica impostazioni {#modify-settings}
 
-Il pannello IMPOSTAZIONI consente di aggiungere community [moderatori](#moderation).
+Il pannello IMPOSTAZIONI consente di aggiungere la community [moderatori](#moderation).
 
 ### Modifica appartenenza {#modify-membership}
 
-La [ISCRIZIONE](#membership) pannello è solo informativo. Non è possibile modificare il tipo di appartenenza al gruppo stabilito, sia esso facoltativo, obbligatorio o limitato.
+Il [ISCRIZIONE](#membership) Il pannello è solo informativo. Non è possibile modificare il tipo di appartenenza al gruppo stabilito, sia esso facoltativo, obbligatorio o limitato.
 
 ### Modifica miniatura {#modify-thumbnail}
 
-La [MINIATURA](#thumbnail) Il pannello consente di caricare un’immagine per rappresentare il gruppo community ai visitatori del sito nell’ambiente di pubblicazione e nella console Gruppi del sito di Communities nell’ambiente di authoring.
+Il [MINIATURA](#thumbnail) Il pannello consente di caricare un’immagine per rappresentare il gruppo community presso i visitatori nell’ambiente di pubblicazione e nella console Gruppi del sito Communities nell’ambiente di authoring.
 
 ## Pubblicare il gruppo {#publish-the-group}
 
-![sito di pubblicazione](assets/publish-site.png)
+![publish-site](assets/publish-site.png)
 
-Una volta creato o modificato un gruppo di community, è possibile pubblicare (attivare) il gruppo selezionando la `Publish Site` icona.
+Dopo aver creato o modificato un gruppo community, puoi pubblicarlo (attivarlo) selezionando la `Publish Site` icona.
 
-Dopo la corretta pubblicazione del gruppo, viene visualizzato un messaggio:
+Una volta pubblicato correttamente il gruppo, viene visualizzato un messaggio:
 
-![pubblicato in gruppo](assets/group-published.png)
+![pubblicato da gruppo](assets/group-published.png)
 
 >[!CAUTION]
 >
->Il sito della comunità padre e i gruppi padre dovrebbero essere già stati pubblicati.
+>Il sito della community padre e i gruppi padre avrebbero dovuto essere già stati pubblicati.
 >
->Il sito community e i gruppi nidificati devono essere pubblicati in modo dall’alto verso il basso.
+>Il sito della community e i gruppi nidificati devono essere pubblicati in modalità top-down.
 
 ## Elimina il gruppo {#delete-the-group}
 
-![icona Elimina](assets/deleteicon.png)
+![icona elimina](assets/deleteicon.png)
 
-Per eliminare un gruppo dalla console Gruppi della community, seleziona l’icona Elimina gruppo , visualizzata quando si passa il mouse sul gruppo.
+Per eliminare un gruppo dalla console Gruppi della community, fai clic sull’icona Elimina gruppo, visualizzata quando si passa il puntatore del mouse sul gruppo.
 
-Questo rimuove tutti gli elementi associati al gruppo, ad esempio tutti i contenuti del gruppo vengono eliminati in modo permanente e le appartenenze utente vengono rimosse dal sistema.
+In questo modo vengono rimossi tutti gli elementi associati al gruppo, ad esempio tutto il contenuto del gruppo viene eliminato definitivamente e le appartenenze utente vengono rimosse dal sistema.

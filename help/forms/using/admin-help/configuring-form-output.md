@@ -19,39 +19,39 @@ ht-degree: 1%
 
 # Configurazione dell’output del modulo{#configuring-form-output}
 
-## Specificare il tipo di output HTML restituito al browser Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Specifica il tipo di output HTML restituito al browser Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Nella console di amministrazione, fai clic su Servizi > Moduli.
-1. Nell’elenco Tipo di output della casella di gruppo Output modulo selezionare una delle opzioni seguenti:
+1. Nell&#39;elenco Tipo di output della casella di gruppo Output modulo selezionare una delle opzioni seguenti:
 
-   **HTML completo:** Per eseguire il rendering del modulo all’interno di tag HTML completi (una pagina HTML completa). Questo è il valore predefinito.
+   **Full HTML:** Per eseguire il rendering del modulo all’interno di tag HTML completi (una pagina HTML completa). Questo valore è quello predefinito.
 
-   **Corpo del modulo:** Per eseguire il rendering del modulo all’interno di `<BODY>` tag (non una pagina HTML completa).
+   **Corpo modulo:** Per eseguire il rendering del modulo in `<BODY>` (non è una pagina HTML completa).
 
 1. Fai clic su Salva.
 
-## Specificare la posizione in cui viene eseguito il rendering del contenuto PDF {#specify-the-location-where-pdf-content-is-rendered}
+## Specifica il percorso in cui viene eseguito il rendering del contenuto di PDF {#specify-the-location-where-pdf-content-is-rendered}
 
-1. Nell’elenco Rendering a, in Output modulo, selezionare una delle opzioni seguenti:
+1. In Output modulo, nell&#39;elenco Rendering a (Render at), selezionate una delle seguenti opzioni:
 
-   **Client:** Per eseguire il rendering di PDF forms all’interno di Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione PDFForm.
+   **Cliente:** Per eseguire il rendering dei PDF forms in Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione dei moduli PDFF.
 
    **Server:** Per eseguire il rendering dei PDF forms sul server applicazioni.
 
-   **Automatico:** Per eseguire il rendering del modulo PDF nella posizione specificata dal `dynamicRender` valore di configurazione del file XDP. Questo è il valore predefinito.
+   **Automatico:** Per eseguire il rendering del modulo PDF nella posizione specificata da `dynamicRender` valore di configurazione del file XDP. Questo valore è quello predefinito.
 
 1. Fai clic su Salva.
 
-## Configurazione della chiamata degli script personalizzati prima dell’invio del modulo {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configurazione della chiamata di script personalizzati prima dell’invio del modulo {#configuring-invocation-of-custom-scripts-before-form-submit}
 
-Esegui i seguenti passaggi per abilitare la funzione:
+Per abilitare la funzione, effettua le seguenti operazioni:
 
 1. Accedi alla console di amministrazione.
-1. Vai a **Servizi** > **forms**.
-1. Specificare il tipo di output come corpo del modulo.
+1. Vai a **Servizi** > **moduli**.
+1. Specificate il tipo di output come corpo del modulo.
 1. Salva le impostazioni.
-1. Dichiarare una variabile JavaScript, __CUSTOM_SCRIPTS_VERSION, nella sezione head del codice HTML e impostarne il valore su 1.
+1. Dichiara una variabile JavaScript, __CUSTOM_SCRIPTS_VERSION, nella sezione head del codice HTML e impostane il valore su 1.
 
    >[!NOTE]
    >
-   >*Per disattivare la funzione, è possibile rimuovere la variabile JavaScript o impostarne il valore su 0.*
+   >*Per disattivare la funzione, puoi rimuovere la variabile JavaScript o impostarne il valore su 0.*

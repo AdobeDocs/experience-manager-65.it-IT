@@ -20,78 +20,78 @@ ht-degree: 3%
 
 # Gruppi community {#community-groups}
 
-La funzione gruppi community consente a una sottocommunity di creare in modo dinamico all’interno di un sito community utenti autorizzati (membri della community e autori) dagli ambienti di pubblicazione e authoring.
+La funzione Gruppi community consente la creazione dinamica di una sottocommunity all’interno di un sito community da parte di utenti autorizzati (membri e autori della community) dagli ambienti di pubblicazione e authoring.
 
-Questa funzionalità è presente quando [funzione gruppi](/help/communities/functions.md#groups-function) è presente nel [sito della community](/help/communities/sites-console.md) struttura.
+Questa funzionalità è presente quando [funzione gruppi](/help/communities/functions.md#groups-function) è presente in [sito community](/help/communities/sites-console.md) struttura.
 
-A [modello di gruppo community](/help/communities/tools-groups.md) fornisce la progettazione della pagina del gruppo community quando un gruppo community viene creato in modo dinamico.
+A [modello per gruppo community](/help/communities/tools-groups.md) fornisce la struttura della pagina gruppo community quando un gruppo community viene creato in modo dinamico.
 
-Uno o più modelli di gruppo vengono selezionati per la funzione dei gruppi quando la funzione viene aggiunta alla struttura di un sito community o a un modello di sito community. Questo elenco di modelli di gruppo viene presentato al membro o all&#39;autore che crea in modo dinamico un nuovo gruppo dall&#39;interno del sito community.
+Uno o più modelli di gruppo vengono selezionati per la funzione gruppi quando la funzione viene aggiunta alla struttura di un sito community o a un modello di sito community. Questo elenco di modelli di gruppo viene presentato al membro o all&#39;autore che crea dinamicamente un nuovo gruppo dall&#39;interno del sito community.
 
 ## Creazione di un nuovo gruppo {#creating-a-new-group}
 
-La capacità di creare un nuovo gruppo community si basa sull&#39;esistenza di un sito community che include la funzione dei gruppi, come quella creata dalla [Modello del sito di riferimento](/help/communities/sites.md).
+La possibilità di creare un nuovo gruppo community si basa sull&#39;esistenza di un sito community che include la funzione gruppi, ad esempio uno creato da [Modello di riferimento per sito](/help/communities/sites.md).
 
-Gli esempi che seguono utilizzano il sito della community creato dal `Reference Site Template` come descritto nel [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md) esercitazione.
+Gli esempi seguenti utilizzano il sito community creato da `Reference Site Template` come descritto nella [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md) esercitazione.
 
-Questa è la pagina che viene caricata al momento della pubblicazione **Gruppi** voce di menu selezionata:
+Questa è la pagina che viene caricata al momento della pubblicazione quando **Gruppi** voce di menu selezionata:
 
-![nuovo gruppo](assets/new-group.png)
+![new-group](assets/new-group.png)
 
-Quando selezioni la **Nuovo gruppo** viene visualizzata una finestra di dialogo di modifica.
+Quando selezioni il **Nuovo gruppo** viene visualizzata una finestra di dialogo per la modifica.
 
-Sotto la **Impostazioni** fornisce le funzioni di base del gruppo:
+Sotto **Impostazioni** , sono disponibili le funzioni di base del gruppo:
 
-![impostazioni gruppo](assets/group-settings.png)
+![group-settings](assets/group-settings.png)
 
 * **Nome gruppo**
 
-   Titolo del gruppo da visualizzare sul sito della community. Evita di usare caratteri di sottolineatura (_) e parole chiave come le risorse e la configurazione nel nome del gruppo.
+   Titolo del gruppo da visualizzare sul sito della community. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
 
 * **Descrizione**
 
-   Una descrizione del gruppo da visualizzare sul sito della community.
+   Descrizione del gruppo da visualizzare sul sito community.
 
 * **Invita**
 
-   Un elenco di membri da invitare a far parte del gruppo. La ricerca di tipo &quot;type-ahead&quot; fornirà suggerimenti dei membri della community da invitare.
+   Elenco di membri da invitare a partecipare al gruppo. La ricerca del tipo di anticipo fornirà suggerimenti ai membri della community da invitare.
 
 * **Nome URL del gruppo**
 
-   Nome della pagina del gruppo che diventa parte dell’URL.
+   Il nome della pagina del gruppo che diventa parte dell’URL.
 
 * **Apri gruppo**
 
-   Selezione `Open Group` indica che un visitatore anonimo del sito può visualizzare il contenuto e deseleziona `Member Only Group`.
+   Selezione `Open Group` indica che qualsiasi visitatore anonimo del sito può visualizzare il contenuto e deseleziona `Member Only Group`.
 
 * **Gruppo per soli membri**
 
    Selezione `Member Only Group` indica che solo i membri del gruppo possono visualizzare il contenuto e deseleziona `Open Group`.
 
-Sotto la **Modello** tab è la possibilità di selezionare dall&#39;elenco dei modelli di gruppo community specificati quando la funzione gruppi è stata inclusa nella struttura del sito community o in un modello di sito community.
+Sotto **Modello** scheda è la possibilità di selezionare dall&#39;elenco dei modelli di gruppo community specificati quando la funzione gruppi è stata inclusa nella struttura del sito community o in un modello di sito community.
 
-![modello di gruppo](assets/group-template.png)
+![group-template](assets/group-template.png)
 
-Sotto la **Immagine** tab è la capacità di caricare un&#39;immagine da visualizzare per il gruppo nella pagina Groups del sito community. Il foglio di stile predefinito ridimensiona l’immagine a 170 x 90 pixel.
+Sotto **Immagine** è la possibilità di caricare un&#39;immagine da visualizzare per il gruppo nella pagina Gruppi del sito community. Il foglio di stile predefinito ridimensiona l&#39;immagine a 170 x 90 pixel.
 
-![immagine di gruppo](assets/group-image.png)
+![immagine-gruppo](assets/group-image.png)
 
-Selezionando la **Crea gruppo** le pagine del gruppo vengono create in base al modello scelto e viene creato un gruppo di utenti per l’iscrizione. La pagina Gruppi verrà aggiornata per mostrare la nuova sottocomunità.
+Selezionando **Crea gruppo** , le pagine del gruppo vengono create in base al modello scelto, viene creato un gruppo di utenti per l&#39;appartenenza e la pagina Gruppi viene aggiornata per mostrare la nuova sottocommunity.
 
-Ad esempio, la pagina Groups (Gruppi) con una nuova sottocommunity denominata &quot;Focus Group&quot;, per la quale è stata caricata una miniatura dell’immagine, verrà visualizzata come segue (ancora connesso come amministratore del gruppo community):
+Ad esempio, la pagina Gruppi con una nuova sottocommunity denominata &quot;Gruppo attivo&quot;, per la quale è stata caricata una miniatura di immagine, viene visualizzata come segue (è ancora connesso come amministratore di un gruppo community):
 
-![pagina di gruppo](assets/group-page.png)
+![group-page](assets/group-page.png)
 
-Selezione della `Focus Group` Il collegamento consente di aprire la pagina Gruppo di elementi attivi nel browser, che ha un aspetto iniziale basato sul modello scelto, e include un sottomenu nel menu del sito della community principale:
+Selezione del `Focus Group` Il collegamento consente di aprire la pagina Gruppo attivo nel browser, che ha un aspetto iniziale basato sul modello scelto e include un sottomenu nel menu del sito community principale:
 
 ![open-group-page](assets/open-group-page.png)
 
-### Componente elenco membri gruppo community {#community-group-member-list-component}
+### Componente elenco membri del gruppo community {#community-group-member-list-component}
 
-La `Community Group Member List` Il componente è destinato agli sviluppatori di modelli di gruppo.
+Il `Community Group Member List` Il componente è destinato agli sviluppatori di modelli di gruppo.
 
 ### Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base sui gruppi community](/help/communities/essentials-groups.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base sul gruppo community](/help/communities/essentials-groups.md) pagina per sviluppatori.
 
 Per altre informazioni relative ai gruppi della community, visita [Gestione di utenti e gruppi di utenti](/help/communities/users.md).

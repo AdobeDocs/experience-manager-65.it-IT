@@ -1,7 +1,7 @@
 ---
-title: Java APIQuick Start(SOAP) per componenti e servizi
+title: Componenti e servizi Java APIQuick Start (SOAP)
 seo-title: Components and Services Java APIQuick Start(SOAP)
-description: Java APIQuick Start(SOAP) per componenti e servizi
+description: Componenti e servizi Java APIQuick Start (SOAP)
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -17,41 +17,41 @@ ht-degree: 0%
 
 ---
 
-# Guida rapida ai componenti e ai servizi Java API (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Guida introduttiva dell’API Java per componenti e servizi (SOAP) {#components-and-services-java-apiquick-start-soap}
 
-Java API Quick Start (SOAP) è disponibile per componenti e servizi.
-
-
-[Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
-
-[Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
-
-[Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite API Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
-
-[Avvio rapido (modalità SOAP): Avvio di un servizio tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
-
-[Avvio rapido (modalità SOAP): Modifica dei valori di configurazione di un servizio tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
-
-[Avvio rapido (modalità SOAP): Rimozione di componenti tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+Per componenti e servizi è disponibile Java API Quick Start (SOAP).
 
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+[Quick Start (modalità SOAP): distribuzione di un componente utilizzando l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
->[!NOTE]
->
->Non è possibile manipolare in modo programmatico componenti e servizi utilizzando i servizi web.
+[Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+
+[Quick Start (modalità SOAP): disabilitazione della sicurezza del servizio tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+
+[Quick Start (modalità SOAP): avvio di un servizio utilizzando l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+
+[Quick Start (modalità SOAP): modifica dei valori di configurazione di un servizio utilizzando l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+
+[Quick Start (modalità SOAP): rimozione di componenti tramite l’API Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+
+
+Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Non è possibile manipolare componenti e servizi a livello di programmazione utilizzando i servizi Web.
 
 >[!NOTE]
 >
->Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e queste chiamate smettono di funzionare dopo un aggiornamento, utilizza la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM si basano sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+>[!NOTE]
+>
+>Se si dispone di un componente personalizzato e si utilizzano protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizzare la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando i protocolli SOAP o EJB.
 
-Il seguente esempio Java distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
+## Quick Start (modalità SOAP): distribuzione di un componente utilizzando l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+
+L’esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -151,9 +151,9 @@ Il seguente esempio Java distribuisce un componente basato su un file JAR denomi
  
 ```
 
-## Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio tramite l’API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
+## Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando l’API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-Il seguente esempio di codice Java imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *Crittografa documento*.
+Esempio Nell&#39;esempio di codice Java riportato di seguito il contesto di esecuzione di RunAs Invoker viene impostato su un servizio di esempio denominato *Crittografia documento*.
 
 ```java
  /* 
@@ -243,9 +243,9 @@ Il seguente esempio di codice Java imposta il contesto di esecuzione di Run-As I
  
 ```
 
-## Avvio rapido (modalità SOAP): Disabilitazione della sicurezza del servizio tramite API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Quick Start (modalità SOAP): disabilitazione della sicurezza del servizio tramite l’API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal servizio di esempio EncryptDocument e dai servizi richiamati da questo servizio (i servizi Imposta valore e Crittografia).
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene disattivata la protezione dal servizio EncryptDocument di esempio e dai servizi richiamati all&#39;interno di questo servizio, ovvero i servizi Imposta valore e Crittografia.
 
 ```java
  /* 
@@ -356,9 +356,9 @@ Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal se
  
 ```
 
-## Avvio rapido (modalità SOAP): Avvio di un servizio tramite l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Quick Start (modalità SOAP): avvio di un servizio utilizzando l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Il seguente esempio di codice Java avvia un servizio denominato *SendEmailService*.
+Nell&#39;esempio di codice Java seguente viene avviato un servizio denominato *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -414,9 +414,9 @@ Il seguente esempio di codice Java avvia un servizio denominato *SendEmailServic
  
 ```
 
-## Avvio rapido (modalità SOAP): Modifica dei valori di configurazione di un servizio tramite l’API Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## Quick Start (modalità SOAP): modifica dei valori di configurazione di un servizio utilizzando l’API Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
-Il seguente esempio Java modifica i valori di configurazione appartenenti a SendEmail Service.
+Nell&#39;esempio Java seguente vengono modificati i valori di configurazione che appartengono al servizio SendEmail.
 
 ```java
  /* 
@@ -526,9 +526,9 @@ Il seguente esempio Java modifica i valori di configurazione appartenenti a Send
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l’API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Quick Start (modalità SOAP): rimozione di componenti tramite l’API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
 
-L’esempio di codice Java seguente rimuove un componente utilizzando l’API Java.
+Il seguente esempio di codice Java rimuove un componente utilizzando l’API Java.
 
 ```java
  /* 

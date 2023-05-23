@@ -1,7 +1,7 @@
 ---
-title: Introduzione alla creazione di moduli adattivi
+title: Introduzione all’authoring di moduli adattivi
 seo-title: Introduction to authoring adaptive forms
-description: AEM Forms offre un’interfaccia facile da usare ma potente per la creazione di moduli adattivi. Fornisce una serie di componenti e strumenti che è possibile utilizzare per creare i moduli.
+description: AEM Forms fornisce un’interfaccia facile da usare ma potente per la creazione di moduli adattivi. Fornisce una serie di componenti e strumenti che è possibile utilizzare per creare i moduli.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
@@ -18,44 +18,44 @@ ht-degree: 57%
 
 ---
 
-# Introduzione alla creazione di moduli adattivi {#introduction-to-authoring-adaptive-forms}
+# Introduzione all’authoring di moduli adattivi {#introduction-to-authoring-adaptive-forms}
 
 ## Panoramica {#overview}
 
-I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
+I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo di moduli adattivi. Puoi scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Puoi scegliere tra le seguenti opzioni per creare un modulo adattivo:
 
 * **Seleziona un modello dati del modulo**
-   [Integrazione dei dati](../../forms/using/data-integration.md) consente di integrare entità e servizi da origini dati diverse in un modello dati modulo che è possibile utilizzare per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando prevede il recupero e la scrittura di dati da e verso più origini dati.
+   [Integrazione dei dati](../../forms/using/data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati per moduli che può essere utilizzato per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
-Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
+Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
-Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’uso nella scheda Oggetti modello dati del browser Contenuto durante la creazione di moduli adattivi.
+Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
 
-* **Uso di un modello di modulo senza o senza**
-I moduli adattivi creati con questa opzione non utilizzano modelli di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
+* **Utilizzo di none o senza un modello di modulo**
+I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
 
 Per ulteriori informazioni sulla creazione di un modulo adattivo, consulta [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md).
 
-## Interfaccia utente per la creazione di moduli adattivi {#adaptive-form-authoring-ui}
+## Interfaccia utente per l’authoring di moduli adattivi {#adaptive-form-authoring-ui}
 
-L’interfaccia touch per la creazione di moduli adattivi è intuitiva e fornisce:
+L’interfaccia utente ottimizzata per l’authoring di moduli adattivi è intuitiva e offre:
 
 * Funzione di trascinamento
 * Componenti standard per moduli
 * Archivio integrato per le risorse
 
-Quando crei un nuovo modulo adattivo o ne modifichi uno esistente, puoi utilizzare i seguenti elementi dell’interfaccia utente:
+Quando crei un nuovo modulo adattivo o lo modifichi, vengono utilizzati i seguenti elementi dell’interfaccia utente:
 
 * [Barra laterale](#sidebar)
 * [Barra degli strumenti della pagina](#page-toolbar)
 * [Barra degli strumenti del componente](#component-toolbar)
-* [Pagina del modulo adattivo](#af-page)
+* [Pagina modulo adattivo](#af-page)
 
-![Interfaccia utente per la creazione di moduli adattivi](assets/formeditor.png)
+![Interfaccia utente per l’authoring di moduli adattivi](assets/formeditor.png)
 
-**A.** Barra laterale **B.** Barra degli strumenti della pagina **C.** Pagina del modulo adattivo
+**R.** Barra laterale **B.** Barra degli strumenti Pagina **C.** Pagina modulo adattivo
 
 ### Barra laterale {#sidebar}
 
@@ -90,7 +90,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
 
    Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore di moduli adattivi:
 
-   Seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore di moduli adattivi]**, quindi tocca ![cmppr](assets/cmppr.png).
+   Seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi tocca ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 
@@ -98,7 +98,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
 
 * **Browser componenti**
 
-   Include i componenti che è possibile utilizzare per creare un modulo adattivo. Puoi trascinare i componenti da al modulo adattivo per aggiungere elementi al modulo e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti.
+   Include componenti che è possibile utilizzare per creare un modulo adattivo. Puoi trascinare i componenti da al modulo adattivo per aggiungere elementi al modulo e configurare un elemento aggiunto in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti.
 
 <table>
  <tbody>
@@ -116,11 +116,11 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Aggiunge la convalida CAPTCHA utilizzando il servizio Google reCAPTCHA. Per maggiori dettagli, vedi <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Uso del CAPTCHA nei moduli adattivi</a>.</td>
+   <td>Aggiunge la convalida CAPTCHA utilizzando il servizio Google reCAPTCHA. Per ulteriori informazioni, consulta <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Utilizzo del CAPTCHA nei moduli adattivi</a>.</td>
   </tr>
   <tr>
    <td>Grafico</td>
-   <td>Aggiunge un grafico che è possibile utilizzare nei moduli adattivi e nei documenti per la rappresentazione visiva di dati bidimensionali in pannelli e righe di tabella ripetibili.</td>
+   <td>Aggiunge un grafico che è possibile utilizzare in moduli e documenti adattivi per la rappresentazione visiva di dati bidimensionali in pannelli e righe di tabella ripetibili.</td>
   </tr>
   <tr>
    <td>Casella di selezione</td>
@@ -152,7 +152,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. Puoi inoltre specificare i **[!UICONTROL Dimensione massima file]** e **[!UICONTROL Tipi di file supportati]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l’associazione di file con nome del file che inizia con caratteri (.), contenenti caratteri \ / : * ? " &lt; &gt; | % $, o contenente nomi di file speciali riservati per sistemi operativi Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenente nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Elenco allegato file</td>
@@ -228,7 +228,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Pulsante Invia</td>
-   <td>Aggiunge un pulsante di invio per inviare il modulo all’azione di invio configurata.</td>
+   <td>Aggiunge un pulsante Invia per inviare il modulo all'azione di invio configurata.</td>
   </tr>
   <tr>
    <td>Passaggio di riepilogo</td>
@@ -266,48 +266,48 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Passaggio verifica</td>
-   <td><p>Aggiunge un segnaposto per visualizzare il modulo compilato per la verifica da parte dell’utente.</p> <p><strong>Nota</strong>: Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, si sconsiglia di utilizzare il componente Verifica in un frammento di modulo adattivo.</p> </td>
+   <td><p>Aggiunge un segnaposto per visualizzare il modulo compilato per la verifica da parte dell’utente.</p> <p><strong>Nota</strong>: il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, si sconsiglia di utilizzare il componente Verifica in un frammento di modulo adattivo.</p> </td>
   </tr>
  </tbody>
 </table>
 
 #### Best practice per l’utilizzo dei componenti {#best-practices}
 
-Alcune best practice e punti chiave da tenere a mente quando si utilizzano i componenti per moduli adattivi sono i seguenti:
+Di seguito sono riportate alcune best practice e punti chiave da tenere a mente quando si lavora con componenti di moduli adattivi:
 
 * A ciascun componente sono associate proprietà che ne controllano l’aspetto e la funzionalità. Per configurare le proprietà di un componente, tocca il componente e tocca ![cmppr](assets/cmppr.png) per aprire le proprietà del componente nel browser Proprietà.
-* Un componente viene identificato con il suo nome elemento. Quando tocchi ![cmppr](assets/cmppr.png), puoi modificare il nome del componente modificando il **[!UICONTROL Nome elemento]** nel browser delle proprietà. Il campo Nome elemento accetta solo lettere, numeri, trattini (-) e caratteri di sottolineatura (_). Altri caratteri speciali non sono consentiti e il nome dell’elemento deve iniziare con una lettera.
+* Un componente è identificato dal relativo nome elemento. Quando tocchi ![cmppr](assets/cmppr.png), è possibile modificare il nome del componente cambiando il **[!UICONTROL Nome elemento]** valore del campo nel browser delle proprietà. Il campo Nome elemento accetta solo lettere, numeri, trattini (-) e trattini bassi (_). Non sono consentiti altri caratteri speciali e il nome dell’elemento deve iniziare con una lettera.
 
-* È possibile modificare la proprietà Title di un componente modulo adattivo in linea nell’editor moduli senza aprire il browser Proprietà, purché il titolo sia visibile sul modulo. Per eseguire questa operazione:
+* Puoi modificare la proprietà Title di un componente modulo adattivo in linea nell’editor di moduli senza aprire il browser Properties (Proprietà), purché il titolo sia visibile nel modulo. Per eseguire questa operazione:
 
-   1. Tocca per selezionare un componente con una **[!UICONTROL Titolo]** di cui **[!UICONTROL Nascondi titolo]** la proprietà è disabilitata.
+   1. Tocca per selezionare un componente che ha **[!UICONTROL Titolo]** proprietà e il cui **[!UICONTROL Nascondi titolo]** è disabilitata.
 
    1. Tocca ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
 
-   1. Modifica il titolo e tocca il tasto Invio oppure tocca un punto qualsiasi all’esterno del componente per salvare le modifiche. Tocca il tasto Esc per eliminare le modifiche.
+   1. Modifica il titolo e tocca Ritorna o tocca un punto qualsiasi all’esterno del componente per salvare le modifiche. Toccare il tasto Esc per ignorare le modifiche.
 
-* Alcuni componenti per moduli adattivi come E-mail e telefono includono pattern di convalida predefiniti. Tuttavia, è possibile specificare una convalida personalizzata aggiornando la **[!UICONTROL Pattern di convalida]** sotto il pannello a soffietto Pattern nelle proprietà del componente. Per ulteriori informazioni sulle convalide predefinite, consulta le descrizioni dei componenti nella tabella precedente.
+* Alcuni componenti dei moduli adattivi come E-mail e Telefono includono modelli di convalida predefiniti. Tuttavia, puoi specificare la convalida personalizzata aggiornando il **[!UICONTROL Pattern di convalida]** sotto il pannello a soffietto Patterns nelle proprietà del componente. Per ulteriori informazioni sulle convalide predefinite, consulta le descrizioni dei componenti nella tabella precedente.
 
-* I campi dei moduli adattivi, ad esempio Casella numerica e E-mail, possono essere configurati per includere tipi di input HTML5 specializzati. Quando questi campi sono concentrati su dispositivi mobili e tablet, il tastierino mostra in primo piano un alfabeto, numeri e caratteri specifici comunemente utilizzati per inserire informazioni nei campi. Consente agli utenti di immettere le informazioni rapidamente senza dover alternare tra i set di caratteri sul tastierino. Per consentire un input specializzato per un componente, abilita la **[!UICONTROL Usa numero tipo HTML]** casella di controllo nelle relative proprietà dei componenti.
+* I campi dei moduli adattivi, come Casella numerica e E-mail, possono essere configurati per includere tipi di input HTML5 specializzati. Quando questi campi sono attivati su dispositivi mobili e tablet, il tastierino mostra in anticipo caratteri, numeri e caratteri specifici che vengono comunemente utilizzati per immettere informazioni nei campi. Consente agli utenti di immettere rapidamente le informazioni senza dover passare da un set di caratteri all’altro sul tastierino. Per consentire l&#39;input specializzato di un componente, attivare **[!UICONTROL Usa numero tipo HTML]** nelle proprietà dei componenti.
 
-* È possibile abilitare un componente Casella di testo per accettare il testo RTF. Per abilitare il testo RTF per una casella di testo, attivare la **[!UICONTROL Consenti RTF]** nelle proprietà del componente.
+* È possibile abilitare un componente Casella di testo per accettare il testo RTF. Per abilitare il testo RTF per una casella di testo, attivare **[!UICONTROL Consenti formato Rich Text]** nelle proprietà del componente.
 
-* È possibile abilitare i componenti Casella di testo, E-mail e Telefono per la compilazione automatica dei valori per campi quali nome, indirizzo, carta di credito, telefono ed e-mail dalle informazioni memorizzate nelle impostazioni di compilazione automatica del browser. Per abilitare questa funzione, seleziona **[!UICONTROL Abilita riempimento automatico]** nelle proprietà del componente e seleziona un **[!UICONTROL Attributo di riempimento automatico]**. Quando un utente compila un modulo adattivo, i valori vengono suggeriti dal profilo di compilazione automatica nel browser o in base ai valori precedentemente compilati dall’utente. La compilazione automatica funziona se le impostazioni di compilazione automatica nel browser dell’utente sono attivate.
+* È possibile abilitare i componenti Casella di testo, E-mail e Telefono per riempire automaticamente i valori di campi come nome, indirizzo, carta di credito, telefono ed e-mail dalle informazioni memorizzate nelle impostazioni di riempimento automatico del browser. Per abilitare questa funzione, seleziona **[!UICONTROL Abilita riempimento automatico]** nelle proprietà del componente e seleziona una **[!UICONTROL Attributo riempimento automatico]**. Quando un utente compila un modulo adattivo, i valori vengono suggeriti dal profilo di riempimento automatico nel browser o in base ai valori precedentemente compilati dall’utente. Il riempimento automatico funziona se le impostazioni di riempimento automatico nel browser dell’utente sono attivate.
 
-* Specificare i valori per gli elementi Pulsante di scelta e Casella di controllo in `{value}={text}` nelle proprietà del componente.
-* Il componente File allegato, per impostazione predefinita, consente a un utente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Pertanto, è consigliabile associare un identificatore univoco per ciascun allegato inviato all’invio del modulo. Per eseguire questa operazione:
+* Specificare i valori per gli elementi Pulsante di opzione e Casella di controllo in `{value}={text}` nelle proprietà del componente.
+* Per impostazione predefinita, il componente File allegato consente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Pertanto, si consiglia di associare un identificatore univoco per ogni allegato inviato al momento dell’invio del modulo. Per eseguire questa operazione:
 
-   1. Sul server AEM Forms, accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
+   1. Sul server AEM Forms, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
    1. Trova e tocca **[!UICONTROL Servizio di configurazione Forms adattivo]**.
-   1. Nella finestra di dialogo Servizio di configurazione Forms adattivo, abilita **[!UICONTROL Rendi univoci i nomi dei file]**. Per impostazione predefinita, è disabilitata.
+   1. Nella finestra di dialogo Servizio di configurazione di Forms adattivo, abilita **[!UICONTROL Imposta nomi file univoci]**. Per impostazione predefinita, è disabilitato.
 
-* Per consentire agli utenti di allegare un PDF tramite il browser Safari, assicurati che **application/pdf** viene aggiunto alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** anziché **application/pdf** nella proprietà Tipi di file supportati .
+* Per consentire agli utenti di collegare un PDF tramite il browser Safari, assicurati che **application/pdf** viene aggiunta alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
 
-Per ulteriori best practice sui moduli adattivi, consulta [Procedure consigliate per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md).
+Per ulteriori best practice sui moduli adattivi, consulta [Best practice per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
->I componenti per moduli adattivi non supportano le lingue RTL (da destra a sinistra). Per esempio, l&#39;ebraico.
+>I componenti dei moduli adattivi non supportano le lingue da destra a sinistra (RTL). Ad esempio, ebraico.
 
 ### Barra degli strumenti della pagina {#page-toolbar}
 
@@ -339,11 +339,11 @@ La barra degli strumenti della pagina in alto contiene opzioni che consentono di
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**Configura**: quando tocchi **[!UICONTROL Configura]**, le proprietà dei componenti sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore di moduli adattivi consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
+A.**Configura**: quando tocchi **[!UICONTROL Configura]**, le proprietà dei componenti sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà del contenitore di moduli adattivi consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, le impostazioni di salvataggio, le impostazioni di invio e le impostazioni dei metadati.
 
 B.**Copia**: é possibile utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni del modulo Quando incolli un componente, il componente incollato ottiene un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
 
-C.**Taglia**: È possibile utilizzare l’opzione Taglia per spostare un componente da una posizione all’altra nel modulo adattivo.
+C.**Taglia**: è possibile utilizzare l’opzione Taglia per spostare un componente da una posizione all’altra nel modulo adattivo.
 
 D. **Elimina**: consente di eliminare il componente dal modulo.
 
@@ -355,7 +355,7 @@ G. **Modifica regole**: consente di aprire l’editor di regole. Per ulteriori i
 
 H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **Elemento principale**: consente di selezionare l’elemento principale di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore di moduli adattivi è l’elemento padre di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata dal basso verso l’alto.
+I. **Elemento principale**: consente di selezionare l’elemento principale di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore di moduli adattivi è l’elemento principale del pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata dal basso verso l’alto.
 
 Ad esempio, se tocchi **[!UICONTROL Elemento principale]** per una casella di testo è possibile visualizzare:
 
@@ -372,22 +372,22 @@ J. **Altri**: fornisce ulteriori opzioni per lavorare con il componente selezion
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
 
-### Pagina del modulo adattivo {#af-page}
+### Pagina modulo adattivo {#af-page}
 
 La pagina del modulo adattivo è il modulo effettivo. È come qualsiasi altra pagina WCM modellata come il componente WCM `cq:Page`. L’immagine seguente mostra la struttura del contenuto di un tipico modulo adattivo.
 
-![Struttura del contenuto di una pagina WCM del modulo adattivo](assets/afstructure.png)
+![Struttura del contenuto di una pagina WCM per modulo adattivo](assets/afstructure.png)
 
 La struttura del contenuto contiene in genere i seguenti componenti primari:
 
-* **guideContainer**: Livello principale di un modulo adattivo, contrassegnato come **[!UICONTROL Inizio del modulo adattivo]** nell’interfaccia utente del modulo adattivo. In questo componente puoi specificare:
+* **guideContainer**: radice di un modulo adattivo, contrassegnato come **[!UICONTROL Inizio del modulo adattivo]** nell’interfaccia utente dei moduli adattivi. In questo componente puoi specificare:
 
-   * *Layout mobile del modulo adattivo*: Definisce l’aspetto del modulo su dispositivi mobili.
+   * *Layout del modulo adattivo per dispositivi mobili*: definisce l’aspetto del modulo sui dispositivi mobili.
    * *Pagina di ringraziamento*: definisce la pagina in cui l’utente viene reindirizzato dopo l’invio del modulo.
    * *Invia azione*: definisce la modalità di elaborazione del modulo sul server dopo l’invio del modulo da parte dell’utente.
    * *Attribuzione stile*: specifica il percorso del file CSS utilizzato per personalizzare l’aspetto del modulo.
 
-* **rootPanel:** Il pannello principale di un modulo adattivo. Può contenere pannelli secondari sotto il nodo elementi. A ogni pannello, incluso il pannello principale, può essere associato un layout. Il layout del pannello determina il layout del modulo. Ad esempio, nel layout Pannello a soffietto, i relativi elementi vengono disposti come passaggi del Pannello a soffietto.
+* **rootPanel:** Pannello principale di un modulo adattivo. Può contenere pannelli secondari sotto il nodo elementi. A ogni pannello, incluso il pannello principale, può essere associato un layout. Il layout del pannello determina il layout del modulo. Ad esempio, nel layout Pannello a soffietto, i relativi elementi vengono disposti come passaggi del Pannello a soffietto.
 
 * **barra degli strumenti:** A un contenitore di moduli adattivi è associata una barra degli strumenti globale, globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando **[!UICONTROL Aggiungi barra degli strumenti]** nella barra di modifica, che consente agli autori di aggiungere azioni come Invia, Salva, Ripristina e così via.
 

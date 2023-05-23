@@ -21,26 +21,26 @@ Il problema si applica alle seguenti versioni:
 
 ## Problema   {#issue}
 
-L&#39;utente incontra la seguente eccezione:
+L’utente riscontra la seguente eccezione:
 `Caused by: javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: JAXP0801002: the compiler encountered an XPath expression containing '101' operators that exceeds the '100' limit set by 'FEATURE_SECURE_PROCESSING'.`
 
 ## Motivo {#reason}
 
-L&#39;eccezione si verifica quando si esegue Experience Manager Forms con versione di Oracle JDK (Java Development Kit) maggiore o uguale alle seguenti versioni:
+L’eccezione si verifica quando si esegue Experience Manager Forms con la versione JDK (Java Development Kit) di Oracle maggiore o uguale alle seguenti versioni:
 
 * [JDK7u341](https://www.oracle.com/java/technologies/javase/7u341-relnotes.html)
 * [JDK8u331](https://www.oracle.com/java/technologies/javase/8u331-relnotes.html)
 * [JDK11u15](https://www.oracle.com/java/technologies/javase/11-0-15-relnotes.html)
 
-Le versioni di Java sopra menzionate e successive includono nuovi limiti di elaborazione XML nella JVM (Java Virtual Machine) che causano errori in alcune operazioni specifiche di Forms.
+La versione di Java sopra e le versioni successive includono nuovi limiti di elaborazione XML nella JVM (Java Virtual Machine) che causano il mancato funzionamento di alcune operazioni specifiche di Forms.
 
 ## Soluzione alternativa {#workaround}
 
 1. Arresta il server Experience Manager Forms.
-1. Configura il seguente argomento JVM per il server dell&#39;applicazione:
+1. Configura il seguente argomento JVM per il server applicazioni:
 
    `-Djdk.xml.xpathExprOpLimit=2000`
 
-   Imposta la proprietà di sistema in JVM su un valore ragionevolmente alto in modo che il limite predefinito non venga raggiunto.
+   Imposta la proprietà di sistema in JVM a un valore ragionevolmente alto in modo che il limite predefinito non venga raggiunto.
 
 1. Avvia il server Experience Manager Forms.

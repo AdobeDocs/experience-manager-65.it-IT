@@ -1,7 +1,7 @@
 ---
 title: OWASP Top 10
 seo-title: OWASP Top 10
-description: Scopri come AEM gestire i principali 10 rischi di sicurezza OWASP.
+description: Scopri come l’AEM gestisce i 10 principali rischi per la sicurezza OWASP.
 seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
@@ -20,56 +20,56 @@ ht-degree: 0%
 
 # OWASP Top 10{#owasp-top}
 
-La [Apri progetto di sicurezza applicazione Web](https://www.owasp.org) (OWASP) mantiene un elenco di ciò che considerano come [Primi 10 rischi per la sicurezza delle applicazioni web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+Il [Apri progetto di protezione applicazione Web](https://www.owasp.org) (OWASP) mantiene un elenco di ciò che considera come [Primi 10 rischi per la sicurezza delle applicazioni web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
-Questi sono elencati di seguito, insieme a una spiegazione di come CRX tratta con loro.
+Questi sono elencati di seguito, insieme a una spiegazione di come CRX li tratta.
 
 ## 1. Iniezione {#injection}
 
-* SQL - Preventivo della progettazione: La configurazione predefinita dell’archivio non include né richiede un database tradizionale, tutti i dati vengono memorizzati nell’archivio dei contenuti. L’accesso è limitato agli utenti autenticati e può essere eseguito solo tramite l’API JCR. SQL supportato solo per le query di ricerca (SELECT). Inoltre, SQL offre il supporto per il binding dei valori.
-* LDAP - L&#39;inserimento LDAP non è possibile, in quanto il modulo di autenticazione filtra l&#39;input ed esegue l&#39;importazione dell&#39;utente utilizzando il metodo bind.
-* Sistema operativo: nessuna esecuzione della shell eseguita dall&#39;interno dell&#39;applicazione.
+* SQL - Impedito dalla progettazione: la configurazione predefinita dell’archivio non include né richiede un database tradizionale; tutti i dati vengono memorizzati nell’archivio dei contenuti. Tutti gli accessi sono limitati agli utenti autenticati e possono essere eseguiti solo tramite l’API JCR. SQL è supportato solo per le query di ricerca (SELECT). Ulteriori informazioni SQL offrono il supporto per l&#39;associazione dei valori.
+* LDAP - L&#39;iniezione LDAP non è possibile perché il modulo di autenticazione filtra l&#39;input ed esegue l&#39;importazione dell&#39;utente utilizzando il metodo bind.
+* Sistema operativo: non viene eseguita alcuna esecuzione della shell dall’interno dell’applicazione.
 
-## 2. Script tra siti (XSS) {#cross-site-scripting-xss}
+## 2. Vulnerabilità cross-site scripting (XSS) {#cross-site-scripting-xss}
 
-La pratica generale di mitigazione è quella di codificare tutti gli output di contenuti generati dagli utenti utilizzando una libreria di protezione XSS lato server basata su [Codificatore OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+La pratica di mitigazione generale consiste nel codificare tutti gli output di contenuti generati dagli utenti utilizzando una libreria di protezione XSS lato server basata su [Codificatore OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
-XSS è una priorità assoluta sia durante i test che durante lo sviluppo e tutti i problemi rilevati vengono (in genere) risolti immediatamente.
+XSS è una priorità assoluta durante sia il test che lo sviluppo e tutti i problemi riscontrati vengono (in genere) risolti immediatamente.
 
-## 3. Autenticazione non riuscita e gestione delle sessioni {#broken-authentication-and-session-management}
+## 3. Autenticazione e gestione delle sessioni interrotte {#broken-authentication-and-session-management}
 
-AEM utilizza tecniche di autenticazione sonore e comprovate, affidandosi [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Sling Apache](https://sling.apache.org/). Le sessioni browser/HTTP non sono utilizzate in AEM.
+L&#39;AEM utilizza tecniche di autenticazione solide e collaudate, basate su [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Le sessioni browser/HTTP non vengono utilizzate nell’AEM.
 
-## 4. Riferimenti agli oggetti diretti non sicuri {#insecure-direct-object-references}
+## 4. Riferimenti diretti agli oggetti non sicuri {#insecure-direct-object-references}
 
-L’accesso a tutti gli oggetti dati viene mediato dall’archivio e quindi limitato dal controllo degli accessi basato su ruoli.
+Tutti gli accessi agli oggetti dati sono mediati dall’archivio e pertanto limitati dal controllo degli accessi basato sul ruolo.
 
-## 5. Forgeria di richiesta intersito (CSRF) {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-Il CSRF (Cross-Site Request Forgery) è mitigato dall’inserimento automatico di un token di crittografia in tutti i moduli e le richieste di AJAX e dalla verifica di tale token sul server per ogni POST.
+La funzione Cross-Site Request Forgery (CSRF) viene mitigata inserendo automaticamente un token di crittografia in tutti i moduli e le richieste AJAX e verificando tale token sul server per ogni POST.
 
-Inoltre, AEM viene fornito con un filtro basato su intestazione referrer, che può essere configurato per *only* consentire le richieste POST da host specifici (definiti in un elenco).
+Inoltre, l’AEM viene fornito con un filtro basato sull’intestazione del referente, che può essere configurato per *solo* consenti richieste POST da host specifici (definiti in un elenco).
 
 ## 6. Configurazione errata della sicurezza {#security-misconfiguration}
 
-È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci sforziamo di fornire il maggior numero possibile di indicazioni e rendere la configurazione il più semplice possibile. Inoltre, AEM navi con [controlli di sicurezza integrati](/help/sites-administering/operations-dashboard.md) che consentono di monitorare immediatamente la configurazione della sicurezza.
+È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci impegniamo a fornire il maggior numero possibile di indicazioni e a rendere la configurazione il più semplice possibile. Inoltre, l&#39;AEM viene fornito con [controlli di integrità e sicurezza integrati](/help/sites-administering/operations-dashboard.md) che consentono di monitorare immediatamente la configurazione della protezione.
 
-Controlla la [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md) per ulteriori informazioni che forniscono istruzioni dettagliate sull’indurimento.
+Rivedi il [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md) per ulteriori informazioni sulle istruzioni dettagliate per l&#39;irrigidimento.
 
 ## 7. Archiviazione crittografica non sicura {#insecure-cryptographic-storage}
 
-le password sono memorizzate come hash di crittografia nel nodo utente; per impostazione predefinita tali nodi sono leggibili solo dall’amministratore e dall’utente stesso.
+Le password vengono memorizzate come hash di crittografia nel nodo utente; per impostazione predefinita, tali nodi sono leggibili solo dall’amministratore e dall’utente stesso.
 
-I dati sensibili, come le credenziali di terze parti, vengono memorizzati in formato crittografato utilizzando una libreria di crittografia certificata FIPS 140-2.
+I dati sensibili, come le credenziali di terze parti, vengono archiviati in formato crittografato utilizzando una libreria di crittografia certificata FIPS 140-2.
 
-## 8. Errore nel limitare l&#39;accesso agli URL {#failure-to-restrict-url-access}
+## 8. Mancata limitazione dell’accesso agli URL {#failure-to-restrict-url-access}
 
-L&#39;archivio consente l&#39;impostazione di [privilegi a grana fine (come specificato da JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci del controllo di accesso. Le restrizioni di accesso sono applicate dall’archivio.
+L’archivio consente di impostare [privilegi granulari (come specificato da JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per un determinato utente o gruppo in un determinato percorso, tramite le voci di controllo di accesso. Le restrizioni di accesso vengono applicate dall’archivio.
 
-## 9. Protezione insufficiente dello strato di trasporto {#insufficient-transport-layer-protection}
+## 9. Protezione insufficiente del livello di trasporto {#insufficient-transport-layer-protection}
 
-È attenuata dalla configurazione del server (ad esempio, utilizza solo HTTPS).
+Mitigato dalla configurazione del server (ad esempio, utilizza solo HTTPS).
 
 ## 10. Reindirizzamenti e inoltri non convalidati {#unvalidated-redirects-and-forwards}
 
-È possibile attenuare la limitazione di tutti i reindirizzamenti alle destinazioni fornite dall’utente nelle posizioni interne.
+Attenuata limitando tutti i reindirizzamenti a destinazioni interne fornite dall’utente.

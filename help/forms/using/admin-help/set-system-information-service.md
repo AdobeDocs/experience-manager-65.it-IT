@@ -1,5 +1,5 @@
 ---
-title: Configurazione del servizio informazioni di sistema
+title: Configurare il servizio informazioni di sistema
 seo-title: Set up the System information service
 description: Scopri come configurare il servizio informazioni di sistema.
 seo-description: Learn how to set up the System information service.
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ---
 
-# Configurazione del servizio informazioni di sistema {#set-up-the-system-information-service}
+# Configurare il servizio informazioni di sistema {#set-up-the-system-information-service}
 
-Il servizio informazioni di sistema fornisce API REST per recuperare informazioni. Per utilizzare il servizio informazioni di sistema, abilita l’endpoint REST dalla console di amministrazione. Esegui i seguenti passaggi per abilitare l’endpoint REST:
+Il servizio informazioni di sistema fornisce API REST per recuperare informazioni. Per utilizzare il servizio informazioni di sistema, abilitare l&#39;endpoint REST dalla console di amministrazione. Per abilitare l’endpoint REST, effettua le seguenti operazioni:
 
-1. Accedi alla console di amministrazione. L’URL predefinito della console di amministrazione è `https://[hostname]:'port'/adminui.`
-1. Passa a Servizi > Applicazioni e servizi > Gestione dei servizi.
-1. Nella pagina Gestione dei servizi, fai clic sul pulsante **SystemInfo** servizio.
-1. Nell’elenco della scheda Endpoint, selezionare REST e fare clic su **Aggiungi**.
+1. Accedere alla console di amministrazione. L’URL predefinito della console di amministrazione è `https://[hostname]:'port'/adminui.`
+1. Passare a Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella pagina Gestione dei servizi, fare clic su **SystemInfo** servizio.
+1. Nell&#39;elenco della scheda Punti finali, selezionare REST e fare clic su **Aggiungi**.
 1. Nella schermata Aggiungi endpoint REST, fai clic su **Aggiungi**.

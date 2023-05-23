@@ -15,11 +15,11 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 
 * [Note sulla versione corrente](/help/release-notes/release-notes.md)
 
-## Articoli principali AEM
+## Articoli chiave dell’AEM
 
-* [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
+* [Introduzione all’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
 * [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=it)
-* [Elenco di controllo AEM](/help/sites-administering/security-checklist.md)
+* [Elenco di controllo della sicurezza AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.5
 
@@ -28,29 +28,29 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 | [Guida utente di Assets](/help/assets/home.md) | Crea, gestisci, distribuisci e ottimizza risorse digitali. |
 | [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
 | [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
-| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
-| [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM. |
-| [Guida all’authoring con interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti di authoring in AEM nell’interfaccia utente classica. |
+| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare l’AEM |
+| [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM. |
+| [Guida all’authoring dell’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
-| [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
-| [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare la tua istanza AEM. |
+| [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base dell’AEM. |
+| [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework in AEM. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework sull’AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
 
-## Risorse AEM chiave
+## Risorse chiave per l’AEM
 
-* [Esercitazioni AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
+* [Tutorial su AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
 * [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
-* [Guida utente ai componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Guida utente dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-## Copyright, licenze e disclaimer {#copyright-licenses-and-disclaimers}
+## Copyright, licenze e clausole di esclusione di responsabilità {#copyright-licenses-and-disclaimers}
 
 Per ulteriori informazioni, consulta [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Avviso di titoli di terzi: [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)
+Notifica di licenze di terze parti: [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)

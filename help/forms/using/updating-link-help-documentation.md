@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento del collegamento alla documentazione
 seo-title: Updating the link to the documentation
-description: Come aggiornare la destinazione del collegamento della Guida di Workspace nell’area di lavoro di AEM Forms per puntare al collegamento della documentazione personalizzato.
+description: Aggiornare la destinazione del collegamento della Guida di Workspace nell’area di lavoro di AEM Forms in modo che punti al collegamento alla documentazione personalizzata.
 seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
@@ -19,14 +19,14 @@ ht-degree: 3%
 
 # Aggiornamento del collegamento alla documentazione {#updating-the-link-to-the-documentation}
 
-Per accedere al contenuto della guida predefinito per l’area di lavoro di AEM Forms, seleziona **Aiuto > Aiuto di Workspace**. Indica la documentazione online sul sito web di Adobe. Tuttavia, puoi aggiornarlo per puntare a qualsiasi altro URL.
+Puoi accedere al contenuto predefinito della guida per l’area di lavoro di AEM Forms selezionando **Aiuto > Aiuto di Workspace**. Fa riferimento alla documentazione online sul sito web di Adobe. Tuttavia, puoi aggiornarla per puntare a qualsiasi altro URL.
 
-Considera i seguenti casi d’uso in cui puoi modificare l’URL predefinito della guida:
+Considera i seguenti casi d’uso in cui potresti voler modificare l’URL predefinito della guida:
 
-* Per fornire assistenza localizzata in una lingua a tua scelta.
-* Per fornire contenuti di aiuto personalizzati per l&#39;area di lavoro personalizzata.
+* Per fornire assistenza localizzata in una lingua a scelta.
+* Per fornire contenuti di supporto personalizzati per l&#39;area di lavoro personalizzata.
 
-Per aggiornare l’URL della documentazione online, segui la [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) e quindi i seguenti passaggi.
+Per aggiornare l’URL della documentazione online, segui la [Passaggi generici della personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) e quindi i seguenti passaggi.
 
 1. Copia il `userinfo.html` file da `/libs/ws/js/runtime/templates` a `/apps/ws/js/runtime/templates`.
 1. Cambia:
@@ -50,4 +50,4 @@ Per aggiornare l’URL della documentazione online, segui la [Passaggi generici 
 1. Effettua le seguenti operazioni:
 
    1. Apri /apps/ws/js/registry.js per la modifica.
-   1. Ricerca e sostituzione `text!/lc/libs/ws/js/runtime/templates/userinfo.html` con `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Cerca e sostituisci `text!/lc/libs/ws/js/runtime/templates/userinfo.html` con `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

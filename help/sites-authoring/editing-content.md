@@ -18,13 +18,13 @@ ht-degree: 42%
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
-Una volta creata la pagina (nuova o come parte di un lancio o di una Live Copy) è possibile modificare il contenuto per apportare gli aggiornamenti necessari.
+Una volta creata la pagina (nuova o come parte di un lancio o di una Live Copy), puoi modificare il contenuto per apportare gli aggiornamenti necessari.
 
-Il contenuto viene aggiunto utilizzando [componenti](/help/sites-authoring/default-components-console.md) (in base al tipo di contenuto) trascinabile sulla pagina. che possono quindi essere modificati, spostati o eliminati.
+Il contenuto viene aggiunto tramite [componenti](/help/sites-authoring/default-components-console.md) (in base al tipo di contenuto) che possono essere trascinati sulla pagina. che possono quindi essere modificati, spostati o eliminati.
 
 >[!NOTE]
 >
->Il tuo account deve [diritti di accesso appropriati](/help/sites-administering/security.md) e [permissions](/help/sites-administering/security.md#permissions) per modificare le pagine.
+>Il tuo account ha bisogno di [diritti di accesso appropriati](/help/sites-administering/security.md) e [autorizzazioni](/help/sites-administering/security.md#permissions) per modificare le pagine.
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
@@ -46,25 +46,25 @@ La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del con
 
 * **Attiva/Disattiva pannello laterale**
 
-   Viene aperto/chiuso il pannello laterale, che contiene il comando [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser), [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser)e [Struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree).
+   Questo apre/chiude il pannello laterale, che contiene [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser), [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser), e [Struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree).
 
    ![](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Informazioni sulle pagine**
 
-   Consente l&#39;accesso al [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) che include i dettagli della pagina e le azioni che possono essere eseguite sulla pagina, compresi la visualizzazione e la modifica delle informazioni sulla pagina, la visualizzazione delle proprietà della pagina e la pubblicazione o l’annullamento della pubblicazione della pagina.
+   Fornisce l&#39;accesso a [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) menu che include i dettagli e le azioni che possono essere eseguite sulla pagina, tra cui la visualizzazione e la modifica delle informazioni sulla pagina, la visualizzazione delle proprietà della pagina e la pubblicazione/annullamento della pubblicazione della pagina.
 
    ![](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulatore**
 
-   Attiva/disattiva la [barra degli strumenti dell&#39;emulatore](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), che viene utilizzato per emulare l’aspetto della pagina su un altro dispositivo. Questa opzione viene attivata automaticamente in modalità layout.
+   Attiva/disattiva [barra degli strumenti emulatore](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), utilizzato per emulare l’aspetto della pagina su un altro dispositivo. Questa funzione viene attivata automaticamente in modalità layout.
 
    ![](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Apre la [context hub](/help/sites-authoring/ch-previewing.md). Disponibile solo in modalità Anteprima.
+   Apre il [context hub](/help/sites-authoring/ch-previewing.md). Disponibile solo in modalità Anteprima.
 
    ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
@@ -82,13 +82,13 @@ La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del con
 
 * **Anteprima**
 
-   Abilita [modalità anteprima](/help/sites-authoring/editing-content.md#preview-mode). La pagina viene visualizzata così come apparirà al momento della pubblicazione.
+   Abilita [modalità anteprima](/help/sites-authoring/editing-content.md#preview-mode). In questo modo la pagina viene visualizzata così come verrà visualizzata al momento della pubblicazione.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Annotazioni**
 
-   Consente di aggiungere [annotazioni](/help/sites-authoring/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona viene sostituita da un numero che indica il numero di annotazioni sulla pagina.
+   Consente di aggiungere [annotazioni](/help/sites-authoring/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona passa a un numero che indica il numero di annotazioni sulla pagina.
 
    ![](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -102,11 +102,11 @@ Se una pagina fa parte di uno o più [flussi di lavoro](/help/sites-authoring/wo
 >
 >La barra di stato è visibile solo agli account utente con i privilegi appropriati.
 
-La notifica elenca il flusso di lavoro in esecuzione sulla pagina. Se l’utente è coinvolto nel passaggio del flusso di lavoro corrente, le opzioni per [influisce sullo stato del flusso di lavoro](/help/sites-authoring/workflows-participating.md) e per ulteriori informazioni sul flusso di lavoro sono disponibili anche, ad esempio:
+La notifica elenca il flusso di lavoro in esecuzione sulla pagina. Se l’utente è coinvolto nel passaggio del flusso di lavoro corrente, le opzioni per [influenzare lo stato del flusso di lavoro](/help/sites-authoring/workflows-participating.md) e sono disponibili anche ulteriori informazioni sul flusso di lavoro, ad esempio:
 
-* **Completa** - Apre la **Elemento di lavoro completo** dialogo
+* **Completa** - Apre il **Elemento di lavoro completato** finestra di dialogo
 
-* **Delega** - Apre la **Elemento di lavoro completo** dialogo
+* **Delega** - Apre il **Elemento di lavoro completato** finestra di dialogo
 
 * **Visualizza dettagli**: apre la finestra **Dettagli** del flusso di lavoro
 
@@ -118,9 +118,9 @@ Se la pagina è soggetta a più flussi di lavoro, il numero dei flussi di lavoro
 
 ## Segnaposto Componente {#component-placeholder}
 
-Il segnaposto del componente è un indicatore che mostra dove verrà posizionato un componente al momento del rilascio, sopra il componente su cui si sta attualmente passando il mouse.
+Il segnaposto del componente è un indicatore che mostra dove verrà posizionato un componente quando lo rilasci, sopra il componente che si sta passando con il mouse.
 
-* Quando si aggiunge un nuovo componente alla pagina (trascinandolo dal browser Componenti):
+* Quando aggiungi un nuovo componente alla pagina (trascinandolo dal browser dei componenti):
 
    ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
@@ -142,7 +142,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 >[!NOTE]
 >
->Su un dispositivo mobile, il browser Componenti occupa l’intero schermo. Quando si inizia a trascinare un componente, il browser si chiude per mostrare nuovamente la pagina, in modo da poter posizionare il componente.
+>Su un dispositivo mobile, il browser componenti occupa l’intera schermata. Dopo aver iniziato a trascinare un componente, il browser si chiude per mostrare nuovamente la pagina e inserire il componente.
 
 ### Inserimento di un Componente dal Sistema Paragrafo   {#inserting-a-component-from-the-paragraph-system}
 
@@ -151,7 +151,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Esistono due modi per selezionare e aggiungere un nuovo componente dal sistema paragrafo:
 
-   * Seleziona la **Inserisci componente** dalla barra degli strumenti di un componente esistente o dal **Trascina qui i componenti** scatola.
+   * Seleziona la **Inserisci componente** nella barra degli strumenti di un componente esistente o nella scheda **Trascina qui i componenti** casella.
 
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
@@ -161,19 +161,19 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
-1. Il componente selezionato verrà aggiunto in fondo alla pagina. [Modifica](#editmovecopypastedelete) il componente come necessario.
+1. Il componente selezionato verrà aggiunto nella parte inferiore della pagina. [Modifica](#editmovecopypastedelete) il componente, se necessario.
 
 ### Inserimento di un componente utilizzando il browser Risorse   {#inserting-a-component-using-the-assets-browser}
 
 È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
 
-Questo vale per i seguenti tipi di risorse (alcune dipenderanno dal sistema di pagine/paragrafi):
+Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal sistema pagina/paragrafo):
 
 <table>
  <tbody>
   <tr>
    <th><strong>Tipo risorsa</strong></th>
-   <th><strong>Tipo componente risultante</strong></th>
+   <th><strong>Tipo di componente risultante</strong></th>
   </tr>
   <tr>
    <td>Immagine</td>
@@ -200,23 +200,23 @@ Questo vale per i seguenti tipi di risorse (alcune dipenderanno dal sistema di p
 
 >[!NOTE]
 >
->Puoi configurare questo comportamento per l’installazione in uso. Vedi [La configurazione di un sistema di paragrafi in modo che il trascinamento di una risorsa crei un’istanza di componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) per ulteriori dettagli.
+>Puoi configurare questo comportamento per l’installazione in uso. Consulta [Configurazione di un sistema di paragrafi in modo che il trascinamento di una risorsa crei un’istanza di componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) per ulteriori dettagli.
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Apri [browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Trascina la risorsa desiderata nella posizione desiderata. La [segnaposto componente](#component-placeholder) mostra dove sarà posizionato il componente.
+1. Trascina la risorsa richiesta nella posizione desiderata. Il [segnaposto componente](#component-placeholder) mostra dove verrà posizionato il componente.
 
-   Un componente, appropriato per il tipo di risorsa, verrà creato nella posizione desiderata, che conterrà la risorsa selezionata.
+   Nella posizione richiesta verrà creato un componente appropriato per il tipo di risorsa, che conterrà la risorsa selezionata.
 
 1. [Modifica](#editmovecopypastedelete) il componente, se necessario.
 
 >[!NOTE]
 >
->Su un dispositivo mobile, il browser Risorse occuperà l’intero schermo. Quando inizi a trascinare una risorsa, il browser si chiude per mostrare nuovamente la pagina in modo da poter posizionare la risorsa.
+>Su un dispositivo mobile, il browser risorse occupa l’intera schermata. Dopo aver iniziato a trascinare una risorsa, il browser si chiude per mostrare nuovamente la pagina e inserire la risorsa.
 
-Se sfogliando le risorse disponibili scopri che è necessario apportare una rapida modifica a una risorsa, puoi avviare la funzione [editor risorse](/help/assets/manage-assets.md) direttamente dal browser, facendo clic sull’icona di modifica accanto al nome della risorsa.
+Se sfogliando le risorse disponibili scopri che è necessario apportare una rapida modifica a una risorsa, puoi avviare il [editor risorse](/help/assets/manage-assets.md) direttamente dal browser, facendo clic sull’icona di modifica accanto al nome della risorsa.
 
 ![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
 
@@ -242,45 +242,45 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Copia**
 
-   Questo comando consente di copiare il componente negli Appunti. Dopo l’operazione Incolla, il componente originale rimarrà invariato.
+   Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale rimane.
 
    ![](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Taglia**
 
-   Questo comando consente di copiare il componente negli Appunti. Dopo l’operazione Incolla, il componente originale viene rimosso.
+   Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale verrà rimosso.
 
    ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminare**
 
-   Il componente verrà eliminato dalla pagina con la conferma.
+   Il componente verrà eliminato dalla pagina con la tua conferma.
 
    ![](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Inserisci componente**
 
-   Viene visualizzata la finestra di dialogo [aggiungere un nuovo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+   Verrà aperta la finestra di dialogo per [aggiungi un nuovo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
    ![](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Incolla**
 
-   Questo comando consente di incollare il componente dagli Appunti nella pagina. Il componente originale viene eliminato o meno a seconda che sia stata utilizzata l’opzione Copia o Taglia.
+   Il componente verrà incollato dagli Appunti alla pagina. Se l&#39;originale rimane, dipende dal fatto se avete usato la copia o il taglio.
 
    * È possibile incollare nella stessa pagina o in una pagina diversa.
-   * L’elemento incollato verrà incollato sopra l’elemento in cui si seleziona l’azione Incolla.
-   * L’azione Incolla viene visualizzata solo se è presente del contenuto negli Appunti.
+   * L’elemento incollato verrà incollato sopra l’elemento in cui hai selezionato l’azione Incolla.
+   * L&#39;azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
 
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
    >
-   >Se si incolla un componente in una pagina che era già aperta prima dell’operazione Taglia o Copia, è necessario aggiornare la pagina per visualizzare il contenuto incollato.
+   >Se si incolla in un&#39;altra pagina già aperta prima dell&#39;operazione Taglia/Copia, è necessario aggiornare la pagina per visualizzare il contenuto incollato.
 
 * **Gruppo**
 
-   Questo consente di selezionare più componenti contemporaneamente. Lo stesso può essere ottenuto su un dispositivo desktop da un **Ctrl+Clic** o **Comando+Clic**.
+   Questo consente di selezionare più componenti contemporaneamente. Lo stesso può essere ottenuto su un dispositivo desktop da un **Ctrl+clic** o **Comando+clic**.
 
    ![](do-not-localize/screen_shot_2018-03-22at113240.png)
 
@@ -292,7 +292,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Layout**
 
-   Ciò ti consente di modificare il [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo vale solo per il componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l&#39;intera pagina.
+   Questo consente di modificare [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l’intera pagina.
 
    ![](do-not-localize/screen_shot_2018-03-22at113044.png)
 
@@ -306,8 +306,8 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 
-* Apri [finestra di dialogo dei componenti per la modifica](#component-edit-dialog).
-* [Trascinare una risorsa](#draganddropintocomponent) dal browser delle risorse per aggiungere direttamente il contenuto.
+* Apri [finestra di dialogo del componente per la modifica](#component-edit-dialog).
+* [Trascinare una risorsa](#draganddropintocomponent) dal browser risorse per aggiungere direttamente il contenuto.
 
 ### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
 
@@ -328,21 +328,21 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
    >La modifica non funziona su un componente immagine vuoto.
    >
    >
-   >Devi [trascinare o caricare un’immagine (utilizzando Configura)](/help/sites-authoring/default-components-foundation.md#image) prima di iniziare a modificarlo.
+   >Devi [trascinare o caricare un’immagine (mediante Configura)](/help/sites-authoring/default-components-foundation.md#image) prima di iniziare a modificarlo.
 
-* Componente immagine - a schermo intero
+* Componente immagine - schermo intero
 
    [L’accesso alla modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
 
    ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
-* Componenti costruiti da più componenti di base, come [Componente di base Testo e Immagine](/help/sites-authoring/default-components-foundation.md#text-image), chiedi innanzitutto di confermare quale insieme di opzioni di modifica desideri:
+* Componenti costituiti da più componenti di base, ad esempio [Componente base testo e immagine](/help/sites-authoring/default-components-foundation.md#text-image), per prima cosa chiedi di confermare quale insieme di opzioni di modifica desideri:
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Trascinare risorse nel componente {#drag-and-drop-assets-into-component}
 
-Per tipi di componenti specifici puoi trascinare e rilasciare risorse dal browser risorse direttamente nel componente per aggiornare il contenuto:
+Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal browser Risorse direttamente nel componente per aggiornare il contenuto:
 
 | **Tipo risorsa** | **Tipo componente** |
 |---|---|
@@ -352,7 +352,7 @@ Per tipi di componenti specifici puoi trascinare e rilasciare risorse dal browse
 | Video | Flash |
 | Frammenti di contenuto | Frammenti di contenuto |
 
-## Modalità a tutto schermo Modifica (contenuto) {#edit-content-full-screen-mode}
+## Modifica (Contenuto) Modalità a tutto schermo {#edit-content-full-screen-mode}
 
 Per tutti i componenti è possibile accedere alla (e uscire dalla) modalità a tutto tramite:
 
@@ -364,14 +364,14 @@ Per esempio, il componente **Testo**:
 
 >[!NOTE]
 >
->Per alcuni componenti, la modalità a schermo intero dispone di più opzioni rispetto all’editor locale di base.
+>Per alcuni componenti, la modalità a tutto schermo avrà a disposizione più opzioni rispetto all’editor locale di base.
 
 ## Spostamento di un componente {#moving-a-component}
 
 Per spostare un componente paragrafo:
 
-1. Tocca e tieni premuto o fai clic e tieni premuto per selezionare il paragrafo da spostare.
-1. Trascinare il paragrafo nella nuova posizione. AEM indica dove è possibile spostare il paragrafo. Rilascia nella posizione desiderata.
+1. Seleziona il paragrafo da spostare con la pressione del tasto e del tasto o con il tasto e il tasto.
+1. Trascinare il paragrafo nella nuova posizione. L&#39;AEM indica dove il paragrafo può essere depositato. Rilascialo nella posizione desiderata.
 
    ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
 
@@ -393,11 +393,11 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
    ![](do-not-localize/chlimage_1-21.png)
 
-1. Una volta selezionata l’azione Layout :
+1. Una volta selezionata l’azione Layout:
 
-   * Vengono visualizzate le maniglie di ridimensionamento del componente.
-   * La barra degli strumenti dell’emulatore si trova nella parte superiore dello schermo.
-   * Sulla barra degli strumenti del componente vengono visualizzate le azioni di layout anziché le azioni di modifica standard.
+   * Vengono visualizzati i quadratini di ridimensionamento per il componente.
+   * La barra degli strumenti dell’emulatore viene visualizzata nella parte superiore dello schermo.
+   * Le azioni Layout invece delle azioni di modifica standard vengono visualizzate nella barra degli strumenti del componente.
 
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
@@ -409,9 +409,9 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 >[!NOTE]
 >
->L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre le maniglie di ridimensionamento e la barra degli strumenti dell’emulatore vengono nascosti.
+>L’azione Layout è limitata al componente selezionato. Ad esempio, se stai modificando il layout di un componente e fai clic su un altro componente, per il componente appena selezionato viene visualizzata la barra degli strumenti di modifica standard (non quella di layout), mentre i quadratini di ridimensionamento e la barra degli strumenti dell’emulatore scompaiono.
 >
->Se devi modificare il layout globale della pagina, interessando più componenti, passa alla [modalità layout](/help/sites-authoring/responsive-layout.md).
+>Se devi modificare il layout generale della pagina, influenzando più componenti, passa a [modalità di layout](/help/sites-authoring/responsive-layout.md).
 
 ## Componenti ereditati {#inherited-components}
 
@@ -419,13 +419,13 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 * [Gestione multisito](/help/sites-administering/msm.md)
 * [Lanci](/help/sites-authoring/launches.md) (se basati su Live Copy).
-* Componenti specifici, ad esempio il sistema paragrafo ereditato all’interno di Geometrixx.
+* Componenti specifici, ad esempio il sistema di paragrafi ereditati all’interno di Geometrixx.
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del componente, questo può essere disponibile da:
 
 * **Live Copy**
 
-   La barra degli strumenti del componente, se il componente si trova in una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
+   La barra degli strumenti del componente, se il componente si trova su una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
 
    ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
@@ -433,34 +433,34 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
    ![](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   Oppure riattiva l’ereditarietà se già annullata:
+   Oppure riabilita l&#39;ereditarietà se è già stata annullata:
 
    ![](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   L’azione Rollout è disponibile anche nella blueprint o nella sorgente Live Copy:
+   L’azione Rollout è disponibile anche nel blueprint o nella sorgente Live Copy:
 
    ![](do-not-localize/screen_shot_2018-03-22at134516.png)
 
-* **Un Sistema Paragrafo Ereditato**
+* **Un sistema di paragrafi ereditato**
 
-   Finestra di dialogo di configurazione. Ad esempio, come nel sistema paragrafo ereditato:
+   La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato:
 
    ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Modificare il modello di pagina {#editing-the-page-template}
 
-Se la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates), è possibile passare facilmente alla [editor modelli](/help/sites-authoring/templates.md#editing-templates-template-authors) selezionando **Modifica modello** in [Menu Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
+Se la pagina si basa su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates), è possibile passare facilmente al [editor modelli](/help/sites-authoring/templates.md#editing-templates-template-authors) selezionando **Modifica modello** nel [Menu Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates), puoi passare a [Modalità Progettazione](/help/sites-authoring/default-components-designmode.md) utilizzando [selettore della modalità pagina](/help/sites-authoring/author-environment-tools.md#page-modes) sulla barra degli strumenti per abilitare/disabilitare i componenti da utilizzare nella pagina.
+Se la pagina si basa su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates), è possibile passare a [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) utilizzando [selettore modalità pagina](/help/sites-authoring/author-environment-tools.md#page-modes) sulla barra degli strumenti per abilitare/disabilitare i componenti da utilizzare sulla pagina.
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view).
 
 ## Stato della Live Copy   {#live-copy-status}
 
-La [Modalità pagina di stato della Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di visualizzare una panoramica rapida dello stato della Live Copy e dei componenti ereditati o non ereditati:
+Il [Modalità pagina Stato Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di avere una rapida panoramica dello stato live copy e di sapere quali componenti vengono/non vengono ereditati:
 
-* Bordo verde: Ereditato
-* Bordo rosa: Ereditarietà annullata
+* Bordo verde: ereditato
+* Bordo rosa: ereditarietà annullata
 
 Esempio:
 
@@ -468,7 +468,7 @@ Esempio:
 
 ## Aggiunta di annotazioni {#adding-annotations}
 
-[Annotazioni](/help/sites-authoring/annotations.md) consentono a revisori e altri autori di fornire feedback sui contenuti. Sono spesso utilizzati a scopo di revisione e convalida.
+[Annotazioni](/help/sites-authoring/annotations.md) consenti ai revisori e ad altri autori di fornire feedback sui contenuti. Vengono spesso utilizzati a scopo di revisione e convalida.
 
 ## Anteprima delle pagine   {#previewing-pages}
 
@@ -476,11 +476,11 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 * [Modalità Anteprima](#preview-mode): un’anteprima rapida disponibile dalla stessa posizione
 
-* [Visualizza come pubblicato](#view-as-published) - un’anteprima completa che apre la pagina in una nuova scheda
+* [Visualizza come pubblicato](#view-as-published) - anteprima completa che apre la pagina in una nuova scheda
 
 >[!NOTE]
 >
->* I collegamenti nel contenuto sono visibili, ma non sono accessibili in modalità Modifica.
+>* I collegamenti nel contenuto sono visibili, ma non accessibili in modalità di modifica.
 >* Per effettuare la navigazione tramite i collegamenti, utilizza una delle opzioni di anteprima.
 >* Utilizza la [scelta rapida da tastiera](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` per passare dall’anteprima all’ultima modalità selezionata.
 >
@@ -488,23 +488,23 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 >[!NOTE]
 >
->Il cookie della modalità WCM viene impostato per entrambe le opzioni.
+>Il cookie della modalità WCM è impostato per entrambe le opzioni.
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto è possibile visualizzare in anteprima la pagina utilizzando l’anteprima [modalità](/help/sites-authoring/author-environment-tools.md#page-modes). Questa modalità:
+Durante la modifica del contenuto è possibile visualizzare l’anteprima della pagina utilizzando [modalità](/help/sites-authoring/author-environment-tools.md#page-modes). Questa modalità:
 
 * Nasconde vari meccanismi di modifica per fornire un’indicazione rapida di come apparirà la pagina una volta pubblicata.
-* Consente di utilizzare i collegamenti per la navigazione.
-* Does **not** aggiorna il contenuto della pagina.
+* Consente di utilizzare i collegamenti per spostarsi.
+* Does **non** aggiorna il contenuto della pagina.
 
-Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’icona in alto a destra dell’editor di pagine:
+Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’icona in alto a destra nell’editor di pagine:
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### Visualizza come pubblicato {#view-as-published}
 
-L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information). Viene aperta la pagina in una nuova scheda, il contenuto viene aggiornato e la pagina viene visualizzata esattamente come apparirà nell’ambiente di pubblicazione.
+L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information). La pagina viene aperta in una nuova scheda, il contenuto viene aggiornato e la pagina viene visualizzata esattamente come apparirà nell’ambiente di pubblicazione.
 
 ## Blocco di una pagina   {#locking-a-page}
 
@@ -515,14 +515,14 @@ Una pagina può essere bloccata da:
 * **Sites** console
 
    1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Selezionare l’icona Blocca.
+   1. Seleziona l’icona del lucchetto.
 
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor pagina**
 
    1. Seleziona la **Informazioni pagina** per aprire il menu.
-   1. Seleziona la **Blocca pagina** opzione .
+   1. Seleziona la **Blocca pagina** opzione.
 
 Una volta eseguito il blocco le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo a forma di lucchetto viene visualizzato nella barra degli strumenti.
 
@@ -532,7 +532,7 @@ Una volta eseguito il blocco le informazioni di visualizzazione della console ve
 >
 >Il blocco di una pagina può essere eseguito quando [rappresentazione di un utente](/help/sites-administering/security.md#impersonating-another-user). Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o dall’utente amministratore.
 >
->Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>Non è possibile sbloccare le pagine impersonando l’utente che le ha bloccate.
 
 ## Sblocco di una pagina {#unlocking-a-page}
 
@@ -546,7 +546,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 >
 >Il blocco di una pagina può essere eseguito quando [rappresentazione di un utente](/help/sites-administering/security.md#impersonating-another-user). Tuttavia, una pagina bloccata in questo modo può essere sbloccata solo dall’utente impersonato o dall’utente amministratore.
 >
->Non è possibile sbloccare le pagine impersonando l’utente che ha bloccato la pagina.
+>Non è possibile sbloccare le pagine impersonando l’utente che le ha bloccate.
 
 ## Annullamento e ripristino di operazioni di modifica delle pagine {#undoing-and-redoing-page-edits}
 
@@ -556,9 +556,9 @@ Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono vi
 
 >[!NOTE]
 >
->La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` è inoltre disponibile per annullare le azioni di modifica della pagina.
+>Il [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` è disponibile anche per annullare le azioni di modifica della pagina.
 >
->La scelta rapida da tastiera `Ctrl-Y` è disponibile anche per ripristinare le azioni di modifica della pagina.
+>Scelta rapida da tastiera `Ctrl-Y` è disponibile anche per ripristinare le azioni di modifica della pagina.
 
 >[!NOTE]
 >
@@ -574,25 +574,25 @@ In AEM vengono memorizzate una cronologia delle azioni eseguite e la relativa se
 
 Se è selezionato un elemento nella pagina del contenuto (ad esempio un componente di testo) il comando Annulla o Ripristina si riferisce all’elemento selezionato.
 
-Il comportamento dei comandi Annulla e Ripristina è simile a quello di altri programmi software. Utilizzare i comandi per ripristinare lo stato recente della pagina web mentre si prendono decisioni sul contenuto. Se ad esempio si sposta un paragrafo di testo altrove nella pagina, è possibile ricorrere al comando Annulla per riportarlo nella posizione originale. Se poi decidi che la posizione precedente era migliore, utilizza il comando Ripristina per &quot;annullare l’annullamento&quot;.
+Il comportamento dei comandi Annulla e Ripristina è simile a quello di altri programmi software. Utilizza i comandi per ripristinare lo stato recente della pagina web mentre prendi decisioni sul contenuto. Se ad esempio si sposta un paragrafo di testo altrove nella pagina, è possibile ricorrere al comando Annulla per riportarlo nella posizione originale. Se in seguito si decide che la posizione precedente è migliore, utilizzare il comando Ripeti per annullare l&#39;operazione Annulla.
 
 >[!NOTE]
 >
 >Operazioni disponibili:
 >
->* Le azioni annullate possono essere ripristinate solo se dopo l’annullamento non sono state apportate altre modifiche alla pagina.
->* Per impostazione predefinita, è possibile annullare fino a 20 azioni di modifica.
->* Utilizza anche [Scelte rapide da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) per annullare e ripristinare.
+>* Ripeti le azioni se non hai apportato alcuna modifica alla pagina da quando hai utilizzato Annulla.
+>* Annulla un massimo di 20 azioni di modifica (impostazione predefinita).
+>* Utilizza anche [Scelte rapide da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) per annullare e ripetere.
 >
 
 
-I comandi Annulla e Ripristina possono essere utilizzati per i seguenti tipi di modifiche alla pagina:
+Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti tipi di modifiche di pagina:
 
 * Aggiunta, modifica, rimozione e spostamento di paragrafi
-* Modifica diretta del contenuto del paragrafo
-* Copiare, tagliare e incollare elementi all’interno di una pagina
+* Modifica diretta del contenuto dei paragrafi
+* Copiare, tagliare e incollare elementi in una pagina
 
-Per i campi modulo di cui viene eseguito il rendering dei componenti modulo non deve essere specificato alcun valore durante l’authoring delle pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
+I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante l’authoring delle pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
 
 >[!NOTE]
 >
@@ -600,4 +600,4 @@ Per i campi modulo di cui viene eseguito il rendering dei componenti modulo non 
 
 >[!NOTE]
 >
->La cronologia delle modifiche a file e immagini dura per almeno dieci ore. Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può modificare l’orario predefinito di dieci ore.
+>La cronologia delle modifiche apportate a file e immagini dura almeno dieci ore. Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può modificare l’ora predefinita di dieci ore.

@@ -1,7 +1,7 @@
 ---
-title: Java APIQuick Start(SOAP) del servizio Forms in codice a barre
+title: Codice a barre Forms Service Java APIQuick Start (SOAP)
 seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
-description: Java APIQuick Start(SOAP) del servizio Forms in codice a barre
+description: Codice a barre Forms Service Java APIQuick Start (SOAP)
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ---
 
-# Guida rapida all’API Java di Forms Service con codice a barre (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Guida rapida (SOAP) dell’API Java del servizio Forms in codice a barre {#barcoded-forms-service-java-apiquick-start-soap}
 
-Java API Quick Start(SOAP) è disponibile per il servizio Forms Barcoded:
+È disponibile Java API Quick Start (SOAP) per il servizio Barcoded Forms:
 
-[Avvio rapido (modalità SOAP): Decodifica di dati modulo codificati a barre tramite API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Quick Start (modalità SOAP): decodifica dei dati dei moduli con codice a barre tramite l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul server Forms implementato su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Decodifica di dati modulo codificati a barre tramite API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Quick Start (modalità SOAP): decodifica dei dati dei moduli con codice a barre tramite l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Il seguente codice Java decodifica i dati del modulo che si trova in un modulo PDF salvato come Loan.pdf. I dati decodificati vengono salvati come file XML denominato ExtractData.xml. Questo esempio di codice converte un `org.w3c.dom.Document` oggetto in un `com.adobe.idp.Document` oggetto. (Vedi [Decodifica dei dati dei moduli codificati a barre](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+Il seguente codice Java decodifica i dati del modulo che si trova in un modulo di PDF salvato come Loan.pdf. I dati decodificati vengono salvati come file XML denominato extractedData.xml. Questo esempio di codice converte un `org.w3c.dom.Document` oggetto in un `com.adobe.idp.Document` oggetto. (vedere [Decodifica dei dati del modulo con codice a barre](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -220,4 +220,4 @@ Il seguente codice Java decodifica i dati del modulo che si trova in un modulo P
 
 >[!NOTE]
 >
->Quando si utilizzano entrambi i tipi di `org.w3c.dom.Document` oggetto e `com.adobe.idp.Document` nella stessa logica di applicazione, è buona prassi qualificare completamente entrambi gli oggetti.
+>Quando si utilizzano entrambi i `org.w3c.dom.Document` oggetto e un `com.adobe.idp.Document` nella stessa logica dell&#39;applicazione, è buona prassi qualificare completamente entrambi gli oggetti.

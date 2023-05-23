@@ -1,7 +1,7 @@
 ---
 title: Gestione programmatica di PreferencesNodes
 seo-title: Programmatically managing the PreferencesNodes
-description: Utilizza l’API del servizio Preferenze Manager (Java) per gestire in modo programmatico i nodi delle preferenze.
+description: Utilizza l’API del servizio Preferences Manager (Java) per gestire in modo programmatico i nodi delle preferenze.
 seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
@@ -20,26 +20,26 @@ ht-degree: 0%
 
 # Gestione programmatica dei nodi delle preferenze {#programmatically-managing-the-preferencesnodes}
 
-**Esempi ed esempi in questo documento sono solo per AEM Forms in ambiente JEE.**
+**Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
 
-In questo argomento viene descritto come utilizzare l’API del servizio Preferenze Manager (Java) per gestire in modo programmatico i nodi Preferenze.
+In questo argomento viene descritto come utilizzare l&#39;API del servizio Preferences Manager (Java) per gestire in modo programmatico i nodi Preferences.
 
-Puoi modificare manualmente le impostazioni di configurazione dall’interfaccia utente amministratore. Per modificare le opzioni, passa a `Home>Settings>User Management> Configuration>Manual Configuration`. Importa `config.xml` dopo aver apportato le modifiche, noterai che tutte le modifiche tranne quelle apportate al nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` sono persi. L&#39;anteprima di Importazione ed esportazione di User Management non supporta la modifica delle impostazioni di configurazione per altri componenti. Ora, queste modifiche possono essere effettuate utilizzando `PreferencesManagerServiceClient` API.
+Puoi modificare manualmente le impostazioni di configurazione dall’interfaccia utente di Amministrazione. Per modificare le opzioni, passa a `Home>Settings>User Management> Configuration>Manual Configuration`. Importa `config.xml` dopo aver apportato le modifiche, noterai che tutte le modifiche tranne quelle apportate al nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` sono persi. L&#39;anteprima di Importazione ed esportazione gestione utenti non supporta la modifica delle impostazioni di configurazione per altri componenti. Ora è possibile apportare queste modifiche utilizzando `PreferencesManagerServiceClient` API.
 
-**Riepilogo dei passaggi** Per gestire in modo programmatico i nodi delle preferenze, esegui le seguenti operazioni:
+**Riepilogo dei passaggi** Per gestire in modo programmatico i nodi delle preferenze, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
 1. Creare un client PreferencesManagerService
-1. Richiamare le operazioni di ruolo o autorizzazione appropriate
+1. Richiama le operazioni di ruolo o autorizzazione appropriate
 
 **Includi file di progetto**
 
-Includi i file necessari nel progetto di sviluppo. Se stai creando un&#39;applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, assicurati di includere i file proxy.
+Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, accertati di includere i file proxy.
 
 **Creare un client PreferencesManagerService**
 
-Prima di eseguire un&#39;operazione di User Management PreferencesManagerService a livello di programmazione, è necessario creare un client PreferencesManagerService. Con l&#39;API Java questo si ottiene creando un oggetto PreferencesManagerServiceClient.
+Prima di poter eseguire a livello di programmazione un&#39;operazione PreferencesManagerService di User Management, è necessario creare un client PreferencesManagerService. Con l’API Java questo viene effettuato creando un oggetto PreferencesManagerServiceClient.
 
-**Richiamare le operazioni di ruolo o autorizzazione appropriate**
+**Richiama le operazioni di ruolo o autorizzazione appropriate**
 
-Dopo aver creato il client di servizio, puoi richiamare le operazioni di Gestione preferenze. Il client di servizi ti consente di leggere e impostare le autorizzazioni.
+Dopo aver creato il client del servizio, è possibile richiamare le operazioni di Gestione preferenze. Il client del servizio consente di leggere e impostare le autorizzazioni.

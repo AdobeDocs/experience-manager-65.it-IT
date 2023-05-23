@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi AEM durante l’authoring
+title: Risoluzione dei problemi di AEM durante l’authoring
 description: Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
@@ -21,25 +21,25 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Quando si verificano problemi, è anche utile controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
+>Quando si verificano problemi, vale anche la pena controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore possono utilizzare i metodi di risoluzione dei problemi descritti in [AEM per la risoluzione dei problemi (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti all’amministratore di sistema per informazioni sulla risoluzione dei AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti al tuo amministratore di sistema per informazioni sulla risoluzione dei problemi relativi all’AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Hai apportato modifiche a una pagina e l&#39;hai replicata sul sito pubblicato, ma la *vecchio* sul sito di pubblicazione viene ancora visualizzata la versione della pagina.
+   * Hai apportato modifiche a una pagina e l’hai replicata nel sito pubblicato, ma il *vecchio* La versione della pagina viene ancora visualizzata sul sito pubblicato.
 
 * **Motivo**:
 
-   * Questo può avere diverse cause, più spesso la cache (sia il browser locale che il Dispatcher), anche se a volte può essere un problema con la coda di replica.
+   * Questo può avere diverse cause, nella maggior parte dei casi la cache (nel browser locale o in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 
 * **Soluzioni**:
 
-   * Ci sono diverse possibilità qui:
+   * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
    * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
@@ -54,25 +54,25 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Problema**:
 
-   * La barra laterale non è visibile quando si modifica un contenuto di una pagina nell’ambiente di authoring.
+   * La barra laterale non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
 
 * **Motivo**:
 
-   * In rari casi è possibile che l’intestazione della barra laterale sia stata posizionata al di fuori dell’ambito della finestra corrente. Ciò significa che non è possibile riposizionarlo.
+   * In rari casi, l&#39;intestazione della barra laterale potrebbe essere stata posizionata al di fuori dell&#39;ambito della finestra corrente. Ciò significa che non è più possibile riposizionarlo.
 
 * **Soluzione**:
 
-   * Disconnettiti dalla sessione corrente e accedi di nuovo. La barra laterale torna nella posizione predefinita.
+   * Esci dalla sessione corrente e accedi di nuovo. La barra laterale tornerà alla posizione predefinita.
 
-## Trova e sostituisci - Non vengono sostituite tutte le istanze {#find-replace-not-all-instances-are-replaced}
+## Trova e sostituisci: non tutte le istanze vengono sostituite {#find-replace-not-all-instances-are-replaced}
 
 * **Problema:**
 
-   * Quando utilizzi **Trova e sostituisci** può accadere che non tutte le istanze del `find` i termini vengono sostituiti in una pagina.
+   * Quando si utilizza **Trova e sostituisci** può accadere che non tutte le istanze del `find` vengono sostituiti in una pagina.
 
 * **Motivo**:
 
-   * La capacità di **Trova e sostituisci** dipende da come è stato salvato il contenuto e se è possibile eseguire ricerche in esso contenute. Ad esempio, il testo di un blog viene memorizzato in `jcr:text` proprietà non configurata per la ricerca. L’ambito predefinito del servlet di ricerca e sostituzione include le seguenti proprietà:
+   * La capacità di **Trova e sostituisci** dipende da come viene salvato il contenuto e se è possibile eseguirne la ricerca. Ad esempio, il testo di un blog viene memorizzato in `jcr:text` proprietà non configurata per la ricerca. L&#39;ambito predefinito per il servlet find e replace include le seguenti proprietà:
 
       * `jcr:title`
       * `jcr:description`

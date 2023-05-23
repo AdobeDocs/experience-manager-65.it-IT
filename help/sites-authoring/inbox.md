@@ -1,6 +1,6 @@
 ---
 title: Casella in entrata per gestire le attività
-description: Gestione delle attività con la casella in entrata.
+description: Gestione delle attività tramite la casella in entrata.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,33 +17,33 @@ ht-degree: 29%
 
 # Casella in entrata{#your-inbox}
 
-Puoi ricevere notifiche da varie aree di AEM, compresi flussi di lavoro e progetti; ad esempio, informazioni su:
+Puoi ricevere notifiche da varie aree dell’AEM, inclusi flussi di lavoro e progetti; ad esempio, su:
 
 * Attività:
 
-   * possono essere create anche in diversi punti nell’interfaccia AEM, ad esempio in **Progetti**,
-   * possono essere il prodotto di un flusso di lavoro **Crea attività** o **Crea attività progetto** passo.
+   * possono essere create anche in vari punti nell’interfaccia utente dell’AEM, ad esempio in **Progetti**,
+   * possono essere il prodotto di un workflow **Crea attività** o **Crea attività progetto** passaggio.
 
 * Flussi di lavoro:
 
-   * elementi di lavoro che rappresentano le azioni da eseguire sul contenuto della pagina;
+   * elementi di lavoro che rappresentano azioni da eseguire sul contenuto della pagina;
 
-      * sono il prodotto del flusso di lavoro **Partecipante** step
-   * elementi con errore, per consentire agli amministratori di ripetere il passaggio non riuscito.
+      * sono il prodotto di workflow **Partecipante** passaggi
+   * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
 
-Puoi ricevere queste notifiche nella tua casella in entrata, dove potrai visualizzarle e intervenire.
-
->[!NOTE]
->
->Le AEM predefinite vengono precaricate con attività amministrative assegnate al gruppo di utenti amministratore. Vedi [Attività amministrative pronte all’uso](#out-of-the-box-administrative-tasks) per i dettagli.
+Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e intervenire.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di elementi, consulta anche:
+>L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Consulta [Attività amministrative predefinite](#out-of-the-box-administrative-tasks) per i dettagli.
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sui tipi di elemento, vedi anche:
 >
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
+>* [Progetti - Utilizzo delle attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
@@ -51,7 +51,7 @@ Puoi ricevere queste notifiche nella tua casella in entrata, dove potrai visuali
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-In una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono interventi o l’accesso alla casella in entrata:
+Da una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![wf-80](assets/wf-80.png)
 
@@ -59,9 +59,9 @@ In una qualsiasi delle console, il numero corrente di elementi nella casella in 
 >
 >Alcune azioni sono anche visualizzate nella [vista a schede della relativa risorsa](/help/sites-authoring/basic-handling.md#card-view).
 
-## Attività amministrative pronte all’uso  {#out-of-the-box-administrative-tasks}
+## Attività amministrative predefinite  {#out-of-the-box-administrative-tasks}
 
-Le AEM predefinite vengono precaricate con quattro attività assegnate al gruppo di utenti amministratore.
+L’AEM preconfigurato è precaricato con quattro attività assegnate al gruppo di utenti amministratore.
 
 * [Configura Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Applica elenco di controllo sicurezza AEM](/help/sites-administering/security-checklist.md)
@@ -77,7 +77,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
-   Per entrambe le viste è inoltre possibile definire [Visualizza impostazioni](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
+   Per entrambe le viste potete anche definire [Impostazioni vista](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -87,23 +87,23 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 ### Casella in entrata - Vista a elenco {#inbox-list-view}
 
-Questa visualizzazione elenca tutti gli elementi, insieme alle informazioni chiave rilevanti:
+In questa vista sono elencati tutti gli elementi, insieme alle principali informazioni rilevanti:
 
 ![wf-82](assets/wf-82.png)
 
 ### Casella in entrata - Vista calendario {#inbox-calendar-view}
 
-Questa visualizzazione presenta gli elementi in base alla loro posizione nel calendario e alla visualizzazione precisa selezionata:
+Questa vista mostra gli elementi in base alla loro posizione nel calendario e alla vista precisa selezionata:
 
 ![wf-93](assets/wf-93.png)
 
 Operazioni disponibili:
 
-* selezionare una vista specifica; **Timeline**, **Colonna**, **Elenco**
+* selezionare una visualizzazione specifica; **Timeline**, **Colonna**, **Elenco**
 
-* specifica le attività da visualizzare in base a **Pianificazione**; **Tutto**, **Pianificato**, **In corso**, **In scadenza a breve**, **Scaduto**
+* specifica le attività da visualizzare in base a **Pianificazione**; **Tutti**, **Pianificato**, **In corso**, **In scadenza**, **Scaduto**
 
-* approfondire per ottenere informazioni più dettagliate su un elemento
+* espandere la visualizzazione per ottenere informazioni più dettagliate su un elemento
 * seleziona un intervallo di date per attivare la visualizzazione:
 
 ![wf-91](assets/wf-91.png)
@@ -133,32 +133,32 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 ### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
-L’opzione Controllo amministratore consente agli amministratori di:
+L’opzione Admin Control consente agli amministratori di:
 
-* Personalizzare le colonne della casella in entrata AEM
+* Personalizzare le colonne della casella in entrata dell’AEM
 
 * Personalizzare il testo e il logo dell’intestazione
 
-* Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
+* Controlla la visualizzazione dei collegamenti di navigazione disponibili nell’intestazione
 
-L’opzione Controllo amministratore è visibile solo ai membri del gruppo `administrators` o `workflow-administrators` gruppo.
+L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrators` o `workflow-administrators` gruppo.
 
-* **Personalizzazione colonna**: Personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
-   * **Aggiungi colonna**: Selezionare una colonna da aggiungere AEM casella in entrata.
-   * **Modifica colonna**: Passa il puntatore del mouse sul titolo della colonna e tocca ![modifica](assets/edit.svg) per immettere un nome visualizzato per la colonna.
-   * **Elimina colonna**: Tocca ![delete](assets/delete_updated.svg) per eliminare la colonna AEM casella in entrata.
-   * **Sposta colonna**: Trascina ![spostare](assets/move_updated.svg) per spostare una colonna in una nuova posizione in AEM casella in entrata.
+* **Personalizzazione colonna**: personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+   * **Aggiungi colonna**: seleziona una colonna da aggiungere nella casella in entrata AEM.
+   * **Modifica colonna**: passa il mouse sul titolo della colonna e tocca ![modifica](assets/edit.svg) per immettere il nome visualizzato di una colonna.
+   * **Elimina colonna**: tocca il ![eliminare](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
+   * **Sposta colonna**: trascina ![sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizza il testo dell’intestazione:** Specifica il testo da visualizzare nell’intestazione per sostituire il valore predefinito **Adobe Experience Manager** testo.
+   * **Personalizza testo intestazione:** Specifica il testo da visualizzare nell’intestazione per sostituire il testo predefinito **Adobe Experience Manager** testo.
 
-   * **Personalizza logo:** Specifica l’immagine da visualizzare nell’intestazione come logo. Carica un’immagine in Digital Asset Management (DAM) e fai riferimento a tale immagine nel campo .
+   * **Personalizza logo:** Specifica l’immagine da visualizzare nell’intestazione come logo. Carica un’immagine in Digital Asset Management (DAM) e fai riferimento a tale immagine nel campo.
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** Seleziona questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamento Aiuto e opzioni di authoring disponibili quando si tocca il logo o il testo di Adobe Experience Manager.
+   * **Nascondi opzioni di navigazione:** Seleziona questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili toccando il logo o il testo di Adobe Experience Manager.
 * **Salva:** Tocca o fai clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
@@ -168,19 +168,19 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo `admi
 >Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
 
-1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili a tale elemento vengono visualizzate nella barra degli strumenti:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Nella barra degli strumenti verranno visualizzate le icone per le azioni applicabili a tale elemento:
 
    ![wf-84](assets/wf-84.png)
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di flusso di lavoro.
+   * **Completa** l’azione, ad esempio un&#39;attività o un elemento del flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
-      * mostra le proprietà dell’elemento
-      * aprire un dashboard o una procedura guidata appropriata per ulteriori azioni
-      * aprire la relativa documentazione
+      * mostra le proprietà dell&#39;elemento
+      * apri un dashboard o una procedura guidata appropriati per ulteriori azioni
+      * apri documentazione correlata
    * **Indietro** per tornare a un passaggio precedente.
    * Visualizzazione del payload di un flusso di lavoro.
    * Creazione di un progetto dall’elemento.
@@ -192,10 +192,10 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo `admi
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
 
 
-1. A seconda dell’elemento selezionato, verrà avviata un’azione; ad esempio:
+1. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
 
-   * viene aperta una finestra di dialogo appropriata per l’azione .
-   * verrà avviata un&#39;azione guidata.
+   * verrà aperta una finestra di dialogo appropriata per l’azione.
+   * verrà avviata una Action Wizard.
    * verrà aperta una pagina della documentazione.
 
    Ad esempio: **Riassegna** apre una finestra di dialogo:
@@ -204,9 +204,9 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo `admi
 
    A seconda della finestra di dialogo, procedura guidata o pagina di documentazione aperta, è possibile:
 
-   * confermare l&#39;azione appropriata; Ad esempio Riassegna.
+   * Conferma l’azione appropriata, ad esempio Riassegna.
    * Annulla l’azione.
-   * Freccia indietro; ad esempio, se è stata aperta una procedura guidata di azione o una pagina della documentazione, puoi tornare alla casella in entrata.
+   * Freccia indietro; ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla Casella in entrata.
 
 
 ## Creazione di un’attività {#creating-a-task}
@@ -221,7 +221,7 @@ Dalla casella in entrata è possibile creare le attività:
       * **Titolo**
       * **Progetto**
       * **Assegnatario**
-      * **Contenuto**; simile a Payload, si tratta di un riferimento dall&#39;attività a una posizione nell&#39;archivio
+      * **Contenuto**; simile al payload, è un riferimento dall’attività a una posizione nell’archivio
       * **Descrizione**
       * **Priorità attività**
       * **Data inizio**
@@ -231,7 +231,7 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: verrà utilizzato per formare l’URL; se vuoto, verrà basato sul **Titolo**.
+      * **Nome**: verrà utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore **Titolo**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -239,9 +239,9 @@ Dalla casella in entrata è possibile creare le attività:
 
 ## Creazione di un progetto  {#creating-a-project}
 
-Per determinate attività, puoi creare una [Progetto](/help/sites-authoring/projects.md) in base a tale attività:
+Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md) in base a tale attività:
 
-1. Seleziona l’attività appropriata toccando/facendo clic sulla miniatura.
+1. Seleziona l’attività appropriata, toccando/facendo clic sulla miniatura.
 
    >[!NOTE]
    >
@@ -265,7 +265,7 @@ Per determinate attività, puoi creare una [Progetto](/help/sites-authoring/proj
       * **Nome**
    >[!NOTE]
    >
-   >Vedi [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per informazioni complete.
+   >Consulta [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per informazioni complete.
 
 1. Seleziona **Crea** per confermare l’azione.
 
@@ -279,7 +279,7 @@ Puoi filtrare gli elementi elencati:
 
    ![wf-88](assets/wf-88.png)
 
-1. Puoi filtrare gli elementi elencati in base a una serie di criteri, molti dei quali possono essere perfezionati; ad esempio:
+1. Puoi filtrare gli elementi elencati in base a diversi criteri, molti dei quali possono essere perfezionati, ad esempio:
 
    ![wf-89](assets/wf-89.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Ristrutturazione dell’archivio di e-commerce in AEM 6.5
 seo-title: E-Commerce Repository Restructuring in AEM 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per E-Commerce.
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per l’e-commerce.
 seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 # Ristrutturazione dell’archivio di e-commerce in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Come descritto nell&#39;elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) I clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione di e-commerce AEM. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
-## Con aggiornamento alla versione 6.5 {#with-upgrade}
+## Con aggiornamento 6.5 {#with-upgrade}
 
-### Dati relativi a prodotti, ordini, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### Dati su prodotti, ordini, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table>
  <tbody>
@@ -36,20 +36,20 @@ Come descritto nell&#39;elemento padre [Ristrutturazione dell’archivio in AEM 
    <td><p><code>/var/commerce/products</code></p> <p><code>/var/commerce/orders</code></p> <p><code>/var/commerce/collections</code></p> <p><code>/var/commerce/classifications</code></p> <p><code>/var/commerce/shipping-methods</code></p> <p><code>/var/commerce/payment-methods</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Orientamento alla ristrutturazione</strong></td>
-   <td><p>Puoi utilizzare un <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migrazione Lazy</a> eseguire la migrazione dei dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p>
+   <td><strong>Orientamenti per la ristrutturazione</strong></td>
+   <td><p>È possibile utilizzare una <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migrazione lenta</a> attività per migrare i dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p>
     <ul>
-     <li>regola i riferimenti alla vecchia posizione in modo che punti alla nuova posizione</li>
-     <li>sposta il contenuto dalla vecchia posizione alla nuova posizione</li>
-     <li>rimuove la vecchia posizione per attivare infine l'utilizzo della nuova posizione nell'intero sistema</li>
-    </ul> <p>Le sedi interessate dall'attività sono:</p>
+     <li>regola i riferimenti alla posizione precedente per puntare alla nuova posizione</li>
+     <li>sposta il contenuto dalla posizione precedente alla nuova posizione</li>
+     <li>rimuove la posizione precedente per attivare l'utilizzo della nuova posizione nell'intero sistema</li>
+    </ul> <p>Le località coperte dall'attività sono:</p>
     <ul>
      <li>/etc/commerce/products</li>
      <li>/etc/commerce/collections<br /> </li>
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>Per i cataloghi più grandi, si consiglia di eseguire l’attività di migrazione Commerce singolarmente passando la seguente proprietà di sistema Java a AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Dopo la migrazione AEM necessario riavviare.</p> </td>
+    </ul> <p>Per i cataloghi più grandi si consiglia di eseguire l’attività di migrazione e-commerce singolarmente, passando la seguente proprietà del sistema Java all’AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Dopo la migrazione, l’AEM deve essere riavviato.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>

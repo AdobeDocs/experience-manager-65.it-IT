@@ -123,7 +123,7 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
 
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella Assets Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Guida rapida alla creazione di una cartella di risorse headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 

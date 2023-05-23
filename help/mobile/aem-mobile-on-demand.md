@@ -1,6 +1,6 @@
 ---
-title: AEM Mobile on-demand
-description: Segui questa pagina come punto di partenza per lo sviluppo di app On-Demand Services con AEM (Adobe Experience Manager). La pagina tratta gli argomenti relativi agli sviluppatori di un’app.
+title: AEM Mobile On-Demand
+description: Segui questa pagina come punto di partenza per sviluppare l’app On-Demand Services con AEM (Adobe Experience Manager). La pagina tratta gli argomenti rilevanti per gli sviluppatori di un’app.
 uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 ---
 
-# AEM Mobile on-demand {#aem-mobile-on-demand}
+# AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -26,27 +26,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Prima di lavorare con AEM Mobile e di seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con [AEM](/help/sites-deploying/deploy.md).
+>Prima di lavorare con AEM Mobile e seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con [AEM](/help/sites-deploying/deploy.md).
 >
->Per configurare l’ambiente per AEM Mobile On-demand Services, consulta [Dashboard dell&#39;applicazione AEM Mobile o il centro di controllo](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Per configurare l’ambiente per AEM Mobile On-demand Services, consulta [AEM Mobile Application Dashboard o Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un **sviluppatore AEM** estende e crea modelli e componenti web personalizzati per abilitare *AEM Author* per creare esperienze mobili belle e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili; ma comunicare sia al dispositivo che al server AEM (qualsiasi server remoto) agli endpoint del servizio omni-channel. AEM editor di contenuti incorporati viene utilizzato da *Autori AEM* per creare esperienze avanzate e rilevanti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
+Un **Sviluppatore AEM** estende e crea modelli web e componenti personalizzati per abilitare *Autore AEM* per creare esperienze mobili belle e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili, ma comunicano sia con il dispositivo che con il server AEM (qualsiasi server remoto) agli endpoint del servizio omni-channel. L’editor di contenuti integrato AEM viene utilizzato da *Autori AEM* per creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
 
-Durante la creazione di un’app tramite AEM Mobile On-demand Services, uno sviluppatore AEM è responsabile delle seguenti attività:
+Uno sviluppatore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services:
 
-* [Modelli e componenti per app](/help/mobile/app-templates-and-components1.md)
-* [Mobile con sincronizzazione dei contenuti](/help/mobile/mobile-ondemand-contentsync.md)
-* [Proprietà del contenuto ed esportazione del contenuto](/help/mobile/on-demand-content-properties-exporting.md)
+* [Modelli di app e componenti](/help/mobile/app-templates-and-components1.md)
+* [Dispositivi mobili con sincronizzazione contenuti](/help/mobile/mobile-ondemand-contentsync.md)
+* [Proprietà dei contenuti ed esportazione dei contenuti](/help/mobile/on-demand-content-properties-exporting.md)
 
-Vedi [Sviluppo di servizi per contenuti AEM Mobile](/help/mobile/developing-content-services.md) per lo sviluppo di Content Services.
+Consulta [Sviluppo di AEM Mobile Content Services](/help/mobile/developing-content-services.md) per lo sviluppo di Content Services.
 
 >[!NOTE]
 >
->Un *AEM* Il ruolo non inizia e termina con lo sviluppo di modelli e componenti. Un *sviluppatore AEM* può creare un’app completamente nuova, anziché estendere semplicemente l’esempio di implementazione di riferimento predefinito.
+>Un *Sviluppatore AEM* Il ruolo non inizia e termina con lo sviluppo di modelli e componenti. Un *Sviluppatore AEM* può creare un’app completamente nuova anziché semplicemente estendere l’esempio di implementazione di riferimento fornito con la soluzione.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Per scoprire i ruoli e le responsabilità di un amministratore e di un autore, consulta le risorse seguenti:
+Per informazioni sui ruoli e sulle responsabilità di un amministratore e di un autore, consulta le risorse seguenti:
 
 * [Creazione di contenuti AEM per l’app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
 * [Amministrazione di contenuti per l’utilizzo di AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

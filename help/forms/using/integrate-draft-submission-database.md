@@ -1,7 +1,7 @@
 ---
-title: Esempio per l'integrazione del componente bozze e invii con il database
+title: Esempio per integrare il componente Bozze e invii con il database
 seo-title: Sample for integrating drafts & submissions component with database
-description: Implementazione di riferimento di servizi di dati e metadati personalizzati per integrare le bozze e il componente di invio con un database.
+description: Implementazione di riferimento di servizi personalizzati per dati e metadati al fine di integrare il componente Bozze e richieste con un database.
 seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
 uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
@@ -16,54 +16,54 @@ ht-degree: 1%
 
 ---
 
-# Esempio per l&#39;integrazione del componente bozze e invii con il database {#sample-for-integrating-drafts-submissions-component-with-database}
+# Esempio per integrare il componente Bozze e invii con il database {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Panoramica di esempio {#sample-overview}
 
-Il componente bozze e invii del portale AEM Forms consente agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, AEM Forms fornisce servizi per dati e metadati per memorizzare i dati compilati da un utente nel modulo e i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati vengono memorizzati nell’archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite AEM’istanza di pubblicazione, generalmente all’esterno del firewall aziendale, le organizzazioni possono voler personalizzare l’archiviazione dati per renderla più sicura e affidabile.
+Il componente Bozze e invii del portale AEM Forms consente agli utenti di salvare i moduli come bozze e inviarli successivamente da qualsiasi dispositivo. Gli utenti possono inoltre visualizzare i moduli inviati nel portale. Per abilitare questa funzionalità, AEM Forms fornisce servizi di dati e metadati per memorizzare i dati compilati da un utente nel modulo e i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati vengono memorizzati nell’archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l’istanza di pubblicazione dell’AEM, che in genere si trova al di fuori del firewall aziendale, le organizzazioni potrebbero voler personalizzare l’archiviazione dei dati per renderla più sicura e affidabile.
 
-L&#39;esempio, discusso in questo documento, è un&#39;implementazione di riferimento di servizi di dati e metadati personalizzati per integrare le bozze e i componenti di invio con un database. Il database utilizzato nell&#39;implementazione di esempio è **MySQL 5.6.24**. Tuttavia, è possibile integrare le bozze e il componente di invio con qualsiasi database desiderato.
+L’esempio, discusso in questo documento, è un’implementazione di riferimento di servizi di dati e metadati personalizzati per integrare bozze e componenti di invio con un database. Il database utilizzato nell’implementazione di esempio è **MySQL 5.6.24**. Tuttavia, è possibile integrare il componente Bozze e invii con qualsiasi database desiderato.
 
 >[!NOTE]
 >
->* Gli esempi e le configurazioni illustrati in questo documento sono in base a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Assicurati di aver installato la versione più recente del pacchetto aggiuntivo di AEM Forms. Per l’elenco dei pacchetti disponibili, consulta [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) articolo.
->* Il pacchetto di esempio funziona solo con le azioni di invio di Forms adattivo.
+>* Gli esempi e le configurazioni illustrate in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
+>* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, vedere [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
+>* Il pacchetto di esempio funziona solo con azioni di invio Adaptive Forms.
 
 
-## Imposta e configura l’esempio {#set-up-and-configure-the-sample}
+## Impostare e configurare l’esempio {#set-up-and-configure-the-sample}
 
-Esegui i seguenti passaggi, su tutte le istanze di authoring e pubblicazione, per installare e configurare l’esempio :
+Per installare e configurare l’esempio in tutte le istanze di authoring e pubblicazione, effettua le seguenti operazioni:
 
-1. Scarica quanto segue **aem-fp-db-integration-sample-pkg-6.1.2.zip** creare un pacchetto nel file system.
+1. Scarica quanto segue **aem-fp-db-integration-sample-pkg-6.1.2.zip** nel file system.
 
-   Pacchetto di esempio per l&#39;integrazione del database
+   Pacchetto di esempio per l’integrazione del database
 
 [Ottieni file](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Vai AEM gestore dei pacchetti all&#39;indirizzo https://[*host*]:[*porta*]/crx/packmgr/.
-1. Fai clic su **[!UICONTROL Carica pacchetto]**.
+1. Vai a Gestione pacchetti AEM all’indirizzo https://[*host*]:[*porta*]/crx/packmgr/.
+1. Clic **[!UICONTROL Carica pacchetto]**.
 
-1. Sfoglia per selezionare il **aem-fp-db-integration-sample-pkg-6.1.2.zip** pacchetto e fai clic su **[!UICONTROL OK]**.
-1. Fai clic su **[!UICONTROL Installa]** accanto al pacchetto per installare il pacchetto.
-1. Vai a **[!UICONTROL Configurazione della console Web AEM]**
-pagina https://[*host*]:[*porta*]/system/console/configMgr.
-1. Fai clic per aprire **[!UICONTROL Configurazione bozza e invio del portale Forms]** in modalità di modifica.
+1. Sfoglia per selezionare **aem-fp-db-integration-sample-pkg-6.1.2.zip** pacchetto e fai clic su **[!UICONTROL OK]**.
+1. Clic **[!UICONTROL Installa]** accanto al pacchetto per installarlo.
+1. Vai a **[!UICONTROL Configurazione console web AEM]**
+pagina in https://[*host*]:[*porta*]/system/console/configMgr.
+1. Fai clic per aprire **[!UICONTROL Configurazione bozza e invio portale Forms]** in modalità di modifica.
 
-1. Specifica i valori delle proprietà come descritto nella tabella seguente:
+1. Specificare i valori per le proprietà come descritto nella tabella seguente:
 
    | **Proprietà** | **Descrizione** | **Valore** |
    |---|---|---|
-   | Servizio dati bozza di Forms Portal | Identificatore del servizio dati bozza | formsportal.sampledataservice |
-   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsportal.samplemetadataservice |
-   | Servizio di invio dati di Forms Portal | Identificatore per il servizio di invio dati | formsportal.sampledataservice |
-   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
-   | Servizio dati di firma in sospeso del portale Forms | Identificatore del servizio dati Firma in sospeso | formsportal.sampledataservice |
-   | Servizio metadati di firma in sospeso del portale Forms | Identificatore del servizio metadati Firma in sospeso | formsportal.samplemetadataservice |
+   | Servizio dati bozza portale Forms | Identificatore per bozza di servizio dati | formsportal.sampledataservice |
+   | Servizio metadati bozza portale Forms | Identificatore per bozza servizio metadati | formsportal.samplemetadataservice |
+   | Servizio di invio dati per Forms Portal | Identificatore per il servizio dati di invio | formsportal.sampledataservice |
+   | Servizio metadati invio portale Forms | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
+   | Servizio dati di firma in sospeso di Forms Portal | Identificatore per il servizio dati di firma in sospeso | formsportal.sampledataservice |
+   | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati di firma in sospeso | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
-   >I servizi vengono risolti con i loro nomi indicati come valore per il `aem.formsportal.impl.prop` come segue:
+   >I servizi vengono risolti dai nomi indicati come valore per `aem.formsportal.impl.prop` come segue:
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -74,21 +74,21 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
 
    È possibile modificare i nomi delle tabelle di dati e metadati.
 
-   Per assegnare un nome diverso alla tabella di metadati:
+   Per specificare un nome diverso per la tabella dei metadati:
 
-   * Nella Configurazione della console Web, trova e fai clic su Implementazione di esempio del servizio metadati del portale Forms. Puoi modificare i valori dell’origine dati, i metadati o il nome della tabella di metadati aggiuntivi.
+   * Nella configurazione della console Web, trovare e fare clic su Implementazione di esempio del servizio metadati di Forms Portal. È possibile modificare i valori dell&#39;origine dati, dei metadati o del nome di tabelle di metadati aggiuntive.
 
-   Per assegnare un nome diverso alla tabella di dati:
+   Per specificare un nome diverso per la tabella dati:
 
-   * Nella Configurazione della console Web, trova e fai clic su Implementazione di esempio del servizio dati del portale Forms. È possibile modificare i valori dell’origine dati e il nome della tabella dati.
+   * Nella configurazione della console Web, trovare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e del nome della tabella dati.
    >[!NOTE]
    >
-   >Se si modificano i nomi delle tabelle, fornirli nella configurazione del Portale moduli.
+   >Se si modificano i nomi delle tabelle, specificarli nella configurazione del portale moduli.
 
-1. Lascia le altre configurazioni così come sono e fai clic su **[!UICONTROL Salva]**.
+1. Lascia invariate le altre configurazioni e fai clic su **[!UICONTROL Salva]**.
 
-1. La connessione al database può essere eseguita tramite l’origine dati in pool di connessione Apache Sling.
-1. Per la connessione Apache Sling, trova e fai clic per aprire **[!UICONTROL Origine dati in pool di connessione Apache Sling]** in modalità di modifica nella configurazione della console Web. Specifica i valori delle proprietà come descritto nella tabella seguente:
+1. La connessione al database può essere eseguita tramite Apache Sling Connection Pooled Data Source.
+1. Per la connessione Apache Sling, individua e fai clic per aprire **[!UICONTROL Origine dati in pool di connessione Apache Sling]** in modalità di modifica nella configurazione della console web. Specificare i valori per le proprietà come descritto nella tabella seguente:
 
 <table>
  <tbody>
@@ -98,19 +98,19 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Nome origine dati</td>
-   <td><p>Un nome di origine dati per filtrare i driver dal pool di origini dati</p> <p><strong>Nota: </strong><em>L’implementazione di esempio utilizza FormsPortal come nome dell’origine dati.</em></p> </td>
+   <td><p>Nome di origine dati per filtrare i driver dal pool di origini dati</p> <p><strong>Nota: </strong><em>L’implementazione di esempio utilizza FormsPortal come nome dell’origine dati.</em></p> </td>
   </tr>
   <tr>
-   <td>Classe del driver JDBC</td>
+   <td>Classe driver JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
-   <td>URI di connessione JDBC<br /> </td>
+   <td>URI connessione JDBC<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_schema</em>]</td>
   </tr>
   <tr>
    <td>Nome utente</td>
-   <td>Nome utente per l'autenticazione e l'esecuzione di azioni sulle tabelle del database</td>
+   <td>Un nome utente per autenticare ed eseguire azioni sulle tabelle del database</td>
   </tr>
   <tr>
    <td>Password</td>
@@ -118,10 +118,10 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Isolamento transazione</td>
-   <td>READ_COMMTED</td>
+   <td>READ_COMMIT</td>
   </tr>
   <tr>
-   <td>Numero massimo di connessioni attive</td>
+   <td>Numero massimo connessioni attive</td>
    <td>1000</td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    <td>100</td>
   </tr>
   <tr>
-   <td>Connessioni di inattività minima</td>
+   <td>Connessioni inattive minime</td>
    <td>10</td>
   </tr>
   <tr>
@@ -141,11 +141,11 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    <td>100000</td>
   </tr>
   <tr>
-   <td>Test su credito</td>
+   <td>Test su prestito</td>
    <td>Selezionato</td>
   </tr>
   <tr>
-   <td>Test durante l'inattività</td>
+   <td>Test durante inattività</td>
    <td>Selezionato</td>
   </tr>
   <tr>
@@ -161,21 +161,21 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
 
 >[!NOTE]
 >
->* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Assicurati di aver effettuato il provisioning e di fornire le informazioni necessarie per configurare il pool di connessioni JDBC.
->* Posiziona il puntatore sull’istanza di creazione e pubblicazione per utilizzare lo stesso database. Il valore del campo URI di connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
+>* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
+>* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
 
 
-1. Lascia le altre configurazioni così come sono e fai clic su **[!UICONTROL Salva]**.
+1. Lascia invariate le altre configurazioni e fai clic su **[!UICONTROL Salva]**.
 
-1. Se nello schema di database è già presente una tabella, passare al passaggio successivo.
+1. Se nello schema del database è già presente una tabella, andare al passaggio successivo.
 
-   In caso contrario, se nello schema di database non è già presente una tabella, eseguire le istruzioni SQL seguenti per creare tabelle separate per i dati, i metadati e i metadati aggiuntivi nello schema di database:
+   In caso contrario, se nello schema del database non è già presente una tabella, eseguire le istruzioni SQL seguenti per creare tabelle separate per dati, metadati e metadati aggiuntivi nello schema del database:
 
    >[!NOTE]
    >
    >Non sono necessari database diversi per le istanze di authoring e pubblicazione. Utilizza lo stesso database su tutte le istanze di authoring e pubblicazione.
 
-   **Istruzione SQL per tabella dati**
+   **Istruzione SQL per la tabella dati**
 
    ```sql
    CREATE TABLE `data` (
@@ -187,7 +187,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Istruzione SQL per tabella metadati**
+   **Istruzione SQL per la tabella metadati**
 
    ```sql
    CREATE TABLE `metadata` (
@@ -227,7 +227,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Istruzione SQL per metadati aggiuntivi**
+   **Istruzione SQL per ulteriori metadati**
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -239,7 +239,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Istruzione SQL per la tabella dei commenti**
+   **Istruzione SQL per tabella commenti**
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -250,7 +250,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    `time` varchar(255) DEFAULT NULL);
    ```
 
-1. Se nello schema di database sono già presenti tabelle (dati, metadati e metadati aggiuntivi), eseguire le seguenti query di modifica della tabella:
+1. Se nello schema del database sono già presenti le tabelle (dati, metadati e metadati aggiuntivi), eseguire le query di modifica seguenti:
 
    **Istruzione SQL per la modifica della tabella dati**
 
@@ -258,7 +258,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    ALTER TABLE `data` CHANGE `owner` `owner` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **Istruzione SQL per la modifica della tabella metadati**
+   **Istruzione SQL per la modifica della tabella dei metadati**
 
    ```sql
    ALTER TABLE metadata add markedForDeletion varchar(45) DEFAULT NULL
@@ -266,7 +266,7 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >Se la query di aggiunta dei metadati ALTER TABLE è già stata eseguita e la colonna markedforDeletion è presente nella tabella.
+   >La query di aggiunta dei metadati ALTER TABLE ha esito negativo se è già stata eseguita e la colonna markedforDeletion è presente nella tabella.
 
    ```sql
    ALTER TABLE metadata add agreementId varchar(255) DEFAULT NULL,
@@ -293,57 +293,57 @@ pagina https://[*host*]:[*porta*]/system/console/configMgr.
    CHANGE `xdpRef` `xdpRef` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **Istruzione SQL per la modifica della tabella aggiuntiva dei metadati**
+   **Istruzione SQL per la modifica della tabella aggiuntiva metadatatable**
 
    ```sql
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-L&#39;implementazione di esempio è ora configurata e può essere utilizzata per elencare le bozze e gli invii durante la memorizzazione di tutti i dati e metadati in un database. Vediamo ora in che modo i servizi dati e metadati sono configurati nell’esempio.
+L’implementazione di esempio è ora configurata e può essere utilizzata per elencare le bozze e gli invii durante la memorizzazione di tutti i dati e i metadati in un database. Vediamo ora come sono configurati i servizi dati e metadati nell’esempio.
 
-## Installa il file mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
+## Installare il file mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
-Esegui i seguenti passaggi, su tutte le istanze di authoring e pubblicazione, per installare il file mysql-connector-java-5.1.39-bin.jar:
+Per installare il file mysql-connector-java-5.1.39-bin.jar, effettua le seguenti operazioni su tutte le istanze di authoring e pubblicazione:
 
-1. Passa a `https://'[server]:[port]'/system/console/depfinder` e cerca il pacchetto com.mysql.jdbc.
-1. Nella colonna Esportato da , controlla se il pacchetto viene esportato da un bundle.
+1. Accedi a `https://'[server]:[port]'/system/console/depfinder` e cercare il pacchetto com.mysql.jdbc.
+1. Nella colonna Esportato da, controlla se il pacchetto viene esportato da un bundle.
 
    Procedi se il pacchetto non viene esportato da alcun bundle.
 
-1. Passa a `https://'[server]:[port]'/system/console/bundles` e fai clic su **[!UICONTROL Installazione/aggiornamento]**.
-1. Fai clic su **[!UICONTROL Scegli file]** e cerca di selezionare il file mysql-connector-java-5.1.39-bin.jar . Inoltre, seleziona **[!UICONTROL Avvia bundle]** e **[!UICONTROL Aggiorna pacchetti]** caselle di controllo.
-1. Fai clic su **[!UICONTROL Installa o aggiorna]**. Una volta completato, riavvia il server.
-1. (*Solo Windows*) Disattivare il firewall di sistema per il sistema operativo in uso.
+1. Accedi a `https://'[server]:[port]'/system/console/bundles` e fai clic su **[!UICONTROL Installa/Aggiorna]**.
+1. Clic **[!UICONTROL Scegli file]** e seleziona il file mysql-connector-java-5.1.39-bin.jar. Inoltre, seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]** caselle di controllo.
+1. Clic **[!UICONTROL Installare o aggiornare]**. Al termine, riavviare il server.
+1. (*Solo Windows* a) Disattivare il firewall del sistema operativo.
 
-## Codice di esempio per il servizio dati e metadati del portale moduli {#sample-code-for-forms-portal-data-and-metadata-service}
+## Codice di esempio per il servizio metadati e i dati del portale Forms {#sample-code-for-forms-portal-data-and-metadata-service}
 
-Il seguente file ZIP contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMetadataServiceImpl` (classi di implementazione) per le interfacce del servizio dati e metadati. Inoltre, contiene tutte le classi necessarie per la compilazione delle suddette classi di implementazione.
+Il seguente file zip contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMetadataServiceImpl` (classi di implementazione) per le interfacce del servizio dati e metadati. Inoltre, contiene tutte le classi richieste per la compilazione delle classi di implementazione sopra menzionate.
 
 [Ottieni file](assets/sample_package.zip)
 
-## Verificare la lunghezza del nome file  {#verify-length-of-the-file-name}
+## Verifica la lunghezza del nome del file  {#verify-length-of-the-file-name}
 
-L’implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella dispone di una chiave primaria composita basata sulle colonne Chiave e ID della tabella. MySQL consente le chiavi primarie fino alla lunghezza di 255 caratteri. È possibile utilizzare il seguente script di convalida lato client per verificare la lunghezza del nome file allegato al widget file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio, quando il nome del file è maggiore di 150 (inclusa l’estensione). È possibile modificare lo script per verificarne la presenza in un numero diverso di caratteri.
+L’implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella dispone di una chiave primaria composita basata sulle colonne Chiave e ID della tabella. MySQL consente chiavi primarie fino a una lunghezza di 255 caratteri. Puoi utilizzare il seguente script di convalida lato client per verificare la lunghezza del nome file associato al widget file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio quando il nome del file è maggiore di 150 (inclusa l’estensione). È possibile modificare lo script per verificare la presenza di un numero diverso di caratteri.
 
-Esegui i seguenti passaggi per creare [una libreria client](/help/sites-developing/clientlibs.md) e utilizza lo script:
+Per creare, effettua le seguenti operazioni [una libreria client](/help/sites-developing/clientlibs.md) e utilizza lo script:
 
-1. Accedi a CRXDE e naviga su /etc/clientlibs/
-1. Crea un nodo di tipo **cq:ClientLibraryFolder** e fornire il nome del nodo. Esempio: `validation`.
+1. Accedi a CRXDE e passa a /etc/clientlibs/
+1. Creare un nodo di tipo **cq:ClientLibraryFolder** e fornisci il nome del nodo. Esempio: `validation`.
 
-   Fai clic su **[!UICONTROL Salva tutto]**.
+   Clic **[!UICONTROL Salva tutto]**.
 
-1. Fai clic con il pulsante destro del mouse sul nodo e fai clic su **[!UICONTROL crea nuovo file]** e crea un file con estensione .txt. Ad esempio: `js.txt`Aggiungi il codice seguente al file .txt appena creato e fai clic su **[!UICONTROL Salva tutto]**.
+1. Fare clic con il pulsante destro del mouse sul nodo e scegliere **[!UICONTROL crea nuovo file]** e creare un file con estensione .txt. Ad esempio: `js.txt`Aggiungi il codice seguente al file .txt appena creato e fai clic su **[!UICONTROL Salva tutto]**.
 
    ```javascript
    #base=util
     util.js
    ```
 
-   Nel codice di cui sopra, `util` è il nome della cartella e `util.js` nome del file nel `util` cartella. La `util` cartella e `util.js` vengono creati nei passaggi successivi.
+   Nel codice di cui sopra, `util` è il nome della cartella e `util.js` nome del file nel `util` cartella. Il `util` cartella e `util.js` vengono creati nei passaggi successivi.
 
-1. Fai clic con il pulsante destro del mouse sul pulsante `cq:ClientLibraryFolder` creato al passaggio 2, selezionare Crea > Crea cartella. Crea una cartella denominata `util`. Fai clic su **[!UICONTROL Salva tutto]**. Fai clic con il pulsante destro del mouse sul pulsante `util` selezionare Crea > Crea file. Crea un file denominato `util.js`. Fai clic su **[!UICONTROL Salva tutto]**.
+1. Fare clic con il pulsante destro del mouse `cq:ClientLibraryFolder` nodo creato al passaggio 2, seleziona Crea > Crea cartella. Crea una cartella denominata `util`. Clic **[!UICONTROL Salva tutto]**. Fare clic con il pulsante destro del mouse `util` , selezionare Crea > Crea file. Crea un file denominato `util.js`. Clic **[!UICONTROL Salva tutto]**.
 
-1. Aggiungi il codice seguente al file util.js e fai clic su **[!UICONTROL Salva tutto]**. Lunghezza di convalida del codice del nome del file.
+1. Aggiungi il codice seguente al file util.js e fai clic su **[!UICONTROL Salva tutto]**. Lunghezza di convalida del codice del nome file.
 
    ```javascript
    /*
@@ -398,7 +398,7 @@ Esegui i seguenti passaggi per creare [una libreria client](/help/sites-developi
 
    >[!NOTE]
    >
-   >Lo script è per il componente widget allegato pronto all’uso (OOTB). Se hai personalizzato il widget allegato OOTB, modifica lo script precedente per incorporare le relative modifiche.
+   >Lo script è per il componente widget di allegati preconfigurato (OOTB). Se avete personalizzato il widget dell&#39;allegato OOTB, modificate lo script precedente in modo da incorporare le rispettive modifiche.
 
 1. Aggiungi la seguente proprietà alla cartella creata nel passaggio 2 e fai clic su **[!UICONTROL Salva tutto]**.
 
@@ -410,12 +410,12 @@ Esegui i seguenti passaggi per creare [una libreria client](/help/sites-developi
 
    * **[!UICONTROL opzione multipla:]** Abilitato
 
-1. Passa a `/libs/fd/af/runtime/clientlibs/guideRuntime`e aggiunge `fp.validation` alla proprietà embed .
+1. Accedi a `/libs/fd/af/runtime/clientlibs/guideRuntime`e aggiungi `fp.validation` alla proprietà embed.
 
-1. Passa a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA e aggiungi il `fp.validation` da incorporare.
+1. Passa a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA e aggiungi `fp.validation` valore da incorporare.
 
    >[!NOTE]
    >
    >Se utilizzi librerie client personalizzate invece delle librerie client guideRuntime e guideRuntimeWithXfa, utilizza il nome della categoria per incorporare la libreria client creata in questa procedura nelle librerie personalizzate caricate in fase di esecuzione.
 
-1. Fai clic su **[!UICONTROL Salva tutto.]** Ora, quando il nome del file è più grande di 150 caratteri (inclusa l’estensione), viene visualizzato un messaggio.
+1. Clic **[!UICONTROL Salva tutto.]** Ora, quando il nome del file supera i 150 caratteri (inclusa l’estensione) viene visualizzato un messaggio.

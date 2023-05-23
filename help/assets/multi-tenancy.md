@@ -1,6 +1,6 @@
 ---
 title: Multi-tenancy per raccolte, snippet e modelli di snippet
-description: Scopri come la funzione di multi-tenancy ti consente di separare i contenuti nell’archivio CRX in base all’organizzazione del cliente per impedire l’accesso non autorizzato.
+description: Scopri in che modo la funzione di multi-tenancy consente di segregare i contenuti nell’archivio CRX in base all’organizzazione del cliente per evitare accessi non autorizzati.
 contentOwner: AG
 role: Architect, Admin, Leader
 feature: Collections
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 # Multi-tenancy per raccolte, snippet e modelli di snippet {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
-La funzione di multi-tenancy consente di separare i contenuti in CRX in base al prefisso dell’organizzazione e all’ID organizzazione per proteggere il contenuto dall’accesso non autorizzato da parte degli utenti di altre organizzazioni.
+La funzione di multi-tenancy consente di segregare il contenuto in CRX in base al prefisso dell’organizzazione e all’ID dell’organizzazione, per proteggere il contenuto dall’accesso non autorizzato da parte degli utenti di altre organizzazioni.
 
-[!DNL Adobe Experience Manager Assets] memorizza i dati per ogni organizzazione in un percorso diverso. Ciascun percorso specifico per l’organizzazione è identificato dal prefisso dell’organizzazione e dall’ID organizzazione inclusi nella posizione tradizionale in cui vengono memorizzati in CRX diversi tipi di risorse.
+[!DNL Adobe Experience Manager Assets] memorizza i dati per ogni organizzazione in un percorso diverso. Ogni percorso specifico dell’organizzazione è identificato dal prefisso dell’organizzazione e dall’ID dell’organizzazione inclusi nella posizione tradizionale in cui sono memorizzati diversi tipi di risorse in CRX.
 
-Ad esempio, se crei una cartella denominata `Demo`, [!DNL Experience Manager] in genere la cartella viene memorizzata in `../content/dam/Demo`. Con l’opzione multi-tenancy abilitata, è ora possibile memorizzare i dati in `../content/dam/<organization prefix>/<organization id>Demo`
+Ad esempio, se crei una cartella denominata `Demo`, [!DNL Experience Manager] la cartella viene tradizionalmente memorizzata in `../content/dam/Demo`. Se è abilitata la multi-tenancy, ora puoi archiviare i dati in `../content/dam/<organization prefix>/<organization id>Demo`
 
-Ad esempio, se [!DNL Adobe Marketing Cloud] utenti di [!DNL Assets] (su richiesta) che sono assegnati al `aodpremium` per configurare `../content/dam/<mac>/<aodpremium>Demo` percorso per separare il contenuto. In questo esempio, `mac` è il prefisso dell’organizzazione e `aodpremium` è l&#39;ID organizzazione.
+Ad esempio, se per [!DNL Adobe Marketing Cloud] utenti di [!DNL Assets] (su richiesta) assegnati al `aodpremium` organizzazione, puoi utilizzare la funzione multi-tenancy per configurare `../content/dam/<mac>/<aodpremium>Demo` per segregarne il contenuto. In questo esempio, `mac` è il prefisso dell’organizzazione e `aodpremium` è l’ID organizzazione.
 
-In base all’organizzazione e all’ID dell’utente, questo percorso qualificato viene visualizzato nel [!DNL Assets] Interfaccia e varie procedure guidate, incluse le procedure guidate per la creazione di Sposta e Frammento per applicare la segregazione.
+In base all’organizzazione e all’ID dell’utente, questo percorso qualificato viene visualizzato in [!DNL Assets] e varie procedure guidate, incluse quelle per la creazione di snippet e di spostamenti per applicare la segregazione.
 
-La funzione Multi-tenancy consente di separare i seguenti tipi di risorse e componenti:
+La funzione Multi-tenancy consente di segregare i seguenti tipi di risorse e componenti:
 
 * Raccolte
 * Raccolte pubbliche
-* Cataloghi (inclusa la procedura guidata Aggiungi/Seleziona pagina )
+* Cataloghi (inclusa la procedura guidata Aggiungi/Seleziona pagina)
 * Modelli
-* Modelli per snippet
+* Modelli di snippet
 * Lightbox

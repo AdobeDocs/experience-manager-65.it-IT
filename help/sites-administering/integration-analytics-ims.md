@@ -11,13 +11,13 @@ ht-degree: 66%
 
 # Integrazione con Adobe Analytics tramite IMS {#integration-with-adobe-analytics-using-ims}
 
-L’integrazione di AEM con Adobe Analytics tramite l’API di Analytics Standard richiede la configurazione di Adobe IMS (Identity Management System) tramite la console Adobe Developer.
+L’integrazione dell’AEM con Adobe Analytics tramite l’API Analytics Standard richiede la configurazione di Adobe IMS (Identity Management System) tramite la console Adobe Developer.
 
 >[!NOTE]
 >
->Il supporto per l’API Adobe Analytics Standard 2.0 è una novità di AEM 6.5.12.0. Questa versione dell’API supporta l’autenticazione IMS.
+>Il supporto per l’API Adobe Analytics Standard 2.0 è una novità dell’AEM 6.5.12.0. Questa versione dell’API supporta l’autenticazione IMS.
 >
->L’utilizzo dell’API Adobe Analytics Classic 1.4 in AEM è ancora supportato per la compatibilità con le versioni precedenti. La [L’API di Analytics Classic utilizza l’autenticazione delle credenziali utente](/help/sites-administering/adobeanalytics-connect.md).
+>L’utilizzo dell’API 1.4 di Adobe Analytics Classic nell’AEM è ancora supportato per la compatibilità con le versioni precedenti. Il [L’API di Analytics Classic utilizza l’autenticazione delle credenziali utente](/help/sites-administering/adobeanalytics-connect.md).
 >
 >La selezione API è guidata dal metodo di autenticazione utilizzato per l’integrazione AEM/Analytics.
 >
@@ -34,7 +34,7 @@ Prima di iniziare questa procedura:
    * Adobe Analytics e
    * Adobe IMS (Identity Management System)
 
-* L’amministratore di sistema della tua organizzazione deve utilizzare l’Admin Console per aggiungere gli sviluppatori necessari nella tua organizzazione ai profili di prodotto pertinenti.
+* L’amministratore di sistema della tua organizzazione deve utilizzare l’Admin Console per aggiungere gli sviluppatori richiesti all’interno dell’organizzazione ai profili di prodotto pertinenti.
 
    * Questo fornisce agli sviluppatori specifici le autorizzazioni per abilitare le integrazioni all’interno della console Adobe Developer.
    * Per maggiori dettagli vedi [Gestire gli sviluppatori](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
@@ -89,7 +89,7 @@ Apri la console Adobe Developer per creare un progetto con Adobe Analytics che A
 
    >[!NOTE]
    >
-   >Se sei abbonato a Adobe Analytics ma non lo vedi nell’elenco, controlla la [Prerequisiti](#prerequisites).
+   >Se sei abbonato a Adobe Analytics ma non lo vedi nell’elenco, controlla nel [Prerequisiti](#prerequisites).
 
    ![Aggiungere un’API](assets/integration-analytics-io-12.png)
 
@@ -141,16 +141,16 @@ Seleziona una voce di progetto specifica per visualizzare ulteriori dettagli sul
 * API
    * Ad esempio, Adobe Analytics
 
-Alcune di queste sono necessarie per completare l’integrazione per Adobe Analytics in AEM.
+Alcune di queste sono necessarie per completare l’integrazione di Adobe Analytics nell’AEM.
 
 ## Completamento della configurazione IMS in AEM {#completing-the-ims-configuration-in-aem}
 
-Per AEM è possibile completare la configurazione IMS aggiungendo i valori richiesti dal progetto di integrazione per Analytics:
+Tornando a AEM puoi completare la configurazione IMS aggiungendo i valori richiesti dal progetto di integrazione per Analytics:
 
 1. Torna a [Configurazione IMS aperta in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Seleziona **Avanti**.
 
-1. Qui puoi utilizzare la [Dettagli memorizzati per il progetto di integrazione della console Adobe Developer](#details-stored-for-the-ims-integration-project):
+1. Qui puoi utilizzare il [Dettagli memorizzati per il progetto di integrazione della console Adobe Developer](#details-stored-for-the-ims-integration-project):
 
    * **Titolo**: il tuo testo.
    * **Server di autorizzazione**: copia/incolla questo dato dalla riga `aud` della sezione **Payload** sottostante, ad esempio `https://ims-na1.adobelogin.com` nell&#39;esempio seguente
@@ -188,33 +188,33 @@ Per confermare che la configurazione funziona come previsto:
 
 ## Configurazione del servizio Adobe Analytics Cloud {#configuring-the-adobe-analytics-cloud-service}
 
-È ora possibile fare riferimento alla configurazione affinché un Cloud Service utilizzi l’API di Analytics Standard:
+È ora possibile fare riferimento alla configurazione affinché un Cloud Service utilizzi l’API Analytics Standard:
 
-1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Services** sezione , seleziona **Cloud Services legacy**.
+1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Services** sezione, seleziona **Cloud Services legacy**.
 1. Scorri verso il basso fino a **Adobe Analytics** e seleziona **Configura ora**.
 
-   La **Crea configurazione** si aprirà la finestra di dialogo .
+   Il **Crea configurazione** viene aperta una finestra di dialogo.
 
-1. Inserisci un **Titolo** e, se volete, un **Nome** (se lasciato vuoto, verrà generato dal titolo).
+1. Immetti un **Titolo** e, se lo desideri, un **Nome** (se lasciato vuoto, verrà generato dal titolo).
 
-   È inoltre possibile selezionare il modello richiesto (se sono disponibili più modelli).
+   Puoi anche selezionare il modello richiesto (se ne è disponibile più di uno).
 
 1. Conferma con **Crea**.
 
-   La **Modifica componente** si aprirà la finestra di dialogo .
+   Il **Modifica componente** viene aperta una finestra di dialogo.
 
-1. Immetti i dettagli nella **Impostazioni di Analytics** scheda:
+1. Inserisci i dettagli in **Impostazioni di Analytics** scheda:
 
    * **Autenticazione**: IMS
 
    * **Configurazione IMS**: seleziona il nome della configurazione IMS
 
-1. Fai clic su **Connettersi ad Analytics** per inizializzare la connessione con Adobe Analytics.
+1. Clic **Connetti ad Analytics** per inizializzare la connessione ad Adobe Analytics.
 
    Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita.**
 
 1. Seleziona **OK** sul messaggio.
 
-1. Se necessario, completa gli altri parametri seguiti da **OK** nella finestra di dialogo per confermare la configurazione.
+1. Completa gli altri parametri come richiesto, seguito da **OK** nella finestra di dialogo per confermare la configurazione.
 
-1. Ora puoi procedere con [Aggiunta di un framework di Analytics](/help/sites-administering/adobeanalytics-connect.md) per configurare i parametri che verranno inviati ad Adobe Analytics.
+1. Ora puoi passare a [Aggiunta di un framework Analytics](/help/sites-administering/adobeanalytics-connect.md) per configurare i parametri che verranno inviati ad Adobe Analytics.

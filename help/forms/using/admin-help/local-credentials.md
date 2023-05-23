@@ -19,55 +19,55 @@ ht-degree: 0%
 
 # Gestione delle credenziali locali {#managing-local-credentials}
 
-Le credenziali locali sono credenziali di chiave privata ospitate in Trust Store Management. A *credenziale locale* identifica la posizione in cui viene memorizzata la credenziale DES di un utente. Utilizzando Trust Store Management, è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti in modo da importare, modificare ed eliminare le credenziali locali.
+Le credenziali locali sono credenziali di chiave privata ospitate in Gestione archivio fonti attendibili. A *credenziali locali* identifica la posizione in cui sono memorizzate le credenziali DES di un utente. Tramite Gestione archivio fonti attendibili è possibile importare e gestire le credenziali locali utilizzando, ad esempio, i file PFX esistenti, in modo da poter importare, modificare ed eliminare le credenziali locali.
 
-I moduli AEM supportano le credenziali RSA e DSA fino a 4096 bit nel formato standard PKCS12 (file .pfx e .p12).
+I moduli AEM supportano credenziali RSA e DSA fino a 4096 bit in formato PKCS12 standard (file con estensione pfx e p12).
 
-È possibile importare ed esportare qualsiasi numero di credenziali. Se si desidera sostituire una credenziale scaduta utilizzando lo stesso alias, eliminare la credenziale e quindi importare la nuova credenziale con lo stesso alias.
+È possibile importare ed esportare un numero qualsiasi di credenziali. Se si desidera sostituire una credenziale scaduta utilizzando lo stesso alias, eliminare la credenziale e quindi importare la nuova credenziale con lo stesso alias.
 
-Per informazioni e istruzioni relative alle estensioni Acrobat Reader DC, consulta [Configurazione delle credenziali per l’utilizzo con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Per informazioni e istruzioni relative alle estensioni di Acrobat Reader DC, consulta [Configurazione delle credenziali per l’utilizzo con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Importare una credenziale {#import-a-credential}
+## Importa credenziali {#import-a-credential}
 
-1. Nella console di amministrazione, fare clic su Impostazioni > Gestione archivio attendibilità > Credenziali locali.
-1. Fai clic su Importa. In Tipo archivio trust selezionare una delle seguenti opzioni:
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
+1. Fai clic su Importa. In Tipo archivio fonti attendibili selezionare una delle opzioni seguenti:
 
-   * **Credenziali firma documento:** Credenziale utilizzata per emettere una firma digitale su un documento.
-   * **Credenziale delle estensioni Acrobat Reader DC:** Un certificato digitale specifico per le estensioni Acrobat Reader DC che consente di attivare i diritti di utilizzo di Adobe Reader nei documenti PDF prodotti.
-   * **Predefinito:** Indica che si tratta della credenziale predefinita da utilizzare con le estensioni Acrobat Reader DC.
+   * **Credenziali di firma documento:** Credenziale utilizzata per emettere una firma digitale su un documento.
+   * **Credenziali estensioni Acrobat Reader DC:** Certificato digitale specifico per le estensioni Acrobat Reader DC che consente l’attivazione dei diritti di utilizzo di Adobe Reader nei documenti PDF prodotti.
+   * **Predefinito:** Indica che si tratta delle credenziali predefinite da utilizzare con le estensioni Acrobat Reader DC.
 
-   Per informazioni su come ottenere una credenziale, consulta [Preparazione all’installazione AEM moduli](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   Per informazioni su come ottenere le credenziali, vedere [Preparazione all’installazione dei moduli AEM](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
-1. Nella casella Alias digitare un identificatore per la credenziale. Questo identificatore viene utilizzato come nome visualizzato per la credenziale nelle estensioni Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione utilizzando l’SDK per moduli AEM.
+1. Nella casella Alias digitare un identificatore per le credenziali. Questo identificatore viene utilizzato come nome visualizzato per le credenziali nelle estensioni Acrobat Reader DC e nel servizio Signature. Questo alias viene utilizzato anche per accedere alle credenziali a livello di programmazione tramite l’SDK per moduli AEM.
 
    >[!NOTE]
    >
-   >Il nome alias viene automaticamente convertito in maiuscolo a scopo di visualizzazione. Il nome dell&#39;alias non fa distinzione tra maiuscole e minuscole quando vi si fa riferimento in un processo.
+   >Il nome dell’alias viene automaticamente convertito in maiuscolo a scopo di visualizzazione. Il nome dell&#39;alias non fa distinzione tra maiuscole e minuscole quando vi si fa riferimento in un processo.
 
-1. Fare clic su Sfoglia per individuare la credenziale, digitare la password della credenziale, quindi fare clic su OK.
+1. Fare clic su Sfoglia per individuare le credenziali, digitare la password delle credenziali e quindi fare clic su OK.
 
    Se viene visualizzato il messaggio di errore &quot;Impossibile importare le credenziali a causa di un formato di file errato o di una password errata&quot;, verificare che la password sia valida.
 
-## Esportare una credenziale {#export-a-credential}
+## Esportare le credenziali {#export-a-credential}
 
 Le credenziali vengono esportate come file P12 in formato PKCS#12.
 
-1. Nella console di amministrazione, fare clic su Impostazioni > Gestione archivio attendibilità > Credenziali locali.
-1. Fare clic sul nome dell&#39;alias della credenziale che si desidera esportare, quindi fare clic su Esporta.
-1. Nella casella Password digitare la password. Questa password è nuova e viene utilizzata per crittografare la credenziale esportata.
-1. Fare clic su Esporta, seguire le istruzioni per esportare le credenziali, quindi fare clic su OK.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
+1. Fare clic sul nome alias delle credenziali che si desidera esportare e quindi su Esporta.
+1. Nella casella Password digitare la password. Questa password è nuova e viene utilizzata per crittografare le credenziali esportate.
+1. Fare clic su Esporta, seguire le istruzioni per esportare le credenziali e quindi fare clic su OK.
 
-## Modificare l’alias o il tipo di archivio delle credenziali {#edit-a-credential-s-alias-or-trust-store-type}
+## Modificare un alias o un tipo di archivio fonti attendibili delle credenziali {#edit-a-credential-s-alias-or-trust-store-type}
 
-Dopo aver importato una credenziale, è possibile modificarne il nome alias e il tipo di archivio attendibili.
+Dopo l&#39;importazione di una credenziale, è possibile modificarne il nome alias e il tipo di archivio fonti attendibili.
 
-1. Nella console di amministrazione, fare clic su Impostazioni > Gestione archivio attendibilità > Credenziali locali.
-1. Fare clic sul nome alias della credenziale che si desidera modificare.
-1. Fare clic su Aggiorna credenziali.
-1. Modificare il nome dell&#39;alias e il tipo di archivio attendibili come richiesto e fare clic su OK.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
+1. Fare clic sul nome alias delle credenziali che si desidera modificare.
+1. Fai clic su Aggiorna credenziali.
+1. Modificare il nome alias e il tipo di archivio fonti attendibili, quindi fare clic su OK.
 
-## Eliminare una credenziale {#delete-a-credential}
+## Eliminare le credenziali {#delete-a-credential}
 
-1. Nella console di amministrazione, fare clic su Impostazioni > Gestione archivio attendibilità > Credenziali locali.
+1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Selezionare le caselle di controllo relative alle credenziali da eliminare.
-1. Fare clic su Elimina, quindi su OK.
+1. Fare clic su Elimina e quindi su OK.

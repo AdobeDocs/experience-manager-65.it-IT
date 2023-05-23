@@ -1,7 +1,7 @@
 ---
-title: Lingue da destra a sinistra nei moduli di HTML5
+title: Lingue da destra a sinistra nei moduli HTML5
 seo-title: Right-to-left languages in HTML5 forms
-description: I moduli di HTML5 possono essere visualizzati o compilati in lingue da destra a sinistra, ad esempio l’ebraico.
+description: I moduli di HTML5 possono essere visualizzati o compilati in lingue da destra a sinistra, ad esempio in ebraico.
 seo-description: HTML5 forms can be displayed or filled in right-to-left languages, such as Hebrew.
 uuid: 37639671-3207-49aa-b110-8e39fd648449
 content-type: reference
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ---
 
-# Lingue da destra a sinistra nei moduli di HTML5 {#right-to-left-languages-in-html-forms}
+# Lingue da destra a sinistra nei moduli HTML5 {#right-to-left-languages-in-html-forms}
 
-I moduli di HTML5 supportano le lingue da destra a sinistra, ad esempio l’ebraico. È possibile visualizzare e compilare i moduli di HTML5 nelle lingue da destra a sinistra. Nella stessa forma vengono utilizzate sia le lingue da destra a sinistra che quelle da sinistra a destra. Ad esempio, è possibile utilizzare sia l’inglese che l’ebraico in un campo comune. Mobile Forms utilizza le impostazioni internazionali per visualizzare in un modulo le informazioni relative a giorni e date localizzati.
+I moduli di HTML5 supportano le lingue con scrittura da destra a sinistra, ad esempio l’ebraico. È possibile visualizzare e compilare i moduli HTML5 nelle lingue da destra a sinistra. È possibile utilizzare entrambe le lingue da destra a sinistra e da sinistra a destra nello stesso modulo. Ad esempio, è possibile utilizzare sia l’inglese che l’ebraico in un campo comune. In Mobile Forms le impostazioni locali vengono utilizzate per visualizzare le informazioni relative ai giorni e alle date localizzati in un modulo.
 
 **Limitazione**
 
-Mobile Forms supporta lingue da destra a sinistra in tutti i browser eccetto Internet Explorer.
+Mobile Forms supporta le lingue da destra a sinistra in tutti i browser eccetto Internet Explorer.

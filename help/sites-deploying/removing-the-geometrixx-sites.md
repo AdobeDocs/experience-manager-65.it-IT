@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Rimozione dei siti di Geometrixx{#removing-the-geometrixx-sites}
 
-AEM viene fornito con un set di siti web di esempio Geometrixx. Puoi rimuovere questo contenuto di esempio tramite **Gestione pacchetti**.
+L&#39;AEM viene fornito con una serie di esempi di Geometrixx web. Puoi rimuovere questo contenuto di esempio tramite **Gestione pacchetti**.
 
-I singoli pacchetti relativi alla geometrixx sono:
+I singoli pacchetti relativi a geometrixx sono:
 
 * `cq-geometrixx-outdoors-ugc-pkg-<version>.zip`
 * `cq-geometrixx-pkg-<version>.zip`
@@ -32,17 +32,17 @@ I singoli pacchetti relativi alla geometrixx sono:
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-Per rimuovere un singolo pacchetto, fai clic su **Disinstalla** su quel pacchetto.
+Per rimuovere un singolo pacchetto, fare clic su **Disinstalla** su quel pacchetto.
 
 C&#39;è anche un super-pacchetto:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Questo pacchetto include tutti i singoli pacchetti di cui sopra. Per rimuovere tutti i contenuti relativi alla geometrixx contemporaneamente, fate clic su **Disinstalla** su questo pacchetto. Il super-pacchetto andrà nello stato disinstallato e tutti i singoli pacchetti scompariranno dalla vista di gestione pacchetti.
+Questo pacchetto include tutti i singoli pacchetti di cui sopra. Per rimuovere contemporaneamente tutti i contenuti correlati a geometrixx, fate clic su **Disinstalla** su questo pacchetto. Il super-pacchetto passa allo stato disinstallato e tutti i singoli pacchetti scompaiono dalla vista Gestione pacchetti.
 
 Ora disponi di un’istanza AEM &quot;vuota&quot; senza siti dimostrativi.
 
 >[!NOTE]
 >
->Durante l&#39;aggiornamento, i siti geometrixx vengono reinstallati automaticamente. Potrebbe essere necessario rimuovere i siti web geometrixx dopo l&#39;aggiornamento, se non si desidera questi campioni.
+>Durante l&#39;aggiornamento, i siti geometrixx vengono reinstallati automaticamente. Se non desideri questi esempi, potrebbe essere necessario rimuovere i siti web geometrixx dopo l’aggiornamento.
 

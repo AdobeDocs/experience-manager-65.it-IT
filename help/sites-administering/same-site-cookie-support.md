@@ -1,6 +1,6 @@
 ---
-title: Supporto per cookie per lo stesso sito per AEM 6.5
-description: Supporto per cookie per lo stesso sito per AEM 6.5
+title: Supporto per i cookie dello stesso sito per AEM 6.5
+description: Supporto per i cookie dello stesso sito per AEM 6.5
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
@@ -10,13 +10,13 @@ ht-degree: 74%
 
 ---
 
-# Supporto per cookie per lo stesso sito per AEM 6.5 {#same-site-cookie-support-for-aem-65}
+# Supporto per i cookie dello stesso sito per AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
-A partire dalla versione 80, Chrome, e successivamente Safari, hanno introdotto un nuovo modello per la sicurezza dei cookie. Questa modalità è progettata per introdurre controlli di sicurezza sulla disponibilità di cookie per siti di terze parti, tramite un&#39;impostazione denominata `SameSite`. Per informazioni più dettagliate, consulta questo [articolo](https://web.dev/samesite-cookies-explained/).
+A partire dalla versione 80, Chrome, e successivamente Safari, hanno introdotto un nuovo modello per la sicurezza dei cookie. Questa modalità è progettata per introdurre controlli di sicurezza riguardo alla disponibilità di cookie per i siti di terze parti, tramite un’impostazione denominata `SameSite`. Per informazioni più dettagliate, consulta questo [articolo](https://web.dev/samesite-cookies-explained/).
 
 Il valore predefinito di questa impostazione (`SameSite=Lax`) potrebbe impedire il funzionamento dell’autenticazione tra istanze o servizi AEM. Questo perché i domini o le strutture URL di questi servizi potrebbero non rientrare nei vincoli di questo criterio dei cookie.
 
-Per aggirare questo problema, è necessario impostare il `SameSite` attributo cookie a `None` per il token di accesso.
+Per ovviare a questo problema, è necessario impostare `SameSite` attributo cookie a `None` per il token di accesso.
 
 >[!CAUTION]
 >

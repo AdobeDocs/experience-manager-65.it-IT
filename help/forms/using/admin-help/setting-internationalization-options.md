@@ -1,7 +1,7 @@
 ---
 title: Impostazione delle opzioni di internazionalizzazione
 seo-title: Setting internationalization options
-description: Scopri come specificare le impostazioni internazionali utilizzate per il rendering dei moduli e come specificare il set di caratteri utilizzato per codificare il flusso di output.
+description: Scopri come specificare le impostazioni locali utilizzate per il rendering dei moduli e come specificare il set di caratteri utilizzato per codificare il flusso di output.
 seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
 uuid: bb77f5f3-634f-4285-9b10-c4dd40085e69
 contentOwner: admin
@@ -19,18 +19,18 @@ ht-degree: 1%
 
 # Impostazione delle opzioni di internazionalizzazione{#setting-internationalization-options}
 
-## Specificare le impostazioni internazionali utilizzate per il rendering dei moduli {#specify-the-locale-used-to-render-forms}
+## Specificare le impostazioni locali utilizzate per il rendering dei moduli {#specify-the-locale-used-to-render-forms}
 
-È possibile specificare le impostazioni internazionali utilizzate per il rendering di un modulo PDF. I campi di un modulo PDF utilizzano le impostazioni internazionali specificate per visualizzare i dati. Ad esempio, se le impostazioni internazionali sono impostate su Tedesco, per i valori numerici il modulo utilizza separatori decimali tedeschi. Le impostazioni internazionali vengono inoltre utilizzate per inviare messaggi di convalida ai dispositivi client, come i browser web, come parte delle trasformazioni di HTML.
+È possibile specificare le impostazioni locali utilizzate per il rendering di un modulo PDF. I campi di un modulo PDF utilizzano le impostazioni locali specificate per la visualizzazione dei dati. Se ad esempio la lingua è impostata sul tedesco, per i valori numerici verranno utilizzati i separatori decimali tedeschi. La lingua viene utilizzata anche per inviare messaggi di convalida ai dispositivi client, come i browser web, come parte delle trasformazioni di HTML.
 
 1. Nella console di amministrazione, fai clic su Servizi > Forms.
-1. In Internazionalizzazione, nell’elenco Lingua, selezionare le impostazioni internazionali utilizzate per eseguire il rendering di un modulo. Il valore predefinito è Inglese (Stati Uniti).
+1. In Internazionalizzazione selezionare le impostazioni locali utilizzate per il rendering di un modulo nell&#39;elenco Lingua. Il valore predefinito è Inglese (Stati Uniti).
 1. Fai clic su Salva.
 
 ## Specifica il set di caratteri utilizzato per codificare il flusso di output {#specify-the-character-set-used-to-encode-the-output-stream}
 
-1. In Internazionalizzazione, selezionare un set di caratteri dall’elenco Set di caratteri. Questa impostazione dipende dall’API utilizzata, renderHTMLForm o renderPDFForm. Per specificare un set di caratteri diverso da quelli elencati, selezionare Personalizzato e specificare un valore di codifica nella casella visualizzata.
+1. In Internazionalizzazione selezionare un set di caratteri nell&#39;elenco Set di caratteri. Questa impostazione dipende dall’API utilizzata, renderHTMLForm o renderPDFForm. Per specificare un set di caratteri diverso da quelli elencati, selezionare Personalizzato e specificare un valore di codifica nella casella visualizzata.
 
-   Per le trasformazioni di HTML, i moduli AEM supportano i valori di codifica dei caratteri definiti dal `java.nio.charset` pacchetto. Se sFormPreference è PDFForm, sono supportati solo set di caratteri specifici. Il set di caratteri deve essere un nome canonico valido. Il valore predefinito è ISO-8859-1.
+   Per le trasformazioni HTML, i moduli AEM supportano i valori di codifica dei caratteri definiti dal `java.nio.charset` pacchetto. Se sFormPreference è PDFForm, sono supportati solo set di caratteri specifici. Il set di caratteri deve essere un nome canonico valido. Il valore predefinito è ISO-8859-1.
 
 1. Fai clic su Salva.

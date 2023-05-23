@@ -1,7 +1,7 @@
 ---
-title: Licenze SharePoint Connector, avvisi sul copyright e disclaimer
+title: Licenze del connettore SharePoint, avvisi sul copyright e liberatorie
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Informazioni su Licenze SharePoint Connector, Avvisi sul copyright e liberatoria.
+description: Scopri le licenze dei connettori SharePoint, le note sul copyright e le liberatorie.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
@@ -18,30 +18,30 @@ ht-degree: 19%
 
 ---
 
-# Licenze SharePoint Connector, avvisi sul copyright e disclaimer{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenze del connettore SharePoint, avvisi sul copyright e liberatorie{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-In questa sezione sono elencate tutte le licenze, le note sul copyright e le liberalizzazioni di responsabilità che devono essere esplicitamente indicate in relazione al connettore Day JCR per MS SharePoint.
+Questa sezione elenca tutte le licenze, le note sul copyright e le esclusioni di responsabilità che devono essere esplicitamente indicate in relazione al connettore Day JCR per MS SharePoint.
 
-## Panoramica delle librerie di terze parti del connettore {#overview-of-connector-rd-party-libraries}
+## Panoramica di Connector 3rd Party Libraries {#overview-of-connector-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle librerie di base di SharePoint Connector, insieme alle licenze, alle note sul copyright o alle liberalizzazioni in base alle quali sono coperte:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle librerie principali di SharePoint Connector, insieme alle licenze, alle note sul copyright o alle liberatorie a cui si riferiscono:
 
 | Libreria | Tipo di licenza |
 |---|---|
 | infastidire | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
 | assioma-dom | [Apache](#apache) |
-| assiom-impl | [Apache](#apache) |
+| axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
 | Backport-util-concurrent | Dominio pubblico |
-| codec comune | [Apache](#apache) |
-| collezioni comuni | [Apache](#apache) |
-| caricamento a livello di commons-fileupload | [Apache](#apache) |
+| commons-codec | [Apache](#apache) |
+| commons-collections | [Apache](#apache) |
+| commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concorrente | [Concorrente](#concurrent) (dominio pubblico) |
+| simultaneo | [Simultaneo](#concurrent) (Dominio pubblico) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -58,14 +58,14 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle
 | stax-api | [Apache](#apache) |
 | wsdl4j | [Apache](#apache) |
 | wstx-asl | [Apache](#apache) |
-| xalano | [Apache](#apache) |
-| fagiolo | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contiene parti coperte dalle licenze di dominio pubblico e software W3C) |
+| xalan | [Apache](#apache) |
+| xbean | [Apache](#apache) |
+| xml-apis | [Apache](#apache) (contiene parti coperte da licenze di dominio pubblico e software W3C) |
 | XmlSchema | [Apache](#apache) |
 
 ## Panoramica delle librerie di terze parti CRX {#overview-of-crx-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate all&#39;interno di CRX, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità in base alle quali sono trattate:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CRX, insieme alle licenze, alle note sul copyright o alle liberatorie di cui fanno parte:
 
 <table>
  <colgroup>
@@ -98,7 +98,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate all&#
   </tr>
   <tr>
    <td>concurrent-1.3.4.jar</td>
-   <td><a href="#concurrent">Concorrente</a></td>
+   <td><a href="#concurrent">Simultaneo</a></td>
   </tr>
   <tr>
    <td>derby-10.1.2.1.jar</td>
@@ -157,7 +157,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate all&#
 
 ## Panoramica delle librerie di terze parti CQSE {#overview-of-cqse-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel Servlet Engine di Communiqué, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità di cui sono coperte:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel motore di servlet di Communiqué, insieme alle licenze, alle note sul copyright o alle liberatorie di cui fanno parte:
 
 <table>
  <colgroup>
@@ -199,7 +199,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel S
   </tr>
   <tr>
    <td>servletapi-2.3.jar</td>
-   <td><a href="#sun-servlet">Servlet Sun</a></td>
+   <td><a href="#sun-servlet">Sun Servlet</a></td>
   </tr>
   <tr>
    <td>xml-apis-2.0.2.jar</td>
@@ -426,7 +426,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel S
      limitations under the License.
 ```
 
-## Concorrente {#concurrent}
+## Simultaneo {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -966,7 +966,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel S
      (LFI#134403/Form ID#011801)
 ```
 
-## Servlet Sun {#sun-servlet}
+## Sun Servlet {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification")

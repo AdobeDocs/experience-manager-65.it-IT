@@ -36,7 +36,7 @@ Quindi... hai tutto questo contenuto, ben strutturato (in Frammenti di contenuto
 
 Ciò di cui hai bisogno è un modo per eseguire il targeting di contenuti specifici, selezionare ciò che ti serve e restituirlo all’app per un’ulteriore elaborazione.
 
-Con Adobe Experience Manager (AEM) puoi accedere in modo selettivo ai frammenti di contenuto, utilizzando l’API GraphQL AEM, per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
+Con Adobe Experience Manager (AEM), puoi accedere in modo selettivo ai frammenti di contenuto, utilizzando l’API GraphQL dell’AEM, per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 
 >[!NOTE]
 >
@@ -242,11 +242,11 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilitare l’endpoint 
-   * Usa strumenti -> Risorse -> GraphQL
+   * Utilizza Strumenti -> Risorse -> GraphQL
    * [Abilitazione dell’endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
-* Accedi a GraphiQL (se necessario)
-   * [Interfaccia AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
+* Accedere a GraphiQL (se necessario)
+   * [Interfaccia GraphiQL dell’AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Struttura di esempio {#sample-structure}
 
@@ -269,7 +269,7 @@ I modelli di frammento verranno utilizzati:
 
 ### Dove testare le query {#where-to-test-your-queries}
 
-Le query possono essere immesse nel [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), ad esempio in:
+Le query possono essere immesse in [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), ad esempio in:
 
 * `http://localhost:4502/aem/graphiql.html`
 

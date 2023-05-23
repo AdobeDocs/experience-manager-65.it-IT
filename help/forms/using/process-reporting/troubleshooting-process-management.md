@@ -1,7 +1,7 @@
 ---
-title: Risoluzione dei problemi di reporting dei processi
+title: Risoluzione dei problemi dei report dei processi
 seo-title: Troubleshooting Process Reporting
-description: Risolvere i problemi relativi alla generazione di rapporti sui processi in AEM Forms su JEE
+description: Risoluzione dei problemi in AEM Forms su JEE Process Reporting
 seo-description: Troubleshoot issues in AEM Forms on JEE Process Reporting
 page-status-flag: de-activated
 uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
@@ -16,20 +16,20 @@ ht-degree: 0%
 
 ---
 
-# Risoluzione dei problemi di reporting dei processi {#troubleshooting-process-reporting}
+# Risoluzione dei problemi dei report dei processi {#troubleshooting-process-reporting}
 
-## Problemi relativi alla creazione di filtri su Internet Explorer 9 in Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
+## Problemi riscontrati durante la creazione di filtri in Internet Explorer 9 in Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Se crei filtri per i rapporti predefiniti, si verificano a intermittenza i seguenti problemi nel **Internet Explorer 9** per **Microsoft Windows 7** ambiente:
+Se crei filtri per rapporti predefiniti, i seguenti problemi si verificano a intermittenza in **Internet Explorer 9** per **Microsoft Windows 7** ambiente:
 
-* L’elenco a discesa nel campo Valore visualizza identificatori univoci anziché i valori.
-* Nel controllo Calendario del campo Valore sono visualizzati i caratteri giapponesi.
+* Nell’elenco a discesa del campo Valore vengono visualizzati identificatori univoci anziché i valori.
+* Nel controllo Calendario del campo Valore vengono visualizzati i caratteri giapponesi.
 * Il campo Condizione non viene visualizzato.
 * Il controllo Calendario nel campo Valore non viene visualizzato.
 
 ### Risoluzione {#resolution}
 
-Durante l&#39;accesso a Reporting dei processi:
+Mentre si è ancora connessi a Report di processo:
 
 1. Cancella la cache del browser.
 1. Aggiorna la schermata del browser.

@@ -18,41 +18,41 @@ ht-degree: 0%
 
 # Creare o configurare una cartella controllata {#create-or-configure-a-watched-folder}
 
-Un amministratore può configurare una cartella di rete denominata *cartella controllata* In questo modo, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, viene avviata un’operazione preconfigurata e il file viene manipolato. Dopo l&#39;esecuzione dell&#39;operazione specificata, il file modificato viene salvato in una cartella di output specificata. Per informazioni dettagliate sull&#39;amministrazione di una cartella controllata, vedi [Guida all’amministrazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
+Un amministratore può configurare una cartella di rete, nota come *cartella controllata*, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga avviata un’operazione preconfigurata e il file venga manipolato. Dopo aver eseguito l&#39;operazione specificata, il file modificato viene salvato in una cartella di output specificata. Per informazioni dettagliate sull’amministrazione di una cartella controllata, consulta [Aiuto per l’amministrazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
 Puoi utilizzare l’interfaccia utente della cartella controllata per:
 
 * Creare una cartella controllata
-* Modifica delle proprietà di una cartella osservata esistente
+* Modificare le proprietà di una cartella controllata esistente
 * Eliminare una cartella controllata
 
 ## Creare una cartella controllata {#create-a-watched-folder}
 
 Prima di configurare una cartella controllata, verifica quanto segue:
 
-* Le cartelle controllate sono una funzionalità avanzata dei moduli AEM. Richiede il funzionamento del pacchetto aggiuntivo AEM forms. Verifica che sia installato e configurato il pacchetto aggiuntivo AEM Forms appropriato.
-* È possibile creare la cartella controllata in un archivio condiviso o locale. Verificare che AEM utente dei moduli configurato per eseguire la cartella controllata disponga delle autorizzazioni di lettura e scrittura per la cartella controllata.
-* Puoi utilizzare un servizio, un flusso di lavoro o uno script per automatizzare un’operazione con una cartella controllata. Assicurati che sia stato creato il servizio, il flusso di lavoro o uno script corrispondente e pronto per l’esecuzione. Per informazioni sulla creazione di un servizio, di un flusso di lavoro e di uno script, consulta [Vari metodi di elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Le cartelle controllate sono una funzione avanzata dei moduli AEM. Per funzionare è necessario il pacchetto aggiuntivo AEM forms. Verifica che sia installato e configurato il pacchetto del componente aggiuntivo AEM Forms appropriato.
+* Puoi creare la cartella controllata in un archivio condiviso o locale. Verificare che l&#39;utente di moduli AEM configurato per eseguire la cartella controllata disponga di autorizzazioni di lettura e scrittura per la cartella controllata.
+* Puoi utilizzare un servizio, un flusso di lavoro o uno script per automatizzare un’operazione con una cartella controllata. Assicurati che il servizio, il flusso di lavoro o uno script corrispondente sia stato creato e sia pronto per l’esecuzione. Per informazioni sulla creazione di un servizio, un flusso di lavoro e uno script, consulta [Vari metodi di elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Una cartella controllata ha varie proprietà, vedi [Proprietà cartella controllata](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
-Esegui i seguenti passaggi per creare una cartella controllata:
+Per creare una cartella controllata, effettua le seguenti operazioni:
 
-1. Tocca **Adobe Experience Manager** nell’angolo in alto a sinistra dello schermo.
-1. Tocca **Strumenti** > **Forms** > **Configura la cartella osservata.** Viene visualizzato un elenco di cartelle controllate già configurate.
+1. Tocca **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo.
+1. Tocca **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
 1. Tocca **Nuovo**. Viene visualizzato un elenco dei campi necessari per creare la cartella controllata:
 
-   * **Nome**: Identifica la cartella controllata. Per il nome è possibile utilizzare solo caratteri alfanumerici.
-   * **Percorso**: Specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile a ogni utente che esegue AEM su nodi diversi di un cluster.
-   * **Elabora file tramite**: Il tipo di processo da avviare. È possibile specificare flusso di lavoro, script o servizio.
-   * **Nome servizio/Percorso script/Percorso flusso di lavoro**: Il comportamento del campo è basato sul valore specificato per **Elabora file tramite** campo . Puoi specificare i seguenti valori:
+   * **Nome**: identifica la cartella controllata. Utilizza solo caratteri alfanumerici per il nome.
+   * **Percorso**: specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile a tutti gli utenti che eseguono AEM su nodi diversi di un cluster.
+   * **Elabora file tramite**: tipo di processo da avviare. Puoi specificare flusso di lavoro, script o servizio.
+   * **Nome servizio/Percorso script/Percorso flusso di lavoro**: il comportamento del campo è basato sul valore specificato per **Elabora file tramite** campo. È possibile specificare i seguenti valori:
 
       * Per Flusso di lavoro, specifica il modello di flusso di lavoro da eseguire. Ad esempio, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
       * Per Script, specifica il percorso JCR dello script da eseguire. Ad esempio, /etc/watchfolder/test/testScript.ecma
-      * Per Servizio , specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell&#39;interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Ad esempio, il codice seguente è un’implementazione personalizzata dell’interfaccia ContentProcessor con una proprietà personalizzata (foo=bar) .
+      * Per Servizio, specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell’interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Ad esempio, il codice seguente è un’implementazione personalizzata dell’interfaccia ContentProcessor con una proprietà personalizzata (foo=bar).
 
    >[!NOTE]
    >
-   >Se hai selezionato **Servizio** per **Elabora file tramite** campo , il valore del campo Nome servizio (inputProcessorType) deve essere racchiuso tra parentesi. Ad esempio, (foo=bar).
+   >Se hai selezionato **Servizio** per **Elabora file tramite** , il valore del campo Nome servizio (inputProcessorType) deve essere racchiuso tra parentesi. Ad esempio, (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")
@@ -61,29 +61,29 @@ Esegui i seguenti passaggi per creare una cartella controllata:
    public class OutputWriter implements ContentProcessor {
    ```
 
-   * **Pattern di file di output**: Specificare un elenco di pattern delimitato da punti e virgola (;) utilizzato da una cartella controllata per determinare il nome e la posizione dei file e delle cartelle di output. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Pattern file di output**: specifica un elenco delimitato da punti e virgola (;) di pattern utilizzati da una cartella controllata per determinare il nome e la posizione dei file e delle cartelle di output. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
 1. Tocca **Avanzate**. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito.
 
-   * **Filtro mappatore payload:** Quando si crea una cartella controllata, viene creata una struttura di cartelle all’interno della cartella controllata. La struttura delle cartelle presenta cartelle di stage, risultato, mantenimento, input e errori. La struttura delle cartelle può fungere da payload di input per il flusso di lavoro e accettare l’output da un flusso di lavoro. Può inoltre elencare eventuali punti di errore. La struttura di un payload è diversa dalla struttura di una cartella controllata. È possibile creare script personalizzati per mappare la struttura di una cartella controllata al payload. Tale script si chiama filtro di mappatura payload. Sono disponibili due implementazioni di mappatore payload pronte all’uso. Se non hai [implementazione personalizzata](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizza un’implementazione standard:
+   * **Filtro mappatore payload:** Quando si crea una cartella controllata, viene creata una struttura di cartelle all&#39;interno della cartella controllata. La struttura di cartelle include cartelle di staging, risultato, conservazione, input e errore. La struttura di cartelle può fungere da payload di input per il flusso di lavoro e accettare l’output da un flusso di lavoro. Può anche elencare eventuali punti di errore. La struttura di un payload è diversa da quella di una cartella controllata. Puoi scrivere script personalizzati per mappare la struttura di una cartella controllata al payload. Tale script è denominato filtro di mappatura payload. Sono disponibili due implementazioni predefinite per la mappatura del payload. Se non ha [un’implementazione personalizzata](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizza un’implementazione preconfigurata:
 
-      * **Mapper predefinito:** Utilizza il mappatore payload predefinito per mantenere il contenuto di input e output delle cartelle controllate in cartelle di input e output separate nel payload.
-      * **Semplice mappatore del payload basato su file:** Utilizza il mappatore payload basato su file semplice per mantenere i contenuti di input e output direttamente nella cartella payload. Non crea alcuna gerarchia extra, come la mappatura predefinita.
-   * **Modalità di esecuzione**: Specifica l’elenco separato da virgole delle modalità di esecuzione consentite per l’esecuzione del flusso di lavoro.
-   * **Timeout file in fase dopo**: Specifica il numero di secondi di attesa prima che un file o una cartella di input già acquisito per l’elaborazione venga considerato come se fosse scaduta e contrassegnata come un errore. Il meccanismo di timeout si attiva solo quando il valore di questa proprietà è un numero positivo.
-   * **Elimina i file in fase di timeout quando ridotti**: Se attivato, la **Timeout file in fase dopo** il meccanismo viene attivato solo quando la limitazione è attivata per la cartella controllata.
-   * **Analizzare La Cartella Di Input Dopo Ogni:** Specificare l&#39;intervallo di tempo, in secondi, per la scansione della cartella controllata per gli input. A meno che l’impostazione di limitazione non sia abilitata, l’intervallo di polling deve essere più lungo del tempo necessario per elaborare un lavoro medio; in caso contrario, il sistema potrebbe essere sovraccarico. Il valore dell&#39;intervallo deve essere maggiore o uguale a uno.
-   * **Escludi pattern file**: Specificare un elenco di pattern delimitato da punti e virgola (;) utilizzato da una cartella controllata per determinare quali file e cartelle analizzare e raccogliere. Qualsiasi file o cartella con il pattern specificato non viene analizzato per l’elaborazione. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Includi pattern file**: Specificare un elenco di pattern delimitato da punti e virgola (;) utilizzato dalla cartella controllata per determinare le cartelle e i file da analizzare e raccogliere. Ad esempio, se il pattern di file di inclusione è input&amp;ast;, tutti i file e le cartelle corrispondenti a input&amp;ast; vengono prelevati. Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Tempo di attesa:** Specifica il tempo, in millisecondi, da attendere prima di eseguire la scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un&#39;ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti passati. Il valore predefinito è 0.
+      * **Mappatore predefinito:** Utilizza il mappatore del payload predefinito per mantenere i contenuti di input e output delle cartelle controllate in cartelle di input e output separate nel payload.
+      * **Semplice mappatura del payload basato su file:** Utilizza Simple File-based Payload Mapper per mantenere i contenuti di input e output direttamente nella cartella del payload. Non crea alcuna gerarchia aggiuntiva, come l’mappatore predefinito.
+   * **Modalità di esecuzione**: specifica l’elenco separato da virgole delle modalità di esecuzione consentite per l’esecuzione del flusso di lavoro.
+   * **Esegui il timeout di file di staging dopo**: specifica per quanti secondi si deve attendere che un file/una cartella di input già prelevato per l’elaborazione venga considerato scaduto e contrassegnato come non riuscito. Il meccanismo di timeout si attiva solo quando il valore di questa proprietà è un numero positivo.
+   * **Elimina i file di staging con timeout con limitazione**: se abilitata, la **Esegui il timeout di file di staging dopo** il meccanismo è attivato solo quando è attivata la limitazione per la cartella controllata.
+   * **Scansiona cartella di input ogni:** Specifica l’intervallo di tempo, in secondi, per la scansione della cartella controllata per gli input. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di polling deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore dell&#39;intervallo deve essere maggiore o uguale a uno.
+   * **Escludi motivo file**: specifica un elenco delimitato da punti e virgola (;) di pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e raccogliere. Qualsiasi file o cartella con il modello specificato non viene analizzato per l&#39;elaborazione. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Includi pattern file**: specifica un elenco delimitato da punti e virgola (;) di pattern che la cartella controllata utilizza per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se Includi modello file è input&amp;ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&amp;ast;. Il valore predefinito è &amp;ast; e indica tutti i file e le cartelle. Per ulteriori informazioni sui modelli di file, vedere [Modelli di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Tempo di attesa:** Specifica il tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0.
 
-      Questa impostazione è utile per garantire che tutto il contenuto del file o della cartella venga copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il file richiede dieci minuti per il download, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questo intervallo impedisce alla cartella controllata di eseguire la scansione del file se non ha dieci minuti.
+      Questa impostazione è utile per garantire che tutto il contenuto del file o della cartella venga copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questo intervallo impedisce alla cartella controllata di eseguire la scansione del file se non ha dieci minuti.
 
-   * **Elimina risultati precedenti a:** Specificare il tempo, in numero di giorni, da attendere prima di eliminare i file e le cartelle con un valore maggiore del valore specificato. Questa impostazione è utile per evitare che la cartella dei risultati diventi piena. Il valore -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
-   * **Nome cartella risultati:** Specifica il nome della cartella in cui memorizzare i risultati. Se i risultati non vengono visualizzati in questa cartella, controlla la cartella degli errori. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. È possibile utilizzare un percorso assoluto o relativo con i seguenti pattern di file:
+   * **Elimina risultati più vecchi di:** Specifica il tempo, in numero di giorni, di attesa prima di eliminare i file e le cartelle più vecchi del valore specificato. Questa impostazione è utile per garantire che la cartella dei risultati non sia piena. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
+   * **Nome cartella risultati:** Specifica il nome della cartella in cui memorizzare i risultati. Se i risultati non vengono visualizzati in questa cartella, selezionare la cartella con errori. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. È possibile utilizzare un percorso assoluto o relativo con i seguenti modelli di file:
 
-      * %F = prefisso del nome del file
+      * %F = prefisso nome file
       * %E = estensione del nome file
       * %Y = anno (completo)
       * %y = anno (ultime due cifre)
@@ -97,28 +97,28 @@ Esegui i seguenti passaggi per creare una cartella controllata:
       * %l = millisecondi
       * %R = numero casuale (tra 0 e 9)
       * %P = ID processo o processo
-      * Ad esempio, se è alle 20 del 17 luglio 2009 e si specifica C:/Test/WF0/failed/%Y/%M/%D/%H/, la cartella dei risultati è C:/Test/WF0/failed/2009/07/17/20.
-      * Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Risultato all&#39;interno della cartella controllata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Nome cartella errori:** Specifica la cartella in cui vengono salvati i file non riusciti. Questa posizione è sempre relativa alla cartella controllata. È possibile utilizzare i pattern di file, come descritto per Cartella risultati.
-   * **Mantieni nome cartella:** Specificare la cartella in cui vengono archiviati i file dopo la scansione e la raccolta riuscite. Il percorso può essere una directory assoluta, relativa o null. È possibile utilizzare i pattern di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
-   * **Dimensione batch:** Specifica il numero di file o cartelle da raccogliere per scansione. Impedisce un sovraccarico del sistema; la scansione di troppi file alla volta può causare un arresto anomalo. Il valore predefinito è 2.
+      * Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20.
+      * Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Result all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Nome cartella errore:** Specificare la cartella in cui vengono salvati i file non riusciti. Questo percorso è sempre relativo alla cartella controllata. È possibile utilizzare i modelli di file, come descritto per Cartella risultati.
+   * **Mantieni nome cartella:** Specificare la cartella in cui vengono archiviati i file dopo la scansione e il ritiro. Il percorso può essere una directory assoluta, relativa o null. È possibile utilizzare i modelli di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
+   * **Dimensione batch:** Specifica il numero di file o cartelle da raccogliere per scansione. Impedisce un sovraccarico sul sistema; la scansione di troppi file contemporaneamente può causare un arresto anomalo. Il valore predefinito è 2.
 
-      Se l’intervallo di scansione è piccolo, i thread eseguono spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella controllata, è necessario mantenere l&#39;intervallo di scansione ridotto. Se i file vengono eliminati raramente, utilizza un intervallo di scansione più ampio in modo che gli altri servizi possano utilizzare i thread.
+      Se l&#39;intervallo di scansione è ridotto, i thread eseguono spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella controllata, è necessario mantenere l&#39;intervallo di scansione ridotto. Se i file vengono eliminati raramente, utilizzare un intervallo di scansione più ampio in modo che gli altri servizi possano utilizzare i thread.
 
-   * **Limitazione su:** Quando questa opzione è abilitata, limita il numero di processi di cartelle controllati che AEM i processi dei moduli in un dato momento. Il valore Dimensione batch determina il numero massimo di processi. Per ulteriori informazioni, consulta [limitazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
-   * **Sovrascrivi file esistenti con nome simile**: Se impostato su True, i file nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se impostato su False, il nome verrà utilizzato per i file e le cartelle con un suffisso di indice numerico. Il valore predefinito è False.
-   * **Mantieni file in caso di errore:** Se impostato su True, i file di input vengono mantenuti in caso di errore. Il valore predefinito è vero.
-   * **Includi file con pattern:** Specificare un elenco di pattern delimitato da punti e virgola (;) utilizzato dalla cartella controllata per determinare le cartelle e i file da analizzare e raccogliere. Ad esempio, se viene inserito il pattern di file di inclusione, vengono prelevati tutti i file e le cartelle corrispondenti all’input. Per ulteriori informazioni, consulta [Guida all’amministrazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-   * **Richiama la cartella osservata in modo asincrono:** Identifica il tipo di chiamata come asincrono o sincrono. Il valore predefinito è asincrono. L’asincrono è consigliato per i processi a lunga durata, mentre quello sincrono è consigliato per i processi transitori o a breve durata.
-   * **Abilita cartella osservata:** Quando questa opzione è abilitata, la cartella di controllo è abilitata. Il valore predefinito è True.
+   * **Limitazione attivata:** Quando questa opzione è abilitata, limita il numero di processi delle cartelle controllate che AEM elabora in un dato momento. Il valore Dimensione batch determina il numero massimo di processi. Per ulteriori informazioni, consulta [limitazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
+   * **Sovrascrivi file esistenti con un nome simile**: quando è impostato su True, i file nella cartella dei risultati e nella cartella di mantenimento vengono sovrascritti. Se è impostato su False, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è False.
+   * **Mantieni file in caso di errore:** Se è impostato su True, i file di input vengono conservati in caso di errore. Il valore predefinito è true.
+   * **Includi file con pattern:** Specifica un elenco delimitato da punti e virgola (;) di pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se viene immesso il Pattern di inclusione file, vengono selezionati tutti i file e le cartelle che corrispondono all&#39;input. Per ulteriori informazioni, consulta [Aiuto per l’amministrazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+   * **Richiama cartella controllata in modo asincrono:** Identifica il tipo di chiamata come asincrona o sincrona. Il valore predefinito è asincrono. L&#39;asincronia è consigliata per i processi di lunga durata, mentre la sincronia è consigliata per i processi transitori o di breve durata.
+   * **Abilita cartella controllata:** Quando questa opzione è attivata, la cartella di controllo è attivata. Il valore predefinito è True.
 
 
 
-## Modifica delle proprietà di una cartella osservata esistente {#modify-properties-of-an-existing-watched-folder}
+## Modificare le proprietà di una cartella controllata esistente {#modify-properties-of-an-existing-watched-folder}
 
-Oltre a modificare il nome della cartella controllata, è possibile modificare tutte le proprietà di una cartella guardata esistente. Esegui i seguenti passaggi per modificare le proprietà di una cartella di controllo esistente:
+Oltre a modificare il nome della cartella controllata, è possibile modificare tutte le proprietà di una cartella controllata esistente. Per modificare le proprietà di una cartella controllata esistente, effettua le seguenti operazioni:
 
-1. Tocca **Adobe Experience Manager** nell’angolo in alto a sinistra dello schermo.
-1. Tocca **Strumenti** > **Forms** > **Configura la cartella osservata.** Viene visualizzato un elenco di cartelle controllate già configurate.
-1. Sul lato sinistro della schermata Cartella osservata, seleziona la cartella di controllo e tocca **Modifica.** Viene visualizzato un elenco dei campi necessari per creare la cartella controllata. I campi elencati nel **Base** La scheda è obbligatoria. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito. Puoi modificare queste proprietà in base alle tue esigenze.
+1. Tocca il **Adobe Experience Manager** nell’angolo in alto a sinistra dello schermo.
+1. Tocca **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
+1. Sul lato sinistro della schermata Cartella controllata, seleziona la cartella di controllo e tocca **Modifica.** Viene visualizzato un elenco dei campi necessari per creare la cartella controllata. I campi elencati nella **Base** La tabulazione è obbligatoria. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito. Puoi modificare queste proprietà in base alle tue esigenze.
 1. Dopo aver modificato le proprietà, tocca **Aggiorna**. Le proprietà modificate vengono salvate.

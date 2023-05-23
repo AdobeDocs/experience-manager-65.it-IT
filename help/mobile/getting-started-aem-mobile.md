@@ -21,20 +21,20 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
->I clienti esistenti delle app AEM Mobile che eseguono la migrazione da AEM 6.2 o 6.3 a AEM 6.5 possono continuare a utilizzare le app AEM Mobile scaricando un pacchetto da PackageShare. Tuttavia, le nuove installazioni di AEM 6.5 non supportano la funzionalità delle app AEM Mobile.
+>I clienti delle app AEM Mobile esistenti che eseguono la migrazione da AEM 6.2 o 6.3 a AEM 6.5 possono continuare a utilizzare le app AEM Mobile scaricando un pacchetto da PackageShare. Tuttavia, le nuove installazioni di AEM 6.5 non supportano la funzionalità delle app AEM Mobile.
 
-Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di installazione, consentendo alle aziende di utilizzare una varietà di fonti di contenuto.
+Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di implementazione, consentendo alle aziende di utilizzare una varietà di origini di contenuto.
 
-AEM Mobile offre diversi metodi per creare le app. I tre modi diversi per creare le app sono:
+AEM Mobile offre diversi metodi per la creazione di app. I tre modi diversi in cui puoi creare le app sono:
 
-* **[Utilizzo dei servizi on-demand con AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Utilizzo dei servizi on-demand senza AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Utilizzo dei servizi on demand con AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
+* **[Utilizzo dei servizi on demand senza AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Utilizzo di Adobe PhoneGap Enterprise con AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Se hai poca esperienza con Adobe Experience Manager, ti consigliamo di seguire le istruzioni riportate di seguito. [Guida introduttiva a AEM](/help/sites-deploying/deploy.md).
+>Se hai poca esperienza con Adobe Experience Manager, potresti voler esaminare [Guida introduttiva all’AEM](/help/sites-deploying/deploy.md).

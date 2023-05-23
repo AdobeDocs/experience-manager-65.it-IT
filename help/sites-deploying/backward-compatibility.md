@@ -1,7 +1,7 @@
 ---
 title: Compatibilità con le versioni precedenti in AEM 6.5
 seo-title: Backward Compatibility in AEM 6.5
-description: Scopri come mantenere le tue app e configurazioni compatibili con AEM 6.5
+description: Scopri come mantenere le app e le configurazioni compatibili con AEM 6.5
 seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
@@ -25,48 +25,48 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Per un elenco delle modifiche di contenuto e configurazione che non rientrano nell’ambito del pacchetto di compatibilità, consulta [Ristrutturazione dell’archivio in AEM](/help/sites-deploying/repository-restructuring.md).
+>Per un elenco delle modifiche al contenuto e alla configurazione che non rientrano nell’ambito del pacchetto di compatibilità, consulta [Ristrutturazione dell’archivio dell’AEM](/help/sites-deploying/repository-restructuring.md).
 
-Nella AEM 6.5, tutte le funzioni sono state sviluppate pensando alla compatibilità con le versioni precedenti.
+Con AEM 6.5, tutte le funzioni sono state sviluppate tenendo presente la retrocompatibilità.
 
-Nella maggior parte dei casi, i clienti che eseguono AEM 6.3 non devono modificare il codice o le personalizzazioni durante l&#39;aggiornamento. Per i clienti AEM 6.1 e 6.2 non vi sono modifiche di interruzione aggiuntive rispetto a quelle che si verificherebbero durante un aggiornamento alla versione 6.3.
+Nella maggior parte dei casi, i clienti che eseguono AEM 6.3 non devono essere costretti a modificare il codice o le personalizzazioni durante l’aggiornamento. Per i clienti AEM 6.1 e 6.2 non vi sono ulteriori modifiche che causerebbero interruzioni rispetto a quelle che si verificherebbero durante un aggiornamento alla versione 6.3.
 
-Per le eccezioni in cui le funzionalità non potevano essere mantenute compatibili con le versioni precedenti, i problemi di incompatibilità con le versioni precedenti per i bundle e i contenuti possono essere attenuati installando un pacchetto di compatibilità per la versione 6.4 (vedi come impostare di seguito per i dettagli su dove scaricare). Questo pacchetto di compattazione aiuterà a ripristinare la compatibilità nella maggior parte dei casi per le applicazioni conformi a AEM 6.4.
+Per le eccezioni in cui le funzionalità non potevano essere mantenute compatibili con le versioni precedenti, i problemi di incompatibilità con le versioni precedenti per bundle e contenuti possono essere attenuati installando un pacchetto di compatibilità per 6.4 (vedi come impostare di seguito per i dettagli su dove scaricare). Questo pacchetto di compatibilità aiuterà a ripristinare la compatibilità nella maggior parte dei casi per le applicazioni conformi a AEM 6.4.
 
-Il pacchetto di compatibilità consente di eseguire AEM in modalità di compatibilità e di differire lo sviluppo personalizzato rispetto alle nuove funzioni di AEM:
+Il pacchetto di compatibilità consente di eseguire AEM in modalità di compatibilità e di posticipare lo sviluppo personalizzato rispetto alle nuove funzioni AEM:
 
 >[!NOTE]
 >
->Nota che il pacchetto di compatibilità è solo una soluzione temporanea per posticipare lo sviluppo necessario per essere compatibile con AEM 6.5. Questa opzione è consigliata solo come ultima se non sei in grado di risolvere i problemi di compatibilità tramite sviluppo immediatamente dopo l’aggiornamento. Si consiglia vivamente di passare alla modalità nativa e disinstallare il pacchetto di compatibilità una volta deciso di procedere con lo sviluppo personalizzato basato su 6.5 e usufruire della funzionalità 6.5 completa.
+>Il pacchetto di compatibilità è solo una soluzione temporanea per posticipare lo sviluppo necessario per la compatibilità con AEM 6.5; consigliato solo come ultima opzione se non è possibile risolvere i problemi di compatibilità tramite lo sviluppo immediatamente dopo l’aggiornamento. Si consiglia vivamente di passare alla modalità nativa e disinstallare il pacchetto di compatibilità una volta che si decide di procedere con lo sviluppo personalizzato basato sulla versione 6.5 e di avvalersi della funzionalità completa 6.5.
 
-![sasso](assets/sase.png)
+![sase](assets/sase.png)
 
-Il pacchetto di compatibilità dispone di due modalità: **Routing abilitato** e **Routing disattivato**.
+Il pacchetto di compatibilità prevede due modalità: **Indirizzamento abilitato** e **Indirizzamento disabilitato**.
 
 Questo consente di eseguire AEM 6.5 in tre modalità:
 
 **Modalità nativa:**
 
-La modalità nativa è per i clienti che desiderano utilizzare tutte le nuove funzioni di AEM 6.5 e sono pronti a svolgere alcune attività di sviluppo per far sì che le loro personalizzazioni funzionino con tutte le nuove funzioni.
+La modalità nativa è per i clienti che desiderano utilizzare tutte le nuove funzioni di AEM 6.5 e sono pronti a fare qualche sviluppo per far funzionare le loro personalizzazioni con tutte le nuove funzioni.
 
 Ciò significa che potrebbe essere necessario apportare modifiche all&#39;applicazione immediatamente dopo l&#39;aggiornamento.
 
-**Modalità di compatibilità: Pacchetto di compatibilità installato con Routing abilitato**
+**Modalità di compatibilità: pacchetto di compatibilità installato con il routing abilitato**
 
-La modalità di compatibilità è destinata ai clienti che hanno personalizzazioni di interfacce non compatibili con le versioni precedenti. Questo consente di eseguire AEM in modalità di compatibilità e di differire lo sviluppo personalizzato richiesto rispetto alle nuove funzionalità AEM che non sono compatibili con alcuni dei codici personalizzati.
+La modalità di compatibilità è rivolta ai clienti che dispongono di personalizzazioni di interfacce non compatibili con le versioni precedenti. Questo consente di eseguire AEM in modalità di compatibilità e di posticipare lo sviluppo personalizzato richiesto per le nuove funzionalità AEM non compatibili con alcuni codici personalizzati.
 
-**Modalità legacy: Pacchetto di compatibilità installato con Routing disabilitato**
+**Modalità legacy: pacchetto di compatibilità installato con routing disabilitato**
 
-La modalità legacy è destinata ai clienti con interfacce personalizzate basate su codice legacy o obsoleto di AEM che è stato spostato nel pacchetto di compatibilità.
+La modalità legacy è destinata ai clienti che dispongono di interfacce personalizzate basate su codice legacy o obsoleto proveniente da AEM che è stato spostato all’esterno del pacchetto di compatibilità.
 
-![sapone](assets/sapte.png)
+![sapte](assets/sapte.png)
 
 ## Configurazione {#how-to-set-up}
 
-La **Pacchetto di compatibilità AEM 6.4 per 6.5** può essere installato come pacchetto utilizzando Gestione pacchetti. È possibile scaricare [AEM 6.4 Pacchetto di compatibilità per 6.5 dalla Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sito.
+Il **AEM 6.4 Compatability Pack per 6.5** può essere installato come pacchetto utilizzando Gestione pacchetti. È possibile scaricare [AEM 6.4 Compatability Pack per 6.5 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sito.
 
-Una volta installato il pacchetto di compatibilità, il routing può essere abilitato o disabilitato utilizzando un interruttore nella configurazione OSGI come mostrato di seguito:
+Una volta installato il pacchetto di compatibilità, il routing può essere abilitato o disabilitato utilizzando uno switch nella configurazione OSGI, come illustrato di seguito:
 
-![Interruttori](assets/compat-switches.png)
+![Opzioni compatibilità](assets/compat-switches.png)
 
 Una volta installato e configurato il pacchetto di compatibilità, le funzioni verranno utilizzate in base alla modalità di compatibilità scelta.

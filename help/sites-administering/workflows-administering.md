@@ -23,7 +23,7 @@ La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione d
 
 >[!NOTE]
 >
->La [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
+>Il [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
 
 Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
 
@@ -99,7 +99,7 @@ Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Err
 
 * **Dettagli errore**
 Apre una finestra per visualizzare 
-**Messaggio di errore**, **Passaggio** e **Stack errori**.
+**Messaggio di errore**, **Passaggio**, e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
@@ -120,11 +120,11 @@ Per approfondire gli errori, quindi riprendere o terminare il flusso di lavoro i
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-Configura **Configurazione di eliminazione del flusso di lavoro di Adobe Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e al loro stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
+Configura **Adobe configurazione eliminazione flusso di lavoro Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e al loro stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
 
 Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando restano in esecuzione per molto più tempo del tempo previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
 
-Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
+Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sit
   <tr>
    <td>Modelli da eliminare</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>ID dei modelli di flusso di lavoro da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> <p>Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> </td>
+   <td><p>ID dei modelli di flusso di lavoro da eliminare. L’ID è il percorso del nodo del modello, ad esempio:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> <p>Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> </td>
   </tr>
   <tr>
    <td>Età del flusso di lavoro</td>
@@ -172,7 +172,7 @@ Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sit
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
-Puoi impostare la dimensione massima della casella in entrata configurando la **Servizio flusso di lavoro di Adobe Granite**, utilizzando [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
+È possibile impostare la dimensione massima della casella in entrata configurando **Servizio flusso di lavoro Adobe Granite**, utilizzando [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ Puoi impostare la dimensione massima della casella in entrata configurando la **
 
 ## Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente {#using-workflow-variables-customer-datastore}
 
-I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione fornita da Adobe (JCR). Per loro natura tali dati possono essere sensibili. È possibile salvare tutti i metadati/dati definiti dall’utente nel tuo spazio di archiviazione personale anziché nell’archiviazione fornita da Adobe. Queste sezioni descrivono come impostare queste variabili per lo storage esterno.
+I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione fornita da Adobe (JCR). Per loro natura tali dati possono essere sensibili. È possibile salvare tutti i metadati/dati definiti dall’utente nel tuo spazio di archiviazione personale anziché nell’archiviazione fornita da Adobe. Queste sezioni descrivono come impostare queste variabili per l’archiviazione esterna.
 
 ### Impostare il modello per l’utilizzo dell’archiviazione esterna dei metadati {#set-model-for-external-storage}
 

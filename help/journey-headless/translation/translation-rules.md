@@ -96,6 +96,6 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM headless
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si consiglia di passare alla parte successiva del percorso di traduzione headless rivedendo il documento [Tradurre il contenuto](translate-content.md)Di seguito sono riportate alcune risorse aggiuntive facoltative che consentono di approfondire alcuni concetti menzionati in questo documento, ma non è necessario che continuino nel percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless esaminando il documento [Traduci contenuto](translate-content.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
 
 * [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.

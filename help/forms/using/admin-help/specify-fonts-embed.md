@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Specificare i font da incorporare{#specify-fonts-to-embed}
 
-È possibile specificare i font sempre incorporati o mai incorporati nei moduli utilizzati da Output. L’incorporazione di font aumenta le dimensioni del file dei moduli. Incorpora font insoliti che gli utenti non hanno sul loro sistema e non incorporano font comuni che avranno installato.
+È possibile specificare quali tipi di carattere devono essere sempre incorporati o non incorporati con i moduli utilizzati dall&#39;output. L&#39;incorporamento di caratteri aumenta le dimensioni dei file dei moduli. Incorpora font insoliti che gli utenti non avranno probabilmente sui loro sistemi e non incorpora font comuni che avranno installato.
 
 >[!NOTE]
 >
->Se per Output è stato specificato un file XCI personalizzato, l&#39;opzione di font da incorporare nel file XCI sostituisce queste impostazioni. (Vedi [Specificare le posizioni dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>Se è stato specificato un file XCI personalizzato per l&#39;output, l&#39;opzione incorpora font nel file XCI ignora queste impostazioni. (vedere [Specificare i percorsi dei file per l&#39;output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 
 1. Nella console di amministrazione, fai clic su Servizi > output.
-1. Nella casella Incorpora sempre font digitare i nomi dei font da incorporare nei moduli, separati da virgole. I font specificati vengono incorporati nel modulo generato solo se utilizzati nel modulo. Questa impostazione viene ignorata se l’opzione di font da incorporare è stata attivata nel file XCI passato al servizio. In tal caso, tutti i font utilizzati in PDF sono sempre incorporati.
-1. Nella casella Non incorporare font digitare i nomi dei font da non incorporare nei moduli, separati da virgole. I font specificati non sono incorporati in PDF, anche se sono utilizzati nel PDF generato. Questa impostazione viene ignorata se l’opzione di font da incorporare è stata disattivata nel file XCI passato al servizio. In tal caso, nessuno dei font utilizzati in PDF è incorporato.
+1. Nella casella Incorpora sempre caratteri della casella Impostazioni incorporamento caratteri digitare i nomi dei caratteri da incorporare con i moduli, separati da virgole. I tipi di carattere specificati vengono incorporati nel modulo generato solo se vengono utilizzati nel modulo. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata attivata nel file XCI passato al servizio. In tal caso, tutti i font utilizzati nel PDF vengono sempre incorporati.
+1. Nella casella Non incorporare mai i tipi di carattere digitare i nomi dei tipi di carattere da non incorporare con i moduli, separati da virgole. I font specificati non sono incorporati nel PDF, anche se sono utilizzati nel PDF generato. Questa impostazione viene ignorata se l&#39;opzione incorpora font è stata disattivata nel file XCI passato al servizio. In tal caso, nessuno dei tipi di carattere utilizzati nel PDF è incorporato.
 1. Fai clic su Salva.

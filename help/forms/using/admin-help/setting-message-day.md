@@ -1,7 +1,7 @@
 ---
 title: Impostazione del messaggio del giorno
 seo-title: Setting the message of the day
-description: Il messaggio del giorno consente di impostare un messaggio da visualizzare nella pagina Benvenuto nell’interfaccia utente di Workspace.
+description: Il messaggio del giorno consente di impostare un messaggio da visualizzare nella pagina di benvenuto nell’interfaccia utente di Workspace.
 seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
 uuid: 9c664438-6fc0-498e-bb3f-4c6bcb9414a7
 contentOwner: admin
@@ -19,30 +19,30 @@ ht-degree: 1%
 
 # Impostazione del messaggio del giorno {#setting-the-message-of-the-day}
 
-Puoi impostare un messaggio da visualizzare nella pagina Benvenuto nell’interfaccia utente di Workspace.
+È possibile impostare un messaggio da visualizzare nella pagina di benvenuto dell&#39;interfaccia utente di Workspace.
 
 Se necessario, è possibile utilizzare i tag HTML supportati da Adobe Flash® Player per formattare l&#39;aspetto del testo:
 
 * &lt;a> Tag ancoraggio
-* &lt;b> Grassetto
-* &lt;br> Tag break
-* &lt;font> Tag carattere
+* &lt;b> Tag grassetto
+* &lt;br> Interrompi tag
+* &lt;font> Tag font
 * &lt;img> Tag immagine
 * &lt;i> Tag corsivo
-* &lt;li> Tag elemento elenco
+* &lt;li> Tag voce di elenco
 * &lt;p> Tag paragrafo
-* &lt;span> Tag Span
-* &lt;textformat> Tag del formato testo
-* &lt;u> Tag sottolineato
+* &lt;span> Estendi tag
+* &lt;textformat> Tag formato testo
+* &lt;u> Sottolinea tag
 
-Per ulteriori informazioni sui tag supportati, consulta la definizione della `htmlText` per la classe TextField nel [Riferimento lingua di Flex](https://flex.apache.org/).
+Per ulteriori informazioni sui tag supportati, consulta la definizione di `htmlText` proprietà per la classe TextField in [Guida di riferimento di Flex](https://flex.apache.org/).
 
 ## Imposta il messaggio del giorno {#set-the-message-of-the-day}
 
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Messaggio del giorno.
-1. Nella casella Messaggio del giorno, specificare il testo da visualizzare nella schermata di benvenuto.
+1. Nella casella Messaggio del giorno specificare il testo da visualizzare nella schermata iniziale.
 1. Fai clic su Salva.
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per AEM versione dei moduli.
+>Flex Workspace è obsoleto per la versione con moduli AEM.

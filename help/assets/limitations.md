@@ -1,6 +1,6 @@
 ---
 title: Limiti di Dynamic Media
-description: Scopri le best practice e i limiti applicati quando crei un set di immagini o un set 360 gradi o carichi un PDF. Scopri anche le combinazioni non supportate di browser web e sistemi operativi per Dynamic Media.
+description: Scopri le best practice e i limiti applicati quando crei un set di immagini o un set 360 gradi o carichi un PDF. Scopri anche le combinazioni di browser web e sistemi operativi non supportate per Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -17,18 +17,18 @@ ht-degree: 3%
 
 # Limitazioni di Dynamic Media
 
-Le sezioni seguenti descrivono le limitazioni in Dynamic Media.
+Le sezioni seguenti descrivono le limitazioni di Dynamic Media.
 
 Questo argomento include le sezioni seguenti:
 
-* [Best practice e limiti applicati da Dynamic Media sui tipi di risorse](#best-practice-enforced-limits)
-* [Combinazioni di browser web e sistemi operativi non supportate per Dynamic Media](#unsupported-browser-os)
+* [Best practice e limiti applicati da Dynamic Media ai tipi di risorse](#best-practice-enforced-limits)
+* [Combinazioni di browser Web e sistemi operativi non supportate per Dynamic Media](#unsupported-browser-os)
 
-## Best practice e limiti applicati da Dynamic Media sui tipi di risorse {#best-practice-enforced-limits}
+## Best practice e limiti applicati da Dynamic Media ai tipi di risorse {#best-practice-enforced-limits}
 
-Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazione della pagina, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
+Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazione di pagine, l’Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite imposto |
+| Risorsa - Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 |
 | **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 |
@@ -38,14 +38,14 @@ Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazio
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Combinazioni di browser web e sistemi operativi non supportate per Dynamic Media {#unsupported-browser-os}
+## Combinazioni di browser Web e sistemi operativi non supportate per Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media non supporta le seguenti combinazioni di browser Web e sistemi operativi.
+Dynamic Media non supporta le seguenti combinazioni di browser web e sistemi operativi.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Aggiornamento di Internet Explorer 11 + Windows Phone 8.1
+* Aggiornamento Internet Explorer 11 + Windows Phone 8.1
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
 * Safari 7 + OS X 10.9 Mavericks

@@ -1,5 +1,5 @@
 ---
-title: Promozione lanci
+title: Promuovi lanci
 description: Promuovi le pagine di lancio per spostare nuovamente il contenuto nell’origine (produzione) prima della pubblicazione.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
@@ -19,16 +19,16 @@ ht-degree: 26%
 
 # Promozione dei lanci{#promoting-launches}
 
-È necessario promuovere le pagine di lancio per spostare nuovamente il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando si promuove una pagina di lancio sono disponibili le seguenti opzioni:
+È necessario promuovere le pagine di lancio per spostare nuovamente il contenuto nell’origine (produzione) prima di pubblicarlo. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Durante la promozione di una pagina di lancio sono disponibili le seguenti opzioni:
 
-* Promuovere solo la pagina corrente o l’intero lancio.
-* Promuovere le pagine figlie della pagina corrente.
-* Promuovere il lancio completo o solo le pagine che sono state modificate.
-* Se eliminare il lancio dopo la promozione.
+* Indica se promuovere solo la pagina corrente o l’intero lancio.
+* Indica se promuovere le pagine figlie della pagina corrente.
+* Indica se promuovere l’intero lancio o solo le pagine che sono state modificate.
+* Se eliminare il lancio dopo essere stato promosso.
 
 >[!NOTE]
 >
->Dopo aver promosso le pagine di lancio al target (**Produzione**), puoi attivare la **Produzione** come entità (per velocizzare il processo). Aggiungi le pagine a un pacchetto di flusso di lavoro e utilizzalo come payload per un flusso di lavoro che attiva un pacchetto di pagine. Devi creare il pacchetto del flusso di lavoro prima di promuovere il lancio. Vedi [Elaborazione di pagine promosse tramite AEM flusso di lavoro](#processing-promoted-pages-using-aem-workflow).
+>Dopo aver promosso le pagine di lancio nella destinazione (**Produzione**), è possibile attivare **Produzione** pagine come entità (per velocizzare il processo). Aggiungi le pagine a un pacchetto di flusso di lavoro e utilizzalo come payload per un flusso di lavoro che attiva un pacchetto di pagine. Devi creare il pacchetto del flusso di lavoro prima di promuovere il lancio. Consulta [Elaborazione di pagine promosse tramite flusso di lavoro AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -36,31 +36,31 @@ ht-degree: 26%
 
 >[!CAUTION]
 >
->Quando promuovi i lanci per *Modificata* vengono considerate le modifiche apportate ai rami sorgente e lancio.
+>Durante la promozione dei lanci per *modificato* , vengono considerate le modifiche nei rami sorgente e lancio.
 
 ## Promozione delle pagine di lancio {#promoting-launch-pages}
 
 >[!NOTE]
 >
->Questo copre l’azione manuale per promuovere le pagine di lancio quando esiste un solo livello di lancio. Consulta:
+>In questo modo viene illustrata l’azione manuale di promozione delle pagine di lancio quando è presente un solo livello di lancio. Consulta:
 >
->* [Promozione di un lancio nidificato](#promoting-a-nested-launch) quando la struttura contiene più di un lancio.
->* [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per ulteriori dettagli sulla promozione e la pubblicazione automatica.
+>* [Promozione di un lancio nidificato](#promoting-a-nested-launch) quando nella struttura è presente più di un lancio.
+>* [Lanci: l’ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per maggiori dettagli sulla promozione e la pubblicazione automatiche.
 >
 
 
-Puoi promuovere i lanci da **Sites** o **Lanci** console:
+Puoi promuovere i lanci da **Sites** console o **Lanci** console:
 
 1. Apri:
 
-   * la **Sites** console:
+   * il **Sites** console:
 
       1. Apri la [barra dei riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Verranno visualizzati tutti i riferimenti.
 
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
-   * la **Lanci** console:
+   * il **Lanci** console:
 
       1. Seleziona il lancio (tocca o fai clic sulla miniatura).
       1. Seleziona **Promuovi**.
@@ -84,7 +84,7 @@ Puoi promuovere i lanci da **Sites** o **Lanci** console:
 
    >[!NOTE]
    >
-   >Questo copre un singolo lancio, se hai lanci nidificati vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
+   >In questo modo viene coperto un singolo lancio. Se hai dei lanci nidificati, vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
 
 1. Seleziona **Successivo** per procedere.
 1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
@@ -93,36 +93,36 @@ Puoi promuovere i lanci da **Sites** o **Lanci** console:
 
 1. Seleziona **Promuovi**.
 
-## Promozione delle pagine di lancio durante la modifica {#promoting-launch-pages-when-editing}
+## Promozione delle pagine di Launch durante la modifica {#promoting-launch-pages-when-editing}
 
-Quando modifichi una pagina di lancio, la **Promuovi lancio** l&#39;azione è disponibile anche da **Informazioni pagina**. Si aprirà la procedura guidata per raccogliere le informazioni necessarie.
+Quando modifichi una pagina di lancio, il **Promuovi lancio** L&#39;azione è disponibile anche da **Informazioni pagina**. Si aprirà la procedura guidata per raccogliere le informazioni necessarie.
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->È disponibile per [lanci nidificati](#promoting-a-nested-launch).
+>Questo è disponibile per singoli e [lanci nidificati](#promoting-a-nested-launch).
 
 ## Promozione di un lancio nidificato {#promoting-a-nested-launch}
 
-Dopo aver creato un lancio nidificato, puoi promuoverlo di nuovo in una qualsiasi delle sorgenti, inclusa la sorgente principale (produzione).
+Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi origine, inclusa la sorgente principale (produzione).
 
 ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Come con [Creazione di un lancio nidificato](#creatinganestedlaunchlaunchwithinalaunch), individua e seleziona il lancio richiesto nel **Lanci** o **Riferimenti** barra.
+1. Come con [Creazione di un lancio nidificato](#creatinganestedlaunchlaunchwithinalaunch), accedi e seleziona il lancio richiesto nel **Lanci** console o **Riferimenti** barra.
 1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
 
 1. Immetti i dettagli necessari:
 
    * **Destinazione**
 
-      * **Obiettivo della promozione**
-Puoi promuovere a qualsiasi fonte.
+      * **Destinazione della promozione**
+Puoi promuovere su qualsiasi sorgente.
 
       * **Elimina lancio dopo la promozione**
-Dopo la promozione del lancio selezionato e degli eventuali lanci nidificati al suo interno, verrà eliminato.
+Dopo la promozione, il lancio selezionato e tutti i lanci nidificati al suo interno verranno eliminati.
    * **Ambito**
-Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state effettivamente modificate. In quest’ultimo caso, puoi selezionare per includere/escludere le pagine secondarie. La configurazione predefinita consiste nel promuovere solo le modifiche alla pagina corrente:
+Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state modificate. In quest’ultimo caso, puoi selezionare di includere/escludere le sottopagine. La configurazione predefinita prevede di promuovere solo le modifiche alla pagina corrente:
 
       * **Promuovi tutto il lancio**
       * **Promuovi pagine modificate**
@@ -138,9 +138,9 @@ Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono sta
 
    >[!NOTE]
    >
-   >Le pagine elencate dipendono dal **Ambito** e le pagine effettivamente modificate.
+   >Le pagine elencate dipendono dal **Ambito** definite ed eventualmente le pagine che sono state modificate.
 
-1. Le modifiche verranno promosse e riportate nella **Lanci** console:
+1. Le modifiche verranno promosse e riflesse in **Lanci** console:
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -148,11 +148,11 @@ Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono sta
 
 Utilizza i modelli di flusso di lavoro per eseguire l’elaborazione in blocco delle pagine dei lanci promossi:
 
-1. Crea un pacchetto di flusso di lavoro.
-1. Quando gli autori promuovono le pagine Launch, le memorizzano nel pacchetto del flusso di lavoro.
+1. Creare un pacchetto di flusso di lavoro.
+1. Quando gli autori promuovono le pagine di Launch, le memorizzano nel pacchetto del flusso di lavoro.
 1. Avvia un modello di flusso di lavoro utilizzando il pacchetto come payload.
 
-Per avviare automaticamente un flusso di lavoro quando vengono promosse le pagine, [configurare un modulo di avvio del flusso di lavoro](/help/sites-administering/workflows-starting.md#workflows-launchers) per il nodo del pacchetto.
+Per avviare automaticamente un flusso di lavoro quando le pagine vengono promosse, [configurare un modulo di avvio del flusso di lavoro](/help/sites-administering/workflows-starting.md#workflows-launchers) per il nodo del pacchetto.
 
 Ad esempio, puoi generare automaticamente le richieste di attivazione pagina non appena un autore promuove una pagina di lancio. Configura un modulo di avvio del flusso di lavoro per avviare il flusso di lavoro Attivazione richiesta quando viene modificato il nodo del pacchetto.
 

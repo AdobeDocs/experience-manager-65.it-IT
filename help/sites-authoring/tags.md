@@ -18,9 +18,9 @@ ht-degree: 70%
 
 # Utilizzo dei tag{#using-tags}
 
-I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati parole chiave o etichette da allegare a una pagina, a una risorsa o ad altro contenuto per consentire la ricerca di tale contenuto e del relativo contenuto.
+I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette che possono essere allegate a una pagina, una risorsa o altro contenuto per consentire alle ricerche di trovarlo e contenuto correlato.
 
-* Vedi [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati.
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, vedi [Tagging per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
@@ -34,21 +34,21 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 1. **Abilitazione SEO**: i tag applicati come proprietà della pagina vengono visualizzati automaticamente nei metatag della pagina, rendendola visibile ai motori di ricerca.
 1. **Funzionalità sofisticate e al contempo semplici**: per creare i tag, basta selezionare una parola e fare clic su un pulsante. In seguito, è possibile aggiungere un titolo, una descrizione ed etichette illimitate per fornire ulteriore semantica al tag.
 1. **Coerenza di base**: il sistema di assegnazione tag è un componente di base di AEM ed è utilizzato in tutte le funzioni AEM per la classificazione dei contenuti. Inoltre, per gli sviluppatori è disponibile l’API di assegnazione tag che consente di creare applicazioni abilitate per l’assegnazione tag con accesso alle stesse tassonomie.
-1. **Struttura e flessibilità**: AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È altrettanto potente quando si lavora con informazioni non strutturate, a causa della ricerca full-text integrata. L’assegnazione tag combina i punti di forza sia della struttura che della flessibilità.
+1. **Struttura e flessibilità**: AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È ugualmente efficace quando si lavora con informazioni non strutturate, grazie alla ricerca full-text integrata. L’assegnazione tag combina i punti di forza sia della struttura che della flessibilità.
 
-Durante la progettazione della struttura del contenuto per un sito e dello schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dall’assegnazione di tag.
+Durante la progettazione della struttura del contenuto di un sito e dello schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dall’assegnazione tag.
 
 ## Applicazione dei tag   {#applying-tags}
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** utilizza la finestra **Tag** e **Seleziona tag** finestra. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
+Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** finestra utilizza **Tag** e **Seleziona tag** finestra. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
 
-![Selezionare la finestra Tag; utilizza il pulsante X per deselezionare i tag selezionati](assets/chlimage_1-41.png)
+![Finestra Seleziona tag; utilizza il pulsante X per deselezionare i tag attualmente selezionati](assets/chlimage_1-41.png)
 
 ### Pubblicazione dei tag {#publishing-tags}
 
-Come per le pagine, è possibile eseguire le seguenti operazioni su tag e namespace:
+Come per le pagine, è possibile eseguire le operazioni seguenti su tag e spazi dei nomi:
 
 **Attiva**
 
@@ -58,7 +58,7 @@ Come per le pagine, è possibile eseguire le seguenti operazioni su tag e namesp
 
 >[!NOTE]
 >
->Quando si attiva una pagina, si apre automaticamente una finestra di dialogo che consente di attivare i tag non attivati appartenenti alla pagina.
+>Quando si attiva una pagina, viene automaticamente aperta una finestra di dialogo che consente di attivare i tag non attivati appartenenti alla pagina.
 
 **Disattiva**
 

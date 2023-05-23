@@ -1,6 +1,6 @@
 ---
 title: Informazioni sulla gestione delle risorse Dynamic Media
-description: Scopri come utilizzare le risorse Dynamic Media
+description: Scopri come utilizzare le risorse di Dynamic Media
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -19,15 +19,15 @@ ht-degree: 14%
 
 # Informazioni sulla gestione delle risorse Dynamic Media {#managing-assets}
 
-La gestione delle risorse Dynamic Media (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
+La gestione delle risorse Dynamic Media (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui la visualizzazione in anteprima, il download o la pubblicazione.
 
-Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Vedi [Applicazione dei predefiniti per visualizzatori](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti per immagini](/help/assets/image-sets.md).
+In anteprima, potete anche applicare i predefiniti immagine (solo per le immagini) o i predefiniti visualizzatore (per video e immagini). Non è possibile applicare entrambe le opzioni a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](/help/assets/viewer-presets.md) e [Applicazione dei predefiniti immagine](/help/assets/image-sets.md).
 
-Informazioni generali sulla gestione delle risorse sono disponibili in [Gestire le risorse](/help/assets/manage-assets.md).
+Le informazioni generali sulla gestione delle risorse si trovano in [Gestione risorse](/help/assets/manage-assets.md).
 
-I seguenti argomenti descrivono come gestire le risorse Dynamic Media:
+Gli argomenti seguenti descrivono come gestire le risorse Dynamic Media:
 
 * [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](/help/assets/previewing-assets.md)
-* [Pubblicazione delle risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
+* [Pubblicazione di risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
 * [Utilizzo dei selettori](/help/assets/working-with-selectors.md)

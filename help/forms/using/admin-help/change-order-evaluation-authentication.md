@@ -1,7 +1,7 @@
 ---
-title: Modificare l'ordine di valutazione per l'autenticazione
+title: Modifica dell’ordine di valutazione per l’autenticazione
 seo-title: Change the order of evaluation for authentication
-description: È possibile modificare l’ordine in cui AEM moduli valuta più provider di autenticazione.
+description: È possibile modificare l'ordine in cui i moduli AEM valutano più provider di autenticazione.
 seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ---
 
-# Modificare l&#39;ordine di valutazione per l&#39;autenticazione {#change-the-order-of-evaluation-for-authentication}
+# Modifica dell’ordine di valutazione per l’autenticazione {#change-the-order-of-evaluation-for-authentication}
 
-Se hai configurato più provider di autenticazione, puoi modificare l’ordine in cui AEM moduli li valuta per l’autenticazione. L&#39;ordine dei provider di autenticazione elencati nel file config.xml determina l&#39;ordine di valutazione per l&#39;autenticazione.
+Se sono stati configurati più provider di autenticazione, è possibile modificare l&#39;ordine di valutazione dei moduli AEM per l&#39;autenticazione. L&#39;ordine dei provider di autenticazione elencati nel file config.xml determina l&#39;ordine di valutazione per l&#39;autenticazione.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Per esportare l&#39;impostazione di configurazione corrente in un file, fare clic su Esporta e salvare il file di configurazione in un&#39;altra posizione.
-1. Trova il seguente nodo nel file :
+1. Trova il seguente nodo nel file:
 
    ```xml
     <node name="AuthSchemes">
@@ -43,7 +43,7 @@ Se hai configurato più provider di autenticazione, puoi modificare l’ordine i
     </node>
    ```
 
-   In `<entry key="order" value="3" />`, modifica il valore di ogni nodo per impostare l’ordine della valutazione dell’autenticazione.
+   In entrata `<entry key="order" value="3" />`, modifica il valore di ciascun nodo per impostare l’ordine della valutazione dell’autenticazione.
 
-1. Per importare il file aggiornato, in Gestione utente fare clic su Configurazione > Importa ed esporta file di configurazione.
-1. Fare clic su Sfoglia per trovare il file, fare clic su Importa e quindi su OK.
+1. Per importare il file aggiornato, in Gestione utenti, fare clic su Configurazione > Importa ed esporta file di configurazione.
+1. Fare clic su Sfoglia per trovare il file, su Importa e quindi su OK.

@@ -1,7 +1,7 @@
 ---
 title: Specificare le impostazioni di protezione
 seo-title: Specify security settings
-description: Scopri come specificare le impostazioni di protezione.
+description: Scopri come specificare le impostazioni di sicurezza.
 seo-description: Learn how to specify security settings.
 uuid: c86ba195-010d-40d6-9f9d-4cb4c364d104
 contentOwner: admin
@@ -19,10 +19,10 @@ ht-degree: 2%
 
 # Specificare le impostazioni di protezione {#specify-security-settings}
 
-L&#39;output consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita sono risolti, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema dei moduli AEM.
+L&#39;output consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita, sono risolti, ma puoi modificare questo comportamento per aumentare la sicurezza del sistema AEM forms.
 
-**Impedisci l’elaborazione di file di dati XML contenenti riferimenti a entità esterne**
+**Impedisci l&#39;elaborazione di file di dati XML contenenti riferimenti a entità esterne**
 
 1. Nella console di amministrazione, fai clic su Servizi > output.
-1. Deseleziona la casella di controllo Risolvi entità esterne .
+1. Deselezionate la casella di controllo Risolvi entità esterne (Resolve External Entities).
 1. Fai clic su Salva.

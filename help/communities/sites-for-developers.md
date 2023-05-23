@@ -21,14 +21,14 @@ ht-degree: 2%
 
 ## Modello di sito personalizzato {#custom-site-template}
 
-Un modello di sito personalizzato può essere specificato separatamente per ogni copia in lingua di un sito community.
+Un modello di sito personalizzato può essere specificato separatamente per ogni copia per lingua di un sito community.
 
 Per eseguire questa operazione:
 
 * Crea un modello personalizzato.
-* Sovrapponi il percorso predefinito del modello di sito.
+* Sovrapponi il percorso predefinito del modello del sito.
 * Aggiungi il modello personalizzato al percorso di sovrapposizione.
-* Specifica il modello personalizzato aggiungendo un `page-template` della proprietà `configuration` nodo.
+* Specificare il modello personalizzato aggiungendo un `page-template` proprietà per il `configuration` nodo.
 
 **Modello predefinito**:
 
@@ -38,7 +38,7 @@ Per eseguire questa operazione:
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Proprietà**: modello a pagina
+**Proprietà**: modello pagina
 
 **Tipo**: Stringa
 
@@ -56,11 +56,11 @@ Esempio: `/content/sites/engage/en/configuration`
 
 >[!CAUTION]
 >
->Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, tutti i siti della community verranno personalizzati.
+>Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, quindi tutti i siti della community verranno personalizzati.
 
 ### Esempio di modello di sito personalizzato {#custom-site-template-example}
 
-Ad esempio, `vertical-sitepage.hbs` è un modello di sito che consente di posizionare i collegamenti del menu verticalmente lungo il lato sinistro della pagina, anziché orizzontalmente sotto il banner.
+Ad esempio: `vertical-sitepage.hbs` è un modello di sito che determina il posizionamento di collegamenti di menu in verticale lungo il lato sinistro della pagina, invece che in orizzontale sotto il banner.
 
 [Ottieni file](assets/vertical-sitepage.hbs)
 Posiziona il modello di sito personalizzato nella cartella di sovrapposizione:
@@ -71,39 +71,39 @@ Identificare il modello personalizzato aggiungendo un `page-template` al nodo di
 
 `/content/sites/sample/en/configuration`
 
-![configurazione crxde-siteconfigurazione](assets/crxde-siteconfiguration.png)
+![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Assicurati di **Salva tutto** e replica il codice personalizzato in tutte le istanze AEM (il codice personalizzato non è incluso quando il contenuto del sito community viene pubblicato dalla console).
+Assicurati di **Salva tutto** e replica il codice personalizzato in tutte le istanze AEM (il codice personalizzato non viene incluso quando il contenuto del sito community viene pubblicato dalla console).
 
-La procedura consigliata per la replica del codice personalizzato è la seguente: [creare un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) e distribuiscila su tutte le istanze.
+La procedura consigliata per la replica del codice personalizzato è [creare un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) e distribuirlo su tutte le istanze.
 
 ## Esportazione di un sito community {#exporting-a-community-site}
 
-Una volta creato un sito community, è possibile esportare il sito come pacchetto AEM memorizzato in package manager e disponibile per il download e il caricamento.
+Una volta creato un sito community, è possibile esportarlo come pacchetto AEM memorizzato in Gestione pacchetti e disponibile per il download e il caricamento.
 
-È disponibile dal [Console Sites di Communities](sites-console.md#exporting-the-site).
+È disponibile dal sito [Console Siti community](sites-console.md#exporting-the-site).
 
-Il codice UGC e personalizzato non è incluso nel pacchetto del sito community.
+Tieni presente che UGC e codice personalizzato non sono inclusi nel pacchetto per il sito community.
 
-Per esportare gli UGC, utilizza il [Strumento di migrazione UGC di AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uno strumento di migrazione open source disponibile su GitHub.
+Per esportare UGC, utilizza [Strumento di migrazione UGC per AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), strumento di migrazione open source disponibile su GitHub.
 
 ## Eliminazione di un sito community {#deleting-a-community-site}
 
-A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene visualizzata quando si passa il mouse sul sito della community da **[!UICONTROL Community]** > **[!UICONTROL Sites]** console. Durante lo sviluppo, puoi utilizzare questa funzionalità se desideri eliminare un sito community e iniziare da zero. Quando si elimina un sito community, vengono rimossi i seguenti elementi associati a tale sito:
+In AEM Communities 6.3 Service Pack 1, l’icona Elimina sito viene visualizzata passando il puntatore del mouse sul sito community da **[!UICONTROL Community]** > **[!UICONTROL Sites]** console. Durante lo sviluppo, se si desidera eliminare un sito community e ricominciare da capo, è possibile utilizzare questa funzionalità. Quando si elimina un sito community, vengono rimossi i seguenti elementi associati a tale sito:
 
 * [UGC](#user-generated-content)
 * [Gruppi di utenti](#community-user-groups)
-* [Record del database](#database-records)
+* [Record di database](#database-records)
 
-### ID sito univoco della community {#community-unique-site-id}
+### ID sito univoco community {#community-unique-site-id}
 
-Per identificare l&#39;ID univoco del sito associato al sito community, utilizzando CRXDE:
+Per identificare l&#39;ID sito univoco associato al sito community, utilizzando CRXDE:
 
-* Passa alla directory principale della lingua del sito, ad esempio `/content/sites/*<site name>*/en/rep:policy`.
+* Passa alla lingua root del sito, ad esempio `/content/sites/*<site name>*/en/rep:policy`.
 
 * Trova il `allow<#>` nodo con un `rep:principalName` in questo formato `rep:principalName = *community-enable-nrh9h-members*`.
 
-* L&#39;ID sito è il terzo componente di `rep:principalName`
+* L’ID sito è il terzo componente di `rep:principalName`
 
    Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
 
@@ -113,23 +113,23 @@ Per identificare l&#39;ID univoco del sito associato al sito community, utilizza
 
 ### Contenuto generato dall&#39;utente {#user-generated-content}
 
-Ottieni il progetto communities-srp-tools da Github:
+Ottieni il progetto Communities-srp-tools da Github:
 
 * [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
 
-Questo contiene un servlet per eliminare tutti gli UGC da qualsiasi SRP.
+Contiene un servlet per eliminare tutti i contenuti generati dagli utenti (UGC, User-Generated Content) da qualsiasi SRP.
 
-Tutti gli UGC possono essere rimossi o per un sito specifico, ad esempio:
+Tutti i contenuti UGC possono essere rimossi o per un sito specifico, ad esempio:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Questo rimuove solo il contenuto generato dall’utente (inserito al momento della pubblicazione) e non il contenuto creato (inserito all’autore). Pertanto, [nodi ombra](srp.md#shadownodes) non sono interessati.
+Questo rimuove solo i contenuti generati dall’utente (immessi al momento della pubblicazione) e non quelli creati (immessi al momento dell’authoring). Pertanto, [nodi shadow](srp.md#shadownodes) non sono interessati.
 
-### Gruppi di utenti della community {#community-user-groups}
+### Gruppi di utenti community {#community-user-groups}
 
-Per tutte le istanze di authoring e pubblicazione, dalla [console di sicurezza](../../help/sites-administering/security.md), individuare e rimuovere [gruppi di utenti](users.md) che sono:
+In tutte le istanze di authoring e pubblicazione, da [console di sicurezza](../../help/sites-administering/security.md), individuare e rimuovere [gruppi di utenti](users.md) che sono:
 
-* Prefisso con `community`
+* Con prefisso `community`
 * Seguito da [id sito univoco](#community-unique-site-id)
 
 Esempio: `community-engage-x0e11-members`.

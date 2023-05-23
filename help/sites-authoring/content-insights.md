@@ -1,7 +1,7 @@
 ---
 title: Approfondimenti contenuto
 seo-title: Content Insight
-description: Gli Approfondimenti contenuto forniscono informazioni sulle prestazioni della pagina mediante l’analisi del web e dei consigli SEO
+description: Content Insight fornisce informazioni sulle prestazioni delle pagine utilizzando analisi web e consigli SEO (Search Engine Optimization)
 seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
@@ -13,88 +13,88 @@ exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 97%
+ht-degree: 2%
 
 ---
 
 # Approfondimenti contenuto{#content-insight}
 
-La funzione Approfondimenti contenuto fornisce informazioni sulle prestazioni della pagina tramite analisi web e consigli SEO. Utilizza Approfondimenti contenuto per prendere decisioni su come modificare le pagine o per scoprire come le modifiche precedenti hanno influito sulle prestazioni. Per ogni pagina creata, puoi aprire Approfondimenti contenuto per analizzarla.
+Content Insight fornisce informazioni sulle prestazioni della pagina utilizzando l’analisi web e i consigli SEO (Search Engine Optimization). Utilizza Content Insight per prendere decisioni su come modificare le pagine o per scoprire in che modo le modifiche precedenti hanno cambiato le prestazioni. Per ogni pagina creata, puoi aprire Content Insight per analizzare la pagina.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-Il layout della pagina Approfondimenti contenuto viene modificato in base alle dimensioni e all’orientamento dello schermo del dispositivo in uso.
+Il layout della pagina Content Insight cambia in base alle dimensioni dello schermo e all’orientamento del dispositivo in uso.
 
-## Dati rapporti
+## Dati del rapporto
 
-La pagina Approfondimenti contenuto include i rapporti che utilizzano i dati di Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
+La pagina Approfondimenti contenuto include rapporti che utilizzano dati di Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
 
-* SiteCatalyst: sono disponibili i rapporti per le seguenti metriche.
+* SiteCatalyst: sono disponibili rapporti per le metriche seguenti:
 
    * Visualizzazioni pagina
    * Tempo medio trascorso sulla pagina
    * Origini
 
-* Target: rapporti sull’attività della campagna per cui la tua pagina include le offerte.
-* BrightEdge: riporta le funzioni della pagina che ne migliorano la visibilità ai motori di ricerca, mostrando le funzioni da implementare.
+* Target: rapporti sull’attività della campagna per la quale la pagina include offerte.
+* BrightEdge: segnala le funzioni della pagina che migliorano la visibilità della pagina ai motori di ricerca e consiglia le funzioni che devono essere implementate.
 
-Vedi [Apertura di Analytics e Consigli per una pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+Consulta [Apertura di Analytics e Recommendations per una pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## Periodo di riferimento
+## Periodo di segnalazione
 
-I rapporti mostrano i dati relativi a un periodo di tempo controllato dall’utente. Quando regoli il periodo di riferimento, i rapporti vengono aggiornati automaticamente con i dati relativi a quel periodo. I segnali visivi indicano il momento in cui le versioni della pagina sono cambiate, in modo da poter confrontare le prestazioni di ogni versione.
+I rapporti mostrano i dati per un periodo di tempo controllato. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente con i dati relativi a tale periodo. I suggerimenti visivi indicano il momento in cui sono cambiate le versioni delle pagine, in modo da poter confrontare le prestazioni di ogni versione.
 
-Puoi anche specificare la granularità dei dati riportati, ad esempio puoi visualizzare dati giornalieri, settimanali, mensili o annuali.
+Puoi anche specificare la granularità dei dati segnalati, ad esempio puoi visualizzare dati giornalieri, settimanali, mensili o annuali.
 
-Vedi [Modifica del periodo di riferimento](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Consulta [Modifica del periodo di reporting](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->I rapporti sugli Approfondimenti contenuto richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Vedi [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con Adobe Target](/help/sites-administering/target.md)e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
+>I rapporti Content Insights richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Consulta [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con Adobe Target](/help/sites-administering/target.md), e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
 
-## Il Rapporto delle visualizzazioni {#the-views-report}
+## Il rapporto Visualizzazioni {#the-views-report}
 
-Il Rapporto delle visualizzazioni include le seguenti funzioni per la valutazione del traffico della pagina:
+Il rapporto Visualizzazioni include le seguenti funzioni per la valutazione del traffico di pagina:
 
-* Il numero totale di visualizzazioni di una pagina per il periodo di reporting.
-* Un grafico del numero di visualizzazioni per tutto il periodo di riferimento:
+* Numero totale di visualizzazioni per una pagina per il periodo di reporting.
+* Un grafico del numero di visualizzazioni nel periodo di reporting:
 
    * Visualizzazioni totali.
    * Visitatori univoci.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Il Rapporto della media di interesse alla pagina {#the-page-average-engaged-report}
+## Rapporto Media pagine coinvolte {#the-page-average-engaged-report}
 
-Il Rapporto della media di interesse alla pagina include le seguenti funzioni per la valutazione dell’efficacia della pagina:
+Il rapporto Media pagine coinvolte include le seguenti funzioni per valutare l’efficacia della pagina:
 
-* Il tempo medio in cui la pagina rimane aperta durante l’intero periodo di riferimento.
-* Un grafico della lunghezza media di una vista alla pagina per tutto il periodo di riferimento.
+* Tempo medio in cui la pagina rimane aperta per l&#39;intero periodo di reporting.
+* Un grafico della lunghezza media di una visualizzazione pagina nel periodo di reporting.
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
-## Il Rapporto origini {#the-sources-report}
+## Rapporto Sorgenti {#the-sources-report}
 
-Il Rapporto origini indica il modo in cui gli utenti sono arrivati alla pagina, ad esempio, dai risultati della ricerca o tramite l’URL noto.
+Il rapporto Sources (Origini) indica il modo in cui gli utenti sono passati alla pagina, ad esempio dai risultati del motore di ricerca o utilizzando l’URL noto.
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
-## Il Rapporto non arrivate a destinazione {#the-bounces-report}
+## Rapporto Rimbalzi {#the-bounces-report}
 
-Il Rapporto non arrivate a destinazione include un grafico che mostra il numero di non arrivate a destinazione che si sono verificati per una pagina durante il periodo di riferimento selezionato.
+Il rapporto Rimbalzi include un grafico che mostra il numero di mancati recapiti verificatisi per una pagina nel periodo di reporting selezionato.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Il rapporto dell’attività della campagna {#the-campaign-activity-report}
+## Rapporto sull’attività della campagna {#the-campaign-activity-report}
 
-Per ogni campagna per cui la pagina è attiva, viene visualizzato un rapporto denominato Attività *Nome campagna*. Il rapporto mostra le impression della pagina e le conversioni per ogni segmento per cui viene attivata un’offerta.
+Per ogni campagna per la quale è attiva la pagina, viene visualizzato un rapporto denominato *Nome campagna* Attività. Il rapporto mostra le impression e le conversioni di pagina per ciascun segmento per il quale viene fornita un’offerta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## Il Rapporto sui consigli SEO {#the-seo-recommendations-report}
+## Il rapporto SEO Recommendations {#the-seo-recommendations-report}
 
-Il Rapporto sui consigli SEO contiene i risultati dell’analisi BrightEdge per la pagina. Il rapporto è una lista di controllo delle funzioni della pagina che indica quali funzioni include o meno la pagina, per massimizzarne la possibilità di essere trovata dai motori di ricerca.
+Il rapporto SEO Recommendations contiene i risultati dell’analisi BrightEdge per la pagina. Il rapporto è un elenco di controllo delle funzioni di pagina che indica quali funzioni la pagina include o meno per massimizzare la reperibilità utilizzando i motori di ricerca.
 
-Il rapporto consente di creare attività in modo da apportare migliorie per migliorare la capacità della pagina di essere trovata. I consigli indicano che le attività sono state create per la loro attuazione. Vedi [Assegnazione delle attività per Consigli SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+Il rapporto consente di creare attività in modo da migliorare la reperibilità delle pagine. Recommendations indica che sono state create attività per l’implementazione del consiglio. Consulta [Assegnazione di attività per SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

@@ -1,7 +1,7 @@
 ---
-title: Creazione di un’azione personalizzata della barra degli strumenti
+title: Creazione di un'azione personalizzata sulla barra degli strumenti
 seo-title: Creating a custom toolbar action
-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in AEM Forms. L’utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
+description: Gli sviluppatori di moduli possono creare azioni della barra degli strumenti personalizzate per i moduli adattivi in AEM Forms. L’utilizzo di azioni personalizzate da parte degli autori di moduli può fornire più flussi di lavoro e opzioni ai loro utenti finali.
 seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
@@ -17,42 +17,42 @@ ht-degree: 0%
 
 ---
 
-# Creazione di un’azione personalizzata della barra degli strumenti{#creating-a-custom-toolbar-action}
+# Creazione di un&#39;azione personalizzata sulla barra degli strumenti{#creating-a-custom-toolbar-action}
 
 ## Prerequisiti {#prerequisite}
 
-Prima di creare un’azione personalizzata della barra degli strumenti, acquisisci familiarità con [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) e [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Prima di creare un’azione personalizzata nella barra degli strumenti, acquisisci familiarità con [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) e [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Azione {#what-is-an-action-br}
+## Che cos’è un’azione {#what-is-an-action-br}
 
 Un modulo adattivo fornisce una barra degli strumenti che consente all’autore del modulo di configurare un set di opzioni. Queste opzioni sono definite come azioni per il modulo adattivo. Fai clic sul pulsante Modifica nella barra degli strumenti del pannello per impostare le azioni supportate dai moduli adattivi.
 
-![Azioni predefinite della barra degli strumenti](assets/default_toolbar_actions.png)
+![Azioni barra degli strumenti predefinite](assets/default_toolbar_actions.png)
 
-Oltre al set di azioni fornito per impostazione predefinita, puoi creare azioni personalizzate nella barra degli strumenti. Ad esempio, è possibile aggiungere un’azione per consentire all’utente di esaminare tutti i campi del modulo adattivo prima dell’invio del modulo.
+Oltre al set di azioni fornito per impostazione predefinita, nella barra degli strumenti puoi creare azioni personalizzate. Ad esempio, puoi aggiungere un’azione per consentire all’utente di rivedere tutti i campi del modulo adattivo prima dell’invio di un modulo.
 
 ## Passaggi per creare un’azione personalizzata in un modulo adattivo {#steps}
 
-Per illustrare la creazione di un’azione personalizzata nella barra degli strumenti, i passaggi seguenti ti consentono di creare un pulsante che consenta agli utenti finali di esaminare tutti i campi del modulo adattivo prima di inviare un modulo compilato.
+Per illustrare la creazione di un’azione personalizzata nella barra degli strumenti, i passaggi seguenti ti guidano a creare un pulsante che consenta agli utenti finali di esaminare tutti i campi del modulo adattivo prima di inviare un modulo compilato.
 
 1. Tutte le azioni predefinite supportate dai moduli adattivi sono presenti in `/libs/fd/af/components/actions` cartella. In CRXDE, copia il `fileattachmentlisting` nodo da `/libs/fd/af/components/actions/fileattachmentlisting` a `/apps/customaction`.
 
-1. Dopo aver copiato il nodo in `apps/customaction` cartella, rinominare il nome del nodo in `reviewbeforesubmit`. Inoltre, cambia la `jcr:title` e `jcr:description` proprietà del nodo.
+1. Dopo aver copiato il nodo in `apps/customaction` cartella, rinomina il nome del nodo in `reviewbeforesubmit`. Inoltre, modifica il `jcr:title` e `jcr:description` proprietà del nodo.
 
-   La `jcr:title` contiene il nome dell&#39;azione visualizzata nella finestra di dialogo della barra degli strumenti. La `jcr:description` contiene ulteriori informazioni visualizzate quando un utente passa il puntatore sull&#39;azione.
+   Il `jcr:title` contiene il nome dell’azione visualizzata nella finestra di dialogo della barra degli strumenti. Il `jcr:description` La proprietà contiene ulteriori informazioni visualizzate quando si passa il puntatore del mouse sull&#39;azione.
 
-   ![Gerarchia dei nodi per la personalizzazione della barra degli strumenti](assets/action3.png)
+   ![Gerarchia di nodi per la personalizzazione della barra degli strumenti](assets/action3.png)
 
-1. Seleziona `cq:template` nodo in `reviewbeforesubmit` nodo. Assicurati che il valore di `guideNodeClass` è `guideButton` e cambiare `jcr:title` di conseguenza.
-1. Modifica la proprietà type in `cq:Template` nodo. Per l&#39;esempio corrente, modificare la proprietà type in pulsante.
+1. Seleziona `cq:template` nodo in `reviewbeforesubmit` nodo. Assicurati che il valore di `guideNodeClass` la proprietà è `guideButton` e modifica `jcr:title` di conseguenza.
+1. Modificare la proprietà type in `cq:Template` nodo. Nell&#39;esempio corrente, modificare la proprietà type in button.
 
-   Il valore type viene aggiunto come classe CSS nel HTML generato per il componente. Gli utenti possono utilizzare tale classe CSS per definire lo stile delle loro azioni. Lo stile predefinito sia per i dispositivi mobili che per quelli desktop è disponibile per i valori del pulsante, invio, ripristino e salvataggio.
+   Il valore del tipo viene aggiunto come classe CSS nel HTML generato per il componente. Gli utenti possono utilizzare tale classe CSS per assegnare uno stile alle proprie azioni. Lo stile predefinito per i dispositivi mobili e desktop viene fornito per i valori dei tipi di pulsante, invio, reimpostazione e salvataggio.
 
-1. Seleziona l’azione personalizzata dalla finestra di dialogo della barra degli strumenti per la modifica dei moduli adattivi. Nella barra degli strumenti del pannello viene visualizzato il pulsante Revisione.
+1. Seleziona l’azione personalizzata dalla finestra di dialogo della barra degli strumenti di modifica del modulo adattivo. Nella barra degli strumenti del pannello viene visualizzato un pulsante Rivedi.
 
    ![L’azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizzazione dell&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
 
-1. Per fornire funzionalità al pulsante Review, aggiungi alcuni codici JavaScript e CSS e codice lato server nel file init.jsp, presente all&#39;interno del `reviewbeforesubmit` nodo.
+1. Per fornire funzionalità al pulsante Review, aggiungi codice JavaScript e CSS e codice lato server nel file init.jsp, presente all’interno del `reviewbeforesubmit` nodo.
 
    Aggiungi il seguente codice in `init.jsp`.
 
@@ -147,7 +147,7 @@ Per illustrare la creazione di un’azione personalizzata nella barra degli stru
    });
    ```
 
-   Aggiungi il codice seguente a `ReviewBeforeSubmit.css` file.
+   Aggiungi il seguente codice a `ReviewBeforeSubmit.css` file.
 
    ```css
    .modal-list .reviewlabel {
@@ -176,16 +176,16 @@ Per illustrare la creazione di un’azione personalizzata nella barra degli stru
    }
    ```
 
-1. Per verificare la funzionalità dell’azione personalizzata, apri il modulo adattivo in modalità Anteprima e fai clic su Rivedi nella barra degli strumenti.
+1. Per verificare la funzionalità dell’azione personalizzata, apri il modulo adattivo in modalità Anteprima e fai clic su Revisione nella barra degli strumenti.
 
    >[!NOTE]
    >
-   >La `GuideBridge` libreria non caricata in modalità authoring. Pertanto, questa azione personalizzata non funziona in modalità di authoring.
+   >Il `GuideBridge` la libreria non è caricata in modalità di authoring. Pertanto, questa azione personalizzata non funziona nella modalità di authoring.
 
    ![Dimostrazione dell’azione del pulsante di revisione personalizzato](assets/action9.png)
 
 ## Esempi {#samples}
 
-Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo correlato alla demo precedente dell’azione personalizzata della barra degli strumenti.
+Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo relativo alla demo di cui sopra per l’azione personalizzata della barra degli strumenti.
 
 [Ottieni file](assets/customtoolbaractiondemo.zip)

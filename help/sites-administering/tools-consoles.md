@@ -20,7 +20,7 @@ ht-degree: 33%
 
 # Console Strumenti{#tools-consoles}
 
-Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Attualmente esistono due sapori del **Strumenti** a seconda dell’interfaccia in uso:
+Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Al momento esistono due versioni del **Strumenti** a seconda dell’interfaccia utente in uso:
 
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
@@ -369,12 +369,12 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <th>Scopo</th>
   </tr>
   <tr>
-   <td>Centro di controllo MSM</td>
-   <td>Punto centralizzato per la gestione di più siti.</td>
+   <td>Centro controllo MSM</td>
+   <td>Punto centralizzato per gestire più siti.</td>
   </tr>
   <tr>
-   <td>Configurazioni del contesto client<br /> </td>
-   <td>ClientContext rappresenta una raccolta di dati utente assemblata in modo dinamico. Le configurazioni predefinite e di marketing cloud si trovano qui.<br /> </td>
+   <td>Configurazioni ClientContext<br /> </td>
+   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni cloud predefinite e di marketing sono disponibili qui.<br /> </td>
   </tr>
   <tr>
    <td>Configurazioni servizi cloud<br /> </td>
@@ -382,35 +382,35 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Impostazioni cloud<br /> </td>
-   <td>Impostazioni di Configuration Manager.</td>
+   <td>Impostazioni di Gestione configurazione.</td>
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Consente l'accesso agli importatori e a vari dati di prodotto.</td>
+   <td>Consente di accedere agli importatori e a vari dati sui prodotti.</td>
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Consente l'accesso a varie opzioni.</td>
+   <td>Consente di accedere a varie opzioni.</td>
   </tr>
   <tr>
    <td>Dashboard</td>
-   <td>Consente di creare dashboard di reporting; queste forniscono un modo personalizzabile per definire pagine che visualizzano dati consolidati.</td>
+   <td>Consente di creare dashboard di reporting, che offrono un modo personalizzabile di definire pagine che visualizzano dati consolidati.</td>
   </tr>
   <tr>
    <td>Documentazione personalizzata</td>
-   <td>Utilizzato per l’estensione della documentazione e della guida in linea.</td>
+   <td>Utilizzato durante l’estensione della documentazione e della guida online.</td>
   </tr>
   <tr>
    <td>fd</td>
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
-   <td>Invii modulo</td>
-   <td>Contiene l’elenco degli invii dei moduli ricevuti.</td>
+   <td>Invio modulo</td>
+   <td>Contiene l’elenco degli invii di moduli ricevuti.</td>
   </tr>
   <tr>
    <td>Importatori </td>
-   <td>Consente l'accesso a varie opzioni.</td>
+   <td>Consente di accedere a varie opzioni.</td>
   </tr>
   <tr>
    <td>Verifica collegamenti esterni</td>
@@ -418,23 +418,23 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Consente di creare siti web progettati per dispositivi mobili.</td>
+   <td>Consente di creare siti Web progettati per dispositivi mobili.</td>
   </tr>
   <tr>
    <td>Pacchetti</td>
-   <td>Un collegamento alternativo a Gestione pacchetti che mostra i pacchetti caricati per AEM WCM. Simile alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
+   <td>Un collegamento alternativo al Gestore pacchetti che mostra i pacchetti caricati per WCM AEM. Simile alle informazioni visualizzate in Gestione pacchetti di CRX.</td>
   </tr>
   <tr>
    <td>Replica - Agenti di replica</td>
-   <td>Utilizzato per replicare i dati dall’autore alla pubblicazione durante la pubblicazione delle pagine o con replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’autore.</td>
+   <td>Utilizzato per replicare i dati dall’ambiente di authoring a quello di pubblicazione quando si pubblicano le pagine, oppure con la replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’ambiente di authoring.</td>
   </tr>
   <tr>
    <td>Rapporti</td>
-   <td>AEM fornisce una serie di report personalizzati, ti consente di creare report personalizzati e/o di svilupparne uno personalizzato.</td>
+   <td>AEM fornisce una serie di rapporti personalizzati, consente di creare rapporti personalizzati e/o svilupparne di propri.</td>
   </tr>
   <tr>
    <td>Scaffolding pagine predefinito</td>
-   <td>Con la pagina di scaffolding è possibile creare un modulo (scaffolding) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare il modulo per creare facilmente pagine basate su questa struttura.</td>
+   <td>Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.</td>
   </tr>
   <tr>
    <td>Sicurezza - Configurazione self-service </td>
@@ -442,10 +442,10 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Segmentazione</td>
-   <td>I visitatori del sito hanno interessi e obiettivi diversi quando accedono a un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td>
+   <td>I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. Comprendere questi obiettivi e soddisfare le aspettative è un importante fattore di successo per il marketing online. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.<br /> </td>
   </tr>
   <tr>
-   <td>inquilini</td>
+   <td>tenant</td>
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
@@ -453,8 +453,8 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
-   <td>Gestione versioni - Eliminare le versioni</td>
-   <td>Consente di eliminare le versioni della pagina in base alle esigenze.</td>
+   <td>Controllo delle versioni - Rimuovi versioni</td>
+   <td>Consente di eliminare le versioni delle pagine in base alle esigenze.</td>
   </tr>
   <tr>
    <td>Flusso di lavoro</td>

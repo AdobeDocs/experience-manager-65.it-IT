@@ -12,13 +12,13 @@ ht-degree: 61%
 
 # Autenticazione per query GraphQL AEM remote su frammenti di contenuto {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso d’uso principale per [API Adobe Experience Manager (AEM) GraphQL per la distribuzione dei frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione di contenuti headless.
+Un caso d’uso principale per [API GraphQL di Adobe Experience Manager (AEM) per la distribuzione dei frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso alle API autenticate per garantire la distribuzione di contenuti headless.
 
 >[!NOTE]
 >
 >Per i test e lo sviluppo è inoltre possibile accedere all’API GraphQL AEM direttamente utilizzando l’ [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-Per l&#39;autenticazione il servizio di terze parti deve autenticarsi, utilizzando il nome utente e la password dell&#39;account AEM.
+Per l’autenticazione, il servizio di terze parti deve eseguire l’autenticazione utilizzando il nome utente e la password dell’account AEM.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

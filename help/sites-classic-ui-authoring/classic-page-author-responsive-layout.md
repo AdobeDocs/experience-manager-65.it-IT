@@ -1,6 +1,6 @@
 ---
 title: Layout reattivo
-description: Il componente Contenitore di layout è disponibile anche nell’interfaccia classica, ma le sue funzionalità complete sono supportate e disponibili solo nell’interfaccia touch.
+description: Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile e supportata solo nell’interfaccia touch.
 uuid: 203c7491-ce0e-49fc-ad81-1697325b3d8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,4 +19,4 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Il componente Contenitore di layout è disponibile anche nell’interfaccia classica, ma le sue funzionalità complete sono supportate e disponibili solo nell’interfaccia touch. Vedi [Layout reattivo](/help/sites-authoring/responsive-layout.md) per ulteriori informazioni, consulta la documentazione standard sull’authoring .
+>Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile e supportata solo nell’interfaccia touch. Consulta [Layout reattivo](/help/sites-authoring/responsive-layout.md) per ulteriori informazioni, consulta la documentazione sull’authoring standard.

@@ -1,5 +1,5 @@
 ---
-title: Guida rapida alla creazione di frammenti di contenuto senza intestazione
+title: Guida rapida alla creazione di frammenti di contenuto headless
 description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 91%
 
 ---
 
-# Guida rapida alla creazione di frammenti di contenuto senza intestazione {#creating-content-fragments}
+# Guida rapida alla creazione di frammenti di contenuto headless {#creating-content-fragments}
 
 Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina per la consegna headless.
 
@@ -25,8 +25,8 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale dei Frammenti di contenuto in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
-1. Accedi a AEM e dal menu principale seleziona **Navigazione -> Risorse**.
-1. Passa a [cartella creata in precedenza.](create-assets-folder.md)
+1. Accedi all’AEM e dal menu principale seleziona **Navigazione -> Risorse**.
+1. Accedi a [cartella creata in precedenza.](create-assets-folder.md)
 1. Tocca o fai clic su **Crea -> Frammento di contenuto**.
 1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e tocca o fai clic su **Successivo**.
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.

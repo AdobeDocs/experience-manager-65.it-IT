@@ -1,5 +1,5 @@
 ---
-title: Operazioni Granite - Amministrazione di utenti e gruppi
+title: 'Operazioni Granite: amministrazione di utenti e gruppi'
 seo-title: Granite Operations - User and Group Administration
 description: Scopri l’amministrazione di utenti e gruppi Granite.
 seo-description: Learn about Granite user and group administration.
@@ -18,33 +18,33 @@ ht-degree: 5%
 
 ---
 
-# Operazioni Granite - Amministrazione di utenti e gruppi{#granite-operations-user-and-group-administration}
+# Operazioni Granite: amministrazione di utenti e gruppi{#granite-operations-user-and-group-administration}
 
-Poiché Granite incorpora l&#39;implementazione CRX Repository della specifica API JCR, dispone di una propria amministrazione di utenti e gruppi.
+Poiché Granite incorpora l’implementazione dell’archivio CRX della specifica API JCR, ha una propria amministrazione di utenti e gruppi.
 
-Tali conti costituiscono la base sottostante [Account AEM](/help/sites-administering/security.md) e le eventuali modifiche apportate all&#39;account con l&#39;amministrazione Granite saranno applicate se/quando l&#39;accesso ai conti è effettuato dalla [AEM della console Utenti](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (ad esempio `http://localhost:4502/useradmin`). Dalla console Utenti AEM puoi anche gestire i privilegi e altre specifiche AEM.
+Questi conti sono alla base della [Conti AEM](/help/sites-administering/security.md) e le eventuali modifiche apportate all’account con l’amministrazione Granite verranno applicate se/quando gli account sono accessibili da [Console Utenti AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (ad es. `http://localhost:4502/useradmin`). Dalla console Utenti AEM puoi anche gestire i privilegi e altre specifiche AEM.
 
-Le console di amministrazione di utenti e gruppi Granite sono entrambe disponibili nella sezione **[Strumenti](/help/sites-administering/tools-consoles.md)** console dell’interfaccia touch:
+Le console di amministrazione di utenti e gruppi Granite sono entrambe disponibili dal **[Strumenti](/help/sites-administering/tools-consoles.md)** console dell’interfaccia touch:
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-Scelta di **Utenti** o **Gruppi** dalla console Strumenti verrà aperta la console appropriata. In entrambi i casi puoi intervenire utilizzando la casella di selezione e quindi le azioni dalla barra degli strumenti, oppure aprendo i dettagli dell’account tramite il collegamento in **Nome**.
+Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console appropriata. In entrambi è possibile intervenire utilizzando la casella di selezione e quindi le azioni dalla barra degli strumenti, oppure aprendo i dettagli dell’account tramite il collegamento in **Nome**.
 
 * [Amministrazione utente](#user-administration)
 
    ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   La **Utenti** elenchi di console:
+   Il **Utenti** elenchi console:
 
-   * nome utente
-   * nome di accesso utente (nome account)
-   * qualsiasi titolo assegnato al conto
+   * il nome utente
+   * il nome di accesso dell’utente (nome account)
+   * qualsiasi titolo assegnato all’account
 
-* [Amministrazione dei gruppi](#group-administration)
+* [Amministrazione gruppo](#group-administration)
 
    ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   La **Gruppi** elenchi di console:
+   Il **Gruppi** elenchi console:
 
    * il nome del gruppo
    * la descrizione del gruppo
@@ -54,24 +54,24 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti verrà aperta la conso
 
 ### Aggiunta di un nuovo utente {#adding-a-new-user}
 
-1. Utilizza la **Aggiungi utente** icona:
+1. Utilizza il **Aggiungi utente** icona:
 
    ![](do-not-localize/chlimage_1-1.png)
 
-1. La **Crea utente** verrà aperto il modulo:
+1. Il **Crea utente** Il modulo verrà aperto:
 
    ![chlimage_1-75](assets/chlimage_1-75a.png)
 
-   Qui puoi inserire i dettagli utente dell’account (la maggior parte sono standard e esplicativi):
+   Qui puoi immettere i dettagli utente per l’account (la maggior parte sono standard e auto-esplicativi):
 
    * **ID**
 
-      Questa è l&#39;identificazione univoca per l&#39;account utente. È obbligatorio e non può contenere spazi.
+      Identificazione univoca dell&#39;account utente. È obbligatorio e non può contenere spazi.
 
    * **Indirizzo e-mail**
    * **Password**
 
-      Una password è obbligatoria.
+      La password è obbligatoria.
 
    * **Ripeti password**
 
@@ -105,46 +105,46 @@ Puoi contrassegnare l’account come
 
    * **Aggiungi utente a gruppi**
 
-      Utilizza il menu a discesa di selezione per selezionare i gruppi di cui l’utente deve essere membro. Una volta selezionato, utilizza **X** in base al nome da deselezionare prima di salvare.
+      Utilizza il menu a discesa di selezione per selezionare i gruppi di cui l’utente deve essere membro. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
 
    * **Gruppi**
 
-      Elenco dei gruppi di cui l&#39;utente è attualmente membro. Utilizza la **X** in base al nome da deselezionare prima di salvare.
+      Elenco di gruppi di cui l&#39;utente è attualmente membro. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
 
 
-1. Quando hai definito l&#39;account utente, utilizza:
+1. Dopo aver definito l’account utente, utilizza:
 
    * **Annulla** per interrompere la registrazione.
-   * **Salva** completare la registrazione. La creazione dell’account utente verrà confermata con un messaggio.
+   * **Salva** per completare la registrazione. La creazione dell’account utente verrà confermata con un messaggio.
 
 ### Modifica di un utente esistente {#editing-an-existing-user}
 
-1. Accedi ai dettagli utente dal collegamento sotto il nome utente nella console Utenti.
+1. Accedi ai dettagli utente dal collegamento posto sotto il nome utente nella console Utenti.
 
 1. Ora puoi modificare i dettagli come in [Aggiunta di un nuovo utente](#adding-a-new-user).
 
-1. Accedi ai dettagli utente dal collegamento sotto il nome utente nella console Utenti.
+1. Accedi ai dettagli utente dal collegamento posto sotto il nome utente nella console Utenti.
 
 1. Ora puoi modificare i dettagli come in [Aggiunta di un nuovo utente](#adding-a-new-user).
 
 ### Modifica della password per un utente esistente {#changing-the-password-for-an-existing-user}
 
-1. Accedi ai dettagli utente dal collegamento sotto il nome utente nella console Utenti.
+1. Accedi ai dettagli utente dal collegamento posto sotto il nome utente nella console Utenti.
 
-1. Ora puoi modificare i dettagli come in [Aggiunta di un nuovo utente](#adding-a-new-user). Sotto **Impostazioni account** esiste un collegamento per **Modifica password**.
+1. Ora puoi modificare i dettagli come in [Aggiunta di un nuovo utente](#adding-a-new-user). Sotto **Impostazioni account** esiste un collegamento per **Cambia password**.
 
    ![chlimage_1-76](assets/chlimage_1-76a.png)
 
-1. La **Modifica password** si aprirà la finestra di dialogo . Immetti e digita nuovamente la nuova password insieme alla tua password. Utilizzo **OK** per confermare le modifiche.
+1. Il **Cambia password** viene aperta una finestra di dialogo. Immettere e ridigitare la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
 
    ![chlimage_1-77](assets/chlimage_1-77a.png)
 
-   Viene visualizzato un messaggio di conferma della modifica della password.
+   Un messaggio conferma che la password è stata cambiata.
 
 ### Assegnazione gruppo rapido {#quick-group-assignment}
 
-1. Utilizza la casella di controllo per contrassegnare uno o più utenti.
-1. Utilizza la **Gruppi** icona:
+1. Utilizza la casella di selezione per contrassegnare uno o più utenti.
+1. Utilizza il **Gruppi** icona:
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -152,35 +152,35 @@ Puoi contrassegnare l’account come
 
    ![chlimage_1-78](assets/chlimage_1-78a.png)
 
-1. Nella casella di selezione puoi selezionare o deselezionare i gruppi a cui deve appartenere l’account utente.
+1. Nella casella di selezione è possibile selezionare o deselezionare i gruppi a cui deve appartenere l&#39;account utente.
 
-1. Quando hai assegnato o non assegnato, i gruppi vengono utilizzati come richiesto:
+1. Quando hai assegnato, o annullato l’assegnazione, i gruppi in base alle esigenze, utilizzano:
 
    * **Annulla** per interrompere le modifiche
    * **Salva** per confermare le modifiche
 
 ### Eliminazione dei dettagli utente esistenti {#deleting-existing-user-details}
 
-1. Utilizza la casella di controllo per contrassegnare uno o più utenti.
-1. Utilizza la **Elimina** per eliminare i dettagli utente:
+1. Utilizza la casella di selezione per contrassegnare uno o più utenti.
+1. Utilizza il **Elimina** icona per eliminare i dettagli utente:
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’eliminazione effettiva è avvenuta.
+1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’effettiva eliminazione ha avuto luogo.
 
-## Amministrazione dei gruppi {#group-administration}
+## Amministrazione gruppo {#group-administration}
 
 ### Aggiunta di un nuovo gruppo {#adding-a-new-group}
 
-1. Utilizzate l’icona Aggiungi gruppo :
+1. Utilizza l’icona Aggiungi gruppo:
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. La **Crea gruppo** verrà aperto il modulo:
+1. Il **Crea gruppo** Il modulo verrà aperto:
 
    ![chlimage_1-79](assets/chlimage_1-79a.png)
 
-   Qui puoi inserire i dettagli del gruppo:
+   Qui puoi immettere i dettagli del gruppo:
 
    * **ID**
 
@@ -188,7 +188,7 @@ Puoi contrassegnare l’account come
 
    * **Nome**
 
-      Nome del gruppo; viene visualizzato nella console Gruppi .
+      Un nome per il gruppo, che verrà visualizzato nella console Gruppi.
 
    * **Descrizione**
 
@@ -196,41 +196,41 @@ Puoi contrassegnare l’account come
 
    * **Aggiungi membri al gruppo**
 
-      Utilizza il menu a discesa di selezione per selezionare gli utenti da aggiungere al gruppo. Una volta selezionato, utilizza **X** in base al nome da deselezionare prima di salvare.
+      Utilizza il menu a discesa di selezione per selezionare gli utenti da aggiungere al gruppo. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
 
    * **Membri del gruppo**
 
-      Elenco di utenti nel gruppo. Utilizza la **X** in base al nome da deselezionare prima di salvare.
+      Elenco di utenti del gruppo. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
 
-1. Una volta definito il gruppo, utilizza:
+1. Dopo aver definito il gruppo, utilizzare:
 
    * **Annulla** per interrompere la registrazione.
-   * **Salva** completare la registrazione. La creazione del gruppo verrà confermata con un messaggio.
+   * **Salva** per completare la registrazione. La creazione del gruppo verrà confermata con un messaggio.
 
 ### Modifica di un gruppo esistente {#editing-an-existing-group}
 
-1. Accedi ai dettagli del gruppo dal collegamento sotto il nome del gruppo nella console Gruppi.
+1. Accedi ai dettagli del gruppo dal collegamento posto sotto il nome del gruppo nella console Gruppi.
 
 1. Ora puoi modificare e salvare i dettagli come in [Aggiunta di un nuovo gruppo](#adding-a-new-group).
 
 ### Copia di un gruppo esistente {#copying-an-existing-group}
 
-1. Utilizza la casella di controllo per contrassegnare un gruppo.
-1. Utilizza la **Copia** per copiare i dettagli del gruppo:
+1. Utilizza la casella di selezione per contrassegnare un gruppo.
+1. Utilizza il **Copia** icona per copiare i dettagli del gruppo:
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. La **Modifica impostazioni gruppo** il modulo verrà aperto.
+1. Il **Modifica impostazioni gruppo** il modulo verrà aperto.
 
-   L&#39;ID gruppo sarà lo stesso dell&#39;originale, ma con il prefisso `Copy of`. È necessario modificarlo in quanto l’ID non può contenere spazi. Tutti gli altri dettagli saranno uguali all&#39;originale.
+   L’ID gruppo sarà lo stesso dell’originale, ma con il prefisso `Copy of`. È necessario modificare questa impostazione perché l’ID non può contenere spazi. Tutti gli altri dettagli saranno gli stessi dell&#39;originale.
 
    Ora puoi modificare e salvare i dettagli come in [Aggiunta di un nuovo gruppo](#adding-a-new-group).
 
 ### Eliminazione di un gruppo esistente {#deleting-an-existing-group}
 
-1. Utilizza la casella di controllo per contrassegnare uno o più gruppi.
-1. Utilizza la **Elimina** per eliminare i dettagli del gruppo:
+1. Utilizza la casella di selezione per contrassegnare uno o più gruppi.
+1. Utilizza il **Elimina** per eliminare i dettagli del gruppo:
 
    ![](do-not-localize/chlimage_1-6.png)
 
-1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’eliminazione effettiva è avvenuta.
+1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’effettiva eliminazione ha avuto luogo.

@@ -21,11 +21,11 @@ ht-degree: 37%
 
 # Creazione guidata copia lingua{#language-copy-wizard}
 
-La procedura guidata Copia lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. È ora molto più semplice e veloce creare una copia per lingua.
+La Creazione guidata copia in lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. La creazione di una copia per lingua è ora molto più semplice e veloce.
 
 >[!NOTE]
 >
->Per creare la copia in lingua di un sito, l’utente deve essere membro del gruppo amministratori di progetto.
+>Per creare la copia in lingua di un sito, l&#39;utente deve essere membro del gruppo amministratori di progetto.
 
 Per accedere a questa procedura guidata:
 
@@ -33,15 +33,15 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
-1. Selezionare Copia lingua e si apre la procedura guidata.
+1. Seleziona Copia in lingua e viene visualizzata la procedura guidata.
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. La **Seleziona origine** il passaggio della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
+1. Il **Seleziona origine** passaggio della procedura guidata consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. La **Successivo** il pulsante ti porta al **Configura** passaggio della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
+1. Il **Successivo** consente di accedere al **Configura** passaggio della procedura guidata. Qui puoi aggiungere/rimuovere le lingue e selezionare il metodo di traduzione.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -49,7 +49,7 @@ Per accedere a questa procedura guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. La **Successivo** il pulsante ti porta al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
+1. Il **Successivo** consente di accedere al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
 
    >[!NOTE]
    >

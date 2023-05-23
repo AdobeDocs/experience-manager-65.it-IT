@@ -1,7 +1,7 @@
 ---
-title: Personalizzazione delle finestre di dialogo degli errori
+title: Personalizzazione delle finestre di dialogo per gli errori
 seo-title: Customizing error dialogs
-description: Come personalizzare le finestre di dialogo degli errori dell’area di lavoro di LiveCycle AEM Forms per aggiungere descrizioni di errore diverse.
+description: Come personalizzare le finestre di dialogo degli errori dell’area di lavoro LiveCycle AEM Forms per aggiungere descrizioni degli errori diverse.
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
@@ -16,13 +16,13 @@ ht-degree: 4%
 
 ---
 
-# Personalizzazione delle finestre di dialogo degli errori {#customizing-error-dialogs}
+# Personalizzazione delle finestre di dialogo per gli errori {#customizing-error-dialogs}
 
-L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Esegui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) segui i passaggi seguenti per personalizzare le finestre di dialogo degli errori.
+L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Eseguire la [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) seguito dai passaggi seguenti per personalizzare le finestre di dialogo degli errori.
 
 ## Personalizzazione del testo {#customizing-text}
 
-1. In `/apps/ws/locales/en-US/translation.json` file, modificare i valori di `wserror` ai valori personalizzati. Esempio:
+1. In `/apps/ws/locales/en-US/translation.json` file, modificare i valori di `wserror` ai valori personalizzati. Ad esempio:
 
    ```json
    "wserror" : {
@@ -48,11 +48,11 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
 
    >[!NOTE]
    >
-   >Aggiungi le coppie chiave-valore corrispondenti per tutte le lingue supportate.
+   >Aggiungi coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
 ## Personalizzazione dei CSS {#customizing-css}
 
-1. È possibile aggiornare la finestra di dialogo, l’intestazione, l’area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali collaterali aggiungendo lo snippet seguente nel `/apps/ws/css/newStyle.css` file:
+1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area di contenuto, la barra a piè di pagina, i pulsanti della barra a piè di pagina e altri elementi collaterali aggiungendo lo snippet seguente nel `/apps/ws/css/newStyle.css` file:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -187,7 +187,7 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
    }
    ```
 
-1. Per l&#39;apertura del pulsante della barra del piede, separare la `.error-dialog` e `.foot-bar` il pulsante si estende dall&#39;elenco composito. Per apportare questa modifica, aggiungi quanto segue nel file newStyle.css :
+1. Per l&#39;estensione del pulsante della barra a piè di pagina, separare `.error-dialog` e `.foot-bar` si estende dall&#39;elenco composito. Per apportare questa modifica, aggiungi quanto segue nel file newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -224,7 +224,7 @@ L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialog
 
 >[!NOTE]
 >
->Se fai riferimento a immagini aggiuntive, aggiungili alla gerarchia desiderata in `/apps/ws/images`.
+>Se stai facendo riferimento a immagini aggiuntive, aggiungile nella gerarchia desiderata in `/apps/ws/images`.
 
 ## Esempi {#examples}
 

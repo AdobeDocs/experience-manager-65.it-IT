@@ -1,7 +1,7 @@
 ---
-title: Cercare un utente o un gruppo
+title: Cerca un utente o un gruppo
 seo-title: Search for a user or group
-description: Scopri come cercare un utente o un gruppo utilizzando le impostazioni Gestione utente nella console di amministrazione.
+description: Scopri come cercare un utente o un gruppo utilizzando le impostazioni di Gestione utente nella console di amministrazione.
 seo-description: Learn how to search for a user or group using the User Management settings in the administration console.
 uuid: 8d85e1af-9977-489d-9969-c4d2661b38c3
 contentOwner: admin
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Cercare un utente o un gruppo {#search-for-a-user-or-group}
+# Cerca un utente o un gruppo {#search-for-a-user-or-group}
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Utenti e gruppi.
-1. Specificare le informazioni per limitare la ricerca e fare clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. Per ordinare l’elenco, fai clic su una delle intestazioni di colonna. Viene restituito un massimo di 1000 risultati.
+1. Specificare le informazioni per limitare la ricerca e fare clic su Trova. I risultati della ricerca sono elencati nella parte inferiore della pagina. È possibile ordinare l&#39;elenco facendo clic su una delle intestazioni di colonna. Vengono restituiti al massimo 1000 risultati.

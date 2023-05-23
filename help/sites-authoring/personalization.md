@@ -13,7 +13,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 89%
+ht-degree: 35%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 ## Personalizzazione e targeting dei contenuti {#personalization-and-content-targeting}
 
-AEM fornisce un set di strumenti per la creazione e modifica di contenuti con destinazione e la presentazione di esperienze personali.
+L’AEM fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate.
 
 ## Modalità di targeting {#targeting-mode}
 
@@ -29,45 +29,45 @@ AEM fornisce un set di strumenti per la creazione e modifica di contenuti con de
 
 ## Attività {#activities}
 
-Le attività definiscono e organizzano le iniziative di marketing. Le attività comprendono il pubblico di destinazione e il periodo di tempo in cui il targeting viene applicato.
+Le attività definiscono e organizzano le attività di marketing. Le attività comprendono i tipi di pubblico per i quali esegui il targeting e il periodo di tempo in cui il targeting viene applicato.
 
-Ad esempio, il catalogo dei prodotti We.Retail include teaser che focalizzano l’attenzione sui prodotti stagionali. L&#39;attività &quot;Sports estivi&quot; definisce i segmenti di mercato a cui i teaser si rivolgono durante i mesi estivi.
+Ad esempio, il catalogo dei prodotti We.Retail include teaser che focalizzano l&#39;attenzione sui prodotti stagionali. L’attività Sport estivi definisce i segmenti di marketing target dei teaser durante i mesi estivi.
 
-Le attività identificano anche il [motore di destinazione](/help/sites-authoring/personalization.md#targeting-engine) utilizzato dalle tue pagine.
+Le attività identificano anche [motore di targeting](/help/sites-authoring/personalization.md#targeting-engine) che le tue pagine utilizzano.
 
-Usa la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare delle attività mentre [realizzi contenuti mirati](/help/sites-authoring/content-targeting-touch.md).
+Utilizza il [Console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare delle attività mentre [realizzi contenuti mirati](/help/sites-authoring/content-targeting-touch.md).
 
 ## Esperienze {#experiences}
 
 Per ogni attività, definisci una o più esperienze che identificano il pubblico di destinazione. AEM ti consente di controllare il contenuto che comprende ogni esperienza.
 
-La definizione del pubblico si basa sulla segmentazione del mercato creata con AEM o Adobe Target. Quando un visitatore apre una pagina web, la logica della pagina determina a che tipo di pubblico appartiene e visualizza il contenuto che hai creato per quel pubblico.
+I tipi di pubblico si basano su segmenti di marketing creati in AEM o Adobe Target. Quando un visitatore apre una pagina web, la logica della pagina determina il pubblico a cui appartiene e visualizza il contenuto creato per tale pubblico.
 
-Ad esempio, un&#39;attività definisce le esperienze per due segmenti di pubblico distinti: le donne over 30 anni e le donne under 30 anni. La pagina Donne del sito Web We.Retail mostra diversi prodotti per ogni esperienza.
+Ad esempio, un&#39;attività definisce le esperienze per due segmenti di pubblico distinti: le donne over 30 anni e le donne under 30 anni. La pagina Donne del sito web We.Retail mostra prodotti diversi per ogni esperienza.
 
-È possibile definire le esperienze per un&#39;attività. Usa la [console Attività](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o la [modalità Targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) per aggiungere le esperienze a un&#39;attività.
+Puoi definire le esperienze per un’attività. È possibile utilizzare [Console Attività](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o [Modalità di targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) per aggiungere esperienze a un’attività.
 
 ## Offerte {#offers}
 
-Un&#39;offerta è un contenuto visualizzato in una certa ubicazione della pagina per una certa esperienza. Utilizza offerte diverse per le diverse esperienze e massimizza l&#39;efficacia dei contenuti per il tuo pubblico.
+Un’offerta è un contenuto che viene visualizzato in una posizione su una pagina per un’esperienza. Utilizza offerte diverse per esperienze diverse per massimizzare l’efficacia dei contenuti per il tuo pubblico.
 
-Ad esempio, la pagina Donne del sito web di esempio We.Retail può utilizzare le offerte come immagine teaser che appare nella parte superiore della pagina. Le offerte utilizzate come teaser sono diverse per l&#39;esperienza Donna Over 30 e per l&#39;esperienza Donna Under 30.
+Ad esempio, la pagina Donne del sito web di esempio We.Retail può utilizzare le offerte come immagini teaser che appaiono nella parte superiore della pagina. Un’offerta diversa viene utilizzata come teaser per l’esperienza Femmina over 30 e per l’esperienza Femmina under 30.
 
-Usa la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea le offerte per un uso singolo o aggiungi le offerte da una libreria di offerte durante la [creazione di contenuti personalizzati](/help/sites-authoring/content-targeting-touch.md).
+Utilizza il [Console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Creare offerte monouso o aggiungere offerte da una libreria di offerte quando [authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 ## Motore di targeting {#targeting-engine}
 
-Il motore di destinazione è il meccanismo che definisce la logica per la creazione dei contenuti mirati. Le [attività](/help/sites-authoring/activitylib.md) sono configurate per utilizzare uno di due motori di targeting disponibili: AEM e Adobe Target.
+Il motore di targeting è il meccanismo che guida la logica per il contenuto di destinazione. Le [attività](/help/sites-authoring/activitylib.md) sono configurate per utilizzare uno di due motori di targeting disponibili: AEM e Adobe Target.
 
 ### AEM {#aem}
 
-AEM fornisce un motore di destinazione integrato che elabora le richieste delle pagine e determina il contenuto da visualizzare. Quando utilizzi il motore di targeting di AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
+AEM fornisce un motore di targeting integrato che elabora le richieste delle pagine e determina il contenuto da visualizzare. Quando utilizzi il motore di targeting di AEM, puoi usare solo i segmenti creati con AEM per definire il pubblico delle esperienze.
 
 ### Adobe Target {#adobe-target}
 
 Il motore di targeting di Adobe Target permette di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
-* Con questo motore di destinazione, si utilizzano i segmenti importati da Adobe Target per definire il pubblico delle esperienze.
-* Le attività che sfruttano Adobe Target vengono [sincronizzate con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Quando utilizzi questo motore di targeting, puoi utilizzare i segmenti importati da Adobe Target per definire i tipi di pubblico per le esperienze.
+* Le attività che utilizzano il motore di Adobe Target sono [sincronizzato con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-administering/opt-in.md).

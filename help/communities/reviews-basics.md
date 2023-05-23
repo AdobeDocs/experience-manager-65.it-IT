@@ -1,7 +1,7 @@
 ---
-title: Revisioni Essenziali
+title: Elementi di base recensioni
 seo-title: Reviews Essentials
-description: Recensioni e componenti Riepilogo revisioni
+description: Revisioni e componenti Riepilogo recensioni
 seo-description: Reviews and Review Summary components
 uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
 contentOwner: Guillaume Carlino
@@ -13,19 +13,19 @@ exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Revisioni Essenziali {#reviews-essentials}
+# Elementi di base recensioni {#reviews-essentials}
 
-Questa funzione è costituita da due componenti che funzionano insieme: riepilogo delle revisioni e delle revisioni.
+Questa funzione è costituita da due componenti che lavorano insieme: revisioni e riepilogo delle revisioni.
 
-Revisioni è un componente composito basato su un [sistema di commento](essentials-comments.md) che contiene uno o più [valutazione](rating-basics.md) (tally) componenti.
+Recensioni è un componente composito basato su una [sistema di commenti](essentials-comments.md) che contiene uno o più [valutazione](rating-basics.md) Componenti (tally).
 
-Pubblicazione anonima di una revisione non supportata. Per aggiungere una revisione, i visitatori del sito devono registrarsi e accedere. Il visitatore connesso (membro) può aggiornare la propria revisione in qualsiasi momento.
+La pubblicazione anonima di una revisione non è supportata. Per aggiungere una recensione, i visitatori del sito devono registrarsi e accedere. Il visitatore (membro) che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 ### Recensioni {#reviews}
 
@@ -33,18 +33,18 @@ Pubblicazione anonima di una revisione non supportata. Per aggiungere una revisi
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/review/components/hbs/review</td>
+   <td>social/recensioni/componenti/hbs/recensioni</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
    <td>cq.social.hbs.reviews</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/reviews/components/hbs/reviews/reviews.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/review.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/status.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/toolbar.hbs</td>
   </tr>
   <tr>
@@ -53,24 +53,24 @@ Pubblicazione anonima di una revisione non supportata. Per aggiungere una revisi
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Vedi <a href="reviews.md">Utilizzo delle revisioni</a></td>
+   <td>Consulta <a href="reviews.md">Utilizzo delle revisioni</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Riepilogo recensioni {#review-summary}
 
-| **resourceType** | social/review/components/hbs/summary |
+| **resourceType** | social/recensioni/componenti/hbs/riepilogo |
 |---|---|
-| [**comprensivo**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design *mode |
-| [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| [**incluso**](scf.md#add-or-include-a-communities-component) | Sì - le proprietà sono modificabili nel modo *design * |
+| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| **modelli** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **proprietà** | Vedi [Utilizzo delle revisioni](reviews.md) |
+| **proprietà** | Consulta [Utilizzo delle revisioni](reviews.md) |
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [API di revisione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
@@ -78,18 +78,18 @@ Pubblicazione anonima di una revisione non supportata. Per aggiungere una revisi
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso alle revisioni pubblicate (UGC) {#accessing-posted-reviews-ugc}
+### Accesso alle recensioni postate (UGC) {#accessing-posted-reviews-ugc}
 
-UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.
-Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
+Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di storage](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
-* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - Introduzione e panoramica sull’utilizzo dell’archivio.
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring di SocialUtils](socialutils.md) - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Refactoring SocialUtils](socialutils.md) - Mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.

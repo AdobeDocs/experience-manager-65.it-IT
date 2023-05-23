@@ -22,50 +22,50 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-A livello di Comunità [FP1](deploy-communities.md#latestfeaturepack), i membri della community possono interagire con la community tramite e-mail utilizzando una funzione denominata come abbonamenti.
+A partire da Communities [FP1](deploy-communities.md#latestfeaturepack), i membri della community possono interagire con la community tramite e-mail utilizzando una funzione definita abbonamenti.
 
-Gli abbonamenti sono simili a [Notifiche](notifications.md) come membri possono iscriversi quando seguono articoli di blog, argomenti di forum o domande di QnA.
+Gli abbonamenti sono simili a [notifiche](notifications.md) I membri possono effettuare la sottoscrizione quando seguono articoli di blog, argomenti di forum o domande di controllo qualità.
 
 Ciò che distingue gli abbonamenti dalle notifiche è:
 
-* I membri non possono iscriversi quando seguono altri membri.
-* L&#39;unica azione che i membri devono intraprendere è quella di selezionare `Email Subscriptions` quando segue.
-* Quando la risposta e-mail è configurata, i membri possono pubblicare efficacemente il contenuto semplicemente rispondendo all&#39;e-mail ricevuta.
+* I membri non possono sottoscrivere un abbonamento quando seguono altri membri.
+* L&#39;unica azione che i membri possono intraprendere è selezionare `Email Subscriptions` quando segue.
+* Una volta configurata la risposta e-mail, i membri possono pubblicare efficacemente il contenuto semplicemente rispondendo all’e-mail ricevuta.
 
 ### Requisiti {#requirements}
 
 **Configura e-mail**
 
-È necessario configurare l’e-mail affinché le iscrizioni funzionino e affinché i membri rispondano via e-mail.
+Affinché gli abbonamenti siano funzionali, è necessario configurare l’indirizzo e-mail e consentire ai membri di rispondere per e-mail.
 
-Per istruzioni sulla configurazione dell’e-mail, consulta [Configurazione e-mail](email.md).
+Per istruzioni sulla configurazione dell’e-mail, consulta [Configurazione dell’e-mail](email.md).
 
-**Abilita sottoscrizioni e segui**
+**Abilita abbonamenti e segui**
 
-I componenti devono essere configurati per abilitare gli abbonamenti *e* seguenti. Le funzionalità che consentono gli abbonamenti sono [blog](blog-feature.md), [forum](forum.md) e [QnA](working-with-qna.md).
+I componenti devono essere configurati per abilitare le sottoscrizioni *e* segue. Le funzionalità che consentono gli abbonamenti sono [blog](blog-feature.md), [forum](forum.md) e [D/R](working-with-qna.md).
 
-## Abbonamenti da {#subscriptions-from-following}
+## Abbonamenti da Segui {#subscriptions-from-following}
 
-![seguito](assets/subscription-following.png)
+![abbonamento-segue](assets/subscription-following.png)
 
-La **Segui** Questo pulsante consente di seguire le voci come attività, abbonamenti e/o notifiche. Ogni volta che **Segui** è selezionato, è possibile attivare o disattivare una selezione.
+Il **Segui** fornisce un mezzo per seguire le voci come attività, abbonamenti e/o notifiche. Ogni volta che **Segui** è selezionato, è possibile attivare o disattivare una selezione.
 
-Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
+Se è selezionato un metodo qualsiasi di seguito, il testo del pulsante diventa **Segue**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-La **Segui** il pulsante include `Email Subscriptions` solo quando un forum, QnA o un blog è configurato per abilitare gli abbonamenti alle e-mail. Viene visualizzato questo pulsante:
+Il **Segui** includerà il pulsante `Email Subscriptions` opzione solo quando un forum, un QnA o un blog è configurato per abilitare gli abbonamenti e-mail. Questo pulsante viene visualizzato:
 
-* Nella pagina delle funzioni principali per il forum abilitato, QnA o blog verrà inviato un messaggio e-mail per tutte le attività che rientrano in tale funzione.
+* Nella pagina delle funzioni principale del forum, del QnA o del blog abilitato, verrà inviata un’e-mail per tutte le attività che rientrano in tale funzione.
 
-* Per un post specifico, ad esempio un argomento del forum, una domanda QnA o un articolo di blog, invia un&#39;e-mail quando è presente un&#39;attività per quel post specifico.
+* Per una voce specifica, ad esempio un argomento forum, una domanda di controllo qualità o un articolo di blog Invierà un’e-mail quando c’è attività per quella voce specifica.
 
-## Risposta per e-mail {#reply-by-email}
+## Rispondi per e-mail {#reply-by-email}
 
-Quando l’e-mail è [configurato per la risposta tramite e-mail](email.md#configure-polling-importer), il membro che si è iscritto riceverà un’e-mail con il contenuto pubblicato e un collegamento al contenuto online.
+Quando l’e-mail è [configurato per rispondere tramite e-mail](email.md#configure-polling-importer), il membro che si è iscritto riceverà un’e-mail con i contenuti pubblicati e un collegamento ai contenuti online.
 
-Se rispondono all’e-mail, il contenuto inserito nella risposta verrà visualizzato come contenuto online.
+Se rispondono all&#39;e-mail, il contenuto immesso nella risposta verrà visualizzato come contenuto in linea.
 
-![email-response](assets/email-reply.png)
+![risposta e-mail](assets/email-reply.png)
 
-Il tempo necessario per la presentazione di una risposta è controllato dal [intervallo di aggiornamento dell’importatore del polling](email.md#configure-polling-importer).
+Il tempo necessario per la pubblicazione di una risposta è controllato dal [intervallo di aggiornamento dell&#39;importazione polling](email.md#configure-polling-importer).
 
 ![Controllo qualità](assets/qa.png)

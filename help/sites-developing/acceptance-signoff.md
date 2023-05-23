@@ -1,5 +1,5 @@
 ---
-title: Accettazione e cancellazione
+title: Accettazione e approvazione
 seo-title: Acceptance and Sign-off
 description: I test di accettazione sono una categoria speciale di test utilizzati per verificare che il progetto soddisfi i requisiti del cliente e che il cliente accetti il progetto
 seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ---
 
-# Accettazione e cancellazione{#acceptance-and-sign-off}
+# Accettazione e approvazione{#acceptance-and-sign-off}
 
-Come indicato, [Prove di accettazione](/help/sites-developing/planning.md) sono una categoria speciale di prova utilizzata per verificare che:
+Come già detto, [Test di accettazione](/help/sites-developing/planning.md) costituiscono una categoria speciale di prove utilizzate per verificare che:
 
-* Project soddisfa i requisiti del cliente.
+* Il progetto soddisfa i requisiti del cliente.
 * Il cliente accetta il progetto.
 
-Devono essere definiti dal cliente e dal project manager. Esse hanno un&#39;importanza particolare in quanto sono spesso legate alla fatturazione finale.
+Devono essere definiti dal cliente e dal project manager. Esse rivestono particolare importanza in quanto sono spesso collegate alla fatturazione finale.
 
 Per questo motivo devono essere:
 
 * Definito il prima possibile.
-* Aggiornato quando necessario.
-* Tutte le modifiche devono essere formalmente accettate e firmate da entrambe le parti (partner e cliente).
+* Se necessario, viene aggiornato.
+* Qualsiasi modifica deve essere formalmente accettata e firmata da entrambe le parti (partner e cliente).

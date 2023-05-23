@@ -1,7 +1,7 @@
 ---
 title: Compilazione dinamica di elenchi a discesa
 seo-title: Dynamically populating drop-down lists
-description: Procedura per compilare dinamicamente gli elenchi a discesa in base ad alcune logiche
+description: Procedura per popolare dinamicamente gli elenchi a discesa in base a una logica
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisites}
 
-* [Creazione di bundle OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Creazione di bundle OSGi](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Sviluppo di componenti AEM](/help/sites-developing/components.md)
 * [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
-* [Creazione di moduli adattivi](../../forms/using/introduction-forms-authoring.md)
+* [Authoring di un modulo adattivo](../../forms/using/introduction-forms-authoring.md)
 
-## Procedura per la compilazione dinamica degli elenchi a discesa {#procedure-to-dynamically-populate-drop-down-lists}
+## Procedura per compilare dinamicamente gli elenchi a discesa {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considera uno scenario in cui desideri compilare il **Stato** elenco a discesa basato su un valore selezionato nella **Paese** elenco a discesa. Se si seleziona Australia nel **Paese** elenco a discesa, **Stato** nell’elenco a discesa vengono visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa attività.
+Considera uno scenario in cui desideri popolare il **Stato** in base a un valore selezionato nell&#39;elenco a discesa **Paese** elenco a discesa. Se si seleziona Australia in **Paese** elenco a discesa, la **Stato** Nell&#39;elenco a discesa vengono visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa attività.
 
 1. Crea un progetto con i seguenti moduli:
 
    * Il bundle che contiene la logica per compilare il menu a discesa, che in questo caso è un servlet.
    * Il contenuto, che incorpora il file .jar e dispone di una risorsa a discesa. Il servlet punta a questa risorsa.
 
-1. Scrivere un servlet basato sul parametro di richiesta Country, che restituisce un array contenente i nomi degli stati all&#39;interno del paese.
+1. Scrivi un servlet in base al parametro della richiesta Country, che restituisce un array contenente i nomi degli stati all’interno del paese.
 
    ```java
    @Component(metatype = false)
@@ -146,16 +146,16 @@ Considera uno scenario in cui desideri compilare il **Stato** elenco a discesa b
    }
    ```
 
-1. Crea un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (per esempio, crea un nodo sotto /apps/myfolder/demo). Assicurati che `sling:resourceType` Il parametro per il nodo è lo stesso a cui il servlet punta (/apps/popolatedropdown).
+1. Crea un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, crea un nodo sotto /apps/myfolder/demo). Assicurati che `sling:resourceType` Il parametro per il nodo è lo stesso a cui punta il servlet (/apps/populatedropdown).
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
-1. Crea un pacchetto con il nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio /apps/myfolder/demo/install/). Distribuisci lo stesso file sul server.
-1. Crea un modulo adattivo e aggiungi due elenchi a discesa, Paese e Stato . L&#39;elenco Paese può includere i nomi dei paesi. L’elenco Stato può comporre in modo dinamico i nomi degli stati per il paese selezionato nel primo elenco.
+1. Crea un pacchetto del nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
+1. Crea un modulo adattivo e aggiungi due elenchi a discesa, Paese e Stato. L&#39;elenco Paese può includere i nomi dei paesi. L&#39;elenco Stato consente di popolare dinamicamente i nomi degli stati per il paese selezionato nel primo elenco.
 
-   Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell’elenco Stato, aggiungere uno script per compilarlo in base al nome del paese nell’elenco Paese.
+   Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.
 
-   ![Aggiunta di nomi di paese](assets/country-dropdown.png) ![Aggiunta di script per la compilazione dei nomi degli stati](assets/state-dropdown.png) ![Elenco a discesa Paese e Stato](assets/2dropdowns.png)
+   ![Aggiunta di nomi di paesi](assets/country-dropdown.png) ![Aggiunta di script per compilare i nomi degli stati](assets/state-dropdown.png) ![Elenchi a discesa Paese e Stato insieme](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
@@ -173,6 +173,6 @@ Considera uno scenario in cui desideri compilare il **Stato** elenco a discesa b
    .responseText);
    ```
 
-Il pacchetto Contenuto che contiene un esempio di modulo adattivo (demo/AFdemo) con il codice implementato sopra.
+Il pacchetto Content che contiene un modulo adattivo di esempio (demo/AFdemo) con il codice di cui sopra implementato.
 
 [Ottieni file](assets/dropdown-demo-content-1.0.1-snapshot.zip)

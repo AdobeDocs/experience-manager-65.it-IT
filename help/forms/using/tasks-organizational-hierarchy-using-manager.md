@@ -1,7 +1,7 @@
 ---
-title: Gestione delle attività in una gerarchia organizzativa utilizzando la vista Gestione
+title: Gestione delle attività in una gerarchia organizzativa tramite la visualizzazione Manager
 seo-title: Managing tasks in an organizational hierarchy using Manager View
-description: Modalità di accesso e di lavoro dei manager e dei responsabili dell’organizzazione ai rapporti diretti e indiretti nella scheda Da fare dell’area di lavoro di AEM Forms.
+description: Come i responsabili e i responsabili dell’organizzazione possono accedere e lavorare sulle attività dei loro rapporti diretti e indiretti nella scheda Da fare nell’area di lavoro di AEM Forms.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 ---
 
-# Gestione delle attività in una gerarchia organizzativa utilizzando la vista Gestione{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Gestione delle attività in una gerarchia organizzativa tramite la visualizzazione Manager{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-Nell’area di lavoro di AEM Forms, i responsabili possono ora accedere alle attività assegnate a qualsiasi persona nella propria gerarchia, ovvero ai rapporti diretti o indiretti, ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Da eseguire nell’area di lavoro di AEM Forms. Le azioni supportate sulle attività dei rapporti diretti sono:
+Nell’area di lavoro di AEM Forms, i manager ora possono accedere alle attività assegnate a chiunque nella loro gerarchia (rapporti diretti o indiretti) ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Da fare nell’area di lavoro di AEM Forms. Le azioni supportate sui compiti delle relazioni dirette sono:
 
-**Avanti** Inoltrare un&#39;attività dal rapporto diretto a qualsiasi utente.
+**Inoltra** Inoltra un&#39;attività da un referente diretto a qualsiasi utente.
 
-**Richiesta** Rivendicare un’attività di un rapporto diretto.
+**Richiesta di rimborso** Rivendica un&#39;attività di referente diretto.
 
-**Richiesta e apertura** Richiedere l&#39;attività di un rapporto diretto e aprirlo automaticamente nell&#39;elenco To-do del manager.
+**Richieste di rimborso e aperte** Richiedi un&#39;attività di un referente diretto e aprila automaticamente nell&#39;elenco Da fare del manager.
 
-**Rifiuta** Rifiuta un&#39;attività inoltrata a un report diretto da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un rapporto diretto.
+**Rifiuta** Rifiuta un&#39;attività inoltrata a una segnalazione diretta da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un referente diretto.
 
-AEM Forms limita l&#39;accesso degli utenti solo alle attività per le quali l&#39;utente ha il controllo degli accessi (ACL). Tale controllo assicura che un utente possa recuperare solo le attività per le quali l’utente dispone delle autorizzazioni di accesso. Utilizzando servizi web e implementazioni di terze parti per definire la gerarchia, un&#39;organizzazione può personalizzare la definizione di manager e i rapporti diretti in base alle proprie esigenze.
+AEM Forms limita l’accesso degli utenti solo alle attività per le quali l’utente dispone di un controllo di accesso (ACL). Tale controllo garantisce che un utente possa recuperare solo le attività per le quali dispone di autorizzazioni di accesso. Utilizzando servizi web e implementazioni di terze parti per definire la gerarchia, un’organizzazione può personalizzare la definizione di manager e direct report in base alle proprie esigenze.
 
-1. Crea un DSC. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
-1. Nel DSC, definisci un nuovo SPI per la gestione della gerarchia per definire rapporti diretti e la gerarchia all’interno degli utenti AEM Forms. Di seguito è riportato un esempio di frammento di codice Java™.
+1. Creare un DSC. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
+1. Nel DSC, definisci un nuovo SPI per la gestione della gerarchia per definire i rapporti diretti e la gerarchia all’interno degli utenti di AEM Forms. Di seguito è riportato un frammento di codice Java™ di esempio.
 
    ```java
    public class MyHierarchyMgmtService
@@ -68,7 +68,7 @@ AEM Forms limita l&#39;accesso degli utenti solo alle attività per le quali l&#
    }
    ```
 
-1. Crea un file component.xml. Assicurati che spec-id sia lo stesso mostrato nello snippet di codice sottostante. Di seguito è riportato un frammento di codice di esempio che è possibile riutilizzare.
+1. Creare un file component.xml. Verificare che l&#39;identificatore spec-id sia uguale a quello mostrato nello snippet di codice riportato di seguito. Di seguito è riportato un frammento di codice di esempio che puoi riutilizzare.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -113,10 +113,10 @@ AEM Forms limita l&#39;accesso degli utenti solo alle attività per le quali l&#
    ```
 
 1. Distribuire DSC tramite Workbench. Riavvia `ProcessManagementTeamTasksService` servizio.
-1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere nuovamente con l&#39;utente.
+1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere di nuovo con l&#39;utente.
 
-La schermata seguente illustra l’accesso alle attività dei rapporti diretti e alle azioni disponibili.
+Nella schermata seguente viene illustrato l’accesso alle attività dei referenti diretti e alle azioni disponibili.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 
-Accesso ai compiti dei rapporti diretti e azione sui compiti
+Accedere ai compiti dei referenti diretti e agire su di essi

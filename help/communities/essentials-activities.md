@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base sul flusso di attività
 seo-title: Activity Stream Essentials
-description: Elenco delle attività recenti eseguite da un membro o elenco delle attività recenti su un singolo thread di contenuto
+description: Elenco di attività recenti eseguite da un membro o un elenco di attività recenti su un singolo thread di contenuti
 seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
@@ -20,40 +20,40 @@ ht-degree: 2%
 
 # Nozioni di base sul flusso di attività {#activity-stream-essentials}
 
-Le attività di un membro della community firmato, come l’invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi tramite la configurazione del componente flussi di attività.
+Le attività di un membro della community che ha effettuato l’accesso, ad esempio la pubblicazione in un forum o in un blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi tramite la configurazione del componente Flussi di attività.
 
-La possibilità di seguire aggiunge un altro insieme di attività quando i membri della comunità seguono post di interesse o altri membri della comunità.
+La possibilità di seguire aggiunge un altro set di attività quando i membri della community seguono postazioni di interesse o altri membri della community.
 
-Tutto [siti della community](/help/communities/overview.md#communitiessites) includere una pagina del profilo utente per il membro firmato che visualizzerà le attività membro nello stesso modo.
+Tutti [siti community](/help/communities/overview.md#communitiessites) includere una pagina del profilo utente per il membro connesso che visualizzerà le attività dei membri nello stesso modo.
 
 ## Concetti {#concepts}
 
-Un *flusso di attività* è l’elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti relative a un singolo thread di contenuto, ad esempio un argomento del forum o un blog.
+Un *flusso di attività* è l’elenco delle attività recenti eseguite da un membro o un elenco di attività recenti su un singolo thread di contenuti, ad esempio un argomento del forum o un blog.
 
-Un membro può seguire un flusso di attività seguendo un altro individuo o contenuto.
+Un membro può seguire un flusso di attività, seguendo un altro individuo o un contenuto.
 
-A *news feed* è un’unione dei flussi di attività seguiti da un membro in un singolo flusso.
+A *feed di notizie* è un’unione dei flussi di attività seguiti da un membro in un singolo flusso.
 
-A *[grafico sociale](/help/communities/essentials-socialgraph.md)* acquisisce le seguenti relazioni di un membro con un altro.
+A *[grafico social](/help/communities/essentials-socialgraph.md)* acquisisce le seguenti relazioni tra un membro e un altro.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/activitystream/components/hbs/activitystream</td>
+   <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
    <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td>
   </tr>
   <tr>
@@ -62,21 +62,21 @@ A *[grafico sociale](/help/communities/essentials-socialgraph.md)* acquisisce le
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Vedi <a href="/help/communities/activities.md">Funzionalità dei flussi di attività</a></td>
+   <td>Consulta <a href="/help/communities/activities.md">Funzione Flussi di attività</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizzazioni lato client](/help/communities/client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [API per flussi di attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [API del listener dei flussi di attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [API del listener per flussi attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 
 ### Funzione Flusso attività {#activity-stream-function}
 
-Una struttura del sito community che include [Funzione Activity Stream](/help/communities/functions.md#activity-stream-function)include un `activity streams` componente.
+Una struttura del sito della community che include [Funzione Flusso di attività](/help/communities/functions.md#activity-stream-function), include un `activity streams` componente.

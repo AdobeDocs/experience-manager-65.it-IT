@@ -1,30 +1,30 @@
 ---
-title: Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e JEE per AEM Forms
-description: Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e JEE per AEM Forms
+title: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE
+description: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
-# Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e JEE per AEM Forms {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+# Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## Casella in entrata AEM e HTML Workspace {#aem-inbox-and-html-workspace}
+## Casella in entrata AEM e Area di lavoro HTML {#aem-inbox-and-html-workspace}
 
-È possibile utilizzare AEM casella in entrata per eseguire e monitorare i flussi di lavoro AEM incentrati su Forms su OSGi. HTML Workspace consente invece di eseguire e monitorare i flussi di lavoro JEE di AEM Forms. La tabella seguente ti aiuta a comprendere varie azioni importanti disponibili nella AEM casella in entrata per flussi di lavoro AEM basati su Forms su OSGi e in HTML Workspace per flussi di lavoro JEE AEM Forms.
+Puoi utilizzare la Casella in entrata AEM per eseguire e monitorare i flussi di lavoro AEM incentrati su Forms su OSGi. HTML Workspace consente invece di eseguire e monitorare i flussi di lavoro di AEM Forms JEE. La tabella seguente consente di comprendere diverse azioni importanti disponibili nella Casella in entrata AEM per i flussi di lavoro AEM incentrati su Forms su OSGi e in HTML Workspace per i flussi di lavoro AEM Forms JEE.
 
 <table>
  <tbody>
   <tr>
    <td>Azioni</td>
    <td>Casella in entrata AEM</td>
-   <td>HTML Workspace</td>
+   <td>Area di lavoro HTML</td>
   </tr>
   <tr>
-   <td>Avvio di un processo, un'attività o un'applicazione del modulo<br /> </td>
+   <td>Avvio di un processo, un'attività o un'applicazione modulo<br /> </td>
    <td>Funzione supportata<br /> </td>
    <td>Funzione supportata<br /> </td>
   </tr>
@@ -44,7 +44,7 @@ ht-degree: 23%
    <td>Funzione supportata<br /> </td>
   </tr>
   <tr>
-   <td>Cronologia delle attività e riepilogo delle attività</td>
+   <td>Tracciamento cronologia e riepilogo attività</td>
    <td>Funzione supportata<br /> </td>
    <td>Funzione supportata<br /> </td>
   </tr>
@@ -74,7 +74,7 @@ ht-degree: 23%
    <td>Non supportato</td>
   </tr>
   <tr>
-   <td>Code (coda personale condivisa, attività di richiesta di rimborso dalla coda)</td>
+   <td>Code (coda personale condivisa, operazioni di richiesta di risarcimento dalla coda)</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
@@ -89,23 +89,23 @@ ht-degree: 23%
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Assegnazione di un’attività a più utenti</td>
+   <td>Assegnazione di un'attività a più utenti</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
  </tbody>
 </table>
 
-## Flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Flussi di lavoro AEM basati su moduli su flussi di lavoro OSGi e AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM Forms JEE (AEM Forms on JEE Process Management) hanno un set di funzionalità diverso. La tabella seguente ti aiuta a comprendere le funzionalità importanti disponibili nei flussi di lavoro AEM incentrati sui moduli su OSGi e AEM Forms sui flussi di lavoro JEE:
+I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms JEE (AEM Forms on JEE Process Management) presentano una serie diversa di funzionalità. La tabella seguente consente di comprendere le funzionalità importanti disponibili nei flussi di lavoro AEM basati su moduli su OSGi e in AEM Forms sui flussi di lavoro JEE:
 
 <table>
  <tbody>
   <tr>
    <td>Funzionalità</td>
-   <td>Flussi di lavoro AEM incentrati sui moduli su OSGi<br /> </td>
-   <td>Flussi di lavoro JEE per AEM Forms</td>
+   <td>Flussi di lavoro AEM basati su moduli su OSGi<br /> </td>
+   <td>Flussi di lavoro di AEM Forms JEE</td>
   </tr>
   <tr>
    <td>Moduli adattivi</td>
@@ -128,17 +128,17 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Supportato<br /> </td>
   </tr>
   <tr>
-   <td>Definizione della priorità dell’attività</td>
+   <td>Definizione della priorità dell'attività</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Timeout di un'attività dopo la data di scadenza</td>
+   <td>Esegui il timeout di un'attività dopo la data di scadenza</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Cicli all’interno del flusso di lavoro</td>
+   <td>Loop all'interno del flusso di lavoro</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
@@ -148,7 +148,7 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Utilizzo dei metadati personalizzati</td>
+   <td>Utilizzo di metadati personalizzati</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
@@ -158,7 +158,7 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Supportato <sup>[5]</sup></td>
   </tr>
   <tr>
-   <td>Gestione di applicazioni per task e moduli</td>
+   <td>Gestione di applicazioni task e form</td>
    <td>Supportato <sup>[2]</sup><br /> </td>
    <td>Supportato <sup>[2]</sup></td>
   </tr>
@@ -173,22 +173,22 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Supportato [4]</td>
   </tr>
   <tr>
-   <td>Integrazione con la gestione della corrispondenza</td>
+   <td>Integrazione con Gestione della corrispondenza</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
    <tr>
-   <td>Gateway , NO WAIT </td>
+   <td>Gateway , NESSUNA ATTESA </td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
    <tr>
-   <td>Variabili per memorizzare i dati </td>
+   <td>Variabili per archiviare i dati </td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>OR, AND Split</td>
+   <td>O, E Divisione</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
@@ -238,8 +238,8 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Non supportato</td>
   </tr>
   <tr>
-   <td>Servizio polling/Scheduling</td>
-   <td>Disponibile preconfigurato</td>
+   <td>Servizio di polling/pianificazione</td>
+   <td>Disponibile con il prodotto</td>
    <td>Implementazione personalizzata richiesta</td>
   </tr>
   <tr>
@@ -298,27 +298,27 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Categorie di punti iniziali</td>
+   <td>Categorie punto d'inizio</td>
    <td>Non supportato </td>
    <td>Funzione supportata </td>
   </tr>
   <tr>
-   <td>Approvazione di attività in blocco </td>
+   <td>Approvazione attività in blocco </td>
    <td>Non supportato </td>
    <td>Funzione supportata </td>
   </tr>
   <tr>
-   <td>Salva bozza con nome personalizzato</td>
+   <td>Salva bozza con un nome personalizzato</td>
    <td>Non supportato </td>
    <td>Funzione supportata </td>
   </tr>
   <tr>
-   <td>Avviare un processo con i dati del processo esistenti<br /> </td>
+   <td>Avvia un processo con i dati processo esistenti<br /> </td>
    <td>Non supportato</td>
    <td>Funzione supportata </td>
   </tr>
   <tr>
-   <td>Salvataggio di un punto iniziale come bozza</td>
+   <td>Salvataggio di un punto d'inizio come bozza</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
@@ -338,17 +338,17 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
    <td>Funzione supportata</td>
   </tr>
   <tr>
-   <td>Allegati a livello di task per l'applicazione del flusso di lavoro o punto iniziale</td>
+   <td>Allegati a livello di attività per l'applicazione del flusso di lavoro o il punto d'inizio</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
   <tr>
-   <td>E-mail di promemoria</td>
+   <td>E-mail promemoria</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
   <tr>
-   <td>Modifica titolo in timeout attività</td>
+   <td>Cambia titolo in caso di timeout attività</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
@@ -385,20 +385,20 @@ I flussi di lavoro AEM incentrati sui moduli sui flussi di lavoro OSGi e AEM For
  </tbody>
 </table>
 
-1. È possibile utilizzare flussi di lavoro AEM incentrati sul modulo su OSGi per firmare un modulo adattivo compilato. I flussi di lavoro AEM incentrati sui moduli su OSGi supportano la firma fuori dal modulo. La [firma in-form](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) esperienza non supportata.
+1. Per firmare un modulo adattivo compilato, puoi utilizzare i flussi di lavoro AEM basati su moduli su OSGi. I flussi di lavoro AEM incentrati sul modulo su OSGi supportano la firma out-of-the-form. Il [firma in-form](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) esperienza non supportata.
 
-1. Per eseguire e monitorare i flussi di lavoro JEE di AEM Forms, è necessario accedere AEM casella in entrata per eseguire e monitorare i flussi di lavoro incentrati sui moduli su AEM Forms OSGi e HTML Workspace.
-1. I servizi nativi per i documenti AEM Forms sono disponibili sia per i flussi di lavoro AEM incentrati sui moduli su OSGi che per AEM Forms sui flussi di lavoro JEE. AEM Workflow utilizza servizi di documenti nativi per flussi di lavoro AEM incentrati sui moduli su OSGi e AEM Forms JEE (Process Management).
-1. I flussi di lavoro JEE di AEM Forms possono eseguire il rendering solo di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
-1. I flussi di lavoro JEE per i moduli AEM non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per AEM moduli. Per ulteriori dettagli, consulta [Documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. È possibile utilizzare [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) passaggio per richiamare un servizio Web-service e pubblicare o recuperare dati da un&#39;applicazione di terze parti.
-1. È possibile utilizzare [Invia e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) passaggio per inviare e-mail.
+1. Per eseguire e monitorare i flussi di lavoro AEM Forms JEE in AEM Forms OSGi e HTML Workspace è necessario accedere alla casella in entrata dell’AEM.
+1. I servizi documentali AEM Forms nativi sono disponibili per i flussi di lavoro AEM basati su moduli su OSGi e per i flussi di lavoro AEM Forms su JEE. Il flusso di lavoro AEM utilizza servizi documentali nativi per flussi di lavoro AEM incentrati su moduli nei flussi di lavoro OSGi e AEM Forms JEE (Process Management).
+1. I flussi di lavoro AEM Forms JEE possono eseguire il rendering solo di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
+1. I flussi di lavoro JEE per i moduli AEM non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per i moduli AEM. Per ulteriori dettagli, consulta [Documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. È possibile utilizzare [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) per richiamare un servizio web e pubblicare o recuperare dati da un’applicazione di terze parti.
+1. È possibile utilizzare [Invia e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) passaggio per inviare le e-mail.
 
-## Differenze tra AEM casella in entrata e funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
+## Differenze tra la casella in entrata dell’AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei principali modi per avviare un flusso di lavoro incentrato su Forms sono quelli utilizzati [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Le funzionalità della casella in entrata AEM e dell’app AEM Forms, tuttavia, differiscono. AEM casella in entrata funziona solo con [Flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md) mentre l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md) l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
 
-La tabella seguente elenca le funzionalità di AEM Posta in arrivo e dell’app AEM Forms:
+Nella tabella seguente sono elencate le funzionalità della casella in entrata AEM e dell’app AEM Forms:
 
 <table>
  <tbody>
@@ -408,7 +408,7 @@ La tabella seguente elenca le funzionalità di AEM Posta in arrivo e dell’app 
    <td><p><strong>App AEM Forms</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Avvio di un’applicazione modulo</p> </td>
+   <td><p>Avvio di un'applicazione modulo</p> </td>
    <td><p>Supportato</p> </td>
    <td><p>Supportato</p> </td>
   </tr>
@@ -418,12 +418,12 @@ La tabella seguente elenca le funzionalità di AEM Posta in arrivo e dell’app 
    <td><p>Supportato</p> </td>
   </tr>
   <tr>
-   <td><p>Delega delle attività</p> </td>
+   <td><p>Delega di attività</p> </td>
    <td><p>Funzione supportata</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>
   <tr>
-   <td><p>Cronologia delle attività e riepilogo delle attività</p> </td>
+   <td><p>Tracciamento cronologia e riepilogo attività</p> </td>
    <td><p>Funzione supportata</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>
@@ -433,7 +433,7 @@ La tabella seguente elenca le funzionalità di AEM Posta in arrivo e dell’app 
    <td><p>Supportato</p> </td>
   </tr>
   <tr>
-   <td><p>Visualizzazione degli allegati a livello di attività</p> </td>
+   <td><p>Visualizzazione degli allegati a livello di task</p> </td>
    <td><p>Supportato</p> </td>
    <td><p>Supportato</p> </td>
   </tr>
@@ -443,7 +443,7 @@ La tabella seguente elenca le funzionalità di AEM Posta in arrivo e dell’app 
    <td><p>Supportato</p> </td>
   </tr>
   <tr>
-   <td><p>Visualizzazione della vista Calendario</p> </td>
+   <td><p>Visualizzazione del calendario</p> </td>
    <td><p>Funzione supportata</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>

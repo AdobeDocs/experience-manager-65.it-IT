@@ -22,22 +22,22 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->Alcune funzionalità in questa pagina richiedono l’applicazione di AEM 6.5.3.0 (o versioni successive).
+>Alcune funzionalità in questa pagina richiedono l’applicazione della versione 6.5.3.0 (o successiva) dell’AEM.
 >
 >6.5.3.0:
 >
->* **Domini esternalizzatori** ora può essere selezionato.
-   >  **Nota:** I domini esternalizzatori sono rilevanti solo per il contenuto del frammento esperienza inviato a Target e non per metadati come Visualizza contenuto offerta.
+>* **Domini esternalizzazione** ora è possibile selezionare.
+   >  **Nota:** I domini esternalizzatori sono rilevanti solo per il contenuto del Frammento di esperienza inviato a Target e non per i metadati come Visualizza contenuto offerta.
 >
 >6.5.2.0:
 >
->* I frammenti esperienza possono essere esportati in:
+>* I frammenti di esperienza possono essere esportati in:
    >
    >   * l&#39;area di lavoro predefinita.
-   >   * un’area di lavoro denominata, specificata nella configurazione cloud.
-   >   * **Nota:** L&#39;esportazione in aree di lavoro specifiche richiede Adobe Target Premium.
+   >   * un’area di lavoro denominata, specificata in Configurazione cloud.
+   >   * **Nota:** L’esportazione in aree di lavoro specifiche richiede Adobe Target Premium.
 >
->* AEM [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
+>* L’AEM deve essere [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
 >
 >AEM 6.5.0.0 e 6.5.1.0:
 >
@@ -45,19 +45,19 @@ ht-degree: 65%
 >* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-administering/target.md).
 
 
-Puoi esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creato in Adobe Experience Manager (AEM), in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
+Puoi esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creato in Adobe Experience Manager (AEM), ad Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
-Sono disponibili tre opzioni di formato per esportare un frammento esperienza in Adobe Target:
+Sono disponibili tre opzioni di formato per esportare un frammento di esperienza in Adobe Target:
 
 * HTML (predefinito): supporto per la distribuzione di contenuti web e ibridi
 * JSON: supporto per la distribuzione di contenuti headless
 * HTML e JSON
 
-AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando la console Adobe Developer, per la quale AEM [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
+I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando la console Adobe Developer, per la quale è necessario disporre di AEM [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
->Le aree di lavoro di Adobe Target non sono già esistenti in Adobe Target. Vengono definiti e gestiti in Adobe IMS (Identity Management System), quindi selezionati per l’utilizzo tra le soluzioni tramite integrazioni dalla console Adobe Developer.
+>Le aree di lavoro di Adobe Target non sono già esistenti in Adobe Target. Vengono definiti e gestiti in Adobe IMS (Identity Management System), quindi selezionati per l’utilizzo nelle soluzioni tramite integrazioni dalla console Adobe Developer.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ AEM Frammenti esperienza possono essere esportati nell’area di lavoro predefin
 
 >[!CAUTION]
 >
->Alcune funzionalità in questa pagina richiedono l’applicazione di AEM 6.5.3.0.
+>Alcune funzionalità in questa pagina richiedono l’applicazione della versione 6.5.3.0 dell’AEM.
 
 Sono necessarie diverse azioni:
 
@@ -116,7 +116,7 @@ Le opzioni richieste possono essere selezionate in **Proprietà pagina** della c
    >
    >È possibile personalizzare il formato JSON di un’offerta Frammento di esperienza. A questo scopo, definisci un componente Frammento di esperienza cliente e poi annota come esportare le sue proprietà nel modello Sling del componente.
    >
-   >Consulta il componente core :
+   >Consulta il componente core:
    >
    >[Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=it)
 
@@ -213,13 +213,13 @@ Per evitare tali situazioni:
 
 
 
-## Rimozione delle librerie client dai frammenti esperienza esportati in Target {#removing-clientlibs-from-fragments-exported-target}
+## Rimozione delle ClientLibs dai frammenti esperienza esportati in Target {#removing-clientlibs-from-fragments-exported-target}
 
-I frammenti esperienza contengono tag HTML completi e tutte le librerie client necessarie (CSS/JS) per eseguire il rendering del frammento esattamente come è stato creato dall’autore del contenuto del frammento esperienza. Questo è by-design.
+I frammenti esperienza contengono tag HTML completi e tutte le librerie client (CSS/JS) necessarie per eseguire il rendering del frammento esattamente come è stato creato dall’autore del contenuto dei frammenti esperienza. Questo è by-design.
 
-Quando utilizzi un’offerta Frammento esperienza con Adobe Target in una pagina consegnata da AEM, la pagina di destinazione contiene già tutte le librerie client necessarie. Inoltre, non è necessario neanche l’html estraneo nell’offerta del frammento esperienza (consulta [Considerazioni](#considerations)).
+Quando si utilizza un’offerta Frammento di esperienza con Adobe Target in una pagina consegnata dall’AEM, la pagina Target contiene già tutte le librerie client necessarie. Inoltre, non è necessario neanche il codice HTML estraneo nell’offerta Frammento di esperienza (consulta [Considerazioni](#considerations)).
 
-Di seguito è riportato uno pseudo-esempio dell’html in un’offerta di frammento esperienza:
+Di seguito è riportato uno pseudo esempio dell’html in un’offerta per frammenti di esperienza:
 
 ```html
 <!DOCTYPE>
@@ -235,43 +235,43 @@ Di seguito è riportato uno pseudo-esempio dell’html in un’offerta di framme
 </html>
 ```
 
-Ad alto livello, quando AEM esporta un frammento esperienza in Adobe Target, lo fa utilizzando diversi selettori Sling aggiuntivi. Ad esempio, l’URL del frammento esperienza esportato potrebbe avere il seguente aspetto (avviso `nocloudconfigs.atoffer`):
+Ad alto livello, quando l’AEM esporta un frammento di esperienza in Adobe Target, lo fa utilizzando diversi selettori Sling aggiuntivi. Ad esempio, l’URL del frammento di esperienza esportato potrebbe avere il seguente aspetto (avviso `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-La `nocloudconfigs` Il selettore è definito tramite l’utilizzo di HTL e può essere sovrapposto copiandolo da:
+Il `nocloudconfigs` Il selettore è definito tramite HTL e può essere sovrapposto copiandolo da:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-La `atoffer` il selettore viene effettivamente applicato dopo l’elaborazione utilizzando [Rewriter Sling](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Puoi utilizzare per rimuovere le librerie client.
+Il `atoffer` il selettore viene effettivamente applicato nella fase di post-elaborazione utilizzando [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Entrambi possono essere utilizzati per rimuovere le librerie client.
 
 ### Esempio {#example}
 
-A questo scopo, illustreremo come eseguire questa operazione con `nocloudconfigs`.
+Per lo scopo qui, illustreremo come farlo con `nocloudconfigs`.
 
 >[!NOTE]
 >
->Vedi [Modelli modificabili](/help/sites-developing/templates.md#editable-templates) per ulteriori dettagli.
+>Consulta [Modelli modificabili](/help/sites-developing/templates.md#editable-templates) per ulteriori dettagli.
 
 #### Sovrapposizioni {#overlays}
 
-In questo particolare esempio, il [sovrapposizioni](/help/sites-developing/overlays.md) l’inclusione rimuoverà le librerie client *e* l’html estraneo. Si presume che tu abbia già creato il tipo di modello per frammento esperienza. I file necessari che dovranno essere copiati da `/libs/cq/experience-fragments/components/xfpage/` include:
+In questo esempio particolare, il [sovrapposizioni](/help/sites-developing/overlays.md) l&#39;inclusione rimuoverà le librerie client *e* html estraneo. Si presume che tu abbia già creato il tipo di modello Frammento esperienza. I file necessari da cui copiare `/libs/cq/experience-fragments/components/xfpage/` include:
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
 * `body.nocloudconfigs.html`
 
-#### Sovrapposizioni Di Tipo Modello {#template-type-overlays}
+#### Sovrapposizioni tipo di modello {#template-type-overlays}
 
-Ai fini di questo esempio utilizzeremo la seguente struttura:
+Ai fini del presente esempio utilizzeremo la seguente struttura:
 
-![Sovrapposizioni Di Tipo Modello](assets/xf-target-integration-02.png "Sovrapposizioni Di Tipo Modello")
+![Sovrapposizioni tipo di modello](assets/xf-target-integration-02.png "Sovrapposizioni tipo di modello")
 
 Il contenuto di questi file è il seguente:
 
 * `body.nocloudconfigs.html`
 
-   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+   ![body.nocloudconfigs.HTML](assets/xf-target-integration-03.png "body.nocloudconfigs.HTML")
 
 * `head.nocloudconfigs.html`
 
@@ -279,16 +279,16 @@ Il contenuto di questi file è il seguente:
 
 * `nocloudconfigs.html`
 
-   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+   ![nocloudconfigs.HTML](assets/xf-target-integration-05.png "nocloudconfigs.HTML")
 
 >[!NOTE]
 >
->Per utilizzare `data-sly-unwrap` per rimuovere il tag corpo necessario `nocloudconfigs.html`.
+>Da utilizzare `data-sly-unwrap` per rimuovere il tag body necessario `nocloudconfigs.html`.
 
 ### Considerazioni {#considerations}
 
-Se devi supportare sia AEM siti che siti non AEM utilizzando le offerte dei frammenti esperienza in Adobe Target, dovrai creare due frammenti esperienza (due tipi di modelli diversi):
+Se devi supportare sia i siti AEM che i siti non AEM utilizzando le offerte di frammenti di esperienza in Adobe Target, dovrai creare due frammenti di esperienza (due diversi tipi di modelli):
 
-* Uno con la sovrapposizione per rimuovere clientlibs/extra html
+* Uno con la sovrapposizione per rimuovere clientlibs/html aggiuntivo
 
-* Una che non ha la sovrapposizione e quindi include le clientlibs richieste
+* Uno che non ha la sovrapposizione e quindi include le clientlibs richieste

@@ -1,7 +1,7 @@
 ---
-title: Utilizzo di Maven per Communities
+title: Utilizzo di Maven per le community
 seo-title: Using Maven for Communities
-description: JAR API Uber AEM
+description: JAR API Uber per AEM
 seo-description: AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo di Maven per Communities {#using-maven-for-communities}
+# Utilizzo di Maven per le community {#using-maven-for-communities}
 
 ## Panoramica {#overview}
 
-Questa sezione della documentazione di AEM Communities si aggiunge a:
+Questa sezione della documentazione di AEM Communities è aggiuntiva a:
 
 * [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Esiste un solo artefatto &quot;uber&quot; che sostituisce singoli artefatti:
+Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
 
 * AEM [JAR API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->A partire da AEM 6.4, le API di Communities non vengono rilasciate esplicitamente. Tutte le API di Communities sono ora incluse nel jar Uber stesso.
+>A partire da AEM 6.4, le API Communities non vengono rilasciate esplicitamente. Tutte le API Communities sono ora incluse nel file jar di Uber.
 >
->Si consiglia di essere sempre aggiornato con la versione più recente di Communities.
+>Si consiglia di essere sempre aggiornati sull’ultima versione di Communities.
 >
->Vedi [Versioni più recenti](deploy-communities.md#latest-releases) per identificare la versione più recente.
+>Consulta [Ultime versioni](deploy-communities.md#latest-releases) per identificare la versione più recente.
 
 ## Esempio di dipendenza Maven {#maven-dependency-example}
 
@@ -50,7 +50,7 @@ Esiste un solo artefatto &quot;uber&quot; che sostituisce singoli artefatti:
 
 >[!NOTE]
 >
->Vedi [Archivio jar Uber AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l’ultimo artefatto del jar Uber.
+>Consulta [Archivio JAR AEM Uber](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l’artefatto del jar Uber più recente.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

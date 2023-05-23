@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione della pagina dei dettagli dell’attività
 seo-title: Customizing the task details page
-description: Come personalizzare la pagina dei dettagli dell’attività nell’area di lavoro di AEM Forms per modificare le informazioni predefinite visualizzate su un’attività.
+description: Come personalizzare la pagina dei dettagli di un’attività nell’area di lavoro di AEM Forms per modificare le informazioni predefinite visualizzate su un’attività.
 seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # Personalizzazione della pagina dei dettagli dell’attività {#customizing-the-task-details-page}
 
-La pagina dei dettagli dell&#39;attività contiene informazioni su un&#39;attività e sui relativi processi. Tuttavia, è possibile personalizzare la pagina dei dettagli dell’attività per aggiungere o eliminare informazioni.
+La pagina dei dettagli di un&#39;attività contiene informazioni su un&#39;attività e sui relativi processi. È tuttavia possibile personalizzare la pagina dei dettagli dell&#39;operazione per aggiungere o eliminare informazioni.
 
-È possibile aggiungere le seguenti informazioni alla pagina dei dettagli dell’attività:
+È possibile aggiungere le seguenti informazioni alla pagina dei dettagli dell&#39;attività:
 
-* Informazioni disponibili nell’oggetto JSON di un’attività (sezione Task in [Descrizione dell’oggetto JSON dell’area di lavoro AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
-* Informazioni disponibili nell’oggetto JSON di un’istanza di processo (sezione dell’istanza di processo in [Descrizione dell’oggetto JSON dell’area di lavoro AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informazioni disponibili nell’oggetto JSON di un’attività (sezione Attività in [Descrizione oggetto JSON dell’area di lavoro di AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informazioni disponibili nell’oggetto JSON di un’istanza di processo (sezione Istanza di processo in [Descrizione oggetto JSON dell’area di lavoro di AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
-Per personalizzare la pagina dei dettagli dell’attività:
+Per personalizzare la pagina dei dettagli dell&#39;operazione:
 
 1. Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Per visualizzare eventuali informazioni aggiuntive, aggiungi le coppie chiave-valore corrispondenti al `translation.json` file a `todo`block > `details`block > `app`block > [ `required`blocco].
+1. Per visualizzare ulteriori informazioni, aggiungi le coppie chiave-valore corrispondenti alla `translation.json` file in `todo`blocco > `details`blocco > `app`blocco > [ `required`blocco].
 
-   La [ `required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco attività per le informazioni sulle attività, il blocco del processo per le informazioni sul processo e il blocco delle attività in sospeso per le informazioni sulle attività in sospeso.
+   Il [ `required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco task per le informazioni sul task, il blocco processo per le informazioni sul processo e il blocco task corrente per le informazioni sui task in sospeso.
 
-   Ad esempio, per aggiungere informazioni sulla selezione della route obbligatoria nella pagina dei dettagli dell&#39;attività, è possibile aggiungere la seguente coppia chiave-valore nel blocco attività:
+   Ad esempio, per aggiungere informazioni sulla selezione route obbligatoria nella pagina dei dettagli dell&#39;attività, è possibile aggiungere la seguente coppia chiave-valore nel blocco dell&#39;attività:
 
    ```json
    "todo" : {
@@ -53,11 +53,11 @@ Per personalizzare la pagina dei dettagli dell’attività:
 
    >[!NOTE]
    >
-   >Aggiungi le coppie chiave-valore corrispondenti per tutte le lingue supportate.
+   >Aggiungi coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
 1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/taskdetails.html`. Esempio:
+   Aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/taskdetails.html`. Ad esempio:
 
    ```css
    <div class="detailsContainer">
@@ -80,10 +80,10 @@ Per personalizzare la pagina dei dettagli dell’attività:
 
 1. Apri /apps/ws/js/registry.js per la modifica.
 
-   Ricerca e sostituzione `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` con `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Cerca e sostituisci `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` con `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
->Per personalizzare la pagina dei dettagli dell’attività con le attività create nel **Avvia processo** scheda di AEM Forms workspace, aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Per personalizzare la pagina dei dettagli delle operazioni con le operazioni create in **Avvia processo** dell’area di lavoro di AEM Forms, aggiungi le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modifica il file CSS utilizzando il *Modifiche all&#39;interfaccia utente* sezione [Personalizzazione di Workspace](changing-locale-user-interface.md).
+>Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modifica il file CSS utilizzando *Modifiche all’interfaccia utente* sezione in [Personalizzazione di Workspace](changing-locale-user-interface.md).

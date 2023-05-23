@@ -28,7 +28,7 @@ I marchi possono integrare Experience Manager con Adobe Commerce, parte di Adobe
 
 ## Introduzione di AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Poiché questi progetti devono affrontare la complessità dell’integrazione di una soluzione commerciale. Una soluzione di e-commerce può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce a un set di servizi di e-commerce personalizzati. L’integrazione dipende fortemente dai casi d’uso e dall’ecosistema. Di solito riguarda strumenti vari e assume caratteristiche diverse:
+Poiché questi progetti devono affrontare la complessità dell’integrazione di una soluzione commerciale. Una soluzione commerciale può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce a un set di servizi di e-commerce personalizzati. L’integrazione dipende fortemente dai casi d’uso e dall’ecosistema. Di solito riguarda strumenti vari e assume caratteristiche diverse:
 
 * Integrazione di un ecosistema complesso e dinamico (ad esempio cataloghi di prodotti)
 * Le aziende devono gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
@@ -58,13 +58,13 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di realizzare
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Area di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)e modelli di integrazione per PWA (contenuto headless e commerce).
+Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Vetrina di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), e modelli di integrazione per PWA (Headless Content and Commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 
 ### Integrazioni
 
-Collegare l&#39;ecosistema (ad esempio, la soluzione commerce) con l&#39;Experience Cloud utilizzando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Collega il tuo ecosistema (ad es. soluzione commerce) con l’Experience Cloud utilizzando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), una soluzione PaaS senza server basata su microservizi e [Implementazione di riferimento CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Pattern collaudati e best practice
 

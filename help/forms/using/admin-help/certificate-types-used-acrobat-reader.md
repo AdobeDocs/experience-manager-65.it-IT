@@ -22,36 +22,36 @@ ht-degree: 4%
 Il Visualizzatore certificati fornisce le seguenti informazioni sul certificato:
 
 * Nome &quot;descrittivo&quot; del certificato
-* Profili del certificato
+* Profili certificato
 * Periodo di validità
 * Diritti di utilizzo delle estensioni Acrobat Reader DC
 
 ## Nome &quot;descrittivo&quot; del certificato {#certificate-friendly-name}
 
-Il nome &quot;descrittivo&quot; di un certificato di estensione Acrobat Reader DC è una stringa che descrive le proprietà del certificato, come nell&#39;esempio seguente:
+Il nome &quot;descrittivo&quot; di un certificato di estensioni Acrobat Reader DC è una stringa che descrive le proprietà del certificato, come nell’esempio seguente:
 
-CODICI A Barre 2D Full Production V6.1 P8 0002054
+SONO 0002054 con codice a barre 2D Full Production V6.1 P8
 
 La stringa contiene i seguenti elementi:
 
-**Tipo di certificato:** Descrive i moduli AEM attivati dal certificato e il livello di attivazione, ad esempio ARE 2D Barcode Full. Per un elenco dei tipi di certificato disponibili, consulta la colonna Tipo nella tabella nella sezione Profili certificato .
+**Tipo di certificato:** Descrive i moduli dei moduli AEM attivati dal certificato e il livello di attivazione, ad esempio il codice a barre 2D completo. Per un elenco dei tipi di certificato disponibili, vedi la colonna Tipo nella tabella della sezione Profili certificato.
 
-**Tipo di distribuzione:** Indica l’uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, consulta la colonna Tipo di distribuzione nella tabella nella sezione Profili certificato .
+**Tipo di distribuzione:** Indica l’uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, consulta la colonna Tipo di distribuzione nella tabella della sezione Profili di certificato.
 
-**Versione dei diritti di utilizzo:** Descrive la versione dell&#39;algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione di Acrobat o delle estensioni Acrobat Reader DC.
+**Versione diritti di utilizzo:** Descrive la versione dell&#39;algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione delle estensioni Acrobat o Acrobat Reader DC.
 
-**Codice profilo:** Il codice del profilo è una descrizione abbreviata delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, consulta la colonna Codice profilo nella tabella nella sezione Profili certificato .
+**Codice profilo:** Il codice profilo è una descrizione sintetica delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, consulta la colonna Codice profilo nella tabella della sezione Profili certificato.
 
-**Numero di serie:** A ciascun certificato rilasciato dall’Adobe viene assegnato un numero di serie, ad esempio 0002054. Adobe Enterprise Support o un rappresentante di account Adobe Enterprise può utilizzare questo numero di serie per tracciare il certificato in un ordine di prodotto specifico o in una relazione OEM.
+**Numero di serie:** A ciascun certificato rilasciato da Adobe viene assegnato un numero di serie, ad esempio 0002054. Il Supporto Adobe Enterprise o un rappresentante dell&#39;account Adobe Enterprise può utilizzare questo numero di serie per tracciare il certificato in base a un ordine di prodotto specifico o a una relazione OEM.
 
-## Profili del certificato {#certificate-profiles}
+## Profili certificato {#certificate-profiles}
 
-Nella tabella seguente sono elencati i profili di certificato che si possono incontrare durante l’analisi dei certificati delle estensioni Acrobat Reader DC.
+Nella tabella seguente sono elencati i profili di certificato che è possibile incontrare durante l’analisi dei certificati delle estensioni di Acrobat Reader DC.
 
 <table>
  <thead>
   <tr>
-   <th><p>Codice del profilo</p></th>
+   <th><p>Codice profilo</p></th>
    <th><p>Tipo</p></th>
    <th><p>Periodo di validità</p></th>
    <th><p>Tipo di distribuzione</p></th>
@@ -84,7 +84,7 @@ Nella tabella seguente sono elencati i profili di certificato che si possono inc
   </tr>
   <tr>
    <td><p>P5</p></td>
-   <td><p>Estensioni Acrobat Reader DC, integrazione dei partner</p></td>
+   <td><p>Estensioni Acrobat Reader DC, Integrazione partner</p></td>
    <td><p>2 anni</p></td>
    <td><p>Valutazione e prova</p></td>
   </tr>
@@ -102,43 +102,43 @@ Nella tabella seguente sono elencati i profili di certificato che si possono inc
   </tr>
   <tr>
    <td><p>P9</p></td>
-   <td><p>Adobe Acrobat 7.x, produzione</p></td>
+   <td><p>Adobe Acrobat 7.x, Produzione</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Forms; può essere utilizzato dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Forms; può essere utilizzato dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Solo firma; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Solo firma; può essere utilizzato dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Solo commenti offline; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Solo commenti offline; può essere utilizzato dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Solo commenti; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Solo commenti; può essere utilizzato dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>autorizzazioni complete; possono essere utilizzati dagli OEM</p></td>
+   <td><p>Autorizzazioni complete; possono essere utilizzate dagli OEM</p></td>
    <td><p>Max</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
@@ -147,33 +147,33 @@ Nella tabella seguente sono elencati i profili di certificato che si possono inc
 
 ## Periodo di validità {#validity-period}
 
-I certificati di valutazione vengono rilasciati a clienti e sviluppatori in modo che possano valutare e sviluppare applicazioni di esempio per i prodotti. Il periodo di validità dei certificati è compreso tra 60 e 90 giorni. Scadono alla fine del secondo mese successivo ai dati del problema.
+I certificati di valutazione vengono rilasciati a clienti e sviluppatori in modo che possano valutare e sviluppare applicazioni di esempio per i prodotti. Il periodo di validità di questi certificati è compreso tra 60 e 90 giorni. Esse scadono alla fine del secondo mese successivo a quello del rilascio.
 
-I certificati di integrazione dei partner vengono rilasciati ai partner commerciali di Adobe per supportare lo sviluppo, l&#39;integrazione, la prototipazione e la dimostrazione del software. Tali certificati sono validi per due anni dalla data del rilascio.
+I certificati di integrazione dei partner vengono rilasciati ai partner aziendali Adobi per supportare lo sviluppo, l&#39;integrazione, la prototipazione e la dimostrazione di software. I certificati hanno una validità di due anni a decorrere dalla data del rilascio.
 
-Adobe I certificati per uso interno vengono utilizzati in Adobe per supportare lo sviluppo, l&#39;integrazione, la prototipazione e la dimostrazione del software. Tali certificati sono validi per due anni dalla data del rilascio.
+I certificati Adobe per uso interno vengono utilizzati in Adobe per supportare lo sviluppo, l’integrazione, la prototipazione e la dimostrazione di software. I certificati hanno una validità di due anni a decorrere dalla data del rilascio.
 
 I certificati di produzione vengono rilasciati ai clienti che hanno acquistato estensioni Acrobat Reader DC. Tali certificati sono validi per il periodo massimo consentito dall&#39;autorità di certificazione (CA), indicato come *Max* nella tabella Profili certificato.
 
 ## Diritti di utilizzo delle estensioni Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
-Quando si esamina il certificato delle estensioni Acrobat Reader DC nel Visualizzatore certificati, è possibile selezionare la voce dei diritti di utilizzo dalla scheda Dettagli (se configurata) per visualizzare un elenco dettagliato dei diritti di utilizzo Adobe Reader che il certificato può abilitare. I diritti di utilizzo abilitati in un particolare documento possono essere un sottoinsieme di quelli abilitati dal certificato.
+Quando esamini il certificato delle estensioni di Acrobat Reader DC nel Visualizzatore certificati, puoi selezionare l’elemento dei diritti di utilizzo dalla scheda Dettagli (se configurata) per visualizzare un elenco dettagliato dei diritti di utilizzo di Adobe Reader che il certificato può abilitare. I diritti di utilizzo abilitati per un particolare documento possono essere un sottoinsieme di quelli abilitati dal certificato.
 
-Se in un ambiente non collaborativo è necessario inserire commenti online, contatta il supporto Adobe per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *produzione* o *valutazione*.
+Se è necessario inserire commenti online in un ambiente non collaborativo, contatta il supporto Adobe per ulteriori informazioni. La proprietà Mode corrisponde al tipo di distribuzione ed è *produzione* o *valutazione*.
 
-I diritti di utilizzo consentiti per le estensioni Acrobat Reader DC sono costituiti da uno o più elementi specifici. Questi elementi vengono utilizzati in diverse combinazioni per ottenere varietà di funzionalità del prodotto concesso in licenza.
+I diritti di utilizzo delle estensioni Acrobat Reader DC consentiti sono costituiti da uno o più elementi specifici. Questi elementi vengono utilizzati in diverse combinazioni per ottenere varietà di funzionalità del prodotto concesse in licenza.
 
 <table>
  <thead>
   <tr>
-   <th><p>Elemento dei diritti di utilizzo</p></th>
-   <th><p>Funzionalità abilitata in Adobe Reader quando si visualizza un documento PDF abilitato per i diritti</p></th>
+   <th><p>Elemento diritti di utilizzo</p></th>
+   <th><p>Funzionalità abilitata in Adobe Reader quando si visualizza un documento di PDF con abilitazione per i diritti</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>Compila i campi del modulo e salva i file localmente.</p></td>
+   <td><p>Compila i campi modulo e salva i file localmente.</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>
@@ -185,35 +185,35 @@ I diritti di utilizzo consentiti per le estensioni Acrobat Reader DC sono costit
   </tr>
   <tr>
    <td><p>SubmitStandalone</p></td>
-   <td><p>Invia i dati, per e-mail o offline, a un server quando non è in esecuzione in una sessione del browser.</p></td>
+   <td><p>Invia dati, tramite e-mail o offline, a un server quando non è in esecuzione in una sessione del browser.</p></td>
   </tr>
   <tr>
-   <td><p>SpawnTemplate</p></td>
-   <td><p>Crea pagine da pagine modello all’interno dello stesso modulo PDF.</p></td>
+   <td><p>ModelloSpawn</p></td>
+   <td><p>Consente di creare pagine da pagine modello all'interno dello stesso modulo PDF.</p></td>
   </tr>
   <tr>
    <td><p>Firma</p></td>
-   <td><p>Firma digitale e salva i documenti PDF e cancella le firme digitali.</p></td>
+   <td><p>Firma e salvataggio digitale di documenti PDF e cancellazione delle firme digitali.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>
-   <td><p>Crea e modifica annotazioni di documenti, ad esempio commenti.</p></td>
+   <td><p>Creare e modificare annotazioni del documento, ad esempio commenti.</p></td>
   </tr>
   <tr>
    <td><p>AnnotImportExport</p></td>
-   <td><p>È possibile salvare annotazioni, ad esempio commenti, in un file di dati separato e caricare commenti da un file.</p></td>
+   <td><p>Salvare le annotazioni, ad esempio i commenti, in un file di dati separato e caricare i commenti da un file.</p></td>
   </tr>
   <tr>
-   <td><p>Codice a barreTesto</p></td>
-   <td><p>Stampa un documento con dati a barre del modulo codificati in un modulo non crittografato che non richiede la decodifica del software del server concesso in licenza.</p></td>
+   <td><p>BarcodePlaintext</p></td>
+   <td><p>Stampare un documento con i dati del modulo codificati a barre in un modulo non crittografato che non richiede la decodifica del software del server concesso in licenza.</p></td>
   </tr>
   <tr>
    <td><p>AnnotOnline</p></td>
-   <td><p>Carica e scarica annotazioni come commenti da e verso un server di revisione e commento dei documenti online.</p></td>
+   <td><p>Caricare e scaricare annotazioni quali commenti da e verso un server di revisione dei documenti online.</p></td>
   </tr>
   <tr>
    <td><p>FormOnline</p></td>
-   <td><p>Connettersi a servizi Web o database definiti all’interno di un modulo PDF.</p></td>
+   <td><p>Connettersi ai servizi Web o ai database definiti in un modulo PDF.</p></td>
   </tr>
   <tr>
    <td><p>EFModif</p></td>
@@ -224,4 +224,4 @@ I diritti di utilizzo consentiti per le estensioni Acrobat Reader DC sono costit
 
 >[!NOTE]
 >
->I diritti di utilizzo delle estensioni Acrobat Reader DC possono essere concessi in licenza da Adobe solo in determinate combinazioni che funzionano insieme. Non è possibile concedere in licenza queste funzionalità in modo indipendente. Per informazioni sulle combinazioni disponibili di diritti di utilizzo, contattare un rappresentante commerciale AEM forms.
+>I diritti di utilizzo delle estensioni Acrobat Reader DC possono essere concessi in licenza da Adobe solo in determinate combinazioni che funzionano insieme. Non è possibile concedere in licenza queste funzionalità in modo indipendente. Per informazioni sulle combinazioni disponibili di diritti di utilizzo, contatta un rappresentante dell’account dei moduli AEM.

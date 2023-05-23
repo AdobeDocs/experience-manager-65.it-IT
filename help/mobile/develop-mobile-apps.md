@@ -1,6 +1,6 @@
 ---
-title: Amministrazione di app mobili
-description: Questa pagina funge da pagina di destinazione per iniziare a creare, sviluppare e amministrare app mobili.
+title: Amministrazione app mobili
+description: Questa pagina funge da pagina di destinazione per iniziare a creare, sviluppare e amministrare le app mobili.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
@@ -19,15 +19,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di installazione, consentendo alle aziende di utilizzare una varietà di fonti di contenuto.
+Adobe Experience Manager (AEM) Mobile fa parte della piattaforma digitale multicanale Adobe Experience Manager che sfrutta anche AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. AEM Mobile offre una notevole flessibilità di implementazione, consentendo alle aziende di utilizzare una varietà di origini di contenuto.
 
-AEM Mobile offre diversi metodi per creare le app. I diversi modi che puoi utilizzare per creare le app sono:
+AEM Mobile offre diversi metodi per la creazione di app. I diversi modi in cui puoi creare le app sono:
 
 * [Guida introduttiva ad AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Guida introduttiva ad Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Guida introduttiva di Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
 
 >[!NOTE]
 >
->Se hai poca esperienza con Adobe Experience Manager, ti consigliamo di seguire le istruzioni riportate di seguito. [Guida introduttiva a AEM](/help/sites-deploying/deploy.md).
+>Se hai poca esperienza con Adobe Experience Manager, potresti voler esaminare [Guida introduttiva all’AEM](/help/sites-deploying/deploy.md).

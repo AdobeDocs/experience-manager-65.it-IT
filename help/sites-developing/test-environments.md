@@ -1,7 +1,7 @@
 ---
 title: Quali ambienti di test sono necessari?
 seo-title: Which Test Environments are needed?
-description: Diversi ambienti devono essere considerati come parte dei test
+description: Diversi ambienti devono essere considerati parte del test
 seo-description: Several environments should be considered as part of testing
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
 contentOwner: Guillaume Carlino
@@ -19,24 +19,24 @@ ht-degree: 0%
 
 # Quali ambienti di test saranno necessari?{#which-test-environments-will-be-needed}
 
-Per definire quali configurazioni per il test, considera quanto segue:
+Per definire le configurazioni da testare, prendi in considerazione quanto segue:
 
-**Sviluppo** - per unità e determinati test di integrazione.
+**Sviluppo** - Per unit test e alcuni test di integrazione.
 
-**Test** - Per la maggior parte dei test.
+**Test** - per la maggior parte dei test.
 
-**Live** - per le prove finali di prestazioni e di stress. Anche per i test di accettazione con il cliente.
+**Live** - per prove di resistenza e prestazioni finali. Anche per i test di accettazione con il cliente.
 
-Sarà inoltre necessario decidere quali istanze saranno necessarie dove (di solito almeno una di ciascuna per tutti i livelli di test):
+Sarà inoltre necessario decidere quali istanze saranno necessarie in cui (in genere almeno una di ciascuna per tutti i livelli di test):
 
-**Autore** - Questa istanza consente agli autori di inserire e pubblicare contenuti.
+**Autore** : questa istanza consente agli autori di inserire e pubblicare contenuti.
 
-**Pubblica** - Questa istanza presenta il sito web nel suo modulo pubblicato per l’accesso dei visitatori.
+**Pubblica** - Questa istanza presenta il sito web nel modulo pubblicato per l’accesso da parte dei visitatori.
 
-Deve essere testato insieme al Dispatcher.
+Deve essere testato insieme a Dispatcher.
 
-Infine, è necessario considerare l&#39;hardware effettivo: qualsiasi test di prestazioni deve essere effettuato su un sistema il più vicino possibile alla configurazione dell&#39;ambiente live finale. Per questo motivo, si consiglia anche di dividere il lancio del progetto in un:
+Infine, è necessario considerare l&#39;hardware effettivo: tutti i test delle prestazioni devono essere eseguiti su un sistema il più vicino possibile all&#39;ambiente live finale. Per questo motivo, si consiglia inoltre di suddividere il lancio del progetto in:
 
-**Lancio morbido** - riduzione della disponibilità; che consente di disporre di tempo per i test delle prestazioni, la messa a punto e l&#39;ottimizzazione in condizioni realistiche nell&#39;ambiente di produzione.
+**Lancio morbido** - Disponibilità ridotta, che consente di dedicare tempo ai test delle prestazioni, all&#39;ottimizzazione e al tuning in condizioni realistiche nell&#39;ambiente di produzione.
 
-**Lancio rigido** - Piena disponibilità.
+**Lancio rigido** - Disponibilità completa.

@@ -214,7 +214,7 @@ All’inizio è necessario abilitare i modelli per frammenti di contenuto per il
 >
 >Consulta Risorse aggiuntive - Frammenti di contenuto nel Browser configurazioni
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto. Esempio:
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti > Risorse > Modelli per frammenti di contenuto. Esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 

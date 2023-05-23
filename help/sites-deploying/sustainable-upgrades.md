@@ -25,19 +25,19 @@ ht-degree: 0%
 
 ### Architettura (funzionale/infrastruttura/contenuto/applicazione)  {#architecture-functional-infrastructure-content-application}
 
-La funzione di Customization Framework è progettata per contribuire a ridurre le violazioni nelle aree non estensibili del codice (come APIS) o del contenuto (come le sovrapposizioni) che non sono compatibili con l’aggiornamento.
+La funzione Framework di personalizzazione è progettata per contribuire a ridurre le violazioni in aree non estensibili del codice (come API) o del contenuto (come sovrapposizioni) che non sono compatibili con l’aggiornamento.
 
-Sono disponibili due componenti del framework di personalizzazione: la **Superficie API** e **Classificazione dei contenuti**.
+Esistono due componenti del framework di personalizzazione: **Superficie API** e **Classificazione dei contenuti**.
 
 #### Superficie API {#api-surface}
 
-Nelle versioni precedenti di AEM molte API sono state esposte tramite il Jar Uber. Alcune di queste API non erano destinate ai clienti, ma erano esposte al supporto della funzionalità AEM tra i bundle. In futuro, le API Java saranno contrassegnate come pubbliche o private per indicare ai clienti quali API possono essere utilizzate in modo sicuro nel contesto degli aggiornamenti. Altre specifiche includono:
+Nelle versioni precedenti dell’AEM molte API sono state esposte tramite il file JAR di Uber. Alcune di queste API non erano destinate all’uso da parte dei clienti, ma sono state esposte per supportare la funzionalità AEM tra i bundle. In futuro, le API Java saranno contrassegnate come pubbliche o private per indicare ai clienti quali API sono sicure da utilizzare nel contesto degli aggiornamenti. Altre specifiche includono:
 
-* API Java contrassegnate come `Public` può essere utilizzato e a cui fanno riferimento i bundle di implementazione personalizzati.
+* API Java contrassegnate come `Public` possono essere utilizzati e utilizzati come riferimento dai bundle di implementazione personalizzati.
 
-* Le API pubbliche saranno compatibili con l’installazione di un pacchetto di compatibilità.
-* Il pacchetto di compatibilità conterrà un file JAR Uber compatibile per garantire la compatibilità con le versioni precedenti
-* API Java contrassegnate come `Private` sono destinati ad essere utilizzati solo AEM bundle interni e non devono essere utilizzati da bundle personalizzati.
+* Le API pubbliche saranno compatibili con le versioni precedenti, con l’installazione di un pacchetto di compatibilità.
+* Il pacchetto di compatibilità conterrà un JAR Uber di compatibilità per garantire la compatibilità con le versioni precedenti
+* API Java contrassegnate come `Private` sono destinati a essere utilizzati solo da bundle interni AEM e non devono essere utilizzati da bundle personalizzati.
 
 >[!NOTE]
 >
@@ -45,29 +45,29 @@ Nelle versioni precedenti di AEM molte API sono state esposte tramite il Jar Ube
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
-#### Classificazioni di contenuto {#content-classifications}
+#### Classificazioni contenuto {#content-classifications}
 
-AEM utilizza da tempo l’entità principale delle sovrapposizioni e di Sling Resource Merger per consentire ai clienti di estendere e personalizzare AEM funzionalità. Le funzionalità predefinite per l’attivazione delle console AEM e dell’interfaccia utente sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto di esso **/libs** ma potrebbe aggiungere ulteriore contenuto sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni . Ciò causava ancora numerosi problemi durante l&#39;aggiornamento AEM come contenuto in **/libs** potrebbe cambiare causando la rottura della funzionalità di sovrapposizione in modo imprevisto. I clienti possono anche estendere AEM componenti tramite ereditarietà tramite `sling:resourceSuperType`oppure fai semplicemente riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi simili possono verificarsi con casi di utilizzo di riferimento e di sostituzione.
+L’AEM utilizza da tempo il principio delle sovrapposizioni e Sling Resource Merger per consentire ai clienti di estendere e personalizzare la funzionalità dell’AEM. Le funzionalità predefinite che alimentano le console AEM e l’interfaccia utente sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto **/libs** ma potrebbe aggiungere contenuto aggiuntivo sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni. Questo causava ancora numerosi problemi durante l’aggiornamento dell’AEM come contenuto in **/libs** potrebbe cambiare causando un’interruzione imprevista della funzionalità di sovrapposizione. I clienti possono inoltre estendere i componenti AEM tramite l’ereditarietà tramite `sling:resourceSuperType`o semplicemente fare riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi di aggiornamento simili potrebbero verificarsi con casi di utilizzo di riferimento e di sostituzione.
 
-Per rendere più sicuro e facile per i clienti capire quali aree **/libs** sono sicuri di utilizzare e sovrapporre il contenuto in **/libs** è stato classificato con le seguenti miscele:
+Per rendere più sicuro e facile per i clienti capire quali aree **/libs** sono sicuri da usare e sovrapporre al contenuto in **/libs** è stato classificato con i seguenti mixin:
 
-* **Public (granite:PublicArea)** - Definisce un nodo come pubblico in modo che possa essere sovrapposto, ereditato ( `sling:resourceSuperType`) o utilizzati direttamente ( `sling:resourceType`). I nodi sotto /libs contrassegnati come pubblici saranno sicuri da aggiornare con l’aggiunta di un pacchetto di compatibilità. In generale, i clienti devono sfruttare solo i nodi contrassegnati come pubblici.
+* **Pubblico (granite:PublicArea)** - Definisce un nodo come pubblico in modo che possa essere sovrapposto, ereditato ( `sling:resourceSuperType`) o utilizzato direttamente ( `sling:resourceType`). I nodi al di sotto di /libs contrassegnati come pubblici potranno essere aggiornati con l’aggiunta di un pacchetto di compatibilità. In generale, i clienti devono sfruttare solo i nodi contrassegnati come Pubblici.
 
-* **Abstract (granite:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non deve essere utilizzato direttamente ( `sling:resourceType`).
+* **Riassunto (granite:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non deve essere utilizzato direttamente ( `sling:resourceType`).
 
-* **Finale (granite:FinalArea)** - Definisce un nodo come finale. I nodi classificati come finali idealmente non devono essere sovrapposti o ereditati. I nodi finali possono essere utilizzati direttamente tramite `sling:resourceType`. I sottonodi sotto il nodo finale sono considerati interni per impostazione predefinita.
+* **Finale (granito:FinalArea)** - Definisce un nodo come finale. I nodi classificati come finali idealmente non devono essere sovrapposti o ereditati. I nodi finali possono essere utilizzati direttamente tramite `sling:resourceType`. Per impostazione predefinita, i sottonodi sotto il nodo finale sono considerati interni.
 
-* ***Interno (granite:InternalArea)*** *- *Definisce un nodo come interno. I nodi classificati come interni idealmente non devono essere sovrapposti, ereditati o utilizzati direttamente. Questi nodi sono destinati solo alla funzionalità interna di AEM
+* ***Interno (granite:InternalArea)*** *- *Definisce un nodo interno. I nodi classificati come interni idealmente non devono essere sovrapposti, ereditati o utilizzati direttamente. Questi nodi sono destinati solo alle funzionalità interne dell’AEM
 
-* **Nessuna annotazione** - I nodi ereditano la classificazione in base alla gerarchia degli alberi. Il / root è per impostazione predefinita Public. **Anche i nodi con una controllante classificata come interni o finali devono essere trattati come interni.**
+* **Nessuna annotazione** - I nodi ereditano la classificazione in base alla gerarchia della struttura. Per impostazione predefinita, la directory principale / è Public. **Anche i nodi con un elemento padre classificato come Interno o Finale devono essere trattati come Interno.**
 
 >[!NOTE]
 >
->Questi criteri vengono applicati solo rispetto ai meccanismi basati sul percorso di ricerca Sling. Altre aree **/libs** come una libreria lato client può essere contrassegnata come `Internal`, ma potrebbe essere ancora utilizzato con l’inclusione clientlib standard. È importante che un cliente continui a rispettare la classificazione interna in questi casi.
+>Questi criteri vengono applicati solo ai meccanismi basati su percorsi di ricerca Sling. Altre aree di **/libs** come una libreria lato client può essere contrassegnata come `Internal`, ma può ancora essere utilizzato con l’inclusione clientlib standard. In questi casi è importante che il cliente continui a rispettare la classificazione interna.
 
-#### Indicatori del tipo di contenuto di CRXDE Lite {#crxde-lite-content-type-indicators}
+#### Indicatori del tipo di contenuto CRXDE Lite {#crxde-lite-content-type-indicators}
 
-I mixin applicati in CRXDE Lite mostrano nodi di contenuto e alberi contrassegnati come `INTERNAL` come in grigio. Per `FINAL` solo l’icona è disattivata. Anche gli elementi secondari di questi nodi appariranno grigi. La funzionalità Sovrapponi nodo è disabilitata in entrambi i casi.
+I mixin applicati in CRXDE Lite mostreranno i nodi di contenuto e gli alberi contrassegnati come `INTERNAL` come disattivata. Per `FINAL` solo l’icona è disattivata. Anche gli elementi secondari di questi nodi verranno visualizzati in grigio. La funzionalità Sovrapponi nodo è disabilitata in entrambi questi casi.
 
 **Pubblico**
 
@@ -81,33 +81,33 @@ I mixin applicati in CRXDE Lite mostrano nodi di contenuto e alberi contrassegna
 
 ![image2018-2-8_23-38-23](assets/image2018-2-8_23-38-23.png)
 
-**Verifica dello stato del contenuto**
+**Verifica stato contenuto**
 
 >[!NOTE]
 >
->A partire AEM 6.5, Adobe consiglia di utilizzare il rilevatore pattern per rilevare le violazioni dell’accesso ai contenuti. I rapporti del rilevatore pattern sono più dettagliati, rilevano più problemi e riducono la probabilità di falsi positivi.
+>A partire da AEM 6.5, Adobe consiglia di utilizzare il rilevatore pattern per rilevare le violazioni dell’accesso ai contenuti. I rapporti del rilevatore pattern sono più dettagliati, rilevano più problemi e riducono la probabilità di falsi positivi.
 >
 >Per ulteriori informazioni, consulta [Valutazione della complessità dell’aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md).
 
-AEM 6.5 verrà fornito con un controllo dello stato di salute per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo non coerente con la classificazione del contenuto.
+AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
 
-Il** Sling/Granite Content Access Check** è una nuova verifica dello stato di salute che controlla l&#39;archivio per vedere se il codice cliente accede in modo errato ai nodi protetti in AEM.
+Il** Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
 
-Questa operazione verrà eseguita **/apps** e in genere il completamento richiede diversi secondi.
+Verrà eseguita la scansione **/apps** e in genere richiede diversi secondi.
 
 Per accedere a questo nuovo controllo di integrità, è necessario effettuare le seguenti operazioni:
 
-1. Dalla schermata iniziale AEM, passa a **Strumenti > Operazioni > Rapporti stato**
+1. Dalla schermata iniziale dell’AEM, passa a **Strumenti > Operazioni > Rapporti stato**
 1. Fai clic sul pulsante **Controllo dell’accesso ai contenuti Sling/Granite** come mostrato di seguito:
 
-   ![screen_shot_2017-12-14at55648pm](assets/screen_shot_2017-12-14at55648pm.png)
+   ![screen_shot_2017-12-14alle55648pm](assets/screen_shot_2017-12-14at55648pm.png)
 
-Una volta completata la scansione, verrà visualizzato un elenco di avvisi che avvisano un utente finale del nodo protetto a cui viene fatto riferimento in modo improprio:
+Al termine dell’analisi, verrà visualizzato un elenco di avvisi per avvisare l’utente finale del nodo protetto a cui si fa riferimento in modo errato:
 
-![screenshot-2018-2-5health-reports](assets/screenshot-2018-2-5healthreports.png)
+![screenshot-2018-2-5health reports](assets/screenshot-2018-2-5healthreports.png)
 
-Dopo aver riparato le violazioni, tornerà allo stato verde:
+Dopo aver risolto le violazioni, tornerà allo stato verde:
 
-![screenshot-2018-2-5health-reports-rules](assets/screenshot-2018-2-5healthreports-violations.png)
+![screenshot-2018-2-5rapporti sanitari-violazioni](assets/screenshot-2018-2-5healthreports-violations.png)
 
-Il controllo dello stato di salute visualizza le informazioni raccolte da un servizio in background che controlla in modo asincrono ogni volta che una sovrapposizione o un tipo di risorsa viene utilizzato in tutti i percorsi di ricerca Sling. Se i mixin di contenuto vengono utilizzati in modo errato, segnala una violazione.
+La verifica stato visualizza le informazioni raccolte da un servizio in background che controlla in modo asincrono ogni volta che viene utilizzato un tipo di risorsa o sovrapposizione in tutti i percorsi di ricerca Sling. Se i mixin di contenuto non vengono utilizzati correttamente, viene segnalata una violazione.

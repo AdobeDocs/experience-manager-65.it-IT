@@ -22,7 +22,7 @@ ht-degree: 67%
 
 I siti web multilingue forniscono generalmente una certa quantità di contenuto in più lingue. Il sito viene creato in una lingua e poi tradotto in altre lingue. In genere, i siti multilingue sono composti da rami di pagine, in cui ogni ramo contiene le pagine del sito in una lingua diversa.
 
-Il sito demo di Geometrixx di esempio include diversi rami di lingua e utilizza la seguente struttura:
+Il Geometrixx di esempio Sito demo include diversi rami di lingua e utilizza la seguente struttura:
 
 ```xml
 /content
@@ -42,9 +42,9 @@ La copia per lingua per la quale originariamente si è creato il contenuto del s
 
 Utilizza i seguenti passaggi per preparare il sito alla traduzione:
 
-1. Crea la lingua principale della lingua master. Ad esempio, la directory principale della lingua del sito dimostrativo inglese Geometrixx è /content/geometrixx/en. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
+1. Crea la lingua principale della lingua master. Ad esempio, la directory principale della lingua del sito di dimostrazione Geometrixx in inglese è /content/geometrixx/en. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Creare il contenuto della lingua master.
-1. Crea la directory principale della lingua di ogni copia per la lingua del sito. Ad esempio, la copia in lingua francese del sito di esempio di Geometrixx è /content/geometrixx/fr.
+1. Crea la directory principale della lingua di ogni copia per la lingua del sito. Ad esempio, la copia in lingua francese del sito di Geometrixx è /content/geometrixx/fr.
 
 Dopo aver preparato il contenuto per la traduzione, puoi creare automaticamente le pagine mancanti nelle copie della lingua e nei relativi progetti di traduzione. (Consulta [Creazione di un progetto di traduzione](/help/sites-administering/tc-manage.md).) Per una panoramica del processo di traduzione dei contenuti in AEM, consulta [Traduzione di contenuti per siti web multilingue](/help/sites-administering/translation.md).
 
@@ -56,18 +56,18 @@ Per creare la directory principale della lingua è necessario creare una pagina 
 
 * `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
 
-* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscolo o superiore, come definito ad esempio dalla norma ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166 `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  Ad esempio, la pagina principale della copia in lingua francese del sito di Geometrixx ha `fr` come proprietà Name. Tieni presente che la proprietà Nome viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
+Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  La pagina principale della copia in lingua francese del Geometrixx, ad esempio, ha `fr` come proprietà Name. Tieni presente che la proprietà Nome viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
 
-La procedura seguente utilizza l’interfaccia touch per creare una copia in lingua di un sito Web. Per istruzioni sull’utilizzo dell’interfaccia classica, consulta [Creazione di una directory principale della lingua utilizzando l’interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
+La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una copia in lingua di un sito web. Per istruzioni sull’utilizzo dell’interfaccia classica, consulta [Creazione di una directory principale della lingua tramite l’interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Passa a Sites.
 1. Tocca o fai clic sul sito per il quale vuoi creare una copia per lingua.
 
-   Ad esempio, per creare una copia in lingua del sito Geometrixx Outdoors, toccate o fate clic su Sito Geometrixx Outdoors.
+   Ad esempio, per creare una copia per lingua del sito Geometrixx Outdoors, tocca o fai clic su Sito Geometrixx Outdoors.
 
-1. Tocca o fai clic su Crea , quindi su Crea pagina .
+1. Tocca o fai clic su Crea, quindi tocca o fai clic su Crea pagina.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -80,14 +80,14 @@ La procedura seguente utilizza l’interfaccia touch per creare una copia in lin
 
 ## Visualizzazione dello stato delle directory principali della lingua {#seeing-the-status-of-language-roots}
 
-L’interfaccia touch fornisce un pannello Riferimenti che mostra un elenco delle radici della lingua create.
+L’interfaccia utente ottimizzata per il tocco fornisce un pannello Riferimenti che mostra un elenco di directory principali della lingua create.
 
 ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-La procedura seguente utilizza l’interfaccia touch per aprire il pannello Riferimenti per una pagina.
+La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per aprire il pannello Riferimenti di una pagina.
 
-1. Nella console Siti , seleziona una pagina del sito e quindi tocca o fai clic su **Riferimenti**.
+1. Nella console Sites, seleziona una pagina del sito e quindi tocca o fai clic su **Riferimenti**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. Nel pannello Riferimenti, tocca o fai clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie in lingua del sito Web.
+1. Nel pannello dei riferimenti, tocca o fai clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie per lingua del sito web.

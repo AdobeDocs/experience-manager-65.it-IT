@@ -1,6 +1,6 @@
 ---
-title: Usa tracciamento pagina e codice di incorporamento nelle pagine web
-description: Scopri come includere il tracciamento pagina e i codici JavaScript da incorporare nel codice del sito web per consentire ad Adobe Analytics di acquisire i dati di utilizzo relativi alle risorse.
+title: Utilizzare il tracciamento delle pagine e incorporare il codice nelle pagine web
+description: Scopri come includere il tracciamento delle pagine e incorporare codici JavaScript nel codice del sito web per consentire ad Adobe Analytics di acquisire i dati di utilizzo relativi alle risorse.
 contentOwner: AG
 role: Architect, Admin
 feature: Asset Reports
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 ---
 
-# Utilizzare il tracciamento pagina e il codice di incorporamento nelle pagine web {#using-page-tracker-and-embed-code-in-web-pages}
+# Utilizzare il tracciamento delle pagine e il codice di incorporamento nelle pagine web {#using-page-tracker-and-embed-code-in-web-pages}
 
-Page Tracker è un pezzo di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire dati di utilizzo intorno a [!DNL Adobe Experience Manager Assets] su questi siti web.
+Tracciamento pagina è una parte di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire i dati di utilizzo [!DNL Adobe Experience Manager Assets] su questi siti web.
 
-Per acquisire eventi, come clic e così via, specifici per le risorse, includi anche il codice di incorporamento nel codice dei siti web di terze parti.
+Per acquisire eventi specifici delle risorse, come clic e così via, includi anche il codice da incorporare nel codice di siti web di terze parti.
 
-Il seguente codice di esempio mostra l&#39;aspetto di una pagina web che contiene sia il codice di tracciamento pagina che il codice di incorporamento:
+Il codice di esempio seguente mostra l’aspetto di una pagina web contenente sia il codice di tracciamento pagina che il codice di incorporamento:
 
 ```html
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ Il seguente codice di esempio mostra l&#39;aspetto di una pagina web che contien
 
 ## Aggiungi codice di tracciamento pagina {#adding-page-tracker-code}
 
-Puoi aggiungere il codice di tracciamento della pagina nella sezione di intestazione del codice del sito web. Il seguente frammento di codice mostra il codice Tracciamento pagina incluso in una pagina web di esempio:
+Puoi aggiungere il codice di tracciamento della pagina all’interno della sezione di intestazione del codice del sito web. Il seguente snippet di codice visualizza il codice di tracciamento pagina incluso in una pagina web di esempio:
 
 ```xml
  <head>
@@ -82,7 +82,7 @@ Puoi aggiungere il codice di tracciamento della pagina nella sezione di intestaz
 
 ## Aggiungi codice di incorporamento {#add-embed-code}
 
-Puoi aggiungere il codice di incorporamento all’interno del corpo del codice del sito web. Il seguente frammento di codice mostra il codice di incorporamento incluso in una pagina web di esempio:
+Puoi aggiungere il codice di incorporamento nel corpo del codice del sito web. Il seguente snippet di codice visualizza il codice di incorporamento incluso in una pagina web di esempio:
 
 ```xml
 <body>

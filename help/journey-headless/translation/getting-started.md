@@ -78,7 +78,7 @@ L’architetto dei contenuti all’inizio del progetto si occupa della definizio
 
 Poiché i modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architetto dei contenuti per deciderlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Passa a **Strumenti** -> **Risorse** -> **Modelli per frammenti di contenuto**.
+1. Accedi a **Strumenti** -> **Risorse** -> **Modelli per frammenti di contenuto**.
 1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Tocca o fai clic sulla cartella del progetto.
 1. I modelli sono elencati. Tocca o fai clic sul modello per visualizzare i dettagli.
    ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)
@@ -89,11 +89,11 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
 1. Tocca o fai clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
 
-Prendi nota del campo **Nome proprietà** per tutti i campi che devono essere tradotti. Queste informazioni saranno necessarie più avanti nel percorso. Tali **Nome proprietà** Per informare AEM quali campi del contenuto devono essere tradotti, è necessario utilizzare i moduli.
+Prendi nota del campo **Nome proprietà** per tutti i campi da tradurre. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** s sono tenuti a informare l’AEM su quali campi del contenuto devono essere tradotti.
 
 >[!TIP]
 >
->Generalmente l&#39;architetto dei contenuti fornisce allo specialista della traduzione il **Nome proprietà** s di tutti i campi necessari per la traduzione. Questi nomi di campo sono necessari in un secondo momento nel percorso. Le fasi precedenti sono fornite per la comprensione dello specialista della traduzione.
+>In genere l’architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** s di tutti i campi necessari per la traduzione. Questi nomi di campo sono necessari per una fase successiva del percorso. Le fasi precedenti sono fornite per la comprensione dello specialista della traduzione.
 
 ### Frammenti di contenuto {#content-fragments}
 
@@ -170,7 +170,7 @@ Ora che conosci i frammenti di contenuto e l’importanza della struttura dei co
 * **Regole di traduzione**: le regole definiscono quali contenuti in determinati percorsi dovrebbero essere tradotti.
 * **Progetti di traduzione**: i progetti di traduzione raccolgono contenuti che devono essere affrontati come un&#39;unica traduzione e ne tengono traccia dei progressi, interfacciandosi con il connettore per trasmettere il contenuto da tradurre e riceverlo nuovamente dal servizio di traduzione.
 
-In genere si imposta il connettore una sola volta per l&#39;istanza e le regole per ogni progetto headless. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
+In genere il connettore viene configurato una sola volta per l’istanza e le regole per progetto headless. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
 
 ## Passaggio successivo {#what-is-next}
 

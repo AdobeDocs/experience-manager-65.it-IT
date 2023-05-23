@@ -20,55 +20,55 @@ ht-degree: 2%
 
 ## Reindicizzazione lenta  {#slow-re-indexing}
 
-AEM processo di reindicizzazione interna raccoglie i dati del repository e li memorizza negli indici Oak per supportare la query performante del contenuto. In circostanze eccezionali, il processo può diventare lento o addirittura bloccato. Questa pagina funge da guida alla risoluzione dei problemi per identificare se l’indicizzazione è lenta, trovare la causa e risolvere il problema.
+Il processo di reindicizzazione interno dell’AEM raccoglie i dati dell’archivio e li memorizza negli indici Oak per supportare l’esecuzione di query sui contenuti. In circostanze eccezionali, il processo può diventare lento o addirittura bloccato. Questa pagina funge da guida alla risoluzione dei problemi per identificare se l’indicizzazione è lenta, individuare la causa e risolvere il problema.
 
-È importante distinguere tra reindicizzazione che richiede una quantità di tempo inappropriata e reindicizzazione che richiede molto tempo perché sta indicizzando grandi quantità di contenuto. Ad esempio, il tempo necessario per indicizzare il contenuto viene ridimensionato in base alla quantità di contenuto, quindi la reindicizzazione degli archivi di produzione di grandi dimensioni richiede più tempo rispetto ai piccoli archivi di sviluppo.
+È importante distinguere tra la reindicizzazione che richiede una quantità di tempo inappropriatamente lunga e la reindicizzazione che richiede una quantità di tempo molto lunga perché si tratta di indicizzare grandi quantità di contenuto. Ad esempio, il tempo necessario per indicizzare il contenuto corrisponde alla quantità di contenuto, pertanto la reindicizzazione dei grandi archivi di produzione richiede più tempo rispetto alla reindicizzazione dei piccoli archivi di sviluppo.
 
-Consulta la sezione [Tecniche consigliate per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md) per ulteriori informazioni su quando e come reindicizzare il contenuto.
+Consulta la [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md) per ulteriori informazioni su quando e come reindicizzare il contenuto.
 
 ## Rilevamento iniziale {#initial-detection}
 
-L&#39;indicizzazione lenta del rilevamento iniziale richiede la revisione `IndexStats` MBeans JMX. Nell’istanza AEM interessata, procedi come segue:
+L’indicizzazione lenta del rilevamento iniziale richiede la revisione del `IndexStats` Media JMX. Nell’istanza AEM interessata, effettua le seguenti operazioni:
 
-1. Apri la console Web e fai clic sulla scheda JMX oppure vai a https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
-1. Passa a `IndexStats` Fagioli.
-1. Apri `IndexStats` MBeans for &quot; `async`&quot; e &quot; `fulltext-async`&quot;.
+1. Apri la console Web e fai clic sulla scheda JMX o vai a https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+1. Accedi a `IndexStats` Mbeans.
+1. Apri `IndexStats` MBean per &quot; `async`&quot; e &quot; `fulltext-async`&quot;.
 
-1. Per entrambi i MBeans, controlla se il **Fine** timestamp e **LastIndexTime** le marche temporali sono inferiori a 45 minuti dall’ora corrente.
+1. Per entrambi gli MBean, verifica se **Fine** timestamp e **LastIndexTime** i timestamp sono a meno di 45 minuti dall’ora corrente.
 
-1. Per MBean, se il valore del tempo (**Fine** o **LastIndexedTime**) è maggiore di 45 minuti dall&#39;ora corrente, quindi il processo di indicizzazione non riesce o richiede troppo tempo. Questo problema fa sì che gli indici asincroni siano obsoleti.
+1. Per MBean, se il valore di ora (**Fine** o **LastIndexedTime**) è a più di 45 minuti dall&#39;ora corrente, quindi il processo di indicizzazione non riesce o richiede troppo tempo. Questo problema fa sì che gli indici asincroni non siano aggiornati.
 
-## L&#39;indicizzazione viene sospesa dopo un arresto forzato {#indexing-is-paused-after-a-forced-shutdown}
+## Indicizzazione sospesa dopo un arresto forzato {#indexing-is-paused-after-a-forced-shutdown}
 
-Un arresto forzato comporta AEM sospensione dell&#39;indicizzazione asincrona per un massimo di 30 minuti dopo il riavvio. E, in genere, ci vogliono altri 15 minuti per completare il primo passaggio di reindicizzazione, per un totale di circa 45 minuti (collegando al [Rilevamento iniziale](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) arco temporale di 45 minuti). Se l&#39;indicizzazione viene sospesa dopo uno spegnimento forzato:
+Un arresto forzato comporta la sospensione dell’indicizzazione asincrona da parte dell’AEM per un massimo di 30 minuti dopo il riavvio. E, in genere, sono necessari altri 15 minuti per completare la prima fase di reindicizzazione, per un totale di circa 45 minuti (rilegandosi al [Rilevamento iniziale](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) 45 minuti). Se l&#39;indicizzazione viene sospesa dopo un arresto forzato:
 
-1. In primo luogo, determinare se l&#39;istanza AEM è stata chiusa in modo forzato (il processo di AEM è stato arrestato con forza o si è verificato un guasto di alimentazione) e successivamente riavviata.
+1. In primo luogo, stabilire se l&#39;istanza AEM è stata chiusa in modo forzato (il processo AEM è stato interrotto con la forza o si è verificato un guasto di corrente) e successivamente riavviata.
 
-   * [Registrazione AEM](/help/sites-deploying/configure-logging.md) possono essere esaminati a tal fine.
+   * [Registrazione AEM](/help/sites-deploying/configure-logging.md) possono essere rivisti a questo scopo.
 
-1. Se lo spegnimento forzato si è verificato, al riavvio, AEM automaticamente sospende la reindicizzazione per un massimo di 30 minuti.
-1. Attendi circa 45 minuti per AEM riprendere le normali operazioni di indicizzazione asincrona.
+1. Se si è verificata la chiusura forzata, al riavvio l’AEM sospende automaticamente la reindicizzazione per un massimo di 30 minuti.
+1. Attendere circa 45 minuti affinché l’AEM riprenda le normali operazioni di indicizzazione asincrona.
 
 ## Pool di thread sovraccaricato {#thread-pool-overloaded}
 
 >[!NOTE]
 >
->Per AEM 6.1, assicurati che [AEM 6.1 PCP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) è installato.
+>Per l’AEM 6.1, assicurare che [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) è installato.
 
-In circostanze eccezionali, il pool di thread utilizzato per gestire l&#39;indicizzazione asincrona potrebbe sovraccaricare. Per isolare il processo di indicizzazione, un pool di thread può essere configurato per impedire che altri AEM di lavoro interferiscano con la capacità di Oak di indicizzare il contenuto in modo tempestivo. In questi casi, procedi come segue:
+In circostanze eccezionali, il pool di thread utilizzato per gestire l’indicizzazione asincrona potrebbe subire un sovraccarico. Per isolare il processo di indicizzazione, è possibile configurare un pool di thread per evitare che altri processi AEM interferiscano con la capacità di Oak di indicizzare il contenuto in modo tempestivo. In questi casi, effettuare le seguenti operazioni:
 
-1. Definisci un nuovo pool di thread isolato per Apache Sling Scheduler da utilizzare per l&#39;indicizzazione asincrona:
+1. Definisci un nuovo pool di thread isolati per Apache Sling Scheduler da utilizzare per l’indicizzazione asincrona:
 
-   * Nell&#39;istanza AEM interessata, accedi AEM Console Web OSGi>OSGi>Configurazione>Modulo di pianificazione Apache Sling o vai su https://&lt;host>:&lt;port>/system/console/configMgr (ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
-   * Aggiungi una voce al campo &quot;Pool di thread consentiti&quot; con il valore di &quot;oak&quot;.
+   * Nell’istanza AEM interessata, passa a AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler oppure vai a https://&lt;host>:&lt;port>/system/console/configMgr (ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * Aggiungi una voce al campo &quot;Pool di thread consentiti&quot; con il valore &quot;oak&quot;.
    * Per salvare le modifiche, fai clic su **Salva** in basso a destra.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. Verifica che il nuovo pool di thread Apache Sling Scheduler sia registrato e venga visualizzato nella console web Stato di Apache Sling Scheduler.
+1. Verifica che il nuovo pool di thread di Apache Sling Scheduler sia registrato e visualizzato nella console web Stato Apache Sling Scheduler.
 
-   * Passa alla console Web OSGi AEM>Stato>Utilità di pianificazione Sling oppure vai a https://&lt;host>:&lt;port>/system/console/status-slingscheduler (ad esempio, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
-   * Verifica che siano presenti le seguenti voci del pool:
+   * Passa a AEM OSGi Web Console>Stato>Sling Scheduler oppure vai su https://&lt;host>:&lt;port>/system/console/status-slingscheduler (ad esempio, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * Verificare che siano presenti le seguenti voci del pool:
 
       * ApacheSlingoak
       * ApacheSlingdefault
@@ -77,97 +77,97 @@ In circostanze eccezionali, il pool di thread utilizzato per gestire l&#39;indic
 
 ## La coda di osservazione è piena {#observation-queue-is-full}
 
-Se vengono apportate troppe modifiche e commit all&#39;archivio in un breve periodo di tempo, l&#39;indicizzazione può essere ritardata a causa di una coda di osservazione completa. Innanzitutto, determina se la coda di osservazione è piena:
+Se vengono apportate troppe modifiche e commit all’archivio in un breve periodo di tempo, l’indicizzazione può essere ritardata a causa di una coda di osservazione completa. Innanzitutto, verifica se la coda di osservazione è piena:
 
-1. Vai alla Console web e fai clic sulla scheda JMX o vai a https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
-1. Apri l&#39;MBean delle statistiche dell&#39;archivio Oak e stabilisci se esiste `ObservationQueueMaxLength` è maggiore di 10.000.
+1. Passa alla console Web e fai clic sulla scheda JMX o vai a https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Apri l’MBean delle statistiche dell’archivio Oak e determina se `ObservationQueueMaxLength` è maggiore di 10.000.
 
-   * Nelle operazioni normali, questo valore massimo deve sempre ridursi a zero (in particolare `per second` in modo da verificare che `ObservationQueueMaxLength`Le metriche dei secondi sono 0.
-   * Se i valori sono pari o superiori a 10.000 e aumentano costantemente, indica che almeno una coda (possibilmente più) non può essere elaborata con la stessa velocità con cui si verificano nuove modifiche (commit).
-   * Ogni coda di osservazione ha un limite (10.000 per impostazione predefinita) e, se la coda raggiunge tale limite, l’elaborazione diminuisce.
-   * Quando si utilizza MongoMK, quando le lunghezze di coda aumentano, le prestazioni interne della cache Oak si riducono. Questa correlazione può essere vista in un `missRate` per `DocChildren` nella cache `Consolidated Cache` statistiche MBean.
+   * Nelle operazioni normali, questo valore massimo deve sempre alla fine ridursi a zero (in particolare nel `per second` sezione ), in modo da verificare che `ObservationQueueMaxLength`Le metriche dei secondi di sono 0.
+   * Se i valori sono 10.000 o più e aumentano costantemente, indica che almeno una coda (possibilmente più code) non può essere elaborata con la stessa rapidità con cui si verificano nuove modifiche (commit).
+   * Ogni coda di osservazione ha un limite (10.000 per impostazione predefinita) e se la coda raggiunge tale limite, la sua elaborazione si deteriora.
+   * Quando si utilizza MongoMK, con l’aumentare delle lunghezze delle code, le prestazioni della cache Oak interna si riducono. Questa correlazione può essere vista in un aumento `missRate` per `DocChildren` cache in `Consolidated Cache` Statistiche MBean.
 
 1. Per evitare di superare i limiti accettabili della coda di osservazione, si raccomanda di:
 
-   * Ridurre la frequenza costante di commit. I picchi brevi nei commit sono accettabili, ma il tasso costante dovrebbe essere ridotto.
-   * Aumenta le dimensioni del `DiffCache` come descritto in [Suggerimenti per l&#39;ottimizzazione delle prestazioni > Ottimizzazione archiviazione Mongo > Dimensione della cache del documento](/help/sites-deploying/configuring-performance.md).
+   * Abbassa la percentuale costante di commit. Picchi brevi nei commit sono accettabili, ma la velocità costante deve essere ridotta.
+   * Aumentare le dimensioni del `DiffCache` come descritto in [Suggerimenti per l&#39;ottimizzazione delle prestazioni > Ottimizzazione archiviazione Mongo > Dimensione cache documenti](/help/sites-deploying/configuring-performance.md).
 
 ## Identificazione e correzione di un processo di reindicizzazione bloccato {#identifying-and-remediating-a-stuck-re-indexing-process}
 
 La reindicizzazione può essere considerata &quot;completamente bloccata&quot; in due condizioni:
 
-* La reindicizzazione è lenta, al punto in cui non viene segnalato alcun progresso significativo nei file di log riguardo al numero di nodi attraversati.
+* La reindicizzazione è lenta, al punto che nei file di registro non viene segnalato alcun progresso significativo per quanto riguarda il numero di nodi attraversati.
 
-   * Ad esempio, se non ci sono messaggi nel corso di un’ora o se il progresso è così lento che ci vuole una settimana o più per terminare.
+   * Ad esempio, se non ci sono messaggi nel corso di un’ora o se l’avanzamento è così lento che il completamento richiede una settimana o più.
 
-* La reindicizzazione è bloccata in un ciclo infinito se nei file di log compaiono ripetute eccezioni (ad esempio, `OutOfMemoryException`) nel thread di indicizzazione. La ripetizione di una o più stesse eccezioni nel registro, indica che Oak tenta di indicizzare ripetutamente la stessa cosa, ma non riesce sullo stesso problema.
+* La reindicizzazione è bloccata in un ciclo infinito se nei file di registro vengono visualizzate eccezioni ripetute (ad esempio, `OutOfMemoryException`) nel thread di indicizzazione. La ripetizione di una o più stesse eccezioni nel registro indica che Oak tenta di indicizzare ripetutamente la stessa cosa, ma non riesce per lo stesso problema.
 
-Per identificare e correggere un processo di reindicizzazione bloccato, procedi come segue:
+Per identificare e correggere un processo di reindicizzazione bloccato, effettuare le seguenti operazioni:
 
-1. Per identificare la causa dell&#39;indicizzazione bloccata, è necessario raccogliere le seguenti informazioni:
+1. Per identificare la causa del blocco dell’indicizzazione, è necessario raccogliere le seguenti informazioni:
 
-   * Raccogliere 5 minuti di dump di thread, un dump di thread ogni 2 secondi.
-   * [Imposta il livello DEBUG e i registri per gli appendici](/help/sites-deploying/configure-logging.md).
+   * Raccogli 5 minuti di immagine thread, un’immagine thread ogni 2 secondi.
+   * [Imposta livello DEBUG e registri per le appendici](/help/sites-deploying/configure-logging.md).
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
-   * Raccogliere dati dall&#39;asincrono `IndexStats` MBean:
+   * Raccogliere dati da asincrono `IndexStats` MBean:
 
-      * Passa a AEM Console web OSGi>Principale>JMX>IndexStat>async
+      * Passa a AEM OSGi Web Console>Principale>JMX>IndexStat>asincrono
 
          o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-   * Utilizzo [modalità console di oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) per raccogliere i dettagli di ciò che esiste sotto il * `/:async`* nodo.
-   * Raccogli un elenco di punti di controllo del repository utilizzando `CheckpointManager` MBean:
+   * Utilizzare [modalità console di oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) per raccogliere i dettagli di ciò che esiste sotto il * `/:async`* nodo.
+   * Raccogliere un elenco di punti di controllo dell’archivio utilizzando `CheckpointManager` MBean:
 
-      * Console Web OSGi AEM>Principale>JMX>CheckpointManager>listCheckpoints()
+      * Console Web OSGi AEM>Principale>JMX>Gestione punti di controllo>listCheckpoints()
 
          o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 
 
-1. Dopo aver raccolto tutte le informazioni descritte nel passaggio 1, riavviare AEM.
+1. Dopo aver raccolto tutte le informazioni descritte nel passaggio 1, riavviare l&#39;AEM.
 
-   * Il riavvio del AEM può risolvere il problema se c&#39;è un carico simultaneo elevato (overflow della coda di osservazione o qualcosa di simile).
-   * Se un riavvio non risolve il problema, apri un problema con [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) e fornire tutte le informazioni raccolte nel passaggio 1.
+   * Il riavvio dell’AEM può risolvere il problema in presenza di un carico concorrente elevato (overflow della coda di osservazione o simile).
+   * Se il riavvio non risolve il problema, apri un problema con [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support) e fornire tutte le informazioni raccolte nel passaggio 1.
 
-## Arresto sicuro della reindicizzazione asincrona {#safely-aborting-asynchronous-re-indexing}
+## Interruzione sicura della reindicizzazione asincrona {#safely-aborting-asynchronous-re-indexing}
 
-La reindicizzazione può essere interrotta in modo sicuro (interrotta prima del completamento) tramite `async, async-reindex`e f `ulltext-async` corsie di indicizzazione ( `IndexStats` Mbean). Per ulteriori informazioni, consulta anche la documentazione di Apache Oak su [Come interrompere la reindicizzazione](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex). Inoltre, considera quanto segue:
+La reindicizzazione può essere interrotta in modo sicuro (interrotta prima del completamento) tramite `async, async-reindex`e f `ulltext-async` corsie di indicizzazione ( `IndexStats` Mbean). Per ulteriori informazioni, consulta anche la documentazione di Apache Oak su [Interrompere la reindicizzazione](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex). Inoltre, considera quanto segue:
 
-* La reindicizzazione degli indici delle proprietà Lucene e Lucene può essere interrotta in quanto sono naturalmente asincroni.
-* La reindicizzazione degli indici delle proprietà Oak può essere interrotta solo se la reindicizzazione è stata avviata tramite il `PropertyIndexAsyncReindexMBean`.
+* La reindicizzazione degli indici di proprietà Lucene e Lucene può essere interrotta in quanto sono naturalmente asincroni.
+* La reindicizzazione degli indici di proprietà Oak può essere interrotta solo se è stata avviata tramite `PropertyIndexAsyncReindexMBean`.
 
 Per interrompere in modo sicuro la reindicizzazione, segui questi passaggi:
 
-1. Identificare la MBean IndexStats che controlla la corsia di reindicizzazione che deve essere arrestata.
+1. Identificare la voce MBean IndexStats che controlla la corsia di reindicizzazione che deve essere interrotta.
 
-   * Passa alla MBean IndexStats appropriata tramite la console JMX andando alla console OSGi Web Console>Principale>JMX o https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
-   * Apri la MBean IndexStats in base alla corsia di reindicizzazione che desideri arrestare ( `async`, `async-reindex`oppure `fulltext-async`)
+   * Passa all’MBean IndexStats appropriato tramite la console JMX, da AEM OSGi Web Console>Principale>JMX o https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+   * Aprire la voce MBean IndexStats in base alla corsia di reindicizzazione che si desidera interrompere ( `async`, `async-reindex`, o `fulltext-async`)
 
-      * Per identificare la corsia appropriata e quindi l&#39;istanza MBean IndexStats, controlla la proprietà &quot;async&quot; degli indici Oak. La proprietà &quot;async&quot; contiene il nome della corsia: `async`, `async-reindex`oppure `fulltext-async`.
-      * La corsia è disponibile anche accedendo a AEM Index Manager nella colonna &quot;Async&quot;. Per accedere al Gestore indici, passare a Operazioni>Diagnosi>Gestione indici.
+      * Per identificare la corsia appropriata e quindi l’istanza MBean IndexStats, controlla la proprietà &quot;async&quot; degli indici Oak. La proprietà &quot;async&quot; contiene il nome della corsia: `async`, `async-reindex`, o `fulltext-async`.
+      * La corsia è disponibile anche accedendo a Gestione indice AEM nella colonna &quot;Asincrono&quot;. Per accedere a Gestione indice, passare a Operazioni>Diagnosi>Gestione indice.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
-1. Richiama il `abortAndPause()` sul comando appropriato `IndexStats` MBean.
-1. Contrassegna la definizione dell&#39;indice Oak in modo appropriato per impedire la ripresa della reindicizzazione quando la corsia di indicizzazione riprende.
+1. Richiama `abortAndPause()` comando sulla scheda appropriata `IndexStats` MBean.
+1. Contrassegna la definizione dell’indice Oak in modo appropriato per impedire la ripresa della reindicizzazione quando la corsia di indicizzazione riprende.
 
-   * Quando si reindicizza un **esistente** index, imposta la proprietà reindex su false
+   * Durante la reindicizzazione di un **esistente** , impostare la proprietà reindex su false
 
       * `/oak:index/someExistingIndex@reindex=false`
-   * Oppure, per un **nuovo** indice:
+   * Oppure, per un **nuovo** indice, ovvero:
 
-      * Imposta la proprietà type su disabled
+      * Impostare la proprietà type su disabled
 
          * `/oak:index/someNewIndex@type=disabled`
-      * o rimuovere completamente la definizione dell&#39;indice
+      * o rimuovere completamente la definizione dell’indice
 
-   Al termine, conferma le modifiche all’archivio.
+   Al termine, esegui il commit delle modifiche nell’archivio.
 
 1. Infine, riprendere l&#39;indicizzazione asincrona sulla corsia di indicizzazione interrotta.
 
-   * In `IndexStats` MBean che ha emesso il `abortAndPause()` nel passaggio 2, richiamare il `resume()`comando.
+   * In `IndexStats` MBean che ha emesso `abortAndPause()` nel passaggio 2, richiama il comando `resume()`comando.
 
-## Impedire la reindicizzazione lenta {#preventing-slow-re-indexing}
+## Prevenzione della reindicizzazione lenta {#preventing-slow-re-indexing}
 
-È meglio reindicizzare durante i periodi di silenzio (ad esempio, non durante un caricamento di contenuti di grandi dimensioni) e idealmente durante le finestre di manutenzione quando il caricamento AEM è noto e controllato. Inoltre, assicurarsi che la reindicizzazione non abbia luogo durante altre attività di manutenzione.
+È meglio reindicizzare durante i periodi di silenzio (ad esempio, non durante un caricamento di contenuti di grandi dimensioni) e idealmente durante le finestre di manutenzione quando il caricamento dell’AEM è noto e controllato. Inoltre, assicurati che la reindicizzazione non avvenga durante altre attività di manutenzione.

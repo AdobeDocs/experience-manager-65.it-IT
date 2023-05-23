@@ -1,5 +1,5 @@
 ---
-title: Conversione di file tramite PDF Generator
+title: Conversione di file con PDF Generator
 seo-title: Converting files using PDF Generator
 description: Scopri come convertire i file utilizzando PDF Generator.
 seo-description: Learn how to convert files using PDF Generator.
@@ -18,104 +18,104 @@ ht-degree: 0%
 
 ---
 
-# Conversione di file tramite PDF Generator{#converting-files-using-pdf-generator}
+# Conversione di file con PDF Generator{#converting-files-using-pdf-generator}
 
-È possibile utilizzare le pagine web di PDF Generator per convertire i file.
+È possibile utilizzare le pagine Web di PDF Generator per convertire i file.
 
 ## Creare un file PDF {#create-a-pdf-file}
 
 1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Crea PDF.
-1. Fai clic su Sfoglia per trovare e selezionare il file.
+1. Fare clic su Sfoglia per trovare e selezionare il file.
 
    >[!NOTE]
    >
-   >PDF Generator è in grado di rilevare automaticamente il tipo di file dei file .doc, .xls, .ppt e .rtf, anche quando l’estensione del file manca al nome del file. Questa funzione non funziona con file .docx, .xlsx e .pptx.
+   >PDF Generator è in grado di rilevare automaticamente il tipo di file con estensione doc, xls, ppt e rtf, anche quando nel nome del file manca l&#39;estensione. Questa funzionalità non funziona con i file docx, xlsx e pptx.
 
-1. In Impostazioni di configurazione, seleziona Usa impostazioni personalizzate o Carica file impostazioni.
+1. In Impostazioni di configurazione, selezionare Usa impostazioni personalizzate o Carica file impostazioni.
 
-   * Se utilizzi impostazioni personalizzate, seleziona un’impostazione Adobe PDF, un’impostazione di protezione e un tipo di file e specifica un timeout.
+   * Se utilizzi impostazioni personalizzate, seleziona un’impostazione Adobe PDF, un’impostazione di sicurezza e un’impostazione del tipo di file, quindi specifica un timeout.
 
-      Le impostazioni di Adobe PDF sono applicabili solo alle conversioni da PS a PDF, da EPS a PDF, da PRN a PDF, da immagine a PDF con OCR attivo e da nativo a PDF. L’impostazione time-out specifica il tempo massimo necessario al completamento della conversione. Il valore predefinito è 270 secondi. Queste impostazioni non vengono utilizzate durante le conversioni da Image-to-PDF e da OpenOffice-to-PDF.
+      Le impostazioni di Adobe PDF sono applicabili solo alle conversioni PS-to-PDF, EPS-to-PDF, PRN-to-PDF, Image-to-PDF con OCR e Native-to-PDF. L’impostazione di timeout specifica il tempo massimo necessario per il completamento della conversione. Il valore predefinito è 270 secondi. Queste impostazioni non vengono utilizzate durante le conversioni da immagine a PDF e da OpenOffice a PDF.
 
-   * Se si sta caricando un file di impostazioni, digitare il percorso e il nome nella casella oppure fare clic su Sfoglia per trovare e selezionare il file.
+   * Se si sta caricando un file di impostazioni, digitarne il percorso e il nome nella casella oppure fare clic su Sfoglia per trovare e selezionare il file.
 
-1. (Facoltativo) In XMP file metadati, digitare il percorso e il nome del file di XMP oppure fare clic su Sfoglia per trovare e selezionare il file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (Vedi [Informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files).)
-1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento a esso. Se si verifica un errore durante la conversione, viene visualizzato un avviso. Se si sta creando un file Postscript, l&#39;avviso contiene anche un collegamento al file di registro.
-1. Fare clic sul collegamento relativo al file PDF. Il file viene aperto in Acrobat.
+1. (Facoltativo) In File metadati XMP digitare il percorso e il nome del file XMP oppure fare clic su Sfoglia per individuare e selezionare il file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (vedere [Informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento. Se si verifica un errore durante la conversione, viene visualizzato un avviso. Se si sta creando un file Postscript, l&#39;avviso contiene anche un collegamento al file di registro.
+1. Fai clic sul collegamento del file PDF. Il file viene aperto in Acrobat.
 
 ### Informazioni sui file XMP {#about-xmp-files}
 
-I documenti PDF creati da PDF Generator in Acrobat 5.0 o versioni successive contengono i metadati del documento in formato XML. *Metadati* include informazioni sul documento e sul relativo contenuto, ad esempio nome dell&#39;autore, parole chiave e informazioni sul copyright utilizzabili dalle utilità di ricerca.
+I documenti PDF creati da PDF Generator in Acrobat 5.0 o versione successiva contengono metadati di documento in formato XML. *Metadati* include informazioni sul documento e sul relativo contenuto, ad esempio il nome dell&#39;autore, le parole chiave e le informazioni sul copyright utilizzabili dalle utilità di ricerca.
 
 I metadati del documento contengono (ma non sono limitati a) informazioni che vengono visualizzate anche nella scheda Descrizione della finestra di dialogo Proprietà documento in Acrobat. Le modifiche apportate nella scheda Descrizione vengono riportate nei metadati del documento. I metadati dei documenti possono essere estesi e modificati utilizzando prodotti di terze parti.
 
-Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni di Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati dei documenti tra flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in XMP formato, facilitando la condivisione dei metadati tra i vari documenti. Per ulteriori informazioni sui file XMP, vedi [Piattaforma di metadati estensibili (XMP)](https://www.adobe.com/products/xmp/) e [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) fornisce applicazioni Adobe con un framework XML comune che standardizza la creazione, l&#39;elaborazione e lo scambio di metadati di documenti tra i flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in formato XMP, semplificando la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file XMP, vedi [Piattaforma di metadati estensibili (XMP)](https://www.adobe.com/products/xmp/) e [Centro per sviluppatori XMP Adobe](https://www.adobe.com/devnet/xmp.html).
 
-È possibile creare file XMP in Acrobat.
+Puoi creare file XMP in Acrobat.
 
 ## Convertire un file HTML o ZIP in PDF {#convert-an-html-file-or-zip-file-to-pdf}
 
 È possibile utilizzare PDF Generator per convertire i seguenti tipi di file in Adobe PDF:
 
-* File HTML, che è possibile convertire caricando un file HTML o specificando l’URL di una pagina web o di un sito web.
+* File HTML, che è possibile convertire caricando un file HTML o specificando l&#39;URL di una pagina Web o di un sito Web.
 * File archiviati (ZIP), che possono contenere file HTML, file immagine o entrambi.
 
-Se il file ZIP contiene più di un file HTML al livello più basso della gerarchia delle cartelle, anche il file ZIP deve contenere un file index.htm o index.html.
+Se il file ZIP contiene più di un file HTML al livello inferiore della gerarchia delle cartelle, il file ZIP deve contenere anche un file index.htm o index.html.
 
 >[!NOTE]
 >
->* La funzione da HTML a PDF richiede alcuni font nella directory dei font di sistema. Nei sistemi Linux, Solaris e AIX, la directory dei font di sistema deve contenere il font Courier. Nei sistemi Windows, la directory dei font di sistema deve contenere Times New Roman.
+>* La funzionalità HTML-PDF richiede alcuni tipi di carattere nella directory dei caratteri di sistema. Nei sistemi Linux, Solaris e AIX, la directory dei font di sistema deve contenere il font Courier. Nei sistemi Windows, la directory dei caratteri di sistema deve contenere Times New Roman.
 >
->* (Solo sistema basato su UNIX) Uno dei seguenti font giapponesi deve essere disponibile sul server AEM Forms per convertire una pagina web con font giapponese in un documento PDF.
+>* (Solo sistemi basati su UNIX) Per convertire una pagina Web con caratteri giapponesi in un documento PDF, nel server AEM Forms deve essere disponibile uno dei seguenti caratteri giapponesi.
 >
 >  * &quot;Sazanami Gothic&quot;
->  * &quot;Kozuka Gothic Pro-VI&quot;
->  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * Kozuka Gothic Pro-VI
+>  * Kozuka Mincho Pro-VI
 >  * &quot;Sazanami Gothic&quot;
 >  * &quot;Kozuka Mincho Pr6N&quot;
 >  * &quot;Sazanami Mincho&quot;
 >  * &quot;Adobe Heiti Std&quot;
->  * &quot;Adobe Song Std&quot;
+>  * &quot;Adobe Song Standard&quot;
 >
->* Per caricare un file dal file system locale, utilizza l’opzione Carica file nella pagina HTML-PDF.
+>* Per caricare un file dal file system locale, utilizzare l&#39;opzione Carica file nella pagina HTML in PDF.
 
 
-1. Nella console di amministrazione, fare clic su Servizi > Generatore di PDF > da HTML a PDF.
+1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > HTML a PDF.
 1. Specificare il file da convertire eseguendo una delle operazioni seguenti:
 
-   * In Carica file digitare il percorso e il nome del file HTML o del file ZIP oppure fare clic su Sfoglia per individuarlo e selezionarlo.
-   * Nella casella Specifica URL digitare l’URL della pagina o del sito Web da convertire.
+   * In Carica file digitare il percorso e il nome del file HTML o ZIP oppure fare clic su Sfoglia per individuarlo e selezionarlo.
+   * Nella casella Specifica URL digitare l&#39;URL della pagina o del sito Web da convertire.
 
    >[!NOTE]
    >
-   >Il file che si sta convertendo deve avere un&#39;estensione del nome del file .html, .htm o .zip.
+   >Il file che si sta convertendo deve avere l&#39;estensione html, htm o zip.
 
-1. Specifica le impostazioni di configurazione:
+1. Specificare le impostazioni di configurazione:
 
-   * Per utilizzare le impostazioni personalizzate, selezionare Usa impostazioni personalizzate, specificare la protezione e le impostazioni del tipo di file e specificare un valore di timeout. Il valore predefinito è 270 secondi.
+   * Per utilizzare le impostazioni personalizzate, seleziona Usa impostazioni personalizzate, specifica le impostazioni di sicurezza e del tipo di file, quindi specifica un valore di timeout. Il valore predefinito è 270 secondi.
    >[!NOTE]
    >
-   >Se il servizio Generate PDF è stato configurato per l&#39;utilizzo di Acrobat WebCapture, le impostazioni relative al tipo di file selezionate in questa pagina non influiscono sul PDF prodotto. Apporta le modifiche appropriate alla versione di Acrobat installata sul server.
+   >Se il servizio Generate PDF è stato configurato per l&#39;utilizzo di Acrobat WebCapture, le impostazioni dei tipi di file selezionate in questa pagina non influiscono sul PDF prodotto. Apporta invece le modifiche appropriate alla versione di Acrobat installata sul server.
 
    * Per utilizzare un file di impostazioni esistente, selezionare Carica file di impostazioni e fare clic su Sfoglia per passare al percorso del file.
 
 
-1. Per caricare un file XMP, fare clic su Sfoglia e passare al percorso del file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (Vedi [Informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. Per caricare un file XMP, fai clic su Sfoglia e vai al percorso del file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. (vedere [Informazioni sui file XMP](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento al file PDF.
 1. Fai clic sul collegamento per visualizzare il documento PDF in Acrobat.
 
-## Esportare un file PDF in un altro formato di file (solo Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
+## Esportare un file PDF in un altro formato (solo Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
 
 È possibile esportare i file PDF in vari formati di file, come descritto nel capitolo Generate PDF Service di [Riferimento servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore PDF > Export PDF.
+1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Export PDF.
 1. Fare clic su Sfoglia per individuare il file PDF da esportare.
-1. Nell’elenco File di Export PDF in, selezionare il formato in cui esportare il file PDF.
-1. Nella casella Specifica un timeout immettere il tempo di attesa prima che l&#39;applicazione si esaurisca. Il valore predefinito è 270 secondi.
+1. Nell&#39;elenco File di Export PDF da selezionare il formato in cui esportare il file PDF.
+1. Nella casella Specificare un timeout immettere il tempo di attesa prima del timeout dell&#39;applicazione. Il valore predefinito è 270 secondi.
 
-   Il tempo di conversione visualizzato quando il file viene convertito può essere maggiore del valore qui specificato. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). time. Il valore Specifica un timeout è solo il tempo impiegato per convertire il file.
+   Il tempo di conversione visualizzato quando il file viene convertito potrebbe essere maggiore del valore specificato in questo campo. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). volta. Il valore di Specifica timeout corrisponde al tempo necessario per convertire il file.
 
-1. (Facoltativo) In **Specifica profilo di verifica preliminare personalizzato** fare clic su Sfoglia e selezionare un&#39;opzione [profilo di verifica preliminare personalizzato](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione dei documenti in formato archivio PDF (PDF/A).
+1. (Facoltativo) In **Specificare un profilo di verifica preliminare personalizzato** , fare clic su Sfoglia e selezionare un [profilo verifica preliminare personalizzato](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato archivio PDF (PDF/A).
 1. Fai clic su Esporta. Al termine della conversione, viene visualizzato un collegamento al file esportato.
 1. Fai clic sul collegamento per visualizzare il file convertito.
 
@@ -125,13 +125,13 @@ PDF Generator supporta la riduzione delle dimensioni dei file PDF.
 
 >[!NOTE]
 >
->L’ottimizzazione di un documento con firma digitale rimuove e invalida le firme digitali.
+>L&#39;ottimizzazione di un documento con firma digitale rimuove e invalida le firme digitali.
 
 1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Optimize PDF.
 1. Fare clic su Sfoglia per individuare il file PDF da ottimizzare.
-1. Specifica le impostazioni di configurazione:
+1. Specificare le impostazioni di configurazione:
 
-   * Per utilizzare le impostazioni personalizzate, selezionare Usa impostazioni personalizzate, specificare le impostazioni del tipo di file e specificare un valore di timeout. Il valore predefinito è 270 secondi.
+   * Per utilizzare le impostazioni personalizzate, seleziona Usa impostazioni personalizzate, specifica le impostazioni del tipo di file e specifica un valore di timeout. Il valore predefinito è 270 secondi.
    * Per utilizzare un file di impostazioni esistente, selezionare Carica file di impostazioni e fare clic su Sfoglia per passare al percorso del file.
 
 1. Fai clic su Crea.

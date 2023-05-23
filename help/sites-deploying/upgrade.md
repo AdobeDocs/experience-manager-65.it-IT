@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento a AEM 6.5
 seo-title: Upgrading to AEM 6.5
-description: Scopri le nozioni di base per l’aggiornamento di un’installazione AEM precedente a AEM 6.5.
+description: Scopri le nozioni di base sull’aggiornamento di un’installazione AEM precedente a AEM 6.5.
 seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -19,71 +19,71 @@ ht-degree: 0%
 
 # Aggiornamento a AEM 6.5 {#upgrading-to-aem}
 
-In questa sezione viene descritto l’aggiornamento di un’installazione AEM a AEM 6.5:
+In questa sezione, trattiamo l’aggiornamento di un’installazione AEM a AEM 6.5:
 
 * [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)
-* [Valutazione della complessità dell’aggiornamento con rilevatore pattern](/help/sites-deploying/pattern-detector.md)
+* [Valutazione della complessità dell’aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md)
 * [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
 
    <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md)
-* [Aggiornamento di codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
 * [Esecuzione di un aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md)
-* [Controlli e risoluzione dei problemi post-aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Controlli post-aggiornamento e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)
-* [Migrazione dei contenuti Lazy](/help/sites-deploying/lazy-content-migration.md)
+* [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md)
 * [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
-Per fare un riferimento più agevole alle istanze AEM coinvolte in queste procedure, in questi articoli sono utilizzati i termini seguenti:
+Per un riferimento più semplice ai casi AEM coinvolti in queste procedure, in questi articoli vengono utilizzati i seguenti termini:
 
-* La *source* L&#39;istanza è l&#39;istanza AEM da cui stai eseguendo l&#39;aggiornamento.
-* La *target* L&#39;istanza è quella in cui si sta effettuando l&#39;aggiornamento.
+* Il *sorgente* è l&#39;istanza dell&#39;AEM da cui si sta eseguendo l&#39;aggiornamento.
+* Il *destinazione* è quella a cui si sta effettuando l&#39;aggiornamento.
 
 >[!NOTE]
 >
->Nell&#39;ambito degli sforzi volti a migliorare l&#39;affidabilità degli aggiornamenti, AEM ha subito una ristrutturazione completa degli archivi. Per ulteriori informazioni su come allineare con la nuova struttura, consulta [Ristrutturazione dell’archivio in AEM.](/help/sites-deploying/repository-restructuring.md)
+>Nell’ambito degli sforzi volti a migliorare l’affidabilità degli aggiornamenti, l’AEM ha subito una ristrutturazione completa dell’archivio. Per ulteriori informazioni su come allinearsi alla nuova struttura, consulta [Ristrutturazione dell’archivio in AEM.](/help/sites-deploying/repository-restructuring.md)
 
-## Cosa è cambiato? {#what-has-changed}
+## Cosa È Cambiato? {#what-has-changed}
 
-Di seguito sono riportate le principali modifiche apportate alle note nelle ultime diverse versioni di AEM:
+Di seguito sono riportati i principali cambiamenti in atto nelle ultime versioni dell’AEM:
 
-AEM 6.0 ha introdotto il nuovo archivio Jackrabbit Oak. I gestori di persistenza sono stati sostituiti da [Micro Kernel](/help/sites-deploying/platform.md#contentbody_title_4). A partire dalla versione 6.1, CRX2 non è più supportato. Per migrare gli archivi CRX2 dalle istanze 5.6.1, è necessario eseguire uno strumento di migrazione denominato crx2oak. Per ulteriori informazioni, consulta [Utilizzo dello strumento di migrazione CRX2OAK](/help/sites-deploying/using-crx2oak.md).
+L’AEM 6.0 ha introdotto il nuovo archivio Jackrabbit Oak. I Persistence Manager sono stati sostituiti da [Microkernel](/help/sites-deploying/platform.md#contentbody_title_4). A partire dalla versione 6.1, CRX2 non è più supportato. Per migrare gli archivi CRX2 dalle istanze 5.6.1, è necessario eseguire uno strumento di migrazione denominato crx2oak. Per ulteriori informazioni, consulta [Utilizzo dello strumento di migrazione CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-Se devi utilizzare Assets Insights e stai eseguendo l’aggiornamento da una versione precedente alla AEM 6.2, devi eseguire la migrazione delle risorse e generare gli ID tramite un tag JMX. Nei nostri test interni, le risorse 125K in un ambiente TarMK sono state migrate in un&#39;ora, ma i risultati potrebbero variare.
+Se si desidera utilizzare Assets Insights e si sta eseguendo l’aggiornamento da una versione precedente a AEM 6.2, è necessario migrare le risorse e generare gli ID tramite un bean JMX. Nei nostri test interni, è stata effettuata la migrazione delle risorse 125.000 in un ambiente TarMK in un’ora, ma i risultati possono variare.
 
-6.3 ha introdotto un nuovo formato per `SegmentNodeStore`, che è alla base dell’implementazione di TarMK. Se esegui l’aggiornamento da una versione precedente alla versione 6.3 di AEM, sarà necessaria una migrazione dell’archivio come parte dell’aggiornamento, che implica tempi di inattività del sistema.
+6.3 ha introdotto un nuovo formato per `SegmentNodeStore`, che è la base dell’implementazione di TarMK. Se esegui l’aggiornamento da una versione precedente a AEM 6.3, sarà necessaria una migrazione dell’archivio come parte dell’aggiornamento, che comporta tempi di inattività del sistema.
 
-L&#39;ingegneria Adobe stima che questo sia di circa 20 minuti. La reindicizzazione non sarà necessaria. Inoltre, è stata rilasciata una nuova versione dello strumento crx2oak per lavorare con il nuovo formato dell&#39;archivio.
+L&#39;ingegnere Adobe stima che siano circa 20 minuti. Tieni presente che la reindicizzazione non sarà necessaria. Inoltre, è stata rilasciata una nuova versione dello strumento crx2oak per l’utilizzo con il nuovo formato di archivio.
 
-**Questa migrazione non è necessaria se si esegue l’aggiornamento da AEM 6.3 a AEM 6.5.**
+**Questa migrazione non è necessaria per l’aggiornamento da AEM 6.3 a AEM 6.5.**
 
 Le attività di manutenzione pre-aggiornamento sono state ottimizzate per supportare l’automazione.
 
-Le opzioni di utilizzo della riga di comando dello strumento crx2oak sono state modificate per essere facili da usare e supportare più percorsi di aggiornamento.
+Le opzioni di utilizzo della riga di comando dello strumento crx2oak sono state modificate per semplificare l’automazione e supportare più percorsi di aggiornamento.
 
-Anche i controlli post-aggiornamento sono stati resi facili dall&#39;automazione.
+I controlli post-aggiornamento sono stati resi anche più semplici da automatizzare.
 
-La raccolta periodica degli oggetti inattivi di revisioni e la raccolta degli oggetti inattivi dell&#39;archivio dati sono ora attività di manutenzione ordinaria che devono essere eseguite periodicamente. Con l&#39;introduzione di AEM 6.3, Adobe supporta e consiglia il cleanup delle revisioni online. Vedi [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md) per informazioni su come configurare queste attività.
+La raccolta periodica di oggetti inattivi di revisioni e la raccolta di oggetti inattivi dell’archivio dati sono ora attività di manutenzione ordinaria che devono essere eseguite periodicamente. Con l’introduzione di AEM 6.3, Adobe supporta e consiglia Online Revision Cleanup. Consulta [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md) per informazioni su come configurare queste attività.
 
-AEM di recente introduce [Rilevatore pattern](/help/sites-deploying/pattern-detector.md) per valutare la complessità dell&#39;aggiornamento quando si inizia a pianificare l&#39;aggiornamento. 6.5 ha anche una forte attenzione [compatibilità con le versioni precedenti](/help/sites-deploying/backward-compatibility.md) delle funzioni. Infine, best practice per [aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md) sono aggiunti anche.
+L&#39;AEM ha recentemente introdotto [Rilevatore pattern](/help/sites-deploying/pattern-detector.md) per la valutazione della complessità dell&#39;aggiornamento quando si inizia la pianificazione dell&#39;aggiornamento. 6.5 attribuisce inoltre grande importanza alla [retrocompatibilità](/help/sites-deploying/backward-compatibility.md) di funzioni. Infine, le best practice per [aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md) vengono aggiunti anche.
 
-Per ulteriori dettagli sulle modifiche apportate alle versioni recenti di AEM, consulta le note complete sulla versione:
+Per maggiori dettagli sulle altre modifiche apportate alle versioni recenti dell’AEM, consulta le note complete sulla versione:
 
 * [Note sulla versione più recente del Service Pack di Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
-## Panoramica dell&#39;aggiornamento {#upgrade-overview}
+## Panoramica dell’aggiornamento {#upgrade-overview}
 
-L&#39;aggiornamento di AEM è un processo a più passaggi, a volte a più mesi. La seguente struttura è stata fornita come panoramica di ciò che è incluso in un progetto di aggiornamento e del contenuto incluso in questa documentazione:
+L’aggiornamento dell’AEM è un processo a più fasi, a volte a più mesi. La seguente struttura fornisce una panoramica di ciò che è incluso in un progetto di aggiornamento e del contenuto incluso in questa documentazione:
 
 ![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
 
 ## Flusso di aggiornamento {#upgrade-overview-1}
 
-Il diagramma seguente acquisisce il flusso consigliato complessivo evidenziando l’approccio di aggiornamento. Nota il riferimento alle nuove funzioni introdotte. L&#39;aggiornamento deve iniziare con il rilevatore pattern (vedi [Valutazione della complessità dell’aggiornamento con rilevatore pattern](/help/sites-deploying/pattern-detector.md)), che dovrebbe consentirti di decidere il percorso da intraprendere per la compatibilità con AEM 6.4 in base ai pattern nel rapporto generato.
+Il diagramma seguente acquisisce il flusso complessivo consigliato evidenziando l’approccio di aggiornamento. Nota il riferimento alle nuove funzioni introdotte. L’aggiornamento deve iniziare con il rilevatore pattern (vedi [Valutazione della complessità dell’aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md)) che dovrebbe consentirti di decidere il percorso da seguire per garantire la compatibilità con AEM 6.4 in base ai modelli presenti nel rapporto generato.
 
-La versione 6.5 di è stata messa a fuoco per mantenere tutte le nuove funzioni compatibili con le versioni precedenti, ma nei casi in cui si riscontrano ancora problemi di compatibilità con le versioni precedenti, la modalità di compatibilità consente di posticipare temporaneamente lo sviluppo per mantenere il codice personalizzato conforme alla versione 6.5. Questo approccio consente di evitare lo sforzo di sviluppo subito dopo l’aggiornamento (consulta [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+Nella versione 6.5 era stato fatto un grande sforzo per mantenere tutte le nuove funzioni compatibili con le versioni precedenti, ma nei casi in cui riscontri ancora alcuni problemi di compatibilità con le versioni precedenti, la modalità di compatibilità consente di posticipare temporaneamente lo sviluppo per mantenere il codice personalizzato conforme alla versione 6.5. Questo approccio consente di evitare sforzi di sviluppo subito dopo l&#39;aggiornamento (vedi [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
-Infine, nel tuo ciclo di sviluppo 6.5, le funzioni introdotte in Aggiornamento Sostenibile (vedi [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)) ti aiuta a seguire le best practice per rendere gli aggiornamenti futuri ancora più efficienti e diretti.
+Infine, nel tuo ciclo di sviluppo 6.5, le funzioni introdotte in Aggiornamenti sostenibili (vedi [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)) consente di seguire le best practice per rendere gli aggiornamenti futuri ancora più efficienti e semplici.
 
-![6_4_upgrade_overviewflowgraph-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+![6_4_upgrade_overviewflowdiagramma-nuova pagina3](assets/6_4_upgrade_overviewflowchart-newpage3.png)

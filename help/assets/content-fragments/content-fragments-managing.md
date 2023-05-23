@@ -1,6 +1,6 @@
 ---
 title: Gestione dei frammenti di contenuto
-description: Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
+description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
-Scopri come utilizzare la console Risorse per gestire i frammenti di contenuto AEM, alla base dei contenuti headless.
+Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
 
 Dopo aver definito i [Modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per [creare i tuoi frammenti di contenuto](#creating-a-content-fragment).
 
@@ -37,7 +37,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
->I frammenti di contenuto sono memorizzati come **Risorse**, così come vengono gestiti principalmente dal **Risorse** console.
+>I frammenti di contenuto sono memorizzati come **Risorse**, quindi sono gestite principalmente dal **Risorse** console.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -47,19 +47,19 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
-Il metodo di creazione di un frammento di contenuto è:
+Il metodo per creare un frammento di contenuto è:
 
 1. Passa alla cartella **Risorse** in cui desideri creare il frammento.
 1. Per aprire la procedura guidata, seleziona **Crea**, quindi **Frammento di contenuto**.
 1. Il primo passaggio della procedura guidata richiede di specificare la base del nuovo frammento.
 
-   * [Modello](/help/assets/content-fragments/content-fragments-models.md) - utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio **Avventura** model
+   * [Modello](/help/assets/content-fragments/content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato, ad esempio **Avventura** modello
 
       * Vengono visualizzati tutti i modelli disponibili.
 
    Dopo la selezione, utilizza **Successivo** per procedere.
 
-   ![base del frammento](assets/cfm-managing-01.png)
+   ![base frammento](assets/cfm-managing-01.png)
 
 1. Nel passaggio **Proprietà** specifica:
 
@@ -78,22 +78,22 @@ Il metodo di creazione di un frammento di contenuto è:
 
       * **Nome**
 
-         il nome; verrà utilizzato per formare l’URL.
+         Il nome; verrà utilizzato per formare l’URL.
 
-         Obbligatorio; viene derivato automaticamente dal titolo, ma può essere aggiornato.
+         Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
 
 
 1. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
 
    >[!NOTE]
-   >In **Elenco** della console è possibile aggiornare la **Visualizza impostazioni** per abilitare **Modello per frammento di contenuto** colonna.
+   >In entrata **Elenco** della console è possibile aggiornare il **Impostazioni vista** per attivare **Modello per frammenti di contenuto** colonna.
 
-## Azioni per un frammento di contenuto nella console Risorse {#actions-for-a-content-fragment-assets-console}
+## Azioni per un frammento di contenuto nella console Assets {#actions-for-a-content-fragment-assets-console}
 
-In **Risorse** per i frammenti di contenuto sono disponibili diverse azioni:
+In **Risorse** console è disponibile una serie di azioni per i frammenti di contenuto:
 
-* Dalla barra degli strumenti; dopo aver selezionato il frammento sono disponibili tutte le azioni appropriate.
-* Come [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibili per le singole schede di frammento.
+* Dalla barra degli strumenti; dopo aver selezionato il frammento, sono disponibili tutte le azioni appropriate.
+* As [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibile per le singole schede dei frammenti.
 
 ![azioni](assets/cfm-managing-02.png)
 
@@ -101,7 +101,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Download**
 
-   * Salvare il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
+   * Salva il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
 * **Crea**
 * **Pagamento**
@@ -111,11 +111,11 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Modifica**
 
-   * Permette di [aprire il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti associati e metadati.
+   * Ti consente di: [apri il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti e metadati associati.
 
 * **Gestisci i tag**
 * **Alla raccolta**
-* **Copia** e **Incolla**)
+* **Copia** (e **Incolla**)
 * **Sposta**
 * **Pubblicazione rapida**
 * **Gestisci pubblicazione**
@@ -123,7 +123,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 >[!NOTE]
 >
->Molti di questi sono [azioni standard per Assets](/help/assets/manage-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
+>Molti di questi sono [azioni standard per Assets](/help/assets/manage-assets.md) e/o [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
@@ -137,11 +137,11 @@ Per aprire la pagina per la modifica:
 >
 >Per modificare un frammento di contenuto sono necessarie le autorizzazioni appropriate. Se riscontri problemi, contatta l’amministratore del sistema.
 
-1. Utilizza la **Risorse** per passare alla posizione del frammento di contenuto.
-1. Apri il frammento per la modifica:
+1. Utilizza il **Risorse** per passare alla posizione del frammento di contenuto.
+1. Apri il frammento per la modifica eseguendo una delle seguenti operazioni:
 
-   * Tocca o fai clic sul collegamento frammento o frammento (a seconda della vista della console).
-   * Selezione del frammento, quindi **Modifica** dalla barra degli strumenti.
+   * Tocca o fai clic sul collegamento del frammento o del frammento (a seconda della vista della console).
+   * Selezionando il frammento, quindi **Modifica** dalla barra degli strumenti.
 
 1. Viene aperto l’editor frammenti. Apporta le modifiche necessarie:
 
@@ -359,9 +359,9 @@ Se pubblichi un frammento di contenuto per il quale il modello non è ancora sta
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
-* Dopo la creazione; utilizzo [azioni disponibili nella console Risorse](#actions-for-a-content-fragment-assets-console).
+* Dopo la creazione; utilizzo [azioni disponibili nella console Assets](#actions-for-a-content-fragment-assets-console).
 * Dall’[editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
-* Quando [pubblicare una pagina che utilizza il frammento](/help/sites-authoring/content-fragments.md#publishing); il frammento viene elencato nei riferimenti di pagina.
+* Quando [pubblicare una pagina che utilizza il frammento](/help/sites-authoring/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
 Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.

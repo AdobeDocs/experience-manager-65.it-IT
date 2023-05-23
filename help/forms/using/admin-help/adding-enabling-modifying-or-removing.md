@@ -1,7 +1,7 @@
 ---
 title: Aggiunta, abilitazione, modifica o rimozione di endpoint
 seo-title: Adding, enabling, modifying, or removing endpoints
-description: Scopri come aggiungere, abilitare, modificare e rimuovere gli endpoint.
+description: Scopri come aggiungere, abilitare, modificare e rimuovere endpoint.
 seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
@@ -21,32 +21,32 @@ ht-degree: 0%
 
 ## Aggiungere un endpoint a un servizio {#add-an-endpoint-to-a-service}
 
-Gli endpoint possono essere aggiunti solo ai servizi. Un endpoint non può esistere da solo; deve essere associato a un servizio.
+Gli endpoint possono essere aggiunti solo ai servizi. Un endpoint non può esistere da solo, ma deve essere associato a un servizio.
 
 >[!NOTE]
 >
->Si consiglia di utilizzare nomi univoci quando si aggiungono endpoint.
+>È consigliabile utilizzare nomi univoci quando si aggiungono endpoint.
 
-1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione dei servizi.
-1. Nella pagina Gestione dei servizi fare clic sul servizio da configurare.
-1. Nell’elenco della scheda Endpoint, selezionare il tipo di endpoint da aggiungere e fare clic su Aggiungi.
+1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione servizi.
+1. Nella pagina Gestione servizio fare clic sul servizio da configurare.
+1. Nell&#39;elenco della scheda Endpoints, selezionare il tipo di endpoint da aggiungere e fare clic su Aggiungi.
 1. A seconda del tipo di endpoint, configura impostazioni endpoint aggiuntive.
 
-[Impostazioni dell’endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+[Impostazioni endpoint cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[Impostazioni dell’endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+[Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
 [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
 [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
-1. Fate clic su Aggiungi.
+1. Fai clic su Aggiungi.
 
 ## Attivare o disattivare un endpoint {#enable-or-disable-an-endpoint}
 
-Per impostazione predefinita, i nuovi endpoint vengono abilitati automaticamente. Tuttavia, se hai disabilitato un endpoint, dovrai abilitarlo per renderlo operativo.
+Per impostazione predefinita, i nuovi endpoint vengono attivati automaticamente. Tuttavia, se hai disabilitato un endpoint, dovrai abilitarlo affinché sia operativo.
 
-Se si verificano problemi con i servizi, disattiva gli endpoint associati per risolvere meglio il problema. È inoltre possibile disattivare gli endpoint durante la manutenzione regolare del sistema o durante l&#39;aggiornamento di un servizio.
+Se riscontri problemi con i servizi, disattiva gli endpoint associati per una migliore risoluzione del problema. È inoltre possibile disattivare gli endpoint durante la normale manutenzione del sistema o durante l&#39;aggiornamento di un servizio.
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione endpoint.
 1. Nella pagina Gestione endpoint selezionare la casella di controllo relativa all&#39;endpoint da attivare o disattivare e fare clic su Attiva o Disattiva.
@@ -55,21 +55,21 @@ Se si verificano problemi con i servizi, disattiva gli endpoint associati per ri
 
 >[!NOTE]
 >
->Le modifiche apportate alla configurazione di un endpoint tramite la console di amministrazione non vengono riportate nelle copie in fase di progettazione delle applicazioni. Se ridistribuisci un&#39;applicazione, tutte le modifiche apportate agli endpoint utilizzando la console di amministrazione andranno perse.
+>Le modifiche apportate alla configurazione di un endpoint tramite la console di amministrazione non vengono riportate nelle copie delle applicazioni in fase di progettazione. Se si ridistribuisce un&#39;applicazione, tutte le modifiche apportate agli endpoint mediante la console di amministrazione andranno perse.
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione endpoint.
 1. Nella pagina Gestione endpoint fare clic sull&#39;endpoint da modificare.
-1. Nella pagina Aggiorna endpoint , modifica il nome, la descrizione e le impostazioni dell&#39;endpoint.
+1. Nella pagina Aggiorna endpoint modificare il nome, la descrizione e le impostazioni dell&#39;endpoint.
 
    >[!NOTE]
    >
-   >Non includere un carattere &lt; nel nome o nella descrizione perché troncherà il nome o la descrizione visualizzati in Workspace.
+   >Non includere un carattere &lt; nel nome o nella descrizione, poiché il nome o la descrizione visualizzati in Workspace verranno troncati.
 
 1. Per salvare le modifiche, fare clic su Aggiorna.
 
-Puoi eseguire questa operazione anche dalla pagina Gestione servizi selezionando un servizio e facendo clic sulla scheda Endpoint.
+È inoltre possibile eseguire questa operazione dalla pagina Gestione servizi selezionando un servizio e facendo clic sulla scheda Endpoint.
 
 ## Rimuovere un endpoint {#remove-an-endpoint}
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione endpoint.
-1. Nella pagina Gestione endpoint selezionare la casella di controllo dell&#39;endpoint da rimuovere e fare clic su Rimuovi. L&#39;endpoint non viene più visualizzato.
+1. Nella pagina Gestione endpoint selezionare la casella di controllo relativa all&#39;endpoint da rimuovere e fare clic su Rimuovi. L’endpoint non viene più visualizzato.

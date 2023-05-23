@@ -1,5 +1,5 @@
 ---
-title: Modificare l’aspetto
+title: Modificare l'aspetto
 seo-title: Alter the Appearance
 description: Modificare lo script
 seo-description: Modify the script
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ---
 
-# Modificare l’aspetto {#alter-the-appearance}
+# Modificare l&#39;aspetto {#alter-the-appearance}
 
 ## Modificare lo script {#modify-the-script}
 
-Lo script comment.hbs è responsabile della creazione del HTML generale per ogni commento.
+Lo script comment.hbs è responsabile della creazione del HTML complessivo di ogni commento.
 
-Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
+Per non mostrare l&#39;avatar accanto a ogni commento pubblicato:
 
 1. Copia `comment.hbs`da `libs`a `apps`
 
@@ -35,16 +35,16 @@ Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
 
 1. Apri la sovrapposizione `comment.hbs`
 
-   * Fare doppio clic sul nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Doppio clic sul nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. Trova le seguenti righe ed eliminale o commenta:
+1. Trova le seguenti righe ed eliminale o aggiungendovi un commento:
 
 ```xml
   <aside class="scf-comment-author">
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Eliminare le linee o circondarle con `<!--` e `-->` per commentarli. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo di dove sarebbe stato l&#39;avatar.
+Eliminare le linee o circondarle con `<!--` e `-->` per commentarli. Inoltre, i caratteri &quot;xxx&quot; vengono aggiunti come indicatore visivo di dove sarebbe stato l’avatar.
 
 ```xml
    xxx
@@ -53,24 +53,24 @@ Eliminare le linee o circondarle con `<!--` e `-->` per commentarli. Inoltre, i 
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-### Replicare la sovrapposizione {#replicate-the-overlay}
+### Replica la sovrapposizione {#replicate-the-overlay}
 
-Invia il componente commenti sovrapposti all’istanza di pubblicazione utilizzando lo strumento di replica.
+Invia il componente dei commenti sovrapposti all’istanza di pubblicazione utilizzando lo strumento di replica.
 
 >[!NOTE]
 >
->Una forma di replica più solida sarebbe quella di creare un pacchetto in Gestione pacchetti e [attivare](/help/sites-administering/package-manager.md#replicating-packages) . Un pacchetto può essere esportato e archiviato.
+>Una forma più solida di replica consiste nel creare un pacchetto in Gestione pacchetti e [attivare](/help/sites-administering/package-manager.md#replicating-packages) ... Un pacchetto può essere esportato e archiviato.
 
 Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** e fai clic su **[!UICONTROL Attiva albero]**.
 
-Per Percorso iniziale immetti `/apps/social/commons` e seleziona **[!UICONTROL Attiva]**.
+Per il percorso iniziale immettere: `/apps/social/commons` e seleziona **[!UICONTROL Attiva]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
 ### Visualizza risultati {#view-results}
 
-Se accedi all’istanza di pubblicazione come amministratore, ad esempio https://localhost:4503/crx/de come amministratore/amministratore, puoi verificare che i componenti sovrapposti siano presenti.
+Se accedi all’istanza Publish come amministratore, ad esempio https://localhost:4503/crx/de come amministratore/amministratore, puoi verificare che i componenti sovrapposti siano presenti.
 
-Se disconnetti e riaccedi come `aaron.mcdonald@mailinator.com/password` e aggiorna la pagina, noterai che il commento pubblicato non viene più visualizzato con un avatar, ma viene visualizzato un semplice &#39;xxx&#39;.
+Se esci e accedi di nuovo come `aaron.mcdonald@mailinator.com/password` e aggiorna la pagina, noterai che il commento pubblicato non viene più visualizzato con un avatar, ma con un semplice &quot;xxx&quot;.
 
 ![create-template-component](assets/create-template-component.png)

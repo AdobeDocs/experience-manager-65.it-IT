@@ -1,7 +1,7 @@
 ---
-title: Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5
+title: Integrazione di Form Bridge con portale personalizzato per HTML5 Forms
 seo-title: Integrating Form Bridge with custom portal for HTML5 forms
-description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi del modulo dalla pagina HTML e inviare il modulo.
+description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo.
 seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: c8911f82-1a25-47a5-9a06-19b5dce74a2c
 content-type: reference
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 ---
 
-# Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Integrazione di Form Bridge con portale personalizzato per HTML5 Forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge è un’API bridge di HTML5 forms che consente di interagire con un modulo. Per informazioni di riferimento sulle API di FormBridge, consulta [Riferimento API di FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge è un&#39;API bridge di HTML5 forms che consente di interagire con un modulo. Per informazioni di riferimento sull’API di FormBridge, consulta [Riferimento API di FormBridge](/help/forms/using/form-bridge-apis.md).
 
-È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi del modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile alla procedura guidata.
+È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile a una procedura guidata.
 
-Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagire con un modulo e incorporarlo nella pagina HTML. Per impostare il valore di un campo utilizzando l’API Form Bridge, è possibile effettuare le seguenti operazioni.
+Un’applicazione HTML esistente può sfruttare l’API FormBridge per interagire con un modulo e incorporarlo nella pagina HTML. Puoi utilizzare i seguenti passaggi per impostare il valore di un campo utilizzando l’API Bridge modulo.
 
-## Integrazione dei moduli di HTML5 in una pagina web {#integrating-html-forms-to-a-web-page}
+## Integrazione di moduli HTML5 in una pagina web {#integrating-html-forms-to-a-web-page}
 
-1. **Scegli un profilo o crea un profilo**
+1. **Scegli un profilo o creane uno**
 
-   1. Nell&#39;interfaccia CRX DE, passa a: `https://'[server]:[port]'/crx/de`.
+   1. Nell’interfaccia CRX DE, passa a: `https://'[server]:[port]'/crx/de`.
    1. Accedi con le credenziali di amministratore.
    1. Crea un profilo o scegli un profilo esistente.
 
@@ -38,9 +38,9 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
 
 1. **Modificare il profilo di HTML**
 
-   Includere runtime XFA, libreria locale XFA e snippet di moduli XFA HTML nel modulo di rendering del profilo, progettare la pagina web e posizionare il modulo all’interno della pagina web.
+   Include il runtime XFA, la libreria locale XFA e lo snippet di HTML del modulo XFA nel modulo di rendering dei profili, progetta la pagina web e inserisce il modulo all’interno della pagina web.
 
-   Ad esempio, utilizza il seguente frammento di codice per creare un’app con due campi di input e un modulo per illustrare l’interazione tra il modulo e un’app esterna.
+   Ad esempio, utilizza il seguente frammento di codice, per creare un’app con due campi di input e un modulo per dimostrare l’interazione tra il modulo e un’app esterna.
 
    ```xml
    <%@ page session="false"
@@ -76,24 +76,24 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
 
    >[!NOTE]
    >
-   >La **Linea 9**, contiene riferimenti JSP aggiuntivi per gli stili CSS e i file JavaScript per la progettazione della pagina.
+   >Il **riga 9**, contiene un riferimento JSP aggiuntivo per gli stili CSS e i file JavaScript per progettare la pagina.
    >
    >
-   >La &lt;div id=&quot;rightdiv&quot;> tag su **linea 18** contiene lo snippet HTML del modulo XFA.
-   La pagina è formattata in due contenitori: **sinistra** e **right**. Il contenitore di destra contiene il modulo. Il contenitore sinistro dispone di due campi di input e parte della pagina esterna di HTML.
-   La seguente schermata mostra come viene visualizzato il modulo in un browser.
+   >Il &lt;div id=&quot;rightdiv&quot;> tag su **riga 18** contiene il frammento HTML del modulo XFA.
+   Lo stile della pagina è suddiviso in due contenitori: **left** e **destra**. Il contenitore corretto contiene il modulo. Il contenitore sinistro dispone di due campi di input e fa parte della pagina HTML esterna.
+   Nella schermata seguente viene illustrato come il modulo viene visualizzato in un browser.
 
    ![portale](assets/portal.jpg)
 
-   Il lato sinistro è parte del **Pagina HTML**. Il lato destro contenente i campi è il **modulo xfa**.
+   Il lato sinistro fa parte del **Pagina HTML**. Il lato destro contenente i campi è il **modulo xfa**.
 
-1. **Accesso ai campi del modulo dalla pagina**
+1. **Accesso ai campi modulo dalla pagina**
 
-   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare valori in un campo modulo.
+   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare i valori in un campo modulo.
 
-   Ad esempio, se desideri impostare il **NomeDipendente** utilizzo dei valori nei campi **Nome** e **Cognome**, chiama **window.formBridge.setFieldValue** funzione .
+   Ad esempio, se desideri impostare **NomeDipendente** utilizzo dei valori nei campi **Nome** e **Cognome**, chiama il **window.formBridge.setFieldValue** funzione.
 
-   Allo stesso modo, è possibile leggere il valore chiamando **window.formBridge.getFieldValue** API.
+   Allo stesso modo, puoi leggere il valore chiamando **window.formBridge.getFieldValue** API.
 
    ```javascript
    $(function() {

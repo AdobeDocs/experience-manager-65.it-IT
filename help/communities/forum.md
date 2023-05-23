@@ -22,14 +22,14 @@ ht-degree: 10%
 
 ## Introduzione {#introduction}
 
-La funzione forum fornisce un’area per i visitatori del sito con accesso (membri della community) nell’ambiente di pubblicazione per:
+La funzione forum fornisce un’area per i visitatori del sito connessi (membri della community) nell’ambiente di pubblicazione per:
 
-* Creazione di nuovi argomenti
-* Visualizzare e rispondere agli argomenti
-* Seguire un argomento
-* Cercare un forum
-* Aiutare a moderare il contenuto del forum
-* Spostare gli argomenti del forum da una pagina all&#39;altra
+* Crea nuovi argomenti
+* Visualizza e rispondi agli argomenti
+* Segui un argomento
+* Cerca in un forum
+* Contribuisci a moderare il contenuto del forum
+* Spostare gli argomenti dei forum da una pagina a un&#39;altra
 
 Questa sezione della documentazione descrive:
 
@@ -38,21 +38,21 @@ Questa sezione della documentazione descrive:
 
 ### Aggiunta di un forum a una pagina {#adding-a-forum-to-a-page}
 
-Per aggiungere una `Forum` componente per una pagina in modalità di creazione, usate il browser componenti per individuare
+Per aggiungere una `Forum` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare
 
 * `Communities / Forum`
 
-e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe essere visualizzato il forum.
+e trascinarlo in una pagina in cui dovrebbe apparire il forum.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](/help/communities/basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
 
-Quando il [librerie lato client richieste](/help/communities/essentials-forum.md#essentials-for-client-side) sono inclusi, è così che `Forum` apparirà il componente:
+Quando [librerie lato client richieste](/help/communities/essentials-forum.md#essentials-for-client-side) sono inclusi, è così che `Forum` Il componente verrà visualizzato:
 
 ![componente forum](assets/forum-component.png)
 
 ### Configurazione di un forum {#configuring-a-forum}
 
-Seleziona il `Forum` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Forum` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -60,7 +60,7 @@ Seleziona il `Forum` per accedere e selezionare il `Configure` che apre la fines
 
 #### Scheda Impostazioni {#settings-tab}
 
-Sotto la **Impostazioni** scheda , specifica le impostazioni per gli argomenti e le risposte:
+Sotto **Impostazioni** , specificare le impostazioni per gli argomenti e le risposte:
 
 * **Consenti miniatura allegato**
 
@@ -70,10 +70,10 @@ Sotto la **Impostazioni** scheda , specifica le impostazioni per gli argomenti e
 
    Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
 
-* **Dimensione minima dell&#39;immagine per la miniatura**
+* **Dimensioni minime immagine per miniatura**
 * **Dimensione massima miniatura**
 
-   Dimensione massima (in pixel) dell&#39;immagine in miniatura per l&#39;immagine in linea. Il valore predefinito è 800 x 800.
+   Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
 
 * **Topic per pagina**
 
@@ -81,70 +81,70 @@ Sotto la **Impostazioni** scheda , specifica le impostazioni per gli argomenti e
 
 * **Moderato**
 
-   Se questa opzione è selezionata, la pubblicazione di argomenti e commenti deve essere approvata prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, la pubblicazione di argomenti e commenti deve essere approvata prima che vengano visualizzati in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiuso**
 
-   Se questa opzione è selezionata, il forum viene chiuso ai nuovi argomenti e commenti. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, il forum verrà chiuso con nuovi argomenti e commenti. L&#39;impostazione predefinita è deselezionata.
 
 * **Editor Rich Text**
 
-   Se questa opzione è selezionata, è possibile inserire argomenti e commenti con markup. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, è possibile immettere argomenti e commenti con il markup. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag al proprio post (consulta **Campo tag** ). Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag ai propri post (vedi **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti caricamenti file**
 
-   Se questa opzione è selezionata, consenti l’aggiunta di allegati all’argomento o al commento. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati all&#39;argomento o al commento. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti Segui**
 
-   Se questa opzione è selezionata, includi la seguente funzione per i post del forum, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includere la seguente funzionalità per i post dei forum, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti blocco**
 
-   Se questa opzione è selezionata, gli argomenti del forum possono essere inseriti in cima all’elenco. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, gli argomenti del forum possono essere bloccati nella parte superiore dell&#39;elenco. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se questa opzione è selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è deselezionato.
+   Se selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è selezionata, consente ai membri di ricevere notifiche sui nuovi post via e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurata](/help/communities/email.md). Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Dimensione file massima**
 
-   Pertinente solo se `Allow File Uploads` è controllata. Questo campo limita le dimensioni (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-   Pertinente solo se `Allow File Uploads` è controllata. Elenco di estensioni di file separate da virgola con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
+   Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, il caricamento di quelli non specificati non sarà consentito. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima file immagine allegato**
-Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Numero massimo di byte di un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
+Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
 * **Consenti risposte concatenate**
 
-   Se questa opzione è selezionata, consenti risposte ai commenti pubblicati nell&#39;argomento. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti le risposte ai commenti inviati all&#39;argomento. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti votazione**
 
-   Se questa opzione è selezionata, includi la funzionalità Voto con un argomento. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includere la funzionalità Votazione con un argomento. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti agli utenti di eliminare commenti e argomenti**
 
-   Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e gli argomenti pubblicati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e gli argomenti pubblicati. L&#39;impostazione predefinita è deselezionata.
 
 * **Mostra breadcrumb**
 
-   Se questa opzione è selezionata, verranno visualizzate le breadcrumb di navigazione nelle pagine dell’argomento. Il valore predefinito è selezionato.
+   Se questa opzione è selezionata, mostra le breadcrumb di navigazione nelle pagine degli argomenti. Il valore predefinito è selezionato.
 
 * **Visualizza badge**
 
-   Se selezionato, visualizza guadagnato e assegnato [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti membri privilegiati**
 
@@ -152,15 +152,15 @@ Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Numero 
 
 * **Membri privilegiati consentiti**
 
-   Aggiungi i membri con privilegi consentiti per creare contenuto.
+   Aggiungere i membri con privilegi autorizzati a creare il contenuto.
 
 * **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
 
-   Se attivato, blocca il contenuto generato dall’utente durante la modifica in modalità Autore.
+   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
 * **Abilita menzione**
 
-   Se attivato, consente agli utenti della community registrata di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la comune sintassi @user-name. Gli utenti con tag ricevono notifiche sulle loro menzioni.
+   Se questa opzione è attivata, consente agli utenti registrati della community di identificare altri membri registrati (tramite nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi @user-name comune. Gli utenti taggati ricevono notifiche sulle loro menzioni.
 
 * **Max menzioni**
 
@@ -168,7 +168,7 @@ Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Numero 
 
 * **Pattern menzioni interfaccia**
 
-   Specifica la stringa di pattern consentita per assegnare il tag (@menzione) all’utente registrato in un post. Esempio `~{{familyName}}{{givenName}}`.
+   Specifica la stringa di pattern consentita per taggare (@mention) l’utente registrato in un post. Esempio `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
@@ -176,84 +176,84 @@ Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Numero 
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Sotto la **Moderazione utente** scheda , specifica come vengono gestiti gli argomenti e le risposte pubblicati (contenuto generato dall’utente). Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
+Sotto **Moderazione utenti** , specificare la modalità di gestione degli argomenti e delle risposte inviati (contenuto generato dall&#39;utente). Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
 
 * **Rifiuta post**
 
-   Se questa opzione è selezionata, ai moderatori di membri affidabili sarà consentito di negare i post e impedire che il post appaia sul forum pubblico. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, i moderatori membri di fiducia potranno rifiutare i post e impedirne la visualizzazione nel forum pubblico. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiudi/Riapri argomenti**
 
-   Se questa opzione è selezionata, i moderatori di membri attendibili possono chiudere un argomento per ulteriori modifiche e commenti e riaprire un argomento. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere un argomento per ulteriori modifiche e commenti e riaprire un argomento. L&#39;impostazione predefinita è deselezionata.
 
 * **Sposta argomenti**
 
-   Se questa opzione è selezionata, consenti ai moderatori lato pubblicazione di spostare gli argomenti. Il valore predefinito è selezionato.
+   Se questa opzione è selezionata, i moderatori lato pubblicazione possono spostare gli argomenti. Il valore predefinito è selezionato.
 
 * **Segnala post**
 
-   Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri come inappropriati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri utenti come non appropriati. L&#39;impostazione predefinita è deselezionata.
 
 * **Elenco di motivi per segnalazione**
 
-   Se questa opzione è selezionata, consenti ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnano un argomento o un commento come inappropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consenti ai membri di inserire il proprio motivo per contrassegnare un argomento o un commento come inappropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di immettere un motivo specifico per contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
 * **Soglia moderazione**
 
-   Immettere il numero di volte in cui un argomento o un commento deve essere segnalato dai membri prima che i moderatori ne vengano informati. Il valore predefinito è 1 (una volta).
+   Immettere il numero di volte in cui un argomento o un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
 
 * **Limite segnalazione**
 
-   Immetti il numero di volte in cui un argomento o un commento deve essere contrassegnato prima che sia nascosto dalla visualizzazione pubblica. Se è impostato su -1, l&#39;argomento o il commento contrassegnato non viene mai nascosto dalla visualizzazione pubblica. In caso contrario, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
+   Immettere il numero di volte in cui un argomento o un commento deve essere contrassegnato prima di essere nascosto dalla visualizzazione pubblica. Se è impostato su -1, l&#39;argomento o il commento contrassegnato non viene mai nascosto. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Sotto la **Campo tag** , i tag che possono essere applicati, se consentiti nella **Impostazioni** sono limitati in base ai namespace selezionati.
+Sotto **Campo tag** , i tag che possono essere applicati, se consentito dalla scheda **Impostazioni** , sono limitati in base agli spazi dei nomi scelti.
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è controllato sotto **Impostazioni** scheda . I tag che possono essere applicati sono limitati a quelli nelle categorie dello spazio dei nomi selezionate. L’elenco dei namespace include sia &quot;Tag standard&quot; (lo spazio dei nomi predefinito) che &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti i namespace sono consentiti.
+   Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
-   Immettere il numero di tag da visualizzare come suggerimento al membro che pubblica sul forum. Il valore predefinito è **-**1 (nessun limite).
+   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**1 (nessun limite).
 
 #### Scheda Traduzione {#translation-tab}
 
-Sotto la **Traduzione** Se la traduzione è abilitata per il sito community, la traduzione può essere impostata per tradurre l&#39;intero argomento o i post selezionati.
+Sotto **Traduzione** Se la traduzione è abilitata per il sito community, la traduzione può essere impostata per tradurre l’intero argomento o i post selezionati.
 
 * **Traduci tutto**
 
-   Se questa opzione è selezionata, il thread del forum viene tradotto nella lingua preferita dell&#39;utente. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, il thread del forum viene tradotto nella lingua preferita dell’utente. L&#39;impostazione predefinita è deselezionata.
 
-#### Scheda Impostazioni di ordinamento {#sort-settings-tab}
+#### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
-Sotto la **Impostazioni di ordinamento** specificare l&#39;ordine dei commenti inviati quando vengono visualizzati.
+Sotto **Impostazioni di ordinamento** , specificare l&#39;ordinamento dei commenti inviati quando vengono visualizzati.
 
 * **Ordina per**
 
-   Seleziona tutte le selezioni di ordinamento consentite : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
+   Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
 
 * **Imposta come predefinito**
 
-   Passa il mouse verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come impostazione predefinita. Il valore predefinito è `Newest`.
+   Tirare verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come impostazione predefinita. Il valore predefinito è `Newest`.
 
 * **Seleziona le opzioni di tempo per l&#39;ordinamento Analytics**
 
-   Premi il mouse per selezionare una delle seguenti opzioni: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+   Tirare verso il basso per selezionare una delle seguenti opzioni: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
    Il valore predefinito è `All`.
 
 ### Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base sul forum](/help/communities/essentials-forum.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base sui forum](/help/communities/essentials-forum.md) pagina per sviluppatori.
 
 Per la moderazione degli argomenti e dei commenti pubblicati, vedi [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti pubblicati, vedi [Assegnazione tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
+Per assegnare tag agli argomenti e ai commenti pubblicati, consulta [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
 
-Per la traduzione degli argomenti e dei commenti pubblicati, vedi [Traduzione di contenuti generati dagli utenti](/help/communities/translate-ugc.md).
+Per la traduzione degli argomenti e dei commenti pubblicati, vedi [Traduzione dei contenuti generati dagli utenti](/help/communities/translate-ugc.md).

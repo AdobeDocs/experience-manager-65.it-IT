@@ -14,48 +14,48 @@ ht-degree: 0%
 
 # Integrare [!DNL Assets] con flusso di attività {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] gli utenti eseguono molte azioni, come creare, caricare ed eliminare le risorse. Queste azioni possono essere registrate in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurare [!DNL Experience Manager] per registrare eventi specifici.
+[!DNL Adobe Experience Manager Assets] Gli utenti eseguono molte azioni, come creare, caricare ed eliminare le risorse. Puoi registrare queste azioni in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarlo [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per queste ragioni, [!DNL Assets] L’integrazione con Activity Stream è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere l’utilizzo di CPU e spazio su disco, ad esempio durante l’importazione in blocco. Per questi motivi il [!DNL Assets] L’integrazione con il flusso di attività è disabilitata per impostazione predefinita.
 
-## Eventi azione supportati {#supported-action-events}
+## Eventi di azione supportati {#supported-action-events}
 
-È possibile configurare i seguenti eventi per la registrazione:
+I seguenti eventi possono essere configurati per la registrazione:
 
 * Licenza accettata (ACCETTATA)
 * Risorsa creata (ASSET_CREATED)
-* Risorsa spostata (ASSET_MOVED)
+* Risorsa spostata (ASSET_MOVE)
 * Risorsa rimossa (ASSET_REMOVED)
 * Licenza rifiutata (RIFIUTATA)
-* Risorsa scaricata (SCARICATA)
-* Versione risorsa (VERSIONED)
+* Risorsa scaricata (DOWNLOADED)
+* Risorsa con versione (CON VERSIONE)
 * Versione risorsa ripristinata (RIPRISTINATA)
 * Metadati risorsa aggiornati (METADATA_UPDATED)
-* Risorsa pubblicata nel sistema esterno (PUBLISHED_EXTERNAL)
-* Aggiornato originale della risorsa (ORIGINAL_UPDATED)
-* Rendering risorsa aggiornato (RENDITION_AGGIORNATO)
-* Rendering risorsa rimosso (RENDITION_REMOVED)
+* Risorsa pubblicata su un sistema esterno (PUBLISHED_EXTERNAL)
+* Risorsa originale aggiornata (ORIGINAL_UPDATED)
+* Rappresentazione risorsa aggiornata (RENDITION_UPDATED)
+* Rappresentazione risorsa rimossa (RENDITION_REMOVED)
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configura [!DNL Assets] registrazione eventi {#configuring-aem-assets-events-recording}
+## Configura [!DNL Assets] registrazione di eventi {#configuring-aem-assets-events-recording}
 
-La [Console web](/help/sites-deploying/configuring-osgi.md) consente di accedere alla regolazione del Registratore eventi di Assets. Per configurare il Registratore eventi di Assets, procedi come segue:
+Il [Console web](/help/sites-deploying/configuring-osgi.md) consente di accedere all’ottimizzazione di Assets Event Recorder. Per configurare Assets Event Recorder, procedi come segue:
 
-1. Passa a **[!UICONTROL Console web]**
+1. Accedi a **[!UICONTROL Console web]**
 
-1. Fai clic su **[!UICONTROL Configurazione]**.
+1. Clic **[!UICONTROL Configurazione]**.
 
 1. Doppio clic **[!UICONTROL Day CQ DAM Event Recorder]**.
 
-1. Controlla **[!UICONTROL Abilita questo servizio]**.
+1. Verifica **[!UICONTROL Abilita questo servizio]**.
 
-1. Controlla quali **[!UICONTROL Tipi di eventi]** vuoi essere registrato nel flusso di attività dell’utente.
+1. Controlla quale **[!UICONTROL Tipi di evento]** desideri essere registrato nel flusso di attività dell’utente.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-## Leggi gli eventi registrati {#reading-recorded-events}
+## Leggi eventi registrati {#reading-recorded-events}
 
-Gli eventi registrati vengono memorizzati come attività. Puoi leggerle a livello di programmazione utilizzando il [API di ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Gli eventi registrati vengono memorizzati come attività. Puoi leggerli a livello di programmazione utilizzando [API di ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

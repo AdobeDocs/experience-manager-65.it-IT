@@ -1,7 +1,7 @@
 ---
 title: Procedura dettagliata sul sito di riferimento We.Gov FOIA
 seo-title: We.Gov reference site FOIA walkthrough
-description: Consulta la procedura dettagliata sul sito di riferimento We.Gov per comprendere in che modo AEM Forms aiuta i governi a ricevere e inviare le informazioni richieste dalle persone ai sensi del Freedom of Information Act.
+description: Consulta la procedura dettagliata sul sito di riferimento We.Gov per capire in che modo AEM Forms aiuta i governi a ricevere e comunicare le informazioni richieste da singoli individui in base al Freedom of Information Act.
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
 uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
@@ -17,97 +17,97 @@ ht-degree: 0%
 
 # Procedura dettagliata sul sito di riferimento We.Gov FOIA {#we-gov-reference-site-foia-walkthrough}
 
-## Scenario di riferimento Freedom Information Act {#reference-site-freedom-of-information-act-scenario}
+## Scenario del Freedom of Information Act per il sito di riferimento {#reference-site-freedom-of-information-act-scenario}
 
-We.Gov è un&#39;organizzazione statale che permette ai genitori adottivi di iscriversi al supporto dei figli se hanno adottato un bambino. We.Gov consente inoltre ai genitori di richiedere informazioni ai seguenti dipartimenti governativi in base alla legge sulla libertà di informazione:
+We.Gov è un&#39;organizzazione gestita dallo stato che consente ai genitori adottivi di iscriversi per il sostegno al bambino se hanno adottato un bambino. We.Gov consente inoltre ai genitori di richiedere informazioni ai seguenti dipartimenti governativi in base al Freedom of Information Act:
 
-* Agenzia per la logistica della difesa
-* Ufficio di controllo generale del ministero della difesa
-* Dipartimento di Giustizia - Ufficio per la politica dell&#39;informazione
-* Dipartimento della Marina Militare
-* Agenzia per la protezione ambientale
+* Agenzia logistica della difesa
+* Dipartimento della Difesa Ufficio dell&#39;Ispettore Generale
+* Dipartimento della Giustizia - Ufficio delle politiche dell&#39;informazione
+* Dipartimento della Marina
+* Agenzia per la protezione dell&#39;ambiente
 
-Per maggiori informazioni sulla legge sulla libertà di informazione, vedi [www.foia.gov](https://www.foia.gov).
+Per maggiori informazioni sulla legge sulla libertà d&#39;informazione, vedi [www.foia.gov](https://www.foia.gov).
 
-Lo scenario include i seguenti utenti tipo:
+Lo scenario coinvolge i seguenti utenti tipo:
 
-* Sarah Rose, la persona che richiede informazioni in
-* John Jacobs, la persona che gestisce la richiesta la inoltra al reparto competente
-* Gloria Rios, dipendente governativo che fornisce le informazioni secondo la richiesta
+* Sarah Rose, la persona che ha richiesto le informazioni
+* John Jacobs, la persona che gestisce la richiesta la inoltra al reparto appropriato
+* Gloria Rios, l&#39;impiegato governativo che fornisce le informazioni come da richiesta
 
-## Sarah avvia la richiesta di informazioni in base all&#39;UFFICIO {#sarah-initiates-request-for-information-under-foia}
+## Sarah avvia una richiesta di informazioni in base alla FOIA {#sarah-initiates-request-for-information-under-foia}
 
-Secondo la legge sulla libertà di informazione, Sarah richiede una copia del caso di registro dell&#39;Amministrazione per bambini e famiglie per anni (FY) dal 2013 al 2016. Sarah presenta questa richiesta al Dipartimento di Giustizia - Ufficio per la Politica d&#39;Informazione e indica anche che è disposta a pagare fino a 100 dollari per le spese di stampa e postali.
+Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri dell&#39;Administration for Children and Families per gli anni (FY) dal 2013 al 2016. Sarah presenta la richiesta al Departent of Justice - Office Of Information Policy e si dichiara disposta a pagare fino a 100 dollari per le spese di stampa e di spedizione.
 
 ### Come funziona {#how-it-works}
 
-### Vedi di persona {#see-it-yourself}
+### Vedi tu stesso {#see-it-yourself}
 
-Nel browser, apri `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, tocca Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, toccare Applica in Applicazione per Richiesta FOIA.
+Nel browser, aprire `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, tocca Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, toccare Applica in Applicazione per richiesta FOIA.
 
-## Sarah avvia la sua domanda di informazioni sotto FOIA {#sarah-starts-her-application-for-information-under-foia}
+## Sarah inizia la sua richiesta di informazioni sotto FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah clicca **Applica** e nella pagina Modulo di richiesta della legge sulla libertà di informazione, Sarah inserisce informazioni tra cui:
+Sarah fa clic su **Applica** e nella pagina del modulo di richiesta del Freedom of Information Act, Sarah inserisce informazioni tra cui:
 
-* **Agenzia:** Sarah specifica l&#39;agenzia a cui la richiesta è stata indirizzata come Dipartimento di Giustizia - Ufficio per la Politica d&#39;Informazione.
+* **Agenzia:** Sarah specifica l&#39;agenzia a cui è stata indirizzata la richiesta come Department of Justice - Office of Information Policy.
 
-* **Paga fino a**: Sarah specifica che è disposta a pagare fino a 100 dollari per le spese di stampa e postali.
-* **Descrivi dettagliatamente la richiesta**: Sarah specifica &quot;Richiesta di copia dei casi di amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
+* **Pagamento fino a**: Sarah si dichiara disposta a pagare fino a 100 dollari per le spese di stampa e di spedizione.
+* **Descrivi la richiesta in dettaglio**: Sarah specifica &quot;Richiesta di copia dei registri dei casi relativi all’amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
 
-![Richiesta di copia del caso di registro dell&#39;Amministrazione per bambini e famiglie per gli esercizi fiscali dal 2013 al 2016](assets/sarahfiosform.png)
+![Richiesta di copia dei registri dei casi relativi all’amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016](assets/sarahfiosform.png)
 
-Richiesta di copia del caso di registro dell&#39;Amministrazione per bambini e famiglie per gli esercizi fiscali dal 2013 al 2016
+Richiesta di copia dei registri dei casi relativi all’amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016
 
-In qualsiasi momento, Sarah può toccare Salva per salvare la bozza del modulo e tornare più tardi per compilare il modulo e inviarlo. Sarah invia il modulo.
+In qualsiasi momento, Sarah può toccare Salva per salvare la bozza del modulo e tornare in un secondo momento per compilare il modulo e inviarlo. Sarah invia il modulo.
 
 >[!NOTE]
 >
->Il flusso di lavoro di ripresa da e-mail funziona solo con gli utenti registrati. Nello scenario relativo al sito di riferimento, assicurati che l’utente Sarah Rose sia aggiunto. Le credenziali di accesso di Sarah sono `srose/password`.
+>Il flusso di lavoro Riprendi da e-mail funziona solo con gli utenti connessi. Nello scenario del sito di riferimento, accertati che sia aggiunto l’utente Sarah Rose. Le credenziali di accesso di Sarah sono `srose/password`.
 
-## John Jacobs riceve e approva l&#39;applicazione {#john-jacobs-receives-and-approves-the-application}
+## John Jacobs riceve e approva la richiesta {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs riceve le richieste e le indirizza alla persona giusta. AEM casella in entrata consente di visualizzare tutte le applicazioni inviate in un’unica posizione.
+John Jacobs riceve le richieste e le indirizza alla persona giusta. La casella in entrata AEM le permette di vedere tutte le domande inviate in un’unica posizione.
 
 ### Come funziona {#how-it-works-1}
 
-Quando Sarah compila e invia l&#39;applicazione FOIA, un record dell&#39;applicazione viene inviato alla casella in entrata di John Jacobs. John Jacobs può visualizzare la domanda inviata e accettarla o rifiutarla.
+Quando Sarah compila e invia l&#39;applicazione FOIA, un record dell&#39;applicazione viene inviato alla casella in entrata di John Jacobs. John Jacobs può visualizzare la domanda presentata e accettarla o rifiutarla.
 
-### Vedi di persona {#see-it-yourself-1}
+### Vedi tu stesso {#see-it-yourself-1}
 
-Puoi accedere alla casella in entrata AEM all’indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata AEM utilizzando jjacobs/password come nome utente/password per John Jacobs e vedi l&#39;applicazione FOIA. Per informazioni sull’utilizzo della casella in entrata AEM per le attività del flusso di lavoro incentrate sui moduli, vedere [Gestione di applicazioni e attività Forms nella casella in entrata AEM](/help/forms/using/manage-applications-inbox.md).
+Puoi accedere alla casella in entrata dell’AEM all’indirizzo https://&lt;***nome host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM, utilizzando jjacobs/password come nome utente/password per John Jacobs, e controlla l’applicazione FOIA. Per informazioni sull’utilizzo della Casella in entrata AEM per le attività di flusso di lavoro incentrate sui moduli, consulta [Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
-John Jacobs può visualizzare, approvare o rifiutare l&#39;applicazione dal dashboard dell&#39;applicazione. John Jacobs seleziona e apre i dettagli della richiesta e dopo aver rivisto la richiesta, la approva.
+John Jacobs può visualizzare, approvare o rifiutare l’applicazione dal dashboard dell’applicazione. John Jacobs seleziona e apre i dettagli della richiesta e, dopo aver esaminato la richiesta, la approva.
 
 ![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah riceve un&#39;e-mail di riconoscimento</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah riceve un&#39;e-mail di conferma</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
-Dopo che John Jacobs approva l&#39;applicazione, Sarah riceve un messaggio e-mail di riconoscimento dal sito We.Gov. Sarah viene informata delle tariffe e del tempo necessario per l&#39;elaborazione della sua domanda. L&#39;e-mail include anche le email e i numeri di telefono che sarah può contattare per gli aggiornamenti sulla sua applicazione.
+Dopo che John Jacobs ha approvato l&#39;applicazione, Sarah riceve un&#39;e-mail di conferma dal sito We.Gov. Sarah viene informata delle tariffe e del tempo necessario per elaborare la sua domanda. L&#39;email include anche i dettagli dell&#39;email e del telefono che sarah può contattare per aggiornamenti sulla sua applicazione.
 
 ![sarahroseemail](assets/sarahroseemail.png)
 
-## Gloria riceve la richiesta FOIA di approvazione di secondo livello {#gloria-receives-the-foia-request-for-second-level-approval}
+## Gloria riceve la richiesta di approvazione FOIA di secondo livello {#gloria-receives-the-foia-request-for-second-level-approval}
 
-Dopo che John Jacobs ha compilato le informazioni richieste e approvato la richiesta di Sarah, le richieste vanno a Gloria Rios per l&#39;approvazione finale. Gloria rivede il documento di registrazione allegato e approva la richiesta.
+Dopo che John Jacobs compila le informazioni richieste e approva la richiesta di Sarah, le richieste vanno a Gloria Rios per l&#39;approvazione finale. Gloria esamina il documento di record allegato e approva la richiesta.
 
 ![gloriariosinbox](assets/gloriariosinbox.png)
 
 ### Come funziona {#how-it-works-2}
 
-Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento di registrazione dell&#39;applicazione e inviato alla casella in entrata di Gloria Rios. Gloria può visualizzare la richiesta inviata e approvarla o rifiutarla.
+Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento di record dell’applicazione che viene inviato alla casella in entrata di Gloria Rios. Gloria può visualizzare la richiesta inviata e approvarla o rifiutarla.
 
-### Vedi te stesso {#see-for-yourself}
+### Vedi tu stesso {#see-for-yourself}
 
-Puoi accedere alla casella in entrata AEM all’indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata AEM utilizzando grios/password come nome utente/password per Gloria Rios e vedi la richiesta FOIS.
+Puoi accedere alla casella in entrata dell’AEM all’indirizzo https://&lt;***nome host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedi alla casella in entrata dell’AEM utilizzando grios/password come nome utente/password per Gloria Rios e controlla la richiesta FOIS.
 
-Gloria apre la richiesta ed esamina i dettagli della richiesta FOIA. Dopo aver esaminato i dettagli della richiesta e verificato la fattibilità dell&#39;arredamento dei documenti richiesti, Gloria approva la richiesta.
+Gloria apre la richiesta ed esamina i dettagli della richiesta FOIA. Dopo aver esaminato i dettagli della richiesta e verificato la fattibilità di fornire i documenti richiesti, Gloria approva la richiesta.
 
 ![gloriariosapproves](assets/gloriariosapproves.png)
 
-## Sarah riceve la notifica che la sua richiesta è stata approvata {#sarah-receives-notification-that-her-request-is-approved}
+## Sarah riceve una notifica di approvazione della sua richiesta {#sarah-receives-notification-that-her-request-is-approved}
 
-Dopo che Gloria ha approvato la richiesta FOIA, Sarah riceve un&#39;e-mail di notifica che la sua richiesta è stata approvata. L&#39;e-mail include anche le informazioni sul calendario provvisorio per l&#39;invio del documento e i dettagli di contatto per il follow-up sulla richiesta.
+Dopo che Gloria approva la richiesta FOIA, Sarah riceve un&#39;e-mail che le notifica che la sua richiesta è approvata. L’e-mail include anche le informazioni sulla tempistica provvisoria per la presentazione del documento e i recapiti per il follow-up della richiesta.
 
-![sarahroseemailoapprovazione](assets/sarahroseemailapproval.png)
+![sarahroseemailapproval](assets/sarahroseemailapproval.png)

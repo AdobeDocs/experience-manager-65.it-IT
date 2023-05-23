@@ -20,114 +20,114 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-Quando si inseriscono risorse di grandi dimensioni dall’Experience Manager ai documenti Adobe InDesign, un professionista deve aspettare per un periodo di tempo considerevole dopo che hanno [inserire una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, all’utente è impedito di utilizzare InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. L’Adobe consente di iniziare temporaneamente il posizionamento di rappresentazioni di piccole dimensioni nei documenti InDesign. Quando l’output finale è necessario, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono il rendering temporaneo in background. Questo aggiornamento asincrono in background velocizza il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
+Quando si inseriscono risorse di grandi dimensioni da Experience Manager nei documenti di Adobe InDesign, un creativo professionista deve attendere per un tempo considerevole dopo che [inserire una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, l’utente non può utilizzare l’InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente copie trasformate di piccole dimensioni nei documenti InDesign. Quando è necessario l’output finale, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono la rappresentazione temporanea in background. Questo aggiornamento asincrono in background accelera il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
 
-Adobe Experience Manager (AEM) fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Queste rappresentazioni FPO hanno dimensioni file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile un rendering FPO, Adobe InDesign utilizza invece la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
+Adobe Experience Manager (AEM) fornisce copie trasformate utilizzate solo per il posizionamento (FPO). Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile una rappresentazione FPO, Adobe InDesign utilizza la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
 
 ## Approccio per generare rappresentazioni FPO {#approach-to-generate-fpo-renditions}
 
-L’Experience Manager consente di elaborare diversi metodi per le immagini che possono essere utilizzate per generare le rappresentazioni FPO. I due metodi più comuni consistono nell’utilizzo di flussi di lavoro di Experience Manager incorporati e nell’utilizzo di ImageMagick. Utilizzando questi due metodi, puoi configurare la generazione di rendering delle risorse appena caricate e delle risorse esistenti in Experience Manager.
+Experience Manager consente di elaborare con molti metodi le immagini che possono essere utilizzate per generare le rappresentazioni FPO. I due metodi più comuni consistono nell’utilizzare flussi di lavoro di Experience Manager incorporati e nell’utilizzare ImageMagick. Utilizzando questi due metodi, puoi configurare la generazione del rendering delle risorse appena caricate e delle risorse esistenti in Experience Manager.
 
-È possibile utilizzare ImageMagick per elaborare le immagini, anche per generare rappresentazioni FPO. Tali rappresentazioni vengono sottoposte a sottocampionamento, ovvero le dimensioni in pixel del rendering vengono ridotte proporzionalmente se l&#39;immagine originale ha un PPI superiore a 72. Vedi [installa e configura ImageMagick per lavorare con Experience Manager Assets](best-practices-for-imagemagick.md).
+È possibile utilizzare ImageMagick per elaborare le immagini, anche per generare rappresentazioni FPO. Tali rappresentazioni vengono ricampionate verso il basso, ovvero le dimensioni in pixel della rappresentazione vengono ridotte proporzionalmente se l’immagine originale ha un valore PPI maggiore di 72. Consulta [installare e configurare ImageMagick per l’utilizzo con Experience Manager Assets](best-practices-for-imagemagick.md).
 
 |  | Utilizzo del flusso di lavoro integrato di Experience Manager | Utilizzo del flusso di lavoro ImageMagick | Osservazioni |
 |--- |--- |---|--- |
-| Per nuove risorse | Abilita rendering FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick nel flusso di lavoro di Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | In Experience Manager viene eseguito il flusso di lavoro Aggiorna risorse DAM per ogni caricamento. |
-| Per le risorse esistenti | Abilita il rendering FPO in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Aggiungi la riga di comando ImageMagick in un nuovo flusso di lavoro dedicato di Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Le rappresentazioni FPO delle risorse esistenti possono essere create on-demand o in blocco. |
+| Per le nuove risorse | Abilita rappresentazione FPO ([aiuto](#generate-renditions-of-new-assets-using-aem-workflow)) | Aggiungere la riga di comando ImageMagick nel flusso di lavoro di Experience Manager ([aiuto](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager esegue il flusso di lavoro Aggiorna risorse DAM per ogni caricamento. |
+| Per le risorse esistenti | Abilitare la rappresentazione FPO in un nuovo flusso di lavoro di Experience Manager dedicato ([aiuto](#generate-renditions-of-existing-assets-using-aem-workflow)) | Aggiungere la riga di comando ImageMagick in un nuovo flusso di lavoro Experience Manager dedicato ([aiuto](#generate-renditions-of-existing-assets-using-imagemagick)) | Le rappresentazioni FPO delle risorse esistenti possono essere create su richiesta o in blocco. |
 
 >[!CAUTION]
 >
->Crea i flussi di lavoro per generare rappresentazioni modificando una copia dei flussi di lavoro predefiniti. Impedisce la sovrascrittura delle modifiche quando Experience Manager viene aggiornato, ad esempio installando un nuovo service pack.
+>Crea i flussi di lavoro per generare le rappresentazioni modificando una copia dei flussi di lavoro predefiniti. Impedisce la sovrascrittura delle modifiche quando Experience Manager viene aggiornato, ad esempio installando un nuovo service pack.
 
-## Generare rappresentazioni di nuove risorse tramite il flusso di lavoro Experience Manager {#generate-renditions-of-new-assets-using-aem-workflow}
+## Generare rappresentazioni di nuove risorse utilizzando il flusso di lavoro Experience Manager {#generate-renditions-of-new-assets-using-aem-workflow}
 
-Di seguito sono riportati i passaggi per configurare il modello di flusso di lavoro Risorsa di aggiornamento DAM per abilitare la generazione del rendering:
+Di seguito è descritta la procedura per configurare il modello di flusso di lavoro Risorsa di aggiornamento DAM per abilitare la generazione di rendering:
 
-1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Seleziona **[!UICONTROL Risorsa di aggiornamento DAM]** modello e fai clic su **[!UICONTROL Modifica]**.
+1. Clic **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Seleziona **[!UICONTROL Aggiorna risorsa DAM]** e fai clic su **[!UICONTROL Modifica]**.
 
-1. Seleziona **[!UICONTROL Miniature del processo]** fai clic su **[!UICONTROL Configura]**.
+1. Seleziona **[!UICONTROL Elabora miniature]** e fai clic su **[!UICONTROL Configura]**.
 
-1. Fai clic su **[!UICONTROL Rendering FPO]** scheda . Seleziona **[!UICONTROL Abilita creazione rendering FPO]**.
+1. Clic **[!UICONTROL Rappresentazione FPO]** scheda. Seleziona **[!UICONTROL Abilita creazione rappresentazione FPO]**.
 
    ![fpo_rendition_damupdateasset_model](assets/fpo_rendition_damupdateasset_model.png)
 
-1. Regolare la **[!UICONTROL Qualità]** e aggiungere o modificare **[!UICONTROL Elenco formati]** i valori richiesti. Per impostazione predefinita, l’elenco dei tipi MIME per generare il rendering FPO è pjpeg, jpeg, jpg, gif, png, x-png e tiff. Fai clic su **[!UICONTROL Fine]**.
+1. Regolare **[!UICONTROL Qualità]** e aggiungere o modificare **[!UICONTROL Elenco formati]** valori come richiesto. Per impostazione predefinita, l&#39;elenco dei tipi MIME per generare la rappresentazione FPO è pjpeg, jpeg, jpg, gif, png, x-png e tiff. Clic **[!UICONTROL Fine]**.
 
    >[!NOTE]
    >
-   >La generazione del rendering è supportata per i tipi di file JPEG, GIF, PNG, TIFF, PSD e BMP.
+   >La generazione della rappresentazione è supportata per i tipi di file JPEG, GIF, PNG, TIFF, PSD e BMP.
 
-1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizzazione]**.
+1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizza]**.
 
 >[!NOTE]
 >
->Le immagini di dimensioni superiori a 1280 pixel su un lato non conservano le dimensioni dei pixel nel rendering FPO.
+>Le immagini di dimensioni superiori a 1280 pixel su un lato non mantengono le dimensioni pixel nella rappresentazione FPO.
 
-## Generare rappresentazioni di nuove risorse utilizzando ImageMagick {#generate-renditions-of-new-assets-using-imagemagick}
+## Generare rappresentazioni di nuove risorse tramite ImageMagick {#generate-renditions-of-new-assets-using-imagemagick}
 
-Ad Experience Manager, il flusso di lavoro Aggiorna risorsa DAM viene eseguito quando viene caricata una nuova risorsa. Per utilizzare ImageMagick per elaborare le rappresentazioni delle risorse appena caricate, aggiungi un nuovo comando al modello di flusso di lavoro.
+Ad Experience Manager, il flusso di lavoro Risorsa di aggiornamento DAM viene eseguito quando viene caricata una nuova risorsa. Per utilizzare ImageMagick per elaborare le rappresentazioni delle risorse appena caricate, aggiungi un nuovo comando al modello di flusso di lavoro.
 
-1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Clic **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
-1. Seleziona **[!UICONTROL Risorsa di aggiornamento DAM]** modello e fai clic su **[!UICONTROL Modifica]**.
+1. Seleziona **[!UICONTROL Aggiorna risorsa DAM]** e fai clic su **[!UICONTROL Modifica]**.
 
-1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo in alto a sinistra e cerca il passaggio della riga di comando.
+1. Clic **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo superiore sinistro e cerca il passaggio della riga di comando.
 
-1. Trascina **[!UICONTROL Riga di comando]** aggiungilo prima della **[!UICONTROL Miniature del processo]** passo.
+1. Trascina **[!UICONTROL Riga di comando]** e aggiungerlo prima del **[!UICONTROL Elabora miniature]** passaggio.
 
-1. Seleziona **[!UICONTROL Riga di comando]** fai clic su **[!UICONTROL Configura]**.
+1. Seleziona **[!UICONTROL Riga di comando]** e fai clic su **[!UICONTROL Configura]**.
 
-1. Aggiungi le informazioni desiderate come personalizzate **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]**. Ad esempio, il rendering FPO (basato su ImageMagick).
+1. Aggiungi le informazioni desiderate come personalizzate **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]**. Ad esempio, rappresentazione FPO (con tecnologia ImageMagick).
 
-1. In **[!UICONTROL Argomenti]** scheda , aggiungi pertinente **[!UICONTROL Tipi di mime]** fornire un elenco dei formati di file su cui si applica il comando.
+1. In **[!UICONTROL Argomenti]** , aggiungi **[!UICONTROL Tipi MIME]** per fornire un elenco dei formati di file a cui si applica il comando.
 
    ![imagemagick-mimetype](assets/imagemagick-mimetype.png)
 
-1. In **[!UICONTROL Argomenti]** nella scheda **[!UICONTROL Comandi]** aggiungi un comando ImageMagick pertinente per generare rappresentazioni FPO.
+1. In **[!UICONTROL Argomenti]** , nella scheda **[!UICONTROL Comandi]** , aggiungere un comando ImageMagick appropriato per generare rappresentazioni FPO.
 
-   Di seguito è riportato un comando di esempio che genera rappresentazioni FPO in formato JPEG, ricampionate verso il basso fino a 72 PPI, con un’impostazione di qualità del 10% e gestisce file Adobe Photoshop a più livelli appiattendo l’output:
+   Di seguito è riportato un comando di esempio che genera copie trasformate FPO in formato JPEG, ricampionate verso il basso a 72 PPI, con un&#39;impostazione di qualità del 10%, e gestisce i file Adobe Photoshop a più livelli appiattendo l&#39;output:
 
    `convert -quality 10% -units PixelsPerInch ${filename} -resample 72 -flatten cq5dam.fpo.jpeg`
 
-1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizzazione]**.
+1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizza]**.
 
-Per informazioni dettagliate sulle funzionalità della riga di comando ImageMagick, consulta [https://imagemagick.org](https://imagemagick.org).
+Per informazioni dettagliate sulle funzionalità della riga di comando di ImageMagick, consulta [https://imagemagick.org](https://imagemagick.org).
 
-## Genera rendering delle risorse esistenti tramite il flusso di lavoro di Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
+## Generare rappresentazioni di risorse esistenti utilizzando il flusso di lavoro Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 
-Per utilizzare un flusso di lavoro di Experience Manager per generare il rendering FPO delle risorse esistenti, crea un modello di flusso di lavoro dedicato che utilizza l’opzione di rendering FPO integrata.
+Per utilizzare il flusso di lavoro Experience Manager per generare la rappresentazione FPO delle risorse esistenti, crea un modello di flusso di lavoro dedicato che utilizza l’opzione di rappresentazione FPO incorporata.
 
-1. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Clic **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
 1. Per creare un modello, fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**.
 
-1. Aggiungi un significato **[!UICONTROL Titolo]** e **[!UICONTROL Nome]**.
+1. Aggiungi un valore significativo **[!UICONTROL Titolo]** e **[!UICONTROL Nome]**.
 
-1. Seleziona il modello e fai clic su **[!UICONTROL Modifica]**. Fai clic su **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]**, quindi seleziona **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora la scalabilità e le prestazioni.
+1. Selezionate il modello e fate clic su **[!UICONTROL Modifica]**. Clic **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]**, quindi selezionare **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora scalabilità e prestazioni.
 
 1. Fai clic su ******[!UICONTROL Salva e chiudi]**.
 
-1. Fai clic su **[!UICONTROL Attiva/Disattiva pannello laterale]** nell’angolo in alto a sinistra e cerca il passaggio Elabora miniature .
+1. Clic **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo in alto a sinistra e cerca il passaggio Elabora miniatura.
 
-1. Seleziona **[!UICONTROL Miniature del processo]** e fai clic su **[!UICONTROL Configura]**. Segui [configurazione per generare il rendering delle nuove risorse utilizzando il flusso di lavoro Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+1. Seleziona **[!UICONTROL Elabora miniature]** e fai clic su **[!UICONTROL Configura]**. Segui le [configurazione per generare il rendering delle nuove risorse tramite il flusso di lavoro Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
 
-1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizzazione]**.
+1. Per attivare le modifiche, fai clic su **[!UICONTROL Sincronizza]**.
 
 
 ## Generare rappresentazioni di risorse esistenti utilizzando ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
 
-Per utilizzare le funzionalità di elaborazione ImageMagick per generare il rendering FPO delle risorse esistenti, crea un modello di flusso di lavoro dedicato che utilizza la riga di comando ImageMagick per farlo.
+Per utilizzare le funzionalità di elaborazione ImageMagick per generare una rappresentazione FPO delle risorse esistenti, crea un modello di flusso di lavoro dedicato che utilizza la riga di comando ImageMagick.
 
-1. Segui i punti da 1 a 3 da [configurazione per generare il rendering delle risorse esistenti utilizzando il flusso di lavoro Experience Manager](#generate-renditions-of-existing-assets-using-aem-workflow) sezione .
+1. Seguire i punti da 1 a 3 da [configurazione per generare il rendering delle risorse esistenti tramite il flusso di lavoro Experience Manager](#generate-renditions-of-existing-assets-using-aem-workflow) sezione.
 
-1. Segui il passaggio 4 al passaggio 8 da [configurazione per generare il rendering delle nuove risorse utilizzando ImageMagick](#generate-renditions-of-new-assets-using-imagemagick) sezione .
+1. Seguire il punto 4 al punto 8 da [configurazione per generare il rendering delle nuove risorse tramite ImageMagick](#generate-renditions-of-new-assets-using-imagemagick) sezione.
 
 
-## Visualizzare le rappresentazioni FPO {#view-fpo-renditions}
+## Visualizza rappresentazioni FPO {#view-fpo-renditions}
 
-Puoi controllare le rappresentazioni FPO generate al termine del flusso di lavoro. Nell’interfaccia utente di Experience Manager Assets, fai clic sulla risorsa per aprire un’anteprima di grandi dimensioni. Apri la barra a sinistra e seleziona Rappresentazioni . In alternativa, utilizza la scelta rapida da tastiera `Alt + 3` quando l&#39;anteprima è aperta.
+Al termine del flusso di lavoro, è possibile controllare le rappresentazioni dell&#39;oggetto Criteri di gruppo generate. Nell’interfaccia utente di Experience Manager Assets, fai clic sulla risorsa per aprire un’anteprima di grandi dimensioni. Apri la barra a sinistra e seleziona Rappresentazioni. In alternativa, utilizza la scelta rapida da tastiera `Alt + 3` quando l’anteprima è aperta.
 
-Fai clic su **[!UICONTROL Rendering FPO]** per caricare la relativa anteprima. Facoltativamente, puoi fare clic con il pulsante destro del mouse sul rendering e salvarlo nel file system.
+Clic **[!UICONTROL Rendering FPO]** per caricarne l’anteprima. Se necessario, è possibile fare clic con il pulsante destro del mouse sulla copia trasformata e salvarla nel file system.
 
 ![rendition_list](assets/rendition_list.png)
 
@@ -135,6 +135,6 @@ Fai clic su **[!UICONTROL Rendering FPO]** per caricare la relativa anteprima. F
 ## Suggerimenti e limitazioni {#tips-limitations}
 
 * Per utilizzare la configurazione basata su ImageMagick, installare ImageMagick sullo stesso computer di Experience Manager.
-* Per generare rappresentazioni FPO di molte risorse o dell’intero archivio, pianifica ed esegui i flussi di lavoro durante una breve durata del traffico. La generazione di rappresentazioni FPO per un numero elevato di risorse è un’attività ad alta intensità di risorse e i server di Experience Manager devono disporre di una potenza di elaborazione e di una memoria sufficienti.
-* Per prestazioni e scalabilità, consulta [ImmagineMagick con ottimizzazione](performance-tuning-guidelines.md).
-* Per la gestione generica della riga di comando delle risorse, consulta [gestore della riga di comando per elaborare le risorse](media-handlers.md).
+* Per generare rappresentazioni FPO di molte risorse o dell’intero archivio, pianifica ed esegui i flussi di lavoro per una durata di traffico ridotto. La generazione di copie trasformate FPO per un numero elevato di risorse è un&#39;attività che richiede molte risorse e i server di Experience Manager devono disporre di potenza di elaborazione e memoria sufficienti.
+* Per prestazioni e scalabilità, consulta [Ottimizza ImageMagick](performance-tuning-guidelines.md).
+* Per informazioni generiche sulla gestione della riga di comando delle risorse, consulta [gestore della riga di comando per elaborare le risorse](media-handlers.md).

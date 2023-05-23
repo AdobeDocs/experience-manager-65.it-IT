@@ -1,7 +1,7 @@
 ---
-title: Frammenti di modulo adattivo di riferimento
+title: Fai riferimento a frammenti di moduli adattivi
 seo-title: Reference adaptive form fragments
-description: AEM Forms fornisce frammenti di modulo adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo.
+description: AEM Forms fornisce frammenti di moduli adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,34 +12,34 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Frammenti di modulo adattivo di riferimento{#reference-adaptive-form-fragments}
+# Fai riferimento a frammenti di moduli adattivi{#reference-adaptive-form-fragments}
 
-[Frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare per creare un modulo. Consente di creare un modulo in modo semplice e rapido. È possibile trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor del modulo.
+[Frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor moduli.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nella sezione [Pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
-* Informazioni sulla carta di credito
+* Informazioni carta di credito
 * Occupazione corrente
-* Informazioni dipendenti
-* Storia dell&#39;occupazione
+* Informazioni sui dipendenti
+* Cronologia impiego
 * Entrate e spese
 * Nome
 * Termini e condizioni
-* Termini e condizioni con Scribble
+* Termini e condizioni con scarabocchio
 
-Quando installi il pacchetto, in Forms &amp; Documents viene creata una cartella di frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, vedi [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per installare un pacchetto, consulta [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 
 ## Indirizzo {#address}
 
-Include i campi per specificare l’indirizzo postale. I campi disponibili sono indirizzo, CAP, città, stato e paese. Include inoltre un servizio Web preconfigurato che compila la città e lo stato per un codice postale statunitense specificato.
+Include campi per specificare l&#39;indirizzo postale. I campi disponibili sono indirizzo, CAP, città, stato e paese. Include anche un servizio web preconfigurato che popola la città e lo stato per un codice postale statunitense specificato.
 
 ![Frammento di indirizzo](assets/address.png)
 
@@ -49,32 +49,32 @@ Include i campi per specificare l’indirizzo postale. I campi disponibili sono 
 
 ## Informazioni di contatto {#contact-information}
 
-Include campi per l’acquisizione del numero di telefono e dell’indirizzo e-mail.
+Include campi per acquisire numero di telefono e indirizzo e-mail.
 
-![Frammento di informazioni di contatto](assets/contact-info.png)
+![Frammento informazioni contatto](assets/contact-info.png)
 
 <!--[Click to enlarge
 
 ](assets/contact-info-1.png)-->
 
-## Informazioni sulla carta di credito {#credit-card-information}
+## Informazioni carta di credito {#credit-card-information}
 
-Include i campi per acquisire le informazioni sulle carte di credito che possono essere utilizzate per elaborare i pagamenti.
-[ ![Frammento di informazioni sulla carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
+Include campi per acquisire informazioni sulla carta di credito che possono essere utilizzate per elaborare i pagamenti.
+[ ![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Occupazione corrente {#current-employment}
 
-Include campi per acquisire i dettagli attuali dell&#39;occupazione, come lo stato dell&#39;occupazione, il campo di impiego, la designazione, l&#39;organizzazione e la data di adesione.
+Include campi per acquisire i dettagli correnti sull&#39;impiego come lo stato, il campo di impiego, la designazione, l&#39;organizzazione e la data di iscrizione.
 
-![Frammento di occupazione corrente](assets/current-emp.png)
+![Frammento di impiego corrente](assets/current-emp.png)
 
 <!--[Click to enlarge
 
 ](assets/current-emp-1.png)-->
 
-## Informazioni dipendenti {#dependents-information}
+## Informazioni sui dipendenti {#dependents-information}
 
-Include campi per specificare informazioni su uno o più dipendenti, ad esempio nome, relazione ed età in formato tabella.
+Include campi per specificare informazioni su una o più dipendenze, ad esempio il nome, la relazione e l&#39;età, in formato tabulare.
 
 ![Frammento di informazioni dipendenti](assets/dependents-info.png)
 
@@ -82,11 +82,11 @@ Include campi per specificare informazioni su uno o più dipendenti, ad esempio 
 
 ](assets/dependents-info-1.png)-->
 
-## Storia dell&#39;occupazione {#employment-history}
+## Cronologia impiego {#employment-history}
 
-Include campi per acquisire la cronologia dei processi. Consente di aggiungere più organizzazioni.
+Include campi per acquisire la cronologia dell&#39;impiego. Consente di aggiungere più organizzazioni.
 
-![Frammento di cronologia impiego](assets/emp-history.png)
+![Frammento cronologia impiego](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -94,9 +94,9 @@ Include campi per acquisire la cronologia dei processi. Consente di aggiungere p
 
 ## Entrate e spese {#income-expenditure}
 
-Include campi per acquisire il flusso di cassa mensile e le spese. Forms che richiede agli utenti di fornire dettagli finanziari può utilizzare questo frammento per acquisire entrate e spese.
+Include campi per acquisire flussi di cassa e spese mensili. I Forms che richiedono agli utenti di fornire dettagli finanziari possono utilizzare questo frammento per acquisire entrate e spese.
 
-![Frammento di reddito e di spesa](assets/income.png)
+![Frammento entrate e spese](assets/income.png)
 
 <!--[Click to enlarge
 
@@ -122,11 +122,11 @@ Specifica i termini e le condizioni che gli utenti devono accettare prima di inv
 
 ](assets/tnc-1.png)-->
 
-## Termini e condizioni con Scribble {#terms-conditions-with-scribble}
+## Termini e condizioni con scarabocchio {#terms-conditions-with-scribble}
 
 Specifica i termini e le condizioni che gli utenti devono accettare e firmare prima di inviare un modulo.
 
-![Termini e condizioni con Scribble](assets/tnc-scribble.png)
+![Termini e condizioni con scarabocchio](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

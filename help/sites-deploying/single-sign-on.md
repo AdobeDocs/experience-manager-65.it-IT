@@ -1,7 +1,7 @@
 ---
-title: Single Sign On
+title: Single Sign-On
 seo-title: Single Sign On
-description: Scopri come configurare Single Sign On (SSO) per un’istanza AEM.
+description: Scopri come configurare il Single Sign On (SSO) per un’istanza AEM.
 seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
@@ -18,67 +18,67 @@ ht-degree: 0%
 
 ---
 
-# Single Sign On {#single-sign-on}
+# Single Sign-On {#single-sign-on}
 
-L&#39;accesso Single Sign On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione (ad esempio un nome utente e una password) una volta. Un sistema separato (noto come autenticatore affidabile) esegue l&#39;autenticazione e fornisce Experienci Manager con le credenziali utente. Experience Manager controlla e applica le autorizzazioni di accesso per l’utente (ovvero determina a quali risorse l’utente può accedere).
+Single Sign-On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione, ad esempio un nome utente e una password. L&#39;autenticazione viene eseguita da un sistema separato, denominato autenticatore attendibile, che fornisce agli Experienci Manager le credenziali utente. Experience Manager verifica e applica le autorizzazioni di accesso per l’utente (ovvero determina quali risorse l’utente può accedere).
 
-Servizio Handler autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati di autenticazione forniti dall&#39;autenticatore affidabile. Il gestore di autenticazione SSO cerca un ssid (SSO Identifier) come valore di un attributo speciale nelle seguenti posizioni in questo ordine:
+Il servizio Gestore autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati di autenticazione forniti dall&#39;autenticatore attendibile. Il gestore di autenticazione SSO cerca un SSID (SSO Identifier) come valore di un attributo speciale nelle posizioni seguenti in questo ordine:
 
-1. Intestazioni richieste
+1. Intestazioni richiesta
 1. Cookie
 1. Parametri di richiesta
 
-Quando viene trovato un valore, la ricerca viene completata e viene utilizzato questo valore.
+Quando viene trovato un valore, la ricerca viene completata e questo valore viene utilizzato.
 
-Configura i due servizi seguenti per riconoscere il nome dell&#39;attributo che memorizza il ssid:
+Configura i due servizi seguenti per riconoscere il nome dell&#39;attributo che memorizza l&#39;SSID:
 
-* Modulo di accesso.
-* Servizio autenticazione SSO.
+* Il modulo di accesso.
+* Il servizio di autenticazione SSO.
 
-È necessario specificare lo stesso nome di attributo per entrambi i servizi. L’attributo è incluso nel `SimpleCredentials` che sono forniti `Repository.login`. Il valore dell&#39;attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
+È necessario specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo è incluso nel `SimpleCredentials` fornito a `Repository.login`. Il valore dell’attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
 
-## Configurazione di SSO {#configuring-sso}
+## Configurazione dell’SSO {#configuring-sso}
 
-Per configurare SSO per un&#39;istanza AEM, devi configurare la [Handler autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Per configurare SSO per un’istanza AEM, è necessario configurare [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Quando si lavora con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e procedure consigliate.
+1. Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
 
    Ad esempio, per il set NTLM:
 
-   * **Percorso:** se necessario; ad esempio, `/`
-   * **Nomi delle intestazioni**: `LOGON_USER`
+   * **Percorso:** secondo necessità; ad esempio, `/`
+   * **Nomi intestazione**: `LOGON_USER`
    * **Formato ID**: `^<DOMAIN>\\(.+)$`
 
-      Dove `<*DOMAIN*>` viene sostituito dal proprio nome di dominio.
+      Dove `<*DOMAIN*>` viene sostituito dal nome di dominio dell’utente.
    Per CoSign:
 
-   * **Percorso:** se necessario; ad esempio, `/`
-   * **Nomi delle intestazioni**: remote_user
+   * **Percorso:** secondo necessità; ad esempio, `/`
+   * **Nomi intestazione**: utente_remoto
    * **Formato ID:** AsIs
 
    Per SiteMinder:
 
-   * **Percorso:** se necessario; ad esempio, `/`
-   * **Nomi delle intestazioni:** SM_USER
-   * **Formato ID**: AsIs
+   * **Percorso:** secondo necessità; ad esempio, `/`
+   * **Nomi intestazione:** SM_USER
+   * **Formato ID**: così com’è
 
 
 
-1. Verificare che Single Sign On funzioni come necessario; compresa l&#39;autorizzazione.
+1. Verificare che Single Sign-On funzioni come richiesto, inclusa l&#39;autorizzazione.
 
 >[!CAUTION]
 >
->Assicurati che gli utenti non possano accedere AEM direttamente se è configurato l&#39;SSO.
+>Assicurati che gli utenti non possano accedere direttamente all&#39;AEM se SSO è configurato.
 >
->Richiedendo agli utenti di passare attraverso un server web che esegue l&#39;agente del sistema SSO, si garantisce che nessun utente possa inviare direttamente un&#39;intestazione, un cookie o un parametro che porterà l&#39;utente ad essere affidabile da AEM, in quanto l&#39;agente filtrerà tali informazioni se inviate dall&#39;esterno.
+>Richiedendo agli utenti di passare attraverso un server web che esegue l&#39;agente del sistema SSO, si garantisce che nessun utente possa inviare direttamente un&#39;intestazione, un cookie o un parametro che porti l&#39;utente ad essere considerato attendibile dall&#39;AEM, in quanto l&#39;agente filtrerà tali informazioni se inviate dall&#39;esterno.
 >
->Qualsiasi utente che può accedere direttamente all’istanza di AEM senza passare attraverso il server web potrà agire come qualsiasi utente inviando l’intestazione, il cookie o il parametro , se i nomi sono noti.
+>Qualsiasi utente che può accedere direttamente all’istanza AEM senza passare per il server web sarà in grado di agire come qualsiasi altro utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
 >
->Inoltre, assicurati che per le intestazioni, i cookie e i nomi dei parametri di richiesta, configuri solo quello richiesto per la configurazione SSO.
+>Inoltre, accertati che tra intestazioni, cookie e nomi dei parametri di richiesta, sia configurato solo quello necessario per la configurazione SSO.
 
 >[!NOTE]
 >
->L’accesso Single Sign-On viene spesso utilizzato insieme a [LDAP](/help/sites-administering/ldap-config.md).
+>Il Single Sign-On viene spesso utilizzato in combinazione con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
@@ -87,11 +87,11 @@ Per configurare SSO per un&#39;istanza AEM, devi configurare la [Handler autenti
 >* `disp_iis.ini`
 >* IIS
 >
->In `disp_iis.ini` set:
->(vedi [installazione di Dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) per informazioni complete)
+>In entrata `disp_iis.ini` imposta:
+>(vedere [installazione di Dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) per maggiori informazioni)
 >
->* `servervariables=1` (inoltra le variabili del server IIS come intestazioni della richiesta all&#39;istanza remota)
->* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Autorizzazione&quot; diversa da &quot;Base&quot; con il suo equivalente &quot;Base&quot;)
+>* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
+>* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
 >
 >In IIS:
 >
@@ -101,13 +101,13 @@ Per configurare SSO per un&#39;istanza AEM, devi configurare la [Handler autenti
 >
 
 
-Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando **Autenticatore** opzione della console Felix; ad esempio:
+Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando **Autenticatore** della console Felix; ad esempio:
 
 `http://localhost:4502/system/console/slingauth`
 
-Viene prima eseguita una query sul gestore che meglio corrisponde al percorso. Ad esempio, se configuri handler-A per il percorso `/` e handler-B per il percorso `/content`, quindi una richiesta a `/content/mypage.html` eseguirà prima query handler-B.
+Viene eseguita prima una query sul gestore che corrisponde meglio al percorso. Ad esempio, se configuri il gestore A per il percorso `/` e handler-B per il percorso `/content`, quindi una richiesta a `/content/mypage.html` eseguirà prima la query del gestore B.
 
-![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
+![screen_shot_2012-02-15alle21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Esempio {#example}
 
@@ -119,15 +119,15 @@ Host: localhost:4502
 Cookie: TestCookie=admin
 ```
 
-Utilizzando la configurazione seguente:
+Utilizzando la seguente configurazione:
 
 * **Percorso**: `/`
 
-* **Nomi delle intestazioni**: `TestHeader`
+* **Nomi intestazione**: `TestHeader`
 
-* **Nomi dei cookie**: `TestCookie`
+* **Nomi cookie**: `TestCookie`
 
-* **Nomi dei parametri**: `TestParameter`
+* **Nomi parametri**: `TestParameter`
 
 * **Formato ID**: `AsIs`
 
@@ -152,25 +152,25 @@ Transfer-Encoding: chunked
 Questo funziona anche se richiedi:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Oppure puoi usare il seguente comando curl per inviare `TestHeader` intestazione `admin:`
+Oppure puoi utilizzare il seguente comando curl per inviare il `TestHeader` intestazione a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
->Quando utilizzi il parametro di richiesta in un browser, visualizzerai solo alcuni dei HTML - senza CSS. Questo perché tutte le richieste da HTML vengono effettuate senza il parametro di richiesta.
+>Quando utilizzi il parametro request in un browser, vedrai solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
 
 ## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
 
-Quando utilizzi SSO, l’accesso e la disconnessione vengono gestiti esternamente, in modo che AEM propri collegamenti di disconnessione non siano più applicabili e debbano essere rimossi.
+Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione di proprietà dell’AEM non sono più applicabili e devono essere rimossi.
 
-Il collegamento di disconnessione nella schermata di benvenuto può essere rimosso utilizzando i seguenti passaggi.
+Il collegamento per la disconnessione nella schermata di benvenuto può essere rimosso seguendo la procedura riportata di seguito.
 
 1. Sovrapposizione `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
-1. rimuovi la parte seguente dal jsp.
+1. rimuovi la parte seguente da jsp.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
-Per rimuovere il collegamento di disconnessione disponibile nel menu personale dell’utente nell’angolo in alto a destra, effettua le seguenti operazioni:
+Per rimuovere il collegamento di disconnessione disponibile nel menu personale dell&#39;utente nell&#39;angolo in alto a destra, eseguire la procedura seguente:
 
 1. Sovrapposizione `/libs/cq/ui/widgets/source/widgets/UserInfo.js` a `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 

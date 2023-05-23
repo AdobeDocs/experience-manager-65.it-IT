@@ -11,7 +11,7 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 87%
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 87%
 
 + [Panoramica della Guida utente all’authoring](home.md)
 + Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
-   + [Primi passi per gli autori](first-steps.md)
+   + [Primi passaggi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
    + [Concetto di authoring](author.md)
@@ -29,7 +29,7 @@ ht-degree: 87%
    + [Configurazione dell’ambiente dell’account](user-properties.md)
    + [Casella in entrata](inbox.md)
    + [Scelte rapide da tastiera per console](keyboard-shortcuts.md)
-   + [Selezione dell’interfaccia](select-ui.md)
+   + [Selezione dell’interfaccia utente](select-ui.md)
 + Authoring {#authoring}
    + [Ambiente e strumenti di authoring](author-environment-tools.md)
    + [Annotazioni durante la modifica di una pagina](annotations.md)
@@ -44,9 +44,9 @@ ht-degree: 87%
    + [Componenti](default-components.md)
    + [Authoring di una pagina per dispositivi mobili](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring](troubleshooting.md)
-   + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice  ](best-practices.md)
-+ Funzioni per il sito e le pagine {#siteandpage}
+   + [Scelte rapide da tastiera durante la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
+   + [Best practice](best-practices.md)
++ Funzioni del sito e della pagina {#siteandpage}
    + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
@@ -56,15 +56,15 @@ ht-degree: 87%
    + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.1)](creating-accessible-content.md)
-   + [Configurazione dei componenti in modalità Progettazione](default-components-designmode.md)
+   + [Configurazione dei componenti in modalità progettazione](default-components-designmode.md)
    + [Componenti di base](default-components-foundation.md)
    + [Scaffolding](scaffolding.md)
-   + [Visualizzazione dei dati analitici sulle pagine](page-analytics-using.md)
+   + [Visualizzazione dei dati di analisi delle pagine](page-analytics-using.md)
 + Progetti {#projects}
    + [Progetti](projects.md)
    + [Gestione dei progetti](touch-ui-managing-projects.md)
    + [Utilizzo delle attività](task-content.md)
-   + [Integrazione Progetto creativo e PIM](managing-product-information.md)
+   + [Progetto creativo e integrazione PIM](managing-product-information.md)
    + [Utilizzo dei flussi di lavoro per i progetti](projects-with-workflows.md)
 + Lanci {#launches}
    + [Lanci](launches.md)
@@ -78,8 +78,8 @@ ht-degree: 87%
    + [Utilizzo dei flussi di lavoro per i progetti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Prestazioni pagina {#page-performance}
    + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
-   + [Analisi delle prestazioni della pagina](ci-analyze.md)
-   + [Visualizzazione dei dati analitici sulle pagine](pa-using.md)
+   + [Analisi delle prestazioni delle pagine](ci-analyze.md)
+   + [Visualizzazione dei dati di analisi delle pagine](pa-using.md)
 + Personalizzazione {#personalization}
    + [Personalizzazione](personalization.md)
    + [Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub](ch-previewing.md)
@@ -90,9 +90,9 @@ ht-degree: 87%
    + [Gestione dei tipi di pubblico](managing-audiences.md)
    + [Creazione e gestione delle offerte](offerlib.md)
    + [Segmentazione](segmentation-overview.md)
-+ AEM e Adobe Campaign {#aem-adobe-campaign}
++ AEM e ADOBE CAMPAIGN {#aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
-   + [Targeting con Adobe Campaign](target-adobe-campaign.md)
-   + [Creazione di moduli di Adobe Campaign in AEM](adobe-campaign-forms.md)
+   + [Targeting del tuo Adobe Campaign](target-adobe-campaign.md)
+   + [Creazione di Adobe Campaign Forms nell’AEM](adobe-campaign-forms.md)
    + [Componenti di Adobe Campaign](adobe-campaign-components.md)

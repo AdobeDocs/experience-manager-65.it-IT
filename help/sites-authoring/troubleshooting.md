@@ -1,6 +1,6 @@
 ---
-title: Risoluzione dei problemi relativi all’authoring in AEM
-description: Alcuni problemi che potresti riscontrare durante l’utilizzo di AEM.
+title: Risoluzione dei problemi durante la creazione in AEM
+description: Alcuni problemi che possono verificarsi quando si utilizza AEM.
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,25 +21,25 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Quando si verificano problemi, è anche utile controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
+>Quando si verificano problemi, vale anche la pena controllare l&#39;elenco di [Problemi noti](/help/release-notes/release-notes.md) per la tua istanza (release e service pack).
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore possono utilizzare i metodi di risoluzione dei problemi descritti in [AEM per la risoluzione dei problemi (per gli amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti all’amministratore di sistema per informazioni sulla risoluzione dei AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti al tuo amministratore di sistema per informazioni sulla risoluzione dei problemi relativi all’AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Hai apportato modifiche a una pagina e l&#39;hai replicata sul sito pubblicato, ma la *vecchio* sul sito di pubblicazione viene ancora visualizzata la versione della pagina.
+   * Hai apportato modifiche a una pagina e l’hai replicata nel sito pubblicato, ma il *vecchio* La versione della pagina viene ancora visualizzata sul sito pubblicato.
 
 * **Motivo**:
 
-   * Questo può avere diverse cause, più spesso la cache (sia il browser locale che il Dispatcher), anche se a volte può essere un problema con la coda di replica.
+   * Questo può avere diverse cause, nella maggior parte dei casi la cache (nel browser locale o in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 
 * **Soluzioni**:
 
-   * Ci sono diverse possibilità qui:
+   * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
    * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
@@ -57,7 +57,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Motivo**:
 
-   * In rari casi, un’azione precedente potrebbe influenzare la barra degli strumenti.
+   * In rari casi, un’azione precedente potrebbe influire sulla barra degli strumenti.
 
 * **Soluzione**:
 

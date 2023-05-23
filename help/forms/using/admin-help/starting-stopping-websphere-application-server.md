@@ -1,7 +1,7 @@
 ---
-title: Avvio e arresto di WebSphere Application Server
+title: Avvio e arresto dell'Application Server WebSphere
 seo-title: Starting and stopping WebSphere Application Server
-description: Diverse procedure richiedono l’arresto o l’avvio dell’istanza di WebSphere in cui si desidera distribuire i prodotti AEM forms. In questo documento viene descritto come avviare e arrestare WebSphere Application Server.
+description: Diverse procedure richiedono l'arresto o l'avvio dell'istanza di WebSphere in cui si desidera distribuire i prodotti AEM forms. Questo documento descrive come avviare e arrestare l'Application Server WebSphere.
 seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
@@ -17,30 +17,30 @@ ht-degree: 0%
 
 ---
 
-# Avvio e arresto di WebSphere Application Server {#starting-and-stopping-websphere-application-server}
+# Avvio e arresto dell&#39;Application Server WebSphere {#starting-and-stopping-websphere-application-server}
 
-Diverse procedure richiedono l’arresto o l’avvio dell’istanza di WebSphere in cui si desidera distribuire i prodotti AEM forms. Se non si è certi che il server applicazioni sia stato avviato, è innanzitutto possibile visualizzare lo stato di WebSphere Application Server.
+Diverse procedure richiedono l&#39;arresto o l&#39;avvio dell&#39;istanza di WebSphere in cui si desidera distribuire i prodotti AEM forms. Se non si è certi che il server applicazioni sia stato avviato, è innanzitutto possibile visualizzare lo stato dell&#39;Application Server WebSphere.
 
-## Visualizza lo stato di WebSphere Application Server {#view-the-status-of-websphere-application-server}
+## Visualizzare lo stato dell&#39;Application Server WebSphere {#view-the-status-of-websphere-application-server}
 
-1. Da un prompt dei comandi, passa alla `[appserver root]/bin` directory.
-1. Immettere il seguente comando, sostituendo *nome_server* con il nome del server applicazioni WebSphere:
+1. Da un prompt dei comandi, passare al `[appserver root]/bin` directory.
+1. Immetti il comando seguente, sostituendo *nome_server* con il nome dell&#39;Application Server WebSphere:
 
    * (Windows) `serverStatus.bat`*nome_server*
-   * (Linux, UNIX) ./ `serverStatus.sh`*nome_server*
+   * (Linux, UNIX)./ `serverStatus.sh`*nome_server*
 
-## Avvia server applicazioni WebSphere {#start-websphere-application-server}
+## Avvia Application Server WebSphere {#start-websphere-application-server}
 
-1. Da un prompt dei comandi, passa alla `[appserver root]/bin` directory.
-1. Immettere il seguente comando, sostituendo *nome_server* con il nome del server applicazioni WebSphere:
+1. Da un prompt dei comandi, passare al `[appserver root]/bin` directory.
+1. Immetti il comando seguente, sostituendo *nome_server* con il nome dell&#39;Application Server WebSphere:
 
    * (Windows) `startServer.bat`*nome_server*
-   * (Linux, UNIX) ./ `startServer.sh`*nome_server*
+   * (Linux, UNIX)./ `startServer.sh`*nome_server*
 
 ## Arresta server applicazioni WebSphere {#stop-websphere-application-server}
 
-1. Da un prompt dei comandi, passa alla `[appserver root]/bin` directory.
-1. Immettere il seguente comando, sostituendo *nome_server* con il nome del server applicazioni WebSphere:
+1. Da un prompt dei comandi, passare al `[appserver root]/bin` directory.
+1. Immetti il comando seguente, sostituendo *nome_server* con il nome dell&#39;Application Server WebSphere:
 
    * (Windows) `stopServer.bat`*nome_server*
-   * (Linux, UNIX) ./ `stopServer.sh`*nome_server*
+   * (Linux, UNIX)./ `stopServer.sh`*nome_server*

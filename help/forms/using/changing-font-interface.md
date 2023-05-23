@@ -1,7 +1,7 @@
 ---
-title: Modifica del font nell’interfaccia
+title: Modifica del tipo di carattere nell'interfaccia
 seo-title: Changing the font on the interface
-description: Come modificare selettivamente i font nell’interfaccia utente.
+description: Come modificare selettivamente i caratteri nell'interfaccia utente.
 seo-description: How to change the fonts on the user interface selectively.
 uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
@@ -18,22 +18,22 @@ ht-degree: 1%
 
 ---
 
-# Modifica del font nell’interfaccia{#changing-the-font-on-the-interface}
+# Modifica del tipo di carattere nell&#39;interfaccia{#changing-the-font-on-the-interface}
 
-È possibile modificare il font visualizzato nell’area di lavoro di AEM Forms. I font utilizzati in una sezione specifica dell’interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare selettivamente i font nell’interfaccia utente.
+Puoi modificare il font visualizzato nell’area di lavoro di AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i caratteri nell&#39;interfaccia utente in modo selettivo.
 
-Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, a seconda dei requisiti, segui i passaggi per personalizzare CSS, HTML o entrambi.
+Segui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e a seconda delle tue esigenze, segui i passaggi per personalizzare CSS, HTML o entrambi.
 
-1. Modificare o aggiungere la famiglia di font in uno stile esistente.
-1. Modifica o aggiungi il font-family in linea per l’elemento HTML.
+1. Modificate o aggiungete la famiglia font in uno stile esistente.
+1. Modificare o aggiungere la famiglia di caratteri in linea per l&#39;elemento HTML.
 1. Aggiungi uno stile e utilizzalo per l’elemento HTML.
 
-Ad esempio, per modificare il font del testo di ancoraggio della barra di navigazione superiore in Courier New, effettua le seguenti operazioni:
+Ad esempio, per modificare il tipo di carattere del testo di ancoraggio della barra di navigazione superiore in Courier New, effettuare le seguenti operazioni:
 
 1. Accedi a CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Effettua una delle operazioni seguenti:
 
-   1. Per modificare la famiglia di font in uno stile esistente, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
+   1. Per modificare la famiglia di caratteri in uno stile esistente, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
 
       ```css
       #topnav a {
@@ -41,9 +41,9 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       }
       ```
 
-   1. Per aggiungere il font-family in linea per l’elemento HTML, copia il `/libs/ws/js/runtime/templates/appnavigation.html` file a `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Per aggiungere la famiglia di caratteri in linea per l&#39;elemento HTML, copiare `/libs/ws/js/runtime/templates/appnavigation.html` file in `/apps/ws/js/runtime/templates/appnavigation.html`.
 
-      Aggiorna il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
+      Aggiornare il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
 
       ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
@@ -54,7 +54,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
       Apri il file /apps/ws/js/registry.js per la modifica e la sostituzione `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Per aggiungere uno stile che definisca la famiglia di font, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
+   1. Per aggiungere uno stile che definisca la famiglia font, aggiungi quanto segue nel file newStyle.css in /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -62,7 +62,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
       }
       ```
 
-      Per aggiungere il font-family in linea per l’elemento HTML, aggiungi quanto segue nel file appnavigation.html in /apps/ws/js/runtime/templates.
+      Per aggiungere la famiglia font in linea per l’elemento HTML, aggiungi quanto segue nel file appnavigation.html in /apps/ws/js/runtime/templates.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">
@@ -79,7 +79,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
 ![change_font_before](assets/change_font_before.png)
 
-Barra di navigazione superiore prima della personalizzazione del font
+Barra di navigazione superiore prima della personalizzazione dei caratteri
 
 ![change_font_after](assets/change_font_after.png)
 

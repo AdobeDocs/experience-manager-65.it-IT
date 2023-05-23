@@ -1,7 +1,7 @@
 ---
-title: Verifica i diritti di utilizzo di un file PDF
+title: Verificare i diritti di utilizzo di un file PDF
 seo-title: Review the usage rights of a PDF file
-description: Scopri come esaminare i diritti di utilizzo di un file PDF.
+description: Scopri come rivedere i diritti di utilizzo di un file PDF.
 seo-description: Learn how to review the usage rights of a PDF file.
 uuid: b55e945c-03e2-4b26-aacb-f1234ce163f1
 contentOwner: admin
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ---
 
-# Verifica i diritti di utilizzo di un file PDF {#review-the-usage-rights-of-a-pdf-file}
+# Verificare i diritti di utilizzo di un file PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Quando carichi un file PDF nell’applicazione Web Acrobat Reader DC extensions, puoi visualizzare queste informazioni:per verificare se è stato esteso il Reader, se sono stati applicati i diritti di utilizzo e le relative date di scadenza.
+Quando carichi un file PDF nell&#39;applicazione Web Acrobat Reader DC extensions, puoi visualizzare queste informazioni:per verificare se è stato esteso al Reader, eventuali diritti di utilizzo applicati e le rispettive date di scadenza.
 
-1. Accedi all&#39;applicazione web Acrobat Reader DC extensions all&#39;indirizzo `http://[localhost]:[port]/ReaderExtensions` (4) *[porta]* è il numero di porta del server dell&#39;applicazione).
-1. Fare clic su Sfoglia per caricare il file PDF e quindi su Informazioni. Le informazioni vengono visualizzate sotto il nome del file.
+1. Accedi all’applicazione web Acrobat Reader DC extensions all’indirizzo `http://[localhost]:[port]/ReaderExtensions` (dove *[porta]* è il numero di porta del server applicazioni).
+1. Fare clic su Sfoglia per caricare il file PDF, quindi su Info. Le informazioni vengono visualizzate sotto il nome del file.
 
-   Per informazioni dettagliate su come modificare i diritti di utilizzo del file, consulta la Guida delle estensioni Acrobat Reader DC .
+   Consulta la Guida delle estensioni di Acrobat Reader DC per informazioni dettagliate sulla modifica dei diritti di utilizzo del file.

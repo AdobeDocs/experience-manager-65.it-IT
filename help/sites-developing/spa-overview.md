@@ -26,7 +26,7 @@ L’editor di SPA offre una soluzione completa per il supporto di SPA in AEM. Qu
 
 >[!NOTE]
 >
->L’editor di SPA è la soluzione consigliata per i progetti che richiedono SPA rendering lato client basato su framework (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 
@@ -39,7 +39,7 @@ Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il co
 Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
 
 * [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti tecnici di una SPA
-* [Guida introduttiva a SPA in AEM](/help/sites-developing/spa-getting-started-react.md) per un rapido tour di un semplice SPA
+* [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) per una rapida presentazione di un semplice SPA
 
 ## Design {#design}
 
@@ -160,7 +160,7 @@ Questa è una panoramica più dettagliata incentrata sull’esperienza di author
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Vedi la [Guida introduttiva a SPA in AEM](/help/sites-developing/spa-getting-started-react.md) documentazione per il minimo che devi sapere per far funzionare il tuo.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta la sezione [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) documenti che è necessario conoscere almeno per avviare il tuo sistema.
 
 ### Framework supportati {#supported-frameworks}
 
@@ -183,16 +183,16 @@ Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di 
 
 Se desideri utilizzare l’editor locale di un componente di testo creato in SPA è necessaria una configurazione aggiuntiva.
 
-1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Nel caso del contenuto di esempio di WKND Journal, è un `<div>` e il selettore utilizzato è `data-rte-editelement`.
-1. Imposta la configurazione `editElementQuery` sul componente di testo AEM corrispondente `cq:InplaceEditingConfig` che punta a quel selettore, ad esempio `data-rte-editelement`. Questo consente all’editor di sapere quale elemento HTML si applica al testo di HTML.
+1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Nel caso del contenuto di esempio di WKND Journal, è un `<div>` e il selettore che è stato utilizzato è `data-rte-editelement`.
+1. Impostare la configurazione `editElementQuery` relativa al componente di testo AEM corrispondente `cq:InplaceEditingConfig` che punta al selettore, ad esempio `data-rte-editelement`. Questo consente all’editor di sapere quale elemento HTML si applica al testo di HTML.
 
-Per un esempio di come eseguire questa operazione, consulta [Contenuto di esempio del Journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Per un esempio di questa procedura, vedere [Contenuto di esempio del diario WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Per ulteriori informazioni sulla proprietà `editElementQuery` e la configurazione dell’editor Rich Text, vedi [Configura l’editor Rich Text.](/help/sites-administering/rich-text-editor.md)
 
 ### Limitazioni {#limitations}
 
-L&#39;SDK dell&#39;editor SPA AEM è stato introdotto con AEM 6.4 service pack 2. È completamente supportato dall’Adobe e continua a essere migliorato ed esteso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
+L’SDK dell’editor SPA dell’AEM è stato introdotto con il service pack 2 per AEM 6.4. È completamente supportato da Adobe, e continua a essere migliorato ed espanso. Le seguenti funzioni di AEM non sono ancora supportate dall’editor di SPA:
 
 * Modalità di destinazione
 * ContextHub

@@ -1,7 +1,7 @@
 ---
-title: Modifica delle impostazioni di conversione di esportazione di PDF
+title: Modifica delle impostazioni di conversione dell'esportazione PDF
 seo-title: Modifying the PDF Export conversion settings
-description: Scopri come modificare le impostazioni di conversione di PDF Export.
+description: Scopri come modificare le impostazioni di conversione dell’esportazione PDF.
 seo-description: Learn how to modify the PDF Export conversion settings.
 uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ---
 
-# Modifica delle impostazioni di conversione di esportazione di PDF {#modifying-the-pdf-export-conversion-settings}
+# Modifica delle impostazioni di conversione dell&#39;esportazione PDF {#modifying-the-pdf-export-conversion-settings}
 
-Utilizza la procedura seguente per modificare le impostazioni di conversione per l’esportazione di un file PDF, EPS, un DOC, un TXT, un file RTF, un file XML o un file HTML. Per impostazione predefinita, il file PDF utilizza le impostazioni predefinite Salva con nome configurate in Adobe Acrobat Professional o Acrobat Standard. Ad esempio, le impostazioni predefinite Salva con nome in Acrobat per la conversione di un file PDF in EPS determineranno la conversione di una sola pagina dal file PDF in EPS.
+Utilizza la procedura seguente per modificare le impostazioni di conversione per esportare un file PDF, EPS, DOC, TXT, RTF, XML o HTML. Per impostazione predefinita, il file PDF utilizza le impostazioni Salva con nome predefinite configurate in Adobe Acrobat Professional o Acrobat Standard. Ad esempio, con le impostazioni predefinite per il salvataggio con nome in Acrobat per la conversione di un file PDF in EPS verrà convertita in EPS una sola pagina del file PDF.
 
 >[!NOTE]
 >
->Dopo aver modificato l’impostazione Salva con nome per un formato di file, questa verrà applicata a tutte le conversioni dello stesso tipo quando vengono esportate da PDF Generator.
+>Dopo aver modificato l&#39;impostazione Salva con nome per un formato di file, questa verrà applicata a tutte le conversioni dello stesso tipo quando vengono esportate da PDF Generator.
 
-1. Con il file PDF aperto in Acrobat, selezionare File > Salva con nome.
-1. Selezionare il formato appropriato dall’elenco Salva con nome.
-1. Fare clic su Impostazioni e impostare le impostazioni del formato del file come necessario.
-1. Fare clic su OK, quindi su Salva per esportare il file PDF.
+1. Con il file PDF aperto in Acrobat, seleziona File > Salva con nome.
+1. Nell&#39;elenco Tipo file selezionare il formato appropriato.
+1. Fare clic su Impostazioni e impostare le impostazioni del formato di file in base alle esigenze.
+1. Fare clic su OK e quindi su Salva per esportare il file PDF.

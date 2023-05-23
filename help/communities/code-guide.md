@@ -1,7 +1,7 @@
 ---
-title: Linee guida sulla codifica
+title: Linee guida per la codifica
 seo-title: Coding Guidelines
-description: Linee guida, suggerimenti e trucchi per gli sviluppatori di Communities
+description: Linee guida per sviluppatori, suggerimenti e trucchi per community
 seo-description: Communities developer guidelines, tips, and tricks
 uuid: 311ef4f7-7f2c-44c3-bcf2-f68713752623
 contentOwner: msm-service
@@ -13,32 +13,32 @@ exl-id: a23aab83-1dfa-4d91-9b6b-6246a2103896
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Linee guida sulla codifica {#coding-guidelines}
+# Linee guida per la codifica {#coding-guidelines}
 
 ## Linee guida, suggerimenti {#guidelines-tips-and-tricks}
 
-L’utilizzo di AEM Communities si è evoluto, passando dall’essere fortemente dipendente dalle pagine Java Server alla flessibilità nella scelta di modelli di linguaggi di script in cui la logica di business, lo stile e il contenuto di pagina sono diversi l’uno dall’altro.
+L’utilizzo di AEM Communities si è evoluto da una forte dipendenza dalle pagine Java Server a una flessibilità nella scelta di linguaggi di script basati su modelli in cui la logica di business, lo stile e il contenuto delle pagine sono distinti gli uni dagli altri.
 
-L&#39;ulteriore flessibilità nell&#39;utilizzo dei contenuti generati dagli utenti (UGC) è attraverso l&#39;API SocialResourceProvider, che elimina la necessità di esserne consapevoli [SRP](srp.md) opzione selezionata per la distribuzione.
+Un’ulteriore flessibilità nell’utilizzo dei contenuti generati dagli utenti (UGC, User-Generated Content) è offerta dall’API SocialResourceProvider, che elimina la necessità di sapere quali [SRP](srp.md) è stata scelta l&#39;opzione per la distribuzione.
 
-Di seguito sono riportate diverse linee guida per la codifica e best practice per gli sviluppatori AEM Communities:
+Di seguito sono riportate varie linee guida per la codifica e best practice per gli sviluppatori di AEM Communities:
 
 ### Codice {#code}
 
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - come evitare di scrivere un&#39;applicazione che funziona solo quando UGC è memorizzato in JCR (JSRP).
-* [Refactoring di SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.
-* [Convenzioni di denominazione](naming-conventions.md) - convenzioni di denominazione per classi Java personalizzate.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) : come evitare di scrivere un’applicazione che funziona solo quando UGC è memorizzato in JCR (JSRP).
+* [Refactoring SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.
+* [Convenzioni di denominazione](naming-conventions.md) : convenzioni di denominazione per le classi Java personalizzate.
 
 ### Script {#scripts}
 
-* [Caricamento in parallelo dei componenti di Communities](sideloading.md) - come aggiungere dinamicamente un componente dopo il caricamento della pagina.
-* [Nozioni di base sull’editor Rich Text](rte.md) - come personalizzare l’interfaccia RTF fornita ai membri per la pubblicazione dei contenuti.
+* [Sideload dei componenti community](sideloading.md) : come aggiungere in modo dinamico un componente dopo il caricamento della pagina.
+* [Nozioni di base sull’editor Rich Text](rte.md) : come personalizzare l’interfaccia utente Rich Text fornita ai membri per la pubblicazione dei contenuti.
 
 ### IDE {#ide}
 
-* [Utilizzo di Maven per Communities](maven.md) - come includere il jar API di Communities.
-* [Refactoring di SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.
+* [Utilizzo di Maven per le community](maven.md) : come includere il file jar dell’API Communities.
+* [Refactoring SocialUtils](socialutils.md) - metodi di utilità per SRP che sostituiscono SocialUtils.

@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti -> Risorse -> Modelli per frammenti di contenuto.
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in Strumenti > Risorse > Modelli per frammenti di contenuto.
 
 ![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
 
@@ -110,7 +110,7 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * [Concetti relativi all’authoring](/help/sites-authoring/author.md)
 
-* [Operazioni di base](/help/sites-authoring/basic-handling.md) - questa pagina si basa principalmente sul **Sites** console, ma molte delle funzioni sono utili anche per navigare verso e intervenire su di esse, **Modelli per frammenti di contenuto** in **Risorse** console.
+* [Operazioni di base](/help/sites-authoring/basic-handling.md) : questa pagina si basa principalmente su **Sites** , ma molte/molte delle funzioni sono pertinenti anche per navigare e intervenire su, **Modelli per frammenti di contenuto** sotto **Risorse** console.
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
@@ -132,4 +132,4 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * Guide introduttive
 
-   * [Guida rapida alla creazione di modelli di frammenti di contenuto headless](/help/sites-developing/headless/getting-started/create-content-model.md)
+   * [Guida rapida alla creazione di modelli per frammenti di contenuto headless](/help/sites-developing/headless/getting-started/create-content-model.md)

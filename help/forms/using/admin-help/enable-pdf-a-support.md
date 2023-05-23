@@ -1,7 +1,7 @@
 ---
 title: Abilita supporto PDF/A
 seo-title: Enable PDF/A support
-description: Scopri come abilitare il supporto PDF/A. I file compatibili con PDF/A possono essere creati da file Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
+description: Scopri come abilitare il supporto di PDF/A. I file compatibili con PDF/A possono essere creati da file Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 seo-description: Learn how to enable PDF/A support. PDF/A-compliant files can be created from Microsoft Excel, Microsoft PowerPoint, and Microsoft Word files.
 uuid: 663bc89d-9d8b-4178-9a88-6d2d5daac477
 contentOwner: admin
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Abilita supporto PDF/A {#enable-pdf-a-support}
 
-PDF Generator supporta la creazione di file conformi a PDF/A da file Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
+PDF Generator supporta la creazione di file compatibili con PDF/A da file Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 
-1. Nella console di amministrazione, fare clic su Servizi > Generatore di PDF > Impostazioni tipo di file.
+1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni tipo di file.
 1. Fare clic su Nuovo o selezionare un&#39;impostazione del tipo di file esistente.
-1. Fare clic su Microsoft Excel, Microsoft PowerPoint o Microsoft Word, quindi selezionare Crea file compatibile PDF/A-1a e salvare le modifiche.
-1. Nell’applicazione nativa (ad esempio Microsoft Word), fai clic su Adobe PDF > Cambia impostazioni conversione, quindi seleziona PDF/A-1b.
+1. Fare clic su Microsoft Excel, Microsoft PowerPoint o Microsoft Word, quindi selezionare Crea file conforme a PDF/A-1a e salvare le modifiche.
+1. Nell&#39;applicazione nativa, ad esempio Microsoft Word, fare clic su Adobe PDF > Modifica impostazioni di conversione e quindi selezionare PDF/A-1b.

@@ -1,6 +1,6 @@
 ---
-title: Come creare un Forms adattivo utilizzando lo schema XML?
-description: Scopri come utilizzare lo schema XML come modello di modulo in un modulo adattivo. È possibile applicare modelli XSD esistenti per creare moduli adattivi e trascinare elementi dello schema da XSD sul modulo adattivo. Approfondisci un esempio di schema XML, aggiungi proprietà speciali ai campi utilizzando lo schema XML e limita i valori accettabili per un componente modulo adattivo.
+title: Come si crea un Forms adattivo utilizzando lo schema XML?
+description: Scopri come utilizzare lo schema XML come modello di modulo in un modulo adattivo. Puoi applicare i modelli XSD esistenti per creare moduli adattivi e trascinare e rilasciare gli elementi dello schema da XSD al modulo adattivo. Approfondisci l’esempio di uno schema XML, aggiungi proprietà speciali ai campi utilizzando uno schema XML e limita i valori accettabili per un componente modulo adattivo.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -12,34 +12,34 @@ ht-degree: 5%
 
 ---
 
-# Creazione di moduli adattivi tramite schema XML {#creating-adaptive-forms-using-xml-schema}
+# Creazione di moduli adattivi tramite lo schema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisiti {#prerequisites}
 
-La creazione di un modulo adattivo utilizzando uno schema XML come modello di modulo richiede la comprensione di base degli schemi XML. Inoltre, è consigliabile consultare il seguente contenuto prima di questo articolo.
+Per creare un modulo adattivo utilizzando uno schema XML come modello di modulo è necessario conoscere a fondo gli schemi XML. Inoltre, si consiglia di leggere il seguente contenuto prima di questo articolo.
 
 * [Creazione di un modulo adattivo](creating-adaptive-form.md)
 * [Schema XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Utilizzo di uno schema XML come modello di modulo {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione.
+[!DNL Experience Manager Forms] supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione.
 
 Le caratteristiche principali dell&#39;utilizzo di uno schema XML sono:
 
-* La struttura di XSD viene visualizzata come una struttura nella scheda Content Finder nella modalità di creazione per un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia XSD al modulo adattivo.
-* È possibile precompilare il modulo utilizzando un XML conforme allo schema associato.
-* Al momento dell’invio, i dati immessi dall’utente vengono inviati come XML che si allinea allo schema associato.
+* La struttura dell’XSD viene visualizzata come una struttura nella scheda Content Finder nella modalità di authoring di un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia XSD al modulo adattivo.
+* È possibile precompilare il modulo utilizzando XML conforme allo schema associato.
+* Al momento dell’invio, i dati immessi dall’utente vengono inviati come XML in linea con lo schema associato.
 
-Uno schema XML è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente sul componente del modulo adattivo corrispondente.
+Uno schema XML è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente al corrispondente componente del modulo adattivo.
 
-Questa mappatura degli elementi XML con componenti per moduli adattivi è la seguente:
+Di seguito è riportata la mappatura degli elementi XML con i componenti dei moduli adattivi:
 
 <table>
  <tbody>
   <tr>
    <th><strong>Elemento o attributo XML </strong></th>
-   <th><strong>Componente per moduli adattivi</strong></th>
+   <th><strong>Componente modulo adattivo</strong></th>
   </tr>
   <tr>
    <td><code>xs:string</code></td>
@@ -67,7 +67,7 @@ Questa mappatura degli elementi XML con componenti per moduli adattivi è la seg
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>Elenco a discesa</td>
+   <td>Elenchi a discesa</td>
   </tr>
   <tr>
    <td>Qualsiasi elemento di tipo complesso</td>
@@ -78,7 +78,7 @@ Questa mappatura degli elementi XML con componenti per moduli adattivi è la seg
 
 ## Schema XML di esempio {#sample-xml-schema}
 
-Ecco un esempio di schema XML.
+Di seguito è riportato un esempio di schema XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -122,7 +122,7 @@ Ecco un esempio di schema XML.
 
 >[!NOTE]
 >
->Assicurati che lo schema XML abbia un solo elemento principale. Uno schema XML con più di un elemento principale non è supportato.
+>Verificare che lo schema XML contenga un solo elemento principale. Schema XML con più elementi radice non supportato.
 
 ## Aggiunta di proprietà speciali ai campi utilizzando lo schema XML {#adding-special-properties-to-fields-using-xml-schema}
 
@@ -132,12 +132,12 @@ Ecco un esempio di schema XML.
  <tbody>
   <tr>
    <th><strong>Proprietà schema</strong></th>
-   <th><strong>Uso in modulo adattivo</strong></th>
+   <th><strong>Uso nei moduli adattivi</strong></th>
    <th><strong>Supportato in </strong></th>
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Contrassegna un campo obbligatorio<br /> </td>
+   <td>Contrassegna un campo come obbligatorio<br /> </td>
    <td>Attributo</td>
   </tr>
   <tr>
@@ -147,13 +147,13 @@ Ecco un esempio di schema XML.
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>Specifica le occorrenze minime</p> <p>(Per sottomoduli ripetibili (tipi complessi))</p> </td>
+   <td><p>Specifica le occorrenze minime</p> <p>(Per sottomaschere ripetibili (tipi complessi))</p> </td>
    <td>Elemento (tipo complesso)</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>Specifica le occorrenze massime</p> <p>(Per sottomoduli ripetibili (tipi complessi))</p> </td>
+   <td><p>Specifica le occorrenze massime</p> <p>(Per sottomaschere ripetibili (tipi complessi))</p> </td>
    <td>Elemento (tipo complesso)</td>
   </tr>
  </tbody>
@@ -161,16 +161,16 @@ Ecco un esempio di schema XML.
 
 >[!NOTE]
 >
->Quando si trascina un elemento dello schema in un modulo adattivo, una didascalia predefinita viene generata da:
+>Quando trascini un elemento schema in un modulo adattivo, viene generata una didascalia predefinita da:
 >
->* Capitalizzazione del primo carattere del nome dell’elemento
->* Inserimento di spazio bianco ai limiti Camel Case.
+>* Uso dell&#39;iniziale maiuscola nel nome dell&#39;elemento
+>* Inserimento di uno spazio vuoto nei limiti della Camel Case.
 >
->Ad esempio, se aggiungi il `userFirstName` elemento schema, la didascalia generata nel modulo adattivo è `User First Name`.
+>Ad esempio, se aggiungi il `userFirstName` schema, la didascalia generata nel modulo adattivo è `User First Name`.
 
-## Limitare i valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitare valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
-È possibile aggiungere le seguenti restrizioni agli elementi dello schema XML per limitare i valori accettabili per un componente modulo adattivo:
+Per limitare i valori accettabili per un componente modulo adattivo, è possibile aggiungere le seguenti restrizioni agli elementi dello schema XML:
 
 <table>
  <tbody>
@@ -183,7 +183,7 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>totalDigits</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il numero massimo di cifre consentito in un componente. Il numero di cifre specificato deve essere maggiore di zero.</p> </td>
+   <td><p>Specifica il numero massimo di cifre consentite in un componente. Il numero di cifre specificato deve essere maggiore di zero.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -193,7 +193,7 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il limite superiore per i valori numerici e le date. Per impostazione predefinita, è incluso il valore massimo.</p> </td>
+   <td><p>Specifica il limite superiore per valori numerici e date. Per impostazione predefinita, il valore massimo è incluso.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -215,7 +215,7 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere inferiori al valore numerico o alla data specificati per la proprietà maximum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo deve essere minore o uguale al valore numerico o alla data specificata per la proprietà maximum.</p> </td>
+   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere inferiori al valore numerico o alla data specificati per la proprietà maximum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo deve essere minore o uguale al valore numerico o alla data specificati per la proprietà maximum.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -226,7 +226,7 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere maggiori del valore numerico o della data specificati per la proprietà minima.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo devono essere maggiori o uguali al valore numerico o alla data specificata per la proprietà minima.</p> </td>
+   <td><p>Se true, il valore numerico o la data specificati nel componente del modulo devono essere maggiori del valore numerico o della data specificati per la proprietà minimum.</p> <p>Se false, il valore numerico o la data specificati nel componente del modulo devono essere maggiori o uguali al valore numerico o alla data specificati per la proprietà minimum.</p> </td>
    <td>
     <ul>
      <li>Casella numerica</li>
@@ -237,7 +237,7 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il numero minimo di caratteri consentiti in un componente. La lunghezza minima deve essere uguale o maggiore di zero.</p> </td>
+   <td><p>Specifica il numero minimo di caratteri consentito in un componente. La lunghezza minima deve essere uguale o maggiore di zero.</p> </td>
    <td>
     <ul>
      <li>Casella di testo</li>
@@ -264,19 +264,19 @@ Ecco un esempio di schema XML.
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica il numero massimo di posizioni decimali consentite in un componente. La frazioneDigits deve essere uguale o maggiore di zero.</p> </td>
+   <td><p>Specifica il numero massimo di posizioni decimali consentite in un componente. FractionDigits deve essere uguale o maggiore di zero.</p> </td>
    <td>
     <ul>
-     <li> Casella numerica con tipo di dati mobile o decimale</li>
+     <li> Casella numerica con tipo di dati float o decimal</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al pattern specificato.</p> <p>La proprietà pattern è associata al pattern di convalida del componente modulo adattivo corrispondente.</p> </td>
+   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al modello specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente del modulo adattivo corrispondente.</p> </td>
    <td>
     <ul>
-     <li>Tutti i componenti dei moduli adattivi mappati su uno schema XSD </li>
+     <li>Tutti i componenti di moduli adattivi mappati su uno schema XSD </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -284,29 +284,29 @@ Ecco un esempio di schema XML.
 
 ## Domande frequenti {#frequently-asked-questions}
 
-**Come faccio a sapere quale elemento della struttura è associato a quale elemento XML?**
+**Come è possibile sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando si fa doppio clic su un elemento nel Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando si fa doppio clic su un elemento in Content Finder, in una finestra popup viene visualizzato il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento della struttura all&#39;elemento o all&#39;attributo nello schema.
 
-![Campo di binding di un elemento di schema XML](assets/dblclick.png)
+![Campo bindref di un elemento schema XML](assets/dblclick.png)
 
-bindRef</code> mostra l&#39;associazione tra un elemento struttura e un elemento o un attributo in uno schema.
+bindRef</code> mostra l’associazione tra un elemento della struttura e un elemento o un attributo in uno schema.
 
 >[!NOTE]
 >
->Gli attributi hanno un `@` simbolo `bindRef`per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
+>Gli attributi hanno un `@` simbolo nel loro `bindRef`per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
 
-**Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccours sono maggiori di 1)?**
+**Perché non è possibile trascinare singoli elementi di una sottomaschera (struttura generata da qualsiasi tipo complesso) per sottomaschere ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
-In un sottomodulo ripetibile, è necessario utilizzare il sottomodulo Completa. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
+In una sottomaschera ripetibile è necessario utilizzare la sottomaschera Completa. Se desideri solo campi selettivi, utilizza l’intera struttura ed elimina quelli indesiderati.
 
-**Ho una lunga struttura complessa in Content Finder. Come posso trovare un elemento specifico?**
+**In Content Finder ho una struttura lunga e complessa. Come posso trovare un elemento specifico?**
 
 Sono disponibili due opzioni:
 
-* Scorrere la struttura ad albero
-* Utilizza la casella Ricerca per trovare un elemento
+* Scorri nella struttura ad albero
+* Utilizzare la casella di ricerca per trovare un elemento
 
-**Cos&#39;è un bindRef?**
+**Che cos&#39;è un bindRef?**
 
-A `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo schema. Stabilisce la `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. A `bindRef`viene utilizzato anche durante la precompilazione di un valore di campo da XML precompilato (prepopolato).
+A `bindRef` è la connessione tra un componente modulo adattivo e un elemento o un attributo dello schema. Determina la `XPath` dove il valore acquisito da questo componente o campo è disponibile nel codice XML di output. A `bindRef`viene utilizzato anche quando si precompila un valore di campo da XML precompilato (precompilato).

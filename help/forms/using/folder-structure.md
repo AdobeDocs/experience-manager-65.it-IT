@@ -1,7 +1,7 @@
 ---
 title: Informazioni sulla struttura delle cartelle
 seo-title: Understanding the folder structure
-description: Informazioni sulla struttura delle cartelle del codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
+description: Come comprendere la struttura di cartelle del codice sorgente dell’area di lavoro AEM Forms da personalizzare.
 seo-description: How to understand the folder structure of AEM Forms workspace source code to customize.
 uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 # Informazioni sulla struttura delle cartelle {#understanding-the-folder-structure}
 
-I componenti dell’area di lavoro di AEM Forms sono progettati sull’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
+I componenti dell’area di lavoro AEM Forms sono progettati sull’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
 
 * Modello, che contiene la logica di business.
-* Modello, ovvero un file HTML contenente i controlli dell’interfaccia.
-* Visualizza, che funge da classe Controller in Modello.
+* Modello, un file HTML contenente controlli di interfaccia.
+* Visualizza, che funge da classe Controller per Template.
 
-Le risorse per tutti i componenti vengono posizionate nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Lite e sfoglia fino a `/libs/ws/js/runtime/`.
+Le risorse di tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Lite e passa a `/libs/ws/js/runtime/`.
 
-**modelli** Contiene modelli di dorsale.
+**modelli** Contiene modelli di spina dorsale.
 
-**visualizzazioni** Contiene le visualizzazioni della spina dorsale.
+**visualizzazioni** Contiene le viste della spina dorsale.
 
 **modelli** Contiene solo i modelli di HTML per i componenti.
 
-**rotte** Contiene percorsi universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
+**percorsi** Contiene percorsi universali. La cartella Templates all’interno delle route contiene il codice HTML e i riferimenti ai componenti.
 
-**servizi** Contiene l’interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
+**servizi** Contiene l’interfaccia di servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
 
-**util** Contiene utilità generiche utilizzabili da più componenti.
+**fino al** Contiene utility generiche utilizzabili da più componenti.

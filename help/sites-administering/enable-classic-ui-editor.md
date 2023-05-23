@@ -1,7 +1,7 @@
 ---
 title: Editor
 seo-title: Editor
-description: Scopri come tornare all’editor dell’interfaccia classica.
+description: Scopri come tornare all’Editor dell’interfaccia classica.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
@@ -20,11 +20,11 @@ ht-degree: 7%
 
 # Editor{#editor}
 
-Per impostazione predefinita, la possibilità di passare all’interfaccia classica dall’editor è stata disabilitata.
+Per impostazione predefinita, la possibilità di passare all’interfaccia classica dall’editor è stata disattivata.
 
-Per riattivare l’opzione **Apri nell’interfaccia classica** in **Informazioni pagina** seguire questi passaggi.
+Per riattivare l’opzione **Apri nell’interfaccia classica** nel **Informazioni pagina** , eseguire la procedura seguente.
 
-1. Utilizzando CRXDE Lite, trova il seguente nodo:
+1. Utilizzando CRXDE Lite, individua il seguente nodo:
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
@@ -32,16 +32,16 @@ Per riattivare l’opzione **Apri nell’interfaccia classica** in **Informazion
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Crea una sovrapposizione utilizzando il **Nodo di sovrapposizione** opzione; ad esempio:
+1. Creare una sovrapposizione utilizzando **Sovrapponi nodo** opzione; ad esempio:
 
    * **Percorso**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Posizione sovrapposizione**: `/apps/`
-   * **Tipi di nodo corrispondenti**: attivo (seleziona la casella di controllo)
+   * **Corrispondenza tipi di nodo**: attivo (seleziona la casella di controllo)
 
 1. Aggiungi la seguente proprietà di testo con più valori al nodo sovrapposto:
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. La **Apri nell’interfaccia classica** è nuovamente disponibile nella **Informazioni pagina** durante la modifica delle pagine.
+1. Il **Apri nell’interfaccia classica** è nuovamente disponibile nella **Informazioni pagina** durante la modifica delle pagine.
 
    ![](assets/syui-03-2019-02-27-15-19-48.png)

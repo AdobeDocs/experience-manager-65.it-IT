@@ -21,12 +21,12 @@ ht-degree: 0%
 
 # Introduzione all’utilizzo di PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator converte vari formati di file in PDF. Converte anche PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per un elenco dei formati di file supportati consulta [Supporto software per PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator converte vari formati di file in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per un elenco dei formati di file supportati, consulta [Supporto software per PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-**Invio di file a PDF Generator per l’elaborazione**
+**Invio di file a PDF Generator per l&#39;elaborazione**
 
 Esistono tre modi per inviare file a PDF Generator per l’elaborazione:
 
-* Gli amministratori possono accedere alle pagine PDFG in Admin Console. (Vedi [Conversione di file tramite PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* Gli utenti possono accedere alle pagine dell’utente finale PDFG accedendo a `http(s)://'[server]:[port]'/pdfgui.` Da lì possono accedere alle pagine Stampante di rete PDFG, Crea PDF, HTML per PDF, Export PDF e Optimize PDF.
-* Puoi configurare gli endpoint per i servizi . Consulta <!--Fix broken link to Managing Endpoints --> [Generare consigli sul servizio PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
+* Gli amministratori possono accedere alle pagine PDFG nella console di amministrazione. (vedere [Conversione di file con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
+* Gli utenti possono accedere alle pagine degli utenti finali del PDFG accedendo a `http(s)://'[server]:[port]'/pdfgui.` Da qui è possibile accedere alle pagine Stampante di rete PDFG, Create PDF, HTML to PDF, Export PDF e Optimize PDF.
+* Puoi configurare gli endpoint per i servizi. Consulta <!--Fix broken link to Managing Endpoints --> [Genera consigli per il servizio PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).

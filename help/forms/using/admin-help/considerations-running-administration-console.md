@@ -1,7 +1,7 @@
 ---
-title: Considerazioni sull’esecuzione di AdministrationConsole
+title: Considerazioni durante l’esecuzione di Administration Console
 seo-title: Considerations when running AdministrationConsole
-description: In questo documento sono elencati alcuni punti da considerare durante l'esecuzione della console di amministrazione.
+description: In questo documento sono elencati alcuni punti da considerare durante l'esecuzione di Administration Console.
 seo-description: This document lists a few points to consider when running Administration Console.
 uuid: e260f187-4728-44f3-a5c1-7388ff3965c4
 contentOwner: admin
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Considerazioni sull’esecuzione della console di amministrazione {#considerations-when-running-administrationconsole}
+# Considerazioni durante l’esecuzione di Administration Console {#considerations-when-running-administrationconsole}
 
-Di seguito sono riportati alcuni aspetti da considerare durante l’esecuzione della console di amministrazione:
+Di seguito sono riportati alcuni aspetti da considerare durante l’esecuzione di Administration Console:
 
-* Se accedi alla console di amministrazione utilizzando l’URL `https://[hostname]:'port'/adminui`, il nome host specificato non può contenere caratteri di sottolineatura. In caso contrario, i collegamenti ad alcune aree della console di amministrazione potrebbero non funzionare correttamente.
+* Se accedi alla console di amministrazione utilizzando l’URL `https://[hostname]:'port'/adminui`, il nome host specificato non può contenere trattini bassi. In caso contrario, i collegamenti ad alcune aree della console di amministrazione potrebbero non funzionare correttamente.
 * Se si esegue la console di amministrazione in Esplora risorse su un sistema operativo giapponese, è possibile che si verifichino i seguenti problemi:
 
-   * Facendo clic su un collegamento si torna alla pagina di accesso anziché al collegamento previsto.
-   * Facendo clic su un collegamento viene visualizzato un errore di autorizzazione.
+   * Facendo clic su un collegamento si ritorna alla pagina di accesso anziché al collegamento previsto.
+   * Quando si fa clic su un collegamento, viene visualizzato un errore di autorizzazione.
 
-   Si consiglia di eseguire la console di amministrazione da un altro browser, ad esempio Mozilla Firefox, per garantire che nessun collegamento abbia esito negativo.
+   Si consiglia di eseguire la console di amministrazione da un altro browser, come Mozilla Firefox, per garantire che nessun collegamento non riesca.
 
-* Non utilizzare i caratteri barra rovesciata () quando si eseguono ricerche nella console di amministrazione.
+* Non utilizzare i caratteri barra rovesciata () durante l’esecuzione di ricerche nella console di amministrazione.

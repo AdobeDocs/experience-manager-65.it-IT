@@ -1,5 +1,5 @@
 ---
-title: Controlli di coerenza e di transito
+title: Controlli di coerenza e di attraversamento
 seo-title: Consistency and Traversal Checks
 description: Scopri come eseguire controlli di coerenza e di attraversamento.
 seo-description: Learn how to perform consistency and traversal checks.
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ---
 
-# Controlli di coerenza e di transito{#consistency-and-traversal-checks}
+# Controlli di coerenza e di attraversamento{#consistency-and-traversal-checks}
 
-Durante l’aggiornamento possono verificarsi problemi a causa di incongruenze nell’area di lavoro. Puoi eseguire un aggiornamento del test per verificare se si tratta di un problema, oppure eseguire i controlli di coerenza come azione preventiva.
+Durante l&#39;aggiornamento possono verificarsi problemi a causa di incoerenze nell&#39;area di lavoro. Puoi eseguire un aggiornamento dei test per verificare se si tratta di un problema, oppure eseguire i controlli di coerenza come azione preventiva.
 
-Se esegui un aggiornamento del test che non riesce a causa di incongruenze nell’area di lavoro, vedrai voci simili alle seguenti in crx-quickstart/logs/crx/error.log:
+Se esegui un aggiornamento dei test che non riesce a causa di incoerenze nell’area di lavoro, verranno visualizzate voci simili a quelle riportate di seguito in crx-quickstart/logs/crx/error.log:
 
 ```xml
 *ERROR* TarPersistenceManager: No bundle found for uuid 'deadbeef-cafe-babe-cafe-babecafebabe'
@@ -31,14 +31,14 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 ...
 ```
 
-## Eseguire un controllo di coerenza {#perform-a-consistency-check}
+## Eseguire una verifica di coerenza {#perform-a-consistency-check}
 
-Per eseguire un controllo di coerenza, passa alla pagina di amministrazione per JMX Mbean** com.adobe.granite (Repository)**. Dalla schermata principale AEM, vai a:
+Per eseguire una verifica di coerenza, passa alla pagina di amministrazione di JMX Mbean** com.adobe.granite (archivio)**. Dalla schermata principale dell’AEM, vai a:
 
-**Strumenti > Console web > Principale (nella barra dei menu) > JMX > com.adobe.granite (Repository)**
+**Strumenti > Console web > Principale (barra dei menu) > JMX > com.adobe.granite (archivio)**
 
-In un&#39;installazione predefinita, si trova qui:  **[|Mostra utente|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+In un’installazione predefinita, si trova qui:  **[|Mostra|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-In **Operazioni** nella sezione della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fai clic sull’operazione e immetti i parametri desiderati.
+In **Operazioni** della pagina sono disponibili due metodi: **`traversalCheck`** e **`consistencyCheck`**. Per eseguire un controllo, fare clic sull&#39;operazione e immettere i parametri desiderati.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)

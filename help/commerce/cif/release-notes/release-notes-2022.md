@@ -5,23 +5,23 @@ exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 44%
+ht-degree: 46%
 
 ---
 
-# Panoramica sulla versione di Commerce Integration Framework GitHub
+# Panoramica sulla versione GitHub di Commerce Integration Framework
 
 ## Panoramica dei requisiti di sistema
 
-Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF in uso o che intendi utilizzare in futuro.
+Esaminare i requisiti di sistema minimi nella tabella seguente per la versione CIF in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: AEM 6.5.7, Magento 2.3.5 Schemi GraphQL |
+| Componente aggiuntivo CIF | Minimo: schemi GraphQL del Magento 2.3.5 per AEM 6.5.7 |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Data di rilascio: Settembre 2022
+## Data di rilascio: settembre 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -31,12 +31,12 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-september}
 
-* Gli autori possono arricchire dinamicamente gli elenchi di prodotti con Frammenti esperienza (esempio: Inserire banner tra le inserzioni di prodotti)
+* Gli autori possono arricchire dinamicamente gli elenchi di prodotti con Frammenti di esperienza (ad esempio, inserendo un banner tra le voci dei prodotti elencati)
 * Il componente Elenco supporta le pagine di prodotti/categorie associate per mostrare in modo dinamico le pagine correlate
-* Supporto per i componenti Peregrine 12.5
-* Supporto per il caricamento del prezzo lato client nel teaser e nel carosello del prodotto
+* Supporto per componenti Peregrine 12.5
+* Supporto per il caricamento dei prezzi lato client nel teaser e nel carosello dei prodotti
 
-## Data di rilascio: Luglio 2022
+## Data di rilascio: luglio 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -44,10 +44,10 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 ### Novità {#what-is-new-july}
 
-* Associazione di pagine AEM a prodotti e categorie tramite le proprietà di pagina AEM più panoramica in cockpit prodotto
-   ![associazione pagina cockpit prodotto](/help/assets/CIF/product_cockpit_page_association.png)
+* Associazione di pagine AEM a prodotti e categorie tramite le proprietà della pagina AEM e panoramica nella cabina di comando del prodotto
+   ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
 
-## Data di rilascio: Giugno 2022
+## Data di rilascio: giugno 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -67,7 +67,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Componente pagina errato in Data Layer
 
-## Data di rilascio: Maggio 2022
+## Data di rilascio: maggio 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -91,7 +91,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
 * Il selettore prodotti viene talvolta nascosto dietro i componenti
 
-## Data di rilascio: Aprile 2022
+## Data di rilascio: aprile 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -109,7 +109,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 
    ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Data di rilascio: Febbraio 2022
+## Data di rilascio: febbraio 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
@@ -125,7 +125,7 @@ Rivedi i requisiti minimi di sistema nella tabella seguente per la versione CIF 
 * Gestione semplificata della configurazione CIF e della gestione degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
 * Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Questo consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza del catalogo
 
-## Data di rilascio: Gennaio 2022
+## Data di rilascio: gennaio 2022
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|

@@ -1,7 +1,7 @@
 ---
 title: Elenchi di controllo
 seo-title: Checklists
-description: La seguente lista di controllo evidenzia alcuni dei principali problemi di test
+description: Il seguente elenco di controllo evidenzia alcuni dei principali problemi di test
 seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
@@ -19,21 +19,21 @@ ht-degree: 3%
 
 # Elenchi di controllo{#checklists}
 
-La seguente lista di controllo evidenzia alcuni dei problemi principali. Per maggiori dettagli, consulta le altre sezioni relative al testing .
+Il seguente elenco di controllo evidenzia alcuni dei problemi principali. Per informazioni dettagliate, consulta le altre sezioni relative ai test.
 
 | Seleziona | Risposta | Azione | Proprietario | Scadenza |
 |---|---|---|---|---|
-| È stato istituito un meccanismo di segnalazione chiaro e regolare? |  |  |  |  |
+| È stato istituito un meccanismo chiaro e regolare di segnalazione? |  |  |  |  |
 | I soggetti chiave (del team di test) sono coinvolti nelle riunioni sullo stato? |  |  |  |  |
-| Le responsabilità in materia di test sono chiaramente definite (in particolare per il cliente)? |  |  |  |  |
-| Il cliente ha l&#39;esperienza necessaria per adempiere ai propri impegni di test? |  |  |  |  |
-| Sono stati selezionati tutti gli strumenti (test e tracking)? |  |  |  |  |
-| Gli strumenti di cui sopra sono stati installati e gli utenti (principalmente il team di progetto) sono stati formati in base alle necessità? |  |  |  |  |
-| È stato elaborato un piano di prova chiaro e completo? |  |  |  |  |
-| Il piano di prova è stato riesaminato dalle parti interessate? |  |  |  |  |
-| Sono stati definiti chiaramente i test di accettazione? |  |  |  |  |
-| Tutte le parti hanno accettato ufficialmente i test di accettazione? |  |  |  |  |
+| Le responsabilità dei test sono chiaramente definite (in particolare per il cliente)? |  |  |  |  |
+| Il cliente ha l’esperienza necessaria per adempiere ai propri impegni di test? |  |  |  |  |
+| Sono stati selezionati tutti gli strumenti (test e tracciamento)? |  |  |  |  |
+| Sono stati installati gli strumenti di cui sopra e gli utenti (principalmente il team di progetto) sono stati formati in base alle necessità? |  |  |  |  |
+| È stato elaborato un piano di test chiaro e completo? |  |  |  |  |
+| Il piano di prova è stato rivisto dalle parti interessate? |  |  |  |  |
+| I test di accettazione sono stati definiti in modo chiaro? |  |  |  |  |
+| Le prove di accettazione sono state ufficialmente accettate da tutte le parti? |  |  |  |  |
 
 >[!NOTE]
 >
->È inoltre possibile visualizzare le [Gestione dei progetti - Lista di controllo delle best practice](/help/managing/best-practices.md) per ulteriori liste di controllo relative all’intero progetto.
+>È inoltre possibile visualizzare [Gestione dei progetti - Elenco di controllo delle best practice](/help/managing/best-practices.md) per ulteriori checklist relative all’intero progetto.

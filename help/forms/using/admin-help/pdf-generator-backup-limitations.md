@@ -1,7 +1,7 @@
 ---
 title: Limitazioni del backup di PDF Generator
 seo-title: PDF Generator backup limitations
-description: Informazioni sulle limitazioni del backup di PDF Generator.
+description: Scopri le limitazioni del backup di PDF Generator.
 seo-description: Learn about PDF Generator backup limitations.
 uuid: 9537ffde-4396-46d1-81ea-edcd25923ffb
 contentOwner: admin
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 # Limitazioni del backup di PDF Generator {#pdf-generator-backup-limitations}
 
-Impossibile eseguire il backup della directory temporanea utilizzata da PDF Generator per convertire i file. Anche se il servizio verrà ripristinato correttamente, i dati possono andare persi perché PDF Generator esamina e cancella il contenuto della directory temporanea a intervalli definiti.
+Non è possibile eseguire il backup della directory temporanea utilizzata da PDF Generator per convertire i file. Anche se il servizio verrà ripristinato correttamente, i dati possono andare persi perché PDF Generator rivede e cancella il contenuto della directory temporanea a intervalli impostati.

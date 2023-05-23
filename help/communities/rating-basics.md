@@ -19,13 +19,13 @@ ht-degree: 1%
 
 # Nozioni di base sulla valutazione {#rating-essentials}
 
-La componente di valutazione, un [tally](tally.md) subclass, consente ai membri della community che hanno effettuato l’accesso di valutare una funzione sul sito web.
+Il componente di valutazione, un [conteggio](tally.md) sottoclasse, consente ai membri della community con accesso effettuato di assegnare una valutazione a una funzione del sito web.
 
-È consentito posizionare più istanze di un componente con diritto di voto sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
+È consentito posizionare più istanze di un componente voting sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
 
-Pubblicazione anonima di una classificazione non supportata. I visitatori del sito devono registrarsi e accedere per partecipare a una valutazione una sola volta. Il visitatore connesso (membro) può cambiare la sua valutazione in qualsiasi momento.
+La pubblicazione anonima di una valutazione non è supportata. I visitatori del sito devono registrarsi e accedere per partecipare a una valutazione una sola volta. Il visitatore con accesso (membro) può modificare la propria valutazione in qualsiasi momento.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,7 +34,7 @@ Pubblicazione anonima di una classificazione non supportata. I visitatori del si
    <td> social/tally/components/hbs/rating</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td>
   </tr>
   <tr>
@@ -42,7 +42,7 @@ Pubblicazione anonima di una classificazione non supportata. I visitatori del si
    <td> cq.social.hbs.rating</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td>
   </tr>
   <tr>
@@ -51,33 +51,33 @@ Pubblicazione anonima di una classificazione non supportata. I visitatori del si
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Vedi <a href="rating.md">Utilizzo della classificazione</a></p> </td>
+   <td><p>Consulta <a href="rating.md">Utilizzo della valutazione</a></p> </td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoint tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Punti finali conteggio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso alle valutazioni registrate (UGC) {#accessing-posted-ratings-ugc}
+### Accesso alle valutazioni pubblicate (UGC) {#accessing-posted-ratings-ugc}
 
-UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.
-Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
+Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di storage](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
-* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
-* [Refactoring di SocialUtils](socialutils.md) - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.

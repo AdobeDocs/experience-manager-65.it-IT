@@ -19,12 +19,12 @@ ht-degree: 1%
 
 ## Trattini nel nome del pacchetto Java {#hyphens-in-java-package-name}
 
-Quando crei una posizione per una classe Java, tieni presente che il nome del pacchetto deve corrispondere a quello della posizione della cartella dell’archivio con eventuali trattini nel percorso correttamente preceduti da escape.
+Quando crei una posizione per una classe Java, tieni presente che il nome del pacchetto deve corrispondere a quello della posizione della cartella dell’archivio con eventuali trattini nel percorso correttamente preceduti da un carattere di escape.
 
-L’utilizzo dei trattini nei nomi degli elementi dell’archivio è una pratica consigliata nello sviluppo AEM , ma i trattini non sono consentiti nei nomi dei pacchetti Java.
+Sebbene l’utilizzo dei trattini nei nomi degli elementi dell’archivio sia una pratica consigliata nello sviluppo dell’AEM, i trattini non sono consentiti nei nomi dei pacchetti Java.
 
-La piattaforma CRX sottostante deve essere in grado di distinguere tra un underscore effettivo `_ `e un trattino `-`. Pertanto, in JCR, il trattino deve essere sostituito con il suo valore unicode (u002d) ed essere escape con un carattere di sottolineatura `_`.
+La piattaforma CRX sottostante deve essere in grado di distinguere un carattere di sottolineatura effettivo `_ `e un trattino `-`. Pertanto, in JCR, il trattino deve essere sostituito con il relativo valore unicode (u002d) ed è possibile escape con un trattino basso `_`.
 
-Ad esempio, se il percorso del repository è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
+Ad esempio, se il percorso dell’archivio è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
 
-Tenere presente che un carattere di sottolineatura deve essere ugualmente escape, in modo che `_` diventa `_005f`.
+Si noti che un carattere di sottolineatura deve essere evitato in modo simile, tale che `_` diventa `_005f`.

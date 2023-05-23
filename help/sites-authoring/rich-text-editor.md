@@ -12,7 +12,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 68%
+ht-degree: 51%
 
 ---
 
@@ -30,7 +30,7 @@ Quando si seleziona un componente basato su testo con un solo tocco o clic, vien
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Se si tocca o si fa clic nuovamente oppure si seleziona inizialmente il componente con un doppio tocco o doppio clic lento, si passa invece alla modifica diretta locale, con un’apposita barra degli strumenti. Qui puoi modificare il contenuto ed effettuare modifiche di formattazione di base.
+Toccando/facendo nuovamente clic o selezionando inizialmente il componente con un doppio tocco/clic lento si aprirà la modifica diretta, che ha una propria barra degli strumenti. Qui puoi modificare il contenuto e apportare semplici modifiche di formattazione.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -44,11 +44,11 @@ Questa barra degli strumenti contiene le opzioni seguenti:
 * **Chiudi**
 * **Salva**
 
-## Modifica a schermo intero {#full-screen-editing}
+## Modifica a tutto schermo {#full-screen-editing}
 
-Per i componenti basati su testo, tocca la modalità a schermo intero nella barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
+Per i componenti basati su testo, tocca la modalità a tutto schermo nella barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
 
-Nella modalità a schermo intero sono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità è opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
+In modalità a schermo intero vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità è nelle opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -65,4 +65,4 @@ Per chiudere la modalità a schermo intero, fai clic sull’icona Riduci a icona
 
 >[!NOTE]
 >
->Copiare gli elenchi nidificati da Microsoft Word nell’editor Rich Text può dare risultati incoerenti e richiedere un adeguamento manuale dopo aver incollato il testo nell’editor Rich Text.
+>Copiare gli elenchi nidificati da Microsoft Word nell’editor Rich Text può dare risultati incoerenti e richiedere una regolazione manuale dopo aver incollato il testo nell’editor Rich Text.

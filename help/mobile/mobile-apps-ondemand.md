@@ -1,7 +1,7 @@
 ---
 title: Mobile On-Demand
 seo-title: Mobile On-Demand
-description: Segui questa pagina per scoprire i ruoli e le responsabilità dell’autore di servizi mobili on-demand AEM.
+description: Segui questa pagina per scoprire i ruoli e le responsabilità dell’autore di servizi mobili on-demand dell’AEM.
 seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
 uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
 contentOwner: msm-service
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -31,26 +31,26 @@ ht-degree: 4%
 >
 >**Prerequisito:**
 >
->Prima di lavorare con AEM Mobile On-demand Services e di seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con [AEM](/help/sites-deploying/deploy.md).
+>Prima di lavorare con AEM Mobile On-demand Services e seguire i passaggi descritti in questa guida introduttiva, gli utenti devono avere familiarità con [AEM](/help/sites-deploying/deploy.md).
 
-## Autore di AEM Mobile {#aem-mobile-author}
+## Autore AEM Mobile {#aem-mobile-author}
 
-Un ***AEM Author* o *Addetto marketing*)**utilizza modelli e componenti personalizzati o preconfigurati per aggiungere e modificare pagine, trascinare componenti e aggiungere file multimediali di qualsiasi tipo dal DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). AEM editor di contenuti incorporati viene quindi utilizzato da *Autori AEM* per creare esperienze avanzate e rilevanti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
+Un ***Autore AEM* (o *Addetto marketing*)**utilizza modelli e componenti personalizzati o pronti all’uso per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere contenuti multimediali di tutti i tipi da DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto). L’editor di contenuti integrato AEM viene quindi utilizzato da *Autori AEM* per creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
 
 Un autore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On Demand Services.
 
-**Creazione di contenuti AEM per l’app AEM Mobile On-demand Services** comporta le seguenti azioni:
+**Creazione di contenuti AEM per l’app AEM Mobile On-demand Services** comporta le azioni seguenti:
 
-* [Dashboard dell&#39;applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [Dashboard dell’applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Azioni di creazione e configurazione delle applicazioni](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Configurazione cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
-* [Gestione dei contenuti](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [Gestione del contenuto](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Per saperne di più **Content Services**, vedi [Panoramica dei servizi di contenuto](/help/mobile/develop-content-as-a-service.md) per iniziare.
+Per saperne di più **Content Services**, vedi [Panoramica di Content Services](/help/mobile/develop-content-as-a-service.md) per iniziare.
 
 >[!NOTE]
 >
->Per informazioni generali sulle nozioni di base di modelli e componenti in AEM, consulta le risorse seguenti:
+>Per informazioni generali sulle nozioni di base dei modelli e dei componenti in AEM, consulta le risorse seguenti:
 >
 >* [Modelli](/help/sites-developing/templates.md)
 >* [Componenti](/help/sites-developing/components.md)

@@ -1,7 +1,7 @@
 ---
-title: Utilizzo di Social Tag Cloud
+title: Utilizzo di Tag cloud per social network
 seo-title: Using Social Tag Cloud
-description: Aggiunta di un componente Social Tag Cloud a una pagina
+description: Aggiunta di un componente cloud per tag per social network a una pagina
 seo-description: Adding a Social Tag Cloud component to a page
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
@@ -17,86 +17,86 @@ ht-degree: 5%
 
 ---
 
-# Utilizzo di Social Tag Cloud {#using-social-tag-cloud}
+# Utilizzo di Tag cloud per social network {#using-social-tag-cloud}
 
 ## Introduzione {#introduction}
 
-La `Social Tag Cloud` Il componente evidenzia i tag applicati dai membri della community durante la pubblicazione dei contenuti. È un mezzo per identificare gli argomenti di tendenza e consentire ai visitatori del sito di individuare rapidamente i contenuti con tag.
+Il `Social Tag Cloud` Il componente evidenzia i tag applicati dai membri della community durante la pubblicazione del contenuto. È un mezzo per identificare gli argomenti di tendenza e consentire ai visitatori del sito di individuare rapidamente i contenuti con tag.
 
-Per un altro modo di identificare le tendenze attuali, visita [Tendenze delle attività](trends.md).
+Per un altro modo di identificare le tendenze attuali, visita [Tendenze attività](trends.md).
 
-Questa pagina documenta la `Social Tag Cloud` impostazioni della finestra di dialogo dei componenti e descrive l’esperienza utente.
+Questa pagina documenta `Social Tag Cloud` impostazioni della finestra di dialogo del componente e descrive l’esperienza utente.
 
-Per informazioni dettagliate per gli sviluppatori vedi [Nozioni di base sui tag](tag.md).
+Per informazioni dettagliate per gli sviluppatori, consulta [Nozioni di base sui tag](tag.md).
 
-Vedi [Amministrazione dei tag](../../help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+Consulta [Amministrazione dei tag](../../help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati.
 
-## Aggiunta di un cloud di tag social {#adding-a-social-tag-cloud}
+## Aggiunta di un tag cloud per social network {#adding-a-social-tag-cloud}
 
-Per aggiungere una `Social Tag Cloud` componente per una pagina in modalità di creazione, usate il browser componenti per individuare `Communities / Social Tag Cloud` e trascinalo nella posizione in una pagina in cui dovrebbe essere visualizzato il tag cloud.
+Per aggiungere una `Social Tag Cloud` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare `Communities / Social Tag Cloud` e trascinarlo in una pagina in cui dovrebbe apparire l’area dei tag.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando il [librerie lato client richieste](tag.md#essentials-for-client-side) sono inclusi, è così che `Social Tag Cloud` apparirà il componente:
+Quando [librerie lato client richieste](tag.md#essentials-for-client-side) sono inclusi, è così che `Social Tag Cloud` Il componente verrà visualizzato:
 
-![social-tag](assets/social-tag.png)
+![tag social](assets/social-tag.png)
 
-## Configurazione di Social Tag Cloud {#configuring-social-tag-cloud}
+## Configurazione di Tag Cloud per social network {#configuring-social-tag-cloud}
 
-Seleziona il `Social Tag Cloud` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Social Tag Cloud` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
-![configurare](assets/configure-new.png)
+![configura](assets/configure-new.png)
 
-Sotto la **[!UICONTROL Social Tag Cloud]** , specifica i tag da visualizzare e, se i tag sono collegamenti attivi, il percorso della pagina per i risultati della ricerca:
+Sotto **[!UICONTROL Tag cloud social]** , specificare i tag da visualizzare e, se i tag sono collegamenti attivi, la posizione della pagina per i risultati di ricerca:
 
 ![social-tag-cloud](assets/social-tag-cloud.png)
 
 * **[!UICONTROL Tag per social network da visualizzare]**
-Identifica i tag UGC da visualizzare. Le opzioni a discesa sono:
+Identifica i tag UGC da visualizzare. Le opzioni di pull-down sono:
 
    * `From page and child pages`
    * `All tags`
 
-   Il valore predefinito è `From page and child pages`, dove &quot;page&quot; fa riferimento al **Pagina** di seguito.
+   Il valore predefinito è `From page and child pages`, dove &quot;page&quot; si riferisce al **Pagina** di seguito.
 
 * **[!UICONTROL Pagina]**
 
-   (Obbligatorio se non `All tags)` Percorso dell’UGC per una pagina. Il valore predefinito è la pagina corrente se lasciato vuoto.
+   (Obbligatorio se non `All tags)` Percorso dell’UGC per una pagina. Se lasciata vuota, la pagina corrente è predefinita.
 
 * **[!UICONTROL Nessun collegamento sui tag]**
 
-   Se questa opzione è selezionata, i tag vengono visualizzati nel tag cloud come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi che consentono di eseguire ricerche in tutto il contenuto a cui è applicato il tag. Il valore predefinito è deselezionato e richiede l&#39;opzione **[!UICONTROL Percorso dei risultati di ricerca]** da impostare.
+   Se questa opzione è selezionata, i tag vengono visualizzati nell’area dei tag come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi che eseguono ricerche su tutto il contenuto a cui è applicato il tag. L&#39;impostazione predefinita è deselezionata e richiede **[!UICONTROL Percorso risultati di ricerca]** da impostare.
 
 * **[!UICONTROL Percorso risultati ricerca]**
 
-   Percorso di una pagina in cui è `Search Result` il componente è stato posizionato, configurato per fare riferimento a UGC che include il percorso UGC specificato da **Pagina** impostazione.
+   Percorso di una pagina in cui è presente un `Search Result` il componente è stato inserito, configurato per fare riferimento a UGC che include il percorso UGC specificato da **Pagina** impostazione.
 
-## Modifica visualizzazione di Social Tag Cloud {#change-display-of-social-tag-cloud}
+## Cambia visualizzazione tag cloud per social network {#change-display-of-social-tag-cloud}
 
-Per modificare la visualizzazione del **Social Tag Cloud**, inserisci [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fai doppio clic sul `Social Tag Cloud` per aprire una finestra di dialogo con una scheda aggiuntiva.
+Per modificare la visualizzazione di **Tag cloud social**, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sulla `Social Tag Cloud` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Utilizzo della **[!UICONTROL Social Tag Cloud (progettazione)]** Specifica la modalità di visualizzazione dei tag. Un tag può essere un tag semplice, una singola parola nello spazio dei nomi predefinito o una tassonomia gerarchica:
+Utilizzo di **[!UICONTROL Tag cloud per social network (progettazione)]** , specificare la modalità di visualizzazione dei tag. Un tag può essere un tag semplice, una singola parola nello spazio dei nomi predefinito o una tassonomia gerarchica:
 
 ![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
 * **[!UICONTROL Mostra percorsi titolo completi]**
 
-   Se questa opzione è selezionata, mostra i titoli dei tag principali e lo spazio dei nomi per ciascun tag applicato.
+   Se questa opzione è selezionata, mostra i titoli dei tag padre e dello spazio dei nomi per ogni tag applicato.
 
-   Esempio:
+   Ad esempio:
 
    * Selezionato: `Geometrixx Media: Gadgets / Cars`
    * Deselezionato: `Cars`
 
-   Non c&#39;è differenza per un tag semplice.
+   Non c’è differenza per un tag semplice.
 
-   Il valore predefinito è deselezionato.
+   L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Mostra solo tag foglia]**
 
    Se questa opzione è selezionata, vengono visualizzati solo i tag applicati che non contengono altri tag.
 
-   Ad esempio, in base al TagID di:
+   Ad esempio, dato il TagID di:
 
    `Geometrixx Media: Gadgets / Cars`
 
@@ -109,18 +109,18 @@ Utilizzo della **[!UICONTROL Social Tag Cloud (progettazione)]** Specifica la mo
 
    Un tag semplice è un tag foglia.
 
-   Il valore predefinito è deselezionato.
+   L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Modello collegamento]**
 
-   Un modello, diverso da quello predefinito, utilizzato per visualizzare i collegamenti in un tag cloud quando i collegamenti sono attivati tramite la finestra di dialogo di modifica del componente.
+   Modello, diverso da quello predefinito, utilizzato per visualizzare i collegamenti in un’area tag quando i collegamenti sono abilitati tramite la finestra di dialogo di modifica del componente.
 
 * **[!UICONTROL Stessa dimensione per tutti i tag]**
 
-   Se questa opzione è selezionata, tutte le parole nel tag cloud vengono formattate nello stesso modo. Se questa opzione è deselezionata, le parole vengono formattate in modo diverso a seconda del loro utilizzo. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, a tutte le parole presenti nell’area dei tag viene applicato lo stesso stile. Se questa opzione è deselezionata, lo stile delle parole varia a seconda dell&#39;utilizzo. L&#39;impostazione predefinita è deselezionata.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base sui tag](tag.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base sui tag](tag.md) pagina per sviluppatori.
 
-Vedi [Assegnazione tag ai contenuti generati dagli utenti](tag-ugc.md) (UGC) per informazioni sulla creazione e la gestione dei tag.
+Consulta [Assegnazione di tag ai contenuti generati dagli utenti](tag-ugc.md) (UGC) per informazioni sulla creazione e la gestione dei tag.

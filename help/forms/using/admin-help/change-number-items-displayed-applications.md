@@ -1,7 +1,7 @@
 ---
-title: Modificare il numero di elementi visualizzati nelle pagine Applicazioni e servizi
+title: Modificare il numero di articoli visualizzati nelle pagine Applicazioni e servizi
 seo-title: Change the number of items displayed on the Applications and Services pages
-description: Scopri come modificare il numero di elementi visualizzati nelle pagine Applicazioni e servizi.
+description: Scopri come modificare il numero di elementi visualizzati nelle pagine Applicazioni e Servizi.
 seo-description: Learn how to change the number of items displayed on the Applications and Services pages.
 uuid: fa42fbf7-dcd2-46cb-a16c-148d05581705
 contentOwner: admin
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Modificare il numero di elementi visualizzati nelle pagine Applicazioni e servizi {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+# Modificare il numero di articoli visualizzati nelle pagine Applicazioni e servizi {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
-Nella pagina Preferenze è possibile controllare il numero di servizi, endpoint, categorie e archivi visualizzati in ciascuna delle pagine Web di Applicazioni e servizi.
+Nella pagina Preferenze è possibile controllare il numero di servizi, endpoint, categorie e archivi visualizzati in ciascuna delle pagine Web delle applicazioni e dei servizi.
 
-1. Nella console di amministrazione, **[!UICONTROL fai clic su Servizi > Applicazioni e servizi > Preferenze]**.
-1. Nella pagina Preferenze digitare il numero di servizi, endpoint, categorie e archivi che è possibile visualizzare in ogni pagina, quindi fare clic su **[!UICONTROL Salva]**.
+1. Nella console di amministrazione, **[!UICONTROL fare clic su Servizi > Applicazioni e servizi > Preferenze]**.
+1. Nella pagina Preferenze digitare il numero di servizi, endpoint, categorie e archivi che è possibile visualizzare in ogni pagina e quindi fare clic su **[!UICONTROL Salva]**.

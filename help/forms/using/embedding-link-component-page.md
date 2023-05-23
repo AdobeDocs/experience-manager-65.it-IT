@@ -21,41 +21,41 @@ ht-degree: 1%
 
 ## Prerequisiti {#prerequisites}
 
-Il componente di collegamento è membro della categoria Document Services . Assicurarsi che la categoria Document Services sia visibile nel browser Componenti AEM. Se la categoria non è elencata, segui i passaggi elencati in [Abilitazione dei componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md).
+Il componente Collegamento è un membro della categoria Servizi basati su documenti. Assicurati che la categoria Document Services sia visibile nel browser dei componenti AEM. Se la categoria non è elencata, segui i passaggi elencati in [Abilitazione dei componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md).
 
 ## Componente collegamento {#link-component}
 
-Il componente Collegamento permette agli autori di un portale moduli di creare un collegamento a un modulo adattivo da qualsiasi punto di una pagina. Il componente Collegamento è disponibile nella sezione Servizi documenti del browser componenti.
+Il componente Collegamento consente agli autori del portale dei moduli di creare un collegamento a un modulo adattivo da qualsiasi punto di una pagina. Il componente Collegamento è disponibile nella sezione Servizi documentali del browser componenti.
 
 Per aggiungere un componente Collegamento alla pagina, effettua le seguenti operazioni:
 
-1. Trascina **Collegamento** nella pagina. Seleziona il componente e tocca ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento .
+1. Trascina **Collegamento** sulla pagina. Seleziona il componente e tocca ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento.
 
    ![edit-link-component](assets/edit-link-component.png)
 
-1. In **Visualizzazione** , specifica quanto segue:
+1. In **Visualizzazione** , specificare quanto segue:
 
-   * **Didascalia collegamento**: Collegamento di testo o didascalia per il collegamento.
-   * **Descrizione collegamento**: Descrizione del collegamento.
-   * **Modello di layout**: Modello per il layout del componente Collegamento .
+   * **Didascalia collegamento**: testo di collegamento o didascalia del collegamento.
+   * **Descrizione collegamento**: descrizione del collegamento.
+   * **Modello di layout**: modello per il layout del componente Collegamento.
 
-1. Apri **Informazioni risorsa** e specifica il tipo di risorsa. Una risorsa può essere **modulo**. A seconda del tipo di risorsa selezionata, vengono visualizzate le opzioni elencate di seguito:
+1. Apri **Info risorsa** e specifica il tipo di risorsa. Una risorsa può essere **modulo**. A seconda del tipo di risorsa selezionato, vengono visualizzate le opzioni elencate di seguito:
 
-   * **Percorso risorsa**: Percorso archivio in cui viene memorizzata la risorsa.
+   * **Percorso risorsa**: percorso dell’archivio in cui è memorizzata la risorsa.
 
-   * **Tipo di rendering**: Il formato di rendering: PDF, HTML o Auto. Il tipo di rendering automatico rileva l’ambiente utente e, di conseguenza, esegue il rendering del modulo come HTML o PDF. Ad esempio, se l’accesso al modulo è effettuato da un dispositivo mobile, il tipo di rendering automatico esegue il rendering del modulo in HTML.
-   * **URL di invio:**  URL del servlet in cui vengono inviati i dati del modulo.
-   * **Profilo HTML**: Profilo per il rendering del modulo come HTML.
-   * **Profilo PDF**: Profilo per il rendering del modulo come documento PDF.
+   * **Tipo di rendering**: formato di rendering, ovvero PDF, HTML o Auto. Il tipo di rendering automatico rileva l’ambiente utente e, di conseguenza, esegue il rendering del modulo come HTML o come PDF. Se, ad esempio, il modulo è accessibile da un dispositivo mobile, il tipo di rendering Automatico eseguirà il rendering del modulo in HTML.
+   * **URL invio:**  URL del servlet in cui vengono inviati i dati del modulo.
+   * **Profilo HTML**: profilo per il rendering del modulo come HTML.
+   * **Profilo PDF**: profilo per il rendering del modulo come documento PDF.
 
-1. Apri la scheda **Avanzate.** È possibile specificare i parametri aggiuntivi nel formato della coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono passati insieme al modulo.
+1. Apri la scheda **Avanzate.** Potete specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 
    Tocca **Fine** per salvare la configurazione.
 
 ## Best practice per l’utilizzo del componente Collegamento {#best-practices-for-using-link-component-br}
 
-* Assicurarsi di selezionare PDF come tipo di rendering se il percorso specificato in Percorso modulo punta a un documento con PDF come formato di rendering consentito.
-* L’URL di invio di un modulo può essere specificato in più posizioni e il relativo ordine di precedenza è il seguente:
+* Accertatevi di selezionare PDF come tipo di rendering se il percorso specificato in Percorso modulo punta a un documento il cui formato di rendering è PDF.
+* È possibile specificare l&#39;URL di invio per un modulo in più posizioni e il relativo ordine di precedenza è il seguente:
 
    1. L’URL di invio incorporato nel modulo (nel pulsante di invio) ha la priorità più alta.
    1. L’URL di invio menzionato in Forms Manager ha la priorità media.

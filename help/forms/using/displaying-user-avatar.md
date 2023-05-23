@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione dell’avatar utente
+title: Visualizzazione dell'avatar utente
 seo-title: Displaying the user avatar
 description: Come personalizzare l’area di lavoro di AEM Forms per visualizzare l’immagine di un utente connesso.
 seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Visualizzazione dell’avatar utente {#displaying-the-user-avatar}
+# Visualizzazione dell&#39;avatar utente {#displaying-the-user-avatar}
 
-L’avatar dell’utente connesso viene visualizzato nell’angolo superiore destro dell’area di lavoro di AEM Forms. Inoltre, gli avatar dei rapporti diretti nella gerarchia organizzativa vengono visualizzati nella visualizzazione Gestione. È possibile configurare l&#39;area di lavoro AEM Forms per scegliere le immagini utente dal database, ad esempio il server LDAP.
+L’avatar dell’utente connesso viene visualizzato nell’angolo superiore destro dell’area di lavoro di AEM Forms. Nella vista Manager vengono inoltre visualizzati gli avatar dei report diretti nella gerarchia organizzativa. Puoi configurare AEM Forms Workspace in modo da scegliere le immagini utente dal database, ad esempio il server LDAP.
 
 >[!NOTE]
 >
->Le proporzioni supportate delle immagini utente sono 1:1.
+>Le proporzioni supportate per le immagini utente sono 1:1.
 
-1. Crea un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
-1. Nel DSC, definisci un nuovo SPI che espone i metodi getCurrentUserImageUrl e getUserImageUrl per ottenere un URL immagine per un utente AEM Forms. Di seguito è riportato un esempio di frammento di codice Java™:
+1. Creare un DSC utilizzando i dettagli indicati nel passaggio successivo. Per ulteriori informazioni, consulta l’argomento &quot;Sviluppo di componenti per AEM Forms&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guida.
+1. In DSC, definisci un nuovo SPI che espone i metodi getCurrentUserImageUrl e getUserImageUrl per ottenere un URL di immagine per un utente di AEM Forms. Di seguito è riportato un frammento di codice Java™ di esempio:
 
    ```java
    public class DemoUserImageURLProviderService {
@@ -41,9 +41,9 @@ L’avatar dell’utente connesso viene visualizzato nell’angolo superiore des
    }
    ```
 
-1. Crea un file component.xml. Assicurati che spec-id sia come mostrato nello snippet di codice seguente.
+1. Creare un file component.xml. Assicurarsi che spec-id sia come mostrato nello snippet di codice riportato di seguito.
 
-   Il seguente frammento di codice è un esempio. Personalizzalo in base alle tue esigenze specifiche.
+   Il seguente frammento di codice è un esempio. Personalizzalo per soddisfare le tue esigenze specifiche.
 
    ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -84,4 +84,4 @@ L’avatar dell’utente connesso viene visualizzato nell’angolo superiore des
    ```
 
 1. Distribuire DSC tramite Workbench. Riavvia `ProcessManagementClientSessionService` servizio.
-1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere nuovamente con l&#39;utente.
+1. Potrebbe essere necessario aggiornare il browser o disconnettersi/accedere di nuovo con l&#39;utente.

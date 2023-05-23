@@ -20,7 +20,7 @@ Please note that all links to other guides need to be absolute references with l
 -->
 
 + Percorsi di documentazione AEM {#overview}
-   + [Cos’è un percorso di documentazione?](home.md)
+   + [Che cos’è un percorso di documentazione?](home.md)
 
 + Percorsi headless {#headless}
    + [Home Percorsi headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)

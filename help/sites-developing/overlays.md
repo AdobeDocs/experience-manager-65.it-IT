@@ -19,36 +19,36 @@ ht-degree: 0%
 
 # Sovrapposizioni{#overlays}
 
-AEM (e prima di questo, CQ) utilizza da tempo il principio delle sovrapposizioni per consentire di estendere e personalizzare la [console](/help/sites-developing/customizing-consoles-touch.md) e altre funzionalità (ad esempio, [authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)).
+L’AEM (e prima di questo, CQ) ha a lungo utilizzato il principio delle sovrapposizioni per consentire di estendere e personalizzare il [console](/help/sites-developing/customizing-consoles-touch.md) e altre funzionalità (ad esempio [authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)).
 
-La sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione AEM) una sovrapposizione implica l’utilizzo delle funzionalità predefinite e l’imposizione di definizioni personalizzate (per personalizzare la funzionalità standard).
+Sovrapposizione è un termine che può essere utilizzato in molti contesti. In questo contesto (estensione dell’AEM), per sovrapposizione si intende l’assunzione delle funzionalità predefinite e l’imposizione di definizioni personalizzate (per personalizzare la funzionalità standard).
 
-In un&#39;istanza standard, la funzionalità predefinita è mantenuta in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) in `/apps` ramo. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca `/apps` e quindi `/libs` la [è possibile configurare il percorso di ricerca](#configuring-the-search-paths)). Questo meccanismo significa che la sovrapposizione (e le personalizzazioni qui definite) avrà priorità.
+In un’istanza standard la funzionalità predefinita è mantenuta in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) in `/apps` filiale. L’AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel `/apps` e quindi il `/libs` filiale (il [il percorso di ricerca può essere configurato](#configuring-the-search-paths)). Questo meccanismo significa che la sovrapposizione (e le personalizzazioni qui definite) avranno la priorità.
 
-A partire dalla versione 6.0 AEM sono state apportate modifiche alle modalità di implementazione e utilizzo delle sovrapposizioni:
+A partire dalla versione 6.0 dell’AEM, sono state apportate modifiche alle modalità di implementazione e utilizzo delle sovrapposizioni:
 
-* AEM 6.0 in avanti - per [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Sovrapposizioni correlate (cioè l’interfaccia touch)
+* AEM 6.0 e versioni successive - favorevoli [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Sovrapposizioni relative a (ad es. interfaccia touch)
 
    * Metodo
 
-      * Ricostruire l&#39;appropriato `/libs` struttura `/apps`.
+      * Ricostruire l’appropriato `/libs` struttura in `/apps`.
 
-         Questa operazione non richiede una copia 1:1, [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) viene utilizzato per fare riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l’accesso e l’unione delle risorse tramite meccanismi di differenziazione (differenze).
+         Questo non richiede una copia 1:1, il [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) viene utilizzato per fare riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l’accesso e l’unione delle risorse mediante meccanismi di differenze.
 
       * Apporta le modifiche in `/apps`.
    * Vantaggi
 
       * Più robusto per le modifiche in `/libs`.
-      * Ridefinisci solo ciò che è effettivamente richiesto.
+      * Ridefinisci solo ciò che è effettivamente necessario.
 
 
-* Sovrapposizioni e sovrapposizioni non granite prima di AEM 6.0
+* Sovrapposizioni e sovrapposizioni diverse da Granite prima di AEM 6.0
 
    * Metodo
 
       * Copia il contenuto da `/libs` a `/apps`
 
-         È necessario copiare l’intero ramo secondario, incluse le proprietà.
+         È necessario copiare l’intero ramo secondario, comprese le proprietà.
 
       * Apporta le modifiche in `/apps`.
    * Svantaggi
@@ -58,31 +58,31 @@ A partire dalla versione 6.0 AEM sono state apportate modifiche alle modalità d
 
 >[!CAUTION]
 >
->La [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i relativi metodi possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura dell’ossatura è appropriata solo per l’interfaccia utente standard abilitata per il tocco.
+>Il [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia utente standard touch.
 >
->Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) richiedono di copiare il nodo appropriato e l’intera sottostruttura, quindi di apportare le modifiche necessarie.
+>Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) implicano la copia del nodo appropriato e dell’intera sottostruttura, quindi l’apporto delle modifiche necessarie.
 
-Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [configurazione delle console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creazione della categoria di selezione nel browser risorse nel pannello laterale](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizzato per l’authoring delle pagine). Sono richiesti come:
+Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [configurazione delle console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creazione della categoria di selezione nel browser risorse nel pannello laterale](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizzato per l’authoring delle pagine). Sono necessari in quanto:
 
-* You ***non deve* apporta modifiche nel `/libs` filiale **Eventuali modifiche apportate potrebbero andare perse, in quanto questo ramo è soggetto a modifiche ogni volta che:
+* Tu ***non deve* apportare modifiche in `/libs` filiale **Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
 
-   * aggiornamento dell&#39;istanza
-   * applica un hotfix
+   * aggiorna nell’istanza
+   * applicare un hotfix
    * installare un feature pack
 
-* Concentrano le modifiche in un&#39;unica posizione; semplificando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche, a seconda delle necessità.
+* Concentrano le modifiche in un&#39;unica posizione, semplificando il monitoraggio, la migrazione, il backup e/o il debug delle modifiche in base alle esigenze.
 
 ## Configurazione dei percorsi di ricerca {#configuring-the-search-paths}
 
-Per le sovrapposizioni la risorsa consegnata è un aggregato delle risorse e delle proprietà recuperate, a seconda dei percorsi di ricerca che possono essere definiti:
+Per le sovrapposizioni, la risorsa consegnata è un aggregato delle risorse e delle proprietà recuperate, a seconda dei percorsi di ricerca che possono essere definiti:
 
-* La risorsa **Percorso di ricerca del risolutore** come definito nel [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) per **Factory di Apache Sling Resource Resolver**.
+* La risorsa **Percorso di ricerca del Risolutore** come definito nella [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) per **Apache Sling Resource Resolver Factory**.
 
-   * L’ordine dall’alto verso il basso dei percorsi di ricerca indica le rispettive priorità.
-   * In un&#39;installazione standard, i valori predefiniti principali sono `/apps`, `/libs` - il contenuto `/apps` ha una priorità più alta di quella di `/libs` (cioè *sovrapposizioni* it).
+   * L’ordine discendente dei percorsi di ricerca indica le rispettive priorità.
+   * In un&#39;installazione standard i valori predefiniti principali sono `/apps`, `/libs` - in modo che il contenuto `/apps` ha una priorità più alta di quella di `/libs` (ad es. *sovrapposizioni* it).
 
-* Due utenti di servizi necessitano dell’accesso JCR:READ al percorso in cui sono memorizzati gli script. Gli utenti sono: components-search-service (utilizzato da com.day.cq.wcm.coreto access/cache components) e sling-scripting (utilizzato da org.apache.sling.servlets.resolver per trovare i servlet).
-* La seguente configurazione deve anche essere configurata in base al punto in cui hai inserito i tuoi script (in questo esempio sotto /etc, /libs o /apps).
+* Due utenti del servizio hanno bisogno dell&#39;accesso JCR:READ alla posizione in cui sono memorizzati gli script. Tali utenti sono: components-search-service (utilizzato dai componenti com.day.cq.wcm.coreto access/cache ) e sling-scripting (utilizzato da org.apache.sling.servlets.resolver per trovare i servlet).
+* La seguente configurazione deve essere configurata anche in base alla posizione in cui inserisci gli script (in questo esempio in /etc, /libs o /apps).
 
    ```
    PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
@@ -90,7 +90,7 @@ Per le sovrapposizioni la risorsa consegnata è un aggregato delle risorse e del
    resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
    ```
 
-* Infine, anche il Risolutore Servlet deve essere configurato (in questo esempio per aggiungere anche /etc)
+* Infine, è necessario configurare anche il Servlet Resolver (in questo esempio per aggiungere anche /etc)
 
    ```
    PID = org.apache.sling.servlets.resolver.SlingServletResolver

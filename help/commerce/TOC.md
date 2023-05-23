@@ -14,7 +14,7 @@ ht-degree: 70%
 # Commerce {#commerce}
 
 + [AEM Content and Commerce](/help/commerce/home.md)
-+ [Modifiche di rilievo apportate a Contenuto AEM e Commerce](cif/changes.md)
++ [Modifiche di rilievo apportate ai contenuti e al commercio dell’AEM](cif/changes.md)
 + [Introduzione e panoramica](cif/introduction.md)
 + Integrazioni {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
@@ -33,10 +33,10 @@ ht-degree: 70%
       + [Opzioni di memorizzazione in cache](cif/configuring/caching.md)
       + [Intestazioni HTTP personalizzate](/help/commerce/cif/configuring/custom-http-headers.md)
    + Sviluppo {#developing}
-      + [Sviluppo con AEM](cif/develop.md)
+      + [Sviluppare con AEM](cif/develop.md)
       + [Definizione dello stile dei componenti CIF](cif/customizing/style-cif-component.md)
       + [Personalizzazione dei componenti CIF](cif/customizing/customize-cif-components.md)
-      + [Utilizzo dei selettori di catalogo CIF](cif/customizing/use-cif-pickers.md)
+      + [Utilizzo dei selettori del catalogo CIF](cif/customizing/use-cif-pickers.md)
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migrazione](cif/migration.md)
 + Note sulla versione {#release-notes}
@@ -49,12 +49,12 @@ ht-degree: 70%
    + [Panoramica](/help/commerce/cif-classic/home.md)
    + Distribuzione {#deploying}
       + [Panoramica di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
-      + [Commerce Cloud SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+      + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Amministrazione {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Concetti](/help/commerce/cif-classic/administering/concepts.md)
-      + [Amministrazione di eCommerce generici](/help/commerce/cif-classic/administering/generic.md)
-      + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+      + [Amministrazione dell’e-commerce generico](/help/commerce/cif-classic/administering/generic.md)
+      + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Sviluppo {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Sviluppo (generico)](/help/commerce/cif-classic/developing/generic.md)

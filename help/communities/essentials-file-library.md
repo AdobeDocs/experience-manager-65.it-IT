@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base sulla libreria dei file
 seo-title: File Library Essentials
-description: Utilizzo della funzione libreria file
+description: Utilizzo della funzione libreria di file
 seo-description: Working with the file library feature
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
 contentOwner: Guillaume Carlino
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Nozioni di base sulla libreria dei file {#file-library-essentials}
 
-Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzione di raccolta file.
+Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione libreria file.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -30,15 +30,15 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
    <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluso</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.filelibrary</td>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td>
   </tr>
   <tr>
@@ -47,14 +47,14 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Vedi <a href="file-library.md">Funzione Libreria file</a></td>
+   <td>Consulta <a href="file-library.md">Funzione Libreria file</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [API libreria file](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
@@ -64,20 +64,20 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito community che include [Funzione File Library](functions.md#file-library-function)include un `file library` componente.
+Una struttura del sito della community che include [Funzione Libreria file](functions.md#file-library-function), include un `file library` componente.
 
-### Accesso ai commenti pubblicati per le librerie file (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
+### Accesso ai commenti pubblicati per le librerie di file (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
-UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.
-Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
+Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
+Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire dalla AEM 6.1 Communities, l&#39;utilizzo di un [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica del provider di risorse di storage](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
-* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
+* [Panoramica del provider di risorse di archiviazione](srp.md) - introduzione e panoramica sull’utilizzo dell’archivio.
+* [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità SRP.
 * [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica.
-* [Refactoring di SocialUtils](socialutils.md) - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Refactoring SocialUtils](socialutils.md) - mappatura dei metodi di utilità obsoleti sui metodi di utilità SRP correnti.

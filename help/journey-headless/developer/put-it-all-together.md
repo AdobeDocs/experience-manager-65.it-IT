@@ -11,4 +11,4 @@ ht-degree: 65%
 
 # Come strutturare i vari elementi - La tua app e il tuo contenuto in AEM headless {#put-it-all-together}
 
-Questa pagina ha lo scopo di fornire indicazioni su come impostare un progetto di sviluppo locale utilizzando il nuovo SDK headless AEM. Una volta che l’SDK è disponibile al pubblico, puoi essere sempre aggiornato per ulteriori dettagli.
+Questa pagina fornisce indicazioni su come impostare un progetto di sviluppo locale utilizzando il nuovo SDK headless dell’AEM. Rimani sintonizzato per ulteriori dettagli una volta che l’SDK è disponibile al pubblico.

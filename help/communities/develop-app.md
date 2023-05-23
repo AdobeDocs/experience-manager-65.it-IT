@@ -1,7 +1,7 @@
 ---
 title: Sviluppa applicazione sandbox
 seo-title: Develop Sandbox Application
-description: Sviluppare applicazioni utilizzando gli script di foundation
+description: Sviluppare applicazioni utilizzando script di base
 seo-description: Develop application using foundation scripts
 uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
 contentOwner: User
@@ -19,20 +19,20 @@ ht-degree: 5%
 
 # Sviluppa applicazione sandbox  {#develop-sandbox-application}
 
-In questa sezione, ora che il modello è stato impostato nel [applicazione iniziale](initial-app.md) e le pagine iniziali stabilite nella sezione [contenuto iniziale](initial-content.md) , l’applicazione può essere sviluppata utilizzando script di base, inclusa la possibilità di abilitare l’authoring con i componenti di Communities. Al termine di questa sezione, il sito web funzionerà.
+In questa sezione, ora che il modello è stato configurato nel [applicazione iniziale](initial-app.md) e le pagine iniziali definite nella sezione [contenuto iniziale](initial-content.md) , l’applicazione può essere sviluppata utilizzando script di base, inclusa la possibilità di abilitare l’authoring con i componenti di Communities. Alla fine di questa sezione, il sito web funzionerà.
 
 ## Utilizzo degli script di pagina di Foundation {#using-foundation-page-scripts}
 
-Lo script predefinito, creato quando è stato aggiunto il componente che esegue il rendering del modello di playpage, viene modificato per includere il head.jsp della pagina di base e un body.jsp locale.
+Lo script predefinito, creato quando è stato aggiunto il componente che esegue il rendering del modello di pagina playlist, viene modificato per includere il file head.jsp della pagina di base e un body.jsp locale.
 
-### Super tipo di risorsa {#super-resource-type}
+### Tipo di risorsa super {#super-resource-type}
 
-Il primo passaggio consiste nell’aggiungere una proprietà super-type della risorsa al `/apps/an-scf-sandbox/components/playpage` in modo da ereditare gli script e le proprietà del super-type.
+Il primo passaggio consiste nell’aggiungere una proprietà di super tipo della risorsa al `/apps/an-scf-sandbox/components/playpage` in modo che erediti gli script e le proprietà del super-tipo.
 
 Utilizzo di CRXDE Lite:
 
 1. Seleziona nodo `/apps/an-scf-sandbox/components/playpage`.
-1. Nella scheda Proprietà, immetti una nuova proprietà con i seguenti valori:
+1. Nella scheda delle proprietà, immetti una nuova proprietà con i seguenti valori:
 
    Nome: `sling:resourceSuperType`
 
@@ -40,14 +40,14 @@ Utilizzo di CRXDE Lite:
 
    Valore: `foundation/components/page`
 
-1. Fai clic sul verde **[!UICONTROL +Aggiungi]** pulsante .
-1. Fai clic su **[!UICONTROL Salva tutto]**.
+1. Fai clic sul pulsante verde **[!UICONTROL +Aggiungi]** pulsante.
+1. Clic **[!UICONTROL Salva tutto]**.
 
-   ![script di pagina](assets/page-script.png)
+   ![page-script](assets/page-script.png)
 
-### Script testa e corpo {#head-and-body-scripts}
+### Script per la testa e il corpo {#head-and-body-scripts}
 
-1. In **CRXDE Lite** riquadro di esplorazione, passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
+1. In entrata **CRXDE Lite** riquadro di esplorazione, passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -66,9 +66,9 @@ Utilizzo di CRXDE Lite:
    %>
    ```
 
-1. Essendo a conoscenza dei tag script aperti/chiusi, sostituire &quot; // TODO ...&quot; con include di script per le parti testa e corpo di &lt;html>.
+1. Tenendo conto dei tag script aperti/chiusi, sostituisci &quot; // TODO ...&quot; con inclusioni di script per le parti head e body di &lt;html>.
 
-   Con un super tipo di `foundation/components/page`, qualsiasi script non definito in questa stessa cartella verrà risolto in uno script in `/apps/foundation/components/page` cartella (se esiste), altro a uno script in `/libs/foundation/components/page` cartella.
+   Con un super tipo di `foundation/components/page`, qualsiasi script non definito nella stessa cartella verrà risolto in uno script in `/apps/foundation/components/page` cartella (se esiste), altrimenti a uno script in `/libs/foundation/components/page` cartella.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,18 +88,18 @@ Utilizzo di CRXDE Lite:
    </html>
    ```
 
-1. Script di base `head.jsp` non devono essere sovrapposti, ma lo script di base `body.jsp` è vuoto.
+1. Script di base `head.jsp` non deve essere sovrapposto, ma lo script di foundation `body.jsp` è vuoto.
 
-   Per impostare l’authoring, sovrapporre `body.jsp` con uno script locale e includere un sistema paragrafo (parsys) nel corpo:
+   Per impostare la creazione, sovrapponi `body.jsp` con uno script locale e includere un sistema paragrafo (parsys) nel corpo:
 
    1. Accedi a `/apps/an-scf-sandbox/components`.
    1. Seleziona la `playpage` nodo.
-   1. Fai clic con il pulsante destro del mouse e seleziona `Create > Create File...`
+   1. Fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) `Create > Create File...`
 
       * Nome: **body.jsp**
-   1. Fai clic su **[!UICONTROL Salva tutto]**.
+   1. Clic **[!UICONTROL Salva tutto]**.
 
-   Apri `/apps/an-scf-sandbox/components/playpage/body.jsp` e incolla il seguente testo:
+   Apri `/apps/an-scf-sandbox/components/playpage/body.jsp` e incolla il testo seguente:
 
    ```xml
    <%--
@@ -117,31 +117,31 @@ Utilizzo di CRXDE Lite:
    </body>
    ```
 
-1. Fai clic su **[!UICONTROL Salva tutto]**.
+1. Clic **[!UICONTROL Salva tutto]**.
 
-**Visualizzare la pagina in un browser in modalità di modifica:**
+**Visualizza la pagina in un browser in modalità di modifica:**
 
 * Interfaccia standard: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
-Non dovresti solo visualizzare l’intestazione **Gioco community**, ma anche l’interfaccia utente per la modifica del contenuto della pagina.
+Non dovresti vedere solo l’intestazione **Community Play**, ma anche l’interfaccia utente per la modifica del contenuto della pagina.
 
-Il pannello laterale Risorse/Componente viene visualizzato quando il pannello laterale è disattivato e la finestra è sufficientemente ampia da consentire la visualizzazione del contenuto laterale e della pagina.
+Il pannello laterale Risorse/Componenti viene visualizzato quando entrambi i pannelli laterali sono aperti e la finestra è sufficientemente ampia da consentire la visualizzazione sia del contenuto laterale che del contenuto della pagina.
 
 ![view-page](assets/view-page.png)
 
 * Interfaccia classica: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
-Di seguito viene illustrata l’aspetto della pagina di riproduzione nell’interfaccia classica, incluso con Content Finder (cf):
+Di seguito è riportato l’aspetto della pagina di riproduzione nell’interfaccia classica, incluso con content finder (cf):
 
 ![play-page-view](assets/play-page-view.png)
 
-## Componenti di Communities {#communities-components}
+## Componenti community {#communities-components}
 
-Per abilitare i componenti per l’authoring di Communities, segui queste istruzioni:
+Per abilitare i componenti Community per l’authoring, inizia seguendo queste istruzioni:
 
-* [Accesso ai componenti di Communities](basics.md#accessing-communities-components)
+* [Accesso ai componenti delle community](basics.md#accessing-communities-components)
 
-Ai fini di questa sandbox, inizia con questi **Community** componenti (attiva selezionando la casella ):
+Ai fini di questa sandbox, inizia con questi **Community** componenti (abilitare selezionando la casella):
 
 * Commenti
 * Forum
@@ -150,7 +150,7 @@ Ai fini di questa sandbox, inizia con questi **Community** componenti (attiva se
 * Riepilogo recensioni (visualizzazione)
 * Votazione
 
-Inoltre, scegli **[!UICONTROL Generale]** componenti, quali
+Inoltre, scegli **[!UICONTROL Generale]** componenti, come
 
 * Immagine
 * Tabella
@@ -159,7 +159,7 @@ Inoltre, scegli **[!UICONTROL Generale]** componenti, quali
 
 >[!NOTE]
 >
->I componenti abilitati per la pagina par vengono memorizzati nell’archivio come valore del `components` proprietà
+>I componenti abilitati per la parte page vengono memorizzati nell’archivio come valore della proprietà `components` proprietà del
 >
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` nodo.
 
@@ -167,19 +167,19 @@ Inoltre, scegli **[!UICONTROL Generale]** componenti, quali
 
 In un ambiente multilingue, la pagina principale includerebbe uno script che analizzerebbe la richiesta del client per determinare la lingua preferita.
 
-In questo semplice esempio, la pagina principale viene impostata statisticamente per reindirizzare alla pagina inglese, che in futuro potrebbe essere la pagina di destinazione principale con un collegamento alla pagina di riproduzione.
+In questo semplice esempio, la pagina principale viene impostata in modo statico per il reindirizzamento alla pagina inglese, che potrebbe essere sviluppata in futuro come pagina di destinazione principale con un collegamento alla pagina di riproduzione.
 
-Modifica l’URL del browser nella pagina principale: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
+Modifica l’URL del browser con la pagina root: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Seleziona l’icona Informazioni pagina
 * Seleziona **[!UICONTROL Apri proprietà]**
 * Nella scheda AVANZATE
 
-   * Per la voce Redirect, cerca **[!UICONTROL Siti Web]** > **[!UICONTROL Sito Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
+   * Per la voce Reindirizza, selezionare **[!UICONTROL Siti Web]** > **[!UICONTROL Sito sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
    * Fai clic su **[!UICONTROL OK]**
 
 * Fai clic su **[!UICONTROL OK]**
 
-Una volta pubblicato il sito, l’esplorazione della pagina principale in un’istanza di pubblicazione reindirizzerà alla pagina inglese.
+Dopo la pubblicazione del sito, la navigazione nella pagina principale di un’istanza Publish verrà reindirizzata alla pagina inglese.
 
-L’ultimo passaggio prima di giocare con i componenti SCF di Communities consiste nell’aggiungere una cartella della libreria client (clientlibs) .... [Aggiungi clientlibs](add-clientlibs.md)
+L’ultimo passaggio prima di riprodurlo con i componenti SCF di Communities è aggiungere una .... Cartella libreria client (clientlibs) [Aggiungi Clienlibs](add-clientlibs.md)

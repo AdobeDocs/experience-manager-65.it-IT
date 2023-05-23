@@ -22,7 +22,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->La funzione AEM alla condivisione cartelle Creative Cloud è obsoleta. Consigliamo vivamente ai clienti di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it). Ulteriori informazioni in [Tecniche consigliate per l&#39;integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione Condivisione cartella da AEM a Creative Cloud è obsoleta. Si consiglia vivamente ai clienti di utilizzare funzionalità più recenti, come [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it). Ulteriori informazioni in [Best practice per l’integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

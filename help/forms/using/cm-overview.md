@@ -1,7 +1,7 @@
 ---
 title: Panoramica sulla gestione della corrispondenza
 seo-title: Correspondence Management
-description: Questo argomento offre una panoramica di Gestione della corrispondenza.
+description: Questo argomento offre una panoramica della gestione della corrispondenza.
 seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
@@ -21,30 +21,30 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Gestione della corrispondenza centralizza e gestisce la creazione, l&#39;assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive. Consente di assemblare rapidamente la corrispondenza da contenuti pre-approvati e personalizzati in un processo semplificato, dalla creazione all’archiviazione. Di conseguenza, i clienti ottengono la comunicazione giusta al momento giusto nel modo giusto: tempestivo, preciso, comodo, sicuro e pertinente. La vostra azienda massimizza il valore delle interazioni con i clienti e riduce al minimo i costi e i rischi con un processo che sia semplificato per facilità, velocità e produttività.
+Gestione della corrispondenza centralizza e gestisce la creazione, l’assemblaggio e la distribuzione di corrispondenza sicura, personalizzata e interattiva. Consente di assemblare rapidamente la corrispondenza dai contenuti pre-approvati e personalizzati in un processo semplificato, dalla creazione all’archiviazione. In questo modo, i tuoi clienti ottengono la comunicazione giusta al momento giusto e nel modo giusto: puntuale, accurata, conveniente, sicura e pertinente. La vostra azienda ottimizza il valore delle interazioni con i clienti e riduce al minimo costi e rischi grazie a un processo semplificato per la facilità, la velocità e la produttività.
 
 ## Vantaggi {#benefits}
 
-### Efficiente e produttivo {#efficient-and-productive}
+### Efficienza e produttività {#efficient-and-productive}
 
-Semplifica l’elaborazione, consentendoti di:
+Semplifica l’elaborazione e consente di:
 
-* Distribuzione e gestione di modelli e contenuti in un&#39;interfaccia intuitiva progettata per gli utenti aziendali
-* È possibile assemblare rapidamente la corrispondenza da contenuti pre-approvati e personalizzati
+* Implementazione e gestione di modelli e contenuti in un&#39;interfaccia intuitiva progettata per gli utenti aziendali
+* Assemblare rapidamente la corrispondenza da contenuti pre-approvati e personalizzati
 
 ### Gestito {#managed}
 
-Offre comunicazioni di qualità superiore, consentendo di:
+Offre comunicazioni di qualità superiore, che consentono di:
 
-* Gestione delle regole aziendali e dei contenuti approvati in un archivio di contenuti centralizzato
-* Utilizzare AEM DAM per gestire le immagini
+* Gestire le regole aziendali e i contenuti approvati in un repository di contenuti centralizzato
+* Utilizzare AEM DAM per la gestione delle immagini
 * Creazione di file Adobe PDF per l&#39;archiviazione e il controllo
-* Creare messaggi conformi a livello organizzativo utilizzando contenuto preapprovato tramite regole aziendali incorporate.
+* Creare messaggi conformi all’organizzazione utilizzando contenuti preapprovati tramite regole aziendali incorporate.
 
-### Estensivo {#extensive}
+### Esteso {#extensive}
 
-Migliora il coinvolgimento del cliente, consentendoti di:
+Migliora il coinvolgimento dei clienti e consente di:
 
-* Aggiunta di tecnologie interattive per abilitare un canale bidirezionale, riducendo gli invii cartacei
-* Informazioni sensibili Protect con protezione integrata dei documenti end-to-end
-* Inviare la corrispondenza tramite il canale di comunicazione preferito del cliente, elettronico, postale, mobile o fax.
+* Aggiungere tecnologie interattive per attivare un canale bidirezionale, riducendo le richieste cartacee
+* Informazioni riservate di Protect con protezione dei documenti integrata e completa
+* Inviare corrispondenza tramite il canale di comunicazione preferito dal cliente, che si tratti di posta elettronica, cellulare o fax.

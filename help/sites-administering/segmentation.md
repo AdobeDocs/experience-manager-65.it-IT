@@ -21,21 +21,21 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Questa sezione descrive la configurazione della segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la documentazione pertinente per [configurazione della segmentazione per il contesto client](/help/sites-administering/campaign-segmentation.md).
+>Questa sezione descrive come configurare la segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la relativa documentazione per [configurazione della segmentazione per ClientContext](/help/sites-administering/campaign-segmentation.md).
 
-La segmentazione è un concetto chiave per la creazione di una campagna. Vedi [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per informazioni sul funzionamento della segmentazione e sui termini chiave.
+La segmentazione è un concetto chiave per la creazione di una campagna. Consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per informazioni sul funzionamento della segmentazione e sui termini chiave.
 
 A seconda delle informazioni che hai già raccolto sui visitatori del tuo sito e degli obiettivi che desideri raggiungere, dovrai definire i segmenti e le strategie necessarie per i contenuti di destinazione.
 
-Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto nel [Personalizzazione](/help/sites-authoring/personalization.md) sezione del sito web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
+Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto in [Personalizzazione](/help/sites-authoring/personalization.md) sezione del sito web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
-AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle tue definizioni dei segmenti.
+L’AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle tue definizioni dei segmenti.
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o Client Context, nonché i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti di contesto client](/help/sites-administering/campaign-segmentation.md) e i segmenti Adobe Target, consulta la documentazione pertinente.
+Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e dei segmenti di Adobe Target, consulta la relativa documentazione.
 
-Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Pubblico**. Verranno visualizzate le configurazioni disponibili:
+Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
 ![Tipi di pubblico - Configurazioni](assets/segmentation-access-confs.png)
 
@@ -45,17 +45,17 @@ Seleziona la configurazione per visualizzare i segmenti, ad esempio Sito WKND:
 
 ## Editor segmento {#segment-editor}
 
-L’**Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, seleziona un segmento nel [elenco dei segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fai clic su **Modifica** pulsante .
+L’**Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, selezionalo in [elenco dei segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fai clic su **Modifica** pulsante.
 
 ![segmenteditor](assets/segmenteditor.png)
 
 Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Nel caso in cui siano applicabili più segmenti, viene utilizzato anche il fattore **Incremento**. Vedi [Creazione di un nuovo segmento](#creating-a-new-segment) per informazioni dettagliate sul [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Nel caso in cui siano applicabili più segmenti, viene utilizzato anche il fattore **Incremento**. Consulta [Creazione di un nuovo segmento](#creating-a-new-segment) per ulteriori informazioni su [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
->L’editor segmento non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. È necessario assicurarsi che i segmenti non contengano riferimenti circolari.
+>L’editor segmento non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. Assicurati che i segmenti non contengano riferimenti circolari.
 
 ### Contenitori {#containers}
 
@@ -136,7 +136,7 @@ Per definire il nuovo segmento:
 
 1. Dopo l’[accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
-1. tocca o fai clic sul pulsante Crea e seleziona **Creare un segmento ContextHub**.
+1. tocca o fai clic sul pulsante Crea e seleziona **Crea segmento ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -150,13 +150,13 @@ Per definire il nuovo segmento:
    * Valore massimo: `1000000`
 
 1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
-1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificarne i parametri specifici. In questo esempio, stiamo testando le persone a San Jose.
+1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificarne i parametri specifici. In questo esempio, effettuiamo i test per le persone a San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
    Imposta sempre un **Tipo di dati** se possibile, per garantire che i confronti siano valutati correttamente. Per ulteriori informazioni, consulta [Confronti](/help/sites-administering/segmentation.md#comparisons).
 
-1. Fai clic su **OK** per salvare la definizione:
+1. Clic **OK** per salvare la definizione:
 1. Aggiungi altri componenti in base alle esigenze. Puoi formulare espressioni boolean utilizzando i componenti contenitore per i confronti AND e OR (vedi di seguito [Utilizzo dei contenitori AND e OR](/help/sites-administering/segmentation.md#using-and-and-or-containers)). Con l’editor segmento è possibile eliminare i componenti non più necessari o trascinarli in nuove posizioni all’interno dell’istruzione.
 
 ### Utilizzo dei contenitori AND e OR {#using-and-and-or-containers}
@@ -166,13 +166,13 @@ Utilizzando i componenti contenitore AND e OR, puoi costruire segmenti complessi
 * Il livello principale della definizione è sempre il contenitore AND creato inizialmente. Questo non può essere modificato, ma non ha effetti sul resto della definizione del segmento.
 * Assicurati che la nidificazione del contenitore abbia una logica. I contenitori possono essere visualizzati come parentesi dell’espressione boolean.
 
-L’esempio seguente viene utilizzato per selezionare i visitatori considerati nel nostro gruppo di prime pagine:
+L’esempio seguente viene utilizzato per selezionare i visitatori considerati nel nostro gruppo di età principale:
 
-Maschio e tra i 30 e i 59 anni
+Maschio e età compresa tra 30 e 59 anni
 
 OPPURE
 
-Femmina e tra i 30 e i 59 anni
+Femmina e di età compresa tra 30 e 59 anni
 
 Per iniziare, inserisci un componente contenitore OR all’interno del contenitore AND predefinito. All’interno del contenitore OR, aggiungi due contenitori AND e all’interno di entrambi puoi aggiungere la proprietà o i componenti di riferimento.
 
@@ -308,7 +308,7 @@ Una volta definito il segmento, è possibile testare i risultati potenziali con 
 1. Seleziona un utente che corrisponda al segmento creato
 1. ContextHub risolverà i segmenti applicabili per l’utente tipo selezionato
 
-Ad esempio, la nostra definizione di segmento semplice per identificare gli utenti nel nostro gruppo di prima età è una definizione di segmento semplice basata sull’età e sul genere dell’utente. Il caricamento di un utente tipo specifico che corrisponde a tali criteri mostra se il segmento è stato risolto correttamente:
+Ad esempio, la definizione del segmento semplice per identificare gli utenti nel nostro gruppo di età principale è una definizione del segmento semplice basata sull’età e sul sesso dell’utente. Il caricamento di un utente tipo specifico che corrisponde a tali criteri mostra se il segmento è stato risolto correttamente:
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -322,7 +322,7 @@ Oppure, se non è risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se hai impostato un’attività e un’esperienza utilizzando l’esempio di segmento del gruppo di prime pagine riportato sopra, puoi facilmente testare il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la relativa [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
+Se hai impostato un’attività e un’esperienza utilizzando l’esempio del segmento del gruppo di età principale riportato sopra, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la relativa [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 
@@ -338,4 +338,4 @@ Se hai impostato un’attività e un’esperienza utilizzando l’esempio di seg
 
 ## Utilizzo del segmento {#using-your-segment}
 
-I segmenti vengono utilizzati per gestire il contenuto effettivo visualizzato da tipi di pubblico specifici. Consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per ulteriori informazioni su tipi di pubblico e di segmenti e [Authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md) per informazioni sull’utilizzo di tipi di pubblico e di segmenti per eseguire il targeting del contenuto.
+I segmenti vengono utilizzati per gestire il contenuto effettivo visualizzato da un pubblico specifico. Consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per ulteriori informazioni su tipi di pubblico e di segmenti e [Authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md) per informazioni sull’utilizzo di tipi di pubblico e di segmenti per eseguire il targeting del contenuto.

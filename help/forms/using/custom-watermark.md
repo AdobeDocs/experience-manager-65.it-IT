@@ -1,7 +1,7 @@
 ---
-title: Filigrana personalizzata nell'anteprima di PDF lettera
+title: Filigrana personalizzata nell’anteprima di Letter PDF
 seo-title: Custom watermark in letter PDF preview
-description: Scopri come creare una filigrana personalizzata nell’anteprima di PDF a lettere.
+description: Scopri come creare una filigrana personalizzata nell’anteprima di Letter PDF.
 seo-description: Learn how to create custom watermark in letter PDF preview.
 uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
@@ -18,26 +18,26 @@ ht-degree: 0%
 
 ---
 
-# Filigrana personalizzata nell&#39;anteprima di PDF lettera{#custom-watermark-in-letter-pdf-preview}
+# Filigrana personalizzata nell’anteprima di Letter PDF{#custom-watermark-in-letter-pdf-preview}
 
 ## Panoramica {#overview}
 
-Nell’interfaccia utente Crea corrispondenza, gli utenti dell’agente visualizzano in anteprima la corrispondenza nella forma finale in cui viene inviata alla post-elaborazione, ad esempio per l’e-mail o la stampa.
+Nell’interfaccia utente per la creazione di corrispondenza, gli utenti agente visualizzano in anteprima la corrispondenza nella forma finale in cui viene inviata alla post-elaborazione, ad esempio per la posta elettronica o la stampa.
 
-Per evitare l’utilizzo non autorizzato di questi dati, le organizzazioni possono imporre una filigrana al PDF di anteprima. La filigrana predefinita è &quot;ANTEPRIMA&quot;, che viene visualizzata in tutto il PDF.
+Per evitare l’uso non autorizzato di questi dati, le organizzazioni possono imporre una filigrana sul PDF di anteprima. La filigrana predefinita è &quot;PREVIEW&quot; (ANTEPRIMA), che viene visualizzata nel PDF.
 
-Per abilitare la filigrana in anteprima PDF, seleziona la **[!UICONTROL Applica filigrana]** Opzione Anteprima in **[!UICONTROL Configurazioni di gestione della corrispondenza]** all&#39;indirizzo https://&#39;[server]:[porta]&#39;/system/console/configMgr.
+Per abilitare la filigrana in preview PDF, seleziona la **[!UICONTROL Applica filigrana]** Opzione Periodo anteprima in **[!UICONTROL Configurazioni gestione corrispondenza]** in https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 
-![filigrana predefinita](assets/default-watermark.png)
+![default-watermark](assets/default-watermark.png)
 
-Per personalizzare il testo e l’aspetto della filigrana è possibile attenersi alla procedura descritta di seguito.
+Per personalizzare il testo e l&#39;aspetto della filigrana, attenersi alla procedura descritta di seguito.
 
-## Personalizzare la filigrana nell’anteprima di PDF nell’interfaccia utente Crea corrispondenza {#customizewatermark-}
+## Personalizzare la filigrana nell’anteprima PDF nell’interfaccia utente per la creazione di corrispondenza {#customizewatermark-}
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
-1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL filigrana di anteprima]** con percorso/struttura simile alla cartella del filigrana di anteprima nella cartella libs:
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
+1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL filigrana anteprima]** con un percorso/struttura simile alla cartella filigrana di anteprima nella cartella libs:
 
-   1. Fai clic con il pulsante destro del mouse sul pulsante **filigrana di anteprima** nel seguente percorso e seleziona **Nodo di sovrapposizione**:
+   1. Fare clic con il pulsante destro del mouse **filigrana anteprima** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -47,20 +47,20 @@ Per personalizzare il testo e l’aspetto della filigrana è possibile attenersi
 
       **Posizione sovrapposizione:** /apps/
 
-      **Tipi di nodo di corrispondenza:** Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
-      >Non apportare modifiche al ramo /libs. Eventuali modifiche apportate potrebbero andare perse, in quanto questo ramo è soggetto a modifiche ogni volta che:
+      >Non apportare modifiche nel ramo /libs. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
       >
       >    
       >    
-      >    * Aggiorna l&#39;istanza
+      >    * Eseguire l’aggiornamento all’istanza
       >    * Applicare un hotfix
       >    * Installare un feature pack
 
 
-   1. Fai clic su **OK** quindi fai clic su **Salva tutto**. La **[!UICONTROL filigrana di anteprima]** viene creata nel percorso specificato.
+   1. Clic **OK** e quindi fare clic su **Salva tutto**. Il **[!UICONTROL filigrana anteprima]** viene creata nel percorso specificato.
 
 1. Copia e incolla il file ddx dalla cartella &quot;/libs/fd/cm/configFiles/previewwatermark&quot; alla cartella &quot;/apps/fd/cm/configFiles/previewwatermark&quot; e fai clic su **[!UICONTROL Salva tutto]**.
 1. Apporta le modifiche desiderate nel file ddx in /apps/fd/cm/configFiles/previewwatermark/.
@@ -80,10 +80,10 @@ Per personalizzare il testo e l’aspetto della filigrana è possibile attenersi
    </DDX>
    ```
 
-   Per informazioni su come personalizzare l’aspetto, il testo e l’allineamento della filigrana, consulta Aggiunta e rimozione di filigrane e sfondi nella sezione [Servizio di assemblaggio e riferimento DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) documento.
+   Per informazioni sulla personalizzazione dell&#39;aspetto della filigrana, del testo e dell&#39;allineamento, vedere Aggiunta e rimozione di filigrane e sfondi nella [Servizio assemblatore e riferimento DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) documento.
 
    >[!NOTE]
    >
-   >Nel file ddx, i riferimenti a risultato e sorgente devono rimanere inalterati in output.pdf e input.pdf. Anche il nome del file ddx non deve essere modificato.
+   >Nel file ddx, i riferimenti a risultato e origine devono rimanere invariati in output.pdf e input.pdf. Anche il nome del file ddx non deve essere modificato.
 
-1. Fai clic su **Salva tutto**.
+1. Clic **Salva tutto**.

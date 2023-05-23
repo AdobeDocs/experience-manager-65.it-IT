@@ -20,44 +20,44 @@ ht-degree: 1%
 
 # Visualizzazione dei componenti in base al modello utilizzato{#displaying-components-based-on-the-template-used}
 
-Quando un autore crea un modulo adattivo utilizzando un [template](../../forms/using/template-editor.md), l’autore del modulo può visualizzare e utilizzare componenti specifici in base ai criteri dei modelli. È possibile specificare un criterio per il contenuto del modello che consente di scegliere un gruppo di componenti che l’autore del modulo visualizza al momento della creazione del modulo.
+Quando un autore di moduli crea un modulo adattivo utilizzando una [modello](../../forms/using/template-editor.md), l’autore del modulo può visualizzare e utilizzare componenti specifici basati sui criteri dei modelli. È possibile specificare un criterio per il contenuto dei modelli che consenta di scegliere un gruppo di componenti visualizzato dall&#39;autore del modulo durante la creazione del modulo.
 
 ## Modifica del criterio del contenuto di un modello {#changing-the-content-policy-of-a-template}
 
-Quando crei un modello, questo viene creato in `/conf` nell’archivio dei contenuti. In base alle cartelle create in `/conf` directory, il percorso del modello è: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Quando si crea un modello, questo viene creato in `/conf` nell’archivio dei contenuti. In base alle cartelle create in `/conf` directory, il percorso del modello è: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Per visualizzare i componenti nella barra laterale in base al criterio del contenuto di un modello, effettua le seguenti operazioni:
 
 1. Apri CRXDE lite.\
    URL: `https://<server>:<port>/crx/de/index.jsp`
-1. In CRXDE, passa alla cartella in cui viene creato il modello.
+1. In CRXDE, passa alla cartella in cui è stato creato il modello.
 
    Esempio: `/conf/<your-folder>/`
 
 1. In CRXDE, passa a: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
-   Per selezionare un gruppo di componenti, è necessario un nuovo criterio per i contenuti. Per creare un nuovo criterio, copiare e incollare il criterio predefinito e rinominarlo.
+   Per selezionare un gruppo di componenti, è necessario un nuovo criterio per i contenuti. Per creare un nuovo criterio, copia e incolla il criterio predefinito e rinominalo.
 
-   Percorso del criterio contenuto predefinito: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
+   Il percorso del criterio contenuto predefinito è: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   In `gridFluidLayout` , copia e incolla il criterio predefinito e rinominalo. Esempio: `myPolicy`.
+   In `gridFluidLayout` cartella, copia e incolla il criterio predefinito e rinominalo. Esempio: `myPolicy`.
 
    ![Copia dei criteri predefiniti](assets/crx-default1.png)
 
-1. Selezionare il nuovo criterio creato e selezionare il **componenti** nel pannello laterale destro con il tipo `string[]`.
+1. Seleziona il nuovo criterio creato e quindi fai clic su **componenti** proprietà nel pannello a destra con tipo `string[]`.
 
-   Quando selezioni e apri la proprietà dei componenti, viene visualizzata la finestra di dialogo Modifica componenti . La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti utilizzando **+** e **-** pulsanti. È possibile aggiungere un gruppo di componenti che include i componenti modulo che gli autori devono utilizzare.
+   Quando selezioni e apri la proprietà dei componenti, viene visualizzata la finestra di dialogo Modifica componenti. La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti utilizzando **+** e **-** pulsanti. È possibile aggiungere un gruppo di componenti che includa i componenti che si desidera vengano utilizzati dagli autori.
 
    ![Aggiungere o rimuovere componenti nel criterio](assets/add-components-list1.png)
 
-   Dopo aver aggiunto un gruppo di componenti, fai clic su **OK** per aggiornare l&#39;elenco, quindi fare clic su **Salva tutto** sopra la barra degli indirizzi CRXDE e aggiornare.
+   Dopo aver aggiunto un gruppo di componenti, fai clic su **OK** per aggiornare l&#39;elenco, quindi fare clic su **Salva tutto** sopra la barra degli indirizzi CRXDE e aggiorna.
 
-1. Nel modello, modificare il criterio del contenuto da predefinito al nuovo criterio creato. ( `myPolicy` in questo esempio).
+1. Nel modello, modifica il criterio del contenuto da predefinito al nuovo criterio creato. ( `myPolicy` in questo esempio.)
 
    Per modificare il criterio, in CRXDE, passa a `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
    In `cq:policy` proprietà, modifica `default` al nuovo nome del criterio ( `myPolicy`).
 
-   ![Criterio del contenuto del modello aggiornato](assets/updated-policy.png)
+   ![Criterio contenuto modello aggiornato](assets/updated-policy.png)
 
-   Quando si crea un modulo creato utilizzando il modello, è possibile visualizzare i componenti aggiunti nella barra laterale.
+   Quando crei un modulo utilizzando il modello, puoi visualizzare i componenti aggiunti nella barra laterale.

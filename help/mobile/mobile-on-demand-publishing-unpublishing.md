@@ -1,7 +1,7 @@
 ---
-title: Pubblicare un contenuto di annullamento pubblicazione
+title: Pubblica contenuto di annullamento pubblicazione
 seo-title: Publish UnPublish Content
-description: Una volta acquisita familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, segui questa pagina per scoprire come pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
+description: Una volta acquisite familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, segui questa pagina per scoprire come pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
 seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
@@ -17,13 +17,13 @@ ht-degree: 2%
 
 ---
 
-# Pubblicare un contenuto di annullamento pubblicazione{#publish-unpublish-content}
+# Pubblica contenuto di annullamento pubblicazione{#publish-unpublish-content}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Una volta acquisita familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, puoi pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
+Una volta acquisite familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, puoi pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
 
 >[!NOTE]
 >
@@ -31,19 +31,19 @@ Una volta acquisita familiarità con le azioni di gestione dei contenuti su arti
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 
-Ciò è diverso da una &quot;pubblicazione AEM&quot;. Non stiamo inviando i contenuti a un’istanza del server AEM Publish per renderli pubblicamente visibili. In questo caso, stiamo informando Mobile On-Demand che il contenuto selezionato debba essere reso pubblico all’interno dell’app Mobile On-Demand in tempo reale.
+Questa funzione è diversa da &quot;AEM Publish&quot;. Non stiamo inviando contenuti a un’istanza del server di pubblicazione AEM per renderli visualizzabili pubblicamente. In questo caso, stiamo informando Mobile On-Demand che il contenuto selezionato deve essere reso pubblico all’interno dell’app Mobile On-Demand live.
 
 >[!NOTE]
 >
 >Il contenuto deve essere caricato su Mobile On-Demand prima di poter essere pubblicato.
 
-Flusso di lavoro generale per pubblicare/annullare la pubblicazione di un articolo:
+Il flusso di lavoro generale per pubblicare/annullare la pubblicazione di un articolo:
 
-1. Da Mobile, scegli l’app Mobile On-Demand dal catalogo.
+1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
 1. Seleziona un articolo.
-1. Se necessario, aggiungete altri articoli dalla vista a elenco.
-1. Seleziona Pubblica nella barra delle azioni. Dopo alcuni istanti, i vostri articoli saranno ora pubblici.
-1. Utilizza gli stessi passaggi precedenti per annullare la pubblicazione degli articoli.
+1. Se necessario, aggiungi altri articoli dalla vista a elenco.
+1. Seleziona Pubblica nella barra delle azioni. Dopo alcuni istanti, i tuoi articoli diventeranno pubblici.
+1. Per annullare la pubblicazione di articoli, segui la procedura descritta sopra.
 
 <!-- FAIL >>[!NOTE]
 >
@@ -53,11 +53,11 @@ Flusso di lavoro generale per pubblicare/annullare la pubblicazione di un artico
 
 ### Passaggi successivi {#the-next-steps}
 
-Una volta appresa la creazione e la pubblicazione dei contenuti, consulta
+Dopo aver appreso come creare e pubblicare i contenuti, consulta
 
 * [Sviluppo di contenuti AEM per AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Amministrazione di contenuti per l’utilizzo di AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Oppure è necessario conoscere gli argomenti relativi all’authoring, consulta
+Oppure è ancora necessario conoscere gli argomenti relativi all’authoring, consulta
 
 [Creazione di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

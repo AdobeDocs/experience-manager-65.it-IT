@@ -1,7 +1,7 @@
 ---
-title: Utilizzo del collegamento
+title: Utilizzo di Mi piace
 seo-title: Using Liking
-description: Aggiunta e configurazione del componente Collegamento
+description: Aggiunta e configurazione del componente Mi piace
 seo-description: Adding and configuring the Liking component
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
@@ -17,33 +17,33 @@ ht-degree: 5%
 
 ---
 
-# Utilizzo del collegamento {#using-liking}
+# Utilizzo di Mi piace {#using-liking}
 
-La `Liking` Componente è uno strumento utile che consente agli utenti di esprimere un’opinione su un particolare contenuto, ad esempio un commento all’interno di un forum. Con la `Liking` i membri selezionano l&#39;icona del cuore per indicare un&#39;opinione positiva.
+Il `Liking` Il componente è uno strumento utile che consente agli utenti di esprimere un’opinione su un particolare contenuto, ad esempio un commento all’interno di un forum. Con il `Liking` componente, i membri selezionano l’icona del cuore per indicare un’opinione positiva.
 
-## Aggiunta di collegamenti a una pagina {#adding-liking-to-a-page}
+## Aggiunta di un collegamento a una pagina {#adding-liking-to-a-page}
 
-Per aggiungere una `Liking` componente per una pagina in modalità di creazione, usate il browser componenti per individuare
+Per aggiungere una `Liking` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare
 
 * `Communities / Liking`
 
-e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione.
+e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione desiderata dagli utenti.
 
-Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando il [librerie lato client richieste](essentials-liking.md#essentials-for-client-side) sono inclusi, è così che `Liking` apparirà .
+Quando [librerie lato client richieste](essentials-liking.md#essentials-for-client-side) sono inclusi, è così che `Liking` verrà visualizzato.
 
-![componente di gradimento](assets/liking-component.png)
+![componente-gradimento](assets/liking-component.png)
 
-## Configurazione del collegamento {#configuring-liking}
+## Configurazione di Mi piace {#configuring-liking}
 
-Seleziona il `Liking` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
+Seleziona la inserita `Liking` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
-Sotto la **[!UICONTROL Testi ed etichette]** specificare le proprietà utilizzate per registrare i like.
+Sotto **[!UICONTROL Testi ed etichette]** , specifica le proprietà utilizzate per registrare mi piace.
 
-![configurare-like](assets/configure-liking.png)
+![tipo di configurazione](assets/configure-liking.png)
 
 * **[!UICONTROL Etichetta risposta positiva]**
 
@@ -55,18 +55,18 @@ Sotto la **[!UICONTROL Testi ed etichette]** specificare le proprietà utilizzat
 
 * **[!UICONTROL Nome conteggio]**
 
-   (*Obbligatorio*) Il nome della proprietà interna e identificabile per questa istanza di un componente di voto.
+   (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatore del sito {#site-visitor-experience}
 
 ### Membri {#members}
 
-I membri possono cambiare il loro atteggiamento in qualsiasi momento.
+I membri possono cambiare il loro tipo in qualsiasi momento.
 
 ### Anonimo {#anonymous}
 
-Il collegamento anonimo non è supportato. I visitatori del sito devono registrarsi (diventare membro) e accedere per partecipare.
+Il collegamento anonimo non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l&#39;accesso per partecipare al Mi piace.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Per ulteriori informazioni, consulta [Nozioni di base](essentials-liking.md) per sviluppatori.
+Ulteriori informazioni sono disponibili sul sito [Nozioni di base su Mi piace](essentials-liking.md) pagina per sviluppatori.

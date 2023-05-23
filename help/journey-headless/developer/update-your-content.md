@@ -54,7 +54,7 @@ L’API HTTP di Assets include:
 
 L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico **REST** e consente di accedere ai contenuti (memorizzati in AEM) utilizzando operazioni **CRUD** (Create (Crea), Read (Leggi), Update (Aggiorna) e Delete (Elimina)).
 
-Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager come CMS headless (Content Management System) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
+Con queste operazioni l’API consente di utilizzare Adobe Experience Manager come CMS (Content Management System) headless fornendo Content Services a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
 
 <!--
 >[!NOTE]
@@ -318,7 +318,7 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Continua il tuo percorso AEM headless rivedendo il documento successivo [Come andare in diretta con la tua applicazione headless](go-live.md) dove si prende il vostro progetto AEM Headless in diretta!
+Dovresti continuare il tuo percorso headless AEM rivedendo il documento successivamente [Come utilizzare l&#39;applicazione headless](go-live.md) dove puoi portare in diretta il tuo progetto AEM Headless!
 
 ## Risorse aggiuntive {#additional-resources}
 

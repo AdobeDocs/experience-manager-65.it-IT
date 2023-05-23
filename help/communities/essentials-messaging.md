@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base sulla messaggistica
 seo-title: Messaging Essentials
-description: Panoramica del componente messaggistica
+description: Panoramica del componente Messaggistica
 seo-description: Messaging component overview
 uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
 contentOwner: Guillaume Carlino
@@ -14,7 +14,7 @@ exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica per includere una funzione di messaggistica su un sito web.
 
-## Funzionalità di base per lato client {#essentials-for-client-side}
+## Nozioni di base per lato client {#essentials-for-client-side}
 
 **Componi messaggio**
 
@@ -30,14 +30,14 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/compositemessage</p> </td>
+   <td><p>social/messaggistica/componenti/hbs/composemessage</p> </td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Vedi <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
+   <td>Consulta <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
   </tr>
   <tr>
    <td><strong>configurazione amministratore</strong></td>
@@ -57,20 +57,20 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
 
 **Elenco messaggi**
 
-(per Posta in arrivo, Inviata e Cestino)
+(per Posta in arrivo, Inviato e Cestino)
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/messagebox</p> </td>
+   <td><p>social/messaggistica/componenti/hbs/messagebox</p> </td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelli</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
@@ -79,7 +79,7 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Vedi <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
+   <td>Consulta <a href="/help/communities/configure-messaging.md" target="_blank">Configurare la messaggistica</a></td>
   </tr>
   <tr>
    <td><strong>configurazione amministratore</strong></td>
@@ -90,22 +90,22 @@ Questa pagina illustra i dettagli dell’utilizzo del componente Messaggistica p
 
 Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md)
 
-## Funzioni di base per lato server {#essentials-for-server-side}
+## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [Configurazione della messaggistica](/help/communities/configure-messaging.md)
-* [API client di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per componenti SCF
+* [API client di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per i componenti SCF
 * [API di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) per il servizio
 * [Endpoint di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->Il parametro String deve *not* contiene una barra finale &quot;/&quot; per i seguenti metodi di MessageBuilder:
+>Il parametro String deve *non* contengono una barra finale &quot;/&quot; per i seguenti metodi MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->Esempio:
+>Ad esempio:
 >
 >
 ```
@@ -115,35 +115,35 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 
 ### Sito community {#community-site}
 
-Una struttura del sito community, creata utilizzando la procedura guidata, include la funzione di messaggistica selezionata. Vedi `User Management` impostazioni di [Console Sites della community](/help/communities/sites-console.md#user-management).
+Una struttura del sito della community, creata mediante la procedura guidata, include la funzione di messaggistica se selezionata. Consulta `User Management` impostazioni di [Console Siti community](/help/communities/sites-console.md#user-management).
 
-### Codice di esempio: Messaggio ricevuto notifica {#sample-code-message-received-notification}
+### Codice di esempio: messaggio ricevuto notifica {#sample-code-message-received-notification}
 
-La funzione Messaggistica social genera eventi per le operazioni, ad esempio `send`, `marking read`, `marking delete`. Questi eventi possono essere rilevati e le azioni intraprese sui dati contenuti nell’evento.
+La funzione di messaggistica social genera eventi per le operazioni, ad esempio `send`, `marking read`, `marking delete`. Questi eventi possono essere rilevati e possono essere intraprese azioni sui dati contenuti nell’evento.
 
-L&#39;esempio seguente è di un gestore eventi che ascolta il `message sent` e invia un’e-mail a tutti i destinatari del messaggio utilizzando `Day CQ Mail Service`.
+L&#39;esempio seguente è di un gestore eventi che ascolta `message sent` e invia un messaggio e-mail a tutti i destinatari utilizzando `Day CQ Mail Service`.
 
-Per provare lo script di esempio lato server, è necessario un ambiente di sviluppo e la capacità di creare un bundle OSGi:
+Per provare lo script di esempio lato server, è necessario un ambiente di sviluppo e la possibilità di creare un bundle OSGi:
 
 1. Accedi come amministratore a ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Crea un `bundle node`in `/apps/engage/install` con nomi arbitrari, ad esempio:
+1. Creare un `bundle node`in `/apps/engage/install` con nomi arbitrari, ad esempio:
 
    * Nome simbolico: `com.engage.media.social.messaging.MessagingNotification`
-   * Nome: Notifica messaggio tutorial introduttiva
-   * Descrizione: Un servizio di esempio per l’invio di una notifica e-mail agli utenti che ricevono un messaggio
+   * Nome: Avvio Notifica del messaggio del tutorial
+   * Descrizione: servizio di esempio per l’invio di una notifica e-mail agli utenti quando ricevono un messaggio
    * Pacchetto: `com.engage.media.social.messaging.notification`
 
-1. Passa a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e quindi:
+1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e quindi:
 
    1. Elimina `Activator.java` classe creata automaticamente.
    1. Crea classe `MessageEventHandler.java`.
-   1. Copia e incolla il codice sottostante in `MessageEventHandler.java`.
+   1. Copia e incolla il codice seguente in `MessageEventHandler.java`.
 
-1. Fai clic su **Salva tutto**.
-1. Passa a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e aggiungi tutte le istruzioni di importazione come scritte nella `MessageEventHandler.java` codice.
+1. Clic **Salva tutto**.
+1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e aggiungere tutte le istruzioni di importazione come scritto nella `MessageEventHandler.java` codice.
 1. Crea il bundle.
-1. Assicurati `Day CQ Mail Service`Il servizio OSGi è configurato.
-1. Accedi come utente dimostrativo e invia un’e-mail a un altro utente.
+1. Assicurare `Day CQ Mail Service`Il servizio OSGi è configurato.
+1. Accedi come utente demo e invia un’e-mail a un altro utente.
 1. Il destinatario riceve un’e-mail relativa a un nuovo messaggio.
 
 #### MessageEventHandler.java {#messageeventhandler-java}
