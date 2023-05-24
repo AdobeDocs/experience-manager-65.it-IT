@@ -2,10 +2,10 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come gestire i progetti di traduzione in AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
+source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
 workflow-type: tm+mt
-source-wordcount: '3536'
-ht-degree: 58%
+source-wordcount: '3587'
+ht-degree: 56%
 
 ---
 
@@ -412,13 +412,20 @@ Compila la copia per lingua in modo che contenga il contenuto del master lingua 
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
-Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), e viene ritradotta dopo lo spostamento, verrà creato un nuovo testo in lingua in base al nuovo nome/posizione della pagina. Il testo in lingua precedente basato sul nome/posizione precedente sarà ancora presente.
+Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), e viene ritradotta dopo lo spostamento, verrà creato un nuovo testo in lingua in base al nuovo nome/posizione della pagina. Il testo in lingua precedente basato sul nome/posizione precedente sarà ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
 
-La best practice per questo scenario prevede di seguire questa procedura:
-1. Annulla la pubblicazione dei testi in lingua associati alla pagina sorgente che desideri spostare.
-1. Eliminali.
-1. Crea nuovi testi in lingua dalla pagina sorgente appena spostata.
-1. Pubblica i nuovi testi in lingua.
+1. Sposta una pagina contenente una copia per lingua.
+1. Seleziona la directory principale della copia lingua.
+1. Apri **Riferimenti** pannello.
+1. Seleziona **Copie per lingua**.
+1. Seleziona le lingue di destinazione da aggiornare.
+1. Seleziona **Aggiorna copie per lingua**.
+1. Fai clic su **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
+1. Passa alla directory principale della lingua desiderata e selezionala.
+1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
+1. Fai clic sul lancio appena creato e fai clic su **Promuovi lancio**.
+
+Ora la pagina sorgente è stata spostata, così come la copia per lingua associata.
 
 ## Creazione di un progetto di traduzione tramite la console Progetti {#creating-a-translation-project-using-the-projects-console}
 
