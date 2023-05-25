@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1296'
 ht-degree: 37%
 
 ---
@@ -142,6 +142,8 @@ ht-degree: 37%
       + [Gestione degli endpoint di GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Utilizzo dell’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Ottimizzazione delle query GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API GraphQL per AEM con frammenti di contenuto - Contenuto di esempio e query](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Sviluppo AEM ibrido e SPA{#spas}
@@ -189,7 +191,7 @@ ht-degree: 37%
    + [Tipi di modulo interfaccia utente ContextHub di esempio](ch-samplemodules.md)
    + [Diagnostica ContextHub](ch-diagnostics.md)
    + [Sviluppo per contenuti di destinazione](target.md)
-   + [Riferimento API di ContextHub Javascript](contexthub-api.md)
+   + [Riferimento API JavaScript di ContextHub](contexthub-api.md)
    + ClientContext{#client-context}
       + [ClientContext nei dettagli](client-context.md)
       + [API JavaScript ClientContext](ccjsapi.md)
@@ -233,7 +235,7 @@ ht-degree: 37%
       + [Sviluppo di rapporti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Test{#testing}
    + [Pianificazione](planning.md)
-   + [Quali ambienti di test saranno necessari?](test-environments.md)
+   + [Quali ambienti di test sono necessari?](test-environments.md)
    + [Definizione dei test case](test-cases.md)
    + [Test: quando e con chi?](when-who.md)
    + [Compilazione del piano di test](test-plan.md)

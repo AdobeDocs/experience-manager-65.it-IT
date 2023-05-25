@@ -7,10 +7,10 @@ breadcrumb-title: Note sulla versione
 user-guide-description: Scopri le nuove funzioni di AEM 6.5 nelle note sulla versione.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
+source-git-commit: 3bd2265315d2d2e252f452becac1b83538e40110
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 42%
+source-wordcount: '69'
+ht-degree: 43%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 42%
 + [Note sulla versione corrente](release-notes.md)
 + [Istruzioni di installazione di AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
 + [Note sulle versioni precedenti]{#service-pack}
+   + [6.5.16](previous/6.5.16.md)
    + [6.5.15](previous/6.5.15.md)
    + [6.5.14](previous/6.5.14.md)
    + [6.5.13](previous/6.5.13.md)

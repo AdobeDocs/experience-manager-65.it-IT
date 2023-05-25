@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
+source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
 workflow-type: tm+mt
-source-wordcount: '3045'
+source-wordcount: '3033'
 ht-degree: 6%
 
 ---
@@ -45,23 +45,13 @@ Ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiunti
 **Linee guida per definire il ritaglio avanzato in un profilo immagine**
 Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzarne il tempo di elaborazione e la conservazione, l’Adobe consiglia di seguire le linee guida e i suggerimenti seguenti:
 
-* Evita di creare profili di ritaglio avanzato duplicati con gli stessi valori di larghezza e altezza.
+* Le risorse immagine a cui verrà applicato un ritaglio avanzato devono essere di almeno 50 x 50 pixel.
+* Idealmente, avere 10-15 ritagli intelligenti per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
 * Denomina gli smart crop in base alle dimensioni di ritaglio, non all’utilizzo finale. In questo modo è possibile ottimizzare i duplicati in cui una singola dimensione viene utilizzata su più pagine.
 * Crea profili immagine in base al tipo di pagina/risorsa per cartelle e sottocartelle specifiche, anziché un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
 * Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
-* Crea profili immagine in base al tipo di pagina/risorsa per cartelle e sottocartelle specifiche, anziché un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
-* Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
-* Idealmente, avere 10-15 ritagli intelligenti per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
-
-<!--
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
-* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
-* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
-* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
-* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
-* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
-<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
+* Non è consentito un profilo immagine contenente dimensioni di ritaglio avanzato duplicate.
+* I profili immagine con nome duplicato per i quali sono impostate opzioni di ritaglio avanzato non sono consentiti.
 
 Puoi scegliere tra due opzioni di ritaglio dell’immagine: Ritaglio pixel o Ritaglio avanzato. Puoi anche scegliere di automatizzare la creazione di campioni di colore e immagini.
 

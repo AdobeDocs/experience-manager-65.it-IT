@@ -1,12 +1,12 @@
 ---
-title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
+title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 91%
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplor
 >* [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
-Come introduzione alle query GraphQL e per scoprire come funzionano con i Frammenti di contenuto AEM è utile visualizzare alcuni esempi pratici.
+Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
 
 Per assistenza, consulta:
 
@@ -38,7 +38,7 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 >[!NOTE]
 >
->A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) per l’invio e la verifica delle query.
+>A seconda dell’istanza, puoi accedere direttamente al [Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) per l’invio e la verifica delle query.
 >
 >Esempio: `http://localhost:4502/content/graphiql.html`
 
@@ -48,11 +48,11 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 ### Query di esempio: tutti gli schemi e i tipi di dati disponibili {#sample-all-schemes-datatypes}
 
-Il risultato comprende tutti i `types` di tutti gli schemi disponibili.
+Questa query di esempio restituisce tutti `types` per tutti gli schemi disponibili.
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ Il risultato comprende tutti i `types` di tutti gli schemi disponibili.
 
 **Risultato di esempio**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -144,7 +144,7 @@ Il risultato comprende tutti i `types` di tutti gli schemi disponibili.
 Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la query di base:
 **Query di esempio**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -152,9 +152,9 @@ Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la quer
 }
 ```
 
-Una volta eseguita, il sistema la espanderà automaticamente per includere tutti i campi:
+Quando viene eseguita, il sistema espande automaticamente la query per includere tutti i campi:
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ Una volta eseguita, il sistema la espanderà automaticamente per includere tutti
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -224,11 +224,11 @@ Una volta eseguita, il sistema la espanderà automaticamente per includere tutti
 
 ### Query di esempio: nomi di tutte le città {#sample-names-all-cities}
 
-Questa è una query semplice che restituisce `name` tutte le voci dello `city` schema.
+Questa query di esempio è una query semplice che restituisce `name`di tutte le voci nella `city`schema.
 
 **Query di esempio**
 
-```xml
+```xmgraphqll
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -274,11 +274,11 @@ query {
 
 ### Query di esempio: un singolo frammento di città specifico {#sample-single-specific-city-fragment}
 
-Si tratta di una query che restituisce i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
+Questa query di esempio è una query che restituisce i dettagli di una singola voce di frammento in una posizione specifica nell’archivio.
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ Si tratta di una query che restituisce i dettagli di una singola voce di frammen
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -315,11 +315,11 @@ Si tratta di una query che restituisce i dettagli di una singola voce di frammen
 
 ### Query di esempio: tutte le città con una variante denominata {#sample-cities-named-variation}
 
-Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), relativa alla `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
+Se crei una variante denominata &quot;Berlino centro&quot; (`berlin_centre`), per `city` Berlino, puoi utilizzare una query per restituire i dettagli della variante.
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -360,14 +360,14 @@ Se crei una nuova variante, denominata “Berlino centro” (`berlin_centre`), r
 
 Se:
 
-* creare diversi tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
-* e assegnarli alla variante principale di vari `City` istanze
+* crea vari tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* e assegnano questi tag alla variante principale di vari `City` istanze
 
 Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -383,7 +383,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -414,7 +414,7 @@ Utilizzando la struttura dei frammenti nidificati, questa query restituisce tutt
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -443,7 +443,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -538,11 +538,11 @@ query {
 
 ### Query di esempio: tutte le persone con nome “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Questo filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
+Questa query di esempio filtra tutti `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -567,7 +567,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -592,11 +592,11 @@ query {
 
 ### Query di esempio: tutte le persone che non hanno nome “Jobs” {#sample-all-persons-not-jobs}
 
-Questo filtra tutte le `persons` che hanno il nome `Jobs` o `Smith`.
+Questa query di esempio filtra tutti `persons` per qualsiasi che ha il nome `Jobs`o `Smith`.
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -618,7 +618,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -663,7 +663,7 @@ Tutte le `adventures` il cui `_path` inizia con un prefisso specifico (`/content
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -685,7 +685,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -702,13 +702,13 @@ query {
 }
 ```
 
-### Query di esempio: tutte le città situate in Germania o Svizzera con una popolazione compresa tra 400000 e 999999 {#sample-all-cities-d-ch-population}
+### Query di esempio: tutte le città in Germania o Svizzera con una popolazione da 400000 a 999999 {#sample-all-cities-d-ch-population}
 
-In questo caso il filtro è impostato su una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
+In questo caso, viene filtrata una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -744,7 +744,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -771,7 +771,7 @@ Questa query interroga tutte le città che hanno `SAN` nel nome, indipendentemen
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -795,7 +795,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -822,7 +822,7 @@ Questa query filtra un array con un elemento (`city:na`) che deve verificarsi al
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -846,7 +846,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ Questa query filtra un determinato valore di array.
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -906,7 +906,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -932,7 +932,7 @@ Questa query illustra il filtro per qualsiasi `person` di `name` “Smith” e r
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -964,7 +964,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -998,7 +998,7 @@ Questa query illustra il filtraggio su tre frammenti nidificati: `company`, `emp
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -1040,7 +1040,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1090,7 +1090,7 @@ Questa query illustra il filtraggio su tre frammenti nidificati: `company`, `emp
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1117,7 +1117,7 @@ query {
 
 **Risultati di esempio**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1146,7 +1146,7 @@ query {
 
 ## Query di esempio con il progetto WKND {#sample-queries-using-wknd-project}
 
-Queste query di esempio si basano sul progetto WKND. Caratteristiche:
+Queste query di esempio si basano sul progetto WKND. Presenta le seguenti caratteristiche:
 
 * Modelli di Frammento di contenuto disponibili in:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1167,7 +1167,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   articleList {
     items {
@@ -1187,7 +1187,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1244,7 +1244,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * per un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del quale, sono presenti tutti i formati di contenuto:
+   * all’interno del percorso, tutti i formati di contenuto:
       * HTML
       * Markdown
       * Testo normale
@@ -1252,7 +1252,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
@@ -1278,7 +1278,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
     item {
@@ -1298,7 +1298,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del quale, è presente il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
+   * all’interno di tale percorso, il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
 
 >[!NOTE]
 >
@@ -1393,7 +1393,7 @@ Tali query rappresentano interrogazioni per ottenere:
 
 La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_references`:
 
-```xml
+```graphql
 {
   bookmarkList {
      _references {
@@ -1427,13 +1427,13 @@ La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_ref
 
 #### Query di esempio per più frammenti di contenuto con allegati {#sample-wknd-multiple-fragments-attachments}
 
-La query seguente restituisce tutti gli `attachments`: un campo specifico (gruppo secondario) di tipo `content-reference`:
+La query seguente restituisce tutti `attachments` - un campo specifico (sottogruppo) di tipo `content-reference`:
 
 >[!NOTE]
 >
 >Il campo `attachments` include il tipo di dati `content-reference`, con diversi moduli selezionati.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
@@ -1477,7 +1477,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1515,11 +1515,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all&#39;interno del quale, sono presenti dati relativi alla variante: `variation1`
+   * all’interno di tale percorso, i dati relativi alla variante: `variation1`
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
@@ -1544,7 +1544,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   articleList (variation: "variation1") {
     items {
@@ -1569,7 +1569,7 @@ Questa query rappresenta un’interrogazione:
 
 **Query di esempio**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1596,7 +1596,7 @@ Questa query rappresenta un’interrogazione:
 
 **Query di esempio**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1625,7 +1625,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 **Query di esempio**
 
-```xml
+```graphql
 { 
   articleList (_locale: "fr") {
     items {
@@ -1652,7 +1652,7 @@ Le query di esempio si basano sulla seguente struttura, che utilizza:
 
 ### Modelli per frammenti di contenuto di esempio (schemi) {#sample-content-fragment-models-schemas}
 
-Per le query di esempio, verranno utilizzati i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
+Per le query di esempio, utilizza i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
 
 * [Azienda](#model-company)
 -> [Utente](#model-person)
