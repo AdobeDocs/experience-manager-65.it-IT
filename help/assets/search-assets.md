@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: eac578f8c8ef3bfc3c94929814398486777094f0
+source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
 workflow-type: tm+mt
-source-wordcount: '5601'
+source-wordcount: '5741'
 ht-degree: 6%
 
 ---
@@ -419,6 +419,10 @@ Puoi effettuare le seguenti operazioni con le risorse in cui hai effettuato la r
 * Scarica una o più risorse.
 * Utilizza Azioni desktop per aprire queste risorse nell’app desktop.
 * Creare raccolte avanzate.
+* Crea una versione
+* Avviare un flusso di lavoro
+* Riferisci o rimuovi correlazione tra attività
+* Per limitare i risultati della ricerca, applica i filtri utilizzando il pannello Filtri visualizzato automaticamente dopo aver eseguito la ricerca.
 
 ### Ordinare i risultati della ricerca {#sort}
 
@@ -458,6 +462,18 @@ Una raccolta è un insieme ordinato di risorse che può includere risorse da pos
 * Elenco dinamico (raccolta avanzata) che popola le risorse nella raccolta in base a un criterio di ricerca.
 
 Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]**, seleziona **[!UICONTROL File]** e fai clic su **[!UICONTROL Salva raccolta avanzata]**. Consulta la sezione [Gestisci raccolte](/help/assets/manage-collections.md).
+
+### Crea una versione {#create-version}
+
+Crea una versione per le risorse visualizzate nei risultati di ricerca. Seleziona la risorsa e fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Versione]**. Aggiungi un’etichetta o un commento facoltativo e fai clic su **[!UICONTROL Crea]**. Puoi anche selezionare più risorse e crearne simultaneamente le versioni.
+
+### Creare un flusso di lavoro {#create-workflow}
+
+Analogamente alla funzionalità di creazione della versione, puoi anche creare un flusso di lavoro per le risorse visualizzate nei risultati di ricerca. Seleziona le risorse e fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Flusso di lavoro]**. Seleziona il modello di flusso di lavoro, specifica un titolo per il flusso di lavoro e fai clic su **[!UICONTROL Inizio]**.
+
+### Correlare e scollegare le risorse {#relate-unrelate-assets}
+
+Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le risorse e fai clic su **[!UICONTROL Correlare]** o **[!UICONTROL Scollega]**.
 
 ## Risultati e problemi di ricerca imprevisti {#unexpected-results}
 
