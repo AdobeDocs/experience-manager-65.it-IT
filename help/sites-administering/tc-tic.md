@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 6dea3a23c70fdb5f07bdf724547e799776002c61
+source-git-commit: 3d1959a1a81293b51257d99d32c9576866c8a308
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1569'
 ht-degree: 50%
 
 ---
@@ -107,6 +107,10 @@ Le proprietà Sites controllano come viene eseguita la traduzione del contenuto 
   <tr>
    <td>Categoria contenuto</td>
    <td>(Solo traduzione automatica) Categoria che descrive il contenuto che si sta traducendo. La categoria può influenzare la scelta della terminologia e della formulazione durante la traduzione dei contenuti.</td>
+  </tr>
+  <tr>
+   <td>Traduci stringhe componenti</td>
+   <td>Seleziona questa opzione per tradurre le stringhe dei componenti associati alla pagina.</td>
   </tr>
   <tr>
    <td>Traduci tag</td>
