@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2606'
+source-wordcount: '2620'
 ht-degree: 2%
 
 ---
@@ -70,6 +70,7 @@ Alcune delle funzioni chiave e dei miglioramenti introdotti in questa versione s
 * Impossibile attivare un flusso di lavoro per più risorse selezionate trovate utilizzando i filtri di ricerca. (ASSETS-7689)
 * Quando selezioni una risorsa (o più risorse) dai risultati della ricerca, l’opzione di correlazione o non correlazione non è visibile. Ma l&#39;opzione è disponibile, altrimenti. (ASSETS-7679)
 * Il pannello Filtri di ricerca si apre una sola volta dopo l’accesso e non si apre se esci dalla pagina di ricerca ed esegui nuovamente la ricerca. (ASSETS-7671)
+* Nella casella combinata e-mail non viene visualizzato il rapporto di contrasto appropriato durante la condivisione di un collegamento. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
