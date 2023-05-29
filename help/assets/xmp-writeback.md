@@ -6,9 +6,9 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Questa funzionalità di writeback XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo dei metadati nella gerarchia delle risorse.
 
-La funzione di writeback dell’XMP consente di propagare le modifiche ai metadati a tutte le rappresentazioni specifiche della risorsa. La funzione riscrive solo le proprietà dei metadati che utilizzano `jcr` spazio dei nomi, ovvero una proprietà denominata `dc:title` viene scritto ma una proprietà denominata `mytitle` non lo è.
+La funzione di writeback dell’XMP consente di propagare le modifiche ai metadati a tutte le rappresentazioni specifiche della risorsa. La funzione riscrive solo le proprietà dei metadati che utilizzano spazi dei nomi registrati, ovvero una proprietà denominata `dc:title` viene scritto ma una proprietà denominata `mytitle` non lo è.
 
 Considera uno scenario in cui modifichi il [!UICONTROL Titolo] proprietà della risorsa con titolo `Classic Leather` a `Nylon`.
 
