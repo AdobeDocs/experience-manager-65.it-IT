@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 4%
 
 ---
@@ -258,7 +258,7 @@ Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete form
 
 #### Imposta opzioni di caricamento Photoshop {#setting-photoshop-upload-options}
 
-I file di Photoshop Document (PSD) vengono utilizzati in genere per la creazione di modelli di immagine. Quando carichi un file di PSD, puoi creare automaticamente un modello di immagine dal file (seleziona l’ [!UICONTROL Crea modello] nella schermata di caricamento).
+I file di Photoshop Document (PSD) vengono utilizzati in genere per la creazione di modelli di immagine. Quando carichi un file PSD, puoi creare automaticamente un modello di immagine dal file (seleziona l’ [!UICONTROL Crea modello] nella schermata di caricamento).
 
 Dynamic Media crea più immagini da un file PSD con livelli se utilizzate il file per creare un modello; crea un&#39;immagine per ogni livello.
 
@@ -402,6 +402,9 @@ Per visualizzare in anteprima una risorsa tramite tastiera, effettua le seguenti
    ![Selettore data e ora o usa i tasti di tastiera nel campo Ora per aggiungere data e ora per l’attivazione delle risorse](assets/datepicker.png)
 
    *Figura: Utilizzare il selettore data per pianificare l&#39;attivazione delle risorse.*
+
+1. Dovete controllare **[!UICONTROL Ora di attivazione/disattivazione raggiunta]** se desideri aggiornare i trigger dell’agente di replica nelle proprietà Metadata.
+   ![Impostazioni agente](assets-dm/Agent-settings.png)
 
 1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data posto accanto a **[!UICONTROL Ora di disattivazione]** campo. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite [!DNL Assets] tramite l’interfaccia web o tramite l’API HTTP.
 
@@ -639,7 +642,7 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
 1. Pubblica la cartella, quindi prova ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di accesso.
 1. Se si è un membro del gruppo utenti chiusi, immettere le credenziali di sicurezza. La cartella viene visualizzata dopo [!DNL Experience Manager] ti autentica.
 
-## Cercare risorse {#assetsearch}
+## Cerca risorse {#assetsearch}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali. Questa funzionalità è importante per i creativi, per la solida gestione delle risorse da parte di utenti aziendali e addetti al marketing o per l’amministrazione da parte degli amministratori DAM.
 
