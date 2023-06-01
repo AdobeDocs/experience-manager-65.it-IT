@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
+source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
 workflow-type: tm+mt
-source-wordcount: '3846'
+source-wordcount: '3860'
 ht-degree: 4%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 4%
    + [Introduzione all’integrazione dei dati di AEM Forms](using/data-integration.md)
    + [Configurare origini dati](using/configure-data-sources.md)
    + [Configurazione di Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
+   + [Flusso delle credenziali client OAuth 2.0 per l’integrazione con Salesforce](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Crea modello dati modulo](using/create-form-data-models.md)
    + [Utilizzare il modello dati del modulo](using/work-with-form-data-model.md)
    + [Usa modello dati modulo](using/using-form-data-model.md)
@@ -690,6 +691,7 @@ ht-degree: 4%
    + [Impossibile ripristinare l’archivio CRX](/help/forms/using/restore-crx-repository.md)
    + [Errori di servizio non disponibile dopo l’installazione del service pack AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problema di installazione del service pack AEM Forms JEE 6.5.15.0 nell’ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Distribuzione EAR non riuscita sul server WebLogic JEE](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Documentazione legacy {#legacy-documentation}
    + [Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML](developing/building-xml.md)
    + [Compressione e decompressione di file tramite un’istanza di AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)

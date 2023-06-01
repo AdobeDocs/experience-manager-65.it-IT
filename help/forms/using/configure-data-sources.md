@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2090'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ L’integrazione dei dati di AEM Forms consente di configurare e connettersi a d
 * Servizi web basati su SOAP
 * Servizi OData
 
-L’integrazione dei dati supporta i tipi di autenticazione predefiniti OAuth2.0, autenticazione di base e chiave API e consente di implementare l’autenticazione personalizzata per l’accesso ai servizi web. Mentre i servizi RESTful, SOAP-based e OData sono configurati in AEM Cloud Services, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console web AEM.
+L’integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base e tipi di autenticazione con chiave API pronti all’uso e che consentono l’implementazione dell’autenticazione personalizzata per l’accesso ai servizi web. Mentre i servizi RESTful, SOAP-based e OData sono configurati in AEM Cloud Services, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console web AEM.
 
 ## Configurare il database relazionale {#configure-relational-database}
 
@@ -132,7 +132,7 @@ Per configurare i servizi RESTful, effettuare le seguenti operazioni:
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
       * Percorso base: prefisso URL per tutti i percorsi API. È un campo facoltativo.\
          Se necessario, modifica i valori precompilati per questi campi.
-   * Seleziona il tipo di autenticazione (Nessuno, OAuth2.0, Autenticazione di base, Chiave API, Autenticazione personalizzata o Autenticazione reciproca) per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
+   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API, autenticazione personalizzata o autenticazione reciproca per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
 
    Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specifica il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dalla **[!UICONTROL Posizione]** e specificare il nome dell&#39;intestazione o il parametro di query nell&#39; **[!UICONTROL Nome parametro]** di conseguenza.
 
@@ -174,7 +174,7 @@ I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Servi
 
    * URL WSDL per il servizio Web.
    * Endpoint servizio. Specificare un valore in questo campo per sostituire l&#39;endpoint del servizio indicato in WSDL.
-   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0, Autenticazione di base, Autenticazione personalizzata, Token X509 o Autenticazione reciproca, per accedere al servizio SOAP e fornire i dettagli per l&#39;autenticazione.
+   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, autenticazione personalizzata, token X509 o autenticazione reciproca per accedere al servizio SOAP e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
       Se si seleziona **[!UICONTROL Token X509]** come tipo di autenticazione, configura il certificato X509. Per ulteriori informazioni, consulta [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Specifica l’alias KeyStore per il certificato X509 in **[!UICONTROL Alias chiave]** campo. Specifica il tempo, in secondi, rimanente la validità della richiesta di autenticazione, nel **[!UICONTROL Time To Live]** campo. Facoltativamente, seleziona per firmare il corpo del messaggio o l’intestazione della marca temporale o entrambi.
@@ -200,7 +200,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 1. Specificare i dettagli seguenti per il servizio OData:
 
    * URL principale del servizio per il servizio OData da configurare.
-   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0, Autenticazione di base o Autenticazione personalizzata, per accedere al servizio OData e fornire di conseguenza i dettagli per l&#39;autenticazione.
+   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base o autenticazione personalizzata: per accedere al servizio OData e fornire i dettagli per l&#39;autenticazione.
 
    >[!NOTE]
    >
