@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3499'
 ht-degree: 1%
 
 ---
@@ -52,9 +52,9 @@ Alcune delle funzioni chiave e dei miglioramenti introdotti in questa versione s
 * **Integrazione di Adaptive Forms nelle pagine del sito AEM**: crea esperienze di registrazione digitale sfruttando i componenti Forms adattivi nell’editor di AEM Sites utilizzando: - Contenitore Forms adattivo e Forms adattivo - Componenti Incorpora(v2).
 * **Supporto di reCAPTCHA Enterprise in AEM Forms**: è stato aggiunto il supporto per reCAPTCHA Enterprise in AEM Forms, che fornisce una protezione avanzata contro le attività fraudolente e lo spam, oltre al supporto esistente per Google reCAPTCHA v2.
 * **Supporto per Adobe Acrobat Sign for Government con AEM Forms**: consenti l’integrazione sicura e conforme di AEM Forms con Adobe Sign for Government (conforme a FedRAMP).
-* **Abilitare l’integrazione di Salesforce con AEM Forms per lo scambio di dati**: flusso delle credenziali client OAuth 2.0 per l’autenticazione e l’autorizzazione sicure e dirette delle applicazioni nell’applicazione Salesforce per consentire una comunicazione fluida tra le applicazioni senza il coinvolgimento dell’utente.
-* **Ottimizzazione e funzionalità migliorate del motore del flusso di lavoro**: la riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni dei motori del flusso di lavoro. Oltre a `COMPLETED` e `RUNNING` valori di stato, il flusso di lavoro supporta anche tre nuovi valori di stato: `ABORTED`, `SUSPENDED`, e `FAILED`.
-* Il formato di output ZPL supporta diversi formati di carta, quali lettera, A4 e A5.
+* **Abilitare l’integrazione di Salesforce con AEM Forms per lo scambio di dati**: configura l’integrazione tra i moduli AEM e l’applicazione Salesforce utilizzando il flusso delle credenziali del client OAuth 2.0. Ciò consente l’autenticazione e l’autorizzazione sicure e dirette dell’applicazione e una comunicazione fluida senza il coinvolgimento dell’utente.
+* **Ottimizzazione e funzionalità migliorate del motore del flusso di lavoro**: aumenta le prestazioni dei motori del flusso di lavoro riducendo al minimo il numero di istanze del flusso di lavoro. Oltre a `COMPLETED` e `RUNNING` valori di stato, il flusso di lavoro supporta anche tre nuovi valori di stato: `ABORTED`, `SUSPENDED`, e `FAILED`.
+* **Supporto del formato carta per l&#39;uscita ZPL**: in AEM Forms Designer, XMLFM genera l’output ZPL con diversi formati di carta, ad esempio lettera, A4 e A5, per i modelli basati su XDP.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
