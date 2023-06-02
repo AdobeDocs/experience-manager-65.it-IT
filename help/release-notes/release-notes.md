@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
+source-git-commit: 7f152c3b7b80c78bb73b45e83cc566e9bbb0c393
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3494'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Alcune delle funzioni chiave e dei miglioramenti introdotti in questa versione s
 * **Supporto per Adobe Acrobat Sign for Government con AEM Forms**: consenti l’integrazione sicura e conforme di AEM Forms con Adobe Sign for Government (conforme a FedRAMP).
 * **Abilitare l’integrazione di Salesforce con AEM Forms per lo scambio di dati**: configura l’integrazione tra i moduli AEM e l’applicazione Salesforce utilizzando il flusso delle credenziali del client OAuth 2.0. Ciò consente l’autenticazione e l’autorizzazione sicure e dirette dell’applicazione e una comunicazione fluida senza il coinvolgimento dell’utente.
 * **Ottimizzazione e funzionalità migliorate del motore del flusso di lavoro**: aumenta le prestazioni dei motori del flusso di lavoro riducendo al minimo il numero di istanze del flusso di lavoro. Oltre a `COMPLETED` e `RUNNING` valori di stato, il flusso di lavoro supporta anche tre nuovi valori di stato: `ABORTED`, `SUSPENDED`, e `FAILED`.
-* **Supporto del formato carta per l&#39;uscita ZPL**: in AEM Forms Designer, XMLFM genera l’output ZPL con diversi formati di carta, ad esempio lettera, A4 e A5, per i modelli basati su XDP.
+
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -139,6 +139,7 @@ Alcune delle funzioni chiave e dei miglioramenti introdotti in questa versione s
 * Quando un utente fa clic su `Configure` opzione per `Form Container` , il browser smette di rispondere (FORMS-7605).
 * Quando un utente si aggiorna a AEM Forms 6.5.16.0 Service Pack e tenta di modificare il `LicenseType` a `Production`, le modifiche non vengono applicate. (FORMS-7594)
 * Quando un utente tenta di richiamare un processo LCA con un PDF che include `Chinese Full Width Characters`, si verifica un problema con `ValidateForm` processo. (FORMS-7464)
+* In AEM Forms Designer, XMLFM genera un output ZPL con diversi formati di carta, ad esempio lettera, A4 e A5, per i modelli basati su XDP.(FORMS-7898)
 
 ## Integrazioni{#integrations-6517}
 
