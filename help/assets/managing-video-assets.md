@@ -6,7 +6,7 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 8%
@@ -524,9 +524,9 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
    >
    >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di workflow **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
-   >    * Configurazione coda processi Apache Sling
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Coda di timeout del flusso di lavoro Granite
+   >* Configurazione coda processi Apache Sling
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Coda di timeout del flusso di lavoro Granite
 
    >
    >È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
@@ -557,13 +557,10 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
    >
    >Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di workflow in **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
-   >
-   >
-   >    * Configurazione coda processi Apache Sling
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Coda di timeout del flusso di lavoro Granite
+   >* Configurazione coda processi Apache Sling
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Coda di timeout del flusso di lavoro Granite
 
-   >
    >
    >È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
 
