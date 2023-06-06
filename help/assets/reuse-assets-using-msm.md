@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3288'
 ht-degree: 10%
 
 ---
@@ -287,22 +287,6 @@ Se in una cartella Live Copy sono presenti più risorse, l’avvio di azioni su 
    ![Aggiornare facilmente molte risorse nelle cartelle Live Copy dalla console Panoramica Live Copy](assets/livecopyconsole_update_many_assets.png)
 
    *Figura: Aggiornare facilmente molte risorse nelle cartelle Live Copy dalla [!UICONTROL Panoramica Live Copy] console.*
-
-## Estendi MSM per [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] ti consente di estendere la funzionalità utilizzando le API Java MSM. Per [!DNL Assets], l’estensione funziona esattamente come con MSM per [!DNL Sites]. Per ulteriori informazioni, consulta [Estensione di MSM](/help/sites-developing/extending-msm.md) e quanto segue per informazioni su attività specifiche:
-
-* [Panoramica delle API](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Creare un’azione di sincronizzazione](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Creare una configurazione di rollout](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Creare e utilizzare una semplice classe LiveActionFactory](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Blueprint in MSM per [!DNL Sites] si chiama origine Live Copy in MSM per [!DNL Assets].
->* La rimozione del passaggio capitoli nella procedura guidata Crea sito non è supportata in MSM per [!DNL Assets].
->* La configurazione dei blocchi MSM nelle proprietà della pagina (interfaccia utente touch) non è supportata in MSM per [!DNL Assets].
-
 
 ## Impatto delle attività di gestione risorse sulle Live Copy {#manage-assets}
 
