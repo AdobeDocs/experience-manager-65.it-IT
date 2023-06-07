@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3567'
 ht-degree: 1%
 
 ---
@@ -104,9 +104,8 @@ Alcune delle funzioni chiave e dei miglioramenti introdotti in questa versione s
 
 ## [!DNL Forms]{#forms-6517}
 
-* Quando un utente effettua l’aggiornamento a Service Pack di Experience Manager 6.5.16.0, il file allegato non viene recuperato correttamente. (FORMS-8906)
-* Dopo l’aggiornamento a Service Pack di Experience Manager 6.5.15.0, i moduli HTML5 non funzionano o non vengono caricati correttamente nel browser Edge con modalità di compatibilità IE. (FORMS-8526, FORMS-8523)
-* Quando un utente applica l’Experience Manager 6.5.16.0 Service Pack, l’editor di regole non si apre. (FORMS-8290)
+* Dopo l’aggiornamento a AEM 6.5.15.0 Service Pack, i moduli HTML5 non funzionano o non vengono caricati correttamente nel browser Edge con modalità di compatibilità IE. (FORMS-8526, FORMS-8523)
+* Quando un utente applica il Service Pack AEM 6.5.16.0, l’editor di regole non si apre. (FORMS-8290)
 * Se a un componente Casella numerica viene applicato il numero massimo di cifre, la convalida non riesce. (FORMS-7938)
 * Durante la creazione di istruzioni di comunicazione interattive, il componente grafico nel PDF non viene generato correttamente. (FORMS-7827, FORMS-8297)
 * La funzione di Garbage Collection di Java™ non è in grado di cancellare l’heap di vecchia generazione su un server OSGi di Experience Manager Forms. (FORMS-8207)
