@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
+source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
 workflow-type: tm+mt
-source-wordcount: '9993'
-ht-degree: 4%
+source-wordcount: '10068'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,6 @@ Quando si organizza una raccolta di risorse, ad esempio, tutti `Nature` immagini
 >
 >* Condivisione di un [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportato quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
 >* [!DNL Experience Manager] non consente l’utilizzo di `subassets` word come nome di una cartella. Si tratta di una parola chiave riservata a un nodo che contiene risorse secondarie per le risorse composte.
-
 
 1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una cartella. Nel menu, fai clic su **[!UICONTROL Crea]**. Seleziona **[!UICONTROL Nuova cartella]**.
 1. In **[!UICONTROL Titolo]** , inserisci un nome per la cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, puoi sovrascrivere l’impostazione predefinita e specificare un altro nome di cartella.
@@ -58,6 +57,12 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >[!NOTE]
 >
 >In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caricamento delle risorse è pari o inferiore a 2 GB. Per configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB, consulta [(Facoltativo) Configura Dynamic Media in modalità Scene7 per il caricamento di risorse superiori a 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+
+>[!IMPORTANT]
+>
+>Le risorse caricate in Experience Manager con un nome file che supera i 100 caratteri hanno un nome abbreviato quando vengono utilizzate in Dynamic Media.
+>
+>I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
 
 Puoi scegliere di caricare le risorse nelle cartelle con o senza un profilo di elaborazione assegnato.
 
@@ -104,7 +109,6 @@ Per configurare l’attività di pulizia per i processi di caricamento blocchi n
 >* Per assicurarsi che il caricamento dei blocchi sia abilitato per i file le cui dimensioni potrebbero causare la scadenza delle credenziali durante il caricamento.
 >
 >* Assicurarsi che ogni blocco termini prima della scadenza delle credenziali.
-
 
 Se carichi una risorsa con lo stesso nome di una risorsa già disponibile nel percorso in cui la stai caricando, viene visualizzata una finestra di avviso.
 
@@ -198,22 +202,22 @@ Per annullare un processo di caricamento in corso, fai clic su **[!UICONTROL Ann
 
 | Opzione di caricamento | Sottoopzione | Descrizione |
 |---|---|---|
-| Nome processo |  | Il nome predefinito che viene precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e l&#39;indicatore di data e ora. Puoi utilizzare il nome predefinito o immettere un nome di creazione per questo processo di caricamento. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, in cui è possibile controllare lo stato dei processi. |
-| Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione |  | Selezionare questa opzione se si desidera che i file caricati sostituiscano i file esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Carica nell&#39;applicazione]** > **[!UICONTROL Sovrascrivi immagini]**. |
-| Decomprimi file Zip o Tar al caricamento |  |  |
-| Opzioni processo |  | Clic **[!UICONTROL Opzioni processo]** in modo da poter aprire [!UICONTROL Opzioni processo di caricamento] e scegliere le opzioni che influiscono sull&#39;intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>È possibile scegliere le opzioni predefinite per il caricamento dei file a partire dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegli **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]**. Seleziona la **[!UICONTROL Opzioni di caricamento predefinite]** per aprire il [!UICONTROL Opzioni processo di caricamento] . |
-|  | Quando   | Selezionare Una tantum o Ricorrente. Per impostare un processo ricorrente, scegliete l&#39;opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando il processo di caricamento FTP deve essere ripetuto. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
-|  | Includi sottocartelle | Carica tutte le sottocartelle nella cartella che intendi caricare. I nomi della cartella e delle relative sottocartelle caricate vengono immessi automaticamente in [!DNL Experience Manager Assets]. |
-|  | Opzioni di ritaglio | Per ritagliare manualmente i lati di un&#39;immagine, selezionate il menu Ritaglia e scegliete Manuale. Quindi immettete il numero di pixel da ritagliare da un lato o da ciascun lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine. Ad esempio, se l&#39;immagine visualizza 150 ppi e si immette 75 nelle caselle di testo Superiore, Destra, Inferiore e Sinistra, verrà ritagliato un centimetro da ciascun lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un&#39;immagine, aprire il menu Ritaglia, scegliere Manuale e immettere le misure dei pixel nei campi Superiore, Destro, Inferiore e Sinistro per ritagliare i pixel dai lati. Potete anche scegliere Rifila (Trim) dal menu Ritaglia (Crop) e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliere l&#39;opzione Colore. Selezionate quindi il menu Angolo (Corner) e scegliete l&#39;angolo dell&#39;immagine con il colore che meglio rappresenta lo spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliere l&#39;opzione Trasparenza.<br> **Tolleranza** : trascina il cursore per specificare una tolleranza da 0 a 1. Per il ritaglio basato sul colore, specifica 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. I numeri più vicini a 1 consentono una maggiore differenza di colore.<br>Per il ritaglio basato sulla trasparenza, specificate 0 per ritagliare i pixel solo se sono trasparenti. I numeri più vicini a 1 consentono una maggiore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
-|  | Opzioni profilo colore | Scegli una conversione colore quando crei file ottimizzati utilizzati per la consegna:<ul><li>Mantenimento colore predefinito: mantiene i colori dell&#39;immagine di origine ogni volta che le immagini contengono informazioni sullo spazio colore; non vi è alcuna conversione colore. Quasi tutte le immagini oggi hanno il profilo colore appropriato già incorporato. Tuttavia, se un&#39;immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti in spazio colore sRGB (rosso verde standard). sRGB è lo spazio colore consigliato per la visualizzazione delle immagini nelle pagine Web.</li><li>Mantieni spazio colore originale: mantiene i colori originali senza alcuna conversione di colore nel punto. Per le immagini senza un profilo colore incorporato, qualsiasi conversione di colore viene eseguita utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati con il colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l&#39;opzione Default Color Preservation (Conservazione colore predefinita).</li><li>Personalizza Da > A<br> Apre i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata sostituisce tutte le informazioni sui colori incorporate nel file di origine. Selezionare questa opzione se tutte le immagini inviate contengono dati di profilo colore errati o mancanti.</li></ul> |
-|  | Opzioni di modifica delle immagini | Potete conservare le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta [Impostazione delle opzioni per le modifiche immagine al caricamento](#setting-image-editing-options-at-upload). |
-|  | Opzioni PostScript | Potete rasterizzare i file di PostScript®, ritagliare i file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opzioni Photoshop | Potete creare modelli da file Adobe® Photoshop®, gestire i livelli, specificare il nome dei livelli, estrarre il testo e specificare come le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consulta [Impostazione delle opzioni di caricamento Photoshop](#setting-photoshop-upload-options). |
-|  | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: per un PDF, il numero massimo di pagine da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md). |
-|  | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opzioni eVideo | Potete trascodificare un file video scegliendo un predefinito video.<br> Consulta [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
-|  | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito che desideri utilizzare. È possibile selezionare più predefiniti. I predefiniti vengono creati nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Consulta [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Consulta [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
+| Nome processo | | Il nome predefinito che viene precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e l&#39;indicatore di data e ora. Puoi utilizzare il nome predefinito o immettere un nome di creazione per questo processo di caricamento. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, in cui è possibile controllare lo stato dei processi. |
+| Pubblica dopo il caricamento | | Pubblica automaticamente le risorse caricate. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione | | Selezionare questa opzione se si desidera che i file caricati sostituiscano i file esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in **[!UICONTROL Impostazione applicazione]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Carica nell&#39;applicazione]** > **[!UICONTROL Sovrascrivi immagini]**. |
+| Decomprimi file Zip o Tar al caricamento | | |
+| Opzioni processo | | Clic **[!UICONTROL Opzioni processo]** in modo da poter aprire [!UICONTROL Opzioni processo di caricamento] e scegliere le opzioni che influiscono sull&#39;intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>È possibile scegliere le opzioni predefinite per il caricamento dei file a partire dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegli **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazione applicazione]**. Seleziona la **[!UICONTROL Opzioni di caricamento predefinite]** per aprire il [!UICONTROL Opzioni processo di caricamento] . |
+| | Quando   | Selezionare Una tantum o Ricorrente. Per impostare un processo ricorrente, scegliete l&#39;opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando il processo di caricamento FTP deve essere ripetuto. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
+| | Includi sottocartelle | Carica tutte le sottocartelle nella cartella che intendi caricare. I nomi della cartella e delle relative sottocartelle caricate vengono immessi automaticamente in [!DNL Experience Manager Assets]. |
+| | Opzioni di ritaglio | Per ritagliare manualmente i lati di un&#39;immagine, selezionate il menu Ritaglia e scegliete Manuale. Quindi immettete il numero di pixel da ritagliare da un lato o da ciascun lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine. Ad esempio, se l&#39;immagine visualizza 150 ppi e si immette 75 nelle caselle di testo Superiore, Destra, Inferiore e Sinistra, verrà ritagliato un centimetro da ciascun lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un&#39;immagine, aprire il menu Ritaglia, scegliere Manuale e immettere le misure dei pixel nei campi Superiore, Destro, Inferiore e Sinistro per ritagliare i pixel dai lati. Potete anche scegliere Rifila (Trim) dal menu Ritaglia (Crop) e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliere l&#39;opzione Colore. Selezionate quindi il menu Angolo (Corner) e scegliete l&#39;angolo dell&#39;immagine con il colore che meglio rappresenta lo spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliere l&#39;opzione Trasparenza.<br> **Tolleranza** : trascina il cursore per specificare una tolleranza da 0 a 1. Per il ritaglio basato sul colore, specifica 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. I numeri più vicini a 1 consentono una maggiore differenza di colore.<br>Per il ritaglio basato sulla trasparenza, specificate 0 per ritagliare i pixel solo se sono trasparenti. I numeri più vicini a 1 consentono una maggiore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
+| | Opzioni profilo colore | Scegli una conversione colore quando crei file ottimizzati utilizzati per la consegna:<ul><li>Mantenimento colore predefinito: mantiene i colori dell&#39;immagine di origine ogni volta che le immagini contengono informazioni sullo spazio colore; non vi è alcuna conversione colore. Quasi tutte le immagini oggi hanno il profilo colore appropriato già incorporato. Tuttavia, se un&#39;immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti in spazio colore sRGB (rosso verde standard). sRGB è lo spazio colore consigliato per la visualizzazione delle immagini nelle pagine Web.</li><li>Mantieni spazio colore originale: mantiene i colori originali senza alcuna conversione di colore nel punto. Per le immagini senza un profilo colore incorporato, qualsiasi conversione di colore viene eseguita utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati con il colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l&#39;opzione Default Color Preservation (Conservazione colore predefinita).</li><li>Personalizza Da > A<br> Apre i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata sostituisce tutte le informazioni sui colori incorporate nel file di origine. Selezionare questa opzione se tutte le immagini inviate contengono dati di profilo colore errati o mancanti.</li></ul> |
+| | Opzioni di modifica delle immagini | Potete conservare le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta [Impostazione delle opzioni per le modifiche immagine al caricamento](#setting-image-editing-options-at-upload). |
+| | Opzioni PostScript | Potete rasterizzare i file di PostScript®, ritagliare i file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opzioni Photoshop | Potete creare modelli da file Adobe® Photoshop®, gestire i livelli, specificare il nome dei livelli, estrarre il testo e specificare come le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consulta [Impostazione delle opzioni di caricamento Photoshop](#setting-photoshop-upload-options). |
+| | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: per un PDF, il numero massimo di pagine da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md). |
+| | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opzioni eVideo | Potete trascodificare un file video scegliendo un predefinito video.<br> Consulta [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
+| | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito che desideri utilizzare. È possibile selezionare più predefiniti. I predefiniti vengono creati nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Consulta [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Consulta [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
 
 #### Imposta le opzioni per le modifiche immagine al caricamento {#setting-image-editing-options-at-upload}
 
@@ -247,14 +251,14 @@ Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete form
 
 | Opzione | Sottoopzione | Descrizione |
 |---|---|---|
-| Elaborazione |  | Scegli **[!UICONTROL Rasterizza]** per convertire gli elementi grafici vettoriali nel file nel formato bitmap. |
-| Mantieni sfondo trasparente nell&#39;immagine di rendering |  | Mantieni la trasparenza di sfondo del file. |
-| Risoluzione |  | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file. |
-| Spazio colore |  | Selezionate il menu Spazio colore e scegliete una delle seguenti opzioni di spazio colore: |
-|  | Rileva automaticamente | Mantiene lo spazio colore del file. |
-|  | Forza come RGB | Converte in spazio colore RGB. |
-|  | Forza come CMYK | Converte in spazio colore CMYK. |
-|  | Forza come gradazioni di grigio | Converte lo spazio colore in scala di grigio. |
+| Elaborazione | | Scegli **[!UICONTROL Rasterizza]** per convertire gli elementi grafici vettoriali nel file nel formato bitmap. |
+| Mantieni sfondo trasparente nell&#39;immagine di rendering | | Mantieni la trasparenza di sfondo del file. |
+| Risoluzione | | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file. |
+| Spazio colore | | Selezionate il menu Spazio colore e scegliete una delle seguenti opzioni di spazio colore: |
+| | Rileva automaticamente | Mantiene lo spazio colore del file. |
+| | Forza come RGB | Converte in spazio colore RGB. |
+| | Forza come CMYK | Converte in spazio colore CMYK. |
+| | Forza come gradazioni di grigio | Converte lo spazio colore in scala di grigio. |
 
 #### Imposta opzioni di caricamento Photoshop {#setting-photoshop-upload-options}
 
@@ -270,15 +274,15 @@ Utilizza il [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni profilo color
 
 | Opzione | Sottoopzione | Descrizione |
 |---|---|---|
-| Mantieni livelli |  | Ripete i livelli nel PSD, se presenti, in singole risorse. I livelli di risorsa rimangono associati al PSD. Potete visualizzarli aprendo il file PSD nella vista Dettaglio e selezionando il pannello dei livelli. |
-| Crea modello |  | Crea un modello dai livelli nel file PSD. |
-| Estrai testo |  | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
-| Estendi livelli a dimensione sfondo |  | Estende le dimensioni dei livelli immagine strappati alle dimensioni del livello di sfondo. |
-| Denominazione livelli |  | I livelli nel file PSD vengono caricati come immagini separate. |
-|  | Nome livello | Assegna alle immagini il nome del livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un&#39;immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei livelli nel file PSD. Non vengono denominati in base ai nomi dei livelli di default. |
-|  | Photoshop e numero livello | Assegna alle immagini un nome dopo i relativi numeri di livello nel file PSD, ignorando i nomi di livello originali. Le immagini sono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd è denominato Spring Ad_2 anche se in Photoshop aveva un nome non predefinito. |
-|  | Photoshop e nome livello | Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero di livello viene utilizzato se i nomi di livello nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato Price Tag in un file PSD denominato SpringAd è denominato Spring Ad_Price Tag. Un livello con il nome di default Livello 2 (Layer 2) è denominato Primavera Ad_2. |
-| Ancoraggio |  | Specificate il modo in cui le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l&#39;ancoraggio è il centro. Un ancoraggio centrale consente alle immagini di sostituzione di occupare al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine di sostituzione. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando si fa riferimento al modello e si utilizza la sostituzione dei parametri, occupano di fatto lo stesso spazio. Impostate un&#39;impostazione diversa se l&#39;applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
+| Mantieni livelli | | Ripete i livelli nel PSD, se presenti, in singole risorse. I livelli di risorsa rimangono associati al PSD. Potete visualizzarli aprendo il file PSD nella vista Dettaglio e selezionando il pannello dei livelli. |
+| Crea modello | | Crea un modello dai livelli nel file PSD. |
+| Estrai testo | | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
+| Estendi livelli a dimensione sfondo | | Estende le dimensioni dei livelli immagine strappati alle dimensioni del livello di sfondo. |
+| Denominazione livelli | | I livelli nel file PSD vengono caricati come immagini separate. |
+| | Nome livello | Assegna alle immagini il nome del livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un&#39;immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei livelli nel file PSD. Non vengono denominati in base ai nomi dei livelli di default. |
+| | Photoshop e numero livello | Assegna alle immagini un nome dopo i relativi numeri di livello nel file PSD, ignorando i nomi di livello originali. Le immagini sono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd è denominato Spring Ad_2 anche se in Photoshop aveva un nome non predefinito. |
+| | Photoshop e nome livello | Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero di livello viene utilizzato se i nomi di livello nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato Price Tag in un file PSD denominato SpringAd è denominato Spring Ad_Price Tag. Un livello con il nome di default Livello 2 (Layer 2) è denominato Primavera Ad_2. |
+| Ancoraggio | | Specificate il modo in cui le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l&#39;ancoraggio è il centro. Un ancoraggio centrale consente alle immagini di sostituzione di occupare al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine di sostituzione. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando si fa riferimento al modello e si utilizza la sostituzione dei parametri, occupano di fatto lo stesso spazio. Impostate un&#39;impostazione diversa se l&#39;applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
 #### Imposta opzioni di caricamento PDF {#setting-pdf-upload-options}
 
@@ -296,14 +300,14 @@ Scegli una delle seguenti opzioni:
 |---|---|---|
 | Elaborazione | Rasterizza | Impostazione predefinita. Ripete le pagine nel file PDF e converte gli elementi grafici vettoriali in immagini bitmap. Scegliere questa opzione se si desidera creare un eCatalog. |
 | Estrai | Cerca parole | Estrae parole dal file PDF in modo che sia possibile eseguire ricerche per parola chiave in un visualizzatore eCatalog. |
-|  | Collegamenti | Estrae i collegamenti dai file PDF e li converte in mappe immagine utilizzate in un visualizzatore eCatalog. |
-| Genera automaticamente eCatalog da più PDF di pagine |  | Crea automaticamente un eCatalog dal file PDF. L’eCatalog prende il nome dal file PDF caricato. Questa opzione è disponibile solo se rasterizzate il file PDF durante il caricamento. |
-| Risoluzione |  | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file PDF. Il valore predefinito è 150. |
-| Spazio colore |  | Selezionate il menu Spazio colore e scegliete uno spazio colore per il file PDF. La maggior parte dei file PDF contiene immagini a colori RGB e CMYK. Lo spazio colore RGB è preferibile per la visualizzazione online. |
-|  | Rileva automaticamente | Mantiene lo spazio colore del file PDF. |
-|  | Converti in RGB | Converte in spazio colore RGB. |
-|  | Converti in CMYK | Converte in spazio colore CMYK. |
-|  | Converti in scala di grigio | Converte lo spazio colore in scala di grigio. |
+| | Collegamenti | Estrae i collegamenti dai file PDF e li converte in mappe immagine utilizzate in un visualizzatore eCatalog. |
+| Genera automaticamente eCatalog da più PDF di pagine | | Crea automaticamente un eCatalog dal file PDF. L’eCatalog prende il nome dal file PDF caricato. Questa opzione è disponibile solo se rasterizzate il file PDF durante il caricamento. |
+| Risoluzione | | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file PDF. Il valore predefinito è 150. |
+| Spazio colore | | Selezionate il menu Spazio colore e scegliete uno spazio colore per il file PDF. La maggior parte dei file PDF contiene immagini a colori RGB e CMYK. Lo spazio colore RGB è preferibile per la visualizzazione online. |
+| | Rileva automaticamente | Mantiene lo spazio colore del file PDF. |
+| | Converti in RGB | Converte in spazio colore RGB. |
+| | Converti in CMYK | Converte in spazio colore CMYK. |
+| | Converti in scala di grigio | Converte lo spazio colore in scala di grigio. |
 
 #### Imposta opzioni di caricamento eVideo {#setting-evideo-upload-options}
 
@@ -311,11 +315,11 @@ Per trascodificare un file video scegliendo tra vari predefiniti video.
 
 | Opzione | Sottoopzione | Descrizione |
 |---|---|---|
-| Video adattivo |  | Un singolo predefinito di codifica che funziona con qualsiasi proporzione per creare video da distribuire su dispositivi mobili, tablet e desktop. I video sorgente caricati che sono codificati con questo predefinito sono impostati con un’altezza fissa. Tuttavia, la larghezza viene ridimensionata automaticamente per mantenere le proporzioni del video. <br>Si consiglia di utilizzare la codifica video adattiva. |
+| Video adattivo | | Un singolo predefinito di codifica che funziona con qualsiasi proporzione per creare video da distribuire su dispositivi mobili, tablet e desktop. I video sorgente caricati che sono codificati con questo predefinito sono impostati con un’altezza fissa. Tuttavia, la larghezza viene ridimensionata automaticamente per mantenere le proporzioni del video. <br>Si consiglia di utilizzare la codifica video adattiva. |
 | Predefiniti codifica singola | Ordina predefiniti codifica | Seleziona **[!UICONTROL Nome]** o **[!UICONTROL Dimensione]** se desiderate ordinare i predefiniti di codifica elencati in Desktop, Mobile e Tablet per nome o per dimensione di risoluzione. |
-|  | Desktop | Creare un file MP4 per offrire ai computer desktop un&#39;esperienza video in streaming o progressiva. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
-|  | Mobile | Crea un file MP4 da distribuire su dispositivi mobili iPhone o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
-|  | Tablet | Crea un file MP4 da distribuire su dispositivi tablet iPad o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
+| | Desktop | Creare un file MP4 per offrire ai computer desktop un&#39;esperienza video in streaming o progressiva. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
+| | Mobile | Crea un file MP4 da distribuire su dispositivi mobili iPhone o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
+| | Tablet | Crea un file MP4 da distribuire su dispositivi tablet iPad o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
 
 #### Imposta predefiniti set di batch al caricamento {#setting-batch-set-presets-at-upload}
 
@@ -382,7 +386,6 @@ Per visualizzare in anteprima una risorsa tramite tastiera, effettua le seguenti
 >* [Anteprima risorse Dynamic Media](/help/assets/previewing-assets.md).
 >* [Visualizzare le risorse secondarie](managing-linked-subassets.md#viewing-subassets).
 
-
 ## Modificare proprietà e metadati {#editing-properties}
 
 1. Passa alla posizione della risorsa di cui desideri modificare i metadati.
@@ -403,7 +406,7 @@ Per visualizzare in anteprima una risorsa tramite tastiera, effettua le seguenti
 
    *Figura: Utilizzare il selettore data per pianificare l&#39;attivazione delle risorse.*
 
-1. Dovete controllare **[!UICONTROL Ora di attivazione/disattivazione raggiunta]** se desideri aggiornare i trigger dell’agente di replica nelle proprietà Metadata.
+1. Verifica **[!UICONTROL Ora di attivazione/disattivazione raggiunta]** se desideri aggiornare i trigger dell’agente di replica nelle proprietà Metadata.
    ![Impostazioni agente](assets-dm/Agent-settings.png)
 
 1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dal selettore data posto accanto a **[!UICONTROL Ora di disattivazione]** campo. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite [!DNL Assets] tramite l’interfaccia web o tramite l’API HTTP.
@@ -482,11 +485,11 @@ Per spostare risorse o cartelle:
    * Specifica il nome della risorsa dopo lo spostamento. Quindi fai clic su **[!UICONTROL Successivo]** per procedere.
 
    * Clic **[!UICONTROL Annulla]** per interrompere il processo.
+
    >[!NOTE]
    >
    >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
    >* Durante la ridenominazione, il nome del file non può contenere spazi.
-
 
 1. Il giorno **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:
 
@@ -557,7 +560,7 @@ Lo spostamento delle risorse mediante il trascinamento non si apre [!UICONTROL S
    >
    >Le annotazioni video sono supportate solo nei browser con formati video compatibili con HTML5. Inoltre, a seconda del browser, sono supportati diversi formati video. Tuttavia, il formato video MXF non è ancora supportato con le annotazioni video.
 
-Per ulteriori informazioni sulla generazione e la visualizzazione delle risorse secondarie, consulta [gestire le risorse secondarie](managing-linked-subassets.md#generate-subassets).
+Per ulteriori informazioni sulla generazione e la visualizzazione delle risorse secondarie, consulta [Gestire le risorse secondarie](managing-linked-subassets.md#generate-subassets).
 
 ## Eliminare risorse {#deleting-assets}
 
@@ -576,11 +579,11 @@ Per eliminare una risorsa o una cartella contenente una risorsa:
    * Se la risorsa non ha riferimenti, viene eliminata.
 
    * Se la risorsa contiene riferimenti, un messaggio di errore informa che **Si fa riferimento a una o più risorse**. Puoi selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >* Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. Inoltre, disattiva l’opzione Forza eliminazione utilizzando una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e lasciare i collegamenti interrotti.
    >* È possibile eliminare una *cartella* che contiene i file di risorse estratti. Prima di eliminare una cartella, accertati che gli utenti non estraggano risorse digitali.
-
 
 >[!NOTE]
 >
@@ -863,9 +866,9 @@ Ecco un esempio di come configurare [!DNL Experience Manager] per stampare le an
 
 1. Scaricare i tipi di carattere Google Noto CJK dai collegamenti seguenti e memorizzarli nella directory dei tipi di carattere configurata nel servizio Gestione tipi di carattere.
 
-   * Font Super CJK All In One: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (per le lingue europee): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Nessun tipo di carattere per una lingua scelta: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * Font Super CJK All In One: [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (per le lingue europee): [https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Nessun tipo di carattere per una lingua scelta: [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configurate il file PDF dell&#39;annotazione impostando il parametro font-family su `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Questa configurazione è disponibile per impostazione predefinita e funziona per tutte le lingue europee e CJK.
 1. Se la lingua scelta è diversa da quelle indicate nel passaggio 2, aggiungere una voce appropriata (separata da virgole) alla famiglia di caratteri predefinita.
@@ -895,9 +898,9 @@ Puoi creare versioni in [!DNL Experience Manager] nei seguenti scenari:
    * Clic **[!UICONTROL Salva come versione]** in modo da poter creare una versione della risorsa. Se necessario, aggiungi un’etichetta e un commento.
    * Clic **[!UICONTROL Crea]** per creare una versione.
 
-      ![Crea versione risorsa da barra laterale](assets/create-new-version-from-timeline.png)
+     ![Crea versione risorsa da barra laterale](assets/create-new-version-from-timeline.png)
 
-      *Figura: Creare una versione di una risorsa da [!UICONTROL Timeline] barra laterale sinistra.*
+     *Figura: Creare una versione di una risorsa da [!UICONTROL Timeline] barra laterale sinistra.*
 
 1. Per visualizzare una versione di una risorsa:
 
@@ -911,9 +914,9 @@ Puoi creare versioni in [!DNL Experience Manager] nei seguenti scenari:
    * Fai clic su una versione della risorsa. Se necessario, aggiungi un’etichetta e un commento.
    * Clic **[!UICONTROL Ripristina questa versione]**.
 
-      ![Seleziona una versione per ripristinarla](assets/select_version.png)
+     ![Seleziona una versione per ripristinarla](assets/select_version.png)
 
-      *Figura: Selezionare una versione e ripristinarla. Diventa la versione corrente, quindi disponibile per gli utenti DAM.*
+     *Figura: Selezionare una versione e ripristinarla. Diventa la versione corrente, quindi disponibile per gli utenti DAM.*
 
 1. Per confrontare due versioni di un’immagine, effettua le seguenti operazioni:
    * Fai clic sulla versione da confrontare con la versione corrente.
@@ -934,7 +937,7 @@ Una raccolta è un set ordinato di risorse. Utilizza le raccolte per condividere
 * Una raccolta può includere risorse da posizioni diverse, perché contengono solo riferimenti a tali risorse. Ogni raccolta mantiene l’integrità referenziale delle risorse.
 * Puoi condividere raccolte con più utenti con diversi livelli di privilegi, ad esempio per modificare, visualizzare e così via.
 
-Per informazioni dettagliate sulla gestione della raccolta, consulta [gestisci raccolte](/help/assets/manage-collections.md).
+Per informazioni dettagliate sulla gestione della raccolta, consulta [Gestire le raccolte di risorse digitali](/help/assets/manage-collections.md).
 
 ## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o nel collegamento di risorse Adobe {#hide-expired-assets-via-acp-api}
 
@@ -954,4 +957,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Per ulteriori informazioni, vedere come [Sfogliare le risorse DAM tramite l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Per ulteriori informazioni, vedere come [Sfogliare le risorse DAM tramite l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html).
