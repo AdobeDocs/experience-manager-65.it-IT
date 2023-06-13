@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1509'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
 |---|---|
-|  | **[⇒ di personalizzazione lato client](client-customize.md)** |
+|   | **[⇒ di personalizzazione lato client](client-customize.md)** |
 
 Handlebars Helpers (helpers) sono metodi richiamabili dagli script Handlebars per facilitare l’utilizzo dei componenti SCF.
 
@@ -49,19 +49,19 @@ Se safeString è impostato su true, la stringa restituita sarà una stringa prov
 
 * **contesto**: Stringa
 
-   (Facoltativo) Il valore predefinito è la stringa vuota
+  (Facoltativo) Il valore predefinito è la stringa vuota
 
 * **maxLength**: numero
 
-   (Facoltativo) Il valore predefinito è la lunghezza del contesto.
+  (Facoltativo) Il valore predefinito è la lunghezza del contesto.
 
 * **maxWords**: numero
 
-   (Facoltativo) Il valore predefinito è il numero di parole nella stringa tagliata.
+  (Facoltativo) Il valore predefinito è il numero di parole nella stringa tagliata.
 
 * **safeString**: booleano
 
-   (Facoltativo) Restituisce un valore Handlebars.SafeString() se true. Il valore predefinito è false.
+  (Facoltativo) Restituisce un valore Handlebars.SafeString() se true. Il valore predefinito è false.
 
 ### Esempi {#examples}
 
@@ -97,23 +97,23 @@ Un helper per aggiungere due estensioni sotto un div, una per il testo completo 
 
 * **contesto**: Stringa
 
-   (Facoltativo) Il valore predefinito è la stringa vuota.
+  (Facoltativo) Il valore predefinito è la stringa vuota.
 
 * **numChars**: numero
 
-   (Facoltativo) Il numero di caratteri da visualizzare quando non viene visualizzato il testo completo. Il valore predefinito è 100.
+  (Facoltativo) Il numero di caratteri da visualizzare quando non viene visualizzato il testo completo. Il valore predefinito è 100.
 
 * **moreText**: Stringa
 
-   (Facoltativo) Testo da visualizzare per indicare che è presente altro testo da visualizzare. Il valore predefinito è &quot;more&quot;.
+  (Facoltativo) Testo da visualizzare per indicare che è presente altro testo da visualizzare. Il valore predefinito è &quot;more&quot;.
 
 * **ellipsesText**: Stringa
 
-   (Facoltativo) Testo da visualizzare che indica la presenza di testo nascosto. Il valore predefinito è &quot;...&quot;.
+  (Facoltativo) Testo da visualizzare che indica la presenza di testo nascosto. Il valore predefinito è &quot;...&quot;.
 
 * **safeString**: booleano
 
-   (Facoltativo) Valore booleano che indica se applicare o meno Handlebars.SafeString() prima di restituire il risultato. Il valore predefinito è false.
+  (Facoltativo) Valore booleano che indica se applicare o meno Handlebars.SafeString() prima di restituire il risultato. Il valore predefinito è false.
 
 ### Esempio {#example}
 
@@ -137,11 +137,11 @@ Un helper per restituire una stringa di data formattata.
 
 * **contesto**: numero
 
-   (Facoltativo) offset di un valore in millisecondi dal 1 gennaio 1970 (epoca). Il valore predefinito è la data corrente.
+  (Facoltativo) offset di un valore in millisecondi dal 1 gennaio 1970 (epoca). Il valore predefinito è la data corrente.
 
 * **formato**: Stringa
 
-   (Facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; e il risultato appare come &quot;2015-03-18T18:17:13-07:00&quot;
+  (Facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; e il risultato appare come &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Esempi {#examples-1}
 
@@ -165,11 +165,11 @@ Un helper per restituire il contenuto a seconda di un condizionale di uguaglianz
 
 * **lvalue**: Stringa
 
-   Valore di sinistra da confrontare.
+  Valore di sinistra da confrontare.
 
 * **rvalue**: Stringa
 
-   Valore di destra da confrontare.
+  Valore di destra da confrontare.
 
 ### Esempio {#example-1}
 
@@ -189,11 +189,11 @@ Un helper di blocco che verifica il valore corrente di [Modalità WCM](https://h
 
 * **contesto**: Stringa
 
-   (Facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
+  (Facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
 
 * **modalità**: Stringa
 
-   (Facoltativo) Un elenco separato da virgole di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) per eseguire il test se impostato.
+  (Facoltativo) Un elenco separato da virgole di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) per eseguire il test se impostato.
 
 ### Esempio {#example-2}
 
@@ -215,15 +215,15 @@ Vedi anche [Internazionalizzazione delle stringhe nel codice JavaScript](../../h
 
 * **contesto**: Stringa
 
-   (Facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
+  (Facoltativo) Stringa da tradurre. Obbligatorio se non viene fornito alcun valore predefinito.
 
 * **predefinito**: Stringa
 
-   (Facoltativo) Stringa predefinita da tradurre. Obbligatorio se non viene fornito alcun contesto.
+  (Facoltativo) Stringa predefinita da tradurre. Obbligatorio se non viene fornito alcun contesto.
 
 * **commento**: Stringa
 
-   (Facoltativo) Un suggerimento per la traduzione
+  (Facoltativo) Un suggerimento per la traduzione
 
 ### Esempio {#example-3}
 
@@ -246,27 +246,27 @@ Questo helper, appropriato solo sul lato server, offre funzionalità simili a [c
 
 * **contesto**: stringa o oggetto
 
-   (Facoltativo, a meno che non fornisca un percorso relativo)
+  (Facoltativo, a meno che non fornisca un percorso relativo)
 
-   Utilizzare `this` per trasmettere il contesto corrente.
+  Utilizzare `this` per trasmettere il contesto corrente.
 
-   Utilizzare `this.id` per ottenere la risorsa da `id` per il rendering del resourceType richiesto.
+  Utilizzare `this.id` per ottenere la risorsa da `id` per il rendering del resourceType richiesto.
 
 * **resourceType**: Stringa
 
-   (Facoltativo) il tipo di risorsa verrà impostato automaticamente sul tipo di risorsa dal contesto.
+  (Facoltativo) il tipo di risorsa verrà impostato automaticamente sul tipo di risorsa dal contesto.
 
 * **modello**: Stringa
 
-   Percorso dello script del componente.
+  Percorso dello script del componente.
 
 * **percorso**: Stringa
 
-   (Obbligatorio) Percorso della risorsa. Se il percorso è relativo, è necessario fornire un contesto, altrimenti viene restituita la stringa vuota.
+  (Obbligatorio) Percorso della risorsa. Se il percorso è relativo, è necessario fornire un contesto, altrimenti viene restituita la stringa vuota.
 
 * **authoringDisabled**: booleano
 
-   (Facoltativo) Il valore predefinito è false. Solo per uso interno.
+  (Facoltativo) Il valore predefinito è false. Solo per uso interno.
 
 ### Esempio {#example-4}
 
@@ -286,19 +286,19 @@ Questo helper, appropriato solo sul lato server, offre funzionalità simili a [u
 
 * **categorie**: Stringa
 
-   (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Questo includerà tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Questo includerà tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 * **tema**: Stringa
 
-   (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Ciò includerà tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Ciò includerà tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 * **js**: Stringa
 
-   (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie JavaScript per le categorie specificate.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie JavaScript per le categorie specificate.
 
 * **css**: Stringa
 
-   (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie CSS per le categorie specificate.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie CSS per le categorie specificate.
 
 ### Esempi {#examples-2}
 
@@ -353,11 +353,11 @@ Ad esempio:
 
 * **contesto**: numero
 
-   Un periodo nel passato da confrontare con &quot;adesso&quot;. Il tempo è espresso come valore in millisecondi con offset dal 1 gennaio 1970 (epoca).
+  Un periodo nel passato da confrontare con &quot;adesso&quot;. Il tempo è espresso come valore in millisecondi con offset dal 1 gennaio 1970 (epoca).
 
 * **daysCutoff**: numero
 
-   Il numero di giorni fa prima del passaggio a una data effettiva. Il valore predefinito è 60.
+  Il numero di giorni fa prima del passaggio a una data effettiva. Il valore predefinito è 60.
 
 ### Esempio {#example-5}
 
@@ -385,7 +385,7 @@ NOTA: questa non è una convalida e non deve essere utilizzata per la scrittura 
 
 * **contesto**: oggetto
 
-   HTML da codificare.
+  HTML da codificare.
 
 ### Esempio {#example-6}
 
@@ -403,7 +403,7 @@ NOTA: questo non è un validatore e non deve essere utilizzato per la scrittura 
 
 * **contesto**: oggetto
 
-   HTML da codificare.
+  HTML da codificare.
 
 ### Esempio {#example-7}
 
@@ -421,7 +421,7 @@ NOTA: questa non è una convalida e non deve essere utilizzata per la scrittura 
 
 * **contesto**: oggetto
 
-   HTML da codificare.
+  HTML da codificare.
 
 ### Esempio {#example-8}
 
@@ -439,7 +439,7 @@ NOTA: potrebbe essere restituita una stringa vuota
 
 * **contesto**: oggetto
 
-   URL da bonificare.
+  URL da bonificare.
 
 ### Esempio {#example-9}
 
@@ -457,7 +457,7 @@ NOTA: potrebbe essere restituita una stringa vuota
 * Il contesto può essere un oggetto dati String, number, booleano o JSON.
 * È possibile passare come contesto un oggetto nidificato all’interno del contesto corrente, ad esempio `this.url` o `this.id` (vedi gli esempi seguenti di helper semplici e a blocchi).
 
-* Gli helper di blocco sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare un blocco del modello zero o più volte con un contesto diverso ogni volta. Contengono un contesto tra {{#*name*}} and {{/*name*}}.
+* Gli helper di blocco sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare un blocco del modello zero o più volte con un contesto diverso ogni volta. Contengono un contesto tra `{{#*name*}}` e `{{/*name*}}`.
 
 * Handlebars fornisce un parametro finale agli helper denominato &quot;options&quot;. L’oggetto speciale &quot;options&quot; include
 
@@ -603,4 +603,4 @@ Nota: gli helper SCF sono definiti in `/etc/clientlibs/social/commons/scf/helper
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
 |---|---|
-|  | **[⇒ di personalizzazione lato client](client-customize.md)** |
+|   | **[⇒ di personalizzazione lato client](client-customize.md)** |

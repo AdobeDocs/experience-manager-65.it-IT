@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 70be796a50a93267b965d00db1b359d9a809ec08
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1070'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->I componenti e-mail dell’AEM sono stati dichiarati obsoleti. A causa della natura dell’e-mail, che unisce contenuti e stile, i componenti e-mail forniti come predefiniti dall’AEM vengono riutilizzati in modo limitato per i clienti, a causa della necessità di implementare stili personalizzati in tutti i componenti necessari per i progetti.
+>Questo articolo si applica ai componenti e-mail AEM basati su Componenti di base obsoleti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ciò possa essere ottenuto. Tuttavia, questi componenti obsoleti non devono essere utilizzati nei progetti.
+>Gli utenti sono incoraggiati a sfruttare il moderno [Componenti core E-mail.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Questo documento descrive alcune delle best practice relative alla progettazione delle e-mail, che si traducono in un modello di campagna e-mail ben sviluppato.
 

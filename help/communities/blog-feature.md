@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 7%
@@ -77,35 +77,35 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Consenti miniatura allegato**
 
-   Se questa opzione è selezionata, viene creata una miniatura dell&#39;immagine allegata.
+  Se questa opzione è selezionata, viene creata una miniatura dell&#39;immagine allegata.
 
 * **Dimensione max miniatura allegato**
 
-   Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
+  Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
 
 * **Dimensioni minime immagine per miniatura**
 
-   Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 KB).
+  Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 KB).
 
 * **Dimensione massima miniatura**
 
-   Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
+  Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
 
 * **Consenti membri privilegiati**
 
-   Se questa opzione è selezionata, solo i membri con privilegi possono creare contenuto.
+  Se questa opzione è selezionata, solo i membri con privilegi possono creare contenuto.
 
 * **Membri privilegiati consentiti**
 
-   Aggiungere i membri con privilegi autorizzati a creare il contenuto.
+  Aggiungere i membri con privilegi autorizzati a creare il contenuto.
 
 * **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
 
-   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
+  Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
 * **Titolo diario**
 
-   Titolo del blog da visualizzare nella pagina.
+  Titolo del blog da visualizzare nella pagina.
 
 >[!NOTE]
 >
@@ -115,85 +115,85 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Descrizione diario**
 
-   Descrizione del blog.
+  Descrizione del blog.
 
 * **Topic per pagina**
 
-   Definisce il numero di post/commenti di blog mostrati per pagina. Il valore predefinito è 10.
+  Definisce il numero di post/commenti di blog mostrati per pagina. Il valore predefinito è 10.
 
 * **Moderato**
 
-   Se questa opzione è selezionata, è necessario approvare la pubblicazione di post di blog e commenti prima che vengano visualizzati in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, è necessario approvare la pubblicazione di post di blog e commenti prima che vengano visualizzati in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiuso**
 
-   Se questa opzione è selezionata, il blog viene chiuso ai nuovi post e commenti. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, il blog viene chiuso ai nuovi post e commenti. L&#39;impostazione predefinita è deselezionata.
 
 * **Editor Rich Text**
 
-   Se questa opzione è selezionata, è possibile immettere commenti e post di blog con markup. Il valore predefinito è selezionato.
+  Se questa opzione è selezionata, è possibile immettere commenti e post di blog con markup. Il valore predefinito è selezionato.
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag ai propri post (vedi **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag ai propri post (vedi **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti caricamenti file**
 
-   Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati a un post di blog o a un commento. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati a un post di blog o a un commento. L&#39;impostazione predefinita è deselezionata.
 
 * **Dimensione file massima**
 
-   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+  Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-   Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, il caricamento di quelli non specificati non sarà consentito. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, il caricamento di quelli non specificati non sarà consentito. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
-   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
 * **Consenti risposte**
 
-   Se questa opzione è selezionata, consenti le risposte ai commenti inviati al post di blog. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti le risposte ai commenti inviati al post di blog. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti votazione**
 
-   Se questa opzione è selezionata, includete la funzione Votazione con un post di blog. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includete la funzione Votazione con un post di blog. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti agli utenti di eliminare commenti e argomenti**
 
-   Se questa opzione è selezionata, consenti ai membri di eliminare i commenti e i post di blog pubblicati. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai membri di eliminare i commenti e i post di blog pubblicati. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti Segui**
 
-   Se questa opzione è selezionata, includi la seguente funzione per gli articoli di blog, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includi la seguente funzione per gli articoli di blog, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Visualizza badge**
 
-   Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. L&#39;impostazione predefinita è deselezionata.
 
 * **Non ottenere risposte sulla pagina di elenco**
 
 * **Consenti contenuto in primo piano**
 
-   Se selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
+  Se selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Abilita menzione**
 
-   Se questa opzione è attivata, consente agli utenti registrati della community di identificare altri membri registrati (tramite nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi @user-name comune. Gli utenti taggati ricevono notifiche sulle loro menzioni.
+  Se questa opzione è attivata, consente agli utenti registrati della community di identificare altri membri registrati (tramite nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi @user-name comune. Gli utenti taggati ricevono notifiche sulle loro menzioni.
 
 * **Max menzioni**
 
-   Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
+  Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
 
 * **Pattern menzioni interfaccia**
 
-   Specifica la stringa di pattern consentita per taggare (@mention) l’utente registrato in un post. Ad esempio ~{{familyName}}{{givenName}}.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -201,31 +201,31 @@ Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
 
 * **Rifiuta post**
 
-   Se questa opzione è selezionata, i moderatori membri di fiducia potranno rifiutare i post e impedirne la visualizzazione nel forum pubblico. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, i moderatori membri di fiducia potranno rifiutare i post e impedirne la visualizzazione nel forum pubblico. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiudi/Riapri argomenti**
 
-   Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere un argomento per ulteriori modifiche e commenti e riaprire un argomento. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere un argomento per ulteriori modifiche e commenti e riaprire un argomento. L&#39;impostazione predefinita è deselezionata.
 
 * **Segnala post**
 
-   Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri utenti come non appropriati. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri utenti come non appropriati. L&#39;impostazione predefinita è deselezionata.
 
 * **Elenco di motivi per segnalazione**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consentire ai membri di immettere un motivo specifico per contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di immettere un motivo specifico per contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
 * **Soglia moderazione**
 
-   Immettere il numero di volte in cui un argomento o un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
+  Immettere il numero di volte in cui un argomento o un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
 
 * **Limite segnalazione**
 
-   Immettere il numero di volte in cui un argomento o un commento deve essere contrassegnato prima di essere nascosto dalla visualizzazione pubblica. Se è impostato su -1, l&#39;argomento o il commento contrassegnato non viene mai nascosto. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
+  Immettere il numero di volte in cui un argomento o un commento deve essere contrassegnato prima di essere nascosto dalla visualizzazione pubblica. Se è impostato su -1, l&#39;argomento o il commento contrassegnato non viene mai nascosto. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
 #### Scheda Campo tag {#tag-field-tab}
 
@@ -233,11 +233,11 @@ Sotto **Campo tag** , specificare i tag che possono essere applicati se **Consen
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
+  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
-   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Un valore pari a -1 indica nessun limite. Il valore predefinito è 0.
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Un valore pari a -1 indica nessun limite. Il valore predefinito è 0.
 
 ### Configurazione della barra laterale blog {#configuring-blog-sidebar}
 
@@ -249,7 +249,7 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
 
 * **Formato data**
 
-   Formato utilizzato per visualizzare gli archivi dei post di blog. Il formato utilizza i segnaposto seguendo la convenzione Java.
+  Formato utilizzato per visualizzare gli archivi dei post di blog. Il formato utilizza i segnaposto seguendo la convenzione Java.
 
    * aaaa : anno intero, come &#39;2015&#39;
    * aa : anno breve, come &#39;15&#39;
@@ -257,11 +257,11 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
    * MMM : mese breve, come giugno
    * MM: numero mese, ad esempio 06
 
-   Il valore predefinito è &quot;yyyy MMMM&quot;, che visualizzerebbe, ad esempio, &quot;Giugno 2015&quot;
+  Il valore predefinito è &quot;yyyy MMMM&quot;, che visualizzerebbe, ad esempio, &quot;Giugno 2015&quot;
 
 * **Tipo di visualizzazione**
 
-   Titolo e tipo di post di blog da visualizzare nella barra laterale. La scelta è tra
+  Titolo e tipo di post di blog da visualizzare nella barra laterale. La scelta è tra
 
    * Autori
    * Categorie
@@ -269,13 +269,13 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
 
 * **Percorso componente BLOP**
 
-   *(Facoltativo)* Posizione della risorsa blog da cui devono essere elencati gli articoli di blog. Se non specificato, utilizzerà il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
+  *(Facoltativo)* Posizione della risorsa blog da cui devono essere elencati gli articoli di blog. Se non specificato, utilizzerà il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
 
    * Ad esempio `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite di suggerimenti**
 
-   Numero di articoli di blog da visualizzare. Un valore pari a -1 indica nessun limite. Il valore predefinito è -1.
+  Numero di articoli di blog da visualizzare. Un valore pari a -1 indica nessun limite. Il valore predefinito è -1.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
