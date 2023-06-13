@@ -1,8 +1,6 @@
 ---
-title: Integrazione con Adobe Campaign Classic
-seo-title: Integrating with Adobe Campaign Classic
-description: Scopri come integrare l’AEM con Adobe Campaign Classic
-seo-description: Learn how to integrate AEM with Adobe Campaign Classic
+title: Integrazione di AEM 6.5 con Adobe Campaign Classic
+description: Scopri come integrare AEM 6.5 con Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 4712f57808ae769646b00d1098648686815121b6
+source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 69%
+source-wordcount: '1583'
+ht-degree: 67%
 
 ---
 
 
-# Integrazione con Adobe Campaign Classic {#integrating-campaign-classic}
+# Integrazione di AEM 6.5 con Adobe Campaign Classic {#integrating-campaign-classic}
 
-Integrando l’AEM con Adobe Campaign, puoi gestire la consegna e-mail, il contenuto e i moduli direttamente nell’AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari alcuni passaggi di configurazione sia in Adobe Campaign Classic che in AEM 
+Integrando l’AEM con Adobe Campaign Classic (ACC), puoi gestire la consegna e-mail, il contenuto e i moduli direttamente nell’AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari alcuni passaggi di configurazione sia in Adobe Campaign Classic che in AEM 
 
 Questa integrazione consente di utilizzare AEM e Adobe Campaign Classic in modo indipendente. Gli addetti al marketing possono creare campagne e utilizzare il targeting in Adobe Campaign, mentre i creatori di contenuti possono lavorare contemporaneamente sulla progettazione del contenuto in AEM. Utilizzando l’integrazione, il contenuto e la progettazione della campagna creata in AEM possono essere mirati e consegnati da Adobe Campaign.
+
+>[!INFO]
+>
+>Questo documento illustra come integrare Adobe Campaign Classic con AEM 6.5. Per altre integrazioni di Campaign consulta il documento [Integrazione di AEM 6.5 con Adobe Campaign.](campaign.md)
 
 ## Passaggi dell’integrazione {#integration-steps}
 
@@ -197,6 +199,7 @@ Hai configurato la replica nell’istanza di pubblicazione dell’AEM in modo ch
 Dopo aver configurato Externalizer, Adobe Campaign può accedere al contenuto.
 
 >[!NOTE]
+>
 L’stanza di pubblicazione deve essere raggiungibile dal server di Adobe Campaign. Se punta a `localhost:4503` oppure in un altro server che Adobe Campaign non è in grado di raggiungere, le immagini provenienti dall’AEM non vengono visualizzate nella console Adobe Campaign.
 
 ## Configurare l’utente remoto di Campaign in AEM {#configure-user}

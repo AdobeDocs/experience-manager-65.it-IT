@@ -1,8 +1,6 @@
 ---
-title: Integrazione con Adobe Campaign Standard
-seo-title: Integrating with Adobe Campaign Standard
-description: Scopri come integrare l’AEM con Adobe Campaign Standard.
-seo-description: Learn how to integrate AEM with Adobe Campaign Standard.
+title: Integrazione di AEM 6.5 con Adobe Campaign Standard
+description: Scopri come integrare AEM 6.5 con Adobe Campaign Standard.
 uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: a0062ffbdd6477eca494fea4142d271f3015599a
+source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 18%
+source-wordcount: '1834'
+ht-degree: 17%
 
 ---
 
 
-# Integrazione con Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
+# Integrazione di AEM 6.5 con Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
-Integrando l’AEM con Adobe Campaign, puoi gestire la consegna e-mail, il contenuto e i moduli direttamente nell’AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari passaggi di configurazione sia in Adobe Campaign Standard che in AEM.
+Integrando AEM 6.5 con Adobe Campaign Standard (ACS), puoi gestire la consegna e-mail, il contenuto e i moduli direttamente nell’AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari passaggi di configurazione sia in Adobe Campaign Standard che in AEM.
 
 Questa integrazione consente di utilizzare AEM e Adobe Campaign Standard in modo indipendente. Gli addetti al marketing possono creare campagne e utilizzare il targeting in Adobe Campaign, mentre i creatori di contenuti possono lavorare contemporaneamente sulla progettazione del contenuto in AEM. Utilizzando l’integrazione, il contenuto e la progettazione della campagna creata in AEM possono essere mirati e consegnati da Adobe Campaign.
+
+>[!INFO]
+>
+>Questo documento illustra come integrare Adobe Campaign Standard con AEM 6.5. Per altre integrazioni di Campaign consulta il documento [Integrazione di AEM 6.5 con Adobe Campaign.](campaign.md)
 
 ## Passaggi dell’integrazione {#integration-steps}
 
@@ -198,6 +200,7 @@ Hai configurato la replica nell’istanza di pubblicazione dell’AEM in modo ch
 Dopo aver configurato Externalizer, Adobe Campaign può accedere al contenuto.
 
 >[!NOTE]
+>
 L’stanza di pubblicazione deve essere raggiungibile dal server di Adobe Campaign. Se punta a `localhost:4503` oppure in un altro server che Adobe Campaign non è in grado di raggiungere, le immagini provenienti dall’AEM non vengono visualizzate nella console Adobe Campaign.
 
 ## Configurare l’utente remoto di Campaign in AEM {#campaign-remote-user}
